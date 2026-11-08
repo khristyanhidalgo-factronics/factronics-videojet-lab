@@ -163,13 +163,29 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
     <div class="card">
       <h2 data-i18n="ex_t">Examen</h2>
       <div class="grid">
-        <div><label class="small" data-i18n="ex_nivel">Nivel</label><br>
+        <div><label class="small" data-i18n="ex_fuente">Fuente</label><br>
+          <select id="ex_fuente">
+            <option value="gen" data-i18n="fuente_gen">Generado (5 niveles)</option>
+            <option value="banco" data-i18n="fuente_banco">Banco TTO (372)</option>
+          </select></div>
+        <div id="ex_nivel_box"><label class="small" data-i18n="ex_nivel">Nivel</label><br>
           <select id="ex_nivel">
             <option value="1" data-i18n="n1">Básico</option>
             <option value="2" data-i18n="n2">Básico-Medio</option>
             <option value="3" data-i18n="n3">Intermedio-Avanzado</option>
             <option value="4" data-i18n="n4">Avanzado</option>
             <option value="5" data-i18n="n5">Profesional</option>
+          </select></div>
+        <div id="ex_tipo_box" class="hidden"><label class="small" data-i18n="ex_tipo">Tipo</label><br>
+          <select id="ex_tipo">
+            <option value="todas" data-i18n="tipo_todas">Todas</option>
+            <option value="single">Simple</option>
+            <option value="multi">Múltiple</option>
+            <option value="fill">Completar</option>
+            <option value="calc">Cálculo</option>
+            <option value="describe">Descripción</option>
+            <option value="errorfix">Caso de falla</option>
+            <option value="errmap">Código→significado</option>
           </select></div>
         <div><label class="small" data-i18n="ex_cant">Preguntas</label><br>
           <select id="ex_cant"><option>10</option><option>15</option><option>20</option></select></div>
@@ -185,12 +201,19 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
       <h2 data-i18n="av_t">Aviso y fuentes</h2>
       <p class="small" data-i18n="av_s">Este material se construyó a partir de documentos del equipo y fuentes oficiales Videojet. No sustituye la formación oficial ni los manuales de servicio.</p>
       <div class="notice" id="av_nota"></div>
+      <p class="small">Proyectos de referencia del autor (cuenta personal):
+        <a href="https://emanuelindustri-source.github.io/factronics-tto-lab/" target="_blank" rel="noopener">Factronics TTO Lab</a>
+        (banco de 372 preguntas adaptado aquí) ·
+        <a href="https://emanuelindustri-source.github.io/consumo-cij-calculadora/" target="_blank" rel="noopener">Consumo CIJ</a>
+        (calculadora hermana). Este proyecto unifica TTO · CIJ · LÁSER en un solo lugar.
+      </p>
       <p class="small">Repo: <a href="https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab" target="_blank" rel="noopener">factronics-videojet-lab</a> · <span id="av_fecha"></span></p>
     </div>
   </section>
 </main>
 <footer>Factronics Videojet Lab · <span id="foot"></span></footer>
 <script src="datos.js"></script>
+<script src="banco_tto.js"></script>
 <script>
 /* ================= i18n ================= */
 const I18N = {
@@ -240,6 +263,9 @@ const I18N = {
     respostas:'respostas corretas', ver:'Ver', volver:'Voltar', q:'Pergunta'
   }
 };
+Object.assign(I18N.es, { ex_fuente:'Fuente', fuente_gen:'Generado (5 niveles)', fuente_banco:'Banco TTO (372)', ex_tipo:'Tipo', tipo_todas:'Todas', self_ok:'Lo dominaba', self_no:'A revisar', respuesta_modelo:'Respuesta modelo', banco_nota:'Banco de preguntas TTO (372) adaptado de Factronics TTO Lab — es/en/pt.', kpi_banco:'preguntas TTO' });
+Object.assign(I18N.en, { ex_fuente:'Source', fuente_gen:'Generated (5 levels)', fuente_banco:'TTO bank (372)', ex_tipo:'Type', tipo_todas:'All', self_ok:'I knew it', self_no:'To review', respuesta_modelo:'Model answer', banco_nota:'TTO question bank (372) adapted from Factronics TTO Lab — es/en/pt.', kpi_banco:'TTO questions' });
+Object.assign(I18N.pt, { ex_fuente:'Fonte', fuente_gen:'Gerado (5 níveis)', fuente_banco:'Banco TTO (372)', ex_tipo:'Tipo', tipo_todas:'Todas', self_ok:'Eu dominava', self_no:'A revisar', respuesta_modelo:'Resposta modelo', banco_nota:'Banco de perguntas TTO (372) adaptado do Factronics TTO Lab — es/en/pt.', kpi_banco:'perguntas TTO' });
 let LANG = localStorage.getItem('fvl_lang') || 'es';
 const t = (k) => (I18N[LANG] && I18N[LANG][k]) || I18N.es[k] || k;
 
@@ -288,6 +314,7 @@ function renderKPIs(){
     [D.ribbons.grados.length, t('kpi_ribbons')],
     [D.modelosLaser.length, t('kpi_modelos')],
   ];
+  if (window.BANCO_TTO) k.push([BANCO_TTO.total, t('kpi_banco')]);
   $('#kpis').innerHTML = k.map(([n,l]) => `<div class="kpi"><b>${n}</b><span>${esc(l)}</span></div>`).join('');
 }
 function renderFuentes(){
@@ -523,14 +550,35 @@ function generarPregunta(nivel){
   }
   return {q:'—', a:'—', ops:['—'], ref:'—'};
 }
-$('#ex_go').addEventListener('click', () => {
-  const nivel = Number($('#ex_nivel').value);
-  const cant = Number($('#ex_cant').value);
-  examen = {nivel, preguntas:Array.from({length:cant}, () => generarPregunta(nivel)), respuestas:{}, corregido:false};
+function iniciarExamen(){
+  const fuente = $('#ex_fuente').value;
+  const cant = Number($('#ex_cant').value || 10);
+  if (fuente === 'banco' && window.BANCO_TTO && BANCO_TTO.preguntas.length) {
+    const tipo = $('#ex_tipo').value;
+    const pool = BANCO_TTO.preguntas.filter(p => tipo === 'todas' || p.t === tipo);
+    const copia = [...pool];
+    const elegidas = [];
+    while (elegidas.length < cant && copia.length) {
+      elegidas.push(copia.splice(Math.floor(Math.random() * copia.length), 1)[0]);
+    }
+    examen = {fuente: 'banco', tipo, preguntas: elegidas, respuestas: {}, autoeval: {}, corregido: false};
+  } else {
+    const nivel = Number($('#ex_nivel').value);
+    examen = {fuente: 'gen', nivel, preguntas: Array.from({length: cant}, () => generarPregunta(nivel)), respuestas: {}, corregido: false};
+  }
   renderExamen();
+}
+$('#ex_go').addEventListener('click', iniciarExamen);
+$('#ex_fuente').addEventListener('change', () => {
+  const b = $('#ex_fuente').value === 'banco';
+  $('#ex_nivel_box').classList.toggle('hidden', b);
+  $('#ex_tipo_box').classList.toggle('hidden', !b);
 });
 function renderExamen(){
   if (!examen) return;
+  return examen.fuente === 'banco' ? renderExamenBanco() : renderExamenGen();
+}
+function renderExamenGen(){
   const body = $('#ex_body');
   body.innerHTML = `<h3>${esc(t(NIVELES[examen.nivel]))}</h3>` + examen.preguntas.map((p,i) => `
     <div class="q" data-i="${i}">
@@ -569,6 +617,120 @@ function renderExamen(){
   });
   $('#ex_again').addEventListener('click', () => $('#ex_go').click());
 }
+
+/* ---------- examen del banco TTO (7 tipos) ---------- */
+const TIPOS_BANCO = {single:'Simple', multi:'Múltiple', fill:'Completar', calc:'Cálculo',
+  describe:'Descripción', errorfix:'Caso de falla', errmap:'Código→significado'};
+function datosIdioma(q, lang){
+  const i = q.i || {};
+  return i[lang] || i.es || {};
+}
+function renderExamenBanco(){
+  const body = $('#ex_body');
+  const etiqueta = examen.tipo === 'todas' ? 'Todas' : (TIPOS_BANCO[examen.tipo] || examen.tipo);
+  body.innerHTML = `<h3>Banco TTO · ${esc(etiqueta)} (${examen.preguntas.length})</h3>
+    <p class="small">${esc(t('banco_nota'))}</p>` + examen.preguntas.map((q,i) => {
+    const d = datosIdioma(q, LANG);
+    let cuerpo = '';
+    if (q.t === 'single' || q.t === 'errmap') {
+      cuerpo = (d.o||[]).map(([id,txt]) => `<button class="opt" data-i="${i}" data-o="${esc(id)}">${esc(txt)}</button>`).join('');
+    } else if (q.t === 'multi') {
+      cuerpo = (d.o||[]).map(([id,txt]) => `<button class="opt" data-i="${i}" data-o="${esc(id)}" data-multi="1">${esc(txt)}</button>`).join('');
+    } else if (q.t === 'fill' || q.t === 'calc') {
+      cuerpo = (d.f||[]).map(([label,unit,answers,tol],k) => `
+        <div style="margin:6px 0"><span class="small">${esc(label||('Campo '+(k+1)))}${unit?(' ('+esc(unit)+')'):''}</span><br>
+        <input type="number" step="any" data-i="${i}" data-f="${k}" style="max-width:220px"></div>`).join('');
+    } else {
+      cuerpo = `<textarea data-i="${i}" rows="3" style="width:100%" placeholder="..."></textarea>`;
+    }
+    const meta = `<div class="small">#${esc(q.id)} · ${esc(TIPOS_BANCO[q.t]||q.t)} · ${esc((q.m||[]).join(', '))}${q.d?(' · nivel '+q.d):''}</div>`;
+    return `<div class="q" data-i="${i}"><div><b>${i+1}.</b> ${esc(d.q||'')}</div>${meta}${cuerpo}<div class="small" data-res="${i}"></div></div>`;
+  }).join('') +
+  `<button class="btn primary" id="ex_send">${esc(t('ex_send'))}</button>
+   <button class="btn" id="ex_again">${esc(t('ex_again'))}</button>`;
+
+  body.querySelectorAll('.opt').forEach(b => b.addEventListener('click', () => {
+    if (examen.corregido) return;
+    const i = Number(b.dataset.i);
+    if (b.dataset.multi) {
+      b.classList.toggle('sel');
+      const sel = [...body.querySelectorAll(`.opt[data-i="${i}"].sel`)].map(x => x.dataset.o);
+      examen.respuestas[i] = sel;
+    } else {
+      examen.respuestas[i] = [b.dataset.o];
+      body.querySelectorAll(`.opt[data-i="${i}"]`).forEach(x => x.classList.toggle('sel', x === b));
+    }
+  }));
+  body.querySelectorAll('input[data-i]').forEach(inp => inp.addEventListener('input', () => {
+    const i = Number(inp.dataset.i);
+    if (!examen.respuestas[i] || typeof examen.respuestas[i] !== 'object') examen.respuestas[i] = {};
+    examen.respuestas[i][inp.dataset.f] = inp.value;
+  }));
+  body.querySelectorAll('textarea[data-i]').forEach(ta => ta.addEventListener('input', () => {
+    const i = Number(ta.dataset.i);
+    examen.respuestas[i] = ta.value;
+  }));
+
+  $('#ex_send').addEventListener('click', () => {
+    if (examen.corregido) return;
+    examen.corregido = true;
+    let puntos = 0;
+    examen.preguntas.forEach((q,i) => {
+      const d = datosIdioma(q, LANG);
+      const res = body.querySelector(`[data-res="${i}"]`);
+      const r = examen.respuestas[i];
+      let valor = 0;
+      if (q.t === 'single' || q.t === 'errmap') {
+        valor = (Array.isArray(r) && r.length === 1 && (d.a||[]).includes(r[0])) ? 1 : 0;
+        body.querySelectorAll(`.opt[data-i="${i}"]`).forEach(x => {
+          x.classList.toggle('right', (d.a||[]).includes(x.dataset.o));
+          if (Array.isArray(r) && r.includes(x.dataset.o) && !(d.a||[]).includes(x.dataset.o)) x.classList.add('wrong');
+        });
+      } else if (q.t === 'multi') {
+        const sel = Array.isArray(r) ? r : [];
+        const ans = d.a || [];
+        const aciertos = sel.filter(x => ans.includes(x)).length;
+        const errores = sel.filter(x => !ans.includes(x)).length;
+        if (ans.length && errores === 0 && aciertos === ans.length) valor = 1;
+        else if (errores === 0 && aciertos > 0) valor = 0.5;
+        body.querySelectorAll(`.opt[data-i="${i}"]`).forEach(x => {
+          x.classList.toggle('right', ans.includes(x.dataset.o));
+          if (sel.includes(x.dataset.o) && !ans.includes(x.dataset.o)) x.classList.add('wrong');
+        });
+      } else if (q.t === 'fill' || q.t === 'calc') {
+        const campos = d.f || [];
+        const valores = (r && typeof r === 'object') ? r : {};
+        valor = campos.length && campos.every(([label,unit,answers,tol],k) => {
+          const v = parseFloat(valores[k]);
+          if (isNaN(v)) return false;
+          return (answers||[]).some(a => Math.abs(v - a) <= (tol != null ? tol : Math.max(0.01, Math.abs(a)*0.01)));
+        }) ? 1 : 0;
+      } else {
+        // describe / errorfix: se muestran respuesta modelo; autoevaluación
+        valor = examen.autoeval[i] === true ? 1 : 0;
+        const ae = document.createElement('div');
+        ae.className = 'card'; ae.style.boxShadow = 'none';
+        ae.innerHTML = `<div class="small"><b>${esc(t('respuesta_modelo'))}</b></div>
+          <pre style="white-space:pre-wrap;font:inherit;margin:6px 0">${esc((d.mod||'').slice(0,1600))}</pre>
+          <button class="btn" data-self="1" data-i="${i}">✅ ${esc(t('self_ok'))}</button>
+          <button class="btn" data-self="0" data-i="${i}">❌ ${esc(t('self_no'))}</button>`;
+        res.appendChild(ae);
+        ae.querySelectorAll('[data-self]').forEach(b => b.addEventListener('click', () => {
+          examen.autoeval[i] = b.dataset.self === '1';
+          ae.querySelectorAll('button').forEach(x => x.classList.remove('primary'));
+          b.classList.add('primary');
+        }));
+      }
+      puntos += valor;
+      if (d.x) res.innerHTML = `${valor>=1?'✅':valor>0?'◐':'❌'} <span class="small">${esc(d.x).slice(0,700)}</span>`;
+    });
+    const nota = `${(Math.round(puntos*10)/10)}/${examen.preguntas.length}`;
+    body.insertAdjacentHTML('afterbegin',
+      `<div class="card" style="box-shadow:none"><b>${esc(t('ex_score'))}: ${nota}</b> — ${Math.round(puntos*10)/10} ${esc(t('respuestas'))}</div>`);
+    guardarHistorial('Banco TTO · ' + (TIPOS_BANCO[examen.tipo]||examen.tipo), Math.round(puntos*10)/10, examen.preguntas.length);
+  });
+  $('#ex_again').addEventListener('click', () => $('#ex_go').click());
+}
 function guardarHistorial(nivel, bien, total){
   const h = JSON.parse(localStorage.getItem('fvl_exam_history') || '[]');
   h.unshift({fecha:new Date().toISOString().slice(0,10), nivel, bien, total});
@@ -577,8 +739,10 @@ function guardarHistorial(nivel, bien, total){
 }
 function renderHistorial(){
   const h = JSON.parse(localStorage.getItem('fvl_exam_history') || '[]');
-  $('#ex_hist').innerHTML = h.length ? `<b>${esc(t('ex_hist'))}:</b> ` + h.map(x =>
-    `${esc(t(NIVELES[x.nivel]))}: ${x.bien}/${x.total} (${x.fecha})`).join(' · ') : '';
+  $('#ex_hist').innerHTML = h.length ? `<b>${esc(t('ex_hist'))}:</b> ` + h.map(x => {
+    const etiqueta = typeof x.nivel === 'number' ? t(NIVELES[x.nivel]) : x.nivel;
+    return `${esc(etiqueta)}: ${x.bien}/${x.total} (${x.fecha})`;
+  }).join(' · ') : '';
 }
 
 /* ================= arranque ================= */

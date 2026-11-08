@@ -10,6 +10,15 @@
 - [ ] Revisión de textos i18n (es/en/pt) y de la redacción de preguntas.
 - [ ] Ajustes de UX tras la prueba (teclado móvil, tamaños, contraste).
 
+## Superar la referencia (cuenta personal)
+- [ ] `version.json` + `docs/notas.html` con índice SHA-256 (no modificable).
+- [ ] Idiomas IT y ZH (el catálogo de referencia ya los tiene).
+- [ ] Resultado con QR + constancia imprimible (como TTO Lab).
+- [ ] Repaso espaciado y cuaderno de errores.
+- [ ] CI de validadores (fichas, i18n, notas, enlaces) y pruebas del motor.
+- [ ] Backup/restore de perfil e historial.
+- [ ] **Rotar los dos tokens expuestos** (cuenta de proyecto y cuenta personal) al estabilizar.
+
 ## Fase 2 – resto (v0.2.x / v0.3.0)
 - [ ] **Exportar/importar copia de seguridad** (JSON) de perfil e historial.
 - [ ] **QR offline** para compartir resultados y enlace de descarga.

@@ -421,8 +421,49 @@
       "calculadora consumo CIJ",
       "examenes 5 niveles generados de datos",
       "historial local",
-      "tema claro/oscuro/sistema"
+      "tema claro/oscuro/sistema",
+      "banco de 372 preguntas TTO en es/en/pt (7 tipos: simple, multi, completar, cálculo, descripción, caso de falla, código→significado)"
     ],
     "estado": "alpha verificada en navegador (sin errores de consola; calculadora @30C = 11,2 ml/h coincidente con la referencia; examenes e historial OK; cache offline activa)"
+  },
+  "proyectos_referencia": {
+    "cuenta": "emanuelindustri-source (cuenta personal del dueño)",
+    "fecha_revision": "2026-11-08",
+    "nota": "Revisados con token temporal (no almacenado en el repo) para aprender y superar lo existente. El proyecto unificado toma lo mejor y mantiene su ventaja en amplitud de datos (802 curvas, 564 SDS, 3.195 partes, LASER, códigos y mantenimiento en un solo lugar).",
+    "repos": [
+      {
+        "nombre": "consumo-cij-calculadora",
+        "url": "https://github.com/emanuelindustri-source/consumo-cij-calculadora",
+        "version": "2.5.0 (build 11, 2026-11-05)",
+        "aporta": [
+          "app Android 14+ Kotlin/Compose",
+          "web de un solo archivo",
+          "5 idiomas (incluye IT/ZH)",
+          "validación con 493 fichas SDS",
+          "version.json + notas públicas con SHA-256",
+          "CI Android + validadores (check_fichas/i18n/notas/update)",
+          "sistema de actualización de APK",
+          "backup/restore"
+        ],
+        "adoptado": [
+          "idea de version.json, notas-indice con hash, validadores y backup quedan priorizados en PENDIENTE"
+        ]
+      },
+      {
+        "nombre": "factronics-tto-lab",
+        "url": "https://github.com/emanuelindustri-source/factronics-tto-lab",
+        "version": "1.9.0",
+        "aporta": [
+          "banco de 372 preguntas TTO en es/en/pt",
+          "7 tipos de pregunta con rúbricas",
+          "PWA + APK firmada",
+          "progreso, cuaderno de errores y repaso espaciado",
+          "constancia imprimible y resultado con QR"
+        ],
+        "adoptado": [
+          "banco de 372 preguntas importado y publicado en la app (docs/app/banco_tto.js) con su corrección y explicaciones"
+        ]
+      }
+    ]
   }
 }
