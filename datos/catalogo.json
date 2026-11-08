@@ -404,5 +404,25 @@
       "BR",
       "US"
     ]
+  },
+  "app_web": {
+    "version": "v0.2.0-alpha",
+    "ruta": "docs/app/index.html",
+    "datos": "docs/app/datos.js (667,6 KB)",
+    "offline": "service worker (manifest.webmanifest + sw.js)",
+    "idiomas": [
+      "es",
+      "en",
+      "pt"
+    ],
+    "funciones": [
+      "estudio tintas/ribbons/laser/mantenimiento",
+      "buscador unificado",
+      "calculadora consumo CIJ",
+      "examenes 5 niveles generados de datos",
+      "historial local",
+      "tema claro/oscuro/sistema"
+    ],
+    "estado": "alpha verificada en navegador (sin errores de consola; calculadora @30C = 11,2 ml/h coincidente con la referencia; examenes e historial OK; cache offline activa)"
   }
 }

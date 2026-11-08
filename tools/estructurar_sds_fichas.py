@@ -24,6 +24,7 @@ SEC4 = re.compile(r'SECCI[ÓO]N\s+4\s*[:\-]', re.I)
 CABECERA = re.compile(r'^(\d{1,2})\)\s*(.+)$', re.MULTILINE)
 CAS = re.compile(r'CAS:\s*([0-9]{2,7}\s*-\s*[0-9]{2}\s*-\s*[0-9])')
 RANGO = re.compile(r'^([<>≤≥]?\s*\d+(?:[.,]\d+)?)\s*-\s*([<>≤≥]?\s*\d+(?:[.,]\d+)?)\s*$')
+RANGO_LIBRE = re.compile(r'([<>≤≥]?\s*\d+(?:[.,]\d+)?)\s*-\s*([<>≤≥]?\s*\d+(?:[.,]\d+)?)')
 VERSION = re.compile(r'N[úu]mero de versi[óo]n\s*:?\s*\n?:?\s*([0-9]+(?:\.[0-9]+)?)')
 FECHA = re.compile(r'Fecha de emisi[óo]n/\s*Fecha de\s*\n?\s*revisi[óo]n\s*:?\s*\n?:?\s*'
                    r'([0-9]{1,2}/[0-9]{1,2}/[0-9]{4})')
@@ -91,8 +92,11 @@ def parsear_seccion3(texto):
         cas = re.sub(r'\s+', '', mcas.group(1))
         porcentaje = None
         for linea in grupo:
-            mr = RANGO.match(linea) or RANGO.search(linea)
-            if mr:
+            # quitar el numero CAS para no confundir sus guiones con un rango
+            linea_busqueda = re.sub(r'\b\d{2,7}-\d{2}-\d\b', ' ', linea)
+            candidatos = list(RANGO_LIBRE.finditer(linea_busqueda))
+            if candidatos:
+                mr = candidatos[-1]  # el porcentaje es el ultimo rango de la celda
                 porcentaje = '%s - %s' % (mr.group(1).strip(), mr.group(2).strip())
                 break
         ghs = []
