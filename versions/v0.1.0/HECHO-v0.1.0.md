@@ -57,3 +57,4 @@
 - [x] **`datos/codigos_error.json`**: 231 codigos de error (225 LASER + 6 TTO) con contexto y clase; extraccion conservadora, estado borrador.
 - [x] **`datos/laser_partes.json`**: 2.570 partes AL- unicas (1.998 con descripcion, 347 fuentes), incluido el SpareParts 3320/3120 descifrado; estado borrador.
 - [x] **Reintento IPL visual**: 9/9 re-extraidos con orden visual; rotulos OK, numeros de parte aun no extraibles (bloqueo documentado).
+- [x] **`datos/mantenimiento.json`**: 48 documentos de mantenimiento/limpieza/servicio/reemplazo y 39 tareas con intervalo (LASER/TTO), estado borrador.

@@ -32,7 +32,7 @@
 - [ ] **Muestreo visual de composiciones SDS** (nombres/porcentajes) contra los PDFs; el CAS ya está validado al 100%.
 - [x] ~~**Datasets derivados de manuales** (códigos de error)~~ → `datos/codigos_error.json` (231).
 - [x] ~~**Tablas de partes** láser~~ → `datos/laser_partes.json` (2.570).
-- [ ] **Mantenimiento** (procedimientos periódicos) de manuales láser/TTO.
+- [x] ~~**Mantenimiento** (procedimientos periódicos)~~ → `datos/mantenimiento.json` (48 documentos, 39 tareas).
 - [ ] **Revisar títulos de boletines TTO** marcados dudosos/no-legibles (63 títulos fiables de 113).
 
 ## Fase 2 — App web offline (presentar en v0.2.0–v0.3.0)

@@ -1,0 +1,545 @@
+{
+ "producto": "Mantenimiento LÁSER y TTO (documentos y tareas con intervalo)",
+ "schema": 1,
+ "fecha": "2026-11-08",
+ "total_documentos": 48,
+ "documentos_por_tecnologia": {
+  "LASER": 30,
+  "TTO": 18
+ },
+ "documentos_por_tipo": {
+  "servicio": 11,
+  "reemplazo": 17,
+  "limpieza": 7,
+  "procedimiento": 9,
+  "mantenimiento": 4
+ },
+ "total_tareas": 39,
+ "nota": "Extraccion conservadora: los documentos se listan por evidencia de nombre; las tareas recogen lineas con verbo de mantenimiento e intervalo, sin reconstruir pasos. Estado borrador: revisar contra el manual antes de usar como procedimiento.",
+ "documentos": [
+  {
+   "archivo_txt": "laser_accesorios_laser_4649_clarity_laser_controller_release_404756_r01_service_packs_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "servicio",
+   "caracteres": 14862
+  },
+  {
+   "archivo_txt": "laser_accesorios_laser_replacement_parts_vj_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "reemplazo",
+   "caracteres": 3562
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_18739_laser_lens_cleaning_procedure_eng_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "limpieza",
+   "caracteres": 2035
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_18739_procedimiento_limpieza_lente_impresora_laser_esp_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "limpieza",
+   "caracteres": 1643
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_2012_04_18_service_training_datamaster_v1_10_engl_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "servicio",
+   "caracteres": 5054
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_2013_06_service_technician_training_yag_a_series_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "servicio",
+   "caracteres": 48177
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_adjustment_of_the_resonator_dn_a_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "procedimiento",
+   "caracteres": 6093
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_adjustment_of_the_resonator_ln_a_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "procedimiento",
+   "caracteres": 6519
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_al_69683_aa_cleaning_high_power_laser_optics_reinigen_der_optiken_von_hochleistungslasern_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "limpieza",
+   "caracteres": 6375
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_austausch_und_reinigung_der_resonatorspiegel_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "procedimiento",
+   "caracteres": 4536
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_exchange_and_cleaning_of_btu_mirror_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "limpieza",
+   "caracteres": 3128
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_exchange_and_cleaning_of_resonator_mirrors_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "limpieza",
+   "caracteres": 4172
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_instructions_for_cleaning_up_lenses_rev_6_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "limpieza",
+   "caracteres": 2131
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_ln100_lesson_6_maintenance_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "mantenimiento",
+   "caracteres": 66696
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_maintenance_dn50a_ln100a_rev3_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "mantenimiento",
+   "caracteres": 3279
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_replacement_list_7210_7310_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "reemplazo",
+   "caracteres": 1891
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_resonatorjustage_dn_a_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "procedimiento",
+   "caracteres": 6496
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_resonatorjustage_ln_a_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "procedimiento",
+   "caracteres": 6925
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_service_training_yag_a_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "servicio",
+   "caracteres": 45262
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_serviceinfo_current_limitation_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "servicio",
+   "caracteres": 754
+  },
+  {
+   "archivo_txt": "laser_allprint_dn_a_ln_a_yag_tecnico_2013_06_service_technician_training_yag_a_esp_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "servicio",
+   "caracteres": 49515
+  },
+  {
+   "archivo_txt": "laser_entrenamiento_3x40_customer_maint_training_no_ui_06_04_21_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "mantenimiento",
+   "caracteres": 81019
+  },
+  {
+   "archivo_txt": "laser_manuales_co2_2013_06_service_technician_training_vj3020_engl_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "servicio",
+   "caracteres": 20605
+  },
+  {
+   "archivo_txt": "laser_manuales_co2_nueva_carpeta_al_64152_ac_exchange_of_the_focusing_optics_austausch_der_fokussieroptik_shc100_c_120_c_150c_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "procedimiento",
+   "caracteres": 5902
+  },
+  {
+   "archivo_txt": "laser_manuales_co2_nueva_carpeta_al_69395_mirror_changing_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "procedimiento",
+   "caracteres": 6101
+  },
+  {
+   "archivo_txt": "laser_manuales_co2_nueva_carpeta_al_69396_ac_replacing_focusing_optics_austausch_der_fokussieroptik_shc60_c_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "procedimiento",
+   "caracteres": 1544
+  },
+  {
+   "archivo_txt": "laser_manuales_co2_nueva_carpeta_al_69396_replacing_focusing_optics_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "procedimiento",
+   "caracteres": 3434
+  },
+  {
+   "archivo_txt": "laser_manuales_co2_nueva_carpeta_al_69683_aa_cleaning_high_power_laser_optics_reinigen_der_optiken_von_hochleistungslasern_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "limpieza",
+   "caracteres": 6375
+  },
+  {
+   "archivo_txt": "laser_manuales_fibra_nueva_carpeta_82163_aa_exchange_of_service_door_of_beam_shield_tunnel_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "servicio",
+   "caracteres": 469
+  },
+  {
+   "archivo_txt": "laser_manuales_fibra_nueva_carpeta_protocol_maintenance_vj7810_rev2_visual.txt",
+   "tecnologia": "LASER",
+   "tipo": "mantenimiento",
+   "caracteres": 2142
+  },
+  {
+   "archivo_txt": "tto_instrucciones_107mm_463068_01_aa_107mm_printhead_pcb_replacement_instructions_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "reemplazo",
+   "caracteres": 4864
+  },
+  {
+   "archivo_txt": "tto_instrucciones_107mm_463069_01_aa_107mm_printhead_pivot_assembly_peel_arm_assembly_linear_slide_replacement_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "reemplazo",
+   "caracteres": 11633
+  },
+  {
+   "archivo_txt": "tto_instrucciones_107mm_463071_01_aa_107mm_ribbon_motor_printhead_motor_replacement_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "reemplazo",
+   "caracteres": 7524
+  },
+  {
+   "archivo_txt": "tto_instrucciones_463080_01_ad_mcb_and_sd_card_replacement_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "reemplazo",
+   "caracteres": 6847
+  },
+  {
+   "archivo_txt": "tto_instrucciones_463081_01_ab_printhead_pcb_replacement_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "reemplazo",
+   "caracteres": 5420
+  },
+  {
+   "archivo_txt": "tto_instrucciones_463082_01_ab_ribbon_detector_pcb_replacement_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "reemplazo",
+   "caracteres": 4147
+  },
+  {
+   "archivo_txt": "tto_instrucciones_463083_01_ab_clarity_controller_pcb_and_lcd_replacement_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "reemplazo",
+   "caracteres": 4307
+  },
+  {
+   "archivo_txt": "tto_instrucciones_463084_01_ab_psu_pcb_replacement_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "reemplazo",
+   "caracteres": 3782
+  },
+  {
+   "archivo_txt": "tto_instrucciones_463085_01_ab_psu_and_switch_replacement_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "reemplazo",
+   "caracteres": 6585
+  },
+  {
+   "archivo_txt": "tto_instrucciones_463086_01_ab_printhead_pivot_and_peel_arm_assembly_replacement_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "reemplazo",
+   "caracteres": 12209
+  },
+  {
+   "archivo_txt": "tto_instrucciones_463087_01_ab_lh_and_rh_conversion_kit_replacement_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "reemplazo",
+   "caracteres": 13554
+  },
+  {
+   "archivo_txt": "tto_instrucciones_463088_01_ab_ribbon_motor_printhead_motor_replacement_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "reemplazo",
+   "caracteres": 7774
+  },
+  {
+   "archivo_txt": "tto_instrucciones_463089_01_ac_belt_and_idler_pulley_replacement_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "reemplazo",
+   "caracteres": 8706
+  },
+  {
+   "archivo_txt": "tto_instrucciones_463090_01_ab_printhead_and_printhead_mount_replacement_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "reemplazo",
+   "caracteres": 3971
+  },
+  {
+   "archivo_txt": "tto_instrucciones_463091_01_ab_iassure_emitter_and_lens_replacement_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "reemplazo",
+   "caracteres": 5529
+  },
+  {
+   "archivo_txt": "tto_manuales_ing_463041_01_ab_videojet_6530_service_manual_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "servicio",
+   "caracteres": 234085
+  },
+  {
+   "archivo_txt": "tto_manuales_ing_463045_01_ab_videojet_6330_service_manual_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "servicio",
+   "caracteres": 233558
+  },
+  {
+   "archivo_txt": "tto_manuales_ing_463063_01_aa_videojet_6530_107mm_service_manual_visual.txt",
+   "tecnologia": "TTO",
+   "tipo": "servicio",
+   "caracteres": 231069
+  }
+ ],
+ "tareas": [
+  {
+   "tarea": "COSHH requires the annual inspection and testing to be",
+   "intervalo": "annual",
+   "tecnologia": "LASER",
+   "archivo": "laser_accesorios_laser_ad_pvc_iq_user_manual_visual.txt"
+  },
+  {
+   "tarea": "Daily or as necessary Inspect supply unit fan filters (not applicable on IP65). Replace as",
+   "intervalo": "daily",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_3140_3340_3640_tech_training_06_04_21_visual.txt"
+  },
+  {
+   "tarea": "Daily or as necessary Inspect supply unit fan filters (not applicable on IP65). Replace as necessary.",
+   "intervalo": "daily",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_3350_tech_training_06_07_23_pre_launch_visual.txt"
+  },
+  {
+   "tarea": "Daily Check the protective glass of the flat field lens at the marking head for dust and dirt and clean the glass if",
+   "intervalo": "daily",
+   "tecnologia": "LASER",
+   "archivo": "laser_allprint_dn_a_ln_a_al_66533_e_manual_allprint_ln_a_en_visual.txt"
+  },
+  {
+   "tarea": "Daily: Check theprotectiveglassof thescanlensat themarkin Monthly: Exchange thefiltermatof theindustrialPC. EverythreemonthsCheck thecoolingwaterand theparticlefilter.Everysixmonths:Ifinstalled: Exchange thecharcoalfilte",
+   "intervalo": "daily",
+   "tecnologia": "LASER",
+   "archivo": "laser_allprint_dn_a_ln_a_service_training_yag_a_visual.txt"
+  },
+  {
+   "tarea": "If the time of daily use should exceed 10 hours continuously or in case of very dirty ambientconditions please shorten the maintenance intervals accordingly. In case of questions please",
+   "intervalo": "daily",
+   "tecnologia": "LASER",
+   "archivo": "laser_allprint_dn_a_ln_a_al_66533_e_manual_allprint_ln_a_en_visual.txt"
+  },
+  {
+   "tarea": "Maintenance Interval: Daily",
+   "intervalo": "daily",
+   "tecnologia": "LASER",
+   "archivo": "laser_allprint_dn_a_ln_a_al_66533_e_manual_allprint_ln_a_en_visual.txt"
+  },
+  {
+   "tarea": "Maintenance Interval: Monthly",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_allprint_dn_a_ln_a_al_66533_e_manual_allprint_ln_a_en_visual.txt"
+  },
+  {
+   "tarea": "Maintenance Interval: Monthly (more frequently when operated in dirty ambient conditions)",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_allprint_dn_a_ln_a_al_66534_e_manual_allprint_dn_a_en_visual.txt"
+  },
+  {
+   "tarea": "Maintenance Interval: Monthly or when control lamp lights up",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_allprint_dn_a_ln_a_al_66533_e_manual_allprint_ln_a_en_visual.txt"
+  },
+  {
+   "tarea": "Maintenance Interval: Weekly",
+   "intervalo": "weekly",
+   "tecnologia": "LASER",
+   "archivo": "laser_allprint_dn_a_ln_a_al_66534_e_manual_allprint_dn_a_en_visual.txt"
+  },
+  {
+   "tarea": "Maintenance consist s of replacing filters. Replace the filters annually or when the",
+   "intervalo": "annually",
+   "tecnologia": "LASER",
+   "archivo": "laser_accesorios_laser_ad_oracle_manual_050609_visual.txt"
+  },
+  {
+   "tarea": "Maintenance consists of replacing filters only. Replace the filters annually or when the filter change indicator is activated. A log of filter changes should be maintained.",
+   "intervalo": "annually",
+   "tecnologia": "LASER",
+   "archivo": "laser_accesorios_laser_ad_access_manual_visual.txt"
+  },
+  {
+   "tarea": "Maintenance consists of replacing filters only. Replace the filters annually orwhen the filter change indicator is activated",
+   "intervalo": "annually",
+   "tecnologia": "LASER",
+   "archivo": "laser_accesorios_laser_videojetmanual_eng_v2_visual.txt"
+  },
+  {
+   "tarea": "Maintenance of Optical Components (interim) (annual)",
+   "intervalo": "annual",
+   "tecnologia": "LASER",
+   "archivo": "laser_allprint_dn_a_ln_a_maintenance_dn50a_ln100a_rev3_visual.txt"
+  },
+  {
+   "tarea": "Maintenance: Change filters on pump every 6 months",
+   "intervalo": "every 6 months",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_7x40_training_slides_no_tcs_10_25_21_visual.txt"
+  },
+  {
+   "tarea": "Monthly (more frequently when Check the marking head protective glass for dust and dirt. Clean",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_7340_7440_technician_training_guide_01_ac_visual.txt"
+  },
+  {
+   "tarea": "Monthly (more frequently when l Check the marking head protective glass for dust and dirt. Clean",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_7340_7440_technician_training_guide_01_ab_visual.txt"
+  },
+  {
+   "tarea": "Monthly (more frequently when l Inspect the output lens for dust or dirt. Clean the lens when necessary.",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_3210_technician_training_guide_01_aa_visual.txt"
+  },
+  {
+   "tarea": "Monthly Check the laser scan lens for dirt. Clean the laser",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_manuales_fibra_nueva_carpeta_87795_aa_installation_and_operating_instructions_videojet_7920_en_visual.txt"
+  },
+  {
+   "tarea": "Monthly Check the laser scan lens for dust and dirt. Clean",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_manuales_co2_76631_ah_manual_videojet_3140_3340_3640_en_visual.txt"
+  },
+  {
+   "tarea": "Monthly l Check the laser scan lens for dust and dirt.",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_7330_7230_student_training_guide_01_aa_visual.txt"
+  },
+  {
+   "tarea": "Monthly or as necessary (more Inspect the filters in blower unit (IP65 only). Replace as necessary.",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_3350_tech_training_06_07_23_pre_launch_visual.txt"
+  },
+  {
+   "tarea": "Monthly or as necessary (more Inspect the filters in blower unit. Replace as necessary.",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_3140_3340_3640_tech_training_06_04_21_visual.txt"
+  },
+  {
+   "tarea": "Monthly or as necessary (more Inspect the output lens for dust or dirt. Clean the lens when",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_3140_3340_3640_tech_training_06_04_21_visual.txt"
+  },
+  {
+   "tarea": "Monthly or as necessary (more Inspect the output window for dust or dirt. Clean the window when necessary.",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_3350_tech_training_06_07_23_pre_launch_visual.txt"
+  },
+  {
+   "tarea": "Monthly or as necessary (more • Inspect the output lens for dust or dirt. Clean the lens when",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_3210_tech_training_05_12_21_visual.txt"
+  },
+  {
+   "tarea": "Monthly or as needed Check the laser scan lens for dust and dirt. Clean",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_vja_3130_3330_tech_training_12_29_15_visual.txt"
+  },
+  {
+   "tarea": "Monthly • Check the marking head protective glass for dust and dirt. Clean",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_7340_7440_tech_no_tcs_11_02_22_visual.txt"
+  },
+  {
+   "tarea": "Monthly(more frequently when operated in Check the focusing module for dust and dirt. Cleanthe focusing module in case of dust or stains.",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_manuales_co2_73151_ac_manual_videojet_3020_en_visual.txt"
+  },
+  {
+   "tarea": "Monthly: Check the laser scan lens for dust and dirt. Monthly or when control lamp lights up:If installed: Exchange the filter bag inside the fume Every three months (more frequently when oprated inCarry out a visual ins",
+   "intervalo": "monthly",
+   "tecnologia": "LASER",
+   "archivo": "laser_manuales_co2_2013_06_service_technician_training_vj3020_engl_visual.txt"
+  },
+  {
+   "tarea": "Recommended maintenance intervals are based on laser system use of approximately 10 hours daily operation in a normal work -",
+   "intervalo": "daily",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_3140_3340_3640_technician_training_01_af_visual.txt"
+  },
+  {
+   "tarea": "The maintenance intervals are laid out for a use of the mately 10 hours daily and regular dirty work area.ALLPRINT Laser System of approxi-",
+   "intervalo": "daily",
+   "tecnologia": "LASER",
+   "archivo": "laser_allprint_dn_a_ln_a_al_66533_e_manual_allprint_ln_a_en_visual.txt"
+  },
+  {
+   "tarea": "Weekly Check the laser scan lens for dust and dirt. Clean the laser scan lens in case of",
+   "intervalo": "weekly",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_7310_7210_cse_fiber_visual.txt"
+  },
+  {
+   "tarea": "Weekly Check the filter bag in the front panel of the PCM and replace it if necessary.",
+   "intervalo": "weekly",
+   "tecnologia": "LASER",
+   "archivo": "laser_allprint_dn_a_ln_a_al_66534_e_manual_allprint_dn_a_en_visual.txt"
+  },
+  {
+   "tarea": "annually or when the filter change indicator is activated . Replace the HCL sensor",
+   "intervalo": "annually",
+   "tecnologia": "LASER",
+   "archivo": "laser_accesorios_laser_adpvc_manual_visual.txt"
+  },
+  {
+   "tarea": "performance and reliability. Filters need replacing every 12months depending on application",
+   "intervalo": "every 12months",
+   "tecnologia": "LASER",
+   "archivo": "laser_allprint_dn_a_ln_a_laser_3000_series_accessories_guide_english_v1_3_visual.txt"
+  },
+  {
+   "tarea": "– Maintenance: Change filters on pump every 6 months",
+   "intervalo": "every 6 months",
+   "tecnologia": "LASER",
+   "archivo": "laser_entrenamiento_7010_7020_7030_tech_training_10_07_21_visual.txt"
+  },
+  {
+   "tarea": "• Replace the filter at least every 6 months.",
+   "intervalo": "every 6 months",
+   "tecnologia": "LASER",
+   "archivo": "laser_allprint_dn_a_ln_a_handbuch_zks3_s_p706_16628_v1_7_eng_visual.txt"
+  }
+ ]
+}
