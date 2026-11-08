@@ -103,6 +103,11 @@ def principal():
         return
 
     inventario = cargas_json(os.path.join(DATOS, 'fichas_tintas_inventario.json')) or {}
+    sds = cargas_json(os.path.join(DATOS, 'sds_composicion.json')) or {}
+    sds_por_slug = {}
+    for f in sds.get('fichas', []):
+        if f.get('componentes'):
+            sds_por_slug[f['slug']] = f
     brochure_txt = leer_txt(os.path.join(DATOS, 'extraccion',
                                          'cij_tintas_brochure_us.txt'))
     ts_txt = leer_txt(os.path.join(DATOS, 'extraccion',
@@ -158,7 +163,22 @@ def principal():
             'archivo': ficha['archivo'],
             'estado_extraccion': ficha['estado_extraccion'],
             'caracteres': ficha['caracteres'],
+            'caracteres_descifrado': ficha.get('caracteres_descifrado', 0),
+            'txt_descifrado': ficha.get('txt_descifrado'),
         })
+        txt_desc = ficha.get('txt_descifrado') or ''
+        slug_desc = txt_desc.replace('cij_tinta_', '').replace('_descifrado.txt', '')
+        comp = sds_por_slug.get(slug_desc)
+        if comp:
+            fichas_por_tinta[codigo][-1]['sds'] = {
+                'version': comp.get('version_sds'),
+                'fecha_revision': comp.get('fecha_revision'),
+                'componentes': [{'componente': c['componente'],
+                                 'cas': c['cas'],
+                                 'porcentaje': c['porcentaje']}
+                                for c in comp['componentes']],
+                'estado': 'borrador',
+            }
 
     datos = {
         'producto': 'Dataset tintas CIJ Videojet v1',
@@ -175,11 +195,19 @@ def principal():
         'fuentes': [
             'datos/cij_uso_solvente.json',
             'datos/fichas_tintas_inventario.json',
+            'datos/sds_composicion.json',
             'datos/extraccion/cij_tintas_brochure_us.txt',
             'datos/extraccion/cij_tinta_ts22051529684_v471_d.txt',
             'datos/extraccion/cij_tinta_ts22051529684_v471_d_dec.txt',
             'datos/extraccion/cij_tinta_v4250_ficha.txt',
         ],
+        'sds': {
+            'archivo': 'datos/sds_composicion.json',
+            'total_fichas': sds.get('total_fichas'),
+            'fichas_con_componentes': sds.get('fichas_con_componentes'),
+            'total_componentes': sds.get('total_componentes'),
+            'estado': 'borrador',
+        },
         'tintas': {},
         'brochure_us': {
             'pares_codigo_color': pares,

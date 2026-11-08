@@ -47,13 +47,16 @@ def principal():
             txts[os.path.splitext(nombre)[0]] = os.path.join(EXTRACCION, nombre)
 
     entradas = []
-    resumen = {'legible': 0, 'texto-escaso': 0, 'sin-texto-sacado': 0,
-               'sin-extraccion': 0}
+    resumen = {'legible-descifrado': 0, 'texto-escaso-descifrado': 0,
+               'sin-texto-descifrado': 0, 'legible': 0, 'texto-escaso': 0,
+               'sin-texto-sacado': 0, 'sin-extraccion': 0}
     for nombre in sorted(os.listdir(CARPETA)):
         if not nombre.lower().endswith('.pdf'):
             continue
         slug = slug_de(nombre)
-        ruta_txt = txts.get(RENOMBRES.get(slug, 'cij_tinta_%s' % slug))
+        clave_legacy = RENOMBRES.get(slug, 'cij_tinta_%s' % slug)
+        ruta_txt = txts.get(clave_legacy)
+        ruta_desc = txts.get('cij_tinta_%s_descifrado' % slug)
         entrada = {
             'archivo': nombre,
             'slug': slug,
@@ -61,31 +64,45 @@ def principal():
             'txt': None,
             'caracteres': 0,
             'bloques': 0,
+            'txt_descifrado': None,
+            'caracteres_descifrado': 0,
             'estado_extraccion': 'sin-extraccion',
         }
-        if ruta_txt:
-            cuerpo = ''
+
+        def leer_cuerpo_y_bloques(ruta):
+            cuerpo, bloques = '', 0
             try:
-                contenido = open(ruta_txt, 'r', encoding='utf-8', errors='replace').read()
+                contenido = open(ruta, 'r', encoding='utf-8', errors='replace').read()
                 cuerpo = '\n'.join(l for l in contenido.splitlines()
                                    if not l.startswith('#')).strip()
-            except OSError:
-                cuerpo = ''
-            try:
-                cab = open(ruta_txt, 'r', encoding='utf-8', errors='replace').readline()
-                m = re.search(r'bloque\(s\)=(\d+)', cab)
+                m = re.search(r'bloque\(s\)=(\d+)', contenido.splitlines()[0] if contenido else '')
                 if m:
-                    entrada['bloques'] = int(m.group(1))
+                    bloques = int(m.group(1))
             except OSError:
                 pass
+            return cuerpo, bloques
+
+        if ruta_txt:
+            cuerpo, bloques = leer_cuerpo_y_bloques(ruta_txt)
             entrada['txt'] = os.path.basename(ruta_txt)
             entrada['caracteres'] = len(cuerpo)
+            entrada['bloques'] = bloques
             if len(cuerpo) >= 200:
                 entrada['estado_extraccion'] = 'legible'
             elif len(cuerpo) > 0:
                 entrada['estado_extraccion'] = 'texto-escaso'
             else:
                 entrada['estado_extraccion'] = 'sin-texto-sacado'
+        if ruta_desc:
+            cuerpo, bloques = leer_cuerpo_y_bloques(ruta_desc)
+            entrada['txt_descifrado'] = os.path.basename(ruta_desc)
+            entrada['caracteres_descifrado'] = len(cuerpo)
+            if len(cuerpo) >= 200:
+                entrada['estado_extraccion'] = 'legible-descifrado'
+            elif len(cuerpo) > 0:
+                entrada['estado_extraccion'] = 'texto-escaso-descifrado'
+            else:
+                entrada['estado_extraccion'] = 'sin-texto-descifrado'
         resumen[entrada['estado_extraccion']] += 1
         entradas.append(entrada)
 
@@ -95,10 +112,13 @@ def principal():
         'fecha': 'registro acumulado del proyecto',
         'total_pdfs': len(entradas),
         'resumen': resumen,
-        'nota': ('Todos los PDFs se procesaron con el extractor stdlib; los casos '
-                 'sin-texto-sacado quedan como evidencia permanente del intento y '
-                 'requieren OCR o decodificacion adicional. Estados: legible / '
-                 'texto-escaso / sin-texto-sacado / sin-extraccion.'),
+        'nota': ('Todos los PDFs se procesaron con el extractor stdlib; los 562 cifrados '
+                 'con el handler estandar (RC4 128 bits, contrasena de usuario vacia) se '
+                 'descifraron con tools/leer_pdf_cifrado.py v2 y sus CMaps ToUnicode -> '
+                 'extraccion <slug>_descifrado.txt. Los .txt de 0 caracteres previos se '
+                 'conservan como evidencia del intento original. Estados: '
+                 'legible-descifrado / texto-escaso-descifrado / sin-texto-descifrado / '
+                 'legible / texto-escaso / sin-texto-sacado / sin-extraccion.'),
         'fichas': entradas,
     }
     with open(DESTINO, 'w', encoding='utf-8') as f:

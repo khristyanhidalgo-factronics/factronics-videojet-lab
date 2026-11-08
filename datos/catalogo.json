@@ -3,7 +3,7 @@
   "schema": 1,
   "actualizado": "2026-11-08",
   "estado_general": "en-extraccion",
-  "nota_de_fuentes": "Fase 1 en curso. Este catalogo inventaria las fuentes y vincula los datasets derivados (que viven en su propio archivo: fuente unica por tema). Datos ya extraidos de fuentes del equipo: partes TTO 6x30 (Excel de curso), uso de solvente CIJ al 100% (802/802 documentos: 800 curvas verificadas + 2 declaradas sin datos por el propio documento), fichas de tintas QSS inventariadas (564 PDFs, 562 sin texto sacado con extractor stdlib, quedan como evidencia del intento), dataset tintas CIJ v1 (bases/colors desde fuentes verificadas y brochure US) y decodificador calibrado v2 de fuentes subset (offset +29 evidencia en TS2205 V471-D / 98039 / IPL 1550 y 1650). Ningun dato inventado; estados de dato: 'verificado' | 'borrador' | 'sin-datos-en-documento' | 'por-definir' | 'borrador-decodificado'.",
+  "nota_de_fuentes": "Fase 1 en curso. Datos extraidos de fuentes del equipo: partes TTO 6x30, uso de solvente CIJ 802/802, fichas QSS 564/564 DESCIFRADAS (handler estandar RC4 128 bits, contrasena de usuario vacia) y extraidas con CMaps ToUnicode (17,4 M caracteres); composicion seccion 3 de 547 fichas SDS estructurada (1.773 componentes con CAS/porcentaje/GHS); dataset tintas CIJ v1 (134 tintas, bases y curvas verificadas + colores del brochure US en borrador); decodificador calibrado v2 de fuentes subset para IPL/TS2205. Ningun dato inventado; estados: verificado | borrador | sin-datos-en-documento | por-definir | borrador-decodificado.",
   "fuentes_locales_descripcion": [
     {
       "id": "cij-solventes",
@@ -33,7 +33,7 @@
       "cubre": [
         "CIJ"
       ],
-      "estado_extraccion": "9 de 9 PDFs IPL extraidos a texto con tools/lote_ipl.py (resumen en datos/extraccion/_lote_ipl_resumen.json); decodificador v2 tools/decodificar_cipher_offset.py con decision por bloque: IPL 1550 y 1650 con corridas legibles - Illustrated Parts List, Ink Cartridge, Makeup Cartridge, Printhead, Gasket Kit, Printer Wall Mount; salidas *_dec.txt en datos/extraccion. Estado del dato: BORRADOR",
+      "estado_extraccion": "9 de 9 PDFs IPL extraidos a texto con tools/lote_ipl.py (resumen en datos/extraccion/_lote_ipl_resumen.json); decodificador v2 tools/decodificar_cipher_offset.py con decision por bloque: IPL 1550 y 1650 con corridas legibles - Illustrated Parts List, Ink Cartridge, Makeup Cartridge, Printhead, Gasket Kit, Printer Wall Mount; salidas *_dec.txt en datos/extraccion. Estado del dato: BORRADOR | decodificador v2 por bloque ejecutado: corridas legibles en IPL 1550/1650; numeros de parte aun sin verificar.",
       "aviso": "Los IPL usan fuentes subset desplazadas (offset calibrado +29 verificable) MEZCLADAS en el mismo documento con otras fuentes correctas o irreparables; la cobertura de la decodificacion es parcial por bloque y los NUMEROS DE PARTE siguen sin poder verificarse automaticamente. No se estrutura partes_cij hasta poder cruzar cada numero contra el PDF original (borrador-decodificado no alcanza para datos estructurados)."
     },
     {
@@ -42,8 +42,8 @@
       "cubre": [
         "CIJ"
       ],
-      "estado_extraccion": "carpeta ficha de tintas (QSS): 564 PDFs inventariados en datos/fichas_tintas_inventario.json - 562 sin texto sacado con extractor stdlib (sin-texto-sacado, quedan como evidencia del intento y requieren OCR), 2 legibles (98039 y br-cij-es) + TS2205 V471-D desde CLARITY (borrador-decodificado). Brochure US cij_tintas_brochure_us.txt normalizado (mapa industria->tinta con colores). Los 2 listados tabulares (EquivalenciaTintasVJ1000, Simplicity Makeup) siguen con fuentes CID cifradas (redundante-cifrado) - pendiente OCR o remapeo CID",
-      "aviso": "no existe un Excel de tintas en las carpetas del equipo (verificado por busqueda del sistema de archivos)"
+      "estado_extraccion": "564/564 fichas QSS (carpeta ficha de tintas) DESCIFRADAS y extraidas: son PDFs con handler de seguridad estandar R4/V4/CFM-V2 (RC4 128 bits) y contrasena de usuario vacia (/P -12 solo restringe copiar/imprimir); tools/leer_pdf_cifrado.py v2 aplica el descifrado + CMaps ToUnicode -> 17.449.653 caracteres legibles en datos/extraccion/*_descifrado.txt. 547 fichas con composicion (seccion 3) estructurada: datos/sds_composicion.json (1.773 componentes con CAS, porcentaje y GHS). Brochure US de tintas procesado (mapa industria->tinta). Simplicity y EquivalenciaTintas siguen sin ToUnicode (GIDs secuenciales, redundante-cifrado) - requieren mapeo por comparacion u OCR; no se usan.",
+      "aviso": "el descifrado NO rompe contrasenas: los documentos abren sin clave para cualquier lector (contraseña de usuario vacia); la marca /P -12 solo restringia copiar/imprimir. La extraccion es evidencia para el estudio del propio dueno; las composiciones quedan en estado borrador hasta revision humana contra el PDF original."
     },
     {
       "id": "tto-curso-6x30",
@@ -89,14 +89,21 @@
       "tecnologia": "CIJ",
       "estado": "borrador",
       "fuente": "bases desde cij_uso_solvente.json (verificado, 802 entradas) + brochure US cij-inks-and-fluids (colores/industrias, borrador) + TS2205 V471-D (borrador-decodificado) + ficha V4250 (borrador)",
-      "resumen": "134 tintas CIJ: bases quimicas documentadas y modelos con curva (132 tintas con curvas verificadas de consumo de solvente); colores del brochure US (Black/Blue/Red/Purple/Green/Clear) e industrias marcados borrador; composicion parcial V471-D (Butanone 78-93-3, Ethanol 64-17-5) marcada borrador-decodificado hasta revisar contra el PDF original."
+      "resumen": "134 tintas CIJ: bases quimicas y modelos con curva (132 tintas con curvas verificadas de uso de solvente); composiciones SDS por ficha (desde sds_composicion.json, borrador); colores del brochure US (borrador)."
     },
     "fichas_tintas_inventario": {
       "archivo": "datos/fichas_tintas_inventario.json",
       "tecnologia": "CIJ",
       "estado": "verificado",
-      "fuente": "carpeta ficha de tintas (QSS) del equipo: documentos QSS de tintas",
-      "resumen": "564 PDFs QSS inventariados uno a uno: 562 sin texto sacado con el extractor stdlib (sin-texto-sacado: quedan como evidencia permanente del intento y requieren OCR), 2 legibles (98039 y br-cij-inks-and-fluids-es) y V471-D/V471-K producen 0 chars in situ - el TS2205 legible es la copia de CLARITY, vinculada por nombre en el inventario."
+      "fuente": "carpeta ficha de tintas (QSS) del equipo: 564 PDFs QSS",
+      "resumen": "564/564 fichas en estado legible-descifrado: 562 con handler estandar RC4-128 descifrado + 2 sin cifrado; extraccion con CMaps ToUnicode (17,4 M caracteres). Los .txt de 0 caracteres del primer intento se conservan como evidencia historica."
+    },
+    "sds_composicion": {
+      "archivo": "datos/sds_composicion.json",
+      "tecnologia": "CIJ",
+      "estado": "borrador",
+      "fuente": "seccion 3 de las SDS Videojet descifradas (tools/leer_pdf_cifrado.py v2 -> tools/estructurar_sds_fichas.py)",
+      "resumen": "547 de 563 SDS con composicion estructurada: 1.773 componentes con nombre, CAS, porcentaje y clasificacion GHS; version y fecha de revision de cada SDS. Ejemplo verificado: V471-D v6.07 (2/16/2026) = Metiletilcetona 78-93-3 40-<50%, Etanol 64-17-5 13-<20%, PGMEA 108-65-6 5-<10%, Xilenos 1330-20-7 1-<3%, bromuro de tetrabutilamonio 1643-19-2 1-<3%, colorante 92257-31-3 1-<3%."
     }
   },
   "tecnologias": [

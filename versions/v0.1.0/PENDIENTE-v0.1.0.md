@@ -23,7 +23,7 @@
 
 ## Fase 1 - pendientes derivados del ciclo tintas/decodificador (2026-11-08)
 - [ ] **Números de parte de las IPL:** los rótulos ya decodifican ("Ink Cartridge", "Printhead"...), pero cada NUMERO requiere cruzarse contra el PDF original; `borrador-decodificado` no alcanza para datos estructurados → parser `partes_cij` sigue bloqueado.
-- [ ] **OCR de las 562 fichas QSS** `sin-texto-sacado` (sin dependencias externas en el PC del dueño; evaluar alternativas nativas u obtener los datos por otra vía).
+- [x] ~~**OCR de las 562 fichas QSS** `sin-texto-sacado`~~ → **CERRADO SIN OCR**: eran PDFs cifrados con RC4-128 (contrasena de usuario vacia); descifradas 564/564 y estructurada la composicion. Ver HECHO.
 - [ ] **Simplicity / EquivalenciaTintas:** siguen con fuentes CID sin mapear ("redundante-cifrado"); requiere OCR o remapeo CID para estructurar las tablas.
 - [ ] **Ampliar `cij_tintas.json`**: fichas QSS completas (composición/datos regulatorios) cuando ya exista OCR; quedan 132 tintas con solo base+curva.
 
