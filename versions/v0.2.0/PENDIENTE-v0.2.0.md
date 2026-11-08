@@ -11,12 +11,12 @@
 - [ ] Ajustes de UX tras la prueba (teclado móvil, tamaños, contraste).
 
 ## Superar la referencia (cuenta personal)
-- [ ] `version.json` + `docs/notas.html` con índice SHA-256 (no modificable).
+- [x] ~~`version.json` + `docs/notas.html` con índice SHA-256~~ → hecho (`tools/publicar_notas.py`).
 - [ ] Idiomas IT y ZH (el catálogo de referencia ya los tiene).
 - [ ] Resultado con QR + constancia imprimible (como TTO Lab).
 - [ ] Repaso espaciado y cuaderno de errores.
-- [ ] CI de validadores (fichas, i18n, notas, enlaces) y pruebas del motor.
-- [ ] Backup/restore de perfil e historial.
+- [x] ~~CI de validadores~~ (JSON, notas SHA-256, app, enlaces) → `tools/validar_repo.py` + workflow. Quedan pruebas del motor del banco.
+- [x] ~~Backup/restore de perfil e historial~~ → exportar/importar en la app.
 - [ ] **Rotar los dos tokens expuestos** (cuenta de proyecto y cuenta personal) al estabilizar.
 
 ## Fase 2 – resto (v0.2.x / v0.3.0)

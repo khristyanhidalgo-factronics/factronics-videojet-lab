@@ -208,6 +208,11 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
         (calculadora hermana). Este proyecto unifica TTO · CIJ · LÁSER en un solo lugar.
       </p>
       <p class="small">Repo: <a href="https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab" target="_blank" rel="noopener">factronics-videojet-lab</a> · <span id="av_fecha"></span></p>
+      <h3>Copia de seguridad</h3>
+      <p class="small">Exporta o importa tu perfil local (idioma, tema, historial de exámenes y nombre). Nada sale de tu dispositivo.</p>
+      <button class="btn" id="bk_export">⬇️ Exportar copia</button>
+      <label class="btn" style="cursor:pointer;display:inline-block">⬆️ Importar<input type="file" id="bk_import" accept="application/json" style="display:none"></label>
+      <span class="small" id="bk_msg"></span>
     </div>
   </section>
 </main>
@@ -744,6 +749,47 @@ function renderHistorial(){
     return `${esc(etiqueta)}: ${x.bien}/${x.total} (${x.fecha})`;
   }).join(' · ') : '';
 }
+
+/* ================= copia de seguridad ================= */
+function exportarCopia(){
+  const datos = {
+    app: 'Factronics Videojet Lab',
+    version: (D.meta || {}).version || '',
+    fecha: new Date().toISOString(),
+    perfil: { nombre: localStorage.getItem('fvl_profile') || '' },
+    lang: LANG,
+    theme: localStorage.getItem('fvl_theme') || 'auto',
+    historial: JSON.parse(localStorage.getItem('fvl_exam_history') || '[]'),
+  };
+  const blob = new Blob([JSON.stringify(datos, null, 2)], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'factronics-backup-' + new Date().toISOString().slice(0,10) + '.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+  $('#bk_msg').textContent = '✅ Copia exportada.';
+}
+function importarCopia(archivo){
+  const lector = new FileReader();
+  lector.onload = () => {
+    try {
+      const d = JSON.parse(lector.result);
+      if (d.lang && I18N[d.lang]) { LANG = d.lang; localStorage.setItem('fvl_lang', LANG); }
+      if (d.theme) localStorage.setItem('fvl_theme', d.theme);
+      if (d.perfil && typeof d.perfil.nombre === 'string') localStorage.setItem('fvl_profile', d.perfil.nombre);
+      if (Array.isArray(d.historial)) localStorage.setItem('fvl_exam_history', JSON.stringify(d.historial.slice(0, 50)));
+      aplicarTema(); aplicarIdioma();
+      $('#bk_msg').textContent = '✅ Copia importada (' + ((d.historial||[]).length) + ' registros).';
+    } catch (e) {
+      $('#bk_msg').textContent = '❌ Archivo no válido.';
+    }
+  };
+  lector.readAsText(archivo);
+}
+$('#bk_export').addEventListener('click', exportarCopia);
+$('#bk_import').addEventListener('change', (e) => {
+  if (e.target.files && e.target.files[0]) importarCopia(e.target.files[0]);
+});
 
 /* ================= arranque ================= */
 aplicarTema();
