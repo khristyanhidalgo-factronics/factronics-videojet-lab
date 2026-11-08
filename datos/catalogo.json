@@ -33,7 +33,7 @@
       "cubre": [
         "CIJ"
       ],
-      "estado_extraccion": "9 de 9 PDFs IPL extraidos a texto con tools/lote_ipl.py (resumen en datos/extraccion/_lote_ipl_resumen.json); decodificador v2 tools/decodificar_cipher_offset.py con decision por bloque: IPL 1550 y 1650 con corridas legibles - Illustrated Parts List, Ink Cartridge, Makeup Cartridge, Printhead, Gasket Kit, Printer Wall Mount; salidas *_dec.txt en datos/extraccion. Estado del dato: BORRADOR | decodificador v2 por bloque ejecutado: corridas legibles en IPL 1550/1650; numeros de parte aun sin verificar.",
+      "estado_extraccion": "9 de 9 PDFs IPL extraidos a texto con tools/lote_ipl.py (resumen en datos/extraccion/_lote_ipl_resumen.json); decodificador v2 tools/decodificar_cipher_offset.py con decision por bloque: IPL 1550 y 1650 con corridas legibles - Illustrated Parts List, Ink Cartridge, Makeup Cartridge, Printhead, Gasket Kit, Printer Wall Mount; salidas *_dec.txt en datos/extraccion. Estado del dato: BORRADOR | decodificador v2 por bloque ejecutado: corridas legibles en IPL 1550/1650; numeros de parte aun sin verificar. | reintento VISUAL v3: los rotulos mejoran, pero las columnas de NUMEROS de parte siguen en fuente subset sin ToUnicode: extras 1 numero de 6 digitos en todo el IPL 1550. Se mantiene bloqueado partes_cij.",
       "aviso": "Los IPL usan fuentes subset desplazadas (offset calibrado +29 verificable) MEZCLADAS en el mismo documento con otras fuentes correctas o irreparables; la cobertura de la decodificacion es parcial por bloque y los NUMEROS DE PARTE siguen sin poder verificarse automaticamente. No se estrutura partes_cij hasta poder cruzar cada numero contra el PDF original (borrador-decodificado no alcanza para datos estructurados)."
     },
     {
@@ -160,6 +160,13 @@
       "estado": "borrador",
       "fuente": "listas de error de ALLPRINT/Videojet (18234 Laser Error Codes, Error List 3140/3340/3640, error_messages_blueberry) + boletines TTO (titulos y nombres de archivo con E####/W####)",
       "resumen": "231 codigos (225 LASER con ID de 5 digitos y clase cuando aparece; 6 TTO E####). Se guarda codigo + contexto; no se reconstruyen tablas de causa/remedio. Requiere revision antes de publicar como firme."
+    },
+    "laser_partes": {
+      "archivo": "datos/laser_partes.json",
+      "tecnologia": "LASER",
+      "estado": "borrador",
+      "fuente": "textos laser extraidos (SpareParts 3320/3120 recuperado por descifrado AES + manuales + dibujos): numeros AL-xxxxx/AL-SPxxxxx y descripcion adyacente",
+      "resumen": "2570 numeros de parte unicos (1998 con descripcion) de 347 archivos fuente. La tabla original intercala columnas de posicion: no se reconstruye, solo numero + contexto; estado borrador."
     }
   },
   "tecnologias": [

@@ -55,3 +55,5 @@
 - [x] **`datos/tto_boletines.json`**: índice de 113 boletines con legibilidad medida y 63 títulos fiables.
 - [x] **OCR nativo**: `tools/ocr_windows.ps1` + `tools/lote_laser_ocr.py` — 29 escaneados con JPEG procesados (17 con texto, +16.277 chars; 12 sin resultado).
 - [x] **`datos/codigos_error.json`**: 231 codigos de error (225 LASER + 6 TTO) con contexto y clase; extraccion conservadora, estado borrador.
+- [x] **`datos/laser_partes.json`**: 2.570 partes AL- unicas (1.998 con descripcion, 347 fuentes), incluido el SpareParts 3320/3120 descifrado; estado borrador.
+- [x] **Reintento IPL visual**: 9/9 re-extraidos con orden visual; rotulos OK, numeros de parte aun no extraibles (bloqueo documentado).

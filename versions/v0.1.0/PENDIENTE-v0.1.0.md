@@ -22,7 +22,7 @@
 - [ ] Cruzar las partes TTO (borrador) contra las Official Parts Lists PDF para elevarlas a `verificado`.
 
 ## Fase 1 - pendientes derivados del ciclo tintas/decodificador/ocr (2026-11-08)
-- [ ] **Números de parte de las IPL:** revisión contra el PDF original u OCR antes de estructurar `partes_cij`.
+- [ ] **Números de parte de las IPL:** revisión contra el PDF original u OCR antes de estructurar `partes_cij` (reintento visual v3 confirmó que la columna está en fuente subset sin ToUnicode).
 - [x] ~~**OCR de las 562 fichas QSS**~~ → **CERRADO SIN OCR**: eran PDFs cifrados RC4-128; descifradas 564/564 y estructurada composición (1.773 componentes, CAS 100% validado) y propiedades (12.728 campos).
 - [x] ~~**OCR de los PDFs láser escaneados**~~ → **PARCIAL CERRADO**: OCR nativo de Windows sobre los 29 con JPEG (17 con texto, +16.277 chars); quedan 31 sin JPEG (JBIG2/vector).
 - [ ] **31 escaneados láser sin JPEG**: requerirían rasterizar el PDF a imagen para OCR (evaluar si aportan).
@@ -31,7 +31,8 @@
 - [ ] **Refrescar `simplicity_global_inventario.json`** cuando el dueño suba las partes 4-12 del repo global (hoy 3/12) y clasificar por tecnología.
 - [ ] **Muestreo visual de composiciones SDS** (nombres/porcentajes) contra los PDFs; el CAS ya está validado al 100%.
 - [x] ~~**Datasets derivados de manuales** (códigos de error)~~ → `datos/codigos_error.json` (231).
-- [ ] **Tablas de partes y mantenimiento** de manuales láser/TTO (siguiente derivado; requiere parseo de tablas).
+- [x] ~~**Tablas de partes** láser~~ → `datos/laser_partes.json` (2.570).
+- [ ] **Mantenimiento** (procedimientos periódicos) de manuales láser/TTO.
 - [ ] **Revisar títulos de boletines TTO** marcados dudosos/no-legibles (63 títulos fiables de 113).
 
 ## Fase 2 — App web offline (presentar en v0.2.0–v0.3.0)
