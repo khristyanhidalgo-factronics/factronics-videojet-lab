@@ -1,0 +1,35 @@
+# ===== Sistema =====
+Thumbs.db
+.DS_Store
+*.log
+
+# ===== Secretos (regla del proyecto: cero secretos en el repo) =====
+.env
+.env.*
+*.token
+token*.txt
+ghp_*.txt
+github_token.txt
+
+# ===== Android =====
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/keystore/
+android/capture/
+*.jks
+*.keystore
+keystore.properties
+# El APK no se versiona: se publica en GitHub Releases
+*.apk
+
+# ===== Node / Web =====
+node_modules/
+dist/
+.vite/
+coverage/
+
+# ===== Temporales del proyecto =====
+tmp/
+temp/

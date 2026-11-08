@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Factronics Videojet Lab — Estudio, exámenes y calculadoras para TTO · CIJ · Láser (100% offline)</title>
+<meta name="description" content="Plataforma del equipo de Factronics Venezuela: estudio, exámenes por niveles, buscador de números de parte y calculadoras de consumo/costo para las tecnologías Videojet TTO, CIJ y Láser. Web y APK 100% offline.">
+<meta property="og:title" content="Factronics Videojet Lab">
+<meta property="og:description" content="Estudio, exámenes, buscador de partes y calculadoras para TTO · CIJ · Láser. 100% offline.">
+<meta property="og:image" content="assets/logo.svg">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<meta name="theme-color" content="#0b3a6b">
+<style>
+:root{
+  --bg:#f4f7fb; --surface:#ffffff; --text:#132a3f; --muted:#5b7186; --border:#dfe7ef;
+  --accent:#0b5cab; --accent2:#00b4d8; --ok:#0b7a58; --warn:#b26b00; --shadow:0 10px 30px rgba(11,44,79,.10);
+}
+[data-theme="dark"]{
+  --bg:#0b1620; --surface:#101f30; --text:#e6eef7; --muted:#93a7bb; --border:#1d3348;
+  --accent:#3f9df5; --accent2:#35c9ea; --ok:#39c98f; --warn:#e0a23a; --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+@media (prefers-color-scheme: dark){
+  [data-theme="auto"]{
+    --bg:#0b1620; --surface:#101f30; --text:#e6eef7; --muted:#93a7bb; --border:#1d3348;
+    --accent:#3f9df5; --accent2:#35c9ea; --ok:#39c98f; --warn:#e0a23a; --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Inter,Arial,sans-serif;line-height:1.6}
+img{max-width:100%}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1080px;margin:0 auto;padding:0 20px}
+/* Header */
+header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--surface) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.hdr{display:flex;align-items:center;gap:14px;padding:10px 20px;max-width:1080px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--text)}
+.brand img{width:34px;height:34px;border-radius:9px}
+.brand span b{color:var(--accent)}
+nav{margin-left:auto;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+nav a{font-weight:600;font-size:.95rem}
+#btnTheme{border:1px solid var(--border);background:var(--surface);border-radius:10px;padding:6px 10px;cursor:pointer;font-size:1rem}
+/* Hero */
+#hero{position:relative;overflow:hidden;padding:70px 0 50px;text-align:center}
+#hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;top:-240px;left:50%;transform:translateX(-50%);
+  background:radial-gradient(circle at 50% 50%,color-mix(in srgb,var(--accent2) 26%,transparent),transparent 70%);animation:float 12s ease-in-out infinite;pointer-events:none}
+@keyframes float{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(18px)}}
+.pill{display:inline-block;padding:6px 14px;border-radius:999px;border:1px solid var(--border);background:var(--surface);font-weight:700;font-size:.85rem;letter-spacing:.3px}
+.pill.dev{color:var(--warn)}
+h1{font-size:clamp(2rem,5.5vw,3.4rem);line-height:1.15;margin:18px 0 12px}
+h1 b{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{max-width:720px;margin:0 auto;color:var(--muted);font-size:1.06rem}
+.cta{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{padding:12px 20px;border-radius:12px;font-weight:700;border:1px solid var(--border);background:var(--surface);color:var(--text);display:inline-flex;align-items:center;gap:8px;transition:transform .15s ease, box-shadow .15s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow);text-decoration:none}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;border:none}
+.btn[aria-disabled="true"]{opacity:.55;cursor:not-allowed;filter:grayscale(.3)}
+.stats{margin-top:30px;display:flex;gap:18px;justify-content:center;flex-wrap:wrap;color:var(--muted);font-weight:600;font-size:.95rem}
+.stats span{background:var(--surface);border:1px solid var(--border);padding:8px 14px;border-radius:999px}
+/* Sections */
+section{padding:52px 0}
+h2{font-size:clamp(1.5rem,3vw,2rem);margin:0 0 8px}
+.lead{color:var(--muted);margin:0 0 26px;max-width:720px}
+.grid{display:grid;gap:18px}
+.grid.c6{grid-template-columns:repeat(auto-fit,minmax(255px,1fr))}
+.grid.c5{grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:var(--shadow);transition:transform .18s ease}
+.card:hover{transform:translateY(-3px)}
+.card .ico{font-size:1.7rem}
+.card h3{margin:10px 0 6px;font-size:1.06rem}
+.card p{margin:0;color:var(--muted);font-size:.96rem}
+/* Version card */
+.vcard{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:760px){.vcard{grid-template-columns:1.2fr .8fr}}
+.check{list-style:none;padding:0;margin:0}
+.check li{padding:4px 0;display:flex;gap:10px;align-items:flex-start}
+.check li::before{content:"✅";flex:none}
+.mini{color:var(--muted);font-size:.9rem}
+/* Notes */
+.note-card{display:block;color:var(--text)}
+.note-card .ico{font-size:1.5rem}
+/* Roadmap */
+.road{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px dashed var(--border)}
+.road:last-of-type{border-bottom:none}
+.road .tag{flex:none;min-width:86px;text-align:center;font-weight:800;font-size:.85rem;padding:6px 8px;border-radius:10px;background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent)}
+.road b{display:block}
+/* Download */
+.dl{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+/* Footer */
+footer{border-top:1px solid var(--border);padding:30px 0 40px;color:var(--muted);font-size:.92rem;text-align:center}
+footer a{color:var(--accent)}
+/* Reveal animation */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease, transform .5s ease}
+.reveal.on{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  .reveal{transition:none;opacity:1;transform:none}
+  #hero::before{animation:none}
+  html{scroll-behavior:auto}
+}
+:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
+</style>
+</head>
+<body>
+<header>
+  <div class="hdr">
+    <a class="brand" href="#hero" title="Factronics Videojet Lab">
+      <img src="assets/logo.svg" alt="Logo Factronics Videojet Lab">
+      <span><b>FVR</b> · Factronics Videojet Lab</span>
+    </a>
+    <nav aria-label="Principal">
+      <a href="#features">Características</a>
+      <a href="#version">Versión</a>
+      <a href="#notas">Notas</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#descarga">Descargar</a>
+      <button id="btnTheme" title="Cambiar tema (auto/claro/oscuro)">🌐</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="container">
+      <span class="pill dev">🚧 v0.1.0-dev · En desarrollo</span>
+      <h1>Estudia, examínate y calcula con <b>Factronics Videojet Lab</b></h1>
+      <p class="sub">La plataforma del equipo para las tecnologías Videojet <b>TTO · CIJ · Láser</b>:
+      exámenes por niveles, buscador de números de parte y calculadoras de consumo/costos.
+      Web y APK que funcionan <b>100% sin internet</b>.</p>
+      <div class="cta">
+        <a class="btn primary" href="#notas">Ver notas de la versión</a>
+        <a class="btn" href="https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab" target="_blank" rel="noopener">⭐ Ver repositorio</a>
+        <button class="btn" aria-disabled="true" title="Disponible desde v0.2.0">💻 Abrir aplicación (v0.2)</button>
+      </div>
+      <div class="stats">
+        <span>100% offline</span><span>3 tecnologías</span><span>5 niveles</span><span>ES · EN · PT</span><span>Material You</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARACTERÍSTICAS -->
+  <section id="features">
+    <div class="container">
+      <h2>Qué vas a encontrar</h2>
+      <p class="lead">Pensado para usuarios nuevos, técnicos nuevos y vendedores. Todo sin conexión y sin cuentas.</p>
+      <div class="grid c6">
+        <div class="card reveal"><div class="ico">🎓</div><h3>Exámenes por niveles</h3><p>Básico · Básico-Medio · Intermedio-Avanzado · Avanzado · Profesional, con modos estudio y repaso.</p></div>
+        <div class="card reveal"><div class="ico">🔍</div><h3>Buscador de partes</h3><p>Encuentra números de parte por tecnología, modelo o componente — por número o por nombre.</p></div>
+        <div class="card reveal"><div class="ico">🧮</div><h3>Calculadoras</h3><p>Consumo y costos de tintas y solventes CIJ, ribbons TTO y comparativas: aliado del equipo de ventas.</p></div>
+        <div class="card reveal"><div class="ico">📶</div><h3>100% offline</h3><p>La web y la APK funcionan sin señal: en planta, en ruta o en modo avión. La red solo sirve para actualizar.</p></div>
+        <div class="card reveal"><div class="ico">🎨</div><h3>Material You &amp; festividades</h3><p>Color dinámico según tu fondo (Android 12+) y temas por fecha y país: Navidad, Halloween, San Valentín…</p></div>
+        <div class="card reveal"><div class="ico">🌍</div><h3>Español · Inglés · Portugués</h3><p>Multi-idioma real con textos centralizados; el español es el principal.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERSIÓN -->
+  <section id="version">
+    <div class="container">
+      <h2>Versión actual</h2>
+      <p class="lead">Estado del desarrollo, actualizado a cada versión desde las notas (nunca se borran).</p>
+      <div class="vcard card">
+        <div>
+          <h3>🚧 v0.1.0 — Fundación del proyecto</h3>
+          <p>Primera versión: estructura, reglas y visión. La aplicación completa llega en las siguientes versiones.</p>
+          <ul class="check">
+            <li>Sistema de notas (5 tipos) + convenciones permanentes</li>
+            <li>Repositorio fundado · landing publicada · logo único</li>
+            <li>Catálogo semilla con las fuentes reales del equipo</li>
+          </ul>
+        </div>
+        <div>
+          <h3>⏳ En curso / siguiente</h3>
+          <p class="mini">Fase 1: extraer datos reales de las fuentes (partes, tintas, solventes, velocidades, TTO, láser) → luego la app web beta (v0.2.0).</p>
+          <p><a href="https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab/blob/main/versions/v0.1.0/PENDIENTE-v0.1.0.md" target="_blank" rel="noopener">Ver PENDIENTE completo →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTAS -->
+  <section id="notas">
+    <div class="container">
+      <h2>Notas de la versión (5 tipos)</h2>
+      <p class="lead">El proyecto documenta y conserva su memoria: PLAN, BITÁCORA, HECHO, PENDIENTE y ROADMAP.</p>
+      <div class="grid c5">
+        <a class="card note-card reveal" href="https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab/blob/main/versions/v0.1.0/PLAN-v0.1.0.md" target="_blank" rel="noopener"><div class="ico">🗺️</div><h3>PLAN</h3><p>Lo que se va a hacer en esta versión.</p></a>
+        <a class="card note-card reveal" href="https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab/blob/main/versions/v0.1.0/BITACORA-v0.1.0.md" target="_blank" rel="noopener"><div class="ico">🖊️</div><h3>BITÁCORA</h3><p>Lo que se está haciendo, paso a paso.</p></a>
+        <a class="card note-card reveal" href="https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab/blob/main/versions/v0.1.0/HECHO-v0.1.0.md" target="_blank" rel="noopener"><div class="ico">✅</div><h3>HECHO</h3><p>Lo que se terminó de hacer.</p></a>
+        <a class="card note-card reveal" href="https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab/blob/main/versions/v0.1.0/PENDIENTE-v0.1.0.md" target="_blank" rel="noopener"><div class="ico">⏳</div><h3>PENDIENTE</h3><p>Lo que faltó por hacer.</p></a>
+        <a class="card note-card reveal" href="https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab/blob/main/versions/ROADMAP.md" target="_blank" rel="noopener"><div class="ico">🧭</div><h3>ROADMAP</h3><p>Lo que se hará en versiones futuras.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section id="roadmap">
+    <div class="container">
+      <h2>Camino hacia la v1.0.0</h2>
+      <p class="lead">Prioridades revisables por el dueño del proyecto. Detalle completo en el <a href="https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab/blob/main/versions/ROADMAP.md" target="_blank" rel="noopener">ROADMAP</a>.</p>
+      <div class="card">
+        <div class="road"><span class="tag">v0.2.0</span><div><b>Datos reales + app web beta</b><span class="mini">Extracción de fuentes, catálogo verificado, exámenes de 5 niveles + buscador de partes.</span></div></div>
+        <div class="road"><span class="tag">v0.3.0</span><div><b>App web completa</b><span class="mini">Calculadoras, historial, respaldo, temas festivos, QR, 100% offline verificado.</span></div></div>
+        <div class="road"><span class="tag">v0.4.0</span><div><b>APK Android nativa</b><span class="mini">Kotlin + Compose + Material 3 + Material You, minSdk 24.</span></div></div>
+        <div class="road"><span class="tag">v0.5.0</span><div><b>Sistema de actualización</b><span class="mini">version.json + SHA-256, aviso de nueva versión, keystore persistente que conserva tus datos.</span></div></div>
+        <div class="road"><span class="tag">v1.0.0</span><div><b>🎉 Release estable</b><span class="mini">APK firmada publicada en Releases, notas congeladas y QA completo.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESCARGA -->
+  <section id="descarga">
+    <div class="container">
+      <h2>Descargas</h2>
+      <div class="dl">
+        <div>
+          <b>📱 APK Factronics Videojet Lab</b>
+          <p class="mini">La primera APK pública sale con la <b>v1.0.0</b>, firmada y verificada con SHA-256.
+          Las versiones antiguas siguen funcionando y cada actualización conserva tus datos.</p>
+        </div>
+        <a class="btn primary" aria-disabled="true" href="https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab/releases" target="_blank" rel="noopener" onclick="event.preventDefault()">⬇️ Descargar APK (v1.0.0)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" style="padding-top:0">
+    <div class="container">
+      <div class="card" style="text-align:center">
+        <h3>Hecho por y para el equipo</h3>
+        <p><b>Khristyan Hidalgo</b> — Técnico · <a href="https://factronics.com.ve/" target="_blank" rel="noopener">Factronics Venezuela</a><br>
+        <span class="mini">Proyecto independiente para uso interno. Videojet® es marca de Videojet Technologies Inc. · Sin recopilación de datos.</span></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year">2026</span> Factronics Videojet Lab · Creado por Khristyan Hidalgo — Factronics Venezuela · MIT License
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Tema: auto -> claro -> oscuro (persistente)
+  var btn=document.getElementById('btnTheme'), codes=['auto','light','dark'], icos={auto:'🌐',light:'☀️',dark:'🌙'};
+  var cur=localStorage.getItem('fvlab-theme')||'auto';
+  function apply(v){document.documentElement.setAttribute('data-theme',v);btn.textContent=icos[v];localStorage.setItem('fvlab-theme',v);}
+  apply(cur);
+  btn.addEventListener('click',function(){var n=codes[(codes.indexOf(document.documentElement.getAttribute('data-theme'))+1)%3];apply(n);});
+  // Animaciones al entrar en pantalla (respetando reduced motion)
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.12});
+    els.forEach(function(el){io.observe(el);});
+  } else { els.forEach(function(el){el.classList.add('on');}); }
+  // Año dinámico
+  document.getElementById('year').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+{
+  "producto": "Factronics Videojet Lab",
+  "schema": 1,
+  "actualizado": "2026-11-08",
+  "estado_general": "semilla",
+  "nota_de_fuentes": "Este catalogo solo contiene datos tomados de los documentos del equipo (inventario de carpetas del dueno) y logicamente de nombres de carpeta. Ningun dato inventado. Cada grupo lleva su estado: 'catalogado-por-fuentes' | 'por-definir'. En Fase 1 se extraen los datos detallados (numeros de parte, velocidades, consumos) de los PDF/Excel.",
+  "fuentes_locales_descripcion": [
+    {
+      "id": "cij-solventes",
+      "descripcion": "17 dosieres de 'uso de solvente' por modelo CIJ (consumos de solvente oficiales por modelo)",
+      "cubre": ["CIJ"]
+    },
+    {
+      "id": "cij-velocidades",
+      "descripcion": "Velocidades de impresion CIJ por modelo y tamano de boquilla (60/40/50 micron)",
+      "cubre": ["CIJ"]
+    },
+    {
+      "id": "cij-documentos-por-modelo",
+      "descripcion": "Documentacion por modelo VJ de la serie 1000/1500/1600/1700/1880: manuales, boletines, diagramas hidraulicos, instrucciones, partes, videos",
+      "cubre": ["CIJ"]
+    },
+    {
+      "id": "cij-partes-1000vj",
+      "descripcion": "Ilustracion de partes y lista de partes recomendada serie 1000 VJ (ilustradas y con numeros de parte)",
+      "cubre": ["CIJ"]
+    },
+    {
+      "id": "cij-tintas",
+      "descripcion": "Fichas de tintas CIJ (V471, V4250, V4263, V4264...) y hoja maestra de tintas en Excel",
+      "cubre": ["CIJ"]
+    },
+    {
+      "id": "tto-curso-6x30",
+      "descripcion": "Curso TTO serie 6x30: Partes-Pecas, Ribbons, Manuales, Boletines Tecnicos, Instrucciones, Software 63-6530, dibujos y presentaciones",
+      "cubre": ["TTO"]
+    },
+    {
+      "id": "laser-documentacion",
+      "descripcion": "Carpeta de documentacion laser del equipo (a inventariar en Fase 1)",
+      "cubre": ["LASER"]
+    },
+    {
+      "id": "web-oficial",
+      "descripcion": "Sitios de referencia publicos indicados por el dueño: factronics.com.ve, videojet.mx (historia/productos), videojet.sg (historia), encyclopedia.com y zippia.com (historia corporativa)",
+      "cubre": ["TTO", "CIJ", "LASER"]
+    }
+  ],
+  "tecnologias": [
+    {
+      "id": "TTO",
+      "nombre": "Transferencia Termica (Thermal Transfer Overprint)",
+      "tecnologia_grupo": "impresion-tocar-film",
+      "estado_modelos": "catalogado-por-fuentes",
+      "modelos": ["6210", "6230", "6320", "6330", "6420", "6530"],
+      "serie_comercial": "6x30",
+      "consumibles": ["ribbons", "soportes"],
+      "estado_consumibles": "por-definir"
+    },
+    {
+      "id": "CIJ",
+      "nombre": "Inyeccion de Tinta Continua (Continuous Inkjet)",
+      "tecnologia_grupo": "impresion-tinta-continua",
+      "estado_modelos": "catalogado-por-fuentes",
+      "modelos": ["1210", "1220", "1240", "1280", "1510", "1520", "1530", "1550", "1560", "1580", "1580C", "1610", "1610DH", "1620", "1650", "1660", "1710", "1880"],
+      "variantes_documentadas": ["1580_C", "1610DH", "1620 HR", "1620 UHS", "1650 HR", "1650 UHS", "1660", "1880 HR", "1880 UHS", "1880 60micro"],
+      "boquillas_documentadas": [60, 40, 50],
+      "series_comerciales": ["1000 Line", "1520-1580", "1610-1650+", "1700/1880"],
+      "consumibles": ["tintas", "solventes"],
+      "estado_consumibles": "catalogado-por-fuentes"
+    },
+    {
+      "id": "LASER",
+      "nombre": "Marcado Laser",
+      "tecnologia_grupo": "ablation-marcado",
+      "estado_modelos": "por-definir",
+      "modelos": [],
+      "consumibles": [],
+      "estado_consumibles": "por-definir"
+    }
+  ],
+  "tintas_cij_documentadas": [
+    { "id": "V471", "nombre_comercial": "V471", "estado": "ficha-disponible", "usos": "por-definir" },
+    { "id": "V4250", "nombre_comercial": "V4250", "estado": "ficha-disponible", "usos": "por-definir" },
+    { "id": "V4263", "nombre_comercial": "V4263", "estado": "ficha-disponible", "usos": "por-definir" },
+    { "id": "V4264", "nombre_comercial": "V4264", "estado": "ficha-disponible", "usos": "por-definir" }
+  ],
+  "niveles_examen": [
+    { "id": "basico", "nombre": "Basico", "descripcion": "Principios de la tecnologia, operacion basica, consumibles generales. Para usuarios nuevos." },
+    { "id": "basico-medio", "nombre": "Basico-Medio", "descripcion": "Operacion diaria, rutinas de arranque/paro, cambios basicos." },
+    { "id": "intermedio-avanzado", "nombre": "Intermedio-Avanzado", "descripcion": "Configuracion, diagnostico guiado, mantenimiento preventivo." },
+    { "id": "avanzado", "nombre": "Avanzado", "descripcion": "Hidraulica (CIJ), encoder/cabezal (TTO), optica (Laser), fallas complejas." },
+    { "id": "profesional", "nombre": "Profesional", "descripcion": "Nivel tecnico de campo: servicio integral, metricas de consumo/costo y comparativas entre tecnologias." }
+  ],
+  "idiomas": [
+    { "codigo": "es", "principal": true },
+    { "codigo": "en", "principal": false },
+    { "codigo": "pt", "principal": false }
+  ],
+  "festividades_base": {
+    "pais_base": "VE",
+    "activas": ["navidad", "halloween", "san-patricio", "san-valentin-amistad", "dia-nino", "dia-madre", "dia-padre", "independencia", "vacaciones-invierno", "vacaciones-verano", "vuelta-a-clases", "ano-nuevo"],
+    "extension_por_version": ["MX", "CO", "PE", "EC", "CL", "AR", "BR", "US"]
+  }
+}

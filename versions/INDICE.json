@@ -1,0 +1,35 @@
+{
+  "producto": "Factronics Videojet Lab",
+  "actualizado": "2026-11-08",
+  "version_actual": "v0.1.0-dev",
+  "estado_actual": "en-desarrollo",
+  "nota": "Indice maestro de versiones para la landing. Se actualiza en cada version. Las notas nunca se borran.",
+  "tipos_de_nota": {
+    "PLAN": "versions/vX.Y.Z/PLAN-vX.Y.Z.md",
+    "BITACORA": "versions/vX.Y.Z/BITACORA-vX.Y.Z.md",
+    "HECHO": "versions/vX.Y.Z/HECHO-vX.Y.Z.md",
+    "PENDIENTE": "versions/vX.Y.Z/PENDIENTE-vX.Y.Z.md",
+    "ROADMAP": "versions/ROADMAP.md (+ copia congelada por version)"
+  },
+  "versiones": [
+    {
+      "id": "v0.1.0",
+      "etiqueta": "v0.1.0-dev",
+      "titulo": "Fundacion del proyecto",
+      "fecha": "2026-11-08",
+      "estado": "en-desarrollo",
+      "notas": {
+        "plan": "versions/v0.1.0/PLAN-v0.1.0.md",
+        "bitacora": "versions/v0.1.0/BITACORA-v0.1.0.md",
+        "hecho": "versions/v0.1.0/HECHO-v0.1.0.md",
+        "pendiente": "versions/v0.1.0/PENDIENTE-v0.1.0.md",
+        "roadmap_global": "versions/ROADMAP.md"
+      }
+    }
+  ],
+  "reglas": [
+    "Las notas publicadas (congeladas) no se editan nunca",
+    "El PENDIENTE de cada version alimenta el PLAN de la siguiente",
+    "Las guias y conteos de version.json deben coincidir con README/CHANGELOG/landing"
+  ]
+}
