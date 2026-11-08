@@ -11,11 +11,11 @@
 - [ ] Marcar en el catálogo cada dato como: `verificado` / `borrador` / `por definir`.
 - [ ] Láser: inventario de la carpeta `documentacion laser` y primera carga de contenido.
 
-## Fase 1 — pendientes derivados de la primera extracción (2026-11-08)
-- [ ] Procesar los 45 PDFs restantes de uso de solvente (17 modelos × tintas) con el acumulador `datos/cij_uso_solvente.json`.
-- [ ] Crear herramienta de remapeo CID/CMap (u OCR sin dependencias) para los PDFs tabulares cifrados: `EquivalenciaTintasVJ1000` y makeup «Simplicity» (hoy ilegibles — no se usan hasta decodificarlos).
-- [ ] Extraer las fichas V471, V4263 y V4264 (carpeta INFORMACION TINTAS).
-- [ ] Extraer las IPL 1000VJ (9 PDFs de partes ilustradas: 1210/1510 → 1710) → dataset `partes_cij`.
+## Fase 1 — pendientes derivados de la segunda extracción (2026-11-08)
+- [x] ~~Procesar los 45 PDFs restantes de uso de solvente~~ → **CERRADO: 802/802 procesados** (800 curvas verificado + 2 «sin-datos-en-documento»). Ver HECHO.
+- [ ] **Decodificador calibrado de fuentes subset** (offset por bloque; pista 1: la familia IPL 1550 usa desplazamiento ASCII−3 verificable con «Illustrated parts»; pista 2: `#N/D` confirma hojas Excel exportadas). Aplica a: tablas de las 9 IPL, `EquivalenciaTintasVJ1000` y «Simplicity» Makeup. Regla: solo decodificación determinista validada con frases de control — nada reconstruido a mano.
+- [ ] Parser de tablas de las 9 IPL 1000VJ → dataset `datos/partes_cij.json` (número de parte + descripción + cantidad + referencia de ilustración), bloqueado por el decodificador.
+- [ ] Extraer las fichas V471, V4263 y V4264 (carpeta INFORMACION TINTAS; plantilla probada: `ss-ink-v4250-us.pdf`).
 - [ ] Extraer velocidades CIJ por modelo/boquilla (calculadores «Line Speed Calculator v9.7») → dataset `cij_velocidades`.
 - [ ] Extraer los datos de ribbons TTO (carpeta Ribbons del curso 6x30) → consumibles TTO.
 - [ ] Inventariar y clasificar `documentacion laser` (1900+ archivos).

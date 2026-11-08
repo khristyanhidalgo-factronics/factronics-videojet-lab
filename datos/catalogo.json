@@ -3,13 +3,13 @@
   "schema": 1,
   "actualizado": "2026-11-08",
   "estado_general": "en-extraccion",
-  "nota_de_fuentes": "Fase 1 en curso. Este catalogo inventaria las fuentes y vincula los datasets derivados (que viven en su propio archivo: fuente unica por tema). Datos ya extraidos de fuentes del equipo: partes TTO 6x30 (Excel de curso) y curva de uso de solvente CIJ VJ1210/V401. Ningun dato inventado; estados de dato: 'verificado' | 'borrador' | 'por-definir'.",
+  "nota_de_fuentes": "Fase 1 en curso. Este catalogo inventaria las fuentes y vincula los datasets derivados (que viven en su propio archivo: fuente unica por tema). Datos ya extraidos de fuentes del equipo: partes TTO 6x30 (Excel de curso) y uso de solvente CIJ al 100% (802/802 documentos: 800 curvas verificadas + 2 declaradas sin datos por el propio documento). Ningun dato inventado; estados de dato: 'verificado' | 'borrador' | 'sin-datos-en-documento' | 'por-definir'.",
   "fuentes_locales_descripcion": [
     {
       "id": "cij-solventes",
-      "descripcion": "17 carpetas de 'uso de solvente' por modelo CIJ (consumos de solvente oficiales por modelo): 46 PDFs 'CIJ Makeup Usage Model v14'",
+      "descripcion": "Carpetas de 'uso de solvente' por modelo CIJ (consumos de solvente oficiales por modelo): 802 PDFs 'CIJ Makeup Usage Model v14' en 23 carpetas",
       "cubre": ["CIJ"],
-      "estado_extraccion": "1 de 46 PDFs procesado (VJ1210 con V401); acumulador listo en datos/cij_uso_solvente.json"
+      "estado_extraccion": "802 de 802 PDFs procesados: 800 curvas (25 combos modelo/variante) + 2 'sin-datos-en-documento' (VJ1880 V4238 y V4251, marcadas '#N/D' por el propio PDF); dataset datos/cij_uso_solvente.json"
     },
     {
       "id": "cij-velocidades",
@@ -23,8 +23,10 @@
     },
     {
       "id": "cij-partes-1000vj",
-      "descripcion": "Ilustracion de partes y lista de partes recomendada serie 1000 VJ (ilustradas y con numeros de parte)",
-      "cubre": ["CIJ"]
+      "descripcion": "Ilustracion de partes y lista de partes recomendada serie 1000 VJ (9 PDFs: 1210/1510, 1220/1520, 1520E, 1550, 1610DH, 1620E, 1650, 1650 UHS/HR, 1710)",
+      "cubre": ["CIJ"],
+      "estado_extraccion": "9 de 9 PDFs IPL extraidos a texto con tools/lote_ipl.py (resumen en datos/extraccion/_lote_ipl_resumen.json); tablas de partes pendientes de decodificar. Estado del dato: BORRADOR",
+      "aviso": "Los IPL usan fuentes subset desplazadas o fragmentadas (p. ej. offset ASCII-3 en 1550, verificable con 'Illustrated parts'; 1610DH garbled; 1710 texto partido): ~50% del texto legible y casi ningun numero de parte sin descifrar. No se estructura el dataset partes_cij hasta tener decodificacion verificable."
     },
     {
       "id": "cij-tintas",
@@ -62,7 +64,7 @@
       "tecnologia": "CIJ",
       "estado": "verificado",
       "fuente": "CIJ Makeup Usage Model v14 (documento oficial del modelo, del equipo)",
-      "resumen": "VJ1210 con V401 (base MEK): curva de 10 a 40 C desde 5,1 hasta 16,7 ml/hr; cuadro 11,2 ml/hr a 30 C; 89 hrs por litro; cartucho 750 ml = 67 hrs. Referencia cruzada curva/cuadro: coincide. 45 PDFs por procesar en Fase 1."
+      "resumen": "800 curvas verificadas de 802 documentos v14 (25 combos modelo/variante; clave = modelo+variante+tinta+base_del_nombre). Los 2 restantes (VJ1880 V4238 MEK/Methanol y V4251 Methanol/Water) el propio documento los marca '#N/D' -> estado 'sin-datos-en-documento'. El doc declara que el consumo es una ESTIMACION (curva 10-40 C, hrs/litro y hrs/cartucho incluidos)."
     }
   },
   "tecnologias": [
