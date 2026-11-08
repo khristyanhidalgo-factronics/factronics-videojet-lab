@@ -1,0 +1,3458 @@
+{
+  "producto": "Dataset tintas CIJ Videojet v1",
+  "schema": "1",
+  "actualizado": "2026-11-08",
+  "estado_general": "borrador-fase-tintas (bases y modelos de curvas verificados; colores y composicion en borrador explicito)",
+  "nota": "Las bases quimicas y los modelos provienen de cij_uso_solvente.json (802 entradas verificadas). Colores e industrias salen del brochure US oficial, estado borrador hasta revisar contra el PDF original. La composicion V471-D proviene del TS2205 con extraction literal de CAS + decodificacion de nombres (borrador-decodificado). No se invento ningun dato; lo no legible queda fuera.",
+  "fuentes": [
+    "datos/cij_uso_solvente.json",
+    "datos/fichas_tintas_inventario.json",
+    "datos/extraccion/cij_tintas_brochure_us.txt",
+    "datos/extraccion/cij_tinta_ts22051529684_v471_d.txt",
+    "datos/extraccion/cij_tinta_ts22051529684_v471_d_dec.txt",
+    "datos/extraccion/cij_tinta_v4250_ficha.txt"
+  ],
+  "tintas": {
+    "V401": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V401-D.g0bc06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V401-K.01cn06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V402": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V402-D.01kt06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V403": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V403-D.g0f106f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V404": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V410": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V410-D.g0bd06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V410-K.01co06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V411": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V411-D.o0eh06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V411-K.01cp06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V412": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V412-D.00p306f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V412-K.01cq06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V413": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V414": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V414-D.00pl06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V415": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V415-D.00rl06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V416": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V416-D.00rk06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V417": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1660"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V418": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650"
+      ],
+      "curvas_verificadas": 12,
+      "fichas_qss": [
+        {
+          "archivo": "V418-D.027106f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V420": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V420-D.026k06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V420-K.026m06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4201": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1240",
+        "VJ1280",
+        "VJ1580",
+        "VJ1880",
+        "VJ1880 HR",
+        "VJ1880 UHS"
+      ],
+      "curvas_verificadas": 6,
+      "fichas_qss": [
+        {
+          "archivo": "V4201-D.02uc06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4201-L.028n06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Black",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4202": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V4202-D.02vc06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4204": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V4204-D.02vd06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4204-L.028p06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V421": {
+      "bases_quimicas": [
+        "Methanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V421-D.00np06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V421-K.01cr06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4210": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1240",
+        "VJ1280",
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 4,
+      "fichas_qss": [
+        {
+          "archivo": "V4210-D.02uf06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4210-L.028q06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4210A": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1240",
+        "VJ1280",
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 4,
+      "fichas_qss": [
+        {
+          "archivo": "V4210A-D.02ue06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4210A-L.02a906f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4211": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1240",
+        "VJ1280",
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 4,
+      "fichas_qss": [
+        {
+          "archivo": "V4211-D.02ug06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4211-L.028r06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4212": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V4212-D.02uh06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4212-L.028s06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4214": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V4214-D.02ve06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4214-L.028t06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Red",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4215": {
+      "bases_quimicas": [
+        "Ethanol/MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V4215-D.02vf06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4215-L.028u06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Purple",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4216": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V4216-D.02vg06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4216-L.028v06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Green",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4218": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V4218-D.02vh06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4218-L.029006f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V422": {
+      "bases_quimicas": [
+        "Methanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V422-D.00pt06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4220": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1280",
+        "VJ1580",
+        "VJ1880",
+        "VJ1880 UHS"
+      ],
+      "curvas_verificadas": 4,
+      "fichas_qss": [
+        {
+          "archivo": "V4220-D.02ui06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4220-L.029106f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Black",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4221": {
+      "bases_quimicas": [
+        "Methanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1280",
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 3,
+      "fichas_qss": [
+        {
+          "archivo": "V4221-D.02uj06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4221-L.029206f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Black",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4222": {
+      "bases_quimicas": [
+        "Methanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V4222-D.02vi06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4222-L.029306f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Red",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4225": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1580 C"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [
+        {
+          "archivo": "V4225-E.03ck06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4226": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1580 C"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [
+        {
+          "archivo": "V4226-E.03cl06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4230": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1280",
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 3,
+      "fichas_qss": [
+        {
+          "archivo": "V4230-D.039406f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4230-L.03av06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Black",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4231": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1280",
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 3,
+      "fichas_qss": [
+        {
+          "archivo": "V4231-D.031j06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4231-L.031k06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4234": {
+      "bases_quimicas": [
+        "MPK/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1280",
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 3,
+      "fichas_qss": [
+        {
+          "archivo": "V4234-D.03eb06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4235": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1280",
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 3,
+      "fichas_qss": [
+        {
+          "archivo": "V4235-D.02uk06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4235-L.029406f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4236": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1280",
+        "VJ1580",
+        "VJ1880",
+        "VJ1880 HR",
+        "VJ1880 UHS"
+      ],
+      "curvas_verificadas": 5,
+      "fichas_qss": [
+        {
+          "archivo": "V4236-D.02vj06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4236-L.029506f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Black",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4237": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1280",
+        "VJ1580",
+        "VJ1880",
+        "VJ1880 UHS"
+      ],
+      "curvas_verificadas": 4,
+      "fichas_qss": [
+        {
+          "archivo": "V4237-D.02ul06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4237-L.029606f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Black",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4238": {
+      "bases_quimicas": [
+        "MEK/Methanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1880"
+      ],
+      "curvas_verificadas": 0,
+      "fichas_qss": [],
+      "estado": "por-definir"
+    },
+    "V4240": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1240",
+        "VJ1280",
+        "VJ1580",
+        "VJ1880",
+        "VJ1880 UHS"
+      ],
+      "curvas_verificadas": 5,
+      "fichas_qss": [
+        {
+          "archivo": "V4240-D.03d706f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4240-L.03d806f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4248": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880",
+        "VJ1880 HR",
+        "VJ1880 UHS"
+      ],
+      "curvas_verificadas": 4,
+      "fichas_qss": [
+        {
+          "archivo": "V4248-D.031p06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4248-L.031r06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Black",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4250": {
+      "bases_quimicas": [
+        "MPK/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1240",
+        "VJ1280",
+        "VJ1580",
+        "VJ1880",
+        "VJ1880 UHS"
+      ],
+      "curvas_verificadas": 5,
+      "fichas_qss": [
+        {
+          "archivo": "V4250-D.03br06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4250-L.03bs06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Black",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4251": {
+      "bases_quimicas": [
+        "Methanol/Water"
+      ],
+      "modelos_con_curva": [
+        "VJ1880"
+      ],
+      "curvas_verificadas": 0,
+      "fichas_qss": [
+        {
+          "archivo": "V4251-D.02vl06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4251-L.029806f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Black",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4257": {
+      "bases_quimicas": [
+        "MIPK"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880",
+        "VJ1880 UHS"
+      ],
+      "curvas_verificadas": 3,
+      "fichas_qss": [
+        {
+          "archivo": "V4257-D.036n06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4257-L.036o06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Clear",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4258": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V4258-D.02vm06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4258-L.029906f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4259": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1280",
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 3,
+      "fichas_qss": [
+        {
+          "archivo": "V4259-D.02um06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4259-L.029a06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4260": {
+      "bases_quimicas": [
+        "Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V4260-D.02un06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4260-L.029b06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Black",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4262": {
+      "bases_quimicas": [
+        "Ethanol/Isoprop"
+      ],
+      "modelos_con_curva": [
+        "VJ1240",
+        "VJ1280",
+        "VJ1580",
+        "VJ1880",
+        "VJ1880 UHS"
+      ],
+      "curvas_verificadas": 5,
+      "fichas_qss": [
+        {
+          "archivo": "V4262-D.02uo06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4262-L.029c06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Black",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4263": {
+      "bases_quimicas": [
+        "MIPK"
+      ],
+      "modelos_con_curva": [
+        "VJ1240",
+        "VJ1280",
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 4,
+      "fichas_qss": [],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4264": {
+      "bases_quimicas": [
+        "MPK/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1240",
+        "VJ1280",
+        "VJ1580",
+        "VJ1880",
+        "VJ1880 UHS"
+      ],
+      "curvas_verificadas": 5,
+      "fichas_qss": [
+        {
+          "archivo": "V4264-D.03c706f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4264-L.03c906f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4269": {
+      "bases_quimicas": [
+        "Ethanol/Acetone"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880",
+        "VJ1880 UHS"
+      ],
+      "curvas_verificadas": 3,
+      "fichas_qss": [
+        {
+          "archivo": "V4269-D.02up06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4269-L.029d06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Black",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4271": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880",
+        "VJ1880 UHS"
+      ],
+      "curvas_verificadas": 3,
+      "fichas_qss": [
+        {
+          "archivo": "V4271-D.037t06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4271-L.038006f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4274": {
+      "bases_quimicas": [
+        "MPK/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1280",
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 3,
+      "fichas_qss": [
+        {
+          "archivo": "V4274-D.02uq06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4274-L.029e06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4275": {
+      "bases_quimicas": [
+        "MPK/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880",
+        "VJ1880 UHS"
+      ],
+      "curvas_verificadas": 3,
+      "fichas_qss": [
+        {
+          "archivo": "V4275-D.02vn06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4275-L.029f06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas-color-borrador",
+      "color": {
+        "valor": "Blue",
+        "estado": "borrador",
+        "fuente": "datos/extraccion/cij_tintas_brochure_us.txt"
+      }
+    },
+    "V4276": {
+      "bases_quimicas": [
+        "MPK/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4278": {
+      "bases_quimicas": [
+        "MPK/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V4278-D.03d006f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4278-L.03d106f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4283": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1580 C"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [
+        {
+          "archivo": "V4283-E.03cm06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4289": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1580 C"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [
+        {
+          "archivo": "V4289-E.03cj06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V4299": {
+      "bases_quimicas": [
+        "Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1580",
+        "VJ1880"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V4299-D.02us06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V4299-L.029j06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V43": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1710"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V431": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V431-D.030n06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V435": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V435-D.g0ej06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V435-K.027d06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V436": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V436-D.01vj06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V437": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V437-D.00qs06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V438": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V448": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V448-D.031o06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V451": {
+      "bases_quimicas": [
+        "Methanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V451-D.00pb06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V457": {
+      "bases_quimicas": [
+        "MIPK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V457-D.036m06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V458": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V458-D.01tj06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V459": {
+      "bases_quimicas": [
+        "MEK",
+        "Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V459-D.00uo06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V460": {
+      "bases_quimicas": [
+        "Ethanol",
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V460-D.00ni06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V460-K.01cs06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V461": {
+      "bases_quimicas": [
+        "EthylAcetate",
+        "Ethanol/Isoprop"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 14,
+      "fichas_qss": [
+        {
+          "archivo": "V461-D.00hv06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V461-K.01ct06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V462": {
+      "bases_quimicas": [
+        "Ethanol/Isoprop"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 12,
+      "fichas_qss": [
+        {
+          "archivo": "V462-D.021606f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V463": {
+      "bases_quimicas": [
+        "MIPK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V464": {
+      "bases_quimicas": [
+        "MPK/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V464-D.03ca06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V465": {
+      "bases_quimicas": [
+        "CycloHex/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V465-D.00gr06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V467": {
+      "bases_quimicas": [
+        "Ethanol/Acetone"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V468": {
+      "bases_quimicas": [
+        "Ethanol/Acetone"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V469": {
+      "bases_quimicas": [
+        "Ethanol/Acetone"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V469-D.00et06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V469-K.01cu06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V470": {
+      "bases_quimicas": [
+        "Pentanone/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V470-D.00jm06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V470-K.01cv06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V471": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V471-D.00q406f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V471-K.01d006f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas",
+      "composicion_partial": [
+        {
+          "componente": "Butanone",
+          "cas": "78-93-3",
+          "estado": "borrador-decodificado"
+        },
+        {
+          "componente": "Ethanol",
+          "cas": "64-17-5",
+          "estado": "borrador-decodificado"
+        }
+      ]
+    },
+    "V472": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V472-D.01at06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V473": {
+      "bases_quimicas": [
+        "Pentanone/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V473-D.01bs06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V474": {
+      "bases_quimicas": [
+        "Pentanone/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V474-D.023106f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V474-K.025o06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V475": {
+      "bases_quimicas": [
+        "Pentanone/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V475-D.023v06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V476": {
+      "bases_quimicas": [
+        "Pentanone/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 12,
+      "fichas_qss": [
+        {
+          "archivo": "V476-D.027u06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V480": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1710"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [
+        {
+          "archivo": "V480-C.00v906f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V481": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1710"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [
+        {
+          "archivo": "V481-C.00va06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V482": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1710"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [
+        {
+          "archivo": "V482-C.012806f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V483AB": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1710"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V484": {
+      "bases_quimicas": [
+        "Methanol/Water"
+      ],
+      "modelos_con_curva": [
+        "VJ1710"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [
+        {
+          "archivo": "V484-C.02hg06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V485": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1710"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [
+        {
+          "archivo": "V485-C.036f06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V486": {
+      "bases_quimicas": [
+        "MIPK"
+      ],
+      "modelos_con_curva": [
+        "VJ1710"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [
+        {
+          "archivo": "V486-C.02nq06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V488": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1710"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [
+        {
+          "archivo": "V488-C.028606f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V489": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1710"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [
+        {
+          "archivo": "V489-C.01c906f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V490": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1710"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [
+        {
+          "archivo": "V490-C.00vb06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V491": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1710"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V494": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1710"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [
+        {
+          "archivo": "V494-C.020206f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V495": {
+      "bases_quimicas": [
+        "Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V495-D.00o306f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V496": {
+      "bases_quimicas": [
+        "Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V496-D.00qu06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V497": {
+      "bases_quimicas": [
+        "Ethanol/Acetone"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V497-D.012g06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V498": {
+      "bases_quimicas": [
+        "Ethanol/Acetone"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V498-D.033506f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V499": {
+      "bases_quimicas": [
+        "Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1210",
+        "VJ1220",
+        "VJ1510",
+        "VJ1520",
+        "VJ1530",
+        "VJ1550",
+        "VJ1560",
+        "VJ1610 C",
+        "VJ1610 DH",
+        "VJ1620",
+        "VJ1630",
+        "VJ1650",
+        "VJ1660"
+      ],
+      "curvas_verificadas": 13,
+      "fichas_qss": [
+        {
+          "archivo": "V499-D.00ob06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V505": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V505-D.01ra06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V505-K.01rb06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V507": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 HR",
+        "VJ1620 UHS",
+        "VJ1650 HR",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 4,
+      "fichas_qss": [
+        {
+          "archivo": "V507-D.01r806f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V507-K.01r906f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V508": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V508-D.01re06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V508-K.01rf06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V509": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V513": {
+      "bases_quimicas": [
+        "Pentanone/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V513-D.01ro06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V513-K.01s906f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V514": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V514-D.01rm06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V514-K.01rn06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V515": {
+      "bases_quimicas": [
+        "Pentanone/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V515-D.01rk06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V515-K.01rl06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V516": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V516-D.01u306f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V517": {
+      "bases_quimicas": [
+        "CycloHex/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V517-D.01u406f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V518": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V518-D.020r06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V519": {
+      "bases_quimicas": [
+        "Pentanone/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V519-D.020q06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V519-K.025p06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V520": {
+      "bases_quimicas": [
+        "Pentanone/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V520-D.024106f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V520-K.024206f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V521": {
+      "bases_quimicas": [
+        "Pentanone/Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V521-D.028006f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V523": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 HR",
+        "VJ1620 UHS",
+        "VJ1650 HR",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 4,
+      "fichas_qss": [],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V524": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 HR",
+        "VJ1620 UHS",
+        "VJ1650 HR",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 4,
+      "fichas_qss": [
+        {
+          "archivo": "V524-D.01ri06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V5245": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1880 UHS"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [
+        {
+          "archivo": "V5245-D.03es06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V5245-L.03ev06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V525": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 HR",
+        "VJ1620 UHS",
+        "VJ1650 HR",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 4,
+      "fichas_qss": [
+        {
+          "archivo": "V525-D.01vk06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V526": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V526-D.02h606f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V526-K.02h706f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V528": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V528-D.026u06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V528-K.026v06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V530": {
+      "bases_quimicas": [
+        "Ethanol/Acetone"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V530-D.01u506f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V530-K.01ub06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V531": {
+      "bases_quimicas": [
+        "Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V531-D.020m06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V531-K.020n06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V532": {
+      "bases_quimicas": [
+        "Ethanol/Isoprop"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V532-D.023b06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V536": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V536-D.020c06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V537": {
+      "bases_quimicas": [
+        "Methanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 1,
+      "fichas_qss": [
+        {
+          "archivo": "V537-D.021o06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        },
+        {
+          "archivo": "V537-K.021p06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V538": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V538-D.023a06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V539": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V539-D.02i506f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V540": {
+      "bases_quimicas": [
+        "Ethanol/Acetone"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V540-D.021f06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V541": {
+      "bases_quimicas": [
+        "Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V541-D.021h06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V542": {
+      "bases_quimicas": [
+        "Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V542-D.021l06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V543": {
+      "bases_quimicas": [
+        "Ethanol"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 UHS",
+        "VJ1650 UHS"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V543-D.021m06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    },
+    "V548": {
+      "bases_quimicas": [
+        "MEK"
+      ],
+      "modelos_con_curva": [
+        "VJ1620 HR",
+        "VJ1650 HR"
+      ],
+      "curvas_verificadas": 2,
+      "fichas_qss": [
+        {
+          "archivo": "V548-D.031q06f20.pdf",
+          "estado_extraccion": "sin-texto-sacado",
+          "caracteres": 0
+        }
+      ],
+      "estado": "verificado-base-y-curvas"
+    }
+  },
+  "brochure_us": {
+    "pares_codigo_color": [
+      {
+        "tinta": "V4236",
+        "color": null,
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4201",
+        "color": "Black",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4250",
+        "color": "Black",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4269",
+        "color": "Black",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4220",
+        "color": "Black",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4251",
+        "color": "Black",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4275",
+        "color": "Blue",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4271",
+        "color": null,
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4237",
+        "color": "Black",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4230",
+        "color": "Black",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4260",
+        "color": "Black",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4262",
+        "color": "Black",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4222",
+        "color": "Red",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4248",
+        "color": "Black",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4221",
+        "color": "Black",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4215",
+        "color": "Purple",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4202",
+        "color": null,
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4214",
+        "color": "Red",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4216",
+        "color": "Green",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4236",
+        "color": "Black",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4257",
+        "color": "Clear",
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4258",
+        "color": null,
+        "estado": "borrador"
+      },
+      {
+        "tinta": "V4299",
+        "color": null,
+        "estado": "borrador"
+      }
+    ],
+    "industrias": [
+      {
+        "industria": "Beverage",
+        "estado": "borrador"
+      },
+      {
+        "industria": "Cosmetics",
+        "estado": "borrador"
+      },
+      {
+        "industria": "Pharmaceuticals",
+        "estado": "borrador"
+      },
+      {
+        "industria": "Tobacco",
+        "estado": "borrador"
+      },
+      {
+        "industria": "Retort",
+        "estado": "borrador"
+      },
+      {
+        "industria": "Cappers",
+        "estado": "borrador"
+      },
+      {
+        "industria": "Diaper",
+        "estado": "borrador"
+      },
+      {
+        "industria": "Packaging",
+        "estado": "borrador"
+      },
+      {
+        "industria": "Care",
+        "estado": "borrador"
+      }
+    ],
+    "archivo_txt": "datos/extraccion/cij_tintas_brochure_us.txt",
+    "estado": "borrador"
+  },
+  "ts2205_v471_d": {
+    "componentes": [
+      {
+        "componente": "Butanone",
+        "cas": "78-93-3",
+        "estado": "borrador-decodificado"
+      },
+      {
+        "componente": "Ethanol",
+        "cas": "64-17-5",
+        "estado": "borrador-decodificado"
+      }
+    ],
+    "estado": "borrador-decodificado",
+    "txt": "datos/extraccion/cij_tinta_ts22051529684_v471_d.txt",
+    "txt_dec": "datos/extraccion/cij_tinta_ts22051529684_v471_d_dec.txt"
+  }
+}

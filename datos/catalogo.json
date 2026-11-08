@@ -3,52 +3,70 @@
   "schema": 1,
   "actualizado": "2026-11-08",
   "estado_general": "en-extraccion",
-  "nota_de_fuentes": "Fase 1 en curso. Este catalogo inventaria las fuentes y vincula los datasets derivados (que viven en su propio archivo: fuente unica por tema). Datos ya extraidos de fuentes del equipo: partes TTO 6x30 (Excel de curso) y uso de solvente CIJ al 100% (802/802 documentos: 800 curvas verificadas + 2 declaradas sin datos por el propio documento). Ningun dato inventado; estados de dato: 'verificado' | 'borrador' | 'sin-datos-en-documento' | 'por-definir'.",
+  "nota_de_fuentes": "Fase 1 en curso. Este catalogo inventaria las fuentes y vincula los datasets derivados (que viven en su propio archivo: fuente unica por tema). Datos ya extraidos de fuentes del equipo: partes TTO 6x30 (Excel de curso), uso de solvente CIJ al 100% (802/802 documentos: 800 curvas verificadas + 2 declaradas sin datos por el propio documento), fichas de tintas QSS inventariadas (564 PDFs, 562 sin texto sacado con extractor stdlib, quedan como evidencia del intento), dataset tintas CIJ v1 (bases/colors desde fuentes verificadas y brochure US) y decodificador calibrado v2 de fuentes subset (offset +29 evidencia en TS2205 V471-D / 98039 / IPL 1550 y 1650). Ningun dato inventado; estados de dato: 'verificado' | 'borrador' | 'sin-datos-en-documento' | 'por-definir' | 'borrador-decodificado'.",
   "fuentes_locales_descripcion": [
     {
       "id": "cij-solventes",
       "descripcion": "Carpetas de 'uso de solvente' por modelo CIJ (consumos de solvente oficiales por modelo): 802 PDFs 'CIJ Makeup Usage Model v14' en 23 carpetas",
-      "cubre": ["CIJ"],
+      "cubre": [
+        "CIJ"
+      ],
       "estado_extraccion": "802 de 802 PDFs procesados: 800 curvas (25 combos modelo/variante) + 2 'sin-datos-en-documento' (VJ1880 V4238 y V4251, marcadas '#N/D' por el propio PDF); dataset datos/cij_uso_solvente.json"
     },
     {
       "id": "cij-velocidades",
       "descripcion": "Velocidades de impresion CIJ por modelo y tamano de boquilla (60/40/50 micron)",
-      "cubre": ["CIJ"]
+      "cubre": [
+        "CIJ"
+      ]
     },
     {
       "id": "cij-documentos-por-modelo",
       "descripcion": "Documentacion por modelo VJ de la serie 1000/1500/1600/1700/1880: manuales, boletines, diagramas hidraulicos, instrucciones, partes, videos",
-      "cubre": ["CIJ"]
+      "cubre": [
+        "CIJ"
+      ]
     },
     {
       "id": "cij-partes-1000vj",
       "descripcion": "Ilustracion de partes y lista de partes recomendada serie 1000 VJ (9 PDFs: 1210/1510, 1220/1520, 1520E, 1550, 1610DH, 1620E, 1650, 1650 UHS/HR, 1710)",
-      "cubre": ["CIJ"],
-      "estado_extraccion": "9 de 9 PDFs IPL extraidos a texto con tools/lote_ipl.py (resumen en datos/extraccion/_lote_ipl_resumen.json); tablas de partes pendientes de decodificar. Estado del dato: BORRADOR",
-      "aviso": "Los IPL usan fuentes subset desplazadas o fragmentadas (p. ej. offset ASCII-3 en 1550, verificable con 'Illustrated parts'; 1610DH garbled; 1710 texto partido): ~50% del texto legible y casi ningun numero de parte sin descifrar. No se estructura el dataset partes_cij hasta tener decodificacion verificable."
+      "cubre": [
+        "CIJ"
+      ],
+      "estado_extraccion": "9 de 9 PDFs IPL extraidos a texto con tools/lote_ipl.py (resumen en datos/extraccion/_lote_ipl_resumen.json); decodificador v2 tools/decodificar_cipher_offset.py con decision por bloque: IPL 1550 y 1650 con corridas legibles - Illustrated Parts List, Ink Cartridge, Makeup Cartridge, Printhead, Gasket Kit, Printer Wall Mount; salidas *_dec.txt en datos/extraccion. Estado del dato: BORRADOR",
+      "aviso": "Los IPL usan fuentes subset desplazadas (offset calibrado +29 verificable) MEZCLADAS en el mismo documento con otras fuentes correctas o irreparables; la cobertura de la decodificacion es parcial por bloque y los NUMEROS DE PARTE siguen sin poder verificarse automaticamente. No se estrutura partes_cij hasta poder cruzar cada numero contra el PDF original (borrador-decodificado no alcanza para datos estructurados)."
     },
     {
       "id": "cij-tintas",
       "descripcion": "Fichas de tintas CIJ (V471, V4250, V4263, V4264...) y listados tabulares de equivalencia de tintas y makeup 'Simplicity' de la serie 1000 (PDF)",
-      "cubre": ["CIJ"],
-      "estado_extraccion": "parcial: ficha V4250 extraida (borrador); los 2 listados tabulares (EquivalenciaTintasVJ1000, Simplicity Makeup) salieron con fuentes CID cifradas (texto ilegible) — pendiente herramienta de remapeo CID u OCR",
+      "cubre": [
+        "CIJ"
+      ],
+      "estado_extraccion": "carpeta ficha de tintas (QSS): 564 PDFs inventariados en datos/fichas_tintas_inventario.json - 562 sin texto sacado con extractor stdlib (sin-texto-sacado, quedan como evidencia del intento y requieren OCR), 2 legibles (98039 y br-cij-es) + TS2205 V471-D desde CLARITY (borrador-decodificado). Brochure US cij_tintas_brochure_us.txt normalizado (mapa industria->tinta con colores). Los 2 listados tabulares (EquivalenciaTintasVJ1000, Simplicity Makeup) siguen con fuentes CID cifradas (redundante-cifrado) - pendiente OCR o remapeo CID",
       "aviso": "no existe un Excel de tintas en las carpetas del equipo (verificado por busqueda del sistema de archivos)"
     },
     {
       "id": "tto-curso-6x30",
       "descripcion": "Curso TTO serie 6x30: Partes-Pecas, Ribbons, Manuales, Boletines Tecnicos, Instrucciones, Software 63-6530, dibujos y presentaciones",
-      "cubre": ["TTO"]
+      "cubre": [
+        "TTO"
+      ]
     },
     {
       "id": "laser-documentacion",
       "descripcion": "Carpeta de documentacion laser del equipo (a inventariar en Fase 1)",
-      "cubre": ["LASER"]
+      "cubre": [
+        "LASER"
+      ]
     },
     {
       "id": "web-oficial",
       "descripcion": "Sitios de referencia publicos indicados por el dueño: factronics.com.ve, videojet.mx (historia/productos), videojet.sg (historia), encyclopedia.com y zippia.com (historia corporativa)",
-      "cubre": ["TTO", "CIJ", "LASER"]
+      "cubre": [
+        "TTO",
+        "CIJ",
+        "LASER"
+      ]
     }
   ],
   "dataset_vinculos": {
@@ -65,6 +83,20 @@
       "estado": "verificado",
       "fuente": "CIJ Makeup Usage Model v14 (documento oficial del modelo, del equipo)",
       "resumen": "800 curvas verificadas de 802 documentos v14 (25 combos modelo/variante; clave = modelo+variante+tinta+base_del_nombre). Los 2 restantes (VJ1880 V4238 MEK/Methanol y V4251 Methanol/Water) el propio documento los marca '#N/D' -> estado 'sin-datos-en-documento'. El doc declara que el consumo es una ESTIMACION (curva 10-40 C, hrs/litro y hrs/cartucho incluidos)."
+    },
+    "cij_tintas": {
+      "archivo": "datos/cij_tintas.json",
+      "tecnologia": "CIJ",
+      "estado": "borrador",
+      "fuente": "bases desde cij_uso_solvente.json (verificado, 802 entradas) + brochure US cij-inks-and-fluids (colores/industrias, borrador) + TS2205 V471-D (borrador-decodificado) + ficha V4250 (borrador)",
+      "resumen": "134 tintas CIJ: bases quimicas documentadas y modelos con curva (132 tintas con curvas verificadas de consumo de solvente); colores del brochure US (Black/Blue/Red/Purple/Green/Clear) e industrias marcados borrador; composicion parcial V471-D (Butanone 78-93-3, Ethanol 64-17-5) marcada borrador-decodificado hasta revisar contra el PDF original."
+    },
+    "fichas_tintas_inventario": {
+      "archivo": "datos/fichas_tintas_inventario.json",
+      "tecnologia": "CIJ",
+      "estado": "verificado",
+      "fuente": "carpeta ficha de tintas (QSS) del equipo: documentos QSS de tintas",
+      "resumen": "564 PDFs QSS inventariados uno a uno: 562 sin texto sacado con el extractor stdlib (sin-texto-sacado: quedan como evidencia permanente del intento y requieren OCR), 2 legibles (98039 y br-cij-inks-and-fluids-es) y V471-D/V471-K producen 0 chars in situ - el TS2205 legible es la copia de CLARITY, vinculada por nombre en el inventario."
     }
   },
   "tecnologias": [
@@ -73,9 +105,19 @@
       "nombre": "Transferencia Termica (Thermal Transfer Overprint)",
       "tecnologia_grupo": "impresion-tocar-film",
       "estado_modelos": "catalogado-por-fuentes",
-      "modelos": ["6210", "6230", "6320", "6330", "6420", "6530"],
+      "modelos": [
+        "6210",
+        "6230",
+        "6320",
+        "6330",
+        "6420",
+        "6530"
+      ],
       "serie_comercial": "6x30",
-      "consumibles": ["ribbons", "soportes"],
+      "consumibles": [
+        "ribbons",
+        "soportes"
+      ],
       "estado_consumibles": "por-definir"
     },
     {
@@ -83,11 +125,53 @@
       "nombre": "Inyeccion de Tinta Continua (Continuous Inkjet)",
       "tecnologia_grupo": "impresion-tinta-continua",
       "estado_modelos": "catalogado-por-fuentes",
-      "modelos": ["1210", "1220", "1240", "1280", "1510", "1520", "1530", "1550", "1560", "1580", "1580C", "1610", "1610DH", "1620", "1650", "1660", "1710", "1880"],
-      "variantes_documentadas": ["1580_C", "1610DH", "1620 HR", "1620 UHS", "1650 HR", "1650 UHS", "1660", "1880 HR", "1880 UHS", "1880 60micro"],
-      "boquillas_documentadas": [60, 40, 50],
-      "series_comerciales": ["1000 Line", "1520-1580", "1610-1650+", "1700/1880"],
-      "consumibles": ["tintas", "solventes"],
+      "modelos": [
+        "1210",
+        "1220",
+        "1240",
+        "1280",
+        "1510",
+        "1520",
+        "1530",
+        "1550",
+        "1560",
+        "1580",
+        "1580C",
+        "1610",
+        "1610DH",
+        "1620",
+        "1650",
+        "1660",
+        "1710",
+        "1880"
+      ],
+      "variantes_documentadas": [
+        "1580_C",
+        "1610DH",
+        "1620 HR",
+        "1620 UHS",
+        "1650 HR",
+        "1650 UHS",
+        "1660",
+        "1880 HR",
+        "1880 UHS",
+        "1880 60micro"
+      ],
+      "boquillas_documentadas": [
+        60,
+        40,
+        50
+      ],
+      "series_comerciales": [
+        "1000 Line",
+        "1520-1580",
+        "1610-1650+",
+        "1700/1880"
+      ],
+      "consumibles": [
+        "tintas",
+        "solventes"
+      ],
       "estado_consumibles": "catalogado-por-fuentes"
     },
     {
@@ -101,30 +185,116 @@
     }
   ],
   "tintas_cij_documentadas": [
-    { "id": "V471", "nombre_comercial": "V471", "estado": "ficha-disponible", "usos": "por-definir" },
-    { "id": "V4250", "nombre_comercial": "V4250", "estado": "borrador", "usos": "ver-descripcion-borrador",
+    {
+      "id": "V471",
+      "nombre_comercial": "V471",
+      "estado": "borrador-decodificado",
+      "usos": "por-definir",
+      "fuente_doc": "TS22051529684 - Information for V471-D.pdf (copia CLARITY) + V471-D.00q406f20.pdf / V471-K.01d006f20.pdf (ficha de tintas, sin texto sacado)",
+      "extraido_de": "datos/extraccion/cij_tinta_ts22051529684_v471_d.txt (+ _dec.txt)",
+      "composicion_parcial": [
+        {
+          "componente": "Butanone",
+          "cas": "78-93-3",
+          "estado": "borrador-decodificado"
+        },
+        {
+          "componente": "Ethanol",
+          "cas": "64-17-5",
+          "estado": "borrador-decodificado"
+        }
+      ],
+      "aviso": "composicion requiere revision humana contra el PDF original antes de usarse como dato firme"
+    },
+    {
+      "id": "V4250",
+      "nombre_comercial": "V4250",
+      "estado": "borrador",
+      "usos": "ver-descripcion-borrador",
       "descripcion_borrador": "tinta negra con base de solvente tipo EK, alternativa a la V4210 con menor consumo de makeup (el documento indica ~50% menos que la V4210); resiste la formacion de condensacion; aplicaciones indicadas: vidrio, botellas plasticas y latas; ambientes humedos de llenado, refrigeracion y congelacion; para impresoras CIJ Videojet",
       "fuente_doc": "ss-ink-v4250-us.pdf (documento oficial de Videojet presente en las carpetas del equipo)",
       "extraido_de": "datos/extraccion/cij_tinta_v4250_ficha.txt",
-      "aviso": "extraccion parcial: el PDF usa fuentes CID con mapeo incompleto (perdida de caracteres); datos pendientes de revision humana contra el PDF original" },
-    { "id": "V4263", "nombre_comercial": "V4263", "estado": "ficha-disponible", "usos": "por-definir" },
-    { "id": "V4264", "nombre_comercial": "V4264", "estado": "ficha-disponible", "usos": "por-definir" }
+      "aviso": "extraccion parcial: el PDF usa fuentes CID con mapeo incompleto (perdida de caracteres); datos pendientes de revision humana contra el PDF original"
+    },
+    {
+      "id": "V4263",
+      "nombre_comercial": "V4263",
+      "estado": "ficha-disponible",
+      "usos": "por-definir"
+    },
+    {
+      "id": "V4264",
+      "nombre_comercial": "V4264",
+      "estado": "ficha-disponible",
+      "usos": "por-definir"
+    }
   ],
   "niveles_examen": [
-    { "id": "basico", "nombre": "Basico", "descripcion": "Principios de la tecnologia, operacion basica, consumibles generales. Para usuarios nuevos." },
-    { "id": "basico-medio", "nombre": "Basico-Medio", "descripcion": "Operacion diaria, rutinas de arranque/paro, cambios basicos." },
-    { "id": "intermedio-avanzado", "nombre": "Intermedio-Avanzado", "descripcion": "Configuracion, diagnostico guiado, mantenimiento preventivo." },
-    { "id": "avanzado", "nombre": "Avanzado", "descripcion": "Hidraulica (CIJ), encoder/cabezal (TTO), optica (Laser), fallas complejas." },
-    { "id": "profesional", "nombre": "Profesional", "descripcion": "Nivel tecnico de campo: servicio integral, metricas de consumo/costo y comparativas entre tecnologias." }
+    {
+      "id": "basico",
+      "nombre": "Basico",
+      "descripcion": "Principios de la tecnologia, operacion basica, consumibles generales. Para usuarios nuevos."
+    },
+    {
+      "id": "basico-medio",
+      "nombre": "Basico-Medio",
+      "descripcion": "Operacion diaria, rutinas de arranque/paro, cambios basicos."
+    },
+    {
+      "id": "intermedio-avanzado",
+      "nombre": "Intermedio-Avanzado",
+      "descripcion": "Configuracion, diagnostico guiado, mantenimiento preventivo."
+    },
+    {
+      "id": "avanzado",
+      "nombre": "Avanzado",
+      "descripcion": "Hidraulica (CIJ), encoder/cabezal (TTO), optica (Laser), fallas complejas."
+    },
+    {
+      "id": "profesional",
+      "nombre": "Profesional",
+      "descripcion": "Nivel tecnico de campo: servicio integral, metricas de consumo/costo y comparativas entre tecnologias."
+    }
   ],
   "idiomas": [
-    { "codigo": "es", "principal": true },
-    { "codigo": "en", "principal": false },
-    { "codigo": "pt", "principal": false }
+    {
+      "codigo": "es",
+      "principal": true
+    },
+    {
+      "codigo": "en",
+      "principal": false
+    },
+    {
+      "codigo": "pt",
+      "principal": false
+    }
   ],
   "festividades_base": {
     "pais_base": "VE",
-    "activas": ["navidad", "halloween", "san-patricio", "san-valentin-amistad", "dia-nino", "dia-madre", "dia-padre", "independencia", "vacaciones-invierno", "vacaciones-verano", "vuelta-a-clases", "ano-nuevo"],
-    "extension_por_version": ["MX", "CO", "PE", "EC", "CL", "AR", "BR", "US"]
+    "activas": [
+      "navidad",
+      "halloween",
+      "san-patricio",
+      "san-valentin-amistad",
+      "dia-nino",
+      "dia-madre",
+      "dia-padre",
+      "independencia",
+      "vacaciones-invierno",
+      "vacaciones-verano",
+      "vuelta-a-clases",
+      "ano-nuevo"
+    ],
+    "extension_por_version": [
+      "MX",
+      "CO",
+      "PE",
+      "EC",
+      "CL",
+      "AR",
+      "BR",
+      "US"
+    ]
   }
 }

@@ -13,13 +13,19 @@
 
 ## Fase 1 — pendientes derivados de la segunda extracción (2026-11-08)
 - [x] ~~Procesar los 45 PDFs restantes de uso de solvente~~ → **CERRADO: 802/802 procesados** (800 curvas verificado + 2 «sin-datos-en-documento»). Ver HECHO.
-- [ ] **Decodificador calibrado de fuentes subset** (offset por bloque; pista 1: la familia IPL 1550 usa desplazamiento ASCII−3 verificable con «Illustrated parts»; pista 2: `#N/D` confirma hojas Excel exportadas). Aplica a: tablas de las 9 IPL, `EquivalenciaTintasVJ1000` y «Simplicity» Makeup. Regla: solo decodificación determinista validada con frases de control — nada reconstruido a mano.
+- [x] ~~**Decodificador calibrado de fuentes subset** (offset por bloque;~~ (herramienta creada y ejecutada: cierre en HECHO) # (offset por bloque; pista 1: la familia IPL 1550 usa desplazamiento ASCII−3 verificable con «Illustrated parts»; pista 2: `#N/D` confirma hojas Excel exportadas). Aplica a: tablas de las 9 IPL, `EquivalenciaTintasVJ1000` y «Simplicity» Makeup. Regla: solo decodificación determinista validada con frases de control — nada reconstruido a mano.
 - [ ] Parser de tablas de las 9 IPL 1000VJ → dataset `datos/partes_cij.json` (número de parte + descripción + cantidad + referencia de ilustración), bloqueado por el decodificador.
 - [ ] Extraer las fichas V471, V4263 y V4264 (carpeta INFORMACION TINTAS; plantilla probada: `ss-ink-v4250-us.pdf`).
 - [ ] Extraer velocidades CIJ por modelo/boquilla (calculadores «Line Speed Calculator v9.7») → dataset `cij_velocidades`.
 - [ ] Extraer los datos de ribbons TTO (carpeta Ribbons del curso 6x30) → consumibles TTO.
 - [ ] Inventariar y clasificar `documentacion laser` (1900+ archivos).
 - [ ] Cruzar las partes TTO (borrador) contra las Official Parts Lists PDF para elevarlas a `verificado`.
+
+## Fase 1 - pendientes derivados del ciclo tintas/decodificador (2026-11-08)
+- [ ] **Números de parte de las IPL:** los rótulos ya decodifican ("Ink Cartridge", "Printhead"...), pero cada NUMERO requiere cruzarse contra el PDF original; `borrador-decodificado` no alcanza para datos estructurados → parser `partes_cij` sigue bloqueado.
+- [ ] **OCR de las 562 fichas QSS** `sin-texto-sacado` (sin dependencias externas en el PC del dueño; evaluar alternativas nativas u obtener los datos por otra vía).
+- [ ] **Simplicity / EquivalenciaTintas:** siguen con fuentes CID sin mapear ("redundante-cifrado"); requiere OCR o remapeo CID para estructurar las tablas.
+- [ ] **Ampliar `cij_tintas.json`**: fichas QSS completas (composición/datos regulatorios) cuando ya exista OCR; quedan 132 tintas con solo base+curva.
 
 ## Fase 2 — App web offline (presentar en v0.2.0–v0.3.0)
 - [ ] App web (PWA) con: exámenes de 5 niveles (Básico, Básico-Medio, Intermedio-Avanzado, Avanzado, Profesional), modos estudio/prueba rápida/repaso, buscador de partes, calculadoras (consumo/costo/comparador), perfiles e historial, exportar/importar copia de seguridad.
