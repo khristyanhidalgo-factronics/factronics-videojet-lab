@@ -1,0 +1,3138 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\Lightfoot Beverage Canning Solution Technician Training - AA.pdf
+# cifrado=False bloques=166 caracteres=178133
+
+Lightfoot Beverage Canning
+Solution Technician Training
+Field Service training guide for the 7010, 7020, and 7030 enclosure system.
+Revision: AA 1/25/2021
+
+Lightfoot Beverage Canning Solution Technician Training
+Copyright 2021 , Videojet Technologies Inc. (herein referred to as Videojet). All rights reserved.This document is the property of
+Videojet Technologies Inc. and contains confidential and proprietary information owned by Videojet. Any unauthorized copying,
+use, or disclosure of it without the prior written permission of Videojet is strictly prohibited.
+Revision Date Changes
+AA 1/25/2021 First version
+Videojet Technologies Inc. Phone : 1- 800- 843- 3610 Offices - USA: Atlanta, Chicago, Los Angeles,
+Philadelphia
+1500 Mittel Boulevard Wood Dale, IL Fax: 1- 800- 582- 1343
+Int’l: Canada, France, Germany, Ireland,
+60191- 1073 USA Int’l Fax : 630- 616- 3629
+Japan, Spain, Singapore, Netherlands, and
+www.videojet.com
+The United Kingdom
+Distributors Worldwide
+
+Contents
+Notes & Warnings 5
+Safety & Laser Concepts 7
+System Overview (7010, 7020, and 7030) 49
+Hardware 49
+Software 50
+Theory of Operation (Multi Laser Control) 50
+7010 - IP65 Enclosure Overview 51
+7010 – Components 53
+7020 - Marking Head Enclosure Overview 58
+7020 – Components 61
+7030 – Beam Shield Tunnel Overview 67
+7030 – Components 69
+Installation 71
+70x0 Enclosure Install Checklist for 7x40 Lasers 71
+Measure Power Output 73
+Installing Supply Units in a 7010 87
+Wiring Accessories 92
+Wiring Diagram Encoder & Product Detect 94
+Wiring Safety Switches with 7020/7030 96
+Emergency Stop Configuration 101
+Install Heads in 7020 Enclosure 104
+Multi Laser Software Setup 116
+TCS+ Software for Multi Laser Functionality 125
+Laser Unit Settings 125
+Edit Laser Configuration 126
+Loading the Lens Compensation File 128
+3
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Change Galvo Tuning 130
+Multi Laser Mode 132
+Focus Finder Activation 135
+Adjust Pilot Laser Modes 140
+Troubleshooting 145
+Most Common Issues 145
+Error Messages in Multi Laser Mode 145
+Poor Mark Quality 146
+Temporarily Use a Single Laser 150
+Appendices 155
+List of Figures 156
+List of Tables 159
+Index 161
+4
+Rev AA
+
+Notes & Warnings
+Notes & Warnings
+Pay close attention to these statements because they contain important information on avoiding potential hazards to you or to
+the equipment.
+General Information
+Extra information regarding a task or concept above and beyond the basics.
+Care Notes
+Cautions Against Unsafe Practices
+Indicates hazards or advises against unsafe practices that result in equipment or property damage.
+Warnings to Prevent Injury or Death
+Indicates danger to you or those around you is possible unless you carry out procedures as directed. Always fol -
+low all warnings and wear any PPE called out in warning messages.
+5
+Rev AA
+
+Safety & Laser Concepts
+Lesson Objectives
+l Determine what are suitable safety glasses for working with Fiber lasers
+l Define fire hazards associated with VJ Fiber lasers
+l Define the electrical hazards associated with VJ Fiber lasers
+l Explain the dangers of fume hazards and how they can be prevented
+l Identify how to properly install beam shields, guards and interlocks
+l Identify general safety instructions and procedures
+l Define the different laser classifications
+Lesson Activities
+In this section, you will review the safety conventions to be used throughout the training. You will monitor one another’s adher -
+ence to the safety guidelines and note when not in compliance. Students not in compliance with the safety guidelines will be
+expected to comply upon notification.
+What is a Laser?
+A laser is "a device that produces radiant energy predominantly by stimulated emission. Laser radiation may be highly coherent
+temporally, or spatially, or both" (ANSI Z136.1 - 2014).
+The term "Laser" was originally coined as an acronym for L ight A mplified by S timulated E mission of R adiation.
+7
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Characteristics of a Laser Beam
+l Monochromatic
+l Light is of a single color or wave length
+l CO2 laser light is invisible to the human eye
+l Collimated
+l Laser light is "parallel" and has little divergence or spreading
+l Coherent
+l All light energy particles or photons travel in phase with each other
+F IGURE 1- 1: An example of the monochromatic wavelength of laser light.
+Product Marking Techniques
+Unlike an ink or pigment based coders that apply a new material onto a substrate, lasers mark on products by altering the sub -
+strate itself.
+Ablation
+Ablation is the removal of a layer to reveal contrasting layer below. The topmost layer of film or paint on the substrate is vapor -
+ized.
+8
+Rev AA
+
+F IGURE 1- 2: A surface coating ablated off of a substrate.
+Thermal or Chemical Change
+In a thermal/chemical change technique, light and heat from the beam interact with the substrate to alter it at the surface
+without changing its texture or removing substrate. On metals this is occurs as a function of surface oxides forming on the sub -
+strate surface at the point of beam contact. Similarly on plastics, the beam spurs molecules of the substrate to react and change
+color. If the plastic does not react, dyes or additives may be added to the plastic medium before formation. The beam will react
+with those additives during marking.
+9
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 1- 3: Substrates altered by thermal/chemical reactions at the surface.
+Physical Change - Surface Modification
+Lasers may mark on substrates by burning away substrate to a target depth (in the tens of microns). A trench is left behind in the
+shape of the marked characters or graphics. Substrates that are too thin for engraving (e.g. plastic bottles) may simply be mod -
+ified at the surface causing the formation of bubbles that raise up rather than leave behind a trench. Glass does not burn and is
+marked by crazing , or shattering, at the point of beam contact.
+Marks in Glass Substrates Sharpen Over Time
+Since marks on glass substrates rely on crazing and not vaporization, the removed substrate does not always
+immediately fall away. This means that at first a mark on the glass substrate may appear faint but will
+sharpen as the substrate jostles on a conveyor and the tiny shards fall away.
+Engraving
+When engraving, a superficial incision removes a few microns of material. This occurs via melting/vaporization (metal), partial
+burning (thermoplastic), or crazing (glass).
+10
+Rev AA
+
+F IGURE 1- 4: Surfaces marked via engraving.
+Substrate Modification
+When marking by substrate modification, the beam causes an additive effect on the substrate rather than a reductive one as
+occurs in engraving. The surface is momentarily softened and then resolidifies. While softened, impurities such as oxides or
+gasses are released that alter the color or texture of the substrate.
+11
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 1- 5: Substrates marked via surface modification.
+How Does a Laser Work?
+Laser beams are the product of energy discharged from atoms as photons. This energy emits as electrons orbiting the nucleus of
+the atoms decay to a lower energy level. The energy that formerly kept that electron moving at a higher orbit converts to a
+photon.
+Emissions may be spontaneous or stimulated . Spontaneous emissions occur naturally based on the interaction of excited atoms
+in the electromagnetic field in their environment but are incoherent. Stimulated emissions occur when an incoming photon of a
+specific frequency interacts with an excited atomic electron causing it to decay to a lower energy level. This interaction is called
+absorption .
+Ordinarily absorption produces no photons as the electrons simply raise to a higher energy level. Lasers work because the envir -
+onment inside the beams source is such that instead of raising to a higher energy level, electrons instead decay and the dif -
+ference in energy is released as a second photon of the same phase, frequency, polarization, and direction of travel.
+12
+Rev AA
+
+F IGURE 1- 6: Illustration of Spontaneous Emission. The F IGURE 1- 7: Illustration of Absorption. An incoming
+orbit of the electron decays and a photon photon is absorbed and the increase in
+escapes. energy results in an electron rising to a
+higher orbit.
+F IGURE 1- 8: Illustration of the interaction of light and matter that occurs in stimulated emission. A single photon strikes a higher
+orbit electron which drops to a lower orbit. The original photon and a second photon are emitted.
+Stimulated Emission & Light Amplification
+Energy is applied to the laser beam source to stimulate emission.
+As photons move through the gain medium an avalanche effect occurs as collisions with electrons produce more and more
+photons, all cohering and moving on together in same direction at the same wavelength.
+13
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 1- 9: An illustration of the amplification or "avalanche" effect on photons in a gain medium.
+14
+Rev AA
+
+Laser Wavelengths
+Lasers beams, being light and therefore a form of electromagnetic radiation, can be produced at varying wavelengths on the
+EM spectrum .
+Wavelength is the distance between one peak or crest of a light wave and the next peak or crest. It is equal to
+the speed of the wave divided by its frequency, and to the speed of a wave times its period.
+Electromagnetic radiation has varying effects on people and things. The radio waves, light waves, and X Rays are all
+EM radiation. Radio Waves are harmless to people, light is dangerous only at some exposures and wavelengths, and X Rays are
+dangerous at more than minimal occasional exposure.
+F IGURE 1- 10: Where laser radiation wavelengths fall on the electromagnetic spectrum.
+The primary wavelengths of laser radiation for current commercial applications fall within the Ultraviolet (UV), visible, and
+infrared ranges of the spectrum. UV laser radiation wavelengths range between 180 and 400 nm. Visible light wavelengths range
+between 400 and 700 nm. The infrared range of the EM spectrum consists of radiation at wavelengths between 700 nm and 1
+mm.
+Effects of Laser Radiation on Biological Tissue
+Laser radiation absorbed by the skin penetrates only a few layers. In the eye, visible and near infrared radiation passes through
+the cornea and is focused on and absorbed by the retina. It is the wavelength of the light that determines the visible sensation of
+15
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+color: violet at 400 nm, red at 700 nm, and the other colors of the visible spectrum in between. When radiation is absorbed by bio -
+logical tissue the effect on that tissue is either photochemical , thermal , or mechanical .
+l In the ultraviolet range the effect is primarily photochemical.
+l In the infrared range the effect is primarily thermal.
+l In the visible range both effects are present.
+l When the intensity of the radiation is sufficiently high, the result will be damage to the absorbing tissue.
+Fiber laser beams have a wavelength of 1064 nm and therefore falls into the visible to near infrared spectrum (i.e., 400 - 1400
+nm). Laser light in the visible to near infrared spectrum can cause retinal damage resulting in scotoma (blind spot in the fovea).
+This wave band is therefore also know as the retinal hazard region .
+Table 1- 1: Wavelengths of Videojet Lasers
+Laser Type Wavelengths
+9.3 μm
+CO
+2
+10.2 μm
+10.6 μm
+1064 nm
+Fiber
+633 nm
+Pilot Laser
+355 nm
+Ultraviolet (UV)
+Laser Hazards
+l Radiation Exposure Hazard - Eye
+l Radiation Exposure Hazard - Skin
+l Fire Hazards
+l Toxic Fume Hazards
+l Electrical Hazards
+l Mechanical Hazards
+Danger to Eyes & Skin
+l The laser system produces class 4 laser radiation.
+l Infrared laser radiation is not visible for the human eye. Therefore eyes and skin are endangered through high- energy laser
+radiation.
+l High radiation intensity causes a local heating and burning of the cornea and thus a reduction or loss of sight!
+16
+Rev AA
+
+Take appropriate measures to protect people working near the laser against beam exposure!
+All personnel within the room must wear safety goggles suitable against laser radiation while performing main -
+tenance or adjustments at the open laser housing or near an open beam delivery system!
+Never look directly into the laser beam!
+The skin can withstand higher radiation intensities than the eye. However, depending on the radiation exposure period and radi -
+ation intensity, the radiation burns and destroys tissue.
+Protect your skin by wearing adequate protective clothing! Avoid any exposure of your skin to laser radiation!
+Do not allow the laser beam to contact your clothing!
+Table 1- 2: Bio- effects of Commonly Used Lasers
+Tissue Affected
+Laser Type Wavelength (μm) Bio- effect Process
+Skin Cornea Lens Retina
+CO2 10.6 Thermal X X
+HFl 2.7 Thermal X X
+Erbium- YAG 1.54 Thermal X X
+[a]
+Nd- YAG 1.33 Thermal X X X X
+Nd- YAG 1.06 Thermal X X
+Gas (diode) 0.78- 0.84 Thermal [b] X
+He- Ne 0.633 Thermal [b] X
+[c]
+Ar 0.488- 0.514 Thermal/ X X
+Photochemical
+XeFl 0.351 Photochemical X X X
+XeCl 0.308 Photochemical X X
+[a] Wavelength at 1.33m or more common in some Nd- YAG lasers has demonstrated simultaneous cornea/lens/retina effects in biological
+research studies
+[b] Power levels not normally sufficient to be considered a significant skin hazard
+[c] Photochemical effects dominate for long- term exposures to retina (exposure times more than 10 seconds
+The Complete Laser System
+A complete and closed laser system acts as a class 1 laser system in normal operation. Laser radiation emitted by the laser source
+is held completely within a shielding until it reaches the product. The shielding prevents emergence of laser radiation or laser
+beam reflection.
+17
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Care of System Umbilical
+The minimum bending radius of the umbilical cable is 85 mm. The umbilical is made for stationary use. It will
+also sustain slow moving with low acceleration a few times a day.
+System Overheat
+Pay close attention to the laser's air flow. Failure to do so will result in damage to the laser source or over -
+heating of the system boards.
+l The laser system is cooled by air. The internal cooling system is designed to supply sufficient cool -
+ing.
+l Make sure that the cooling air can be drawn in and blown out freely and that there is sufficient
+air exchange at the installation site to ensure heat dissipation.
+Radiation Exposure Hazard - Eye
+F IGURE 1- 11: Illustrated visual impact of eye damage caused by laser radiation.
+To understand the possible health effects, it is important to understand the functions of the major parts of the human eye.
+The Human Eye
+The cornea is the transparent layer of tissue covering the eye. Damage to the outer cornea may be uncomfortable (like a gritty
+feeling) or painful, but will usually heal quickly. Damage to deeper layers of the cornea may cause permanent injury.
+F IGURE 1- 12: Parts of the human eye.
+18
+Rev AA
+
+The cornea is a clear, dome- shaped surface that covers the front of the eye. It is the first and most powerful lens in the eye's
+optical system. To keep it transparent the cornea contains no blood vessels. Tears that flow over it and aqueous humor in the
+chamber behind it keep it nourished. When you hear of eye transplants, it is the cornea that is being replaced. The cornea can be
+damaged by accidents, infections, and genetic defects.
+The pupil is the black circle in the center of the eye, and its primary function is to monitor the amount of light that comes into the
+eye. When there is a lot of light, the pupil contracts to keep the light from overwhelming the eye. When there is very little light, the
+pupil expands so it can soak up as much as possible.
+The iris is the colored part of the eye. Although it might seem purely cosmetic, the iris actually functions to adjust the size of the
+pupil. It has muscles that contract or expand depending on the amount of light the pupil needs to process images.
+The lens exists behind the pupil and is responsible for allowing your eyes to focus on small details like words in a book. The lens is
+in a constant state of adjustment as it becomes thinner or thicker to accommodate the detailed input it receives. With age, the
+lens loses a lot of its elasticity which often results in cataracts and presbyopia, i.e. nearsightedness, because the lens cannot
+adjust as well to its surroundings as it used to.
+The vitreous humour is a gel- like substance that helps to keep the eyeball in its proper, circular shape. This is the area in the eye
+where floaters develop as pieces of the vitreous humor clump together and cast shadows onto the retina. With age, the vitreous
+humor begins to shrink and can cause problems like posterior retinal detachment or retinal tears.
+The retina is the area at the back of the eye that receives the refined, visual message from the front of the eye, and it transmits
+that visual message to the brain using electrical signals.
+The sclera is the white part of the eye, and its main function is to provide strength, structure, and protection for the eye. The
+sclera contains blood vessels that can tell an eye doctor a lot about the overall state of your health.
+Ocular Absorption by Wavelength
+Damage to the eye is dependent upon the wavelength of the beam.
+F IGURE 1- 13: Ocular absorption by wavelength illustrated.
+19
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+l Ultraviolet and low energy far- infrared radiation can injure the epithelial layer of the cornea; a condition that is painful and
+visually handicapping. At lower powers, this injury is primarily due to a photochemical reaction. A latency period of hours
+may exist between the time of exposure and the development of the corneal pathology. Minimal corneal lesions heal within
+a few days, but meanwhile hinder vision.
+l High energy far- infrared radiation is mainly absorbed by the cornea producing immediate burns at all corneal layers. An
+infrared laser can produce a burn resulting in immediate visual incapacitation and may lead to permanent corneal scarring.
+Very high energy radiation can perforate the cornea which may result in complete loss of the eye.
+l Laser light in the visible to near infrared spectrum (i.e., 400 - 1400 nm) can cause damage to the retina resulting in scotoma
+(blind spot in the fovea). This wave band is also know as the "retinal hazard region". Exposure to the Q- switched Nd:YAG
+laser beam (1064 nm) is especially hazardous and may initially go undetected because the beam is invisible and the retina
+lacks pain sensory nerves. Photoacoustic retinal damage may be associated with an audible "pop" at the time of exposure.
+Visual disorientation due to retinal damage may not be apparent to the operator until considerable thermal damage has
+occurred.
+20
+Rev AA
+
+F IGURE 1- 14: Example of retinal damage.
+Figure 1- 14 above depicts a human eye injury resulting from four pulses into the macular region from an AN/GVS- 5 Nd: YAG
+laser rangefinder. The pulse duration was about 20 ns and the pulse energy was about 15 mJ. The safe exposure limit for this
+pulse duration is 2 mJ per pulse. Thus, this exposure was 7500 times the safe level.
+Short pulse lasers produce the greatest eye hazards as each short pulse results in a tiny explosion in the retina. The resulting shock
+wave causes severe damage to the retinal tissue.
+The photo in Figure 1- 14 above was taken three weeks after the exposure. It shows the permanent destruction of the macular
+region. Visual acuity in the eye is approximately 20/400 and will not improve.
+This injury could not have occurred if the individual had been wearing the appropriate laser safety eyewear .
+F IGURE 1- 15: Short pulse retinal damage, absorption of 1064nm wavelength.
+Figure 1- 15 above depicts the eye of a rhesus monkey which received a single short pulse into the eye. The laser energy was
+absorbed in a small volume of the retina. Most of the energy was absorbed in a thin layer at the back of the retina called the pig -
+ment epithelium. This is a layer pigmented by melanin, the substance that colors skin. This layer absorbs most of the light enter -
+ing the eye, preventing light scattering in the eye that would blur vision. When a short laser pulse is absorbed into this layer, the
+energy heats the melanin grains, the thermal energy is transferred to the surrounding water, and the result is a microscopic steam
+explosion. The shock wave from this explosion ruptures blood vessels in the surrounding tissue, causing hemorrhaging in the ocu -
+lar medium and inside the retinal layers. This can be seen as the darkened area surrounding the lesion. This part of the retina will
+die. The resulting blind spot will destroy the central vision of this eye.
+21
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 1- 16: A multiple pulse retinal injury. Image color enhanced to better show the laser damage.
+Figure 1- 16 above depicts the retina of a human who experienced an eye injury from a repetitive pulse near infrared laser. The
+beam was invisible. In such cases people do not usually realize they are exposed until their vision has been severely affected. This
+person’s eye was moving during this exposure, resulting in a line of laser burns across the retina.
+The macula of the eye is located out of the photo to the lower left. This individual was fortunate that the damage did not extend
+into the macula.
+Radiation Exposure Hazard - Skin
+Skin is the largest organ of the body and, as such, is at the greatest risk for coming in contact with the laser beam. The head,
+hands, and arms are the most likely skin surfaces to be exposed.
+22
+Rev AA
+
+l Stratum Corneum (Dead Layer)
+The stratum corneum is the outermost layer. It consists of flattened, dead epidermal cells that protect the living tissue from
+water loss, injury from physical objects, and radiant energy. The thickness is 8- 20 μm except on the soles of the feet and the
+palms of the hands where it is 500- 600 μm.
+l Epidermis
+The epidermis is the outermost layer of living tissue, where the tanning process takes place. It has a relatively uniform thick -
+ness of about 50- 150 μm.
+l Dermis Corium
+The dermis corium is made up largely of connective tissue which gives the skin its elasticity and supportive strength.
+Included in this layer are nerve cells, blood vessels, and lymphatic glands. The thickness of this layer varies over the body
+from 1- 4 mm.
+l Subcutaneous Tissue
+The subcutaneous tissue is made up mostly of fatty tissue serving as insulation and as a shock absorption medium. The
+thickness of this layer varies according to the area of the body as well as from person to person.
+Dermal Damage by Radiation Varies by Wavelength
+Laser effects on tissue depend on the power density of the incident beam, absorption of tissues at the incident wavelength, time
+beam is held on tissue, and the effects of blood circulation and heat conduction in the affected area.
+23
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 1- 17: Effects of laser radiation by wavelength.
+Immediate Effects of Exposure
+The immediate effect of exposure to laser light above the biological damage threshold is normally tissue burns. Injury to the skin
+can be caused by either temperature elevation in skin tissues or from a photochemical effect (e.g., "sunburn") from excessive
+levels of actinic ultraviolet radiation.
+F IGURE 1- 18: Examples of skin burns.
+24
+Rev AA
+
+Delayed Effects of Exposure
+The possibility of adverse effects from repeated or chronic laser irradiation to the skin has been suggested, although it is normally
+discounted. Only optical radiation in the ultraviolet region of the spectrum has been shown to cause long- term, delayed effects
+such as accelerated skin aging and skin cancer. At present, laser safety standards for exposure of the skin attempt to take these
+adverse effects into account.
+Burns, skin cancer and acceleration of skin aging are possible from exposure to laser radiation. Chronic exposure can cause
+increased pigmentation.
+Fire Hazards
+Understand fire hazards, how to prevent them, and how to react to fires.
+Elements of a Fire
+l Oxygen
+l Heat
+l Fuel
+Fire Hazard Terminology
+l Flash Point
+Minimum temperature at which a liquid will burn. The Flashpoint for Methyl Ethyl Keytone (MEK) 73°F.
+l Flammable Range
+Environmental conditions in which there is a fuel/air mixture that leads to combustion, e.g not too lean (too little fuel), not
+too rich (too much fuel).
+l Lower Flammability Limit (LFL)
+The lower limit of the flammable range. Also know as Lower Explosive Limit (LEL).
+l Upper Flammability Limit (UFL)
+The upper limit of the flammable range. Also known as Upper Explosive Limit (UEL).
+l Bonding
+Connecting two objects or pieces of equipment with a conductive cable to maintain the same electrical potential between
+the two. Grounding
+Classes of Fire
+Fires are classified as one of four types.
+Class A - Ordinary Combustibles
+Most common fire. A burning house is a class A fire.
+Class B - Flammable Liquids
+Liquid combustibles such as paint strippers, solvents, fuels, oil, or grease.
+Class C - Electrical Equipment
+Additional danger from electrical shock. Power equipment OFF immediately.
+Class D - Combustible Metals
+Combustible metals such as magnesium, aluminum, and metallic sodium. Metals burn easier in powder or chip form.
+DO NOT apply water to a Class D fire as this can result in an explosion.
+25
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Fire Prevention & Safety
+l Always store flammable liquids in approved cabinets.
+l Never operate the laser system on unattended material.
+l Always keep the area around the machine clean and free of clutter, combustible materials, explosives, or volatile solvents
+such as acetone, alcohol, or gasoline.
+l Always keep a properly maintained and inspected fire extinguisher on hand. A Halotron fire extinguisher or a multi- purpose
+dry- chemical fire extinguisher. The Halotron extinguisher emits a clean, easily removable substance that is not harmful to
+the mechanics or wiring of the laser system. Other dry chemical extinguisher can sometimes emit a sticky, corrosive powder
+that is very difficult to clean up.
+l Always use a fume extractor when vector printing.
+l Many materials have the potential to burst suddenly into flames – even materials with which you might be very familiar.
+Utilizing the Air Assist feature will reduce the instance of flare- ups when working with flammable materials such as acrylic
+and wood.
+l Keep your laser system clean - Build up of cutting and engraving residue and debris is dangerous and can create a fire haz -
+ard in its own right. These small pieces present a very dangerous fire hazard, especially if they are allowed to collect over
+time. Since most users cut wood and acrylic, these small pieces that fall into the conveyor, extractor nozzle or build up
+around the lens act just like kindling and can ignite and start a fire.
+l Lastly, make sure the exhaust blower you are using receives proper maintenance. Periodically clean the exhaust blower and
+duct system to remove built- up debris. If you detect odor while engraving, or smoke in the cabinet is visible in the area of
+the lens carriage, inspect the exhaust system for leaks and obstructions. Inspect and clean the exhaust ports in your
+machine to ensure there are no obstructions within the machine itself. Use a wire brush to clean the plenum and exhaust
+port of your machine.
+26
+Rev AA
+
+Toxic Fume Hazards
+Some materials, such as certain plastics, emit toxic gas or other byproducts when burned under a laser beam. These byproducts
+can be hazardous to human health . Consult the manufacturer of material.
+l When vaporized, materials may produce fine dust and vapors
+which might include hazardous byproducts depending on type
+of material.
+l It is highly recommend that a exhaust unit be installed to
+prevents contamination and gradual destruction of optical
+elements of the beam delivery system by dust particles.
+l Turn on ventilation system (Fumex or Bofa Fume Extractor) in
+order to reduce fume exposure.
+l Possible effects of exposure to vapors include eye irritation ,
+sore throat , respiratory irritation , and occupational asthma .
+F IGURE 1- 19: Fume extractors draw in LGACs at the
+point of creation.
+Laser Fume Extraction
+A fume extractor removes the smoke and dust particles associated
+with laser marking.
+l Extractors are recommended in all applications and are
+required in PVC marking.
+l Typically the fumes created during the laser marking process
+are 99% nuisance dust.
+l Fume extraction both decreases human exposure to
+potentially harmful substances. Properly installed extraction
+also helps keep the lens cleaner for longer periods of time.
+Laser Gas Generated Air Contaminates (LGAC)
+3 7
+l ANSI Z 136.1 states that from irradiance of 10 to 10
+2
+watts/cm contaminants can possibly occur and should be
+7 2
+air- monitored. At irradiance above 10 watts/cm
+contaminants are very likely to occur.
+l Organic materials, including polymers and tissue, will produce
+plumes containing potentially carcinogenic materials.
+Polymers will pyrolyze to form toxic gases. Metals and
+inorganic materials will form fume clouds. These can be
+treated as common hot gas air contaminant sources in
+accordance with ACGIH and ASHRAE criteria. The interiors of
+the enclosures should be easy to clean/decontaminate. The
+usefulness of HEPA filtration of the effluent shall also be
+evaluated when irradiances exceed 10,000 watts/cm2.
+Take care when changing filters in applications where the by-
+products of lasing create hazardous materials. A mask and gloves are
+advised in order to avoid the inhalation of harmful dust particles
+and/or exposure of skin to harmful contaminants.
+27
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 1- 20: A cross section of a Videojet Oracle fume extractor system.
+Fume Exposure First Aid
+Symptoms of exposure to this product are headaches, dizziness, nausea, difficult breathing, vomiting and diarrhea. In all cases
+of overexposure get medical attention immediately. Take victim to a doctor or emergency treatment facility.
+In Case of Inhalation
+l Move person to fresh air.
+l If person is not breathing, call 911 or an ambulance; give artificial respiration, preferably by
+mouth- to- mouth, if possible.
+l Keep warm and make sure person can breathe freely.
+l Call a poison control center or doctor for further treatment advice.
+28
+Rev AA
+
+In Case of Ingestion
+l Call a poison control center or doctor immediately for treatment advice.
+l Have person drink one or two glasses of water and induce vomiting by touching back of throat
+with finger, or if available, administer syrup of ipecac.
+l Do not give anything by mouth to an unconscious person.
+l If on skin or clothing:
+l Brush or shake material off clothes and shoes in a well- ventilated area. Allow clothes to aerate in
+a ventilated area prior to laundering.
+l Do not leave contaminated clothing in occupied and/or confined areas such as automobiles,
+vans, motel rooms, etc.
+l Wash contaminated skin thoroughly with soap and water.
+In Case of Eye Exposure
+l Hold eye open and rinse slowly and gently with water for 15- 20 minutes.
+l Remove contact lenses, if present, after the first 5 minutes, then continue rinsing eye.
+l Call a poison control center or doctor for treatment advice.
+Electrical Hazards
+Several possible hazards exist when working with electronics.
+l High Voltage (Mains)
+l Stored Voltage
+l RF Energy
+The term high voltage usually means electrical energy at voltages high enough to inflict harm or death upon living things.
+115VAC is converted through the power supplies to 32 VDC to supply the laser components.
+Personal Protection from Electrical Hazards
+Protect yourself when working with electronics.
+Shock Hazard Warning
+Lethal voltages are present within this equipment when it is connected to the mains electrical supply.
+Observe all statutory electrical safety codes and practices. Unless it is necessary to run the printer, disconnect
+the printer from the mains electrical supply before removing the covers or attempting any service or repair
+activity. Non- adherence to this warning can result in death or personal injury.
+29
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+l Isolate the power supply
+l Check DC Supply
+l Power supply is on if laser is plugged in.
+l Keep working area clear of unnecessary personnel
+l Practice battery handling safety.
+l Correctly install batteries to prevent danger of explosion.
+l Replace only with the same or equivalent type.
+l Dispose of used batteries according to the battery manufacturer’s instructions.
+Comply with Lockout/Tagout Procedures.
+Do not service electrical parts or circuits without proper lockout/tagout procedures for printer or conveyor
+power sources.
+Cleaning Solvents
+When cleaning Videojet Technologies, INC equipment (such as the lens or mirror components in a laser) it is necessary to use
+solvents. Use only recommended solvents to clean optical components. See maintenance documentation for detailed instructions
+on cleaning lenses. Using unapproved solvents (including make- up fluid from ink coders) can damage lenses or mirrors and may
+result in significant cost to replace components.
+Personal Injury & Fire Hazard
+Solvents are flammable and harmful to the eyes, skin, and lungs.
+Recommended Cleaning Solvents for Lenses
+l Acetone (Preferred)
+l Methyl alcohol (methanol)
+l Isopropyl Alcohol (rubbing alcohol)
+Read the Material Safety Data Sheets
+Read and understand the Material Safety Data Sheet (MSDS) before using acetone; the appropriate sheet or
+sheets are supplied with the product when shipped, Alltec website and service manual.
+Make certain to retain all MSDSs for future reference. Additional copies of MSDSs are available upon request
+and can be obtained by contacting the Videojet Customer Service Department at 800- 843- 3610. Outside the
+U.S., customers should contact a Videojet subsidiary office or their local Videojet distributor.
+Ordering Solvent For Cleaning Optics
+Before carrying out the maintenance works at the optics, please note the following:
+30
+Rev AA
+
+l Acetone is not included in delivery and has to be purchased via other companies. See www.vwr.com to order acetone in a
+quick and uncomplicated way.
+l When purchasing acetone, make sure that you order acetone pro analysis (p.a. = highest purity grade). Acetone is preferred
+over Isopropyl alcohol.
+Mechanical Hazards
+Exercise caution when working with moving machinery.
+Moving Equipment Hazards
+l Adhere to all posted rules when working around rotating machinery.
+l Keep hands, feet, and clothing away from clear of the printer and any moving parts during operation.
+Avoid Hazards with Proper Installation
+l Mount operator control consoles at an appropriate working height and orientation for comfortable and safe operation.
+l Safely secure all connecting cables and pipes to prevent trip hazards and entanglement in machinery.
+Laser Accident Prevention
+Statistically laser accidents are due to several factors. The most common type of injury is to the eye (around 70%). There have
+been a few deaths, mostly caused by electrocution or fires.
+Causes of Laser Accidents
+l Eye exposure unexpectedly during alignment
+l No eye protection worn
+l Equipment malfunction
+l High voltage mishandling
+l Non- beam hazards
+l Incorrect eyewear
+l Inhalation of air contaminants
+l Viewing laser- generated plasmas
+l General incorrect use of equipment
+Laser Classification
+A laser's class is an indication of the beam hazard level of that laser or laser system during normal operation or the determination
+thereof. The hazard level of a laser or laser system is represented by a number or a numbered capital letter. The laser clas -
+sifications are Class 1, Class 1M, Class 2, Class 2M, Class 3R, Class 3B, and Class 4. (ANSI Z136.1- 2014)
+31
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Laser Class 1
+l No danger to the eyes (also with the use of optical instruments).
+l No danger to the skin.
+l The accessible laser radiation is, under reasonably foreseeable conditions, harmless.
+The products are absolutely laser- light safe (eye & skin): no laser light at critical power levels can leave the laser system. This is the
+standard for laser marking machines. Laser Class 1 products are operated in the same manner as conventional machine tools.
+Example 1: Marking on Metal Strips
+Metal strips are led through a marking cabin closed in on all sides with steel plates (green arrow in Figure 1- 21 below ). The laser
+heads are located outside of the marking cabin. The writing heads are sealed all the way around by brushes (red arrows in Figure
+1- 21 below ). The product intake and discharge areas are sealed with rows of brushes (red arrow).
+F IGURE 1- 21: The intake area of a Class 1 Laser implementation.
+32
+Rev AA
+
+Example 2: Marking on Plastic Strips
+1. The plastic strips are led into a marking cabin sealed by a row of brushes (green arrows).
+F IGURE 1- 22: The intake of a class 1 laser implementation for marking on plastic strips.
+2. The brushes close around the product so that no radiation can escape from the side (red arrow). Intake and discharge side.
+F IGURE 1- 23: Brushes around the discharge that prevent radiation from escaping the enclosure.
+3. A special protective window (constructed of material in accordance with DIN EN 207) makes it possible to watch the mark -
+ing process.
+33
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 1- 24: An observation window constructed to allow safe viewing of marking (constructed of material in accord -
+ance with DIN EN 207).
+Example 3: Marking Stationary Objects on a Rotary Table
+In this example, a completely closed marking cabin, the door frame of which is sealed from the inside with stop sealing (red
+arrows in Figure 1- 25 on the facing page and Figure 1- 26 on the facing page ). This creates a wide overlap between the door and
+frame. reliably preventing the laser beam from escaping.
+34
+Rev AA
+
+F IGURE 1- 25: The marking cabin with the side door open to demonstrate the interior.
+1. The workpiece is manually placed on the rotary table (green arrows Figure 1- 25 above and Figure 1- 26 below ).
+F IGURE 1- 26: A rotary table.
+2. The rotary table turns into the marking cabin and is marked there. Brush rows on the rotary table prevent the laser beam
+from escaping (red arrow in Figure 1- 26 above ).
+35
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Laser Class 2
+l No danger to the eyes at short exposure times (max. 0.25 s).
+l No danger to the skin.
+l The accessible laser radiation is only in the visible range (400 to 700 nm).
+Short irradiation (up to 0.25 s) is not dangerous for the eye. The eye protects itself via the eyelid- closing reflex. For CW lasers of
+this class the maximum accessible power level is 1 mW.
+Caution
+Class 2 lasers can be operated without any safety covers or housings if it is guaranteed that the view into the
+laser beam cannot last longer than 0.25 s.
+Laser Class 2M
+l No danger to the eyes at short exposure times (max. 0.25 s). As long as no optical instruments are used!
+l No danger to the skin.
+Same as Class 2, but safe for short time viewing only for the naked eye. Eye injury may occur when exposure occurs while using
+optical instruments (e.g. binoculars, magnification glasses). As long as no optical focusing components are used the risk assess -
+ment is not higher than in laser class 1M. Laser power less than 1mW
+Caution
+When optical components are used the risk assessment can be comparable with laser class 3R or 3B.
+Laser Class 3R
+l Low risk to eyes
+l No risk to skin
+The accessible laser radiation becomes dangerous for the eye when the beam diameter is reduced via optical components/ instru -
+ments. If this is not the case and the radiation visible (400 to 700 nm) short irradiation (up to 0.25 s) is not dangerous for the eye.
+In all other cases (diameter reduction, non- visible radiation, long irradiation) the eye is endangered.
+The risk of an eye damage is reduced because the maximum beam energy is limited to 5 times of the maximum energy of class
+2. Laser power less than 500mW.
+Laser Class 3B
+l Medium to high risk to eyes
+l Low risk to skin
+The accessible laser radiation is dangerous for the eye and in specific cases also for the skin.
+36
+Rev AA
+
+Never look directly into the laser beam!
+The direct view into the beam of class 3B lasers is always dangerous.
+Laser Class 4
+l Hazardous to eyes
+l Hazardous to skin
+High power lasers (cw: 500 mW or greater, pulsed: 10 J/cm2 or the diffuse reflection limit) are hazardous to view under any con -
+dition (directly or diffusely scattered) and are a potential fire hazard, LGAC hazard, and a skin hazard. Significant controls are
+required of Class 4 laser facilities.
+Interaction of Light & Matter
+Most absorbing materials satisfy the Beer- Lambert Law.
+An isolated atom scatters light because the electric field of the incident light wave forces the electrons in the atom to oscillate
+back and forth about their equilibrium position. By the laws of electromagnetism, when a charge changes its velocity, it emits
+radiation.
+Light is emitted uniformly in all directions in the plane ∞ to oscillation, but decreases in amplitude as the viewing angle shifts
+away from that plane.
+37
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+l Reflection occurs when light is scattered in the opposite direction of incident light.
+l Refraction is a phenomenon in which light is scattered in the forward direction and combines with the incident beam. The
+physical effect of this combination is to make the transmitted light appear as though it has traveled more slowly through
+the sample than through a vacuum.
+l Incident ray in physics, a ray of light which hits a surface.
+l The refracted ray or transmitted ray corresponding to a given incident ray represents the light that is transmitted through
+the surface. The angle between this ray and the normal is known as the angle of refraction, and it is given by Snell's Law.
+Conservation of energy requires that the power in the incident ray must equal the sum of the power in the transmitted ray,
+the power in the reflected ray, and any power absorbed at the surface.
+Reflection of Light
+In the case of free propagation of a laser beam, special attention should be placed as the vision of the radiation is directly reflec -
+ted, because of exposure to the eye may be exposed. Less dangerous is the vision of widespread radiation.
+Intrabeam exposure means that the eye or skin is exposed directly to all or part of the laser beam. The eye or skin is exposed to
+the full irradiance or radiant exposure possible.
+Reflection is the return of radiant energy (incident light) by a surface, with no change in wavelength.
+Diffuse Reflection takes place when different parts of a beam incident on a surface are reflected over a wide range of angles in
+accordance with Lambert's Law. The intensity will fall off as the inverse of the square of the distance away from the surface and
+also obey a Cosine Law of reflection.
+Note
+Direct (intrabeam) veiwing is the most dangerous of the three types.
+38
+Rev AA
+
+Specular vs Diffuse Reflection
+F IGURE 1- 27: The difference between light reflected on different surfaces.
+Reflection off of smooth surfaces such as mirrors or a calm body of water leads to a type of reflection known as specular reflec -
+tion . Reflection off of rough surfaces such as clothing, paper, and the asphalt roadway leads to a type of reflection known as dif -
+fuse reflection . Whether the surface is microscopically rough or smooth has a tremendous impact upon the subsequent
+reflection of a beam of light. The diagram below depicts two beams of light incident upon a rough and a smooth surface.
+A light beam can be thought of as a bundle of individual light rays which are traveling parallel to each other. Each individual
+light ray of the bundle follows the law of reflection. If the bundle of light rays is incident upon a smooth surface, then the light
+rays reflect and remain concentrated in a bundle upon leaving the surface. On the other hand, if the surface is microscopically
+rough, the light rays will reflect and diffuse in many different directions.
+Specular reflections are mirror- like reflections and can reflect close to 100% of the incident light. Flat surfaces will not change a
+fixed beam diameter only the direction. Convex surfaces will cause beam spreading, and concave surfaces will make the beam
+converge.
+Diffuse reflections result when surface irregularities scatter light in all directions. The specular nature of a surface is dependent
+upon the wavelength of incident radiation. A specular surface is one that has a surface roughness less than the wavelength of
+the incident light. A very rough surface is not specular to visible light but might be to IR radiation of 10.6 µm from a CO2 laser.
+Why a rough Surface Diffuses a Light Beam
+For each type of reflection, each individual ray follows the law of reflection. However, the roughness of the material means that
+each individual ray meets a surface which has a different orientation. The normal line at the point of incidence is different for dif -
+ferent rays. Subsequently, when the individual rays reflect off the rough surface according to the law of reflection, they scatter in
+different directions. The result is that the rays of light are incident upon the surface in a concentrated bundle and are diffused
+upon reflection.
+Counter Measures
+l Make sure that the working distance is set correctly before marking any reflecting material. Use a weakly reflecting material
+for testing, e.g. laminated paper.
+l When marking reflecting material try not to mark in the center of the marking field. Position the product so that the mark -
+ing is in the edge of the marking field.
+l When setting the laser power start with the maximum value and reduce the power until the marking result is satisfying. If
+no marking is visible at maximum power the material cannot be marked using this laser.
+39
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+ANSI Z 136.1 - 2014
+The Laser Institute of America (LIA) has been the secretariat and publisher for this series of standards for the safe use of lasers
+since 1986. Z136.1 is the parent document, other specialized standards exist.
+Purpose
+l Create a standard of measurement.
+l Determine thresholds where radiant energy becomes a hazard.
+l Categorizes laser into four basic hazards.
+l Provides recommendations for the safe usage of lasers and
+laser systems between 180nm and 1mm.
+Compliance
+To be in compliance with ANSI Z136.1 means:
+l You follow those mandatory requirements that are designated
+“ SHALL .”
+l You take into consideration advisory recommendations F IGURE 1- 28: The ANSI Z136.1- 2014 Manual.
+designated “ SHOULD ."
+Laser Safety Resources
+l Center for Devices and Radiological Health (CDRH)
+An agency within the U.S. Food and Drug Administration which publishes and enforces legal requirements on laser product
+manufacturers. For copies of the CDRH regulations, contact: CDRH (HFZ- 312), 2098 Gaither Road, Rockville, MD 20850,
+Telephone (301) 594- 4654
+l The Occupational Safety & Health Administration (OSHA)
+Does not have specific laser safety requirements. However, if they are called into a facility, the inspectors follow published
+guidelines (OSHA Instruction PUB 8- 1.7 Guidelines for Laser Safety and Hazard Assessment) that are based on an earlier
+(1986) ANSI Z136.1 standard.
+l American National Standards Institute (ANSI)
+U.S. organization that publishes standards for laser users. Their laser safety standards are not laws, but they form the basis
+for state and OSHA requirements for the use of lasers. For copies contact ANSI in New York at (212) 642- 4900 or the Laser
+Institute of America, at Telephone (407) 380- 1553, Fax (407) 380- 5588
+40
+Rev AA
+
+General Laser Safety
+The laser system must only be used for the treatment of material surfaces. The surfaces are locally heated by intensive class 4
+laser radiation and are modified thereby. These systems are mainly applied for marking of product surfaces (expiry dates, batch
+printing, serial numbers, etc.).
+The radiation produced by the laser system is of high energy and therefore improper use represents a danger to persons or
+objects!
+Never expose human beings or animals to laser radiation.
+This might result in severe burns of eyes or skin.
+Never expose flammable materials to laser radiation!
+Ensure the laser beam is housed in a shielded enclosure.Paper (circuit diagrams, leaflets, posters on the walls,
+etc.), curtains not treated with flame retardant, wooden boards, or similar flammable materials can easily
+ignite by direct or reflected laser radiation.Install smoke detectors, fire detectors, or similar or similar safety
+equipment to detect fire should it occur.
+Never expose reflective surfaces to laser radiation! The reflected
+laser beam may cause the same dangers - in some cases even
+greater dangers - as the original laser beam.
+Never expose reflective surfaces to laser radiation! The reflected laser beam may cause the same dangers - in
+some cases even greater dangers - as the original laser beam.
+Never expose unknown materials to laser radiation!
+Some materials (e.g. polyethylene, polypropylene, glass) are easily penetrated by the laser beam, although they
+seem to be opaque for the human eye.
+Danger of explosion! Make sure that the laser area is free of flam -
+mable/explosive materials and vapors!.
+Arbitrary modifications or changes to the laser system are forbidden.
+If a modification made by the user to a previously classified laser system leads to a change of its performance
+data and/or its intended use that person or organization performing the modification is responsible for a new
+classification and labeling of the laser system. The person or organization is then regarded as the man -
+ufacturer .
+The laser system must be operated with open laser and/or open
+beam delivery system by specially trained personnel only!
+Observe all laser protection rules.
+41
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Feedback Radiation
+When marking highly reflective material there might be a feedback of radiation into the laser. In this case the
+system switches to fatal error mode.
+A reset has to be carried out to continue: the laser must be switched off and on again.
+42
+Rev AA
+
+Safety Guards
+A safe installation requires that the laser beam be guarded utilizing interlocks.
+F IGURE 1- 29: A side view of a laser guard enclosure. Products move from one end to the other on the conveyor, represented by
+the black line at the bottom.
+Any parts of the safety guard which can be removed (slides or hinged parts) should be interlocked so the laser is paused (shutter
+closed) when those parts are open or removed.
+F IGURE 1- 30: A top view of a laser guard enclosure. Products move from one side to the other on the conveyor, represented by
+the dotted lines .
+43
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Caution!
+As soon as the closed shielding or the housing of the laser are opened anywhere the complete laser system is
+set to class 4!
+In that case appropriate measures have to be taken in order to protect people working in the laser area against
+too high radiation!
+Caution with Modifications!
+EN 60825, part 1, Radiation safety of laser systems, section 4.1.1 states "If a modification by the user to a
+laser system previously classified in accordance with this standard leads to a change of its performance data
+and/or its intended use that person or organization performing the modification is responsible for a new clas -
+sification and labeling of the laser system."
+Materials for Construction of a Laser Beam Protection
+Fiber laser enclosure materials must be entirely opaque and able to withstand the expected energy density, meaning they will not
+be made from plastics and will likely be constructed of aluminum or steel . While there are some translucent materials that are
+acceptable in the enclosure (constructed of material in accordance with DIN EN 207) these are materials are costly and likely
+would not comprise the entire cabinet.
+Table 1- 3: Aluminum & Sheet Steel Advantages & Disadvantages
+Advantages Disadvantages
+l Aluminum and sheet steel can withstand even high l Within the beam protection uncontrolled specular
+energy densities of the laser beam for long periods. and diffuse reflections can occur. These might
+Therefore they can be applied very close to the focal damage other elements (e.g. plastics) located in the
+plane. beam protection.
+l Specular and diffuse reflections cannot damage the l Comparatively expensive in processing.
+beam protection.
+l Opaque. If the marking position should be visible an
+admitted filter glass must be applied.
+Automatically Moving Products
+If a moving product is stopped to be marked (marking at standstill) the marking area should be screened for every marking by an
+automatically moving laser beam protection. The beam protection must cover the surrounding contours of the marking area
+completely so that the entire marking area is screened light- tight towards the outside. That means there must be no gaps. That
+applies also to the side facing the opening from which the laser beam is emitted. In case of malfunction the marking process is
+started and there is no product in the marking area, laser radiation must not exit the beam protection at any side.
+If the product to be marked is moving during the marking process, e.g. on a conveyer belt, the construction of a beam protection
+tunnel is necessary. In order to control the transmission of laser radiation, the beam- emergence opening is encased together with
+the conveyer belt from above and from the sides. If the radiation might penetrate the conveyer belt, e.g. at gaps, the tunnel must
+also be installed from below. The tunnel must be long enough in front of and behind the marking area to prevent possible reflec -
+tions coming from the product itself, or other surfaces (e.g. metallic jointed- band conveyer), from exiting at the sides of the
+44
+Rev AA
+
+tunnel. The tunnel must be long enough to absorb reflections before such reflections reach the ends of the tunnel. The tunnel
+should be constructed to be as close as possible to the product. Thus potential exits for laser radiation are minimized. If possible
+flaps, brushes or strip curtains should be installed at the ends of the tunnel to provide additional screening.
+Personal Protection Equipment (PPE)
+PPE control measures for working with lasers included glasses, face shields, gloves, and long sleeve clothing. Appropriate eye pro -
+tection is always of utmost importance.
+l Appropriate eyewear
+l Must be appropriate for the laser wavelength in use to adequately attenuate the beam to safe levels
+l Should be comfortable enough to wear
+l Skin PPE (UV Only)
+l Gloves
+l Special Clothing (long sleeves)
+Plastic & Glass Eyewear
+Protective eyewear may be constructed with either glass or plastic (polycarbonate) lenses.
+Table 1- 4: PPE Eyewear Lens Material Comparison
+Polycarbonate Glass
+l Low weight l Scratch resistant
+l Break resistant l Ease for prescription lenses
+l Lower cost l Good visional transmittance
+l 110W/cm² causes penetration in 7 seconds l Damage threshold of 100 to 500W/cm²
+Eyewear Selection
+When selecting PPE eyewear, consider the environment in which you will use it and the laser radiation wavelengths that could be
+present.
+l Laser wavelength or range
+l Optical Density (OD) for that wavelength or range (See "Optical Density of Protective Eyewear" on the next page )
+l Damage Threshold of the eyewear (the maximum irradiance or beam power that the eyewear will protect against for at
+least 5 seconds
+l Visual transmittance of the eyewear (how much visible light is transmitted to the eye)
+l Field of view and curvature of the lens
+l Goggles large enough to accommodate prescription eyewear
+l Ventilation to prevent fogging and general comfort
+l Effect on color vision
+l Impact resistance and cost
+45
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Eyewear Checklist
+Is the OD for the worst- case situation?
+Have different frame types been evaluated?
+Have all wavelengths been determined?
+Has visual transmittance been considered?
+Can users be relied on to actually use the eyewear?
+Will eyewear be available for guests?
+Optical Density of Protective Eyewear
+When selecting protective eye wear for working near lasers, one must select glasses or goggles with Optical Density (OD) appro -
+priate to the wavelength of the laser in use. OSHA defines OD as "a logarithmic expression for the attenuation produced by an
+attenuating medium, such as an eye protection filter." Stated more mathematically, the ANSI Z136.1 document for the Safe Use
+of Lasers defines OD as "The logarithm to the base ten of the reciprocal of the transmittance at a particular wavelength ."
+How OD is Calculated
+We will demonstrate the methodology behind calculating OD. However, if you are unsure what safety equipment to use consult
+your Laser Safety Officer (LSO).
+OD Level 6 Required
+All Videojet Technologies, INC employees working with lasers shall wear glasses with an OD of 6 at the
+wavelength in use.
+There are several variable symbols used in the OD calculations and prerequisite calculations.
+Value Symbol Calculated As
+Optical Density Dƛ
+Transmittance (Overexposure) τƛ
+Exposure H
+p
+Maximum Permissible Exposure MPE Refer to ANSI Z136.1 - 2014 Table 5a
+The MPE determination is based on the duration of use, and particular wavelength.
+l Aversion response to visible lasers (0.4 to 0.7 um, and class 3B and 4 lasers). The aversion response time of 0.25 s shall be
+used when long term intrabeam viewing is not intended.
+46
+Rev AA
+
+l Near Infrared (0.7 to 1.4 um, and class 3B and 4 lasers). 10 s shall be used as a “worst case” time duration for MPE determ -
+ination for this category of lasers.
+l Diffuse Viewing (intended class 3B and 4). Maximum viewing times may be used within an 8 hour time period based on the
+operation, such as with alignment procedures where viewing is intended.
+l Diffuse Viewing (unintended class 3B and 4). 600 seconds shall be used for this category of laser classes where there is
+potential for intense staring during an operation.
+l Daily Occupational Exposure (long term, class 3B and 4). 30,000 s shall be used for long term 8 hour exposure durations to
+low level light where applicable.
+OD Calculation Example
+An example OD calculation for a direct 100 watt fiber laser beam. While no Videojet Technologies, INC fiber laser generally oper -
+ates at this wattage, for safety purposes we use the highest possible wattage with an additional margin added to ensure all pos -
+sible wattages are covered.
+Optical Density = Log (203922) = 5.309
+10
+Round up to an OD of 6.
+OD Level 6 Required
+All Videojet Technologies, INC employees working with lasers shall wear glasses with an OD of 6 at the
+wavelength in use.
+Nominal Hazard Zone
+Nominal Hazard Zone (NHZ) is a distance within which the irradiance of a beam is greater than the MPE. Besides being specific
+to a given wavelength and time of exposure, a different NHZ can be defined for the beam’s path to your eye ( direct viewing),
+specular reflectance, and diffuse reflectance.
+The NHZ is a practical definition; it has a specific shape around your particular laboratory apparatus. For instance, assuming
+your lab has no windows and a solid door, the NHZ will in the worst case scenario be the area (e.g. square footage) of the lab
+itself. In other words, the NHZ for you will be derived at the end of your safety calculations, and thereafter will be most useful to
+you for planning control measures in you laboratory.
+47
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Nominal Hazard Zone Example Calculation
+An example NHZ calculation for a 100 watt Fiber laser beam.
+Calculator Help
+To solve an equation with an exponent such as :
+1. Enter the base , in this example that is 1274 .
+x y
+2. Press y OR  x (depicted differently on different calculators).
+1/2
+3. Enter the exponent, in this example that is 1/2 or 0.5 . The simplified result of (1274) should
+be 35.69 out to several decimal places.
+4. Press x or * to multiply.
+5. Enter 42.3 . Your result should be 1509.8 .
+48
+Rev AA
+
+System Overview
+(7010, 7020, and 7030)
+Designed to be a complete solution for marking on beverage cans on a straight conveyor, the 7010/7020/7030 hardware com -
+ponents can be used alone or together. The hardware, in combination with CMark 4.9 operating system and TCS+ interface,
+allows for extremely fast mark times and high throughput when used with two 7340/7440 laser systems. The 7010 IP Enclosure
+protects the IP21 supply unit of the 7340/7440 laser by providing IP65 dust and water protection to withstand harsher beverage
+production environments.
+Hardware
+l 7010 IP Enclosure
+IP65 protection cabinet for the supply units of up to two 7340/7440 lasers. Uses one external cooling unit (required) to
+cool both lasers inside the cabinet.
+l 7020 Marking Head Enclosure
+Provides holder for up to two 7340/7440 CFS- M marking heads and contains height adjust for the marking head to
+product distance. Can be mounted to the top of 7030 or used alone with custom beam shields.
+l 7030 Beam Shield Tunnel
+Beam shield tunnel designed to fit many, but not all, straight conveyor beverage can marking applications. Typically used
+in conjunction with 7020 Marking Head Enclosure, which mounts on top of the 7030 beam shield.
+49
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 2- 1: 7010/7020/7030 system components (required cooling unit not shown).
+Software
+In addition to these hardware items, CMark version 4.9 or higher contains a Multi- Laser Mode in the TCS+ user interface. This fea -
+ture splits a text code between the two laser systems so that the overall mark time is decreased by half. Multi- Laser Mode (when
+used with two 7340/7440 laser systems) can support very high throughput beverage can marking because each laser only needs
+to print a portion of the code.
+Theory of Operation (Multi Laser
+Control)
+Multi Laser Mode is available through the TCS+ user interface which runs natively from the laser's CMark operating system. When
+two laser systems are used, one will be set as the Leader and the other as the Follower.
+All Job content including the Job itself, Mark Settings, and Line Setup are stored on the Leader laser. Trigger and Encoder signals
+will be wired into the Leader laser and then sent to the follower from the Leader. Essentially, the Follower laser has nothing bey -
+ond the CMark operating system installed and just prints what and when the Leader laser tells it to.
+In order to greatly decrease the amount of time it takes to make a code, the Leader laser will split the characters of the code to be
+marked into two parts. The Leader will send the vectors to be marked to the follower, but not the Job file itself.
+Characters are marked alternately by the Leader and Follower. In the following example, if a text code with the characters
+123456789 were to be marked with Multi Laser Mode, then the Leader laser would mark the characters 1, 3, 5, 7, and 9 and the
+50
+Rev AA
+
+System Overview (7010, 7020, and 7030)
+Follower laser would mark the characters 2, 4, 6 and 8. Vectors and marking order do not necessarily alternate character to char -
+acter, the system will distribute the marking in order to best optimize for speed.
+F IGURE 2- 2: Red characters would be marked by Leader and black characters would be marked by Follower laser.
+Controls for the Job content and marking control are accessed through the Leader laser only. The Multi Laser Mode setup screen
+in TCS+ allows for some adjustments of the Follower laser marking. This includes whether the Follower marking needs to be
+scaled up/down, rotated slightly, or delayed slightly to produce a code that looks as if it were marked from one laser.
+Most commonly, the TCS+ user interface would be accessed on a multi laser system using a TU430 touchscreen, connected only
+to the Leader laser, though TCS+ can also be accessed via web browser on a PC connected to the Leader laser as well.
+7010 - IP65 Enclosure Overview
+The 7010 IP Enclosure is rated IP65 with regards to dust and water intrusion. Either one or two 7340/7440 laser supply units can
+be mounted inside the 7010. The supply unit for 7340/7440 alone is IP21.
+By default, the 7010 system is configured for only one laser. If a second laser will be used, then the Extension Kit (PN: AL- 81447)
+must be added to the 7010. The kit provides a replacement panel for the rear of the 7010 enclosure and a data cable to connect
+for communication between the two lasers.
+A door on the front of the cabinet provides easy view of the keypad (s) of the installed supply units and can be opened for access
+to the key or keypad when necessary. The door must be securely closed to maintain the IP65 protection whenever interaction with
+the keypad or keyswitch is not needed.
+51
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 2- 3: 7010 front view with default single laser configuration (no laser installed).
+F IGURE 2- 4: 7010 front view with 2 lasers installed.
+Each supply unit is mounted to a sliding drawer that allows for basic maintenance and service to be performed by sliding the
+drawer out toward the back. By default, only the bottom drawer is usable. You must install the extension kit to make the upper
+drawer usable for the second laser.
+52
+Rev AA
+
+System Overview (7010, 7020, and 7030)
+F IGURE 2- 5: 7010 single laser configuration rear with bottom drawer open.
+Cooling for the 7010 IP Enclosure is provided by a single AD350 cooling unit whether one or two lasers are installed in the cab -
+inet. The cooling unit has a special part number versus the standard AD350. One of the output ports on the cooling unit is
+plugged and that plug can withstand the constant pressure created by the cooling unit. There are 115V and 230V versions of the
+cooling unit for the 7010.
+A stand for the cooling unit is included with the 7010 IP Enclosure and cooling unit. This same stand can be used to mount the
+cooling unit on the floor where it elevates the AD350 so that the cooling unit does not draw in water from the factory floor.
+Alternatively, pieces can be removed from the stand and the stand can be bolted to the top of the 7010 IP Enclosure using where
+the eyebolts are installed. The stand should not be used at full height when mounting to the top of the 7010 IP Enclosure.
+7010 – Components
+The 7010 IP Enclosure is configured for a single 7340/7440 laser, but an extension kit can be ordered to expand to use two
+lasers. No other laser types should be installed in the 7010 enclosure.
+Front of Enclosure
+The main laser, referred to as the Leader, should be installed on the bottom shelf of the enclosure. Follower laser, if present,
+should be installed on the upper shelf after replacing the back panel of upper shelf with the one contained in Extension Kit (PN:
+AL- 81447).
+53
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 2- 6: 7010 front view with position of Leader and Follower lasers shown.
+The front door of the 7010 IP Enclosure has a folding, metal handle. The door must be closed securely with the handle in the
+closed position to ensure water and dust protection. The door need only be opened to access the keyswitch and keypad of the
+installed lasers and should be kept closed at all other times.
+F IGURE 2- 7: 7010 front door with handle in correct position for operation.
+Rear of Enclosure
+The rear of the 7010 IP Enclosure contains two sections:
+l Air inlet from cooling unit and outlet
+l Rear panel of drawer (s) with connector plates and umbilical clamp
+54
+Rev AA
+
+System Overview (7010, 7020, and 7030)
+Cooling Inlet and Outlet
+The filtered air coming from the cooling unit to the 7010 must be connected correctly, or else there is danger of the lasers over -
+heating and shutting down. The inlet from the cooling unit should be connected to the right hand port on 7010 as you view the
+rear of the enclosure.
+Rear Panel of Drawer (s)
+For each laser installed in the 7010 IP Enclosure, the rear of the sliding drawer onto which the laser is installed will have two cable
+passage type connector plates and a single umbilical clamp. All cables for the laser (s) are connected through these cable glands.
+If two lasers are installed then the communications cable which connects the two lasers should also be run through the cable
+gland plates. There will be enough slack on the communications cable between the lasers to allow the drawers to open without
+disconnecting the cable.
+The default configuration only has a back panel with connectors on the lower drawer. The Extension Kit (PN: AL- 81447) includes
+a replacement rear panel for the upper drawer with cable passage plates and umbilical clamp for upper drawer.
+F IGURE 2- 8: Without the extension kit, only the lower drawer has connectors and an umbilical clamp on the 7010.
+55
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 2- 9: Lower drawer umbilical clamp and cable passage plates (extension kit installed on upper drawer).
+Cooling Unit and Stand
+The cooling unit to be used with the 7010 has a plug installed to block the smaller of the two outputs. This plug can withstand
+constant pressure. There are 115V and 230V versions of the modified cooling unit and hoses and clamps are included.
+The air intake for the cooling unit is located on the bottom so it is vitally important to keep the cooling unit off the floor so that
+liquid is not drawn into the motor. A stand for the cooling unit is included with the 7010 and can be installed in two different ori -
+entations. The complete assembled frame is only intended for use on the floor and 4 holes in bottom plate allow it to be bolted
+into the ground. The upper portion of the stand can be removed and just the lower rails used to create a stand for use on top of
+56
+Rev AA
+
+System Overview (7010, 7020, and 7030)
+the 7010 IP Enclosure. In this configuration, secure the lower stand rails to the top of the 7010 by removing the eyebolts from
+the top of the 7010 and then securing the cooling stand rail using the 4 included screws.
+Never Install Complete Cooling Stand on Top of 7010
+Only the bottom frame of the cooling stand should be used to mount the cooling unit to the top of the 7010.
+There is a tip danger when the cooling stand is used at full height on top of 7010 which could result in dam -
+age to the equipment or persons.
+F IGURE 2- 11: Cooling unit stand for use on top of 7010 IP
+F IGURE 2- 10: Cooling unit stand for use on floor.
+Enclosure.
+F IGURE 2- 12: Location of holes for mounting the cooling unit stand on top of 7010.
+57
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 2- 13: Correct installation of cooling unit and stand on F IGURE 2- 14: Incorrect installation of cooling unit and stand
+top of 7010. on top of 7010.
+7020 - Marking Head Enclosure
+Overview
+The 7020 Marking Head Enclosure contains mounting bracket for up to two CFS- M marking heads and a fork light sensor used
+to trigger print when a beverage can passes between the forks of the sensor. The 7020 has two access doors, one on the front and
+one on the back, with laser safety- rated glass and a solid metal sheet to cover the glass. These doors can be opened to access the
+marking heads for maintenance. Both doors have safety switches to stop marking process when opened in order to protect the
+user.
+58
+Rev AA
+
+System Overview (7010, 7020, and 7030)
+F IGURE 2- 15: 7020 Marking Head Enclosure with rear door open.
+The 7020 Marking Head Enclosure allows for two marking heads to be installed and adjusted together using required mounting
+head fixtures. The special fixtures allow for very critical adjustments in the working distance of the marking heads independently
+during installation so that together they function as a system for the user.
+59
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 2- 16: 7020 with rear door open to show 2 marking heads installed.
+The 7020 Marking Head Enclosure can be used in combination with the 7030 Beam Shield Tunnel or on a custom- designed
+beam shield.
+An optional bracket can be attached to the 7020 Marking Head Enclosure for mounting the TU430 Touch Handheld (AL-
+SP80863: Kit, Bracket, TU4X0, Safety Enclosure). If the location of the TU430 would be too high if mounted on 7020, an altern -
+ative mount for the 7030 Beam Shield Tunnel is available for mounting the TU430 on the support beams of the 7030 (AL-
+SP81565: Kit, Bracket, TU4X0, Laser Beam Tunnel). These are different part numbers and mounts.
+60
+Rev AA
+
+System Overview (7010, 7020, and 7030)
+F IGURE 2- 17: TU430 bracket locations shown on 7020 and 7030.
+7020 – Components
+The following are the main components of the 7020 Marking Head Enclosure:
+l Access doors
+l Safety switches
+l Mounting head plate and mounting head fixtures
+l Z- axis height adjustment
+l Fork light sensor and mounting bracket
+61
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Access Doors
+There are two doors on the 7020: one on each side of the conveyor so that the marking heads can be easily accessed. The access
+doors have a slotted latch for secure closure. The access doors have laser safety glass so that the marking heads can be viewed
+when necessary, but for long- term usage a metal plate (included) should be put into place after installation and only removed
+when mechanical adjustment of the marking heads is necessary.
+F IGURE 2- 18: 7020 with metal interior plates installed to cover glass.
+62
+Rev AA
+
+System Overview (7010, 7020, and 7030)
+F IGURE 2- 19: 7020 with rear door open.
+Safety Switches
+Each of the access doors has two safety switches when two lasers are present in the system. When you open the access door you
+will note that one is installed with cable facing up and one with cable facing down. If only one laser is present in the system then
+only a single switch will be installed on each door. The safety systems on each laser are independent from each other and there -
+fore require two sets of switches for two lasers.
+One safety switch on each door, along with a switch on the door of the 7030 Beam Shield Tunnel (if 7030 present) are wired in
+series to form a daisy chain. The daisy chain begins at the access door of the 7030 Beam Shield Tunnel and the cable from this
+switch is routed up into the 7020 area. Within the 7020 Marking Head Enclosure Y- connectors from the door switch on the front
+and back of the enclosure are connected with the cable from the 7030 door ending in a single cable that is routed up through
+one of the cable feed- throughs on the top of the 7020 and then connected at the laser. This is repeated for the second laser. For
+more information on the safety system technical specifications and installation see "Wiring Safety Switches with 7020/7030" on
+page 96 .
+63
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 2- 20: Simplified drawing of safety switches on a dual laser system.
+Z- Axis Height Adjustment
+Z- axis height adjustment is performed via a hand crank, allowing one to move the marking heads mounted inside up and down
+together in order to accommodate changes in product size. A counter on the Z- axis can be used to repeatedly set heads to the cor -
+rect height for products of varying sizes. The marking heads have 125 mm of travel distance on the height adjustment. There is
+also +/- 25 mm (each direction) lateral adjustment of marking heads possible inside 7020 (50 mm total) in case the conveyor is
+not directly in center of beam shield tunnel.
+F IGURE 2- 21: Height and lateral adjustment components labeled.
+64
+Rev AA
+
+System Overview (7010, 7020, and 7030)
+F IGURE 2- 22: Height adjustment travel limits.
+Mounting Head Plate and Fixtures
+One or two marking heads can be mounted inside the 7020 Marking Head Enclosure using special mounting blocks and a special
+mounting plate. The combination of the mounting block (1 per head) and mounting plate allow for very precise alignment at
+installation of the heads. The mounting plate with marking heads attached is mounted to the Z- axis which allows the heads to be
+moved up and down together.
+F IGURE 2- 23: Drawing of mounting block.
+65
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 2- 24: Interior of marking heads inside enclosure.
+When using two marking heads within the system, it is critically important that the marking heads are installed and adjusted prop -
+erly. Each 7340/7440 marking head has a slightly different working distance. The mounting blocks and plate allow for each
+head to be mechanically adjusted to compensate for this difference.
+For details on installation and alignment of marking heads into the 7020 see "Install Heads in 7020 Enclosure" on page 104 .
+Fork Light Sensor
+The Fork Light Sensor is a type of product detect that can be used to trigger marking in beverage can marking. Cans on a con -
+veyor pass in between two arms of the sensor and when the beam between the forks is interrupted by a can the sensor sends a
+trigger signal to the laser. The preferred location for the Fork Light Sensor is such that it senses on the narrow/tapered part of the
+can so that there is a detectable gap between cans.
+F IGURE 2- 25: Fork sensor and bracket.
+66
+Rev AA
+
+System Overview (7010, 7020, and 7030)
+The mounting bracket for the Fork Light Sensor is mounted to the marking head mounting plate by two screws. These screws can
+be loosened slightly to adjust the sensor's vertical position. The Z- axis moves the assembly of marking heads and Fork Light
+Sensor up and down together.
+7030 – Beam Shield Tunnel Overview
+The 7030 Beam Shield Tunnel is intended to be used with the 7020 Marking Head Enclosure. Together these two pieces form a
+safe environment for marking on beverage cans. The safety rating for the 7030, with proper installation, can be either a Per -
+formance Level D or Laser Class 1. See "Safety Specifications" on the next page .
+There are two versions of the 7030 available: 300 mm or 600 mm wide. There are removable plates so that fume extraction or
+camera system can be added. Tamper protection guards at the entrance and exit of the beam shield tunnel protect from beam
+exposure when installed and adjusted correctly.
+The 7030 Beam Shield Tunnel is made of stainless steel and has an overall length of 2 meters. There is an access door that can be
+mounted on the either left or right side of the center section of the tunnel. This access door can be used to clear jammed products
+or for additional access to the marking heads. The access door has safety switches that, when properly installed, are connected to
+the safety system of both lasers.
+F IGURE 2- 26: 300 mm wide version of 7030 beam shield tunnel.
+67
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 2- 27: 600 mm wide version of 7030 beam shield tunnel.
+Specifications for Conveyor
+The Beam Shield Tunnel is intended to fit many, but not all, conveyor systems located after the filler in a beverage canning facil -
+ity.
+The 7030 fits most straight conveyors with the following attributes:
+l Conveyor heights: 0.7 meter – 1.2 meter from floor to bottom of conveyor
+l Conveyor widths: Less than 300 mm (300 mm width version) or less than 600 mm (600 mm width version)
+l Spacing between legs of conveyor: Greater than 1.2 meters
+l Can heights: 115 mm – 170 mm tall
+Safety Specifications
+Performance Level D is achieved when the 7020 (Safety Enclosure) is used with the 7030 (Beam Shield) and correctly connected
+to the laser (s) utilizing components in the AL- 81883 Safety Lock Kit. For dual laser systems, each laser must have its own AL-
+81883 Safety Lock kit.
+7340/7440 laser systems must be ordered with FASS installed to meet Performance Level D rating. Level D without FASS will
+require an additional reset switch to be installed and will increase recovery time after each time door is opened.
+For Laser Class 1 certification, Emergency Circuit (Interlock) is required for each laser. If Class 1 is desired, then each 7340/7440
+laser must have a manual reset switch wired to the laser in addition to the Safety Lock Kit. Lasers must have FASS installed for
+machine integration for Laser Class 1.
+The access door on the 7030 and two access doors on the 7020 each are intended to have door switches (3 switches total)
+installed in series per each laser. There is a Y connector on each of the switches to allow for the switches to be connected in series
+effectively forming a daisy chain.
+68
+Rev AA
+
+System Overview (7010, 7020, and 7030)
+7030 – Components
+The 7030 Beam Shield Tunnel has the same components for both the 300 mm and 600 mm widths. The only differences are the
+physical dimensions of the plates on the top, bottom, and tamper protection shields at the entry and exit.
+The main features of the beam shield tunnel are:
+l Adjustable mounting feet
+l Adjustable height legs
+l Access door for service, maintenance, or to clear jammed products. The door can be installed on either side of the tunnel,
+but only one side may have a door installed.
+l Opening for 7020 Marking Head Enclosure to be mounted
+l Plate or Port for Fume Extractor: port must be ordered separately. Plate is in place by default.
+l Removable plates to allow for mounting a camera system or other external equipment.
+l The Tamper Protection Shields are comprised of 4 sliding metal sheets and a curtain that allow for only a small gap around
+product such that no beam escapes. This requires the installer to cut a curtain to size upon installation. When cut correctly,
+the top metal sheet can be raised to allow for a taller can size.
+69
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 2- 28: 7030 center section with access door and optional accessories labeled.
+70
+Rev AA
+
+Installation
+This chapter describes the three main phases of installation of a dual laser system when using the 7010 IP Enclosure, 7020 Mark -
+ing Head Enclosure and 7030 Beam Shield Tunnel. Full installation instructions should be downloaded from SharePoint before
+arriving at the installation.
+In this chapter the following parts of installation are included:
+l Installing two lasers into 7010 IP Enclosure
+l Suggested wiring for dual lasers used in 7010 IP Enclosure
+l Safety system wiring for single or dual laser systems used with 7020 Marking Head Enclosure and 7030 Beam Shield Tun -
+nel
+l Installation and adjustment of two marking heads into 7020 Marking Head Enclosure
+l Multi Laser Software Setup for dual laser usage
+Not included are explicit instructions on assembling the 7020 Marking Head Enclosure or the 7030 Beam Shield Tunnel. Down -
+load the service instructions from SharePoint for assembly instructions.
+70x0 Enclosure Install Checklist for
+7x40 Lasers
+There are several items that are required for installing 7x40 lasers into the 7010 IP Enclosure and integrating the lasers with the
+7020 Marking Head Enclosure and 7030 Beam Shield Tunnel. Some items have part numbers and are available through Videojet
+while others may need to be sourced locally from a non- Videojet supplier.
+The following lists of actions and parts assumes basic installation using the 7010, 7020, and 7030.
+l Actions Before arriving at customer site...
+Download installation instructions from SharePoint or contact Videojet Technical Support for the packet. Paper
+instructions are not included with 7010/7020/7030.
+Bring minimum 3 wire cable at least 1.5 meters long to share encoder and trigger signals when two lasers will
+be installed. No Videojet part number. Recommended 24 gauge, stranded wire.
+Bring one reset switch for each laser if Performance Level E/Class 1 is required. See specifications and examples
+below.
+Bring sharp scissors for cutting beam shield curtain on 7030.
+Read through below checklist to determine if non- Videojet parts will be required to complete installation.
+71
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+l 7x40 Laser (s) Configured with...
+Cable Passage connector plate
+TU430 connector
+At least one RJ45 connector (communications plate)
+CFS- M marking head (this is the only head that can be used with 7020/7030)
+10 meter umbilical unless 7010 will be directly next to center section of beam shield
+FASS board (machine integration) installed
+CMark 4.9 or newer installed
+SAR software (Ultimate, etc.) or MIC board (EtherNet/IP or PROFINET) - if application requires this.
+l 7010 IP Enclosure must have the following to function...
+7010 IP65 cabinet
+AD350 Cooling unit (blower)
+Plug to block smaller outlet on cooling unit
+Hoses to connect cooling unit to 7010
+Cooling unit stand
+l If installing two lasers in the 7010, you must add...
+Extension kit (includes drawer rear panel and data cable) PN: AL- 81447
+Minimum 3 wire cable at least 1.5 meters long to allow Leader laser to send trigger and encoder signals to Fol -
+lower. You must source this locally , no Videojet part number. Recommended: 24 gauge stranded wire.
+l In addition to the above, the 7020 Marking Head Enclosure requires...
+Mounting blocks for each head (AL- 81470)
+Fork Light Sensor (if beverage can application)
+Safety Lock Kit: AL- 81883 - one for each laser
+Typical door access safety switches are tied to the shutterlock inputs providing Level D safety performance
+level. If Level E is desired then you will also need a reset switch (mushroom button type) for each laser. No
+Videojet part number for reset switch. You must source this locally . See "Emergency Stop Configuration" on
+page 101 for example parts that could be used for Performance Level E/Class1 configuration.
+l Optional extra items for 7020/7030...
+TU430 bracket. Two versions are available - one for mounting to 7020 and another for mounting to 7030.
+Fume extractor and hoses (AD1000, Oracle Advantage or customer supplied extractor)
+Fume extractor adapter for 7030
+72
+Rev AA
+
+Installation
+Measure Power Output
+As part of troubleshooting bad print quality or potential broken components, it may be necessary to check the power out of the
+marking unit. The easiest place to take the power measurement is directly at the end of the marking head. If low or no power is
+observed at the output of the marking unit, it may then become necessary to take off the marking unit and measure power dir -
+ectly out of the collimator to determine if low power is due to laser source or due to components in marking unit blocking the
+laser beam.
+Equipment Needed
+l This procedure requires special equipment. Only use the AL- SP67438 Power meter (Laser Point Power Meter). Do not use
+the Synrad Power Wizard Power Meter . The Power Wizard is not meant for the wavelength emitted by fiber lasers and
+can give inaccurate readings.
+F IGURE 3- 1: Older version of power meter. F IGURE 3- 2: Newer version of power meter.
+l Laser card stock (PN: SAR20049004)
+If laser card stock is unavailable, you may use a piece of corrugated cardboard in place of the card stock.
+l Thermo- reactive paper (such as receipt paper) - sourced from office supply stores.
+l Protective eye wear appropriate for the wavelength to be tested.
+VJ
+Technology Wavelengths Required Standard
+Equipment
+1.06 um – 1.07 um US 1050- 1400 L7 (D) L8 (IR) 9300- 10600 L5 AL- SP69749
+(D0) with an OD of 6
+Fiber
+EU 1050- 1400 L7 (D) L8 (IR) 9300- 10600 L5 (D)
+73
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Safety Preparation
+Before proceeding with the power measurement, read, understand, and implement the following safety precautions.
+Warning - Serious Personal Injury
+Direct or diffuse laser radiation can inflict severe bodily damage , including, but not limited to, permanent eye
+damage or blindness, and severe burns to human or animal tissue.  Always wear the appropriate eye pro -
+tection when in the same area as an operating laser. Do not allow a direct or reflected beam to contact a per -
+son .
+Diligence and awareness are essential to prevent the beam from traveling beyond the intended work area.
+Warning - Serious Personal Injury
+When performing a power measurement, it is the responsibility of the person performing the power meas -
+urement to  enclose and protect the surrounding area and personnel from the laser beam and, when possible,
+perform the power measurement within the laser enclosure / beam shield.
+Warning - Serious Personal Injury
+When performing a power measurement, the use of a Carbon Block is required , placed behind the power
+meter to absorb the laser energy when misalignments occur.
+Create a Power Check Job in TCS+
+1. Connect to TCS+ as a User with access rights to create a Job and edit Line Setup.
+2. Create a new Mark Set by pressing the Main Menu button in Home screen and selecting Mark Settings .
+3. Press the Create button and name the Mark Set "Power Check".
+74
+Rev AA
+
+Installation
+4. Set the values as seen in the following figure:
+Mark Setting Value
+Marking Speed 1 mm/s
+Mark Delay 0 microseconds
+Stroke Delay 0 microseconds
+Jump Speed 10,000 mm/s
+Jump Delay 0 microseconds
+Marking Intensity 20%
+On Delay 0 microseconds
+Off Delay 0 microseconds
+Frequency 30,000 Hz
+5. Press Save and then Close .
+6. Create a new job called Power Check .
+7. Add a 2 mm x 2 mm square in the center of the marking field by pressing Add and then select Graphic from the dropdown
+selector.
+8. Click in the middle of the mark field to insert the graphic.
+9. Select Rectangle as the type and adjust the height and width to 2 mm by 2 mm.
+75
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+10. Assign the Mark Setting Power Check that you created previously.
+11. Save the job and press Close .
+12. When prompted "Do you want to Activate the Job?" press Yes .
+Prepare the Laser Unit, Meter and Area for the Power Meas -
+urement
+Air Knife Effect - Measurement Distance
+The positive air that is used to cool the marking unit and which acts as an air knife at the marking unit output
+can contribute to erroneous readings by cooling the power the power meter sensor. The recommended dis -
+tance from power meter sensor is as follows:
+Marking Head Distance from Power Meter Sensor
+CFS/CFT - Small 350mm
+CFS/CFT - Medium 400mm
+CFS/CFT - Large 450mm
+76
+Rev AA
+
+Installation
+Eye and Skin Hazard
+Direct or diffuse laser radiation can inflict severe bodily damage, including, but not limited to, permanent eye
+damage or blindness and severe burns to human or animal tissue. Always wear appropriate eye protection
+when in the same area as an operating laser. Do not allow a direct or reflected beam to contact a person.
+Always be aware of the laser’s beam path when using a laser power meter and always use a beam block to pre -
+vent the beam from traveling beyond the intended work area.
+1. Ensure that all personnel in the area are wearing the appropriate protective eye wear.
+2. Ensure the exposed laser beam will remain enclosed during the test.
+l If the laser application already uses an enclosure, perform the test with the laser head inside its enclosure.
+l If the laser is not enclosed already in the application, place non flammable materials around the laser head to
+enclose it during the test. Use materials appropriate for blocking the wavelength in use. See the training materials
+for this model for details on appropriate enclosure materials by wavelength.
+3. Place the carbon block below the marking head in the beam path, preferably horizontally below the downward aimed
+marking head. If the application is a straight shot, use prop the carbon block in front of the beam path.
+4. Tape a piece of laser card stock (PN: SAR20049004) to the carbon block.
+5. Position the marking head such that the card is  not  at the working focal distance - preferably the distance should be a
+quarter to a third of the actual working focal distance.
+6. Plug in the monitor unit and the fan.
+7. Power on the device
+8. Select  Wavelength  from the bottom box and ensure it is set to 1064 nm.
+9. Set  Unit  to Watts. The display should show zero Watts at this time.
+77
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+If using an older power meter, ensure the display says  YAG .
+78
+Rev AA
+
+Installation
+Test Beam Position
+1. Create a Line Setup called Stationary if one does not already exist.
+2. Set the Line Movement to Static in Position and Orientation tab.
+3. Set Trigger to Internal Once .
+4. Save the Line Setup and then Activate .
+5. Position the target of the power meter.
+Ensure the marking unit distance to the target on power meter is set out of focus. If measurement is take at the correct
+focal distance then damage to power meter may occur.
+Air Knife Effect - Measurement Distance
+The positive air that is used to cool the marking unit and which acts as an air knife at the marking unit
+output can contribute to erroneous readings by cooling the power the power meter sensor. The recom -
+mended distance from power meter sensor is as follows:
+Marking Head Distance from Power Meter Sensor
+CFS/CFT - Small 350mm
+CFS/CFT - Medium 400mm
+CFS/CFT - Large 450mm
+6. Ensure the Power Check job and Stationary Line Setup are both activated. Ensure Intensity it set to 20%.
+7. Tape or place a piece of thermal paper, such as heat sensitive receipt paper, over the target area and surroundings of
+power meter target. Ensure Intensity setting is at 20%. In this and the following two steps you want to ensure beam is going
+to hit target and you do not want full power for this.
+8. Use a carbon block behind the target of the power meter to absorb the beam if missing the target.
+9. Turn the keyswitch to the Armed position.
+10. Press Start to start the beam. You only want the laser to fire for a brief moment to check that the laser beam is hitting in
+the correct position on target. If not, move target portion of power meter or laser and repeat this step.
+11. Once beam is hitting correct position remove the thermal paper.
+79
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Create Power Check Line Setup
+1. Create a Line Setup called Power Check.
+2. Set the Line Movement to Static in Position and Orientation tab.
+3. Set Trigger to Internal Continuous and then set Blocking to 6700 milliseconds.
+4. Save the Line Setup and then Activate .
+5. Select and Activate the Power Check job.
+80
+Rev AA
+
+Installation
+Setup Power Meter
+1. Plug in the monitor unit and the fan.
+2. Power on the power meter device
+3. Select Wavelength from the bottom box and ensure it is set to 1064 nm.
+4. Set Unit to Watts. The display should show zero Watts at this time.
+81
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+If using an older power meter, ensure the display says YAG .
+Measure Power at the Marking Unit Output
+1. Ensure Power Check job and Power Check Line Setup are both Activated.
+2. Place a new piece of laser card stock over the power meter target and test fire once more to ensure the target is properly
+placed, adjust positioning as needed.
+3. Increase Intensity setting to 100% using quick toolbar at bottom of Home screen.
+4. Ensure the power meter is on and set to the correct Wavelength measurement.
+5. Start marking and observe the measurement on power meter display.
+l Stop the marking if smoke is observed. This typically indicates that you are missing the target and burning the
+paint off of the area surrounding the target.
+l Let marking run for at least 30 seconds after the start of marking before observing Wattage measurement.
+6. Press Stop on the TCS+ Home page to stop the marking.
+7. Compare your results to the expected values for the 7340/7440 at two points in Table 3- 1 below .
+Table 3- 1: Expected Power Output Measurement - Watts
+Marking Unit Output (Minimum Directly out of Collimator
+Model
+Acceptable) (Expected)
+7340 17.6 20.5
+7440 26.4 30.5
+Measured with 30,000 Hz Pulse Frequency for 7340 and 7440 models
+82
+Rev AA
+
+Installation
+Measuring Power at the Collimator
+If the power at the marking unit output is below the values in Table 3- 1 on the previous page , then you must measure the output
+directly out of the collimator.
+Possible Equipment Damage
+l Wear powder- free gloves during this procedure.
+l Ensure the marking unit is kept as clean as possible during the procedure. Many of the components inside the
+marking unit are not accessible and cannot be cleaned!
+l Best to have a second person to help with this procedure so that they can start/stop the marking while you
+hold the collimator during measurement.
+1. Remove the marking unit cover.
+2. Loosen the screws for collimator fixture and remove the fixture.
+3. Slide the collimator slightly upward and out of the marking unit galvo block.
+83
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+4. Ensure the collimator is aimed directly at the target.
+Possible Equipment Damage
+Ensure galvo block/marking unit/cables are not in the beam path !
+5. Start the Power Check job marking.
+Stop the marking if smoke is observed. This typically indicates that you are missing the target and burning the paint
+off of the area surrounding the target.
+6. Press Stop marking button after the measurement is taken.
+84
+Rev AA
+
+Installation
+Troubleshooting
+l If power output from marking unit output was low but straight out of collimator the power is acceptable, replace the mark -
+ing unit. Assumption here is that something is blocking beam within the marking unit such as lens or mirror that has come
+loose.
+l If power output from marking unit was low and power straight out of collimator is zero or very low:
+1. Ensure Mark Settings were correct (Intensity 100% and Frequency 30,000 Hz).
+2. If the mark settings where correct, replace the laser source.
+Perform the Leakage Tests
+There are two different leakage tests to perform.
+l High power – requires the use of a power meter.
+l Low power – requires the use of thermo- reactive paper
+Disable Leakage Protection
+1. Login into the Laser Web Interface.
+2. Select Laser | Config .
+3. Click to toggle Leakage Protection Enabled to OFF .
+4. Click Save to save your changes.
+Perform the High Power Test
+1. Ensure the key switch is in the open position.
+2. Leave the power meter in position as it was for the power test.
+3. Close the key switch and start printing a template which requires a trigger signal for printing but do not trigger the laser .
+4. While system is Waiting for Trigger mode, monitor the power meter for the duration (1 minute).
+5. Allow the system to idle 1 additional minute waiting for a Trigger before continuing on to another test.
+6. Stop marking.
+7. Open the key switch to disable marking.
+85
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Perform the Low Power Test
+1. Ensure the key switch is in the open position.
+2. Leave the power meter in position as it was for the power test.
+3. Place a piece of thermo- reactive paper on top of the power meter.
+4. Close the key switch and start printing a template which requires a trigger signal but do not trigger the laser .
+5. For up to 1 minute while system is in Waiting for Trigger mode, check for burn marks or discoloration on the thermo- react -
+ive paper.
+6. Stop marking.
+7. Open the key switch to disable marking.
+Leakage Test Results and Next Actions
+Test Pass Fail Corrective Action if Failed
+High 0 Watts output during test  > 0 Watts output during test Test and replace the ACC- 3, SC Chameleon, or MC
+Power Chameleon and LIC board
+Low No marks or burning on thermo- Discoloration, marks, or Test and replace the laser source.
+Power reactive paper burns on paper
+Test Completion Safety Requirement
+When the power measurement is complete, delete the power check parameter set or zero the marking intensity.
+ Ensure Power Measurement Template is No Longer Selected
+Before leaving the laser ensure that Power Measurement template is not the active template in Laser Operation
+tab!! Leaving Power Measurement selected will cause laser to automatically fire the laser, endangering
+unaware users.
+86
+Rev AA
+
+Installation
+Installing Supply Units in a 7010
+The 7010 IP65 Enclosure, along with required AD350 cooling unit, provide a dust and water resistant enclosure for the supply
+unit of either one or two 7440 lasers. The 7010 is configured by default for a single 7440 laser, but the optional Extension Kit AL-
+81447 provides the necessary hardware for connection of a second laser.
+The procedure shown here is a generalized overview of installation of the lasers themselves into the IP65 Enclosure. As not all
+installations will be identical, instructions for wiring are provided in a separate instruction.
+l For Encoder wiring , see "Wiring Accessories" on page 92 .
+l For Product Detect wiring , see "Wiring Diagram Encoder & Product Detect" on page 94 .
+l For Safety Switches wiring , see "Wiring Safety Switches with 7020/7030" on page 96 .
+l For Mechanical adjustment of Marking Heads in 7020, see "Install Heads in 7020 Enclosure" on page 104 .
+l For Multi- Laser Configuration setup , see "Multi Laser Software Setup" on page 116 .
+Detailed Instructions Available for Download
+A more detailed version of instructions for installing one or two lasers into the 7010 IP65 Enclosure are avail -
+able for download from the VTI Support & Technology SharePopint site at Service Resources/Service Con -
+tent/Laser/7010 7020 7030 . No paper copy of instructions are included with the 7010/7020/7030 equipment.
+Supply Unit Installation Procedure
+Generalized steps for installing laser (s) are:
+Designate Higher Power Laser as Follower
+Each 7440 laser comes with a specification sheet that details the measured power output as measured by
+Videojet manufacturing. In cases where two laser supply units will be installed into the 7010 IP Enclosure, the
+laser with the higher stated power output should be used as the Follower . This allows the limiting factor
+on power to be the Leader laser, the one with lower power), because it is much easier to see clearly what the
+Power (Intensity) setting in the software is directly. Having the Follower as the more powerful laser also allows
+for offset from the Leader to be in either the positive or negative direction.
+1. Remove the 6 screws toward the outside edges of the bottom drawer of the enclosure and pull the drawer outward until
+it locks.
+87
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+2. Remove the 4 screws with washers on the backplate of the drawer. The backplate should now be detached from the
+drawer.
+F IGURE 3- 3: Red screws fasten drawer closed and orange screws fasten the backplate to the drawer.
+3. Remove the two cable passage plates from the backplate by removing the four screws holding the frame against back -
+plate.
+4. Remove the umbilical grommet from the center of the backplate.
+F IGURE 3- 4: Cable passage plates and umbilical grommet removed from backplate of 7010.
+88
+Rev AA
+
+Installation
+5. Insert the 7440 laser supply unit into the drawer (the cover of the laser should be in place to prevent bending of the sup -
+ply unit cabinet) with the keypad toward front, glass door. Ensure the laser is pushed all the way forward and to the right
+on the drawer bottom to ensure enough area is available for connectors between the rear of the supply unit and drawer
+backplate.
+6. Disassemble the umbilical grommet.
+7. Insert the marking head through nut with cutouts/recesses facing outwards, away from the supply unit.
+8. Pull the marking head and umbilical through the backplate.
+9. Mount the backplate to drawer using the 4 screws with washers (removed earlier). After mounting the backplate, close
+the drawer by pushing it all the way forward.
+89
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+10. Assemble the umbilical grommet around umbilical by putting rubber grommet around the umbilical and then slightly
+tightening clamping screws of outer grommet tube.
+11. Push grommet tube into hole in center of backplate and tighten locking nut on inside of backplate.
+12. Tighten grommet tube fixing screws securely.
+90
+Rev AA
+
+Installation
+13. Open cable passage frame for left side of backplate by removing three screws on top of frame and slide out blocks for
+use.
+14. Feed through any cables needed for connection to the Leader laser. This can include cables for the encoder, product
+detector, cable for sharing encoder pulses and trigger signals (if a dual laser setup), power cord, TU430 cable, and any
+other additional cables required for connection of Leader/primary laser).
+15. If a data cable (for dual laser connection) or any other cables still require feed through, use the cable passage on the
+right side of the backplate:
+15.1. Open cable passage frame for right side of backplate by removing three screws on top of frame and slide out
+blocks for use.
+15.2. Route the data cable for dual laser connection (part of extension kit) through this cable passage plate. Also, any
+additional cable that should be connected to the RJ45 port (s) on laser communications connector plate should be
+routed on this side.
+Leave enough slack inside the cabinet to reach the necessary ports inside the supply unit.
+16. Mount the cable passage plates to the drawer backplate.
+91
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Installing a Second Laser Supply Unit
+If a second laser is to be installed, Extension Kit AL- 81447 includes a backplate that facilitates this in the top drawer. This will
+replace the upper drawer backplate that was included on the 7010.
+1. Remove the blank backplate on the upper drawer rear by removing 6 outer screws and the 4 fixing screws and washers
+that hold the backplate to the drawer. Keep the screws, but set aside the blank backplate as the new plate from the Exten -
+sion Kit will be used instead.
+2. Follow the same steps as were done for the bottom drawer to install the second supply unit to the top drawer.
+l There will be fewer cables running into the top drawer as the bottom supply unit is the Leader laser and will have
+all connections made there.
+l The top laser will be the Follower laser and will have only safety switches (each laser has independent safety sys -
+tem), cable with signals shared by the Leader coming into the Follower (encoder tracks and trigger signal), and
+required data cable included in the Extension Kit.
+Wiring Accessories
+The following describes recommendations for wiring accessories into a dual laser system. This does not cover all possible
+accessories or combinations of accessories. In a dual laser system using Multi Laser Mode, all accessories will be wired to the
+Leader laser in the same way a single laser system would be configured.
+Encoder and Product Detect
+The following additional signals must be connected from X25 on Leader laser to X25 on Follower laser via a locally sourced
+cable.
+l Both encoder tracks
+l Trigger signal
+l Encoder Index (optional)
+See "Wiring Diagram Encoder & Product Detect" on page 94 for additional detail. The recommended wire gauge for cables to cre -
+ate a daisy chain from the Leader to the Follower is 24 gauge, stranded wire.
+Disable Trigger/Encoder Detached Errors on Follower
+The Follower laser must also have the Laser Unit Settings |  Laser Configuration | Disable Trigger/Encoder
+Detached Errors toggled ON in order to avoid errors. Without this setting enabled, the Follower laser would
+notice that there is no drain on the 24V outputs on X25 (dedicated to the Product Detect and Encoder) and
+would assume these devices were missing.
+92
+Rev AA
+
+Installation
+Customer Interface Voltage
+l If voltage for the Customer Interface will be supplied by the customer, then ensure that voltage and ground are provided
+to both lasers from the same power supply .
+l The Connection on each Chameleon board should be at X28 pin 7 for Voltage (+12 to +24V) and X 28 pin 8 for Ground.
+l Ensure that the jumper configuration shown in Figure 3- 5 below is used if the customer's voltage and ground are applied
+to the lasers on X28.
+F IGURE 3- 5: Jumpers across pins 2- 3 on both X19 and X20 for External Voltage
+EtherNet/IP or PROFINET
+It is only necessary to install, configure, and connect the MIC board in the Leader laser. A MIC board can also be installed into
+the Follower, but it should not be enabled and connected unless the Leader laser fails and you reconfigure the Follower to operate
+alone to mitigate downtime. In this case, the MIC in the Follower should then be enabled and given the same IP address as
+Leader MIC board had used so that no action is needed on the customer PLC.
+Videojet Remote Service (VRS)
+VRS can be installed and activated on both lasers, but only the Leader laser in a multi laser configuration will show accurate Job,
+Mark Setting, and Line Setup information. The Follower laser will have accurate error information for that individual laser as well
+as software and hardware version information, temperatures, etc. There is therefore value in connecting VRS for the Follower as
+the Leader laser may not show detailed error information for the Follower.
+93
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Wiring Diagram Encoder & Product
+Detect
+The diagram in Figure 3- 6 on the facing page shows a dual laser system with encoder and product detect signals coming directly
+into Leader laser. A locally sourced cable brings only encoder pulses and the trigger signal to the Follower laser. Colors may vary
+based on the encoder and product detector used. An encoder Index Wire may not be present on all encoders.
+94
+Rev AA
+
+Installation
+F IGURE 3- 6: Wiring diagram of a dual laser system with incoming encoder and product detect signals.
+95
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Wiring Safety Switches with
+7020/7030
+Each laser unit in a two laser system has an independent daisy chain of door switches from the access doors to the individual
+laser system. This will result in each door of the 7020 Marking Head Enclosure and 7030 Beam Shield Tunnel having two door
+switches on each door: one for the Leader laser and one for the Follower laser.
+Pre- Installation Performance Level Considerations
+The following considerations must be met in order to meet Performance Level D or Performance Level E standards in a dual laser
+configuration used with the 7020 and 7030:
+l Each laser must have a CPD3 plus FASS board installed. This is an upgrade from standard model with SPM board, so
+ensure ordering of laser is correct.
+l Each laser must have a Safety Lock Kit AL- 81883 for connection
+l If Performance Level E is required, then two manual reset buttons for the Interlock must be sourced locally.
+l One reset button for each laser is required.
+l These switches must be normally open.
+l Mushroom button- type switch is preferred.
+96
+Rev AA
+
+Installation
+Overview - Shutterlock vs Interlock
+The AL- 81833 Safety Lock Kit contains three switches and Y- connectors to make installation of the daisy chain of switches
+simple. The only place where considerations are required is at the termination at the laser system.
+Wiring as a Door Circuit (Shutterlock) when a FASS is installed will meet Performance Level D standards and have the fol -
+lowing behavior:
+l When any connected access door of the 7020 or 7030 is opened, the laser system will close the shutter but the laser
+source will still be energized.
+l The customer will benefit from quick recovery after access door is closed.
+l The customer still has to Start marking again, but there is no delay.
+Wiring as an Emergency Circuit (Interlock) when a FASS is installed will meet Performance Level E standards and have the fol -
+lowing behavior:
+l When any connected access door of the 7020 or 7030 is opened, the laser system will close the shutter and the beam
+source is de- energized.
+l The customer must press the manual reset button after the access door is closed.
+l The Interlock is closed again on the trailing edge of the reset signal.
+l There will be a 5- 10 second delay as the beam source is re- engergized.
+l The customer must Start marking again.
+Connections for a Door Circuit (Shutterlock)
+The wire colors shown in Table 3- 2 below are based on switches in the AL- 81833 Safety Lock Kit.
+For connection of door switches at the laser with Door Circuit (Shutterlock) behavior, connect as shown in Table 3- 2 below on X9
+of CPD3 board:
+Table 3- 2: X9 Connections for Door Circuit (Shutterlock)
+X9 Pin Designation Wire color from switch*
+5 24V Int Out (Shutterlock 1 Out) Blue
+7 24V Int Out (Shutterlock 2 Out) Brown
+14 Door Loop In 1 (Shutterlock 1 In) Black
+16 Door Loop In 2 (Shutterlock 2 In) White
+*Colors for 81883 Safety Lock Kit only
+97
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Connections for Emergency Circuit (Interlock)
+Wire colors shown in Table 3- 3 below are based on switches in the AL- 81833 Safety Lock Kit.
+For connection of door switches at the laser with Emergency Circuit (Interlock) behavior, connect as shown in Table 3- 3 below on
+X9 of CPD3 board:
+Table 3- 3: X9 Connections for Emergency Circuit (Interlock)
+X9 Pin Designation Wire color from switch*
+1 24V Int Out (Reset Switch Out) - - -
+15 Emergency 2 In White
+17 Emergency 1 In Black
+19 Emergency 2 Out (24V) Brown
+21 Emergency 1 Out (24V) Blue
+23 Emergency Reset In - - -
+*Colors for 81883 Safety Lock Kit only
+98
+Rev AA
+
+Installation
+Wiring Diagram Safety
+The following shows the wiring in a dual laser system with 7020 Marking Head Enclosure and 7030 Beam Shield Tunnel. Both
+laser systems must have a FASS board installed to meet Performance Level D rating. If Performance Level E is desired then see
+"Wiring Safety Switches with 7020/7030" on page 96 for proper wire connection locations.
+99
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 3- 7: Wiring diagram for Performance Level D with both Leader and Follower lasers shown
+100
+Rev AA
+
+Installation
+Emergency Stop Configuration
+In addition to the connection of magnetic door switches on the 7020 Marking Head Enclosure and 7030 Beam Shield Tunnel, an
+emergency stop and reset switch can be added to increase performance level rating. Videojet does not sell an emergency stop
+switch nor a reset button, so these must be sourced externally.
+Additionally, the reset button described below can also be used without emergency stop as a manual reset when the door
+switches are wired for Interlock behavior instead of Shutterlock.
+Emergency Stop Suggested Parts
+The parts listed in Table 3- 4 below are only an example.
+Table 3- 4: Emergency Stop Example Parts List
+Quantity Description Manufacturer Item Number Application
+1 Mounting Adapter Eaton M22- A Reset Emergency
+1 Push Button Eaton M22- D- R Reset Emergency
+2 Contact element 1x NO Eaton M22- K10 Reset Emergency
+1 Labeling Plate Eaton M22S- ST- X Reset Emergency
+1 Emergency Stop Button Eaton M22- PV Emergency Stop
+1 Mounting Adapter Eaton M22- A4 Emergency Stop
+1 Labeling Plate Emergency Stop Eaton M22- XAK1 Emergency Stop
+4 Contact Element 1x NC Eaton M22- K01 Emergency Stop
+1 Mounting Housing Eaton M22- I2 Housing
+The reset switch should be a momentary push- button switch like the Eaton M22- D- R shown in Figure 3- 8 below . The system resets
+from the trailing edge of the signal from the reset switch so it is important that switch releases on its own.
+F IGURE 3- 8: Reset switch example- Eaton M22- D- R.
+101
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 3- 9: Emergency stop button example - Eaton M22- PV.
+102
+Rev AA
+
+Installation
+Wiring Diagram Emergency Stop
+F IGURE 3- 10: Diagram: Connection of the emergency stop.
+103
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Install Heads in 7020 Enclosure
+The 7020 Marking Head Enclosure can have one or two heads mounted inside. One mounting block is required per each head in
+the enclosure. When two marking heads are used, the individual mounting blocks allow for independent adjustment of working
+distance for each marking head as part of the installation.
+Before beginning, a Leader and a Follower laser should already be identified before installation of supply units into 7010 IP
+Enclosure and before proceeding with installation of marking heads.
+Designate Higher Power Laser as Follower
+Each 7440 laser comes with a specification sheet that details the measured power output as measured by
+Videojet manufacturing. In cases where two laser supply units will be installed into the 7010 IP Enclosure, the
+laser with the higher stated power output should be used as the Follower . This allows the limiting factor
+on power to be the Leader laser, the one with lower power), because it is much easier to see clearly what the
+Power (Intensity) setting in the software is directly. Having the Follower as the more powerful laser also allows
+for offset from the Leader to be in either the positive or negative direction.
+The steps for installation are summarized below and assume two marking heads:
+1. Setup configuration of systems.
+2. Insert heads into mounting blocks and adjust.
+3. Mount heads inside safety enclosure.
+4. Mount fork light barrier.
+5. Fine adjustment of Follower working distance.
+6. Print in static mode with each laser.
+7. Position fork light barrier.
+Setup Configuration of Systems
+Perform the following steps on each laser before installation:
+1. Boot the laser.
+2. Connect to TCS+ and log in as Service user.
+3. Select Main Menu | Laser Unit Settings.
+4. Perform the following in the Laser Configuration tab:
+4.1. Set the IP address of the laser.
+4.2. Name each laser (the upstream laser should be named “Leader” and downstream should be named “Follower”).
+104
+Rev AA
+
+Installation
+4.3. Set Galvo Tuning to Speed instead of Quality.
+4.4. Write down the Working Distance for each laser (working distance is unique to each marking head. Need to know
+this for following steps).
+5. Press the Lens Compensation tab within the Laser Unit Settings page and verify that a Lens Compensation file is both
+Loaded and Active.
+6. Shut down the laser.
+7. Repeat these steps with the second laser system.
+Insert Heads into Mounting Blocks and Adjust
+Keep Marking Heads and Mounting Blocks Matched
+As you perform the following steps, it will be necessary to insert and then later remove the marking heads from
+mounting blocks. It will be very important to keep the mounting block and marking head matched even while
+separated after adjustment is performed. It is recommended to mark each mounting block and marking head
+as Leader or Follower to reduce chances of mismatch.
+1. Insert the first marking head into its mounting block.
+105
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+2. Align the air outlet on marking head with reference finger on mounting block, ensuring that the head is inserted as far as
+possible into mounting block.
+3. Tighten mounting clamp screw on the back side of holder (center screw) clamp the head into the mounting block.
+106
+Rev AA
+
+Installation
+4. Align the reference line on the plastic block (right line) to the center of the scale in the center of the block (left scale) to
+by loosening the mounting screws and turning the adjustment screw (top of block). The goal is to have the reference line
+meet the center line of the scale.
+5. Adjust position of the Leader marking head using the Adjustment screw on top of block based on the equation:
+Nominal Working Distance for CFS- M marking head is always 112.5 mm
+Example:
+Working Distance for the head is 110 mm (according to Laser Unit Settings in TCS+). Adjustment for the head would
+be:
+This adjustment will therefore be in the negative direction, as shown in Figure 3- 11 below .
+F IGURE 3- 11: Example of a - 2.5mm offset.
+107
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+6. Tighten the two mounting screws on the back of the mounting block.
+7. Repeat these steps to adjust the working distance for Follower marking head.
+Note that Leader and Follower head will have different positions. That is intended to compensate for the differences in
+working distance of each 7340/7440 marking head.
+Mount Heads into the Safety Enclosure
+1. Remove marking heads from their holders by loosening the clamp screw on each head and sliding out of holder. Do not
+loosen the mounting screws !
+108
+Rev AA
+
+Installation
+2. Install the marking head holders into the 7020 Marking Head Enclosure by installing and tightening the fixing screws
+for the Z- axis bracket. The marking heads themselves will be inserted in a later step.
+Don’t worry, the working distance adjustments done in previous steps is retained. Just ensure that you maintain the ori -
+ginal match between the mounting block with its correct head.
+3. Open the umbilical clamp screws on top of the 7020 Marking Head Enclosure and remove the top plate of the enclosure
+(front side only).
+109
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+4. Insert a marking head into its holder, ensuring that air outlet sits in the reference finger.
+4.1. Tighten the clamp screw on the back of mounting block to lock this head into its holder. This clamp screw will also
+be how the head is removed for protective glass cleaning or replacement.
+4.2. Repeat for second marking head.
+5. Fix the umbilical length at 650 mm between the marking head top (inside enclosure where marking head and umbilical
+meet) and the strain relief on the side of the 7020 Marking Head Enclosure.
+Ensure the Z- axis is at its lowest point when taking this measurement.
+110
+Rev AA
+
+Installation
+6. Tighten the strain relief clamp screws into place to lock this position.
+7. Reinstall the top plate of the 7020 and tighten the umbilical clamp screws.
+Mount the Fork Light Barrier
+1. Mount the fork light barrier to its bracket.
+2. Fasten the bracket to the marking head holder with screws.
+l Ensure the buttons for sensitivity are on the side
+nearest the access door so that you can reach them
+when necessary.
+l Final position alignment of the fork light will be
+done later.
+3. Route the fork light cable up through the top of the enclosure and leave enough slack so that fork light can travel freely.
+111
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Fine Adjustment of Follower Working Distance
+Connect to Both Lasers via Chameleon RJ45 Port
+For the following procedures, connection of a PC via Ethernet cable to the Leader laser is advised as opposed
+to TU430 connection. As long as the two laser systems are connected by Ethernet between them (data cable
+that was included), then both systems can be connected to via TCS+ using the Chameleon RJ45 port as a
+switch.
+Open two browser tabs (one for each laser's IP address) to avoid having to physically connect and disconnect
+cables. Be sure to name the Leader and Follower in Laser Unit Settings to avoid confusion.
+1. Place a can on the conveyor under the Leader laser head.
+2. Use a tape measure or ruler to adjust the working distance of the Leader head using the Z axis handwheel until 112.5
+mm from center of the can bottom (bottom of the bowl shape).
+3. Close the Laser Keyswitch on both lasers and close the access doors.
+4. In TCS+ with the system booted and connected to the Leader laser, go to Main Menu | Pilot Laser and select Focus
+Finder mode. The Focus Finder beam is now enabled and will project a dot and circle.
+5. Use the Z axis handwheel to move the heads up and down until the dot is inside the circle on the can bottom.
+112
+Rev AA
+
+Installation
+6. Note the counter value of the Z- axis when the best focus is found.
+7. Stop the Focus Finder.
+8. Repeat steps 4 through 7 for the Follower laser.
+9. Calculate the difference between counter at Leader and Follower focus finder positions (counter values).
+10. Loosen upper and lower mounting screws of Follower laser marking head mounting block.
+11. Use the Adjustment Screw of the marking head holder (top of holder block) to adjust the Follower laser by the value
+determined in step 9 using the scale on the back of the marking head holder.
+12. Tighten the mounting screws on the back of the Follower marking head mounting block.
+Print in Static Mode with Each Laser
+1. Use the Z- axis handwheel to move the heads to the best working distance for the Leader laser (noted from counter value
+previously).
+113
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+2. Create a simple text code on the Leader (single line) and set the Line Setup to Static with Internal Once Trigger .
+3. With the can under the Leader marking head, mark the text code.
+Is code quality acceptable?
+l If yes, continue to the next step.
+l If no, use the Z- axis handwheel to move up by one millimeter on the counter. Mark again with new can or new
+spot on existing can bottom. Then try down by one millimeter from original counter value with a new can. Select
+counter value where best mark was achieved.
+4. Repeat for the Follower marking head.
+5. If the Follower best mark is higher or lower than the Leader:
+5.1. Mechanically adjust the Follower marking head by loosening mounting screws on mounting block.
+5.2. Tighten or loosen Adjustment screw on top of block to adjust height of Follower. This should only be a very small
+adjustment .
+6. Use the Z- axis handwheel to move the heads to the best working distance for the Leader laser (noted from counter value
+previously).
+7. Lock the Z- axis position with the knob next to the counter.
+114
+Rev AA
+
+Installation
+Position the Fork Light Barrier
+1. Align correct height position of fork light by manually moving the fork light up and down (mounting screws loosened).
+Do not move the Z- axis handwheel!
+2. Tighten the mounting screws.
+The fork light barrier STATUS LED is ON by default and turns OFF when the product is detected. The Trigger setting in Line Setup
+configuration should be set to Falling Edge . The recommended location for the sensor beam is on the lower (narrow) edge of the
+can bottom.
+After the marking heads are adjusted and the fork light barrier is set, then proceed to the Multi Laser Software Setup.
+115
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Multi Laser Software Setup
+When using multiple lasers to mark a single code (and thereby double throughput), the Multi Laser Configuration must be
+enabled and configured on the Leader laser.
+Generalized steps for this procedure include:
+1. Configure Leader laser Line Setup
+2. Create an Alignment job
+3. Enable & Adjust Multi Laser Configuration
+4. Use Pilot Laser “Job Elements” to check setup
+5. Mark on the fly and adjust Multi Laser Settings
+116
+Rev AA
+
+Installation
+Configure Leader Laser Line Setup
+1. Connect to the Leader laser with TCS+ and log in as Service user.
+Service User Required
+Only the Service user will have Access Rights to perform the steps later in this procedure. It is possible
+for the Service user to then assign Access Rights for the Multi Laser Configuration to other Roles in
+Main Menu | Roles and Access Rights .
+2. Note the Laser Position value. This will be needed in a later step.
+3. Ensure that the Mark Field width is correct. For beverage can applications, decrease width to the size of the can bottom.
+4. Ensure that Encoder Distance and Pulses per Rotation are correct. Note that in TCS+, the number of pulses for the
+encoder should be entered as the exact number described for that encoder and should not be doubled.
+5. Ensure Trigger Type is set to External Falling .
+6. Ensure Leader laser marks on cans correctly.
+117
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Create an Alignment Job
+1. Create a Job on the Leader laser with two identical rectangles that extend the full width of the marking field.
+2. Add a single line of text in the center of the marking field.
+3. Ensure rectangles are both centered in marking field.
+4. For beverage can applications, decrease the mark field and rectangle widths in Line Setup to the width of the can. The
+rectangle should be slightly smaller than the mark field width.
+5. Save and Activate the Job you just created.
+118
+Rev AA
+
+Installation
+Enable and Adjust Multi Laser Configuration
+1. Select Main Menu | Laser Unit Settings | Multi Laser Configuration .
+2. Toggle ON Enable multi laser mode to enable the usage of the second laser (Follower).
+3. Toggle ON  Synchronize Marking Field to use the marking field settings of the Leader also for the Follower.
+4. Toggle ON Synchronize Line Setup to use the line setup of the Leader for the Follower also. Note that this only includes
+the encoder and trigger setup. The position will be set in step 7.
+5. Enter the IP address of the Follower system.
+6. For Marking head distance , enter the distance from the trigger source to the Follower marking head. See calculation
+example below.
+Example
+l 78.88 mm : Distance from the fork light barrier to the Leader marking field center
+l 43.5 mm : Distance from the Leader marking field center to the Follower marking field center
+7. Enter the Rotation for second marking head . This value should typically be 180 degrees offset from Leader even
+though they may be physically in same orientation.
+8. Press the Save button.
+119
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Use Pilot Laser Job Elements to Check Setup
+1. Close the key switches of both laser systems.
+2. Put a piece of cardstock/paper large enough to cover the mark fields of both lasers at their focal point (if using cans, bal -
+ance on top of the cans).
+3. Go to Main Menu and select Pilot Laser .
+4. Select the Job Elements option. Both marking heads should now be displaying portions of the Alignment Job you cre -
+ated and activated.
+Each head's pilot laser should be drawing the overlapping rectangles on the card stock, as shown in Figure 3- 12 below .
+F IGURE 3- 12: Pilot lasers drawing the alignment job.
+5. Correct any deviation from from what is shown in Figure 3- 12 above by changing values in the Multi Laser Con -
+figuration screen for head rotation, X offset, Y offset, and X or Y scale for the second marking head (Follower). Examples
+are shown in figures Figure 3- 13 on the facing page through Figure 3- 16 on page 122 .
+Note: the keyswitch of Leader laser must be open in order to save changes made to Multi Laser Configuration.
+120
+Rev AA
+
+Installation
+F IGURE 3- 13: Rotation of second marking head off slightly.
+F IGURE 3- 14: X and Y Scale of second head incorrect.
+F IGURE 3- 15: X and Y Offset of second head incorrect.
+121
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 3- 16: Rotation of second head 180 degrees incorrect as text displayed upside down.
+122
+Rev AA
+
+Installation
+Create the Customer's Code
+1. Create a Job with customer's code and Mark Settings on Leader laser.
+2. Activate the Job. Your Job should now be displayed in the preview screen.
+3. Close the key switches on both systems and wait for Laser Ready .
+4. Select Main Menu |  Pilot Laser .
+5. Select the Job Elements option. Each laser should now be displaying the portion of the customer code that will be writ -
+ten by that laser, but displayed by the pilot laser beam. This information can be helpful in adjusting settings to improve
+print quality.
+6. Stop the Pilot laser.
+Lasers are now ready to mark on moving products. Some adjustments may be necessary after examining code quality on
+products marked on moving conveyor system. Most adjustments should be done through Main Menu | Laser Unit Settings |
+Multi Laser Configuration .
+123
+Rev AA
+
+TCS+ Software for
+Multi Laser
+Functionality
+CMark version 4.9 and newer includes the functionality to use two lasers to print a single code. The software will divide the vec -
+tors of the code between the two lasers resulting in the code being marked twice as fast as a single laser could have marked.
+This section includes most TCS+ functionality necessary for configuring and enabling the Multi- Laser Mode on 7340/7440 and
+other lasers.
+Laser Unit Settings
+In CMark 4.7 and newer, the Laser Unit Settings in TCS+ take the place of the former laser Web Interface. Laser Unit Settings are
+accessed in TCS+ via the Main Menu. System settings available in this menu are dependent on the Access Rights granted the cur -
+rently logged in User. These Access Rights can be edited by other users with sufficient privileges.
+The only action that must be done through the laser Web Interface and not through TCS+ Laser Unit Settings is uploading CMark
+to a Chameleon which does not already have CMark installed. Since TCS+ is part of CMark, you cannot access TCS+ until CMark
+is loaded. The laser Web Interface would be required for uploading CMark when a new Chameleon is installed or after the Rescue
+Stick procedure is performed. After CMark is loaded, you can update CMark through TCS+ from that point forward.
+The Laser Unit Settings in TCS+ (CMark 4.7 or newer) contains the following functions (view depends on User):
+l Laser Configuration l Arc- Compensation
+l Date and Time l Lens Compensation
+l Pilot Laser l Remote Service
+l Network l System Database
+l Permissions l Logging
+l External Interfaces l Multi Laser Configuration (CMark 4.9+)
+l Allprint Basic l Trigger Queue (Cmark 4.9+)
+125
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Edit Laser Configuration
+When troubleshooting, or if a Chameleon board has been exchanged, it may be necessary to set the Laser Configuration. If a
+new Chameleon board has been installed it is necessary to install CMark via the Laser Web Interface before the Edit Laser Con -
+figuration page is available. You cannot load CMark via TCS+ on a new Chameleon because TCS+ doesn't exist until CMark
+is installed.
+1. Login as Service User in TCS+ using the daily password. Admin also has access to some of the functions in Laser Con -
+figuration, but not all functions.
+2. Select Laser Unit Settings from the Main menu in Home Screen.
+3. Ensure Laser Configuration is selected in the left column.
+126
+Rev AA
+
+TCS+ Software for Multi Laser Functionality
+4. Edit functions or information as necessary based on the definitions detailed in "Options & Functions" below .
+5. Press Save . Reboot is required after any changes are made and Save is pressed. A Fatal Error is shown until laser is shut
+down and rebooted.
+Options & Functions
+l Load Barcode Scan : For manufacturing only. Loads laser configuration from work order.
+l Reset CP Light : When a CP- Light is installed in a laser system a code is written to the CP- Light upon first boot that indicates
+the model, wattage, umbilical length, and marking unit type. Once this code is written to the CP- Light the board can only be
+used in that laser configuration. If CP- Light and marking unit are to be tested or used in a laser system with different umbil -
+ical length or wattage then the CP- Light code must be reset or errors will occur. This button can only be accessed by Service
+user.
+l Serial Number : Enter the serial number of the laser here. The serial number is found on a sticker located on the supply unit
+rear panel. Only the Service user can change/set the laser type.
+l Name : Optional, unless using Videojet Remote Service (VRS). When using VRS, this is where the Friendly Name for the laser
+is entered.
+l Laser Type : Selection must match the actual laser type as well as correct umbilical length for 7440, or errors will assert in
+the user interface. Only Service user can change/set the laser type.
+l Marking Head Type : Selection must match the marking head type in use or errors will assert in the user interface. Only the
+Service user can change/set the laser type.
+l Tuning: Routine used for galvo control. Selections are either Quality (default) or Speed. High print speed text applications
+may be better with Speed selected.
+l Lens : Automatically selected with 7340/7440 based on marking head type selected. You cannot change the lens type inde -
+pendently as lenses are glued into interior of marking unit.
+127
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+l Tube Length : Always set to 0 unless otherwise directed by authorized Videojet engineering or technical support. By default,
+only Service can change this setting, but it is possible for the Service user to hand over Access Right to this setting to Admin
+or other user.
+l Working Distance : Set by manufacturing, this is the optimal distance for the specific laser system and marking head
+installed as measured from marking head output to the product. This setting cannot be adjusted in the TCS+ software by
+any User and the best working distance may vary based on the material being marked and the effect desired. The Working
+Distance is saved in the CP- Light during pairing of marking unit and CP- Light. Never separate a CP- Light and marking unit
+set.
+l Safety Circuit : Select the type of safety circuit used in the system from the dropdown selector. An incorrect setting here
+could cause errors or inoperable laser until selection is corrected. Only Service user can change/set the laser type.
+l Leakage Protection Enabled : Always toggled ON. When ON, the shutter will close after 9 seconds of no product move -
+ment. The shutter will reopen again when product starts to move. This feature prevents fires due to beam leakage when the
+product is stopped below marking head.
+l Trigger enable voltage needed : Set to Default (7340/7440) - False. Default setting means that X25.9 does not require 24V
+in order to acknowledge Trigger. This may be set to True if the application dictates that both Trigger and Trigger enable
+must be present to print.
+l Disable Trigger/Encoder detached errors : Only available since CMark 3.4. Enable this if using trigger or encoder signals,
+but not using 24V output from X25 connector to power trigger/encoder.
+l System Integration Mode : Changes the behavior of the System Ready output. Not recommended to change on Videojet
+laser 7340/7440 models. Leave this set to Stand Alone Laser . By default only Service can change this setting, but it is pos -
+sible for the Service user to hand over Access Right to this setting to Admin or other user.
+l Simmer: Controls first pulse behavior (7340/7440 only). This control is no longer supported, though it may be displayed.
+Changes cannot be made by the user.
+Loading the Lens Compensation File
+The 7340/7440 laser system marking unit is highly calibrated. Manufacturing pairs the marking unit with a CP_ light4 board and
+performs a 1,000 point calibration on the marking unit. During this calibration, a Lens Compensation file is created. This file is
+included with all marking unit/CP- Light4 combination spare parts. This Lens Compensation file should be loaded through TCS+
+when the new marking unit is installed. Once loaded, this file is stored in CMark on the laser system.
+Customers should store a backup of this Lens Compensation file in another location in case a new Chameleon is installed. Altern -
+atively, you can create a Firmware Backup after installing and activating the Lens Compensation file as the Lens Compensation
+will be part of that Firmware Backup.
+Load and Activate the Lens Compensation
+1. Login as the Service User in TCS+ using the daily password. The Administrator user may also be used, but the Service User
+must have first already given access rights to the Administrator user to load the Lens Compensation file.
+128
+Rev AA
+
+TCS+ Software for Multi Laser Functionality
+2. Select the Main Menu in the Home Screen and select Laser Unit Settings .
+3. Press the Lens Compensation button in the left pane of the Laser Unit Settings screen.
+4. Press the File Management button in the right pane of the Lens Compensation window.
+5. Navigate to and select the Lens Compensation file from the USB provided with the marking unit or from other location if
+necessary. This file will have an .xml file extension. The file will automatically be copied into the correct location on the
+laser. When complete, you will be returned to the Lens Compensation window and the file name should show in the right
+pane.
+129
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+6. After upload, press the Activate Best Compensation button in the Lens Compensation window after upload. You will
+immediately receive a confirmation that the file was activated and should see the word Active to the right of the file
+name.
+7. Press the Close button.
+Change Galvo Tuning
+Some Videojet lasers have the ability to change between a Quality and Speed galvo tunings that are saved into the system. Qual -
+ity tuning is the default setting is should be used in most cases. Speed can be selected where high speed marking with text char -
+acters is needed. Speed setting should not be used with filled fonts or logos as some ripple in the lines used to fill in images will be
+noticeable.
+The following instructions only apply to lasers that have multiple tunings available (including 7230/7330/7340/7440) and which
+have CMark 4.7 or newer installed.
+Change Tuning to Speed
+1. Login as Service User in TCS+ using the daily password. Admin also has access to some of the functions in Laser Con -
+figuration, but not all functions.
+130
+Rev AA
+
+TCS+ Software for Multi Laser Functionality
+2. Select Laser Unit Settings from the Main menu in Home Screen.
+3. Ensure Laser Configuration is selected in the left column.
+4. Press the button to the right of Tuning in the right half of the screen.
+5. Select the desired tuning from the dropdown selector.
+6. Press Save . Reboot is required after any changes are made and Save is pressed. A Fatal Error is shown until laser is shut
+down and rebooted.
+131
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Multi Laser Mode
+Only available in CMark 4.9 and up
+This functionality is only available on lasers with CMark operating system version 4.9 or newer. Older versions
+of CMark do not include this functionality.
+In high throughput applications, two lasers can be used together with the Multi Laser Mode feature in the TCS+ user interface.
+With this feature enabled, one laser will be designated as the Leader and the other as a Follower . Each laser will print half of the
+content of a single job, thereby marking the job twice as fast.
+Additional hardware setup is required. At minimum, the following is necessary.
+l Encoder and Product Detect signals come into the Leader laser and must be wired from the Leader to the Follower.
+l Communications cable must connect the Leader and Follower Chameleon boards.
+All information is stored on the Leader laser including Jobs, date and time, Line Setup, and Mark Settings. When marking in Multi
+Laser Configuration, the Leader laser will send vector information for the characters that should be printed by the Follower. The
+Leader (Laser 1) and Follower (Laser 2) print alternating characters in the message to create one complete message as shown in
+Figure 4- 1 below .
+F IGURE 4- 1: Green boxes indicate characters that would be printed by Laser 1 and orange boxes indicate those would be printed
+by Laser 2.
+Multi Laser Mode can do multiple lines of alphanumeric text code, but logos and barcodes are not supported for this feature. All
+variable data and date/time come from the Leader laser to ensure that there are no synchronization issues.
+Enable Multi Laser Mode
+Service User Only Default Setting
+By default, only the Service User can configure the Multi Laser feature. The Service User can grant access rights
+to other Roles in Roles and Access Rights button in the Main Menu. Multi Laser Service Settings access right is
+found in the Configuration section for each Role. These edited Roles can then be assigned to Users.
+1. Login as the Service User or as a User who has been granted Access Rights to Multi Laser Mode settings. By default, only the
+Service User has Access Rights to these settings.
+132
+Rev AA
+
+TCS+ Software for Multi Laser Functionality
+2. Press the Main Menu button and select Laser Unit Settings from the dropdown menu.
+3. Press the Multi Laser Configuration option in the left column of the window displayed. It may be necessary to scroll
+down to find this option.
+4. Press the box to the right of Enable multi laser mode to activate the feature.
+133
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+5. Adjust settings as needed. The Table 4- 1 below shows descriptions for each setting.
+Note: Any changes to the settings in this screen require the keyswitch to be opened in order to save the change.
+6. Press the Save button.
+7. Press the Close button to return to the Laser Unit Settings screen.
+For detailed procedure on setting up marking heads using Multi Laser Configuration, see "Multi Laser Software Setup" on
+page 116 .
+Table 4- 1: Multi Laser Setting Descriptions
+Setting Description
+When enabled, this feature will send all information to be marked to the laser with the
+Enable multi laser
+IP designated below in the IP Address of second laser field.
+mode
+Toggle on to indicate that the second laser should use the Marking Field size of this laser.
+Synchronize
+Markingfield
+Toggle this on to indicate that the second laser should use encoder and trigger setup (except
+Synchronize
+Start Delay) of this laser.
+LineSetup
+Enter the Follower laser IP Address.
+IP address of
+second laser
+The absolute distance from the product detect to the location where marking should begin.
+Marking head
+Similar to Start Delay in Line Setup, except here you measure and enter the distance from the
+distance
+product detect to the second marking head.
+Controls the orientation of the second marking head output and marking direction. Typically,
+Head rotation for
+this value should be set to the opposite (180 difference) of whatever the Leader's Laser
+second marking
+Position is set to in Line Setup. This value can be adjusted if marking output for the second
+head
+head (Follower laser) is not parallel to the content marked by the Leader.
+Correction factor for Power/Intensity. The value here is always "0" to start and the Follower
+Power
+laser uses whatever Marking Intensity is set for the Leader. If the Follower needs to use more
+Adjustment
+or less Intensity (i.e. the mark from the Follower head needs more or less burn relative to the
+Leader), then this Power Adjustment value can be adjusted in positive or negative increments
+of 10. Use the negative symbol before the value to adjust power down on the Follower.
+Moves the content marked by the Follower laser in the X direction. The default value is
+Secondary
+always 0 mm. Takes negative or positive values.
+markinghead
+Offset X
+Moves the content marked by the Follower laser in the Y direction. The default value is
+Secondary
+always 0 mm. Takes negative or positive values.
+markinghead
+Offset Y
+134
+Rev AA
+
+TCS+ Software for Multi Laser Functionality
+Setting Description
+Increases or decreases the size of the content in X orientation marked by the Follower laser.
+Secondary
+Enter a negative value to scale down or a positive value to scale up.
+markinghead
+Scale X
+Increases or decreases the size of the content in Y orientation marked by Follower laser.
+Secondary
+Enter a negative value to scale down or a positive value to scale up.
+markinghead
+Scale Y
+Focus Finder Activation
+The 7340/7440 laser system is equipped with a pilot laser built into the laser source. This focus finder can help you to find the cor -
+rect focal distance for marking by rapidly and alternately projecting two images, a circle and a dot, which appear to the human
+eye simultaneously. As the marking head approaches the correct focal distance, the dot moves closer to the circle. At the correct
+distance, the dot should appear centered inside the circle.
+The Focus Finder feature can only be activated through TCS+ when you are logged in at a level that has access to edit the Line
+Setup. Not all users are allowed to access this option by default.
+Wear appropriate eye protection
+Use of the Focus Finder feature requires that the laser source is armed. Though the pilot laser used in the Focus
+Finder is Class II, when the laser source is armed it cannot be guaranteed that there is no Class IV beam of
+wavelength 1,055- 1,075 escaping. Therefore eye protection for the 1,055- 1,075 wavelength should be worn or
+the marking head should be in approved enclosure whenever the Focus Finder or pilot laser are in use.
+Activation of Focus Finder
+Activation differs depending on whether the laser has CMark version 4.5 or CMark 4.9+.
+CMark version 4.9 or newer
+To activate the focus finder option:
+1. Connect to TCS+ either via a web browser or with a TU430.
+2. Login as a user with Access Rights to enable the Focus Finder (Admin or Service by default).
+Granting Rights to Other Users
+To grant access to Users, the Admin must give the Role access to use the Pilot Laser in Roles and Access
+Rights | Operation. All Users with that Role will then be able to activate/deactivate the Focus Finder.
+3. Press the Main Menu button in the Home screen.
+135
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+4. Press the Pilot Laser option in the dropdown menu displayed.
+5. Close the Keyswitch if not already closed. The keyswitch must be closed for the Focus Finder to function.
+136
+Rev AA
+
+TCS+ Software for Multi Laser Functionality
+6. Press the Focus Finder button in the window displayed.
+Avoid Prolonged Unnecessary Use of Focus Finder Mode
+The method used to provide the Focus Finder feature can tax the galvos if used for prolonged periods
+of time. Do not leave the Focus Finder mode on unnecessarily for prolonged periods of time to avoid
+accelerated wear and tear on galvos.
+7. Press the Stop Pilot Laser button to stop the Focus Finder at any time.
+8. Press Close button to exit and return to Home screen.
+CMark version 4.5
+To activate the focus finder option:
+1. Connect to TCS+ either via a web browser or with a TU430.
+2. Login as a user with Access Rights to enable the Focus Finder (Admin or Service by default).
+Granting Rights to Other Users
+To grant access to Users, the Admin must go to Roles and Access Rights and give the Role access to
+Operation/Line Setup/Marking Field. All Users with that Role will then be able to activate/deactivate the
+Focus Finder.
+137
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+3. Press the Pen button in the Line Setup pane in the Home screen.
+4. Touch the Edit Current Line Setup option.
+138
+Rev AA
+
+TCS+ Software for Multi Laser Functionality
+5. Press the Focus Finder tab button.
+6. Press the box next to Enable Focus Finder . A check mark should display in the box when toggled on.
+The Focus Finder should now be active.
+7. Move the marking head up and down to find the correct focal distance and then lock it in place.
+8. Touch the Enable Focus Finder box again to toggle off the Focus Finder beam. The check mark should no longer display
+when toggled off.
+9. Press Close button. Do not save changes when prompted.
+139
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Adjust Pilot Laser Modes
+Only available in CMark 4.9 and up
+This functionality is only available on lasers with CMark operating system version 4.9 or newer. Older versions
+of CMark do not include this functionality.
+On laser models equipped with a pilot laser, different patterns can be drawn with the pilot laser to demonstrate the currently
+defined marking region. Not all Videojet lasers have a pilot laser installed. A pilot laser is an optional accessory that is either part
+of the beam source itself or a separate piece that is installed into the head. The pilot laser emits a visible red beam that can dis -
+play either the message to be marked or a number of different patterns but does not actually mark the product. The pilot laser is
+useful for setup in static applications as the image displayed by the red pilot laser strobes while on, but does not wait for encoder
+pulses or triggers. Because the pilot laser is not based on encoder pulses or trigger signals, it is not often used in mark on the fly
+applications.
+7340/7440 Pilot Laser Precautions
+The 7340 and 7440 lasers use a pilot laser beam of 600- 700 nm that is generated by the beam source. There is
+no way to completely guarantee that only the pilot laser beam and not the real laser beam is emitted since
+they are generated by the same component. When using the pilot laser on 7340/7440, use the same care as
+would be used with the regular 1064 nm beam including beam shielding or appropriate safety glasses and
+treat it as a Class 4 laser.
+Pilot Laser Care
+In all Videojet lasers other than the 7340/7440, the pilot laser beam is a 600- 700 nm and is considered Class 2
+laser radiation. This laser radiation may cause damage to the eye when staring into the beam.
+It is safe for the eye if natural defense mechanisms (blink reflex, turning the head) are not suppressed when
+unintentionally looking into the beam.
+Use appropriately rated laser safety glasses or beam shield enclosure to prevent eye damage.
+Activating the Pilot Laser
+A pilot laser installed in the system must be activated in the system configuration before it is available for use. Activate the Pilot
+Laser in Laser Unit Settings | Pilot Laser . Once activated, the pilot laser remains available for use by other users with sufficient
+Access Rights as described in "Enabling the Pilot Laser" below .
+Enabling the Pilot Laser
+1. Press the Main Menu button in the Home screen.
+2. Press the Pilot Laser option in the dropdown menu displayed.
+140
+Rev AA
+
+TCS+ Software for Multi Laser Functionality
+3. Press the Mode you would like the pilot laser to mark.
+4. Close the Keyswitch if not already closed. The keyswitch must be closed for the pilot laser to function.
+5. Select the desired mode.
+More than one Mode in the left column may be used at the same time.
+Modes in the right column can only be used individually.
+Pilot Laser will be active immediately after the desired Mode button is pressed and will remain active until the Stop Pilot
+Laser button is pressed or timeout occurs.
+Avoid Prolonged Unnecessary Use of Focus Finder Mode
+The method used to provide the Focus Finder feature can tax the galvos if used for prolonged periods
+of time. Do not leave the Focus Finder mode on unnecessarily for prolonged periods of time to avoid
+accelerated wear and tear on galvos.
+141
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+6. Press the Stop Pilot Laser button to stop the pilot beam at any time.
+7. Press Close button to exit and return to Home screen.
+Table 4- 2: Description of Pilot Laser Modes
+Mode Description
+The pilot laser simulates marking of all vectors of the individual job elements.
+Job
+Elements
+The pilot laser indicates the position and size of the individual job elements by drawing a box around
+Individual
+each element.
+Boxes
+The pilot laser indicates the position and size of the individual job elements by drawing a box around the
+Combined
+combined elements.
+Box
+The pilot laser indicates the position and size of the available marking field.
+Marking
+Field
+The pilot laser indicates the center of the marking field with a dot.
+Centered
+Dot
+The pilot laser indicates the center of the marking field with a crosshair.
+Centered
+Axes
+The pilot laser indicates the direction of line movement with an arrow.
+Line
+Movement
+142
+Rev AA
+
+TCS+ Software for Multi Laser Functionality
+Mode Description
+The pilot laser will “mark“  a circle and a dot on a surface. If the dot is not in the center of the circle, adjust
+Focus
+the working distance manually by raising or lower marking head until it is in the center of the circle.
+Finder
+143
+Rev AA
+
+Troubleshooting
+Troubleshooting for individual lasers should be done using the procedures for the regular 7340/7440 lasers. When Multi Laser
+Mode is enabled, there will be additional Warnings and Errors generated when one of the lasers is not ready and a user has tried
+to start marking.
+The following sections explore some of the issues that could be encountered when using Multi Laser Mode.
+Most Common Issues
+l Faults occur if the Follower laser is not in Laser Ready  state when Start is activated on the Leader laser. The keyswitch on
+the Follower laser should always be turned on first so that Follower is always in Laser Ready by the time the Leader laser
+achieves this state.
+l Ensure Multi Laser Mode is not enabled on the Follower laser. This should only be enabled on the Leader laser.
+l If code marking is too light on one head versus the other and you can’t fix it with Power adjustment alone (Multi Laser
+Configuration | Power Adjust), it may be necessary to make further adjustment to the working distance for each head
+mechanically. Use the steps in "Install Heads in 7020 Enclosure" on page 104 to make additional adjustments to the work -
+ing distance for the Follower laser only.
+Error Messages in Multi Laser Mode
+The following Warnings and Errors only apply to CMark 4.9 or newer and only appear when using two or more laser systems with
+the Multi Laser Configuration enabled.
+Table 5- 1: Multi Laser Error Descriptions
+Error
+ID Message Possible Cause Effects Remedy
+Class
+Warning Connected A laser in a multi laser See See warning of the connected
+19900
+laser system configuration has a warning warning of laser
+warning: %s message the
+connected
+laser
+Error 1 Connected A laser in a multi laser See error of See error of the connected laser
+19901
+laser system configuration has an error the
+error: %s message connected
+laser
+145
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Error
+ID Message Possible Cause Effects Remedy
+Class
+Error 2 Connected A laser in a multi laser See error of See error of the connected laser
+19902
+laser system configuration has an error the
+error: %s message connected
+laser
+Fatal Error Connected A laser in a multi laser See fatal See fatal error of the connected
+19903
+laser system configuration has a fatal error of the laser. Must reboot system after
+fatal error: error message connected remediation is complete.
+%s laser
+Information Connected A laser in a multi laser See See information message on the
+19904
+laser system configuration has an information connected laser
+information: information message message
+%s on the
+connected
+laser
+Error 2 Follower A network cable of the laser No multi All lasers in the setup need to be
+19905
+laser (%s) within the multi laser laser connected properly. If only leader
+has been configuration was marking laser shall be used, please
+disconnected unplugged or device as possible. disable multi laser configuration.
+been powered off
+Poor Mark Quality
+When marking with only one laser you can directly adjust Mark Settings for that laser. When using a Multi Laser Configuration,
+you can directly adjust Mark Settings on the Leader laser which will then apply those settings to the Follower laser automatically.
+Due to differences in the beam source output power and other characteristics, it may be necessary to adjust certain items sep -
+arately for the Follower. Only the following settings can be adjusted for the Follower laser. Note that these Follower laser settings
+must be adjusted via the Leader Laser in Laser Unit Settings. No other settings on the Follower laser can be adjusted and actually
+have an effect on print quality.
+Follower laser adjustments in Leader laser Main Menu | Laser Unit Settings | Multi Laser Configuration :
+l Head rotation for second marking head
+Adjusts the direction that the Follower head is marking and can correct for wrong angles in characters.
+l Power Adjustment
+This is an offset adjustment from the Leader laser Intensity setting and not a direct adjustment. Can be adjusted up or
+down using negative or positive numbers.
+146
+Rev AA
+
+Troubleshooting
+l Secondary marking head scale X
+Secondary marking head scale Y
+Adjusts size of Follower head output.
+l Secondary marking head offset X
+Secondary marking head offset Y
+Adjusts the location of Follower head output.
+No adjustment of the Mark Settings such as Marking Speed, Jump Speed, On Delay, Off Delay, etc. is possible for the Follower
+laser separate from the Leader Laser. The Leader laser Mark Settings are always applied to the Follower in all cases where Multi
+Laser Configuration is enabled.
+The following show examples of poor print based on the settings available for multi laser mode.
+Power Adjustment or Focus Issue
+In the following photos the simplest adjustment to try would be the Power Adjustment. We see that the Follower head in this case
+has lower power and therefore fainter code. In the photo to the right this was resolved by adjusting Follower head Power Adjust -
+ment up.
+It is also possible that the focus of one of the marking heads is not correct. The installer for the dual laser system must make crit -
+ical mechanical adjustments to the Follower marking head to allow for the differences in Working Distance among each indi -
+vidual marking head. If Power Adjustment does not correct this print quality issue then try adjusting Z- axis 1 mm up and mark
+and if necessary 1 mm down from original position and mark.
+If difference in marking is still not resolved the service technician may need to make a mechanical adjustment to the Follower
+head. See "Install Heads in 7020 Enclosure" on page 104 for directions on marking head adjustment procedure.
+147
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Rotation
+In the following photo on the left, sections of the code marked by Follower laser are marked on a slight angle (notice it looks
+wavy). The photo on the right shows this issue resolved by a small adjustment made to the Head rotation for secondary mark -
+ing head.
+The following show additional examples of small adjustments made to Head rotation for secondary marking head . Notice the
+"D" near the end of code relative to the position of the "A". Note how the "D" tilts more toward the right as rotation angle is
+increased here.
+Setting for Head rotation of second head should typically be 180 degrees offset from whatever the Leader laser Laser Position
+setting is in Line Setup. This number is not automatically entered for you. You must do so in Multi Laser Configuration.
+148
+Rev AA
+
+Troubleshooting
+Secondary Marking Head Scaling
+If Follower laser content is being marked at a different size than the Leader then first ensure that the Lens Compensation file is
+loaded and Active in Main Menu | Laser Unit Settings | Lens Compensation on both Leader and Follower lasers. If the Lens Com -
+pensation file (s) are not active or were accidentally deleted then scaling will be incorrect for that laser.
+In the photo on left below the characters marked by Follower laser are smaller than those marked by the Leader. An adjustment
+of the Secondary marking head offset X and/or Secondary marking head offset Y can correct this mismatch in character siz -
+ing.
+X or Y Offset
+Adjustments in the placement of the characters marked by the Follower laser head can be done via Secondary marking head off -
+set X or Secondary marking head offset Y . The photo on the left below shows print quality issue where sections of the code over -
+lap in the vertical direction and other sections are spaced further apart in vertical direction. The photo on the right shows results
+after a small adjustment to Secondary marking head offset Y was made.
+The following figure illustrates the results of making small adjustments to the code with the Secondary marking head offset Y
+setting.
+149
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Temporarily Use a Single Laser
+It may occur in a Multi Laser Configuration that one laser fails and the expected fix time could be too long for the customer to
+be without the laser. In such a case as this, it is possible to use only one of the lasers in the dual laser setup. If it is the Follower
+laser that fails, then the changeover to using only the Leader will merely be a few steps. If the Leader laser has failed and use of
+only Follower is desired, then the changeover will be much more involved and time consuming.
+Speed will be reduced by half!
+Dropping down to a single laser will reduce the speed with which the system is able to mark by half. The cus -
+tomer’s line must be slowed to accommodate this, but doing so would allow for some continued production
+while spare parts are sent or the issue with the affected laser is diagnosed and repaired.
+Follower Laser Failure
+If Follower laser fails and cannot be recovered in a timely manner, then it is only necessary to disable the Multi- Laser Con -
+figuration on the Leader Laser to use the Leader on its own.
+1. Login as the Service user in TCS+ on Leader or as a user with sufficient Access Rights to use Multi Laser Configuration in
+Laser Unit Settings.
+2. Press Main Menu .
+3. Press Laser Unit Settings .
+4. Select the Multi Laser Configuration tab.
+5. Toggle OFF Multi Laser Enable .
+6. Press Save . The Leader laser is ready to mark with customer's line running at reduced speeds.
+150
+Rev AA
+
+Troubleshooting
+Leader Laser Failure
+The following steps are not exhaustive and these steps will vary based on the complexity of the application. Use the following as
+a boilerplate checklist of what might need to be moved, adjusted, or installed to temporarily re- purpose the Follower laser as a
+stand alone marking unit.
+To use only Follower in multi laser installation:
+1. Copy Jobs, Mark Settings, and Line Setup from the Leader laser to USB.
+2. Disable Multi Laser Configuration in Laser Unit Settings |  Laser Configuration .
+- OR-
+If MIC board present, then disable through Laser Unit Settings | External Interface .
+3. Shut down both lasers and disconnect power to both units.
+4. If the Follower laser does not already have a MIC board, remove the Leader MIC board and install it into the Follower.
+5. Move the TU430, if present, from the Leader to the Follower.
+6. If the application uses only an encoder and photo eye for IO devices, move the wires for these items from the Leader to
+the Follower.
+- OR-
+In cases where several additional IOs are also wired into Leader’s customer interface, the following actions are sug -
+gested:
+6.1. Remove the cable gland frames holding cables coming into Leader laser Customer Interface (one on rear of drawer
+and one on rear of laser).
+6.2. Remove the top of the cable gland frame of on the supply unit (leaving the cable gland plate from the rear of the
+drawer assembled).
+6.3. Remove any connectors on the Customer Interface that have wiring connected from outside the laser (Photo eye,
+encoder, ready to mark, etc.). Leave wires attached to the devices. Just unlock connectors and remove from board.
+6.4. Slide the blocks with cables through them out of frame.
+151
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+F IGURE 5- 1: Supply unit cable gland blocks removed and connectors unlocked
+152
+Rev AA
+
+Troubleshooting
+F IGURE 5- 2: Exterior cable gland frame intact and supply unit cable gland blocks intact
+6.5. Put these cables with connectors and the remaining intact cable gland frame onto the Follower laser (remove ones
+already in place).
+6.6. Remove the wires for the cable that created the daisy chain for encoder pulses and trigger. Keep this in a safe place
+for later re- installation.
+7. Determine how voltage for the Customer Interface was provided.
+l If Internal Voltage was used (no incoming customer voltage on X28 pins 7 and 8) then nothing further is neces -
+sary for this.
+l If External Voltage was used (customer voltage on X28 pins 7 and 8), then ensure X28 pins 7 and 8 have
+Voltage and GND connected and that X19 and X20 jumpers are set to pins 2- 3 (this should already be done if
+wired according to recommendation).
+8. Boot the Follower laser.
+9. Enable the MIC through TCS+ via Laser Unit Settings |  External Interface (if applicable). The IP address should be set
+to the same one as was set in the Leader laser interface. This way, the PLC does not notice a difference.
+10. Import Jobs, Mark Settings, and Line Setups onto the (former) Follower laser.
+11. Edit Line Setup |  Trigger | Start Delay by adding 43.5 mm to the Start Distance to compensate for the (former) Fol -
+lower laser marking head position.
+153
+Rev AA
+
+Appendices
+List of Figures 156
+List of Tables 159
+155
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+List of Figures
+Figure 1- 1: An example of the monochromatic wavelength of laser light. 8
+Figure 1- 2: A surface coating ablated off of a substrate. 9
+Figure 1- 3: Substrates altered by thermal/chemical reactions at the surface. 10
+Figure 1- 4: Surfaces marked via engraving. 11
+Figure 1- 5: Substrates marked via surface modification. 12
+Figure 1- 6: Illustration of Spontaneous Emission. The orbit of the electron decays and a photon escapes. 13
+Figure 1- 7: Illustration of Absorption. An incoming photon is absorbed and the increase in energy results in an electron rising to a
+higher orbit. 13
+Figure 1- 8: Illustration of the interaction of light and matter that occurs in stimulated emission. A single photon strikes a higher
+orbit electron which drops to a lower orbit. The original photon and a second photon are emitted. 13
+Figure 1- 9: An illustration of the amplification or "avalanche" effect on photons in a gain medium. 14
+Figure 1- 10: Where laser radiation wavelengths fall on the electromagnetic spectrum. 15
+Figure 1- 11: Illustrated visual impact of eye damage caused by laser radiation. 18
+Figure 1- 12: Parts of the human eye. 18
+Figure 1- 13: Ocular absorption by wavelength illustrated. 19
+Figure 1- 14: Example of retinal damage. 21
+Figure 1- 15: Short pulse retinal damage, absorption of 1064nm wavelength. 21
+Figure 1- 16: A multiple pulse retinal injury. Image color enhanced to better show the laser damage. 22
+Figure 1- 17: Effects of laser radiation by wavelength. 24
+Figure 1- 18: Examples of skin burns. 24
+Figure 1- 19: Fume extractors draw in LGACs at the point of creation. 27
+Figure 1- 20: A cross section of a Videojet Oracle fume extractor system. 28
+Figure 1- 21: The intake area of a Class 1 Laser implementation. 32
+Figure 1- 22: The intake of a class 1 laser implementation for marking on plastic strips. 33
+Figure 1- 23: Brushes around the discharge that prevent radiation from escaping the enclosure. 33
+Figure 1- 24: An observation window constructed to allow safe viewing of marking (constructed of material in accordance with DIN
+EN 207). 34
+Figure 1- 25: The marking cabin with the side door open to demonstrate the interior. 35
+Figure 1- 26: A rotary table. 35
+Figure 1- 27: The difference between light reflected on different surfaces. 39
+Figure 1- 28: The ANSI Z136.1- 2014 Manual. 40
+156
+Rev AA
+
+Appendices
+Figure 1- 29: A side view of a laser guard enclosure. Products move from one end to the other on the conveyor, represented by the
+black line at the bottom. 43
+Figure 1- 30: A top view of a laser guard enclosure. Products move from one side to the other on the conveyor, represented by the
+dotted lines . 43
+Figure 2- 1: 7010/7020/7030 system components (required cooling unit not shown). 50
+Figure 2- 2: Red characters would be marked by Leader and black characters would be marked by Follower laser. 51
+Figure 2- 3: 7010 front view with default single laser configuration (no laser installed). 52
+Figure 2- 4: 7010 front view with 2 lasers installed. 52
+Figure 2- 5: 7010 single laser configuration rear with bottom drawer open. 53
+Figure 2- 6: 7010 front view with position of Leader and Follower lasers shown. 54
+Figure 2- 7: 7010 front door with handle in correct position for operation. 54
+Figure 2- 8: Without the extension kit, only the lower drawer has connectors and an umbilical clamp on the 7010. 55
+Figure 2- 9: Lower drawer umbilical clamp and cable passage plates (extension kit installed on upper drawer). 56
+Figure 2- 10: Cooling unit stand for use on floor. 57
+Figure 2- 11: Cooling unit stand for use on top of 7010 IP Enclosure. 57
+Figure 2- 12: Location of holes for mounting the cooling unit stand on top of 7010. 57
+Figure 2- 13: Correct installation of cooling unit and stand on top of 7010. 58
+Figure 2- 14: Incorrect installation of cooling unit and stand on top of 7010. 58
+Figure 2- 15: 7020 Marking Head Enclosure with rear door open. 59
+Figure 2- 16: 7020 with rear door open to show 2 marking heads installed. 60
+Figure 2- 17: TU430 bracket locations shown on 7020 and 7030. 61
+Figure 2- 18: 7020 with metal interior plates installed to cover glass. 62
+Figure 2- 19: 7020 with rear door open. 63
+Figure 2- 20: Simplified drawing of safety switches on a dual laser system. 64
+Figure 2- 21: Height and lateral adjustment components labeled. 64
+Figure 2- 22: Height adjustment travel limits. 65
+Figure 2- 23: Drawing of mounting block. 65
+Figure 2- 24: Interior of marking heads inside enclosure. 66
+Figure 2- 25: Fork sensor and bracket. 66
+Figure 2- 26: 300 mm wide version of 7030 beam shield tunnel. 67
+Figure 2- 27: 600 mm wide version of 7030 beam shield tunnel. 68
+Figure 2- 28: 7030 center section with access door and optional accessories labeled. 70
+Figure 3- 1: Older version of power meter. 73
+Figure 3- 2: Newer version of power meter. 73
+157
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Figure 3- 3: Red screws fasten drawer closed and orange screws fasten the backplate to the drawer. 88
+Figure 3- 4: Cable passage plates and umbilical grommet removed from backplate of 7010. 88
+Figure 3- 5: Jumpers across pins 2- 3 on both X19 and X20 for External Voltage 93
+Figure 3- 6: Wiring diagram of a dual laser system with incoming encoder and product detect signals. 95
+Figure 3- 7: Wiring diagram for Performance Level D with both Leader and Follower lasers shown 100
+Figure 3- 8: Reset switch example- Eaton M22- D- R. 101
+Figure 3- 9: Emergency stop button example - Eaton M22- PV. 102
+Figure 3- 10: Diagram: Connection of the emergency stop. 103
+Figure 3- 11: Example of a -2.5mm offset. 107
+Figure 3- 12: Pilot lasers drawing the alignment job. 120
+Figure 3- 13: Rotation of second marking head off slightly. 121
+Figure 3- 14: X and Y Scale of second head incorrect. 121
+Figure 3- 15: X and Y Offset of second head incorrect. 121
+Figure 3- 16: Rotation of second head 180 degrees incorrect as text displayed upside down. 122
+Figure 4- 1: Green boxes indicate characters that would be printed by Laser 1 and orange boxes indicate those would be printed by
+Laser 2. 132
+Figure 5- 1: Supply unit cable gland blocks removed and connectors unlocked 152
+Figure 5- 2: Exterior cable gland frame intact and supply unit cable gland blocks intact 153
+158
+Rev AA
+
+Appendices
+List of Tables
+Table 1- 1: Wavelengths of Videojet Lasers 16
+Table 1- 2: Bio- effects of Commonly Used Lasers 17
+Table 1- 3: Aluminum & Sheet Steel Advantages & Disadvantages 44
+Table 1- 4: PPE Eyewear Lens Material Comparison 45
+Table 3- 1: Expected Power Output Measurement - Watts 82
+Table 3- 2: X9 Connections for Door Circuit (Shutterlock) 97
+Table 3- 3: X9 Connections for Emergency Circuit (Interlock) 98
+Table 3- 4: Emergency Stop Example Parts List 101
+Table 4- 1: Multi Laser Setting Descriptions 134
+Table 4- 2: Description of Pilot Laser Modes 142
+Table 5- 1: Multi Laser Error Descriptions 145
+159
+Rev AA
+
+Index
+Coherence 8 , 13
+A
+Collimation 8
+Conveyor 67
+Ablation 8
+Cooling 53 , 55 , 72
+Absorption 12 , See also  Eye, Ocular Absorption; Skin,
+Damage by Wavelength CP- Light4 128
+Acetone 30 CPD3 96
+Ordering 30 Customer Interface 93
+Alcohol
+Isopropyl 30
+D
+Methanol 30
+Alignment See  Leader- Follower, Alignment
+Diagram
+Aluminum 44
+Wiring 94 , 99 , 103
+ANSI Standard 40
+Door Circuit 97
+Compliance 40
+Doors 51 , 62
+B
+E
+Barcode 132
+Effect of Exposure 24
+Battery 30
+Electromagnetic Radiation 15
+Beam Shield 49
+Electromagnetic Spectrum 15
+Beer- Lambert Law 37
+Emergency Stop 101
+Board
+Emissions
+MIC 151
+Spontaneous 12
+Stimulated 12- 13
+Encoder 50 , 92 , 117 , 132
+C
+Engraving 10
+Cable Glands 55 , 72 , 91 Ethernet 112
+Chameleon 132 EtherNet/IP 93
+Chemical Change 9 Excitation, Atomic 12
+Chromatism 8 Exhaust 26
+CMark 50 , 125 Eye
+Hazard 18 , 46
+161
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Ocular Absorption 19
+L
+Parts of the Eye 18
+Laser Class 16- 17 , 31 , 44
+Laser Gas Generated Air Contaminates 27
+F
+Laser Source 73
+Leader- Follower 117 , 119 , 132 , 150
+FASS 96 , 99
+Alignment 118 , 120
+Fire
+Leakage Protection 128
+Classes 25
+Lens 127
+Prevention 26
+Cleaning 30
+Focal Distance 135
+Lens Compensation 128
+Follower 92
+Line Setup 132 , 134
+Fume Extractor 67 , 69 , 72
+Logos 132
+Fumes, Toxic 27
+First Aid 28
+M
+G
+Machinery
+Hazards 31
+Gain Medium 14
+Marking Field 117- 118 , 134
+Galvo 128
+Marking Head 49 , 89 , 104 , 127
+Tuning 130
+Adjustments 59 , 62
+Glands See  Cable Glands
+Distance 134
+Mounting 105
+H Offset 134
+Rotation 134 , 146 , 148
+High Voltage 29
+Scale 135 , 147 , 149
+Marking Unit 73
+Maximum Permissible Exposure (MPE) 46
+I
+Modes 142
+Interlock 43 , 97- 98
+Multi Laser Mode 50 , 132
+IP Rating 49 , 51
+Irradiance 27 , 47
+N
+Nominal Hazard Zone (NHZ) 47
+J
+Job 50
+162
+Rev AA
+
+Index
+O S
+Optical Density (OD) 45- 46 Safety System 63 , 96 , 128
+Organic Materials 27 Reset Switch 71
+Serial Number 127
+Sheet Steel 44
+P
+Shutterlock 97
+Skin
+Performance Level 68 , 71 , 96 , 101
+Damage by Wavelength 22
+Pilot Laser 112 , 120 , 123 , 142
+Hazard 22
+Power
+Parts of the Skin 23
+Adjustment 134 , 146- 147
+Snell's Law 38
+Power Check 73
+Supply Unit 51 , 53
+Power Supplies 93
+Surface Modification 10- 11
+Power Wizard 73
+PPE 29 , 45
+Product Detectors 50 , 92 , 94 , 132
+T
+Fork Light 66 , 72 , 111 , 115
+Trigger 115 TCS+ 125
+Settings 125
+Thermal Change 9
+R
+Transmittance 45
+Radiation
+Biological Effects 15- 16
+U
+Infrared 20
+Ray Umbilical 18 , 89
+Incident 38 User Level 132
+Refracted 38
+Transmitted 38
+V
+Reference Finger 106
+Reflection 38
+VRS 93
+Counter Measures 39
+Diffuse 38- 39 , 47
+Specular 39 , 47
+W
+Refraction 38
+Wavelength 15 , 17
+163
+Rev AA
+
+Lightfoot Beverage Canning Solution Technician Training
+Web Interface 125
+Working Distance 107 , 112
+Z
+Z- Axis 64 , 112- 113
+164
+Rev AA

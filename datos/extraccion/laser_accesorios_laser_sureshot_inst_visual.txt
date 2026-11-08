@@ -1,0 +1,266 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\SURESHOT INST..pdf
+# cifrado=False bloques=14 caracteres=12948
+
+Installation Instructions
+Videojet SureShot
+P/N 374945
+Videojet Excel, Triumph, and 37 - Series Printers
+WARNING: Only trained service or maintenance personnel should
+perform this procedure.
+P/N 361327 - 01
+recycled paper Rev. AB 03/02
+Videojet Technologies Inc. © 2002 by Videojet Technologies Inc. All rights reserved.
+1500 Mittel Boulevard Phone: 1 - 800 - 843 - 3610 Offices - USA: Atlanta, Chica go, Los Angeles, Philadelphia
+Wood Dale, IL Fax: 1 - 800 - 582 - 1343 INT’L: Canada, France, Germany, Ireland, Japan,
+60191 - 1073 USA Int’l Fax: 630 - 616 - 3629 The Netherlands, Singapore, Spain,
+www.videojet.com The United Kingdom
+Distributors Worldwide
+
+Product Overview
+The SureSho t was designed to create a redundant printing system. This device
+allows two printers to alternate printing from product to product. If one of the
+printers drops from a Print - Ready state with a fault, or is removed manually from
+the print mode, the remaini ng printer will assume printing on all products. If both
+printers drop from the Print - Ready mode with a fault, or are manually removed
+from print, the SureShot triggers an alert that both printers are offline. This
+provides the highest reliability over and above a spare printer.
+The SureShot works from a single detector with two printers. The printheads
+should be located as close to the detector, and to each other as possible. It is
+recommended that the printheads be mounted across from each other on eithe r
+side of the product or, if this is not possible, then the printheads should be placed
+side by side. This will require that the printers have different print delays. The
+space between products must be large enough so that the printhead with the
+largest pr int delay has completed printing prior to receiving the next product
+detect signal.
+When used with Excel printers, the SureShot monitors the Print - Ready signal
+from pin 4 on the J29 connector of the printer main control board. When used
+with Triumph or 37 - series printers, the Sure Shot monitors Pin 3 of the J3
+connector on the Print - Ready board included in SAR 00165. If both printers are in
+the print mode, the product detect signal will be sent to the printers alternately,
+and the printers will print on al ternate products.
+Some of the advantages of using the SureShot are:
+ The printers are in constant operation and not in idle mode, which is
+crucial for maximum print quality and printer performance.
+ SureShot gives customer the additional comfort of having an unattended
+spare. If one printer fails or is taken off - line, the second printer
+immediately begins printing on all products.
+ SureShot allows the customer to perform scheduled maintenance on their
+printers without having to shut down the production line.
+ Downtime due to printer faults is dramatically reduced, very close to non -
+existent.
+2 P/N 361327 - 01
+
+Important Information
+Before beginning installation, please note the following important points.
+ A Print - Ready PCB (P/N SAR00165) must be ordered separately and installe d
+into 37 - series, Triumph, and T120 printers for proper SureShot operation.
+This board is not required for Excel printers.
+ After installation, retain these instructions in your printer Service Manual for
+future reference.
+WARNING: Before servicing the pr inter, turn off electrical power
+to printer at the power source and make sure that the power
+source is locked out and tagged “Printer Being Serviced”.
+Failure to do so can result in serious personal injury.
+Inspect the Parts
+Carefully inspect the kit for damage. Refer to the list of the parts below. If any
+items are damaged or missing, call the Videojet Technologies Inc.
+Customer Service Department at 800 - 843 - 3610 (if within the United States).
+Outside the United States, contact your local Videojet Tech nologies Inc.
+representative.
+Parts Included in Kit Part Numbers Quantity
+SureShot Module - 1
+Pigtail Cable 356044 2
+25 ft. Extension Cable 356043 2
+Phoenix Connector, 5 Terminals (for Excel series printers) 206008 2
+Phoenix Connector, 4 Terminals (for Triumph & 37 - series 207967 2
+printers)
+Ferrite Beads 207251 2
+Print - Ready Board (for Triumph & 37 - series printers) SAR00165 -
+(order separately)
+Tools and Supplies Required
+ Flat - blade screwdriver
+ Electrical tape
+ Tie wraps
+ Pliers
+Rev. AB, 03/02 3
+
+WARNING: Only qu alified service or maintenance personnel
+should perform this procedure. Qualified personnel are those
+personnel who have successfully completed a training course
+for this printer, or who have sufficient experience to set up this
+equipment, and are aware of the potential hazards to which they
+will be exposed.
+Installation
+Mounting the SureShot Module
+Mount the SureShot module in a dry location, in close proximity to the
+printers. An ideal location for the module is on one of the printer’s column
+stand. Thi s location eliminates the need for the 25 - ft extension cables and
+makes for a neater installation. The module’s mounting dimensions are shown
+in Figure 1.
+Figure 1. SureShot Module Mounting Dimensions
+4 P/N 361327 - 01
+
+Preparation for Connection of SureShot Module Cable s
+1. Make sure that the printers are Off and the electrical power is
+disconnected.
+2. It will be necessary to strip additional insulation from the
+pigtail cables for Triumph and 37 - series printers.
+3. FOR EXCEL PRINTERS – follow the steps below.
+FOR TRIUMPH, 37 - SER IES, AND T120 PRINTERS –
+refer to page 6.
+Excel Printers
+1. Mount the pigtail in the lower right side of the Excel printer
+cabinet by removing one of the strain reliefs and mounting
+the cable in the open hole.
+2. Wire the pigtail into the printer control board u sing the wire
+terminations shown in Table 1. Tape and fold back any
+additional wires not used.
+Wire Color Connection Purpose
+Red Pin #1 on J15 Positive voltage supplying power
+to SureShot module (12vdc)
+Black Pin #3 on J15 Provides ground to SureShot
+W hite Pin #4 on J15 From SureShot –
+Table 1. Wire Connections, Excel Printers - SureShot
+Rev. AB, 03/02 5
+
+Figure 2. Excel PCB Connectio ns
+TRIUMPH, 37 - SERIES, and T120 Printers
+1. Mount the pigtail on the rear of the Triumph or 37 - series printer
+cabinet by removing one of the plugs and mounting the cable in the
+opening.
+2. Wire the pigtail into the printer control board using the wire
+terminat ions shown in Table 2. Tape and fold back any additional
+wires not used.
+6 P/N 361327 - 01
+
+Wire Color Connection Purpose
+Red Pin #1 on J7 Positive voltage supplying power to SureShot module (12vdc)
+Black Pin #2 on J7 Provides ground to SureShot
+White Pin #3 on J7 From Su reShot – sends product detect signal back to printer
+Brown Pin #3 on Print - Provides a Print - Ready output from printer (SAR 00165)
+Ready Board
+Table 2. SureShot Wire Connections for Triumph, 37 - series, & T120 Printers
+Figure 3. Triumph, 37 - series & T1 20 PCB Connections
+All Printers - Connecting the SureShot Module to the
+Printers
+1. Connect one end of a 25 - ft extension cable to output “A” on the
+SureShot module.
+2. Connect the other end of this cable to the pigtail on one of the
+printers.
+3. Connect one end of the second 25 - ft. extension cable to output “B”
+on the SureShot module.
+Rev. AB, 03/02 7
+
+4. Connect the other end of this cable to the pigtail on the other printer.
+Connecting the SureShot to the Product Detector
+Connect the product detector cable to the Sensor Input connect or on the
+SureShot module.
+The printers will share the same product detector. The product detector will
+send the product detect signal to the SureShot, then the print signal will be
+sent to the appropriate printer, alternating from one printer to the other . If the
+product detector fails for any reason, neither printer will print.
+Setting Up Your Product Detector
+Turn both printers On .
+When using a proximity type detector, set it for the following conditions.
+Detect Leading Edge Detector Dark - Light
+No Dark
+When using a retroflective - type detector, set it up for the following
+conditions.
+Detect Leading Edge Detector Dark - Light
+Yes Light
+Setting Up the Print Delay
+When setting up the Print Delay, keep the following points in mind:
+ The print delay setting on the printers depends on the distance between
+the product detector and the printhead plus the distance the code is to
+be printed from the product’s leading edge.
+ The value of the delay adds to the length of the message. The message
+must finish printing b efore the next product is detected.
+ The distance between the products must be large enough to
+accommodate the length of the message, plus the print delay value. If
+the message and delay value exceeds the product spacing, products can
+be missed.
+ If the abo ve is not followed, a Not Phasing warning, or missed printing
+of products may occur.
+8 P/N 361327 - 01
+
+Fault Output of SureShot
+The alarm output of the Sure Shot is a SPDT relay or cold - contact closure
+with a contact rating of 50vdc at 2 amps of current. This mechanical
+co ntact will close when both printer “A” and printer “B” have faulted out.
+The wire outputs of the Fault output are listed below:
+Wire Color Connection Purpose
+Red Pin #5 Common pin of relay
+Brown Pin #4 Normally Open contact (NO)
+White Pin #2 Normally Cl osed contact (NC)
+NOTE: The contacts in the table above are referenced with SureShot
+disconnected ( Off ).
+ It is suggested that the 25 - foot extension cable be used.
+ Connect the male end of the 25 - foot extension cable to the fault
+output of the SureShot modu le.
+ Cut - off the female end of the 25 - foot extension cable.
+ Strip approximately 4 - inches of insulation from the cable. This will
+expose the individual wires.
+ It is suggested that the unused wires be taped and folded back for
+future use.
+ The common (Red Wire ) and the desired contact wire can then be
+provided to the customers for connection to their control circuit.
+(Example: Red wire common, White wire connected. This will
+provide an open contact when the printers are in a ready state. If the
+printers were t o fault, or be removed from print, the contact would
+close signaling a fault condition).
+Rev. AB, 03/02 9
+
+Operation of SureShot
+The SureShot module has six LEDs (refer to Figure 4):
+ Sensor Input
+ Fault
+ Printer “A” Ready/Not Ready
+ Printer “A” output
+ Printer “B” Ready/Not Re ady
+ Printer “B” output
+The LED’s operation is described below (refer to Figure 4):
+ SENSOR INPUT is a green LED that displays the triggering of the
+product detector. This LED will flash when the products are seen.
+ PRINTER “A” OUTPUT is a green LED that il luminates when the
+“A” printer has printed last.
+ PRINTER “B” OUTPUT is a green LED that illuminates when the
+“B” printer has printed last.
+ PRINTER “A” NOT READ Y is a red LED that illuminates when
+Printer “A” is not ready to print. This can be due to a prin ter fault, or
+the manual removal of the printer from the print mode.
+ PRINTER “B” NOT READ Y is a red LED that illuminates when
+Printer “B” is not ready to print. This can be due to a printer fault or
+the manual removal of the printer from the print mode.
+ FA ULT is a red LED that illuminates when both printers “A” and
+“B” are not in a Print - Ready state. This can be due to both printers
+being in a fault condition, or both printers having been manually
+removed from the print mode.
+10 P/N 361327 - 01
+
+Fi gure 4. SureShot Module LEDs, Cables, and Mounting Holes
+Rev. AB, 03/02 11
+
+.*/+0-1-2.3/405061738494:5;5<6=7>8?9@:A;B<C<D=E>F?G@HAIBJBKCLDMFNFOGPHQIRISJTKUMVMWNXOYPZP[QS]T^T_U`VaWbWcYdZe[fgh]i^j`k`lambncocpdqergsgthuivjwjxkymzn{n|o}p~qrstuvvwxyz{|}}~ ""&&**0066:: @ @!B"!B%J&%J*T !#!*$*T.#!!$!%!$!!.&.2d&!!$$!'$!
+- !#"#
+21"hFLs"
+
+locamaxp< name!fpost*.T prepJ{[8D_<<JEO$>NCzY9/U<33f*xCTMC Q3>@& 99pZ9us9sVss3sMs&s[sWsAaV9b9s#9YV9YVJ,VVsIsUTsAT99s9~R[s0s9ss"i99Y$"08!v0$""!~0cb%!!%!4/e/84!!!#/4
+#.2d&$#$$$!'$$
+'0'O'bA' 4]'.['AUTSRVQ
+21"hFLs"
+
+G-S`post$d] prep9LE{F_<JZt!EWtkXZ0/V%E53%3f*xATMC @ F3!@L 9D%9KT.nS9J,S bXL|Q9V"VJ#*s!3*
+_['jjig&j'h3{|'v,|3&'3'2
+3://$$Y!"!#3$,5+$"
+&3/13#&3413'
+'%%%4 r}*%%4 rL'@K@O5'-8x""!"!!"!#!#""""@'@S 0@UUU
+&
+&,3
+:Ly%#%'2#2'E#E''
+%-++<+<+++*]q]q+++5!#"#"&'&54&##5!#"326654'&#3P+Q0 EM3J4T$LhM'M'%%CqY}N%%5$rOrJt% ,}L9CTX8
+/
+'4@5@U56',?//?+99/++++++++2+/++++++10+CTX@X4U5U '456,'UUUUUU87!U!U!U!-U-U-U--879/++++++9/++++++//??9910++@/8@*58`]6%&88888+P8`8p88@8
+AV8$$<U@G#p0WCTX@Y@UY@UUUL0U0U0@U0+U+17FUFUF@!UFAGAUAUAUALULULULUL@ULUL+U+U+7@U7U7@U7U7@U7U7U7UU @U 0U @U *U @U U @U /2EH@ GTU@U/UOUoUUUVG1%,<,??///?]]+/+++++++++/+++++++++/+++++++++++++++++10++CTX@<%,<,TUV1GU U +U+U+7AUAUAL U X7U7U7U77XLULULULLYX9/+++9/+++9/+++++++///???10KTXFE/08888888Y@4YYY`]6+Y
+U @U U @U UUUUU$@% ,U/+??99?/+++++/+++++10+CTX@W@`p $%%,UUU UUU& U U &UUU'&9/+++9/++9/++++++???99?]10@5'`]6 '`'p''47: HH O'#!O%'#'AD %E@%%,! g@p@%$P `&+N]qr<M<]q<<<<?<?<<<99++10Cy@+<+]]+YY327#5#"&&54&&5!32674&'5c!'-v|EMq,7HAY?+mK9ZG#qBYA2%P6LN7% CTX ??/9/10CTX@1"!U*UU U ?+?+?+?+?99/10@SX[5"@a5#"! $ :9:95:JIDEEIi""-"2`4"+14"
+*./13 "
+"

@@ -1,0 +1,120 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Esp\BT1404291-Configuracion  Conexion Maestro-Esclavo TTO (Esp).pdf
+# cifrado=False bloques=8 caracteres=6678
+
+Videojet Technologies Latin Ame rica
+BT1404161
+Fecha: 16/04/2014
+Equipos: Dataflex + / DF6420 / DF6320 / 6330 / 6530 - TTO
+Tema: Configuracin de Conexin Maestro-Escl avo TTO
+Este Boletn tcnico tiene el propsito de auxiliar a los tcnicos como configurar los equipos
+TTO para la aplicacin Maestro / Esclavo.
+Ventajas de una conexin Maestro / Esclavo
+- Dejar ms simple el sistema de codificacin cuand o hay necesidad de imprimir en varios paquetes en l a misma
+empaquetadora.
+- Reduccin de tiempo para la configuracin de los equipos.
+- Reduccin de fallas humanas.
+- Reduccin de costo de cuando necesita aplicacin en ms de un paquete, sin la necesidad de otros
+equipamientos completos (uno completo y los otros s in display).
+ - Reduccin de espacio de instalacin.
+Cuando hay una necesidad de una conexin de maestro esclavo?
+- Cuando dos o ms equipos son necesarios para impr imir en el mismo lado de la pelcula
+- Cuando el cliente desee tener un control total en un solo panel IHM.
+Hay dos tipos de configuracin
+- Group Job Select: Permite que el mensaje sea sele ccionado solamente por el maestro, pero las
+configuraciones de las mquinas estn en sus propia s pantallas.
+- Group Control: Todas las configuraciones, selecci n de mensajes, avisos de fallas estn en la pantal la del
+maestro, en esa configuracin no es necesario tener las otras pantallas de los esclavos.
+
+Requisitos necesarios para la instalacin
+Cuando sea un maestro y un solo esclavo:
+- Un cable crossover es necesario para la intercone xin de los equipos, los cables I / O deben instala rse como
+en una instalacin comn.
+Un maestro y ms que dos esclavos:
+- Caja de conexin conforme imagen abajo (
+PN: 218856 ).
+- Esta caja permite que se conecte hasta 4 mquinas (1 maestro y 3 esclavos)
+- Con esta caja slo es necesario un solo encoder y slo una seal de impresin, ya que se enviar a lo s dems
+equipos.
+- Cable Ethernet directo.
+Configuracin de una conexin maestro / esclavo
+- Todos los equipos deben estar en la misma red.
+Ejemplo:
+Maestro
+IP: 169.254.187.196
+Mscara de subred: 255.255.0.0
+Esclavo 1
+IP: 169.254.187.190
+Mscara de subred: 255.255.0.0
+Ordenador (PC)
+IP: 169.254.187.199
+Mscara de subred: 255.255.0.0
+Recordando que el nmero de IP debe ser diferente s lo el ltimo dgito y la mscara de subred deben s er
+iguales para los equipos.
+
+- Primero conecte el ordenador con la mquina que s er el Maestro va Ethernet, a continuacin, haga c lic con el
+botn derecho del ratn encima de 'New Coder', sele ccione la opcin 'Set as Master.
+- Informar los nombres del Maestro y del Esclavo y el IP que ser el esclavo.
+Note que la puerta del esclavo tendr que ser 3002.
+A continuacin aparecer una ventana llamada 'Maste r / Slave Level', usted tendr que seleccionar si s er Group
+Job Select o Group Control (Ya citado arriba para q ue cada uno sirve).
+El equipo maestro entrar en fallo avisando que no est conectado a ningn esclavo.
+
+- Ahora conecte el equipo con el equipo que ser el esclavo a travs de Ethernet tambin, a continuaci n, haga
+clic con el botn derecho del ratn encima de 'New Coder', seleccione la opcin 'Set as Slave'.
+A continuacin abrir una ventana pidiendo para inf ormar al IP del esclavo, Mscara de Sub-Red y el Pu erto de
+Comunicacin.
+A continuacin aparecer una ventana que pregunta c ul ser la accin si se pierde la conexin con el maestro.
+Tenemos tres opciones:
+1-) No action: Las mquinas no realizar ninguna acc in.
+2) Raise a warning and continue operation: Los equi pos envian una alerta, pero continuan imprimiendo.
+3) Raise a fault and suspend operation: Los equipos entran en falla y ya no imprimen.
+
+El equipo esclavo entrar en fallo avisando que no est conectado al maestro.
+- Despus de realizar todas las configuraciones deb emos hacer las conexiones entre las mquinas, si es usar 2
+o 3 esclavos, ser necesaria la Caja de conexin y ser necesaria slo una seal del encoder y slo un a seal
+de disparo. Si utiliza slo 1 esclavo, basta con co nectar el cable 'CROSSOVER' a una punta en cada equ ipo,
+cada equipo tendr la seal del encoder e impresin individual.
+En cuanto se conecta un equipo en el otro, ser nec esario limpiar los fallos en los equipos. Recuerde: si est
+utilizando la funcin Group Control, todos los ajus tes sern en el maestro, incluso borrar los fallos, activar y
+desactivar la impresin, velocidad de impresin, co ntraste, etc.
+Listo, la funcin Maestro / Esclavo ya est funcion ando en estos equipos.
+
+Mensajes (Jobs) en la aplicacin Maestro / Esclavo
+Hay dos maneras de obtener el mensaje va Maestro / Esclavo.
+1) El mensaje del Maestro ser el mismo para los es clavos.
+Para que esto ocurra, debemos conectar el Clarity C onfig con el Maestro e ir al siguiente men: Imagin g >> Print
+Head Mapping.
+Este campo de Clarity Config sirve como referencia donde los esclavos buscarn la Sub-imagen.
+Printhead1 - Maestro
+Printhead2 - Esclavo 1
+Printhead3 - Esclavo 2
+Printhead4 - Esclavo 3
+Si hay necesidad de que los mensajes del esclavo se a igual a la del maestro, se debe insertar 1 en el valor de
+estos campos.
+2) El mensaje del Esclavo ser diferente del maestr o.
+Primero, debemos crear el mensaje del maestro norma lmente en Clarisoft.
+
+A continuacin, es necesario agregar una Sub-imagen en ese mismo archivo de Clarisoft, en el men Arch ivo >>
+Propiedades, abrir una ventana, ir en la pestaa ' Sub-Imgenes >> Nueva Sub imagen', se percibir que
+aparecer una En el caso de que se trate de una nue va lnea, al hacer clic en esta nueva lnea y dar O K, ser
+editado a Sub-imagen 2, en este caso que ser del E sclavo.
+ara volver a editar la sub-imagen 1, simplemente ha ga clic en la primera lnea y dar OK.
+Ahora basta con asociar qu mensaje ser de qu mq uina.
+En 'Archivo >> Propiedades', tenemos la pestaa 'As ociacin de Cabezas', en esta ventana, debe ser inf ormado
+qu mensaje ser de qu cabeza. Por ejemplo: Sub-im agen 1 ser de la cabeza 1, Sub-imagen 2 ser de la s
+cabezas 2,3 y 4.
+
+Despus de hacer la asociacin correcta se debe gua rdar y descargar el mensaje slo en el Maestro,
+recordando que en el Clarity Config ya no podr ser 1 los valores de los campos en Print Head Mapping, deber
+ser informado en el Clarisoft.
+Ahora slo tenemos que seleccionar el mensaje en el equipo maestro que se reproducir a los esclavos.
+Listo, la configuracin y el mensaje en la aplicaci n maestro / esclavo estn hechos y listos para su uso.
+Para desconectar la mquina de Maestro / Esclavo, b asta con conectarla con el Clarity Config, hacer cl ic con el
+botn derecho encima de New Coder y hacer clic en l a opcin Disable Master-Slave mode.
+ATT.
+DOC_HELP
+Renan Ferreira
+VJ Latin America
+Videojet Technologies Ltd
+Tel: +1 630 8607300 (USA _ Headquarters).
+Tel: +55 11 4689-8800 (Brazil Office).

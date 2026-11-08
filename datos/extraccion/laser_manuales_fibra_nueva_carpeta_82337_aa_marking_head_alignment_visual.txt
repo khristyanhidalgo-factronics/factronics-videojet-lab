@@ -1,0 +1,210 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\Nueva carpeta\82337-AA Marking Head Alignment.pdf
+# cifrado=False bloques=16 caracteres=10193
+
+AL-82337Service Part Installation Instruction
+Marking Head Alignment
+1 Marking Head Alignment
+1.1 Preparation
+DangerBefore starting any work:
+The laser system must be completely disconnected.
+The conveyor must be at standstill.
+NoteFor the following procedures connectilaser is advised. As long as the two laser systems are connected by etherneton of PC via ethernet cable to Leader
+between them (data cable that was included), then both systems can be con-nected via TCS+ using the Chameleon RJ45 port as a switch.
+Open two browser tabs (one for each laser's IP) to avoid having to physicallyconnect and disconnect cables. Be sure to name the Leader and Follower in
+Laser Unit Settings to avoid confusion.
+1.Boot 7x40 laser marking system.
+2.Connect to TCS+/FOBA Go via web browser on PC and log in as "Service".
+3.Go to Global Settings and select Laser Unit Settings.
+10/20 - Rev. AA 1
+
+Service Part Installation InstructionAL-82337
+Marking Head Alignment
+4.On page Laser Configuration read value of Write down this value for each laser, it is needed for the next steps.Working distance.
+NoteIn systems with two lasers make sure to designate the Leader laser and Fol-lower laser, e.g. by adding Leader and Follower to the name.
+5.Turn off laser system.
+2 10/20 - Rev. AA
+
+AL-82337Service Part Installation Instruction
+Marking Head Alignment
+1.2 Adjustment of Leader Marking Head
+1.Insert the marking head into the marking head holder.
+2.Align air outlet to reference finger.
+3.Fix the position using the center mounting clamp screw on the backside.
+referencefinger
+air outlet of
+marking head
+10/20 - Rev. AA 3
+
+Service Part Installation InstructionAL-82337
+Marking Head Alignment
+4.Align the scale in the center of the block (left scale) to reference line (right line) on markinghead holder by loosening the mounting screws and turning the alignment screw until the
+center position is reached.
+5.After centering, calculate the offset from the center line required for the individual markinghead as follows:
+[system working distance] - [nominal working distance] = adjustment value
+Example:Working distance read from Laser Unit Settings in TCS+: 110mm
+Nominal working distance of all CFS-M marking heads: 112.5mm
+110mm - 112.5mm = -2.5mm (adjustment in negative direction)
+6.Adjust the marking head offset according to the calculation.1 scale line = 1.0mm
+7.Tighten the two mounting screws.
+alignment screw
+mountingscrews
+scale before alignmentscale after alignment
+positiveadjustment
+negativeadjustment
+Example: -2.5mm offset
+4 10/20 - Rev. AA
+
+AL-82337Service Part Installation Instruction
+Marking Head Alignment
+1.3 Adjustment of Follower Marking Head
+1.If there is a second laser system:Repeat sections Preparation on page1 and Adjustment of Leader Marking Head on
+page3 with the second laser system.
+As a result both marking heads will have the same working distance once they are mountedinto the enclosure.
+The fine adjustment will be carried out after verifyking heads (see below).ing the working distance of the built in mar-
+1.4 Integration in Enclosure
+1.Remove the screws of the supply line clamp on top of the enclosure.
+2.Remove the cover.
+3.Insert the marking head including holder through the top opening. If there is only one systemit goes to the Leader position.
+NoteIf there is a second laser system (Follower), make sure to insert it in the cor-rect order (see figure above).
+Follower
+Leader
+10/20 - Rev. AA 5
+
+Service Part Installation InstructionAL-82337
+Marking Head Alignment
+4.Mount the marking head with holder to the marking head plate.
+If it is not possible to insert the head with the holder from above:Remove the head from the holder by loosening the single clamp screw on the center rear
+of holder.
+NoteIf there are two laser sytems make sure the holders are not mixed up.
+Mount the holder to the marking head plate, then insert the marking head from above intothe holder and tighten the center clamp screw.
+Leader Follower
+Follower
+Leader
+holdermounting center
+screws clampscrews
+6 10/20 - Rev. AA
+
+AL-82337Service Part Installation Instruction
+Marking Head Alignment
+Align the air outlet to the reference finger.
+5.Position the top cover and tighten the screws of the supply line clamp.
+6.Loosen the screw of the strain relief clamp (see figure below) and open the strain relief clamp.
+7.Guide the supply line to the strain relief clamps at the side of the enclosure.
+NoteFor the correct bending radius make sure that there supply line is fixed atminimum length of 650mm to the strain relief clamp.
+Measure the 650mm when the Z axis is at its lowest position to ensure thatthe minimum length is never fallen below when moving the Z axis.
+8.Close the strain relief clamp by tightening the screw.
+air outlet
+650mm length measuredfrom marking head end cap
+to strain relief clamp
+screw ofclamp
+strain reliefclamp
+end cap
+10/20 - Rev. AA 7
+
+Service Part Installation InstructionAL-82337
+Marking Head Alignment
+1.5 Mounting of Fork Light Barrier
+1.Mount the fork light barrier to the bracket.
+NoteTo ease adjustment make sure the sensitivity buttons are pointing towardsthe access door.
+2.Mount the fork light barrier bracket to the marking head plate of the Z axis.
+NoteThe final positioning will be done after alignment of the working distance.
+bracket
+fork light barriersensitivity buttons
+marking head plate
+mounting screws
+8 10/20 - Rev. AA
+
+AL-82337Service Part Installation Instruction
+Marking Head Alignment
+1.6 Fine Adjustment of Working Distance
+1.Place a can centered under the Leader marking head.
+2.Pre-align to default working distance of 112.5mm to center of can using the hand wheeland a measuring tape or ruler to set the distance from the bottom of the marking head holder
+to center of the can (botton of the bowl).
+3.Close the door of the beam shield tunnel.
+4.Close the doors of the marking head enclosure.
+5.Close the key switch of the Leader laser.
+6.Start TCS+ and log in.
+7.Go to Global Settings and select Pilot Laser.
+10/20 - Rev. AA 9
+
+Service Part Installation InstructionAL-82337
+Marking Head Alignment
+8.Select option Focus Finder.
+On the bottom of the can a dot and a circle are displayed. Target is to center the dot insidethe circle.
+9.Use the hand wheel to align the working distancprotection window.e observing the pilot laser mark through the
+NoteA more accurate adjustment of the working distance may be necessary afterthe multi laser configuration, depending on the marking quality of the class 4
+laser.
+10.When the dot is inside the circle, note the counter value of the Z axis.
+11.Stop the pilot laser.
+Z axis counterscale 1/10 mm
+value in figure:116.4mm
+10 10/20 - Rev. AA
+
+AL-82337Service Part Installation Instruction
+Marking Head Alignment
+NoteIf the customer uses a different kind of fixture for the marking heads it is pos-sible to adjust the rotation and X/Y offset mechanically by using the pilot
+laser function Centered Axes on a plane surface for both systems.
+12.If there is a second laser system now place the can under its marking head.
+13.Connect via PC or TU430 to the Follower laser.
+14.Start TCS+ and log in.
+15.Close the key switch of the Follower laser.
+16.Go to Global Settings and select Pilot Laser.
+17.Select option Focus Finder.
+18.Align the working distance of the Follower laser using the hand wheel.
+19.When the dot is inside the circle, note the counter value of the Z axis.
+Z axis counterscale 1/10 mm
+value in figure:116.4mm
+10/20 - Rev. AA 11
+
+Service Part Installation InstructionAL-82337
+Marking Head Alignment
+20.Stop the pilot laser.
+21.Open the key switches of both laser systems.
+22.Open the door of the marking head enclosure.
+23.Loosen the upper and lower mounting screws of the Follower.
+24.Calculate the position difference in mm read from the counter at focus finder position of Lea-der and of Follower.
+[Leader counter value] - [Follower counter value] = adjustment value
+Example:Counter value in best focus of Leader is 59.6mm and best focus value of Follower is 61.7mm.
+59.6mm - 61.7mm = -2.1mm adjustment needed.
+mounting screwsof Follower laser
+12 10/20 - Rev. AA
+
+AL-82337Service Part Installation Instruction
+Marking Head Alignment
+25.Use the alignment screw of the marking head holder to adjust the Follower laser by theamount calculated.
+Check the scale (1 line = 1.0 mm).
+26.Move the Z axis to the initially aligned working distance of the Leader system (noted countervalue) using the hand wheel.
+27.Close the door of the marking head enclosure.
+28.Close the key switches of both laser systems.
+29.In TCS+ execute the focus finder function on both systems to verify that Leader and Followernow are aligned to the identical working distance.
+NoteIt is recommended to also do some test runs with 1 - 2mm higher and lowerin order to determine the best working distance at the site.
+30.Stop the pilot lasers.
+31.Tighten the mounting screws.
+alignment screwof Follower laser
+positiveadjustment
+negativeadjustment
+10/20 - Rev. AA 13
+
+Service Part Installation InstructionAL-82337
+Marking Head Alignment
+32.Fix position of the Z axis by pressing the knob.
+NoteSome additional fine tuning of laser marked code may be necessary bymoving the Z axis up/down slightly. Occasionally, the Follower laser mecha-
+nical working distance may need to adjusted slightly.
+14 10/20 - Rev. AA
+
+AL-82337Service Part Installation Instruction
+Marking Head Alignment
+1.7 Positioning of Fork Light Barrier
+1.Align the correct height position of the fork light barrier by observing the status LED of thelight barrier when the can is moved into the detection area.
+Make sure the mounting screws of the fork light barrier are loose enough to move the sen-sor up and down and that there is enough slack on the fork light barrier cable for the Z axis
+to travel up and down freely.
+NoteThe status LED is by default ON and ted. In the software the trigger setting is set to "falling edge" in the line setupturns to OFF when a product is detec-
+configuration.
+2.Align the trigger of the fork light barrier to the lower edge of the can bottom.
+3.Tighten the mounting screws of the fork light barrier.
+lower edge ofcan bottom
+status LED
+gap to be used as trigger event
+trigger level
+adjustment
+10/20 - Rev. AA 15

@@ -1,0 +1,41 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\Exchange of the LPC board LN-A.pdf
+# cifrado=False bloques=5 caracteres=1502
+
+Exchange of LPC Board LN-A
+
+1 Exchange of the LPC Board
+The following is required for exchanging the LPC board:hex key 2.5 mm
+offset hex key 5 mm
+1.1 Dismounting
+DangerBefore starting any work the laser system must be dead!1.Turn the key switch to position »0«.
+Remove the key to ensure that the laser system cannot be switched on.
+2.Wait until the message »Key switch open« is displayed on the touch screen.
+3.Switch off main switch.
+4.Disconnect the mains supply.
+1.Remove the front panel of the PCM housing.
+2.Loosen the safety interlock (2 turns) and remove the lateral fixing screw of the supply unit.
+3.Pull the supply unit out of the PCM.
+09/04 - Rev. 1.0 1
+
+lateral fixing screw
+safety interlock
+
+Exchange of LPC Board LN-A
+4.Disconnect thefollowing connections:
+5.Remove the four fixing screws of the LPC board and remove the LPC board.
+X108: X118: RF power supply X121 and X120:
+24 V supplyX112: lamp power supplyX110: external chillerCAN bus
+X119: laser
+power supply X109:
+X111: internal opticalfiber
+chiller
+1.2 Mounting
+NoteThe following connections must be unlocked:X119: laser power supply
+X111: internal chillerX118: RF power supply
+X110: external chillerX121 and X120: CAN bus
+X109: optical fiber
+1.Insert the new LPC board and tighten the fixing screws.
+2.Connect all connectors (see figure in section "Dismounting").
+3.Push the supply unit into the PCM, tighten the lateral fixing screw and lock the supply unit.
+4.Mount the front panel of the PCM housing.
+09/04 - Rev. 1.0 2

@@ -1,0 +1,3564 @@
+{
+ "producto": "Ribbons TTO Videojet - chart oficial 2.5.26",
+ "schema": 1,
+ "estado_general": "verificado (extraccion directa de celdas del XLSX oficial)",
+ "fuente": {
+  "archivo": "Videojet Ribbon and Label Chart - 2.5.26.xlsx",
+  "carpeta_equipo": "CURSO BRASIL / TTO 6x30 / Ribbons",
+  "hojas_usadas": [
+   "Ribbon Chart",
+   "TTO Ribbon",
+   "Standard Lengths Widths",
+   "Date and Lot Number Logic"
+  ],
+  "extraido_de": "datos/extraccion/tto_ribbon_chart_hojas.json"
+ },
+ "resumen": {
+  "grados_ribbon": 64,
+  "items_suministros": 694,
+  "filas_longitudes_estandar": 4,
+  "filas_longitudes_no_estandar": 6,
+  "lineas_logica_lote": 19
+ },
+ "grados_ribbon": [
+  {
+   "TTO": "INK OUT",
+   "Videojet Grade": "Wash Resistant",
+   "PN": "15-Y",
+   "Printer": "TTO",
+   "Description": "Delivers superior adhesion on fabric labels and textiles with resistance to washing and dry cleaning solvents.",
+   "Applications": "Fabric and flexible film when adhesion is critical or solvent resistance is needed",
+   "Key Substrates": "Cotton, acetate, and polyester",
+   "Colors": "Black",
+   "Max Printing Speed (mm/s)": 200,
+   "Blackness (Macbeth Densitometer)": 1.6,
+   "Overall Durability": 1,
+   "Heat Resistance (°C)": 200,
+   "Type": "Resin",
+   "Base Film": "4.5 mic PET"
+  },
+  {
+   "Videojet Grade": "Chemical Resistant",
+   "PN": "15-C",
+   "Printer": "TTO",
+   "Description": "Delivers excellent adhesion on flexible film and glossy labels with solvent and heat resistance.",
+   "Applications": "Flexible film when solvent or heat resistance is needed",
+   "Key Substrates": "Polyester, polypropylene, polyethylene",
+   "Colors": "Black",
+   "Max Printing Speed (mm/s)": 200,
+   "Blackness (Macbeth Densitometer)": 1.6,
+   "Overall Durability": 1,
+   "Heat Resistance (°C)": 250,
+   "Type": "Resin",
+   "Base Film": "4.5 mic PET"
+  },
+  {
+   "Videojet Grade": "High Speed Resin",
+   "PN": "15-HSR",
+   "Printer": "TTO",
+   "Description": "Delivers excellent adhesion on flexible film and glossy labels.",
+   "Applications": "Flexible film and glossy labels when adhesion and high speed are needed",
+   "Key Substrates": "Synethic label, metalized foil, polyester",
+   "Colors": "Black",
+   "Max Printing Speed (mm/s)": 500,
+   "Blackness (Macbeth Densitometer)": 1.7,
+   "Overall Durability": 0.95,
+   "Heat Resistance (°C)": 180,
+   "Type": "Resin",
+   "Base Film": "4.5 mic PET"
+  },
+  {
+   "Videojet Grade": "Premium",
+   "PN": "15-R",
+   "Printer": "TTO",
+   "Description": "Delivers excellent adhesion on flexible film and glossy labels.",
+   "Applications": "Flexible film and glossy labels when adhesion and high speed are needed",
+   "Key Substrates": "Synethic label, metalized foil, polyester",
+   "Colors": "Black, White, Red, Blue, Green,  Brown",
+   "Max Printing Speed (mm/s)": 400,
+   "Blackness (Macbeth Densitometer)": 1.8,
+   "Overall Durability": 0.95,
+   "Heat Resistance (°C)": 180,
+   "Type": "Resin",
+   "Base Film": "4.5 mic PET"
+  },
+  {
+   "Videojet Grade": "Resin",
+   "PN": "15-J",
+   "Printer": "TTO",
+   "Description": "Delivers excellent adhesion on flexible film and glossy labels.",
+   "Applications": "Flexible film and glossy labels when adhesion is needed",
+   "Key Substrates": "Synethic label, metalized foil, polyester",
+   "Colors": "Black",
+   "Max Printing Speed (mm/s)": 200,
+   "Blackness (Macbeth Densitometer)": 1.7,
+   "Overall Durability": 0.95,
+   "Heat Resistance (°C)": 180,
+   "Type": "Resin",
+   "Base Film": "4.5 mic PET"
+  },
+  {
+   "Videojet Grade": "Ultra",
+   "PN": "15-U",
+   "Printer": "TTO",
+   "Description": "Delivers excellent print quality on flexible film and glossy labels at high speeds.",
+   "Applications": "Flexible film and glossy labels when high speed is needed",
+   "Key Substrates": "Polyester, polypropylene, polyethylene",
+   "Colors": "Black",
+   "Max Printing Speed (mm/s)": 1000,
+   "Blackness (Macbeth Densitometer)": 1.8,
+   "Overall Durability": 0.8,
+   "Heat Resistance (°C)": 110,
+   "Type": "Wax-Resin",
+   "Base Film": "4.0 mic PET"
+  },
+  {
+   "Videojet Grade": "Union Chemicar US774",
+   "Printer": "TTO",
+   "Description": "wax/resin, near-edge/TTO",
+   "Key Substrates": "Coated paper, glossy paper, synthetic paper, PET, PP, Nylon",
+   "Colors": "Black",
+   "Max Printing Speed (mm/s)": 1000,
+   "Blackness (Macbeth Densitometer)": 1.7
+  },
+  {
+   "Videojet Grade": "Super Standard",
+   "PN": "15-P",
+   "Printer": "TTO",
+   "Description": "General purpose ribbon for use when increased adhesion is required",
+   "Applications": "General purpose ribbon",
+   "Key Substrates": "Polyester, polypropylene, polyethylene",
+   "Colors": "Black, Metallic White",
+   "Max Printing Speed (mm/s)": 800,
+   "Blackness (Macbeth Densitometer)": 1.7,
+   "Overall Durability": 0.8,
+   "Heat Resistance (°C)": 110,
+   "Type": "Wax-Resin",
+   "Base Film": "4.5 mic PET"
+  },
+  {
+   "Videojet Grade": "Standard",
+   "PN": "15-S",
+   "Printer": "TTO",
+   "Description": "General purpose ribbon available in 10 colors.  Standard Black is obsolete - use Ultra Black",
+   "Applications": "General purpose ribbon",
+   "Key Substrates": "Polyester, polypropylene, polyethylene",
+   "Colors": "Black, White, Cyan, Green, Blue, Orange, Red, Yellow, Magenta, Brown, Brilliant White, Gold",
+   "Max Printing Speed (mm/s)": 800,
+   "Blackness (Macbeth Densitometer)": 2.2,
+   "Overall Durability": 0.7,
+   "Heat Resistance (°C)": 100,
+   "Type": "Wax-Resin",
+   "Base Film": "4.5 mic PET"
+  },
+  {
+   "Videojet Grade": "Rough Texture",
+   "PN": "15-Z",
+   "Printer": "TTO",
+   "Description": "Delivers excellent print quality on rough texture substrates such as Tyvek and Kraft paper.",
+   "Applications": "Substrates with rough texture such as Tyvek and Kraft paper.",
+   "Key Substrates": "Uncoated paper, coated paper, Tyvek",
+   "Colors": "Black",
+   "Max Printing Speed (mm/s)": 400,
+   "Blackness (Macbeth Densitometer)": 1.8,
+   "Overall Durability": 0.6,
+   "Heat Resistance (°C)": 100,
+   "Type": "Wax-Resin",
+   "Base Film": "4.5 mic PET"
+  },
+  {
+   "Videojet Grade": "Basic",
+   "PN": "15-B",
+   "Printer": "TTO",
+   "Description": "Basic purpose ribbon",
+   "Applications": "Coated and uncoated paper labels",
+   "Key Substrates": "Uncoated paper, coated paper",
+   "Colors": "Black",
+   "Max Printing Speed (mm/s)": 500,
+   "Blackness (Macbeth Densitometer)": 1.8,
+   "Overall Durability": 0.7,
+   "Heat Resistance (°C)": 100,
+   "Type": "Wax-Resin",
+   "Base Film": "4.5 mic PET"
+  },
+  {
+   "Videojet Grade": "Value",
+   "PN": "15-V",
+   "Printer": "TTO",
+   "Description": "Entry level general purpose, China only",
+   "Applications": "Coated and uncoated paper labels",
+   "Colors": "Black",
+   "Max Printing Speed (mm/s)": 600,
+   "Blackness (Macbeth Densitometer)": 1.8,
+   "Overall Durability": 0.7,
+   "Type": "Wax-Resin",
+   "Base Film": "4.5 mic PET"
+  },
+  {
+   "Videojet Grade": "K",
+   "PN": "15-K",
+   "Printer": "TTO",
+   "Description": "Videojet 15-K =  Kurz  - France, TTF K 700.  K 7000 - our new near edge wax/resin ribbon prints with extreme precision and opacity. Due to its new formulation it shows a very good mechanical resistance on plastic surfaces and comes very close to the requirements of a near edge resin ribbon.  Our comparison table on the following page as well as the product information attached will give you a more detailed overview of the properties of K 7000. On desktop and inline printers it shows an excellent transfer rate at a printing speed of up to 175 mm/sec.  Please order sample rolls with us and convince yourself of the good characteristics of our quality K 7000.  https://www.ttr-kurz.com/",
+   "Type": "Wax-Resin"
+  },
+  {
+   "Videojet Grade": "A",
+   "PN": "15-A",
+   "Printer": "TTO",
+   "Description": "Videojet 15-A = Alpha 8+HM  (Japan Pulp & Paper), wax-resin. http://www.jpd.de/",
+   "Type": "Wax-Resin"
+  },
+  {
+   "Videojet Grade": "L",
+   "PN": "15-L",
+   "Printer": "TTO"
+  },
+  {
+   "Videojet Grade": "T",
+   "PN": "15-T",
+   "Printer": "TTO",
+   "Description": "The grade is Premium (AXR 600) with a specific backcoat.",
+   "Applications": "Special application support only; VJ-India comment: T-Type Ribbon with best print speed Up to speed of 375mm/sec[around 22.5m/min]",
+   "Colors": "Black",
+   "Type": "Wax-Resin"
+  },
+  {
+   "Videojet Grade": "Extreme Temperature (DNP)",
+   "PN": "15-DX",
+   "Printer": "TTO",
+   "Description": "Delivers excellent transfer resistant on flexible film used in hot fill applications (under 198F)",
+   "Applications": "*Adhesion and transfer resistance is strongly substrate and application dependant.",
+   "Key Substrates": "Polypropylene, polyethylene",
+   "Colors": "Black, White"
+  },
+  {
+   "Videojet Grade": "Extreme Temperature (Armor)",
+   "PN": "15-X",
+   "Printer": "TTO",
+   "Description": "Delivers excellent transfer resistant on flexible film used in hot fill applications (under 198F)",
+   "Applications": "*Adhesion and transfer resistance is strongly substrate and application dependant.",
+   "Key Substrates": "Polypropylene, polyethylene",
+   "Colors": "Black, White",
+   "Max Printing Speed (mm/s)": 200,
+   "Blackness (Macbeth Densitometer)": 1.9,
+   "Overall Durability": "70%*",
+   "Heat Resistance (°C)": 100
+  },
+  {
+   "Videojet Grade": "Standard Long Length",
+   "PN": "15-LLS",
+   "Printer": "TTO",
+   "Description": "Obsolete, General purpose long length",
+   "Max Printing Speed (mm/s)": 1000,
+   "Blackness (Macbeth Densitometer)": 1.7,
+   "Overall Durability": 0.75
+  },
+  {
+   "Videojet Grade": "High Speed",
+   "PN": "15-H",
+   "Printer": "TTO",
+   "Description": "Obsolete product"
+  },
+  {
+   "Videojet Grade": "Closest estimation",
+   "PN": "MI 3850",
+   "Printer": "TTO",
+   "Description": "Flexible ribbon for high durability printing applications, up to 900M.  Only for use short term fix where there are heat problems with 3520.",
+   "Applications": "Very good printing quality at high speed and sharpness of 90°.  Printheads last longer since the ribbon requires less energy to print.  Good resistance to scuffing or rubbing.",
+   "Key Substrates": "Ideal for printing on a wide variety of substrates including metallized foil, coated paper, and vellum.  Substrates: PET, PVC, PE, PP, Coated Paper, Metalized foil, Vellum.",
+   "Colors": "Black",
+   "Max Printing Speed (mm/s)": 800,
+   "Blackness (Macbeth Densitometer)": 2.2,
+   "Overall Durability": 70,
+   "Heat Resistance (°C)": 100
+  },
+  {
+   "TTO": "LPA",
+   "Videojet Grade": "Videojet Grade",
+   "PN": "PN",
+   "Printer": "Printer",
+   "Description": "Description",
+   "Applications": "Applications",
+   "Key Substrates": "Key Substrates",
+   "Colors": "Colors",
+   "Max Printing Speed (mm/s)": "Max Printing Speed (mm/s)",
+   "Blackness (Macbeth Densitometer)": "Blackness (Macbeth Densitometer)",
+   "Overall Durability": "Overall Durability \n(0-100%)",
+   "Heat Resistance (°C)": "Heat Resistance (°C)",
+   "Type": "Type",
+   "Base Film": "Base Film"
+  },
+  {
+   "TTO": "INK IN",
+   "Videojet Grade": "Standard Resin",
+   "PN": "14-N",
+   "Printer": "LPA 9550",
+   "Description": "High performance, good adhesion on high gloss materials",
+   "Colors": "Black",
+   "Max Printing Speed (mm/s)": 400,
+   "Blackness (Macbeth Densitometer)": 1.8,
+   "Overall Durability": 0.95
+  },
+  {
+   "Videojet Grade": "Super Standard",
+   "PN": "14-M",
+   "Printer": "LPA 9550",
+   "Description": "General purpose ribbon for use when increased adhesion is required",
+   "Colors": "Metallic White",
+   "Max Printing Speed (mm/s)": 800,
+   "Blackness (Macbeth Densitometer)": 1.7,
+   "Overall Durability": 0.8
+  },
+  {
+   "Videojet Grade": "Ultra",
+   "PN": "14-U",
+   "Printer": "LPA",
+   "Description": "Delivers excellent print quality on flexible film and glossy labels at high speeds.",
+   "Applications": "Flexible film and glossy labels when high speed is needed",
+   "Key Substrates": "Polyester, polypropylene, polyethylene",
+   "Colors": "Black",
+   "Max Printing Speed (mm/s)": 1000,
+   "Blackness (Macbeth Densitometer)": 1.8,
+   "Overall Durability": 0.8,
+   "Heat Resistance (°C)": 110
+  },
+  {
+   "Videojet Grade": "Regular",
+   "PN": "14-E",
+   "Printer": "LPA 9550",
+   "Description": "General purpose ribbon for coated and uncoated labels",
+   "Applications": "Label printing",
+   "Key Substrates": "Paper Labels",
+   "Colors": "Black",
+   "Max Printing Speed (mm/s)": 600,
+   "Blackness (Macbeth Densitometer)": 1.8,
+   "Overall Durability": 0.7
+  },
+  {
+   "Videojet Grade": "Rough Texture",
+   "PN": "14-Z",
+   "Printer": "LPA",
+   "Description": "Delivers excellent print quality on rough texture substrates such as Tyvek and Kraft paper.",
+   "Applications": "Substrates with rough texture such as Tyvek and Kraft paper.",
+   "Key Substrates": "Uncoated paper, coated paper, Tyvek",
+   "Colors": "Black",
+   "Max Printing Speed (mm/s)": 400,
+   "Blackness (Macbeth Densitometer)": 1.8,
+   "Overall Durability": 0.6,
+   "Heat Resistance (°C)": 100
+  },
+  {
+   "Videojet Grade": "Enhanced Wax",
+   "PN": "14-W",
+   "Printer": "LPA",
+   "Colors": "Black"
+  },
+  {
+   "Videojet Grade": "Standard",
+   "PN": "14-SPA",
+   "Printer": "LPA 9550",
+   "Description": "Standard Black, red, general purpose",
+   "Colors": "Black, Red, Green"
+  },
+  {
+   "Videojet Grade": "Standard Resin",
+   "PN": "99-N\nChile Only",
+   "Printer": "LPA 9550\n(ink inside)",
+   "Description": "High performance, excellent adhesion",
+   "Max Printing Speed (mm/s)": 400,
+   "Blackness (Macbeth Densitometer)": 1.8,
+   "Overall Durability": 0.95
+  },
+  {
+   "PN": "17-C",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-CS"
+  },
+  {
+   "PN": "17-CU",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-CV",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-CW",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-CX",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-CY",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-CYN",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17N-ZS",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-SCF",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-X",
+   "Description": "Zhuoli Ribbon Sourced in China",
+   "Type": "Wax-Resin"
+  },
+  {
+   "PN": "17-Y",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-Z",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZA",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZB",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZC",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZCN",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZM",
+   "Description": "Zhuoli Ribbon Sourced in China",
+   "Type": "Resin",
+   "Base Film": "3.5 mic BOPET"
+  },
+  {
+   "PN": "17-ZN",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZR",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZS",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZSN",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZT",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZTN",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZU",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZUN",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZV",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZW",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZWN",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZX",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-ZY",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "PN": "17-",
+   "Description": "Zhuoli Ribbon Sourced in China"
+  },
+  {
+   "Videojet Grade": "Obsolete"
+  },
+  {
+   "Videojet Grade": "Not Used: D, F, G, I, O, Q"
+  }
+ ],
+ "items_suministros_tto": [
+  {
+   "item_no": "11001",
+   "descripcion": "700776CM - Black ICE 100 ribbon, 55mm x 1000m - 10 Rolls/ box"
+  },
+  {
+   "item_no": "11003",
+   "descripcion": "Black ICE 100, 110mm x 600m - Part No: 701625CM - 5 Rolls/ box"
+  },
+  {
+   "item_no": "11009",
+   "descripcion": "Black ICE110, 30mm x 900m Part No: 700990CM - 25 Rolls/ box"
+  },
+  {
+   "item_no": "11010",
+   "descripcion": "Black ICE105, 55mm x 900m, Part No: 702054CM - 10 Rolls/ box"
+  },
+  {
+   "item_no": "11011",
+   "descripcion": "Black ICE110, 55mm x 900m, Part No: 700991CM - 10 Rolls/ box"
+  },
+  {
+   "item_no": "11013",
+   "descripcion": "Black ICE 100, 55mm x 600m, Part No: 702297CM - 10 Rolls/ box"
+  },
+  {
+   "item_no": "11015",
+   "descripcion": "Black ICE 105, 30mm x 900m - Part No: 702517CM - 25 Rolls/ box"
+  },
+  {
+   "item_no": "11020",
+   "descripcion": "Thermal Printhead Cleaning Wipes (100 wipes per box)"
+  },
+  {
+   "item_no": "11024",
+   "descripcion": "Black ICE110, 110mm x 600m, Part No: 701792CM - 5 Rolls/ box"
+  },
+  {
+   "item_no": "11029",
+   "descripcion": "T500-4 - Torus 126/500 ink (canisters 4 per box)"
+  },
+  {
+   "item_no": "11030",
+   "descripcion": "Black ICE 105 - 703517ACM - 110mm x 450m, 5 Rolls/ Box"
+  },
+  {
+   "item_no": "11031",
+   "descripcion": "Black ICE110, 33mm x 500m, Part Number: 701985CM - 25 Rolls/ box"
+  },
+  {
+   "item_no": "11033",
+   "descripcion": "Black ICE 105, 33mm x 500m, Part Number: 701981CM - 25 Rolls/ box"
+  },
+  {
+   "item_no": "11039",
+   "descripcion": "White ICE110, 110mm x 450m, Part No: 701928CM - 5 Rolls/ box"
+  },
+  {
+   "item_no": "11057",
+   "descripcion": "Metallic White, ICE105, 55mm x 900m, 702663CM - 10 Rolls/ box"
+  },
+  {
+   "item_no": "11064",
+   "descripcion": "Orange ICE 100 - 15-S55OQ10 - 55mm x 750mtr - 10 Rolls/ box"
+  },
+  {
+   "item_no": "11067",
+   "descripcion": "Magenta ICE 100 55mm x 750mtr - 15-S55MQ10CM 10 rolls / box"
+  },
+  {
+   "item_no": "11068",
+   "descripcion": "Light Red ICE100 -110mm x 450mm - 704012, 5 rolls / box"
+  },
+  {
+   "item_no": "11069",
+   "descripcion": "Light Green: ICE100: 110mm x 450mtr: 15-S110GQ5 (704015) 5 rolls / box"
+  },
+  {
+   "item_no": "11073",
+   "descripcion": "Light Red: ICE100 55mm x 750mtr - 15-S55RQ10CM (10 rolls per box)"
+  },
+  {
+   "item_no": "11078",
+   "descripcion": "Metallic White, ICE105, 110mm x 600m: 702664ACM -5 Rolls/ box"
+  },
+  {
+   "item_no": "11082",
+   "descripcion": "White ICE110: 30mm x 900mtr: 15-R30WQ25 25 rolls per box"
+  },
+  {
+   "item_no": "11083",
+   "descripcion": "White ICE110: 55mm x 900mtr: 15-R55WQ10CM (701995) 10 rolls / box"
+  },
+  {
+   "item_no": "11084",
+   "descripcion": "AS5510012MW - Metallic White, X50, 55mm x 750m - 12 rolls/ box"
+  },
+  {
+   "item_no": "11091",
+   "descripcion": "15-Y55KQ10 - Black ICE130, 55mm x 1000mtr, 10 rolls per box -"
+  },
+  {
+   "item_no": "11138",
+   "descripcion": "Light Blue ICE100: 110mm x 450mtr: 704014, 5 rolls / box"
+  },
+  {
+   "item_no": "11146",
+   "descripcion": "White ICE 110, 33mm x 500m, Part Number: 701986 - 25 Rolls/ box"
+  },
+  {
+   "item_no": "11148",
+   "descripcion": "H427 - Printhead"
+  },
+  {
+   "item_no": "11152",
+   "descripcion": "F601425 - Matt Gold wax/ resin: 110mm x 450m - 10 rolls/ box"
+  },
+  {
+   "item_no": "11162",
+   "descripcion": "601193 - ICE 1000 White, 30mm x 750m  - 25 Rolls/ box"
+  },
+  {
+   "item_no": "11163",
+   "descripcion": "601194 - ICE 1000 White, 55mm x 750m, 10 Rolls/ box"
+  },
+  {
+   "item_no": "11164",
+   "descripcion": "601635 - ICE 1000  White, 110mm x 450m, 6 Rolls/ box"
+  },
+  {
+   "item_no": "11167",
+   "descripcion": "F600476 - Matt Gold wax/ resin: 55mm x 750m - 10 rolls/ box"
+  },
+  {
+   "item_no": "11168",
+   "descripcion": "Orange ICE 100 - 15-S110OQ5 - 110mm x 450m - 5 Rolls/ box"
+  },
+  {
+   "item_no": "11169",
+   "descripcion": "600776M - Black ICE 1000 ribbon, 55mm x 1000m, 10 Rolls/ box"
+  },
+  {
+   "item_no": "11170",
+   "descripcion": "601625M - Black ICE 1000, 110mm x 600m, 6 Rolls/ box"
+  },
+  {
+   "item_no": "11174",
+   "descripcion": "601637 - ICE 1000  Cobalt Blue, 110mm x 450m, OW, 6 Rolls/ box"
+  },
+  {
+   "item_no": "11175",
+   "descripcion": "601638 - ICE 1000  Green, 110mm x 450m, OW, 6 Rolls/ box"
+  },
+  {
+   "item_no": "11176",
+   "descripcion": "600752 - ICE 1000 Cobalt Blue, 55mm x 750m, OW, 10 rolls/ box"
+  },
+  {
+   "item_no": "11180",
+   "descripcion": "600020 - Black ICE 1000 ribbon, 55mm x 1200m, 10 Rolls/ box"
+  },
+  {
+   "item_no": "11181",
+   "descripcion": "603005 - Black ICE 1000, 110mm x 700m, 6 Rolls/ box"
+  },
+  {
+   "item_no": "11184",
+   "descripcion": "Black ICE 105 - 704019CM - 110mm x 900m, 5 Rolls/ Box"
+  },
+  {
+   "item_no": "11186",
+   "descripcion": "Brilliant White ICE100W: 33mm x 450m, 25 rolls/ box - 703031"
+  },
+  {
+   "item_no": "11189",
+   "descripcion": "Metallic White, ICE105, 33mm X 550m, 701982CM, OW 25 rolls/box"
+  },
+  {
+   "item_no": "11191",
+   "descripcion": "White ICE110: 33mm x 900mtr: 15-R33WQ25 25 rolls per box"
+  },
+  {
+   "item_no": "11192",
+   "descripcion": "Magenta ICE100; 110mm x 450mtr - 15-S110MQ5CM - 5 rolls / box"
+  },
+  {
+   "item_no": "11194",
+   "descripcion": "703033 - Brilliant White ICE100, 55mm X 750m, 10 rolls/box"
+  },
+  {
+   "item_no": "11195",
+   "descripcion": "Brilliant White ICE100W: 110mm x 450m, 10 rolls/ box - 703034"
+  },
+  {
+   "item_no": "11700",
+   "descripcion": "Pre-saturated foam swabs (10pk) - 216054"
+  },
+  {
+   "item_no": "11703",
+   "descripcion": "Brown ICE100: 110mm x 450m - 15-S110NQ5CM - 5rolls per box"
+  },
+  {
+   "item_no": "12008",
+   "descripcion": "AS3010525MW - Metallic White, X50, 30mm x 750m - 25 Rolls/ box"
+  },
+  {
+   "item_no": "12020",
+   "descripcion": "CM500776 - CM500 Black , 55mm x 1000m - 10 Rolls/ box"
+  },
+  {
+   "item_no": "12022",
+   "descripcion": "CM501625 - CM500 Black 110mm x 600m,  Black - 6 Rolls/ box"
+  },
+  {
+   "item_no": "12023",
+   "descripcion": "CM502063 - CM500 Black, 80mm x 600m - 10 Rolls/ box"
+  },
+  {
+   "item_no": "12024",
+   "descripcion": "CM502000 - Smartdate 2 Compatible; Black, 55mm x 600m - 10 Rolls/ box"
+  },
+  {
+   "item_no": "12025",
+   "descripcion": "CM500775 - CM500 Black, 30mm x 1000m - 25 Rolls/ box"
+  },
+  {
+   "item_no": "12026",
+   "descripcion": "CM502297 - CM500 Black, 55mm x 600m - 10 Rolls/ box"
+  },
+  {
+   "item_no": "12027",
+   "descripcion": "CM500306 - CM500 Black, 30mm x 600m - 25 rolls/box"
+  },
+  {
+   "item_no": "12031",
+   "descripcion": "CM500350  - Pegasus; CM500 Black, 35mm x 600m - 25 Rolls/ box"
+  },
+  {
+   "item_no": "12051",
+   "descripcion": "AS11010010MW,  110mm x 450m Metallic White, X50 - 10 rolls/ box"
+  },
+  {
+   "item_no": "12054",
+   "descripcion": "TT1106008BLK,  110mm x 600m, Black, X80, 8 Rolls/ box"
+  },
+  {
+   "item_no": "12062",
+   "descripcion": "CM500700 - CM500 Black, 35mm x 1000m - 15 rolls/ box"
+  },
+  {
+   "item_no": "12063",
+   "descripcion": "CM130450 - FHWR Black, 130mm x 450m - OW - 12 Rolls/ box"
+  },
+  {
+   "item_no": "12065",
+   "descripcion": "CM501630 - CM500 Black, 110mm x 450m - 10 rolls/ box"
+  },
+  {
+   "item_no": "12066",
+   "descripcion": "CM800991 - Black CM800, 55mm x 900m - 10 rolls/ box"
+  },
+  {
+   "item_no": "12067",
+   "descripcion": "TT55100012BLK - Grade X80 - 55mm x 1000m, Black, 12 Rolls/ box - OW"
+  },
+  {
+   "item_no": "12069",
+   "descripcion": "CM110300 - FHWR ZC OW Black - 110mm x 300m - 12 rolls/ box"
+  },
+  {
+   "item_no": "12076",
+   "descripcion": "CM104360 - Sato Comp, Black Wax Ribbon - 104mm x 360m - 10 rolls/ box"
+  },
+  {
+   "item_no": "12083",
+   "descripcion": "TT3060025BLK - Grade X80 - 30mm x 600m, Black, 25 Rolls/ box - OW"
+  },
+  {
+   "item_no": "12085",
+   "descripcion": "CM130600 - Smartdate Compatible 130mm x 600m - 5 rolls/ box"
+  },
+  {
+   "item_no": "12100",
+   "descripcion": "CM110450 - Zebra Compatible Wax Ribbon Black  OW, 110mm x 450m - 12 rolls/box"
+  },
+  {
+   "item_no": "12102",
+   "descripcion": "CM502893 - CM500 Black, 100mm x 600m - 6 Rolls/ box"
+  },
+  {
+   "item_no": "12140",
+   "descripcion": "600750 - ICE 1000 Green, 55mm x 750m, OW, 10 rolls/ box"
+  },
+  {
+   "item_no": "12160",
+   "descripcion": "CM80450 - Citizen Compatible Wax Ribbon Black  OW, 80mm x 450m - 12 rolls/box"
+  },
+  {
+   "item_no": "12191",
+   "descripcion": "CM104450 - FHWR ZC OW - 104mm x 450m - 12 rolls/ box"
+  },
+  {
+   "item_no": "12192",
+   "descripcion": "CM154450IW - Intermec compatible; Black, 154mm x 450m - 6 rolls/box"
+  },
+  {
+   "item_no": "12196",
+   "descripcion": "Labels - 100mm x 300mm NEL, White Vellum Perm, OW, 400mm OD, 76mm core - 2,500/roll"
+  },
+  {
+   "item_no": "12199",
+   "descripcion": "CM500020"
+  },
+  {
+   "item_no": "12208",
+   "descripcion": "CM083600 TEC compatible  (Ink out CC) 83mm x 600m - 18 rolls/ box"
+  },
+  {
+   "item_no": "12213",
+   "descripcion": "CM502010 - Smartdate 5 Compatible; Black, IW, 55mm x 700m - 10 Rolls/ box"
+  },
+  {
+   "item_no": "12214",
+   "descripcion": "CM710600 - Smartdate 5 Compatible; Black, IW, 55mm x 600m - 12 Rolls/ box"
+  },
+  {
+   "item_no": "12220",
+   "descripcion": "CM134600, TEC compatible, 134mm x 600m OW, 6 rolls/ Box"
+  },
+  {
+   "item_no": "12222",
+   "descripcion": "CM26083300 - 83mm x 300m TEC compatible, FHWR, OW, 10 rolls/ box"
+  },
+  {
+   "item_no": "12363",
+   "descripcion": "TRR510W - White Resin Sato CL4NX+ 305DPI printer Compatible IW, 102mm x 250m - 12 rolls/ box"
+  },
+  {
+   "item_no": "12367",
+   "descripcion": "(blank)"
+  },
+  {
+   "item_no": "12398",
+   "descripcion": "CM904760 Toshiba Tec B472/SX4/FX4 compatible ribbon, 76mm X 600m OW, Std NE Wax/Resin, 12 rolls/box"
+  },
+  {
+   "item_no": "12399",
+   "descripcion": "CM904990 TEC B682 TEC B672 compatible ribbon, 160mm X 300m OW, Std NE Wax/Resin, 10 rolls/box"
+  },
+  {
+   "item_no": "12402",
+   "descripcion": "Zebra Wax Ribbon; 83mm x 450m, 2300; Standard, 25mm core, 12/box"
+  },
+  {
+   "item_no": "12403",
+   "descripcion": "CM156450 - Zebra compat., Black Wax Ribbon - 156mm x 450m - 12 rolls/ box"
+  },
+  {
+   "item_no": "12404",
+   "descripcion": "CM102450 - Zebra compat., Black Wax Ribbon - 102mm x 450m - 12 rolls/ box"
+  },
+  {
+   "item_no": "12406",
+   "descripcion": "CM360110  Black, resin enhanced wax 110mmx360m OW - 12 rolls/ box"
+  },
+  {
+   "item_no": "12410",
+   "descripcion": "CM156460 - Datamax Compatible Ribbon, Black  Resin Enhanced  165mm x 450m OW  12 Rolls/box"
+  },
+  {
+   "item_no": "12411",
+   "descripcion": "CM040340 - REW; Black, IW, 40mm x 152m - 36 Rolls/ box"
+  },
+  {
+   "item_no": "12412",
+   "descripcion": "CM904550 Toshiba Tec B-SX5/EX4 compatible ribbon, 55mm X 600m OW, Std Wax/Resin, 12 rolls/box"
+  },
+  {
+   "item_no": "13001",
+   "descripcion": "Black ICE 100HS, 55mm x 1200m, Part No: 703020 - 10 Rolls/ box"
+  },
+  {
+   "item_no": "13002",
+   "descripcion": "Black ICE 100HS ribbon, 55mm x 700m, Part No: 703001 - 10 Rolls/ box"
+  },
+  {
+   "item_no": "13005",
+   "descripcion": "Black ICE 100HS ribbon, 110mm x 700m, Part No: 703005 - 5 Rolls/ box"
+  },
+  {
+   "item_no": "13006",
+   "descripcion": "Black ICE 100HS ribbon, 30mm x 1200m, Part No: 703006 - 25 Rolls/ box"
+  },
+  {
+   "item_no": "13007",
+   "descripcion": "Black ICE 100HS ribbon, 30mm x 700m, Part No: 703007 - 25 Rolls/ box"
+  },
+  {
+   "item_no": "13009",
+   "descripcion": "Black ICE 100HS ribbon, 33mm x 700m, Part No: 703021 - 25 Rolls/ box"
+  },
+  {
+   "item_no": "13064",
+   "descripcion": "CM500020 - Black , CM500+ 55mm x 1200m - 10 Rolls/ box"
+  },
+  {
+   "item_no": "13067",
+   "descripcion": "CM500005 - Black , CM500+ 110mm x 700m - 6 Rolls/ box"
+  },
+  {
+   "item_no": "13068",
+   "descripcion": "CM503001 - Black , CM500+ 55mm x 700m - 10 Rolls/ box"
+  },
+  {
+   "item_no": "13069",
+   "descripcion": "CM503006 - Black , CM500+ 30mm x 1200m - 25 Rolls/ box"
+  },
+  {
+   "item_no": "13072",
+   "descripcion": "CM503008 - Black , CM500+ 35mm x 1200m - 25 Rolls/ box"
+  },
+  {
+   "item_no": "13074",
+   "descripcion": "CM503021- Black , CM500+ 35mm x 700m - 25 Rolls/ box"
+  },
+  {
+   "item_no": "13080",
+   "descripcion": "CM700054 - Black , CM700, 55mm x 1200m - 10 Rolls/ box"
+  },
+  {
+   "item_no": "13081",
+   "descripcion": "CM700092 - Black , CM700, 110mm x 700m - 6 rolls/ box"
+  },
+  {
+   "item_no": "13083",
+   "descripcion": "CM801792 - Black, CM800, 110mm x 600m - 6 Rolls/ box"
+  },
+  {
+   "item_no": "13087",
+   "descripcion": "CM707008 - Black, CM700, 35mm x 1200m- 25 rolls/ box"
+  },
+  {
+   "item_no": "13088",
+   "descripcion": "CM503020 - Black, CM500+, 110mm x 1200m - 5 rolls/ box"
+  },
+  {
+   "item_no": "13090",
+   "descripcion": "CM500035 - Black, CM500+, 35mm x 1000m,(IW) - 25 rolls/ box"
+  },
+  {
+   "item_no": "13092",
+   "descripcion": "CM500040 - Black, CM500+, 55mm x 1100m,(IW) - 10 rolls/ box"
+  },
+  {
+   "item_no": "13093",
+   "descripcion": "CM800900 - Black, CM800, 30mm x 900m - 25 rolls/ box"
+  },
+  {
+   "item_no": "13095",
+   "descripcion": "CM800075 - Black, CM800, 30mm x 600m - 25 rolls/ box"
+  },
+  {
+   "item_no": "13096",
+   "descripcion": "CM803008 - Black, CM800, 35mm x 900m - 25 Rolls/ box"
+  },
+  {
+   "item_no": "13097",
+   "descripcion": "CM700020 - Black, CM700, 110mm x 1200m- 5 rolls/ box"
+  },
+  {
+   "item_no": "13098",
+   "descripcion": "Black ICE 400, 110mm x 600m, Part No: 15-Z110KQ5-600 - 5 Rolls/ Box"
+  },
+  {
+   "item_no": "13099",
+   "descripcion": "Black ICE 400, 55mm x 1000m, Part No: 15-Z55KQ10- 10 Rolls/ Box"
+  },
+  {
+   "item_no": "13109",
+   "descripcion": "Black ICE 400, 33mm x 600m, Part No: 15-Z33KQ25-600 - 25 Rolls/ Box"
+  },
+  {
+   "item_no": "13110",
+   "descripcion": "CM200114 - Black , CM200, 114mm x 450m - 12 Rolls/ box"
+  },
+  {
+   "item_no": "13114",
+   "descripcion": "CM700035 - Black, CM700, 35mm x 700m OW - 25 rolls/ box"
+  },
+  {
+   "item_no": "13115",
+   "descripcion": "CM801985 - Black CMD21, IW, 110mm x 500m - 6 Rolls/ box"
+  },
+  {
+   "item_no": "13116",
+   "descripcion": "15-Y33KQ25-600 - Black - 30mm x 600m - OW - 25 rolls/box"
+  },
+  {
+   "item_no": "13119",
+   "descripcion": "CM500042 - Black, CM500+ 40mm x 1200m - 25 Rolls/ box"
+  },
+  {
+   "item_no": "13121",
+   "descripcion": "CM500072 - Black, CM500+ 55mm x 900m - 10 Rolls/ box (IW) SmartDate Compatible"
+  },
+  {
+   "item_no": "13134",
+   "descripcion": "CM500080 - Black, CM500+ 130mm x 560m (IW) - 6 Rolls/ box"
+  },
+  {
+   "item_no": "13135",
+   "descripcion": "CM500087 - Black, CM500+ 130mm x 900m (IW) - 5 Rolls/ box"
+  },
+  {
+   "item_no": "13139",
+   "descripcion": "CM500088 - Black, CM500+ 130mm x 800m, near edge wax/resin Notched - (IW) - 6 Rolls/ box"
+  },
+  {
+   "item_no": "13201",
+   "descripcion": "CMS104450 - FHWR SC IW, 104mm x 450m - 12 rolls/ box"
+  },
+  {
+   "item_no": "13202",
+   "descripcion": "CMS055450 - FHWR SC IW, 55mm x 450m - 24 rolls/ box"
+  },
+  {
+   "item_no": "13204",
+   "descripcion": "CM940600 - WR OW, 40mm x 600m - 10 rolls/ box"
+  },
+  {
+   "item_no": "13207",
+   "descripcion": "CM800992 - Black CM800, IW, 55mm x 900m - 10 rolls/ box"
+  },
+  {
+   "item_no": "13210",
+   "descripcion": "CM15044045 - Premium FHWR OW Black - 40mm x 300m - 24 rolls/box"
+  },
+  {
+   "item_no": "13216",
+   "descripcion": "CM904770 - 35mm x 770m, Black, IW - 25 Rolls/ box"
+  },
+  {
+   "item_no": "13217",
+   "descripcion": "CMS104600 - Black Sato CL4NX+ 305DPI printer Compatible IW, 104mm x 600m - 9 rolls/ box"
+  },
+  {
+   "item_no": "13218",
+   "descripcion": "CMW104360 - White Wax Sato CL4NX+ 305DPI printer Compatible IW, 104mm x 360m - 12 rolls/ box"
+  },
+  {
+   "item_no": "17404",
+   "descripcion": "Zebra Ribbon - 2300 standard wax; Black, 156mm x 450m - 12 rolls/box"
+  },
+  {
+   "item_no": "17408",
+   "descripcion": "Zebra Ribbon - 2300 Standard, Black, 60mm x 450m - 12 rolls/box"
+  },
+  {
+   "item_no": "17427",
+   "descripcion": "Zebra Labels - Z-Select 2000T White; 102mm x 152mm, NEL, OW - 950/roll - 4 rolls/box"
+  },
+  {
+   "item_no": "17429",
+   "descripcion": "Zebra Labels - Z-Perform 1000D; 102mm x152mm - Perm Adhesive, 950 labels/ roll - 4 rolls/box"
+  },
+  {
+   "item_no": "50156",
+   "descripcion": "M512-K - Torus ink - 365ml"
+  },
+  {
+   "item_no": "60020",
+   "descripcion": "Microplex 50 A3-3 Toner (7651)"
+  },
+  {
+   "item_no": "60021",
+   "descripcion": "Microplex 50 A3-3 Replacement Drum (7652)"
+  },
+  {
+   "item_no": "700776",
+   "descripcion": "ICE100 TTR 55mmx1000m  BLK (Box 10)"
+  },
+  {
+   "item_no": "701972",
+   "descripcion": "TNA 300 TTR 30mmx1000m BLK (Box 25)"
+  },
+  {
+   "item_no": "701974",
+   "descripcion": "TNA 300 TTR 55mmx1000m BLK (Box 10)"
+  },
+  {
+   "item_no": "701981",
+   "descripcion": "ICE 105 Super Standard Black 33mm x 550m"
+  },
+  {
+   "item_no": "701985",
+   "descripcion": "ICE 110 Premium Black 33mm x 500m"
+  },
+  {
+   "item_no": "701992",
+   "descripcion": "RL ZIPHER ICE AXR600 110mmx600m (box of 5) (TS7781ZP)"
+  },
+  {
+   "item_no": "702035",
+   "descripcion": "ICE120 TTR 55mmx900m BLK (Box 10)"
+  },
+  {
+   "item_no": "702054",
+   "descripcion": "ICE105 TTR 55mmx900m BLK (Box 10)"
+  },
+  {
+   "item_no": "702297",
+   "descripcion": "ICE100 TTR 55mmx600m BLK (Box 10)"
+  },
+  {
+   "item_no": "702663",
+   "descripcion": "ICE105 TTR 55mmx900m APX650MW (Box 10)"
+  },
+  {
+   "item_no": "702664",
+   "descripcion": "ICE105 TTR 110mmx600m MW (Box 5)"
+  },
+  {
+   "item_no": "703005",
+   "descripcion": "ICE100HS TTR 110mmx700m BLK (Box 5)"
+  },
+  {
+   "item_no": "703020",
+   "descripcion": "ICE100HS TTR 55mmx1200m BLK (Box 10)"
+  },
+  {
+   "item_no": "703021",
+   "descripcion": "ICE100HS TTR 33mmx700m BLK (Box 25)"
+  },
+  {
+   "item_no": "703030",
+   "descripcion": "RL ZIPHER ICE APR600UW 30mm x 750m - ZP (Box 25)"
+  },
+  {
+   "item_no": "703033",
+   "descripcion": "RL ZIPHER ICE APR600UW 55mm x 750m - ZP (Box 10)"
+  },
+  {
+   "item_no": "704011",
+   "descripcion": "ICE100 TTR 110mmx450m BROWN (Box 5)"
+  },
+  {
+   "item_no": "704013",
+   "descripcion": "ICE100 TTR 110mmx450m ORANGE (Box 5)"
+  },
+  {
+   "item_no": "704015",
+   "descripcion": "ICE100 TTR 110mmx450m GREEN (Box 5)"
+  },
+  {
+   "item_no": "704018",
+   "descripcion": "ICE110 Special TTR 55mmx900M BLK (Box 10)"
+  },
+  {
+   "item_no": "17211008",
+   "descripcion": "RIBBON 60.0MM X 450M OUT"
+  },
+  {
+   "item_no": "17273868",
+   "descripcion": "RIBBON ZEBRA 110.0 MMX450M OUT"
+  },
+  {
+   "item_no": "17280606",
+   "descripcion": "Ribbon, 5080, 110mm x 625m CSO"
+  },
+  {
+   "item_no": "17280846",
+   "descripcion": "RIBBON ZEBRA 130.0MMX450M OUT"
+  },
+  {
+   "item_no": "17280857",
+   "descripcion": "RIBBON ZEBRA 152,4MMX450M OUT"
+  },
+  {
+   "item_no": "17281043",
+   "descripcion": "RIBBON SATO 110.0MMX410M IN"
+  },
+  {
+   "item_no": "17281054",
+   "descripcion": "RIBBON SATO 76.2MMX450M IN"
+  },
+  {
+   "item_no": "17281065",
+   "descripcion": "RIBBON SATO 110.0MMX450M IN"
+  },
+  {
+   "item_no": "17282549",
+   "descripcion": "RIBBON SATO 152.4MMX450M IN"
+  },
+  {
+   "item_no": "17294290",
+   "descripcion": "RIBBON SATO 110.00MMX410M IN"
+  },
+  {
+   "item_no": "17296112",
+   "descripcion": "RIBBON ZEBRA 110MM X 450M OUT"
+  },
+  {
+   "item_no": "17301357",
+   "descripcion": "RIBBON R396 55MM X 600M OUT"
+  },
+  {
+   "item_no": "17302519",
+   "descripcion": "RIBBON R396, 110.00MMX600M"
+  },
+  {
+   "item_no": "17307394",
+   "descripcion": "RIBBON, 55.0MM X 600M OUT"
+  },
+  {
+   "item_no": "17315292",
+   "descripcion": "RIBBON 55MM X 1000M CSO"
+  },
+  {
+   "item_no": "17342501",
+   "descripcion": "Ribbon, M295,55 mm x 600 m CSI"
+  },
+  {
+   "item_no": "17350190",
+   "descripcion": "Ribbon, 5080, 80mm x 600m CSO"
+  },
+  {
+   "item_no": "031-17353842",
+   "descripcion": "M295+ HD 4.0"
+  },
+  {
+   "item_no": "031-17355019",
+   "descripcion": "Ribbon, M295 HD 4.0,55 x 600mm"
+  },
+  {
+   "item_no": "031-17356735",
+   "descripcion": "Ribbon Zwart 55mm x 1000m CSO"
+  },
+  {
+   "item_no": "031-17364785",
+   "descripcion": "Ribbon M295+ 4.0 55mmx700m"
+  },
+  {
+   "item_no": "031-17366810",
+   "descripcion": "Ribbon Zwart 80mm x 600m CSI"
+  },
+  {
+   "item_no": "031-17374482",
+   "descripcion": "V390 55mm x 1200m OUT"
+  },
+  {
+   "item_no": "049-A110KQXX-600JA",
+   "descripcion": "TTR AJ black, 110mm x 600m JA"
+  },
+  {
+   "item_no": "049-A110KQXX-600JA-R",
+   "descripcion": "TTR AJ schwarz 110mmx600m JA"
+  },
+  {
+   "item_no": "049-S110GQXX-450AA",
+   "descripcion": "TTR 110 mm x 450 m Gold (A)"
+  },
+  {
+   "item_no": "049-S55GQXX-450AA",
+   "descripcion": "TTR 55 mm x 450 m Gold (A)"
+  },
+  {
+   "item_no": "11001A",
+   "descripcion": "700776CM - Black ICE 100 ribbon, 55mm x 1000m - single roll"
+  },
+  {
+   "item_no": "11001S",
+   "descripcion": "700776S - Black, ICE 100, 55mm x 100m,  Sample Roll"
+  },
+  {
+   "item_no": "11003S",
+   "descripcion": "Black ICE 100, 110mm x 100m - Part No: 701625ACM - Sample Roll"
+  },
+  {
+   "item_no": "11009A",
+   "descripcion": "Black ICE110, 30m x 900m Part No: 700990CM - Single Roll"
+  },
+  {
+   "item_no": "11010A",
+   "descripcion": "Black - ICE 105, 55mm x 900m  - Part No: 702054CM - Single Roll"
+  },
+  {
+   "item_no": "11010S",
+   "descripcion": "Black ICE105, 55mm x 100m, Part No: 702054CM - Sample Roll"
+  },
+  {
+   "item_no": "11011A",
+   "descripcion": "Black ICE110, 55mm x 900m - Part No: 700991CM - Single Roll"
+  },
+  {
+   "item_no": "11011S",
+   "descripcion": "Black ICE110, 55mm x 100m, Part No: 700991CM - Sample Roll"
+  },
+  {
+   "item_no": "11024A",
+   "descripcion": "Black ICE110 - 701792CM - 110mm x 600m - single roll"
+  },
+  {
+   "item_no": "11024S",
+   "descripcion": "Black ICE110, 110mm x 100m, Part No: 701792CM - Sample Roll"
+  },
+  {
+   "item_no": "11029A",
+   "descripcion": "T500-4A - Torus 126/500 ink SINGLE canister"
+  },
+  {
+   "item_no": "11030S",
+   "descripcion": "Black ICE 105 - 703517ACM - 110mm x 100m - Sample Roll"
+  },
+  {
+   "item_no": "11031A",
+   "descripcion": "Black ICE110, 33mm x 500m, Part Number: 701985CM  - single roll"
+  },
+  {
+   "item_no": "11031S",
+   "descripcion": "Black ICE110, 33mm x 100m, Part Number: 701985CM - Sample Roll"
+  },
+  {
+   "item_no": "11033S",
+   "descripcion": "Black ICE 105, 33mm x 100m, Part Number: 701981CM - Sample Roll"
+  },
+  {
+   "item_no": "11039S",
+   "descripcion": "White ICE110, 110mm x 10m, Part No: 701928CM - Sample Roll"
+  },
+  {
+   "item_no": "11057S",
+   "descripcion": "Metallic White, ICE105, 55mm x 100m, 702663CM - Sample Roll"
+  },
+  {
+   "item_no": "11068a",
+   "descripcion": "Light Red ICE100 -110mm x 450mm - 704012 - Single Roll"
+  },
+  {
+   "item_no": "11069S",
+   "descripcion": "Light Green: ICE100: 110mm 15-S110GQ5CM - SAMPLE roll"
+  },
+  {
+   "item_no": "11078A",
+   "descripcion": "Metallic White, ICE105, 110mm x 600m: 702664ACM -single roll"
+  },
+  {
+   "item_no": "11082a",
+   "descripcion": "White ICE110: 30mm x 900mtr: 15-R30WQ25 - single roll"
+  },
+  {
+   "item_no": "11083A",
+   "descripcion": "White ICE110: 55mm x 900mtr: 15-R55WQ10CM - single roll"
+  },
+  {
+   "item_no": "11083S",
+   "descripcion": "White ICE110: 55mm x 100mtr: 15-R55WQ10CM (701995) Sample Roll"
+  },
+  {
+   "item_no": "11084A",
+   "descripcion": "AS5510012MW - Metallic White, Premium, 55mm x 750m  - Single Roll"
+  },
+  {
+   "item_no": "11084S",
+   "descripcion": "AS5510012MW - Metallic White, Premium, 55mm - Sample Roll"
+  },
+  {
+   "item_no": "11091A",
+   "descripcion": "15-Y55KQ10 - Black ICE130, 55mm x 1000mtr, Single Roll"
+  },
+  {
+   "item_no": "11091s",
+   "descripcion": "15-Y55KQ - Black ICE130, 55mm - sample roll"
+  },
+  {
+   "item_no": "11100A",
+   "descripcion": "709010A - Black, ICE 130, 110mm x600m - 1 roll"
+  },
+  {
+   "item_no": "11100S",
+   "descripcion": "709010 - Black, ICE 130, 110mm - sample roll"
+  },
+  {
+   "item_no": "11138S",
+   "descripcion": "Light Blue ICE100: 110mmr: 704014, sample roll"
+  },
+  {
+   "item_no": "11152a",
+   "descripcion": "F601425 - Matt Gold wax/ resin: 110mm x 450m - single roll"
+  },
+  {
+   "item_no": "11163a",
+   "descripcion": "601194A- ICE 1000  White, 55mm x 750m, SINGLE ROLL"
+  },
+  {
+   "item_no": "11164A",
+   "descripcion": "601635 - ICE 1000 White, 110mm x 450m, SINGLE ROLL"
+  },
+  {
+   "item_no": "11169S",
+   "descripcion": "600776M - Black ICE 1000 ribbon, 55mm, sample roll"
+  },
+  {
+   "item_no": "11170a",
+   "descripcion": "601625M - Black ICE 1000, 110mm x 600m, Single Roll"
+  },
+  {
+   "item_no": "11172a",
+   "descripcion": "600350 - White, 35mm x 450m - Single roll"
+  },
+  {
+   "item_no": "11177A",
+   "descripcion": "601639 - ICE 1000 Purple, 55mm x 750m - single roll"
+  },
+  {
+   "item_no": "11186S",
+   "descripcion": "Brilliant White ICE100W: 33mm  703031 - Sample roll"
+  },
+  {
+   "item_no": "11189S",
+   "descripcion": "Metallic White, ICE105, 33mm, 701982CM - Sample Roll"
+  },
+  {
+   "item_no": "11194S",
+   "descripcion": "703033 - Brilliant White ICE100: 55mm sample roll"
+  },
+  {
+   "item_no": "11195S",
+   "descripcion": "703034 - Brilliant White ICE100: 110mm sample roll"
+  },
+  {
+   "item_no": "12020-A",
+   "descripcion": "CM500776  - 55mm x1000mtrs; Black - single roll"
+  },
+  {
+   "item_no": "12027S",
+   "descripcion": "CM500306 - CM500 Black, 30mm Sample"
+  },
+  {
+   "item_no": "12051a",
+   "descripcion": "AS11010010MW,  110mm x 450m Metallic White, X50 - SINGLE ROLLS"
+  },
+  {
+   "item_no": "12054A",
+   "descripcion": "TT1106008BLK,  110mm x 600m, Black, X80, Single Roll"
+  },
+  {
+   "item_no": "12054S",
+   "descripcion": "TT1106008BLK,  110mm, Black, X80,  Sample Roll"
+  },
+  {
+   "item_no": "12066A",
+   "descripcion": "CM800991 - CM800, 55mm x 900m - single roll"
+  },
+  {
+   "item_no": "12066S",
+   "descripcion": "CM800991 - Black , CM800, 55mm Sample roll"
+  },
+  {
+   "item_no": "12067a",
+   "descripcion": "TT551000BLK - Grade X80 -55mm x 1000m, Black, OW - SINGLE ROLL"
+  },
+  {
+   "item_no": "12067S",
+   "descripcion": "TT551000BLK - Grade X80 -55mm,  Black, OW - Sample Roll"
+  },
+  {
+   "item_no": "12083a",
+   "descripcion": "TT3060025BLK - Grade X80 - 30mm x 600m, Black, Single rolls - OW"
+  },
+  {
+   "item_no": "12105S",
+   "descripcion": "Labels - 75mm x 115mm NEL, TT Semi-Gloss, OW, 76mm core,  - 7890 /roll, 400mm OD"
+  },
+  {
+   "item_no": "12297S",
+   "descripcion": "Labels - 100mm x 125mm NEL, TT Semi-Gloss, OW, 76mm core - 6,500/ roll, 400mm OD"
+  },
+  {
+   "item_no": "12420S",
+   "descripcion": "AXR 900 Black, ICE 130, 33mm sample roll"
+  },
+  {
+   "item_no": "13001a",
+   "descripcion": "Black ICE 100HS, 55mm x 1200m, Part No: 703020 - Single Roll"
+  },
+  {
+   "item_no": "13001S",
+   "descripcion": "Black ICE 100HS, 55mm x 100m, Part No: 703020 - Sample Roll"
+  },
+  {
+   "item_no": "13002a",
+   "descripcion": "Black ICE 100HS ribbon, 55mm x 700m, Part No: 703001 - Single Roll"
+  },
+  {
+   "item_no": "13003a",
+   "descripcion": "Black ICE 100HS ribbon, 55mm x 100m, Part No: 703002 - Sample Roll"
+  },
+  {
+   "item_no": "13004a",
+   "descripcion": "Black ICE 100HS ribbon, 110mm x 100m, Part No: 703004a - Single Roll"
+  },
+  {
+   "item_no": "13005a",
+   "descripcion": "Black ICE 100HS ribbon, 110mm x 700m, Part No: 703005a - Single Roll"
+  },
+  {
+   "item_no": "13005S",
+   "descripcion": "Black ICE 100HS ribbon, 110mm x 100m, Part No: 703005 - Sample Roll"
+  },
+  {
+   "item_no": "13008a",
+   "descripcion": "Black ICE 100HS ribbon, 33mm x 1200m, Part No: 703008a - Single Roll"
+  },
+  {
+   "item_no": "13009a",
+   "descripcion": "Black ICE 100HS ribbon, 33mm x 700m, Part No: 703021a - Single Roll"
+  },
+  {
+   "item_no": "13064A",
+   "descripcion": "CM500020 - Black , CM500+ 55mm x 1200m - single roll"
+  },
+  {
+   "item_no": "13064D",
+   "descripcion": "CM500020 - Black , CM500+ 55mm x 1200m - 10 Rolls/ box"
+  },
+  {
+   "item_no": "13064S",
+   "descripcion": "CM500020 - Black , CM500+ 55mm x 100m - sample roll"
+  },
+  {
+   "item_no": "13067A",
+   "descripcion": "CM500005 - Black , CM500+ 110mm x 700m - single rolls"
+  },
+  {
+   "item_no": "13067S",
+   "descripcion": "CM500005 - Black , CM500+ 110mm x 100m - sample rolls"
+  },
+  {
+   "item_no": "13068A",
+   "descripcion": "CM503001 - Black , CM500+ 55mm x 700m - Single roll"
+  },
+  {
+   "item_no": "13069S",
+   "descripcion": "CM503006 - Black , CM500+ 30mm - sample roll"
+  },
+  {
+   "item_no": "13072A",
+   "descripcion": "CM503008 - Black , CM500+ 35mm x 1200m - single roll"
+  },
+  {
+   "item_no": "13072S",
+   "descripcion": "CM503008 - Black , CM500+ 35mm - sample roll"
+  },
+  {
+   "item_no": "13074A",
+   "descripcion": "CM503021- Black , CM500+ 35mm x 700m - Single Roll"
+  },
+  {
+   "item_no": "13080A",
+   "descripcion": "CM700054 - Black , CM700, 55mm x 1200m - Single roll"
+  },
+  {
+   "item_no": "13080S",
+   "descripcion": "CM700054 - Black , CM700, 55mm Sample roll"
+  },
+  {
+   "item_no": "13081S",
+   "descripcion": "CM700092 - Black , CM700, 110mm Sample roll"
+  },
+  {
+   "item_no": "13083S",
+   "descripcion": "CM800005 - Black CM800, 110mm Sample roll"
+  },
+  {
+   "item_no": "13086S",
+   "descripcion": "CM700075 - Black , CM700, 30mm Sample roll"
+  },
+  {
+   "item_no": "13088a",
+   "descripcion": "CM503020 - Black, CM500+, 110mm x 1200m - single roll"
+  },
+  {
+   "item_no": "13092S",
+   "descripcion": "CM500040 - Black, CM500+, 55mm (IW) - sample roll"
+  },
+  {
+   "item_no": "13096S",
+   "descripcion": "CM800021 - Black , CM800, 35mm Sample roll"
+  },
+  {
+   "item_no": "13098A",
+   "descripcion": "Black ICE 400, 110mm x 600m, Part No: 15-Z110KQ5-600 - Single Roll"
+  },
+  {
+   "item_no": "13098S",
+   "descripcion": "Black ICE 400 - 110mm x 100m- 15-Z110KQ5-600-  Sample Roll"
+  },
+  {
+   "item_no": "13099A",
+   "descripcion": "Black ICE 400, 55mm x 1000m, Part No: 15-Z55KQ10 - Single Roll"
+  },
+  {
+   "item_no": "13099S",
+   "descripcion": "Black ICE 400, 55mm x 100m, Part No: 15-Z55KQ10- Sample Roll"
+  },
+  {
+   "item_no": "13109S",
+   "descripcion": "Black ICE 400, 33mm x 100m, Part No: 15-Z33KQ25-600 - Sample roll"
+  },
+  {
+   "item_no": "13210A",
+   "descripcion": "CM15044045 - Premium FHWR OW Black - 40mm x 300m - single roll"
+  },
+  {
+   "item_no": "14-M55KQ10-750",
+   "descripcion": "Black, LPA RIBBON, SUPER STANDARD, 55mmx750m"
+  },
+  {
+   "item_no": "14-N110KQ1-700",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-A55KQ16-1",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55MM X 1000M, STANDARD GRADE, 16 ROLLS PER BOX (ALPHA 8+HM)"
+  },
+  {
+   "item_no": "15-B110KQ1",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-B110KQ10",
+   "descripcion": "TT RIBBON, BLACK, 110 mm x 600 M, BASIC GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-B110KQ10-1",
+   "descripcion": "TT RIBBON, BLACK, 110 mm x 600"
+  },
+  {
+   "item_no": "15-B22KQ25-600",
+   "descripcion": "RIBBON BLACK 22 x 600M BASIC"
+  },
+  {
+   "item_no": "15-B30KQ25",
+   "descripcion": "TT RIBBON, BLACK, 30 mm x 1000 M, BASIC GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-B30KQ25-600",
+   "descripcion": "TTO RIBBON-T55103KG"
+  },
+  {
+   "item_no": "15-B33KQ25-600",
+   "descripcion": "Basic grade ribbon, 33mm width, 600 meters long, 25 rolls per case"
+  },
+  {
+   "item_no": "15-B33KQ25-600-1",
+   "descripcion": "Basic grade ribbon,33mm width,"
+  },
+  {
+   "item_no": "15-B33KQ25-600-SA",
+   "descripcion": "Basic grade ribbon, 33mm width, 600 meters long, 25 rolls per case"
+  },
+  {
+   "item_no": "15-B55KQ10",
+   "descripcion": "TT RIBBON, BLACK, 55 mm x 1000 M, BASIC GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-B55KQ10-1",
+   "descripcion": "TTR, BLACK, 55 mm x 1000m"
+  },
+  {
+   "item_no": "15-C110KQ5",
+   "descripcion": "THERMAL TRANSFERRIBBON, BLACK, 110mm X450M, CHEMICALRESISTANT GRADE"
+  },
+  {
+   "item_no": "15-C110KQ5-1",
+   "descripcion": "THERMAL TRANSFERRIBBON, BLACK,"
+  },
+  {
+   "item_no": "15-C30KQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON , BLACK, 30mm X 900M, CHEMICAL RESISTANT GRADE , BOX OF 25 30mmx900m"
+  },
+  {
+   "item_no": "15-C33KQ25",
+   "descripcion": "TTO RIBBON, BLACK, 33mm X 900M, CHEMICAL RESISTANT, 25 PER CASE"
+  },
+  {
+   "item_no": "15-C33KQ25-500",
+   "descripcion": "RL VIDEOJET 6210 CHEM RES 33mmx500m"
+  },
+  {
+   "item_no": "15-C55KQ10",
+   "descripcion": "RIBBON,BLACK,55MMX900M,CHEMICAL"
+  },
+  {
+   "item_no": "15-C55KQ10-450",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55mm X 450M, CHEMICAL RESISTANT GRADE, BOX OF 10"
+  },
+  {
+   "item_no": "15-HSR110KQ5-1000",
+   "descripcion": "RIBBON PRETO RESINA PREMIUM SPEED DATAFLEX 110mm x 1000m"
+  },
+  {
+   "item_no": "15-J33KQ25-600",
+   "descripcion": "TTO RIBBON, RESIN GRADE, BLACK, 33MM X 600M, 25 PER CASE"
+  },
+  {
+   "item_no": "15-J55KQ10-450",
+   "descripcion": "TTO RIBBON, RESIN GRADE, BLACK, 55MM X 450M, 10 PER CASE"
+  },
+  {
+   "item_no": "15-J55KQ10-600",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55MM X 600M, RESIN GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-J55KQ10-900",
+   "descripcion": "TTO RIBBON, RESIN GRADE, BLACK, 55MM X 900M, 10 PER CASE"
+  },
+  {
+   "item_no": "15-K55KQ10/1",
+   "descripcion": "RIBBON TTF K 700"
+  },
+  {
+   "item_no": "15-LLS55KQ10-700",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55MM X 700M, LONG LENGTH, STANDARD GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-P110KQ5",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 110 MM X"
+  },
+  {
+   "item_no": "15-P110KQ5-1",
+   "descripcion": "TTR, SP BLACK 110 X 450"
+  },
+  {
+   "item_no": "15-P110KQ5-900",
+   "descripcion": "TTO RIBBON, SUPER STANDARD GRADE, BLACK, 110 MM X 900 M, LONG LENGTH, 5 PER CASE"
+  },
+  {
+   "item_no": "15-P110MWQ5",
+   "descripcion": "THERMAL TRANSFER RIBBON, MET. WHITE, 110 MM X 600 M, SUPER PREMIUM, 5 PER CASE"
+  },
+  {
+   "item_no": "15-P110MWQ5-450",
+   "descripcion": "THERMAL TRANSFER RIBBON, MET. WHITE, 110 mm X 450 M SUPER STANDARD, 5 PER CASE"
+  },
+  {
+   "item_no": "15-P20KQ25",
+   "descripcion": "RIBBON BLACK 20MM X 900M SUPER STANDARD"
+  },
+  {
+   "item_no": "15-P20MWQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, MET. WHITE, 20 mm X 900 M, SUPER STANDARD, 25 PER CASE."
+  },
+  {
+   "item_no": "15-P22KQ25-550",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 22 MM X 550 M, SUPER STANDARD, 25 PER CASE"
+  },
+  {
+   "item_no": "15-P22MWQ25-550",
+   "descripcion": "TT RIBBON, METALLIC WHITE, 22 mm x 550 M, SUPER STANDARD GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-P22MWQ25-550X1",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-P25MWQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, MET. WHITE, 25 mm X 900 M, SUPER STANDARD, 25 PER CASE"
+  },
+  {
+   "item_no": "15-P30KQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 30 M X 900 M, SUPER STANDARD, 25 PER CASE"
+  },
+  {
+   "item_no": "15-P30MWQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, MET. WHITE, 30 mm X 900 M, SUPER STANDARD, 25 PER CASE"
+  },
+  {
+   "item_no": "15-P33KQ10-350",
+   "descripcion": "TT RIBBON, BLACK, 33 mm x 350 M, SUPER STANDARD GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-P33KQ25",
+   "descripcion": "TTO RIBBON, BLACK, 33MM X 900M, SUPER STANDARD, 25 PER CASE"
+  },
+  {
+   "item_no": "15-P33KQ25-550",
+   "descripcion": "CINTA NEGRA SUPER ESTANDAR"
+  },
+  {
+   "item_no": "15-P33KQ25-550-1",
+   "descripcion": "TTR, BLACK, 33 MM X 550 M, SUP"
+  },
+  {
+   "item_no": "15-P33KQ25-550X1",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-P33MWQ10-350",
+   "descripcion": "TT RIBBON, METALLIC WHITE, 33 mm x 350 M, SUPER STANDARD GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-P33MWQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, MET. WHITE, 33 mm X 900 M, SUPER STANDARD, 25 PER CASE"
+  },
+  {
+   "item_no": "15-P33MWQ25-550",
+   "descripcion": "TT RIBBON, METALLIC WHITE, 33 mm x 550 M, SUPER STANDARD GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-P33MWQ25-900",
+   "descripcion": "RL DATAFLEX APX650MW 33mmx900m"
+  },
+  {
+   "item_no": "15-P35KQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 35 MM X 900 M, SUPER STANDARD, 25 PER CASE"
+  },
+  {
+   "item_no": "15-P55KQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55 MM X 900 M, SUPER STANDARD, 10 PER CASE"
+  },
+  {
+   "item_no": "15-P55KQ10-1",
+   "descripcion": "TTR, SP BLACK 55 X 900"
+  },
+  {
+   "item_no": "15-P55KQ10-450",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55 MM X 450 M, SUPER STANDARD, 10 PER CASE"
+  },
+  {
+   "item_no": "15-P55KQ10-600",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55MM X 6"
+  },
+  {
+   "item_no": "15-P55KQ10-SA",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55 MM X 900 M, SUPER STANDARD, 10 PER CASE"
+  },
+  {
+   "item_no": "15-P55KQ10X1",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-P55KQ25-100",
+   "descripcion": "SAMPLES - THERMAL TRANSFER RIBBON, BLACK, 55 MM X 100 M, SUPER STANDARD, 25 PER CASE"
+  },
+  {
+   "item_no": "15-P55MWQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, MET. WHITE, 55 mm X 900 M, SUPER STANDARD, 10 PER CASE"
+  },
+  {
+   "item_no": "15-P55MWQ10-1",
+   "descripcion": "THERMAL TRANSFER RIBBON, MET."
+  },
+  {
+   "item_no": "15-P55MWQ10-500",
+   "descripcion": "RIBBON BRANCO METALICO 55MM X 500M SUPER STANDARD"
+  },
+  {
+   "item_no": "15-P55MWQ10X1",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-R110GQ5",
+   "descripcion": "THERMAL TRANSFER RIBBON, GREEN, 110MM X 450M, PREMIUM"
+  },
+  {
+   "item_no": "15-R110KQ5",
+   "descripcion": "RIBBON, BLACK, 110MM X 450M, PREMIUM"
+  },
+  {
+   "item_no": "15-R110KQ5-1",
+   "descripcion": "TTR, P BLACK 110 X 450"
+  },
+  {
+   "item_no": "15-R110KQ5-900",
+   "descripcion": "TTO RIBBON, PREMIUM GRADE, BLACK, 110MM X 900M, LONG LENGTH, 5 PER CASE"
+  },
+  {
+   "item_no": "15-R110LQ5",
+   "descripcion": "THERMAL TRANSFER RIBBON, DK BLUE, 110MM X 450M, PREMIUM GRADE, 5 PER CASE"
+  },
+  {
+   "item_no": "15-R110RQ5",
+   "descripcion": "THERMAL TRANSFER RIBBON, RED, 110MM X 450 PREMIUM"
+  },
+  {
+   "item_no": "15-R110WQ5",
+   "descripcion": "RIBBON,WHITE, 110MM X 450M, PREMIUM"
+  },
+  {
+   "item_no": "15-R20KQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 20mm X 900m, PREMIUM GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-R22KQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 22MM X 500M, PREMIUM GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-R22KQ25-500",
+   "descripcion": "TT RIBBON, BLACK, 22mm x 500M, PREMIUM GRADE, 25  PER CASE"
+  },
+  {
+   "item_no": "15-R22WQ25-500",
+   "descripcion": "TT RIBBON, WHITE, 22mm x 500M, PREMIUM GRADE, 25  PER CASE"
+  },
+  {
+   "item_no": "15-R25KQ25-500",
+   "descripcion": "RIBBON BLACK, 25.0 mm.x500m,PREMIUM GRADE,25 PER CASE"
+  },
+  {
+   "item_no": "15-R30KQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 30MM X 900M, PREMIUM GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-R30KQ25-1",
+   "descripcion": "TTR, BLACK 30X900M PREMIUM"
+  },
+  {
+   "item_no": "15-R30KQ25-600",
+   "descripcion": "RIBBON BLACK, 30.0 mm.x600m,PREMIUM GRADE,25 PER CASE"
+  },
+  {
+   "item_no": "15-R30KQ25X1",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-R30RQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, RED, 30MM X 900M, PREMIUM GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-R30RQ25-500",
+   "descripcion": "THERMAL TRANSFER RIBBON RED 30MM X 500M PREMIUM GRADE"
+  },
+  {
+   "item_no": "15-R30WQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, WHITE, 30MM X 900M, PREMIUM GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-R33KQ25",
+   "descripcion": "CANCELLED - RIBBON T43921VJ"
+  },
+  {
+   "item_no": "15-R33KQ25-350",
+   "descripcion": "TT RIBBON, BLACK, 33 mm x 350 M, PREMIUM GRADE, 25  PER CASE"
+  },
+  {
+   "item_no": "15-R33KQ25-500",
+   "descripcion": "RIBBON, BLACK, 33MM X 500M, PREMIUM"
+  },
+  {
+   "item_no": "15-R33KQ25-500-1",
+   "descripcion": "TTR, BLACK 33MM X 500M"
+  },
+  {
+   "item_no": "15-R33KQ25-500X1",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-R33WQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, WHITE, 33MM X 500M, PREMIUM GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-R33WQ25-350",
+   "descripcion": "TT RIBBON, WHITE, 33 mm x 350 M, PREMIUM GRADE, 25  PER CASE"
+  },
+  {
+   "item_no": "15-R33WQ25-500",
+   "descripcion": "TT RIBBON, WHITE, 33mm x 500M, PREMIUM GRADE, 25  PER CASE"
+  },
+  {
+   "item_no": "15-R33WQ25-500-1",
+   "descripcion": "TTR, WHITE 33MM X 500M"
+  },
+  {
+   "item_no": "15-R33WQ25-500X1",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-R35KQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 35MM X 900M, PREMIUM GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-R40KQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 40 MM X 900 M, PREMIUM GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-R55GQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, GREEN, 55MM X 900M, PREMIUM GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-R55KQ10",
+   "descripcion": "RIBBON, BLACK, 55MM X 900M, PREMIUM"
+  },
+  {
+   "item_no": "15-R55KQ10-1",
+   "descripcion": "THERMAL TRANSFER RIBBON"
+  },
+  {
+   "item_no": "15-R55KQ10-450",
+   "descripcion": "Dataflex Premium black (AXR600) 55mmx450m"
+  },
+  {
+   "item_no": "15-R55KQ10-450-SA",
+   "descripcion": "DATAFLEX PREMIUM BLACK (AXR600) 55mm X 450m, SOUTH AFRICA"
+  },
+  {
+   "item_no": "15-R55KQ10-600",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55MM X 6"
+  },
+  {
+   "item_no": "15-R55KQ10-600-1",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK"
+  },
+  {
+   "item_no": "15-R55KQ10-600X1",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-R55KQ10-SA",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55MM X 900M, PREMIUM GRADE, 10 PER CASE, SOUTH AFRICA"
+  },
+  {
+   "item_no": "15-R55KQ10X1",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-R55KQ25-100",
+   "descripcion": "SAMPLES - THERMAL TRANSFER RIBBON, BLACK, 55 MM X 100 M, PREMIUM GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-R55LQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLUE, 55MM X 900M, PREMIUM GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-R55RQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, RED, 55MM X 900M, PREMIUM GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-R55RQ10-450",
+   "descripcion": "Dataflex Premium red (AXR600R) 55mmx450m"
+  },
+  {
+   "item_no": "15-R55WQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, WHITE, 55MM X 900M, PREMIUM GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-R55WQ10-1",
+   "descripcion": "TTR, WHITE 55X900M"
+  },
+  {
+   "item_no": "15-R80KQ10",
+   "descripcion": "TT RIBBON, BLACK, 80 mm x 450 M, PREMIUM GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-S110BWQ5-450",
+   "descripcion": "TT RIBBON, Brilliant WHITE, 110MM X 450M, STANDARD GRADE, 5 PER CASE"
+  },
+  {
+   "item_no": "15-S110BWQ5-450-1",
+   "descripcion": "TT RIBBON, Brilliant WHITE, 11"
+  },
+  {
+   "item_no": "15-S110BWQ5-450X1",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-S110BWQ5-750",
+   "descripcion": "TTO RIBBON, STANDARD GRADE, BRILLIANT WHITE, 110MM X 750M, LONG LENGTH, 5 PER CASE"
+  },
+  {
+   "item_no": "15-S110CQ5",
+   "descripcion": "THERMAL TRANSFER RIBBON, CYAN, 110MM X 450M, STANDARD GRADE, 5 PER BOX"
+  },
+  {
+   "item_no": "15-S110GQ5",
+   "descripcion": "THERMAL TRANSFER RIBBON, GREEN, 110 MM X 450 M, STANDARD GRADE, 5 PER CASE"
+  },
+  {
+   "item_no": "15-S110KQ24-600",
+   "descripcion": "TTO RIBBON, STANDARD GRADE, BLACK, 110MM X 600M, 24 PER CASE"
+  },
+  {
+   "item_no": "15-S110KQ5",
+   "descripcion": "RIBBON, BLACK, 110MM X 600M, STANDARD"
+  },
+  {
+   "item_no": "15-S110KQ5-1000",
+   "descripcion": "TTO RIBBON, STANDARD GRADE, BLACK, 110MM X 1000M, LONG LENGTH, 5 PER CASE"
+  },
+  {
+   "item_no": "15-S110KQ5-450",
+   "descripcion": "TTO RIBBON, STANDARD GRADE, BLACK, 110MM X 450M, 5 PER CASE"
+  },
+  {
+   "item_no": "15-S110LQ5",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLUE, 110 MM X 450 M, STANDARD GRADE, 5 PER CASE"
+  },
+  {
+   "item_no": "15-S110MQ5",
+   "descripcion": "THERMAL TRANSFER RIBBON, MAGENTA, 110MM X 450M, STANDARD GRADE, 5 PER CASE"
+  },
+  {
+   "item_no": "15-S110NQ5",
+   "descripcion": "Thermal Transfer Ribbon, brown 110 mm x 450 m 5 per box"
+  },
+  {
+   "item_no": "15-S110OQ5",
+   "descripcion": "THERMAL TRANSFER RIBBON, ORANGE, 110 MM X 450 M, STANDARD GRADE, 5 PER CASE"
+  },
+  {
+   "item_no": "15-S110RQ5",
+   "descripcion": "THERMAL TRANSFER RIBBON, RED 110 MM X 450 M, STANDARD GRADE, 5 PER CASE"
+  },
+  {
+   "item_no": "15-S110YQ5",
+   "descripcion": "THERMAL TRANSFER RIBBON, YELLOW, 110 MM X 450 Meter, STANDARD GRADE, 5 PER CASE"
+  },
+  {
+   "item_no": "15-S110YQ5-1",
+   "descripcion": "THERMAL TRANSFER RIBBON,YELLOW"
+  },
+  {
+   "item_no": "15-S110YQ5-750",
+   "descripcion": "THERMAL TRANSFER RIBBON, YELLOW, 110 MM X 750 Meter, STANDARD GRADE, 5 PER CASE"
+  },
+  {
+   "item_no": "15-S20KQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 20MM X 1000M, STANDARD GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-S20KQ25-600",
+   "descripcion": "RL VIDEOJET 6210 APR600 20mmx600m (box 25)"
+  },
+  {
+   "item_no": "15-S22BWQ1-450",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-S22BWQ25-450",
+   "descripcion": "TT RIBBON, Brilliant WHITE, 22MM X 450M, STANDARD GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-S22KQ25-600",
+   "descripcion": "TT RIBBON, BLACK, 22mm x 600M, STANDARD GRADE, 25  PER CASE"
+  },
+  {
+   "item_no": "15-S22WQ25-450X1",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-S25KQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 25MM X 1000M, STANDARD GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-S25KQ25-600",
+   "descripcion": "TT RIBBON, BLACK, 25 mm x 600 M, STANDARD GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-S30BWQ1-600",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-S30BWQ25-600",
+   "descripcion": "RIBBON, Brilliant WHITE, 30MM X 600M, ST"
+  },
+  {
+   "item_no": "15-S30BWQ25-750",
+   "descripcion": "TT RIBBON, Brilliant WHITE, 30MM X 750M, STANDARD GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-S30GQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, GREEN, 30MM X 750M, STANDARD GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-S30KQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 30MM X 1000M, STANDARD GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-S30KQ25-600",
+   "descripcion": "RIBBON,BLACK,30MM*600M,STANDARD"
+  },
+  {
+   "item_no": "15-S30RQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, RED, 30MM X 750M, STANDARD  GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-S30RQ25-550",
+   "descripcion": "TT RIBBON, RED, 30 mm x 550 M, STANDARD GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-S30WQ25-600",
+   "descripcion": "Obsolete - THERMAL TRANSFER RIBBON, WHITE, 30 MM X 600M, STANDARD GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-S30YQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, YELLOW, 30MM X 750M, STANDARD GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-S33BWQ1-450",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-S33BWQ25-450",
+   "descripcion": "RL VIDEOJET 6210 STD BW 33mmx450m"
+  },
+  {
+   "item_no": "15-S33BWQ25-450-1",
+   "descripcion": "TT RIBBON, Brilliant WHITE, 33"
+  },
+  {
+   "item_no": "15-S33GQ25",
+   "descripcion": "TTO RIBBON, GREEN, 33MM X 750M, STANDARD, 25 PER CASE"
+  },
+  {
+   "item_no": "15-S33KQ25",
+   "descripcion": "RIBBON, BLACK, 33MM X 600M, STANDARD"
+  },
+  {
+   "item_no": "15-S33KQ25-1",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK"
+  },
+  {
+   "item_no": "15-S33KQ25-1000",
+   "descripcion": "THERMAL TRANSFER RIBBON BLACK 33mmx1000m STAND 25 ROLLS/CS"
+  },
+  {
+   "item_no": "15-S33KQ25-400",
+   "descripcion": "TT RIBBON, BLACK, 33 mm x 400 M, STANDARD GRADE, 25  PER CASE"
+  },
+  {
+   "item_no": "15-S33KQ25-600",
+   "descripcion": "TT RIBBON, BLACK, 33mm x 600M, STANDARD GRADE, 25  PER CASE"
+  },
+  {
+   "item_no": "15-S33LQ25-550",
+   "descripcion": "TTO Ribbon, Blue, Standard Grade, 33mm X 550 M, 25 per case"
+  },
+  {
+   "item_no": "15-S33NQ25",
+   "descripcion": "TTO , BROWN, 33MM X 750M, STANDARD"
+  },
+  {
+   "item_no": "15-S33RQ25",
+   "descripcion": "TTO RIBBON, RED, 33MM X 750M, STANDARD, 25 PER CASE"
+  },
+  {
+   "item_no": "15-S33RQ25-550",
+   "descripcion": "TT RIBBON, RED, 33 mm x 550 M, STANDARD GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-S55BWQ10-600",
+   "descripcion": "TT RIBBON, Brilliant WHITE, 55MM X 600M, STANDARD GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-S55BWQ10-750",
+   "descripcion": "TT RIBBON, Brilliant WHITE, 55MM X 750M, STANDARD GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-S55BWQ10-750-1",
+   "descripcion": "TT RIBBON, Brilliant WHITE, 55"
+  },
+  {
+   "item_no": "15-S55BWQ10-750-SA",
+   "descripcion": "TT RIBBON, Brilliant WHITE, 55MM X 750M, STANDARD GRADE, 10 PER CASE, SOUTH AFRICA"
+  },
+  {
+   "item_no": "15-S55BWQ1-600",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-S55CQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, CYAN, 55MM X 750M, STANDARD GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-S55GQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, GREEN, 55MM X 750M, STANDARD GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-S55KQ10",
+   "descripcion": "RIBBON, BLACK, 55MM X 1000M, STANDARD"
+  },
+  {
+   "item_no": "15-S55KQ10-1",
+   "descripcion": "THERMAL TRANSFER RIBBON"
+  },
+  {
+   "item_no": "15-S55KQ10-600",
+   "descripcion": "RIBBON, BLACK, 55MM X 600M, STANDARD"
+  },
+  {
+   "item_no": "15-S55KQ10-600-1",
+   "descripcion": "TTR, S, BLK, 55 X 600 (HT)"
+  },
+  {
+   "item_no": "15-S55KQ10X1",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-S55LQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLUE, 55MM X 750M, STANDARD GRADE,10 PER CASE"
+  },
+  {
+   "item_no": "15-S55MQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, MAGENTA, 55MM X 750M, STANDARD GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-S55NQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, BROWN, 55MM X 750M, STANDARD GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-S55OQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, ORANGE, 55MM X 750M, STANDARD GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-S55RQ10",
+   "descripcion": "Obsolete by 9-16-2019 THERMAL TRANSFER RIBBON, RED, 55MM X 750, STANDARD GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-S55RQ10-900",
+   "descripcion": "Red, TTO RIBBON, 55mm x 90"
+  },
+  {
+   "item_no": "15-S55WQ10",
+   "descripcion": "Obsolete-THERMAL TRANSFER RIBBON, WHITE, 55MM X 750M, STANDARD GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-S55YQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, YELLOW, 55MM X 750M, STANDARD GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-S80KQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 80MM X 600M, STANDARD GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-T33KQ25-900",
+   "descripcion": "RL DATAFLEX PREMIUM 33mmx900m (25 rolls per box)"
+  },
+  {
+   "item_no": "15-T55KQ10",
+   "descripcion": "RL DATAFLEX AXR600 55mmx900m"
+  },
+  {
+   "item_no": "15-U110KQ1-700",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-U110KQ25-100",
+   "descripcion": "TT RIBBON, BLACK, 110 MM X 100 M,ULTRA GRADE SAMPLES,25 PER CASE"
+  },
+  {
+   "item_no": "15-U110KQ5-1200",
+   "descripcion": "Black, Ultra TTO RIBBON, 110mm x 1200M"
+  },
+  {
+   "item_no": "15-U110KQ5-700",
+   "descripcion": "RIBBON,BLACK,110MM*700M,ULTRA"
+  },
+  {
+   "item_no": "15-U110KQ5-700-1",
+   "descripcion": "TT RIBBON, BLACK, 110 MM X 700"
+  },
+  {
+   "item_no": "15-U110KQ5-700-SA",
+   "descripcion": "TT RIBBON, BLACK, 110 MM X 700 M, ULTRA GRADE, 5 PER CASE, SOUTH AFRICA"
+  },
+  {
+   "item_no": "15-U20KQ1-1200",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-U20KQ25-1200",
+   "descripcion": "TT RIBBON, BLACK, 20 MM X 1200 M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-U20KQ25-1200-1",
+   "descripcion": "TT RIBBON,BLACK,20 MM X 1200M,"
+  },
+  {
+   "item_no": "15-U20KQ25-700",
+   "descripcion": "TT RIBBON, BLACK, 20 MM X 700 M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-U20KQ25-700-1",
+   "descripcion": "TT RIBBON,BLACK,20 MM X 700M,"
+  },
+  {
+   "item_no": "15-U22KQ1-700",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-U22KQ25-500",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 22MM x 500M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-U22KQ25-700",
+   "descripcion": "TT RIBBON, BLACK, 22 MM X 700 M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-U25KQ25-1200",
+   "descripcion": "TT RIBBON, BLACK, 25 MM X 1200 M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-U25KQ25-700",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 25MM X 700M, ULTRA GRADE"
+  },
+  {
+   "item_no": "15-U30KQ1-1200",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-U30KQ1-700",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-U30KQ25-1200",
+   "descripcion": "TT RIBBON, BLACK, 30 MM X 1200 M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-U30KQ25-1200-SA",
+   "descripcion": "TT RIBBON, BLACK, 30 MM X 1200 M, ULTRA GRADE, 25 PER CASE, SOUTH AFRICA"
+  },
+  {
+   "item_no": "15-U30KQ25-700",
+   "descripcion": "RIBBON,BLACK,30MM*700M,ULTRA"
+  },
+  {
+   "item_no": "15-U30KQ25-700-SA",
+   "descripcion": "TT RIBBON, BLACK, 30 MM X 700 M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-U33KQ1-700",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-U33KQ25-1200",
+   "descripcion": "TT RIBBON, BLACK, 33 MM X 1200 M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-U33KQ25-500",
+   "descripcion": "RIBBON,BLACK,33MM*500M,ULTRA"
+  },
+  {
+   "item_no": "15-U33KQ25-700",
+   "descripcion": "TT RIBBON, BLACK, 33 MM X 700 M, ULTRA G"
+  },
+  {
+   "item_no": "15-U33KQ25-700-1",
+   "descripcion": "TT RIBBON, BLACK, 33 MM X 700"
+  },
+  {
+   "item_no": "15-U33KQ25-700-SA",
+   "descripcion": "TT RIBBON, BLACK, 33 MM X 700 M, ULTRA GRADE, 25 PER CASE, SOUTH AFRICA"
+  },
+  {
+   "item_no": "15-U33KQ50-100",
+   "descripcion": "TT RIBBON, BLACK, 33 MM X 100 M, ULTRA GRADE SAMPLES, 50 PER CASE"
+  },
+  {
+   "item_no": "15-U40KQ10-700",
+   "descripcion": "TT RIBBON, BLACK, 40 MM X 700 M, ULTRA GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-U40KQ10-700-1",
+   "descripcion": "TT RIBBON, BLACK, 40 MM X 700"
+  },
+  {
+   "item_no": "15-U40KQ25-1200",
+   "descripcion": "TT RIBBON, BLACK, 40 MM X 1200 M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-U45KQ25-1",
+   "descripcion": "TT RIBBON, BLACK, 45 MM X 700"
+  },
+  {
+   "item_no": "15-U55KQ10-1200",
+   "descripcion": "TT RIBBON, BLACK, 55 MM X 1200 M, ULTRA GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-U55KQ10-1200-1",
+   "descripcion": "TTR, BLACK, 55 MM X 1200m"
+  },
+  {
+   "item_no": "15-U55KQ10-1200-SA",
+   "descripcion": "TT RIBBON, BLACK, 55 MM X 1200 M, ULTRA GRADE, 10 PER CASE, SOUTH AFRICA"
+  },
+  {
+   "item_no": "15-U55KQ10-700",
+   "descripcion": "RIBBON,BLACK,55MM*700M,ULTRA"
+  },
+  {
+   "item_no": "15-U55KQ10-700-1",
+   "descripcion": "TTR, BLACK, 55 MM X 700m"
+  },
+  {
+   "item_no": "15-U55KQ10-700-SA",
+   "descripcion": "TT RIBBON, BLACK, 55 MM X 700 M, ULTRA GRADE, 10 PER CASE, SOUTH AFRICA"
+  },
+  {
+   "item_no": "15-U55KQ10-700X1",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-U55KQ1-1200",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-U55KQ50-100",
+   "descripcion": "TT RIBBON, BLACK, 55 MM X 100 M, ULTRA GRADE SAMPLES, 50 PER CASE"
+  },
+  {
+   "item_no": "15-V22KQ25-600",
+   "descripcion": "TTO RIBBON, BLACK, 22MM X 600M, VALUE GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-V33KQ25-400",
+   "descripcion": "TTO RIBBON, BLACK, 33MM X 400M, VALUE GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-V33KQ25-600",
+   "descripcion": "TTO RIBBON, BLACK, 33MM X 600M, VALUE GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-V55KQ10-1000",
+   "descripcion": "TTO RIBBON, BLACK, 55MM X 1000M, VALUE GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-X110KQ5",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 110mm X 450m, EXTREME TEMPERATURE GRADE, 5 PER CASE"
+  },
+  {
+   "item_no": "15-X110WQ5",
+   "descripcion": "THERMAL TRANSFER RIBBON, WHITE, 110 MM X 450 M, EXTREME TEMPERATURE GRADE, 5 PER CASE"
+  },
+  {
+   "item_no": "15-X30KQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 30mm X 750 M, EXTREME TEMPERATURE GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-X30KQ25X1",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-X33KQ25-450",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 33mm X 450 M, EXTREME TEMPERATURE GRADE, 25/ROLL/BX"
+  },
+  {
+   "item_no": "15-X33KQ25-450X1",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "15-X33KQ25-750",
+   "descripcion": "TT RIBBON, BLACK, 33 MM X 750 M, EXTREME GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-X55KQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55mm X 750 m, EXTREME TEMPERATURE GRADE 10 PER CASE"
+  },
+  {
+   "item_no": "15-X55KQ10-1",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK"
+  },
+  {
+   "item_no": "15-X55WQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, WHITE, 55mm X 450 m, EXTREME TEMPERATURE GRADE"
+  },
+  {
+   "item_no": "15-X55WQ10-1",
+   "descripcion": "THERMAL TRANSFER RIBBON, WHITE"
+  },
+  {
+   "item_no": "15-Y110KQ5-600",
+   "descripcion": "RL DATAFLEX WASH RES 110mmx600m"
+  },
+  {
+   "item_no": "15-Y110KQ5-600-1",
+   "descripcion": "TT RIBBON, BLACK,110MM X 600M,"
+  },
+  {
+   "item_no": "15-Y33KQ25",
+   "descripcion": "RL DATAFLEX AXR900 33mmx1000m"
+  },
+  {
+   "item_no": "15-Y33KQ25-600",
+   "descripcion": "Standard dimension for Washable resistan"
+  },
+  {
+   "item_no": "15-Y33KQ25-600-1",
+   "descripcion": "Standard dimension f. Washable"
+  },
+  {
+   "item_no": "15-Y33KQ25-600-SA",
+   "descripcion": "Standard dimension for Washable resistant / AXR900 for VJ 6210 TT printer is 33 mm x 600 m"
+  },
+  {
+   "item_no": "15-Y55KQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55 MM X 1000 M, WASH RESIST GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-Y55KQ10-1",
+   "descripcion": "THERMAL TRANSFER RIBBON BLACK"
+  },
+  {
+   "item_no": "15-Y55KQ10-600",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55 mm X 600 m, WASH RESIST GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-Z110KQ5-1000",
+   "descripcion": "Obsolete 3-23-2018 TTO RIBBON, BLACK, 110MM X 1000M, ROUGH STANDARD GRADE, 5 PER CASE"
+  },
+  {
+   "item_no": "15-Z110KQ5-600",
+   "descripcion": "TTO RIBBON, BLACK, 110MM X 600M, ROUGH STANDARD GRADE, 5 PER CASE"
+  },
+  {
+   "item_no": "15-Z110KQ5-600-1",
+   "descripcion": "TTO RIBBON,BLACK,110MM X 600M,"
+  },
+  {
+   "item_no": "15-Z110KQ5-600-SA",
+   "descripcion": "TTO RIBBON, BLACK, 110MM X 600M, ROUGH STANDARD GRADE, 5 PER CASE"
+  },
+  {
+   "item_no": "15-Z33KQ25-600",
+   "descripcion": "TTO RIBBON, BLACK, 33MM X 600M, ROUGH STANDARD GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "15-Z33KQ25-600-1",
+   "descripcion": "TTO RIBBON, BLACK, 33MM X 600M"
+  },
+  {
+   "item_no": "15-Z55KQ10-1000",
+   "descripcion": "TTO RIBBON, BLACK, 55MM X 1000M, ROUGH TEXTURE GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "15-Z55KQ10-1000-1",
+   "descripcion": "TTO RIBBON, BLACK, 55MM X 1000"
+  },
+  {
+   "item_no": "25-E33KQ26",
+   "descripcion": "25-E33KQ26 Thermal Transfer Ribbon, Black, 33mm x 1000m, Elite Grade (26 rolls per case)"
+  },
+  {
+   "item_no": "302-0141-051",
+   "descripcion": "TT-SUPSAT-051-420-BK"
+  },
+  {
+   "item_no": "302-0141-060",
+   "descripcion": "RL N.SATO, QAPR5,60mmx420m /25"
+  },
+  {
+   "item_no": "302-0141-076",
+   "descripcion": "TT-SUPSAT-076-420-BK"
+  },
+  {
+   "item_no": "302-0141-102",
+   "descripcion": "TT-SUPSAT-102-420-BK"
+  },
+  {
+   "item_no": "302-0141-110",
+   "descripcion": "TT-SUPSAT-110-420-BK"
+  },
+  {
+   "item_no": "302-0141-150",
+   "descripcion": "RUBAN SATO 150X420 MM APR5"
+  },
+  {
+   "item_no": "302-1131-111",
+   "descripcion": "TT-AWR470-111-300 BK"
+  },
+  {
+   "item_no": "302-1141-038",
+   "descripcion": "TT-STDSAT-038-420-BK"
+  },
+  {
+   "item_no": "302-1141-051",
+   "descripcion": "TT-STDSAT-051-420-BK"
+  },
+  {
+   "item_no": "302-1141-065",
+   "descripcion": "Foil Black  AWR470 mm. 65x420mt. per SATO"
+  },
+  {
+   "item_no": "302-1141-076",
+   "descripcion": "TT-STDSAT-076-420-BK"
+  },
+  {
+   "item_no": "302-1141-102",
+   "descripcion": "RIBBON,WAX BLACK 102mmWx420M L ###"
+  },
+  {
+   "item_no": "302-1141-110",
+   "descripcion": "TT-STDSAT-110-420-BK"
+  },
+  {
+   "item_no": "302-1141-130",
+   "descripcion": "RIBBON,TT STDSAT 130mm x 420M BK ###"
+  },
+  {
+   "item_no": "302-1141-150",
+   "descripcion": "TT-STDSAT-150-420-BK"
+  },
+  {
+   "item_no": "302-1141-160",
+   "descripcion": "RL N.SATO, Q470,160mmx420m /10"
+  },
+  {
+   "item_no": "302-1141-165",
+   "descripcion": "RL N.SATO, Q470,165mmx420m /10"
+  },
+  {
+   "item_no": "302-1201-065",
+   "descripcion": "RL ZEB.1/2\" AWR470 65mmx74m (T47317ZA)"
+  },
+  {
+   "item_no": "302-1241-060",
+   "descripcion": "RL ZEBRA, QAWR470 60m x 450M / T11205ZA"
+  },
+  {
+   "item_no": "302-1251-154",
+   "descripcion": "RL N.ZEBRA 170 Q470 154mmx450m T14601ZA"
+  },
+  {
+   "item_no": "302-1450-154",
+   "descripcion": "RL GENERIC OUTSIDE AWR8 154mmx450m (5 in a box)(T63445IO)"
+  },
+  {
+   "item_no": "302-2191-089",
+   "descripcion": "SATO, APR6 89mm x 560m"
+  },
+  {
+   "item_no": "302-2951-025",
+   "descripcion": "RIBBON M295+ 25,4MMX900M OUT"
+  },
+  {
+   "item_no": "302-2951-055",
+   "descripcion": "RIBBON,TT WAX/RESIN 55mmx450M BLACK #"
+  },
+  {
+   "item_no": "302-2951-130",
+   "descripcion": "RIBBON,TT WAX/RESIN 130mmx450M BLACK #"
+  },
+  {
+   "item_no": "302-300-110",
+   "descripcion": "Ribbon AWR8, 110mmx300m CSO (T53048IO) (box 10)"
+  },
+  {
+   "item_no": "302-3141-038",
+   "descripcion": "TT-XTRSAT-038-420-BK (T13731ZA) MOQ 50 rolls"
+  },
+  {
+   "item_no": "302-3141-060",
+   "descripcion": "RIBBON QAXR7 60mm X 420m/50 N. SATO T18037WT"
+  },
+  {
+   "item_no": "302-3241-110 S",
+   "descripcion": "RIBBON ZEBRA 110.0MMX450M OUT"
+  },
+  {
+   "item_no": "302-393A-055",
+   "descripcion": "(T24213WI) AXR600 White"
+  },
+  {
+   "item_no": "302-4141-060",
+   "descripcion": "RL SATO LBL 1\" AWXFH 60mmx420m"
+  },
+  {
+   "item_no": "302-4141-102",
+   "descripcion": "TT-STDENH-102-420-BK"
+  },
+  {
+   "item_no": "302-4141-110",
+   "descripcion": "TT-STDENH-110-420-BK"
+  },
+  {
+   "item_no": "302-4141-150",
+   "descripcion": "TT-STDENH-150-420-BK"
+  },
+  {
+   "item_no": "302-4151-110",
+   "descripcion": "RL GENERIC CSI AWXFH 110mmx450m (T47668ZA)(box 10)"
+  },
+  {
+   "item_no": "302-6161-110",
+   "descripcion": "RL GENERIC CSI AWR8 110mmx450m (stock item) - T52383IO (box 10"
+  },
+  {
+   "item_no": "31-17322254",
+   "descripcion": "RIBBON 152,4M MM X 450M CSO"
+  },
+  {
+   "item_no": "31-17327135",
+   "descripcion": "Ribbon R390 55MMx600M CSI"
+  },
+  {
+   "item_no": "31-17342127",
+   "descripcion": "RIBBON, 130MM X 600M CSI"
+  },
+  {
+   "item_no": "31-17346945",
+   "descripcion": "RIBBON, 152,4 X 360M CSI"
+  },
+  {
+   "item_no": "31-17356471",
+   "descripcion": "Ribbon M295HD 25,4mmx900m out"
+  },
+  {
+   "item_no": "31-17368020",
+   "descripcion": "Ribbon M295+ 4.0 30mm x 900m"
+  },
+  {
+   "item_no": "31-17371190",
+   "descripcion": "Ribbon M295+ 4.0 55mm x 700m"
+  },
+  {
+   "item_no": "400-0030-183",
+   "descripcion": "FOIL NERO 30X183  HF528 CSI"
+  },
+  {
+   "item_no": "48-15U33KQ-1200",
+   "descripcion": "TaÅ›ma U, czarna 33x1200 1 szt."
+  },
+  {
+   "item_no": "48-15U33KQ-700",
+   "descripcion": "TaÅ›ma U, czarna 33x700 1 szt."
+  },
+  {
+   "item_no": "700-0154-450",
+   "descripcion": "RL GENERIC CSI AWX FH -WAX 154mmx450m - (T47665IO)"
+  },
+  {
+   "item_no": "700-110-450",
+   "descripcion": "RL GENERIC CSI AWR470 110mmx450m - T11206ZA"
+  },
+  {
+   "item_no": "700-154-450",
+   "descripcion": "RL GENERIC CSI AWR470 154mmx450m - T22939ZA"
+  },
+  {
+   "item_no": "701-0110-450",
+   "descripcion": "ROLL GENERIC INSIDE AWX FH-WAX 110mmx450m(T47668IO)"
+  },
+  {
+   "item_no": "732-0032-600ER1000",
+   "descripcion": "FOIL NER MM.32X600MTCSI ER1000"
+  },
+  {
+   "item_no": "732-0035-300ER728",
+   "descripcion": "TT-ER728 35MM X MT300 CSI"
+  },
+  {
+   "item_no": "732-0035-600ER728",
+   "descripcion": "TT-ER728 35MM X MT600 CSI"
+  },
+  {
+   "item_no": "732-0040-600ER728",
+   "descripcion": "FOIL NERO NE 40X600 ER728 CSI"
+  },
+  {
+   "item_no": "732-0055-1100P114",
+   "descripcion": "FOIL NERO P114 CSI 55x1100"
+  },
+  {
+   "item_no": "732-0055-600ER2000X",
+   "descripcion": "FOIL NERO55X600 CSI ER2000X"
+  },
+  {
+   "item_no": "732-0055-600WHITE",
+   "descripcion": "FOIL BIANCO 55X600 CSI CR830"
+  },
+  {
+   "item_no": "732-0104-600I",
+   "descripcion": "FOIL NERO 104X600 B112 CSI"
+  },
+  {
+   "item_no": "732-0110-500ER728",
+   "descripcion": "FOILNERO 110X500CSI ER728"
+  },
+  {
+   "item_no": "732-0130-600SR828",
+   "descripcion": "FOIL NERO 130X600 CSI SR828"
+  },
+  {
+   "item_no": "733-0050-900SR628",
+   "descripcion": "FOIL NERO 50X900 SR628 CSI"
+  },
+  {
+   "item_no": "740-0110-450RD820",
+   "descripcion": "FOIL NERO110X450CSI RD820"
+  },
+  {
+   "item_no": "802-0110-100",
+   "descripcion": "APR6 for SATO ct4xx"
+  },
+  {
+   "item_no": "832-0055-1000I",
+   "descripcion": "FOIL NERO 55X1000 CSO DF. B112"
+  },
+  {
+   "item_no": "832-0055-1100ER1000",
+   "descripcion": "FOIL NERO 55X1100ER1000"
+  },
+  {
+   "item_no": "832-0055-1200ER1000",
+   "descripcion": "FOIL NERO 55X1200ER1000"
+  },
+  {
+   "item_no": "832-0055-600P110",
+   "descripcion": "FOIL NERO 55X600 CSO P110"
+  },
+  {
+   "item_no": "832-0110-450ER728",
+   "descripcion": "FOILNEROC/R110X450CSOER728"
+  },
+  {
+   "item_no": "833-0040-900SR628",
+   "descripcion": "FOIL NERO 40X900 SR628 CSO"
+  },
+  {
+   "item_no": "833-0050-900SR628",
+   "descripcion": "FOIL NERO 50X900 SR628 CSO"
+  },
+  {
+   "item_no": "833-0055-300CR830",
+   "descripcion": "FOIL BIANCO 55X300 CSO CR830"
+  },
+  {
+   "item_no": "833-0055-600ER2000X",
+   "descripcion": "FOIL NERO 55X600 CSO ER2000X"
+  },
+  {
+   "item_no": "833-0055-900ER2000X",
+   "descripcion": "FOIL NERO 55X900 CSO ER2000X"
+  },
+  {
+   "item_no": "833-0110-410CR130",
+   "descripcion": "FOIL BLU 110x410 CSO CR130"
+  },
+  {
+   "item_no": "99-9999976",
+   "descripcion": "Supplies vario6330us TTO"
+  },
+  {
+   "item_no": "ANIME CARTONE 110",
+   "descripcion": "ANIME CARTONE 110MM"
+  },
+  {
+   "item_no": "AR-15-R22KQ25-350",
+   "descripcion": "TT RIBBON, BLACK, 22 mm x 350 M, PREMIUM GRADE, 25  PER CASE"
+  },
+  {
+   "item_no": "AR-15-R30KQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 30MM X 900M, PREMIUM GRADE, AS"
+  },
+  {
+   "item_no": "B505316",
+   "descripcion": "125 x 400 x 3 RUBBER PRINT PAD"
+  },
+  {
+   "item_no": "B511659",
+   "descripcion": "120 x 100 x 3 RUBBER PRINT PAD (BLUE)"
+  },
+  {
+   "item_no": "B511768",
+   "descripcion": "100 x 100 x 1.5 RUBBER PAD"
+  },
+  {
+   "item_no": "BA7858",
+   "descripcion": "137 x 140 x 3.25mm PRINT BLANKET (with self-adhesive) - ROLLIN TX70-2 UNCOATED"
+  },
+  {
+   "item_no": "CM500+ Transition",
+   "descripcion": "CM500+ Transition"
+  },
+  {
+   "item_no": "EM11042000801VE11N2R",
+   "descripcion": "Endlosrollen 110 mm x 420 m"
+  },
+  {
+   "item_no": "G15P55KQ10",
+   "descripcion": "NON ORACLE -"
+  },
+  {
+   "item_no": "JP-T1A-30W600-60",
+   "descripcion": "TTOリボン30mmX600m 白 1箱60巻入り"
+  },
+  {
+   "item_no": "JP-T1A30W900",
+   "descripcion": "TTOリボン30mmX900m  白 1箱10巻入り"
+  },
+  {
+   "item_no": "JP-T1A55W900",
+   "descripcion": "TTOリボン55mmX900m  白 1箱8巻入り"
+  },
+  {
+   "item_no": "JP-T1HSN1-35K750",
+   "descripcion": "高感度レジンリボン35mm x 750m"
+  },
+  {
+   "item_no": "JP-T1HSN1-55K750",
+   "descripcion": "高感度レジンリボン 55mm x 750m"
+  },
+  {
+   "item_no": "JP-T1HSN1-55W750",
+   "descripcion": "高感度レジンリボン55mm x 750m(白)　10巻入り"
+  },
+  {
+   "item_no": "JP-T1SCR11-110A",
+   "descripcion": "熱転写リボン110MMx300M(50巻1箱、50単位で販売）"
+  },
+  {
+   "item_no": "JP-T2A-33K-600",
+   "descripcion": "TTOリボン33mmX600m 黒　10巻入り"
+  },
+  {
+   "item_no": "JP-T2B-33K-600",
+   "descripcion": "TTOリボン33mmX600m   黒　1箱10巻入り"
+  },
+  {
+   "item_no": "JP-T2B55W1000-5",
+   "descripcion": "TTOリボン55mmX1000m 白　5巻入り"
+  },
+  {
+   "item_no": "MANUAL ENTRY -SUPPLIES TTO",
+   "descripcion": "(blank)"
+  },
+  {
+   "item_no": "T14601ZA",
+   "descripcion": "RIBBON ZEBRA 154MM X 450M OUT"
+  },
+  {
+   "item_no": "T22939ZA",
+   "descripcion": "RIBBON SATO 154MM X 450M IN"
+  },
+  {
+   "item_no": "T63440IO",
+   "descripcion": "AWR 8 110mm x 450m OUT"
+  },
+  {
+   "item_no": "TT-0090-300-W",
+   "descripcion": "TaÅ›ma 90X300"
+  },
+  {
+   "item_no": "TT-0130-300IN",
+   "descripcion": "TaÅ›ma 130x300"
+  },
+  {
+   "item_no": "TT-0150-300-W",
+   "descripcion": "TaÅ›ma 150x300"
+  },
+  {
+   "item_no": "TT-0152-300-W",
+   "descripcion": "TaÅ›ma 152x300"
+  },
+  {
+   "item_no": "UI90480",
+   "descripcion": "THERMAL TRANSFER RIBBON"
+  },
+  {
+   "item_no": "VJ-AR-15-C55KQ10",
+   "descripcion": "RL DATAFLEX AXR800 55mmx900m"
+  },
+  {
+   "item_no": "VJ-AR-15-J110KQ5-450",
+   "descripcion": "TTO RIBBON, RESIN GRADE, BLACK, 110MM X 450M, 5 PER CASE"
+  },
+  {
+   "item_no": "VJ-AR-15-J22KQ25-500",
+   "descripcion": "TT RIBBON RL VIDEOJET 6210 RESIN 22mmx500m"
+  },
+  {
+   "item_no": "VJ-AR-15-J30KQ25-450",
+   "descripcion": "RL DATAFLEX RESIN 30mmx450m"
+  },
+  {
+   "item_no": "VJ-AR-15-J30KQ25-900",
+   "descripcion": "TTO RIBBON, RESIN GRADE, BLACK, 30MM X 900M, 25 PER CASE"
+  },
+  {
+   "item_no": "VJ-AR-15-J33KQ25-600",
+   "descripcion": "TT RIBBON RL DATAFLEX RESIN. 33mmx600m"
+  },
+  {
+   "item_no": "VJ-AR-15-J40KQ25-600",
+   "descripcion": "TTO RIBBON, RESIN GRADE, BLACK, 40MM X 600M, 25 PER CASE"
+  },
+  {
+   "item_no": "VJ-AR-15-J55KQ10-450",
+   "descripcion": "TTO RIBBON, RESIN GRADE, BLACK, 55MM X 450M, 10 PER CASE"
+  },
+  {
+   "item_no": "VJ-AR-15-J55KQ10-900",
+   "descripcion": "TTO RIBBON, RESIN GRADE, BLACK, 55MM X 900M"
+  },
+  {
+   "item_no": "VJ-AR-15-P33KQ25-550",
+   "descripcion": "RL VIDEOJET 6210 AXR 600 33mm x 550 m"
+  },
+  {
+   "item_no": "VJAR-15-P33MWQ25-550",
+   "descripcion": "TT RIBBON, METALLIC WHITE, 33 mm x 550 M, SUPER STANDARD GRADE,"
+  },
+  {
+   "item_no": "VJ-AR-15-P55KQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55MM X 900M, SUPER PREMIUM, S"
+  },
+  {
+   "item_no": "VJ-AR-15-R110KQ5",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 110MM X 450M, PREMIUM GRADE"
+  },
+  {
+   "item_no": "VJ-AR-15-R110KQ5-900",
+   "descripcion": "TTO RIBBON, PREMIUM GRADE, BLACK, 110MM X 900M, LONG LENGTH, 5 PER CASE"
+  },
+  {
+   "item_no": "VJ-AR-15-R20KQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 20mm X 900m, PREMIUM GRADE, AS"
+  },
+  {
+   "item_no": "VJ-AR-15-R22KQ25-350",
+   "descripcion": "TT RIBBON, BLACK, 22 mm x 350 M, PREMIUM GRADE, 25  PER CASE"
+  },
+  {
+   "item_no": "VJ-AR-15-R22KQ25-500",
+   "descripcion": "TT RIBBON, BLACK, 22mm x 500M, PREMIUM GRADE,"
+  },
+  {
+   "item_no": "VJ-AR-15-R22WQ25-500",
+   "descripcion": "TT RIBBON, WHITE, 22mm x 500M, PREMIUM GRADE, 25  PER CASE"
+  },
+  {
+   "item_no": "VJ-AR-15-R25KQ25-500",
+   "descripcion": "Premium AXR 600 - 25mm x 500mm"
+  },
+  {
+   "item_no": "VJ-AR-15-R25KQ25-700",
+   "descripcion": "RL DATAFLEX PREMIUM 25mmx700m"
+  },
+  {
+   "item_no": "VJ-AR-15-R30KQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 30MM X 900M, PREMIUM GRADE, AS"
+  },
+  {
+   "item_no": "VJ-AR-15-R30WQ25",
+   "descripcion": "THERMAL TRANSFER RIBBON, WHITE, 30MM X 900M, PREMIUM GRADE, AS"
+  },
+  {
+   "item_no": "VJ-AR-15-R33KQ25",
+   "descripcion": "RL DATAFLEX PREMIUM 33mmx900m"
+  },
+  {
+   "item_no": "VJ-AR-15-R33KQ25-350",
+   "descripcion": "TT RIBBON, BLACK, 33 mm x 350 M, PREMIUM GRADE, 25  PER CASE"
+  },
+  {
+   "item_no": "VJ-AR-15-R33KQ25-500",
+   "descripcion": "TT RIBBON, BLACK, 33mm x 500M, PREMIUM GRADE,"
+  },
+  {
+   "item_no": "VJ-AR-15-R33RQ25",
+   "descripcion": "RL DATAFLEX PREMIUM R 33mmx900m"
+  },
+  {
+   "item_no": "VJ-AR-15-R55GQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, GREEN, 55MM X 900M, PREMIUM GRADE, S"
+  },
+  {
+   "item_no": "VJ-AR-15-R55KQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55MM X 900M, PREMIUM GRADE, S"
+  },
+  {
+   "item_no": "VJ-AR-15-R55KQ10-450",
+   "descripcion": "RL DATAFLEX STD 20mmx600m"
+  },
+  {
+   "item_no": "VJ-AR-15-R55LQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLUE, 55MM X 900M, PREMIUM GRADE,"
+  },
+  {
+   "item_no": "VJ-AR-15-R55RQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, RED, 55MM X 900M, PREMIUM GRADE,"
+  },
+  {
+   "item_no": "VJ-AR-15-R55WQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, WHITE, 55MM X 900M, PREMIUM GRADE, S"
+  },
+  {
+   "item_no": "VJ-AR-15-S22KQ25-600",
+   "descripcion": "TT RIBBON, BLACK, 22mm x 600M, STANDARD GRADE,"
+  },
+  {
+   "item_no": "VJ-AR-15-S30KQ25-600",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 30MM X 600M, STANDARD GRADE, A"
+  },
+  {
+   "item_no": "VJ-AR-15-S33KQ25-600",
+   "descripcion": "TT RIBBON, BLACK, 33mm x 600M, STANDARD GRADE,"
+  },
+  {
+   "item_no": "VJ-AR-15-S33RQ25-550",
+   "descripcion": "TT RIBBON, RED, 33 mm x 550 M, STANDARD GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "VJ-AR-15-S55KQ10-600",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55MM X 600M, STANDARD GRADE,"
+  },
+  {
+   "item_no": "VJ-AR-15-T33KQ25-500",
+   "descripcion": "TT RIBBON, BLACK, 33mm x 500M, PREMIUM GRADE"
+  },
+  {
+   "item_no": "VJ-AR-15-T55KQ10",
+   "descripcion": "DATAFLEX PREMIUM  55mmx900m"
+  },
+  {
+   "item_no": "VJ-AR-15-T55KQ25-900",
+   "descripcion": "RL DATAFLEX PREMIUM 55mm X 900 m"
+  },
+  {
+   "item_no": "VJ-AR-15-U110KQ5-700",
+   "descripcion": "TT RIBBON, BLACK, 110 MM X 700 M, ULTRA GRADE, 5 PER CASE"
+  },
+  {
+   "item_no": "VJAR-15-U20KQ25-1200",
+   "descripcion": "TT RIBBON, BLACK, 20 MM X 1200 M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "VJ-AR-15-U22KQ25-700",
+   "descripcion": "TT RIBBON, BLACK, 22 MM X 700 M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "VJAR-15-U25KQ25-1200",
+   "descripcion": "TT RIBBON, BLACK, 25 MM X 1200 M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "VJ-AR-15-U25KQ25-700",
+   "descripcion": "TT RIBBON, BLACK, 25 MM X 700 M, ULTRA GRADE"
+  },
+  {
+   "item_no": "VJAR-15-U30KQ25-1200",
+   "descripcion": "TT RIBBON, BLACK, 30 MM X 1200 M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "VJ-AR-15-U30KQ25-700",
+   "descripcion": "TT RIBBON, BLACK, 30 MM X 700 M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "VJAR-15-U33KQ25-1200",
+   "descripcion": "TT RIBBON, BLACK, 33 MM X 1200 M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "VJ-AR-15-U33KQ25-500",
+   "descripcion": "TT RIBBON, BLACK, 33 MM X 500 M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "VJ-AR-15-U33KQ25-700",
+   "descripcion": "TT RIBBON, BLACK, 33 MM X 700 M, ULTRA GRADE, 25 PER CASE"
+  },
+  {
+   "item_no": "VJAR-15-U55KQ10-1200",
+   "descripcion": "TT RIBBON, BLACK, 55 MM X 1200 M, ULTRA GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "VJ-AR-15-U55KQ10-700",
+   "descripcion": "TT RIBBON, BLACK, 55 MM X 700 M, ULTRA GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "VJ-AR-15-Y55KQ10",
+   "descripcion": "THERMAL TRANSFER RIBBON, BLACK, 55 MM X 1000 M, WASH RESIST GRADE, 10 PER CASE"
+  },
+  {
+   "item_no": "VJAR-15-Z55KQ10-1000",
+   "descripcion": "TT RIBBON, Black, 55MM X 1000M, ROUGH STANDARD GRADE,"
+  },
+  {
+   "item_no": "Y54119226934",
+   "descripcion": "58mm x 100 m Resin, CSO, R236A"
+  }
+ ],
+ "longitudes_anchos": {
+  "estandar": [
+   {
+    "impresora": "6210/6230/6250",
+    "tecnologia": "TTO",
+    "anchos_mm": "22/33",
+    "diametro_mm": "",
+    "longitudes_por_grado": {
+     "APR400": 600,
+     "APR 500": 600,
+     "APR 600": 600,
+     "APX 650": 550,
+     "APX 650LL": 700,
+     "AXR 600": 500,
+     "AXR 800": 500,
+     "AXR 900": 600,
+     "APR": 550,
+     "APR 600UW": 450,
+     "APR600GD": "",
+     "APX 650 MW": 550,
+     "AXR": 500
+    }
+   },
+   {
+    "impresora": "6220",
+    "tecnologia": "TTO",
+    "anchos_mm": "22/33",
+    "diametro_mm": "",
+    "longitudes_por_grado": {
+     "APR 500": 400,
+     "APR 600": 400,
+     "APX 650": 350,
+     "APX 650LL": 500,
+     "AXR 600": 350,
+     "APR 600UW": 300,
+     "APR600GD": "",
+     "APX 650 MW": 350,
+     "AXR": 350
+    }
+   },
+   {
+    "impresora": "DATAFLEX",
+    "tecnologia": "TTO",
+    "anchos_mm": "30/33/55/110",
+    "diametro_mm": "85",
+    "longitudes_por_grado": {
+     "APR400": 600,
+     "APR 500": 600,
+     "APR 600": 600,
+     "APX 650": 450,
+     "APX 650LL": 700,
+     "AXR 600": 450,
+     "AXR 800": 450,
+     "AXR 900": 600,
+     "APR": 450,
+     "APR 600UW": "450/600",
+     "APR600GD": 600,
+     "APX 650 MW": 600,
+     "AXR": 450
+    }
+   },
+   {
+    "impresora": "DATAFLEX",
+    "tecnologia": "TTO",
+    "anchos_mm": "30/33/55",
+    "diametro_mm": "107",
+    "longitudes_por_grado": {
+     "APR400": 1000,
+     "APR 500": 1000,
+     "APR 600": 1000,
+     "APX 650": 900,
+     "APX 650LL": 1200,
+     "AXR 600": 900,
+     "AXR 800": 900,
+     "AXR 900": 1000,
+     "APR": 750,
+     "APR 600UW": 750,
+     "APR600GD": 1000,
+     "APX 650 MW": 900,
+     "AXR": 900
+    }
+   }
+  ],
+  "no_estandar": [
+   {
+    "impresora": "9550",
+    "tecnologia": "LPA",
+    "anchos_mm": "55/76/110",
+    "diametro_mm": "",
+    "longitudes_por_grado": {
+     "APR 500": 830,
+     "APX 650": 750,
+     "AXR 600": 700,
+     "APR": "",
+     "APR 600UW": "",
+     "APR600GD": "",
+     "APX 650 MW": 800,
+     "AXR": 700
+    }
+   },
+   {
+    "impresora": "6210/6230/6250",
+    "tecnologia": "TTO",
+    "anchos_mm": "",
+    "diametro_mm": "",
+    "longitudes_por_grado": {
+     "APR400": 600,
+     "APR 500": 600,
+     "APR 600": 600,
+     "APX 650": 550,
+     "APX 650LL": 700,
+     "AXR 600": 500,
+     "AXR 800": 500,
+     "AXR 900": 600,
+     "APR": 550,
+     "APR 600UW": 450,
+     "APR600GD": "",
+     "APX 650 MW": 550,
+     "AXR": 500
+    }
+   },
+   {
+    "impresora": "6220",
+    "tecnologia": "TTO",
+    "anchos_mm": "",
+    "diametro_mm": "",
+    "longitudes_por_grado": {
+     "APR 500": 400,
+     "APR 600": 400,
+     "APX 650": 350,
+     "APX 650LL": 500,
+     "AXR 600": 350,
+     "APR 600UW": 300,
+     "APR600GD": "",
+     "APX 650 MW": 350,
+     "AXR": 350
+    }
+   },
+   {
+    "impresora": "DATAFLEX",
+    "tecnologia": "TTO",
+    "anchos_mm": "20/35/40/80",
+    "diametro_mm": "85",
+    "longitudes_por_grado": {
+     "APR400": 600,
+     "APR 500": 600,
+     "APR 600": 600,
+     "APX 650": 450,
+     "APX 650LL": 700,
+     "AXR 600": 450,
+     "AXR 800": 450,
+     "AXR 900": 600,
+     "APR": 450,
+     "APR 600UW": "450/600",
+     "APR600GD": 600,
+     "APX 650 MW": 600,
+     "AXR": 450
+    }
+   },
+   {
+    "impresora": "DATAFLEX",
+    "tecnologia": "TTO",
+    "anchos_mm": "20/35/40",
+    "diametro_mm": "107",
+    "longitudes_por_grado": {
+     "APR400": 1000,
+     "APR 500": 1000,
+     "APR 600": 1000,
+     "APX 650": 900,
+     "APX 650LL": 1200,
+     "AXR 600": 900,
+     "AXR 800": 900,
+     "AXR 900": 1000,
+     "APR": 750,
+     "APR 600UW": 750,
+     "APR600GD": 1000,
+     "APX 650 MW": 900,
+     "AXR": 900
+    }
+   },
+   {
+    "impresora": "9550",
+    "tecnologia": "LPA",
+    "anchos_mm": "",
+    "diametro_mm": "",
+    "longitudes_por_grado": {
+     "APR 500": 830,
+     "APX 650": 750,
+     "AXR 600": 700,
+     "APR": "",
+     "APR 600UW": "",
+     "APR600GD": "",
+     "APX 650 MW": 800,
+     "AXR": 700
+    }
+   }
+  ]
+ },
+ "logica_lote": [
+  {
+   "celda": "K1",
+   "texto": "Lot Number:"
+  },
+  {
+   "celda": "K2",
+   "texto": "First two digits indicate the slitting country:"
+  },
+  {
+   "celda": "K3",
+   "texto": "01 for France"
+  },
+  {
+   "celda": "K4",
+   "texto": "02 for USA"
+  },
+  {
+   "celda": "K5",
+   "texto": "03 for India"
+  },
+  {
+   "celda": "K6",
+   "texto": "04 for Mexico"
+  },
+  {
+   "celda": "K7",
+   "texto": "05 for China"
+  },
+  {
+   "celda": "K8",
+   "texto": "06 for South Africa"
+  },
+  {
+   "celda": "K9",
+   "texto": "07 for Singapore"
+  },
+  {
+   "celda": "K10",
+   "texto": "08 for Brazil"
+  },
+  {
+   "celda": "A11",
+   "texto": "Date Code:"
+  },
+  {
+   "celda": "K11",
+   "texto": "09 for Canada"
+  },
+  {
+   "celda": "A12",
+   "texto": "First two digits are the year."
+  },
+  {
+   "celda": "K12",
+   "texto": "11 for Columbia"
+  },
+  {
+   "celda": "A13",
+   "texto": "Last two digits are the week number."
+  },
+  {
+   "celda": "K13",
+   "texto": "12 for Kenya"
+  },
+  {
+   "celda": "K14",
+   "texto": "13 for Turkey"
+  },
+  {
+   "celda": "B22",
+   "texto": "Jumbo roll -"
+  },
+  {
+   "celda": "C37",
+   "texto": "https://www.armor-iimak.us/en/inkside/how-is-a-thermal-transfer-ribbon-made"
+  }
+ ],
+ "nota": "Los grados traen PN, descripcion, aplicaciones, sustratos, colores, velocidad max (mm/s), negrura Macbeth, durabilidad (0-100%), resistencia termica, tipo y film base. Los items son la lista de suministros TTO (item_no + descripcion). Longitudes/anchos por impresora y grado. Columnas de competencia (O-AE) no incluidas en v1."
+}

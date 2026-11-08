@@ -1,0 +1,591 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\72857-C Modification of APM DNA-pump chamber.pdf
+# cifrado=False bloques=40 caracteres=31721
+
+AL-72857Table of contents/Inhaltsverzeichnis
+1 Modification from DNA to APMDNA...........................1
+1.1 Draining of the Marking Unit...........................1.2 Adjustment of the Overcurr..................................2ent Limit.................................................3
+1.3 Dismounting of the DNA Pump Chamber......1.4 Mountig of the APM DNA Pu..................................4mp Chamber.......................................6
+1.5 Update of the QMark Software via MMC.......1.6 Update of the System Database..................................9 via Smart Graph Software..........11
+2 Exchange of APMDNA Pump Chamber...................13
+2.1 Draining of the Marking Unit...........................2.2 Dismounting of the APMDNA................................14 Pump Chamber..............................15
+2.3 Mounting of the APMDNA Pump Chamber...................................17
+3 Umbau von DNA auf APMDNA................................19
+3.1 Entleeren der Beschriftungseinheit................3.2 Einstellen der Überstromg................................20renze.....................................................21
+3.3 Ausbau der DNA-Pumpkammer...........................3.4 Einbau der APMDNA-Pumpk..........................22ammer.............................................24
+3.5 Update der QMark-Software über MMC........3.6 Update der Systemdatenbank ü................................27ber die Smart Graph-Software.....29
+4 Austausch der APMDNA-Pumpkammer..................31
+4.1 Entleeren der Beschriftungseinheit................4.2 Ausbau der APMDNA-Pum................................32pkammer............................................33
+4.3 Einbau der APMDNA-Pumpkammer.............................................35
+1
+
+Table of contents/InAL-72857haltsverzeichnis
+2
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Modification from DNA to APMDNA
+1 Modification from DNA to APMDNA
+NoteIn this manual the modification of the pump chamber from the old the new APM DNA is described for theDNA to DN50A.
+For software versions before 6.4.5.1, the exchange kit AL-SP72854 isneeded for the modification.
+From software version 6.7.0 inclSP71043 is needed for the modification.uding 6.8.0, the exchange kit AL-
+NumberDesignation
+1pump chamber
+2connections of cooling hoses
+3silicone hoses
+4guard rings
+Overview of the DNA pump chamber
+1
+33
+4 2
+2
+04/08 - Rev. A 1
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Modification from DNA to APMDNA
+1.1 Draining of the Marking Unit
+DangerBefore starting any work the laser system must be dead.
+1.Turn the key switch to position »0«.Remove the key to ensure that the laser system cannot be switched on.
+2.Wait for the message »Key switch open« to be displayed on the touchscreen.
+3.Switch off the main switch.
+4.Keep the mains connector connected to ground the system.
+ImportantThe marking unit must be placed above the level of the cooling unit!
+1.Remove the water connections at the marking le.unit and connect both hoses to the 3/4" nipp-
+2.Connect the draining adapter to a gas bottle Blow out the adapter for approx. 10 seconds.(nitrogen or helium, max. pressure 5bar).
+3.Connect the draining adapter to the connection out the marking unit for approx. 20 minutes.for initial water of the marking unit and blow
+4.Remove the 3/4" nipple from the hoses and connect them to the marking unit.
+2 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Modification from DNA to APMDNA
+1.2 Adjustment of the Overcurrent Limit
+ImportantThe overcurrent limit must be adjusted only. These power supplies have no index behind the article number on thefor diode power supplies until index F
+nameplate of the power supply.
+The diode power supplies with the index F and upwards are already adjus-ted. These power supplies have an index behind the article number on the
+nameplate of the power supply.
+1.Remove the front panel of the PCM housing.
+2.Loosen the safety interlock (2 turns) and remove the lateral fixing screw of the supply unit.
+3.Pull the supply unit out of the PCM.
+4.Rotate the screw on the trimmer of the diode power supply 15 turns clockwise by using thescrewdriver.
+5.Push the supply unit into the PCM, tighten the lateral fixing screw and lock the supply unit.
+lateral fixing screw
+safety interlock
+diode power supply
+trimmer
+04/08 - Rev. A 3
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Modification from DNA to APMDNA
+1.3 Dismounting of the DNA Pump Chamber
+DangerMake sure to wear the grounding wrist strap during the completeexchange of the pump chamber.
+1.Open the housing cover of the laser head.
+2.Disconnect the ID board connector X 434 from the LHC board.
+3.Remove the cover of the cable duct.
+4.Disconnect both pump chamber connections:
+first W 405 (+)
+then W 409 (-)
+Observe the correct order!
+5.Insert the short circuit bridge to the pump chamber connections.
+6.Remove the fixing screws of the pump chamber terminal and remove the pump chamberterminal.
+7.Remove both connections of the cooling hosesguard ring (4) down while pulling the connections off. (2) from the pump chamber by pressing the
+ImportantTo make sure that no dirt can get into the system you have to:
+connect the cooling hoses to each other via the plastic hose and
+close the openings in the pump chamber using the protection caps.
+8.Remove the silicone hoses (3) between- the output coupler and the pump chamber,
+- the pump chamber and the mode aperture.
+connection ID board
+4 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Modification from DNA to APMDNA
+9.Loosen the grounding screw and remove the cable eye and both toothed disks from the pumpchamber.
+10.Remove the four fixing screws of the pump chamber base plate and remove the pump cham-ber.
+11.Close the dust protection tubes of the pump chamber using the protection caps.
+ImportantProtect the open resonator from dust and dirt using the protection caps.
+grounding screw
+fixing screwsfixing screws
+04/08 - Rev. A 5
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Modification from DNA to APMDNA
+1.4 Mountig of the APM DNA Pump Chamber
+Overview of the APMDNA pump chamber
+1
+3 3
+4 2
+2
+NumberDesignation
+1pump chamber
+2connections of cooling hoses
+3silicone hoses
+4guard rings
+6 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Modification from DNA to APMDNA
+1.Remove the protection caps from the new cooling water hoses.pump chamber and the plastic hose from the
+2.Connect the cooling hoses (2) to the pump chamber.
+3.Remove the dust protection caps from the new pump chamber and (if existing) from the re-sonator.
+4.Insert the pump chamber and tighten the fixing screws of the pump chamber base plate.
+5.Place the silicone hoses (3) between- the output coupler and the pump chamber,
+- the pump chamber and the mode aperture.
+6.Connect the ID board connector X 434 to the LHC board.Thus the counter of operating hours is set to the value of the new pump chamber.
+7.Remove the short circuit bridge from the pump chamber terminal.
+8.Connect both pump chamber connections.first W 409 (black) to -
+then W 405 (red) to +
+short circuit bridge
+04/08 - Rev. A 7
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Modification from DNA to APMDNA
+9.Mount the pump chamber terminal to the cable duct.
+10.Connect the cable duct and tighten all screws.
+11.Close the housing cover of the marking unit.
+12.Look for the cooling water temperature given in the inspection protocols of the pump chamberand set the temperature reference value (see "Temperature Control", section "Setting Re-
+ference Value" in chapter "Installation").
+AttentionThe laser system must not be activated!
+If the pump chamber is not integrated into the cooling circuit the diodes canbe destroyed due to overheating.
+Make sure that the key switch is in position »0«.
+ImportantAfter exchanging the pump chamber the laser system must be bled(see chapter "Maintenance", section "Bleeding of the Laser System")
+and the resonator must be adjusted (see instruction "Adjustment of theResonator").
+fixing screws of terminal
+8 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Modification from DNA to APMDNA
+1.5 Update of the QMark Software via MMC
+To update the QMark software of the laser system follow these steps:
+DangerBefore starting any work the laser system must be dead!1.Turn the key switch to position »0«.
+Remove the key to ensure that the laser system cannot be switched on.
+2.Wait for the message »Key switch open« to be displayed on the touchscreen.
+3.Switch off the main switch.
+4.Keep the mains connector connected to ground the system.
+5.Loosen the safety interlock (2 turns).
+6.Pull out the control unit using the handles.
+7.On the ACC board is the MultiMediaCard (MMC).
+Remove the MMC by pressing it slightly in and then pulling it out.
+8.Install the card reader according to the card readers manual. After that you will see the cardreader as a new disc drive.
+9.Insert the MMC card into the card reader and open the Windows Explorer.
+10.Open the drive in the Windows Explorer that refers to the card reader.
+safety interlock
+control unit
+MultiMediaCard
+FPGA
+Bootflash
+PowerPC
+T DSP
+SDRAM
+T
+R
+04/08 - Rev. A 9
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Modification from DNA to APMDNA
+11.Save:- for software versions before 6.4.5.1 the file database.ydb or
+- from software version 6.7.0 the directory Database to your hard disk.
+12.Close the drive in the Windows Explorer.
+13.Select the drive with the right mouse key and format the MMC card.
+14.Open the zip-file from the appropriate QMark directory and extract all the files to the MMCcard.
+15.Copy the saved file database.ydb or the saved directory Smarties and overwrite the existing file or the existing directory.Database to the directory
+16.You will find the following files on the MMC card:
+17.Insert the MMC into its holder.
+18.Push the control unit into the PCM and lock it.
+19.Mount the front panel.
+before software version 6.4.5.1
+from software version 6.7.0
+10 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Modification from DNA to APMDNA
+1.6 Update of the System Database via Smart Graph Software
+1.Download both files AgingControl_dn50a_1.cf page.and dn50a_1.cf from the Internet
+2.Start the Smart Graph software.
+NoteThe detailed information about the Smartthe SmartGraph software can be found inGraph manual.
+3.Select the desired laser system in the selection field.
+4.Click on the button to the left of the selection field in order to connect to the laser system.
+5.Click in the user interface »File« on the button »Import« and select »Import file«.Select the file type »(*.*)« and both files to be imported.
+6.Confirm with »Open«.
+7.Restart the laser system.
+04/08 - Rev. A 11
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Modification from DNA to APMDNA
+12 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Exchange of APMDNA Pump Chamber
+2 Exchange of APMDNA Pump Chamber
+The pump chamber has to be exchanged
+if the YAG rod is defective (indicated by too low output power after resonator adjustment)
+in case of leaks
+Overview of the APMDNA pump chamber
+1
+3 3
+4 2
+2
+NumberDesignation
+1pump chamber
+2connections of cooling hoses
+3silicone hoses
+4guard rings
+04/08 - Rev. A 13
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Exchange of APMDNA Pump Chamber
+2.1 Draining of the Marking Unit
+DangerBefore starting any work the laser system must be dead.
+1.Turn the key switch to position »0«.Remove the key to ensure that the laser system cannot be switched on.
+2.Wait for the message »Key switch open« to be displayed on the touchscreen.
+3.Switch off the main switch.
+4.Keep the mains connector connected to ground the system.
+ImportantThe marking unit must be placed above the level of the cooling unit!
+1.Remove the water connections at the marking le.unit and connect both hoses to the 3/4" nipp-
+2.Connect the draining adapter to a gas bottle Blow out the adapter for approx. 10 seconds.(nitrogen or helium, max. pressure 5bar).
+3.Connect the draining adapter to the connection out the marking unit for approx. 20 minutes.for initial water of the marking unit and blow
+4.Remove the 3/4" nipple from the hoses and connect them to the marking unit.
+14 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Exchange of APMDNA Pump Chamber
+2.2 Dismounting of the APMDNA Pump Chamber
+DangerMake sure to wear the grounding wrist strap during the completeexchange of the pump chamber.
+1.Open the housing cover of the laser head.
+2.Disconnect the ID board connector X 434 from the LHC board.
+3.Remove the cover of the cable duct.
+4.Remove the fixing screws of the pump chamber terminal and remove the pump chamberterminal.
+5.Disconnect both pump chfirst W 405 (+)amber connections:
+then W 409 (-)
+Observe the correct order!
+6.Insert the short circuit bridge to the pump chamber connections.
+connection ID board
+fixing screws of terminal
+short circuit bridge
+04/08 - Rev. A 15
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Exchange of APMDNA Pump Chamber
+7.Remove the silicone hoses (3) between- the output coupler and the pump chamber,
+- the pump chamber and the mode aperture.
+8.Remove the four fixing screws of the pump chamber base plate and remove the pump cham-ber.
+9.Remove both connections of the cooling hosesguard ring (4) down while pulling the connections off. (2) from the pump chamber by pressing the
+ImportantTo make sure that no dirt can get into the system you have to:
+connect the cooling hoses to each other via the plastic hose and
+close the openings in the pump chamber using the protection caps.
+10.Close the dust protection tubes of the pump chamber using the protection caps.
+ImportantProtect the open resonator from dust and dirt using the protection caps.
+16 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Exchange of APMDNA Pump Chamber
+2.3 Mounting of the APMDNA Pump Chamber
+1.Remove the protection caps from the new cooling water hoses.pump chamber and the plastic hose from the
+2.Connect the cooling hoses (2) to the pump chamber.
+3.Remove the dust protection caps from the new pump chamber and (if existing) from the re-sonator.
+4.Insert the pump chamber and tighten the fixing screws of the pump chamber base plate.
+5.Place the silicone hoses (3) between- the output coupler and the pump chamber,
+- the pump chamber and the mode aperture.
+6.Connect the ID board connector X 434 to the LHC board.Thus the counter of operating hours is set to the value of the new pump chamber.
+7.Remove the short circuit bridge from the pump chamber terminal.
+8.Connect both pump chamber connections.first W 409 (black) to -
+then W 405 (red) to +
+short circuit bridge
+04/08 - Rev. A 17
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Exchange of APMDNA Pump Chamber
+9.Mount the pump chamber terminal to the cable duct.
+10.Connect the cable duct and tighten all screws.
+11.Close the housing cover of the marking unit.
+12.Look for the cooling water temperature given in the inspection protocols of the pump chamberand set the temperature reference value (see "Temperature Control", section "Setting Re-
+ference Value" in chapter "Installation").
+AttentionThe laser system must not be activated!
+If the pump chamber is not integrated into the cooling circuit the diodes canbe destroyed due to overheating.
+Make sure that the key switch is in position »0«.
+ImportantAfter exchanging the pump chamber the laser system must be bled(see chapter "Maintenance", section "Bleeding of the Laser System")
+and the resonator must be adjusted (see instruction "Adjustment of theResonator").
+fixing screws of terminal
+18 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Umbau von DNA auf APMDNA
+3 Umbau von DNA auf APMDNA
+HinweisDiese Anleitung beschreibt, wie man beim kammer auf die neue DN50A von der alten APM DNA-DNA-Pumpkammer umbaut.Pump-
+Für den Umbau benötigen Sie:- bis Software Version 6.4.5.1 das Ersatzteil AL-SP72854,
+- ab der Software Version 6.7.0, inklusive 6.8.0 das Ersatzteil AL-SP71043.
+NummerBezeichnung
+1Pumpkammer
+2Kühlschlauchanschlüsse
+3Silikonschläuche
+4Sicherungsringe
+Übersicht der DNA-Pumpkammer
+1
+33
+4 2
+2
+04/08 - Rev. A 19
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Umbau von DNA auf APMDNA
+3.1 Entleeren der Beschriftungseinheit
+GefahrVor Beginn der Arbeiten muss das Lasersystem unbedingt spannungs-frei geschaltet werden.
+1.Drehen Sie den Schlüsselschalter in die Position »0«.Ziehen Sie den Schlüssel ab, um sicherzustellen, dass das Lasersystem
+nicht eingeschaltet werden kann.
+2.Warten Sie, bis auf dem Touchscreen die Meldung »Schlüsselschalter of-fen« erscheint.
+3.Schalten Sie den Hauptschalter aus.
+4.Lassen Sie den Netzstecker zur Erdung des Systems in der Steckdose.
+WichtigDie Beschriftungseinheit muss über dem Niveau der Kühlanlage aufge-stellt sein!
+1.Lösen Sie die Wasserverschraubungen an der Schläuche mit dem Verbindungsstück.Beschriftungseinheit und verbinden Sie die
+2.Schließen Sie den Entwässerungsadapter an eine Gasflasche (Stickstoff oder Helium, max.Druck 5 bar) an.
+Blasen Sie den Adapter ca. 10 Sekunden aus.
+3.Schließen Sie den Entwässerungsadapter an blasen Sie die Beschriftungden Vorlauf der Beschriftungseinheit an undseinheit ca. 20 Minuten aus.
+4.Lösen Sie das Verbindungsstück von den Verschraubungen und schließen Sie sie wiederan die Beschriftungseinheit an.
+20 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Umbau von DNA auf APMDNA
+3.2 Einstellen der Überstromgrenze
+WichtigNur für die Diodennetzteile bis zum Index F muss die Überstromgrenze neueingestellt werden. Diese Netzteile haben auf dem Typenschild hinter der
+Artikelnummer keinen Index stehen.
+Die Diodennetzteile mit Index F und höher sind schon voreingestellt. DieseNetzteile haben auf dem Typenschild hinter der Artikelnummer den Index F
+oder höher stehen.
+1.Entfernen Sie die Frontblende des PCM-Gehäuses.
+2.Lösen Sie die Sicherheitsverriegelung (2 Umdrehungen) und die seitliche Befestigungs-schraube der Versorgungseinheit.
+3.Ziehen Sie die Versorgungseinheit aus dem PCM heraus.
+4.Drehen Sie mit Hilfe des Schraubendrehers die Schraube am Trimmer des Diodennetzteils15 Umdrehungen im Uhrzeigersinn.
+5.Schieben Sie die Versorgungseinheit in das PCM hinein, schrauben Sie die seitliche Befe-stigungsschraube fest und verriegeln Sie die Versorgungseinheit.
+Befestigungsschraube
+Sicherheitsverriegelung
+Diodennetzteil
+Trimmer
+04/08 - Rev. A 21
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Umbau von DNA auf APMDNA
+3.3 Ausbau der DNA-Pumpkammer
+GefahrTragen Sie während der gesamten Demontage bzw. Montage unbedingtein Erdungsband an der Hand.
+1.Öffnen Sie den Gehäusedeckel des Laserkopfes.
+2.Ziehen Sie den ID-Board Stecker X 434 von der LHC ab.
+3.Entfernen Sie die Abdeckung des Kabelkanals.
+4.Klemmen Sie die beiden Pumpkammeranschlüsse ab:
+erst W 405 (+)
+dann W 409 (-)
+Beachten Sie dierichtige Reihenfolge!
+5.Setzen Sie an deren Position die Kurzschlussbrücke ein.
+6.Lösen Sie die Befestigungsschrauben der Pumpkammerklemme und nehmen Sie die Pump-kammerklemme heraus.
+7.Entfernen Sie die beiden Kühlschlauchanschlüsse (2) an dergleichzeitig den Sicherungsring (4) herunterdrücken und die Anschlüsse abziehen. Pumpkammer, indem Sie
+WichtigDamit kein Schmutz eindringen kann müssen:die Kühlwasserschläuche mit der Schlauchbrücke verbunden werden und
+die entstandenen Öffnungen in der Pumpkammer mit den Schutzkappen versehen werden.
+8.Entfernen Sie die Silikonschläuche (3) zwischen- dem Auskoppelspiegel und der Pumpkammer,
+- der Pumpkammer und der Modenblende.
+Anschluss ID Board
+22 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Umbau von DNA auf APMDNA
+9.Lösen Sie die Erdungsschraube und entferZahnscheiben von der Pumpkammer.nen Sie den Ringkableschuh und die beiden
+10.Lösen Sie die vier Befestigungsschrauben aufdie Pumpkammer aus. der Pumpkammerbasisplatte und bauen Sie
+11.Setzen Sie die Schutzkappen auf die Staubschutzrohre der Pumpkammer.
+WichtigSchützen Sie alle Komponenten im Laserkopf mit den Schutzkappen vorStaub und Verunreinigungen.
+Erdungsschraube
+BefestigungsschraubenBefestigungsschrauben
+04/08 - Rev. A 23
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Umbau von DNA auf APMDNA
+3.4 Einbau der APMDNA-Pumpkammer
+Übersicht der APMDNA-Pumpkammer
+NummerBezeichnung
+1Pumpkammer
+2Kühlschlauchanschlüsse
+3Silikonschläuche
+4Sicherungsringe
+1
+3 3
+4 2
+2
+24 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Umbau von DNA auf APMDNA
+1.Entfernen Sie die Schutzkappen von der neuen Pumpkammer und die Schlauchbrücke vonden Kühlwasserschläuchen.
+2.Schließen Sie die Kühlschlauchanschlüsse (2) an die Pumpkammer an.
+3.Entfernen Sie die Schutzkappen von der neuen Pumpkammer und gegebenenfalls vom Re-sonator.
+4.Setzen Sie die Pumpkammer ein und ziehen Sie die Befestigungsschrauben fest.
+5.Verbinden Sie mit den Silikonschläuchen (3) - den Auskoppelspiegel und die Pumpkammer,
+- die Pumpkammer und die Modenblende.
+6.Verbinden Sie den ID-Board Stecker X 434 mit der LHC.Dadurch wird der Betriebsstundenzähler auf den neuen Wert der Pumpkammer gesetzt.
+7.Entfernen Sie die Kurzschlussbrücke von der Pumpkammerklemme.
+8.Klemmen Sie die beiden Pumpkammeranschlüsse an.erst W 409 (schwarz) auf -
+dann W 405 (rot) auf +
+Kurzschlussbrücke
+04/08 - Rev. A 25
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Umbau von DNA auf APMDNA
+9.Bauen Sie die Pumpkammerklemme in den Kabelkanal ein.
+10.Schließen Sie die Abdeckung des Kabelkanals und schrauben Sie alle Schrauben fest.
+11.Schließen Sie den Gehäusedeckel des Laserkopfes.
+12.Entnehmen Sie aus den Prüfprotokollen der Pumpkammer die Kühlwassertemperatur undstellen Sie den Temperatursollwert ein (siehe Abschnitt "Temperaturregler", "Sollwertein-
+stellung" im Kapitel "Inbetriebnahme").
+AchtungDer Laser darf nicht gestartet werden!Solange die Pumpkammer nicht in den Kühlkreislauf integriert ist, können die
+Dioden durch Überhitzung zerstört werden.Stellen Sie sicher, dass der Schlüsselschalter in der Position »0« steht.
+WichtigNach dem Pumpkammerwechsel muss das Lasersystem entlüftet wer-den (siehe Kapitel "Wartung", Abschnitt "Entlüften des Lasersystems")
+und der Resonator justiert werden (siehe Anleitung "Resonatorju-stage").
+Befestigungsschrauben der Klemme
+26 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Umbau von DNA auf APMDNA
+3.5 Update der QMark-Software über MMC
+Zum Update der QMark-Software des Lasersystems führen Sie folgende Schritte aus:
+GefahrVor Beginn der Arbeiten muss das Lasersystem unbedingt spannungs-frei geschaltet werden.
+1.Drehen Sie den Schlüsselschalter in die Position »0«.Ziehen Sie den Schlüssel ab, um sicherzustellen, dass das Lasersystem
+nicht eingeschaltet werden kann.
+2.Warten Sie, bis auf dem Touchscreen die Meldung »Schlüsselschalter of-fen« erscheint.
+3.Schalten Sie den Hauptschalter aus.
+4.Lassen Sie den Netzstecker zur Erdung des Systems in der Steckdose.
+5.Lösen Sie die Sicherheitsverriegelung (2 Umdrehungen).
+6.Ziehen Sie die Steuereinheit an den Griffen aus dem PCM heraus.
+7.Auf der ACC-Platine befindet sich die MultiMediaCard (MMC).
+Nehmen Sie die MMC aus der Halterung heraus, inund anschließend herausziehen.dem Sie sie zuerst leicht hineinschieben
+8.Installieren Sie den Kartenleser entsprechend der Anleitung des Herstellers. Der Kartenleserwird anschließend als zusätzliches Laufwerk auf Ihrem PC angezeigt.
+9.Stecken Sie die MMC in den Kartenleser und öffnen Sie den Windows Explorer.
+Sicherheitsverriegelung
+Steuereinheit
+MultiMediaCard
+FPGA
+Bootflash
+PowerPC
+T DSP
+SDRAM
+T
+R
+04/08 - Rev. A 27
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Umbau von DNA auf APMDNA
+10.Öffnen Sie anschließend im Windows Explorer das Laufwerk, das dem Kartenleser zuge-ordnet wurde.
+11.Sichern Sie:- bis zur Software Version 6.4.5.1 die Datei database.ydb oder
+- ab der Software Version 6.7.0 das Verzeichnis Database auf ihrer Festplatte.
+12.Schließen Sie das Laufwerk im Windows Explorer.
+13.Wählen Sie durch Klicken der rechten MaustaMMC-Karte.ste das Laufwerk aus und formatieren Sie die
+14.Öffnen Sie die zip-Datei aus dem entsprechenden QMark-Verzeichnialle Dateien auf die MMC.s und extrahieren Sie
+15.Kopieren Sie die gesicherte Datei database.ydb tabase oder das gesicherte Verzeichnisin das Verzeichnis Smarties und überschreiben Sie die vorhandene Datei oder Da-
+das vorhandene Verzeichnis.
+16.Die MMC sollte anschließend die folgenden Dateien enthalten:
+17.Setzen Sie die MMC wieder in ihre Halterung ein.
+18.Schieben Sie die Steuereinheit in das PCM hinein und verriegeln Sie sie.
+19.Befestigen Sie die Frontblende.
+bis Software Version 6.4.5.1
+ab Software Version 6.7.0
+28 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Umbau von DNA auf APMDNA
+3.6 Update der Systemdatenbank über die Smart Graph-Software
+1.Laden Sie die beiden Dateien AgingControl_dn50a_1.cf Web-Seite herunter.und dn50a_1.cf von der
+2.Starten Sie die Smart Graph-Software.
+HinweisDetailliertere Informationen über die der SmartSmartGraph-Software finden Sie inGraph-Anleitung.
+3.Wählen Sie das Lasersystem über das Auswahlfeld an.
+4.Klicken Sie auf die Schaltfläche neben dem Auswahlfeld, um verbinden.sich mit dem Lasersystem zu
+5.Klicken Sie in der Oberfläche »Datei« auf »Importieren« und wählen Sie »Import file« aus.Wählen Sie den Dateityp »(*.*)« und die beiden zu importierenden Dateien aus.
+6.Bestätigen Sie mit »Öffnen«.
+7.Starten Sie das Lasersystem erneut.
+04/08 - Rev. A 29
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Umbau von DNA auf APMDNA
+30 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Austausch der APMDNA-Pumpkammer
+4 Austausch der APMDNA-Pumpkammer
+Die Pumpkammer muss getauscht werden,wenn der YAG-Stab defekt ist (erkennbar durch zu niedrige Ausgangsleistung nach Re-
+sonatorjustage)bei Undichtigkeit / Wasseraustritt
+Übersicht der APMDNA-Pumpkammer
+1
+3 3
+4 2
+2
+NummerBezeichnung
+1Pumpkammer
+2Kühlschlauchanschlüsse
+3Silikonschläuche
+4Sicherungsringe
+04/08 - Rev. A 31
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Austausch der APMDNA-Pumpkammer
+4.1 Entleeren der Beschriftungseinheit
+GefahrVor Beginn der Arbeiten muss das Lasersystem unbedingt spannungs-frei geschaltet werden.
+1.Drehen Sie den Schlüsselschalter in die Position »0«.Ziehen Sie den Schlüssel ab, um sicherzustellen, dass das Lasersystem
+nicht eingeschaltet werden kann.
+2.Warten Sie, bis auf dem Touchscreen die Meldung »Schlüsselschalter of-fen« erscheint.
+3.Schalten Sie den Hauptschalter aus.
+4.Lassen Sie den Netzstecker zur Erdung des Systems in der Steckdose.
+WichtigDie Beschriftungseinheit muss über dem Niveau der Kühlanlage aufge-stellt sein!
+1.Lösen Sie die Wasserverschraubungen an der Schläuche mit dem Verbindungsstück.Beschriftungseinheit und verbinden Sie die
+2.Schließen Sie den Entwässerungsadapter an eine Gasflasche (Stickstoff oder Helium, max.Druck 5 bar) an.
+Blasen Sie den Adapter ca. 10 Sekunden aus.
+3.Schließen Sie den Entwässerungsadapter an blasen Sie die Beschriftungden Vorlauf der Beschriftungseinheit an undseinheit ca. 20 Minuten aus.
+4.Lösen Sie das Verbindungsstück von den Verschraubungen und schließen Sie sie wiederan die Beschriftungseinheit an.
+32 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Austausch der APMDNA-Pumpkammer
+4.2 Ausbau der APMDNA-Pumpkammer
+GefahrTragen Sie während der gesamten Demontage bzw. Montage unbedingtein Erdungsband an der Hand.
+1.Öffnen Sie den Gehäusedeckel des Laserkopfes.
+2.Ziehen Sie den ID-Board Stecker X 434 von der LHC ab.
+3.Entfernen Sie die Abdeckung des Kabelkanals.
+4.Lösen Sie die Befestigungsschrauben der Pumpkammerklemme und nehmen Sie die Pump-kammerklemme heraus.
+5.Klemmen Sie die beiden Pumpkammeranschlüsse ab:erst W 405 (+)
+dann W 409 (-)Beachten Sie die richtige Reihenfolge!
+Anschluss ID Board
+Befestigungsschrauben der Klemme
+04/08 - Rev. A 33
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Austausch der APMDNA-Pumpkammer
+6.Setzen Sie an deren Position die Kurzschlussbrücke ein.
+7.Entfernen Sie die Silikonschläuche (3) zwischen- dem Auskoppelspiegel und der Pumpkammer,
+- der Pumpkammer und der Modenblende.
+8.Lösen Sie die vier Befestigungsschrauben aufdie Pumpkammer aus. der Pumpkammerbasisplatte und bauen Sie
+9.Entfernen Sie die beiden Kühlschlauchanschlüsse (2) an dergleichzeitig den Sicherungsring (4) herunterdrücken und die Anschlüsse abziehen. Pumpkammer, indem Sie
+WichtigDamit kein Schmutz eindringen kann müssen:die Kühlwasserschläuche mit der Schlauchbrücke verbunden werden und
+die entstandenen Öffnungen in der Pumpkammer mit den Schutzkappen versehen werden.
+10.Setzen Sie die Schutzkappen auf die Staubschutzrohre der Pumpkammer.
+WichtigSchützen Sie alle Komponenten im Laserkopf mit den Schutzkappen vorStaub und Verunreinigungen.
+Kurzschlussbrücke
+34 04/08 - Rev. A
+
+AL-72857Service Part Installation Instructions/Einbauanleitung Ersatzteil
+Austausch der APMDNA-Pumpkammer
+4.3 Einbau der APMDNA-Pumpkammer
+1.Entfernen Sie die Schutzkappen von der neuen Pumpkammer und die Schlauchbrücke vonden Kühlwasserschläuchen.
+2.Schließen Sie die Kühlschlauchanschlüsse (2) an die Pumpkammer an.
+3.Entfernen Sie die Schutzkappen von der neuen Pumpkammer und gegebenenfalls vom Re-sonator.
+4.Setzen Sie die Pumpkammer ein und ziehen Sie die Befestigungsschrauben fest.
+5.Verbinden Sie mit den Silikonschläuchen (3) - den Auskoppelspiegel und die Pumpkammer,
+- die Pumpkammer und die Modenblende.
+6.Verbinden Sie den ID-Board Stecker X 434 mit der LHC.Dadurch wird der Betriebsstundenzähler auf den neuen Wert der Pumpkammer gesetzt.
+7.Entfernen Sie die Kurzschlussbrücke von der Pumpkammerklemme.
+8.Klemmen Sie die beiden Pumpkammeranschlüsse an.erst W 409 (schwarz) auf -
+dann W 405 (rot) auf +
+Kurzschlussbrücke
+04/08 - Rev. A 35
+
+Service Part Installation InstruAL-72857ctions/Einbauanleitung Ersatzteil
+Austausch der APMDNA-Pumpkammer
+9.Bauen Sie die Pumpkammerklemme in den Kabelkanal ein.
+10.Schließen Sie die Abdeckung des Kabelkanals und schrauben Sie alle Schrauben fest.
+11.Schließen Sie den Gehäusedeckel des Laserkopfes.
+12.Entnehmen Sie aus den Prüfprotokollen der Pumpkammer die Kühlwassertemperatur undstellen Sie den Temperatursollwert ein (siehe Abschnitt "Temperaturregler", "Sollwertein-
+stellung" im Kapitel "Inbetriebnahme").
+AchtungDer Laser darf nicht gestartet werden!Solange die Pumpkammer nicht in den Kühlkreislauf integriert ist, können die
+Dioden durch Überhitzung zerstört werden.Stellen Sie sicher, dass der Schlüsselschalter in der Position »0« steht.
+WichtigNach dem Pumpkammerwechsel muss das Lasersystem entlüftet wer-den (siehe Kapitel "Wartung", Abschnitt "Entlüften des Lasersystems")
+und der Resonator justiert werden (siehe Anleitung "Resonatorju-stage").
+Befestigungsschrauben der Klemme
+36 04/08 - Rev. A
+
+MAQ$Q6n`d'@_ofmbAtOo{~alySnwJs]P28>>@BT@?>=<;:9876543210/.-,+*
+Xxy"EGXXY"& $-&%% !!H@

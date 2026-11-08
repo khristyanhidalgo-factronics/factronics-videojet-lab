@@ -1,0 +1,88 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\Nueva carpeta\Recover with Rescue Stick.pdf
+# cifrado=False bloques=6 caracteres=5342
+
+Recover Multi- Core Chameleon with a Rescue Stick
+Recover Multi- Core
+Chameleon with a
+Rescue Stick
+This process only applies to Multi- Core Chameleon boards that will not successfully boot. This procedure will not recover
+a single core Chameleon. Recovery of single core Chameleon boards that will not boot should be attempted through
+reloading of SD card with CMark or replacement of SD card.
+Laser Will Be Set Back to Factory Image
+When a laser system is booted with a Rescue Image USB stick inserted into the USB slot on the
+Chameleon board, it will wipe all files on the laser. Those files are then irretrievable. The desired CMark
+must be available for installation after Rescue Image is installed in order for the laser to function cor -
+rectly.
+1. Insert the USB stick with the Rescue Image into USB port on the Chameleon board of the laser. For instructions on
+transfer of Rescue Image to USB see "Create Rescue Stick" on page 1 .
+2. Ensure the laser system is connected to power before proceeding. The blue light on membrane keypad should be lit.
+3. Press the On/Standby button on the membrane keypad of the laser to boot the laser. The white light will come on
+dimly and eventually start to flash as the image on the USB memory stick begins to load. The laser system will
+shut down when the image load is complete. Approximate time to completion is 5- 10 minutes.
+If the Rescue Image loading was successful, the laser system should boot when powered on and will allow you to
+connect to the Web Interface to continue. You must load CMark before checking the system configuration .
+The only part of system that is not overwritten is the EEPROM. The EEPROM stores the system configuration
+including IP addresses, laser type, head type, lens type, and serial number. Even though the EEPROM is not
+overwritten, checkbut should be checked for accuracy after loading CMark or CMark Backup.
+Troubleshooting: Laser still won't boot
+If the laser system still will not boot, replace the Chameleon board.
+4. Install the desired CMark version or CMark Backup.
+Installing a fresh install of CMark or a CMark backup are achieved through the same steps. For detailed inform -
+ation on backup creation see "CMark Backup" on page 1. Following are generalized steps for loading either
+CMark or a CMark backup:
+1 - 1
+Rev AA
+
+Laser Interface Training Guide
+Generalized steps to install CMark or CMark backup
+4.1. Boot the laser.
+4.2. Connect to the laser's Web Interface. For instructions on connecting to Web Interface see "Connect to the
+Web Interface" on page 1 . Use Primary IP to connect (dip switch 1 in Off position). The IP previously set by
+customer is not overwritten during the Rescue Stick process. If you are unsure of the primary IP Address, you
+can connect to 192.168.1.1 with dip switch 1 in the On position to find the configured primary IP in the laser
+Web Interface at Laser Menu | Configuration.
+4.3. Set DIP Switch 1 to OFF if you used it to determine the primary IP Address.
+4.4. Connect to the laser via the primary IP address.
+Use Internet Explorer version 9 or newer only for CMark Update or any other file transfer.
+The Web Interface branding will be Alltec Foba until after CMark is loaded.
+1 - 2
+Rev AA
+
+Recover Multi- Core Chameleon with a Rescue Stick
+4.5. Log in with the service level username and password.
+4.6. Click on the Other menu and select CMark Update from the drop- down menu.
+4.7. Browse to the desired CMark version or CMark Backup (if available) on your computer. After CMark or CMark
+backup loads the laser will shut down.
+If upgrading from a single core Chameleon you may insert the SD card from the single core board before
+selecting the CMark version and inherit the Customer Database from the SD.
+1 - 3
+Rev AA
+
+Laser Interface Training Guide
+5. Reboot the laser.
+6. Connect to the Web Interface and check the Laser Configuration for accuracy. Following are generalized steps.
+For more detailed information see "Edit Laser Configuration" on page 1 .
+Generalized steps for checking/setting laser configuration
+6.1. Boot the laser system.
+6.2. Connect to the laser's Web Interface. Web Interface is now Videojet branded since CMark update.
+6.3. Log in with the service username and password.
+6.4. Click to select the Laser menu.
+6.5. Select Configure .
+6.6. Check or set the appropriate Laser Type, Head Type, Lens Type, and CPD/SPM/FASS at a minimum. Errors
+will occur if these hardware items are not set correctly. The serial number, name for laser, IP addresses, and
+other information may also be configured in this window.
+CMark must be loaded before Laser Types/Marking Head/Lens will be shown in the Configuration menu. If the
+Laser Configuration group shows NO LASER FILE, NO MARKINGHEAD, NO LENS, and the page has
+Alltec/FOBA branding, then repeat the CMark Update process.
+1 - 4
+Rev AA
+
+Recover Multi- Core Chameleon with a Rescue Stick
+6.7. Click Save . Reboot the laser when prompted.
+6.8. Load the Customer Database backup (if available or if necessary).
+If no CMark Backup has been loaded, or if a newer Customer Database is available than was included in the
+CMark Backup, then the Customer Database may be loaded using the appropriate user interface. If no
+backups are available to be installed, proceed to the desired user interface to create jobs/templates for laser
+marking.
+1 - 5
+Rev AA

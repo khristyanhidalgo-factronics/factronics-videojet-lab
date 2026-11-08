@@ -1,0 +1,58 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\SB003.21 New Version QMark 8.9.1.1.pdf
+# cifrado=False bloques=4 caracteres=4231
+
+MARKETING BULLETIN
+Editors Note: This Service Bulletin is an internal publication of the Laser Business Unit intended for its service channels. Thus, this bulcondential to the ALLTEC Laser Business Unit, all LBU sales/service partners and their resp. distributors and sales/service paletin is rtners. This publi-
+cation should not be copied in whole or part to any other party without the prior written consent of the Laser Business Unit. Aconfidential. s such this paper is
+
+#SB003.21 SERVICE BULLETIN
+New Version QMark 8.9.1.1
+Related Product(s): VJ 3120/3320, 3130/3330, 3430, 7210/7310, 7720/7320;
+FOBA C.0101/C.0301; Alltec LF050 (5 and 10 W), LF100/200, LF101/201, LC100/300, LC500
+Reference(s): Information supplied by R&D Department, January 2022
+ALLTEC GmbH | Laser Business Unit | International Service Center | service@alltec-laser.com | www.alltec-laser.comAn der Trave 27 -31 | 23 923 Selmsdorf | Germany | Phone + 49 (0) 388 23 . 55 - 0 | Fax - 222
+1/3
+
+MARKETING BULLETIN
+#SB003.21 SERVICE BULLETIN
+New Version QMark 8.9.1.1
+Related Product(s): VJ 3120/3320, 3130/3330, 3430, 7210/7310, 7720/7320;
+FOBA C.0101/C.0301; Alltec LF050 (5 and 10 W), LF100/200, LF101/201, LC100/300, LC500
+Reference(s): Information supplied by R&D Department, January 2022
+What is new?
+Switching to safe error state with message "E00108" on internal communication problem (QMRK-2620).
+DotCode fixed size support (SG-4164).
+Implementation of microQR and PDF417 code (SG-4165).
+Support of LF101, LF201, 7220, 7320 added (SG-3702).
+Remote Service support for Acc3 systems added (AOS-633).
+Tube monitoring for fiber laser added (AOS-671).
+Support of LF101, LF201, 7220, 7320 added (QMRK-2447).
+Implementation of CO2 tube monitoring (QMRK-2477).
+Update time zone data (QMRK-2629).
+Web interface issues on Windows 10 (QMRK-2623,QMRK-2624, QMRK-2626, QMRK-2627).
+Major issues resolved:
+Broken binary content for QR code fixed (SG-3801).
+Checknumber in RSS14ST, RSSLIM and RSDate variable (SG-3740).SLIMGP barcode covers first digit of
+Chinese SG shows summer time zone "None" even Central Europe is selected (SG-3742).
+Wrong scaling of a rotated date variable after changing setting for Date Change (AOS-628).
+EAN 128 "AI 421" uses wrong length (AOS- 631).
+BC128 incorrectly rendered making it unreadable (AOS-818).
+Execution of MOTF-related commands often drops TCL connection (QMRK-2452).
+Editors Note: This Service Bulletin is an internal publication of the Laser Business Unit intended for its service channels. Thus, this bulcondential to the ALLTEC Laser Business Unit, all LBU sales/service partners and their resp. distributors and sales/service paletin is rtners. This publi-
+cation should not be copied in whole or part to any other party without the prior written consent of the Laser Business Unit. Aconfidential. s such this paper is
+ALLTEC GmbH | Laser Business Unit | International Service Center | service@alltec-laser.com | www.alltec-laser.comAn der Trave 27 -31 | 23 923 Selmsdorf | Germany | Phone + 49 (0) 388 23 . 55 - 0 | Fax - 222
+2/3
+
+MARKETING BULLETIN
+#SB003.21 SERVICE BULLETIN
+New Version QMark 8.9.1.1
+Related Product(s): VJ 3120/3320, 3130/3330, 3430, 7210/7310, 7720/7320;
+FOBA C.0101/C.0301; Alltec LF050 (5 and 10 W), LF100/200, LF101/201, LC100/300, LC500
+Reference(s): Information supplied by R&D Department, January 2022
+Known Limitations
+Adding " to IDM text leads to invalid template after rebooting (AOS-822).
+A dot will be marked in the middle of the marking field after marking a 2D code in-cluding a date or time variable (QMRK-2631).
+Editors Note: This Service Bulletin is an internal publication of the Laser Business Unit intended for its service channels. Thus, this bulcondential to the ALLTEC Laser Business Unit, all LBU sales/service partners and their resp. distributors and sales/service paletin is rtners. This publi-
+cation should not be copied in whole or part to any other party without the prior written consent of the Laser Business Unit. Aconfidential. s such this paper is
+ALLTEC GmbH | Laser Business Unit | International Service Center | service@alltec-laser.com | www.alltec-laser.comAn der Trave 27 -31 | 23 923 Selmsdorf | Germany | Phone + 49 (0) 388 23 . 55 - 0 | Fax - 222
+3/3

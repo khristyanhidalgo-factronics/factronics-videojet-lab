@@ -1,0 +1,71 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\Nueva carpeta\AL-68101 Setting up an IP address.pdf
+# cifrado=False bloques=8 caracteres=4266
+
+AL-68101
+IP address setup for a direct connection between PC and laser system
+1 IP address setup for a direct connection between PC and laser system
+This document describes how to use set up an IPsystem via a cross patch cable directly to your address if you wish to connect your laser PC and do not establish the connection via In-
+tranet.
+1.1 Setting up the IP address on the laser system
+As setting up the IP adress on the laser system depends on whether the system is equippedwith an ACC2 or an ACC3 board, please find the respective descriptions as follows:
+1.1.1 Setting up the IP address on the laser system with an ACC2In order to find out the IP address of your laser system, please proceed as follwos:
+1.Press the "Info" button on your touch panel. The current IP address can be found in the appearing dialog.
+2.Make a note of the IP address, as you will need it to set up the IP address under the Windowsoperating system, see page Seite2.
+1.1.2 Setting up the IP address on the laser system with an ACC3In order to set up the correct IP address on the laser system, please proceed as follows:
+1.Make sure that the DIP switch 1 on the ACC board (see figure below) is set to ON.
+DIP switch 1 ON:The IP address 192.168.1.1 with subnet mask 255.255.255.0 issaved in the system database. Via this address the PC can commu-
+nicate with the laser system.
+The DIP switch 1 is set to ON when the laser system is delivered.
+NoteDIP switch 2 on the ACC board has no function.
+DIP switch
+06/07 - Rev. AA 1
+
+AL - 68101
+IP address setup for a direct connection between PC and laser system
+1.2 Setting up the IP address in the Windows operating system
+In order to set up the IP address under Windows, please proceed as follows:
+1.Select the entry »Network Connections« from the »Settings« menu in the Windows Startmenu.
+The following dialog is displayed:
+2.Double-click onto the »Local Connection Area«.The following dialog is displayed:
+3.Click onto »Properties«.The following dialog is displayed:
+4.Select the entry »Internet Protocol (TCP/IP)« under »This connection uses the followingitems:« and click onto »Properties«.
+2 06/07 - Rev. AA
+
+AL-68101
+IP address setup for a direct connection between PC and laser system
+The following dialog is displayed:
+5.Enter the following IP address in the field »IP address«: For the ACC2: Enter the IP address which was indicated in the Info dialog of the touch screen
+and increment the last digit by 1. Example: IP address from the Info dialog is 11.0.2.100, the IP address which is entered into
+the field »IP address« has to be 11.0.2.101.For the ACC3: 192.168.1.2 .
+NoteMake sure that the entry under »Subnet mask« is 255.255.255.0 inboth cases.
+6.Click onto »OK« to apply your settings and close the dialogs.
+06/07 - Rev. AA 3
+
+AL - 68101
+IP address setup for a direct connection between PC and laser system
+1.3 Setting up a direct connection between your PC and the laser system
+For establishing up a direct connection between your PC and the ACC3 in the laser system,you have to use a cross patch cable, as shown in the following figure.
+1.Disconnect the Ethernet cable from the ACC3 PC here. and connect your cross patch cable from the
+Attention!Make sure that you do not connect your cross patch cable to theconnection socket for the Handheld, as your PC might get dam-
+aged!
+crossover ethernet cable
+X12 network
+Ethernet adapter on the ACC3
+4 06/07 - Rev. AA
+
+AL-68101
+IP address setup for a direct connection between PC and laser system
+1.4 Setting up the IP address in the SmartGraph software
+In order to set up the correct IP address in the SmartGraph software, please proceed as fol-lows:
+1.Start the SmartGraph software on your PC and select the File user interface.
+2.Select »Edit marking systems« from the right list field. The following dialog will be displayed:
+3.Click on button »New« and choose a name and enter the following IP number: 192.168.1.1under »Edit marking system«.
+4.Confirm your entries clicking onto »Apply«, they are written to the can now be selected in the list field.Connenctions.txtand
+06/07 - Rev. AA 5
+
+AL - 68101
+IP address setup for a direct connection between PC and laser system
+6 06/07 - Rev. AA
+
+MAQ$Q6n`d'@_ofmbAtOo{~alySnwJs]P28>>@BT@?>=<;:9876543210/.-,+*
+Xxy"EGXXY"& $-&%% !!H@

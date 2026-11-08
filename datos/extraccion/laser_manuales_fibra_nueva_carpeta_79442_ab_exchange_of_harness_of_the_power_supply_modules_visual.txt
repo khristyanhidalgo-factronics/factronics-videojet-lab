@@ -1,0 +1,331 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\Nueva carpeta\79442-AB Exchange of Harness of the Power Supply Modules.pdf
+# cifrado=False bloques=26 caracteres=17164
+
+AL-79442Service Part Installation Instruction
+Exchange of the Harness for the Power Supply Modules
+1 Exchange of the Harness for the Power Supply Modules
+1.1 Preparation
+DangerBefore starting any work the laser system must be completely discon-nected!
+1.Turn the key-operated switch to position 0.Remove the key, in order to ensure that the laser system cannot be
+switched on.
+2.Save the database in theFor a detailed description see the manual of the software. software.
+3.Turn off the main switch.
+4.Pull the mains plug.
+1.1.1 Fiber Laser System 7x30/Y.0200-S1.Remove the screws at the back of the supply unit.
+2.Open the cover by pulling it back a little (1), lift the back side (2) and pull it off.
+2
+1
+06/19 - Rev. AB 1
+
+AL - 79442
+Service Part Installation InstructionExchange of the Harness for the Power Supply Modules
+1.1.2 Fiber Laser System 7x40/Y.0x00-xs1.Remove the screws of the cover at the back of the supply unit.
+2.Open the cover by pulling it back and then lift it off.
+1.1.3 Inside the Supply Unit1.Remove HIC by loosening the two screws and lifting it off the Chameleon (the connectors
+remain connected).
+2.Remove LIC by loosening the two screws and lifting it off the Chameleon.
+NoteFor 7X40/Y.0X00-xs:Make sure that the blue hose is not bent or disconnected
+3.If installed: Remove MIC by loosening the two screws and lifting it off the Chameleon (theconnectors remain connected).
+2 06/19 -Rev. AB
+
+AL-79442Service Part Installation Instruction
+Exchange of the Harness for the Power Supply Modules
+4.Disconnect the connectors indicated in the picture below:
+NoteThe Chameleon board has a different color than in the pictures.
+customer interface(if used)HICEthernet
+X9 LIC
+X18
+X6
+MIC-HMS
+X28
+X3 (keypad connector)
+TU430 connector
+06/19 - Rev. AB 3
+
+AL - 79442
+Service Part Installation InstructionExchange of the Harness for the Power Supply Modules
+1.2 Exchange of Harness for 7230/7330
+1.Remove the two cables of the laser power supply module from the terminal block bypressing on + and pulling them out.
+NoteTo make sure the cable ends are not damaged use a large Phillipsscrewdriver to press the clamp properly down.
+2.Remove the two grounding cables.
+4 06/19 -Rev. AB
+
+AL-79442Service Part Installation Instruction
+Exchange of the Harness for the Power Supply Modules
+3.On the CP-Light board remove the supply connectors.
+4.Remove the two screws of the power connector and remove the screw that attaches themounting base to the back of the supply unit.
+06/19 - Rev. AB 5
+
+AL - 79442
+Service Part Installation InstructionExchange of the Harness for the Power Supply Modules
+5.Loosen the four screws of the mounting base.
+6.Pull the mounting base a bit towards the front and lift it up.
+7.Put the mounting base in an upright position. Make sure it cannot tip.
+NoteIf the system is equipped with CPD3 and FASS (instead of SPM):Remove the four fixing screws of the FASS on its mounting plate and pull out
+the plate to access the system power supply module.
+power supply module laser (350 W)
+SPM
+power supply module system (200 W)
+6 06/19 -Rev. AB
+
+AL-79442Service Part Installation Instruction
+Exchange of the Harness for the Power Supply Modules
+1.2.1 Removal of Harness1.Remove all cable ties.
+2.Remove the touch protection on the primary side of the laser power supply (350 W).
+3.Remove the three cables (green/yellow = PE, blue = AC/N, black = AC/L) using a magneticscrewdriver and pull the cables through the grommet.
+4.Remove the cables at the secondary side of the power supply module.
+5.Now you can remove the feedback cables including X9.
+touch protection
+feedback-W134 (Chameleon)
+-W136 (SPM/CPD3)
+-W135 (Chameleon)-W137 (SPM/CPD3)
+-V gray (-W158)power supply laser
++V red (-W159)
+06/19 - Rev. AB 7
+
+AL - 79442
+Service Part Installation InstructionExchange of the Harness for the Power Supply Modules
+6.Remove the touch protection on the primary side of the system power supply (200 W).
+7.Remove the three cables (green/yellow = PE, blue = AC/N, black = AC/L) using a magneticscrewdriver.
+8.Disconnect X4 from the SPM/CPD board.
+9.Remove the cables at the secondary side of the power supply module.
+touch protection
+10.Remove all grounding cables from the grounding bolt and W101 from the mains switch onthe SPM/CPD3 board.
+ground
+-V gray (-W125)
++V red (-W123)
+8 06/19 -Rev. AB
+
+AL-79442Service Part Installation Instruction
+Exchange of the Harness for the Power Supply Modules
+1.2.2 Mounting a New HarnessFor the figures concerning the following steps, please refer to section Removal of Harness on
+page 6.
+1.Connect X4 on the SPM/CPD3 board.
+2.Guide three cables (green/yellow, blue, black) through the grommet to the laser power supplymodule (350 W).
+3.On the primary side of the 350 W power supply module mount the three cables (green/yellow= PE, blue = AC/N, black = AC/L).
+4.On the primary side of the 200 W power supply module mount three cables (green/yellow= PE, blue = AC/N, black = AC/L).
+5.Mount the touch protection to both power supply modules.
+6.Mount the grounding cable W101 to the mains switch.
+7.Mount the three grounding cables to the grounding bolt.
+8.Connect the cables to the secondary side of the 350 W module.Make sure that the feedback lines are mounted in V-shape.
+9.Connect the cables to the secondary side of the 200 W module.
+10.Fasten all cables with cable ties. It should look like this:
+11.Connect X9 to the other side of the SMP/CPD3 board.
+12. If the system is equipped with CPD3 and FASS (instead of SPM):Insert the FASS on its mounting plate and tighten the four fixing screws.
+13.Insert the mounting base back into the housing and push it to the back.
+06/19 - Rev. AB 9
+
+AL - 79442
+Service Part Installation InstructionExchange of the Harness for the Power Supply Modules
+14.Tighten the four fixing screws of the mounting base.
+15.At the back of the supply unit tighten the screws of the power connector and the screw thatattaches the mounting base to the back of the supply unit.
+16.Connect the supply connectors to the CP-Light board.
+17.Mount the grounding cables.
+NoteFirst mount the grounding cable of the SPM/CPD3 board directly to thehousing of the supply unit.
+Then mount the grounding cable coming from the grounding bolt of themounting base on top of the SPM/CPD3 grounding cable.
+18.Insert the two cables of the laser power supply module into the terminal block.
+19.Connect all connectors to the Chameleon board.
+20.Mount the LIC, HIC and MIC-HMS (if available) onto the Chameleon board.
+21.Close the housing cover.
+grounding of SPM/CPD3
+grounding of mounting base
+10 06/19 -Rev. AB
+
+AL-79442Service Part Installation Instruction
+Exchange of the Harness for the Power Supply Modules
+1.3 Exchange of Harness for Y.0200-S
+1.Remove the clamp of the contactor cable.
+2.Remove the two fixing screws of the air duct.
+3.Push the air duct towards the laser beam source and carefully lift it out.
+2
+1
+06/19 - Rev. AB 11
+
+AL - 79442
+Service Part Installation InstructionExchange of the Harness for the Power Supply Modules
+4.Remove the two cables of the laser power supply module from the terminal block by pressingon + and pulling them out.
+NoteTo make sure the cable ends are not damaged use a large Phillipsscrewdriver to press the clamp properly down.
+5.Remove the two grounding cables.
+12 06/19 -Rev. AB
+
+AL-79442Service Part Installation Instruction
+Exchange of the Harness for the Power Supply Modules
+6.On the CP-Light board remove the supply connectors.
+7.Remove the two screws of the power connector and remove the screw that attaches themounting base to the back of the supply unit.
+06/19 - Rev. AB 13
+
+AL - 79442
+Service Part Installation InstructionExchange of the Harness for the Power Supply Modules
+8.Loosen the four screws of the mounting base.
+9.Pull the mounting base a bit towards the front and lift it up.
+10.Put the mounting base in an upright position. Make sure it cannot tip.
+NoteIf the system is equipped with CPD3 and FASS (instead of SPM):Remove the four fixing screws of the FASS on its mounting plate and pull out
+the plate to access the system power supply module.
+power supply module laser (350 W)
+SPM
+power supply module system (200 W)
+14 06/19 -Rev. AB
+
+AL-79442Service Part Installation Instruction
+Exchange of the Harness for the Power Supply Modules
+1.3.1 Removal of Harness1.Remove all cable ties.
+2.Remove the touch protection on the primary side of the laser power supply (350 W).
+3.Remove the three cables (green/yellow = PE, blue = AC/N, black = AC/L) using a magneticscrewdriver and pull the cables through the grommet.
+4.Remove the cables at the secondary side of the power supply module.
+5.Now you can remove the feedback cables including X9.
+touch protection
+feedback-W134 (Chameleon)
+-W136 (SPM/CPD3)
+-W135 (Chameleon)-W137 (SPM/CPD3)
+-V gray (-W158)power supply laser
++V red (-W159)
+06/19 - Rev. AB 15
+
+AL - 79442
+Service Part Installation InstructionExchange of the Harness for the Power Supply Modules
+6.Remove the touch protection on the primary side of the system power supply (200 W).
+7.Remove the three cables (green/yellow = PE, blue = AC/N, black = AC/L) using a magneticscrewdriver.
+8.Disconnect X4 from the SPM/CPD board.
+9.Remove the cables at the secondary side of the power supply module.
+touch protection
+10.Remove all grounding cables from the grounding bolt and W101 from the mains switch onthe SPM/CPD3 board.
+ground
+-V gray (-W125)
++V red (-W123)
+16 06/19 -Rev. AB
+
+AL-79442Service Part Installation Instruction
+Exchange of the Harness for the Power Supply Modules
+1.3.2 Mounting a New HarnessFor the figures concerning the following steps, please refer to section Removal of Harness on
+page 6.
+1.Connect X4 on the SPM/CPD3 board.
+2.Guide three cables (green/yellow, blue, black) through the grommet to the laser power supplymodule (350 W).
+3.On the primary side of the 350 W power supply module mount the three cables (green/yellow= PE, blue = AC/N, black = AC/L).
+4.On the primary side of the 200 W power supply module mount three cables (green/yellow= PE, blue = AC/N, black = AC/L).
+5.Mount the touch protection to both power supply modules.
+6.Mount the grounding cable W101 to the mains switch.
+7.Mount the three grounding cables to the grounding bolt.
+8.Connect the cables to the secondary side of the 350 W module.Make sure that the feedback lines are mounted in V-shape.
+9.Connect the cables to the secondary side of the 200 W module.
+10.Fasten all cables with cable ties. It should look like this:
+11.Connect X9 to the other side of the SMP/CPD3 board.
+12.If the system is equipped with CPD3 and FASS (instead of SPM):Insert the FASS on its mounting plate and tighten the four fixing screws.
+13.Insert the mounting base back into the housing and push it to the back.
+06/19 - Rev. AB 17
+
+AL - 79442
+Service Part Installation InstructionExchange of the Harness for the Power Supply Modules
+14.Tighten the four fixing screws of the mounting base.
+15.At the back of the supply unit tighten the screws of the power connector and the screw thatattaches the mounting base to the back of the supply unit.
+16.Connect the supply connectors to the CP-Light board.
+17.Mount the grounding cables.
+NoteFirst mount the grounding cable of the SPM/CPD3 board directly to thehousing of the supply unit.
+Then mount the grounding cable coming from the grounding bolt of themounting base on top of the SPM/CPD3 grounding cable.
+18.Insert the two cables of the laser power supply module into the terminal block.
+19.Connect all connectors to the Chameleon board.
+20.Mount the LIC, HIC and MIC-HMS (if available) onto the Chameleon board.
+21.Insert the air duct and tighten the fixing screws.Make sure no cables are pinched or trapped.
+22.Mount the clamp of the contactor cable.
+23.Close the housing cover.
+grounding of SPM/CPD3
+grounding of mounting base
+18 06/19 -Rev. AB
+
+AL-79442Service Part Installation Instruction
+Exchange of the Harness for the Power Supply Modules
+1.4 Exchange of Harness for 7x40/Y.0x00-xs
+1.Remove the fan wires from the connector by inserting a small screwdriver, pushing down-wards and pulling out the wire ends.
+2.Remove the screws of the Chameleon mounting base from the upper back panel.
+3.Remove all connections to the customer interface.For easier access, you can also remove the complete customer interface.
+4.Remove the wires of the power supply modules from the terminal block.
+5.Disconnect the power supply (X1200) from the CP-Light.
+06/19 - Rev. AB 19
+
+AL - 79442
+Service Part Installation InstructionExchange of the Harness for the Power Supply Modules
+6.Remove the grounding.
+7.Loosen the screws of the Chameleon mounting base.
+8.Pull the mounting base a bit towards the front and lift it up until you can access the groundingcable.
+9.Remove the grounding cable.
+front back
+use a long 3 mm Allen key
+20 06/19 -Rev. AB
+
+AL-79442Service Part Installation Instruction
+Exchange of the Harness for the Power Supply Modules
+10.Remove the Chameleon mounting base from the supply unit.
+11.Put the mounting base in an upright position. Make sure it cannot tip.
+NoteIf the system is equipped with CPD3 and FASS (instead of SPM):Remove the four fixing screws of the FASS on its mounting plate and pull out
+the plate to access the system power supply module.
+power supply module laser (350 W)
+SPM
+power supply module system (200 W)
+06/19 - Rev. AB 21
+
+AL - 79442
+Service Part Installation InstructionExchange of the Harness for the Power Supply Modules
+1.4.1 Removal of Harness1.Remove all cable ties.
+2.Remove the touch protection on the primary side of the laser power supply (350 W).
+3.Remove the three cables (green/yellow = PE, blue = AC/N, black = AC/L) using a magneticscrewdriver and pull the cables through the grommet.
+4.Remove the cables at the secondary side of the power supply module.
+5.Now you can remove the feedback cables including X9.
+touch protection
+feedback-W134 (Chameleon)
+-W136 (SPM/CPD3)
+-W135 (Chameleon)-W137 (SPM/CPD3)
+-V gray (-W158)power supply laser
++V red (-W159)
+22 06/19 -Rev. AB
+
+AL-79442Service Part Installation Instruction
+Exchange of the Harness for the Power Supply Modules
+6.Remove the touch protection on the primary side of the system power supply (200 W).
+7.Remove the three cables (green/yellow = PE, blue = AC/N, black = AC/L) using a magneticscrewdriver.
+8.Disconnect X4 from the SPM/CPD board.
+9.Remove the cables at the secondary side of the power supply module.
+touch protection
+10.Remove all grounding cables from the grounding bolt and W101 from the mains switch onthe SPM/CPD3 board.
+ground
+-V gray (-W125)
++V red (-W123)
+06/19 - Rev. AB 23
+
+AL - 79442
+Service Part Installation InstructionExchange of the Harness for the Power Supply Modules
+1.4.2 Mounting a New HarnessFor the figures concerning the following steps, please refer to section Removal of Harness on
+page 22.
+1.Connect X4 on the SPM/CPD3 board.
+2.Guide three cables (green/yellow, blue, black) through the grommet to the laser power supplymodule (350 W).
+3.On the primary side of the 350 W power supply module mount the three cables (green/yellow= PE, blue = AC/N, black = AC/L).
+4.On the primary side of the 200 W power supply module mount three cables (green/yellow= PE, blue = AC/N, black = AC/L).
+5.Mount the touch protection to both power supply modules.
+6.Mount the grounding cable W101 to the mains switch.
+7.Mount the three grounding cables to the grounding bolt.
+8.Connect the cables to the secondary side of the 350 W module.Make sure that the feedback lines are mounted in V-shape.
+9.Connect the cables to the secondary side of the 200 W module.
+10.Fasten all cables with cable ties. It should look like this:
+11.Connect X9 to the other side of the SMP/CPD3 board.
+12.If the system is equipped with CPD3 and FASS (instead of SPM):Insert the FASS on its mounting plate and tighten the four fixing screws.
+13.Place the mounting base in the supply unit so that you can connect the grounding cable fromthe lower mounting base.
+24 06/19 -Rev. AB
+
+AL-79442Service Part Installation Instruction
+Exchange of the Harness for the Power Supply Modules
+14.Insert the mounting base back into the housing and push it to the back.
+NoteMake sure that the flat ribbon cable of the LIC is not pinched or trapped.
+15.Tighten the four fixing screws of the mounting base.
+16.At the back of the supply unit tighten the screws of the power connector and the screw thatattaches the mounting base to the upper back panel of the supply unit.
+17.Connect the supply connector to the CP-Light board.
+18.Mount the grounding cables.
+NoteFirst mount the grounding cable of the SPM board directly to the housing ofthe supply unit using a serrated face nut.
+Then mount the grounding cable coming from the grounding bolt of themounting base on top of the SPM grounding cable.
+Then mount the grounding cable of the back panel.
+19.Insert the cables of the laser power supply module into the terminal block.
+20.Connect all connectors to the Chameleon board.
+21.Mount the LIC, HIC and MIC (if available) onto the Chameleon board.
+22.Insert the fan wires into the connector, red in pin1 and black in pin 2.
+23.Close the housing cover.
+grounding of SPM
+grounding of mounting base
+grounding of back panel
+06/19 - Rev. AB 25

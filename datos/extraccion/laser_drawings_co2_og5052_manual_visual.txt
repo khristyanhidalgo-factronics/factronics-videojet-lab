@@ -1,0 +1,94 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: drawings co2\OG5052 manual.pdf
+# cifrado=False bloques=7 caracteres=3143
+
+Operating instructionsDiffuse reflection sensor
+with background suppression
+
+UK
+OGH
+701166 / 03 09 / 2005
+
+UK
+
+Function and features
+The diffuse reflection sensor detects objects and materials without contact and indicates their presence by a switched signal.
+Range (r): see type label (value referred to white paper 200mm x 200mm).
+Electrical connection
+The device shall be supplied from an isolating source and protected by an overcurrent device such that the limited voltage circuit requirements in
+accordance with UL 508 are met.Isolate power, then connect the unit (see page 5 or type label).
+Core colours (for sensors with cable connection): BN = brown, BU = blue, BK = black.
+Programming of the output function (light-on or dark-on) by wiring (see page 5 or type label).
+Installation
+21
+PushbuttonLEDs red, green, yellow
+1:2:
+Align the photocell and fasten it to a mounting bracket.Maximum range is only possible with precise alignment.
+2
+
+Setting of the sensitivity with stationary objects
+Activate the programming mode of the unit without object.
+Press for about 2s until the red LED flashes.
+1 The red LED goes out; the yellow and green LEDs flash alternately.The unit is in the programming mode.
+If in addition the red LED is lit, the reflection of the background is too intensive (e.g. reflecting surface). Angle the unit in the horizontal plane until the red LED goes out.
+If you continue with step 3 although the red LED is lit, programming is interrupted. The unit then passes into the operating mode with the setting being unchanged.
+UK
+Setting without object.
+2
+Press once.
+The yellow and green LEDs go out for approx. 1s, then flash again alternately.
+Setting with object.
+3
+Press once.
+The yellow and green LEDs go out for approx. 1s, then the green LED is on.The unit is in the operating mode.
+Programming is only possible if you keep to this order (first background, then object).
+3
+
+If the setting of the sensitivity is not possible (e.g. object signal and background signal are about the same), the red LED flashes after step
+3 for approx. 2s. The unit then passes into the operating mode with the sensitivity being unchanged.
+Setting of the maximum sensitivity
+ Go into the programming mode (step 1).Align the unit so that no light is reflected.
+ Press the setting button twice (see steps 2 and 3).
+Locking / Unlocking
+The red LED lights for a short time, then the yellow and green LEDs flash
+alternately;after 10s the LEDs go out, the unit is
+locked.
+Press for 10s
+After 10s the LEDs go out, locking is cancelled.
+Press for 10s
+Operation
+Check the safe functioning of the diffuse reflection sensor. Display by LEDs.
+LED green lightsLED yellow lightsOutput is switched.Unit is ready for operation.
+LEDs yellow + redFlash alternately, 2 Hz: output short-circuited.Flash alternately, 1 Hz: internal malfunction,
+(output is not switched).
+Maintenance
+Keep the lens of the sensor free from soiling.For cleaning do not use any solvents or cleaning agents which could damage the
+plastic lenses.
+4
+
+Wiring
+DC PNP
+BN L+ BU L+
+BK BK
+BU BN
+L L
+UK
+1 3
+4
+3
+L+ L+
+L L
+4
+1
+DC NPN
+BN L+ BU L+
+BK BK
+BU BN
+L L
+1L+ 3
+L
+L+
+L
+4 4
+3
+1
+5

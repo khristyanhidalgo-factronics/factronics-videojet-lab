@@ -1,0 +1,519 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\3350 CMark 5 TCS Plus.pdf
+# cifrado=False bloques=34 caracteres=29955
+
+TCS+ for CMark version 5
+(3350 Lasers)
+Virtual Classroom
+Revision: 05 26 23
+
+3350 Product Features
+• 30 - Watt CO2 laser system
+• Marking Head Options: SHC 60, 100, 150 and new optional SHC - SF (Smart Focus)
+• Wavelengths available: 10.6, 10.2 and 9.3 micron
+• Up to 2,000 cps
+• 90 degree and straight - out (0 degree) marking head options
+-- Head can be rotated in 90 - degree increments with no additional parts
+-- BTU/BUS still available for SHC60/100/150 heads
+-- No BTU/BUS with Smart Focus Marking Head
+• IP54 and IP65 variants
+• Digital Access Box standard - Cellular and Wi - Fi; Wi - Fi only in some countries; no access box in some countries.
+Cellular and Wi - Fi is country dependent and not available in all countries.
+• Pilot Laser Optional (standard on SHC - SF marking head; optional on SHC60/100/150 heads)
+• Focus Finder beam standard on SHC - SF marking head (not available on SHC60/100/150 heads; Focus
+Finder only available with TCS+ user interface)
+• Interface plates changed to include cable entry for Access Box. Quick Connector Plate and Standard
+plate still have same connectors as previous, but now 1 additional.
+Confidential - Company Proprietary
+
+3340 vs 3350
+Model name 3340 3350 3350 with SHC - SF Head
+Laser power 30W 30W
+Wavelengths 9.3µm, 10.2µm and 10.6µm 9.3µm, 10.2µm and 10.6µm
+Marking Unit: IP54, optional IP65 Marking Unit: IP54, optional IP65
+Sealing
+Supply Unit: IP54, optional IP65 Supply Unit: IP54, optional IP65
+Marking heads SHC - 60, SHC - 100, SHC - 150 SHC - 60, SHC - 100, SHC - 150 SHC - SF
+Focussing method Focussing lens Focussing lens Dynamic telescope
+multiple configurations per multiple configurations per
+Lens Option marking head marking head No lens selection
+Marking speed up to 2000cps (SHC - 60) up to 2000cps (SHC - 60) up to 2000cps
+Beam exit options 90 ° and straight - out 90 ° and straight - out 90 ° and straight - out
+Rotate head in 90 ° raster √ √ √
+Pilot laser integrated optional optional √
+Focus finder feature x x √
+Flat field correction x x √
+Dynamic product change - over x x √
+Multi - level mark content x x √
+BTU/BUS √ √ x
+Connectivity - Cellular x Standard Standard
+Connectivity - WIFI Optional Wi - Fi Kit Standard Standard
+Confidential - Company Proprietary
+
+Technical Changes from 3340 to 3350
+• Uses CMark v. 5.x (new loading procedure) ; compatible SmartGraph v. 11.x
+• Must use Chameleon MCIP Artix ; AL - SP80518 ( red with USB - C connector ; Digital Access Box
+connection is via USB - C).
+• New Rescue Stick/ Plexmark : Plexmark v. 2.x required for CMark 5
+• Optional SHC - SF (Smart Focus) marking head uses new CP - Light 3D A7 for 3 axis connection/control.
+SHC60/100/150 marking heads use traditional CP - Light with 2 axis connection/control.
+• Only TCS+ user interface has all features/ control for both Smart Focus head and Digital Access Box.
+SmartGraph and CLARiTY have limited capability for SHC - SF and Access Box control.
+• TCS+ has many new features (CMark v. 5.x) that improve Job creation and handling. Also some
+significant differences from previous (e.g. no default Users and passwords)
+TCS+ SmartGraph CLARiTY
+SHC - SF capabilities (2.5D control) Yes Yes, but limited Range Mode only; no 2.5D
+(Don’t use SHC - SF with CLARiTY )
+setup help
+Access Box control Yes No No
+Focus Finder control Yes No No
+Confidential - Company Proprietary
+
+MCIP Artix Chameleon
+• Must use Chameleon MCIP Artix which has USB - C in 3350 (AL - SP80518).
+• Older Chameleons do not have USB - C connector necessary for Digital Access Box connection.
+• Use CMark 5.x for 3350 (supports Digital Access Box and SHC - SF marking head). Use Rescue Stick Plexmark v. 2.4 or
+newer
+-- Failure to have proper Plexmark will result in not being able to load CMark v. 5.x
+• MCIP Artix board can be used with CMark 4.x for models other than 3350.
+Beware: Looks very
+similar to previous
+(AL - 84620)
+Chameleon, but this
+version has USB - C
+Confidential - Company Proprietary
+
+Smart Focus Marking Head
+Smart Focus is a 2.5D technology that eliminates the need for manual adjustment of
+the Z height. What does that mean? No Need to move the laser up and down!
+Faster product changeover :
+• Working distance for products built into Jobs
+• No need to adjust physical laser height changeover
+Mult i - l evel mar k i n g :
+• Smart Focus head in trodu c es m u l t i - level mar k i n g in on e job
+• Mar k i n g in u p t o 5 d i ffe r ent heights/levels/ f oca l planes
+• St a tic mar k i n g and mar k i n g o n - t h e - fly
+Pilot Laser + Focus Finder:
+• Pilot Laser + Focus Finder are a standard feature (TCS+ only for Focus Finder).
+• Focus Finder will aid in adjustment of working distance.
+• Pilot Laser is a visual display to preview the printing.
+Flat Field Correction:
+• Able to use the entire marking field without losing print quality along the edges.
+0 ° to 90 °
+• Can move the marking head from 0 to 90 without any additional parts.
+Confidential - Company Proprietary
+
+Digital Access Box &
+New Software Management Procedures
+Confidential - Company Proprietary
+
+Access Box Specifications
+Access box: Used for VRS and OTA (Over the Air) Software Updates
+➢ Internal RES on laser establishes connection to VRS (vrs.videojet.com) – and -
+➢ Connection to software updates via Videojet Workflow Portal (wfx.videojet.com)
+➢ Setup via TCS+ (Laser Unit Settings) only!! SmartGraph and CLARiTY do not contain settings
+➢ Two versions of access box : Wi - Fi only - or - Cellular and Wi - Fi. Version coming with laser determined by
+certification by country. Spares available for both configuations.
+✓ Standard on all 3350 units (where certified)
+✓ IP65 rated with cable length of 3 meters
+✓ Only one cable needed: USB - C plugged directly into Chameleon board (minimum Chameleon AL - 80518 which
+is red and has USB - C )
+Cellular = VRS and WFX Portal only
+✓ No external power supply needed
+✓ Cable cannot be removed from either supply unit or access box
+Wi - Fi = VRS and WFX, but also
+✓ Same Wi - Fi / cellular modules will be used as 1580 + and 1580 - C
+customer use such as TCS+, Ultimate,
+✓ Box will have different mounting options
+All Print Basic, etc.
+• Certification for 17 tier 1 countries (countries with VRS)
+• Austria, Brazil, Canada, Dominican Rep., France, Germany, Italy, Mexico, Netherlands, Poland, Portugal, Puerto
+Rico, Spain, Switzerland, Turkey, United Kingdom, United States
+Confidential - Company Proprietary
+
+Connection of Access Box to Supply Unit
+a. Access box USB - C cable will be fed through cable gland on back side of supply unit
+b. USB cable will be guided to front side of supply unit
+c. USB cable will be connected to Chameleon USB - C port (must use Chameleon MCIP Artix which has USB - C; AL -
+SP80518; older Chameleons do not have USB - C connector). Note: Chameleon silkscreen may say AL - 80521. This is the
+base level board, but not the finished good part number. See sticker on board for actual PN & Rev
+Note: Power and signals on this cable. If for any reason customer requires removal of Access Box, ensure that cable is not
+connected to Chameleon on inside. Leaving open end on outside of supply unit could cause damage to Chameleon.
+Carrier board
+a
+a
+b
+New standard back
+plates with gland for
+c
+Access Box cable.
+Cellular module Wi - Fi antenna
+Cellular antenna Wi - Fi module
+Confidential - Company Proprietary
+
+Software Management
+New Procedure
+• CMark versions controlled by wfx.videojet.com portal. D igitally signed CMarks will be available.
+• CMark installed on laser will be compared to latest available version on portal and user notified if new
+version available. Can install updates automatically (if internet/cellular connection) or manually (with or
+without internet/cellular connection).
+• SARs are purchased either during sale or via traditional SAR channel. No Workflow Modules or
+purchasing SARs via WFX portal. Not like CIJ.
+• Escalation CMark can be assigned to specific lasers instead of sending and potentially having test
+software found on non - escalation lasers.
+What Stays the Same
+• Loading of CMark, SARs, etc. still the same process via File Management in TCS+; can now load
+CMark even when CMark isn’t on board such as after Rescue Stick as long as proper Plexmark (version
+2.x) is present on Chameleon.
+Confidential - Company Proprietary
+
+WFX Portal (wfx.videojet.com)
+• Same portal that has been used for CIJ for years.
+• Same symbols, but laser will not have Workflow Modules or SARs managed through portal.
+• CMark versions will be available through specific laser Serial Number (shows if new CMark available)
+or generic versions via Management>Product .
+• If version ever downloads with series of numbers as the name, then must rename file so that starts with
+“ cmark ” (not case sensitive).
+Will not be SARs or WFMs – Laser not adopting this
+method of distribution for SARs and no WFMs exist
+Procedures for resyncing in portal after Chameleon board change and/or rescue stick still being developed. Will update info at launch.
+Confidential - Company Proprietary
+
+3350 Installation – Checklist and MQT
+• Look for new installation checklist and MQT instructions at launch.
+• The checklist and instructions will assist in installation and will also identify
+any out of box issues that occur and what to do in those instances.
+• Process similar to 1880 checklist and MQT.
+Confidential - Company Proprietary
+
+CMark v. 5.x Changes
+Confidential - Company Proprietary
+
+CMark Loading Changes with CMark v. 5.x
+• CMark must now be zipped with 7zip, though file extension will still be .zip
+• Requires password to unzip (Not meant to be unzipped. Open archive to view files instead of
+unzipping.) Intended to keep people from modifying CMark.
+• To load CMark v. 5.x the Chameleon board must have Plexmark v. 2.x or newer installed
+first (Rescue Stick). Only when Plexmark 2.x or higher is present will CMark 5 be loaded. Older
+Plexmark such as 1.14 will not create correct partitions for loading.
+Rescue Stick ( Plexmark )
+➢ Use Rufus freeware to write PlexMark to USB (2 GB minimum)
+Plexmark v. 2 is not backwards compatible for loading CMark v. 4. Need to be prepared with both
+rescue sticks/ Plexmarks depending on which CMark you need to load!
+➢ Rescue Stick ( Plexmark ) for CMark v. 4.x = Plexmark v. 1.x (3x40)
+➢ Rescue Stick ( Plexmark ) for CMark v. 5.x = Plexmark v. 2.y or newer (3350)
+Confidential - Company Proprietary
+
+CMark 5
+General
+• No Web Interface. All Web Interface functions now in TCS+ for improved security
+• Support for SHC - SF marking head
+• No RES necessary for VRS. Software which was on RES is resident on laser now.
+• VRS support for SHC - SF features: view working distance offsets, layer information, etc.
+• Over the Air CMark Upgrades (OTA) available (in conjunction with Digital Access Box).
+• CMark package changes - compressed with 7z instead of zip, but still.zip file extension. Get an error now when try to
+open with zip program. Also now need a password to open file. Updating CMark on laser remains the same.
+• Date Change offset can be specified in minutes (TCS+ and SmartGraph )
+• Expanded network settings including improved ethernet (DHCP and DNS available).
+• Engineering Logs available via VRS.
+• Can use NTP or get time from VRS . More time zones than previous.
+• PLC ( EtherNet /IP and PROFINET) process data now include Job Working Distance to support SHC - SF 2.5D capabilities.
+• ECC200 IDMatrix now supports many DMRE ( Datamatrix Rectangular Extension) formats (rectangular to fit better on
+small spaces, but extension so can hold more data)
+• New version Allprint Basic (v. 2.x) that includes command SetPositionWdOffset for SHC - SF
+• Total and Used Memory now shown in TCS+>System Information; broken down by type of memory
+Confidential - Company Proprietary
+
+New Features in TCS+
+(CMark v. 5.x)
+Confidential - Company Proprietary
+
+TCS+ New Features (CMark v. 5.x)
+• Security improvements for Users, Auto Logout, etc. (See next slide; very important changes!)
+• Pilot Laser Dialog in TCS+ changed to allow display of different Layers (for support of SHC - SF marking head) and
+can be accessed in more locations (Main Menu, Job Editor and Line Setup)
+• Multi - Selection Tool – allows editing of multiple Job Elements at once such as Position, Mark Settings, Filling, and
+change Layer assignment. Can be done with or without Grouping which is now available here instead of Add Job
+Elements menu.
+• Ability to link “Line Setup” to Job (Main Menu>Main Settings) [Current status is when you export Job and Line
+setup the link between them is not maintained]
+• Complex Text (multi - line) support including ability to apply Font and spacing changes to some or all of line(s)
+• Test Pattern creation possible (like SmartGraph )
+• Matrix support (rows and columns like SmartGraph )
+• Job Information visible (estimated time to mark, number of vectors, etc.)
+• MOTF Sorting Angle adjustable now
+• CO2 Laser Position and Scaling Factor now adjustable in Laser Unit Settings>Laser Configuration (global setting;
+now like SmartGraph has always been).
+• Search available in Manager dialogs (Jobs, Line Setups, Mark Settings)
+• Enable/Disable HTTPS for TCS+ webserver and upload customer SSL certificates
+• Cellular, Wi - Fi and Ethernet – Cell and Wi - Fi enabled by default (where access box is installed).
+Confidential - Company Proprietary
+
+Security Features TCS+
+To improve security, TCS+ in CMark v. 5.x contains the following features:
+• Upon install new passwords for default users must be created on first login (Administrator,
+Supervisor, Operator). 2222, 1111 and 0000 used for initial login, but will be prompted to create new
+password. (New password can be same as old password)
+• User list not displayed and user must type in User Name to login ( you can turn this feature off to show
+list in Users>Wrench icon>Login Settings ).
+• Limits/rules on acceptable User names . Example: cannot create user called Admin or Admin1.
+• Auto Logout on by default . Can disable, but even if disabled any Users with Administrator ROLE will
+still be logged out after 5 minutes of inactivity.
+• When no one is logged in then Job Preview is hidden (Can turn this off in Users>Login Settings)
+• Enable/Disable HTTPS for TCS+ webserver and upload customer SSL certificates . HTTPS
+enabled by default.
+Confidential - Company Proprietary
+
+Service User Only Settings
+➢ Requires daily password
+➢ No other user can be assigned Access Rights to the following:
+(All in Main Menu>Laser Unit Settings unless noted)
+• Edit serial number
+• Change laser type
+• Select marking head
+• Select safety circuit
+• Load system settings via barcode (this is for VJ manufacturing only)
+• Reset CP - Light
+• Upload System Database
+• Delete System Database
+• Save Current S ystem D atabase as Factory
+• Settings „Remove Service Session“ for VRS
+• Disable Focus Finder (in Main Menu>Main Settings)
+There are additional items that only Service user sees by default, but access
+rights can be granted to other roles (Arc Compensation, Multi - Laser Functionality, etc.).
+Confidential - Company Proprietary
+
+Options for Access Box (VRS & WFX)
+In order of priority:
+1) Cellular directly from laser Access Box (Internal RES)
+2) Wi - Fi to customer Wi - Fi network (if internet facing then use Internal RES; if not then must use External RES)
+3) Wi - Fi to Cradlepoint (use Wi - Fi from Access Box on laser to CG100 ( Cradlepoint /SAFE panel) which
+has External RES (set laser to External Res)
+4) LAN to customer network (if internet facing then use Internal RES; if not then must use External RES)
+In addition to VRS and WFX portal, customer can also use Wi - Fi for TCS+, Ultimate, etc.
+Cellular is only for VRS and WFX portal
+Note: Setup Cellular, Wi - Fi and Ethernet in TCS+ > Laser Unit Settings (no Web Interface
+anymore in CMark v. 5)
+Confidential - Company Proprietary
+
+OTA and VRS Install Process
+Pre - work
+• Site survey: Check if cellular signal available in area where laser will be installed. If no cellular signal with mobile
+phone, use CG100 site survey kit to see if CG100 is possibility to use cellular for VRS/OTA (Over the Air Updates of
+CMark).
+• OTA: Ensure Serial Number/laser is in WFX Portal
+• VRS: Generate VRS Activation Code (code good for up to 30 days for unlimited number of printers/lasers, but only
+valid for 48 hours after first use)
+Installation (Cellular)
+1) Login to TCS+ via TU440 or web browser on laptop (IP of laser) as Service user
+2) Go to Main Menu (wrench icon)> Laser Unit Settings
+3) Verify Serial Number
+4) Set Name of laser (will be used as Friendly Name in VRS and in WFX Portal)
+5) Set Country (sets Cellular frequency bands and carrier)
+6) Press Save button
+7) Reboot laser and allow some time for cellular to connect. Login again.
+8) Ensure LTE cellular connection in Main Menu>Laser Unit Settings> Cellular . Allow 5 minutes if GSM for laser to find and
+establish best connection. Must have LTE service or VRS cannot be connected via cellular.
+*If Cellular is not available and OTA/VRS is desired, then set Wi - Fi or LAN for use with internet facing customer network (with
+internal RES) or CG100 ( Cradlepoint /SAFE) to use traditional RES.
+For CG100 connection: disable Cellular and Enable Wi - Fi (Main Menu>Laser Unit Settings>Cellular or Laser Unit Settings>Wi -
+Fi) Connect to Videojet Wi - Fi SSID. Password is already programmed in the system when the laser sees Videojet Wi - Fi
+available. See VRS Installation Manual for CG100 configuration.
+Confidential - Company Proprietary
+
+OTA and VRS Install Process
+After cellular, Wi - Fi or LAN connection established. Must have connection to internet to have Over the Air
+Updates. If laser will have no connection, then disable automatic updates so doesn’t give confusing info
+to customer.
+Set OTA (Over the Air) update behavior (even if updates not desired):
+a) Main Menu>Laser Unit Settings> Software Download
+b) Register Laser with wfx.videojet.com portal by pushing Register Laser button. Laser Registered box
+should appear after a few seconds.
+c) With keyswitch open, allow 5 minutes to see if update if available.
+d) If update available, install before proceeding by rebooting laser after screen shows Download 100% and
+there is an Update button shown in gray under Available versions. Behavior is set to automatically install
+update upon startup. Ensure update is installed and laser rebooted prior to completing next steps.
+e) Return to Main Menu>Laser Unit Settings> Software Download
+f) Disable automatic updates if SmartGraph customer or if pharma/med, or if customer preference
+by unchecking box for “Activate Over the Air Upgrade”. Auto updates to the laser will result in a mismatch
+of versions between laser and PC where SmartGraph is installed. This will lead to inability to connect
+laser to SmartGraph . Pharma customers may have to revalidate line if laser CMark updates.
+g) Select Upgrade Behavior from drop - down menu and set desired behavior (install updates on start - up,
+shutdown or manually meaning the customer will be notified and must allow. This is similar to mobile
+phone notification that update is available)
+h) Press Save button.
+Confidential - Company Proprietary
+
+OTA and VRS Install Process
+To enable VRS: Connection via Cellular, Wi - Fi or LAN must already be configured. If using external RES or CG100 complete
+RES setup prior to performing steps below.
+1) Login to TCS+ as Service user.
+2) Go to Main Menu>Laser Unit Settings> Remote Service
+3) If LTE cellular or internet facing customer network available:
+1) Checkmark Enable VRS box
+2) Select Internal RES (if not already selected)
+3) Enter Activation code (include dashes; not case sensitive)
+4) If using customer’s WLAN or LAN then check box to “Allow VRS traffic over customer network”
+5) Press Save button
+6) Status should show Active and VRS icon at top of Home screen shown
+If using CG100 or traditional RES (Configure CG100 or RES before performing the following steps):
+1) Checkmark Enable VRS box
+2) Select External RES
+3) Enter Remote Edge Server IP (RES IP)
+4) Select customer’s preferred time source (manual from laser, NTP or from VRS)
+5) If using customer’s WLAN or LAN then check box to “Allow VRS traffic over customer network”
+6) Press Save button
+7) Status should show Active and VRS icon at top of Home screen shown
+Confidential - Company Proprietary
+
+Cellular
+• Enabled by default as long as there is Access Box that includes cellular (certified countries only)
+• Laser automatically looks for cell signal and tries to establish communications to VRS and wfx
+• Ensure “Country” is set correctly in Laser Unit Settings>Laser Configuration so that cellular uses correct frequencies.
+• Allow time for cellular to establish good connection . LTE connection (4G) is necessary for stable VRS connection. GSM
+(3G) cellular is not allowed for VRS connection. Must use alternate method for connection, such as CG100
+( Cradelepoint /SAFE), if cellular is not LTE.
+• No settings in Cellular to adjust. It is either Enabled or Disabled. The rest is up to the system.
+Confidential - Company Proprietary
+
+Wi - Fi
+Connect/
+Disconnect/
+Details
+Wi - Fi Disabled Wi - Fi Enable and
+Wi - Fi Disconnected,
+(no icon) Connected
+but Enabled
+Confidential - Company Proprietary
+
+OTA (Over the Air) Software Updates
+• Registration : Displays the status of laser registration. You must have cellular/internet connection to Register the Laser and for OTA.
+• Connection : It displays the status of laser connection with Videojet Portal. -- Polling mechanism pings wfx.videojet.com every 3 minutes to c heck
+for connection and if new Cmark version available. Only downloads new version during Keyswitch Open or Fatal Error states.
+• Download : Displays the status of package download from Videojet Portal.
+• Idle; In Progress; Ready To Process; Suspended
+• Activate Over the Air Upgrade : Enables the automatic Cmark update feature. Disable if SmartGraph or pharma customer!
+• Upgrade Behavior : Displays options for different upgrade behaviors.
+• Install upgrades automatically on startup (default); Install upgrades automatically on shutdown; Manually install upgrades
+• Available Versions : It displays a Software Version along with “Currently Installed” text. If updates available then Upgrade or Download button will
+be present.
+Confidential - Company Proprietary
+
+OTA Status
+When the higher version of CMark firmware package is available on Videojet Portal, then it displays the available package
+version along with Download button, as following. Click Download button to begin download process.
+When behavior is set to Automatically install at startup or shutdown the buttons below appear, but do not require user
+intervention to proceed.
+When the CMark firmware package is already downloaded in the laser, then it displays the downloaded package version
+along with Upgrade button, as following. Click Upgrade button to install.
+During Upgrade process TCS+ via laptop will display dialog message “System is preparing for update. This may take a while,
+please do not power off. Once the laser powers off, please power it on to continue laser update.” TU440 will show white scre en
+with “update preparation in progress” shown until complete.
+After upgrade is complete with no newer version on Videojet Portal the following message is displayed :
+Confidential - Company Proprietary
+
+OTA Notifications
+Information messages are displayed on home screen to notify users with OTA software updates received
+from portal.
+Note that the message description displayed i s based on the upgrade behavior mode that user selected.
+The modes can be set from drop down menu available on Laser Unit Settings>Software D ownload page.
+Message possibilities:
+• 60001: New firmware is ready for manual installation.
+• 60002: New firmware is available for download.
+• 60003: New firmware is ready for download and installation.
+• 60004: New firmware will be installed automatically on next shutdown of the system.
+• 60005: A firmware download was canceled when the key switch was closed.
+• 60006: New firmware will be installed automatically on next start - up of the system.
+Confidential - Company Proprietary
+
+Software Management in Portal (Laser Offline)
+• If there will be no connection at laser, best practice is still to Register Laser, but will be a manual process similar to CI J. This allows for
+dashboard view via WFX Portal to see installed software on laser and to quickly assess from WFX Portal if a new, mandatory or
+escalation version of CMark is available or required.
+• Registration is only done when the laser is connected. If offline (no connection) then registration process is one - way (upload o f PRI to
+portal manually)
+• All following steps are assumed using TCS+ connection via Web Browser and PC (cannot export PRI via TU430/TU440)
+1) In Laser Unit Settings>Software Download, press the Export Registration File button.
+2) In Export Registration File dialogue click on Export button. The PRI file is downloaded
+to your Downloads folder on connected PC .
+3) Connect via PC with internet connection to the Videojet Portal.
+4) Search by Serial Number for the Laser and when found click on Upload PRI
+5) After upload, the portal will determine if a new version of CMark is available or
+required. (Red triangle= mandatory update available; yellow triangle = optional update
+available and gray triangle = software update for laser has been downloaded, but no
+new PRI has been loaded to portal to verify status). Download if desired or required.
+6) Ensure downloaded package (CMark) name begins with “ cmark ” before loading via
+TCS+>File Management. CMark file names must begin with “ Cmark ” (not case
+sensitive) or file will be seen by laser as invalid file type.
+7) Reboot laser to install new CMark.
+8) Export new PRI (Laser Unit Settings>Software Download>Export PRI)
+9) Load updated PRI to WFX Portal to close loop.
+10) Cycle is complete.
+Confidential - Company Proprietary
+
+What if… OTA and Manual Update
+If OTA automatic updates are enabled and you are trying to manually update CMark through File Management,
+then the following message may be displayed:
+System having installed CMark, plus downloaded CMark from automatic updates, plus the version of CMark
+you are uploading manually could make the laser run out of disk space. Warning dialog allows you to disable
+automatic updates while loading. Can re - enable afterward.
+If you select “Yes” from dialog, then the CMark downloaded automatically by the system will be deleted in order
+to make room for your manual upload.
+Confidential - Company Proprietary
+
+What if… Chameleon Replaced
+If OTA automatic updates are enabled and you must replace a Chameleon board:
+• CMark must be installed manually on new board. Spare boards do not have any CMark
+installed and therefore are not programmed to look for wfx.videojet.com until CMark is
+installed.
+• System Database must be loaded or configured.
+• Connection settings (Cellular, Wi - Fi, etc.) may need to be reconfigured even if a backup of
+System Database is available. Some settings exist in System Database, but others are stored
+as part of CMark. This reconfiguration may also be necessary after Rescue Stick because of
+the divergent storage.
+• New board means new MAC address so after configuring serial number, name, cellular, Wi - Fi
+or Ethernet then: Register the laser onboard (if cell or other connection on laser) or download
+PRI from laser and upload to the WFX portal manually.
+*Process still in development; changes may occur before launch
+Confidential - Company Proprietary
+
+Replace Smart Focus Head
+The SHC - SF marking head is replaced with a complete new marking head and matched CP -
+Light 3D A7 board. Additionally, the existing Lens Compensation file must be deleted first, and
+then new Lens Compensation file must be loaded and activated .
+New Lens Compensation file is not included with spare marking head. Must be downloaded
+from Danaher Sharepoint in the FOBA - Alltec Service Page space. The files are organized by
+serial number of the MARKING HEAD not the laser system serial number.
+Confidential - Company Proprietary
+
+Backup, Delete or Activate Lens Compensation
+Always backup existing Lens Compensation as one of first steps of installation on laser with SHC - SF.
+Backup Lens Compensation File:
+Must be logged in as Service for the following: TCS+>File Management>
+Lens Compensation>Pen>Show Content>Download.
+Note: There are several Lens Compensation files actually loaded on laser,
+but only the user (unique, calibration for specific marking head) will
+be shown in File Management.
+Replacing Marking head:
+Download Lens Compensation file for new marking head from FOBA - ALLTEC Service Pages>Service>Software>Hires
+Files>download file based on serial number.
+Must be logged in as Service to perform the following steps (must use PC with web browser not TU440):
+1) Delete the old Lens Compensation user file (Laser Unit Settings>Lens Compensation> press Pen button next to shc -
+sf_hiresxxx_ usr .xml and select Delete).
+2) Only KTE and shc - sf_hiresxxx_def.xml should now be shown.
+3) Press File Management button and then Upload button when File Management dialog appears.
+4) Navigate to new Lens Compensation file and select.
+5) Once confirmation that loaded press the Close button to return to Laser Unit Settings>Lens Compensation.
+6) New file should now be shown (usr.xml), but must now be activated.
+7) Press the umber of new marking head. File does not come in package with new head.
+8) Activate Best Compensation button. The word Active should now appear next to the usr file instead of def.
+Confidential - Company Proprietary
+
+QUUU????9++++222?01Y%#".5##".'##".5463323>332q0%$00""0/%$06-.B0 "
+&4
++
+S@23222i@&&-e&ehh???99?/3/99//9901%#".''#"&&67&&66327>32?+18 5$->>7/61,39e0$L#+$
+I!IL??9?01Y#".'.54>327>32'C65C&1%
+'3m*.?.!'-@'...+!!~??9/93]22/9/32201%###".55!".54>7>3232#3m@&&!2%*6"@""aaI1C8V1$,$,@44.1H@H/
+ ??/01#".'&&54632326546326T<
+""#$R##"x50#/5
+y;H@#.$/#//#08"/##5

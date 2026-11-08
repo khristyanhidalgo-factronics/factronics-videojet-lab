@@ -1,0 +1,119 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\2012-04-18 Service Training DataMaster V1.10.engl.pdf
+# cifrado=False bloques=12 caracteres=5054
+
+DataMaster V1.1.0
+Launch date: 30.03.2012
+actual FobaDraw / SmartGraph version: 8.2.3
+actual QMark version: 8.2.3
+Confidential Internal Use Only
+
+Requirements
+State of the art PC:
+Quad - Core processor
+ACC - 3
+only supports
+max. 100MBit
+Full Duplex!!!
+Data Master Service Training 2
+20.04.2012
+
+DataMaster Service Bulletin
+For the successful operation of DataMaster, the following is required:
+• A PC with Windows XP, as DataMaster does currently only support Windows XP ,
+see section "Requirements" of the DataMaster manual which can be found in the
+Folder "Manual" on the DataMaster USB stick.
+Note: In this section, all the system requirements for DataMaster are described!
+• A special QMark version which can be found in the folder "QMark" on the DataMaster - USB stick.
+• A special Smart Graph/FOBA Draw version which can be found in the folder "Smart Graph" or
+"FOBA Draw" respectively on the DataMaster USB stick.
+• For convenience reasons, the installation instructions for the QMark and Smart Graph/FOBADraw
+can also be found in the folder "ReadMe" on the DataMaster USB stick.
+• The installation instructions for DataMaster can be found on the booklet of the USB box in which
+the DataMaster USB stick is provided.
+Note: The DataMaster USB stick serves as a copy protection dongle.
+Therefore, it needs to be left in the USB port of the PC on which DataMaster is running!
+Data Master Service Training 3
+20.04.2012
+
+User Levels Operator and Supervisor
+Data Master Service Training 4
+20.04.2012
+
+User Level Administrator
+Data Master Service Training 5
+20.04.2012
+
+Terminology
+• Data Lens Technology: The activated cell increases, other cells are reduced.
+• Initial Screen: General settings in DataMaster.
+• Laser Screen: Opens when one or more lasers are dragged & dropped into a campaign.
+• Out of Band Data (OOB): Winning codes (symbol: crown).
+• Exclusion List Data (EXL): Data set which is not to be marked (symbol: funnel).
+• General Data File (DAT): Normal data set which is to be marked (symbol: data icon).
+• Fragment Assignment: In the data processing configuration data fragments and text
+variables, can be assigned by drag & drop.
+• Traceability: DataMaster is writing LOG - files in order to track, if and when a string or
+an activity was carried out.
+Data Master Service Training 6
+20.04.2012
+
+Data Order
+• It is very important, to keep the following order, while uploading data to a campaign:
+1. Exclusion List Data .EXL (if desired – not a must).
+2. Out of Band Data .OOB ( if desired – not a must ).
+3. Normal Data .DAT
+Data Master Service Training 7
+20.04.2012
+
+Notes 1
+• DataMaster is dongle protected and can only be used with a dongle. The dongle must be
+permanently connected to a USB - port of the connected PC.
+• DataMaster can be connected to max. 8 lasersystems .
+• Max. 8 campaigns can be added.
+• Data Factory is a module in DataMaster, which is able to generate data, in a previously
+selected range, by its own. Symbol:
+• Successful DataMaster tests, are carried out with a Quad - Core PC and a 100MBit switch.
+• 700MByte data (40 Mio. lines with 16 digits each line) are loaded in 3,5 hours .
+Data Master Service Training 8
+20.04.2012
+
+Notes 2
+• During normal operation with DataMaster, the handheld G55 must be disconnected!
+Important: The G55, may only be used for editing, respectively creating templates, but
+only while DataMaster is inactive!
+• All buffer contents, are stored temporarily in the RAM on the ACC - 3.
+• All other data, which are loaded into the campaign (and which are not already loaded
+into the buffers), are stored in the folowing path (Windows XP):
+C: \ Documents And Settings \ All Users \ ProgramData \ DataMaster \ [version] \ Data \ ...
+Data Master Service Training 9
+20.04.2012
+
+Naming Conventions
+• The Format of files, which contains the variable data, must fulfill the following naming
+conventions: Name.xxx.yyy.[zzz]
+xxx is the comparision between normal data and exclusion list or out of band data
+(can be dat, exl or oob).
+yyy is the file type and can be xls, txt, xml or csv.
+zzz is optional and can be zip, pgp or zip.pgp
+Data Master Service Training 10
+20.04.2012
+
+Information
+• Dynamic logos can only be marked, when the selected font contains logos.
+DataMaster can not display these logos, but rather the Unicode/Ascii - value.
+Apart from that, only static logos and graphics, which are already part of the
+template, can be marked.
+• DataMaster is allways opening in full screen mode. Users can leave this mode,
+by using the short keys (ALT+TAB), in order to change to other windows.
+• A browse button, will possibly be implemented, in order to select the path for
+data, more convenient.
+• While a laser is in error state or no longer ready to mark, the other laser systems
+are still marking. This behaviour is regarding the DataMaster specification.
+It‘s recommended to use the output error of the laser, in order to stop the
+periphery of the customer.
+Data Master Service Training 11
+20.04.2012
+
+Example: 8 Campaigns – 3 Laser Systems
+Data Master Service Training 12
+20.04.2012

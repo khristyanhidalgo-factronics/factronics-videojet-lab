@@ -1,0 +1,2399 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Manuales\Ing\463040-01 AB_VJ DataFlex 6530 Operator Manual.pdf
+# cifrado=True bloques=139 caracteres=151121
+
+Videojet 6530
+Operator Manual
+P/N 463040-01
+Revision AB, March 2019
+
+Copyright March 2019, Videojet Technologies Inc. (herein referred to as reserved.Videojet). All rights
+This document is the property of Videojet Technologies Inc.
+proprietary information owned by Videojetand contains confidential and
+. Any unauthorized copying, use or disclosure of it without the prior written permission of Videojet is strictly prohibited. CLARiTY
+® ®
+, CLARiSOFT CLARiNET ,
+® TM
+ and, iAssurance are registered trademarks.
+Videojet Technologies Inc.
+1500 Mittel Boulevard Phone : 1-800-843-3610Offices - USA: Atlanta, ChicagoIntl: Canada, France, Germany, Ireland,
+Wood Dale, IL60191-1073 USA  Fax : 1-800-582-1343Intl Fax : 630-616-3629 Japan, Spain, Singapore, Netherlands, and The United Kingdom 
+www.videojet.com Distributors Worldwide
+
+Table of Contents
+Compliance Information.........................................................................................................For Customers in the European Union...........................................................................................................i i
+For Customers in the USA.......................................................................................................For Customers in Canada................................................................................................................i .......ii
+Pour la clientèle du Canada....................................................................................................Support and Training..................................................................................................................ii ................iii
+Contact Information............................................................................................................Service Program...........................................................................................................................iii ............iii
+Customer Training.........................................................................................................................iii
+Section 1 Introduction.........................................................................................................................1-11.1 Equipment Description...............................................................................................................1-1
+1.2 About this Manual..........................................................................................................1.3 Related Publications...................................................................................................................1-2 ...........1-2
+1.3.1 Language Codes...........................................................................................................1.4 Content Presentation...........................................................................................................1-2 ..........1-3
+1.4.1 Positional References....................................................................................................1.4.2 Units of Measurement........................................................................................................1-3 ..1-3
+1.4.3 Safety Information.......................................................................................................1.4.4 Notes..........................................................................................................................1-3 .............1-4
+1.5 Abbreviations and Acronyms.................................................................................................1.6 Chapters in the Manual.........................................................................................................1-4 .........1-5
+Section 2 Safety...............................................................................................................................2.1 Introduction...................................................................................................................2-1 .................2-1
+2.2 Equipment Safety Guidelines................................................................................................2.2.1 Printhead.....................................................................................................................2-1 ...........2-2
+2.3 Electrical Safety Guidelines...............................................................................................2.3.1 Comply with Electrical Codes...........................................................................................2-........2-3 3
+2.3.2 Electrical Power.........................................................................................................2.4 Installation of the Printer.......................................................................................................2-3 ............2-4
+2.5 Print Ribbon Safety Guidelines.............................................................................................2.6 Other Important Guidelines......................................................................................................2-5 .......2-5
+2.6.1 Cleaning Safety Guidelines...............................................................................................2.6.2 Warning Labels...........................................................................................................2-5 ......2-5
+Section 3 Main Parts............................................................................................................................3-13.1 Equipment Description...............................................................................................................3-1
+3.1.1 Printer..................................................................................................................3.1.2 CLARiTY Controller Display and Power Supply Unit (PSU).............................................3-2.............3-1
+Section 4 Startup...............................................................................................................................4.1 Switching the Power ON.......................................................................................................4-1 .......4-1
+4.2 Setting the Screen Orientation.............................................................................................4.3 Starting the Printer.............................................................................................................4-2 ..............4-4
+4.4 Stopping the Printer.......................................................................................................4.5 Understanding Printhead LEDs...........................................................................................................4-4 ..4-5
+4.6 Setting the Time and Date..................................................................................................4.7 Setting the Language and Region Display.................................................................................4-6.......4-5
+4.8 Loading the Ribbon.........................................................................................................4.8.1 Removing the Cassette...............................................................................................................4-7 .4-7
+4.8.2 Inserting a New Ribbon...................................................................................................4.8.3 Cassette Mandrel Setup.................................................................................................4-..4-8 11
+4.8.4 Removing a Used Ribbon...............................................................................................4-124.8.5 Reinstalling the Cassette................................................................................................4-13
+Videojet DataFlex 6530 Operator Manual - Rev AB 1
+
+Table of Contents
+4.8.6 Using Ribbons of Different Widths and, Colors...............................................................4-134.8.7 Checking the Printer Ribbon Supply................................................................................4-16
+4.9 Printing a Test Image...............................................................................................................4-17
+Section 5 CLARiTY Operating System...............................................................................................5-15.1 Getting started with the CLARiTY..............................................................................................5-1
+5.2 Using the Home Screen......................................................................................................5.2.1 Consumables.....................................................................................................................5-1 .......5-4
+5.2.2 Performance Screen.......................................................................................................5.3 Using the Tools Screen........................................................................................................5-6 .........5-9
+5.3.1 Using the Diagnostics Screen.........................................................................................5-105.3.2 Using the Database Screen.............................................................................................5-36
+5.3.3 Using the Help Screen....................................................................................................5.4 Password Protection.........................................................................................................5-38 ........5-40
+5.5 Master/Slave Printers......................................................................................................5.5.1 Group Job Select..................................................................................................................5-40 ....5-41
+5.5.2 Group Control..................................................................................................................5-41
+Section 6 Job Editor.............................................................................................................................6-6.1 Creating and Adding New Jobs...............................................................................................1 ...6-1
+6.2 Viewing the Current Job or Image...........................................................................................6.3 Selecting a New Job for Print.................................................................................................6-2 .......6-4
+6.4 User Editable Fields.......................................................................................................6.4.1 Changing Variable Text and Date Information..................................................................6-6............6-6
+6.4.2 Touch To Edit............................................................................................................6.5 Changing the Position or Appearance of the Print...................................................................6-10........6-9
+6.5.1 Changing the Print Position.............................................................................................66.5.2 Changing the Print Darkness...........................................................................................6-1-12 3
+6.5.3 Setting the Print Delay..................................................................................................6.5.4 Setting the Print Speed.....................................................................................................6-13 ..6-14
+6.5.5 Setting the Printhead Position.........................................................................................6-6.5.6 Setting Interleaved Printing.............................................................................................14 6-15
+6.6 Deleting a Job from the Jobs Database...................................................................................6-15
+Section 7 Maintenance.........................................................................................................................7-17.1 General Maintenance.................................................................................................................7-1
+7.1.1 Cleaning the Printhead and Lightbox................................................................................7-27.2 Printer Alignment........................................................................................................................7-5
+7.2.1 Aligning the Lightbox (53mm Version)...............................................................................7-57.2.2 Aligning the Peel Roller to the Aligned Lightbox (53mm Version).....................................7-5
+7.2.3 Aligning the Peel Roller (107mm Version).........................................................................7-67.2.4 Aligning the Printer to the Print Roller...............................................................................7-7
+7.2.5 Aligning the Peel Roller to the Print Roller........................................................................7-7
+Section 8 Troubleshooting..................................................................................................................8-18.1 Printer Faults..............................................................................................................................8-1
+8.2 Printing Faults............................................................................................................8.3 CLARiTY Display Faults...................................................................................................................8-12 ......8-14
+8.4 Troubleshooting Print Faults as indicated by iAssure (53mm Version Only)...........................8-158.5 Ribbon Faults...........................................................................................................................8-16
+8.5.1 Ribbon Tension...........................................................................................................8.6 CLARiTY Error Messages.........................................................................................................8-18 ...8-19
+8.6.1 Reading a Fault Message or Warning.............................................................................8-198.6.2 Clearing a Fault Message or Warning.............................................................................8-20
+2 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Table of Contents
+Appendix A Specifications.................................................................................................................A-1
+Appendix B Availability.......................................................................................................................B-1B.1.1 Introduction.......................................................................................................................B-1
+B.2.2 Equipment Availability...................................................................................................B.3.3 Operation Availability......................................................................................................B-1 .....B-2
+Videojet DataFlex 6530 Operator Manual - Rev AB 3
+
+Compliance Information
+For Customers in the European Union
+This equipment displays the CE mark to indicate conformance to the following legislation:
+For Customers in the USA
+EU EMC Directive 2014/30/EU:Essential health and safety requirements relating to electromagnetic compatibility.
+EN 61000-6-2Generic standards - ImmuEN 61000-6-4Generic Emissions Stannity for industrial environments.dard for Industrial Environments.
+EN61000-3-2Limits for harmonic current emissions (equipment input current up to and including 16A per phase).
+EN 61000-3-3Limitations of voltage fluctuation and flicker in low voltage supply systems for equipment with rated currents up to and
+EC Low Voltage Directive 2014/35/EUincluding 16A phase.
+Essential health and safety requirements relating to electricwithin certain voltage limits.al equipment designed for use
+EN 60950-1Safety requirements for information technology equipment including electrical business equipment.
+This device complies with Part 15 of the FCC Rules. Operation is subject to the following two conditions:
+1.This device may not cause harmful interference, and
+2.This device must accept any interference received, includinundesired operation. g interference that may cause
+This equipment has been tested and found to comppursuant to Part 15 of the FCC Rules. These limitly with the limits for a Class A digital device, s are designed to provide reasonable protection
+against harmful interference, when the equipment isequipment generates, uses operated in a commerci, and can radiate radio frequency eneral environment. This gy and, if not installed and used
+in accordance with the instruction manual, may cause harmful incommunications. Operation of this equipment in terference to radio a residential area is likely to cause harmful
+interference in which case the user will be required to correct the interference at his own expense.
+Shielded cables must be used with this unit to ensure compliance with Class A FCC limits.
+This equipment has been tested and certified fosafety and electrical emissions.r compliance with U.S. regulations regarding
+This equipment has been investigated in accordance with the standard for safety: UL 60950-1: Safety of information technology equipment.
+WARNING
+PERSONAL INJURY. Changes or modifications to this unit not expressly approved by the party responsible for
+compliance could void the users authority to operate the equipment.
+Videojet DataFlex 6530 Operator Manual - Rev AB i
+
+For Customers in Canada
+This digital apparatus does not exceed the Class A limits for raapparatus set out in the Radio Interference dio noise emissions from digital Regulations of the Canadian Department of
+Communications.
+This equipment has been tested and certified for compliancesafety and electrical emissions. with Canadian regulations regarding
+This equipment has been investigated in accordance with the standard for safety: CAN/CSA C22.2 No. 60950-1-03. Safety of information technology equipment. 
+Pour la clientèle du Canada
+Le present appareil numerique nemet pas de brapplicales aux appareils numerique de las class A uits radioelectriques depassant les limites prescrites dans le Reglement sur le brouillage
+radioelectrique edicte par le ministere des Communications du Canada.
+Cet équipement est certifié CSA.
+Cet appareil a été testé conformément à la norme de sécurité: CAN/CSA C22.2 n° 60950-1-03. Matériels de  traitement de l'information  Sécurité.
+WARNING
+PERSONAL INJURY. This product is not intended for use in the immediate/direct visual field of the display work
+place. To avoid disturbing reflections on the display work place, this product shall not be placed in the immediate/direct field of vision.
+ii Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Support and Training
+Contact Information
+If you have any questions or need assistance, please contact Videojet Technologies Inc. 1-800-843-3610 (for all customers within the Unitat ed States). Outside the U.S., customers should
+contact their Videojet Technologies Inc.
+distributor or subsidiary for assistance.
+Videojet Technologies Inc.
+1500 Mittel Boulevard
+Wood Dale, IL 60191-1073 U.S.A.
+Phone: 1-800-843-3610
+Fax: 1-800-582-1343
+International Fax: 630-616-3629
+Web: www.videojet.com
+Service Program
+Videojet service and support programs are designprinters and deliver the lowest total coed to protect your investment in Videojet st of ownership to your operations.
+Videojet offers comprehensive service programs, spyou keep your lines up and running. are parts and training - all designed to help
+A complete array of customer services and offerings tailored to meet your operational needs
+A program designed to maximize your equipment uptime, allowing you to focus on your most important mission - your companys productivity
+A product and service program to supporthigh quality, reliable printed code on your finished product. and deliver your ultimate purchase: a
+Customer Training
+If you wish to perform your own service and mainInc. recommends you complete a Customer Training Course on the printer.tenance on the printer, Videojet Technologies
+Note: The manuals are intended to be supplements to (and not replacements for) Videojet Technologies Inc. Customer Training.
+For more information on Videojet Technologies Inc. Cust1-800-843-3610omer Training Courses, call (within the United States only). Outside the U.S., customer should contact a
+Videojet subsidiary office or the local Videojet distributor for further information.
+Videojet DataFlex 6530 Operator Manual - Rev AB iii
+
+Section 1Introduction
+This chapter contains the following topics:
+Equipment Description
+About this Manual
+Related Publications
+Content Presentation
+Abbreviations and Acronyms
+Chapters in the Manual
+1.1Equipment Description
+The main parts of the Videojet DataFlex 6530 printer are described as follows:
+Printer: Houses the printhead and ribbon. from the controller. The printhead The data is transferred to the printhead prints onto the packaging film.
+CLARiTY Controller Display: Houses the power supply unit and touch screen. You can access jobs, setup jobs, set the various print parameters using the touch screen.
+1. Interconnecting Cable2. Printer3. CLARiTY Controller Display and Power Supply Unit (PSU)
+Figure 1-1: Videojet DataFlex 6530 Printer and CLARiTY Controller Display
+Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Introduction
+1.2About this Manual
+This Operator Manual is written for the every day user of the printhe user to understand the different parts and printing operations of the printer.ter. The Operator Manual helps
+1.3Related Publications
+The following manuals are available for reference:
+Videojet DataFlex 6530 Service Manual (53mm), Part Number: 463041.
+Videojet DataFlex 6530 Service Manual (107mm), Part Number: 463063.
+Videojet DataFlex 6530 Illustrated Parts Breakdown Manual (53mm),Part Number: 463041.
+Videojet DataFlex 6530 Illustrated Parts Breakdown Manual (107mm), Part Number: 463063.
+1.3.1Language Codes
+When you order this manual, make sure to add the 2-digit langnumber. For example, the Danish version of thuage code at the end of the part e operator manual is part number 463040-18.
+Table 1-1 shows the list of language codes that you cathis manual.n use to identify the translated versions of
+For more information, contact the Videojet customer service or your local distributor.
+Note: The availability of the Operator Manual is indicated by an asterisk (*). AvManual is indicated by a plus sign (+). For moreailability of the Service information, contact the Videojet customer service
+or your local distributor.
+Code Language Availability (see note)
+01English (US)*+
+02French*
+03German*
+04Spanish*
+05Portuguese*
+06Japanese*
+07Russian*
+08Italian*
+09Dutch*
+10Chinese (Simplified)*
+11Arabic*
+12Korean*
+15Norwegian*
+16Finnish*
+17Swedish*
+18Danish*
+Table 1-1: List of Language Codes
+1-2Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Introduction
+Code Language Availability (see note)
+Table 1-1: List of Language Codes (Continued)
+1.4Content Presentation
+This Operator Manual contains different types ofnotes, user interface (UI) terminology and so on information like safety guidelines, additional . To help you identify the different types of
+information, different writing styles are used in this manual.
+1.4.1Positional References
+Positions and directions like left, right, front, rear, to the right and the CLARiTY display when yoto the left are with respect to u see it from the front.
+1.4.2Units of Measurement
+This manual uses metric units of measurement. The equivalent English meparenthesis. For example, 240 mm (9.44 inches).asures are included in
+1.4.3Safety Information
+19Greek*
+21English (UK)*+
+23Polish*
+24Turkish*
+25Czech*
+26Hungarian*
+34Bulgarian*
+36Chinese (Traditional)*
+Specific safety information is listed throughout this manual in the form of Warning and Caution statements. Pay close attention to these statements as they contain important information that
+help in avoiding potential hazards to yourself or to the equipment.
+1.4.3.1Warning
+The warning statements indicate hazards or unsafe practices that can cause severe personal injury or death.
+They have a triangular symbol with an excltext.amation mark to the immediate left of the
+They are always preceded by the word Warning.
+They are always found before the step or information referring to the hazard.
+For example:
+WARNING
+PERSONAL INJURY. All electrical wiring and connections must comply with applicable local codes. Consult the
+appropriate regulatory agency for further information.
+Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Introduction
+1.4.3.2Caution
+The caution statements indicate hazards or or property damage.unsafe practices that result in equipment
+They have a triangular symbol with an excltext.amation mark to the immediate left of the
+They are always preceded by the word Caution.
+They are always found before the step or information referring to the hazard.
+For example:
+CAUTION
+EQUIPMENT DAMAGE. Read this chapter thoroughly before attempting to install, operate, service, or maintain this
+equipment.
+1.4.4Notes
+Notes provide additional information about a particular topic.
+For example:
+Note: You can set the password protection for some functions to prevent any access that is not authorised.
+1.5Abbreviations and Acronyms
+Abbreviation Expansion
+ACAlternating Current
+I/OInput/Output
+LCDLiquid Crystal Display
+PLCProgrammable Logic Controller
+RHRight Hand
+SELVSafety Extra Low Voltage
+UIUser Interface
+USBUniversal Serial Bus
+WYSIWYGWhat You See Is What You Get
+Table 1-2: Abbreviations and Acronyms
+1-4Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Introduction
+1.6Chapters in the Manual
+This manual is divided into ten chapters. An introdshown in uction to the topics that each chapter covers is Table 1-3.
+Chapter No. Chapter Name Description
+1IntroductionContains the information about this manual, the relatedpublications, and writing styles used in this manual.
+2SafetyContains the safety and hazard information.
+3Main PartsDescribes the main parts of the printer.
+4StartupDescribes the basic startup operations of the printer.
+5CLARiTY Operating SystemContains the information about CLARiTY operating system.
+6Job EditorContains the information on how to edit and delete jobs.
+7MaintenanceContains the information on service and maintenance.
+8TroubleshootingContains the operator level diagnostic and troubleshooting procedures.
+Appendix ASpecificationsContains the printer specifications.
+Appendix BAvailabilityContains information about availability tools.
+Table 1-3: List of Chapters
+Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Section 2Safety
+This section contains the following information:
+ Introduction
+ Equipment Safety Guidelines
+ Electrical Safety Guidelines
+ Installation of the Printer
+ Print Ribbon Safety Guidelines
+ Other Important Guidelines
+WARNING
+PERSONAL INJURY. Read this section thoroughly before attempting to install, operate, service, or maintain this
+product otherwise, it may cause serious injury.
+2.1Introduction
+The policy of Videojet Technologies Inc. is to manufacture printing/coding systems and supplies that meet high standards of performance and reliability. Therefore, we employ strict quality
+control measures to eliminate the potential for defects and hazards in our products.
+The intended use of this printer is to print information directlyequipment for any other purpose may onto a product. Use of this lead to serious personal injury.
+The safety guidelines provided in this section are intended to edissues so that the operator can operate the printer safely.ucate the operator on all safety
+2.2Equipment Safety Guidelines
+This section contains important safety guidelines pertaining to the operation and handling of the equipment.
+WARNING
+PERSONAL INJURY. The equipment should be operated by an authorized personnel who can use the machine
+independently and without causing damage to the equipment operating personnel should be trained and infoor a personal injury. The rmed regularly about safety and environmental
+hazards.
+WARNING
+PERSONAL INJURY. Only trained service or maintenance personnel should perform the installation procedures.
+Qualified personnel who have successfully completed the trainiexperience with this printer, and are aware ofng courses, have sufficient the potential hazards to which they will be
+exposed.
+Videojet DataFlex 6530 Operator Manual - Rev AB2-1
+
+Safety
+2.2.1Printhead
+WARNING
+PERSONAL INJURY. Before attempting any maintenance or repair on any part of the product, disconnect the printer
+from the main power supply and isolate the printer from including other connected equipment.any external energy sources
+WARNING
+PERSONAL INJURY. Keep your hands and clothing clear of the printer while it is on.
+WARNING
+PERSONAL INJURY. Observe all safety and warning labels on the device for the safe operation of the system.
+CAUTION
+EQUIPMENT DAMAGE. Do not, under any circumstances, remove or obstruct any warning, caution, or instruction
+labels present on the equipment. If any part of these labelsthey must be immediately replaced. become damaged, worn or removed
+WARNING
+PERSONAL INJURY. Do not place your fingers under the printhead when the equipment is operating.
+CAUTION
+EQUIPMENT DAMAGE. The device must be switched off when the printheads are being installed, connected or
+disconnected.
+CAUTION
+EQUIPMENT DAMAGE. The printhead may become hot during normal operation. Observe necessary precautions
+before attempting to touch the printhead.
+2-2Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Safety
+2.3Electrical Safety Guidelines
+This section explains the safety guidelines related to electrical bonding, and grounding.power supply, electrical cables,
+2.3.1Comply with Electrical Codes
+WARNING
+PERSONAL INJURY. All electrical wiring and connections must comply with applicable local codes. Consult the
+appropriate regulatory agency for further information.
+2.3.2Electrical Power
+WARNING
+ELECTRICAL HAZARD.Voltages used to connect the printer to other equipment must not be greater than 50 V dc or
+peak ac.
+WARNING
+ELECTRICAL HAZARD.Always wear a properly grounded wrist ground strap when handling printed circuit boards.
+Failure to do so can result in damage to the board components due to static electricity.
+WARNING
+PERSONAL INJURY. To ensure that the connecting cables and pipes do not become a trip hazard or become
+entangled in any machinery, all the connecting cainstallation.bles and pipes must be secured safely during
+WARNING
+PERSONAL INJURY. There will be sections of the printer control board that will be permanently powered via the
+on-board lithium battery - therefore it is essential that the board should never be placed onto, nor stored in or on any conductive surface (including conductive, plastic bags etc.) as this
+would flatten the battery and/or potentially result in battery overbe replaced by the operator.heating. The battery is not to
+WARNING
+PERSONAL INJURY. If the battery is replaced by an incorrect type, it may lead to an explosion. Always dispose off
+the used batteries according to the instructions and local regulations.
+Videojet DataFlex 6530 Operator Manual - Rev AB2-3
+
+Safety
+CAUTION
+PERSONAL INJURY. Do not unplug any connector on the equipment when the mains power is on (except USB and
+ethernet cables).
+2.4Installation of the Printer
+WARNING
+PERSONAL INJURY. The printer uses an operator control console. Ensure that this panel is mounted at an
+appropriate working height and orientation for ease of operation.
+WARNING
+PERSONAL INJURY.Do not place the printer in a hazardous location. Hazardous locations might create an
+explosion, leading to personal injury.
+Hazardous locations, as defined in the United States, are those areas that may contain hazardous materials in a quantity sufficient to create an explosion. These are defined in Article 500 of the
+National Electrical Code
+ ANSI/NFPA 701993.
+Outside United States, you must ensure compliequipment placement in poteance with all local regulations regarding the ntially hazardous locations.
+WARNING
+PERSONAL INJURY.Place the printer so that no access to the print mechanism is possible after installation.
+WARNING
+PERSONAL INJURY.Do not remove the side covers from the printer after installation.
+Using Printer Accessories
+To maintain regulatory approval for the printer, use only attaching any device to the equipment.Videojet approved accessories when
+2-4Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Safety
+2.5Print Ribbon Safety Guidelines
+2.6Other Important Guidelines
+CAUTION
+EQUIPMENT DAMAGE. Print ribbons should be stored at a temperature range of 5 ºC to 40 ºC, and at a non-condensing
+humidity range of 20% to 85%.
+CAUTION
+EQUIPMENT DAMAGE. The use of incompatible ribbon can seriously damage your printer and such damage will not
+be covered by your printer warranty. Use only the ribbon approved by your dealer.
+2.6.1Cleaning Safety Guidelines
+2.6.2Warning Labels
+CAUTION
+EQUIPMENT DAMAGE. Do not apply excessive force to the printhead while cleaning, as this can cause damage and can
+void the warranty.
+CAUTION
+EQUIPMENT DAMAGE. Use approved dealer cleaning supplies for cleaning. Do not use high pressure air or cotton.
+CAUTION
+EQUIPMENT DAMAGE. The use of an incompatible cleaning kit can seriously damage your printer. Such damage will
+not be covered by your printer warranty. Use only cleaning kits approved by your supplier.
+Label Description
+Equipment not intended for use at altitude exceeding 2000m.
+Equipment not intended for use in tropical climate regions.
+Table 2-1: Warning Labels
+Videojet DataFlex 6530 Operator Manual - Rev AB2-5
+
+Section 3Main Parts
+This chapter contains information about the integral parts and accessories of the printer.
+3.1Equipment Description
+The main parts of the Videojet DataFlex 6530 printer are described as follows:
+Printer
+CLARiTY Controller Display
+1. Interconnecting Cable2. Printer3. CLARiTY Controller Display and Power Supply Unit (PSU)
+Figure 3-1: Videojet DataFlex 6530 Printer and CLARiTY Controller Display
+3.1.1Printer
+The Videojet DataFlex 6530 printer uses high-resolution thermal transfer technology with a unique electronic ribbon drive and printhead control, eliminating the need for compressed air.
+The printer has minimal wear parts reducing the maintenance requirements and a quick release printhead design improves production uptime.
+It can print in either of the following modes:
+Intermittent Mode (i.e., while the substrate is stationary)
+Continuous Mode (i.e., while the substrate is moving)
+The product is available in either left-handed or right-handedconfigurations of the packaging machine. versions to suit different
+The product is available in the following print width models:
+53mm
+107mm
+Note: iAssure is not available on the 107mm version.
+Videojet DataFlex 6530 Operator Manual - Rev AB3-1
+
+Main Parts
+3.1.2CLARiTY Controller Display and Power Supply Unit (PSU)
+The controller consists of a removable touch screen display and power supply unit.
+The connections to the controller is as shown in the (item 1) connected from the prinFigure 3-2. There is an interconnecting cable ter to the display. Two USB ports (item 2) are provided to
+upload and backup printer data and settings. The power switch (item the power supply to the CLARiTY Controller Display.7) is used to turn on or off
+Note: The PSU assemblies for 53mm and 107 mm versions are identified by version, the power supply requirements atheir rating label. For 53mm re 100 - 240 VAC, 50/60 Hz, 2.6A - 1.1A.
+
+For 107mm version, the power supply requirements are 100 - 240 VAC, 50/60 Hz, 4.14A - 1.73A.
+1 2
+754 3
+8
+6
+1. Interconnecting Cable2. USB Port (x2)5. Mains Power Supply6. Fuse 5 Amp (x2)
+3. Ethernet Port (x3)4. 15 Pin I/O 7. Power Switch8. RS232
+Figure 3-2: Display Connections
+CAUTION
+EQUIPMENT DAMAGE. Ensure that the interconnecting cables are fitted correctly before power on.
+3-2 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Main Parts
+1 2
+5
+3
+1. Touchscreen Display2. Power Supply Unit (PSU)3. PSU-GUI Connector
+Figure 3-3: Display and Power Supply Unit
+Note: The touch screen display and the PSU can be connected remotely using the supplied cable.
+Videojet DataFlex 6530 Operator Manual - Rev AB3-3
+
+Section 4Startup
+Introduction
+This chapter contains the following topics:
+Switching the Power ON
+Setting the Screen Orientation
+Starting the Printer
+Stopping the Printer
+Understanding Printhead LEDs
+Setting the Time and Date
+Setting the Language and Region Display
+Loading the Ribbon
+Printing a Test Image
+4.1Switching the Power ON
+Turn the power switch on the CLARiTY controller to the I (On) position (Figure 4-1).
+Note: Ensure that all cables are connected prior to turning on the printer.
+Once power is switched ON, the CLARiTY controthe printer is illuminated. This will take apprller will boot-up and the blue LED (power) on oximately 60 seconds, during which the startup
+screen appears.
+On successful boot-up, the Home screen appears.
+An initialization process of 15 seconds begins, during which the printer calibrates the ribbon drive. The status bar flashes the words STARTING UP and the red LED flashes on and off. When
+the process is complete, the Home screen changes, as follows:
+The status panel changes from STARTING UP to OFFLINE.
+The Consumables area displays the percentage of ribbon remaining.
+In the Control Frame, the Start and Stop buttons are enabled.
+Power Switch
+Figure 4-1: Printer Power Switch
+Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Startup
+Figure 4-2 displays the CLARiTY Home screen in the OFFLINE state .
+Figure 4-2: CLARiTY Home Screen in the Offline State
+4.2Setting the Screen Orientation
+Depending on the position in which the CLARiTY corotate the screen image by 180 degrees.ntroller is mounted, it may be necessary to
+To change the screen orientation, proceed as follows:
+1.Navigate to Tools > Setup > Control as shown in Figure 4-3.
+Figure 4-3: Screen Orientation
+4-2Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Startup
+2.Touch Set Screen Orientation. SetScreen Orientation screen is displayed (see Figure 4-4).
+3.Select 0 or 180 degrees depending on the requirement and touch
+.
+4.Touch to return to the Home Screen.
+Figure 4-4: Screen Orientation
+Videojet DataFlex 6530 Operator Manual - Rev AB4-3
+
+Startup
+4.3Starting the Printer
+When the printer is switched on, the printer state changes from the SHUTDOWN state to the STARTING UP state and then to the OFFLINE state. Under this condition, all the external
+electrical inputs are ignored and the print sensor signals will not trigger a to check if the line and the printer are ready for print. This enables you production, before you switch the printer into the
+RUNNING state to start printing.
+To switch the printer to the RUNNING state, touch .
+Figure 4-5 displays the CLARiTY Home Screen with the printer in the RUNNING state.
+Note: If the printer has a fault or a warning, RUNNING will be replaceFAULT is displayed, you must fix the pd with FAULT or WARNING. If roblem before trying to print. Refer "Clearing a Fault
+Message or Warning" on page 8-20 for further information.
+Figure 4-5: CLARiTY Home Screen in the Running State
+4.4Stopping the Printer
+To stop the printer from printing, touch . The printer returns to the OFFLINE state.
+4-4Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Startup
+4.5Understanding Printhead LEDs
+Table 4-1 lists the printhead LEDs that indicate the status of the printer.
+Note: The red LED also flashes when the printer is being powered on and the printer is initializing.
+Color On Flashing Off
+RedPrinter OfflinePrinter in fault
+AmberWarningPrinter is printing with warning
+GreenPrinter OnlinePrinter is printing
+BluePower OnNo power to printer
+Table 4-1: LED Indicators
+4.6Setting the Time and Date
+To set the time and date in the CLARiTY Controller, proceed as follows:
+1.Navigate to Tools > Setup > Control > Date and Time (see Figure 4-6).
+2.Touch Date to set the Date, and the calendar page will appear.
+3.Select the current month and year using the + and  keys.
+4.Touch today's date to select it.
+5.Touch to save the settings.
+6.Touch Time to set the time. The time setup screen is displayed.
+7.Use the + and  keys to give a value for each of the settings [Hours, Seconds].Minutes and (optionally)
+8.Touch to save the settings.
+9.Touch to return to the Home Screen.
+Figure 4-6: CLARiTY Controller Date and Time
+Videojet DataFlex 6530 Operator Manual - Rev AB4-5
+
+Startup
+4.7Setting the Language and Region Display
+To set the language displayed by CLARiTY Controller, proceed as follows:
+1.Navigate to Tools > Setup > Control > Internationalisation.displayed (see The current language and region is Figure 4-7).
+2.Touch Region/Country. A list of available regions is displayed.
+3.Select the required region from the list (all the currently available regions will be listed) and
+touch .
+4.Touch Language. A list of available languages is displayed.
+5.Select the required language from the list (all the currently available languages will be listed)
+and touch .
+6.Touch to return to the Home Screen.
+The date format displayed in the Home Screen changes according to the region selected.
+Figure 4-7: Language and Region
+4-6Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Startup
+4.8Loading the Ribbon
+Loading the ribbon involves removing the printer cassette and loading the ribbon roll on the printer cassette.
+4.8.1Removing the Cassette
+To remove the cassette, proceed as follows:
+1.Ensure that the printer is in the OFFLINE state (Refer Figure 4-2 on page 4-2).
+2.Press the circular black release button on the front of the printer, as shown in button clicks as the cassette unlocks from the printer body.Figure 4-8. The
+At this point, CLARiTY displays the Cassette Open fault (Figure 4-9).
+Figure 4-8: Cassette Unlocking
+Figure 4-9: Cassette Open Fault
+Videojet DataFlex 6530 Operator Manual - Rev AB4-7
+
+Startup
+3.Hold the recessed handles and extract the cassette away from the printer body, as shown in Figure 4-10.
+Figure 4-10: Cassette Removal
+4.8.2Inserting a New Ribbon
+CAUTION
+EQUIPMENT DAMAGE. The use of incompatible ribbon can seriously damage your printer and such damage will not
+be covered by your printer warranty. Use only the ribbon that is approved by your supplier.
+To insert a new ribbon, proceed as follows:
+1.Put the cassette down on a flat surface with the ribbon spoolrollers towards you, as shown in s facing upwards and the ribbon Figure 4-11.
+2.Open a new shrink-wrapped roll of ribbon, and unwind about 12 inches of ribbon (30 cm).
+1
+2
+1. Ribbon Spool (x2)2. Ribbon Roller (x2)
+Figure 4-11: Cassette Removal
+4-8Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Startup
+The spool holders on the cassette have different colored discs:
+ The black disc is for the new roll of ribbon.
+ The silver disk is for the empty roll.
+When the printer is running, the new ribbon unwinds from the black holder, and winds onto the silver holder.
+3.Slide the full spool onto the holder that has the black disc. The roll shthat the ribbon unwinds in the direction as shown in ould be located such Figure 4-12.
+Note: Ensure that the spool is pushed completely down onto the holder.
+4.Route the ribbon so that it:
+ unspools from the outside of the full roll
+ goes around the outside of the white roller that is nearest to the full roll
+ runs along the bottom of the cassette
+ goes around the outside of the second white roller
+ passes around the outside of the empty spool
+5.Slide the empty spool completely down onto the holder that has the silver disc.
+Figure 4-12: Ribbon Spool Installation
+Videojet DataFlex 6530 Operator Manual - Rev AB4-9
+
+Startup
+6.Turn the empty spool by hand to take up any excess ribbon. Stop tuwhen the full spool starts to rotate (rning the empty spool Figure 4-13).
+Note: If the supplied ribbon has a transparent section or printed leader at the start, rotate the empty spool to take up all the transparent ribbon.
+Note: Ensure the following:
+ The ribbon runs in between the printhead and the peel roller
+ The ribbon is not twisted or caught
+ The ribbon has not become loose while replacing the cassette
+Figure 4-13: Ribbon Spool Routing
+4-10Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Startup
+4.8.3Cassette Mandrel Setup
+The configuration of the mandrel leaf springs on the cassette mandrel is dependent on the ribbon width. See Figure 4-14 and Figure 4-15 for the recommended orientation of the leaf springs
+depending on the ribbon width being used.
+55-75mm80-110mm
+Figure 4-14: Cassette Mandrel Setup (107mm)
+20-30mm30-55mm
+Figure 4-15: Cassette Mandrel Setup (53mm)
+Videojet DataFlex 6530 Operator Manual - Rev AB4-11
+
+Startup
+4.8.4Removing a Used Ribbon
+To remove the used ribbon, proceed as follows:
+1.Pull the two ribbon spools (one full of used ribbon) from the cassetteFigure 4-16. The discs that are situated under each sp firmly, as shown in ool can be used to lever the spool off the
+cassette.
+2.Discard the used ribbon and spools.
+Sometimes you might need to remove a ribboribbon of a different width for a job). When you put a partly used ribbon reel back into the n temporarily (perhaps because you need a
+printer, ensure that:
+ You push the unused reel onto the black disc holder.
+ You push the partly used reel onto the silver disc holder.
+Figure 4-16: Ribbon Spools Removal
+4-12Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Startup
+4.8.5Reinstalling the Cassette
+To reinstall the cassette, proceed as follows:
+1.Hold the cassette above the printer body. Align ththe baseplate and align the two locating rods (e guide pin on the cassette into the hole in Figure 4-17) that protrude from the printer
+body into the holes at the ends of the two ribbon rollers.
+2.Push the cassette onto the printer body and press until it locks into place.
+The Cassette Open fault message clears automatically, anstate.d the status changes to OFFLINE
+1
+2
+1. Ribbon Roller2. Locating Rod
+Figure 4-17: Locating Rod Alignment
+4.8.6Using Ribbons of Different Widths and, Colors
+Different widths of ribbon can be used in the 53mm and 107mm variants of the printhead:
+The maximum ribbon width setting for the 107mm printer is 110mm. The minimum ribbon width for the 107mm printer is 55mm.
+The maximum ribbon width setting for ribbon width for the 53mm printer is 20mm.the 53mm printer is 55mm. The minimum
+CAUTION
+RIBBON SETTING. Failure to set the ribbon width correctly can cause a Ribbon break message to be displayed
+(even though the ribbon is intact). It can also cause the ribbon to wind tribbon spool. This can make it difficultoo tightly onto the used to remove the spool of used ribbon.
+Videojet DataFlex 6530 Operator Manual - Rev AB4-13
+
+Startup
+When a ribbon of different width is to be inserted, the new values CLARiTY. To do this, proceed as follows:should be entered in
+1.Navigate to Tools > Setup > Consumables > Ribbon Width (see Figure 4-18).
+2.Enter a new value using the keypad as shown in the Figure 4-19.
+3.Touch to save the settings.
+Figure 4-18: Printer Ribbon Parameters
+Figure 4-19: Printer Ribbon Width
+4-14Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Startup
+Different colors of ribbon have different thickness. Toselect the correct color of the ribbo ensure accurate end of reel warnings, n being used by the printer. To select ribbon color, proceed as
+follows:
+1.Navigate to Tools > Setup > Consumables > Ribbon Colour as shown in Figure 4-18 on page 4-14.
+2.Select the correct colour from the list as shown in Figure 4-20.
+3.Touch to save the settings.
+4.Touch to return to the Home Screen.
+Figure 4-20: Printer Ribbon Colour
+Videojet DataFlex 6530 Operator Manual - Rev AB4-15
+
+Startup
+4.8.7Checking the Printer Ribbon Supply
+The Consumables area of the Home Screen (Figure 4-21amount of unused ribbon remaining in the cassette.) displays a ribbon meter, showing the
+The meter displays three different colors to help check the ribbon level at a glance.
+GREEN = Adequate ribbon availability
+YELLOW = Approximately 50 m (164 ft) of ribbon remaining
+RED = Approximately 20 m (66 ft) of ribbon remaining
+Figure 4-21: Printer Ribbon Supply
+4-16Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Startup
+4.9Printing a Test Image
+Typically, the printer is used on a packaging machine where the prinProgrammable Logic Controller (PLC).t is triggered by a sensor or a
+A test image can be printed before running the acceptable quality. The Test Print button (printer to check if the printed image is of Figure 4-22), will appear greyed out if this feature has
+been disabled by the installation engineer. Also, the printer must the Test Print button to be available.be set to the RUNNING state for
+To perform a test print, proceed as follows:
+1.If the printer is in the OFFLINE state, press to put the printer in the RUNNING state.
+2.Ensure that the packaging film is placed under the application, otherwise ensure printhead, if the printer is in an intermittent that the packaging film is travelling past the printhead.
+3.Touch in the CLARiTY's control frame (print.Figure 4-22). The printer performs the test
+4.Examine the test print to check if the image has been printed correctly.
+Test PrintButton
+Figure 4-22: Test Print Button
+Videojet DataFlex 6530 Operator Manual - Rev AB4-17
+
+Section 5CLARiTY Operating System
+This chapter contains the following topics:
+Getting started with the CLARiTY
+Using the Home Screen
+Using the Tools Screen
+Password Protection
+Master/Slave Printers
+5.1Getting started with the CLARiTY
+CLARiTY is an icon-based operator control systtechnical aspects of the printer setup and coem. It has an easy-to-use touch screen. All ntrol are accessed through the Tools button.
+Figure 5-1 shows the Home screen of the CLARiTY operator control system.
+Note: If password protection is enabled, the options available may be restricted dependent on user level. Refer to Password Protection on page 5-40 for more information.
+5.2Using the Home Screen
+1. Status Bar2. Tools Button 6. Print Position7. Print Button
+3. Current Job Details Bar4. Consumables 8. System Control Buttons9. Home Button
+5. Performance Information10. Job Select Button
+Figure 5-1: CLARiTY Home Screen
+Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+WARNING
+PERSONAL INJURY. The printer starts printing if you touch the status bar when the printer is in OFFLINE mode.
+Make sure that you do not touch the status bar if the printer is not required to run.
+The Home screen allows the user to access the below options:
+Buttons Description
+Returns to the Home screen.
+Opens the Tools screen.
+Displays the information about the current job and when selected, opens the current job
+details screen.
+Shows the list of jobs available, including the current job. Once a job is selected, the job can
+be loaded for printing. If the fields are user enabled, the user can confirm before printing.
+Changes the print state from SHUTDOWN to OFFLINE and vice-versa.
+Starts the print.
+Stops the print.
+Prints a test image.Note: This option is only present if option is
+enabled on the printer using CLARiTY
+
+Configuration Manager.
+Adjusts the print position in the horizontal and vertical direction.
+Table 5-1: Home Screen
+5-2 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+The Home screen allows the user to access the below options:
+Buttons Description
+Displays the status of the printer.RUNNING:Printer is switched on and
+ready to print whentrigger is received. the proper print
+OFFLINE: Printer is switched on but not ready to print.
+SHUTDOWN: Power to the printhead is disabled and the printer is not ready to
+print.WARNING: Warnings are available that
+the Operator should be aware of, the printer is not prevented from operating.
+FAULT: Faults are available that the Operator should rectify, before the printer
+can start.
+Displays the Consumables screen showing ribbon information. For more information,
+refer Consumables on page 5-4.
+Displays the followininformation:g printer performance
+Throughput: Throughput of the printer in prints per minute since the current Job
+was loaded.Batch Count: Number of prints since the
+current Job was loaded.iAssurance (53mm version only):
+Percentage of goodSelecting this area opens the Performance prints detected.
+screen showing additional statistical information on the printer. For more 
+information, refer Performance page 5-6.Screen on
+Table 5-2: Home Screen
+Videojet DataFlex 6530 Operator Manual - Rev AB5-3
+
+CLARiTY Operating System
+5.2.1Consumables
+Touch the Consumables area on the Home screenthe ribbon information (percentage of ribbon remaining) as shown in . The Consumable screen opens and displays Figure 5-2.
+Figure 5-2: Consumables Screen
+5-4 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+Touch the ribbon information to view the ribbon options as shown in Figure 5-3.
+The Ribbon screen displays the following options as shown in Table 5-3.
+Figure 5-3: Ribbon Screen
+Option Description
+PercentageThe percentage of the ribbon available.
+Estimated Empty Time The estimated time by when the ribbojob and the production rate.n will empty based on the current
+Estimated Time RemainingThe estimated time remaining baproduction rate.sed on the current job and the 
+Last ChangedThe date and time when the ribbon was last changed.
+Table 5-3: Ribbon Options
+Videojet DataFlex 6530 Operator Manual - Rev AB5-5
+
+CLARiTY Operating System
+5.2.2Performance Screen
+Touch the Performance area on the Home screenFigure 5-4. The Performance screen opens as shown in .
+Note: iAssure is not available on the 107mm version.
+Note: Use the scroll bar to scroll up and down the screen.
+The Performance screen displays the following options as shown in Table 5-4.
+Figure 5-4: Performance Screen
+Option Description
+ThroughputThe throughput of the printer in prints per minute since the current job was loaded.
+Batch CountThe number of prints since the current Job was loaded.
+Total CountThe number of prints over the life of the printer.
+Batch BarcodeCounts The number of barcode prints since the current Jois available only when the barcode scanner is attached).b was loaded (this menu
+AvailabilityThe printer availability and operational availabiinformation, refer lity information. For more Availability on page B-1.
+iAssuranceThe % of good prints detected.
+iAssurance Bad Code CountThe current count of bad codes (for the current run).
+Table 5-4: Performance Option
+5-6 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+Option Description
+Table 5-4: Performance Option (continued)
+iAssurance Total Bad Code CountThe total number of bad codes detected.
+iAssurance Production Stop The number of times production has stopped.
+Ignored PrintSignals The number of ignored print signals.
+Short Term Speed The average speed over 5 minutes of operation.
+Short term Efficiency The efficiency of actual prints per minute over the nominated prints per minute which is given as a inputfor a period of 5 minutes.
+Long TermSpeedThe average speed over 10 minutes of operation.
+Long term EfficiencyThe efficiency of actual prints per minute over the nominated prints per minute which is given as a input for a period of 10 minutes.
+Trend SpeedThe trend speed value.
+Trend EfficiencyThe trend efficiency value.
+Nominal SpeedEnter the required packs per minute speed.
+5.2.2.1iAssurance Screen (53mm Version Only)
+Videojet DataFlex 6530 iAssure technology can print quality spotchecks in real timereduce the waste and rework by conducting and detect recurring print defects.
+The printer has a built-in sensor which creates an image of the printed ribbon as the ribbon moves forward. The printer compares the captured image to the intended image and evaluates
+any area of mismatch to determine the pass/fail of the code. The printer triggers a fault when a pre-set number of consecutive codes fail that will either stop the line or send the product into a
+reject or inspection area (if the line is configured with one).
+Using the iAssure screen
+1.Touch the Performance area on the Home screen(Figure 5-4 on page 5-6. The Performance screen). Scroll down to view the iAssure metric. Refer opens as shown in Table 5-4 on page 5-6
+for more information on the iAssure metrics.
+2. Navigate to Tools > Diagnostics > Printhead > iAssure > View Latest Image printed image captured. to view the last
+Videojet DataFlex 6530 Operator Manual - Rev AB5-7
+
+CLARiTY Operating System
+Common Print Quality Errors Detected by iAssure
+Table 5-5 describes common print quality errors samples and their causes.
+Sample Cause
+Overprint
+Ribbon Crease
+Worn Print Surface
+Table 5-5: Samples of Print Quality Errors
+5-8 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+5.3Using the Tools Screen
+Tools screen displays the tools available for the printer.
+Touch on the Home screen to access the Tools screen. The Tools screen opens 
+as shown in Figure 5-5.
+The Tools screen provides access to the following options as shown in Table 5-6.
+Figure 5-5: Tools Screen
+Option Description
+SetupOptions to view and modify the printer setup parameters. For more information on Setup screen refer Service Manual.
+DiagnosticsInformation on the current values of key paraas well as that support the printer operation and can assist in meters for the printer setup 
+troubleshooting issues. Refer to Using the Diagnostics Screen on page 5-10.
+DatabasesInformation on available databases, their capacity and the stored jobs. Refer to Using the Database Screen on page 5-36.
+HelpThe tutorial videos and documentation for specific tasks and basic troubleshooting. Refer to Using the Help Screen on page 5-38
+Table 5-6: Tools Option
+Videojet DataFlex 6530 Operator Manual - Rev AB5-9
+
+CLARiTY Operating System
+5.3.1Using the Diagnostics Screen
+Touch on the Tools screen to access the Diagnostics screen (Figure 5-6).
+The Diagnostics screen displays the following parameters:
+Figure 5-6: Diagnostics Screen
+Option Description
+PrintheadInformation on the status of printer components, the event log, printhead health graph and encoder profiles. Refer to Using the Printhead Screen
+on page 5-11.
+ConsumablesInformation on the ribbon supply and waste diameterprinting mode. Refer to , ribbon tension and Using the Consumables Screen on page 5-25.
+ControlInformation on system information, versions and communications configuration. Refer to Using the Control Screen on page 5-26
+OptionsThere are no options available at this time.
+Table 5-7: Diagnostics Screen Description
+5-10 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+5.3.1.1Using the Printhead Screen
+Touch on the Diagnostics screen to access the printhead parameters (Figure 5-7).
+Note: iAssure is not available on the 107mm version.
+The Printhead screen displays the following parameters:
+Figure 5-7: Printhead Diagnostics Screen
+Option Description
+InputsThe status of the three external inputs parameters and the internal input parameters. Refer to Using the Inputs Screen on page 5-12.
+OutputsThe status of a physical output on the printer. Refer to Screen on page 5-14Using the Outputs .
+GeneralThe general parameters like Printhead Mode, Printing Mode, High Throughput Mode etc. Refer to Using the General Screen on page 5-15.
+Printhead HealthThe printhead health log. Refer to Using the Printhead Health Screen on page 5-16.
+iAssureThe iAssure parameters. Refer to page 5-17Using the iAss. ure Screen on
+Event LogThe log of events responsible for the printer downtime. Refer to the Event Log Screen on page 5-18Using .
+TimingsThe count for various printer operations. Refer to Screen on page 5-19Using the Timings .
+Encoder ProfilesThe encoder profile. Refer to Using the Encoder Profiles Screen on page 5-20.
+Table 5-8: Printhead Screen Description
+Videojet DataFlex 6530 Operator Manual - Rev AB5-11
+
+CLARiTY Operating System
+Using the Inputs Screen
+Touch Inputs on the Printhead screen to access the input parameters (Figure 5-8).
+The Inputs screen provides access to the following parameters:
+Figure 5-8: Inputs Screen
+Option Description
+Input configurationDisplays the current configuration of each input.
+External Inputs 1, 2, 3The real-time status of each of the three inputs.
+Printhead PositionThe position of the printhead. The printhead home sensor detects
+whether the head is parked or not.
+Table 5-9: Inputs Screen Description
+5-12 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+Option Description
+Cassette OpenThe status of the cassette. The cassette home sensor detects whether 
+the cassette is open or closed.
+Printhead to Platten DistanceThe distance between the printhead and platten.
+Printhead Position SensorThe position of the printhead position sensor.
+Ribbon Waste Position SensorThe position of the ribbon waste position sensor.
+Optical Calibration SensorThe optical calibration sensor value.
+iAssure SensorThe iAssure sensor value.
+Motor VoltsThe voltage supply to the stepper motors.
+24 Volts SupplyThe health status of the voltage supply for the printers I/O.
+Printhead VoltsThe drive voltage of the printhead. This varies, depending on 
+the printhead resistance but should be in the range of 23V.
+Printhead TemperatureThe real-time reading of the thermistor on the thermal printhead.
+Controller PCB TemperatureThe real-time reading of the thermistor on the CLARiTY Controller PCB.
+Table 5-9: Inputs Screen Description (continued)
+Videojet DataFlex 6530 Operator Manual - Rev AB5-13
+
+CLARiTY Operating System
+Using the Outputs Screen
+Touch Outputs on the Printhead screen to access the output parameters (Figure 5-9).
+The Outputs screen provides access to the following parameters:
+Note: Touching the Toggle button allows the user to force the state of an output, Open/Closed or On/Off, which can be useful for diagnostic purposes.
+Figure 5-9: Outputs Screen
+Option Description
+Printhead PositionMoves the printhead from its parked to its ready to print position.
+Printhead In/OutMoves the printhead from its ready to print to printing position.
+External Relay and PNP OutputsThe status of the 2 configurable relay outputs and 2 configurable PNP 24V outputs. 
+Green LEDToggles the green LED at the front of the printer.
+Red LEDToggles the red LED at the front of the printer.
+Optical Calibration LEDsDisplays the output of the iOptical Calibration LEDs.
+iAssure LEDs (53mm version only)Displays the output of the iAssure LEDs.
+Table 5-10: Outputs Screen Description
+5-14 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+Using the General Screen
+Touch General on the Printhead screen to access the parameters (Figure 5-10).
+The General screen provides access to the following parameters:
+Figure 5-10: General Screen
+Option Description
+Printer ModeThe mode of the printer. The following options are available: Intermittent
+ Continuous
+Printer HandThe configuration of the printer. The following options are available:
+ Right Handed (RH)
+ Left Handed (LH)
+Printer WidthDisplays the print width of the printer: 53mm
+ 107mm
+Printing ModeThe printing mode. The following options are available: Thermal Transfer (that uses a ribbon)
+ Direct (that uses the printer without a ribbondirectly on to thermal sensitive labels). and printing
+High Throughput ModeHigh Throughput Mode is enabled or not.
+Print Test ImageOpens up a window to print a test image.
+Table 5-11: General Screen Description
+Videojet DataFlex 6530 Operator Manual - Rev AB5-15
+
+CLARiTY Operating System
+Using the Printhead Health Screen
+Touch Printhead Health on the Printhead screen to access th(Figure 5-11). e printhead health parameters
+The Printhead Health screen provides access to the following parameters:
+Figure 5-11: Printhead Health Screen
+Option Description
+ Health graphThe printhead health graph.
+Printhead IDThe printhead ID.
+Printhead ResistanceThe printhead resistance. The printhead resistance value matches the drive  
+electronics of the printer to the resistance characteristics of the printhead.
+Total Distance PrintedThe total distance printed in km.
+Manufacturers PasswordEnter the manufacturers password to enable higher level options.
+Table 5-12: Printhead Health Screen Description
+5-16 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+Using the iAssure Screen
+Note: iAssure is not available on the 107mm version.
+Touch iAssure on the Printhead screen to access the iAssure parameters (Figure 5-12).
+The iAssure screen provides access to the following parameters:
+Figure 5-12: iAssure Screen
+Option Description
+View Latest ImageThe last image captured by iAssure.Note: The last captured image is updated
+in real time for each print.
+iAssure Sensor StatusDisplays whether the iAssure sensor requires calibration or not.
+iAssure Consecutive Faults ModeDisplays the status offaults mode. the consecutive
+iAssure Shift And Reject ModeDisplays the status of the shift and reject mode.
+Manufacturers PasswordEnter the manufacturers password to enable higher level options.
+Table 5-13: iAssure Screen Description
+Videojet DataFlex 6530 Operator Manual - Rev AB5-17
+
+CLARiTY Operating System
+Using the Event Log Screen
+Touch Event Log on the Printhead screen to access the options (Figure 5-13).
+The Event Log screen provides access to the following options:
+Figure 5-13: Event Log Screen
+Option Description
+Hide FaultsShows/hides any fault events from the event log list.
+Hide WarningsShows/hides any warning events from the event log list.
+Hide StatusShows/hides any status events from the event log list.
+Export to USBExports the event log and associated parameter snapshots to USB stick. The UI will take the user through the steps required
+to download to USB.
+Table 5-14: Event Log Screen Description
+5-18 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+Using the Timings Screen
+Touch Timings on the Printhead screen to access the parameters (Figure 5-14).
+This diagnostic screen provides information about the last print or print job selection that was made. It is useful in high throughput applications to understand what the printer is trying to
+do, especially in continuous motion applications.
+The Timings screen displays the following parameters:
+Figure 5-14: Timings Screen
+Option Description
+Minimum Print Speed (mm/s)The actual minimum printing speed achieved during the previous printing cycle.
+Maximum Print Speed (mm/s)The actual maximum printing speed achieved during the last printing cycle.
+Cycle Time (ms)The total time completed from the end of the print registration delay to the end of the printing operation.
+Printing Time (ms)The actual time taken to print the image in the previous printing cycle.
+Job Selection TimeThe time taken in selecting the last job from the moment the image was confirmed, to being ready to print.
+Job Data Update TimeThe total time taken to update all the dynamic variables in the image (time, date, counters).
+Counter Update TimeThe time taken to update all the counter fields in the image.
+Time/Date Update TimeThe time taken to update all the time/date fields in the image.
+Table 5-15: Timings Screen Description
+Videojet DataFlex 6530 Operator Manual - Rev AB5-19
+
+CLARiTY Operating System
+Using the Encoder Profiles Screen
+Encoder profiling is designed for continuous motion applications.
+Encoder profiling allows the printer to capture encoder and plot the information onto a useful CLARiTY screen which also shows an 'on-line the behavior of the packaging film from the
+oscilloscope' of the machine inputs and outputs at the same timefor print performance by avoiding areas of the . The printer can be optimised host machine cycle that have excessive linear
+speeds or rapid changes in speed.
+Figure 5-15 shows a typical screen display of an encoder profile.
+The graph displayed on the CLARiTY Operator 'Maximum Print Speed', current 'RegistratioInterface takes into account, settings for n' settings and the image size printed.
+Using these values, the graph shows where the prwould occur within the int signal was received and where the print profile, as shown in Figure 5-15.
+This feature can be used to solve problems such as, drifting print regipackaging film travelling above stration caused by the the maximum print speed of the printer during the registration
+phase.
+Figure 5-15: Encoder Profile Graph
+5-20 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+To capture the Encoder profiling on the CLARiTY screen, proceed as follows:
+1.Touch Encoder Profiles on the Printhead screen(Figure 5-16 to access the Encode). r Profiles parameters
+2. To set up the options for the profile you wantfollowing options: to capture, configure the settings for the
+Figure 5-16: Encoder Profiles Screen
+Option Description
+Profiling StartsThe following options are available Automatically: Captures the
+profile automatically after touching the Capture Encoder
+Profile button.
+ On Print Signal: Captures a profile only after a print signal has been
+received.
+ On Print Underspeed: Captures a profile only if the film speed drops
+below the minimum limit of the printers specification.
+Table 5-16: Encoder Profile Screen Description
+Videojet DataFlex 6530 Operator Manual - Rev AB5-21
+
+CLARiTY Operating System
+Option Description
+Profile TypeThe following profile types are available:
+ Standard
+ Printer Performance
+ Inputs and Outputs
+Each profile typeinformation in slightly different presents the 
+graphical forms. Select the one which best suits the requirement.
+Profile X AxisSet the X axis of the chart to be either time or distance.
+Table 5-16: Encoder Profile Screen Description (continued)
+5-22 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+3. Once the options have been configured, start the capture procEncoder Profile button. The Capture ess by touching the Capture Encoder Profile screen appears (Figure 5-17).
+Note: Encoder profiles are not captured during the ribbon calibration sequence.
+4. Touch and Capturing Encoder Profile screen appears
+(Figure 5-18).
+Figure 5-17: Capture Encoder Profiles Screen
+Figure 5-18: Capturing Encoder Profiles Screen
+Videojet DataFlex 6530 Operator Manual - Rev AB5-23
+
+CLARiTY Operating System
+In addition, if CLARiTY Configuration Manageencoder profile may be uploaded to a PC for analysis.r is communicating with the printer, the
+To upload encoder profile to a PC, proceed as follows:
+1.Click on the new coder icon and navigate through devices and select Capture Encoder Profile from the list as shown in Figure 5-19.
+2. Click on Trigger button, the profile is capturedformat (csv). in a file which is in comma separated value
+3. To access this file, select Log Files folder from new coder as shown in Figure 5-20.
+This file can be loaded into spreadsheet programs such as Microsoft Excel and using a Chart Wizard, a graph similar to that shown on the screen of CLARiTY can be viewed.
+Figure 5-19: Encoder Profiles - CLARiTY Configuration Settings
+Figure 5-20: Encoder Profiles - Log Files
+5-24 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+5.3.1.2Using the Consumables Screen
+Touch on the Diagnostics screen to access the consumables parameters (Figure 5-21).
+The Consumables Diagnostics screen displays the following parameters:
+Figure 5-21: Consumables Diagnostics Screen
+Option Description
+Ribbon Supply DiameterThe measured diameter of the supply ribbon. The measured diameter of the supply ribbon can be compared to the actual
+ribbon diameters after calibration to determine the accurate functioning of the calibration system.
+Ribbon Waste DiameterThe measured diameter of the waste ribbon.The measured diameter can be compared to the actual ribbon diameters after
+calibration to determine the accurate functioning of the calibration system.
+Ribbon TensionThe last ribbon tension reading.
+Printing ModeThe printing mode. The following options are available: Thermal Transfer (that uses a ribbon)
+ Direct (that uses the printer without a ribbon and printing directly on to thermal sensitive labels).
+Table 5-17: Consumables Diagnostics Screen Description
+Videojet DataFlex 6530 Operator Manual - Rev AB5-25
+
+CLARiTY Operating System
+5.3.1.3Using the Control Screen
+Touch on the Diagnostics screen to access the control parameters (Figure 5-22).
+The Control Diagnostics screen provides access to the following parameters:
+Figure 5-22: Control Diagnostics Screen
+Option Description
+VersionsThe software information for the system and each of the sub-components. Refer to Using the Versions Screen on page 5-27.
+System Information The serial number and revision numbCPU speed and equipment refereer of Printed Circuit Board (PCB), nce information. Refer to Using the
+System Information Screen on page 5-28.
+Contact InformationThe contact information of the customer service contact. Refer to the Contact Information Screen on page 5-29Using .
+CommunicationsThe printer serial and network ports. Refer to tions Screen on page 5-30Using the Communica-.
+Production Audit LogThe log of machine changes and user changes. Refer to duction Audit Log Screen on page 5-34Using the Pro-.
+Image Update QueueThe list of all jobs in the printer queue. Refer to Queue Screen on page 5-35Using the Image Update .
+Table 5-18: Control Diagnostics Screen Description
+5-26 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+Using the Versions Screen
+Touch Versions on the Control screen to view the parameters (Figure 5-23).
+Note: If there is any inconsistency among the software components that are installed in the printer, the Software Part Number displays the message 'Incompatible Software Versions'. If this is seen, a
+CLARiTY software update must be performed, otherwise the printer may perform in an unpredictable manner.
+The Versions screen displays the software information for the system and each of the sub-components.
+Figure 5-23: Versions Screen
+Videojet DataFlex 6530 Operator Manual - Rev AB5-27
+
+CLARiTY Operating System
+Using the System Information Screen
+Touch System Information on the Control screen to view the parameters (Figure 5-24).
+The System Information displays the following parameters:
+Figure 5-24: System Information Screen
+Option Description
+PCB Serial NumberThe serial number of the PCB.
+PCB RevisionThe revision of the PCB.
+CPU SpeedThe speed of the CPU.
+Equipment ReferenceThe equipment reference information.
+Table 5-19: System Information Screen Description
+5-28 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+Using the Contact Information Screen
+Touch Contact Information on the Control screen to view the parameters (Figure 5-25).
+The Contact Information displays the following parameters:
+Figure 5-25: Contact Information Screen
+Option Description
+NameThe name of the customer service contact.
+Address Line 1,2,3The address of the customer service contact.
+Serial NumberThe printer serial number.
+Telephone NumberThe telephone of the customer service contact.
+EmailThe email of the customer service contact.
+Table 5-20: Contact Information Screen Description
+Videojet DataFlex 6530 Operator Manual - Rev AB5-29
+
+CLARiTY Operating System
+Using the Communications Screen
+Touch Communications on the Control screen to access the parameters (Figure 5-26).
+The Communications screen displays the following parameters:
+Figure 5-26: Communications Screen
+Option Description
+Communication Port 1The status of serial port, including the baud rate and usage. Refer Using the Communication Port 1 Screen on page 5-31.
+TCP/IPThe configuration and status of the printers network port. Refer Using the TCP/IP Screen on page 5-32
+Table 5-21: Communications Screen Description
+5-30 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+Using the Communication Port 1 Screen
+Touch Communication Port 1 on the Communications screen to access the parameters (Figure 5-27).
+The Communication Port 1 screen displays the following parameters:
+Figure 5-27: Communication Port 1 Screen
+Option Description
+UsageThe software connected to the serial port.
+Baud RateThe Baud rate of the serial port.
+CLARiTY Comms on ComPort The status of the serial port.
+Table 5-22: Communications Port 1 Screen Description
+Videojet DataFlex 6530 Operator Manual - Rev AB5-31
+
+CLARiTY Operating System
+Using the TCP/IP Screen
+Touch TCP/IP on the Communications screen to access the parameters (Figure 5-28).
+The TCP/IP screen displays the following parameters:
+Figure 5-28: TCP/IP Screen
+Option Description
+IP AddressThe network IP address.
+Subnet MaskThe network subnet mask address.
+CLARiTY CommunicationsThe TCP/IP port numbers and CLARiTY network status. 
+Table 5-23: TCP/IP Screen Description
+5-32 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+Option Description
+Text CommunicationsThe TCP/IP port number assigned for text communications.
+ZPL EmulationThe TCP/IP port number assigned for ZPL emulation 
+commands.
+SATO EmulationThe communication protocol status, assigned TCP/IP port number, port
+response, network status for SATO emulation commands.
+Table 5-23: TCP/IP Screen Description (continued)
+Videojet DataFlex 6530 Operator Manual - Rev AB5-33
+
+CLARiTY Operating System
+Option Description
+Table 5-23: TCP/IP Screen Description (continued)
+Wolke CommunicationsThe TCP/IP port number, and network status for Wolke  
+communications.
+Using the Production Audit Log Screen
+Touch Production Audit Log on the Control screen to view the parameters (Figure 5-29).
+Note: This option is available if logging is enabled on the printer using CLARiTY Configuration Manager.
+Note: Logs can also be backed up to a USB memory stick if one is inserted into the printer.
+Figure 5-29: Production Audit Log Screen
+5-34 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+Using the Image Update Queue Screen
+Touch Image Update Queue on the Control screen to view the parameters (Figure 5-30).
+5.3.1.4Using the Options Screen
+There are no options available at this time, itCLARiTY. may be introduced in a future version of
+Figure 5-30: Image Update Queue Screen
+Videojet DataFlex 6530 Operator Manual - Rev AB5-35
+
+CLARiTY Operating System
+5.3.2Using the Database Screen
+Touch on the Tools screen to access the Databases screen (Figure 5-31).
+The Databases screen displays the following parameters:
+Figure 5-31: Databases Screen
+Option Description
+InternalThe job list stored in the printer. Selected jobs can be transferred to the
+USB memory stick (if available). The Edit button provides the option to
+delete jobs from the internal database.
+Table 5-24: Databases Screen Description
+5-36 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+Option Description
+CapacityThe estimated number of job files that could be stored on the printer, based
+on the size of existing job files, and the number of bytes of available job
+storage remaining.
+ExternalThe jobs stored on the inserted USB memory stick. Selected jobs can be
+transferred to the Internal database. Jobs can be deleted from the USB
+memory stick.Note: Option only available when USB
+memory stick is inserted in printer.
+Table 5-24: Databases Screen Description (continued)
+Videojet DataFlex 6530 Operator Manual - Rev AB5-37
+
+CLARiTY Operating System
+5.3.3Using the Help Screen
+Touch on the Tools screen to access the Help screen (Figure 5-32).
+The Help screen displays the following parameters:
+Figure 5-32: Help Screen
+Option Description
+Tutorial VideosThe tutorial videos for specific tasks and basiRefer Using the Tutorial Videos Screen on page 5-39c troubleshooting. .
+DocumentationThe documentation for specific tasks and basic troubleshooting
+Table 5-25: Help Screen Description
+5-38 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+5.3.3.1Using the Tutorial Videos Screen
+1.Touch Tutorial Videos on the Help screen to access the tutorial videos (the required video for specific Figure 5-33task and basic troubleshooting.). Select
+Figure 5-33: Tutorial Videos Screen
+Videojet DataFlex 6530 Operator Manual - Rev AB5-39
+
+CLARiTY Operating System
+5.4Password Protection
+Password protection on the user interface allows different protected accessoperational features. During installation, you levels for the various can set the standard or advanced password
+selection using CLARiTY Config Manager. Refe(53mm) (Part Number: 463041). Refer to Videojet DataFlex 6530 Service Manual (107mm), Part r to Videojet DataFlex 6530 Service Manual
+Number: 463063.
+Note: If you do not want to have password protection, you can select None option.
+Password control can be set up as per the user requirement. Whfunction that is password protected the user inen the user tries to access a terface prompts the user to enter the password.
+When the correct password is entered, that function or menu level remains active until logged becomes available. The password out by the user or timed out.
+Standard Passwords: For example, if the Diagnostics function is password protected, when the user accesses the Diagnostics Menu by navigating to Tools > Diagnostics,
+CLARiTY prompts the user to enter the password.
+Advanced Passwords: The user is prompted to seleenter the associated password.ct the required username and
+Figure 5-34: Password Screen
+5.5Master/Slave Printers
+CLARiTY Master/Slave mode allows up to four printers to be connas a group (the group can have only one master). ected together and to be used This section describes the use of Master/Slave
+mode at:
+Level 1-Group Job Select
+Level 2-Group Control
+Further information on the CLARiTY Master/Slave mode is given in the Service Manual.
+5-40 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+CLARiTY Operating System
+5.5.1Group Job Select
+Use Group Job Select to make sure that all the prYou can select jobs only on the master printer. inters in the group are printing the same job. The master printer tells the slaves which job to
+print.
+When you use Group Job Select, the master printer shows additional information, as described below:
+It displays a fault message for any slave printer that does not respond to the master.
+The Printhead screen (navigate to Tools > Diagnostics > Printheadprinters in the group. Touch the name of ) contains a list of the a printer to display information about the
+chosen printer, as given in Table 5-26.
+The Printhead screen (navigate to Tools > Setup > Printheadmore slaves from the group. ) allows to exclude one or This is useful if a slave develops a fault and you want
+the other printers to continue to print the job. When the fault has been cleared, the printer can be assigned to the group again.
+Printer Description
+MasterThe standard set of buttons enable you to view diagnostic information about the printer and information about the Master/Slave level that is
+being used
+SlaveThe information about the connection between the slave and the master
+Table 5-26: Master/Slave Diagnostics
+5.5.2Group Control
+This level of operation (level 2) allows the user to control the slave printers from the master. As with Group Job Select, you can select jobs only on the master printer. The master printer tells the
+slaves which job to print. The slaves can be assigned and excluded from the group, as described inGroup Job Select on page 5-41.
+You can use the master printer to change setup parameters for any printer in the group.
+The user interface on the master printer also displays the following additional information:
+The Consumables information for each printer in the group.
+The Batch Count and Total Count values values for each printer in the group are also available.for the group as a whole. Total Count
+The fault or warning messages for both the master and slave printers (the slaves will show only their own faults or warnings).
+The diagnostics information about each printer in the group.
+Videojet DataFlex 6530 Operator Manual - Rev AB5-41
+
+Section 6Job Editor
+This chapter contains the following topics:
+Creating and Adding New Jobs
+Viewing the Current Job or Image
+Selecting a New Job for Print
+User Editable Fields
+Changing the Position or Appearance of the Print
+Deleting a Job from the Jobs Database
+6.1Creating and Adding New Jobs
+Print jobs are created offline using the Videojsoftware that runs on a PC.etConnect Design or CLARiSOFT image design
+This is a What You See Is What You Get (WYSIWYG) package that enables you to design the look and feel of a print image and define the content of special fields such as complex sell by date
+calculations.
+When the job has been designed using VideojetConna unique job name onto the PC's disc. Jobs are trect Design or CLARiSOFT, it is saved with ansferred into the local database by connecting
+the PC to the printer using an RS232 or an Ethernet cable.
+Alternatively, the printer has the ability to download a 'Job' databaJobs can be created in Videojse directly frometConnect Design or CLARiSOF a USB device. T and saved onto a USB device,
+ready for downloading into the printer. This removes the need to take a laptop into the production area.
+For information on how to create images, refer the online help supplied with VideojetConnect Design or CLARiSOFT. For more information on how to transfer images to the printer, refer the
+service manual.
+Once the jobs are stored in the printers local database, the PC may be selected for printing as described in removed. Jobs are then Selecting a New Job for Print on page 6-4.
+The printer is supplied with two standard (default) job images:
+Default 4 Line Text
+Default Date Code
+You can change the details in these two job images to suit your own needs. Refer Current Job or Image on page 6-2Viewing the for instructions on how to change an image.
+Variable information such as batch codes or sell by dates can be entered by using the on-screen keypad described in User Editable Fields on page 6-6.
+Videojet DataFlex 6530 Operator Manual - Rev AB 6-1
+
+Job Editor
+6.2Viewing the Current Job or Image
+The name of the current job is displayed on the Home screen (production line, ensure that the current Figure 6-1). Before starting the job is the job that you want to print.
+Figure 6-1: CLARiTY Home Screen
+6-2 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Job Editor
+To view more details of the current job, proceed as follows:
+1.Touch the current job area on the Home screen. shown in This will display the details of the job, as Figure 6-2.
+2.Touch on the navigation bar, or to return to the Home screen.
+Figure 6-2: Current Job Details Display
+Videojet DataFlex 6530 Operator Manual - Rev AB 6-3
+
+Job Editor
+6.3Selecting a New Job for Print
+1.Touch on the Home screen. A list of available jobs is displayed (Figure 6-3).
+Note: On selection of a job, a preview of the job is displayed on the right hand side of the screen.
+Figure 6-3: Job List
+6-4 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Job Editor
+2.Touch the name of the required job in the list, as shown in Figure 6-4 and then
+touch .
+If the list is long, a scroll bar appears to the right of the list. Touch the up or down arrow buttons on the scroll bar to move through the list.
+Alternatively, you can type the name of the job using the keypad.
+If the job requires user input information (i.e, job variables such as, batch codes or expiration date), UI will prompt for the same. Refer Changing Variable Text and Date Information on
+page 6-6
+3.Touch to accept the information and view a
+preview of the image.
+4.Touch in the preview page to confirm the details.
+The new job becomes the current job.
+Note: User can select a new image or job while the printer is offline or while it is running. The new job replaces the current job only after user performs Step 4.
+5.Touch to return to the Home screen.
+6.To exit the job selection menu at any stage without making any changes, touch
+.
+Figure 6-4: Job Selection
+Videojet DataFlex 6530 Operator Manual - Rev AB 6-5
+
+Job Editor
+6.4User Editable Fields
+Some jobs contain job variables. Job variables arThere are three types of job variables:e parts of the job image that can be changed.
+Variable TEXT fields.For example, they are used for batch code s, product names, and other text labels.
+Variable DATE fields.For example, they are used for sell by dates.
+Variable COUNTER fields.Allows you to modify the starting value for a counter.
+If a selected job includes variable information, CLARiTY prompts required information. the user to enter or edit the
+Note: Each variable has a check box. The check box is unchecked initially. As user enter the variable data
+and touch , CLARiTY automatically checks the box. User can
+proceed to the next step only when all the boxes are checked.
+6.4.1Changing Variable Text and Date Information
+To edit the user field, proceed as follows:
+1.When a job is selected, the list of user editable fields in the job are displayed.
+2.Touch the required field from the list to select it (the first one in the list is automatically selected). The default data for that field appears in the preview window (Figure 6-8).
+3.If the information in the preview window is the information that you want to print, go to step 6. If you want to change the information, perform step 4.
+4.Touch to modify the information.
+Figure 6-5: Default Date Code Window
+6-6 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Job Editor
+5.For text fields, do the following tasks:
+a.Use the keypad to enter the data.The CLARiTY Operating system supports a number of standard languages for use with 
+'User Entered' text information.
+b.Touch the 'Language Selection Key', to acceFigure 6-6ss the available lang). uage selections (see
+c.The keypad functions the same way as thchanges to the information.e keypad on a computer. Make necessary
+Language Selection Key
+Figure 6-6: Default Keypad
+Videojet DataFlex 6530 Operator Manual - Rev AB 6-7
+
+Job Editor
+For date fields, do the following tasks:
+d.Touch the data window to display the Calendar page (see Figure 6-7).
+e.Touch or to change the month and year.
+f.Touch the date on the calendar to choose the date of the month, and touch . 
+Note: Any dates that are not available for selection because of pre-defined rules that may have been set in CLARiSOFT are dimmed.
+6.Touch when you are satisfied data window is correct. The userthat the information in the interface checks the check box. If there are only two user
+editable fields in the job, the user interface automatically displays the second field. If there are three or more fields, it displays the list of user editable fields, so that you can select one.
+When you touch at the final field for this job (and all the
+check boxes are checked) the user interface shows you the preview of the image.
+7.At the preview, perform one of the following:
+If you are satisfied with the image and you want to run the new job, touch . Products will be printed with the new image until
+you make further changes or select a new job.
+If you are not ready to print the job, you can leave this screen as it is. You can touch at a later stage, to select the job at that time.
+Figure 6-7: Calendar Page
+6-8 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Job Editor
+If you want to step back through the job select screens to make alterations to the variable data, touch .
+To cancel the job selection altogether, touch .
+6.4.2Touch To Edit
+To update and change user fields quickly and easily in a printing To Edit feature.job, the user can use the Touch
+Note: Touch to Edit feature is turned off by default and needs to be acManager.tivated in Clarity Configuration
+1.Select the current job details bar to display the job preview.
+2.Touch to view the user editable fields.
+Figure 6-8: Default Date Code Window
+Videojet DataFlex 6530 Operator Manual - Rev AB 6-9
+
+Job Editor
+3.The job opens, with the user editable fields highlighted.
+Note: Only jobs that have user editable fields can be edited using Toucup in CLARiSOFT during message creation.h to Edit feature. These are set
+4.To edit a user field, touch the user field.
+5.The appropriate user field editor, based on the user field type, is displayed for the update.
+Update the user field as required and touch .
+6.If there are additional user fields, repeat step 4 and step 5 for each field.
+7.Touch after editing all the required user fields. The job will
+be updated in the printer and displayed in the current job details bar following the next print.
+6.5Changing the Position or Appearance of the Print
+The following features can be changed and applied image:to modify the quality or position of the print
+Print position
+Print orientation
+Darkness of the print image
+Print delay (intermittent mode applications only)
+Print speed (intermittent mode applications only)
+Printhead print position (continuous mode applications only)
+Interleaved printing
+The print settings can be viewed and changed through the printheato Tools > Setup > Printheadd setup screen by navigating .
+Figure 6-9 shows the printhead setup screen for printersintermittent motion packaging ma that have been installed to work on an chine (prints only when the target material is stationary).
+Figure 6-9: Printhead Setup Screen for Intermittent Motion Applications
+6-10 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Job Editor
+Figure 6-10 shows the printhead setup screen for printerscontinuous motion packaging machine (prints while the target material is moving). that have been installed to work on a
+Figure 6-10: Printhead Setup Screen for Continuous Motion Applications
+Videojet DataFlex 6530 Operator Manual - Rev AB 6-11
+
+Job Editor
+6.5.1Changing the Print Position
+If the image does not print in the correct position on the packaging film, you can change the position by changing the Horizontal or Vertical Registration. This allows you to move the image
+inside the printing area window of the machine and to make small adjustments to the print location without moving the printer on the bracket. If the image is moved outside the print
+window or the available ribbon width, part of the image will not be printed.
+The Vertical Registration determines the position across the width of the packaging film or printhead.
+The Horizontal Registration determinespackaging film. the position along the length of the
+To change the print position, proceed as follows:
+1.Navigate to Tools > Setup > Printhead. The Printhead screen is displayed (6-10). Figure 6-9 on page
+2.Touch either Horizontal Registration or Vertical Registration on the to open the page for editprinthead setup screen ing the required settings.
+3.
+Figure 6-11: Vertical Registration
+Touch or to make small adjustments in the parameter settings.
+Alternatively, do one of the following to make changes in the settings:
+Type a new value using the keypad.
+Touch the Min, Max, or Default buttons to select the minimum, maximum, or default (standard) values.
+4.Touch to save the settings.
+5.Touch to return to the Home screen.
+Note: The same adjustments can be made via on the Home screen.
+6-12 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Job Editor
+6.5.2Changing the Print Darkness
+If the print darkness is too low, it causes the printed image to appear faded.
+If the print darkness is set too high, the edges of the printed image appears blurred. This will also overdrive the printhead and shorten its lifetime.
+Choose the lowest value of darkness that achieves a satisfactory quality print.
+To set the print darkness, proceed as follows:
+1.Navigate to Tools > Setup > Printhead. The Printhead scre6-10).en is displayed (Figure 6-9 on page
+2.Touch Print Darkness.
+3.
+Touch or to make small adjustments in the parameter settings.
+Alternatively, do one of the following to make changes in the settings:
+Type a new number using the keypad.
+Touch on the Min, Max, or Default buttons to select the minimum, maximum, or default (standard) values.
+4.Touch to save the settings.
+5.Touch to return to the Home screen.
+6.5.3Setting the Print Delay
+Note: This feature can be applied only on intermittent mode applications.
+The print delay is the time interval between the printer receiving a print signal and starting a print. It can be increased to ensure that the target material has come to a complete stop before the
+printing starts. If printing occurs while the target material is still moving, the resulting image may appear to be stretched or squashed. To enable maximum throughput, the print delay
+should be set to the shortest time that produces consistent prints.
+To change the print delay, proceed as follows:
+1.Navigate to Tools > Setup > Printhead. The Printhead scre6-10).en is displayed (Figure 6-9 on page
+2.Select the Print Delay parameter to open the print delay parameters setup.
+3.Enter a new value using the keypad.
+4.Touch to save the parameter settings.
+5.Touch to return to the Home screen.
+Videojet DataFlex 6530 Operator Manual - Rev AB 6-13
+
+Job Editor
+6.5.4Setting the Print Speed
+Note: This feature can be applied only on intermittent mode applications.
+The thermal transfer ribbon used by the printer adheres more readily to some types of packaging materials than others. The print speed can be reduced to improve the bonding and print quality,
+and increased to achieve greater throughput inoverall print cycle time. terms of packs per minute, by reducing the
+To change the print speed, proceed as follows:
+1.Navigate to Tools > Setup > Printhead. The Printhead screen is displayed (6-10). Figure 6-9 on page
+2.Touch Print Speed. The Print Speed screen is displayed.
+3.Enter a new value using the keypad.
+4.Touch to return to the Home screen.
+6.5.5Setting the Printhead Position
+Note: This feature can be applied only on continuous mode applications.
+When printing continuously, the printhead will press the target maas shown in Figure 6-12terial down against the roller, .
+You can change the angle of the printhead against position. This angle affects the prthe target material, by changing the printhead int quality. If the angle is not suitable, the resulting print may
+appear faded.
+To find a suitable printhead position, proceed as follows:
+1.Navigate to Tools > Setup > Printhead. The Printhead screen is displayed (6-10). Figure 6-9 on page
+2.Touch Print Position.
+3.Enter a new value using the keypad.
+Note: You should change the print position parameters in steps of 1 mm. The print position parameter is in 0.01 mm units, so a change of 100 units will move the printhead by 1 mm.
+1
+4
+2
+3
+1. Printhead2. Target Material3. Roller4. Printhead Position Adjustment
+Figure 6-12: Printhead Print Position
+6-14 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Job Editor
+Examine the sample prints from each position until you find the optimum print quality at the required print speed.
+4.Touch to return to the Home screen.
+6.5.6Setting Interleaved Printing
+This feature allows you to select a lower draft quality print mode which halves the ribbon consumption of the machine.
+To set to interleaved printing mode, proceed as follows:
+1.Navigate to Tools > Setup > Printhead. The Printhead scre6-10).en is displayed (Figure 6-9 on page
+2.Touch Ribbon Saving Mode and select Interleaved Images. Select to set this feature.
+3.Touch to return to the Home screen.
+6.6Deleting a Job from the Jobs Database
+To remove jobs that are no longer required, proceed as follows:
+1.Navigate to Tools > Database.
+2.Select the required database (internal or external) and touch .
+3.The internal job list screen is displayed (Figure 6-13available print jobs along with). This screen contains a list of all the details of the space available for the storage of new jobs.
+4.Touch the name of the job that you want to remove from the list of jobs. The job image appears in the preview window. Ensure that only the selected job(s) are to be deleted.
+5.Touch to delete the job.
+Figure 6-13: Database Delete Window
+Videojet DataFlex 6530 Operator Manual - Rev AB 6-15
+
+Job Editor
+6.Confirm the job to be removed (Figure 6-14).
+7.Touch to delete the job.
+8.RepeatStep 3 to Step 7 to remove other jobs that are not required.
+9.Touch to return to the Home screen.
+Figure 6-14: Confirmation Screen
+6-16 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Section 7Maintenance
+Introduction
+The maintenance of the printer includes the procedures can perform. This section describes the maintenance tasks that the operators of the printer are that an operator or a service technician
+allowed to perform. The other maintenance tasks personnel must perform are described in the service manual.that only the trained service technicians and
+This section provides the information on maintenance task that the operator can perform
+General Maintenance
+Printer Alignment
+7.1General Maintenance
+Videojet DataFlex 6530 requires minimum ongoing maintenance.
+Note: Harsh or dirty environments may require shorter intervals between preventive maintenance routines.
+Do the following inspections and perform the measures as per the scheduled frequency.
+CAUTION
+EQUIPMENT DAMAGE. The use of an incompatible cleaning kit can seriously damage your printer. Such damage will
+not be covered by your printer warranty. Use only cleaning kits approved by your dealer.
+Inspection Check Point Frequency Measures
+CLARiTY Display
+Check if the touch screen is clean As Required Clean the touch screen by wiping with a dry soft cloth or cotton pad.
+Check if the CLARiTY display surface is clean As Required Clean the CLARiTY display surface by wiping with a dry soft cloth or
+cotton pad.
+Printhead
+PrintheadWith every ribbon change (minimum Clean with pre-soaked swabs or wipes that are available from the
+frequency)Note: Harsh or dirty  approved cleaning kits. For more information on cleaning the
+environments may require shorter intervals printhead, refer to Printhead and Lightbox on Cleaning the
+between cleaning page 7-2.
+Lightbox (53mm version only) With every ribbon change (minimum Clean with pre-soaked swabs or wipes that are available from the
+frequency)Note: Harsh or dirty  approved cleaning kits. For more information on cleaning the
+environments may require shorter intervals printhead, refer to Printhead and Lightbox on Cleaning the
+between cleaning page 7-2.
+Table 7-1: General Maintenance Schedule
+Videojet DataFlex 6530 Operator Manual - Rev AB7-1
+
+Maintenance
+7.1.1Cleaning the Printhead and Lightbox
+Inspection Check Point Frequency Measures
+Table 7-1: General Maintenance Schedule (continued)
+Peel RollerAs required (for example, when ink has Clean with pre-soaked swabs or wipes that are available from the
+transferred to the roller)approved cleaning kits.
+Cable
+Check all screw-fastened plug-and-socket  As RequiredIf necessary, re-tighten them.
+connectors for tight fit.
+Note: Lightbox is available on the 53mm version only.
+To maintain maximum print quality and to ensure iAssure detection is working at its peak performance, you should clean the printhead and lightbox every time the ribbon is changed.
+Note: Harsh or dirty environments may require shorter intervals between cleaning.
+To clean the printhead and lightbox, proceed as follows:
+1.Touch the button on the CLARiTY display. The status bar changes to OFFLINE.
+2.Turn the power switch on the CLARiTY controller to the O (Off) position.
+Note: When the power is turned off, the printhead can be hinged away from the printer body to get better access to clean the print line.
+3.Remove the cassette and place it aside.
+Note: Do not attempt to clean the printhead with the cassette in place.
+CAUTION
+EQUIPMENT DAMAGE. The device must be switched off when the printheads are being installed, connected or
+disconnected.
+CAUTION
+EQUIPMENT DAMAGE. The printhead may become hot during normal operation. Observe necessary precautions
+before attempting to touch the printhead.
+7-2Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Maintenance
+4.Clean the printhead pixel line from top to bottom (the peel roller gently, using Figure 7-1), the white cassette rollers and the cleaning swabs or wipes provided with the printer. The
+cleaning kit will contain Videojet approved pre-soaked cleaning wipes or swabs.
+Note: Allow one minute for the excess fluid to evaporate. damage to the printhead by thermal shock.Failure to allow this interval can result in
+Figure 7-1: Printhead Cleaning
+CAUTION
+EQUIPMENT DAMAGE. Use Videojet approved cleaning kits to clean the printhead and lightbox. Do not use high
+pressure air or cotton.
+CAUTION
+EQUIPMENT DAMAGE. Do not touch the printhead with sharp objects.
+CAUTION
+EQUIPMENT DAMAGE. Do not apply excessive force to the printhead and lightbox while cleaning, as this can cause
+damage and can void the warranty.
+Videojet DataFlex 6530 Operator Manual - Rev AB7-3
+
+Maintenance
+5.Clean the lightbox cover (Figure 7-2) with back and forth movements using the cleaning swabs or wipes provided with the printer. The cleaning kit will contain Videojet approved
+pre-soaked cleaning wipes or swabs.
+Note: Allow one minute for the excess fluid to evaporate. Failure to allow this interval can result in damage to the lightbox by thermal shock.
+6.Replace the cassette and lock it in place.
+7.Turn the power switch on the CLARiTY controller to the I (On) position.
+The printhead cleaning is complete.
+Figure 7-2: Lightbox Cover Cleaning
+7-4Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Maintenance
+7.2Printer Alignment
+For 53mm version, perform the following procedures in order:
+Aligning the Lightbox (53mm Version)
+Aligning the Peel Roller to the Aligned Lightbox (53mm Version)
+Aligning the Printer to the Print Roller
+Aligning the Peel Roller to the Print Roller
+For 107mm version, perform the following procedures in order:
+Aligning the Peel Roller (107mm Version)
+Aligning the Printer to the Print Roller
+Aligning the Peel Roller to the Print Roller
+7.2.1Aligning the Lightbox (53mm Version)
+1.Place the printer alignment tool against the printer base plate.
+2.Ensure the edge of the lightbox is aligned with the prnot aligned, loosen the two screws, align inter alignment tool. If the lightbox is the lightbox and retighten the two screws.
+2
+1
+3
+1. Printer Alignment Tool2. Lightbox3. Screws (x 2)
+Figure 7-3: Aligning Lightbox
+7.2.2Aligning the Peel Roller to the Aligned Lightbox (53mm Version)
+1.After the lightbox is aligned, push the carriage forward against the lightbox.
+Videojet DataFlex 6530 Operator Manual - Rev AB7-5
+
+Maintenance
+2.Verify that the peel roller is parallel to the lightbox. If not, replace the peel roller or carriage assembly.
+2
+1
+1. Peel Roller2. Lightbox
+Figure 7-4: Aligning Peel Roller
+7.2.3Aligning the Peel Roller (107mm Version)
+1.Place the printer alignment tool against the printer base plate.
+2.Ensure the edge of the peel roller is parallel to the printer alignment tool. If not, replace the peel roller or carriage assembly.
+3
+2
+1
+1. Printer Base Plate2. Printer Alignment Tool3. Peel Roller
+Figure 7-5: Aligning Peel Roller
+7-6Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Maintenance
+7.2.4Aligning the Printer to the Print Roller
+1.After the peel roller is aligned, place the printer alignment tool over the peel roller.
+2.Push the carriage forward until the printer alignment tool touches the printer roller.
+3.Verify that there is no gap between the alignment tool and the print roller. If a gap exists, loosen the printer bracket and align the printer.
+2
+3
+1
+1. Printer Alignment Tool 2. Peel Roller3. Print Roller
+Figure 7-6: Aligning Printer to Print Roller (53mm)
+3
+2
+1
+1. Printer Alignment Tool 2. Peel Roller3. Print Roller
+Figure 7-7: Aligning Printer to Print Roller (107mm)
+7.2.5Aligning the Peel Roller to the Print Roller
+1.Place the peel roller at the center of the print roller.
+2.Place the printer alignment tool between the peel roller and the print roller.
+Videojet DataFlex 6530 Operator Manual - Rev AB7-7
+
+Maintenance
+2
+3
+14
+1. Printer Alignment Tool 2. Peel Roller3. Print Roller4. Marks on Alignment Tool
+Figure 7-8: Aligning Peel Roller to Print Roller (53mm)
+3 1
+2
+1. Peel Roller 2. Print Roller3. Printer Alignment Tool
+Figure 7-9: Aligning Peel Roller to Print Roller (107mm)
+3.Verify that the gap is between the specified markrange install the printer shims s on the alignment tool. If the gap is out of provided with the printer.
+4.Rotate the tool to ensure the gap on the front and back of the peel rolleroller. If not, level the printer from front to back. r are equal to the print
+7-8Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Section 8Troubleshooting
+Introduction
+This section contains the troubleshooting, fault diagnosis information for the users. This section contains the following information:
+Printer Faults
+Printing Faults
+CLARiTY Display Faults
+Troubleshooting Print Faults as indicated by iAssure (53mm Version Only)
+Ribbon Faults
+CLARiTY Error Messages
+8.1Printer Faults
+Error Message Possible Causes Remedies
+Cassette OpenCassette not fully seatedPush the cassette until it clicks into place.
+Cassette latch out of adjustment Adjust the cassette latch.
+Cassette sensor magnet missing from cassette   Replace the cassette.
+baseplate
+Faulty cassette sensorReplace printhead PCB.
+Ribbon BreakRibbon installed incorrectlyReinstall the ribbon as per the ribbon loading diagram on cassette.
+Broken or defective ribbonReinstall existing or new roll of ribbon.
+Excessive Print Darkness and/or Print Force settingsNavigate to Tools > Setup > Printheadset the Print Darkness and Print Force and
+settings to default values. Observe the results and adjust accordingly. It is 
+recommended to use the lowest possible settings while still achieving acceptable
+print quality.
+Poor alignment of printer to print platen or print rollerEnsure proper alignment and printer is square to print platen or print roller. Use
+shims between printer and mounting plate if needed.
+Excess slack in ribbon when cassette is loadedRotate mandrels to remove excess slack in the ribbon.
+Ribbon is under the peel roller when cassette is Ensure ribbon is between printhead and peel roller when cassette is inserted.
+inserted
+Table 8-1: Printer Faults
+Videojet DataFlex 6530 Operator Manual - Rev AB 8-1
+
+Troubleshooting
+Error Message Possible Causes Remedies
+Damaged cassetteInspect cassette for damaged components such as baseplate, cassette rollers, mandrel,
+mandrel pins, and friction cones. Ensure no Table 8-1: Printer Faults (continued)
+components are bent or misaligned. Replace components as necessary.
+Missing components on cassette Along with the main cassette components, ensure friction cones and leaf springs are
+present. Replace components as necessary.
+End of reelReplace the ribbon reel.
+Incorrect ribbon settingsNavigate to Tools > Setup > Consumablesand ensure correct ribbon settings for the 
+ribbon being used.
+Ribbon is 'stuck' to the substrate and is being  Try lowering Print DaForce settings if needed. rkness and/or Print
+pulled/tugged Intermittent Mode Only: Try increasing Print Speed.
+Intermittent Mode Only: Substrate is moving while  Navigate to Tools > Setup > PrintheadIf substrate is not settled before printer . 
+printer is printing begins to print, adjust Print Delay. If substrate begins to advance before
+printer finishes printing, increase Print Speed.
+Ribbon ErrorRibbon reel eccentricity is excessiveReplace the ribbon.
+Ribbon tags on the take up core which affects the ribbon Remove the tags and wind the take-up reel neatly.
+calibration system
+Low RibbonRibbon will need to be replaced soonReplace the ribbon.
+8-2 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Troubleshooting
+Error Message Possible Causes Remedies
+Ribbon Pull ThroughIntermittent Mode Only: Substrate is moving while  Navigate to Tools > Setup > Printhead.If substrate is not settled before printer 
+printer is printing begins to print, adjust Print Delay. If substrate begins to advance before
+printer finishes printing, increase Print Speed.
+Ribbon is 'stuck' to the substrate and is being  Try lowering Print DaForce settings if needed. rkness and/or Print
+pulled/tugged Intermittent Mode Only:
+Try increasing Print Speed. Table 8-1: Printer Faults (continued)
+Ribbon goes slack due to damaged cassette Inspect cassette for such as baseplate, cassette rollers, mandrel, damaged components
+mandrel pins, and friction cones. Ensure no components are bent or misaligned.
+Replace components as necessary.
+Ribbon is creasing / Poor alignment of printer to print platen or print rollerEnsure proper alignment and printer is square to print platen or print roller. Use
+wrinkling shims between printer and mounting plate if needed.
+Dirty or damaged peel rollerClean and replace if necessary.
+Bent/damaged peel roller shaft and/or supportCheck and replace if necessary.
+Dirty or damaged cassette rollersClean and replace if necessary.
+Damaged cassetteInspect cassette for damaged components such as baseplate, cassette rollers, mandrel,
+mandrel pins, and friction cones. Ensure no components are bent or misaligned.
+Excessive Print Darkness and/or Print Force Navigate to Tools > Setupset the Print Darkness and Print Force > Printhead and
+Settings settings to default values. Check for ribbon crease/wrinkle and adjust accordingly. It is
+recommended to use the lowest possible settings while still achieving acceptable
+print quality.
+Incorrect ribbon settingsNavigate to Tools > and ensure correct riSetup > Consumablesbbon settings for the
+ribbon being used.
+Videojet DataFlex 6530 Operator Manual - Rev AB 8-3
+
+Troubleshooting
+Error Message Possible Causes Remedies
+Table 8-1: Printer Faults (continued)
+Optical Calibration   Ribbon installed incorrectlyReinstall the ribbon as per the ribbon loading diagram on cassette.
+Sensor Dirty / Ribbon  Ribbon reel diameter is out Use correct ribbon reel.
+Calibration of range
+Failed Incorrect ribbon settingsNavigate to Tools > Setup > Consumablesand ensure correct ribbon settings for the 
+ribbon being used.
+Damaged cassetteInspect cassette for damaged components such as baseplate, cassette rollers, mandrel,
+mandrel pins, and friction cones. Ensure no components are bent or misaligned.
+Replace components as necessary.
+Dirty ribbon detector PCB and/or LEDsClean with dry, compressed air or foam applicator with 70% isopropyl alcohol.
+Faulty LEDsWith printer being OFFLINE, test LEDs by navigating to Tools > Diagnostics > Printhead
+> Outputs and toggle Optical Calibration LEDs. Ensure all LEDS illuminate one by
+one and none of them remain constantly lit. Replace printhead PCB as necessary.
+8-4 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Troubleshooting
+Error Message Possible Causes Remedies
+Printhead Carriage  Printhead motor stalling due to poorly positioned print Check and adjust the print platen.
+Position platen
+Printhead and carriage motors not running Ensure that the motor and motor sensor connectors on main PCB are fully seated
+correctly. and the connections are plugged into the correct connectors on the main PCB.
+Bent/damaged peel roller shaft and/or supportCheck and replace if necessary.
+Linear slide is obstructed or Clean with dry, compressed air and replace Table 8-1: Printer Faults (continued)
+binding as necessary.
+Worn or damaged belts and/or pulleysContact your maintenance engineer.
+Missing magnet on printhead mountContact your maintenance engineer.
+Faulty printhead position sensor With printer being OFFLINE, test by navigating to Tools > Diagnostics >Printhead 
+> Outputs and toggling Printhead Position. Printhead should travel to home and
+parked positions. Reas necessary.place printhead PCB
+Printhead gap exceeds 5mm. Shim printer accordingly to achieve a printhead gap less than 5mm. A 2mm gap
+is optimal. Ensure that the printer is printing onto a substrate.
+Faulty printhead or carriage motor.Contact your maintenance engineer.
+Printhead Over TemperaturePrinthead overheatsAllow the printhead to cool down.
+Damaged printhead / printhead cable Replace the printhead.
+Printhead AbsentLoss of communicationsRepower the printer.
+Printhead Volts ErrorPower supply voltage varies too muchCheck the printhead power supply output.
+Faulty main printer PCBReplace the main printer PCB.
+Videojet DataFlex 6530 Operator Manual - Rev AB 8-5
+
+Troubleshooting
+Error Message Possible Causes Remedies
+Printhead does not move in Head Belt or carriage belt clamp is loose or missingCheck and correct.
+and out Printhead or carriage stepper Check and correct.
+motor(s) not plugged in securely
+Worn or damaged belts and/or pulleysContact your maintenance engineer.
+Incorrect belt tensionContact your maintenance engineer.
+Faulty motorContact your maintenance engineer. Table 8-1: Printer Faults (continued)
+Printhead does not drive acrossHead Belt or carriage belt clamp is loose or missingCheck and correct.
+Printhead or carriage stepper motor(s) not plugged in Check and correct.
+securely
+Linear slide is obstructed or bindingClean with dry, compressed air and replace as necessary.
+Worn or damaged belts and/or pulleysContact your maintenance engineer.
+Incorrect belt tensionContact your maintenance engineer.
+Faulty motorContact your maintenance engineer.
+Thermistor FaultPrinthead cable not fully inserted onto printhead PCBInsert printhead cable onto printhead PCB.
+Damaged printhead / printhead cable Replace the printhead.
+Motor Volts ErrorPower supply voltage varies too muchCheck the power supply output.
+Faulty main printer PCBReplace the main printer PCB.
+Faulty motorCheck the motor and replace if necessary.
+Webbing ErrorSupply ribbon reel eccentric (+1mm)Replace the ribbon reel.
+End of ReelReactive Mode: Ribbon has run out. Replace the ribbon.
+Predictive Mode: ~ 5m of ribbon left.
+8-6 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Troubleshooting
+Error Message Possible Causes Remedies
+Table 8-1: Printer Faults (continued)
+Incorrect Reel SizeRibbon cores not fittedTry using a different ribbon reel.
+Incorrect ribbon settingsNavigate to Tools > Setup > Consumablesand ensure correct ribbon settings for the 
+ribbon being used.
+High throughout Mode enabled while attempting to Using CLARiTY Configuration Manager, disable High Throughput Mode or use
+use ribbon greater than 700m in length ribbon less than 700m in length.
+Faulty LEDs on printhead PCB. With cassette removed, navigate to Diagnostics > Printhead > OutputsTools > and
+toggle the Optical Calibration LEDs. Each individual LED should then begin to
+illuminate one by one. If one or more do not or if there are LEDs constantly lit,
+replace the printhead PCB.
+Faulty ribbon detector PCB.Remove and re-insert the cassette with ribbon so the printer attempts to go
+through its calibration process. Then navigate to Tools > Diagnostics > Printhead >
+Inputs and take note of the Optical Calibration Sensor Value. If it reads 0, try
+cleaning the ribbon detector PCB and/or checking its connection. If issue persists,
+replace the ribbon detector PCB.
+Videojet DataFlex 6530 Operator Manual - Rev AB 8-7
+
+Troubleshooting
+Error Message Possible Causes Remedies
+Substrate Speed DetectionContinuous Mode Only: Worn or missing encoder Check condition of encoder O-ring. Replace if necessary.
+O-ring
+Continuous Mode Only: Encoder O-ring slipping or Ensure encoder O-ring making good contact with print roller. 
+not making good contact with print roller
+Intermittent Mode Only: Substrate is moving while  Navigate to Tools > Setup > Printhead. Table 8-1: Printer Faults (continued)
+printer is printingIf substrate is not settled before printer begins to print, adjust Print Delay.
+If substrate begins to advance before printer finishes printing, increase Print
+Speed.
+Ribbon is 'stuck' to the substrate and is being  Try lowering Print DaForce settings if needed. rkness and/or Print
+pulled/tugged Intermittent Mode Only: Try increasing Print Speed.
+Ribbon going slack due to damaged cassetteInspect cassette for damaged components such as baseplate, cassette rollers, mandrel,
+mandrel pins, and friction cones. Ensure no components are bent or misaligned.
+Replace components as necessary.
+Print Cycle ErrorContinuous Mode Only: Current printer settings not  Navigate to Tools > Diagnostics > Printhead > Encoder Profiles and Capture Encoder
+optimized for the applicationProfile to determine max substrate speed. Then using CLARiTY Configuration
+Manager, lower the Continuous Maximum Print Speed setting to be ~50-100mm/sec
+greater than max substrate speed.
+Printhead remains down onto print roller for a long Change the "Low Speedin Clarity Config from "Print" to "Abort Behaviour" setting
+period of timeline has stopped and the because the After Timeout".
+ribbon gets tugged backwards by possible film
+drag.
+8-8 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Troubleshooting
+Error Message Possible Causes Remedies
+iAssure detects issues with Dirty lensClean lens (positioned directly above lightbox).
+print but print looks good  Dirty lightboxClean lightbox.
+(53mm version only) Ribbon tracking too much due to damaged cassetteInspect cassette for such as baseplate, cassette rollers, mandrel, damaged components
+mandrel pins, and friction cones. Ensure no components are bent or misaligned.
+Replace components as necessary. Table 8-1: Printer Faults (continued)
+Ribbon tracking too much due to printer not being Ensure printer is square to platen pad/platen roller. Shim as necessary.
+square or aligned to platen pad/platen roller
+iAssure out of calibrationUsing CLARiTY Configuration Manager, reset iAssure and re-run the iAssure 
+wizard when promptprinter screen.ed on the CLARiTY
+Note: This should only be required if iAssure components have been changed.
+Faulty lens or lightboxReplace as necessary.
+Printer is not powering upPower plug not fully inserted into power entry moduleCheck and correct.
+Power not turned on at the source or at the power Check and correct.
+supply
+Low profile connection between printer and power Check and correct.
+supply not properly connected/seated
+Check the 5A fuses on the power supply near the Replace fuse(s) as necessary.
+power entry module
+Faulty power supplyReplace as necessary.
+Faulty power supply PCBReplace as necessary.
+Faulty main printer PCBReplace as necessary.
+Videojet DataFlex 6530 Operator Manual - Rev AB 8-9
+
+Troubleshooting
+Error Message Possible Causes Remedies
+No information is printedRibbon installed incorrectlyReinstall the ribbon as per the ribbon loading diagram on cassette.
+Low Print Darkness and/or Print Force settingsNavigate to Tools > Setup > Printheadincrease Print Darkness and/or Print Force and
+settings accordingly. It is recommended to use the lowest possible settings that still
+achieve acceptable print quality.
+Incorrect Vertical and/or Horizontal Registration  Navigate to Tools > Setup > Printheadset Vertical and Horizontal Registration to and
+setting 0 and check for print. Adjust accordingly.
+No print signalNavigate to Tools > Diagnostics > Printhead > Inputs and check the presence of
+incoming print signal.
+Printhead not contacting the print platen or print rollerCheck and correct anshims if needed.y obstructions. Add
+Substrate and ribbon  Submit substrate samples to Videojet Table 8-1: Printer Faults (continued)
+incompatibilitySample Lab to determine best compatible ribbon type.
+Printer is loose on bracket mount Confirm mounting plate 'T' handle and four mounting screws are secured and
+tight.
+Printhead to platen pad/print roller distance is Navigate to Tools > Diagnostics > Printhead > Inputs and ensure Printhead to Platen
+too large (>5mm) Distance does not exceed 5mm. Recommended printhead to platen pad or
+print roller distance (printhead gap) is 2mm. Printhead gap can be measured
+using VJ tool. VJ part number is SAR10222. Adjust printer accordingly using shims if
+needed.
+Continuous Mode Only: Incorrect Print Position  Navigate to Tools > Setup > Printheadcheck the Print Position to ensure optimum and
+setting printhead position direroller centerline.ctly over the print
+Continuous Mode Only: Incorrect or no encoder Navigate to Tools > Diagnostics > Printhead > Inputs > Encoder and ensure encoder
+signal direction is registering as Forward on the screen and also detecting a speed value.
+Continuous Mode Only: Substrate came to an abrupt  Ensure substrate does not come to an abrupt stop or speed drops below
+stop when printing or substrate speed dropped 1mm/sec when printing. If this is not possible, use CLARiTY Configuration
+below 1mm/sec Manager to adjust Low Speed Behaviour setting accordingly.
+8-10 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Troubleshooting
+Error Message Possible Causes Remedies
+Table 8-1: Printer Faults (continued)
+Intermittent Mode Only: Substrate is moving while  Navigate to Tools > Setup> Printhead.If substrate is not settled before printer
+printer is printing begins to print, adjust Print Delay.
+If substrate begins to advance before printer finishes printing, increase Print
+Speed.
+Intermittent Mode Only: Incorrect Print Speed settingNavigate to Tools > Setup > Printheadset Print Speed to de and fault of 200mm/sec.
+Check for print and adjust accordingly.
+Worn or damaged printheadReplace the printhead.
+Invalid or corrupt Job selectedSelect a different or valid Job.
+Incorrect Printhead MappingConnect with CLARiTY Configuration Manager and ensure correct Printhead
+Mapping.
+Printer will not go ONLINEInvalid or no Job selectedSelect a valid Job.
+Fault message not clearedClear the fault message.
+Videojet DataFlex 6530 Operator Manual - Rev AB 8-11
+
+Troubleshooting
+8.2Printing Faults
+Error Message Possible Causes Remedies
+Top or bottom of print is missing Intermittent Mode Only: Incorrect Intermittent Start Connect with CLARiTY Configuration Manager and set Intermitent Start Border
+or ragged Border Trim setting Trim to 20. Check print quality and adjust accordingly.
+Intermittent Mode Only: Substrate is moving while  Navigate to Tools > Setup > PrintheadIf substrate is not settled before printer . 
+printer is printing begins to print, adjust Print Delay. If substrate begins to advance before 
+printer finishes printing, increase Print Speed.
+Intermittent Mode Only: Incorrect Horizontal  Navigate to Tools > Setup > Printheadset Horizontal Registration to 0. Check and
+Registration setting print quality and adjust accordingly.
+Intermittent Mode Only: Worn or damaged print padCheck and replace if necessary.
+Thin lines of missing print Worn or damaged printheadReplace the printhead.
+consistently in the same spot
+(cleaning does not help)
+Poor print quality Incorrect Print Darkness and/or Print Force settingsNavigate to Tools > Setup > Printheadincrease Print Dark and ness and/or Print
+Force settings accordingly. It is recommended to use the lowest possible
+settings that still achieve acceptable print quality.
+Incorrect Vertical and/or Horizontal Registration  Navigate to Tools > Setup > Printheadset Vertical and Horizontal Registration and
+setting to 0 and check for print. Adjust accordingly.
+Substrate and ribbon incompatibility Submit substrate samples to Videojet Sample Lab to determine best compatible
+ribbon type.
+Printer is loose on bracket mount Confirm mounting plate 'T' handle and four mounting screws are secured and
+tight.
+Poor alignment of printer to print platen or print rollerEnsure proper alignment and printer is square to print platen or print roller. Use
+shims between printer and mounting plate if needed.
+Table 8-2: Printing Faults
+8-12 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Troubleshooting
+Error Message Possible Causes Remedies
+Printhead to platen pad/print roller distance is too large Navigate to Tools > Diagnostics > Printhead > Inputs and ensure Printhead
+(>5mm) to Platen Distance does not exceed 5mm.
+Recommended printhead to platen pad or print roller distance (printhead gap) is
+2mm. Printhead gap can be measured using VJ tool. VJ part number is
+SAR10222. Adjust printer accordingly using shims if needed.
+Continuous Mode Only: Incorrect Print Position  Navigate to Tools > Setup > Printheadcheck the Print Posi and tion to ensure
+setting optimum printhead position directly over the print roller centerline.
+Continuous Mode Only:Worn or missing encoder Check condition of encoder O-ring. Replace if necessary.
+O-ringTable 8-2: Printing Faults (continued)
+Continuous Mode Only: Encoder O-ring slipping or not Ensure encoder O-ring making good contact with print roller.
+making good contact with print roller
+Continuous Mode Only: Substrate came to an abrupt Ensure substrate does not come to an abrupt stop or speed drops below
+stop when printing or substrate speed dropped 1mm/sec when printing. If this is not possible, use CLARiTY Configuration
+below 1mm/sec Manager to adjust Low Speed Behaviour setting accordingly.
+Intermittent Mode Only: Substrate is moving while Navigate to Tools > Setup > Printheadsubstrate is not settled before printer . If
+printer is printing begins to print, adjust Print Delay. If substrate begins to advance before
+printer finishes printing, increase Print Speed.
+Intermittent Mode Only: Incorrect Print Speed settingNavigate to Tools > Setup > Printheadset Print Speed to default of and
+200mm/sec. Check print quality and adjust accordingly.
+Dirty printheadPower off the printer, allow printhead to cool, then clean the printhead with
+Videojet printhead cleaning kit (Videojet part number is 216054).
+Worn or damaged printheadReplace the printhead.
+Dirty, worn, or damaged print platen or peel rollerCheck, clean, reposition, or replace if necessary.
+Videojet DataFlex 6530 Operator Manual - Rev AB 8-13
+
+Troubleshooting
+8.3CLARiTY Display Faults
+Fault Cause Solution
+CLARiTY GUI not powering upPower plug not fully i
+nserted into power entry Check and correct.
+module
+Power not turned on at the source or at t
+he power Check and correct.
+supply
+Low profile connection be
+tween printer and power Check and correct.
+supply not properly connected/seated
+CLARiTY GUI not inserted onto p
+ort on power supplyCheck and correct.
+Check the 5A fuses on the pow
+er supply near the Replace fuse(s) as necessary.
+power entry module
+Faulty power supplyReplace as necessary.
+Faulty power supply PCBReplace as necessary.
+Faulty main printer PCBReplace as necessary.
+Table 8-3: CLARiTY Display Faults
+8-14 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Troubleshooting
+8.4Troubleshooting Print Faults as inOnly)dicated by iAssure (53mm Version
+iAssure reports defects in prints that are significantly affecting the quaReview the fault message and view the captured lity of print obtained. prints on CLARiTY to understand why the fault
+was reported (eg. worn platen).
+Follow the below steps in priority order to improve print quality:
+Printer CleanlinessClean the printhead and peel roller.
+Print Roller/PlatenEnsure the print roller or platen is in good condition and free from damage or dirt build-up.
+RibbonEnsure that the correct ribbon type is being used.
+Inspect the ribbon for a good transfer to the substrate.
+Printhead GapCheck the printhead gap is set in the range of 1.5-5.0mm.Note: Printhead gap should not exceed 5mm, and 2mm is the
+recommended gap.
+Print ParametersFor continuous applications, check print speed is reporting correctly.
+For intermittent print applications, check if print speed can be reduced closer to the default setting and still achieve
+throughput.In continuous print mode, try adjusting the print position to
+optimize print quality.Try small incremental increases of print darkness and print
+force to improve print quality.
+SubstrateEnsure that the ribbon and substrate are not tracking.
+CassetteEnsure cassette is undamaged and working correctly. Ensure that the leaf springs are set as recommended for ribbon size.
+Table 8-4: Troubleshooting Print Faults as indicated by iAssure
+Videojet DataFlex 6530 Operator Manual - Rev AB 8-15
+
+Troubleshooting
+8.5Ribbon Faults
+Fault Possible Causes Remedies
+Ribbon trackingWhen fitting ribbon to a cassette, starting the ribbon When using a new roll ensure the leader is properly placed at the bottom of the
+webbing such that either a crease or a gap is created core. If the core and the leader are not
+between ribbon core and disc. parallel, peel the leader from the core and reseat the leader to the core.
+Pull gently on the ribbon and guide as you turn the mandrel.
+Ensure discs are fully seated before webbing the cassette.
+Note the leader must not fold on the disc.
+Printer not alignedFollow printer alignment procedure, refer Aligning the Printer to the Print
+Roller on page 7-7.
+Damaged Cassette, this could be: Replace damaged part or cassette.
+ Bent rollers
+ Damaged mandrels or mandrel shaft.
+ Bent or damaged cassette plate.
+Bracket not aligned or damaged bracket: Align or replace bracket as needed.Check alignment of the print
+This leads to tracking of the substrate relative to the print roller/platen.
+roller or platen. Even though printer is aligned to the
+bracket (see alignment above), it is not printing true
+to the substrate.
+Job not centered on the ribbon, catching the ribbon Centre job on the ribbon by adjusting the vertical registration setting.
+on one side
+Substrate moving to one sideCheck alignment of the print roller/platen.
+Too much darkness or print force, ribbon could be Try reducing print darkness and print force.
+sticking to substrate
+Missing black and silver disc. Replace black and silver discs.
+Table 8-5: Ribbon Faults
+8-16 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Troubleshooting
+Fault Possible Causes Remedies
+Ribbon Wrinkling/CreasesNote:Certain image types such as large solid areas/barcodes
+and dense fine print can be more conducive to the
+formation of wrinkles as can wider ribbon applications.
+Printer to print platen or roller misalignmentCheck the alignment of printer and bracket and correct it accordingly.
+Verify the bracket is in good working order.
+Verify the printer support bracket is tight.
+Verify that the platen or roller are not worn.
+Printhead gap not correctNavigate to Tools > Diagnostics > Printhead > Inputs and ensure Printhead
+to Platen Distance (printhead gap) is reported correctly. If it is reported
+incorrectly re-tension the belts. Table 8-5: Ribbon Faults
+Note: Printhead gap should not exceed 5mm, and 2mm is the recommended gap.
+Printhead pivot assembly is in poor conditionCheck the printhead pivot assembly for free movement and no signs of
+excessive wear. Replace pivot assembly if necessary.
+Worn/Defective print platen/rollerClean and inspect prinReplace if necessary.t platen or roller.
+Wrong print platen/roller texture/hardnessInspect and if needed, replace print platen/roller with Videojet supplied
+spares.
+Worn/Defective cassetteInspect and if needed, replace casette components or cassette.
+Worn/dirty peel roller or bent peel roller armClean and inspect the peel roller for damage. If damaged, replace peel roller
+as necessary.
+Defective ribbon, Ribbon type/grade or Incorrect Ensure that the ribbon type being used matches the printer settings. Inspect the
+ribbon width/type settings.ribbon and if incorrect or damaged, replace as necessary.
+Excessive Print DarknessCheck print darkness and reduce to the lowest value of darkness that achieves a
+acceptable quality print.
+Videojet DataFlex 6530 Operator Manual - Rev AB 8-17
+
+Troubleshooting
+8.5.1Ribbon Tension
+Fault Possible Causes Remedies
+Table 8-5: Ribbon Faults
+Ribbon Wrinkling/Creases Excessive Print Force.Check print force and reduce to the lowest value of force that achieves a
+(continued) acceptable quality print.
+Encoder settings/adjustment/Platen Check and verify encorrect speed.coder is reporting
+Roller (continuous operation)
+Host Machine (inadequate film tension, speeds, steep Check and verify host machine setup is correct and that web tension is
+accelerating/decelerating rates, etc.). maintained during printing.
+SubstrateCheck and verify that the substrate is not tracking.
+If ribbon tension appears to be incorrect check the following:
+1.Navigate to Tools > Setup > Consumables and ensure correct ribbon settings for the ribbon being used.
+2.Ensure bracket components are not misaligned/loose.
+3.Ensure printer is aligned to bracket, refer Aligning the Printer topage 7-7. the Print Roller on
+4.If continuous application, ensure the printhead is optimised for print quality by moving the printheads relative position on the print roller by adjusting the parameter 'Printhead
+Position'.
+5.If continuous application, ensure the encoder O-ring is in good condition and makes good contact with the print roller to ensure no slippage takes place.
+6.If continuous application, the Continuous Maximum Print Speed setting in CLARiTY Config can be lowered to be slightly above the actual film speed. Perform an encoder profile
+to see the maximum film speed when printing. Then lower the Continuous Maximum Print Speed to be approximately 50mm/s above the maximum film speed.
+Note: If the speed is likely to vary significantly then do not lower the parameter.
+7.Inspect the cassette for damaged/bent/misaligned/missing components.
+8.Use the lowest possible darkness setting while still achieving desired print quality.
+9.Ensure the leaf springs are in the correct orientation based on ribbon width.
+10.If the above steps do not resolve the issue, perform a motor calibration when the motors have cooled for at least 15 minutes.
+8-18 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Troubleshooting
+8.6CLARiTY Error Messages
+If CLARiTY displays a fault or warning, perform the following:
+Read the fault or warning message.
+Perform the task as per the message.
+Clear the message from the display (sometimes the message clears automatically when the fault is corrected, and sometimes you have to clear it by touching the Clear
+button).
+Figure 8-1: Fault Status
+Figure 8-2: Warning Status
+8.6.1Reading a Fault Message or Warning
+When a fault or warning occurs, CLARiTY displays the fault message in the status window at the top of all pages.
+When a fault occurs, the printers fault output repackaging machines stop circuit, it can be used to ensure that the packaging machine is stopped lay will open. If this relay is wired into the
+in the event of an error. This prevents the uncoded product from being produced when the printer has a fault.
+For example, when the ribbon supply is pulled by the substrate, CLARiTY will display the red FAULT banner with the message Ribbon Pull Through, as shown in Figure 8-3.
+Figure 8-3: Fault Display
+Videojet DataFlex 6530 Operator Manual - Rev AB 8-19
+
+Troubleshooting
+Several faults and warnings may occur at the same time. Faults will always be displayed first.
+To view the faults/warnings in more detail and totouch the red or yellow area in the status view instructions on what to do about them, window at the top of the CLARiTY display.
+8.6.2Clearing a Fault Message or Warning
+The instructions in this section provides information on how to clear a fault message. A similar procedure is used to clear warnings.
+To view the details of the fault list, proceed as follows:
+1.Touch the red FAULT message to view the list of faults (see Figure 8-4).
+2.Touch the fault name in the list.
+Figure 8-4: Fault Selection
+8-20 Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Troubleshooting
+3.The details of the fault is displayed. Follow the on screen instruction for correcting the fault.
+4.When you have corrected the fault, the button is activated.
+5.Touch to remove the fault message.
+For more information on how to clear CLARiTY faults and warnings, refer to Service Manual.
+Figure 8-5: Fault Details Display
+Videojet DataFlex 6530 Operator Manual - Rev AB 8-21
+
+Appendix ASpecifications
+Introduction
+This section provides the printer specifications and contains the following topics:
+Technical Specifications
+CLARiTY Controller Specifications
+Print Specifications
+Networking and External Communications
+Printer Dimensions
+CLARiTY Controller
+A.1Technical Specifications
+Table A-1 lists the technical specifications of the printer.
+Technical Specification
+ 53 mm 107 mm
+Printer
+Unique Solid State Ribbon DriveIntermittent Motion and Continuous MotionIntermittent Motion and Continuous Motion
+Printhead53 mm (2.1), 300 dpi, 12 dots/mm107 mm, 300dpi, 12dots/mm
+Print Area - Intermittent Motion 53 mm (W) x 75 mm (L) (2.1 x 3.0)107 mm (W) x 75 mm (L) (4.21 x 2.95)
+Mode
+Print Area - Continuous Motion 53 mm (W) x 300 mm (L) (2.1 x 11.81)107 mm (W) x 300 mm (L) (4.21 x 11.81)
+Mode
+Ribbon Width20 mm - 55 mm (0.8 - 2.2)55 mm - 110 mm (2.2 x 4.33)
+Maximum Ribbon Length1200 metres (3937)1200 metres (3937)
+Print Speed
+Intermittent Motion Mode 10 mm/sec - 800 mm/sec (0.4/sec - 31.5/sec) 10 mm/sec - 600 mm/sec (0.4/sec - 23.6/sec)
+Continuous Motion Mode 1 mm/sec - 1000 mm/sec (0.04/sec - 39.4/sec) 1 mm/sec - 1000 mm/sec (0.04/sec - 39.4/sec)
+Maximum Throughput Normal print mode: 500 ppmHigh throughput mode: 700 ppmNormal print mode: 400 ppmHigh throughput mode: 450 ppm
+Note: ppm (prints per min) is dependent on application.Note: ppm (prints per min) is dependent on application.
+Table A-1: Technical Specifications
+Videojet DataFlex 6530 Operator Manual - Rev ABA-1
+
+Specifications
+Technical Specification
+ 53 mm 107 mm
+Dimensions
+Printhead (including cassette)204 mm (W) x 178 mm (H) x 182 mm (D) 204 mm (W) x 178 mm (H) x 236 mm (D)
+Touch Screen Display240 mm (W) x 165 mm (H) x 34 mm (D) 240 mm (W) x 165 mm (H) x 34 mm (D)
+Power Supply Unit (PSU)226.87 mm (W) x 150 mm (H) x 85 mm (D) 226.87 mm (W) x 150 mm (H) x85 mm (D)
+Inputs/Outputs Table A-1: Technical Specifications (continued)
+External Inputs 3 PNP inputs, configurable from:Print sensor 1 3 PNP inputs, configurable from:Print sensor 1
+Print sensor 2Print sensor select Print sensor 2Print sensor select
+Inhibit printExternal error/stop Inhibit printExternal error/stop
+Clear print queue Clear print queue
+External Outputs2 relay outputs (1 change-over + 1 N/O) and 2 PNP  2 relay outputs (1 change-over + 1 N/O) and 2 PNP 
++24V outputs (max source current = 100mA per output), configurable +24V outputs (max source current = 100mA per output), configurable
+from CLARiTY Configuration Manager from CLARiTY Configuration Manager
+On-line/Off-lineWarning On-line/Off-lineWarning
+BusyPrinting (actually energising print BusyPrinting (actually energising print
+dots)Labeller feed dots)Labeller feed
+Print cycle active (Start to end of print and ribbon rewind) Print cycle active (Start to end of print and ribbon rewind)
+Update print queue fullNew allocation Update print queue fullNew allocation
+Print failed (i.e. interrupted in mid print) Print failed (i.e. interrupted in mid print)
+Fault Fault
+Operator Interface (CLARiTY)TFT SVGA 800 x 480TFT SVGA 800 x 480
+Power supply requirements100 - 240 VAC, 50/60 Hz, 2.6A-1.1A 100 - 240 VAC, 50/60 Hz, 4.14A-1.73A
+Operating Temperature0° - 40° C (32° - 104° F)0° - 40° C (32° - 104° F)
+A-2Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Specifications
+A.2CLARiTY Controller Specifications
+Table A-2 lists the CLARiTY controller specifications
+System Specifications Description
+Operator InterfaceFull color LCD Touch-Panel CLARiTY Interface
+Job Selection and databaseWYSIWYG Print Preview support as standard.
+Password protection3 standard User-Levels
+Remote Coder Configuration SoftwareCLARiTY Configuration Manager
+Offline Set Up and Parameter Storage available as standard
+DiagnosticsOn-Board Diagnostics as standard
+Table A-2: System Specifications
+Videojet DataFlex 6530 Operator Manual - Rev ABA-3
+
+Specifications
+A.3Print Specifications
+Table A-3 lists the print specifications.
+Print Specifications Description
+Image Design SoftwareVideojetConnect Design or CLARiSOFT
+Font SupportFull downloadable font support for Windows TrueType (including multiple languages and
+Unicode support)
+TextScalable text including rotation, mirror and inverse printing
+Supported Field TypesFixed, Variable (User EnteCounters, Date, Offsets,red), Merged, Database, Time, Paragraph (Text
+Blocks) Basic shape drawing (circles, rectangles and so on)
+Special FunctionsAuto real time and date functions
+Auto best before date calculation and concession management
+Auto incrementing, decremenbarcodesting text, counters and
+Barcode PrintingEAN 8, EAN 13, UPC-A, UPC-E, Code 39, GS1 128, Code 128, QR, Data matrix, GS1 Databar, ITF, 
+PDF 417
+3
+Graphics, Images and LogosMultiple graphic formats supported using VideojetConnect Design or CLARiSOFT. Any size
+up to maximum print area
+Print FunctionsMirror image printing, image rotation and inverse printing
+Day Code Support Hour, Day of Week, Day of Month, Week of Year, Month of Year, Year of Decade and Arabic Date
+Support
+Code OptionsStart of Day, Shift Codes, Factory, Machine, Line ID
+Field Orientation0°, 90°, 180°, 270°
+Table A-3: Print Specifications
+3
+Others available upon request
+A-4Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Specifications
+A.4Networking and External Communications
+Table A-4 lists the networking and external communications
+Networking and External Communications
+ Component Quantity
+External Data CommunicationRS232 Point-to-Point Communications1
+Ethernet 10/100 Base TX network communications2
+Binary and ASCII Comms and Drivers Protocols and Windows 1
+Host PC Mode (Remote Database) using CLARiNET 1
+USB Port2
+Master/Follower FunctionalityGroup Job Selection FuncControl Functionstion and Group Printer -
+Network Control SoftwareClaricom CLARiNET Coder Independent Network Management Software -
+Table A-4: Networking and External Communications
+Videojet DataFlex 6530 Operator Manual - Rev ABA-5
+
+Specifications
+A.5Printer Dimensions
+Figure A-1 shows the dimensions of the 53mm (RH) printer.
+(8.03 inches)204 mm
+(7.08 inches)
+75 mm PRINTHEADSTROKE
+178 mm(7.0 inches)
+180 mm
+53 mm PRINTABLEAREA
+Figure A-1: Videojet DataFlex 6530 53mm RH Printer Dimensions
+A-6Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Specifications
+Figure A-2 shows the dimensions of the 53mm (LH) printer.
+(8.03 inches)204 mm
+(7.08 inches)
+75 mm PRINTHEADSTROKE
+178 mm(7.0 inches)
+180 mm
+53 mm PRINTABLEAREA
+Figure A-2: Videojet DataFlex 6530 53mm LH Printer Dimensions
+Videojet DataFlex 6530 Operator Manual - Rev ABA-7
+
+Specifications
+Figure A-3 shows the dimensions of the 107mm (RH) printer.
+(8.03 inches)204 mm
+(9.29 inches)
+178 mm(7.0 inches)
+236 mm
+75 mm PRINTHEADSTROKE 107 mm PRINTABLEAREA
+Figure A-3: Videojet DataFlex 6530 107mm RH Printer Dimensions
+A-8Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Specifications
+Figure A-4 shows the dimensions of the 107mm (LH) printer.
+(8.03 inches)204 mm
+(9.29 inches)
+75 mm PRINTHEADSTROKE
+178 mm(7.0 inches)
+236 mm
+107 mm PRINTABLEAREA
+Figure A-4: Videojet DataFlex 6530 107mm LH Printer Dimensions
+Videojet DataFlex 6530 Operator Manual - Rev ABA-9
+
+Specifications
+A.6CLARiTY Controller
+Figure A-5 shows the dimensions of the CLARiTY controller.
+Touch Screen Display and PSU Combined
+Touch Screen Display
+PSU
+143.5 mm
+(5.65 inches)
+(9.44 inches)240 mm
+(1.33 inches)34 mm
+(9.44 inches)240 mm
+(3.34 inches)85 mm
+165 mm 176 mm
+(6.49 inches)(6.92 inches)
+(8.89 inches)226 mm
+151 mm(5.94 inches)
+Figure A-5: CLARiTY Controller Dimensions
+A-10Videojet DataFlex 6530 Operator Manual - Rev AB
+
+Appendix BAvailability
+B.1Overall Equipment Effectiveness - Availability Tools
+B.1.1Introduction
+Availability is a measurement of equipment uptime. It is the amouis ready to run when required by production. Thisnt of time that the equipment is one of the three key metric of OEE and is
+available forVideojet DataFlex 6530.
+The Availability tool helps to isolate operationato track the printer downtime and l versus equipment issues and enables the user view the downtime statistics. The screen of faults that allows
+the analysis of runtime measurement data helps frequent causes of both equithe user to understand and eliminate the more pment and operational downtime.
+The availability shows two basic availability metrics simultaneously:
+ Equipment Availability
+ Operation Availability
+Note: Operation Availability can be changed between two separate producthe user: "power on" and "running" tion time proxies as required by mode. For more information, refer "Operation Availability" on
+page B-2.
+Where
+ Operating Time is Total Printer Uptime
+ Planned Production Time is the Actual Line Run Time Expected*.
+*Based on proxy selected 'power on' or 'running'.
+Availability% =Operating Time
+Planned Production Time
+B.2.2Equipment Availability
+Equipment Availability tracks the downtime directly related to an internal error (fault).
+Equipment Availability is defined as
+Equipment Total Time is the total amount of tipower applied). If the equipment me for which the Equipment is turned on (has is powered down when a fault is active, the amount of time
+that the equipment is off is also included in this equipment total time.
+Equipment Downtime is the amount of EquipEquipment Fault State. Equipment Fault state ment Total Time the printer has spent in a is defined as the period where the equipment is
+not available due to a fault identified as a equipment fault. For more information, refer Service Manual.
+Equipment Availability = 1 -Equipment Downtime
+Equipment Total Time
+Videojet DataFlex 6530 Operator Manual - Rev ABB-1
+
+Availability
+B.3.3Operation Availability
+This is a broader measure to reflect the full impact of the doOperation Availability tracks wn time to production line. the downtime related to faults that might be classed as
+Procedural.
+The impact may be due to equipment issues, operator related ison. sues, shift changeovers and so
+Operation Availability is defined as
+The Production Time Proxy allows the availability calculatioselected operating modes, running or power onn to change between customer . The production time is defined based on the
+production time proxy chosen:
+ Running: If both equipment and printer are switched ON.
+ Power On: If the equipment is switched ON irrespective of the status of the printer.
+If the equipment is powered down when a fault isis off is also included active, the amount of in the production time.time that the equipment
+Operation Downtime is the amount of ProductioFault State. Operation Fault statn Time the printer has spent in an Operation e is defined as the period where the equipment is not available
+due to a fault identified as a operation fault.
+Note: Refer service manual for further information on equipment and operation fault states.
+Operation Availability = 1 -Operation Downtime
+Production Time
+B-2Videojet DataFlex 6530 Operator Manual - Rev AB
+
+e@UW MW#'W%# !*W*
+=7-h/@=<]<9/?<<?<9v/10]]5676765&/5327632#"&'&'732654&#"&#"NwH:qi>Uf0Y:!%e4Fy6Tl? TDg$"}H}TP+9k@-18!!3p#/
+005#3Rp5+T#I"8O
+77FFUU!]|%%@!!@a*b

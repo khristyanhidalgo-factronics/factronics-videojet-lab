@@ -1,0 +1,103 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\462487-01 AA_CLARiTY Laser Controller Converter Tool Instructions.pdf
+# cifrado=True bloques=9 caracteres=4932
+
+®
+CLARiTY Laser ControllerConverter Tool
+®
+CLARiTY Laser Controller Converter Tool
+Introduction
+The Converter Tool allows the user to convert the messages created for the
+laser systems to CIFF files for uploading to the CLARiTY
+®
+The tool takes the Laser XML messages directly from the laser system and laser controller.
+converts them to CIFF files. The files will be stored in a location specified by the user.
+The required steps involved in converting the messages are as follows:
+1Installing the Software and supporting files (refer How to Install the
+Converter Tool on page 1 ).
+2Converting the messages from .xml format to .Ciff format (refer
+How to Convert the Messages on page 4 ).
+3Loading the messages to the controller (refer How to Load Messages
+to the Controller on page 6 ).
+The following optional step allows you to preview the converted messages before loading to the controller:
+ Refer How to Prepare the CIFF Files for Importing on page 5 .
+Note: For additional assistance with this instruction, please call Videojet Technologies Inc. at 1-800-843-3610 (for all customers within the United States).
+Outside the U.S., customers should contact their Videojet Technologies Inc. distributor or subsidiary for assistance.
+How to Install the Converter Tool
+Do the following tasks to install the Converter Tool:
+®
+1Insert the CLARiTY Laser Controller System Manual CD.
+2Click on the CD drive.
+3Click on the LasertoCiFF Conversion ToolCiFF Conversion Tool in the CD Index. The Laser to page appears.
+1 462487-01 AA
+
+CLARiTY Laser Controller Converter Tool Instructions
+4Click on the Converter Tool Execution FilesSetup.exe fi link. The folder containing le appears.
+5Click on the Setup.exe file from the CD. Displays the wizard screen (see LasertoCiff setup
+Figure 1 ). Follow the on-screen instructions to
+install the Converter Tool.
+Figure 1: Setup Wizard
+Note: In Figure 1, 1.0.7 refers to the software version of the converter tool.
+This software will be updated over time.
+462487-01 AA 2
+
+CLARiTY Laser Controller Converter Tool Instructions
+6Run LasertoCiff from the Startup menu. The following user interface page appears (see
+Figure 2 ).
+Figure 2: Conversion Tool
+The Converter Tool is now installed.
+3 462487-01 AA
+
+CLARiTY Laser Controller Converter Tool Instructions
+How to Convert the Messages
+Do the following tasks to convert the messages:
+Note: Ensure that the laser system is switched on and connected to the network.
+1Open the Converter Tool.
+2Enter the laser IP address (the default laser IP address is 192.168.1.1).
+Figure 3: Enter Laser IP Address
+3Click Add IP.
+4Select the laser IP from the drop down list.
+5Select Connect Laser and wait for the laser to connect.
+6If the laser connection fails, an error message will appear.
+7Once the laser is connected, it displays a list of inputhe left hand side column Lt files (*.xml) on ist of Input (*.xml) Files.
+8Select the laser type from the drop down list.
+9Select the Input Folder Path where the output CIFF files will be created.
+462487-01 AA 4
+
+CLARiTY Laser Controller Converter Tool Instructions
+10Select the required files (*.xml) to be converted and select of output files (*.Ciff) are listed Convert. List on the right hand side column
+List of Output (*.Ciff) Files.
+Figure 4: Output Files (*.Ciff)
+11Select View Logfile to review the conversion log.
+How to Prepare the CIFF Files for Importing
+Note: This is an optional step. Perform this procedure if it is required to review the CIFF Files and make updates.
+®
+1Open CLARiSOFT .
+®
+Note: If you do not have the CLARiSOFT Technologies Inc. at 1-800-843-3610 program, please call Videojet (for all customers within the United
+States). Outside the U.S., customers should contact their Videojet Technologies Inc. distributor or subsidiary for assistance.
+2Open the converted .Ciff file to be transferred to the controller.
+3Preview the converted .Ciff files and update if needed.
+4Select the Print button and use the Print to Filefile to the USB stick. option to write the .ciff
+5Repeat Step 2 to Step 4 for all the required .ciff files.
+5 462487-01 AA
+
+CLARiTY Laser Controller Converter Tool Instructions
+How to Load Messages to the Controller
+Do the following tasks to load messages:
+Note: Transfer the required .Ciff files toController. a USB stick for upload to the
+®
+1Insert USB stick to the CLARiTY laser controller.
+2Navigate to Tools > Databases from the Home Page (see Figure 5 ).
+Figure 5: Databases
+462487-01 AA 6
+
+CLARiTY Laser Controller Converter Tool Instructions
+3Touch External. The list displays the mess(see ages available in the USB
+Figure 6 ).
+Figure 6: Messages in USB
+4Select a message to be transferred to the controller and touch
+. The message is now loaded to the controller.
+5Repeat Step 4 for all the messages to be loaded to controller.
+®
+The laser system messages are now available for use in CLARiTY Controller. Laser
+7 462487-01 AA

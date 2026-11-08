@@ -1,0 +1,3054 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\73611-AH Manual Touch Control EN.pdf
+# cifrado=False bloques=171 caracteres=189652
+
+Software Manual
+Touch Control
+P/N: AL-73611
+Revision: AH, May 2016
+
+Copyright 2016, Videojet Technologies Inc. (herein referred to as All rights reserved. Videojet).
+This document is the property of Videojet Technologies Inc.proprietary information owned by and contains confidential and Videojet. Any unauthorized copying, use or disclosure of it
+without prior permission of Videojet is strictly prohibited.
+Videojet Technologies Inc.
+1500 Mittel BoulevardPhone:1-800-843-3610Wood Dale, ILFax:1-800-582-1343INTL: Canada, France, Germany, Ireland, Japan, Spain, Offices - USA: Atlanta, Chicago, Los Angeles, Philadelphia
+60191-1073 USAIntl Fax:630-616-3629Singapore,www.videojet.comDistributors worldwide The Netherlands, The United Kingdom
+
+Table of Contents
+1 Introduction. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+1.1 Starting the Touch Control . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+1.1.1 Installation. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1.1.2 Power connection. . . . . . . . . . . . . . . . . . 5. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+1.1.3 Startup sequence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+2 Touch ControlHome screen . . . . . . . . . . . . . . . . . . 7
+2.1 Status bar . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+2.1.1 Start / Stop button. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.1.2 Key switch. . . . . . . . . . . . . . . . . . . . 9. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+2.1.3 To Check for laser emission. . . . . . . . . . . . . . . . . . . . . . . . 2.1.4 Close the key switch. . . . . . . . . . . . . . 10. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+2.2 Global function buttons. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+2.2.1 Shut down button . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.2.2 Touch Control Shut dow. . . . . . . . . . . . 11n. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+2.2.3 Switch User. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.2.4 Main Menu button. . . . . . . . . . . . . . . . . . . . . 12. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+2.2.5 Logo button . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+2.3 Active Job pane. . . . . . . . . . . . . . . . . . . . . . . . 2.4 Active Line Setup pane. . . . . . . . . . . . . . . . . 15. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+2.5 Toolbar . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.6 Managing Toolbar buttons . . . . . . . . . . . . . 17. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+2.6.1 Entering a new Adjust value. . . . . . . . . . . . . . 2.6.2 Entering a new Rotate value. . . . . . . . . . . . . . . . . . . . . . . 18. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+2.6.3 Entering a new Scaling value . . . . . . . . . . . . . 2.6.4 Entering a new Marking value. . . . . . . . . . . . . . . . . . . . . . . 20. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+2.6.5 Entering a new Variable value . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+2.7 Performance pane. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+2.7.1 Counter Dialog pane. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.7.2 Editing the Mark Count. . . . . . . . . . . . . . . . . 23. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+2.7.3 Editing the Trigger Count . . . . . . . . . . . . . . . . 2.7.4 Editing the Batch Size. . . . . . . . . . . . . . . . . . . . . . 25 Counter. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+2.7.5 Editing the Batch Counter. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+2.8 Alerts. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+2.8.1 To Confirm and delete the alerts. . . . . . . . . . . . . . . . . . . . . . 2.8.2 Fatal error. . . . . . . . . . . . . 28. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+2.9 Start the marking process. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+2.9.1 Select the Job to mark . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.9.2 To start marki. . . . . . . . . . . . . 28ng the product. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+2.9.3 To stop marking the product. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+2.10 Emergency shut down. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+2.10.1 Restart after an emergency shut down. . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+05/16 - Rev. AH 1
+
+Table of Contents
+3 Touch ControlProperty panes. . . . . . . . . . . . . . . . 33
+3.1 Job . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.2 Manage jobs screen . . . . . . . . . . . . . . . . . . . . 33. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+3.3 Edit the Current job screen. . . . . . . . . . . . . . . . 3.4 Activating a job . . . . . . . . . . . . . . . . . 35. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+3.5 Creating a new job . . . . . . . . . . . . . . . . . . . . . . . . . 3.6 Renaming a job. . . . . . . . . . . . . . . . . . 37. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+3.7 Editing a job . . . . . . . . . . . . . . . . . . . . . . . . . 3.8 Duplicating a job . . . . . . . . . . . . . . . . . . . . . . 39. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+3.9 Deleting a job . . . . . . . . . . . . . . . . . . . . . . . . 3.10 Quick Edit Toolbar. . . . . . . . . . . . . . . . . . . . 40. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+3.11 Working with job elements . . . . . . . . . . . . . . . 3.12 Adding an element to the job . . . . . . . . . . . . . . . . . . . 44. . . . . . . . . . . . . . . . . . . . . . 45
+3.13 Renaming a job element. . . . . . . . . . . . . . . . . 3.14 Editing a job element. . . . . . . . . . . . . . . . . 46. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+3.15 Duplicating a job element . . . . . . . . . . . . . . . . 3.16 Deleting a job element . . . . . . . . . . . . . . . . 47. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+3.17 Types of job elements. . . . . . . . . . . . . . . . . . 3.18 Updating a Static . . . . . . . . . . . . . . . 49Text element. . . . . . . . . . . . . . . . . . . . . . . . . . 50
+3.19 Updating a Text Variable element. . . . . . . . . . 3.20 Updating the Date element. . . . . . . . . . . . . . 54. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+3.21 Updating the Time element. . . . . . . . . . . . . . . 3.22 Updating the Serial Nu. . . . . . . . . . . . . . 61mber element . . . . . . . . . . . . . . . . . . . . . 64
+3.23 Updating the Shift Code element . . . . . . . . . . . 3.24 Updating the IDMatrix el. . . . . . . . . . . . . 67ement . . . . . . . . . . . . . . . . . . . . . . . . . . 69
+3.25 Updating the Barcode element . . . . . . . . . . . . . 3.26 Updating the Graphic elem. . . . . . . . . . . . . 79ent . . . . . . . . . . . . . . . . . . . . . . . . . . 87
+3.27 Updating the Logo element. . . . . . . . . . . . . . . . 3.28 Line Setup. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 91. . . . . . . . . . . . . . . . . . . . . . . . . 94
+3.29 Manage Line Setups. . . . . . . . . . . . . . . . . . 3.30 Edit the Line Setups screen. . . . . . . . . . . . . . . . 95 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 96
+3.31 Working with Line Setups . . . . . . . . . . . . . . . . 3.32 Activating a Line Setup. . . . . . . . . . . . . . . 96. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97
+3.33 Creating a new Line Setup . . . . . . . . . . . . . 3.34 Renaming a Line Se. . . . . . . . . . . . . . . . 99tup. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 99
+3.35 Editing a Line Setup . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 100
+3.35.1 Position and Orientation . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.35.2 Line Speed . . . . . . . . . . . . . . . . . 101. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 103
+3.35.3 Trigger settings. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 105
+2 05/16 - Rev. AH
+
+Table of Contents
+3.35.4 Marking field and Test. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 106
+3.36 Duplicating a Line Setup. . . . . . . . . . . . . . . . 3.37 Deleting a Line Setup . . . . . . . . . . . . . . . . 108. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 109
+4 Touch Control SoftwareMenu. . . . . . . . . . . . . . . 111
+4.1 Mark Settings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 111
+4.1.1 Accessing the Mark Settings screen. . . . . . . . . . 4.1.2 Working with Mark Se. . . . . . . . . . . . . . . . . . . 111ttings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 112
+4.2 Creating a Mark Setting . . . . . . . . . . . . . . . . . . . . . 4.3 Renaming a Mark Setting . . . . . . . . . . . 113. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114
+4.4 Editing a Mark Setting. . . . . . . . . . . . . . . . . . . 4.5 Duplicating Mark Settings. . . . . . . . . . . . . . . . . . . . . . 116. . . . . . . . . . . . . . . . . . . . . . 118
+4.5.1 Deleting a Mark Setting. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 119
+4.6 File Management . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 120
+4.6.1 Accessing the File Management screen. . . . . . . . . . . 4.6.2 Exporting Complete Las. . . . . . . . . . . . . . . 120er Image from Laser Local to USB Device. . . . . 121
+4.6.3 Copying Data from USB Device to Laser Local . . . . . 4.6.4 Show Content in . . . . . . . . . the Laser Local and the USB Device. . . . . . . 122. . . . . . . . . . . . . . 124
+4.6.5 Copying elements from the Laser Local or4.6.6 Supported File Formats the USB Device. . . . . . . . . . . 124. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 125
+4.6.7 Deleting elementsUSB Device . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 125
+4.7 Users. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126
+4.7.1 Accessing the Users screen. . . . . . . . . . . . . . . . . . . . . 4.7.2 Creating a new User. . . . . . . . . . . . . . 126. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 127
+4.7.3 Renaming an existing User. . . . . . . . . . . . . . . . . . . . . . . . . . 4.7.4 Duplicating an existing . . . . . . . . . . 128User. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 129
+4.7.5 Changing the Password of an existing User. . . . . . . 4.7.6 Delete an existing User. . . . . . . . . . . . . . . . . . . . . 130. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 131
+4.8 Roles and Access Rights . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 132
+4.8.1 Accessing the Roles and Access Rights screen. . . . . . . . . . . . . . . . . . . . 132
+4.9 Roles. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+4.9.1 Creating a new Role. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4.9.2 Renaming an existing Role. . . . . . . . . . . . . . . . 133. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
+4.9.3 Duplicating an existing Role . . . . . . . . . . . . . . . . . . . . . . . . . 4.9.4 Restore the Defaults . . . . . . . . . . 136of a Role . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 137
+4.9.5 Deleting an existing Role . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 138
+4.10 Access Rights. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 139
+4.10.1 Editing the Access Rights. . . . . . . . . . . . . . . 4.10.2 To Assign Full Access. . . . . . . . . . . . . . . . . . . . . 139. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141
+4.10.3 To Assign Read-only Access . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 142
+4.11 Laser Settings. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+4.11.1 Laser Settings screen. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+4.12 Main Settings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 145
+05/16 - Rev. AH 3
+
+Table of Contents
+4.12.1 Accessing the Main Settings screen. . . . . . . . . . . . . . . . . . . . . . . . . . . . 145
+5 Examples for Touch Control. . . . . . . . . . . . . . . . . . 149
+5.1 Example 1: Single line text field . . . . . . . . . . . . . . . . . . . . . . . . . 1495.2 Example 2: Three lines, justified flush left and right . . . . . . . . . . 152
+5.3 Example 3: Variable with ID Matrix. . . . . . . . . . . . . . . . . . . . . . . 1605.4 Example 4: Text centred within a rectangle (frame) . . . . . . . . . . 165
+4 05/16 - Rev. AH
+
+Chapter 1Introduction
+1 Introduction
+The Touch Control Software performs the following functions:
+Generating and organizing jobs and parameter settings
+Configuring the Line setup
+Transferring data to the laser system
+Using the Touch Control, with the Touch Control Software, you can generate and edit the mark-ing content of a job easily on your touch screen device. Your data is transferred to the laser
+system through its integrated interface.
+Training on the operation of the laser system and the Touch Control is offered regularly. Forfurther information, please contact Videojet Technologies Inc. or one of their representatives.
+1.1 Starting the Touch Control
+NoteBefore operating the laser system you must make sure that the safety instructions of the laser manual have been read and understood.
+This section describes the system from the tiscreen is available for use.me when the power is applied until the Home
+1.1.1 InstallationYou must have the laser marking system installed and set up as a Class 1 (I) laser system.
+Refer to your local Videojet Distributor before you make any changes to the installation.
+1.1.2 Power connectionIf the mains electrical supply is not connected, contact a Line Supervisor or a technician.
+Before you start the system, confirm the following important points:
+The Supply Unit key switch is in the off (0) position.
+Any circuits connected to the interlock are closed.
+Set the local electrical isolator switch for the laser system to the on (I) position.
+05/16 - Rev. AH 5
+
+Chapter 1Introduction
+1.1.3 Startup sequence1.Start the laser system as described in the manual the laser system.
+2.Switch on the Touch Control. The Touch Control Software is loaded automatically.
+3.After a short delay, the display illuminates on the If the Touch Control is protected byTouch Control screen. a Password on Start option, the Select User screen
+replaces the Start screen and displays a user list.
+Figure 1-1: Login screen
+4.Touch the user level you want to log in as. A keypad is displayed.
+Figure 1-2: Password screen
+5.Enter the password relevant to the user level required and touch the screen opens.OK button. The Home
+Notes1.If the Password on Start is not checked in the login as operator to the touch screen and the Main Settings screen, youHome screen is displayed
+automatically.
+2.You can create a new user profile, or use one of the available user profilesand password. For more information about users, passwords and creating
+new user, see Users on page126
+6 05/16 - Rev. AH
+
+Chapter 2Touch ControlHome screen
+2 Touch ControlHome screen
+When the Touch Control is started, the connection to the laser system is established automat-ically and the currently active job (2 and 6), line setup (5), system status (1) and performance
+(4) panes are displayed.
+Figure 2-3: Home screen
+NoteRefer to Laser Settings on page143 for more information about connection settings.
+The Home screen of the Touch Control is divided into the following areas:
+Frame numberAreaFunction
+1Status barDisplays the system status, Warnings and Fault signals. It has the buttons for closing/opening the key switch and
+for starting/stopping the marking process.
+Shows the Lasers that are connected to the Touch-screen.
+2Preview areaDisplays the content of the selected job.
+3Quick Edit Tool-bar Lists the following toolbar buttons of the program:
+Lock/unlockAdjust
+RotateScale
+MarkingVariable
+4PERFORMANCEDisplays information on different counters on the laser.
+7
+1
+6
+5
+2
+4
+3
+05/16 - Rev. AH 7
+
+Touch ControlHome screenChapter 2
+2.1 Status bar
+Frame numberAreaFunction
+5LINE SETUPDisplays information on the active line setup on the laser.
+6Job Displays information on the active job on the laser.
+7Global functionsDisplays three main types of functional buttons:
+Shut down button: Provides access to shut down the program and switch between the users.
+Menu button: Provides access to all the available menus in the program.
+Logo button: Provides information regarding the pro-gram version, the company address and the Touch Con-
+trol Operating manual.
+NotePen button: All editable field/values are indicated by a right-hand side of the value entry field.Pen button on the
+This displays the laser system state. On the bar are the buttons to start and stop the markingprocess and to close and open the key switch.
+The Status bar appears in green only if the laser is in a marking state. If the laser is not mark-ing, the Status bar will appear in a different state/color. See the table below that contains the
+system states and the corresponding color names.
+System StateColorDescription
+Prepare for markingBlueIndicates that the laser is preparing to start the marking process. When you touch the Start button, the laser
+requires preparation time to mark the products. The dura-tion of the preparation time depends on the content of the
+job and the program settings.
+MarkingGreenIndicates that the marking is in progress.
+Laser readyBlueIndicates that the laser system is ready for marking.
+StandbyBlueIndicates that the laser is in Stand By mode and there is no marking in progress.
+Key-switch openBlueIndicates that the system initiation is complete. The sys-tem can now be started by closing the key switch. For
+more information, see Close the key switch on page10.
+8 05/16 - Rev. AH
+
+Chapter 2Touch ControlHome screen
+System StateColorDescription
+Interlock openBlueIndicates that the safety circuit is interrupted (for exam-ple, the safety door interlock is open). The marking pro-
+cess is stopped. Marking is only possible with a closed safety door interlock.
+InitializeBlueIndicates that the control components of the laser system are being initialized.
+WarningYellowIndicates a warning during the marking process. An icon with Exclamation mark button is displayed with the num-
+ber of warnings that have occurred.
+Fatal errorRedIndicates a fatal error has occurred and the system is deactivated. The laser system has to be turned off.
+The fault must be corrected before the laser system is re-started.
+This error cannot be confirmed and the operation cannot be continued.
+2.1.1 Start / Stop buttonThese buttons are used to start and stop the marking process.
+If the laser is not marking, the Start button is displayed as follows:
+Figure 2-4: Status barStart Button
+When the laser is marking the Stop button is displayed as follows:
+Figure 2-5: Status barStop Button
+05/16 - Rev. AH 9
+
+Touch ControlHome screenChapter 2
+2.1.2 Key switchYou cannot start the marking process when the Status bar shows the key switch state as
+open. To start the marking process the key switch must be closed.
+If the laser system is not equipped with a real key switch there is an integrated key switch func-tion, see Close the key switch on page10. For information on closing the key switch, see
+Figure2-6 below.
+NoteOnly one key switch is enabled at a given point of time.
+Figure 2-6: Key switch button
+2.1.3 To Check for laser emissionThe emission light must illuminate when the key switch is closed to show that power is applied
+to the laser tube. See manual of the laser system for the location of the emission warning lights.
+After the key switch is closed, a 5 second delay prevents the system from marking.
+2.1.4 Close the key switchTo start the marking process, ensure that the key switch is closed. Perform the following steps
+to close the key switch:
+1.Click the key switch button on the Status bar. A popover opens with the following options:Open key switch
+Close key switch
+2.Select the Close Key Switch button. A numeric keypad is displayed.
+3.Enter the code for the Key Switch (see Quick Start Guide).
+4.Click the OK button to verify the entered code.The system state changes to Startup and the colour of the Status bar changes to blue.
+See Figure2-4 on page9.
+10 05/16 - Rev. AH
+
+Chapter 2Touch ControlHome screen
+2.2 Global function buttons
+Three buttons are located alongside the Status bar.
+They are as described in the following table:
+IconNameSelect this option to
+Shut downShut down the program and switch between the users. For more information see the Shut down button on
+page11.
+MenuView the main menu. For more information see the Main Menu button on page13.
+LogoView the company logo, program version information and
+2.2.1 Shut down buttonUse this button to do the following operations:
+Shut down the program
+Switch between different users
+Figure 2-7: Shut down
+Touch Control manual. For more information see the Logo button on page14.
+05/16 - Rev. AH 11
+
+Touch ControlHome screenChapter 2
+2.2.2 Touch Control Shut downThe currently logged in user can shut down the Touch Control only if they have the access
+rights set correctly. See the Main Settings on page145 for more information.
+Perform the following steps to shut down the Touch Control:
+1.Touch the Shut down button, a screen opens with the following options as shown in theabove screen shot:
+Switch UserShut down
+2.Touch the Shut down button. The Touch Control shuts down.
+NoteIf the Shut down system after exit check box is selected in the tings screen, the Touch Control screen willMain Set- close down within one minute of
+touching the Shut down button.
+Figure 2-8: Main SettingsPassword and Shut down options
+2.2.3 Switch UserTo log in as a different user, use the SwitchUser option. Perform the following steps to switch
+between the users:
+1.Touch the Shut down button. A screen opens with the above screen shot:following options as shown in the
+Switch userShut down
+2.Touch the Switch User button. A screen with user list is displayed.
+NoteThe current user is indicated as shown in Figure2-9.
+12 05/16 - Rev. AH
+
+Chapter 2Touch ControlHome screen
+Figure 2-9: Switch User screen
+3.Change the user by touching the required user from the list. The screen lisusers. ts all the available
+4.Enter the correct password by using the keypad.
+5.Touch the OK button in the keypad to validate the selected user.
+6.Touch the Cancel button to select another user.
+7.Touch the Close button to close the Switch User screen and then return to the Home screen.
+2.2.4 Main Menu button This button allows you to view the menu of the Touch Control.
+Figure 2-10: Main menu
+05/16 - Rev. AH 13
+
+Touch ControlHome screenChapter 2
+The following table briefly describes the main menu options:
+IconMain menu optionSelect this option to
+Mark SettingsDefine Mark Settings. For more information about mark settings, see Mark Settings on page111.
+File ManagementExport the complete laser database or its sections such as jobs, fonts, logos and so on to a USB drive or import
+sections or elements into laser database from USB drive.
+The database can be transferred between laser systems when connected to the
+2.2.5 Logo buttonAllows you to display the information about the program version and the company address.
+Touch the Logo button. A screen opens with the following options:
+About
+Help
+Touch Control tion about file management, see File Management on . For more informa-
+page120.
+Users Display the currently logged in user. You can create new users. The user can also change from one user account
+(or user profile) to another user account (or user profile). For more information about users, see Users on
+page126.
+Roles and Access rightsDefines the Roles and Access rights of different users. For more information about roles and access, see Roles
+and Access Rights on page132.
+Laser SettingsDefines Laser Settings. Applies to all the lasers con-nected to the TouchScreen. For more information about
+laser settings, see Laser Settings on page143.
+Main SettingsDefine Main Settings. For more information the main set-tings, see Main Settings on page145.
+14 05/16 - Rev. AH
+
+Chapter 2Touch ControlHome screen
+AboutTouch the Logo button and then the About button. The company logo and the company ad-
+dress are displayed. Displayed below the company address is the Total Mark Count. This num-ber gives the total markings carried out since the setup of the laser system.
+Also shown is the current version information of the Touch Control, IceMark and AOS software.
+To close the screen touch the Close button.
+HelpTouch the Logo button and then the Help button. A separate window opens and displays the
+Touch Control Operating manual.
+2.3 Active Job pane
+NoteThis value cannot be edited.
+Job defines the final content that is marked on the product. The the mark parameters for each job. However theyJob Mark Settings provide can be edited as required, to add texts, logos,
+serial number and other job elements.
+Figure 2-11: Active job pane
+The active job pane displays the following fields:
+FieldDescription
+NAMEDisplays the name of the active job.
+MARK-SETTINGDisplays the marking settings of the active job.
+For example, elements such as text, variable, ID matrix, logo, barcode and graphics.
+05/16 - Rev. AH 15
+
+Touch ControlHome screenChapter 2
+2.4 Active Line Setup pane
+FieldDescription
+ Pen buttonPen button lists the actions that can be performed for active job pane:
+Edit current jobManage job
+Edit current mark settings
+Line setup defines the parameters for the production line, marking head position and productdetection. You can add a new line setup or edit the details of an existing line setup.
+Figure 2-12: Active line setup pane
+The active line setup pane displays the following fields:
+Field/IconDescription
+NAMEDisplays the name of the active line setup.
+SIGNALSDisplays the signal status of the encoder or detector connection to the laser.
+Product Detector: Turns green if a detector is connected to the laser.Encoder: Turns green if a encoder is connected to the laser.
+PRODUCT THUMBNAILDisplays the product thumbnail for line direction and job-orientation.
+ Pen buttonPen button lists the actions that can be performed for active line setup pane:
+Edit Current Line SetupManage Line Setups
+16 05/16 - Rev. AH
+
+Chapter 2Touch ControlHome screen
+2.5 Toolbar
+The Toolbar provides the ability to edit the currently activated job for marking on the laser sys-tem, with options to lock and unlock the tool settings. The preview area shows the details of the
+currently active job of the laser.
+Figure 2-13: Toolbar
+The following table briefly describes the Toolbar buttons:
+Toolbar buttonDescription
+Lock and Unlock
+This is a toggle button that switches between a lock and unlock state. When you touch the Locked/Unlocked button the other toolbar buttons are locked or
+unlocked for editing.
+Adjust
+When you select the Adjust button, a popover with the current X and Y coor-dinates and the corresponding right, left, top and bottom arrow buttons are dis-
+played. You can adjust the position coordinates using the keypad or the arrow buttons. of the job by editing the X and Y
+To enter a new adjust value, see Entering a new Adjust value on page18.
+Rotate
+When you select the Rotate button a popover with the current rotation degree and the corresponding right and left arrow buttons are displayed. You can rotate
+the job by editing the rotation value, using the arrow buttons or the current rota-tion degree popover keypad.
+To enter a new rotation value, see Entering a new Rotate value on page19.
+05/16 - Rev. AH 17
+
+Touch ControlHome screenChapter 2
+2.6 Managing Toolbar buttons
+Toolbar buttonDescription
+Scale
+When you select the Scale button, a popover with the current scaling value (%) is displayed. You can scale the size of the job by editing the value, using the
+arrow buttons or the scale popover keypad.
+To enter a new scaling value, see Entering a new Scaling value on page20.
+Marking
+When you select the Marking button, a popover with current value of (%) is displayed. You can change the IntensityIntensity value by dragging the slider or
+with the keypad.
+To enter the current mark time, see Entering a new Marking value on page21.
+Variable
+When you select the Variable button, the variables in the selected job are high-lighted in the preview area. You can edit the variable of the job using the key-
+pad.
+To enter the variable details, see Entering a new Variable value on page22.
+You can manage the toolbar buttons by entering new values or by modifying an existing value.
+2.6.1 Entering a new Adjust valueThe Adjust button can also be used when the coder is marking.
+1.Touch the Adjust button on the toolbar. A popover with with corresponding left, right, top and bottom arrow buttons is displayed.the current X and Y coordinates,
+Figure 2-14: Adjust button popover
+18 05/16 - Rev. AH
+
+Chapter 2Touch ControlHome screen
+2.To edit the horizontal position of the active job, touch the position, touch the X value button and to edit the verticalY value button. A keypad is displayed.
+3.Enter the required value.
+Figure 2-15: X coordinate keypad
+4.Touch the OK button. The active job is adjusted according to the value entered.
+NoteYou can also change the values using the arrow buttons (the step size depends on the Tool Step Width set for the application in Main Settings on
+page145).
+2.6.2 Entering a new Rotate valueThe Rotate button can also be used when the laser is marking.
+1.Touch the Rotate button on the toolbar. A popover with the current rotation degree, coun-terclockwise arrow or clockwise arrow buttons is displayed.
+Figure 2-16: Rotate button popover
+2.Touch the value button. A keypad is displayed.
+05/16 - Rev. AH 19
+
+Touch ControlHome screenChapter 2
+3.Enter the required value.
+Figure 2-17: Rotate keypad
+4.Touch the OK button. The active job is rotated according to the value entered.
+NoteYou can also change the values using the CCW or CW arrow buttons (the step size depends on the Tool Step Width set for the application in Main
+Settings on page145).
+2.6.3 Entering a new Scaling value1.Touch the Scale button on the toolbar. A popover with the current scaling value (%) is dis-
+played.
+Figure 2-18: Scale button popover
+NoteThe job shown in this screen (1) does not change in size when the whole job is scaled (2). The ruler spacing (3) changes.
+2.Touch the value button. A keypad is displayed.
+3
+1
+2
+20 05/16 - Rev. AH
+
+Chapter 2Touch ControlHome screen
+3.Enter the required value.
+Figure 2-19: Scale keypad
+4.Touch the OK button. The whole job is scaled according to the value entered.
+2.6.4 Entering a new Marking value1.Touch the Marking button on the toolbar. A popover with an Intensity (%) slider is dis-
+played.
+Figure 2-20: Marking button popover
+2.To edit the Intensity values (the laser energy intensity with which the marking of the activejob is done) touch the Intensity valuebutton.
+NoteYou can also change the values using the the slider (the step size depends on Tool Step Width set for the application in Main Settings on page145).
+3.Enter the required value in the keypad.
+4.Touch the OK button. The job is marked according to the value entered.
+05/16 - Rev. AH 21
+
+Touch ControlHome screenChapter 2
+2.6.5 Entering a new Variable valueThe variable button allows you to change the offset applied to each of the current variables
+used in the job.
+1.Touch the Variable button on the toolbar. A popover with the current variable values is dis-played.
+2.Touch the variable field you want to change. For example Date_1.
+3.You can now select the date offset value or field component button to change.
+4.Touch the date offset button and a keypad is displayed. Enter the required value.
+Figure 2-21: Variable offset value
+5.Touch the OK button. The job variable changes according to the value entered.
+6.Touch the date field component button and touch the date component to use (days, weeks,months or years).
+Figure 2-22: Variable offset valuedays
+7.The element variable changes according to the value entered.
+8.Touch the Reset button. The offset value is set to zero.
+22 05/16 - Rev. AH
+
+Chapter 2Touch ControlHome screen
+2.7 Performance pane
+The PERFORMANCE pane displays the data of the last marking cycle. In addition, you canalso modify some of the Performance parameters.
+Figure 2-23: PERFORMANCE pane
+The PERFORMANCE pane displays the following fields:
+FieldDescription
+BATCH SIZEDisplays the value of the batch size for the current job.
+BATCH COUNTER Displays the number of marks carried out successfully for the current batch job on the laser system.
+MARK TIMEDisplays mark time.
+NOTE: This value cannot be edited.
+MARK COUNTDisplays the number of all markings carried out successfully with the cur-rently selected job on the laser system.
+TRIGGER COUNTDisplays the number of products (trigger signals) marked with the cur-rently selected job on the laser system.
+PEN BUTTONTouching the Pen button displays the counter dialog window as shown in the following screen shot.
+2.7.1 Counter Dialog paneTo modify the PERFORMANCE pane counters:
+1.Touch the Pen button in the PERFORMANCE pane.
+05/16 - Rev. AH 23
+
+Touch ControlHome screenChapter 2
+2.A window with the current counter values are displayed.
+Figure 2-24: Counters dialog window
+The Counters dialog window allows you to edit the following:
+Batch size
+Batch counter
+Mark Count
+Trigger Count
+2.7.2 Editing the Mark CountSelecting a different job or restarting the laser system automatically sets the Mark Count to ze-
+ro.
+1.Touch the Pen button in the PERFORMANCEplayed. pane. A Counters dialog window is dis-
+2.Touch the MARK COUNT Pen button.
+3.A keypad opens. It displays the maximum and minimum values.
+Figure 2-25: Mark Count keypad
+24 05/16 - Rev. AH
+
+Chapter 2Touch ControlHome screen
+4.Enter the total value for the MARK COUNT.
+5.Touch the OK button. The new value entered is displayed in the Counter dialog window.
+6.Touch the Cancel button to discard the modification.
+7.Touch the Close button in the MARK COUNT dialog window to return to the Home screen.
+2.7.3 Editing the Trigger CountSelecting a different job or restarting the laser system automatically sets the Trigger Count to
+zero.
+NoteThe MARK COUNT and the TRIGGER COUNTthe value of the values must be identical. If TRIGGER COUNT is higher, it indicates that not all products
+have been marked. If the value of the TRIGGER COUNTthat some products have been marked more than once. is lower, it indicates
+1.Touch the Pen button in the PERFORMANCEplayed. pane. A Counters dialog window is dis-
+2.Touch the TRIGGER COUNT Pen button.
+3.A keypad opens. It displays the maximum and minimum values.
+4.Enter the total value for the Trigger Count.
+5.Touch the OK button. The new value entered is displayed in the Counter dialog window.
+6.Touch the Cancel button to discard the modification.
+7.Touch the Close button in the Counter dialog window to return to the Home screen.
+2.7.4 Editing the Batch Size CounterDefines the number of products to be marked for a batch, for the current job. This value can be
+edited while marking. Selecting a different job or restarting the laser system automatically setsthe batch size to zero.
+1.Touch the Pen button in the PERFORMANCEplayed. pane. A Counters dialog window is dis-
+2.Touch the BATCH SIZE Pen button.
+3.A keypad opens. It displays the maximum and minimum values.
+4.Enter the total value for the Batch size.
+5.Touch the OK button. The new value entered is displayed in the Counter dialog window.
+6.Touch the Cancel button to discard the modification.
+7.Touch the 000 button to set the current batch size to zero.
+05/16 - Rev. AH 25
+
+Touch ControlHome screenChapter 2
+8.Touch the Close button in the Counter dialog window to return to the Home screen.
+2.7.5 Editing the Batch CounterThis counter is active only if a Batch size has been defined. If the value of the Batch size is
+zero, the Batch counter cannot be reset or edited. Once the Batch counter reaches the valueof the Batch size, the laser system is stopped.
+The Batch counter value can be edited while marking (for example, if incorrectly marked prod-ucts are to be replaced). Selecting a different job or restarting the laser system automatically
+sets the batch counter to zero.
+1.Touch the Pen button in the PERFORMANCEplayed. pane. A Counters dialog window is dis-
+2.Touch the BATCH COUNTER Pen button.
+3.A keypad opens. It displays the maximum and minimum values.
+4.Enter the total value for the Batch counter.
+5.Touch the OK button. The new value entered is displayed in the Counter dialog window.
+6.Touch the Cancel button to discard the modification.
+7.Touch the 000 button to set the current batch counter to zero.
+8.Touch the Close button in the Counter dialog window to return to the Home screen.
+2.8 Alerts
+The Touch Control displays the following two types of automatic alerts:
+Warnings: Displayed by a yellow Status bar as shown in the following screen shot:
+Figure 2-26: Status barWarnings
+Errors: Displayed by a red Status bar as shown in the following screen shot:
+Figure 2-27: Status barFatal Error
+Note1.If there are both Warnings and Error in red.alerts, the Status bar is displayed
+2.If there are no alerts, the Alert button (i) is not displayed on the Status bar.
+3.When the short description is touched, the complete scription is displayed.Error or Warning de-
+26 05/16 - Rev. AH
+
+Chapter 2Touch ControlHome screen
+Figure 2-28: Alert window
+The Alert window displays the following areas:
+Frame numberAreaDescription
+1AlertWhen alerts are present in the laser system, the ton is displayed on the Alert Status barbut-.
+2Status barWhen both, Warnings and Errorstus bar are displayed, the color becomes red.Sta-
+3WarningDisplays the Warnings with an icon (yellow triangle), a short description of the warning and the warning code.
+When the short description is touched, the complete warn-ing description is displayed.
+4ErrorDisplays the Errors with an icon (red triangle), a short description of the fault and the fault code. When the short
+description is touched, the complete Fault description is displayed.
+5Confirm AllTo confirm all Warnings and Errors.
+NOTE: The marking process begins only after all the Errors are confirmed.
+6Confirm and delete AllTo confirm and delete all the Warnings and Errors.
+05/16 - Rev. AH 27
+
+Touch ControlHome screenChapter 2
+2.8.1 To Confirm and delete the alerts1.Touch the i (alert button) on the Status bar.
+2.A screen is displayed with the current Warnings and Errors listed.
+Figure 2-29: Confirmed Alerts
+3.Touch Confirm All to confirm all the Alerts. Once the then a right-check is present on the icons of Errors or Warnings are confirmedErrors or Warnings as displayed in Figure2-29.
+4.Touch Confirm and Delete All to confirm and delete all the Alerts from the laser system.
+2.8.2 Fatal error
+Red fatal error status barIndicates a fatal error has occurred and the system is deactivated. The laser system has to be
+turned off.
+The fault must be corrected before the laser system is re-started. This error cannot be con-firmed and the operation cannot be continued.
+2.9 Start the marking process
+2.9.1 Select the Job to mark1.Touch the Pen button inthe JOB pane.
+2.Touch the Manage Jobs button. The Manage Jobs screen opens with a list of job names.
+28 05/16 - Rev. AH
+
+Chapter 2Touch ControlHome screen
+3.Touch the Job that you want to activate.
+Figure 2-30: Manage Jobs
+4.Touch the Activate button (1).
+NoteTouch the box (2) to preview the job content.
+5.In the Confirmation window, touch the OK button to activate the job and close the Managejobs dialog.
+6.Touch the Cancel button to discard the change and close the Manage jobs dialog.
+Figure 2-31: Manage Jobs confirm
+7.Touch the Close button of the Manage Jobs dialog to close the popover.
+8.Touch the Pen button inthe Line Setup pane
+9.Touch the Manage Line Setups.
+10.Touch the Line Setup that you want to activate.
+1
+2
+05/16 - Rev. AH 29
+
+Touch ControlHome screenChapter 2
+11.To activate the line setup touch the Activate button (1).
+Figure 2-32: Example1 Active
+12.In the Confirmation window, touch the OK button to activate the job and close the Line Setups dialog.Manage
+13.Touch the Cancel button to discard the change and close the Manage Line Setups dialog.
+Figure 2-33: Manage Line Setups confirm
+14.Touch the Close button of the Manage Line Setups dialog to close the popover.
+2.9.2 To start marking the productTo start the marking process, close the key switch. If the switch is not closed there will be no
+marking.
+1.Close the key switch.
+2.The Status bar changes from Initializing to pears.Ready to Mark and thenthe Start button ap-
+Figure 2-34: Laser ready to mark
+1
+30 05/16 - Rev. AH
+
+Chapter 2Touch ControlHome screen
+3.Touch the Start button to start the marking process. The currently selected job is ready to be marked onto the product by the laser system.
+Figure 2-35: Laser marking
+2.9.3 To stop marking the productTo stop the laser system marking the product you touch the Stop button on the Status bar.
+The Stop button is ready to useas soon as it becomes visible.
+2.10 Emergency shut down
+The last mark information will be stored by the laser system.
+If the shut down occurred during the editing of a mark, any unsaved data or changes will belost. During the time the laser is disconnected, certain buttons will be unavailable.
+When the laser reconnects, any time or date information will be updated and unsaved informa-tion cleared from the touch screen. Normal operation can then be resumed.
+If there is a hazard that prevents safe access to the Mains Power Supply Switch, operate thelocal electrical isolator switch for the laser system.
+If there is a hazard that prevents safe access to the Emergency Stop Button, operate the laserisolator switch or the local electrical isolator switch for the laser system.
+2.10.1 Restart after an emergency shut downTo restart the system after an emergency shut down, carry out the following:
+1.Switch on the laser isolator.
+2.After the Touch Control displays the Home screen and the laser connection has automaticallybeen re-established, touch the Start button on the Touch Control screen.
+3.Start the production line.
+05/16 - Rev. AH 31
+
+Touch ControlHome screenChapter 2
+32 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+3 Touch ControlProperty panes
+TheTouch Control Software has the following property panes:
+Job
+Line setup
+Performance
+3.1 Job
+The Job defines the final content that is marked on the product. A job consists of and Mark Settings. You can add a job and you can edit the details of the job. Job elements
+Job has the following options:
+Edit Current job screen. For more information, see Edit the Line Setups screen on page96.
+Edit Current Mark Settings screen. For more information, see Mark Settings on page111.
+Manage jobs screen. For more information, see Manage jobs screen on page34.
+Figure 3-36: Job Pen button options
+05/16 - Rev. AH 33
+
+Touch ControlProperty panesChapter 3
+3.2 Manage jobs screen
+The Manage jobs screen allows you to do the following:
+Activate a job, see Activating a job on page36.
+Create a job, see Creating a new job on page37.
+Edit a job, see Editing a job on page39.
+Duplicate a job, see Duplicating a job on page39.
+Delete a job, see Deleting a job on page40.
+Figure 3-37: Manage jobs screen
+The following table provides information on the different fields displayed in the screen as shown above:Manage jobs
+FieldDescription
+CreateTo create new job.
+NAMEDisplays the name of the job along with a preview box.
+ACTIVE Displays the active status of the job.
+LAST MODIFIED DATEDisplays the date the job was last modified on.
+PEN buttonPen button lists the actions that can be performed for screen:Manage jobs
+Edit Duplicate
+Delete
+CloseCloses the Manage jobs screen.
+34 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+3.3 Edit the Current job screen
+The Edit job screen (job editor) lists the job elements and the able on the laser. job Mark Settings that are avail-
+Figure 3-38: job edit screen
+The following fields are displayed:
+Frame NumberNameDescription
+1Job nameDisplays the name of the current job.
+2Preview areaDisplays the preview of the current job. The blue line indicates the Marking Field. The selected element is highlighted.
+3Quick Edit ToolbarDisplays the quick edit toolbar functionality to edit the currently activated job for marking.
+4Job ele-ments Displays the different available job elements such as static text, text variables, serial number, date, time, IDMatrix, logo,
+barcode and graphics. You can modify these job elements as well as add a new job elements, duplicate, edit and delete a
+job element.
+5Job Mark SettingsThe Mark Setting defines the printing parameters which can be set as required. You can modify these parameters as well
+as add a new mark setting, duplicate, delete and rename an existing mark setting. See Mark Settings on page111.
+6Job Element ListDisplays all the job elements for the selected job.
+7SaveSaves the changes made to the job. 7
+1
+8
+4
+5
+6
+2
+3
+05/16 - Rev. AH 35
+
+Touch ControlProperty panesChapter 3
+3.4 Activating a job
+Frame NumberNameDescription
+8CloseCloses the edit job screen.
+NOTE: If the Close button is pressed without saving, then a confirmation dialog opens with the following message Are you
+sure you want to close this dialog? All the changes from the last save will be lost. Depending on the requirement
+touch the OK or Cancel button.
+NoteSee page44 for information about the Close and the Activate dialogs.
+This section assumes a job has been created.
+1.Touch the Pen button inthe job pane. A screen opens with the following options (seeFigure3-37 on page34):
+Edit current job
+Manage jobs
+Edit Current Mark Settings
+2.Touch the Manage jobs button. The Manage jobs screen opens with a list of job names.
+3.Touch the job you want to activate.
+4.Touch the Non-activated (1) button (see Figure3-40 below). A confirmation dialog opens with the following message:
+Figure 3-39: The activate job screen
+5.Touch the OK button to confirm the changes or touch the another job.Cancel button if you want to activate
+36 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+6.The Activated (2) button appears next to the name in the Active column.
+Figure 3-40: Non-active and active job
+7.Touch the Close button in the Manage jobsThe selected job name is displayed (under job) in the screen to return to the Home screen. Active: job and Line setup panealong
+with the Mark Settings selected (Paper, for example).
+1
+2
+3.5 Creating a new job
+1.Touch the Pen button inthe job pane.
+2.Touch the Manage jobs button. The Manage jobs screen opens.
+3.Touch the Create button. A keyboard opens.
+4.Enter a name for the new job.
+5.Touch the OK button to save the new The new job is added alphanumerically to the list and the job. Edit job screen is displayed (see
+Figure3-38 on page35).
+6.Make any additions and changes to the job ason page45 for more information. required. See Adding an element to the job
+7.Touch the Save button followed by the Closeto the button to save the changes and then returnHome screen.
+3.6 Renaming a job
+NoteSee page44 for information about the Close and the Activate dialogs.
+This section assumes a job has been created.
+1.Touch the Pen button inthe job pane.
+2.Touch the Manage jobs button. The Manage jobs screen opens.
+3.Touch the job that you want to change.
+05/16 - Rev. AH 37
+
+Touch ControlProperty panesChapter 3
+4.Touch the selected job Pen button and then touch the Edit button.
+5.The Edit job screen opens. Touch the Edit jobPen button (1).
+Figure 3-41: job Rename
+6.A keyboard is displayed. Delete the old name (2) and then use the keyboard to enter a newname (3).
+Figure 3-42: job Renamed
+7.Touch the OK button. The job is renamed
+8.Touch the Save button followed by the Closeto the button to save the changes and then returnHome screen.
+NoteSee page44 for information about the Close and the Activate dialogs.
+1
+2
+3
+38 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+3.7 Editing a job
+This section assumes a job has been created.
+1.Touch the Pen button inYou can select the job Edit Current jobpane. or Manage jobs to select a job to edit.
+2.Open the Edit Current job screen (see Figure3-38 on page35).
+3.Edit the job details as required. See Edit the Current job screen on page35 for more infor-mation about how to edit a job.
+4.Touch the Save button followed by the Closeto the button to save the changes and then returnHome screen.
+3.8 Duplicating a job
+NoteSee page44 for information about the Close and the Activate dialogs.
+This section assumes a job has been created.
+1.Touch the Pen button inthe job pane.
+2.Touch the Manage jobs button. The Manage jobs screen opens.
+3.Touch the job that you want to change.
+4.Touch the selected job Pen button and then touch the Edit button.
+5.The Edit Current job screen is displayed (see Figure3-38 on page35).
+6.Touch the job element that you want to change.
+7.Touch theselected job Pen button and then touch the Duplicate button.
+8.A keyboard opens showing the duplicated name (1). Rename the element as required (2).
+NoteAny name duplicated is given a suffix _1.
+05/16 - Rev. AH 39
+
+Touch ControlProperty panesChapter 3
+1
+2
+Figure 3-43: Keyboard
+9.Touch the OK button. The job is renamed. Or touch the es.Cancel button to disregard any chang-
+10.Touch the Ret... (Return) button to return to the job Elementsis displayed in the list. list. The duplicated job element
+11.Touch the Save button followed by the Closeto the button to save the changes and then returnHome screen.
+3.9 Deleting a job
+NoteSee page44 for information about the Close and the Activate dialogs.
+This section assumes a job has been created.
+1.Touch the Pen button inthe job pane.
+2.Touch Manage jobs. The Manage jobs screen opens.
+3.Touch the job that you want to delete.
+NoteA job cannot be deleted if it is Active. The To delete the job you must first activate another job.Delete button will be greyed out.
+It is recommended that you do not delete the following jobs:
+Message1Message2
+PowerCheckTestPattern
+40 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+4.Touch theselected job Pen button and then touch the opens:Delete button. A confirmation dialog
+Figure 3-44: jobDelete screen
+5.Touch the OK button todelete the job or touch the dialog, without deleting the job.Cancel button to close the confirmation
+6.Touch the Close button to close the Manage jobs screen and return to the Home screen.
+3.10 Quick Edit Toolbar
+The Quick Edit Toolbar (QET) provides the functionality to edpreview area shows the details of the currently it the currently activated job. TheActive job of the laser.
+Figure 3-45: Job editorQuick Edit Toolbar
+05/16 - Rev. AH 41
+
+Touch ControlProperty panesChapter 3
+The following table briefly describes the QET buttons:
+QET buttonDescription
+When you select the Adjust button, a popover with the current X and Y coordinates and the corresponding right, left, top and bottom arrow buttons
+are displayed. You can adjust the position of the job by editing the X and Y coordinates using the keypad or the arrow buttons.
+Adjust
+Figure 3-46: job editor toolbarAdjust button
+To enter a new adjust value, see Entering a new Adjust value on page18.
+When you select the Rotate button, a popover with the current rotation degree, with the corresponding right and left arrow buttons is displayed.
+You can rotate the job by editing the rotation value, using the keypad or the arrow buttons.
+Rotate
+Figure 3-47: job editor toolbarRotate button
+To enter a new rotation value, see Entering a new Rotate value on page19.
+When you select the Scale button, a popover with the current Height (H) and Width (w) values are displayed. Select the Aspect Ratio () button to
+automatically set the ratio.
+Scale Figure 3-48: job editor toolbarScale button
+You can scale the size of the job by editing the H and W values, using the keypad or the sign (+ or -) buttons.
+42 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+QET buttonDescription
+When you select the Align button you have the following alignment options:
+CenterHorizontal
+Align VerticalLeft
+RightTop
+Bottom
+Figure 3-49: job editor toolbarAlign button
+Perform the following, to select the alignment:
+Touch the reference element.
+Touch the Align button. A popover with align options is displayed.
+Touch the required alignment. The selected option is highlighted.
+Touch the element to be aligned. It is aligned according to the selected alignment, with respect to the reference element (highlighted in blue). For
+multiple elements, repeat steps 1-4.
+NOTE: There should be a reference elemcedure.ent to perform the alignment pro-
+When you select the Zoom button, a popover with an adjustable scale is displayed for the entire display of the job elements in the preview area, to
+zoom-in and zoom-out. You can change towards + or -.the zoom by dragging the slider
+Zoom
+Figure 3-50: Job editor toolbarZoom button
+Select the Zoom toMarking field button (1) to display the entire marking field (100%) in the preview area.
+Zoom ranges from 10% to 1000%, zooms from the center of the field. Marking
+When you select the Undo button, you can undo all the previous actions till the last saved action. Once save button is pressed, undo action cannot be
+performed.
+Undo Figure 3-51: Job editor toolbarUndo button
+1
+05/16 - Rev. AH 43
+
+Touch ControlProperty panesChapter 3
+3.11 Working with job elements
+When you add a job, by default, it comprises of mark settings and the option to add any jobelements you require. For more information about job elements, see Types of job elements
+on page49.
+You can add, edit, rename, duplicate and delete a jmation about job elements, see Editing a job element on page47.ob element to/from the job. For more infor-
+Select the Edit Current job or the Manage jobs button to select a job to edit and open the job screen. Edit
+Note1.If the Close button is touched without saving, a confirmation dialog opens:
+Figure 3-52: Close dialog
+2.To save the changes, touch the Yes button or touch the then touch the Save Cancelbutton. button and
+To disregard the changes and close the dialog box touch the and return to the Home screen.No button
+3.Touch the Close button.
+4.Before returning to the Home screen a confirmation dialog opens:
+Figure 3-53: Activate Job dialog
+5.Touch the Yes or No button as required and return to the See Activating a job on page36 for further details.Home screen.
+44 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+3.12 Adding an element to the job
+This section assumes a job element has been created and the Edit job screen is open.
+1.Touch the Add button in the A drop-down list with all the avaijob Elements screen. lable elements types are displayed.
+Figure 3-54: Edit Current jobAdd job elements
+2.Touch a job element from the drop-down list. A keyboard is displayed.
+3.Click into preview area to place job element.
+4.Enter the job information in the applicable fields. The following table describes the job fields.For more information about how to add an element to the job, see Examples for Touch Con-
+trol on page149.
+FieldDescription
+Element typeThe element type for the job element. The element type options are text, variable, IDMatrix, logo, barcode and graphics. For more informa-
+tion about job element types, see Types of job elements on page49.
+Mark SettingsThe mark setting for the job element. Touch the and Customize screen opens.Pen button, the Presets
+Presets: displays all the available or pre-created Mark Settings.
+Customize: The parameters of individual Mark Settings is displayed.
+For more information about mark settings, see Mark Settings on page111.
+5.Touch the Save button to save the changes.
+6.Touch the Close button to close the Edit Current job screen and return to the Home screen.
+NoteSee page44 for information about the Close and the Activate dialogs.
+05/16 - Rev. AH 45
+
+Touch ControlProperty panesChapter 3
+3.13 Renaming a job element
+This section assumes a job element has been created and the Edit job screen is open.
+1.Touch the job element in the job Elements list you want to change.
+2.Touch the selected job element Pen button and then touch the Edit button.
+3.Touchthe Pen button (1) in the Edit job screen.
+Figure 3-55: Rename job element
+4.Delete the old name (2) and then use the keyboard to enter a new name (3).
+Figure 3-56: Renaming
+5.Touch the OK button. The job element is renamed and the keyboard closes.
+6.Touch the Save button followed by the Closeto the button to save the changes and then returnHome screen.
+NoteSee page44 for information about the Close and the Activate dialogs.
+1
+2
+3
+46 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+3.14 Editing a job element
+This section assumes a job element has been created and the Edit job screen is open.
+1.Touch the job element in the job Elements list you want to change.
+2.Touch the selected job element Pen button and then touch the Edit button.
+Figure 3-57: Job elementPen button options
+3.Change the job element information in the respective fields.
+4.Touch the Save button to save the changes.
+5.Touch the Close button to close the Edit Current job screen and return to the Home screen.
+3.15 Duplicating a job element
+NoteSee page44 for information about the Close and the Activate dialogs.
+This section assumes a job element has been created and the Edit job screen is open.
+1.Touch the job element in the job Elements list you want to change.
+2.Touch the selected job element Pen button and then touch the Duplicate button.
+05/16 - Rev. AH 47
+
+Touch ControlProperty panesChapter 3
+3.A keyboard opens showing the duplicated name (1). Rename the element, if required (2).
+Figure 3-58: Rename job element
+3.Touch the OK button. The job element is renamed.Or touch the Cancel button to disregard any changes.
+4.Touch the Return button to return to the job Elementsdisplayed in the list. list. The duplicated job element is
+5.Touch the Save button followed by the Closeto the button to save the changes and then returnHome screen.
+1
+2
+3.16 Deleting a job element
+Note1.Any name duplicated is given a suffix _1.
+2.The duplicated job element has all the same parameters as the original,including the same X and Y position and will sit on top of the original element.
+You must move the duplicated element before use.
+NoteSee page44 for information about the Close and the Activate dialogs.
+This section assumes a job element has been created and the Edit job screen is open.
+1.Touch the job element in the job Elements list you want to change.
+2.Touch the Pen button of the job element that you want to delete.
+48 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+3.Touch the Delete button. A confirmation dialog opens with the following job:
+Figure 3-59: Delete a job element
+4.Touch the OK button to delete the job element details.Touch the Cancel button to close the confirmation dialog, without deleting the job element.
+5.Touch the Save button to save the changes.
+6.Touch the Close button to close the Edit Current job screen and return to the Home screen.
+3.17 Types of job elements
+NoteSee page44 for information about the Close and the Activate dialogs.
+The following are the different types of job elements:
+Static Text, see Updating a Static Text element on page50.
+Date, see Updating a Text Variable element on page54.
+Time, see Updating the Time element on page61.
+Serial number, see Updating the Serial Number element on page64.
+Text Variables, see Updating the Shift Code element on page67.
+IDMatrix, see Updating the Shift Code element on page67.
+Barcode, see Updating the Barcode element on page79.
+Shift Code, see Updating the Graphic element on page87.
+Graphic, see Updating the Graphic element on page87.
+Logo, see Updating the Logo element on page91.
+05/16 - Rev. AH 49
+
+Touch ControlProperty panesChapter 3
+3.18 Updating a Static Text element
+This section assumes that a Static Text job element is used in the job selected and the job screen is open.Edit
+1.Touch the Static Text element you want to update. A pen button is displayed.
+2.Touch the Static Text Pen button and then touch the Edit button.
+Figure 3-60: Update Static Text element
+3.Enter the job element information in the respecshot. tive fields as shown in the following screen
+Figure 3-61: Static Text element parameters
+50 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+The following table describes the Static Text fields:
+FieldDescription
+STATIC TEXT: The variables of the static text element
+ContentThe content (for example, text) to be marked for the job element.
+FontThe font for the content of the text element.
+Font SizeWhen you add the element to the field, the font size is calculated according to the height/margin settings of the field.
+SpacingYou can set the space between the characters of the text element.
+The default value is 0.
+POSITIONING: The position of the element within the Marking field
+X Defines the X-position of the element.
+Y Defines the Y-position of the element.
+CenterSelect this checkbox if you want to center-align the element in the center point of the X and Y coordinates.
+HeightThe height of the element.
+NOTE: See Keep Aspect Ratio below (in this table).
+WidthThe width of the element.
+NOTE: The unit of measurement thatin the Main Settings screen. See Main Settings on page145. is displayed can be modified
+Keep Aspect RatioSelect this checkbox if you want to maintain the aspect ratio of the element when the height or width is changed.
+This option is not available for Barcodes and IDMatrix.
+NOTE: If you select this checkbox, the Scale constrain icon is
+locked.
+See Orientation below for Keep Aspect Ratio limitations.
+OrientationYou can set the orientation for the element within the field.
+The default value is 0.
+If an orientation of 0, 90, 180 or 270 the button can be selected. If any other orientation is entered, for Keep Aspect Ratio
+example, 15, the Keep Aspect Ratioavailable. button will no longer be
+Open Locked
+05/16 - Rev. AH 51
+
+Touch ControlProperty panesChapter 3
+FieldDescription
+ALIGNMENT: You can set the alignment of the text element either to left, right, center, or block. The element will be aligned according to the Field
+Width that is set.
+TypeLeft: Aligns the element to the left of the field width.
+Right: Aligns the element to the right of the field width.
+Center: Aligns the element to the center of the field width.
+Block: Resizes the element to fit the entire field width.
+NOTE: By default, the element is left aligned.
+Field WidthThe element will be aligned according to the set. You can set the Field Width with a keypad.Field Width that is
+MARK SETTINGSThe mark setting for the job element.
+You can set the quality of the marking against the speed of the marking. For more information about mark settings, see Mark Set-
+tings on page111.
+FILLING:The filling for the job element.
+OutlinesSelect this checkbox to display the marking outlines of the ele-ments.
+Overlapped linesSelect this checkbox if you do not want to display the marking out-lines of the underlying graphic.
+Figure 3-62: Overlapped lines
+FillingSelect this checkbox if you want to specify the filling parameters.
+Overlapped
+AI Graphic
+Overlapped
+52 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+FieldDescription
+Filling DirectionDefines the angle of the filling. If you specify the value as 0, then the filling is carried out horizontally from left to right.
+You can enter a value by, touching the Filling direction field.
+Figure 3-63: Filling direction
+Edge DistanceThe value defines the distance to the edge of the element, an area that is not filled.
+You can enter a value for the edge distance by, touching the distance entry field.Edge
+Figure 3-64: Edge distance
+Line SpacingThe value defines the distance befilling. tween the individual lines of a
+You can enter a value for the line spacing by, touching the Spacing entry field.Line
+Figure 3-65: Line spacing
+Filling direction
+Edge distance
+Line spacing
+05/16 - Rev. AH 53
+
+Touch ControlProperty panesChapter 3
+Number of filling Number of filling Number of filling Number of filling
+cycles = 1 cycles = 2 cycles = 3 cycles = 4
+Angle of following cycles
+Filling direction
+4.Touch the Save button to save the changes.
+5.If required, touch the Return button to make further changes to the list of job elements.
+6.Touch the Close button to close the Edit job screen and return to the Home screen.
+FieldDescription
+Multiple FillingsThe value defines the number of filling cycles being carried out.
+You can enter a value by touching the Multiple fillings entry field.
+3.19 Updating a Text Variable element
+Figure 3-66: Multiple fillings
+Angle ChangeThe value defines the angle change of the next filling cycle.
+You can enter a value by touching the cycles entry field.Angle change of following
+Figure 3-67: Angle change
+The default value is 45.
+NoteSee page44 for information about the Close and the Activate dialogs.
+This section assumes that a Text Variable job element is used in the job selected and the job screen is open.Edit
+1.Touch the Text Variable element you want to update. A pen button is displayed.
+54 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+2.Touch the Pen button and then touch the Edit button.
+Figure 3-68: Update Text Variable element
+3.Enter the job element information in the respecshot. tive fields as shown in the following screen
+Figure 3-69: Text Variable element parameters
+The following table describes the fields:
+FieldDescription
+TEXT VARIABLE: The variables of the text variable element.
+TextThe content for the text variable.
+CharactersThe maximum character length for the text variable.
+NOTE: The number changes according to the characters entered in the text field. You can enter a larger number if you need space for
+more characters in this text field.
+05/16 - Rev. AH 55
+
+Touch ControlProperty panesChapter 3
+FieldDescription
+CodingFollowing are the types of coding for the text variable:
+Standard: The variable is coded in UTF-8 format.Binary: The variable is binary coded. If this coding format is se-
+lected, only characters from 0 to 9 and A to F are to be used in the entry field.
+NOTE: Assuming Standard is defined as coding and a standard text with an odd character number has been entered, the number of
+characters is automatically set to an even number of characters, which differ from the ones mentioned above, are deleted if the cod-
+ing is changed to Binary. If coding is set to Binary and an odd num-ber of characters is entered, an error message appears indicating
+that binary variables require an even number of characters. If Binary is set and the character number is increased or decreased by
+means of the arrow keys, this is done in steps of two.
+Mark OnceThe behaviour of the text variable is determined, if no new data con-tent is made available when marking. The following three options
+are available:
+Standard: The text variable content is marked by default.Mark Once (warning): The text variable content is marked once.
+During the marking process, a warning is created which contains the current variable contents. However, the marking process is
+not stopped.Mark Once (error): The text variable content is marked once.
+During the marking process, an error state is created. The mark-ing process is stopped.
+FONTThe font variables of the text variable element. For more information about font, see Font on page51.
+POSITIONINGThe position of the element within the marking field. For more infor-mation about positioning, see POSITIONING:on page51.
+ALIGNMENTYou can set the alignment of the tecenter, or block. The element will be aligned according to the Field xt element either to left, right,
+Width that is set. For more information about alignment, see ALIGNMENT: on page52.
+MARK The mark setting for the job element. You can set the quality of the marking against the speed of the marking. For more information
+SETTINGS about mark settings, see Mark Settings on page111.
+FILLINGSelect the filling for the job element. You can also modify the filling details. For more information about filling, see FILLING: on
+page52.
+56 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+4.Touch the Save button to save the changes.
+5.If required, touch the Return button to make further changes to the list of job elements.
+6.Touch the Close button to close the Edit job screen and return to the Home screen.
+3.20 Updating the Date element
+NoteSee page44 for information about the Close and the Activate dialogs.
+This section assumes that a Date job element is used in the job selected and the screen is open.Edit job
+1.Touch the Date element you want to update. A pen button is displayed.
+2.Touch the Pen button and then touch the Edit button.
+Figure 3-70: Update Date element
+3.Enter the job element information in the respecshot.tive fields as shown in the following screen
+Figure 3-71: Date element parameters
+05/16 - Rev. AH 57
+
+Touch ControlProperty panesChapter 3
+The following table describes the fields:
+FieldDescription
+DATE FORMAT: The variables of the date element.
+Date FormatYou can select from different default date formats or generate your own date format with up to six elements.
+The elements of the chosen date format are displayed in the six other fields.
+A preview of the current date is displayed in the preview window.
+You can select from the following default date formats:
+ddmmyy (03.04.09)dmyy (3.4.09)
+ddmmyy (03.04.2009)ddmmyyyy (3.4.2009)
+mmddyy (04/03/09)mdyy (4/3/09)
+mmddyyyy (04/03/2009)mdyyyy (4/3/2009)
+Julian ddd (093)Julian and year dddy (0939)
+Calendar week and year (109)Custom
+1st segmentTo customize your own date format, select the desired 1st segment from following:
+Day(01)Day short (1)
+Month (01)Month short (1)
+Year (2009)Year (09)
+Year (9)Julian day
+WeekdayCalendar week
+My weekdayMy day
+My monthMy year
+none
+58 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+FieldDescription
+SeparatorTo customize your own date format, select the desired element from following separator:
+Dot (.)Slash (/)
+Dash (-)Colon (:)
+space ( )none
+2nd segmentTo customize your own date format, select the desired 2nd segment from following:
+Day(01)Day short (1)
+Month (01)Month short (1)
+Year (2009)Year (09)
+Year (9)Julian day
+WeekdayCalendar week
+My weekdayMy day
+My monthMy year
+none
+SeparatorTo customize your own date format, select the desired element from following separator:
+Dot (.)Slash (/)
+Dash (-)Colon (:)
+space ( )none
+05/16 - Rev. AH 59
+
+Touch ControlProperty panesChapter 3
+FieldDescription
+3rd segmentTo customize your own date format, select the desired 3rd segment from following:
+Day(01)Day short (1)
+Month (01)Month short (1)
+Year (2009)Year (09)
+Year (9)Julian day
+WeekdayCalendar week
+My weekdayMy day
+My monthMy year
+none
+SeparatorTo customize your own date format, select the desired element from following separator:
+Dot (.)Slash (/)
+Dash (-)Colon (:)
+space ( )none
+NoteUsing the custom terms My weekday/day/month/yearapply: the following rules
+use only roman characters and numbers,letters A-Z and all digits 0-9 in any sequence. e.g. letters from a-z and capital
+the term items must contain at least one letter or digit.
+all term items must be separated by a colon (:) and must end with a colon.
+My day must be defined by exactly 31 term items.
+My weekday must be defined by exactly 7 term items.
+My month must be defined by exactly 12 term items.
+4.Touch the Save button to save the changes.
+5.If required, touch the Return button to make further changes to the list of job elements.
+6.Touch the Close button to close the Edit job screen and return to the Home screen.
+NoteSee page44 for information about the Close and the Activate dialogs.
+60 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+3.21 Updating the Time element
+This section assumes that a Time job element is used in the job selected and the screen is open.Edit job
+1.Touch the Time element you want to update. A pen button is displayed.
+2.Touch the Pen button and then touch the Edit button.
+Figure 3-72: Update Time element
+3.Enter the job element information in the respecshot. tive fields as shown in the following screen
+Figure 3-73: Time elements Parameters
+05/16 - Rev. AH 61
+
+Touch ControlProperty panesChapter 3
+The following table describes the fields:
+FieldDescription
+TIME FORMAT: The variables of the time element.
+Time FormatYou can select among different default time formats or generate your own time format with up to six elements. The elements of the
+chosen time format are displayed in the six fields.
+A preview of the current time is displayed in the preview window.
+You can select from the following default time formats:
+European (hhmmss)European (hhmm)
+American (hmmssid)American (hmmid)
+American (hid)Custom
+1st segmentTo customize your own time format, select from the following 1st segment:
+Second (03)Second short (3)
+Minute (03)Minute short (3)
+Hour (09)Hour short (9)
+Hour American 0-11 (9)am/pm symbol (am)
+none
+SeparatorTo customize your own time format, select the desired element from following separator:
+Dot (.)Slash (/)
+Dash (-)Colon (:)
+am/pm symbol (am)space ( )
+none
+62 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+FieldDescription
+2nd segmentTo customize your own time format, select from the following 2nd segment:
+Second (03)Second short (3)
+Minute (03)Minute short (3)
+Hour (09)Hour short (9)
+Hour American 0-11 (9)am/pm symbol (am)
+none
+SeparatorTo customize your own time format, select the desired element from following separator:
+Dot (.)Slash (/)
+Dash (-)Colon (:)
+am/pm symbol (am)space ( )
+none
+3rd segmentTo customize your own time format, select from the following 3rd segment:
+Second (03)Second short (3)
+Minute (03)Minute short (3)
+Hour (09)Hour short (9)
+Hour American 0-11 (9)am/pm symbol (am)
+none
+SeparatorTo customize your own time format, select the desired element from following separator:
+Dot (.)Slash (/)
+Dash (-)Colon (:)
+am/pm symbol (am)space ( )
+none
+05/16 - Rev. AH 63
+
+Touch ControlProperty panesChapter 3
+4.Touch the Save button to save the changes.
+5.If required, touch the Return button to make further changes to the list of job elements.
+6.Touch the Close button to close the Edit job screen and return to the Home screen.
+FieldDescription
+OffsetA positive or negative offset for the current time. You can enter the desired value and select from Seconds, Minutes, or Hours from the
+3.22 Updating the Serial Number element drop-down. The maximum value is 9999 hours. The minimum value is -999 hours.
+FONTThe font variables of the time element. For more information about font, see Font on page51.
+POSITIONINGThe position of the time element within the marking field. For more information about positioning, see POSITIONING: on page51.
+ALIGNMENTYou can set the alignment of the time element either to left, right, center, or block. The element will be aligned according to the Field
+Width that is set. For more information about alignment, see ALIGNMENT: on page52.
+MARK SETTINGSThe mark setting for the time element. You can set the quality of the marking against the speed of the marking. For more information
+about mark settings, see Mark Settings on page111.
+FILLINGSelect the filling for the time element. You can also modify the filling details. For more information about filling, see FILLING: on
+page52.
+NoteSee page44 for information about the Close and the Activate dialogs.
+This section assumes that a Serial Number job element is used in the job selected and theEdit job screen is open.
+1.Touch the Serial Number element you want to update. A pen button is displayed.
+64 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+2.Touch the Pen button and then touch the Edit button.
+Figure 3-74: Update Serial number element
+3.Enter the job element information in the respecshot. tive fields as shown in the following screen
+Figure 3-75: Serial number element parameters
+The following table describes the fields:
+FieldDescription
+SERIAL NUMBER: The group of variables for a serial number variable.
+A serial number can be used to identify an individual product in a batch of products.
+Start ValueDefines the start value for the serial number variable.
+End ValueDefines the end value for the serial number variable.
+RangeDefines the range of digits that are used for the marking of serial numbers. Default setting is 0 to 9. You can reduce the range of dig-
+its or use characters (A to Z) for the marking.
+05/16 - Rev. AH 65
+
+Touch ControlProperty panesChapter 3
+FieldDescription
+IncrementDefines how many digit positions shall separate one serial number from the next one. Enter positive values for increasing and negative
+values for decreasing serial numbers.
+RepetitionDefines the number of products to be marked with the same serial number consecutively.
+Leading DigitsSelects or deselects the display of leading digits. If the leading digits are not displayed, the serial number field changes its width accord-
+ing to the number of digits. No blanks are displayed and adjoining elements may shift.
+Stop At End Value Sets the stop value for the laser to stop. If this checkbox is selected, the laser stops if the marking of the end value is completed. If it is
+not selected, the laser starts marking again from the start value once the end value is completed.
+FONTThe font variables of the serial number element. For more informa-tion about font, see Font on page51.
+POSITIONINGThe position of the serial number elFor more information about posiement within the marking field. tioning, see POSITIONING: on
+page51.
+ALIGNMENTYou can set the alignment of the left, right, center, or block. The element will be aligned according to serial number element either to
+the Field Width that is set. For more information about alignment, see ALIGNMENT: on page52.
+MARK SETTINGSThe mark setting for the serial number element. You can set the quality of the marking against the speed of the marking. For more
+information about mark settings, see Mark Settings on page111.
+FILLINGSelect the filling for the serial number element. You can also modify the filling details. For more information about filling, see FILLING:
+on page52.
+4.Touch the Save button to save the changes.
+5.If required, touch the Return button to make further changes to the list of job elements.
+6.Touch the Close button to close the Edit job screen and return to the Home screen.
+NoteSee page44 for information about the Close and the Activate dialogs.
+66 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+3.23 Updating the Shift Code element
+This section assumes that a Shift Code job element is used in the job selected and the job screen is open.Edit
+1.Touch the Shift Code element you want to update. A pen button is displayed.
+2.Touch the Pen button and then touch the Edit button.
+Figure 3-76: Updating a Shift code element
+3.Enter the job element information in the respecshot. tive fields as shown in the following screen
+Figure 3-77: Shift code element parameters
+05/16 - Rev. AH 67
+
+Touch ControlProperty panesChapter 3
+The following table describes the fields:
+FieldDescription
+SHIFT CODE: A shift code is used to mark different codes at different times of day on your product. This can be used, for example, to add a label of the
+respective shift in which the product was produced to the marking.
+SHIFT CODESThe content for the text variable.
+WeekdaysSelect the Weekdays checkbox to enable or disable the use of weekdays. If the option is unchecked, the entered shift code is used
+Everyday.
+CharactersThe maximum character length for the text variable.
+NOTE: The number changes according to the characters entered in the text field. You can enter a larger number if you need space for
+more characters in this text field.
+Add Shift CodeTouch the Add button to generate a new shift code. Select the newly added shift code, touch the Pen button and then select Edit
+and enter the following details:
+Content: Enter the text for the shift code.
+Start Time: Enter the desired time through keypad.
+Weekday: If this option is active, select the desired weekday.
+NOTES:1.The shift code displayed is always sorted based on time and
+weekday.
+2.The newly added shift code is always incremented by an hour fromthe previous shift code start time.
+SHIFT CODESThe variable of shift code elemenselected.ts, when Weekday checkbox is
+WeekdaysSelect this checkbox if you want to enable the shift code for a partic-ular weekday. If you uncheck this option, the entered shift code is
+used on Everyday.
+ContentThe text to be marked on the product.
+Start TimeThe time from which the new shift code is marked on the product.
+WeekdayThe weekday on which the shift code is to be marked on the prod-uct.
+FONTThe font variables of the serial number element. For more informa-tion about font, see Font on page51.
+POSITIONINGThe position of the serial number element within the marking field. For more information about positioning, see POSITIONING: on
+page51.
+68 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+3.Touch the Save button to save the changes.
+4.If required, touch the Return button to make further changes to the list of job elements.
+5.Touch the Close button to close the Edit job screen and return to the Home screen.
+3.24 Updating the IDMatrix element
+FieldDescription
+ALIGNMENTYou can set the alignment of the serial number element either to left, right, center, or block. The element will be aligned according to
+the Field Width that is set. For more information about alignment, see ALIGNMENT: on page52.
+MARK SETTINGSThe mark setting for the serial number element. You can set the quality of the marking against the speed of the marking. For more
+information about mark settings, see Mark Settings on page111.
+FILLINGSelect the filling for the serial number element. You can also modify the filling details. For more information about filling, see FILLING:
+on page52.
+NoteSee page44 for information about the Close and the Activate dialogs.
+This section assumes that a IDMatrix code job element is used in the job selected and the job screen is open.Edit
+1.Touch the IDMatrix code element you want to update. A pen button is displayed.
+2.Touch the Pen button and then touch the Edit button.
+Figure 3-78: Update ID Matrix code element
+05/16 - Rev. AH 69
+
+Touch ControlProperty panesChapter 3
+3.Enter the job element information in the respecshot. tive fields as shown in the following screen
+Figure 3-79: IDMatrix code element parameters
+4.If you select the IDMatrix code to be an ECC000enter the information in the additional applicable fields., ECC050, ECC080, ECC100 or ECC140,
+The following table describes the fields:
+FieldDescription
+IDMatrix: Select the ID Matrix code type for the job element.
+IDMatrix code TypeThe available ID Matrix code options are Aztec, DotCode, ECC000, ECC050, ECC080, ECC100, ECC140, ECC200, ECC-Plain and
+QR.
+Chars AllowedThe button shows the characters available for the matrix code type currently selected.
+DATAThe variable elements are listed. You can select the add new elements to the list. You can Add button to Edit or Delete the elements.
+REPRESENTA-TION:The representation for the ID Matrix code element.
+70 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+FieldDescription
+RepresentationSelect the representation for the ID Matrix code element from the drop down menu. The options are Dots, Grid, Meander and Swipe.
+Figure 3-80: Representation
+Dots: The code elements are marked in little dots. Grid: The laser marks in straight lines and jumps to the next marking
+position moving the mirrors.Meander: The code elements are marked in little meanders instead
+of straight lines.Swipe: The laser moves in straight lines but instead of jumping the
+laser is switched on and off. For this the mark settings Mark-Delay and Stroke-DelayJump-Delay must be zero. The marking is con-,
+trolled via mark settings On-Delaytional values for and Off-Delay and by the addi-Jump distance and Line displacement of the ID
+Matrix representation.
+NOTES:1. The default representation of ID Matrix code is grid.
+2. Dots take longer time to mark.3. Grids take shorter time to mark.
+Display InvertedIf this checkbox is activated, thinverted: black as white and vice versa.e ID matrix code is displayed
+Figure 3-81: Display inverted
+POSITIONINGThe position of the ID Matrix code within the marking field. For more information about positioning, see POSITIONING:on page51.
+XY1043
+Dots Grid
+ECC200
+XY1044
+Normal
+Inverted
+ECC200
+05/16 - Rev. AH 71
+
+Touch ControlProperty panesChapter 3
+FieldDescription
+MARK SETTINGSThe mark setting for the ID Matrix code. You can set the quality of the marking against the speed of the marking. For more information
+about mark settings, see Mark Settings on page111.
+5.If you select the IDMatrix code to be an ECC200plicable fields. , enter the information in the additional ap-
+The following table describes the fields:
+FieldDescription
+DATA:The variable elements are listed.
+DataYou can select the Add button to add new elements to the list. You can Edit or Delete the elements.
+REPRESENTA-TION:The representation for the ID Matrix code element
+RepresentationSelect the representation for the ID Matrix code element from the drop down menu. The options are Dots, Grid, Meander and Swipe.
+Figure 3-82: RepresentationECC200
+Dots: The code elements are marked in little dots. Grid: The laser marks in straight lines and jumps to the next marking
+position moving the mirrors.Meander: The code elements are marked in little meanders instead
+of straight lines.Swipe: The laser moves in straight lines but instead of jumping the
+laser is switched on and off. For this the mark settings Mark-Delay and Stroke-DelayJump-Delay must be zero. The marking is con-,
+trolled via mark settings On-Delaytional values for and Off-Delay and by the addi-Jump distance and Line displacement of the ID
+Matrix representation.
+NOTES:1. The default representation of ID Matrix code is grid.
+2. Dots take longer time to mark.3. Grids take shorter time to mark.
+XY1043
+Dots Grid
+ECC200
+72 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+XY1044
+Normal
+Inverted
+ECC200
+FieldDescription
+Display InvertedIf this checkbox is activated, the ID Matrix code is displayed inverted: black as white and vice versa.
+Figure 3-83: Display invertedECC200
+LINES AND COL-UMNS:With the presetting Optimum checkbox the size of the matrix code is adapted automatically.
+Lines and ColumnsIf you want to define the size yourself, deactivate box and select a size from the list field.Optimum check-
+POSITIONINGThe position of the ID Matrix code within the marking field. For more information about positioning, see POSITIONING:on page51.
+MARK SETTINGSThe mark setting for the ID Matrix code. You can set the quality of the marking against the speed of the marking. For more information
+about mark settings, see Mark Settings on page111.
+6.If you select the IDMatrix code to be an ECC-Plainapplicable fields. , enter the information in the additional
+The following table describes the fields:
+FieldDescription
+DATA:The variable elements are listed.
+DataYou can select the Add button to add new elements to the list. You can Edit or Delete the elements.
+REPRESENTA-TION:The representation for the ID Matrix code element
+05/16 - Rev. AH 73
+
+Touch ControlProperty panesChapter 3
+FieldDescription
+RepresentationSelect the representation for the ID Matrix code element from the drop down menu. The options are Dots, Grid, Meander and Swipe.
+Figure 3-84: Dots or GridECC-Plain
+Dots: The code elements are marked in little dots. Grid: The laser marks in straight lines and jumps to the next marking
+position moving the mirrors.Meander: The code elements are marked in little meanders instead
+of straight lines.Swipe: The laser moves in straight lines but instead of jumping the
+laser is switched on and off. For this the mark settings Mark-Delay and Stroke-DelayJump-Delay must be zero. The marking is con-,
+trolled via mark settings On-Delaytional values for and Off-Delay and by the addi-Jump distance and Line displacement of the ID
+Matrix representation.
+NOTES:1. The default representation of ID Matrix code is grid.
+2. Dots take longer time to mark.3. Grids take shorter time to mark.
+Display InvertedIf this checkbox is activated, the ID Matrix code is displayed inverted: black as white and vice versa.
+Figure 3-85: Display invertedECC-Plain
+LINES AND COL-UMNS:The lines and columns for the ID Matrix code element
+Lines and ColumnsSelect the value for lines or column.
+The default value for both fields is 20.
+XY1164
+Grid
+Dots
+ECC_Plain
+XY1165
+Normal
+ECC-Plain Inverted
+74 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+FieldDescription
+POSITIONINGThe position of the ID Matrix code within the marking field. For more information about positioning, see POSITIONING:on page51.
+MARK SETTINGSThe mark setting for the ID Matrix code. You can set the quality of the marking against the speed of the marking. For more information
+about mark settings, see Mark Settings on page111.
+7.If you select the IDMatrix code to be a QR code, enter the information in the additional ap-plicable fields.
+The following table describes the fields:
+FieldDescription
+DATA:The variable elements are listed.
+DataYou can select the Add button to add new elements to the list. You can Edit or Delete the elements.
+RepresentationSelect the representation for the ID Matrix code element from the drop down menu. The options are Dots, Grid, Meander, Swipe.
+Figure 3-86: RepresentationQR
+Dots: The code elements are marked in little dots. Grid: The laser marks in straight lines and jumps to the next marking
+position moving the mirrors.Meander: The code elements are marked in little meanders instead
+of straight lines.Swipe: The laser moves in straight lines but instead of jumping the
+laser is switched on and off. For this the mark settings Mark-Delay and Stroke-DelayJump-Delay must be zero. The marking is con-,
+trolled via mark settings On-Delaytional values for and Off-Delay and by the addi-Jump distance and Line displacement of the ID
+Matrix representation.
+NOTES:1. The default representation of ID Matrix code is grid.
+2. Dots take longer time to mark.3. Grids take shorter time to mark.
+XY1067
+Dots Grid
+QR
+05/16 - Rev. AH 75
+
+Touch ControlProperty panesChapter 3
+XY1066
+QR
+Normal Inverted
+FieldDescription
+Display invertedIf this checkbox is activated, the ID Matrix code is displayed inverted: black as white and vice versa.
+Figure 3-87: Display invertedQR
+QR MATRIX:The version of the QR code is defined, which can vary from 1 to 40.
+VersionEach version consists of a different number of modules, for exam-ple, version 1 (21 x 21 modules) up to version 40 (177 x 177 mod-
+ules). As each version can only store a determined maximum data volume, higher QR code symbol versions are required for more
+extensive QR codes. The default value is 1.
+LevelThe QR code is capable to fulfil error corrections to restore data if the code is dirty or damaged. Four error correction levels are avail-
+able: L (approximately 7%), M (approximately 15%), Q (approxi-mately 25%) and H (approximately 30%). The higher the selected
+level, the higher is the capability of the error correction. At the same time, the data volume of the QR code increases. The default value
+is L.
+ModeThe mode of the QR code can be defined here. When choosing the setting as 8 bit, only numbers can be used in the code. With the set-
+ting Kanji, letters can also be used. If you select the Case sensitivity checkbox, lower and upper case letters are represented in the QR
+code. The default value is 8 bit.
+POSITIONINGThe position of the ID Matrix code within the marking field.
+For more information about posipage51.tioning, see POSITIONING:on
+MARK SETTINGSThe mark setting for the ID Matrix code. You can set the quality of the marking against the speed of the marking. For more information
+about mark settings, see Mark Settings on page111.
+8.If you select the IDMatrix code to be a DotCode applicable fields. code, enter the information in the additional
+The following table describes the fields:
+FieldDescription
+DATA:The variable elements are listed.
+76 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+FieldDescription
+DataYou can select the Add button to add new elements to the list. You can Edit or Delete the elements.
+RepresentationSelect the representation for the ID Matrix code element from the drop down menu. The options are Dots, Grid, Meander, Swipe.
+Figure 3-88: RepresentationDotCode
+Dots: The code elements are marked in little dots. Grid: The laser marks in straight lines and jumps to the next marking
+position moving the mirrors.Meander: The code elements are marked in little meanders instead
+of straight lines.Swipe: The laser moves in straight lines but instead of jumping the
+laser is switched on and off. For this the mark settings Mark-Delay and Stroke-DelayJump-Delay must be zero. The marking is con-,
+trolled via mark settings On-Delaytional values for and Off-Delay and by the addi-Jump distance and Line displacement of the ID
+Matrix representation.
+NOTES:1. The default representation of ID Matrix code is grid.
+2. Dots take longer time to mark.3. Grids take shorter time to mark.
+LINES AND COL-UMNS:The lines and columns for the ID Matrix code element
+Drop down menuHeight to width ratio: Using the values for rows and columns the desired ratio of the DotCode is defined. The values must be differ-
+ent.Fixed number of rows: Enter the desired number of rows. The
+number of columns varies depending of the contents to be coded.Fixed number of columns: Enter the desired number of columns.
+The number of rows varies depending of the contents to be coded.
+Lines and ColumnsEnter the value for lines and/or columns, depending on the selection above.
+POSITIONINGThe position of the ID Matrix code within the marking field.
+For more information about posipage51.tioning, see POSITIONING:on
+Dots Grid
+DotCode
+05/16 - Rev. AH 77
+
+Touch ControlProperty panesChapter 3
+FieldDescription
+MARK SETTINGSThe mark setting for the ID Matrix code. You can set the quality of the marking against the speed of the marking. For more information
+about mark settings, see Mark Settings on page111.
+DotCode:
+DotCode gapDefine an additional gap between the dots.
+Literal encodingIf active, only code set B is used for coding.
+9.If you select the IDMatrix code to be an Aztec applicable fields. code, enter the information in the additional
+The following table describes the fields:
+FieldDescription
+DATA:The variable elements are listed.
+DataYou can select the Add button to add new elements to the list. You can Edit or Delete the elements.
+RepresentationSelect the representation for the ID Matrix code element from the drop down menu. The options are Dots, Grid, Meander and Swipe.
+Figure 3-89: RepresentationAztec
+Dots: The code elements are marked in little dots. Grid: The laser marks in straight lines and jumps to the next marking
+position moving the mirrors.Meander: The code elements are marked in little meanders instead
+of straight lines.Swipe: The laser moves in straight lines but instead of jumping the
+laser is switched on and off. For this the mark settings Mark-Delay and Stroke-DelayJump-Delay must be zero. The marking is con-,
+trolled via mark settings On-Delaytional values for and Off-Delay and by the addi-Jump distance and Line displacement of the ID
+Matrix representation.
+NOTES:1. The default representation of ID Matrix code is grid.
+2. Dots take longer time to mark.3. Grids take shorter time to mark.
+Dots Grid
+Aztec
+78 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+Aztec
+Normal Inverted
+10.Touch the Save button to save the changes.
+11.If required, touch the Return button to make further changes to the list of job elements.
+12.Touch the Close button to close the Edit job screen and return to the Home screen.
+FieldDescription
+Display invertedIf this checkbox is activated, the ID Matrix code is displayed inverted: black as white and vice versa.
+3.25 Updating the Barcode element Figure 3-90: Display invertedAztec
+POSITIONINGThe position of the ID Matrix code within the marking field.
+For more information about posipage51.tioning, see POSITIONING:on
+MARK SETTINGSThe mark setting for the ID Matrix code. You can set the quality of the marking against the speed of the marking. For more information
+about mark settings, see Mark Settings on page111.
+Aztec:
+Size modeAuto: The number of layers cannot be set.Compact: Number of layers can be set between 1 and 4.
+Standard: Number of layers can be set between 1 and 32.
+Nb layersNumber of layers to be used in the Aztec code. The available values depend on the setting of the Size mode.
+Error correctionPercentage of check characters invalue, the denser the code will become. the data layers. The higher the
+NoteSee page44 for information about the Close and the Activate dialogs.
+This section assumes that a Barcode job element is used in the job selected and the screen is open.Edit job
+1.Touch the Barcode element you want to update. A pen button is displayed.
+05/16 - Rev. AH 79
+
+Touch ControlProperty panesChapter 3
+2.Touch the Pen Button and then touch the Edit button.
+Figure 3-91: Updating a Barcode element
+3.Enter the barcode information in the applicable fields as shown in the following screen shot.
+Figure 3-92: Barcode element parameters
+80 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+The following table describes the barcode fields:
+FieldDescription
+BARCODE:Select the barcode element type from the drop down menu.
+Barcode TypeThe options available are BC128, BC25, BC25I, BC39, BC39E, BC93E, EAN128, EAN13, EAN8, POSTNET, PZN, RSS14ST,
+RSS14STO, RSS14TR, RSSEXP, RSSLIM, SCC14, UPC_A and UPC_E.
+The EN128 is the default barcode type.
+DATAThe content elements for the barcode.
+Select the Add button from the toolbar to add new elements to the list. You can Edit or Delete the elements.
+REPRESENTA-TION:The representation details for the barcode elements
+Display TextSelect an option where the text is positioned with respect to the bar-code.
+The available options are None, Bottom and Top.
+FontSelect the font for the text element of the barcode. For more infor-mation about font, see Font on page51.
+Barcode HeightEnter the height of the barcode elemheight of the field.ent in mm with respect to the
+Text HeightEnter the height of the text element in percentage with respect to the height of the field.
+Display InvertedIf this checkbox is selected, the barcode is displayed inverted: black as white and vice versa.
+Calculate Check NumberIf this checkbox is selected, the check digit of the barcode text is calculated.
+This field appears only if you have selected the barcode element type as BC25, BC25I, BC39, BC39E, PZN, and RSS14ST.
+BARCODE SIZE:The details for the barcode size.
+Module WidthDefines the module width. This value may vary from 0.1mm to 30mm.
+Quiet ZoneDefines the quiet zone width as a This value may vary from 10 to 20 times the module width.multiplier of the module width.
+Wide/NarrowDefines the ratio of wide and narrow barcode lines. This value may vary from 2 to 3.
+The Wide/Narrow field cannot be edfixed ratio (EAN13).ited with barcodes that have a
+05/16 - Rev. AH 81
+
+Touch ControlProperty panesChapter 3
+FieldDescription
+Module/GapDefines the ratio of modules and gaps width. This value may vary from 1 to 2.
+Gap/NarrowDefines the ratio of gaps between lines belonging to characters and the module width. This value may vary from 1 to 2.
+POSITIONINGThe position of the barcode element within the marking field. For more information about positioning, see POSITIONING:on
+page51.
+MARK SETTINGSThe mark setting for the barcode element. You can set the quality of the marking against the speed of the marking by using the Mark
+Settings on page111.
+FILLINGSelect the filling for the barcode element. You can also modify the filling details. For more information about filling, see FILLING: on
+page52.
+4.If you select the Barcode element type to be a RSS14TRBC93E, UPC_A, EAN128 or , UPC_EEAN13, enter the information in the additional applicable fields., EAN8, POSTNET,
+The following table describes the fields:
+FieldDescription
+BARCODE SIZE:The details for the barcode size.
+Module WidthDefines the module width. This value may vary from 0.1mm to 30mm.
+Quiet ZoneDefines the quiet zone width as a This value may vary from 10 to 20 times the module width.multiplier of the module width.
+Module/GapDefines the ratio of modules and gaps width. This value may vary from 1 to 2.
+5.If you select the Barcode element type to be a formation in the additional applicable fields. BC25, BC39, BC39E or PZN, enter the in-
+The following table describes the fields:
+FieldDescription
+BARCODE SIZE:The details for the barcode size.
+Module WidthDefines the module width. This value may vary from 0.1mm to 30mm.
+Quiet ZoneDefines the quiet zone width as a This value may vary from 10 to 20 times the module width.multiplier of the module width.
+Module/GapDefines the ratio of modules and gaps width. This value may vary from 1 to 2.
+82 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+FieldDescription
+Wide/NarrowDefines the ratio of wide and narrow barcode lines. This value may vary from 2 to 3.
+The Wide/Narrow field cannot be edfixed ratio (EAN13).ited with barcodes that have a
+Gap/NarrowDefines the ratio of gaps between lines belonging to characters and the module width. This value may vary from 1 to 2.
+6.If you select the Barcode element type to be an ditional applicable fields. RSS14ST, enter the information in the ad-
+The following table describes the fields:
+FieldDescription
+CC ELEMENT:If this checkbox is selected, the check digit of the barcode text is calculated.
+ElementsThe content elements for the barcode.
+Select the Add button from the toolbar to add new elements to the list.
+Selecting the element, the variables which are available on the laser and suitable for that barcode type are listed under the drop-down
+list.
+BARCODE SIZE:The details for the barcode size.
+Module WidthDefines the module width. This value may vary from 0.1mm to 30mm.
+Quiet ZoneDefines the quiet zone width as a multiplier of the module width.
+This value may vary from 10 to 20 times the module width.
+Module/GapDefines the ratio of modules and gaps width. This value may vary from 1 to 2.
+Height Separator LineHeight of the line between CC and barcode.
+SIZE of CC:This is a list entry which gives the options Height separator line, Height of CC, quiet zone. Do not mark linear part
+Height Separator LineHeight of the line between CC and barcode.
+Height of CCHeight of the CC above the barcode.
+Quiet ZoneQuiet zone of the CC.
+05/16 - Rev. AH 83
+
+Touch ControlProperty panesChapter 3
+FieldDescription
+Mark Linear PartIf the 'Mark Linear Part' box is checked, then the bar code (and text, if selected) and CC element is displayed and marked on the prod-
+uct.
+If the 'Mark Linear Part' box is not ment (and text, if selected) is displayed and marked on the product.checked, then only the CC ele-
+7.If you select the Barcode element type to be an ditional applicable fields. RSSLIM, enter the information in the ad-
+The following table describes the fields:
+FieldDescription
+CC ELEMENT:If this checkbox is selected, the check digit of the barcode text is calculated.
+ElementsThe content elements for the barcode.
+Select the Add button from the toolbar to add new elements to the list.
+Selecting the element, the variables which are available on the laser and suitable for that barcode type are listed under the drop-down
+list.
+BARCODE SIZE:The details for the barcode size.
+Module WidthDefines the module width. This value may vary from 0.1mm to 30mm.
+Quiet ZoneDefines the quiet zone width as a multiplier of the module width.
+This value may vary from 10 to 20 times the module width.
+SIZE of CC:This is a list entry which gives the options:
+1.Height separator line
+2.Height of CC
+3.Quiet Zone
+4.Do not mark linear part.
+Height Separator LineHeight of the line between CC and barcode.
+Height of CCHeight of the CC above the barcode.
+Quiet ZoneQuiet zone of the CC.
+84 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+FieldDescription
+Mark Linear PartIf the 'Mark Linear Part' box is checked, then the bar code (and text, if selected) and CC element is displayed and marked on the prod-
+uct.
+If the 'Mark Linear Part' box is not ment (and text, if selected) is displayed and marked on the product.checked, then only the CC ele-
+5.If you select the Barcode element type to be an ditional applicable fields. RSSEXP, enter the information in the ad-
+The following table describes the fields:
+FieldDescription
+BARCODE SIZE:The details for the barcode size.
+Module WidthDefines the module width. This value may vary from 0.1mm to 30mm.
+Quiet ZoneDefines the quiet zone width as a multiplier of the module width.
+This value may vary from 10 to 20 times the module width.
+Module/GapDefines the ratio of modules and gaps width. This value may vary from 1 to 2.
+Height Separator LineHeight of the line between CC and barcode.
+Number of Seg-mentsThe number of segments for barcode.
+6.If you select the Barcode element type to be a BC25Iapplicable fields. , enter the information in the additional
+The following table describes the fields:
+FieldDescription
+Display Check-NumberDisplays the check digit of the barcbox.ode text if you select this check-
+BARCODE SIZE:The details for the barcode size.
+Module WidthDefines the module width. This value may vary from 0.1mm to 30mm.
+Quiet ZoneDefines the quiet zone width as a multiplier of the module width.
+This value may vary from 10 to 20 times the module width.
+Module/GapDefines the ratio of modules and gaps width. This value may vary from 1 to 2.
+05/16 - Rev. AH 85
+
+Touch ControlProperty panesChapter 3
+FieldDescription
+Wide/NarrowDefines the ratio of wide and narrow barcode lines. This value may vary from 2 to 3.
+The Wide/Narrow field cannot be edfixed ratio (EAN13).ited with barcodes that have a
+7.If you select the Barcode element type to be a BC128applicable fields. , enter the information in the additional
+The following table describes the fields:
+FieldDescription
+Set Mode ManuallySelect this checkbox if you want to specify the mode manually. If you do not select this checkbox, the mode is defined internally by
+the barcode.
+Mode AIn this mode numbers, capital letters, special characters and ASCII control characters can be coded.
+Mode BIn this mode numbers, all capital and small letters as well as special and escape characters can be coded.
+Mode CIn this mode, only doubled entered coded.characters from 00-99 can be
+BARCODE SIZE:The details for the barcode size.
+Module WidthDefines the module width. This value may vary from 0.1mm to 30mm.
+Quiet ZoneDefines the quiet zone width as a multiplier of the module width.
+This value may vary from 10 to 20 times the module width.
+Module/GapDefines the ratio of modules and gaps width. This value may vary from 1 to 2.
+8.If you select the Barcode element type to be an SCC14applicable fields. 5, enter the information in the additional
+9.The following table describes the fields:
+FieldDescription
+Display Bearer Bars:Displays a bar around the SCC14 bar code. If this option is acti-vated, the Display inverted checkbox cannot be activated at the
+same time
+Only Top and Bot-tom BorderDisplays only the top and bottom borders if you select this check-box.
+86 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+10.Touch the Save button to save the changes.
+11.If required, touch the Return button to make further changes to the list of job elements.
+12.Touch the Close button to close the Edit job screen and return to the Home screen.
+FieldDescription
+3.26 Updating the Graphic elementBearer CustomIf this checkbox is checked, a bar can be displayed around the SCC14 bar code.
+Border ThicknessSets the thickness of the border.
+BARCODE SIZE:The details for the barcode size.
+Module WidthDefines the module width. This value may vary from 0.1mm to 30mm.
+Quiet ZoneDefines the quiet zone width as a multiplier of the module width.
+This value may vary from 10 to 20 times the module width.
+Wide/NarrowDefines the ratio of wide and narrow barcode lines. This value may vary from 2 to 3.
+The Wide/Narrow field cannot be edfixed ratio (EAN13).ited with barcodes that have a
+Module/GapDefines the ratio of modules and gaps width. This value may vary from 1 to 2.
+NoteSee page44 for information about the Close and the Activate dialogs.
+This section assumes that a Graphic job element is used in the job selected and the screen is open.Edit job
+1.Touch the Graphic element you want to update. A pen button is displayed.
+05/16 - Rev. AH 87
+
+Touch ControlProperty panesChapter 3
+2.Touch the Pen button and then touch the Edit button
+Figure 3-93: Updating a Graphic element
+3.Touch the graphic element type from the drop-down menu. The options available are Rectangle, Polyline and Polygon.Ellipse,
+Figure 3-94: Graphic element parameters
+4.If you select the Graphic element type to be an Ellipsefields as shown in the following screen shot., enter the information in the applicable
+88 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+The following table describes the fields:
+FieldDescription
+GRAPHIC:Select the graphic element type from the drop-down menu.
+Graphic TypeThe options available are:
+Ellipse Rectangle
+PolylinePolygon
+NOTE: The default graphic type is Ellipse.
+ShapeSelect the shape of the ellipse from the drop-down list. You can select either:
+ClosedMid-Closed
+Open The default option is Closed, where filling is enabled automatically.
+NOTE: You can create a semi-circle with a straight line to close it and then fill it.
+For example, if you want to draw a filled 3/4 circle, perform the fol-lowing:
+1.Touch Add and then select the graphic option.
+2.A circle is displayed in the preview area, with a start value as 90and the end value as 360.
+3.Select the desired filled from the Filling drop-down list.
+Figure 3-95: Shape
+StartDefines the start position of the ellipse.
+End Defines the end position of the ellipse.
+POSITIONINGThe position of the graphic elementmore information about positioning, see POSITIONING:on within the marking field. For
+page51.
+XY1051
+05/16 - Rev. AH 89
+
+Touch ControlProperty panesChapter 3
+FieldDescription
+MARK SETTINGSThe mark setting for the graphic element. You can set the quality of the marking against the speed of the marking. For more information
+about mark settings, see Mark Settings on page111.
+FILLINGSelect the filling for the graphic element. You can also modify the filling details. For more information about filling, see FILLING: on
+page52.
+4.If you select the graphic element type to be a Rectangletional applicable fields. , enter the information in the addi-
+The following table describes the fields:
+FieldDescription
+GRAPHIC:Select the graphic element type from the drop-down menu.
+Graphic TypeSelect the Rectangle graphic type from the drop-down menu.
+Corner roundnessThe percentage by which the corner of the rectangle is rounded.
+POSITIONINGThe position of the graphic elementmore information about positioning, see POSITIONING:on within the marking field. For
+page51.
+MARK SETTINGSThe mark setting for the graphic element. You can set the quality of the marking against the speed of the marking. For more information
+about mark settings, see Mark Settings on page111.
+FILLINGSelect the filling for the graphic element. You can also modify the filling details. For more information about filling, see FILLING: on
+page52.
+5.If you select the graphic element type to be a Polylinethe additional applicable fields. or Polygon, enter the information in
+The following table describes the fields:
+FieldDescription
+GRAPHIC:Select the graphic element type from the drop-down menu.
+Graphic TypeSelect the Polyline or Polygon graphic type from the drop-down menu.
+90 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+3.Touch the Save button to save the changes.
+4.If required, touch the Return button to make further changes to the list of job elements.
+5.Touch the Close button to close the Edit job screen and return to the Home screen.
+FieldDescription
+ADD POINTSTouch the Add button to generate a new corner point. Select the newly added point, touch the Pen button, then select Edit and spec-
+3.27 Updating the Logo element ify the corresponding X and Y coordinates values using the keypad.
+NOTES:
+1.Delete button will be disabled if there are only two points for apolyline.
+2.Delete button will be enabled for a polygon only if there are morethan three points.
+POSITIONINGThe position of the graphic elementmore information about positioning, see POSITIONING:on within the marking field. For
+page51.
+MARK SETTINGSThe mark setting for the graphic element. You can set the quality of the marking against the speed of the marking. For more information
+about mark settings, see Mark Settings on page111.
+FILLINGSelect the filling for the graphic element. You can also modify the filling details. For more information about filling, see FILLING: on
+page52.
+NoteSee page44 for information about the Close and the Activate dialogs.
+This section assumes that a Logo job element is used in the job selected and the screen is open.Edit job
+1.Touch the Logo element you want to update. A pen button is displayed.
+NoteThe Logo button for the element is only enabled, if a logo or logos have been imported into the laser database.
+05/16 - Rev. AH 91
+
+Touch ControlProperty panesChapter 3
+2.Touch the Pen button and then touch the Edit button.
+Figure 3-96: Updating the Logo element
+3.Enter the job element information in the respecshot.tive fields as shown in the following screen
+Figure 3-97: Logo element parameters
+The following table describes the fields:
+FieldDescription
+LOGO:The variables of the logo job element.
+Logo selectionYou can select the following:
+Pixel-based logoVector-based logo
+Displayed invertedIf this checkbox is selected, the logo is displayed inverted: black as white and vice versa.
+Figure 3-98: Display invertedLogo
+XY1054
+92 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+XY1055
+Dots
+Grid
+FieldDescription
+RepresentationFor the representation of a logo, you can select between dots and grid.
+Figure 3-99: RepresentationLogo
+When you select vector-based logohave to be checked: the following fields of fillings
+OutlinesOverlapped lines
+FillingsFor more information about filling, see FILLING: on page52.
+POSITIONINGThe position of the graphic elementmore information about positioning, see POSITIONING:on within the marking field. For
+page51.
+MARK SETTINGSThe mark setting for the graphic element. You can set the quality of the marking against the speed of the marking by using the Quality/
+Speed slider. For more information about mark settings, see Mark Settings on page111.
+FILLINGSelect the filling for the graphic element. You can also modify the filling details. For more information about filling, see FILLING: on
+page52.
+4.Touch the Save button to save the changes.
+5.If required, touch the Return button to make further changes to the list of job elements.
+6.Touch the Close button to close the Edit job screen and then return to the Home screen.
+NoteSee page44 for information about the Close and the Activate dialogs.
+05/16 - Rev. AH 93
+
+Touch ControlProperty panesChapter 3
+3.28 Line Setup
+In the Line setup screen you can define the parameters for the production line, marking headpositioning and product detection. You can add a new line setup and edit the details of the line
+setup.
+You need to calibrate and enter any one of the parameters (Speed, Distance, Product size,Product spacing, Pulses per revolution or Distance per revolution) and then the system inter-
+nally calculates the other settings.
+NoteInformation about the parameters which tem are mentioned in the Speed/trigger table description.are internally calculated by the sys-
+Line setup has the following options:
+Manage Line Setups screen. For more information, see Manage Line Setups on page95
+Edit Current Line Setups screen. For more information, on page96see Edit the Line Setups screen
+Figure 3-100: Line setupPen button options
+94 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+3.29 Manage Line Setups
+The Manage Line Setups screen allows you to do the following:
+Activate a line setup, see Working with Line Setups on page96.
+Create a line setup, see Creating a new Line Setup on page99.
+Rename a line setup, see Renaming a Line Setup on page99.
+Edit a line setup, see Editing a Line Setup on page100.
+Duplicate a line setup, see Duplicating a Line Setup on page108.
+Delete a line setup, see Deleting a Line Setup on page109.
+Figure 3-101: Manage Line Setups screen
+The following table provides information on the different fields displayed in the Setups screen shown in Figure3-101:Manage Line
+FieldDescription
+CreateTo create new line setup.
+ACTIVE Displays the active status of the line setup.
+NAMEDisplays the name of the line setup.
+Pen buttonPen button lists the actions that can be performed for Setups screen:Manage Line
+Edit Duplicate
+Delete
+CloseCloses the Manage Line Setups screen.
+05/16 - Rev. AH 95
+
+Touch ControlProperty panesChapter 3
+3.30 Edit the Line Setups screen
+The Edit Line Setups screen (line setup editor) displays the Speed, Trigger, Position and OrientationMarking Field and Test parameters available on the laser. , Line
+The following fields are displayed:
+Figure 3-102: Line setup editor
+8
+1
+9
+2
+3
+4
+5
+7
+6
+3.31 Working with Line Setups
+Frame NumberNameDescription
+1Line setup nameDisplays the name of the current line setup.
+21. Position and OrientationDisplays the Position and Orientation tab parameters.
+32. Line SpeedDisplays the Line Speed tab parameters.
+43. TriggerDisplays the Trigger tab parameters.
+54. Marking Field and TestDisplays the Marking Field and Test tab parameters.
+6Preview areaDisplays the preview of the parameter set for a line setup. The selected element is highlighted.
+7ParametersDisplays the parameters for a selected field.
+8SaveSaves the changes made to the line setup.
+9CloseCloses the Edit Line Setup screen.
+96 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+Select the Edit Current Line Setup or the Manage Line Setupto add, edit, rename, duplicate and delete a Line Setup. button to select a Line Setup
+3.32 Activating a Line Setup
+Note1.If the Close button is touched without saving, a confirmation dialog opens:
+Figure 3-103: Close dialog
+2.To save the changes, touch the Cancelbutton. button and then touch the Save
+3.To disregard the changes and close the dialog box touch the and return to the Home screen.OK button
+4.Touch the Close button. Before returning to the tion dialog opens:Home screen a confirma-
+Figure 3-104: Activate Line dialog
+5.Touch the Yes or No button as required and return to the Home screen.
+05/16 - Rev. AH 97
+
+Touch ControlProperty panesChapter 3
+This section assumes a line setup has been created.
+1.Touch the Pen button in the A screen opens with the following options (see Figure3-100 on page94):LINE SETUP pane.
+Edit current Line Setup
+Manage Line Setups
+2.Touch the Manage Line Setups button. The of line setups.Manage Line Setups screen opens with a list
+3.Touch the line setup you want to activate.
+4.Touch the Non-activated button (2) next to the name of the line setup, from the umn (see Figure3-106). A confirmation dialog opens with the following message:Active col-
+Figure 3-105: The activate line setup screen
+5.Touch the OK button to activate the line setup or touch the disregard the changes.Cancel button if you want to
+6.The Activated button (1) appears next to the name of the line setup in the Active column.
+Figure 3-106: Active and non-active Line setup
+1
+2
+.
+98 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+7.Touch the Close button in the Manage Line Setupsscreen. screen and then return to the Home
+The selected line setup name is displayed in the Active Line Setup field.
+3.33 Creating a new Line Setup
+1.Touch the Pen button inthe LINE SETUP pane.
+2.Touch Manage Line Setups. The Manage Line Setups screen opens.
+3.Touch the Create button. A keyboard opens.
+4.Enter a name for the new line setup.
+5.Touch the OK button to save the new line setup.A new line setup is added alphanumerically to the list and the Edit Current Line Setup screen
+is displayed (see Figure3-102 on page96).
+6.Make any additions or changes to the setup as required. See Editing a Line Setup onpage100 for more information.
+7.Touch the Save button followed by the Closeto the button to save the changes and then returnHome screen.
+3.34 Renaming a Line Setup
+NoteSee page97 for information about the Close and the Activate dialogs.
+This section assumes that a line setup has been created.
+1.Touch the Pen button in the LINE SETUP pane.
+2.Touch the Manage Line Setups button. The Manage Line Setups screen opens.
+3.Touch the line setup you wan to change.
+4.Touch the selected line setup Pen button and the touch the Edit button.
+5.The Edit line setup screen opens. Touch the Edit line setupPen button (1).
+1
+05/16 - Rev. AH 99
+
+Touch ControlProperty panesChapter 3
+Figure 3-107: Position and Orientation
+6.A keyboard opens. Delete the old name (2) and use the keyboard to enter a new name (3).
+Figure 3-108: Renaming
+7.Touch the OK button. The line setup is renamed and the keyboard closes.
+8.Touch the Save button followed by the Closeto the button to save the changes and then returnHome screen.
+2
+3
+3.35 Editing a Line Setup
+NoteSee page97 for information about the Close and the Activate dialogs.
+This section assumes that a line setup has been created.
+1.Touch the Pen button in the LINE SETUP pane.
+2.Touch the Manage Line Setups button. The Edit line setup screen opens.
+3.Enter the line setup information in the applicable fields as shown below.
+100 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+3.35.1 Position and OrientationThis parameter sets the position and the orientation of the product for marking. The preview
+area displays the preview.
+When you modify any of the parameters, the changes are reflected in the graphic displayed inthe preview area.
+Figure 3-109: Position and Orientation Settings
+The following tables describe the line setup fields:
+Field/ParameterDescription
+LINE MOVEMENTSets the line direction. The options available are L to R or R to L. You can select the corresponding arrow button to set the line direc-
+tion.
+Use the Static button to set the line direction without product move-ment.
+NOTE: The Line Speed tab will not be accessible if Static is selected.
+PRODUCT SIDE SELECTIONSets the side of the product that needs to be marked. The red colour indicates the side on which marking happens. You can select
+anyone of the following available options:
+TopBottom
+RightLeft
+NOTE: The default value is Top.
+The selected option is highlighted and reflected in the graphic dis-played in the preview area.
+05/16 - Rev. AH 101
+
+Touch ControlProperty panesChapter 3
+Field/ParameterDescription
+MARKING HEAD POSITIONSets the position of the laser with respect to the product that is to be marked. You can select the following options:
+090
+180270
+NOTE: The default value is 0.
+The selected option is highlighted and reflected in the graphic dis-played in the preview area.
+The values can be changed using the Value button.
+On selecting the button, a keypad is displayed, using which you can enter a new value.
+NOTE: If the value entered does not match any one of the options provided, then none of the options are highlighted.
+job ORIENTATIONSets the orientation of the job to be marked on the product. You can select the following options:
+090
+180270
+NOTE: The default value is 0.
+The selected option is highlighted and reflected in the graphic dis-played in the preview area.
+The values can be changed using the Value button.
+On selecting the button, a keypad is displayed, using which you can enter a new value.
+NOTE: If the value entered does not match any one of the options provided, then none of the options are highlighted.
+102 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+3.35.2 Line SpeedThis sets the speed of the product movement on the line. The speed is stated in the measure-
+ment that is set in the Main Settings. For more information, see Main Settings on page 155.The speed is stated in millimeters per second.
+Figure 3-110: Trigger settings
+The following tables describe the line setup fields:
+Field/ParameterDescription
+EncoderTurns green if an encoder is connected to the laser.
+CALCULATED VALUESTo activate Calculated Values, touch Configure Manually. Enter any one of the following values and the system internally calculates the
+other values:
+Current speedProduct Size
+Pulse per revolutionDistance per revolution
+Current speedThe current speed value for the encoder setup. The default value is 10mm) per second.
+NOTE: If the Current speed value is set, the system internally cal-culates and displays Product Size, Pulse per revolution and Dis-
+tance per revolution.
+Product SizeThe product size value for the encoder setup. The default value is 10mm.
+NOTE: If the product size value is set, the system internally calcu-lates and displays Product Size, Pulse per revolution and Dis-
+tance per revolution.
+05/16 - Rev. AH 103
+
+Touch ControlProperty panesChapter 3
+Field/ParameterDescription
+Pulses per revolu-tionThe pulse per revolution value for the encoder setup.The default value is 1800ppr.
+NOTE: If the pulse per revolution valucalculates and displays e is set, the system internally Product Size, Pulse per revolution and
+Distance per revolution.
+Distance per revo-lutionThe distance per revolution value for the encoder setup.The default value is 500mm.
+NOTE: If the distance per revolution value is set, the system inter-nally calculates and displays Product Size, Pulse per revolution
+and Distance per revolution.
+Please choose your preferred You can select any one of the following modes to configure the sys-tem so that rest of the values is automatically calculated by the sys-
+method: tem:
+Enter or Measure Fixed SpeedMeasure Line Distance
+Enter Product SizeMeasure Line Speed
+Configure Manually
+Enter or Measure Fixed SpeedTo configure the system when no encoder is connected to the laser and the line runs with a fixed speed, perform the following:
+1.Measure fixed line speed.
+2.Touch Measure Value. A keypad is displayed to enter the mea-sure value.
+Measure Line SpeedYou can use this mode to configure form the following:the line for mark on the fly, per-
+1.Measure the lines speed
+2.Touch Measure Value. A keypad is displayed to enter the mea-sure value.
+3.Touch Done.
+Configure Manu-allyUse this mode to configure the line setup manually.
+NOTE: This should be done by trained service engineers only.
+104 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+3.35.3 Trigger settingsThis sets the trigger settings for the marking of the job.
+Figure 3-111: Trigger settings
+The following tables describe the line setup fields:
+Field/ParameterDescription
+Product Detector Turns green if a detector is connected to the laser. Sets the product detector signal for the static marking.
+START DISTANCEIndicates the time delay between the trigger pulse and the start of the marking process by Start Distance.
+The values can be changed using the Value button.
+On selecting the button, a keypad is displayed, using which you can enter a new value.
+Start DelayIf you have selected STATIC in Start DelayPosition and Orientation is calculated in milliseconds (ms)., then
+BLOCKINGIndicates how long the current trigger pulse are ignored before accepting the next trigger by Blocking Distance.
+The values can be changed using the Value button.
+On selecting the button, a keypad is displayed, using which you can enter a new value.
+Blocking DelayIf you have selected STATIC in Blocking DelayPosition and Orientationis calculated in m, then illiseconds (ms).
+05/16 - Rev. AH 105
+
+Touch ControlProperty panesChapter 3
+Field/ParameterDescription
+TRIGGER MODEYou can select either Internal Oncenal, RisingInternal Continuous and External falling, Exter-.
+If Internal once is selected then marking is started on selecting the start button.
+If InternalContinuous is selected then marking is continuous and can be stopped manually.
+Select the trigger mode as External Risingbe given by the product that is entering the product detection zone. if the trigger pulse is to
+Select the trigger mode as External Fallingbe given by the product that is leaving the product detection zone. if the trigger pulse is to
+NOTES:
+1.The default value is External Rising.
+2.If the line direction is static, then all the four modes are available,else only External Rising and External Falling modes are avail-
+able.
+3.35.4 Marking field and Test This sets the marking field for the new line setup. You can select to mark within the full area of
+the lens or to adjust the marking position to a beam protection assembly.
+Figure 3-112: Marking field and Test
+106 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+Field/ParameterDescription
+MARKING FIELDDefines the marking field size. Allows to switch between full marking field and user defined marking field.
+Full marking fieldRepresent the entire marking field. Allows you to select or retain maximum marking area of the lens.
+When the marking area is altered either using the top, bottom, left and right borders or dragging the thumbs, it can be reset by touch-
+ing the Reset Borders button to max area.
+If you touch Reset Borders, it resets the top, bottom, left and right borders to maximum marking field area.
+The preview area displays four thumbs that you can drag to change the size of the area.
+Top borderThe Top border of the marking area. You can resize the marking size by using one of following methods:
+Resize the top border by dragging one of the four handles in the preview area.
+Change the value by using the Valueton, a keypad is opened through which, a new value can be en- button. On selecting the but-
+tered.
+Left borderThe left border of the marking area. You can resize the marking size by using one of following methods:
+Resize the left border by dragging one of the four handles in the preview area.
+Change the value by using the Valueton a keypad is opened through which a new value can be en- button. On selecting the but-
+tered.
+Right borderThe right border of the marking area. You can resize the marking size by using one of following methods:
+Resize the right border by dragging one of the four handles in the preview area.
+Change the value by using the Valueton a keypad is opened through which a new value can be en- button. On selecting the but-
+tered.
+Bottom borderThe bottom border of the marking area. You can resize the marking size by using one of following methods:
+Resize the border by dragging one of the four handles in the pre-view area.
+Change the value by using the Valueton a keypad is opened through which a new value can be en- button. On selecting the but-
+tered.
+05/16 - Rev. AH 107
+
+Touch ControlProperty panesChapter 3
+3.Touch the Save button followed by the Closeto the button to save the changes and then returnHome screen.
+3.36 Duplicating a Line Setup
+Field/ParameterDescription
+TEST MARKINGYou can test the marking process. For more information about the Status bar, see the Status bar on page8.
+NoteSee page97 for information about the Close and the Activate dialogs.
+This section assumes that a line setup has been created.
+1.Touch the Pen button in the LINE SETUP pane.
+2.Touch the Manage Line Setups button as required.
+3.Touch the line setup you want to change.
+4.Touch theselected line setup Pen button and then touch the Duplicate button.
+5.A keyboard opens showing the duplicated name (1). Rename the element as required (2).
+NoteAny name duplicated is given a suffix _1.
+Figure 3-113: Keyboard
+6.Touch the OK button. The line setup is renamed. Or touch the any changes.Cancel button to disregard
+7.Touch the Save button followed by the Close button to save the changes and then return
+1
+2
+108 05/16 - Rev. AH
+
+Chapter 3Touch ControlProperty panes
+to the Home screen.
+3.37 Deleting a Line Setup
+NoteSee page97 for information about the Close and the Activate dialogs.
+This section assumes that a line setup has been created.
+1.Touch the Pen button in the LINE SETUP pane.
+2.Touch the Manage Line Setups button as required.
+3.Touch the line setup that you want to delete.
+4.Touch the selected line setup Pen button and then touch the Delete button.
+5.A confirmation dialog opens with the following message:
+Figure 3-114: Line setupDelete screen
+6.Touch the OK button toconfirm the deletion of the line setup details. Or touch the button to close the confirmation dialog without deleting the line setup.Cancel
+7.Touch the Close button to save the changes and then return to the Home screen.
+05/16 - Rev. AH 109
+
+Touch ControlProperty panesChapter 3
+110 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+4 Touch Control SoftwareMenu
+The Home screen appears after you log in. Touch the of the Touch Control Software as shown in the following screen shot.Menu () button to view the menu
+Figure 4-115: Home screenMenu options
+The Touch Control Software has the following menu options:
+Mark Settings. See Mark Settings on page111.
+File management. See File Management on page120.
+Users. See Users on page126.
+Roles and Access Rights. See Roles and Access Rights on page132.
+Connection and Laser Settings. See Laser Settings on page143.
+Main Settings. See Main Settings on page145.
+4.1 Mark Settings
+You define all the mark settings in the Mark Settingcate, or delete a mark setting. screen. You can also create, edit, dupli-
+4.1.1 Accessing the Mark Settings screenThis section assumes some mark settings have been created.
+1.Touch the Menu button on the Status bar. The Menu options list opens.
+05/16 - Rev. AH 111
+
+Touch Control SoftwareMenuChapter 4
+2.Select the Mark Settings button. The Mark Settingslowing screen shot. list is displayed as shown in the fol-
+Figure 4-116: Mark Settings screen
+The following table describes the Mark Settings fields:
+FieldDescription
+CreateTo create new mark settings.
+NAMEDisplays the names of mark settings.
+LAST MODIFIED DATEDisplays the date the mark settings was last modified on.
+PEN buttonPen button lists the actions that can be performed for mark settings screen:
+4.1.2 Working with Mark SettingsWhen you create a mark setting using the Touch Control Software you are able to edit the set-
+tings.
+Select the Job > Edit Current Mark Setting button or the button to select a job to edit and open the Main Menu button > Mark SettingsMark Settings edit screen.
+xEdit xDuplicate
+xDelete
+CloseCloses the mark setting screen.
+NoteThis screen will vary depending on how many ated.Mark Settings have been cre-
+112 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+4.2 Creating a Mark Setting
+Note1.If the Close button is touched without saving, a confirmation dialog opens:
+Figure 4-117: Close dialog
+2.To save the changes, touch the Yes button or touch the then touch the Save Cancelbutton. button and
+To disregard the changes and close the dialog box touch the and return to the Home screen.No button
+1.Touch the Menu button on the Status bar. The Menu options list opens.
+2.Select the Mark Settings button. The Mark Settingspage112). list appears (see Figure4-116 on
+3.Touch the Create button. A keyboard opens.
+Figure 4-118: Mark Settings list
+05/16 - Rev. AH 113
+
+Touch Control SoftwareMenuChapter 4
+4.Enter a name for the new mark setting.
+Figure 4-119: Mark Settingnew name
+5.Touch the OK button to save the mark setting.The mark setting is added alphanumerically to the Mark Settings list.
+6.Touch the Close button to close the Mark Settings screen and return to the Home screen.
+4.3 Renaming a Mark Setting
+NoteSee Working with Mark Settings on page112 for further details.
+This section assumes that a mark setting has been created.
+NoteYou cannot rename the current mark setting.
+1.Touch the Menu button on the Status bar. The Menu options list opens.
+2.Select the Mark Settings button. The Mark Settings list opens.
+3.Touch the mark setting that you want to change.Touch the selected mark setting Pen button and then the Edit button.
+Figure 4-120: Mark Settings list
+114 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+4.The Edit Mark Setting screen opens.
+5.Touch the Pen button (1).
+Figure 4-121: Edit Mark Setting
+6.A keyboard opens. Delete the old name (2) and (3). then use the keyboard to enter a new name
+Figure 4-122: Rename Mark Setting
+7.Touch the OK button. The mark setting is renamed.
+8.Touch the Save button to save the changes or touch the changes.Cancel button to disregard any
+9.Touch the Close button to close the Mark Settings screen and return to the Home screen.
+NoteSee Working with Mark Settings on page112 for further details.
+1
+2
+3
+05/16 - Rev. AH 115
+
+Touch Control SoftwareMenuChapter 4
+4.4 Editing a Mark Setting
+This section assumes a mark setting has been created.
+1.Touch the Menu button on the Status bar.
+2.Touch the Mark Settings button. The Mark Settings list opens.
+3.Touch the mark setting that you want to change.
+4.Touchthe Pen button and then touch the Edit button.
+Figure 4-123: Mark SettingEdit
+5.The Mark Settings edit screen opens.
+Figure 4-124: Mark Settings
+6.When you select any field to change the value, a keypad appears in which the respectivechanges can be made. The following table describes the different editable fields:
+116 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+FieldDescription
+Marking SpeedThe speed of movement of the laser beam when marking the prod-uct.
+Mark DelayThe delay between the marking of individual vectors within a stroke.
+Stroke DelayThe delay between the end of a stroke and the jump to the next stroke.
+Jump SpeedThe speed of movement of the laser beam when moving from one stroke to the next. The laser is switched off during a jump.
+Jump DelayThe delay between the end of a jump and the start of the marking process.
+Mark intensityThe output Mark Intensity through the current value (with 100% cor-responding to the maximum Mark Intensity of the laser).
+On DelayThe delay between the attainment of the start position of a stroke and the switching-on of the laser.
+Off DelayThe delay between the attainment of the end position of a stroke and the switching-off of the laser.
+Pulse FrequencyThe frequency of the pulses and can be set between 50 Hz and 20 kHz. The lower values can be used to achieve a broken line.
+Line WidthThe actual line width of the marking on the product. The width highly depends on the material. Therefore the line width is deter-
+mined by marking a single line on the desired product and by mea-suring the line width.
+7.Touch the Save button to save the changes.
+8.Touch the Close button to close the Mark Settings screen and return to the Home screen.
+NoteSee Working with Mark Settings on page112 for further details.
+05/16 - Rev. AH 117
+
+Touch Control SoftwareMenuChapter 4
+4.5 Duplicating Mark Settings
+1.Touch the Menu button on the Status bar.
+2.Touch the Mark Settings button. The Mark Settings screen opens.
+3.Touch the mark setting that you want to change.
+4.Touchthe Pen button and then touch the Duplicate button.
+Figure 4-125: Mark SettingsDuplicate
+5.A keyboard opens showing the duplicated job element name.
+6.Delete the old name (1) and then use the keyboard to enter a new name (2). Touch the button. The job element is renamed.OK
+Or touch the Cancel button to disregard any changes.
+Figure 4-126: Duplicate Mark Setting
+NoteAny name duplicated is given a suffix _1.
+1
+2
+118 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+7.The renamed mark setting is displayed in the list.
+8.Touch the OK button to save the changes, or touch the es.Cancel button to disregard any chang-
+9.Touch the Save button to save the changes.
+10.Touch the Close button to close the Mark Settings screen and return to the Home screen.
+NoteSee Working with Mark Settings on page112 for further details.
+4.5.1 Deleting a Mark Setting1.Touch the Menu button on the Status bar.
+2.Touch the Mark Settings button. The Mark Settings screen opens.
+3.Touch the mark setting you want to change.
+4.Touch the Pen button and then touch the Delete button.
+Note1.A mark setting cannot be deleted if it is associated with a job or a job ele-ment. The Delete button will be disabled in point 1. To delete the mark set-
+ting you must first delete the associated files.
+Figure 4-127: Mark SettingsDelete
+05/16 - Rev. AH 119
+
+Touch Control SoftwareMenuChapter 4
+2.A confirmation dialog opens with the following message.
+Figure 4-128: Delete a Mark Setting
+3.Touch the OK button to delete the mark setting details.
+4.Touch the Cancel button to close the confirmation dialog, without deleting the mark setting.
+5.Touch the Close button to close the Mark Settingsscreen. screen and then return to the Home
+4.6 File Management
+File management helps in exporting the complete fonts, logos and others to a USB drive or importing elements (only) and its sections into thelaser database or its sections such as jobs,
+laser database from the USB drive.
+4.6.1 Accessing the File Management screen1.Touch the Menu button on the Status bar.
+2.Touch the File Management button. The File Management screen opens.
+3.The File Management screen is displayed as shown in the following screen shot.
+Figure 4-129: File Management
+120 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+File management screen is divided into two vertical panes. The left pane displays the laser da-tabase (Laser Local) while the right pane lists the USB Device content as shown in the above
+screen shot.
+The laser database includes data related to Complete Laser ImageSettings, Fonts and , LogosLine Setups. Each of these entries further displays the elements and number, jobs, Mark
+of elements. If no USB device is connected or if it cannot be identified, then the right pane ap-pears blank.
+4.6.2 Exporting Complete Laser Image from Laser Local to USB DeviceWhile creating a backup of the laser database, the file will be stored with default name as the
+IP_address of the laser_backup_Date.gz. For example, if the laser IP is 192.168.1.1 andbackup is created on 31
+st
+ March 2012, the file will be stored with the nameIP_192.168.1.1_backup_01_31_2012.gz.
+The structure on the right pane depends on the cthe filenames are displayed with extension *.lgo.ontent of the USB device. For example, logos,
+1.Touch the Menu button on the Status bar.
+2.Touch the File Management button. The File Management screen opens.
+3.Touch the Laser Local, Complete Laser Image (xx) button.
+4.Touch the Complete Laser Image (xx) Pen button. The following options are displayed:Backup to Device
+Figure 4-130: File ManagementBackup
+NoteThe (xx) refers to the number of files stored.
+5.Touch Backup to DeviceThe entire database is exported to the USB device. as a complete file. The individual elements
+are not added to the USB device. To do this see Copying elements from the Laser Local or theUSB Device on page124.
+05/16 - Rev. AH 121
+
+Touch Control SoftwareMenuChapter 4
+6.While transferring, if the files already exist, a confirmation dialog opens with the followingmessage:
+Figure 4-131: File transfer confirmation dialog
+7.Touch the OK button to continue transfer of files. If without confirmation.Copy All is checked, all files are copied
+NoteTouch the Skip button to stop the file transfer of an existing file.
+You cannot copy an existing font or logo.
+8.Touch the Close button to close the File Managementscreen. screen and then return to the Home
+4.6.3 Copying Data from USB Device to Laser LocalYou can copy only elements and not the database of the USB.
+The system checks the category of the element and copies automatically to the correct cate-gory on the other side. For example, the file categories with extension .lgo and .fn are copied
+to the respective categories. The user cannot manipulate this process.
+If the name of the element to be copied already exThe system increments the suffix numberists, the system copies it with a suffix _1. to maintain a unique element name.
+For example, Logofile.lgo, Logofile_1.lgo, Logofile_2.lgo and so on.
+1.Touch the Menu button on the Status bar.
+2.Touch the File Management button. The File Management screen opens.
+122 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+3.Select the USB Device elements that you want to export. Touch that elements The following options are displayed:Pen button.
+Copy to LaserShow Content
+Figure 4-132: File Managementoptions in USB Device
+4.Touch the Copy To Laser The selected elements are copied to the button. Local Laser database.
+5.While transferring, if the files already exist, a confirmation dialog opens with the followingmessage:
+Figure 4-133: File transfer confirmation dialog
+6.Touch the OK button to continue transfer of files. If without confirmation.Copy All is checked, all files are copied
+NoteTouch the Skip button to stop the file transfer of an existing file.
+You cannot copy an existing font or logo.
+7.Touch the Close button to close the File Managementscreen. screen and then return to the Home
+05/16 - Rev. AH 123
+
+Touch Control SoftwareMenuChapter 4
+4.6.4 Show Content in the Laser Local and the USB Device1.Touch the Menu button on the Status bar.
+2.Touch the File Management button. The File Management screen opens.
+3.Touch the element that you want to view either from the Device side.Laser Local side or from the USB
+4.Touch the element Pen button and touch the element are shown.Show Content button. The contents of that
+5.Touch the Return button to go back to the File Management screen.
+6.Touch the Close button to close the File Managementscreen. screen and then return to the Home
+4.6.5 Copying elements from the Laser Local or the USB Device1.Touch the Menu button on the Status bar.
+2.Touch the File Management button. The File Management screen opens.
+3.Touch the element that you want to view either from the Device side.Laser Local side or from the USB
+4.Touch the element Pen button and select the element are listed.Show Content button. The contents of the
+5.Select the element you want to copy from local laser or USB device as shown in the followingscreen shot and then touch the Pen button.
+6.Touch the Backup to Device or Copy to Laser button
+Figure 4-134: File Managementarrow buttons
+7.The element is copied.
+124 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+8.While transfering, if the files already exist, a confirmation dialog opens with the followingmessage:
+Figure 4-135: File transfer confirmation dialogfor individual elements
+9.Touch the OK button to continue transfer of files.Touch the Skip button to stop the file transfer of an existing file.
+NoteYou cannot copy an existing font or logo.
+10.Touch the Return button, to go back to the File Management screen.
+11.Touch the Close button to close the File Managementscreen. screen and then return to the Home
+4.6.6 Supported File FormatsThe Touch Control Software supports the following file formats:
+FileFormat
+job, Mark Settings, Line Setups.xml
+Logo.lgo
+Font.fn
+Backup Database.gz
+NoteThe *.tpl format is currently not supported.
+4.6.7 Deleting elementsUSB DeviceOpen the USB device on your PC and delete the files from the device.
+05/16 - Rev. AH 125
+
+Touch Control SoftwareMenuChapter 4
+4.7 Users
+You can add new users, assign roles and change the password of users in the You can also rename, duplicate and delete an existing user.Users screen.
+4.7.1 Accessing the Users screen1.Touch the Menu button on the Status bar.
+2.Touch the Users button. The Users screen is displayed as shown in the following screen shot.
+Figure 4-136: Users screen
+The following table provides the description of the Users screenfields:
+FieldDescription
+CreateTo create new users.
+NAMEDisplays the names of users.
+ROLEDisplays the role of user. You can also select roles from the drop-down list.
+PEN buttonPen button lists the actions that can be performed for users screen:
+RenameDuplicate
+Change PasswordDelete
+CloseCloses the users screen.
+126 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+The following table lists the default users, their privileges Touch Control Software:and their passwords available in
+UsernamePasswordPrivileges
+Operator0000Operator has basic privileges to perform operations like start laser, stop laser and changing counters. Operator do
+not have rights to create new ments to an already created job lijobs. Operator can do adjust-ke activating a job, scaling,
+rotating and adjusting the horizontathe job. Operator can also set the intensity value of a job l and vertical positions of
+and can edit the value of variables.
+Supervisor1111Supervisor has higher privileges than an Operator. Supervi-sor can perform all the tasks that an Operator can do. Addi-
+tionally, supervisor can create jobs, edit jobs and delete jobs. Supervisor can add new users, modify an existing
+user, or delete users. Supervisor can also set Main Settings and Mark Settings.
+Administrator2222Administrator has application privileges like creating new users, modifying users and deleting users. Administrator
+assigns Access rights to the newly created user and resets password.
+Administrator can also add a new role, modify a role and delete a role.
+The privileges assigned to the default users can be changed according to the requirements.
+When you create a user, you must assign a role signed the most commonly used role. Based on the to the user. By default, the user will be as-role assigned to the user, the user will get
+the corresponding privileges to execute the taskmation about roles, sees in Touch Control Software. For more infor-Roles on page133.
+4.7.2 Creating a new User1.Touch the Menu button on the Status bar.
+2.Touch the Users button. The Users screen opens.
+3.Touch the Create button. The keyboard opens.
+05/16 - Rev. AH 127
+
+Touch Control SoftwareMenuChapter 4
+4.Enter a Login name for the user.
+Figure 4-137: New User
+NoteThe Login name cannot be blank.
+The Login name must be unique.
+5.Touch the OK button in the keyboard to add a new user to the user list. The user is addedin an alphabetical order and automatically highlighted.
+6.Select the role that you want to assign to the user from the drop-down list. By default, themost commonly used role will be assigned to the user.
+Figure 4-138: Role choice selection
+7.Touch the Close button to close the Users screen and then return to the Home screen.
+NoteThe new user is assigned the role to which the maximum number of users are assigned.
+4.7.3 Renaming an existing User1.Touch the Menu button on the Status bar.
+2.Touch the Users button. The Users screen opens.
+3.Touch the user you want to rename.
+128 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+4.Touch the selected user Pen button and then touch the Edit button.
+5.Touch the Rename button
+Figure 4-139: UsersPen button options
+6.A keyboard is displayed. Enter a new name for the user.
+7.Touch the OK button in the keyboard to save the changes, or touch the disregard any changes.Cancel button to
+8.Touch the Close button to close the Users screen and return to the Home screen.
+4.7.4 Duplicating an existing User1.Touch the Menu button on the Status bar.
+2.Touch the Users button. The Users screen opens.
+3.Touch the selected user button and then touch the Pen button.
+4.Touch the Duplicate button.
+Figure 4-140: Duplicate User
+05/16 - Rev. AH 129
+
+Touch Control SoftwareMenuChapter 4
+5.A keyboard opens showing the duplicated user name. Enter a new name for the user.
+NoteAny name duplicated is given a suffix _1.
+6.Touch the OK button in the keyboard to save the changes, or touch the disregard any changes.Cancel button to
+7.Touch the Close button to close the Users screen and then return to the Home screen.
+4.7.5 Changing the Password of an existing User1.Touch the Menu button on the Status bar.
+2.Touch the File Management button. The File Management screen opens.
+3.Touch the user name for which you want to change the password. The user is highlighted.
+4.Touch the Pen button.
+Figure 4-141: Change Password
+5.Select Change Password. A keyboard is displayed.
+6.Enter the new password (1) for the user and select OK button.
+Figure 4-142: Enter new password and confirm
+1
+2
+130 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+NoteThe password cannot be blank.
+Special characters are allowed.
+7.Repeat the password (2) and select the OK button. The password is changed.
+8.Touch the Close button to close the Users screen and then return to the Home screen.
+4.7.6 Delete an existing User1.Touch the Menu button on the Status bar.
+2.Touch the File Management button. The File Management screen opens.
+3.Touch the user that you want to delete. The named user is highlighted.
+4.Touch the Pen button of the user that you want to delete.
+5.Touch the Delete button. A confirmation dialog opens with the following message.
+Figure 4-143: Delete User
+6.Touch the OK button to delete the user.
+NoteThe current user cannot be deleted.
+If there is only one Administrator in the users list, that Administrator ac-count cannot be deleted.
+Touch the Cancel button to close the confirmation dialog, without deleting the user.
+7.Touch the Close button to close the Users screen and then return to the Home screen.
+05/16 - Rev. AH 131
+
+Touch Control SoftwareMenuChapter 4
+4.8 Roles and Access Rights
+The Roles and Access Rights screen is divided into two panes.
+The left pane, lists all the available Roles. You can also create new roles.
+In the right pane, Access Rights for different functions are assigned is displayed. SeeFigure4-144.
+4.8.1 Accessing the Roles and Access Rights screen1.Touch the Menu button on the Status bar.
+2.Touch the Roles and Access Rights button. The played as shown in the following screen shot.Roles and Access Rights screen is dis-
+Figure 4-144: Roles and Access Rights
+The following table provides the description of the Roles and Access Rights screenfields:
+FieldDescription
+RolesDisplays the roles assigned to the user.
+Pen button (Roles)Pen button lists the actions that can be performed for roles:
+RenameDuplicate
+Restore DefaultsDelete
+Access Rights Displays the access rights assigned for different functions for a role.
+Pen button (Access Rights)Pen button lists the actions that can be performed for access rights:
+Full AccessRead-only Access
+Edit Access Rights
+CreateTo create new roles.
+SaveSaves the roles And access rights assigned.
+132 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+4.9 Roles
+FieldDescription
+CloseCloses the roles And access rights screen.
+User control on the application is based on the roles they have. Each role will have a definedAccess rights assigned to them. When you create a user, you must assign a role to the user.
+The following default roles are available in Touch Control Software:
+Administrator
+Supervisor
+Operator
+Based on the Access rights assigned to the role, the user will get the corresponding privilegesto execute the tasks in Touch Control Software. For more information about Access rights, see
+Access Rights on page139.
+4.9.1 Creating a new Role1.Touch the Menu button on the Status bar.
+2.Touch the Roles and Access Rights button. The Roles and Access Rights screen opens.
+3.Touch the Create button in the Roles pane. The keyboard opens.
+4.Enter the name for the new role.
+Figure 4-145: New Role
+5.Touch the OK button in the keyboard to save the new role name, or touch the to disregard any changes.Cancel button
+6.Touch the Save button to save the changes, or touch the changes.Cancel button to disregard any
+05/16 - Rev. AH 133
+
+Touch Control SoftwareMenuChapter 4
+7.Touch the Close button to close the Roles and Access Rightsthe Home screen. screen and then return to
+If the Close button is touched without saving, a confirmation dialog opens:
+Figure 4-146: Close dialog
+8.To save the changes, touch the No button and then touch the the changes and close the dialog box touch the Save button. To disregardYes button and return to the Home screen.
+The new role will be available in the drop-down listnew role, you have to assign for all the existing users. After creating aAccess rights to the role. For more information about access
+rights, see Access Rights on page139.
+4.9.2 Renaming an existing Role1.Touch the Menu button on the Status bar.
+2.Touch the Roles and Access Rights button. The Roles and Access Rights screen opens.
+3.Touch the role that you want to change. The role is highlighted.
+4.Touch the role Pen button as shown in the following screen shot.
+Figure 4-147: RolePen button options
+5.Touch the Rename button. A keyboard is displayed.
+6.Enter a new name for the user.
+7.Touch the OK button in the keyboard to save the new role name, or touch the to disregard any changes.Cancel button
+134 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+8.Touch the Save button to save the changes.
+05/16 - Rev. AH 135
+
+Touch Control SoftwareMenuChapter 4
+9.Touch the Close button to close the Roles and Access Rights the Home screen.screen and then return to
+If the Close button is touched without saving, a confirmation dialog opens:
+Figure 4-148: Close dialog
+10.To save the changes, touch the No button and then touch the the changes and close the dialog box touch the Save button. To disregardYes button and return to the Home screen.
+4.9.3 Duplicating an existing Role1.Touch the Menu button on the Status bar.
+2.Touch the Roles and Access Rights button. The Roles and Access Rights screen opens.
+3.Touch the Roles and Access Rights button.
+4.Touch the role that you want to change. The role is highlighted.
+5.Touch the Pen button.
+6.Touch the Duplicate button. The keyboard opens.
+NoteAny name duplicated is given a suffix _1.
+7.Enter a new name for the user.
+8.Touch the OK button in the keyboard to save the changes, or touch the disregard any changes.Cancel button to
+9.Touch the Save button to save the changes.
+136 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+10.Touch the Close button to close the Roles and Access Rights Home screen.screen and return to the
+If the Close button is touched without saving, a confirmation dialog opens:
+Figure 4-149: Close dialog
+11.To save the changes, touch the No button and then touch the the changes and close the dialog box touch the Save button. To disregardYes button and return to the Home screen.
+4.9.4 Restore the Defaults of a Role1.Touch the Menu button on the Status bar.
+2.Touch the Roles and Access Rights button. The Roles and Access Rights screen opens.
+3.Touch the Roles and Access Rights button.
+4.Touch the role that you want to restore the default settings. The role is highlighted.
+5.Touch the Pen button. See Figure4-147 on page134.
+6.Select the Restore Defaults button. The default access rights for different functions are re-stored for the role.
+7.Touch the Save button to save the changes, or touch the changes.Cancel button to disregard any
+8.Touch the Close button to close the Roles and Access Rights Home screen.screen and return to the
+If the Close button is touched without saving, a confirmation dialog opens:
+Figure 4-150: Close dialog
+9.To save the changes, touch the No button and then touch the Save button. To disregard
+05/16 - Rev. AH 137
+
+Touch Control SoftwareMenuChapter 4
+the changes and close the dialog box touch the Yes button and return to the Home screen.
+4.9.5 Deleting an existing Role1.Touch the Menu button on the Status bar.
+2.Touch the Roles and Access Rights button. The Roles and Access Rights screen opens.
+3.Touch the Roles and Access Rights button.
+4.Touch the role that you want to change. The role is highlighted.
+5.Touch the Pen button. See Figure4-147 on page134.
+6.Touch Delete. A confirmation dialog opens with the following message:
+Figure 4-151: Delete Role
+7.Touch the OK button to delete the role.
+8.Touch the Cancel button to close the confirmation dialog, without deleting the role.
+9.Touch the Save button to save the changes.
+10.Touch the Close button to close the Roles and Access Rights the Home screen.screen and then return to
+If the Close button is touched without saving, a confirmation dialog opens:
+Figure 4-152: Close dialog
+11.To save the changes, touch the No button and then touch the the changes and close the dialog box touch the Save button. To disregardYes button and return to the Home screen
+138 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+4.10 Access Rights
+Access rights gives the user the default privileges to execute tasks in the Touch Control Soft-ware. After you create a role, default access rights are assigned to the role. You can edit the
+access rights individually to the respective roles. The tions and sub-functions. The required Access Rights screen lists all the func-access rights for different sub-functions has to be spec-
+ified by selecting either read-only or full access icon.
+Following are the types of functions:
+Operation: Displays General, Line Setup and job editor sub-functions
+Maintenance: Displays Software and Backup/Restore types of sub-functions
+Configuration: Displays Laser setup and Program setup sub-functions
+Access rights: Displays User Administrator and Roles sub-functions
+Figure 4-153: Access rights
+4.10.1 Editing the Access RightsOnly the Administrators access rights cannot be edited.
+Any of the other roles can be edited.
+1.Touch the Menu button on the Status bar.
+2.Touch the Roles and Access Rights button. The Roles and Access Rights screen opens.
+3.Touch the role you want to change.
+4.Touch the access rights level you want to change. The function is highlighted.
+05/16 - Rev. AH 139
+
+Touch Control SoftwareMenuChapter 4
+5.Touch the Pen button
+Figure 4-154: Access rightsPen button options
+6.Touch the Edit Access Rights button. The corresponding sub-funcicons.tion list is displayed with
+Figure 4-155: Editing Access rights
+7.Select any one of the following icons to view, or edit the access rights for a role. The selectedicon is highlighted. See Figure4-155:
+IconIcon nameDescription
+Read-only AccessControls can only be viewed/read.
+For example, only Textbox button can be seen, but actions like editing the Textbox values and selecting the button can-
+not be done.
+Full AccessControls can be viewed and edited.
+For example, Textbox values can be viewed and edited.
+140 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+NoteIf you have created a new role, then the new role will have the rights of oper-ator role.
+8.Touch the Return button to go to the Roles and Access Rights screen.
+9.The function (for example Operation) will have the sub-access rights have fullVAR displayed. This indicates that some of access or read-only access.
+Figure 4-156: Maintenance assigned VAR Access rights
+10.Touch the Save button to save the changes.
+11.Touch the Close button to close the Roles and Access Rights the Home screen.screen and then return to
+If the Close button is touched without saving, a confirmation dialog opens:
+Figure 4-157: Close dialog
+12.To save the changes, touch the No button and then touch the the changes and close the dialog box touch the Save button. To disregardYes button and return to the Home screen.
+4.10.2 To Assign Full Access 1.Touch the Menu button on the Status bar.
+2.Touch the Roles and Access Rights button. The Roles and Access Rights screen opens.
+3.Touch the function (for example Configuration)lighted. you want to change. The function is high-
+05/16 - Rev. AH 141
+
+Touch Control SoftwareMenuChapter 4
+4.Touch the selected role Pen button.
+5.Select Full Access.The selected function and sub-function as shown in the following screen shot:is provided full access rights
+Figure 4-158: The Configuration has been assigned full rights
+6.Touch the Save button to save the changes.
+7.Touch the Close button to close the Roles and Access Rights the Home screen.screen and then return to
+If the Close button is touched without saving, a confirmation dialog opens:
+Figure 4-159: Close dialog
+8.To save the changes, touch the No button and then touch the the changes and close the dialog box touch the Save button. To disregardYes button and return to the Home screen.
+4.10.3 To Assign Read-only Access 1.Touch the Menu button on the Status bar.
+2.Touch the Roles and Access Rights button. The Roles and Access Rights screen opens.
+3.Touch the function (for example Operation) that you want to change the rights. The functionis highlighted.
+4.Touch the Pen button.
+142 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+5.Select Read-only Access.The selected function and sub-function is provided read-onlyrights as shown in the following screen shot:
+Figure 4-160: The operation has been assigned read-only rights
+6.Touch the Save button to save the changes.
+7.Touch the Close button to close the Roles and Access Rights the Home screen. If the screen and then return toClose button is touched without saving, a confirmation dialog opens:
+Figure 4-161: Close dialog
+8.To save the changes, touch the No button and then touch the the changes and close the dialog box touch the Save button. To disregardYes button and return to the Home screen.
+4.11 Laser Settings
+Laser SettingsYou can define the laser coder settings for the lens, working distance, date and time for the
+laser system.
+4.11.1 Laser Settings screen1.Touch the Menu button on the Status bar.
+05/16 - Rev. AH 143
+
+Touch Control SoftwareMenuChapter 4
+2.Touch the Laser settings button. The Laser Settingsfollowing screen shot. screen is displayed as shown in the
+Figure 4-162: Laser Setting
+The following table provides the description of the Laser Settings screen fields:
+FieldDescription
+LensDisplays the lens type. An appropriate lens has to be selected from the drop-down list.
+Working DistanceDisplays the working distance for the selected lens.
+Date Displays the current date of the laser system. The default format for date is dd.mm.yy.
+Select the appropriate Date, Month and Year from the drop-down list.
+TimeDisplays the time of the laser system. The default format for time is hh:mm:ss.
+Select the appropriate Hours, Minutes and Seconds from the drop-down list.
+Time ZoneDisplays the time zone selected for the laser. Following are the options available from the drop-down list:
+NoneBrazil
+Canada/USAChina
+Eastern EuropeMid Europe
+Western EuropeNOTE: If you select the option None, then the Daylight Saving
+Time checkbox is disabled.
+144 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+4.12 Main Settings
+FieldDescription
+Pilot LaserIf the system is equipped with a pilot laser, it has to be enabled with this checkbox. When enabled it is possible to "mark" with the pilot
+laser (see below).
+Mark withIf a pilot laser is enabled, you can chose here whether you want to mark your product using the laser or simulate the marking using the
+pilot laser.
+CloseCloses the Laser Settings screen.
+You can define the global settings in the main settings screen, the settings defined on thisscreen are globally applicable in the Touch Control Software.
+4.12.1 Accessing the Main Settings screen1.Touch the Menu button on the Status bar. The Menu options list opens.
+2.Select the Main Settings button. The Main Settings list is displayed.
+Figure 4-163: Main Setting
+05/16 - Rev. AH 145
+
+Touch Control SoftwareMenuChapter 4
+The following table provides the description of the Main Settings screen fields:
+FieldDescription
+LanguageDisplays the language options avaiware. To change the language, select an option from the drop-down lable in the Touch Control Soft-
+list. Following language options are available:
+ArabicBrazilian PortugueseKoreanPolish
+Chinese TraditionalDanish PortugueseRussian
+DutchEnglish Simplified ChineseSpanish
+FrenchGerman ThaiTurkish
+ItalianJapanese Vietnamese
+NOTE: When you change the language of the program, the manual available (touch the Help button) is automatically changed to the
+language selected.
+Linear unitDisplays the default linear unit of measurement for the program. The measurement units available for selection are:
+millimeters (mm)Centimetres (cm)
+Inches (inch)NOTE: The default Linear unit is mm. When the measurement units
+are changed, the preview window adapts accordingly.
+General speed unitDisplays the default speed unit of measurement for the program. The measurement units available for selection are:
+millimeters/second (mm/s)Metres/second (m/s)
+Feet/minute (ft/min)Metres/minute (m/min)
+NOTE: The default Speed unit is m/min. When the measurement units are changed, the preview window adapts accordingly.
+Line speed unitDisplays the default speed unit for the line speed. The measure-ment units available for selection are:
+millimeters/second (mm/s)Metres/second (m/s)
+Feet/minute (ft/min)Metres/minute (m/min)
+NOTE: The default Speed unit is m/min. When the measurement units are changed, the preview window adapts accordingly.
+146 05/16 - Rev. AH
+
+Chapter 4Touch Control SoftwareMenu
+FieldDescription
+Tool Step WidthDisplays the absolute step value. The setting the offset value for Tool Step Width is used for Linear, Rotation and Scaling. The value
+set applies simultaneously to Linearselected unit of measurement), movement (based on the Rotation (degrees) and Scaling
+(percent). For example, when you select the value increases or decreases depending on the value set in the Rotation arrow, the
+Tool Step width.
+On selecting this Tool Step Widththrough which the value can be changed. button, a keypad is displayed
+Figure 4-164: Tool Step keypad
+Password on StartSelect the checkbox to login to Touch Control panel whenever the program starts.
+Shut down System after ExitSelect this checkbox to shut down the Touch Control panel, when-ever the user exits the program.
+NOTE: This option does not impact the settings of the laser.
+CloseCloses the Main Settings screen.
+05/16 - Rev. AH 147
+
+Touch Control SoftwareMenuChapter 4
+148 05/16 - Rev. AH
+
+Chapter 5Examples for Touch Control
+5 Examples for Touch Control
+The following examples illustrate how to create jobs can have fields and elements, such as tejobs by using the Touch Control Software. Thext, variables, barcode, ID matrix and so on.
+5.1 Example 1: Single line text field
+Line 1: Text Hello
+The element type used in this example is as follows:
+Hello is of element type StaticText.
+1.Touch the Pen button inthe job pane.
+2.Touch the Manage jobs button. The Manage jobs screen opens.
+3.Touch the Create button. A keyboard opens.
+4.Using the keyboard, enter a name for the new job, such as Example1.
+5.Touch the OK button to save the new job. The Area with rulers along the X and Y axis.Edit job screen opens showing the Marking
+Figure 5-165: Element types list
+6.To create the text element HELLO, touch the of Addjob Elements button in the opens.job Elements field. A list
+05/16 - Rev. AH 149
+
+Examples for Touch ControlChapter 5
+7.Touch the Static Text button. In the preview area, touch the approximate location whereyou want to place the job element.
+NOTE:The final element positioning can be carried out accurately by using either:
+a.the Adjust button in the Quick Edit Toolbar, b.the X and Y position buttons.
+Figure 5-166: Edit element name
+3.To edit the name of the element, touch the pen button of the element as shown in Figure5-166. A keyboard opens.
+4.Using the keyboard, enter a name for the element, for example, HelloStaticText_1.
+5.Touch the OK button to save the changes or touch the es and return to the Edit job screen.Cancel button to disregard any chang-
+The text element is added to the job as shown in the following screen shot.
+Figure 5-167: Adding Text element
+6.To change the text element content, in the with the label STATIC TEXT field touch the Text. A keyboard opens. Content button
+150 05/16 - Rev. AH
+
+Chapter 5Examples for Touch Control
+7.Using the keyboard, delete the word Text and enter the word Hello.
+8.Touch the OK button to save the changes or touch the es. The CancelEdit job button to disregard any chang- screen opens.
+Figure 5-168: Example1Renaming the text element
+9.Other features can be changed if required. For example, Font and Font Size, and so on.
+10.Drag the element and drop it at the desired position. To do this, touch the element (to select it) and drag it across to the desired position and then
+lift your finger off the element.
+11.You can also change the position of the element by changing the POSITIONING field as shown in Figure5-169 on page151.X and Y values under the
+12.Touch the X or Y button. A keypad opens allowing you to enter the required position dimen-sion.
+13.Touch the OK button to save the changes or touch the es.Cancel button to disregard any chang-
+Figure 5-169: Repositioning the text element Hello
+14.Touch the Save button to save the changes or touch the changes.Cancel button to disregard any
+05/16 - Rev. AH 151
+
+Examples for Touch ControlChapter 5
+15.Touch the Return button to return to the Edit job screen.
+16.Touch the Close button to close the Edit jobBefore returning to the screen and return to the Home screen a confirmation dialogue opens.Home screen.
+Figure 5-170: Activate the job
+17.Touch the Yes or No button as required and return to the The job Example1 is now complete and ready to use.Home screen.
+5.2 Example 2: Three lines, justified flush left and right
+Line 1: Text Batch and variable Serial number (8 digits)
+Line 2: Text ProdDate and variable Date (current)
+Line 3: Text ExpDate and variable Date (current date with an offset of 3 months).
+The job Elements and their element type are as follows:
+Batch:, ProdDate: and ExpDate: are of element type StaticText.
+09876543 is of variable type Serial Number.
+29.11.11 and 29.02.12 are of variable type Date.
+Figure 5-171: Example 2
+1.Touch the Pen button in the job pane.
+152 05/16 - Rev. AH
+
+Chapter 5Examples for Touch Control
+2.Touch the Manage jobs button. The Manage job screen opens.
+3.Touch the Create button. A keyboard opens.
+4.Using the keyboard, enter a name for the new job, such as Example2.
+5.Touch the OK button to save the new job. The Edit job screen opens.
+6.To create the first element Batch, touch the Addtouch the button in the Static Textjob Elements button. In the preview area, touch the approximate location where youfieldand then
+want to place the job element. A keyboard opens.
+NOTE: The final element positioning can be carried out accurately by using either:
+a.the Adjust button in the Quick Edit Toolbar, b.the X and Y position buttons.
+Figure 5-172: Example2Renaming the text element
+3.Using the keyboard, enter a name for the element, for example, Batch1.
+4.Touch the OK button to save the changes or touch the es.Cancel button to disregard any chang-
+5.To change the text element content, in the with the label STATIC TEXT field touch the Text. A keyboard opens.Content button
+6.Using the keyboard, enter the name Batch1.
+05/16 - Rev. AH 153
+
+Examples for Touch ControlChapter 5
+7.Touch the OK button to save the changes or touch the es..Cancel button to disregard any chang-
+Figure 5-173: Adding the first elementBatch
+8.Drag the element and drop it at the desired position. You can also change the position of the element by changing the X and Y values under the
+POSITIONING field as shown in the following screen shot.
+For example, touch the X and Y buttons and enter the following coordinates for the fields: X= 25mm and Y= 15mm. X and Y
+Figure 5-174: Repositioning the first elementBatch
+9.Touch the Save button to save the changes or touch the changes.Cancel button to disregard any
+10.Touch the Return button to return to the Edit job screen.
+154 05/16 - Rev. AH
+
+Chapter 5Examples for Touch Control
+11.To create the second element ProdDate and the third element 6 to 10 and position the element at desired position ExpDate, repeat the stepsas shown in the following two screen shots.
+ProdDate coordinates for the X and Y fields: X= 25mm and Y= 5mm.
+Figure 5-175: Adding the second elementProdDate
+ExpDate coordinates for the X and Y fields: X= 25mm and Y= -5mm.
+Figure 5-176: Adding the third elementExpDate
+12.To create the fourth element 09876543, touch the then touch the Add button in the Serial Numberjob Elements button. field and
+13.In the preview area, touch the approximate locaA keyboard opens. tion where you want to place the job element.
+14.Using the keyboard, enter a name for the element, for example, Bat_Ser_No_1.
+15.Touch the OK button to save the changes or touch the es.Cancel button to disregard any chang-
+05/16 - Rev. AH 155
+
+Examples for Touch ControlChapter 5
+16.To set the serial number to 09876543, a.In the perform the following steps: SERIAL NUMBER field, touch the End Value button and set end value as
+9999999 by using the keypad. By default, the start fifollowing screen shot.eld is set to 0000000 and is shown in the
+b.Touch and set the Start Value button 0000000 to 09876543 by using the keypad.
+NOTE:The end value must be greater than the start value of the serial number value to be set. For this example, the end value to be set must be greater than the serial number value
+09876543.Once the end value is set, you can set the value for the start number within the range
+0000000 to 9999999.
+Figure 5-177: Adding the fourth elementSerial Number variable:
+3.Drag the element and drop it at the desired position.
+NOTE: To access the next fields you need to scroll down right hand side.using the scroll bar on the
+You can also change the position of the element by changing the POSITIONING field as shown in the following screen shot.X and Y values under the
+For example, touch the X and Y buttons and enter the following coordinates for the fields: X= 5mm and Y= 15mm.X and Y
+Figure 5-178: Serial Number variable with actual value09876543
+156 05/16 - Rev. AH
+
+Chapter 5Examples for Touch Control
+4.Touch the Save button to save the changes or touch the changes.Cancel button to disregard any
+5.Touch the Return button to return to the Edit job screen.
+6.To create the fifth element, the current date, 30.09.12ements field and then touch the , touch the Add button in the Date button. job El-
+7.In the preview area, touch the approximate locaA keyboard opens. tion where you want to place the job element.
+8.Using the keyboard, enter a name for the element, for example, ProdDate_1.
+9.Touch the OK button to save the changes or touch the es.Cancel button to disregard any chang-
+The current laser date is displayed. If required, adjust the date by setting the offset field in termsof days, weeks, months or years. The date will change according to the offset value. For exam-
+ple, if you want to change the laser date 31.03.12 to 03.04.12, you must set an offset of threedays.
+Figure 5-179: Adding the fifth date variable30.09.12
+10.To add an offset to ProdDate_1 touch the Offset button in the DATE field. A keyboard opens.
+11.Using the keypad enter an offset of 3. Touch the unit selector button and touch the option. days
+12.Drag the element and drop it at the desired position. You can also change the position of the element by changing the X and Y values under the
+POSITIONING field as shown in the following screen shot (see Figure5-180 on page158).
+For example, touch the X and Y buttons and enter the following coordinates for the fields: X= 5mm and Y= 5mm.X and Y
+05/16 - Rev. AH 157
+
+Examples for Touch ControlChapter 5
+Figure 5-180: Adding the 3 day offset and X, Y co-ordinates
+NOTE: The actual format of the displayed date can also be changed here by choosing types of separator, date format and so on.
+13.Touch the Save button to save the changes or touch the changes.Cancel button to disregard any
+14.Touch the Return button to return to the Edit job screen.
+15.To create sixth element 01.12 as shown in the following screen shot and repeat the steps6 to 14.
+Enter 3 months as the required date offset.
+Enter the X and Y coordinates as X= 5mm and Y= 0mm.
+Figure 5-181: Adding the sixth Date variable01.12.12
+158 05/16 - Rev. AH
+
+Chapter 5Examples for Touch Control
+16.The job created with six elements appears asYou can set the alignment of the elements either to left, right, or centre from the alignment field. shown in the following screen shot.
+If you set the element to be right-aligned, all additional digits or alphabets added later will re-main right-aligned. If you set the element to be left-aligned, all additional digits or alphabets
+added later will remain left-aligned.For the above example, elements Batch, ProdDate and ExpDate are left-aligned and ele-
+ments 09876543, 03.04.12 and 30.06.12 are right-aligned. See the section Quick Edit Toolbaron page41 for information about aligning elements.
+Figure 5-182: Six elements in the preview area
+17.Touch the Close button to close the Edit jobBefore returning to the screen and return to the Home screen a confirmation dialog opens:Home screen.
+Figure 5-183: Activate the job
+18.Touch the Yes or No button as required and return to the The job Example2 is now complete and ready to use.Home screen.
+05/16 - Rev. AH 159
+
+Examples for Touch ControlChapter 5
+5.3 Example 3: Variable with ID Matrix
+Line 1: Serial number (8 digits)
+Line 2: Text 09.11
+Right column: ID matrix code, dots (consisting of the contents of the two lines above).
+The job Elements and their element type are as follows:
+12345678 is of variable type Serial Number.
+09.12 is of element type Text.
+The third element is an element type of IDMatrix.
+Figure 5-184: Example 3
+1.Touch the Pen button in the job pane.
+2.Touch the Manage jobs button. The Manage job screen opens.
+3.Touch the Create button. A keyboard opens.
+4.Using the keyboard, enter a name for the new job, such as Example3.
+5.Touch the OK button to save the new job. The Edit job screen opens.
+6.To create the first element 12345678, touch the then touch the Add button in the Serial Numberjob Elements button. A keyboard opens. field and
+7.Using the keyboard, enter a name for the element, for example SerialNumber_1.
+8.Touch the OK button to save the changes or touch the es.Cancel button to disregard any chang-
+160 05/16 - Rev. AH
+
+Chapter 5Examples for Touch Control
+9.To set the serial number 12345678, a.In the perform the following steps: SERIAL NUMBER field, touch the End Value button and set the end value as
+12345678 by using the keypad. By default, the The end value must be greater than the start value of the serial number value to be set. For thisStartValue is set to 00000000.
+example, the start value to be set must be less than the serial number value of 12345678.Once the end value is set, you can give the value for the serial number within the range
+00000000 to 12345678.
+2.Drag the element and drop it at the desired position. You can also change the position of the element by changing the X and Y values under the
+POSITIONING field as shown in the following screen shot.
+For example, touch the X and Y buttons and enter the following coordinates for the fields: X= 30 mm and Y= 10mm.X and Y
+Figure 5-185: Adding the Serial Number element
+3.Touch the Save button to save the changes or touch the changes.Cancel button to disregard any
+4.Touch the Return button to return to the Edit job screen.
+5.To create the second element, 09.12, touch the then touch the Add button in the Static Textjob Elements button. A keyboard opens. field and
+6.Using the keyboard, enter a name for the element, for example, StaticText_1.
+7.Touch the OK button to save the changes or touch the es.Cancel button to disregard any chang-
+8.To change the text element content, in the STATIC TEXT Text. A keyboard opens. field Content button with the label
+9.Enter the numbers 09.12 using the keyboard.
+10.Touch the OK button to save the changes or touch the es.Cancel button to disregard any chang-
+05/16 - Rev. AH 161
+
+Examples for Touch ControlChapter 5
+11.Drag the element and drop it at the desired position. You can also change the position of the element by changing the values under the POSITION-
+ING field as shown in the following screen shot.
+For example, touch the X and Y buttons and enter the following coordinates for the X and Yfields: X= 30mm and Y= 0mm.
+Figure 5-186: Adding the Text element
+12.Touch the Save button to save the changes or touch the changes.Cancel button to disregard any
+13.Touch the Return button to return to the Edit job screen.
+14.To create the third element, the ID matrix, touch the and then touch the Add button in the IDMatrixjob Elements button. A keyboard opens. field
+15.Using the keyboard, enter a name for the element, for example, IDM_1.
+16.Touch the OK button to save the changes or touch the es.Cancel button to disregard any chang-
+17.To change the content data of the IDMatrix element, touch the touch the Edit button. DATA field Pen button then
+Figure 5-187: Adding an ID Matrix symbol
+162 05/16 - Rev. AH
+
+Chapter 5Examples for Touch Control
+18.The DATA edit field is displayed.Touch the Content button. A keyboard opens.
+19.Using the keyboard enter the number: 12345678 9.12
+Figure 5-188: Adding the ID Matrix Data
+20.Touch the OK button to save the changes or touch the es.Cancel button to disregard any chang-
+21.Touch the Save button to save the changes or touch the changes.Cancel button to disregard any
+22.Touch the Return button to return to the Edit IDMatrix screen.
+23.To change the format of the representation type to dots or grid, in the field touch the RepresentationREPRESENTATION button.
+Touch the Dots button.
+Figure 5-189: ID matrixDots or Grid
+24.Touch the Save button to save the changes.
+25.Touch the Return button to return to the Edit job screen.
+05/16 - Rev. AH 163
+
+Examples for Touch ControlChapter 5
+26.Touch the Close button to close the Edit jobBefore returning to the screen and go to the HomeHome screen a confirmation dialog opens: screen.
+Figure 5-190: Activate Line setup
+27.Touch the Yes or No button as required and return to the Home screen.
+28.The job created with three elements appears as shown in the following screen shot.
+Figure 5-191: job with ID matrix in preview
+The job Example3 is now complete and ready to use.
+164 05/16 - Rev. AH
+
+Chapter 5Examples for Touch Control
+5.4 Example 4: Text centred within a rectangle (frame)
+The job Elements and their element type are as follows:
+Hello is an element of type Text.
+The rectangle is an element of type Graphics.
+Figure 5-192: Example 4
+1.Touch the Pen button in the job pane.
+2.Touch the Manage jobs button. The Manage jobs screen opens.
+3.Touch the Create button. A keyboard opens.
+4.Using the keyboard, enter a name for the new job, such as Example4.
+5.Touch the OK button to save the new job. The Edit job screen opens.
+6.To create a graphic element rectangle, touch the then touch the Add button in the Graphicjob Elements button. A keyboard opens. fieldand
+7.Using the keyboard, enter a name for the element, for example Graphics_1.
+8.Touch the OK button to save the changes or touch the es.Cancel button to disregard any chang-
+9.To change the shape of the graphic, in the RECTANGLEand then touch the field, touch the RectangleGraphic type option. button
+10.To change the size of the graphic, in the POSITIONINGin turn and enter the following dimensions: Height = 8mm and Width = 16mm. field touch Height and Width buttons
+05/16 - Rev. AH 165
+
+Examples for Touch ControlChapter 5
+11.To centre the graphic, touch the POSITIONING graphic.field Centre button to select and centre the
+Figure 5-193: Adding first elementRectangle
+12.Touch the Save button to save the changes.
+13.Touch the Return button to return to the Edit job screen.
+14.To create the second element Hello, touch the then touch the Add button in the Static Textjob Elements button. A keyboard opens. field and
+15.Using the keyboard, enter a name for the element, for example, StaticText_1.
+16.Touch the OK button to save the changes or touch the es.Cancel button to disregard any chang-
+17.To change the text element content, in the STATIC TEXT label Text. A keyboard opens. field touch Content button with
+18.Using the keyboard, enter the text Hello.
+19.Touch the OK button to save the changes or touch the es.Cancel button to disregard any chang-
+166 05/16 - Rev. AH
+
+Chapter 5Examples for Touch Control
+20.To centre the text to the graphic, touch the POSITIONING centre the graphic.field Centre button to select and
+Figure 5-194: Adding second elementHello
+21.Touch the Save button to save the changes.
+22.Touch the Return button to go to the Edit job screen.
+23.Touch the Close button to close the Edit jobBefore returning to the screen and go to the Home screen a confirmation dialog opens:Home screen.
+Figure 5-195: Activate Line setup
+24.Touch the Yes or No button as required and return to the Home screen.
+05/16 - Rev. AH 167
+
+Examples for Touch ControlChapter 5
+25.The job created with two elements and repositioned appears as shown in the following screenshot.
+Figure 5-196: Repositioning the elements
+The job Example4 is now complete and ready to use.
+168 05/16 - Rev. AH

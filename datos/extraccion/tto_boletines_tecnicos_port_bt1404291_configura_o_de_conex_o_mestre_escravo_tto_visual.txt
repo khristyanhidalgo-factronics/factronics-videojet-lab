@@ -1,0 +1,119 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Port\BT1404291 (Configuração de Conexão Mestre-Escravo TTO).pdf
+# cifrado=False bloques=8 caracteres=6328
+
+Videojet Technologies Latin Ame rica
+BT1404161
+Data: 16/04/2014
+Equipamentos: Dataflex + / DF6420 / DF6320 - TTO
+Tema: Configurao de Conexo Mestre-Escravo TTO
+Este Boletim tcnico tem o intuito de auxiliar os t cnicos como configurar os equipamentos TTO para a aplicao
+Mestre/Escravo.
+Vantagens de uma conexo Mestre/Escravo
+- Deixar mais simples o sistema de codificao quan do h a necessidade de imprimir em vrios pacotes n a
+mesma embaladora.
+- Reduo de tempo para setup dos equipamentos.
+- Reduo de falhas humanas.
+- Reduo de custo de quando necessita aplicao em mais de um pacote, sem a necessidade de outros
+equipamentos completos (um completo e os outros sem display).
+ - Reduo de espao de instalao.
+Quando h uma necessidade de uma conexo mestre esc ravo?
+- Quando dois ou mais equipamentos so necessrios para imprimir no mesmo lado do filme
+- Quando o cliente desejar ter um total controle em apenas um s painel IHM.
+Existe dois tipos de configurao
+- Group Job Select: Permite que a mensagem seja sel ecionada somente pelo mestre, mas as configuraes das
+maquinas esto em suas prprias telas.
+- Group Control: Todas as configuraes, seleo de mensagem, avisos de falhas esto na tela do mestre ,
+nessa configurao no necessrio ter as outras t elas dos escravos.
+
+Requisitos necessrios para instalao
+Quando for um mestre e um escravo apenas:
+- Um cabo crossover necessrio para interconexo dos equipamentos, os cabos I/O devero ser instalad os
+como em uma instalao comum.
+Um mestre e mais que dois escravos:
+- Caixa de conexo conforme imagem abaixo (PN: 2188 56).
+- Essa caixa permite que seja conectado at 4 mqui nas (1 mestre e 3 escravos)
+- Com essa caixa necessrio apenas um s encoder e apenas um sinal de impresso, pois eles sero
+enviados para os outros equipamentos.
+- Cabo Ethernet direto.
+Configurando uma conexo Mestre/Escravo
+- Todos os equipamentos devem estar na mesma rede.
+Exemplo:
+Mestre
+IP: 169.254.187.196
+Mscara de Sub-Rede: 255.255.0.0
+Escravo 1
+IP: 169.254.187.190
+Mscara de Sub-Rede: 255.255.0.0
+Computador
+IP: 169.254.187.199
+Mscara de Sub-Rede: 255.255.0.0
+Lembrando que o nmero de IP deve ser diferente ape nas o ltimo dgito e a mscara de sub-rede devem s er
+iguais para os equipamentos.
+
+- Primeiramente conecte o computador com a mquina que ser o Mestre via Ethernet, em seguida, clique com
+o boto direito do mouse encima de New Coder, sel ecione a opo Set as Master.
+- Informar os nomes do Mestre e do Escravo e o IP q ue ser o escravo.
+Note que a porta do escravo ter que ser 3002.
+Abaixo aparecer uma janela chamada Master/Slave L evel voc ter que selecionar se ser Group Job Se lect
+ou Group Control (J citado acima para que cada um serve).
+O equipamento Mestre entrar em falha avisando que no est conectado a nenhum escravo.
+
+- Agora conecte o computador com o equipamento que ser o escravo via Ethernet tambm, em seguida, cli que
+com o boto direito do mouse encima de New Coder, selecione a opo Set as Slave.
+Em seguida abrir uma janela pedindo para informar o IP do escravo, Mscara de Sub-Rede e a Porta de
+Comunicao.
+Embaixo aparecer uma janela que pergunta qual ser a ao se a conexo com o mestre for perdida.
+Temos trs opes:
+1-) No action: As mquinas no iro realizar nenhum a ao.
+2-) Raise a warning and continue operation: As mqu inas enviaram um alerta, porm continuaram imprimin do.
+3-) Raise a fault and suspend operation: As mquina s entraram em falha e no iro mais imprimir.
+
+O equipamento Escravo entrar em falha avisando que no est conectado ao mestre.
+- Aps realizar todas as configuraes devemos faze r as ligaes entre as mquinas, se for usar 2 ou 3
+escravos, ser necessrio a Caixa de Conexo e ser necessrio apenas um sinal do encoder e apenas um
+sinal de disparo. Se for usar apenas 1 escravo, bas ta somente ligar o cabo CROSSOVER uma ponta em ca da
+equipamento, cada equipamento ter o sinal do encod er e de impresso individual.
+Assim que for conectado um equipamento no outro, se r necessrio limpar as falha nos equipamentos. Lem bre-
+se: se estiver utilizando a funo Group Control, t odos os ajustes sero no mestre, inclusive limpar a s falhas,
+ativar e desativar a impresso, velocidade de impre sso, contraste, etc.
+Pronto, a funo Mestre/Escravo j est funcionando nesses equipamentos.
+
+Mensagens na aplicao Mestre/Escravo
+H duas maneiras de obteno da mensagem via Mestre /Escravo.
+1) A mensagem do Mestre ser a mesma para os escra vos.
+Para que isso ocorra, devemos conectar o Clarity Co nfig com o Mestre e ir ao seguinte menu: Imaging >> Print
+Head Mapping
+Este campo do Clarity Config serve como referncia onde os escravos iro buscar a Sub-Imagem.
+Printhead1 Mestre
+Printhead2 Escravo 1
+Printhead3 Escravo 2
+Printhead4 Escravo 3
+Se h a necessidade que as mensagens do escravo sej a igual a do mestre, deve ser inserido 1 no valor d esses
+campos.
+2) A mensagem do Escravo ser diferente do mestre.
+Primeiramente, devemos criar a mensagem do mestre n ormalmente no Clarisoft.
+
+Em seguida, necessrio adicionar uma Sub-Imagem n esse mesmo arquivo do Clarisoft, no menu Arquivo > >
+Propriedades, abrir uma janela, ir na aba Sub-Im agens >> Nova Sub-Imagem, ser percebido que ir
+aparecer uma nova linha embaixo, ao clicar nessa no va linha e dar OK estar sendo editado a Sub-Image m 2,
+neste caso que ser do Escravo.
+Para voltar a edio da Sub-Imagem 1, basta clicar na primeira linha e dar OK.
+Agora basta associar qual mensagem ser de qual mq uina.
+Em Arquivo >> Propriedades, temos a aba Associa o de Cabeas, nesta janela, deve ser informado qu al
+mensagem ser de qual cabea. Por exemplo: Sub-Imag em 1 ser da cabea 1, Sub-Imagem 2 ser das
+cabeas 2,3 e 4.
+
+Aps feita a associao correta deve-se salvar e de scarregar a mensagem apenas no Mestre, lembrando qu e no
+Clarity Config no poder mais ser 1 os valores dos campos em Print Head Mapping, dever ser conforme
+informado no Clarisoft.
+Agora basta selecionar a mensagem no mestre que ser reporduzida para os escravos.
+Pronto, as configuraes e mensagem na Aplicao Me stre/Escravo est feita e pronta pra uso.
+Para desconectar a mquina de Mestre/Escravo, basta conect-la com o Clarity Config, clicar com o bot o
+Direito encima de New Coder e clicar na Opo Disab le Master-Slave mode.
+ATT.
+DOC_HELP
+Renan Ferreira
+VJ Latin America
+Videojet Technologies Ltd
+Tel: +1 630 8607300 (USA _ Headquarters).
+Tel: +55 11 4689-8800 (Brazil Office).

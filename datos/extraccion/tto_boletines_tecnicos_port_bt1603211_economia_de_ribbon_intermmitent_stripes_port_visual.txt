@@ -1,0 +1,45 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Port\BT1603211-Economia de Ribbon Intermmitent Stripes (Port).pdf
+# cifrado=False bloques=3 caracteres=2149
+
+Com estes espaos h perda ribbon, se
+no usarmos a funo de modo de
+economia de ribbon Intermittent Stripes.
+O espao entre impresses diminui
+para 0,5 mm no ribbon utilizado
+ Videojet Technologies Ltd
+BT1603211
+Data: 21/03/2016
+Equipos: 6320 / 6420 / Dataflex Plus / Dataflex IP 65
+Assunto: Economia de Ribbon Intermittent Stripes / Modo de Economia de Fita
+ Faixas Intermitentes
+Este BT para ajudar a configurar os equipos Dataf lex Plus, Dataflex IP 65, 6320 e 6420 para trabalha r com
+economia de ribbon Intermittent Stripes (Modo de Ec onomia de Fita Faixas Intermitentes).
+ATENCO: Este modo de economia de ribbon no est d isponvel para os equipos 6210. Ratificamos
+que os equipos 6210 tm disponvel apenas o modo de economia Pontos Intercalados.
+Este modo de economia de ribbon utilizado em apli caes intermitentes , quando o cliente necessita fazer
+impresses com espaos verticais entre os campos, a o longo do ribbon. Exemplo abaixo:
+Layout do cliente:
+Veja abaixo a impresso com o recurso de economia d e ribbon Intermittent Stripes:
+Para habilitar este recurso no equipo, devemos esco lher corretamente o modo de economia de ribbon na t ela
+Clarity e tambm criar uma mensagem no Clarisoft, i nserindo um separador de imagem. Veremos adiante co mo
+fazer isto.
+
+1 No Clarisoft:
+- Criar a mensagem que deseja o cliente.
+- Criar um campo tipo Desenho e em Propriedades de Desenho, caixa Tipo Primitivo, escolher Linha
+- Na aba Geral, marcar a caracterstica como no impresso. O nome do campo deve comear sempre com
+ImageSeparator
+
+- Inserir a linha entre os campos que sero impress os (os equipos suportam at 4 linhas separadoras).
+Descarregar o arquivo do Clarisoft no equipo.
+2 Na tela Clarity:
+- Seguir o caminho: Ferramentas > Ajustes > Cabea de Impresso > Modo de Economia de Fita
+- Escolher Faixas Intermitentes
+Agora o equipo est pronto para trabalhar com econo mia de ribbon Intermittent Stripes. Lembrando que
+possvel trabalhar com o mximo de 4 linhas separad oras, ou seja, at 5 blocos distintos e que este mo do de
+economia s se utiliza para aplicaes intermitente s.
+JAM
+Videojet Technologies Ltd
+VJ LA Tec
+Latin America
+la.tec@videojet.com

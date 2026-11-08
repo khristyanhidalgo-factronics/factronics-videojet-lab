@@ -1,0 +1,46 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Esp\BT1603211-Ahorro de Cinta Intermmitent Stripes (Esp).pdf
+# cifrado=False bloques=3 caracteres=2239
+
+Con estos espacios se pierde cinta, si no
+usamos la funcin de modo de ahorro de
+cinta Intermittent Stripes.
+El espacio entre impresiones disminuye
+para 0,5 mm en la cinta utilizada
+ Videojet Technologies Ltd
+BT1603211
+Fecha: 21/03/2016
+Equipos: 6320 / 6420 / Dataflex Plus / Dataflex IP 65
+Tema: Ahorro de Cinta Intermittent Stripes / Modo de Pr eservacin de Cinta
+ Lineas Intermitentes
+Este BT es para ayudar a configurar los equipos Dat aflex Plus, Dataflex IP 65, 6320 y 6420 para trabaj ar con
+ahorro de cinta Intermittent Stripes (Modo de Prese rvacin de Cinta Lineas Intermitentes).
+ATENCIN: Este modo de preservacin de cinta no est disponible para los equipos 6210. Ratificamos
+que los equipos 6210 tiene disponible solamente el modo de preservacin de cinta Imagenes
+Intercaladas.
+Este modo de ahorro de cinta es utilizado en aplica ciones intermitentes , cuando el cliente necesita hacer
+impresiones con espacios verticales entre los campo s, al largo de la cinta. Ejemplo abajo:
+Layout del cliente:
+Mire abajo la impresin con el recurso de ahorro de cinta Intermittent Stripes:
+Para habilitar este recurso en el equipo, debemos e lejir correctamente el modo de ahorro de cinta en l a pantalla
+Clarity y tambien crear una tarea en Clarisoft, ins ertando un separador de imagen. Veremos adelante co mo
+hacer esto.
+
+1 En Clarisoft:
+- Crear el mensaje que desea el cliente.
+- Crear un campo tipo Dibujo y en Propriedades de D ibujo, caja Tipo Primitivo, elejir Linea
+- En la hoja General, marcar la caracterstica co mo no impresso. El nombre del campo debe empezar
+siempre con ImageSeparator
+
+- Insertar la lnea entre los campos que van a ser impresos (los equipos soportan hasta 4 lneas separ adoras).
+Descargar el archivo de Clarisoft en el equipo.
+2 En la pantalla Clarity:
+- Seguir el camino: Herramientas > Configuracin > Cabezal > Modo de Pr eservacin de Cinta
+- Elejir Lineas Intermitentes
+Ahora el equipo est listo para trabajar com ahorro de cinta Intermittent Stripes. Recordando que es p osible
+trabajar con el mximo de 4 lneas separadoras, s ea, hasta 5 bloques distinctos y que este modo de a horro
+solo se utiliza para aplicaciones intermitentes.
+JAM
+Videojet Technologies Ltd
+VJ LA Tec
+Latin America
+la.tec@videojet.com

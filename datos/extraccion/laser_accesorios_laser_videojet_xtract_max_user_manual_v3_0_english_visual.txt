@@ -1,0 +1,1080 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\Videojet Xtract Max User Manual V3.0 (English).pdf
+# cifrado=False bloques=36 caracteres=40121
+
+Xtract Max
+USER MANUAL
+V 3.0 July 2020
+
+Contents
+1 01 Overview: Front ................................ ................................ ................................ ....... 3
+1 02 Overview: Rear ................................ ................................ ................................ ....... 4
+1 03 Overview: Interface ................................ ................................ ................................ 5
+01 Safety: labels ................................ ................................ ................................ ............... 6
+2
+2 02 Safety: instructions ................................ ................................ ................................ . 7
+3 01 Pre Installation ................................ ................................ ................................ ......... 8
+4 01 Extraction application ................................ ................................ .......................... 9
+02 Setup: Connection power ................................ ................................ ................. 10
+4
+03 Interface: signals ................................ ................................ ................................ . 11
+4
+04 Interface: feature(s) ................................ ................................ ............................ 12
+4
+01 Operation ................................ ................................ ................................ ................. 13
+5
+5 02 Configuring airflow ................................ ................................ ............................. 14
+5 03 Airflow initialization ................................ ................................ .......................... 15
+01 Maintenance: General ................................ ................................ ......................... 16
+6
+02 Filter replacement ................................ ................................ ............................... 17
+6
+01 Display features ................................ ................................ ................................ .... 18
+7
+02 Alarm: Heat Detection ................................ ................................ ....................... 19
+7
+03 Alarm: Run safe ................................ ................................ ................................ ..... 20
+7
+04 USB: upload ................................ ................................ ................................ ............. 21
+7
+05 USB: download ................................ ................................ ................................ ..... 22
+7
+06 USB: data collection ................................ ................................ ............................ 23
+7
+01 Error codes ................................ ................................ ................................ ............. 24
+8
+01 Consumables & Filter Disposal ................................ ................................ ...... 25
+9
+01 System Specifications ................................ ................................ ......................... 26
+10
+01 Consumables and Parts ................................ ................................ .................... 27
+11
+01 Electrical Schematics ................................ ................................ .......................... 30
+12
+01 Contact information ................................ ................................ ............................. 31
+13
+Xtract Max User Manual
+Page 2 of 31
+
+Overview : Front
+1
+01
+Xtract Max User Manual
+Page 3 of 31
+
+Overview : Rear
+1
+0 2
+Xtract Max User Manual
+Page 4 of 31
+
+Overview : Interface
+1
+0 3
+Xtract Max User Manual
+Page 5 of 31
+
+/
+point
+h
+/
+3
+Alarmwindow
+Motorrunhours
+Targetairflowset
+CFMorm
+Actualairflowin
+Motorstatusicon
+F
+0
+/
+C
+0
+condition
+condition
+Realtimeprefilter
+Internalunittemperature
+RealtimeCombinedfilter
+
+1. Always isolate the system from the mains power
+S afety : Labels
+supply before removing the pump/motor access panel.
+2. Use only as described in this manual.
+3. Connect the system to a properly grounded outlet.
+Dangers to eyes, breathing and skin
+2
+01
+Once used, the filters within the system may contain a mixture
+of particulates, some of which may be sub - micron size . When
+Important safety notes the used filters are moved it may agitate some of this
+particulate, which could get into the breathing zone and eyes of
+Concerning symbols used on the extraction unit and referred to
+the operative. Additionally, depending on the materials being
+within this manual.
+lasered, the particulate may be an irritant to the skin.
+This unit should not be used on processes with sparks of
+flammable materials or with explosive dusts and gases,
+Danger
+without implementation of additional precautions.
+Caution: When changing used filters always wear a mask,
+R efers to an immediately impending danger. If the danger is not
+safety shoes , goggles and gloves.
+avoided, it could result in death or severe (crippling) injury. Please
+consult the manual when this symbol is displayed.
+Carbon selection
+Warning Please note that the media within the gas filter fitted in the filter
+is capable of adsorbing a wide range of organic compounds.
+R efers to a possibly dangerous situation. If not avoided it could However, it is the responsibility of the user to ensure it is suitable
+for the particular application it is being used on.
+result in death or severe injury. Please consult the manual when
+this symbol is displayed.
+Technical Service
+Ca ution
+If you need help, please contact Videojet Technologies Inc. at 1 -
+800 - 843 - 3610 (for all customers within the United States).
+R efers to a possibly harmful situation. If not avoided, Outside the U.S. customers should contact their Videojet
+Technologies Inc. dist ributor or subsidiary for assistance.
+damage could be caused to the produ ct or something in its
+environment.
+Videojet Technologies Inc.
+1500 Mittel Boulevard
+Important (Refer to manual)
+Wood Dale IL 60191 - 1073, USA
+R efers to handling tip and other particularly useful Phone (USA) 1 800 582 1343
+information. This does not signify a dangerous or harmful
+situation. Refer to manual when this symbol is displayed. International: +1 630 860 7300
+Fax (USA): 1 800 582 1343
+Electrical Safety International Fax: +1 630 616 3629
+Website: www.videojet.com
+Th e unit has been designed to meet the Essential Health and
+Safety Requirements of the Machinery Directive 2006/42/EC. Serial Number
+Warning For future reference, fill in your system details in the space
+provided. The seri al number is on the rating label loca ted on the
+When working with the pump/motor housing open, Live 230/115
+side/ rear of the unit. Serial Number :
+volt mains components are accessible. Ensure that the rules and
+regulations for work on live components are always observed.
+Important
+To reduce the risk of fire, electric shock or injury:
+Xtract Max User Manual
+Page 6 of 31
+
+• Company name, Address & Contact number
+S afety : Instructions
+• Extractor model
+• Unit serial number
+• Operating voltage range
+• Maximum current load
+• Operating frequency
+2
+0 2
+• Year of Manufacture
+• Relevant approval markings/ logos
+Warning and Information labels
+The following listing de tails labels used on your unit.
+PLEASE NOTE: If the equipment is used in a manner not
+specified by the manufacturer, the protection provided by
+the equipment maybe comp romised .
+Eye protection, Mask, Gloves, Information
+Fire Risk Warning
+In the very rare event that a burning ember or spark is drawn into
+the fume extraction unit, it may be possible that the filters will
+ignite.
+Goggles, Gloves and Masks should be worn while handling
+Whilst any resultant fire would typically be retained within the fume
+used filters.
+extraction unit, the damage to the extractor could be significant.
+Do Not Cover Label
+It is therefore essential to minimise the possibility of this occurring
+by undertaking an appropriate Risk assessment to determine: -
+a). Whether additional fire protection equipment should be
+installed.
+b). Appropriate maintenance procedures to prevent the risk of
+Do not cover any louvers or holes adjacent to the label.
+build - up of debris which could potentially combust .
+Electrical Danger This unit should not be used on processes where sparks could
+occur, wit h explosive dusts and gases, or with particulates which can
+be pyrophoric (can spontaneously ignite), without implementation
+Removal of panels with this label attached will
+of additional precautions
+allow access to potentially live components.
+It is essential that nozzles or other extraction/ fume capture devices
+Warning Label
+and hoses/pipework are cleaned reg ularly to prevent the build - up of
+Power should be isolated before the panel with
+potentially ignitable debris
+this label attached is opened/ removed.
+Serial Number Label
+*example of label
+This label contains a variety of information about the
+extraction unit, including.
+Xtract Max User Manual
+Page 7 of 31
+
+Ensure that 500 mm space is available around any vented
+Pre installation
+panels on the extractor to ensure adequate ai rflow.
+3. With the unit in position lock the 2 front castors.
+3
+01
+Inner transit packaging removal & unit placement
+Before installation, check the extraction unit for damage.
+All packaging must be removed before the unit is connected
+Unlocked Position Locked Position
+to the power supply.
+Please read all instructions in this manual before using this
+extractor.
+Caution
+Do not block or cover the cooling vents on the unit,
+1. Move the unit to the location where it is going to be
+as this severely restricts airflow and may cause
+installed and remove the outer packaging. This unit
+damage to the unit.
+should be ins talled in a well - ventilated area .
+Caution
+Under no circumstances should the exhaust outlet/s
+2. Open the front door and remove the transit foam and
+be covered as this will restrict the airflow and cause
+strapping from the centre of the unit.
+overheating.
+4. Check the filters are located in their correct position before
+closing the door and securing the door latches.
+Note: The door will not close f ully if the Combined filter
+has not been secured in place using the internal lever. (As
+detailed below)
+Caution
+Due to the weight of the extractor suitable lifting equipment
+should be used and with regard to appropriate safety
+precautions. (See Appendix for product weight details)
+Xtract Max User Manual
+Page 8 of 31
+
+Extraction application
+01
+4
+The extractor is designed to remove and filter
+fume containing potentially hazardous particulate and gases
+generated during manufacturing processes. Such ha zardous
+Enclosures
+substances are captured within a multistage filtration system
+The extraction hose and nozzle can be attached to the
+after which the cleaned air is returned to the workplace.
+enclosure surrounding the marking zone provided that the
+extraction point is within 50 - 75mm of the marking point.
+Fume Capture Methods
+The fume can be captured by the following methods.
+• Flexible arm / Nozzle
+• Enclosures
+• Cabinets
+General Guideline s for a successful installation
+• Keep duct run length to a minimum
+• Avoid sharp bends / turns in the ductwork
+• Avoid multiple bends / turns in the ductwork
+Cabinets
+• Use a larger diameter duct where able
+Cabinets normally have a 75mm 0r 100mm spigot for fume
+• Position the capture device as close as possible to
+extraction. For best performance use the same diameter
+the marking point. (if used on high speed lines,
+hose as the spigot and reduce at the extractor end if
+position the capture device slightly downstream)
+necessary. Keep the hose run as short as possible.
+Flexible Arm & Nozzle Extraction
+The stay put arm should be mounted as close as possible to
+the marking point using the horseshoe clips. Unscrew the
+push fit connector from the other side of the flexible hose.
+Cut the flexible hose to suit the distance back to the extractor
+connection and push onto the extractor inlet.
+Purge air should be kept to a minimum, where possible, to
+prevent the fume being blown away from the nozzle.
+Connection to extraction unit
+High speed lines may need bigger scoops or nozzles both
+sides of the bottles because of the turbulence caused by the
+All ductwork s hould be installed and connected to the
+speed of the product .
+extraction unit before the system is turned on.
+Moving products
+Exhausting filtered air outside
+For applications where the product to be marked is moving
+If requested your extraction unit will have been fitted with an
+past the stationary laser head the capture nozzle should be
+exhaust outlet spigot. This provides a connection point for
+positioned as close as possible to the marking area on the
+exhaust pip ework to be fitted. It is important to keep any
+side the produc t is moving towards.
+ducting to a minimum, in order to reduce back pressure
+within the system.
+Xtract Max User Manual
+Page 9 of 31
+
+Setup: Connection power
+Plea se note – this instruction is for 11 0 V only .
+4
+0 2
+Connecting to supply
+Please use table below to connect to mains supply
+Connection to Power Supply
+Cable identifier Function/ connection to
+Please follow th e specification at the rear of the manual when
+1 Live
+selecting the power supply outlet for the system, ensure the
+2 Neutral
+power supply is suitable before connecting the system.
+Green/Yellow Earth
+Check the Integrity of the electr ical power cable, if the supply
+It is a requirement for the extraction unit to be connected to
+cord is damaged the extraction unit should not be connected
+a breaker suitable for a 19.5A device. It is also recommended
+to the mains. The supply cord should only be replaced by a n
+that the isolation device is located next to the extractor. The
+approved engineer as an electrical safety test may be
+protective conductor shall be mounted close to the mains
+required after replacement.
+supply terminals.
+The system MUST be connected to a properly
+Disconnecting devic e
+earthed outlet.
+This equipment must be connected to a circuit breaker, the
+circuit breaker must be easily reached and must be marked
+If your system was ordered wi th any optional
+as the disconnecting device for the extractor.
+extras please read section 4.03 before the power
+connection is made as additional connections may be
+required before power is connected to the extractor.
+Connect the power cable to an isolated electrical supply.
+The mains socket should be installed near the ex tractor it
+should be easily accessible and able to be switched On/ Off .
+The cable run should be arranged so as not to create a trip
+hazard.
+This equipment shall be mounted in accordance with local
+regulation.
+Xtract Max User Manual
+Page 10 of 31
+
+In this position the extractor motor will run without the
+Interface : Signals
+requirement for an external start signal. This feature is
+useful for engineers carrying out works/ tests on the
+extractor without the need for the laser / auxiliary signal
+being present.
+0 3
+4
+Interface features
+The unit is configured with an interface cable.
+( If unsure what features your system is equipped with
+please contact the seller with the unit serial number,
+(Refer to section 2 for location) who will be able to advise
+what specification has been supplied.
+Remote Stop/Start feature
+Enables the extraction unit to be remotely turned On / Off via
+an external signal.
+DC Voltage input
+Suction ON
+This configuration requires Pins 2 and 5 of the signal cable
+GND_Cl
+(Refer to section 1 for location) to be connected to a known
+and tested DC power supply, in order to start the extractor.
+The operating voltage for this signal is between 12 & 24VDC.
+Only voltages within this range should be connected.
+Voltages connected outside of this range may cause
+irreversible damage to the intern al control PCB.
+Pin 2 = Suction ON
+Pin 5 = GND_Cl
+When the extractor is provided with the correct DC voltage
+the motor will start and maintain the set flow rate (Refer to
+section 5 for how to set the flow) when the DC voltage is
+removed the motor will sl ow down and come to a stop.
+The extractor will need to be turned on and be out of standby
+mode (See section 5 for turning the extractor on) in order for
+this feature to operate.
+Override
+Enables the extractor to operate fully with or without DC
+voltage inp ut. The override feature can be toggled On / Off
+by a switch mounted on the internal motor access panel (see
+below for switch location)
+Switch in “On” position
+In this position the extractor will require a start signal to
+enable the motor within the extraction unit to operate.
+Switch in “Off” position
+Xtract Max User Manual
+Page 11 of 31
+
+Interface : Feature(s)
+4
+0 4
+Filter Blocked / System Fail Signal
+With this option the system will output a signal to alert the
+user when the extractor has failed or when the filters are
+blocked.
+This feature will not directly stop the extractor from running
+FILTER FULL
+24V_Cl
+SUCTION ERROR
+correctly, but if fitted this feature should be terminated
+correctly before power is applied to the system.
+Connection specification
+This signal is available via the interface connec tion. The
+system will provide a volt free Open / Closed signal that can
+be connected to the laser, following the specification below.
+• Maximum input voltage: 24V AC
+• Maximum current load: 3A @ AC
+OR
+• Maximum input voltage: 24V DC
+• Maximum input load: 3A @ DC
+Signal configuration
+With this configuration the Filter blocked & System fail
+signals will be separated to give 2 individual signals.
+When the filters become blocked the connection between
+pins 1 & 3 will become “Open”
+If the system develops a fault (Refer to section 8 for
+Troubleshooting & Error codes) the connection between pins
+1 & 4 will become “Open”
+When the extraction system is running normally the
+con nection between pins 1 & 3 and 1 & 4 will become “Closed”
+Xtract Max User Manual
+Page 12 of 31
+
+Changing the display units
+Operation
+The Airflow and temperature readings can be displayed in 2
+ways.
+o
+1. Temperature displayed as C
+5
+01
+3
+Airflow displayed as m /h
+OR
+Turning extraction unit On o
+2. Temperature displayed as F
+There are 2 stages to powering up your extraction unit. First
+Airflow displayed as CFM
+the main switch must be switched to the On position (Refer
+The display value can be changed by pressing the “Enter”
+to section 1 for switch location) by depressing the Green side
+button once.
+/ (I) of the switch. This will place the extraction unit in
+Standby mode, indicated by the front panel power button
+glowing Red.
+1)
+2)
+Stainless Steel
+To start the extraction unit press the front panel power
+button (refer to section 1 for switch location) the button will
+change from Red to Green i ndicating the extraction unit is
+now fully On.
+It is recommend ed that the rear isolation switch is left in the
+On position and the front standby switch is used to toggle the
+extractor On / Off.
+Standby
+On
+Xtract Max User Manual
+Page 13 of 31
+
+Configuring Airflow
+5
+0 2
+1)
+Setting the desired airflow
+The system features automatic flow control. This enables the
+user to set the required airflow rate, then over time as the
+filters begin to block the motor will automatically be gin to
+2)
+increase in speed to compensate for any loss in performance
+2)
+caused by the ad ded restriction of the partially blocked
+filters.
+The extractor and all pipe work must be fully
+installed and connected before the airflow is set.
+To set the airflow
+3
+( The airflow can be set between 300 - 85 0m /h)
+3)
+1. Press and hold the “Enter” (middle) button (Refer to
+section 1 for button location) for 3 seconds , or until
+all 3 button lights flash green.
+2. Release the Enter button, the system is now in set
+mode. Press either the Up or Down button to adjust
+the airflow accordingly.
+Real time airflow is displayed on the LCD screen,
+Refer to section 1 for Display information)
+3. Once you have your desired airflow, leave the
+controls, after around 10seconds the flashing
+buttons will illuminate constantly to confirm the
+airflow is stored.
+The set airflow will now be maintained throughout the life of
+the filters. When the extraction unit can no longer maintain
+the set airflow an alarm will be given and the display will
+indicate which filter should be changed .
+Xtract Max User Manual
+Page 14 of 31
+
+Airflow initialization
+5
+0 3
+Airflow Auto Adjust (first installation only)
+When first setting the airflow on your new extraction unit the
+iQ will detect if the desired airflow is achievable with the
+installation that has been connected to the extraction unit.
+If the installation is causing too much restriction for the
+desired ai rflow to be reached, the Auto Adjust feature will be
+activated. The procedure events are listed below.
+1) The 3 buttons will begin flashing Red along with the
+airflow setting on the LCD screen.
+2) The airflow setting on the screen will drop to display the
+highest airflow that can be achieve.
+3) The airflow will stabilise and the buttons will turn green to
+show the airflow has set.
+Xtract Max User Manual
+Page 15 of 31
+
+Maintenance : General
+Pre Filter blocking Combined Filter Blocking
+6
+01
+Maintenance: General
+User maintenance is limited to cleaning the unit and filter
+replacement, only the manufacturer’s trained maintenance
+technicians are authorised to carry out component testing
+and replacement. Unauthorised work or the use of
+unauthorised replacement filters may result in a potentially
+TIME
+dangerous situation and/or damage to the extractor unit and
+will invalidate the manufacturer’s warranty.
+Contact the seller for more information about inspection and
+certification .
+Cleaning the unit
+A log of the changes should be maintained by the user.
+The stainless steel units should be cleaned with a cleaner
+The filters require attention when the display shows the filter
+designed for stainless steel and wipe with the grain using a
+blocked icon/ filter output signal (if fitted) or when the
+non abrasive cloth .
+extractor no longer removes fume efficiently.
+The powder coat finish ed units can be cleaned with a damp
+cloth and non - aggressive detergent, do not use an abrasive
+It is recommended that a spare set of filters are kept on site
+cleaning product a s this will damage the finish.
+to avoid prolonged unit unavailability. Part numbers for
+replacement filters can be found on the filters fitted in your
+The cooling inlets and outlets should be cleaned once a year
+system.
+to prevent build - up of dust and overheating of the unit.
+To prevent overheating, units should not be run with a
+blocked filter condition, or with dust obstruction of Inlets /
+Replacing Filters
+Outlets.
+The system constantly monitors the condition of the
+individual filters . As the filters block the LCD display will show
+75% filter blocked indication
+the relevant filter symbol filling up. (see section 1 for LCD
+When the filters become 75% blocked the buttons on the
+details) E ach filter symbol fills up in 5 % increments, when the
+front of the extraction unit will turn from Green to Amber and
+filter icon is filled that particular filter will need replacing.
+if fitted the system will output a signal to indicate this. At this
+time it is recommended spare filters are available as a change
+may be needed shortly.
+Xtract Max User Manual
+Page 16 of 31
+
+To remove and replace the Combined filter follo w the
+Filter Replacement
+procedure detailed belo w.
+Warning
+The combined filter is very heavy (Over 40Kgs) therefore the
+6
+procedure below must be carried out by 2 people lifting
+0 2
+together.
+Pre Filter Replacement
+1. Isolate the electrical supply to the extractor
+The Pre filter needs replacing when the display flashes
+2. Undo the catches on the front of the unit and open
+between the 2 images shown below, at this point the buttons
+the door.
+will glow Red and if fitted the filter blocked signal will be
+3. The Combined filter is the higher of the 2 filters
+given.
+(refer to section 1 for filter location) rotate the lever
+o
+below the filter through 180 to lower the combined
+filter.
+4. U sing the handle on the front of the filter, pull it out
+of the unit being careful to support it as it comes free
+as it is heavy.
+5. Once removed it is recommend that the used filters
+ar e bagged and sealed.
+6. Slide the new filter into position making s ure it is
+To remove and replace the Pre filter follow the proced ure
+pushed in all the way.
+detailed below.
+0
+7. Rotate the lever back through 180 to raise the filter
+into p osition.
+1. Isolate the electrical supply to the extractor
+8. Close the door and fasten the 2 latches
+2. Undo the catches on the front of the unit and open
+9. Reconnect the power supply
+the door .
+3. The Pre filter is the lower of the 2 filters (refer to
+section 1 for filter location) using the handle on the
+front of the filt er, pull it out of the unit.
+4. Once removed it is recommend that the used filters
+ar e bagged and sealed.
+5. Slide the new filter into position making sure it is
+pushed all the way in and is located correctly on the
+spigot in the back of the unit.
+6. Close the door and fasten the 2 latches.
+Combined Filter Replacement
+The Combined filter needs replacing when the display flashes
+between the 2 images shown below, at this point the buttons
+will glow Red and if fitted the filter blocked signal will be
+given.
+Both filters MUST be fitted when the extractor is in use, if
+the combined filter is not installed c orrectly the system
+will not allow the motor to start.
+Xtract Max User Manual
+Page 17 of 31
+
+Display features
+Hose blocked alarm
+The system features a 2 stage Hose blocked alarm.
+• Partial hose blockage
+• Full hose bloc kage
+7
+01
+Partial hose blocked alarm
+Display Features
+This ala rm will become active when the system detects a part
+The display has the ability to display all the faults associated
+blockage in the installation. The system interprets a partial
+with your extraction unit. The image below shows an
+blockage as a vacuum spike within the ductwork but is only a
+example of some of the fault icons that may appear in the
+partial blockage as the extractor is sti ll able to maintain its set
+alarm window of the LCD display.
+airflow.
+During this time it is normal to hear the motor increase in
+speed. The blockage will need to remain in the ductwork for
+over 5 seconds before the alarm is given.
+Visual Alarms on the system
+The system can visually display a wide range of alarms on its
+LCD panel. The visual displays, meanings and solutions are
+Full hose blockage
+detailed below. All alarms will trigger the system alarm
+This ala rm will become active when the system detects a full
+interface output signal and the inbuilt audible buzzer , if
+blo ckage in the installation. The system interprets a full
+fitted / activated .
+blockage as a vacuum spike within the ductwork and is
+considered a full blocked as the extractor cannot maintain
+Over Temperature Alarm
+the set airflow with the blocka ge present .
+If the system detects an internal temperature greater than
+o
+60 C then it will automatically shut down the extractor to
+During this time it is normal to hear the motor increase in
+prevent damage to components within the extractor.
+speed. The blockage will need to remain in the ductwork for
+over 5 seconds before the alarm is given.
+0
+Once the internal temperat ur e has dropped by 5 C the
+extraction unit will be able to restart.
+To remove the blockage, isolate the extraction unit from the
+To restart the extractor after an over temperature alarm the
+mains, remove the flexible hose, lo cate and remove the
+unit needs to be placed in Standby mode then powered on
+blockage then reattach the hose as previously installed.
+again.
+Xtract Max User Manual
+Page 18 of 31
+
+Alarm: Heat detection
+7
+0 2
+Heat Detection Shut off
+The system has an internally mounted thermal trip. That
+detects the temperature in the filter compartment. If the
+o
+temperature rises above 55 C then the extraction unit will
+automatically shut down the motor and display the symbol
+below.
+If this symbol is di splayed the unit should be totally isolated
+from the mains supply and the unit should be fully inspected
+for evidence of the temperature rise. (Including inside the Pre
+filter)
+Once the unit is safe to turn back on and the internal
+o
+temperature has dropped below 50 C the thermal trip can be
+reset. To do this follow the procedure below.
+1. Isolate the supply from the extractor
+2. Open the front door & remove the Combined Filter
+3. Locate the circular cut out in the shelf, at the front
+of the unit.
+4. Inside the cut out there is a small red button that can
+now be pressed back in.
+5. Re - fit the Combined Filter, close the front door and
+re connect the mains supply.
+Xtract Max User Manual
+Page 19 of 31
+
+Alarm: Run safe
+7
+0 3
+Run Safe Feature
+To ensure personnel protection and avoid damage to the unit
+the system will automatically shut down 5 seconds after no
+combined filter is detected. If no combined filter is fitted the
+motor will stop and the display will appear as below.
+To resolve this, isolate the unit, fit the combined filter (see
+section 6.02 ) and turn the unit On.
+Xtract Max User Manual
+Page 20 of 31
+
+USB: Upload
+7
+0 4
+USB Connectivity
+The system is equipped with a USB drive, that operates as a
+2 way device, as detailed below.
+• Duplicati ng settings
+• Download Data
+Duplicating settings (USB Upload)
+This USB upload feature has been designed for customers
+that have multiple extractors a nd specific set of parameters
+that they wish to duplicate across their extraction units. The
+Procedure for duplicating extractor settings is detailed
+below.
+1. Obtain the memory stick file from the seller (if
+specification has been pre - arranged with the seller )
+Or download original settings from your master
+unit) ( Max capacity USB Stick 4 GB)
+2. Download this file to a blank memory stick
+3. Place the system in standby mode (Front power
+button glowing Red)
+4. Open the front door and insert the memory stick
+into the USB slot
+5. The LCD display will show “upload ” press the button
+corresponding to this
+6. The display will show a progress complete bar and
+when finished a completion “Tick”
+7. The USB stick can now be removed from the unit,
+the door closed and the extractor turned back On
+If the USB upload procedure fails the screen
+will display the symbol s hown adjacent.
+Xtract Max User Manual
+Page 21 of 31
+
+USB: Download
+7
+0 5
+Download Data (USB Download)
+With this feature the customer is able to downl oad all stored
+data within the system , this information can then be us ed to
+keep records of how your system is performing, this is also
+very beneficial for the technical team when diagnosing issues
+with the extraction system . The following list shows the
+information available within the event log .
+Downloading Data
+To dow nload the information from the system please follow
+the procedure below.
+1. Obtain a memory stick ( Max capacity USB Stick
+4 GB)
+2. Place the system in standby mode (Front power
+button glowing Red)
+3. Open the front door and insert the memory stick
+into the USB slot
+4. The LCD display will show “download” press the
+button corresponding to this
+5. The display will show a progress complete bar and
+when finished a completion “Tick”
+6. The USB stick can now be removed from the unit,
+the door closed and the extractor turned back On
+If the USB upload procedure fails the screen
+will display the symbol shown adjacent.
+Xtract Max User Manual
+Page 22 of 31
+
+combined filter blockage is shown as an exact percentage of its
+USB: Data collection
+full capacity.
+Inlet % (installation restriction)
+S hows the percentage of the system capacity that is taken up by
+7
+0 6
+the installation (pipe work ) this value would also rise if the inle t
+or pipe work beco mes blocked.
+Motor output
+The system will take a snapshot of the sys tem performance
+every 1 5minutes or if a system adjustment is made or an alarm S hows the percentage the motor is being run at to achieve the
+is triggered. airflow set by the user. This value will increase as the filters begin
+to block.
+Some of the information captured is listed below.
+Internal temperature
+• Date
+S hows the internal temperature of the extraction unit, the
+• Time
+sensor is mounted to the main PCB when this sensor reaches
+• Airflow
+o
+60 C it will shut down the extractor and a log will be recorded.
+• Airflow Set point
+• Pre filter % blocked
+Hours Run
+• Combined filter % blocked
+This is a simple hours run counter that will begin from the first
+• Inlet % (installation restriction)
+time the extraction is switched on by the user. The hours run
+• Motor output
+counter will only be activat ed when the motor is running.
+• Internal Temperature
+• Hours run
+Alarms
+• Alarms
+When the system has an issue that requires the user to act upon
+• Faults
+this is classed as an alarm, when this occurs a code will appear in
+this column, the main alarm codes are listed below. NOTE:
+Date & Time
+combinations of codes will be displayed as 2 or more fault
+numbers added together. Example: If alarm code for VOC 4 and
+The date and time will be set as part of the testing stage with the
+Over temperature alarm code 16 happened simultaneously then
+manufacturer and set to GMT.
+alarm code number 20 would be displayed.
+Airflow
+Code Meaning
+This column shows the real time airflow t hrough the extractor.
+1 Door Open
+4 VOC alarm
+Airflow set point 16 Over temperature
+32 Inlet partially blocked
+S hows the target airflow that has been set by the user, this will
+64 Inlet fully blocked
+record every time an adjustment is made.
+128 No combined filter fitted
+512 Motor failure
+Pre filter % blocked
+2048 System 100% blocked
+4096 Combined filter blocked
+The display on the extractor will sh ow the pre filter blocking in
+8192 Pre filter blocked
+5 % increments , but with this downloadable file the pre filter
+16777216 System 75% blocked
+blockage i s shown as an exact percentage of its full capacity.
+Faults
+This column will disp lay a code if a fault with the system is
+detected , for analysis of any faults in this column please contact
+the Videojet helpline.
+Combined filter % blockage
+The display on the extractor will show the combined filter
+blocking in 5 % increments, but with this downloadable file the
+Xtract Max User Manual
+Page 23 of 31
+
+Error codes
+E rror Codes on the display
+The sys tem is able to self - diagnose problems relating
+directly to the monitoring system. Faults are displayed as a
+number in the error window within the display.
+8
+01
+Fault Indication
+The system intelligently monitors the whole extraction unit.
+In the unlikely event of a problem with the extraction unit
+please read this section of the manual before contacting the
+helpline.
+This section cont ains details on all faults the system is able to
+display , these faults are detailed below.
+Independent Motor Fail ure Detection
+In the event of an error code being displayed please contact
+If the extraction unit develops a fault relating to one of the
+your local representative who will be able to diagnose the
+motor s then the motor icon on the display will stop rotating
+fault and advise on the most efficient solution.
+3
+and flash the airflow will read O m /h. The alarm window will
+display the motor icon and indicate which motor has caused
+USB diagnosis
+the failure. (example below shows a motor 1 failure).
+For a “Real time” eve nt log of any faults with your system
+please see section 7.04 & 7.05 to download a full analysis of
+the extraction system.
+If the above symbol is displayed power should be isolated
+from the extractor and arrangements should be made to
+replace the motor.
+Internal Power Supply
+The extractor is fitted with an internal transformer tha t
+outputs 12V DC providing the system with power.
+If the buttons on the front panel are not illuminated or
+operational this wo uld indicate a problem with the internal
+power supply (provided the main isolation switch is in the ON
+position and voltage is proven at this point)
+If the internal power supply has failed then arrangements
+should be made to replace the transformer.
+Xtract Max User Manual
+Page 24 of 31
+
+Consumables Filter & Disposal
+Filter disposal
+The Pre and Combined filters are manufactured from non -
+toxic materials. Filters are not re - usable, cleaning used filters
+is not recommended. The method of d isposal of the used
+9
+01
+filters depends on the material deposited on them.
+Consumable Spares
+For your guidance
+The extraction system contains a pre filter and a combined
+filter. These should be replaced w hen instructed to do so by
+Deposit EWC Comment
+the system , or when the system is not efficiently removing
+Listing*
+the product. (see section 6 for replacing the filters) Non 15 02 03 Can be disposed of as non -
+Hazardous hazardous waste.
+To maintain performance it is important that the filters are
+Hazardous 15 02 02M The type of hazard needs to
+replaced with identical Videojet filters. To re - order please
+be identified and the
+refer to the sticker on the filter within your extraction system.
+associated risks defined.
+The thresholds for these
+Maintenance Protocol
+risks can then be compared
+The data logging function enables the retrieval of filter
+with the amount of material
+change intervals. Users may also wish to record changes on in the filters to see if they
+fall into the hazardous
+the table below.
+category, if so, the filters
+will need to be disposed of
+Unit Serial Number:
+in line with the
+Pre filter Combined filter
+local/national regulations.
+Date Engineer Date Engineer
+*European Waste Catalogue
+Returning an extraction system
+Before an extractor is returned the filters must be removed.
+Any extractors returned containing used filters will not be
+accepted and will be returned.
+.
+Xtract Max User Manual
+Page 25 of 31
+
+System Specifications
+10
+01
+Unit: Xtract Max
+3
+Capacity: 8 5 0m /h (500cfm)
+Weight: 14 6 Kg (3 20 lbs)
+M otor: Centrifugal Fans
+Output: 2200w
+Voltage & Current: 230 V/12.8A FLC 115 V/19.5A FLC
+Hertz: 50/60Hz
+Noise Level: Below 63 dB (A)
+(at typical operating speed)
+Maximum Altitude – 2000m
+Size:
+Metric Imperial
+(mm) (inches)
+Height 1205 47.44
+Depth 795 31.29
+Width 600 23.62
+Filters :
+Filter Surface area Efficiency
+Type
+2
+Pre filter 30 .0m 92% @
+1 micron
+2
+Combined 7.5 m 99.997% @
+filter 0.3micron
+Combined Filter (Gas section)
+Filter Carbon type Amount
+Type
+Combined Activated 34 kgs
+filter carbon
+( Gas )
+Environmental operating range:
+o o
+Temperature: +5 C to + 40 C
+o
+Humidity: Max 80% RH up to 31 C
+o
+Max 50% RH at 40 C
+Xtract Max User Manual
+Page 26 of 31
+
+Consumables and Spare Parts
+11
+0 1
+Consumables
+Xtract Max Primary Filter
+Xtract Max Combined Filter
+Spare Parts:
+Xtract Max 115V & 230V Fan
+Xtract Max PCB
+Power Supply 12VDC Transformer
+Supply Filter EMC Filter
+Xtract Max User Manual
+Page 27 of 31
+
+Mains switch 16A (230V model ) 20A (115V model)
+Motor monitor PCB
+Front Panel Label
+Xtract Max User Manual
+Page 28 of 31
+
+Electrical Schematic
+12
+0 1
+230V
+Xtract Max User Manual
+Page 29 of 31
+
+Electrical Schematic
+12
+0 1
+110V
+Xtract Max User Manual
+Page 30 of 31
+
+Contact Information
+13
+0 1
+Videojet Technologies Inc.
+1500 Mittel Boulevard
+Wood Dale, IL
+60191 - 1073 USA
+www.Videojet.com
+Phone (USA): 1 - 800 - 843 - 3610
+Fax (USA): 1 - 800 - 582 - 1343
+Int’l Fax: 630 - 616 - 3629
+Offices: - USA: Atlanta, Chicago
+Offices: - Int’l: Canada, France, Germany, Ireland,
+Japan, Spain, Singapore, Netherlands, United
+Kingdom.
+Xtract Max User Manual
+Page 31 of 31
+
+MpGHg
++O*.[Zf`.4P75K/A -/@%&%"
+@" ?]?9//10632#"&'532>54.#"!!&QrI!2SEc&0Z38+,I6BEB'C[4?kM+*&-S/1@,,
+4y*_0;j#~0z0U%0+7L+0UG?e8]w@0PUI0GE0C1
+
+S@23222i@&&-e&ehh???99?/3/99//9901%#".''#"&&67&&66327>32?+18 5$->>7/61,39e0$L#+$
+&+*
+'3m*.?.!'-@'...+!!~??9/93]22/9/32201%###".55!".54>7>3232#3m@&&!2%*6"@""aaI1C8V1$,$,@44.1H@H/
+
+0"#D"@".-D..! 0'/29/29/9/3?++/+++/++9/9/+10@#H@Hl"l".l.?+/+/++9/9/+01Y#.#!326673#.##!2>73!5>54.'5 b "
+M<D
+Ethvo,3e^iZK=''x@&@@@D@&@ D&B
+3RS300+9/+29?33+32++31066326632!5>554.#"!5>554.#"!5>54&&'573!:g2FVCf5'=/
+0**@11&&5?55?-?>9/9/9/9/9999?+?++/+910#"&&54667'&&546632326654&&#"326654&&#"jrj~h6Lhfjxh1kUIh6;kFsy3qVPk5<oJD^:*vuaYtT|V&0qfpWL>~XZ>ZQHV`K-Pjg6e+,-f@@%@@%%@-,B-, /
+*ZvU-
+[@1@H!'DD@'!!'B*
+':$% |=- >F4#3#--=@^*0-Un]=*}"/_/.@"#"%!.%.3-
+--$0/#-d-S
+R<G/#--$0/#-8d-q..5.--/9/?/10"&546632326654&#"gqNd|xSi-~qtz-`m}b^_]=}'P.'%.3@-""

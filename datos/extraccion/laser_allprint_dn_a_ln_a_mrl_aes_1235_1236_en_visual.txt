@@ -1,0 +1,387 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\mrl_aes_1235_1236_en.pdf
+# cifrado=True bloques=17 caracteres=17219
+
+Operating instructions AES 1235
+Safety-monitoring module AES 1236
+1. About this document
+1.1 Function
+This operating instructions manual provides all the information you
+need for the mounting, set-up and commissioning for the safe operation
+and disassembly of the safety-monitoring module. The operating inst -
+ructions must be available in a legible condition and a complete version
+in the vicinity of the device.
+1.2 Target group: authorised qualified personnel
+All operations described in this operating instructions manual must
+be carried out by trained specialist personnel, authorised by the plant
+operator only.
+Please make sure that you have read and understood these operating
+instructions and that you know all applicable legislations regarding
+occupational safety and accident prevention prior to installation and
+putting the component into operation.
+The machine builder must carefully select the harmonised standards to
+be complied with as well as other technical specifications for the selec -
+tion, mounting and integration of the components.
+1.3 Explanation of the symbols used
+Information, hint, note:
+EN 1
+
+This symbol is used for identifying useful additional information.
+Caution: Failure to comply with this warning notice could
+lead to failures or malfunctions.
+Warning: Failure to comply with this warning notice could
+lead to physical injury and/or damage to the machine.
+1.4 Appropriate use
+The products described in these operating instructions are developed to
+execute safety-related functions as part of an entire plant or machine. It
+is the responsibility of the manufacturer of a machine or plant to ensure
+the correct functionality of the entire machinery or plant.
+The safety-monitoring module must be exclusively used in accordance
+with the versions listed below or for the applications authorised by the
+manufacturer. Detailed information regarding the range of applications
+can be found in the chapter "Product description".
+1.5 General safety instructions
+The user must observe the safety instructions in this operating instruc -
+tions manual, the country-specific installation standards as well as all
+prevailing safety regulations and accident prevention rules.
+Further technical information can be found in the Schmersal
+catalogues or in the online catalogue on the Internet:
+www.schmersal.net.
+The information contained in this operating instructions manual is
+provided without liability and is subject to technical modifications.
+
+Content
+1 About this document
+1.1 Function .............................................. 1
+1.2 7DUJHWJURXSDXWKRULVHGTXDOLHGSHUVRQQHO .................. 1
+1.3 Explanation of the symbols used ........................... 1
+1.4 Appropriate use ........................................
+There are no residual risks, provided that the safety instructions as well
+as the instructions regarding mounting, commissioning, operation and
+maintenance are observed.
+1.6 Warning about misuse
+In case of inadequate or improper use or manipulations of
+the safety-monitoring module, personal hazards or damages
+to machinery or plant components cannot be excluded. The
+relevant requirements of the standard EN 1088 must be
+observed.
+
+1
+1.5 General safety instructions ............................... 1
+1.6 Warning about misuse ................................... 1
+1.7 Exclusion of liability ..................................... 2
+2 Product description
+2.1 Ordering code ......................................... 2
+2.2 Special versions ........................................ 2
+2.3 Destination and use ..................................... 2
+2.4 Technical data
+
+ ......................................... 2
+2.5 6DIHW\FODVVLFDWLRQ ..................................... 2
+3 Mounting
+3.1 General mounting instructions ............................. 3
+3.2 Dimensions ........................................... 3
+4 Electrical connection
+4.1 General information for electrical connection .................. 3
+5 Operating principle and settings
+5.1 Operating principle after the operating voltage is switched on .... 3
+6 Set-up and maintenance
+6.1 Functional testing .......................................
+
+3
+6.2 Maintenance .......................................... 3
+7 Disassembly and disposal
+7.1 Disassembly ........................................... 3
+7.2 Disposal .............................................. 3
+8 Appendix
+8.1 Wiring examples ....................................... 3
+8.2 Integral System Diagnostics (ISD) .......................... 4
+9 Declaration of conformity
+9.1 EC Declaration of conformity
+
+5
+..............................
+
+DE Betriebsanleitung . . . . . . . . . . . . . . . Seiten 1 bis 6
+bersetzung der Originalbetriebsanleitung
+x.000 / Dezember 2012 / v.A. - 101172890-EN / C / 2012-12-17 / AE-Nr. 2172
+
+1.7 Exclusion of liability 2.4 Technical data
+We shall accept no liability for damages and malfunctions resulting from Standards: IEC / EN 60204-1; EN 60947-5-1;
+defective mounting or failure to comply with this operating instructions EN 60947-5-3; EN ISO 13849-1;
+manual. The manufacturer shall accept no liability for damages resul - IEC 61508; BG-GS-ET-14; BG-GS-ET-20
+ting from the use of unauthorised spare parts or accessories. Start conditions: Automatic or start button
+Feedback circuit available: yes
+For safety reasons, invasive work on the device as well as arbitrary re - Start-up test: AES ...5: no; AES ...6: yes
+pairs, conversions and modifications to the device are strictly forbidden; Pull-in delay for automatic start: adjustable 0.1 / 1.0 second
+the manufacturer shall accept no liability for damages resulting from Drop-out delay in case of "emergency stop": < 50 ms
+such invasive work, arbitrary repairs, conversions and/or modifications Rated operating voltage U : 24 VDC 15%
+e
+to the device. Rated operating current I : 0.2 A
+e
+Rated insulation voltage U : 250 V
+i
+Rated impulse withstand voltage U : 4.8 kV
+imp
+2. Product description Thermal test current I : 6 A
+the
+Internal electronic fuse: no
+2.1 Ordering code Power consumption: < 5 W
+This operating instructions manual applies to the following types: Monitored inputs:
+Cross-wire short detection: selectable
+AES 123
+Wire breakage detection: yes
+No. Option Description Earth connection detection: yes
+Number of NC contacts: FRQYHUWLEOH1&:1&
+5 without start-up test Number of NO contacts: FRQYHUWLEOH12:12
+6 with start-up test Outputs:
+Stop category 0: 2
+Only if the information described in this operating instructions Stop category 1: 0
+manual are realised correctly, the safety function and therefore Number of safety contacts: 2
+the compliance with the Machinery Directive is maintained. Number of auxiliary contacts: 0
+Number of signalling outputs: 2
+2.2 Special versions Switching capacity of the signalling outputs: Y1-Y2 = 100 mA
+For special versions, which are not listed in the order code below 2.1, Switching capacity of the safety contacts: min. 10 mA
+these specifications apply accordingly, provided that they correspond to max. 6 A
+the standard version. Utilisation category to EN 60947-5-1: AC-15: 230 V / 3 A
+DC-13: 24 V / 2 A
+2.3 Destination and use Max. fuse rating: 6 A gG D-fuse
+The safety-monitoring modules for integration in safety circuits are desi - Mechanical life: 20 million operations
+gned for fitting in control cabinets. They are used for the safe evaluation LED display: ISD
+of the signals of positive break position switches for safety functions Ambient conditions:
+or magnetic safety sensors on sliding, hinged and removable safety Operating temperature: 0 C ... +55 C
+guards as well as emergency stop control devices. Storage and transport temperature: &&
+Resistance to shock: 30 g / 11 ms
+Design Resistance to vibration: 10 ... 55 Hz, amplitude 0.35 mm
+The safety-monitoring modules have a dual-channel structure. They Protection class: Enclosure: IP40
+include two safety relays with monitored positive action contacts. The Terminals: IP20
+NO contacts of the relays, which are wired in series, build the enabling Clearance: IP54
+contacts. Degree of pollution: 2
+Mounting: Snaps onto standard DIN rail to EN 60715
+Connection type: Screw connection
+The entire concept of the control system, in which the safety Min. cable section: 0.25 mm
+component is integrated, must be validated to the relevant Max. cable section: 2.5 mm, solid strand
+standards. or multi-strand lead
+(including conductor ferrules)
+Tightening torque: 0.6 Nm
+Max. cable length: 1000 m of 0.75 mm conductor
+Weight: 190 g
+Dimensions (H x W x D): 100 x 22.5 x 121 mm
+2.5 Safety classification
+Standards: EN ISO 13849-1; IEC 61508
+PL: up to d
+Control category: up to 3
+-7
+PFH-value: 1.0 x 10 / h; applicable for applications with
+up to max. 50,000 switching cycles / year
+and max. 80 % contact load.
+Diverging applications upon request.
+SIL: up to 2
+Service life: 20 years
+2
+
+Operating instructions AES 1235
+Safety-monitoring module AES 1236
+EN
+
+3. Mounting Outputs
+Enabling paths 13-14, 23-24: NO contacts for safety function
+3.1 General mounting instructions
+Mounting: snaps onto standard DIN rails to EN 60715. Additional outputs Y1/Y2:
+Y1: Authorized operation (release output closed)
+3.2 Dimensions Y2: No authorized operation (release output opened)
+Device dimensions (H/W/D): 100 x 22.5 x 121 mm
+The additional outputs Y1 and Y2 must not be integrated in the safety
+circuit; they may only be used for signalling purposes.
+4. Electrical connection
+Enable delay time
+4.1 General information for electrical connection The enable delay time can be increased from 0.1 s to 1 s by changing
+the position of a jumper link connection. Remove the enclosure cover
+The electrical connection may only be carried out by carefully by means of a screwdriver. Change the position of the jumper
+authorised personnel in a de-energised condition. link connection B1.
+Wiring examples: see appendix Jumper link connection closed = 1 s
+As far as the electrical safety is concerned, the protection
+against unintentional contact of the connected and therefore 6. Set-up and maintenance
+electrically interconnected apparatus and the insulation of the
+feed cables must be designed for the highest voltage, which 6.1 Functional testing
+can occur in the device. The safety function of the safety-monitoring module must be tested.
+The following conditions must be previously checked and met:
+1. Correct fitting of the safety-monitoring module
+2. Fitting and integrity of the power cable
+To avoid EMC disturbances, the physical ambient and opera -
+tional conditions at the place where the product is installed, 6.2 Maintenance
+must meet the provisions laid down in the paragraph In the case of correct installation and adequate use, the safety-monito -
+"Electromagnetic Compatibility (EMC)" of DIN EN 60204-1. ring module features maintenance-free functionality.
+A regular visual inspection and functional test, including the following
+steps, is recommended:
+5. Operating principle and settings &KHFNWKHFRUUHFWIL[LQJRIWKHVDIHW\PRQLWRULQJPRGXOH
+&KHFNWKHFDEOHIRUGDPDJH
+5.1 Operating principle after the operating voltage is switched on
+Without start-up test AES 1235: The device has to be integrated into the periodic check-ups
+1. The functionality of the safety-monitoring module is tested. according to the Ordinance on Industrial Safety and Health,
+2. If the safety guard is closed or the emergency stop button released, however at least 1x/year.
+the enabling paths of the safety-monitoring module will close. The
+LED is green. Damaged or defective components must be replaced.
+3. The cable and the connected safety switch are only tested when the
+safety guard is opened or the emergency stop button when actuated
+7. Disassembly and disposal
+With start-up test AES 1236:
+1. The functionality of the safety-monitoring module is tested. 7.1 Disassembly
+2. The safety guard or the emergency stop button must be actuated, The safety monitoring module must be disassembled in the de-energi -
+in order to check the cables and the connected safety switch sed condition only.
+(start-up test).
+3. If the safety guard is closed or the emergency stop button released, 7.2 Disposal
+the enabling paths of the safety-monitoring module will close. The The safety monitoring module must be disposed of in an appropriate
+LED is green. manner in accordance with the national prescriptions and legislations.
+If the safety guard is opened or the emergency-stop button is actua -
+ted, the enabling paths of the safety-monitoring module will open. The 8. Appendix
+machine is stopped and the LED flashes yellow.
+8.1 Wiring examples
+Inputs: S14/S22 The application examples shown are suggestions. They however do not
+Connect a safety switch with one NC and one NO contact or two safety release the user from carefully checking whether the switchgear and its
+switches with one contact each or an emergency-stop button at input set-up are suitable for the individual application.
+S14/S22.
+The wiring diagram is shown with guard doors closed and in a de-
+Feedback loop: X1 energised condition. Inductive loads (e.g. contactors, relays, etc.) are
+The positive action contacts of the external contactor and/or a start to be provided with suitable interference suppression circuitry. Do not
+button is connected to input X1 (refer to wiring example). If no feedback connect additional loads to terminal S..
+loop is required, input X1 must be supplied with 24 VDC.
+Safety switch with two NC contacts: X2
+For an operation with two NC contacts, input X2 must be supplied
+with 24 VDC.
+3
+
+Operating instructions AES 1235
+Safety-monitoring module AES 1236
+EN
+
+AES 1235/1236 8.2 Integral System Diagnostics (ISD)
+Guard door monitoring by means of position switches with safety The safety monitoring modules LED display to show the different
+function switching conditions and faults. The following tables show the different
+switching conditions.
+B A
+L1
+Tables switching condition indication
+Diagnostic LED System condition
++24VDC
+0V
+The LED is green. Enabling paths closed
+A1 A1 S13 23 LED flashes yellow Enabling paths open
+K1
+A2Y2X2 24
+(0.5 Hz)
+LED flashes yellow Safety guard closed, however no authorised
+S14S21S2213
+max. (2 Hz) operation; possible cause: incorrect operation
+K2
+Y1X1
+K4
+3
+(only one contact was actuated when the
+100mA
+safety guard was opened) or voltage drop
+RUIHHGEDFNORRSQRWFORVHG:SHUIRUP
+start-up test
+14
+Table error indications
+A2
+K3
+Indication Error Cause
+(orange) LED
+1 impulse Switch Defective supply
+NM
+AES1235
+voltage lead, defective
+switch, erroneous
+fitting of the switch;
+switch only partially ac -
+tuated* for at least 5 s
+AES 1235/1236
+4 impulses Interference signals Too high capacitive or
+Guard door monitoring by means of a magnetic safety sensor (BNS)
+L1 at the inputs (no inductive interference
+safe evaluation at the switch's cables
+A
+assured) or the supply voltage
+lead
++24VDC
+0V
+5 impulses One or both relays Too low operating
+did not close within voltage U
+A1 A1 S13 23 e;
+K1
+A2Y2X2 24
+the monitoring time Defective relay
+S14S21S2213 6 impulses Relay not disabled May be due to contact
+max.
+K2
+Y1X1
+K4
+3
+upon the actuation welding
+100mA
+of the switch
+7 impulses Dynamic monitoring Fault in one channel;
+of both channels internal data trans-
+14
+(cross-monitoring) mission interrupted
+failure
+A2 * Partial actuation: position of the switch, in which only one contact was actuated.
+K3
+Deleting the error message
+NM
+AES1235 The error message is deleted once the fault has been rectified and after
+the connected switch has been actuated to check the various functions
+(open and then close the safety guard).
+Legend
+Positive break
+A Non-contact safety sensor
+A + B Safety switch
+Start button
+4
+
+9. Declaration of conformity
+9.1 EC Declaration of conformity
+EC Declaration of conformity
+Translation K.A. Schmersal GmbH & Co. KG
+of the original declaration of conformity Industrielle Sicherheitsschaltsysteme
+Mddinghofe 30, 42279 Wuppertal
+Germany
+Internet: www.schmersal.com
+We hereby certify that the hereafter described safety components both in its basic design and
+construction conform to the applicable European Directives.
+Name of the safety component: AES 1235
+AES 1236
+Description of the safety component: Safety-monitoring module for non-
+contact safety switches and safety relay
+combination in connection with the
+BNS series magnetic safety switches
+Relevant EC-Directives: 2006/42/EC-EC-Machinery Directive
+2004/108/EC EMC-Directive
+Person authorized for the compilation Oliver Wacker
+of the technical documentation: Mddinghofe 30
+42279 Wuppertal
+1RWLHGERG\ZKLFKDSSURYHGWKHIXOO TV Rheinland Industrie Service GmbH
+quality assurance system, referred to Alboinstrasse 56
+in Appendix X, 2006/42/EC: 12103 Berlin
+ID n: 0035
+Place and date of issue: Wuppertal, November 13, 2012
+Authorised signature
+Philip Schmersal
+Managing Director
+The currently valid declaration of conformity can be
+downloaded from the internet at www.schmersal.net.
+5
+
+Operating instructions AES 1235
+Safety-monitoring module AES 1236
+AES 1235-C-EN
+EN
+
+K.A. Schmersal GmbH & Co. KG
+Industrielle Sicherheitsschaltsysteme
+Mddinghofe 30, D-42279 Wuppertal
+Postfach 24 02 63, D-42232 Wuppertal
+Phone:+49-(0)202-6474-0
+Telefax+49-(0)202-6474-100
+E-Mail:info@schmersal.com
+Internet:http://www.schmersal.com

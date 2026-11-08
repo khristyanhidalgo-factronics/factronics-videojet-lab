@@ -1,0 +1,56 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\BT0803191BR recuperacao handheld - espanhol.pdf
+# cifrado=False bloques=7 caracteres=2377
+
+Boletim Técnico
+BT0803191BR
+Equipo: Laser VJ3120 / VJ3320
+BT Original: Não há
+Data: 19/03/08
+Assunto: Recuperación de sistema HANDHELD
+Por varias razones el Hand Held pueden perder su programación, por lo tanto,
+imposible para actualizarlo a través del láser.
+En estos casos es necesario hacer un procedimiento para cargar el firmware original a
+través de PC de mano y luego actualizar a la última versión.
+Este procedimiento se describe a continuación:
+1 - El uso de un PC o portátil, configurar el puerto Ethernet junto con una IP fija de la
+siguiente manera:
+
+1 - Desconecte el cableado interno de Hand Held a la tarjeta ACC3 y se conectan
+directamente a su PC. Como el cable es corto, coloque la computadora portátil por
+encima de la CPU o use un extensor de cable ethernet.
+
+1 - Al conectar y energizar el láser debe aparecer en la pantalla de l handheld los
+siguientes:
+Si no, la fuerza de la descarga:
+Desconecte el Hand Held.
+Pulse y mantenga pulsado 3 teclas al mismo tiempo, Fx. Ejemplo: F1, F3 y F5.
+Energice el Hand Held con las teclas hacia abajo hasta la parte superior de la
+pantalla marcada "POWER ON SETUP".
+Presione las teclas siguientes:
+F2, F2, F1, F2, F1, F1, F2, F2
+
+(IMPORTANTE CUALQUIER OTR A SECUENCIA PUEDE CAUSAR DAÑO A EL
+HANDHELD )
+El handheld debe borrar y la siguiente pantalla debe aparecer.
+1 - Descomprimir "HANDHELD_V1 0 0 RC2.ZIP" y copiar sus contenidos en una
+carpeta.
+1 - Ejecute el G55DWLD.BAT ".
+En caso de aparecer en un momento en que una cuarta línea en la pantalla de
+Hand Held que indica que la descarga está en proceso y en aproximadamente 1
+minuto el handheld se reiniciará.
+2 - Reiniciar el Hand Held esperará a que la conexión con el láser.
+
+Vuelva a conectar el cableado del handheld dentro de la tarjeta ACC .
+
+Em el handheld debe aparecer la siguiente pantalla:
+1 - Presione la tecla F5 para actualiz ar a la versión del firmware del handheld de nuevo
+para que sea compatible con la máquina.
+El equipo podrá volver a hacer el Download y se reinicia con la nueva versión.
+A veces el software puede i ntroducir la configuración IP del handheld . En este caso es
+sólo para confirmar y solicitar la conexión.
+ALGUNOS DE LOS PROBLEMAS DE LA PÉRDIDA DE AJUSTE DEL HANDHELD
+SON CAUSADOS POR CABLE ENTRE EL HANDHELD Y LASER.
+RECOMENDACIÓN Al igual que antes de iniciar este procedimiento que el cable ES
+BUENO .
+Pablo Salama
+LA Help

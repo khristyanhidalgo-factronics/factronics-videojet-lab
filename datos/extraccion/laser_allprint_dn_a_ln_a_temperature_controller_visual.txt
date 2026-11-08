@@ -1,0 +1,108 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\Temperature controller.pdf
+# cifrado=False bloques=8 caracteres=3051
+
+Setting of the Temperature Controller
+
+1 Settings of the Temperature Controller
+The following parameters are to be set for the temperature controller of the water/water coolerand the DN-A cooling unit.
+Thermostat settings Carel IR32: DN-A cooling unit and water/water coolerThe current values are listed in the tables on the service CD.
+Starting point is the display of the actual temperature value.
+PRG
+mute aux
+SEL
+09/04 - Rev. 1.0 1
+
+def
+
+Setting of the Temperature Controller
+1.1 Reference Value Setting
+1.Press button »SELFor a short time « for two seconds.
+St1 is displayed, then the reference temperature is flashing.
+2.Change the reference value using the buttons
+PRG
+mute aux
+def
+SEL
+∆ ∇ range). (within the limits of the reference value
+3.Confirm with button »SEL«.
+4.For a short time
+St2 is displayed, then the reference value is flashing.
+5.Confirm again with button »SEL«.
+09/04 - Rev. 1.0 2
+
+Setting of the Temperature Controller
+1.2 Setting of Parameters Without Access Code
+Example:1.Press button »PRG« for five seconds.
+In the display
+P1 is flashing.
+2.Select the lower alarm limit value
+PRG
+mute aux
+def
+SEL
+P25 using the buttons ∆ ∇ .
+3.Confirm with button »SEL«. The lower alarm limit value flashes.
+4.Modify the lower limit value using the buttons
+PRG
+mute aux
+def
+SEL
+∆ ∇ .
+5.Pressing button »SEL« you return to the P-mode.
+6.Select the upper alarm limit value
+P26 using the buttons ∆ ∇ .
+7.Confirm with button »SEL«. The upper alarm limit value flashes.
+8.Modify the upper limit value using the buttons
+PRG
+mute aux
+def
+SEL
+NoteAll P parameters (P1, P2, P3, P14, P25, P26, P27, P28) can be modified with-out entering an access code.
+∆ ∇ .
+9.Pressing button »SEL« you return to the P-mode.
+10.Quit the P-mode by pressing button »PRG«.
+09/04 - Rev. 1.0 3
+
+Setting of the Temperature Controller
+1.3 Setting of All Parameters
+Example:1.Press the buttons »PRG« and »SEL« simultaneously for five seconds.
+2.In the display 0 flashes and you can enter
+77 using the buttons , the access code for the programming level,
+∆ ∇ .
+3.Confirm with button »SEL«. In the display
+PRG PRG
+mute aux mute aux
+def def
+SEL SEL
+C0 flashes.
+4.Select the lower limit for the reference value
+PRG
+mute aux
+def
+SEL
+C21 using the buttons ∆ ∇ .
+5.Confirm with button »SEL«, the lower limit value flashes.
+6.Modify the lower limit value using the buttons
+PRG
+mute aux
+def
+SEL
+NoteAll parameters P and C can be set after entering the access code 77.
+∆ ∇ .
+7.Pressing button »SEL« you return to the C-mode.
+09/04 - Rev. 1.0 4
+
+Setting of the Temperature Controller
+8.Select the upper limit for the reference value C22 using the buttons ∆ ∇ .
+9.Confirm with button »SEL«, the upper limit value flashes.
+10.Modify the upper limit value using the buttons
+PRG
+mute aux
+def
+SEL
+∆ ∇ .
+11.Pressing button »SEL« you return to the C-mode.
+12.To quit the C-mode press button »PRG«.
+NoteFor modification of other controller parameters see file "Temperature Con-troller Carel IR32 Water-Water Cooler" or "Temperature Controller Carel
+IR32 PCM Cooling Unit".
+09/04 - Rev. 1.0 5

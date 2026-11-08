@@ -1,0 +1,37 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Esp\BT1611181-Problemas de Incompatibilidad de Goma de Impresion TTO (Esp).pdf
+# cifrado=False bloques=2 caracteres=2073
+
+Videojet Technologies Ltd
+BT1611181
+Fecha: 18/11/2016
+Equipos: TTO 6210 / 6320 / 6420 / Dataflex Plus / Dataflex Plus IP65 Intermitentes
+Tema: Problemas de Incompatibilidad de Goma de Impresin con Sustrato
+Este BT es para ayudar a identificar posibles probl emas causados por incompatibilidad de la goma de ba se de
+impresin TTO con algunas aplicaciones.
+La goma de base de impresin padron de los equipos TTO Videojet es la goma de color negro con nmero d e
+parte 215965 (kit con 10 piezas) fotos abajo:
+En ciertas aplicaciones, por cuenta del sustrato, e s necesario utilizar una goma ms suave (de menor d ureza)
+que la padrn para lograr una mejor calidad de impr esin. Etiquetas de papel es un buen ejemplo de sus trato
+que trabaja mejor con goma ms suave. En ciertas si tuaciones una goma incompatible puede provocar
+arrugamiento de cinta. Abajo siguen fotos con ejemp los de mala impresin causada por goma incompatible :
+Abajo siguen fotos de ejemplos de goma con silicona , ms suave que la goma negra padrn y que arreglar on
+los problemas de calidad de impresin de las fotos de arriba.
+
+Evidentemente, antes de verificar la goma es necesa rio chequear todos los otros puntos:
+ Presin de aire
+ Distncia y alineacin del cabezal
+ Compatibilidad de cinta
+ Parmetros del equipo
+ En caso del equipo imprimir cdigo de barras, redu cir en Clarity Config el valor del parmetro
+TrailingEdgeDarkness (Devices>PHds>PrintInformati on>TrailingEdgeDarkness) hacia lo mnimo sin
+afectar la calidad de impresin eso ayuda a elimi nar el arrugamiento de cinta.
+Normalmente el tipo de goma es definido antes de la venta del equipo, durante el proceso de muestras,
+entonces al cambiar la goma durante un mantenimient o, siempre asegurarse del tipo de goma que es usado . Al
+cambiar la goma, atentar para los siguientes puntos :
+ Limpiar bien la base de impresin. Debe estar lisa , sin aspereza y sin rastros de pegamento sucieda d.
+ Al pegar la nueva goma, tener cuidado de no dejar ondulaciones y/ borbujas de aire.
+JAM
+Videojet Technologies Ltd
+VJ LA Tec
+Latin America
+la.tec@videojet.com

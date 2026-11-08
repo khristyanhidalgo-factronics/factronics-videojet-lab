@@ -1,0 +1,141 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Esp\14038-E 3236 Error de Posicion del Carro 6330, 6530 (Esp)_v2.pdf
+# cifrado=False bloques=5 caracteres=9663
+
+6330/6530: Error de posición del carro del
+cabezal de impresión (E3236)
+C o n t e n t
+T i t l e 6330/6530: Error de posición del carro del cabezal de impresión (E3236)
+C o n t e n t
+6 3 3 0 / 6 5 3 0 : E r r o r d e p o s i c i ó n d e l c a r r o d e l c a b e z a l d e i m p r e s i ó n ( E 3 2 3 6 )
+La impresora confirma un error de posición del carro del cabezal de impresión (E3236).
+S o l u t i o n / W o r k a r o u n d
+S o l u ci ó n
+Póngase en contacto con V ideojet para programar las reparaciones necesarias
+Los clientes que intenten solucionar los problemas de sus equipos no deben intentar realizar reparaciones por su cuenta.
+Si su impresora necesita reparación, póngase en contacto con la asistencia técnica de V ideojet para programar el servicio
+técnico llamando al (877) 947-2289.
+1. Asegúrese de que el espacio del cabezal de impresión no sea de más de 5 mm . T enga en cuenta que si intenta
+probar la impresión en un banco, el cabezal de impresión tiene que entrar en contacto con una superficie de la
+platina porque necesita medir el espacio del cabezal de impresión. Si no detecta nada y baja demasiado (más
+de 5 mm), siempre obtendrá este fallo.
+2. Asegúrese de que el espacio del cabezal de impresión no sea de menos de 1 mm . Si está demasiado cerca de
+la superficie de impresión, podría arrastrar y hacer que el cabezal de impresión no se desplace libremente. Esto
+es especialmente cierto en aplicaciones intermitentes. Esta impresora admite una separación de entre 1 y 5 mm,
+y 2 mm es el ajuste de separación ideal.
+3. Si se trata de una aplicación continua, asegúrese de que la posición de impresión sobre el rodillo de impresión
+es la adecuada.
+Posición de impresión para aplicaciones continuas
+Aunque la asistencia técnica de TT O normalmente recomienda que el cabezal de impresión esté lo más cerca
+posible del centro del rodillo, hay aplicaciones en las que puede ser necesario imprimir en un punto diferente del
+rodillo.
+La asistencia técnica de TT O ha comprobado que, en aplicaciones (más) lentas, el cabezal de
+impresión tal vez tenga que estar a unos pocos mm del centro del rodillo de impresión.
+Si dijéramos que el ajuste de 50,00 mm es el centro del rodillo, entonces reducir el valor desplazaría el
+cabezal de impresión delante del rodillo.
+La asistencia técnica de TT O también ha comprobado que, en aplicaciones (más) rápidas, es posible
+que el cabezal de impresión deba colocarse ligeramente detrás del centro del rodillo.
+Si volviéramos a decir que el ajuste de 50,00 mm es el centro del rodillo, aumentar el valor movería el
+cabezal de impresión detrás del rodillo.
+Un ajuste incorrecto de la posición de impresión podría causar el fallo.
+4. Compruebe si hay atascos en el carro:
+1. Apague la impresora.
+2. Retire el casete y deslice el carro hacia adelante y hacia atrás. T endrá un poco de resistencia pero, en
+su mayor parte, debe moverse sin obstrucciones, residuos o atascamientos.
+3. Si hay un ligero atasco, intente limpiar la corredera lineal soplando con aire seco y comprimido.
+T ambién puede lubricar el portaobjetos con el kit de lubricación de correderas lineales de VJ (Ref.:
+4021 13).
+5. Inspeccione el eje del rodillo pelador y el conjunto del brazo de pelador asegurándose de que no estén
+doblados, ya que esto podría impedir que el cabezal de impresión baje sin obstrucciones. A continuación se
+muestra una imagen de un conjunto correcto del brazo de pelado paralelo al conjunto del carro. Cámbielo si está
+doblado. Nota: Lo que se indica a continuación se aplicaría a las impresoras con números de serie
+anteriores al 182401 1002TZH. El diseño se cambió después.
+
+6. Inspeccione la totalidad de las correas para ver si están desgastadas o presentan daños, y preste especial
+atención a la parte de la correa alrededor de las abrazaderas. Si las correas están desgastadas o dañadas en la
+zona de la abrazadera, pueden provocar que el carro resbale, lo que puede causar el fallo. Sustitúyalas si es
+necesario. A continuación se muestra una imagen de desgaste o daños extremos de la correa en la zona de la
+abrazadera.
+7. Asegúrese de que todos los imanes del soporte del cabezal de impresión y el conjunto del pivote del cabezal de
+impresión están en su lugar y no están sueltos, dañados o agrietados.
+8. Inspeccione la abrazadera de la correa del cabezal de impresión de 2 piezas y la abrazadera de la correa del
+carro para asegurarse de que están totalmente sujetadas y niveladas entre sí. La abrazadera se fija con 2
+tornillos de estrella. Una correa en una abrazadera suelta puede hacer que la correa resbale y puede provoque
+un fallo.
+
+Figura 1: Una abrazadera de correa cuyos tornillos de fijación están semiflojos (arriba) frente a una abrazadera
+de correa cuyos tornillos de fijación están apretados (abajo).
+9. Asegúrese de que no haya obstrucciones que impidan que el cabezal de impresión llegue a la posición de
+inicio/parada, como tornillos sueltos (Figura 2) o clavijas (Figura 3).
+Figura 2: Un tornillo suelto en la caja de luz evita que el cabezal de impresión se detenga.
+Figura 3: Una clavija suelta evita que el cabezal de impresión se detenga.
+10. Si oye un ruido de chirrido o el carro no se mueve libremente por el deslizador , inspeccione las poleas y
+asegúrese de que no hayan sufrido daños físicos o estén agarrotadas. Si están agarrotadas, sustituya las
+poleas.
+1 1. Si oye un ruido de chirrido y las poleas están bien, inspeccione las conexiones del motor del cabezal de
+impresión en la PCB principal, asegurándose de que los conectores de la PCB principal estén completamente
+asentados y que las conexiones de los motores estén enchufadas en los conectores correctos de la PCB
+principal. Las conexiones del motor deben conectarse en los conectores de la PCB principal más cercana a los
+motores (consulte la Figura 4). CONSEJO: El motor que tenga el codificador siempre se enchufa en X27.
+Ruidos de chirrido no relacionados con el ajuste manual
+En anteriores impresoras TT O, un ruido de chirrido seguido del fallo podría deberse a que la mano de la
+impresora estaba mal ajustada. Con la 6330/6530, la PCB del cabezal de impresión ajusta/detecta
+automáticamente la mano. Puede verificar si es correcto yendo a Herramientas | Diagnóstico | Cabezal de
+impresión | General.
+
+Figura 4: Corrija las conexiones del motor del cabezal de impresión y del codificador del cabezal de impresión.
+12. Investigue si el fallo se produjo inmediatamente después de que se agotara la cinta. Es posible que se produzca
+este fallo si la guía de la cinta se desprende del núcleo de la cinta cuando el carrete ha terminado. La guía
+puede 'adherirse' y tirar del cabezal de impresión, lo que podría provocar el fallo. Sin embargo, en este caso, no
+hay un impacto negativo real porque cuando se sustituye la cinta y se borra el fallo de "fin de bobina", también
+se puede borrar el "fallo de posición de carro del cabezal de impresión".
+13. Si se trata de una aplicación intermitente, asegúrese de que la película esté totalmente parada en todo momento
+durante la impresión. Si el sustrato comienza a avanzar mientras la impresora sigue imprimiendo, el sustrato
+puede tirar del cabezal de impresión, lo que podría provocar el fallo.
+14. Si todas las verificaciones anteriores son correctas, la siguiente opción es tensar la correa. Esto solo lo debe
+realizar el personal de servicio de VJ.
+Siga las instrucciones de tensado que se detallan en el PDF Instrucciones de sustitución del conjunto
+de la correa y la polea tensora .
+Necesitará la herramienta de servicio de tensión de la correa de V ideojet.
+15. Si todo lo anterior está bien y no se soluciona volviendo a tensar la correa, esto podría indicar un fallo del motor
+del cabezal de impresión con el sensor del codificador (impresoras de 32 mm/53 mm/107 mm) o podría indicar
+un fallo del motor del carro con el sensor del codificador (impresora de 107 mm). Estos suelen ser piezas muy
+fiables y solo debe intentar sustituirlas si no tiene la absoluta certeza de que nada más de lo enumerado
+aquí causaba el problema.
+T r i a g e N e x t S t e p s - Inspect linear slide for debris. Clean as necessary .
+- With power of f, slide the printhead carriage back and forth and ensure it is smooth with no binding.
+- Inspect idler pulleys for debris/wear/bearing seizure.
+- Ensure proper motor connections on main pcb.
+- Ensure the printhead gap does not exceed 5mm.
+T r i a g e
+- 407932 Spare 53mm TT(iii) Idler Pulley Assy
+R e c o m m e n d e d P a r t s
+R o o t C a u s e
+A r t i c l e M e t a d a t a
+U R L N a m e 6330-6530-Printhead-Carriage-Position-Error-E3236
+P e r m a n e n t U R L
+Right click and copy link to share this Article's URL
+f o r L i g h t n i n g
+V i s i b l e I n I n t e r n a l
+A p p
+V i s i b l e t o P a r t n e r
+V i s i b l e t o
+C u s t o m e r
+
+E m a i l T e m p l a t e f o r
+E s c a l a t i o n
+A r t i c l e R e c o r d
+Issue-Problem
+T y p e
+V a l i d a t i o n S t a t u s Approved - External Use
+P u b l i c a t i o n S t a t u s Published
+V i s i b l e I n P u b l i c
+K n o w l e d g e B a s e
+I n t e r n a l D a t a
+I n t e r n a l C o m m e n t s
+R e l a t e d E s c a l a t i o n
+D i s c l a i m e r
+The contents ofthis em ailand any attachm ents are provided as a convenience to Videojetcustom ers to highlightusefulinform ation and troubleshooting tips.W hen w orking w ith a product,alw ays consultthe product
+userm anualand follow the productsafety precautions and recom m endations,including using PersonalProtective Equipm entw hen necessary.Ifyou have any questions orare notexperienced in using orservicing
+Videojetequipm ent,contactVideojetforassistance.
+E s c a l a t i o n C a s e i s
+C l o s e d

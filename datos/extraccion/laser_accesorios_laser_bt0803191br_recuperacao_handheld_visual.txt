@@ -1,0 +1,58 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\BT0803191BR recuperacao handheld.pdf
+# cifrado=False bloques=7 caracteres=2399
+
+Boletim Técnico
+BT0803191BR
+Equipo: Laser VJ3120 / VJ3320
+BT Original: Não há
+Data: 19/03/08
+Assunto: Recuperação de Hand Helds sem sistema
+Por diferentes motivos o Hand Held pode perder sua programação, ficando
+assim, impossível de atualizá - lo através do Laser.
+Nestes casos é necessário fazer um procedimento de carregamento do Firmware
+original do Hand Held via PC e depois atualizar a ultima versão.
+Este procedimento será descrito a seguir:
+1 - Usando um PC ou um Laptop, configure a porta ethernet par um IP fixo da seguinte
+forma:
+
+2 - Desconecte a cabeação interna do Hand Held até a placa ACC3 e conecte
+diretamente no seu PC. Como o cabo é curto, coloque o Laptop sobre a CPU ou
+use um extensor de cabo ethernet.
+
+3 - Ao conectar o Hand Held e energizar o Laser deve aparecer na tela do Handheld o
+seguinte:
+Caso não apareça, devemos forçar o Download:
+Desligue o Hand Held.
+Pressione e mantenha pressionadas 3 teclas Fx ao mesmo tempo. Exemplo: F1,
+F3 e F5.
+Energize o Hand Held com as teclas pressionadas até aparecer no topo da tela à
+inscrição “POWER ON SETUP”.
+
+Pressione a seguinte seqüência de teclas:
+F2, F2, F1, F2, F1, F1, F2, F2
+(IMPORTANTE QUALQUER OUTRA SEQUENCIA PODE DANIFICAR O HANDHELD)
+O Handheld vai apagar e deve aparecer a seguinte tela.
+4 - Descompacte o arquivo “HANDHELD_V1 0 0 RC2.ZIP” e copie seu conteúdo numa
+pasta.
+(CASO NÃO TENHA ESTE ARQUIVO, DEVE SER SOLICITADO AO LA HELP)
+5 - Execute o programa “G55DWLD.BAT”.
+Deve aparecer em alguns instantes uma quarta linha na tela do Hand Held
+indicando que o download está em processo e em aproximadamente 1 minuto o
+Hand Held vai reinicializar.
+
+6 - Ao reinicializar o Hand Held vai esperar pela conexão com o Laser.
+Reconecte a cabeação interna do Hand Held à placa ACC.
+
+No Hand Held deve aparecer a seguinte tela:
+7 - Pressione F5 para atualizar para a versão do firmware do Hand Held novamente
+para que esta seja compatível com a da maquina.
+O equipamento fará o Download novamente e reiniciará com a nova versão.
+Às vezes o software pode entrar na configuração de IP do Hand Held. Neste caso é
+apenas confirmar e pedir para conectar.
+MUITOS DOS PROBLEMS DE PERDA DE CONFIGURAÇÃO DO HAND HELD SÃO
+CAUSADOS PELO CABO ENTRE O HAND HELD E O LASER. COMO
+RECOMENDAÇÃO, ANTES DE COMEÇAR ESTE PROCEDIMENTO VERIFIQUE SE O
+CABO ESTÁ BOM, CASO NÃO HAJA COMO FAZER ISSO, DEVE SER USADO UM
+CABO NOVO.
+Pablo Salama
+LA Help

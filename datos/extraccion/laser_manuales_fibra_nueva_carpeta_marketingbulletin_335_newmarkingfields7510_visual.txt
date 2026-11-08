@@ -1,0 +1,74 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\Nueva carpeta\MarketingBulletin_335-NewMarkingFields7510.pdf
+# cifrado=False bloques=3 caracteres=2693
+
+21 July 2015 Issue No. 335
+CHANGES IN MARKING FIELD SIZES FOR 7510 LASER
+Through recent application feedback, it has been
+noted that the 7510 laser marking system has
+experienced issues with back reflections from the
+lenses. This condition could result in damage to th e
+marking heads. To correct this issue, we are
+implementing adapter rings that slightly change the
+size of the marking fields.
+Specification Changes
+100 Configuration 160 Configuration
+Laser scan lens
+Previous New Previous New
+Work distance (mm) 122 129 200 Not supported
+Max. width (mm) 87.27 84.65 138.89 Not supported
+Max. height (mm) 113.69 107.40 142.24 Not supported
+Part Number
+Lens with adapter ring
+AL-65513 FO-112040 AL-67730 N/A
+(assembly)
+Adapter ring AL-65467 AL-65467 AL-65467 N/A
+Lens AL-94310 FO-112409 FO-1067762 N/A
+163 Configuration 254 Configuration
+Laser scan lens
+Previous New Previous New
+Work distance (mm) 233 219 339 350
+Max. width (mm) 142.24 142.24 221.66 221.66
+Max. height (mm) 181.86 181.86 283.09 267.81
+Part Number
+Lens with adapter ring
+AL-65514 FO-112040 AL-94312 FO-112245
+(assembly)
+Adapter ring AL-65464 FO-112401 N/A FO-112402
+Lens FO-106763 FO-112410 AL-94312 AL-94312
+
+420 Configuration
+Laser scan lens
+Previous New
+Work distance (mm) 543 543 no change
+Max. width (mm) 366.52 366.52 no change
+Max. height (mm) 498.47 498.47 no change
+Part Number
+Lens with adapter ring
+AL-94313 AL-94313 no change
+(assembly)
+Adapter ring N/A N/A
+Lens AL-94313 AL-94313 no change
+Update Process
+If a laser system up to serial number Y1504/023 wit h the CMark software up to version 1.2.0.7 is to be updated, the
+following needs to be carried out:
+Scan lens Description
+F100 The lens AL-94310 is to be replaced by FO-1124 09
+F160 The lens is obsolete
+F163 The lens with the adapter ring (Assembly FO-12 2240) is to be changed
+F254 The adapter ring FO-112402 is to be added
+F420 No change
+Important: After updating the following error message is disp layed:
+Proceed as follows:
+1. The marking head CP10 is to be selected in the s oftware under:
+Configuration -> Marking head in the field Marki ng head.
+2. The appropriate lens is to be selected in the so ftware under:
+ Configuration -> Marking head in the field Sel ect objective.
+3. The laser system is to be restarted.
+4. The working distances are to be adjusted.
+
+More Information
+For further information, contact:
+Sascha Benke, Business Unit Manager - Laser
+sbenke@alltec-laser.com
+The information contained in this document is propr ietary and confidential to Videojet Technologies, I nc. and should be used solely
+for its benefit, and not disclosed outside the Comp any in any form without the prior written consent o f Videojet Technologies Inc.

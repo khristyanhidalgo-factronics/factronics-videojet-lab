@@ -68,6 +68,34 @@ def leer_literal_bytes(b, pos):
     return bytes(salida), i
 
 
+def leer_hex_bytes(b, pos):
+    """String hexadecimal PDF '<...>' -> bytes (sin importar espacios)."""
+    fin = b.find(b'>', pos)
+    if fin < 0:
+        return b''
+    txt = re.sub(rb'\s+', b'', b[pos + 1:fin])
+    if len(txt) % 2:
+        txt += b'0'
+    try:
+        return bytes.fromhex(txt.decode('ascii'))
+    except ValueError:
+        return b''
+
+
+def parametro_o_u(d, pos_clave):
+    """O/U puede venir como literal (...) o como hex <...>: toma el delimitador
+    que aparezca primero despues de la clave."""
+    ip = d.find(b'(', pos_clave)
+    ih = d.find(b'<', pos_clave)
+    if ip < 0 and ih < 0:
+        return None
+    if ih >= 0 and (ip < 0 or ih < ip):
+        valor = leer_hex_bytes(d, ih)
+    else:
+        valor, _ = leer_literal_bytes(d, ip)
+    return valor if valor else None
+
+
 def rc4(clave, dato):
     s = list(range(256))
     j = 0
@@ -84,10 +112,200 @@ def rc4(clave, dato):
     return bytes(salida)
 
 
+# ------------------------------------------------------------------ AES-128 (AESV2)
+def _gmul(a, b):
+    p = 0
+    for _ in range(8):
+        if b & 1:
+            p ^= a
+        alto = a & 0x80
+        a = (a << 1) & 0xFF
+        if alto:
+            a ^= 0x1B
+        b >>= 1
+    return p
+
+
+def _generar_sbox():
+    sbox = []
+    for a in range(256):
+        inv = 0
+        if a:
+            for x in range(1, 256):
+                if _gmul(a, x) == 1:
+                    inv = x
+                    break
+        s = inv
+        for _ in range(4):
+            inv = ((inv << 1) | (inv >> 7)) & 0xFF
+            s ^= inv
+        sbox.append(s ^ 0x63)
+    return sbox
+
+
+SBOX = _generar_sbox()
+INV_SBOX = [0] * 256
+for _i, _v in enumerate(SBOX):
+    INV_SBOX[_v] = _i
+RCON = [0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x1B, 0x36]
+
+
+def _expandir_clave(clave):
+    nk = len(clave) // 4
+    nr = nk + 6
+    total = 4 * (nr + 1)
+    w = [list(clave[4 * i:4 * i + 4]) for i in range(nk)]
+    rcon = [0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x1B, 0x36]
+    for i in range(nk, total):
+        temp = list(w[i - 1])
+        if i % nk == 0:
+            temp = temp[1:] + temp[:1]
+            temp = [SBOX[b] for b in temp]
+            temp[0] ^= rcon[i // nk - 1]
+        elif nk > 6 and i % nk == 4:
+            temp = [SBOX[b] for b in temp]
+        w.append([w[i - nk][k] ^ temp[k] for k in range(4)])
+    return [sum(w[4 * r:4 * r + 4], []) for r in range(nr + 1)]
+
+
+def _inv_shift_rows(estado):
+    # estado: 16 bytes en orden columna-mayor (s[4*c+r])
+    salida = list(estado)
+    for fila in range(1, 4):
+        for col in range(4):
+            salida[4 * ((col + fila) % 4) + fila] = estado[4 * col + fila]
+    return salida
+
+
+def _inv_mix_columns(estado):
+    salida = list(estado)
+    for c in range(4):
+        a = estado[4 * c:4 * c + 4]
+        salida[4 * c + 0] = _gmul(a[0], 14) ^ _gmul(a[1], 11) ^ _gmul(a[2], 13) ^ _gmul(a[3], 9)
+        salida[4 * c + 1] = _gmul(a[0], 9) ^ _gmul(a[1], 14) ^ _gmul(a[2], 11) ^ _gmul(a[3], 13)
+        salida[4 * c + 2] = _gmul(a[0], 13) ^ _gmul(a[1], 9) ^ _gmul(a[2], 14) ^ _gmul(a[3], 11)
+        salida[4 * c + 3] = _gmul(a[0], 11) ^ _gmul(a[1], 13) ^ _gmul(a[2], 9) ^ _gmul(a[3], 14)
+    return salida
+
+
+def aes_decrypt_bloque(bloque, claves):
+    nr = len(claves) - 1
+    estado = [b ^ k for b, k in zip(bloque, claves[nr])]
+    for ronda in range(nr - 1, 0, -1):
+        estado = _inv_shift_rows(estado)
+        estado = [INV_SBOX[b] for b in estado]
+        estado = [b ^ k for b, k in zip(estado, claves[ronda])]
+        estado = _inv_mix_columns(estado)
+    estado = _inv_shift_rows(estado)
+    estado = [INV_SBOX[b] for b in estado]
+    return bytes(b ^ k for b, k in zip(estado, claves[0]))
+
+
+def _shift_rows(estado):
+    salida = list(estado)
+    for fila in range(1, 4):
+        for col in range(4):
+            salida[4 * col + fila] = estado[4 * ((col + fila) % 4) + fila]
+    return salida
+
+
+def _mix_columns(estado):
+    salida = list(estado)
+    for c in range(4):
+        a = estado[4 * c:4 * c + 4]
+        salida[4 * c + 0] = _gmul(a[0], 2) ^ _gmul(a[1], 3) ^ a[2] ^ a[3]
+        salida[4 * c + 1] = a[0] ^ _gmul(a[1], 2) ^ _gmul(a[2], 3) ^ a[3]
+        salida[4 * c + 2] = a[0] ^ a[1] ^ _gmul(a[2], 2) ^ _gmul(a[3], 3)
+        salida[4 * c + 3] = _gmul(a[0], 3) ^ a[1] ^ a[2] ^ _gmul(a[3], 2)
+    return salida
+
+
+def aes_encrypt_bloque(bloque, claves):
+    nr = len(claves) - 1
+    estado = [b ^ k for b, k in zip(bloque, claves[0])]
+    for ronda in range(1, nr):
+        estado = [SBOX[b] for b in estado]
+        estado = _shift_rows(estado)
+        estado = _mix_columns(estado)
+        estado = [b ^ k for b, k in zip(estado, claves[ronda])]
+    estado = [SBOX[b] for b in estado]
+    estado = _shift_rows(estado)
+    return bytes(b ^ k for b, k in zip(estado, claves[nr]))
+
+
+def _cbc(clave, datos, iv, cifrar, con_padding):
+    datos = bytes(datos)
+    if cifrar and con_padding:
+        pad = 16 - len(datos) % 16
+        datos += bytes([pad]) * pad
+    datos = datos[:len(datos) // 16 * 16]
+    claves = _expandir_clave(clave)
+    salida = bytearray()
+    previo = iv
+    for i in range(0, len(datos), 16):
+        bloque = datos[i:i + 16]
+        if cifrar:
+            salida += aes_encrypt_bloque(bytes(a ^ b for a, b in zip(bloque, previo)),
+                                         claves)
+            previo = bytes(salida[-16:])
+        else:
+            dec = aes_decrypt_bloque(bloque, claves)
+            salida += bytes(a ^ b for a, b in zip(dec, previo))
+            previo = bloque
+    if not cifrar and con_padding and salida:
+        pad = salida[-1]
+        if 1 <= pad <= 16 and salida.endswith(bytes([pad]) * pad):
+            salida = salida[:-pad]
+    return bytes(salida)
+
+
+def aes128_cbc_decrypt(clave, dato):
+    """PDF AESV2: 16 bytes de IV + ciphertext CBC con padding PKCS#7."""
+    if len(dato) < 32:
+        return b''
+    return _cbc(clave, dato[16:], dato[:16], False, True)
+
+
+def aes256_cbc_decrypt(clave, dato):
+    """PDF AESV3 (streams): igual que AESV2 pero clave de 256 bits."""
+    if len(dato) < 32:
+        return b''
+    return _cbc(clave, dato[16:], dato[:16], False, True)
+
+
+def aes_cbc_encrypt(clave, iv, datos, con_padding=False):
+    return _cbc(clave, datos, iv, True, con_padding)
+
+
+def hash_v5(password, salt, udata, R):
+    """Algoritmo 2.A/2.B (PDF 2.0) para R5/R6."""
+    h = hashlib.sha256(password + salt + udata).digest()
+    if R < 6:
+        return h
+    ronda = 0
+    while True:
+        ronda += 1
+        k1 = password + h + udata
+        bloque = _cbc(h[:16], k1 * 64, h[16:32], True, False)
+        mod = sum(bloque[:16]) % 3
+        if mod == 0:
+            h = hashlib.sha256(bloque).digest()
+        elif mod == 1:
+            h = hashlib.sha384(bloque).digest()
+        else:
+            h = hashlib.sha512(bloque).digest()
+        if ronda >= 64 and bloque[-1] <= ronda - 32:
+            break
+    return h[:32]
+
+
 class Handler:
-    def __init__(self, id0, O, U, P, R, V, nbytes):
+    def __init__(self, id0, O, U, P, R, V, nbytes, metodo='rc4',
+                 clave_directa=None):
         self.R, self.V, self.n = R, V, nbytes
-        self.clave = self._clave(O, P, id0)
+        self.metodo = metodo
+        self.clave = (clave_directa if clave_directa is not None
+                      else self._clave(O, P, id0))
 
     def _clave(self, O, P, id0):
         h = hashlib.md5()
@@ -102,11 +320,20 @@ class Handler:
         return digest[:self.n]
 
     def clave_objeto(self, num, gen):
+        if self.metodo == 'aes256':
+            return self.clave  # V>=5: la clave del archivo se usa directa
         ext = struct.pack('<i', num)[:3] + struct.pack('<i', gen)[:2]
+        if self.metodo == 'aes128':
+            ext += b'sAlT'  # algoritmo 3.1 de qpdf/PDF 1.7 para AES
         return hashlib.md5(self.clave + ext).digest()[:min(self.n + 5, 16)]
 
     def descifrar(self, num, gen, dato):
-        return rc4(self.clave_objeto(num, gen), dato)
+        clave = self.clave_objeto(num, gen)
+        if self.metodo == 'aes128':
+            return aes128_cbc_decrypt(clave, dato)
+        if self.metodo == 'aes256':
+            return aes256_cbc_decrypt(clave, dato)
+        return rc4(clave, dato)
 
 
 def leer_handler(b):
@@ -118,29 +345,54 @@ def leer_handler(b):
     if not om:
         return None
     d = om.group(1)
-    if b'/Filter/Standard' not in d.replace(b' ', b''):
+    if not re.search(rb'/Filter\s*/Standard', d):
         return None
     R = int((re.search(rb'/R\s+(\d+)', d) or [0, b'2'])[1])
     V = int((re.search(rb'/V\s+(\d+)', d) or [0, b'1'])[1])
     ml = re.search(rb'/Length\s+(\d+)', d)
-    nbytes = int(ml.group(1)) // 8 if ml else 5
+    nbytes = int(ml.group(1)) if ml else 5
+    nbytes = 16 if nbytes <= 32 else nbytes // 8  # algunos PDFs dan bytes; otros bits
     mp = re.search(rb'/P\s+(-?\d+)', d)
     P = int(mp.group(1)) if mp else 0
-    if b'/CF' in d:
-        mcf = re.search(rb'/CFM\s*/(\w+)', d)
-        if mcf and mcf.group(1) not in (b'V2', b''):
-            return None  # AES no soportado en v2
-    posO = d.find(b'(', d.find(b'/O'))
-    posU = d.find(b'(', d.find(b'/U'))
+    metodo = 'rc4'
+    mcf = re.search(rb'/CFM\s*/(\w+)', d)
+    if mcf:
+        if mcf.group(1) == b'AESV2':
+            metodo = 'aes128'
+            nbytes = 16
+        elif mcf.group(1) == b'AESV3':
+            metodo = 'aes256'
+            nbytes = 32
+        elif mcf.group(1) not in (b'V2', b''):
+            return None  # otro filtro desconocido
+    if V >= 5 or metodo == 'aes256':
+        # AES-256 (R5/R6): recuperar la clave del archivo desde /UE con password vacio
+        if R < 5:
+            return None
+        O48 = parametro_o_u(d, d.find(b'/O'))
+        U48 = parametro_o_u(d, d.find(b'/U'))
+        UE = parametro_o_u(d, d.find(b'/UE'))
+        if not (O48 and U48 and UE and len(U48) >= 48):
+            return None
+        if hash_v5(b'', U48[32:40], b'', R) != U48[:32]:
+            return None  # requiere contraseña de usuario
+        intermedio = hash_v5(b'', U48[40:48], b'', R)
+        clave_archivo = _cbc(intermedio, UE[:32], bytes(16), False, False)
+        return Handler(None, None, None, 0, R, V, 32, 'aes256',
+                       clave_directa=clave_archivo)
+    posO = d.find(b'/O')
+    posU = d.find(b'/U')
     if posO < 0 or posU < 0:
         return None
-    O, _ = leer_literal_bytes(d, posO)
-    U, _ = leer_literal_bytes(d, posU)
+    O = parametro_o_u(d, posO)
+    U = parametro_o_u(d, posU)
+    if O is None or U is None:
+        return None
     mtr = re.search(rb'/ID\s*\[\s*<([0-9A-Fa-f]+)>', b)
     if not mtr:
         return None
     id0 = bytes.fromhex(mtr.group(1).decode('ascii'))
-    return Handler(id0, O, U, P, R, V, nbytes)
+    return Handler(id0, O, U, P, R, V, nbytes, metodo)
 
 
 # ------------------------------------------------------------------ objetos/streams
@@ -356,7 +608,7 @@ def extraer(ruta):
     dicts = objetos_dict(b)
     if handler:
         dicts.update(objetos_objstm(b, dicts, handler))
-    fuentes = fuentes_del_pdf(b, dicts, handler) if handler else {}
+    fuentes = fuentes_del_pdf(b, dicts, handler)
     partes = []
     bloques = 0
     for m in PATRON_STREAM.finditer(b):
@@ -476,7 +728,7 @@ def runs_de_flujo(dato, fuentes):
         op = t.decode('latin-1')
         numeros = [x for x in pila if isinstance(x, float)]
         textos = [x for x in pila if isinstance(x, str)]
-        nombres = [x for x in pila if isinstance(x, tuple)]
+        nombres = [x for x in pila if isinstance(x, tuple) and x[0] == 'nombre']
         arrays = [x[1] for x in pila if isinstance(x, tuple) and x[0] == 'array']
 
         if op == 'q':
@@ -555,7 +807,7 @@ def extraer_visual(ruta):
     dicts = objetos_dict(b)
     if handler:
         dicts.update(objetos_objstm(b, dicts, handler))
-    fuentes = fuentes_del_pdf(b, dicts, handler) if handler else {}
+    fuentes = fuentes_del_pdf(b, dicts, handler)
     partes = []
     bloques = 0
     for m in PATRON_STREAM.finditer(b):

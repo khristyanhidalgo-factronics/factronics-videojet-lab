@@ -1,0 +1,74 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\Externe Vorlagenanwahl G2.pdf
+# cifrado=False bloques=7 caracteres=3581
+
+Externe VorlagenanwahlG2-Systeme
+
+1 Vorbereitung
+Um die externe Vorlagenanwahl verwenden zu könnalen Eingangsmodulen ausgestatten werden (Anen, muss das Lasersystem mit zwei optio-rtikelnummer: 65856). Diese Eingangsmodu-
+le werden zwischen Modul 6 und Abschlussmodul 7 eingefügt. Des Weiteren muss zur Verwendung der externen Vorlagenanwahl eine gültige Vorlagenliste
+vorhanden bzw. erzeugt worden sein.
+2 Vorlagenliste
+In der SmartGraph-Software kann unter eine Vorlagenliste aus den im Laser-Betrieb->MarkierungeinrichtenLasersystem gespeicherten Vorlagen erstellt werden.
+In der Vorlagenliste wird einer Vorlage eine bestimmte Nummer zugeordnet. Die Nummer dergewünschten Vorlage wird - z.B. von einer SPS - binär kodiert an die Eingänge DATA0 bis
+DATA7 angelegt und mit dem Signal EXT_EVENwird die aktuelle Vorlage des LasersystemsT übernommen. Die so gewählte Vorlage und kann auf das Produkt aufgebracht werden.
+Dieser Vorgang wird als Externe Vorlagenanwahl bezeichnet.
+Im Dialog »Vorlagenliste« legen Sie die Verknüpfungen von Vorlage und Nummer zur externenVorlagenanwahl fest.
+08/04 - Rev. 1.0 1
+
+Externe VorlagenanwahlG2-Systeme
+HinzufügenVergeben einer neuen Vorlagennummer. Geben Sie unter »Nummer«die Vorlagennummer des neuen Eintrages an. Wählen Sie im Listenfeld
+»Name« eine Vorlage aus. Sie könneder aktuellen Datenbank vorhanden sind. Klicken Sie auf »OK«, um denn nur Vorlagen auswählen, die in
+erstellten Eintrag in die Vorlagenliste zu übernehmen.
+LöschenWählen Sie einen Eintrag zum Löschen aus, indem Sie auf diegewünschte Vorlagennummer klicken. Klicken Sie dann auf »Löschen«,
+um die ausgewählte Vorlagennummer aus der Liste zu löschen.
+BearbeitenWählen Sie einen Eintrag zum Bearbeiten aus, und klicken Sie auf»Bearbeiten«. In dem dargestellten Dialog können Sie die Vorlagennum-
+mer oder die zugehörige Vorlage ändern.
+ÜbernehmenDie Einstellungen werden zum Laserwird geschlossen.system übertragen und der Dialog
+ZurücksetzenÄnderungen werden rückgängig gemacht.
+X Der Dialog wird geschlossen.
+08/04 - Rev. 1.0 2
+
+Externe VorlagenanwahlG2-Systeme
+3 Schnittstellenbelegung
+3.1 Modul 6: Digitale Eingänge
+(vollständige Liste siehe "Anhang" im Handbuch des Lasers)
+3.2 Optional: Module für externe Vorlagenanwahl
+KlemmeSignalBeschreibung
+X1.5.1EXT_EVENTDieses Signal wird für die externe Vorlagenanwahlverwendet. Eine positive Flanke übernimmt die
+Signale (DATA0 bis DATA7) der optionalen Ein-gangsmodule.
+Modul A
+KlemmeSignalBeschreibung
+X1.6.1DATA 0Über die Eingänge DATA0 bis DATA7 wird ein 8Bit-Wert angelegt, der die Vorlage mit der entsprechenden
+Nummer anwählt. Die Anwahl wird durch das SignalEXT_EVENT übernommen.
+X1.6.2Customer 24 V24 V Kunde
+X1.6.3Customer GNDGND Kunde
+X1.6.4DATA 2siehe DATA 0
+X1.6.5DATA 1siehe DATA 0
+X1.6.6Customer 24 V24 V Kunde
+X1.6.7Customer GNDGND Kunde
+X1.6.8DATA 3siehe DATA 0
+Modul B
+KlemmeSignalBeschreibung
+X1.7.1DATA 4siehe DATA 0
+X1.7.2Customer 24 V24 V Kunde
+X1.7.3Customer GNDGND Kunde
+X1.7.4DATA 6siehe DATA 0
+X1.7.5DATA 5siehe DATA 0
+X1.7.6Customer 24 V24 V Kunde
+08/04 - Rev. 1.0 3
+
+Externe VorlagenanwahlG2-Systeme
+3.3 Timing-Diagramm
+Externe Vorlagenanwahl
+>>EXT_EVENT
+>>DATA0 ... DATA7
+Vorlage wirdgewechselt
+Setup-Zeit: > 10 msWartezeit: > 10 ms
+KlemmeSignalBeschreibung
+X1.7.7Customer GNDGND Kunde
+X1.7.8DATA 7siehe DATA 0
+Ein Vorlagenwechsel wird erst nach Beendigung zwischen Signal EXT_EVENT und Vorlagenwechselder laufenden Markierung aktiv. Die Wartezeit beträgt mindestens 10 ms. Bei starker
+Auslastung des CAN-Bus bzw. der SmartOS-Software kann die Wartezeit höher sein.
+08/04 - Rev. 1.0 4
+
+I@+& &

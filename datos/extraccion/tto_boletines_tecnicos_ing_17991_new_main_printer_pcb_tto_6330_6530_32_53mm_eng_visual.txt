@@ -1,0 +1,142 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Ing\17991 - New Main Printer PCB TTO 6330, 6530 32-53mm (Eng).pdf
+# cifrado=False bloques=4 caracteres=7386
+
+09/12/2022 10:19 Knowledge Article
+New Main Printer PCB for 6330
+32mm/53mm and 6530 53mm Printers
+I n f o r m a t i o n
+V a l i d a t i o n
+Approved - Internal FS Use
+S t a t u s
+B u l l e t i n
+Field Service Bulletin
+T y p e
+H e a d e r
+V i d e o j e t T e c h n o l o g i e s , I n c . F i e l d S e r v i c e B u l l e t i n
+L e g a c y
+F S B #
+O v e r v i e w
+N e w M a i n P r i n t e r P C B f o r 6 3 3 0 3 2 m m / 5 3 m m a n d 6 5 3 0 5 3 m m P r i n t e r s
+Due to market-wide electronic chip component shortages, V ideojet has redesigned the 6330 32mm/53mm and 6530
+53mm main printer PCB.
+The new main printer PCBs have undergone rigorous testing and there should be no dif ference in form, fit, or function.
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/New-Main-Printer-PCB-for-6330-32mm-53mm-and-6530-53mm-Printers/p 1 /4
+For now , the 6530 107mm main printer PCB remains unaffected.
+I m p o r t an t C o m p at i b i l i t y I n f o r m at i o n
+Board Compatibility
+The new 6330 main printer PCB is compatible with any 6330 printer .
+The new 6530 53mm main printer PCB is compatible with any 6530 53mm printer .
+Jobs, Archives, and Clones
+Jobs, archives, and clones from old 6330 main printer PCB are compatible with new 6330 main printer
+PCB and vice-versa.
+Jobs, archives, and clones from old 6530 53mm printer PCB are compatible with new 6530 main
+printer PCB and vice-versa.
+Leader-Follower configuration
+Leader-Follower configurations are possible with a mixture of printers with old main printer PCBs and
+printers with new main printer PCBs.
+In short, whatever was possible/supported with old main printer PCBs will still be the case with new main printer PCBs.
+K ey D i f f er en ce
+The main, significant dif ference is the new main printer PCBs will require a dif ferent version of software than the old main
+printer PCBs. T able 1 lists the software versions for old and new main printer PCBs.
+T able 1: Software versions
+Main Printer PCB
+Old New
+407960.rXX (6330) 409720.rXX (6330)
+Software V ersion
+404409.rXX (6530) /409719.rXX (6530)
+ Software V ersions Checked Automatically
+
+09/12/2022 10:19 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/New-Main-Printer-PCB-for-6330-32mm-53mm-and-6530-53mm-Printers/p 2 /4
+It is not possible to load the incorrect software version via USB stick or Clarity Config. Even if both old and new software
+versions are on an inserted USB stick, the respective PCB will only see corresponding software for the given PCB on that
+USB stick. If the incorrect software version is sent via Clarity Config, the printer will raise a warning similar to those shown
+in Figure 1 and Figure 2 and will not load the software onto the printer .
+Figure 1: CLARiTY update error .
+Figure 2: CLARiTY update error .
+The printer's software version can be found in the printer's HMI at T ools | Diagnostics | Control | V ersions | Software Part
+Number .
+If you are unable to power on the printer or are unable to access that screen, you can determine if it is an old or new main
+printer PCB by taking note of the board itself. The old main printer PCB (Figure 3, left) has the Windows CE sticker located
+directly below the micro SD card. The new main printer PCB (Figure 3, right) has it located elsewhere.
+Sticker Placement V ariation
+The placement of the Windows CE sticker on the new main printer PCB may deviate from Figure 3 in future revisions, but
+it will nevertheless be placed in a location other than that of the old main printer PCB as there are now electronic
+components in that location on the new main printer PCB that would keep the sticker from laying flat.
+
+09/12/2022 10:19 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/New-Main-Printer-PCB-for-6330-32mm-53mm-and-6530-53mm-Printers/p 3 /4
+Figure 3: V isual comparison of boards and sticker location.
+U sag e i n N ew P r i n t er s
+The starting serial number of the first printer with the new main printer PCB installed is 2223019002TZH.
+As of publication of this bulletin, there will only be a small number of new main PCBs (~30) used. Once stock of
+old main PCBs depletes, manufacturing will install the new main PCB in every new printer . Our estimation is that
+this will occur as early as September 2022.
+S p ar e P ar t s
+Because the new main printer PCBs do not af fect form, fit, or function, they will continue to use the existing spare part
+numbers. However , a new part number will be introduced for the micro SD cards, which will have the new software
+revisions for the respective new main printer PCB model. As of publication of this bulletin, the new main printer PCB is not
+being used for spares purposes. Usage for spares will likely take place once stock of the old main PCB depletes. Our
+estimation is that this will occur as early as September 2022.
+T able 2: Spare Part Numbers
+P/N Model Notes
+407912 6330 main PCB Spare part number for 6330 main PCB will remain the same
+Spare part number for the 6530 53mm main printer PCB will
+40791 1 6530 53mm main printer PCB
+remain the same
+Micro SD card for the new 6330 main printer
+409769
+PCB
+Micro SD card for the new 6530 53mm main
+409770
+printer PCB
+Micro SD Cards Are Not Interchangeable
+Do not install a new micro SD card on an old main PCB, or an old micro SD card on a new main PCB. While doing so
+would likely not damage the main PCB, the printer will likely only display a black screen and not boot.
+P r o d u c t s
+TT O.DA T AFLEX.6330/6530
+A f f e c t e d
+S y m p t o m s
+
+09/12/2022 10:19 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/New-Main-Printer-PCB-for-6330-32mm-53mm-and-6530-53mm-Printers/p 4 /4
+C o r r e c t i v e
+A c t i o n
+C o r r ect i ve A ct i o n
+Determine the board type before ordering replacement Micro SD cards
+Do not install a new Micro SD card on an old main PCB or an old Micro SD card on a new main PCB.
+If a 6330/6530 displays a black screen or will not boot after maintenance, ensure the correct Micro SD card is
+installed and fully seated.
+I t e m s
+R e q u i r e d
+A u t h o r Manuel Nevarez
+S e n d
+Q u e s t i o n s dataflexsupport@videojet.com
+T o
+D i s c l a i m e r
+The contents ofthis em ailand any attachm ents are provided as a convenience to V ideojetcustom ers to highlightusefulinform ation and troubleshooting tips.W hen w orking w ith a product,alw ays consultthe productuser
+m anualand follow the productsafety precautions and recom m endations,including using P ersonalP rotective E quipm entw hen necessary.Ifyou have any questions orare notexperienced in using orservicing V ideojet
+equipm ent,contactV ideojetforassistance.
+I n t e r n a l
+C o m m e n t s
+T i t l e New Main Printer PCB for 6330 32mm/53mm and 6530 53mm Printers
+U R L N a m e New-Main-Printer-PCB-for-6330-32mm-53mm-and-6530-53mm-Printers
+P e r m a n e n t
+U R L f o r Right click and copy link to share this Article's URL
+L i g h t n i n g
+E n g i n e e r i n g A n a l y s i s
+R o o t C a u s e
+S t e p s t o D i a g n o s e
+C o n t a i n m e n t
+C o u n t e r m e a s u r e
+P e r m a n e n t
+C o u n t e r m e a s u r e
+M e t a d a t a
+D i s t r i b u t i o n W ood Dale; US Field Service; Canada Field Service; EMEA Field Service; AP AC Field Service; CALA Field
+Service
+I n i t i a l S u b m i t t e r
+manuel.nevarez@videojet.com
+E m a i l
+Q u e u e d f o r
+N
+R e v i e w ?

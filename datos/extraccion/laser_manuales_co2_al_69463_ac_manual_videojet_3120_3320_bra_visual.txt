@@ -1,0 +1,2406 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\AL-69463-AC Manual Videojet 3120-3320 Bra.pdf
+# cifrado=False bloques=124 caracteres=139585
+
+Instruções de uso
+Videojet 3120Videojet 3320
+P/N: AL-69463
+Revisão: AC, Agosto 2006
+
+ub7vzewEp,x:^Fy^Lz;6,|D*~T
+008D>WEgKuS^h|qxwt}pnkihfeeeeeeeeeee//*"$!# -55I<ZCiLuUa{jvqrwo|ljhfecbbbbbbbbbbb-
+@u*=}+:-8.6/40312212121212121212yog"`,Z4T<OCJIGOCU@[>a;f9m6t 4}!1#/$-%,&+&*'
+#
+I'C'?&;$8"5"2"0".","*"
+H'R&]$j#y"! zj]S J D >:7420.,*
+@
+&$" $,4=GR_niZNE= 61-
+g'w&&%%%&m^RH@:620..-,,+*
+.6?ITapcUI@82-
+*+----$...:.H-X-j-,+*
+'&&%%$$$$~~pcWLB8/*
+6COZdmu}&%&'%!-<I U!_"h"p#x###$$$$%%&&&&&&&&
+F'Q&^%n$##""#$weVKB:50-,+*
+!%'!-28?FMV`l{{l^OB61,'# !&,17>FOYft./3,7-80764?1K/X,f*t
+q5l?hHdPaW]^ZfWnTwQ N#K%I&H'G'G$H"I JJJJn{upm#i0e;aE]MZTWTcQkNtKHE C!B"A"A BBCCCCuyjec`+]6Y@VISQPYM`JiGrD}B?=<;;;;<<<<|}qdZWU#S0P;MDKMHUE]Ce@o>z;97655444444thPIHF'E3C=AG?P=X:a8k6w420/..-,,,,,vj^RG=876'534=3G1Q0[.e,q*
+cr4`r=^rE[qMYqTWp[TpcRokPotMnKnInGmFnEnFmFmGmGlGlGl_iqw{|{uxkwewax_x$]y0Zy:XyBVxJSxQQwXOw`LvhJvrHu}EuCuBu@u@u@t@tAsAsAsAsdnv|re]YW U+S6Q>OFMNKUI]FfD~pB~{?~=}<}:}:~:|:{:{:z:z:zit|{n`UPNM&K0I:HBFJDRBZ@c=m;x97543333333pzuhZOGDCA*@4?==E;M:V8_6i4u20.-,,+++++xzmaUI?976"4,352>1G0P.Z-d+q
+IK0GK8FL?ELFDLNCMVBM_@Mj?Mv=N<N;N9O9O9O9N9N9M:MNV[_aax^iX_VTRLOIOGPEP%CP-BP5AQ<@QD?QL>RT<R];Rg:Rs8S7S5S4S3T3S4S4R4R4RRZ`dfetcf^\QXGUBU@U?V!=V*<V2;V9:WA9WI8WQ7XZ5Xe4Xq2X1X/Y.Y-Y-Y.X.W.W.VW_eij|jqhceXbM_C]<[:87&5].4]63]>2]F1^N0^W/^b-^n,_}*_
+"+5@NnxjOB6
+/F'0O%0[$1h#1w"2!23333 3!2CIMO|PsOhLFRCI??;66.2+2
++.*5
+|'r%i"_WNF?841.,*
+]$TKC;4-
+?cwbg6?^9<L#o}HodQWHt8Z#,}U9""|W0Lr6K>/Z$^w%j}[+L<0-a''U'%v]J<2-,09GjK/og4<;1oBPi7/"y4Ftjc
+
+MAQ$Q6n`d'@_ofmbAtOo{~alySnwJs]P28>>@BT@?>=<;:9876543210/.-,+*
+[&XK|8[7?jW>L|?@4I
+
+Copyright 2006, Videojet Technologies Inc. Todos os direitos reservados. Nenhuma parte desta ob(a continuação denominada Videojet ). ra pode ser reproduzida de forma alguma sem a
+anterior autorização da Videojet.
+Este documento é propriedade intelectual da Videojet e contém informações confde propriedade intelectual que são de propriedade da idenciais e protegidas Videojet. Está estritamente proibida toda cópia,
+utilização ou publicação deste documento sem autorização escrita da Videojet.
+Videojet Technologies Inc.
+1500 Mittel BoulevardTel. (EUA):1-800-843-3610Wood Dale, ILFax (EUA):1-800-582-1343mundialmente: CSucursais - EUA: Atlanta, Chicago, Los Angeles, Filadélfia anadá, França, Alemanha, Irlanda, Japão, Espanha,
+60191-1073 EUAFax:001 630-616-3629Singapura, Países Baixos, Reino Unido www.videojet.comdistribuidor mundial
+
+Índice
+1 Indicações de segurança............................................1
+1.1 Termos utilizados.................................................1.2 Classes de laser.....................................1......................................................................2
+1.3 Utilização conforme as disposições...............1.4 Manutenção e serviço..................................4......................................................................5
+1.5 Dispositivos de proteção e advertência.........1.6 Perigo para os olhos e para..................................6 a pele..................................................7
+1.7 Informação de segurança para lentes de se1.8 Perigo de incêndio e de exlênio de zinco..............8plosão....................................................9
+1.9 Segurança elétrica...............................................1.10 Produtos de decomposiç............................9ão..........................................................10
+1.11 Placas de advertências e indicações...........................................11
+2 Pôr em funcionamento..............................................13
+2.1 Instalação e pôr em funcionamento...............2.2 Transporte e depósito......................................13..............................................................13
+2.3 Desembalar................................................................2.4 Condições para a instalaç....................14ão..........................................................14
+2.5 Refrigeração.........................................................2.6 Dispositivo de aspiraçã..........................15o................................................................15
+2.7 Interfaces do sistema laser............................2.8 Condições de hardware e so................................15ftware................................................16
+2.9 Instalação do softwareSmart Graph...............................................16
+3 Descrição do sistema................................................17
+3.1 Funcionamento de um sistema laser com vetor 3.2 A fonte de raio laserscaner.................17.......................................................................18
+3.3 A cabeça de rotulação.............................3.4 A marcação da superfície ......................................18do produto............................................19
+3.5 Os parâmetros do laser..................................3.6 A construção do sistema ................................19laser.......................................................20
+3.7 Elaboração de dados e sinais no sistema lase3.8 Dados técnicos.................r.............................21..............................................................22
+3.9 Distâncias de trabalho e campo de marcação...............................24
+4 Operação do sistema laser.......................................27
+4.1 Operação do sistema laser..................................4.2 Componentes do modelo pa..........................27ra marcação......................................28
+4.3 Elementos da unidade de abastecimento......................................30
+i
+
+Índice
+4.4 Modos de operação do sistema laser............4.5 Conectar/Desconectar a unida................................31de de abastecimento.....................32
+4.6 Transferência de dados.................................................................33
+4.6.1 Cabo de conexão..................................................4.6.2 Determinação da direção IP.............................................33....................................................................34
+5 Manutenção...............................................................35
+5.1 Indicações para a manutenção............................5.2 Plano para manutenção.............................35..............................................................36
+5.3 Limpeza da óptica de foco.............................................................37
+5.3.1 Desmontagem da óptica de foco...............................5.3.2 Limpeza da óptica de ..........................foco........................38.............................................................38
+5.3.3 Montagem da óptica de foco.........................................................................39
+5.4 Atualize o software Smart Graph...................5.5 Protocolos de ma................................40nutenção, reparações e trocas...........................41
+6 Mensagens de defeitos e erros.................................49
+6.1 Indicações..................................................................6.2 Descrições de defeitos....................49...................................................................50
+6.3 Mensagens de advertência..................................6.4 Mensagens de erros..................................51..............................................................61
+7 Anexo........................................................................87
+7.1 Interfaces para o cliente.................................................................87
+7.1.1 Interbloqueio.........................................................7.1.2 Entradas e saídas separadas........................................87 galvanicamente.............................................87
+7.1.3 Entradas não separadas galvanicamente......7.1.4 Exemplo 1 de inst.................................alação elétrica: Controle pelo SPS...............92..................................95
+7.1.5 Exemplo 2 de instalação elétrica: Conexão direta (MOTF mark on the fly )96
+7.2 Declaração de conformidade.........................7.3 Desenhos.......................................97................................................................................98
+7.4 Páginas de dados de segurança....................7.5 Abreviaturas...................................................102............................................................103
+ii
+
+Prefácio
+Estas instruções de uso ...
+...contêm todas as informações que são necessáde pequenas avarias e a manutenção do sistema laser. As instruções de uso formam parte dorias para o funcionamento normal, a solução
+volume fornecido para cada sistema laser. As presentes instruções de uso estão dirigidas aopessoal de operação e manutenção instruído para o sistema laser.
+Estas instruções de uso estão sujeitas a modifiou de avanço técnico. Perseguimos o objetivocações técnicas efetuadas com fins de melhora de melhorar permanentemente nossos produtos
+e nos reservamos o direito de modificar sem avinstruções de uso.iso prévio as especificações contidas nestas
+Antes de começar a trabalhar, por favor, leia detalhadamente o capítulo »Indicações desegurança«!
+Assegure-se de ter compreendido todas as indicaçse à empresa Videojet Technologies Inc.ões. No caso de perguntas, por favor, dirija-
+Por favor, observe exatamente as instruções!
+Se necessitar de ajuda...
+...dirija-se ao distribuidor da Videojet TechnologieVideojet Technologies.s indicado para seu caso ou à sucursal da
+Videojet Technologies Inc.1500 Mittel Boulevard
+Wood Dale, IL 60191-1073Telefone (somente dentro dos USA.): 1 800 843 3610
+Internacional: +1 630 860 7300
+Fax (somente dentro dos USA.): 1 800 582 1343Fax internacional: +1 630 616 3629
+Sítio Web: www.videojet.com
+10/05 - Rev. AA iii
+
+Prefácio
+Cuidado radiação laser!
+Cuidado!
+No caso de sistema de condução de raio aberto
+pode sair radiação laserperigosa da classe 4!
+Graves queimaduras dos olhos epele, assim como danos
+materiais podem ser as conseqüências!
+Leia com atenção estas instruçõesde uso e observe sem falta
+as indicações de segurança!
+iv 10/05 - Rev. AA
+
+Prefácio
+Sinopses de capítulos
+1Indicações de segurança
+2Pôr em funcionamento
+3Descrição do sistema
+4Operação do sistema laser
+5Manutenção
+6Mensagens de avarias e erros
+7Anexo
+Quadro de controle manual
+Software Smart Graph
+Listas de peças sobressalentes
+10/05 - Rev. AA v
+
+Prefácio
+vi 10/05 - Rev. AA
+
+Capítulo 1Indicações de segurança
+1 Indicações de segurança
+1.1 Termos utilizados
+Perigoindica uma ameaça de perigo imediato. Se não é evitada terão como con-seqüências a morte ou lesões graves (mutilações).
+Advertênciaindica uma possível situação perigosa. Se não é evitada terão como con-seqüências a morte ou lesões graves (mutilações).
+Cuidadoindica uma possível situação perigosseqüências possíveis lesões leves a. Se não é evitada terão como con-ou de pouca importância (mutilações).
+Igualmente pode ser utilizada para advertências de danos materiais.
+Atençãoindica uma possível situação perigosa. Se não é evitada, o produto ou osobjetos que estão ao seu redor podem ser danificados.
+Importanteindica conselhos de utilização e outNão é um sinal para descrever uma situação perigosa nem prejudicial.ras informações especialmente úteis.
+Radiação laserindica a saída de radiação laser e com isso, uma possível situação peri-gosa. Por favor, observe exatamente as indicações de segurança! A não
+observação das indicações pode causarou na pele assim como danificar objetos. lesões leves ou graves nos olhos
+IndicaçãoAs marcas registradas assim como os modelos e patentes utilizados não estão assinalados
+expressamente nestas instruções de uso. Com denominações sejam livres ou que isso, não se deve deduzir que as respectivaspossam ser utilizadas livremente.
+02/06 - Rev. AB 1
+
+Indicações de segurançaCapítulo 1
+1.2 Classes de laserO sistema laser completo
+1
+O sistema laser completo e fechado se comporta em funcionamento normal equipamento laser da classe 1. O raio laser emitido por uma fonte de raio laser será conduzido como um
+completamente sob proteção até o lugar determinado. Através desta proteção é impedida asaída do raio laser ou a saída dos reflexos de raio laser.
+A fonte de raio laser
+Como fonte de raio laser (nestas instruções de uso chamada laser) se empregará um LaserCO
+ de funcionamento por pulso ou contínuo. O laser é um equipamento da classe 4. O mes-mo gera radiação invisível (infravermelha) que é muito perigosa para os olhos e perigosa para
+a pele. A freqüência de pulso é regulável entre 50 Hz e 20 kHz. A freqüência de pulso real de-pende da respectiva aplicação.
+2
+densidade de potência mediadensidade de energia
+na saída do raio laseraté 1,5 x 10
+6 2 2 2
+ W/m 7 x 10 J/m 50% fator de duração (con 1kHz e
+a
+)
+9 2 6 2
+no foco até 5 x 10
+ W/m 3 x 10 J/m 50% fator de duração (con 1kHz e
+a
+)
+Radiação laserCuidado!
+Assim que se abre a proteção fechada do raio e / ou a caixa do laser emqualquer parte, o sistema laser completo é colocado na classe 4.
+Neste caso você deve tomar as medidas de proteção correspondentes paraproteger as pessoas que se encontram na área do laser contra as radiações
+muito altas. Você pode consultar as medidas de proteção correspondentesna norma para prevenção de acidentes 46.0 »Radiação laser« (BGV B2),
+ver também capítulo sobre »Manutenção e Serviço«.
+a.Fator de duração: a relação entre o tempo de ligação do laser e o tempo real de operação.
+1.O funcionamento normal não compreende nem serviço.nenhum trabalho de manutenção, reparação
+2 02/06 - Rev. AB
+
+Capítulo 1Indicações de segurança
+Radiação laserCuidado no caso de modificações!
+A norma EN 60825, parte 1, »Segurança de equipamentos laser«, parágrafo4.1.1. diz:
+Para o caso no qual a modificação afeta de qualquer maneira um equipamen-to já classificado conforme esta norma ou os dados e a forma de funciona-
+mento prevista do equipamento, a pessoa ou organização respectiva, queefetua tal modificação, é responsável de assegurar a classificação modifica-
+da e a nova rotulação do equipamento laser.
+ImportanteO laser piloto pode ser operado para fins de simulação ou de ajuste sem olaser CO
+. Também neste caso devem ser usados sem falta os óculos de
+proteção para proteger-se contra radiação laser de CO
+2
+a
+.
+2
+a.O laser CO Neste caso é desconectado de maneira controlada através do software. Con-forme com as normas de segurança para laser deve-se usar óculos de proteção.
+2
+02/06 - Rev. AB 3
+
+Indicações de segurançaCapítulo 1
+1.3 Utilização conforme as disposições
+O sistema laser é apropriado exclusivamente para o trabalho nas superfícies de materiaisAs superfícies dos materiais são aquecidas loca.lmente através de radiação laser intensa da
+classe 4 e devido a isso se modificam. O campo de aplicação principal é a marcação de su-perfícies de produtos (datas de vencimento, identificações de lotes, números de série, etc.).
+A radiação laser emitida pelo laser contém muita energia e por isso, no caso de manejo impró-prio, representa um perigo para pessoas e objetos!
+Radiação laserNunca exponha a pessoas ou animais à radiação laser!Como conseqüência podem ocorrer lesões graves para os olhos e para a
+pele.
+Nunca exponha materiais inflamáveis à radiação laser!Proporcione sempre uma proteção adequada para o raio laser! Ao marcar
+sobre materiais inflamáveis (p. ex. papel) no caso de uma falha pode cau-sar um incêndio. Tome as medidas de segurança correspondentes. Insta-
+le p. ex. detectores de fumo, de fogo, ou similares!
+Não exponha superfícies refletoras à radiação laser! O raio laser refletido pode causar os mesmos perigos e em caso especial,
+inclusive ainda maiores que o raio laser original.
+Nunca exponha materiais desconhecidos à radiação laser! Alguns materiais (p. ex. polietileno, polipropileno, vidro) podem ser pene-
+trados pela radiação laser ainda que os mesmos pareçam impenetráveis ao olho humano.
+Perigo de explosão! Preste atenção para que na área de trabalho do raio laser não se encon-
+trem materiais explosivos nem vapores!
+Por razões de segurança está proibido efetuar modificações por con-ta própria no sistema laser!
+Se uma modificação efetuada pelo usuário leva a uma modificação dos dados de rendimento e / ou da forma de funcionamento prevista para um
+equipamento laser já anteriormente classificado, a pessoa ou organização respectiva que efetuou a modificação é responsável de realizar uma clas-
+sificação nova e a sinalização do equipamento laser. Neste caso a pessoa ou organização se coloca na posição de »Fabricante«
+A operação do sistema laser com o laser aberto e / ou com a condu-ção aberta do raio somente está permitida ao pessoal capacitado
+para isso! Observe sempre o cumprimento das disposições para pro-teção de laser!
+4 02/06 - Rev. AB
+
+Capítulo 1Indicações de segurança
+1.4 Manutenção e serviço
+Os trabalhos de manutenção descritos nestas instruções de uso somente dos por pessoal especialmente capacitado. As prestaçõespodem ser efetua- de serviço somente serão efetua-
+das pelo pessoal do serviço da empresa Videojet Technologies Inc ou por um dos seusrepresentantes. Durante o tempo destes trabalhos o sistema laser pode ser operado na clas-
+se 4. A disposição para prevenção de acidentes 46.0 »Radiação laser« (BGV B2) diz que osequipamentos laser das classes 3B ou 4 antes do primeiro funcionamento devem ser registra-
+dos na associação profissional e na oficina competente para a proteção do trabalho (oficina deinspeção industrial). Ademais deverá ser nomeado por escrito um encarregado da proteção do
+laser na associação profissional.
+Indicação
+ImportanteAntes de colocar em funcionamento mento laser na associação profissionalpela primeira vez registre o equipa- competente e na oficina de inspe-
+ção industrial.
+Faça com que uma pessoa seja capacitada para exercer a responsabili-dade de segurança do laser, para que seja a encarregada da proteção do
+laser e para isso, ser nomeada por escrito na associação profissional.
+Nós oferecemos cursos especiais de capacitação para lhe permitir a realização independentee segura de todos os trabalhos de manutenção e serviços e lhe garantir um alto grau de segu-
+rança ao pessoal de operação e manutenção.
+Capacitação para técnicos: O participante do curso adquire conhecimentos específicos que são necessários para po-
+der realizar todos os trabalhos de manutenção e serviço do sistema laser de forma inde-pendente, segura e conforme e especializada.
+Capacitação combinada: Capacitação para técnicos + formação para encarregado da proteção do laser. Ademais
+dos conhecimentos especializados do curso paracimentos que são necessários para desempenhar a afetividade de encarregado da prote- técnicos o participante adquire os conhe-
+ção do laser. A formação como encarregado da proteção do laser é homologada pela associação profissional (ver também acima).
+Solicite material informativo gratuito!
+02/06 - Rev. AB 5
+
+Indicações de segurançaCapítulo 1
+1.5 Dispositivos de proteção e advertência
+O sistema laser está equipado com uma serie de dispositivos de proteção e advertência quedevem impedir colocar em perigo pessoas e objetos. Não pode ser efetuado nenhum tipo de
+modificação nos dispositivos de proteção e adpágina2)!vertência (ver capítulo "Classes de laser",
+Dispositivos de proteção
+Dispositivos de advertência
+Interruptor de chaveO interruptor de chave evita o pôr em funcionamento não autori-zado do sistema laser. Assegure-se de haver retirado a chave e
+que a mesma somente esteja acessível para as pessoas autori-zadas!
+Obturador de raioO obturador de raio se encontra no percurso óptico do sistemalaser e evita a saída de radiação laser.
+Interruptor de inter-bloqueio Ao acionar o circuito de segurança externo se abrem um ouvários interruptores de interbloqueio. O processo de marcação
+(Interruptor de segu-rança) se interromperá imediatamente. Se vários interruptores de inter-bloqueio estão conectados depois de abrir ao menos um dos
+interruptores de interbloqueio, já não é possível gerar a radiaçãolaser.
+Os interruptores de interbloqueio podem assegurar portas desegurança, cobertas de proteção, etc. A quantidade e colocação
+dos interruptores de interbloqueio são específicas para cada ins-talação.
+Para o processo de marcação todos os interruptores de interblo-queio devem estar fechados. O aviso "Erro Interbloqueio aberto"
+é exibido no software.
+Depois de fechar o interruptor de interbloqueio o processo demarcação pode ser continuado depois de um tempo de espera
+de 5 s.
+Nós recomendamos o interruptor auxiliar para proteção da portaAES1235 em combinação com uma porta de segurança magné-
+tica BNS33 e o acionador BPS33 da empresa Schmersal.
+Luz vermelhaA luz vermelha da cabeça de marcação da cabeça de rotulaçãose acende quando pode ser gerada a radiação laser.
+Luz vermelha"Radiação laser"A luz vermelha sobre a caixa da unidade de abastecimento seacende quando pode ser gerada a radiação laser.
+OutrasLuzes de sinalAlém disso, podem ser coneemissão. A conexão das mensctadas mensagens externas deagens externas de emissão é
+específica para cada instalação.
+6 02/06 - Rev. AB
+
+Capítulo 1Indicações de segurança
+1.6 Perigo para os olhos e para a pele
+O sistema laser gera radiação laser da classe 4vermelho. A radiação laser é emitida e não é visível para o olho no campo infra- humano.
+A alta potência da radiação produz um aquecimento local extremo e do. A radiação laser põe em perigo especialmea queimadura do teci-nte os olhos e a conseqüência disso pode ser
+a diminuição ou perda da capacidade visual!
+Os óculos de proteção contra o laser adequados proporcionam proteção contra a radiação la-ser direta, refletida ou dispersa. Os óculos de proteção adequados são:
+concebidos para o campo de longitude de ondas de um laser CO
+do laser CO. A longitude de ondas
+2
+ é de 10,6 µm (opcional 9,3 µm). Observe a placa do tipo.Cuidado no caso de confusões!
+Os óculos de proteção para outro tipo de laser, p. ex. para o laser YAG não proporcionam proteção suficiente contra radiação laser do laser
+2
+Durante os trabalhos de manutenção, ajuste ou serviço que sãoefetuados com o laser aberto e/ou com o sistema de condução
+de raios aberto, todas as pessoasdo laser devem usar óculos de proteção adequados! que se encontram no campo
+Nunca olhe diretamente para o raio laser!
+!
+concebidos para o campo de potência do laser. A potência de saída máxima pode alcan-çar os valores seguintes:
+CO 2 Videojet 332030 W
+Videojet 312010 W
+colocado tanto para o funcionamento contínuo como paraA freqüência de pulso é regulável entre 50 Hz e 20 kHz. A freqüência de pulso real depende o funcionamento por pulsos.
+de cada tipo de aplicação.
+Ainda que a pele possa suportar uma radiação muito mais forte do que os olhos, neste casotambém se produz uma destruição do tecido por queimadura dependendo da duração e a po-
+tência da radiação. Por isso, use a roupa adequada para proteger a pele. Evite de todas asformas que o raio laser toque a pele ou a roupa!
+ImportanteO laser piloto pode ser operado para fins de simulação ou de ajuste sem olaser CO
+. Também neste caso devem se usar sem falta óculos de proteção
+para se proteger contra radiação laser de CO
+2
+a
+.
+2
+a.O laser CO neste caso é desconectado de maneira controlada através do software. Confor-me com as normas de segurança para laser devem ser usados óculos de proteção.
+2
+02/06 - Rev. AB 7
+
+Indicações de segurançaCapítulo 1
+1.7 Informação de segurança para lentes de selênio de zinco
+Selênio de zinco
+mercado. que se encontram no
+2
+Durante o manejo normal e ao limpar a óptica não existe perigo algum devido à radi-ação radioativa!
+Este material contém componentes perigosos para a saúde!
+O selênio é tóxico se é aspirado ou tragado. O pó pode provocar irritações dos olhos e do sis-tema respiratório. Ao trabalhar com selênio de zinco não comer, beber e nem fumar. Depois
+lavar bem as mãos.
+Tório
+O tório é potencialmente perigoso para a saúde se é aspirado ou tragado. A capa de tórioestá embutida na lente entre outras capas, por isso ao não estar danificada não pode sair
+material radioativo algum deste recobrimento. Evitar raspagens sobre a superfície da lente.
+Comportamento no caso de rompimento da lente
+Não aspire o pó do material! No caso de rompimento da óptica de foco, recolha os pedaços dalente com luvas (ao varrer os fragmentos evitar levantar pó), embrulhe-os em uma bolsa plás-
+tica fechada hermeticamente e mande-a para ses.ua eliminação à empresa Videojet Technologi-
+Manutenção e óptica de foco AtençãoA óptica de foco está composta de selênio de zinco recoberto e contémquantidades extremamente minúsculas da substância radioativa tório. Isso
+vale para todos os aparelhos de rotulação laser CO
+Para informações sobre a manutenção da óptica de foco, por favor, ler o capítulo Limpeza daóptica de foco em página37 (Capítulo "Manutenção").
+A pedido você recebera mais informações.
+8 02/06 - Rev. AB
+
+Capítulo 1Indicações de segurança
+1.8 Perigo de incêndio e de explosão
+1.9 Segurança elétrica
+Radiação laserA alta potência de saída do laser da classe 4 é capaz de causar o incêndiode muitos materiais. Por isso tome também as medidas de proteção contra
+incêndios durante os trabalhos de manutenção e serviço com a caixa dolaser e / ou o sistema de condução do raio laser abertos!
+Os papeis (planos de comando, notas, cartnas de tecido não impregnadas a prova de fogo, as placas de madeira ouazes nas paredes, etc.), as corti-
+outros materiais inflamáveis podem ser incendiados ção laser dirigida ou refletida. facilmente pela radia-
+Tenha em atenção para que na área de trabalho do sistema laser não seencontrem recipientes com dissolventes ou detergentes inflamáveis
+facilmente ou explosivos. Devido a exposição de um recipiente à irradia-ção involuntária com a radiação laser intensa e invisível, pode formar-se
+muito rapidamente um incêndio ou provocar uma explosão.
+O sistema de marcação laser foi construído conforme as regras da técnica gerais e homolo-gadas. Entre elas se encontram, por exemplo, as normas EN 60950-1, parte1 »Dispositivos de
+segurança na técnica de informação« e EN 60825, parte 1 »Segurança de equipamentos la-ser«
+AtençãoDurante os trabalhos com o laser aberto ou nos componentes abertos dosistema se pode aceder aos componentes condutoras de tensão da rede.
+Tenha em atenção às disposições correspondentes para trabalhos em insta-lações condutoras de tensão!
+Todos os trabalhos efetuados com o laser aberto, especialmente noscomponentes elétricos somente podem ser realizados por pessoal
+especialmente capacitado!
+02/06 - Rev. AB 9
+
+Indicações de segurançaCapítulo 1
+1.10 Produtos de decomposição
+AtençãoAo trabalhar o material com radiação laser podem ser originados produtosde decomposição nocivos para a saúde!
+Ao evaporar-se o material originam-se pós e vapores. Neles podem encon-trar-se produtos de decomposição nocivos para a saúde a depender do tipo
+e a composição do material.
+Por isso recomendamos instalar urgente um dispositivo de aspiração comas dimensões adequadas às necessidades que esteja equipado com filtros
+especiais para pó e carvão ativo. Osaspirados diretamente no lugar de origem. produtos de decomposição devem ser
+Proteja-se e proteja aos seus colegas contra produtos de decomposi-ção nocivos para a saúde!
+Ademais um dispositivo de aspiração evita que as partículas de pó originadas sujem os ele-mentos ópticos do sistema de condução de raios e que possivelmente os destruam. Como
+acessório nós oferecemos diversos dispositivos de aspiração.
+10 02/06 - Rev. AB
+
+Capítulo 1Indicações de segurança
+1.11 Placas de advertências e indicações
+Sinalização/SímbolosPosição
+na unidade de rotulação
+na cabeça de rotulação
+na unidade de rotulação
+RADIAÇÃO LASER INVISÍVEL
+EVITAR IRRADIAÇÃO DOS OLHOS OU A PELEPOR RADIAÇÃO DIRETA OU DIFUSA
+POTÊNCIA MÁXIMA: 40 WLONGITUDE DE ONDA
+λ CLASSE DE LASER 4= 9 - 11 µm
+(EN 60825-1/10.03)
+com laser piloto:
+RADIAÇÃO LASER
+VISÍVEL E INVISÍVEL
+EVITAR IRRADIAÇÃO DOS OLHOS OU A PELEPOR RADIAÇÃO DIRETA OU DIFUSA
+POTÊNCIA MÁXIMA: LASERLASER PILOTO
+LONGITUDE DE ONDA CLASSE DE LASER
+ 40 Wλ=630 - 680 nm≤ 1 mW
+λ=9-11µm 4 2
+(EN 60825-1/10.03)
+ABERTURA PARA SAÍDAPARA RADIAÇÃO
+LASER INVISÍVEL
+com laser piloto:
+ABERTURA PARA SAÍDAPARA RADIAÇÃO
+E INVISÍVELLASER VISÍVEL
+Cuidado
+Radiação laser invisível,se a tampa está aberta.
+Evitar irradiação nos olhos ou na pele
+por radiação direta ou difusa.
+02/06 - Rev. AB 11
+
+Indicações de segurançaCapítulo 1
+Sinalização/SímbolosPosição
+na cabeça de rotulação (caso necessário)da unidade de flexão
+na unidade de abastecimento
+na unidade de abastecimento
+Cuidado
+Radiação laser invisível,se a tampa está aberta.
+Evitar irradiação nos olhos ou na pelepor radiação direta ou difusa.
+com laser piloto:
+Cuidado
+Radiação laser visível e invisívelse a tampa está aberta.
+Evitar irradiação dos olhos ou a pele
+por radiação direta ou difusa.
+Atenção
+Somente sem tensão sea ficha da corrente ou o
+interruptor principal estãodesconectados
+12 02/06 - Rev. AB
+
+Capítulo 2Pôr em funcionamento
+2 Pôr em funcionamento
+2.1 Instalação e pôr em funcionamento
+A instalação e o primeiro funcionamento do siconhecimentos especializados stema laser pressupõe-se contar com amplose experiência. A mesma deve ser efetuada pelo pessoal da
+empresa Videojet Technologies Inc. ou um dos seus representantes.
+Para garantir uma instalação rápida e sem problemas, por favor, prepare o lugar de instalação:
+Siga os passos descritos do capítulo "Desembalar" (ver página14).
+Coloque a disposição todas as conexões que a instalação" e nas páginas com as medidas estão descritas no capítulo "Condições para e os dados técnicos que você recebeu durante
+a elaboração do pedido.
+Caso tenha algumas perguntas, por favor, dirija-se à empresa Videojet Technologies Inc.
+2.2 Transporte e depósito
+No caso do sistema laser, se trata de um aparelho laser óptico de precisão! Por favor, eviteações mecânicas fortes (golpes, vibrações, etc.) para não danificar o sistema laser. Caso te-
+nha algumas perguntas sobre o transporte ou o depósito, por favor, dirija-se à empresa Video-jet Technologies Inc.
+Transporte
+O sistema laser deve ser transportado horizontalmente depois de ser desembalado. xão de abastecimento entre a unidade de abastecimento e a unidade de rotulação nãoA cone-
+deve ser dobrada!Desligue o sistema laser antes do transporte e retire da tomada!
+Depósito
+IndicaçãoO operador é responsável pela utilização segura do sistema laser. Especial-mente deve garantir a observação das disposições e normas locais para a
+operação de sistemas laser incluindo laser, aspiração, refrigeração, etc.)seus componentes (proteção contra
+Videojet Technologies Inc. não se responsabiliza pelos danos de qualquertipo que tenham sido provocados pela utilização do aparelho não conforme
+com as disposições, por operação errada ou negligência.
+Deposite o sistema laser horizontalmente e prottema laser nem seus componentes ao sol! A temperatura do depósito não deve superar osegido contra pó e umidade. Não exponha o sis-
++65°C.
+O sistema laser deve ser protegido contra temperaturas geladasperatura do deposito não deve ser inferior que 5°C. A umidade atmosférica deve estar entre, querdizer, que a tem-
+10% e 90%.
+10/05 - Rev. AA 13
+
+Pôr em funcionamentoCapítulo 2
+2.3 Desembalar
+1.Abra a embalagem e retire o material de proteção.
+2.Retire cada um dos componentes embalados.
+3.Verifique se todas as partes não apresentam danos de transporte.
+4.No caso de danos, por favor, informe imediaVideojet Technologies tamente à empresa de transporte e à empresaInc. ou informe o seu representante por escrito. Guarde o material
+de embalagem e anote tanto os danos interiores como exteriores.
+5.Transporte os componentes individuais para o lugar de instalação.
+6.Proteja os componentes individuais contra pó e umidade até pôr em funcionamento.
+Contribua para proteger o meio ambiente!
+Por favor, leve o material da embalagem separado para a reciclagem dematérias primas.
+Temperatura:5 - 40 °C
+Umidade atmosférica relativa:10 - 90; não condensante
+2.4 Condições para a instalaçãoEspaço
+Por favor, veja as medidas padrão do sistema laser nos desenhos do capítulo "Anexo".
+No caso de instalações que são fabricadas especialmente segundo os desejtes dados se encontram no plano de instalação ou nas páginas com as medidas e dados queos do cliente, es-
+você recebeu no transcurso do pedido.
+Conexões
+Para a operação do sistema laser é necessário uma tomada. Para os dados ver as páginas dedados que você recebeu no transcurso do pedido.
+Ao instalar a tomada e escolher o lugar de instalação, por favor, preste atenção ao comprimen-to do cabo do sistema laser de aprox. 5 m.
+Condições ambientais
+14 10/05 - Rev. AA
+
+Capítulo 2Pôr em funcionamento
+2.5 Refrigeração
+O sistema laser é refrigerado com ar. O sistema de refrigeração interno está construído de for-ma que o sistema laser seja refrigerado o suficiente em todos os estados de operação.
+Observe que estejam garantidas e aspiração e haja uma troca de ar suficiente para a saída de calor no lugar de instalação.expiração livres do ar de refrigeração e que
+2.6 Dispositivo de aspiração
+Para retirar os restos de marcação possivelmente nocivos para a saúde que se originam aoelaborar o material com o laser, recomendamos a instalação de um dispositivo de aspiração.
+O dispositivo de aspiração deve ser instalado de maneira que os restos de material sejam as-pirados diretamente no lugar de origem. Com isso se evita que as partículas de pó sujem os
+componentes ópticos do sistema laser e que assim com o tempo sejam destruídos.
+Como acessório nós oferecemos diversos dispositivos de aspiraçãração estiver incluído no volume fornecido, seo. Se o dispositivo de aspi- fornecerão as instruções de uso do fabricante.
+2.7 Interfaces do sistema laser
+Interfaces de redeConexão do quadro de controle manual. Conexão do quadrode controlo manual. O abastecimento de corrente do quadro de
+controlo manual é efetuado através do sistema laser conec-tado.
+Conexão de um computador para controlo com o softwareSmart Graph. Circuito de interbloqueio
+Circuíto de interblo-queio O circuito de interbloqueio serve para a segurança do sistemalaser. Se for aberto um dos interruptores de segurança exter-
+(denom. IL) nos no circuito de interbloqueio, a marcação atual se inter-rompe imediatamente. Somente é possível continuar com o
+processo de marcação se todos os interruptores de segurançaestão fechados e se pressionar novamente a tecla START.
+No estado fechado existe uma tensão de +30V na entrada dointerbloqueio que é posta a disposição pelo sistema laser.
+Inteface do clienteVocê encontrará no capítulo "Anexo" as interfaces geraisdadas.
+Para a aplicação específica da interface do cliente ver as pági-nas com as medidas e dados que você recebeu na elaboração
+do pedido.
+10/05 - Rev. AA 15
+
+Pôr em funcionamentoCapítulo 2
+2.8 Condições de hardware e software
+Para o funcionamento perfeito do software Smartos seguintes requisitos quanto ao hardware e software: Graph devem ser cumpridos, como mínimo,
+Computador Pentium
+com Windows 2000 o XP.
+128 MB de memória
+Mínimo 50 MB capacidade de memória em disco rígido
+Unidade para CD-ROM
+2.9 Instalação do softwareSmart Graph
+Se no volume fornecido do seu sistema laser está incluído o computador, o software Graph já vem instalado da fábrica.Smart
+Para instalar o software Smart Graph, proceda da seguinte forma:
+1.Coloque o CD de instalação do Smart Graph na unidade para o CD-ROM do seu compu-tador.
+2.No menu inicial do sistema operativo de Windows selecione o comando »Executar«.
+3.No campo de texto livre ingresse CD:\setup.exedas letras para a unidade de CD-ROM de seu com, o CD neste caso significa o exemploputador. Siga as instruções do assistente
+para instalação.
+16 10/05 - Rev. AA
+
+Capítulo 3Descrição do sistema
+3 Descrição do sistema
+3.1 Funcionamento de um sistema laser com vetor scaner
+O laser CO (2) trabalhando em operação por pulso ou contínua gera um raio laser infraver-melho, invisível de diâmetro escasso. Para que o raio laser possa ser melhor focado, primeiro
+será estendido por meio de um telescópio (3).
+2 O raio laser estendido atinge a cabeça de rotulação (4) onde se encontram dispostos dois es-pelhos móveis. Os espelhos desviam o raio de forma que ele percorre os traços do modelo
+selecionado. Os traços estão divididos em vetores separados (coordenadas X e Y). Atravésdeste alinhamento dos vetores resulta a marcação sobre a superfície do produto. O raio laser
+se move »escrevendo« sobre a superfície do produto.
+O cálculo dos vetores e o controle do laser é realizado pela Advanced Controller Card (ACC)na unidade de abastecimento (1).
+Antes que o raio laser desviado chegue à superfície do produto (7), o mesmo é focado pelalente Teta F. A marcação é realizada no geral no foco (6) do raio laser.
+Ilustração 3-1: Princípio de funcionamento de um sistema laser com vetor scaner
+08/06 - Rev. AC 17
+
+Descrição do sistemaCapítulo 3
+3.2 A fonte de raio laser
+Como fonte de raio laser é utilizado um tubo selado cheio de gás CO trodos que estimulam a agitação das moléculas de CO. Nele se encontram ele-
+2
+qüência (Tensão AF), causando assim a emissão de radiação laser. com ajuda de uma tensão de alta fre-
+A radiação laser originada é refletida múltiplas vezes entre dois espelhos que se encontramum frente ao outro - o espelho final e o espelho de saída. Devido a isso o trajeto que percorre
+2 o raio laser entre os eletrodos se alarga. Através do processo da »emissão estimulada« se pro-
+duz uma intensificação em avalanche da radiação laser. Enquanto que o espelho final refletea radiação laser gerada até 100 %, o espelho de saída a reflete sozinho até 80 %. Ou seja,
+que ele deixa passar aprox. 20 % da radiação laseda radiação laser para o processo de marcação.r gerada. Quer dizer que "acopla" esta parte
+3.3 A cabeça de rotulação
+Depois que o raio laser estendido abandona o telebém chamada cabeça de marcação). Nele se enscópio, atinge a cabeça de rotulação (tam-contram dois espelhos de flexão. Os mesmos
+desviam o raio laser conforme o modelo aberto na direção X e na direção Y.
+As direções fixas X e Y do sistema de coordenadas do laser do campo de marcação resultamda disposição da cabeça de rotulação. Com um giro ou deslocamento da cabeça de rotulação
+também é girado ou deslocado o campo de marepresentada na seguinte ilustração:rcação. A determinação da direção X e Y está
+Ilustração 3-2: Determinação do sistema de coordenadas do laser
+Campo demarcação
+18 08/06 - Rev. AC
+
+Capítulo 3Descrição do sistema
+3.4 A marcação da superfície do produto
+A marcação da superfície do produto é efetuada através do efeito de radiação laser sobre omaterial do produto.
+O raio laser é focado sobre a superfície do material e aquece a capa superior do produto. Atra-vés disso p. ex. é evapora uma capa de cor ou se consegue uma coberta de cor sobre o ma-
+terial.
+Os caracteres e símbolos que devem ser marcados sobre o produto são fracionados em traçosde vetores (1). Os traços de vetores por sua vez são fracionados em vetores individuais.
+Ao saltar (2) de um traço de vetor para o outro o raio laser é desconectado, de maneira que omaterial é marcado.
+Ilustração 3-3: A decomposição de caracteres em vetores
+3.5 Os parâmetros do laser
+Para adaptar o sistema laser aos diversos materido laser devem ser determinados, regulados e saais se utilizam parâmetros. Estes parâmetroslvos para cada caso de aplicação a fim de
+poder obter a melhor qualidade de marcação possível.
+A determinação dos valores carretos requer experiência no manejo do sistema laser, já queos parâmetros do laser dependem em grande medida do material e da aplicação. Caso tenha
+algumas perguntas, por favor, dirija-se a um dos nossos representantes.
+Os parâmetros individuais para cada material conjuntos de parâmetros podem ser criados ou modificados com o quadro de controle manualsão agrupados em conjuntos de parâmetros. Os
+ou com o software Smart Graph. As explicações para cada um dos parâmetros se encontramnas instruções do software SmartGraph.
+08/06 - Rev. AC 19
+
+Descrição do sistemaCapítulo 3
+3.6 A construção do sistema laser
+O sistema laser está composto de uma unidade de abastecimento (1) e de uma unidade derotulação (2). A unidade de abastecimento é manejada através do quadro de controle manual
+ou através do software SmartGraph no computador.
+Na unidade de rotulação está instalada a cabeça de rotulação (3) e de forma opcional umaunidade de flexão.
+Ilustração 3-4: O sistema laser Videojet3320
+Ilustração 3-5: O sistema laser Videojet3120
+2
+1
+3
+2
+1
+3
+20 08/06 - Rev. AC
+
+Capítulo 3Descrição do sistema
+3.7 Elaboração de dados e sinais no sistema laser
+La Advanced Controller Card (ACC) é o painel de comando central do sistema laser. Nelese encontram dois processadores que manejam juntos o sistema completo.
+O PowerPC (PPC): tem acesso à memória principal (128MB) e em uma parte das interfaces.No PowerPC funciona o AOS ((Advanced Operating System) com o sistema operativo Linux.
+O AOS se comunica com os diversos dispositivos de operação e controle através das diferen-tes interfaces (Ethernet, USB). O AOS oferece uma variedade de funções para a incorporação
+do sistema de marcação em instalações existentes e pode ser adaptado em grande parte àtarefa de marcação através de uma linguagem de programação (TCL). No modo de marcação
+o AOS gera dados dos modelos existentes que logo são transferidos ao segundo processador.
+O processador digital de sinais (DSP): continua a elaborar os dados do AOS e gera dadosde posição para a cabeça de rotulação para manejar o raio laser a corresponder com os dados
+do modelo. Estes dados de posição são transferidos para a platina FM (transformados em movimentos dos espelhos. fast move) e aí sãoO laser é conectado e desconectado sincroni-
+camente segundo o processo.
+Ademais o DSP administra as entradas rápidas para o disparador e o incrementador. Atravésdisso é possível obter marcações exatas sobre produtos movidos.
+Na seguinte ilustração estão representadas as diferentes interfaces, assim como sua adminis-tração através da placa ACC.
+Ilustração 3-6: Elaboração de dados e sinais no sistema laser
+Unidade de abastecimentoCabeça do laserCabeça de
+rotulação
+MMC
+FPGA
+Laser
+Ethernet 1
+FM
+USB
+PPCDSP
+Memória
+Interfacedo cliente
+LVDS
+Ethernet 2
+Serial
+ACC
+CAN
+IOEB (opcional)
+08/06 - Rev. AC 21
+
+Descrição do sistemaCapítulo 3
+3.8 Dados técnicos
+Uni-dadeVideojet3120Videojet3320
+Tipo de laserlaser selado CO
+2
+Modos de operação de lasercontínuo (cw)por pulsos 50 Hz - 20 kHz
+Classe de laser4
+Potência máx. do laserW= 10= 30
+Admissão de potência máx. kW0,40,70
+Tensão de abastecimentoVAC85 até 240 (auto-alcance); 1 fase
+Freqüência de redeHz50 / 60
+Fusível de entradaA10 (flink)
+Temperatura ambiente°C5 - 40(típica, depende da operação)
+Umidade atmosférica rel.%10 - 90; não condensante
+EstímuloRF
+Classe de proteçãoIP 54 (opcional IP 65)
+Peso (típico)- unidade de abastecimentokg 11,5 11,5
+- cabeça do laser- cabeça de rotulação SHC 60131,4 19,11,4
+- cabeça de rotulação SHC 1002,2 2,2
+Longitude de ondaµm10,610,6 (opcional 9,3)
+Velocidade de rotulação
+a
+mm/s1 - 30.000
+Velocidade de linham/s0 - 10
+Caracteres/segundo
+a
+máx. 1200
+Distância focal da óptica defoco mm (")
+SHC 60
+SHC 100
+63,5(2,5); 95,25(3,5); 127(5); 190,5(7,5); 254(10)
+100(3,94); 150(5,9); 200(7,87); 300 (11,8)
+Diâmetro de focoµm150 - 450(depende da óptica aplicada)
+Largura da linhadepende do materiale dos parâmetros do laser
+22 08/06 - Rev. AC
+
+Capítulo 3Descrição do sistema
+Uni-dadeVideojet3120Videojet3320
+a.Todos os dados que se referem a caracteres marcados ou a rotulações concretas são valo-res típicos. Dependem em grande parte do material e por isso somente devem ser tratados
+como valores de referência. Não representam nenhuma especificação!
+Fontespossíveis todas as fontes padrão(os símbolos especiais estão disponíveis a
+pedido)
+Tipo de refrigeraçãoRefrigeração de ar integrada
+distância máxima de unidadede marcação - unidade dempadrão 5 e 3 (outros a pedido)
+abastecimento
+Operação/ControleQuadro de controle manual e/oucomputador IBM compatível com o software
+Smartcom Windows 2000 o XP. Graph
+InterfacesInterfaces da rede, USB
+Videojet Technologies Inc. se reserva o direito cos com fins de melhorar o produto e de seguir o avanço técnico.de modificar sem aviso prévio os dados técni-
+08/06 - Rev. AC 23
+
+Descrição do sistemaCapítulo 3
+3.9 Distâncias de trabalho e campo de marcação
+Cabeça de rotulação SHC-60
+Cabeça de rotulação SHC-100
+Óptica de focoDistância focal f 64 mm95 mm127 mm190 mm254 mm
+Distância de trabalho67 mm96,5 mm125 mm182 mm236 mm
+Largura máx. (A)44,3 mm66,5 mm88,7 mm133,0 mm177,3 mm
+Altura máx. (B)44,3 mm66,5 mm88,7 mm133,0 mm177,3 mm
+Altura para retângulo máx. (b)41,6 mm62,4 mm83,2 mm124,8 mm166,5 mm
+Largura para retângulo máx. (a)31,9 mm47,9 mm63,9 mm95,8 mm127,8 mm
+Retângulo máx.: Campo de rotulação41,6 x 31,9 mm
+62,4 x 47,9 mm 83,2 x 63,9 mm 124,8 x 95,8 mm 166,5 x 127,8mm
+2 2 2 2 2
+Óptica de focoDistância focal f 100 mm150 mm200 mm300 mm351 mm400 mm
+Distância de trabalho94 mm142 mm191 mm278 mm338 mm385 mm
+Largura máx. (A)73,3 mm110,0 mm146,6 mm220,2 mm257,3 mm293,2 mm
+Altura máx. (B)101,2 mm151,8 mm202,5 mm304,1 mm355,3 mm404,9 mm
+Altura para retângulo máx. (b)81,3 mm122,0 mm162,7 mm244,3 mm285,5 mm325,3 mm
+Largura para retângulo máx. (a)56,7 mm85,0 mm113,3 mm170,2 mm198,9 mm226,7 mm
+Retângulo máx.: Campo de rotula-81,3 x 56,7 mm
+ção
+162,7 x 113,3 mm 244,3 x 170,2 mm 285,5 x 198,9 mm 325,3 x 226,7mm
+122,0 x 85,0 mm
+2 2 2 2 2
+2
+Ver ilustração na próxima página.
+24 08/06 - Rev. AC
+
+Capítulo 3Descrição do sistema
+Distância de trabalho
+08/06 - Rev. AC 25
+
+Descrição do sistemaCapítulo 3
+26 08/06 - Rev. AC
+
+Capítulo 4Operação do sistema laser
+4 Operação do sistema laser
+4.1 Operação do sistema laser
+O sistema laser está construído de forma modular. Quer dizer que segundo a interpretação dosistema você conta com diversas possibilidades para influir sobre o processo de marcação e
+no visual da marcação. A operação do sistema pode ser realizada através de:
+com o quadro de controle manual ou
+com um computador e o software Smart Graph. Quadro de controle manual
+Quadro de controle manualO quadro de controle manual serve para a configuraçãorápida do sistema laser. A conexão com a unidade de abas-
+tecimento se efetua através da interface para a rede. Umquadro de controle manual pode ser utilizado para quantas
+unidades de abastecimento se deseja. Com sua ajuda vocêpode:
+criar ou editar um pedido de marcação.
+abrir e editar modelos (em volume limitado).
+criar e editar conjuntos de parâmetros.
+regular a configuração do sistema laser.
+Software Smart GraphO software Smart Graph funciona em um computador com osistema Windows 2000 ou XP. O mesmo lhe oferece todas
+as possibilidades de instalaçãoual. Além disso, você pode criar modelos complexos, impor- do quadro de controle man-
+tar logotipos, modificar fontes, do laser, etc.modificar todos os parâmetros
+Os modelos para marcação criados com o software Graph podem ser transferidas diretamente para a unidadeSmart
+de abastecimento para sua marcação.
+08/06 - Rev. AC 27
+
+Operação do sistema laserCapítulo 4
+4.2 Componentes do modelo para marcação
+Para poder colocar uma marcação sobre um produto, deve ser definido os seguintes elemen-tos do modelo:
+Conteúdo de marcaçãoO conteúdo de marcação descreve textos, logotipos, números de serie, fontes, etc.o visual da marcação, p. ex.
+Conjunto de parâmetrosO conjunto de parâmetros é determinado para o produto respectivo,mais exatamente, para o material do produto. O mesmo contém
+entre outros os valores para a potência do laser e a velocidade demarcação.
+Registro de produtoO registro de produto contém todos os dados que são necessáriospara a execução do processo de marcação através do registro do
+produto através de sensores.
+PosicionamentoO posicionamento especifica a posmarcação sobre o produto.ição e o tamanho do conteúdo de
+Através da combinação dos quatro elementos, conteúdo de marcação, conjunto de parâme-tros, registro de produto e posicionamento no modelo se tem a possibilidade de adaptar muito
+rapidamente uma marcação às condições modificadas.
+Exemplos:
+Você deseja colocar a mesma marcação na mesma posição ao invés de colocar sobre o papel, colocar no plástico. Para isso somente configurar um novo conjunto de parâmetros,
+p. ex. cambiar de »Papel« para »Plástico«.
+Você deseja colocar o mesmo conteúdo de marcação sobre o mesmo material, mas em ou-tra posição. Para isso modifique somente o posicionamento diretamente no modelo ou no
+menu »Operação laser« em »Ajustar marcação«.
+28 08/06 - Rev. AC
+
+Capítulo 4Operação do sistema laser
+Os modelos podem ser agrupados em seqüênciaou pilha são elaborados sucessivamente. Isto provoca a seguinte diferenciação:s ou pilhas. Os modelos de uma seqüência
+SeqüênciaCom um impulso do disparador é desengatada uma seqüência de modelosque serão colocadas sucessivamente sobre o produto. Os impulsos do dis-
+parador que entram durante a elaboração da seqüência são colocados emfila na fila de espera do disparador e são elaborados depois de finalizar a se-
+qüência.
+PilhaOs modelos de uma pilha são elaboradosconsecutivos. O primeiro impulso é o disparador inicial, a elaboração poste- através de impulsos do disparador
+rior é executada por disparadores consecutivos (registro de produto). Se aelaboração é interrompida, deve voltar a começar com um disparador inicial,
+querdizer, que se começará novamente com o primeiro modelo da pilha.
+Respectivamente ao final de uma pilha ou de umprimeiro modelo.a seqüência se começará novamente com o
+Pilha Seqüência
+Modelo 1Modelo 1
+Modelo 2Modelo 2
+Modelo 3Modelo 3
+Modelo 1Modelo 1
+Modelo 3Modelo 3Fontes
+Logotipos
+Conjunto parâm.
+Registro produto
+Posicionamento
+Modelo
+08/06 - Rev. AC 29
+
+Operação do sistema laserCapítulo 4
+4.3 Elementos da unidade de abastecimento
+S1S2S3L1
+L2 L3
+Nr.TipoFunção
+S1Interruptor principal(parte traseira da conecta a unidade de abastecimento.
+unidade de abasteci-mento)
+S2Interruptor de chavecoloca o abastecimento de tensão na fonte do raio. Podeser iniciar um processo de marcação.
+Indicação:Ao estar desconectado retirar a chave para se assegurar
+contra utilizações não autorizadas!
+S3Interruptor de Stopparada imediata, a fonte do raio é deixada sem tensão.
+L1Luz de sinal-branca-pisca, quando o sistema laser se encontra em estado de iniciação.
+está acesa, quando o sistema laser se encontra em es-tado preparado para operar.
+está acesa durante cada marcação.
+L2Luz de sinal-amarela-pisca, quando ocorreu um erro.
+L3Luz de sinal-vermelha-está acesa, quando o interruptor de chave está conectado.
+Ao mesmo tempo se acende a luz vermelha na cabeça demarcação.
+30 08/06 - Rev. AC
+
+Capítulo 4Operação do sistema laser
+4.4 Modos de operação do sistema laser
+No quadro de controle manual e no software Smartdo sistema laser. Existem os seguintes modos: Graph é exibido o modo de operação atual
+Modo de operaçãoDescrição
+IniciarCada um dos componentes de controle do sistema laser seráiniciado.
+Interruptor de chaveabertoA iniciação está completa. O sistema pode ser iniciado com ointerruptor de chave.
+Arrancar laserDepois de fechar o interruptor de chave será ativado o laser.
+Laser preparadoO sistema laser está preparado para marcar.
+Preparar marcaçãoDepois de ativar a tecla »START« o laser necessita de umtempo de preparação segundo seja o conteúdo do modelo e a
+configuração.
+MarcarO conteúdo de marcação atual será colocado sobre o produto.
+É emitida radiação laser!Assegure-se para que sejam observadas as instruções de
+segurança.
+StandbySe durante um tempo não se executa nenhuma marcação, olaser se coloca automaticamente no modo Standby, para des-
+carregar os componentes do sistema.
+Interbloqueio abertoO circuito de segurança é interroção aberta). O processo de marcação atual será interrompidompido (p. ex. porta de prote-
+de imediato. As marcações somente podem ser executadascom o circuito de segurança fechado.
+Erro Ocorreu um erro. Para poder continuar com a operação, deveacusar recebimento deste erro. Você encontrará informações
+mais detalhadas sobre este erro na página »Mensagens«.
+Erro graveOcorreu um erro grave e desativou o sistema. Não se pode acu-sar recebimento deste erro e não pode continuar com a opera-
+ção. O sistema laser deve ser desconectado. Você encontraráinformações mais detalhadas sobre este erro na página »Men-
+sagens«.
+Modo ServiçoEste modo de operação permite efetuar trabalhos de serviço emanutenção e somente pode ser utilizado por pessoal especi-
+alizado competente.
+08/06 - Rev. AC 31
+
+Operação do sistema laserCapítulo 4
+4.5 Conectar/Desconectar a Conectarunidade de abastecimento
+1.Verifique para que sejam observadas as disposições de segurança.
+2.No caso de existir: conecte o dispositivo de aspiração.
+3.Coloque o interruptor principal (S1) na posição »I«. O interruptor de chave deve se encontrarna posição »0«.
+O LED branco pisca, o sistema laser se encondurar de 1 a 2 minutos. Depois deste processotra no estado de iniciar. O processo pode o sistema está preparado para operar e o
+LED branco se acende.
+4.Conecte o interruptor de chave.O LED vermelho da unidade de abastecimento e o LED vermelho da cabeça de marcação
+estão acesos.O laser está preparado.
+Desconectar
+1.Finalize o processo de marcação.
+2.Gire o interruptor de chave para a posição »0«.O LED vermelho da unidade de abastecimento e o LED vermelho da cabeça de marcação
+se apagam.
+3.Coloque o interruptor principal na posição »0«.O LED branco se apaga.
+4.No caso de existir: desconecte o dispositivo de aspiração.
+32 08/06 - Rev. AC
+
+Capítulo 4Operação do sistema laser
+4.6 Transferência de dados
+4.6.1 Cabo de conexãoPara a conexão dos componentes do sistema laser entre si se utilizam os seguintes cabos de
+conexão:
+Quadro de controle manual
+↔ unidade de abastecimento: Cabo especial
+Computador (software Smart Graph)
+Cabo especial
+Conexão para quadro decontrole manual
+AbastecimentoX8
+Rede X12
+↔ de Ethernetunidade de abastecimento: cabo cruzado
+Computador (softwareSmart Graph)
+cabo cruzado de Ethernet
+Rede X12
+↔ interruptor ↔ Cabo de interconexõesunidade de abastecimento:
+Como opção existe uma segunda interface de rede para conectar simultanea-mente um computador e um quadro de controle manual (é necessária a platina
+IOEB).
+Rede doméstica internaUPLINK
+Cabo de interconexões
+Cabo de interconexões
+Rede X12
+08/06 - Rev. AC 33
+
+Operação do sistema laserCapítulo 4
+4.6.2 Determinação da direção IPNa platina ACC se encontra o interruptor DIP.
+O interruptor DIP oferece as seguintes possibilidades ao determinar a direção IP:
+Interruptor DIP 1 em ON:A direção IP está salva 192.168.1.1 com máscara de sub-rede255.255.0.0 no banco de dados do sistema. Através desta dire-
+ção o computador ou o quadro de controle manual pode secomunicar com o sistema laser.
+Interruptor DIP 1 em OFF:A direção IP pode ser determinada no software Assim pode se configurar uma rede.Smart Graph.
+No sistema de laser fornecido o interruptor DIP 1 está colocado em ON.
+Interruptor DIP
+34 08/06 - Rev. AC
+
+Capítulo 5Manutenção
+5 Manutenção
+5.1 Indicações para a manutenção
+É necessário pouco tempo para a manutenção do sistema laser. Efetue os trabalhos de ma-nutenção com regularidade nos intervalos indicados para a manutenção.
+O sistema laser está construído de forma que você possa efetuar os trabalhos de manutençãocorrespondentes de forma segura e sem problemas.
+AtençãoTodos os trabalhos de manutenção sopessoal operador e de manutenção instruído!mente podem ser efetuados pelo
+Todos os trabalhos de manutenção somente devem ser efetuados com o interruptor de chave e a ficha desligados!
+Documente os trabalhos de manutençãomanutenção deste capítulo! No caso da não observação do plano para regulares nos protocolos para a
+manutenção indicado, a empresa Videojno direito de limitar a garantia!et Technologies Inc. reserva-se
+10/05 - Rev. AA 35
+
+Capítulo 5Manutenção
+5.2 Plano para manutenção
+Os intervalos de manutenção foram estabelecidos10 h diárias para um ambiente com sujeira media. para a aplicação do sistema laser de aprox.
+No caso que a aplicação diária seja de muitas horas a mais ou que o lugar de funcionamentoesteja muito sujo, os intervalos de manutenção devem ser diminuídos. Caso tenha algumas
+perguntas sobre este tema, por favor, dirija-se à empresa Videojet Technologies Inc. ou a umdos seus representantes.
+Os trabalhos de manutenção são descritos nos parágrafos seguintes.
+Intervalo de manutençãoMedida
+MensalmenteVerifique se a óptica de foco na cabeça de rotulação estásuja. No caso de sujeira limpe a óptica de foco.
+Mensalmente ou quando alâmpada de controle seSe existe um dispositivo de aspiração: troque a bolsa dofiltro (ver instruções de uso do fabricante).
+acende
+Cada três meses(mais freqüênciaRealize uma inspeção visual do sistema laser.
+em caso de estar muito sujo)
+SemestralmenteSe existe um dispositivo de aspiração: troque o filtro decarvão ativo (ver instruções de uso do fabricante).
+IndicaçãoNós oferecemos cursos especiais de capacitação para o pessoal operador e de manutenção.
+Caso tenha algumas perguntas sobre este tema, nologies Inc. ou a um de seus representantes.por favor, dirija-se à empresa Videojet Tech-
+36 10/05 - Rev. AA
+
+Capítulo 5Manutenção
+5.3 Limpeza da óptica de foco
+A óptica de foco se encontra na cabeça de marcação. A mesma pode se sujar devido a partí-culas de pó ou a partículas suspensas no ar. Estas impurezas podem danificar a óptica de foco
+e prejudicar a marcação. Por isso, a óptica de foco deve ser limpa com regularidade.
+Em circunstâncias normais somente deve-se limparfavor, também verifique se a parte da óptica de foco que dá para a cabeça de marcação apre- a parte exterior da óptica de foco. Mas por
+senta impurezas e se é necessário limpá-la.
+AdvertênciaA óptica de foco está composta de selênio de zinco revestido. Este mate-rial contém componentes perigosos para a saúde!
+Limpe a óptica de foco somente com luvas de látex! Ao tocar com asmãos, lavar as mãos imediatamente com bastante água e sabão. Evite
+arranhões sobre a superfície da ópticrial! No caso que se rompa a óptica de foco, envolva as partes da óptica dea de foco! Não aspire o pó do mate-
+foco em uma bolsa de plástico fechada e a envie para nossa empresa.
+ImportanteTodos os componentes ópticos são objetos de altíssima precisão e de ela-boração muito delicada!
+As mínimas danificações das superfícinutilidade dos componentes ou uma qualidade de marcação deficiente.ies podem causar (a longo prazo) a
+Retire as impurezas aderidas somente com papel para limpeza da óptica eacetona.
+Observe para que não entrem impurezas na cabeça de marcação!
+Para a limpeza da óptica de foco você necessita:
+papel para limpeza óptica
+acetona
+luvas de proteção
+ImportantePara todos os trabalhos devem ser usadas luvas de proteção!
+10/05 - Rev. AA 37
+
+Capítulo 5Manutenção
+5.3.1 Desmontagem da óptica de foco
+PerigoAntes de começar com os trabalhos o sistema laser deve ser desligadoda tensão.
+1.Gire o interruptor de chave para a posição »0«.Retire a chave para assegurar-se de que o sistema laser não possa ser
+ligado novamente.
+2.Desconecte o interruptor principal.
+3.Retire a ficha da tomada de corrente.
+A óptica de foco se encontra em um porta-lâmpada com fecho de baioneta. O fecho de baio-neta se desbloqueia com um quarto de giro.
+4.Gire com cuidado a óptica de foco um quarto derelógio. giro no sentido contrário dos ponteiros do
+Não toque a superfície da óptica de foco com as luvas de proteção!
+5.Retire a óptica de foco da cabeça de marcação.
+5.3.2 Limpeza da óptica de foco1.Coloque a óptica de foco sobre uma superfície limpa. Dobre uma folha de papel para lim-
+peza da óptica (pelo menos 5 vezes), de maneira que se forme uma base plana.
+2.Sustente o papel para limpeza da óptica entre o dedo polegar e o índice e coloque algumasgotas de acetona no borde do papel.
+3.Passe o papel para limpeza da óptica com cuidadPreste atenção para não tocar a superfície com as luvas de proteção!o e devagar sobre a superfície a ser limpa.
+Pressione muito pouco sobre o papel!
+4.No caso necessário repita o procedimento com uma folha nova de papel para limpeza daóptica.
+ImportanteNão utilize de maneira nenhuma produtos para polir! Com eles a óp-tica de foco é destruída!
+Não utilize de maneira nenhuma papel sujo para a limpeza da óptica!Guarde o papel para limpeza da óptica em um lugar limpo.
+5.Controle se a superfície da parte da óptica de foco que se encontra na cabeça de rotulaçãoapresenta impurezas. Caso necessário limpe-a tal como descrito anteriormente.
+Se a sujeira não pode ser retirada através da limpeza descrita ou se a superfície da óptica defoco está muito arranhada: coloque uma óptica de foco nova.
+38 10/05 - Rev. AA
+
+Capítulo 5Manutenção
+5.3.3 Montagem da óptica de foco1.Coloque a óptica de foco na cabeça de rotulação.
+2.Gire com cuidado a óptica de foco um quarto de giro no sentido dos ponteiros do relógio.Não utilize ferramentas!
+10/05 - Rev. AA 39
+
+Capítulo 5Manutenção
+5.4 Atualize o software Smart Graph
+Para atualizar o software Smart Graph siga os passos seguintes:
+1.inicie o computador.
+2.Saia do softwareSmart Graph (caso o software camente ao iniciar o sistema, salte o passo 2).SmartGraph não seja carregado automati-
+3.Coloque o CD-ROM na unidade para o CD-ROM do seu computador.
+4.Clique em »Iniciar« na barra do menu do sistema operativo Windows.
+5.Clique em »Executar«.
+6.Ingresse CD:\setup.exe e siga as instruções da tela (neste caso o CD ocupa o lugar dasletras da unidade da sua unidade de CD-ROM).
+40 10/05 - Rev. AA
+
+Capítulo 5Manutenção
+5.5 Protocolos de manutenção, reparações e trocas
+Lhe recomendamos anotar todos os trabalhos efetuados de manutenção, reparações e trocasnos seguintes protocolos.
+Nos protocolos de manutenção estão anotados os trabalhos a serem realizados e os interva-los. A execução correta e no período exato dos trabalhos de manutenção pode fazer com que
+se minimize os defeitos no sistema laser.
+Os protocolos adicionais para reparações e trção. Você pode copiar os protocolos e dessaocas podem suportar os trabalhos de manuten- forma registrar todos os trabalhos efetuados no
+sistema laser durante toda sua vida útil.
+10/05 - Rev. AA 41
+
+Capítulo 5Manutenção
+Controle e limpeza da óptica de foco
+Intervalo de manutenção: Mensalmente
+Efetuado em:Efetuado por:
+Data Nome
+42 10/05 - Rev. AA
+
+Capítulo 5Manutenção
+Troca da bolsa do filtro no dispositivo de aspiração
+(se existe)
+Intervalo de manutenção: mensalmente ou quando a lâmpada de controle se acende
+Efetuado em:Efetuado por:
+Data Nome
+10/05 - Rev. AA 43
+
+Capítulo 5Manutenção
+Troca do filtro de carvão ativo no dispositivo de aspiração.
+(se existe)
+Intervalo de manutenção: semestralmente
+Efetuado em:Efetuado por:
+Data Nome
+44 10/05 - Rev. AA
+
+Capítulo 5Manutenção
+inspeção visual
+Intervalo de manutenção: cada três meses
+Efetuado em:Efetuado por:
+Data Nome
+10/05 - Rev. AA 45
+
+Capítulo 5Manutenção
+Atualize o software Smart Graph
+VersãoEfetuado em:Efetuado por:
+Data Nome
+46 10/05 - Rev. AA
+
+Capítulo 5Manutenção
+Protocolo de reparações e trocas
+Modelo de laser:Número de serie:
+Data Peça para reparação ouObservações
+sobressalente(defeitos, etc.)
+efetuado por:
+Data Peça para reparação ouObservações
+sobressalente(defeitos, etc.)
+efetuado por:
+Data Peça para reparação ouObservações
+sobressalente(defeitos, etc.)
+efetuado por:
+Data Peça para reparação ouObservações
+sobressalente(defeitos, etc.)
+efetuado por:
+10/05 - Rev. AA 47
+
+Capítulo 5Manutenção
+48 10/05 - Rev. AA
+
+Capítulo 6Mensagens de defeitos e erros
+6 Mensagens de defeitos e erros
+6.1 Indicações
+Nesta parte das instruções de uso são explicadase as medidas para que sejam solucionadas. Além os possíveis defeitos, suas possíveis causas disso, são descritas todas as mensagens e
+as advertências do sistema laser, assim como meradas podem ser executadas pelo pessoalas medidas para evitar erros. As medidas enu- de serviço e manutenção instruído.
+CuidadoOs trabalhos para solucionar os defeimencionadas, somente podem ser tos que vão mais além das atividadesexecutados por pessoal especializado
+e especialmente capacitado! Tenha em atcações de segurança!enção indispensavelmente as indi-
+02/06 - Rev. AB 49
+
+Mensagens de defeitos e errosCapítulo 6
+6.2 Descrições de defeitos
+1.O funcionamento do laser é interrompido. A luz amarela do status está intermiten-te.
+Possíveis causas:Medidas:
+Ocorreu um erro.Conecte o quadro de controle manual ou ocomputador com o sistema e leia as mensa-
+gens de erros. Logo siga as indicações parareparar o erro.
+2.A tecla START é apertada no quadro de controle manual ou no computador, masnão se vê nenhuma marcação.
+Possíveis causas:Medidas:
+O conjunto de parâmetros selecionadonão se ajusta ao material.Selecione outro conjunto de parâmetros.
+O controle do laser está danificado.Por favor, dirija-se à empresa Videojet Tech-nologies Inc.
+A lente está suja.Limpe a lente.
+O produto não se encontra à distância cor-reta da cabeça de rotulação.Verifique a distância de trabalho.
+O laser piloto está conectado.Selecione no software»Operação Laser«, »Marcar« a opção SmartGraph em
+»Laser piloto desconectado«
+3.A intensidade de traço da marcação se modificou (demasiado forte/ não o sufici-entemente forte).
+Possíveis causas:Medidas:
+A distância de trabalho entre a lente TetaF e o produto foi modificado.Regule a distância de trabalho prescrita. Adistância de trabalho se encontra nas folhas
+de medidas e dados.
+Conjunto de parâmetros incorreto ou ajus-tes de parâmetros incorretos.Abra o arquivo correto do conjunto de parâ-metros e corrija os parâmetros.
+A superfície do produto ou o material doproduto se modificou.Ajuste os parâmetros segundo o produto.Caso tenha algumas perguntas, por favor,
+dirija-se a um dos nossos representantes.
+50 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+6.3 Mensagens de advertência
+W00001: Partes da marcação se encontram fora do campo de marcação.
+Possíveis causas:Partes da marcação se encontram fora do campo de marcação definido pelo usuário.
+Possíveis conseqüências:A marcação está incompleta.
+Medidas:Diminuir a marcação.
+Estender o campo de marcação até o tamanho máximo.
+Selecionar a objetiva com maior distância focal e com isso aumentar o campo de marcação o máximo possível.
+W00002: Marcação incompleta, movimento do produto muito rápido.
+Possíveis causas:Partes da marcação não puderam ser realizadas porque o produto já não se encontra dentro
+do campo de marcação.
+Isto acontece normalmente porque a marcação Também é possível que a distância inicial selecionada seja muito pequena e por isso a mar-não foi realizada o suficientemente rápido.
+cação é iniciada tarde demais. A distância inicial deve ser sempre bem longa para que no mo-mento que o disparador for desengatado, ainda não esteja nenhuma parte da marcação no
+campo de marcação.
+Possíveis conseqüências:A marcação não foi realizada completamente. Vale para cada marcação na qual é exibida esta
+mensagem.
+Medidas:Aumentar respectivamente a distância inicial, em caso normal isto significa que o sistema
+de sensores deve ser modificado.
+Otimizar parâmetros de maneira que a marcação possa ser realizada mais rápida.
+Diminuir a marcação de maneira que possa ser realizada mais rápida.
+Utilizar outras fontes otimizadas segundo a velocidade.
+Se for possível, aumentar o campo de marcação ao selecionar outra objetiva.
+02/06 - Rev. AB 51
+
+Mensagens de defeitos e errosCapítulo 6
+W00003: AOS não envia dados depoPossíveis causas:is do disparador (> 10ms).
+Depois do disparador tardou mais de 10 ms até que os dados de marcação foram enviadospelo AOS.
+Possíveis conseqüências:Marcação defeituosa.
+Medidas:Caso este erro ocorra contra toda previsão em versões autorizadas, o mesmo deve ser comu-
+nicado ao departamento de Desenvolvimento da Alltec.
+W00004: AOS envia os dados com retardo
+Possíveis causas:Dentro de uma marcação atrasou mais de 500 µs até que o AOS enviou dados novos.
+Se o AOS não envia os dados tão rápido comopausas artificiais na marcação. Isso faz com que o laser seja desconectado ainda dentro de são emitidos, então deverão ser introduzidas
+um traçado do vetor e imediatamente, quando os conectado novamente. Para isso serão utdados estiverem outra vez a disposição, sejailizados o Laser-On- e o Laser-Off-Doay.
+Possíveis conseqüências:Na marcação possivelmente são reconhecidas pequenas marcas dentro dos traços do vetor.
+Medidas:Aumentar a distância inicial ou o retardo do disparador. Com isso se consegue que mais dados
+possam ser pré-calculados antes do início real da marcação.
+W00005: Foi perdido um disparador.
+Possíveis causas:A fila de disparadores se congestionou, um disparador novo foi rejeitado.
+Isso significa que os disparadores vêm mais rápido do que podem ser empregados. Está a dis-posição um amortecedor certo para os disparadores: a fila de disparadores. Se esta fila já está
+cheia e se continuam a chegar novos disparadores, é exibida esta mensagem de advertência.
+Possíveis conseqüências:O produto que desprendeu o disparador não é marcado. Isto vale para todo produto no qual a
+mensagem é exibida novamente.
+Medidas:Já que os disparadores chegam mais rápido do que podem ser empregados, deve ser re-
+duzido o tempo de marcação.
+Se o tempo de marcação não pode ser mais reduzido, o fluxo de tráfico deve ser diminuído.
+Se houver que excluir a chegada regular de muitosde que os disparadores estão errados. Se uma disparadores deve-se partir do princípio marcação p. ex. dura 50 ms e se está as-
+segurado que somente cada 100 ms tenha um produto novo e com isso um disparador no-vo, o sinal de disparadores está danificado. Neste caso deve ser verificado o bloqueio que
+52 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+normalmente deveria ser de aprox. 90 % do tempo que existe como mínimo entre duas ações de disparadores. Neste exemplo então de 90 ms.
+W00006: Nível de índice selecionado incorreto
+Possíveis causas:Erro interno: Se foi selecionado um nível de índice não iniciado anteriormente. O sistema con-
+tinua utilizando o índice selecionado anteriormente.
+Possíveis conseqüências:Os parâmetros não são utilizados na marcação tal como foram regulados antes.
+Medidas:Caso este erro ocorra contra toda previsão em versões autorizadas, o mesmo deve ser comu-
+nicado ao departamento de Desenvolvimento da Alltec.
+W09008: Partes da marcação se encontram fora do campo de marcação da ca-beça de rotulação.
+Possíveis causas:Partes da marcação se encontram fora da elipse que descreve o campo de marcação máximo
+da cabeça de rotulação.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Diminuir a marcação.
+Selecionar a objetiva com maior distância focal.
+W09016: Erro de comunicação ACC-> FM: comando não permitido
+Possíveis causas:A ACC enviou um comando à cabeça de rotulação que não está permitido no modo atual.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Verificar a conexão de fibra óptica entre a ACC e a cabeça de rotulação.
+02/06 - Rev. AB 53
+
+Mensagens de defeitos e errosCapítulo 6
+W09017: Erro de comunicação ACC-> FM: comando desconhecido
+Possíveis causas:A ACC enviou à cabeça de rotulação um comando desconhecido para ela.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Verificar a conexão de fibra óptica entre a ACC e a cabeça de rotulação.
+W09018: Erro de comunicação ACC-> FM: Erro de protocolo
+Possíveis causas:A ACC não observou o protocolo.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Verificar a conexão de fibra óptica entre a ACC e a cabeça de rotulação.
+W10410: O conjunto de parâmetros do modo atual foi adaptado ao sistema.
+Possíveis causas:O conjunto de parâmetros do modelo atual contém ajustes inadmissíveis para o laser.
+Possivelmente o banco de dados de aplicações provém de outro laser.
+Possíveis conseqüências:As modificações efetuadas automaticamente influem na marcação e serão aceitas ao salvar o
+banco de dados.
+Medidas:Depois de salvar o banco de dados esta mensagem já não é exibida. Eventualmente os ajus-
+tes no conjunto de parâmetros respectivo devem ser corrigidos manualmente.
+W10503: O formato do banco de dados se modificou. Por favor, salve o sistema.
+Possíveis causas:Um banco de dados mais antigo foi carregado por um AOS novo.
+Possíveis conseqüências:Medidas:
+Ao salvar o banco de dados será convertido automaticamente no formato novo. Depois já nãoé exibida esta mensagem de advertência. O banco de dados já não pode ser lido por um AOS
+mais antigo.
+54 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+W10504: Nem todos os modelos utilizados por último foram salvos.
+Possíveis causas:Foram adicionados modelos novos no banco de dados e foram selecionados para marcar. De-
+pois se iniciou sem salvar antes o banco de dados modificado.
+Possíveis conseqüências:Se o último modelo selecionado não existe no banco de dados, automaticamente será seleci-
+onado para marcar o primeiro modelo do banco de dados.
+Medidas:Depois de criar ou importar modelos novos salvar no banco de dados.
+W10505: O último modelo selecionado não foi salvo.
+Possíveis causas:Foi adicionado um modelo novo no banco de dados e foi selecionado para marcar. Depois se
+iniciou sem salvar antes o banco de dados modificado.
+Possíveis conseqüências:O último modelo selecionado não existe no banco de dados. Automaticamente será selecio-
+nado para marcar o primeiro modelo do banco de dados.
+Medidas:Depois de criar ou importar um modelo novo salvar no banco de dados.
+W10506: Valor inválido da duração absoluta de funcionamento em SRAM.
+Possíveis causas:Está esgotada a bateria que abastece a SRAM.
+Possíveis conseqüências:O valor da duração absoluta de funcionamento corresponde com o valor no último início do
+sistema.
+Medidas:Verificar bateria e se necessário cambiá-la.
+W10517: Segundo o banco de dados do sicabeça de marcação.stema não está conectada nenhuma
+Possíveis causas:No banco de dados do sistema se encontra o registro 'MARKING_HEAD_ATTACHED=0'. Por
+isso não é utilizada a cabeça de marcação.
+Possíveis conseqüências:Não é possível marca.
+Medidas:Caso seja necessário marcar, deve-se conectar uma cabeça de marcação e de modificar o re-
+gistro no banco de dados do sistema para 'MARKING_HEAD_ATTACHED=1'.
+02/06 - Rev. AB 55
+
+Mensagens de defeitos e errosCapítulo 6
+W10552: AllprintBasic - MsgBox:\n\r <Nome>
+Possíveis causas:Esta é somente uma mensagem regular; não é um erro. A cadeia de comandos do AllprintBa-
+sic provocou esta emissão.
+Possíveis conseqüências:Nenhuma.
+Medidas:Nenhuma.
+W10555: O comando do AllprintBasic "Warning" foi executado .
+Possíveis causas:Depende do programa AllprintBasic.
+Possíveis conseqüências:Depende do programa AllprintBasic.
+Medidas:Depende do programa AllprintBasic.
+W10812: Telegrama inválido do Smart SP 0x%X
+Possíveis causas:Erro interno de comunicação.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Caso este erro ocorra contra toda previsão em versões autorizadas, o mesmo deve ser comu-
+nicado ao departamento de Desenvolvimento da Alltec.
+W10904: A interface do cliente (CI) não é abastecida com eletricidade (24V) pelocliente.
+Possíveis causas:O abastecimento de tensão da interface do cliente não é fornecido ou está desconectado.
+Possíveis conseqüências:Os sinais de saída da interface do cliente são inválidas.
+Os sinais de entrada são ignorados na interface do cliente.
+Medidas:Conectar borne bus KL9110 no Pin 2 ou Pin 6 com 24V externo e Pin3 ou Pin7 com GND
+externo.
+56 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+W10905: No CANBus foi registrado um incime>).dente ainda não implementado (<No-
+Possíveis causas:Segundo o incidente se utilizou uma função que somente haverá de ser implementada no fu-
+turo (p. ex. borne CI: reservador).
+Possíveis conseqüências:Nenhuma.
+Medidas:Não gerar novamente incidente.
+W10908: Existe um STOP externo da CI.
+Possíveis causas:Na entrada STOP está continuamente 0 V, de forma que não pode ser avaliada a entrada
+Start.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Conectar entrada STOP com 24 V.
+W55000: Interface do cliente (CI) danificada: A dismodificada.posição dos bornes bus foi
+Possíveis causas:A configuração do hardware da CI foi modificada. (Erro Beckhoff)
+Possíveis conseqüências:As entradas e saídas da interface do cliente não trabalham de forma apropriada.
+Medidas:Verificar bornes bus da interface do cliente.
+W55001: Interface do cliente (CI) danificada: Um borne bus não é compatível.
+Possíveis causas:Se utilizou um borne bus que não é suportado. (Erro Beckhoff)
+Possíveis conseqüências:As entradas e saídas da interface do cliente não trabalham de forma apropriada.
+Medidas:Verificar bornes bus da interface do cliente.
+02/06 - Rev. AB 57
+
+Mensagens de defeitos e errosCapítulo 6
+W55002: Interface do cliente (CI) danificada: Erro EEPROM
+Possíveis causas:Ao assegurar a configuração em EEPROM ocorreu um erro. (Erro Beckhoff)
+Possíveis conseqüências:As entradas e saídas da interface do cliente no trabalham de forma apropriada.
+Medidas:Verificar bornes bus da interface do cliente.
+W55003: Interface do cliente (CI) danificada: Erro bus.de conexão entre os bornes
+Possíveis causas:Ocorreu um erro de comunicação entre os bornes bus Beckhoff. (ERRO terminal) (Erro Be-
+ckhoff)
+Possíveis conseqüências:As entradas e saídas da interface do cliente não trabalham de forma apropriada.
+Medidas:Verificar bornes bus da interface do cliente.
+W55004: Interface do cliente (CI): Erro desconhecido (XX,XX)
+Possíveis causas:O acoplador bus da interface do cliente (CI) enviou um erro não documentado.
+Possíveis conseqüências:As entradas e saídas da interface do cliente não trabalham de forma apropriada.
+Medidas:Verificar bornes bus da interface do cliente.
+W58100: Interface do cliente (CI): CANBus - limite de advertência ultrapassado
+Possíveis causas:
+O acoplador bus da interface do cliente recebeu coro. nsecutivamente demasiados frames de er-
+Possíveis conseqüências:As entradas e saídas da interface do cliente não trabalham de forma apropriada.
+Medidas:Verificar bornes bus da interface do cliente.
+Verificar o cabeamento do CAN-Bus.
+58 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+W58101: Interface do cliente (CI): CAN-Bus OFF
+Possíveis causas:O CAN-Bus não está conectado de forma apropriada ao acoplador bus da interface do cliente.
+Possíveis conseqüências:As entradas e saídas da interface do cliente não trabalham de forma apropriada.
+Medidas:Verificar o cabeamento do CAN-Bus.
+W58102: Interface do cliente (CI): CANBus- amortecedor de envio ultrapassado
+Possíveis causas:O CAN-Bus não está conectado de forma apropriada ao acoplador bus da interface do cliente.
+Possíveis conseqüências:As entradas e saídas da interface do cliente não trabalham de forma apropriada.
+Medidas:Verificar o cabeamento do CAN-Bus.
+W58103: Interface do cliente (CI): CANBus-sado amortecedor de recepção ultrapas-
+Possíveis causas:Erro interno do acoplador bus.
+Possíveis conseqüências:As entradas e saídas da interface do cliente não trabalham de forma apropriada.
+Medidas:Trocar acoplador bus.
+W58104: Interface do cliente (CI): CANBus largura PDO incorreta
+Possíveis causas:Erro interno de comunicação.
+Possíveis conseqüências:As entradas e saídas da interface do cliente não trabalham de forma apropriada.
+Medidas:Caso este erro ocorra contra toda previsão em versões autorizadas, o mesmo deve ser comu-
+nicado o departamento de Desenvolvimento da Alltec.
+02/06 - Rev. AB 59
+
+Mensagens de defeitos e errosCapítulo 6
+W58105: Interface do cliente (CI): CANBus- Sync atrasado ou cancelado.
+Possíveis causas:O CAN-Bus não está conectado de forma apropriada ao acoplador bus da interface do cliente.
+Possíveis conseqüências:As entradas e saídas da interface do cliente não trabalham de forma apropriada.
+Medidas:Verificar o cabeamento do CAN-Bus.
+W58106: Interface do cliente (CI): CANBus- Guarding retrasado ou cancelado.
+Possíveis causas:O CAN-Bus não está conectado de forma apropriada ao acoplador bus da interface do cliente.
+Possíveis conseqüências:As entradas e saídas da interface do cliente não trabalham de forma apropriada.
+Medidas:Verificar o cabeamento do CAN-Bus.
+60 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+6.4 Mensagens de erros
+E00100: Erro crítico SP
+Possíveis causas:Erro interno grave: Foi ativado o Interrupt não iniciado ou algo similar.
+Possíveis conseqüências:O sistema é detido e deve ser desconectado.
+Medidas:Caso este erro ocorra contra toda previsão em versões autorizadas, o mesmo deve ser comu-
+nicado ao departamento de Desenvolvimento da Alltec.
+E00101: Erro na memória de pilha SP
+Possíveis causas:Erro interno grave: Congestionamento na memória da pilha.
+Possíveis conseqüências:O sistema é detido e deve ser desconectado.
+Medidas:Caso este erro ocorra contra toda previsão em versões autorizadas, o mesmo deve ser co-
+municado ao departamento de Desenvolvimento da Alltec.
+E00102: SP recebeu um comando desconhecido do AOS
+Possíveis causas:Erro interno na comunicação na ACC. Na maioria dos casos este Erro indica um conflito de
+versão.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Verificar as versões, se for necessário utilizar MMC nova.
+E00103: Erro de tempos SP
+Possíveis causas:Erro interno grave: O tempo interno não pôde ser cumprido.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas: Caso este erro ocorra contra toda previsão em versões autorizadas, o mesmo deve ser co-
+municado ao departamento de Desenvolvimento da Alltec.
+02/06 - Rev. AB 61
+
+Mensagens de defeitos e errosCapítulo 6
+E00104: AOS envia repetidamente os dados com retardo
+Possíveis causas:Dentro de uma marcação mais de 20 vezes demorou mais de 500 µs até que o AOS enviou
+dados novos. O funcionamento do laser é interrompido.
+Ver também mensagem de advertência W00004.
+Possíveis conseqüências:A marcação não pode ser executada.
+Medidas:Trocar os parâmetros de forma que a marcação seja executada mais lentamente.
+E00105: Marcação interrompida, movimento do produto demasiado rápido.
+Possíveis causas:A marcação foi interrompida porque mais de 50 vetores já não puderam ser emitidos, uma vez
+que o produto já havia abandonado o campo de marcação.
+Isso se deve normalmente ao caso de que a marcação não foi executada o suficientementerápido. Também é possível que a distância inicial selecionada seja demasiada pequena e por
+isso a marcação é iniciada muito tarde. A distâncneira que no momento em que é desengatado o ia inicial sempre deve ser bem larga de ma-disparador, ainda não se encontre nenhuma
+parte da marcação no campo de marcação.
+Ver também W00002,Página51.
+Possíveis conseqüências:A marcação não foi executada completamente. O sistema será detido.
+Medidas:Aumentar respectivamente a distância inicial, no caso normal isto significa que o sistema
+de sensores deve ser modificado.
+Otimizar parâmetros de maneira que a marcação possa ser realizada mais rápida.
+Diminuir a marcação de maneira que possa ser realizada mais rápida.
+Utilizar outras fontes otimizadas segundo a velocidade.
+Se for possível aumentar o campo de marcação selecionando outra objetiva.
+62 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+E00200: Laser não preparado.
+Possíveis causas:O cabo para abastecimento de tensão do laser está danificado.
+O relê para o abastecimento de tensão do laser no se acendeu.
+O cabo de conexão entre o laser e ACC está danificado.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Verificar o LED Laser-Ready no laser, se este não se acende depois de conectar o laser, o
+mesmo não é abastecido com tensão, neste caso o ficado. No caso da lâmpada se acender, existecabo está danificado ou o relê está dani- supostamente uma falha no cabo de conexão
+entre a ACC e o laser.
+E00201: Abastecimento de laser: Excesso ou baixa de tensão
+Possíveis causas:Fornecimento de energia defeituoso ou tensão regulada incorretamente
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Verificar a tensão, caso necessário regular corretamente (30V) ou trocar o fornecimento de
+energia.
+E00202: Excesso de temperatura do laser
+Possíveis causas:Refrigeração insuficiente
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Verificar a refrigeração
+E09000: Cabeça de rotulação: Temperatura do grupo FM demasiado alta
+Possíveis causas:A temperatura da platina FM na cabeça de marcação superou o valor máximo prescrito.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Proporcionar uma melhor refrigeração da cabeça de marcação, para isso, limpar eventu-
+almente as aletas de refrigeração.
+Se for possível aumentar a distância entre as marcações.
+02/06 - Rev. AB 63
+
+Mensagens de defeitos e errosCapítulo 6
+E09001: Cabeça de rotulação: Tensão de abastecimento demasiado baixa
+Possíveis causas:A tensão de abastecimento da cabeça de rotulação é demasiado baixa (<16V).
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Verificar a tensão de abastecimento da cabeça de rotulação no fornecimento de energia da
+unidade de controle e na ficha da cabeça de marcação.
+E09002: Cabeça de rotulação: Sobre-posicionamento Scaner X
+Possíveis causas:Devido um erro o espelho X foi colocado em uma posição que se encontra fora do campo má-
+ximo admissível.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Controlar Scaner X.
+Controlar cabeamento na cabeça de rotulação.
+E09003: Cabeça de rotulação: Sobre-posicionamento Scaner Y
+Possíveis causas:Devido a um erro o espelho Y foi colocado em uma posição que se encontra fora do campo
+máximo admissível.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Controlar Scaner Y.
+Controlar cabeamento na cabeça de marcação.
+E09004: Cabeça de rotulação: Excesso de corrente Scaner X
+Possíveis causas:A FM determinou que a admissão de corrente do Scaner X é demasiado alta.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Controlar Scaner X.
+Controlar cabeamento na cabeça de rotulação.
+64 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+E09005: Cabeça de rotulação: Excesso de corrente Scaner Y
+Possíveis causas:A FM determinou que a admissão de corrente do Scaner Y é demasiada alta.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Controlar Scaner Y.
+Controlar cabeamento na cabeça de rotulação.
+E09006: Cabeça de rotulação: Scaner X não conectado
+Possíveis causas:O Scaner X não está conectado corretamente com a FM. Possivelmente se soltou uma ficha
+ou um cabo está danificado.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Verificar a conexão entre o Scaner X e a platina FM.
+E09007: Cabeça de rotulação: Scaner e não conectado
+Possíveis causas:O Scaner Y não está conectado corretamente com a FM. Possivelmente se soltou uma ficha
+ou um cabo está danificado.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Verificar a conexão entre o Scaner Y e a platina FM.
+E09012: Erro de comunicação ACC-> FM: Omissões na transferência de dados
+Possíveis causas:O Modo Regulação foi interrompido porque não chegaram dados da ACC.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Verificar a conexão de fibra óptica entre a ACC e a cabeça de rotulação.
+02/06 - Rev. AB 65
+
+Mensagens de defeitos e errosCapítulo 6
+E09021: Erro interno: O Modo Regulação da FM não pôde ser colocado.
+Possíveis causas:A FM não pôde ser comutada para o Modo Regulação. Isto indica um erro na comunicação
+através da fibra óptica.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Verificar a conexão de fibra óptica entre a ACC e a cabeça de rotulação.
+E09022: Erro interno: O Modo Configuração da FM não pôde ser colocado.
+Possíveis causas:A FM não pôde ser comutada para o Modo Configuração. Isto indica um erro na comunicação
+através da fibra óptica.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Verificar a conexão de fibra óptica entre a ACC e a cabeça de rotulação.
+E09023: Erro interno: O Modo DownloaddaFM não pôde ser colocado.
+Possíveis causas:A FM não pôde ser comutada para o Modo Download. Isto indica um erro na comunicação
+através da fibra óptica.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Verificar a conexão de fibra óptica entre a ACC e a cabeça de rotulação.
+E09100: Não pode se estabelecer a comunicação com a cabeça de rotulação.
+Possíveis causas:Nenhuma cabeça de rotulação conectada.
+Tensão de abastecimento da cabeça de rotulação com falhas.
+Erro na fibra óptica: não conectada ou danificada.
+Erro na FM.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Verificar a tensão de abastecimento da cabeça de rotulação.
+Verificar a conexão de fibra óptica entre a ACC e a cabeça de rotulação.
+66 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+E09101: Erro interno: O estado de erro da FM não pôde ser reparado.
+Possíveis causas:As bandeiras de erro da FM não puderam ser retiradas. Isto indica um erro na comunicação
+através da fibra óptica.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Verificar a conexão de fibra óptica entre a ACC e a cabeça de rotulação.
+E09102: Está danificada a comunicação com a cabeça de marcação.
+Possíveis causas:Na ACC surgiram erros ao receber os dados da FM.
+Possíveis causas: Erro na fibra óptica, p. ex. muito dobrada.
+Erro na FM.
+Possíveis conseqüências:
+Não é possível marcar.
+Medidas:Verificar a conexão de fibra óptica entre a ACC e a cabeça de rotulação.
+E09103: Erro interno: FM não está no Modo Configuração,ser executado. o comando não pôde
+Possíveis causas:Se tentou executar um comando no Modo Regulação, o qual somente está permitido no modo
+configuração.
+Possíveis conseqüências:Possivelmente a marcação não será realizada corretamente.
+Medidas:Verificar a conexão de fibra óptica entre a ACC e a cabeça de rotulação.
+E09104: Não se recebem dados da cabeça de marcação.
+Possíveis causas:A ACC não recebe por períodos ou constantemente nenhum dado da FM porque
+se cortou a conexão da fibra óptica com a cabeça de marcação.
+se cortou o abastecimento de tensão da cabeça de marcação.
+Possíveis conseqüências:Não é possível marcar.
+02/06 - Rev. AB 67
+
+Mensagens de defeitos e errosCapítulo 6
+Medidas:Verificar a conexão de fibra óptica entre a ACC e a cabeça de rotulação.
+Verificar o abastecimento de tensão da cabeça de rotulação.
+E10001: Não pôde ser lido nenhum dado do banco de dados do sistema.
+Possíveis causas:A conexão com o EEPROM do banco de dados do sistema está danificada.
+Possíveis conseqüências:O sistema não pode funcionar.
+Medidas:Verificar conexão entre a ACC e o painel IO.
+Verificar se EEPROM do painel IO foi colocado corretamente.
+E10002: Foi carregado o backup do banco de dados do sistema!
+Possíveis causas:Alguns ou vários registros não existem no banco de dados do sistema. Por isso foi carregado
+o backup do banco de dados do sistema.
+Possíveis conseqüências:O backup é gerado em cada processo de marcação. Eventualmente o último processo de mar-
+cação foi interrompido, de forma que o arquivo de backup não contém o estado mais atual.
+Medidas:Verificar os registros no banco de dados do sistema e eventualmente corrigi-los.
+E10003: Não é possível escrever ou não é possível ebanco de dados do sistema.screver tudo no backup do
+Possíveis causas:Não existe espaço na MultiMediaCard.
+Possíveis conseqüências:No caso de erro do banco de dados do sistema não é possível recorrer novamente ao arquivo
+do backup. Neste caso o sistema já não poderia funcionar.
+Medidas:Verificar espaço na MultiMediaCard, eventualmente reduzir o banco de dados de aplicações.
+São necessários 1024 bytes.
+68 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+E10004: Não é possível escrever no banco de dados do sistema.
+Possíveis causas:A conexão com o EEPROM do banco de dados do sistema está danificada.
+Possíveis conseqüências:Os valores novos não podem ser aceitos. Eventualmente tão pouco funcionará um reinício do
+sistema. Neste caso o sistema já não poderia funcionar (s. erro 0001)
+Medidas:Verificar o estado do banco de dados do sistema e salvar todos os dados.
+E10005: O backup do banco de dados do sistema não pode ser lido.
+Possíveis causas:Ao iniciar o sistema anteriormente o backup não foi gerado ou foi apagado.
+Possíveis conseqüências:O sistema não pode funcionar.
+Medidas:Verificar o conteúdo do banco de dados do sistema e o conteúdo e espaço na memória da Mul-
+tiMediaCard.
+E10101: Conflito de versões (comando não executado)
+Possíveis causas:Através da interface da Ethernet foi enviado um comando desconhecido para a ACC.
+Possíveis conseqüências:A comunicação de Ethernet pode ser danificada de forma duradoura, esta mensagem aparece
+repetidas vezes.
+Medidas:Não enviar mais o comando desconhecido. No caso que a comunicação de Ethernet haja sido
+danificada de forma duradoura, cortar a conexão e voltar a estabelecê-la.
+E10102: O comando não é conhecido: <Nome>
+Possíveis causas:Através da interface Ethernet foi enviado um comando desconhecido para a ACC, porém o co-
+mando desconhecido é exibido.
+E10103: A chave não foi encontrada no banco de dados.
+Possíveis causas:Através da Ethernet foi solicitado um registro do banco de dados que não existe.
+02/06 - Rev. AB 69
+
+Mensagens de defeitos e errosCapítulo 6
+E10104: Erro ao escrever no banco de dados
+Possíveis causas:Erro de transferência ao transferir um objeto do banco de dados via Ethernet ou conflito de
+versões entre o objeto do banco de dados e AOS.
+Possíveis conseqüências:Um objeto do banco de dados transferido via Ethernet não pôde ser ingressado no banco de
+dados.
+Medidas:Repetir a transferência; verificar a versão.
+E10105: Erro ao ler do banco de dados
+Possíveis causas:Para elaborar um comando recebido através da Ethernet falta um registro no banco de dados.
+E10106: O modelo não contém nenhum dado
+Possíveis causas:Foram solicitadas via Ethernet informações sobre um modelo que não contém dados.
+Medidas:Verificar o modelo e salvar novamente.
+E10107: O modelo não existe
+Possíveis causas:Foram solicitadas via Ethernet informações sobre um modelo que não foi encontrado no banco
+de dados de aplicações.
+Medidas:Verificar o modelo e salvar novamente.
+E10108: Não existem variáveis no modelo
+Possíveis causas:via Ethernet foram solicitadas variáveis que não existem.
+E10109: Formato inválido
+Possíveis causas:Através da Ethernet foi enviado um comando cujos parâmetros faltam ou estão formatados in-
+corretamente.
+Possíveis conseqüências:A comunicação de Ethernet pode ser danificada de forma duradoura, esta mensagem aparece
+repetidas vezes.
+70 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+E10111: Ao salvar correram erros
+Possíveis causas:A MultiMediaCard está cheia, não está colocada corretamente ou está danificada.
+Possíveis conseqüências:Não podem ser salvos os dados.
+Medidas:Verificar a MultiMediaCard.
+E10113: Este registro do banco de dados pendem ainda XX registrosnão pode ser apagado, já que dele de-
+Medidas:Primeiro apagar os registros dependentes.
+E10116: Erro ao ler a pasta <Nome>.
+Possíveis causas:A MultiMediaCarddaACC não pôde ser lida.
+Medidas:Controlar a placa multimídia.
+E10300: Os dados da iniciação não puderde dados.am ser lidos completamente do banco
+Possíveis causas:O banco de dados do sistema ou o banco de dados do cliente está danificado.
+A MultiMediaCard está cheia ou danificada.
+Possíveis conseqüências:O sistema não pode funcionar.
+Medidas:Verificar conexão entre a ACC e o painel IO.
+Verificar MultiMediaCard.
+02/06 - Rev. AB 71
+
+Mensagens de defeitos e errosCapítulo 6
+E10301: O conjunto de parâmetros <Nome> contém serão adaptados automaticamente antes da marcação.ajustes inadmissíveis, que
+Possíveis causas:Possivelmente o banco de dados de aplicações provém de outro laser.
+Possíveis conseqüências:Antes da marcação o conjunto de parâmetros será adaptado automaticamente ao sistema. A
+qualidade da marcação é influenciada.
+Medidas:Para evitar uma adaptação automática dos ajustes, o conjunto de parâmetros pode ser corri-
+gido manualmente. Depois da correção do conjunto de parâmetros e de salvar o banco de da-dos este erro já não aparece.
+E10401: Modelo errado: <Nome>
+Possíveis causas:O modelo selecionado para marcar contém erros ou não existe.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Controlar o modelo e os parâmetros, o registro do produto e eventuais logotipos utilizados.
+Eventualmente selecionar o modelo novamente.
+E10402: A cabeça de marcação não pôde ser selecionada.
+Possíveis causas:No caso de sistema com várias cabeças: O comutador de raios reage erradamente.
+Medidas:Verifique o comutador de raios.
+E10403: Entrada incorreta do disparador, não existe CI-FAST-IN.
+Possíveis causas:No registro de produto foram selecionados Disparador 2 ou Disparador 3. Para estas entradas
+de disparadores é necessária CI-FAST-IN que não existe no sistema.
+Possíveis conseqüências:Nenhuma marcação pode ser desengatada.
+Medidas:selecionar outra entrada para o disparador ou instalar CI-FAST-IN.
+72 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+E10404: Prompt-Once: O valor não pode ser marcado.
+Possíveis causas:No modelo se colocou a característica Prompt-Once e se tentou marcar uma mensagem com
+o mesmo valor duas vezes consecutivas.
+Possíveis conseqüências:A marcação não será executada.
+Medidas:Modifique o conteúdo da mensagem ou retire a característica Prompt-Once.
+E10406: A entrada selecionada para o disparador não existe.
+Possíveis causas:No registro do produto foram selecionados o Disparador 2 ou Disparador 3.
+Para o Disparador 2 é necessária a entrada CI-CAN-IO que não existe no sistema.
+O Disparador 3 não existe neste sistema.
+Possíveis conseqüências:Nenhuma marcação pode ser desengatada.
+Medidas:Selecionar outra entrada para o disparador ou instalar CI-CAN-IO.
+E10407: O obturador de raio não abre.
+Possíveis causas:O obturador de raio está congestionado ou não é reconhecido.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Verificar o obturador de raio.
+E10408: O obturador de raio não fecha.
+Possíveis causas:O obturador de raio está congestionado ou não é reconhecido.
+Possíveis conseqüências:Depois de uma marcação a próxima pode ser desengatada sem acusar recebimento do erro.
+Medidas:Verificar o obturador de raio.
+02/06 - Rev. AB 73
+
+Mensagens de defeitos e errosCapítulo 6
+E10409: Erro do sistema ao preparar a marcação.
+Possíveis causas:Erro interno ao preparar a marcação.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Desengatar novamente marcação depois de acusar recebimento do erro.
+E10500: Não foi possível carregar nenhum banco de dados.
+Possíveis causas:O banco de dados de aplicações e seu backup não puderam ser carregados.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Deve se escrever um novo arquivo do banco de dados na MMC.
+E10501: O banco de dados do backup foi carregado.
+Possíveis causas:O banco de dados de aplicações está danificado.
+Possíveis conseqüências:As últimas modificações se perderam.
+Medidas:Por favor, salve o banco de dados.
+E10502: Mensagem do sistema: XX
+Possíveis causas:Erro ao determinar o modelo atual ou suas variáveis. Provavelmente o banco de dados não
+contém nenhum modelo.
+Medidas:Se o banco de dados não contém nenhum modelo, criar um novo e adicionar, salvar o banco
+de dados.
+74 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+E10507: Erro ao ler o arquivo da objetiva.
+Possíveis causas:O arquivo da objetiva não existe no índice comps da MultiMediaCard.
+A MultiMediaCard não está colocada corretamente.
+Possíveis conseqüências:O sistema não pode funcionar.
+Medidas:Verificar MultiMediaCard, se for necessário repassar o software.
+E10508: Erro ao ler o arquivo do laser.
+Possíveis causas:O arquivo do laser não existe no índice comps da MultiMediaCard.
+A MultiMediaCard não está colocada corretamente.
+Possíveis conseqüências:O sistema não pode funcionar.
+Medidas:Verificar MultiMediaCard, se necessário repassar o software.
+E10509: Erro ao ler o arquivo da cabeça.
+Possíveis causas:O arquivo da cabeça não existe no índice comps da MultiMediaCard.
+A MultiMediaCard não está colocada corretamente.
+Possíveis conseqüências:O sistema não pode funcionar.
+Medidas:Verificar MultiMediaCard, se for necessário repassar o software.
+E10510: Não existe nenhum arquivo de imagem FPGA!
+Possíveis causas:Na MultiMediaCard falta o arquivo fpgaimgX.h
+Possíveis conseqüências:Sem um arquivo de imagem FPGA o sistema não pode trabalhar de forma apropriada.
+Medidas:O conteúdo da MultiMediaCard deve ser verificado.
+02/06 - Rev. AB 75
+
+Mensagens de defeitos e errosCapítulo 6
+E10511: Não existe o programa SP!
+Possíveis causas:Na MultiMediaCard falta o arquivo smartspX.sp
+Possíveis conseqüências:Sem um programa SP o sistema não pode trabalhar.
+Medidas:O conteúdo da MultiMediaCard deve ser verificado.
+E10512: AllprintBasic: Erro de configuração do protocolo
+Possíveis causas:A cadeia de comandos do AllprintBasic no banco de dados AOS ("Config","Input") apresenta
+um erro de configuração para o protocolo serial.
+Possíveis conseqüências:O controle do cliente através do AllprintBasic (porto serial) não funcionará.
+Medidas:Configurar novamente as configurações para o protocolo no computador com o programa All-
+printBasic e aplicar novamente com o SmartGrpois a ACC deve ser iniciada novamente. aph no banco de dados (Importar) do AOS. De-
+E10513: AllprintBasic: Erro de configuração da interface serial.
+Possíveis causas:A cadeia de comandos do AllprintBasic no banco de dados AOS ("Config","Input") apresenta
+um erro de configuração para a interface serial.
+Possíveis conseqüências:O controle do cliente através do AllprintBasic (porto serial) não funcionará.
+Medidas:Configurar novamente as configurações para a interface no computador com o programa All-
+printBasic e aplicar novamente com o SmartGrpois a ACC deve ser iniciada novamente. aph no banco de dados (Importar) do AOS. De-
+E10514: Erro de descarga FM (<Nome>).
+Possíveis causas:Deve ser transportado um programa da MMC para FM. Nesta descarga ocorreu um erro.
+Possíveis conseqüências:Fatal: já não é possível marcar porque neste caso o hardware FM não possui nenhum progra-
+ma para o controle dos espelhos.
+Medidas:Verificar conexão de fibra óptica. Verificar FM. Verificar ACC. Iniciar novamente.
+76 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+E10515: Descarga FM: Falta o <nome> do arquivo.
+Possíveis causas:O arquivo deve estar na MultiMediaCard. O nome do arquivo é criado dos dados EEPROM
+da FM. Se o nome do arquivo for absurdo, não está programado. Eventualmente o nome do arquivo não pode ser transferido para o AOSo EEPROM está programado incorretamente ou
+devido a problemas de fibra óptica.
+Possíveis conseqüências:O sistema não pode ser posto em funcionamento.
+Medidas:Copiar o arquivo desejado para a MultiMediaCard. Controlar FM-EEPROM. Verificar fibra óp-
+tica.
+E10516: A cabeça de marcação não está conectada.
+Possíveis causas:A conexão de fibra óptica para a cabeça de marcação está danificada.
+Possíveis conseqüências:Erro fatal: Não é possível marcar. Por isso a FM não carregou nenhum software de marcação.
+Medidas:Verificar ficha da fibra óptica da ACC para FM.
+E10518: O conjunto de parâmetros <nome> não combina com o tipo de laser. Porfavor, retire este registro do banco de dados.
+Possíveis causas:Foi copiado um banco de dados diretamente para a MMC que não é adequado para o tipo de
+laser.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Copiar um banco de dados adequado na MMC ou criar offline um banco de dados novo com
+o SmartGraph que seja adequado para o laser. Adicionar aí um conjunto de parâmetros domesmo nome e o transferir para o laser.
+Desta forma todos os conjuntos de parâmetros que se encontram no banco de dados devemser substituídos.
+E10550: AllprintBasic: Erro de sintaxe (línea: XX, coluna: XX
+Possíveis causas:A cadeia de comandos do AllprintBasic no banco de dados AOS ("Config","Input") apresenta
+um erro de sintaxe.
+Possíveis conseqüências:O controle do cliente através do AllprintBasic (porto serial) não funcionará.
+02/06 - Rev. AB 77
+
+Mensagens de defeitos e errosCapítulo 6
+Medidas:Provar a cadeia de comandos no computador com o programa AllprintBasic, corrigir e aplicar
+de novo com o SmartGraph banco de dados (Importar) do AOS. Depois a ACC deve ser inici-ada novamente.
+E10551: A variável requerida não se encontra no modelo.
+Possíveis causas:Na cadeia de comandos AllprintBasic deve ser modificada uma variável que não se encontra
+no modelo.
+Possíveis conseqüências:O controle do cliente através do AllprintBasic (porto serial) não funcionará.
+Medidas:Verificar o modelo correspondente ou a cadeia de comandos do AllprintBasic e em caso ne-
+cessário modifica-la. Ao modificar a cadeia de comandos a ACC deve ser iniciada novamente.
+E10553: Na cadeia de comandos do AllprintBasic existe um comando ilegal.
+Possíveis causas:As funções antigas, que ainda estão documentadas e funcionam no programa Allprint Basic
+do computador, já não podem ser realizadas no de conceito. (p. ex. SetExtent) AOS novo (laser YAG) devido as modificações
+Possíveis conseqüências:O controle do cliente através do AllprintBasic (porto serial) não funcionará.
+Medidas:Verificar a cadeia de comandos do AllprintBasic e em caso necessário modificá-la. Ao modifi-
+car a cadeia de comandos a ACC deve ser iniciada novamente.
+E10554: O comando do AllprintBasic "Erro" foi executado.
+Possíveis causas:Depende do programa AllprintBasic.
+Possíveis conseqüências:Depende do programa AllprintBasic.
+Medidas:Depende do programa AllprintBasic.
+E10601: Não existe nenhuma lista de modelos.
+Possíveis causas:A seleção externa do modelo falhou porque não existe nenhuma lista de modelos.
+Medidas:Criar lista de modelos com o Smart Graph ou selecionar modelo com o Smart Graph.
+78 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+E10602: Ao número de modelo selecionado XX não pode ser assinalado nenhummodelo.
+Possíveis causas:A seleção externa do modelo falhou porque ao número do modelo selecionado não pode ser
+assinalado nenhum modelo da lista de modelos.
+Medidas:Controlar lista de modelos.
+E10701: Muito pouca memória para gerar um objeto do banco de dados!
+Possíveis causas:Erro interno ou banco de dados demasiado grande.
+Medidas:Se a mensagem já não aparece depois de iniciar novamente, provavelmente existe um erro
+interno. Isso deve ser comunicado ao departamento de Desenvolvimento da Alltec.
+Se ao reiniciar não ajudar, devem ser apagadosdados. os elementos desnecessários do banco de
+E10702: Erro de formato ao gerar um objeto do banco de dados!
+Possíveis causas:Conflito de versão entre objeto do banco de dados e AOS.
+E10800: DSP não envia telegramas
+Possíveis causas:O DSP não foi iniciado corretamente ou a conexão do DSP está danificada.
+Possíveis conseqüências:O sistema não pode funcionar.
+Medidas:Inicie o sistema novamente.
+E10811: O amortecedor em DSP se congestionou.
+Possíveis causas:Erro interno de comunicação.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Caso este erro ocorra contra toda previsão em versões autorizadas, o mesmo deve ser comu-
+nicado ao departamento de Desenvolvimento da Alltec.
+02/06 - Rev. AB 79
+
+Mensagens de defeitos e errosCapítulo 6
+E10900: Erro geral do CAN Bus (XX)
+Possíveis causas:Erro geral do CAN Bus (XX) p. ex. BusOff, ErroPassiv, etc.
+Possíveis conseqüências:O sistema não pode ser posto em funcionamento.
+Medidas:Verificar o cabeamento do CAN Bus.
+E10901: Um entroncamento CAN (<nome>) executou um reinício não permitido.
+Possíveis causas:O entroncamento ingressado do CAN Bus está danificado.
+Cabeamento danificado.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Verificar o entroncamento ingressado do CAN Bus.
+Verificar o cabeamento do CAN Bus.
+E10902: Perdeu-se a conexão com um entroncamento CAN (<nome>).
+Possíveis causas:O entroncamento ingressado do CAN Bus está danificado.
+Cabeamento danificado.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Verificar o entroncamento ingressado do CAN Bus.
+Verificar o cabeamento do CAN Bus.
+E10903: Um entroncamento CAN (<nome>) não pôde ser iniciado.
+Possíveis causas:O entroncamento ingressado do CAN Bus está danificado.
+Cabeamento danificado.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Verificar o entroncamento ingressado do CAN Bus.
+Verificar o cabeamento do CAN Bus.
+80 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+E10906: A interface do cliente (CI) apresenta um Erro na aspiração externa.
+Possíveis causas:Aspiração externa danificada ou borne CI conectado incorretamente.
+Possíveis conseqüências:Aspiração externa não funciona.
+Medidas:Reparar a aspiração externa ou colocar o borne CI correspondente para 24 V.
+E10907: A interface do cliente (CI) apresenta em erro externo.
+Possíveis causas:Erro externo reconhecido ou borne CI conectado incorretamente.
+Possíveis conseqüências:Segundo o cliente ou significado do borne CI EXT_ERROR.
+Medidas:Solucionar o erro externo ou colocar o borne CI correspondente para 24 V.
+E10909: Um entroncamento CAN (<nome>) executou umpermitida.a troca de estado não
+Possíveis causas:O entroncamento correspondente executou supostamente um reinício.
+Possíveis conseqüências:Todas as funções deste entroncamento já não estão disponíveis.
+Medidas:Iniciar novamente.
+E10913: Falta o arquivo: <nome>.
+Possíveis causas:O arquivo deve existir na MultiMediaCard.
+Possíveis conseqüências:O sistema não pode ser posto em funcionamento.
+Medidas:Copiar o arquivo desejado para a MultiMediaCard.
+E10914: Uma transferência de domínio danificada.para um entroncamento (<nome>) estava
+Possíveis causas:Erro no cabeamento do CAN Bus.
+Possíveis conseqüências:Não é possível marcar.
+02/06 - Rev. AB 81
+
+Mensagens de defeitos e errosCapítulo 6
+Medidas:Verificar o cabeamento do CAN Bus.
+E10915: Um entroncamento CAN (<nome>) já não reage depois de uma descargaou de um reinício do software.
+Possíveis causas:o entroncamento ingressado do CAN Bus está danificado.
+Cabeamento danificado.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Verificar o entroncamento ingressado do CAN Bus.
+Verificar o cabeamento do CAN Bus.
+E10916: Descarga para o entroncamento <nome> errada.
+Possíveis causas:Cabeamento do CAN Bus danificado.
+O entroncamento correspondente está danificado.
+O programa necessário não existe na MultiMediaCard.
+Possíveis conseqüências:O sistema não pode ser posto em funcionamento.
+Medidas:Verificar o cabeamento do CAN Bus.
+Verificar o entroncamento do CAN Bus correspondente, se necessário atualizar MDB do entroncamento do CAN Bus.
+Eventualmente gravar novamente programa que falta na MultiMediaCard.
+E10917: Um entroncamento CAN (<nome>) se registra com um software inapro-priado.
+Possíveis causas:Cabeamento do CAN Bus danificado.
+O entroncamento correspondente está danificado.
+O programa necessário não existe na MultiMediaCard.
+Possíveis conseqüências:O sistema não pode ser posto em funcionamento.
+82 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+Medidas:Verificar o cabeamento do CAN Bus.
+Verificar o entroncamento do CAN Bus correspondente, se necessário atualizar MDB do entroncamento do CAN Bus.
+Eventualmente gravar novamente o programa que falta na MultiMediaCard.
+E10919: Um erro do driver impede que CAN Bus.os disparadores sejam transmitidos pelo
+Possíveis causas:Erro interno:
+Possíveis conseqüências:O sistema não pode ser posto em funcionamento.
+Medidas:Caso este erro ocorra contra toda previsão em versões autorizadas, o mesmo deve ser comu-
+nicado ao departamento de Desenvolvimento da Alltec.
+E10920: Um erro do driver impede que possa ser manejado o LED de emissão.
+Possíveis causas:Erro interno:
+Possíveis conseqüências:O sistema não pode ser posto em funcionamento.
+Medidas:Caso este erro ocorra contra toda previsão em versões autorizadas, o mesmo deve ser comu-
+nicado ao departamento de Desenvolvimento da Alltec.
+E10921: Menos de 2 bornes Bus de entrada CI conectados.
+Possíveis causas:Não suficientes bornes Bus de entrada.
+Possíveis conseqüências:O sistema não pode ser posto em funcionamento.
+Medidas:Equipar o sistema para 2 bornes Bus de entrada.
+E10922: Menos de 2 bornes Bus de saída CI conectados.
+Possíveis causas:Não suficientes bornes Bus de saída.
+Possíveis conseqüências:O sistema não pode ser posto em funcionamento.
+02/06 - Rev. AB 83
+
+Mensagens de defeitos e errosCapítulo 6
+Medidas:Equipar o sistema para 2 bornes Bus de saída.
+E10923: A seleção externa de modelos supõe pelo menos 4 bornes Bus de en-trada CI.
+Possíveis causas:Para poder utilizar a seleção externa de modelos devem existir em total 4 bornes Bus de en-
+trada na interface do cliente.
+Possíveis conseqüências:A seleção externa de modelos não pode ser utilizada.
+Medidas:Adicionar dois bornes Bus de entrada.
+E10926: Falta em registro (<nome>) do banco de dados.
+Possíveis causas:Banco de dados danificado.
+Possíveis conseqüências:Não é possível marcar.
+Medidas:Completar o banco de dados ou trocá-lo.
+E10929: Ocorreu um erro (<nome>) no CAN Bus.
+Possíveis causas:Conexão de CAN Bus danificado.
+Possíveis conseqüências:Os componentes provavelmente não estão configurados de forma completa.
+Medidas:Verificar o cabo do CAN Bus e suas conexões.
+E19201: Este modelo (<nome>) não existe.
+Possíveis causas:O modelo não existe no banco de dados.
+Medidas:Crie ou transfira o modelo correspondente.
+E19202: Modelo errado: <Nome>
+Possíveis causas:O modelo selecionado para marcar está incorreto ou não existe.
+Possíveis conseqüências:Não é possível marcar.
+84 02/06 - Rev. AB
+
+Capítulo 6Mensagens de defeitos e erros
+Medidas:Controlar o modelo e os parâmetros usados, o registro de produto e eventuais logotipos. Even-
+tualmente selecionar o modelo novamente.
+E19203: Falta um conjunto de parâmetros (<nome>).
+Possíveis causas:Falta o conjunto de parâmetros necessário para una modelo.
+Possíveis conseqüências:O modelo respectivo não pode ser marcado.
+Medidas:Assinalar ao modelo um conjunto de parâmetros existente ou adicionar o conjunto de parâme-
+tros que falta no banco de dados.
+E19204: Falta um registro do produto (<nome>).
+Possíveis causas:Falta o registro do produto necessário para um modelo.
+Possíveis conseqüências:O modelo respectivo não pode ser marcado.
+Medidas:Assinalar ao modelo um registro de produto existente ou adicionar o registro de produto que
+falta no banco de dados.
+E19205: Ao menos um nível do índice não existe no conjunto de parâmetros.
+Possíveis causas:O modelo utiliza um nível de índice que não existe no conjunto de parâmetros.
+Medidas:Adicionar os níveis de índice que faltam no conjunto de parâmetros ou assinalar a todos os
+elementos do modelo respectivo somente os níveis de índice existentes.
+E19210: A marcação direta não pôde ser executada.
+Possíveis causas:A conexão entre o computador e a ACC está danificada.
+Possíveis conseqüências:A marcação direta não pôde ser executada ou somente foi executada incompleta.
+Medidas:Verifique a conexão de Ethernet entre o computador e a ACC.
+E19301: A seqüência de modelos não contém nenhum modelo.
+Possíveis causas:As seqüências de modelos ainda não são suportadas.
+02/06 - Rev. AB 85
+
+Mensagens de defeitos e errosCapítulo 6
+E19302: Este modelo (<nome>)da seqüência de modelos não existe.
+Possíveis causas:As seqüências de modelos ainda não são suportadas.
+E19303: As cabeças <nome> dos modelos em uma seqüência de modelos de-vem ser iguais.
+Possíveis causas:As seqüências de modelos ainda não são suportadas.
+E19304: Os registros de produtos dos devem ser iguais.modelos em uma seqüência de modelos
+Possíveis causas:As seqüências de modelos ainda não são suportadas.
+E19305: Falta o <nome> do registro do produto.
+Possíveis causas:As seqüências de modelos ainda não são suportadas.
+E19306: Um modelo da seqüência de modelos está incorreto: <Nome>
+Possíveis causas:As seqüências de modelos ainda não são suportadas.
+E19307: O circuito para a liberação externa do laser foi aberto.
+Possíveis causas:O circuito para a liberação externa do laser não está fechado. Isto pode ter sido originado, por
+exemplo, por um interruptor de parada de emergência aberto.
+Possíveis conseqüências:O sistema continua em estado "Interruptor de chave aberto", mesmo quando o interruptor de
+chave está fechado.
+Medidas:Fechar circuito para liberação externa do laser.
+E19308: A fonte de raio não pôde ser selecionada.
+Possíveis causas:Erro na comunicação CAN.
+86 02/06 - Rev. AB
+
+Capítulo 7Anexo
+7 Anexo
+7.1 Interfaces para o cliente
+X7 X6 X2
+X20 X16
+12345
+X14
+12314253647586
+1234567123841526345
+7.1.1 Interbloqueio
+7.1.2 Entradas e saídas separadas galvanicamenteA entradas e saídas separadas galvanicamente são padrões. As mesmas servem para a emis-
+são de sinais digitais de status e para a recepção de sinais digitais de comando.
+Borne de abastecimento
+BorneSinalDescrição
+X2.1INTERBLOQUEIOEntrada para o circuito do interbloqueio
+X2.2INTERBLOQUEIOEntrada para o circuito do interbloqueio
+Todos os bornes seguintes são abastecidos com tensão por este borne e estão separados gal-vanicamente do abastecimento de tensão interna. Pela parte do cliente a tensão deve ser
+abastecida através de X16.1 e X16.5. É utilizado como padrão o abastecimento de tensão in-terno realizado através de pontes entre X16.1 - X16.2 e X16.5 - X16.6.
+BorneSinalDescrição
+X16.1U_INTERFACECliente 24 V
+X16.212 V/24 VSistema 12 V/24 V
+X16.5GND_INTERFACECliente GND
+X16.6GNDSistema GND
+08/06 - Rev. AC 87
+
+Capítulo 7Anexo
+Saídas digitais
+BorneSinalDescrição
+X20.1SYSTEM_READYSYSTEM_READY é colocado enquantoo sistema completa a iniciação e está
+preparado para operar. Está desativadono Modo Serviço. Os registros efetuados
+através das entradas digitais somenteserão aceitos quando o sinal estiver
+conectado.
+X20.2READY_TO_MARKEste sinal é colocado uma vez que foramenviados todos os dados necessários e o
+sinal de início. O sistema está preparadopara marcar e espera um sinal do dispa-
+rador. Se acendem os LEDs vermelhosda unidade de abastecimento e da
+cabeça de marcação.
+X20.3MARKINGEste sinal é colocado durante o processode marcação.
+X20.4SHUTTER_CLOSEDEste sinal é colocado quando estáfechado o obturador de raio.
+X20.5ERROEsta saída está ativa LOW. O sistema sedetém imediatamente se surge um erro
+durante o processo de marcação (p.ex.Laser-excesso de temperatura). Esta
+saída será devolvida ao seu sítio no pró-ximo início (mas pode ser colocada de
+novo imediatamente se o erro não foisolucionado).
+X20.6BADEsta saída está ativa LOW e indica que aúltima marcação não foi efetuada com-
+pletamente devido a uma advertência ouum erro. A saída será retornada ao seu
+sítio com o próximo sinal do disparador.
+X20.7GOODEsta saída está ativa LOW e indica que aúltima marcação foi efetuada sem adver-
+tência nem erro. A saída será retornadaao seu sítio com o próximo sinal do dis-
+parador.
+88 08/06 - Rev. AC
+
+Capítulo 7Anexo
+Entradas digitais
+Especificação das saídas:
+Especificação das entradas:
+BorneSinalDescrição
+X16.3STARTInicia o processo de marcação, esperaum sinal do disparador, reage a um
+flanco ascendente. START não tem fun-ção se o STOP está colocado em LOW.
+X16.4STOPDetém o processo de marcação, reageao LOW.
+Se não é utilizado o sinal deve ser colo-cado em High.
+X20.8EXTERNAL_ERROREste sinal ativa LOW é utilizado paraavaliar mensagens de erros externos.
+Se não é utilizado o sinal deve ser colo-cado em High.
+Tensão nominal24 V DC (-15 %/+20 %)
+Tipo de cargaohm, indutivo, lâmpada
+Corrente máx. de saída (por canal)200 mA (protegida contra curto-circuito)
+Tensão nominal24 V DC (-15 %/+20 %)
+Tensão de sinal "0"0 V até 5 V
+Tensão de sinal "1"8,5 V até 30 V, nominal 24 V
+Entrada para correntetipo 10 mA
+Longitude mínima de sinal300 µs
+08/06 - Rev. AC 89
+
+Capítulo 7Anexo
+Diagramas de tempos
+Operação normal
+Mensagens de erros
+Modo de InterruptorArran-car LaserprontoPrepararmarcação Espera Espera MarcarLaserpelo retardoprontoInterruptor Espera pelopelo retardoEsperapelo MarcarEsperapelo de chave
+aberto abertodisparador disparadordisparador disparador disparador
+Ação do Fechar interruptorIniciarDisparadorDisparadorPararAbrir interruptor
+de chave de chave
+de chave
+operação
+laser
+operador
+Modo de
+Ação do
+Laserpronto Mensagem de erro 2Interruptor de chavecarLaserprontoArran-PrepararmarcaçãoEsperapeloEspera peloretardoMarcar PrepararmarcaçãoEsperapeloEspera peloretardo
+ abertolaser disparador disparador disparador disparador
+operação IniciarDisparadorConfirmarFechar interruptor dechave IniciarDisparador
+o
+p erador
+90 08/06 - Rev. AC
+
+Capítulo 7Anexo
+Mensagens de advertência
+Estado do
+Ação do
+InterruptorArran-carLaserprontoPrepararmarcaçãoEspera peloretardoEsperapelo EsperaMarcarEspera peloretardopeloLaserprontoInterruptorMarcarEspera de chave
+ aberto disparadordisparador disparador disparadorabertopelodisparador
+sistema Fechar interruptor deIniciarchaveDisparadorDisparadorPararde chavelaser Abrir interruptorde chave
+operador
+08/06 - Rev. AC 91
+
+Capítulo 7Anexo
+7.1.3 Entradas não separadas galvanicamenteOs sinais não estão separados galvanicamente. O sistema de sensores que se conectará aqui
+é considerado como pertencente ao sistema de marcação.
+Entradas para disparador
+Entradas de rotador
+BorneSinalDescrição
+X6.1DISPARADOREntrada disparador
+X6.2IN_TRIGGER_ENABLELiberar entradas para disparador, fornecidopara fazer ponte com o borne X6.5
+(ver ilus. próxima página)
+X6.3IN_TRIGGER_MONITOREntrada, Disparador de Vigilância
+X6.4GNDTerra do sistema
+X6.512 V/24 VAbastecimento de tensão
+X6.6GNDTerra do sistema
+BorneSinalDescrição
+X7.1ENC_T1Entrada para Via 1 do rotador
+X7.2ENC_T2Entrada para Via 2 do rotador
+X7.3ENC_IDXEntrada para via de índice do rotador
+X7.4GNDTerra do sistema
+X7.5GNDTerra do sistema
+X7.6GNDTerra do sistema
+X7.712 V/24 VAbastecimento de tensão
+X7.8GNDTerra do sistema
+92 08/06 - Rev. AC
+
+Capítulo 7Anexo
+Explicação dos sinais para liberaçãoCom o sinal ENABLE você pode decidir se deverão ser liberadas as entradas para os dispa-
+radores.
+A liberação tem efeito sobre todas as fontes do disparador
+DISPARADOR AUTOMÁTICO
+PROGRAMA (Allprint Basic)
+Entradas para disparadorativadas
+24 V Entradas para disparadordesativadas
+ENABLE
+0 V
+08/06 - Rev. AC 93
+
+Capítulo 7Anexo
+Especificação das entradas:
+Tensão de sinal "0"0 V até 5 V
+Tensão de sinal "1"8,5 V até 30 V
+Corrente de entrada de 12 V/24 V4/10 mA
+Longitude mínima de sinal sem filtro de sof-tware 2 µs
+Isolamento elétriconulo
+A tensão de abastecimento para as entradas não isoladas pode ser comutada entre 12 V e 24V. Isso ocorre com ajuda do Jumper X17 na ACC:
+X17 fechada12 V
+X17 aberta24 V
+Com isso é possível empregar o rotador e os sensores com abastecimento de 12 V ou de 24 V
+94 08/06 - Rev. AC
+
+Capítulo 7Anexo
+7.1.4 Exemplo 1 de instalação elétrica: Controle pelo SPS
+InterbloqueioOpto-acopladorSPS
+Abastecimento de tensão
+O abastecimento de tensão das entradas e saídas é efetuado através dos bornes X16.1 eX16.5, para separar galvanicamente o sistema de marcação e a SPS.
+Estado do sistema
+Os seguintes sinais são solicitados:
+SYSTEM_READY
+MARKING
+READY_TO_MARK y
+ERROR
+Controle
+O controle do sistema é efetuado através de:
+START
+STOP
+DISPARADOR
+08/06 - Rev. AC 95
+
+Capítulo 7Anexo
+7.1.5 Exemplo 2 de instalação elétrica: Conexão direta (MOTF mark on the fly )
+InterbloqueioDisparador(proteção fotoelétrica)Incrementador
+A proteção fotoelétrica
+será ligada ao DISPARADOR
+O abastecimento de tensão é realizado pelo sistema de marcação
+nenhuma separação galvânica
+O incrementador
+será conectado em ambas vias e à via de índice
+O abastecimento de tensão é realizado pelo sistema de marcação
+nenhuma separação galvânica
+96 08/06 - Rev. AC
+
+Capítulo 7Anexo
+7.2 Declaração de conformidade
+Videojet Technologies Inc.1500 Mittel Boulevard
+Wood Dale, IL 60191-1073USA.
+Telefone: 1-800-843-3610Fax: 1-800-582-1343
+Nós (nome do fabricante)Videojet Technologies Inc.
+Endereço 1500 Mittel BoulevardWood Dale, Illinois 60191-1073
+USA
+declaramos sob nossa única responsabilidade que o produto
+Nome Sistema laser
+Tipo, modeloVideojet3120/3320
+cumpre com as exigências das normasEN 55011 / 11.2003
+EN 61000-6-2 / 08.2002
+EN 61000-4-2 / 12.2001
+EN 61000-4-3 / 11.2003
+EN 61000-4-4 / 07.2005
+EN 61000-4-5 / 12.2001
+EN 60825-1 / 11.2001
+EN 60950-1 / 03.2003
+e desta forma com as diretivas da UE 89/336/CEE (diretiva CEM) e 73/23/CEE (diretiva debaixa tensão)
+DataFirma
+24.10.2005
+Declaração de conformidade da UE
+D. Wessel, representante para a UE
+08/06 - Rev. AC 97
+
+Capítulo 7Anexo
+7.3 DesenhosUnidade de abastecimento Videojet3120/Videojet3320
+154,5
+135
+136,5
+324
+388
+330,3
+333,3
+300
+378,3
+98 08/06 - Rev. AC
+
+Capítulo 7Anexo
+Unidade de rotulação (cabeça de laser e cabeça de marcação) Videojet3120
+19x M6
+38,5 39,5
+40
+40
+94
+32,2 114
+80
+160
+(8x80= / 4x160=) 640
+712
+150
+130
+94
+105
+863
+74
+136
+29,4
+39,5
+112
+08/06 - Rev. AC 99
+
+Capítulo 7Anexo
+Unidade de rotulação (cabeça de laser e cabeça de marcação) Videojet3320
+62,3
+40
+120
+40
+95
+120
+56
+120
+530
+640 131
+105
+70
+59
+771
+74
+185
+95
+72,3 62,3
+144,6
+100 08/06 - Rev. AC
+
+Capítulo 7Anexo
+Cabeça de rotulaçãoSHC 60
+SHC 100
+74
+94
+105
+130
+96,9
+116
+123
+176,5
+08/06 - Rev. AC 101
+
+Capítulo 7Anexo
+7.4 Páginas de dados de segurança
+102 08/06 - Rev. AC
+
+Ficha de segurançaMERCK
+De acordo com a directiva EC 91/155/EEC
+Data da emissão:22.11.2001Edição substituta de01.12.1999
+1.Identificação da substância/preparação e da sociedade/empresaIdentificação da substância/preparação
+No. de catálogo:100014
+Nome do produto:Acetona p.a. ACS,ISO
+Identificação da sociedade/empresa
+Empresa:Merck KGaA * 64271 Darmstadt * Germany * Tel: +49 6151 72-2440
+No.Telefone de Emergência:INEM, Centro de Informação Anti-Venenos, Rua Infante D. Pedro, 8 1749-075 Lisboa * Tel.(01)79501 43/44/46
+2.Composição/informação sobre os componentes
+No.-CAS:67-64-1No.-Index-CE:606-001-00-8Massa molar:58.08g/molNo.-CE:200-662-2
+Fórmula molecular: (Hill)C3H6O
+Fórmula molecular:CH3COCH3
+3.Identificação dos perigos
+Facilmente inflamável. Irritante para os olhos. Pode provocar secura da pele ou fissuras, porexposição repetida. Pode provocar sonolência e vertigens, por inalação dos vapores.
+4.Primeiros socorros
+Após a inspiração: Exposição ao ar fresco. Eventualmente, respiração artificial ou ventilação comaparelhagem apropriada. Manter livres as vias respiratórias.
+Após contacto com a pele: Lavar abundantemente com água. Tirar a roupa contaminada. Após contacto com os olhos: Enxaguar abundantemente com água, mantendo a pálpebra aberta (durante
+pelo menos 10 minutos). Chamar um oftalmologista. Após degentição: beber imediatamente muita água.
+Administração posterior de: Carvão activado (20-40 g, numa suspensão a 10 %). Perigo de aspiração! Não provocar o vómito. Manter livres as vias respiratórias. Chamar um médico.
+Laxante: Sulfato de sódio (1 colha de sopa / 1/4 litro de água). Indicações para o médico: Depois de engolir de grandes quantidades: Lavagem gástrica.
+5.Medidas de combate a incêndios
+Meios adequados de extinção:pó, espuma.
+Riscos especiais:Combustível. Vapores mais pesados do que o ar. A formação de misturas explosivas com o ar é possível
+já a temperaturas normais. Em caso de incêndio formam-se gases inflamáveis e vapores perigosos.
+Equipamento especial de protecção para o combate ao incêndio:Permanência na área de perigo só com roupa de protecção apropriada e com uma máscara de oxigénio
+independente do ar ambiente.
+Outras informações:Manter afastadas eventuais fontes de ignição. Evitar a infiltração da água de extinção nas águas
+superficiais ou nas águas subterrâneas. Arrefecer o recipiente com água de pulverização a umadistância segura. Precipitar com água os vapores que se libertem.
+As Fichas de dados de Segurança para items de catálogo estão igualmente disponíveis em www.chemdat.dePágina 1 de 6
+
+Fichas de segurança da Merck De acordo com a directivaEC 91/155/EEC
+No. de catálogo:100014Nome do produto:Acetona p.a. ACS,ISO
+6.Medidas a tomar em caso de fugas acidentais
+Medidas de protecção para os pessoas: Evitar o contacto com a substância. Não inalar os vapores/aerossóis. Garantir a ventilação com ar
+fresco em recintos fechados.
+Medidas de protecção do meio ambiente: Não permita que entre no sistema de esgotos; perigo de explosão
+Método de limpeza / absorção: Absorver com um agente higroscópico, p.ex., Chemizorb. Proceder à eliminação de resíduos.
+Limpeza posterior.
+7.Manuseamento e armazenagem
+Manuseamento:
+Indicações sobre protecção contra incêndios ou explosões:Tomar medidas contra cargas electrostáticas. Manter afastado de fontes de ignição.
+Indicações para o manuseamento seguro: Trabalhar com chaminé. Não inalar a substância.
+Evitar a formação de vapores/aerossóis.
+Armazenagem:
+Herméticamente fechado. Em local bem ventilado. Afastado de fontes de ignição e de calor. À +15C a+25C.
+8.Controlo da exposição/protecção individual
+Parâmetros específicos de controlo
+EC
+Nome Acetona
+Valor 500ml/m1210mg/m33
+Equipamento de protecção individual:
+As características dos meios de protecção para o corpo devem ser seleccionadas em função da concentração e da quantidade das substâncias tóxicas de acordo com as condições específicas
+do local de trabalho. A resistência dos meios de protecção aos agentes químicos deve seresclarecida junto dos fornecedores.
+Protecção respiratória:necessário em caso de formação de vapores/aerossóis. Filtro AX (EN371)
+Protecção dos olhos:necessário
+Protecção das mãos:necessário
+Higiene industrial:Mudar imediatamente a roupa contaminada. Profilaxia cutânea. Depois de terminar o trabalho, lavar
+as mãos e a cara. Trabalhar com chaminé. Não inalar a substância.
+9.Propriedades físico-químicas
+Forma:líquidoCôr:incolor
+Odor:a fruta
+As Fichas de dados de Segurança para items de catálogo estão igualmente disponíveis em www.chemdat.dePágina 2 de 6
+
+Fichas de segurança da Merck De acordo com a directivaEC 91/155/EEC
+No. de catálogo:100014Nome do produto:Acetona p.a. ACS,ISO
+Valor de pH
+em395 g/lH2O 5-6
+Viscosidade dinâmico(20 C)0.32mPa*s
+Temperatura de fusão -95.4C
+Temperatura de ebulição (1013 hPa)56.2C
+Temperatura de ignição 540C
+Ponto de inflamação < -20Cc.c.
+Limites de explosão inferior2.6Vol%superior13Vol%
+Pressão de vapor (20 C)233hPa
+Densidade de vapor relativo 2.01
+Densidade (20 C)0.79g/cm3
+Solubilidade emágua
+(20 C)solúvel
+etanol solúvel
+éter solúvel
+log P(oct): -0.24(experimental)
+Factor de bioconcentração 0.69
+Constante dieléctrica (25 C)20.7
+10.Estabilidade e reactividade
+Condições a serem evitadas
+Aquecimento forte.
+Substâncias a serem evitadas
+hidróxidos alcalinos, halogénios, hidrocarbonetos halogenados / hidróxidos alcalinos, compostoshalogénio-halogénio, oxidante (entre outros CrO3, compostos peroxidados, ácido nítrico, ácido
+nitrante), óxidos de halogénios, metais alcalinos, compostos de nitrosilo, metais, etanolamina.
+Produtos de decomposição perigosa
+peróxidos.
+Outras informações
+solvente; sensível à acção da luz; sensível à acção do ar.
+materiais inapropriados: diversos materiais plásticos, borracha. Em estado de vapor/gás possibilidade de formação de misturas explosivas com o ar.
+As Fichas de dados de Segurança para items de catálogo estão igualmente disponíveis em www.chemdat.dePágina 3 de 6
+
+Fichas de segurança da Merck De acordo com a directivaEC 91/155/EEC
+No. de catálogo:100014Nome do produto:Acetona p.a. ACS,ISO
+11.Informação toxicológica
+Toxicidade aguda
+LD50 (oral, rato): 5800 mg/kg. LC50 (inalação, rato): 76 mg/l /4 h.
+LD50 (cutânea, coelho): 20000 mg/kg.
+Sintomas específicos em estudos com animais: Teste de irritação da pele (coelho): Irritação.
+Teste de irritação dos olhos (coelho): Irritação.
+Toxicidade subaguda a crónica
+Não existe redução da capacidade de reprodução em experimentos com animais. Não cancerígeno em experiências com animais.
+Mutagenicidade bacteriana: Salmonella typhimurium: negativo.
+Bacillus subtilis: negativo. Escherichia coli: negativo.
+Teste de Ames: negativo.
+Teste de mutagenicidade segundo Test Guideline 476 da OCDE (ensaio in vitro de células demamífero): negativo.
+Teste de sensibilização (cobaia): negativo.
+Outras informações toxicológicas
+Após a inalação de vapores: irritação das mucosas, sonolência, sonolência. Em doses elevadas:cefaleias, salivação, náuseas, vómitos, vertigens, narcose. Não pode ser excluída: coma.
+Depois do contacto com a pele: Ligeira irritação. Efeito desengordurante com formação de pele ásperae gretada.
+Depois do contacto com os olhos: Irritação. Perigo de opacificação da córnea. Após ingestão: queixas gastrointestinais, cefaleias, salivação, náuseas, vómitos, vertigens, narcose,
+coma.
+Informação adicional
+O produto deve ser manipulado com as precauções habituais dos produtos químicos.
+As Fichas de dados de Segurança para items de catálogo estão igualmente disponíveis em www.chemdat.dePágina 4 de 6
+
+Fichas de segurança da Merck De acordo com a directivaEC 91/155/EEC
+No. de catálogo:100014Nome do produto:Acetona p.a. ACS,ISO
+12.Informação ecológica
+Degradação biológica: Biodegradação:: 91 % /28 d;
+Fácilmente biodegradável.
+Comportamento no meio ambiente: Distribuição: log P(oct):: -0.24 (experimental).
+Não se prevê qualquer bio-acumulação (log P o/w <1).
+Efeitos ecotóxicos: Efeitos biológicos:
+Toxicidade nos peixes: L.macrochirus LCToxicidade em Daphnia: Daphnia magna CE50: 8300 mg/l /96 h. 50: 12600-12700 mg/l /48 h.
+Concentração limite tóxica: Toxicidade em algas: Sc.quadricauda CK5: 7500 mg/l /8 d;
+Toxicidade em bactérias: M.aeruginosa CE5: 530 mg/l /8 d; Ps.pudita CEProtozoários: E.sulcatum CE5: 1700 mg/l /16 h; 5: 28 mg/l /72 h.
+Dados ecológicos adicionais: Degradabilidade:
+CBO5: 1.85 g/g; CQO: 2.07 g/g;
+ThOD: 2.20 g/g.
+Não são esperados problemas ecológicos quando o produto é manuseado e usado com os devidos cuidados eatenção.
+13.Questões relativas à eliminação
+Produto:
+Na União Europeia não existem normas uniformes sobre a eliminação de produtos químicos ou desubstâncias residuais. Produtos químicos que dêem origem a substâncias residuais são geralmente
+considerados como resíduos especiais. A sua eliminação é regulamentada através de leis oudecretos-leis apropriados vigentes nos Estados-membros da União Europeia. Sugerimos que se
+entre em contacto com a entidade competente (repartição do Estado ou empresa especializada no tratamento de resíduos), que poderá dar informações sobre as medidas de eliminação.
+Embalagem:
+Eliminação de acordo com as normas legais. As embalagens contaminadas devem ser tratadas da mesma maneira que a substância correspondente. Caso não existam quaisquer normas
+legais neste sentido, as embalagens não-contaminadas podem ser tratadas como lixo doméstico normalou podem ser submetidas a um processo de reciclagem.
+As Fichas de dados de Segurança para items de catálogo estão igualmente disponíveis em www.chemdat.dePágina 5 de 6
+
+Fichas de segurança da Merck De acordo com a directivaEC 91/155/EEC
+No. de catálogo:100014Nome do produto:Acetona p.a. ACS,ISO
+14.Indicações relativas ao transporte
+Transporte terrestreGGVS, GGVE, ADR, RID
+Classificação 3/3b
+Nome 1090ACETON
+Transporte fluvialADN, ADNR
+Classificação não testado
+Transporte por via marítimaIMDG, GGVSee
+Classificação 3.1/UN 1090/PG II
+Ems: 3-06
+MFAG: 300
+Nome ACETONE
+Transporte por via aéreaICAO, IATA
+Classificação 3/UN 1090/PG II
+Nome As informações relativas ao transporte mencionam-se de acordo com a regulamentação internacionalACETONE
+e no formato aplicável na Alemanha(GGVS/GGVE). Não estão consideradas possíveis diferenças anível nacional.
+ESTAS INFORMAÇ*O26ES DE TRANSPORTE REFEREM-SE À EMBALAGEM COMPLETA.
+15.Informação regulamentada
+Etiquetas de acordo com as Directivas da CE
+Símbolo: FFacilmente inflamávelXiIrritante
+Frases R: 11-36-66-67Facilmente inflamável. Irritante para os olhos.Pode provocar secura da pele ou fissuras, por
+exposição repetida. Pode provocar sonolência evertigens, por inalação dos vapores.
+Frases S: 9-16-26Manter o recipiente num local bem ventilado. Manterafastado de qualquer chama ou fonte de ignição -
+Não fumar. Em caso de contacto com os olhos lavarimediata e abundantemente com água e consultar um
+especialista.
+No.-CE: 200-662-2Rótulo CE
+16.Outras informações
+Alteração no capítulo sobre toxicologia.
+Revisão geral.
+Representante nacional:
+VWR International Material de Laboratório, LDA * Apartado 3185 * P-1304 Lisboa Codex * Tel.: +351 (11) 3613 500 * Fax: +351 (11) 3613 666/7 * lab-mel@merck.pt
+Merck Farma e Quimica, S.A.* Rua Alfredo da Silva, 3-C * P-1300-040 Lisboa * Tel.: +351 (21) 3613 500 * Fax: +351 (21) 3613 665 * merck@merck.pt
+As indicações baseiam-se no nível actual dos nossos conhecimentos e servem para acaracterização do produto no que se refere às medidas de segurança a tomar. Estas
+indicações não implicam qualquer garantia de propriedades do produto descrito.
+As Fichas de dados de Segurança para items de catálogo estão igualmente disponíveis em www.chemdat.dePágina 6 de 6
+
+Capítulo 7Anexo
+7.5 Abreviaturas
+ACCAdvanced Controller Card, platina central para o controle do sistemalaser.
+AOSAdvanced Operating System, sistema operativo do sistema laser.
+DSPProcessador digital de sinais, elabora os dados do AOS e gera dadospara a cabeça de marcação.
+FM Fast Move, platina na cabeça de marcação que transforma os dados deposição do DSP em movimento refletor.
+FPGAField Programmable Gate Array, bloco componente lógico, complexo eprogramável.
+IOEBInput Output Extension Board, platina de extensão para a conexãosimultânea de um PC e um quadro de controle manual.
+Direção IPdireção para o protocolo de internet.
+LVDSLow Voltage Differential Signal, sinal padrão baseado em sinais diferen-ciais de baixa tensão
+MMCMultiMediaCard, placa de memória na qual se encontram o AOS e obanco de dados.
+SPSControle de memória programável para o controle externo do sistemalaser.
+08/06 - Rev. AC 103
+
+Capítulo 7Anexo
+104 08/06 - Rev. AC
+
+Índice
+Longitude de onda 22
+A
+ACC (Advanced Controller Card) 21
+M
+Acetona 102
+Mensagens de advertência 51
+Admissão de potência (máx.) 22
+Mensagens de erros 61
+Modelo para marcação 28
+C
+Modos de operação 31
+Cabeça de rotulação: 20
+Modos de operação de laser 22
+Cabo de conexão 33
+Campo de marcação 24
+O
+Campo de potência 7
+Óculos de proteção 7
+Caracteres 22
+Óptica de foco 24
+Classe de laser 22
+Classe de proteção 22
+P
+Conexão de abastecimento (largura máx.)
+Parâmetros do laser 19
+23
+Peso 22
+Possibilidades de operação 23
+D
+possibilidades de operação 27
+Declaração de conformidade 97
+Potência do laser 22
+Defeitos 50
+PPC (PowerPC) 21
+Depósito 13
+Protocolo de manutenção
+Diagramas de tempos 90
+Bolsa do filtro 43Dispositivo de aspiração 43
+Filtro de carvão ativo 44inspeção visual 45
+Óptica de foco 42
+Diâmetro de foco 22
+Direção IP 34
+Dispositivo de aspiração 15
+Dispositivos de advertência 6
+Dispositivos de proteção 6
+Distância focal 22
+Q
+Distâncias de trabalho 24
+DSP (Processador digital de sinais) 21 Quadro de controle manual 20
+E R
+Elementos de operação 30 Refrigeração 15, 23
+Estímulo 22
+S
+F
+selênio de zinco 8
+Fontes 23
+T
+Freqüência de rede 22
+Fusível de entrada 22
+Temperatura ambiente 22
+Tensão de abastecimento 22
+I
+Tipo de laser 22
+Intensidade de traço 50 Tório 8
+Interfaces 15, 23, 87 Trabalhos de manutenção 36
+Intervalos de manutenção 36 Traço de vetor 19
+Transferência de dados 33
+L
+Transporte 13
+Largura da linha 22
+U
+Laser piloto 3, 7
+Lentes 24 Umidade atmosférica (rel.) 22
+105
+
+Índice
+unidade 20
+Unidade de abastecimento 20
+Unidade de rotulação 20
+V
+Velocidade de linha 22
+Velocidade de rotulação 22
+106

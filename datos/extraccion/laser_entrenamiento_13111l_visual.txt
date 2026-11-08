@@ -1,0 +1,216 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\13111L.pdf
+# cifrado=False bloques=6 caracteres=7468
+
+Videojet Technologies Inc.
+SAR13111L
+Printer Model: 3120/3130/3320/3330/3430/7210/7310/DN50/LN100
+Description: Runs 2 instances of SAR09258I ( Simple Printer Protocol ), one on TCP Port 20000
+and the other on TCP Port 2 0002.
+Base Version: QMark 8. 9.1.1
+Engineered By: P . Ward
+Verified By: P. Ward
+Date Completed: February 16, 2022
+Revision A: Rebased on 6.9.3.2.3.
+Revision B: Added GetLPwr and SetLPwr.
+Revision C : Fixed startup.sh so that second instance has a se parate log file (SAR2.txt) .
+Revision D: Revision C was based on the wrong QMark version.
+Revision E: Added tcpdump. Changed the way SetPState stops print (SetPState|OFF).
+Revision F: Changed the way SetPState starts print (SetPState|ON).
+Revis io n G: Rebased on 8.6.0.
+Revision H: Fixed - Rebased on 8.6.0.
+Revision I: Fixed – GetTText and fixed UTF - 8 encoding of SetVData.
+Revision J : Rebased on 8. 9 . 1 .
+Revision K : Rebased on 8. 10 . 1 .
+Revision L : Rebased on 8. 9 . 1 . 1
+See Addendum to the Operating Instructions for modific ati on details.
+1 of 6
+
+VIDEOJET TECHNOLOGIES INC. SAR13111L
+Simple Printer P rotocol
+For Lasers
+1. Host Port C onfiguration:
+TCP Client 1 , Port 20000
+TCP Client2, Port 20002
+2. Timeout :
+None.
+3. Basic format:
+REQUEST: <Command>|<Parameters><CR><LF>
+RESPONSE: <Result>|<Parameters><C R>< LF>
+4. Parameters:
+<TName> = Template Name (case sensitive)
+<VName> = Variable Name (case sensitive)
+<VSize> = Variable Data Size
+<VData> = Variable Data
+<VType> = ET,SN,DT or TM (ExternalText,SerialNumber,Date or Time)
+<T Pos > = Template position (xOffset yOffset Rotation) eg. "10 20 180.0 00"
+<TText> = Template text
+<OType> = Object Type (Text, Barcode or IDMatrix)
+<PState> = ON, OFF, ERR or CHK (ERR and CHK are readonly)
+<Result> = ACK or NAK:Reason
+< H ours > = Operating Hours ( 6509 )
+<Clock> = Date and Time (2008 - 04 - 20T04:04:12)
+<PCount> = Print Count
+< L Size> = Lot Size
+< LCount > = Lot Count
+<ECode> = Error Code
+< PDone > = ON or OFF
+<SarNum> = SAR Number and Revision
+<T I nfo > = Template Information (Mar kingTime VectorCount PointCount Ma rkingDistance
+JumpDistance Height Width Xmax Xmin Ymax Ymin) eg. "129 10 321 161.77 35.91 12.04
+56.89 28.45 - 28.45 6.02 - 6.02"
+<LPwr> = 0 - 100
+5. Commands:
+Get Print State
+RE QUE ST: GetPState<CR><LF>
+RESPONS E: <Result>|<PState><CR><LF>
+Set Print State
+REQUEST: SetPState|<PState><CR><LF>
+RESPONSE: <Result><CR><LF>
+Get Print Count
+REQUEST: GetPCount<CR><LF>
+RESPONSE: <Result>|<PCount><CR><LF>
+2 of 6
+
+VIDEOJET TECHNOLOGIES INC. SAR13111L
+Reset Print Cou nt
+REQUEST: ResetPCount<CR>< LF>
+RESPONSE: <Result><CR><LF>
+Get Lot Data
+REQUEST: Get LotData <CR><LF>
+RESPONSE: <Result>|< LSize >|< L Count><CR><LF>
+S et Lot Data
+REQUEST: S et LotData |< LSize >|< L Count><CR><LF>
+RESPONSE: <Result><CR> <LF >
+Get Operating Hours
+REQUE ST: Get Hours <CR><LF>
+RESPONSE: <Result>|< Hours ><CR><LF>
+Get Clock
+REQUEST: GetClock<CR><LF>
+RESPONSE: <Result>|<Clock><CR><LF>
+Set Clock
+REQUEST: SetClock|<Clock><CR><LF>
+RESPONSE: <Result><CR><LF >
+Get Templates
+REQUEST: GetTN ames<CR><LF>
+RESPONSE: <Result >|<TName1>|<TName2>...|<TNamen><CR><LF>
+Get Template Text
+REQUEST: GetTText|<TName><CR><LF>
+RESPONSE: <Result>|<OType1>|<TText1>...|<OTypen>|<TTextn><CR><LF>
+Get Template Posi tio n
+REQUEST: GetTPos|<TName><C R><LF>
+RESPONSE: <Result>|<TPo s><CR><LF>
+Set Template Position
+REQUEST: SetTPos|<TName>|<TPos><CR><LF>
+RESPONSE: <Result><CR><LF>
+G et Template Information
+REQUEST: G etT Info |<TName><CR><LF>
+RESPONS E: <Result> |<TInfo <CR><LF>
+Get Acti ve Template
+REQUEST: GetActiv eTName<CR><LF>
+RESPONSE: <Result>|<TName><CR><LF>
+Set Active Template
+REQUEST: SetAct ive TName|<TName><CR><LF>
+RESPONSE: <Result><CR><LF>
+Get Variable Names
+REQUEST: G etV Names|<TName>|<VType><CR><LF>
+RESPONSE: <Result>|<VName1>|<VSiz e1>...|<VNamen>|<VSizen><CR><LF>
+3 of 6
+
+VIDEOJET TECHNOLOGIES INC. SAR13111L
+Get Variable Data(s)
+REQUEST: GetVData|<TName>|<VName1>|<VName2>...|<VNamen><CR><LF>
+RESPONSE: <Result>|<VData1>|<VData2>...|<VDatan><CR><LF>
+Not e: When <TName> is set to “*”, th e Active Template Name will be use d.
+Set Variable Data(s)
+REQUEST: SetVData|<TName>|<VName1>|<VData1>...|<VNamen>|<VDatan><CR><LF>
+RESPONSE: <Result><CR><LF>
+Note: When <TName> is set to “*”, all variables wit h the name VName will be set
+to V Data regardless of the Template Na me.
+Configure Variable Data List
+REQUEST: Cfg VData List |<TName 1 >|<VName1>...|< T Namen>|<VNamen><CR><LF>
+RESPONSE: <Result><CR><LF>
+Set Variable Data List
+REQUEST: SetVDa ta L ist |<VData1>...|<VDatan><CR><LF>
+RESPONSE: <Result><CR><LF>
+Get Error Codes
+REQUEST: GetECodes<CR><LF>
+RESPONSE: <Result>|<ECode1>|<ECode2>...|<ECoden><CR><LF>
+Acknowledge Error Codes
+REQUEST: AckECodes<CR><LF>
+RESPONSE: <Resul t>< CR><LF>
+Save
+REQUEST: Save<C R><LF>
+RESPONSE: <Result><CR>< LF>
+Get SAR Number
+REQUEST: GetSarNum<CR><LF>
+RESPONSE: <Result>|<SarNum><CR><LF>
+Get Print Done Mode
+REQUEST: Get PDone <CR><LF>
+RESPONSE: <Result>|< PDone ><CR><LF>
+S e t P rint Done Mode
+REQUEST: S et P Done |< PDone ><CR><LF>
+RESPONSE: <Result >< CR><LF>
+Get Laser Power (Mark Intensity)
+REQUEST: GetLPwr<CR><LF>
+RESPONSE: <Result>|<LPwr><CR><LF>
+Set Laser Power (Mark Intensity)
+REQUEST: SetLPwr|<LPwr><CR> <LF >
+RESPONSE: <Result><CR><LF>
+Help
+REQUEST: Help|<Command> <CR><LF>
+RESPONSE: <Result>|<Details><CR><LF>
+4 of 6
+
+VIDEOJET TECHNOLOGIES INC. SAR13111L
+6 . Unicode
+All strings are UTF - 8 encoded.
+Code range UTF - 8 Notes
+0000 – 007F 0zzzzzzz ASCII equivalence range; byte begins with zero
+0 080 – 07FF 110yyyyy 10zzzzzz first byte begins with 110, the followin g byte begins with 10.
+first byte begins with 1110, the following 2 bytes begin with
+0800 – FFFF 1110xxxx 10yyyyyy 10zzzzzz
+10.
+7 . Print Done
+When PDone is ON, the following will be s ent to the host device:
+If no unack nowledged errors exist
+PRN|OK<CR> <LF>
+Else
+PRN|ERR<CR><LF>
+Note that PDone defaults to OFF whenever a TCP Connection is established.
+8 . Translate PState
+The PState strings are defined in the \ smarties \ customer \ pstat e.t xt file located on the MMC card.
+This is simple text file that can be edited to change the default PState strings as required by your
+application. To translate these states, edit only the text within the quotation marks for each state.
+9 . GetPStateRa w
+Get Print State Raw
+REQUEST: GetPState Raw <CR><LF>
+RESPONSE : <Result>|<PState Raw ><CR><LF>
+<PState Raw > can be any of the following:
+LaserStatusReady LaserStatusServiceMode
+LaserStatusKeySwitchOpen LaserStatusFatalError
+LaserStatusStartUp LaserStatusError1
+LaserStatusPrepareForMarking LaserStatusError2
+LaserStatusWaitForTri gge r LaserStatusServiceLaserS tar tUp
+LaserStatusWaitForTriggerDelay LaserStatusWaitForPause
+LaserStatusMarking Laser StatusInitialize
+LaserStatusStan dby LaserStatusPause
+LaserStatusBleeding LaserStatusTimeoutInterlock
+LaserStatusInterlockOpen LaserStatusTimeoutRelease
+LaserStatusProtectedServiceMode LaserStatusUnknown
+5 of 6
+
+VIDEOJET TECHNOLOGIES INC. SAR13111L
+9 . How to run “tcpdump”
+1. L og in with T elnet to the laser
+2. Execute
+“ cd /mnt/flash/system/usr/sbin ”
+3. Execute
+“ ./ tcpdump - C 1 - w /mnt/flash/tcpd ump.pcap - i lo - W 2 - s 1500 - p por t 2255 ”
+4. W ait until you observe the problem.
+5. Hit Ctrl+C to stop logging.
+6. Execute
+“ sync ”
+7. Send the resulting tcpdump.pcap file from MMC
+If you have questions or concerns regarding this SA R, contact the Technical Support department of Videojet
+Technologie s Inc. 1 - 800 - 843 - 3610 x3103
+6 of 6

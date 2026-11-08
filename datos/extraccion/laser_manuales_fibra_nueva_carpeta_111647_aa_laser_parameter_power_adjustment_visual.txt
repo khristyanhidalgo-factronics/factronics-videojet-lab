@@ -1,0 +1,37 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\Nueva carpeta\111647-AA Laser Parameter-Power Adjustment.pdf
+# cifrado=False bloques=3 caracteres=2603
+
+FO-111647Service Part Installation Instruction/Einbauanleitung Ersatzteil
+Laser Parameter - Power Adjustment
+1 Laser Parameter - Power Adjustment
+1.1 Overview
+It is possible to set the following laser parameters (e.g. Smart Graph 8.5.3.6):
+Marking Intensity
+The marking intensity can be set between 0% and 100%. Physically, the current of the pumpdiodes of the Matrix laser is changed by this parameter. A change of the intensity results in a
+power change delay of 70 s. The Matrix laser needs this time in order to change the current ofits pump diodes.
+Pulse frequency
+Repetition rate of the laser pulses, can be set between 10 kHz and 95 kHz.
+11/14 - Rev. AA 1
+
+FO - 111647
+Service Part Installation Instruction/Einbauanleitung ErsatzteilLaser Parameter - Power Adjustment
+Q-Switch width
+The Q-Switch width is the time that the Q-Switch of the Matrix laser is open. During the time "1/f - Q-Switch width" the Q-switch is closed and energy for the laser pulse is stored within the
+active material of the Matrix laser. The limitation of the maximum Q-Switch width of 0.95 * (1/f)ensures a minimum time for the energy storage. However, the shorter the time "1/f - Q-Switch
+width", the less energy the laser pulse exhibits (see figure 1-1 below).
+Figure 1-1: The pulse represents the pulse energy in relation to the trigger of the pulse. The Trigger is embodied by the Q-Switch.
+2 11/14 -Rev. AA
+
+FO-111647Service Part Installation Instruction/Einbauanleitung Ersatzteil
+Laser Parameter - Power Adjustment
+1.2 Power adjustment
+For the laser marking Systems V.0020-uv and Videojet 7810 the UV-laser model Matrix 355-1-60 is implemented.
+With the laser parameter intensity = 100 %, Pulse frequency = 60 kHz and a Q-Switch width =2 μs a laser power of ~ 1 W shall be achieved. If the frequency is changed to 20 kHz the
+maximum optical output power of ~ 2.2 W shall be the result. In case the intensity is reducedand/or the Q-Switch width in increased (pulse frequency remains constant) the laser power will
+decrease.
+The UV laser output power can be adjusted by changing the intensity. However, a change ofthe parameter intensity always results in a power change delay of 70 s.
+The laser power can also be modified without changing the intensity and therefore without thepower change delay. As indicated in figure 1-1 a shorter Q-Switch width leads to a higher pulse
+energy and hence to a higher average output power in case the frequency remains constant.
+Example:
+By varying the Q-Switch width between 2 μs and 47 0.01 W is achievable in this example.μs any output power between 2.2 W and
+11/14 - Rev. AA 3

@@ -1,0 +1,68 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Ing\BT1402102 (Código promocional en equipos TTO - TIJ)_Esp.pdf
+# cifrado=False bloques=6 caracteres=3360
+
+Videojet Technologies Latin Ame rica
+BT1402102
+Data: 10/02/2014
+Equipos: 6420/6320 8510/M600 Touch
+Tema: Cdigo promocional en equipos TTO - TIJ
+Vantajas del cdigo promocional en TTO/TIJ:
+ No hay costo adicional.
+ No necesita de infraestructura, sea, no necesita de computadora para envio de base de datos.
+ Seguridad
+Responsabilidades:
+Cliente
+ Informar la aplicacin.
+ Limitacin solamente una base de datos por mquina de cada ve z.
+Videojet
+ Imprimir TODOS cdigos suministrados por el Prove edor Homologado SIN REPETICIN.
+Proveedor
+ Suministrar la base de datos en uno Pen Drive exc lusivo para la aplicacin.
+ATENCIN: Antes de qualquier aplicacin con campo cdigo promocional, un tcnico
+capacitado debe ir al cliente para instruir sobre f uncionamiento, seguridad,
+responsabilidades, etc.
+
+CLARISOFT
+Inicialmente debemos crear un mensaje en Clarisoft con algumas caractersticas especficas.
+Em Clarisoft crear un Campo Contador.
+Em la hoja Numrico, el Tipo de contador debe s er alterado para Numrico Global .
+Se muestra un campo al lado nombrado Contador Glob al, donde debemos estabelecer el valor 14 .
+El Nmero de Dgitos debe ser alterado para 9 y el Valor Final debe ser 999999999 (nueve nmeros nueve).
+Ahora en la hoja General en Campo Encriptado de bemos selecionar CLARiTY.Encryption.DataFile
+
+Listo, est creado el campo que v a reconocer la b ase de datos que vamos descargar en el equipo.
+Puede ser incluso qualquier tro campo en este mens aje y v a se descargada normalmente via USB, Ether net,
+etc.
+
+Tan pronto el mensaje sea descargada en el equipo, se mostrar un error que indica que no hay una base de
+datos y es donde empieza la responsabilidad del Pro veedor Homologado.
+
+Base de Datos
+El cliente entra en contacto con alguna empresa que genera base de datos y solicita una base con las s eguientes
+caractersticas:
+A extensin debe ser .txt.(archivo ,txt)
+El archivo debe tener el nombre CLARiTY Data File (considerando letras maysculas y minsculas y esp acios).
+El archivo debe venir en un Pendrive nuevo y exclus ivo para la aplicacin.
+Solamente el supervisor de produccin responsable por la aplicacin debe tener acceso al Pendrive y el
+archivo de esta base de datos no deber ser accesad o.
+La cantidad mxima de cdigos diferentes y probado y aprobado por Videojet es de 4 millones.
+Alertamos para la importncia del Proveedor Homolog ado, porque por motivos de seguridad
+VIDEOJET EST PROHIBIDA DE GENERAR QUALQUIER BASE D E DATOS PARA SUS
+CLIENTES.
+Recibido el pendrive con la base de datos, ir hast a el supervisor de produccin responsable por la aplicacin,
+insertar el pendrive en el equipo. Se muestra un me nsaje informando que fu reconocido una base de dat os.
+Atencin: Despus de cliquear en SI, el equipo auto maticamente copia la base de datos para ello y borr a la base
+
+de datos del pendrive, como un mtodo de seguridad.
+El cliente est listo para imprimir sus cdigos pro mocionales.
+Una vez que la base de datos est salva en el equip o, no es ms posible restaurar.
+Cundo la base de datos es finalizada se muestra el mensaje de fallo de archivo de datos ausente.
+Caso tra base de datos sea instalada em el equipo antes de finalizada, esta segunda sobrescreve la an terior, la
+borrando.
+ATT.
+DOC_HELP
+Renan Ferreira
+VJ Latin America
+Videojet Technologies Ltd
+Tel: +1 630 8607300 (USA _ Headquarters).
+Tel: +55 11 4689-8800 (Brazil Office).

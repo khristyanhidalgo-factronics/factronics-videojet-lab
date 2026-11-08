@@ -1,0 +1,168 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\timing_ci_can_io.pdf
+# cifrado=False bloques=6 caracteres=2349
+
+Marking
+Marking
+Wait for
+trigger delay
+Wait for
+trigger delay
+Wait for
+trigger
+Wait for
+trigger
+Wait for
+trigger
+Prepare for
+marking
+Laser
+ready
+Laser
+ready
+Keyswitch
+open
+trigger
+trigger
+stop
+start
+open keyswitch
+close keyswitch
+Keyswitch
+open
+Laser
+start-up
+>> STOP
+Page 1/4
+Fr, 23.08.04
+Path: selm_entw1\\entwickl\schnittstellen\customerinterface\doc\timing_ci_can_io.cdr
+Alltec GmbH
+Normal operation
+>> STAR T
+>> TRIGGER
+User action
+System state
+<< BAD
+<< GOOD
+<< ERROR
+<< WARNING
+<< SHUTTER_CLOSED
+<< MARKING
+<< READY_TO_MARK
+<< SYSTEM_READY
+Customer Interface I/O- Timing:
+
+Page 2/4
+Fr, 23.08.04
+Laser
+ready
+Marking
+Wait for
+trigger delay
+Wait for
+trigger delay
+Wait for
+trigger
+Error 2
+Wait for
+trigger
+Prepare for
+marking
+Prepare for
+marking
+Laser
+ready
+trigger
+trigger
+start
+start
+acknowledge
+close keyswitch
+Keyswitch
+open
+Laser
+start-up
+>> STOP
+Path: selm_entw1\\entwickl\schnittstellen\customerinterface\doc\timing_ci_can_io.cdr
+Alltec GmbH
+Error in marking
+>> STAR T
+>> TRIGGER
+User action
+System state
+<< BAD
+<< GOOD
+<< ERROR
+<< WARNING
+<< SHUTTER_CLOSED
+<< MARKING
+<< READY_TO_MARK
+<< SYSTEM_READY
+Customer Interface I/O- Timing:
+
+Page 3/4
+Fr, 23.08.04
+Marking
+Marking
+Wait for
+trigger delay
+Wait for
+trigger delay
+Wait for
+trigger
+Wait for
+trigger
+Wait for
+trigger
+Prepare for
+marking
+Laser
+ready
+Laser
+ready
+Keyswitch
+open
+trigger
+trigger
+stop
+start
+open keyswitch
+close keyswitch
+Keyswitch
+open
+Laser
+start-up
+>> STOP
+Path: selm_entw1\\entwickl\schnittstellen\customerinterface\doc\timing_ci_can_io.cdr
+Alltec GmbH
+Warning in marking
+>> STAR T
+>> TRIGGER
+User action
+System state
+<< BAD
+<< GOOD
+<< ERROR
+<< WARNING
+<< SHUTTER_CLOSED
+<< MARKING
+<< READY_TO_MARK
+<< SYSTEM_READY
+Customer Interface I/O- Timing:
+
+>>DAT A0 ... DAT A7
+Path: selm_entw1\\entwickl\schnittstellen\customerinterface\doc\timing_ci_can_io.cdr
+Alltec GmbH
+Within a marking a template will not be changed immediately. The changing will be carried out after the marking is finished.
+The minimum time delay between the rising edge of EXT_EVENT and the template change is about 10 ms.
+This time increases if there is heavy load on the CANBus or the SmartOS software.
+External Template Selection
+Hold Time: > 10 ms
+Page 4/4
+Ru, 25.08.04
+Setup Time: > 10 ms
+Template is
+changed
+>>EXT_EVENT
+Setup T ime Hold Tim e
+Template A Template B
+Customer Interface I/O- Timing:

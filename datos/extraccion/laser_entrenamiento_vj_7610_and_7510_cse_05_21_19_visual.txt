@@ -1,0 +1,1967 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\VJ 7610 and 7510 CSE 05 21 19.pdf
+# cifrado=False bloques=186 caracteres=41224
+
+VJ 7610/7510 100/50 Watt Fiber Lasers
+Training for Operation and Maintenance of the
+100/50 watt Fiber - Laser Systems
+
+Learning Objectives
+At the end of this training class you will be able to :
+1. Safely install a 7610/7510 laser
+2. Identify the function of the 7610/7510 components.
+3. Demonstrate the ability to create static and dynamic messages using the
+Smartgraph software.
+4. Demonstrate the ability to transfer databases using the Allprint Basic software.
+5. Troubleshoot common problems associated with 7610/7510 laser.
+6. Demonstrate your ability to print in dynamic using the ARC Compensation.
+7. Remove and replace major components of the laser system
+8. Understand the wavelength reaction with various substrates
+
+Course Overview
+• Introduction • ARC Compensation
+• Safety • Maintenance
+• Principles of Operation • Module Replacement
+• System Overview • Troubleshooting
+• Software • Course Review
+• Hands on • Test
+• Installation
+
+Class room hours
+When is everything?
+• Class from 8 AM to 4 PM . Do not make plans to
+leave early at this time.
+• Breaks in Morning and Afternoon
+• Lunch 11 to 12:00 (about 1 hour)
+
+Where is Everything?
+On site facilities
+• Washrooms are across the hall.
+• Smoking is out the West door to the far side
+of the parking lot.
+• Cafeteria is down stairs near the lobby.
+( I’ll show you during the first break )
+
+CLASSROOM SAFETY
+• Fire Exits
+• Escape route
+• Extinguishers
+• 3 things before printing
+• Emergency Numbers 1+
+and……
+• PLEASE turn off cell phones
+
+Definition of a laser
+Non - ionizing Radiation
+
+Comparison white light - laser light
+
+Monochromatic
+1064nm
+1.06 µm
+
+Material Effects
+
+Excitation of Atoms
+
+Light Amplification (avalanche effect)
+
+Laser Spectrum
+
+Focusing of the laser beam
+• Diameter of the focus point
+
+Depth of Field
+
+The influence of the focal length
+Focal length can stay in focus even on surfaces not perfectly flat. But we must verify that the decrease in
+irradiance, resulting from the focal spot, is not likely to be below the threshold of interaction with the material
+preventing proper and well - contrasted markings.
+F =254
+F =100
+Depth of Focus
+Depth of Focus
+r m a r r m a r
+e k e k
+s in s in
+g g
+a a
+L L
+For example, moving from 100 to 300 focus, the irradiance is reduced to 15% of that available with focal 100th The laser
+spot is 3 times as large but the depth of field increases by 6 times
+
+The influence of the focal length
+The marking field area, the diameter of the size of the beam (spot) and the depth of field
+become larger with the increases in focal length (lens type).
+2wo=46  m@1064nm
+2z= 2mm
+working 100 mm
+2wo=118  m@1064nm
+Marking Area 118.7x75.8 mm
+2z= 12mm
+Focal 254mm
+Marking Area 301.5x215.5 mm
+
+Intensity Distribution of different Laser
+Modes
+
+Laser Hazards
+➢ Exposure of your eyes
+➢ Exposure of your skin to the beam
+➢ Fire
+➢ Toxic Fumes
+➢ Lethal high - voltage shock
+➢ Mechanical
+➢ Lens
+
+Ocular Absorption Site Vs. Wavelength
+Choroid
+Sclera Aqueous
+Retina
+Lens
+Macula
+Cornea
+Vitreous
+Optic Nerve
+CO² wavelength 93,000 - 10600nm
+UV wavelength 355 nm
+ND:YAG and Fiber wavelength 1055 - 1070 nm and HENE 633nm
+
+Retinal Damage
+
+PRIMATE RETINAL HEMORRHAGE
+Photo courtesy of U S Air Force
+Laser - Professionals.com
+
+MULTIPLE PULSE RETINAL INJURY
+Laser - Professionals.com
+
+The Human Skin
+File:Skin.jpg
+
+Wavelength Vs. Skin effects
+
+Non Beam Hazards
+➢ Fire Hazard
+▪ Material
+▪ Laser settings
+▪ Ignition of gases / fumes
+▪ Flammable solvents
+▪ Fire extinguisher
+▪ Keep area clean
+▪ Maintenance
+
+Fume Hazard
+Use proper PPE when changing filters
+
+Material Hazard Classification
+➢ Fume Hazard
+▪ Some materials, such as certain plastics, emit
+toxic gas when they burn under a laser beam
+▪ Consult the manufacturer of material
+▪ Turn on ventilation system (Fumex)
+Fumex
+Direction of product movement
+
+Why Fume Extraction?
+Headaches
+Eye Irritation
+Sore Throat
+Occupational Asthma
+Respiratory Irritation
+
+High voltage shock hazard
+▪ The most common laser - related cause of death
+▪ Do not disable enclosure safety switches
+▪ Do not wear anything metal like a ring, bracelet,
+watch , belt buckle, earrings, or keys
+▪ Never stand on a wet surface
+
+Mechanical Hazards
+➢ Mechanical:
+• Moving equipment
+• Loose fitting clothing, ties, jewelry, should not
+to be worn
+• When to put the system into Emergency Stop
+mode
+
+Lens hazard
+The laser system contains optics constructed from Zinc Selenide. When broken into small
+pieces or exposed to acidic conditions, they may give rise to harmful products.
+In normal use however, the laser optical components are not considered to be hazardous.
+In the event that a laser optical component is damaged in any way, the material and any
+packaging must be treated as hazardous waste and disposed of accordingly.
+Warning! to reduce back reflection that will damage the beam source use the correct lens
+part number. Old YAG lens are not be suitable for the 7610, exception 420 lens.
+
+Cleaning Solvents
+• Solvents
+– Acetone
+– Methyl alcohol (methanol)
+– Isopropyl Alcohol (rubbing alcohol)
+• Flammable
+• Irritants
+
+Laser Accidents
+• Statistically laser accidents are due to several factors:
+• eye exposure unexpectedly during alignment, eye
+protection not being worn, equipment malfunction,
+high voltage mishandling, non - beam hazards,
+incorrect eyewear, inhalation of air contaminants,
+viewing of laser - generated plasmas, and in general
+using equipment incorrectly
+• The most common type of injury is to the eye
+(around 70%). There have been a few deaths, mostly
+caused by electrocution or fires.
+
+Causes of laser accidents
+
+General safety
+Class 1:
+Not capable of emitting accessible laser radiation in access of what
+the AEL allows for class one.
+Example: Laser Printer, CD player
+Class 2:
+Not capable of emitting accessible laser radiation greater than AEL
+allows with .25 exposure duration.
+Example: Pilot laser and He - Ne alignment Laser
+Class 3:
+Potentially hazardous if focused at the eye or skin for less time than
+what’s allowed for class 2
+May cause acute eye hazards
+Example: Laser Pointer, level/guide
+Class 4:
+May present a serious fire, skin or diffuse reflection hazard. Output
+exceeds that of a Class 3
+Recommend Class 1 installation (shielding, interlocks, etc.)
+Example: CO2 and YAG laser tubes
+
+Reflections of light
+
+ANSI Z 136.1 - 2014
+Purpose
+• Create a standard of measurement.
+• Determine thresholds where radiant energy
+becomes a hazard.
+• Categorizes laser into four basic hazards.
+• Provides recommendations for the safe
+usage of lasers and laser systems between
+180nm and 1mm.
+
+Laser Safety References
+• CDRH - Center for Devices and Radiological Health
+– An agency within the U.S. Food and Drug Administration which publishes and
+enforces legal requirements on laser product manufacturers. For copies of the
+CDRH regulations, contact: CDRH (HFZ - 312), 2098 Gaither Road, Rockville, MD
+20850, Telephone (301) 594 - 4654
+• ANSI/OSHA - ANSI (American National Standards Institute)
+– U.S. organization that publishes standards for laser users. Their laser safety
+standards are not laws, but they form the basis for state and OSHA requirements
+for the use of lasers. For copies contact ANSI in New York at (212) 642 - 4900 or the
+Laser Institute of America, at Telephone (407) 380 - 1553, Fax (407) 380 - 5588
+• OSHA - The Occupational Safety & Health Administration
+– Does not have specific laser safety requirements. However, if they are called into a
+facility, the inspectors follow published guidelines (OSHA Instruction PUB 8 - 1.7
+Guidelines for Laser Safety and Hazard Assessment) that are based on an earlier
+(1986) ANSI Z136.1 standard.
+
+Safety Guards
+• A safe installation requires that the laser beam
+be guarded utilizing interlocks
+Length must be sufficient to
+prevent skin and eye contact
+with beam path.
+Ceramic tile should be affixed
+opposite the laser head (other Laser hazard stickers
+side of product) to absorb laser should be affixed to the
+Insert laser head here.
+light if no product is present (if guard in clear view.
+Removal requiring special
+fired).
+tools.
+Side View of Guard
+
+Safety Guards
+• Any parts of the safety guard which can be
+removed (slides or hinged parts) should be
+interlocked so the laser is paused (shutter
+closed) when those parts are open or
+removed
+Top View of Guard
+Sliding cover to allow
+PRODUCT access to conveyor PRODUCT
+Removable parts
+should be electrically
+interlocked in CLOSED
+position.
+No laser reflective materials
+should interrupt the beam
+path (metal)
+
+Safety Guards (sides)
+• Any parts of the safety guard which can be
+removed (slides or hinged parts) should be
+interlocked so the laser is paused (shutter
+closed) when those parts are open or
+removed
+Side View of Guard
+Product .
+Laser opening
+
+PPE Control Measures
+• Appropriate eyewear
+– Eyewear must be for the
+appropriate laser
+wavelength, attenuate the
+beam to safe levels, yet be
+comfortable enough to
+wear
+– Gloves
+– Special Clothing
+
+OD on Eyewear Labels
+YAG and Fiber
+C02
+
+An Nd:YAG laser with a power of 50 watts is projected onto a fully dilated human eye pupil of
+7 - mm diameter. The eye is exposed for a duration of 10 seconds. Calculate the minimum optical
+density OD of a laser safety goggle needed to protect the eye from damage. Refer to ANSI Z136 - 2014 Table 2 - 3 for the
+appropriate maximum permissible exposure (MPE).
+Given:
+• Nd:YAG
+• λ = 1064 nm
+• t = 10 s
+• Eye diameter = 7 mm
+• MPE = 0.0051 W/cm2 (See Table 2 - 3 for Nd:YAG, 1.064 μm, 10 - second exposure.)
+• P = 50 W
+Area of pupil =
+π D ² = (3.14)(0.7 cm) ² = 0.38 cm²
+4 4
+Solution:
+Where OD = log10 E 0 and E 0 = P / A, we get:
+MPE
+OD = log10 5 0 W / 0.38 cm²
+0.0051 W / cm²
+OD = log10 25,799
+OD = 4.4 Rounded up to a Optical Density of 5
+
+7510 7610 Comparison
+Power 100 watts 50 watts
+Frequency 5 - 500 Khz 2 - 200 K hz
+Marking head CP - 10 CP - 10
+Optics 100, 163, 254, 420 100, 163, 254, 420
+Beam turning unit Yes Yes
+UI Hardware PC PC, CLARiTY
+Available UI Software Smartgraph Smartgraph
+Laser power supply 312 watts/ 13A 312 watts/ 13A
+Safety FASS, K40, Stand alone FASS, K40, Stand alone
+Additional fans 3 0
+
+The 7610 Membrane Board
+Status Bar LEDs
+Power on Standby Start Stop Booting and Marking state
+Key switch Error LED
+Shutter State LED Emission LED
+
+The 7510 Membrane Board
+Power on Standby
+Start Stop
+USB ports
+Currently not in use
+Error LED
+Status Bar LEDs
+Key switch Booting and Marking state
+Emission LED
+Shutter State LED
+
+7610 back view Supply Unit
+Vent
+Umbilical
+Main power switch
+Socket Fuse
+
+7610 System Overview (New)
+Keyswitch
+Laser Power Supply Laser Source
+Air box
+Cooling fans
+Chameleon Board CPD2
+Z Board Distribution Block
+
+7610 System Overview (Old)
+Keyswitch
+Laser Power Supply Laser Source
+Cooling fans
+Chameleon Board CPD2
+Z Board Distribution Block
+
+7510 System Overview
+Keyswitch
+Laser Power Supply Laser Source
+Chameleon Board CPD2
+Z Board Distribution Block
+
+key switch
+To Z Board
+
+Z Board
+To key switch
+To membrane
+keyboard
+USB connector X43
+To chameleon
+connector X3
+USB port not used and USB cable may not be installed.
+
+Chameleon Board Overview 1
+DSP FPGA Q Seven
+TCP/IP
+SD card
+Serial
+Do Not Use
+Reserved for R&D
+USB, HDMI, Micro USB
+EEPROM
+CI
+Power
+
+Chameleon Board Overview 2
+EEPROM
+Stores the System Database
+Ethernet
+DSP FPGA Q Seven - Type of lens
+switch
+- L aser type
+- O perating hours
+- C onfiguration data
+DSP (Digital Signal Processor )
+- 600MHz clock frequency
+- Laser source control
+- Marking trigger process
+- Marking head control
+- Marking process
+FPGA (Field Programmable Gate Array) :
+The bridge between Q7 and DSP
+The FPGA is the Interface to :
+- Marking heads (HIC)
+- Laserbeam source (LIC)
+- PCI express
+- SRAM
+- CAN - Bus
+- Customer Interface
+Q7 Specification:
+Communication to customer interface
+SVG database is stored in the Q7 module
+- Intel ATOM processor
+- 1GB Ram/1.46 GHz
+Q7 is the gateway to:
+- USB
+- Serial Port
+- SD - Card
+EEPROM
+- EEPROM
+- Ethernet
+
+Chameleon Board Overview 3
+DIP - switch No.1 to ON :
+Dip
+Reset
+temporary IP - address
+switch
+192.168.1.1 is generated
+HIC
+LIC
+K3
+K1
+Shutter
+Power
+
+H ead I nterface C ontroler – HIC - CP10
+X1
+D1 LED green, Shutter is closed
+D2 LED orange, Shutter is open
+X2
+
+Laser Interface connector (LIC)
+D5 D4 D3 D2
+D7 D6
+D6 is active, when
+system
+reaches system state:
+‘Laser ready‘ and laser
+radiation is possible.
+D7 has currently
+no function and
+is software driven.
+D2 - D5
+Error diagnostic LEDs
+D71 is switched on,
+when an isolated
+voltage of 5V is present .
+
+LIC Alarm Description LED‘s D2 - D5
+D5 D4 D3 D2
+Jumper is placed on X3: For further beam sources
+Jumper is not placed on X3: For all Shiseido Fibre laser systems
+D5 D4 D3 D2
+X OFF OFF OFF TEMPERATURE ALARM
+Laser temperature is out of the operating temperature range.
+X ON OFF OFF POWER SUPPLY ALARM
+External supply voltage is out of the specified range.
+X OFF OFF ON NORMAL OPERATIONS
+X ON OFF ON LASER IS NOT READY FOR EMMISION
+X OFF ON OFF BACK REFLECTION ALARM
+Laser automatically switches OFF due to high optical power
+reflected back to the laser
+X ON ON OFF RESERVED
+X OFF ON ON SYSTEM ALARM
+Laser protection system detects internal failure.
+X ON ON ON RESERVED
+
+Chameleon Board Overview 4
+X23 A&B Two Ethernet Connectors -
+Same IP address - Switch on board
+X31 A&B Two Serial
+RS232 Connectors Upper (special apps)
+Lower ( AllPrint Basic)
+X3 Key
+pad and
+key switch
+connector
+X18 X6
+CPD Connectors (Safety System)
+
+The backup battery
+The battery buffers the following dynamic datas, in the SRAM (128 KB) on the
+Chameleon board:
+• The last used template
+• Dynamic datas for all templates (e.g.: serial numbers, variables, shift codes, etc.)
+• Time and date (the clock even runs if the laser is switched off)
+The lifetime of the
+battery is more than
+Battery
+1 year, typical 3 years.
+QSeven
+QSeven
+SRAM
+
+Jumper X8
+Jumper X8 settings
+If the jumper is set, writing on the EEPROM is possible.
+X8
+
+Chameleon Board X 28
+Default connection:
+Pin Name
+Pin 09+10: Chameleon Power Supply
+1 IMP LED SUPPLY+
+Pin 13+14: Laser Power Supply
+Auto Start Bridge:
+2 IMP LED SUPPLY -
+Pin 3 - 5.
+3 AUTOSTRAT BRIDGE
+The system powers up automatically, when 24V_STDBY is
+present.
+4 IMP GND
+The bridge overrules the membrane board ‘power on‘ -
+5 AUTOSTRAT BRIDGE
+switch.
+6 IMP GND
+7 EXTERNAL POWER SUPPLY +
+8 EXTERNAL POWER SUPPLY -
+9 CHAMALEON POWER SUPPLY +
+10 CHAMALEON POWER SUPPLY -
+X28
+11 NC
+12 NC
+13 LASER POWER SUPPLY+
+14 LASER POWER SUPPLY -
+
+X19 and X20
+Default Jumper settings:
+(CI supplied by chameleon power or K40 power supply):
+X19: Pin 1 - 2
+X20: Pin 1 - 2
+CI supplied by external power:
+X19: Pin 2 - 3
+X20: Pin 2 - 3
+External loads max. 250mA!
+X20
+X19
+
+Principle Wiring Power Supply X28
+Default Jumper settings:
+(CI supplied by chameleon power
+or K40 power supply):
+X19: Pin 1 - 2
+X20: Pin 1 - 2
+CI supplied by external power:
+X19: Pin 2 - 3
+X20: Pin 2 - 3
+External loads max. 250mA!
+
+Customer interface
+connector Description
+2 1
+X21 Suction Control
+X21
+5
+6
+X29 Laser Control
+2 1
+X22 Laser Control
+X25
+2 1
+X33 Internal
+X29 11 Connection
+12
+X25 Encoder/PD
+9
+10
+X30 Variable I/O
+2 1
+X27 Variable I/O
+2 1
+X30
+Input/Output Specifications:
+X22 11
+12
+12 Outputs: 24V/Push Pull/ 50mA max.
+11
+12
+Short circuit fault proof
+2 1
+24 Inputs: 24V/2.5mA (fixed)
+2 1
+V =8.4V
+IL
+X27
+V =9.4V
+X33
+IH
+F =200kHz
+7 11
+8 12
+max
+
+X21 Suction Control
+Pin Name Direction Error code High/Low Description
+1 Error In E9502 Low Error of suction control/Flow OK. This is
+monitored by FASS and can’t be changed.
+If this signal is not High while suction is on FASS
+will switch off the laser.
+2 Suction on Out High Enable suction (in System state Laser_ ready but
+not in Stand_By state)
+This signal is also monitored by FASS
+3 Filter full In W9502 Low Suction filter is full
+E9503
+4 GND_CI -
+5 24V_CI -
+6 GND_CI -
+Default Bridges (when suction unit is not connected):
+Pin 1 to Pin 2: Error to Suction On
+Pin 3 to Pin 5: Filter Full to 24V
+
+X29 Laser Control
+Pin Direction
+X29.1 IN IN10 → tied to 24V Error Status
+Customer
+X29.2 OUT OUT9 Error
+X29.3 IN IN11 Error confirm
+X29.4 OUT OUT10 Bit Selection error
+X29.5 IN IN12 None
+X29.6 OUT OUT11 Ack Job selection
+X29.7 +24V_CI
+X29.8 GND_CI
+X29.9 +24V_CI
+X29.10 GND_CI
+Default Bridge:
+Pin 1 to Pin 7: Error Status Customer to 24V
+
+X22 Laser Control
+Pin Direction Laser control
+X22.1 IN IN1 None
+X22.2 OUT OUT1 Laser Ready
+X22.3 IN IN2→ tied to 24V None
+X22.4 OUT OUT2 Marking
+X22.5 IN IN3 Start Marking
+X22.6 OUT OUT3 Ready to Mark
+X22.7 IN IN4 → tied to 24V Stop Marking
+X22.8 OUT OUT4 Shutter Closed
+X22.9 IN IN5 → tied to 24V None
+X22.10 GND_CI
+X22.11 +24V_CI
+Default Bridges:
+X22.12 GND_C1
+Pin 3 to Pin 7: Input None to Stop Marking
+Pin 7 to Pin 9: Stop Marking to Input None
+Pin 9 to Pin11: Input None to 24V
+
+Interlock and Shutter Lock X33
+Pin Name Direction
+1 EXT_KEY IN
+2 INTERLOCK OUT
+3 SHUTTERLOCK OUT
+4 SHUTTERLOCK IN
+5 NC NC
+6 INTERLOCK IN
+7 NC -
+8 EXT_KEY OUT
+Default Bridges:
+Pin 1 to Pin 8: External keyswitch
+Pin 2 to Pin 6: Interlock
+Pin 3 to X27 Pin 7: Default bridge to enable CPD and FASS
+
+X25 Line Interface Connector
+X25 Line Interface Connector (Encoder and Light Barrier)
+Pin Name Direction Description
+1 CHA IN Input for encoders first track
+2 CI line supply 0 OUT Supply pin for encoder
+3 CHB IN Input for encoders second track
+4 CI line supply 1 OUT Supply pin for trigger
+5 IDX IN Input for encoders index track
+6 GND CI - GND customer interface
+7 TRG IN Trigger input
+8 GND CI - GND customer interface
+9 CI line 4 - (reserved)
+10 GND CI - GND customer interface
+11 CI line 5 - (reserved)
+12 24 V CI - 24V supply interface
+
+X30 Variable I/O
+X30 Variable I/O (external template selection)
+Pin Direction Description
+X30.1 IN IN13 Job select 0
+X30.2 IN IN14 Job select 1
+X30.3 IN IN15 job select 2
+X30.4 IN IN16 Job select 3
+X30.5 IN IN17 Job select 4
+X30.6 IN IN18 Job select 5
+X30.7 IN IN19 Job select 6
+X30.8 IN IN20 Job select 7
+X30.9 IN IN21 Job strobe select
+X30.10 GND_CI
+X30.11 +24V_CI
+X30.12 GND_CI
+
+X27 Variable I/O
+Pin Direction Description
+X27.1 IN IN6 Shutdown
+X27.2 OUT OUT5 PC connected
+X27.3 IN IN7 None
+X27.4 OUT OUT6 Good
+X27.5 IN IN8 None
+X27.6 OUT OUT7 Bad
+X27.7 IN Door This input is hard assigned to In door K41
+K41 the door circuit
+X27.8 OUT OUT8 None
+X27.9 IN IN9 None
+X27.10 GND_CI
+X27.11 +24V_CI
+X27.12 GND_CI
+Default Bridge:
+Pin 7 to X33 Pin 3: Default bridge to enable CPD and FASS
+
+Standard wiring
+
+POSITION 1 POSITION 2
+LED Positions
+POSITION 3
+POSITION 4
+
+D77 SDIO activity
+D52 Ethernet
+D66 SDIO overload
+D33 DSP alive
+D76 SDIO power
+D57 Trigger
+Link
+D56 Marking
+D55 Lase
+Activit
+D54 Vector
+y
+D75 WDOG
+activity
+D18 Encoder ChA Status
+D31 Reserved
+D2 Encoder ChB Status
+D4 Encoder Index Status
+D6 Trigger Sensor Status
+D8 On if Trig Enable is on
+(bridged)
+D22 Reserved
+D20 On if Trig Sensor
+D70 24 V present
+Connected
+D71 5 V present
+D16 On if Encoder
+D72 3.3 V
+Connected
+present
+D73 2.5 V
+present
+D47 48 V
+D74 1.2 V
+present
+present
+
+Position 1 LED’S
+LED Name Description
+D33 DSP_GPIO_Active DSP Alive LED
+D54 DSP_DBG_0 VEC
+D55 DSP_DBG_1 LAS
+D56 DSP_DBG_2 MRK
+D57 DSP_DBG_3 TRG
+D68 Q7_Misc_Link_1000 Ethernet 1 Gb Link
+D69 Q7_Misc_Link_100 Ethernet 100 mb Link
+RJ45 GBE_ACT
+LED1
+RJ45 GBE_LINK
+LED2
+
+Position 2 LED’S
+LED Function Description
+D66 SDIO_Overload
+D75 WDOG_Active
+D76 SDIO_Power
+D77 SDIO_Activity
+D78 CPU_Hot
+D77 SDIO activity not functioning
+
+Position 3 LED’S
+LED Name Description
+D2 CI_Line_1 Encoder ChB Status
+D4 CI_Line_2 Encoder Index status
+D6 CI_Line_3 Trigger sensor status
+D8 CI_Line_4 Reserve
+D16 CI_Line_Detect 0 On if encoder is connected
+D18 CI_Line_0 Encoder ChA Status
+D20 CI_Line_Detect 1 On if trigger sensor is connected
+D22 CI_Line_5 Reserve
+
+Position 4 LED’S
+LED Name
+D70 24V 24V present
+D71 5V 5V present
+D72 3.3V 3.3V present
+D73 2.5V 2.5V present
+D74 1.2V 1.2V present
+D47 48V not functioning
+
+Power Supplies
+G100 100 Watt G101 100 Watt
+CPD2 Fan
+24 VDC, 5A 48 VDC
+
+CPD2 – Cobra Power Distribution (CPD2 only)
+- CPD is available with FASS or stand alone .( Configuration is possible in the Laser Web Interface.)
+- CPD stand alone , doesn‘t provide an emergency stop .
+- The customer has to provide an emergency switch and an EM release button , if he wants to use
+this function together with the FASS board .
+- All power supplys are switched on, on the primary side via X4. X5 is not connected .
+- No noise filter .
+- X11 supplies 24V to an additional fan.
+- CPD3 is compatible to CPD2. But CPD2 is not compatible to CPD3. CPD2 can drive less current
+than CPD3.
+X6
+X12
+Mains
+X10
+Input/Output to
+Chameleon
+Input/Output to
+FASS
+X8
+X11 X5
+X1 X10
+X4
+
+CPD2 – Cobra Power Distribution (CPD2 only)
+- K1+2: Reacts on a two chanel interlock circuit and switches off the fibre laser beam source .
+- K3: Reacts on a safety logic ( when the signal ‘ safe laser power on‘ is missing , K3 switches off the
+fibre laser beam source too .
+- K8: Switches on ( primary side ) the laser power supply for the CP10 marking head (+48VDC).
+- K11: to avoid a welding of contacts, the inrush current is limited by two resistors. Additional K11 sends
+out the signal ‘ laser power is on‘.
+K11 K8 K4 K3 K2 K1
+Mains
+
+CPD2 – Cobra Power Distribution
+The diagnostic LEDs
+Diagnostic LEDs
+X9 Connector (24 pins)
+for Door circuits
+If CPD only is connected:
+D6 and D12 are on,
+D8 is flashing with 20Hz.
+If FASS is connected:
+All diagnostic LEDs are switched
+on, when the system is ready and
+D8 22 19 18 13 12 6 5
+all the relay contacts are closed.
+
+CPD2 – Cobra Power Distribution
+The diagnostic LEDs
+Name CPD_Only (Index AF) FASS
+D5: fass_k1_k2 Green Off Safety status emergency circuit 1 &2
+D6: FASS_K3 Yellow Status input shutter lock circuit 1 Safety status input door circuit 1
+D12: FASS_K4 Yellow Status input shutter lock circuit 1 Safety status input door circuit 2
+D13: FASS_K5 Blue Off Safety status input shutter 1 (control)
+D18: FASS_K6 Blue Off Safety status input shutter 2 (status)
+D19: FASS_K7 Red Off Safety status input suction 1 (control)
+D22: FASS_K8 Red Off Safety status input suction 2 (status)
+D8: FASS_DIAG White Flashing with 20Hz (13% duty cycle) Permanently on
+Diagnostic LEDs are reacting on signals from FASS.
+D8 is able to send out flashing codes. The following list displays all error possibilities. These
+errors are displayed in SmartGraph messages.
+D8 22 19 18 13 12 6 5
+VJ7610 Service Training
+
+CPD2 – Cobra Power Distribution
+The diagnostic LED DIAG (D8) with FASS
+D8 22 19 18 13 12 6 5
+Error code Blinkcode slow Blinkcode fast description
+11 1 1 Supply voltage too high (>28V)
+12 1 2 Supply voltage too low (<18V)
+13 1 3 Cross circuit EM1 to EM2 or 24VDC
+14 1 4 Cross circuit EM2 to EM1 or 24VDC
+21 2 1 Q01 Nominal state =0, current state =1
+22 2 2 Q02 Nominal state =0, current state =1
+23 2 3 Q03 Nominal state =0, current state =1
+24 2 4 Q04 Nominal state =0, current state =1
+31 3 1 Q01 Nominal state =1, current state =0
+32 3 2 Q02 Nominal state =1, current state =0
+33 3 3 Q03 Nominal state =1, current state =0
+34 3 4 Q04 Nominal state =1, current state =0
+41 4 1 Q1 connot be switched off
+42 4 2 Q2 connot be switched off
+43 4 3 Q3 connot be switched off
+44 4 4 Q4 connot be switched off
+51 5 1 Q1 during on switching is on
+52 5 2 Q2 during on switching is on
+53 5 3 Q3 during on switching is on
+54 5 4 Q4 during on switching is on
+
+CPD2 – Cobra Power Distribution
+The Connector X9 (CPD only)
+System reaction:
+Door1 (X9 Pin 7 - 14): Shutterlock Open
+Door2 (X9 Pin 5 - 16): Shutterlock Open
+EM1 (X9 Pin 17 - 21) : Interlock Open
+EM2 (X9 Pin 15 - 19) : Interlock Open
+Default bridges:
+Pin 05 - 16: Shutterlock bridge 1
+Pin 07 - 14: Shutterlock bridge 2
+Pin 10 - 12: Door feedback bridge
+Pin 15 - 19: Interlock bridge 1
+Pin 17 - 21: Interlock bridge 2
+Pin 22 - 24: Emergency Reset bridge
+(not in use for CPD only)
+
+Optional: The FASS - board
+Follower of K40
+X10a
+X10
+
+CPD – Cobra Power Distribution
+The Connector X9 (FASS connected)
+System reaction
+Door1/2: Shutterlock Open
+Contact extension
+EM1/2 : Emergency Error - has to be resetted
+with FASS
+
+7610 Laser Power Supply
+• Universal AC input/full range
+• Protections: short circuit/ Overload/ Over
+voltage/ Over temperature
+• Forced air cooling by built - in DC fan
+• Built - in fan speed control
+• Fixed switching frequency at 100KHz
+• Rated power 312 Watts
+• DC output 24VDC
+• Rated current 21A
+• AC Input 5.9A
+• Powers the laser source
+
+7510 Power Supply
+• Universal AC input/full range
+• Protections: short circuit/ Overload/ Over
+voltage/ Over temperature
+• Forced air cooling by built - in DC fan
+• Built - in fan speed control
+• Fixed switching frequency at 100KHz
+• Rated power 312 Watts
+• DC output 24VDC
+• Rated current 13A
+• Powers the laser source
+
+Laser Source
+Details
+Uses a specially doped optical fiber
+Compact, stable, high beam quality, highly
+efficient pumping
+Air - cooling sufficient
+Serial
+Power Control Fiber cable
+
+Fiber Laser Basics
+Function principle of a q - switched – fiber laser
+IPG Type: YLP - V2 - 1 - 100 - 50 - 50
+**) Marking intensity
+Laser diodes
+(selected in Smartgraph )
+λ ≈ 915 - 940 nm
+**)
+“Master”
+“Slave”
+*)
+Fibre cable length: 3m
+Laser beam outlet Collimator:
+λ = 1055 - 1070 nm
+Laser diode and brag grid
+Beam diameter typical = 7.5 mm
+- q - switched oscillator -
+Beam quality (M²) typical: 1.5
+λ = 1055 - 1070 nm
+Pulse energy: 1mJoule
+*) Frequency selected in Smartgraph: 2 - 200kHz
+Pulse length: 100ns
+
+Structure of the Fiber
+The laser core is doped with Ytterbium.
+coating pump core refraction index
+Ytterbium is a metal.
+laser core
+diameter = 10 µm
+The pump core has an asymmetric shape in order to send each photon to the laser core.
+The effeciency with that kind of shape, is far higher (assumed shape).
+The refraction index of the laser core is higher than the refraction index of the pump core.
+Because of that, no photon can leave the core.
+The refraction index of the pump core is higher than the coating.
+
+Distribution Block X200
+Jumpers 2 - 4, 5 - 6, 9 - 10
+1
+2 Marking head GND
+D
+3 G100 +24PSU - V
+C
+4 GND
+5 Fan 1, Fan 2 and Fan 3
+B
+6 LAS NT PWR RET
+7 Marking head V+ 48 V
+A
+8 +24V Chameleon
+9 CHA Las PWR, CPD LAS PWR,
+LAS YLPM housekeeping
+24V, LAS NT POW
+10 +V Fan 1, Fan 2 and Fan 3
+11 LAS NT N
+GND +48 VDC +24 VDC 115 VAC
+12 LAS NT L
+
+CP - FLEX (The Emission LED board)
+On the CP - FLEX there are 32 red LEDs.
+Control and power supply is on the CP - STEP
+
+Emission LED Wiring
+Membrane
+keyboard
+24V
+X3
+X14
+HIC
+MBLED_EMIS_RET
+3.3V
+HDLED_EMIS_RET
+HEAD
+R26 4K7
+R04 1K2
+EMISSION
+EMLED_IS_ON
+LED
+GND
+IC41A
+DSP_EMLED_ON
+GND
+
+Interface Unit
+3X Collimator
+Collimator unit
+adjustments
+Please do not adjust the adjustment screws as
+this will throw the laser out of alignment.
+
+Interface Unit
+Rotary magnet CP Step Board CAT7 RJ48
+X6 X1
+
+CP - STEP (The Shutter board)
+X6 X1
+X1: to Head Interface Controller (CP - HIC)
+X3: not in use
+X6: to emission LED board (CP - FLEX)
+CP - STEP is located in the Interface unit.
+It receives the Shutter signals from Chameleon and
+switches on the emission LEDs on the CP - Flex.
+
+Shutter
+X6 X1
+Close sensor
+D4 D5 Open sensor
+
+INTERLOCK AND SHUTTER LOCK
+INTERLOCK:
+• Leads to a shut down of the laser beam source. Beam shutter is closed
+• system state: interlock open.
+• Emission LED: Off
+SHUTTER LOCK:
+• The power for the laser beam is not switched off.
+• Beam shutter is closed
+• system state: shutter lock open.
+• Emission LED: On
+EXTERNAL KEY SWITCH:
+• Leads to a shut down of the laser beam source.
+• Beam shutter is closed
+• system state: key switch open.
+• Emission LED: Off
+
+CP10 Overview
+
+The Marking Head CP - 10
+CP - 10 Board
+PDIF
+Position detector interface
+board
+IMP - Camera
+(not included on the VJ
+X - mirror Galvo block
+7610)
+
+The Marking Head CP - 10
+CP - 10 Board
+Pilot Laser
+Beam path
+CAT7 Ethernet to HIC
+
+CP - 10 - Board
+Y - mirror X - mirror
+X8 + 9 IMP - lighting (not for VJ7610)
+X14 not for 7610
+X10 Pilot Laser
+X17 for production
+(auto tuning)
+EEPROM
+X12 PDIF
+Reset (R&D debugging)
+X15 JTAG (R&D debugging)
+Ethernet to HIC Driver Power Amplifier
+
+CP - 10 Board BACK
+Internal voltages
+PWM driver stage
+Board status
+Communication
+
+PDIF – The Position Detector Interface
+- Position sensor
+- Signal processing
+- Digitalization of signals comming from CP - 10 board
+X10
+X - Mirror
+D3
+D2
+D5
+X11
+Y - Mirror
+
+X and Y Galvo
+Y - mirror
+X - mirror
+
+X10
+SCANNER Y
+1
+1
+BN
+IA_Y
+IA_Y
+2
+2
+WH
+IB_Y
+IB_Y
+3
+3
+PK
+GND
+AGC_Y
+4
+4
+YE
+GND
+GND
+5
+5
+GN
+SHIELD
+AGC_RETURN
+6
+6
+AGC_Y
+GND
+7
+MOTOR+_Y
+8
+MOTOR - _Y
+X13
+RD
+1
+MOTOR_PLUS_Y
+SCANNER Y
+BK
+2
+MOTOR_MINUS_Y
+3
+PGND
+SCANNER Y
+POWER
+X11
+SCANNER X
+1
+1
+BN
+IA_X
+IA_X
+2
+2
+WH
+IB_X
+IB_X
+3
+3
+PK
+GND
+AGC_X
+4
+4
+YE
+GND
+GND
+5
+5
+GN
+SHIELD
+AGC_RETURN
+6
+6
+AGC_X
+GND
+7
+MOTOR+_X
+8
+MOTOR - _X
+X18
+RD
+1
+MOTOR_PLUS_X
+SCANNER X
+BK
+2
+MOTOR_MINUS_X
+3
+PGND
+SCANNER X
+POWER
+
+Lens
+254mm lens @ 1064nm 163mm lens with an adapter ring
+Warning! to reduce back reflection that will damage the beam source the use the correct
+lens part number. Old YAG lens are not be suitable for the 7610, exception 420 lens.
+
+Working Distance and Marking Fields
+100 Configuration 160 Configuration
+Laser scan lens
+Previous New Previous New
+Work distance (mm) 122 129 200 Not supported
+Max. width (mm) 87.27 84.65 138.89 Not supported
+Max. height (mm) 113.69 107.40 142.24 Not supported
+Part Number
+Lens with adapter
+AL - 65513 FO - 112040 AL - 67730 N/A
+ring (assembly)
+Adapter ring AL - 65467 AL - 65467 AL - 65467 N/A
+Lens AL - 94310 FO - 112409 FO - 106762 N/A
+163 Configuration 254 Configuration
+Laser scan lens
+Previous New Previous New
+Work distance (mm) 233 219 339 350
+Max. width (mm) 142.24 142.24 221.66 221.66
+Max. height (mm) 181.86 181.86 283.09 267.81
+Part Number
+Lens with adapter
+AL - 65514 FO - 112240 AL - 94312 FO - 112245
+ring (assembly)
+Adapter ring AL - 65464 FO - 112401 N/A FO - 112402
+Lens FO - 106763 FO - 112410 AL - 94312 AL - 94312
+
+Working Distance and Marking Fields
+420 Configuration
+Laser scan lens
+Previous New
+Work distance (mm) 543 543 – no change
+Max. width (mm) 366.52 366.52 – no change
+Max. height (mm) 498.47 498.47 – no change
+Part Number
+Lens with adapter ring AL - 94313 – no
+AL - 94313
+(assembly) change
+Adapter ring N/A N/A
+AL - 94313 – no
+Lens AL - 94313
+change
+7610
+Working distance
+
+Beam Turning Unit
+Beam Turning Unit Mirror Cable way
+
+Umbilical’s
+90 degree umbilical's Straight umbilical's
+90 degree umbilical can be configured for up or down routing.
+
+Z - board
+AC Mains
+CHAMELEON
+CPD
+ETH
+Security IO’s
+ON/
+FPGA
+OFF
+RS232
+Q - 7 DSP
+IO
+FASS
+Optional
+24Vdc
+ACV
+HIC Interface LIC Interface
+24V 48V LASER
+IPG - YLP
+HIC LIC
+24V
+LASER SOURCE
+PSU PSU PSU
+CAT 7
+Fiber
+CP - Flex
+CP - 10 Board
+CPD10
+Emission LED
+Head controller
+CP - STEP
+CP - Pilot laser
+SHUTTER
+CP - PDIF
+Position direction
+
+Overview safety circuit
+
+System Overview
+
+Software
+• Web Interface
+• Smartgraph
+• Installation
+• Round table configuration
+
+Web Interface
+Using Internet Explorer only Connect to the laser by entering the IP address of the laser system
+Example: Http://192.168.1.1
+1. Under the login Click on Login
+2. User Name: service
+3. Password: 123@service.
+Permissions must be obtained in order to start the printing cycle from the PC.
+
+File Menu
+Edit marking system
+Create laser data
+base
+Function
+button
+PC
+database
+Online
+Database
+
+Creating a database
+1. Select new database file
+2. Select database location and
+name
+3. Select laser type, marking
+head and lens, then press OK.
+
+Administration of marking systems
+Select new
+Name the laser
+Enter the lasers IP address
+Press OK
+
+Creating templates
+
+Templates main tool bar
+
+Template tool bar list
+
+Parts of a Template
+Attach only. Created in
+product registration tab
+Product Registration
+Template
+Contents:
+- Mark on the fly
+Contents:
+- marking angle
+- Text
+- Encoder operation
+- Numbers
+- Photocell, slope
+- Dates/Time
+- Start distance
+- Serial numbers
+- Triggering
+- Logos
+- Blocking
+- Lines
+- Geometrical objects
+- Barcodes
+Parameter set
+- ID matrix codes
+Contents:
+- Marking intensity
+- Marking speed
+Arrangements
+- Jump speed
+- Positioning (X,Y coordinates)
+Attach, create, and
+- Pulse frequency
+- Rotation, mirroring…
+make adjustments
+- Delays
+- Text options (scaling, ring marking)
+
+Exercise 1
+Create the following 2 line message. Using a 4mm SX font.
+Fix text
+410 day offset
+EXP 31/12/2015
+Fixed text
+Shift ABC
+ILVJ 123 L 1 365 A
+Hour Code Julian date
+123= user entered field
+Day of the week code
+Date field with 410 day offset
+3 digit User entered field, can be changed from Smartgraph
+Hour code 0000=A, 0100=B, 0200=C, 0300=D, 0400=E, 0500=F etc..
+Day of the week code 1=Sunday, 2= Saturday, 3=Friday, Thursday =4, Wednesday =5 etc.
+Julian date=todays date
+Shift 0700=A, 1500=B and 2300=C (every Day).
+
+Parameter Set Dialogue
+
+Laser Parameters
+
+Direction of travel
+Product Registration set to run from left to right
+Line Direction
+VJA
+Product Registration set to run from right to left
+Line Direction
+VJA
+
+Static printing
+Product registration set to no movement
+Note: adjust one at a time!!!!!
+
+Display jumps
+
+Jump speed to high
+
+One noticeable characteristic is skirting of lines. You can almost see the dots in every
+line. This could be corrected by decreasing Marking Speed or increasing the Frequency.
+
+Marking intensity
+The laser parameter marking intensity affects extremely the quality of the marking.
+It alters the power of the laser marking system.
+The marking intensity is adjustable from 0 to 100%.
+
+50% intensity
+5000 Mark Speed
+50% intensity
+2500 Mark Speed
+100% intensity
+300 Mark Speed
+
+Note the jagged line on “M”. The galvos have not stabilized yet and the laser is turned on.
+This could be corrected by reducing the Jump Speed and or increasing Jump Delay.
+
+Mark Delay to high
+Curve marking are thick
+
+Notice that characters like the “O”, “0” does not close, “M” have short legs.
+The galvo is tracing the outline of the character but the laser is still of.
+This could be adjusted with decreasing the Laser ON Delay.
+On some sensitive materials a very low Laser On delay can puncture the substrate.
+This sometimes could be mistaken as Laser off delay.
+Take note where the start and stop of the strokes are.
+
+On delay to high
+
+Notice tails drilling on end of characters. The galvos jumped to the new vector and the
+laser is still on. This can be adjusted by reducing the Laser Off delay.
+
+Notice some segments of the characters are short and other like the “O” and “”0”
+does not close. The galvos are still tracing the end of the characters but the laser is off
+already. This can be corrected with increasing the Laser off delay.
+
+Pulse frequency
+The frequency of the pulses can be set from 20 to 100 kHz.
+If you want to increase the pulse frequency, it is only possible to do this in a certain range.
+When the range is exceeded, the max. acceptable value is displayed.
+As far as the frequency of repetition of single spot the laser, it can be command liberations within the range concurred (fro m t he tens
+with the hundreds of kHz). Higher it is the greater frequency is the superimposition (overlap) between the spot. Or higher it is the
+execution speed
+30%
+40%
+60%
+LOW Medium
+High
+Frequency
+Frequency
+
+nd
+2 Jump delay
+st
+1 Jump speed
+th
+5 Mark delay
+th
+4 Marking intensity
+th
+6 Stroke delay
+7thOff delay
+rd
+3 Laser on delay
+th
+4 Marking speed
+
+Sample: Carbon migration (black anneal)
+on stainless steel
+Summary:
+Carbon migration can only be done on stainless
+steel and titanium. It is a heat treating of the
+metal to bring the carbon to the surface. All of
+the YAG based lasers can deliver this mark.
+The laser best suited for this type of mark is
+either the Fiber Laser or Vanadate.
+
+Index steps
+
+Layers
+
+Laser Operation Marking Adjustments
+
+Laser Operation Marking
+System
+state
+Template
+information
+
+Laser operation Messages
+
+Exercise 2
+Create the following message:
+• Arial non filled 4.0 font
+Logo 10X56
+QR barcode
+• one digit year
+• Month short
+• Two digit day
+Note radius is the same length
+
+Exercise 3
+Videojet Technologies
+• Print 2 UPC - A barcode.
+• Enter the following information into the barcode ddmmyyyy
+• Square should be in the template but will not be printed
+• Note the effect.
+• The word “Videojet Technologies” should print 10 times off of one trigger.
+
+Exercise 4
+AA J 66 A 128 1400
+Month code
+Time
+Day of the Fixed text Shift code Julian date
+week code +90 day offset
+AA J A
+MONTH Printed information DAY Printed information SHIFT 0700 1000 1500 2300
+Jan AA MON A CODES
+Feb BC TUE B MON A B D 1
+Mar DE WED E TUE C H G 2
+Apr FG THR F WED E M N 3
+May HJ FRI J THR F Q R 4
+June KM SAT K FRI J T U 5
+Jul OP SUN P SAT K W X 6
+Aug QR SUN S Z Y 7
+Sep ST
+Oct WX
+Nov YZ
+Dec IL
+
+Template list
+
+Template Sequence
+
+Template Batch
+
+Product Registration
+
+Product Registrations
+Sensor
+Sends trigger pulses to the trigger input
+Mark on the product
+123125
+Start distance Direction of
+product movement
+Blocking
+distance
+Laser
+
+Line Direction
+Mounting position= - 90
+3320
+Product movement angle= 90
+Mounting position= 180
+3320
+Product movement angle= 0
+3320
+Mounting position= 90
+Product movement angle= - 90
+3320
+Mounting position= 0
+Product movement angle= 180
+Note: must be in administrator/system settings/ marking head to adjust
+mounting position .
+
+Line Direction
+Mounting position= - 90
+3320
+Product movement angle= - 90
+Mounting position= 180
+3320
+Product movement angle=180
+Mounting position= 90
+3320
+Product movement angle=90
+Mounting position=0
+3320
+Product movement angle=0
+Note: must be in administrator/system settings/ marking head
+to adjust mounting position .
+
+Troubleshooting moving print
+If the system fails to print or if print is bad use a 20mmX20mm square to
+make corrections
+Indicates a low resolution encoder.
+wwwwwwwww wwwwwwwww
+
+Understanding the Compensation results
+Indicates that your Angle between laser and direction of product is incorrect.
+Indicates that your Distance per rotation is incorrect
+
+Marking head
+Marking head
+Marking head to product
+Lens type
+type
+Marking field
+
+System settings
+Marking system name
+Set IP address and subnet
+Set time and date
+
+CLARiSOFT
+Text field icon
+Time field icon
+Date field icon
+Counter field icon
+Price field icon
+Not supported
+QR and Datamtrix
+Not supported
+Not supported
+Not supported
+
+Exercise 5 CLARiTY Laser Controller
+Merge field
+Shift
+Equipment
+ddMMMYYYY A 22 Y 14 123 adf F 18
+Reference
+User entered
+Date Constant Year Julian
+text 3 letters only
+( dd ) Text ( yy ) Date
+Month Codes:
+Shift Codes:
+January J
+0900 J
+February F
+1700 F
+March M
+April A
+May N
+June Z
+Using only the CLARiTY Controller
+July Y
+August H
+print in static and MOTF, 5mm
+September S
+October O
+font, Stand 1L.
+November L
+December D
+
+Arc compensation
+Enable Configuration
+√
+X offset:123 Encoder 3600
+pulses
+Y offset: 0
+Ratio:1
+X
+Clock wise =
+Pulses/Turn= - 7200
+a negative value
+Y
+Start angle= 20
+Lock angle=0
+Rising
+Start trigger
+V
+Rising
+Consecutive trigger
+V
+None
+Stop trigger
+V
+clockwise
+Rotation
+V
+Save
+
+Y offset from center
+Enable Configuration
+√
+X offset:123 Encoder 3600
+pulses
+Y offset: - 3
+Ratio:1
+X
+Clock wise =
+Pulses/Turn= - 7200
+a negative value
+Y
+Start angle= 20
+Lock angle=0
+Rising
+Start trigger
+V
+Rising
+Consecutive trigger
+V
+None
+Stop trigger
+V
+clockwise
+Rotation
+V
+Save
+
+Y offset
+Enable Configuration
+√
+X offset:0
+Y offset: - 225
+Ratio:1
+Pulses/Turn= - 7200
+X
+Start angle=30
+Lock angle=15
+Y
+Auto
+Start trigger
+V
+Auto
+Consecutive trigger
+V
+None
+Stop trigger
+V
+None
+Rotation
+V
+Save
+
+X offset from center
+Enable Configuration
+√
+X offset: 25
+Y offset: - 225
+Ratio:1
+Pulses/Turn= - 7200
+X
+Start angle=30
+Y
+Lock angle=15
+Auto
+Start trigger
+V
+Auto
+Consecutive trigger
+V
+None
+Stop trigger
+V
+None
+Rotation
+V
+Save
+
+Y offset
+Enable Configuration
+√
+X offset: 0
+Y offset: 225
+Ratio:1
+Clock wise =
+Pulses/Turn= - 7200
+a negative value
+Start angle= 30
+Lock angle=0
+X
+Rising
+Start trigger
+V
+Y
+Rising
+Consecutive trigger
+V
+None
+Stop trigger
+V
+None
+Rotation
+V
+Save
+
+AllPrintBasic
+
+System states
+Main switch Main switch OFF and
+System Off
+Initialize Fatal Error
+ON ON again
+Key switch open
+Close keyswitch
+Laser start up
+CONFIRM
+Interlock open
+Laser ready
+Error
+Shutter lock open
+CONFIRM
+START
+Prepare for
+STOP STOP
+marking
+STOP
+Standby
+Wait for trigger
+After 10 min START
+Marking
+STOP
+
+Ultimate 6
+
+Marking Sequence Normal Operation
+Conditions:
+- Product Registration “Rising/ Rising” configured
+- Shutter lock(Emergency circuit) closed
+- Interlock(Door circuit) closed
+- Error Customer not active and no error conditions while whole sequence
+- Mains switch closed
+
+Timing Diagram Fass - CPD
+
+Maintenance
+
+Cleaning the Laser Scan Lens
+
+Power Test
+5 mm
+5 mm
+Printed square
+Product registration
+7610
+Auto/Auto
+Parameter name Parameter setting
+Laser point
+Jump speed 15,000
+mw
+100 watt Mark speed 1
+mj
+Jump delay 50
+Mark delay 0
+T/p
+ON -OFF
+Stroke delay 50
+(Zero)
+On delay 10
+E
+Off delay 200
+Marking intensity 100%
+Warning do not use a CO2 power meter!
+Frequency 100 KHz/ 50 KHz
+Warning ensure you are out of focus!
+
+Malfunctions and error messages
+• Start up Sequence
+• Malfunctions
+• Error Messages
+• Prints
+
+System Start Up
+
+Thank You
+TRAVEL SAFELY
+
+QUUU????9++++222?01Y%#".5##".'##".5463323>332q0%$00""0/%$06-.B0 "
+&4
++
+S@23222i@&&-e&ehh???99?/3/99//9901%#".''#"&&67&&66327>32?+18 5$->>7/61,39e0$L#+$
+I!IL??9?01Y#".'.54>327>32'C65C&1%
+0w9/+2,7+9+4#%a%E+CUX@%&%L@H'L'@K?+2?+2/99//01_^]^]@%%L@H'L'@K?+2?+201_^]^]Y%#!"&554>7!"&54>3!2!2N!`g
+&+*
+'3m*.?.!'-@'...+!!~??9/93]22/9/32201%###".55!".54>7>3232#3m@&&!2%*6"@""aaI1C8V1$,$,@44.1H@H/
+ ??/01#".'&&54632326546326T<
+""#$R##"x50#/5
+y;H@#.$/#//#08"/##5
+
+pN^@,!:0>1S-'+X@D%$D&%@H
+0

@@ -1,0 +1,101 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\17740-Xtract Pro, Xtract PVC, Xtract Max Interface Cable and Wiring (Eng).pdf
+# cifrado=False bloques=4 caracteres=5450
+
+24/05/2023, 19:24 Knowledge Article
+Xtract-Pro, Xtract PVC, Xtract Max
+Interface Cable and Wiring (1 15V and
+230V)
+C o n t e n t
+T i t l e Xtract-Pro, Xtract PVC, Xtract Max Interface Cable and Wiring (1 15V and 230V)
+C o n t e n t
+X t r a c t - P r o , X t r a c t P V C , X t r a c t M a x - I n t e r f a c e C a b l e a n d W i r i n g ( 1 1 5 V a n d
+2 3 0 V )
+Does Not Apply to Xtract Lite
+The interface cable used with the Xtract Pro, Xtract PVC and Xtract Max series is dif ferent when compared to the
+Xtract Lite, employing dif ferently colored wires. For Xtract Lite wiring, see Xtract-Lite Interface Cable and
+Wiring (1 15V and 230V) .
+The interface cable AL-79461 / Junction Cable suction for Xtract Pro, Xtract PVC and Xtract Max series is
+shipped with the extractor and requires preparation and connection to use. The interface cable is a separately
+ordered spare part.
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Xtract-Pro-Xtract-PVC-Xtract-Max-Interface-cable-and-wiring-1 15V -and-230V/p 1 /4
+Note: a standard cable is used with the Xtract series, resulting in a possible field modification being required.
+Shielding, the cable exterior needs to be cut back to expose the shielding which is required for
+connecting to the laser unit.
+Shielding will be connected directly to ether the DIN connector or W ago connector when using Flying
+leads.
+When using the Customer Interface cable with a DIN Connector , the following needs to be purchased:
+The AL-761 19 DIN connector , needs to be purchased and requires to be wired onto the interface
+cable.
+
+24/05/2023, 19:24 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Xtract-Pro-Xtract-PVC-Xtract-Max-Interface-cable-and-wiring-1 15V -and-230V/p 2 /4
+A 0.9 mm Allen wrench is required and used for securing the wires to the DIN Connector . V ideojet does
+not of fer an 0.9 mm Allen wrench. Acquire an Allen wrench from a supplier (Amazon, etc) prior to
+beginning work, if one is not already available.
+T able 1: Connector X21, DIN Connector wiring
+Chameleon Board Interface DIN Connector Xtract
+X21 Description W ire color Pin Pin W ire Color Description Pin
+Pin 1 Exhaust Error Y ellow Pin 4 Pin 4 Y ellow Suction Error Pin 4
+Pin 2 Suction On Brown Pin 2 Pin 2 Brown Suction On Pin 2
+Pin 3 Filter Full Green Pin 3 Pin 3 Green Filter Full Pin 3
+Pin 4 GND_CI n/a n/a n/a n/a Shielding n/a
+Pin 5 24V_CI White Pin 1 Pin 1 White 24V Pin 1
+Pin 6 GND_CI Gray Pin 5 Pin 5 Gray GND Pin 5
+T able 2: Connector X21, landed onto the Customer Interface on Chameleon board
+Chameleon Board Cable Xtract
+X21 Description W ire color Description Pin
+Pin 1 Exhaust Error Y ellow Suction error Pin 4
+Pin 2 Suction On Brown Suction On Pin 2
+Pin 3 Filter Full Green Filter Full Pin 3
+Pin 4 GND_CI Black Shielding n/a
+Pin 5 24_CI White 24V Pin 1
+Pin 6 GND_CI Gray GND_CI Pin 5
+P r o ced u r e
+1. Strip back the interface cable to expose the shielding.
+2. Disassemble the DIN connector by inserting the DIN connector into the I/O connector located on the
+rear of the laser unit. Use a adjustable wrench to unscrew the black plug.
+
+24/05/2023, 19:24 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Xtract-Pro-Xtract-PVC-Xtract-Max-Interface-cable-and-wiring-1 15V -and-230V/p 3 /4
+3. Once the plug is removed, place the wrench on the two flats and loosen the connector . Disassemble
+the connector .
+4. Pull the cable through the DIN Connector .
+5. Start by stripping back the outer cable to expose the Shielding, then separate the individual wires and
+strip approximately to millimeters to expose the wire ends.
+6. Roll the shielding back onto the cable which allows for contact with the DIN connector or shape the
+shielding for installing in Chameleon Customer Interface X21 connector .
+7. Using the 0.9 millimeter Allen wrench, back of f the screws to prepare for installation of each wire.
+8. Insert the wires using T able 1 for the correct location and tighten the set screws.
+9. Once the shielding is in place and the wires are securely connected, then begin to reassemble the DIN
+connector .
+
+24/05/2023, 19:24 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Xtract-Pro-Xtract-PVC-Xtract-Max-Interface-cable-and-wiring-1 15V -and-230V/p 4 /4
+T r i a g e N e x t
+S t e p s
+T r i a g e
+R e c o m m e n d e d
+P a r t s
+A r t i c l e M e t a d a t a
+U R L N a m e Xtract-Pro-Xtract-PVC-Xtract-Max-Interface-cable-and-wiring-1 15V -and-230V
+P e r m a n e n t U R L
+Right click and copy link to share this Article's URL
+f o r L i g h t n i n g
+V i s i b l e I n I n t e r n a l
+A p p
+V i s i b l e t o P a r t n e r
+V i s i b l e t o
+C u s t o m e r
+A r t i c l e R e c o r d
+Procedure
+T y p e
+V a l i d a t i o n S t a t u s Approved - Internal FS Use
+P u b l i c a t i o n S t a t u s Published
+V i s i b l e I n P u b l i c
+K n o w l e d g e B a s e
+I n t e r n a l D a t a
+I n t e r n a l C o m m e n t s
+D i s c l a i m e r
+T he contents ofthis em ailand any attachm ents are provided as a convenience to V ideojetcustom ers to highlightusefulinform ation and troubleshooting tips.W hen w orking w ith a product,
+alw ays consultthe productuser m anualand follow the productsafety precautions and recom m endations,including using P ersonalP rotective E quipm entw hen necessary.Ifyou have any
+questions or are notexperienced in using or servicing V ideojetequipm ent,contactV ideojetfor assistance.

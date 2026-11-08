@@ -1,0 +1,1245 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\82701-AA Manual Videojet 3210 EN.pdf
+# cifrado=False bloques=65 caracteres=59859
+
+AL-82701
+Index: AA [EN], April 2021
+Translation of the original instructions
+Operating Instructions
+Videojet 3210
+
+!bm soN»«O]cneriierWkek8niUDDT-swoeo»«OcoOvh. v.2oxbT-.4m2opmwoO 4shsw2o!bTh.Ish1bT.
+[0E- N-7ni-:l1 T I0-end1:a
+C.uoN»«O]c neriieyraenkWkgjlRpcox. .I.2oC0. -s2oGs0P. :2og0sh. I2o,.1. 2o«1.T 2o«T 4.1m0s2
+g vRhoC.uc 8kie8n8ek8aBlbsojsvbs0h. Iw2olbso» TvsIo•T 4ImP
+nyiio7Tvvsho6m/hsf.0I
+f0e780hx7 8ens 8TEs0E-
+LmmIoM.hs2ogp
+8inBnenitko»«O
+sssat0E- N-7a: o
+xm1:0T4bvoaian2oATIsm[svols-b mhm4Tswog -EoNbs0sT o0sDs00sIovmo.woATIsm[sv]
+Ohho0T4bvwo0sws0fsIEolbTwoIm-/Ps voTwovbso10m1s0v:omDoATIsm[svols-b mhm4Tswog -Eo. Io-m v.T wo-m DTIs vT.ho. I
+10m10Tsv.0:oT Dm0P.vTm om  sIo5:oATIsm[svEoO :o/ ./vbm0TSsIo-m1:T 42o/wsom0oITw-hmw/0somDoTvo Tvbm/vo10Tm0o1s0e
+PTwwTm omDoATIsm[svoTwowv0T-vh:o10mbT5TvsIE
+
+04/21 - Index: AA [EN]Videojet 3210 / Table of contents iii
+5.3Switch-Off ..................................................................................................... 28
+5.2Switch-On ..................................................................................................... 28
+5.1Operating Elements of the Laser System ..................................................... 25
+5Operation ........................................................................................................ 25
+4.7Working Distance and Marking Field ............................................................ 24
+4.6Technical Data .............................................................................................. 22
+4.5The Structure of the Laser System ............................................................... 21
+4.4The Laser Parameters .................................................................................. 21
+4.3The Marking of the Product Surface ............................................................. 20
+4.2The Marking Head ........................................................................................ 20
+4.1The Laser Beam Source ............................................................................... 20
+4Description of the Laser System .................................................................. 20
+3.8.2Final Shutdown ................................................................................. 19
+3.8.1Temporary Shutdown ....................................................................... 19
+3.8Shutdown ...................................................................................................... 19
+3.7Definition of the IP Address .......................................................................... 18
+3.6Fume Extractor ............................................................................................. 18
+3.5Cooling ......................................................................................................... 18
+3.4Installation Conditions .................................................................................. 17
+3.3Unpacking ..................................................................................................... 17
+3.2Transport and Storage .................................................................................. 16
+3.1Installation and Start-Up ............................................................................... 16
+3Installation ...................................................................................................... 16
+2.12Warning and Information Labels ................................................................... 14
+2.11Decomposition Products ............................................................................... 14
+2.10Electrical Safety ............................................................................................ 13
+2.9Fire and Explosion Hazard ........................................................................... 13
+2.8Noise Hazard ................................................................................................ 13
+2.7Adjustment/Modification of the Marking Field ............................................... 12
+2.6Dangers to Eyes and Skin ............................................................................ 11
+2.5Safety Devices and Warning Lights .............................................................. 11
+2.4Service and Maintenance ............................................................................. 10
+2.3Intended Use .................................................................................................. 9
+2.2Laser Classes ................................................................................................. 7
+2.1Symbols Used ................................................................................................ 7
+2Safety Instructions .......................................................................................... 7
+1Preface .............................................................................................................. 5
+Table of contents
+
+04/21 - Index: AA [EN]Videojet 3210 / Table of contents iv
+8.5Safety Data Sheet Zinc-Selenide (ZnSe) ................................................... 57
+8.4Drawings ..................................................................................................... 55
+8.3.3Shutterlock/Interlock without Safety Controller ............................... 54
+8.3.2Encoder/Trigger .............................................................................. 53
+8.3.1Lasers Control ................................................................................ 52
+8.3Wiring Examples ......................................................................................... 52
+8.2Accessories ................................................................................................ 51
+8.1.6Encoder .......................................................................................... 51
+8.1.5Product Sensor (Light Barrier) ........................................................ 51
+8.1.4USB ................................................................................................. 51
+8.1.3Touch Display ................................................................................. 51
+8.1.2Ethernet .......................................................................................... 51
+8.1.1Digital I/O ........................................................................................ 49
+8.1Interfaces .................................................................................................... 48
+8Appendix ...................................................................................................... 48
+7.2Malfunctions Descriptions ........................................................................... 45
+7.1Notes .......................................................................................................... 45
+7Malfunctions ................................................................................................ 45
+6.5Protocols for Maintenance, Repair and Replacement ................................ 37
+6.4Exchange of the Filter Mats ........................................................................ 36
+6.3.2Mounting the Laser Scan Lens ....................................................... 35
+6.3.1Disassembly of the Laser Scan Lens ............................................. 34
+6.3Cleaning the Laser Scan Lens ................................................................... 34
+6.2Maintenance Plan ....................................................................................... 32
+6.1General Notes Concerning Maintenance ................................................... 32
+6Maintenance ................................................................................................. 32
+5.4Key Switch in Software ............................................................................... 30
+
+04/21 - Index: AA [EN]Videojet 3210 / 1 Preface 5
+NOTICE
+1 Preface
+This manual...
+...contains all information required for the safe operation, remedy of minor mal-
+functions and maintenance of the laser system. The operation manual is always
+enclosed with every laser system on a data carrier. This operation manual is in-
+tended for the trained operation personnel of the laser system.
+This operation manual is subject to technical modifications for improvement or
+technical progress without notice.
+Before starting your work carefully read the chapter »Safety Instructions«!
+The printed safety instructions must be stored near the laser system, easily ac-
+cessible for the operator!
+Make sure that you have understood all notes. In case of any questions please
+contact Videojet Technologies Inc. directly.
+Strictly follow the instructions!
+If you need help...
+...please contact Videojet Technologies Inc. at 1-800-843-3610 (for all customers
+within the United States). Outside the U.S., customers should contact their Video-
+jet Technologies Inc. distributor or subsidiary for assistance.
+Videojet Technologies Inc.
+1500 Mittel Boulevard
+Wood Dale IL 60191-1073, USA
+Phone (USA): 1 800 843 3610
+International: +1 630 860 7300
+Fax (USA): 1 800 582 1343
+International Fax: +1 630 616 3629
+Website: www.videojet.com
+
+04/21 - Index: AA [EN]Videojet 3210 / 1 Preface 6
+Caution Laser Radiation!
+With open delivery system dangerous laser radiation of class 4 might be
+released!
+This might cause severe burns of the eyes and the skin as well as damage
+to objects!
+Thoroughly read this operation manual and strictly follow the safety in-
+structions!
+
+04/21 - Index: AA [EN]Videojet 3210 / 2 Safety Instructions 7
+2.2 Laser Classes
+ DANGER LASER RADIATION
+NOTICE
+Laser classes 1, 2 and 4 according to EN 60825-1 are relevant for this laser sys-
+ CAUTION
+tem.
+ WARNING
+ DANGER
+Laser radiation of class 1 is safe for the eye and does not result in any damage
+even in case of long-term intentional viewing. Also encapsulated high-power
+2.1 Symbols Used
+lasers are classified as class 1 systems if the hazardous laser radiation is not ac-
+2 Safety Instructions
+cessible in normal operation.
+Laser radiation of class 2 is safe for the eye if natural defense mechanisms (blink
+reflex, turning the head) are not suppressed. Do not stare into the beam.
+refers to an immediately impending danger. If the danger is not avoided, it could
+result in death or severe (crippling) injury.
+Laser radiation of class 4 is dangerous to the eye and the skin. Also diffusely re-
+flected radiation can be hazardous. There may also be a risk of fire.
+refers to a possibly dangerous situation. If it is not avoided, it could result in death
+or severe injury.
+refers to a possibly dangerous situation. If it is not avoided, it could result in slight
+or minor injury. May also be used to warn of damage to property.
+refers to handling tips and other particularly useful information. This does not sig-
+nify a dangerous or harmful situation.
+refers to the emission of laser radiation and therefore to a possibly dangerous sit-
+uation. Please comply exactly with the safety instructions! Failure to comply with
+the instructions could result in minor or major injuries to the eyes (blindness) or to
+the skin, together with damage to property.
+
+rgu,pncnd1E-CynVVnj.()[0E- N-7n],prnun ,nz2v-75nd1e78x:70 1e 6
+nfV(G.'nWVz.'n'VfdVidA(
+(AidF.
+lbsoxmP1hsvsop.ws0o«:wvsP
+lbsoh.ws0oTvwshDoTwo-h.wwTDTsIo.wo-h.wwoWoh.ws0ow:wvsPo.--m0IT 4ovmodjo8irayenEo»1
+vmovbso5s.Pom/vhsvovbso :T e-E oh.ws0ow:wvsPo.-vwo.wo.o :T2eenpnT2e-8ne5e7-o oT
+n
+1 8o2Tn L-8270 1 E
+gDovbso5s.Pom/vhsvoT -h/IT 4ovbsom5[s-vovmo5soP.09sIoTwowbTshIsIo.110m10T.vsh:2ovbs
+: oLT-7-Jn:T e-E oh.ws0ow:wvsPo.-vwo.wo.o :T2eenpnT2e-8ne5e7-o oT o 1 8o2Tn L-8c
+n
+270 1 o. Io mo.IITvTm .ho10mvs-vTm oTwo0sz/T0sIoDm0om1s0.vTm EolbsowbTshIT 4o10se
+fs vwosPs04T 4omDoh.ws0o0.IT.vTm om0oh.ws0o5s.Po0sDhs-vTm wE
+lbsoh.ws0o5s.PosuTvwo.vovbsoP.09T 4obs.Iovb0m/4bovbsoDm-/wT 4ohs woN.00m ]E
+gDo.o1Thmvoh.ws0oTwoT wv.hhsIo1hs.wso mvsovb.vovbTwoTwo.oh.ws0omDo-h.wwoao. Iovbs0sDm0s
+vbso-mP1hsvsow:wvsPo TvbowbTshIT 4oTwovmo5so-h.wwTDTsIo.wo-h.wwoaoTDovbsowbTshIT 4
+Imswo mvow/DDT-Ts vh:o.vvs /.vsovbso0.IT.vTm omDovbso1Thmvoh.ws0E
+O :o10mvs-vTm oPs.w/0sPs vw2ohT9so.owbTshIT 42o.0so mvoT -h/IsIoT ovbsow-m1somD
+IshTfs0:EoCm0o.oh.ws0o-h.wwonoT wv.hh.vTm 2ovbsoDT .ho.11hT-.vTm oP/wvoD/hDThho.hhovbso0se
+z/T0sPs vwoDm0ovbso10mvs-vTm oT o-.wsomDoh.ws0ow.Dsv:o.--m0IT 4ovmogdxo8irayenE
+lbso5s.Po1.vboP/wvo.h .:wo5so-hmwsI2o.hwmoTDovbs0soTwo mo10mI/-voT oD0m vomDovbs
+h.ws0ohs wE
+nE
+ojm0P.hom1s0.vTm oImswo mvoT -h/Isows0fT-s2oP.T vs . -so m0o0s1.T0wE
+lbsop.ws0o«m/0-s
+Owoh.ws0o5s.Powm/0-soNbs0sT .Dvs0o-.hhsIoh.ws0]o.oxU oh.ws0oT o-m vT /m/wo .fs
+a
+m1s0.vTm oTwo/wsIEolbsoh.ws0oTvwshDoTwo-h.wwTDTsIo.wo-h.wwoWEogvo10mI/-swoT fTwT5hsoNT e
+D0.0sI]o0.IT.vTm o bT-boTwosuv0sPsh:oI. 4s0m/woDm0ovbsos:so. IoI. 4s0m/woDm0ovbs
+w9T E
+
+04/21 - Index: AA [EN]Videojet 3210 / 2 Safety Instructions 9
+• For safety reasons arbitrary modifications or changes to the laser mark-
+• Danger of explosion!
+• ing system are forbidden and result in loss of warranty!Never expose unknown materials to laser radiation!
+7.9sow/0sovb.vovbsoh.ws0o.0s.oTwoD0ssomDosu1hmwTfsoP.vs0T.hwom0of.1m0w(
+• Never expose reflecting surfaces to laser radiation!
+gDo.oPmITDT-.vTm oP.Iso5:ovbso/ws0ovmo.o10sfTm/wh:o-h.wwTDTsIoh.ws0ow:wvsP«mPsoP.vs0T.hwo.0sos.wTh:o1s sv0.vsIo5:ovbsoh.ws0o5s.P2o.hvbm/4bovbs:owssP
+• Never expose flammable materials to laser radiation!
+lbso0sDhs-vsIoh.ws0o5s.PoP.:o-./wsovbsow.PsoI. 4s0woeoT oT ITfTI/.ho-.wsw
+• Never expose human beings or animals to laser radiation!
+hs.Iwovmo.o-b. 4somDoTvwo1s0Dm0P. -soI.v.o. IKm0oTvwoT vs IsIo/wsovb.vo1s0wm vmo5som1.z/soDm0ovbsob/P. os:sE
+Oh .:wos w/0so.110m10T.vsowbTshIT 4omDovbsoh.ws0o5s.P(od00m0woI/0T 4oP.09T 4
+sfs o40s.vs0oI. 4s0woeo.wovbsom0T4T .hoh.ws0o5s.PE
+lbTwoPT4bvo0sw/hvoT owsfs0so5/0 womDos:swom0ow9T E
+m0om04. TS.vTm o1s0Dm0PT 4ovbsoPmITDT-.vTm oTwo0sw1m wT5hsoDm0o.o s o-h.wwTDT-.e
+m oDh.PP.5hsoP.vs0T.hwoNsE4Eo1.1s0]oPT4bvo-./wsoDT0swEol.9sow/Tv.5hsow.Dsv:
+ WARNING
+Ps.w/0swo5:oT wv.hhT 4osE4EowPm9som0oDT0soIsvs-vm0w2osuvT 4/Twbs0w2om0owTPTh.0(
+2.3 Intended Use
+ CAUTION
+lbsoh.ws0ow:wvsPo must only be used for the treatment of material surfaces E
+lbso1/hwsoD0sz/s -:o-. o5so.I[/wvsIoNwssows-vTm o AL-827-01In0d0Ie } x :: ]Eolbs
+lbsow/0D.-swo.0sohm-.hh:obs.vsIo5:oT vs wTfso-h.wwoWoh.ws0o0.IT.vTm o. Io.0soPmITe
+.-v/.ho1/hwsoD0sz/s -:oIs1s Iwom ovbso.11hT-.vTm E
+DTsIovbs0s5:Eolbswsow:wvsPwo.0soP.T h:o.11hTsIoDm0oP.09T 4omDo10mI/-vow/0D.-sw
+lbsoT wv.hhsIo1Thmvoh.ws0osPTvwofTwT5hsoh.ws0o0.IT.vTm omDo-h.wwoaEolbTwoh.ws0o0.IT.vTm
+NI.vsw2o5.v-bo10T vT 42ows0T.ho /P5s0w2osv-E]E
+-. oI.P.4sovbsos:soTDoTvowv.0swoT vmovbso5s.PE
+lbso0.IT.vTm o10mI/-sIo5:ovbsoh.ws0ow:wvsPoTwomDobT4bos s04:o. Iovbs0sDm0soTPe
+10m1s0o/wso0s10sws vwo.oI. 4s0ovmo1s0wm wom0om5[s-vw(
+EEEo TvboPmITDT-.vTm w(
+lbsoh.ws0ow:wvsPoP/wvom h:o5soT wv.hhsIoT o10mI/-vTm owTvswo Tvbo0swv0T-vsIo.--swwE
+djo8iray2o1.0von2oZq.IT.vTm ow.Dsv:omDoh.ws0ow:wvsPw2ows-vTm oWEnEnow.:wc
+gDo.oPmITDT-.vTm o5:ovbso/ws0ovmo.oh.ws0ow:wvsPo10sfTm/wh:o-h.wwTDTsIoT o.--m0I. -s
+du.P1hswoDm0ogP10m1s0o»wso. Iovbsoqsw/hvT 4oqTw9w
+ TvbovbTwowv. I.0Iohs.Iwovmo.o-b. 4somDoTvwo1s0Dm0P. -soI.v.o. IKm0oTvwoT vs IsI
+/wsovb.vo1s0wm om0om04. TS.vTm o1s0Dm0PT 4ovbsoPmITDT-.vTm oTwo0sw1m wT5hsoDm0o.
+ s o-h.wwTDT-.vTm o. Ioh.5shT 4omDovbsoh.ws0ow:wvsPE
+
+rgu,pncnd1E-CynVVnj.()[0E- N-7n],prnun ,nz2v-75nd1e78x:70 1e pr
+K F oh01-En7820101Iy
+K i820101Inv 8n7-:l10:021ey
+g o.IITvTm ovmovbso9 m hsI4so4.T sIoI/0T 4ovbsov0.T T 4oDm0ovs-b T-T. wovbso1s0e
+lbsov0.T sso4.T wovbso9 m hsI4so0sz/T0sIovmo1s0Dm0Po.hhoP.T vs . -so. Iows0e
+wm oTwov0.T sIo.woh.ws0ow.Dsv:omDDT-s0EolbTwov0.T T 4oTwo.--s1vsIo5:ovbsov0.Iso-me
+fT-sov.w9wo.vovbsoh.ws0ow:wvsPow.Dsh:o. Io10mDswwTm .hh:o Tvbm/vo.wwTwv. -sE
+m1s0.vTfso.wwm-T.vTm oNwsso.5mfs]E
+vTm o. Ioh.5shT 4omDovbsoh.ws0ow:wvsPEolbso1s0wm om0om04. TS.vTm oTwovbs o0se
+,agnz-8t0:-n21EnD2017-121:-
+4.0IsIo.woZP. /D.-v/0s0E
+g ovbTwo-.wso.o s o0Tw9o.wwswwPs voTwo0sz/T0sIE
+g oGs0P. :2ovbsolqU«op.ws0oq.IT.vTm oN }
+]ow.:wom h:oTDo m09T 4o Tvb
+h.ws0o0.IT.vTm omDo T2e-8n:T2ee-en]'Jn]9n 8ng o.oh.ws0ow.Dsv:omDDT-s0o ssIwovmo5s
+v0.T sIo. Iovbsov0.Iso-mm1s0.vTfso.wwm-T.vTm o ssIwovmo5soT Dm0PsIoT o 0TvT 4
+.5m/vovbTwo1s0wm Eo!hs.wsoP.9sow/0sovmo-mP1h:o Tvbo:m/0ohm-.ho0s4/h.vTm wE
+«s0fT-sol.w9w
+lbsows0fT-sov.w9wo.0sosu-h/wTfsh:ovmo5so-.00TsIom/vo5:ows0fT-so1s0wm shomDo ATIsme
+[svols-b mhm4Tswog -E om0om somDovbsT0o0s10sws v.vTfswEog ovbso-m/0wsomDovbswsov.w9w
+TvoPT4bvo5so s-sww.0:ovmom1s0.vsovbsoh.ws0ow:wvsPoT o T2e-8n:T2eeng Eolbso0sw1m wTe
+5hsows0fT-sovs-b T-T. os w/0swovb.vo bThsosus-/vT 4ovbmwsov.w9wo.hhoh.ws0ow.Dsv:
+0s4/h.vTm wo.0soPsvo. Io mo1s0wm wo.0sos I. 4s0sIEolbso-mP1. :om1s0.vT 4ovbs
+h.ws0ow:wvsPoImswo mvo ssIovmov0.T o. Io.11mT vo.oh.ws0ow.Dsv:omDDT-s0oT ovbTwo-.wsE
+g ovbso-.wsovb.vovbso-mP1. :om1s0.vT 4ovbsoh.ws0ow:wvsPoTwo-.00:T 4om/vows0fT-s
+v.w9woT o T2e-8n:T2eeng 2ovb.vo-mP1. :oTwo0sw1m wT5hsoDm0oPssvT 4ovbsohm-.ho-mIsw
+. Io0s4/h.vTm wo0s4.0IT 4oh.ws0ow.Dsv:o. IoDm0ov0.T T 4o. Io.11mT vT 4o.oh.ws0
+w.Dsv:omDDT-s0E
+7.T vs . -sol.w9w
+lbsoP.T vs . -sov.w9woIsw-0T5sIobs0sT .Dvs0owbm/hIom h:o5so-.00TsIom/vo5:osw1se
+-T.hh:ov0.T sIo1s0wm shEo«T -so.hhoP.T vs . -sov.w9wo.0so-.00TsIom/voT o T2e-8
+:T2eenp 2ovbso-mP1. :om1s0.vT 4ovbsoh.ws0ow:wvsPoImswo mvo ssIovmov0.T o. Io.1e
+1mT vo.oh.ws0ow.Dsv:omDDT-s0oDm0ovbswso m09wE
+g om0Is0ovmoD.-ThTv.vsow.Dso1s0Dm0P. -somDo.hho s-sww.0:oP.T vs . -so. Iows0fT-s
+v.w9wo Tvbm/vo.wwTwv. -so. Iovmos w/0sobT4bswvow.Dsv:oDm0ovbsom1s0.vT 4o. IoP.T e
+vs . -so1s0wm sho somDDs0ow1s-T.hov0.T T 4owsPT .0wE
+Ow9oDm0oD0ssoT Dm0P.vTm oP.vs0T.h(
+
+04/21 - Index: AA [EN]Videojet 3210 / 2 Safety Instructions 11
+In individual cases these values might be exceeded by up to 50 %.
+Videojet 3210 : 30 W
+• designed for the power range of the laser. Values of maximum average
+Careful with confusions!
+• power:designed for the wavelength range of a CO laser of 10.6 μm (optional 9.3 or
+2
+Safety goggles for other lasers, e.g. Nd:YAG lasers, do not provide adequate
+10.2 μm). See ID label of the laser system.
+protection against radiation of a CO lasers!
+2
+2.6 Dangers to Eyes and Skin
+NOTICE
+Additional warningAdditional lights can be connected as external emis-
+Red light The red warning light above the operating elements
+lights sion displays (system-specific).
+The laser system produces class 4 laser radiation. This radiation is emitted in the
+"Laser emission"lights up when the emission of laser radiation of class
+Key-operated switchThe key switch prevents operation of the laser system
+infrared range and invisible to the human eye.
+4 is possible. The functioning of the light is monitored.
+by unauthorized people. The push button is on the op-
+High irradiation causes an extreme local heating and burning of the tissue. TheIn case of malfunction the system cannot start the
+erating panel of the laser system. The "key" is in-
+eyes are subject to special risks: High radiation intensity causes a local heatinglaser.
+serted and withdrawn in the software.
+2.5 Safety Devices and Warning
+and burning of the cornea and thus a reduction or loss of sight!
+Suitable safety goggles provide protection against direct, specularly reflected or
+Lightsdiffusely scattered laser radiation. Suitable safety goggles are:
+The complete laser system includes various safety devices and warning lights
+which shall prevent damage to people or objects. There must not be any alter-
+ations to safety devices nor warning lamps (see section " O ")!
+Safety Devices
+Warning Lights
+When installing the laser make sure that at least one of the warning lights is al-
+ways visible.
+
+04/21 - Index: AA [EN]Videojet 3210 / 2 Safety Instructions 12
+ WARNING
+ DANGER LASER RADIATION
+2.7 Adjustment/Modification of the
+3
+in focus 30 1.1 x 10
+at the beam outlet 30 2.4
+Wmaximum power density
+Marking Field
+• designed for continuous wave operation.
+2
+W/mm
+The following values can be reached (no specification):
+Via the software the marking field of the laser can be modified in such a way that
+the laser beam can possibly be directed to the shielding or onto other compo-
+nents or parts. Thus, surfaces exposed to irradiation can be damaged or de-
+stroyed.
+The skin can withstand higher radiation intensities than the eye. However - de-
+If, as a result of the modification, the laser beam becomes accessible the com-
+pending on the radiation period and radiation intensity - the tissue is destroyed
+plete laser system is set to class 4 (see section " O ").
+through burns. Therefore protect your skin by wearing adequate personal protec-
+tive equipment! Avoid any exposure of your skin to the laser radiation! Avoid the
+laser beam coming in contact with your clothing!
+If a pilot laser is installed it emits visible laser radiation of class2 in the wave-
+Fire and explosion hazard if there are flammable materials or explosive atmos-
+length range of 600 nm to 700 nm. The laser power is < 1 mW.
+pheres within the area of the laser beam.
+This laser radiation may cause damage to the eye when staring into the beam.
+Appropriate safety measures must be taken if the laser is to be operated in explo-
+sive atmospheres.
+It is safe for the eye if natural defense mechanisms (blink reflex, turning the head)
+are not suppressed when unintentionally looking into the beam.
+A password is required for changing the marking field (if the password protection
+The bright laser light may cause startle reflexes and temporary visual distur-
+has been activated in the software). The password can be changed subsequently
+bances due to glare. This must be kept in mind when carrying out safety-related
+by a user authorized for the corresponding user level.
+tasks, e.g. working with machines.
+We explicitly point out that the person who will fulfil a modification of the
+marking field, will assume the full responsibility for any consequential dam-
+age and problems!
+
+04/21 - Index: AA [EN]Videojet 3210 / 2 Safety Instructions 13
+ DANGER
+2.10 Electrical Safety
+The laser system was designed in accordance with the general rules of technol- WARNING
+ogy.
+2.9 Fire and Explosion HazardNOTICE
+2.8 Noise Hazard
+During works at the open laser housing alive components are accessible.
+During the marking process high-frequency noises are produced.
+The high output power of a class 4 laser can inflame various materials. Therefore,
+Make sure that rules and regulations for works on alive components are always
+while performing maintenance and service work at the open laser housing and/or
+observed!
+open beam delivery system, make sure that fire protection measures were taken
+All works at the open laser housing, especially at electrical components, must
+before starting the works!
+Protect your ears and wear a suitable hearing protection.
+only be performed by specially trained personnel!
+Paper (circuit diagrams, leaflets, posters on the walls, etc.), curtains which are not
+impregnated fire retardantly, wooden boards or similar flammable materials can
+easily be inflamed by direct or reflected laser radiation.
+Make sure that the working area of the laser system is free from containers with
+flammable or explosive solvents or cleaning agents! Unintended exposure of
+a container to intensive invisible laser radiation might easily cause fires or explo-
+sions.
+
+04/21 - Index: AA [EN]Videojet 3210 / 2 Safety Instructions 14
+on the marking head (front)
+Label/Symbol Position
+2.12 Warning and Information
+Labels
+ WARNING
+2.11 Decomposition Products
+When treating materials with laser radiation decomposition products are produced
+which are dangerous to health!
+Through vaporization of materials fine dust and vapors are produced which might
+include hazardous decomposition products depending on type and composition of
+the respective materials.
+A fume extractor according to the respective requirements which is equipped with
+special dust and activated charcoal filters must be installed to ensure that the de-
+composition products are removed from where they are produced.
+When treating materials with laser radiation the national and relevant regulations
+for air purification at work must be observed. Those regulations can result in fur-
+ther, detailed requirements regarding the performance of the fume extractor or
+the air recirculation to the workplace.
+This can be the case marking different plastics, e.g. POM (polyoxymethylene),
+ABS (acrylonitrile butadiene styrene), SAN (styrene acrylonitril copolymer), HDPE
+and LDPE (polyethylene), PAN (polyacrylonitrile), PBT (polybutylene terephtha-
+late) or different tool steels, e.g. with chromium additions.
+Marking those materials the formation of carcinogenic substances cannot be
+ruled out. This can result in the prohibition of the air recirculation to the work-
+place, i.e. the fume extraction system must lead the exhaust air outside into the
+atmosphere.
+The company operating the system for treatment of material surfaces using laser
+radiation is responsible for meeting the local codes and regulations. Additionally,
+the safety instructions of the operating instructions must be observed.
+Protect yourself and your colleagues against hazardous decomposition products!
+A fume extractor also prevents contamination and gradual destruction of optical
+elements of the beam delivery system by dust particles. We offer different fume
+extractors as accessories.
+
+04/21 - Index: AA [EN]Videojet 3210 / 2 Safety Instructions 15
+on the side of the rear end cap
+on the side of the rear end cap
+on the laser system (top)
+Label/Symbol Position
+
+04/21 - Index: AA [EN]Videojet 3210 / 3 Installation 16
+ CAUTION
+3.2 Transport and Storage
+NOTICE
+• Please provide all connections - as described in section "Installation Condi-
+The laser system is a precision-made instrument and includes numerous elec-• Proceed as described in section " O ".
+tions" and in the documents you received upon order handling - prior to instal-
+tronic and optical components. Please avoid any mechanical stress (shock, vibra-
+lation.
+tions, etc.) on the laser system. In case of questions concerning transport and
+3.1 Installation and Start-Up
+NOTICE
+storage please contact Videojet Technologies Inc. .
+3 Installation
+Installation and start-up of the laser system requires extensive knowledge and ex-
+Transport
+perience. Therefore it should be accomplished by personnel of Videojet Tech-
+nologies Inc. or one of their representatives only.
+In order to facilitate quick and easy start-up please prepare the place of installa-
+Give notice of the laser system to the responsible trade cooperative association
+tion such that the system can be installed:
+Switch off the laser system before transport and disconnect mains connection!
+and the Trade Supervisory Office before initial operation.
+Wear safety shoes!
+In case of questions please contact Videojet Technologies Inc. .
+The company operating the laser system is responsible for the safe use of the
+laser system, especially for meeting the local codes and regulations regarding the
+operation of laser systems and their components (beam protection, fume extrac-
+tor, cooling, etc.).
+Videojet Technologies Inc. does not accept responsibility for any damage due to
+misuse of equipment, incorrect operation or negligence.
+
+rgu,pncnd1E-CynVVnj.()[0E- N-7n],prnun ]nd1e72TT270 1 pM
+nFVOidA(
+]agnd1e72TT270 1nF 1E070 1e
+yE !0mvs-vovbsoh.ws0ow:wvsPo. Io.hho-mP1m s vwoD0mPoI/wvo. Iob/PTITv:o/ vThoT e
+WE l0. w1m0vovbsoh.ws0ow:wvsPo. Iovbso-mP1m s vwovmovbsoT vs IsIo1h.-somDoT e
+!0mvs-vovbsos fT0m Ps v(wv.hh.vTm E
+kE xbs-9o.hho1.0vwoDm0oI.P.4soI/0T 4ov0. w1m0vEowv.hh.vTm E
+aE qsPmfsovbsoT ITfTI/.hh:o1.-9sIo-mP1m s vwE
+nE U1s ovbso1.-9.4T 4o. Io0sPmfsovbsoDThhT 4oP.vs0T.hE
+«s1.0.vso1.-9.4T 4oP.vs0T.hoDm0o0s-:-hT 4Eg o-.wsomDoI.P.4so1hs.wsoT Dm0PovbsoDm0 .0IT 4o.4s vo. Io ATIsm[svols-b mhme
+4Tswog -E om0ovbsT0o0s10sws v.vTfsoTPPsIT.vsh:oT o 0TvT 4Eo•ss1ovbso1.-9.4T 4
+]a]nO1L2:301I«vm0.4s
+lbsoh.ws0ow:wvsPoP/wvo mvo5sow/5[s-vovmo. :oPs-b. T-.howv0swwoNwbm-92ofT50.vTm w2
+P.vs0T.ho. Io mvsoI.P.4som ovbsoT wTIso. Iom/vwTIsEol.9so1T-v/0sw2oTDo1mwwTe
+«vm0sovbsoh.ws0ow:wvsPoT o.obm0TSm v.ho1mwTvTm o. Io10mvs-vsIo.4.T wvoI/wvo. Iob/esv-E]owT -sovbTwo0sI/-swovbsoP.09T 4oz/.hTv:o. Io-. o0sw/hvoT oI.P.4T 4ovbsow:we
+5hsE
+PTITv:Eolbsowvm0.4sovsP1s0.v/0soP/wvo5so5sv ss ovsPE eni Fxo. Io )ti FxEolbso.T0ob/e
+PTITv:oP/wvo5so5sv ss o ai Fovmo Bi F2o m e-m Is wT 4E
+Lbs oT wv.hhT 4ovbsow:wvsPovbso0s4/h.vTm womDodjo8ak8renoP/wvo5som5ws0fsIE
+«1.-soqsz/T0sI
+lbsowv. I.0IoITPs wTm womDovbsoh.ws0ow:wvsPo-. o5soDm/ IoT ovbsoI0. T 4woT ovbs
+-b.1vs0oO11s ITuE
+Cm0ow:wvsPwoP. /D.-v/0sIo.--m0IT 4ovmow1s-T.ho-/wvmPs0o0sz/T0sPs vwovbTwoT Dm0e
+P.vTm o-. o5soDm/ IoT ovbsoT wv.hh.vTm o1h. om0ovbsoITPs wTm o. IoI.v.owbssvwo:m/
+0s-sTfsIo/1m om0Is0ob. IhT 4E
+xm s-vTm w
+lbsoh.ws0ow:wvsPo0sz/T0swo.oP.T wowm-9svo Tvbo.o10mvs-vTfsos.0vbT 4o-m s-vTm E
+g Dm0P.vTm om ovbsov:1s2o /P5s0o. Io0sDs0s -sof.h/swomDovbso-m s-vTm wo-. o5s
+Dm/ IoT ovbsovs0PT .hoIT.40.Pwo:m/ob.fso0s-sTfsIo/1m om0Is0ob. IhT 4E
+lbso1m s0o-m s-vTm o-.5hsomDovbsoh.ws0ow:wvsPoTwo.5m/vo a oPohm 42oP.9sow/0s
+vb.vovbso.Isz/.vso1m s0owm-9svwo.0soT o0. 4sE
+
+rgu,pncnd1E-CynVVnj.()[0E- N-7n],prnun ]nd1e72TT270 1 p6
+]aMnf-v01070 1n vn7l-ndmnVEE8-ee
+Lbs ovbsoh.ws0ow:wvsPoTwoIshTfs0sIovbsoDmhhm T 4og!o.II0swwoTwowsvc
+]aBn xo-n.C782:7 8
+«v. I.0Iog!conBaEn8rEnEn
+]abnF T01Ig om0Is0ovmo0sPmfsoP.09T 4o0swTI/swo bT-boPT4bvo5soI. 4s0m/wovmobs.hvbo.oD/Ps
+«/5 svoP.w9coayyEayyEayyEi
+suv0.-vm0oP/wvo5soT wv.hhsIE
+U1s0.vT 4o.hvTv/Isc(AidF. P.uEo aiii oPo.5mfsows.ohsfsh
+OoITDDs0s vog!o.II0swwo-. o5so-m DT4/0sIofT.ovbsowmDv .0sE
+qsh.vTfsob/PTITv:c ai oeo Bi o2o m e-m Is wT 4
+lbsoh.ws0ow:wvsPoTwo-mmhsIo5:o.T0EolbsoT vs0 .holsP1s0.v/0so0. 4sc y oeo Wi ox -mmhT 4ow:wvsPoTwoIswT4 sIovmow/1e
+OP5Ts voxm ITvTm wlbsoD/Psosuv0.-vm0o oTwovmo5soT wv.hhsIow/-bovb.voP.09T 4o1.0vT-hswo.0sow/-9sIomDD
+1h:ow/DDT-Ts vo-mmhT 4E
+IT0s-vh:o.vovbso1h.-somDovbsoDm0P.vTm ovmo10sfs vovbso.--/P/h.vTm omDoI/wvo1.0vT-hsw
+7.9sow/0sovb.vovbso-mmhT 4o.T0o-. o5sow/-9sIoT o. Io5hm  om/voD0ssh:o. Iovb.v
+ bT-bo40.I/.hh:oIswv0m:om1vT-.ho-mP1m s vwomDovbsoh.ws0ow:wvsPEo7.9sow/0sovb.v
+vbs0soTwow/DDT-Ts vo.T0osu-b. 4so.vovbsoT wv.hh.vTm owTvsovmos w/0sobs.voITwwT1.vTm E
+vbs0so.0so mo.T0ohs.9wE
+«/DDT-Ts vo-mmhT 4oTwom h:o4/.0. vssIo TvboI0:oDThvs0oP.vwE
+LsomDDs0oD/Psosuv0.-vm0wo.wo.--swwm0TswEogDo.oD/Psosuv0.-vm0oTwo1.0vomDovbso-mPe
+1hsvsoIshTfs0:o1hs.wsoDT IoD/0vbs0oT Dm0P.vTm oT ovbsos -hmwsIom1s0.vTm oP. /.homD
+vbsoD/Psosuv0.-vm0E
+lmo.fmTIo-m Is w.vTm o .Tvom sobm/0o5sDm0sowv.0vT 4ovbsow:wvsPoTDovbsow:wvsPo .w
+50m/4bvoD0mPo.o-mhIovmo.o .0Pos fT0m Ps vE
+7.9sow/0sovb.vovbs0soTwo mo-m Is wsIo .vs0oT ovbsow:wvsPE
+lbsofs vT 4owhmvwoP/wvo mvo5so-mfs0sIEo7.9sow/0sovb.vovbs0soTwow/DDT-Ts vo.T0ow/1e
+1h:oNwsso.hwmows-vTm oxmmhT 4]E
+g wv.hh.vTm o!mwTvTm w
+lbsows.hT 4og!yWoTwom h:o.11hT-.5hsoTDovbsow:wvsPoTwoT wv.hhsIobm0TSm v.hh:E
+
+04/21 - Index: AA [EN]Videojet 3210 / 3 Installation 19
+Please dispose of the components of the laser system separated for recycling of
+2. Disconnect the machine from the electric power supply.
+1. Carry out all work listed in section "Temporary Shutdown".
+raw materials.
+ WARNING
+3.8.2 Final Shutdown
+4. Clean the laser scan lens (see section »Cleaning the Laser Scan Lens).
+3. Secure the laser system against unauthorized startup by removing the key
+2. Switch the laser system off after the data backup, (see chapter »Operation of
+1. Save the data on the computer before switching the laser system off. A de-
+(key switch).
+the Laser System«).
+tailed description can be found in the manual of the marking software.
+3.8.1 Temporary Shutdown
+If the laser system is shut down temporarily (e.g. for the duration of a works holi-Ensure that all live parts are switched off and that work can be carried out safely3.8 Shutdown
+day), the following work is to be carried out:on these parts.
+If the laser marking machine is shut down permanently (e.g. for selling or dis-
+posal), the following work is to be carried out:
+In case of selling and transport
+Package the machine according to the instructions in section " }
+O ".
+In case of disposal
+Dispose of the components of the laser system in a manner that is safe and envi-
+ronmentally compatible. Observe all applicable legal and local regulations.
+
+04/21 - Index: AA [EN]Videojet 3210 / 4 Description of the Laser System20
+4.3 The Marking of the Product
+Surface
+4.2 The Marking Head
+The marking of the product surface is performed by the effect of intense laser ra-
+4.1 The Laser Beam Source
+Two movable mirrors are located inside the marking head . They deflect the laser
+4 Description of the Laser System
+diation on the product material.
+beam vertically and horizontally according to the current template.
+A sealed-off CO laser serves as beam source for the laser system. Inside the
+2
+The laser beam is focussed onto the product surface and heats up the topmost
+laser source COThe X and Y axes of the coordinate system of the marking field are defined by the-molecules are stimulated by a high-frequency voltage to emit in-
+2
+layer of the material, which causes a color change or a vaporization of the top-
+frared laser radiation.position of the marking head. A translation or rotation of the marking head also
+most dye layer.
+translates or rotates the axes of the coordinate system. X and Y axes in relation
+The symbols and characters which shall be marked on the product are subdivided
+to the marking head are defined as displayed in the following figure:
+into vector strokes (1). Each vector stroke is again subdivided into smaller vec-
+tors.
+When the laser beam jumps from one stroke to the next (2) the laser is switched
+off and the product is not marked.
+
+04/21 - Index: AA [EN]Videojet 3210 / 4 Description of the Laser System21
+Focusing module, 90° or straight1
+4.5 The Structure of the Laser
+4.4 The Laser Parameters
+System
+Parameters are used to adapt the laser system to different materials. These pa-
+The laser system consists of the following components:
+rameters have to be determined and adjusted for each application in order to
+achieve the best possible marking quality.
+Determining the correct parameters requires profound knowledge and experi-
+ence, because the parameters highly depend on the application and the material
+which shall be marked. In case of questions please contact us.
+The parameters for individual materials are combined in parameter sets. Parame-
+ter sets can be generated and altered using the software. For detailed information
+on the parameters please refer to the manual of the marking software.
+
+O
+p
+t
+a
+r
+e
+
+04/21 - Index: AA [EN]Videojet 3210 / 4 Description of the Laser System22
+Interfaces Network interface, I/O interfaces
+• browser-enabled device with TCS+
+Control • TU430 Touch Display
+Cooling internal air-cooling
+Fonts any standard font (special characters on
+software under Windows
+Line width depends on the material and the laser
+Min. focus diameter µm 170
+demand for additional charge)a
+Focal length of focusing lensmm 100; 150; 200
+Characters/Second 1300
+a parameters
+Line speed m/s 0 - 10
+Marking speed mm/s 1 - 15,000
+Sealing IP 54
+Weight (typical) kg (depending on the installed optics) 19
+Dimensions mm³ 650 x 168 x 192
+Operating altitude m max. 2000 above sea level
+Rel. Humidity % 20 - 90 ; non-condensing
+Ambient temperature °C 5 - 40
+Mains frequency Hz 50 / 60
+Supply voltage VAC100 to 120; 220 to 240 (autorange); 1-
+Max. power consumption kW 0.7
+(for special requirements please contact
+Laser power typ. W 30
+• quasi-continuous 50 Hz - 100 kHz
+Operating modes • continuous wave (cw)
+phase
+Laser class 4
+Wavelength µm 10.6; 10.2; 9.3 us)
+Excitation RF
+Laser type sealed-off CO laser
+Unit Videojet 3210 2
+Bottom: metrical holes for mounting6
+Air outlet with filter mat5
+4
+Connections (see O )
+4.6 Technical DataOperating elements and warning light3
+Air intake with filter mat2
+
+04/21 - Index: AA [EN]Videojet 3210 / 4 Description of the Laser System23
+Pilot laser:
+Unit Videojet 3210
+Laser class 2
+Laser power mW < 1
+Wavelength nm 630 - 670
+a.
+ Any statements referring to marked characters or actual markings are typical
+values. These values highly depend on the material and may only be taken as a
+guideline. These are no specifications!
+Due to Videojet Technologies Inc. 's policy of continuous improvement, technical
+data is subject to change without notice.
+
+04/21 - Index: AA [EN]Videojet 3210 / 4 Description of the Laser System24
+NOTICE
+200 190 102 162 72 115
+150 141 76 120 54 85
+100 92 51 80 36 57
+f wd A B a b
+NOTICE
+4.7 Working Distance and Marking
+Field
+The actual marking field depends on the configuration of the system.
+The actual working distance can deviate up to ± 10 % of the focal length stated
+below.
+Marking head (all values in mm)
+The system is equipped with a focus finder. The adjustment is carried out via the
+software (see software manual). To adjust the nominal working distance the laser
+point should be a close as possible to the center of the laser circle.
+
+in
+in
+s
+I
+g
+
+04/21 - Index: AA [EN]Videojet 3210 / 5 Operation 25
+5.1 Operating Elements of the Laser
+TCS+ The SoftwareTCS+ software runs on a browser-enabled device
+under Windows.
+TU430 The TCS+ software runs on the laser system and can be
+System
+It permits you to easily create, edit, select and mark jobs.
+diplayed and controlled on the touch screen.
+5 Operation
+Using a web browser you can connect to one or several
+It permits you to easily create, edit, select and mark tem-
+laser systems. The active system is controlled via TCS+ .
+plates.
+
+uO up cp cr ur
+ue
+ce
+
+04/21 - Index: AA [EN]Videojet 3210 / 5 Operation 26
+L3 Error -yellow- flashes in case of malfunction.
+L2 Emission -red- is on when the key switch is closed and the
+S4 Push button With »STOP« a marking process can be
+power is applied to the laser source.
+LED status indicators
+S3 STOPPush button stopped.With »START« the currently selected tem-
+Simultaneously the warning light (L4) lights
+START plate can be marked.
+up.
+Laser radiation is emitted!
+S2 Push button If the key switch is activated the power sup-
+Make sure the safety instructions are
+Key switch ply for the laser beam source is applied and
+observed.
+a marking process can be started.
+S1 Push button switches the system on.
+No. Type Function
+There is a green LED indicator on the push
+POWER/STANDBY
+button:There are two LED indicators on the push
+- flashes: Key is inserted in software but notbutton, left blue (STANDBY), right white
+closed (bush button not pressed);(POWER, flashes during initialization, is on
+- is on: Key is inserted and closed (pushwhen the system is ready, is on during
+button pressed, laser activated);each marking process).
+- is off: Key is removed.
+Note:
+If the system is on this button switches the
+The "key" is inserted and removed in thelaser beam source and the control electron-
+ics off.
+software, see
+O . Pressing the push button S2 the
+Attention:
+status changes between open and closed.
+The system is not separated completely
+The last status before switch-off is kept.
+from the power supply. For complete sepa-
+ration the main power switch must be used
+or the supply line must be disconnected.
+
+04/21 - Index: AA [EN]Videojet 3210 / 5 Operation 27
+I4 Socket Connection for mains cable
+I3 Socket Connection for encoder
+I2 Socket Connection for product sensor
+I1 Customer interfaceConnections for Touch Display, ethernet and
+S1 Main power switchswitches the mains of the laser system on
+No. Type Function
+digital inputs and outputs, see chapter “Ap-
+and off.
+pendix“, O .
+L4 Warning light -red-is on when the key switch is closed and the
+No. Type Function
+power is applied to the laser source.
+Simultaneously the red emission LED (L2)
+lights up.
+
+oe
+uO
+or
+op
+oO
+
+04/21 - Index: AA [EN]Videojet 3210 / 5 Operation 28
+2. Open the key switch by pressing the push button key
+1. Stop the marking process. Press push button »STOP« (S4) if neces-
+switch (S2). The LED of the push button flashes.
+sary.
+6. The marking process can be started by pressing the push
+5.3 Switch-Off
+For protection against unauthorized access the key switch
+button »START« (S3) or via the user interface of the soft-The red LED »Emission« (L2) and the red warn-
+can be removed in the software. The LED of the push but-
+ware.ing light are on. The laser is ready.
+ton then turns off.
+5. Check the status of the key switch push button.
+LED off: Insert the key in the software.
+4. Press push button »POWER/STANDBY« (S1).
+3. Plug the mains connector into the power socket.
+2. Switch on the fume extractor.
+1. Make sure that the safety instructions are observed.LED flashes: Press push button (S2) to activate the laser.
+After approx. 10 seconds the white LED on the
+The blue LED on the push button »POWER/
+push button flashes. The flashing frequency and
+LED on: The laser is activated, the marking process can be
+5.2 Switch-On
+STANDBY« (S1) is on.
+the brightness of the LED increases.
+started.
+The laser system is initialized. After that the sys-
+tem is ready for operation and the white LED is
+Note: The "key" is inserted and removed in the software,
+on.
+see O .
+
+rgu,pncnd1E-CynVVnj.()[0E- N-7n],prnun bnAL-8270 1 ,k
+yE « Tv-bomDDovbsoD/Psosuv0.-vm0E
+WE lmows1.0.vsovbsow:wvsPo-mP1hsvsh:oD0mPovbso1m s0ow/11h:2oITw-m e
+lbs ovbso5h/sopdMom ovbso1/wbo5/vvm
+kE !0swwo1/wbo5/vvm oZ!ULdqK«lOjM6oN«n]E
+ s-vovbsoP.T wo-m s-vm0oD0mPovbso1m s0owm-9svE
+lbso bTvsopdMom ovbso1/wbo5/vvm oZ!ULdqK
+Z!ULdqK«lOjM6oTwom E
+«lOjM6oN«n]oTwom E
+lbso0sIopdMoZdPTwwTm oNpa]o. Iovbso0sI
+ .0 T 4ohT4bvo.0somDDE
+
+04/21 - Index: AA [EN]Videojet 3210 / 5 Operation 30
+8. The status LED of the key switch push button on the key pad is flashing.
+7. Press the push button (S2) to activate the laser.
+6. In the software the menu entry changes to »Remove«.
+5. Select »Insert« from the menu.
+4. Select the Log out button in the TCS+ software.
+3. If the software is protected by a 'Password on Start' option, select user level
+2. Using the TU430 , the TCS+ software is loaded automatically.
+1. AdministratorPress the push button »POWER/STANDBY« (S1). Wait until the white LED and enter the default password 2222 .
+Using a browser-enabled device, start your preferred web browser, type in the
+on the push button is on.
+IP address of the laser system you want to connect to and press Enter.
+5.4 Key Switch in Software
+To use the key switch proceed as follows:
+
+rgu,pncnd1E-CynVVnj.()[0E- N-7n],prnun bnAL-8270 1 ]p
+g ovbsowmDv .0sovbsoPs /os v0:o-b. 4swovmoZg ws0vE
+lbsowv.v/wopdMomDovbso9s:ow Tv-bo1/wbo5/vvm om ovbso9s:o1.Io4mswom/vE
+WE «shs-voZqsPmfsoD0mPovbsoPs /E
+kE «shs-vovbso W In x7 o5/vvm oT ovbso lx«) E
+lbsowv.v/wopdMomDovbso9s:ow Tv-bo1/wbo5/vvm om ovbso9s:o1.IoTwoDh.wbT 4E
+aE !0swwo1/wbo5/vvm oN«a]E
+nE «vm1ovbsoP.09T 4o10m-swwE
+lmo0sPmfsovbso9s:o10m-ssIo.woDmhhm wc
+
+04/21 - Index: AA [EN]Videojet 3210 / 6 Maintenance 32
+6.2 Maintenance Plan
+NOTICE
+The maintenance intervals are laid out considering laser system use of approxi-
+mately 10 hours of daily operation on a normal working environment.
+ CAUTION
+If the time of daily use exceeds 10 hours of continuous operation or in case of
+above normal dusty/dirty environment please shorten the maintenance intervals
+accordingly. In case of questions please contact Videojet Technologies Inc. or
+6.1 General Notes Concerning
+6 Maintenance
+one of their representatives.
+All maintenance works are described in the following sections.
+Maintenance
+The time for maintenance of the laser system is very short. Please carry out
+maintenance works in the stated intervals.
+The laser system is designed such that maintenance can be performed safely.
+Maintenance has to be performed by instructed operating and maintenance per-
+sonnel only!
+For reasons of safety make sure that the main key is withdrawn and the mains is
+disconnected!!
+Before cleaning the laser system and its environment, the laser system must be
+disconnected from the mains power supply.
+Document the regular maintenance in the maintenance protocols in this chapter!
+In case of non-conformance with the maintenance plan Videojet Technologies
+Inc. reserves the right to limit the warranty!
+Before carrying out the maintenance works at the optics, please note the follow-
+ing:
+Acetone is not included upon delivery and has to be purchased via other compa-
+nies. Open the following Internet page to order acetone in a quick and uncompli-
+cated way: www.vwr.com/index.htm
+When purchasing acetone make sure that you order acetone pro analysi (p.a. =
+highest purity grade).
+
+04/21 - Index: AA [EN]Videojet 3210 / 6 Maintenance 33
+NOTICE
+Every six months If installed: Exchange the charcoal filter inside the
+fume extractor (refer to manual of the fume extrac-
+Every three monthsCarry out a visual inspection of the laser system.
+Monthly or when controlIf installed: Exchange the filter bag inside the fume
+tor).
+(more frequently when oper-Clean if necessary. Check also the warning labels.
+Monthly Check the laser scan lens for dust and dirt. Clean
+Maintenance Intervalslamp lights up Measuresextractor (refer to manual of the fume extractor).
+ated in dirty ambient condi-They must be readable and positioned correctly.
+(more frequently when oper-the laser scan lens in case of dust or stains.
+tions)
+ated in dirty ambient condi-
+Check the product detector (light barrier). Clean or
+Check the filter mats. Exchange if necessary.
+tions)
+readjust if necessary.
+Check the fume extractor for air leaks.
+We recommend a professional check by our service engineers once a year (more
+often in a very dusty environment).
+We offer special training seminars for maintenance and service personnel. In
+case of questions please contact Videojet Technologies Inc. one of their repre-
+sentatives.
+
+04/21 - Index: AA [EN]Videojet 3210 / 6 Maintenance 34
+5. Remove the laser scan lens from the marking head and place it on a clean
+4. Firmly grip the laser scan lens with both hands and turn it clockwise carefully
+3. Disconnect the mains connector.
+surface.
+2. Switch off the laser system (push button »STANDBY«).
+1. Open the key switch. Remove the key in the software to ensure that the laser
+until it is released from the thread.
+ DANGERsystem cannot be switched on.
+Do not touch the lens surface!
+6.3.1 Disassembly of the Laser Scan Lens
+NOTICE• Protective gloves
+• Acetone
+• Optics cleaning paper
+ CAUTION
+Before starting any work the laser system must be completely switched off.
+6.3 Cleaning the Laser Scan Lens
+The laser scan lens is located at the marking head. It may be contaminated by
+dust, floating particles in the air or other substances formed by the marking
+process. Contamination of the laser scan lens can lead to damage of the laser
+scan lens and gradually reduce the quality of the marking. Especially using higher
+laser power a contamination of the laser scan lens can result in damage to other
+components of the marking system. Therefore the lens has to be cleaned regu-
+larly.
+Generally, just the outwardly facing side of the laser scan lens has to be cleaned,
+but check both sides for contamination and clean them, if necessary.
+As with all optical components the laser scan lens is an object of highest preci-
+sion and sophisticated design!
+Slightest damage of the surface might (in the long term) result in unusability of the
+component or reduction of marking quality. Any contaminants must only be re-
+moved by means of optics cleaning paper and acetone.
+Make sure that no contaminants enter the marking head while cleaning the laser
+scan lens!
+To clean the laser scan lens you need:
+Wear suitable protective gloves during the complete procedure!
+
+04/21 - Index: AA [EN]Videojet 3210 / 6 Maintenance 35
+2. The screw in the laser scan lens slowly and straight in the right direction,
+1. Place the laser scan lens straight onto the laser beam outlet and turn it in the
+handtight.
+2. Carefully screw in the laser scan lens anti-clockwise until the fine thread has
+wrong direction until you hear the clear click as the first thread engages.
+1. Position the thread of the laser scan lens straight onto the laser beam outlet
+caught and tighten it by hand only. Do not use any tools!
+6.3.2 Mounting the Laser Scan Lens
+of the marking head.
+NOTICE
+The fine thread requires several turns before the scan lens is released. Make
+sure that you are holding the lens firmly with both hands.
+If the fine thread jams during screwing proceed as follows:
+
+04/21 - Index: AA [EN]Videojet 3210 / 6 Maintenance 36
+5. Close the covers.
+4.NOTICE Insert new mats.
+3. Remove the filter mats. Dispose of the mats according to the local regula-
+tions.
+2. Open the cover at the back of the system removing the screw using a 3 mm
+hex key. Push the cover a bit upwards and remove it.
+1. Open the cover at the side by inserting a narrow screw driver into the groove
+from below and levering carefully.
+NOTICE
+ DANGER
+6.4 Exchange of the Filter Mats
+Before starting any work the laser system must be completely switched off.
+Always exchange the mats of both filters.
+To exchange the filter mats proceed as follows:
+The mat for the lateral filter has two different sides. The densely packed, coarse
+side must be pointing towards the inside while the loosely packed, fluffy side must
+be pointing towards the outside.
+
+04/21 - Index: AA [EN]Videojet 3210 / 6 Maintenance 37
+6.5 Protocols for Maintenance,
+Repair and Replacement
+It is strongly recommended that records are kept of maintenance, repair and re-
+placement procedures.
+The maintenance protocols specify the tasks and their intervals. The correct and
+timely maintenance can help to minimize malfunctions of the laser system.
+You will also find forms to record the repairs and replacements. Copies can be
+made and used to keep an ongoing record of the procedures recommended
+throughout the life of the laser marking system.
+
+rgu,pncnd1E-CynVVnj.()[0E- N-7n],prnun BnD2017-121:- ]6
+F2880-En x7n 1y F2880-En x7nh5y
+g w1s-vTm o. Ioxhs. T 4omDovbsop.ws0o«-. ops wo
+M.vs j.Ps
+7.T vs . -soT vs0f.hco D 17lT5
+
+rgu,pncnd1E-CynVVnj.()[0E- N-7n],prnun BnD2017-121:- ]k
+F2880-En x7n 1y F2880-En x7nh5y
+g w1s-vTm o. oxhs. T 4omDovbsoM.vs j.Ps CThvs0o7.vw
+NTDoT wv.hhsI]
+7.T vs . -soT vs0f.hco D 17lT5
+
+rgu,pncnd1E-CynVVnj.()[0E- N-7n],prnun BnD2017-121:- gr
+F2880-En x7n 1y F2880-En x7nh5y
+du-b. 4somDovbsoM.vs j.Ps !0seCThvs0omDovbso C/Psoduv0.-vm0
+NTDoT wv.hhsI]
+7.T vs . -soT vs0f.hco D 17lT5n 8nsl-1n: 178 TnT2oLnT0Il7enxL
+
+rgu,pncnd1E-CynVVnj.()[0E- N-7n],prnun BnD2017-121:- gp
+F2880-En x7n 1y F2880-En x7nh5y
+du-b. 4somDovbsoM.vs j.Ps xmP5T sIoNxb.0-m.h]oCThvs0omDovbsoC/Psoduv0.-vm0
+NTDoT wv.hhsI]
+7.T vs . -soT vs0f.hco .t-85ne0Cno 17le
+
+rgu,pncnd1E-CynVVnj.()[0E- N-7n],prnun BnD2017-121:- g,
+F2880-En x7n 1y F2880-En x7nh5y
+ATw/.hog w1s-vTm
+M.vs j.Ps
+7.T vs . -soT vs0f.hco .t-85n7l8--no 17le
+
+rgu,pncnd1E-CynVVnj.()[0E- N-7n],prnun BnD2017-121:- g]
+[-8e0 1y F2880-En x7n 1y F2880-En x7nh5y
+»1I.vsomDovbsox7.09o«mDv .0s
+M.vs j.Ps
+
+rgu,pncnd1E-CynVVnj.()[0E- N-7n],prnun BnD2017-121:- gg
+f27-y '-L208n 8n'-LT2:-o-17F oo-17e
+!v2xT7eJn-7:a+
+f27-y '-L208n 8n'-LT2:-o-17F oo-17e
+F2880-En x7nh5y
+!v2xT7eJn-7:a+
+f27-y '-L208n 8n'-LT2:-o-17F oo-17e
+F2880-En x7nh5y
+!v2xT7eJn-7:a+
+f27-y '-L208n21En'-LT2:-o-17F oo-17e
+F2880-En x7nh5y
+W2e-8no E-Ty z-802Tn1xoh-8y
+qs1.T0o. Ioqs1h.-sPs vo!0mvm-mh
+m8 7 : T !v2xT7eJn-7:a+
+F2880-En x7nh5y
+
+04/21 - Index: AA [EN]Videojet 3210 / 7 Malfunctions 45
+• Check for an external STOP signal.
+• Check the key switch (must be closed).
+• Check for error messages.
+The laser cannot be started.• Check the interlock (must be closed).
+• Note the booting time and report it to the
+• Check the size of the database, the boot-
+The system does not boot or• Please note that the booting process can
+• service helpdesk.Check the fuses.
+• ing time depends on that.Check the power supply, e.g. RCD (resid-
+• Check the main switch.
+booting takes very long. take several minutes.
+The laser system cannot be• Check the plug.
+Symptom Causes/Measures
+ual current protective device)
+switched on.
+7.2 Malfunctions Descriptions
+ CAUTION
+7.1 Notes
+7 Malfunctions
+In this chapter you will find a description of possible malfunctions, their possible
+causes and suitable measures for troubleshooting. The measures stated must be
+performed by trained and qualified operation and maintenance personnel only.
+Tasks for troubleshooting going beyond the ones mentioned here must be per-
+formed by specially trained personnel only! Strictly follow the safety instruc-
+tions!
+
+04/21 - Index: AA [EN]Videojet 3210 / 7 Malfunctions 46
+• Check the encoder. If it is slipping increase
+• Check the product (must be free from dirt,
+• Check the lens. Clean or exchange if nec-
+the press-on force of the roll.
+Incomplete marking. • Check the product speed.
+• water, dust, oil, etc.).Check the fume extractor (must be on and
+• essary.Check the product (must be free from dirt,
+• Check the parameter set (power too low,
+suitable for the application).
+• Check the working distance.
+• Check the lens. Clean it if necessary.
+water, dust, oil, etc.).
+Faint marking. • Has the product been changed (e.g. di-
+speed to high).
+Stretched/shrunk marking.• Check the encoder setting.
+• Check the product carrier for accuracy.
+Shifted marking. • Check the sensor position.
+• Check the template.
+mensions, material)?
+Lopsided marking. • Check the laser position.
+• Error message "Shutter defect", exchange
+• Check the external STOP signal (if exist-
+• Check the total working time of the laser
+the shutter.
+• Is the correct product registration se-
+ing).
+• Check the power setting of the parameter
+beam source.
+• Check the lens. Clean if necessary.
+• Check the working distance.
+lected?
+• Check the product detection.
+No marking, although START• Check the encoder.set.
+Symptom Causes/Measures
+has been pressed.
+
+04/21 - Index: AA [EN]Videojet 3210 / 7 Malfunctions 47
+• Check the cooling system (if existing).
+• Is there enough space for the air intake?
+• Is the ambient temperature within the
+Laser stops due to overtempera-• Clean filter(s) and system.
+• Check the encoder. If it is slipping increase
+• specified limits (see product documenta-Check the fume extractor (must be on and
+ture.
+• Check the product (must be free from dirt,
+the press-on force of the roll.
+• Check the parameter set (power too low,
+tion)?suitable for the application).
+• Check the working distance.
+• Check the lens. Clean it if necessary.
+water, dust, oil, etc.).
+• Has the product been changed (e.g. di-
+speed to high).
+Poor marking quality. • Check for product or laser vibration.
+Symptom Causes/Measures
+mensions, material)?
+
+04/21 - Index: AA [EN]Videojet 3210 / 8 Appendix 48
+Mains cable connection8
+Mains power switch7
+Encoder6
+Product sensor5
+USB 4
+Touch Display3
+Ethernet2
+Digital inputs and outputs1
+8.1 Interfaces
+8 Appendix
+The interfaces are located at the back of the laser system:
+
+d
+V
+t
+a
+O p r e
+
+04/21 - Index: AA [EN]Videojet 3210 / 8 Appendix 49
+INTERFACE_GND13 GND for the digital interface (together with pin
+11)
+ERROR12 This output is LOW active. The system is
+Customer Interface Volt-11
+Customer Interface Volt-10
+stopped immediately if an error occurs during
+Customer Interface Volt-9
+age INMARKING8 This signal is set during the marking process.
+DATA47 Bit 4 of the external job selection
+age GND
+DATA26 Bit 2 of the external job selection
+the marking process (e.g. laser overtempera-
+DATA05 Bit 0 of the external job selection
+age OUT
+ture).
+SHUTTER_LOCK_IN4 Together with SHUTTER_LOCK_OUT: Need
+STOP3 Stops the marking-process, reacts to LOW
+START2 The output is reset after eliminating the causeStarts the marking-process, awaits trigger sig-
+to be connected for marking.
+level. Has to be tied HIGH if not used.
+INTERLOCK_IN1 Together with INTERLOCK_OUT: Need to be
+Pin Name of the error and acknowledgment of the errorDescriptionnal, reacts to low-high edge. START has no
+If open, the beam shutter will be closed and
+connected for marking. If the interlock is open
+message.function if STOP is set to LOW.
+NOTICE the PWM signal will be disconnected from the
+the laser is disconnected from power and the
+8.1.1 Digital I/O laser tube. The laser is on standby and can
+shutter is closed.
+start the next marking immediately after the
+D-Type connector, 25 pins, female, galvanically separated. The galvanically sep-
+SHUTTER_LOCK is closed again.
+arated inputs and outputs are provided as a standard. They are used for sending
+digital status signals and receiving digital command signals.
+The interlock/shutterlock has no certified PL or SIL (according to IEC 13849-1 or
+IEC 61508-1) and does not fulfill the requirements for functional safety as speci-
+fied in Annex K of IEC 62368-1.
+
+04/21 - Index: AA [EN]Videojet 3210 / 8 Appendix 50
+Max. output current (per channel)100 mA (short-circuit proof)
+Load type ohmic, inductive, lamp
+Rated voltage 24 V DC (-15 %/+20 %)
+8.1.1.2 Output Specification
+Min. signal length 300 µs
+Current input typ. 5 mA
+"1" signal voltage 9.5 V to 30 V, nominal 24 V
+"0" signal voltage 0 V to 8.3 V
+Rated voltage 24 V DC (-15 %/+20 %)
+8.1.1.1 Input Specification
+SYSTEM_GND25 GND for digital interface output (together with
+ACKNOWLEDGE24 This output is HIGH active and indicates that
+SYSTEM_24V23 Output 24 V for digital interface (together with
+pin 23)
+Customer Interface Volt-22
+the new template was selected.
+Customer Interface Volt-21
+pin 25)
+EXT_EVENTage GND20 Rising edge on this signal transfers job selec-
+DATA319 Bit 3 of the external job selection
+age OUTDATA118 Bit 1 of the external job selection
+SHUTTER_CLOSED17 This signal is set if the beam shutter is closed.
+tion bits into internal register and selects the
+SHUTTER_LOCK_OUT16 job.Together with SHUTTER_LOCK_IN: Need to
+READY_TO_MARK15 Ready to mark is set as soon as all necessary
+be connected for marking.
+INTERLOCK_OUT14 Together with INTERLOCK_IN: Need to be
+Pin Name Descriptiondata and a start signal have been received.
+If open, the beam shutter will be closed and
+connected for marking. If the interlock is open
+The system is ready to mark and awaits a trig-
+the PWM signal will be disconnected from the
+the laser is disconnected from power and the
+ger signal. In case of an error the signal is set
+laser tube. The laser is on standby and can
+shutter is closed.
+to LOW.
+start the next marking immediately after the
+SHUTTER_LOCK is closed again.
+
+04/21 - Index: AA [EN]Videojet 3210 / 8 Appendix 51
+81584Cable with open wires for connection of sensors and accessories
+82211Sub D 25 connector with solder terminals for connection of sensors and
+82213Terminal block for connection of accessories
+81282Light barrier for product detection
+82214Double light barrier for detection of products and movement
+81182Encoder for monitoring the speed of the conveyor belt
+accessories
+80823Stand for laser system
+DescriptionPart
+No.
+4 GND Encoder Supply
+3 Channel B IN
+2 Channel A IN
+8.2 Accessories1 24 V Encoder Supply
+Pin Function
+8.1.6 Encoder
+3 GND Trigger Supply
+2 Trigger IN
+1 24 V Trigger Supply
+Available accessories for the laser system:Pin Function
+4-pole connector, circular, female
+8.1.5 Product Sensor (Light Barrier)
+8.1.4 USB
+3-pole connector, circular, female8.1.3 Touch Display
+USB connection for data transfer.8.1.2 Ethernet
+HDMI connection for Touch Display (user interface).
+Standard RJ45, 100 MBit/s, no power
+
+04/21 - Index: AA [EN]Videojet 3210 / 8 Appendix 52
+8.3.1 Lasers Control
+8.3 Wiring Examples
+
+04/21 - Index: AA [EN]Videojet 3210 / 8 Appendix 53
+8.3.2 Encoder/Trigger
+
+04/21 - Index: AA [EN]Videojet 3210 / 8 Appendix 54
+2. Interlock open.
+1. Shutterlock open.
+8.3.3 Shutterlock/Interlock without Safety Controller
+System response:
+
+04/21 - Index: AA [EN]Videojet 3210 / 8 Appendix 55
+8.4 Drawings
+
+04/21 - Index: AA [EN]Videojet 3210 / 8 Appendix 56
+
+04/21 - Index: AA [EN]Videojet 3210 / 8 Appendix 57
+8.5 Safety Data Sheet Zinc-Selenide
+(ZnSe)
+
+04/21 - Index: AA [EN]Videojet 3210 / 8 Appendix 58
+
+04/21 - Index: AA [EN]Videojet 3210 / 8 Appendix 59
+
+04/21 - Index: AA [EN]Videojet 3210 / 8 Appendix 60

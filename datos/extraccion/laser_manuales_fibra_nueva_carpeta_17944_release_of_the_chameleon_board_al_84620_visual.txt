@@ -1,0 +1,127 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\Nueva carpeta\17944 - Release of the Chameleon Board AL-84620.pdf
+# cifrado=False bloques=3 caracteres=5025
+
+Field Service Bulletin
+000017944
+FSB #:
+Affected Model Categories
+1
+Version:
+3140 7510 7610 7810 3340 7330 7230 3640
+8/26/2022
+Published:
+lasersupport@videojet.com
+Contact:
+Release of the Chameleon Board AL- 84620
+This bulletin is to inform you of the upcoming release of the MC Chameleon Board AL- 84620 -
+Board, PCBA, Chameleon, MCIP ATRIX.
+Due to to global supply chain shortages, it is necessary to introduce a new MC Chameleon
+board for the interim to maintain laser unit production and availability of spare parts. The MC
+Chameleon board contains changes in components, while modifying and maintaining the ori -
+ginal design intent and functionality.
+Figure 1: MC Chameleon Board
+l
+The new AL- 84620 Chameleon board will be introduced with index AB. For easy iden -
+tification, the new board is red in color.
+Disclaimer
+The contents of this bulletin and any linked documents are provided as a convenience to highlight useful information and troubleshooting tips.
+When working with a product, always consult the product user manual and follow the product safety precautions and recommendations, including
+using Personal Protective Equipment when necessary. If you have any questions or are not experienced in using or servicing the Videojet equip -
+ment this document references, contact Videojet for assistance.
+© 2022 Videojet Technologies - Page 1 of 3 -
+
+l
+The board replaces the previous versions: AL- 76158, AL- 78900 and AL- 83300.
+l
+The AL- 84620 MC Chameleon PCBA requires the minimum use of CMark 4.15.1 or greater.
+Points of Difference
+l
+The connections located on the board​ and the installation/exchange of the board remain the
+same.​​
+l
+Note : It is not possible to load the customer data from CMark versions: 3.4.x and CMark
+4.x.0. The current mitigation in this case is to export the following prior to updating: tem -
+plates, line setups, mark sets, logos, and fonts.
+l
+The AL- 84620 has no SD card socket. When upgrading from a SC Chameleon board with an
+SD card, refer to the service instructions AL- 77300 for the data transfer.
+l
+The USB connector located on the Chameleon board remains functional. ​​​The function is for
+using the rescue stick.
+l
+The USB connector located on the front panel for the 7510, 7610, and 7810 is no longer
+supported.
+l
+When powering off the laser system, the status LED located on the power button will flash for
+a brief period of time. This behavior is unique to the AL- 84620 MC Chameleon board, which
+has no impact on the performance of the PCBA. This behavior will be corrected with the next
+release for the MC Chameleon board. This behavior is to be corrected in revision AC
+l
+Processors: Different manufacturers for the processors will be used. If necessary, these are
+easily identified by the color and facing direction of the heat sink.
+l
+Rescue Stick
+l
+The Rescue Software version required for the AL- 84620 Chameleon board is PlexMark
+1.14.
+l
+There is a risk when using a previous version that the laser will not boot. The Rescue pro -
+cess would install the Cmark.zip file, however the system would not be able to shut down
+(screen would still be on and displaying an error message, the White LED will be flashing,
+no Blue LED). The next Boot sequence based on the Cmark version used with the Res -
+cue stick, the system may not boot and the system could not be powered down.
+l
+The corrective action is use the current Rescue Software version.
+Obsolete Spare Part Assemblies
+The assemblies in Table 1 are obsoleted with the introduction of the AL- 84620 MC Chameleon
+board.
+Table 1: Obsoleted P/Ns
+P/N Description
+Board, CPU, Chameleon, Passive Cooled
+AL- SP77290
+Board, PCBA, Chameleon, MICP
+AL- SP78900
+Board, PCBA, CPU, Chameleon, MCIP2
+AL- SP83300
+© 2022 Videojet Technologies - Page 2 of 3 -
+
+Revised Spare Part Assemblies
+The assemblies in Table 2 are revised with AL- 84620 MC Chameleon board:
+Table 2: Revised Assemblies
+P/N Description
+Upgrade assembly, Control unit, Touch UI, TU440, Videojet
+AL- SP82786
+Upgrade assembly, Control unit, Touch UI, TU440, LNX
+AL- SP82787
+Related CMark Software Version Notes
+l
+CMark 4.15.0
+l
+Introduced with the release of the CP- Light 5 board, which is applicable and backwards
+compatible, contains changes in components, while maintaining the original design intent
+and functionality.
+l
+This excludes the SHC120 and SHC 150 marking heads
+l
+SmartGraph version: 10.17.0
+l
+CMark 4.15.1
+l
+Applicable for all CO2 and Fiber laser systems using the new AL- 84620 MC Chameleon.
+l
+SmartGraph version: 10.17.1
+l
+Added SmartGraph versions for all - major bug for 7340 & 7440 systems, do not
+use CMark 4.15.1 on these models
+l
+CMark 4.15.2
+l
+Only applicable for the 7340 and 7440 laser systems. The improvement is the minimum
+and maximum values for the air pump and a fix for use of the focus finder resulting in
+fuzzy print.
+l
+SmartGraph version: 10.17.1
+l
+CMark 4.16.0 (unreleased) - will be used for all laser systems and is targeted for release
+in the beginning of October 2022
+© 2022 Videojet Technologies - Page 3 of 3 -

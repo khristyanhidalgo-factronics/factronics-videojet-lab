@@ -1,0 +1,2490 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\AL-69452-Manual 3120 3320 Videojet.pdf
+# cifrado=False bloques=130 caracteres=131362
+
+Copyright 2006, Videojet Technologies Inc. (herein referred to as Videojet). All rights reserved.
+This document is the property of Videojet Technologies Inc. proprietary information owned by and contains confidential and Videojet. Any unauthorized copying, use or disclosure of it without
+the prior written permission of Videojet is strictly prohibited.
+Videojet Technologies Inc.
+1500 Mittel BoulevardPhone:1-800-843-3610Wood Dale, ILFax:1-800-582-1343INTL: Canada, France, Germany, Ireland, Japan, Spain, Offices - USA: Atlanta, Chicago, Los Angeles, Philadelphia
+60191-1073 USAIntl Fax:630-616-3629Singapore, The Netherlands,The United Kingdom www.videojet.comDistributors Worldwide
+
+Table of Contents
+1 Safety Instructions.......................................................1
+1.1 Symbols Used............................................................1.2 Laser Classes........................................1................................................................2
+1.3 Intended Use........................................................1.4 Maintenance and Servic............................4e.................................................................5
+1.5 Safety Devices and Warning Lights...............1.6 Dangers to Eyes and Sk..................................6in................................................................7
+1.7 Adjustment/Modification of the Marking Fiel1.8 Safety Information for Zincd..................................8 Selenide Lenses...................................9
+1.9 Fire and Explosion Hazard...................................1.10 Electrical Safety.................................10....................................................................10
+1.11 Decomposition Products....................................1.12 Warning and Informati..........................11on Labels..................................................12
+2 Installation.................................................................15
+2.1 Installation and Start-up.................................2.2 Transport and Storage................................15...................................................................15
+2.3 Unpacking..................................................................2.4 Installation Conditions....................16....................................................................16
+2.5 Cooling.......................................................................2.6 Exhaust Unit.........................................17..............................................................17
+2.7 Interfaces of the Laser System......................2.8 Hardware and Software Re................................17quirements..........................................18
+2.9 Installation of the Smart Graph Software.......................................18
+3 Description of the Laser System...............................19
+3.1 Functioning of a Vector-Scanning Laser System3.2 The Laser Beam Source.............................19..............................................................20
+3.3 The Marking Head................................................3.4 The Marking of the Produc..........................20t Surface..............................................21
+3.5 The Laser Parameters.........................................3.6 The Structure of the Lase..........................21r System................................................22
+3.7 Data and Signal Processing.................................3.8 Technical Data...........................................23..............................................................24
+3.9 Working Distance and Marking Field.............................................26
+4 Operating the Laser System......................................29
+4.1 Operation of the Laser System......................4.2 Marking Elements............................................29..............................................................30
+i
+
+Table of Contents
+4.3 Elements on the Supply Unit..........................4.4 System States of the Las................................31er System...............................................32
+4.5 Switch-On/Off of the Supply Unit...................4.6 Data Transmission...........................................33..............................................................34
+4.6.1 Connecting Cable.................................................4.6.2 Definition of IP Address...........................................34.............................................................................35
+5 Maintenance..............................................................37
+5.1 General Notes Concerning Maintenance.......5.2 Maintenance Plan............................................37..............................................................38
+5.3 Cleaning the Laser Scan Lens.......................................................39
+5.3.1 Disassembly of the Laser Scan Lens...............5.3.2 Cleaning the Laser Scan Lens...............................................40....................................................................40
+5.3.3 Mounting the Laser Scan Lens.....................................................................40
+5.4 Update of the Smart Graph Software.............5.5 Protocols for Maintenance, Re................................41pair and Replacement....................42
+6 Malfunctions and Error Messages.............................49
+6.1 Notes..........................................................................6.2 Malfunction Descriptions....................49................................................................50
+6.3 Warning Messages..............................................6.4 Error Messages..........................................51..............................................................60
+7 Appendix...................................................................87
+7.1 Assignment of the Customer Interface...........................................87
+7.1.1 Interlock................................................................7.1.2 Inputs and Output............................s (Galvanically Separat............87ed)...............................................87
+7.1.3 Inputs (Not Separated Galvanically)................7.1.4 Wiring Example 1: .................................Control via PLC.....................92......................................................95
+7.1.5 Wiring Example 2: Direct Connection (MOTF - mark on the fly)...................96
+7.2 Declaration of Conformity...............................7.3 Drawings........................................97................................................................................98
+7.4 Safety Data Sheets......................................................................102
+7.4.1 Zinc-Selenide (ZnSe) + Thorium Fluoride (ThF 7.4.2 Acetone................).......................................................103.......................................................................108
+4
+7.5 Abbreviations...............................................................................116
+ii
+
+Preface
+Preface
+This manual...
+...contains all information required for the safe operation, remedy of minor malfunctions andmaintenance of the laser system. The operation manual is always enclosed to every laser sys-
+tem.
+This operation manual is intended for the trained operation and service personnelser system. of the la-
+This operation manual is subject to technical modifications progress without notice.for improvement or technical
+Before starting your work carefully read the chapter "Safety Instructions"!
+Make sure that you have understood all notes. In Technologies Inc. directly.case of any questions please contact Videojet
+Strictly follow the instructions!
+If you need help...
+...please contact Videojet Technologies Inc. at 1-800-843-3610 (for all customers within theUnited States). Outside the U.S., customers should contact their Videojet Technologies Inc.
+distributor or subsidiary for assistance.
+Videojet Technologies Inc.1500 Mittel Boulevard
+Wood Dal IL 60191-1073, USAPhone (USA): 1 800 843 3610
+International: +1 630 860 7300
+Fax (USA): 1 800 582 1343Internationales Fax: +1 630 616 3629
+Website: www.videojet.com
+12/05 - Rev. AA iii
+
+Preface
+Caution Laser Radiation!
+Caution!
+With open delivery systemdangerous laser radiation
+class 4 might be released!
+This might cause severe burns of the eyes
+and the skin as well as damage to objects!
+Thoroughly read this operation manualand strictly follow the safety instructions!
+iv 12/05 - Rev. AA
+
+Preface
+Contents
+1Safety Instructions
+2Installation
+3Description of the Laser System
+4Operating the Laser System
+5Maintenance
+6Malfunctions and Error Messages
+7Appendix
+Handheld
+Smart Graph
+Spart Parts List
+12/05 - Rev. AA v
+
+Preface
+vi 12/05 - Rev. AA
+
+Chapter 1Safety Instructions
+1 Safety Instructions
+1.1 Symbols Used
+Dangerrefers to an immediately impending danger. If the danger is not avoided, itcould result in death or severe (crippling) injury.
+Warningrefers to a possibly dangerous situation. If it is not avoided, it could result indeath or severe injury.
+Carefulrefers to a possibly dangerous situation. If it is not avoided, it could result inslight or minor injury. May also be used to warn of damage to property.
+Cautionrefers to a possibly harmful situation. If it is not avoided, damage could becaused to the product or to something in its environment.
+Importantrefers to handling tips and other particulsignify a dangerous or harmful situation.arly useful information. This does not
+Laserradiationrefers to the emission of laser radiation and therefore to a possibly danger-ous situation. Please comply exactly with the safety instructions! Failure to
+comply with the instructions could result in minor or major injuries to the eyesor to the skin, together with damage to property.
+Note:
+Registered trademarks, patterns, designs and patental. This does not mean that they are out of copyrights or that they may be used freely.s are not indicated explicitly in this manu-
+03/07 - Rev. AC 1
+
+Safety InstructionsChapter 1
+1.2 Laser ClassesThe Complete Laser System
+1
+The complete and closed laser system acts as a class 1 laser system in normal operation Laser radiation emitted by the laser source is le.d completely within a shielding until it reaches
+the product. The shielding prevents emerging of laser radiation or laser beam reflexes.
+The Laser Source
+The CO -laser - hereinafter called laser - is operated in pulsed or continuous wave operationrespectively. The laser itself is classified as class 4. It produces invisible, infrared radiation
+which is extremely dangerous for the eye and dangerous for the skin.
+2 In pulsed operating mode the pulse frequency operating mode and pulse frequency depends on the application.adjusts between 50 Hz and 20 kHz. The actual
+Maximum values
+average power densityenergy density
+at the beam outletup to 1,5 x 10
+6 2 2 2
+ W/m 7 x 10 J/m (at 1 kHz and50% duty cycly
+a
+)
+9 2 6 2
+in focus up to 5 x 10
+ W/m 3 x 10 J/m (at 1 kHz and50% duty cycly
+a
+)
+Laser radiationCaution!
+As soon as the closed shielding or the housing of the laser are opened any-where the complete laser system is set to class 4!
+In that case appropriate measures have to be taken in order to protect peopleworking in the laser area against too high radiation!
+LaserradiationCaution with modifications!
+EN 60825, part 1, »Radiation safety of laser systems«, section 4.1.1 says:
+If a modification by the user to a laser system previously classified in accor-dance with this standard leads to a change of its performance data and/or its
+intended use that person or organization performing the modification is re-sponsible for a new classification and labeling of the laser system.
+a.duty cycle: The ratio betweeen the period of laser emission and the operation terms.
+1.Normal operation does not include service, maintenance nor repairs.
+2 03/07 - Rev. AC
+
+Chapter 1Safety Instructions
+ImportantThe pilot laser can be used for simulation or adjustment without the CO
+2
+laser. Also in this case you must ware laser safety goggles protecting againstlaser radiation of CO
+a
+ lasers.
+2
+a.In this case the CO laser is switched off via the softwaresafety goggles must be worn.. Due to the laser safety regulations
+2
+03/07 - Rev. AC 3
+
+Safety InstructionsChapter 1
+1.3 Intended Use
+The laser system must only be used for the treatment of material surfacesare locally heated by intensive class 4 laser radiation and are modified thereby. These systems. The surfaces
+are mainly applied for marking of product surfaces (expiry dates, batch printing, serial numbers,etc.).
+The radiation produced by the laser system is of high energy and therefore improper use rep-resents a danger to persons or objects!
+LaserradiationNever expose human beings or animals to laser radiation! This might result in severe burns of eyes or skin.
+Never expose flammable materials to laser radiation! Always ensure appropriate shielding of the laser beam! Errors during
+marking on flammable materials (e.g. able safety measures by installing e.g.paper) might cause fires. Take suit- smoke or fire detectors, or similar!
+Never expose reflecting surfaces to laser radiation! The reflected laser beam may cause the same dangers - in individual cas-
+es even greater dangers - as the original laser beam.
+Never expose unknown materials to laser radiation! Some materials (e.g. polyethylene, polypropylene, glass) are easily pene-
+trated by the laser beam, although they seem to be opaque for the human eye.
+Danger of explosion! Make sure that the laser area is free of explosive materials or vapors!
+For safety reasons arbitrary modifications or changes to the laser system are forbidden!
+If a modification made by the user to a previously classileads to a change of its performance data and/or its intended use that per-fied laser system
+son or organization performing the modification is responsible for a new classification and labeling of the laser system. The person or organization
+is then regarded as »manufacturer«.
+The laser system must be operated with open laser and/or open beam delivery system by specially trained personnel only!
+Make sure that the laser protection rules are always observed!
+4 03/07 - Rev. AC
+
+Chapter 1Safety Instructions
+1.4 Maintenance and Service
+The maintenance tasks described hereinafter should only be carried out by personnel. The service tasks are exclusively to be especially trainedcarried out by service personnel of VIDEO-
+JET or one of their representatives. During these works the laser system has to be operated inclass 4. The Unfallverhütungsvorschrift (Accident Prevention Regulations) 46.0 »Laser Radi-
+ation« (BGV B2) says that the responsible trade cooperative association and the authority re-sponsible for occupational safety (Trade Supervisory Office) have to be given notice of class
+3B or 4 laser systems before initial operation.
+Note:
+ImportantWe urgently recommend:
+Give notice of the laser system to the responsible trade cooperative asso-ciation and the Trade Supervisory Office before initial operation.
+Have a person responsible for the safety of the laser system trained as la-ser safety officer and inform the trade cooperative association in writing
+about this person.
+In order to facilitate safe performance of all necessary maintenance and service tasks withoutassistance and to ensure highest safety for the operating and maintenance personnel we offer
+special training seminars.
+Training for technicians:The trainee gains the knowledge required to perform all maintenance and service tasks at
+the laser system safely and professionally without assistance.
+Combined training:In addition to the knowledge gained during the training for technicians the person is trained
+as laser safety officer. This training is accepted by the trade cooperative association (see above).
+Ask for free information material!
+03/07 - Rev. AC 5
+
+Safety InstructionsChapter 1
+1.5 Safety Devices and Warning Lights
+The complete laser system includes various safety devices and warning lights which shall pre-vent damages to people or objects. There must not be any alterations to safety devices nor
+warning lamps (see section "Laser Classes")!
+Safety Devices
+Warning Lights
+Key-operated switchprevents operation of the laser system by unauthorized people.Make sure that the key is withdrawn and available to authorized
+personnel only!
+Beam shutteris located within the laser head and prevents the emission of laserradiation.
+Interlock switch(es)open(s) the safety circuit. The marking process is stopped imme-diately. If several interlock switches are connected: Laser radia-
+tion cannot be emitted if at least one interlock switch is opened.
+Interlock switches can safeguard safety doors, protective covers,etc. Number and position of the interlock switches are system-
+specific.
+For the marking process all interlock switches must be closed. Themessage "Error Interlock open" is displayed in the software.
+After closing the interlock switch the marking process can be con-tinued after a delay of 5 seconds.
+We recommend the interlock monitoring module for proximity safe-ty switches AES 1235 in combination with the magnetic guard door
+BNS 33 and the actuating magnet BPS 33 by Schmersal.
+Red lighton the marking head lights up when the emission of laser radiationis possible.
+Red lighton the control panel of the supply unit, lights up when the emissionof laser radiation is possible.
+"Laser emission"
+Additionalwarning lightscan be connected as external emission displays (system-specific).
+6 03/07 - Rev. AC
+
+Chapter 1Safety Instructions
+1.6 Dangers to Eyes and Skin
+The ALLPRINT Laser System produces class 4 visible for the human eye. Therefore eyes and skin are endangered through high-energy laserlaser radiation. Infrared laser radiation is not
+radiation.
+High irradiation causes an extreme local heating and subject to special risks. High raburning of the tissue. The eyes arediation intensity causes a local heating and burning of the cor-
+nea and thus a reduction or loss of sight!
+Suitable safety goggles provide protection against tered laser radiation.direct, specularly reflected or diffusely scat-
+Suitable safety goggles are:
+designed for the narrow wavelength range of the CO
+See name plate of the laser system.laser of 10.6 µm (optional 9.3 µm).
+Careful with confusions! Safety goggles for other lasers, e.g. Nd:YAG laser, do not provide adequate protection
+2 against radiation of a CO
+ laser!
+designed for the power range of the CO
+2
+People within the area of the lasergoggles must wear against laser radiation while carrying out maintenance, suitable safety
+adjustment or service work at the open laser housing and/or openbeam delivery system!
+Never look directly into the laser beam!
+ laser:
+Videojet 332030 W
+2 Videojet 312010 W
+are designed for pulse and continuous wave operation.system adjusts between 50 Hz and 20 The pulse frequency of the laser kHz, depending on the application.
+The skin can withstand higher radiation intensities than the eye. However - depending on theradiation period and radiation intensity - the tissue is destroyed through burns. Therefore pro-
+tect your skin by wearing adequate protective clothing!the laser radiation! Avoid the laser beam to get in contact with your clothing! Avoid any exposure of your skin to
+ImportantThe pilot laser can be used for simulation or adjustment without the CO
+2
+laser. Also in this case you must ware laser safety goggles protecting againstlaser radiation of CO
+a
+ lasers.
+2
+a.In this case the CO laser is switched off via the softwaresafety goggles must be worn.. Due to the laser safety regulations
+2
+03/07 - Rev. AC 7
+
+Safety InstructionsChapter 1
+1.7 Adjustment/Modification of the Marking Field
+Via the software the marking field of the laser can be modified in such a way that the laser beamcan possibly be directed to the shielding or onto other components or parts. Thus, surfaces ex-
+posed to irradiation can be damaged or destroyed.
+LaserradiationIf, as a result of the modification, the laser beam gets accessible the com-plete laser system is set to class 4 (see section Laser Classes auf Seite2).
+CautionFire and explosion hazard if there aratmospheres within the area of the laser beam.e flammable materials or explosive
+A password is required for changing the marking field (if the password tivated in the software). The password can be changed subsequently by a user authorized forprotection has been ac-
+the corresponding user level.
+We explicitly point out that the person who will fulfil a modification of the marking field,will assume the full responsibility for any consequential damages and problems!
+8 03/07 - Rev. AC
+
+Chapter 1Safety Instructions
+1.8 Safety Information for Zinc Selenide Lenses
+ laser marking systems available on the market.
+2
+AttentionThe laser scan lens consists of coated zinc selenide and contains anextremely small amount of the radioactive substance thorium. This applies to
+all CO
+Zinc Selenide
+This material contains components which are dangerous to health!
+Zinc selenide is toxic when inhaled or ingested. respiratory system. Do not eat, drink or smoke Dust may lead to irritation of the eyes and thewhile handling zinc selenide. Wash hands thor-
+oughly afterwards.
+For detailed information see safety data sheet in the chapter "Appendix".
+Thorium
+Thorium is a potential health hazard when inhaled or ingested. The thorium layer is embeddedwithin other layers within the lens. Thus no radioactive material can escape from the coating
+as long as the lens is intact. Avoid any surface scratches of the lens.
+There is no danger of radiation during normal handling and cleaning of the optical sys-tem!
+In case of a broken lens...
+...do not inhale material particles! In case of breaking of the laser scan lens please collect thefragments wearing gloves (avoid raising dust when sweeping up the pieces), pack the frag-
+ments into a closed plastic bag and send them back to us for disposal.
+Maintenance of the Laser Scan Lens
+Information concerning the maintenance of the latenance", section "Cleaning the Laser Scan Lens".ser scan lens can be found in chapter "Main-
+Please contact us if more information is required.
+03/07 - Rev. AC 9
+
+Safety InstructionsChapter 1
+1.9 Fire and Explosion Hazard
+1.10 Electrical Safety
+LaserradiationThe high output power of a class 4 laser can inflame various materials.Therefore, while performing maintenance and service work at the open la-
+ser housing and/or open beam delivery system, make sure that fire protec-tion measures were taken before starting the works!
+Paper (circuit diagrams, leaflets, posterare not impregnated fire retardently, wooden boards or similar flammables on the walls, etc.), curtains which
+materials can easily be inflamed by direct or reflected laser radiation.
+Make sure that the working area of the laser system is ers with flammable or explosive solvents or cleaning agents!free from contain- Unin-
+tended exposure of a container to intensive invisible laser radiation mighteasily cause fires or explosions.
+The laser system was designed in accordance wiregulations EN 60950-1, part 1 »Information technology equipment - Safety« and EN 60825,th the general rules of technology including
+part 1 »Safety of laser systems«.
+CautionDuring works at the open laser housing alive components are accessible!
+Make sure that rules and regulations for works on alive components are al-ways observed!
+All works at the open laser housing, especially at electrical components,must only be performed by specially trained personnel!
+10 03/07 - Rev. AC
+
+Chapter 1Safety Instructions
+1.11 Decomposition Products
+CautionWhen treating materials with laser radiduced which are dangerous to health!ation decomposition products are pro-
+Through vaporization of materials fine dust and vapors are produced whichmight include hazardous decomposition products depending on type and
+composition of the respective materials.
+Therefore we highly recommend to instalspective requirements which is equipped l an exhaust unit according to the re-with special dust and activated char-
+coal filters to ensure that the decomposition products are sucked off wherethey are produced.
+Protect yourself and your colleagues against hazardous decompositionproducts!
+An exhaust unit also prevents contamination and gradual destruction of optical elements of thebeam delivery system by dust particles. We offer different exhaust units as accessories.
+03/07 - Rev. AC 11
+
+Safety InstructionsChapter 1
+1.12 Warning and Information Labels
+Label/SymbolPosition
+on the marking unit
+on the marking head
+on the marking unit
+on the marking head and (if available) on thebeam turning unit
+on the supply unit
+INVISIBLE LASER RADIATION
+MAX.POWER: 40 W WAVELENGHT:
+AVOID EYE OR SKIN EXPOSURE TO DIRECT OR SCATTERED RADIATION
+λ LASER CLASS: 4 = 9 - 11 µm
+(EN 60825-1/10.03)
+INVISIBLE LASER RADIATION
+THIS APERTURE IS EMITTED FROM
+Caution
+Invisible laser radiation when open.
+Avoid eye or skin exposureto direct or scattered radiation.
+Caution
+Invisible laser radiation when open.
+Avoid eye or skin exposureto direct or scattered radiation.
+Attention!
+Alive unless mains line disconnected or switched
+off by central switch
+12 03/07 - Rev. AC
+
+Chapter 1Safety Instructions
+Label/SymbolPosition
+on the supply unit
+Videojet Technologies Inc.
+1500 Mittel Boulevard
+AL-68867 Wood Dale, II 60191-1073
+MODEL SN WL µm
+IDENT.
+LASER MARKING SYSTEM
+V A Hz PH
+Laser class 4 complies to EN 60825-1/10.03 and 21 CFR 1040
+03/07 - Rev. AC 13
+
+Safety InstructionsChapter 1
+14 03/07 - Rev. AC
+
+Chapter 2Installation
+2 Installation
+2.1 Installation and Start-up
+Installation and start-up of the laser system require profound knowledge and experience.Therefore it should be accomplished by personnel of Videojet Technologies Inc. or one of their
+representatives only.
+In order to facilitate quick and easy start-up pleasystem can be installed:se prepare the place of erection such that the
+Proceed as described in section "Unpacking".
+Please provide all connections - as described indocuments you received upon order handling - in time. section "Installation Conditions" and in the
+In case of questions please contact us.
+2.2 Transport and Storage
+The laser system is a precision-made instrument and includes numerous electronic and opticalcomponents. Please avoid any mechanical stress (shock, vibrations, etc.) on the laser system!
+In case of questions concerning transport and storage please contact us.
+Transport
+After unpacking the laser system should be transported in a horizontal position. sure that the supply line ("umbilical") connecting marking unit and supply unit is notPlease make
+bent! Switch off the laser system before transport and disconnect mains connection!
+Storage
+NoteThe company operating the laser system is responsible for the safe use ofthe laser system, especially for meeting the local codes and regulations
+regarding the operation of laser systems and their components (beam pro-tection, exhaust system, cooling, etc.).
+Videojet Technologies Inc. does not accept responsibility for any damagesdue to misuse of equipment, incorrect operation or negligence.
+Store the laser system in a horizontal position and protected against dust and humidity. Neverexpose the laser system or one of its components to direct sunlight! The storage temperature
+must not exceed +65 °C.
+The laser system has to be protected against frostature must not fall below 5 °C. The air humidity must be between 10% to 90%., which means that the storage temper-
+12/05 - Rev. AA 15
+
+Chapter 2Installation
+2.3 Unpacking
+1.Open the packaging and remove the filling material.
+2.Remove the individually packed components.
+3.Check all parts for damage during transport.In case of damage please inform the forwarding agent and Videojet Technologies Inc. or
+their representative immediately in writing. Keep the packaging material and note damageson the inside and outside.
+4.Transport the laser system and the components to the intended place of installation.
+5.Protect the laser system and all components from dust and humidity until installation.
+Please ensure that the enwrapping cardboard box, the transport pallet and thepackaging material are recycled separately!
+Temperature range:5 - 40 °C
+Air humidity:10 - 90 %, non condensing
+2.4 Installation ConditionsSpace Required
+The standard dimensions of the laser system can bependix". found in the drawings in the chapter "Ap-
+For systems manufactured according to special customer requirements this information can befound in the erection plan or the dimension and data sheets you received upon order handling.
+Connections
+The laser system requires a mains connection. Information on the type, number and referencevalues of the connections can be found in the terminal diagrams you have received upon order
+handling.
+The power connection cable of the laser system is 5m long. Make sure that the adequate pow-er sockets are in range.
+Ambient Conditions
+16 12/05 - Rev. AA
+
+Chapter 2Installation
+2.5 Cooling
+The laser system is cooled by air. The internal cooling system is desicooling.gned to supply sufficient
+Make sure that the cooling air can be sucked in and blown out freely and that there is sufficientair exchange at the installation site to ensure heat dissipation.
+2.6 Exhaust Unit
+In order to remove marking residues which might be dangerous to health we recommend in-stalling a exhaust unit. The exhaust unit is to be installed such that marking particles are sucked
+off directly at the place of the formation.
+In addition a exhaust unit prevents that dust particles gradually destroy optical components ofthe laser system.
+We offer exhaust units as accessories. If an exhaust unit is part of the find further information in the enclosed operation manual of the exhaust unit.complete delivery please
+2.7 Interfaces of the Laser System
+Network interfaceConnection of the handheld. Electrical power for the handheld issupplied by the switched-on laser system.
+Connection of a PC for controlling via Smart Graph software.
+Interlock circuit(Label IL)The interlock circuit is used to safeguard the laser system. If oneof the interlock switches connected to the interlock circuit opens
+the marking stops immediately. until all interlock switches are closed and the START-button isThe marking cannot be continued
+pressed.
+The closed interlock circuit is supplied with a voltage of +30V bythe laser system.
+Customer interfaceThe general assignment of the customer interface can be found inchapter "Appendix".
+The customer-specific assignment ofbe found in the data sheets you received upon order handling. the customer interface can
+12/05 - Rev. AA 17
+
+Chapter 2Installation
+2.8 Hardware and Software Requirements
+To operate the Smart Graph software properly the foments have to be met:llowing hardware and software require-
+Pentium PC
+Windows 2000 or XP
+128 MB RAM
+min. 50 MB hard disk memory
+CD-ROM drive
+2.9 Installation of the Smart Graph Software
+If a PC is part of the delivery the Smart Graph Software is installed already.
+To install the Smart Graph Software please follow the steps as described below:
+1.Insert the Smart Graph Software CD-ROM into the CD-ROM drive of your PC.
+2.Select »Execute« from the start-menu of your Windows operating system.
+3.Enter CD:\setup.exe in the text field and follow the instructions of the InstallShield wizard(CD is a place holder for the letter of the CD-ROM drive in your PC).
+18 12/05 - Rev. AA
+
+Chapter 3Description of the Laser System
+3 Description of the Laser System
+3.1 Functioning of a Vector-Scanning Laser System
+The CO -laser (2) working in pulsed or continuous operation produces an infrared invisible la-ser beam with small diameter. The laser beam is expanded by means of a two-lens telescope
+(3) and reaches the marking head (4).
+2 Two movable mirrors deflect it such that it passes over the lines of the opened template on theproduct. The lines are divided into vectors (X and Y coordinates). The line up of vectors pro-
+duces a marking on the product, the laser »writes« on the product surface.
+The calculation of vectors and the control of the laser is performed by the Advanced ControllerCard (ACC) in the supply unit (1).
+The deflected laser beam is focussed onto the product surface (7) by a laser scan lens (5).Generally the marking is produced at the focus of the lens (6).
+Figure 3-1: Functioning of a vector-scanning laser system
+03/07 - Rev. AD 19
+
+Description of the Laser SystemChapter 3
+3.2 The Laser Beam Source
+A sealed-off CO -laser serves as beam source for the laser system. Inside the laser sourceCO
+2
+-molecules are stimulated by a high-frequency voltage to emit infrared laser radiation.
+The generated laser radiation is reflected between lated emission the laser two facing mirrors, and by means of stimu-radiation is amplified.
+2 The end mirror reflects 100% of the radiation while the other mirror - the output coupler - re-
+flects only about 80 % of the laser radiation, which means that 20 % are coupled out for themarking process.
+3.3 The Marking Head
+After the laser beam is expanded by the telescmirrors are located inside the marking head which deflect the laser beam vertically and hori-ope it reaches the marking head. Two movable
+zontally.
+The X and Y axes of the coordinate system of the marking field are defined by the position ofthe marking head. A translation or rotation of the marking head also translates or rotates the
+axes of the coordinate system. X and Y axes in relation to the marking head are defined asdisplayed in the following figure:
+Figure 3-2: The coordinate system
++ X
++ Y
+marking field
+20 03/07 - Rev. AD
+
+Chapter 3Description of the Laser System
+3.4 The Marking of the Product Surface
+The marking of the product surface is performed by the effect of intense laser radiation on theproduct material.
+The laser beam is focussed onto the product surface and heats up the topmost layer of the ma-terial, which causes a color change or a vaporization of the topmost dye layer.
+The symbols and characters which shall be marked on the product are subdivided into vectorstrokes (1). Each vector stroke is again subdivided into smaller vectors.
+When the laser beam jumps from one stroke to the next (2) the laser is switched off and theproduct is not marked.
+Figure 3-3: Strokes and jumps
+3.5 The Laser Parameters
+Parameters are used to adapt the laser system to be determined and adjusted for each application to different materials. These parameters havein order to achieve the best possible mark-
+ing quality.
+Determining the correct parameters requires profound knowledge and experience, becausethe parameters highly depend on the application and the material which shall be marked. In
+case of questions please contact us.
+The parameters for individual materials are combined in parameter sets. Parameter sets canbe generated and altered either with the handheld or the Smart Graph software. For detailed
+information on the parameters please refer to the respective chapters.
+03/07 - Rev. AD 21
+
+Description of the Laser SystemChapter 3
+3.6 The Structure of the Laser System
+The laser system consists of the supply unit (1) and the marking unit comprising the laser head(2) and the marking head (3). The supply unit is controlled via the handheld or via the Smart
+Graph software on a PC.
+The marking head is attached to the laser head. tween marking head and laser head.Optionally a beam turning unit is attached be-
+Figure 3-4: The laser system Videojet3320
+Figure 3-5: The laser system Videojet3120
+2
+1
+3
+2
+1
+3
+22 03/07 - Rev. AD
+
+Chapter 3Description of the Laser System
+3.7 Data and Signal Processing
+The Advanced Controller Card (ACC) is the main circuit board of the laser system. The ACCcontains two processors controlling the complete system.
+PowerPC (PPC): The PPC uses the main memory (128MB) and controls part of the interfaces.On the PPC the AOS is running under Linux and communicates via different interfaces (ether-
+net, USB) with the connected external control units. For integrating the laser system into exist-ing installations the AOS provides various functions and can be adapted to the required task
+via a programming language (TCL). In the marking process the AOS generates data from theexisting templates to be transferred to the second processor.
+Digital Signal Processor (DSP): The DSP processes the data coming from the AOS and gen-erates position data for the marking head in order to control the movement of the laser beam
+according to the template settings. The position data are transferred to the FM board and con-verted into mirror movements. At the same time the laser is switched on and off.
+Additionally the DSP controls the fast inputs for trigger signals and inmitting precisely positioned markings on moving products.cremental encoder per-
+The different interfaces and their processing byfigure: the ACC board are displayed in the following
+Figure 3-6: Data and signal processing of the laser system
+Supply unitLaser headMarking head
+MMC
+FPGA
+Laser
+Ethernet 1
+FM
+USB
+PPCDSP
+Memory
+CustomerInterface
+LVDS
+Ethernet 2
+Serial
+ACC
+CAN
+IOEB (optional)
+03/07 - Rev. AD 23
+
+Chapter 3Description of the Laser System
+UnitVideojet3120Videojet3320
+a.Any statements referring to marked characters or actual markings are typical values. These values highly depend on the material and may only be taken as a guideline. These are no
+specifications
+Fonts (character sets)any standard font(special characters on demand
+for additional charge)
+Coolinginternal air-cooling
+Max. distance between sup-ply unit and marking unitm5 (standard 2, others on demand)
+ControlHandheld and/or IBM-compatible PC with Smart Graph software
+under Windows XP
+InterfacesNetwork interfaces, USB
+Due to our policy of continuous improvement, tetice.chnical data is subject to change without no-
+03/07 - Rev. AD 25
+
+Description of the Laser SystemChapter 3
+3.9 Working Distance and Marking Field
+Marking Head SHC-60
+laser scan lens:focal length f 64 mm95 mm127 mm190 mm254 mm
+working distance67 mm96.5 mm125 mm182 mm236 mm
+max. width (A)44.7 mm66.3 mm88.7 mm132.6 mm177.3 mm
+max. height (B)44.7 mm66.3 mm88.7 mm132.6 mm177.3 mm
+height for max.rectangle (b)41.9 mm62.3 mm83.2 mm124.5 mm166.5 mm
+width for max.rectangle (a)32.2 mm47.8 mm63.9 mm95.6 mm127.8 mm
+max. rectangle: marking field41.9 x 32.2 mm
+62.3 x 47.8 mm 83.2 x 63.9 mm 124.5 x 95.6 mm 166.5 x 127.8mm
+2 2 2 2 2
+For more information about the marking head installed in the laser system, please refer to theSmart Graph software under Configuration > Marking head.
+In order to receive this information, the laser system has to be in the online mode.
+working distance
+26 03/07 - Rev. AD
+
+Chapter 3Description of the Laser System
+Marking Head SHC-100
+Marking Head SHC-100
+a
+laser scan lens: Focal length f63.5 mm85 mm
+44.2 x 33.3mm 81.3 x 56.7 mm 122.0 x 85.0 mm
+2 2 2 2
+ 100 mm150 mm
+working distance89.0 mm89.0 mm94 mm142 mm
+max. width (A)30.8 mm47.1 mm73.3 mm110.0 mm
+max. height (B)38.2 mm62.6 mm101.2 mm151.8 mm
+height for max. rectangle (b)27.0 mm44.2 mm81.3 mm122.0 mm
+width for max. rectangle (a)21.8 mm33.3 mm56.7 mm85.0 mm
+max. rectangle:marking field27.0 x 21.8 mm
+a.The max. marking field size only is available, when the e In the case of using the exhaust nozzle, the marking fixhaust nozzle is removed from the focussing module!eld size is reduced to a circular area of 46 mm diameter!
+laser scan lens: Focal length f200 mm300 mm351 mm400 mm
+working distance191 mm278 mm338 mm385 mm
+max. width (A)146.6 mm219.9 mm257.3 mm294.7 mm
+max. height (B)202.5 mm303.7 mm355.3 mm406.9 mm
+height for max. rectangle (b)162.7 mm244.0 mm285.5 mm326.9 mm
+width for max. rectangle (a)113.3 mm170.0 mm198.9 mm227.8 mm
+max. rectangle:marking field162.7 x 113.3mm
+244.0 x 170.0mm 285.5 x 198.9mm 326.9 x 227.8mm
+2 2 2 2
+03/07 - Rev. AD 27
+
+Description of the Laser SystemChapter 3
+Marking HeadSHC-120
+Marking Head SHC-120
+a
+laser scan lens: Focal length f63.5 mm85 mm
+41.6 x 31.3mm 77.6 x 53.7mm 116.4 x 80.6 mm
+2 2 2 2
+ 100 mm150 mm
+working distance89.0 mm89.0 mm94 mm142 mm
+max. width (A)29.1 mm44.2 mm73.3 mm110.0 mm
+max. height (B)36.2 mm58.8 mm87.3 mm130.9 mm
+height for max. rectangle (b)25.6 mm41.6 mm77.6 mm116.4 mm
+width for max. rectangle (a)20.6 mm31.3 mm53.7 mm80.6 mm
+max. rectangle:marking field25.6 x 20.6 mm
+a.The max. marking field size only is available, when the e In the case of using the exhaust nozzle, the marking fixhaust nozzle is removed from the focussing module!eld size is reduced to a circular area of 46 mm diameter!
+laser scan lens: Focal length f200 mm300 mm351 mm400 mm
+working distance191 mm278 mm338 mm385 mm
+max. width (A)146.6 mm219.9 mm257.3 mm294.7 mm
+max. height (B)174.5 mm261.8 mm306.3 mm350.8 mm
+height for max. rectangle (b)155.2 mm232.7 mm272.3 mm311.9 mm
+width for max.rectangle (a)107.5 mm161.2 mm188.6 mm216.0 mm
+max. rectangle:marking field155.2 x 107.5 mm
+232.7 x 161.2 mm 272.3 x 188.6 mm 311.9 x 216.0mm
+2 2 2 2
+28 03/07 - Rev. AD
+
+Chapter 4Operating the Laser System
+4 Operating the Laser System
+4.1 Operation of the Laser System
+The laser system is built up modularly. Dependimises there are several ways to generate a marking template and starting the marking process.ng on the laser system installed in your pre-
+The laser system can be operated:
+via the handheld or
+using a PC with the Smart Graph software.
+handheldThe handheld gives you easy accelaser system. It is connected to the supply unit via the networkss to the controls of the
+interface. One handheld can be used for different supply units.It permits you to:
+generate or alter a marking job.
+generate and alter templates (limited).
+adjust the laser parameters.
+configure the laser system.
+Smart Graph softwareThe Smart Graph software runs on your personal computerunder Windows 2000 or XP. With the Smart Graph software
+you can access the full range of fonts, logos and tools to cre-ate even complex layouts and preview the marking on your
+monitor. In addition you can access all laser parameters andsystem settings.
+Using the Smart Graph software you can transfer the createdtemplates directly to the supply unit.
+03/07 - Rev. AD 29
+
+Operating the Chapter 4Laser System
+4.2 Marking Elements
+The following elements must be defined in order to mark a product:
+Marking ContentsThe marking content defines the layout of the marking, e.g. textelements, logos, serial numbers, fonts, etc.
+Parameter SetParameter sets adjust the laser syof the product. A parameter set contains e.g. information on thestem to the respective material
+laser power or the marking speed.
+ProductRegistationThe product registration contains all data necessary to detect theproduct and to trigger the marking process.
+Positioning DataThe positioning data defines the positioning and the size of themarking on the product.
+The combination of the four elements marking content, parameter set, product registration andpositioning within a template offers the possibility to adapt the marking to different marking
+tasks in a very short period of time.
+Examples:
+You want to mark a certain text on synthetic material instead of paper. Hence you change your parameter set from »paper« to »synthetic material«.
+You want to change the position of the marking on you product. For that you just change the positioning data directly in your template or in the user interface »Laser Operation« under
+»Marking settings«.
+30 03/07 - Rev. AD
+
+Chapter 4Operating the Laser System
+4.3 Elements on the Supply Unit
+S1S2S3L1 L3 I1
+L2
+No.TypeFunction
+S1Main switch(at the back of the applies the mains power for the supply unit.
+supply unit)
+S2Key switchapplies the power supply for the laser beam source. Themarking process can be started.
+Note:Remove the key if switched off to protect the system from
+unauthorized operation!
+S3Start and stop switchWith »START« the currently selected template can bemarked and with »STOP« a marking process can be
+stopped.
+L1LED flashes during initialization of the laser system.
+-white- is on when the laser system is ready for operation.
+is on during the marking process.
+L2LED flashes in case of malfunction.
+-yellow-
+L3LED is on when the key switch is in position »1«.
+-red- Simultaneously the red LED on the marking head lights up.
+I1Socketconnection of the handheld.
+03/07 - Rev. AD 31
+
+Operating the Chapter 4Laser System
+4.4 System States of the Laser System
+On the handheld and in the Smart Graph software the current laser system state is displayed.
+There are the following system states:
+System StateDescription
+InitializeThe control components of the laser system are started.
+Key-switch openThe initialisation is complete. The system can now be started byclosing the key-switch.
+Laser start-upAfter closing the key-switch the laser and the cooling system areactivated.
+Laser readyThe laser system is ready for marking.
+Prepare for markingAfter pressing »START« the laser requires a preparation time,the length depends on the template contents and the configura-
+tion.
+MarkingThe current marking content is marked onto the product.
+Laser radiation is emitted! Make sure that the safety instructions are observed.
+StandbyIf no marking is carried out for some time the laser switches tostandby in order to relieve the system components.
+Interlock openThe safety circuit is interrupted (e.g. protective door open). Amarking process is stopped immediately. Marking is only possi-
+ble with closed safety circuit.
+ErrorAn error occurred. To continue operation the error must be con-firmed. Information on the error can be found on page »Mes-
+sages«.
+Fatal errorA fatal error occurred and has deactivated the system. This errorcannot be confirmed and the operation cannot be continued.
+The laser system has to be turned off. Information on the errorcan be found on page »Messages«.
+Service modeThis system state enables service and maintenance work andmust only be used by especially trained personnel.
+32 03/07 - Rev. AD
+
+Chapter 4Operating the Laser System
+4.5 Switch-On/Off Switch-Onof the Supply Unit
+1.Make sure that the safety instructions are observed.
+2.If installed: Switch on the exhaust unit.
+3.Make sure that the key switch is in position »0«. Put main switch (S1) to position »I«. The white LED flashes, indicating the initialization of the laser system. This process can take
+1 to 2 minutes. After that the system is ready for operation and the white LED is on.
+4.Switch on the key switch.The red LED on the supply unit and the red LED on the marking head are on. The laser is
+ready.
+Switch-Off
+1.Stop the marking process.
+2.Turn the key switch to position »0«.The red LED on the supply unit and the red LED on the marking head are turned off.
+3.Turn the main switch to position »0«.The white LED is turned off.
+4.If installed: Switch off the exhaust unit.
+03/07 - Rev. AD 33
+
+Operating the Chapter 4Laser System
+4.6 Data Transmission
+4.6.1 Connecting CableFor connecting the components of the laser system the following cables are used:
+Handheld
+↔ Supply Unit: Special cable
+PC (Smart Graph software)
+X8 supply
+X12 network
+special cable
+handheld connection
+ ↔ Supply Unit: Crossover Ethernet cable
+PC (Smart Graph software)
+crossover ethernet cable
+X12 network
+↔ Switch ↔ Supply Unit: Patch cable
+Optional:Second network interface for connecting a PC and a handheld simultaneously (for
+this the board IOEBB is required).
+internal networkUPLINK
+patch cable
+patch cable
+X12 network
+34 03/07 - Rev. AD
+
+Chapter 4Operating the Laser System
+4.6.2 Definition of IP AddressOn the ACC board there is a DIP switch.
+Using the DIP switch you can set the IP address as follows:
+DIP switch 1 ON:The IP address 192.168.1.1 with subnet mask 255.255.0.0 is savedin the system database. Via this address the PC or the handheld
+can communicate with the laser system.
+DIP switch 1 OFF:The IP address can be set in the Smartwork can be installed. Graph software. Thus a net-
+The DIP switch 1 is set to ON when the laser system is delivered.
+DIP switch
+03/07 - Rev. AD 35
+
+Operating the Chapter 4Laser System
+36 03/07 - Rev. AD
+
+Chapter 5Maintenance
+5 Maintenance
+5.1 General Notes Concerning Maintenance
+The time for maintenance of the laser systemworks in the stated intervals. is very short. Please carry out maintenance
+The laser system is designed such that maintenance can be performed safely.
+CautionMaintenance has to be performed by instructed operating and mainte-nance personnel only!
+For reasons of safety make sure that the main key-operated switch is turned to '0', the key is withdrawn and the mains is disconnected!
+Before the beginning of the cleaning works of the laser system and its environment, the laser system must be disconnected from the
+power supply.
+Document the regular maintenance in the maintenance protocols in this chapter! Non-conformance with the maintenance plan might result in limi-
+tations of warranty.
+03/07 - Rev. AB 37
+
+Chapter 5Maintenance
+5.2 Maintenance Plan
+The maintenance intervals are laid out for a use of the laser system of approximately 10 hoursdaily and regular dirty work area.
+If the time of daily use should exceed 10 hours continuously or in case of very dirty ambientconditions please shorten the maintenance intervals accordingly. In case of questions please
+contact Videojet Technologies Inc. or one of their representatives.
+All maintenance works are described in the following sections.
+Maintenance IntervalMeasures
+MonthlyCheck the laser scan lens for dust and dirt. Clean thelaser scan lens in case of dust or stains.
+Monthly or when control lamplights upIf installed: Exchange the filter bag inside the exhaustunit (refer to manual of the exhaust unit).
+Every three months Carry out a visual inspection of the laser system.
+(more frequently when operatedin dirty ambient conditions)
+Every six monthsIf installed: Exchange the charcoal filter inside theexhaust unit (refer to manual of the exhaust unit).
+Note:We offer special training seminars for maintenance and service personnel. In case of questions
+please contact Videojet Technologies Inc. or one of their representatives.
+38 03/07 - Rev. AB
+
+Chapter 5Maintenance
+5.3 Cleaning the Laser Scan Lens
+The laser scan lens is located at the marking unit. It may be contaminated by dust or floatingparticles. Contamination of the laser scan lens can lead to damages of the laser scan lens and
+gradually reduce the quality of the marking. Therefore the lens has to be cleaned regularly.
+Generally just the outwardly facing side of the laser scan lens has to be cleaned, but check bothsides for contamination and clean them, if necessary.
+WarningThe laser scan lens consists of coated zicomponents which are dangerous to health!nc selenide. This material contains
+Cleaning must only performed wearing latex protective gloves! In case of con-tact of the laser scan lens with the skin, wash the respective part of skin with
+water and soap immediately! Avoid any lens! Do not inhale material particles! In case of breaking of the laser scansurface scratches of the laser scan
+lens please pack the fragments into a closed plastic bag and send them backto us.
+ImportantAs with all optical components the laser scan lens is an object of highest andsophisticated design.
+Slightest damages of the surface might (iof the component or reduction of markinn the long term) result in unusabilityg quality. Any contaminants must only
+be removed by means of a cotton tip and acetone (part of the accessory box)!
+Make sure that no contaminants enter the marking head while cleaning the la-ser scan lens!
+To clean the laser scan lens you need:
+Optics cleaning paper
+Acetone
+Protective gloves
+ImportantWear protective gloves during the complete procedure!
+03/07 - Rev. AB 39
+
+Chapter 5Maintenance
+5.3.1 Disassembly of the Laser Scan Lens
+DangerBefore starting any work the laser system must be dead!1.Turn the key switch to position »0«.
+Remove the key to ensure that the laser system cannot be switched on.
+2.Switch off the main switch.
+3.Disconnect the mains connector.
+The laser scan lens is in a bayonet socket which is unlocked by a quarter turn.
+4.Turn the laser scan lens carefully by a quarter turn in counterclockwise direction.Do not touch the lens surface with your gloves!
+5.Remove the laser scan lens from the marking head.
+5.3.2 Cleaning the Laser Scan Lens1.Place the laser scan lens onto a clean surface. Fold a sheet of optics cleaning paper (at
+least 5 times) creating a flat cushion.
+2.Hold the optics cleaning paper between thumb etone onto the optics cleaning paper.and index finger and put some drops of ac-
+3.Carefully and slowly pull the optics cleaning paper across the surface to be cleaned. Make sure that you do not touch the surface with the gloves.
+Apply only very light pressure onto the paper!
+4.If necessary repeat the procedure with a new sheet of optics cleaning paper.
+ImportantNever use polishing agents! Polishing agents destroy the laser scan lens!
+Never use contaminated optics cleaning paper.Make sure that the optics cleaning paper is stored in a clean place.
+5.Check the surface of the lens side located in the marking head for contclean it as described above.amination. If necessary,
+If the lens cannot be cleaned or the surface of the protective glass is severely scratched: Fit anew protective glass.
+5.3.3 Mounting the Laser Scan Lens1.Insert the laser scan lens into the marking head.
+2.Carefully turn the laser scan lens by a quarter turn in clockwise direction.Do not use any tools!
+40 03/07 - Rev. AB
+
+Chapter 5Maintenance
+5.4 Update of the Smart Graph Software
+To update the Smart Graph Software follow these steps:
+1.Start your PC.
+2.Exit the Smart Graph Software (if the Smart Graph Software is not loaded automatically skipstep 2).
+3.Put the CD-ROM into the CD-ROM drive of your PC.
+4.Click on »Start« in the menu bar of you Windows operating system.
+5.Click on »Execute«.
+6.Enter CD:\setup.exe in the text field and follow the instructions of the InstallShield wizard(CD is a place holder for the letter of the CD-ROM drive in your PC).
+03/07 - Rev. AB 41
+
+Chapter 5Maintenance
+5.5 Protocols for Maintenance, Repair and Replacement
+It is strongly recommended that accurate recordment procedures.s are kept of maintenance, repair and replace-
+On the following pages you will find forms to recan be made and used to keep an ongoing record of the procedures recommended throughoutcord all maintenance tasks specified. Copies
+the life of the laser system.
+You will also find forms to record the repairs and replacements. The records will provide a use-ful tool in anticipating future maintenance requirements and in determining cost of ownership
+of the laser system.
+42 03/07 - Rev. AB
+
+Chapter 5Maintenance
+Inspection and Cleaning of the Laser Scan Lens
+Maintenance interval: Monthly
+Carried out on:Carried out by:
+Date Name
+03/07 - Rev. AB 43
+
+Chapter 5Maintenance
+Exchange of Filter of the Exhaust Unit
+(if installed)
+Maintenance interval: Monthly or when control lamp lights up
+Carried out on:Carried out by:
+Date Name
+44 03/07 - Rev. AB
+
+Chapter 5Maintenance
+Exchange of the Charcoal Filter of the Exhaust Unit
+(if installed)
+Maintenance interval: Every six months
+Carried out on:Carried out by:
+Date Name
+03/07 - Rev. AB 45
+
+Chapter 5Maintenance
+Visual Inspection
+Maintenance interval: Every three months
+Carried out on:Carried out by:
+Date Name
+46 03/07 - Rev. AB
+
+Chapter 5Maintenance
+Update of the Smart Graph Software
+Carried out on:Carried out by:
+Date Name
+03/07 - Rev. AB 47
+
+Chapter 5Maintenance
+Repair and Replacement Protocol
+Laser model:Serial number:
+Date: Repair or ReplacementComments
+(faults, etc.)
+Carried out by:
+Date: Repair or ReplacementComments
+(faults, etc.)
+Carried out by:
+Date: Repair or ReplacementComments
+(faults, etc.)
+Carried out by:
+Date: Repair or ReplacementComments
+(faults, etc.)
+Carried out by:
+48 03/07 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+6 Malfunctions and Error Messages
+6.1 Notes
+In this chapter you will find a description of possible malfunctions, tsuitable measures for troubleshooting. In additionheir possible causes and this chapter contains a description of all mes-
+sages of the laser system and suitable measmust be performed by instructed operation and maintenance personnel only.ures for troubleshooting. The measures stated
+ImportantTasks for troubleshooting going beyond the ones mentioned here must beperformed by specially trained personnel only! Strictly follow the safety
+instructions!
+02/06 - Rev. AB 49
+
+Malfunctions and Error MessagesChapter 6
+6.2 Malfunction Descriptions
+1.The laser system stops operating. The yellow status LED is flashing.
+Possible cause(s):Measures:
+An error occurred.Connect the handheld or the PC to the sys-tem and read the error messages. Follow the
+remedy instructions given for the error mes-sage on the following pages.
+2.START has been pressed on the handheld or the PC but no marking is visible.
+Possible cause(s):Measures:
+The chosen parameter set is not adaptedto the material.Select a suitable parameter set.
+The laser control is defective.Please contact Videojet Technologies Inc.
+The lens is contaminated.Clean the lens.
+The distance between product and mark-ing head is not correct.Check the working distance.
+The pilot laser is active.Select the option »Pilot laser OFF« in theSmart Graph software under »Laser Opera-
+tion«, page »Marking«.
+3.The line width has changed (too wide/not wide enough).
+Possible cause(s):Measures:
+The working distance between laser scanlens and product has changed.Adjust the working distance to the valuestated in the data sheets.
+Wrong parameter set or wrong setting ofparameters.Use the right parameter set or correct theparameters.
+The product surface or the product mate-rial has changed.Adjust the parameters to the product. In caseof questions please contact us.
+50 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+6.3 Warning Messages
+W00001: Parts of the marking are beyond the marking field.
+Possible cause(s):Parts of the marking are beyond the user-defined marking field.
+Possible effect(s):Incomplete marking.
+Remedy:Reduce size of marking.
+Expand marking field to maximum size.
+Select objective with higher focal length and thus increase the max. possible marking field.
+W00002: Incomplete marking, product movement too fast.
+Possible cause(s):Parts of the marking contents cannot be marked since the product was not in the marking field.
+Usually the reason is that the marking is not executed fast enough. It is also possible that thestart delay has been set too short causing the marking to be started too late. The start delay
+must be set so that in the moment of triggering no part of the marking is yet within the markingfield.
+Possible effect(s):Incomplete marking. This applies to all individual markings for which this message is displayed.
+Remedy:Increase start delay. Usually this requires the sensors to be adjusted.
+Optimize parameters so that the marking can be executed faster.
+Reduce size of marking so that it can be executed faster.
+Select speed-optimized font.
+If possible, increase marking field by selecting a different objective.
+W00003: AOS does not send data after trigger (>10ms).
+Possible cause(s):After the trigger it took more than 10 ms before the AOS sent marking data.
+Possible effect(s):Faulty marking.
+Remedy:In case this error occurs in released versions it must be reported to the ALLTEC development
+department.
+02/06 - Rev. AB 51
+
+Malfunctions and Error MessagesChapter 6
+W00004: Delayed data from the AOS.
+Possible cause(s):During the marking process it took more than 500 µs before the AOS sent new data.
+If the AOS does not sent the data as fast as theymarking. This causes the laser to be switched are marked artificial pauses are added to theoff even within an vector stroke and switched on
+again as soon as data are available. For this process Laser-On-Delay and Laser-Off-Delay areused.
+Possible effect(s):There might be small burns within vector strokes of the marking.
+Remedy:Increase the values of the start delay or trigger delay. Thus more data can be processed before
+the marking execution is started.
+W00005: Trigger lost.
+Possible cause(s):Trigger queue overflow, a new trigger had to be rejected.
+That means that the trigger signals are coming in faster than they can be processed. The trig-ger queue is a buffer for trigger signals. If it is full and more signals are coming in this warning
+is displayed.
+Possible effect(s):The product that has released the trigger is not marked. This applies to each product for which
+the message is displayed.
+Remedy:Since the trigger signals are coming faster than they can be processed the marking time has
+to be reduced.
+If the marking time cannot be reduced any more the throughput has to be reduced.
+If you can preclude that there are too many regular trigger signals there might be mistrig-gers. If e.g. the marking takes 50 ms and there is definitely each 100 ms a new product and
+thus a new trigger then the trigger signal is interfered. In this case the blocking should be checked which usually should be 90 % of the minimum time between two trigger signals. In
+the example this would be 90 ms.
+W00006: Incorrect index step selected.
+Possible cause(s):Internal error: A not initialized index step has been selected. The system uses the previously
+selected index step.
+Possible effect(s):Parameters are not used for marking as previously set.
+Remedy:In case this error occurs in released versions it must be reported to the development depart-
+52 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+ment.
+W09008: Parts of the marking are not withead.hin the marking field of the marking
+Possible cause(s):Parts of the marking are outside the ellipse representing the maximum marking field of the
+marking head.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Reduce size of marking.
+Select objective with higher focal length.
+W09016: Communication error ACC -> FM: inadmissible command
+Possible cause(s):ACC sent a command to the marking head which is not admitted in the current mode.
+Possible effect(s):Marking possibly incorrect.
+Remedy:Check optical fibre between ACC and marking head.
+W09017: Communication error ACC -> FM: unknown command
+Possible cause(s):ACC sent a for the marking head unknown command to the marking head.
+Possible effect(s):Marking possibly incorrect.
+Remedy:Check optical fibre between ACC and marking head.
+W09018: Communication error ACC -> FM: Protocol error
+Possible cause(s):ACC did not keep to protocol.
+Possible effect(s):Marking possibly incorrect.
+Remedy:Check optical fibre between ACC and marking head.
+02/06 - Rev. AB 53
+
+Malfunctions and Error MessagesChapter 6
+W10410: The parameter set of the active template has tem. been asjusted to the sys-
+Possible cause(s):The parameter set of the active template contains inadmissible settings for the laser. The ap-
+plication database possibly belongs to a different laser system.
+Possible effect(s):The automatic adjustment affects the marking and will be taken over when saving the data-
+base.
+Remedy:When the database has been saved this message will no longer appear.
+Possibly the settings of the concerned parameter set have to be modified manually.
+W10503: The database format has changed. Please save system.
+Possible cause(s):An older database has been loaded by a new AOS.
+Possible effect(s):None.
+Remedy:Saving the database it is automatically converted to the new format. Then the warning mes-
+sage will no longer be displayed.
+After conversion the database cannot be read by an older AOS.
+W10504: Not all previously used templates have been saved.
+Possible cause(s):New templates have been added to the database and selected for marking. Then the system
+has been booted without saving the changed database.
+Possible effect(s):If the template marked last does not exist in the database the first template of the database is
+selected automatically for marking.
+Remedy:Save the database after creating or importing new templates.
+W10505: The template used last was not saved.
+Possible cause(s):A new template has been added to the database and selected for marking. Then the system
+has been booted without saving the changed database.
+Possible effect(s):The template marked last does not exist in the database. The first template of the database is
+selected automatically for marking.
+54 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+Remedy:Save the database after creating or importing new templates.
+W10506: Invalid value of absolute operating hours in SRAM.
+Possible cause(s):The battery buffering the SRAM is running down.
+Possible effect(s):The value of the absolute operating hours corresponds to the value of the last system start.
+Remedy:Check battery and replace if necessary.
+W10517: According to the system database there is no marking head connected
+Possible cause(s):The system database contains the entry 'MARKING_HEAD_ATTACHED=0'. Thus the marking
+head is not addressed.
+Possible effect(s):Marking is not possible.
+Remedy:If you want to mark a marking head must be connected and the entry in the system database
+has to be changed to 'MARKING_HEAD_ATTACHED=1'.
+W10552: AllprintBasic - MsgBox:\n\r <name>
+Possible cause(s):This is a regular message, no error.
+The AllprintBasic command string triggered the output of this message.
+Possible effect(s):None.
+Remedy:None.
+W10555: The AllprintBasic command "Warning" has been executed.
+Possible cause(s):Depending on the AllprintBasic program.
+Possible effect(s):Depending on the AllprintBasic program.
+Remedy:Depending on the AllprintBasic program.
+02/06 - Rev. AB 55
+
+Malfunctions and Error MessagesChapter 6
+W10812: Invalid SmartSP telegram 0x%X
+Possible cause(s):Internal communication error.
+Possible effect(s):Marking is not possible.
+Remedy:In case this error occurs in released versions it must be reported to the development depart-
+ment.
+W10904: The customer interface (CI) is not supplied with 24 V by the customer.
+Possible cause(s):The power supply of the customer interface is not available or switched off.
+Possible effect(s):The output signals of the customer interface are invalid.
+Input signals at the customer interface are ignored.
+Remedy:Connect bus terminal KL9110 pin 2 or pin 6 to external 24 V and pin3 or pin7 to external GND.
+W10905: The CAN bus detected a not implemented event (<name>).
+Possible cause(s):Depending on the event a function to be implemented in the future has been used (e.g. CI ter-
+minal: reserved).
+Possible effect(s):None.
+Remedy:Do not generate the event again.
+W10908: External STOP from the CI.
+Possible cause(s):The STOP input is supplied constantly with 0 V so that the START input is not evaluated.
+Possible effect(s):Marking is not possible.
+Remedy:Connect STOP input to 24 V.
+W55000: Defective customer interface (CI): The arrangemhas been changed.ent of the bus terminals
+Possible cause(s):The hardware configuration of the CI has been changed. (Beckhoff error)
+56 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check the bus terminals of the customer interface.
+W55001: Defective customer interface (CI): Incompatible bus terminal.
+Possible cause(s):The bus terminal used is not supported. (Beckhoff error)
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check the bus terminals of the customer interface.
+W55002: Defective customer interface (CI): EEPROM error
+Possible cause(s):An error occurred while saving the configuration to the EEPROM. (Beckhoff error)
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check the bus terminals of the customer interface.
+W55003: Defective customer interface (CI): Connection nals.error between bus termi-
+Possible cause(s):There has been a communication error between the Beckhoff terminals. (Terminal ERROR)
+(Beckhoff error)
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check the bus terminals of the customer interface.
+W55004: Customer interface (CI): Unknown error (XX, XX)
+Possible cause(s):The bus coupler of the customer interface (CI) has sent an undocumented error.
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check the bus terminals of the customer interface.
+02/06 - Rev. AB 57
+
+Malfunctions and Error MessagesChapter 6
+W58100: Customer interface (CI): CAN bus warning limit exceeded
+Possible cause(s):The bus coupler of the customer interface received too many error frames successively.
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check bus terminals of the customer interface.
+Check wiring of CAN bus.
+W58101: Customer interface (CI): CAN bus OFF
+Possible cause(s):The CAN bus has not been connected correctly to the bus coupler of the customer interface.
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check wiring of the CAN bus.
+W58102: Customer interface (CI): CAN bus transmission buffer overflow
+Possible cause(s):The CAN bus has not been connected correctly to the bus coupler of the customer interface.
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check wiring of the CAN bus.
+W58103: Customer interface (CI): CAN bus receiving buffer overflow
+Possible cause(s):Internal error of bus coupler.
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Exchange bus coupler.
+W58104: Customer interface (CI): CAN bus incorrect PDO length
+Possible cause(s):Internal communication error.
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+58 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+Remedy:In case this error occurs in released versions it must be reported to the development depart-
+ment.
+W58105: Customer interface (CI): Sync of CAN bus delayed or failed.
+Possible cause(s):The CAN bus has not been connected correctly to the bus coupler of the customer interface.
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check wiring of the CAN bus.
+W58106: Customer interface (CI): Guarding of CAN bus delayed or failed.
+Possible cause(s):The CAN bus has not been connected correctly to the bus coupler of the customer interface.
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check wiring of CAN bus.
+02/06 - Rev. AB 59
+
+Malfunctions and Error MessagesChapter 6
+6.4 Error Messages
+E00100: Critical error SP.
+Possible cause(s):Fatal internal error: A not initialized interrupt has been called or similar.
+Possible effect(s):The system is stopped and must be switched off.
+Remedy:In case this error occurs in released versions it must be reported to the development depart-
+ment.
+E00101: Stack error SP.
+Possible cause(s):Fatal internal error: Stack overflow.
+Possible effect(s):The system is stopped and must be switched off.
+Remedy:In case this error occurs in released versions it must be reported to the development depart-
+ment.
+E00102: SP received unknown command from AOS.
+Possible cause(s):Internal communication error on the ACC. In most cases this error indicates a version conflict.
+Possible effect(s):Possibly incorrect markings.
+Remedy:Check versions, use new MMC if necessary.
+E00103: Timing error SP.
+Possible cause(s):Fatal internal error: Internal timing was not met.
+Possible effect(s):Possibly incorrect marking.
+Remedy:In case this error occurs in released versions it must be reported to the development depart-
+ment.
+60 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+E00104: AOS sends repeatedly data with delay
+Possible cause(s):During one marking the AOS needed more than 20 times more than 500 µs to send new data.
+The marking is aborted.
+See also W00004: Delayed data from the AOS. on page52.
+Possible effect(s):Marking not possible.
+Remedy:Change the parameters so that the marking is carried out slower.
+E00105: Marking aborted, product movement too fast.
+Possible cause(s):The marking has been aborted because more than 50 vectors cannot be marked since the
+product has already left the marking fied.
+Usually this is caused by too slow marking.
+It is also possible that the start distance is too small and the marking is started too late. Thestart distance should always be long enough so that no part of the marking is in the marking
+field at the trigger moment.
+See also W00002: Incomplete marking, product movement too fast. on page51.
+Possible effect(s):The marking is not complete. The system is stopped.
+Remedy:Enlarge the start distance correspondingly, usually by moving the sensors.
+Optimize the parameters so that the marking can be carried out faster.
+Reduce marking so that it can be marked faster.
+Select a font which has been speed optimized.
+Enlarge the marking field by using a different objective if possible.
+E00200: Laser not ready.
+Possible cause(s):Faulty cable to voltage supply of the laser.
+Relay for voltage supply of the laser did not switch.
+Faulty connecting cable between laser and ACC.
+Possible effect(s):Marking is not possible.
+02/06 - Rev. AB 61
+
+Malfunctions and Error MessagesChapter 6
+Remedy:Check LED "Laser Ready". If it is off after switching the laser on there is no voltage supply of
+the laser. The cause can be a broken cable or a defective relay. If the LED is on the cable be-tween laser and ACC might be defective.
+E00201: Laser supply: voltage too high or too low
+Possible cause(s):Faulty power supply module or incorrect voltage setting.
+Possible effect(s):Marking is not possible.
+Remedy:Check voltage, adjust setting if necessary (30 V) or exchange power supply module.
+E00202: Laser overtemperature
+Possible cause(s):Insufficient cooling.
+Possible effect(s):Marking is not possible.
+Remedy:Check cooling system.
+E09000: Marking head: Temperature of FM assembly group too high.
+Possible cause(s):The temperature of the FM board in the marking head has exceeded the maximum value.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Improve cooling of the marking head, clean cooling fins if necessary.
+Increase distance between markings if possible.
+E09001: Marking head: Supply voltage too low.
+Possible cause(s):The supply voltage of the marking head is too low (<16V).
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check voltage supply at the marking head, at the power supply module in the control unit and
+at the marking head connector.
+62 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+E09002: Marking head: Overpositioning of X mirror.
+Possible cause(s):Due to an error the X mirror was brought to a position beyond the admitted maximum area.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check X mirror.
+Check wiring in the marking head.
+E09003: Marking head: Overpositioning of Y mirror.
+Possible cause(s):Due to an error the Y mirror was brought to a position beyond the admitted maximum area.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check Y mirror.
+Check wiring in the marking head.
+E09004: Marking head: Overcurrent X mirror.
+Possible cause(s):The FM detected that the current consumption of the X mirror is too high.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check X mirror.
+Check wiring in the marking head.
+E09005: Marking head: Overcurrent Y mirror.
+Possible cause(s):The FM detected that the current consumption of the Y mirror is too high.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check Y mirror.
+Check wiring in the marking head.
+02/06 - Rev. AB 63
+
+Malfunctions and Error MessagesChapter 6
+E09006: Marking head: No X mirror connected.
+Possible cause(s):The X mirror is not connected correctly to the FM board. A cable might be loose or broken.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check connection between X mirror and FM board.
+E09007: Marking head: No Y mirror connected.
+Possible cause(s):The Y mirror is not connected correctly to the FM board. A cable might be loose or broken.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check connection between Y mirror and FM board.
+E09012: Communication error ACC -> FM: Gaps in the data flow
+Possible cause(s):The control mode has been canceled since there have been no data from the ACC.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check optical fibre between ACC and marking head.
+E09021: Internal error: Cannot set control mode of the FM.
+Possible cause(s):The FM cannot change to control mode. This indicates an error in the optical fibre communica-
+tion.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check optical fibre between ACC and marking head.
+E09022: Internal error: Cannot set configuration mode of the FM.
+Possible cause(s):The FM cannot change to configuration mode. This indicates an error in the optical fibre com-
+munication.
+Possible effect(s):Possibly incorrect marking.
+64 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+Remedy:Check optical fibre between ACC and marking head.
+E09023: Internal error: Cannot set download mode of the FM.
+Possible cause(s):The FM cannot change to download mode. This indicates an error in the optical fibre commu-
+nication.
+Possible effect(s):Marking is not possible.
+Remedy:Check optical fibre between ACC and marking head.
+E09100: No communication with marking head.
+Possible cause(s):No marking head connected.
+Faulty power supply of marking head.
+Faulty optical fibre: not connected or broken.
+Faulty FM.
+Possible effect(s):Marking not possible.
+Remedy:Check power supply of marking head.
+Check optical fibre between ACC and marking head.
+E09101: Internal error: Error status of the FM cannot be reset.
+Possible cause(s):The error flags on the FM cannot be reset. This indicates an error in the optical fibre commu-
+nication.
+Possible effect(s):Marking is not possible.
+Remedy:Check optical fibre between ACC and marking head.
+E09102: Interrupted communication with marking head.
+Possible cause(s):There have been errors on the ACC while receiving data from the FM.
+Possible causes:Faulty optical fiber, e.g. bent.
+Faulty FM.
+02/06 - Rev. AB 65
+
+Malfunctions and Error MessagesChapter 6
+Possible effect(s):Marking is not possible.
+Remedy:Check optical fiber connection between ACC and marking head.
+E09103: Internal error: FM not in configuration mode, cannot executed com-mand.
+Possible cause(s):It has been tried to execute a command in the control mode that is only admitted in the config-
+uration mode.
+Possible effect(s):The marking is possibly incorrect.
+Remedy:Check optical fibre connection between ACC and marking head.
+E09104: No data received from the marking head.
+Possible cause(s):The ACC receives permanently or temporarily not data from the FM because
+the optical fibre connection to the marking head has been separated.
+the power supply of the marking head failed.
+Possible effect(s):Marking is not possible.
+Remedy:Check optical fibre between ACC and marking head.
+Check power supply of marking head.
+E10001: No data can be read from the system database.
+Possible cause(s):Faulty connection to the EEPROM of the system database.
+Possible effect(s):The system is not operable.
+Remedy:Check connection between ACC and Panel-IO.
+Check whether EEPROM of Panel-IO has been inserted correctly.
+E10002: Backup of system database was loaded!
+Possible cause(s):Several entries are missing in the system database. Therefore the backup of the system data-
+base has been loaded.
+66 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+Possible effect(s):The backup is generated with every saving process. Maybe the last saving process has been
+interrupted and the backup file is not up-to-date.
+Remedy:Check entries of system database and correct if necessary.
+E10003: Cannot write (all) to the backup of the system database.
+Possible cause(s):Not enough space left on the MultiMediaCard.
+Possible effect(s):In case of an error in the system database the backup file cannot be used. In that case the sys-
+tem is no longer operable.
+Remedy:Check space on MultiMediaCard and reduce application database if necessary. 1024 Bytes are
+required.
+E10004: Cannot write to system database.
+Possible cause(s):Faulty connection to the EEPROM of the system database.
+Possible effect(s):The new values cannot be applied. A restart of the system might fail. In that case the system
+is no longer operable (see error 0001).
+Remedy:Check the state of the system database and save all data.
+E10005: Cannot read backup of the system database.
+Possible cause(s):The backup has not been generated at the previous start of the system or it has been deleted.
+Possible effect(s):The system cannot be started.
+Remedy:Check contents of the system database and contents and memory space of the MultiMedi-
+aCard.
+E10101: Version conflict (command not executed)
+Possible cause(s):An unknown command has been sent to the ACC via the ethernet interface.
+Possible effect(s):The ethernet communication might be disturbed severely, the message appears repeatedly.
+02/06 - Rev. AB 67
+
+Malfunctions and Error MessagesChapter 6
+Remedy:Do not send the unknown command.
+If the ethernet communication has been disturbed severely: separate the connection and thenconnect again.
+E10102: Unknown command: <name>
+Possible cause(s):An unknown command has been sent to the ACC via the ethernet interface, the unknown com-
+mand is displayed.
+Possible effect(s):None.
+Remedy:Check the program sending the commands.
+E10103: Key not found in system database
+Possible cause(s):The database entry requested via ethernet does not exist.
+Possible effect(s):None.
+Remedy:Check the program sending the commands.
+E10104: Database write error.
+Possible cause(s):Transmission error while transmitting a database object via ethernet or version conflict be-
+tween database object and AOS.
+Possible effect(s):A database object transmitted via ethernet cannot be inserted into the database.
+Remedy:Repeat transfer; check version.
+E10105: Database read error.
+Possible cause(s):Database entry required for executing a command received via ethernet is missing.
+Possible effect(s):Command is not executed.
+Remedy:Check the database entry.
+68 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+E10106: Template contains no data.
+Possible cause(s):Template information has been requested via ethernet. The corresponding template contains
+no data.
+Possible effect(s):Informationen werden nicht gesendet.
+Remedy:Check template and save it.
+E10107: Template does not exist.
+Possible cause(s):Template information has been requested via ethernet. The corresponding template does not
+exist in the application database.
+Possible effect(s):Informationen werden nicht gesendet.
+Remedy:Check template and save it.
+E10108: No variables in template.
+Possible cause(s):The variables requested via ethernet do not exist in the template.
+Possible effect(s):Daten werden nicht gesendet.
+Remedy:Vorlage überprüfen.
+E10109: Format is invalid.
+Possible cause(s):Via ethernet a command with missing or incorrectly formatted parameters has been sent.
+Possible effect(s):The ethernet communication might be disturbed severely, the message appears repeatedly.
+Remedy:Correct the command format.
+E10111: Errors while saving
+Possible cause(s):The MultiMediaCard is full, not inserted correctly or defective.
+Possible effect(s):Data cannot be saved.
+02/06 - Rev. AB 69
+
+Malfunctions and Error MessagesChapter 6
+Remedy:Check MultiMediaCard.
+E10113: This database entry cannot be deleted since it. XX other entries depend on
+Possible cause(s):Othere database entries depend on this entry.
+Possible effect(s):The entry is not deleted.
+Remedy:Delete the depending entries first.
+E10114: The transmitted object cannot whether your system supports the object.be saved to the database. Please check
+Possible cause(s):Version conflict.
+Possible effect(s):The object is not saved to the database.
+Remedy:Check versions and make an update if necessary.
+E10115: Too many variables are used in plates you do not need.the templates. Please delete all tem-
+Possible cause(s):Number of variables or number of templates too high.
+Possible effect(s):The templated cannot be marked.
+Remedy:Reduce number of variables or templates.
+E10116: Error while reading directory <name>.
+Possible cause(s):The MultiMediaCard on the ACC cannot be read.
+Possible effect(s):Marking is not possible.
+Remedy:Check MultiMediaCard.
+70 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+E10300: Data for initialization cannot be read completely from the database.
+Possible cause(s):Defective system database or customer database.
+The MultiMediaCard is full or damaged.
+Possible effect(s):The system cannot be started.
+Remedy:Check connection between ACC and Panel-IO.
+Check MultiMediaCard.
+E10301: The parameter set <name> contaitomatically adjusted before marking.ns inadmissible settings which are au-
+Possible cause(s):The application database belongs to a different laser system.
+Possible effect(s):The parameter set is adjusted automatically to the system before marking. This can affect the
+marking quality.
+Remedy:To avoid the automatic adjustment of the settings you can modify the parameter set manually.
+If you save the corrected parameter set to the database the error message will no longer ap-pear.
+E10302: The beam shutter does not stay open.
+Possible cause(s):Defective beam shutter.
+Possible effect(s):Marking is not possible.
+Remedy:Exchange beam shutter.
+E10303: The beam shutter does not stay closed.
+Possible cause(s):Defective beam shutter.
+Possible effect(s):The system has to be restarted.
+Remedy:Exchange beam shutter.
+02/06 - Rev. AB 71
+
+Malfunctions and Error MessagesChapter 6
+E10401: Template invalid: <name>
+Possible cause(s):The template selected for marking is defective or does not exist.
+Possible effect(s):Marking is not possible.
+Remedy:Check template and used parameters, product registration and (if existing) logos.
+Select template again.
+E10404: Prompt Once: Value cannot be marked.
+Possible cause(s):The property "Prompt Once" has been set in the template. It has been tried to mark a prompt
+with the same value twice.
+Possible effect(s):The marking is not carried out.
+Remedy:Change the contents of the prompt or remove the property "Prompt Once".
+E10406: The selected trigger input does not exist.
+Possible cause(s):Trigger 2 or trigger 3 has been selected in the product registration. For trigger 2 a CI-FAST-IN
+is required which does not exist in the system. Trigger 3 does not exist in this system.
+Possible effect(s):Marking is not possible.
+Remedy:Select a different trigger input or install a CI-FAST-IN.
+E10407: The beam shutter does not open.
+Possible cause(s):The beam shutter got jammed or is not identified.
+Possible effect(s):Marking is not possible.
+Remedy:Check the beam shutter.
+E10408: The beam shutter does not close.
+Possible cause(s):The beam shutter got jammed or is not identified.
+72 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+Possible effect(s):After a marking the next marking cannot be started without confirmation of the error message.
+Remedy:Check the beam shutter.
+E10409: System error during preparation of marking.
+Possible cause(s):Internal error during preparation of marking.
+Possible effect(s):Marking is not possible.
+Remedy:Start the marking again after confirmation of the error message.
+E10500: Cannot load database.
+Possible cause(s):The application database and its backup cannot be loaded.
+Possible effect(s):Marking is not possible.
+Remedy:A new database file has to be written to the MMC.
+E10501: Backup database has been loaded.
+Possible cause(s):The application database is defective.
+Possible effect(s):Modifications are lost.
+Remedy:Please save the database.
+E10502: System Message: XX
+Possible cause(s):Error during determination of the current template or its variables.
+Probably the database does not contain any templates.
+Remedy:If the database contains no template: create and add a new templated and save the database.
+02/06 - Rev. AB 73
+
+Malfunctions and Error MessagesChapter 6
+E10507: Error while reading the objective file.
+Possible cause(s):The objective file does not exist in the comp directory of the MultiMediaCard.
+The MultiMediaCard is not inserted correctly.
+Possible effect(s):The system is not operable.
+Remedy:Check MultiMediaCard, if necessary rebuild MMC.
+E10508: Error while reading the laser file.
+Possible cause(s):The laser file does not exist in the comp directory of the MultiMediaCard.
+The MultiMediaCard is not inserted correctly.
+Possible effect(s):The system is not operable.
+Remedy:Check MultiMediaCard, if necessary rebuild MMC.
+E10509: Error while reading the head file.
+Possible cause(s):The head file does not exist in the comp directory of the MultiMediaCard.
+The MultiMediaCard is not inserted correctly.
+Possible effect(s):The system is not operable.
+Remedy:Check MultiMediaCard, if necessary rebuild MMC.
+E10510: No FPGA image file available!
+Possible cause(s):The file fpgaimgX.h is missing on the MultiMediaCard.
+Possible effect(s):The system cannot work properly without FPGA image file.
+Remedy:Check the contents of the MultiMediaCard.
+74 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+E10511: No SP program available!
+Possible cause(s):The file smartspX.sp is missing on the MultiMediaCard.
+Possible effect(s):The system cannot work properly without SP program.
+Remedy:Check the contents of the MultiMediaCard.
+E10512: AllprintBasic: Protocol configuration error
+Possible cause(s):The AllprintBasic command string in the AOS database ("Config","Input") contains a configura-
+tion error for the serial protocol.
+Possible effect(s):The control via AllprintBasic (serial port) does not work.
+Remedy:Modify the protocol settings on the PC with AllprintBasic and import again via SmartGraph into
+the AOS database. Then reboot the ACC.
+E10513: AllprintBasic: Configuration error of the serial interface
+Possible cause(s):The AllprintBasic command string in the AOS database ("Config","Input") contains a configura-
+tion error for the serial interface.
+Possible effect(s):The control via AllprintBasic (serial port) does not work.
+Remedy:Modify the interface parameters on the PC with AllprintBasic and import again via SmartGraph
+into the AOS database. Then reboot the ACC.
+E10514: FM download error (<name>).
+Possible cause(s):A program has to be transmitted from the MMC to the FM. During this download an error oc-
+curred.
+Possible effect(s):Fatal: Marking is no longer possible since the FM hardware no longer has a program for mirror
+positioning.
+Remedy:Check the optical fiber. Check FM. Check ACC. Reboot.
+02/06 - Rev. AB 75
+
+Malfunctions and Error MessagesChapter 6
+E10515: FM download: File <name> is missing.
+Possible cause(s):The file is required on the MultiMediaCard. The file name is generated from the EEPROM data
+of the FM. If the file name is absurd the EEPRall. It is possible that the file name cannot be transmitted to the AOS due to problems with theOM has been programmed incorrectly or not at
+optical fibers.
+Possible effect(s):System cannot be set up.
+Remedy:Copy the missing file to the MultiMediaCard. Check FM-EEPROM.
+Check optical fiber.
+E10516: The marking head is not connected.
+Possible cause(s):The connection of the optical fiber to the marking head is faulty.
+Possible effect(s):Fatal error: Marking is not possible. Therefore the FM did not load any marking software.
+Remedy:Check connector of the optical fiber from the ACC to the FM.
+E10518: The parameter set <name> does replace this entry in the database.not correspond to the laser type. Please
+Possible cause(s):A database has been copied to the MMC which does not correspond to the laser type.
+Possible effect(s):Marking is not possible.
+Remedy:Copy a suitable database to the MMC
+or
+create a new suitable database using the Smart Graph offline. Add a parameter set having thesame name and transfer it to the laser.
+In this way all parameter sets of the laser database need to be replaced.
+76 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+E10550: AllprintBasic: Syntax error (line: XX, column: XX)
+Possible cause(s):The AllprintBasic command string in the AOS database ("Config","Input") contains a syntax er-
+ror.
+Possible effect(s):The control via AllprintBasic (serial port) does not work.
+Remedy:Test the command string on the PC with AllprintBasic, correct it and import again via Smart-
+Graph into the AOS database. Then reboot the ACC.
+E10551: The template does not contain the requested variable.
+Possible cause(s):The variable to be modified in the AllprintBasic command string does not exist in the template.
+Possible effect(s):The control via AllprintBasic (serial port) does not work.
+Remedy:Check the corresponding template or the AllprintBasic command string and modify if neces-
+sary. If the command string has been changed the ACC must be rebooted.
+E10553: Illegal command in AllprintBasic command string.
+Possible cause(s):Older functions of the AllprintBasic program can no longer be realized due to concept modifi-
+cation of the new AOS (YAG laser), e.g. SetExtent.
+Possible effect(s):The control via AllprintBasic (serial port) does not work.
+Remedy:Check command string and change if necessary. If the string has been changed you have to
+reboot the ACC.
+E10554: The AllprintBasic command "Error" has been executed.
+Possible cause(s):Depending on the AllprintBasic program.
+Possible effect(s):Depending on the AllprintBasic program.
+Remedy:Depending on the AllprintBasic program.
+02/06 - Rev. AB 77
+
+Malfunctions and Error MessagesChapter 6
+E10601: Template list does not exist.
+Possible cause(s):The external template selection has failed because there is no template list.
+Possible effect(s):Marking is not possible.
+Remedy:Create a template list using the Smart Graph or select a template in the Smart Graph.
+E10602: The chosen template number XX cannot be assigned to any template.
+Possible cause(s):The external template selection has failed because the selected template number cannot be
+assigned to any template in the template list.
+Possible effect(s):Marking is not possible.
+Remedy:Check template list.
+E10701: Out of memory. Cannot create database object.
+Possible cause(s):Internal error or database is too large.
+Possible effect(s):Marking is not possible.
+Remedy:If the message is no longer displayed after rebooting, there might be an internal error. Inform
+the development department.
+If the message is still displayed after rebooting all elements not needed should be deleted fromthe database.
+E10702: Format error while creating a database object.
+Possible cause(s):Version conflict between database object and AOS.
+Possible effect(s):Marking is not possible.
+Remedy:Check versions of Smart Graph and QMark and carry out an update if necessary.
+78 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+E10800: DSP does not send telegrams.
+Possible cause(s):The DSP has not been initialized correctly or the connection to the DSP is faulty.
+Possible effect(s):The system does not work.
+Remedy:Restart the system.
+E10811: DSP buffer overflow
+Possible cause(s):Internal communication error.
+Possible effect(s):Marking is not possible.
+Remedy:In case this error occurs in released versions it must be reported to the development depart-
+ment.
+E10900: General CAN bus error (XX)
+Possible cause(s):General CAN bus error:
+e.g. BusOff, ErrorPassiv, etc.
+Possible effect(s):The system cannot be set up.
+Remedy:Check wiring of CAN bus.
+E10901: A CAN node (<name>) has carried out an inadmissible reset.
+Possible cause(s):The entered CAN bus node is defective.
+Defective wiring.
+Possible effect(s):Marking is not possible.
+Remedy:Check the CAN bus node.
+Check wiring of CAN bus.
+02/06 - Rev. AB 79
+
+Malfunctions and Error MessagesChapter 6
+E10902: Lost connection to a CAN node (<name>).
+Possible cause(s):The entered CAN bus node is defective.
+Defective wiring.
+Possible effect(s):Marking is not possible.
+Remedy:Check the CAN bus node.
+Check wiring of CAN bus.
+E10903: A CAN node (<name>) cannot be initialized.
+Possible cause(s):The entered CAN bus node is defective.
+Defective wiring.
+Possible effect(s):The system cannot be started.
+Remedy:Check the CAN bus node.
+Check wiring of CAN bus.
+E10906: The customer interface (CI) indicates an error of the external exhaust.
+Possible cause(s):External exhaust defective or incorrect wiring of CI terminal.
+Possible effect(s):External exhaust does not work.
+Remedy:Repair external exhaust or connect the corresponding CI terminal to 24 V.
+E10907: The customer interface (CI) indicates an external error.
+Possible cause(s):Detection of external error or incorrect wiring of the CI terminal.
+Possible effect(s):Depending on customer or CI terminal EXT_ERROR.
+Remedy:Remove external error or connect the corresponding CI terminal to 24 V.
+80 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+E10909: A CAN node (<name>) has carried out an inadmissible state change.
+Possible cause(s):The corresponding node has probably carried out a reset.
+Possible effect(s):All functions of this node are no longer available.
+Remedy:Reboot the system.
+E10913: File <name> is missing.
+Possible cause(s):The file is supposed to be on the MultiMediaCard.
+Possible effect(s):The system cannot be started.
+Remedy:Copy desired file to the MultiMediaCard.
+E10914: Faulty transmission of a domain to a node (<name>).
+Possible cause(s):Erroneous wiring of CAN bus.
+Possible effect(s):Marking is not possible.
+Remedy:Check wiring of CAN bus.
+E10915: A CAN node (<name>) does not react after download or software reset.
+Possible cause(s):Defective connections.
+Defective CAN node.
+Possible effect(s):The system cannot be started.
+Remedy:Check wiring of CAN bus.
+Check corresponding CAN node.
+02/06 - Rev. AB 81
+
+Malfunctions and Error MessagesChapter 6
+E10916: Faulty download to node <name>.
+Possible cause(s):Defective wiring of CAN bus.
+The corresponding node is faulty.
+Required program not available on MultiMediaCard.
+Possible effect(s):The system cannot be started.
+Remedy:Check wiring of CAN bus.
+Check corresponding CAN bus node, if necessary update of MDB of the CAN bus node.
+Transmit missing program to MultiMediaCard.
+E10917: A CAN node (<name>) signals unsuitable software.
+Possible cause(s):Defective wiring of CAN bus.
+The corresponding node is faulty.
+Required program not available on MultiMediaCard.
+Possible effect(s):The system cannot be started.
+Remedy:Check wiring of CAN bus.
+Check corresponding CAN bus node, if necessary update of MDB of the CAN bus node.
+Transmit missing program to MultiMediaCard.
+E10919: A driver error prevents triggers being transmitted from the CAN bus.
+Possible cause(s):Internal error
+Possible effect(s):The system cannot be started.
+Remedy:In case this error occurs in released versions it must be reported to the development depart-
+ment.
+E10920: A driver error prevents control of the emission LED.
+Possible cause(s):Internal error.
+Possible effect(s):The system cannot be started.
+82 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+Remedy:In case this error occurs in released versions it must be reported to the development depart-
+ment.
+E10921: Less than two CI input bus terminals connected.
+Possible cause(s):Not enough input bus terminals existing.
+Possible effect(s):The system cannot be started.
+Remedy:Equip system with two input bus terminals.
+E10922: Less than two CI output bus terminals connected.
+Possible cause(s):Not enough output bus terminals existing.
+Possible effect(s):The system cannot be started.
+Remedy:Equip system with two output bus terminals.
+E10923: Ext. template selection requires at least 4 CI input bus terminals.
+Possible cause(s):To use the external template selection at least 4 input bus terminals must be available at the
+customer interface.
+Possible effect(s):The external template selection cannot be used.
+Remedy:Add two input bus terminals.
+E10926: Entry (<name>) is missing in the database.
+Possible cause(s):Defective database.
+Possible effect(s):Marking is not possible.
+Remedy:Complete or exchange database.
+02/06 - Rev. AB 83
+
+Malfunctions and Error MessagesChapter 6
+E10929: CAN bus error (<name>).
+Possible cause(s):Faulty line of CAN bus.
+Possible effect(s):Components are possibly not configured completely.
+Remedy:Check CAN bus cable and connections.
+E19201: Template (<name>) does not exist.
+Possible cause(s):The template does not exist in the database.
+Possible effect(s):Marking is not possible.
+Remedy:Create or transmit the corresponding template.
+E19202: Template error: <name>
+Possible cause(s):The template selected for marking is defective or does not exist.
+Possible effect(s):Marking is not possible.
+Remedy:Check template and used parameters, product registration and (if existing) logos.
+Select template again.
+E19203: Parameter set (<name>) does not exist.
+Possible cause(s):The parameter set required by a template is missing.
+Possible effect(s):The template concerned cannot be marked.
+Remedy:Assign an existing parameter set to the template or add the required parameter set to the da-
+tabase.
+84 02/06 - Rev. AB
+
+Chapter 6Malfunctions and Error Messages
+E19204: Product registration (<name>) does not exist.
+Possible cause(s):The product registration required by a template is missing.
+Possible effect(s):The template concerend cannot be marked.
+Remedy:Assign an existing product registration to the template or add the required product registration
+to the database.
+E19205: At least one index level does not exist in the parameter set.
+Possible cause(s):The template uses an index level which does not exist in the parameter set.
+Possible effect(s):The template cannot be marked.
+Remedy:Add the missing index level to the parameter set or assign an existing index level to all elements
+of the concerned template.
+E19210: The direct marking cannot be carried out.
+Possible cause(s):Faulty connection between PC and ACC.
+Possible effect(s):The direct marking cannot (or only incompletely) be carried out.
+Remedy:Check the ethernet connection between PC and ACC.
+E19307: The circuit for external laser enable has been opened.
+Possible cause(s):The circuit for the external laser enable is open. This can be caused by an open emergency
+switch.
+Possible effect(s):The system remains in state "Key switch open" even if the key switch has been closed.
+Remedy:Close the circuit for external laser enable.
+02/06 - Rev. AB 85
+
+Malfunctions and Error MessagesChapter 6
+E19308: Cannot select beam source.
+Possible cause(s):Error in the CAN communication.
+Possible effect(s):Marking is not possible.
+Remedy:Check CAN bus.
+E19309: The clock had to be restarted. Please set the time!
+Possible cause(s):The clock did stop and has already been restarted. The battery voltage might be too low.
+Possible effect(s):The marked time is not correct.
+Remedy:Set the time. If this happens every time after switch-on exchange the battery.
+86 02/06 - Rev. AB
+
+Chapter 7Appendix
+7 Appendix
+7.1 Assignment of the Customer Interface
+X7 X6 X2
+X20 X16
+12345
+X14
+12314253647586
+1234567123841526345
+7.1.1 Interlock
+7.1.2 Inputs and Outputs (Galvanically Separated)The galvanically separated inputs and outputs are provided as a standard. They are used for
+sending digital status signals and receiving digital command signals.
+Feed Terminal
+TerminalSignalDescription
+X2.1INTERLOCKInput for interlock circuit
+X2.2INTERLOCKInput for interlock circuit
+All following terminals are supplied via this terminal and they are separated galvanically fromthe internal power supply. The customer has to supply the voltage via X16.1 and X16.5. As de-
+fault the internal voltage supply is used by bridgingX16.1 - X16.2 and X16.5 - X16.6.
+TerminalSignalDescription
+X16.1U_INTERFACE24 V customer
+X16.212 V/24 V12 V/24 V system
+X16.5GND_INTERFACEGND customer
+X16.6GNDGND system
+03/07 - Rev. AD 87
+
+Chapter 7Appendix
+Digital Outputs
+TerminalSignalDescription
+X20.1SYSTEM_READYSYSTEM_READY is set as soon as thesystem has completed its initialization
+and is ready to operated. Switched off inservice mode. Entries via the digital
+inputs are accepted only if this signal isset.
+X20.2READY_TO_MARKThis signal is set as soon as all neces-sary data and a start signal have been
+received. The system is ready to markand waits for a trigger signal. The red
+LEDs on the supply unit and on the mark-ing head are on.
+X20.3MARKINGThis signal is set during the marking pro-cess.
+X20.4SHUTTER_CLOSEDThis signal is set if the beam shutter isclosed.
+X20.5ERRORThis output is LOW active. The system isstopped immediately if an error occurs
+during the marking process (e.g. laserovertemperature). The output is reset
+with the next start (but may be set againimmediately if the error was not cleared).
+X20.6BADThis output is LOW active and indicatesthat the last marking was not completed
+due to a warning or error. The output isreset with the next trigger signal.
+X20.7GOODThis output is LOW active and indicatesthat the last marking has been completed
+without a warning or error. The output isreset with the next trigger signal.
+88 03/07 - Rev. AD
+
+Chapter 7Appendix
+Digital Inputs
+Output Specification:
+Input Specification:
+TerminalSignalDescription
+X16.3STARTStarts the marking process, waits for trig-ger signal, reacts to rising edge. START
+has no function if STOP is set to LOW.
+X16.4STOPStops the marking process, reacts toLOW.
+The signal has to be set to HIGH if notused.
+X20.8EXTERNAL_ERRORThis LOW active signal is ate external error messages.used to evalu-
+If not used, the signal has to be set toHIGH.
+Rated voltage24 V DC (-15 %/+20 %)
+Load typeohmic, inductive, lamp
+Max. output current (per channel)200 mA (short-circuit proof)
+Rated voltage24 V DC (-15 %/+20 %)
+"0" signal voltage0 V to 5 V
+"1" signal voltage8.5 V to 30 V, nominal 24 V
+Current inputtyp. 10 mA
+Min. signal length300 µs
+03/07 - Rev. AD 89
+
+Chapter 7Appendix
+Timing Diagrams
+Normal Operation
+Error in Marking
+Key switch
+System state
+User action
+openLaserstart-upLaserreadyPrepare formarkingWait fortriggerWait fortrigger delayMarkingWait fortriggerWait fortrigger delayMarkingWait fortriggerLaserreadyKey-switchopen
+close key switchstarttriggertriggerstopopen key switch
+Key switch
+System state
+User action
+openLaserstart-upLaserreadyPrepare formarkingWait fortriggerWait fortrigger delayMarkingError message 2Wait forLasertrigger delayreadyWait fortrigger Prepare formarking
+close key switchstarttriggerconfirmationstarttrigger
+90 03/07 - Rev. AD
+
+Chapter 7Appendix
+Warning in Marking
+Key switch
+System state
+User action
+openLaserstart-upLaserreadyPrepare formarkingWait fortriggerWait fortrigger delayMarkingWait fortriggerWait fortrigger delayMarkingWait fortriggerLaserreadyKey-switchopen
+close key switchstarttriggertriggerstopopen key switch
+03/07 - Rev. AD 91
+
+Chapter 7Appendix
+7.1.3 Inputs (Not Separated Galvanically)The signals are not separated galvanically. Connected sensors are automatically considered
+as part of the marking system.
+Trigger Inputs
+Incremental Encoder Inputs
+TerminalSignalDescription
+X6.1TRIGGERTrigger input
+X6.2IN_TRIGGER_ENABLEEnabling of trigger inputs, bridged with ter-minal X6.5 when delivered. See figure next
+page.
+X6.3IN_TRIGGER_MONITORInput, monitoring trigger
+X6.4GNDSystem ground
+X6.512 V/24 VVoltage supply
+X6.6GNDSystem ground
+TerminalSignalDescription
+X7.1ENC_T1Input for track 1 of encoder
+X7.2ENC_T2Input for track 2 of encoder
+X7.3ENC_IDXInput for index track of encoder
+X7.4GNDSystem ground
+X7.5GNDSystem ground
+X7.6GNDSystem ground
+X7.712 V/24 VVoltage supply
+X7.8GNDSystem ground
+92 03/07 - Rev. AD
+
+Chapter 7Appendix
+Release Signals
+Using the signal ENABLE you can define whether the trigger inputs are released.
+The release affects all trigger sources:
+AUTO, TRIGGER
+PROGRAM (Allprint Basic)
+trigger inputs enabled
+24 V trigger inputs disabled
+ENABLE
+0 V
+03/07 - Rev. AD 93
+
+Chapter 7Appendix
+Input Specification
+"0" signal voltage0 V to 5 V
+"1" signal voltage8.5 V to 30 V
+Input current at 12 V/24 V4/10 mA
+Min. signal length without software filter2 µs
+Electrical insulationnone
+The supply voltage for the non-insulated inputs can be changed between 12 V and 24 V usingthe jumper X17 on the ACC:
+X17 closed:12 V
+X17 open:24 V
+Thus encoders and sensors requiring a voltage supply of 12 V or 24 V can be used.
+94 03/07 - Rev. AD
+
+Chapter 7Appendix
+7.1.4 Wiring Example 1: Control via PLC
+InterlockOptocouplerPLC
+Voltage Supply
+The inputs and outputs are supplied via terminals X16.1 and X16.5 in order to separate themarking system galvanically from the PLC.
+System Status
+The following signals are processed:
+SYSTEM_READY
+MARKING
+READY_TO_MARK and
+ERROR
+Control
+The system is controlled via:
+START
+STOP
+TRIGGER
+03/07 - Rev. AD 95
+
+Chapter 7Appendix
+7.1.5 Wiring Example 2: Direct Connection (MOTF - mark on the fly)
+InterlockTriggerEncoder
+Light Barrier
+is connected to TRIGGER
+voltage supplied by marking system
+no galvanical separation
+Incremental Encoder
+connected with both tracks and index track
+volage supplied by marking system
+no galvanical separation
+96 03/07 - Rev. AD
+
+Chapter 7Appendix
+7.2 Declaration of Conformity
+Videojet Technologies Inc.1500 Mittel Boulevard
+Wood Dale, IL 60191-1073U.S.A.
+Phone: 1-800-843-3610Fax: 1-800-582-1343
+We (Suppliers Name)Videojet Technologies Inc.
+Address 1500 Mittel BoulevardWood Dale, Illinois 60191-1073
+U.S.A.
+declare under sole responsibility, that the product
+Name Laser System
+Type, ModelVideojet3120/3320
+fulfills the requirements of the standardsEN 55011 / 11.2003EN 61000-6-2 / 08.2002
+EN 61000-4-2 / 12.2001EN 61000-4-3 / 11.2003
+EN 61000-4-4 / 07.2005EN 61000-4-5 / 12.2001
+EN 60825-1 / 11.2001EN 60950-1 / 03.2003
+and therefore corresponds to the regulations tive) and 73/23/EEC (Low Voltage Directive).of the EU-Directives 89/336/EEC (EMC Direc-
+DateSignature
+24.11.2005
+Declaration of Conformity
+D. Wessel, EU Representative
+03/07 - Rev. AD 97
+
+Chapter 7Appendix
+7.3 DrawingsSupply Unit Videojet3120/Videojet3320
+137
+134,8
+324,5
+365
+330,9
+319,5
+299,5
+365
+98 03/07 - Rev. AD
+
+Chapter 7Appendix
+Marking Unit (Laser Head and Marking Head) Videojet3120
+19x M6
+38,5 39,5
+40
+40
+94
+32,2 114
+80
+160
+(8x80= / 4x160=) 640
+712
+150
+130
+94
+105
+863
+74
+136
+29,4
+39,5
+112
+03/07 - Rev. AD 99
+
+Chapter 7Appendix
+Marking Unit (Laser Head and Marking Head) Videojet3320
+62,3
+40
+120
+40
+95
+120
+56
+120
+530
+640 131
+105
+70
+59
+771
+74
+185
+95
+72,3 62,3
+144,6
+100 03/07 - Rev. AD
+
+Chapter 7Appendix
+Marking HeadSHC 60
+SHC 100
+74
+94
+105
+130
+96,9
+116
+123
+176,5
+03/07 - Rev. AD 101
+
+Chapter 7Appendix
+7.4 Safety Data Sheets
+102 03/07 - Rev. AD
+
+Chapter 7Appendix
+7.4.1 Zinc-Selenide (ZnSe) + Thorium Fluoride (ThF )
+4
+Material Safety Data Sheet II-VI Deutschland
+Revision Date: 21.08.2001
+Trade name of the product:Zinc Selenide (ZnSe-)-Optic with AR- (Anti-Reflection-) Coatingfor 10.6 µm
+CAS-No.:1315-09-9
+Synonyms:Raytran ZnSe, Kodak Irtran-4
+Form: Solid Optical Element
+Chemical family:Inorganic chemical belonging to the II-VI compound group
+1.Product identification
+2.Hazardous ingredients
+Material components:atomicCAS-Number
+ZincSelenium50 %50 %7440-66-67782-49-2
+Coating ingredients:
+Zinc SelenideThorium FluorideN/AN/A1315-09-913709-59-6
+Boiling point, 760 mm HG:sublimes
+Melting point:1525 °C
+Specific gravity (H
+3.Physical properties
+-3
+O=1):5.27 g cm
+2
+Vapor pressure:N/A
+Vapor density (Air = 1):N/A
+Solubility in H
+O, % by WT:insoluble
+% Volatiles by volume:N/A
+2 Appearance & odor:yellow / transparent / solid / odorless
+03/07 - Rev. AD 103
+
+Chapter 7Appendix
+4.Flammability and explosive properties
+Flash point (test method):not flammable and not explosive
+5.Health hazard data
+Threashold limit value
+MaterialLimit
+Zinc oxide fumes5 mg/m
+3
+3
+Zinc oxide dust10 mg/m
+3
+Selenium and compounds0.2 mg/m
+Threshold value of the amount of inhaled particles that can be handled by thebody of persons who permanently
+ deal with this material job related:
+For Thorium Fluoride Dust with 1 µm Particle Size(This value is getting higher significantly with bigger particles.
+Particles bigger than 20 µm can not be inhaled any more.)136 mg
+Threshold value of the amount of inhaled particles that can be handled by thebody of persons who does not
+ deal with this material job related:
+For Thorium Fluoride Dust with 1 µm Particle Size(This value is getting higher significantly with bigger particles.
+Particles bigger than 20 µm can not be inhaled any more.)3 mg
+Effects of overexposure:
+ZnSe - Effects are not known, but some Zinc and Selenium can be formed,such as: Zinc Oxide - Chills and fever. Selenium and Compounds - Acute
+exposure might produce sternal pain, cough, nausea, pallor, coated tongue,gastro-intestinal disorders, nervousness and/or conjunctivitis. A garlic odor of
+the breath or sweat may occur.
+Thorium - eventually cancer producing, because of its radio activity. But noimpact has been recognized through inhalation of less than 270 - 540 mg/year.
+One assumes that from this point the risk enlarges linear to the inhalation. Theexposure through the continuing contact with a lens for 2000 hours/year is less
+than the exposure that occurs when your teeth are x-rayed two times, youmake a trans-continental flight or fume 1/3 of a cigarette/day. Inorganic Fluo-
+rides - normally an irritant and toxic. Inhaling can be the causthe respiratory tract and the mucosa, asthma attack, increased salivation,e for irritations of
+thirst, sweating, vomitus and colic.
+104 03/07 - Rev. AD
+
+Chapter 7Appendix
+6.Reactivity data
+Stability:stable
+Conditions to avoid:extreme heat greater than 500 °C could result in decom-position
+Materials to avoidstrong acids, strong bases
+Hazardous decomposition products:Selenium / Oxides of Selenium / Zinc Oxide
+Hazardous polymerization:will not occur
+Conditions to avoid:N/A
+Steps to take in case material is released or spilled:N/A
+7.Spill or Leak Procedures
+Emergency and First Aid Procedures (in dust form):
+Eyes: wash with plenty of water - see physician
+Skin: wash with plenty of water - see physician
+Ingestion: call physician
+Inhalation: remove from exposure, treat symptomatically, call physician
+8.Special Protection Information
+Type of respiratory protection required:
+NIOSH approved respiratory with fume type cartridge
+Ventilation:
+In case of vaporization leave the room and allow the dust to settle. Clean allsurfaces if the room has ventilation, allow for several air changes. Locate
+exhaust near location of ZnSe processing or use if failure by melting is likely.
+03/07 - Rev. AD 105
+
+Chapter 7Appendix
+9.Special Precautions
+Handling and storage precaution:
+If material is to be machined, ground or polished, processes should be donewet so as to minimize dust which could result in inhalation. Good work prac-
+tices such as keeping hands clean and should be followed so that transferal not letting slurry splash significantlyto mouth by contamination on the hands
+or clothing followed by ingestion will not occur. Wash hands and face thor-oughly after handling material and before eating.
+If parts are dropped or otherwise broken, sweep up pieces which may havesharp edges as one would clean up broken glass and safely TRANSFER TO
+DISPOSAL CONTAINER: large pieces may have salvage value.
+References for material safety and threshold limit values:
+1."Dangerous Properties of Industrial Materials" Richard J. Lewis, Sr., 1992, 8th Edition
+2."TLVs Threshold Limit Values for Chemical Substances and Physical Agents in the Work-room Environment with Intended Changes for 1981" American Conference of Industrial Hy-
+gienists
+3.1998 "Threshold Limit Values for Chemical Substances and Physical Agents and BiologicalExposure Indices" edited by the American Conference of Industrial Hygienists
+4.Zinc Selenide Material has been found not toxical in a study about toxical limit values byToxikon. This test was initiated on January 7th, 1993 by II-VI, according to the prescription
+"Federal hazardous substances Act. 16CFR, Part 1500.3, January 1990."
+5.International Commission on Radiological Protection, ICRP Publication 71, "Age-dependantDoses to members of the Public from Intake of Raionuclides: part 4 Inhalation Dose Coef-
+ficients", 1996
+6.International Commission on Radiological Prottions of the International Commission on Radiological Protection", 1977ection, ICRP Publication 26, "Recommenda-
+7.This information has been taken from the Materialdatasheet has been generated carefully. However we Safety Data Sheet of our distributor. The will take no liability for the content,
+no matter which legal ground is given.
+106 03/07 - Rev. AD
+
+Chapter 7Appendix
+Details of the Manufacturer and the Distributor
+Address of the manufacturer:
+II-VI Incorporated375 Saxonburg Blvd.
+Saxonburg, Pennsylvania 16056USA
+Address of the distributor (please call here for further information):
+II-VI Deutschland GmbHIm Tiefen See 58
+64293 Darmstadt
+Tel.: 06151-8806-29 / Fax: 06151-8966-67
+03/07 - Rev. AD 107
+
+Chapter 7Appendix
+7.4.2 Acetone
+Safety Data Sheet MERCK
+According to EC Directive 91/155/EEC
+Date of issue: 22.11.2001 Supersedes edition of 01.12.1999
+1.Identificationof the substance/preparation and of the company/undertaking
+Identification of the productCatalogue No.: 100014
+Product name: Acetone GR for analysis ACS,ISO
+Company/undertaking identificationCompany: Merck KGaA * 64271 Darmstadt * Germany * Tel: +49 6151 72-0
+Emergency telephone No.: Please contact the regional Merck representation in your coun-try.
+2.Composition/information on ingredients
+SynonymsDimetyl ketone, 2-Propanone
+CAS-No.:67-64-1EC-Index-No.:606-001-00-8
+M:58.08 g/molEC-No.:200-662-2
+Formula Hill:C
+H O
+Chemical formula:CH
+3 6
+COCH
+3 3
+3.Hazards identification
+Highly flammable. Irritating to eyes. Repeated exposure may cause skin dryness or crack-ing. Vapours may cause drowsiness and dizziness.
+4.First aid measures
+After inhalation: fresh air. If necessary, apply mouth-to-mouth resuscitation or mechanicalventilation. Keep airways free. After skin contact: wash off with plenty of water. Remove
+contaminated clothing. After eye contact: rinse ouutes with the eyelid held wide open. Call in t with plenty of water for at least 10 min-ophtalmologist. After swallowing: immediately
+make victim drink plenty of water. Subsequentin 10% slurry). Risk of aspiration! Do not ly administer: activated charcoal (20 - 40 ginduce vomiting. Keep airways free. Call in physi-
+cian. Laxative: Sodium sulfate (1 tablespoon/1/4 l water).
+Indications for the doctor: After swallowing of large amounts: Gastric lavage.
+108 03/07 - Rev. AD
+
+Chapter 7Appendix
+5.Fire-fighting measures
+Suitable extinguishing media: powder, foam.
+Special risks:Combustible. Vapours heavier than air. Forms explosive mixtures with air at ambient tem-
+peratures. Development of hazardous combustiof fire.on gases or vapours possible in the event
+Special protective equipment for fire fighting:Do not stay in dangerous zone without suitable chemical protection clothing and self-con-
+tained breathing apparatus.
+Other information:Keep away sources of ignition. Prevent fire-fighting water from entering surface water or
+groundwater. Cool container with spray watevapours with water.r from a save distance. Contain escaping
+6.Accidental release measures
+Person-related precautionary measures: Avoid substance contact. Do not inhale vapours/aerosols. Ensure supply of fresh air in
+enclosed rooms.
+Environmental-protection measures: Do not allow to enter sewerage system; risk of explosion!
+Procedures for cleaning / absorption: Take up with liquid-absorbent material (e.g. Chemizorb® ). Forward for disposal. Clean up
+affected area.
+7.Handling and storage
+Handling:Notes for prevention of fire and explosion:
+Take measures to prevent electrostatic charging. Keep away from sources of ignition.
+Notes for safe handling: Work under hood . Do not inhale substance. Avoid generation of vapours/aerosols.
+Storage:Tightly closed. In a well-ventilated place. Keep away from sources of ignition and heat. At
++15°C to +25°C.
+03/07 - Rev. AD 109
+
+Chapter 7Appendix
+8.Exposure controls/personal protection
+Specific control parameter
+Personal protective equipment:Protective clothing should be selected specifically for the working place, depending on
+concentration and quantity of the hazardous suprotective clothing to chemicals should bebstances handled. The resistance of the ascertained with the respective supplier.
+Respiratory protection: required when vapours/aerosols are generated. Filter AX (EN 371)
+Eye protection: required
+Hand protection: required
+Industrial hygiene:Immediately change contaminated clothing. Apply skin- protective barrier cream. Wash
+hands and face after working with substance. Work under hood . Do not inhale substance.
+ECName:Acetone
+Value:500 ml/m
+3
+1210 mg/m
+3
+110 03/07 - Rev. AD
+
+Chapter 7Appendix
+9.Physical and chemical properties
+Form
+liquid
+Colour colourless
+Odour fruity
+pH value at 395 g/l H O: 5 - 6
+2
+Viscosity dynamic (20 °C)0.32mPa*s
+Melting point -95.4°C
+Boiling point (1013 hPa)56.2°C
+Ignition temperature 540°C
+Flash point < -20°Cc.c.
+Explosion limits lower2.6 Vol%
+upper13 Vol%
+Vapour pressure (20 °C)233 hPa
+Relative vapour density 2.01
+3
+Density (20 °C)0.79g/cm
+Solubility in
+water
+ethanol
+ether
+(20 °C)soluble
+soluble
+soluble
+log Pow: -0.24(experimental)
+Bioconcentration factor 0.69
+Dielectric constant (25 °C)20.7
+03/07 - Rev. AD 111
+
+Chapter 7Appendix
+10.Stability and reactivity
+Conditions to be avoidedHeating.
+Substances to be avoidedalkali hydroxides, halogens, halogenated hydrocarbons / alkali hydroxides, halogen-halo-
+gen compounds, oxidizing agent (i.a. CrO3, perohalogen oxides, alkali metals, nitrxi compounds, nitric acid, nitrating acid),osyl compounds, metals, ethanolamine.
+Hazardous decomposition productsperoxides.
+Further informationsolvent; light-sensitive; sensitive to air. unsuitable working materials: various plastics, rub-
+ber. Explosible with air in a vaporous/gaseous state.
+11.Toxicological information
+Acute toxicityLD
+ (oral, rat): 5800 mg/kg. LC
+50
+ (inhalation, rat): 76 mg/l /4 h. LD
+50
+ (dermal, rabbit): 20000 mg/kg.
+Specific symptoms in animal studies: Skin irritation test (rabbit): Irritations.
+50 Eye irritation test (rabbit): Irritations.
+Subacute to chronic toxicityNo impairment of reproductive performance in animal experiments. Noncarcinogenic in
+animal experiments.
+Bacterial mutagenicity: Salmonella typhimurium: negative.
+Bacillus subtilis: negative.Escherichia coli: negative.
+Ames-Test: negative.
+Mutagenicity test acc. to OECD Test Guideline 476 (in vitro mammal cell test): negative.
+Sensitization test (guinea pig): negative.
+Further toxicological informationAfter inhalation of vapours: mucosal irritations, drowziness, drowsiness. In high doses:
+headache, salivation, nausea, vomiting, dizziness, narcosis. Cannot be excluded: coma.After skin contact: Slight irritations. Drying-out effect resulting in rough and chapped skin.
+After eye contact: Irritations. Risk of corneal clouding. After swallowing: gastrointestinal complaints, headache, salivation, nausea, vomiting, diz-
+ziness, narcosis, coma.
+Further dataThe product should be handled with the care usual when dealing with chemicals.
+112 03/07 - Rev. AD
+
+Chapter 7Appendix
+12.Ecological information
+Biologic degradation: Biodegradation: 91 % /28 d;
+Readily biodegradable.
+Behavior in environmental compartments: Distribution: log p(o/w): -0.24 (experimental).
+No bioaccumulation is to be expected (log P(o/w <1).
+Ecotoxic effects: Biological effects:
+Fish toxicity: L.macrochirus LC
+Daphnia toxicity: Daphnia magna EC: 8300 mg/l /96 h.
+50
+Maximum permissible to: 12600-12700 mg/l /48 h. xic concentration:
+Algeal toxicity: Sc.quadricauda IC
+50
+Bacterial toxicity: M.aeruginosa EC: 7500 mg/l /8 d;
+5
+Ps.putida EC: 530 mg/l /8 d;
+5
+: 1700 mg/l /16 h; Protozoa: E.sulcatum EC
+5
+: 28 mg/l /72 h.
+Further ecologic data: Degradability:
+5 BOD
+: 1.85 g/g; COD: 2.07 g/g;
+TOD: 2.20 g/g.
+5 No ecological problems are to be expected when the product is handled and used with duecare and attention.
+13.Disposal considerations
+Product:There are no uniform EC Regulations for the disposal of chemicals or residues. Chemical
+residues generally count as special waste. The dimember countries through corresponding lawssposal of the latter is regulated in the EC and regulations. We recommend that you
+contact either the authorities in charge or approved waste disposal companies which willadvise you on how to dispose of special waste.
+Packaging:Disposal in compliance with official regulations. Handle contaminated packaging in the
+same way as the substance itself. If not officially specified differently, non-contaminatedpackaging may be treated like household waste or recycled.
+03/07 - Rev. AD 113
+
+Chapter 7Appendix
+14.Transport information
+The transport regulations are cited according to international regulations and in the formapplicable in Germany (GGVS/GGVE). Possible national deviations in other countries are
+not considered.
+THESE TRANSPORT DATA APPLY TO THE ENTIRE PACK !
+Land transportGGVS, GGVE, ADR, RID
+ClassificationName3/3b1090 ACETON
+Transport by riverADN, ADNR
+Classificationnot tested
+Transport by seaMDG, GGVSee
+ClassificationEms 3.1/UN 1090/PG II3-06
+MFAGName 300ACETONE
+Transport by airCAO, IATA
+ClassificationName3/UN 1090/PG IIACETONE
+15.Regulatory information
+Labelling according to EC Directives
+Symbol:FXi Highly flammableIrritant
+R-phrases:11-36-66-67Highly flammable. Irritating to eyes. Repeated exposure maycause skin dryness or cracking.
+Vapours may cause drowsiness and dizziness.
+S-phrases:9-16-26Keep container in a well-ventilated place. Keep away fromsources of ignition - No smoking. In case of contact with eyes,
+rinse immediately with plenty of water and seek medicaladvice.
+EC-No.:200-662-2EC label
+114 03/07 - Rev. AD
+
+Chapter 7Appendix
+16.Other information
+Change in the chapter on toxicology.
+General update.
+Regional representation:This information is given on the authorised Safety Data Sheet for your country.
+The information contained herein is based on the acterizes the product with regard to the appropriate safety precautions. It does not repre-present state of our knowledge. It char-
+sent a guarantee of the properties of the product.
+03/07 - Rev. AD 115
+
+Chapter 7Appendix
+7.5 Abbreviations
+ACCAdvanced Controller Card, central control board of the laser system.
+AOSAdvanced Operating System, operating system of the laser system.
+DSPDigital Signal Processor, for processing data from the AOS and generat-ing data for the marking head.
+FM Fast Move, board in the marking head converting positioning data fromthe DSP into mirror movement.
+FPGAField Programmable Gate Array, complex programmable logic module.
+IOEBInput Output Extension Board, extension board for simultaneous connec-tion of a PC and a handheld.
+IP-AdresseAddress for the internet protocol.
+LVDSLow Voltage Differential Signal, interface standard based on differentiallow voltage signals
+MMCMultiMediaCard, memory card containing the AOS and the laser data-base.
+PLCProgrammable logic controller for external control of the laser system.
+116 03/07 - Rev. AD
+
+Index
+A M
+Acetone 108 mains frequency 24
+Advanced Controller Card (ACC) 23 maintenance intervals 38
+ambient temperature 24 maintenance protocols 42
+maintenance works 38
+C
+malfunctions 50
+marking contents 30
+characters/second 24
+marking field 20, 26
+connecting cables 34
+marking head 22
+control elements 31
+marking speed 24
+control options 25, 29
+marking unit 22
+cooling 17, 25
+N
+D
+normal operation 2
+data transmission 34
+declaration of conformity 97
+O
+Digital Signal Processor (DSP) 23
+operating modes 24
+E
+P
+error messages 60
+excitation 24 power consumption (max.) 24
+exhaust unit 17 PowerPC (PPC) 23
+F S
+focal length 24 safety devices 6
+focus diameter 24 safety goggles 7
+fonts (character sets) 25 sealing 24
+fuse 24 Smart Graph Software 29
+speed of production line 24
+H
+storage 15
+supply line (max. length) 25
+handheld 22, 29
+supply unit 22
+humidity 24
+supply voltage 24
+I system states 32
+interface assignment 87
+T
+interfaces 17, 25
+Thorium 9
+L Thorium Fluoride 103
+timing diagrams 90
+Laser Beam Source 20
+transport 15
+laser class 24
+laser parameters 21
+V
+laser power 24
+vector stroke 21
+laser scan lens 26, 27, 28
+laser source 2
+W
+laser type 24
+lenses 26, 27, 28 warning lights 6
+line width 24 warning messages 51
+wavelength 24
+weight 24
+117
+
+Index
+working distance 26
+Z
+Zinc Selenide 9
+Zinc-Selenide 103
+118
+
+I@+& &
+C@&#&!0606"0 1
+
+ub7vzewEp,x:^Fy^Lz;6,|D*~T
+008D>WEgKuS^h|qxwt}pnkihfeeeeeeeeeee//*"$!# -55I<ZCiLuUa{jvqrwo|ljhfecbbbbbbbbbbb-
+@u*=}+:-8.6/40312212121212121212yog"`,Z4T<OCJIGOCU@[>a;f9m6t 4}!1#/$-%,&+&*'
+#
+I'C'?&;$8"5"2"0".","*"
+H'R&]$j#y"! zj]S J D >:7420.,*
+@
+&$" $,4=GR_niZNE= 61-
+g'w&&%%%&m^RH@:620..-,,+*
+.6?ITapcUI@82-
+*+----$...:.H-X-j-,+*
+'&&%%$$$$~~pcWLB8/*
+6COZdmu}&%&'%!-<I U!_"h"p#x###$$$$%%&&&&&&&&
+F'Q&^%n$##""#$weVKB:50-,+*
+!%'!-28?FMV`l{{l^OB61,'# !&,17>FOYft./3,7-80764?1K/X,f*t
+q5l?hHdPaW]^ZfWnTwQ N#K%I&H'G'G$H"I JJJJn{upm#i0e;aE]MZTWTcQkNtKHE C!B"A"A BBCCCCuyjec`+]6Y@VISQPYM`JiGrD}B?=<;;;;<<<<|}qdZWU#S0P;MDKMHUE]Ce@o>z;97655444444thPIHF'E3C=AG?P=X:a8k6w420/..-,,,,,vj^RG=876'534=3G1Q0[.e,q*
+cr4`r=^rE[qMYqTWp[TpcRokPotMnKnInGmFnEnFmFmGmGlGlGl_iqw{|{uxkwewax_x$]y0Zy:XyBVxJSxQQwXOw`LvhJvrHu}EuCuBu@u@u@t@tAsAsAsAsdnv|re]YW U+S6Q>OFMNKUI]FfD~pB~{?~=}<}:}:~:|:{:{:z:z:zit|{n`UPNM&K0I:HBFJDRBZ@c=m;x97543333333pzuhZOGDCA*@4?==E;M:V8_6i4u20.-,,+++++xzmaUI?976"4,352>1G0P.Z-d+q
+IK0GK8FL?ELFDLNCMVBM_@Mj?Mv=N<N;N9O9O9O9N9N9M:MNV[_aax^iX_VTRLOIOGPEP%CP-BP5AQ<@QD?QL>RT<R];Rg:Rs8S7S5S4S3T3S4S4R4R4RRZ`dfetcf^\QXGUBU@U?V!=V*<V2;V9:WA9WI8WQ7XZ5Xe4Xq2X1X/Y.Y-Y-Y.X.W.W.VW_eij|jqhceXbM_C]<[:87&5].4]63]>2]F1^N0^W/^b-^n,_}*_
+"+5@NnxjOB6
+/F'0O%0[$1h#1w"2!23333 3!2CIMO|PsOhLFRCI??;66.2+2
++.*5
+|'r%i"_WNF?841.,*
+]$TKC;4-
+?cwbg6?^9<L#o}HodQWHt8Z#,}U9""|W0Lr6K>/Z$^w%j}[+L<0-a''U'%v]J<2-,09GjK/og4<;1oBPi7/"y4Ftjc
+
+MAQ$Q6n`d'@_ofmbAtOo{~alySnwJs]P28>>@BT@?>=<;:9876543210/.-,+*
+[&XK|8[7?jW>L|?@4I
+Xxy"EGXXY"& $-&%% !!H@
+
+Operating Instructions
+Videojet 3120Videojet 3320
+P/N: AL-69452
+Revision: AD, March 2007
+
+Description of the Laser SystemChapter 3
+3.8 Technical Data
+UnitVideojet3120Videojet3320
+Laser typesealed-off CO
+laser
+Operating modescontinuous wave (cw)pulsed 50 Hz - 20 kHz
+2 Laser class4
+Laser power typ.W= 10=30
+Max. power consumptionkW0.40.7
+Supply voltageVAC85 to 240 (autorange); 1-phase
+Mains frequencyHz50 / 60
+FuseA10 (quick-action)
+Ambient temperature°C5 - 40(for special requirements please contact us)
+Humidity%10 - 90; non condensing
+ExcitationRF
+Weight (typical)- supply unit kg 11.5 11.5
+- laser head- marking head SHC 60131.4 19.11.4
+- marking head SHC100/120 2.2 2.2
+SealingIP 54S (optional IP 65)
+WavelengthPm10.610.6 (optional 9.3)
+Marking speed
+a
+mm/s1 - 30,000
+Speed of production linem/s0 - 10
+Characters/Second
+a
+max. 1200
+Focal length of focusing lensmm
+SHC 60 64; 95; 127; 190; 254
+SHC100/120 63,5; 85; 100; 150; 200; 300; 351; 400
+Focus diameterPm150 - 450(depending on the installed optics)
+Line widthdepends on the materialand the laser parameters
+24 03/07 - Rev. AD

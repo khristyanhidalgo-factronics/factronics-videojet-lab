@@ -1,0 +1,91 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\80720-AA Installation of Double Light Barrier.pdf
+# cifrado=False bloques=8 caracteres=4958
+
+AL-80720Installation Instruction
+Installation of Double Light Barrier
+1 Installation of Double Light Barrier
+Using the double light barrier it is possible to detect the product and the products speed withouta rotary encoder. The sensor automatically adjusts the line speed for each separate product.
+This allows for a variable speed belt and for users greatest of ease.to move the printer from line to line with the
+Important considerations for using a Double Light Barrier are:
+Placement AccuracyFor the best results the product must come past the laser marking head and sensor consis-
+tently. A constant belt speed is a key to get the best possible marking result . An oscillation of belt speed will have a negative impact on mark placement and marking quality. The dou-
+ble light barrier should be placed as close as possible to the marking field borders, to use the latest real speed information for the marking.
+Sensor CalibrationEach light sensor should be calibrated equally for necessary distance. That distance must
+not exceed the depth of the conveyor. Through the turn potentiometer, it is possible to cali-brate the product distance and sensitivity for needed product surface.
+Material ReflectivityThe speed sensor sensitivity must be set correctly. For more IR reflective products, a lower
+sensitivity is recommended. For less IR reflecmended to minimize double trigger likelihood.tive products a higher sensitivity is recom-
+Ambient Light RequirementsOverhead florescent tube or LED office lighting, no direct intense sunlight or incandescent
+lighting onto front of sensors.
+02/21 -Rev. AA 1
+
+InstallationInstructionAL-80720
+Installation of Double Light Barrier
+Product ShapeThe line speed sensor works by detecting a difference between nothing being there (low
+amounts of infrared light reflected back into the sensor) and something being there (large amounts of infrared light reflected back). The sharpness of that transition is provided by the
+shape and material of the item to be printed onto.
+Strong sharp edge
+This is the best shape for marking placement results.
+Soft/rounded/draft edges
+These products will require more adjustment of the sensiti-vity value and alterations to the nominal marking offset so
+that the marking is placed in the correct position. Place-ment variability will also be larger but is in general still per-
+fectly acceptable.
+Odd shapes
+A higher sensitivity is likely needed to ensure that doubletriggers do not take place. The item material should also be
+more reflective.
+Gaps in product
+This will lead to double triggers. encoder is required.A light gate and shaft
+2 02/21 -Rev. AA
+
+AL-80720Installation Instruction
+Installation of Double Light Barrier
+1.1 Connection to the Laser System
+At the back of the laser system there are two sensor connectors (female), one three-pole andone four-pole:
+The double light barrier comes with two different connectors corresponding to the two sensorconnectors of the system in order to make correct connection easy.
+3-pole
+4-pole
+3-pole 4-pole
+02/21 -Rev. AA 3
+
+InstallationInstructionAL-80720
+Installation of Double Light Barrier
+1.2 Setup at the Conveyor
+There are four mounting position possible at the conveyor:
+NoteThe 3-pole trigger must always be installed nearest to the marking field.
+Make sure that the potentionmeters of the light barriers are accessible foradjustment!
+1.Place the sensor holding plate as close as possible to the marking field and mount it as shown:
+laser system
+3-pole trigger
+4-pole trigger
+direction of product movement
+sensor holding plate
+min gap between products: 40 mm
+4 02/21 -Rev. AA
+
+AL-80720Installation Instruction
+Installation of Double Light Barrier
+2.Adjust the trigger sensitivity according to the requirements via the potentiometers.The green LED indicates that the light barrier is on.
+The yellow LED lights up during product detection.
+NoteWhen adjusting the sensitivity make sure the sensors are adjusted to thesame detection distance. That distance must not exceed the depth of the
+conveyor!
+Take into consideration the reflectivity of the products material.
+potentiometers
+02/21 -Rev. AA 5
+
+InstallationInstructionAL-80720
+Installation of Double Light Barrier
+1.3 Software Configuration
+1.Log into TCS+ Software.
+2.Select Edit Line Setup button. You can either edit an existing line setup or create a new one.
+6 02/21 -Rev. AA
+
+AL-80720Installation Instruction
+Installation of Double Light Barrier
+3.In the Line Setup in tab Line Speed or Triggerdown list of detectors., select Optex dual detector from the drop-
+The corresponding Trigger/Encoder is set automatically.
+4.In tab Trigger set the Blocking Distance value to at of the double light barrier.least 40mm to ensure proper functioning
+02/21 -Rev. AA 7
+
+InstallationInstructionAL-80720
+Installation of Double Light Barrier
+5.After the installation and configuration is complete the the home screen light up in green.Product detector and Encoder in
+8 02/21 -Rev. AA

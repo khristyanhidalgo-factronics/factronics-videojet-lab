@@ -1,0 +1,119 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\12092G.pdf
+# cifrado=False bloques=8 caracteres=4646
+
+Videojet Technologies Inc.
+SAR12092G
+Printer Model: 3120/3130/3320/3330/3430/7210/7310/ 7320/ DN50/LN100
+Description: Claricom Generic Protocol via TCP port .
+(Load Message will reset all external text inserts to defa ult values.)
+Base Version: QMark 8. 9 . 1 .1
+Engineered By: P . Ward
+Verified By: P. Ward
+Date Completed: February 16, 2022
+Revision A: Rebased on QMark 8.5.3. 8T2.
+Revision B: Rebased on QMark 8.5.3.6 . Added all changes to Generic Protocol from SAR11201 K.
+Revision C: Rebased on QMark 8.6.0 . Fixed UTF - 8 encoding.
+Revision D: SAR now starts at boot and listens for TCP Port 20000 connections. Only one connection
+allowed at a time.
+Revision E: Rebased on QMark 8.9.0.
+Revision F: Rebased on QMark 8.9.1. Sa ve database after message loaded and variables updated.
+Revision G : Rebased on QMark 8.9.1 .1 .
+See Addendum to the Operating Instructions for modification details.
+1 / 8
+Confidential - Company Proprietary
+
+VIDEOJET TECHNOLOGIES INC. SAR12092G
+Claricom Generic P rotocol
+1. Host Port Configuration:
+TCP Client, Port 20000
+2 . Commands:
+Refer to the “Claricom Gen eric Protocol Description” for the actual command syntax.
+Commands supported:
+Command Comments
+STOP MACHINE
+START MACHINE
+REQUEST STATUS
+REQUEST COUNTS Session Count is mapped to Lot Co unt in Laser. Rejects always
+return 0. If system is printi ng too fast (10/s), counts do not
+update
+RESET COUNT
+LOAD MESSAGE The message name (template name in Laser) is case sensitive
+and must be the same as the CIFF file name. Variable names
+can be changed, but default to Field00, Field01... Fieldnn in
+Clari soft. Note that variable names are case sensitive in the
+Laser.
+SEND RS232 INSERT DATA
+SELECT MESSAGE Not applicable to Laser so Laser just send s ACK back.
+REQUEST ACTIVE FAULTS
+REQUEST ACTIVE WARNINGS
+REQUEST CURRENT
+MESSAGE
+SELECT ACTIVE HEAD Not applicable to Laser so Laser just send s ACK back.
+SET TIME AND DATE Synchronize time during Job Selection must be selected under
+equipment properties in ClariNet .
+3 . Unicode
+All strings are UTF - 8 encoded.
+Code range UTF - 8 Notes
+0000 – 007F 0zzzz zzz ASCII equivalence range; byte begins with zero
+0080 – 07FF 110yyyyy 10zzzzzz first byte begins with 110, the following byte begins with 10.
+first byte begins with 1110, the following 2 bytes begin with
+0800 – FFFF 1110xxxx 10yyyyyy 10zzzzzz
+10.
+2 / 8
+Confidential - Company Proprietary
+
+VIDEOJET TECHNOLOGIES INC. SAR12092G
+3 . Ex ample
+A. Create a Template in the Laser via SmartGraph.
+Template Name = “ Test ”
+External Text Name = “Field00”
+3 / 8
+Confidential - Company Proprietary
+
+VIDEOJET TECHNOLOGIES INC. SAR12092G
+B. Create a CIFF file using Clarisoft.
+Select File - >New and when prompted with the screen below, select “Generic V2”.
+Add a text obj ect with the following properties:
+Text Type = User Entered Text
+Field Name = “Field00” (T he Field Name can be changed on the General tab. )
+Select File - >SaveAs and when prompted enter the name “Test.ciff”.
+4 / 8
+Confidential - Company Proprietary
+
+VIDEOJET TECHNOLOGIES INC. SAR12092G
+C . Print from Clarisoft to the Laser.
+Sele ct Tools - >Options and select the “Printing” tab. Select “Use TCP/IP Communications”, enter
+the IP Address of the Laser and enter 20000 as the Port.
+Select File - >Print and select “Real - Time Coder”.
+Select Current Image.
+5 / 8
+Confidential - Company Proprietary
+
+VIDEOJET TECHNOLOGIES INC. SAR12092G
+Check the box in the Pr ompt column and then double - click on the Data field. When prompted
+enter “Test Variable Data”.
+Click OK for all the subsequent dialogues and you should see the following screen.
+Verify the correct data was marked by the Laser.
+D . Print from Clari Net to the Laser.
+Select Equipment - >Add Equipment and select “Colder”.
+Select Generic V2 and click “Next”.
+6 / 8
+Confidential - Company Proprietary
+
+VIDEOJET TECHNOLOGIES INC. SAR12092G
+Enter the Equipment information and click “Next”.
+Select “ClariNet” and click “Next”.
+Select “TCP/IP” and click “Next”.
+7 / 8
+Confidential - Company Proprietary
+
+VIDEOJET TECHNOLOGIES INC. SAR12092G
+E nter the IP Address of the Laser and 20000 as the Port.
+When prompted, click “Finish”. The following screen should then be displayed.
+Click on “NEXT JOB” and when prompted, select “Text.ciff”. Select the equipment and click OK.
+You will be prompted j ust as with Clarisoft. The rest of the procedure is the same as indicated in
+section “C” above. Verify the template is marked with the new data.
+If you have questions or concerns regarding this SAR, contact the Technical Support department of Videoj et
+Technologies Inc. 1 - 800 - 843 - 3610 x3103
+8 / 8
+Confidential - Company Proprietary

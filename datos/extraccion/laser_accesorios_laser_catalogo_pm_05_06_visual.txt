@@ -1,0 +1,4246 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\Catalogo_PM_05_06.pdf
+# cifrado=False bloques=99 caracteres=193666
+
+.06
+y
+Release 6- Ma
+Laser Measurement Instruments
+
+Contents
+UNDERSTANDING LASER POWER TECHNOLOGIES...................................................................................................................AND ENERGY MEASUREMENT .........3
+Foreword.......................................................................................................................Technology...................................................................................................................................3 .............3
+Selecting a measurement system.................................................................................................Operating Principles of Thermal Heads.....................................................................................43
+A New Approach on Thermal Heads Design: the FIT Product Lines......................................5Radiation Absorbers....................................................................................................................5
+Detector-to-Monitor Intelligent Interfacing................................................................................6Selecting a Power or Energy Measurement Solution..................................................................7
+LP-EXPLORER: THE DETECTOR FINDING PROGRAM......................................................8
+On the web or on the CD ROM with your catalogue..................................................................8
+CALIBRATIONS AT LASER POINT.........................................................................................11
+NIST and PTB Traceability......................................................................................................Calibration Capabilities in LaserPoint.....................................................................................11.11
+LASER POWER AND ENERGY HEADS...................................................................................12
+How to read products ID code and select a detector head.......................................................12S
+URFACE A BSORBER H EADS FOR CW AND L ONG P ULSE L ASERS Quick Reference Tables..........................................................................................................................................................13 ....13
+Specifications.................................................................................................................A-Low Power Series........................................................................................................................15 .....15
+B-Mid Power Series.............................................................................................................C-High Power Series.................................................................................................................19 .....23
+Absorption and Damage Threshold Curves..............................................................................25O
+PTIONS ...............................................................................................................................Plug-In Modules for 20mW or 2W full scales..........................................................................26..........26
+Ordering Information...........................................................................................................E .....27
+XCIMER A BSORBER H EADS FOR P ULSED L ASERS .........................................................................28 Quick Reference Tables.............................................................................................................28
+Specifications.................................................................................................................Absorption and Damage Threshold Curves..............................................................................33...........29
+Ordering Information...........................................................................................................V .....34
+OLUME A BSORBER H EADS FOR P ULSED L ASERS .........................................................................35 Quick Reference Tables.............................................................................................................35
+Specifications.................................................................................................................Absorption and Damage Threshold Curves..............................................................................39...........36
+Ordering Information...........................................................................................................A .....40
+PPLICATIONS OF P OWER AND E NERGY H EADS .............................................................................41
+DISPLAYS, CONTROLS AND SOFTWARE.............................................................................43
+Selecting a meter for the application........................................................................................43L
+ASER P OWER AND E NERGY M ETER : THE PLUS...........................................................................44 Unbeatable Price to Performance.............................................................................................44
+PLUS: Technical Specifications................................................................................................4Ordering Information...........................................................................................................5 .....45
+S
+MART H EAD TO USB I NTERFACE : THE PC-LINK........................................................................46
+1
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Your Laptop or PC Converted Into a Power/Energy Meter.....................................................46The Rich and Flexible Monitor................................................................................................46
+PC-Link: Technical Specifications............................................................................................46Ordering Information................................................................................................................46
+L
+ASER P ROCESS M ONITOR : THE LPM............................................................................................47 The System.................................................................................................................................47
+Laser Process Monitor :Technical Specifications....................................................................49Ordering Information................................................................................................................49
+PLUS-SOFT
+AND LPM-SOFT: A PPLICATION S OFTWARES ..........................................................50 A
+PPLICATIONS OF L ASER P ROCESS M ONITOR (LPM).....................................................................53
+OEM AND CUSTOM PRODUCTS..............................................................................................57
+A
+DVANTAGES OF L ASER P OINT OEM L ASER M EASUREMENT P RODUCTS B ......................................57
+UILDING - UP A L ASER M EASUREMENT S YSTEM ............................................................................58 Start from the Application Purpose...........................................................................................58
+Select the OEM Sensor or Head- (Short Guide).......................................................................58Select Connectivity Options......................................................................................................60
+Chose the Control Electronics and SW.....................................................................................61S
+TANDARD OEM P RODUCTS S PECIFICATIONS ..............................................................................64 Custom Power and Energy Sensors..........................................................................................64
+Standard Thermal Sensor Discs................................................................................................64Standard Thermal Heads..........................................................................................................67
+Standard Thermal Heads with Built-in Amplifier.....................................................................70Standard OEM Laser Probes (FIT Series)...............................................................................77
+Build up the Complete Product Code Before Ordering............................................................80Ordering Information................................................................................................................80
+A
+PPLICATIONS OF OEM S ENSORS & H EADS ..................................................................................81
+LASERPROBES..............................................................................................................................84
+F
+IT AND C RONOS ............................................................................................................................84 Fit Series: Specifications...........................................................................................................85
+Ordering Information...........................................................................................................Cronos Series: Specifications.......................................................................................................85 ..86
+Ordering Information...........................................................................................................F .....86
+IT -IPL:E NERGY & P OWER M ETER FOR IPL (I NTENSE P ULSED L IGHT FIT-IPL Specifications.........................................................................................................)........................................87 .....88
+Ordering Information...........................................................................................................A .....88
+PPLICATIONS OF L ASER P ROBES ...................................................................................................89
+CUSTOMER SUPPORT................................................................................................................92
+APPENDIX- NOTE ........................................................................................................................93
+APPENDIX- NOTE ........................................................................................................................94
+APPENDIX- NOTE ........................................................................................................................95
+APPENDIX- NOTE.........................................................................................................................96
+LaserPoint provides innovative solutions Laser measurement and monitoring is needed to control performances and increase quality
+or production throughput. Research and developments at LaserPoint have introduced a whole series of technological
+advantages on existing products and generated new tools for diffuse applications. Higher power density capabilities, new generation probes and industrial OEM monitoring
+instrumentation are examples of our innovative solutions.
+2
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Understanding Laser Power and Energy Measurement Technologies
+Foreword
+Laser Point manufactures a complete range of state-of-the-art detector heads and monitors for measurement of powers and energies of all lasers, from UV to the Far Infrared, in any application
+within the industrial, mediThose detectors can mate to a whole family of precise and sophisticated monitors and meters cal or scientific fields.
+which include intelligent detector connection, analand application software . og and digital displays, analog and digital outputs
+Technology
+Laser Point has put a lot of technology into the design of its heads. A head is substantially made of a sensor disk and a housing with its heat sink or cooling devices. Each of these
+assemblies are critical in view of the final performance of the system. Parameters like thermauniformity, heat dissipation are calculated by our Engineers and extensive thermal SW modelling (Thermal Analysis l stability, linearity, spatial
+System-TAS) is made to verify the behaviour and achieve the highest reliability even in those demanding environments represented by high power lasers .
+Absorbing coatings are another important chapter in the head design. They have tofunction of the wavelength of use. Las face high damage thresholds as a erPoint has adopted various types of radiation absorbers, simulated by TAS and
+deposited with the latest technologies (e.g. plasma) under mechanical stresses.the tightest specifications, to resist extreme thermal and
+10W-Sensor Disk 5KW-Cronos
+Selecting a measurement system
+The selection of a measurement set-up is, in general, anspecifications for each of Laser Points heads and readout uni easy task. On the following pages you will find detailed ts that will help you in defining what is needed for your
+application. Of course there may be exceptions or special requirements: in those cases feel free to apply to our Engineers or
+Distributors for complete technical support. The first step in the selection is to look for a detector capable to match the power and/or energy specifications of the
+laser; the next is to select a monitor that meets with users requirements, e.g. haviapplication SW. ng a graphical display or an
+The entire working range has to be determined. The Powercan be detected with an optimum signal-to-noise ratio, while the or Energy Resolution represent the minimum values which Max Continuous Power or the Max Energy are the
+maximum values at which the detector can safely work with to make measurements at higher powers or energies, this cno time limits. Nevertheless, should there be the necessity an be done for a limited period of time, up to 1.5 times the
+max value (Intermittent Power Use).
+Verify if Absorber Type, Wavelength Range and Max Average Power/ Energy Densitylaser type; furthermore when working with short pulses (as is specs are consistent with the the case of various medical lasers or Q-switched Nd-Yags)
+and want to measure average power, attention has to be given to the selection of products whose absorbers,Max. Peak Power Density. LaserPoint has a wide like those working on the volume absorption principle, offer the highest
+damage resistance to short pulses.
+The Cooling type is another feature to look at; if bringing watecooled detectors which can be used. For example, our A-600 r to the head is a problem, there are convection or fan head can work at 600W continuously or dissipate 800W
+for a short period, but thats really a technological goal of LaserPoint thermal design. For higher powers water cooling is necessary.
+Finally, LaserPoints versatile and best-buy monitor PLUS orbe associated with any of LaserPoint detectors. industry favorite LPM are the user friendly meters to
+3
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Operating Principles of Thermal Heads
+This section describes the very basics on which LaserPoints sensors and detectors work .It is intended to introduce the laser user with terminology and principles which are repeatedly
+mentioned in the catalog and can be used as a help in choosing the power/ energy instrumentation.
+Thermal methods of measuring power and energy are those heat, thus creating a temperature rise in the absorber. The absorbed energy can then be measured by monitoring a in which radiant energy is absorbed and converted into
+temperature gradient between the hot area ( where the laser strikes) and a dissipated). This measurement can be done by means of cool area (where the generated heat is thermocouples arrays (thermopile). The temperature
+difference will generate a voltage at the end of each single thermototal voltage will be proportional to the incident power or energy. couple, so if the array is duly distributed, the resulting
+As the generated voltage depends on the temperature difference between the hot anthere is no influence of ambiend the cold areas it results that t temperature on the measurement.
+Thermal detectors exhibit an intrinsic high degree of linearcompensation for the minor drops in linearity occurring at response at the increase of power levels (linearity); a the working temperature extremes are made with the use of
+thermistors. Linearity of LaserPoints detectors, thanks to their optimised thermafor the W-1000 head as measured by PTB (Physikalisch-Tl design, is excellent: as an example, echnische Bundesanstalt) in the range between 60-1000W,
+it remains within +/-1 % without compensation.
+The generated heat all flows through the thermocouples, whether they deposited on circles
+(radial thermopiles) or linearly, with the hot and cold areas facing each other (axial thermopiles). Since the
+total signal is given by the sum of contributions from all thermocouples, the result is the independence from
+laser beam size and position
+The response time is determined the thermal resistances, the thermal capacities and, mostly, by the
+geometrical sizes of the sensor disks. The intrinsic response times of detectors is significantly reduced
+by appropriate acceleration algorithms in LaserPoints monitors. A detector like LaserPoints A-300, which
+has an intrinsic response time of 11 sec due to its very large area, displays the final power value only after 3.5
+sec.
+To dissipate the generated must be placed within a housing which, depending on heat a thermal sensor
+the amount of heat to be driven away, can work by simple convection, have electrical low voltage fans or
+be water cooled. So as the thermal contact between sensoverheating of the sensor and or and housing is very critical since it might generate instabilities in the signals, the final shape and dimensions of the heads must be carefully
+designed to maintain the sensor temperature within its working limits. An example of excellent thermal dimensioning is LaserPoints W-6000 head, which can safely work up to 9KW.
+4
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+A New Approach on Thermal Heads Design: the FIT Product Lines
+In some sections within this catalog heads are available for different applications : as laserprobes, where a Fit detectors are mentioned. These
+full product line bears the same Fit name and as detector heads for the PLUS monitor or the Laser Process Monitor LPM.
+Fit, acronym for Fast Integrative Thermopile, is a measurement technique of temperature dynamics throughout thermopile sensors
+developed by LaserPoint (Patented.) which led to a novel family of detectors. A dedicated algorithm converts sensors data into fast ,
+repeatable and precise readings. Fit detectors have provided a series of breakthroughs in laser
+measurement: infact, while keeping the advantages of thermopile detector heads (e.g. their use at any wavelength or their fast response
+times) , Fits need no water cooling even when working at several kilowatts, while still allow repeated measurements. As a laserprobe, no
+other similar instrument on the markprecise, before . et has ever been so repeatable and
+Fit detectors can be used in all those cases where availability of cooling water is an issue or when space is limited but ,above all, where
+long term laser power measurements are not necessary while quick, occasional checks are enough.
+In these cases the Fit detectors, either associated with a Plus monitor, an LPM or working as a standalone laserprobe, provide performance
+comparable to power meter measurements, at a real fraction of their cost.
+FIT-6000-H (6KW )- No Water Cooling
+Radiation Absorbers
+LaserPoint detectors can measure over the complete range of wavelengpower and hundreds of Joules of energy. It is thus evident tths interested by lasers, up to many kilowatts of hat there is a necessity to use many kinds of different
+absorbers to accommodate so many situations.
+A-Surface Absorbers- Surface absorbers consist in materials depositheat, like copper or aluminium. They are used for CW lasersed onto substrates that can easily transfer or other sources that emit long pulses (with duration
+>300µsec).Radiation is almost entirely absorbed within a thin materials and then released as heat which flows through the thermopile. layer by materials like special mattes or refractory
+Broadband Coatings : for low powers and general purpose applicatderived from astronomical research. The power density capability is limited to 200W/cmions LaserPoint utilizes a black coating (BBF)
+2
+advantages of a flat spectral response in the range 0.19-25µm, but has the important and the bearing of a very high absorptivity (> 96%) over
+the entire range. A general purpose hard coating (HCB) for more demanding applications is used by LaserPoint for mid power lasers. It
+can be used over a broad spectral band (0.25-11µm) asurfaces that reach a 97% absnd some sensors ( as the W-200) bear specially shaped orptivity by dumping the radiation with multiple bounces. This coating reaches
+2500W/cm
+2
+ at full power with 300W CW operation. At pulsed operatpulses. ions it can withstand up to 300J with long (msec)
+High Power Coatings: standard broadband absorbers can hardly withsthigh power industrial lasers. LaserPoint has developed new high density and better thermal conductivity coatings for and the disruptive situations generated by
+those demanding lasers. On LaserPoint heads from 1KW to 3KW the HPB absorbers can withstand 4KW/cm
+2
+in CW operations. for CO2
+LaserPoints HPI coating was developed for even more stringent withstands 5KW/cmsituations and is applied on the 6KW head; it
+2
+ at 10.6µm and works in the range 0.8-1.5µm-10.6µm.
+Excimer Coatings : LaserPoint has developed a very hard absorber with flat response in the range 190-400µm, ideal for its use with industrial Excimer lasers. It has also a remarkable high absorptivity at 10.6µm, so it may as well be used
+for CO2 lasers. The ridged substrate surface induces multipavailable levels on the market. In the UVle reflections that increase absorption to the highest the coating can withstand >0.3J/ cm
+2
+248nm and has a peak power density capability >20KW/cm, high repetition rate, nsec pulses at
+2
+.
+Coating Damages. The damage threshold is defined as the level atexceeding this value the absorber surfaces will visibly change which readings will change more than 1%. When colour and the head calibration has to be reconsidered if
+the damaged area is important compared to the overall. In necessary. Yet, as very often happens, there may be a bleach some cases a complete substitution of the sensor may be on the coating but no at all, or just negligible change in
+the readings: those colour changes are barely aesthetical and can be accepted without other interventions on the head.
+5
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+B-Volume Absorbers-
+Surface Absorber : Continuous Emission or Long Pulses (>500 µsec)
+Volume Absorber : Short Pulses (<500 µsec)
+Surface Absorber : Short Pulses (<500µsec )
+Laser beam Thermocouples Laser beam Thermocouples
+Cooling Cooling
+Light penetrates through within a thin layer of optically absorbingrefractory materials (10-40µm thick ) . Generated heat flows through Light penetrates within the same thin layer of opticall y
+substrate to thermocouples and cooling system.
+absorbing material, as previously shown . During the shortlaser pulse duration, a sudden amount of heat is generated
+but it cannot flow through substrate . Major damages toabsorbers may occur. Volume Absorbers offer far bette
+r
+performances .
+When heads with surface absorbers are used to measure lasers which deliver short time pulses ( lower than microseconds), heat has no time to flow and to be removed within the duration of the pulse length.
+Radiation remains deposited within in a thin surface layer where it generates a sudden material and where the excess of energy will often cause ablation. overheating of the absorbing
+In those cases the technology of volume absorption is used, where a gradual, exponential decrease of radiation intensity occurs as it penetrates into the material. Total absorptions are obtained over 0.5-2mm depths rather than few microns:
+the consequence is a better distribution of energy and a far lower local temperature increase.
+Various types of glasses and ceramics are used by LaserPo400nm) and the VIS-NIR (BB absorber from 400nm to int to cover the UV-C range (190-250nm) , the UV-A (250-3µm).Those absorbers can withstand peak powers of
+100GW/cm
+2 2
+ and energy densities up to 30J/cm .
+Laser beam Thermocouples
+Cooling
+Light penetrates and is absorbed by a thick layer of gradually absorbing materials (1-2mm thick) . Heat is generated within a volume and safely flows through substrate to
+thermocouples and cooling system. Volumeand high energies much better than surface absorbers. absorbers can measure very shortpulses
+Detector-to-Monitor Intelligent Interfacing
+Each detector head is a unique device and has its own specifications; for example, sensitivity or the voltage output per
+incident W or Joule of laser power or energy , is different from head to head. Its exact value is derived by calibration and calibration data
+have to be available to the readout unit to provide accurate readings. Other parameters, like response times, are also specific
+for a kind of head and the monitor must have those values to provide suitable speed-up of readings. These are examples of
+information that each readout unit must get, once a detector is linked. The question then arises on how to supply the monitors with
+additional, specific information,examples. like those mentioned in the
+6
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+All detectors manufactured by LaserPoint come with a DBparameter of detectors ar-15 connector that houses an E2PROM where all relevant e stored. Its LaserPoint Intelligent Identification System (IIS) : the detector automatically
+identifies itself to the monitor and stored data are supplied. The monitor knows whathead. to do, whether it is a 3W or a 6KW
+This technology has another advantage, with a relevant budget impact: all deteeasily interchanged with any of the monitors and one singlector heads from LaserPoint can be readout can be used with all detectors in the lab.
+Selecting a Power or Energy Measurement Solution
+Measuring power or energy can be done in many different ways majority of applications it is done by the commonly known and to obtain either basic or complex information. In the power/energy meters, by laser probes or OEM sensors. In
+each case the finality may the same (e.g. knowing the laser potheir consequent economical aspects. wer) but real, final needs may be very different, as well as
+A power/energy meter is made of a detector linked to a monitor via concerning the head. The monitor can work as a stand alona special connector, storing all relevant data e unit displaying the power/energy values and other
+information and can be connected to computers or chart recorders. Power/energy meters are high end instruments whose performances may vary with the number of features or
+complexity of the overall setup. Prices will follow accordingly . They are measurement means that they have to undergo to classes of precision, muinstruments, the which thing st have tight values of repeatability, need to be periodically
+re-calibrated (at least once a year) to trace their performance. For powers exceeding 100W the heads need an internal cooling system which could be a fan extracting heat from
+dissipating fins or water running through channels carved inwork continuously for long periods of time facing the laser to the head. This is because power/energy meters must beams, even many KWs, without problems. Their reliability
+and capacity to work indefinitely at the maximum powers or energies makes them the idealike: l instrument for applications
+-Measurement of laser or laser system stability -Alignment of laser cavity
+-Alignment of optical setups -Measurement of losses
+-Derive statistical information on laser behavior -Measure the power/energy ratio between 2 optical paths
+ Doing all this is only possible by the association of a properly cooled detector with a complex electronics which reads the row data and elaborates/displays the measurements. Once the measurement session is over, the equipment can be
+easily removed and used elsewhere, with another laser or system.
+This is not so with OEM detectors. OEM detectors use the same sensors of power/energy meters embedded in simplified housings; they respond to the need of laser manufactures (in the majority of cases) to have a continuous
+monitoring of their sources and are permanently fixed into the monitoring and not fine measurement: the associated electronilaser head or the laser machine. But we are now talking of cs is in general very simple and limited to convert the
+sensor output into a signal manageable by the laser control unit. The power/energy value is displayed, maybe after basic signal treatment (e.g. the speed-up of response time) but no significant elaboration is made. Measurements are
+accurate and repeatable but the display of information is usapplication , verify that set levels remain as fixed and no problems occur on the machine. ed to preset the power/energy levels necessary for an
+Laser Probes only read power. They make a measurement in a fixcontrols at the source exit, at the working area or ed time period and are used to make time-to-time before/after an optical component to check its losses.
+Probes simply tell which is the power level at the time of measurement, like a photo camerashot taken at a certain instant; on the c provides the picture of a ontrary power/energy meters can be imagined as movie or video cameras that
+show a real time and continuous evolution. For the above reasons probes cannot be used for alignments, monitoring of stability or provide statistical information
+which all require a continuous use . They are low cost devices and, until the introduction of LaserPoints Cronos and FIT series with their patented
+measurement and acquisition techniques, the market was onlyFIT offering poorly repeatable and precise instruments. and Cronos have been the real breakthrough in this kind of measurement with the reduction of reading time
+(lowered from 20 sec or more to 4sec and 8sec) , the possibility of making several measurements without cooling and the complete automatism of measurement which makes them independent from errors generated by wrong timings.
+All these innovations have now brought those probes to have performances comparable to power meters (e.g. the instruments have the same capacity of a power meter to repeat measurements with a ±1% error bar).FIT
+7
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+LP-EXPLORER: the Detector Finding Program
+On the web or on the CD ROM with your catalogue
+Our new EXPLORER program will let you find, in the easineeds. Just by entering the laser parameters EXPLORER will est way, the proper heads that meet your measurement calculate the power or energy densities specific for that
+beam. It will finally relate these values, together with the other laser data and available detectors, to define and display which heads, monitors and coatings can be used.
+EXPLORER can be either downloaded from the From the Catalog CD: go to Start>Run>X:\LP-Explorer\sweb or from the CD-ROM with your catalog. etup.exe (where X stays for the CD-rom drive number).Click OK
+and follow the instructions. After installation is completed, you may run the Explorer application from your desktop.
+Using the Explorer program is then all easy.
+Select
+There are a few initial steps to be performed before entering the 1) -specify the laser type: CW or Pulsed. beam parameters:
+2) -indicate the beam shape. Heads are chosen considering ththan the beam itself; infact, most of eir sensitive diameter always to be at least 16% larger times beam sizes are specified at 1/e
+2
+into account- available outside the nominal size. , leaving a lot of energy-which must be taken
+3)If Pulsed has been selected, the type of measurement to be performed has to program will find heads and monitors which will measure only thbe chosen, then: in Only Power the e average power. Vice versa, by selecting Power &
+Single Pulse Energy the program will decide which heads single pulse and average power; for a correct measuremen& monitors are available to measure both the energy of a t of avg power the repetition rate has to be > 3 Hz.
+4)The last selection to be done is the kind of desired product: if the applicatialignments, the necessity of making statistics on measured values, etc then chose Power & Energy Meter. If the on involves long term measurements, laser
+application is only a periodic check of laser power, then a  LaserProbe is probably what better fits your needs.
+8
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Input Beam Parameters, Explore and Reset Data keys
+In this frame youll need to enter your beam data with the appropriate measurement units.
+For a CW laser you will only need to insert Beam Diameter, Wavelength and Max Power.
+For a Pulsed laser it is necessary toand Max Energy. Once all boxes have been filled , just click on the add Pulse Width, Repetition Rate
+Explore key to obtain all information . If another type of measurement has to be done, e.g. at another
+wavelength, you can refresh the screen by clicking on the Reset Data key
+LP Explorer Results Panel
+Derived Beam Parameters
+This frame shows several important calculated beam parametersyet exhaustive, picture of your beam . derived from your input data and will give a synthetic,
+Available Heads& Coatings, Damage Threshold at:
+All detectors that fit with specifications for your beam parameters are shown anseparately listed in their various versiod, to simplify selection, head types are ns of coatings or absorbers. Aside the head model is reported the corresponding
+level of risk of damage for that coating/ absorber when subject to the inserted laser parameters. This value is expressed as a % of the damage threshold.
+It will undoubtedly result that some detectors may be closer to the damage threshold than others : always prefer a head which is below the 50% of damage threshold. This will put the coating on the safe side from hot spots and compensate
+from laser modes.
+9
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+To proceed on your selection you may single click on each head model to open the Power/Energy Resolution with Monitor  frame; a double click will open a pdf file showing both specifications and a mechanical outlook for each head
+of interest. Some additional selection criteria are more personal and depend on the way the head will be used or the kind of
+application; for example LaserPoint manufactures a series of periods. They are the heads with double code (e.g. the compact heads designed to work intermittently or for short A-40/200 series) which can extend their measurement range,
+repeatedly but intermittently, These heads have a temperature sensor and , when associated with PLUS/ LPM monitors , can be used until a COOL message is displayed
+.
+Power/Energy Resolution with Monitor
+This frame displays another important information which has to be taken into account when selecting a detector: the power or energy resolution provided by a complete measurement setup. Resolution depends on the noise of both
+monitor and head and can be seen as the least value which can be read having a practical meaning. Whenever a monitor is then available for the selected detectors ( if not, a n.a.. is displayed), the box underneath each
+monitor model reports the achievable resolution. Always consider what the frame reports, both for determining which monitor has to be used, but mostly to be aware of
+the real minimum values ( at least 10 times the resolution) of Power/ Energy which can be read.
+Coating and Absorber Curves Characteristics
+The program also lists the absorption and damage threshold Once you have selected a head with its coating or absorber, you curves for coating and absorbers used by LaserPoint . may click on the side key to visualize , as pdf files, the
+complete performance of the coating/ absorber itself. This additional check can be very useful if the head is intended to be used at other wavelengths or with different pulse
+lengths.
+ Print
+ To print a hard copy of the screen, just click on the Print Key
+Updates
+The latest version of the LP-Explorer is available for downloading at any time from the LaserPoint website at http://www.laserpoint.it/
+10
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+ Calibrations at Laser Point
+NIST and PTB Traceability
+Sensitivity , or the voltage signal delivered by a detector as a function of striking laser power or energy, is different fordetector to detector for different reasons one of which is m the spectral response of absorbing coatings: the percentage of
+absorbed radiation is never 100% at any wavelength, but isSensitivity undoubtedly depends also on a lower value which changes with the wavelength itself . manufacturing variables but it also happens that power and energy meters
+change their properties with time, as environmental factors  an optimum performance. usage in particular-, degrade or damage parts critical for
+In order to grant precise measurement accuracy, LaserPoint to the highest level of accuracy, with traceability to the supplies each of his instruments calibrated before delivery National Institute of Standards and Technology (NIST)
+Laboratoriesin Boulder, Colorado (USA) and the Physicalisch-Technische Bundesanstalt (PTB)All LaserPoint detectors are subject to this Nist and PTB tracea in Berlin (Germany). ble calibrations and a Certificate, reporting the list of
+NIST/ PTB standards and instruments used in the caTo ensure that accuracy and performances of laser power libration procedure, is supplied to prove it. and energy meters remain intact over the time, a regular
+schedule of calibration and preventive maintenance is needed. An industry standardcan be shipped back at LaserPoint where, at a modest fee, is to recalibrate once a year: units a general check-up and recalibration of the detector will be
+done .
+Calibration Capabilities in LaserPoint
+LaserPoint owns a number of laser sources which are used for in-house calibration ; these sources cover
+powers up to 300W and include pulsed lasers. LaserPoint furthermore relies on contracts for the use of
+multikilowatt lasers and other sources with nearby Scientific Institutes for tests and calibrations at high
+powers. A number of detector heads, calibrated by the
+wavelength at NIST and PTB, are used as Standards for calibration procedures.
+To trace linearity even at high power levels , heads have been calibrated over their entire working range up to >
+1KW for CO2 and 300W for Yag. All measurements, made by PTB and NIST, show high linearity of
+LaserPoint detectors and that their behaviour is well within standard specifications (3%).
+On the wavelength range 250-1100nm LasePoint can optionallytraceable spectroradiom supply calibrations at any wavelength based on NIST eter measurements.
+PTB Linearity Measurements for W-1000
+Measured Power (W)
+1000
+800
+600
+400
+200
+0 02004006008001000
+Ref. Power (W)
+Wavelength 532nm 633 nm980nm1064nm1064nm 10.6microns
+Type
+CW CWPulsed +CWPulsedCW CW
+11
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Laser Power and Energy Heads
+How to read products ID code and select a detector head
+To ease and speed up your selection we have assembled codes you to complete these codes adding the type of measurement and the wavelength of calibration . The complete code that synthetically describe the detectors; we just ask
+, to be used when asking for quotes or when ordering, is then straightforward and gives an accurate, synthetic and a no-doubt description of the heads and the way it is going to be used , which helps LaserPoint to serve you better and
+faster .
+Head codes , as you will find on the catalogue or given by the LP Explorer, report a string which synthesizes the head basic features :
+1-Firstly we identify the cooling type. A stays for air cooling (which can either be by convection or forced: please check on the single head specs ); W stays
+for water cooling. 2-Then we identify the full scale power (e.g. 200 means that the head can withstand up to 200W).
+Some of the new heads have a double code separated by a / . (withstand many times the max nominal power, in case of short term use. egg 40/200) : those are heads with sensors capable to
+In these cases the first digits identify the maximum power on continuous operation; the lattewhen the head is used for a limited period . r digits report the max power
+3-The sensitive Diameter (DXX) is also displayed.Some detectors may have the same power but different acceptance areas as they have been developed for different applications. Chose which fits better for your case remembering that
+nominal beam diameters are always given to include the 86% (1/e
+2
+4- The last digits show which coatings or absorbers types ) of the beam energy. Real beams are larger ! available for each type of head. Sometimes more than one
+coating is available for that head. Select the model with the most suitabany doubt refer to coating specificationsle coating for your application: egg or take advantage of the LP Explorer HCB. For .
+The following are the additional information we ask you to add: 5- Measurement Mode : detectors can be configured to work as Power Meters (P), as energy meters (E) or both (P+E).
+When constructing the code, specify which are the measurement modes of your necessity : e.g.6-Calibration Wavelength :select from the tables in the Ordering In -E formation the kind of available calibration
+wavelengths and add it to the code: e.g. -VIS
+Example of a Complete Code:
+A-40/200-D40-HPB-P-Y
+Calibration Wavelen g ht:Y ( Nd.Ya g)
+Measurement Mode:P ( Power onl y)
+Coatin g T yp e:HPB ( Hi g h Power Broadband )
+Sensitive Dia: 40mm
+Max. Pwr. Lon g Term :40 W /Max. Pwr. Limited Period:200 W
+A irCooling
+12
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Surface Absorber Heads for CW and Long Pulse Lasers
+ Quick Reference Tables
+-Models up to 6000W for industrial lasers -Sensitive thermopile sensors for power detection down to 100µW
+and energy to 2mJ -High resistant coatings : up to 6KW/cm
+2
+power at the maximum rated
+-Energy damage threshold up to 250J/cm
+2
+-Energy measurement up to 200 joules -EMI rejection
+-NISTand PTB (Physikalisch-Technische Bundesanstalt) traceability
+Max
+Energy Useful
+Power Range Intermittent Spectral Range Features
+Head Code
+Range Aperture
+Power (2 min)
+Low power
+100µW - 200mW s.
+A-02-D12-BBF A-02-D12-HCB 0.19-25µm convection cooled
+10µW - 20mW*
+n.a. n.a. Ø12mm
+0.25-11µm
+ 1mW - 2W*
+*by Optional Plug-In
+convection cooled
+A-3-D10-BBF 1mW-3W n.a. 15mJ-3J Ø12mm 0.19-25µm
+convection cooled
+A-10-D12-HCB 10mW - 10W 15W 50mJ - 10J Ø12mm 0.25-11µm
+A-10-D20-BBF A-10-D20-HCB 0.19-25µm convection cooled
+10mW-10W 15W 50mJ - 10J Ø 20mm
+0.25-11µm
+A-40-D25-BBF A-40-D25-HCB 0.19-25µm convection cooled
+10mW - 40W 60W 200mJ - 40J Ø25mm
+0.25-11µm
+convection cooled
+A-40-D40-HPB 10mW - 40W 60W 200mJ - 40J Ø 40mm 0.25-11µm
+convection cooled
+A-40/200-D25-HPB 100mW - 40W 200W 1 J - 200J Ø25mm 0.25-11µm
+convection cooled
+A-40/200-D40-HPB 100mW - 40W 200W 1 J - 200J Ø40mm 0.25-11µm
+convection cooled
+A-40/200-D60-HPB 100mW - 40W 200W 1 J - 200J Ø60mm 0.25-11µm
+Medium Power
+A-200-D25-HPB 100mW - 200W 250W 1 J - 200J Ø25mm 0.25-11µm fan cooled
+A-200-D40-HPB 100mW - 200W 250W 1 J - 200J Ø40mm 0.25-11µm fan cooled
+A-200-D60-HPB 100mW - 200W 250W 1 J - 200J Ø60mm 0.25-11µm fan cooled
+W-200-D40-HPB 100mW - 200W 300W 1J - 200J Ø40mm 0.25-11µm water cooled
+A-300-D60-HCB 100mW - 300W 450W 1.5 J - 300J Ø60mm 0.25-11µm fan cooled
+A-600-D40-HPB 200mW - 600W 800W 3 J - 600J Ø40mm 0.25-11µm fan cooled
+W-600-D30-HPB 100mW - 600W 800W 3 J - 600J Ø30mm 0.25-11µm water cooled
+High Power
+W-1500-D40-HPB 1W - 1500W 2250W n.a. Ø40mm 0.25-11µm water cooled
+W-3000-D55-HPB 1W - 3000W 4500W n.a. Ø55mm 0.25-11µm water cooled
+W-6000-D55-HPI 10W - 6000W 9000W n.a. Ø55mm 0.8-1,5µm - 10.6µm water cooled
+13
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Use for the Following Applications,
+These Detectors Can Be Associated with :
+Long Term Power Monitoring Laser Alignment
+Measurement of Laser Stability Statistical Information on Laser Beam:
+Plus : see specs on the Displays, Controls and
+-Min & Max Value -Standard Deviation Software section of this
+-Average catalog
+Long Pulse Measurements
+Fields
+Surgery Ophthalmology
+Cutting Welding
+Trimming Marking
+Engraving UV Machining
+Lithography Hair Removal
+LPM : see specs on the Displays, Controls and
+ Software section of this catalog
+PLUS-SOFT and LPM-SOFTsee specs on the :
+Displays, Controls and Software section of this
+catalog
+and Sources
+He-Cd Argon Ion
+Krypton Ion Diode Lasers
+Dye Lasers CO2
+Nd-Yag (CW and Long Pulses) Copper Vapors
+ IPL (Intense Pulsed Light)
+14
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Specifications A-Low Power Series
+200mW :Standard
+A-02-D12-BBF A-02-D12-HCB Max. Continuous Power :
+20mW or 2 W by Optional Plug-In *
+TYPICAL LASERS: Power Resolution: 100µW at 200mW f.s. 10µW at 20mW f.s.
+ 1mW at 2W f.s.- (with Plus Monitor)
+Ion Lasers (Ar
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating, Broadband
+Ø52.5 73.5
+Ø12
+Wavelength Range : 0.19 - 25µm (a) (BBF) 0.25 - 11µm (a) (HCB)
+2; 2
+Max. Average Power Density : 200 W/cm (BBF); HCB: 2000 W/cm
+80-120 Adj.
+10
+Max. Energy Density on Pulsed Beams: See Absorption and Damage Thresholds Graphs for Specific Coating
+100 75
+Calibration Accuracy (%): ±3%
+Response Time with Display (0 - 90%): 3 sec.
+Linearity : ±1% (b)
+NEP(Noise Equivalent Power) : 20 µW at 200mW f.s.
+2 µW at 20mW f.s.
++ + 200 µW at 2 W f.s.
+, Kr Diode )
+Diode Arrays Dye
+He-Ne
+FEATURES:* High Resolution to 10W
+* 10W 2000mW or 5mJ 2000mJ * Very High sensitivity
+* Low noise * Insensitive to beam position
+Sensitive Diameter : 12mm
+Cooling: Convection (Thermally Stabilized)
+Notes: ( * ) Optional Plug-In Modules to be ordered
+separately:
+- Mod. AD20 for 20mW full scale
+- Mod. AD2000 for 2W full scale
+a. Calibrated up to 10.6µm.
+b. Detector centrally irradiated @ 50% of
+useful surface
+Max. Continuous Power : 3 W
+A-3-D12-BBF
+Max. Energy : 3 J (long pulses)
+Power Resolution: 1mW (with Plus Monitor)
+Energy Threshold : 15 mJ
+Ø40 67,5
+Ø12
+Available Absorber Types : BBF:Broadband, flat responsivity
+Wavelength Range : 0.19 - 25µm (a) (BBF)
+2;
+Max. Average Power Density : 200 W/cm (BBF);
+80-120 Adj.
+10
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+100 75
+Calibration Accuracy (%): ±3%
+Response Time with Display (0 - 90%): 3 sec.
+TYPICAL LASERS:
++ +
+Linearity : ±1% (b)
+Ion Lasers (Ar , Kr Diode )
+Diode Arrays Dye
+NEP(Noise Equivalent Power) : 0.25 mW
+Sensitive Diameter : 12mm
+FEATURES: Cooling: Convection (Thermally Shielded on Low Power)
+* Average Power & Single Pulse * 1mW 3W or 7mJ 3J
+* High sensitivity * Low noise
+* Insensitive to beam position
+a. Calibrated up to 10.6µm.
+Notes: b. Detector centrally irradiated @ 50% of
+useful surface
+15
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 10 W
+A-10-D12-HCB
+Intermittent Power Use: 15W (b)
+55 54
+Power Resolution: 10mW (with Plus Monitor)
+Max. Energy : 10 J (long pulses)
+55
+Energy Threshold : 50 mJ
+Ø12 Available Absorber Types: HCB:Hard Coating, Broadband
+87,5-127,5 Adj.
+Wavelength Range : 0.25 11µm (a)
+10
+2
+Max. Average Power Density : HCB: 2000 W/cm
+100 75
+See Absorption and Damage
+Max. Pulse Energy Density:
+Thresholds Graphs
+TYPICAL LASERS:
+Calibration Accuracy (%): ±3%
+ Laser Diodes Diode Arrays
+CO2 Medical Dye
+High Power Ion Lasers
+Response Time with Display (0 - 90%): <1 sec.
+Linearity : ±1% (c)
+NEP(Noise Equivalent Power) : 0.5 mW
+Sensitive Diameter : 12mm
+FEATURES: * Average Power & Single Pulse
+* 10mW  15W or 25mJ  10J * High sensitivity
+* Small size * Fast response time
+Cooling: Convection
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface
+Max. Continuous Power : 10 W
+A-10-D20-BBF A-10-D20-HCB
+Intermittent Power Use: 15W (b)
+Power Resolution: 10mW (with Plus Monitor)
+55 54
+Max. Energy : 10 J (long pulses)
+Energy Threshold : 50 mJ
+55
+Available Absorber Types: BBF:Broadband, flat responsivity HCB:Hard Coating, Broadband
+Ø20
+87,5-127,5 Adj.
+0.19 - 25µm (a) (BBF)
+10
+Wavelength Range :
+0.19 - 11µm (a) (HCB)
+2 2
+Max. Average Power Density : BBF:200 W/cm ; HCB: 2000 W/cm
+100 75
+See Absorption and Damage Thresholds
+Max. Pulse Energy Density:
+TYPICAL LASERS:
+Graphs
+Diode Lasers Diode Arrays
+CO2 Medical Dye
+Copper Vapor
+Calibration Accuracy (%): ±3%
+Response Time with Display (0 - 90%): <1 sec.
+Linearity : ±1% (b)
+NEP(Noise Equivalent Power) : 0.75 mW
+FEATURES: * Average Power & Single Pulse
+*10mW  15W or 25mJ  10J * High sensitivity
+* Wide spectral range
+Sensitive Diameter : 20mm
+Cooling: Convection
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface
+16
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 40 W
+A-40-D25-BBF A-40-D25-HCB
+Intermittent Power Use: 60W (b)
+Power Resolution: 10mW (with Plus Monitor)
+Max. Energy : 40 J (long pulses)
+100 55
+Energy Threshold : 200 mJ
+Available Absorber Types . BBF:Broadband, flat responsivity HCB:Hard Coating, Broadband
+100
+0.19 - 25µm (a) (BBF)
+Wavelength Range :
+110-150 Adj. Ø25
+0.19 - 11µm (a) (HCB)
+10
+2 2
+Max. Average Power Density : BBF:200 W/cm ; HCB: 2000 W/cm
+100 75 See Absorption and Damage Thresholds
+Max. Pulse Energy Density:
+Graphs
+TYPICAL LASERS:
+Calibration Accuracy (%): ±3%
+CO2 Yag(CW or long pulse)
+Diode Arrays Diode Lasers
+Response Time with Display (0 - 90%): <1 sec.
+Linearity : ±1% (b)
+NEP(Noise Equivalent Power) : 5 mW
+FEATURES:
+Sensitive Diameter : 25mm
+* Average Power & Single Pulse
+* 10mW  60W or 100m J  40J Cooling: Convection
+* Convection Cooled * Wide Spectral range
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface
+Max. Continuous Power : 40 W
+A-40-D40-HPB
+Intermittent Power Use: 60W (b)
+100 55
+Power Resolution: 10mW (with Plus Monitor)
+Max. Energy : 40 J (long pulses)
+100
+Energy Threshold : 200 mJ
+Available Absorber Types : HPB: High Power Broadband
+110-150 Adj. Ø40
+Wavelength Range : 0.25  11µm (a)
+10
+2
+Max. Average Power Density : HPB: 4 KW/cm @CO2
+100 75
+See Absorption and Damage
+Max. Pulse Energy Density:
+Thresholds Graphs
+TYPICAL LASERS:
+Calibration Accuracy (%): ±3%
+CO2 Yag(CW or long pulse)
+Diode Arrays Diode Lasers
+Response Time with Display (0 - 90%): <1 sec.
+Linearity : ±1% (b)
+NEP(Noise Equivalent Power) : 5 mW
+FEATURES: * Average Power & Single Pulse
+*10mW  60W or* Convection Cooled 100m J  40J
+* Wide Spectral range
+Sensitive Diameter : 40mm
+Cooling: Convection
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface
+17
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 40 W
+A-40/200-D25-HPB
+Intermittent Power Use: 200W (b)
+100 55 Power Resolution: 100mW (with Plus Monitor)
+Max. Energy : 200 J (long pulses)
+Energy Threshold : 1J
+100
+Available Absorber Types : HPB: High Power Broadband
+110-150 Adj. Ø25
+Wavelength Range : 0.25  11µm (a)
+10
+2
+Max. Average Power Density : HPB: 4 KW/cm @CO2
+100 75 See Absorption and Damage
+Max. Pulse Energy Density:
+Thresholds Graphs
+Calibration Accuracy (%): ±3%
+TYPICAL LASERS:
+CO2 Response Time with Display (0 - 90%): 1 sec.
+Yag(CW or long pulse) Diode Arrays
+Diode Lasers
+Linearity : ±1% (b)
+NEP(Noise Equivalent Power) : 20 mW
+Sensitive Diameter : 25mm
+FEATURES: * Average Power & Single Pulse
+* 100mW  200W or 0.25 J  200J * Convection Cooled
+* Wide Spectral range
+Cooling: Convection
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface
+Max. Continuous Power : 40 W
+A-40/200-D40-HPB
+Intermittent Power Use: 200W (b)
+100 55
+Power Resolution: 100mW (with Plus Monitor)
+Max. Energy : 200 J (long pulses)
+100
+Energy Threshold : 1 J
+Available Absorber Types : HPB: High Power Broadband
+110-150 Adj. Ø40
+10
+Wavelength Range : 0.25  11µm (a)
+2
+Max. Average Power Density : HPB: 4 KW/cm @CO2
+100 75
+See Absorption and Damage
+Max. Pulse Energy Density:
+Thresholds Graphs
+TYPICAL LASERS:
+Calibration Accuracy (%): ±3%
+CO2 Yag(CW or long pulse)
+Diode Arrays Diode Lasers
+Response Time with Display (0 - 90%): 1 sec.
+Linearity : ±1% (b)
+NEP(Noise Equivalent Power) : 20 mW
+FEATURES: * CW, Average Power & Single Pulse
+* 100mW  200W or 0.25 J  200J * Convection Cooled
+* Wide Spectral Range
+Sensitive Diameter : 40 mm
+Cooling: Convection
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of useful surface
+18
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 40 W
+A-40/200-D60-HPB
+Intermittent Power Use: 200W (b)
+100 55
+Power Resolution: 100mW (with Plus Monitor)
+Max. Energy : 200 J (long pulses)
+100
+Energy Threshold : 1 J
+Available Absorber Types : HPB: High Power Broadband
+110-150 Adj. Ø60
+10
+Wavelength Range : 0.25  11µm (a)
+2
+Max. Average Power Density : HPB: 4 KW/cm @CO2
+100 75
+See Absorption and Damage
+Max. Pulse Energy Density:
+Thresholds Graphs
+TYPICAL LASERS:
+CO2 Yag(CW or long pulse)
+Diode Arrays Diode Lasers
+IPL Calibration Accuracy (%): ±3%
+Response Time with Display (0 - 90%): 1 sec.
+Linearity : ±1% (b)
+NEP(Noise Equivalent Power) : 20 mW
+FEATURES: * Average Power & Single Pulse
+* 100mW  200W or 0.25 J  200J * Convection Cooled
+* Wide Spectral Range Sensitive Diameter : 60mm
+Cooling: Convection
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface
+B-Mid Power Series
+Max. Continuous Power : 200 W
+W-200-D40-HPB
+Intermittent Power Use: 300W (b)
+33
+Ø40 Power Resolution: 100mW (with Plus Monitor)
+Max. Energy : 200 J (long pulses)
+Ø90
+Energy Threshold : 1J
+Available Absorber Types : HPB: High Power Broadband
+106-146 Adj.
+Wavelength Range : 0.25  11µm (a)
+2
+Max. Average Power Density : HPB: 4 KW/cm @CO2
+100 10 75
+See Absorption and Damage
+Max. Pulse Energy Density:
+Thresholds Graphs
+TYPICAL LASERS:
+Calibration Accuracy (%): ±3%
+CO2 Yag(CW or long pulse)
+Diode Arrays Diode Lasers
+Response Time with Display (0 - 90%): 1 sec.
+Linearity : ±1% (b)
+NEP(Noise Equivalent Power) : 20 mW
+FEATURES: *Average Power & Single Pulse
+* 100mW  300W or 0.25J- 200J * Slim size
+* Water Cooled
+Sensitive Diameter : 40 mm
+Cooling: water:1.5 lit/min ( @ 22 C)
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface
+19
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 200 W
+A-200-D25-HPB
+Intermittent Power Use: 250 W (b)
+100 82
+Power Resolution: 100mW (with Plus Monitor)
+Max. Energy : 200 J (long pulses)
+100
+Energy Threshold : 1 J
+Available Absorber Types : HPB: High Power Broadband
+110-150 Adj. Ø25
+10
+Wavelength Range : 0.25  11µm (a)
+2
+Max. Average Power Density : HPB: 4 KW/cm @CO2
+100 75
+See Absorption and Damage Thresholds
+Max. Pulse Energy Density:
+TYPICAL LASERS: Graphs
+CO2 Yag(CW or long pulse)
+Diode Arrays Diode Lasers
+Calibration Accuracy (%): ±3%
+Response Time with Display (0 - 90%): 1 sec.
+Linearity : ±1% (b)
+FEATURES: * Average Power & Single Pulse NEP(Noise Equivalent Power) : 20 mW
+* 100mW  250W or 0.25J  200J * Fan Cooled
+* Wide Spectral Range
+Sensitive Diameter : 25mm
+Cooling: Forced Air (d)
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface d. Power supply (110VAC/220VAC)
+included for internal 5W, 12VDC fan
+Max. Continuous Power : 200 W
+A-200-D40-HPB
+Intermittent Power Use: 250 W (b)
+100 82
+Power Resolution: 100mW (with Plus Monitor)
+Max. Energy : 200 J (long pulses)
+100 Energy Threshold : 1J
+Available Absorber Types : HPB: High Power Broadband
+110-150 Adj. Ø40
+Wavelength Range : 0.25  11µm (a)
+10
+2
+Max. Average Power Density : HPB: 4 KW/cm @CO2
+100 75 See Absorption and Damage Thresholds
+Max. Pulse Energy Density:
+Graphs
+Calibration Accuracy (%): ±3%
+TYPICAL LASERS:
+CO2 Yag(CW or long pulse) Response Time with Display (0 - 90%): 1 sec.
+Diode Arrays Diode Lasers
+Linearity : ±1% (b)
+NEP(Noise Equivalent Power) : 20 mW
+Sensitive Diameter : 40mm
+FEATURES: * Average Power & Single Pulse
+* 100mW  250W or 0.25J  200J * Fan Cooled
+* Wide Spectral Range
+Cooling: Forced Air (d)
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface d. Power supply (110VAC/220VAC)
+included for internal 5W, 12VDC fan
+20
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 200 W
+A-200-D60-HPB
+Intermittent Power Use: 250 W (b)
+100 82
+Power Resolution: 100mW (with Plus Monitor)
+Max. Energy : 200 J (long pulses)
+100
+Energy Threshold : 1J
+Available Absorber Types : HPB: High Power Broadband
+110-150 Adj. Ø60
+10
+Wavelength Range : 0.25  11µm (a)
+2
+Max. Average Power Density : HPB: 4 KW/cm @CO2
+100 75
+See Absorption and Damage Thresholds
+Max. Pulse Energy Density:
+Graphs
+TYPICAL LASERS:
+Calibration Accuracy (%): ±3%
+CO2 Yag(CW or long pulse)
+Diode Arrays Diode Lasers
+IPL
+Response Time with Display (0 - 90%): 1 sec.
+Linearity : ±1% (b)
+NEP(Noise Equivalent Power) : 20 mW
+Sensitive Diameter : 60mm
+FEATURES: * Average Power & Single Pulse
+* 100mW  250W or 0.25J  200J * Fan Cooled
+* Wide Spectral Range
+Cooling: Forced Air (d)
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface d. Power supply (110VAC/220VAC)
+included for internal 5W, 12VDC fan
+Max. Continuous Power : 300 W
+A-300-D60-HCB
+Intermittent Power Use: 450 W (b)
+Power Resolution: 100mW (with Plus Monitor)
+122 127
+Max. Energy : 300 J (long pulses)
+122 Energy Threshold : 1.5 J
+Available Absorber Types : HCB: Hard Coating, Broadband
+Wavelength Range : 0.25  11µm (a)
+2
+Ø60 81-345 Adj.
+Max. Average Power Density : 2.0 KW/cm
+See Absorption and Damage Thresholds
+200 120
+Max. Pulse Energy Density:
+Graphs
+Calibration Accuracy (%): ±3%
+TYPICAL LASERS:
+Response Time with Display (0 - 90%): 3.5 sec.
+Large or Expanded Beams CO2
+Yag(CW or long pulse) Diode Arrays
+Diode Lasers IPL
+Linearity : ±1% (b)
+NEP(Noise Equivalent Power) : 28 mW
+Sensitive Diameter : 60mm
+Cooling: Forced Air (d)
+FEATURES: * Average Power & Single Pulse
+* 100mW  450W or 400 m J 300J * Very Large Area a. Calibrated up to 10.6µm. b. 2 minutes max
+* Fan Cooled Notes: c. Detector centrally irradiated @ 50% of
+useful surface d.Power supply (110VAC/220VAC) included
+for internal 5W, 12VDC fan
+21
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 600 W
+W-600-D30-HPB
+Intermittent Power Use: 800 W (b)
+Power Resolution: 100mW (with Plus Monitor)
+33
+Ø30
+Max. Energy : 600 J (long pulses)
+Ø90
+Energy Threshold : 3 J
+Available Absorber Types : HPB: High Power Broadband
+106-146 Adj.
+Wavelength Range : 0.25  11µm (a)
+2
+Max. Average Power Density : CO2: 4 KW/cm
+100 10 75
+See Absorption and Damage
+Max. Pulse Energy Density:
+Thresholds Graphs
+Calibration Accuracy (%): ±3%
+TYPICAL LASERS:
+High Power CO2 High Power Yag Response Time with Display (0 - 90%): 3.5 sec.
+Diode Lasers
+Linearity : ±1% (b)
+NEP(Noise Equivalent Power) : 75 mW
+FEATURES: * Avg Power &Single Pulse
+* 100mW  800W or0.7J - 500J * Large Area
+* Water Cooled
+Sensitive Diameter : 30mm
+Cooling: water: 3 lit/min ( @ 22 C) )(d)
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface d. Admissible rate of Temp. variation
+<1C/min
+Max. Continuous Power : 600 W
+A-600-D40-HPB
+Intermittent Power Use: 800 W (b)
+122 127
+Power Resolution: 100mW (with Plus Monitor)
+Max. Energy : 600 J (long pulses)
+122
+Energy Threshold : 3 J
+Available Absorber Types : HPB: High Power Broadband
+Ø40 81-345 Adj. Wavelength Range : 0.25  11µm (a)
+2
+Max. Average Power Density : CO2: 4 KW/cm
+200 120
+See Absorption and Damage Thresholds
+Max. Pulse Energy Density:
+Graphs
+TYPICAL LASERS:
+Calibration Accuracy (%): ±3%
+High Power CO2 High Power Yag
+Diode Lasers
+Response Time with Display (0 - 90%): 3.5 sec.
+Linearity : ±1% (b)
+FEATURES: NEP(Noise Equivalent Power) : 80 mW
+* Average Power &Single Pulse * 200mW  800W or 0.7J - 500J
+* Large Area * Fan Cooled
+Sensitive Diameter : 40 mm
+Cooling: Forced Air (d)
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface d.Power supply (110VAC/220VAC) included
+for internal 5W, 12VDC fan
+22
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+C-High Power Series
+Max. Continuous Power : 1500 W
+W-1500-D40-HPB
+Intermittent Power Use: 2250 W (b)
+56 Power Resolution: 1W (with Plus Monitor)
+Available Absorber Types : HPB: High Power Broadband
+Wavelength Range : 0.25  11µm (a)
+Ø115 2
+Max. Average Power Density : CO2: 4 KW/cm
+Calibration Accuracy (%): ±5%
+Ø40
+100-345 Adj.
+Response Time with Display (0 - 90%): 2 sec.
+200 120 Linearity : ±1% (b)
+NEP(Noise Equivalent Power) : 128 mW
+TYPICAL LASERS:High Power CO2
+High Power Yag Diode Lasers
+FEATURES: * CW Power
+* 1 W  2250W * Water Cooled
+* Large Area * High Power Coating
+Sensitive Diameter : 40mm
+Cooling: water: 4 lit/min ( @ 22 C)
+a. Calibrated for CO2, YAG and Diode
+Notes:
+Lasers.
+b. 2 minutes max
+c. refer to coating curve for power density
+values
+d. Detector centrally irradiated @ 50% of
+useful surface
+e. Admissible rate of Temp. variation
+<1C/min
+Max. Continuous Power : 3000W
+W-3000-D55-HPB
+Intermittent Power Use: 4500 W (b)
+55
+Power Resolution: 1W (with Plus Monitor)
+Available Absorber Types : HPB: High Power Broadband
+Wavelength Range : 0.25  11µm (a)
+Ø148
+2
+Max. Average Power Density : CO2: 4 KW/cm
+Ø55
+Calibration Accuracy (%): ±5%
+121-345 Adj.
+Response Time with Display (0 - 90%): 2.5 sec.
+200 120
+Linearity : ±1% (b)
+ TYPICAL LASERS:High Power CO2
+HighPower Yag Diode Lasers NEP(Noise Equivalent Power) : 226 mW
+FEATURES: * CW Power
+* 1W  4500W * Water Cooled
+* Large Area * High Power Coating
+Sensitive Diameter : 55mm
+Cooling: water: 5 lit/min ( @ 22 C)
+a. Calibrated for CO2, YAG and Diode
+Notes:
+Lasers.
+b. 2 minutes max
+c. refer to coating curve for power density
+values
+d. Detector centrally irradiated @ 50% of
+useful surface
+e. Admissible rate of Temp. variation
+<1C/min
+23
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 6000W
+W-6000-D55-HPI
+Intermittent Power Use: 9000 W (b)
+55
+Power Resolution: 10W (with Plus Monitor)
+Available Absorber Types : HPI: High Power Infrared
+Wavelength Range : 0.8-1,5µm - 10.6µm (a)
+Ø148
+2
+Max. Average Power Density : CO2: 6 KW/cm (c)
+Ø55 Calibration Accuracy (%): ±5%
+121-345 Adj.
+Response Time with Display (0 - 90%): 2.5 sec.
+200 120
+Linearity : ±1% (b)
+ TYPICAL LASERS:High Power CO2 NEP(Noise Equivalent Power) : 500 mW
+High Power Yag Diode Lasers
+FEATURES: * CW Power
+* 10W  9000W * Water Cooled
+* Large Area * Very High Power Infrared Coating
+Sensitive Diameter : 55mm
+Cooling: water: 8 lit/min ( @ 22 C)
+a. Calibrated for CO2, YAG and Diode
+Notes:
+Lasers.
+b. 2 minutes max
+c. refer to coating curve for power density
+values
+d. Detector centrally irradiated @ 50% of
+useful surface
+e. Admissible rate of Temp. variation
+<1C/min
+24
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+ Absorption and Damage Threshold Curves General Absorption Curves
+BBF
+HCB
+HPB
+ HPI
+Absorption (%)
+110
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0 0.1110100
+Wavelength (microns)
+ Pulse Ener gy Ratin g s and Dama g e Thresholds
+Damage
+)
+2
+BBF
+HCB
+HPB
+Energy Density ( J/cm
+HPI
+Safe Operation
+10000
+1000
+100
+10
+1
+0.1
+0.011E-91E-81E-71E-61E-51E-41E-31E-21E-11E+0
+Pulse Width(s)
+Notes: Ratings of power and energy densities vary with beam shape, beam diameter and effectively applied powers or energies.On HCB coating some bleach-which will not influence calibration-may occur above 2KW/cm2
+25
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Options
+Plug-In Modules for 20mW or 2W full scales
+These modules, when plugged to the smart connectors of Laser Points A-02-D12-BBF/ A-02-D12-HCB heads, reduce the heads full
+scale to 20mW, allowing readings with 10 scale to 2W, allowing readings with 1mW resolution. µW resolution, or brings full
+The A-02-D12-BBF/ A-02-D12-HCBof these 2 optional modules, will beco heads, with the simple addition me the most versatile tool for
+low power measurements . Mod
+AD20 is for 20mW f.s.
+Mod.AD2000 is for 2W f.s.
+26
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Ordering Information
+Code
+Item (please add all codes when ordering)
+CW thermopile head up to 200mW (20 mW and 2W full scale with additional
+A-02-D12-BBF
+Adapters) -12 mm aperture- flat responsivity from 0.19 to 40 mm -air cooled + Light
+A-02-D12-HCB
+duty stand
+Lower Power Optional Plug-In Module for A-02-D12-BBF/ A-02-D12-HCB:
+when connected to headssmart connector allows measurements to 20mW full AD20
+scale
+Higher Power Optional Plug-In Module for A-02-D12-BBF/ A-02-D12-HCB:
+when connected to heads smart connector allows measurements to 2W full AD2000
+scale
+CW thermopile head up to 3 W- 10mm aperture -air cooled + Light duty stand A-3-D10-BBF
+CW thermopile head up to 10W-12 mm aperture -air cooled + Light duty stand A-10-D12-HCB
+Small area thermopile head up to 10W-20mm aperture -air cooled + Light duty A-10-D20-BBF
+stand A-10-D20-HCB
+CW thermopile head up to 40 W 25mm aperture-air cooled + Light duty stand A-40-D25-BBF
+A-40-D25-HCB
+CW thermopile head up to 40 W 40mm aperture-air cooled + Light duty stand A-40-D40-HPB
+CW thermopile head up to 40 W (200W 2min) 25mm aperture-air cooled + Light
+A-40/200-D25-HPB
+duty stand
+CW thermopile head up to 40 W (200W 2min) 40mm aperture-air cooled + Light
+A-40/200-D40-HPB
+duty stand
+CW thermopile head up to 40 W (200W 2min) 60mm aperture -air cooled + Light
+A-40/200-D60-HPB
+duty stand
+CW thermopile head up to 200 W-40mm aperture + Light duty stand -water cooled W-200-D40-HPB
+CW thermopile head up to 200W-25mm aperture - forced air cooling + Light duty
+A-200-D25-HPB
+stand
+CW thermopile head up to 200W-40mm aperture - forced air cooling + Light duty
+A-200-D40-HPB
+stand
+CW thermopile head up to 200W-60mm aperture - forced air cooling + Light duty
+A-200-D60-HPB
+stand
+Large Area thermopile head up to 300W-60mm aperture -forced air cooling +
+A-300-D60-HCB
+Heavy duty stand and base
+Large Area thermopile head up to 600W-30mm aperture -water cooling + Heavy
+W-600-D30-HPB
+duty stand and base
+Large Area thermopile head up to 600W-40mm aperture -forced air cooling +
+A-600-D40-HPB
+Heavy duty stand and base
+CW thermopile head up to 1500 W-40mm aperture - water cooling + Heavy duty
+W-1500-D40-HPB
+stand & base plate
+CW thermopile head up to3000 W-55mm aperture - water cooling + Heavy duty
+W-3000-D55-HPB
+stand & base plate
+CW thermopile head up to 6000 W-55mm aperture - water cooling + Heavy duty
+W-6000-D55-HPI
+stand & base plate
+Measurement Mode
+Power Measurement, only -P
+Energy Measurement, only -E
+Power & Energy -PE
+Calibration Wavelengths:
+1064 nm (standard) -Y
+10.6 µm(standard) -C
+355 nm (on request) -UV
+632 nm (on request) -VIS(632)
+532nm (on request) -VIS(532)
+908nm (on request) -LD
+Example of Complete Code : A-40-D25-HCB-VIS-P
+27
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Excimer Absorber Heads for Pulsed Lasers
+Quick Reference Tables
+-Models up to 600W for high power industrial excimer lasers -Large Area Detectors to 60 mm
+-Sensitive thermopile sensors for power detection down to 15mW -The highest resistant coatings for UV : up to 20MW/cm
+2
+0.5J/cm and
+2
+-EMI rejection -NISTand PTB (Physikalisch-Technische Bundesanstalt) traceability
+(1)
+Power Range Max. Peak Powe r Energy Useful
+(2) (3) Spectral Range Features
+Head Code
+Density Range Aperture
+convection cooled
+2
+A40-D25-EX 10mW - 60W 70MW/cm 200mJ - 40J Ø25mm 0.19-0.4µm (10.6µm)
+convection cooled
+2
+A40-D40-EX 10mW - 60W 70MW/cm 200mJ - 40J Ø40mm 0.19-0.4µm (10.6µm)
+convection cooled
+2
+A40/200-D40-EX 100mW - 200W 70MW/cm 1 J - 200J Ø40mm 0.19-0.4µm (10.6µm)
+convection cooled
+2
+A40/200-D60-EX 100mW - 200W 70MW/cm 1 J - 200J Ø40mm 0.19-0.4µm (10.6µm)
+2
+A-200-D40-EX 100mW - 250W 70MW/cm 1 J - 200J Ø40mm 0.19-0.4µm (10.6µm) fan cooled
+2
+A-200-D60-EX 100mW - 250W 70MW/cm 1 J - 200J Ø60mm 0.19-0.4µm (10.6µm) fan cooled
+2
+A300-D60-EX 100mW  450W 70MW/cm 1.5 J - 350J Ø60mm 0.19-0.4µm (10.6µm) fan cooled
+2
+A600-D40-EX 100mW -800W 70MW/cm 3 J -600J Ø40mm 0.19-0.4µm (10.6µm) fan cooled
+NOTE: (1) Max Values for (2) -UV, with 4 nsec pulses Intermittent Power Use
+ (3) - Max. Values with long pulses
+Use for the Following Applications,
+These Detectors Can Be Associated with :
+Average Power from High Power Excimer Lasers
+Long Term Power Monitoring Measurement of Laser Stability
+Statistical Information on Laser Beam:
+Plus : see specs on the Displays, Controls and
+ Software section of this catalog
+-Min & Max Value -Standard Deviation
+-Average
+Fields
+ Marking (glass, cables, polymers, etc.)
+ Laser Ablation and Annealing  Lithography
+ Flat Panel Display  Nozzles (fuel injection, inkjet, glass)
+ Dermatology  Refractive Surgery
+LPM : see specs on the Displays, Controls and
+ Software section of this catalog
+and Sources
+ Excimers @ 190nm, 258nm, 351nm  Tea Lasers
+ Copper Vapors
+PLUS-SOFT and LPM-SOFTsee specs on the :
+Displays, Controls and Software section of this
+catalog
+28
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+ Specifications
+Max. Continuous Power : 40 W
+A-40-D25-EX
+Intermittent Power Use: 60W (b)
+Power Resolution: 10mW (with Plus Monitor)
+100 55
+Max. Energy : 40 J (long pulses)
+Energy Threshold : 200 mJ
+100
+Available Absorber Types . Excimer absorber
+Wavelength Range : 0.19-0.4µm, 10.6µm (a)
+110-150 Adj. Ø25
+10
+2
+Max. Average Power Density : 2 KW/cm
+See Absorption and Damage
+100 75 Max. Pulse Energy Density:
+Thresholds Graphs
+TYPICAL LASERS: Calibration Accuracy (%): ±3%
+Excimers Copper Vapor
+Co2 TEA NdYag @ 3
+Response Time with Display (0 - 90%): <1 sec.
+Linearity : ±1% (b)
+th th
+ and 4
+NEP(Noise Equivalent Power) : 5 mW
+FEATURES: * Average Power & Single Pulse
+* 10mW  60W or 100 mJ  40J * Large Area Sensitive Diameter : 25mm
+* Hard Excimer Coating
+Cooling: Convection
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface
+Max. Continuous Power : 40 W
+A-40-D40-EX
+Intermittent Power Use: 60W (b)
+100 55
+Power Resolution: 10mW (with Plus Monitor)
+Max. Energy : 40 J (long pulses)
+100
+Energy Threshold : 200 mJ
+Available Absorber Types . Excimer absorber
+110-150 Adj. Ø40
+Wavelength Range : 0.19-0.4µm, 10.6µm (a)
+10
+2
+Max. Average Power Density : 2 KW/cm
+100 75
+See Absorption and Damage
+Max. Pulse Energy Density:
+Thresholds Graphs
+TYPICAL LASERS:
+Calibration Accuracy (%): ±3%
+Excimers Copper Vapor
+Co2 TEA NdYag @ 3
+Response Time with Display (0 - 90%): <1 sec.
+th th
+Linearity : ±1% (b)
+ and 4
+NEP(Noise Equivalent Power) : 16 mW
+FEATURES: * Average Power & Single Pulse
+* 10mW  60W or 100mJ  40J * Large Area
+* Hard Excimer Coating
+Sensitive Diameter : 40mm
+Cooling: Convection
+a.Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface
+29
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 40 W
+A-40/200-D40-EX
+Intermittent Power Use: 200W (b)
+100 55
+Power Resolution: 100mW (with Plus Monitor)
+Max. Energy : 200 J (long pulses)
+100 Energy Threshold : 1 J
+Available Absorber Types . Excimer absorber
+110-150 Adj. Ø40
+Wavelength Range : 0.19-0.4µm, 10.6µm (a)
+10
+2
+Max. Average Power Density : 2 KW/cm
+100 75
+See Absorption and Damage
+Max. Pulse Energy Density:
+Thresholds Graphs
+TYPICAL LASERS:
+Calibration Accuracy (%): ±3%
+Excimers Copper Vapor
+Co2 TEA NdYag @ 3
+Response Time with Display (0 - 90%): <1 sec.
+Linearity : ±1% (b)
+th th
+ and 4
+NEP(Noise Equivalent Power) : 20 mW
+Sensitive Diameter : 40mm
+FEATURES: * Average Power & Single Pulse
+* 100mW  200W or 250mJ  200J * Convection Cooled
+*Hard Excimer Coating
+Cooling: Convection
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface
+Max. Continuous Power : 40 W
+A-40/200-D60-EX
+Intermittent Power Use: 200W (b)
+Power Resolution: 100mW (with Plus Monitor)
+100 55
+Max. Energy : 200 J (long pulses)
+Energy Threshold : 1J
+100
+Available Absorber Types . Excimer absorber
+110-150 Adj. Ø60
+Wavelength Range : 0.19-0.4µm, 10.6µm (a)
+10
+2
+Max. Average Power Density : 2 KW/cm
+100 75
+See Absorption and Damage
+Max. Pulse Energy Density:
+Thresholds Graphs
+TYPICAL LASERS:
+Calibration Accuracy (%): ±3%
+Excimers Copper Vapor
+Co2 TEA NdYag @ 3
+Response Time with Display (0 - 90%): <1 sec.
+Linearity : ±1% (b)
+th th
+ and 4
+NEP(Noise Equivalent Power) : 20 mW
+FEATURES: * Average Power & Single Pulse
+* 100mW  200W or 250m J  200J * Convection Cooled Sensitive Diameter : 60mm
+*Hard Excimer Coating
+Cooling: Convection
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of useful
+surface
+30
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 200 W
+A-200-D40-EX
+Intermittent Power Use: 250W (b)
+Power Resolution: 100mW (with Plus Monitor)
+100 82
+Max. Energy : 200 J (long pulses)
+Energy Threshold : 1 J
+100
+Available Absorber Types . Excimer absorber
+110-150 Adj. Ø40 Wavelength Range : 0.19-0.4µm, 10.6µm (a)
+10
+2
+Max. Average Power Density : 2 KW/cm
+See Absorption and Damage Thresholds
+100 75
+Max. Pulse Energy Density:
+Graphs
+TYPICAL LASERS:
+Calibration Accuracy (%): ±3%
+Response Time with Display (0 - 90%): 1 sec.
+Excimers Copper Vapor
+Co2 TEA NdYag @ 3
+Linearity : ±1% (b)
+th t
+h
+NEP(Noise Equivalent Power) : 20 mW
+ and 4
+Sensitive Diameter : 40mm
+FEATURES: * Average Power & Single Pulse
+* 100mW  250W or 250 mJ  200J * Fan Cooled
+*Hard Excimer Coating
+Cooling: Forced Air (d)
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface d. Power supply (110VAC/220VAC) included
+for internal 5W, 12VDC fan
+Max. Continuous Power : 200 W
+A-200-D60-EX
+Intermittent Power Use: 250W (b)
+100 82
+Power Resolution: 100mW (with Plus Monitor)
+Max. Energy : 200 J (long pulses)
+100
+Energy Threshold : 1 J
+Available Absorber Types . Excimer absorber
+110-150 Adj. Ø60
+10
+Wavelength Range : 0.19-0.4µm, 10.6µm (a)
+2
+Max. Average Power Density : 2 KW/cm
+100 75
+See Absorption and Damage Thresholds
+Max. Pulse Energy Density:
+Graphs
+TYPICAL LASERS:
+Calibration Accuracy (%): ±3%
+Excimers Copper Vapor
+Co2 TEA NdYag @ 3
+Response Time with Display (0 - 90%): 1 sec.
+Linearity : ±1% (b)
+th th
+ and 4
+NEP(Noise Equivalent Power) : 20 mW
+FEATURES: * Average Power & Single Pulse
+* 100mW  250W or 250mJ  200J * Fan Cooled
+*Hard Excimer Coating
+Sensitive Diameter : 60mm
+Cooling: Forced Air (d)
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface d. Power supply (110VAC/220VAC) included
+for internal 5W, 12VDC fan
+31
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 300 W
+A-300-D60-EX
+Intermittent Power Use: 450W (b)
+122 127
+Power Resolution: 100mW (with Plus Monitor)
+Max. Energy : 300 J (long pulses)
+122
+Energy Threshold : 1.5 J
+Available Absorber Types . Excimer absorber
+Wavelength Range : 0.19-0.4µm, 10.6µm (a)
+Ø60 81-345 Adj.
+2
+Max. Average Power Density : 2 KW/cm
+200 120
+See Absorption and Damage Thresholds
+Max. Pulse Energy Density:
+Graphs
+Calibration Accuracy (%): ±3%
+TYPICAL LASERS:
+Excimers Copper Vapor
+Co2 TEA NdYag @ 3 Response Time with Display (0 - 90%): 3.5 sec.
+Linearity : ±1% (b)
+th th
+ and 4
+NEP(Noise Equivalent Power) : 28 mW
+Sensitive Diameter : 60mm
+FEATURES: * Average Power & Single Pulse
+* 100mW  450W or 400m J- 300J * Very Large Area
+* Fan Cooled
+Cooling: Forced Air (d)
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface d.Power supply (110VAC/220VAC) included
+for internal 5W, 12VDC fan
+Max. Continuous Power : 600 W
+A-600-D40-EX
+Intermittent Power Use: 800W (b)
+Power Resolution: 100mW (with Plus Monitor)
+122 127
+Max. Energy : 600 J (long pulses)
+122 Energy Threshold : 3 J
+Available Absorber Types . Excimer absorber
+Wavelength Range : 0.19-0.4µm, 10.6µm (a)
+Ø40 81-345 Adj. 2
+Max. Average Power Density : 2 KW/cm
+See Absorption and Damage Thresholds
+200 120
+Max. Pulse Energy Density:
+Graphs
+TYPICAL LASERS:
+Calibration Accuracy (%): ±3%
+Response Time with Display (0 - 90%): 3.5 sec.
+Excimers Copper Vapor
+Co2 TEA NdYag @ 3
+Linearity : ±1% (b)
+th th
+NEP(Noise Equivalent Power) : 80 mW
+ and 4
+Sensitive Diameter : 40mm
+FEATURES: * Average Power &Single Pulse
+* 100mW  800W or 700mJ - 600J * Large Area
+* Fan Cooled
+Cooling: Forced Air (d)
+a. Calibrated up to 10.6µm. b. 2 minutes max
+Notes: c. Detector centrally irradiated @ 50% of
+useful surface d.Power supply (110VAC/220VAC) included
+for internal 5W, 12VDC fan
+32
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+ Absorption and Damage Threshold Curves General Absorption Curves
+EXC
+Absorption %
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0 0.1110
+Wavelength (microns)
+Pulse Energy Ratings and Damage Thresholds
+EXC
+)
+Damage
+Energy Density (J/cm2
+Safe Operation
+10000
+1000
+100
+10
+1
+0.11E-101E-81E-61E-41E-21E+0
+Pulse Width (s)
+33
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+ Ordering Information
+Code
+Item (please add all codes when ordering)
+CW thermopile head with excimer coating up to 40 W 25mm aperture-air A-40-D25-EX
+cooled + Light duty stand
+CW thermopile head with excimer coating up to 40 W 40mm aperture-air A-40-D40-EX
+cooled + Light duty stand
+CW thermopile head with excimer coating up to 40 W (200W 2min) A-40/200-D40-EX
+40mm aperture-air cooled + Light duty stand
+CW thermopile head with excimer coating up to 40 W (200W 2min) A-40/200-D60-EX
+60mm aperture -air cooled + Light duty stand
+CW thermopile head with excimer coating up to 200W-40mm aperture - A-200-D40-EX
+forced air cooling + Light duty stand
+CW thermopile head with excimer coating up to 200W-60mm aperture - A-200-D60-EX
+forced air cooling + Light duty stand
+Large Area thermopile head with excimer coating up to 300W-60mm A-300-D60-EX
+aperture -forced air cooling + Heavy duty stand and base
+Large Area thermopile head with excimer coating up to 600W-40mm A-600-D40-EX
+aperture -forced air cooling + Heavy duty stand and base
+Measurement Mode
+Power Measurement, only -P
+Energy Measurement, only -E
+Power & Energy -PE
+Calibration Wavelengths:
+355nm (standard) -UV
+10.6 µ(standard) -C
+Example of Complete Code : A-40-EX-P-UV
+34
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+ Volume Absorber Heads for Pulsed Lasers
+Quick Reference Tables
+-Designed for High Peak Power Lasers - Avg.Power and Single Shot Energy Measurement
+-High damage volume absorbers : *peak power damage thresholds to 100GW/cm
+2
+*energy damage thresholds to 4J/cm
+2
+-Energy measurement up to 10 joules with nsec pulses with nsec pulses
+-NIST and PTB (Physikalisch-Technische Bundesanstalt) traceability
+Max
+Max
+Max. Avg Max. Peak Energy
+Head Energy
+Power Power Power Energy Density Spectral
+Density Aperture Features
+Code
+Range Density Density Range Single Range
+Rep. Pulse
+(W/cm2) (GW/cm2) Pulse
+(J/cm2)*
+ (J/cm2)*
+Convect.
+10UVC-D25 10mW-10W 40 0.1 25mJ-10J 0.9 9 Ø25mm 0.19-0.25µm
+cooled
+Convect.
+10UVA-D25 10mW-10W 9 0.1 25mJ-10J 0.4 4 Ø25mm 0.25-0.4µm
+cooled
+Convect.
+10BB-D25 10mW-10W 35 100 25mJ-10J 1 10 Ø25mm 0.4-5.2µm
+cooled
+Convect.
+20UVC-D40 10mw- 20W 40 0.1 200mJ-20J 0.9 9 Ø40mm 0.19-0.25µm
+cooled
+Convect.
+20UVA-D40 20mW-20W 9 0.1 200mJ-20J 0.4 4 Ø40mm 0.25-0.4µm
+cooled
+Convect.
+20BB-D40 20mW- 20W 35 100 200mJ-20J 1 10 Ø40mm 0.4-5.2µm
+cooled
+NOTE: ratings are wavelength dependent. *Values for nsec pulses
+Use for the Following Applications,
+These Detectors Can Be Associated with :
+Single Shot Energy Measurement Average Power from Repeatedly Pulsed Lasers
+Statistical Information on Laser Beam: -Min & Max Value
+-Standard Deviation -Average
+Plus : see specs on the Displays, Controls and
+ Software section of this catalog
+Fields
+Photolithography Resistor Trimming Marking
+Micro machining Microelectronics
+Photo deposition Laser Cleaning
+Micro welding Dentistry
+Plastic Surgery Ophtalmology
+Angioplastry
+LPM : see specs on the Displays, Controls and
+ Software section of this catalog
+and Sources
+PLUS-SOFT and LPM-SOFTsee specs on the :
+Displays, Controls and Software section of this
+catalog
+Nd-Yag (up to 4th ) Nd-YFL
+Diode and DPY Erbium
+Holmium DUV Excimer
+Flashlamps
+35
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Specifications
+Max. Continuous Power : 10 W
+10-UVC-D25
+Intermittent Power Use: 15 W (a)
+Ø25 98
+Power Resolution: 10mW
+Max Energy- Single Pulse: 10 J
+Ø60
+Energy Resolution: 10 mJ( with PLUS Monitor)
+90-130 Adj. Energy Threshold 25 mJ ( with PLUS Monitor)
+10
+Absorber Type: UV-C: Volume
+Wavelength Range : 0.19-0.25 µm
+100 75
+2
+Max. Average Power Density : 40 W/cm
+2
+Max Peak Power Density: 0.1 GW/cm
+TYPICAL LASERS:
+2
+KrF Max Energy Density-Repetitive Pulses: 0.9 J/cm (b)
+KrCl AgF
+ArF
+2
+Max Energy Density-Single Pulse: 9 J/cm (b)
+NEP(Noise Equivalent Power) : ±250 µW
+Calibration Accuracy (%): ± 3%
+FEATURES:
+* Average Power & Single Pulse * 10 mW  10W or25mJ  10J Response Time with Display (0 -90%): 3 sec.
+* Very High Sensitivity * Low Noise
+* DUV Volume Absorbers
+Linearity : ±1%
+Sensitive Diameter : 25mm
+Cooling: Convection
+a. 2 minutes max
+Notes:
+b. Ratings are wavelength dependent; refer
+to absorber curve for energy density values
+Max. Continuous Power : 10 W
+10-UVA-D25
+Intermittent Power Use: 15 W (a)
+Power Resolution: 10mW
+Ø25 98
+Max Energy- Single Pulse: 10 J
+Ø60
+Energy Resolution: 10 mJ( with PLUS Monitor)
+Energy Threshold 25 mJ ( with PLUS Monitor)
+90-130 Adj.
+Absorber Type: UV-A: Volume
+10
+Wavelength Range : 0.25-0.4 µm (a)
+2
+Max. Average Power Density : 9 W/cm
+100 75
+2
+Max Peak Power Density: 0.1 GW/cm
+2
+Max Energy Density-Repetitive Pulses: 0.4 J/cm (c)
+TYPICAL LASERS Nd-Yag @3:
+rd th 2
+ and 4 Nd-Glass @3
+Max Energy Density-Single Pulse: 4 J/cm (c)
+rd th
+ and 4 XeCl
+XeF
+NEP(Noise Equivalent Power) : ±250 µW
+Calibration Accuracy (%): ± 3%
+Response Time with Display (0-90%): 3 sec.
+FEATURES:
+Linearity : ±1%
+* Average Power & Single Pulse * 10mW  10W or 25mJ  10J
+* Very High Sensitivity * Low Noise
+* UV Volume Absorbers
+Sensitive Diameter : 25mm
+Cooling: Convection
+a. 2 minutes max
+Notes:
+b. Ratings are wavelength dependent; refer
+to absorber curve for energy density values
+36
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 10 W
+10-BB-D25
+Intermittent Power Use: 15 W (a)
+Power Resolution: 10mW
+Ø25 98
+Max Energy- Single Pulse: 10 J
+Ø60
+Energy Resolution: 10 mJ( with PLUS Monitor)
+Energy Threshold 25 mJ ( with PLUS Monitor)
+90-130 Adj.
+Absorber Type: BB: Broadband-Volume
+10
+Wavelength Range : 0.4-5.2 µm (a)
+2
+Max. Average Power Density : 35 W/cm
+100 75
+2
+Max Peak Power Density: 100 GW/cm
+2
+Max Energy Density-Repetitive Pulses: 1 J/cm (c)
+TYPICAL LASERS:
+2
+Yag-1st & 2nd Ruby
+Alexandrite Holmium
+Erbium Max Energy Density-Single Pulse: 10 J/cm (c)
+NEP(Noise Equivalent Power) : ±250 µW
+Calibration Accuracy (%): ± 3%
+Response Time with Display (0 - 90%): 3 sec.
+FEATURES: Linearity : ±1%
+* Average Power & Single Pulse * 10mW  10W or 25 mJ  10J
+* Very High Sensitivity * Broadband absorber to mid-IR
+Sensitive Diameter : 25mm
+Cooling: Convection
+a. Calibrated for YAG and Diode Lasers.
+Notes:
+b. 2 minutes max
+c. Ratings are wavelength dependent; refer to
+absorber curve for energy density values
+Max. Continuous Power : 20 W
+20-UVC-D40
+Intermittent Power Use: 30 W (a)
+Power Resolution: 10mW
+100 55
+Max Energy- Single Pulse: 20 J
+Energy Resolution: 10 mJ( with PLUS Monitor)
+100
+Energy Threshold 200 mJ ( with PLUS Monitor)
+Absorber Type: UV-C: Volume
+110-150 Adj. Ø40
+10
+Wavelength Range : 0.19-0.25 µm
+2
+Max. Average Power Density : 40 W/cm
+100 75
+2
+Max Peak Power Density: 0.1 GW/cm
+2
+Max Energy Density-Repetitive Pulses: 0.9 J/cm (b)
+TPICAL LASERS:
+2
+KrF KrCl
+AgF ArF Max Energy Density-Single Pulse: 9J/cm (b)
+NEP(Noise Equivalent Power) : ±250 µW
+Calibration Accuracy (%): ± 3%
+Response Time with Display (0 - 90%): 3 sec.
+FEATURES:
+* Average Power & Single Pulse * 10mW  20W or 200 mJ  20J
+* Very High Sensitivity * Low Noise
+* DUV Volume Absorbers Linearity : ±1%
+Sensitive Diameter : 40mm
+Cooling: Convection
+a. 2 minutes max
+Notes:
+b. Ratings are wavelength dependent; refer to
+absorber curve for energy density values
+37
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 20 W
+20-UVA-D40
+Intermittent Power Use: 20 W (a)
+100 55
+Power Resolution: 10mW
+Max Energy- Single Pulse: 20 J
+100
+Energy Resolution: 10 mJ( with PLUS Monitor)
+Energy Threshold 200 mJ ( with PLUS Monitor)
+110-150 Adj. Ø40
+10 Absorber Type: UV-A: Volume
+Wavelength Range : 0.25-0.4 µm (a)
+100 75
+2
+Max. Average Power Density : 9 W/cm
+2
+Max Peak Power Density: 0.1 GW/cm
+TYPICAL LASERS:
+2
+rd th Max Energy Density-Repetitive Pulses: 0.4 J/cm (b)
+Nd-Yag @3 and 4 Nd-Glass @3
+rd th 2
+ and 4 XeCl Max Energy Density-Single Pulse: 4 J/cm (b)
+XeF
+NEP(Noise Equivalent Power) : 4 mW
+Calibration Accuracy (%): ± 5%
+FEATURES:
+Response Time with Display (0 - 90%): 3 sec.
+* Average Power & Single Pulse * 10 mW  20W or 200 mJ  20J
+* Very High Sensitivity * Low Noise
+* UV Volume Absorbers
+Linearity : ±1% (c)
+Sensitive Diameter : 40mm
+Cooling: Convection
+a. 2 minutes max
+Notes:
+b. Ratings are wavelength dependent; refer to
+absorber curve for energy density values
+c. Detector centrally irradiated @ 50% of useful
+surface
+Max. Continuous Power : 20 W
+20-BB-D40
+Intermittent Power Use: 30 W (a)
+Power Resolution: 10mW
+100 55
+Max Energy- Single Pulse: 20 J
+Energy Resolution: 10 mJ( with PLUS Monitor)
+100
+Energy Threshold 200 mJ ( with PLUS Monitor)
+Absorber Type: BB: Broadband-Volume
+110-150 Adj. Ø40
+10
+Wavelength Range : 0.4-5.2 µm (a)
+2
+Max. Average Power Density : 35 W/cm
+100 75
+2
+Max Peak Power Density: 100 GW/cm
+2
+Max Energy Density-Repetitive Pulses: 1 J/cm (c)
+TYPICAL LASERS:
+2
+Yag-1st & 2nd Ruby Max Energy Density-Single Pulse: 10 J/cm (c)
+Alexandrite Holmium
+Erbium
+NEP(Noise Equivalent Power) : 4 mW
+Calibration Accuracy (%): ± 2%
+Response Time with Display (0 - 90%): 3 sec.
+FEATURES:
+Linearity : ±1% (d)
+*Average Power & Single Pulse *10mW - 20W or 200rmJ - 20J
+* Very high sensitivity *Broadband absorber to mid-IR
+Sensitive Diameter : 40mm
+Cooling: Convection
+a. Calibrated for YAG and Diode Lasers.
+Notes:
+b. 2 minutes max
+c. Ratings are wavelength dependent; refer to
+absorber curve for energy density values
+d. Detector centrally irradiated @ 50% of
+useful surface
+38
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+ Absorption and Damage Threshold Curves General Absorption Curves
+BB
+)
+UVC
+UVA
+Absorption ( %
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0 100100010000
+Wavelength (nm)
+Pulse Energy Ratings and Damage Thresholds
+BB
+Damage
+UVA
+UVC
+Energy Density (J/cm2)
+Safe Operation
+100
+10
+11E-101E-91E-81E-71E-61E-51E-41E-31E-21E-11E+0
+Pulse Width (s)
+Note:Ratings are wavelength dependent. Reported values are for single pulses: ratings to be sensitivelylowered in case of repetitive pulses.
+39
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+ Ordering Information
+Code
+Item (please add all codes when ordering)
+Energy and power head up to10 W+ Light duty stand -air cooled 10UVC-D25
+Energy and power head up to 10W+ Light duty stand -air cooled 10UVA-D25
+Energy and power head up to 10 W+ Light duty stand -air cooled 10BB-D25
+Energy and power head up to 20 W+ Light duty stand -air cooled 20UVC-D40
+Energy and power head up to 20 W+ Light duty stand -air cooled 20UVA-D40
+Energy and power head up to 20 W Light duty stand -air cooled 20BB-D40
+Measurement Mode
+Power Measurement, only -P
+Energy Measurement, only -E
+Power & Energy -PE
+Calibration Wavelengths:
+355nm (standard) -UV
+1064 nm(standard) -Y
+532nm (on request) -VIS
+908nm (on request) -LD
+Example of Complete Code : 10BB-D25-P-LD
+40
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Applications of Power and Energy Heads
+Measurement of long term stability
+Long term verification of stability , necessary for example for placing a power meter head , e.g. associated to the the final validation of a laser source, is made by directly PLUS monitor, in front of the laser. The main screen of
+PLUSSOFT shows the long term behaviour of up to 12 hours. low alarm thresholds . Plus and PlusSoft also have the possibility to set hi and
+Laser
+Alignment of laser cavities
+Alignments require continuous tweaking of cavity mirrors: during these actions values change very quickly and understanding whether tuning is improving or not need a proper tool. Digital displays, with their fast running numbers are
+very un-easy; on the contrary, analog displays with their moviBargraphs are of great help to provide an immediate feng needle require a lot of attention to catch the value. eling of the direction of alignment, like in LaserPoint PLUS:, to
+have a fast perception of tuning direction at the same time maintaining the possibility to read the reached value.
+Alignment of optical set-ups
+Laser
+Optical losses can be introduced by a number of reasons, likdamaged components; more often a sensitive the non correct angular positioning of elements or by e decrease of throughput can be reached by misalignments or simply by
+summing individual losses of optical components. A power/correct alignments and verification of losses, optimisesenergy meter positioned along the beam path, permitting yield and efficiency of the optical system.
+Laser
+Measurement of losses
+Verification of reflectivity, transmission and losses of beam splitters, filters and other optical elements can be done by inserting a power/energy meter in front or behind the component. Dynamic changes, like modification of behaviour or
+performances under the action of temperature variations, can be also monitored.
+T
+Laser
+R
+41
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Statistical measurements of laser or laser machine behaviour
+Statistical measurements are used for monitoring quality asreferences heads bearing a pects of a source, a laser machine or set-up. Having for NIST (National Institute for Standard and Technology) and PTB (Physikalisch-Technische
+Bundesanstalt) traceable calibration , data can be used for internal files, for quality reports, can be added to manuals or given to customers. All relevant statistical information as Current Value, Min &Max Values, Average, RMS Stability,
+Standard Deviation are supplied by the PLUSoft on measurement periods as long as required. For easiest handling, all statistical data can be transferred and saved on files or printed
+Laser
+42
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+ Displays, Controls and Software
+Selecting a meter for the application
+The first step in defining a measurement system is to choose the detector needed for a specific application. The following step is the meter selection which may be based on the following three basic considerations:
+a)-where the meter is going to be used. For example, if the operator is a his time in the field, then he needs fully portservice engineer who spends most of able and rugged equipment for quantitative measurements and
+laser alignment. Laser Points PLUS is the small, battery operated meter designed for those applications. A different case is when the laser machine needs an internal monitoring system which will be used to verify
+the constancy of preset parameters, to predict maintenance of beamapplications the tool is the Laser Process Monitor ( LPM) line components etc. For these
+b)-which are the needed additional features . If the requirement is the use of a power meter for the final validation of a laser system before its delivery to the customer, it may be then necessary to do advanced
+statistical analysis .Laser Points PLUS-SOFT or LPM-SOFT powerful analysis software extend measurement capabilities
+c)-foresee future developments . Perhaps in a near future a new laseCompany and the necessity to use different heads, e.r machine will be purchased in the g. for high and low powers, will arise. The PLUS
+offers this possibility, since it mates with all LaserPoint detectors, via its IIS (IntelThe following at-a-glance table wligent Identification System) ill help in a first selection.
+Features & Capabilities PLUS LPM-OEM LPM-CE
+Power, Energy,Heads OEM Laser Probes Power, Energy,Heads OEM Laser Probes Power, Energy,Heads OEM Laser Probes
+Detectors
+Data Display LCD Screen Machines PLC Machines PLC
+RS-232 or USB0-2V Analog Out RS-232, 0-10V and 4-20mA Analog Out RS-232, 0-10V and 4-20mA Analog Out
+Outputs
+Y(on PLUS-SOFT screen) Y(on LPM-SOFT screen and 220V-10A Alarm Relay) Y(on LPM-SOFT screen and 220V-10A Alarm Relay)
+Process Alarms
+Wavelenght Selection Y N N
+Y (digital and on PLUS-SOFTscreen) Y (digital and on LPM-SOFTscreen) Y (digital and on LPM-SOFTscreen)
+Tuning Function
+User's Calibration
+Y Y Y
+Capability
+0.1mW-10KW 1mJ-300J 0.1mW-10KW 1mJ-300J 0.1mW-10KW 1mJ-300J
+Min/Max. Full Scales
+Dimensions 150x105x45mm 260x100x110m 305x160x70mm
+Operation Battery and 12VDC 220VAC and 110VAC 220VAC and 110VAC
+43
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Laser Power and Energy Meter: the PLUS
+The PLUS model is a meter for advanced power and energy measurement that mates to all LaserPoint detectors via a proprietary Intelligent Interface System (IIS )connection. It is
+sufficient to plug the head connector into the meter port to get a calibrated instrument, already configured for the measurement. One of the great advantages
+of the IIS connection is that , should a new head be added to the lab equipment or to the system, the existing monitor can be used with that new head; in other
+words any Laserpoint detector can be associated to a PLUS monitor if measurement requirements become different.
+The PLUS then converts the output voltage readings of power and energy or supplies otsignals from detectors into accurate her valuable information by means of
+its additional software. The PLUS has been structured to match to a very broad range of applications and
+any customer budget .
+Unbeatable Price to Performance
+Easy and immediate:
+The PLUS is the most versatile measurement monitor for performance are absolutely outstanding , sincthermal heads existing on the market today. Its price and e it has been specifically imagined and designed to be the tool for laser
+measurement available to every laser operator. The PLUS can be plugged to any of LaserPoint detectors by means of its standard Intelligent Interfacing System (IIS) .
+The instrument can be governed just -by means of three soft-touch keys: ON/OFF (Zero). During a measurement session, the key will also Zero stored measurement values and display.
+-T/P. Gives access to the Tuning Function and the Power Measurement Function. -E. The E key provides access to the Energy Measurement Function .
+The mw/ mJ leds, associated to the low Power/Energy Measurement Functions, are only enabled by information stored within the detector E
+2
+PROM.
+Power, Energy, FIT Operational Modes:
+ PLUS can work on different operational modes. It can be usprobe up to 6KW , when working with the FIT heads. ed as a power meter, as an energy meter or as a power
+The selection is automatically made by the monitor when it reads the detector E
+2
+PROM, when the unit is switched on.
+Temperature Compensation:
+Ttemperature compensation is made after an incoming signal frthe PLUS to linearize the head response and advise, wiom a temperature sensor located within the detectors, by th a warning message on the display, when the head has
+overtaken its max allowable temperature.
+External Interfacing:
+PLUS can dialog with the external PCs, plotters, etc via its Analog Output (0-2 Volts) or are provided as standard.RS232 digital interface, which
+Tuning:
+Through this function, a high resolution laser tweaking can be with the bargraph, positioned at itdone. The existing power level is then displayed, together s center; it will move downward or upward depending on tuning.
+The smaller digits shown on the display are the variations, in percent, from the initial power value
+Additional features
+2
+The E PROM, housed within the IIS (Intelligent Interfacing Systebased on spectral data measured from each coatinm) connector, stores wavelength correction values g or absorber. The PLUS display will show :
+EXC : for the UV and excimer laser range (250-350nm) VIS: for the visible range (400-700nm)
+LD: for the Laser Diodes range (800-900nm) Yag: for the Nd-Yag wavelength at 1064 nm
+Erb: for the Erbium wavelength at 2943 nm CO2 : for the CO2 wavelength at 10600nm
+44
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+UCF:( Users own Re-Calibration Factor) The User Calibration value of original calibration sensitivity from 01.% up to 99Factor gives customers the possibility to modify the 9.9% (or from 1/1000 up to 10 times). It can be selected when
+scrolling for the wavelengths The UCF can be used :
+-in case of light damages on coatings -in case of detection after partializing devices (e.g. filters, beamsplitters, mirrors) to track the main beam
+-have measurements aligned to other references The UCF is effective on each measurement mode of Plus (power , energy, Fit) .
+PLUS: Technical Specifications
+Power Meter Mode Power Ranges: 1mW to 10kW General Digital Display: 4-digit LCD readout
+Resolution: 0.5Response Time for any Full Scale <1-5 sec. ( depends on each specific Monitor accuracy: Scales: 3 scales (00.00 / 000.0 / 0000) ,head ±0.5%
+head) dependent with 0.5 resolution Analog Output: 0-2V ±1.0%
+Energy Meter Mode Power Range: 1mJ to 300J Digital Outputs: RS-232 on DB9Connector or USB Temperature Compensation
+Resolution: Response Time0.5 for any Full Scale: <1-5 sec ( depends on each specific Over-Temperature Alarm Overflow Alarm
+head) Overload Alarm :Input voltage: 12VDC Adapter
+FIT Mode Power Ranges: 1mW to 10kW Batteries: Battery life: 2 LR6 (AA -1.5 V)250 hours ; OFF State one year
+Resolution: Response Time0.5 for any Full Scale: 4 sec (final value) Dimensions (mm) : 150Weight: 5 (W) x 105 (H) x 45 (D)00g
+Tuning-Displays a Digital Bargraph for Tuning Direction Operating environment: °Storage Temperature:-10 to 60 ºC
+-Displays Actual Power Value -Displays Variations (as %) form Tuning Initial Value ° Range of Use :°Reference Conditions : 5 to 45 ºC 21 ± 4 ºC ;RH 20-80%
+Selections: Wavelengths
+EXC : UV and excimer laser (250-350nm) VIS: Visible (400-700nm)
+LD: Laser Diodes (800-900nm) Yag: Nd-Yag (1064 nm)
+Erb: Erbium (2943 nm) CO2 : CO2 (10600nm)
+UCFUsers Own Re-Calibration Factor:
+Ordering Information
+Code
+Item (please add all codes when ordering)
+Plus :Low Cost-Hi performance Digital Power & Energy meter with RS232 interface &
+PLUS
+analog output, tune mode and 6 lambda corrections
+PLUS-USB Low Cost-Hi performance Digital Power & Energy meter with USB
+PLUS-USB
+interface & analog output, tune mode and 6 lambda corrections; SW included.
+Accessories and Options
+SW for statistical analysis+ RS232/Analogue cables (optional for Mod PLUS) SW+
+Carrying case for PLUS CASE+
+120VAC or 240VAC/12VDC Power supply PS120-240
+Example of Complete Code : PLUS+PLUSOFT+Case
+45
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+ Smart Head to USB Interface: the PC-LINK
+Your Laptop or PC Converted Into a Power/Energy Meter
+LaserPoint introduces the PC-LINK, a smarPC or laptop into a real, powerful laser pot head to USB interface that converts any wer or energy meter. To make it work it is
+sufficient to install the software, connect the heathe USB port of a PC. No external power source is needed.d to the interface box and this latter to
+This sophisticated monitor is plug and play with all LaserPoint smart heads and has been designed for service and laboratory applications offering the convenience,
+flexibility and value of computer-based operations. PC-LINKs are supplied with LaserPoints user-friendly communication software package
+.
+The Rich and Flexible Monitor
+The very compact size and low weight of PC-Lmake this monitor the ideal partner for ink, together with its advanced features service applications or laboratory use. The
+PC-LINK is also the candidate for use in laser machines, in particular when associated to LaserPoints FIT detectors that work up to 6KW without the need of
+water cooling. The use of PC-Link is straightforward. The unit will recognize the power/energy head
+as soon as it is plugged-in; furthermore, the PC-LINK will use its anticipation circuitry to insure a fast response and will auto-calibrate using the data stored in the intelligent
+connector (IIS) to provide the most accurate measurement . Another feature is the access to the Users Own Calibration Factor (UCF) and an
+additional X10 gain for enhanced measurementto 20mW fs). flexibility (eg low power measurement
+The software supplied with the PC-Link allows to measure, analyze with full statistical functions (Min., max., mean, and standard deviation) and record power and energy
+from all LaserPoint heads without the need be logged simultaneously to file. of a display. Data from each detector can
+PC-Link: Technical Specifications
+ Ordering Information
+Power Meter Mode Power Ranges: 1mW to 10kW
+Resolution: 0.5Response Time for any Full Scale <1-5sec.( depends on specific
+Host Computer and PC-LINK Communication between
+Display: Computer Screen Data Storage: Limited by PC capacity
+Data Displays: Real time, Histogram, Statistics Additional Input Gain: 10X
+Dimensions 113 (L) x 56 (W) x 35 (H) mm Weight 0.106 kg
+External Power Supply Not required
+Operating environment: °Storage Temperature:-10 to 60 ºC
+GENERAL SPECIFICATIONS ° Range of Use :°Reference Conditions : 5 to 45 ºC 21 ± 4 ºC ;RH 20-80%
+Software: Full Window application software Communication: Full Speed USB 1.1
+head)
+Energy Meter Mode Power Range: 1mJ to 300J
+Resolution: Response Time0.5 for any Full Scale: <1-5 sec ( depends on specific head)
+FIT Mode Power Ranges: 1mW to 10kW
+Resolution: Response Time0.5 for any Full Scale: 4 sec (final value)
+Tuning-Displays a Digital Bargraph for Tuning Direction
+-Displays Actual Power Value -Displays Variations (as %) form Tuning Initial Value
+Selections: Wavelengths
+EXC : UV and excimer laser (250-350nm) VIS: Visible (400-700nm)
+LD: Laser Diodes (800-900nm) Yag: Nd-Yag (1064 nm)
+Erb: Erbium (2943 nm) CO2 : CO2 (10600nm)
+UCFUsers Own Re-Calibration Factor :
+Code
+Item (please add all codes when ordering)
+Smart head to USB interface: module to operate LaserPoint smart heads from PC USB
+PC-Link
+ports. Comes with LaserPoint software
+46
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Laser Process Monitor: the LPM
+The System
+The LPM is a fast and intelligent power various outstanding features like the readinand energy measuring setup that bears g at 6KW without water cooling, generate
+alarms if a preset working value has been overtaken, provide measurements in 1-2 seconds in the multiKW ranges or the being completely opto-isolated, since it has
+been designed for the industrial environment . The major application of LPM is to make measurements of laser powers and laser
+energies at the workpiece during parts exchange or working downtimes to check or document the laser power or energy without reducing productivity in the
+installation. The major advantages of this unique approach are: to know the true power or
+energy really delivered for the application, independently form absorptions, optics losses, dirt, etc. A second major advantage is that monitoring at the workpiece will
+provide a synergic effect due to the combination of information coming from both the process area and the laser controller: in this way the LPM , will help to implement a
+predictive maintenance and improve laser machine and process reliability .
+An LPM setup is made by the electronics,Detectors associated to the LPM can be in a detector and the application software. stalled at any convenient location on the
+working area or along the laser beam path,from the LaserPoint catalogue can be associated to an LPM and no special e.g. after a beam splitter. Any detector
+detectors are required.The LPM electronics is a real industrial tool, being completely opto-isolated, thus
+immune from any E.M. pick up and eachvoltage supply . of its section having an independent
+The LPM electronics can be supplied as an OEM board or as a cased, version; both can be applied on standard DICE marked N slides and are then pluggable within
+any industrial cabinet with total ease. LPM setups are in-house calibrated against NIST and PTB secondary standards
+and are shipped with test certificates.
+LPM Electronics . . The heart of LPM is a microprocessor controlled electronics capable to work on 2 different modes of operation, users selectable: LPM: OEM Version
+-Remote operation
+ The LPM is driven by the laser or machine control unit through the
+serial interface RS232 (RS485
+on request). A powerful
+application SW ( LPMSoft )
+reads values, allows to set
+alarms for process monitoring or system malfunctioning, to carry out statistical evaluations on running measurements, to save and download
+data. An additional important feature available on the LPMSoft is the Users Calibration Factor (UCF) which gives customers
+the possibility to modify the value of calibration sensitivity from 01.% up to The UCF can be used : 999.9% (or from 1/1000 up to 10 times).
+-in case of detection after partializing devices (e.g. filters, beam splitters, mirrors),- to make measurements aligned to other references to track the main beam
+Local operation
+It is the most simple configuration of LPM which will only generate alarms, e.g. triggering an alarm lamp or horn.
+The LPM monitors the laser power/energy and checks whether it is within two acceptable (Min/Max) threshold
+values, preset on the electronics itself. The gap between those two values defines the power/ energy range
+acceptable for the laser application. The Min/Max values are stored in the LPM memory by a self
+learning algorithm, simply exposing the associated detector to the laser beam, set at what the 2 alarm levels will be.
+If the power/energy values exceed those previously established, a relay (e.g. connected to the laser PLC)
+47
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+switches off and generate the alarm . Additional alarm LEDs, loIn case it is necessary to know the power/energy vacated on the board will warn, turning from green to red. lues, two additional analog outputs ( 0-10V and 4-20mA ) are
+available for the purpose (e.g. by using a Multimeter).
+Detectors for LPM - LPM electronics can work with all kind of detector heads manufactured by LaserPoint and in Power, Energy and LaserProbe measurement configurations:.
+This adds a superior flexibility and expands the range of appfinal configuration he needs, looking at the systlications to the system. The customer may decide which em constraints but never worrying for his budget.
+-
+Power Meter Mode : This mode allows a continuous measurement of laser power. It helps during machine settings, can be used to monitor long term laser stability, optics alignment, etc. When laser power exceeds few
+hundreds Watts, detectors used in this configuration have toto 10KW. be water cooled . Operating range is from low powers up
+- Laser Probe Mode: the OEM laser probes (Fit Series) allow power measurement mode is carried out by special detector hemonitoring done on short laser exposures. This ads and a patented methodology that allows automatic
+measures made in just 4-6 seconds, depending on the head mf.s..odel. The range of operation is from 50W f.s. to 6KW
+Together with lower costs for the detectors, another major advanmulti-kW powers tage is that there is no need for water cooling even at
+These measurements can be programmed between working cyclresetting parameters (e.g. before cutting or marking new maes to check the constancy of laser power, after terials), after components have been changed or realigned,
+etc. In practice, whenever long running measurements are not necessary.
+-Energy Meter Mode: This mode is used to measure single shot pulses. Typical applications is monitoring of marking or micro welding or on aesthetics and medical systems . Available ranges go up to 300J
+48
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Laser Process Monitor :Technical Specifications
+LPM is an all-industrial measurement monitor to read power or energy effectively delivered to the work piece .
+Electronics can be installed inside industrial cabinets on standard MR9DIN rails. Detectors can be placed up to 5m afar, e.g. right under a focusing head ,
+to monitor any variation on delivered beams at the process area. Alarm signals can be sent to the laser machine or statistical analysis on beam
+performances can be done up to 24hours with LPM-SOFT
+LPM: CE Version
+Power Meter Mode
+Power Ranges: Resolution: 0.51mW to 10kW  for any Full Scale
+Response Time: <1-5 sec. ( depends on each specific head)
+Energy Meter Mode
+Power Range: Resolution: 1mJ to 300J0.5 for any Full Scale
+Response Time: <1-5 sec ( depends on each specific head)
+FIT Mode
+Power Ranges: Resolution: 1mW to 10kW0.5 for any Full Scale
+Response Time: 4 sec (final value)
+General
+Electronics Housing : Interfaces (two mod.): Standard DIN railRemote RS232 (RS485-optional on request) & Local or
+ only Local DAC/ADC: 12Bit
+Digital Input (Measurement Trigger): Analogue Output (two std): 3-30 Vac /dc Opto -isolated Opto -Isolated 0- 10V or 4-20mA
+Detector Input: Input/Output interface: 15 Pin DIN Female Connector Screw terminals
+Digital Output: optional) Opto -Isolated RS232 (RS 485 Mod-BUS Protocol-
+Process GO/NO GO Process Relay: Firmware: 220V, 10A (COM-NC-NO) Three Algorithms (Power , Energy, LaserProbe, )
+Power Supply AC (V) @ 50-60Hz: Operating temperature range (°C): 24 ± 15% -600mA (Input transformer) 10 to 40
+Size LxWxH (mm): 155x90x70
+Ordering Information
+LPM-Electronics (please add all codes when ordering) Code
+LPM Electronic Board in OEM Version: delivered with RS232, analogue interface and LPMSoft (SW for Statistical Analysis) included LPM-OEM
+LPM Monitor , Cased Version: delivered with RS232, analogue interface and LPMSoft (SW for Statistical Analysis) included LPM-CE
+LPM- Detectors
+Take advantage of the big selection of Detectorwithin this Catalogue: any of them c Heads and Power Probes which can be found an be associated to the LPM- Electronics
+Options Code
+Extended Detector Cable Length ( Standard 1.5m) : 5m, max Cab. X (X= length)
+49
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+PLUS-SOFT and LPM-SOFT: Application Softwares
+Plus-Soft and LPM-Soft are application softwares included with PLUS- USB, LPM-CE and LPM-OEM (optional with standard PLUS monitor). Softwares can be downloaded from the LaserPoint website at www.laserpoint.it
+As shown below PLUS-SOFT and LPM-SOFT can plot power graand energy measurements, all relevant statphs, energy histograms display evolution of power istical information and store data to file, as text format for Excel or other
+programs, for later use.
+General:
+Head Model: shows the head model in use
+Lambda: shows detectors calibration wavelength
+SN: shows the head serial number
+A ctual Time: shows present day and timePOWER (W/ mW); ENERGY: shows
+measured power or energy values. User Cal Factor: this number will multiply
+the actual measured value by a selectable factor to reach a desired
+value. Head Temperature (°C): shows the
+temperature on heads provided with temp. sensor
+ZERO: accomplishes an automatic Zeroing
+TUNING: Enables the Tuning Function SAVE: Enables the automatic function to
+save on file done measurements PRINT: prints the displayed window
+QUIT: leaves the program
+Screen Plots
+The screen plot displays measured power (blue lines) and preset values of thresholds (red lines Graph Power Max/Min (W): sets the Power axis on the power plot.
+Graph Time: sets the Time axis on the power plot; availa1ble time scales are 60(sec), 2(min), 5(min), 30(min),
+( hour ), 12 ( hours ) .
+Process Parameters Frame:
+A n important feature offered by the PLUS Software is the possibility to set thresholds
+for the power/energy levels in order to monitor if the application remains within pre-
+established limits . ThisPLUS applicability to rigorous control and feature extends the
+monitoring , necessary in industrial applications.
+MAX/Min Power Levelsthresholds, which are displayed on the graph : set process
+screen as red lines. Process Parameters: the round Leds, when
+red, show that measured power exceeds one or both the preset thresholds; the
+rectangular Led, when green, shows that measured power is within thresholds.
+PlusSoft Screen for FIT Detectors
+50
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Statistical Functions Frame:
+P,E max(W,J): Shows the max power/energ y
+value measured during the last acquisitioninterval
+P,E min(W,J): Shows the min power/energ
+y
+value measured during the last acquisitioninterval
+P,E avg (W,J): Shows the average value o
+f
+power/energy measured during the lastacquisition interval
+PTP (%): Shows the Peak-to-Peak stability STD (W): Shows the measurement Standard
+Deviation RMS (%): Shows the RMS stability
+Duration (s): Shows the duration of acquisitioninterval in sec., up to 24 hours
+Elapsed Time (s): Shows the elapsed time afte
+r
+acquisition started. START/STOP: Start/Stop acquisition
+SAVE: enables an automatic saving on file of done statistical measurements.
+Statistical Data Saved on Notepad
+ Save Measurements on File:
+Running measurements can also to be saved on files for future data tracking by enabling the SAVE function.
+51
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Tuning screen:
+ Another useful function of PLUSSoft to be used for lase r
+tweaking or alignments . It displays variations of measured powe r
+on a double, hi-visibility bar (green for power increments, red fo r
+negative variations) .Power Variation (%): shows the percent variation of powe
+r
+gained or lost starting from an initial reference power level . Power Max(W): during each tweaking shows and stores the
+highest power value to remind the operator which has been thebest performance he reached.
+Overflow Warning Message
+All times the measurement head will undergo to power levels above its full scale, an OVERFLOW alarm is displayed. Refer to the PLUS
+Monitor Users Manual for more information. As soon as the power level returns below the permitted full scale,
+acquisition will be enabled
+Cool Warning Message
+Whenever the temperature of a detector head is above its limit, this will be displayed as a COOL alarm message.
+52
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Applications of Laser Process Monitor (LPM)
+Operation in Remote Mode
+The LPM detector head (1) may be located as permanent unit in a spot, within the laser system or machine , where monitoring non used corner within the process area or any other is necessary. It is important that the beam be large enough
+not to damage the detector absorbers ( the detector can be fixed a few centimeters underneath the focal plane so that it will be sheltered from moving carriages and is of no disturb to the process).
+The acquisition and processing board is housed in MR9 slim card case (2) plugged on standard DIN rails, available on any industrial cabinet or rack. It interfaces with the laser PLC or an external PC with a protocol Mod-BUS through the
+serial interface RS232. A powerful, yet friendly, software delivered at the process area , set the alarms, carry out interface (3) allows to read the power or energy values statistical evaluations, etc in the Power, Energy, Probe
+configurations. Whenever preset alarm thresholds are overtaken, visual messages are displayed on the screen or alarm signals can
+be custom used e.g. to stop the process. During the phase of machine validations, beam delivery alignments or whenever measurements of long term stability
+are made, the software of LaserPoint LPM can show on a large graphical screen, the time evolution of power in measurement sessions which may last many hours. Should a high resolution be needed to look at events occurred in a
+short period (e.g. a sudden power drop), a zoom function can be Functions screen is an even more powerful tool during longused to observe on a tighter time scale. The Statistical term monitoring since it provides all relevant data like Min
+and Max values reached during the measurement period, the and the AverageRoot Mean Square value of measurement, the values. Standard Deviation
+Data can then be saved, with day and hour of measurement, customer. to be used as a documentation for final reports or for the
+Laser Laser
+Laser Control Unit
+Process Area
+LPM -Detector
+Laser Control Unit
+Working Plane
+53
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Operation in Local Mode
+The LPM detector head (1) can be placed in a remote area close system or machine , where monitoring may be necessary. to the process or in any other spot, within the laser
+ The acquisition and processing board is housed in MR9 slimthe control unit or any other place where it may be usef card case (2) plugged on any standard DIN rail, within ul. LPM can monitor the laser power (or energy) and checks
+whether it is within two preset threshold values. Measured values can be read via a 0-10V/4-20mA analog output and trigger alarms via a potential free contact. Those signals can be used to switch alarm lamps or acoustic signals (3).
+Alarm thresholds are set by a self learning algorithm while exposing the sensor to the laser beam tuned at the MIN-MAX power or energy alarm levels.
+Operating in Local Mode is particularly useful in case of retrofitting integration of its SW is not possible. the LPM set-up on older machines, where the
+Laser
+Process Area
+LPM -Detector
+Laser Control Unit
+Working Plane
+Operation in the Probe Mode ( periodic power check) controls of beam power during working cycles, after la Measurements runs can be planned to accomplish short ser parameter resetting, optics realignment, etc. The use of
+special FIT (Fast Integrating Thermopile) heads (1) that do nothelp in many industrial environments where having wate require any water cooling , even a many kW , is of great r at the application area is a problem. The acquisition and
+processing board is housed in MR9 slim card case (2) plugged on any standard DIN rail and housed in industrial cabinet or rack. Data can be analysed (3) by the specific SW for the Probe Mode or, should immediate warnings be
+needed, visible/ acoustic alarms can be triggered.
+Laser Control Unit
+process4 sec power check
+54
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Predictive Maintenance
+Prediction of incoming failures ,e.g. at optical components, can be easily done by cross checking the power/energy delivered by the laser source and what is effectively delivered to the work piece. A too high difference between the two
+values may indicate that damages already occurred.
+Laser
+Process Area
+Laser Control Unit Laser Control Unit
+2578W
+LPM -Detector
+2355 W
+Beam Delivery System: Alignment & Stability
+The complete beam path can be aligned and verification that done with the max yield at the work piLPM working in the power/energy mode. Successive ece has been reached can be measurements of system stability can be done and
+visualized with the most relevant statistical information on the beam behaviour.
+Monitoring of Marking, Micro-welding, and Micro-Machining Systems
+Laser Laser
+Process Area
+Laser Control Unit Laser Control Unit
+LPM -Detector
+Monitoring of energy or power as they are delivered after the focusing lens, providing a facorrect values for the process, of the optst and direct control of the ical system or optical fiber integrity can be done with LPM simply displacing the
+optics or the translation stages
+.
+Laser
+55
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Control of Working Cycles
+Setting of working cycles with measurement of the power really delivered to the work piece can be done with operating in power mode. It can be done as a simulation beforLPM , e working, to verify the correctness of process
+parameters, or in certain phases decided by the operator, e.g. during the depreset parameters did not change for ad times between welds, to check that reasons like optics damage, dirt, etc.
+Laser Laser
+Process Area
+Laser Control Unit
+LPM -Detector
+W
+t
+56
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+ OEM and Custom Products
+A growing, customer- driven OEM manufacturer
+Since long more than a decade LaserPoint has been supplier of OEM power & energy sensors to some of the worlds leading laser
+manufacturers. Our presence in the OEM market, several patents and the participation to a number of European Projects on laser monitoring are
+the best cards LaserPoint can give his customers, either in supplying standard products or in providing technical support in the discussion for
+new applications or the design of new detectors. The following table shows the basic characteristics of LaserPoint most
+popular sensors. Around those sensors complete heads are designed and supplied with housings, cooling systems and amplifying electronics based
+on Customers requirements and specifications.
+Advantages of LaserPoint OEM Laser Measurement Products
+Reliable and Versatile Measurements Tools
+OEM sensors discs manufactured by LaserPoint arehigh sensitivity, low impedance thermopiles. High
+sensitivity is important to maximize the signal-to-noiseratio when working at low powers .
+Compared to other types of sensors which might beused in equivalent applications, thermopile detectors
+can be applied directlyonto the beam, even at highpowers.
+LaserPoint sensors are made with resistant materialsand coatings that extend their applicability from UV to
+Far Infrared and to concentrated beams, withoutdamaging even at extreme power densities.
+LaserPoint provides thermopiles which exhibit a highdegree of linearity over their entire working range and
+have large areas that sample the whole laser beam.
+Thermopile sensors are almost insensitive to theposition and the size of beam when it strikes on thei
+r
+active areas. Alignment is never critical and installationtime in OEM applications is fast.
+Everything has been designed to provide accurate andreliable measurements of lasers like CO2, Excimers,
+Laser Diodes, Nd-Yag from 3W to 200W atcompetitive pricing .
+Compact Design
+Off-the-shelf sizes of sensor discs range from15x15x3mm to Dia 90x6mm, with active areas up to
+40mm.
+Calibration
+A ll OEM sensors undergo to a series of five in houseinspections and controls, which include individual
+tests of sensitivity and impedance. A full calibration,with NIST or PTB traceability, is available on request.
+Technical Support
+If you do not find what you need today we can designcustom sensors, housings and electronics that fit you
+r
+requirements. Ask our Application Engineers fo r
+technical support: we have a full knowledge of optics,lasers, thermal behaviors, materials to cover you
+r
+requests.
+A commitment to servicing with quality products,prompt deliveries and after sales assistance is anothe
+r
+support provided by LaserPoint on which customerscan rely on.
+57
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Building-up a Laser Measurement System
+Start from the Application Purpose
+Long Term Measurement of Laser Power? Just Checking Laser Power ?
+ OEM Sensors Discs & Heads OEM Laser Probes (FIT Series)
+Typical Applications , Typical Applications ,
+ Continuous or Long Term Measurement of Laser or  Once in while check of laser power
+system performance  Power monitoring at the workpiece
+ Feedback to laser/system control  Optimization of laser set-ups
+ Beam Dump  Monitoring of laser power stability
+Certification of laser processes  Certification of laser processes
+ Predictive maintenance of beam line components
+Fields, Fields
+ Laser source monitoring  System monitoring
+ System monitoring  Material processing
+ Material processing  Medical systems
+ Medical systems
+and Sources. and Sources.
+ Excimers  CO2
+ CO2  Nd-Yag
+ Nd-Yag  Diode Lasers
+ Diode Lasers  Medical Lasers
+ Medical Lasers
+Hints Hints
+ Slim design for installation in tight areas  Slim design for installation in tight areas
+ Flexibility in integration :various connection types, models  Work up to 6KW without water cooling
+with /without ampl circuits; cased/non-cased solutions Coatings with high power densities for any application
+Coatings with high power densities for any application  Give value of laser power in 4-6 sec with 1% repeatability
+ Usable with Customers own electronics or SW  NIST & PTB traceable calibration procedures
+ NIST & PTB traceable calibration procedures
+Select the OEM Sensor or Head- (Short Guide)
+OEM Sensor Disks
+Head Model Power Range Aperture External Size Max. Avg. Power Density Spectral Range
+2 2
+SD-20-D12 10mW - 20W Ø12mm 44 mm(Dia) x3mm (Thick) 200 W/cm (BBF)-2 KW/cm (HCB) 0.19-25µm -0.25-11µm
+2 2
+SD-20-D20 10mW - 20W Ø20mm 44mm (Dia)x 3mm (Thick) 200 W/cm (BBF)-2 KW/cm (HCB) 0.19-25µm-0.25-11µm
+2 2
+SD-50-D20 15mW - 50W Ø20mm 44 mm(Dia) x 3mm (Thick) 200 W/cm (BBF)-2KW/cm (HCB) 0.19-25µm-0.25-11µm
+2 2
+SD-50-D25 15mW - 50W Ø25mm 54 mm(Dia) x 3mm (Thick) 2 KW/cm (HCB)-4 KW/cm @ CO2 (HPB) 0.25-11µm
+2 2
+SD200-D20 50mW -200W Ø20mm 44 mm(Dia) x 6mm (Thick) 2 KW/cm (HCB)-4 KW/cm @ CO2 (HPB) 0.25-11µm
+2 2
+SD200-D25 50mW -200W Ø25mm 44 mm(Dia) x 6mm (Thick) 2 KW/cm (HCB)-4 KW/cm @ CO2 (HPB) 0.25-11µm
+58
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Thermal OEM Heads
+Head Model Power Range Aperture External Size Cooling Max. Avg. Power Density
+2 2
+ CSA-20-D12 10mW - 20W Ø12mm 50x50x15mm Convection 200 W/cm (BBF)-2 KW/cm (HCB)
+2 2
+ CSA-20-D20 10mW - 20W Ø20mm 50x50x15mm Convection 200 W/cm (BBF)-2 KW/cm (HCB)
+2 2
+CSW-50-D20 15mW - 50W Ø20mm 50x50x20mm Water 200 W/cm (BBF)-2KW/cm (HCB)
+2 2
+CSW-50-D25 15mW - 50W Ø25mm 60x60x20mm Water 2 KW/cm (HCB)-4 KW/cm @ CO2 (HPB)
+2 2
+CSW-200-D20 50mW -200W Ø20mm 50x50x23mm Water 2 KW/cm (HCB)-4 KW/cm @ CO2 (HPB)
+2 2
+CSW-200-D25 50mW -200W Ø25mm 60x60x23mm Water 2 KW/cm (HCB)-4 KW/cm @ CO2 (HPB)
+Thermal OEM Heads with Built-in-Amplifier
+Head Model Power Ranges Output Voltage Aperture External Size Cooling Max. Avg. Power Density
+2 2
+AHA-5-D12 5W f.s. 5V f.s. Ø12mm 50x50x30mm Convection 200 W/cm (BBF)-2 KW/cm (HCB)
+2 2
+AHA-10-D12 10W f.s. 5V f.s. Ø12mm 50x50x30mm Convection 200 W/cm (BBF)-2 KW/cm (HCB)
+2 2
+AHA-20-D12 20 W f.s. 5V f.s. Ø12mm 50x50x30mm Convection 200 W/cm (BBF)-2 KW/cm (HCB)
+2 2
+AHA-5-D20 5W f.s. 5V f.s. Ø20mm 50x50x30mm Convection 200 W/cm (BBF)-2 KW/cm (HCB)
+2 2
+AHA-10-D20 10W f.s. 5V f.s. Ø20mm 50x50x30mm Convection 200 W/cm (BBF)-2 KW/cm (HCB)
+2 2
+AHA-20-D20 20 W f.s. 5V f.s. Ø20mm 50x50x30mm Convection 200 W/cm (BBF)-2 KW/cm (HCB)
+2 2
+AHW-20-D20 20 W f.s 5V f.s. Ø20mm 50x50x30mm Water 200 W/cm (BBF)-2KW/cm (HCB)
+2 2
+AHW-50-D20 50 W f.s 5V f.s. Ø20mm 50x50x30mm Water 200 W/cm (BBF)-2KW/cm (HCB)
+2 2
+AHW-20-D25 20 W f.s 5V f.s. Ø25mm 60x60x30mm Water 2 KW/cm (HCB)-4 KW/cm @ CO2 (HPB)
+2 2
+AHW-50-D25 50 W f.s 5V f.s. Ø25mm 60x60x30mm Water 2 KW/cm (HCB)-4 KW/cm @ CO2 (HPB)
+2 2
+AHW-100-D20 100 W f.s. 5V f.s. Ø20mm 50x50x33mm Water 2 KW/cm (HCB)-4 KW/cm @ CO2 (HPB)
+2 2
+AHW-200-D20 200 W f.s. 5V f.s. Ø20mm 50x50x33mm Water 2 KW/cm (HCB)-4 KW/cm @ CO2 (HPB)
+2 2
+AHW-100-D25 100 W f.s. 5V f.s. Ø25mm 60x60x30mm Water 2 KW/cm (HCB)-4 KW/cm @ CO2 (HPB)
+2 2
+AHW-200-D25 200 W f.s. 5V f.s. Ø25mm 60x60x30mm Water 2 KW/cm (HCB)-4 KW/cm @ CO2 (HPB)
+OEM Laser Probes (FIT Series)
+Head Model Power Range Aperture External Size Max. Avg. Power Density Spectral Range
+2
+FIT 50-H 50mW-50W Ø20mm 50 mm(Dia) x 20mm (Thick) 2KW/cm (HCB) 0.25-11µm
+2
+FIT 200-H 200mW-200W Ø20mm 50 mm(Dia) x 25mm (Thick) 2KW/cm (HCB) 0.25-11µm
+2
+FIT500-H 500mW-500W Ø25mm 66 mm(Dia) x 30mm (Thick) 4 KW/cm @ CO2 (HPB) 0.25-11µm
+2
+FIT3000-H 3W-3000W Ø40mm 92 mm(Dia) x 65mm (Thick) 4 KW/cm @ CO2 (HPB) 0.25-11µm
+2
+FIT6000-H 6W-6000W Ø61mm 100 mm(Dia) x 100mm (Thick) 4 KW/cm @ CO2 (HPB) 0.25-11µm
+Custom Heads: LaserPoint offers many other OEM solutions. For other OEM heads please fill the questionnaire on our website:
+www.laserpoint.it or contact:sales@laserpoint.it
+59
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Select Connectivity Options
+Output connector options include Laser Points IIS (Intelligent Identification System) on and 2 or 4 wire pigtail. DB15 connector, BNC, Molex
+-The DB-15 houses an EEPROM which storesand other head relevant data. We provide for use with calibration corrections LaserPoints LPM-OEM, LPM-CE and PLUS power and energy
+readouts. - BNC connectors give, total plug/un-plug ease and high EMI noise shielding.
+-Molex connectors make easier the removal of detectors for se- Pigtail: 2 or 4 wires, dependirvice or for their use at other locations ng on models, deliver the natural signal of sensor discs or heads to a control unit or host
+system .
+Connection Type Output Signal from Sensors and Heads Available on Product Code
+2x 150 mm leads Natural response SD, CS series WN
+4x 150 mm leads Amplification and acceleration AH series WA
+BNC Natural response CS series BN
+Molex 6410 Amplification and acceleration AH series MO
+DB15 (cable up to 5m) Natural response CS, Fit series DN
+60
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Chose the Control Electronics and SW
+LaserPoint has developed various electronic solutions and SWanalyzing and transferring information to the control units of la tools for conditioning the signals of laser sensors or for sers or laser systems. These electronic products can be
+small electronics meters, enclosed modules, or complex boarcomplete description please refeds with data acquisitions SW. For an exhaustive and r to Displays and Control Section within this catalogue or visitthe website
+www.laserpoint.it
+Amplifying and Accelerating OEM Electronics for the AH Series
+Detectors
+Output Voltage, Full Scale: 5V
+Min. Detectable Voltage : 5mV
+Total Sensitivity: 5V/ Max Power Value for the sensor in use
+Linearity± 1%
+Max Power Values: 5W,10W,20W,50W,100W,200W , depending on sensor type
+Minimum detectable Power: 1/1000 of Full Scale
+Head response times 0.8 sec.typ,
+This ultra-compact product
+Supply voltages can range between: ± 7VDC to ± 12VDC or 14 to 24VDC floating.
+fulfils diverse OEM
+Dimensions: Dia 43mmx10mm
+requirements being a
+Max Head Temperature :60 °C
+circuit board, internal to
+the AH series heads,
+which amplifies and
+speeds up response times
+of sensors discs.
+A main feature is the
+possibility to vary sensors
+sensitivities , via a
+variable resistor, to make
+all detectors equally
+performing.
+ The board can work with
+additional custom
+electronics or read with a
+display The it also offers
+fast response times, high
+sensitivity, accuracy and
+linearity.
+ Output connectivity
+options for the amplified
+heads include Molex or a
+simple 4 wires pigtail.
+Laser Processor Monitor OEM Board : LPM-OEM
+-Operation with Power and Energy Sensors
+*Power Ranges: 1mW to 10kW /1mJ to 300J
+*Resolution: 0.5 for any Full Scale
+*Response Time: <1-5 sec. ( depends on each specific head)
+The real industrial OEM
+-Operation with FIT Laser Probes
+power or energy meter
+*Power Ranges: 1mW to 6 kW
+with all features for laser
+*Resolution: 0.5 for any Full Scale
+or process monitoring.
+*Response Time: 4 sec (final value)
+All I/O are opto-isolated
+- General
+and immune from RF and
+*Electronics Board : Plugs on Standard DIN rail
+electrical pick-ups.
+*External Interfacing: Remote via RS232 & Local or
+The LPM-OEM board
+ only Local ((RS485-optional on request)
+simply plugs on standard
+*Digital Input (Measurement Trigger): 3-30 Vac /dc Opto -isolated
+DIN rails inside machine
+*Analogue Outputs : Opto -Isolated 0- 10V or 4-20mA
+cabinets.
+*Detector Input: DB15 Female Connector
+It can be driven by PC, via
+*Input/Output interface: Screw terminals
+its RS232 output or by
+*Digital Output: Opto -Isolated RS232 on DB9 connector (RS
+manual commands.
+Setting of process
+485 Mod-BUS Protocol- optional)
+thresholds can generate
+Alarm Relay
+alarms and a GO/NO GO
+*Process GO/NO GORelay: 220V, 10A (COM-NC-NO)
+to the machine.
+*Power Supply AC (V) @ 50-60Hz: 220V and 110V, internally selectable
+The application SW bears
+*Size LxWxH (mm): 260x100x110mm
+statistical functions
+(min,max,avg, RMS,PTP)
+and an unlimited capacity
+of data recording.
+The LPM-OEM can work
+with any of LaserPoints
+Power and Energy
+Detectors, Sensors and
+Laser Probes
+61
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Laser Process Monitor , Cased Version: LPM-CE
+Marked
+-Operation with Power and Energy Sensors
+*Power Ranges: 1mW to 10kW /1mJ to 300J
+*Resolution: 0.5 for any Full Scale
+The cased, CE marked, *Response Time: <1-5 sec. ( depends on each specific head)
+version of LPM with all -Operation with FIT Laser Probes
+features for laser or
+*Power Ranges: 1mW to 10kW
+process monitoring. *Resolution: 0.5 for any Full Scale
+All I/O are opto-isolated *Response Time: 4 sec (final value)
+and immune from RF and
+- General
+electrical pick-ups.
+*Electronics Housing : Inox Enclosure Plugs on Standard DIN Rails
+The LPM-CE case simply
+*External Interfacing: Remote via RS232 & Local or
+plugs on standard DIN
+ only Local ((RS485-optional on request)
+rails within lasers or
+*Digital Input (Measurement Trigger): 3-30 Vac /dc Opto -isolated
+machine cabinets.
+*Analogue Outputs : Opto -Isolated 0- 10V or 4-20mA
+It can be driven by PC, via
+*Detector Input: DB15 Female Connector
+its RS232 output or by
+*Input/Output interface: Screw terminals
+manual commands.
+*Digital Output: Opto -Isolated RS232 (RS 485 Mod-BUS
+Setting of process
+ Protocol- optional)
+thresholds can generate
+Alarm Relay
+alarms and a GO/NO GO
+* Process GO/NO GO Relay: 220V, 10A (COM-NC-NO)
+to the machine.
+*Power Supply AC (V) @ 50-60Hz: 220V and 110V, internally selectable
+The application SW bears
+*Size LxWxH (mm): 305x160x70mm
+statistical functions
+(min,max,avg, RMS,PTP)
+and an unlimited capacity
+of data recording.
+The LPM-CE can work
+with any of LaserPoints
+Power and Energy
+Detectors, Sensors and
+Laser Probes
+Laser Power and Energy Meter : PLUS Monitor
+Marked
+*Power Ranges: 1mW to 10kW/1mJ to 300J
+*Resolution: 0.5 for any Full Scale
+*Response Time: <1-5 sec. ( depends on each specific head)
+*Tuning function by Bargraph:
+*Wavelength Selection: 6 wavelenghts for Excimers, VIS, diodes,Nd-
+ Yag, CO2
+*UCF: Users Own Re-Calibration Factor
+-General
+*Digital Display: 4-digit LCD readout
+The PLUS monitor can be
+*Monitor accuracy: ±0.5%
+purchased as a
+*Scales: 3 scales (00.00 / 000.0 / 0000) ,head dependent
+standalone instrument for
+external use in a system
+with 0.5 resolution
+or machine.
+*Analog Output: 0-2V ±1.0%
+Communication with the
+*Digital Outputs: RS-232 on DB9Connector or USB
+host system can be via
+*Input voltage: 12VDC or battery
+RS232 digital output.
+*Dimensions (mm) : 150 (W) x 105 (H) x 45 (D)
+A 0-2V analog output is
+*Weight: 500g
+also available.
+The optional application
+SW allows the setting of
+working thresholds to
+generate alarms and a
+GO/NO GO to the
+machine.
+It also bears statistical
+functions (min,max,avg,
+RMS,PTP) and an
+unlimited capacity of data
+recording.
+The PLUS can work with
+any of LaserPoints Power
+and Energy Detectors,
+Sensors and Laser
+Probes.
+62
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Application SW for LPM and PLUS: PLUS-SOFT and LPM-SOFT
+General:
+UCF: users own calibration factor
+Actual Time: shows present day and time
+POWER (W/mW); ENERGY: shows the measured power or energy values.
+TEMPERATURE (°C): shows the temperature on those heads provided with temp. sensor
+ZERO: accomplishes an automatic Zeroing
+SAVE: enables the automatic function to save on file done measurements ; this function is active when
+Led is green.
+Graph Power Max/Min (W): sets the Power axis on the power plot.
+This SW allows a
+Graph Time: sets the Time axis on the power plot; 12 h max
+monitoring up to 12
+Process Parameters Window :
+continuous hours of laser
+MAX/Min Power Levels: set process thresholds,
+or process behaviour and
+Process Parameter : show that measured power is outside one or both the preset process thresholds;
+recording of running
+Statistical Functions Window:
+measurement
+P,E max,min,avg(W,J) : max power/energy value measured during the last acquisition interval
+The Process Parameters
+PTP (%): Peak-to-Peak stability
+settings give a visual
+STD (W): Standard Deviation
+alarm or can generate a
+RMS (%): RMS stability
+GO/NOGO to the system
+Duration (s): acquisition interval in sec., up to 24 hours
+Calculation and recording
+Elapsed Time (s): elapsed time after acquisition started.
+of all relevant Statistical
+START/STOP: Start/Stop acquisition
+Parameters are set for
+SAVE: automatic saving on file of statistical measurements
+machine validation.
+Save on File of Running Measurements
+A Tuning screen is
+Tuning Function Window
+provided for laser or beam
+Double bargraph
+delivery components
+Power Variation (%): shows the percent variation of power gained or lost during tweaking
+alignment
+Power Max(W): during tweaking shows and stores the highest reached power value
+Alarms
+OVERFLOW, COOL
+63
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Standard OEM Products Specifications
+Custom Power and Energy Sensors
+The following tables report what is standard as laser sensors discs, housings and amplified heads at LaserPoint. Nevertheless the
+Engineering Team in Laserpoint has the complete technology to provide custom solutions when requirements rule out standard
+products. This know-how includesdimensioning, mechanical design and electronics development: thermal modelling, optical
+these skills will lead to an optimized detector size, the desired voltage output and the best available coatings.
+From the earliest design phase, LaserPoint with you customer to understand your needs in detailEngineers will consult and will
+provide fast response.
+Standard Thermal Sensor Discs
+Max. Continuous Power : 20 W
+SD-20-D12
+Max. Energy : 20 J (long pulses)
+Outer Dimensions : 44 mm(Dia) x 3mm (Thick)
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Sensitive Diameter : 12mm
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+Sensitivity: 2 mV/W
+NEP(Noise Equivalent Power) : 2.5 mW
+Response Time (0 - 90%): <1 sec.(b)
+Linearity : ±1% (c)
+Cooling: Conduction, by heat sink
+a. Tested @ 1.06 µm. b. Accelerated by LaserPoint electronics
+Notes: c. Detector centrally irradiated @ 50% of useful surface
+Max. Continuous Power : 20 W
+SD-20-D20
+Max. Energy : 20 J (long pulses)
+Outer Dimensions : 44 mm(Dia) x 3mm (Thick)
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Sensitive Diameter : 20mm
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+Sensitivity: 2 mV/W
+NEP(Noise Equivalent Power) : 3 mW
+Response Time (0 - 90%): <1 sec.(b)
+Linearity : ±1% (c)
+Cooling: Conduction, by heat sink
+a. Tested @ 1.06 µm. b. Accelerated by LaserPoint electronics
+Notes: c. Detector centrally irradiated @ 50% of useful surface
+64
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 50 W
+SD-50-D20
+Max. Energy : 50 J (long pulses)
+Sensitive Diameter : 20mm
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Sensitivity: 1.3 mV/W
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+Outer Dimensions : 44 mm(Dia) x 3mm (Thick)
+NEP(Noise Equivalent Power) : 4 mW
+Response Time (0 - 90%): <1 sec.(b)
+Linearity : ±1% (c)
+Cooling: Water: 0.5lit/min ( @ 22 C)
+a. Tested @ 1.06 µm. b. Accelerated by LaserPoint electronics
+Notes: c. Detector centrally irradiated @ 50% of useful surface
+Max. Continuous Power : 50 W
+SD-50-D25
+Max. Energy : 50 J (long pulses)
+Outer Dimensions : 54 mm(Dia) x 3mm (Thick)
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Sensitive Diameter : 25mm
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+Sensitivity: 1.3 mV/W
+NEP(Noise Equivalent Power) : 4 mW
+Response Time (0 - 90%): <1 sec.(b)
+Linearity : ±1% (c)
+Cooling: Water: 0.5lit/min ( @ 22 C)
+a. Tested @ 1.06 µm. b. Accelerated by LaserPoint electronics
+Notes: c. Detector centrally irradiated @ 50% of useful surface
+65
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 200 W
+SD-200-D20
+Max. Energy : 200 J (long pulses)
+Outer Dimensions : 44 mm(Dia) x 6mm (Thick)
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Sensitive Diameter : 20mm
+HCB:Hard Coating, Broadband
+Available Absorber Types:
+HPB:High Power Broadband
+Wavelength Range : 0.25 -11µm (a)
+2
+HCB: 2.0 KW/cm
+Max. Average Power Density :
+2
+HPB:4 KW/cm @ CO2
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+Sensitivity: 0.22 mV/W
+NEP(Noise Equivalent Power) : 23 mW
+Response Time (0 - 90%): <1 sec.(b)
+Linearity : ±1% (c)
+Cooling: Water: 1.5lit/min ( @ 22 C)
+a. Tested @ 1.06 µm. b. Accelerated by LaserPoint electronics
+Notes: c. Detector centrally irradiated @ 50% of useful surface
+Max. Continuous Power : 200 W
+SD-200-D25
+Max. Energy : 200 J (long pulses)
+Outer Dimensions : 44 mm(Dia) x 6mm (Thick)
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Sensitive Diameter : 25mm
+HCB:Hard Coating, Broadband
+Available Absorber Types:
+HPB:High Power Broadband
+Wavelength Range : 0.25 -11µm (a)
+2
+HCB: 2.0 KW/cm
+Max. Average Power Density :
+2
+HPB:4 KW/cm @ CO2
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+Sensitivity: 0.22 mV/W
+NEP(Noise Equivalent Power) : 23 mW
+Response Time (0 - 90%): <1 sec.(b)
+Linearity : ±1% (c)
+Cooling: Water: 1.5lit/min ( @ 22 C)
+a. Tested @ 1.06 µm. b. Accelerated by LaserPoint electronics
+Notes: c. Detector centrally irradiated @ 50% of useful surface
+66
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Standard Thermal Heads
+( water cooled models are suitable for de-ionized water cooling systems)
+Max. Continuous Power : 20 W
+CSA-20-D12
+Max. Energy : 20 J (long pulses)
+Outer Dimensions : 50x50x15mm
+Sensitive Diameter : 12mm
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Sensitivity: 2 mV/W
+NEP(Noise Equivalent Power) : 2.5 mW
+Response Time (0 - 90%): <1 sec.(b)
+Linearity : ±1% (c)
+Cooling: Conduction, by heat sink
+a. Tested @ 1.06 µm. b. Accelerated by LaserPoint electronics
+c. Detector centrally irradiated @ 50% of useful surface
+Notes:
+Max. Continuous Power : 20 W
+CSA-20-D20
+Max. Energy : 20 J (long pulses)
+Outer Dimensions : 50x50x15mm
+Sensitive Diameter : 20mm
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2 Sensitivity: 2 mV/W
+Nd :Yag Ion Lasers
+NEP(Noise Equivalent Power) : 3 mW
+Response Time (0 - 90%): <1 sec.(b)
+Linearity : ±1% (c)
+Cooling: Conduction, by heat sink
+a. Tested @ 1.06 µm. b. Accelerated by LaserPoint electronics
+c. Detector centrally irradiated @ 50% of useful surface
+Notes:
+67
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 50 W
+CSW-50-D20
+Max. Energy : 50 J (long pulses)
+Outer Dimensions : 50x50x20mm
+Sensitive Diameter : 20mm
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers Sensitivity: 1.3 mV/W
+NEP(Noise Equivalent Power) : 4 mW
+Response Time (0 - 90%): <1 sec.(b)
+Linearity : ±1% (c)
+Cooling: Water: 0.5lit/min ( @ 22 C)
+a. Tested @ 1.06 µm. b. Accelerated by LaserPoint electronics
+c. Detector centrally irradiated @ 50% of useful surface
+Notes:
+Max. Continuous Power : 50 W
+CSW-50-D25
+Max. Energy : 50 J (long pulses)
+Outer Dimensions : 60x60x20mm
+Sensitive Diameter : 25mm
+HCB:Hard Coating, Broadband
+Available Absorber Types:
+HPB:High Power Broadband
+Wavelength Range : 0.25 -11µm (a)
+2
+HCB: 2.0 KW/cm
+Max. Average Power Density :
+2
+HPB:4 KW/cm @ CO2
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+Sensitivity: 1.3 mV/W
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+NEP(Noise Equivalent Power) : 4 mW
+Response Time (0 - 90%): <1 sec.(b)
+Linearity : ±1% (c)
+Cooling: Water: 0.5lit/min ( @ 22 C)
+a. Tested @ 1.06 µm. b. Accelerated by LaserPoint electronics
+c. Detector centrally irradiated @ 50% of useful surface
+Notes:
+68
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 200 W
+CSW-200-D20
+Max. Energy : 200 J (long pulses)
+Outer Dimensions : 50x50x23mm
+Sensitive Diameter : 20mm
+HCB:Hard Coating, Broadband
+Available Absorber Types:
+HPB:High Power Broadband
+Wavelength Range : 0.25 -11µm (a)
+2
+HCB: 2.0 KW/cm
+Max. Average Power Density :
+2
+HPB:4 KW/cm @ CO2
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+Sensitivity: 0.22 mV/W
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+NEP(Noise Equivalent Power) : 23 mW
+Response Time (0 - 90%): <1 sec.(b)
+Linearity : ±1% (c)
+Cooling: Water: 1.5lit/min ( @ 22 C)
+a. Tested at 10.6µm. b.
+Accelerated by LaserPoint electronics
+Notes:
+c. Detector centrally irradiated @ 50% of useful surface
+Max. Continuous Power : 200 W
+CSW-200-D25
+Max. Energy : 200 J (long pulses)
+Outer Dimensions : 60x60x23mm
+Sensitive Diameter : 25mm
+HCB:Hard Coating, Broadband
+Available Absorber Types:
+HPB:High Power Broadband
+Wavelength Range : 0.25 -11µm (a)
+2
+HCB: 2.0 KW/cm
+Max. Average Power Density :
+2
+HPB:4 KW/cm @ CO2
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+TYPICAL LASERS:Diode Lasers Sensitivity: 0.22 mV/W
+Diode arrays CO2
+Nd :Yag Ion Lasers
+NEP(Noise Equivalent Power) : 23 mW
+Response Time (0 - 90%): <1 sec.(b)
+Linearity : ±1% (c)
+Cooling: Water: 1.5lit/min ( @ 22 C)
+Accelerated by LaserPoint electronics
+a. Tested at 10.6µm. b.
+Notes:
+c. Detector centrally irradiated @ 50% of useful surface
+69
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Standard Thermal Heads with Built-in Amplifier
+( water cooled models are suitable for clean, de-ionized water cooling systems.)
+Max. Continuous Power : 5 W
+AHA-5-D12
+Max. Energy : 5 J (long pulses)
+ Dimensions : 50x50x30mm
+Sensitive Diameter : 12mm
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Output Voltage, Full Scale 5V
+Sensitivity: 1V/W
+Min. Detectable Voltage 5mV
+Amplifier Input Voltages ± 7VDC to ± 12VDC or 14 to 24VDC floating
+Response Time (0 - 100%): <1 sec.
+Linearity : ±1% (b)
+Cooling: Conduction
+Notes: a. Tested 10.6µm. b. Detector centrally irradiated @50% of
+useful surface
+Max. Continuous Power : 10 W
+AHA-10-D12
+Max. Energy : 10 J (long pulses)
+ Dimensions : 50x50x30mm
+Sensitive Diameter : 12mm
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Output Voltage, Full Scale 5V
+Sensitivity: 0.5V/W
+Min. Detectable Voltage 5mV
+Amplifier Input Voltages ± 7VDC to ± 12VDC or 14 to 24VDC floating
+Response Time (0 - 100%): <1 sec.
+Linearity : ±1% (b)
+Cooling: Conduction
+Notes: a. Tested 10.6µm. b. Detector centrally irradiated @50% of
+useful surface
+70
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 20 W
+AHA-20-D12
+Max. Energy : 20 J (long pulses)
+ Dimensions : 50x50x30mm
+Sensitive Diameter : 12mm
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Output Voltage, Full Scale 5V
+Sensitivity: 0.25V/W
+Min. Detectable Voltage 5mV
+Amplifier Input Voltages ± 7VDC to ± 12VDC or 14 to 24VDC floating
+Response Time (0 - 100%): <1 sec.
+Linearity : ±1% (b)
+Cooling: Conduction
+Notes: a. Tested 10.6µm. b. Detector centrally irradiated @50% of
+useful surface
+Max. Continuous Power : 5 W
+AHA-5-D20
+Max. Energy : 5 J (long pulses)
+ Dimensions : 50x50x30mm
+Sensitive Diameter : 20mm
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+ Dimensions : 50x50x30mm
+Sensitivity: 1V/W
+Min. Detectable Voltage 5mV
+Amplifier Input Voltages ± 7VDC to ± 12VDC or 14 to 24VDC floating
+Response Time (0 - 100%): <1 sec.
+Linearity : ±1% (b)
+Cooling: Conduction
+Notes: a. Tested 10.6µm. b. Detector centrally irradiated @50% of
+useful surface
+71
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 10 W
+AHA-10-D20
+Max. Energy : 10 J (long pulses)
+ Dimensions : 50x50x30mm
+Sensitive Diameter : 20 mm
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Output Voltage, Full Scale 5V
+Sensitivity: 0.5V/W
+Min. Detectable Voltage 5mV
+Amplifier Input Voltages ± 7VDC to ± 12VDC or 14 to 24VDC floating
+Response Time (0 - 100%): <1 sec.
+Linearity : ±1% (b)
+Cooling: Conduction
+Notes: a. Tested 10.6µm. b. Detector centrally irradiated @50% of
+useful surface
+Max. Continuous Power : 20 W
+AHA-20-D20
+Max. Energy : 20 J (long pulses)
+ Dimensions : 50x50x30mm
+Sensitive Diameter : 20 mm
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Output Voltage, Full Scale 5V
+Sensitivity: 0.25V/W
+Min. Detectable Voltage 5mV
+Amplifier Input Voltages ± 7VDC to ± 12VDC or 14 to 24VDC floating
+Response Time (0 - 100%): <1 sec.
+Linearity : ±1% (b)
+Cooling: Conduction
+Notes: a. Tested 10.6µm. b. Detector centrally irradiated @50% of
+useful surface
+72
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 20 W
+AHW-20-D20
+Max. Energy : 20 J (long pulses)
+ Dimensions : 50x50x30mm
+Sensitive Diameter : 20 mm
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Large Area or Expanded Beams
+Output Voltage, Full Scale 5V
+Sensitivity: 250 mV/W
+Min. Detectable Voltage 5mV
+Amplifier Input Voltages ± 7VDC to ± 12VDC or 14 to 24VDC floating
+Response Time (0 - 100%): <1 sec.
+Linearity : ±1% (b)
+Cooling: Water: 0.5 lit/min ( @ 22 C)
+Notes: a. Tested 10.6µm. b. Detector centrally irradiated @50% of
+useful surface
+Max. Continuous Power : 50 W
+AHW-50-D20
+Max. Energy : 50 J (long pulses)
+ Dimensions : 50x50x30mm
+Sensitive Diameter : 20 mm
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Large Area or Expanded Beams
+Output Voltage, Full Scale 5V
+Sensitivity: 100 mV/W
+Min. Detectable Voltage 5mV
+Amplifier Input Voltages ± 7VDC to ± 12VDC or 14 to 24VDC floating
+Response Time (0 - 100%): <1 sec.
+Linearity : ±1% (b)
+Cooling: Water: 0.5 lit/min ( @ 22 C)
+Notes: a. Tested 10.6µm. b. Detector centrally irradiated @50% of
+useful surface
+73
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 20 W
+AHW-20-D25
+Max. Energy : 20 J (long pulses)
+ Dimensions : 60x60x30mm
+Sensitive Diameter : 25 mm
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Large Area or Expanded Beams
+Output Voltage, Full Scale 5V
+Sensitivity: 250 mV/W
+Min. Detectable Voltage 5mV
+Amplifier Input Voltages ± 7VDC to ± 12VDC or 14 to 24VDC floating
+Response Time (0 - 100%): <1 sec.
+Linearity : ±1% (b)
+Cooling: Water: 0.5 lit/min ( @ 22 C)
+Notes: a. Tested 10.6µm. b. Detector centrally irradiated @50% of
+useful surface
+Max. Continuous Power : 50 W
+AHW-50-D25
+Max. Energy : 50 J (long pulses)
+ Dimensions : 60x60x30mm
+Sensitive Diameter : 25 mm
+BBF:Broadband, flat responsivity
+Available Absorber Types:
+HCB:Hard Coating Broadband
+Wavelength Range : 0.19 - 25µm;0.25-11µm (a)
+2
+200 W/cm (BBF);
+Max. Average Power Density :
+2
+2.0K W/cm (HCB)
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Large Area or Expanded Beams
+Output Voltage, Full Scale 5V
+Sensitivity: 100 mV/W
+Min. Detectable Voltage 5mV
+Amplifier Input Voltages ± 7VDC to ± 12VDC or 14 to 24VDC floating
+Response Time (0 - 100%): <1 sec.
+Linearity : ±1% (b)
+Cooling: Water: 0.5 lit/min ( @ 22 C)
+Notes: a. Tested 10.6µm. b. Detector centrally irradiated @50% of
+useful surface
+74
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 100 W
+AHW-100-D20
+Max. Energy : 100 J (long pulses)
+ Dimensions : 50x50x33mm
+Sensitive Diameter : 20 mm
+HCB:Hard Coating, Broadband
+Available Absorber Types:
+HPB:High Power Broadband
+Wavelength Range : 0.25 -11µm (a)
+2
+HCB: 2.0 KW/cm
+Max. Average Power Density :
+2
+HPB:4 KW/cm @ CO2
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Output Voltage, Full Scale 5V
+Sensitivity: 50 mV/W
+Min. Detectable Voltage 5mV
+Amplifier Input Voltages ± 7VDC to ± 12VDC or 14 to 24VDC floating
+Response Time (0 - 100%): <1 sec.
+Linearity : ±1% (b)
+Cooling: Water: 1.5 lit/min ( @ 22 C)
+Notes: a. Tested 10.6µm. b. Detector centrally irradiated @50% of
+useful surface
+Max. Continuous Power : 200 W
+AHW-200-D20
+Max. Energy : 200 J (long pulses)
+ Dimensions : 50x50x33mm
+Sensitive Diameter : 20 mm
+HCB:Hard Coating, Broadband
+Available Absorber Types:
+HPB:High Power Broadband
+Wavelength Range : 0.25 -11µm (a)
+2
+HCB: 2.0 KW/cm
+Max. Average Power Density :
+2
+HPB:4 KW/cm @ CO2
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Output Voltage, Full Scale 5V
+Sensitivity: 25 mV/W
+Min. Detectable Voltage 5mV
+Amplifier Input Voltages ± 7VDC to ± 12VDC or 14 to 24VDC floating
+Response Time (0 - 100%): <1 sec.
+Linearity : ±1% (b)
+Cooling: Water: 1.5 lit/min ( @ 22 C)
+Notes: a. Tested 10.6µm. b. Detector centrally irradiated @50% of
+useful surface
+75
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Continuous Power : 100 W
+AHW-100-D25
+Max. Energy : 100 J (long pulses)
+ Dimensions : 60x60x33mm
+Sensitive Diameter : 25 mm
+HCB:Hard Coating, Broadband
+Available Absorber Types:
+HPB:High Power Broadband
+Wavelength Range : 0.25 -11µm (a)
+2
+HCB: 2.0 KW/cm
+Max. Average Power Density :
+2
+HPB:4 KW/cm @ CO2
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers See Absorption and Damage Thresholds
+Max. Pulse Energy Density: Graphs
+Output Voltage, Full Scale 5V
+Sensitivity: 50 mV/W
+Min. Detectable Voltage 5mV
+Amplifier Input Voltages ± 7VDC to ± 12VDC or 14 to 24VDC floating
+Response Time (0 - 100%): <1 sec.
+Linearity : ±1% (b)
+Cooling: Water: 1.5 lit/min ( @ 22 C)
+Notes: a. Tested 10.6µm. b. Detector centrally irradiated @50% of
+useful surface
+Max. Continuous Power : 200 W
+AHW-200-D25
+Max. Energy : 200 J (long pulses)
+ Dimensions : 60x60x33mm
+Sensitive Diameter : 25 mm
+HCB:Hard Coating, Broadband
+Available Absorber Types:
+HPB:High Power Broadband
+Wavelength Range : 0.25 -11µm (a)
+2
+HCB: 2.0 KW/cm
+Max. Average Power Density :
+2
+HPB:4 KW/cm @ CO2
+TYPICAL LASERS:Diode Lasers
+Diode arrays CO2
+Nd :Yag Ion Lasers
+Max. Pulse Energy Density: See Absorption and Damage Thresholds Graphs
+Output Voltage, Full Scale 5V
+Sensitivity: 25 mV/W
+Min. Detectable Voltage 5mV
+Amplifier Input Voltages ± 7VDC to ± 12VDC or 14 to 24VDC floating
+Response Time (0 - 100%): <1 sec.
+Linearity : ±1% (b)
+Cooling: Water: 1.5 lit/min ( @ 22 C)
+Notes: a. Tested 10.6µm. b. Detector centrally irradiated @50% of
+useful surface
+76
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Standard OEM Laser Probes (FIT Series)
+Max. Power : 50 W
+Fit-50-H
+Power Resolution: 50mW
+TYPICAL LASERSCO2 :
+Yag(CW or long pulse) Diode Arrays
+Diode Lasers Dia 50mm x 20m Thk m;
+Dimensions:
+Stem L= 102 mm (a)
+Sensitive Diameter : 20 mm
+Absorber Type: HCB-Hard Coating Broadband (b)
+Wavelength Range : 0.25-11µm
+2
+Max. Average Power Density : 2.0 KW/cm
+NEP(Noise Equivalent Power) : 12 mW
+Repeatability: ± 1%
+Calibration Accuracy (%): ±3%
+Time to Measure and Display Data: 4 sec.
+Linearity : ±1% (c)
+Cooling: Convection
+Notes: a- available cable lengths: 1.5 to 5m, b. Calibrated up to 10.6µm.
+c. Detector centrally irradiated @ 50% of useful surface
+Max. Power : 200 W
+Fit-200-H
+Power Resolution: 200mW
+TYPICAL LASERS:CO2
+Yag(CW or long pulse) Diode Arrays Dia 50mm x 25mm Thk; Stem L= 102
+Diode Lasers
+Dimensions: mm (a)
+Sensitive Diameter : 20 mm
+Absorber Type: HCB-Hard Coating Broadband (b)
+Wavelength Range : 0.25-11µm
+2
+Max. Average Power Density : 2.0 KW/cm
+NEP(Noise Equivalent Power) : 25 mW
+Repeatability: ± 1%
+Calibration Accuracy (%): ±3%
+Time to Measure and Display Data: 4 sec.
+Linearity : ±1% (c)
+Cooling: Convection
+Notes: a- available cable lengths: 1.5 to 5m b. Calibrated up to 10.6µm.
+c. Detector centrally irradiated @ 50% of useful surface
+77
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Power : 500 W
+Fit-500-H
+Power Resolution: 500mW
+TYPICAL LASERS:High Power CO2 Dia 66mm x 30mm Thk;;Stem L= 102
+High Power Yag Diode Lasers
+Dimensions: mm (a)
+Sensitive Diameter : 25 mm
+Absorber Type: HPB- High Power Broadband (b)
+Wavelength Range : 0.25-11µm
+2
+Max. Average Power Density : HPB: 4 KW/cm @CO2 (c)
+NEP(Noise Equivalent Power) : 50 mW
+Repeatability: ± 1%
+Calibration Accuracy (%): ±3%
+Time to Measure and Display Data: 4 sec.
+Linearity : ±1% (d)
+Cooling: Convection
+Notes: a- available cable lengths: 1.5 to 5m b-Calibrated up to 10.6µm.
+c-@ 20°C  Ratings Temp. Dependent. For Multiple Measurements Derate 50%
+d-. Detector centrally irradiated @ 50% of useful surface
+Max. Power : 3000 W
+Fit-3000-H
+Power Resolution: 3 W
+TYPICAL LASERS:High Power CO2 Dia 92 mm x 65mm Thk;Stem L= 102 mm
+HighPower Yag Diode Lasers
+Dimensions: (a)
+Sensitive Diameter : 40 mm
+Absorber Type: HPB- High Power Broadband (b)
+Wavelength Range : 0.25-11µm
+2
+Max. Average Power Density : HPB: 4 KW/cm @CO2 (c)
+NEP(Noise Equivalent Power) : 230 mW
+Repeatability: ± 1%
+Calibration Accuracy (%): ±3%
+Time to Measure and Display Data: 5 sec.
+Linearity : ±1% (d)
+Cooling: Convection
+Notes: a- available cable lengths: 1.5 to 5m b- Calibrated up to 10.6µm.
+c- @ 20°C  Ratings Temp. Dependent. For Multiple Measurements Derate 50%
+d-. Detector centrally irradiated @ 50% of useful surface
+78
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Max. Power : 6000 W
+Fit-6000-H
+Power Resolution: 10 W
+TYPICAL LASERS:High Power CO2
+HighPower Yag Diode Lasers Dia 100mm x 100mm thk ; Stem L= 102
+Dimensions:
+mm (a)
+Sensitive Diameter : 60 mm
+Absorber Type: HPI-High Power Infrared (b)
+Wavelength Range : 0.25-1.5µm- 10.6µm
+2
+Max. Average Power Density : 6KW/cm @ CO2 (c)
+NEP(Noise Equivalent Power) : 500 mW
+Repeatability: ± 1%
+Calibration Accuracy (%): ±3%
+Time to Measure and Display Data: 5 sec.
+Linearity : ±1% (d)
+Cooling: Convection
+Notes: a- available cable lengths: 1.5 to 5m a- Calibrated up to 10.6µm.
+b- @ 20°C  Ratings Temp. Dependent. for Multiple Measurements Derate 50%
+c-. Detector centrally irradiated @ 50% of useful surface
+79
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Build up the Complete Product Code Before Ordering
+Example of a Complete Code:
+AHW-50- D20- HCB-DN
+Connector Type:e.g. DB15
+Coating Type: e.g. HCB (Hard Coating Broadband)
+Sensitive Dia : e.g. 20mm
+Max. Pwr. : e.g. 50 W
+Amplified Head- Water Cooled
+Ordering Information
+Item (please add all codes when
+Code Item Code
+ordering)
+OEM Sensor Disks OEM Laser Probes
+10mW - 20W SD-20-D12 50mW-50W FIT 50-H
+10mW - 20W SD-20-D20 200mW-200W FIT 200-H
+15mW - 50W SD-50-D20 500mW-500W FIT500-H
+15mW - 50W SD-50-D25 3W-3000W FIT3000-H
+50mW -200W SD200-D20 6W-6000W FIT6000-H
+Coating Type:
+-Brodband, Flat Responsivity -BBF
+-Hard Coating Broadband -HCB
+50mW -200W SD200-D25
+-High Power Broadband -HPB
+-Excimer -EX
+OEM Thermal Heads Connections
+Leads-Natural response WN
+10mW - 20W CSA-20-D12
+Leads-Amplification and
+WA
+10mW - 20W CSA-20-D20
+acceleration
+BNC-Natural response BN
+15mW - 50W CSW-50-D20
+MOLEX-Amplification and
+15mW - 50W CSW-50-D25 MO
+acceleration
+DB15-Natural response DN
+50mW -200W CSW-200-D20
+Interfacing Modules
+50mW -200W CSW-200-D25
+Amplified and Accelerated
+Laser Process Monitor-OEM LPM-OEM
+OEM Thermal Heads
+Laser Process Monitor -CE LPM-CE
+5W f.s. AHA-5-D12
+PLUS Monitor PLUS
+10W f.s. AHA-10-D12
+Software for PLUS Monitor PLUS_SOFT
+20 W f.s. AHA-20-D12
+5W f.s. AHA-5-D20
+10W f.s. AHA-10-D20
+20 W f.s. AHA-20-D20
+20 W f.s AHW-20-D20
+50 W f.s AHW-50-D20
+20 W f.s AHW-20-D25
+50 W f.s AHW-50-D25
+100 W f.s. AHW-100-D20
+200 W f.s. AHW-200-D20
+100 W f.s. AHW-100-D25
+200 W f.s. AHW-200-D25
+80
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Applications of OEM Sensors & Heads
+A-Thermal Sensor Disc and Heads
+Laser source monitoring
+This is by far the most popular application of OEM heads. They are placed behind laser rear mirrors and catch the <1-2% radiation leaks exiting from these mirrors; that amount is strictly proportional to the total emitted power so its
+measurement results to be very reliable. Given the small leakmonitored by low power sensors. Though the final validation of age fraction, multi-kilowatts sources can be continuously a laser source, including the calibration of its internal
+power sensor, is made by a power meter, yet OEM sensors provide successive field monitoring, are used for later alignment purposes and setting of process parameters.
+1-2%99-98%
+Laser
+To process
+OEM sensor:V to control unit
+out
+Fiber monitoring
+Monitoring the integrity of fibers delivering Nd-Yag, Diode laser, medical lasers powers, can be done by picking up the residual beam portion beams, either at high powers or low (< 0.5-2%) non reflected by the total 90º mirror in the
+focusing heads.
+0.5-2%
+99-98%
+Laser
+OEM sensor:V to control unit
+out
+On-line monitoring
+On-line monitoring can be easily achieved by exploiting the components (like beam splitters, filters, diffrleaks of existing optical elements or keeping dedicated active optics, etc) into the beam path.
+OEM sensor:V to control unit
+out
+Laser
+To application
+Beam dump
+In some medical applications the laser must be kept running attreatment. The necessary power/energy must be immediately its working power or energy even when it is not in use for available for the short periods of application and there
+must be no delays (e.g. warm-up times ). OEM heads are usextractable mirror releases ed as beam dumps for the non-operating periods and an the beam for the application.
+OEM sensor:V to control unit
+out
+Laser
+To application
+Removable mirror
+81
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Sampling at measuring port
+Several medical machines bear a port for time-to-time measuremit is a precise requirement from FDA to have a monitor ent of laser power or energy. In Countries like the US for each laser on-board the machine. OEM heads are plugged
+into the ports to read the power or energy available for treatment exiting, e.g. from optical fibers or fiber tips crack very easilyfibers. Moreover, since optical , frequent checks are a wise solution.
+Fixed measurement port with OEM head
+Laser
+To application
+B-OEM Laser Probes Operation in the Probe Mode ( periodic power check)
+controls of beam power during working cycles, after la Measurements runs can be planned to accomplish short ser parameter resetting, optics realignment, etc. The use of
+special FIT (Fast Integrating Thermopile) heads, which do notgreat help in many industrial environments where having require any water cooling even at several KWs, is of water at the application area is a problem. The OEM laser
+probes are perfecy for use with the LPM electronics whose standard DIN rail and housed in industrial cabinet or rack. Daacquisition and processing board can be plugged on any ta can be analysed (3) by the specific SW for the Probe
+Mode or, should immediate any immediate warnings be needed, visible/ acoustic alarms can be triggered.
+Periodic controls in manufacturing
+Periodical monitoring and control of power in laser cutting or welding machines. The LPM software allows the setting of alarm thresholds for a GO/NO GO of manufacturing process
+Laser
+Laser
+Laser Control Unit
+Manufacturing
+4 sec laser power control
+Laser Control Unit
+LPM- Electronics
+Working Plane
+82
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Systematic monitoring of process parameters
+Periodical monitoring and control of constancy of power level in laser robot applications for total repeatability of process . The LPM allows the setting of alarm thresholds for a GO/NO GO of manufacturing process
+Laser Control Unit
+ Fit Detector
+process4 sec power check
+Predictive Maintenance
+Prediction of incoming failures ,e.g. at optical components, can be easily done by cross checking the power/energy delivered by the laser source and what is effectively delivered to the work piece. A too high difference between the two
+values may indicate that damages already occurred.
+Laser
+Laser Manufacturing
+2500 W
+ FIT-H Head
+Laser Control Unit
+2355 W
+Monitoring of Marking, Micro-welding, and Micro-Machining Systems
+Monitoring of energy or power as they are delivered after the focusing lens, providing a facorrect values for the process, of the optst and direct control of the ical system or optical fiber integrity can be done with LPM by simply displacing
+the optics or the translation stages
+.
+Laser
+ FIT-H Head
+83
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+LaserProbes
+Fit and Cronos
+Many applications do not require the tight specifications of power meters. For others it is simply sufficient to make quick checks and there is no necessity to measure over an extended period of time; while it is sufficient to have readings in a
+snapshot just to monitor if power is ok. Sometimes water is not available on the machine. Many times it is a bare matter of limited budget. Thats the world for a different class of instruments known as laser probes or power probes.
+Those instruments are stand alone units made of a thermal general, existing instruments of this type are thermometeprobe connected to an electronics and its display. In rs that measure a temperature difference in a fixed time and
+have a simple dial or a digital display. They have a number of major measurement time, which in most of cases has to be evaluateddrawbacks, like their dependence on by the operator, their poor repeatability or accuracy, the
+fact that after each measurementLaserPoint has introduced a real breakthrough in the field with they need to be cooled, etc. two new series of fully automatic laser power probes
+that calculate laser power by a microprocessor based measurement of temperature dynamics.
+acquisition technique self-determines the time needed to caTheir measurement and rry out a measurement: data acquisition is triggered and
+stopped by detecting set heat parameters thresholds. This measurements of exposure times and may allow multiple mtechnique is totally free from induced errors due to easurements without the need of forcing cooling to the
+absorber.
+Both Fit and CRONOS feature a large multifunction LCD measured power, the wavelength of calibratithat simultaneously indicates the on (CO2, Nd-YAG) and low-battery. Furthermore a
+moving bar shows the actual absorber temperature;perform more measurements before the absorber r this informs the operator whether he can still eaches its maximum allowable temperature and
+needs to be cooled. Additionally, the probe status is(steady green), measurement is in progress (flash displayed by a two colour LED: probe is ready ing green), measurement is over (steady red) or
+cooling is needed (flashing red). Fit and CRONOS are both operated by a single button. They store the last measurement in memory
+and shut automatically off after 5 minutes of non operation. Two common AA batteries allow a minimum of 5000 measurements.
+Fit and CRONOS have been ergonomically designed in all balance of weights, to provide a comfortable their details like the LCD display and the and safe operation. The absorbers feature low
+reflections and high damage thresholds; in particular the hi-power, multi kilowatt concave conical shape to avoid dangerous back-reflections toward the operator. CRONOS have a
+Recalibrations can be made user. Fit, with its low profile sensor head connected to the display body by 1m extensible cord, allows
+remote testing even in tiny spaces.
+Simple, yet Advanced Measurements Tools
+CRONOS:
+Fit:
+Fully automatic, high power probe series -3models cover from 1.5W to 10kW
+-
+Fully automatic, low power probe series-3models cover from 500mW to 500W.
+-dual wavelength (CO2 and Yag) , -4sec to measure and display
+-±1% repeatability -±3% accuracy
+-10 mW resolution on 50W probe-Recalibration possible b
+dual wavelength (CO2 and Yag) , -8sec to measure and display
+-±2% repeatability ( ±5% for 5 and 10KW models)
+-±4% accuracy -1W resolution on 10KW probe
+- Recalibration
+y Use r
+p ossible b y Use r
+84
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Fit Series: Specifications
+Fit50 Fit200 Fit500
+Parameter
+Maximum Measurable Power (W) 50 200 500
+ (1) (1)
+Minimum Measurable Power @ ±3% accuracy (W) 2 (1) 8 20
+Absolute Minimum Measurable Power (W) 0.5 2 5
+Max Laser beam Diameter (mm) 20 20 25
+Power Density Damage Threshold @ 250W(10J-0.5msec-25Hz) at 10000
+2
+1.064µm (YAG laser)(W/cm )
+Power Density Damage Threshold @ full scale at 10.6µm (CO 2500
+2
+2
+laser) (W/cm )
+Repeatability ± 1%
+ADC Resolution (W) ± 0.06 ± 0.25 ± 0.60
+Display Resolution (W) 0.01 0.1 0.1
+Accuracy ±3%
+Maximum Allowable Probe Temperature (°C) 70
+Time to measure and display data (s) 4
+Ordering Information
+Consumption in ON status (mW) 26
+Consumption in OFF status (W) 25
+Power Supply ( 2 Batteries AA type) (V) 3
+Continuous Operation without Battery Replacement (h) 200
+Operating Temperature Range (°C) +10 to +40
+Storage Temperature Range (°C) -10 to +60
+Weight (Body) (g) 336
+Weight (Sensor Head with cable) (g) 178 200 280
+Dimensions (Sensor Head) L x W x H (mm) 56x20 56x25 66x30
+ Dimensions (Body) L x W x H (mm) 95x71x46
+(1) Individually compared against a NIST/PTB reTo maintain performance and specifications, LaserPointference; NIST/PTB traceability on request. recommends to calibrate the sensor once a year.
+*(All specifications subject to change without notice)
+105
+C
+Cable 1200 mm
+71
+Ø
+A
+Ø
+B
+On Diameter D
+40
+88
+Code
+Item (please add all codes when ordering)
+Digital Laser Power Probe (0.2-50W) Fit 50
+Digital Laser Power Probe (2-200W) Fit 200
+ Digital Laser Power Probe (5-500W) Fit 500
+ NIST / PTB Traceability Certificate (on request) -Cert
+Example of order Code: Fit50-Cert
+85
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Cronos Series: Specifications
+ Parameter LP1.5 LP5.0 LP10
+Maximum Measurable Power (W) 1500 5000 10000
+(1) (1) (1) 1000
+Minimum Measurable Power @ ±4% Accuracy (W)
+150 500
+Absolute Minimum Measurable Power (W) 30 100 200
+Max Laser Beam Diameter (mm) 40 55 65
+2600 1900 1500
+2
+Power density damage threshold @ full scale (W/cm )
+Repeatability ±2% ±5% ±5%
+Measurement Accuracy ±4%
+Resolution (W) 1
+Maximum allowable absorber temp. (°C) 150
+10
+Time to measure and display data at full scale power (s)
+15
+Time to measure and display data at min. scale power (s)
+Power consumption in On status (mW) 26
+Power consumption in Off status (microW) 25
+Power supply (2x AA Batteries) (V) 3
+200
+Continuous operation without battery replacement (h)
+Operating temperature range (°C) 10 to 40
+Storage temperature range (°C) -10 to 60
+Weight (g) 480 950 1300
+Length with handle (mm) 300 310 320
+(1) Individually compared against a NIST/PTB refere*(All specifications subject nce. NIST/PTB traceability on request. to change without notice)
+To maintain performance and specifications, LaserPoint recommends to calibrate the probes once a year.
+Model A B C Active Area
+ØB
+1.5 kW 40 50 35 Flat
+ØA
+5 kW 55 75 65 Conic
+30
+10 kW 64 90 75 Conic
+286
+Ordering Information
+Code
+Item (please add all codes when ordering)
+Digital Laser Power Probe (30-1500W) Cronos 1.5
+Digital Laser Power Probe (100-5000W) Cronos 5.0
+Digital Laser Power Probe (200-10000W) Cronos10
+NIST / PTB Traceability Certificate (on request) -Cert
+Example of Ordering Code: Cronos5.0-Cert
+86
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Fit-IPL:Energy & Power Meter for IPL (Intense Pulsed Light)
+FFiitt--IIPPLL is a fully automatic, hand-held energy and power meter designed for IPL (Intense Pulsed Light) applications.
+FFiitt--IIPPLLworks on a microprocessor based patent pending measurement technique of temperature dynamics through a
+thermopile sensor; measurement and data acquisition are fully automatic, making this technique virtually free from
+operator induced errors.
+FFiitt--IIPPLLis extremely friendly in use and features with all handpieces. The broadband detector works in the range from 400 to 1400 nm, which a large exposure area (Dia=60mm) to match
+is the range of interest for the majority of applications (photoepilation, skin rejuvenation, treatments of acne, vascular and pigmented lesions, psoriasis).
+ The absorber coating of Fit-IPL remains fully responsive also when filters are used to reduce
+the lamp spectral bandwidth. This absorber is veextreme fluencesry robust, as it has been designed to face the (up to 90J/cm2) of professional systems (medical and clinic) where the
+highest pulse energies are involved. But it is alsoprofessional systems (beauty salons) and cons very flexible since it can operate with semi-umer-oriented systems (2 to 10J/cm2).
+FFiitt--IIPPLL bears a multifunction LCD that simultanpower) delivered by the handpiece, teously indicates the flashlamp energy (or he instrument mode of operation [Sin forsingle shot
+(energy) or rEP for repetitive (power)], probe model and low-battery warning. A bargraph shows the sensor temperature to inform the operator whether he can still perform more measurements before the sensor reaches its maximum
+allowable temperature. Additionally, the probe status is displayed by a two colour LED indicating if the instrument is ready for measurement, if the reading is in progress or over and if cooling is needed.
+FFiitt--IIPPLL is operated by a single button; itshuts automatically off after 5 minutes of non operation and always stores its last measurement in memory. Two common AA batteries
+allow a minimum of 4000 measurements.
+FFiitt has been ergonomically designed in all its detaiconnected to the display body by 1m extensible cord, permits remote testing even in tiny ls: the low profile thermopile sensor head,
+spaces. Another important feature is recalibration, which can be made by the user.
+Fit-IPL can measure both flashlamps single shot energies
+up to 300 Joules and average powers, when in burst
+mode operation, up to 30 W.
+Fit-IPL innovative measurement concept reduces the time
+of measurement and display to 10 sec. with excellent
+repeatability (±1%), accuracy (±3%) and high resolution
+(100 mW up to 100-W full scale) associated with a wide
+d y namic ran g e of measurement ( down to 1% of f.s. ) .
+87
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+FIT-IPL Specifications
+Parameter Power (rEP) Energy (Sin)
+Maximum Measurable Power (W) / Energy (J) 30 300
+Min. Meas. Power/Energy @ ±3% Accuracy (W) / (J) 4 (1) 16 (1)
+Absolute Minimum Measurable Power/Energy (W) / (J) 1 4
+Max Light Beam Diameter (mm) 60
+Power Density Damage Threshold @ 250W(10J-0.5msec-25Hz) at
+2 10000
+1.064 µm (YAG laser)(W/cm )
+Power Density Damage Threshold @ full scale at 10.6µm (CO
+2
+2 2500
+laser) (W/cm )
+Repeatability ± 1%
+ADC Resolution (W) / (J) ± 0.125 ± 0.50
+Display Resolution (W) / (J) 0.01 0.1
+Accuracy ±3%
+Maximum Allowable Probe Temperature (°C) 70
+Time to measure and display data (s) 4
+Consumption in ON status (mW) 26
+Consumption in OFF status (µW) 25
+Power Supply ( 2 Batteries AA type) (V) 3
+Continuous Operation without Battery Replacement (h) 200
+Operating Temperature Range (°C) +10 to +40
+Storage Temperature Range (°C) -10 to +60
+Weight (Body) (g) 336
+Weight (Sensor Head with cable) (g) 178
+Dimensions (Sensor Head) LxWxH (mm) 95x20
+ Dimensions (Body) LxWxH (mm) 95x71x46
+Ordering Information
+Item (please add all codes when ordering)
+Digital Power/Energy Probe (100W-300J) Fit -IPL
+88
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Applications of LaserProbes
+Laser Probes can be used in a variety of applications. Upservice engineers who could rely on their portability, ease to now they have been the standard measurement tool for of use and quick measurement time. The new generation of
+probes manufactured by LaserPoint extend their range of applicany level , to any industrial job shop for internal ations and makes them available to laser technicians of controls, for periodical controls of medical equipment.
+This is due to the number of advantages that both FIT and Cronos probes offer, when compared to old generation equipment.
+For example a high degree of measurement repeatability is necessaryor whether the best available power has been reached af to verify whether a source is stable or is drifting ter an alignment session . On standard probes, who have an
+error bar of 10% ( +/-5% ) , such an uncertainty can be misleading. Fit and Cronos, with their possibility to repeat several measurements beginning a few seconds after the previous one
+and without stopping minutes for cooling and rinsing, offer a conditions. double advantage: save time and work with the same laser
+Automatic measurements mean that there is no need to measurintroduced . The 4 or 8 seconds are decided by the internal clock of FIT and Cronos which start and stop measurement e the exposure time and that, for this, no errors are
+above a triggering level. The operator can keep the probe a longer time under the labeam : no measurement errors are made . Readings can be ser or even insert it in a running done by a single person rather than the usual two
+operators, one at the control unit to open/close the shutter and the other one on the machine to make the measurement.
+The possibility to store and recall the last measurement valtask activities may distract laser operators. ue helps in many industrial works, where hurry and multi-
+Accuracy and a high degree of repeatability of measurements are whknow the exact power delivered to a patient. The Fit series has performances equal to power meters so that FIT at is needed by several medical applications to
+probes can be a powerful substitute whether there no othermeters cost. needs, like long term monitoring. At a fraction of power
+Laser Alignment
+Verification if maximum power has been reached after laser tweaking can be done in 8 sec with Cronos or 4 sec with FIT. This measurement is very useful as a crosscheck with laser internal power monitor.
+Lase r
+Control Unit
+Laser Power Monitoring
+Periodical verification of real laser output can be done with laser probes, in particular if there are doubts on effective delivered power . A practical case is when the laser internal monitor displays a value, but the application is not running
+properly.
+Laser
+Control Unit
+89
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Monitoring of complete beam delivery systems at the workplace
+A monitoring of the complete beam line, down to the workplace, can explain why cutting, welding, etc do not perform well. Cronos and Fit can easily show discrepancies with the internal laser monitor, indicate that there may be damaged
+components on the beam line or power losses due to misalignments.
+Laser
+Control Unit
+Verification of Damaged or Dirty Components
+Locating damaged optical components can be done easily by making a reading before and a reading after the component itself. Optical components in good shape never lose more than a very few percent of laser power. Major
+losses can be ascribed to damages or dirt ; in any case changing the optics or clean it will save future troubles and costs.
+FIT and Cronos probes are ideally suited for this kind of verificareadings and the possibility to make another measurement, a tion since their reliable measurements permit to trust the few seconds after the first one , is practically independent
+from laser fluctuations.
+Laser
+To target
+90
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Fast monitoring of marking and micro-welding systems
+Low and mid power lasers can be efficiently monitored by the FIT series. The 1% repeatability and high resolution (10mw on the 50W model) of those probes, make their measurements the reliable references for setting application
+parameters or for periodical verification.
+Laser
+Fast monitoring of medical lasers
+Periodical monitoring of CW medical lasers (CO2, Yag, Argon precise FIT probes. Verification of losses within articulated etc) can be quickly done (4 sec) with highly reliable and arms, breakings of fiber tips, damages on focusing optics or
+handles are immediately detectable thanks to the high level of repeatability and high resolution of those probes.
+Laser
+91
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Customer Support
+LaserPoint is proud to support his Customers to the highest level . Should you need information which you do not find on our catalog or need to discuss technical and commercial aspects,
+our Engineers and Sales staff will help you simply by calling or writing .
+New OEM Projects
+If you are designing a new laser source, system or machine and nesubmit by fax or email the New Application Form providing ed a custom detector or monitornig setup, just fill and laser data, system specs and application; LaserPoint will be
+back to you with a proposal. If an NDA (Non Disclosure Agreement) is required for your project security , we can sign it as we normally do with many
+of our Customers .
+Post- Sale Assistance
+-Should an instrument be serviced in or after the warranty period, you are kindly requested to ask for an RMA number. Please fill the RMA form indicating faults and encountered problems. The RMA number will facilitate tracking the
+returning instrument and your information help our Engineers in their diagnose. -Dou you need additional technical support on the instrument or on how to use it? Just contact Laserpoint by phone, fax
+or e-mail and you will get an appropriate answer. -If you need to add an additional head or use your existing system within a different application , ask for a free
+consultancy to LaserPoint. A simple phone call or an e-mail mayour instrument coating. y address you to a more suitable approach or even save
+Recalibration
+It is a good rule to recalibrate instruments once a year and to do this it is necessaYou also need to get an RMA number , which is simply obtainabry to ship back the units to LaserPoint . le by filling the associated form. Recalibration is done
+within a few working days from receipt, but maybe during this period you still need a calibrated instrument in your lab : ask LaserPoint or one of our Distributors for a spare unit, just to fill the gap.
+Manuals Have you lost the instruction manual or some descriptions are not clear enough?
+Contact Laserpoint directly or email to sales@laserpoint.it
+ for any additional support might be necessary.
+Upgrades Software upgrades are available on the website http://www.laserpoint.it/
+ Returns for Calibrations and Repai r A Final Safety Rule
+Prior to shipment:1-Ask directly to LaserPoint or one of his Distributors for the RM Never exceed the power density limits specified for your sensor.
+To preserve both accuracy and life of detectors, it is necessary to operate within
+the power or energy densities specified for each model. Exceeding those limits
+physically wears coatings and materials, modifies spectral responses and thus
+measurements.
+A
+(Return Material Authorization) Number. This will be issued andquotation will follow immediately after the receipt of material in
+LaserPoint . 2-Report:
+-Model Number -Serial Number
+-Purchase Order Number and date -Shortly describe defects (if any)
+3-Ship to LASERPOINT s.r.l. -Via Bur: ona,51 Vimodrone (Milano) 
+I20090 Italy or to one of our Distributors
+Return timeTime to calibrate instruments normally occurs within 5 working
+days after receipt. A faster service is available at an additional charge (please ask).
+92
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Appendix- Note
+93
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Appendix- Note
+94
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Appendix- Note
+95
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+Appendix- Note
+96
+Via Burona, 51 - Vimodrone (Milano) - ITALY
+Ph +39 02 27 40 02 36 Fax +39 02 25 02 91 61web: www. laserpoint.it
+
+MAQ$Q6n`d'@_ofmbAtOo{~alySnwJs]P28>>@BT@?>=<;:9876543210/.-,+*
+[&XK|8[7?jW>L|?@4I

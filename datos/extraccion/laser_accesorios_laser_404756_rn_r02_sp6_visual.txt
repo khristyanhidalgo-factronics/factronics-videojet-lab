@@ -1,0 +1,481 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\404756.RN.r02.SP6.pdf
+# cifrado=False bloques=30 caracteres=23518
+
+Videojet Software Release Notes
+Product: CLARiTY Laser Controller
+Part Number 404756 r02 SP6
+Release Date: 22 August 2017
+Released By: John Bartram
+This document describes all of the changes to the product software since the previous
+revision. Changes are listed as new features and bug fixes, also included are all of the
+known problems that have been found.
+CLARiTY is a registered trademark.
+New Features Summary
+Required Software Version
+(or later)
+Case# Name Summary Description CCM CLARiSOFT
+E01022 3140 & 3340 support added New 40-Series are replacement CO2 marking systems Not Applicable 4.409.SP6
+for the 20-Series
+E01059 Support added for Inter Inter Character Spacing can be applied to Text, Date, Not Applicable 4.409 SP8
+Character Spacing Time, Counter & Price fields
+E01060 Q-Switch Parameter added Q-Switch is applicable to 7810 marking systems only and Not Applicable 4.409 SP9
+for 7810 Marksets is related to the marking frequency
+E01063 Square now available for Add a square to your CLC jobs by pressing the Drawing Not Applicable 4.409 SP11
+setting up MOTF applications icon on the left hand side of CLARiSOFT
+E01064 Graphic Support added CLARiTY Laser Controller now loads Logos Not Applicable 4.409 SP11
+E01065 Various 1-D Barcodes now EAN13, ITF, Code128 and EAN-128 Barcodes now Not Applicable 4.409 SP11
+supported supported
+E01066 New 3640 CO2 Marking New 3640 CO2 Marking Systems now supported Not Applicable 4.409 SP11
+Systems now supported
+E01068 Videojet Remote Services 'Remote Service' is now found at Not Applicable Not Applicable
+(VRS) Now Displayed at CLC Tools/Diagnostics/Control/Communications/TCPIP
+Software Release notes for Part Number 404756 r02 SP6 Page 1 of 29
+
+E01096 New marking systems Support added for 7220 & 7320 Fibre lasers Not Applicable 4.500
+supported
+E01101 Production Audit Log Additional user occurrence’s are now logged Not Applicable Not Applicable
+Enhancements
+E01129 Interlock and Shutterlock Some faults that were user-clearable now self-clear Not Applicable Not Applicable
+behaviour changes
+Software Release notes for Part Number 404756 r02 SP6 Page 2 of 29
+
+Bug Fix Summary
+Required Software Version
+(or later)
+Case# Name Summary Description CCM CLARiSOFT
+B01032 Text Com GJD, GJL & GJF Fix for text commands Freezing CLARiTY When in Not Applicable Not Applicable
+Fix Remote Host Mode
+B01061 Merged field fixes and User Variable fields now successfully merge into other Not Applicable Not Applicable
+enhancements fields
+B01062 Decrementing Counters now Decrementing counters no longer cause 'Job Download Not Applicable Not Applicable
+load as expected Failed' Faults
+B01067 Datamatrix Barcode Datamatrix barcodes now appear in the expected position Not Applicable 4.500 SP1
+Alignment Fixs relative to other fields, barring some rounding errors
+B01073 CLC Clones now restore This fix also applies to CLC Archives Not Applicable Not Applicable
+Fixed Print Speed & Product
+Side Selection
+B01080 Advanced Passwords now Previously the users would all appear blank when trying Not Applicable Not Applicable
+work with more than 7 users to log in
+B01105 Fix for Total Count doubling Interlock being opened too quickly after a mark has Not Applicable Not Applicable
+with Interlock open finished no longer interferes with Counter values
+B01106 Asynchronous Text Coms Previously, they would not be outputted from the CLC Not Applicable Not Applicable
+now output Qhigh, Qlow, where they would be from other CLARiTY printers
+Qfull, Qempty
+B01107 GS1 Barcode Builder now Previously it was available but did not work as expected Not Applicable Not Applicable
+fully supported
+B01108 Merged field fixes Resolved issue of 'E6200 Job Download Failed' for non- Not Applicable Not Applicable
+printed user variable fields being merged
+B01117 GS1 Barcode Builder User User Entered Dates can now use values greater than 999 Not Applicable Not Applicable
+Entered Dates enhancement days into the future
+B01120 Improvements to CLC ability Potential health & safety risk is now prevented Not Applicable Not Applicable
+to stop marking process
+B01127 Transmitted Field fix Jobs containing a Transmitted Field now load if Not Applicable Not Applicable
+Passwords and Event Logging are turned on
+B01128 CLARiTY job counters now Counters within job now match the marking system's Not Applicable Not Applicable
+update on Marking System's 'Product Count'
+'Product Count'
+Software Release notes for Part Number 404756 r02 SP6 Page 3 of 29
+
+Case# E01022 NAME 3140 & 3340 support added Type: Enhancement
+Summary Description Required Software Version (or later)
+New 40-Series are replacement CO2 marking systems for the 20-Series
+CCM CLARiSOFT
+Not Applicable 4.409.SP6
+Details:
+CLARiSOFT Version 4.409.SP6 or newer will be required to create jobs for these CLC
+Marking Systems.
+CLARiNET Version 4.409.SP6 or newer will be required to monitor printer performance.
+Note: CLARiSOFT and CLARiNET installed on the same PC must be the same software
+revision, otherwise issue are to be expected.
+Software Release notes for Part Number 404756 r02 SP6 Page 4 of 29
+
+Case# E01059 NAME Support added for Inter Character Type: Enhancement
+Spacing
+Summary Description Required Software Version (or later)
+Inter Character Spacing can be applied to Text, Date, Time, Counter & Price fields
+CCM CLARiSOFT
+Not Applicable 4.409 SP8
+Details:
+To create jobs with fields that have Inter Character Spaces applied, CLARiSOFT 4.409
+SP8 (or newer) is required. Once created, these jobs will then have to be loaded into a
+CLC running r02 SP1 or newer.
+For each field type (Text, Date, Time, Counter & Price) there is now an Inter Character
+Space parameter on the Font TAB.
+Units are mm.
+Default value is 0.
+Range available is 0-10.
+Software Release notes for Part Number 404756 r02 SP6 Page 5 of 29
+
+Case# E01060 NAME Q-Switch Parameter added for 7810 Type: Enhancement
+Marksets
+Summary Description Required Software Version (or later)
+Q-Switch is applicable to 7810 marking systems only and is related to the
+marking frequency
+CCM CLARiSOFT
+Not Applicable 4.409 SP9
+Details:
+Software Release notes for Part Number 404756 r02 SP6 Page 6 of 29
+
+Case# E01063 NAME Square now available for setting up Type: Enhancement
+MOTF applications
+Summary Description Required Software Version (or later)
+Add a square to your CLC jobs by pressing the Drawing icon on the left hand side
+of CLARiSOFT
+CCM CLARiSOFT
+Not Applicable 4.409 SP11
+Details:
+Add a square shape in CLARiSOFT.
+On the Graphic TAB of the Drawing Property Box, the Primitive Type 'Outline Box' is
+required for a square.
+The square can be stretched to any size but the line width is fixed at 0.38mm.
+This change requires CLARiSOFT 4.409 SP11 (or newer) to create the job files.
+Software Release notes for Part Number 404756 r02 SP6 Page 7 of 29
+
+Case# E01064 NAME Graphic Support added Type: Enhancement
+Summary Description Required Software Version (or later)
+CLARiTY Laser Controller now loads Logos
+CCM CLARiSOFT
+Not Applicable 4.409 SP11
+Details:
+First, logos will have to be loaded onto a marking system via Smart Graph.
+After Logos have been loaded onto a marking system, the CLC will need to be re-
+powered for the logos to be visible to CLC.
+Then, CLARiSOFT jobs can be created with the same logos referenced that are already
+existing on the marking system.
+These jobs can then be sent to (and printed by) the CLC-Laser system without issue.
+Logos that are rotated AND stretched at the same time are not supported.
+This change requires CLARiSOFT 4.409 SP11 (or newer) to create the job files.
+Software Release notes for Part Number 404756 r02 SP6 Page 8 of 29
+
+Case# E01065 NAME Various 1-D Barcodes now supported Type: Enhancement
+Summary Description Required Software Version (or later)
+EAN13, ITF, Code128 and EAN-128 Barcodes now supported
+CCM CLARiSOFT
+Not Applicable 4.409 SP11
+Details:
+This change requires CLARiSOFT 4.409 SP11 (or newer) to create the job files.
+Known issues:
+There may be some minor sizing and positional issues seen on the CLC screen with
+specific sizes of some barcodes.
+Merging of data from existing fields into barcodes may cause issues if the data requires a
+check-digit.
+Example: if 13 digits are required to be merged into an EAN13 barcode this can be
+successfully achieved 1 of 3 ways on other CLARiTY printers.
+1. Merge 13 (correct) numeric digits from an existing text field - On the CLC UI the job
+will appear ok but the marking system will have a blank job.
+2. Merge from a text field containing 12 numeric digits + Checksum appended to it - On
+the CLC UI the job will appear ok but the marking system will have a blank job.
+3. Merge from a text field containing 12 numeric digits - on the CLC this is successful as
+the the Marking System generates its own text field.
+Software Release notes for Part Number 404756 r02 SP6 Page 9 of 29
+
+Case# E01066 NAME New 3640 CO2 Marking Systems now Type: Enhancement
+supported
+Summary Description Required Software Version (or later)
+New 3640 CO2 Marking Systems now supported
+CCM CLARiSOFT
+Not Applicable 4.409 SP11
+Details:
+CLARiSUITE 4.409 SP11 (or newer) required.
+Software Release notes for Part Number 404756 r02 SP6 Page 10 of 29
+
+Case# E01068 NAME Videojet Remote Services (VRS) Now Type: Enhancement
+Displayed at CLC
+Summary Description Required Software Version (or later)
+'Remote Service' is now found at
+Tools/Diagnostics/Control/Communications/TCPIP
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+'Remote Service' shows the following parameters as read/write:
+* Serial Number
+* Friendly Name
+VRS is handled entirely by the marking system and is Laser SW specific, for example Q-
+Mark 8.7.0 (or newer) is required for VRS support.
+CLC is simply displaying the parameters for consistency with other CLARiTY products.
+Software Release notes for Part Number 404756 r02 SP6 Page 11 of 29
+
+Case# E01096 NAME New marking systems supported Type: Enhancement
+Summary Description Required Software Version (or later)
+Support added for 7220 & 7320 Fibre lasers
+CCM CLARiSOFT
+Not Applicable 4.500
+Details:
+CLARiSOFT and CLARiNET 4.500 (or later) will be required for 7220/7320 drivers.
+Software Release notes for Part Number 404756 r02 SP6 Page 12 of 29
+
+Case# E01101 NAME Production Audit Log Enhancements Type: Enhancement
+Summary Description Required Software Version (or later)
+Additional user occurrence’s are now logged
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+New occurrence’s logged are:
+* User Login/Logout
+* User changes to job field data via new job selection or 'Touch To Edit' performed on a
+loaded job
+* User changes to status between OFFLINE/RUNNING and vice-versa
+Software Release notes for Part Number 404756 r02 SP6 Page 13 of 29
+
+Case# E01129 NAME Interlock and Shutterlock behaviour Type: Enhancement
+changes
+Summary Description Required Software Version (or later)
+Some faults that were user-clearable now self-clear
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+When Interlock and/or Shutterlock safety circuits are opened a number of faults and
+warnings are rasied.
+Some would be raised as a FAULT, which was undesirable becase there is no issue with
+the marking system.
+Some would auto-clear, while others would not (that should).
+CLC r02 SP6 (and newer) have been modified so that:
+1. E6251 Interlock Open - This should be a WARNING that stops the laser from printing
+and also self-clears when the Interlock is closed.
+2. E6252 Interlock Timeout - This should be a WARNING that stops the laser from printing
+and also self-clears when the Interlock is closed.
+3. E6256 Laser shutterlock open - This should be a WARNING that stops the laser from
+printing and also self-clears when the Shutterlock is closed.
+4. E10304 Marking process interrupted by interlock - This should be a WARNING that
+does not self-clear.
+5. E10305 Keyswitch has been opened while marking - This should be a WARNING that
+does not self-clear.
+6. E19505 The safety circuit is open - This should be a WARNING that does not self-clear.
+7. E19506 The front panel keyswitch is open - This should be a WARNING that does not
+self-clear.
+Note: 4-7 do not stop the laser from marking, i.e. usual WARNINGS.
+Software Release notes for Part Number 404756 r02 SP6 Page 14 of 29
+
+Case# B01032 NAME Text Com GJD, GJL & GJF Fix Type: Bug Fix
+Summary Description Required Software Version (or later)
+Fix for text commands Freezing CLARiTY When in Remote Host Mode
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+With previous revisions of software GJD, GJL & GJF text com commands would freeze
+CLARiTY if requested while CLARiTY was operating in Remote Host mode.
+Upon a screen freeze, CLARiTY would have to be re-powered to recover.
+This no longer happens.
+Now:
+GJD returns the expected data
+GJL returns JBL|0||
+GJF|Job Name| returns ERR
+Software Release notes for Part Number 404756 r02 SP6 Page 15 of 29
+
+Case# B01061 NAME Merged field fixes and enhancements Type: Bug Fix
+Summary Description Required Software Version (or later)
+User Variable fields now successfully merge into other fields
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+This used to work with software r01 SP5 but was subsequently broken with r02 software.
+Such fields now load as expected once again.
+Software Release notes for Part Number 404756 r02 SP6 Page 16 of 29
+
+Case# B01062 NAME Decrementing Counters now load as Type: Bug Fix
+expected
+Summary Description Required Software Version (or later)
+Decrementing counters no longer cause 'Job Download Failed' Faults
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+The way in which CLARiSOFT and Smart Graph generate decrementing counters is
+different and would cause 'Job Download Failed' Faults if such a counter created in
+CLARISOFT was loaded on CLC's running software prior to r02 SP2.
+With r02 (and newer) software, these differences have been overcome and such counters
+load and count down as expected.
+This fix does not depend on CLARiSOFT version.
+Software Release notes for Part Number 404756 r02 SP6 Page 17 of 29
+
+Case# B01067 NAME Datamatrix Barcode Alignment Fixs Type: Bug Fix
+Summary Description Required Software Version (or later)
+Datamatrix barcodes now appear in the expected position relative to other fields,
+barring some rounding errors
+CCM CLARiSOFT
+Not Applicable 4.500 SP1
+Details:
+With previous revisions of software to r02 SP2, Datamatrix barcodes would appear
+shifted from the expected position when printed.
+With r02 (and newer) software, the laser now prints Datamatrix barcodes where the CLC
+User Interface (and CLARiSOFT) indicates they should be printed.
+Additional positional issues were identified with varying module sizes of 2-D barcodes.
+These changes have been resolved with r02 SP4 (and newer software).
+The module size fixes require existing jobs to be opened in CLARiSOFT 4.500 SP1 (or
+newer) and the Module Sizes saved as a new value. The jobs should then be re-
+downloading to your CLC.
+Software Release notes for Part Number 404756 r02 SP6 Page 18 of 29
+
+Case# B01073 NAME CLC Clones now restore Fixed Print Type: Bug Fix
+Speed & Product Side Selection
+Summary Description Required Software Version (or later)
+This fix also applies to CLC Archives
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+With previous revisions of SW, Fixed Print Speed & Product Side Selection were not
+restored with Clones or Archives.
+With r02 SP2 (and newer) these two parameters are also restored provided the Archive
+or Clone was created on r02 SP2 (or newer) SW.
+Software Release notes for Part Number 404756 r02 SP6 Page 19 of 29
+
+Case# B01080 NAME Advanced Passwords now work with Type: Bug Fix
+more than 7 users
+Summary Description Required Software Version (or later)
+Previously the users would all appear blank when trying to log in
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+With previous revisions of software, if more than 7 users were configured in Advanced
+Passwords, each user name would appear blank on the user interface when trying to log
+in, resulting in no user being able to log in.
+This was not an issue for 7 or less configured users.
+Now, user logins work as expected regardless of how many users are configured in
+Advanced Passwords.
+Software Release notes for Part Number 404756 r02 SP6 Page 20 of 29
+
+Case# B01105 NAME Fix for Total Count doubling with Type: Bug Fix
+Interlock open
+Summary Description Required Software Version (or later)
+Interlock being opened too quickly after a mark has finished no longer interferes
+with Counter values
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Previously, if the Interlock was opened within a second of a mark finishing, the Total
+Count value would double (and then subtract what the Batch Count was) and the Batch
+Count would be populated with what the Total Count should have been.
+Re-powering the CLC would re-synchronise the count values.
+Counters within the job could also be affected.
+With r02 SP4 (and newer software) this no longer happens and all counter values behave
+as expected.
+Software Release notes for Part Number 404756 r02 SP6 Page 21 of 29
+
+Case# B01106 NAME Asynchronous Text Coms now output Type: Bug Fix
+Qhigh, Qlow, Qfull, Qempty
+Summary Description Required Software Version (or later)
+Previously, they would not be outputted from the CLC where they would be from
+other CLARiTY printers
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Asynchronous Text Coms now output Qhigh, Qlow, Qfull, Qempty in line with other
+CLARiTY products.
+Software Release notes for Part Number 404756 r02 SP6 Page 22 of 29
+
+Case# B01107 NAME GS1 Barcode Builder now fully Type: Bug Fix
+supported
+Summary Description Required Software Version (or later)
+Previously it was available but did not work as expected
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+It was discovered that, despite the GS1 Barcode Builder being available in CLARiSOFT for
+Datamatrix barcodes on the CLC driver, they did not work as expected when printed by
+the laser system.
+Now, with r02 SP4 (and newer) the Datamatrix GS1 Barcode Builder works as expected.
+Software Release notes for Part Number 404756 r02 SP6 Page 23 of 29
+
+Case# B01108 NAME Merged field fixes Type: Bug Fix
+Summary Description Required Software Version (or later)
+Resolved issue of 'E6200 Job Download Failed' for non-printed user variable
+fields being merged
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Resolved issue of 'E6200 Job Download Failed' for non-printed user variable fields being
+merged.
+Resolved issue of merging Group Separators (ASCII 029) into other fields not working as
+expected.
+Resolved issue of 'E6200 Job Download Failed' for fields whose Field Name contains
+<spaces> being merged.
+Software Release notes for Part Number 404756 r02 SP6 Page 24 of 29
+
+Case# B01117 NAME GS1 Barcode Builder User Entered Type: Bug Fix
+Dates enhancement
+Summary Description Required Software Version (or later)
+User Entered Dates can now use values greater than 999 days into the future
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+A GS1 Barcode Builder can use existing fields for each Application Identifier's data.
+An issue was reported with previous revisions of software where if an AI was pointed to
+use an existing user entered date field, then dates entered greater than 999 days into
+the future would cause the CLC to display the expected date, but the laser would mark
+'today's date.
+Now, with r02 SP5 and newer, any date can be successfully inputted so the CLC and laser
+both display and mark the expected date when using the GS1 Barcode Builder.
+Software Release notes for Part Number 404756 r02 SP6 Page 25 of 29
+
+Case# B01120 NAME Improvements to CLC ability to stop Type: Bug Fix
+marking process
+Summary Description Required Software Version (or later)
+Potential health & safety risk is now prevented
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Instances of the CLC not being able to stop the marking process are now resolved.
+With a small job (very low mark time) being triggered from an Internal Continuous
+trigger whose Blocking time is also less than the Mark Time, previous revisions of CLC
+software could start the marking process but not stop it.
+This is resolved and CLC now stops the marking process.
+This was not an issue with larger jobs (with higher mark time).
+Software Release notes for Part Number 404756 r02 SP6 Page 26 of 29
+
+Case# B01127 NAME Transmitted Field fix Type: Bug Fix
+Summary Description Required Software Version (or later)
+Jobs containing a Transmitted Field now load if Passwords and Event Logging
+are turned on
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+It was found that the introduction of 'E01101 Production Audit Log Enhancements' jobs
+containing a Transmitted Field would not load if passwords and user Logging are turned
+on.
+This is now resolved and Transmitted fields once again work as expected, even if
+passwords and user Logging are turned on.
+Software Release notes for Part Number 404756 r02 SP6 Page 27 of 29
+
+Case# B01128 NAME CLARiTY job counters now update on Type: Bug Fix
+Marking System's 'Product Count'
+Summary Description Required Software Version (or later)
+Counters within job now match the marking system's 'Product Count'
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Lasers issue Product Counter (print triggers recieved) and Print Counter (completion of a
+printed image) to CLARiTY (viewed in Tools/Diagnostics/Printhead.
+CLARiTY previously used the lasers Print Counter to update printed counter values within
+jobs.
+Now, CLARiTY uses the Product Counter instead.
+Software Release notes for Part Number 404756 r02 SP6 Page 28 of 29
+
+Update Procedure
+In order to update a machine with a previous software revision to the latest you should use
+a USB memory device or the latest CLARiTY Configuration Utility.
+a) To use a USB memory device, the CAB update file requires copy and pasting into a
+‘CLARITYupdate’ folder in the root of the USB device. Insert the USB device into the port
+on the printer and after a short while the screen may show an option to load new
+software, depending on the printer settings in CCFG. If it does select ‘Yes’ then select the
+required update, press ‘OK’ and follow on-screen instructions. If it does not, keep the USB
+device in the printer and on the printers User Interface scroll to
+Tools\Setup\Control\CLARiTY Update, select the required update and press ‘OK’ and follow
+on-screen instructions.
+b) To use the CLARiTY Configuration Utility, start the utility, and connect it to the printer
+you wish to update. Ensure that the CLARiTY Configuration Utility has a valid TCP/IP
+connection to the printer; this can be observed by the printer icon turning green, and the
+"Active Connection" message being displayed in the status pane.
+Right click on the name of the coder you wish to update and select the CLARiTY Update
+option. Then locate the file with the same name as the part number above, and the
+CLARiTY Update will then proceed automatically.
+Software Versions
+CLARiTY 4.03.00 (20191-46027)
+Boot Loader 1.00.00 (0015)
+Operating System 6.00.00 (0023)
+Known Issues with 404756 r02 SP6
+Those stated for 1-D barcodes in E01065.
+Merging of partial fields still merges all of the original field.
+Software Release notes for Part Number 404756 r02 SP6 Page 29 of 29
+
+.*/+0-1-2.3/405061738494:5;5<6=7>8?9@:A;B<C<D=E>F?G@HAIBJBKCLDMFNFOGPHQIRISJTKUMVMWNXOYPZP[QS]T^T_U`VaWbWcYdZe[fgh]i^j`k`lambncocpdqergsgthuivjwjxkymzn{n|o}p~qrstuvvwxyz{|}}~` ""&&**0066:: @ @!B"!B%J&%J*T !#!!*$*T.#!!$!%!$$!!.&!.2d&!!!$$!'$
+&
+- !#"#

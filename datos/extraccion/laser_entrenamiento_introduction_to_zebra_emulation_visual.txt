@@ -1,0 +1,553 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\Introduction to Zebra Emulation.pdf
+# cifrado=False bloques=52 caracteres=21354
+
+Introduction to ZPL Emulation
+Training for Zebra and SATO emulation on
+CLARiTY printers
+Kevin L. Rose
+Videojet Technologies, Inc .
+1500 Mittel Boulevard Wood Dale, IL 60197
+Telephone: 630 - 860 - 7394
+kevin.rose@videojet.com
+Confidential - Company Proprietary
+
+Objectives
+rd
+1. Demonstrate the ability to configure the 3 party software.
+2. Demonstrate the ability to load a Zebra label to the printer.
+3. Demonstrate the ability to load a label using raw ZPL.
+4. Define raw zebra commands.
+5. Demonstrate the ability to load a SATO label to the printer.
+6. Demonstrate the ability to load a label using raw SATO.
+7. Configuring CLARiTY Configuration Manager.
+8. Troubleshoot ZPL emulations.
+Confidential - Company Proprietary
+
+CSE Site Survey
+• What software (third party) or raw ZPL/Sato
+• Serial or Ethernet
+• What IP address
+• What printer type Zebra or Sato
+• What DPI 203 or 300
+• What port Zebra 9100/ SATO 1024
+• Font type used
+• Are we printing the same label or printing the label once.
+Note: most customers have used the software for years, you will
+not be required to create labels.
+Confidential - Company Proprietary
+
+Website
+– https://www.seagullscientific.com/drivers/videojet - windows - printer - drivers/
+• https://www.seagullscientific.com/label - software/barcode - label - design - and -
+printing/
+• https://www.seagullscientific.com/drivers/zebra - windows - printer - drivers/
+• https://www.seagullscientific.com/drivers/sato - windows - printer - drivers/
+Confidential - Company Proprietary
+
+Bar tender/ Zebra Ethernet
+Using the customers computer
+• Change printer IP address
+• Change ZPL port (ZPL emulation) Example 9100 for Zebra.
+• Verify the ZPL driver in window (devise and printers)
+– https://www.seagullscientific.com/drivers/videojet - windows - printer -
+drivers/
+Confidential - Company Proprietary
+
+Zebra port Configuration
+3001
+CLARiTY Configuration Manager
+3002
+9100
+Printer Driver
+Port 9100
+192.168.1.11
+Port 9100
+192.168.1.42
+192.168.1.42
+Confidential - Company Proprietary
+
+Configuring the Printer Driver
+• Select printer properties
+• Click on the Widows icon
+• Select devices and printers
+• Right click on the desired printer driver
+• Select ports
+• Select add a port
+Confidential - Company Proprietary
+
+Configuring the printer driver (1)
+• Under available port types, select standard TCP/IP Port • Select next
+• Enter the printer name or IP address (Printer IP address)
+• Select new port
+• Click next
+Confidential - Company Proprietary
+
+Configuring the printer driver (2)
+• Wait till the following screen appears and click next again
+• Click finish and close out the driver
+• Configuring the driver IP is complete
+Confidential - Company Proprietary
+
+Configuring Bartender Software
+• Open the bartender software
+• Verify label settings in bartender match the actual printer label size. Right click on label, verify width, height and
+orientation are correct .
+• Create or open the desired customer label
+Confidential - Company Proprietary
+
+Configure the ZPL Network Port
+• This sets the port that ZPL will communicate on;
+• This will be 0 by default so will need setting on all new installs; o This is defaulted to 0 because
+when it is at 0, the ZPL communications will not start up. Therefore, in applications not using
+ZPL, this processing power is saved so the system has more free resources;
+Confidential - Company Proprietary
+
+Print and verify job orientation
+• Create or open the desired customer label
+• Click file
+• Click print
+• Click print
+• Verify label prints correctly, if not make the following changes in CLARiTY Configuration Manager.
+• First correction should be the job orientation.
+Confidential - Company Proprietary
+
+Barcode Sizing
+Set the preferred emulation sizing for barcodes.
+CLARiTY printers have resolutions of 300dpi (Thermal Transfer heads), 180dpi (Piezo - Crystal
+heads) and variable (Thermal Ink - Jet heads). If we are emulating a 203dpi Zebra we could be
+asked to print half of one dot, which is not possible.
+• Favor Smaller Barcodes (0) – will mostly make the barcode smaller if we can’t be exact due to
+resolution differences.
+• Balanced (1) – will round to the nearest size (larger or smaller) if we can’t be exact due to
+resolution differences.
+• Favor Larger Barcodes (2) – will mostly make the barcode larger if we can’t be exact due to
+resolution differences.
+• Default: Favor Smaller Barcodes.
+Confidential - Company Proprietary
+
+Communication Setup
+Set the preferred emulation sizing for barcodes.
+This allows the Emulation to be configured to use different control characters.
+Defaults:
+• ControlPrefix = ^
+• DelimiterCharacter = ,
+• FormatPrefix = ~
+Making changes will cause the printer not to communicate.
+Confidential - Company Proprietary
+
+Drive Mappings
+Mappings for the E,B,R,A drives.
+This would allow a user to change the drive letters – for example, if you wanted the printer to
+think that drive E was A, then this could be done by changing the drive mapping.
+Defaults: E=E, B=B, R=R, A=A
+Confidential - Company Proprietary
+
+Setting the Emulation Resolution
+• Select the required emulation resolution.
+• This needs to be set depending on what type of ZEBRA we are emulating. If
+we are emulating a 300dpi Zebra, this will need to be set to 300dpi.
+• If the print is “too big” or “too small”. Set the correct dpi emulation in Config.
+• Default: 203dpi
+• 203dpi
+• 300dpi
+• 600dpi
+Best by 12/12/2020IL284A2591258
+Best by 12/12/2020 IL284A2591258 Best by 12/12/2020IL284A2591258
+From
+To this
+this
+Confidential - Company Proprietary
+
+Label Configuration
+• The label configuration allows for setting label parameters for printing. The Label Width and Label Height
+needs to be set correctly when the image is being rotated in the printer.
+• Each of the Label Configuration options has a “Use Emulation Value” option or “Use Printer Value”.
+• The “Use Printer Value” will ignore the value sent by ZPL. This option is available because we found
+through development that some packages gave us incorrect label dimensions, and in order to rotate we
+need know the correct dimensions so the fields are put in the correct place.
+• By default, the LabelWidth and LabelLength are set to “Use Printer Value” while the HorizontalFieldOffset
+and LabelOrigin default are “Use Emulation Value”.
+Note: If you receive barcode out of limit adjust your label
+length and label width .
+Confidential - Company Proprietary
+
+Print Limit Mode
+Depending on print job set print limit mode:
+Default: Use Emulation supplied print limits
+• Unlimited prints
+• Use ZPL supplied print limits
+Confidential - Company Proprietary
+
+Print Mode
+Default: Select Only (don’t use database)
+• Download Only [Downloads to the printer job list but does not select the job]
+• Download and Select [Downloads to the printer job list and selects the job ready for printing]
+• Download, Select and Delete after use [Downloads to the printer job list, selects the job and deletes the job
+when resource available]
+• Select Only (don’t use database) [Does not download to the printer job list but selects the next queued job
+ready for printing] o If the printer is restarted whilst in this mode, all jobs in the queue will be lost;
+Confidential - Company Proprietary
+
+Resolution Factor
+Makes an 8 dpm printer work at 4 dpm .
+Default: Full resolution
+• Full resolution
+• Half Resolution
+Confidential - Company Proprietary
+
+Set the job orientation
+• Verify label prints correctly, if not make the following changes in CLARiTY Configuration Manager.
+• First correction should be the job orientation.
+• This is set in CLARiTY Config by selecting the Imaging - > JobOrientation option.
+• This option allows the whole label to be rotated before printing. If this setting is changes, the Zebra job
+needs to be re - sent to the printer for the changes to take effect.
+• Default: Depends on product.
+• 0
+• 90
+• 180
+• 270
+Best by 12/12/2020
+IL284A2591258 Port 9100 192.168.1.42
+From To this
+this
+Confidential - Company Proprietary
+
+Zebra/ Sato Serial
+• Set baud rate
+• Set usage
+Confidential - Company Proprietary
+
+Raw ZPL
+• Verify Zebra windows driver is installed.
+• Test file
+– Windows |Devices and Printers| Zebra drive | Printer properties | Tools
+| Action | Send file to printer| Browse
+Confidential - Company Proprietary
+
+Raw ZPL Code
+• ^XA indicates start of label
+• ^XZ indicates end of label
+• PW indicates print width in dots example (^PW1200) 1200 dots per mm divided by
+300DPI head = a 4 inch wide label.
+• PQ indicates print quantity
+• Text file (third party software not needed)
+• Refer to ZPL program language manual
+Confidential - Company Proprietary
+
+Configuring Raw ZPL
+• Select printer properties
+• Click on the Widows icon
+• Select devices and printers
+• Right click on the desired printer driver
+• Select Tools
+• Click on the action button .
+Confidential - Company Proprietary
+
+Configuring Raw ZPL (1)
+• Select Send File to Printer
+• Browse to the desired .txt file
+• Click open
+Confidential - Company Proprietary
+
+Dissecting a simple printed image
+Syntax Description
+^XA
+^XA Indicates the start of label format
+^SZ2^JMA
+^SZ Set ZPL
+^MCY^PMN
+^MCY Variable data fields
+^PW1231
+^PW1231 Set print width
+~JSN
+^JZ Report After Error
+^JZY
+^LH0,0 Sets label home position 0 dots to the right and 0 dots
+^LH0,0^LRN
+^XZ
+down from top edge of label.
+^XA
+^XZ Indicate end of label format
+^FT527,1264
+^XA Indicates the start of label format
+^CI0
+^FT527,1264 Field Typeset
+^A0B,51,69^FDKevin Rose^FS
+^CI0 Cache On.
+^PQ1,0,1,Y
+AO Font Orientation
+^XZ
+^FD Field Data.
+^FS Field Separator
+^ PQ 1,0,1,Y Print Quality
+^XZ Indicate end of label format
+Confidential - Company Proprietary
+
+Dissecting the printed image
+^XA^LRN^MNY^MFN,N^LH10,12^MCY^POI^PW812^CI27 ^FT10,47^A0N,22,26^FVSUNFROG
+SHIRTS FULFILLMENT^FS ^FT10,69^A0N,22,26^FV1782 OROUKE BLVD.^FS
+^FT10,92^A0N,22,26^FVGAYLORD MI 49735^FS ^FT100,187^A0N,30,34^FV Return Service
+Requested^FS ^FT568,35^A0N,18,22^FVPS LIGHTWEIGHT^FS ^FT551,61^A0N,18,22^FVU.S.
+POSTAGE PAID^FS ^FT535,87^A0N,18,22^FVUPS MAIL INNOVATIONS^FS
+^FT628,113^A0N,18,22^FVeVS^FS ^FO527,125^GB243,2,2^FS ^FO527,10^GB243,1,1^FS
+^FO525,10^GB2,117,2^FS ^FO770,10^GB1,117,1^FS ^FT10,267^A0N,30,34^FVSHIP^FS
+^FT10,300^A0N,30,34^FVTO:^FS ^FT87,263^A0N,26,30^FVJohn Doe^FS
+^FT87,291^A0N,26,30^FVJohn Doe^FS ^FT87,319^A0N,26,30^FV6318 WINNER AVE.^FS
+^FT87,359^A0N,39,42^FVCITY ST 21215 - 3119^FS ^FO0,475^GB800,4,4^FS
+^FT17,633^BXN,3,200^FD3 801758802894832561 017588 SUNFROGSHIRTSFULFILLMENT
+6318 WINNER AVE BALTIMORE MD 21215 840 123456 0.3562
+4,0 4202121592748999964333543406205107^FS ^FO0,649^GB800,4,4^FS
+^FO171,475^GB4,174,4^FS ^FT203,536^A0N,45,44^FVUPS MAIL INNOVATIONS^FS
+^FT181,575^A0N,22,26^FVPOSTAL CODE: 21215^FS ^FT181,601^A0N,22,26^FVPACKAGE ID #:
+123456^FS ^FT181,627^A0N,22,26^FVCOST CENTER #: SUNFROGSHIRTSFULFILLMENT^FS
+^FT490,674^A0N,14,20^FV 12.67.89 ^FS ^FO0,680^GB800,10,10^FS
+^FT229,751^A0N,30,34^FVUSPS TRACKING # eVS^FS ^FT170,987^A0N,26,30^FV9274 8999 9643
+3354 3406 2051 07^FS
+Confidential - Company Proprietary
+
+Raw Key Syntax
+Syntax Description
+^XA Indicates the start of label format
+^LRN Reverse print entire label
+^MNY Sets the printer to either non - continuous or continuous media
+^MFN,N Command indicates what happens to a media field at power up or after an error is
+cleared.
+^LH10,12 Sets label home position 10 dots to the right and 12 dots down from top edge of
+label.
+^MCY Variable data fields
+^POI Set the orientation to invert the entire label.
+^PW812 Set print width
+^XZ Indicate end of label format
+^FS Field Separator
+Confidential - Company Proprietary
+
+Raw Text
+The code below prints the follow: SHIP John Doe
+TO: John Doe
+6318 WINNER AVE.
+CITY ST 21215 - 3119
+^FT10,267^A0N,30,34^FV SHIP ^FS ^FT = Field type set
+^FT10,300^A0N,30,34^FV TO :^FS ^AON = Font Orientation
+^FT87,263^A0N,26,30^FV John Doe ^FS ^FV = Variable Field Data
+^FT87,291^A0N,26,30^FV John Doe ^FS ^FS = Field Separator
+^FT87,319^A0N,26,30^ FV6318 WINNER AVE. ^FS
+^FT87,359^A0N,39,42^FV CITY ST 21215 - 3119 ^FS
+Confidential - Company Proprietary
+
+Raw Datamatrix
+^FT17,633^BXN,3,200^FD3 801758802894832561 017588 SUNFROGSHIRTSFULFILLMENT
+6318 WINNER AVE BALTIMORE MD 21215 840 123456 0.3562
+4,0 4202121592748999964333543406205107^FS ^FO0,649^GB800,4,4^FS
+The code below is the Datamatrix barcode
+^FT17,633 Field Typeset
+^BXN,3,200 Datamatrix barcode
+^FD3 801758802894832561 017588 Start of data field
+SUNFROGSHIRTSFULFILLMENT 6318 WINNER
+AVE BALTIMORE MD 21215 840 123456 0.3562
+4,0 4202121592748999964333543406205107
+^FS Field Separator
+Confidential - Company Proprietary
+
+Raw Barcode
+^FT170,987^A0N,26,30^FV9274 8999 9643 3354 3406 2051 07^FS
+The code below is the barcode
+^FT170,987 Field Typeset
+^A0N,26,30 Font Orientation
+^FV 9274 8999 9643 3354 3406 2051 07 Variable Field Data
+^FS Field Separator
+^XZ Indicate end of label format
+Confidential - Company Proprietary
+
+Lines
+^FO527,125^GB243,2,2^FS ^FO527,10^GB243,1,1^FS
+The code below is Lines
+^FO527,125 Field Origin
+^GB243,2,2 Graphic Box
+^FS Field Separator
+^FO0,680^GB800,10,10^FS
+Confidential - Company Proprietary
+
+Bar tender/ Sato Ethernet
+• Using the customer computer
+• Change printer IP address
+• Change ZPL port (ZPL emulation)Example 1024
+• Change protocol to status 3
+• Verify the ZPL driver in window (devise and printers)
+Confidential - Company Proprietary
+
+Sato Config
+Confidential - Company Proprietary
+
+Image rotation
+Confidential - Company Proprietary
+
+Raw Sato
+• Generated in note pad ++
+• Verify Sato windows driver is installed.
+• Test file
+– Windows | Zebra drive | Printer properties | Tools | Action |
+Send file to printer| Browse
+Confidential - Company Proprietary
+
+Raw Sato Code
+• ^XA indicates start of label
+• ^XZ indicates end of label
+• PW indicates print width in dots example (^PW1200) 1200 dots per
+mm divided by 300DPI head = a 4 inch wide label.
+• PQ indicates print quantity
+• Text file (third party software not needed)
+• Refer to ZPL program language manual
+Confidential - Company Proprietary
+
+Troubleshooting
+• Ensure you are using the correct printer mode.
+• Ensure you are using the correct DPI.
+• Ensure the correct width and length in the ZPL or SATO label
+configuration section of Config.
+• Check the printer ZPL or SATO emulation port
+• Check the printer IP address
+• Check the PC IP address
+• Once the sending software is connected verify the com port
+on the printer is ready
+• Read the Zipher Text Communication Protocol manual
+Confidential - Company Proprietary
+
+No job or missing job when job sent
+• Check that you are sending to the correct printer IP Address and Port from
+the sending software.
+• Check the network connection, IP address, subnet mask and port. The IP
+address and subnet mask will need to be in the same domain for the printer
+and data sending device.
+• Ensure that the connection is in an ‘open state’ to receive data for the desired
+emulation type.
+• Ensure that the emulation data for the label design sent has label start and
+end delimiters and that it contains well - formed valid data that results in a
+printed output.
+• Ensure that the correct protocol command codes have been sent.
+• Check which mode the printer is in, downloaded jobs will appear in the ‘Jobs’
+list if successful and will need to be selected to print, if select only is applied,
+then the list of jobs will only appear in the job queue list.
+Confidential - Company Proprietary
+
+Label printed but no image
+• Check the label on clarity before printing to see if an image is represented
+correctly.
+• If the image is displayed in clarity there may be an issue with the physical
+printer setup including the ribbon or label setup or in the print setup including
+print speed, force etc.
+• If there is no image shown in clarity check that the print length and print width
+are set to the size of the label in clarity and the emulation data sent, if the
+image width or length are too large and the orientation is at 90 for example the
+image may be drawn off the label.
+Confidential - Company Proprietary
+
+The label image is too small or too large
+• Check the resolution of the printer in respect to the emulation configuration
+and ensure that if sending an image for a 200dpi printer that the printer is
+configured for 200dpi or likewise for 300dpi or 600dpi.
+• Check the resolution factor is set to full (ZPL).
+Confidential - Company Proprietary
+
+The label image has started printing part way
+down the image and not from the top
+• Check the label length setting in clarity and in the emulation data sent.
+• Check any offsets or label home settings in clarity and in the emulation data sent.
+• The image will align to the baseplate, so at 90 a label design with a length smaller
+than the physical label will print at the bottom. Likewise if the label design length is
+greater than the physical label length the image will again be aligned to the
+baseplate pushing the top of the label design off the label.
+Confidential - Company Proprietary
+
+The label image is printed to one side or the
+other
+• Check the physical setup of the labels and ribbon on the Integra.
+• Check for any offsets or label home settings and reset, in clarity or in the label
+data sent.
+• Check for print width settings as any image smaller than the label will align to
+the baseplate if no offsets are applied.
+Image is printed in the wrong rotation
+• Set the ‘ JobOrientation ’ in the ‘imaging’ menu to the correct orientation required
+0, 90, 180 or 270.
+Confidential - Company Proprietary
+
+The barcode printed is larger than expected
+• Set the barcode sizing to ‘favor smaller barcodes’, a barcode which would be
+partially printed, due to positioning or off the label will not be drawn. A ‘barcode
+out of limits’ warning should be displayed.
+There is a barcode out of limits warning or the
+barcode is not drawn
+• Set the barcode sizing to ‘favor smaller barcodes’, a barcode which would be
+partially printed due to positioning or positioned off the label will not be drawn
+and a Barcode out of limits warning will be displayed.
+Confidential - Company Proprietary
+
+I can’t communicate using ZPL emulation
+• If the ZPL connection is lost and attempts to regain communication fail: this is likely due to
+more ZPL jobs being sent than the printers own Print Queue Limit can handle but the printer
+has a TCPIP card to buffer overflow jobs. This is likely on the (9550 Integra). For example,
+the following situation:
+• ‘ MaxQueueLength ’ set to 5, ‘ PrintLimitMode ’ set to ‘Use ZPL Supplied Print Limit’ & ZPL
+‘ PrintMode ’ set to ‘ DownloadSelect&DeleteAfterUse ’.
+• 20 ZPL jobs can be sent but only 6 will appear in the CLARiTY printers Image Update
+Queue (the currently printing job and the 5 queued up). The other 15 will be buffered in
+the printers TCPIP card (which can theoretically buffer an unlimited number of jobs).
+Imagine the printers TCPIP card as a secondary ‘overflow’ buffer that fills up the printers
+own Image Update Queue as it is depleted.
+• If ZPL connection is now lost it cannot be regained until the TCPIP card buffer is empty.
+Confidential - Company Proprietary
+
+ZPL connection appears to be open but
+communication is not possible
+• If the ZPL connection appears to be open but communication is not
+possible, e.g. ~HS does not return anything. This is likely due to more ZPL
+jobs being sent than the printers own Print Queue Limit can handle and
+there is no TCPIP card to buffer overflow jobs. These overflow jobs
+‘disappear’. This is likely on printers other than 9550.
+Confidential - Company Proprietary
+
+Both of the above scenarios should be due to a
+combination of three following things being set at the
+same time:
+• ZPL PrintLimitMode has been set to “Use ZPL Supplied Print Limit”.
+• ZPL PrintMode has been set to something other than “Download Only” (i.e.
+“Download & Select”, “ Download,Select&DeleteAfterUse ” or “Select Only” (don’t
+use database)”.
+• Printers own queue is subsequently filled up.
+• Set Print Queue length in CCFG Imaging/ UpdateQueue (Default is 1, max is
+250).
+• View at the User Interface Tools/Diagnostics/Control/Image Update Queue.
+Confidential - Company Proprietary
+
+To overcome these either
+• Change the Print Mode to Download Only – that will mean you can have any
+number of jobs on the coder but you will need to select the job manually or via
+comms;
+• Change the Print Limit mode to “Unlimited prints” – this will always overwrite the
+current job with the new job (as there was no Print Quantity allocation);
+• Increase the Queue Size – this is by default set to 1 but can be increased to a
+maximum of 250. Even so, once the queue is full you will experience the same
+issue.
+• Note: if you are constantly printing whilst downloading, you may never fill the
+queue.
+• Repeatedly print until the CLARiTY printers own print queue starts to deplete.
+• Re - power the printer to clear the print queue.
+Confidential - Company Proprietary
+
+This concludes the training
+Thank you
+Confidential - Company Proprietary
+
+- !#"#
+k$Z$c"ekjtw{zyvss&&&&0 s,s
+xeyD9*Qo_b;Y6$iIc~H&Q~X[Q"]8&N?';maZoO/]h7#KuRor:FhoOB=9LZ09^D%4e^co'@m&d%%%j"VVG&v{ij5'6~kI&
+$0NuXJ|Y28eV?]>0C
+f&O@A,
+
+QUUU????9++++222?01Y%#".5##".'##".5463323>332q0%$00""0/%$06-.B0 "
+&4
+S@23222i@&&-e&ehh???99?/3/99//9901%#".''#"&&67&&66327>32?+18 5$->>7/61,39e0$L#+$
+&+*
+'3m*.?.!'-@'...+!!~??9/93]22/9/32201%###".55!".54>7>3232#3m@&&!2%*6"@""aaI1C8V1$,$,@44.1H@H/
+ ??/01#".'&&54632326546326T<
+""#$R##"x50#/5
+y;H@#.$/#//#08"/##5

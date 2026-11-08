@@ -1,0 +1,1063 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\ST710-KHXV.102_d.pdf
+# cifrado=False bloques=25 caracteres=36991
+
+ST710-KHXV.102FH
+PID-Regler
+Bestellnummer900310.022
+AlteId.Nr.:338152
+Stand:10.04.2008
+Anschaltplan
+Produktbeschreibung
+DiesermikroprozessorgesteuerteReglerdientzurTemperaturregelungbeihoherMessgenauig-
+keit.ZumAnschlusskommteinNTC-Fühler.ÜberdieParametrierungkanndiePID-Regelung
+und/oderThermostatregelungaktiviertwerden.AlsAusgängesinddreiRelaiskontaktevorhan-
+den.RoteLED-LampenzeigendenStatusderAusgangsrelaisan.DieSollwerteundParameter
+werdenübereineFolientastaturmitfünfTasteneingestellt.
+Sensor: NTC
+
+Messbereich: -30...90 C
+Frontma: 84mmx42mm
+Einbauma: 67,5mmx31,5mm
+Anschluss: SteckbareSchraubklemme
+1
+
+2
+
+Taste AUF
+· Einleiten der Abtauung (nach 3 Sekunden)
+· Vergrößerung des Sollwertes
+· Im Parameter - Menü: Auswahl der nächsten Parameterebene (C -- , b -- , etc.) oder
+des nächsten Parameternamens (C 1, C 2, ...)
+· Im Menü: Verg rößerung des Parameterwerts
+Taste AB
+· Ausschalten der Summerfunktion (parametriert nach C64 )
+· Verkleinerung des Sollwertes
+· Im Parameter - Menü: Auswahl der vorherigen Parameterebene (b -- , C -- , etc.) oder
+des vorher i gen Parameternamens (C 2, C 1, ...)
+· Im Menü: Verkleinerung des Parameterwerts
+Funktionstaste 2  Standardeinstellung: Sollwertumschaltung
+(parametriert nach H32 )
+· Ein - oder Ausschalten der Regelung
+· Sollwertumschaltung
+· Autotuning - Start des PID - Regel kreises (nur Heizkreis)
+· Kopplung auf ein Ausgangsrelais
+Taste SET
+· Anzeigen des aktuellen Sollwertes
+· Im Parameter - Menü: Bestätigung der gewählten Parameterebene oder des Par a-
+m e ternamens
+· Zusammen mit den Tasten AUF und AB kann ein Parameterwert oder der Sol l-
+wert ve r ändert werden.
+Funktionstaste 1  Standardeinstellung: Standby
+(parametriert nach H31 )
+· Ein - oder Ausschalten der Regelung
+· Sollwertumschaltung
+· Autotuning - Start des PID - Regelkreises (nur Heizkreis)
+· Kopplung auf e in Ausgangsrelais
+SOFTWARE .102 S
+Einstellmöglichkeiten
+
+Analog - Ebene Parameter für analoge Ein - und
+Ausgänge
+--
+A
+Abtau - Ebene Parameter für Abtauung (Regelkreis 1)
+--
+d
+Hardware - Ebene Hardwareparameter
+--
+H
+between - Ebene Parameter zur Verknüpfung
+--
+b
+Controller - Ebene Anwenderparameter
+--
+C
+Funktion
+Untermenü
+Parameter
+Durch gleichzeitiges Drücken der AUF - und der AB - Taste für mindeste ns 4 Sekunden wec h-
+selt der Regler in die Menüebene. Diese besteht aus mehreren Untermenüs die durch den jeweil i-
+gen A n fangsbuchstaben gefolgt von 2 Strichen gekennzeichnet sind (z.B. C -- für die C - Ebene).
+* Siehe dazu auch das Kapitel Anmerku ngen zur Sollwert - Umschaltung .
+Softwareversion
+Die Versionsnummer der Software kann durch das gleichzeitige Drücken der SET + AUF + AB
+- Taste abgerufen werden .
+Menüebene
+Sollwert 2 für Regelkreis 1 (*) C10...C11 0,0 °C
+C2
+Sollwert 1 für Regelkreis 1 C10...C11 0,0 °C
+und/oder PID - Regelung
+C1
+Einstellung
+-
+Kunden
+Einstellung
+-
+Standard
+Einstellbereich
+ibung
+Funktionsbeschre
+meter
+-
+Para
+Parametrierung des Sollwertes
+Der Sollwert C1 ist direkt durch Drücken der SET - Taste anwählbar.
+Durch zusätzliches Drücken der AUF - oder AB - Taste kann er verstellt werden.
+Erste Bedienungsebene:
+
+Einstellung von Regelparametern
+Die Auswahl des Untermenüs erfolgt umlaufend mit der AUF - bzw. AB - Taste. Drückt man die
+SET - Taste wird das Passwort der jeweiligen Ebene abgefragt. Dieses muss durch zusätzliches
+Drücken der AUF - bzw. AB - Taste entsprechend eingestellt werden.
+(Sta ndardwert: 0 = deakt i viert).
+
+Der letzte Parameter des jeweiligen Untermens (z.B. C99, b99, ...) entspricht dem aktuellen
+Passwort dieser Ebene und kann dort verndert werden.
+ACHTUNG: Über das Masterpasswort - 19 ist es außerdem möglich eine ausg ewählte Paramete r-
+ebene aufzurufen (wichtig für vergessene Passworte).
+Nach dem Loslassen der SET - Taste springt bei richtiger Passworteingabe die Anzeige in das
+Untermenü und zeigt dort den ersten Parameter der Liste an. Drückt man die SET - Taste, wir d
+der Wert des angewählten Parameters angezeigt. Durch zusätzliches Drücken der AUF - oder
+der AB - Taste kann er verstellt werden. Nach Loslassen aller Tasten wird der neue Wert daue r-
+haft abgespeichert.
+Wird die AUF - und die AB - Taste erneut gleic hzeitig für mindestens 4 Sekunden gedrückt
+wechselt die Anzeige wieder in die Menüebene. Durch nochmaliges Drücken für 4 Sekunden oder
+wenn länger als 60 Sekunden keine Taste gedrückt wurde, erfolgt ein Rücksprung in den Grun d-
+zustand.
+
+2
+3
+4
+5
+6 8
+7
+2
+3
+4
+5
+6 8
+7
+2
+3
+4
+5
+6 8
+7
+2
+3
+4
+5
+6 8
+7
+6 8
+7
+1
+2 0
+3
+H48
+4
+5
+Analogausgang
+Signalumformung
+Heizen
+PID Kuehlen
+Analog
+Hybrid
+K4
+K3
+K2
+C1...11
+C21...29
+A1...40
+C41...49
+H32
+1
+0
+H41
+K1
+1
+0
+H42
+1
+0
+H43
+H31
+C61...65 1
+0
+H44
+C82...89
+A50...55
+Funktions-
+taste 1
+Funktions-
+taste 2
+Alarm
+Istwert
+Thermostat 3
+Thermostat 2
+Thermostat 1
+Reglerstruktur
+Blo ckschaltbild der Regelstruktur. Über die verschiedenen Parameter (H41..H43) kann jedem Au s-
+gang eine spezielle Regelfunktion zugeordnet werden. Jedes Regelmodul wird über die entspr e-
+chenden Parameter konfiguriert.
+
+Funktion Regelkreis 2 bei Fü h- 0: bei Fehler ab 0
+lerfehler 1: bei Fehler an
+C29
+Mindestaktionsz eit 0...400 Sek. 0 Sek.
+Regelkreis 2 "Aus"
+C28
+Mindestaktionszeit 0...400 Sek. 0 Sek.
+Regelkreis 2 "Ein"
+C27
+Hysteresemodus Regelkreis 2 0: symmetrisch 0
+1: einseitig
+C26
+Hysterese Regelkreis 2 0,1...99,9 K 1 K
+C25
+Schaltsinn Regelkreis 2 0: Heizkontakt
+1: Kühlkontakt 1
+24
+C
+Wert Delta W2 (b1=1) - 99...99 K - 3, 0 K
+C23
+Sollwert Regelkreis 2 (b1=0) - 99...999°C 2 0 ,0 °C
+C21
+Kunde
+Standard
+Einstellbereich
+Funktion
+meter
+-
+Para
+*Siehe d azu auch das Kapitel Anmerkungen zur Sol l wert - Umschaltung .
+Thermostat 2
+Sollwertbegrenzung oben C10...999,0°C 28 ,0°C
+Sollwert 1
+C11
+Sollwertbegrenzung unten - 99,0...C11°C 20 ,0°C
+Sollwert 1
+C10
+Funktion Regelkreis 1 0: bei Fehler ab 0
+bei Fühlerfehler 1: bei Fehler an
+C9
+Mindestaktionszeit 0...400 Sek. 0 Sek.
+R egelkreis 1 "Aus"
+C8
+Mindestaktionszeit 0...400 Sek. 0 Sek.
+Regelkreis 1 "Ein"
+C7
+Hysteresemodus Regelkreis 1 0: symmetrisch 0
+1: einseitig
+C6
+Hysterese Regelkreis 1 0,1...99,9 K 1,0 K
+C5
+S chaltsinn Regelkreis 1 0: Heizkontakt
+1: Kühlkontakt 1
+C4
+Sollwert Offset für C1/C2 - 99,0...99,0 K 0,0 K
+C3
+Sollwert Regelkreis 1 (*) - 99,0...99,0°C 2 0,0°C
+C2
+Sollwert Regelkreis 1 - 99...999°C 2 0,0°C
+C1
+Kunde
+Standard
+Einstellbereich
+Funktion
+meter
+-
+Para
+Diese Ebene enthält die Anwenderparameter.
+Thermostat 1
+Die C - Ebene (Controller)
+
+Hysterese Alarmkreis 0,1...99,9 K 0, 1 K
+C65
+Sonderfunktion 0: nicht aktiv
+bei Temperaturala rm 1: Anzeige blinkt
+2: Summer aktiv
+3: Anzeige blinkt, Summer aktiv
+4: wie 3, Summer quittierbar 4
+5: wie 4, nach 10 Min. erneut
+6: wie 4, nach 30 Min. erneut
+C64
+Funktion Ausgang Alarm 0: Grenzwertalarm
+relative Grenzen
+1: Grenzwertalarm
+absolute Grenzen
+2: Bandalarm relative Grenzen
+3: Bandalarm absolute Grenzen
+4: Grenzwertalarm
+relative Grenzen, Alarm invers
+5: Grenzwertalarm 5
+absolute Grenzen, Alarm invers
+6: Bandalarm
+relative Grenzen, Alarm invers
+7: Bandalarm
+absolute Grenzen, Alarm invers
+C63
+Oberer Wert Alarm C61...999,0°C 3 0,0°C
+C62
+Unterer Wert Alarm - 99,0...C62°C - 16,5 °C
+1
+C6
+Kunde
+Standard
+Einstellbereich
+Funktion
+meter
+-
+Para
+Grenz - bzw. Bandalarm
+Funktion Regelkreis 3 0: bei Fehler ab 0
+bei Fühlerfehler 1: bei Fehler an
+C49
+Mindestaktionszeit 0...400 Sek. 0 Sek.
+Regelkreis 3 "Aus"
+C48
+Mindestaktionszeit 0...400 Sek. 0 Sek.
+Regelkreis 3 " Ein"
+C47
+Hysteresemodus Regelkreis 3 0: symmetrisch 0
+1: einseitig
+C46
+Hysterese Regelkreis 3 0,1...99,9 K 1,0 K
+C45
+Schaltsinn Regelkreis 3 0: Heizkontakt 0
+1: Kühlkontakt
+C44
+Wert Delta W3 (b2=1) - 99,0...99,0 K 0,0 K
+C43
+Sollwert Regelkreis 3 (b2=0) - 99...999°C 0,0°C
+C41
+Kunde
+Standard
+Einstellbereich
+Funktion
+meter
+-
+Para
+Thermostat 3
+
+Anmerkungen zur Sollwert - Umschaltung
+Die Umschaltung zwischen den beiden Sollwerten C1 und C2 kann über die Funktion s tasten F1
+bzw. F2 erfolgen.
+Dabei gelten folgende Gesetzmäßigkeiten:
+· Ein durch eine Funktionstaste umgeschalteter Sollwert C1 nach C2 kann durch Dr ü cken einer
+anderen Funktionstaste wieder zurückgeschaltet werden. Die Funktionstasten müssen durch
+die Parameter H31 = 2 ( F1 ) bzw. H32 = 2 ( F2 ) auf Sollwertumschaltung konf ig u riert sein.
+· Die Aktivierung des 2. Sollwertes C2 , wird in der Anzeige durch einen blinkenden rechten
+Punkt angezeigt.
+· Bei Netzausfall und bei Standby - Betrieb wird der zuletzt eingestellte Zustand gespeichert.
+Passwort C - Ebene - 99999 0
+C99
+Kunde
+Standard
+Einstellbereich
+Funktion
+meter
+-
+Para
+Passwort
+Zykluszeit Schrittventil (Dif f- 2...100 Sekunden 8 s
+PID)
+C89
+PID - Mode 0: PID 0
+1: DiffPID
+(2 Relais  Heizen, Kühlen)
+2: PID mit Totband auf Analog -
+ausgang
+C88
+Funktion PID - Regelkreis bei - 100,0%..0..100,0% 0,0 %
+Fühlerfehler
+C87
+Stellgröße Totband 0,0..100,0% 0,0 %
+C86
+Zyklusze it bei PID - Regelung 2...100 Sekunden 10 s
+C85
+0...999 Sekunden, 0: inaktiv 0 s
+Vorhaltezeit bei PID - Regelung
+C84
+Nachstellzeit bei 0...999 Sekunden, 0: inaktiv 3 00 s
+PID - Regelung
+C83
+Proportionalbereich bei 0,1999,0 K 5 K
+PID - Regelung
+C82
+Kunde
+Standard
+Einstellbereich
+Funktion
+meter
+-
+Para
+PID - Regler
+
+Thermostat - 1
+C1: Sollwert für Regelkreis 1 (Thermostat)
+Dieser Wert entspricht dem in der 1. Bedienungsebene eingestellten Sollwert.
+C2: Sollwert für Regelkreis 1
+Der Sollwert C2 ist durch die SET - Taste nur abrufbar, wenn eine der Fun ktionstasten F1 - oder
+F2 gedrückt wurde (s iehe dazu auch das Kapitel Anmerkungen zur Sol l wert - Umschaltung ).
+C3: Sollwert Offset C1/C2
+Dieser dort eingestellte Wert wird als Differenz zum eingestellten Sollwert für Regelkreis 1 wir k-
+sam. Es wird dann nicht auf den von vorne eingestellten Wert geregelt, sondern auf die Summe
+aus Sollwert und dem Wert von C3
+C4: Schaltsinn Regelkreis 1
+Den Schaltsinn, also Kühl - oder Heizfunktion, kann man für die Regelkontakte werkseitig una b-
+hä ngig voneinander programmieren. Heizfunktion bedeutet, dass der Kontakt beim Erreichen des
+vorgegebenen Sollwertes fällt, also die Leistungszufuhr unterbricht. Bei der Kühlfunktion zieht der
+Kontakt erst an, wenn der Istwert größer ist, als der vorgegebene Sollwert.
+C5: Hysterese Regelkreis 1
+Die Hysterese kann symmetrisch oder einseitig am Sollwert angesetzt sein (siehe C6 ).
+Bei einseitiger Einstellung ist beim Heizkontakt die Hysterese nach unten wirksam, beim Kühlko n-
+takt nach obe n. Bei symmetrischer Hysterese ist jeweils oberhalb und unterhalb des Schaltpunktes
+der halbe Wert der Hysterese wirksam (vgl. Bilder 1 und 2).
+Bild 1: Heizregler, einseitige Hysterese Bild 2: Kühlregler, symmetrische Hysterese
+C6: Hyst eresemodus Regelkreis 1
+Dieser Parameter ermöglicht die Auswahl, ob der mit C5 einstellbare Hysteresewert für den Rege l-
+kontakt 1 symmetrisch oder einseitig am zugehörigen Schaltpunkt angesetzt ist. Bei symmetr i scher
+Hysterese ist je weils die Hälfte des eingestellten Wertes oberhalb und unterhalb des Schal t punktes
+wirksam. Die einseitige Hysterese ist beim Heizkontakt nach unten wirksam, beim Küh l kontakt
+nach oben.
+C7/C8: Mindestaktionszeit Regelkreis 1 "Ein" / "Aus"
+Diese Parameter erlauben die Verzögerung des Ein - bzw. Ausschaltens des Regelkontaktes zur
+Reduzierung der Schalthäufigkeit. Die eingestellte Zeit gibt die gesamte Mindestdauer einer Ei n-
+schalt - bzw. Ausschaltphase vor.
+Parameterbeschr eibung C - Ebene:
+
+C9: Funktion Regelkreis 1 bei Fühlerfehler
+Bei Fühl erfehler nimmt der ausgewählte Regelkontakt (siehe H41 .. H44 ) den hier eingestellten
+Z u stand ein.
+C10: Sollwertbegrenzung unten Sollwert 1
+C11: Sollwertbegrenzung oben Sollwert 1
+Der Einstellbereich vom S ollwert kann nach unten und nach oben begrenzt werden. Damit wird
+verhindert, dass der Endbetreiber einer Anlage unzulässige oder gefährliche Sollwerte einstellen
+kann.
+Thermostat - 2
+C21: Sollwert Regelkreis 2 (Thermostat) ( b1 = 0 )
+Falls b1 = 1, ist dieser Wert unwirksam.
+C23: Wert Delta W2 ( b1 = 1)
+Falls b1 = 1, sind die Sollwerte für Regelkreis 1 und 2 über eine Schaltdifferenz Delta W2 ( C23 )
+miteinander ve rknüpft (Betrieb mit Delta W).
+Es gilt: Sollwert Thermostat 2 = Sollwert Regelkreis 1 ( C1 / C2 ) + Delta W2
+Diese Differenz kann positive oder negative Werte annehmen. Es kann also ein voreilender oder
+nachei lender Kontakt realisiert werden.
+C24: Schaltsinn Regelkreis 2
+Den Schaltsinn, also Kühl - oder Heizfunktion, kann man für die Regelkontakte werkseitig una b-
+hängig voneinander programmieren. Heizfunktion bedeutet, dass der Kontakt beim Erreichen des
+vorgege benen Sollwertes fällt, also die Leistungszufuhr unterbricht. Bei der Kühlfunktion zieht der
+Kontakt erst an, wenn der Istwert größer ist, als der vorgegebene Sollwert.
+C25: Hysterese Regelkreis 2
+Die Hysterese kann symmetrisch oder einseitig am Sollwert angesetzt sein (siehe C26 ).
+Bei einseitiger Einstellung ist beim Heizkontakt die Hysterese nach unten wirksam, beim Kühlko n-
+takt nach oben. Bei symmetrischer Hysterese ist jeweils oberhalb und unterhalb des Schaltpunktes
+der halbe W ert der Hysterese wirksam (vgl. Bilder 1 und 2).
+C26: Hysteresemodus Regelkreis 2
+Dieser Parameter ermöglicht die Auswahl, ob der mit C25 einstellbare Hysteresewert für den R e-
+gelkontakt 2 symmetrisch oder einseitig am zugehörigen Schaltpunkt angesetzt ist.
+Bei symmetrischer Hysterese ist jeweils die Hälfte des eingestellten Wertes oberhalb und unte r-
+halb des Schaltpunktes wirksam. Die einseitige Hysterese ist beim Heizkontakt nach unten wir k-
+sam, beim Kühlkontakt nach oben.
+C27: Min destaktionszeit Regelkreis 2 "Ein"
+C28: Mindestaktionszeit Regelkreis 2 "Aus"
+Diese Parameter erlauben die Verzögerung des Ein - bzw. Ausschaltens des Regelkontaktes zur
+Reduzierung der Schalthäufigkeit. Die eingestellte Zeit gibt die gesamte Mindestdauer e iner Ei n-
+schalt - bzw. Ausschaltphase vor.
+C29: Funktion Regelkreis 2 bei Fühlerfehler
+Bei Fühlerfehler nimmt der ausgewählte Regelkontakt (siehe H41 .. H4 3 ) den hier eingestellten
+Zustand ein.
+
+Thermostat - 3
+C41: Sollwert Thermostat 3 ( b2 = 0)
+Falls b2=1, ist dieser Wert unwirksam.
+C43: Wert Delta W3 ( b2 = 1)
+Falls b2 = 1, sind die Sollwerte für Thermostat 1 und 3 über eine Schaltdiff erenz Delta W3 mite i-
+nander verknüpft (Betrieb mit Delta W).
+Es gilt: Sollwert Thermostat 3 = Sollwert Thermostat 1 ( C1 / C2 ) + Delta W3
+Diese Differenz kann positive oder negative Werte annehmen. Es kann als o ein voreilender oder
+nacheilender Kontakt realisiert werden.
+C44: Schaltsinn Regelkreis 3
+Den Schaltsinn, also Kühl - oder Heizfunktion, kann man für die Regelkontakte werkseitig una b-
+hängig voneinander programmieren. Heizfunktion bedeutet, dass der Konta kt beim Erreichen des
+vorgegebenen Sollwertes fällt, also die Leistungszufuhr unterbricht. Bei der Kühlfunktion zieht der
+Kontakt erst an, wenn der Istwert größer ist, als der vorgegebene Sollwert.
+C45: Hysterese Regelkreis 3
+Die Hysterese kann symmetrisc h oder einseitig am Sollwert angesetzt sein (siehe C46 ).
+Bei einseitiger Einstellung ist beim Heizkontakt die Hysterese nach unten wirksam, beim Kühlko n-
+takt nach oben. Bei symmetrischer Hysterese ist jeweils oberhalb und unterhalb des Schaltpunktes
+der halbe Wert der Hysterese wirksam (vgl. Bilder 1 und 2).
+C46: Hysteresemodus Regelkreis 3
+Dieser Parameter ermöglicht die Auswahl, ob der mit C45 einstellbaren Hysteresewert für den R e-
+gelkontakt 3 symmetrisch oder einseitig am zugehörigen Schaltpunkt angesetzt ist.
+Bei symmetrischer Hysterese ist jeweils die Hälfte des eingestellten Wertes oberhalb und unte r-
+halb des Schaltpunktes wirksam. Die einseitige Hysterese ist beim Heizkontakt nach unten wir k-
+sam, beim Kü hlkontakt nach oben.
+C47: Mindestaktionszeit Regelkreis 3 "Ein"
+C48: Mindestaktionszeit Regelkreis 3 "Aus"
+Diese Parameter erlauben die Verzögerung des Ein - bzw. Ausschaltens des Regelkontaktes zur
+Reduzierung der Schalthäufigkeit. Die eingestellte Zeit gibt die gesamte Mindestdauer einer
+Einschalt - bzw. Ausschaltphase vor.
+C49: Funktion Regelkreis 3 bei Fühlerfehler
+Bei Fühlerfehler nimmt der ausgewählte Regelkontakt (siehe H41 .. H43 ) den hier eingeste llten
+Zustand ein.
+
+T
+obere
+Grenze
+Sollwert
+untere
+Grenze
+C63=3 Grenzen absolut
+C63=2 Grenzen relativ
+m, Alarmkontakt normal
+Bandalar
+:
+Bild 4
+T
+obere
+Grenze
+Sollwert
+untere
+Grenze
+C63=1 Grenzen absolut
+C63=0 Grenzen relativ
+Grenzwertalarm, Alarmkontakt normal
+:
+Bild 3
+T
+obere
+Grenze
+Sollwert
+untere
+Grenze
+C63=6 Grenzen relativ
+C63=7 Grenzen absolut
+Bandalarm, Alarmkontakt invers
+:
+Bild 6
+C63=4 Grenzen relativ
+C63=5 Grenzen absolut
+Grenzwertalarm, Alarmkontakt invers
+Alarmfunktionen
+C61: Unterer Wert Alarm
+C62: Oberer Wert Alarm
+Der Ausgang Alarm ist ein mit einseitiger Hysterese (siehe Parameter C65 ) wirksamer Grenzwert -
+oder Bandalarm. Die Grenzwerte können sowohl beim Gr enzwert - als auch beim Bandalarm j e-
+weils relativ, also mit dem Sollwert C1 / C2 mitlaufend sein, oder absolut, also unabhängig vom
+Sollwert C1 / C2 . Die Hystere se wirkt beim Grenzwertalarm jeweils einseitig nach innen, beim
+Bandalarm nach außen (siehe Bilder 3 - 6 unten).
+:
+Bild 5
+C63: Funktion Ausgang Alarm
+Der Ausgang Alarm wertet einen oberen und einen unteren Grenzwert (siehe Para meter C61 und
+C62 ) aus. Hier kann ausgewählt werden, ob der Alarm aktiv ist, wenn die Temperatur inne r halb
+dieser beiden Grenzen liegt, oder ob Alarm gegeben wird, wenn die Temperatur außerhalb liegt.
+Bei F ü h lerfehler wird der Alarm unabhängig von dieser Einstellung aktiviert. Der Ausgang kann
+auch inve r tiert werden, so dass er wie eine Freigabe funktioniert (siehe Bilder 3 - 6 oben).
+Hysterese (C65)
+Alarm, Relais Alarm, Hupe an
+Hupe an aktiv und Relais aktiv
+T
+obere
+Grenze
+Sollwert
+untere
+Grenze
+
+Kühlen Heizen
+C64: Sonderfunktion bei Temperaturalarm
+U Aus
+Hier ist auswählbar ob im Alarmfa ll die Anzeige blinken und/oder der Summer ertönen soll.
+C88 = 2
+C86 = 10
+Achtung:
+Das Ausschalten des Alarmsummers durch die AB - Taste ist erst nach C64 > 3 möglich.
+Ein Fühler - Alarm (Anzeige F1L, F1H ) wird unabhängig davon durch eine blinkende Anzeige ang e- -10% +10%
+zeigt und der Summer ertönt. Das Abschalten des Summers ist jederzeit durch die AB - Taste
+möglich. Der Summer wird nach 10 Minuten erneut eingeschaltet, sollte der Fehler noch a n stehen.
+C65: Hysterese Alarmkreis
+Die Hysterese ist an den eingestellten Grenzwert einseitig angesetzt. Sie ist wirksam je nach
+A larmdefinition (siehe Bilder 3 - 6 auf der vorherigen Seite).
+PID - Regelung
+A55
+C86[%] C86[%]
+C82: Proportionalbereich bei PID - Regelung
+Der Proportionalanteil wirkt so, dass bei Annäherung des Istwertes an den Sollwert die Stellgröße
+A54
+linear von +/ - 100% auf 0% reduziert wird.
+C83: Nachstellzeit bei PID - Regelung (I - Anteil)
+A53
+C84: Vorhaltezeit bei PID - Regelung (D - Anteil)
+Ein reiner Proportional - Regler behält eine bleibende Abweichung des Istwertes vom Sollwert.
+Der Integral - Ante il sorgt für die vollständige Kompensation dieser Regelabweichung.
+Die Nachstellzeit ist ein Maß für die Zeitdauer, die gebraucht wird, um eine bleibende Temperatu r-
+abweichung von der Größe des Proportionalbereiches auszugleichen.
+Wenn eine kleine Nachstell zeit eingestellt wird, erfolgt eine schnelle Nachregelung. Bei zu kleiner
+Nachstellzeit kann das System aber zum Schwingen neigen.
+Der Differential - Anteil bedämpft Temperaturänderungen.
+Wenn eine große Vorhaltezeit eingestellt wird, ist die Dämpfungswirkun g stark. Bei zu großer Vo r-
+-100%
+haltezeit kann das System aber zum Schwingen neigen. Bei der Einstellung 0 sind die Werte u n-
++100%
+wirksam, somit ist es möglich, eine reine PI oder PD - Regelung zu realisieren.
+C85: Zykluszeit bei PID - Regelung
+Die Zykluszeit ist die Zei t, in welcher der Regelausgang eine Schaltperiode, d.h. einmal Aus und
+einmal An, durchläuft. Je kleiner die Zykluszeit, um so schneller kann die Regelung sein. Dies hat
+jedoch auch eine erhöhte Schalthäufigkeit des Ausgangs zur Folge, was bei Relaisko n takten zu
+schnellem Verschleiß führen kann. Bei sehr schnellen Regelstrecken mit entsprechend hoher
+Schalthäufigkeit ist daher ein Spannungsausgang vorteilhaft.
+C86: Stellgröße Totband
+PID [%]
+Mit dem Parameter C86 ist die Größe des Totbandes
+in % von der PID - Stellgröße einstellbar. Üblicherweise
+findet diese Funktion bei getakteten PID - Reglern (R e-
+lais) A n wendung, um damit eine mind. Einschaltzeit zu
+erzi e len. Mit C88 = 1 (Differentielles PID) kann damit
+eine Pseudo - Hysterese realisier t werden. Diese führt
+zu einer Absenkung der Schalthäufigkeit, sofern Is t-
+wert ~ Sollwert. Für C88 = 2 wird das Totband auch
+am Analogausgang (Skizze) zur Verfügung g e stellt.
+
+Somit wird bei Schrittventilen nahezu das gleiche Regelergebnis wie bei Analogventilen möglich.
+Die Tabelle zeigt das unterschiedliche Verhalten beider Modi, bei gleicher Regelstrecke.
+C89: Zykluszeit Schrittventil (DiffPID)
+Mit diesem Parameter wird die Zeit eingestellt die das Schrittventil be nötigt, um von 0% nach
+100% zu fahren.
+Wenn C88 = 1, wird die PID - Stellgröße auf diese Intervall umgerechnet. Die PID - Zykluszeit ( C85 )
+bleibt davon unberührt. Es sollte bei der Ermittlung dieser Zeit der aufg erundete Wert in S e kunden
+angegeben werden. Ferner sollte C85 >= C89 sein.
+Bei ± 100% bleibt der entsprechende Ausgang dauerhaft aktiv (Synchronisation).
+C99: Passwort
+Mit diesem Parameter ist das Passwort für die C  Ebene einstellbar
+Autotuning des PID - Heizkreises
+Das Autotuning soll das Regelverhalten an die Regelstrecke anpassen und optimieren. Dabei ist
+folgendes zu beachten:
+· Das Autotuning kann über die Funktionstaste F1 oder F2 eingeleitet werden. Dazu sind die
+macht ein Neustart des Tuning - Vorgangs notwendig. Die oben genannten Parameter wurden
+Parameter H 31 bzw. H32 auf 3 zu stellen.
+durch dessen Start verä ndert .
+· Das Autotuning wirkt nur auf einen Heizkreis . Vor dem Tuning - Vorgang muss min. ein Au s-
+· Ein Verändern des Sollwertes macht auch hier einen Tuning - Neustart notwendig.
+gangsrelais (K1 .. K3) über die Parameter H41 .. H43 auf Heizen (= 5) eingestellt sein.
+· Es ist u. U. notwendig auch nach einem durchgeführten Autotuning die oben genannten Par a-
+· Der Sollwert muss gegenüber dem Istwert um min. 20 K höher liegen. Ansonsten wird  ---- 
+meter C82 , C83 , C84 , C85 noch per Hand nachzujustieren.
+angezeigt (für 2 Sek.) und das Autotuning nicht gestartet.
+· Nach dem Einleiten des Tuningvorgang bis zu dessen Ende wechselt die Anzeige zwische n
+dem normalen Anzeigewert (z.B. Istwert) und der Ausgabe Auto (kann 1 Std. und mehr
+dauern). Danach wird die Mes s wert - Anzeige wieder normal dargestellt.
+· Der Tuning - Vorgang verändert die Parameter C82 , C83 , C84 , C85 .
+· Nach einem Netzausfall oder das Umschalten in den Standby - Modus vor dem Tuning - Ende
+- 30% 0% 30%
+- 20% 0% 20%
+5
+- 15% 0% 15%
+10% 10% 0%
+4
+0% 0%
+± 0
+25% 25% 0%
+3
++5% 5% 0%
+25% 25% 0%
+2
++20% 20% 0%
+20% 20% 0%
+1
+PID K1: He i- K2: Kü h- DiffPID K1: He i- K2: Kü h-
+zen len zen len
+ifferenziell (C88 = 1)
+D
+-
+PID
+Standard (C88 = 0/2)
+-
+PID
+Der differenzielle Mode ist spez iell für die Anwendung von Schrittventilen (z.B.
+K1=AUF, K2=ZU) geeignet. Solange die vom PID - Kreis berechnete Größe konstant bleibt, bleiben
+beide Ausgänge inaktiv, d.h. das Ventil bleibt an der aktuellen Position stehen.
+C87: Funktion PID - Regelkreis bei Fühlerfehler
+Bei Fühle rfehler nimmt die PID - Stellgröße den hier eingestellten Zustand ein.
+C88: PID - Mode
+[C88 = 0] PID - Standard
+[C88 = 1] PID - Differenziell (siehe unten)
+[C88 = 2] PID - Standard mit Totband auf Analogausgang
+PID - Differenziell:
+
+Parameterbeschreibung b - Ebene:
+b1: Aktivierung Verknüpfung Sollwert für Thermostat 1 und Thermostat 2 (Delta W2)
+Dieser Parameter bestimmt, ob die Sollwerte für Thermostat 1 und 2 unabhängig von einander ei n-
+stell bar (Parameter C21 ) oder über eine Schaltdifferenz Delta W2 (Parameter C23 ) miteinander
+verknüpft sind.
+b2: Aktivierung Verknüpfung Sollwert für Thermostat 1 und Thermostat 3 (Delta W3)
+Dieser Parameter bestimmt, ob die Sollwerte für Thermostat 1 und 3 un abhängig von einander ei n-
+stellbar (Parameter C41 ) oder über eine Schaltdifferenz Delta W2 (Parameter C43 ) miteinander
+verknüpft sind.
+b11: Verzögerung Regelkreis 1, 2, 3 nach "Netz - Ein
+Dieser Parameter ermöglicht die Verzögerung des Einschaltens der Rege lkontakte nach dem Ei n-
+schalten der Netzspannung um die eingestellte Zeit.
+b12: Gegenseitige Verzögerung Regelkreis 1, 2, 3
+Dieser Parameter ermöglicht eine gegenseitige Verzögerung des Einschaltens der Regelkontakte,
+je nachdem, welcher Kontakt zuerst ges chaltet wird.
+b13: Alarmunterdrückung nach "Netz - Ein", "Sollwert"
+Dieser Parameter ermöglicht eine verzögerte Aktivierung des Alarms (Blinken der Anze i ge und
+Schalten des Alarmrelais) nach dem Einschalten der Netzspannung sowie nach Änderung des
+Sol l werts um die eingestellte Zeit. Auch das Umschalten zwischen Sollwert - 1 und 2 aktiviert diese
+Verzög e rungszeit.
+Achtung: Fühlerfehler überlagern die Verzögerungszeit und werden sofort !! angezeigt.
+b99: Passwort
+Mit diesem Parameter ist das Passwort für die b  Ebene einstellbar
+b99 Passwort b - Ebene - 99..999 0
+0: Stellgröße n . a.
+b21 Verknüpfung Analogausgang 1: Istwert
+2: Sollwert
+Alarmunterdrückung nach "Netz - Ein", 0...60 Min. 0 Min.
+b13
+"Sollwert"
+0...400 Sek. 0 Sek.
+1, 2, 3
+Gegenseitige Verzögerung Regelkreis
+b12
+Verzögerung Regelkreis 1, 2, 3 nach 0...400 Sek. 0 Sek.
+b11
+"Netz - Ein"
+0: keine Verknüpfung 0
+1: Sollwert Thermostat 3 =
+C1/C2 + C43
+Aktivierung Verknüpfung Sollwert
+b2
+Thermostat 1 und 3 (C43 = Delta W3)
+0: keine Verknüpfung
+1: Sollwert Thermostat 2 = 1
+C1/C2 + C23
+Aktivierung Verknüpfung Sollwert
+b1
+Thermostat 1 und 2 (C23 = Delta W2)
+Kunde
+Standard
+Einstellbereich
+Funktion
+meter
+-
+Para
+Diese Ebene enthält die Parameter für Verknüpfung.
+Die b - Ebene (between)
+
+H99 Passwort H - Ebene - 99..999 0
+L0 ST - Busadresse 1 .. 250 5
+0: 50Hz 0
+H51 Netzfrequenz
+1: 60Hz
+n. a.
+H41
+siehe
+H44 Funktion Aus gang K4
+4
+H41
+siehe
+H43 Funktion Ausgang K3
+5
+H41
+siehe
+H42 Funktion Ausgang K2
+0: keine Verbindung
+1: Thermostat 1
+2: Thermostat 2 2
+3: Thermostat 3
+H41 Funktion Ausgang K1 4: Alar mfunktion
+5: PID - Regler heizen
+6: PID - Regler kühlen
+7: Funktionstaste 1 (H31>0)
+8: Funktionstaste 2 (H32>0)
+0: Keine Tastenquittierung 0
+H35 Aktivierung der Tastenquittierung 1: Tastenquittierung mit
+Summer
+0: keine Funktion
+1: Regler Ein/Aus (Standby )
+H32 Belegung Funktionstaste 2
+2: Sollwert 1 / Sollwert 2 2
+3: Relais (H41..H43)
+0: keine Funktion
+1: Regler Ein/Aus (Standby) 1
+H31 Belegung Funktionstaste 1
+2: Sollwert 1 / Sollwert 2
+3: Relais (H41..H43)
+0: AUS
+H17 Mode nach Netz - ein 1: EIN 1
+2: AUTO
+0: keine Anzeige
+(rechter Punkt)
+H16 Anzeige Standby
+1: AUS 1
+2: OFF
+0: Celsius 0
+H15 Temperaturskala
+1: Fahrenheit
+1: Istwertanzeige 1
+H12 Art der Anzeige 2: Sollwertanzeige
+3: PID - Stellgröße
+0: ganzzahlig
+1: Auflösung 0,5°K
+H11 Anzeigemodus
+2: Auflösung 0,1°K 2
+3: Auflösung 0,01°K
+0: nicht verriegelt 0
+H1 Sollwert - Verriegelung
+1: verriegelt
+Kunde
+Standard
+Einstellbereich
+Funktion
+meter
+-
+Para
+Diese Ebene enthält die Hardwareparameter
+Die H - Ebene (Hardware)
+
+Parameterbeschreibung der H - Ebene:
+H1: Sollwert - Verriegelung
+Die Tastenverriegelung ermöglicht die Spe rrung der Sollwert - Verstellung ( C1 / C2 ) .
+Die Parameter werden aber weiterhin durch Drücken SET - Taste angezeigt.
+Auch ist es wie gewohnt möglich die Werte innerhalb des P a rametermenüs zu verstellen.
+H11: Anzeigeauflösung
+[H11 = 0] Auflösung 1 K
+[H11 = 1] Auflösung 0.5 K
+[H11 = 2] Auflösung 0.1 K
+[H11 = 3] Auflösung 0.01 K
+Bei Bereichsüberschreitungen wird automatisch in die nächst niedrigere Auflösungsstufe umg e-
+schaltet (z.B. 99.99 °C - > 100.0 °C oder  99 .9°C - > - 100 °C).
+Parametereinstellungen und Sollwerte werden prinzipiell mit einer Auflösung von 0,1°K ang e zeigt.
+H12: Anzeigeart
+[H12 = 1] Istwertanzeige
+[H12 = 2] Sollwertanzeige C1 oder Sollwert über Analogeingang bzw. C2
+[H12 = 3] PID - Stellgröße
+Wird anstelle des Istwertes die Sollwert - oder die PID - Stellgröße gewählt so kann der aktuelle Is t-
+wert nur über den P a rameter A1 werden. Umgekehrt kann bei Anzeige des Istwertes die PID -
+Stellgröße nur über A50 abgerufen werden
+H15: Temperaturskala
+Die Anzeige kann zwischen Fahrenheit und Celsius umgestellt werden. Es handelt sich hier nur
+um eine andere Darstellungsart. Innerhalb des Reglers wird weiterhin in °C gerechnet.
+(Beispiel: 100 °C wird als 212 °F angezeigt)
+ACHTUNG : Anzeigegre n zen bei °F können kleiner als der tatsächliche Messbereich sein !
+H16: Anzeige Standby
+Im Standby Modus erscheint in der Anzeige der hier eingestellte Wert.
+H17: Mode nach Net z - ein
+[H17 = 0] AUS Der Regler wird sofort in den Standby - Betrieb umgeschaltet.
+[H17 = 1] EIN Der Regler wird normal eingeschaltet
+[H17 = 2] AUTO Je nach Betriebszustand vor der Netztrennung wird der Regler in den zuletzt
+eingestellten Zustand gefahren.
+H31: Belegung Funktionstaste 1
+H32: Belegung Funktionstaste 2
+[H3x = 0] Die Taste ist deaktiviert
+[H3x = 1] Standby - Taste. Der Regler kann Ein - bzw. Ausgeschaltet werden.
+[H3x = 2] Umschalten zwischen Sollwert 1 ( C1 ) und Sollwe rt 2 ( C2 )
+[H3x = 3] Einleiten des PID - Autotunings zur Optimierung des PID - Regelverhaltens
+Siehe dazu auch das Kapitel Autotuning des PID - Heizkreises
+[H3x = 4] Zuordnung eines Relais H41 .. H44
+Nach Netzunterbrechung bleibt der Zustand gespeichert.
+Ausnahmen:
+· Autotuning muss neu gestartet werden
+· Ein evtl. eingeschaltetes Relais muss neu geschaltet we r den.
+
+H35: Aktivierung der Tastenquittierung
+Dieser Parameter erlaubt das Ein - oder Ausschalten der Tastenquittierung mit dem int. Summer.
+H41 - 43: Funktion Ausgang K1 - 3
+H51: Netzfrequenz
+Mit diesem Parameter muss die Netzfrequenz ausgewählt werden.
+L0: Busadresse
+Einstellung der ST - Bus Adresse zur Anbin dung an übergeordnete Kontrollinstanzen.
+H99: Passwort
+Mit diesem Parameter ist das Passwort für die H  Ebene einstellbar
+
+Parameterbeschreibung der d - Ebene:
+d0: Abtauintervall
+Das Abtauintervall legt die Zeit fest, nach der ein Abtauvorgang eingeleitet wird. Nach jedem A b-
+taustart wird diese Zeit neu geladen und abge arbeitet
+Handabtauung:
+Durch Betätigung der Taste AUF( für min. 3 Sek.) wird das Abtauintervall vorzeitig aktiviert. Als
+Alternative kann dafür auch der Parameter d9 benutzt werden. Die nächste automatische Abta u-
+ung erfolgt nun wi eder nach der Zeit d0 . (Synchronisation der Abtauung)
+d2: Abtautemperatur
+Damit ist es möglich, den Abtauvorgang bei Erreichen des eingestellten Temperatur - Sollwertes zu
+beenden. Die mit Parameter d3 eingest ellte Abtauzeit arbeitet parallel dazu und wirkt somit als
+Sicherheit s zeit, die bei Nichterreichen der Abtautemperatur die Abtauung beendet.
+d3: Abtauzeitbegrenzung
+Nach der hier eingestellten Zeit wird der Abtauvorgang beendet.
+d9: Abtauzeitbegrenzung
+D urch Veränderung von 0 - > 1 wird eine Abtauung eingeleitet. Das Abtauintervall wird dabei wi e-
+der zurückgesetzt. (Synchronisation der Abtauung)
+d99: Passwort
+Mit diesem Parameter ist das Passwort für die d - Ebene einstellbar
+d99 Passwort d - Ebene - 99...999 0
+d9 Handabtauu ng TH1 0...1 0
+199min
+d3 Abtauzeitbegrenzung TH1 30 min
+0: Keine Zeitbegrenzung
+d2 Abtautemperatur TH1 - 99,0...999,0°C 10,0 °C
+1...99h
+d0 Abtauintervall TH1 0
+0: Keine Abtauung
+Kunde
+Funktion Einstellbereich Standard
+meter
+-
+Para
+Diese Ebene enthält die Parameter für die Abtauung.
+ACHTUNG: Die Abtauparameter wirken nur auf Regel kreis 1
+Die d - Ebene (Abtaufunktionen)
+
+A99 Passwort A - Ebene - 99..999 0
+0: Fester Wert aus Parameter -
+A60 Typ Sollwertsensor 0
+speicher (= C1 )
+Ausgabewert volle Heizleistung 0...10,0
+A55 n. a.
+(0..100,0%) (10 entspricht 10V bzw. 20mA)
+0...10,0
+A54 Ausgabewert "0" Leistung n. a.
+(10 entspricht 10V bzw. 20mA)
+A usgabewert volle Kühlleistung 0...10,0
+A53 n. a.
+( - 100,0..0%) (10 entspricht 10V bzw. 20mA)
+Anzeigewert für oberer Wert am
+A52 (A51+0,5)999,0 n. a.
+Analogausgang (10V/20mA)
+Anzeigewert für unterer Wert am - 99,0(A52 - 0,5)
+A51 n. a.
+Analogausgang (0V/0mA) 0 bei Fühlerfehler (b21 = 1)
+A50 Anzeige der PID - Stellgröße -
+0: nicht aktiv,
+sonst Mittelwert über
+Zeitkonstante des Software - Filters 1: 2 Messwerte (ca. 2*X s)
+2: 4 Messwerte (ca. 4*X s) 2
+A40
+X = 160 ms (50 Hz, H51=0) 3: 8 Messwerte (ca. 8*X s)
+X = 400 ms (60 Hz, H51=1) 4: 16 Messwerte (ca. 16*X s)
+5: 32 Messwerte (ca. 32*X s)
+6: 64 Messwerte ( ca. 64*X s)
+0: Impulse / Sek. (= Frequenz)
+A8 Anzeigeart der Mengenzählung 1: Menge / Sek. n. a.
+2: Menge / Min.
+n. a.
+Mengeneinheit
+19999 Impulse
+A7 Skalierung der Mengenzählung
+Anzeigewert für oberen Wert des
+A6 - 99,0...999,0 n. a.
+U/I - Analogein gangs
+Anzeigewert für unteren Wert des
+A5 - 99,0...999,0 n. a.
+U/I - Analogeingangs
+A4 Typ Istwertsensor 25: NTC 10 k Ohm bei 25°C 25
+Wichtungsfaktor Analogeingang
+A3 0,50...1,50 1,00
+(ohne U, I - Eingang)
+Istwertkorrektur Thermoelement/
+A2 Temperaturfühler (gilt nicht für - 99,0...9 9,9 K 0 K
+Strom - /Spannungseingang)
+A1 Anzeige Istwert Analogeingang -
+Kunde
+dard
+n-
+Sta
+Einstellbereich
+Funktion
+meter
+-
+Para
+Die se Ebene enthält die Parameter für analoge Ein - bzw. Ausgänge
+Die A - Ebene (Analogwerte)
+
+Parameterbeschreibung A - Ebene:
+A1: Anzeige Istwert Analogeingang
+Der hier angezeigte Temperaturwert ist die Summe aus tatsächlichem Messwert von Fühler F1
+und der Istwertkorrektur nach Parameter A2 .
+A2: Istwertkorrektur Analogeingang
+Mit diesem Parameter ist es möglich, Istwertabweichungen zu korrigieren, die zum Beispiel durch
+Fühlertoleranze n oder extrem lange Fühlerleitungen verursacht werden. Der Regler - Messwert wird
+um den hier eingestellten Wert vergrößert bzw. verkleinert.
+A3: Wichtungsfaktor Analogeingang
+Der Istwert kann mit diesem Parameter einer Wichtung unterzogen werden. Der gemes sene Wert
+wird damit multipliziert und sowohl in der Anzeige ausgewiesen, als auch für die Regelung hera n-
+gezogen.
+A4: Typ Istwertsensor (Analogeingang)
+Dieser Parameter erlaubt die Auswahl des Fühlertyps bzw. Art des Analogeingangs soweit die
+hardwareseit igen Voraussetzungen hierzu gegeben sind.
+A40: Zeitkonstante des Software - Filters
+Es kann eine Mittelwertbildung über mehrere Messwerte durchgeführt werden.
+Wenn ein Sensor verwendet wird, der sehr schnell auf äußere Einflüsse reagiert, ist durch Mitte l-
+we rtbildung ein ruhiger Signalverlauf gewährleistet.
+A50: Anzeige der PID - Stellgröße
+Ausgabe der intern berechneten PID - Stellgröße von - 100%...100%.
+A60 Typ Sollwertsensor
+Der Sollwert ist bei diesem Gerät ein fixer Wert aus dem Paramete r speicher ( C1 ).
+A99 Passwort
+Mit diesem Parameter ist das Passwort für die A -- Ebene einstellbar.
+
+Falls ein Fehler im Parameterspeicher erkannt wird (Anzeige EP) und deshalb die eingespeiche r-
+ten Einstellungen nicht verwertet werden können, werden die Regelkontakte in den stromlosen
+Zustand gebracht.
+Ein Fühler - Alarm (Anze ige F1L oder F1H ) wird unabhängig davon durch eine blinkende Anzeige
+angezeigt und der Summer ertönt. Das Abschalten des Summers ist jede r zeit durch die AB -
+Taste möglich. Der Summer wird nach 10 Minuten erneut eingeschaltet, sollte der Fehler noch
+a n ste hen.
+Blinkende Temperaturalarm bei Über - oder
+Anzeige Untertempe ratur (falls aktiviert)
+Bereichsüberschreitung der Anzeige
+---- bzw. Eingabesperrung
+0: Fehler Programmspeicher
+1: Fehler Parameterspeicher
+E P_ Reparatur des Reglers
+=> ALLE AUSGÄNGE WERDEN
+ABGESCHALTET
+Fühlerfehler Istwertsensor
+F 1_ (H: Bruch oder L: Kurzschluß am Fühler F1) Kontrolle des Fühlers
+Maßnahme
+Ursache
+Meldung
+Statusanzeigen und Fehlermeldungen
+
+Technische Daten zu ST710 - P HXV.102FHP
+Analog - Eingänge
+F1: Temperaturfühler NTC, Typ 103AT - 11 - 50081 ( 1%, 10k Ohm bei 25°C)
+Messbereich: - 3 0°C...+90°C
+Ausgänge
+K1: Relais, 8(1,5)A, 250V~, Schließer, Funktion siehe Parameter H41.
+K2: Relais, 8(1,5)A, 250V~, Schlie ßer, Funktion siehe Parameter H42.
+K3: Relais, 6 ( 0 ,5)A, 250V~, Schließer, Funktion siehe Parameter H43.
+Eingebauter Summer, ca. 85 dB. (Option)
+Anzeigen
+Eine vierstellige LED - Anzeige, 13 mm hoch, Farbe rot.
+Drei LED - Lampen, Durchmesser 2 mm, für Statusan zeige der Ausgänge K1, K2, K3.
+Stromversorgung
+12 - 24V~ oder 16 - 36V=, Leistungsaufnahme max. 3VA
+Anschlüsse
+Schraub - Steckklemmen
+2
+12 - polig, Raster 5,0 mm, für Kabel bis 2,5 mm
+Umweltbedingungen
+Lagertemperatur - 20...+70 °C
+Arbeitstemperatur 0...55 °C
+Rel ative Feuchte max. 75 %, keine Betauung.
+Gewicht
+ca. 280 g
+Schutzart
+IP65 von vorne, IP00 von hinten.
+Schutzklasse
+Schutzklasse II, Bemessungsspannung 250V~, isolierter Einbau
+Normen
+CE Niederspannungs - Richtlinie 73/23/EEC
+EN 60335 - 1:2002 Sicherheit el ektrischer Geräte für den Hausgebrauch und ähnliche Zwecke
+EN 60730 - 1:2002 Automatische elektrische Regel - und Steuergeräte für den Hausgebrauch
+und ähnliche A n wendungen.
+EN 61010 - 1:2001 Sicherheitsbestimmungen für elektrische Mess - , Steuer - , Regel - und
+L a borgeräte
+CE EMV - Richtlinie 89/336/EEC, Schärfegrad 3
+Einbauangaben
+Das Gerät ist gebaut für den Einbau in eine Schalttafel .
+Frontmaß 84 mm x 42 mm
+Schalttafelausschnitt 67,5 mm x 3 1,5 mm
+Einbautiefe ca. 85 mm
+Bestellnummer 900310.022

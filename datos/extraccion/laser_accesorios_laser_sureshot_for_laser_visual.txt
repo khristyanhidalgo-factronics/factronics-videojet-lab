@@ -1,0 +1,48 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\SureShot for Laser.pdf
+# cifrado=False bloques=6 caracteres=1993
+
+SURE SHOT FOR LASER
+Confidential - Company Proprietary
+
+1. DESCRIPTION
+Sure Shot is a device normally used with two CIJ printers in order to put them printing at the same
+production line, once at a time alternately, while both machines are running (one prints on the first
+product, the other prints on the second product and so on)
+If one of the printers enters in fault , the Sure Shot sends all the print signals to the other one . To do
+this , Sure Shot uses a Print Ready signal from both machines .
+Confidential - Company Proprietary
+
+2. Using Sure Shot with VJ laser printers
+In some laser applications , where is not possible to print all the products , because of the line speed and
+production rate (PPM), with only one laser, Sure Shot can be used to put two laser printers working
+alternately .
+In this case, the Print Ready connection is not used (it must be conected to 12 VDC) and the laser
+printers can be conected to stop the production line in case of faults .
+It is necessary to use an external Power Supply , because Sure Shot works with 12 VDC and the laser
+pinters use 24 VDC
+Sure Shot needs a NPN product detector (10 to 30 VDC)
+If the laser printers can only work with PNP print signal , it is necessary to convert the output signal ,
+provided by Sure Shot , from NPN to PNP. It could be used an optical coupler , for example (4N25 is an
+option ).
+Confidential - Company Proprietary
+
+3. Sure Shot Connections
+NOT USED
+Prod. Detector NPN
+(10 to 30 VDC)
+Printer Ready conected to 12 VDC
+Printer Ready conected to 12 VDC
+( External PSU)
+( External PSU)
+Print Signal NPN to PNP converter
+Print Signal NPN to PNP converter
+(Laser “B”)
+(Laser “A”)
+Confidential - Company Proprietary
+
+4. Example of a PNP Converter ( Optocoupler 4N25)
+Confidential - Company Proprietary
+
+S@23222i@&&-e&ehh???99?/3/99//9901%#".''#"&&67&&66327>32?+18 5$->>7/61,39e0$L#+$
+I!IL??9?01Y#".'.54>327>32'C65C&1%
+'3m*.?.!'-@'...+!!~??9/93]22/9/32201%###".55!".54>7>3232#3m@&&!2%*6"@""aaI1C8V1$,$,@44.1H@H/

@@ -1,0 +1,52 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Ing\14421-Determining MAC Adres for Clairty Printers (Eng).pdf
+# cifrado=False bloques=2 caracteres=3448
+
+13/01/2023 15:23 Knowledge Article
+Determine MAC Address for Clarity
+based printers
+H e a d e r
+V i d e o j e t T e c h n o l o g i e s , I n c . K n o w l e d g e A r t i c l e
+C o n t e n t
+W h a t i s a M A C A d d r e s s ?
+A MAC Address (Media Access Control) is a unique identifier assigned to network interfaces
+for communications at the data link layer of a network segment.
+D et er m i n e M A C A d d r ess i n C l ar i t y B as e d P r i n t e r
+1. Find the PCB Serial Number by selecting T ools | Diagnostics | Control | System Information
+2. Remove the first uppercase letter in the serial number .
+i. In the example listed below , the letter Z would be removed.
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Determine-MAC-Address-for-Clarity-based-printers/p 1 /2
+ 3. Add 000F41 at the beginning of the string
+ 4. In this example, the MAC Address would be 000F41002F A6
+C I J C l ar i t y M A C ad d r esses:
+If the CSB MAC address in a clarity CIJ printer is needed:
+Go through the network wizard and write down the IP address of the controller and the print head. If
+not already known.
+Connect PC/laptop with ethernet cable to the external connector .
+Be on the same network to be able to communicate with the printer .
+Open a command prompt window
+Ping both IP addresses and make sure valid communication is noted.
+
+13/01/2023 15:23 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Determine-MAC-Address-for-Clarity-based-printers/p 2 /2
+T ype arp -a
+The resulting values will show the previous pinged IP addresses and the associated MAC addresses:
+IP address is Internet Address; Physical Address is the MAC address of the board.
+T r i a g e N e x t S t e p s
+T r i a g e
+R e c o m m e n d e d
+P a r t s
+D i s c l a i m e r
+N o t e : T h i s i s a " F A S T P U B L I S H " a r t i c l e c r e a t e d d i r e c t l y f r o m w i t h i n t h e V i d e o j e t s u p p o r t o r g a n i z a t i o n . T h e
+i n f o r m a t i o n c o n t a i n e d h e r e i s p r o v i d e d a s - i s i n r e s p o n s e t o e m e r g i n g t o p i c s o r p r o b l e m s . A s a r e s u l t o f t h e s p e e d i n
+m a k i n g i t a v a i l a b l e , t h e m a t e r i a l s m a y i n c l u d e t y p o g r a p h i c a l e r r o r s a n d m a y b e r e v i s e d a t a n y t i m e w i t h o u t n o t i c e .
+F u r t h e r m o r e , t h e c o n t e n t s o f t h i s e m a i l a n d a n y a t t a c h m e n t s a r e p r o v i d e d a s a c o n v e n i e n c e t o V i d e o j e t c u s t o m e r s
+t o h i g h l i g h t u s e f u l i n f o r m a t i o n a n d t r o u b l e s h o o t i n g t i p s . W h e n w o r k i n g w i t h a p r o d u c t , a l w a y s c o n s u l t t h e p r o d u c t
+u s e r m a n u a l a n d f o l l o w t h e p r o d u c t s a f e t y p r e c a u t i o n s a n d r e c o m m e n d a t i o n s , i n c l u d i n g u s i n g P e r s o n a l P r o t e c t i v e
+E q u i p m e n t w h e n n e c e s s a r y . I f y o u h a v e a n y q u e s t i o n s o r a r e n o t e x p e r i e n c e d i n u s i n g o r s e r v i c i n g V i d e o j e t
+e q u i p m e n t , c o n t a c t V i d e o j e t f o r a s s i s t a n c e .
+I n t e r n a l C o m m e n t s
+T i t l e Determine MAC Address for Clarity based printers
+U R L N a m e Determine-MAC-Address-for-Clarity-based-printers
+P e r m a n e n t U R L
+Right click and copy link to share this Article's URL
+f o r L i g h t n i n g

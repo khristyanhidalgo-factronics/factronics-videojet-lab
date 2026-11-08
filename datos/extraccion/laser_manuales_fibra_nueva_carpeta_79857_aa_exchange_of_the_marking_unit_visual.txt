@@ -1,0 +1,104 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\Nueva carpeta\79857-AA Exchange of the Marking Unit.pdf
+# cifrado=False bloques=10 caracteres=4580
+
+AL-79857Service Part Installation Instruction
+Exchange of the Marking Unit
+1 Exchange of the Marking Unit
+1.1 Removal of CP-Light
+DangerBefore starting any work the laser system must be completely dis-connected!
+1.Turn the key-operated switch to position 0.Remove the key, in order to ensure that the laser system cannot be
+switched on.
+2.Save the database in theFor a detailed description see the manual of the software. software.
+3.Turn off the main switch.
+4.Pull the mains plug.
+1.Remove the screws of the cover at the back of the supply unit.
+2.Open the cover by pulling it back and then lift it off.
+3.Disconnect all connectors from the CP-Light.
+06/19 - Rev. AA 1
+
+AL - 79857
+Service Part Installation InstructionExchange of the Marking Unit
+4.Remove the three screws and lift out the CP-Light on its carrier.
+1.2 Removal of Marking Head
+NoteWear suitable protective gloves during the complete procedure.
+Make sure that no contaminants enter the marking head while exchanging!
+1.Remove the screw of the housing.
+2 06/19 - Rev. AA
+
+AL-79857Service Part Installation Instruction
+Exchange of the Marking Unit
+2.On the opposite side push in the locking mechanism and carefully pull up the housing.
+3.Remove the spacer.
+06/19 - Rev. AA 3
+
+AL - 79857
+Service Part Installation InstructionExchange of the Marking Unit
+4.Remove the cable clamps holding down the galvo cables and disconnect the galvos.
+5.Disconnect the temperature sensors.
+6.Remove the collimator fixture.
+7.Carefully lift off the marking unit assembly and pull out the blue hose.
+galvo connectorscable clamps
+4 06/19 - Rev. AA
+
+AL-79857Service Part Installation Instruction
+Exchange of the Marking Unit
+1.3 Mounting of the Marking Head
+1.Remove the protective cap from the new marking head.
+2.Pull out the head using the yellow stick.
+3.Put the protective cap onto the head to protect the galvos.
+4.Remove the yellow stick.
+5.Carefully lower the new marking head assembly onto the blue hose and insert it.
+6.Mount the collimator as follows:Push the sleeve of the collimator properly into the galvo-block bracket to make sure that the
+collimator fixture is in the right position. There must be no gap between the collimator and the bracket!
+On the other end of the collimator make sure that the nose of the collimator fixture catchesbehind the sleeve.
+Make sure that the fixing screws can be screwed in straight, without cross-threading.
+bracketcollimator fixture sleeve
+sleevecollimator nose
+06/19 - Rev. AA 5
+
+AL - 79857
+Service Part Installation InstructionExchange of the Marking Unit
+7.Connect the temperature sensors.Note: The sensor cables have different lengths.
+8.Connect the galvo connectors and mount the cable clamps.
+Position the cables as in the pictures so that the cable clamps are sitting flat.Make sure that the cables do not cover the temperature sensor!
+9.Position the thick o-ring onto the end cap.
+10.Insert the spacer.Make sure the dowel pin is in the notch of the spacer.
+11.Remove the protective cap from the galvos.
+galvo connectorscable clamps
+dowel pin
+spacer
+6 06/19 - Rev. AA
+
+AL-79857Service Part Installation Instruction
+Exchange of the Marking Unit
+12.Take the housing and position it above the marking head. The correct position is defined bythe holes in the marking head housing, the bigger hole is for the locking mechanism.
+13.Carefully lower the housing onto the marking head.Make sure the duckbill valve is in place.
+14.When the housing touches the locking mechanism, push in the button, lower the housingand let the locking mechanism snap into place.
+15.Tighten the fixing screw on the opposite side.
+CFS CFT
+06/19 - Rev. AA 7
+
+AL - 79857
+Service Part Installation InstructionExchange of the Marking Unit
+1.4 Mounting of the CP-Light
+1.Mount the new CP-Light with carrier.
+2.Connect all connectors to the CP-Light.
+3.Close the housing cover.
+shutterY positionX positionemission LED
+Y current LVDS
+X current
+temperaturesensor
+power supply
+8 06/19 - Rev. AA
+
+AL-79857Service Part Installation Instruction
+Exchange of the Marking Unit
+1.5 Uploading Calibration Files
+1.Log into TCS+/FOBA Go as "Service".
+2.Go to Global Settings and select Laser Unit Settings.
+3.Select Lens Compensation and select File Management.
+4.In the File Management dialog select Upload and navigate to the USB stick containing thecalibration file (on the connected Laptop, PC or TU430).
+5.Select the file to be uploaded. It will automatically be copied to the correct category.
+6.In the Lens Compensation now select Activate best compensation.
+7.Close the Laser Unit Settings dialog.
+06/19 - Rev. AA 9

@@ -1,0 +1,803 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\LN100 Lesson 3 Software.pdf
+# cifrado=False bloques=80 caracteres=38142
+
+Lesson 3 – Software
+Table of Contents
+Introduction ………………………………………………………………………………………… 3 - 2
+Objectives ………………………………………………………………………………………… 3 - 2
+Activities ………………………………………………………………………………………… 3 - 2
+Compatibility ………………………………………………………………………………………… 3 - 4
+list
+Alltec website ………………………………………………………………………………………… 3 - 8
+Passwords ………………………………………………………………………………………… 3 - 10
+Networking ………………………………………………………………………………………… 3 - 10
+Permission ………………………………………………………………………………………… 3 - 1 3
+Creating a ………………………………………………………………………………………… 3 - 1 6
+database
+Creating a ………………………………………………………………………………………… 3 - 2 7
+template
+Printing ………………………………………………………………………………………… 3 - 3 2
+exercises
+Parameters ………………………………………………………………………………………… 3 - 3 7
+Advanced ………………………………………………………………………………………… 3 - 56
+exercises
+Product ………………………………………………………………………………………… 3 - 59
+registration
+System ………………………………………………………………………………………… 3 - 74
+settings
+Fumex ………………………………………………………………………………………… 3 - 7 7
+Videojet Technologies Inc. 3 - 1 October , 20 14
+
+Lesson 3 – Theory of Operation
+Introduction
+❑ This lesson will provide the participants with hands - on experience in
+the creating databases, getting permissions, connecting to the printer,
+creating messages, printing parameter and how the LN100 YAG laser
+reacts to different substrate .
+❑ Warning: all participants to use safety glasses
+❑ Caution: door must be close and outside light on prior to printing.
+Objectives
+❑ Demonstrate the ability to connect to the printer
+❑ Demonstrate the ability to create a new database
+❑ Demonstrate the ability to get permissions
+❑ Demonstrate the ability to create various templates
+❑ Describe the print parameters settings .
+❑ Demonstrate the ability to adjust print parameter to resolve print
+quality issues .
+❑ Demonstrate the ability to create messages using the advanced
+features of Smart graph .
+❑ Demonstrate the ability to print on the fly.
+❑ Demonstrate the ability to change parameters based on substrate
+Activities
+□ Printing on various paper and metal materials.
+□ Understanding how the YAG wavelength reaches to various
+substrates.
+□ Using the advanced features in Smart graph .
+Videojet Technologies Inc. 3 - 2 October , 20 14
+
+The following is a li st of references & materials for this topic.
+References &
+Materials
+❑ LN100 YAG Training Guide
+❑ LN100 YAG Technical Guide
+❑ LN100 YAG PPT
+❑ LN100 YAG
+❑ Safety glasses
+❑ Cardstock
+❑ PET
+❑ Metal
+❑ plastic
+Videojet Technologies Inc. 3 - 3 October , 20 14
+
+Videojet Technologies Inc. 3 - 4 October , 20 14
+
+Static address on your laptop
+• Connecting to the printer
+– The printer ’ s IP address
+• Restoring the default 192.168.1.1
+– Setting your Laptop IP address
+• Start
+• Settings
+• Network connections
+• Local area connections
+• Properties
+• Internet protocol (TCP/IP)
+• Properties
+• Use the following IP address example 168.193.1.3
+49
+
+Setting PC IP address
+Note: this procedure is done assuming dip switch one is in the on position.
+Click start
+Click control panel or connect to
+If you choose control panel click network connections, if you choose connect to click show all
+connections.
+Select local area connection
+Under local area connection properties/general tab/this connection uses the following items
+select TCP/IP
+Click properties
+Videojet Technologies Inc. 3 - 5 October , 20 14
+
+Under internet Protocol (TCP/IP)/general select use the following IP address
+Under IP address: type in 192.168.1.(your desired number)
+Type in the following subnet mask 255.255.255.0
+Under internet Protocol (TCP/IP)/general click the OK button
+Videojet Technologies Inc. 3 - 6 October , 20 14
+
+Under local area connection properties/general tab
+PC IP configuration is complete
+1. Click onto the Permissions link in the left column of the home site. The following dialog is
+displayed:
+If there are already PCs with start permission, they are listed. If no systems have been configured
+yet, only the button »Submit« and »add entry« are displayed.
+Videojet Technologies Inc. 3 - 7 October , 20 14
+
+2. To add a new PC to the list click onto »add entry«. Enter the IP number of the PC you want to
+assign a start permission to and enter a name under »comment«. Click onto »transfer«.
+3. The following message is displayed:
+Programming of the MMC
+1. Install the card reader according to the card reader’s manual. After that you will see the card
+reader as a new disc drive.
+2. Insert the MMC into the card reader and open the Windows Explorer.
+3. In the Windows Explorer open the drive that refers to the card reader.
+4. Save the file database.ydb or database.gz to your hard disk.
+5. Close the drive in the Windows Explorer.
+6. Select the drive by clicking with the right mouse key and format the MMC.
+7. Open the zip - file from the appropriate QMark directory and extract all the files to the MMC.
+8. Copy the saved file database.ydb or database.gz to the directory "Smarties" and overwrite
+the existing file.
+9. You will find the following files on the MMC:
+Videojet Technologies Inc. 3 - 8 October , 20 14
+
+Copying a pre - 6.7.x Q - mark database.ydb to a 6.7.x or
+6.8.x ‘Database’
+The migration from a pre - 6.7.x Q - mark database.ydb file to a 6.7.x or 6.8.x ‘Database’ folder is
+done as follows:
+Make a complete backup of a customer’s MMC card before proceeding with any database or
+MMC card operations.
+Copy the customer database.ydb off of the MMC card into its own empty directory.
+Figure 1
+Start up SmartGraph 6.7.x . Browse to find the database.ydb file.
+Note: do not use the import feature.
+Figure 2
+You will see a message stating that SmartGraph has converted the database into the new format.
+Figure 3
+Click OK to convert to new database format.
+Videojet Technologies Inc. 3 - 9 October , 20 14
+
+Note the different file extension name
+Figure 4
+You will find that the database.ydb file has been preserved, but a new folder called ‘database’
+has been created.
+Figure 5
+Note: figure 5 is as seen on your PC.
+Close SmartGraph.
+This newly created ‘database’ folder will need to be renamed to be ‘Database’ (I believe it will
+be case sensitive).
+Figure 6
+Note: small d in figure 5
+Videojet Technologies Inc. 3 - 10 October , 20 14
+
+To perform the Qmark update, Copy the ‘Database’ directory to the /smarties/ directory on the
+MMC card, overwriting all.
+Figure 7
+Figure 8
+Inside the Database folder
+Videojet Technologies Inc. 3 - 11 October , 20 14
+
+Smartgraph software
+Open
+A preview is displayed (logo, font) or the active element is opened (template, parameter set,
+product registration).
+Copy
+A copy of the element is generated.
+Rename
+A dialog for entering a new name appears.
+Transfer
+The active element is transmitted to the other database (PC < - > laser).
+The target database is automatically saved, if the feature »Autosave« is activated under
+Configuration - >Smart Graph .
+Delete
+The element is removed (after a prompt). The updated target database is automatically saved, if
+the feature »Autosave« is activated under Configuration - >Smart Graph .
+Dependencies
+All elements using the active element are displayed.
+Export
+The selected element can be saved with a different name at a different place.
+Import
+Import of files or TrueTypeFonts, see page 14. The updated database is automatically saved, if
+the feature »Autosave« is activated under Configuration - >Smart Graph .
+Videojet Technologies Inc. 3 - 12 October , 20 14
+
+Template
+The template defines the layout of the marking, e.g. texts, logos, serial numbers, fonts, etc.
+With a double - click onto a template the template is opened in user interface »Template«.
+Font
+The database can contain several fonts. The required font is selected in the template.
+You can use fonts of the format *.fnt or true type fonts (TTF).
+With a double - click onto a font a preview of the font is displayed.
+Logo
+A logo is a graphical element added to the template. To be able to add a logo to a template the
+logo has to be imported into the database.
+At the moment the following formats can be imported:
+plt, mcl, bmp, ai, lgo, gif, jpg, jpeg
+With a double - click onto a logo a preview of the logo is displayed.
+Parameter Set
+Parameter sets adjust the laser system to the respective material of the product. A parameter set
+contains e.g. information on the laser power and the marking speed.
+With a double - click onto a parameter set the dialog with all settings of the parameter set is
+opened.
+Product Registration
+The product registration contains all data necessary to detect the product and to trigger the
+marking process.
+With a double - click onto a product registration the software changes to user interface
+»Configuration«, page »Product registration«.
+Videojet Technologies Inc. 3 - 13 October , 20 14
+
+Creating a database in Smartgraph
+Note: knowing what type of laser, laser head and lens is important.
+Reference: laser traveller
+Reference: SmartGraph 6X manual
+Open the correct version of smartGraph
+Hint: the information was provided to you in permissions.
+Under the file tab On the PC side select <new database file>
+Under file name give your database a name you will remember should as the company name you
+are doing the install at.
+Click save
+Videojet Technologies Inc. 3 - 14 October , 20 14
+
+Under standard components of the database select read from PC directory “comps”
+Enter the information about the laser, marking head and lens then click OK
+Videojet Technologies Inc. 3 - 15 October , 20 14
+
+Edit marking systems
+Under the file tab o n the laser side select <edit marking systems>
+Under edit marking systems enter the name of the laser i.e. “line 1” and the laser’s IP address.
+Videojet Technologies Inc. 3 - 16 October , 20 14
+
+Click apply
+Connect to the laser
+If you have successfully connected to the laser you will have the following icon
+Videojet Technologies Inc. 3 - 17 October , 20 14
+
+Creating a template
+Videojet Technologies Inc. 3 - 18 October , 20 14
+
+Videojet Technologies Inc. 3 - 19 October , 20 14
+
+Create your template
+Note: if you create it on the PC side you will have to transfer it before you start production.
+Click on the template tab
+Select the new icon
+CENTER
+NEW
+Name your template
+Click OK
+Select the tool text icon
+Videojet Technologies Inc. 3 - 20 October , 20 14
+
+TEXT
+Your mouse pointer will turn into a t
+Holding your left mouse button over the area you wish to place your print drag until your square
+is at the desired size.
+High light the tool text box to type in your information, select font or font size.
+Videojet Technologies Inc. 3 - 21 October , 20 14
+
+Type new information here
+Once your message has been typed click in the grid to see changes
+You can also use this method to enter dates and times into you code refer to the manual for
+further details.
+Note: In order to make the format bar appear just double click on the text in the grid.
+Shift
+Date
+Serial number
+Time
+Videojet Technologies Inc. 3 - 22 October , 20 14
+
+Basic exercises 1
+Laser Operation Tab
+System State Description
+Initialize The control components of the laser system are started.
+Key - switch open The initialisation is complete. The system can now be started by
+closing the key - switch.
+Laser start - up After closing the key - switch the laser and the cooling system are
+activated.
+Laser ready The laser system is ready for marking.
+Prepare for marking After pressing »START« the laser requires a preparation time, the
+length depends on the template contents and the configuration.
+Marking The current marking content is marked onto the product.
+Laser radiation is emitted!
+Make sure that the safety instructions are observed.
+Standby If no marking is carried out for some time the laser switches to
+standby in order to relieve the system components.
+Bleeding Removal of air bubbles from the cooling water circuit. Bleeding is
+only possible with open key - switch!
+Interlock open The safety circuit is interrupted (e.g. protective door open). A
+Videojet Technologies Inc. 3 - 23 October , 20 14
+
+marking process is stopped immediately. Marking is only possible
+with closed safety circuit.
+Note : Taking into consideration the settings for the template and
+the marking head, the pilot laser is positioned at the 0/0 position,
+when the Interlock switch is open.
+Error An error occurred. To continue operation the error must be
+confirmed. Information on the error can be found on page
+»Messages«.
+Fatal error A fatal error occurred and has deactivated the system. This error
+cannot be confirmed and the operation cannot be continued.
+The laser system has to be turned off. Information on the error can
+be found on page »Messages«.
+Service mode This system state enables service and maintenance work and must
+only be used by especially trained personnel.
+Videojet Technologies Inc. 3 - 24 October , 20 14
+
+Confirm To be able to delete the messages they have to be confirmed first.
+Delete After confirmation it is possible to delete all messages.
+Save The messages can be saved to a file. Name and path of the file are defined
+in the displayed dialog.
+Videojet Technologies Inc. 3 - 25 October , 20 14
+
+Videojet Technologies Inc. 3 - 26 October , 20 14
+
+Lets add another term VECTOR . A vector is a segment within a stroke or a curve. A curves line
+may contain more than one vector. This depends entirely on how the fontographer (one who
+designed the font) created the characters. The more vectors a character has the longer it will take
+to write that character. This is due to the start and stops of the galvo mirrors. It is important to
+select a font designed for high speed marking in most applications.
+By now everybody must be familiar in how to get into the template and get to show the jumps
+and strokes of a particular template. When the laser marks a code it tries to optimize the marking
+time by adjusting the sequence in which the characters are created. To further emphasize this
+below is a picture to show you the vectors, strokes and jumps that the laser will process in order
+to make a mark. Note difference in direction of jumps and order in which characters are written
+depending on the product registration set used on the template. This will help out in determining
+which parameter will need to be adjusted.
+Videojet Technologies Inc. 3 - 27 October , 20 14
+
+Laser Parameters
+
+Green circle indicates the start position.
+Red circle indicates the stopping point.
+Hint: When printing a test message use a two line code first line “test” second line “8800”. This
+will ensure your pulses are correct, your angle is correct and your parameters are dialed in for
+worst case.
+Hint: don’t forget the square test can be used to determine if the angle and pulses are correct.
+Note: if the 8’s are slanted you have a angle or pulse issue.
+Note: If the first and second line are not even your pulses may be set incorrectly.
+Videojet Technologies Inc. 3 - 28 October , 20 14
+
+Note: Configuration/ marking head setting have no effect on direction of print in static.
+Videojet Technologies Inc. 3 - 29 October , 20 14
+
+This Jump Speed has to be balanced with the Jump Delay. The faster you do a jump speed the
+longer the jump delay. Jump Speed should be kept to a minimum to avoid having to add more
+Jump Delay to account for galvo vibration. These vibrations are normally seen on the first
+character of a code or a vector after a long jump, because the mirrors have increased inertia.
+In the message above, we have set the Jump Speed to a value of 40,000. The characters are
+unstable at the major galvo jumps (beginning of new line). Setting a high Jump Value only
+saved 3ms of code time. The code quality suffers at these high values. We recommend a start
+value of 10,000.
+Videojet Technologies Inc. 3 - 30 October , 20 14
+
+Marking speed has to be balanced with Marking Intensity . Fuzzy edges of the lines or
+incomplete removal of material are indications that the mark speed is to high based on the
+current level of intensity. Lasing to deep or burning the substrate may not be the desired effect,
+this could create puncture in the material when using a cross over font where lines intersect (If
+burning is occurring where vector intersect it is recommended that a non - cross over font be use).
+The faster your Marking Speed the lighter your mark will be so the Marking Intensity must be
+increased accordingly. High Marking Speeds will also require delays to be increased. When the
+galvos are moving at high speeds, they require more time to settle into position so that incorrect
+character formation can be minimized.
+When marking on hard substrate (i.e. glass) it will be necessary to lower your marking speed to
+achieve the desired effect. Lowering the marking speed will could give you incomplete marking
+fields. This is because the laser is taking to much time to mark. Raising the jump speed and
+lowering the delays with help to composite for the lost time due to low marking speeds.
+Videojet Technologies Inc. 3 - 31 October , 20 14
+
+In laser marking the laser power class should match the application. The laser power must
+be high enough to drive the material effects for the marking process and to fulfill process
+speed demands. But the popular opinion “As higher the laser power available as better ...”
+is an error that has already caused headaches to lots of users. The reason: a high power
+laser trimmed down to a low - power level (for avoidance of unwanted material effects/
+optimization of marking quality)
+• I involves the risk of unstable operation
+• Can cause quality and especially reproducibility problems
+• Operates highly inefficient (wall - plug efficiency)
+• Wastes capital.
+The application department of an experienced laser marker supplier determines the appropriate
+laser power class by test marking the customer samples under simulation of his production
+conditions. And the customer is well adviced to obey these results .
+Videojet Technologies Inc. 3 - 32 October , 20 14
+
+Marking intensity
+The laser parameter marking intensity affects extremely the qual ity of the marking.
+It alters the power of the laser marking system.
+The marking intensity is adjustable from 0 to 100%.
+
+This Jump Delay has to be balanced with the Jump Speed. The faster the jump speed the longer
+the jump delay. These vibrations will normally be seen on first character of codes or on vector
+after a long jump on a code. Jump Delay is extremely important in character formation. When
+Jump Delay is set too low, and Jump Speed or Mark Speed set too high characters will appear
+distorted. Curves will look oblong and straight lines will look crooked at the beginning of a
+vector.
+Videojet Technologies Inc. 3 - 33 October , 20 14
+
+Note the jagged line on “M”. The galvos have not stabilized yet and the laser is turned on.
+This could be corrected by reducing the Jump Speed and or increasing Jump Delay.
+Mark Delay has to be balanced with Laser On - delay. If the delay is to short at high marking speeds
+curves could appear in the sharp corners. If the delay is set to high characters could appear to have
+deeper burns into the material at the end of a vector.
+Videojet Technologies Inc. 3 - 34 October , 20 14
+
+Stroke Delay has to be balanced with Laser Off - Delay . Stroke Delay should be paid close
+attention to when performing applications that require high Mark Speeds. If the Stroke Delay is
+too short the characters will appear faint where there are straight lines, but bold where there are
+curves. On soft substrates the characters will appear to be shorten as if the laser off delay is set to
+low. The difference is stroke delay to short and laser off delay to short is stroke delay to short
+will have a thin tail on the incomplete character.
+Videojet Technologies Inc. 3 - 35 October , 20 14
+
+As seen in the code above, the distortion from the "S", "6" and "I" have been resolved, however,
+notice on the parameter column, the Jump Delay has been decreased to a value of zero (0),
+therefore the quality of the beginning characters has become unacceptable .
+Laser On - delay has to be balanced with Mark delay and Stroke Delay . There could be tail
+marks on the beginning of the stroke which could be mistaken as Stroke Delay. Take note of
+where the tail is if it is in the beginning or end of the stroke by looking at the jumps and vector
+outlines.
+Hint: the key to determining on delay to short or to long is the show jumps feature under the
+template tab.
+Videojet Technologies Inc. 3 - 36 October , 20 14
+
+Adjusting the On Delay has improved the code quality. On Delay, as seen on the character
+formation part of this document, is a delayed "Turn On" time of the actual C02 laser. The galvo
+mirrors move before the tube outputs power.
+Videojet Technologies Inc. 3 - 37 October , 20 14
+
+Laser Off - delay has to be balanced with Mark delay and Stroke Delay . Off delay to short will
+cause your (O’s and zero’s) not to be completed. Off delay to long could cause tail marks at the
+end of a completed stroke which could be mistaken as Stroke Delay. Take note of where the tail
+is if it is before the end of the stroke or if the stroke was completed. Laser On - delay has to be
+balanced with Mark delay and Stroke Delay . There could be tail marks on the beginning of the
+stroke which could be mistaken as Stroke Delay. Take note of where the tail is if it is in the
+beginning or end of the stroke by looking at the jumps and vector outlines.
+Notice tails ghost on end of a complete characters. The galvos jumped to the new vector and the
+laser is still on. This can be adjusted by reducing the Laser Off delay.
+Videojet Technologies Inc. 3 - 38 October , 20 14
+
+Notice some segments of the characters are short and other like the “O” and “”0” does not close.
+The galvos are still tracing the end of the characters but the laser is off already. This can be
+corrected with increasing the Laser off delay.
+As shown on above diagram, a line is composed of series of dots partially overlapping each
+other creating an illusion of one continuous line .
+Videojet Technologies Inc. 3 - 39 October , 20 14
+
+Pulse frequency
+
+In the message above, we have set the Mark Delay back to 30mm/sec, however, the Frequency
+has been changed to a value of 5000. We do not recommend frequency settings lower than
+10,000. 18,000 should be a starting value, and hardly ever warrants change.
+Videojet Technologies Inc. 3 - 40 October , 20 14
+
+Videojet Technologies Inc. 3 - 41 October , 20 14
+
+Videojet Technologies Inc. 3 - 42 October , 20 14
+
+I s the time the Q - switch is open in μs. During this time pulses can pass the Q - switch.
+The pulse frequ ency and the Q - switch width are depending on each other, the width
+approximately corresponds to the pulse interval.
+Videojet Technologies Inc. 3 - 43 October , 20 14
+
+Pulse frequency max. Q - switch width
+1 kHz 999 μs
+5 kHz 199 μs
+10 kHz 99 μs
+50 kHz 19 μs
+Correction fact or for the suppression of first pulses for consistent markings (value range 0 to 3).
+Videojet Technologies Inc. 3 - 44 October , 20 14
+
+For Nd:YAG lasers the first - pulse effects can be eliminated by ramping the Q - switch from 'low
+resonator quality' at the beginning of a pulse train to 'high resonator quality' after a certain
+number of pulses. For diode - pumped types in addition the pump - power can be adjustment.
+Regulation of the marking intensity via the Q - switch without changing the current value.
+Videojet Technologies Inc. 3 - 45 October , 20 14
+
+INDEX STEPS
+Each parameter set can contain up to 10 index steps. Every index step can contain different
+laser parameters.
+Assigning different index steps to different objects in a template is used for adjusting the
+marking to different marking conditions. This adjustment is required if you mark a product made
+of different materials or if you want to use different marking qualities.
+Videojet Technologies Inc. 3 - 46 October , 20 14
+
+Overview laser Parameters
+
+Laser Operation Marking Adjustment
+Template List
+The templates stored in the laser system can be selected via the digital inputs DATA 0 to
+DATA 7 (refer also to the interface assignment described in chapter "Appendix" of the laser
+manual). This procedure is called External Template Selection .
+Videojet Technologies Inc. 3 - 47 October , 20 14
+
+A template is assigned to a certain number in the template list (see below). The number of the
+desired template is sent - e.g. by a PLC - binary coded to the digital inputs DATA 0 to DATA 7
+and is taken over with the signal EXT_EVENT. The selected template becomes current template
+of the laser system and can be marked on the product.
+Note for YAG systems
+In order to use the external template selection the laser system must be equipped with two
+optional input modules (art. no. AL - 65856).
+Template Sequence
+A trigger pulse starts a succession of templates which are marked on the product one after the
+other. Trigger pulses coming in while executing a sequence are put into a trigger queue and
+executed after finishing the sequence.
+Template Batch
+The templates of a batch are executed by consecutive trigger pulses. The
+first pulse comes from the start trigger, all following pulses are consecutive
+trigger pulses (product registration). If the execution is interrupted, it has to
+be started again with the start trigger, i.e. the execution begins with the first
+template in the batch.
+Videojet Technologies Inc. 3 - 48 October , 20 14
+
+Advance exercises
+Videojet Technologies Inc. 3 - 49 October , 20 14
+
+Exercise 2
+• Create the following message:
+[Your Name ] made this message on [ d.mm.yyyy ]
+And will finish it on [ offset date by 3 days ] at [ H pm ]
+Make the second row burn darker
+
+MONTH Printed information
+Jan 1A
+Feb BC
+Mar 2E
+Apr FG
+Videojet Technologies Inc. 3 - 50 October , 20 14
+
+May 3J
+June KM
+Jul 4P
+Aug QR
+Sep 5T
+Oct WX
+Nov 6Z
+Dec IL
+DAY Printed information
+MON A
+TUE B
+WED E
+THR F
+FRI J
+SAT K
+SUN P
+SHIFT 0700 1000 1500 2300
+CODES
+MON A B D 1
+TUE C H G 2
+WED E M N 3
+THR F Q R 4
+FRI J T U 5
+SAT K W X 6
+SUN S Z Y 7
+Videojet Technologies Inc. 3 - 51 October , 20 14
+
+Product Registration
+»Start trigger« defines the settings for the first trigger pulse. The marking process is started by
+the first trigger pulse.
+With the trigger set to »Auto«, the marking process is started by pressing START on the control
+panel of the laser system.
+To start the marking process via an external signal you can define whether the rising or the
+falling edge is to be used as trigger.
+»Consecutive trigger« defines the settings for all trigger pulses following the start trigger pulse.
+If the consecutive trigger is set to »None«, only the start trigger pulse starts a marking process.
+All following trigger pulses are not accepted. Select »None« whenever you want to generate a
+single marking.
+With the consecutive trigger set to »Auto«, the marking process is triggered internally and
+continuously.
+The marking process is repeated with a certain frequency or after the product has covered a
+certain distance - depending on the settings for the product movement.
+To trigger the marking process via an external signal you can define whether the rising or the
+falling edge is to be used as trigger.
+»Stop trigger« defines the settings for a trigger pulse that stops the marking process (e.g. the
+end of a cable or a stop signal from an external control unit). The laser system remains ready to
+mark after a stop trigger pulse, which means that the marking process will be continued if
+another start trigger pulse is detected.
+If the trigger is set to »None«, only the start trigger pulse starts a marking process. All following
+trigger pulses are not accepted.
+To stop the marking process via an external signal you can define whether the rising or the
+falling edge is to be used as trigger.
+»Start delay« defines the distance until the marking process is started, which is the distance
+between the center of the marking field of the laser system and the center of the marking on the
+Videojet Technologies Inc. 3 - 52 October , 20 14
+
+product. After the trigger the product has to cover this distance before is in front of the marking
+head. If »No product movement« has been selected the start delay defines the time between start
+trigger pulse and marking in ms.
+»Blocking« defines the distance the product has to cover before the next marking can be started.
+If »No product movement« has been selected the blocking defines the time that has to pass after
+a start trigger until a consecutive trigger is accepted.
+»Start blocking« sets the blocking time after the stop trigger pulse, where no external trigger
+pulses are accepted (debouncing).
+»Distance/Rot.« (1) defines the distance the product covers with one full turn of the incremental
+encoder.
+»Pulses/Rot.« (2) states the number of pulses the incremental encoder emits when performing
+one full turn.
+»Rotational direction monitoring« (3) defines the direction of rotation of the incremental
+encoder.
+It is used e.g. to cut out signals that derive from slipping of the conveyor belt. Select »left« for a
+clockwise direction of rotation of the incremental encoder, or »right« for a counter - clockwise
+rotation. Select »Off« to turn the monitoring off.
+The definition of angles and the settings for the trigger correspond to 2. Registration: Fixed.
+Important The number of pulses per rotation depends on the type of incremental encoder used
+and on whether one or two tracks are utilized.
+In case that two tracks are used, the number of pulses per rotation given for the incremental
+encoder has to be doubled and entered at »Pulses/Rot.«.
+Point out that the start distance can not be set at 0
+Videojet Technologies Inc. 3 - 53 October , 20 14
+
+Videojet Technologies Inc. 3 - 54 October , 20 14
+
+Videojet Technologies Inc. 3 - 55 October , 20 14
+
+Videojet Technologies Inc. 3 - 56 October , 20 14
+
+Videojet Technologies Inc. 3 - 57 October , 20 14
+
+Marking head
+Marking head
+Here the marking head installed in the laser system is displayed.
+Select objective
+In this list field you can select the lens type. The selected lens type has to correspond to the lens
+installed at the marking head of the laser system. The focal length of the selected lens type is
+displayed.
+Working distance
+The working distance is calculated by the system. Enter the values for a possible tube length and
+deviations and the actual working distance is displayed.
+Marking head
+Here you can enter a translation, scaling factor or rotation that applies globally to all templates.
+Zero position »X - Delta« and »Y - Delta« define the translation of the marking field. The
+translation refers to the center of the marking field and is stated in millimeters.
+Scaling factor »X - Scale« and »Y - Scale« are stated as a multiplier for the respective coordinates.
+The default value is 1. The coordinates of x and y axes can be scaled individually.
+Pilot laser
+The system is equipped with an optional pilot laser you can enter here translation and scaling
+values for the pilot laser independently from the settings of the marking laser.
+Marking field
+Here you can adapt the marking field, e.g. to translate the marking into the optimum area of the
+lens or to adjust the marking position to a beam protection assembly.
+If the option »Max. marking field« is active no other settings are necessary. If you want to define
+the marking field yourself, deactivate »Max. marking field« and enter the desired positions of
+the marking field borders.
+Modifications
+Videojet Technologies Inc. 3 - 58 October , 20 14
+
+With »Apply« the current settings are transferred to the temporary memory of the selected
+system.
+If the data are to be saved permanently you have to save the database in the interface
+»File«.
+With »Reset« all modified settings are reset to their original value.
+Videojet Technologies Inc. 3 - 59 October , 20 14
+
+Dynamic Exercise
+Videojet Technologies Inc. 3 - 60 October , 20 14
+
+Configuring a product registration
+Click configuration
+Click product registration
+Click new
+Name your product registration
+Click apply
+Videojet Technologies Inc. 3 - 61 October , 20 14
+
+Example: of install
+Conveyor diameter of 150mm
+2000 pulse encoder
+Product detect distance to laser 100mm
+The above information will be used to determine the values in our current product
+registration called “line 1”
+Videojet Technologies Inc. 3 - 62 October , 20 14
+
+Line Direction
+Product
+detect
+3320
+Conveyor
+shaft
+150mm
+100mm
+encoder
+
+Given the above information your product registration should be as follows.
+Given the above information your Mounting position should be as follows.
+Click apply
+Videojet Technologies Inc. 3 - 63 October , 20 14
+
+Assigning the product registration to the template
+Under the template tab select the product registration icon
+Select the correct product registration name
+Click OK
+Printing the message
+Under the laser operation/marking adjustments tabs select your template
+Under laser operation/ marking your template should appear
+Ensure the correct parameter and product registration have been selected
+Turn the key switch and you should receive a laser ready indication
+Videojet Technologies Inc. 3 - 64 October , 20 14
+
+Press the start button based on our setup you should receive wait for trigger
+Videojet Technologies Inc. 3 - 65 October , 20 14
+
+As product passes the product detector and the laser starts marking you should receive a marking
+indication.
+Note: it will be necessary to make adjustment to the start delay in order to center the product in
+the print area.
+Note: if message is unreadable check your product registration.
+Note: if product is readable but is of poor print quality adjust your parameters.
+When all print quality issues have been resolved save
+your database!
+Videojet Technologies Inc. 3 - 66 October , 20 14
+
+Disconnecting from printer
+Note: ensure the database has been saved prior to connecting.
+Under the file tab select disconnect
+Close out SmartGraph
+Videojet Technologies Inc. 3 - 67 October , 20 14
+
+System settings
+Marking system
+Here the name and the type of the laser system entered under »Identification« are displayed.
+If you are in offline mode (on the PC) you can select a different laser system: select the system
+and click onto »Apply«, then change to page »Marking head«. There will be a message that the
+current settings of marking head and lens are not suitable for the selected laser type and the
+correct settings will be selected automatically.
+Identification
+Language
+Selection of the language for the messages and the touch screen display on the PCM.
+Pilot laser
+Activate this checkbox if the system is equipped with a pilot laser. Only then you can define the
+settings for the pilot laser on other pages.
+Name of the laser system in the network
+IP Network address of the laser system
+Subnet Address of subnet mask
+Date/Time
+Setting of system date and time. These data are required e.g. for calculating expiration dates.
+Delays
+Operating hours
+Display of the total number of operating hours of the laser system and of the pump chamber.
+After exchanging the pump chamber of LN - A systems the counter can be set to zero with button
+»Reset«.
+Aging factor (only for YAG)
+Setting of the factor for aging adaptation by the software. Value range 0 to 1 (0: no adaptation,
+1: high adaptation)
+Videojet Technologies Inc. 3 - 68 October , 20 14
+
+RF driver characteristic
+This function is not supported yet.
+Minimum signal length
+This function is not supported yet.
+Modifications
+With »Apply« the current settings are transferred to the temporary memory of the selected
+system.
+If the data are to be saved permanently you have to save the database in the interface »File«.
+With »Reset« all modified settings are reset to their original value.
+Power Change Delay Delay for starting the marking if the button START has been pressed
+during system state »Standby«.
+Standby Delay Delay after finishing a marking process before the system changes to system
+state »Standby«.
+Interlock release This function is not supported yet.
+Modifications
+With »Apply« the current settings are transferred to the temporary memory of the selected
+system.
+If the data are to be saved permanently you have to save the database in the interface »File«.
+Videojet Technologies Inc. 3 - 69 October , 20 14
+
+With user level 1 you can set here the resolution of the desktop of the Smart Graph software
+and the unit to be used for measurement.
+With user level 2 you can select the language of the software user interface. Select the desired
+language in the selection field and click on button »Apply«. When you start the software for the
+next time the selected language will be displayed.
+Additionally you can activate or deactivate the use of passwords and define the passwords for
+user levels 1 and 2:
+Videojet Technologies Inc. 3 - 70 October , 20 14
+
+Videojet Technologies Inc. 3 - 71 October , 20 14
+
+Videojet Technologies Inc. 3 - 72 October , 20 14
+
+cvt d`fpgmmYSF,Yglyfpheadl@6hheaMz$$hmtx A^locaUzdP$maxpH metaaD`namen.6post$d$ prep2P/_<`t^Q!EWt^bML@53%3f.x[TMC @ F3!@L 9DqQT.nS9J,S bXL|Q9%%V"VJ#*s!H#3*"
+_['jjig&j'h3{|'v,|3&'3'2
+3://$$Y!"!#3$,5+$"
+&3/13#&3413'
+UU@!U"0@U@UU%$%1!++N]+++]q<M+++<?]q?<999++10Cy@;;+<+qr]]qll?+2?+9/01Y5!#"#"&54763232654'&'&#E1S&Ct^l!, 3'$/ +0'%%1 zi]<1*[6BTg!"LC+X@{lu{v0y5z6mE.d66Ue@@3C2222*%/?O44053@B@PE@B344204T24CTX@!/"<ED00'
+'=::
+'%%%4 r}*%%4 rL'+X@K@O5'-8x""!"!!"!#!#""""@'@S 0@UUU
+&
+&,3
+:Ly%#%'2#2'E#E''
+99+++++++YY]l??3+2901Y#&'&&'5!654&'&'5H%5
+/
+'9?:9&"%&8/78-""--/?@> / /.!.!"988''&h??+ 0`p@D S d 2"""@A!k++]]]q]?<<<?<<<99.+}.+}Y10]]CX /]Y]]]]qCX/
+'4@5@U56',?//?+99/++++++++2+/++++++10+CTX@X4U5U '456,'UUUUUU87!U!U!U!-U-U-U--879/++++++9/++++++//??9910++@/8@*58`]6%&88888+P8`8p88@8
+@UUUU@UUUUUU@U
+AV8$$<U@G#p0W+XCTX@Y@UY@UUUL0U0U0@U0+U+17FUFUF@!UFAGAUAUAUALULULULUL@ULUL+U+U+7@U7U7@U7U7@U7U7U7UU @U 0U @U *U @U U @U /2EH@ GTU@U/UOUoUUUVG1%,<,??///?]]+/+++++++++/+++++++++/+++++++++++++++++10++CTX@<%,<,TUV1GU U +U+U+7AUAUAL U X7U7U7U77XLULULULLYX9/+++9/+++9/+++++++///???10KTXFE/08888888Y@4YYY`]6+Y
+U @U U @U UUUUU$@% ,U/+??99?/+++++/+++++10+CTX@W@`p $%%,UUU UUU& U U &UUU'&9/+++9/++9/++++++???99?]10@5'`]6 '`'p''47: HH O'#!O%'#'AD %E@%%,! g@p@%$P `&+N]qr<M<]q<<<<?<?<<<99++10Cy@+<+]]+YY$l%l?+??3+201Y327#5#"&&54&&5!32674&'5c!'-v|EMq,7HAY?+mK9ZG#qBYA2%P6LN7% +XCTX ??/9/10CTX@1"!U*UU U ?+?+?+?+?99/10@SX[5"@a5#"! $ :9:95:JIDEEIi""-"2`4"+14"
+K?gI7tl_G
+$A 0
+>0&&+[3+

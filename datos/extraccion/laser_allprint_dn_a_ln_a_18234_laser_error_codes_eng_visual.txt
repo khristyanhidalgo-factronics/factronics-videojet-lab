@@ -1,0 +1,3070 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\18234-Laser Error Codes (Eng).pdf
+# cifrado=False bloques=31 caracteres=101193
+
+24/07/2023, 08:20 Knowledge Article
+Laser System Error Codes
+C o n te n t
+T itle Laser System Error Codes
+C o n te n t
+E r r o r C o d e s - L a s e r s
+These error codes may assert on any CMark laser systems. Some may assert on other laser systems as well.
+W arning: System is marking further
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 1 /31
+Fatal Error: System must be restarted
+Error 1: Laser power supply is turned of f
+Error 2: Marking was aborted
+T able 1: Error code list
+ID Error Class Message Possible Cause Effects Remedy
+Reduce size of the
+overall message by
+reducing the scaling
+factor . Expand marking
+Parts of the marking field to maximum size.
+Parts of the marking are beyond the marking are beyond the user- Incomplete Select objective with
+00001 W arning
+field. defined marking marking. higher focal length,
+field. thereby increasing the
+maximum possible
+marking field. Check
+parameter/template
+settings.
+Parts of the marking
+contents cannot be Increase distance of start
+marked since the delay . Usually this
+product was not in requires the sensors to
+the marking field. be adjusted.
+Usually the reason is Optimize parameters so
+that the marking is Incomplete that the marking can be
+not executed fast marking. This executed faster .
+enough. It is also applies to all Reduce size of marking
+possible that the individual so that it can be
+00002 W arning Incomplete marking, product movement too fast.
+start delay has been markings for executed faster .
+set too short causing which this Select speed-optimized
+the marking to be message is font.
+started too late. The displayed. Check
+start delay must be parameter/Product
+set so that in the registration settings.
+moment of triggering If possible, increase
+no part of the marking field by selecting
+marking is yet within a dif ferent objective.
+the marking field.
+After the trigger it In case this error occurs
+took more than 10 in released versions it
+00003 W arning COS does not send data after trigger (>10ms). Faulty marking.
+ms before the COS must be reported to the
+sent marking data. technical support group.
+During the marking
+process it took more
+than 500 µs before
+the COS sent new
+data.
+If the COS does not
+sent the data as fast
+as they are marked
+Increase the values of
+artificial pauses are There might be
+the start delay or trigger
+added to the small burns
+delay . Thus more data
+00004 W arning Delayed data from the COS. marking. This within vector
+can be processed before
+causes the laser to strokes of the
+the marking execution is
+be switched of f even marking.
+started.
+within a vector
+stroke and switched
+on again as soon as
+data are available.
+For this process
+Laser-On-Delay and
+Laser-Of f-Delay are
+used.
+00005 W arning T rigger lost. T rigger queue The product that Since the trigger signals
+overflow , a new has released the are coming faster than
+trigger had to be trigger is not they can be processed
+rejected. marked. This the marking time has to
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 2 /31
+ID Error Class Message Possible Cause Effects Remedy
+That means that the applies to each be reduced.
+trigger signals are product for If the marking time
+coming in faster than which the cannot be reduced any
+they can be message is more the throughput has
+processed. The displayed. to be reduced.
+trigger queue is a If you can preclude that
+buf fer for trigger there are too many
+signals. If it is full regular trigger signals
+and more signals are there might be
+coming in this mistriggers. If e.g. the
+warning is displayed. marking takes 50 ms and
+there is definitely each
+100 ms a new product
+and thus a new trigger
+then the trigger signal is
+interfered. In this case
+the blocking should be
+checked which usually
+should be 90 % of the
+minimum time between
+two trigger signals. In the
+example this would be 90
+ms.
+This may also be caused
+by mis-triggers or double
+triggers due to dirty
+product detector optics.
+Clean the lens of the
+product detector , and
+recalibrate it for your
+product.
+Internal error: A not
+initialized index step Parameters are In case this error occurs
+has been selected. not used for in released versions it
+00006 W arning Incorrect index step selected.
+The system uses the marking as must be reported to the
+previously selected previously set. technical support group.
+index step.
+In case this error occurs
+This message does
+in released versions it
+00007 W arning Debug warning 1 not occur in released none
+must be reported to the
+versions.
+technical support group.
+In case this error occurs
+This message does
+in released versions it
+00008 W arning Debug warning 2 not occur in released none
+must be reported to the
+versions.
+technical support group.
+In case this error occurs
+in released versions it
+must be reported to the
+technical support group.
+This fault cannot be
+cleared directly . T urn of f
+the Laser Controller and
+Fatal internal error: A The system is the laser marking
+not initialized stopped and system. After a short
+00100 Fatal Error Critical error DSP .
+interrupt has been must be interval turn on the Laser
+called or similar . switched of f. Controller and the laser
+marking system and
+confirm normal operation.
+Contact your local
+service representative or
+support team who will be
+able to provide
+assistance.
+The system is In case this error occurs
+Fatal internal error: stopped and in released versions it
+00101 Fatal Error Stack error DSP .
+Stack overflow . must be must be reported to the
+switched of f. technical support group.
+Internal Check your Cmark
+communication error version. Contact your
+Possibly
+on the Chameleon. local service
+00102 Error 2 SP received unknown command from COS. incorrect
+In most cases this representative or support
+markings.
+error indicates a team who will be able to
+version conflict. provide assistance.
+In case this error occurs
+Fatal internal error: Possibly
+in released versions it
+00103 Fatal Error T iming error DSP . Internal timing was incorrect
+must be reported to the
+not met. marking.
+technical support group.
+00104 Error 2 COS sends repeatedly data with delay During one marking Marking not Change the parameters
+the COS needed for possible. so that the marking is
+more than 20 carried out slower .
+vectors more than
+500 µs to send new
+data. The marking is
+aborted.
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 3 /31
+ID Error Class Message Possible Cause Effects Remedy
+See also warning
+W00004.
+The marking has
+been aborted
+because more than
+50 vectors cannot be
+marked since the
+product has already Enlarge the start distance
+left the marking field. correspondingly , usually
+Usually this is by moving the sensors.
+caused by too slow Optimize the parameters
+marking. so that the marking can
+The marking is
+It is also possible be carried out faster .
+not complete.
+00105 Error 2 Marking aborted, product movement too fast. that the start Reduce marking so that it
+The system is
+distance is too small can be marked faster .
+stopped.
+and the marking is Select a font which has
+started too late. The been speed optimized.
+start distance should Enlarge the marking field
+always be long by using a dif ferent
+enough so that no objective if possible.
+part of the marking is
+in the marking field
+at the trigger
+moment.
+See also W00002.
+Restart the system.
+Internal communication
+error on the main control
+board. In most cases this
+The OS has not error indicates a version
+been initialized conflict. Check your
+correctly or the The system is Cmark version, and use
+00106 Error 1 OS repeatedly missed to send data.
+connection between not operable. a new SD-Card if
+OS and DSP is necessary . If the error
+faulty . persists, contact your
+local service
+representative or support
+team who will be able to
+provide assistance.
+Check system
+configuration. Reset
+system. T ry to update to
+During system
+System boots latest software
+initialization a wrong
+00107 Error 2 W rong DSP configuration detected with error version.Contact your
+configuration was
+conditions. local service
+detected
+representative or support
+team who will be able to
+provide assistance.
+Fatal internal The system is If the problem persists
+Incomplete marking due to internal communication error stopped and after rebooting the laser ,
+00108 Fatal Error
+communication issue. between SP , FPGA must be please contact the
+and FM. restarted. technical support group.
+A connected trigger Check sensor and clean
+T rigger signals
+sensor set the alarm if necessary .
+are possibly not
+001 10 Error 2 Alarm output has been set by trigger sensor output. This usually For further possible
+identified
+happens when there causes see data sheet of
+correctly .
+is dirt on the sensor . the sensor .
+Check LED "Laser
+Ready". If it is of f after
+switching the laser on
+there is no voltage supply
+of the laser . The cause
+Faulty cable to
+can be a broken cable or
+voltage supply of the
+a defective relay .
+laser .
+-> Check cable and relay
+Relay for voltage
+and replace if necessary .
+supply of the laser
+If the LED is on the cable
+did not switch. Marking is not
+00200 Error 1 Laser not ready . between laser and
+No enable for RF possible.
+Chameleon might be
+PSU (50 W laser
+defective.
+only).
+-> Check cable and
+Faulty connecting
+replace if necessary .
+cable between laser
+and Chameleon.
+50 W laser system:
+Check 48 VDC to RF
+PSU.
+Check enable signal.
+Check RF PSU.
+Check voltage, adjust
+setting if necessary (30 V
+to Chameleon3, 48 V to
+Faulty power supply
+Marking is not RF PSU) or exchange
+00201 Error 1 Laser supply: voltage too high or too low module or incorrect
+possible. power supply module.
+voltage setting.
+If the voltage is OK check
+contacts in the laser
+head.
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 4 /31
+ID Error Class Message Possible Cause Effects Remedy
+Check cooling system.
+Insuf ficient cooling. Marking is not Check signal cable
+00202 Error 2 Laser overtemperature
+Broken cable. possible. between Chameleon and
+laser/heatswitches.
+Check system
+configuration. Reset
+system. T ry to update to
+Incorrect entry in
+latest software
+system database; Marking is not
+00203 Error 1 Unknown laser beam source version.Contact your
+OS sends invalid possible.
+local service
+laser type ID
+representative or support
+team who will be able to
+provide assistance.
+Laser source error .
+Check interface between
+Error while
+control board and laser .
+monitoring the laser
+Marking is not Check condition of laser
+00204 Error 2 General error source: Laser status
+possible. source.Check laser
+shows a general
+interface path:
+error condition.
+Chameleon, LIC, Laser
+Source
+Check coolant level and
+pump operation.
+Problems within the
+Check coolant flow
+cooling circuit of the
+Overheating of switch and cable.
+00205 Error 1 Internal cooling circuit: Flow too low system.
+the system. Check fuseboard
+Faulty coolant flow
+operation, Chameleon
+switch.
+interface and cables to
+Chameleon.
+Check RF cable.
+Mis-match between Check RF PSU
+RF PSU and laser operation.
+No or reduced
+tube. Check laser tube
+00206 Error 1 RF circuit: VSWR fault laser tube
+Faulty RF cable or operation.
+output.
+laser tube. Check Chameleon
+Faulty RF PSU. interface board operation
+and cables.
+Check modulation output
+to RF PSU.
+System software
+Check cable between
+error .
+Chameleon and RF PSU.
+RF PSU faulty .
+Check RF PSU
+Faulty cables Intermittent tube
+00207 Error 1 RF circuit: Overmodulation operation.
+between output.
+Check Chameleon
+Chameleon,
+interface board
+Chameleon interface
+operation.
+board and RF PSU.
+Check Chameleon
+operation.
+Faulty RF PSU.
+Faulty Chameleon Check RF PSU
+interface board or operation.
+Low laser tube
+00208 Error 1 RF circuit: Incorrect RF PSU power faulty cables. Check Chameleon
+output.
+No jump link on JP1 interface board
+on Chameleon operation.
+interface board.
+The tube status indicates
+a backreflection into the
+tube, check laser tube
+and for reflective material
+Incomplete
+Closed beam path, under the focus
+marking. Fatal
+laser light is optics.Repower system
+00209 Error 1 Back reflection error condition.
+reflected back into and try to mark again. If
+The system is
+the laser . error remains: Contact
+not able to mark.
+your local service
+representative or support
+team who will be able to
+provide assistance.
+Marking not Hardware must be
+00210 Fatal Error Red laser emission LED defective. Hardware error
+possible. checked.
+Marking not Hardware must be
+0021 1 Fatal Error Defective element in laser supply circuit. Hardware error
+possible. checked.
+00212 Fatal Error W rong LIC detected Hardware error . A Systems is Check laser interface
+wrong laser interface booting with fatal board (LIC) or system
+board was detected error condition. configuration. If
+during system Marking is not accidently a wrong
+initialization. possible system is configured
+which does not match to
+hardware configuration
+this error would be
+generated.Contact your
+local service
+representative or support
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 5 /31
+ID Error Class Message Possible Cause Effects Remedy
+team who will be able to
+provide assistance.
+Check laser interface
+board (HIC) or system
+configuration. If
+accidently a wrong
+Hardware error . A Systems is system is configured
+wrong head interface booting with fatal which does not match to
+00213 Fatal Error W rong HIC detected. board was detected error condition. hardware configuration
+during system Marking is not this error would be
+initialization. possible generated.Contact your
+local service
+representative or support
+team who will be able to
+provide assistance.
+The tube status shows it
+Incomplete
+In operation the is active while it should
+marking. Fatal
+monitoring of the be inactive.Check
+00214 Fatal Error T ube monitoring error . error condition.
+laser source harness to laser ,
+The system is
+detected an error . hardware and laser
+not able to mark.
+source.
+00215 Error 1 Laser: subnormal temperature
+00216 Error 2 No strike
+Defective beam Marking is not
+00302 Error 1 Shutter does not stay open. Exchange beam shutter .
+shutter . possible.
+Defective beam The system has
+00303 Fatal Error Shutter does not stay closed. Exchange beam shutter .
+shutter . to be restarted.
+Air flow
+monitoring of
+Air pressure sensor Exchange the LIC board
+00310 Fatal Error Air pressure sensor failure. marking head
+provides no data. and reboot laser .
+cooling circuit
+not possible.
+Air pump is not Check and replace
+Cable to senor board
+turned on due to UADB sensor board
+The connection to the air pump orientation sensor detached or defect.
+0031 1 Fatal Error unknown connection cable.
+is lost. UADB sensor board
+mounting Replace UADB sensor
+defect.
+position. board.
+Mount air pump
+assembly
+Air pump will not
+W rong air pump Chameleonording to
+turned on in
+00312 Error 1 W rong air pump assembly position. assembly supply unit orientation.
+wrong assembly
+orientation. Check UADB sensor
+position.
+board mounting position
+on air pump frame.
+No active
+cooling of
+Pump defect or filter Check or exchange air
+00313 Error 2 No air flow . marking head.
+is full. pump. Replace filter .
+No marking
+possible.
+Check umbilical for
+Insuf ficient extreme bendings or
+Air hose damaged or
+cooling of damages and replace if
+extremely kinked. Air
+00314 Error 2 Air flow blocked. marking head. necessary . Exchange
+knife exit completly
+Marking not protection window when
+blocked.
+possible. air knife blocked or
+damaged.
+Insuf ficient
+cooling of Exchange air pump filter .
+marking head. Check air hose
+00315 W arning Air flow too low . Filter is full.
+T emperature connection between
+warning/error pump and sensor .
+possible.
+Insuf ficient
+Check air hose and
+cooling of
+umbilical for kinked
+Air knife exit is marking head.
+mountings or damages.
+00316 W arning Increased air pressure. blocked. Air hose or T emperature
+Clean air knife exit.
+umbilical kinked. warning or
+Exchange the protection
+temperature
+window .
+error possible.
+Rising
+Broken wire to the
+The system fan is not connected to the temperatures in
+00317 Fatal Error system fan or not
+mainboard. the system
+connected.
+housing.
+Check the beam shutter .
+The beam shutter Check the shutter cable.
+Marking is not
+00407 Error 2 The beam shutter does not open. got jammed or is not Check the plug-in
+possible.
+identified. connections on the
+board.
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 6 /31
+ID Error Class Message Possible Cause Effects Remedy
+After a marking
+the next marking Check the beam shutter .
+The beam shutter cannot be Check the shutter cable.
+00408 Error 1 The beam shutter does not close. got jammed or is not started without Check the plug-in
+identified. confirmation of connections on the
+the error board.
+message.
+Invalid data stream Marking
+01000 W arning Invalid vector data between {1} and {2}.
+from COS to DSP aborted?
+The ef fect
+depends on
+error scenario. Contact your local
+The additional service representative or
+01001 W arning Illegal system state transition from {1} to {2}. information support team who will be
+provides only able to provide
+additonal assistance.
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario. Contact your local
+The additional service representative or
+01 100 W arning Zero division in TEL_MOTF_CONFIG_SPEC. information support team who will be
+provides only able to provide
+additonal assistance.
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario. Contact your local
+The additional service representative or
+W rong configuration in
+01 101 W arning information support team who will be
+TEL_MOTF_CONFIG_SPEC.
+provides only able to provide
+additonal assistance.
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario. Contact your local
+The additional service representative or
+01 102 W arning Zero division in TEL_MOTF_CONFIG. information support team who will be
+provides only able to provide
+additonal assistance.
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario. Contact your local
+The additional service representative or
+01 103 W arning W rong configuration in TEL_MOTF_CONFIG. information support team who will be
+provides only able to provide
+additonal assistance.
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario. Contact your local
+W rong configuration in The additional service representative or
+01 104 W arning TEL_SET_MARKING_FIELD: configuration information support team who will be
+between layer start and layer end is not allowed. provides only able to provide
+additonal assistance.
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario. Contact your local
+W rong configuration in The additional service representative or
+01 105 W arning TEL_SET_HEAD_EXTENSIONS: IMP value is information support team who will be
+bigger than 100%. provides only able to provide
+additonal assistance.
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario. Contact your local
+The additional service representative or
+W rong configuration in
+01 106 W arning information support team who will be
+TEL_LA YER_ST AR T_MODE: unkown mode.
+provides only able to provide
+additonal assistance.
+troubleshooting
+information.
+01 107 W arning W rong configuration in TEL_DELA Y : negative The ef fect Contact your local
+value for delay . depends on service representative or
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 7 /31
+ID Error Class Message Possible Cause Effects Remedy
+error scenario. support team who will be
+The additional able to provide
+information assistance.
+provides only
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario. Contact your local
+The additional service representative or
+W rong configuration in TEL_P ARAMETER:
+01 108 W arning information support team who will be
+VJump or VMark is bigger than 45000mm/s.
+provides only able to provide
+additonal assistance.
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario. Contact your local
+The additional service representative or
+W rong configuration in_TEL_LAS_CONFIG:
+01 109 W arning information support team who will be
+unkown laser ID.
+provides only able to provide
+additonal assistance.
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario. Contact your local
+The additional service representative or
+W rong configuration in_TEL_HEAD_CONFIG:
+01 1 10 W arning information support team who will be
+unkown head ID.
+provides only able to provide
+additonal assistance.
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional
+W rong HIC detected, Hardware says a NO HIC is Check hardware and
+01 1 1 1 W arning information
+connected. system configuration.
+provides only
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional
+W rong HIC detected, Hardware says a HIC-CP10 Check hardware and
+01 1 12 W arning information
+is connected. system configuration.
+provides only
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional
+W rong HIC detected, Hardware says a HIC- Check hardware and
+01 1 13 W arning information
+Raylase is connected. system configuration.
+provides only
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional
+Check hardware and
+01 1 14 W arning Supply unit and laser unit do not match together . information
+system configuration.
+provides only
+additonal
+troubleshooting
+information.
+W rong configuration of marking system umbilical
+01 1 15 W arning
+length.
+Emergency stop is detected because 24V is
+01200 W arning applied to K41 and the laser doesn't goes in
+systemstate Error in one second.
+Keyswitch is open and the laser doesn't goes in
+01201 W arning
+systemstate "keyswitch open" in one second.
+Interlock is open and the laser doesn't goes in
+01202 W arning
+systemstate "interlock open" in one second.
+01203 W arning Laser relay should be on, but it is of f over 3s.
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 8 /31
+ID Error Class Message Possible Cause Effects Remedy
+01204 W arning Laser relay should be of f, but it is on over 1s.
+01205 W arning Laser power supply could not be enabled.
+01206 W arning Shutter Okay Signal is of f over 3s.
+01207 W arning Laser Power Enable Info of f Host is of f over 3s.
+01208 W arning Shutter doesn't open.
+01209 W arning Shutter doesn't close.
+The ef fect
+depends on
+error scenario.
+The additional This information can be
+01300 W arning YLP-Laser: Back reflection alarm counter {1}. information send to IPG for further
+provides only troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional This information can be
+01301 W arning YLP-Laser: T emperature alarm counter {1}. information send to IPG for further
+provides only troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional This information can be
+01302 W arning YLP-Laser: System alarm counter {1}. information send to IPG for further
+provides only troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional This information can be
+01303 W arning YLP-Laser: HK Supply alarm counter {1}. information send to IPG for further
+provides only troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional This information can be
+01304 W arning YLP-Laser: Main supply alarm counter {1}. information send to IPG for further
+provides only troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+The IPG lasersource
+error scenario.
+does not answer via
+YLP-Laser: RS232 T imeout. The Fiber-Laser has The additional
+RS232 within the defined
+01305 W arning not answered a query within the defined information
+timeframe. Check serial
+timeframe. provides only
+connection between LIC
+additonal
+and laser source
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The configured pulse
+The additional
+YLP-Laser: The selected pulse width is not width can not be
+01306 W arning information
+supported. configured. W on't occure
+provides only
+in normal operation.
+additonal
+troubleshooting
+information.
+01400 W arning Unused.
+JPT -Laser RS232 response error (command not
+01401 W arning
+correct or not known).
+01402 W arning JPT -Laser: Model (Device ID) is not correct.
+01500 W arning IPG PICO: Chiller High temperature cut of f alarm.
+01501 W arning IPG PICO: Chiller Low temperature cut of f alarm.
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 9 /31
+ID Error Class Message Possible Cause Effects Remedy
+01502 W arning IPG PICO: Chiller Internal sensor failure alarm.
+01503 W arning IPG PICO: Laser not ready .
+01504 W arning IPG PICO: Seed start error .
+01505 W arning IPG PICO: Seed clock error .
+01506 W arning IPG PICO: 24 volts housekeeping is missing.
+01507 W arning IPG PICO: Laser 5 V missing.
+01508 W arning IPG PICO: Laser Bus voltage is missing.
+01509 W arning IPG PICO: Laser ground fault.
+IPG PICO: Power was lower than it was
+01510 W arning
+supposed to be.
+0151 1 W arning IPG PICO: Case temperature too high.
+01512 W arning IPG PICO: Head temperature too high.
+IPG PICO: Laser internal fiber fuse photodiode
+01513 W arning
+reading exceeded its threshold.
+IPG PICO: Stages (1 to 5) Shutdown: One or
+01514 W arning
+more of the amplification stages were shutdown.
+01515 W arning IPG PICO: Emergency shutdown.
+01516 W arning IPG PICO: Fiber interlock cable connection.
+01517 W arning IPG PICO: Error occur within the safety module.
+IPG PICO: Safety module communication
+01518 W arning
+timeout.
+01519 W arning IPG PICO: Laser module communication timeout.
+IPG PICO: Safety module interlocks - indicates
+01520 W arning that two interlock channels are not in sync. Need
+to open and then close both interlock channels.
+The ef fect
+depends on
+error scenario.
+This can be related
+The additional Additional information to
+to wrong or no
+01600 W arning UV -Laser came not up while initialization. information be provided to Coherent
+answer to a query of
+provides only to do troubleshooting.
+DSP
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The UV -Laser has
+The additional Additional information to
+not answered a
+01601 W arning UV -Laser RS232 T imeout. information be provided to Coherent
+query within the
+provides only to do troubleshooting.
+defined timeframe.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+UV -Laser: NTC heatsink laserdiodes master
+01602 W arning information be provided to Coherent
+shorted.
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+UV -Laser: NTC heatsink laserdiodes master
+01603 W arning information be provided to Coherent
+broken.
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+UV -Laser: T emperature heatsink laserdiodes too
+01604 W arning information be provided to Coherent
+high.
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 10 /31
+ID Error Class Message Possible Cause Effects Remedy
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01605 W arning UV -Laser: NTC laser crystal shorted. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01606 W arning UV -Laser: NTC laser crystal broken. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01607 W arning UV -Laser: T emperature laser cyrstal too high. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01608 W arning UV -Laser: NTC tripler shorted. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01609 W arning UV -Laser: NTC tripler broken. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01610 W arning UV -Laser: T emperature NTC tripler too high. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+0161 1 W arning UV -Laser: NTC doubler shorted. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01612 W arning UV -Laser: NTC doubler broken. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01613 W arning UV -Laser: T emperature NTC doubler too high. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+01614 W arning UV -Laser: NTC heatsink laserhead shorted. The ef fect Additional information to
+depends on be provided to Coherent
+error scenario. to do troubleshooting.
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 1 1 /31
+The additional
+ID Error Class Message Possible Cause Effects Remedy
+information
+provides only
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01615 W arning UV -Laser: NTC heatsink laserhead broken. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+UV -Laser: T emperature NTC heatsink laserhead
+01616 W arning information be provided to Coherent
+too high.
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01617 W arning UV -Laser: Interlock open. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01618 W arning UV -Laser: Overcurrent laserdiode 1. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01619 W arning UV -Laser: NTC laserdiode 1 shorted. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01620 W arning UV -Laser: NTC laserdiode 1 broken. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01621 W arning T emperature NTC laserdiode 1 too high. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01622 W arning UV -Laser: Bad command. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+01623 W arning UV -Laser: Bad data format. The ef fect Additional information to
+depends on be provided to Coherent
+error scenario. to do troubleshooting.
+The additional
+information
+provides only
+additonal
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 12 /31
+ID Error Class Message Possible Cause Effects Remedy
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01624 W arning UV -Laser: Range error . information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01625 W arning UV -Laser: Head Eeprom defect. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01626 W arning UV -Laser: Supply Eeprom defect. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01627 W arning UV -Laser: Laserdiode 1 Eeprom defect. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01628 W arning UV -Laser: RF driver 1 Eeprom defect. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01629 W arning UV -Laser: Checksum incorrect. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01630 W arning UV -Laser: Checksum is zero. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01631 W arning UV -Laser: Laserdiode(s) down. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01632 W arning UV -Laser: IR power too low . information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 13 /31
+ID Error Class Message Possible Cause Effects Remedy
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01633 W arning UV -Laser: Laserdiode 1 temperature out of range. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01634 W arning UV -Laser: Laser crystal temperature out of range. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01635 W arning UV -Laser: V anadate 2 temperature out of range. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01636 W arning UV -Laser: Doubler temperature out of range. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01637 W arning UV -Laser: T ripler temperature out of range. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01638 W arning UV -Laser: Communication fault I2C-Bus 1. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01639 W arning UV -Laser: Communication fault I2C-Bus 2. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01640 W arning UV -Laser: Communication fault I2C-Bus 3. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01641 W arning UV -Laser: Allowed only in stand-by . information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+01642 W arning UV -Laser: Current above limit. System halted. The ef fect Additional information to
+depends on be provided to Coherent
+error scenario. to do troubleshooting.
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 14 /31
+The additional
+ID Error Class Message Possible Cause Effects Remedy
+information
+provides only
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01643 W arning UV -Laser: Laser power is out of range. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01644 W arning UV -Laser: Head Eprom 2 not available. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+UV -Laser: W arning, crystal shift has to be done The additional Additional information to
+01645 W arning soon. Manually performed crystal shift fixes the information be provided to Coherent
+error . provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01646 W arning UV -Laser: Allowed only in normal operation. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01647 W arning UV -Laser: Laser performance is low . information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01648 W arning UV -Laser: Laser performance is too low . information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01649 W arning UV -Laser: Internal fault master . information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01650 W arning UV -Laser: Allowed only in stand-by / warmup. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+01651 W arning UV -Laser: Q-Switch mode not supported. The ef fect Additional information to
+depends on be provided to Coherent
+error scenario. to do troubleshooting.
+The additional
+information
+provides only
+additonal
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 15 /31
+ID Error Class Message Possible Cause Effects Remedy
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01652 W arning UV -Laser: Burstrate out of range. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+UV -Laser: Q-Switch mode not allowed in
+01653 W arning information be provided to Coherent
+lightloop.
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01654 W arning UV -Laser: Reprate out of range. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01655 W arning UV -Laser: Not allowed in actual Q-Switch mode. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01656 W arning UV -Laser: External I2C interface usage enabled. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01657 W arning UV -Laser: Q-Switch of ftime out of range. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01658 W arning UV -Laser: First pulse correction time out of range. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+UV -Laser: Mismatch FPCtime / Chargetime /
+01659 W arning information be provided to Coherent
+Reprate / Qof ftime.
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01660 W arning UV -Laser: W rong head software version. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 16 /31
+ID Error Class Message Possible Cause Effects Remedy
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01661 W arning UV -Laser: Mismatch reprate - Qof ftime. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01662 W arning UV -Laser: Mismatch reprate - FPCtime. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01663 W arning UV -Laser: Eprom not available. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01664 W arning UV -Laser: Internal fault Interlock. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01665 W arning UV -Laser: Analog interface usage. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+The ef fect
+depends on
+error scenario.
+The additional Additional information to
+01666 W arning UV -Laser: Reprate limit out of range. information be provided to Coherent
+provides only to do troubleshooting.
+additonal
+troubleshooting
+information.
+04200 Error 1 Board temperature too high.
+Improve cooling of the
+marking head, clean
+The temperature of cooling fins if necessary .
+Possibly
+Marking head: T emperature of CP/HIC-Raylase the FM or MHI board Increase distance
+09000 Error 1 incorrect
+assembly group too high. has exceeded the between markings if
+marking.
+maximum value. possible.
+Check internal fan
+operation.
+Check voltage supply at
+The supply voltage Possibly the marking head, at the
+09001 Error 1 Marking head: Supply voltage too low . of the marking head incorrect power supply module in
+is too low (<16V). marking. the control unit and at the
+marking head connector .
+Due to an error the X
+mirror was brought Possibly Check X mirror .
+09002 Error 2 Marking head: Overpositioning of X mirror . to a position beyond incorrect Check wiring in the
+the admitted marking. marking head.
+maximum area.
+Due to an error the Y
+mirror was brought Possibly Check Y mirror .
+09003 Error 2 Marking head: Overpositioning of Y mirror . to a position beyond incorrect Check wiring in the
+the admitted marking. marking head.
+maximum area.
+The current Possibly Check X mirror .
+09004 Error 2 Marking head: Overcurrent X mirror . consumption of the incorrect Check wiring in the
+X mirror is too high. marking. marking head.
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 17 /31
+ID Error Class Message Possible Cause Effects Remedy
+The current Possibly Check Y mirror .
+09005 Error 2 Marking head: Overcurrent Y mirror . consumption of the incorrect Check wiring in the
+Y mirror is too high. marking. marking head.
+The X mirror is not
+connected correctly
+Possibly Check connection
+to the CP/HIC-
+09006 Fatal Error Marking head: No X mirror connected. incorrect between X mirror and
+Raylase board. A
+marking. CP/HIC-Raylase board.
+cable might be loose
+or broken.
+The Y mirror is not
+connected correctly
+Possibly Check connection
+to the CP/HIC-
+09007 Fatal Error Marking head: No Y mirror connected. incorrect between Y mirror and
+Raylase board. A
+marking. CP/HIC-Raylase board.
+cable might be loose
+or broken.
+Parts of the marking Reduce size of marking.
+are outside the Select objective with
+Possibly
+Parts of the marking are not within the marking ellipse representing higher focal length.
+09008 W arning incorrect
+field of the marking head. the maximum Reposition template and
+marking.
+marking field of the make sure all items are
+marking head. within the marking field.
+During initialization An unknown tuning for
+an unknown tuning System cannot the marking head was
+09009 Fatal Error Selected tuning is missing or defective.
+for the marking head be set up. selected via web
+was detected. interface.
+Check Z mirror .
+Due to an error the Z
+Check wiring in the
+mirror was brought Possibly
+marking head.
+09010 Error 2 Marking head: Over positioning of Z mirror . to a position beyond incorrect
+Check galvo harness,
+the admitted marking.
+galvo and marking head
+maximum area.
+electronics
+Check Z mirror .
+The current Possibly
+0901 1 Error 2 Marking head: Overcurrent Z mirror . consumption of the Z incorrect
+Check wiring in the
+mirror is too high. marking.
+marking head.
+Faulty Check connection
+communication Possibly between Chameleon and
+Communication error Chameleon-> CP/HIC-
+09012 Error 2 between Chameleon incorrect marking head (optical
+Raylase: Gaps in the data flow
+and CP/HIC- marking. fibre or L VDS
+Raylase. connection).
+The Z mirror is not
+connected correctly
+Possible Check connection
+to the CP/HIC-
+09013 Fatal Error Marking head: No Z mirror connected. incorrect between Y mirror and
+Raylase board. A
+marking. CP/HIC-Raylase board.
+cable might be loose
+or broken.
+The mirror speed is
+set too high. Use slower speeds for
+The X mirror is not mirror movement.
+connected correctly Check connection
+to the CP/HIC- between X mirror and
+Raylase board. A Possibly CP/HIC-Raylase board.
+09014 Error 1 Marking head: No X mirror movement detected cable might be loose incorrect Check connection
+or broken. marking. between CP/HIC-
+The CP/HIC-Raylase Raylase board and HIC
+board may be board.
+defective. Exchange CP/HIC-
+The mirror galvo Raylase and mirror set.
+may be defective.
+The mirror speed is
+set too high. Use slower speeds for
+The Y mirror is not mirror movement.
+connected correctly Check connection
+to the CP/HIC- between Y mirror and
+Raylase board. A Possibly CP/HIC-Raylase board.
+09015 Error 1 Marking head: No Y mirror movement detected cable might be loose incorrect Check connection
+or broken. marking. between CP/HIC-
+The CP/HIC-Raylase Raylase board and HIC
+board may be board.
+defective. Exchange CP/HIC-
+The mirror galvo Raylase and mirror set.
+may be defective.
+Chameleon sent a
+In case this error occurs
+command to the
+Communication error Chameleon-> CP/HIC- Marking possibly in released versions it
+09016 W arning marking head which
+Raylase: inadmissible command incorrect. must be reported to the
+is not admitted in the
+technical support group.
+current mode.
+Communication error Chameleon-> CP/HIC-
+09017 W arning
+Raylase: unknown command
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 18 /31
+ID Error Class Message Possible Cause Effects Remedy
+In case this error occurs
+Communication error Chameleon-> CP/HIC- Chameleon did not Marking possibly in released versions it
+09018 W arning
+Raylase: Protocol error keep to protocol. incorrect. must be reported to the
+technical support group.
+The mirror speed is
+set too high. Use slower speeds for
+The Z mirror is not mirror movement.
+connected correctly Check connection
+to the CP/HIC- between Z mirror and
+Raylase board. A Possibly CP/HIC-Raylase board.
+09019 Error 1 Marking head: No Z mirror movement detected cable might be loose incorrect Check connection
+or broken. marking. between CP/HIC-
+The CP/HIC-Raylase Raylase board and HIC
+board may be board.
+defective. Exchange CP/HIC-
+The mirror galvo Raylase and mirror set.
+may be defective.
+The CP/HIC-Raylase
+cannot change to
+control mode. This
+Possibly Check connection
+Internal error: Cannot set control mode of the indicates an error in
+09021 Error 1 incorrect between Chameleon and
+CP/HIC-Raylase. the communication
+marking. marking head.
+between Chameleon
+and CP/HIC-
+Raylase.
+The CP/HIC-Raylase
+cannot change to
+configuration mode.
+This indicates an Possibly Check connection
+Internal error: Cannot set configuration mode of
+09022 Error 1 error in the incorrect between Chameleon and
+the CP/HIC-Raylase.
+communication marking. marking head or MHI.
+between Chameleon
+and CP/HIC-
+Raylase.
+The CP/HIC-Raylase
+cannot change to
+download mode.
+This indicates an Check connection
+Internal error: Cannot set download mode of the Marking is not
+09023 Error 1 error in the between Chameleon and
+CP/HIC-Raylase. possible.
+communication marking head or MHI.
+between Chameleon
+and CP/HIC-
+Raylase.
+No marking head
+connected.
+Faulty power supply
+Check power supply of
+of marking head.
+marking head.
+Faulty connection Marking not
+09100 Error 2 No communication with marking head. Check connection
+between Chameleon possible.
+between Chameleon and
+and CP/HIC-
+marking head or MHI.
+Raylase.
+Faulty CP/HIC-
+Raylase.
+The error flags on
+the CP/HIC-Raylase
+cannot be reset. This
+Check connection
+Internal error: Error status of the CP/HIC-Raylase indicates an error in Marking is not
+09101 Error 1 between Chameleon and
+cannot be reset. the communication possible.
+marking head or MHI.
+between Chameleon
+and CP/HIC-
+Raylase.
+There have been
+errors on the
+Chameleon while
+receiving data from
+the CP/HIC-Raylase. Check connection
+Marking is not
+09102 Error 1 Interrupted communication with marking head. Faulty connection between Chameleon and
+possible.
+between Chameleon marking head or MHI.
+and CP/HIC-
+Raylase.
+Faulty CP/HIC-
+Raylase.
+It has been tried to
+execute a command In case this error occurs
+The marking is
+Internal error: CP/HIC-Raylase not in in the control mode in released versions it
+09103 Error 1 possibly
+configuration mode, cannot executed command. that is only admitted must be reported to the
+incorrect.
+in the configuration technical support group.
+mode.
+E r r o r C o d e s
+T able 2: Error Code List (Continued)
+P a r t 2
+ID Error Class Message Possible Cause Effects Remedy
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 19 /31
+ID Error Class Message Possible Cause Effects Remedy
+The Chameleon receives
+permanently or temporarily no data Check connection between
+No data received from the marking head because: Chameleon and marking head or
+Marking is not
+09104 Error 1 from the marking - the connection to the marking MHI.
+possible.
+head. head has been separated. Check power supply of marking
+- the power supply of the marking head.
+head failed.
+Laser output power
+Marking head: degradation due to
+Please mount the protection
+09105 Error 1 Protection window Protection window not mounted. optical components
+window .
+missing. dust contanimation.
+CO2: Check whether EEPROM
+has been inserted correctly .
+No data can be Fiber:
+Faulty connection to the EEPROM The system is not
+10001 Fatal Error read from the Check connection between
+of the system database. operable.
+system database. Chameleon and Panel-IO.
+Check whether EEPROM of Panel-
+IO has been inserted correctly .
+Several entries are missing in the
+Backup of system
+system database. Therefore the Possibly incorrect Check entries of system database
+10002 Error 1 database was
+backup of the system database system settings. and correct if necessary .
+loaded!
+has been loaded.
+In case of an error in
+the system database
+Cannot write (all) to
+Not enough space left on the the backup file cannot
+10003 Error 1 the backup of the Check main control board.
+MultiMediaCard. be used. In that case
+system database.
+the system is no
+longer operable.
+The new values
+cannot be applied. A
+restart of the system
+Cannot write to Faulty connection to the EEPROM Check the state of the system
+10004 Error 1 might fail. In that case
+system database. of the system database. database and save all data.
+the system is no
+longer operable (see
+error 0001).
+Cannot read The backup has not been
+The system cannot be Check memory space of the
+10005 Fatal Error backup of the generated at the previous start of
+started. MultiMediaCard.
+system database. the system or it has been deleted.
+Shorten entries of variable length
+and retry changes.
+The following settings can have an
+impact:
+SmartGraph, Configuration, dialog
+"System Settings"
+By changing or adding an entry to - name in the field "Identification"
+Overflow of system the system database the Changes are not - Y AG systems: Number of digits
+10006 Error 1
+database admissible size has been applied. after the decimal point for the
+exceeded. aging factor
+SmartGraph, Configuration, dialog
+"Marking head"
+- Number of digits after the decimal
+point in the fields Mounting
+position, W orking distance,
+Marking head and Pilot laser
+System is unable to
+mark and needs to be
+System settings (e.g. laser type) rebooted.
+Laser reboot is Please reboot the laser to apply
+10008 Fatal Error have been changed and require a
+required. your changes.
+reboot. Changed system
+settings will be applied
+after the reboot.
+Laser is unable to load
+The file is supposed to be on the
+CI initialization the customer interface
+SD-Card as part of the CMark.
+failure, no valid Invalid customer IO configuration configuration file and
+10009 Fatal Error Reformat SD card with latest
+configuration file file or missing IO configuration file. cannot configure the
+CMark. Check for latest Cmark
+available. CI. Marking is not
+and update.
+possible.
+The storage device has write lock System cannot save
+enabled. In case of SD card, write changes. Probably Release the write protection lock of
+protection might be enabled. In update is also no the SD-card. Replace the SD-card
+SD card is locked /
+10010 Error 1 case of internal emmc storage, possible. System with a new spare part SD-
+write-protected.
+something went wrong during boot reinitialisation with card.Check main control board if
+or partition creation. rescue stick might be problem remains.
+appropriate.
+The ethernet
+If the ethernet communication has
+V ersion conflict An unknown command has been communication might
+been disturbed severely: separate
+10101 Error 2 (command not sent to the Chameleon via the be disturbed severely ,
+the connection and then connect
+executed) ethernet interface. the message appears
+again.
+repeatedly .
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 20 /31
+ID Error Class Message Possible Cause Effects Remedy
+An unknown command has been
+Unknown sent to the Chameleon via the Check program which is sending
+10102 Error 2 None.
+command: {1} ethernet interface, the unknown the command.
+command is displayed.
+Key not found in The database entry requested via Check program which is sending
+10103 Error 2 None.
+system database ethernet does not exist. the command.
+T ransmission error while A database object
+transmitting a database object via transmitted via
+Database write
+10104 Error 2 ethernet or version conflict ethernet cannot be Repeat transfer; check version.
+error .
+between database object and inserted into the
+COS. database.
+Database entry required for
+Database read Command is not
+10105 Error 2 executing a command received via Check the database entries.
+error . executed.
+ethernet is missing.
+T emplate information has been
+Layout contains no requested via ethernet. The
+10106 Error 2 Information is not sent. Check template and save it.
+data. corresponding template contains
+no data.
+T emplate information has been
+Layout does not requested via ethernet. The
+10107 Error 2 Information is not sent. Check template and save it.
+exist. corresponding template does not
+exist in the application database.
+The variables requested via
+No variables in
+10108 Error 2 ethernet do not exist in the Data is not sent. Check template.
+layout.
+template.
+The ethernet
+V ia ethernet a command with communication might
+Correct the format of the
+10109 Error 2 Format is invalid. missing or incorrectly formatted be disturbed severely ,
+command.
+parameters has been sent. the message appears
+repeatedly .
+The MultiMediaCard is full, not
+101 1 1 Error 2 Errors while saving Data cannot be saved. Check MultiMediaCard.
+inserted correctly or defective.
+This database entry
+cannot be deleted
+Other database entries depend on The entry is not
+101 13 Error 2 since {1} other Delete the depending entries first.
+this entry . deleted.
+entries depend on
+it.
+The transmitted
+object cannot be
+saved to the
+The object is not Check versions and make an
+101 14 Error 2 database. Please V ersion conflict.
+saved to the database. update if necessary .
+check whether your
+system supports the
+object.
+T oo many variables
+are used in the
+Number of variables or number of The template cannot Reduce number of variables or
+101 15 Error 2 layouts. Please
+templates too high. be marked. templates.
+delete all layouts
+you do not need.
+Error while reading The MultiMediaCard on the Marking is not
+101 16 Error 2 Check MultiMediaCard.
+directory {1}. Chameleon cannot be read. possible.
+<CO2>
+Check whether the EEPROM has
+been inserted correctly .
+</CO2>
+Data for Defective system database or
+<Y AG>
+initialization cannot customer database. The system cannot be
+10300 Fatal Error Check connection between
+be read completely The MultiMediaCard is full or started.
+Chameleon and Panel-IO.
+from the database. damaged.
+Check whether the EEPROM of
+the Panel-IO has been inserted
+correctly .
+</Y AG>
+The parameter set
+The parameter set is T o avoid the automatic adjustment
+{1} contains
+adjusted automatically of the settings you can modify the
+inadmissible
+The application database belongs to the system before parameter set manually . If you
+10301 Error 2 settings which are
+to a dif ferent laser system. marking. This can save the corrected parameter set
+automatically
+af fect the marking to the database the error message
+adjusted before
+quality . will no longer appear .
+marking.
+Interlock has been opened. Close
+Marking stopped and the interlock to continue. Check
+Marking process
+Interlock signal has been set marking content might wiring of customer interface and
+10304 W arning interrupted by
+during an active marking. be in an unfinished power switching electronics (e.g.
+interlock.
+state. CPD/SPM).Check default bridges
+(CPD/SPM X9.15, X9.17).
+10305 W arning Key switch has Keyswitch has been opened while Marking stopped and Keyswitch has been opened.
+been opened while marking was active. marking content might Close the keyswitch to continue.
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 21 /31
+ID Error Class Message Possible Cause Effects Remedy
+marking be in an unfinished Check keyswitch, keyswitch wiring,
+state. customer interface wiring and
+external wiring of external
+keswitch.
+Check default bridges (Chameleon
+X33.1 to X33.8).
+Check for error conditions.
+The pilot output Interlock has been triggered or the Check default bridges on customer
+10306 W arning stopped due an system went into Error / Fatal error Pilot marking stopped. interface (Chameleon X29.1).
+error condition. state. Check external wiring.
+Check hardware.
+Check shutterlock circuit.
+Marking interrupted Check default bridges on customer
+Marking process
+Shutterlock has been triggered and marking content interface (CPD/SPM X9.14,
+10307 W arning interrupted by
+during a marking. might be in an X9.16).
+shutterlock.
+unfinished state. Check external wiring.
+Check hardware.
+Marking has been started while Marking is not W ait until import is finished,
+10308 Error 1 System not ready .
+importing into database on laser . possible. confirm error and start again.
+Check template and used
+The template selected for marking Marking is not parameters, product registration
+10401 Error 2 Layout invalid: {1}
+is defective or does not exist. possible. and (if existing) logos.
+Select template again.
+For an external text the property
+V alue can be "Prompt Once (error)" has been Change the contents of the
+The marking is not
+10404 Error 2 marked only once: set and it has been tried to mark external text or change the
+carried out.
+{1} an external text with the same property "Prompt Once (error)".
+value twice.
+T rigger 2 or trigger 3 has been
+selected in the product registration.
+The selected trigger For trigger 2 a CI-CAN-IO is Marking is not Select a dif ferent trigger input or
+10406 Error 2
+input does not exist. required which does not exist in possible. install a CI-CAN-IO.
+the system. T rigger 3 does not
+exist in this system.
+Check the beam shutter .
+System error during
+Internal error during preparation of Marking is not Check the shutter cable.
+10409 Error 2 preparation of
+marking. possible. Check the plug-in connections on
+marking.
+the board.
+When the database has been
+The parameter set of the active The automatic
+The parameter set saved this message will no longer
+template contains inadmissible adjustment af fects the
+of the active layout appear .
+10410 W arning settings for the laser . The marking and will be
+has been adjusted Possibly the settings of the
+application database possibly taken over when
+to the system. concerned parameter set have to
+belongs to a dif ferent laser system. saving the database.
+be modified manually .
+For an external text the property
+"Prompt Once (warning)" has been V ariable content has Change the contents of the
+V alue can only be
+1041 1 W arning set and it has been tried to mark been printed twice with external text or change the
+marked once: {1}
+the external text with the same the same content. property "Prompt Once (warning)".
+value twice.
+The parameter set
+Markiergeschwindigkeit oder
+{1} is above Überhitzung der
+10412 W arning Sprunggeschwindigkeit ist höher Reduce jump or markingspeed.
+recommended Galvos.
+eingestellt als empfohlen.
+speed.
+Make sure that the variable value
+you want to apply
+1. does not exceed the maximal
+length as defined in the template
+Prompt variable with
+Marking stops and editor
+Cannot change <V alueQueues> could not be set
+10413 Error 2 usage of queue is 2. is not used in an IDMatrix or a
+variable {1}. because it cannot be encoded in a
+switched of f. Barcode that cannot encode that
+barcode or IDMatrix
+value
+3. Prompt variables with active
+value queues are not running out
+of values
+Make sure that the ef fective
+The validation is working distance is inside the
+T emplate validation
+started when template available working distance
+failed: The target
+V arious. More information is activated (resulting adjustment range. Check:
+working distance
+contained in error message (%s is in warning 0415) and 1. layer working distance of fset in
+10414 Error 2 of fset is outside the
+replaced by af fected template when template is Job editor
+allowed range.
+name and error message). beeing marked 2. working distance adjustment in
+Af fected Layer(s):
+(resulting in error2 Home screen
+{1}.
+0414). 3. working distance zero position
+of fset in Laser Unit Settings
+10415 W arning T emplate validation V arious. More information The validation is Make sure that the ef fective
+failed: The target contained in error message (%s is started when template working distance is inside the
+working distance replaced by af fected template is activated (resulting available working distance
+of fset is outside the name and error message). in warning 0415) and adjustment range. Check:
+allowed range. when template is 1. layer working distance of fset in
+Af fected Layer(s): beeing marked Job Editor
+{1}. 2. working distance adjustment in
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 22 /31
+(resulting in error2 Home screen
+ID Error Class Message Possible Cause Effects Remedy
+0414). 3. working distance zero position
+of fset in Laser Unit Settings
+Reduce the number of unique
+working distances below the
+T emplate validation
+maximum stated in the error
+failed: The number The number of unique working
+message, by editing the property
+of unique working distance of fsets has reached the
+10416 Error 2 No marking possible "W orking distance of fset" and
+distance of fsets technical limit and thus marking of
+setting it to an already used value
+exceeded. Amount: job won't be possible
+or disable the "Marked" property or
+{1}
+by deleting layers not needed
+having content.
+Reduce the number of unique
+working distances below the
+T emplate validation
+maximum stated in the error
+failed: The number
+message, by editing the property
+of unique working
+10417 W arning "W orking distance of fset" and
+distance of fsets
+setting it to an already used value
+exceeded. Amount:
+or disable the "Marked" property or
+{1}
+by deleting layers not needed
+having content.
+Cannot load The application database and its Marking is not A new database file has to be
+10500 Error 1
+database. backup cannot be loaded. possible. written to the MMC.
+Backup database The application database is
+10501 Error 1 Modifications are lost. Please save the database.
+has been loaded. defective.
+Error during determination of the
+If the database contains no
+Additional System Message: current template or its variables.
+10502 template: create and add a new
+Information {1} Probably the database does not
+template and save the database.
+contain any templates.
+Saving the database it is
+automatically converted to the new
+The database
+An older database has been format. Then the warning message
+10503 W arning format has None.
+loaded by a new COS. will no longer be displayed.
+changed.
+After conversion the database
+cannot be read by an older COS.
+If the template marked
+New templates have been added last does not exist in
+Not all previously to the database and selected for the database the first
+Save the database after creating
+10504 W arning used layouts have marking. Then the system has template of the
+or importing new templates.
+been saved. been booted without saving the database is selected
+changed database. automatically for
+marking.
+The template marked
+A new template has been added to last does not exist in
+the database and selected for the database. The first
+The Job used last Save the database after creating
+10505 W arning marking. Then the system has template of the
+was not saved. or importing new templates.
+been booted without saving the database is selected
+changed database. automatically for
+marking.
+The value of the
+Invalid value of absolute operating
+The battery buf fering the SRAM is Check battery and replace if
+10506 W arning absolute operating hours corresponds to
+running down. necessary .
+hours in SRAM. the value of the last
+system start.
+The objective file does not exist in
+the comp directory of the Check MultiMediaCard, if
+Error while reading The system is not
+10507 Fatal Error MultiMediaCard. necessary reinstall software on
+the objective file. operable.
+The MultiMediaCard is not inserted MMC.
+correctly .
+The laser file does not exist in the
+comp directory of the Check MultiMediaCard, if
+Error while reading The system is not
+10508 Fatal Error MultiMediaCard. necessary reinstall software on
+the laser file. operable.
+The MultiMediaCard is not inserted MMC.
+correctly .
+The head file does not exist in the
+comp directory of the Check MultiMediaCard, if
+Error while reading The system is not
+10509 Fatal Error MultiMediaCard. necessary reinstall software on
+the head file. operable.
+The MultiMediaCard is not inserted MMC.
+correctly .
+The AllprintBasic command string Modify the protocol settings on the
+AllprintBasic: in the COS database The control via PC with AllprintBasic and import
+10512 Error 1 Protocol ("Config","Input") contains a AllprintBasic (serial again via SmartGraph into the
+configuration error configuration error for the serial port) does not work. COS database. Then reboot the
+protocol. Chameleon.
+The AllprintBasic command string Modify the interface parameters on
+AllprintBasic:
+in the COS database The control via the PC with AllprintBasic and
+Configuration error
+10513 Error 1 ("Config","Input") contains a AllprintBasic (serial import again via SmartGraph into
+of the serial
+configuration error for the serial port) does not work. the COS database. Then reboot
+interface
+interface. the Chameleon.
+10514 Fatal Error CP/HIC-Raylase A program has to be transmitted Marking is no longer Check connection between
+download error from the MMC to the CP/HIC- possible since the Chameleon and CP/HIC-Raylase.
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 23 /31
+ID Error Class Message Possible Cause Effects Remedy
+({1}). Raylase. During this download an CP/HIC-Raylase Check CP/HIC-Raylase.
+error occurred. hardware has no Check Chameleon.
+program for mirror Reboot.
+positioning.
+The required file does not exist on
+CP/HIC-Raylase Copy the missing file to the
+the MultiMediaCard. System cannot be set
+10515 Fatal Error download: File {1} is MultiMediaCard.
+Faulty connection between up.
+missing. Check connection.
+Chameleon and CP/HIC-Raylase.
+Faulty connection to the marking Check connection between
+The marking head Marking is not
+10516 Error 1 head. Chameleon and CP/HIC-Raylase.
+is not connected. possible.
+No marking head connected. Connect marking head.
+If you want to mark a marking
+Chameleonording The system database contains the head must be connected and the
+to the system entry entry in the system database has
+Marking is not
+10517 W arning database there is 'MARKING_HEAD_A TT ACHED=0'. to be changed to
+possible.
+no marking head Thus the marking head is not 'MARKING_HEAD_A TT ACHED=1'.
+connected addressed. Please contact the technical
+support group.
+Please select the appropriate lens
+A lens and laser head mismatch installed for this system. If you
+Please select a lens
+has been detected. Please select Marking is not receive this error and the
+10519 Error 1 corresponding to
+the appropriate lens installed for possible. head/lens configuration has not
+the marking head.
+this system. changed, it may indicate a marking
+head failure.
+A lens and laser head mismatch
+has been detected. Check system
+A marking head has configuration by selecting the
+A lens and laser head mismatch
+been identified appropriate lens matching to this
+has been detected. Please select The system is not
+10520 Fatal Error which is not system. If you receive this error
+the appropriate lens installed for operable.
+admitted for this and the head or laser configuration
+this system.
+laser type. has not changed, it may indicate a
+hardware failure.Check connection
+to marking head.
+The configured safety circuit does
+not match the circuit attached.
+Check the system configuration.
+During system initialization the
+Fatal error condition. Check wiring between safety
+W rong safety circuit system detected a wrong safety
+10521 Fatal Error The system can not controller and main control board.
+detected. controller compared to
+mark. Contact your local service
+configuration.
+representative or support team
+who will be able to provide
+assistance if error remains.
+If you want to mark a beamsource
+Chameleonording must be connected and the entry
+to the system No laser power in the system database has to be
+Beamsource_attached is false in
+10522 W arning database there is available when changed to
+systemdatabase
+no beam source marking 'BeamSourceAttached=1'. Please
+attached contact the technical support
+group.
+T est the command string on the
+The AllprintBasic command string
+AllprintBasic: The control via PC with AllprintBasic, correct it and
+in the COS database
+10550 Error 1 Syntax error (line: AllprintBasic (serial import again via SmartGraph into
+("Config","Input") contains a syntax
+{1}, column: {2}) port) does not work. the COS database. Then reboot
+error .
+the Chameleon.
+Check the corresponding template
+or the AllprintBasic command
+The layout does not The variable to be modified in the The control via
+string and modify if necessary . If
+10551 Error 1 contain the AllprintBasic command string does AllprintBasic (serial
+the command string has been
+requested variable. not exist in the template. port) does not work.
+changed the Chameleon must be
+rebooted.
+This is a regular message, no
+error .
+AllprintBasic -
+10552 W arning The AllprintBasic command string None. None.
+MsgBox:\n\r {1}
+triggered the output of this
+message.
+Check command string and
+Illegal command in The control via
+This AllprintBasic version does not change if necessary . If the string
+10553 Error 1 AllprintBasic AllprintBasic (serial
+support the command. has been changed you have to
+command string. port) does not work.
+reboot the Chameleon.
+The AllprintBasic
+Depending on the AllprintBasic Depending on the Depending on the AllprintBasic
+10554 Error 1 command "Error"
+program. AllprintBasic program. program.
+has been executed.
+The AllprintBasic
+command Depending on the AllprintBasic Depending on the Depending on the AllprintBasic
+10555 W arning
+"W arning" has been program. AllprintBasic program. program.
+executed.
+The external template selection
+No layout list Marking is not Create and select a template list
+10601 Error 2 has failed because no template list
+selected. possible. using the Smart Graph.
+has been selected.
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 24 /31
+ID Error Class Message Possible Cause Effects Remedy
+The external template selection
+The chosen layout
+has failed because the selected
+number {1} cannot Marking is not
+10602 Error 2 template number cannot be Check template list.
+be assigned to any possible.
+assigned to any template in the
+layout.
+template list.
+If the message is no longer
+displayed after rebooting, there
+might be an internal error . Inform
+Out of memory . the technical support group.
+Internal error or database is too Marking is not
+10701 Error 2 Cannot create
+large. possible.
+database object. If the message is still displayed
+after rebooting all elements not
+needed should be deleted from the
+database.
+Format error while Check versions of Smart Graph
+V ersion conflict between database Marking is not
+10702 Error 2 creating a database and QMark and carry out an
+object and COS. possible.
+object. update if necessary .
+The DSP has not been initialized
+DSP does not send The system does not
+10800 Fatal Error correctly or the connection to the Restart the system.
+telegrams. work.
+DSP is faulty .
+In case this error occurs in
+Marking is not released versions it must be
+1081 1 Fatal Error DSP buf fer overflow Internal communication error .
+possible. reported to the technical support
+group.
+In case this error occurs in
+Invalid SmartSP Marking is not released versions it must be
+10812 W arning Internal communication error .
+telegram 0x{1} possible. reported to the technical support
+group.
+1) In the product registration an
+encoder was selected although no
+encoder is connected.
+No encoder Connect encoder or deselect
+10813 Error 2 Marking not possible.
+attached. encoder in the product registration.
+2) In the product registration an
+encoder was selected which has
+been removed during operation.
+1) In the product registration
+external trigger was selected
+although no trigger detector is
+connected. Connect trigger detector or
+No trigger detector
+10814 Error 2 Marking not possible. deselect external trigger in the
+attached.
+2) In the product registration a product registration.
+trigger detector was selected
+which has been removed during
+operation.
+Marking head Marking head was removed from Marking aborted and Insert marking head into holder
+10815 Error 1 removed from holder . system is in error and confirm error message to
+holder . Sensor not connected or defect. state. enable marking.
+Incomplete
+10899 W arning marking, product
+movement too slow .
+Check if power is supplied
+The output signals of between terminals X16.1 and
+The customer the customer interface X16.5 of customer interface on
+The power supply of the customer
+interface (CI) is not are invalid. Chameleon board.
+10904 W arning interface is not available or
+supplied with 24 V Input signals at the For units equipped with CAN-IO,
+switched of f.
+by the customer . customer interface are connect bus terminal KL91 10 pin 2
+ignored. or pin 6 to external 24 V and pin3
+or pin7 to external GND.
+The customer
+Depending on Remove external error or connect
+interface (CI) Detection of external error or
+10907 Error 1 customer or CI the corresponding CI terminal to
+indicates an incorrect wiring of the CI terminal.
+terminal EXT_ERROR. 24 V .
+external error .
+The ST OP input is supplied
+External ST OP from Marking is not
+10908 W arning constantly with 0 V so that the Connect ST OP input to 24 V .
+the CI. possible.
+ST AR T input is not evaluated.
+The file is supposed to be on the The system cannot be Copy desired file to the
+10913 Fatal Error File {1} is missing.
+MultiMediaCard. started. MultiMediaCard.
+Entry ({1}) is
+Marking is not
+10926 Error 2 missing in the Defective database. Complete or exchange database.
+possible.
+database.
+In operation the critical
+The temperature of Check ambient conditions. Provide
+temperature threshold in supply Incomplete marking,
+14200 Error 2 the supply unit is cooling to the supply unit and
+unit was reached. The temperature interrupted marking
+too high. check if filters are clogged.
+conditions are too high.
+14201 W arning Supply unit In operation the temperature If temperature Check ambient conditions. Provide
+temperature limit is warning level in supply unit was condition is not cooling to the supply unit and
+approaching. check if filters are clogged.
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 25 /31
+ID Error Class Message Possible Cause Effects Remedy
+reached. The temperature improved the system
+conditions are too high. will stop marking.
+In operation the temperature If temperature
+The marking head Check ambient conditions. Provide
+warning level in marking head was condition is not
+14202 W arning temperature limit is cooling to the marking head and
+reached. The temperature improved the system
+approaching. check if filters are clogged.
+conditions are too high. will stop marking.
+In operation the temperature
+The marking head If temperature
+warning level for the environment Check ambient conditions. Provide
+environment condition is not
+14203 W arning of the marking head was reached. cooling to the marking head and
+temperature limit is improved the system
+The temperature conditions are too check if filters are clogged.
+approaching. will stop marking.
+high.
+In operation the temperature If temperature
+Laser source: Check ambient conditions. Provide
+warning level for beam source was condition is not
+14204 W arning temperature cooling to the laser source and
+reached. The temperature improved the system
+warning check if filters are clogged.
+conditions are too high. will stop marking.
+The Miscellaneous
+Interface Controller
+MIC not connected or contact Industrial protocols not
+15100 Error 1 (MIC) was not Check hardware. Reboot laser .
+issues. usable.
+found or is not
+supported.
+The interface
+communication
+module couldn't be Ethernet/IP module not connected
+15101 Error 1 Ethernet/IP not usable. Hardware check. Laser reboot.
+detected. or contact issues with the module.
+Ethernet/IP module
+not found.
+The interface
+communication
+ProfiNET module not connected or
+15102 Error 1 module couldn't be ProfiNET not usable. Hardware check. Laser reboot.
+contact issues with the module.
+detected. ProfiNET
+module not found.
+An unsupported
+communication W rong communication module Communicationmodule Swap communication module.
+15103 Error 1
+module has been attached to the MIC. cannot be used. Check hardware. Reboot laser .
+detected.
+There is a
+communication
+problem with the
+Disturbed communication between Communication
+15104 Error 1 module. No answer Reboot laser . Check hardware.
+COS and communication module. module not usable.
+received from
+module (no answer
+or timeout).
+An unknown
+internal error
+Disturbed communication between Communication
+15105 Error 1 occurred in the Reboot laser . Check hardware.
+COS and communication module. module not usable.
+communication
+module.
+Failed to initialize
+Initialization of communication Communication
+15106 Error 1 the communication Check hardware. Reboot laser .
+module failed. module not usable.
+module.
+The watch dog was
+triggered because a
+communication Communication between COS and Communication
+15107 W arning Reboot laser . Check hardware.
+timeout occurred communication module disturbed. module not usable.
+during data
+processing.
+The communication Errors during transmission of data
+Communicationmodule
+15108 Error 1 module sent invalid between COS and communication Check hardware. Reboot laser .
+unusable.
+data (CRC32 error). module.
+Communication with
+The connection to Cable for the external device T urn on external device. Check
+the external device
+15109 Error 1 the external device plugged out. External device was cable between external device and
+impossible. Marking
+is lost. shut down. laser .
+may stop.
+There is a
+communication
+Data transmission disturbed Communication not Check connection between laser
+151 10 Error 1 error between the
+between external device and laser . possible. and external device.
+laser and the
+external device.
+There is an address External device and Change the IP address of the
+Communication not
+151 1 1 Error 1 conflict with another communication-interface have the external device or the
+possible.
+external device. same IP address. communication module.
+The laser received
+an invalid command External device sent an unknown Command wont be
+151 12 W arning Check protocol.
+from external or invalid command. executed.
+device.
+151 13 W arning The laser received External device sent invalid data. Protocol command Check protocol and data.
+invalid data from wont be executed.
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 26 /31
+ID Error Class Message Possible Cause Effects Remedy
+the external device.
+Unable to initialize
+the communication
+W rong configuration of Communication Check communication module
+151 14 Error 2 module due to
+communication module. module not usable. configuration.
+wrong
+configuration.
+Unable to setup
+network parameters Communication
+151 15 Error 2 Configurations wrong. Check configuration. Reboot laser .
+for the module not usable.
+communication.
+Communication with
+The connection to Cable for the external device T urn on external device. Check
+the external device
+151 16 Error 1 the external device plugged out. External device was cable between external device and
+impossible. Marking
+is lost. shut down. laser .
+may stop.
+The interface
+communication Check EtherCA T -module
+EtherCA T -Module not connected, EtherCA T cannot be
+151 17 Error 1 module couldn't be connection or swap EtherCA T -
+defect or instable connection. used.
+detected. EtherCA T mdule.
+module not found.
+New started scripts are
+Cannot connect to Faulty communication with the Check availability of PLC before
+18000 W arning possibly not executed
+PLC. PLC while PLC is not busy . starting PICOLA scripts.
+correctly .
+PICOLA script
+18001 Error 1 interrupted, dump PLC error See product manual.
+follows. {1}
+PLC reports
+18003 W arning warning, dump PLC error while PLC is not busy . See product manual.
+follows. {1}
+PICOLA script
+18004 W arning returned exit code
+{1}
+PICOLA script
+interrupted, PLC
+reports Position
+18005 Error 1
+Reference Limit
+Error , dump follows
+{1}
+PICOLA script
+interrupted, PLC
+reports V elocity
+18006 Error 1
+Reference Limit
+Error , dump follows
+{1}
+PICOLA script
+interrupted, PLC
+reports
+18007 Error 1 Chameleoneleration
+Reference Limit
+Error , dump follows
+{1}
+PICOLA script
+interrupted, PLC
+18008 Error 1 reports T estDrive1
+Error , dump follows
+{1}
+PICOLA script
+interrupted, PLC
+18009 Error 1 reports T estDrive2
+Error , dump follows
+{1}
+PICOLA script
+interrupted, PLC
+18010 Error 1 reports Axis Failed
+to Run, dump
+follows {1}
+PICOLA script
+interrupted, PLC
+reports
+1801 1 Error 1
+Communication
+Fault, dump follows
+{1}
+PICOLA script
+interrupted, PLC
+reports
+18012 Error 1
+Configuration
+Parameter Error ,
+dump follows {1}
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 27 /31
+ID Error Class Message Possible Cause Effects Remedy
+PICOLA script
+interrupted, waiting
+18013 Error 1 for an PLC event on
+disabled axis -
+check cables
+PICOLA script
+interrupted, PLC
+18014 Error 1
+reported short-time
+error
+PICOLA script
+interrupted, PLC
+18015 Error 1
+reported short-time
+error
+PICOLA script
+18016 Error 1 interrupted, W AIT
+operation timed out
+PICOLA script
+interrupted, please
+18017 Error 1
+check for script
+correctness
+PLC software
+18018 Error 1 communication
+error
+PLC communication
+18019 Error 1
+error
+PICOLA compiler
+18020 Error 1 reports an error at
+line {1}
+Unable to perform
+18021 Error 1 PLC recovery
+procedure
+Unable to run
+PICOLA script,
+18022 Error 1
+recovery procedure
+is being performed
+Recovery Button
+pressed, script
+18023 Error 1
+execution
+interrupted
+PICOLA script
+interrupted, Position
+18024 Error 1 Reference value is
+outside software
+limits
+Layout {1} does not The template does not exist in the Marking is not Create or transmit the
+19201 Error 2
+exist. database. possible. corresponding template.
+Check template and used
+The template selected for marking Marking is not parameters, product registration
+19202 Error 2 Faulty layout: {1}
+is defective or does not exist. possible. and (if existing) logos.
+Select template again.
+The template Assign an existing parameter set
+Parameter set {1} The parameter set required by a
+19203 Error 2 concerned cannot be to the template or add the required
+does not exist. template is missing.
+marked. parameter set to the database.
+Assign an existing product
+The template
+Product registration The product registration required registration to the template or add
+19204 Error 2 concerned cannot be
+{1} does not exist. by a template is missing. the required product registration to
+marked.
+the database.
+At least one index Add the missing index level to the
+The template uses an index level
+level does not exist The template cannot parameter set or assign an existing
+19205 Error 2 which does not exist in the
+in the parameter be marked. index level to all elements of the
+parameter set.
+set. concerned template.
+The direct marking
+The direct marking
+Faulty connection between PC and cannot (or only Check the ethernet connection
+19210 Error 2 cannot be carried
+Chameleon. incompletely) be between PC and Chameleon.
+out.
+carried out.
+Check template sequence
+The layout A marking can not be
+The selected template sequence configuration in database. Reset
+19301 Error 2 sequence does not executed because no
+does not contain any template database, if error remains reset or
+contain any layout. template is selected
+update system software
+Check template sequence
+The layout {1} of the A marking can not be
+The selected template in the configuration in database. Reset
+19302 Error 2 layout sequence executed because no
+sequence does not exist database, if error remains reset or
+does not exist. template is selected
+update system software
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 28 /31
+ID Error Class Message Possible Cause Effects Remedy
+The heads {1} of Check template sequence
+The configured templates in the A marking can not be
+layouts of a layout configuration in database. Reset
+19303 Error 2 sequence use dif ferent marking executed because no
+sequence must be database, if error remains reset or
+head configurations template is selected
+identical. update system software
+The product
+Check template sequence
+registrations of The configured templates in the A marking can not be
+configuration in database. Reset
+19304 Error 2 layouts of a layout sequence use dif ferent product executed because no
+database, if error remains reset or
+sequence must be registrations template is selected
+update system software
+identical.
+Check template sequence
+configuration in database. Create
+The product regristration selected Marking of active
+Product registration requested product
+19305 Error 2 by the active template does not template is not
+{1} does not exist. regristration.Reset database, if
+exist in the database possible
+error remains reset or update
+system software
+Defective layout in
+While initializing the template Marking of template is Configure a proper template
+19306 Error 2 the layout
+sequence an error ocured not possible sequence: Review sequence
+sequence: {1}
+The clock had to be The clock did stop and has already Set the time.
+The marked time is not
+19309 Error 1 restarted. Please been restarted. The battery voltage If this happens every time after
+correct.
+set the time! might be too low . switch-on exchange the battery .
+Laser cannot Use Smart Graph with
+connect to The version of the ActiveControl.dll No connection corresponding ActiveControl.dll or
+19310 W arning ActiveControl with installed with the Smart Graph between Smart Graph install the software expecting the
+version {1}. V ersion cannot be connected to the laser . and laser . version of the ActiveControl.dll to
+{2} expected. the laser .
+Connection
+Connection is rejected
+rejected: TCP port There is already one logging client Disconnect all other logging clients
+19414 Message until all other clients
+2288 is already connected TCP port 2288. first.
+are disconnected.
+connected to IP {1}.
+T est version installed. T estversions
+Laser goes into fatal
+T est version will expire after 120 days. Update to Update to new testversion or non-
+19498 Message error when testversion
+expire in {1} days. new T estversion or to a non-test testversion.
+expires.
+version.
+T est version Insuf ficiently tested
+The firmware must be updated to a
+expired. Please A testversion has been delivered to software can lead to
+19499 Fatal Error released software version for that
+update the a customer . malfuncition of any
+laser type.
+software. kind.
+General
+19500 W arning maintenance
+warning
+Check the fume extraction. If no
+While monitoring the fume fume extraction is connected
+Suction control
+19502 Error 1 extraction an control error Marking is not possible check the default bridges
+error
+happened (Chameleon X21.1) and the main
+control board.
+Check the filter of the fume
+extraction. Check the filter
+In a short timeframe
+While monitoring the fume condition and replace if necessary .
+the system will
+19503 W arning The filter is full. extraction the filter status became If no fume extraction is connected
+generate an error and
+active check the default bridges
+stops marking
+(Chameleon X21.3) and the main
+control board.
+Check the filter of the fume
+extraction. Check the filter
+Interrupted markings, condition and replace if necessary .
+While monitoring the fume
+19504 Error 2 The filter is full. incomplete markings, If no fume extraction is connected
+extraction the filter status is active
+marking is not possible check the default bridges
+(Chameleon X21.3) and the main
+control board.
+The Safety circuit is The door at the safety circuit is Marking can not be Close the door circuit at the safety
+19505 W arning
+open. open carried out circuit.
+The front panel Marking can not be
+19506 W arning The frontpanel keyswitch is open Close the keyswitch to continue.
+keyswitch is open. carried out
+Close the keyswitch to continue.
+The customer Check jumper bridge (Chameleon
+Marking can not be
+19507 W arning interface (CI) The external keyswitch is open X33.1 to X33.8), wiring of
+carried out
+keyswitch is open. customer interface and external
+wiring.
+If Stop was not pressed, check
+The front panel stop Interrupted marking, wiring to the front panel, the front
+19508 W arning The frontpanel stop button is open
+button was pressed. incomplete marking panel keypad and the main control
+board.
+19509 Error 1 Safety connector The configured safety circuit does The system is not The configured safety circuit does
+has a signal on not match the circuit attached. operable. not match the circuit attached.
+unused line. Check equipped hardware and
+system configuration.Check
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 29 /31
+ID Error Class Message Possible Cause Effects Remedy
+internal wiring and
+hardware.Contact your local
+service representative or support
+team who will be able to provide
+assistance.
+Close the emergency stop circuit.
+If this error appears unattended
+None. This is default
+Safety circuit: The emergency stop circuit is check safety circuit wiring and
+1951 1 Error 1 for K40 safety
+Emergency stop. opened. switches. This error should only
+controller option.
+appear on mature systems with
+K40 safety controller option.
+The DSP has
+19512 W arning detected an internal
+error .
+The machine job
+19513 Error 1
+can't be executed.
+It was not possible to reset the
+safety circuit. The reset is done
+during initialisation.Check reset
+input for safety circuit and wiring of
+The reset of the safety curcuit was Fatal error condition safety circuit. Reset switch must
+Safety circuit reset not possible during system during system be open during initialization.Check
+19515 Fatal Error
+failure. initialization. System is not able to initialization. Marking default bridges and power
+release safety circuit is not possible switching board (e.g. CPD/SPM)
+and connection to main control
+board. Ensure jumper on X9.22-24
+is in place and making good
+contact.
+Indication that emergency stop
+circuit is opened. This warning will
+be generated by default if F ASS
+option is equipped and system is in
+Safety circuit: The emergency stop circuit is interlock open status. Nothing to
+19516 W arning None
+Emergency stop. opened. check. Normal operation. If
+Emergency Stop warning occurs
+unitentionally then check wiring to
+doors/contacts.Check default
+bridges (CPD/SPM X9.15, X9.17).
+The machine
+19517 Error 1
+reports an error .
+The pilot laser has
+been stopped The pilot laser is stopped
+19518 Message Restart the pilot laser .
+automatically due to automatically after a certain time.
+timeout.
+The event log
+19801 Error 1 database is full. Export the event log database.
+Export required.
+The event log
+database is almost
+19802 W arning Export the event log database.
+full. Export is
+strongly advised.
+Marking not
+The system has been started from
+possible, system
+an external storage device. For Restart the system form internal
+19803 Error 1 has been started
+safety reasons marking is not memory .
+from an external
+possible.
+storage device.
+Unable to set primary
+or secondary ethernet Check configured network settings.
+W rong network Invalid IP address or subnet has settings. No IP Make sure that address is in
+19804 Error 1
+settings. been configured. address set. Laser is proper format. The settings are
+unreachable via probably invalid.
+network.
+The {1} network
+connection is lost. Place the antenna box in a
+Please check the dif ferent location or try using a
+19805 Message
+placement of the dif ferent network. Check the cable
+antenna box or the in case of a cable network.
+cable connection.
+A laser in a multi laser
+Connected laser see warning of the
+19900 W arning configuration throwed a warning see warning of the connected laser
+system warning: {1} connected laser
+message
+Connected laser A laser in a multi laser see error of the
+19901 Error 1 see error of the connected laser
+system error: {1} configuration throwed an error1 connected laser
+Connected laser A laser in a multi laser see error of the
+19902 Error 2 see error of the connected laser
+system error: {1} configuration throwed an error2 connected laser
+19903 Fatal Error Connected laser A laser in a mutli laser see fatal error of the see fatal error of the connected
+system fatal error: configuration throwed a fatal error connected laser laser
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 30 /31
+ID Error Class Message Possible Cause Effects Remedy
+{1}
+Connected laser
+Additional A laser in a multi laser see information of the see information of the connected
+19904 system message:
+Information configuration throwed a message connected laser laser
+{1}.
+all lasers in the setup need to be
+A network cable or device within
+Follow laser {1} has No multi laser marking connected properly . If only leader
+19905 Error 2 the multi laser configuration was
+been disconnected. possible laser shall be used, please disable
+unplugged
+multi laser configuration
+all lasers in the setup need to be in
+laser ready state.
+The laser is still in an error state or 1. Bring follower laser(s) into laser
+Laser is not ready No multi laser marking
+19906 Error 2 the keyswitch or safety circuit is ready or
+for marking. possible
+open 2. If only leader laser shall be
+used, please disable multi laser
+configuration
+Internal memory is
+19908 Message
+almost full.
+New firmware is
+60001 Message ready for manual
+installation.
+New firmware is
+60002 Message available for
+download.
+New firmware is
+60003 Message ready for download
+and installation.
+New firmware will
+be installed
+60004 Message automatically on
+next system
+shutdown.
+A firmware
+download was
+60005 Message canceled when the
+key switch was
+closed.
+New firmware will
+be installed
+60006 Message automatically on
+next system start-
+up.
+T r ia g e N e x t
+S t e p s
+T r ia g e
+R e c o m m e n d e d
+P a r ts
+A r tic le M e ta d a ta
+U R L N a m e Laser-System-Error-Codes
+P e r m a n e n t U R L
+Right click and copy link to share this Article's URL
+f o r L ig h tn in g
+V is ib le In In te r n a l
+A p p
+V is ib le to P a r tn e r
+V is ib le to
+C u s to m e r
+A r tic le R e c o r d
+Error Code List
+T y p e
+V a lid a tio n S ta tu s Approved - Internal FS Use
+P u b lic a tio n S t a tu s Published
+V is ib le In P u b lic
+K n o w le d g e B a s e
+
+24/07/2023, 08:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Laser-System-Error-Codes/p 31 /31
+In te r n a l D a ta
+In te r n a l C o m m e n t s
+R e la t e d E s c a la t io n
+D is c la im e r
+ThecontentsofthisemailandanyattachmentsareprovidedasaconveniencetoVideojetcustomerstohighlightusefulinformationandtroubleshootingtips.W henworkingwithaproduct,alwaysconsulttheproductusermanualand follow the product
+safetyprecautionsandrecommendations,includingusingPersonalProtectiveEquipmentwhennecessary.IfyouhaveanyquestionsorarenotexperiencedinusingorservicingVideojetequipment,contactVideojetforassistance.
+E s c a la tio n C a s e is
+C lo s e d

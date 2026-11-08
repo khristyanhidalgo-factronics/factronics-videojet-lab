@@ -1,0 +1,238 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Esp\18351-Site Survey TTO (Esp).pdf
+# cifrado=False bloques=6 caracteres=14380
+
+Estudio del sitio (6530, 6230)
+C o n t e n i d o
+T í t u l o Estudio del sitio (6530, 6230)
+C o n t e n i d o
+E s t u d i o d e l s i t i o ( 6 5 3 0 , 6 2 3 0 )
+La encuesta del sitio es realizada por los vendedores. Sin embargo, es una buena idea entender lo
+que entra en una encuesta del sitio.
+Áreas de evaluación
+Medio ambiente
+Aplicación
+Integración física
+Acciones que requieren asistencia al cliente
+Discuta y obtenga confirmación del cliente de que proporcionarán su propio personal de
+mantenimiento para realizar lo siguiente:
+T aladrado y roscado para la colocación de soportes y componentes
+Interfaz eléctrica con el equipo FFS
+Cualquier escalada requerida o como para integrar el equipo 6530
+El personal de V ideojet no debe realizar ninguna de estas acciones.
+M ed i o am b i en t e
+T emperatura ambiente
+¿La temperatura está dentro de las especificaciones?
+< 40 F (5 C) min = Puede ser necesario un calentador SAR
+>104 F (40 C) máx.= Es posible que se requiera un ventilador de refrigeración
+Humedad ambiental
+La condensación extrema es bastante común en salas refrigeradas
+La condensación significativa puede requerir el uso de SAR Heater
+La humedad de condensación de la película puede inhibir la capacidad de la TT O
+para transferir la imagen completa
+Contaminación por polvo
+La contaminación extrema por polvo / partículas requerirá una limpieza periódica
+W ash-down / Ambiente húmedo
+El 6530 no tiene clasificación IP .
+No se recomienda embolsar TT O.
+TT O en ambientes húmedos
+¿En qué entorno puede operar una impresora TT O? Las impresoras TT O tienen una
+clasificación IP muy baja debido al área abierta necesaria donde el cabezal de
+impresión entra en contacto con el sustrato. Por lo tanto, las áreas donde se
+produce el lavado requerirán que la impresora se instale con una carcasa IP65, al
+igual que la interfaz del operador , debido a las conexiones de tipo "D" y los puertos
+
+de comunicación. El polvo o los fluidos en el sustrato podrían poner en riesgo el
+cabezal de impresión y causar un desgaste excesivo o un choque térmico. Por lo
+tanto, cuanto más limpio y seco sea el medio ambiente, mejor .
+La carcasa es solo para lavar , la unidad no imprimirá con la carcasa IP65 en su lugar .
+A p l i caci ó n
+Identificar y confirmar el modo de operación; Intermitente o continuo
+Identificar los requisitos máximos de área de impresión
+Identifique la estructura del mensaje para confirmar que está dentro de las capacidades del
+software 6530
+Identificar los requisitos máximos de velocidad y rendimiento
+¿Se han proporcionado muestras de impresión al cliente?
+A p l i c a c i ó n i n t e r m i t e n t e
+¿Cuál es el tiempo mínimo de permanencia?
+¿El ciclo intermitente de indexación es más de un producto?
+¿Cuál es el máximo esperado de impresiones/min?
+¿Cuál es el ancho y alto máximos del mensaje?
+¿Hay un rodillo de registro incorporado?
+A p l i c a c i ó n c o n t i n u a
+¿Cuál es la velocidad máxima de la película?
+1000 mm/s (157 pies/m) para 53
+¿Cuál es el máximo esperado de impresiones/min?
+¿La velocidad de la película aumenta / disminuye severamente?
+¿Cuál es el ancho máximo de película?
+¿Cuál es la longitud máxima y mínima del producto?
+¿La película permanece apretada en el área de impresión?
+¿La velocidad de la película sube o baja?
+¿Ha obtenido una muestra de película con impresión y dirección indicadas?
+¿Hay una ventana de impresión designada?
+Imprimir señal mediante PEC (¿todas las películas utilizadas tienen un registro de marca
+Imprimir señal mediante sensor de proximidad Señal de impresión proporcionada por la
+máquina host
+¿Alguna vez usan película simple sin marcas de registro?
+¿Hay un suministro de aire limpio de 6 bar?
+¿Se ha identificado una posición adecuada para la impresora?
+¿Hay guardias en las áreas del codificador?
+¿El soporte de la impresora causará alguna obstrucción?
+¿Dónde se montará el controlador?
+Especifique las velocidades máximas/mínimas de la película/Mín.
+Especificar el ancho máximo de película Maxis
+máquina continua o intermitente
+Especificar temperaturas máximas/mínimas en el entorno
+I n t eg r aci ó n f í si ca
+Notas importantes al seleccionar la colocación del corchet.
+Observe el lado de impresión de la película
+Determinación de la dimensión de ancho de soporte "End to End"
+Determine la colocación de los rodillos de desvío requeridos.
+Determinar la orientación de la impresora a la derecha frente a la izquierda
+Las placas de los extremos del soporte se pueden colocar en cualquier orientación
+Determinar si los conectores eléctricos de la impresora interferirán con los objetos
+El soporte se puede instalar en voladizo (no exceda el ancho total de 25")
+Las placas de los extremos se pueden colocar apoyadas desde arriba ("colgantes")
+La película NO debe entrar en contacto con los tubos de soporte
+
+Figura 1: Opciones de fijación de integración.
+F i j a c i ó n d e u n s o p o r t e 6 5 3 0 - M o n t a j e e n s o p o r t e
+El montaje del soporte se puede lograr en varios métodos diferentes
+Montaje del soporte - Continuo
+Determinar el ancho del rodillo de impresión
+V erifique que el codificador del eje se pueda colocar sin interferencias
+V erifique que la película tenga un rodillo "envolvente" adecuado
+Montaje del soporte: intermitente
+V erifique el espacio disponible para el rodillo de registro (si corresponde)
+Los marcos laterales o de pared FFS deben ser de acero sólido o aluminio (tenga
+en cuenta el revestimiento de la cubierta de 1/8 ")
+T enga en cuenta los componentes eléctricos o mecánicos en el lado opuesto del
+bastidor que se van a perforar para la fijación del soporte
+Los soportes/rodillos NO deben interferir con las cubiertas de seguridad u otros
+objetos
+Los soportes deben sujetarse con pernos no menos de 1/4" (preferiblemente
+5/16")
+Cambiar la ruta web NO debe crear un peligro potencial para la seguridad de los
+operadores
+La accesibilidad incómoda del operador de la impresora/controlador puede
+resultar en un peligro para la seguridad. NO considerar
+Nota importante
+No hay "reglas escritas" sobre la integración. El éxito dependerá de cómo se lleve a cabo el
+estudio del sitio y cómo se determine que se llevará a cabo la integración.
+I n t e r m i t e n t e
+Figura 2: Ilustración de la Unidad de Registro.
+Una unidad de registro permite que la posición de impresión en la película de embalaje se mueva al
+área requerida. Al ajustar el rodillo de registro hacia arriba o hacia abajo, la longitud de la película
+
+entre el carrete de suministro y las mordazas de sellado de la máquina de envasado se hace más
+larga o más corta. Esto cambia la posición de impresión en la película en consecuencia.
+La unidad de registro debería, idealmente, colocarse entre las mordazas de sellado de la máquina de
+embalaje y la impresora. Esto asegurará que la posición de impresión se pueda cambiar cuando se
+ajuste la posición del rodillo de registro.
+Las unidades de registro se utilizan en la película de embalaje en aplicaciones intermitentes.
+Ocasionalmente, hay aplicaciones continuas en las que la película se mueve demasiado rápido o
+demasiado lento para que la 6530 se imprima. Mediante el uso de la unidad de registro, puede ser
+posible ajustar la trayectoria de la película a una parte más rápida o más lenta del ciclo de envasado,
+lo que permite una oportunidad adecuada para imprimir con la 6530.
+Para lograr la mejor calidad de impresión a partir de una aplicación continua, el sustrato debe
+envolver un mínimo de 90 grados alrededor del rodillo de impresión.
+Figura 3: Rodillo de registro intermitente
+Consideraciones intermitentes
+Al adoptar el sistema modular para aplicaciones de embalaje intermitente, la siguiente información es
+importante y afectará el resultado de la solución especificada.
+El ancho del carro del carrete y , por lo tanto, el material de sustrato máximo permitido, es un factor
+clave para especificar el ancho de soporte requerido. El sistema modular está diseñado con una
+dimensión de paquete plano de 1 m de ancho (las aplicaciones más amplias son raras, pero es
+posible especificando por separado). La denominación común para especificar un ancho de soporte
+se conoce como la dimensión A (todas las demás longitudes de corte en un ancho de soporte se
+obtienen mediante fórmulas simples derivadas de la dimensión A ). La dimensión A es el ancho
+total de un soporte completamente ensamblado, medido a la superficie exterior de las placas
+finales.
+¿Dónde va el soporte? Cada máquina de empaquetado tendrá una configuración de ruta web
+diferente, pero todas se pueden clasificar en tres grupos. Hay plantillas disponibles que, cuando se
+sostienen hacia la máquina, pueden imitar la posición deseada del soporte, verificando que haya
+espacio disponible y su efecto en otros engranajes de carrete de la máquina. La mayoría de las
+máquinas VFFS permiten el montaje de un sistema modular en la parte superior de la máquina o
+sobre el engranaje del carrete de suministro, como se muestra en la Figura 3 . El espacio libre de
+altura por encima de la máquina (debido a la plataforma donde se pesarán los productos) a veces
+puede ser limitante, dependiendo del tipo de producto que se empaqueta. Cuando no hay espacio
+disponible, se utiliza la parte trasera de la máquina, pero cuanto más lejos se monta el codificador
+desde el punto de sellado de la bolsa, se pueden desperdiciar más bolsas en el cambio.
+El posicionamiento de los rodillos guía variará de una aplicación a otra, pero debido a que son "plug
+and play", es fácil ajustar estos rodillos en la instalación. Los criterios para el posicionamiento del
+rodillo son que deben presentar el sustrato en el plano correcto al cabezal de impresión y que
+también la banda no debe ensuciarse en ninguna parte estacionaria del soporte o bastidor de la
+máquina, causando un arrastre adicional de la banda.
+El sistema modular , cuando se instala en máquinas intermitentes, debe tener un ajuste adecuado
+para imprimir en cualquier punto a lo ancho de la bolsa o en cualquier punto a lo largo de la bolsa
+más larga. El ajuste a lo ancho del sustrato se realiza moviendo manualmente la impresora a través
+del soporte, y el ajuste hacia arriba y hacia abajo de la longitud de la bolsa se logra mediante la
+implementación de un módulo de registro. El módulo de registro permite que la posición de parada de
+la película cambie en relación con el cabezal de impresión y se efectúa mediante el ajuste de un
+rodillo móvil hacia arriba y hacia abajo de un bastidor .
+C o n t i n u o
+¿Por qué necesitamos el rodillo de registro en modo continuo?
+
+Figura 4: Rodillo de registro continuo
+La mayoría de las aplicaciones continuas no requieren una unidad de registro ya que el sustrato no
+deja de moverse, se puede configurar un retardo electrónico dentro del 6530, cuando expira el
+retardo, el codificador recibe la señal para imprimir . T odas las impresoras continuas requerirán un
+codificador para que coincida con la velocidad del sustrato y la velocidad de impresión.
+Consideraciones continuas
+Al igual que con las consideraciones intermitentes, es importante que el soporte sea capaz de hacer
+frente al sustrato más ancho en la aplicación. La dimensión A debe reflejar esto. En las máquinas
+HFFS, que generalmente son continuas, el engranaje del carrete a menudo tiene un diseño en
+voladizo, a diferencia de la máquina VFFS tradicional que ofrece soporte de soporte en ambos
+extremos. Esto no causa ningún problema ya que el diseño del soporte modular es muy fuerte. Sin
+embargo, una vez que el ancho del engranaje del carrete aumenta más allá de 600 mm, es una
+práctica común reforzar el extremo suspendido del soporte. Esto se logra ya sea mediante refuerzos
+a otros rodillos en voladizo en la máquina madre o a la mesa de transporte del producto.
+Al igual que con las máquinas verticales, es esencial que el codificador siempre esté montado
+después del brazo de break dance (que normalmente es inmediatamente después del carrete de
+suministro y está destinado a evitar el desbordamiento del carrete). En las envolturas continuas, sin
+embargo, también es más común encontrar sistemas de empalme automático, para máquinas
+principales que ofrecen una instalación de doble carrete. T ambién es esencial en estas máquinas que
+el codificador se monte después de estos ensamblajes.
+Para el ajuste de registro a lo largo de la longitud del paquete, esto normalmente se ve afectado
+electrónicamente, ya sea en el codificador , pero más normalmente por la máquina principal.
+Otra consideración al recopilar información sobre aplicaciones continuas es si la máquina ejecuta
+película normal o impresa registrada. El ajuste de un sensor de registro de impresión debe ser una
+consideración cuando se requiere una alta precisión de la posición de impresión y la envoltura tiene
+corrección automática de la longitud de la bolsa.
+Los rodillos de desvío cambian la trayectoria de la película, permitiendo que sea:
+Se desvía fácilmente de la ruta de la película existente
+Muévase libremente por la impresora
+Desviado de nuevo a la ruta de la película existente
+Figura 5: T rayectoria de la película sin soporte.
+
+Figura 6: Ruta de película desviada.
+M e t a d a t o s d e l a r t í c u l o
+N o m b r e d e l a U R L Encuesta del sitio-6530-6230-22cebf f0
+U R L p e r m a n e n t e
+Haga clic derecho y copie el enlace para compartir la URL de este artículo
+p a r a L i g h t n i n g
+V i s i b l e e n l a
+a p l i c a c i ó n i n t e r n a
+V i s i b l e p a r a e l
+s o c i o
+V i s i b l e p a r a e l
+c l i e n t e
+T i p o d e r e g i s t r o d e
+Artículo de formación
+a r t í c u l o
+E s t a d o d e
+Aprobado - Uso interno de FS
+v a l i d a c i ó n
+E s t a d o d e
+Publicado
+p u b l i c a c i ó n
+V i s i b l e e n l a b a s e
+d e c o n o c i m i e n t o
+p ú b l i c a
+D a t o s i n t e r n o s
+C o m e n t a r i o s
+i n t e r n o s
+R e n u n c i a
+E lcontenido de este correo electrónico y los archivos adjuntos se proporcionan para com odidad de los clientes de V ideojetpara destacar inform ación útily consejos para la so lución de
+problem as.C uando trabaje con un producto,consulte siem pre elm anualdelusuario delproducto y siga las precauciones y recom endaciones de seguridad delproducto,incluido eluso
+de equipo de protección personalcuando sea necesario.S itiene alguna pregunta o no tiene experiencia en eluso o m antenim iento de equipos de V ideojet,póngase en conta cto con
+V ideojetpara obtener ayuda.

@@ -1,0 +1,2268 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\Specification_Ultimate_V1.6.6_Videojet.pdf
+# cifrado=False bloques=74 caracteres=75765
+
+Software Specification : U ltimate Protocol
+- Basic Communications Protocol -
+
+Contents
+1. Introduction ................................ ................................ ................................ ........................ 5
+1. Version history ................................ ................................ ................................ ............... 5
+2. Installation ................................ ................................ ................................ ...................... 7
+3. Configuration ................................ ................................ ................................ .................. 9
+4. Protocol ................................ ................................ ................................ ........................ 10
+5. Datastring ................................ ................................ ................................ ..................... 10
+2. Commands ................................ ................................ ................................ ...................... 11
+1. GetVersion; ................................ ................................ ................................ .................. 11
+2. Start; ................................ ................................ ................................ ............................. 12
+3. Stop; ................................ ................................ ................................ ............................. 12
+4. GetStatus; ................................ ................................ ................................ .................... 13
+5. GetStatusCode; ................................ ................................ ................................ ............ 14
+6. GetVarNames; ................................ ................................ ................................ ............. 15
+7. GetVars; ................................ ................................ ................................ ....................... 15
+8. SetVars; ................................ ................................ ................................ ........................ 16
+9. SetVarsSimple ; ................................ ................................ ................................ ............ 16
+10. SetVarsAsync; ................................ ................................ ................................ .............. 17
+11. ResetSerialnumber; ................................ ................................ ................................ ..... 17
+12. Ge tVarPosition; ................................ ................................ ................................ ............ 18
+13. SetVarPosition; ................................ ................................ ................................ ............ 18
+14. GetRepeat; ................................ ................................ ................................ ................... 19
+15. SetRepeat; ................................ ................................ ................................ ................... 20
+16. SetRepeatS imple; ................................ ................................ ................................ ........ 20
+17. GetIncrement; ................................ ................................ ................................ .............. 21
+18. SetIncrement; ................................ ................................ ................................ ............... 22
+19. SetIncrementSimple; ................................ ................................ ................................ .... 22
+20. GetDateOffset; ................................ ................................ ................................ ............. 23
+21. SetDateOffset; ................................ ................................ ................................ .............. 24
+22. SetDateOffsetSimple; ................................ ................................ ................................ ... 24
+23. GetDateUnit; ................................ ................................ ................................ ................ 25
+24. SetDateUnit; ................................ ................................ ................................ ................. 26
+25. SetDateUnitSimple; ................................ ................................ ................................ ...... 27
+26. GetDateChange; ................................ ................................ ................................ .......... 28
+27. SetDat eChange; ................................ ................................ ................................ ........... 29
+28. GetJobNames; ................................ ................................ ................................ ............. 30
+29. GetTemplateListNames; ................................ ................................ .............................. 30
+30. GetTemplateSequenceNames; ................................ ................................ .................... 31
+31. GetTemplateBatchNames; ................................ ................................ ........................... 31
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+2
+
+32. GetJob; ................................ ................................ ................................ ......................... 32
+33. SetJob; ................................ ................................ ................................ ......................... 33
+34. SetJobVars; ................................ ................................ ................................ .................. 33
+35. GetProductRegistrationNames; ................................ ................................ ................... 34
+36. GetProductRegistration; ................................ ................................ ............................... 34
+37. SetProductRegistration; ................................ ................................ ............................... 35
+38. GetParameterSetNames; ................................ ................................ ............................. 36
+39. GetParameterSet; ................................ ................................ ................................ ........ 36
+40. SetParameterSet; ................................ ................................ ................................ ......... 37
+41. GetLayoutPosition; ................................ ................................ ................................ ....... 38
+42. Se tLayoutPosition; ................................ ................................ ................................ ....... 38
+43. GetRotation; ................................ ................................ ................................ ................. 39
+44. SetRotation; ................................ ................................ ................................ ................. 39
+45. GetMessa geID; ................................ ................................ ................................ ............ 40
+46. GetMessages; ................................ ................................ ................................ .............. 40
+47. ConfirmMessages; ................................ ................................ ................................ ....... 41
+48. DeleteMessages; ................................ ................................ ................................ ......... 41
+49. GetRTC; ................................ ................................ ................................ ....................... 42
+50. SetRTC; ................................ ................................ ................................ ........................ 42
+51. GetEmissionSource; ................................ ................................ ................................ .... 43
+52. SetEmissionSource; ................................ ................................ ................................ ..... 43
+53. Ge tLayerMarking; ................................ ................................ ................................ ......... 44
+54. SetLayerMarking; ................................ ................................ ................................ ......... 44
+55. GetIntensity; ................................ ................................ ................................ ................. 45
+56. SetInt ensity; ................................ ................................ ................................ ................. 45
+57. GetMarkSpeed; ................................ ................................ ................................ ............ 46
+58. SetMarkSpeed; ................................ ................................ ................................ ............ 46
+59. GetStartTriggerDelay; ................................ ................................ ................................ .. 47
+60. GetConsecutiveTriggerDelay; ................................ ................................ ...................... 4 7
+61. GetStopTrigg erDelay; ................................ ................................ ................................ .. 48
+62. SetStartTriggerDelay; ................................ ................................ ................................ ... 49
+63. SetConsecutiveTriggerDelay; ................................ ................................ ...................... 49
+64. SetStopTriggerDelay; ................................ ................................ ................................ ... 50
+65. GetStartTriggerMode; ................................ ................................ ................................ .. 51
+66. GetConsecutiveTriggerMode; ................................ ................................ ...................... 51
+67. GetStopTriggerMode; ................................ ................................ ................................ ... 52
+68. SetStartTriggerMode; ................................ ................................ ................................ ... 53
+69. SetConsecutiveTriggerMode; ................................ ................................ ...................... 53
+70. SetStopTriggerMode; ................................ ................................ ................................ ... 54
+71. GetProductRegistrationMode; ................................ ................................ ...................... 55
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+3
+
+72. SetProductRegistrationMode; ................................ ................................ ...................... 55
+73. GetFixedSpeed; ................................ ................................ ................................ ........... 56
+74. SetFixedSpeed; ................................ ................................ ................................ ............ 56
+75. GetMov ementAngle; ................................ ................................ ................................ .... 57
+76. SetMovementAngle; ................................ ................................ ................................ ..... 57
+77. GetGlobalCounter; ................................ ................................ ................................ ....... 58
+78. Ge tMarkingCounter; ................................ ................................ ................................ ..... 58
+79. GetProductCounter; ................................ ................................ ................................ ..... 59
+80. ResetMarkingCounter; ................................ ................................ ................................ . 60
+81. ResetProductCounter; ................................ ................................ ................................ .. 60
+82. GetLotSize; ................................ ................................ ................................ ................... 61
+83. SetLotSize; ................................ ................................ ................................ ................... 61
+84. GetLotCounter; ................................ ................................ ................................ ............. 62
+85. AddBufferData; ................................ ................................ ................................ ............. 63
+86. ClearBufferData; ................................ ................................ ................................ .......... 63
+87. GetRemainingBufferAmount; ................................ ................................ ....................... 64
+3. Event Port ................................ ................................ ................................ ........................ 65
+1. Template Changed ................................ ................................ ................................ ....... 65
+2. Status Changed ................................ ................................ ................................ ........... 65
+3. Set Async Value ................................ ................................ ................................ ........... 65
+4. Productcounter Value Changed ................................ ................................ ................... 66
+5. Markingcounter Value Changed ................................ ................................ .................. 66
+6. MarkResult Good Bad ................................ ................................ ................................ .. 66
+4. Error Codes ................................ ................................ ................................ ..................... 67
+1. General Errors ................................ ................................ ................................ .............. 67
+2. Databas e Errors ................................ ................................ ................................ ........... 67
+3. Command Errors ................................ ................................ ................................ .......... 68
+4. TCL Errors ................................ ................................ ................................ .................... 68
+5. XPath Error s ................................ ................................ ................................ ................. 68
+5. VisualStudio - Example ................................ ................................ ................................ ..... 69
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+4
+
+1. Introduction
+Basic TCL Script prov iding a communication interface for the most common functions.
+1. Version history
+Version 1.0
+- Initial Version
+Version 1.1
+- Additional Commands
+Version 1.2
+- Additional Commands
+Version 1.3
+- Additional Commands
+Version 1.4
+- Encoding
+Version 1.5
+- Additional Commands
+o GetGlobalCounter
+o GetMarkingCounter
+o GetProductCounter
+o SetLotSize
+o GetLotCounter
+o RunXMLCommand
+- Rework of internal communication
+- Logging
+- Extension
+- ErrorCodes
+Version 1.6
+- Additional Commands
+o GetVersion
+o SetVarsAsync
+o ResetSerialnumber
+o GetVarPosition
+o GetRepeat
+o GetIncrement
+o GetDateOffset
+o GetDateUnit
+o GetDateChange
+o GetTemplateListNames
+o GetTemplateSequenceNames
+o GetTemplateBatchNames
+o SetJobVars
+o GetProductRegistrationNames
+o GetProductRegistration
+o SetProductRegistration
+o GetParameterSetNames
+o GetParameterSet
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+5
+
+o SetParameterSet
+o GetEmissionSource
+o SetEmissionSource
+o GetLayerMarking
+o SetLayerMarking
+o GetStartTriggerMode
+o GetConsecutiveTriggerMode
+o GetStopTriggerMode
+o SetStartTriggerMode
+o SetConsecutiveTriggerMode
+o S etStopTriggerMode
+o GetProductRegistrationMode
+o SetProductRegistrationMode
+o GetFixedSpeed
+o SetFixedSpeed
+o GetMovementAngle
+o SetMovementAngle
+o ResetMarkingCounter
+o ResetProductCounter
+o GetLotSize
+o AddBufferData
+o ClearBufferData
+o GetRemainingBufferAmount
+- Platform - Merge
+- Event - Port
+- Event - Port Notifications
+o Template Changed
+o Status Changed
+o Set Async - Value
+o ProductCounter Changed
+o MarkingCounter Changed
+o MarkResult Good / Bad
+- Delimiter - Recognition
+- Update Internal Structure
+- Errorcode
+o TCL Error: Invalid Parameter
+Version 1.6 .1
+- Bu gfixing
+Version 1.6 .2
+- Bugfixing
+Version 1.6 .3
+- Bugfixing TCL - 71
+Version 1.6 .4
+- Bugfixing TCL - 7 4
+Version 1.6 .5
+- Bugfixing TCL - 75
+Version 1.6 .6
+- Enhanced Logging
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+6
+
+2. Installation
+Main Folder
+Sub Folder “UltimateParts”
+1. Unplug MMC - / SD - Card from Laser System
+2. Plug MMC - / SD - Card into Windows PC
+On QMark (ACC3) based systems with QMark version below 8.6 , copy all files to
+[MMC]/smarties/customer and overwrite existing files
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+7
+
+On CMark (Chameleon) based systems, copy all files to [SD]/smarties/cu stomer/tcl and overwrite existing
+files
+On CMark (Chameleon) based systems, copy all files to [SD]/smarties/customer/tcl and overwrite existing
+files
+On QMark (ACC3) based systems with QMark version greater or equal 8.6, copy the file “startup.sh” fr om
+subfolder “Startup QMark 8.6” to [MMC]/smarties/customer and overwrite existing files . Copy all files from
+the “tcl” folder to [MMC]/smarties/customer/tcl and overwrite existing files. If the folder does not exist,
+create it.
+1. Safely remove MMC - / SD - Card from Windows PC
+2. Plugin MMC - / SD - Card to Laser System
+3. Boot Laser System
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+8
+
+3. Configuration
+Open the file “Setup.txt” with any file editor, e.g. notepad++. Configure the interface accordingly by
+changing the values:
+setting values description
+active 0 | 1 activates or deactivates the Interface
+interface tcp | rs232 defines which interface is to be used
+tcpListenPort 20001 portno for synchronous communication
+ttyMode 9600,n,8,1 defines serial interface settings
+ttyHandshake none defines serial interface handshake mode
+receiveDelimiter ; delimiter between result code and arguments passed
+sendDelimiter ; delimiter between commands and arguments passed
+sendAnswer 0 | 1 defines whether sent commands are acknowledged
+debugPort 20002 portno for debug purpose
+debugLevel 1 - 10 defines which debug messages are sent
+asyncport 20003 portno for asynchronous communication
+pushstatechange 0 | 1 defines laser state change messages to be pushed on
+asynchronous port
+pushtemplatechange 0 | 1 defines template change messages to be pushed on
+asynchronous port
+pushmarkingcounterchange 0 | 1 defines marking counter change messages to be
+pushed on asynchronous port
+pushproductcounterchange 0 | 1 defines product counter messages to be pushed on
+asynchronous port
+pushmarkresult 0 | 1 defines mark results to be pushed on asynchronous
+port
+Save the modified file S etup.txt on the MMC/SD card. Replace existing file if necessary.
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+9
+
+4. Protocol
+Encoding UTF - 8
+Parameter Delimiter is Semicolon (0x3B)
+End Delimiter is Carriage Return [CR] and Line Feed [LF] (0x0D, 0x0A)
+Returns Acknowledged [ACK] or NotAcknowledged [NAK] (0x06, 0x15)
+Synchronized communications – await response of each command.
+RS232
+BaudRate 9600
+Databits 8
+Stopbits 1
+Pari ty None
+Handshaking Off
+TCP/IP
+Server/Client Application
+Server: Laser
+Client: Customer Network Device
+Listen Port 20001
+Event Port 20003
+5. Datastring
+Com mand: Command;Arguments;<CR><LF>
+Result : [ACK];ResultCode;Arguments; <CR><LF>
+Result : [NAK];ResultCode;<CR><LF>
+Command Text is not Case Sensitive.
+Semicolon can be used as variable content usi ng escape character (Backslash):
+Example:
+SetVars;Var1;abc \ ;123;<CR><LF> writes “abc;123”
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+10
+
+2. Commands
+1. GetVersion;
+Returns version string of Ultimate and Extension
+Command arguments:
+None
+Result arguments:
+Ultimate Version
+Extension Version
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetVersion;<CR><LF>
+Receive <ACK>;0000;Ultimate1.6;ExtensionSample1.0;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+11
+
+2. Start;
+Starts the laser process
+Command arguments:
+None
+Result arguments:
+None
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send Start;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+3. Stop;
+Stops the laser process
+Command arguments:
+None
+Result arguments:
+None
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send Stop;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+12
+
+4. GetStatus;
+Returns the current laser status
+Command arguments:
+None
+Result arguments:
+Laser Status
+Laser Status:
+LaserStatusStandby
+LaserStatusReady
+LaserStatusMarking
+LaserStatusWaitForTrigger
+LaserStatusWaitForTriggerDelay
+LaserStatusPause
+LaserStatusPrepareForMarking
+LaserStatusWaitForPause
+LaserStatusStartUp
+LaserStatusKeySwitchOpen
+LaserStatusInterlockOpen
+LaserStatusShutterlockOpen
+LaserStatusProtectedServiceMode
+L aserStatusServiceMode
+LaserStatusError1
+LaserStatusError2
+LaserStatusFatalError
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetStatus;<CR><LF>
+Receive <ACK>;0000;LaserStatusMarking;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+13
+
+5. GetStatusCode;
+Returns the current laser status, grouped by a number
+Command arguments:
+None
+Result arguments :
+Code 0
+LaserStatusStandby
+LaserStatusReady
+Code 1
+LaserStatusMarking
+LaserStatusWaitForTrigger
+LaserStatus WaitForT riggerDelay
+LaserStatusPause
+LaserStatusPrepareForMarking
+LaserStatusWaitForPause
+Code - 1
+LaserStatusStartUp
+LaserStatusKeySwitchOpen
+LaserStatusInterlockOpen
+LaserStatusShutterlockOpen
+LaserStatusProtectedServiceMode
+LaserStatusServiceMode
+LaserStatusError1
+LaserStatusError2
+LaserStatusFatalError
+Limitation:
+No ne
+Timing hints:
+None
+Example:
+Send GetStatusCode;<CR><LF>
+Receive <ACK>;0000;1;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+14
+
+6. GetVarNames;
+Returns all variable names used in the active template
+Command arguments:
+None
+Result arguments:
+Varname1;Varname2;…;VarnameX
+Limitation
+Applicable for External Text (Prompt), SerialNumbers, Date and Time
+Shiftcodes are ignored
+Timing hints:
+None
+Example:
+Send GetVarNames;<CR><LF>
+Receive <ACK>;0000;Var1;Var2;Date1;Ser1;<CR><LF>
+7. GetVars;
+Returns all variables and their values [of the given variable names] in the active template
+C ommand arguments:
+Varname1;Varname2;…;VarnameX will return the values of given variable names
+Leaving it blank will return all available variables
+Result arguments:
+Varname1=Varvalue1;Varname2=Varvalue2;…;VarnameX=VarvalueX
+Limitation:
+Applicable for External Text (Prompt), SerialNumbers, Date and Time
+Shiftcodes are ignored
+Timing hints:
+None
+Example:
+Send GetVars;<CR><LF>
+Receive <ACK>;0000;Var1=abc;Var2=123;Ser1=001;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+15
+
+8. SetVars;
+Sets the value of the given variable in the active template
+Command arguments:
+Varname1;Varvalue1;Varname2;Varvalue2;…;VarnameX;VarvalueX
+Result arguments:
+None
+Limitation:
+Applicable for External Text (Prompt), SerialNumbers
+Variables within a TemplateList, TemplateSequence or TemplateBatch cannot be addressed globally
+Each variable has to have a different name
+Timing hints:
+SetVars will handle each variable one by one .
+Example:
+Send SetVars;Var1; abc;Var2;123;Ser1;001;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+9. SetVarsSimple;
+Set the values of variables without explicit variable names in the active template
+Variable names expected are “Var1” for the first argument, “Var2” for the second etc.
+Command arguments:
+Varvalue1;Varvalue2;…;VarvalueX
+Result arguments:
+None
+Limitation:
+Applicable for External Text (Prompt), SerialNumbers
+Variables within a TemplateList, TemplateSequence or TemplateBatch cannot be addressed globally
+Each variable has to have a d ifferent name
+Timing hints:
+SetVarsSimple will handle each variable at once .
+SetVarsSimple is faster than SetVars e speciall y when using multiple Variables .
+Example:
+Send SetVarsSimple;abc;123;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+16
+
+10. SetVars Async ;
+Stores values for variables and set the values once laser is in status “Marking” to be ready for the next
+marking. The Laser synchronizes using the values and marking process itself.
+Result of setting the variable value is returned through Event - Socket (Default P ort 20000).
+Command arguments:
+Varname1; Varvalue1; Varname2; Varvalue2;…; VarnameX; VarvalueX ;
+Result arguments:
+None
+Limitation:
+Applicable for External Text (Prompt), SerialNumbers
+Variables within a TemplateList, TemplateSequence or TemplateBatch cannot be addressed globally
+Each variable has to have a different name
+Timing hints:
+None
+Example:
+Send SetVarsAsync;Var1;abc;Var2;123;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Event Event;ValueSet;Var1;0;<CR><LF>
+Event;ValueSet;Var2;0;<CR><LF>
+11. ResetSerialnumber ;
+Resets the given serialnumbers to their startvalues
+Command arguments:
+Serialnumber1;Serialnumber2;…;SerialnumberX
+Result arguments:
+None
+Limitation:
+Applicable for SerialNumbers only
+Other types of variables are ignored
+Timing hints:
+None
+Example:
+Send ResetSerialnumber;Ser1;Ser2;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+17
+
+12. G etVarPosition;
+Returns the X and Y position of named variables
+Command arguments:
+Varname1;Varname2; …;VarnameX;
+Result arguments:
+Varname1;X1;Y1;Varname2;X2;Y2;…;VarnameX;X;Y;
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetVarPosition;Var1;Var2;<CR><LF>
+Receive <ACK>;0000;Var1;0.7;20.5;Var2;10.43;0.0;<CR><LF>
+13. SetVarPosition;
+Set the X and Y position of named variables
+Command arguments:
+Varname1;X1;Y1;Varname2;X2;Y2;…;VarnameX;X;Y
+X: Data Type Float
+Y: Data Type Float
+Result arguments:
+None
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send SetVarPosition;Var1;0.7;20.5;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+18
+
+14. G etRepeat;
+Returns the repetition of single increment steps of the named SerialNumbers
+Command arguments:
+SerialNumber1;…;SerialNumberX;
+Result arguments:
+Serialnumber1; RepeatValue1;…; SerialnumberX; RepeatValueX;
+Repetition: Data Type Integer
+Limitation:
+Applicable for SerialNumbers only
+Timing hints:
+None
+Example:
+Send GetRepeat;Ser1;Ser2;<CR><LF>
+Receive <ACK>;0000;Ser1;1;Ser2;4;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+19
+
+15. SetRepeat;
+Sets the repetition of single increment steps of the named SerialNumbers
+Command arguments:
+SerialNumber1; Repetition1;…;SerialNumberX; RepetitionX
+Repetition: Data Type Integer
+Result arguments:
+None
+Limitation:
+Applicable for SerialNumbers only
+Timing hints:
+Set Repeat will send data in si ngle commands for each Variable
+Each command is handled as a single cha nge
+Changes on template force the Laser to update all vectors
+Timing depends on the template content
+Example:
+Send SetRepeat;Ser1;1;Ser2;4;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+16. SetRepeatSimple;
+Set the repetition of SerialNumbers without explicit variable names in the active template
+Variable names expected are “Ser1” for the first argument, “Ser2” for the second etc.
+Command arguments:
+Repetition1; Repetition2;…;SerialNumberX; RepetitionX
+Repetition: Data Type Integer
+Result arguments:
+None
+Limit ation:
+Applicable for SerialNumbers only
+Timing hints:
+Set Repeat Simple will send all Variable changes in one stack of commands.
+A command stack is handled as one change.
+Changes on template force the Laser to update all vectors
+Timing depends on the template content
+Example:
+Send SetRepeatSimple;1;4;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+20
+
+17. G etIncrement;
+Returns the increment step range of the named SerialNumbers
+Command arguments:
+SerialNumber1;…;SerialNumberX;
+Result arguments:
+Serialnumber1; Increment1;…; SerialnumberX; IncrementX;
+Increment: Data Type Integer
+Limitation:
+Applicable for SerialNumbers only
+Timing hints:
+None
+Example:
+Send GetIncrement;Ser1;Ser2;<CR><LF>
+Receive <ACK>;0000;Ser1;1;Ser2;4;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+21
+
+18. SetIncrement;
+Sets the increment step range of the named SerialNumbers
+Command arguments:
+SerialNumber1;Increment1;…;SerialNumberX;IncrementX
+Increment: Data Type Integer
+Result arguments:
+None
+Limitation:
+Applicable for SerialNumbers only
+Timing hints:
+Set Increment will send data in si ngle commands for each Variable
+Each command is handled as a single change
+Changes on template force the Laser to update all vectors
+Timing depends on the template content
+Example:
+Send SetIncrement;Ser1;1;Ser2;4;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+19. SetIncrementSimple;
+Set the increment step range of SerialNumbers without explicit variable names in the active template
+Variable names expected are “Ser1” for the first argument, “Ser2” for the second etc.
+Command arguments:
+Incremen t1;Increment2;…;SerialNumberX;IncrementX
+Increment: Data Type Integer
+Result arguments:
+None
+Limitation:
+Applicable for SerialNumbers only
+Timing hints:
+Set Increment Simple will send all Variable changes in one stack of commands.
+A command stack is handled as one change.
+Changes on template force the Laser to update all vectors
+Timing depends on the template content
+Example:
+Send SetIncrementSimple;1;4;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+22
+
+20. G etDateOffset;
+Returns the date offset of the named Date Variable
+Command arguments:
+Date1; Date2 ;…;DateX;
+Result arguments:
+Date1; DateOffset1; Date2; DateOffset2;…; DateX; DateOffsetX
+Date Offset: Data Type Integer
+Limitation:
+Applicable for Dates only
+Timing hints:
+None
+Example:
+Send GetDateOffset;Date1;Date2;<CR><LF>
+Receive <ACK>;0000;Date1;10;Date2;40;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+23
+
+21. SetDateOffset;
+Sets the date offset of the named Date Variable
+Command arguments:
+Date1;DateOffset1;…;DateX;DateOffsetX
+DateOffset: Data Type Integer
+Result arguments:
+None
+Limitation:
+Applicable for Dates only
+Timing hints:
+Set DateOffset will send data in si ngle commands for each Variable
+Each command is handled as a single change
+Changes on template force the Laser to update all vectors
+Timing depends on the template content
+Example:
+Send SetDateOffset;Date1;10;Date2;40;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+22. SetDateOffsetSimple;
+Set the date offset of Date Variables without explicit variable names in the active template
+Variable names expected are “Date1” for the first argument, “Date2” for the second etc.
+Command arguments:
+Date1;DateOffset1;…; DateX;DateOffsetX
+DateOffset: Data Type Integer
+Result arguments:
+None
+Limitation:
+Applicable for Dates only
+Timing hints:
+Set DateOffset Simple will send all Variable changes in one stack of comma nds.
+A command stack is handled as one change.
+Changes on template force the Laser to update all vectors
+Timing depends on the template content
+Example:
+Send SetDateOffsetSimple;10;40;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+24
+
+23. G etDateUnit;
+Returns the date offset unit of the named Date Variable
+Command arguments:
+Date1 ;Date2 ;…;DateX;
+Result arguments:
+Date1; DateUnit1; Date2; DateUnit2;…; DateX; DateUnitX
+DateUnit: Days, Weeks, Months or Years
+Limitation:
+Applicable for Dates only
+Timing hints:
+None
+Example:
+Send GetDateUnit;Date1;Date2;<CR><LF>
+Receive <ACK>;0000;Date1;Days;Date2;Years;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+25
+
+24. SetDateUnit;
+Sets the date offset unit of the named Date Variable
+Command arguments:
+Date1;DateUnit1;…;DateX;DateUnitX
+DateUnit: Days, Weeks, Months or Years
+Result arguments:
+None
+Limitation:
+Applicable for Dates only
+When changing from format Day to Week, the DateOffset value is multiplied by 7, the format will be kept
+as Day.
+Multiple calls will increase the DateOffset.
+Timing hints:
+Set DateUnit will s end data in si ngle commands for each Variable
+Each command is handled as a single change
+Changes on template force the Laser to update all vectors
+Timing depends on the template content
+Example:
+Send SetDateUnit;Date1;Days;Date2;Years;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+26
+
+25. SetDate Unit Simple;
+Set the date offset unit of Date Variables without explicit variable names in the active template
+Variable names expected are “Date1” for the first argument, “Date2” for the second etc.
+Command arguments:
+DateUnit1; DateUnit2;…;DateUnitX
+DateUnit: Days, Weeks, Months or Years
+Result arguments:
+None
+Limitation:
+Applicable for Dates only
+When changing from format Day to Week, the DateOffset value is multiplied by 7, the format will be kept
+as Day.
+Multiple c alls will increase the DateOffset.
+Timing hints:
+Set DateUnit Simple will send all Variable changes in one stack of commands.
+A command stack is handled as one change.
+Changes on template force the Laser to update all vectors
+Timing depends on the template content
+Example:
+Send SetDateUnitSimple;Days;Years;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+27
+
+26. G etDate Change ;
+Returns the date change of the named Date Variable
+Command arguments:
+Date1 ;Date2 ;…;DateX;
+Result arguments:
+Date1;DateChange1;Date2;DateChange2;…;DateUnitX
+DateChange: Data Type Integer
+Limitation:
+Applicable for Dates only
+Timing hints:
+None
+Example:
+Send GetDate Change ;Date1;Date2;<CR><LF>
+Receive <ACK>;0000;Date1; 0 ;Date2; 7 ;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+28
+
+27. S etDate Change ;
+Sets the date change of the named Date Variable
+Command arguments:
+Date1 ;DateChange1;Date2;DateChange2 ;…;DateX ;DateChangeX ;
+DateChange: Data Type Integer
+Result arguments:
+None
+Limitation:
+Applicable for Dates only
+Timing hints:
+None
+Example:
+Send SetDat eChange;Date1;0;Date2;7;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+29
+
+28. GetJobNames;
+Returns the names of the templates stored in the database
+Command arguments:
+None
+Result arguments:
+Template1;Template2;...;TemplateX
+Limitation:
+TemplateLists, TemplateSequences and TemplateBatches are ignored
+Timing hints:
+None
+Examp le:
+Send GetJobnames;<CR><LF>
+Receive <ACK>;0000;Template1;Template2;Template3;<CR><LF>
+29. Get TemplateList Names;
+Re turns the names of the templatelists stored in the database
+Command arguments:
+None
+Result arguments:
+Template List 1;Template List 2;...;Template List X
+Limitation:
+Templates, TemplateSequences and TemplateBatches are ignored
+Timing hints:
+None
+Example:
+Send GetTemplateListnames;<CR><LF>
+Receive <ACK>;0000;TemplateList1;TemplateList2;TemplateList3;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+30
+
+30. Get TemplateSequence Names;
+Re turns the names of the templatesequences stored in the database
+Command arguments:
+None
+Result arguments:
+Template Sequence 1;Template Sequence 2;...;Template Sequence X
+Limitation:
+Templates, TemplateLists and TemplateBatches are ignored
+Timing hints:
+None
+Example:
+Send GetTemplateSequenceNames;<CR><LF>
+Receive <ACK>;0000;TemplateSequence1;TemplateSequence2;<CR><LF>
+31. Get TemplateBatch Names;
+Re turns the names of the templatebatches stored in the database
+Command arguments:
+None
+Result arguments:
+Template Batch 1;Template Batch 2;...;Template Batch X
+Limitation:
+Templates, TemplateLists and TemplateSequences are ignored
+Timing hints:
+None
+Example:
+Send GetTemplateBatchNames;<CR><LF>
+Receive <ACK>;0000;TemplateBatch1;TemplateBatch2;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+31
+
+32. GetJob;
+Return the name of the current template
+Command arguments:
+None
+Result arguments:
+Template:
+TemplateName
+TemplateList:
+TL: TemplatesWithinTemplateList
+TemplateBatch:
+TB: TemplatesWithinTemplateBatch
+TemplateSequence:
+TS: TemplatesWithinTemplateSequence
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetJob;<CR><LF>
+Receive <ACK>;0000;Template1;<CR><LF>
+Send GetJob;<CR><LF>
+Receive <ACK>;0000;TL:Template1;Template2;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+32
+
+33. SetJob;
+Set the current template , TemplateLists, TemplateSequences or TemplateBatches
+Command arguments:
+Jobname
+Result arguments:
+None
+Limitation:
+Limited to T emplate L ist s, TemplateS equences and TemplateB atches themselves – no access to member
+templates
+Timing hints:
+None
+Example:
+Send SetJob;Template1;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Send SetJob;Template List 1;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Event Event;TemplateChanged;<CR><LF>
+34. SetJob Vars ;
+Set the current template , TemplateLists, TemplateSequences or TemplateBatches and sets variable
+values
+Command arguments:
+Jobname ;Varname1;Value1;Varname2;Value2;…;VarnameX;ValueX;
+Result arguments:
+None
+Limitation:
+Limited to TemplateLists, Te mplateSequences and TemplateBatches themselves – no access to member
+templates
+Applicable for External Text (Prompt), SerialNumbers
+Variables within a TemplateList, TemplateSequence or TemplateBatch cannot be addressed globally
+Each variable has to have a different name
+Timing hints:
+None
+Example:
+Send SetJob Vars ;Template1; Var1;abc;Var2;123; <CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Event Event;TemplateChanged;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+33
+
+35. Get ProductRegistration Names;
+Re turns the names of the ProductRegistrations stored in the database
+Command arguments:
+None
+Result arguments:
+ProductRegistration1;ProductRegistration2;…;ProductRegistrationX;
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetProductRegistrationNames;<CR><LF>
+Receive <ACK>;0000;once;continuous 2000 ms;<CR><LF>
+36. GetProductRegistration ;
+Returns the ProductRegistration assigned to the active template
+Command arguments:
+None
+Result arguments:
+ProductRegistration
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetProductRegistration;<CR><LF>
+Receive <ACK>;0000;once;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+34
+
+37. SetProductRegistration ;
+Sets the ProductRegistration assigned to the active template
+Command arguments:
+ProductRegistration
+Result arguments:
+None
+Limitation:
+Changes to Templates can only be processed if marking is stopped
+Timing hints:
+None
+Example:
+Send SetProductRegistration;once;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+35
+
+38. Get ParameterSet Names;
+Re turns the names of the ParameterSets stored in the database
+Command arguments:
+None
+Result arguments:
+ParameterSet1;ParameterSet2;…;ParameterSetX;
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetParameterSetNames;<CR><LF>
+Receive <ACK>;0000;Carton;Black Paper;<CR><LF>
+39. GetParameterSet ;
+Returns the ParameterSet assigned to the active template
+Command arguments:
+None
+Result arguments:
+ParameterSet
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send Receive
+GetParameterSet ;<CR><LF> <ACK>;0000; Black Paper; <CR><LF>
+Send GetParameterSet;<CR><LF>
+Receive <ACK>;0000;Black Paper;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+36
+
+40. SetParameterSet ;
+Sets the ParameterSet assigned to the active template
+Command arguments:
+ParameterSet
+Result arguments:
+None
+Limitation:
+Changes to templates can only be processed if marking is stopped
+Timing hints:
+None
+Example:
+Send SetParameterSet;Bla ck Paper;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+37
+
+41. GetLayoutPosition;
+Returns the position of the layout
+Command arguments:
+None
+Result arguments:
+X, Y
+Data Type Integer
+Value 10000 equals Offset 1 mm
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetLayoutPosition;<CR><LF>
+Receive <ACK>;0000;10000;20000;<CR><LF>
+42. SetLayoutPosition;
+Sets the position of the layout
+Command arguments:
+X, Y
+Data Type Integer
+Value 10000 equals Offset 1 mm
+Result arguments:
+None
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send SetLayoutPosition;10000;20000;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+38
+
+43. GetRotation;
+Returns the rotation of the layout
+Command arguments:
+None
+Result arguments:
+Rotation
+Data Type Double
+Value 45.0 equals Rotation 45.0°
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetRotation;<CR><LF>
+Receive <ACK>;0000;45.00000;<CR><LF>
+44. SetRotation;
+Sets the rotation of the layout
+Command arguments:
+Rotation
+Data Type Double
+Value 45.0 equals Rotation 45.0°
+Result arguments:
+None
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send SetRotation;45.0;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+39
+
+45. GetMessageID;
+Returns the list of IDs of un - acknowledged Messages
+Command arguments:
+None
+Result arguments:
+3000;5000;…;6000
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetMessageID;<CR><LF>
+Receive <ACK>;0000;19508;19506;<CR><LF>
+46. GetMessages;
+Returns the list of ErrorTexts of un - acknowledged Messages
+Command arguments:
+None
+Result arguments:
+ErrorText1;ErrorText2;…;ErrorTextX
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetMessages;<CR><LF>
+Receive <ACK>;0000;The front panel stop button was pressed;<CR><LF>
+Send GetMessages;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+40
+
+47. ConfirmMessages;
+Confirms all un - acknowledged Messages
+Command arguments:
+None
+Result arguments:
+None
+Limitation:
+None
+Timing hints:
+The more messages (even already acknowledged ones) exist , the more time does it take to handle this
+request
+Example:
+Send ConfirmMessages;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+48. Delete Messages;
+Deletes all Messages
+Command arguments:
+None
+Result arguments:
+None
+Limitation:
+None
+Timing hints:
+The more messages exist, the more time does it take to handle this request
+Example:
+Send DeleteMessages;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+41
+
+49. GetRTC;
+Returns the current Real Time Clock Value
+Command arguments:
+None
+Result arguments:
+RTC
+Format: YYYY - MM - DDTHH:MM:SS
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetRTC;<CR><LF>
+Receive <ACK>;0000;2016 - 01 - 11T19:20:14;<CR><LF>
+50. SetRTC;
+Set the current Real Time Clock Value
+Command arguments:
+RTC
+Format: YYYY - MM - DDTHH:MM:SS
+Result arguments:
+None
+Limitation:
+Irregular high amount of usage may cause defect of SystemDatabase
+Timing hints:
+None
+Example:
+Send SetRTC;2016 - 01 - 11T19:20:14;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+42
+
+51. GetEmissionSource ;
+Returns the emission source for the laser process
+Command arguments:
+None
+Result arguments:
+BOTH_LASER
+PILOT_LASER
+MARKING_LASER
+BOTH_LASER represents Pilot - and Marking - Laser
+PILOT_LASER represents Pilot - Laser only
+MARKING_LASER represents Marking - Laser only
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetEmissionSource;<CR><LF>
+Receive <ACK>;0000;MARKING_LASER;<CR><LF>
+52. SetEmissionSource ;
+Selects the emission source for the laser process
+Command arguments:
+BOTH_LASER
+PILOT_LASER
+MARKING_LASER
+BOTH_LASER activates Pilot - and Marking - Laser
+PILOT_LASER activates Pilot - Laser only
+MARKING_LASER activates Marking - Laser only
+Result arguments:
+None
+Limitation:
+Changes to Emission Source can only be processed if marking is stopped
+Timing hints:
+None
+Example:
+Send SetEmissionSource;PILOT_LASER;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+43
+
+53. GetLayerMarking ;
+Returns the amount of marking repetitions of the given layer
+Command arguments:
+Layername1;Layername2;…;LayernameX;
+Result arguments:
+Layername1;LayerMarking1;Layername2;LayerMarking2;…;LayernameX;LayerMarkingX;
+LayerMarking: Data Type Integer
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetLayerMarking;Default Layer;<CR><LF>
+Receive <ACK>;0000;Default Layer;1;<CR><LF>
+54. SetLayerMarking ;
+Sets the amount of marking repetitions of the given layer
+Command arguments:
+Layername1;LayerMarking1;Layername2;LayerMarking2;…;LayernameX;LayerMarkingX;
+LayerMarking: Data Type Integer
+Result arguments:
+None
+Limitation:
+Changes to Templates can only be processed if marking is stopped
+Timing hints:
+None
+Example:
+Send SetLayerMarking;Default Layer;2;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+44
+
+55. GetIntensity;
+Returns the marking intensities of the active Parameter Set
+Index names expected are “Index1” for the first argument, “Index2” for the second etc.
+Command arguments:
+None
+Result arguments:
+Intensity1;Intensity2;…;IntensityX
+Intensity: Data Type Float
+Value 0 equals 0% Marking Intensity
+Limi tation:
+Value Range: 0 .0 – 100 .0
+Timing hints:
+None
+Example:
+Send GetIntensity;<CR><LF>
+Receive <ACK>;0000;100.0;<CR><LF>
+Send GetIntensity;<CR><LF>
+Receive <ACK>;0000;25.4;50.8;<CR><LF>
+56. SetIntensity;
+Sets the m arking intensity of the active P arameter S et
+Index names expected are “Index1” for the first argument, “Index2” for the second etc.
+Command arguments:
+Intensity1;Intensity2;…;IntensityX
+Intensity: Data Type Float
+Value 0 equals 0% Marking Intensity
+Result arguments:
+None
+Limitation:
+Changes to Parameter Set can only be processed if marking is stopped
+Value Range: 0 .0 – 100 .0
+Timing hints:
+Changes to Parameter Set will force the Laser to update every Template using the same Parameter Set
+Example:
+Send SetIntensity;100.0;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Send SetIntensity;25.4;50.8;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+45
+
+57. GetMarkSpeed;
+Returns the marking speed for each Index of the active Parameter Set
+Index names expected are “Index1” for the first argument, “Index2” for the second etc.
+Command arguments:
+None
+Result arguments:
+Speed 1;Speed2;…;SpeedX;
+Data Type: Integer
+Value 1000 equals 1000 mm/s
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetMarkSpeed;<CR><LF>
+Receive <ACK>;0000;1000;<CR><LF>
+Send GetMarkSpeed;<CR><LF>
+Receive <ACK>;0000;1000;20000;50000;<CR><LF>
+58. SetMarkSpeed;
+Sets the marking speed for each Index of the active Parameter Set
+Index names expected are “Index1” for the first argument, “Index2” for the second etc.
+Command arguments:
+Speed 1;Speed2;…;SpeedX;
+Data Type: Integer
+Value 1000 equals 1000 mm/s
+Result arguments:
+None
+Limitation:
+Changes to Parameter Set can only be processed if marking is stopped
+Timing hints:
+Changes to Parameter Set will force the Laser to update every Temp late using the same Parameter Set
+Example:
+Send SetMarkSpeed;1000;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Send SetMarkSpeed;1000;20000;50000<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+46
+
+59. GetStartTriggerDelay;
+Returns the StartTrigger Delay of the active Configuration (ProductRegistration)
+Command arguments:
+None
+Result arguments:
+Delay
+Data Type: Integer
+Value 1000 equals 1 ms
+Value 1000 equals 1 mm
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetStartTriggerDelay;<CR><LF>
+Receive <ACK>;0000;1000;<CR><LF>
+60. GetConsecutiveTriggerDelay;
+Returns the ConsecutiveTrigger Delay of the active Configuration (ProductRegistration)
+Command arguments:
+None
+Result arguments:
+Delay
+Data Type: Integer
+Value 1000 equals 1 ms
+Value 1000 equals 1 mm
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetConsecutiveTriggerDelay;<CR><LF>
+Receive <ACK>;0000;1000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+47
+
+61. GetStopTriggerDelay;
+Returns the StopTrigger Delay of the active Configuration (ProductRegistration)
+Command arguments:
+None
+Result arguments:
+Delay
+Data Type: Integer
+Value 1000 equals 1 ms
+Value 1000 equals 1 mm
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetStopTriggerDelay;<CR><LF>
+Receive <ACK>;0000;1000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+48
+
+62. SetStartTriggerDelay;
+Sets the StartTrigger Delay of the active Configuration (ProductRegistration)
+Command arguments:
+Delay
+Data Type: Integer
+Value 1000 equals 1 ms
+Value 1000 equals 1 mm
+Result arguments:
+None
+Limitation:
+Changes to Configurations can only be processed if marking is stopped
+Timing hints:
+Changes to Configurations will force the Laser to update every Template using the same Configuration
+Example:
+Send SetStartTriggerDelay;1000;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+63. SetConsecutiveTriggerDelay;
+Sets the ConsecutiveTrigger Delay of the active Configuration (ProductRegistration)
+Command arguments:
+Delay
+Data Type: Integer
+Value 1000 equals 1 ms
+Value 1000 equals 1 mm
+Result arguments:
+None
+Limitation:
+Changes to Configurations can only be processed if marking is stopped
+Timing hints:
+Changes to Configurations will force the Laser to update every Template using the same Configuration
+Example:
+Send SetConsecutiveTriggerDelay;1000;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+49
+
+64. SetStopTriggerDelay;
+Sets the StopTrigger Delay of the active Configuration (ProductRegistration)
+Command arguments:
+Delay
+Data Type: Integer
+Value 1000 = 1 ms
+Value 1000 = 1 mm
+Result arguments:
+None
+Limitation:
+Changes to Configurations can only be processed if marking is stopped
+Timing hints:
+Changes to Configurations will forc e the Laser to update every Template using the same Configuration
+Examp le:
+Send SetStopTriggerDelay;1000;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+50
+
+65. GetStartTrigger Mode ;
+Returns the StartTrigger Mode of the active Configuration (ProductRegistration)
+Command arguments:
+None
+Result arguments:
+TriggerMode
+TriggerMode: trigger1fall , trigger1raise, auto or program
+Case sensitive
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetStartTriggerMode;<CR><LF>
+Receive <ACK>;0000;auto;<CR><LF>
+66. GetConsecutiveTrigger Mode ;
+Returns the ConsecutiveTrigger Mode of the active Configuration (ProductRegistration)
+Command arguments:
+None
+Result arguments:
+TriggerMode
+TriggerMode: none , trigger1fall , trigger1raise, auto or program
+Case sensitive
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetConsecutiveTriggerMode;<CR><LF>
+Receive <ACK>;0000;none;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+51
+
+67. GetStopTrigger Mode ;
+Returns the StopTrigger Mode of the active Configuration (ProductRegistration)
+Command arguments:
+None
+Result arguments:
+TriggerMode
+TriggerMode: none , trigger1fall or trigger1raise
+Case sensitive
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetStopTriggerMode;<CR><LF>
+Receive <ACK>;0000;trigger1fall;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+52
+
+68. SetStartTrigger Mode ;
+Sets the StartTrigger Mode of the active Configuration (ProductRegistration)
+Command arguments:
+TriggerMode
+TriggerMode: trigger1fall , trigger1raise, auto or program
+Case sensitive
+Result arguments:
+None
+Limitation:
+Changes to Configurations can only be processed if marking is sto pped
+Timing hints:
+Changes to Configurations will force the Laser to update every Template using the same Configuration
+Example:
+Send SetStartTriggerMode;auto;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+69. SetConsecutiveTrigger Mode ;
+Sets the ConsecutiveTrigger Mode of the active Configuration (ProductRegistration)
+Command arguments:
+TriggerMode
+TriggerMode: none , trigger1fall , trigger1raise, auto or program
+Case sensitive
+Result arguments:
+None
+Limitation:
+Changes to Configurations can only be processed if marking is stopped
+Timing hints:
+Changes to Configurations will force the Laser to update every Template using the same Configuration
+Example:
+Send SetConsecutiveTriggerMode;trigger1raise;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+53
+
+70. SetStopTrigger Mode ;
+Sets the StopTrigger Mode of the active Configuration (ProductRegistration)
+Command arguments:
+TriggerMode
+TriggerMode: none , trigger1fall or trigger1raise
+Case sensitive
+Result arguments:
+None
+Limitation:
+Changes to Configurations can only be processed if marking is stopped
+Timing hints:
+Changes to Configurations will force the Laser to update every Template using the same Configuration
+Example:
+Send SetStopTriggerMode;none;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+54
+
+71. GetProductRegistrationMode ;
+Returns the mode of product movement of the active Configuration (ProductRegistration)
+Command arguments:
+None
+Result arguments:
+Mode
+Mode: None, FixedSpeed or Encoder
+Case sensitive
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetProductRegistrationMode ;<CR><LF>
+Receive <ACK>;0000; FixedSpeed ;<CR><LF>
+72. SetProductRegistrationMode ;
+Sets the mode of product movement of the active Configuration (ProductRegistration)
+Command arguments:
+Mode
+Mode: None, FixedSpeed or Encoder
+Case sensitive
+Result arguments:
+None
+Limitation:
+Changes to Configurations can only be processed if marking is stopped
+Timing hints:
+Changes to Configurations will force the Laser to update every Template using the same Configuration
+Example:
+Send SetProductRegistrationMode;Encoder;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+55
+
+73. GetFixedSpeed ;
+Returns the movement value for “Fixed Speed” setup
+Command arguments:
+None
+Result arguments:
+Speed
+Speed: Data Type Integer, Value Type 1/1000 mm/s
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetFixedSpeed;<CR><LF>
+Receive <ACK>;0000;10000;<CR><LF>
+74. SetFixedSpeed ;
+Sets the movement value for “Fixed Speed” setup
+Command arguments:
+Speed
+Speed: Data Type Integer, Value Type 1/1000 mm/s
+Result arguments:
+None
+Limitation:
+Changes to ProductRegistration can only be processed if marking is stopped
+Timing hints:
+None
+Example:
+Send SetFixedSpeed;10000;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+56
+
+75. GetMovementAngle ;
+Returns the angle between laser and direction of product movement
+Command arguments:
+None
+Result arguments:
+Angle
+Angle: Data Type Double, Value Range - 360 to 360
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetMovementAngle;<CR><LF>
+Receive <ACK>;0000;50;<CR><LF>
+76. SetMovementAngle ;
+Sets the angle between laser and direction of product movement
+Command arguments:
+Angle
+Angle: Data Type Double, Value Range - 360 to 360
+Result arguments:
+None
+Limitation:
+Change to ProductRegistration can only be processed if marking is stopped
+Timing hints:
+None
+Example:
+Send SetMovementAngle;50;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+57
+
+77. GetGlobalCounter;
+Returns the Global Marking Counter
+Command arguments:
+None
+Result arguments:
+Countervalue
+Data Type Integer
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetGlobalCounter;<CR><LF>
+Receive <ACK>;0000;1534932;<CR><LF>
+78. GetMarkingCounter;
+Returns the Marking Counter
+Command arguments:
+None
+Result arguments:
+Countervalue
+Data Type Integer
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetMarkingCounter;<CR><LF>
+Receive <ACK>;0000;50;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+58
+
+79. GetProductCounter;
+Returns the Product Counter
+Command arguments:
+None
+Result arguments:
+Countervalue
+Data Type Integer
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send GetProductCounter;<CR><LF>
+Receive <ACK>;0000;50;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+59
+
+80. ResetMarking Counter;
+Resets the Marking Counter to 0
+Command arguments:
+None
+Result arguments:
+None
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send ResetMarkingCounter;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+81. ResetProduct Counter;
+Resets the Product Counter to 0
+Command arguments:
+None
+Result arguments:
+None
+Limitation:
+None
+Timing hints:
+None
+Example:
+Send ResetProductCounter;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+60
+
+82. GetLotSize;
+Returns the size of lot
+Command arguments:
+None
+Result arguments:
+Lot
+Data Type Integer
+Limitation:
+Value Range 0 - 999999999
+Timing hints:
+None
+Example:
+Send GetLotSize;<CR><LF>
+Receive <ACK>;0000;50;<CR><LF>
+83. SetLotSize;
+Sets the size of lot
+Once amount of lot is processed, the lasers stops
+Command arguments:
+Lot
+Data Type Integer
+Result arguments:
+None
+Limitation:
+Value Range 0 - 999999999
+Timing hints:
+None
+Example:
+Send SetLotSize;50;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+61
+
+84. GetLotCounter;
+Returns the current counter of lot
+Command arguments:
+None
+Result arguments:
+LotCounter
+Data Type Integer
+Limitation:
+Value Range 0 - 999999999
+Timing hints:
+None
+Example:
+Send GetLotCounter;<CR><LF>
+Receive <ACK>;0000;30;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+62
+
+85. AddBufferData ;
+Enabled ValueQueues - Feature for given external text variable and appends values to its buffer
+Command arguments:
+Variable1;Value1;Value2;…ValueX;<TAB>Variable2;Value1;Value2;…;ValueX;
+Result arguments:
+None
+Limitation:
+Applicable for External Text (Prompt)
+Timing hints:
+It is recommended to send 100 values each variable within 1 command.
+The more values are in the buffer, the more time does it take to process.
+There is no benefit if amount of buffer values is less than 20 - use SetVars or SetVarsAsync instead
+Examp le:
+Send AddBufferData;Var1;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20 ;<CR><LF>
+Receive <ACK>;0000 ;<CR><LF>
+86. ClearBufferData;
+Removes all values from the buffer and disables the ValueQueue - feature for the given variable or, if no
+command arguments are defined, for every external Text variable within the template
+Command arguments:
+Varname
+Result arguments:
+None
+Limitation:
+Applicable for External Text (Prompt)
+Timing hints:
+The more values are in the buffer, the more time does it take to process.
+Example:
+Send ClearBufferData;Var1;Var2;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Send ClearBufferData;<CR><LF>
+Receive <ACK>;0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+63
+
+87. GetRemainingBufferAmount;
+Returns the amount of elements in the buffer of the given external text variable
+Command arguments:
+Varname
+Result arguments:
+Amount
+Amount: Data Type Integer - Amount of elements left in the buffer
+Limitation:
+Applicable for External Text (Prompt)
+QMark higher or equal version x.x.x.x
+CMark higher or equal version x.x.x.x
+Timing hints:
+The more values are in the buffer, the more time does it take to process.
+Example:
+Send GetRemainingBufferAmount;Var1;<CR><LF>
+Receive <ACK>;0000;240;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+64
+
+3. Event Port
+Ultimate with TCP/IP interface provides a n event port for pushed information.
+Event Port is not available on legacy Extension - Files: SPEU3Extension.tcl
+By default it is provided on TCP/IP port 20003 .
+1. Template Changed
+Notification is sent once another template is selected
+DataString:
+Event;TemplateChanged;<CR><LF>
+Example:
+Event;TemplateChanged;<CR><LF>
+2. Status Changed
+Notification is sent once the laser status changed
+DataString:
+Event;StatusChanged;[LaserStatus] ;[LaserStatusCode] ;<CR><LF>
+Example:
+Event;StatusChanged;LaserStatusReady; 0; <CR><LF>
+3. Set Async Value
+Notification is sent once a value is set from SetVarsAsync command
+Data String:
+Event;ValueSet;[Varname] ;[Value] ;[ResultCode];<CR><LF>
+Example:
+Event;ValueSet;Var1; abc; 0000;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+65
+
+4. Productcounter Value Changed
+Notification is sent once the ProductCount er has changed
+Data String:
+Event;ProductCounterChanged;[ProductCounter];<CR><LF>
+Example:
+Event; Product CounterChanged;200;<CR><LF>
+5. Markingcounter Value Changed
+Notification is sent once the MarkingCounter has changed
+Data String:
+Event;MarkingCounterChanged;[MarkingCounter];<CR><LF>
+Example:
+Event;MarkingCounterChanged;100;<CR><LF>
+6. MarkResult Good Bad
+Notification is sent for each marking to identify if marking successfully processed
+Data String:
+Event;MarkResult;[Result];<CR><LF>
+Example:
+Event;MarkResult;Good;<CR><LF>
+Event;MarkResult;Bad;<CR><LF>
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+66
+
+4. Error Codes
+1. General Errors
+ResultCode ErrorCode Name
+0000 0 OK
+0001 1 OK
+0 0 0 2 2 I n te r f a c e B us y
+9C40 40000 Unknown Error
+9C41 40001 Unknown Comm and
+9C42 40002 Not Connected To Laser
+9C4D 40013 Unknown SystemState Error
+9C50 40016 LaserState Change Error
+B3B0 46000 XML Parse Error
+2. Database Errors
+ResultCode ErrorCode Name
+9CA5 40101 Database Fatal Error
+9CA6 40102 Database Template Not Found
+9CA8 40104 Database Variable Not Found
+9CAB 40107 Database Parameter Set Not Found
+9CAC 40108 Database Configuration Not Found
+9CAE 40110 Database Index Not Found
+9CB0 40112 Database Delete Database Object In Use
+9CB1 40113 Database Delete Error
+9CB7 40119 Database Database Object Exists Error
+9CBA 40122 Database Database Object Not Found
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+67
+
+3. Command Errors
+ResultCode ErrorCode Name
+A029 41001 Command Action Error
+A02A 41002 Command Location Error
+A02B 41003 Command Element Error
+A02F 41007 Command LaserMarking Error
+A030 41008 Command Invalid Timezone Error
+A031 41009 Command Invalid Language Error
+A032 41010 Command Invalid Time Error
+A035 41013 Command Invalid In Current LaserState Error
+A037 41015 Command Invalid Node Content Error
+A038 41016 Command Delete ErrorMessages Error
+A03B 41019 Command Value Out Of Range Error
+4. TCL Errors
+ResultCode ErrorCode Name
+AB7C 43900 TCL Communication Interrupted Error
+AB7D 43901 TCL Parse Error
+AB7E 43902 TCL Invalid State Error
+AB7F 43903 TCL UnknownCommand Error
+AB80 43904 TCL Parameter not allowed
+5. XPath Errors
+ResultCode ErrorCode Name
+AFDF 45023 Xpath Not Exists Error
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+68
+
+5. VisualStudio - Example
+Definition of Ultimate - TCP - Client:
+Initialization of Ultimate - TCP - Client:
+Connecting Ultimate - TCP - Client:
+Sending Command:
+Receive Answer:
+Sending Specific Command and receive answer:
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+69
+
+Complete Source:
+Front - End:
+< Window x : Class ="UltimateSample.MainWindow"
+xmlns ="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns : x ="http://schemas.microsoft.com/winfx/2006/xaml"
+Title ="MainWindow" Height ="350" Width ="525">
+< Grid >
+< Grid.RowDefinitions >
+< RowDefinition Height ="20"></ RowDefinition >
+< RowDefinition Height ="Auto"></ RowDefinition >
+< RowDefinition Height ="Auto"></ RowDefinition >
+< RowDefinition Height ="20"></ RowDefinition >
+</ Grid.RowDefinitions >
+< Grid.ColumnDefinitions >
+< ColumnDefinition Width ="20"></ ColumnDefinition >
+< ColumnDefinition Width ="Auto"></ ColumnDefinition >
+< ColumnDefinition Width ="20"></ ColumnDefinition >
+</ Grid.ColumnDefinitions >
+< StackPanel Grid.Row ="1" Grid.Column ="1" IsEnabled ="{ Binding CanConnect ,
+RelativeSource ={ RelativeSou rce AncestorType =Window}}" Margin ="3">
+< Grid >
+< Grid.ColumnDefinitions >
+< ColumnDefinition Width ="Auto"></ ColumnDefinition >
+< ColumnDefinition ></ ColumnDefinition >
+</ Grid.ColumnDefinitions >
+< Grid.RowDefinitions >
+< RowDefinition Height ="Auto"></ RowDefinition >
+< RowDefinition Height ="Auto"></ RowDefinition >
+< RowDefinition Height ="Auto"></ RowDefinition >
+</ Grid.RowDefinitions >
+< Label Content ="IP Address" Grid.Row ="0" Grid.Column ="0" Margin ="3"></ Label >
+< TextBox Name ="textBoxIPAddress" Grid.Row ="0" Grid.Column ="1" Text ="192.168.1.1" Margin ="3"></ TextBox >
+< Label Content ="Port" Grid.Row ="1" Grid.Column ="0" Margin ="3"></ Label >
+< TextBox Name ="textBoxPort" Grid.Row ="1" Grid.Column ="1" Text ="20001" Margin ="3"></ TextBox >
+< Button Content ="Connect" Name ="btConnect" Grid.Row ="2" Grid.Column ="0" Grid.ColumnSpan ="2"
+Click ="btConnect_Click" Margin ="3"></ Button >
+</ Grid >
+</ StackPanel >
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+70
+
+< StackPanel Grid.Column ="1" Grid.Row ="2" IsEnabled ="{ Binding Connected ,
+RelativeSource ={ RelativeSource AncestorType =Window}}" Margin ="3">
+< Grid >
+< Grid.ColumnDefinitions >
+< ColumnDefinition Width ="Auto"></ ColumnDefinition >
+< ColumnDefinition ></ ColumnDefinition >
+< / Grid.ColumnDefinitions >
+< Label Content ="Result" Grid.Column ="0" Margin ="3"></ Label >
+< TextBox Name ="tbResultCode" IsReadOnly ="True" Grid.Column ="1" Margin ="3"></ TextBox >
+</ Grid >
+< Button Content ="GetStatus" Name ="btGetStatus" Click ="btGetStatus_Click"></ Button >
+< Grid >
+< Grid.ColumnDefinitions >
+< ColumnDefinition Width ="Auto"></ ColumnDefinition >
+< ColumnDefinition ></ ColumnDefinition >
+< ColumnDefinition Width ="Auto"></ ColumnDefinition >
+</ Grid.ColumnDefinitions >
+< Label Content ="Templatename" Margin ="3"></ Label >
+< TextBox Grid.Column ="1" Name ="tbTemplate" Margin ="3"></ TextBox >
+< Button Name ="btSelectTemplate" Grid.Column ="2" Content ="SetTemplate" Margin ="3"
+Click ="btSelectTemplate_Click" ></ Button >
+</ Grid >
+< Grid >
+< Grid.ColumnDefinitions >
+< ColumnDefinition Width ="Auto"></ ColumnDefinition >
+< ColumnDefinition ></ ColumnDefinition >
+< ColumnDefinition Width ="Auto"></ ColumnDefinition >
+</ Grid.ColumnDefinitions >
+< Grid.RowDefinitions >
+< RowDefinition Height ="Auto"></ RowDefinition >
+< RowDefinition Height ="Auto"></ RowDefinition >
+</ Grid.RowDefinitions >
+< Label Content ="Variable Name" Margin ="3"></ Labe l >
+< TextBox Grid.Column ="1" Name ="tbVarname" Margin ="3"></ TextBox >
+< Label Content ="Variable Content" Grid.Row ="1" Margin ="3"></ Label >
+< TextBox Grid.Column ="1" Grid.Row ="1" Name ="tbVarvalue" Margin ="3"></ TextBox >
+< Button Name ="btSetVarValue" Grid.Row ="1" Grid.Column ="2" Content ="SetVarValue" Margin ="3"
+Click ="btSetVarValue_Click"></ Button >
+</ Grid >
+</ StackPanel >
+</ Grid >
+</ Window >
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+71
+
+Code - Behind:
+using System.ComponentModel;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+using System.Windows;
+namespace UltimateSample
+{
+/// <summary>
+/// Interaktionslogik für MainWindow.xaml
+/// </summary>
+public partial class MainWindow : Window , INotifyPropertyChanged
+{
+private TcpClient _ultimateInterface;
+public MainWindow()
+{
+InitializeComponent();
+}
+public bool Connected
+{
+get
+{
+return _ultimateInterface != null && _ultimateInterface.Connected;
+}
+}
+public bool CanConnect
+{
+get
+{
+return !Connected;
+}
+}
+private void btSetVarValue_Click( object sender, RoutedEventArgs e)
+{
+if (!Connected)
+return ;
+SendCommand( "SetVars;" + tbVarname.Text + ";" + tbVarvalue.Text + "; \ r \ n" );
+ReadResult();
+}
+private void btSelectTemplate_Click( object sender, RoutedEventArgs e)
+{
+if (!Connected)
+return ;
+SendCommand( "SetJob;" + tbTemplate.Text + "; \ r \ n" );
+ReadResult();
+}
+private void btGetStatus_Click( object sender, RoutedEventArgs e)
+{
+if (!Connected)
+return ;
+SendCommand( "GetStatus; \ r \ n" );
+ReadResult();
+}
+private void SendCommand( string comman dText)
+{
+byte [] commandBytes = Encoding .UTF8.GetBytes(commandText);
+_ultimateInterface.GetStream().Write(commandBytes, 0, commandBytes.Length);
+}
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+72
+
+private void ReadResult()
+{
+byte [] buffer = new byte [1024];
+int amount = _ultimateInterface.GetStream().Read(buffer, 0, buffer.Length);
+string resultData = Encoding .UTF8.GetString(buffer, 0, amount);
+resultData = resultData.Replace( (( char )10).ToString(), "<LF>" );
+resultData = resultData.Replace((( char )13).ToString(), "<CR>" );
+resultData = resultData.Replace((( char )06).ToString(), "<ACK>" );
+resultData = resultData.Replace((( char )21).ToString(), "<NAK>" );
+tbResultCode.Text = resultData;
+}
+private void btConnect_Click( object sender, RoutedEventArgs e)
+{
+if (Connected)
+return ;
+_ultimateInterface = new TcpClient ();
+try
+{
+_ultimateInterface.Connect( new IPEndPoint
+( IPAddress .Parse(textBoxIPAddress.Text), int .Parse(textBoxPort.Text)));
+}
+catch
+{
+_ultimateInter face = null ;
+}
+NotifyPropertyChanged( "Connected" );
+NotifyPropertyChanged( "CanConnect" );
+}
+#region INotifyPropertyChanged Member
+public event PropertyChangedEventHandler PropertyChanged;
+private void NotifyPropertyChanged( string name)
+{
+if (PropertyChanged != null )
+PropertyChanged( this , new PropertyChangedEventArgs (name));
+}
+#endregion
+}
+}
+Erstellt Geprüft Datei:
+am: 29.02.2016 29 .11 .201 7 Specification_Ultimate_V1.6.6_Videojet.docx
+von: Lindemann, André Alexander Reinhard Revisionsstand: 6
+73
+
++A[_a|17~@ &cc@CUTA@?>=<;:987543210/.-,+*
+&
+- !#"#

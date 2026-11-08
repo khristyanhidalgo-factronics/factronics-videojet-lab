@@ -50,14 +50,17 @@
       "descripcion": "Curso TTO serie 6x30: Partes-Pecas, Ribbons, Manuales, Boletines Tecnicos, Instrucciones, Software 63-6530, dibujos y presentaciones",
       "cubre": [
         "TTO"
-      ]
+      ],
+      "estado_extraccion": "Ribbons estructurados (datos/tto_ribbons.json: 64 grados, 694 items, matrices, logica de lote) y 163/163 PDFs de la carpeta extraidos con el extractor visual v3 (156 con texto OK, 7 sin texto): boletines tecnicos, manuales, instrucciones, dibujos y partes. Extras: manuales de operador 6330/6530 y las 12 instrucciones 463xxx descifrados (AES-128)."
     },
     {
       "id": "laser-documentacion",
-      "descripcion": "Carpeta de documentacion laser del equipo (a inventariar en Fase 1)",
+      "descripcion": "Documentacion laser del equipo: 1.908 archivos en 7 subcarpetas (accesorios laser 776, ALLPRINT DN-A LN-A 519, manuales co2 156, manuales fibra 151, ENTRENAMIENTO 133, drawings co2 94, drawings fibra 79).",
       "cubre": [
         "LASER"
-      ]
+      ],
+      "estado_extraccion": "COMPLETO: 1.253/1.253 PDFs procesados con el extractor visual v3 (descifrado RC4/AES-128/AES-256 incluido): 1.165 con texto OK, 28 con texto escaso y 60 sin texto (escaneados). 20+ millones de caracteres en datos/extraccion/laser_*.txt; inventario con estado por archivo en datos/laser_inventario.json.",
+      "aviso": "los 60 sin texto parecen escaneados (requieren OCR). ZIP/EXE solo se inventarian. Manuales de competencia/terceros se conservan como referencia del curso, no como dato Videojet."
     },
     {
       "id": "web-oficial",
@@ -122,6 +125,20 @@
       "estado": "inventario-parcial",
       "fuente": "API de GitHub del repo Proyecto-Simplicity-Global (rama main)",
       "resumen": "repo global de contenido Videojet: 3 commits = partes 1-3 de 12; arbol actual con 3 archivos (CAD STEP 1580 ~86 MB, competencia Leibinger ~85 MB, seguridad industrial ~102 MB); clasificacion por tecnologia y foco TTO/CIJ/LASER."
+    },
+    "tto_ribbons": {
+      "archivo": "datos/tto_ribbons.json",
+      "tecnologia": "TTO",
+      "estado": "verificado",
+      "fuente": "Videojet Ribbon and Label Chart - 2.5.26.xlsx (curso TTO 6x30, carpeta Ribbons) - extraccion directa de celdas con tools/leer_excel.py + tools/estructurar_tto_ribbons.py",
+      "resumen": "64 grados de ribbon (PN, aplicaciones, sustratos, colores, velocidad max, negrura Macbeth, durabilidad, resistencia termica, tipo, film base); 694 items de suministros TTO (item_no + descripcion); longitudes/anchos estandar y no estandar por impresora y grado; logica de lote."
+    },
+    "laser_inventario": {
+      "archivo": "datos/laser_inventario.json",
+      "tecnologia": "LASER",
+      "estado": "extraccion-completa-pdfs",
+      "fuente": "carpeta documentacion laser del equipo (1.908 archivos)",
+      "resumen": "anticipo: 1.908 archivos inventariados; 1.253 PDFs extraidos (1.165 OK, 28 escasos, 60 sin texto/escaneados) con extractor visual v3 y descifrado completo RC4/AESV2/AESV3. Manuales CO2/Fibra, entrenamiento, Allprint, accesorios y drawings."
     }
   },
   "tecnologias": [

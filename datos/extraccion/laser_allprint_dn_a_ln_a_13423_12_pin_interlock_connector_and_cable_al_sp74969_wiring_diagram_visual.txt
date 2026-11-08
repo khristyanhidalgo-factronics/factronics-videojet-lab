@@ -1,0 +1,77 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\13423-12 Pin Interlock Connector And Cable AL-SP74969 Wiring Diagram.pdf
+# cifrado=False bloques=3 caracteres=4188
+
+15/06/2023, 10:02 Knowledge Article
+12 Pin DIN Interlock Connector and
+Cable AL-SP74969 Wiring Diagram &
+Pinout
+C o n t e n t
+T i t l e 12 Pin DIN Interlock Connector and Cable AL-SP74969 Wiring Diagram & Pinout
+C o n t e n t
+1 2 P i n D I N I n t e r l o c k C o n n e c t o r a n d C a b l e A L - S P 7 4 9 6 9 W i r i n g
+D i a g r a m & P i n o u t
+The standard interlock uses a 12 pin connector on the rear panel of the supply unit. In addition to
+connecting the Interlock Out and Interlock Return signals to desired interlock safety switch, the T rigger
+Enable to 24VDC signal should also be bridged on this connector or the laser will not fire.
+W i r i n g D i ag r am f o r 12 P i n I n t er l o ck C a b l e
+Pin W ire Color Use/Description
+A White 30V for Interlock Out
+B Brown Interlock Return
+C Green System 12/24V
+D Y ellow System Ground
+E Gray T rigger Enable
+F Pink Used for K40 Interlock Option
+G Blue Used for K40 Interlock Option
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/12-Pin-DIN-Interlock-Connector-and-Cable-AL-SP74969-Wiring-Diagram-and-Pinou … 1 /3
+H Red Used for K40 Interlock Option
+J Black Used for K40 Interlock Option
+K V iolet Used for K40 Interlock Option
+L Not used -
+M Not used -
+T rigger Enable signal must be bridged to 24V either:
+In the cable (gray wire to green wire) or ,
+In connector , or on ACC board Customer Interface section.
+P i n A ssi g n m en t f o r 12 W ay C o n n ect o r w i t h c a b l e ( P i n S i d e / M a l e S i d e V i e w )
+N o t es o n I n st al l at i o n
+
+15/06/2023, 10:02 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/12-Pin-DIN-Interlock-Connector-and-Cable-AL-SP74969-Wiring-Diagram-and-Pinou … 2 /3
+The following Figure shows an example of a standard interlock switch connected using the 12-way
+DIN plug with cable. Notice that the T rigger Enable signal is bridged with 24VDC (Green wire to Gray
+wire). This T rigger Enable signal must be tied to 24VDC either in the cable, connector , or on the
+customer interface section of the ACC board in order to fire the laser . Symptoms of T rigger Enable not
+being tied to 24V include Start button in SmartGraph being grayed out (inactive) resulting in inability to
+fire laser .
+There is a jumper plug included with all out of box 3130/3330 lasers that bridge both the interlock and
+T rigger Enable signals when this plug is in place.
+W arning - Personal Injury
+Use caution if this jumper plug is in use. When the jumper plug is connected the interlock is
+bypassed and the laser can be fired with the interlock open .
+A r t i c l e M e t a d a t a
+U R L N a m e 12-Pin-DIN-Interlock-Connector-and-Cable-AL-SP74969-Wiring-Diagram-and-Pinout
+P e r m a n e n t U R L
+Right click and copy link to share this Article's URL
+f o r L i g h t n i n g
+V i s i b l e I n I n t e r n a l
+A p p
+V i s i b l e t o P a r t n e r
+V i s i b l e t o
+C u s t o m e r
+A r t i c l e R e c o r d
+Product Data
+T y p e
+V a l i d a t i o n S t a t u s Approved - Internal FS Use
+
+15/06/2023, 10:02 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/12-Pin-DIN-Interlock-Connector-and-Cable-AL-SP74969-Wiring-Diagram-and-Pinou … 3 /3
+P u b l i c a t i o n S t a t u s Published
+V i s i b l e I n P u b l i c
+K n o w l e d g e B a s e
+I n t e r n a l D a t a
+I n t e r n a l C o m m e n t s
+D i s c l a i m e r
+T h e c o n t e n t s o f t h i s e m a i l a n d a n y a t t a c h m e n t s a r e p r o v i d e d a s a c o n v e n i e n c e t o V i d e o j e t c u s t o m e r s t o h i g h l i g h t
+u s e f u l i n f o r m a t i o n a n d t r o u b l e s h o o t i n g t i p s . W h e n w o r k i n g w i t h a p r o d u c t , a l w a y s c o n s u l t t h e p r o d u c t u s e r m a n u a l
+a n d f o l l o w t h e p r o d u c t s a f e t y p r e c a u t i o n s a n d r e c o m m e n d a t i o n s , i n c l u d i n g u s i n g P e r s o n a l P r o t e c t i v e E q u i p m e n t
+w h e n n e c e s s a r y . I f y o u h a v e a n y q u e s t i o n s o r a r e n o t e x p e r i e n c e d i n u s i n g o r s e r v i c i n g V i d e o j e t e q u i p m e n t ,
+c o n t a c t V i d e o j e t f o r a s s i s t a n c e .

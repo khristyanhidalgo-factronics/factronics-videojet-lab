@@ -1,0 +1,226 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\Nueva carpeta\18033-Troubleshooting Shutter Faults 7230, 7330, 7510, 7610 (Eng).pdf
+# cifrado=False bloques=10 caracteres=11815
+
+30/06/2023, 10:57 Knowledge Article
+T roubleshooting Shutter Faults (7230,
+7330, 7510, 7610)
+C o n t e n t
+T i t l e T roubleshooting Shutter Faults (7230, 7330, 7510, 7610)
+C o n t e n t
+T r o u b l e s h o o t i n g S h u t t e r F a u l t s ( 7 2 3 0 , 7 3 3 0 , 7 5 1 0 , 7 6 1 0 )
+The following faults are considered marking head faults when there is a loss of communications
+between the galvo assembly and the Chameleon board.
+S ym p t o m s
+Laser System boots and one or more of the following is asserted.
+E9004: Marking head: Overcurrent X mirror
+E9005: Marking head: Overcurrent Y mirror
+E9006: No X - mirror connected
+E9007: No X - mirror connected
+E10302: Shutter does not stay open
+E10303: Shutter does not stay closed
+ Shock Hazard W arning
+Lethal voltages are present within this equipment when it is connected to the mains electrical
+supply .
+T o o l s
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Shutter-Faults-7230-7330-7510-7610/p 1 /10
+Complete metric Allen wrench set (required)
+V olt meter , for measuring voltages.
+Flashlight
+D i ag n o st i cs
+1. V erify Laser Configuration
+V erifying Laser Configuration via Laser W eb Interface
+V erifying Laser Configuration via TCS Plus
+V erifying Laser Configuration via Smartgraph
+V erifying Laser Configuration via CLARiTY Laser Controller (CLC)
+2. V erify the CP-Light Board Cable Connections (7230/7330)
+3. V erify the CP-10 board Cable Connections (7510/7610)
+4. V erify CP Light board Functionality 7230/7330
+5. V erify CP-10 Board Functionality (7510/7610)
+6. V erify the Power Supply
+V erify the Power Supply (7230/7330)
+V erify the Power Supply (7510/7610)
+7. V erify HIC Board Functionality
+V erify HIC Board Functionality (7230, 7330)
+V erify HIC Board Functionality (7510/7610)
+V e r i f y i n g L a s e r C o n f i g u r a t i o n v i a L a s e r W e b I n t e r f a c e
+1. Select Laser | Configuration . Y ou can view the current configuration without logging in, but
+to make changes you must log in by c licking Log In in the upper right of the page and
+entering credentials.
+
+30/06/2023, 10:57 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Shutter-Faults-7230-7330-7510-7610/p 2 /10
+2. V erify the Laser unit and marking head configured are correct.
+3. If not, make any necessary corrections.
+4. Save the configuration and power cycle the laser unit.
+V e r i f y i n g L a s e r C o n f i g u r a t i o n v i a T C S P l u s
+1. Select the Settings and T ools Icon.
+2. Select Laser Unit Settings.
+3. Check the setting in Laser T ype and if incorrect, reselect the correct model from the
+dropdown selector .
+4. Check the setting in Marking Head and if incorrect, reselect the correct type from the
+dropdown selector .
+V e r i f y i n g L a s e r C o n f i g u r a t i o n v i a S m a r t g r a p h
+1. Select Configuration | Marking Head.
+2. Check the setting in the Marking Head field and if incorrect, reselect the correct type from
+the dropdown selector .
+
+30/06/2023, 10:57 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Shutter-Faults-7230-7330-7510-7610/p 3 /10
+V e r i f y i n g L a s e r C o n f i g u r a t i o n v i a C L A R i T Y L a s e r C o n t r o l l e r ( C L C )
+Y ou can check these settings using the CLC, but you cannot change them. T o make changes, use a
+laptop or other available PC to connect to the Laser W eb Interface.
+1. Select T ools | Diagnostics | Control | Laser Information .
+2. Check that the Printer Model setting is correct , e.g. 7510.
+3. Select T ools | Diagnostics | Printhead .
+4. Check that Scanner is set to the correct marking head, e.g. SHC60E
+V e r i f y t h e C P - L i g h t B o a r d C a b l e C o n n e c t i o n s ( 7 2 3 0 / 7 3 3 0 )
+ Shock Hazard W arning
+Lethal voltages are present within this equipment when it is connected to the mains electrical
+supply .
+
+30/06/2023, 10:57 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Shutter-Faults-7230-7330-7510-7610/p 4 /10
+Power of f and remove the plug from the outlet.
+1. Power the laser unit OFF .
+2. Unplug the unit from mains power .
+3. Remove the supply unit cover .
+4. Locate CP-Light board in the supply unit.
+5. Disconnect and reconnect all the connections going to the CP-Light board.
+6. Disconnect and reconnect the Ethernet cable from HIC board.
+V e r i f y t h e C P - 1 0 b o a r d C a b l e C o n n e c t i o n s ( 7 5 1 0 / 7 6 1 0 )
+The CP-10 board is located in the marking head, which you must open to proceed.
+ Shock Hazard W arning
+Lethal voltages are present within this equipment when it is connected to the mains electrical
+supply .
+1. Power the laser unit OFF .
+2. Unplug the unit from mains power .
+3. Remove the 4, 3mm Allen screws holding the top cover of marking head.
+
+30/06/2023, 10:57 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Shutter-Faults-7230-7330-7510-7610/p 5 /10
+4. Remove the 3, 3mm Allen screws holding the plastic cover and remove the cover .
+5. Remove and re-insert the Ethernet cable and connectors all located on the CP-10 board.
+6. Disconnect and reconnect the connections from the HIC & LIC.
+
+30/06/2023, 10:57 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Shutter-Faults-7230-7330-7510-7610/p 6 /10
+7. If you have a spare CA T5 or CA T7 non-crossover Ethernet cable, connect from the HIC
+board to the CP board located in the marking head.
+HIC Board (Located in supply CP-10 Board: (Located in marking
+unit) head)
+V e r i f y C P L i g h t b o a r d F u n c t i o n a l i t y 7 2 3 0 / 7 3 3 0
+ Shock Hazard W arning
+Lethal voltages are present within this equipment when it is connected to the mains electrical
+supply .
+V erify the the LEDs illuminate as expected.
+1. With the supply unit cover open, power the unit ON.
+2. Observe the CP-Light board and whether its LEDs illuminate. LEDs are illuminated, the
+board is functioning.
+3. If the LEDs are not working, replace the galvo assembly or contact T echnical Support.
+T able 1: Fiber Laser 7x30/Y .0200-S Active Parts
+P/N Description
+AL-SP79369 Block, Galvo, W . Galvo, SHF60B
+AL-SP79351 Block, Galvo, W . Galvo, SHF100B
+V e r i f y C P - 1 0 B o a r d F u n c t i o n a l i t y ( 7 5 1 0 / 7 6 1 0 )
+
+30/06/2023, 10:57 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Shutter-Faults-7230-7330-7510-7610/p 7 /10
+ Shock Hazard W arning
+Lethal voltages are present within this equipment when it is connected to the mains electrical
+supply .
+V erify the the LEDs illuminate as expected.
+1. With the marking head open and the CP-10 board exposed, power the unit ON.
+2. Observe the CP-10 board and whether its LEDs illuminate. If the LEDs are illuminated, the
+board is functioning.
+If the LEDs are not working, replace the Marking Head assembly (AL-75694 - Marking Head,
+V ideojet, CP10, G2) or contact T echnical Support.
+V e r i f y t h e P o w e r S u p p l y ( 7 2 3 0 / 7 3 3 0 )
+ Shock Hazard W arning
+Lethal voltages are present within this equipment when it is connected to the mains electrical
+supply . V oltage checks should only be performed by trained personnel .
+1. With the supply unit cover open, power the unit ON.
+2. Check for 48V on the X28 connector going to the marking head (Pins 6 and 12) - 48 volts
+plus 2.0 volts, minus 0 volts.
+3. Check for 24V to the shutter on the X28 connector (Pins 1 and 2).
+
+30/06/2023, 10:57 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Shutter-Faults-7230-7330-7510-7610/p 8 /10
+4. If no voltage is present at either check, replace the power supply . (FO-SP1 13944 - Mains,
+Supply , 200W , 48V) or contact T echnical Support.
+V e r i f y t h e P o w e r S u p p l y ( 7 5 1 0 / 7 6 1 0 )
+ Shock Hazard W arning
+Lethal voltages are present within this equipment when it is connected to the mains electrical
+supply .V oltage checks should only be performed by trained personnel.
+1. With the supply unit cover open, power the unit ON.
+2. Check for 48V to the marking head from X200 in the supply unit (Pins 2 and 7).
+3. If no voltage is present, replace the power supply (FO-1 1 1546 - Power Supply , 48V/130W
+[RoHS]) or contact T echnical Support.
+V e r i f y H I C B o a r d F u n c t i o n a l i t y ( 7 2 3 0 , 7 3 3 0 )
+ Shock Hazard W arning
+Lethal voltages are present within this equipment when it is connected to the mains electrical
+supply .
+
+30/06/2023, 10:57 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Shutter-Faults-7230-7330-7510-7610/p 9 /10
+Beam Hazard W arning
+Direct or diffuse laser radiation can inflict severe bodily damage, including, but not limited to,
+permanent eye damage or blindness, and severe burns to human or animal tissue. Always
+wear the appropriate eye protection when in the same area as an operating laser . Do not allow
+a direct or reflected beam to contact a person.
+Diligence and awareness are essential to prevent the beam from traveling beyond the intended
+work area.
+1. With the supply unit cover open, power the unit ON.
+2. Ensure the marking area is clear of hazards and turn the keyswitch to I.
+3. Inspect the HIC board. If either D1 (green) or D4 (amber) are illuminated, the board is
+functional.
+4. If neither LED illuminates as expected, replace the HIC board (FO-SP1 13952 - PCBA,
+Marking Head Interface, HIC-CP (HIC)) or contact T echnical Support.
+V e r i f y H I C B o a r d F u n c t i o n a l i t y ( 7 5 1 0 , 7 6 1 0 )
+ Shock Hazard W arning
+Lethal voltages are present within this equipment when it is connected to the mains electrical
+supply .
+Beam Hazard W arning
+Direct or diffuse laser radiation can inflict severe bodily damage, including, but not limited to,
+permanent eye damage or blindness, and severe burns to human or animal tissue. Always
+wear the appropriate eye protection when in the same area as an operating laser . Do not allow
+a direct or reflected beam to contact a person.
+Diligence and awareness are essential to prevent the beam from traveling beyond the intended
+work area.
+1. With the supply unit cover open, power the unit ON.
+2. Ensure the marking area is clear of hazards and turn the keyswitch to I.
+3. Inspect the HIC board. If either D1 (green) or D4 (amber) are illuminated, the board is
+functional.
+
+30/06/2023, 10:57 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Shutter-Faults-7230-7330-7510-7610/p 10 /10
+4. If neither LED illuminates as expected, replace the HIC board (FO-1 12922 - Board, PCBA,
+Marking Head Interface, HIC-CP) or contact T echnical Support.
+T r i a g e N e x t S t e p s
+T r i a g e
+R e c o m m e n d e d
+P a r t s
+A r t i c l e M e t a d a t a
+U R L N a m e Shutter-Faults-7230-7330-7510-7610
+P e r m a n e n t U R L
+Right click and copy link to share this Article's URL
+f o r L i g h t n i n g
+V i s i b l e I n I n t e r n a l
+A p p
+V i s i b l e t o P a r t n e r
+V i s i b l e t o
+C u s t o m e r
+A r t i c l e R e c o r d
+Procedure
+T y p e
+V a l i d a t i o n S t a t u s Approved - External Use
+P u b l i c a t i o n S t a t u s Published
+V i s i b l e I n P u b l i c
+K n o w l e d g e B a s e
+I n t e r n a l D a t a
+I n t e r n a l C o m m e n t s
+A Customer facing Service Instruction for this article is available on SharePoint in the Customer Share
+Library .
+D i s c l a i m e r
+T he contents ofthis em ailand any attachm ents are provided as a convenience to V ideojetcustom ers to highlightusefulinform ation and troubleshooting tips.W hen w orking w ith a
+product,alw ays consultthe productuser m anualand follow the productsafety precautions and recom m endations,including using P ersonalP rotective E quipm entw hen necessary.If
+you have any questions or are notexperienced in using or servicing V ideojetequipm ent,contactV ideojetfor assistance.

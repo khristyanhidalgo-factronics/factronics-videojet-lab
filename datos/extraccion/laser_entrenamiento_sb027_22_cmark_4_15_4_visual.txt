@@ -1,0 +1,125 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\SB027.22-CMark 4.15.4.pdf
+# cifrado=False bloques=7 caracteres=5670
+
+MARKETING BULLETIN
+Editors Note: This Service Bulletin is an internal publication of the Laser Business Unit intended for its service channels. Thus, this bulcondential to the ALLTEC Laser Business Unit, all LBU sales/service partners and their resp. distributors and sales/service paletin is rtners. This publi-
+cation should not be copied in whole or part to any other party without the prior written consent of the Laser Business Unit. Aconfidential. s such this paper is
+
+#SB027.22 SERVICE BULLETIN
+Standard CMark Software Version 4.15.4
+Related Product(s): Videojet 7x10, 7x30, 7x40, 3x40
+FOBA C.0x02, Y.0200-S, Linx FSL, CSLY.0x00-xs, V.0xx1-gr
+ALLTEC GmbH | Laser Business Unit | International Service Center | service@alltec-laser.com | www.alltec-laser.comAn der Trave 27 -31 | 23 923 Selmsdorf | Germany | Phone + 49 (0) 388 23 . 55 - 0 | Fax - 222
+
+ALLTEC GmbH
+An der Trave 27-23923 Selmsdorf31
+GermanyT +49 38823 55- 0
+F +49 38823 55- 222
+CMark and SmartGraph
+Internal Release Notes
+VersionsCMark 4.15.4 and SmartGraph 10.17.2
+Copyright 2022ALLTEC GmbH | FOBA Laser Marking + Engraving. Confidential -Internal Use Only
+1
+Confidential - Company Proprietary
+
+ALLTEC GmbH
+An der Trave 27-23923 Selmsdorf31
+GermanyT +49 38823 55- 0
+F +49 38823 55- 222
+Contents
+CMark and SmartGraph...........................................................................................................................1
+Internal Release Notes.............................................................................................................................1
+Version CMark 4.15.4 and SmartGraph 10.17.2.......................................................................................1
+Closed Issues..........................................................................................................................................3
+Bugs.....................................................................................................................................................3
+New Features.......................................................................................................................................3
+Improvements......................................................................................................................................3
+Known Issues..........................................................................................................................................5
+Bugs.....................................................................................................................................................5
+Copyright 2022ALLTEC GmbH | FOBA Laser Marking + Engraving. Confidential -Internal Use Only
+2
+Confidential - Company Proprietary
+
+ALLTEC GmbH
+An der Trave 27-23923 Selmsdorf31
+GermanyT +49 38823 55- 0
+F +49 38823 55- 222
+Closed Issues
+Bugs
+Key Summary
+COS-2693, Date change offsets do not work correctly
+MOLSW - 13516
+COS-2689, Directed galvo movements to wrong position until an order was executed
+MOLSW - 13639
+GIVFPGA-143, SHC150C Overcurrent on Opening Shutter
+MOLSW - 13316
+COS - 2512 Pulse width boundaries are not set correctly
+COS - 2550 Marking f ield s izes may not round up due to precision in XML tree
+COS - 2555 Marking of empty template stuck
+COS - 2569 Display problem of Additional Information message parameter
+COS - 2570 Head sensor error does not always reoccur when confirmed
+CWI-454 Mx000-GR extension is displayed in Machine installation selection
+combobox
+CWI-456 CPLight4 and CPLight5 version are not displayed at CWI system
+information page
+SG - 3907 Remove/hide misleading controls for UV - Laser system s V.0020 - UV and
+V.0020 - UV_A
+SG - 4207 SG 10.16 can connect to incompatible CMark 4.9.5 and destroy the
+database.
+SG - 4208 Parameter set dialog displays CW, Grey and FPS correction settings on
+MATRIX sources
+SG - 4209 Marking field borders may not round up in Marking Head dialog due to
+precision
+SG - 4234 Bounding box doesn't match to bmp, jpg and gif logos after import
+New Features
+Key Summary
+DSP-531Perform Galvo Movement Monitoring during marking for CP Heads
+SG - 4198 ,
+Support of new FOBA V.0071laser types-gr, V.0141-gr,
+COS-COS2511-,2514
+COS-COS2510-,2513,
+COS-COS2549-,2507,
+MOLSW - 11093
+Improvements
+Key Summary
+DSP - 527 Pump Limits for Camelot should be changed
+Timing Issue Multicore with TCL commands SetPosition and SetRotation.
+COS-2396,
+MOLSW - 9930
+CMRK - 4889 Revert CPLight5 FPGA to older version
+Copyright 2022ALLTEC GmbH | FOBA Laser Marking + Engraving. Confidential -Internal Use Only
+3
+Confidential - Company Proprietary
+
+ALLTEC GmbH
+An der Trave 27-23923 Selmsdorf31
+GermanyT +49 38823 55- 0
+F +49 38823 55- 222
+COS - 2568 Interval for "Session Status Message" of VRS increased fr o m 5 to 10
+minutes
+Copyright 2022ALLTEC GmbH | FOBA Laser Marking + Engraving. Confidential -Internal Use Only
+4
+Confidential - Company Proprietary
+
+ALLTEC GmbH
+An der Trave 27-23923 Selmsdorf31
+GermanyT +49 38823 55- 0
+F +49 38823 55- 222
+Known Issues
+Bugs
+Key Summary
+CMRK - 4332 Encoder pulses will not be counted in state shutterlock open while
+using TriggerQueue(Important for LINX)
+Symptom Workaround
+Triggered products will be marked Avoid any movement of the
+on wrong position, in case that the conveyor is moved during conveyor during SHUTTERLOCK and INTERLOCK open.
+SHUTTERLOCK or INTERLOCK is
+open. No te :
+WTCS - 3982 DXF Import - Crash When Importing File
+Symptom Workaround
+In case the DXF file is loaded TCS+ Not available
+crashes and startsover.The import
+process failed.
+Copyright 2022ALLTEC GmbH | FOBA Laser Marking + Engraving. Confidential -Internal Use Only
+5
+Confidential - Company Proprietary

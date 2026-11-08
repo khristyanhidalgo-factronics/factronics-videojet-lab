@@ -1,0 +1,274 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\Nueva carpeta\AL-68872 installation and Setup.pdf
+# cifrado=False bloques=16 caracteres=12895
+
+AL-68872Service Instructions/Anleitung
+Installation and Setup of the Laser System Using the Handheld
+1 Installation and Setup of the Laser System Using the Handheld
+The following is required for installation and setup of the laser system:
+metric set of hex keys
+cross-head and slot-head screwdriver
+1.1 Installation and Testing of the Laser System
+1.Mount the laser system at the dedicated spot.Make sure that the working distance is set correctly.
+2.Mount the beam protection.
+3.Loosen both screws of the housing cover by a half-turn and open the cover.
+4.If existing, remove the bridge from connector X2 and connect the external interlock instead.
+5.Connect the handheld.
+6.Close the housing cover of the supply unit.
+7.Connect the mains line.
+8.Switch on the main switch and wait until the initialization of the laser system is completed(white LED is on).
+interlock
+handheld
+03/06 - Rev. AA 1
+
+AL - 68872
+Installation and Setup of the LaService Instructions/Anleitungser System Using the Handheld
+9.Switch on the key switch. In the header of the handheld the system status »Laser ready« is displayed.
+10.Select message »Testpattern« with the handheld and start a marking with button F3 (seemanual "Handheld").
+11.Check the marking for completeness.If the marking is not complete:
+- check the working distance, - make sure that there is not shading due to the beam protection and
+- make sure that the rotation of the marking field is 0°.
+2 03/06 - Rev. AA
+
+AL-68872Service Instructions/Anleitung
+Installation and Setup of the Laser System Using the Handheld
+1.2 Setup of the Laser System for Marking Non-Moving Products
+Examples for signal generators
+light barrierPLC
+DangerBefore starting any work the laser system must be dead!
+1.Turn the key switch to position »0«.Remove the key to ensure that the laser system cannot be switched on.
+2.Switch off main switch.
+3.Disconnect the mains supply.
+4.If the light barrier has been delivered togetheraready be mounted. with the laser system the connecter should
+If you are using a different signal source, e.g.board and connect the signal as follows: a PLC, take out connector X6 from the ACC
+X6
+5 24 V
+1
+switching outputof signal generator
+03/06 - Rev. AA 3
+
+AL - 68872
+Installation and Setup of the LaService Instructions/Anleitungser System Using the Handheld
+5.Connect the signal generator to female connector X6.
+Make sure that the signal generator is connected correctly. The right indicator LED on theACC board must light up blue when a signal is triggered.
+6.Using the handheld select product registration ALLPRINT and set the triggers as follows(see manual "Handheld"):
+Start triggerTrigger 1 (rising edge)
+Next triggerTrigger 1 (rising edge)
+Blocking 90 % of the minimum time between two trigger events.
+Example: If the time between two triggers is 100 ms, the blocking must be90 ms.
+7.Connect the mains line.
+8.Switch on the main switch.
+9.Switch on the key switch.
+10.Select message »Alltec« with the handheld and start the marking with button F3.
+11.Trigger the signal generator to test a marking process.
+signal generator
+connection ofindicator LED of
+signal generator
+4 03/06 - Rev. AA
+
+AL-68872Service Instructions/Anleitung
+Installation and Setup of the Laser System Using the Handheld
+1.3 Setup of the Laser System for Marking Moving Products
+1.Install the light barrier (see section Setup of the Laser System for Marking Non-MovingProducts ) with the following trigger settings (see manual "Handheld"):
+Start triggerTrigger 1 (rising edge)
+Next triggerTrigger 1 (rising edge)
+Start delayis the distance the product has to cover until it is directly in front of thelaser after passing the light barrier.
+Blocking90 % of the minimum time between two trigger events.
+Example: If the time between two triggers is 100 ms, the blocking must be90 ms.
+DangerBefore starting any work the laser system must be dead!
+1.Turn the key switch to position »0«.Remove the key to ensure that the laser system cannot be switched on.
+2.Switch off main switch.
+3.Disconnect the mains supply.
+4.Mount the encoder to the encoder unit, put the metering wheel onto the encoder and tightenthe metering wheel.
+5.Mount the encoder unit to the conveyor belt so that the metering wheel is pressed againstthe belt.
+metering wheel
+encoder
+encoder unit
+03/06 - Rev. AA 5
+
+AL - 68872
+Installation and Setup of the LaService Instructions/Anleitungser System Using the Handheld
+6.Connect the encoder unit.
+Make sure that the encoder unit is connected correctly. The two left indicator LEDs on theACC board must light up blue when the encoder rotates.
+7.Using the handheld select product registration ALLPRINT and the product movement »En-coder«.
+8.Carry out the following settings (see manual "Handheld"):
+Angle of product movement
+Product moves from right to left
+Product moves from left to right
+encoder unit
+connection of
+two indicator LEDsfor the encoder unit
++90° +135° 180°
+-135°
++45°
+0°
+-90° -45°
+-90° -45°
+0°
++45°
+-135°
++90° +135° 180°
+6 03/06 - Rev. AA
+
+AL-68872Service Instructions/Anleitung
+Installation and Setup of the Laser System Using the Handheld
+Starttrigger undFolgetrigger
+Laser
+Markierung aufdem Produkt
+Produkt
+Bewegungsrichtungder Produkte
+Start-Abstand (a)
+Sperrungs-Abstand (b) Sperrungs-Abstand (b) Sperrungs-Abstand (b)
+9.Connect the mains line.
+10.Switch on the main switch.
+11.Switch on the key switch.
+12.Select message »Alltec« with the handheld and start the marking with button F3.
+13.Start the conveyor belt and trigger the light barrier to test a marking process.
+Distance/Rotation500mm
+Pulses/Rotation4000
+Start delay
+1.4 Setup of the Customer Marking
+Blocking 90 % of the minimum time between two trigger events.
+Example: If the time between two triggers is 100 ms, the blockingmust be 90 ms.
+Note If a different encoder is used the corresponding values have to be entered.
+The customer marking has to be set according to the specifications.
+03/06 - Rev. AA 7
+
+AL - 68872
+Installation and Setup of the LaService Instructions/Anleitungser System Using the Handheld
+8 03/06 - Rev. AA
+
+AL-68872Service Instructions/Anleitung
+Installieren und Einrichten des Lasersystems mit dem Handbedienpult
+2 Installieren und Einrichten des Lasersystems mit dem Handbedienpult
+Für das Installieren und Einrichten des Lasersystems benötigen Sie:
+Inbusschlüsselsatz metrisch
+Kreuz- und Schlitzschraubendreher
+2.1 Installieren und Testen des Lasersystems
+1.Montieren Sie das Lasersystem an der vorgesehenen Stelle.Achten Sie darauf, den richtigen Arbeitsabstand einzustellen.
+2.Montieren Sie den Strahlenschutz.
+3.Lösen Sie die beiden Schrauben des Gehäusepen Sie ihn auf.deckels mit einer halben Umdrehung und klap-
+4.Entfernen Sie ggf. die Brücke aus dem Stecker X2 und schließen Sie stattdessen den ex-ternen Interlockkreis an.
+5.Schließen Sie das Handbedienpult an.
+6.Schließen Sie den Gehäusedeckel der Versorgungseinheit.
+7.Stecken Sie den Netzstecker in die Steckdose.
+8.Schalten Sie den Hautschalter ein und wartengefahren ist (weiße Lampe leuchtet). Sie, bis das Lasersystem vollständig hoch-
+Interlock
+Handbedienpult
+03/06 - Rev. AA 9
+
+AL - 68872
+Installieren und Einrichten des Service Instructions/AnleitungLasersystems mit dem Handbedienpult
+9.Schalten Sie den Schlüsselschalter ein. In der Kopzeile des Handbedienpultes wird der Betriebszustand »Laser bereit« angezeigt.
+10.Wählen Sie mit dem Handbedienpult die VorlTaste F3 eine Markierung aus (siehe Anleitung "Handbedienpult"). age »Testpattern« aus und geben Sie mit der
+11.Prüfen Sie die Markierung auf Vollständigkeit.Falls die Markierung unvollständig ist:
+- kontrollieren Sie den Arbeitsabstand, - prüfen Sie, ob es Abschattungen durch den Strahlenschutz gibt und
+- die Drehung des Markierfeldes 0° ist.
+10 03/06 - Rev. AA
+
+AL-68872Service Instructions/Anleitung
+Installieren und Einrichten des Lasersystems mit dem Handbedienpult
+2.2 Einrichten des Lasersystems für die Markierung stehender Produkte
+Beispiele für Signalgeber
+LichtschrankeSPS
+GefahrVor Beginn der Arbeiten muss das Lasersystem unbedingt spannungs-frei geschaltet werden.
+1.Drehen Sie den Schlüsselschalter in die Position »0«.Ziehen Sie den Schlüssel ab, um sicherzustellen, dass das Lasersystem
+nicht eingeschaltet werden kann.
+2.Schalten Sie den Hauptschalter aus.
+3.Ziehen Sie den Netzstecker.
+4.Wenn die Lichtschranke mit dem Lasersystem mitgeliefert wird, ist der Stecker in den meistenFällen vormontiert.
+Falls Sie eine andere Signalquelle verwendenaus der ACC-Platine heraus und legen Sie das Signal auf den Stecker folgendermaßen auf:, z.B. eine SPS, nehmen Sie den Stecker X6
+X6
+5 24 V
+1
+Schaltausgangdes Signalgebers
+03/06 - Rev. AA 11
+
+AL - 68872
+Installieren und Einrichten des Service Instructions/AnleitungLasersystems mit dem Handbedienpult
+5.Schließen Sie den Signalgeber an die Buchse X6 an.
+Prüfen Sie, ob der Signalgeber richtig angeschlossen ist. Die rechte Kontrollleuchte auf derACC-Platine muss beim Auslösen des Signalgebers blau leuchten.
+6.Wählen Sie mit dem Handbedienpult die Produkfolgende Triggereinstellungen durch terfassung ALLPRINT aus und führen Sie(siehe Anleitung "Handbedienpult"):
+StarttriggerTrigger 1 (steigend)
+FolgetriggerTrigger 1 (steigend)
+Sperrung 90 % der minimalen Zeit zwischen zwei Triggerereignissen
+Beispiel: Wenn die Zeit zwischen zwei Triggereignissen 100 msbeträgt, ist die Sperrung 90 ms.
+7.Stecken Sie den Netzstecker in die Steckdose.
+8.Schalten Sie den Hauptschalter ein.
+9.Schalten Sie den Schlüsselschalter ein.
+10.Wählen Sie mit dem Handbedienpult die VorlTaste F3 den Markiervorgang.age »Alltec« aus und aktivieren Sie mit der
+11.Lösen Sie den Signalgeber aus, um einen Markiervorgang zu testen.
+Signalgebers
+Anschluss des Kontrollleuchte
+des Signalgebers
+12 03/06 - Rev. AA
+
+AL-68872Service Instructions/Anleitung
+Installieren und Einrichten des Lasersystems mit dem Handbedienpult
+2.3 Einrichten des Lasersystems für die Markierung bewegter Produkte
+1.Installieren Sie die Lichtschranke (siehe Abschnitt Setup of Non-Moving Products ) mit folgenden Triggereinstellungen (siehe Anleitung "Handbedien-the Laser System for Marking
+pult"):
+StarttriggerTrigger 1 (steigend)
+FolgetriggerTrigger 1 (steigend)
+Startabstandist die Strecke, die das Produkt nach dem Passieren der Lichtschrankenoch zurücklegen muss, bevor es direkt vor dem Laser steht.
+Sperrung90 % des minimalen Abstandes zwischen zwei Produkten
+Beispiel: Wenn der Abstand zwischen die Sperrung 90 mm.zwei Produkten 100 mm beträgt, ist
+GefahrVor Beginn der Arbeiten muss das Lasersystem unbedingt spannungs-frei geschaltet werden.
+1.Drehen Sie den Schlüsselschalter in die Position »0«.Ziehen Sie den Schlüssel ab, um sicherzustellen, dass das Lasersystem
+nicht eingeschaltet werden kann.
+2.Schalten Sie den Hauptschalter aus.
+3.Ziehen Sie den Netzstecker.
+4.Befestigen Sie den Drehgeber an den DrehgeberDrehgeber und schrauben Sie das Messrad fest.halter, setzen Sie das Messrad auf den
+5.Montieren Sie die Drehgebereinheit an das drückt wird.Band, sodass das Messrad an das Band ange-
+Messrad
+Drehgeber
+Drehgebereinheit
+03/06 - Rev. AA 13
+
+AL - 68872
+Installieren und Einrichten des Service Instructions/AnleitungLasersystems mit dem Handbedienpult
+6.Schließen Sie die Drehgebereinheit an.
+Prüfen Sie, ob die Drehgebereinheit richtig angeschlossen ist. Die beileuchten auf der ACC-Platine müssen beim Drehen des Drehgebers blau leuchten.den linken Kontroll-
+7.Wählen Sie mit dem Handbedienpult die Produkterfassung ALLPRINT und die Produktbe-wegung »Drehgeber« aus.
+8.Führen Sie folgende Einstellungen durch (siehe Anleitung "Handbedienpult"):
+Winkel der Produktbewegung
+Produkt bewegt sich von rechts nach links
+Produkt bewegt sich von links nach rechts
+Drehgebereinheit
+zwei Kontrollleuchte n
+Anschluss der
+für den Drehgeber
++90° +135° 180°
+-135°
++45°
+0°
+-90° -45°
+-90° -45°
+0°
++45°
+-135°
++90° +135° 180°
+14 03/06 - Rev. AA
+
+AL-68872Service Instructions/Anleitung
+Installieren und Einrichten des Lasersystems mit dem Handbedienpult
+Starttrigger undFolgetrigger
+Laser
+Markierung aufdem Produkt
+Produkt
+Bewegungsrichtungder Produkte
+Start-Abstand (a)
+Sperrungs-Abstand (b) Sperrungs-Abstand (b) Sperrungs-Abstand (b)
+9.Stecken Sie den Netzstecker in die Steckdose.
+10.Schalten Sie den Hauptschalter ein.
+11.Schalten Sie den Schlüsselschalter ein.
+12.Wählen Sie mit dem Handbedienpult die VorlTaste F3 den Markiervorgang.age »Alltec« aus und aktivieren Sie mit der
+13.Starten Sie das Band und lösen Sie die Lichtesten.tschranke aus, um einen Markiervorgang zu
+Strecke/U500mm
+Striche/U4000
+Startabstand
+2.4 Einrichten der Kundenmarkierung
+Sperrung 90 % des minimalen Abstandes zwischen zwei Produkten
+Beispiel: Wenn der Abstand zwbeträgt, ist die Sperrung 90 mm.ischen zwei Produkten 100 mm
+Hinweis Bei Verwendung eines anderen Drehgebers müssen die Werte entsprechendgeändert werden.
+Die Kundenmarkierung muss entsprechend der Vorgaben eingerichtet werden.
+03/06 - Rev. AA 15

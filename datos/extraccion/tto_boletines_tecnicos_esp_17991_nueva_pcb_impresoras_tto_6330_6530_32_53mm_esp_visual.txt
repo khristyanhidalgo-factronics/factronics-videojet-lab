@@ -1,0 +1,164 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Esp\17991 - Nueva PCB Impresoras TTO 6330, 6530 32-53mm (Esp).pdf
+# cifrado=False bloques=5 caracteres=8931
+
+09/12/2022 10:23 Knowledge Article
+Nueva PCB de la impresora principal
+para impresoras 6330 de 32 mm/53 mm
+y 6530 de 53 mm
+I n f o r m a t i o n
+V a l i d a t i o n
+Approved - Internal FS Use
+S t a t u s
+B u l l e t i n
+Field Service Bulletin
+T y p e
+H e a d e r
+V i d e o j e t T e c h n o l o g i e s , I n c . F i e l d S e r v i c e B u l l e t i n
+L e g a c y
+F S B #
+O v e r v i e w
+N u e v a P C B d e l a i m p r e s o r a p r i n c i p a l p a r a i m p r e s o r a s 6 3 3 0 d e 3 2 m m / 5 3 m m y
+6 5 3 0 d e 5 3 m m
+Debido a la escasez de componentes de chips electrónicos en todo el mercado, V ideojet ha rediseñado la PCB de la
+https://videojet.my .salesforce.com/articles/es/Knowledge/New-Main-Printer-PCB-for-6330-32mm-53mm-and-6530-53mm-Printers/p 1 /5
+impresora principal 6330 de 32 mm/53 mm y 6530 de 53 mm.
+Las nuevas placas de circuito impreso de la impresora principal han sido sometidas a rigurosas pruebas y no debería
+haber ninguna diferencia en cuanto a forma, ajuste o funcionamiento.
+Por ahora, la PCB de la impresora principal 6530 de 107 mm no se ve afectada.
+I n f o r m aci ó n d e co m p at i b i l i d ad i m p o r t a n t e
+Compatibilidad con la placa
+La nueva PCB de la impresora principal 6330 es compatible con cualquier impresora 6330.
+La nueva PCB de la impresora principal 6530 de 53 mm es compatible con cualquier impresora 6530
+de 53 mm.
+T rabajos, archivos y clones
+Los trabajos, archivos y clones de la antigua PCB de la impresora principal 6330 son compatibles con
+la nueva PCB de la impresora principal 6330 y viceversa.
+Los trabajos, archivos y clones de la antigua PCB de la impresora 6530 53 mm son compatibles con la
+nueva PCB de la impresora principal 6530 y viceversa.
+Configuración líder-seguidor
+Las configuraciones líder-seguidor son posibles con una mezcla de impresoras con antiguas PCB de
+impresoras principales e impresoras con nuevas PCB de impresoras principales.
+En resumen, todo lo que era posible o compatible con las antiguas PCB de la impresora principal seguirán siendo válidas
+con las nuevas placas de circuito impreso de la impresora principal.
+D i f er en ci a cl ave
+La diferencia principal y significativa es que las nuevas PCB de la impresora principal requerirán una versión de software
+diferente a la de las antiguas PCB de la impresora principal. En la T abla 1 se enumeran las versiones de software para las
+antiguas y nuevas PCB de las impresoras principales.
+T abla 1: V ersiones de software
+PCB de la impresora principal
+Antigua Nueva
+
+09/12/2022 10:23 Knowledge Article
+https://videojet.my .salesforce.com/articles/es/Knowledge/New-Main-Printer-PCB-for-6330-32mm-53mm-and-6530-53mm-Printers/p 2 /5
+PCB de la impresora principal
+Antigua Nueva
+407960.rXX (6330) 409720.rXX (6330)
+V ersión de software
+404409.rXX (6530) /409719.rXX (6530)
+ V ersiones de software comprobadas automáticamente
+No es posible cargar la versión incorrecta del software a través de una memoria USB o configuración de Clarity . Incluso si
+tanto las versiones de software antiguas como las nuevas están en una memoria USB insertada, la PCB respectiva solo
+verá el software correspondiente para la PCB dada en dicha memoria USB. Si la versión de software incorrecta se envía
+a través de configuración de Clarity , la impresora generará una advertencia similar a la que se muestra en la Figura 1 y
+Figura 2 y no cargará el software en la impresora.
+Figura 1: error de actualización de CLARiTY .
+Figura 2: error de actualización de CLARiTY .
+Se puede consultar la versión del software de la impresora se puede encontrar en la HMI de la impresora en
+Herramientas | Diagnóstico | Control | V ersiones | Número de pieza del software.
+Si no puede encender la impresora o no puede acceder a esa pantalla, puede ver si se trata de una PCB de impresora
+principal antigua o nueva examinando la propia placa. La antigua PCB de la impresora principal (Figura 3, a la izquierda)
+tiene la pegatina de Windows CE ubicada directamente debajo de la tarjeta Micro SD. La nueva PCB de la impresora
+principal (Figura 3, a la derecha) la tiene ubicada en otro lugar .
+
+09/12/2022 10:23 Knowledge Article
+https://videojet.my .salesforce.com/articles/es/Knowledge/New-Main-Printer-PCB-for-6330-32mm-53mm-and-6530-53mm-Printers/p 3 /5
+V ariación de la ubicación de la pegatina
+La ubicación de la etiqueta adhesiva de Windows CE en la nueva PCB de la impresora principal puede desviarse de la
+Figura 3 en futuras revisiones, pero sin embargo se colocará en una ubicación distinta a la de la antigua PCB de la
+impresora principal, ya que ahora hay componentes electrónicos en esa ubicación en la nueva PCB de la impresora
+principal que evitarían que la pegatina se colocara de forma plana.
+Figura 3: comparación visual de placas y ubicación de pegatinas.
+U so en i m p r eso r as n u evas
+El número de serie inicial de la primera impresora con la nueva PCB de la impresora principal instalada es
+2223019002TZH.
+A partir de la publicación de este boletín, solo se utilizará un número reducido de nuevas PCB principales (~ 30).
+Una vez que se agote el stock de antiguas PCB principales, el departamento de fabricación instalará la nueva
+PCB principal en cada impresora nueva. Estimamos que esto ocurrirá ya en septiembre de 2022.
+P i ez as d e r ep u est o
+Debido a que las nuevas PCB de la impresora principal no afectan a la forma, ajuste o funcionamiento, seguirán
+utilizando los números de piezas de repuesto existentes. Sin embargo, se introducirá un nuevo número de pieza para las
+tarjetas Micro SD, que tendrán las nuevas revisiones de software para el nuevo modelo de PCB de la impresora principal
+respectiva. A partir de la publicación de este boletín, la nueva PCB de la impresora principal no se utiliza para fines de
+repuesto. El uso de los repuestos probablemente tendrá lugar una vez que se agoten las existencias de la antigua PCB
+principal. Estimamos que esto ocurrirá ya en septiembre de 2022.
+T abla 2: Números de pieza de repuesto
+Número de pieza Modelo Notas
+El número de pieza de repuesto para la PCB principal
+407912 PCB principal 6330
+6330 continuará siendo el mismo
+El número de pieza de repuesto para la PCB de la
+PCB de la impresora principal 6530 de
+40791 1 impresora principal 6530 de 53 mm seguirá siendo el
+53mm
+mismo
+T arjeta Micro SD para la nueva PCB de
+409769
+la impresora principal 6330
+T arjeta Micro SD para la nueva PCB de
+409770
+la impresora principal 6530 de 53 mm
+
+09/12/2022 10:23 Knowledge Article
+https://videojet.my .salesforce.com/articles/es/Knowledge/New-Main-Printer-PCB-for-6330-32mm-53mm-and-6530-53mm-Printers/p 4 /5
+Las tarjetas Micro SD no son intercambiables
+No instale una nueva tarjeta Micro SD en una antigua PCB principal, ni una tarjeta Micro SD antigua en una nueva PCB
+principal. Si bien es probable que al hacerlo no dañe la PCB principal, la impresora probablemente solo muestre una
+pantalla negra y no arranque.
+P r o d u c t s
+TT O.DA T AFLEX.6330/6530
+A f f e c t e d
+S y m p t o m s
+C o r r e c t i v e
+A c t i o n
+M ed i d a co r r ect i va
+Determine el tipo de placa antes de pedir tarjetas Micro SD de reemplazo
+No instale una nueva tarjeta Micro SD en una antigua PCB principal o una tarjeta Micro SD antigua en una
+nueva PCB principal.
+Si una 6330/6530 muestra una pantalla negra o no arranca después del servicio de mantenimiento, asegúrese
+de que la tarjeta Micro SD adecuada esté instalada y completamente asentada.
+I t e m s
+R e q u i r e d
+A u t h o r Manuel Nevarez
+S e n d
+Q u e s t i o n s dataflexsupport@videojet.com
+T o
+D i s c l a i m e r
+The contents ofthis em ailand any attachm ents are provided as a convenience to V ideojetcustom ers to highlightusefulinform ation and troubleshooting tips.W hen w orking w ith a product,alw ays consultthe productuser
+m anualand follow the productsafety precautions and recom m endations,including using P ersonalP rotective E quipm entw hen necessary.Ifyou have any questions orare notexperienced in using orservicing V ideojet
+equipm ent,contactV ideojetforassistance.
+I n t e r n a l
+C o m m e n t s
+T i t l e Nueva PCB de la impresora principal para impresoras 6330 de 32 mm/53 mm y 6530 de 53 mm
+U R L N a m e New-Main-Printer-PCB-for-6330-32mm-53mm-and-6530-53mm-Printers
+P e r m a n e n t
+U R L f o r Right click and copy link to share this Article's URL
+L i g h t n i n g
+E n g i n e e r i n g A n a l y s i s
+R o o t C a u s e
+S t e p s t o D i a g n o s e
+C o n t a i n m e n t
+C o u n t e r m e a s u r e
+P e r m a n e n t
+C o u n t e r m e a s u r e
+M e t a d a t a
+D i s t r i b u t i o n W ood Dale; US Field Service; Canada Field Service; EMEA Field Service; AP AC Field Service; CALA Field
+Service
+manuel.nevarez@videojet.com
+I n i t i a l S u b m i t t e r
+
+09/12/2022 10:23 Knowledge Article
+https://videojet.my .salesforce.com/articles/es/Knowledge/New-Main-Printer-PCB-for-6330-32mm-53mm-and-6530-53mm-Printers/p 5 /5
+E m a i l
+Q u e u e d f o r
+N
+R e v i e w ?

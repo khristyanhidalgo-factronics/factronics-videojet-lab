@@ -1,0 +1,952 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\zdesigner-windows-driver-release-notes-v51167398.pdf
+# cifrado=False bloques=20 caracteres=38912
+
+ZDesigner Windows Printer Driver
+Release Notes
+Version 5.1.16.7398
+T a b le o f C o n t e n t s
+W el c o m e
+Su p p o r t ed O p er at i n g S y s t em s
+I n s t al l at i o n
+Su p p o r t ed Pr i n t er s
+T i p s & Ad v i c e
+K n o w n I s s u es
+Ch an g e Lo g
+T ec h n i c al Su p p o r t
+So ft w ar e U p d at es
+W e lc o m e
+T h i s v er s i o n o f t h e Z D es i g n er Wi n d o w s Pr i n t er d r i v er o ffer s m an y n ew feat u r es an d
+u s er c o n v en i en c es . Cu r r en t l y s h i p p i n g Z eb r a p r i n t er s u s i n g CPCL, EPL 2 o r Z PL I I c an
+n o w b e d r i v en u s i n g o n e s et o f d r i v er fi l es . A c o m m o n u s er i n t er fac e fo r al l o f t h e
+p r i n t er l an g u ag es m ak es i t eas y t o w o r k w i t h an y o f t h e s u p p o r t ed p r i n t er s l i s t ed
+b el o w . N ew u t i l i t i es , s u c h as a F o n t an d G r ap h i c D o w n l o ad er an d a St at u s M o n i t o r
+h a v e b een i n c l u d ed .
+B ac k t o t o p
+S u p p o r t e d O p e r a t in g S y s t e m s
+T h i s d r i v er i s s u p p o r t ed o n t h e fo l l o w i n g M i c r o s o ft 3 2 -b i t an d 6 4 -b i t d es k t o p
+o p er at i n g s y s t em s
+Wi n d o w s 7
+Wi n d o w s 8 , Wi n d o w s 8 .1
+Wi n d o w s 1 0
+Wi n d o w s Ser v er 2 0 0 8 , Wi n d o w s Ser v er 2 0 0 8 R 2
+Wi n d o w s Ser v er 2 0 1 2 , Wi n d o w s Ser v er 2 0 1 2 R 2
+Wi n d o w s Ser v er 2 0 1 6
+Wi n d o w s Ser v er 2 0 1 9
+Ad v a n ce N o t ice: M i c r o s o ft h as an n o u n c ed h er e t h at s u p p o r t fo r Wi n d o w s 7 i s
+en d i n g o n J an u ar y 1 4 , 2 0 2 0 . Z eb r a i n t en d s t o r em o v e Wi n d o w s 7 s u p p o r t fo r t h i s
+p r o d u c t i n a fu t u r e r el eas e.
+(Wi n d o w s i s a r eg i s t er ed t r ad em ar k o f M i c r o s o ft Co r p o r at i o n .)
+B ac k t o t o p
+I n s t a llat io n
+
+Ho w t o I n st a ll Z eb r a P r in t er Dr iv er s .
+D r i v er s c an b e i n s t al l ed fr o m t h e Wi n d o w s "Ad d Pr i n t er Wi z ar d " o r u s i n g t h e
+I n s t al l at i o n U t i l i t y t h at c am e w i t h t h e d r i v er . N O T E: y o u r u s er ac c o u n t m u s t h a v e t h e
+n ec es s ar y r i g h t s t o i n s t al l a d r i v er o t h er w i s e c o n t ac t y o u r s y s t em ad m i n i s t r at o r fo r
+fu r t h er as s i s t an c e.
+T o in st a ll u sin g t h e I n st a lla t io n U t ilit y :
+1 . U n c o m p r es s t h e d r i v er fi l es . B e s u r e t o n o t e t h e l o c at i o n t h at t h e fi l es ar e
+p l ac ed i n t o .
+2 . R u n t h e Pr n I n s t .ex e u t i l i t y .
+3 . F o l l o w t h e p r o m p t s t o s el ec t t h e p r i n t er m o d el an d p o r t t h at y o u w i l l b e u s i n g .
+4 . T h e U t i l i t y w i l l as k i f y o u w an t t o i n s t al l t h e F o n t an d G r ap h i c D o w n l o ad er an d
+St at u s M o n i t o r - s el ec t t h es e i t em s i f t h ey ar e n eed ed i n y o u r ap p l i c at i o n .
+5 . T h e U t i l i t y w i l l i n s t al l t h e ap p r o p r i at e fi l e s .
+T o in st a ll t h e d r iv er u sin g t h e W in d o w s " Ad d P r in t er W iz a r d " .
+1 . U n c o m p r es s t h e d r i v er fi l es . B e s u r e t o n o t e t h e l o c at i o n t h at t h e fi l es ar e
+p l ac ed i n t o .
+2 . U s i n g t h e ST AR T m en u s el ec t "Set t i n g s " an d t h en "Pr i n t er s ". T h e Pr i n t er s fo l d er
+w i l l o p en u p .
+3 . D o u b l e c l i c k o n "Ad d Pr i n t er " an d fo l l o w t h e p r o m p t s t o b eg i n t h e i n s t al l at i o n
+p r o c es s .
+4 . Wh en y o u c o m e t o t h e d i al o g s c r een t h a t l i s t s M an u fac t u r er s an d Pr i n t er s ,
+s el ec t "H a v e d i s k ".
+5 . B r o w s e t o t h e l o c at i o n t h at c o n t ai n s t h e u n c o m p r es s ed d r i v er fi l es .
+6 . Sel ec t t h e Z B R N .i n f fi l e i n t h e Z B R N fo l d er an d c l i c k "O K " t o c o n t i n u e.
+7 . Sel ec t y o u r p r i n t er m o d el fr o m t h e l i s t o f s u p p o r t ed p r i n t er s an d c l i c k t h e N ex t
+b u t t o n t o c o n t i n u e.
+8 . I f y o u r p r i n t er i s c o n n ec t ed v i a a R S-2 3 2 s er i al c o n n ec t i o n , s el ec t "N o " t o t h e
+q u es t i o n "W o u l d y o u l i k e t o p r i n t a t es t p ag e? ". T h i s i s s u g g es t ed t o a v o i d an
+er r o r m es s ag e i n c as e y o u h a v e n o t c o n fi g u r ed t h e p o r t o n t h e c o m p u t er t o
+m at c h t h e s er i al s et t i n g s o n t h e p r i n t er . I f y o u r p r i n t er i s c o n n ec t ed v i a a
+p ar al l el p o r t an d i s r ead y t o p r i n t , s el ec t "Y es " t o p r i n t t h e t es t p ag e.
+9 . F o l l o w t h e r em ai n i n g p r o m p t s t o c o m p l et e t h e Wi z ar d . O n c e t h e i n s t al l i s d o n e
+y o u r p r i n t er d r i v er i s n o w i n s t al l ed an d r ead y fo r u s e.
+B ac k t o t o p
+S u p p o r t e d P r in t e r s
+T h e fo l l o w i n g Z eb r a p r i n t er s ar e s u p p o r t ed i n t h i s v er s i o n :
+1 0 5 SL 2 0 3 D PI
+1 0 5 SL 3 0 0 D PI
+1 0 5 SLPl u s -2 0 3 d p i Z PL
+1 0 5 SLPl u s -3 0 0 d p i Z PL
+1 1 0 P AX 4 2 0 3 D PI
+1 1 0 P AX 4 3 0 0 D PI
+1 1 0 X i 4 2 0 3 d p i
+
+1 1 0 X i 4 3 0 0 d p i
+1 1 0 X i 4 6 0 0 d p i
+1 1 0 X i I I I Pl u s 2 0 0 D PI
+1 1 0 X i I I I Pl u s 3 0 0 D PI
+1 1 0 X i I I I Pl u s 6 0 0 D PI
+1 4 0 X i 4 2 0 3 d p i
+1 4 0 X i I I I Pl u s
+1 7 0 P AX 4 2 0 3 D PI
+1 7 0 P AX 4 3 0 0 D PI
+1 7 0 X i 4 2 0 3 d p i
+1 7 0 X i 4 3 0 0 d p i
+1 7 0 X i I I I Pl u s
+1 7 0 X i I I I Pl u s 2 0 0 D PI
+2 2 0 X i 4 2 0 3 d p i
+2 2 0 X i 4 3 0 0 d p i
+2 2 0 X i I I I Pl u s
+2 2 0 X i I I I Pl u s 3 0 0 D PI
+8 8 8 -D T
+8 8 8 - T T
+EZ 3 2 0
+G C4 2 0 d
+G C4 2 0 d (EPL)
+G C4 2 0 t
+G C4 2 0 t (EPL)
+G K 4 2 0 d
+G K 4 2 0 d (EPL)
+G K 4 2 0 E (EPL)
+G K 4 2 0 E (Z PL)
+G K 4 2 0 t
+G K 4 2 0 t (EPL)
+G K 4 2 0 t Pl u s (EPL)
+G K 4 2 0 t Pl u s (Z PL)
+G K 8 8 8 d
+G K 8 8 8 d (EPL)
+G K 8 8 8 E (EPL)
+G K 8 8 8 E (Z PL)
+G K 8 8 8 t
+G K 8 8 8 t (EPL)
+G T 8 0 0 (EPL)
+G T 8 0 0 (Z PL)
+G T 8 0 0 Pl u s (EPL)
+G T 8 0 0 Pl u s (Z PL)
+G T 8 0 0 -3 0 0 d p i EPL
+G T 8 0 0 -3 0 0 d p i Z PL
+G X 4 2 0 d
+G X 4 2 0 d (EPL)
+G X 4 2 0 s
+G X 4 2 0 s (EPL)
+G X 4 2 0 t
+G X 4 2 0 t (EPL)
+G X 4 3 0 t
+G X 4 3 0 t (EPL)
+H C1 0 0 3 0 0 d p i
+i M Z 2 2 0
+i M Z 2 2 0 (Z PL)
+i M Z 3 2 0
+i M Z 3 2 0 (Z PL)
+
+K R 4 0 3
+LP 2 8 2 4
+LP 2 8 2 4 Pl u s (EPL)
+LP 2 8 2 4 Pl u s (Z PL)
+LP 2 8 4 4
+LP 2 8 4 4 - Z
+M o b i l e Pr i n t er
+M Z 2 2 0
+M Z 3 2 0
+P4 T (CPCL)
+P4 T (Z PL)
+Q L 2 2 0 /Q L 2 2 0 Pl u s
+Q L 3 2 0 /Q L 3 2 0 Pl u s
+Q L 4 2 0 /Q L 4 2 0 Pl u s
+Q Ln 2 2 0
+Q Ln 2 2 0 (Z PL)
+Q Ln 3 2 0
+Q Ln 3 2 0 (Z PL)
+Q Ln 4 2 0 (CPCL)
+Q Ln 4 2 0 (Z PL)
+R 1 1 0 P AX 4 LH -2 0 3 D PI
+R 1 1 0 P AX 4 LH -3 0 0 D PI
+R 1 1 0 P AX 4 R H -2 0 3 D PI
+R 1 1 0 P AX 4 R H -3 0 0 D PI
+R 1 1 0 X i 2 0 0 D PI
+R 1 1 0 X i 3 0 0 D PI
+R 1 1 0 X i H F 2 0 0 D PI
+R 1 1 0 X i H F 3 0 0 D PI
+R 1 1 0 X i 4 2 0 3 d p i
+R 1 1 0 X i 4 3 0 0 d p i
+R 1 1 0 X i 4 6 0 0 d p i
+R 1 7 0 X i 2 0 0 D PI
+R 1 7 0 X i 3 0 0 D PI
+R 2 8 4 4 - Z
+R P4 T (Z PL)
+R W 2 2 0
+R W 4 2 0
+R W4 -PS
+R Z 4 0 0 2 0 0 d p i
+R Z 4 0 0 3 0 0 d p i
+R Z 6 0 0 2 0 0 d p i
+R Z 6 0 0 3 0 0 d p i
+S4 M -2 0 3 d p i EPL
+S4 M -2 0 3 d p i Z PL
+S4 M -3 0 0 d p i Z PL
+T LP 2 8 2 4
+T LP 2 8 2 4 Pl u s (EPL)
+T LP 2 8 2 4 Pl u s (Z PL)
+T LP 2 8 4 4
+T LP 2 8 4 4 - Z
+T LP 3 8 4 2
+T LP 3 8 4 4 - Z
+Z D 2 2 0 -2 0 3 d p i EPL
+Z D 2 2 0 -2 0 3 d p i Z PL
+Z D 2 3 0 -2 0 3 d p i EPL
+Z D 2 3 0 -2 0 3 d p i Z PL
+Z D 4 1 0 -2 0 3 d p i EPL
+
+Z D 4 1 0 -2 0 3 d p i Z PL
+Z D 4 1 0 -3 0 0 d p i EPL
+Z D 4 1 0 -3 0 0 d p i Z PL
+Z D 4 1 1 -2 0 3 d p i EPL
+Z D 4 1 1 -2 0 3 d p i Z PL
+Z D 4 1 1 -3 0 0 d p i EPL
+Z D 4 1 1 -3 0 0 d p i Z PL
+Z D 4 2 0 -2 0 3 d p i EPL
+Z D 4 2 0 -2 0 3 d p i Z PL
+Z D 4 2 0 -3 0 0 d p i EPL
+Z D 4 2 0 -3 0 0 d p i Z PL
+Z D 4 2 1 -2 0 3 d p i EPL
+Z D 4 2 1 -2 0 3 d p i Z PL
+Z D 4 2 1 -3 0 0 d p i EPL
+Z D 4 2 1 -3 0 0 d p i Z PL
+Z D 4 2 1 CN -3 0 0 d p i EPL
+Z D 4 2 1 CN -3 0 0 d p i Z PL
+Z D 5 0 0 -2 0 3 d p i EPL
+Z D 5 0 0 -2 0 3 d p i Z PL
+Z D 5 0 0 -3 0 0 d p i EPL
+Z D 5 0 0 -3 0 0 d p i Z PL
+Z D 5 0 0 R -2 0 3 d p i Z PL
+Z D 5 0 0 R -3 0 0 d p i Z PL
+Z D 5 1 0 -3 0 0 d p i Z PL
+Z D 5 1 1 -3 0 0 d p i Z PL
+Z D 6 1 1 -2 0 3 d p i EPL
+Z D 6 1 1 -2 0 3 d p i Z PL
+Z D 6 1 1 -3 0 0 d p i EPL
+Z D 6 1 1 -3 0 0 d p i Z PL
+Z D 6 1 1 R -2 0 3 d p i Z PL
+Z D 6 1 1 R -3 0 0 d p i Z PL
+Z D 6 2 0 -2 0 3 d p i EPL
+Z D 6 2 0 -2 0 3 d p i Z PL
+Z D 6 2 0 -3 0 0 d p i EPL
+Z D 6 2 0 -3 0 0 d p i Z PL
+Z D 6 2 1 -2 0 3 d p i EPL
+Z D 6 2 1 -2 0 3 d p i Z PL
+Z D 6 2 1 -3 0 0 d p i EPL
+Z D 6 2 1 -3 0 0 d p i Z PL
+Z D 6 2 1 R -2 0 3 d p i Z PL
+Z D 6 2 1 R -3 0 0 d p i Z PL
+Z D 8 8 8 -2 0 3 d p i EPL
+Z D 8 8 8 -2 0 3 d p i Z PL
+Z E5 0 0 -4 LH -2 0 3 d p i Z PL
+Z E5 0 0 -4 LH -3 0 0 d p i Z PL
+Z E5 0 0 -4 R H -2 0 3 d p i Z PL
+Z E5 0 0 -4 R H -3 0 0 d p i Z PL
+Z E5 0 0 -6 LH -2 0 3 d p i Z PL
+Z E5 0 0 -6 LH -3 0 0 d p i Z PL
+Z E5 0 0 -6 R H -2 0 3 d p i Z PL
+Z E5 0 0 -6 R H -3 0 0 d p i Z PL
+Z E5 0 0 R -4 LH -2 0 3 d p i Z PL
+Z E5 0 0 R -4 LH -3 0 0 d p i Z PL
+Z E5 0 0 R -4 R H -2 0 3 d p i Z PL
+Z E5 0 0 R -4 R H -3 0 0 d p i Z PL
+Z E5 1 1 LH -2 0 3 d p i Z PL
+Z E5 1 1 LH -3 0 0 d p i Z PL
+
+Z E5 1 1 LH -6 0 0 d p i Z PL
+Z E5 1 1 R H -2 0 3 d p i Z PL
+Z E5 1 1 R H -3 0 0 d p i Z PL
+Z E5 1 1 R H -6 0 0 d p i Z PL
+Z E5 1 1 R LH -2 0 3 d p i Z PL
+Z E5 1 1 R LH -3 0 0 d p i Z PL
+Z E5 1 1 R LH -6 0 0 d p i Z PL
+Z E5 1 1 R R H -2 0 3 d p i Z PL
+Z E5 1 1 R R H -3 0 0 d p i Z PL
+Z E5 1 1 R R H -6 0 0 d p i Z PL
+Z E5 2 1 LH -2 0 3 d p i Z PL
+Z E5 2 1 LH -3 0 0 d p i Z PL
+Z E5 2 1 R H -2 0 3 d p i Z PL
+Z E5 2 1 R H -3 0 0 d p i Z PL
+Z E5 2 1 R LH -2 0 3 d p i Z PL
+Z E5 2 1 R LH -3 0 0 d p i Z PL
+Z E5 2 1 R R H -2 0 3 d p i Z PL
+Z E5 2 1 R R H -3 0 0 d p i Z PL
+Z M 4 0 0 2 0 0 d p i (EPL)
+Z M 4 0 0 2 0 0 d p i (Z PL)
+Z M 4 0 0 3 0 0 d p i (Z PL)
+Z M 4 0 0 6 0 0 d p i (Z PL)
+Z M 6 0 0 2 0 0 d p i (EPL)
+Z M 6 0 0 2 0 0 d p i (Z PL)
+Z M 6 0 0 3 0 0 d p i (Z PL)
+Z Q 1 1 2 (CPCL)
+Z Q 1 2 0 (CPCL)
+Z Q 2 1 0 (CPCL)
+Z Q 2 2 0 (CPCL)
+Z Q 3 1 0 (CPCL)
+Z Q 3 1 0 (Z PL)
+Z Q 3 2 0 (CPCL)
+Z Q 3 2 0 (Z PL)
+Z Q 5 1 0 (CPCL)
+Z Q 5 1 0 (Z PL)
+Z Q 5 1 1 (CPCL)
+Z Q 5 1 1 (Z PL)
+Z Q 5 1 1 R (Z PL)
+Z Q 5 2 0 (CPCL)
+Z Q 5 2 0 (Z PL)
+Z Q 5 2 1 (CPCL)
+Z Q 5 2 1 (Z PL)
+Z Q 5 2 1 R (Z PL)
+Z Q 6 1 0 (CPCL)
+Z Q 6 1 0 (Z PL)
+Z Q 6 2 0 (CPCL)
+Z Q 6 2 0 (Z PL)
+Z Q 6 3 0 (CPCL)
+Z Q 6 3 0 (Z PL)
+Z Q 6 3 0 R (Z PL)
+Z R 1 1 8 (CPCL)
+Z R 1 3 8 (CPCL)
+Z R 3 1 8 (CPCL)
+Z R 3 1 8 (Z PL)
+Z R 3 2 8 (CPCL)
+Z R 3 2 8 (Z PL)
+Z R 3 3 8 (CPCL)
+
+Z R 3 3 8 (Z PL)
+Z R 6 2 8 (CPCL)
+Z R 6 2 8 (Z PL)
+Z R 6 3 8 (CPCL)
+Z R 6 3 8 (Z PL)
+Z R 6 5 8 (CPCL)
+Z R 6 5 8 (Z PL)
+Z R 6 6 8 (CPCL)
+Z R 6 6 8 (Z PL)
+Z T 2 1 0 -2 0 0 d p i EPL
+Z T 2 1 0 -2 0 0 d p i Z PL
+Z T 2 1 0 -3 0 0 d p i Z PL
+Z T 2 2 0 -2 0 0 d p i EPL
+Z T 2 2 0 -2 0 0 d p i Z PL
+Z T 2 2 0 -3 0 0 d p i Z PL
+Z T 2 3 0 -2 0 0 d p i EPL
+Z T 2 3 0 -2 0 0 d p i Z PL
+Z T 2 3 0 -3 0 0 d p i Z PL
+Z T 4 1 0 -2 0 3 d p i EPL
+Z T 4 1 0 -2 0 3 d p i Z PL
+Z T 4 1 0 -3 0 0 d p i Z PL
+Z T 4 1 0 -6 0 0 d p i Z PL
+Z T 4 1 0 R -2 0 3 d p i Z PL
+Z T 4 1 0 R -3 0 0 d p i Z PL
+Z T 4 1 0 R -6 0 0 d p i Z PL
+Z T 4 1 1 -2 0 3 d p i EPL
+Z T 4 1 1 -2 0 3 d p i Z PL
+Z T 4 1 1 -3 0 0 d p i Z PL
+Z T 4 1 1 -6 0 0 d p i Z PL
+Z T 4 1 1 R -2 0 3 d p i Z PL
+Z T 4 1 1 R -3 0 0 d p i Z PL
+Z T 4 1 1 R -6 0 0 d p i Z PL
+Z T 4 2 0 -2 0 3 d p i Z PL
+Z T 4 2 0 -3 0 0 d p i Z PL
+Z T 4 2 0 R -2 0 3 d p i Z PL
+Z T 4 2 0 R -3 0 0 d p i Z PL
+Z T 4 2 1 -2 0 3 d p i Z PL
+Z T 4 2 1 -3 0 0 d p i Z PL
+Z T 4 2 1 R -2 0 3 d p i Z PL
+Z T 4 2 1 R -3 0 0 d p i Z PL
+Z T 5 1 0 -2 0 3 d p i Z PL
+Z T 5 1 0 -3 0 0 d p i Z PL
+Z T 6 1 0 -2 0 3 d p i Z PL
+Z T 6 1 0 -3 0 0 d p i Z PL
+Z T 6 1 0 -6 0 0 d p i Z PL
+Z T 6 1 0 R -2 0 3 d p i Z PL
+Z T 6 1 0 R -3 0 0 d p i Z PL
+Z T 6 1 0 R -6 0 0 d p i Z PL
+Z T 6 2 0 -2 0 3 d p i Z PL
+Z T 6 2 0 -3 0 0 d p i Z PL
+Z T 6 2 0 R -2 0 3 d p i Z PL
+Z T 6 2 0 R -3 0 0 d p i Z PL
+B ac k t o t o p
+T ip s & A d v ic e
+
+1 . U s e t h e U s e Pr i n t er Set t i n g s o p t i o n o n t h e Ad v an c ed T ab t o s t o p t h e d r i v er
+fr o m s en d i n g t h e p r i n t er c o n fi g u r at i o n a n d s a v e c o n fi g u r at i o n c o m m an d s . T h i s
+h as t h e effec t o f i m p r o v i n g t h r o u g h p u t i n s o m e ap p l i c at i o n s .
+2 . F o r Z PL p r i n t er s , u s e t h e u s e Z I P c o m p r es s i o n o p t i o n o n t h e O t h er Set t i n g s
+d i al o g t o c au s e t h e d r i v er t o c r eat e c o m p r es s ed g r ap h i c s . T h i s h as t h e effec t o f
+i m p r o v i n g t h r o u g h p u t i n s o m e ap p l i c at i o n s .
+3 . I t i s r ec o m m en d ed t h at an Ad m i n i s t r at o r ac c o u n t b e u s ed w h en i n s t al l i n g t h e
+d r i v er .
+4 . M i c r o s o ft W o r d s p l i t s s t r i n g s i n t o s i n g l e c h ar ac t er s . T o a v o i d t h i s s el ec t "M er g e
+c h ar ac t er s " o p t i o n o n d r i v er 's "Pr i n t er s et t i n g s " t ab .
+5 . T h e St at u s M o n i t o r r eg u l ar l y c h ec k s t h e p r i n t er fo r c u r r en t s t at u s i n fo r m at i o n .
+Wh en t h e d r i v er i s b ei n g u s ed o v er a n et w o r k c o n n ec t i o n , t h i s c an h a v e t h e
+effec t o f c o n s u m i n g c o n n ec t i o n p o r t s t h at w o u l d o t h er w i s e b e u s ed fo r
+ac c ep t i n g p r i n t jo b s at t h e p r i n t er . I f t h e St at u s M o n i t o r i s i n u s e an d y o u ar e
+ex p er i en c i n g a d el a y i n p r i n t i n g , t r y r i g h t c l i c k i n g o v er t h e St at u s M o n i t o r i n t h e
+s y s t em t r a y (b y t h e c l o c k ) an d c l o s i n g t h e St at u s M o n i t o r .
+B ac k t o t o p
+K n o w n I s s u e s
+1 . T h e d r i v er s w i l l n o t p r i n t m o r e t h an 3 2 7 6 7 c o p i es o f a d o c u m en t . T h i s i s a
+Wi n d o w s l i m i t at i o n .
+2 . G r ap h i c s p r i n t b es t w h en a m o n o c h r o m e i m ag e i s u s ed . B ec au s e Z eb r a p r i n t er s
+ar e m o n o c h r o m e p r i n t er s , c o l o r an d g r a y s c al e i m ag es w i l l b e p r i n t ed u s i n g t h e
+d i t h er i n g m et h o d y o u s el ec t o n t h e O p t i o n s t ab . T h er e ar e fo u r a v ai l ab l e
+d i t h er i n g m et h o d s , eac h o ffer i n g s o m e c o n t r o l o v er t h e fi n al p r i n t ed i m ag e.
+H o w ev er , m o n o c h r o m e i m ag es w i l l p r i n t i n a m o r e p r ed i c t ab l e fas h i o n .
+3 . Wh en u s i n g W o r d , t h e ap p l i c at i o n fo r c es t h e d r i v er t o i n s er t s p ac es i n t o an y
+ed i t ed l i n e o f t ex t u s i n g t h e Z PL F o n t 0 (Z B :Z eb r a CG T r i u m v i r at e). I f y o u s a v e
+t h e d o c u m en t aft er ed i t i n g t h e t ex t , b u t b efo r e p r i n t i n g i t , t h e s p ac es w i l l n o t
+b e i n s er t ed o n t h e p r i n t ed l ab el .
+4 . N o t al l Ap p l i c at i o n s w i l l r ead i n t er n al fo n t i n fo r m at i o n fr o m d r i v e r s . So m e
+ap p l i c at i o n s w i l l n o t p r es en t t h e l i s t o f n at i v e fo n t s an d b ar c o d es ev en i f t h e
+o p er at i n g s y s t em i s r es t ar t ed aft er i n s t al l i n g an d t h e d r i v er i s s et as t h e d efau l t
+d r i v er . T h i s i s a l i m i t at i o n o f s o m e ap p l i c at i o n s .
+5 . T h e Co m m an d F o n t Pr efi x an d Su ffi x v al u e ar e i n s er t ed b efo r e an d aft e r eac h
+c h ar ac t er o f t ex t i n Co m m an d F o n t w h en an EPL o r CPCL p r i n t er d r i v er i s u s ed .
+M i c r o s o ft W o r d s p l i t s s t r i n g s i n t o s i n g l e c h ar ac t er s . T o a v o i d t h i s s el ec t "M er g e
+c h ar ac t er s " o p t i o n o n d r i v er 's "Pr i n t er s et t i n g s " t ab .
+6 . I n Wi n d o w s 7 an d Wi n d o w s 2 0 0 8 R 2 , s o m e ap p l i c at i o n s d o n o t al l o w t h e fo n t s
+t h at ar e n at i v e o n t h e p r i n t er t o b e d i s p l a y ed as s el ec t ab l e w h en t h e u s er
+ac c es s es t h e Pr o p er t i es o f a fi el d . I n m o s t ap p l i c at i o n s t h ey ar e d i s p l a y ed an d
+s el ec t ab l e fr o m t h e F o n t s d r o p -d o w n m en u .
+7 . I f P er m i s s i o n s o n t h e c o m p u t er d o n o t al l o w t h e d r i v er t o w r i t e i n t h e R eg i s t r y
+t h en t h e Co m m an d F o n t s an d /o r St o c k s T ab s i n t h e d r i v er d i al o g s w i l l h a v e
+b u t t o n s d i s ab l ed . T o c h an g e Co m m an d F o n t s an d St o c k s , o p en t h e Pr i n t er s
+fo l d er t h e i n Co n t r o l P an el , s el ec t t h e p r i n t er an d t h en o p en i t s "Pr i n t i n g
+Pr efer en c es ". T h en t h e u s er w i l l b e ab l e t o m o d i f y Co m m an d F o n t s an d St o c k s .
+T h es e p r o p er t i es ar e s et p er d ev i c e an d n o t p er d o c u m en t .
+8 . Wh en t h e p as s t h r o u g h s t ar t /en d c h ar ac t er c o m b i n at i o n i n c l u d e s t h e {}
+c h ar ac t er s , d at a m a y n o t b e p as s ed t h r o u g h w h en u s i n g n ew er w eb b r o w s er
+
+v er s i o n s i n c l u d i n g , b u t n o t l i m i t ed t o I n t er n et Ex p l o r er ® , G o o g l e Ch r o m e™ an d
+F i r efo x ® . U s e a s t ar t /en d c h ar ac t er c o m b i n at i o n t h at d o es n o t i n c l u d e {}.
+9 . T h e P4 T an d R P4 T p r i n t er s c o n t ai n fi r m w ar e s u p p o r t i n g a s u b s et o f Z PL
+c o m m an d s . As a r es u l t , w h en u s i n g t h e P4 T o r R P4 T Z PL d r i v er , s o m e
+fu n c t i o n al i t y i n t h e t o o l s s ec t i o n i s n o t s u p p o r t ed b y t h e p r i n t er . T h e "F eed o n e
+l ab el " o p t i o n m a y n o t w o r k an d c an b e s u b s t i t u t ed b y s en d i n g : ! U 1 d o
+" t e s t . f e e d " " n o w " .
+1 0 . Wh en u s i n g Z eb r aD es i g n er Pr o v 2 .5 .0 .x , t h e R F I D R ead an d Pr i n t fu n c t i o n al i t y
+i s s u p p o r t ed fo r T ex t an d 1 D b ar c o d e fi el d s o n l y . 2 D b ar c o d e t y p es ar e n o t
+s u p p o r t ed .
+B ac k t o t o p
+C h a n g e L o g
+R elea se Da t e V er sio n C h a n g es
+0 8 J an 2 0 1 0 2 .0
+I n i t i al r el eas e o f n ew p l at fo r m . N ew feat u r es
+i n c l u d e:
+St at u s M o n i t o r
+F o r u s e w i t h EPL an d Z PL p r i n t er s
+O p t i o n al l y i n s t al l ab l e w h en u s i n g t h e
+Pr n I n s t .ex e u t i l i t y
+R eg u l ar l y c h ec k s p r i n t er s t at u s an d
+d i s p l a y s an er r o r m es s ag e w h en an
+er r o r o c c u r s
+Ad v an c ed T CP P o r t
+Pr o v i d es a d efi n ed T CP p o r t t y p e
+T o o l s t ab :
+Si m p l e m et h o d t o s en d c o m m o n
+p r i n t er c o m m an d s .
+Sen d F i l e an d Sen d Co m m an d
+o p t i o n s .
+Su p p o r t s al l c o m m u n i c at i o n p o r t s .
+U s e Pr i n t er Set t i n g s " o p t i o n o n Ad v an c e d
+Set u p t ab :
+Al l o w s u s er t o c o n fi g u r e d r i v er t o n o t
+s en d p r i n t er s et t i n g s
+I n v er s e o p t i o n o n Ad v an c ed Set u p t ab :
+Al l o w s u s er t o c au s e t h e en t i r e l ab el
+t o b e p r i n t ed i n i n v er t ed fo r m at (w h i t e
+t ex t o n b l ac k b ac k g r o u n d )
+P as s t h r o u g h feat u r e o n O t h er Set t i n g s
+d i al o g :
+Al l o w s u s er t o c r eat e b l o c k s o f
+c o m m an d s t o b e s en t t o t h e p r i n t er
+u n c h an g ed b y t h e d r i v er .
+
+Co n t r o l Ch ar ac t er Su b s t i t u t i o n o n t h e O t h er
+Set t i n g s d i al o g :
+Al l o w s t h e Z PL d r i v er t o u s e t h e
+i n t er n al c h ar ac t er s fo r t h e F o r m at (^ )
+an d Co n t r o l (~ ) c h ar ac t er s
+O n -s c r een b ar c o d e r en d er i n g , d i s p l a y o n l y
+fo r d es i g n p u r p o s es
+0 8 J u l 2 0 1 1 2 .6 .6 3 .0 2
+U p d at e R el eas e
+Ad d ed s u p p o r t fo r t h e Q Ln Ser i es an d EZ
+3 2 0 m o d el .
+T h e Pr i n t M o n i t o r w i l l n o w b e c o m p l et ed ,
+ev en i f t h e ap p l i c at i o n i s s t i l l r u n n i n g d u r i n g
+t h e u n i n s t al l p r o c es s .
+M em o r y Car d o p t i o n s fo r G - Ser i es p r i n t e r s
+h a v e b een ex p an d ed .
+Pr i n t p o s i t i o n i n g fo r EPL d r i v er s i n 1 8 0
+d eg r ee r o t at ed m o d e h as b een en h an c ed .
+F o n t an d G r ap h i c D o w n l o ad er i n s t al l at i o n fo r
+R 1 1 0 X i 4 h as b een c o r r ec t ed .
+Set -G et -D o Co m m an d s fo r m at t i n g i s s u e s
+r es o l v ed .
+U I l an g u ag e t r an s l at i o n s fo r t h e Pr i n t er
+I n s t al l Wi z ar d an d St at u s M o n i t o r h a v e b een
+u p d at ed .
+Sp o o l er i n t er ac t i o n s fo r U SB c o n n ec t ed
+p r i n t er s h a v e b een i m p r o v ed t o h an d l e
+s i t u at i o n s w h er e t h e p r i n t er h as b een
+d i s c o n n ec t ed .
+1 5 A u g 2 0 1 1 2 .6 .6 3 .0 6
+U p d at e R el eas e
+T h e "Sen d F i l e" feat u r e fo r M o b i l e p r i n t e r s
+h as b een c o r r ec t ed .
+T h e G X 4 2 0 s i s n o w s u p p o r t ed .
+1 4 Sep 2 0 1 1 2 .6 .6 3 .1 2
+U p d at e R el eas e
+T h e "Sen d an d St o r e" feat u r e fo r M o b i l e
+p r i n t er s h as b een c o r r ec t ed .
+0 3 J an 2 0 1 2 2 .6 .6 7 .0 3
+U p d at e R el eas e
+Co r r ec t ed R u s s i an t r an s l at i o n s .
+I m p r o v ed h an d l i n g o f fi l e h ead er s i n t h e
+'Sen d an d St o r e F i l e i n Pr i n t er ' fu n c t i o n .
+Ad d ed St r eam o p t i o n i n ad v an c ed s et u p .
+
+Ad d ed s u p p o r t fo r t h e fo l l o w i n g p r i n t er
+m o d el s :
+Z D es i g n er G C4 2 0 d
+Z D es i g n er G C4 2 0 d (EPL)
+Z D es i g n er G C4 2 0 t
+Z D es i g n er G C4 2 0 t (EPL)
+Z D es i g n er Q Ln 2 2 0 (Z PL)
+Z D es i g n er Q Ln 3 2 0 (Z PL)
+Z D es i g n er Z E5 0 0 -4 LH -2 0 3 d p i Z PL
+Z D es i g n er Z E5 0 0 -4 LH -3 0 0 d p i Z PL
+Z D es i g n er Z E5 0 0 -4 R H -2 0 3 d p i Z PL
+Z D es i g n er Z E5 0 0 -4 R H -3 0 0 d p i Z PL
+Z D es i g n er Z E5 0 0 -6 LH -2 0 3 d p i Z PL
+Z D es i g n er Z E5 0 0 -6 LH -3 0 0 d p i Z PL
+Z D es i g n er Z E5 0 0 -6 R H -2 0 3 d p i Z PL
+Z D es i g n er Z E5 0 0 -6 R H -3 0 0 d p i Z PL
+Z D es i g n er Z T 2 1 0 -2 0 0 d p i Z PL
+Z D es i g n er Z T 2 1 0 -2 0 0 d p i EPL
+Z D es i g n er Z T 2 1 0 -3 0 0 d p i Z PL
+Z D es i g n er Z T 2 2 0 -2 0 0 d p i Z PL
+Z D es i g n er Z T 2 2 0 -2 0 0 d p i EPL
+Z D es i g n er Z T 2 2 0 -3 0 0 d p i Z PL
+Z D es i g n er Z T 2 3 0 -2 0 0 d p i Z PL
+Z D es i g n er Z T 2 3 0 -2 0 0 d p i EPL
+Z D es i g n er Z T 2 3 0 -3 0 0 d p i Z PL
+0 2 O c t 2 0 1 2 2 .6 .7 7 .0 9
+U p d at e R el eas e
+Ex ec u t ab l e fi l es ar e n o w s i g n ed w i t h Z eb r a
+T ec h n o l o g i es d i g i t al s i g n at u r e.
+Co r r ec t ed an i s s u e w h er e t h e G K 8 8 8 t EPL
+d r i v er c o u l d n o t b e s et fo r d i r ec t t h er m al
+m o d e.
+Co r r ec t ed an i s s u e w h er e t h e G C4 2 0 t EPL
+d r i v er c o u l d n o t b e s et fo r t h er m al t r an s fer
+m o d e.
+Co r r ec t ed an i s s u e w h er e p r i n t jo b s w er e
+d el et ed fr o m t h e Wi n d o w s p r i n t q u eu e w h en
+an o u t o f m ed i a c o n d i t i o n o c c u r r ed an d U SB
+c o m m u n i c at i o n w as u s ed .
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+1 0 5 SLPl u s
+Q Ln 4 2 0
+i M Z 2 2 0
+i M Z 3 2 0
+
+2 5 O c t 2 0 1 2 2 .6 .7 7 .1 8
+U p d at e R el eas e
+U p d at es t o b e Wi n d o w s 8 c o m p at i b l e.
+Co r r ec t ed i M Z 3 2 0 m o d el n am e.
+T h e c o r r ec t D i r ec t T h er m al an d T h er m al
+T r an s fer o p t i o n s ar e n o w d i s p l a y ed fo r t h e
+fo l l o w i n g p r i n t er m o d el s :
+G C4 2 0 t Z PL
+G K 8 8 8 t Z PL
+LP2 8 4 4
+G X 4 2 0 s EPL
+G X 4 2 0 s
+H C1 0 0
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+i M Z 2 2 0 Z PL
+i M Z 3 2 0 Z PL
+1 1 J u n 2 0 1 3 2 .6 .7 7 .1 9
+U p d at e R el eas e
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+Z D 5 0 0 R -2 0 3 d p i Z PL
+Z D 5 0 0 R -3 0 0 d p i Z PL
+1 0 O c t 2 0 1 3 2 .7 .0 3 .1 2
+U p d at e R el eas e
+Ser v er 2 0 1 2 i s n o w s u p p o r t ed .
+U s er s c an n o w c h an g e l an g u ag es s et t i n g s i f
+t h ey h a v e ad m i n r i g h t s (ap p l i es t o Wi n d o w s
+8 an d Ser v er 2 0 1 2 ).
+Co r r ec t ed an i s s u e w h er e M i c r o s o ft Ac c e s s
+w as r ep o r t i n g i n c o r r ec t p ap er n am es w h en
+c u s t o m s t o c k s w er e d efi n ed i n t h e d r i v e r .
+U s er en t er ed v al u es ar e n o w v al i d at ed
+ag ai n s t t h e fi el d s r an g e v al u es .
+Co r r ec t ed an i s s u e i n t h e Z M 4 0 0 EPL d r i v er
+t h at c au s ed i n c o r r ec t p r i n t p o s i t i o n i n g an d
+fo n t s i z e p r i n t i n g .
+Co r r ec t ed t h e m ax i m u m p r i n t w i d t h fo r t h e
+EZ 3 2 0 , M Z 3 2 0 an d i M Z 3 2 0 p r i n t er s .
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+Z E5 0 0 R Ser i es
+0 7 F eb 2 0 1 4 2 .7 .0 3 .1 6
+U p d at e R el eas e
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+
+Z D 5 0 0
+Z T 4 1 0
+Z T 4 1 0 R
+Z T 4 2 0
+Z T 4 2 0 R
+R em o v ed t h e fo l l o w i n g p r i n t er m o d el s t h at
+h a v e p as t t h ei r Ser v i c e & Su p p o r t
+d i s c o n t i n u at i o n d at e:
+1 1 0 P AX 3
+1 7 0 P AX 3
+1 4 0 X i I I I
+1 7 0 X i I I I
+2 2 0 X i I I I
+2 7 4 6 e
+9 0 X i I I I
+9 0 X i I I I Pl u s
+9 6 X i I I I
+9 6 X i I I I Pl u s
+D A4 0 2
+LP2 8 2 4 - Z
+R 1 1 0 X i I I I Pl u s
+R 4 0 2
+R 4 M p l u s
+S4 0 0
+S6 0 0
+T A4 0 2
+T LP2 8 2 4 - Z
+Z 4 M
+Z 4 M p l u s
+Z 6 M
+Z 6 M p l u s
+2 4 Sep 2 0 1 4 5 .1 .0 7 .5 1 4 6
+U p d at e R el eas e
+Co r r ec t ed an i s s u e w h er e s o m e l ab el s i n a
+b at c h d i d n o t p r i n t w h en p r i n t i n g v i a a
+n et w o r k u s i n g t h e Z D es i g n er p o r t m o n i t o r .
+I m p r o v ed t h r o u g h p u t p er fo r m an c e w h en
+u s i n g U SB an d Li n k -O S p r i n t er s .
+T o i m p r o v e t h r o u g h p u t p er fo r m an c e t h e 'U s e
+Z I P Co m p r es s i o n ' s et t i n g i s n o w en ab l ed b y
+d efau l t i n al l Z PL m o d el s .
+Co r r ec t ed an i s s u e w h er e t h e s p o o l er c o u l d
+r es en d fi r m w ar e t o t h e p r i n t er m o r e t h an
+o n c e d u r i n g a fi r m w ar e u p d at e.
+
+Co r r ec t ed an i s s u e w h er e t h e d r i v er w as n o t
+i n s t al l ed i n t h e s el ec t ed l an g u ag e i n t h e
+i n s t al l at i o n w i z ar d .
+Co r r ec t ed t h e m ax i m u m p r i n t s p eed s et t i n g s
+fo r t h e Z T 4 1 0 an d Z T 4 2 0 p r i n t er s .
+Co r r ec t ed t h e m i n i m u m l ab el l en g t h fo r t h e
+Z T 4 1 0 an d Z T 4 2 0 p r i n t er s .
+T h e R F I D o p t i o n i n t h e Z T 4 1 0 R an d Z T 4 2 0 R
+i s n o w en ab l ed .
+Co r r ec t ed an i s s u e w h er e n o m em o r y s l o t
+w as a v ai l ab l e fo r s el ec t i o n i n t h e F o n t
+D o w n l o ad er w h en u s i n g Z D 5 0 0 , Z T 4 1 0 o r
+Z T 4 2 0 p r i n t er s .
+T h e Pr n Li s t .t x t fi l e h as b een r em o v ed fr o m
+t h e d i s t r i b u t i o n .
+Co r r ec t ed t h e m ax i m u m p r i n t w i d t h i n G -
+Ser i es EPL an d Z T - Ser i es EPL d r i v er s .
+T o s i m p l i f y Pl u g 'n ' Pl a y i n s t al l at i o n s , t h e
+d r i v er d i s t r i b u t i o n n o w h as a m et h o d t o
+p r ep ar e t h e c o m p u t er s y s t em b y ad d i n g t h e
+d r i v er t o t h e c o m p u t er 's d r i v er s t o r e.
+M i c r o s o ft h as en d ed s u p p o r t fo r Wi n d o w s X P
+( h t t p s ://w i n d o w s .m i c r o s o ft .c o m /en -
+u s /w i n d o w s /en d -s u p p o r t -h el p ). T h i s d r i v er
+r el eas e al i g n s t o t h at d ec i s i o n , w i t h s u p p o r t
+fo r Wi n d o w s X P h a v i n g b een r em o v ed . T h e
+p r i o r v er s i o n , 2 .7 .0 3 .1 6 , d o es s u p p o r t
+Wi n d o w s X P an d s h al l r em ai n a v ai l ab l e o n
+o u r w eb s i t e fo r d o w n l o ad fo r an ex t en d ed
+p er i o d o f t i m e. V er s i o n 2 .7 .0 3 .1 6 i s a v ai l ab l e
+'as i s '.
+T h er e i s n o t h i n g i m p l em en t ed t o p r ev en t
+t h i s d r i v er fr o m r u n n i n g o n Wi n d o w s X P .
+H o w ev er , t h i s an d fu t u r e v er s i o n s ar e n o t
+t es t ed o n Wi n d o w s X P .
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+Z Q 5 1 0
+Z Q 5 2 0
+G T 8 0 0 (3 0 0 d p i )
+0 6 M ar 2 0 1 5 5 .1 .0 7 .5 6 7 5
+U p d at e R el eas e
+T h e u s er i n t er fac e fo r t h e Z D 5 0 0 3 0 0 d p i EPL
+d r i v er h as b een c o r r ec t ed an d n o w s h o w s
+EPL o p t i o n s .
+Co r r ec t ed c en t er /l eft al i g n ed p r i n t
+p o s i t i o n i n g o n Z D 5 0 0 2 0 3 d p i EPL an d Z T 4 1 0
+2 0 3 d p i EPL d r i v er s w h en p r i n t i n g l es s t h an
+fu l l w i d t h .
+
+Co r r ec t ed an i s s u e w h en u s i n g
+Z eb r aD es i g n er Pr o an d p r i n t i n g a o n e d i g i t
+Co d e 3 9 b ar c o d e.
+Ch an g ed t h e m ax i m u m p r i n t q u an t i t y fr o m
+3 2 0 0 0 t o 9 9 9 9 9 9 9 9 w h en p r i n t i n g fr o m
+ap p l i c at i o n s s u c h as Z eb r aD es i g n er .
+M ax i m u m p r i n t q u an t i t y i s s t i l l 3 2 7 6 8 w h en
+u s i n g ap p l i c at i o n s s u c h as W o r d d u e t o
+Wi n d o w s s i g n ed i n t eg er l i m i t at i o n .
+I m p r o v em en t s t o t h e p r i n t er i n s t al l at i o n
+w i z ar d i n c l u d i n g a feat u r e t o r em o v e
+p r ev i o u s l y i n s t al l ed d r i v er s fr o m t h e d r i v er
+s t o r e.
+D r i v er s i n s t al l ed u s i n g t h e p r i n t er
+i n s t al l at i o n w i z ar d c an n o w b e r em o v ed
+u s i n g t h e Pr i n t M an ag em en t c o n s o l e.
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+Z D 4 1 0
+Z D 4 2 0
+Z R 3 3 8
+Z R 6 2 8
+Z R 6 3 8
+Z T 4 1 0 R 6 0 0 d p i
+0 6 A u g 2 0 1 5 5 .1 .0 7 .5 6 8 2
+U p d at e R el eas e
+T h i s r el eas e h as b een c er t i fi ed fo r Wi n d o w s
+1 0 .
+I m p r o v em en t s t o t h e p r i n t er i n s t al l at i o n
+w i z ar d - p r ev i o u s l y i t c o u l d r em o v e al l
+p r i n t er s an d r el at ed d r i v er s . I t c an n o w
+o p t i o n al l y r em o v e d r i v er s ev en i f t h er e i s n o
+r el at ed p r i n t er i n s t al l ed .
+T h e ab o u t d i al o g g r ap h i c h as b een u p d a t ed
+t o r efl ec t n ew b r an d i n g .
+Su p p o r t fo r t h e ^ R L R F I D c o m m an d i s
+s u p p o r t ed fo r u s e w i t h Z eb r aD es i g n er .
+T h e h el p fi l e h as b een u p d at ed w i t h t h e n ew
+c o r p o r at e ad d r es s an d r efer en c es r em o v ed
+t o o p er at i n g s y s t em s n o l o n g er s u p p o r t e d .
+Co r r ec t ed p r i n t s p eed l i m i t s i n Z D 5 0 0 an d
+Z T 4 1 0 EPL d r i v er s .
+Co r r ec t ed an i s s u e i n t h e F o n t & G r ap h i c
+D o w n l o ad er w h er e i t g en er at ed t h e s am e
+fi l e n am e fo r d i ffer en t s i z e fo n t s .
+M i c r o s o ft h as en d ed ex t en d ed s u p p o r t fo r
+Wi n d o w s Ser v er 2 0 0 3 . T h i s d r i v er r el eas e
+al i g n s t o t h at d ec i s i o n , w i t h s u p p o r t fo r
+Wi n d o w s Ser v er 2 0 0 3 h a v i n g b een r em o v ed .
+T h e p r i o r v er s i o n , 2 .7 .0 3 .1 6 , d o es s u p p o r t
+
+Wi n d o w s Ser v er 2 0 0 3 an d s h al l r em ai n
+a v ai l ab l e o n o u r w eb s i t e fo r d o w n l o ad fo r an
+ex t en d ed p er i o d o f t i m e. V er s i o n 2 .7 .0 3 .1 6
+i s a v ai l ab l e 'as i s '.
+T h er e i s n o t h i n g i m p l em en t ed t o p r ev en t
+t h i s d r i v er fr o m r u n n i n g o n Wi n d o w s Ser v er
+2 0 0 3 . H o w ev er , t h i s an d fu t u r e v er s i o n s ar e
+n o t t es t ed o n Wi n d o w s Ser v er 2 0 0 3 .
+2 6 F eb 2 0 1 6 5 .1 .0 7 .6 2 9 0
+U p d at e R el eas e
+T h e St at u s M o n i t o r i n s t al l er n o w i n c l u d es
+Z eb r a's d i g i t al s i g n at u r e.
+Co r r ec t ed an i s s u e w h er e t h e ex i s t en c e o f
+t h e z eb r az b r n .i n f c o u l d c au s e U SB
+i n s t al l at i o n i s s u es . T h e i n s t al l er n o w c h ec k s
+fo r i t an d d el et es i t i f n ec es s ar y .
+I m p l em en t ed s u p p o r t fo r R F I D EPC G en 2 v 2 .
+T h i s ad d s a n ew PC W o r d d at a fi el d i n
+Z eb r aD es i g n er w h er e t h e u s er c an s et t h e
+PC W o r d .
+F o r R F I D 2 4 0 b i t EPC t ag , 7 8 0 0 i s n o w s en t
+fo r PC M em o r y i n s t ead o f 6 0 0 0 .
+Co r r ec t ed an i s s u e w h er e R F I D u s er d at a
+w as i n c o r r ec t l y w r i t t en t o t h e EPC m em o r y
+fi el d .
+0 7 Sep 2 0 1 6 5 .1 .1 6 .6 4 4 7
+U p d at e R el eas e
+U p d at ed t h e EU LA i n t h e d i s t r i b u t i o n .
+Co r r ec t ed an i s s u e w h er e a t i l d e c h ar ac t er
+w as n o t en c o d ed c o r r ec t l y i n a D at am at r i x
+b ar c o d e.
+U p d at ed J ap an es e t r an s l at i o n s i n t h e U I fo r
+Z PL p r i n t er s .
+F o r CPCL p r i n t er s t h e F O R M c o m m an d i s n o
+l o n g er s en t w h en t h e p ap er t y p e i s s et t o
+J o u r n al .
+A n e w R T C f o r m a t i s s u p p o r t e d w h e n u s i n g
+Z e b r a D e s i g n e r ( Y Y J J J : y e a r i n t w o d i g i t s + j u l i a n
+d a t e ) .
+Co r r ec t ed an i s s u e w h er e t h e ab o u t d i al o g
+d i s p l a y ed g ar b ag e i f t h e m o d el n am e w as
+g r eat er t h an 3 2 c h ar ac t er s .
+T h e d r i v er i s n o w P ac k ag e- a w ar e t o s u p p o r t
+t h e M i c r o s o ft s ec u r i t y u p d at e d es c r i b ed i n
+Ar t i c l e I D : 3 1 7 0 0 0 5
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+Z Q 3 1 0
+Z Q 3 2 0
+
+Z T 5 1 0
+Z T 6 1 0
+Z T 6 1 0 R
+Z T 6 2 0
+Z T 6 2 0 R
+Z R 3 1 8
+Z R 3 2 8
+1 3 F eb 2 0 1 7 5 .1 .1 6 .6 4 6 5
+U p d at e R el eas e
+Co r r ec t ed an i s s u e w h er e Z eb r a Set u p
+U t i l i t i es m a y s t o p r es p o n d i n g o n Wi n d o w s
+1 0 aft er t h e p r i n t er c o n n ec t ed v i a U SB h ad
+r es t ar t ed .
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+Z D 6 2 0
+1 6 O c t 2 0 1 7 5 .1 .1 6 .6 8 3 9
+U p d at e R el eas e
+T h i s r el eas e i n c l u d es c er t i fi c at i o n fo r
+Wi n d o w s Ser v er 2 0 1 6 .
+Ad d ed Li n er l es s P eel , Li n er l es s Cu t an d
+Li n er l es s D el a y ed Cu t m o d es t o s u p p o r t
+Z D 6 0 0 s er i es .
+U s i n g u p /d o w n ar r o w s t o s et n u m b er o f
+c o p i es n o w w o r k s c o r r ec t l y w h en u s i n g
+M i c r o s o ft ap p l i c at i o n s .
+Co r r ec t ed R F I D t ag o p t i o n s fo r t h e Z T 6 0 0 R
+s er i es .
+Co r r ec t ed an i s s u e w h er e an er r o r o c c u r r ed
+i n Z eb r aD es i g n er w h en s el ec t i n g t ag d at a
+fo r an EPC Cl as s 0 6 4 /9 6 b i t R F I D t ag .
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+G K 4 2 0 E
+G K 8 8 8 E
+0 1 N o v 2 0 1 7 5 .1 .1 6 .6 8 4 6
+U p d at e R el eas e
+Ch an g ed t h e G K 4 2 0 E/G K 8 8 8 E Pn P s t r i n g s t o
+G K 4 2 0 e/G K 8 8 8 e.
+0 5 D ec 2 0 1 7 5 .1 .1 6 .6 8 4 9
+U p d at e R el eas e
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+G K 4 2 0 t Pl u s
+Z D 5 1 0
+
+Z Q 6 1 0
+Z Q 6 2 0
+Z R 6 5 8
+Z R 6 6 8
+2 3 M ar 2 0 1 8 5 .1 .1 6 .6 8 5 4
+U p d at e R el eas e
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el :
+G T 8 0 0 Pl u s
+1 8 J u n 2 0 1 8 5 .1 .1 6 .6 8 5 7
+U p d at e R el eas e
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+Z D 5 1 1
+Z Q 1 2 0
+Z Q 2 2 0
+Z Q 6 3 0
+Z Q 6 3 0 R
+Z R 1 3 8
+1 5 A u g 2 0 1 8 5 .1 .1 6 .6 9 1 7
+U p d at e R el eas e
+Co r r ec t ed an i s s u e w h er e t h e w r o n g v er s i o n
+n u m b er w as d i s p l a y ed i n t h e ab o u t d i al o g .
+Co r r ec t ed an i s s u e i n t h e Z T 6 2 0 d r i v er t h at
+p r ev en t ed m em o r y c ar d o p t i o n s d i s p l a y i n g
+i n t h e F o n t & G r ap h i c d o w n l o ad er .
+Ad d ed t h e z eb r a.c o m u r l i n t h e Z D 6 2 0 ab o u t
+d i al o g .
+U p d at ed s o m e c o n fi g u r at i o n fi l es fo r
+c o n s i s t en c y .
+0 6 Sep 2 0 1 8 5 .1 .1 6 .6 9 2 4
+U p d at e R el eas e
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+Z D 2 2 0
+Z D 2 3 0
+Z D 8 8 8
+0 4 J an 2 0 1 9 5 .1 .1 6 .6 9 2 7
+U p d at e R el eas e
+M i c r o s o ft h as en d ed s u p p o r t fo r Wi n d o w s
+Vi s t a ( h t t p s ://s u p p o r t .m i c r o s o ft .c o m /en -
+g b /h el p /2 2 8 8 2 /w i n d o w s - v i s t a-en d -o f -
+s u p p o r t ). T h i s d r i v er r el eas e al i g n s t o t h at
+
+d ec i s i o n , w i t h s u p p o r t fo r Wi n d o w s Vi s t a
+h a v i n g b een r em o v ed .
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+Z T 4 1 1
+Z T 4 1 1 R
+Z T 4 2 1
+Z T 4 2 1 R
+1 8 J u n 2 0 1 8 5 .1 .1 6 .7 1 1 0
+U p d at e R el eas e
+Co r r ec t ed t h e Z R 6 6 8 m o d el d es c r i p t i o n fr o m
+CPL C t o CPCL. (Pn P w as n o t affec t ed )
+Co r r ec t ed t h e m ax i m u m m ed i a w i d t h fo r t h e
+Z D 5 0 0 R 3 0 0 d p i m o d el .
+Co r r ec t ed t h e d efau l t d ar k n es s s et t i n g fo r
+t h e Z R 6 2 8 an d Z R 6 3 8 Z PL d r i v er s . Ch an g ed
+fr o m 0 t o 1 0 .
+Co r r ec t ed t h e m i n i m u m h ei g h t an d w i d t h fo r
+t h e Z Q 3 1 0 , Z Q 5 1 0 an d Z R 3 1 8 .
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+Z Q 1 1 2
+Z Q 2 1 0
+Z Q 5 1 1
+Z Q 5 1 1 R
+Z Q 5 2 1
+Z Q 5 2 1 R
+Z R 1 1 8
+2 1 A u g 2 0 1 9 5 .1 .1 6 .7 1 1 7
+U p d at e R el eas e
+T h i s r el eas e h as b een c er t i fi ed fo r Wi n d o w s
+Ser v er 2 0 1 9 .
+1 0 F eb 2 0 2 0 5 .1 .1 6 .7 2 1 7
+U p d at e R el eas e
+T h e D i r ec t T h er m al an d T h er m al T r an s fer
+o p t i o n s ar e n o w s el ec t ab l e i n t h e Z D 8 8 8 an d
+Z D 2 2 0 d r i v er s .
+Co r r ec t ed an i s s u e i n t h e F o n t & G r ap h i c
+d o w n l o ad er t h at c au s ed t ex t t o b e m i s -
+al i g n ed w h en d o w n l o ad i n g an d u s i n g a
+r o t at ed fo n t i n CPCL.
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+Z D 4 1 1
+Z D 4 2 1
+Z D 6 1 1
+
+Z D 6 1 1 R
+Z D 6 2 1
+Z D 6 2 1 R
+2 8 J u l 2 0 2 0 5 .1 .1 6 .7 2 2 8
+U p d at e R el eas e
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el s :
+Z E5 1 1
+Z E5 1 1 R
+Z E5 2 1
+Z E5 2 1 R
+2 2 J an 2 0 2 1 5 .1 .1 6 .7 3 9 8
+U p d at e R el eas e
+Ad d ed t h e fo l l o w i n g p r i n t er m o d el :
+Z D 4 2 1 CN
+B ac k t o t o p
+T e c h n ic a l S u p p o r t
+W o r l d w i d e T ec h n i c al Su p p o r t i s a v ai l ab l e t h r o u g h y o u r R es el l er , o r at :
+h t t p s ://w w w .z eb r a.c o m /c o n t ac t
+Z eb r a T ec h n o l o g i es Co r p o r at i o n
+Corpor ate & International Headquarters
+3 Ov erlook P oint
+Lincolnshire, Illinois 60069 US A
+Ph o n e: + 1 8 4 7 9 1 3 2 2 5 9
+F ax : + 1 8 4 7 9 1 3 2 5 7 8
+B ac k t o t o p
+S o f t w a r e U p d a t e s
+Z D es i g n er Pr i n t er D r i v er s ar e fr eq u en t l y u p d at ed an d m o d i fi ed t o t ak e ad v an t ag e o f
+n ew d ev el o p m en t s . U p d at ed d r i v er s w i l l b e a v ai l ab l e o n o u r w eb s i t e:
+h t t p s ://w w w .z eb r a.c o m
+B ac k t o t o p
+© 2 0 2 0 Z e b r a T e c h n o l o g i e s C o r p o r a   o n a n d / o r i t s a ﬃ l i a t e s . A l l r i g h t s r e s e r v e d .

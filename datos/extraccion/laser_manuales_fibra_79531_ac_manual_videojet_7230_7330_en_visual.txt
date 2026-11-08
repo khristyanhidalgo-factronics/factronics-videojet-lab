@@ -1,0 +1,1814 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\79531-AC Manual Videojet 7230-7330 EN.pdf
+# cifrado=False bloques=86 caracteres=80423
+
+AL-79531
+Rev. AC [EN], May 2021
+Translation of the original instructions
+Operating Instructions
+Videojet 7230/7330
+
+B1b. uf8xOPkneWTTeWUieiMnTG55DA wueu8xOkuOmv3.m37uc1DA3-b7upbwuO.- v w7uB1Dv3E vC1D3
+E3N-[]-5e0-CT1[r[R3-.ev1Cn
+»3«uf8xOPk neWTTetW/eniUi]dh!pkuc3.3E37u»l3.A 7u, l 3.07u]l v3.E7u•3C3.7uxC3D.7uxD.-3Cbl 7
+].m!vu»3«k MiTeMnMeiM/ah1 ud m1 lv3.Ew7uh1 u8.Dm EuFD.-Eb
+ntTTu2Dmm vu4bRv I3lE
+i3.573o 5[7.es[7rNs3N-
+LbbEu63v 7u]p
+MTnanenTriu8xO
+sssnl3N-[]-5nC[t
+cbC0lD-1mu/T/n7u[DE bN muh A1.bvb-D wu].Asuf1 l D.ul 5 ll Eumbu3wu[DE bN mP
+OvvulD-1mwul w lI Esuh1DwuEbAR  .muDwum1 uClbC lm0ub5u[DE bN muh A1.bvb-D wu].Asu3.EuAb.m3D.wuAb.5DE .mD3vu3.E
+ClbClD m3l0uD.5bl 3mDb.ubS. Euy0u[DE bN msuO.0uR.3Rm1blD9 EuAbC0D.-7uRw ubluEDwAvbwRl ub5uDmuSDm1bRmuClDbluC le
+ DwwDb.ub5u[DE bN muDwuwmlDAmv0uClb1DyDm Es
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / Table of contentsiii
+5.1Operation of the Laser System ..................................................................... 32
+5Operating the Laser System ......................................................................... 32
+4.8Working Distance and Marking Field ............................................................ 31
+4.7Technical Data .............................................................................................. 29
+4.6The Structure of the Laser System ............................................................... 28
+4.5The Laser Parameters .................................................................................. 27
+4.4The Marking of the Product Surface ............................................................. 27
+4.3The Marking Head ........................................................................................ 26
+4.2The Laser Beam Source ............................................................................... 26
+4.1Function Principle of a Vector-Scanning Laser System ............................... 26
+4Description of the Laser System .................................................................. 26
+3.9.2Final Shutdown ................................................................................. 25
+3.9.1Temporary Shutdown ....................................................................... 24
+3.9Shutdown ...................................................................................................... 24
+3.8Definition of the IP Address .......................................................................... 24
+3.7Interfaces of the Laser System ..................................................................... 22
+3.6Fume Extractor ............................................................................................. 21
+3.5Cooling ......................................................................................................... 21
+3.4Installation Conditions .................................................................................. 20
+3.3Unpacking ..................................................................................................... 20
+3.2Transport and Storage .................................................................................. 19
+3.1Installation and Start-Up ............................................................................... 19
+3Installation ...................................................................................................... 19
+2.12Warning and Information Labels ................................................................... 17
+2.11Decomposition Products ............................................................................... 16
+2.10Electrical Safety ............................................................................................ 15
+2.9Fire and Explosion Hazard ........................................................................... 15
+2.8Noise Hazard ................................................................................................ 14
+2.7Adjustment/Modification of the Marking Field ............................................... 14
+2.6Dangers to Eyes and Skin ............................................................................ 13
+2.5Safety Devices and Warning Lights .............................................................. 11
+2.4Maintenance and Service ............................................................................. 11
+2.3.1Marking of Highly Reflective Material ............................................... 10
+2.3Intended Use .................................................................................................. 9
+2.2Laser Classes ................................................................................................. 7
+2.1Symbols Used ................................................................................................ 7
+2Safety Instructions .......................................................................................... 7
+1Preface .............................................................................................................. 5
+Table of contents
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / Table of contentsiv
+Index ............................................................................................................. 82
+8.4Drawings ..................................................................................................... 77
+8.3.4Safety Circuit Variant 2 ................................................................... 75
+8.3.3Safety Circuit Variant 1 ................................................................... 74
+8.3.2Fume Extractor/Encoder/Trigger .................................................... 73
+8.3.1Laser Control/Job Selection ............................................................ 72
+8.3Wiring Examples ......................................................................................... 72
+8.2.9Assignment Backplate .................................................................... 71
+8.2.8Assignment of Connector X27 Laser Control ................................. 70
+8.2.7Assignment of Connector X30 External Job Selection ................... 69
+8.2.6Assignment of Connector X25 Encoder/Product Detector .............. 67
+8.2.5Assignment of Connector X33 Internal Signals .............................. 66
+8.2.4Assignment of Connector X22 Laser Control ................................. 64
+8.2.3Assignment of Connector X29 Laser Control ................................. 63
+8.2.2Assignment of Connector X21 Fume Extractor .............................. 62
+8.2.1Power Supply Connector for the Customer Interface (Connector
+8.2Assignment of the Customer Interface ....................................................... 58
+8.1Safety Circuit of the Laser System ............................................................. 52
+8Appendix ...................................................................................................... 52
+7.2Malfunctions DescriptionsX28) ........................................................................................................................................................................... 60 49
+7.1Notes .......................................................................................................... 49
+7Malfunctions ................................................................................................ 49
+6.4Protocols for Maintenance, Repair and Replacement ................................ 41
+6.3.3Mounting the Laser Scan Lens ....................................................... 41
+6.3.2Cleaning the Laser Scan Lens ........................................................ 40
+6.3.1Disassembly of the Laser Scan Lens ............................................. 40
+6.3Cleaning the Laser Scan Lens ................................................................... 39
+6.2Maintenance Plan ....................................................................................... 38
+6.1General Notes Concerning Maintenance ................................................... 38
+6Maintenance ................................................................................................. 38
+5.3.2Switch-Off ....................................................................................... 36
+5.3.1Switch-On ....................................................................................... 35
+5.3Switch-On/Off of the Laser System ............................................................ 35
+5.2Elements on the Supply Unit ...................................................................... 33
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 1 Preface 5
+NOTICE
+1 Preface
+This manual...
+...contains all information required for the safe operation, remedy of minor mal-
+functions and maintenance of the laser system. The operation manual is always
+enclosed with every laser system on a data carrier. This operation manual is in-
+tended for the trained operation personnel of the laser system.
+This operation manual is subject to technical modifications for improvement or
+technical progress without notice.
+Before starting your work carefully read the chapter »Safety Instructions«!
+The printed safety instructions must be stored near the laser system, easily ac-
+cessible for the operator!
+Make sure that you have understood all notes. In case of any questions please
+contact Videojet Technologies Inc. directly.
+Strictly follow the instructions!
+If you need help...
+...please contact Videojet Technologies Inc. at 1-800-843-3610 (for all customers
+within the United States). Outside the U.S., customers should contact their Video-
+jet Technologies Inc. distributor or subsidiary for assistance.
+Videojet Technologies Inc.
+1500 Mittel Boulevard
+Wood Dale IL 60191-1073, USA
+Phone (USA): 1 800 843 3610
+International: +1 630 860 7300
+Fax (USA): 1 800 582 1343
+International Fax: +1 630 616 3629
+Website: www.videojet.com
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 1 Preface 6
+Caution Laser Radiation!
+With open delivery system dangerous laser radiation of class 4 might be
+released!
+This might cause severe burns of the eyes and the skin as well as damage
+to objects!
+Thoroughly read this operation manual and strictly follow the safety in-
+structions!
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 2 Safety Instructions7
+2.2 Laser Classes
+ DANGER LASER RADIATION
+NOTICE
+Laser classes 1, 2 and 4 according to EN 60825-1 are relevant for this laser sys-
+ CAUTION
+tem.
+ WARNING
+ DANGER
+Laser radiation of class 1 is safe for the eye and does not result in any damage
+even in case of long-term intentional viewing. Also encapsulated high-power
+2.1 Symbols Used
+lasers are classified as class 1 systems if the hazardous laser radiation is not ac-
+2 Safety Instructions
+cessible in normal operation.
+Laser radiation of class 2 is safe for the eye if natural defense mechanisms (blink
+reflex, turning the head) are not suppressed. Do not stare into the beam.
+refers to an immediately impending danger. If the danger is not avoided, it could
+result in death or severe (crippling) injury.
+Laser radiation of class 4 is dangerous to the eye and the skin. Also diffusely re-
+flected radiation can be hazardous. There may also be a risk of fire.
+refers to a possibly dangerous situation. If it is not avoided, it could result in death
+or severe injury.
+refers to a possibly dangerous situation. If it is not avoided, it could result in slight
+or minor injury. May also be used to warn of damage to property.
+refers to handling tips and other particularly useful information. This does not sig-
+nify a dangerous or harmful situation.
+refers to the emission of laser radiation and therefore to a possibly dangerous sit-
+uation. Please comply exactly with the safety instructions! Failure to comply with
+the instructions could result in minor or major injuries to the eyes (blindness) or to
+the skin, together with damage to property.
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e Mew9(-5bev1.57 C53[1.U
+eicjOdueWcwdueucivc0vAj
+jA0vpd
+h1 ucb Cv m up3w lux0wm
+h1 uv3w luDmw v5uDwuAv3wwD5D Eu3wuAv3wwuUuv3w luw0wm  u3AAblED.-umbuVduMTW/tensu8C
+mbum1 uy 3 ubRmv mum1 u Cr[.-N uv3w luw0wm  u3Amwu3wu3u Cr9..eher9.-7e.b.5-t uD.
+n
+1[7t9re[L-7953[1 s
+]5um1 uy 3 ubRmv muD.AvRED.-um1 ubyN Amumbuy u 3l: EuDwuw1D vE Eu3CClbClD3m v07um1
+C[tLr-5-GeCr[.-N uv3w luw0wm  u3Amwu3wu3u Cr9..eher9.-7e.b.5-t uD.u 1[7t9re[L-7g
+n
+953[1 u3.Eu.bu3EEDmDb.3vuClbm AmDb.uDwul "RDl Eu5blubC l3mDb.suh1 uw1D vED.-uCl e
+I .mwu   l-D.-ub5uv3w lul3ED3mDb.ubluv3w luy 3 ul 5v AmDb.ws
+h1 uv3w luy 3 u «Dmwu3mum1 u 3l:D.-u1 3Eum1lbR-1um1 u5bARwD.-uv .wuf3llbSPs
+]5u3uCDvbmuv3w luDwuD.wm3vv EuCv 3w u.bm um13mum1DwuDwu3uv3w lub5uAv3wwu/u3.Eum1 l 5bl
+m1 uAb Cv m uw0wm  uSDm1uw1D vED.-uDwumbuy uAv3wwD5D Eu3wuAv3wwu/uD5um1 uw1D vED.-
+Eb wu.bmuwR55DAD .mv0u3mm .R3m um1 ul3ED3mDb.ub5um1 uCDvbmuv3w ls
+h1 uw1D vED.-uDwu.bmuD.AvRE EuD.um1 uwAbC ub5uE vDI l0µ
+h1 uy 3 uC3m1u Rwmu3vS30wuy uAvbw E7u3vwbuD5um1 l uDwu.buClbERAmuD.u5lb.mub5um1
+v3w luv .ws
+ns
+udbl 3vubC l3mDb.uEb wu.bmuD.AvRE uw lIDA 7u 3D.m .3.A u.blul C3Dlws
+h1 up3w luxbRlA
+h1 uqmm lyDR u5Dy luv3w luf1 l D.35m luA3vv Euv3w lPuDwubC l3m EuD.uCRvw EubC l3e
+mDb.suh1 uv3w luDmw v5uDwuAv3wwD5D Eu3wuAv3wwuUsu]muClbERA wuD.IDwDyv ufD.5l3l EPul3ED3e
+mDb.uS1DA1uDwu «ml   v0uE3.- lbRwu5blum1 u 0 u3.EuE3.- lbRwu5blum1 uw:D.s
+GCmDb.3vv07u3uCDvbmuv3w luA3.uy uD.wm3vv Eu  DmmD.-uIDwDyv uv3w lul3ED3mDb.ub5uAv3wwu/s
+h1Dwuv3w lul3ED3mDb.uA3.uE3 3- um1 u 0 uD5uDmuwm3l wuD.mbum1 uy 3 s
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 2 Safety Instructions9
+• Danger of explosion!
+• Never expose unknown materials to laser radiation!
+Make sure that the laser area is free of explosive materials or vapors!
+• Never expose reflecting surfaces to laser radiation!
+Some materials are easily penetrated by the laser beam, although they seem
+• Never expose flammable materials to laser radiation!
+The reflected laser beam may cause the same dangers - in individual cases
+• to be opaque for the human eye.Never expose human beings or animals to laser radiation!
+Always ensure appropriate shielding of the laser beam! Errors during marking
+even greater dangers - as the original laser beam. See also section "This might result in severe burns of eyes or skin. Marking
+on flammable materials (e.g. paper) might cause fires. Take suitable safety
+ DANGER LASER RADIATION
+of Highly Reflective Material [ } 10 ] ".
+measures by installing e.g. smoke or fire detectors, extinguishers, or similar!
+2.3 Intended Use
+ CAUTION
+The laser system must only be used for the treatment of material surfaces .
+ DANGER LASER RADIATION
+The surfaces are locally heated by intensive class 4 laser radiation and are modi-
+fied thereby. These systems are mainly applied for marking of product sur-
+faces(dates, batch printing, serial numbers, etc.).As soon as the closed shielding or the housing of the laser are opened anywhere
+the complete laser system is set to class 4.
+In that case appropriate measures have to be taken in order to protect people
+working in the laser area against excessive radiation! For information on appropri-
+The radiation produced by the laser system is of high energy and therefore im-
+ate safety measures we offer special training seminars, see also section »Mainte-
+proper use represents a danger to persons or objects!
+nance and Service«.
+The laser system must only be installed in production sites with restricted access.
+Examples for Improper Use and the Resulting Risks
+... with modifications!
+EN 60825, part 1, »Radiation safety of laser systems«, section 4.1.1 says:
+If a modification by the user to a laser system previously classified in accordance
+with this standard leads to a change of its performance data and/or its intended
+use that person or organization performing the modification is responsible for a
+new classification and labeling of the laser system.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 2 Safety Instructions10
+• When setting the laser power start with the maximum value and reduce the
+• When marking reflecting material try not to mark in the center of the marking
+power until the marking result is satisfying. If no marking is visible at maxi-
+• Make sure that the working distance is set correctly before marking any re-
+field. Position the product so that the marking is in the edge of the marking
+mum power the material cannot be marked using this laser.
+flecting material. Use a weakly reflecting material for testing, e.g. laminated
+field.
+2.3.1 Marking of Highly Reflective Material
+paper.
+• For safety reasons arbitrary modifications or changes to the laser mark-
+When marking highly reflective material there might be a reflection of radiation
+ing system are forbidden and result in loss of warranty!
+back into the laser. In this case the system switches to fatal error mode. Espe-
+If a modification made by the user to a previously classified laser system
+cially if the working distance was not set correctly this may lead to irreversible
+leads to a change of its performance data and/or its intended use that person
+damage of the system.
+or organization performing the modification is responsible for a new classifica-
+Observe the following when marking highly reflective materials:
+tion and labeling of the laser system. The person or organization is then re-
+garded as »manufacturer«.
+In this case a new risk assessment is required.
+If the laser system has switched to fatal error mode, a reset is required: Switch
+the laser system off and on again and observe the above mentioned notes.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 2 Safety Instructions11
+Key switch The key switch prevents operation of the laser system
+by unauthorized people. Make sure that the key is
+withdrawn and available to authorized personnel only!
+2.5 Safety Devices and Warning
+• Combined training:
+• Training for technicians:
+In addition to the knowledge gained during the training for technicians the per-
+The trainee gains the knowledge required to perform all maintenance and ser-
+son is trained as laser safety officer. This training is accepted by the trade co-
+Lights
+vice tasks at the laser system safely and professionally without assistance.
+NOTICE operative association (see above).
+The complete laser system includes various safety devices and warning lights
+which shall prevent damage to people or objects. There must not be any alter-
+2.4 Maintenance and Service
+ations to safety devices nor warning lamps (see section " Laser Classes [ } 7 ] ")!
+The maintenance tasks described hereinafter should only be carried out by espe-
+Safety Devices
+cially trained personnel.
+The service tasks are exclusively to be carried out by service personnel of Video-
+jet Technologies Inc. or one of their representatives. During these works the laser
+system has to be operated in class 4 . In Germany, the DGUV Regulation 11
+»Laser Radiation« says that the responsible trade cooperative association and
+the authority responsible for occupational safety (Trade Supervisory Office) have
+to be given notice of class 3R, 3B or 4 laser systems before initial operation.
+Please make sure to comply with your local regulations.
+Give notice of the laser system to the responsible trade cooperative association
+and the Trade Supervisory Office before initial operation.
+Have a person responsible for the safety of the laser system trained as laser
+safety officer and inform the trade cooperative association in writing about this
+person if the system is operated in class 4 for maintenance purposes.
+In order to facilitate safe performance of all necessary maintenance and service
+tasks without assistance and to ensure highest safety for the operating and main-
+tenance personnel we offer special training seminars.
+Ask for free information material!
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 2 Safety Instructions12
+NOTICE
+Additional warningAdditional lights can be connected as external emis-
+Red lights The red lights on the control panel of the supply unit
+lights sion displays (system-specific).
+"Laser emission"and on the marking unit light up when the emission of
+Safety interlock If the safety interlock is opened, the laser power sup-
+laser radiation of class 4 is possible. The functioning
+Beam shutter The beam shutter is located within the laser head and
+( Interlock) ply module is deactivated and the beam shutter is
+of these lights is monitored. In case of malfunction the
+prevents the emission of laser radiation of class 4.
+closed. Thus no laser radiation of class 4 can be emit-
+system cannot start the laser.
+ted.
+If a pilot laser is used, the emission of visible laser ra-
+diation of class 2 is still possible.
+It is possible to continue using the pilot laser in this
+state. In that case no laser radiation higher than class
+2 can be emitted.
+Warning Lights
+When installing the laser make sure that at least one of the warning lights is al-
+ways visible.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 2 Safety Instructions13
+3 5
+in focus 10 35 x 10 32 x 10
+at the beam outlet 10 1.6 142
+max. average powerW maximum energy 3 5
+20 67 x 10 32 x 10
+20 3 142
+The pulse duration can be between 80 ns and 120 ns and the maximum pulse
+density density
+• designed for continuous wave as well as for pulse operation .
+2 2
+• energy is 1.1 mJ. designed for the power range of the laser. Values of maximum average
+W/mm µJ/mm
+Careful with confusions!
+• The pulse peak power can reach up to 20 kW.power:designed for the wavelength range of the fiber laser of 1040 - 1090 nm. See
+Safety goggles for other lasers, e.g. CO lasers, do not provide adequate pro-
+2
+Videojet 7230ID label of the laser system. : 12 W
+tection against radiation of a fiber laser!
+Videojet 7330 : 24 W
+2.6 Dangers to Eyes and Skin
+The laser system produces class 4 laser radiation. This radiation is emitted in the
+infrared range and invisible to the human eye.
+High irradiation causes an extreme local heating and burning of the tissue. The
+eyes are subject to special risks: High radiation intensity causes a local heating
+and burning of the cornea and thus a reduction or loss of sight!
+Suitable safety goggles provide protection against direct, specularly reflected or
+diffusely scattered laser radiation. Suitable safety goggles are:
+The following values can be reached (no specification):
+The skin can withstand higher radiation intensities than the eye. However - de-
+pending on the radiation period and radiation intensity - the tissue is destroyed
+through burns. Therefore protect your skin by wearing adequate personal protec-
+tive equipment! Avoid any exposure of your skin to the laser radiation! Avoid the
+laser beam coming in contact with your clothing!
+If a pilot laser is installed it emits visible laser radiation of class2 in the wave-
+length range of 600 nm to 700 nm. The laser power is < 1 mW.
+This laser radiation may cause damage to the eye when staring into the beam.
+It is safe for the eye if natural defense mechanisms (blink reflex, turning the head)
+are not suppressed when unintentionally looking into the beam.
+The bright laser light may cause startle reflexes and temporary visual distur-
+bances due to glare. This must be kept in mind when carrying out safety-related
+tasks, e.g. working with machines.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 2 Safety Instructions14
+NOTICE
+2.8 Noise Hazard
+ WARNING
+During the marking process high-frequency noises are produced.
+ DANGER LASER RADIATION
+2.7 Adjustment/Modification of the
+Protect your ears and wear a suitable hearing protection.
+Marking Field
+Via the software the marking field of the laser can be modified in such a way that
+the laser beam can possibly be directed to the shielding or onto other compo-
+nents or parts. Thus, surfaces exposed to irradiation can be damaged or de-
+stroyed.
+If, as a result of the modification, the laser beam becomes accessible the com-
+plete laser system is set to class 4 (see section " Laser class [ } 7 ] ").
+Fire and explosion hazard if there are flammable materials or explosive atmos-
+pheres within the area of the laser beam.
+Appropriate safety measures must be taken if the laser is to be operated in explo-
+sive atmospheres.
+A password is required for changing the marking field (if the password protection
+has been activated in the software). The password can be changed subsequently
+by a user authorized for the corresponding user level.
+We explicitly point out that the person who will fulfil a modification of the
+marking field, will assume the full responsibility for any consequential dam-
+age and problems!
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 2 Safety Instructions15
+ DANGER
+2.10 Electrical Safety
+The laser system was designed in accordance with the general rules of technol- WARNING
+ogy.
+2.9 Fire and Explosion Hazard
+During works at the open laser housing alive components are accessible.
+The high output power of a class 4 laser can inflame various materials. Therefore,
+Make sure that rules and regulations for works on alive components are always
+while performing maintenance and service work at the open laser housing and/or
+observed!
+open beam delivery system, make sure that fire protection measures were taken
+All works at the open laser housing, especially at electrical components, must
+before starting the works!
+only be performed by specially trained personnel!
+Paper (circuit diagrams, leaflets, posters on the walls, etc.), curtains which are not
+impregnated fire retardantly, wooden boards or similar flammable materials can
+easily be inflamed by direct or reflected laser radiation.
+Make sure that the working area of the laser system is free from containers with
+flammable or explosive solvents or cleaning agents! Unintended exposure of
+a container to intensive invisible laser radiation might easily cause fires or explo-
+sions.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 2 Safety Instructions16
+ WARNING
+2.11 Decomposition Products
+When treating materials with laser radiation decomposition products are produced
+which are dangerous to health!
+Through vaporization of materials fine dust and vapors are produced which might
+include hazardous decomposition products depending on type and composition of
+the respective materials.
+A fume extractor according to the respective requirements which is equipped with
+special dust and activated charcoal filters must be installed to ensure that the de-
+composition products are removed from where they are produced.
+When treating materials with laser radiation the national and relevant regulations
+for air purification at work must be observed. Those regulations can result in fur-
+ther, detailed requirements regarding the performance of the fume extractor or
+the air recirculation to the workplace.
+This can be the case marking different plastics, e.g. POM (polyoxymethylene),
+ABS (acrylonitrile butadiene styrene), SAN (styrene acrylonitril copolymer), HDPE
+and LDPE (polyethylene), PAN (polyacrylonitrile), PBT (polybutylene terephtha-
+late) or different tool steels, e.g. with chromium additions.
+Marking those materials the formation of carcinogenic substances cannot be
+ruled out. This can result in the prohibition of the air recirculation to the work-
+place, i.e. the fume extraction system must lead the exhaust air outside into the
+atmosphere.
+The company operating the system for treatment of material surfaces using laser
+radiation is responsible for meeting the local codes and regulations. Additionally,
+the safety instructions of the operating instructions must be observed.
+Protect yourself and your colleagues against hazardous decomposition products!
+A fume extractor also prevents contamination and gradual destruction of optical
+elements of the beam delivery system by dust particles. We offer different fume
+extractors as accessories.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 2 Safety Instructions17
+inside the housing cover of the supply unit
+on the supply unit (the pilot laser is optional)
+on the supply unit (the values vary depending
+on the model, see ID label of the laser system)
+on the marking head (front)
+Label/Symbol Position
+2.12 Warning and Information
+Labels
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 2 Safety Instructions18
+on the supply unit
+on the back of the supply unit
+on the back of the supply unit and on the mark-
+Label/Symbol Position
+ing unit (next to the supply line)
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 3 Installation19
+ CAUTION
+3.2 Transport and Storage
+NOTICE
+• Please provide all connections - as described in section "Installation Condi-
+The laser system is a precision-made instrument and includes numerous elec-• Proceed as described in section " Unpacking [ } 20 ] ".
+tions" and in the documents you received upon order handling - prior to instal-
+tronic and optical components. Please avoid any mechanical stress (shock, vibra-
+lation.
+tions, etc.) on the laser system. In case of questions concerning transport and
+3.1 Installation and Start-Up
+NOTICE
+storage please contact Videojet Technologies Inc. .
+3 Installation
+Installation and start-up of the laser system requires extensive knowledge and ex-
+Transport
+perience. Therefore it should be accomplished by personnel of Videojet Tech-
+nologies Inc. or one of their representatives only.
+In order to facilitate quick and easy start-up please prepare the place of installa-
+Give notice of the laser system to the responsible trade cooperative association
+tion such that the system can be installed:
+Switch off the laser system before transport and disconnect mains connection!
+and the Trade Supervisory Office before initial operation.
+Please make sure that the supply line ("umbilical") connecting marking unit and
+supply unit is not bent!
+Do not use the umbilical to carry the laser system!
+Wear safety shoes!
+In case of questions please contact Videojet Technologies Inc. .
+The company operating the laser system is responsible for the safe use of the
+laser system, especially for meeting the local codes and regulations regarding the
+operation of laser systems and their components (beam protection, fume extrac-
+tor, cooling, etc.).
+Videojet Technologies Inc. does not accept responsibility for any damage due to
+misuse of equipment, incorrect operation or negligence.
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e aev1.59rr953[1My
+epc40vAj
+anBev1.59rr953[1ep[1N353[1.
+ts Blbm Amum1 uv3w luw0wm  u3.Eu3vvuAb Cb. .mwu5lb uERwmu3.Eu1R DEDm0uR.mDvuD.e
+Us hl3.wCblmum1 uv3w luw0wm  u3.Eum1 uAb Cb. .mwumbum1 uD.m .E EuCv3A ub5uD.e
+Blbm Amum1 u .IDlb.  .mµwm3vv3mDb.s
+is c1 A:u3vvuC3lmwu5bluE3 3- uERlD.-uml3.wCblmsuwm3vv3mDb.s
+/s g  bI um1 uD.EDIDER3vv0uC3A: EuAb Cb. .mws
+ns GC .um1 uC3A:3-D.-u3.Eul  bI um1 u5DvvD.-u 3m lD3vs
+x C3l3m uC3A:3-D.-u 3m lD3vu5blul A0AvD.-s].uA3w ub5uE3 3- uCv 3w uD.5bl um1 u5blS3lED.-u3- .mu3.Eu [DE bN muh A1.bvbe
+-D wu].As ublum1 Dlul Cl w .m3mDI uD   ED3m v0uD.uSlDmD.-suF Cum1 uC3A:3-D.-
+anae41L9C:31Rxmbl3-
+h1 uv3w luw0wm  u Rwmu.bmuy uwRyN Amumbu3.0u  A13.DA3vuwml wwufw1bA:7uIDyl3mDb.w7
+ 3m lD3vu3.Eu.bm uE3 3- ub.um1 uD.wDE u3.EubRmwDE suh3: uCDAmRl w7uD5uCbwwDe
+xmbl um1 uv3w luw0wm  uD.u3u1blD9b.m3vuCbwDmDb.u3.EuClbm Am Eu3-3D.wmuERwmu3.Eu1Re mAsPuwD.A um1Dwul ERA wum1 u 3l:D.-u"R3vDm0u3.EuA3.ul wRvmuD.uE3 3-D.-um1 uw0we
+yv s
+ DEDm0suh1 uwmbl3- um  C l3mRl u Rwmuy uy mS .uenTucu3.EuJMTucsuh1 u3Dlu1Rem  s
+ DEDm0u Rwmuy uy mS .unTuumbuaTus
+Bv 3w uAb.wDE luRCb.uD.wm3vv3mDb.um13mum1 uwRCCv0uvD. uy mS .uwRCCv0uR.Dmu3.E
+ 3l:D.-uR.DmuDwu.bmuE wD-. Eu5bluAb.mD.RbRwu3vm l.3mD.-uy .ED.-su23: uwRl um13m
+.buD.NRlD wuA3.uy uA3Rw Euy0um1 uD.wm3vv EuwRCCv0uvD. s
+L1 .uD.wm3vvD.-um1 uw0wm  um1 ul -Rv3mDb.wub5uVduM/iMWenu Rwmuy ubyw lI Es
+xC3A ug "RDl E
+h1 uwm3.E3lEuED  .wDb.wub5um1 uv3w luw0wm  uA3.uy u5bR.EuD.um1 uEl3SD.-wuD.um1
+A13Cm lu+OCC .ED«+s
+»bluw0wm  wu 3.R53AmRl Eu3AAblED.-umbuwC AD3vuARwmb  lul "RDl   .mwum1DwuD.5ble
+ 3mDb.uA3.uy u5bR.EuD.um1 uD.wm3vv3mDb.uCv3.ublum1 uED  .wDb.u3.EuE3m3uw1 mwu0bR
+l A DI EuRCb.ublE lu13.EvD.-s
+cb.. AmDb.w
+h1 uv3w luw0wm  ul "RDl wu3u 3D.wuwbA: muSDm1u3uClbm AmDI u 3lm1D.-uAb.. AmDb.s
+].5bl 3mDb.ub.um1 um0C 7u.R y lu3.Eul 5 l .A uI3vR wub5um1 uAb.. AmDb.wuA3.uy
+5bR.EuD.um1 um l D.3vuED3-l3 wu0bRu13I ul A DI EuRCb.ublE lu13.EvD.-s
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 3 Installation21
+3.6 Fume Extractor
+3.5 Cooling
+In order to remove marking residues which might be dangerous to health a fume
+extractor must be installed.
+The laser system is cooled by air. The internal cooling system is designed to sup-
+ply sufficient cooling.
+Relative humidity:NOTICE 10 - 90 %, non-condensing
+Temperature range: 5 - 40 °C
+Make sure that the cooling air can be sucked in and blown out freely and that
+there is sufficient air exchange at the installation site to ensure heat dissipation.
+ WARNING
+Only the delivered power connection cable must be used!
+Check the cable regularly for damages. If the cable is damaged it must be ex-
+changed.
+The power connection cable of the laser system is about 2 m long, make sure
+that the adequate power sockets are in range.
+Ambient Conditions
+To avoid condensation wait one hour before starting the system if the system was
+brought from a cold to a warm environment.
+Make sure that there is no condensed water in the system.
+The venting slots of the supply unit and of the marking unit must not be covered.
+Make sure that there is sufficient air supply (see also section "Cooling").
+The sealing IP21 is only applicable if the supply unit is installed horizontally.
+Mounting
+For proper mounting of the marking unit there is a mounting rail at the bottom of
+the interface unit.
+The clamps for the standardized mounting displayed in the figure can be ordered
+at Videojet Technologies Inc. .
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e aev1.59rr953[1MM
+eu h8UiT(h8UUT cb.. AmDb.ub5um1 uhbRA1u6DwCv30u5bluAb.mlbvvD.-ufdOK62]P
+J cb.. AmDb.ub5um1 ucpOgDhqup3w lucb.mlbvv lsuVv AmlDA3vuCbS lu5blum1 ucpOgeID3u hcxJ uwb5mS3l suVv AmlDA3vuCbS luDwuwRCCvD Euy0
+J cb.. AmDb.ub5u3uylbSw le .3yv EuE IDA u5bluAb.mlbvvD.-uID3u hcxJ uwb5mS3l s
+J cb.. AmDb.ub5u3uBcu5bluAb.mlbvvD.-uID3u x 3lmu,l3C1 uwb5mS3l s
+Dhqup3w lucb.mlbvv lu Rwmuy uClbIDA Euw C3l3m v0sm1 uwSDmA1 Eeb.uv3w luw0wm  s
+p9 53[1k
+an,ev15-7(9C-.e[(e5T-eW9.-7ewb.5-t
+h1 u5R  u «ml3Amblu uDwumbuy uD.wm3vv EuwRA1um13mu 3l:D.-uC3lmDAv wu3l uwRA: Eub55
+dbubm1 luE IDA wu 30uy uAb.. Am Eumbum1DwuD.m le
+EDl Amv0u3mum1 uCv3A ub5um1 u5bl 3mDb.umbuCl I .mum1 u3AAR Rv3mDb.ub5uERwmuC3lmDAv w
+Owu3uwm3.E3lEum1 uw0wm  uDwu "RDCC EuSDm1u3u. mSbl:uD.m l53A ufg•UtPsuGCmDb.3vv0753A suh1 0uAbRvEuy uE3 3- Eµ
+S1DA1u-l3ER3vv0uE wmlb0ubCmDA3vuAb Cb. .mwub5um1 uv3w luw0wm  su23: uwRl um13m
+DmuDwuCbwwDyv umbublE lu3uw Ab.Eu. mSbl:uD.m l53A sug•Utub55 lwum1 u5bvvbSD.-uCbwwDe
+m1 l u3l u.bu3Dluv 3:ws
+yDvDmD wumbubC l3m um1 uw0wm  k
+L ub55 lu5R  u «ml3Amblwu3wu3AA wwblD wsu]5u3u5R  u «ml3AmbluDwuC3lmub5um1 uAb e
+Cv m uE vDI l0uCv 3w u5D.Eu5Rlm1 luD.5bl 3mDb.uD.um1 u .Avbw EubC l3mDb.u 3.R3vub5
+m1 u5R  u «ml3Ambls
+»Rlm1 lubCmDb.wk
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e aev1.59rr953[1Ma
+v2Aep .5[t-7e315-7(9C-h1 u- . l3vu3wwD-.  .mub5um1 uARwmb  luD.m l53A
+A3.uy u5bR.EuD.uA13Cm lu+OCC .ED«+s
+h1 uARwmb  lewC AD5DAu3wwD-.  .mub5um1 uARwe
+v2AeP9C:Lr95-es35TeC[11-Cg073RR-7
+mb  luD.m l53A uA3.uy u5bR.EuD.um1 uE3m3uw1 mw
+cRwmb  luD.m l53A k
+5[7.e
+0bRul A DI EuRCb.ublE lu13.EvD.-s
+h1 uv3w luw0wm  u13wub. umlD-- luD.CRmuCblmumb
+Ab.. Amu3uvD-1muy3llD lu5bluClbERAmuE m AmDb.suh1
+mlD-- luD.CRmuCblmuDwuwRCCvD EuSDm1uJ/Uu[s
+d1C[N-7
+O.u .AbE luA3.uy uAb.. Am Eumbum1 u .AbE luD.e
+m l53A u5blu bI   .muE m AmDb.suh1 uv3w luw0wm
+ClbIDE wuJ/Uu[u5blum1 u .AbE ls
+K t-e-S579C5[7
+cb.. AmDb.u5blu3u5R  u «ml3Ambls
+»Rlm1 lubCmDb.wk
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 3 Installation24
+3.9.1 Temporary Shutdown
+If the laser system is shut down temporarily (e.g. for the duration of a works holi-3.9 Shutdown
+day), the following work is to be carried out:
+3.8 Definition of the IP Address
+When the laser system is delivered the following IP address is set:
+Standard IP: 192.168.1.1
+Subnet mask: 255.255.255.0
+I/O Backplate with connec-Interlock
+A different IP address can be configured via the software.
+tors
+The interlock circuit is used to safeguard the laser
+system. If one of the interlock switches connected
+to the interlock circuit opens the marking stops im-
+mediately. The marking cannot be continued until
+all interlock switches are closed and the START
+button is pressed.
+An option is available for increasing the perfor-
+mance level of the interlock circuits.
+Trigger
+The laser system has one trigger input port to
+connect a light barrier for product detection. The
+trigger input port is supplied with +24 V.
+Encoder
+An encoder can be connected to the encoder in-
+terface for movement detection. The laser system
+provides +24 V for the encoder.
+Fume extractor
+Connection for a fume extractor.
+Beacon
+Connection for a beacon.
+RS232
+Connection for the control of the laser system.
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e aev1.59rr953[1Mf
+Bv 3w uEDwCbw ub5um1 uAb Cb. .mwub5um1 uv3w luw0wm  uw C3l3m Eu5blul A0AvD.-ub5
+/s 6DwAb.. Amum1 u 3A1D. u5lb um1 u v AmlDAuCbS luwRCCv0s
+ns c3ll0ubRmu3vvuSbl:uvDwm EuD.uw AmDb.u+h  Cbl3l0ux1RmEbS.+s
+l3Su 3m lD3vws
+e8cujvjO
+anznMeK319rewT 5N[s1
+Us cv 3.um1 uv3w luwA3.uv .wufw uw AmDb.uzcv 3.D.-um1 up3w luxA3.up .wPs
+is x ARl um1 uv3w luw0wm  u3-3D.wmuR.3Rm1blD9 Euwm3lmRCuy0ul  bID.-um1 u: 0
+/s xSDmA1um1 uv3w luw0wm  ub55u35m lum1 uE3m3uy3A:RC7ufw uA13Cm luzGC l3mDb.ub5
+ns x3I um1 uE3m3ub.um1 uAb CRm luy 5bl uwSDmA1D.-um1 uv3w luw0wm  ub55suOuE e
+f: 0uwSDmA1Ps
+m1 up3w lux0wm  XPs
+m3Dv EuE wAlDCmDb.uA3.uy u5bR.EuD.um1 u 3.R3vub5um1 u 3l:D.-uwb5mS3l s
+V.wRl um13mu3vvuvDI uC3lmwu3l uwSDmA1 Eub55u3.Eum13muSbl:uA3.uy uA3llD EubRmuw35 v0
+b.um1 w uC3lmws
+]5um1 uv3w lu 3l:D.-u 3A1D. uDwuw1RmuEbS.uC l 3. .mv0uf s-su5bluw vvD.-ubluEDwe
+Cbw3vP7um1 u5bvvbSD.-uSbl:uDwumbuy uA3llD EubRmk
+].uA3w ub5uw vvD.-u3.Euml3.wCblm
+B3A:3- um1 u 3A1D. u3AAblED.-umbum1 uD.wmlRAmDb.wuD.uw AmDb.u+ Transport and Stor-
+age [ } 19 ] +s
+].uA3w ub5uEDwCbw3v
+6DwCbw ub5um1 uAb Cb. .mwub5um1 uv3w luw0wm  uD.u3u 3.. lum13muDwuw35 u3.Eu .IDe
+lb.  .m3vv0uAb C3mDyv suGyw lI u3vvu3CCvDA3yv uv -3vu3.EuvbA3vul -Rv3mDb.ws
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 4 Description of the Laser System26
+4.3 The Marking Head
+4.2 The Laser Beam Source
+Two movable mirrors are located inside the marking head . They deflect the laser
+beam vertically and horizontally according to the current template.
+Ytterbium-doped glass fibers are used as beam source for the laser system in a
+power range of up to 20 W. The fibers are pumped by laser diodes.
+4.1 Function Principle of a Vector-
+4 Description of the Laser System
+Scanning Laser System
+The laser (2) working in pulsed or continuous operation produces an infrared in-
+visible laser beam with small diameter. The laser beam is expanded by means of
+two-lens telescope (3).
+The expanded beam reaches the marking head (4) where two movable mirrors
+deflect it such that it passes over the lines of the opened template on the product.
+The lines are divided into vectors (X and Y coordinates). The line up of vectors
+produces a marking on the product, the laser »writes« on the product surface.
+The calculation of vectors and the control of the laser is performed by the con-
+troller card in the supply unit (1).
+The deflected laser beam is focussed onto the product surface (7) by a laser scan
+lens (5). Generally the marking is produced at the focus of the lens (6).
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e Bei-.C73L53[1e[(e5T-eW9.-7ewb.5-tM,
+Bnfe0T-eW9.-7e)979t-5-7.
+B3l3  m lwu3l uRw Eumbu3E3Cmum1 uv3w luw0wm  umbuED55 l .mu 3m lD3vwsuh1 w uC3e
+l3  m lwu13I umbuy uE m l D. Eu3.Eu3ENRwm Eu5blu 3A1u3CCvDA3mDb.uD.ublE lumb
+3A1D I um1 uy wmuCbwwDyv u 3l:D.-u"R3vDm0s
+BnBe0T-e697:31Re[(e5T-e)7[N C5
+6 m l D.D.-um1 uAbll AmuC3l3  m lwul "RDl wuClb5bR.Eu:.bSv E- u3.Eu «C lDe
+h1 u)u3.Euqu3« wub5um1 uAbblED.3m uw0wm  ub5um1 u 3l:D.-u5D vEu3l uE 5D. Euy0um1 .A 7uy A3Rw um1 u C3l3  m lwu1D-1v0uE C .Eub.um1 u3CCvDA3mDb.u3.Eum1 u 3m lD3v
+CbwDmDb.ub5um1 u 3l:D.-u1 3EsuOuml3.wv3mDb.ublulbm3mDb.ub5um1 u 3l:D.-u1 3Eu3vwbS1DA1uw13vvuy u 3l: Esu].uA3w ub5u"R wmDb.wuCv 3w uAb.m3AmuRws
+w 7(9C-
+ml3.wv3m wublulbm3m wum1 u3« wub5um1 uAbblED.3m uw0wm  su)u3.Euqu3« wuD.ul v3mDb.
+h1 uC3l3  m lwu5bluD.EDIDER3vu 3m lD3vwu3l uAb yD. EuD.uC3l3  m luw mwsuB3l3  e
+mbum1 u 3l:D.-u1 3Eu3l uE 5D. Eu3wuEDwCv30 EuD.um1 u5bvvbSD.-u5D-Rl k
+h1 u 3l:D.-ub5um1 uClbERAmuwRl53A uDwuC l5bl  Euy0um1 u 55 Amub5uD.m .w uv3w lul3e
+m luw mwuA3.uy u- . l3m Eu3.Eu3vm l EuRwD.-um1 uwb5mS3l su»bluE m3Dv EuD.5bl 3mDb.
+ED3mDb.ub.um1 uClbERAmu 3m lD3vs
+b.um1 uC3l3  m lwuCv 3w ul 5 lumbum1 u 3.R3vub5um1 u 3l:D.-uwb5mS3l s
+h1 uv3w luy 3 uDwu5bARww Eub.mbum1 uClbERAmuwRl53A u3.Eu1 3mwuRCum1 umbC bwm
+v30 lub5um1 u 3m lD3v7uS1DA1uA3Rw wu3uAbvbluA13.- ublu3uI3CblD93mDb.ub5um1 umbCe
+ bwmuE0 uv30 ls
+h1 uw0 ybvwu3.EuA13l3Am lwuS1DA1uw13vvuy u 3l: Eub.um1 uClbERAmu3l uwRyEDIDE E
+D.mbuI Ambluwmlb: wufnPsuV3A1uI Ambluwmlb: uDwu3-3D.uwRyEDIDE EuD.mbuw 3vv luI Ae
+mblws
+L1 .um1 uv3w luy 3 uNR Cwu 5lb ub. uwmlb: umbum1 u. «muf/Pum1 uv3w luDwuwSDmA1 E
+b55u3.Eum1 uClbERAmuDwu.bmu 3l: Es
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 4 Description of the Laser System28
+• TCS+ software on a browser-enabled device
+• CLARiTY Laser Controller
+• TCS+ software on the TU430/TU440 (Touch Display)
+• Smart Graph software on a PC
+4.6 The Structure of the Laser
+System
+The laser system consists of the supply unit (1) and the marking unit. The mark-
+ing unit comprises the interface unit (2) and the marking head (3). The supply unit
+is controlled via:
+Optionally, a beam turning unit can be installed between laser head and marking
+head.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 4 Description of the Laser System29
+• Marking head SHF100B
+• Marking head SHF60B
+Focal length of focusing lensmm
+• Marking head SHF100B
+a
+• Marking head SHF60B
+Characters/Second
+a
+Speed of production line m/s 0 - 10
+Marking speed mm/s 1 - 30,000
+• Marking unit 50, 100, 165, 258
+• Supply unit
+Sealing
+2,000
+• Marking unit
+• Marking unit 100, 163, 254, 420
+• Supply unit
+Weight (typical) kg
+SHF100B IP 21
+1,300
+• Marking unit
+SHF60B
+• Marking unit
+• Supply unit
+Dimensions mm 18.5
+SHF100B IP 54
+Rel. Humidity % 10 - 90; non-condensing
+SHF60B
+Ambient temperature °C 5 - 40
+Mains frequency Hz 50 - 60
+Supply voltage VAC 100 to 240 (autorange); 1-phase545 x 436 x 133
+Fuse 2 x T8A
+Power consumption (max.) VA 200
+Laser power (nominal) W 10 20
+Pulse duration (for special requirements please con-ns 80 - 120
+Pulse frequency kHz 2 - 2003.7
+Pulse peak power (max.) kW 20
+Pulse energy (nominal) mJ 1
+Operating mode pulsed
+tact us)
+Laser class 4
+Wavelength nm 1055 - 1075
+Laser type ytterbium fiber laser456.6 x 74 x 105
+Unit Videojet 7230Videojet 7330
+5.4
+4.7 Technical Data
+494.5 x 120 x 150,4
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 4 Description of the Laser System30
+Option: Pilot laser
+• browser-enabled device with TCS
+• CLARiTY Laser Controller
+• TU430/TU440 Touch Display
+Laser class + software under Windows 2
+Control • Windows-compatible PC with
+Interfaces Network interfaces
+Min. bending radius of supplymm 60
+Max. distance marking unit - m Smart Graph software under Win-3
+CoolingLaser power mW internal air-cooling < 1
+line
+Fonts any standard font
+supply unit dows
+Line width depending on the material and the
+WavelengthFocus diameter µmnm 630 - 67020 - 200
+(special characters on demand for
+Unit Videojet 7230Videojet 7330
+laser parameters
+additional charge)
+(depending on the installed optics)
+a.
+ Any statements referring to marked characters or actual markings are typical
+values. These values highly depend on the material and may only be taken as a
+guideline. These are no specifications!
+Due to Videojet Technologies Inc. 's policy of continuous improvement, technical
+data is subject to change without notice.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 4 Description of the Laser System31
+420549 ±7 361 498 255 455
+254345 ±4 215 301 152 278
+163229 ±2 142 193 107 162
+100127 ±2 75 118 53 102
+f wd A B a b
+258263 ±5 180 180 130 169
+165170 ±4 115 115 83 108
+100106 ±3 70 70 50 65
+5056 ±2 19 26 13 18
+f wd A B a b
+NOTICE
+4.8 Working Distance and Marking
+Field
+The actual marking field depends on the configuration of the system.
+Marking Head SHF60B (all values in mm)
+Marking Head SHF100B (all values in mm)
+
+Op
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 5 Operating the Laser System32
+TCS+ The SoftwareTCS+ software runs on a browser-enabled device
+under Windows.
+CLARiTY Using the CLARiTY Laser Controller you can easily se-
+It permits you to easily create, edit, select and mark jobs.
+lect and mark templates.
+TU430/TU440 The TCS+ software runs on the laser system and can be
+Using a web browser you can connect to one or several
+For creating and editing of marking jobs CLARiSOFT is
+diplayed and controlled on the touch screen.
+laser systems. The active system is controlled via TCS+ .
+Smart Graph The Smart Graph -Software software runs on your personal com-
+required.
+It permits you to easily create, edit, select and mark tem-
+puter under Windows. It permits you to configure the
+plates.
+laser system, create complex layouts, import logos,
+5.1 Operation of the Laser System
+change fonts, create and edit laser parameters, etc.
+5 Operating the Laser System
+Using the Smart Graph software you can transfer the cre-
+The laser system is built up modularly. Depending on the laser system installed in
+ated templates directly to the supply unit for marking.
+your premises there are several ways to generate a marking template and start
+the marking process.
+The laser system can be operated via:
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 5 Operating the Laser System33
+L2 Emission -red- is on when the key switch is in position »I«
+LED status indicators
+S4 Push button With »STOP« a marking process can be
+and the power is applied to the laser
+L1 Beam shutter open -red-STOP is on when the shutter is open.stopped.
+S3 Push button With »START« the currently selected tem-
+source.
+START plate can be marked.
+S2 Key switch applies the power supply for the laser beamSimultaneously the red LED on the marking
+Laser radiation is emitted!source (position »I«). The marking process
+head lights up.
+S1 Push button switches the supply unit on.
+can be started.
+No. Type Function
+Make sure the safety instructions are
+POWER/STANDBY
+observed.Note:
+If the supply unit is on this button switches
+Remove the key switch if switched off (po-
+the laser beam source an the control elec-
+sition »0«) to protect the system from unau-
+5.2 Elements on the Supply Unit
+tronics off.
+thorized operation!
+Attention:
+The system is not separated completely
+from the power supply. For complete sepa-
+ration the main power switch must be used.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 5 Operating the Laser System34
+S5 Main power switchswitches the mains of the laser system on and
+I10 Socket Connection for fume extractor
+I9 Socket and fuse insertMains cable connection and two fuses (T8A)
+I5 Socket Connection for product sensor
+I4 Socket Connection for encoder
+off.
+I2 Socket Cable feed through
+I1 Socket Connection for ethernet
+No. Type Function
+• of the marking process.
+• during initialization of the laser system
+LED system indicators
+L3 Error -yellow- flashes in case of malfunction.
+and
+No. Type Function
+L4 System -green- This system indicator consists of five LEDs.
+They display the progress and the status
+Backview of the supply unit (standard)
+For the assignment of the interface see Assignment Backplate [ } 71 ] in the man-
+ual.
+Backview of the supply unit (optional)
+
+en ti ei eage ea
+er
+
+en ti ea
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 5 Operating the Laser System35
+1. Make sure that the safety instructions are observed.
+5.3.1 Switch-On
+S5 Main power switchswitches the mains of the laser system on and
+5.3 Switch-On/Off of the Laser
+I10 Socket Connection for fume extractor
+I9 Socket and fuse insertMains cable connection and two fuses (T8A)
+I8 Socket serial interface (RS232)
+I7 Socket Connection for beacon
+off.
+I6 Socket Connection for interlock
+I5 Socket Connection for trigger
+I4 Socket Connection for encoder
+I3 Socket Connection for TU430/TU440 (NAHDMI)
+I2 Socket Cable feed through
+SystemI1 Socket Connection for ethernet
+No. Type Function
+Caution:
+No other devices may be connected to this in-
+I9 Socket and fuse insertterface. They could be damaged!Mains cable connection and two fuses (T8A)
+I1 Socket Connection for ethernet
+S5 Main power switchswitches the mains of the laser system on and
+No. Type Function
+off.
+Backview of the supply unit (optional)
+For the assignment of the interface see Assignment Backplate [ } 71 ] in the man-
+ual.
+
+enti eu eagec eI ea
+er ei e es
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e feAL-79531Re5T-eW9.-7ewb.5-taD
+/s xSDmA1ub55um1 u: 0uwSDmA1uy0umRl.D.-uDmumbum1 uI lmDA3vuCbwDe
+ns xmbCum1 u 3l:D.-uClbA wws
+fnanMews35CTgA((mDb.uzTXs
+h1 upV6uw0wm  uD.EDA3mblwuEDwCv30um1 uClb-l ww
+Ms h1 u 3l:D.-uClbA wwuA3.uy uwm3lm Euy0uCl wwD.-um1 uCRw1
+3.Eum1 uwm3mRwub5um1 u 3l:D.-uClbA wws
+h1 ul EupV6uzV DwwDb.Xufp/Pub.um1 uwRCCv0uR.Dm
+yRmmb.uzxhOghXufxiPubluID3um1 uRw luD.m l53A ub5um1 uwb5me
+OvvupV6uw0wm  uD.EDA3mblwu3l umRl. Eub55s
+3.Eum1 ul EupV6ub.um1 u 3l:D.-uR.Dmu3l ub.suh1
+ts S3l sxSDmA1ub.um1 u: 0uwSDmA1uy0umRl.D.-uDmumbum1 u1blD9b.m3vuCbwDe
+v3w luDwul 3E0sh1 upV6uw0wm  uD.EDA3mblwufpUPu3l ub.uwRAA we
+mDb.uz]Xs
+O5m lu3CClb«sunTuw Ab.Ewum1 uS1Dm upV6ub.um1
+wDI v0uD.EDA3mD.-um1 uD.DmD3vD93mDb.ub5um1 uv3w luw0we
+Us Bl wwuCRw1uyRmmb.uzBGLVg(xhOd64qXufxnPs
+CRw1uyRmmb.u5v3w1 wsuh1 u5v3w1D.-u5l "R .A0u3.E
+xSDmA1um1 u 3D.uwSDmA1ufxtPu3mum1 uy3A:ub5um1 uwRCCv0uR.Dmumbm  suO5m lum13mum1 uw0wm  uDwul 3E0u5blubC l3mDb.
+m1 uylD-1m. wwub5um1 upV6uD.Al 3w ws
+is 23: uwRl um13mum1 u: 0uwSDmA1uDwuD.um1 uI lmDA3vuCbwDmDb.uzTXs
+CbwDmDb.uz]Xsm1 uS1Dm upV6uDwub.u3.Eu3vvupV6uw0wm  uD.EDA3mblw
+/s xSDmA1ub.um1 u5R  u «ml3AmblubluRw um1 uCbwwDyDvDm0umbuv mum1 uw0wm
+3l ub.s
+wSDmA1ub.um1 u5R  u «ml3Ambluy0uRwD.-u3uwD-.3vufw u].CRmwu3.EuGRme
+h1 uyvR upV6ub.um1 uCRw1uyRmmb.uzBGLVg(
+CRmwuf,3vI3.DA3vv0ux C3l3m EPPs
+xhOd64qXufxnPuDwub.s
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e feAL-79531Re5T-eW9.-7ewb.5-ta,
+ts xSDmA1ub55um1 u5R  u «ml3Ambls
+Us xSDmA1um1 u 3D.uwSDmA1ufxtPu3mum1 uy3A:ub5um1 uwRCCv0uR.Dm
+h1 .um1 uyvR upV6ub.um1 uCRw1uyRmmb.
+mbuCbwDmDb.uzTXs
+zBGLVg(xhOd64qXuDwub.s
+h1 u0 vvbSupV6uzVllblXufpiPu5v3w1 ws
+is Bl wwuCRw1uyRmmb.uzBGLVg(xhOd64qXufxnPs
+h1 uS1Dm upV6ub.um1 uCRw1uyRmmb.uzBGLVg(
+xhOd64qXufxnPuDwub.s
+h1 ul EupV6uzV DwwDb.Xufp/Pub.um1 uwRCCv0
+R.Dmu3.Eum1 ul EupV6ub.um1 u 3l:D.-uR.Dmu3l
+b55s
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 6 Maintenance38
+6.2 Maintenance Plan
+NOTICE
+The maintenance intervals are laid out considering laser system use of approxi-
+mately 10 hours of daily operation on a normal working environment.
+ CAUTION
+If the time of daily use exceeds 10 hours of continuous operation or in case of
+above normal dusty/dirty environment please shorten the maintenance intervals
+accordingly. In case of questions please contact Videojet Technologies Inc. or
+6.1 General Notes Concerning
+6 Maintenance
+one of their representatives.
+All maintenance works are described in the following sections.
+Maintenance
+The time for maintenance of the laser system is very short. Please carry out
+maintenance works in the stated intervals.
+The laser system is designed such that maintenance can be performed safely.
+Maintenance has to be performed by instructed operating and maintenance per-
+sonnel only!
+For reasons of safety make sure that the main key is withdrawn and the mains is
+disconnected!!
+Before cleaning the laser system and its environment, the laser system must be
+disconnected from the mains power supply.
+Document the regular maintenance in the maintenance protocols in this chapter!
+In case of non-conformance with the maintenance plan Videojet Technologies
+Inc. reserves the right to limit the warranty!
+Before carrying out the maintenance works at the optics, please note the follow-
+ing:
+Acetone is not included upon delivery and has to be purchased via other compa-
+nies. Open the following Internet page to order acetone in a quick and uncompli-
+cated way: www.vwr.com/index.htm
+When purchasing acetone make sure that you order acetone pro analysi (p.a. =
+highest purity grade).
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 6 Maintenance39
+• Optics cleaning paper
+ CAUTION
+6.3 Cleaning the Laser Scan Lens
+NOTICE
+Every six months If installed: Exchange the charcoal filter inside the
+The laser scan lens is located at the marking head. It may be contaminated by
+fume extractor (refer to manual of the fume extrac-
+Every three monthsCarry out a visual inspection of the laser system.
+Monthly or when controlIf installed: Exchange the filter bag inside the fume
+dust, floating particles in the air or other substances formed by the marking
+tor).
+(more frequently when oper-Clean if necessary. Check also the warning labels.
+Monthly Check the laser scan lens for dust and dirt. Clean
+lamp lights upMaintenance Intervalsextractor (refer to manual of the fume extractor).Measures
+process. Contamination of the laser scan lens can lead to damage of the laser
+ated in dirty ambient condi-They must be readable and positioned correctly.
+(more frequently when oper-the laser scan lens in case of dust or stains.
+scan lens and gradually reduce the quality of the marking. Especially using higher
+tions)
+ated in dirty ambient condi-
+Check the product detector (light barrier). Clean or
+laser power a contamination of the laser scan lens can result in damage to otherIf installed: Check the filter mats of the supply unit.
+tions)
+readjust if necessary.
+components of the marking system. Therefore the lens has to be cleaned regu-Exchange if necessary.
+larly.
+Check the fume extractor for air leaks.
+Generally, just the outwardly facing side of the laser scan lens has to be cleaned,
+but check both sides for contamination and clean them, if necessary.
+As with all optical components the laser scan lens is an object of highest preci-
+sion and sophisticated design!
+Slightest damage of the surface might (in the long term) result in unusability of the
+component or reduction of marking quality. Any contaminants must only be re-
+moved by means of optics cleaning paper and acetone.
+Make sure that no contaminants enter the marking head while cleaning the laser
+scan lens!
+To clean the laser scan lens you need:
+We recommend a professional check by our service engineers once a year (more
+often in a very dusty environment).
+We offer special training seminars for maintenance and service personnel. In
+case of questions please contact Videojet Technologies Inc. one of their repre-
+sentatives.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 6 Maintenance40
+5. Check the surface of the lens side located in the marking head for contamina-
+4. If necessary repeat the procedure with a new sheet of optics cleaning paper.
+3. Carefully and slowly pull the optics cleaning paper across the surface to be
+tion. If necessary, clean it as described above.
+2. Hold the optics cleaning paper between thumb and index finger and put some
+1. Place the laser scan lens onto a clean surface. Fold a sheet of optics cleaning
+cleaned. Make sure that you do not touch the surface with the gloves. Apply
+drops of acetone onto the optics cleaning paper.
+paper (at least 5 times) creating a flat cushion.
+only very light pressure onto the paper!
+ CAUTION
+6.3.2 Cleaning the Laser Scan Lens
+NOTICE
+2. Remove the laser scan lens from the marking head and place it on a clean
+1. Firmly grip the laser scan lens with both hands and turn it clockwise carefully
+surface.
+2. Remove the laser scan lens from the marking head and place it on a clean
+until it is released from the thread. Do not touch the lens surface with your
+1. Turn the laser scan lens carefully by a quarter turn in counterclockwise direc-
+surface.
+gloves!
+Never use polishing agents! Polishing agents destroy the laser scan lenstion. Do not touch the lens surface with your gloves!
+6.3.1 Disassembly of the Laser Scan Lens
+NOTICE• Protective gloves
+Never use contaminated optics cleaning paper.• Acetone
+Make sure that the optics cleaning paper is stored in a clean place.
+Marking head SHF60B
+The laser scan lens is in a bayonet socket which is unlocked by a quarter turn.
+Wear suitable protective gloves during the complete procedure!
+Marking head SHF100B
+The fine thread requires several turns before the scan lens is released. Make
+sure that you are holding the lens firmly with both hands.
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e De69315-191C-Bh
+/s h1 .uwAl SuD.um1 uv3w luwA3.uv .wuwvbSv0u3.Euwml3D-1muD.um1 ulD-1muEDl AmDb.7
+ns Bv3A um1 uv3w luwA3.uv .wuwml3D-1mub.mbum1 uv3w luy 3 ubRmv mu3.EumRl.uDmuD.um1
+DnBe)7[5[C[r.e([7e69315-191C-G
+13.EmD-1ms
+/s c3l 5Rvv0uwAl SuD.um1 uv3w luwA3.uv .wu3.mDeAvbA:SDw uR.mDvum1 u5D. um1l 3Eu13w
+Slb.-uEDl AmDb.uR.mDvu0bRu1 3lum1 uAv 3luAvDA:u3wum1 u5Dlwmum1l 3Eu .-3- ws
+ns BbwDmDb.um1 um1l 3Eub5um1 uv3w luwA3.uv .wuwml3D-1mub.mbum1 uv3w luy 3 ubRmv m
+A3R-1mu3.EumD-1m .uDmuy0u13.Eub.v0su6bu.bmuRw u3.0umbbvwµ
+/s c3l 5Rvv0umRl.um1 uv3w luwA3.uv .wuy0u3u"R3lm lumRl.uD.uAvbA:SDw uEDl AmDb.su6b
+b5um1 u 3l:D.-u1 3Es
+ns ].w lmum1 uv3w luwA3.uv .wuD.mbum1 u 3l:D.-u1 3Es
+u-L937e91Neu-Lr9C-t-15
+.bmuRw u3.0umbbvwµ
+Dnanae6[ 1531Re5T-eW9.-7ewC91eW-1.
+]5um1 uv .wuA3..bmuy uAv 3. Eublum1 uwRl53A ub5um1 uClbm AmDI u-v3wwuDwuw I l v0
+]muDwuwmlb.-v0ul Ab   .E Eum13mul AblEwu3l u: Cmub5u 3D.m .3.A 7ul C3Dlu3.Eul ewAl3mA1 Eku»Dmu3u. SuClbm AmDI u-v3wws
+Cv3A   .muClbA ERl ws
+23l:D.-u1 3Eu xK»MT4
+h1 u 3D.m .3.A uClbmbAbvwuwC AD50um1 um3w:wu3.Eum1 DluD.m lI3vwsuh1 uAbll Amu3.E
+mD  v0u 3D.m .3.A uA3.u1 vCumbu D.D D9 u 3v5R.AmDb.wub5um1 uv3w luw0wm  s
+qbRuSDvvu3vwbu5D.Eu5bl wumbul AblEum1 ul C3Dlwu3.Eul Cv3A   .mwsucbCD wuA3.uy
+ 3E u3.EuRw Eumbu: Cu3.ub.-bD.-ul AblEub5um1 uClbA ERl wul Ab   .E E
+m1lbR-1bRmum1 uvD5 ub5um1 uv3w lu 3l:D.-uw0wm  s
+23l:D.-u1 3Eu xK»nTT4
+]5um1 u5D. um1l 3EuN3 wuERlD.-uwAl SD.-uClbA Eu3wu5bvvbSwk
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e De69315-191C-BM
+p9773-Ne[ 5e[1k p9773-Ne[ 5eobk
+].wC AmDb.u3.Eucv 3.D.-ub5um1 up3w luxA3.up .wu
+63m d3
+23D.m .3.A uD.m lI3vku 6[15Trb
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e De69315-191C-Ba
+p9773-Ne[ 5e[1k p9773-Ne[ 5eobk
+].wC AmDb.u3.ucv 3.D.-ub5um1 u63m d3  »Dvm lu23mw
+fD5uD.wm3vv EP
+23D.m .3.A uD.m lI3vku 6[15Trb
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e De69315-191C-BB
+p9773-Ne[ 5e[1k p9773-Ne[ 5eobk
+V«A13.- ub5um1 u63m d3  Bl e»Dvm lub5um1 u »R  uV«ml3Ambl
+fD5uD.wm3vv EP
+23D.m .3.A uD.m lI3vku 6[15Trbe[7esT-1eC[157[rer9tLer3RT5.e L
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e De69315-191C-Bf
+p9773-Ne[ 5e[1k p9773-Ne[ 5eobk
+V«A13.- ub5um1 u63m d3  cb yD. Eufc13lAb3vPu»Dvm lub5um1 u»R  uV«ml3Ambl
+fD5uD.wm3vv EP
+23D.m .3.A uD.m lI3vku dl-7be.3Set[15T.
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e De69315-191C-BD
+p9773-Ne[ 5e[1k p9773-Ne[ 5eobk
+[DwR3vu].wC AmDb.
+63m d3
+23D.m .3.A uD.m lI3vku dl-7be5T7--et[15T.
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e De69315-191C-B,
+E-7.3[1k p9773-Ne[ 5e[1k p9773-Ne[ 5eobk
+8CE3m ub5um1 uc23l:uxb5mS3l
+63m d3
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e De69315-191C-BU
+i95-k u-L937e[7eu-Lr9C-t-15p[tt-15.
+/(9 r5.Ge-5CnX
+i95-k u-L937e[7eu-Lr9C-t-15p[tt-15.
+p9773-Ne[ 5eobk
+/(9 r5.Ge-5CnX
+i95-k u-L937e[7eu-Lr9C-t-15p[tt-15.
+p9773-Ne[ 5eobk
+/(9 r5.Ge-5CnX
+i95-k u-L937e91Neu-Lr9C-t-15p[tt-15.
+p9773-Ne[ 5eobk
+W9.-7et[N-rk w-739re1 to-7k
+g C3Dlu3.Eug Cv3A   .muBlbmbAbv
+)7[5[C[r /(9 r5.Ge-5CnX
+p9773-Ne[ 5eobk
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 7 Malfunctions49
+• Check for an external STOP signal.
+• Check the key switch (must be closed).
+• Check for error messages.
+The laser cannot be started.• Check the interlock (must be closed).
+• Note the booting time and report it to the
+• Check the size of the database, the boot-
+The system does not boot or• Please note that the booting process can
+• service helpdesk.Check the fuses.
+• ing time depends on that.Check the power supply, e.g. RCD (resid-
+• Check the main switch.
+booting takes very long. take several minutes.
+The laser system cannot be• Check the plug.
+Symptom Causes/Measures
+ual current protective device)
+switched on.
+7.2 Malfunctions Descriptions
+ CAUTION
+7.1 Notes
+7 Malfunctions
+In this chapter you will find a description of possible malfunctions, their possible
+causes and suitable measures for troubleshooting. The measures stated must be
+performed by trained and qualified operation and maintenance personnel only.
+Tasks for troubleshooting going beyond the ones mentioned here must be per-
+formed by specially trained personnel only! Strictly follow the safety instruc-
+tions!
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 7 Malfunctions50
+• Check the encoder. If it is slipping increase
+• Check the product (must be free from dirt,
+• Check the lens. Clean or exchange if nec-
+the press-on force of the roll.
+Incomplete marking. • Check the product speed.
+• water, dust, oil, etc.).Check the fume extractor (must be on and
+• essary.Check the product (must be free from dirt,
+• Check the parameter set (power too low,
+suitable for the application).
+• Check the working distance.
+• Check the lens. Clean it if necessary.
+water, dust, oil, etc.).
+Faint marking. • Has the product been changed (e.g. di-
+speed to high).
+Stretched/shrunk marking.• Check the encoder setting.
+• Check the product carrier for accuracy.
+Shifted marking. • Check the sensor position.
+• Check the template.
+mensions, material)?
+Lopsided marking. • Check the laser position.
+• Error message "Shutter defect", exchange
+• Check the external STOP signal (if exist-
+• Check the total working time of the laser
+the shutter.
+• Is the correct product registration se-
+ing).
+• Check the power setting of the parameter
+beam source.
+• Check the lens. Clean if necessary.
+• Check the working distance.
+lected?
+• Check the product detection.
+No marking, although START• Check the encoder.set.
+Symptom Causes/Measures
+has been pressed.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 7 Malfunctions51
+• Check the cooling system (if existing).
+• Is there enough space for the air intake?
+• Is the ambient temperature within the
+Laser stops due to overtempera-• Clean filter(s) and system.
+• Check the encoder. If it is slipping increase
+• specified limits (see product documenta-Check the fume extractor (must be on and
+ture.
+• Check the product (must be free from dirt,
+the press-on force of the roll.
+• Check the parameter set (power too low,
+tion)?suitable for the application).
+• Check the working distance.
+• Check the lens. Clean it if necessary.
+water, dust, oil, etc.).
+• Has the product been changed (e.g. di-
+speed to high).
+Poor marking quality. • Check for product or laser vibration.
+Symptom Causes/Measures
+mensions, material)?
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 52
+2. With safety circuit according to EN 13849-1, achieving performance level "d"
+1. With safety circuit according to EN 13849-1, achieving performance level "d"
+for the door circuit and performance level "e" for the emergency stop circuit.
+for the interlock circuit.
+8.1 Safety Circuit of the Laser
+8 Appendix
+System
+The safety circuit is realized via connector X9 on the SPM/CPD board.
+Position of the board in the laser system:
+Position of X9:
+The laser system can be ordered in 2 variants:
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e UecLL-1N3S fa
+)asnt ]dhVgpGcFu/ ].CRm ]5ub. ub5um1 uD.m lvbA:uADlARDmwuDw
+bC . E7um1 uv3w luCbS luwRCCv0uDw
+)asnU xK8hhVgpGcFun].CRm ]5ub. ub5um1 uw1Rmm lvbA:uADlARDmwuDw
+)asni ,d6pOx ].CRm
+)asn/ e GRmCRm 4lDE- umbu)asnT
+)asnn ,d6]dh GRmCRm
+wSDmA1 Eub55uD   ED3m v0s
+)asnT e ].CRm 4lDE- umbu)asn/
+bC . E7um1 uy 3 uw1Rmm lub5um1
+)asa ,d6]dh GRmCRm e
+)asW e GRmCRm l w lI E
+)asr /U[]dh GRmCRm e
+)asM e GRmCRm l w lI E
+)ast /U[]dh GRmCRm v3w luDwuAvbw EuD   ED3m v0se
+cb.. Amumbu)asnaumbuAvbw um1 uD.m le
+)asU ,d6]dh GRmCRm e
+)asi /U[pOx ].CRm e
+)as/ ,d6]dh GRmCRm e
+)asn /U[]dh GRmCRm vbA:sw u)as/i
+0-7t319rw3R19r v12A 5L 5cb.. Amumbu)asrumbuAvbw um1 uw1Rmei-.C73L53[1
+m lvbA:s
+6 53Rvmku4lDE- umbu)asna6 53Rvmku4lDE- umbu)as/i
+6 53Rvmku4lDE- umbu)asr
+jA0vpd
+OwwD-.  .mu[3lD3.munufxB2P
+OwwD-.  .mu[3lD3.munu-R3l3.m wuC l5bl 3.A uv I vu+E+u3AAblED.-umbuVdniWUaen
+5blum1 uD.m lvbA:uADlARDmsuBl l "RDwDm uDwum1 uAbll AmuSDlD.-ub5um1 uD.m lvbA:uADlARDmuRwe
+D.-u3CClbClD3m uw35 m0uwSDmA1 wu3.EuA3yv wk
+»blum1 uD.m lvbA:uwSDmA1 wuCbwDmDI v0ubC .D.-uAb.m3Amwu3AAblED.-umbu]VcMTaUreten
+ Rwmuy uRw Euf s-suxcK2VgxOpuOunMeT/[gFPsuh1 uwRCCv0uvD. wu Rwmu13I
+D.EDIDER3vv0uw1D vE EuAbl wuf s-suKVp8FO4VpupDqehBcequfU«/«Tstublu/«/«TstPuB
+/nitrublu/nitts
+»nunOuxvb4vbSupDmmv 5Rw uTntUTTn
+h1 u2hh»uA3vARv3mDb.uRw Eu5blu3A1D ID.-uC l5bl 3.A uv I vu+E+uDwuy3w Eub.um1
+5bvvbSD.-u3wwR CmDb.wk
+nPudR y lub5ubC l3mD.-u1bRlw(E30uu/nufiuw1D5mubC l3mDb.uSDm1unu1bRluyl 3:P
+/PudR y lub5ubC l3mD.-uE30w(0 3luuinTufiMtuE30wu D.RwuwR.E30w(1bvDE30wP
+iPuc0v umD  uD.uw Ab.Ewuu/W7WTTufWu1bRlwuiuw1D5mubC l3mDb.uSDm1unuAv 3.D.-uA0Av
+C luw1D5mP
+UPug wRvmD.-u3I l3- u.R y lub5uA0Av wuC lu0 3luuWnisrt
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 54
+X9.24 - Output Bridge to X9.22
+X9.23 INTERLOCK_RE-Input Connection for an external reset
+X9.22 - Input Bridge to X9.24
+X9.21 INTERLOCK 1 Output Connect to X9.17 to close the inter-
+X9.20 - Output
+SET button to switch on the laser power
+X9.19 INTERLOCK 2 Output Connect to X9.15 to close the inter-
+X9.18 - Output
+lock.
+supply after the safe state has been
+lock.
+X9.17 INTERLOCK 1 Input If one of the interlock circuits is
+restored. The button must be con-
+opened, the laser power supply is
+X9.16 SHUTTERLOCK 2Input If one of the shutterlock circuits isnected between X9.1 and X9.23.
+TerminalSignal In/OutputDescription
+switched off immediately.
+opened, the beam shutter of the
+Default: Bridge to X9.1
+laser is closed immediately.
+Connect to X9.21 to close the inter-
+lock.
+Connect to X9.5 to close the shut-
+terlock.
+Default: Bridge to X9.21
+Default: Bridge to X9.5
+Wiring see Safety Circuit Variant 1 [ } 74 ] .
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e UecLL-1N3S ff
+)asnU 6GGgunu]d ].CRm ]5ub. ub5um1 uEbbluADlARDmwuDw
+)asni e ].CRm
+)asn/ 6GGgu»VV64OcFGRmCRm » Ey3A:ubRmCRmu5blu5blA -RDE E
+bC . E7um1 uy 3 uw1Rmm lub5um1
+)asnn ,d6]dh GRmCRm
+)asnT 6GGgu»VV64OcF].CRm » Ey3A:uD.CRmu5blu5blA -RDE E
+G8h Ab.m3Amwub5um1 u «m .wDb.ul v30ws
+)asa ,d6]dh GRmCRm ev3w luDwuAvbw EuD   ED3m v0s
+]d Ab.m3Amwub5um1 u «m .wDb.ul v30ws
+4lDE- umbu)asnT
+cb.. Amumbu)asrumbuAvbw um1 uEbbl
+)asW gVpVOxVu6GGgGRmCRm V«m .wDb.umbuwSDmA1ub55u3EEDmDb.3v
+)asr /U[]dh GRmCRm e
+6 53Rvmku4lDE- umbu)asn/
+ADlARDms
+gVpOqu/ l v30wuD5uEbbluADlARDmuDwubC . Es
+)asM gVpVOxVu6GGgGRmCRm V«m .wDb.umbuwSDmA1ub55u3EEDmDb.3v
+)ast /U[]dh GRmCRm e
+)asU ,d6]dh GRmCRm e6 53Rvmku4lDE- umbu)asr
+)asi e ].CRm 8wD.-um1 uAb.m3Amu «m .wDb.u.be
+)as/ ,d6]dh GRmCRm e
+gVpOqun l v30wuD5uEbbluADlARDmuDwubC . Es
+)asn /U[]dh GRmCRm e
+0-7t319rw3R19r v12A 5L 5i-.C73L53[1
+ bl um13.utTu OuC lul v30u 30uy
+8wD.-um1 uAb.m3Amu «m .wDb.u.b
+jA0vpd El3S.su»v0y3A:uEDbE wu Rwmuy
+OwwD-.  .mu[3lD3.mu/
+ bl um13.utTu OuC lul v30u 30uy
+Rw Eu3.Eum1 u5 Ey3A:uADlARDmw
+El3S.su»v0y3A:uEDbE wu Rwmuy
+ Rwmuy uSDl Eu3AAblED.-umbum1
+Rw Eu3.Eum1 u5 Ey3A:uADlARDmw
+w3 Cv uSDlD.-s
+ Rwmuy uSDl Eu3AAblED.-umbum1
+L1 .uRwD.-um1 uw35 m0uADlARDmuCv 3w ubyw lI um13mum1 uEbbluADlARDmu3wuS vvu3wum1
+w3 Cv uSDlD.-s
+   l- .A0uwmbCuADlARDmu Rwmuy uAb.. Am EuSDm1u3uEbRyv eCbv uwSDmA1s
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 56
+X9.23 EMERGENCY RE-Input Connection to external reset for re-
+X9.22 EMERGENCY Input Feedback input for forceguided
+X9.21 SET INEMERGENCY 1 Output setting the emergency stop whenConnect to X9.17 to close the
+FEEDBACK IN contacts of the extension relays.
+OUT the safe state has been restored.emergency stop circuit.
+X9.20 RELEASE EMER-Output Extension to switch off additional
+Default: Bridge to X9.24
+X9.19 EMERGENCY 2 Output Connect to X9.15 to close the
+GENCY RELAY 2 relays if emergency stop circuit is
+OUT emergency stop circuit.
+opened.
+X9.18 RELEASE EMER-Output Extension to switch off additional
+GENCY RELAY 1 relays if emergency stop circuit is
+Using the contact extension no
+X9.17 EMERGENCY 1 INInput If the emergency stop circuit is
+opened.
+more than 50 mA per relay may be
+opened, the laser power supply is
+X9.16 DOOR 2 IN Input If one of the door circuits is
+drawn. Flyback diodes must be
+Using the contact extension noswitched off immediately.
+opened, the beam shutter of the
+X9.15 EMERGENCY 2 Input If the emergency stop circuit is
+TerminalSignal In/Outputused and the feedback circuitsDescription
+more than 50 mA per relay may be
+laser is closed immediately
+Connect to X9.21 to close the
+opened, the laser power supply is
+must be wired according to the
+IN drawn. Flyback diodes must be
+emergency stop circuit and apply
+Connect to X9.5 to close the doorswitched off immediately.
+sample wiring.
+used and the feedback circuits
+reset pulse to X9.23.
+circuit.
+must be wired according to theConnect to X9.19 to close the
+Default: Bridge to X9.21
+sample wiring.Default: Bridge to X9.5emergency stop circuit and apply
+reset pulse to X9.23.
+Default: Bridge to X9.19
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 57
+X9.24 EMERGENCY Output Feedback output for forceguided
+TerminalSignal In/OutputDescription
+FEEDBACK OUT contacts of the extension relays.
+Default: Bridge to X9.22
+Wiring see Safety Circuit Variant 2 [ } 75 ] .
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 58
+X27 Laser control
+X30 External job selection
+X25 Encoder/Product detector interface
+X33 Internal signals
+X22 Laser control
+X29 Laser control
+X21 Fume extractor
+X28 Power supply
+ConnectorDescription
+NOTICE
+8.2 Assignment of the Customer
+Interface
+All cables connected to the system must be shielded.
+The shielding should be connected to the provided grounding rail.
+The terminals of the customer interface are located on the control board in the
+supply unit of the laser system.
+Description of the connectors
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e UecLL-1N3S fz
+23«su5l "R .A0k /TTuK9
+cRll .mum1l w1bvEu5bluK],KhuasUu[
+cRll .mum1l w1bvEu5blupGLuWsUu[
+cRll .muD.CRmk /stu O
+g3m EuIbvm3- k /Uu[
+v I vk f «A CmuD.m l53A u5blu .AbE l(ClbERAmuE m AmblP
+v I vk
+23«subRmCRmuARll .mktTu Ou 3«sufw1blmeADlARDmuClbb5P
+g3m EuIbvm3- k /Uu[(BRw1uBRvv
+)/tsuaen/ hlD-- lu .3yv
+)iisu/eM l w lI E
+)iisuneW V«m l.3vu: 0uwSDmA1
+)//suaenn l w lI Ef1D-1u3.EuvbSu3AmDI3m EP
+)//surea xmbCu 3l:D.-
+)//suienn l w lI E
+)/nsuiet »Dvm lu5Rvv
+)/nsune/ V«13Rwmu llbl
+)/rsrueu)iisil w lI E
+)/asuner ].CRmuARwmb  lu llbl
+P73NR- i-.C73L53[1
+6 wAlDCmDb.ub5um1 uylDE- wu. A ww3l0u5blubC l3mDb.uSDm1bRmu «m l.3v
+SDlD.-
+h1 u5bvvbSD.-um l D.3vwu3l umbuy uAb.. Am Eumbun/ublu/Uu[u5blubC l3mDb.k
+xC AD5DA3mDb.ub5um1 un/ubRmCRmwk
+xC AD5DA3mDb.ub5um1 u/UuD.CRmwk
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 60
+8.2.1 Power Supply Connector for the Customer Interface
+(Connector X28)
+The power supply of the customer interface can either be supplied by the cus-
+tomer (opto-decoupled potential-free connection) or internally with 12 V or 24 V
+(nonisolated).
+The jumpers X19 (yellow) and X20 (green) are used for configuration.
+Potential-free configuration
+For the potential-free configuration (power supply by the customer) the jumpers
+must be set as follows:
+External supply +12 V to +24 V (potential-free):
+The external supply of 12 or 24 V +/- 10 % max. 50 W is to be connected to
+X28.7 (+) and X28.8 (-).
+Non-isolated configuration
+For the non-isolated configuration (internal power supply) the jumpers must be
+set as follows.
+In this case X28.7 and X28.8 are not connected.
+Internal supply +12 V (non-isolated):
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 61
+X28.14 RESERVED reserved for internal purposes
+X28.13 RESERVED reserved for internal purposes
+X28.12 RESERVED reserved for internal purposes
+X28.11 RESERVED reserved for internal purposes
+X28.10 RESERVED reserved for internal purposes
+X28.9 RESERVED reserved for internal purposes
+X28.8 EXTER- GND supplied by customer
+X28.7 EXTER- 12 - 24 V supplied by customer
+X28.6 RESERVED reserved for internal purposes
+X28.5 PWR_INT Connection to X28.3
+NAL_POWER_SUPPLY -
+X28.4 RESERVED reserved for internal purposes
+NAL_POWER_SUPPLY +
+X28.3 EXT_STARTUP The system can be booted remotely by
+X28.2 RESERVED reserved for internal purposes
+X28.1 RESERVED reserved for internal purposes
+TerminalSignal Description
+applying here a pulse of X28.5.
+ CAUTION
+No other connections allowed!
+Internal supply +24 V (non-isolated):
+If X28.3 and X28.5 are bridged perma-
+nently the system boots automatically
+after switching mains on.
+If the customer interface is supplied internally, the load must not exceed 250 mA.
+Connector X28: Power Supply
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 62
+X21.6 GND_CI Output
+X21.5 24 V_CI Output Power supply
+X21.4 GND_CI Output
+X21.3 FILTER_FULLInput low The system is stopped
+X21.2 EXHAUST_ONOutput high This signal is set if the
+immediately if the filter
+X21.1 EX- Input low The system is stopped
+fume extractor is to be
+TerminalSignal In/Outputhigh/lowDescription
+of the fume extractor is
+HAUST_ER- immediately if an error of
+switched on.
+full during the marking
+ROR the fume extractor oc-
+process.
+curs during the marking
+8.2.2 Assignment of Connector X21 Fume Extractor
+process.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 63
+X29.10 GND_CI Output
+X29.9 +24V_CI Output
+X29.8 GND_CI Output
+X29.7 +24V_CI Output
+X29.6 ACK_JOB_SE-Output high Low: Job selection com-
+X29.5 reserved Input
+LECTION plete.
+X29.4 SYS- Output high SYSTEM_READY is set
+X29.3 ERROR_CON-Input high Input for external error
+High: Job selection not
+TEM_READY as soon as the system
+X29.2 ERROR Output low The system is stopped
+FIRM confirmation.
+X29.1 ERROR_STA-Input low completed yet.Connected to 24 V. The
+TerminalSignal In/Outputhigh/lowDescriptioncompleted the boot se-
+immediately if an error
+TUS_CUS- signal is used to evalu-
+quence and is ready to
+occurs during the mark-
+TOMER ate error conditions.
+be controlled via the
+ing process.
+customer interface. De-
+8.2.3 Assignment of Connector X29 Laser Control
+activated in Service
+Mode.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 64
+X22.11 +24V_CI Output
+X22.10 GND_CI Output
+X22.9 reserved Input reserved for internal pur-
+X22.8 SHUT- Output high This signal is set if the
+poses
+X22.7 STOP_MARK-Input low This signal stops the
+TER_CLOSED beam shutter is closed.
+X22.6 READY_TO_MOutput high This signal is set as
+ING marking process and
+X22.5 START_MARK-Input high This signal starts the
+ARK soon as all necessary
+prevents
+X22.4 MARKING Output high This signal is set during
+X22.3 reserved Input fallingreserved for internal pur-
+ING marking process, if
+data and START signal
+START_MARKING if ac-
+the marking process.
+edge poses
+STOP_MARKING is not
+X22.2 LASER_READOutput high have been receivedThis signal is set as
+tive.
+X22.1 reserved Input reserved for internal pur-
+TerminalSignal In/Outputhigh/lowDescription
+active.
+Y (waiting for trigger).soon as the key switch
+poses
+is closed and the laser
+source was initialized
+8.2.4 Assignment of Connector X22 Laser Control
+successfully. If high, the
+system accepts start sig-
+nals for starting a mark-
+ing process.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 65
+X22.12 GND_CI Output
+TerminalSignal In/Outputhigh/lowDescription
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 66
+X33.8 EXT_KEY Output External output for key switch
+X33.7 NC -
+X33.6 reserved Input
+X33.5 NC -
+X33.4 reserved Input
+X33.3 reserved Output
+X33.2 reserved Output
+X33.1 EXT_KEY Input External input for key switch
+TerminalSignal In/OutputDescription
+8.2.5 Assignment of Connector X33 Internal Signals
+Input X33.1 must be potential-free from output X33.8.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 67
+min. loadNOTICE 20 mA
+min. pulse length2 µs
+X25.12 24 V CI Output Voltage supply 24 V (bridge to
+X25.11 reserved Output
+X25.10 GND_CI Output GND
+X25.9 TRG_EN Input Trigger enable (bridge to
+X25.9)
+X25.8 GND_CI Output GND
+X25.7 TRG Input Input trigger (product detection)
+X25.6 GND_CI Output GND
+X25.5 IN_ENC_IDX Input Input for index track of encoder
+X25.12)
+X25.4 CI line supply 1Output 24 V for trigger
+X25.3 CHB Input Input for track 2 of encoder
+X25.2 CI line supply 0Output 24 V for encoder
+X25.1 CHA Input Input for track 1 of encoder
+TerminalSignal In/OutputDescription
+8.2.6 Assignment of Connector X25 Encoder/Product
+Detector
+The encoder and the product detector are to be connected as shown in the figure
+below.
+If both tracks of the encoder are used the value for pulses per rotation must be
+doubled in the product registration.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 68
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 69
+X30.12 GND_CI Output
+X30.11 24V_CI Output
+X30.10 GND_CI Output
+X30.9 JOB_SE- Input risingStrobe signal "read bit-
+X30.8 JOB_SE- Input high Input for bitmask Bit 7
+X30.7 JOB_SE- Input high Input for bitmask Bit 6
+LECT_STROB edge mask"
+X30.6 JOB_SE- Input high Input for bitmask Bit 5
+LECT_BIT_7
+X30.5 JOB_SE- Input high Input for bitmask Bit 4
+LECT_BIT_6
+X30.4 JOB_SE-E Input high Input for bitmask Bit 3
+LECT_BIT_5
+X30.3 JOB_SE- Input high Input for bitmask Bit 2
+LECT_BIT_4
+X30.2 JOB_SE- Input high Input for bitmask Bit 1
+LECT_BIT_3
+X30.1 JOB_SE- Input high Input for bitmask Bit 0
+TerminalLECT_BIT_2Signal In/Outputhigh/lowDescription
+LECT_BIT_1
+LECT_BIT_0
+8.2.7 Assignment of Connector X30 External Job Selection
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 70
+X27.12 GND_CI
+X27.11 24V_CI
+X27.10 GND_CI
+X27.9 reserved Input high
+X27.8 reserved Output high
+X27.7 reserved Input low Connected to X33.3
+X27.6 BAD Output low Indicates that the last
+X27.5 reserved Input high
+marking was not com-
+X27.4 GOOD Output low Indicates that the last
+X27.3 reserved Input high
+X27.2 PC_CON- Output high Is set as soon as a PC ispleted due to a warning
+marking has been car-
+X27.1 SHUTDOWN Input high If this input is set to
+TerminalSignal In/Outputhigh/lowDescription
+NECTED connected.or error message. This
+ried out without warning
+"high" the system is shut
+output is reset by the
+or error message. This
+down.
+next trigger signal.
+output is reset by the
+8.2.8 Assignment of Connector X27 Laser Control
+next trigger signal.
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 71
+Backplate (optional)
+8.2.9 Assignment Backplate
+Backplate (standard)
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 72
+8.3.1 Laser Control/Job Selection
+8.3 Wiring Examples
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 73
+8.3.2 Fume Extractor/Encoder/Trigger
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 74
+2. Interlock open.
+1. Shutterlock open.
+8.3.3 Safety Circuit Variant 1
+System response:
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 75
+Emergency stop must be reset with S02 after the safe state has been re-
+System response: Interlock open. Message: Emergency stop open.
+2. Emergency stop performance level "e".
+System response: Shutterlock open. Message: Door circuit open.
+1. Door circuit performance level "d".stored.
+8.3.4 Safety Circuit Variant 2
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e UecLL-1N3S ,D
+x35 m0ucDlARDmuf «m .E EP
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 77
+8.4 Drawings
+Supply Unit
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e UecLL-1N3S ,U
+].m l53A uR.DmuSDm1u 3l:D.-u1 3Eu xK»MT4
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 79
+
+yf2Mhegeu-lnecpeVdjIE3N-[]-5e,May2,aaye2e UecLL-1N3S Uy
+].m l53A uR.DmuSDm1u 3l:D.-u1 3Eu xK»nTT4
+
+05/21 - Rev. AC [EN]Videojet 7230/7330 / 8 Appendix 81
+
+05/21 - Rev. AC [EN]Videojet 7230/7330/ Index 82
+M
+Index
+Mains frequency 29
+Maintenance protocol
+Charcoal filter 45
+A
+Filter 44
+Ambient temperature 29 Filter mats 43
+Fume extractor 44
+Laser scan lens 42
+B
+Visual inspection 46
+Bedienelemente 33
+Maintenance works 38
+Malfunctions 51
+Marking head 26
+C
+Marking speed 29
+Characters 29
+Marking unit 28
+Control options 30 , 32
+Cooling 21 , 30
+O
+Operating mode 29
+D
+Dimensions 29
+P
+Pilot laser (optional) 30
+F
+Power consumption (max.) 29
+Focal length 29
+Power range 13
+Focus diameter 30
+Pulse duration 29
+Fonts 30
+Pulse energy 29
+Fume extractor 22
+Pulse frequency 29
+Fuse 29
+Pulse peak power 29
+H
+S
+Humidity (rel.) 29
+Safety devices 11
+Safety goggles 13
+Safety interlock 12
+I
+Sealing 29
+Interfaces 30
+Speed of production line 29
+Interlock 12
+Storage 20
+Supply line
+(max. length) 30
+L
+Supply unit 28
+Laser class 29
+Supply voltage 29
+Laser parameters 27
+Laser power 29
+Laser type 29 T
+Line width 30
+Transport 19
+V
+Vector stroke 27
+W
+Warning lights 12
+Wavelength 29
+Weight 29

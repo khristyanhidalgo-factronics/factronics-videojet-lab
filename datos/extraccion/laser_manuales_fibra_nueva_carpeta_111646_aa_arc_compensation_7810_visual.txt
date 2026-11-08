@@ -1,0 +1,62 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\Nueva carpeta\111646-AA Arc Compensation 7810.pdf
+# cifrado=False bloques=5 caracteres=3725
+
+FO-111646Service Instruction/Anleitung
+Configuration of Product Registration for Arc Compensation
+1 Configuration of Product Registration for Arc Compensation
+There are two possibilities to configure the rotary table (arc compensation)
+1.Configuration via Web-Interface (recommended)
+2.Configuration via Text-Editor and WinSCP (not recommended and not described in this man-ual)
+1.1 Configuration via Web-Interface
+Preconditions
+Smart Graph: Version 8.2.3T5 or later
+Web-Interface: Version 1.0.2T2 or later
+CMark: Version 1.0.2T5 or later
+Procedure
+NoteCreate a special product registration in Smart Graph to protect the defaults.
+1.Start Web-Interface.
+2.Enter Laser IP @port 8080 in a browser i.e. http://192.168.1.1:8080
+3.Log in (at least) as Service.
+4.Navigate to Arc-Compensation Config.
+11/14 - Rev. AA 1
+
+Xxy"EGXXY"& $-&%% !!H@
+
+Service Instruction/AnleitungFO-111646
+Configuration of Product Registration for Arc Compensation
+5.If there is no config file for the arc compensation a warning will be displayed.
+6.To create the arc_config.xml fill in all fields with valid values. See table below.
+7.Click "Save". The file arc_config.xml is saved on MMC in /smarties/arc_config.xmll
+NoteIt is possible to deactivate the configuration without losing values by deacti-vating the checkbox "Enable Configuration"
+There is no need to reboot the laser as the OS is using the configuration ifarc_config.xml is existing, valid and enabled.
+ImportantIf the file is not in the folder the selected product configuration inSmartGraph will be used.
+If the file is present and Configuration is enabled the system will always com-pensate a movement on a rotary table. The configuration in Smart Graph will
+be ignored!
+2 11/14 - Rev. AA
+
+FO-111646Service Instruction/Anleitung
+Configuration of Product Registration for Arc Compensation
+The following values can be entered for the rotary table configuration:
+NoteAs the vector between marking field center and rotational axis are both vir-tual axes it is helpful to measure these x- and y-values in the 3D-model of the
+production line.
+X-Offset: X value in mm between rotation center of the rotary table and thecenter of the marking field (distance marked green).
+Y-Offset:Y value in mm between rotation center of the rotary table and thecenter of the marking field (distance marked violet).
+Ratio(Table : Encoder) -> 1:Depends on the position of the encoder (i.e. encoder at the rota-tional axis, the value would be 1)
+Pulses per Encoder Turn: Resolution of the encoder.
+The diameter of the encoder and the diameter of the rotary tablecan be used to configure a transformation ratio between encoder
+and rotary table.
+The rotation direction can be changed by the sign of the Pulses-PerEncoderTurn value. Positive values mean counter clockwise
+rotations. Negative values mean clockwise rotations.
+11/14 - Rev. AA 3
+
+Service Instruction/AnleitungFO-111646
+Configuration of Product Registration for Arc Compensation
+Start Angle:Angle between line from marking fiand line from product detector to rotation center. Positive valueseld center to rotation center
+mean angles against movement direction.
+Lock Angle: Angle between two products in degrees (decimal point isallowed). Within this angle all incoming detector pulses are
+blocked.
+StartLockAngle:Only important for special trigger mode StartTrigger: rising, Con-secutiveTrigger: Auto, StopTrigger: Falling. In this scenario the
+StartLockAngle is the angle within a start trigger is blocked afterstop trigger went in (in degrees, decimal point is allowed)
+Trigger Settings: Works as in Smart Graph. Options: None, Auto, Rising, Falling,Program.
+Rotation: Monitors the direction of rotation to detect reverse rotation.
+4 11/14 - Rev. AA

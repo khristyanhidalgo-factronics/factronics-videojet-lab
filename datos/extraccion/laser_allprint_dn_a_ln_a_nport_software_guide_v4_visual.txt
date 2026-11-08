@@ -1,0 +1,1555 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\NPort Software Guide_v4.pdf
+# cifrado=False bloques=64 caracteres=65447
+
+1
+NPort Family
+Sof t ware Inst allation Guide
+Fourth Edition, May 2004
+
+NPort Family
+Software Installation Guide
+The software described in this manual is furnished under a license agreement and may be used only in accordance with the terms of that agreement.
+Copyright Notice
+Copyright 2004 Moxa Technologies Co., Ltd.
+All rights reserved.
+Reproduction without permission is prohibited.
+Trademarks
+MOXA is a registered trademark of Moxa Technologies Co., Ltd.
+All other trademarks or registered marks in this manual belong to their respective manufacturers.
+Disclaimer
+Information in this document is subject to change without notice and does not represent a commitment on the part of Moxa.
+Moxa provides this document as is, without warranty of any kind, either expressed or implied, including, but not limited to, the particular purpose. Moxa
+reserves the right to make improvements and/or changes to this manual or the product(s) and/or program(s) described herein at any time.
+Information provided in this manual is intended to be accurate and reliable. However, Moxa Technologies assumes no responsibility for its use, or for any
+infringements on the rights of fourth parties which may result from its use.
+This manual could include unintentional technical or typographical errors. Changes are periodically made to the information herein, with the changes
+incorporated into new editions of the publication.
+
+MOXA Internet Services
+Customer satisfaction is our number one concern. To ensure that customers receive the full benefit of our products, Moxa Internet Services has been set up to
+provide technical support, driver updates, product information, and users manual updates.
+The following services are provided:
+ E-mail for technical support:
+ address: support@moxa.com.tw
+ Latest drivers and documents:
+address: http://www.moxa.com
+ World Wide Web (WWW) site for product information:
+address: http://www.moxa.com
+
+Table of Contents
+1 Introduction........................................................................................1-1
+NPort Family Features.....................................................................1-1
+Operation Mode Specification Chart................................................1-2
+How To Use This Manual.................................................................1-3
+2 Initial IP Address Configuration.......................................................2-1
+Initializing NPorts IP Address..........................................................2-1
+Factory Default IP Address..............................................................2-2
+NPort Management Suite................................................................2-2
+ARP.................................................................................................2-2
+Telnet Console.................................................................................2-3
+Serial Console (19200, n, 8, 1)........................................................2-4
+3 NPort Management Suite..................................................................3-1
+Installing NPort Management Suite.................................................3-1
+Configurator.....................................................................................3-4
+Broadcast Search.................................................................3-5
+Search by IP Address...........................................................3-6
+Modify Configuration.............................................................3-7
+Unlock Server.......................................................................3-8
+Export Configuration.............................................................3-9
+Import Configuration...........................................................3-11
+Upgrade Firmware..............................................................3-13
+NPort Monitor.................................................................................3-14
+NPort Batch Configurator..............................................................3-14
+Windows Version (npbc.exe)..............................................3-15
+Linux Version (npbc.tgz).....................................................3-16
+Uninstall NPort Management Suite...............................................3-16
+4 Real COM Installer.............................................................................4-1
+Add Server Wizard..........................................................................4-2
+Reassigning COM Numbers............................................................4-5
+
+5 Firmware Configuration...................................................................5-1
+Server Configuration.......................................................................5-2
+Choosing the Proper Operation Mode............................................5-4
+Host Based / Driver Mode....................................................5-4
+Pair Connection Mode.........................................................5-6
+Socket Modes......................................................................5-8
+Ethernet Modem Mode (NPort Express ONLY).................5-16
+Serial Settings...............................................................................5-21
+Access Control..............................................................................5-21
+Granting Access by IP Address.........................................5-22
+Granting Access by Port....................................................5-22
+Inputting IP Addresses.......................................................5-23
+A Revision History...............................................................................A-1
+
+1-1
+1
+1
+1 Introduction
+In this chapter, we present the following topics:
+NPort Family Features
+Operation Mode Specification Chart
+How To Use This Manual
+NPort Family Features
+The Moxa NPort Family of products covered by the software discussed in this guide consists of NPort Express (DE-211/311), NPort Server Lite
+(DE-301/302/331/332), and NPort Server Pro (DE-303/308). These products come with the following features:
+yLong range connection through the Intranet/Internet between host and serial device.
+ySecure access control to network hosts.
+yEasy configuration and management.
+yEasy serial port expansion under Host Based / Driver Mode:
+Up to 128 ports for one Windows 95/98/ME host.
+Up to 256 ports for one Windows NT/2000/XP host.
+ySerial connection speed of up to 230.4 Kbps.
+ySupports MAC-based IP address configuration.
+ySupports Windows Real COM and Linux Real TTY drivers.
+ySupports configuration export and import for easy deployment.
+yEasy serial device programming with Moxa PComm Lite Serial Control Librarydownload PComm Lite for free from the Moxa website at
+www.moxa.com.
+
+Operation Mode Specification Chart 1-2
+ Model NPort Express NPort Express NPort Express NPort Server Lite DE-301, NPort Server Lite DE-302, NPort Server Pro DE-308,
+DE-311 DE-211 Module DE-311M DE-331 DE-304, DE-332, DE-303
+DE-334
+Operation
+ Mode
+Windows Real COM
+driver
+Linux fixed tty driver
+Linux real tty driver
+TCP Server
+TCP Client
+UDP Server/Client
+Pair Connection
+Ethernet Modem
+Windows Real COM driver supports Windows 95/98/ME and Windows NT/2000/XP.
+
+How To Use This Manual 1-3
+yFirst time installation
+See Chapter 2 for instructions on how to configure your NPort products IP address.
+yConfiguration
+See Chapter 3 for instructions on how to install NPort Management Suite, and how to use Configurator, a useful Windows GUI .
+See Chapter 5 for instructions on how to configure your NPort Products firmware via Telnet Console or Serial Console.
+See Chapter 5 for configuration parameter definitions.
+yReal COM Applications
+See Chapter 4 for information on expanding the number and reach of your host computers COM ports.
+yLinux Real TTY installation
+Download the Linux tty driver from the Moxa website at www.moxa.com. To see detailed installation instructions under Linux, please refer to the
+Installation Guide in the readme.txt file that is downloaded with the Linux driver.
+
+2-1
+2
+2
+2 Initial IP Address Configuration
+When setting up your NPort for the first time, the first thing you should do is configure the Device Servers IP address.
+This chapter includes the following sections:
+Initializing NPorts IP Address
+Factory Default IP Address
+NPort Management Suite the method we recommend
+ARP
+Telnet Console
+Serial Console (119200, n, 8, 1)
+Initializing NPorts IP Address
+0. Determine whether your NPort needs to use Static IP or Dynamic IP (either DHCP or BootP application).
+1. If NPort is used in a Static IP environmentManagement Suite, you can use , ARP, Telnet ConsoleNPort , or Serial Console (NPort Express
+ONLY) to configure the new IP address.
+2. If NPort is used in a Dynamic IP environment, you can use Management suite, Telnet ConsoleNPort , or Serial Console (NPort Express ONLY)
+to configure NPort to get an IP address dynamically with DHCP/BootP, or BootP. DHCP,
+NOTE Consult your network administrator on how to reserve a fixed IP address (for your NPort) in the MAC-IP mapping table when using a
+DHCP Server or BootP Server. In most applications, you should assign a fixed IP address to your NPort.
+
+Factory Default IP Address 2-2
+NPorts are configured with the following default private IP address:
+Default IP address: 192.168.127.254
+(IP addresses of the form 192.168.xxx.xxx are referred to as since it is not possible to directly access private IP addressesa device configured with a private IP ,
+address from a public network. For example, you would not be able to ping such a device from an outside Internet connection. NPort applications that require
+sending data over a public network, such as the Internet, require setting up the server with a valid public IP address, which can be leased from a local ISP.)
+NPort Management Suite
+NPort Management Suite consists of some useful utility programs that are used to configure and manage your NPorts.
+See Chapter 3 for details on how to install NPort Management Suite, and how to use this suite of useful utilities to set up IP addresses and configure
+your NPort.
+ARP
+You can make use of the ARP (Address Resolution Protocol) command to set up an IP address for your NPort. The ARP command tells your computer to
+associate the NPorts MAC address with the intended IP address. You must then use Telnet to access the NPort, at which point the Device Servers IP address
+will be reconfigured.
+NOTE In order to use this setup method, both your computer and NPort must be connected to the same LAN.
+Or, you may use a cross-over Ethernet cable to connect the Device Server directly to your computers Ethernet card.
+Your NPort must be configured with the factory default IP address
+192.168.127.254 before executing the ARP command, as described below.
+Take the following steps to use ARP to configure the IP address:
+1. Obtain a valid IP address for your NPort from your network administrator.
+2. Obtain the NPorts MAC address from the label on its bottom panel.
+
+3. Exec ut e t h e ar p -s com m and fr om y our co m put ers M S - D O S pr om pt b y
+t y pi ng:
+arp s 192.168.200.100 00-90-E8-xx-xx-xx
+Th is is wh er e 19 2.168 .2 06 .100 is t h e n e w I P add r ess an d 00 -90 - E8 -xx - xx- xx
+is th e MAC add r ess for you r NPo r t. You will n eed to ch an ge bo th nu m b ers,
+as desc ri be d a b ove i n p o i n t s 1 an d 2.
+4. Next, exec ute a special Telne t command by
+t y pi ng:
+telnet 192.168.200.100 6000
+After issui n g this c o m m a nd, t h e Tel n et sessi on
+a Connec t fail ed m e ssage wi l l appea r , as s h ow n he re. T h e NP ort  s I P
+ad dr ess shou ld no w b e upd ated to th e ne w a d dres s, a n d you can reconnect
+using eithe r Te lnet or Configurator to c h ec k t h at the update was s u ccess f ul.
+Telnet Console
+Depe n d i n g on ho w y o u r c o m put e r a n d net w or k a r e c o n f i g u r ed , y o u m a y fi nd i t
+con v e n i e nt t o use net w or k ac cess t o set u p y o u r NP ort  s IP add r ess . T h i s c a n be
+d o n e u s i n g th e Teln et pr ogr am .
+NOTE Fo r NPo r t Express, you mu st set DIP switch 1 to th e OFF po sitio n to
+be abl e t o est a bl i s h a Tel n et c o n n ect i o n.
+N P ort Server L i t e an d N P ort Server Pro a r e i mme di at el y a ccessi bl e
+NOTE
+via Telnet, provided t h ey are pr operly c o nne cted to t h e LA N.
+1. Fr om t h e W i n d o w s deskt o p , c l i c k o n Sta r t an d th en s e le c t Run .
+2. Ty pe telnet 192.168.1 27.254 (u se
+the correct IP a d dress if diffe rent from the
+d e fau lt) in th e Open t e xt i n pu t bo x, an d
+th en click OK .
+3 . W h en t h e Tel n et w i nd ow op en s,
+typ e 1 to select a n si/v t1 00 fo r
+Cons ole termi nal type , a n d t h en
+pres s Enter .
+4. If p r om pt ed f o r t h e Cons ole passw ord , inpu t th e p a sswo rd an d th en p r ess
+Enter .
+2-3
+
+5 . To en su r e pr oper o p e r a tio n, cl ick on t h e Termina l m e nu, c h o o se
+Preferences , and t h en m a ke sure V T 100 A rro ws is ch eck e d.
+6 . U s e t h e k e yboar d arr o w
+key s t o hi ghl i g ht
+[server Config] as
+sh ow n bel o w, and t h e n
+pres s Enter .
+7 . A w i nd ow show ing
+th e v a riou s
+param e ters req u ire d
+to configure t h e
+NPo r t op en s up , with
+co nfigu r ab le
+param e ters enc l osed
+i n s qua re brac k e t s .
+8 . U s e t h e k e yboard arrow k e ys to p o sitio n t h e cursor ov er t h e first d i g it o f t h e
+I P add r e s s. T y p e in th e cor r e c t I P add r e s s an d th en p r e s s Enter to accept this
+val u e.
+9. Press ESC to retu rn to th e m a in m e n u , an d th en Re st art to activate the
+change.
+Serial Console (19200, n, 8, 1)
+NOTE Th is section only a p p lies to the NP ort Ex pre ss Se ri es ( N Po rt Server
+Pro a n d N P o r t Server Li t e d o N O T h a ve se ri al co ns ol e port s ) .
+Yo u m a y use t h e R S -2 3 2 c o n s ol e po rt t o set up t h e IP ad dre ss f o r t h e NP o r t
+Ex press Fam i ly . W e su g g est usi n g M O X A PC om m Ter m inal Em ul at or, whi c h i s
+available free of cha r ge as pa rt of th e MOXA PC o m m Li te prog ram su ite, to
+carry o u t t h e installatio n p r o c ed ure, alth oug h o t h e r sim i lar u t ilit ies m a y also b e
+use d . (Please go to www.m oxa.com to do wnlo ad t h e installatio n p r og ram for
+2-4
+
+PCom m Lite.)
+NOTE Yo u mu st set D I P sw i t c h 1 t o t h e ON posi t i o n t o be abl e t o e s t abl i s h a
+con s ol e c o nnec t i on.
+1 . Plu g you r NPor t Expr esss f e male ser i al p o rt d i rectly in to y o ur co m p u t ers
+m a le RS-23 2 s e rial p o rt, o r us e an a p pr o p riate co nve rter (re fer t o the
+Hardware In stallatio n Gu id e fo r d e tails).
+2. Fr om t h e W i n d o w s deskt o p cl i c k o n Start Progr a ms PComm Lite
+Terminal Em ulator .
+3. Whe n t h e P C omm Terminal Emulator
+w i nd ow op ens, f i r s t click on t h e Po r t
+Ma na ger m e nu i t e m and sel e ct Open , or
+si m p ly click on th e Ope n icon.
+4. The Pr oper ty wind ow op ens au to m a tica lly.
+From the Com m unication P a rameter
+page , select the appropriate C O M port for
+the connection, CO M 1 in this exam ple, and
+1 920 0 fo r Baud Rate , 8 fo r Da t a Bits ,
+No ne fo r Pa r i ty , a n d 1 fo r Sto p Bits .
+5 . Fro m th e Pr oper t y w i ndo w s Termina l
+page , sel ect VT1 0 0 fo r Termina l Type and
+th en click OK .
+2-5
+
+6 . Ch oo se 1 fo r an si/v t100 term i n al em u l atio n typ e , an d th en press Enter .
+7 . U s e t h e k e yboar d arr o w k e ys to h i gh lig h t [s erverConfig] , and the n pres s
+Enter to select th is o p tion .
+8. A wi n d o w sh o w i n g t h e va ri o u s param e t e rs r e qui red t o c o nf i g u r e NP ort
+Ex press o p e n s up , wi t h c o n f i g ura b l e param e ters e n cl ose d i n sq uare b r ac ket s .
+9. Use t h e
+key b o ar d a r r o w
+k e ys to po sition
+the curs or over
+th e first d i g it of
+the IP a d dress.
+Typ e in th e
+correct IP
+address , press
+ESC to r e tu rn to
+th e m a in m e n u ,
+and the n select
+Rest ar t to
+activate the
+change.
+2-6
+
+3
+3
+3 NPort Management Suite
+NP ort M a nage m e nt Sui t e co n s i s t s of fi ve pr og ram s C onf i g u r at or , R eal C O M
+I n staller , NPort Mo n itor , N P or t Batch C o nf ig ur ator (W i n do ws an d Linu x
+versi o n s ), an d Uni n st al l NP or t M a nagem e nt Sui t e t h at a r e desi gne d t o m a ke i t
+easy to co nf igur e an d m a n a g e yo ur N P o r ts.
+Th is ch ap ter inclu d e s th e fo ll o w i n g section s :
+In stallin g NPort Man a g e m e n t Su ite
+C o n f i g urat or
+x Broa dcast Sea r ch
+x Searc h by IP Address
+x M odi fy C o nfi g urat i o n
+x Unl o ck Se rve r
+x Ex po rt C o nfi g urat i o n
+x Im port C o nfi g urat i o n
+x Up g r ade Firm ware
+NPo r t M o n itor
+NPo r t Batch C o nfigu r at o r
+x W i nd ow s V e r s io n (n pb c.ex e)
+x Li nu x Ver s i o n (n p b c.t g z )
+Uni n st al l NP or t M a nagem e nt Sui t e
+Installing NPort Management Suite
+Fo llow th e step s g i v e n b e low to install NPo r t Man a g e m e n t Su ite on y o ur
+W i n d o w s - ba se d c o m put er.
+1. R u n t h e De vi ce Ser v er set u p pr o g ram Dssetup.e x e .
+3-1
+
+2. C l i c k o n Nex t whe n t h e
+Welcome! w i nd ow op ens to
+p r o ceed with t h e installatio n .
+3. Sel ect t h e N P o r t M a na gem e nt
+Su ite u tilities th at you wou l d
+lik e to install.
+4. C l i c k o n Nex t to in stall progra m
+files in th e d e fau lt d i rect o r y, o r
+click on Bro w se to select an
+altern ativ e lo catio n .
+3-2
+
+5. C l i c k o n Nex t to proceed wit h
+th e in stallatio n.
+6. The Insta lling w i nd ow r e p o r t s th e p r og r e ss o f
+th e in stallatio n.
+7. If y o u select La ter , you can
+alw a ys ru n Con f i g ur ator o r R eal
+COM I n staller later fr om un d e r
+th e W i n dow s St a r t but t o n (se e
+the appropriate sections bel o w
+fo r details).
+3-3
+
+Configurator
+C o n f i g urat or i s a com p re hensi v e W i n d o w s GUI th at can b e u s ed to conv enien tly
+co nfigu r e and main tain m u lti p l e NPorts. It i s d e si g n e d t o prov i d e y o u w i t h
+i n st an t a neous cont rol of al l y o ur NPort s , regardl e ss of l o cation.
+Co nfigu r at o r prov id es th e fo llo wi n g usefu l utili ties:
+y B r oa dcas t Sea r ch
+Locate all NPorts that a r e c o nn ected t o the PC host s LAN.
+y Sear ch b y I P addr e s s
+Locate a s p ecific NPort by IP address , even if th e NPo r t is loca ted ou tsid e t h e
+PC host s L A N .
+y Upgrade Firm war e
+Keep you r NPo r t up to d a te with th e latest Mo x a firm ware.
+y Modify Confi g ur ati o n
+Easily recon f igu r e an NPort s p a ram e ter settings, s u c h as IP addres s,
+Netm ask , Gateway , p o rt setting s , p a sswo rd , etc.
+y Ex po rt Co nf igu r at io n
+Exp o rt an NPort con f i g uration to a file on the PC h o s t.
+y Impor t Confi g ur ati o n
+Im p o r t an NPort Con f i g uration fro m a file on th e PC ho st to o n e or m o re
+NP orts.
+To ru n C o nfi g urat or, cl i c k on
+Start Progra m s NP or t
+Manageme nt Suite
+Confi g ur ator .
+After th e Co nfig urato r
+w i nd ow op ens, yo u can
+u s e an y o f t h e u tilities
+b y selectin g optio n s
+3-4
+
+un de r t h e ap pr op ri at e m e nu Lo ca t e S e rve r , Firmware , Configuration , View ,
+or Help o r by click i n g on an activ e u tility ico n .
+C o n f i g urat or i s ve ry
+in tu itiv e and qu ite easy
+to use. Ho w e ver , y o u
+can always re fer to
+Co nfigu r at o r s h e lp file
+b y selectin g Help To p i cs un der Help as show n b e l o w.
+Once the Help win d o w
+ope ns , cl i c k o n t h e
+to p i c th at y o u wish to
+vi ew.
+Broadcast Search
+The Br oadcast Searc h
+fun c tion is u s ed to
+lo cate all NPo r ts th at
+are c o nnected to the
+sam e LA N as yo ur
+com puter.
+NOTE Befo re mod ifyin g an NPo r ts co n figu r a tion , u s e B r o adc ast Searc h or
+Searc h by IP A ddre s s to lo ca te NPorts conn ected t o th e LAN.
+3-5
+
+The B r oa dcast Searc h
+wind ow will op en and
+d i sp lay th e Mod e l, IP
+A ddr ess, MA C
+Address, and P r ogre ss
+(of the searc h for that
+part i c ul ar de vi ce).
+W h en th e s e arc h is
+co m p lete, th e Bro a d cast
+Searc h window closes,
+an d th e NPorts th at
+were located are
+d i sp layed in t h e left
+pane o f t h e
+C o n f i g urat or w i nd ow .
+Click on a server n a m e in th e left p a n e to d i sp lay k e y info rmatio n related to th at
+serve r i n t h e ri ght pa ne.
+Search by IP Address
+The Searc h b y IP
+Addre s s fun c tio n is
+use d to locate a
+p a rticu l ar NPort,
+rega rdless o f w h ethe r
+o r no t th e server is co nn ected to your LA N. I f bo th y o ur PC and th e NPor t th at
+you a r e trying t o locate ha ve a ccess to t h e sa me LAN, WAN, or e v en to t h e
+In tern et, y o u sh ou ld b e ab le t o u s e S earc h by IP Address t o locate t h e NPort.
+Whe n t h e Se ar ch b y IP
+Addre s s w i ndo w
+ope ns , e n t e r t h e IP
+Ad d r ess of t h e NP ort
+yo u wish to lo cate, and
+th en click OK .
+3-6
+
+The B r oa dcast Searc h
+wind ow will op en and
+di spl a y key i n f o rm at i on
+an d th e pr og r e ss of t h e
+search for that
+p a rticu l ar NPort. If an
+NPo r t with t h e
+specified IP Address
+can no t b e lo cat ed , con s u lt w ith your n e two r k ad m i n i str a to r t o g e t th e cor r e ct I P
+address .
+If t h e sea r ch is
+success f ul, the
+Broa dcast Sea r ch
+window cl oses , and key
+in fo rm atio n rel a ted to
+th e serv er is d i sp layed
+in th e righ t p a ne.
+Modify C onfigurati on
+To m odi fy t h e
+co nfigu r ation of a
+p a rticu l ar NPort, fi rst
+select the NPorts nam e
+to h i g h ligh t it, an d th en
+select Mo dify
+Confi g ur ation u nde r
+th e Co nfiguratio n
+m e nu, o r cl i c k on t h e M o di fy C o n f i g urat i o n i c on .
+NOTE You ca n simu lta n e ou sly mod ify th e co n figu r atio n s o f mu ltip l e NPo r ts
+t hat are of t h e sa me mo del .
+To select multiple NPorts, hol d dow n t h e Ctrl key whe n sele cting any
+additional NPort, or ho ld dow n the Shift key to select a group of
+NPo r ts.
+3-7
+
+The Confi g ur ati o n w i ndo w
+ope ns t o t h e N e tw ork Set t i n gs
+page . T o m odi f y i t e m s , sel ect or
+d e select th e item b y click i n g in
+the chec kbox next to t h e item .
+Click on th e OP_M ode , Serial
+Settin g s , Acce ss Contr o l , or
+Passw ord tab s to m o d i fy th e
+set t i ngs of ot he r param e t e rs.
+NOTE Deta iled i n fo rma tion ab ou t t h ese con fig u r atio n p a rameters is g i ven in
+Ch ap ter 5 , Firmwa re C o nfigura tion .
+Unlock Server
+The U n l o c k Se rve r fu nct i o n i s use d t o ope n a pass w o r d pr ot ect ed N P o r t s o t h at
+t h e u s er ca n m odi fy i t s co nfi g urat i o n. As s h o w n bel o w , si x po ssi bl e st at es can
+appea r i n t h e S t at us col u m n .
+The m eanings of the si x state s ar e as fo llows (n o t e t h at th e term Fixed is
+bo rr o w ed f r om t h e st a nda rd fixed IP addres s net w o r ki ng t e r m i nol ogy ):
+y Locked
+Th e NPo r t is pa ssw o r d pro t ected , Broad cast S e arch was u s ed to lo ca te it,
+an d t h e pa ssw or d has n o t yet bee n e n t e red f r o m w i t h i n t h e curre nt
+C onf i g ur at or s e ssi on .
+y Unloc k ed
+Th e NPo r t is pa ssw o r d pro t ected , Broad cast S e arch was u s ed to lo ca te it,
+an d t h e pa ssw or d has bee n e n t e red f r o m w i t h i n t h e cu rren t C onf i g ur at or
+session. He nce f orth during this Con figu r a t or session , a c tiva tin g variou s
+u tilities fo r th is NPo r t will no t requ ire re-en t erin g th e server pa ssw o r d .
+3-8
+
+y bl an k
+The N P ort i s n o t p a ssw or d pr ot ect ed, a n d  B ro adc ast Se a r ch w a s use d t o
+lo ca te it.
+y Fixed
+The N P o r t is n o t p a s s w o r d pr ot ect ed, an d Se a rch by IP a ddre ss w a s use d to
+lo ca te it.
+y Locked Fixed
+Th e N P o r t is passw ord pro t ect e d, Sea rch by I P address w a s used to lo ca te it,
+and t h e pa ssw o rd has no t yet been en tered from wit h in t h e curren t C o n f igurator
+sessi on.
+y Unloc k ed Fixe d
+Th e NPo r t is pa ssw o r d pro t ected , S ea rch by I P ad dress wa s u s ed to lo ca te
+it, a n d t h e p a sswo rd ha s b e en en tered from w ith in th e cu rren t Con figu r a t or
+session. He nce f orth during this Con figu r a t or session , a c tiva tin g variou s
+u tilities fo r th is NPo r t will no t requ ire re-en t erin g th e server pa ssw o r d .
+Export Configurati on
+The E x port
+Co nfigu r ation fun c tion
+is a ha ndy tool that can
+b e u s ed to pr odu ce a
+tex t file con t ain i ng th e
+cu rr en t con f i g ur atio n of
+a pa rt i c ul ar NP ort .
+3-9
+
+Next, u s e the Lo ok in
+dr o p do w n m e nu t o
+navi gat e t o t h e fol d er
+w h er e y o u w a nt to stor e
+th e configu r atio n, typ e
+a file n a m e in th e File
+name i n put b o x , a n d
+th en click on Open .
+Whe n y o u see the
+Ex po rt co nf igu r at io n
+to file OK m e s s age,
+click OK to r e t u rn to
+the Confi g urat or
+w i nd ow .
+Yo u m a y use t h e
+co nfigu r ation (tex t) file
+to ch ang e co nfig uratio n
+i t e m s and/ or c o m m e nt
+o u t con f i g uratio n ite m s ,
+an d th en im p o r t th e
+new co n f i g urat i on i n t o
+o n e or m o r e NPor ts
+(see t h e ne xt se ct i on,
+Impo rt Con figu r a tio n ,
+for d e tails). Note th at
+th e pou nd sign ( # )
+indicates a c o mment
+lin e.
+3-10
+
+Import Configurati on
+The Im port
+Co nfigu r ation fun c tion
+is u s ed to im p o r t an
+NP ort c o nfi g u r at i on
+fro m a file in to on e o r
+m o re of t h e sa m e m odel
+NPo r t. To im p o rt a
+co nfigu r ation , first
+select the targe t serve r s
+(u se th e left mo use
+button t o select servers;
+si m p ly h o l d dow n th e
+C t rl key w h e n sel ect i ng
+th e seco nd , th ird , etc.
+serve r ).
+Use t h e Loo k in dro p
+do w n m e nu t o navi gat e
+to the folder containing
+th e configu r atio n tex t
+file, click o n the file to
+in pu t th e file na m e in to
+th e File na me bo x, an d
+th en click on Open .
+3-11
+
+At th is po in t, t h e Confi g ur ation
+wind ow will op en to g i v e you th e
+opt i o n t o sel ect o r desel ect
+co nfigu r ation i t e m s. Th is step is a
+very i m port a nt pa rt o f t h e Im po rt
+C o n f i g urat i o n pr ocess . F o r
+exam ple, whe n im porting t h e
+sam e co n f igu r atio n to m u ltip l e
+serv ers, you will p r o b a b l y at least
+want t o desel e ct Server Nam e
+and IP Addres s . If y o u do no t
+deselect these i t e m s, then all of
+th e NPorts th at yo u are im p o r tin g
+to will end up with th e sam e
+Server Nam e and IP Addre ss!
+NOTE Wh en impo rting th e sa me config u r a tio n to mu ltip le NPo r ts, b e su re t o
+d e select items su ch a s Se rver Name an d IP A ddre s s . Othe r w ise, you
+will en d u p with more than o n e server with t h e same n a me a n d IP
+Address.
+Whe n t h e Pr ogress
+colum n rea d s OK fo r
+each of the se rvers
+who s e con f i g uratio n is
+bei n g up dat e d , cl i c k o n
+Close , lo cated in th e
+up pe r l e ft c o r n er of t h e
+Set Confi g ur ation
+w i nd ow , to r e t u rn t o th e
+C o n f i g urat or w i nd ow .
+3-12
+
+Upgrade Firmware
+To u p g r ade the firm ware
+of o n e or m o re o f t h e
+sam e m o d e l NPort, fi rst
+select the serve r s whose
+firm ware y o u wish to
+upgrade (use t h e left
+m o u s e bu tto n to select
+serve r s; sim p ly hold
+d o wn th e Ctrl k e y wh en selectin g th e seco nd, th ird , etc. serv er).
+Use t h e Loo k in
+d r op dow n m e n u to
+navi gat e t o t h e fol d er
+cont ai ni ng t h e *.R O M
+firm ware file f o r the
+m odel of NP or t y ou
+have selected.
+Whe n t h e Pr ogress
+colum n rea d s OK fo r
+each of the se rvers
+wh ose firm war e is bei n g
+up g r ade d , cl i c k on Cl ose
+to ret u rn to th e
+C o n f i g urat or w i nd ow .
+3-13
+
+NPort Monitor
+NPo r t M o n itor is u s ed
+t o m oni t o r t h e po rt s of
+NPo r ts. To start NPo r t
+Mo n itor, click o n St a r t
+NP ort
+Manageme nt Suite
+Mo nit o r .
+After th e NP or t Ser v er
+Mo nit o r w i ndo w
+ope ns , you ca n access
+th e h e l p file to learn
+h o w t o m o n itor th e
+p o rts o f you r NPorts. Th e h e lp file con t ain s co m p lete in fo rmatio n on h o w to u s e
+NPo r t M o n itor.
+NPort Batch Configurator
+NPo r t Batch C o nfigu r at o r is a co mm an d lin e prog ram th at perfo r m s th e
+fo llowing sp ecial fun c tio n s .
+1 . Upd a te m u ltip l e Np orts IP add r esses at th e sa m e ti me. You on ly n e ed to
+main tain o n e MAC to IP m a p p i n g tab l e to u s e t h is fun c tion .
+2 . Si m u ltan e o u sly u p d a te th e con f i g uratio ns o f m u lt ip le Nports b y m a in tain i n g
+special confi g uration files (t ext files that c o ntain all of t h e configuration
+settings fo r a n NP ort) . Adm i nistrators can u s e th is fun c tio n to easily m o d i fy
+th e configu r atio n of t h eir NPo r ts.
+3-14
+
+NPort Batch Configurator provides the following useful runtime options:
+3-15
+ychange The change option is used to change the IP addresses of one or more NPort
+that are connected to the PC hosts LAN.
+ysetting Modify the configurations of one or more of the same model NPort.
+yexportExport the configuration of one NPort to a file on the PC host.
+ylist List all NPorts that are currently connected to the same LAN as your
+computer.
+yhelp Display the NPort Batch Configurator help file to see the exact format for
+using the above commands.
+NOTE The change option is unique to NPort Batch Configurator. This option provides a handy way to simultaneously update the IP addresses of
+multiple NPorts.
+Example usage:
+Run <installed directory>\npbc.exe c changeip.txt
+Windows Version (npbc.exe)
+The Windows version of NPort Batch Configurator, npbc.exe, is provided for the hard core programmer who still insists on doing things the old fashioned way.
+NOTE More details about the Windows version of NPort Batch Configurator can be found by accessing the NPort Batch Configurator help file.
+After installing NPort Management Suite in the default folder, npbc.exe will be located in the folder:
+c:\Program Files\NPortSuite\Utilities
+You run npbc.exe by typing npbc (followed by options, as described in the help file) from the DOS command line.
+
+Linux Version (npbc.tgz)
+NP ort B a t c h C o n f i g urat or f o r Li n u x , np bc.t g z , ha s t h e sam e f unct i o ns a s t h e
+W i nd ow s v e r s i o n.
+NOTE To i n sta ll NPort Ba tch Con fig ura t o r for Li nu x, find t h e file np bc.t gz ,
+wh ich is l o ca ted o n th e NPo r t So ftwa r e C D i n th e fo llo wing d i recto r y:
+npo r t\softwa r e\linux \i3 86 \npco n fig
+You ma y a l so refer to th e readme file on th e so ftwa r e C D fo r
+in fo rma tion abo u t :
+1. IP a n d M A C a d d r ess co nfi g u r at i o n
+2. Ex po rt C o nfi g urat i o n T a bl e
+3 . Im p o r t Con f i g u r ation t o m u lt ip le NPorts.
+Uninstall NPort Management Suite
+To un in stall NPort
+M a nagem e nt S u i t e , cl i c k on
+Start Progra m s NP or t
+Manageme nt Suite
+Unins t all an d th en fo llow th e
+on scree n i n st ru ct i ons.
+3-16
+
+4-1
+4
+4
+4 Real COM Installer
+In this chapter, we discuss the basic tasks involved in configuring your NPort, and discuss the various operation modes that are available.
+This chapter includes the following sections:
+Add Server Wizard
+Reassigning COM Numbers
+The main purpose of Real COM Installer is to set up your host computer to communicate with particular NPorts configured for Host Based / Driver Mode.
+The Add Server Wizard utility is used to carry out this procedure. You will also need to use Real COM Installers Map Port function to reassign COM port
+numbers for your NPorts.
+NOTE NPorts Windows 95/98/ME/NT/2000/XP drivers are bundled with NPort Management Suite.
+To e x pand the number and range of your host computers COM ports, use Real COM Installer to assign COM numbers to NPorts serial
+ports. The procedure for doing this is exactly the same for all Windows platforms.
+
+Add Server Wizard
+Fol l o w t h e st e p s gi ve n bel o w t o set u p y o u r ho st com put er t o com m uni cat e wi t h
+NP ort s c o nfi g u r ed f o r H o st B a sed / Dri v er M ode .
+1. To sta r t Real
+COM
+Installer,
+click on
+Start
+Program s
+NP ort
+Manageme n
+t S u ite
+CO M P o rt
+Mappin g
+Real CO M
+Installer .
+2. Whe n t h e Real
+COM Insta ller
+w i nd ow op ens,
+select Add Ser v er
+Wiz a rd .
+3 . Mak e su r e you h a v e
+connected the NPort t o the
+net w or k, an d t h en cl i c k on
+Nex t t o pr ocee d.
+4-2
+
+4. Yo u ca n sel ect Au tom a ticall y
+search the LAN or Ma nua l l y
+enter I P addr ess . Th e second
+opt i o n al l o ws y ou t o sea r ch
+for NPorts t h at are not
+connected di re ctly to your
+ho st s L A N.
+5 . Click on th e Mo d e l of th e
+s e r v er yo u wou l d lik e to add ,
+an d th en click o n Ne x t to
+cont i n ue.
+4-3
+
+6. The NP ort  s se rial ports a r e
+map p e d seq u e n tially, startin g
+from the sm a l lest available
+CO M nu m b er . H i gh er CO M
+num bers t h at a r e alrea d y
+assig n e d t o o t her p o rts will b e
+ski p pe d.
+NOTE After yo u in st all a n NPo r t, you ca n use Rea l COM In st a llers Map
+Port f u nct i o n t o re assi gn C O M n u m ber s to the serve r s ser i al ports.
+7. C l i c k o n Nex t to sav e th e
+settin g s to your h o s t co m p u t er
+and the NPort.
+4-4
+
+8. Sel ect whet her o r not y o u
+wou l d lik e to en ab le t h e C O M
+ports that we re just assi gne d,
+an d th en click o n Finish .
+9. If y o u are currently running
+program s that access the ne wly
+adde d NP o r ts serial p o rt( s ), b e
+sure t o sh ut do wn t h ose
+pr o g ram s bef o r e cl i c ki ng o n
+Yes i n th e fo llo wi n g wi n dow.
+10. Real COM Inst aller
+will n o w d i sp lay th e
+NP ort a n d po rt s t h at
+were j u st a dde d t o
+y o u r host c o m put e r .
+Reassig n ing COM Numbers
+Fo llow th e in st ru ction s g i v e n b e low to reassig n COM nu m b ers to NPort p o rts.
+1. Hi g h l i ght t h e p o rt
+wh ose COM
+num ber y o u wi sh t o
+reassign (in t h e
+ri g h t pa ne of t h e
+Real COM Inst aller window), as show n b e l o w , and th en select Ma p P o rt
+un de r t h e Por t m e nu, o r cl i c k on t h e M a p Po rt i c o n (t he fo u r t h i c on f r om t h e
+left).
+4-5
+
+2. The P o r t Pr operties wi n dow will o p e n , at
+wh ich tim e yo u will b e ab le to v i ew t h e
+COM num b er currently a ssigned to t h e port
+(COM 3 for thi s exam ple).
+Tran sm i ssi on M ode:
+Hi-perform a nce m o d e is th e d e fau lt fo r Tx
+m o d e . If th e driv er co m p letes send ing d a ta
+o u t t o th e NPort, th e d r i v er wi ll respo n d Tx
+Em p t y to th e p r og ram .
+Un de r clas sical mode , th e driv er will no t
+n o tif y t h e u s ers pr ogr am th at Tx is
+com p l e t e d unt i l al l Tx dat a ha s bee n se nt out
+fr om t h e NP ort ; t h i s m ode wi l l cause l o we r
+th ro ugh pu t. If yo u wan t to ensu re th at all
+dat a i s se nt o u t be fo re fu rt he r pr ocessi ng ,
+classical m ode is recomm ended.
+Ena b le/Disa b l e Tx /Rx FIFO . I f di sabl e d ,
+NPo r t will send o n e b y te each tim e th e Tx
+FIF O bec o m e s em pt y; and a n R x i n t e rr u p t
+will b e g e n e rat e d for each in co m i n g b y te.
+Th is will resu lt in a faster respo n se an d lower
+t h r o u g h p u t . If y ou wa nt t o us e X ON/ XO FF
+fl o w c ont r o l , w e rec o m m e nd s e t t i ng F I F O t o
+Disable.
+4-6
+
+Fas t Flus h (on l y flus h loc a l buffer)
+(1 ) We have ad de d one o p t i o nal Fast Fl us h f u nct i o n i n o u r n e w NP ort
+Real COM driver. NPor t Management Suite for 1 G NP ort ad d s th is
+fu nct i o n aft e r versi o n 3.2 .
+(2) For so m e ap p licatio n s , th e u s ers program will u s e th e W i n 3 2
+Purg e C o mm ( )  fun c tio n b e fo re it reads o r writes d a ta. W i th our
+d e sign , after the prog ram u s es th is Pu rg eC omm() fun c tion , th e NPo r t
+d r i v er will k e ep q u e rying NPo r t firm ware bu ffer, rat h er than j u st
+fl us hi n g t h e l o cal bu ffe r. Thi s ki n d o f desi g n i s use d beca us e o f s o m e
+speci al co nsi d e r at i ons . Ho we v e r, i t m i ght t a k e m o re t i m e (abo ut
+several h u n d r e d m i ll i s econds ) t h an a nat i v e C O M 1 , beca us e i t need s
+to work via Et hernet. T h ats w h y t h e n a tiv e CO M por ts on th e
+m o th erb o a rd can work fast with th is fun c tion call, b u t NPort req u i res
+m u ch m o re time. In o r d e r to acco mm o d a te o t h e r app licatio ns th at
+requ ire a faster resp on se ti m e , th e n e w NPort driv er im p l e m en ts a n e w
+Fast Fl us h o p t i o n . Not e t h a t by de fa ul t , t h i s f unct i o n i s di sabl ed .
+(3 ) To be gi n wi t h m a ke su re t h e r e are s o m e Pu r geC o m m () funct i o ns
+b e ing u s ed in yo ur app licatio n prog ram . In this k i nd o f situ atio n , y o u
+mig h t f i nd t h at yo ur N P o r t exh i b its a m u ch po or er op er atio n
+per f o r m a nce t h an whe n usi n g t h e nat i v e C O M 1 po rt . Once y ou ha ve
+enable d the Fast Flus h func tion, y o u can c h eck to see if t h ere has
+been an im provem ent in pe rform a nce.
+(4 ) B y defa ul t , t h e o p t i onal  F ast Fl us h f u nct i o n i s di sabl e d . I f y o u
+wou l d lik e to en ab le t h is fun c tio n , fro m th e Real COM Installer,
+d oub le click on th e COM po rts th at are m a pped to t h e NPort, a n d the n
+select the Fast Flus h c h ec kbox. You should find t h at whe n Fast
+Flu s h  is en ab l e d , t h e NPo r t driv er will work faster with
+PurgeC o mm ( ) .
+3 . Click on th e Ma p to d r o p dow n w i n dow and
+then select the new COM num ber (COM6 for
+the exam ple shown he re), and then click OK .
+4 . You will no w b e
+ab le to v i ew the
+new C O M p o rt
+num ber i n t h e R eal
+CO M In staller
+wind ow. To sav e th e settin g, select Save Configuration under the Server
+m e nu, o r cl i c k on t h e Save all Server s icon (th e leftm o st ic o n ).
+4-7
+
+5. M a ke s u re t h at any
+p r og ram s cu rren tly
+accessing the COM
+p or ts ar e sh u t do wn ,
+an d th en click Yes
+to accept t h e
+change, and re start
+th e NPort.
+4-8
+
+5-1
+5
+5
+5 Firmware Configuration
+In this chapter, we discuss the basic tasks involved in configuring your NPort, and discuss the various operation modes that are available.
+This chapter includes the following sections:
+Server Configuration
+Choosing the Proper Operation Mode
+xHost Based / Driver Mode
+xPair Connection Mode
+xSocket Modes
+TCP Server
+TCP Client
+UDP Server/Client
+xEthernet Modem Mode (NPort Express ONLY)
+Using Ethernet Modem
+AT Commands
+S Registers
+Serial Settings
+Access Control
+xGranting Access by IP Address
+xGranting Access by Port
+xInputting IP Addresses
+
+Server Configuration
+Th e f o llow i ng f i gu r e s show t h e b a sic p a r a meter s th at m u st b e set up b e fo re yo u
+can b e g i n u s ing your N P o r t. Ref e r t o th e tab l e on t h e n e x t p a g e to see d e tails o f
+the m eaning of each pa ram e te r.
+Co nsole M anag eme n t
+NOTE Click on t h e
+Passw or d t a b t o
+mod ify th e
+NPo r ts
+pa ssw or d.
+Co nfigurator
+5-2
+
+Server Configuration
+5-3
+Setting Value Comments Necessity
+Server Model DE-xxx Set at the factory. ---
+This option is useful for specifying the location or
+application of different servers.
+Server Name alpha-numeric Optional
+Serial Number alpha-numeric Set at the factory. ---
+Static IP Choose one of the four values at the left to
+determine how the IP address will be configured.
+DHCP
+IP Configuration Required
+DHCP/BOOTP
+BOOTP
+10M bps Indicates the Ethernet
+connection status
+Ethernet Status ---
+100M bps
+The MAC (Media Access Control) address is a unique
+identifier set at the factory.
+MAC Address 48-bit number ---
+32-bit number; The current IP address; identifies the server on the
+TCP/IP network.
+(Static) IP Address default = Required
+192.168.127.254
+32-bit number; Identifies the server as belonging to a Class A, B, or
+C network.
+Netmask default = Required
+255.255.255.0
+IP address of the router that provides network access
+outside the servers LAN.
+Gateway 32-bit number Optional
+Console/Configurator password
+Password alpha-numeric Optional
+NOTE The Firmware will retry 3 times every 30 seconds until it gets the IP settings from the DHCP/BootP server. The timeout times are 1, 3, and
+5 seconds. If the DHCP/BootP server is not available, the firmware will use the default IP address, netmask, and gateway for network
+settings.
+
+Choosing the Proper Operation Mode
+In th is section , we d e scri b e the
+vari ous N P o r t ope rat i o n m o d e s.
+The o p t i ons i n cl ude a n o p erat i on
+m o d e th at u s es a driv er installed
+on the host c o m puter, operati o n
+m odes that rel y on TCP/IP s o cket
+pr o g ram m i ng c once p t s , an d
+o p e ration m o des th at typ i cally
+i n v o l v e c o m m uni cat i o n bet w een pai r s o f a p pr o p ri at el y con f i g ure d NP ort s .
+Host Based / Driver Mode
+Host Based / Driver Mode use s a Mo x a supp lied driv er to estab lish a tra n sp aren t
+con n ect i o n bet w een h o st a n d seri al de vi ce, by creating a virtual local COM port
+on t h e h o st c o m put er fo r eac h of t h e NP ort  s seri al po rt s.
+NOTE The Mox a driv er use d f o r Host Ba sed / Driver Mod e is in st a lled
+aut om at i c al l y on yo ur co m p u t er w h en yo u i n st al l N P ort M a n a g eme n t
+S u ite.
+The i m port a nt poi nt i s t h at H o st B a se d / Dri v er M o de al l o ws use r s t o co n t i nue
+u s ing RS-2 32 / 4 22 /485 serial co mm u n i catio n s software th at was written fo r pu re
+seri al com m uni cat i ons a ppl i c at i ons. The d r i v er in tercep ts d a ta sen t to t h e ho sts
+COM port, p a ck s it in t o a TC P/IP p a ck et, and th en red i rects it th ro ugh th e ho sts
+Ethernet card. At the othe r e n d of the c o nnec tion, t h e NPort accepts t h e Et hernet
+fram e , u n p a ck s th e TCP/ IP p a ck et, an d th en t r an sp aren tly sen d s it to t h e
+appropriate serial device attached to one of the NPort s se rial ports.
+NOTE Host Based / Driver Mode allows sever al hosts to have acc e ss contr o l
+of t h e sa me N P ort . The Mox a dri ver t h at c o mes w i t h y o ur N P ort
+contr o ls host access to attac h ed se ri al devic e s by checki ng the hosts
+IP ad dres s.
+Use C o nfig urato r to ad just the Access Contr o l T abley o u may add
+host access either by port or by serve r .
+Host Based / Driver Mode all o ws users t o se t up m o re ad va nced com m uni cat i ons
+to po log i es b e tween rem o te ho sts an d seri al devices connec ted to one or more
+NPo r t. Usi n g th is o p e ratio n m o d e , it is po ssib le fo r sev e ral h o sts to d i v i de u s ag e
+of a m u l t i port NP ort  s po rt s, or sha r e t h e sa m e po rt bel o n g i ng t o one pa rt i c ul ar
+NP ort.
+5-4
+
+Fi gu re 3. 1
+illu strates a Host
+Based / Dri v er
+M ode t o pol ogy
+th at con s ists o f
+two hosts that
+share access t o
+two NPorts. The
+NP ort Ser v er P r o
+u n it is con n ect ed
+to sev e ral serial
+d e v i ces, with half
+of t h e p o rt s
+releg a ted to Ho st Fig. 3.1: Hos t Ba sed / Dri v er Mode
+A, a n d t h e ot he r
+h a lf t o Ho st B . Th e NPo r t Serv er Lite un it is co nn ected to t w o serial d e v i ces, an d
+can be c o nfigured so that one or both of the hosts are allowed access to t h ese two
+devi ces .
+Th e fo llowing figu res show t h e ad d ition a l param e ters th at can b e co nfigured fo r
+Host Based / Driv er Mod e . Refer t o th e tab l e after th e fi g u res to see d e tails o f th e
+m eani ng o f eac h param e t e r.
+Co nsole M anag eme n t
+Co nfigurator
+5-5
+
+5-6
+Host Based / Driver Mode
+Setting Value Notes Necessity
+The TCP port through which data is sent.
+TCP data port 950 Required
+TCP command port The TCP port through which
+commands are sent.
+966 Required
+Once the NPort receives both delimiters through its serial port,
+it immediately packs all data currently in its buffer and sends
+it out the NPorts Ethernet port.
+Delimiter 1 (Hex) ASCII code for
+the 1
+st Optional
+ delimiter
+Note: Delimiter 2 is optional. If left blank, then Delimiter 1 alone
+trips clearing of the buffer.*
+Delimiter 2 (Hex) ASCII code for
+the 2
+nd Optional
+ delimiter
+blank (or 0) Disabled.
+Forces the NPorts TCP/IP protocol software to try to pack
+serial data received during the specified time into the same data
+frame.*
+Force transmit (ms)
+Optional
+1  65535 ms
+TCP connection is never closed by this device.
+0
+TCP alive check time
+TCP connection is automatically closed by this device if there is no Optional
+TCP activity for the given time.
+1  99 min.
+If the size of the serial data received is greater than automatically pack the data and send it to the Ethernet. 1K, the NPort will
+*
+Pair Connection Mode
+Pair Connection Mode employs two 1-port NPorts in tandem, and can be used to remove the 15-meter distance limitation imposed by the RS-232 interface. One
+NPort is connected from its RS-232 port to the COM port of a PC or other type of computer, such as hand-held PDAs that have a serial port, and the serial
+device is connected to the RS-232 port of the other NPort. The two NPorts are then connected to each other with a cross-over Ethernet cable, both are
+connected to the same LAN, or in a more advanced setup, they communicate with each other over a WAN (i.e., through one or more routers). Pair Connection
+Mode transparently transfers both data and modem control signals (although it cannot transmit the DCD signal) between the two NPorts.
+
+Fi gu re 3. 2
+illu strates a Pai r
+Co nn ection
+M ode t o pol ogy
+th at con s ists o f
+two NPorts used
+to provi de acce ss
+to a se rial de vice
+(in t h is case, the
+PLC). This
+exam ple
+illu strates th at
+access to t h e
+seri al de vi ce c a n
+be pr o v i d e d t o
+non-PC hosts,
+suc h as t h e
+W r iter show n in Fig. 3.2: Pair Conne ction Mode
+the fi gu re.
+Th e fo llowing figu res show t h e ad d ition a l param e ters th at can b e co nfigured fo r
+Pair Conn ection M o d e . Refer to th e tab l es b e lo w t h e figu res to see d e tails o f th e
+m eani ng o f eac h param e t e r.
+Co nsole M anag eme n t
+Co nfigurator
+5-7
+
+5-8
+Pair Connection (Master)
+Setting Value Notes Necessity
+IP address of another NPort, configured for Pair
+Connection (Slave), with which this NPort can request a
+connection.
+Remote IP address valid IP Required
+TCP connection is never closed by this device.
+0
+TCP connection is automatically closed by this
+device if there is no TCP activity for the given time.
+TCP alive check time Optional
+1  99 min.
+Pair Connection (Slave)
+Setting Value Notes Necessity
+Allows contact with only the specified remote IP address.
+valid IP
+Remote IP address Optional
+Allows contact with any remote Master.
+blank
+TCP connection is never closed by this device.
+0
+TCP connection is automatically closed by this
+device if there is no TCP activity for the given time.
+TCP alive check time Optional
+1  99 min.
+Socket Modes
+Socket Mode consists of three different operation modes: TCP Server, TCP Client, and UDP Server/Client. Keep in mind that the main differences between
+TCP and UDP is that TCP guarantees delivery of data by requiring that the recipient sends an acknowledgement to the sender. UDP does not require this
+type of verification, making it possible to offer speedier delivery. UDP also allows multicasting of data to groups of IP addresses.
+TCP Server
+TCP Server operation mode is designed for use with serial devices that act as servers. That is, they passively wait for other devices to contact them and request
+that a TCP connection be established between the two devices. Once a connection is established, data transmission can proceed in both directions. It
+
+also m eans tha t your a pplication s o ftwa re act s as a Client, in that it can acti v ely
+pol l rem o t e seri al devi ces.
+Fig u re 3 .3 illu strates a
+TCP Se rve r M ode
+to po log y th at co nsists
+of one NPort c o nnected
+by a se rial cabl e to a
+ro uter s c o n s ol e p o rt.
+W o rk ing fro m th e
+not e b o o k c o m put e r , t h e
+user can re que s t that the
+NPort open a port, and
+in th is way access th e
+routers se rial console
+u tility.
+Fig. 3.3: TCP Ser v er
+Note t h at leavi n g the Destinatio n IP a d dress op tion b l ank allo ws an y rem o te
+n e two r k e d d e vice to requ est a con n ection . Inp u tting o n e IP ad dress fo r th is
+o p tion m ean s t h at on ly a remo te d e v i ce with th at IP ad dress is allo wed t o
+estab lish a TCP conn ectio n. Also no te th at t h e Delimiter 1 , Delimiter 2 , an d
+Force transmi t o p tion s are u s ed to activ ate th e o p tion a l Data Pack ing fu nctio n .
+Th e fo llowing figu res show t h e ad d ition a l param e ters th at can b e co nfigured fo r
+TC P Se rve r M ode . R e fe r t o t h e t a bl es bel o w t h e fi gu res t o see det a i l s o f t h e
+m eani ng o f eac h param e t e r.
+Co nsole M anag eme n t
+Config urator
+5-9
+
+TCP Server
+5-10
+Setting Value Notes Necessity
+The TCP port that other devices must use to contact this device. To
+avoid conflicts with standard TCP ports, the default is set to 4001.
+TCP port valid port number Required
+Allows contact with only the specified remote IP address.
+valid IP
+Destination IP addr
+Optional
+Allows contact with any remote networked device.
+blank
+Once the NPort receives both delimiters through its serial port,
+it immediately packs all data currently in its buffer and sends
+it out the NPorts Ethernet port.
+Delimiter 1 (Hex) ASCII code for
+the 1
+st Optional
+ delimiter
+Note: Delimiter 2 is optional. If left blank, then Delimiter 1 alone
+trips clearing of the buffer.*
+Delimiter 2 (Hex) ASCII code for
+the 2
+nd Optional
+ delimiter
+blank (or 0) Disabled.
+Forces the NPorts TCP/IP protocol software to try to pack
+serial data received during the specified time into the same data
+frame. *
+Force transmit (ms)
+Optional
+1  65535
+blank (or 0) Disabled.
+TCP connection is automatically closed by this device if the serial
+port is idle for the given time.
+Inactivity time Optional
+1  65535 ms
+TCP connection is never closed by this device.
+0
+TCP alive check time
+TCP connection is automatically closed by this device if there is no Optional
+TCP activity for the given time.
+1  99 min.
+If the size of the serial data received is greater than automatically pack the data and send it to the Ethernet. 1K, the NPort will
+*
+TCP Client
+The TCP Client operation mode is designed for use with serial devices that act as clients. That is, they actively request that a TCP connection be established with
+another device. Once the connection is established, data transmission can proceed in both directions.
+
+Fig u re 3 .4 illu strates a
+TC P C l i e nt M ode
+to po log y th at co nsists of
+one NPort c o nnected by a
+serial cable to a Card
+Reader. T h e NPort can be
+co nfigu r ed so th at wh en
+so m e o n e swip es th eir
+card, the de vic e server
+r e qu ests a conn ectio n fr o m
+the com puter, after whic h
+t h e car d s dat a i s sent ove r
+the Ethe rnet c o nnection.
+Fig. 3.4: TCP Client
+No te t h at th e Destination IP addre s s is a req u i red op tion . Th is m ean s th at th e
+devi ce ca n o n l y be set u p t o r e que st ser v i ce fr om one rem o t e net w or ke d d e vi ce.
+We s h oul d al s o poi nt o u t t h at t h e Delimiter 1 , Delimiter 2 , and F o rce transmit
+o p tion s are u s ed to activ ate the op tio n a l Data Pack i n g fun c tio n.
+Th e fo llowing figu res show t h e ad d ition a l param e ters th at can b e co nfigured fo r
+TC P C l i e nt M ode . R e fe r t o t h e t a bl e be low th e fi g u res t o see d e tails of the
+m eani ng o f eac h param e t e r.
+Co nsole M anag eme n t
+Config urator
+5-11
+
+5-12
+TCP Client
+Setting Value Notes Necessity
+Allows connection with only the specified remote IP address.
+Destination IP addr valid IP Required
+Specific TCP port through which the remote IP address listens
+over the TCP connection.
+valid port number
+TCP port Required
+Attempts to establish a TCP connection as soon as the NPort
+is powered on.
+Startup
+TCP connect Required
+Attempts to establish a TCP connection as soon as the NPort
+starts receiving serial data.
+Any Character
+Once the NPort receives both delimiters through its serial port,
+it immediately packs all data currently in its buffer and sends
+it out the NPorts Ethernet port.
+ASCII code for the 1
+st
+Delimiter 1 (Hex) delimiter Optional
+ASCII code for the 2
+Note: Delimiter 2 is optional. If left blank,then Delimiter 1 alone
+trips clearing of the buffer. *
+nd
+Delimiter 2 (Hex) delimiter Optional
+blank (or 0) Disabled.
+Forces the NPorts TCP/IP protocol software to try to pack
+serial data received during the specified time into the same data
+frame. *
+Force transmit (ms) Optional
+1  65535
+blank (or 0) Disabled.
+TCP connection is automatically closed by this device if the serial
+port is idle for the given time.
+Inactivity time Optional
+1  65535 ms
+TCP connection is not closed due to an idle serial line.
+0
+TCP connection is automatically closed by this device if there is
+no TCP activity for the given time.
+TCP alive check time Optional
+1  99 min.
+If the size of the serial data received is greater than automatically pack the data and send it to the Ethernet. 1K, the NPort will
+*
+
+UDP Serve r /Client
+The U D P Ser v er/ C l i e nt ope ra t i on m ode i s de si gne d fo r a p pl i cat i ons t h at ne ed
+spee di er dat a t r ansm i ssi on, or t h at m a ke use of U D P  s br oa dcast a n d m u l t i -cast
+cap ab ilities. Keep in m i n d that UDP d i ffers fro m TCP in that a UDP
+t r ansm i ssi on d o es n o t fi rst re qui re a c o n n ec t i on t o be o p e n ed bef o re sen d i ng dat a ,
+and the receivi ng party does not i ssue acknowledgem ents to the sender.
+Fig u re 3 .5 illu strates a UDP
+Ser v er/ C l i e nt M ode t o pol ogy t h at
+co nsists of o n e N P or t conn ected
+b y a se rial cabl e to a Ca rd Re ader.
+The NPort a u t o m a tically
+tran sm its th e cards d a ta o v e r th e
+Eth e rn et to m u ltip le co m p u t ers.
+We s h oul d poi nt o u t t h at t h e
+Delimiter 1 , Delimiter 2 , and
+Force transmi t opt i o ns a r e us ed
+to activ ate th e o p tion a l Data
+Packi n g f unct i on .
+Fig. 3.5: UDP Ser v er/Client
+5-13
+
+Th e fo llowing figu res show t h e ad d ition a l param e ters th at can b e co nfigured fo r
+UDP Serv er/Clien t Mod e . Refe r to th e tab l e b e low th e fi g u res to see d e tails of
+the m eaning of each pa ram e te r.
+Co nsole M anag eme n t
+Config urator
+5-14
+
+Server/Client
+5-15
+Setting Value Notes Necessity
+(serial to LAN)
+Dest. IP addr 1 Required
+Dest. IP addr 2 A host or a group of hosts. Data is sent from the NPort to Optional
+these remote IP addresses.
+Dest. IP addr 3 Optional
+Dest. IP addr 4 Optional
+(LAN to serial)
+Src. IP addr 1 Optional
+Allows receipt of data from only these specified remote IP
+addresses.
+Src. IP addr 2 A host or a group of hosts. Optional
+Src. IP addr 3 Optional
+Src. IP addr 4 Optional
+Used by the NPort to listen for data coming in over the Ethernet
+line.
+valid port number
+Local Listen Port Required
+Once the NPort receives both delimiters through its serial port,
+ASCII code for the 1 it immediately packs all data currently in its buffer and sends
+it out the NPorts Ethernet port.
+st
+Delimiter 1 (Hex) delimiter Optional
+ASCII code for the 2
+Note: Delimiter 2 is optional. If left blank, then Delimiter 1
+alone trips clearing of the buffer. *
+nd
+Delimiter 2 (Hex) delimiter Optional
+blank (or 0) Disabled.
+Forces the NPorts TCP/IP protocol software to try to pack
+serial data received during the specified time into the same data
+frame.
+Force transmit (ms)
+Optional
+1  65535
+If the size of the serial data received is greater than automatically pack the data and send it to the Ethernet. 1K, the NPort will
+*
+
+Ethernet Modem Mode (NPort Ex press ONLY)
+The Et hernet M odem operat i on m ode i s designed for use wi t h l e gacy operat i ng
+sy st em s, such as M S -DOS, t h at do not suppor t TC P/ IP Et hernet . By connecti ng a
+1-port NPo r t  s (appl i e s t o m o d e l s DE-211/ 311/ 311M ) seri al port t o t h e M S - DOS
+co m put ers serial port , it i s possi bl e t o use l e g acy sof t ware ori g i n al ly desi gned t o
+t r ansm it dat a via m odem , but n o w t r ansm i t t h e dat a over t h e Et hernet .
+Fi gu re 3. 6
+illu strates an
+Ethernet
+M odem M ode
+to po log y th at
+co nsists of two
+or m o re
+si ngl e- p o r t
+NP orts. O n e
+device server
+is connecte d to
+a com puter
+r unn ing D O S, Fig. 3.6: Etherne t Mode m Mode
+and the othe r
+device servers are c o nnected by a se ri al cabl e to C N C m a c h ines . T h e NPort
+au to m a tica lly t r an sm its th e cards d a ta o v e r t h e Et h e rn et to m u l tip le co m p u t ers.
+Wh en wish ing to d ial o u t  ov er th e Et h e rn et, th e u s er sim p ly
+uses t h e rem o te NPorts IP a d dres s in place of the phone
+n u m b e r as illu strated in th e figu re.
+5-16
+
+Using Ethernet Modem
+5-17
+Dial-in
+NPort Express listens for a TCP/IP connection request from the remote Ethernet modem or host. NPort Expresss response depends on the ATS0 value, as
+outlined below.
+ATS0=0 (default):
+NPort Express will temporarily accept the TCP connection and then send the RING signal out through the serial port. The serial controller must reply with ATA within
+2.5 seconds to accept the connection request, after which NPort Express enters data mode. If no ATA command is received, NPort Express will disconnect after sending
+three RING signals.
+ATS0 1:
+NPort Express will accept the TCP connection immediately and then send the CONNECT <baud> command to the serial port, in which <baud> represents the
+baud rate of NPort Expresss serial port. After that, NPort Express immediately enters data mode.
+Dial-out
+NPort Express accepts the AT command ATD <IP>:<TCP port> from the serial port and then requests a TCP connection from the remote Ethernet Modem
+or PC. This is where <IP> is the IP address of the remote Ethernet modem or PC, and <TCP port> is the TCP port number of the remote Ethernet modem or PC.
+Once the remote unit accepts this TCP connection, NPort Express will send out the CONNECT <baud> signal via the serial port and then enter data mode.
+Disconnection request from local site
+When NPort Express is in data mode, the user can drive the DTR signal to OFF, or send +++ from the local serial port to NPort Express. NPort Express will
+enter command mode and return NO CARRIER via the serial port, and then input ATH to shut down the TCP connection after 1 second.
+NOTE The +++ command cannot be divided. The + character can be changed in register S2, and the guard time, which prefixes and suffixes
+the +++ in order to protect the raw data, can be changed in register S12.
+
+Disc onnec t ion reques t from remote s ite
+Aft e r t h e TC P con n ect i o n has bee n s h ut d o w n by t h e rem o t e Et her n et m o d e m or
+PC, NPo r t Express will send t h e NO CARR IER sign al v i a th e serial po rt an d
+th en return to co mman d m o d e .
+Th e fo llowing figu res show t h e ad d ition a l param e ters th at can b e co nfigured fo r
+TC P C l i e nt M ode . R e fe r t o t h e t a bl e be low th e fi g u res t o see d e tails of the
+m eani ng o f eac h param e t e r.
+Co nsole M anag eme n t
+Config urator
+Et her n et M o de m
+Settin g V a lu e N o t e s N e c e s s i t y
+The TC P po rt t h at ot her de vi c e s
+v a lid m u st use t o c o nt act t h i s devi c e . T o
+TCP port R e qui re d
+av o i d co nflicts with stand a rd TCP
+po rt No .
+p o rts, t h e d e fau lt is set to 40 01 .
+Allo ws co nn ectio n with o n l y t h e
+Destin ation IP ad dr v a lid IP Op tion a l
+specified rem o te IP a d dres s.
+TCP co nn ection is no t clo s ed d u e to
+0
+an id le serial lin e.
+TCP alive c h ec k tim e TCP co nn ection is au to m a tica lly Op tion a l
+1  99
+closed by t h is device i f the r e is no
+min .
+TCP activ ity for th e g i v e n ti me.
+5-18
+
+AT Commands
+5-19
+NPort Express supports the following common AT commands used with a typical modem:
+N o. AT command Description Remarks
+1 ATA Answer manually
+2 ATD <IP>:<Port> Dial up the IP address : Port No.
+3 ATE ATE0=Echo OFF
+ATE1=Echo ON (default)
+ATH0=On-hook (default)
+4 ATH
+ATH1=Off-hook
+5 ATI, ATI0, ATI1, ATI2 Modem version reply OK only
+6 ATL Speaker volume option reply OK only
+7 ATM Speaker control option reply OK only
+8 ATO On line command
+9 ATP, ATT Set Pulse/Tone Dialing mode reply OK only
+10 ATQ0, ATQ1 Quiet command (default=ATQ0)
+11 ATSr=n Change the contents of S register See S registers
+12 ATSr? Read the contents of S register See S registers
+Result code type ATV0 for digit code,
+13 ATV ATV1 for text code
+0=OK 1=connect (default)
+2=ring
+3=No carrier
+4=error
+Reset (disconnect, enter command mode and restore the flash settings)
+14 ATZ
+Serial port DCD control AT&C0=DCD always on
+15 AT&C
+AT&C1=DTE detects connection by DCD on/off (default)
+Serial port DTR control AT&D0=recognize DTE always
+16 AT&D ready AT&D1, AT&D2=reply DTE when
+DTR On (default)
+17 AT&F Restore manufacturers settings
+
+18 AT&G Select guard time reply OK only
+5-20
+19 AT&R Serial port RTS option command reply OK only
+20 AT&S Serial port DSR control reply OK only
+21 AT&V View settings
+Write current settings to flash for next boot up
+22 AT&W
+S Registers
+No. S Register Description & default value Remarks
+1 S0 Ring to auto-answer (default=0)
+2 S1 Ring counter (always=0) no action applied
+Escape code character (default=43 ASCII +)
+3 S2
+4 S3 Return character (default=13 ASCII)
+5 S4 Line feed character (default=10 ASCII)
+6 S5 Backspace character (default= 8 ASCII)
+Wait time for dial tone (always=2, unit=sec)
+7 S6 no action applied
+Wait time for carrier (default=3, unit=sec)
+8 S7
+Pause time for dial delay (always=2, unit=sec)
+9 S8 no action applied
+Carrier detect response time (always=6, unit 1/10 sec)
+10 S9 no action applied
+Delay for hang up after carrier (always=14, unit 1/10 sec)
+11 S10 no action applied
+DTMF duration and spacing
+12 S11 no action applied
+(always=100 ms)
+Escape code guard time
+13 S12
+(default=50, unit 1/50 sec) to control the idle time for +++
+
+Serial Settings
+Yo u sh o u l d ac cess C o ns ol e M a nage rs Se ri al po rt pa ge, o r C o n f i g urat or s Seri al
+Settin g s p a g e t o m o d i fy a po rts Baud Rate, Parity, Data Bi ts, Stop Bit, Fl o w
+C ont r o l , a n d U A R T F I F O .
+Co nsole M anag eme n t
+Config urator
+Access Control
+C o n f i g urat or s Access C o nt rol pa ge al l o ws y o u t o a d d or re m ove ho st acc ess t o
+th e NPort. Access to NPorts is con t ro lled b y IP addre ss. That is, if a hosts IP
+address is in t h e servers acce ss table, t h en the host will be allowed access to the
+serve r . You m a y add access c ont rol by IP A d dress and by P o rt .
+5-21
+
+Granting Access by IP Address
+Use t h e gra n t a ccess control by I P Add r ess
+m e thod i f you wish to gra n t a ccess to a
+h o st with a p a rticu l ar IP address. No te t h at
+t h e t o p IP a d dr ess bel o n g s t o t h e NP ort ,
+and the IP address(es ) below t h at are for
+ho st s t h at have bee n gra n t e d a ccess. B y
+cl i c ki ng o n t h e va ri o u s IP a d d r esses a n d
+po rt s t o hi ghl i g ht t h em , y ou c a n easi l y see
+t h e t y pes of f u nct i o n s ( A dd I P , Ad d Po rt ,
+etc.) that a r e al lowe d.
+Granting Access by Port
+Use t h e gra n t a ccess control by Po rt
+m e t hod i f y o u wi sh t o gra n t a pa rt i c ul ar
+host access t o a specific port. Note that the
+IP add r ess at the to p b e l o ng s to th e NPort,
+and the servers ports are listed u n d e r th at.
+Exp a nd t h e list un d e r a p a rticu l ar po rt to
+view all IP a ddresses t h at ha ve bee n
+gra n ted access to that port. By clicking on
+the va rious IP addresses and ports to
+highlight t h em , you can easily see the types
+of f unct i o ns ( A dd I P , A d d P o r t , et c.) t h at
+are allowed.
+5-22
+
+Inputti ng IP Addresses
+There are t w o opt i o ns t o c h o o se fr om whe n
+in pu ttin g IP add r esses. Th e Si ngle H o s t opt i o n i s
+easy to u n d e rstan d . Sim p ly en ter th e IP add r ess of
+the host t h at is being gra n ted access to t h e NPort.
+The m eaning of the A Gr oup of H o st op tion is a
+litt le b it m o re co m p licated . In th is case, y o u m u st
+en ter bo th an IP Add r ess an d Netm ask . Wh en
+written i n b i n a ry fo rm , th e 1 - d i g its in th e Net m ask
+d e term in e th at p a rt o f th e IP ad dress fo r wh i c h all
+IP a d dresse s in the Group are the sam e . For
+ex am p l e, if I P A ddr ess = 192 .1 68 .10 0 .200 an d
+N e tm ask = 25 5.25 5.255 .0 , as sho w n b e low , th en
+any I P a d d r ess of t h e fo rm 19 2. 16 8. 1 0 0 .xxx w o u l d b e in clud ed in t h e g r oup .
+5-23
+
+A
+A
+A Revision History
+Document Edition Revision Date Revision Details
+rd
+3 November 15, 2002 This version of the manual represents a major revision from
+the previous version.
+1. All NPort related software is installed when the user
+installs NPort Management Suite.
+2. NPort Managerrenamed has been Real COM
+Installer.
+3. Host Based Moderenamed has been Host Based /
+Driver Mode.
+4. The firmware version discussed in this manual no
+longer supports ModeSingle Host .
+5. The previous is essentially the new Custom ModeHost
+Based / Driver Mode.
+6. Host Based / Driver Modenow supports the Data
+Packing function.
+A-1
+
+th
+4 May 12, 2004 1. Updated the edition of this manual on the title page.
+A-2
+2. Changed the new Moxa logo on the title page.
+3. p. 4-7
+Added descriptions on newly-added function Fast
+Flush.

@@ -1,0 +1,106 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\18134002.pdf
+# cifrado=False bloques=8 caracteres=4149
+
+Videojet Technologies Inc.
+18134002 (Replaces SAR16321002 for all CMark versions.)
+Note: This SAR does not include the base CMark installati on. It only
+contains additional files required to enable this S AR on CMark versions 3.x
+and 4.x. In CMark 4.x, this SAR can be loaded via the Web Interface. In
+CMark 3.x, the SAR must be manually copied to the smarties\customer\tcl
+folder on the SD Card. See HowToInstallSAR.pdf do cument for detailed
+instructions.
+Printer Model: 3140/3340/3640/7510/7610/7810
+Description: Claricom Generic Protocol via TCP po rt.
+ (Load Message will reset all external text inser ts to default values.)
+CMark Versions: 3.x and 4.x
+Engineered By: P. Ward
+Date Completed: May 17, 2018
+See Addendum to the Operating Instructions for modi fication details.
+1/8
+
+VIDEOJET TECHNOLOGIES INC. 18134002
+Claricom Generic Protocol
+1. Host Port Configuration:
+TCP Client, Port 20000
+2. Commands:
+Refer to the Claricom Generic Protocol Description for the actual command syntax.
+Commands supported:
+Command Comments
+STOP MACHINE
+START MACHINE
+REQUEST STATUS
+REQUEST COUNTS Session Count is mapped to Lot Count in Laser. Rej ects always
+return 0. If system is printing too fast (10/s), c ounts do not
+update
+RESET COUNT
+LOAD MESSAGE The message name (template name in Laser) is case s ensitive
+and must be the same as the CIFF file name. Variab le names
+can be changed, but default to Field00, Field01... Fieldnn in
+Clarisoft. Note that variable names are case sensi tive in the
+Laser.
+SEND RS232 INSERT DATA
+SELECT MESSAGE Not applicable to Laser so Laser just sends ACK bac k.
+2/8
+REQUEST ACTIVE FAULTS
+REQUEST ACTIVE WARNINGS
+REQUEST CURRENT
+MESSAGE
+SELECT ACTIVE HEAD Not applicable to Laser so Laser just send s ACK back.
+SET TIME AND DATE Synchronize time during Job Selection must be selec ted under
+equipment properties in ClariNet.
+3. Unicode
+All strings are UTF-8 encoded.
+Code range UTF-8 Notes
+0000 007F 0zzzzzzz ASCII equivalence range; byte begins with zero
+0080 07FF 110yyyyy 10zzzzzz first byte begins with 110, the following byte begi ns with 10.
+0800 FFFF 1110xxxx 10yyyyyy 10zzzzzz first byte begins with 1110, the following 2 bytes begin with 10.
+
+VIDEOJET TECHNOLOGIES INC. 18134002
+3. Example
+A. Create a Template in the Laser via SmartGraph.
+Template Name = Test
+External Text Name = Field00
+3/8
+
+VIDEOJET TECHNOLOGIES INC. 18134002
+B. Create a CIFF file using Clarisoft.
+Select File->New and when prompted with the screen below, select Generic V2.
+Add a text object with the following properties:
+Text Type = User Entered Text
+Field Name = Field00 (The Field Name can be chang ed on the General tab.)
+4/8
+Select File->SaveAs and when prompted enter the nam e Test.ciff.
+
+VIDEOJET TECHNOLOGIES INC. 18134002
+C. Print from Clarisoft to the Laser.
+Select Tools->Options and select the Printing tab . Select Use TCP/IP Communications, enter
+the IP Address of the Laser and enter 20000 as the Port.
+Select File->Print and select Real-Time Coder.
+5/8
+Select Current Image.
+
+VIDEOJET TECHNOLOGIES INC. 18134002
+Check the box in the Prompt column and then double- click on the Data field. When prompted
+enter Test Variable Data.
+Click OK for all the subsequent dialogues and you s hould see the following screen.
+Verify the correct data was marked by the Laser.
+D. Print from ClariNet to the Laser.
+Select Equipment->Add Equipment and select Colder .
+6/8
+Select Generic V2 and click Next.
+
+VIDEOJET TECHNOLOGIES INC. 18134002
+Enter the Equipment information and click Next.
+Select ClariNet and click Next.
+7/8
+Select TCP/IP and click Next.
+
+VIDEOJET TECHNOLOGIES INC. 18134002
+Enter the IP Address of the Laser and 20000 as the Port.
+When prompted, click Finish. The following scree n should then be displayed.
+8/8
+Click on NEXT JOB and when prompted, select Text .ciff. Select the equipment and click OK.
+You will be prompted just as with Clarisoft. The r est of the procedure is the same as indicated in
+section C above. Verify the template is marked w ith the new data.
+If you have questions or concerns regarding this SA R, contact the Technical Support department of Vide ojet
+Technologies Inc. 1-800-843-3610 x3103

@@ -1,0 +1,2375 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Manuales\Esp\463044-04 Videojet 6330 Operator Manual(Esp).pdf
+# cifrado=True bloques=130 caracteres=164421
+
+Videojet
+'DWD)OH[ 6330
+Manual del operario
+N.° P 463044-04
+Revisión: AA, junio 2017
+
+Copyright junio 2017, Videojet Technologies Inc. (en adelante Videojet). Reservados todos los derechos.
+Este documento es propiedad de Videojet Technologies Inc.
+y exclusiva que pertenece a Videojety contiene información confidencial
+. Queda prohibido realizar cuuso o divulgación del mismo sin permiso pralquier copia no autorizada, evio por escrito de Videojet. CLARiTY
+®
+CLARiSOFT ,
+® ® TM
+, CLARiNET y iAssurance son marcas comerciales registradas.
+Videojet Technologies Inc.
+1500 Mittel BoulevardTeléfono: 1-800-843-3610Fax: 1-800-582-1343Oficinas - EE. UU.: Atlanta, ChicagoInternacional: Canadá, Francia, Alemania,
+Wood Dale, IL60191-1073 EE.UU. Fax internacional: 630-616-3629Irlanda, Japón, España, Singapur, Países Bajos y Reino Unido
+www.videojet.com Distribuidores en todo el mundo
+
+Tabla de contenido
+Información de conformidad.....................................................................................................Para los clientes de la Unión Europea......................................................................................................i ..i
+Para usuarios de los EE.UU.....................................................................................................Para los clientes de Canadá...........................................................................................................i .......ii
+Pour la clientèle du Canada....................................................................................................Asistencia técnica y formación........................................................................................................ii ...........iii
+Información de contacto........................................................................................................Programa de servicio...................................................................................................................iii ..........iii
+Cursos de aprendizaje para el cliente...........................................................................................iii
+Sección 1 Introducción.......................................................................................................................1-11.1 Descripción del equipo...............................................................................................................1-1
+1.2 Acerca de este manual..............................................................................................................1-11.3 Publicaciones relacionadas.......................................................................................................1-1
+1.3.1 Códigos de idioma............................................................................................................1-21.4 Presentación del contenido........................................................................................................1-3
+1.4.1 Referencias posicionales.................................................................................................1.4.2 Unidades de medida.........................................................................................................1-3.1-3
+1.4.3 Información acerca de la seguridad..................................................................................1-31.4.4 Notas.................................................................................................................................1-4
+1.5 Abreviaturas y acrónimos...................................................................................................1.6 Capítulos del manual.................................................................................................................1-5.......1-4
+Sección 2 Seguridad...........................................................................................................................2-12.1 Introducción...............................................................................................................................2-1
+2.2 Directrices para la seguridad del equipo...................................................................................2.2.1 Cabezal de impresión......................................................................................................2-1 ..2-2
+2.3 Directrices sobre seguridad eléctrica......................................................................................2.3.1 Respete los códigos eléctricos.........................................................................................2-...2-3 3
+2.3.2 Suministro eléctrico...........................................................................................................2-32.4 Instalación de la impresora........................................................................................................2-4
+2.5 Pautas de seguridad de la cinta de impresión...........................................................................2-52.6 Otras directrices importantes.....................................................................................................2-5
+2.6.1 Directrices sobre seguridad de limpieza...........................................................................2-52.6.2 Etiquetas de advertencia..................................................................................................2-6
+Sección 3 Piezas principales..............................................................................................................3-13.1 Descripción del equipo...............................................................................................................3-1
+3.1.1 Impresora..........................................................................................................................3-13.1.2 Pantalla del controlador de CLARiTY y unidad de suministro de energía (PSU).............3-2
+Sección 4 Arranque.............................................................................................................................4-4.1 Encendido de la impresora........................................................................................................4-11
+4.2 Ajuste de la orientación de la pantalla.......................................................................................4-24.3 Inicio de la impresora.................................................................................................................4-4
+4.4 Detención de la impresora.........................................................................................................4-44.5 Conceptos sobre los LED del cabezal de impresión.................................................................4-5
+4.6 Ajuste de fecha y hora...............................................................................................................4-54.7 Configuración del idioma y la región de la pantalla...................................................................4-6
+4.8 Carga de una cinta.....................................................................................................................4-74.8.1 Extracción del casete........................................................................................................4-7
+4.8.2 Inserción de una nueva cinta............................................................................................44.8.3 Extracción de una cinta usada........................................................................................4-11-8
+4.8.4 Reinstalación del casete.................................................................................................4.8.5 Uso de cintas de diferentes anchos y colores................................................................4-124-12
+Videojet DataFlex 6330 Manual del operario - Rev. AA 1
+
+Tabla de contenido
+4.8.6 Inspección del suministro de cinta de la impresora.........................................................4-154.9 Impresión de una imagen de prueba........................................................................................4-16
+Sección 5 Sistema operativo CLARiTY..............................................................................................5-15.1 Introducción a CLARiTY.............................................................................................................5-1
+5.2 Uso de la pantalla de inicio...............................................................................................5.2.1 Consumibles.......................................................................................................................5-1 ........5-4
+5.2.2 Pantalla de rendimiento..................................................................................................5.3 Uso de la pantalla de herramientas............................................................................................5-6 ...5-9
+5.3.1 Uso de la pantalla de diagnóstico....................................................................................5-105.3.2 Uso de la pantalla de base de datos...............................................................................5-36
+5.3.3 Uso de la pantalla de ayuda............................................................................................5-5.4 Protección por contraseña.......................................................................................................5-4038
+5.5 Impresoras principal/secundarias...........................................................................................5.5.1 Selección de trabajo para el grupo..................................................................................5-41..5-40
+5.5.2 Control del grupo.............................................................................................................5-41
+Sección 6 Editor de trabajos...............................................................................................................6-16.1 Creación y agregado de nuevos trabajos...................................................................................6-1
+6.2 Visualización del trabajo o imagen actual..................................................................................6.3 Selección de un nuevo trabajo para impresión..........................................................................6-46-2
+6.4 Campos que el usuario puede editar.........................................................................................6.4.1 Cambio del texto variable y la información de fecha.........................................................6-66-6
+6.4.2 Tocar para editar........................................................................................................6.5 Cambio de la posición o el aspecto de la impresión................................................................6-10.......6-9
+6.5.1 Cambio de la posición de la impresión............................................................................6-126.5.2 Cambio del nivel de oscuridad de la impresión...............................................................6-13
+6.5.3 Ajuste del retardo de impresión.......................................................................................6-16.5.4 Configuración de la velocidad de impresión....................................................................6-143
+6.5.5 Configuración de la posición del cabezal de impresión...................................................6-146.5.6 Configuración de la impresión intercalada......................................................................6-15
+6.6 Eliminación de un trabajo de la base de datos de trabajos......................................................6-15
+Sección 7 Mantenimiento....................................................................................................................7-17.1 Mantenimiento general...............................................................................................................7-1
+7.1.1 Limpieza del cabezal de impresión y la caja de luz...........................................................7-2
+Sección 8 Solución de problemas......................................................................................................8-18.1 Fallos de la impresora................................................................................................................8-1
+8.2 Fallas de impresión........................................................................................................8.3 Errores de la pantalla CLARiTY.......................................................................................................8-13 ..8-16
+8.4 Mensajes de error de CLARiTY...............................................................................................8.4.1 Lectura de un mensaje de fallo o advertencia.................................................................8-178-17
+8.4.2 Borrado de un mensaje de fallo o advertencia................................................................8-18
+Apéndice A Especificaciones............................................................................................................A-1
+Apéndice B Disponibilidad.................................................................................................................B-1B.1.1 Introducción......................................................................................................................B-1
+B.2.2 Disponibilidad del equipo................................................................................................B.3.3 Disponibilidad operativa..................................................................................................B-1 ..B-2
+2 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Información de conformidad
+Para los clientes de la Unión Europea
+Este equipo incluye la marca de la CE para indicar su conformidad con la siguiente legislación:
+Para usuarios de los EE.UU.
+Directiva de UE EMC 2014/30/UE:Requisitos de salud y seguridad fundamentales relacionados con la compatibilidad
+electromagnética.EN 61000-6-2Normativa genérica - Inmunidad para entornos industriales.
+EN 61000-6-4Normativa genérica sobre emisiones para entornos industriales.EN61000-3-2Límites para emisiones de corrientes armónicas (corriente máxima
+de entrada del equipo de 16A por fase).EN 61000-3-3Limitaciones de fluctuaciones de voltaje y centelleo en sistemas
+de bajo voltaje para equipos con una corriente de entrada con un régimen nominal máximo de 16A por fase.
+Directiva de CE 2014/35/UE sobre baja tensiónRequisitos de salud y seguridad fundamentales relacionados con equipos eléctricos que están
+diseñados para usarse dentro de determinadosEN 60950-1 límites de tensión.Requisitos de seguridad para equipos de tecnología de la información
+que incluyen equipos comerciales eléctricos.
+Este dispositivo cumple con la Sección 15 de las normativas de la FCC. El funcionamiento de este aparato está sujeto a las dos condiciones que se especifican a continuación:
+1.Este dispositivo no puede causar interferencias perjudiciales, y
+2.Este dispositivo debe aceptar cualquier interferencia recibida, incluidas las interferencias que pueden ocasionar un mal funcionamiento.
+Este equipo ha sido probado y cumple con los límites de los dispositivosconforme al apartado 15 de la normativa de la digitales de Clase A FCC. Estos límites están diseñados para ofrecer
+protección razonable contra interferencias que pueden provocarutilizado en entornos comerciales. El equipo ge daños cuando el equipo es nera, utiliza y puede irradiar radiofrecuencias
+y, si no se instala y utiliza según el manual de instrucciones, puede cainterrumpan las radiocomunusar interferencias que icaciones. Si utiliza este equipo en una zona residencial, es muy
+probable que provoque interferencias problemáticas, en cuyo caa solucionar los problemas que estas causen. El so, el usuario estará obligado usuario tendrá que pagar los gastos que esto
+pueda ocasionar.
+Esta unidad requiere cables blindados para garantizpor la FCC para los aparatos de la Clase A.ar el cumplimiento de los límites fijados
+Este equipo ha sido probado y certificado con reEE. UU. en lo referente a la seguspecto al cumplimiento de la normativa de los ridad y a las emisiones eléctricas.
+Este equipo ha sido investigado de acuerdo con los estándares de seguridad: UL 60950-1: Requisitos de seguridad aplicables a equipos de tecnologías de la información.
+ADVERTENCIA
+LESIONES PERSONALESLos cambios o las modificaciones en esta unidad no aprobadas expresamente por una
+entidad que sea responsable del cumplimienanular la autoridad del usuarito de las normas correspondientes puede o para manejar este equipo.
+Videojet DataFlex 6330 Manual del operario - Rev. AA i
+
+Para los clientes de Canadá
+Este aparato digital no supera los límites de emisiones de ruido de aparatos de la Clase A tal y como establecenradiofrecuencia de los las regulaciones sobre radio interferencias
+del Departamento Canadiense de Comunicaciones.
+Este equipo ha sido probado y certificado code Canadá en lo referente a la sen respecto al cumplimiento de la normativa guridad y a las emisiones eléctricas.
+Este equipo ha sido investigado de acuerdo con los estándares de seguridad: CAN/CSA C22.2 Nº 60950-1-03. Requisitos de seguridad aplicables a equipos de tecnologías
+de la información.
+Pour la clientèle du Canada
+Le present appareil numerique nemet pas de brapplicales aux appareils numeriuits radioelectriques depassant les limites que de las class A prescrites dans le Reglement sur le
+brouillage radioelectrique edicte par le ministere des Communications du Canada.
+Cet équipement est certifié CSA.
+Este equipo ha sido investigado de acuerdo con los estándares de seguridad: CAN/CSA C22.2 Nº 60950-1-03. Requisitos de seguridad aplicables a equipos de tecnologías
+de la información.
+ADVERTENCIA
+LESIONES PERSONALESEste producto no está diseñado para que se utilice en el campo visual inmediato/directo
+del lugar de trabajo de la pantalla. Para evitar reflejos molede la pantalla, el producto no debe colocastos en el lugar de trabajo rse en el campo de visión inmediato/directo.
+ii Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Asistencia técnica y formación
+Información de contacto
+Si tiene alguna pregunta o necesita asistencia, por favor, póngase en contacto con Videojet Technologies Inc.
+llamando al número 1-800-843-3610 (para todos los clientes de los Estados Unidos). Los clientes que no residan en los EE. UU. deben ponerse en contacto con la subsidiaria
+o su distribuidor de Videojet Technologies Inc.
+para recibir asistencia.
+Videojet Technologies Inc.
+1500 Mittel Boulevard
+Wood Dale, IL 60191-1073 EE.UU.
+Teléfono: 1-800-843-3610
+Fax: 1-800-582-1343
+Fax internacional: 630-616-3629
+Web: www.videojet.com
+Programa de servicio
+El programa de servicio Videojet y los programas de asistencia están diseñados para proteger su inversión en las impresoras Videojet y proporcionar el coste total de propiedad más bajo
+en sus operaciones.
+Videojet ofrece programas integrales de servicio, repuestos y formación, todos ellos diseñados para ayudarle a mantener sus líneas en funcionamiento.
+Una gama completa de servicios al cliente y de ofertas diseñadas para cumplir sus necesidades operativas.
+Un programa diseñado para maximizar el con lo que podrá centrarse en el objetivotiempo de funcionamiento de su equipo, más importante: la productividad de su
+empresa.
+Un producto y programa de servicio en apoyo y entrega de su última compra: un código impreso confiable de alta calidad en su producto terminado.
+Cursos de aprendizaje para el cliente
+Si desea realizar usted mismo las operaciones deVideojet Technologies Inc. le recomienda efectuar mantenimiento y reparación de la impresora, un curso de capacitación para clientes sobre
+la impresora.
+Nota: Estos manuales están diseñados para complementar (y no sustituir) el aprendizaje de los clientes
+de Videojet Technologies Inc.
+Para obtener más información sobre los cursos de capacitación para clientes de Videojet Technologies Inc., llame al teléfono 1-800-843-3610(solamente si se encuentra en Estados
+Unidos). Si se encuentran fuera de EE. UU., la sucursal de Videojet o un los clientes deben ponerse en contacto con distribuidor local de Videojet para obtener más información.
+Videojet DataFlex 6330 Manual del operario - Rev. AA iii
+
+Sección 1Introducción
+Este capítulo incluye los siguientes temas:
+Descripción del equipo
+Acerca de este manual
+Publicaciones relacionadas
+Presentación del contenido
+Abreviaturas y acrónimos
+Capítulos del manual
+1.1Descripción del equipo
+Las piezas principales de la impresora Videojet DataFlex 6330 se describen a continuación:
+Impresora: contiene el cabezal de impresión y la cinta. Los datos se transfieren al cabezal de impresión desde el controlador. El cabezal imprime en la película
+utilizada en los envases.
+Pantalla de controlador CLARiTY: contieney la pantalla táctil. Median la unidad de fuente de alimentación te la pantalla táctil, es posible acceder y configurar
+trabajos, así como ajustar los diversos parámetros de impresión.
+Figura 1-1: Pantalla de controlador de impresora y CLARiTY
+1.2Acerca de este manual
+El Manual del usuario está redactado teniendo en cuenta el usEl Manual del usuario ayuda al usuario a compo cotidiano de la impresora. render las diferentes piezas y las distintas
+operaciones de impresión de la impresora.
+1.3Publicaciones relacionadas
+A modo de referencia están disponibles los siguientes manuales:
+Manual de servicio de Videojet DataFlex 6330, número de pieza: 463045.
+Manual ilustrado de desglosamiento de piezas de Videojet DataFlex 6330, número de pieza: 463045.
+Videojet DataFlex 6330 Manual del operario - Rev. AA1-1
+
+Introducción
+1.3.1Códigos de idioma
+Al solicitar estos manuales, asegúrese de agregar elnúmero de pieza. Por ejemplo, la versión en dané código de idioma de dos dígitos al final del s del manual del usuario es el número de pieza
+463044-18. La Tabla 1-1 muestra la lista de códigos de idioma que puede usar para identificar las versiones traducidas de este manual.
+Para obtener más información, contacte al servicio al cliente de Videojet o a su distribuidor local.
+Nota: La disponibilidad del Manual del operador se indica mediante un asterisco (*). La disponibilidad
+del Manual de servicio se indica mediante un signo más (+). Para obtener más información, contacte al servicio al cliente de Videojet o a su distribuidor local.
+Código Idioma Disponibilidad (consulte la nota)
+01Inglés (EE. UU.)*+
+02Francés*
+03Alemán*
+04Español*
+05Portugués*
+06Japonés*
+07Ruso*
+08Italiano*
+09Holandés*
+10Chino (simplificado)*
+11Árabe*
+12Coreano*
+15Noruego*
+16Finés*
+17Sueco*
+18Danés*
+19Griego*
+21Inglés (Reino Unido)*+
+23Polaco*
+24Turco*
+25Checo*
+26Húngaro*
+34Búlgaro*
+36Chino (tradicional)*
+Tabla 1-1: Lista de códigos de idioma
+1-2 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Introducción
+1.4Presentación del contenido
+Este Manual del usuario contiene diferentes tipos de información, como por ejemplo pautas de seguridad, notas adicionales, terminología de la interfaz de usuario (IU), etcétera. En el
+manual se utilizan diferentes tipos de escritura para ayudarle a identificar los diferentes tipos de información.
+1.4.1Referencias posicionales
+Las posiciones y direcciones del tipo izquierda, derecha, delante, detrás, a la izquierda y a la derecha se entienden expresadas con respecto a la pantalla de CLARiTY
+cuando lo ve desde la parte delantera.
+1.4.2Unidades de medida
+En este manual, se emplean unidades métricas medidas inglesas equivalentes. Por ejemplo, 240 mm (9,44 pulgadas).de medida. Entre paréntesis se incluyen las
+1.4.3Información acerca de la seguridad
+La información específica acerca de la seguridad se indica en forma de frases de Advertencia y Precaución. Preste mucha atención a estas frases porque contienen información importante
+sobre cómo evitar posibles peligros que pueden afectarle a usted o al equipo.
+1.4.3.1Advertencia
+Las advertencias indican peligros o práclesiones personales gravticas poco seguras que pueden provocar es e incluso la muerte.
+Están representadas por un símbolo trianginterior y aparecen a la izquular con un signo de admiración en su ierda del texto de advertencia.
+Siempre están precedidas por la palabra "Advertencia".
+Se encuentran siempre antes del paso del al riesgo.procedimiento o la información relativa
+Por ejemplo:
+ADVERTENCIA
+LESIONES PERSONALESTodos los cableados y las conexiones eléctricas deben cumplir con las normas eléctricas locales
+aplicables. Póngase en contacto con la agencia reguladora correspondiente para obtener más información sobre este tema.
+Videojet DataFlex 6330 Manual del operario - Rev. AA1-3
+
+Introducción
+1.4.3.2Precaución
+Las precauciones indican prácticas peligrosas o poco sedaños al equipo u otros daños materiales.guras que pueden provocar
+Están representadas por un símbolo trianginterior y aparecen a la izquierda del texto de advertencia.ular con un signo de admiración en su
+Siempre están precedidas por la palabra "Precaución".
+Se encuentran siempre antes del paso del procedimiento o la información relativa al riesgo.
+Por ejemplo:
+PRECAUCIÓN
+DAÑOS AL EQUIPOLea este capítulo detenidamente antes de instalar, poner en funcionamiento, realizar el servicio
+u operaciones de mantenimiento en este equipo.
+1.4.4Notas
+Las notas contienen información adicional sobre un tema en concreto.
+Por ejemplo:
+Nota: Es posible configurar la protección mediante contraseña para algunas funciones para evitar
+accesos no autorizados.
+1.5Abreviaturas y acrónimos
+Abreviatura Expresión completa
+CACorriente alterna
+E/SEntrada/Salida
+LCDPantalla de cristal líquido
+PLCControlador lógico programable
+RHLado derecho
+SELVTensión de seguridad extra bajo
+IUInterfaz de usuario
+USBUniversal Serial Bus
+WYSIWYGLo que ve es lo que obtiene (tal y como se imprimirá)
+Tabla 1-2: Abreviaturas y acrónimos
+1-4 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Introducción
+1.6Capítulos del manual
+Este manual se divide en diez capítulos. La Tabla 1-3en cada capítulo. presenta y describe los temas que se tratan
+N.º de capítulo Nombre del capítulo Descripción
+1IntroducciónContiene información acerca de este manual, de las publicaciones relacionadas y los estilos de escritura
+utilizados en el manual.
+2 SeguridadContiene la información sobre peligros y seguridad.
+3 Piezas principalesDescribe los componentes principales de la impresora.
+4 ArranqueDescribe las operaciones de inicio básicas de la impresora.
+5 Sistema operativo CLARiTYContiene la información sobre el sistema operativo de CLARiTY.
+6 Editor de trabajosContiene información sobre cómo editar y eliminar trabajos.
+7 MantenimientoContiene información sobre servicio y mantenimiento.
+8S oluciproblemasón de Contiene los procedimientos de diagnóstico y solución de problemas a nivel de operador.
+Apéndice AEspecificacionesContiene las especificaciones de la impresora.
+Apéndice BDisponibilidadContiene información sobre herramientas de disponibilidad.
+Tabla 1-3: Lista de capítulos
+Videojet DataFlex 6330 Manual del operario - Rev. AA1-5
+
+Sección 2Seguridad
+En esta sección contiene la siguiente información:
+ Introducción
+ Directrices para la seguridad del equipo
+ Directrices sobre seguridad eléctrica
+ Instalación de la impresora
+ Pautas de seguridad de la cinta de impresión
+ Otras directrices importantes
+ADVERTENCIA
+LESIONES PERSONALESLea esta sección detenidamente antes de instalar, operar, realizar el servicio o mantener este
+producto. De lo contrario, pueden producirse lesiones graves.
+2.1Introducción
+La política de Videojet Technologies Inc. es fabricar sistemas y suministros de impresión/ codificación que cumplan estándares exigentes de funcionamiento y confiabilidad. Por tal razón,
+aplicamos las técnicas de control de calidad más defectos o peligros enestrictas para eliminar el riesgo potencial de nuestros productos.
+Esta impresora ha sido diseñada para imprimir información diUsar este equipo de cualquier otra manera rectamente sobre un producto. puede provocar lesiones personales graves.
+Las directrices de seguridad incluidas en esta sección tienen como fin instruir al operador acerca de todos los temas relacionados con la seguridad para que pueda trabajar con la impresora de
+manera segura.
+2.2Directrices para la seguridad del equipo
+Esta sección contiene importantes directrices demanejo el equipo. seguridad que afectan al funcionamiento y al
+ADVERTENCIA
+LESIONES PERSONALESEl equipo debe operarlo personal autorizado que pueda usar la máquina de manera
+independiente y sin provocar daños en el equipodebe capacitarse y estar informado sobre o lesiones personales. El personal operativo los riesgos ambientales y la seguridad.
+ADVERTENCIA
+LESIONES PERSONALESLos procedimientos de instalación deben ser llevados a cabo únicamente por personal de
+servicio o mantenimiento capacitado. El personal calificado que cumplió satisfactoriamente los cursos de capacitación tiene suficiente experiencia con esta impresora y conoce los riesgos
+potenciales a los que pueden estar expuestos.
+Videojet DataFlex 6330 Manual del operario - Rev. AA2-1
+
+Seguridad
+2.2.1Cabezal de impresión
+ADVERTENCIA
+LESIONES PERSONALESAntes de intentar realizar cualquier mantenimiento o reparación de cualquier pieza de este
+producto, desconecte la impresora del suministro eléctrico y aíenergía externas, incluidos loslela de todas las fuentes de s demás equipos conectados.
+ADVERTENCIA
+LESIONES PERSONALESMantenga las manos y su ropa alejadas de la impresora mientras esté encendida.
+ADVERTENCIA
+LESIONES PERSONALESSiga todas las etiquetas de seguridad y advertencia del dispositivo para un funcionamiento
+seguro del sistema.
+PRECAUCIÓN
+DAÑOS AL EQUIPOEn ningún caso quite u obstruya la visibilidad de ninguna etiqueta de advertencia, precaución
+o instrucciones colocada en el equipo. Si alguna parte de estas etiquetas se deteriora, desgasta o elimina, deberá ser reemplazada inmediatamente.
+ADVERTENCIA
+LESIONES PERSONALESNo coloque los dedos debajo del cabezal de impresión cuando el equipo está funcionando.
+PRECAUCIÓN
+DAÑOS AL EQUIPOEl dispositivo debe estar desenchufado en el momento de instalar, conectar o desconectar los
+cabezales de impresión.
+PRECAUCIÓN
+DAÑOS AL EQUIPOEl cabezal de impresión puede calentarse durante el funcionamiento normal. Tenga en cuenta
+las precauciones necesarias antes de intentar tocar el cabezal de impresión.
+2-2 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Seguridad
+2.3Directrices sobre seguridad eléctrica
+En esta sección se explican las directrices de seguridad relacionadas con ellos cables eléctricos, las tomas y las conexiones a tierra. suministro eléctrico,
+2.3.1Respete los códigos eléctricos
+ADVERTENCIA
+LESIONES PERSONALESTodos los cableados y las conexiones eléctricas deben cumplir con las normas eléctricas locales
+aplicables. Póngase en contacto con la agencia reguladora correspondiente para obtener más información sobre este tema.
+2.3.2Suministro eléctrico
+ADVERTENCIA
+PELIGRO DE DESCARGA ELÉCTRICALos voltajes usados para conectar la impresora a otros equipos no deben ser superiores
+a 50 V de CC o de pico de CA.
+ADVERTENCIA
+PELIGRO DE DESCARGA ELÉCTRICAUse siempre una pulsera antiestática conectada correctamente a tierra cuando manipule
+tarjetas de circuitos impresos. De lo contrario, pueden producirse daños a los componentes de la tarjeta debido a la electricidad estática.
+ADVERTENCIA
+LESIONES PERSONALESDurante la instalación, los cables y tubos de conexión deben sujetarse con seguridad para
+asegurar que no representen un riesgo de tropiezo ni se enreden con otras maquinarias.
+ADVERTENCIA
+LESIONES PERSONALESHabrá secciones del tablero de control de las impresoras que estarán permanentemente
+energizadas mediante la batería de litio integrada; por consel tablero nunca sea colocado ni almacenado iguiente, es fundamental que sobre una superficie conductiva (incluidos
+materiales conductivos, bolsas de plástico, etc.) ya que se descargaría resultar en un sobrecalentamienla batería y/o podría to de la misma. La batería no debe ser reemplazada por el
+operador.
+ADVERTENCIA
+LESIONES PERSONALESSi se sustituye la batería por una batería del tipo incorrecto podría provocarse una explosión.
+Deshágase de las baterías utilizadas de acuerdo con las instrucciones y la normativa local.
+Videojet DataFlex 6330 Manual del operario - Rev. AA2-3
+
+Seguridad
+PRECAUCIÓN
+LESIONES PERSONALESNo desconecte ningún conector del equipo cuando la alimentación eléctrica esté conectada
+(excepto los cables ethernet y USB).
+2.4Instalación de la impresora
+ADVERTENCIA
+LESIONES PERSONALESLa impresora usa una consola de control del operario. Asegúrese de que este panel esté
+montado a una altura y orientación de trabajo apropiadas para facilitar la operación.
+ADVERTENCIA
+LESIONES PERSONALESNo coloque la impresora en una ubicación peligrosa. En las ubicaciones peligrosas pueden
+producirse explosiones que causen lesiones personales.
+Las ubicaciones peligrosas, como se definen en los Estados Unidos, son aquellas áreas que puedan contener materiales peligrosos en cantidades suficientes para producir una explosión. Estas
+ubicaciones quedan definidas en el Artículo 500 del National Electrical Code
+nacional de los EE.UU.) ANSI/NFPA 70-1993. (Código eléctrico
+Fuera de los Estados Unidos, debe asegurarse de cumplir con relacionadas con la ubicación del equipotodas las regulaciones locales en lugares potencialmente peligrosos.
+ADVERTENCIA
+LESIONES PERSONALESColoque la impresora de manera que no se pueda acceder al mecanismo de impresión
+después de la instalación.
+ADVERTENCIA
+LESIONES PERSONALESNo extraiga las cubiertas laterales de la impresora después de la instalación.
+Uso de los accesorios de la impresora
+Para mantener la aprobación de regulación de la impresora, debe utilizar únicamente accesorios aprobados por Videojet cuando conecte un dispositivo al equipo.
+2-4 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Seguridad
+2.5Pautas de seguridad de la cinta de impresión
+2.6Otras directrices importantes
+PRECAUCIÓN
+DAÑOS AL EQUIPOLas cintas de la impresora deben almacenarse a una temperatura cuyo rango oscile entre
+5º C y 40º C y un rango de humedad sin condensación que oscile entre el 20% y el 85%.
+PRECAUCIÓN
+DAÑOS AL EQUIPOEl uso de cintas incompatibles puede dañar seriamente su impresora; la garantía no cubre
+tales daños. Use solo la cinta aprobada por el distribuidor.
+2.6.1Directrices sobre seguridad de limpieza
+PRECAUCIÓN
+DAÑOS AL EQUIPONo aplique demasiada fuerza sobre el cabezal de impresión mientras lo limpia ya que esto
+puede causar daños en el cabezal y podría invalidar la garantía.
+PRECAUCIÓN
+DAÑOS AL EQUIPOUse los suministros de limpieza aprobados por el distribuidor para limpiar. No utilice aire
+a alta presión ni algodón.
+PRECAUCIÓN
+DAÑOS AL EQUIPOEl uso de un kit de limpieza incompatible puede ocasionar graves daños a su impresora. Tales
+daños no están cubiertos por la garantía de la misma. Use solo los kits de limpieza aprobados por el proveedor.
+Videojet DataFlex 6330 Manual del operario - Rev. AA2-5
+
+Seguridad
+2.6.2Etiquetas de advertencia
+Etiqueta Descripción
+El equipo no está diseñado para usar a una altitud superior a 2000 m.
+El equipo no está diseñado para usar en regiones de clima tropical.
+Tabla 2-1: Etiquetas de advertencia
+2-6 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sección 3Piezas principales
+Este capítulo contiene información sobre componentes y accesorios integrales de la impresora.
+3.1Descripción del equipo
+Las piezas principales de la impresora Videojet DataFlex 6330 se describen a continuación:
+Impresora
+Pantalla del controlador CLARiTY
+1. Cable de interconexión2. Impresora3. Pantalla del controlador de CLARiTY y unidad de suministro de energía (PSU)
+Figura 3-1: Impresora Videojet DataFlex 6330 y pantalla de controlador de CLARiTY
+3.1.1Impresora
+La impresora Videojet DataFlex 6330 utiliza tecnología de transferencia térmica de alta resolución con un componente único de cinta electrónica y control de cabezal de impresora,
+eliminando la necesidad de aire comprimido. mínimas que reducen los requerimientos de mantenimiento y un diseño de cabezal de La impresora cuenta con piezas de desgaste
+impresión de rápida liberación que mejora el tiempo de funcionamiento de producción.
+Puede imprimir en cualquiera de los modos siguientes:
+Modo intermitente (es decir, mientras el sustrato está estacionario)
+Modo intermitente (es decir, mientras el sustrato está en movimiento)
+El producto está disponible en versiones con orientación izquierda y derecha con el fin de adaptarse a las diferentes configuraciones de la máquina de empaque.
+El producto está disponible en el modelo de ancho de impresión estándar de 53 mm.
+Videojet DataFlex 6330 Manual del operario - Rev. AA3-1
+
+Piezas principales
+3.1.2Pantalla del controlador de CLARiTY y unidad de suministro de energía (PSU)
+El controlador tiene una pantalla táctil extraíble y una unidad de suministro de energía.
+Las conexiones con el controlador son tal como se muestran en la interconexión (elemento 1) coneFigura 3-2. Hay un cable de ctado desde la impresora hasta la pantalla. Se proporcionan
+dos puertos USB (elemento 2) para cargar y hacerde la impresora. El interruptor de encendido (elemento 7) se utiliza para encender y apagar un respaldo de los datos y la configuración
+el suministro de energía en la pantalla de controlador de CLARiTY.
+1 2
+457 3
+8
+6
+1. Cable de interconexión2. Puerto USB (x2)5. Suministro eléctrico principal6. Fusibles de 5 amp (x2)
+3. Puertos Ethernet (x3)4. 15 Contactos de E/S7. Interruptor de encendido8. RS232
+Figura 3-2: Conexiones de pantalla
+PRECAUCIÓN
+DAÑOS AL EQUIPOAsegúrese de colocar los cables de interconexión correctamente antes de encender.
+3-2 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Piezas principales
+1 2
+5
+3
+1. Pantalla táctil2. Unidad de fuente de alimentación (PSU)3. Conector PSU-GUI
+Figura 3-3: Unidad de suministro de energía y pantalla
+Nota: La pantalla táctil y la unidad de suministro de energía se pueden conectar de manera remota utilizando el cable de suministro.
+Videojet DataFlex 6330 Manual del operario - Rev. AA3-3
+
+Sección 4Arranque
+Introducción
+Este capítulo incluye los siguientes temas:
+Encendido de la impresora
+Ajuste de la orientación de la pantalla
+Inicio de la impresora
+Detención de la impresora
+Conceptos sobre los LED del cabezal de impresión
+Ajuste de fecha y hora
+Configuración del idioma y la región de la pantalla
+Carga de una cinta
+Impresión de una imagen de prueba
+4.1Encendido de la impresora
+Coloque el interruptor de encendido del contro(Figura 4-1lador CLARiTY en la posición I (conectado) ).
+Nota: Asegúrese de que todos los cables estén conectados antes de encender la impresora.
+Una vez encendido, el controlador CLARiTY se inicde la impresora. Esto puede tomar unos 60 iará y se encenderá la luz LED azul (energía) segundos aproximadamente, durante los cuales
+aparecerá la pantalla de inicio.
+Si el arranque es exitoso, aparece la página de inicio.
+Comienza un proceso de inicialización de 15 segundos, durante elimpulsión de la cinta. En la barra de estado destella la palabra INIC cual la impresora calibra la IANDO y también destella
+el LED rojo. Cuando termina el proceso, la página de inicio cambia de la siguiente manera:
+El panel de estado cambia de INICIANDO a OFFLINE (FUERA DE LÍNEA).
+El área Consumibles muestra el porcentaje de cinta restante.
+En el marco de control, los botones Iniciar y Detener están habilitados.
+Interruptor de encendido
+Figura 4-1: Interruptor de encendido de la impresora
+Videojet DataFlex 6330 Manual del operario - Rev. AA4-1
+
+Arranque
+La Figura 4-2 muestra la página de inicio de CLARiTY en estado OFFLINE (FUERA DE LÍNEA).
+Figura 4-2: Página de inicio de CLARiTY en estado offline (fuera de línea)
+4.2Ajuste de la orientación de la pantalla
+En función de la posición en la que se monte el controlador de CLARiTY, puede ser necesario girar la imagen de la pantalla 180 grados.
+Para cambiar la orientación de la pantalla, haga lo siguiente:
+1.Vaya a Tools (Herramientas) > Setup (Configuración) > Control tal como se muestra en Figura 4-3.
+Figura 4-3: Orientación de la pantalla
+4-2 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Arranque
+2.Toque Set Screen Orientation (Configurar orientación de pantalla). Se muestra SetOrientation (Configurar orientación de pantalla) (consulte Screen Figura 4-4).
+3.Seleccione 0 ó 180 grados según sus necesidades y toque .
+4.Toque para volver a la pantalla de inicio.
+Figura 4-4: Orientación de la pantalla
+Videojet DataFlex 6330 Manual del operario - Rev. AA4-3
+
+Arranque
+4.3Inicio de la impresora
+Cuando se enciende la impresora, el estado de la misma y luego a OFFLINE (FUERA DE LÍNEA). En estas cambia de APAGADO a INICIANDO condiciones, se ignoran todas las entradas
+eléctricas externas y las señales del sensor de la impresora no disparan la impresión. Esto le permite verificar si la línea y la impresora están listas para la producción, antes de conmutar
+la impresora al estado EN FUNCIONAMIENTO para iniciar la impresión.
+Para conmutar la impresora al estado EN FUNCIONAMIENTO, toque .
+La Figura 4-5 muestra la página de inicio de CLARiTY con la impresora en estado EN FUNCIONAMIENTO.
+Nota: Si la impresora presenta un fallo o una advertaparecerá FALLO o ADVERTENCIA. Si aparecencia, en lugar de EN FUNCIONAMIENTO, e la palabra FALLO, primeramente deberá
+solucionar el problema antes de intentar imprimir. Para obtener más información, consulte
+Figura 4-5: Página de inicio de CLARiTY en estado de funcionamiento.
+"Borrado de un mensaje de fallo o advertencia" en la página 8-18.
+4.4Detención de la impresora
+Para que la impresora deje de imprimir, OFFLINE (FUERA DE LÍNEA).toque . La impresora vuelve al estado
+4-4 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Arranque
+4.5Conceptos sobre los LED del cabezal de impresión
+La Tabla 4-1 muestra los LED del cabezal de impresión que indican el estado de la impresora.
+Nota: El LED rojo también se ilumina cuando la impresora se está encendiendo y el cabezal se está Inicializando.
+Color Encendido Destellando Apagado
+RojoImpresora offline (fuera de línea)Fallo de la impresora
+ÁmbarAdvertenciaLa impresora imprime con advertenciaNo hay condición de falla o advertencia
+VerdeImpresora en líneaCabezal de impresión imprimiendo
+AzulEncendidoSin suministro de electricidad
+Tabla 4-1: Indicadores LED
+4.6Ajuste de fecha y hora
+Para ajustar la fecha y la hora en el controlador CLARiTY, haga lo siguiente:
+1.Vaya a Tools (Herramientas) > Setup (Configuración) > Control > Date and Time (Fecha y hora) (consulte Figura 4-6).
+2.Toque Date (Fecha) para ajustar la fecha, y aparecerá la página del calendario.
+3.Seleccione el mes y el año actual utilizando las teclas + y .
+4.Toque la fecha del día para seleccionarla.
+5.Toque para guardar los ajustes.
+6.Toque Hora para ajustar la hora. Aparece la pantalla de ajuste de hora.
+Figura 4-6: Fecha y hora del controlador CLARiTY
+Videojet DataFlex 6330 Manual del operario - Rev. AA4-5
+
+Arranque
+7.Use las teclas + y  para asignar un valor a cada uno de los parámetros [Horas, minutos y (opcionalmente) segundos].
+8.Toque para guardar los ajustes.
+9.Toque para volver a la pantalla de inicio.
+4.7Configuración del idioma y la región de la pantalla
+Para configurar el lenguaje que muestra el controlador CLARiTY, haga lo siguiente:
+1.Vaya a Tools (Herramientas) > Setup (Configurac(Internacionalización)ión) > Control > Internationalisation . Se muestra el idioma y la región actuales (consulte Figura 4-7).
+2.Toque Región/País. Aparece una lista de las regiones disponibles.
+3.Seleccione la región requerida de la lista (se indican todas las regiones actualmente
+disponibles) y toque .
+4.Toque Idioma. Aparece la lista de los idiomas disponibles.
+5.Seleccione el idioma requerido de la lista (se indican todos los idiomas actualmente
+disponibles) y toque .
+6.Toque para volver a la pantalla de inicio.
+El formato de fecha mostrado en la página seleccionada.de inicio cambia en función de la región
+Figura 4-7: Idioma y región
+4-6 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Arranque
+4.8Carga de una cinta
+Cargar la cinta implica retirar el casete de la impresora y cargar el rollo de cinta en el casete de la impresora.
+4.8.1Extracción del casete
+Para desmontar el casete, siga los pasos que aparecen a continuación:
+1.Asegúrese de que la impresora esté en estado OFFLINE (FUERA DE LÍNEA) (consulte Figura 4-2 en la página 4-2).
+2.Presione el botón circular negro de liberación se muestra en la situado en el frente de la impresora, como Figura 4-8. El botón hace clic cuando el casete se desprende del cuerpo
+principal de la impresora.
+En este punto, CLARiTY muestra el fallo Casete abierto (Figura 4-9).
+Figura 4-8: Desbloqueo del casete
+Figura 4-9: Fallo de casete abierto
+Videojet DataFlex 6330 Manual del operario - Rev. AA4-7
+
+Arranque
+3.Sostenga las asas embutidas y extraiga el casete del cuerpo de en la Figura 4-10la impresora, como se muestra .
+Figura 4-10: Desmontaje del casete
+4.8.2Inserción de una nueva cinta
+PRECAUCIÓN
+DAÑOS AL EQUIPOEl uso de cintas incompatibles puede dañar seriamente su impresora; la garantía no cubre
+tales daños. Utilice únicamente cintas aprobadas por el proveedor.
+Para insertar una variable, realice los pasos que se especifican a continuación:
+1.Coloque el casete sobre una superficie plana con los mandriles de la cinta mirando hacia arriba, y los rodillos de la cinta mirando hacia usted, como se muestra en la Figura 4-11.
+1
+2
+1. Carrete de la cinta (2 unidades)2. Rodillo de la cinta (2 unidades)
+Figura 4-11: Desmontaje del casete
+4-8 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Arranque
+2.Abra un nuevo rollo de cinta envuelto coaproximadamente 30 cm (12pulg.) de cinta.n material termocontraible y desenrolle
+Los portacarretes del casete tienen discos de diferentes colores:
+ El disco negro es para el nuevo rollo de cinta.
+ El disco plateado es para el rollo vacío.
+Cuando funciona la impresora, la nueva cinta se desenrolla desde el portacarrete negro y se enrolla en el plateado.
+3.Deslice el carrete lleno en el portacarrete del disco negro. El rollo se debe ubicar de modo que la cinta se desenvuelva en la dirección mostrada en la Figura 4-12.
+Nota: Asegúrese de que el carrete sea empujado totalmente hacia abajo y quede insertado en el portacarrete.
+4.Guíe la cinta de manera que:
+ se desenrolle desde la parte exterior del rollo lleno
+ pase alrededor de la parte exterior del rodillo blanco situado más cerca del rollo lleno
+ se desplace por la parte inferior del casete
+ pase alrededor de la parte exterior del segundo rodillo blanco
+ pase alrededor de la parte exterior del carrete vacío
+5.Deslice y meta totalmente el mandril vacío en el portacarrete que tiene un disco plateado.
+Figura 4-12: Instalación del mandril de la cinta
+Videojet DataFlex 6330 Manual del operario - Rev. AA4-9
+
+Arranque
+6.Gire el carrete vacío manualmente para que no quvacío cuando comience a girar el carrete lleno (ede cinta sin tensar. Deje de girar el carrete Figura 4-13).
+Nota: Si la cinta suministrada tiene una sección o encabezado impreso transparente en su comienzo, gire el carrete vacío para recoger toda la cinta transparente.
+Nota: Asegúrese de que:
+ La cinta pase entre el cabezal y el rodillo o almohadilla
+ La cinta no esté retorcida o atascada
+ La cinta no se haya aflojado al volver a colocar el casete
+Figura 4-13: Recorrido del mandril de la cinta
+4-10 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Arranque
+4.8.3Extracción de una cinta usada
+Para extraer la cinta usada, siga los pasos que aparecen a continuación:
+1.Tire de los dos carretes de cinta (uno lleno de cinta usada) del casete con firmeza, como se muestra en la Figura 4-14. Los discos situados debajo de cada carrete se
+pueden usar para apalancar y extraer el carrete del casete.
+2.Tire la cinta y los carretes usados.
+A veces, puede ser necesario retirar temporaluna cinta de ancho diferente para un trabajo)mente una cinta (tal vez porque necesite . Cuando coloque en la impresora un carrete
+de cinta parcialmente usada, asegúrese de que:
+ Coloca a presión el carrete sin usar en el portacarrete con disco negro.
+ Coloca a presión el carrete parcialmente usado en el portacarrete con disco plateado.
+Figura 4-14: Desmontaje de los mandriles de la cinta
+Videojet DataFlex 6330 Manual del operario - Rev. AA4-11
+
+Arranque
+4.8.4Reinstalación del casete
+Para reinstalar el casete, siga los pasos que aparecen a continuación:
+1.Sostenga el casete encima del cuerpo de la impresora. Alinee el paen el orificio de la placa base y alsador guía del casete inee las dos varillas de posicionamiento (Figura 4-15)
+que sobresalen de la impresora con los orificios situados en lode cinta de la casete.s extremos de los dos rodillos
+2.Empuje el casete en el cuerpo de la impresora y presione hasta que se fije en su lugar.
+El mensaje de fallo Casete abierto se borra automáticamente y el estado cambia a estado OFFLINE (FUERA DE LÍNEA).
+1
+2
+1. Rodillo de la cinta2. Varilla guía
+Figura 4-15: Alineación de las varillas guía
+4.8.5Uso de cintas de diferentes anchos y colores
+En los 53 mm del cabezal de impresión, es posible usar cintas de anchos diferentes:
+El ancho máximo de cinta para la impresora de 53 mm es de 55 mm.
+El ancho mínimo de cinta para la impresora de 53 mm es de 20 mm.
+PRECAUCIÓN
+CONFIGURACIÓN DE LA CINTA Si el ancho de la cinta no se configura correctamente, puede causar la aparición de un
+mensaje Interrupción de cinta (aunque la cintla cinta se bobine demasiado apretadamente en el carrete de cinta usada. Esto puede a esté intacta). También puede causar que
+dificultar la extracción de este carrete.
+4-12 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Arranque
+Cuando se debe insertar una cinta de ancho diferente, deben introduciren CLARiTY. Para ello, haga lo siguiente:se los nuevos valores
+1.Vaya a Tools (Herramientas) > Setup (Configuración) > Consumables (Consumibles) > Ribbon Width (Ancho de cinta) (consulte Figura 4-16).
+2.Introduzca un nuevo valor con el teclado auxiliar tal como se muestra en Figura 4-17.
+3.Toque para guardar los ajustes.
+Figura 4-16: Parámetros de cinta de la impresora
+Figura 4-17: Ancho de cinta de la impresora
+Videojet DataFlex 6330 Manual del operario - Rev. AA4-13
+
+Arranque
+Las cintas de diferentes colores tienen diferentes espesores. Parade fin del carrete sean exactas, seleccione el co asegurar que las advertencias lor correcto de la cinta que usa la impresora.
+Para seleccionar un color de cinta, haga lo siguiente:
+1.Vaya a Tools (Herramientas) > Setup (ConfiguracióColour (Color de cinta) n) > Consumables (Consumibles) > Ribbon tal como se muestra en Figura 4-16 en la página 4-13.
+2.Seleccione el color correcto en la lista, como se muestra en la Figura 4-18.
+3.Toque para guardar los ajustes.
+4.Toque para volver a la pantalla de inicio.
+Figura 4-18: Color de cinta de la impresora
+4-14 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Arranque
+4.8.6Inspección del suministro de cinta de la impresora
+El área Consumibles de la página de inicio (Figura 4-19que indica la cantidad de cinta sin usar la restante en el casete.) muestra un indicador de cinta
+El indicador muestra tres colores diferentes que ayudan a verificar visualmente el nivel de la cinta con rapidez.
+VERDE = Disponibilidad adecuada de cinta
+AMARILLO = Quedan aproximadamente 50 m (164 pies) de cinta
+ROJO = Quedan aproximadamente 20 m (66 pies) de cinta
+Figura 4-19: Suministro de cinta de la impresora
+Videojet DataFlex 6330 Manual del operario - Rev. AA4-15
+
+Arranque
+4.9Impresión de una imagen de prueba
+Típicamente, la impresora se usa en una máquina de empaque cuando un sensor o un controlador lógico programable (PLC) activan la impresión.
+Es posible imprimir una imagen de prueba antes de hacer funciopara verificar si la imagen impresa es de calidad aceptable. El botón Prueba de impresión nar la máquina en producción,
+(Figura 4-20), aparece en gris si el ingeniero de ines necesario que la impresora esté en modo stalación desactivó esta función. Asimismo, de FUNCIONAMIENTO para que el botón Prueba
+de impresión esté disponible.
+Para realizar una prueba de impresión, haga lo siguiente:
+1.Si la impresora está en estado OFFLINE (FUERA DE LÍNEA), pulse el botón
+Prueba de impresión Botón
+Figura 4-20: Botón Prueba de impresión
+para ponerla en modo EN FUNCIONAMIENTO.
+2.Asegúrese de que la película utilizada en los envases esté colocada impresión, si la impresora estádebajo del cabezal de en una aplicación intermitente. De lo contrario, asegúrese
+de que la película pase más allá del cabezal.
+3.Toque en el marco de control de CLARiTY (Figura 4-20). La impresora realiza la
+prueba de impresión.
+4.Examine la impresión para verificar si la imagen se imprimió correctamente.
+4-16 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sección 5Sistema operativo CLARiTY
+Este capítulo incluye los siguientes temas:
+Introducción a CLARiTY
+Uso de la pantalla de inicio
+Uso de la pantalla de herramientas
+Protección por contraseña
+Impresoras principal/secundarias
+5.1Introducción a CLARiTY
+CLARiTY es un sistema de control para el operadtáctil fácil de usar. Todos los aspeor basado en iconos. Cuenta con una pantalla ctos técnicos de la configuración y manejo de la impresora están
+disponibles mediante el botón Tools (Herramientas).
+La Figura 5-1 muestra la página de Inicio del sistema de control del operador CLARiTY.
+Nota: Si se activa la protección con contraseña, las opciones disponibles pueden el nivel de usuario. Para obtener más información, consulte el apartado quedar restringidas según Protección por contraseña
+en la página 5-40.
+5.2Uso de la pantalla de inicio
+1. Barra de estado2. Botón Herramientas 6. Posición de impresión7. Botón Imprimir
+3. Barra de detalles del trabajo actual4. Consumibles 8. Botones para el control del sistema9. Botón de inicio
+5. Información sobre rendimiento10. Botón de selección de trabajo
+Figura 5-1: Pantalla de inicio de CLARiTY
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-1
+
+Sistema operativo CLARiTY
+ADVERTENCIA
+LESIONES PERSONALES La impresora comienza a imprimir si toca la barra de estado cuando la impresa esté en modo
+OFFLINE (FUERA DE LÍNEA). Asegúrese de no tocala impresora esté en ejecución.r la barra de estado si no se requiere que
+La pantalla de inicio permite al usuario acceder a las opciones siguientes:
+Botones Descripción
+Volver a la pantalla de inicio.
+Abre la pantalla Herramientas.
+Muestra información sobry cuándo se seleccionó, e el trabajo actual abre la pantalla de
+detalles del trabajo actual.
+Muestra la lista de trabajos disponible, incluido el trabajo actual. Una vez seleccionada una
+tarea, se puede cargarSi los campos están activados para el usuario, para la impresión.
+este puede confirmar antes de imprimir.
+Cambia el estado SHUTDOWN (APAGAR) a OFFLINE de impresión de
+(FUERA DE LÍNEA) y viceversa.
+Inicia la impresora.
+Detiene la impresora.
+Imprime una imagen de prueba.Nota: Esta opción solo está presente si se activa
+en la impresora utilizando el Administrador de configuración CLARiTY.
+Ajusta la posición de impresión en dirección horizontal y vertical.
+Tabla 5-1: Pantalla de inicio
+5-2 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+La pantalla de inicio permite al usuario acceder a las opciones siguientes:
+Botones Descripción
+Muestra el estado de la impresora.RUNNING (EN FUNCIONAMIENTO):
+La impresora está encendida y lista para imprimir cuando se reciba la orden
+correspondiente.OFFLINE (FUERA DE LÍNEA): La
+impresora está encendida, pero no está lista para imprimir.
+SHUTDOWN (APAGADO): El cabezal de impresión está desconectado de la
+corriente y la impresora no está lista para imprimir.
+WARNING (ADVERTENCIA)operario debe comprobar las advertencias : El
+disponibles antes de que la impresora pueda imprimir.
+FAULT (FALLO): El operario debe solucionar los fallos existentes antes de que
+la impresora pueda comenzar a funcionar.
+Muestra la pantalla de Consumables (Consumibles) que muestra información
+de cinta. Para obtener más información, consulte la Consumibles en la página 5-4.
+Muestra el siguiente rendimiento de la impresora Información:
+Producción: producción de la impresora en impresiones por minuto desde que
+se cargó el trabajo actual.Recuento de lotes: número de impresiones
+desde que se cargó el trabajo actual.iAssurance: porcentaje de impresiones
+buenas detectadas. Al seleccionar esta área se abre la pantalla
+de Performance (Rendimiento) que muestra información estadística adicional de la
+impresora. Para obtener más información, consulte la Pantalla de rendimiento en la
+página 5-6.
+Tabla 5-2: Pantalla de inicio
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-3
+
+Sistema operativo CLARiTY
+5.2.1Consumibles
+Toque el área Consumables (Consumibles) de la abre y muestra la información de cinta (porcentpágina de inicio. La pantalla de Consumibles aje de cinta restante) tal como se muestra en
+Figura 5-2.
+Figura 5-2: Pantalla de consumibles
+5-4 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+Pulse la información de cinta para ver las opciones de cinta tal como se muestra en Figura 5-3.
+La pantalla Ribbon (Cinta) muestra las siguientes opciones, como se muestra en Tabla 5-3.
+Figura 5-3: Pantalla de cinta
+Opción Descripción
+PorcentajeEl porcentaje de la cinta disponible.
+Tiempo vacío estimado El tiempo estimado de cuándo se vaciará la cinta según el trabajo actual y el índice de producción.
+Tiempo restante estimadoEl tiempo estimado restante según producción.el trabajo actual y el índice de
+Último cambioLa fecha y hora en que se cambió la cinta por última vez.
+Tabla 5-3: Opciones de cinta
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-5
+
+Sistema operativo CLARiTY
+5.2.2Pantalla de rendimiento
+Toque el área Performance (Rendimiento) de la rendimiento, como se muestra en la página de inicio. Se abrirá la pantalla de Figura 5-4.
+Nota: Use la barra de desplazamiento para subir y bajar por la pantalla.
+La pantalla de rendimiento muestra las siguientes opciones, como se muestra en la Tabla 5-4.
+Figura 5-4: Pantalla de rendimiento
+Opción Descripción
+ProducciónLa producción de la impresora en impresiones por minuto desde que se cargó el trabajo actual.
+Recuento de lotesEl número de impresiones desde que se cargó el trabajo actual.
+Recuento totalEl número de impresiones durante la vida útil de la impresora.
+Recuentos del código de barra del loteEl número de impresiones de códiel trabajo actual (este menú está disponible únicamente cuando se go de barra desde que se cargó
+adjunta el escáner de código de barra).
+DisponibilidadLa información de disponibilidad de la impresora y la disponibilidad operativa. Para obtener más información, consulte
+la Disponibilidad en la página B-1.
+iAssuranceEl porcentaje de impresiones buenas detectadas.
+Contador de código incorrecto El recuento actual de códigos incorrectos (para la ejecución actual).
+iAssurance
+Tabla 5-4: Opciones de rendimiento
+5-6 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+Opción Descripción
+Tabla 5-4: Opciones de rendimiento (continuación)
+5.2.2.1Pantalla iAssurance
+La tecnología Videojet DataFlex 6330 iAssure puede reducir el desperdicio y la reutilización realizando revisiones de calidad de la impresión en tiempo real y detectando defectos de
+impresión recurrentes.
+La impresora cuenta con un sensor integrado que crea una imagen de una cinta impresa a medida que la cinta avanza. La impresora compara la imagen capturada con la imagen prevista
+y evalúa cualquier área que no coincida para deteacciona un fallo cuando falla un número preestabrminar si el código pasó/falló. La impresora lecido de códigos consecutivos que detenga la
+línea o envíe el producto a un área de rechazo o inspección (si la línea se configura con una).
+Uso de la pantalla iAssure
+1.Toque el área Performance (Rendimiento) de la página de inicio. Se abre la pantalla Performance (Rendimiento), como se muestra en las (Figura 5-4 en la página 5-6).
+Desplácese hacia abajo para ver la métrica de iAssure. Consulte para obtener más información sobre las métricas iAssure. Tabla 5-4 en la página 5-6
+2. Desplácese a Tools (Herramientas) > Diagnostics (Diagnóstico) >Printhead (Cabezal de
+Contador total de código incorrecto El número total de códigos incorrectos detectados.
+iAssurance
+Paradas de producción El número de veces que se detuvo la producción.
+iAssurance
+Señales de impresión ignoradasEl número de señales de impresión ignoradas.
+Velocidad a corto plazoLa velocidad promedio durante 5 minutos de operación.
+Eficacia a corto plazoLa eficacia de las impresiones reales por minuto durante las impresiones nominadas por minuto que se da como entrada
+durante un período de 5 minutos.
+Velocidad a largo plazoLa velocidad promedio durante 10 minutos de operación.
+Eficacia a largo plazoLa eficacia de las impresiones reales por minuto durante las impresiones nominadas por minuto que se da como entrada
+durante un período de 10 minutos.
+Velocidad de tendenciaEl valor de velocidad de tendencia.
+Eficacia de tendenciaEl valor de eficacia de tendencia.
+Velocidad nominalIngrese los paquetes requeridos por velocidad de minuto.
+impresión) > iAssure > View Latest Image (Ver imagen más reciente) imagen impresa captada. para ver la última
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-7
+
+Sistema operativo CLARiTY
+Errores comunes de calidad de impresión detectados por iAssure
+Tabla 5-5 describe muestras de errores comunes en la calidad de impresión y sus causas.
+Muestra Causa
+Sobreimpresión
+La cinta se arruga.
+Superficie de impresión ajada
+Tabla 5-5: Muestras de errores de calidad de impresión
+5-8 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+5.3Uso de la pantalla de herramientas
+La pantalla de herramientas contiene las herramientas de la impresora.
+Toque el botón en la página de Inicio para acceder a la pantalla Tools (Herramientas).
+Se abrirá la pantalla Tools (Herramientas), como se muestra en la Figura 5-5.
+La pantalla de herramientas proporciona accesoen a las siguientes opciones, como se muestra Tabla 5-6.
+Figura 5-5: Pantalla de herramientas
+Opción Descripción
+ConfiguraciónOpciones para ver y modificar los parámetros de configuración de la impresora. Para obtener más información en la pantalla de Setup
+(Configuración), consulte el manual de servicio.
+DiagnósticoInformación sobre los valores actuales de los parámetros clave para la configuración de la impresora, así como el soporte de la operación de
+la impresora que puede ayudar a solucionar los problemas que surjan. Consulte la Uso de la pantalla de diagnóstico en la página 5-10.
+Bases de datosInformación disponible en bases de datos, su capacidad y los trabajos almacenados. Consulte la Uso de la pantalla de base de datos en la
+página 5-36.
+AyudaLos videos tutoriales y la documentación pasolución básica de problemas. Consulte ra tareas específicas y Uso de la pantalla de ayuda
+en la página 5-38
+Tabla 5-6: Opción de herramientas
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-9
+
+Sistema operativo CLARiTY
+5.3.1Uso de la pantalla de diagnóstico
+Toque el botón en la página de herramientas para acceder a la pantalla Diagnostics
+(Diagnóstico) (Figura 5-6).
+La página de diagnóstico muestra los siguientes parámetros:
+Figura 5-6: Pantalla de diagnósticos
+Opción Descripción
+Cabezal de impresiónInformación del estado de los componendel evento, el gráfico del estado del tes de la impresora, el registro cabezal y los perfiles del codificador.
+Consulte la Uso de la pantalla del cabezal en la página 5-11.
+ConsumiblesInformación sobre el suministro de la cinta y el diámetro del residuo, la tensión de la cinta y el modo de impresión. Consulte la Uso de la
+pantalla de consumibles en la página 5-25.
+ControlInformación sobre la información del sistema, las versiones y la configuración de las comunicaciones. Consulte Uso de la pantalla de
+control en la página 5-26
+OpcionesNo hay opciones disponibles en este momento.
+Tabla 5-7: Descripción de la pantalla de diagnóstico
+5-10 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+5.3.1.1Uso de la pantalla del cabezal
+Toque el botón en la página de diagnóstico para acceder a los parámetros
+del cabezal (Figura 5-7).
+La página del cabezal muestra los siguientes parámetros:
+Figura 5-7: Pantalla de diagnóstico del cabezal
+Opción Descripción
+EntradasEl estado de los tres parámetros de entrada externos y los parámetros de entrada internos. Consulte la Uso de la pantalla de entrada en la página 5-12.
+SalidasEl estado de una salida física de la impresora. Consulte la de salida en la página 5-14.Uso de la pantalla
+GeneralLos parámetros generales como MoModo de alta producción, etc. Consulte do de cabezal, Modo de impresión, Uso de la pantalla general en la
+página 5-15.
+Estado del cabezalEl registro del estado del cabezal. Consulte la del cabezal en la página 5-16Uso de la pantalla de estado .
+iAssureLos parámetros de iAssure. Consulte la página 5-17Uso de la pantalla. iAssure en la
+Registro de eventosEl registro de eventos responsablesimpresora. Consulte la del tiempo de inactividad de la Uso de la pantalla de registro de eventos en la
+página 5-18.
+Sincroniza-cionesEl conteo para las diferentes operaciones de impresora. Consulte la pantalla de sincronización en la página 5-19Uso de la .
+Perfiles del codificadorEl perfil del codificador. Consulte la Uso de la pantacodificador en la página 5-20.lla de perfiles del
+Tabla 5-8: Descripción de la pantalla de cabezal
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-11
+
+Sistema operativo CLARiTY
+Uso de la pantalla de entrada
+Toque las entradas en la página de Printhead (Cabezal) para acceder a los parámetros de entrada (Figura 5-8).
+La pantalla de entradas proporciona acceso a los siguientes parámetros:
+Figura 5-8: Pantalla de entradas
+Opción Descripción
+Configuración de entradaMuestra la configuración actual de cada entrada.
+Entradas externas 1, 2, 3El estado en tiempo real de cada una de estas tres entradas.
+Posición del cabezal de impresiónLa posición del cabezal. El sensor inicial del cabezal detecta si el cabezal
+está posicionado o no.
+Tabla 5-9: Descripción de la pantalla de entradas
+5-12 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+Opción Descripción
+Casete abiertoEl estado del casete. El sensor inicial del casete detecta si el casete está
+abierto o cerrado.
+Distancia entre el cabezal de impresión y la platinaLa distancia entre el cabezal y la platina.
+Sensor de la posición del cabezal de impresiónLa posición del sensor de posición del cabezal de impresión.
+Sensor de posición de residuo de cintaLa posición del sensor de posición de residuo de la cinta.
+Sensor de calibración ópticaEl valor del sensor de calibración óptica.
+Sensor iAssureEl valor de sensor iAssure.
+Voltios del motorEl suministro de voltaje de los motores paso a paso.
+Suministro de 24 voltiosEl estado del suministro de voltaje para la E/S de las impresoras.
+Voltios del cabezalEl voltaje de transmisión del cabezal. Esto varía, según la resistencia del
+cabezal pero debería estar en el rango de 23V.
+Temperatura del cabezal de impresiónLa lectura en tiempo real del termistor en el cabezal térmico.
+Temperatura de la PCB de impresiónLa lectura en tiempo real del termistor en la PCB del controlador
+de CLARiTY.
+Tabla 5-9: Descripción de la pantalla de entradas (continuación)
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-13
+
+Sistema operativo CLARiTY
+Uso de la pantalla de salida
+Toque Outputs (Salidas) la página de Printhead (Cabezal) para acceder a los parámetros de salida (Figura 5-9).
+La pantalla de salida proporciona acceso a los siguientes parámetros:
+Nota: Al presionar el botón Toggle (Alternar) el usuario puede forzar el estado de una salida, Abierta/Cerrada o Encendido/Apagado, que puede ser útil para los propósitos de diagnóstico.
+Figura 5-9: Pantalla de salidas
+Opción Descripción
+Posición del cabezal de impresiónMueve el cabezal de su posición de espera a su posición listo para imprimir.
+Cabezal de impresión dentro/fueraMueve el cabezal desde su poa la posición de impresión.sición listo para imprimir
+Relé externo y salidas PNPEl estado de las 2 salidas de relé configurables y las 2 salidas de PNP 24V configurables.
+LED verdeAlterna el LED verde de la parte delantera de la impresora.
+Diodo emisor de luz (LED) rojoAlterna el LED rojo de la parte delantera de la impresora.
+LED de calibración ópticaMuestra la salida de los LED de calibración iOptical.
+LED iAssureMuestra la salida de los LED iAssure.
+Tabla 5-10: Descripción de la pantalla de salidas
+5-14 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+Uso de la pantalla general
+Toque General en la página de Printhead (Cabezal) para acceder a los parámetros (Figura 5-10).
+La pantalla general proporciona acceso a los siguientes parámetros:
+Figura 5-10: Pantalla general
+Opción Descripción
+Modo de la impresoraEl modo de la impresora. Éstas son las  Intermitente opciones disponibles:
+ Continuo
+Orientación de la impresoraLa configuración de la impresora. Éstas son las opciones disponibles:
+ Del lado derecho (RH)
+ Del lado izquierdo (LH)
+Ancho de la impresoraEl ancho del cabezal configurado como 53 mm.
+Modo de impresiónEl modo de impresión. Éstas son las op Transferencia térmica (que utiliza una cinta) ciones disponibles:
+ Directo (que usa la impresora sin una cinta e imprime directamente sobre las etiquetas térmicas).
+Modo de producción elevadaEl modo de alta producción está activado o no.
+Imagen de la prueba de impresiónAbre una ventana para imprimir una imagen de prueba.
+Tabla 5-11: Descripción de la pantalla general
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-15
+
+Sistema operativo CLARiTY
+Uso de la pantalla de estado del cabezal
+Toque Printhead Health (Estado del cabezal) acceder a los parámetros la pantalla de Printhead (Cabezal) para de salida del cabezal (Figura 5-11).
+La pantalla de estado del cabezal proporciona acceso a los siguientes parámetros:
+Figura 5-11: Pantalla de estado del cabezal
+Opción Descripción
+ Gráfico del estadoEl gráfico del estado del cabezal.
+ID del cabezalEl ID del cabezal.
+Resistencia del cabezal de impresiónLa resistencia del cabezal de impresión. El valor de resistencia del cabezal coincide
+con los componentes electrónicos de transmisión de la impresora con las
+características de resistencia del cabezal.
+Distancia total impresaLa distancia total impresa en km.
+Contraseña del fabricanteIngrese la contraseña del fabricante para habilitar las opciones de nivel más alto.
+Tabla 5-12: Descripción de la pantalla de estado del cabezal
+5-16 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+Uso de la pantalla iAssure
+Toque iAssure en la página de Printhead (Cabezal) para acceder a los parámetros iAssure (Figura 5-12).
+La pantalla iAssure proporciona acceso a los parámetros siguientes:
+Figura 5-12: Pantalla iAssure
+Opción Descripción
+Ver la imagen más recienteLa última imagen capturada por iAssure.
+Nota: la última imagen capturada
+se actualiza en tiempo real para cada impresión.
+Estado del sensor iAssureMuestra si el sensor iAssure requiere o no calibración.
+Modo Fallos consecutivos iAssureMuestra el estado del modo de fallas consecutivas.
+Modo Rechazo y turno iAssureMuestra el estado del modo de cambio y rechazo.
+Contraseña del fabricanteIngrese la contraseña del fabricante para habilitar las opciones de nivel más
+alto.
+Tabla 5-13: Descripción de la pantalla de iAssure
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-17
+
+Sistema operativo CLARiTY
+Uso de la pantalla de registro de eventos
+Toque Event Log (Registro de evento) en la página de Printhead (Cabezal) para acceder a las opciones (Figura 5-13).
+La pantalla Event Log (Registro de eventos) proporciona acceso a las opciones siguientes:
+Figura 5-13: Pantalla de registros de eventos
+Opción Descripción
+Ocultar fallasMuestra/oculta cualquier evento fallido de eventos.de la lista de registro
+Ocultar advertenciasMuestra/oculta cualquier evento de advertencia de la lista de registro de eventos.
+Ocultar estadoMuestra/oculta cualquier evento de estado de eventos.de la lista de registro
+Exportar a USBExplora el registro de eventos y las instantáneas de parámetro asociadas a la memoria USB. La interfaz de usuario conduce al
+usuario por los pasos necesarios para descargar a la memoria USB.
+Tabla 5-14: Descripción de la pantalla de iAssure
+5-18 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+Uso de la pantalla de sincronización
+Toque Timings (Sincronización) en la página de Printhead (Cabezal) para acceder a los parámetros (Figura 5-14).
+Esta pantalla de diagnóstico proporcionar información sobre la última impresión o selección de trabajo impreso que se realizó. Es útil en aplicaciones de alta producción para comprender
+qué intenta hacer la impresora, especialmente en aplicaciones de movimiento continua.
+La página Timings (Sincronización) muestra los siguientes parámetros:
+Figura 5-14: Pantalla de sincronización
+Opción Descripción
+Velocidad mínima de impresión (mm/s)La velocidad de impresión durante el ciclo de impresión anterior.real mínima que se logró
+Velocidad máxima de impresión (mm/s)La velocidad de impresión durante el último ciclo de impresión.real máxima que se logró
+Tiempo de ciclo (ms)El tiempo total terminado desde el de registro de impresión hastfinal del retraso a el final de la operación
+de impresión.
+Tiempo de impresión (ms)El tiempo real que lleva imprimir la imagen en el ciclo anterior de impresión.
+Tiempo de selección de trabajoEl tiempo que se lleva seleccionar el último trabajo desde el momento en que se confirmó la imagen, hasta estar lista
+para imprimir.
+Tiempo de actualización de los datos de trabajoEl tiempo total que lleva actualizar todas las variables dinámicas en la imagen (tiempo, fecha, contadores).
+Tabla 5-15: Descripción de la pantalla de sincronización
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-19
+
+Sistema operativo CLARiTY
+Opción Descripción
+Tabla 5-15: Descripción de la pantalla de sincronización (continuación)
+Tiempo de actualización del contadorEl tiempo que lleva actualizar todos los campos del contador en la imagen.
+Tiempo de actualización de la fecha/horaEl tiempo que lleva actualizar todos los campos de hora/fecha de la imagen.
+Uso de la pantalla de perfiles del codificador
+La elaboración de perfiles del codificador se diseña para las aplicaciones de movimiento continuo.
+La elaboración de perfiles del codificador permite que la impresde la película de empaora capture el comportamiento que del codificador y grafica la información en una pantalla CLARiTY
+útil que también muestra un osciloscopio en línea de las entradas y a la vez. La impresora también se puede optimizar para el rendimiento de impresión evitando las salidas de máquina
+las áreas del ciclo de la máquina anfitriona que tiene velocidades lineales excesivas o cambios rápidos en la velocidad.
+Figura 5-15 Muestra una pantalla típica de un perfil codificador.
+El gráfico mostrado en la interfaz del operador de CLARiTY considera los ajustes para Velocidad máxima de impresión, ajustes actuales de Registro y el tamaño de la imagen
+imprimida.
+Al usar estos valores, el gráfico muestra dónde se recibió la señal de impresión y dónde se llevará a cabo la impresión dentro del perfil, tal como se muestra en Figura 5-15.
+Esta característica se puede utilizar para solucionar problemas como registro de impresión errante causado por la película de empaque que se desplaza a una velocidad por encima
+del máximo de la impresora durante la fase de registro.
+Figura 5-15: Gráfico del perfil del codificador
+5-20 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+Para captar la elaboración de perfiles del colo siguiente:dificador en la pantalla de CLARiTY, haga
+1.Toque Encoder Profiles (Perfiles del codificador) en la pápara acceder a los parámegina de Printhead (Cabezal) tros Encoder Profiles (Figura 5-16).
+2. Para configurar las opciones para el perfil que desea captar, configure los ajustes para las siguientes opciones:
+Figura 5-16: Pantalla de perfiles del codificador
+Opción Descripción
+Inicio de perfilesÉstas son las opciones disponibles Automáticamente: capta el perfil
+de manera automática después de tocar el botón de Captar el perfil
+de codificador.
+ Señal de impresión activada: capta un perfil únicamente
+después de haber recibido una señal de impresión.
+ Impresión a baja velocidad: capta un perfil únicamente
+si la velocidad de la película cae por debajo del límite mínimo
+de las especificaciones de las impresiones.
+Tabla 5-16: Descripción de la pantalla de perfil del codificador
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-21
+
+Sistema operativo CLARiTY
+Opción Descripción
+Tipo de perfilÉstos son los tipos de perfil disponibles:
+ Estándar
+ Rendimiento de la impresora
+ Entradas y salidas
+Cada tipo de perfil presenta la información de forma gráfica
+ligeramente diferente. Seleccione el que se adapte mejor a los
+requerimientos.
+Eje de perfil XConfigure el eje X de la tabla como tiempo o distancia.
+Tabla 5-16: Descripción de la pantalla de perfil del codificador (continuación)
+5-22 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+3. Una vez que se han configurado las opciones, comience el proceso de captura tocando el botón Capture Encoder Profile (Capturar los perfiles del codificador). Aparece la pantalla
+Capture Encoder Profile (Capturar los perfiles del codificador) (Figura 5-17).
+Nota: Los perfiles del codificador no se captan durante la secuencia de calibración de la cinta.
+4. Pulse y aparece la pantalla Capture Encoder Profile
+(Capturar los perfiles del codificador) (Figura 5-18).
+Figura 5-17: Pantalla Capture Encoder Profiles (Captar los perfiles del codificador)
+Figura 5-18: Pantalla Capture Encoder Profiles (Capturar los perfiles del codificador)
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-23
+
+Sistema operativo CLARiTY
+Además, si el administrador de configuración el perfil del codificador se puede cade CLARiTY se comunica con la impresora, rgar a una PC para su análisis.
+Para subir un perfil de codificador a una PC, haga lo siguiente:
+1.Haga clic en el nuevo icono de codificador, desplácese por los dispositivos y seleccione Capture Encoder Profile (Capturar los perfiles del codificador) de la lista, tal como se
+muestra en Figura 5-19.
+2. Haga clic en el botón Accionar, el perfil se capta en un separados por coma (csv).archivo con formato de valores
+3. Para acceder a este archivo, seleccione la carpeta Log Files (Archivos de registro) del nuevo codificador, tal como se muestra en Figura 5-20.
+Este archivo se puede cargar en programas de hoja de cálculo como Microsoft Excel y utilizando un Asistente de tabla, se puede ver un gráfico similar al que se muestra en la pantalla CLARiTY.
+Figura 5-19: Perfiles del codificador - Ajuste de configuración de CLARiTY
+Figura 5-20: Perfiles del codificador - Archivos de registro
+5-24 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+5.3.1.2Uso de la pantalla de consumibles
+Toque en la página de diagnóstico para acceder a los parámetros de consumibles
+(Figura 5-21).
+La página Consumables Diagnostics (Diagnóstiparámetros:co de consumibles) muestra los siguientes
+Figura 5-21: Pantalla de diagnóstico de consumibles
+Opción Descripción
+Diámetro de suministro de cintaEl diámetro medido de la cintmedido de la cinta de suminia de suministro. El diámetro stro se puede comparar con
+los diámetros de cinta reales después de la calibración a fin de determinar el funcionamiento preciso del sistema de
+calibración.
+Diámetro de residuo de cintaEl diámetro medido de la cinta de residuo se puede comparar con los diámetros de cinta reales después de la calibración
+a fin de determinar el funcionamiento preciso del sistema de calibración.
+Tensión de la cintaLa última lectura de la tensión de la cinta.
+Modo de impresiónEl modo de impresión. Éstas son las opciones disponibles: Transferencia térmica (que utiliza una cinta)
+ Directo (que usa la impresora sin una cinta e imprime directamente sobre las etiquetas térmicas).
+Tabla 5-17: Descripción de la pantalla de diagnóstico consumible
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-25
+
+Sistema operativo CLARiTY
+5.3.1.3Uso de la pantalla de control
+Toque en la pantalla Diagnostics (Diagnóstico) para acceder a los parámetros
+de control (Figura 5-22).
+La pantalla Control Diagnostics (Diagnóstico deparámetros: control) proporciona acceso a los siguientes
+Figura 5-22: Pantalla de diagnóstico de control
+Opción Descripción
+VersionesLa información de software para el sistema y cada uno de los subcomponentes. Consulte la Uso de la pantalla de versiones en la
+página 5-27.
+Información del sistemaEl número de serie y el número de revisión de la tarjeta de circuito impreso (PCB), la velocidad del CPU y la información de referencia del equipo.
+Consulte la Uso de la pantalla de información del sistema en la página 5-28.
+Información de contactoLa información de contacto del contacto de servicio al cliente. Consulte la Uso de la pantalla de información de contacto en la página 5-29.
+ComunicacionesEl número de serie de la impresora y los puertos de red. Consulte la la pantalla de comunicación en la página 5-30Uso de .
+Registro de auditoría de El registro de la máquina cambia y el usuaripantalla de registro de auditoría de producción en la página 5-34o cambia. Consulte la Uso de la .
+producción
+Cola de actualización La lista de todos los trabajos de la cola de la impresora. Consulte la pantalla de cola de actualización de imágenes en la página 5-35Uso de la .
+de imagen
+Tabla 5-18: Descripción de la pantalla de diagnóstico de control
+5-26 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+Uso de la pantalla de versiones
+Toque Versions (Versiones) en la página de control para ver los parámetros (Figura 5-23).
+Nota: Si hay inconsistencias entre los componentes de software que se instalaron en la impresora,
+el número de pieza de software muestra el mensaje Incompatible Software Versions (Versiones
+de software incompatibles). En caso de ver esto, seotra manera la impresora podría debe actualizar el software de CLARiTY, de actuar de manera impredecible.
+La pantalla Versions (Versiones) muestra la información de software del sistema y cada uno de los subcomponentes.
+Figura 5-23: Pantalla de versiones
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-27
+
+Sistema operativo CLARiTY
+Uso de la pantalla de información del sistema
+Toque System (Sistemas) en la página de control para ver los parámetros (Figura 5-24).
+La información del sistema muestra los siguientes parámetros:
+Figura 5-24: Pantalla de información del sistema
+Opción Descripción
+Número de serie de la PCBEl número de serie de la PCB.
+Revisión de la PCBLa revisión de la PCB.
+Velocidad del CPULa velocidad del CPU.
+Referencia de equipoLa información de referencia del equipo.
+Tabla 5-19: Descripción de la pantalla de información del sistema
+5-28 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+Uso de la pantalla de información de contacto
+Toque Contact Information (Información de contacto) en la página de control para ver los parámetros (Figura 5-25).
+La información de contacto muestra los siguientes parámetros:
+Figura 5-25: Pantalla de información de contacto
+Opción Descripción
+NombreEl nombre de contacto de servicio del cliente.
+Línea de dirección 1, 2, 3La dirección del contacto de servicio del cliente.
+Número de serieEl número de serie de la impresora.
+Número de teléfonoEl teléfono de contacto de servicio del cliente.
+Correo electrónicoEl correo electrónico de contacto de servicio del cliente.
+Tabla 5-20: Descripción de la pantalla de información de contacto
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-29
+
+Sistema operativo CLARiTY
+Uso de la pantalla de comunicación
+Toque Communications (Comunicación) en la pá(Figura 5-26gina de control para). ver los parámetros
+La página de comunicaciones muestra la siguiente información:
+Figura 5-26: Pantalla de comunicaciones
+Opción Descripción
+Puerto de comunicaciones 1El estado del puerto de serie, incluido la velocidad del baudio y el uso. Consulte Uso de la pantalla de Puerto de
+comunicación 1 en la página 5-31.
+TCP/IPLa configuración y el estado del puerto de red de la impresora. Consulte Uso de la pantalla TCP/IP en la página 5-32
+Tabla 5-21: Descripción de la pantalla de comunicación
+5-30 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+Uso de la pantalla de Puerto de comunicación 1
+Toque Communication Port 1 (Puerto de comunicación 1) en la página de comunicación para acceder a los parámetros (Figura 5-27).
+La pantalla de puerto de comunicación 1 muestra los siguientes parámetros:
+Figura 5-27: Pantalla de puerto de comunicaciones 1
+Opción Descripción
+Uso El software conectado al puerto de serie.
+Velocidad en baudiosLa velocidad de baudios de puerto de serie
+Comunicaciones CLARiTY en el puerto de comunicacionesEl estado del puerto de serie.
+Tabla 5-22: Descripción de la pantalla del puerto de comunicación 1
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-31
+
+Sistema operativo CLARiTY
+Uso de la pantalla TCP/IP
+Toque TCP/IP en la página de comunicación para acceder a los parámetros (Figura 5-28).
+La pantalla TCP/IP contiene los siguientes parámetros:
+Figura 5-28: Pantalla de TCP/IP
+Opción Descripción
+IP Address (Dirección IP)La dirección IP de la red.
+Subnet Mask (Máscara de subred)La dirección de máscara de la subred.
+CLARiTY Communications (Comunicaciones de CLARiTY)Los números de puerto de TCP/IP y el estado de red de CLARiTY.
+Tabla 5-23: Descipción de la pantalla TCP/IP
+5-32 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+Opción Descripción
+Comunicaciones de textoEl número de puerto de TCP/IP asignado para las comunicaciones
+de texto.
+Emulación ZPLEl número de puerto TCP/IP asignado para los comandos de emulación ZPL.
+Emulación SATOEl estado de protocolo de comunicación, el número de puerto
+TCP/IP asignado, respuesta del puerto, estado de la red para
+comunicaciones de emulación SATO.
+Tabla 5-23: Descipción de la pantalla TCP/IP (continuación)
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-33
+
+Sistema operativo CLARiTY
+Opción Descripción
+Tabla 5-23: Descipción de la pantalla TCP/IP (continuación)
+Uso de la pantalla de registro de auditoría de producción
+Toque Production Audit Log (Registro de auditoría de producciónpara ver los parámetros () en la pantalla de control Figura 5-29).
+Nota: Esta opción solo está presente si se activa el registro en la impresora utde configuración CLARiTY.ilizando el Administrador
+Nota: También se pueden respaldar los registros en una memoria extraíble USB si se inserta una
+Comunicaciones WolkeEl número de puerto TCP/IP y el estado de la red para las
+comunicaciones Wolke.
+en la impresora.
+Figura 5-29: Pantalla de registro de auditoría de producción
+5-34 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+Uso de la pantalla de cola de actualización de imágenes
+Toque Image Update Queue (Cola de actualizaciópara ver los parámetros (n de imágenes) en la pantalla de control Figura 5-30).
+5.3.1.4Uso de la pantalla de opciones
+No hay opciones disponibles en este momentde CLARiTY.o, se puede introducir una versión futura
+Figura 5-30: Pantalla de cola de actualización de imagen
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-35
+
+Sistema operativo CLARiTY
+5.3.2Uso de la pantalla de base de datos
+Toque en la pantalla Tools (Herramientas) para acceder a la pantalla Databases
+(Bases de datos) (Figura 5-31).
+La pantalla de base de datos muestra los siguientes parámetros:
+Figura 5-31: Pantalla de base de datos
+Opción Descripción
+Interno La lista de trabajos almacenados en la impresora. Los trabajos seleccionados
+se pueden transferir a la memoria extraíble USB (si está disponible).
+El botón Edit (Editar) proporciona la opción de eliminar trabajos de
+la base de datos interna.
+Tabla 5-24: Descripción de la pantalla de base de datos
+5-36 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+Opción Descripción
+Capacidad El número estimado de archivos de trabajo que se podría almacenar en
+la impresora, según el tamaño de los archivos de trabajo existentes y la
+cantidad de bytes de almacenamiento de trabajo restante disponible.
+Externo(a) Los trabajos almacenados en la memoria extraíble USB insertada.
+Los trabajos seleccionados se pueden transferir a una base de datos interna.
+Los trabajos se pueden eliminar de la memoria extraíble USB.
+Nota: Opción únicamente disponible cuando se inserta la memoria extraíble
+USB en la impresora.
+Tabla 5-24: Descripción de la pantalla de base de datos (continuación)
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-37
+
+Sistema operativo CLARiTY
+5.3.3Uso de la pantalla de ayuda
+Toque en la pantalla Tools (Herramientas) para acceder a la pantalla Help (Ayuda)
+(Figura 5-32).
+La pantalla Help (Ayuda) muestra los siguientes parámetros:
+Figura 5-32: Pantalla de ayuda
+Opción Descripción
+Videos tutorialesLos videos tutoriales para tareas específicas y solución básica de problemas. Consulte Uso de la pantalla de videos
+tutoriales en la página 5-39.
+DocumentaciónLa documentación para tareas específicas y soluciones básicas de problemas
+Tabla 5-25: Descripción de la pantalla de ayuda
+5-38 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+5.3.3.1Uso de la pantalla de videos tutoriales
+1.Toque Tutorial Videos (Videos tutoriales) en la pantalla Help (Ayuda) para acceder a los videos tutoriales (Figura 5-33). Seleccione el video requerido para la tarea específica
+y la solución básica de problemas.
+Figura 5-33: Pantalla de videos tutoriales
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-39
+
+Sistema operativo CLARiTY
+5.4Protección por contraseña
+La protección por contraseña de la interfaz del usuario permite diferentprotegido para diferentes caracteres niveles de acceso ísticas de operación. Durante la instalación, puede ajustar la
+selección de contraseña estándar o avanzada utilizando AdministradoCLARiTY. Consulte Manual de servicio Videojet DataFlex 6330 (Número de pieza: 463045).r de configuración de
+Nota: Si no desea tener protección por contraseña, puede seleccionar la opción None (Ninguna).
+El control de la contraseña se puede establecer según el requisito del usuario. Cuando el usuario intenta acceder a una función protegida por contraseña, la interfaz de usuario insta al usuario
+a ingresar la contraseña.
+Cuando se ingresa la contraseña correcta, esa función o menú se torna disponible. El nivel de contraseña permanece activo hasta que el usuario cierra sesión o se agota el tiempo.
+Contraseñas estándar: Por ejemplo, si la función de diagnóstico está protegida por contraseña, cuando el usuario accede al Menú de diagnóstico desplazándose a Tools
+(Herramientas) > Diagnostics (Diagnóstico), CLARiTY insta al usuario a ingresar la contraseña.
+Contraseñas avanzadas: Se le pide al usuario que seleccione el nombre de usuario requerido e ingrese la contraseña asociada.
+Figura 5-34: Pantalla de contraseña
+5.5Impresoras principal/secundarias
+El modo principal/secundario de CLARiTY le peconjuntamente y utilizarlas como un grupo (el grrmite tener hasta cuatro impresoras conectadas upo puede tener sólo una impresora principal).
+Esta sección describe el uso del modo Principal/Secundario en:
+Nivel 1-Selección de trabajo para el grupo
+Nivel 2-Control del grupo
+Si desea obtener más información sobre el modoel manual de mantenimiento. principal/secundario de CLARiTY, consulte
+5-40 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sistema operativo CLARiTY
+5.5.1Selección de trabajo para el grupo
+Utilice la opción Selección de trabajo para el grupo para comprobar que las impresoras del grupo estén imprimiendo el mismo trabajo. Solo se pueden seleccionar trabajos en la impresora
+principal. La impresora principal indica a las secundarias el trabajo que se va a imprimir.
+Cuando utiliza la opción Selección de trabajo para el grupo, la imprinformación adicional, como seesora principal muestra describe a continuación:
+Se muestra un mensaje de fallo en las impresoras secundarias que no respondan a la principal.
+La página Cabezal de impresión (navegue a Tools ((Diagnósticos) > Printhead (Cabezal de impresiónHerramientas) > Diagnostics ) contiene una lista de impresoras en el
+grupo. Presione el nombre de una impresorla impresora seleccionada, como aparece en la a para que aparezca la información sobre Tabla 5-26.
+La pantalla Printhead (Cabezal de impresión) (navegue a Tools (Herramientas) >
+Impresora Descripción
+PrincipalConjunto de botones estándar que permiten ver la información de diagnóstico sobre la impresora así como ver la información sobre
+el nivel Principal/Secundario que se está utilizando
+SecundarioLa información sobre la conexión entre la impry la principalesora secundaria
+Tabla 5-26: Diagnóstico de las impresoras principal/secundaria
+Setup (Configuración) > Printhead (Cabezal de impresiónvarias impresoras secundarias del grupo. Es)) le permite excluir una o ta opción es muy útil si una impresora
+secundaria desarrolla un fallo y usted desea que las demás impresoras continúen imprimiendo el trabajo. En cuanto se haya eliminado el fallo, se puede volver
+a asignar la impresora al grupo.
+5.5.2Control del grupo
+Este nivel de operación (nivel 2) le permite al usuario controlar las impresoras secundarias desde la principal. Igual que con la opción Selección de trabajo para el grupo, solo puede seleccionar
+trabajos en la impresora principal. La impresora principal indique se va a imprimir. Las impresca a las secundarias el trabajo oras secundarias se pueden asignar y excluir del grupo como
+se describe en Selección de trabajo para el grupo en la página 5-41.
+Puede utilizar la impresora principal para cambiaimpresora del grupo.r los parámetros de configuración de cualquier
+La interfaz del usuario de la impresora principal también muestra la siguiente información adicional:
+Información sobre los consumibles de cada impresora del grupo.
+Valores de las opciones Contar lotes y Recuento total para todo el grupo. Valores de recuento total para cada una de las impresoras del grupo.
+Mensajes de fallo y advertencia para las impresoras principal y secundarias (las secundarias mostrarán únicamente sus propios fallos y advertencias).
+Información sobre el diagnóstico de cada impresora del grupo.
+Videojet DataFlex 6330 Manual del operario - Rev. AA5-41
+
+Sección 6Editor de trabajos
+Este capítulo incluye los siguientes temas:
+Creación y agregado de nuevos trabajos
+Visualización del trabajo o imagen actual
+Selección de un nuevo trabajo para impresión
+Campos que el usuario puede editar
+Cambio de la posición o el aspecto de la impresión
+Eliminación de un trabajo de la base de datos de trabajos
+6.1Creación y agregado de nuevos trabajos
+Los trabajos de impresión se crean offline (fuera de línea) usando el software de diseño de imágenes CLARiSOFT que se ejecuta en una PC.
+Este es un paquete tipo "lo que ve es lo que obtiene" (WYSIWYG), que le permite diseñar el aspecto y la sensación de una imagen impresa y definir el contenido de los campos especiales
+como los cálculos complejos de fecha límite de venta.
+Cuando el trabajo se ha diseñado con CLARiSOFT,en el disco de la PC. Los trabajos se guarda con un nombre de trabajo exclusivo se transfieren a la base de datos local conectando la PC a la
+impresora mediante un cable RS232 o un cable Ethernet.
+Como alternativa, la impresora tiene capacidad padirectamente desde un dira descargar una base despositivo USB. Se pueden crear los datos de 'Trabajos' trabajos en CLARiSOFT y guardarlos
+en un dispositivo USB, listos para ser descargadonecesidad de llevar una computadora portátil al área de producción.s directamente a la impresora. Esto elimina la
+Para obtener información acerca de cómo crear imágenes, consulte la ayuda en línea suministrada con CLARiSOFT. Para obtener más información acerca de cómo transferir imágenes a la
+impresora, consulte el Manual de servicio.
+Una vez guardados los trabajos en la base de datos local de la imLuego, los trabajos se seleccionan presora, puede retirarse la PC. para impresión como se explica en Selección de un nuevo
+trabajo para impresión en la página 6-4.
+La impresora se suministra con dos imágenes de trabajo estándar (por defecto):
+Texto de 4 líneas por defecto
+Código de fecha por defecto
+Es posible cambiar los detalles de estas dos imágenes de trabajo para adecuarlas a sus propias necesidades. Consulte en el Visualización del trabajo o imagen actual en la página 6-2 las
+instrucciones acerca de cómo cambiar una imagen.
+La información variable como los códigos de lote o las fechas límite de venta se puede introducir utilizando un teclado auxiliar del tipo de un teléfono móvil descrito en Campos que el usuario
+puede editar en la página 6-6.
+Videojet DataFlex 6330 Manual del operario - Rev. AA 6-1
+
+Editor de trabajos
+6.2Visualización del trabajo o imagen actual
+El nombre del trabajo actual se muestra en la página de inicio (la línea de producción, asegúrese de que elFigura 6-1). Antes de arrancar trabajo actual sea el que desea imprimir.
+Figura 6-1: Pantalla de inicio de CLARiTY
+6-2 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Editor de trabajos
+Para ver más detalles del trabajo actual, haga lo siguiente:
+1.Toque el área del trabajo actual en la pantalla de inicio. De esta forma aptrabajo, como se muestra en la arecen los detalles del Figura 6-2.
+2.Toque en la barra de navegación, o para volver a la pantalla de inicio.
+Figura 6-2: Pantalla de detalles del trabajo actual
+Videojet DataFlex 6330 Manual del operario - Rev. AA 6-3
+
+Editor de trabajos
+6.3Selección de un nuevo trabajo para impresión
+1.Toque en la pantalla de inicio. Aparece la lista de los trabajos disponibles
+(Figura 6-3).
+Nota: Al seleccionar un trabajo, se muestra una vista previa del trabajo a la derecha de la pantalla.
+Figura 6-3: Lista de trabajos
+6-4 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Editor de trabajos
+2.Toque el nombre del trabajo requerido de la lista, como se muestra en la Figura 6-4
+y luego toque .
+Si la lista es larga, aparece una "barra de desplazamiento" a la derede flecha arriba o abajo de la barra de desplazamiento para recorrer la lista.cha. Toque los botones
+Como alternativa, puede escribir el nombre del trabajo con el teclado auxiliar.
+Si el trabajo requiere información de entrada del usuario (es decir, variables de trabajo, como códigos de lote o fecha de vencimiento), la IU le solicitará lo mismo. Consulte Cambio del
+texto variable y la información de fecha en la página 6-6
+3.Toque para aceptar la información y obtener
+una vista previa de la imagen.
+4.Toque en la página de vista preliminar para confirmar los detalles.
+El nuevo trabajo pasa a ser el actual.
+Nota: El usuario puede seleccionar una nueva imagen o un nuevo trabajo mientras la impresora está funcionando o fuera de línea. El nuevo trabajo reemplaza al actual solo después de que el usuario
+ejecute el paso 4.
+5.Toque para volver a la pantalla de inicio.
+6.Para salir del menú de selección de trabajo en cualquier etapa sin efectuar ningún cambio,
+toque .
+Figura 6-4: Selección de trabajos
+Videojet DataFlex 6330 Manual del operario - Rev. AA 6-5
+
+Editor de trabajos
+6.4Campos que el usuario puede editar
+Algunos trabajos contienen variables relacionadas con los mismos. Las variables del trabajo son partes de la imagen que se pueden cambiar. Existen tres tipos de variables del trabajo:
+Campos variables de TEXTO.Por ejemplo, estos campos se usan para códigos de lote, nombres de productos y
+otros rótulos de texto.
+Campos variables de FECHA.Por ejemplo, estos campos se usan para fechas límite de venta.
+Campos variables de CONTADOR.Le permite modificar el valor de inicio de un contador.
+Si un trabajo seleccionado incluye información ingrese o edite la información requerida. variable, CLARiTY le solicita al usuario que
+Nota: Cada variable dispone de una casilla de verificación. Dicha casilla está inicialmente sin marcar.
+Cuando el usuario introduce los datos variables y toca ,
+CLARiTY marca automáticamente la casilla. El usuario puede continuar con el paso siguiente
+solo cuando todas las casillas estén marcadas.
+6.4.1Cambio del texto variable y la información de fecha
+Para editar un campo de usuario, realice el siguiente procedimiento:
+1.Cuando se selecciona un trabajo, se muestra la lista de campos del trabajo que el usuario puede editar.
+2.Toque el campo requerido de la lista para seleccionarlo (el primerseleccionado automáticamente). Los datos por defecto correspondientes a ese campo o de la lista está
+aparecen en la ventana de vista previa (Figura 6-5).
+3.Si la información de la ventana de vista previaSi desea cambiar la información, realice los pasos 4. es la que desea imprimir, vaya al paso 6.
+4.Toque para modificar la información.
+Figura 6-5: Ventana de código de fecha por defecto
+6-6 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Editor de trabajos
+5.Para los campos de texto, realice las siguientes tareas:
+a.Utilice el teclado para introducir los datos.El sistema operativo de CLARiTY soporte varios idiomas estándar para usar con la
+información de texto 'introducida por el usuario'.
+b.Toque la Tecla de selección de idioma para acceder a las opciones de idioma disponibles (consulte Figura 6-6).
+c.Las funciones del teclado son las mismas de las del teclado de una computadora. Realice los cambios necesarios en la información.
+Tecla de selección de idioma
+Figura 6-6: Teclado por defecto
+Videojet DataFlex 6330 Manual del operario - Rev. AA 6-7
+
+Editor de trabajos
+Para los campos de fecha, realice las siguientes tareas:
+d.Toque la ventana de datos para que aparezca la página de calendario (consulte Figura 6-7).
+e.Toque ó para cambiar el mes y el año.
+f.Toque la fecha del calendario para elegir el día del mes y luego toque .
+Nota: Todas las fechas que no están disponibles para selección debido a las reglas predefinidas que puedan haberse configurado en CLARiSOFT están atenuadas.
+6.Toque cuando esté satisfecho de que la información de la ventana de datos sea correcta. La interfaz de usuario marca la casilla de verificación. Si hay
+solo dos campos en el trabajo que el usuario pueda editar, la interfaz de usuario muestra el segundo campo automáticamente. Si hay tres o más campos, muestra la lista de campos
+que el usuario puede editar, de modo que pueda seleccionar uno de ellos.
+Cuando toque en el último calas casillas estén marcadas), la interfaz de usmpo para este trabajo (y todas uario muestra la vista preliminar de la imagen.
+7.En la vista preliminar, realice una de las siguientes acciones:
+Si está satisfecho con la imagen y desea ejecutar el nuevo trabajo, toque . Los productos se imprimirán con la nueva imagen
+hasta que realice cambios adicionales o seleccione un nuevo trabajo.
+Figura 6-7: Página de calendario
+6-8 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Editor de trabajos
+Si no está listo para imprimir el trabajo, puede dejar esta pantalla como está.
+Puede tocar en una etapa posterior para seleccionar
+el trabajo en ese momento.
+Si desea volver atrás por las pantallas de selección del trabajo para realizar cambios
+en los datos variables, toque .
+Para cancelar la selección del trabajo en su totalidad, toque .
+6.4.2Tocar para editar
+Para actualizar y cambiar rápida y fácilmente los campos del usuario en un trabajo de impresión, el usuario puede usar la función de Tocar para editar.
+Nota: La función Tocar para editar se apaga de manera predeterminada y se debe activar en el Administración de configuración de CLARiTY.
+1.Seleccione la barra de detalles del trabajo actual para obtener una vista preliminar del trabajo.
+2.Toque para ver los campos que el usuario puede editar.
+3.El trabajo se abre, con los campos que el usuario puede editar destacados.
+Nota: Solo los trabajos que cuentan con campos que el usuario puede editar se pueden editar utilizando la función Tocar para editar. Estos se ajustan en CLARiSOFT durante la
+Figura 6-8: Ventana de código de fecha por defecto
+creación del mensaje.
+4.Para editar un campo de usuario, toque el campo del usuario.
+Videojet DataFlex 6330 Manual del operario - Rev. AA 6-9
+
+Editor de trabajos
+5.El editor del campo de usuario adecuado, segúpara la actualización.n el tipo de campo de usuario, se muestra
+Actualice el campo del usuario cuando sea necesario y toque
+.
+6.Si existen campos de usuario adicionales, repita los pasos 4 y 5 para cada campo.
+7.Toque después de editar todos los campos de usuario
+requeridos. El trabajo se actualizará en la impresora y se muestra en la barra de detalles
+del trabajo actual luego de la siguiente impresión.
+6.5Cambio de la posición o el aspecto de la impresión
+Es posible cambiar y aplicar las siguientes funcde la imagen de impresión:iones para modificar la calidad o la posición
+Posición de impresión
+Orientación de impresión
+Nivel de oscuridad de la imagen impresa
+Retardo de impresión (solo en aplicaciones de modo intermitente)
+Velocidad de impresión (solo en aplicaciones de modo intermitente)
+Posición de impresión del cabezal (solo en aplicaciones de modo continuo)
+Impresión entrelazada
+Los parámetros de impresión se pueden ver y del cabezal de impresiócambiar mediante la pán, desplazándote por gina de configuración Tools (Herramientas) > Setup (Configuración) >
+Printhead (Cabezal de impresión).
+La Figura 6-9 muestra la página de configuración dea impresoras instaladas para funcionar con una máquina de empaque de movimiento l cabezal de impresión correspondiente
+intermitente (imprime solo cuando el material sobre el que se imprime está estacionario).
+Figura 6-9: Pantalla de configuración del cabezal de impresión para aplicaciones de movimiento
+6-10 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Editor de trabajos
+La Figura 6-10 muestra la pantalla de configuración del cabezal de impresión correspondiente a impresoras instaladas para funcionar con una máquina de empaque de movimiento continuo
+(imprime mientras el material sobre el que se imprime se está moviendo).
+Figura 6-10: Pantalla de configuración del cabezal de impresión para aplicaciones de movimiento continuo
+Videojet DataFlex 6330 Manual del operario - Rev. AA 6-11
+
+Editor de trabajos
+6.5.1Cambio de la posición de la impresión
+Si la imagen no se imprime en la posición correcta sobre la puede cambiar dicha posición variando los registros horizontal o vertical. Esto le permite mover película utilizada en los envases,
+la imagen dentro de la ventana del área de impresión de la máquina y a su ubicación sin mover la impresora sobre su sohacer pequeños ajustes porte. Si la imagen se desplaza fuera de la
+ventana de impresión o del ancho de la cinta disponible, no se imprimirá parte de la misma.
+El registro vertical determina la posición a través del ancho de la película utilizada en los envases o el cabezal de impresión.
+El registro horizontal determina la posición utilizada en los envases.a lo largo de la longitud de la película
+Para cambiar la posición de impresión, haga lo siguiente:
+1.Vaya a Tools (Herramientas) > Setup (ConfiguracióSe muestra la pantalla de cabezal de impresión (n) > Printhead (Cabezal de impresión). Figura 6-9 en la página 6-10).
+2.Toque ya sea el botón Registro horizontal o Regidel cabezal de impresión para abrir la páginastro vertical de la pantalla de configuración de edición de los parámetros requeridos.
+3.Use los botones ó para realizar ajustes pequeños a los valores de los parámetros.
+Como alternativa, realice una de las siguientes acciones para hacer cambios en los parámetros:
+Escriba un nuevo valor con el teclado auxiliar.
+Toque los botones Mínimo, Máximo o Por defecto para seleccionar los valores máximo, mínimo o predeterminado (estándar).
+4.Toque para guardar los ajustes.
+5.Toque para volver a la pantalla de inicio.
+Nota: Pueden hacerse los mismos ajustes mediante el botón de la pantalla de inicio.
+Figura 6-11: Registro vertical
+6-12 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Editor de trabajos
+6.5.2Cambio del nivel de oscuridad de la impresión
+Si el nivel de oscuridad de la impresión es demasiado abajo, causa que la imagen parezca muy tenue.
+Si el nivel es demasiado alto, los bordes de la imagen impresa aparecen borrosos. Asimismo, esto exigirá en exceso al cabezal de impresión y acortará su vida útil.
+Elija el valor más bajo de oscuridad que permita lograr una calidad de impresión satisfactoria.
+Para ajustar la oscuridad de impresión, haga lo siguiente:
+1.Vaya a Tools (Herramientas) > Setup (ConfiguracióSe muestra la pantalla de cabezal de impresión (n) > Printhead (Cabezal de impresión). Figura 6-9 en la página 6-10).
+2.Toque Print Darkness (Imprimir oscuridad).
+3.Use los botones ó para realizar ajustes pequeños a los valores de los parámetros.
+Como alternativa, realice una de las siguientes acciones para hacer cambios en los parámetros:
+Escriba un nuevo número con el teclado auxiliar.
+Toque los botones Mínimo, Máximo o Por defecto para seleccionar los valores máximo, mínimo o predeterminado (estándar).
+4.Toque para guardar los ajustes.
+5.Toque para volver a la pantalla de inicio.
+6.5.3Ajuste del retardo de impresión
+Nota: Esta función se puede activar solo en aplicaciones de modo intermitente.
+El retardo de impresión es el tiempo que la impresora espera entre la recepción de una señal de impresión y el inicio de la misma. Este tiempo puede aumentarse para asegurarse de que
+el material sobre el que se va a imprimir esté completamente detenido antes de que comience la impresión. Si la impresión se produce mientras el material sobre el que se va a imprimir
+todavía está en movimiento, la imagen resultante puede que aparezca alargada o aplastada. Para aumentar al máximo la producción, el retardo de impresión debe ajustarse al mínimo
+posible que produzca impresiones consistentes.
+Para cambiar el retardo de impresión, haga lo siguiente:
+1.Vaya a Tools (Herramientas) > Setup (ConfiguracióSe muestra la pantalla de cabezal de impresión (n) > Printhead (Cabezal de impresión). Figura 6-9 en la página 6-10).
+2.Seleccione el parámetro Retardo de impresión para abrir la configuración de parámetros de dicho retardo.
+3.Introduzca un nuevo valor con el teclado auxiliar.
+4.Toque para guardar los ajustes del parámetro.
+5.Toque para volver a la pantalla de inicio.
+Videojet DataFlex 6330 Manual del operario - Rev. AA 6-13
+
+Editor de trabajos
+6.5.4Configuración de la velocidad de impresión
+Nota: Esta función se puede activar solo en aplicaciones de modo intermitente.
+La cinta de transferencia térmica utilizada por la impresora se adhiere más rápidamente a algunos tipos de materiales que a otros. La velocidad de impresión se puede reducir para
+mejorar la adherencia y la calidad de impresproducción en términos de paquetes por minuión, así como aumentarse para lograr mayor to, al reducir el tiempo del ciclo total de
+impresión.
+Para cambiar la velocidad de impresión, haga lo siguiente:
+1.Vaya a Tools (Herramientas) > Setup (ConfiguracióSe muestra la pantalla de cabezal de impresión (n) > Printhead (Cabezal de impresión). Figura 6-9 en la página 6-10).
+2.Toque Print Speed (Velocidad de impresió(Velocidad de impresión).n). Se muestra la pantalla Print Speed
+3.Introduzca un nuevo valor con el teclado auxiliar.
+4.Toque para volver a la pantalla de inicio.
+6.5.5Configuración de la posición del cabezal de impresión
+Nota: Esta función se puede activar solo en aplicaciones de modo continuo.
+Al imprimir de manera continua, el cabezal se imprime contra el rodillode impresión presiona el material en que , como se muestra en la Figura 6-12.
+Es posible cambiar el ángulo del cabezal contra el material enposición del cabezal. El ángulo afec que se imprime, variando la ta a la calidad de la impresión. Si el ángulo no es el adecuado,
+la impresión resultante puede aparecer muy tenue.
+Para encontrar la posición adecuada del cabezal, haga lo siguiente:
+1.Vaya a Tools (Herramientas) > Setup (Configuraciómuestra la pantalla de cabezal de impresión (n) > Printhead (Cabezal de impresión). Se Figura 6-9 en la página 6-10).
+2.Toque Print Position (Posición de la impresión).
+3.Introduzca un nuevo valor con el teclado auxiliar.
+1
+4
+2
+3
+1. Cabezal de impresión2. Material sobre el que se imprime3. Rodillo4. Ajuste de la posición del cabezal de impresión
+Figura 6-12: Posición del impresión del cabezal
+6-14 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Editor de trabajos
+Nota: Debe variar los parámetros de posición de impresión en saltos de 1 mm. El parámetro de posición de impresión está en unidades de 0,01 mm, de modo que un cambio de 100 unidades
+mueve el cabezal de impresión 1 mm.
+Examine las muestras de impresión de cada posición hasta encontrar la calidad óptima a la velocidad de impresión requerida.
+4.Toque para volver a la pantalla de inicio.
+6.5.6Configuración de la impresión intercalada
+Esta función le permite seleccionar un modo de impresión bque reduce a la mitad el consumo de cinta de la máquina.orrador de calidad inferior
+Para configurar el modo de impresión intercalada, realice el siguiente procedimiento:
+1.Vaya a Tools (Herramientas) > Setup (ConfiguracióSe muestra la pantalla de cabezal de impresión (n) > Printhead (Cabezal de impresión). Figura 6-9 en la página 6-10).
+2.Toque Ribbon Saving Mode (Modo de ahorro (Imágenes intercaladas). Seleccione para ajustar esta de cinta) y seleccione Interleaved Images
+función.
+3.Toque para volver a la pantalla de inicio.
+6.6Eliminación de un trabajo de la base de datos de trabajos
+Para eliminar los trabajos que ya no necesita, haga lo siguiente:
+1.Vaya a Tools (Herramientas) > Database (Base de datos).
+2.Seleccione la base de datos requerida (interna o externa) y toque
+.
+3.De este modo aparece la pantalla de lista de trabajos interna (contiene una lista de todos los trabajos de impresión disponibles, junto con los detalles Figura 6-13). Esta página
+del espacio disponible para guardar nuevos trabajos.
+4.Toque el nombre del trabajo que desea eliminar del trabajo en la ventana de vide la lista de trabajos. Aparece la imagen sta preliminar. Asegúrese de que solo se eliminen los trabajos
+seleccionados.
+Videojet DataFlex 6330 Manual del operario - Rev. AA 6-15
+
+Editor de trabajos
+Figura 6-13: Ventana de eliminación de la base de datos
+5.Toque para eliminar el trabajo.
+6.Confirme el trabajo a eliminar (Figura 6-14).
+7.Toque para eliminar el trabajo.
+8.Repitalos pasos 3 al 7 para eliminar los demás trabajos que no sean necesarios.
+9.Toque para volver a la pantalla de inicio.
+Figura 6-14: Pantalla de confirmación
+6-16 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sección 7Mantenimiento
+Introducción
+El mantenimiento de la impresora incluye los procedimientos quo un técnico de servicio. Este capítulo describe e puede efectuar un operador las tareas de mantenimiento que pueden realizar
+los operadores de la impresora. En el Manual demantenimiento que deben ef servicio se describe el resto de tareas de ectuar sólo los técnicos y el personal de mantenimiento cualificado.
+Esta sección proporciona información sobre la tarea de mantenimiento que el operador puede realizar:
+Mantenimiento general
+7.1Mantenimiento general
+Videojet DataFlex 6330 requiere mantenimiento en curso mínimo.
+Nota: En entornos sucios o de condiciones severas es posible que sea necesario acortar el intervalo de tiempo especificado para realizar las rutinas de mantenimiento preventivo.
+Lleve a cabo las siguientes inspecciones y realice la medición según la frecuencia programada.
+PRECAUCIÓN
+DAÑOS AL EQUIPO El uso de un kit de limpieza incompatible puede ocasionar graves daños a su impresora. Tales
+daños no están cubiertos por la garantía de la misma. Use solo los kits de limpieza aprobados por el distribuidor.
+Punto de verificación de inspección Frecuencia Medidas
+Pantalla de CLARiTY
+Verifique si la pantalla táctil está limpia Cuando sea necesario. Limpie la pantalla paño suave y seco o con una táctil con un
+almohadilla de algodón.
+Verifique si la superficie de la pantalla de CLARiTY Cuando sea necesario. Limpie la superficie de la pantalla CLARiTY con un paño suave y seco
+está limpia o con una almohadilla de algodón.
+Cabezal de impresión
+Cabezal de impresiónCon cada cambio de cinta (frecuencia Limpie con hisopos o paños previamente embebidos
+mínima)Nota: En entornos sucios disponibles en los kits de limpieza proporcionados. Para obtener más
+o de condiciones severas es posible que sea información acerca de la limpieza, consulte Limpieza del cabezal de
+necesario acortar el intervalo de tiempo impresión y la caja de luz en la página 7-2.
+especificado entre las limpiezas
+Tabla 7-1: Programa de mantenimiento general
+Videojet DataFlex 6330 Manual del operario - Rev. AA7-1
+
+Mantenimiento
+7.1.1Limpieza del cabezal de impresión y la caja de luz
+Punto de verificación de inspección Frecuencia Medidas
+Tabla 7-1: Programa de mantenimiento general (continuación)
+Para mantener la máxima calidad de impresiófunciona a su máximo rendimiento, debería limpin y garantizar que la detección de iAssure ar el cabezal de impresión y la caja de luz
+cada vez que se cambia la cinta.
+Nota: En entornos sucios o de condiciones severas es posible que sea necesario acortar el intervalo
+Caja de luzCon cada cambio de cinta (frecuencia Limpie con hisopos o paños previamente embebidos
+mínima)Nota: En entornos sucios disponibles en los kits de limpieza proporcionados. Para obtener más
+o de condiciones severas es posible que sea información acerca de la limpieza, consulte Limpieza del cabezal de
+necesario acortar el intervalo de tiempo impresión y la caja de luz en la página 7-2.
+especificado entre las limpiezas
+Rodillo de separaciónSegún se requiera (por ejemplo, cuando se ha Limpie con hisopos o paños previamente embebidos
+transferido tinta al rodillo) disponibles en los kits de limpieza proporcionados.
+Cable
+Compruebe que todos los conectores fijados Cuando sea necesario.En caso necesario, atorníllelos de nuevo.
+con tornillos están correctamente apretados.
+de tiempo especificado entre las limpiezas.
+Para limpiar el cabezal de impresión y la caja de luz, haga lo siguiente:
+1.Toque el botón de la página de CLARiTY.LÍNEA. La barra de estado cambia a FUERA DE
+PRECAUCIÓN
+DAÑOS AL EQUIPO El dispositivo debe estar desenchufado en el momento de instalar, conectar o desconectar los
+cabezales de impresión.
+PRECAUCIÓN
+DAÑOS AL EQUIPO El cabezal de impresión puede calentarse durante el funcionamiento normal. Tenga en cuenta
+las precauciones necesarias antes de intentar tocar el cabezal de impresión.
+7-2 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Mantenimiento
+2.Coloque el interruptor de encendido deO (desconectado).l controlador CLARiTY en la posición
+Nota: Cuando se apaga la máquina, el cabezal puede hacerse girar sobre sus goznes para separarlo
+del cuerpo de la impresora a fin de obtener mejor acceso para limpiar la línea de impresión.
+3.Desmonte el casete y déjelo a un lado.
+Nota: No intente limpiar el cabezal de impresión con el casete colocado.
+4.Limpie delicadamente la línea de píxeles del cabezal de (Figura 7-1), los rodillos blancos del casete y el rodillo de separación usando los hisopos impresión de arriba hacia abajo
+o paños proporcionados con la impresora. Elde limpieza Videojet apro kit de limpieza contendrá paños o hisopos bados previamente embebidos.
+Nota: Espere un minuto a que se evapore el exceso de líquidos. Si no espera este tiempo, el cabezal
+de impresión puede resultar dañada como consecuencia de una descarga térmica.
+Figura 7-1: Limpieza del cabezal de impresión
+PRECAUCIÓN
+DAÑOS AL EQUIPO Use kits de limpieza Videojet aprobados para limpiar el cabezal de impresión y la caja de luz.
+No utilice aire a alta presión ni algodón.
+PRECAUCIÓN
+DAÑOS AL EQUIPONo toque el cabezal de impresión con objetos afilados.
+PRECAUCIÓN
+DAÑOS AL EQUIPONo aplique demasiada fuerza sobre el cabezal de impresión y la caja de luz mientras lo limpia
+ya que esto puede causar daños y podrá invalidar la garantía.
+Videojet DataFlex 6330 Manual del operario - Rev. AA7-3
+
+Mantenimiento
+5.Limpie la cubierta de la caja de luz (Figura 7-2atrás utilizando los hisopos y los paños de limpieza proporcionados con la impresora. ) con movimientos hacia adelante y hacia
+El kit de limpieza contendrá paños o hisopos de limpieza Videojet aprobados previamente embebidos.
+Nota: Espere un minuto a que se evapore el exceso de líquidos. Si no espera este tiempo, la caja
+de luz puede resultar dañada como consecuencia de una descarga térmica.
+6.Vuelva a colocar el casete y asegúrelo en su sitio.
+7.Coloque el interruptor de encendido del controlador CLARiTY en la posición I (conectado).
+Se terminó la limpieza del cabezal de impresión.
+Figura 7-2: Limpieza de la cubierta de la caja de luz
+7-4 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Sección 8Solución de problemas
+Introducción
+Esta sección contiene información para usuariosproblemas. En esta sección contiene la siguiente información: sobre diagnóstico de fallos y solución de los
+Fallos de la impresora
+Fallas de impresión
+Errores de la pantalla CLARiTY
+Mensajes de error de CLARiTY
+8.1Fallos de la impresora
+Mensaje de error
+Soluciones
+Casete abiertoEl casete no está completamente asentadoEmpuje el casete hasta que haga clic en su lugar.
+Posibles causas El pestillo del casete no esté bien ajustadoAjuste el pestillo del casete.
+El imán del sensor del casete no está en la placa Vuelva a colocar el imán del casete.
+base del casete
+Sensor del casete defectuosoReemplace la PCB del cabezal de impresión.
+Rotura de la cintaLa cinta no se ha instalado correctamenteVuelva a instalar la cinta según el diagrama de carga de la cinta que se encuentra en el
+casete.
+Cinta rota o defectuosaVuelva a instalar un rollo de cinta nuevo o existente.
+Ajustes excesivos de Oscuridad de impresión Vaya a Tools (Herramientas) > Setup (Configuración) > Printhead (Cabezal de
+y/o Fuerza de impresiónimpresión) y configure los ajustes de Oscuridad de impresión y Fuerza de
+impresión en los valores predeterminados. Siga los resultados y haga los ajustes
+correspondientes. Se recomienda usar el menor ajuste posible a medida que llega
+a una calidad de impresión aceptable.
+La impresora no está bien alineada con la placa Asegúrese de que la impresora y la alineación encuadren con la placa de
+de impresión o el rodillo de separación impresión o el rodillo de separación. Use las cuñas entre la impresora y la
+placa de montaje si es necesario.
+La cinta está demasiado floja al cargar el caseteGire los mandriles para que la cinta no esté tan floja.
+Tabla 8-1: Fallos de la impresora
+Videojet DataFlex 6330 Manual del operario - Rev. AA 8-1
+
+Solución de problemas
+Mensaje de error
+Soluciones
+Posibles causas
+La cinta está debajo del rodillo de separación Asegúrese de que la cinta está entre el cabezal de impresión y el rodillo de
+cuando se inserte el caseteseparación cuando se inserte el casete. Tabla 8-1: Fallos de la impresora (continuación)
+Casete dañadoInspeccione el casete para ver que no haya componentes dañados como placa base,
+rodillos de casete, mandril, pasadores de mandril y conos de fricción. Asegúrese
+de que no haya componentes doblados o mal alineados. Reemplace los
+componentes si fuera necesario.
+Faltan componentes en el caseteAdemás de los principales componentes del casete, asegúrese de que haya conos
+de fricción y ballestas. Reemplace los componentes si fuera necesario.
+Final del carreteReemplace el carrete de la cinta.
+Ajustes de cinta incorrectosVaya a Tools (Herramientas) > Setup (Configuración) > Consumables (Consumibles)
+y asegúrese de establecer los ajustes de cinta correctos para la cinta que utiliza.
+La cinta está atascada en el sustrato y está siendo jaladaAsegúrese de que el sustrato no esté pegajosa. Intente bajar la Oscuridad
+de impresión y/o Fuerza de impresión si fuera necesario.
+Únicamente modo intermitente: Intente aumentar la Velocidad de
+impresión.
+Únicamente modo intermitente: El sustrato se Vaya a Tools (Herramientas) > Setup (Configuración) > Printhead (Cabezal de
+mueve mientras la impresora está imprimiendo impresión). Si el sustrato no se ajusta antes de que la impresora comience a imprimir,
+ajuste la Demora de impresión. Si el sustrato comienza a avanzar antes
+de que la impresora termine de imprimir, aumente la Velocidad de impresión.
+Error de cintaEl carrete de la cinta está demasiado descentrado.Reemplace la cinta.
+Hay etiquetas de cinta en el núcleo de enrollado Elimine las etiquetas y enrosque prolijamente el carrete de toma.
+que afecta el sistema de calibración de cinta
+Cinta bajaDeberá sustituir la cinta prontoReemplace la cinta.
+8-2 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Solución de problemas
+Mensaje de error
+Soluciones
+Posibles causas
+Arrastre de la cintaÚnicamente modo intermitente: El sustrato se Vaya a Tools (Herramientas) > Setup (Configuración) > Printhead (Cabezal de Tabla 8-1: Fallos de la impresora (continuación)
+mueve mientras la impresora está imprimiendo impresión). Si el sustrato no se ajusta antes de que la impresora comience a imprimir,
+ajuste la Demora de impresión. Si el sustrato comienza a avanzar antes
+de que la impresora termine de imprimir, aumente la Velocidad de impresión.
+La cinta está atascada en el sustrato y está siendo jaladaAsegúrese de que el sustrato no esté pegajosa.
+Intente bajar la Oscuridad de impresión y/o Fuerza de impresión si fuera necesario.
+Únicamente modo intermitente: Intente aumentar la Velocidad de
+impresión.
+La cinta se afloja por un casete dañadoInspeccione el casete para ver que no haya componentes dañados como placa base,
+rodillos de casete, mandril, pasadores de mandril y conos de fricción. Asegúrese
+de que no haya componentes doblados o mal alineados. Reemplace los
+componentes si fuera necesario.
+La cinta se dobla/arruga.La impresora no está bien alineada con la placa de Asegúrese de que la impresora y la alineación encuadren con la placa de
+impresión o el rodillo de separación impresión o el rodillo de separación. Use las cuñas entre la impresora y la
+placa de montaje si es necesario.
+Rodillo de sepao dañadoración sucio Limpie y reemplace si fuese necesario.
+El soporte o el eje del rodillo separador están Revise y reemplace estos componentes si fuese necesario.
+doblados/dañados
+Rodillos de casete sucio o dañadoLimpie y reemplace si fuese necesario.
+Casete dañadoInspeccione el casete para ver que no haya componentes dañados como placa base,
+rodillos de casete, mandril, pasadores de mandril y conos de fricción. Asegúrese de
+que no haya componentes doblados o mal alineados.
+Videojet DataFlex 6330 Manual del operario - Rev. AA 8-3
+
+Solución de problemas
+Mensaje de error
+Soluciones
+Posibles causas
+Ajustes excesivos de Oscuridad de impresión Vaya a Tools (Herramientas)(Configuración) > Setup > Printhead (Cabezal de
+y/o Ajustes de fuerza de impresión impresión) y configure los ajustes de Oscuridad de impresión y Fuerza Tabla 8-1: Fallos de la impresora (continuación)
+de impresión en los valores predeterminados. Revise que la cinta no
+esté plegada/arrugada y ajuste según corresponda. Se recomienda usar el menor
+ajuste posible a medida que llega a una calidad de impresión aceptable.
+Ajustes de cinta incorrectosVaya a Tools (Herramientas)(Configuración) > Setup > Consumables (Consumibles)
+y asegúrese de establecer los ajustes de cinta correctos para la cinta que utiliza.
+Falla en la calibraciónLa cinta no se ha instalado correctamente.Vuelva a instalar la cinta según el diagrama de carga de la cinta que se encuentra
+en el casete.
+El diámetro del carrete de la cinta no tiene las medidas Utilice un carrete de cinta correcto.
+adecuadas
+Ajustes de cinta incorrectosVaya a Tools (Herramientas) > Setup (Configuración) > Consumables (Consumibles)
+y asegúrese de establecer los ajustes de cinta correctos para la cinta que utiliza.
+Casete dañadoInspeccione el casete para ver que no haya componentes dañados como placa base,
+rodillos de casete, mandril, pasadores de mandril y conos de fricción. Asegúrese
+de que no haya componentes doblados o mal alineados. Reemplace los
+componentes si fuera necesario.
+PCB detector de cinta sucia y/o LED emisoresLimpie y seque, aplicador de espuma o aire comprimido con alcohol isopropílico
+al 70%.
+Falla en los LED emisoresCon la impresora OFFLINE (FUERA DE LÍNEA), pruebe los LED desplazándose
+hasta Tools (Herramientas) > Diagnostics (Diagnóstico) > Printhead (Cabezal de
+impresión) > Outputs (Salidas)los LED de calibración ópticos. Asegúrese y cambie
+de que todos los LED enciendan. Reemplace la PCB del cabezal de impresión
+según sea necesario.
+8-4 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Solución de problemas
+Mensaje de error
+Soluciones
+Posibles causas
+Tabla 8-1: Fallos de la impresora (continuación)
+Falla en la calibración La cinta no se ha instalado correctamenteVuelva a instalar la cinta según el diagrama de carga de la cinta que se encuentra en el
+óptica/sensor de calibración casete.
+óptica sucio El diámetro del cinta no tiene las medidas carrete de la Utilice un carrete de cinta correcto.
+adecuadas
+Ajustes de cinta incorrectosVaya a Tools (Herramientas) > Setup (Configuración) > Consumables (Consumibles)
+y asegúrese de establecer los ajustes de cinta correctos para la cinta que utiliza.
+Casete dañadoInspeccione el casete para ver que no haya componentes dañados como placa base,
+rodillos de casete, mandril, pasadores de mandril y conos de fricción. Asegúrese de
+que no haya componentes doblados o mal alineados. Reemplace los componentes si
+fuera necesario.
+PCB detector de cinta sucia y/o LED emisoresLimpie y seque, aplicador de espuma o aire comprimido con alcohol isopropílico
+al 70%.
+Falla en los LED emisoresCon la impresora OFFLINE (FUERA DE LÍNEA), pruebe los LED desplazándose
+hasta Tools (Herramientas) > Diagnostics (Diagnóstico) > Printhead (Cabezal de
+impresión) > Outputs (Salidas)los LED de calibración ópticos. Asegúrese y cambie
+de que todos los LED enciendan. Reemplace la PCB del cabezal de impresión
+según sea necesario.
+Videojet DataFlex 6330 Manual del operario - Rev. AA 8-5
+
+Solución de problemas
+Mensaje de error
+Soluciones
+Posibles causas
+Tabla 8-1: Fallos de la impresora (continuación)
+Posición del cabezal de El motor del cabezal de impresión se detiene debido Compruebe y ajuste la placa de impresión.
+impresión a que la placa de impresión no está colocada
+correctamente
+La deslizadera lineal está obstruida o atascadaLimpie y seque, aire comprimido y sustituya si es necesario.
+Correas y/o poleas gastadas o dañadasPóngase en contacto con un ingeniero de mantenimiento.
+Falta un imán en el montaje del cabezal de impresiónPóngase en contacto con un ingeniero de mantenimiento.
+Sensor de posición del cabezal de impresión Con la impresora OFFLINE (FUERA DE LÍNEA), pruebe desplazándose hasta Tools
+defectuoso (Herramientas) > Diagnostics (Diagnóstico) > Printhead (Cabezal de impresión) > Outputs
+(Salidas) y cambie la posición del cabezal. El cabezal de impresión debe desplazarse
+hasta la posición de inicio y las posiciones de espera. Reemplace la PCB del cabezal
+de impresión según sea necesario.
+Temperatura excesiva del El cabezal de impresión sobrecalientaDeje que el cabezal de impresión se enfríe.
+cabezal de impresión Cabezal de impresión/cable Vuelva a colocar el cabezal de impresión.
+del cabezal de impresión dañado
+Cabezal de impresión Pérdida de comunicaciónVuelva a encender la impresora.
+ausente
+Error de voltios del cabezal de El voltaje del suministro de alimentación varía Revise la salida de la fuente de energía del cabezal de impresión.
+impresión demasiado
+PCB principal de la impresora defectuosoReemplace la PCB principal de la impresora.
+8-6 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Solución de problemas
+Mensaje de error
+Soluciones
+Posibles causas
+Tabla 8-1: Fallos de la impresora (continuación)
+El cabezal de impresión no se La correa del cabezal o la abrazadera de la correa del Compruebe y corrija.
+mueve hacia dentro y hacia carro está floja o falta
+afuera El motor paso a paso del cabezal de impresión o carro Compruebe y corrija.
+no está conectado de manera segura
+Correas y/o poleas gastadas o dañadasPóngase en contacto con un ingeniero de mantenimiento.
+Tensión de la correa incorrectaPóngase en contacto con un ingeniero de mantenimiento.
+El motor tiene algún defectoPóngase en contacto con un ingeniero de mantenimiento.
+El cabezal de impresión no se La correa del cabezal o la abrazadera de la correa del Compruebe y corrija.
+mueve carro está floja o falta
+El motor paso a paso del cabezal de impresión Compruebe y corrija.
+o carro no está conectado de manera segura
+La deslizadera lineal está obstruida o atascadaLimpie y seque, aire comprimido y sustituya si es necesario.
+Correas y/o poleas gastadas o dañadasPóngase en contacto con un ingeniero de mantenimiento.
+Tensión de la correa incorrectaPóngase en contacto con un ingeniero de mantenimiento.
+El motor tiene algún defectoPóngase en contacto con un ingeniero de mantenimiento.
+Falla en el termistorEl cable del impresión no está cabezal de Inserte el cable del cabezal de impresión en la PCB del cabezal.
+completamente insertado en la PCB del cabezal
+de impresión
+Cabezal de impresión/cable del cabezal de impresión Vuelva a colocar el cabezal de impresión.
+dañado
+Videojet DataFlex 6330 Manual del operario - Rev. AA 8-7
+
+Solución de problemas
+Mensaje de error
+Soluciones
+Posibles causas
+Error de voltios del motorEl voltaje del suministro de alimentación varía Compruebe la salida del suministro de alimentación.
+demasiado Tabla 8-1: Fallos de la impresora (continuación)
+PCB principal de la impresora defectuoso.Reemplace la PCB principal de la impresora.
+El motor tiene algún defectoRevise el motor y reemplácelo si fuese necesario.
+Error en la webSuministro de carrete de la cinta descentrado (+ 1 mm)Reemplace el carrete de la cinta.
+Final del carreteModo reactivo: Se acabó la cinta. Reemplace la cinta.
+Modo predictivo: Quedan menos de ~ 5 m de cinta.
+Tamaño de carrete Núcleo de la cinta no instaladoIntente usar otro carrete de cinta.
+incorrecto Ajustes de cinta incorrectosVaya a Tools (Herramientas) > Setup
+(Configuración) > Consumables (Consumibles) y asegúrese de establecer los ajustes de
+cinta correctos para la cinta que utiliza.
+Modo de producción elevada activado mientras se intenta Al usar el Administrador de configuración de CLARiTY, desactive el Modo de
+utilizar una cinta de más de 700 m de longitud producción elevada o use una cinta de menos de 700 m de longitud.
+Detección de la velocidad del Únicamente modo continuo: Junta tórica gastada o Revise el estado de la junta tórica del codificador. Reemplazar si fuera necesario.
+sustrato faltante
+Únicamente modo continuo: La junta tórica del Asegúrese de que la junta tórica del codificador esté haciendo contacto con el
+codificador resbala o no hace buen contacto con el rodillo rodillo separador
+separador
+Únicamente modo intermitente: El sustrato se Vaya a Tools (Herramientas) > Setup (Configuración) > Printhead (Cabezal de
+mueve mientras la impresora está imprimiendo impresión)Si el sustrato no se ajusta antes de que .
+la impresora comience a imprimir, ajuste la Demora de impresión.
+Si el sustrato comienza a avanzar antes de que la impresora termine de imprimir,
+aumente la Velocidad de impresión.
+8-8 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Solución de problemas
+Mensaje de error
+Soluciones
+Posibles causas
+La cinta está atascada en el sustrato y está siendo jaladaAsegúrese de que el sustrato no esté pegajosa. Tabla 8-1: Fallos de la impresora (continuación)
+Intente bajar la Oscuridad de impresión y/o Fuerza de impresión si fuera necesario.
+Únicamente modo intermitente: Intente aumentar la Velocidad de
+impresión.
+La cinta se afloja por un casete dañadoInspeccione el casete para ver que no haya componentes dañados como placa base,
+rodillos de casete, mandril, pasadores de mandril y conos de fricción. Asegúrese
+de que no haya componentes doblados o mal alineados. Reemplace los
+componentes si fuera necesario.
+Error en el ciclo de impresiónÚnicamente modo continuo: Los ajustes de impresión Vaya a Tools (Herramientas) > Diagnostics (Diagnósticos) > Printhead (Cabezal de
+actuales no están optimizados para la impresión) > Encoder Profiles (Perfiles de codificador) y al Capture Encoder Profile
+aplicación (Captar perfil de codificación) para determinar la velocidad de sustrato
+máxima. Después, usando el Administrador de configuración de
+CLARiTY, baje el ajuste de Velocidad de impresión máxima continua a
+~50-100 mm/seg más que la velocidad de sustrato máxima.
+iAssure ofrece fallos de Lentes suciosLimpie los lentes (posicionados directamente sobre la caja de luz).
+impresión falsos Caja de luz suciaLimpie la caja de luz.
+La cinta se desalinea mucho por un casete dañadoInspeccione el casete para ver que no haya componentes dañados como placa base,
+rodillos de casete, mandril, pasadores de mandril y conos de fricción. Asegúrese
+de que no haya componentes doblados o mal alineados. Reemplace los
+componentes si fuera necesario.
+La cinta se desalinea mucho dado que la impresora Asegúrese de que la impresora está encuadrara con el rodillo de
+no está encuadrada o alineada con el rodillo de placa/almohadilla de placa. Use cuñas según sea necesario.
+placa/almohadilla de placa
+Videojet DataFlex 6330 Manual del operario - Rev. AA 8-9
+
+Solución de problemas
+Mensaje de error
+Soluciones
+Posibles causas
+iAssure descalibradoAl usar el administrador de configuración de CLARiTY, reinicie iAssure y vuelva a
+ejecutar el asistente iAssure cuando se lo pida en la pantalla de impresión CLARiTY. Tabla 8-1: Fallos de la impresora (continuación)
+Nota: Solo se debe requerir si se han cambiado los componentes iAssure.
+Lentes o caja de luz defectuososReemplace si fuera necesario.
+La impresora no se enciendeEl enchufe de suministro no está completamente Compruebe y corrija.
+insertado en el módulo de entrada de energía
+La alimentación no está conectada en la fuente o en el Compruebe y corrija.
+suministro de alimentación.
+Conexión de perfil bajo entre la impresora y Compruebe y corrija.
+suministro de energía no conectado/asentado de
+manera adecuada
+Revise los fusibles 5A del suministro de energía Sustituya los fusibles según sea necesario.
+cerca del módulo de entrada de energía
+Suministro de alimentación eléctrica defectuosoReemplace si fuera necesario.
+PCB del suministro de alimentación defectuosaReemplace si fuera necesario.
+PCB principal de la impresora defectuosoReemplace si fuera necesario.
+No se imprime ninguna La cinta no se ha instalado correctamenteVuelva a instalar la cinta según el diagrama de carga de la cinta que se encuentra en el
+información casete.
+Ajustes de Oscuridad de impresión y/o Fuerza de Vaya a Tools (Herramientas) > Setup (Configuración) > Printhead (Cabezal de
+impresión bajos impresión) y aumente los ajustes de Oscuridad de impresión y Fuerza de
+impresión en los valores predeterminados. Se recomienda usar el menor ajuste posible
+a medida que llega a una calidad de impresión aceptable.
+8-10 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Solución de problemas
+Mensaje de error
+Soluciones
+Posibles causas
+Ajuste de registro vertical Vaya a Tools (Herramientas) > Setup Tabla 8-1: Fallos de la impresora (continuación)
+y/u horizontal incorrecto(Configuración) >Printhead (Cabezal de impresión) y ajuste el registro vertical
+y horizontal en 0 y revise la impresión. Ajuste en consecuencia.
+No hay señal de impresiónVaya a Tools (Herramientas) > Diagnostics (Diagnóstico) > Printhead (Cabezal de
+impresión) > Inputs (Entradas) y verifique la presencia de la señal de impresión
+entrante.
+El cabezal de impresión no entra en contacto con la placa Revise y corrija las obstrucciones. Añada cuñas si fuera necesario.
+o con el rodillo de separación.
+Incompatibilidad de sustrato y cintaEnvíe muestras de sustratos a VideojetSample Lab para determinar el tipo de
+cinta más compatible.
+La impresora está suelta en su soporteConfirme que el mango en T de la placa de montaje y los cuatro tornillos de
+montaje estén fijos y ajustados.
+La distancia deimpresión hasta la l cabezal de Vaya a Tools (Herramientas) > Diagnostics (Diagnóstico) > Printhead (Cabezal de
+almohadilla de placa/rodillo de separación es demasiado impresión) > Inputs (Entradas) y asegúrese de que la distancia del cabezal de
+grande (> 5 mm) impresión hasta la placa no exceda los 5 mm.
+La distancia recomendada del cabezal de impresión hasta la almohadilla de placa
+o el rodillo de separación (brecha del cabezal) sea de 2 mm. La brecha del cabezal
+se puede medir utilizando la herramienta VJ. El número de pieza VJ es SAR10222.
+Ajuste según corresposi fuera necesario.nda utilizando cuñas
+Únicamente modo continuo: Ajuste de posición de Vaya a Tools (Herramientas) > Setup (Configuración) > Printhead (Cabezal de
+impresión incorrecta impresión) y revise la posición de impresión para asegure la posición óptima del cabezal
+directamente sobre larodillo de separación. línea centrada del
+Videojet DataFlex 6330 Manual del operario - Rev. AA 8-11
+
+Solución de problemas
+Mensaje de error
+Soluciones
+Posibles causas
+Únicamente modo continuo: Señal incorrecta o no Vaya a Tools (Herramientas) > Diagnostics (Diagnóstico) > Printhead (Cabezal de Tabla 8-1: Fallos de la impresora (continuación)
+codificada impresión) > Inputs (Entrada) > Encoder (Codificador) y asegúrese de que la dirección
+del codificador se registre como Forward (Adelante) en la pantalla y detecte un valor
+de velocidad.
+Únicamente modo continuo: El sustrato se detuvo Asegúrese de que el sustrato no se detenga de manera abrupta o que la velocidad caiga
+abruptamente cuando la velocidad de impresión o por debajo de 1 mm/seg cuando imprima. Si no es posible, use el Administrador de
+sustrato cayó por debajo de 1 mm/seg configuración CLARiTY para ajustar el Low Speed Behaviour (Comportamiento
+de velocidad baja) según corresponda.
+Únicamente modo intermitente: Vaya a Tools (Herramientas) > Setup (Configuración) > Printhead (Cabezal de
+El sustrato se mueve mientras la impresora impresión)Si el sustrato no se ajusta antes de que la .
+está imprimiendo impresora comience a imprimir, ajuste la Demora de impresión.
+Si el sustrato comienza a avanzar antes de que la impresora termine de imprimir,
+aumente la Velocidad de impresión.
+Únicamente modo intermitente: Ajuste de Vaya a Tools (Herramientas) > Setup (Configuración) > Printhead (Cabezal de
+Velocidad de impresión incorrecta impresión) y ajuste la velocidad de impresión en el valor predeterminado de
+200 mm/seg. Revise que imprima y ajuste según sea adecuado.
+Cabezal de impresión gastado o dañadoVuelva a colocar el cabezal de impresión.
+Trabajo seleccionado no válido o corruptoSeleccione un trabajo válido o diferente.
+Mapa de cabezales incorrectoConéctese con el Administrador de configuración de CLARiTY y asegúrese
+de corregir el mapa de cabezales.
+La impresora no se conectaTrabajo no válido o ningún trabajo seleccionadoSeleccione un trabajo válido.
+No se ha borrado el mensaje de error.Borre el mensaje fallido.
+8-12 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Solución de problemas
+8.2Fallas de impresión
+Mensaje de error
+Soluciones
+Falta el inicio o el final del texto Únicamente modo intermitente: Ajuste de Conéctese con el Administrador de configuración CLARiTY y ajuste el
+impreso o aparece rasgadoRecorte de borde de inicio intermitente incorrecto recorte de borde de inicio intermitente en 20. Revise la calidad de impresión
+Posibles causas y ajuste en consecuencia.
+Únicamente modo intermitente: El sustrato se Vaya a Tools (Herramientas) > Setup (Configuración) > Printhead (Cabezal de
+mueve mientras está imprimiendola impresora impresión). Si el sustrato no se ajusta antes de que la impresora comience a imprimir,
+ajuste la Demora de impresión. Si el sustrato comienza a avanzar antes de
+que la impresora termine de imprimir, aumente la Velocidad de impresión.
+Únicamente modo intermitente: Ajuste de Vaya a Tools (Herramientas) > Setup (Configuración) > Printhead (Cabezal de
+registro horizontal incorrectoimpresión) y configure el registro horizontal en 0. Revise la calidad de
+impresión y ajuste en consecuencia.
+Únicamente modo intermitente: Almohadilla de Revise y reemplace esfuese necesario.tos componentes si
+impresión gastada o dañada
+Líneas delgadas de impresión Cabezal de impresión gastado o dañadoVuelva a colocar el cabezal de impresión.
+faltante consistentement
+e en el mismo lugar (la
+limpieza no ayuda)
+Tabla 8-2: Fallas de impresión
+Videojet DataFlex 6330 Manual del operario - Rev. AA 8-13
+
+Solución de problemas
+Mensaje de error
+Soluciones
+Posibles causas
+La calidad de la impresión es Ajustes de Oscuridad de impresión y/o Fuerza de Vaya a Tools (Herramientas) > Setup (Configuración) > Printhead (Cabezal de
+mala. impresión incorrectos impresión) y aumente los ajustes de Oscuridad de impresión y Fuerza de Tabla 8-2: Fallas de impresión (continuación)
+impresión en los valores predeterminados. Se recomienda usar el
+menor ajuste posible a medida que llega a una calidad de impresión aceptable.
+Ajuste de registro vertical y/u horizontal incorrectoVaya a Tools (Herramientas) > Setup (Configuración) > Printhead (Cabezal de
+impresión) y ajuste el registro vertical y horizontal en 0 y revise la impresión.
+Ajuste en consecuencia.
+Incompatibilidad de sustrato y cintaEnvíe muestras de sustratos a VideojetSample Lab para determinar el tipo de
+cinta más compatible.
+La impresora está suelta en su soporteConfirme que el mango en T de la placa de montaje y los cuatro tornillos
+de montaje estén fijos y ajustados.
+La impresora no está bien alineada con la placa de Asegúrese de que la impresora y la alineación encuadren con la placa de
+impresión o el rodillo de separación. impresión o el rodillo de impresión. Use las cuñas entre la impresora y la
+placa de montaje si es necesario.
+La distancia del cabezal de impresión hasta la Vaya a Tools (Herramientas) > Diagnostics (Diagnóstico) > Printhead (Cabezal de
+almohadilla de placa/rodillo de separación es demasiado impresión) > Inputs (Entradas)de que la distanci y asegúrese a del cabezal de
+grande (> 5 mm) impresión hasta la placa no exceda los 5 mm.
+La distancia recomendada del cabezal de impresión hasta la almohadilla de
+placa o el rodillo de separación (brecha del cabezal) sea de 2 mm. La brecha del
+cabezal se puede medir utilizando la herramienta VJ. El número de pieza VJ
+es SAR10222. Ajuste según corresponda utilizando cuñas si fuera necesario.
+Únicamente modo continuo: Ajuste de posición de Vaya a Tools (Herramientas) > Setup (Configuración) > Printhead (Cabezal de
+impresión incorrecta impresión) y revise la posición de impresión para asegure la posición
+óptima del cabezal directamente sobre la línea centrada del rodillo de separación.
+8-14 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Solución de problemas
+Mensaje de error
+Soluciones
+Posibles causas
+Únicamente modo continuo: Revise el estado de la junta tórica del Tabla 8-2: Fallas de impresión (continuación)
+Junta tórica gastada o faltantecodificador. Reemplazar si fuera necesario.
+Únicamente modo continuo: La junta tórica del codificador Asegúrese de que la junta tórica del codificador esté haciendo contacto
+resbala o no hace buen contacto con el rodillo con el rodillo separador.
+separador
+Únicamente modo continuo: El sustrato se detuvo Asegúrese de que el sustrato no se detenga de manera abrupta o que la
+abruptamente cuando la velocidad de impresión velocidad caiga por debajo de 1 mm/seg cuando imprima. Si no es posible, use el
+o sustrato cayó por debajo de 1 mm/seg Administrador de configuración CLARiTY para ajustar el Low Speed
+Behaviour (Comportamiento de velocidad baja) en consecuencia.
+Únicamente modo intermitente: Vaya a Tools (Herramientas) > Setup (Configuración) > Printhead (Cabezal de
+El sustrato se mueve mientras la impresora impresión). Si el sustrato no se ajusta antes de que la impresora comience a imprimir,
+está imprimiendo ajuste la "Demora de impresión". Si el sustrato comienza a avanzar antes
+de que la impresora termine de imprimir, aumente la Velocidad de impresión.
+Únicamente modo intermitente: Ajuste de Vaya a Tools (Herramientas) > Setup (Configuración) > Printhead (Cabezal de
+Velocidad de impresión incorrecta impresión) y ajuste la "velocidad de impresión" en el valor predeterminado de
+200 mm/seg. Reviseimpresión y ajuste en consecuencia. la calidad de
+La cabeza impresora está sucia.Desconecte la impresora, deje que el cabezal de impresión se enfríe y límpielo
+con el kit de limpieza de cabezal Videojet (el número de pieza de Videojet es
+216054).
+Cabezal de impresión gastado o dañadoVuelva a colocar el cabezal de impresión.
+Rodillo de separación o placa de impresión sucio, gastado o Revise, limpie, vuelva a colocar o reemplace si fuese necesario.
+dañado
+Videojet DataFlex 6330 Manual del operario - Rev. AA 8-15
+
+Solución de problemas
+8.3Errores de la pantalla CLARiTY
+Fallo Causa Solución
+La GUI de CLARiTY no Conexión de perfil bajo entre la impresora y suministro Compruebe y corrija.
+enciende de energía no conectado/asentado de
+manera adecuada
+La GUI de CLARiTY no está insertada en el puerto de Compruebe y corrija.
+suministro de energía
+Revise los fusibles 5A del suministro de energía cerca Sustituya los fusibles según sea necesario.
+del módulo de entrada de energía
+Suministro de alimentación eléctrica defectuosoReemplace si fuera necesario.
+PCB del suministro de alimentación defectuosaReemplace si fuera necesario.
+PCB principal de la impresora defectuosoReemplace si fuera necesario.
+El enchufe de suministro no está completamente Compruebe y corrija.
+insertado en el módulo de entrada de energía
+La alimentación no está conectada en la fuente o en el Compruebe y corrija.
+suministro de alimentación
+Tabla 8-3: Errores de la pantalla CLARiTY
+8-16 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Solución de problemas
+8.4Mensajes de error de CLARiTY
+Si CLARiTY muestra un fallo o una advertencia, haga lo siguiente:
+Lea el mensaje de fallo o advertencia.
+Realice la tarea según el mensaje.
+Borre el mensaje de la pantalla (a veces se borra automáticamente cuando se corrige el fallo y otras debe borrarlo tocando el botón Borrar).
+Figura 8-1: Estado de falla
+Figura 8-2: Estado de advertencia
+8.4.1Lectura de un mensaje de fallo o advertencia
+Cuando se produce un fallo o una advertencia,ventana de estado de la parte CLARiTY muestra el mensaje de fallo en la superior de todas las páginas.
+Cuando se produce un fallo, se abre el relé de salida de fallo de lacableado al circuito de parada impresora. Si esté relé está de la máquina de embalar, se puede usar para asegurar que
+esa máquina se detenga en caso de error. De esta forma se evita prodcodificado cuando la impresora tiene un fallo.ucir un producto no
+Por ejemplo, cuando el sustrato de suministrode FALLO con el mensaje de cinta, CLARiTY mostrará el anuncio rojo Arrastre de la cinta, como se ilustra en la Figura 8-3.
+Figura 8-3: Pantalla de fallo
+Videojet DataFlex 6330 Manual del operario - Rev. AA 8-17
+
+Solución de problemas
+Pueden producirse varios fallos y advertencias al mismo tiemprimero. po. Los fallos siempre se muestran
+Para ver los fallos y advertencias con más detalle, así como las inal respecto, toque el área roja o amarilla de lastrucciones acerca de qué hacer ventana de estado de la parte superior de la
+pantalla de CLARiTY.
+8.4.2Borrado de un mensaje de fallo o advertencia
+Las instrucciones de esta sección ofrecen informSe usa un procedimiento similar para borrar advertencias. ación sobre cómo borrar un mensaje de fallo.
+Para ver los detalles de la lista de fallos, haga lo siguiente:
+1.Toque el mensaje de FALLO rojo para ver la lista de fallos (consulte Figura 8-4).
+2.Toque el nombre del fallo de la lista.
+Figura 8-4: Selección de fallos
+8-18 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Solución de problemas
+3.Se muestran los detalles del fallo. Siga la instrucción en pantalla para corregir la falla.
+4.Cuando haya corregido el fallo, se activa el botón .
+5.Toque para eliminar el mensaje de fallo.
+Para obtener más información acerca de cómo boconsulte el Manual de servicio.rrar los fallos y las advertencias de CLARiTY,
+Figura 8-5: Pantalla de detalles del fallo
+Videojet DataFlex 6330 Manual del operario - Rev. AA 8-19
+
+Apéndice AEspecificaciones
+Introducción
+Esta sección proporciona las especificaciones de la impresora y contiene los siguientes temas:
+Especificaciones técnicas
+Especificaciones del controlador CLARiTY
+Especificaciones de impresión
+Conexión en red y comunicaciones externas
+Dimensiones de la impresora
+Controlador CLARiTY
+A.1Especificaciones técnicas
+La Tabla A-1 enumera las especificaciones técnicas de la impresora.
+Especificación técnica 53 mm
+Impresora
+Impulsión de cinta única de estado sólido Movimiento intermitente y continuo
+Cabezal de impresión53 mm (2,1 pulg.), 300 ppp, 12 puntos/mm
+Área de impresión - Modo de movimiento intermitente53 mm (ancho) x 75 mm (largo) (2,1 x 3,0 pulg.)
+Á?rea de impresión - Modo de movimiento continuo53 mm (ancho) x 300 mm (largo) (2,1 x 11,8 pulg.)
+Ancho de cinta20 - 55 mm (0,8 - 2,2 pulg.)
+Máxima longitud del mensaje1200 metros (3937 pies)
+Velocidad de impresión (mm/s)
+Modo de movimiento intermitente10 mm/seg - 750 mm/seg (0,4 pulg./seg - 29,52pulg./seg)
+Modo de movimiento continuo1 mm/seg - 750 mm/seg (0,04 pulg29,52pulg./seg) ./seg -
+Producción máxima 250 ppmNota: ppm (impresiones por min) depende del tamaño
+del paquete.
+Dimensiones
+Cabezal de impresión (incluido el casete)204 mm (ancho) x 178 mm (alto) x 182 mm (profundidad)
+Pantalla táctil240 mm (ancho) x 165 mm (alto) x 34 mm (profundidad)
+Unidad de fuente de alimentación (PSU)226,87 mm (ancho) x 150 mm (alto) x 85 mm (profundidad)
+Tabla A-1: Especificaciones técnicas
+Videojet DataFlex 6330 Manual del operario - Rev. AAA-1
+
+Especificaciones
+Especificación técnica 53 mm
+Entradas/Salidas
+Entradas externas 3 entradas de PNP, configurable desde:Sensor de impresión 1
+Sensor de impresión 2Selección de sensor de impresión
+Inhibición de impresión Tabla A-1: Especificaciones técnicas (continuación)
+Parada/error externosBorrar cola de impresión
+Salidas externas2 salidas de relé (1 cambio + 1 N/O) y 2 salidas de 24 V PNP
+(corriente de origen máxima = 100 mA por salida), configurable desde el administrador de
+configuración de CLARiTYEn línea/Offline (fuera de línea)
+AdvertenciaOcupada
+Imprimiendo (en realidad activando puntos de impresión)
+Alimentación del etiquetadorCiclo de impresión activo (Del inicio al final
+de la impresión y rebobinado de la cinta)Actualizar cola de impresión completa
+Nueva asignaciónFalla de impresión (es decir, impresión
+interrumpida durante su ejecución)Fallo
+Interfaz del operador (CLARiTY)TFT SVGA 800 x 480
+Requisitos de suministro eléctrico100 - 240 VCA 50/60 Hz, 1,56A
+Temperatura de funcionamiento0 a 40 °C (32 a 104 °F)
+A-2 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Especificaciones
+A.2Especificaciones del controlador CLARiTY
+Tabla A-2 enumera las especificaciones del controlador CLARiTY
+Especificaciones del sistema Descripción
+Interfaz del operadorInterfaz de CLARiTY con panel táctil LCD a todo color
+Compatibilidad con la base de datos y selección de trabajo estándar. Previsualización de la impresión
+WYSIWYG (lo que se ve es lo que se obtiene)
+Protección por contraseña3 niveles de usuarios estándar
+Software de configuración de codificador remotoAdministrador de Configuración de CLARiTY
+Almacenamiento de configuración y parámetros offline (fuera de línea) disponible como estándar
+DiagnósticoDiagnóstico incorporado como estándar
+Tabla A-2: Especificaciones del sistema
+Videojet DataFlex 6330 Manual del operario - Rev. AAA-3
+
+Especificaciones
+A.3Especificaciones de impresión
+La Tabla A-3 enumera las especificaciones de impresión.
+Especificaciones de impresión Descripción
+Software de diseño de imágenesSoftware CLARiSOFT Claricom para el diseño de codificación de paquetes
+Soporte de fuentesSoporte completo de fuentes descargables para Windows TrueType (incluidos varios idiomas
+y soporte de Unicode)
+Texto Texto escalable que incluye rotación, espejo e impresión inversa
+Tipos de campo soportadosFijo, variable (introducido combinado, base de datos, contadores, fecha, por el usuario),
+desvíos, hora, párrafo (bloques de texto), dibujos con formas básicas (círculos, rectángulos, etc.).
+Funciones especialesFunciones de fecha y hora reales automáticas
+Cálculo de fecha de caadministración de concesionesducidad automática y
+Aumento y reducción de textde barraso, contadores y códigos
+Impresión de códigos de barrasEAN 8, EAN 13, UPC-A, UPC-E, Código 39, EAN 128, Código 128, QR, Matriz de datos, RSS, ITF
+3
+Gráficos, imágenes y logotiposVarios formatos de gráficos compatibles utilizando CLARiSOFT. Cualquier tamaño dentro del área de
+impresión
+Funciones de impresiónImpresión de imágenes espejo, rotación de imagen e impresión inversa
+Soporte de código del díaHora, día de la semana, día del mes, semana del año, mes del año, año de la década y fecha arábiga
+Opciones de códigoInicio del día, códigos de turno, fábrica, máquina e identificación de línea
+Orientación del campo0°, 90°, 180°, 270°
+Tabla A-3: Especificaciones de impresión
+3
+Otros códigos disponibles si así se solicita
+A-4 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Especificaciones
+A.4Conexión en red y comunicaciones externas
+La tabla A-6 enumera las conexiones en red y las comunicaciones externas.
+Conexión en red y comunicaciones externas Componente Cantidad
+Comunicación de datos externaComunicaciones punto a punto RS2321
+Comunicaciones en red Ethernet 10/100 base TX2
+Protocolos de comunicaciy ventanas y unidades ón binarios y ASCII, 1
+Modo de PC host (Base de datos remota) utilizando CLARiNET 1
+Puerto USB 2
+Funcionalidad principal/secundariaFunción de selección de trabajo para grupo y funciones de control de grupo de impresoras1
+Software de control de redesSoftware de administracidel codificador Claricom CLARiNET ón de red independiente 1
+Tabla A-4: Conexión en red y comunicaciones externas
+Videojet DataFlex 6330 Manual del operario - Rev. AAA-5
+
+Especificaciones
+A.5Dimensiones de la impresora
+Figura A-1 muestra las dimensiones de la impresora de 53 mm (RH).
+204 mm(8,03 pulg.)180 mm(7,08 pulg.)
+178 mm(7,0 pulg.)
+RECORRIDO DEL CABEZAL de 75 mmÁREA DE IMPRESIÓN de 53 mm
+Figura A-1: Videojet DataFlex 6330 Dimensiones de la impresora de 53 mm RH
+A-6 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Especificaciones
+Figura A-2 muestra las dimensiones de la impresora de 53 mm (LH).
+204 mm(8,03 pulg.)180 mm(7,08 pulg.)
+178 mm(7,0 pulg.)
+RECORRIDO DEL CABEZAL de 75 mmÁREA DE IMPRESIÓN de 53 mm
+Figura A-2: Videojet DataFlex 6330 Dimensiones de la impresora de 53 mm LH
+Videojet DataFlex 6330 Manual del operario - Rev. AAA-7
+
+Especificaciones
+A.6Controlador CLARiTY
+La Figura A-3 muestra las dimensiones del controlador CLARiTY.
+Pantalla táctil y PSU combinada
+Pantalla táctil
+PSU
+143,5 mm
+(5,65 pulg.)
+176 mm
+(6,92 pulg.)
+240 mm
+(9,44 pulg.)
+240 mm
+(9,44 pulg.)
+151 mm165 mm
+(5,94 pulg.)(6,49 pulg.)
+34 mm(1,33 pulg.)
+85 mm(3,34 pulg.)
+226 mm(8,89 pulg.)
+Figura A-3: Dimensiones del controlador CLARiTY
+A-8 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+Apéndice BDisponibilidad
+B.1Disponibilidad de la eficacia general del equipo - Herramientas de disponibilidad
+B.1.1Introducción
+La disponibilidad mide el tiempo de funcionamiento del equipoel cual un equipo está preparado para funcio. Equivale al período durante nar y atender las necesidades de producción. Se
+trata de una de las tres métricas clave de la eficacia general del equidisponible paraVideojet DataFlex 6330.po (OEE) y se encuentra
+La herramienta Disponibilidad ayuda a sepacon los problemas del equipo y permite al usuarar los problemas operatrio realizar un seguimivos en comparación iento del tiempo de
+inactividad de la impresora y ver las estadísticas del tiemque permite el análisis de datos de medición del tiempo de funcionamiento, ayuda al usuario po de inactividad. La pantalla de fallos,
+a comprender y eliminar las causas más frecuentes de tiempos deequipo. inactividad operativos y del
+La disponibilidad muestra dos métricas de disponibilidad básicas de forma simultánea:
+ Disponibilidad del equipo
+ Disponibilidad operativa
+Nota: la disponibilidad operativa se puede cambiar entre dos servidores proxy de tiempo de producción separados según lo requiera el usuario: Modo encendido y en ejecución. Para obtener más
+información, consulte "Disponibilidad operativa" la página B-2.
+Donde
+ El tiempo operativo es el tiempo total de funcionamiento de la impresora.
+ El tiempo de producción previsto es el tiempo de funclínea real*.ionamiento esperado de la
+*Según el modo proxy encendido o en ejecución seleccionado.
+% de disponibilidad =Tiempo de funcionamiento
+Tiempo de producción planificado
+B.2.2Disponibilidad del equipo
+La disponibilidad del equipo supervisa directamun error interno (falla).ente el tiempo de inactividad relacionado con
+La disponibilidad de equipo se define como
+El Tiempo total del equipo es la cantidad total de tiempo durante el cual el equipo está encendido (tiene electricidad). Si se apaga el equipo cuando hay fallo activo, la cantidad de
+tiempo que está apagado también se incluye en el tiempo total del equipo.
+Disponibilidad del equipo = 1 -Tiempo de inactividad del
+Tiempo total del equipo
+Videojet DataFlex 6330 Manual del operario - Rev. AAB-1
+
+Disponibilidad
+El Tiempo de inactividad del equipo es la cantidad de Tiempo Total del equipo que la impresora ha estado en Estado de falla de equipo. El Estado de falla del equipo se define
+como el período en el que el equipo no está disponible debido a una falla identificada como falla del equipo. Para obtener más información, consulte el manual de servicio.
+B.3.3Disponibilidad operativa
+Esta es una medida más amplia que refleja el impacto total línea de producción. La disponibdel tiempo de inactividad en una ilidad operativa supervisa el tiempo de inactividad relacionado
+con las fallas que se podrían clasificar como de procedimiento.
+El impacto puede ser por causa de problemas del equipo, properador, cambios de turno, etc.oblemas relacionados con el
+La disponibilidad operativa se define como:
+El proxy de tiempo de producción permite cambiar el cálculo de la disponibilidad entre los modos operativos que puede elegir el cliente: en ejecución o encendido. El tiempo de
+producción se define en función del proxy de tiempo de producción seleccionado:
+ Running (En Funcionamiento): Si tantENCENDIDOS.o el equipo como la impresora están
+ Encendido: Si el equipo está ENCENDIDO independientemente del estado de la impresora.
+Si se apaga el equipo cuando una falla está activa, la cantidad de tiempoapagada también se incluye en el tiempo de producción. que la impresora está
+El Tiempo de inactividad de operación es la cantidad de Tiempo de producción que la impresora estuvo en Estado de falla de operación. El Estado de falla de operación se define
+como el período en el que el equipo no está disponible debido a una falla identificada como falla de operación.
+Nota: Consulte el manual de servicio para obtener más información sobre los estados de falla de la impresora y las operaciones.
+Disponibilidad operativa = 1 -Tiempo de inactividad de la operación
+Tiempo de producción
+B-2 Videojet DataFlex 6330 Manual del operario - Rev. AA
+
+e@UW MW#'W%# !*W*
+=7-h/@=<]<9/?<<?<9v/10]]5676765&/5327632#"&'&'732654&#"&#"NwH:qi>Uf0Y:!%e4Fy6Tl? TDg$"}H}TP+9k@-18!!3p#/
+005#3Rp5+T#I"8O
+77FFUU!]|%%@!!@a*b

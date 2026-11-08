@@ -1,0 +1,154 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: drawings co2\Setup of SF head 3350 05 01 23.pdf
+# cifrado=False bloques=10 caracteres=7912
+
+.4:@FLRX^djpv|
+'*+D!"+$$
+O:PTSUY6]];ff7uu7vz<||7}=767@AAB7WCDE0044::??CCIIKKQQ[[ddjlmmrsQxy9>T+
+*+/14;>?B]LRU|}``begjlmoqssuy{{}
+*+/14;>?B]CLNN__L`~}``begjlmoqssuy{{}
+*+/14;>?B]CLNN__LRU`|}``begjlmoqssuy{{}
+*+/14;>?B]L`|}``begjlmoqssuy{{}
+*+/14;>?B]L`~}``begjlmoqssuy{{}
+*+/14;>?B]LRU`~}``begjlmoqssuy{{}
+*+/14;>?B]LRU`z}``begjlmoqssuy{{}
+*+/14;>?B]L|}``begjlmoqssuy{{}
+dKa%Vv`,^%%n>3HBpy7B77n/
+=w=wdd888;DP22d=d22d2
+
+Installation of Laser with SHC-SF Marking Head
+Pre-Work:
+ Ensure that samples have been run and that the applications have been approved for
+the SHC-SF marking head.
+ Do you have the Sample Report PDF with:
+o Size Mode or Range Mode noted?
+o Working Distances for each Job and, if multiple planes to be marked on same
+product, are working distances for each plane noted?
+ Did you download or have you received:
+o Complete Laser Image or Database or individual Jobs created during sampling?
+ Import Complete Laser Image or Jobs from Application Lab first before creating or
+configuring anything in TCS+. Complete Laser Image import will overwrite any existing
+Jobs, etc.
+Installation
+Follow general install process for unpacking, checking accessories and booting without errors.
+The following procedure is specifically meant for the mechanical setup and Job setup on 3350
+lasers with the SHC-SF (Smart Focus) marking head.
+Steps:
+1) Based on sample report results (PDF), select a product that was sampled and physically
+adjust laser marking head distance to product based on sample results (If mechanical
+adjustment exists such as with H-based laser stand).
+Example: 12-ounce bottle sample result states
+working distance 123 mm Working Distance.
+Position laser marking head flat surface (area
+outside of protective window; flat, black area) 123
+mm from surface to be marked on 12-ounce bottle.
+2) Based on Sample Report (PDF), were products sampled using Range Mode or Size
+Mode ? If sample results not available, then measure distance from marking head to
+location on each product to be marked (Working Distance).
+ Is the difference between these Working Distances less than 42 mm? Use Size
+Mode.
+ Is the difference between these Working Distances between 42 and 50 mm? Use
+Range Mode.
+Confidential - Company Proprietary
+
+ Login to TCS as Administrator will be logged out every minutes or Service. If this
+will be first login as Administrator case sensitive use default password and then
+you must create a new password.
+ o to Main Menu and enable check bo
+ for customer application. In tab within
+Line Setup select or from drop-down based on Sample
+Results PDF. Save this Line Setup. ou can edit the other values later as needed
+Start Delay Encoder etc..
+ a new Job Jobs panePen buttonManage Jobs button and give the
+Job a descriptive name.
+ From the Job Editing screen that appears press the button
+Confidential - Company Proprietary
+
+ Select the Line Setup created in Step .
+ Press the button.
+ Press the button and select for Default layer.
+ Press the button on the top of the screen to give the layer a new name if desired. If
+multiple planes will be marked in the same job then name the layer something very
+descriptive such as the area to be marked like top surface or descriptive of the content
+that the layer should be linked to such as logo.
+Confidential - Company Proprietary
+
+ Set the for this Layer plane. The Working Distance Offset
+value equals Actual measured working distance from marking head to surface to be
+marked minus 117.88 which is the nominal reference point .
+Eample: . mm working distance
+. -. mm is the Working
+Distance Offset.
+System calculates the Working Distance
+based on the Offset you entered. This
+should now match the actual measured
+working distance.
+ Ensure that if the measured working distance is smaller than . that the
+Working Distance Offset is entered as a negative number.
+Confidential - Company Proprietary
+
+ If multiple surfaces will be marked within the same Job create additional Layers give
+descriptive name and enter Working Distance Offset. Ensure names are descriptive so
+that Layer can be matched to content in later steps!! Select different colors for different
+layers to make it easier to see that there are multiple layers from Job Edit screen.
+After Layers are created and Working Distance Offsets are entered for all planes to be
+marked proceed to net step.
+ Add job content. While editing each Job Element epand Layer bottom option in right
+hand column and select the Layer to which content should be assigned. insert capture
+here
+ Create all Job content.
+ If content needs to be moved to a different Layer or to verify what Layer content is
+assigned to press the net to the Job Element and select option to view
+current Layer or to move the content to a different Layer.
+Confidential - Company Proprietary
+
+ To verify content Working Distances place product to be marked in front of laser in
+location on production line where it will be marked.
+ Press the button at top of Job Editor window. Though Pilot Laser is available
+in several other places only in the Job Editor will all features of Pilot be present for
+adjustment.
+ Close keyswitch.
+ In section of Pilot Laser dialog select a Layer and ensure that product surface
+where that Layer should be marked is directly across from marking head output Focus
+Finder beam to be used is always displayed in center of marking field.
+Confidential - Company Proprietary
+
+ Press and ensure dot and circle projected are completely overlapped on
+surface where layer is to be marked. If red pilot laser beam isnt visible on product
+surface then place white tape or paper on surface just for this step.
+ If dot and circle of Focus Finder beam do not completely overlap then use the and
+buttons to adjust working distance by mm or press the Working Distance Offset bo to
+change the Working Distance Offset value by less than - mm. insert capture here
+Confidential - Company Proprietary
+
+ Press button to stop Focus Finder.
+ Repeat using Focus Finder with any other Layers in this Job.
+ Edit Line Setup values for Encoder and Trigger including Start Delay and locking.
+ the Job for marking. Activated Line Setup should also have changed to Line
+Setup attached to Job in earlier step.
+ Mark Job.
+ Adjust y position andor through either the uick
+Toolbar unlock LOC button in lower left first or from the Pilot Laser dialogs in Main
+MenuPilot Laser or Line SetupPilot Laser or Job EditorPilot Laser. Operator user
+cannot adjust Working Distance from uick Toolbar unless Administrator grants access
+via RolesAccess Rights.
+Note: Adjustments to Layer Working Distances can only be accomplished through Job
+Editor screen either by editing Working Distance Offset in Layers or in Pilot Laser dialog
+within Job Editor screen in Scope section.
+ If markings on all Layers within same Job are too big or small compared to size in Job
+Editor trying adjusting Job Working Distance in uick Toolbar. If characters are too big
+then decrease Job Working Distance Offset slightly in uick Toolbar. If characters are
+too small increase Job Working Distance Offset slightly in uick Toolbar.
+If markings on only one Layer are too bigsmall in a Job with multiple Layers then do not
+edit Job Working Distance Offset. Instead return to Job Editor screen and edit specific
+Layer Working Distance Offset value. se a smaller or more negative number if
+Confidential - Company Proprietary
+
+characters are slightly too big and a bigger Layer Working Distance Offset value if
+characters are slightly too small.
+ Repeat Job creation for all products.
+ Ensure proper Line Setups are attached to Jobs by verifying in Manage Jobs.
+ Adjust Mark Settings as needed.
+If mechanical adjustments to height are reuired because working distances for products to be
+marked eceed range then create spreadsheet or other document for customer tying product to
+a reference point on mechanical adjustment.
+Confidential - Company Proprietary

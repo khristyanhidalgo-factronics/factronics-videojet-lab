@@ -1,0 +1,1087 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\7x30 Merlin Overview 03 11 19.pdf
+# cifrado=False bloques=111 caracteres=32299
+
+7230/7330
+10/20W Fiber Laser Systems
+Technical Training
+Rev. 1
+
+Table of Contents
+1. Introduction 4. Troubleshooting
+• Product Features
+5. Laser Web Interface
+• Options
+6. Changes to SmartGraph
+• Interfaces
+7. Changes to TCS+
+2. System Overview
+8. EtherNet /IP and
+• Supply Unit
+PROFINET
+• Interface Unit
+• Marking Head
+
+What Changed?
+From 7220/7320 (previous version)
+• Chameleon - based (ACC gone)
+• CP - Light instead of FM board
+• SPM or CPD/FASS for safety
+• No beam expanders
+• Two tuning options for galvos : Quality or Speed
+• Additional Fill Font and Filled Logo control features in SmartGraph
+• Additional TCS+ features (reuse variable names, font import,
+layers, and more)
+• Ability to add EtherNet /IP or PROFINET module
+
+Variants/Options
+Wattage
+• 10 Watt (7230)
+• 20 Watt (7330)
+Marking Heads (BTU available)
+• SHF60 B – Standard
+• SHF100 B – High Resolution
+Interfaces
+• TCS+ (browser or TU430)
+• SmartGraph
+• CLARiTY
+Add - On Features Available
+• EtherNet /IP Module
+• ProfiNET Module
+
+Customer Interface & Communications Options
+Rear of laser has options for both communications and
+customer interface
+Customer Interface
+Communications
+Unit shown here with standard equipment (no options)
+
+Customer Interface Options
+CI Type 4 (Standard) New
+Fume extractor
+connector now
+standard
+Quick Connect (Optional) Cable Passage (Optional)
+
+Communications Options
+Standard – One x RJ45
+Two x RJ45 (Optional) TU430 (Optional)
+
+System Overview
+Marking
+Head
+Interface
+Unit
+Supply Unit
+
+Membrane Keyboard
+Power On Standby
+Start Stop
+Key
+switch
+Shutter
+Error LED
+Open LED
+Emission
+Status Bar LEDs
+LED
+Booting and Marking Status
+
+Supply Unit
+Beam Source
+HIC
+Chamleon
+CP - Light3
+LIC MIC (Optional)
+
+Block Diagram of System
+EtherNet /IP
+Keypad/ Keyswitch
+MIC
+or PROFINET
+(optional) Galvos &
+IOs
+Shutter
+CP -
+RS - 232
+Light3
+ETH
+Chameleon MCIP
+HIC _ CPA
+FASS
+( Optional )
+AC
+SPM/
+Safety CPD3
+IOs
+LIC _ YLP
+48 V
+24V
+PSU
+PSU
+Laser
+Electr
+Laser
+onics
+Source
+
+Laser Sources
+Four different part numbers for laser sources
+• Differences based on wattage and marking head
+• Laser sources include fiber cable and collimator (all one part)
+• No beam expanders (collimator gives beam diameter)
+• Made by IPG
+Sticker on
+• 10 Watt SHF60B
+10 - 10 - AL1
+side is only
+• 10 Watt SHF100B
+10 - 10 - AL
+way to tell
+• 20 Watt SHF60B
+20 - 20 - AL1
+difference in
+• 20 Watt SHF100B
+20 - 20 - AL
+beam
+sources:
+
+Electronics Power Supply (48VDC)
+• 48 VDC (200W) PSU for everything except laser source.
+• Incoming AC voltage always received from SPM/CPD as long as unit is
+plugged in.
+• SPM/CPD does not switch off AC voltage to electronics power supply
+ever.
+
+Laser Power Supply (24VDC)
+• 24VDC PSU only supplies the laser source and nothing else.
+• Incoming AC voltage for power supply is switched by the
+SPM/CPD based on keyswitch , emissions LEDs, and Interlock
+channels (2) all being closed.
+
+Power Distribution
+
+Chameleon Board - MCIP
+
+Chameleon Board – X28 (Power)
+Default Connections:
+Pin 01 (V) and 02 (GND) : 24V to fan and galvo enable
+Pin 06 (GND) and 12 (V) : 48V to CP - Light board
+Pin 10 (GND) and 11(V) : Power to Chameleon (48V) from electronics PSU
+Pin 13 (V) and 14 (GND) : Feedback from laser PSU
+External Power 12V/24V: Pins 07 (V) & 08 (GND): 12V/24V and GND
+from customer to supply CI
+Important :
+While supplying external 12V/24V, the complete customer interface is potential
+free! Also the connectors for incremental encoders and light barriers!
+Laser Power Supply Control: Pin 13 - 14
+The Chameleon Board monitors if laser voltage (24V) is switched to the beam source
+External startup: Pin 3 - 5
+Customer can boot the system remotely, by applying a pulse of 24V_STDBY here.
+By using the autostart bridge on X28.3 and X28.5, the system boots up automatically, after
+switching mains and never powers down after shutdown sequence (reboots). Ensure
+system main power is removed before reboot or safety system reset failure will occur.
+NO EXT 24V allowed!!
+
+MIC (Miscellaneous Interface Controller)
+Available as a factory or field upgrade. MIC board with connectors plugs
+into Chameleon MCIP version only!!! MIC cannot be used with earlier
+versions of Chameleon.
+Two versions with different part numbers:
+• EtherNet /IP (Blue sticker)
+• PROFINET (Yellow sticker)
+• Not interchangeable.
+• Firmware/software is on MIC and cannot be changed field.
+• MIC must be enabled through Web Interface.
+• RJ45 ports on MIC for PROFINET and EtherNet /IP only!
+• Use Chameleon RJ45 ports for TCS+, SmartGraph , etc.
+
+LIC_YLP (Laser Interface Controller)
+• Interface between Chameleon and laser source.
+• Two ribbon cables – integrated into LIC board connects on back of
+laser source. One is digital and other is RS232.
+• Small jumper on X5 (3.3V to shutter dump temperature)
+
+LIC_YLP - LEDs
+D5 D4 D3 D2 Alarm Description
+X OFF OFF OFF Temperature Alarm
+X ON OFF OFF Power Supply Alarm
+X OFF OFF ON Normal Operation
+X ON OFF ON Laser is not ready for emission
+X OFF ON OFF Back Reflection Alarm
+X ON ON OFF Reserved
+X OFF ON ON System Alarm
+X ON ON ON Reserved
+Laser is in Normal Operation when
+D2 is ON and D3, D4, & D5 are OFF
+
+HIC_CPA (Head Interface Controller)
+Shutter cable (signal) goes from HIC directly to shutter board in marking
+head. Does not connect to CP - Light3 at all.
+LVDS cable from HIC
+to CP - Light (CAT 7
+Ethernet cable)
+
+CP - Light 3 (Cool Print Light)
+2 PWM Circuit Drivers on the rear side of board
+Galvo Block
+Power +48V
+Temp
+X - Mirror current
+(X7)
+Y - Mirror current
+CAT7 Cable
+(X9)
+from HIC
+Vector signals
+(LVDS)
+Galvo Release
+(24V from X28 on the
+X - Y - Mirror feedback
+EEPROM
+Chameleon board )
+(contains tuning for
+specific galvo set)
+
+CP - Light 3 (Cool Print Light version 3)
+• Paired with galvo set. Do not separate! Comes as one part
+number.
+• RJ45 is different than previous version. Better signal quality and
+grounding.
+
+Marking Head Cable (Internal)
+• Connects CP - Light3 with the Galvanometers in the marking head
+• Connects Mechanical Shutter with HIC_CPA
+• Connects Emission LED board with HIC_CPA
+• Connects Thermistor in marking head with CP - Light3
+
+Safety Options
+Standard – SPM (Safety Power Module)
+• Shutterlock - No Performance Level
+• Interlock (no special parts) – No Performance Level
+• Interlock with specific parts - Performance Level „d“
+• O nly if mechanical positive break interlock NC - contacts, single
+screened interlock wires (cross wire short detection), and push button
+manual reset button are used. Any deviation from this results in no
+performance level.
+• No possibility to add FASS
+• Different SPM than on 3640 models!!
+Optional – CPD3 + FASS
+Following performance levels achieved only with mechanical positive break NC -
+contacts and single screened wires (cross wire short detection)
+• Performance Level „d“ for Door (Shutterlock)
+• Performance Level „e“ for Emergency Circuit (Interlock with
+manual reset switch)
+
+SPM Only
+SPM version with IEC C14 mains entry can carry 8 Amps maximum current (fused)
+Three Ways to Wire for Safety:
+Shutterlock (No Performance Level Rating)
+• No rated performance level
+• Use fused 24V outputs for Shutterlock on X9 as directed in sample wiring
+Interlock (No Performance Level Rating)
+• Wire using any MECHANICAL switch. Do not use solid state switch or
+damage may occur to contacts in switch (capacitors that have high current)
+• Can jumper reset switch if performance level not needed.
+Interlock ( Performance Level “D”)
+• Performance Level “d” only if wired exactly as directed AND using exact parts
+(cable and switch) in sample wiring (Use Schmersal AZ 16 - 02ZVRK (min
+contact load 12 V / 5 mA) switch and shielded cable )
+• Must use 24V_fused output on X9 for Reset Switch to maintain Level D rating
+and to avoid errors which will result in Interlock Open status even when closed
+• Requires reset switch for Peformance Level “d” (use push button type).
+
+SPM (Safety Power Module)
+K1/K2: Interlock channel 1 and 2 (connected doors closed or jumpers in place)
+K3/K4: Chameleon board (software/logic/shutter/emissions LEDs)
+K5: Part of error detection circuit for Performance Level D (detects damage
+to external wiring of interlock system)
+
+SPM LEDs
+LED Name Color
+D5 Laser Enabled Green (ON) Laser is enabled (both Interlock circuits closed)
+D6 Shutter Enabled Yellow (ON) Shutter is enabled (both Shutterlock circuits are
+closed)
+D7 Shutter Closed Blue (ON) Shutter is closed (“Shutter is Closed”=High)
+D8 Shutter Command Blue (OFF) Close shutter command (“Open Shutter”=Low)
+D9 Laser Power Red (ON) Laser power supply is on
+Fuse (F1) – 1 Amp: Blows when too much current on interlock/ shutterlock to
+detect damage of external wiring. Not a system power fuse.
+
+CPD + FASS
+- K1+2: Reacts on interlock circuit and switches off the laser beam source
+(Driver = CPD/FASS) -- Interlock important
+- K3: Reacts on a safety logic (when the signal ‘safe laser power on‘ is
+missing, K3 switches off the laser beam source too) (Driver =
+Chameleon). Shutter and emissions LEDs important.
+- K4+8: No function on 7x30
+
+CPD3 + FASS
+From CPD3
+
+Wiring SPM (Double Pole Switch)
+Default Jumpers (X9)
+1 - 23: Interlock Reset
+5 - 16: Shutterlock 2
+7 - 14: Shutterlock 1
+15 - 19: Interlock 2
+17 - 21: Interlock 1
+10 - 12: Reserved
+22 - 24: Reserved
+Interlock Reset (1 - 23):
+Can be either jumpered
+or put reset switch in
+place. Reset switch must
+be open when booting or
+fatal error will occur.
+
+Wiring SPM (Single Pole Switch)
+If using single pole switch, then replace one
+Interlock jumper and put in switch. Then
+jumpers from each leg of switch to second
+channel. If only replace one jumper with switch
+and leave second jumper “as is” then relay will
+struggle to latch, clicking sound will be heard
+while Interlock open and long - term damage to
+board will occur.
+Interlock
+Wiring
+
+Wiring CPD+FASS
+System reaction:
+Door1/2: Shutterlock Open
+EM1/2: Interlock Open (has to be reset with
+S2)
+Reset Switch (S2) : Must close and then
+open to reset after interlock open condition is
+corrected. Not necessary after Shutterlock
+open
+Default Bridges
+10 - 12 Door Feedback
+22 - 24 Emergency Feedback
+5 - 16 Door 2 ( Shutterlock )
+7 - 14 Door 1 ( Shutterlock )
+15 - 19 Emergency 2 (Interlock)
+17 - 21 Emergency 1 (Interlock)
+
+Interface Unit
+• Fiber optic cable from laser source ends in collimator and adaptor
+• No replaceable parts inside Interface Unit. All are part of beam source.
+• Do not touch/adjust any screws inside Interface Unit.
+• May cause beam to become misaligned and cannot be fixed in the field!!!!
+
+Marking Heads
+Always IP54
+Two Versions
+• SHF60B (6 mm)
+• SHF100B (10 mm)
+Working
+Two tunings available
+Distance
+Select in Web Interface or TCS+:
+(WD)
+Tuning 1: Quality - 1,300 char/sec. (SHF60)
+1,000 char/sec. (SHF100)
+Tuning 2: Speed – 2,000 char/sec. (SHF60)
+1,300 char/sec. (SHF100)
+
+Marking Head – SHF60B (Internals)
+Shutter
+Pilot Laser
+Emissions
+Temperature
+Galvo
+Assembly
+(Optional)
+LED Board
+Sensor
+Block
+
+Marking Head SHF100B (Internals)
+
+Available Lenses
+Marking Head SHF - 60B (all values in mm)
+Marking Head SHF - 100B (all values in mm)
+
+Shutter
+• Mechanical shutter
+• Signals directly to/from HIC and not from/through CP - Light
+• 24V for shutter goes from X28 on Chameleon to CP - Light3
+
+Pilot Laser
+• Optional – factory or field upgrade
+• Class II not class I
+• Can be operated in Direct
+Marking or Laser Operation
+• Pilot laser spot size and location
+can vary based on lens
+
+Troubleshooting
+
+No Power to System
+❖ Symptom: No Lights on Keypad
+Under normal conditions (power, but not booted) following should occur:
+• Blue LED on ON/Standby button is lit
+• 48V dc input to Chameleon board – X28.11 (48V) and X28.10 (GND)
+• D47 (green LED) (48V) lit on Chameleon board
+❖ If above are missing, check:
+• Mains Power Supply
+• Ensure Main Power switch in ‘On” position
+• Mains Input connector – 2 x fuses
+• 48 V dc supply
+• Membrane keypad and cable
+- Use Autobridge to start without keypad – Jumper X28.3 - X28.5 (Ensure power
+to system disconnected after test or safety circuit reset failure will occur)
+• Chameleon board
+
+Unsuccessful Boot – Diagnostic Checks
+Multi - Core Chameleon
+Symptom: White light on, but not flashing (On/Standby button)
+Symptom: White light does not stop flashing (On/Standby button)
+▪ Did you wait long enough (big lag time)
+▪ Check battery voltage. 2.7 Volts or greater?
+▪ Use Rescue Stick to overwrite system software
+▪ If boots after that, then load CMark
+▪ If still won’t boot after Rescue Procedure then replace
+Chameleon board
+
+Marking Head Errors
+Symptom: No Communication with Marking Head error
+(E09100)
+Components involved: HIC, Marking Head Cable, CP -
+Light and Galvos
+Steps:
+• Verify 48V at CP - Light
+• Is CAT7 LVDS cable connected between HIC
+(RJ45) and CP - Light (RJ45)
+• Marking head cable connected at galvos
+
+Marking Head Errors
+Symptom: Marking Head: Temp
+of FM/MHI Assembly Group Too
+High (E09000)
+Steps:
+• Verify jumper in place on LIC
+(pins 1 - 3)
+If this jumper is not present then you
+cannot enable beam source.
+• Galvo block temperature is
+too high – lower duty cycle
+(increase distance between
+markings if possible) or improve
+cooling of head.
+
+Shutter Error
+Symptom: Beam Shutter Does Not Stay Open/Closed
+errors (E10302 or E10303)
+Steps:
+• Check connections at HIC and at shutter
+• Check continuity of shutter cable (wiring diagram
+contains this)
+• Shutter itself may be binding and not freely moving
+
+Galvo Concept
+• Must have 24V (supplied by Chameleon from X28.1 & 2) to Galvo
+Release connector on CP - Light board. If this is missing then galvos
+will be shown as missing.
+• Voltage out to galvos from CP - Light and position detect back to CP -
+Light from galvos is a closed loop. If loop is not closed errors will
+occur.
+Galvo
+Voltage
+Galvo Release
+Position Detect
+
+Symptom: Overpositioning of X - or Y - Mirror (E09002 or
+E09003) - or - X - or Y - Mirror Overcurrent (E09006 or
+E09005) - or - or X - or Y - Mirror Missing (E09006 or E09005)
+Steps:
+• Verify X and Y galvo voltage connectors from CP - Light out
+to galvos are seated correctly
+• Verify X and Y galvo position detect connectors (feedback
+from galvos ) are seated correctly on CP - Light
+• Check wires at X28.1 (red) and X28.2 (black) are making
+good contact/seated correctly
+• Verify Galvo Release connection in place on CP - Light
+• Marking Head Cable
+• Galvos (Verify movement to home position by moving then
+gently before startup and then watch for any movement
+upon startup )
+
+Red Emission LED Defective
+Causes:
+• Failure of one or more of the LEDs of the Emissions LED
+board in marking head
+• Failure of the red LED on the membrane keyboard.
+
+Wrong LIC Detected
+Symptoms: Wrong LIC Detected Error (E00212)
+Steps:
+• LIC not connected to Chameleon
+• Wrong model selected in Web Interface
+• Ensure ribbons cables from LIC are connected
+securely at back of laser source.
+
+Symptoms: Laser Not Ready
+Error (E00200)
+Steps:
+• Check Web Interface>System
+Information Page>Beam Source
+Section
+- Housekeeping Alarm – Check PSU
+- Temperature Alarm – Check for dust
+If source is changed, please provide number of main supply,
+housekeeping, system and temperature alarms listed.
+• Check serial connection (small ribbon cable) to laser source
+(on key switch turned looks for info from source right away).
+
+Symptoms: General Error (E00204)
+Steps:
+• Usually bad laser source, but verify:
+- 24V at Terminal Block and back of laser source
+- Serial interface cable securely connected at back of laser source
+(small ribbon cable)
+- Digital interface cable securely connected at back of laser source
+(large ribbon cable)
+Digital
+Interface
+Power
+Serial
+Interface
+
+Laser Source Errors
+Symptoms: Defective Element in Laser Supply
+(E00211)
+Steps:
+• Verify X9 pin 3 has red wire (laser power) inserted
+completely and X9 pin 13 has gray (laser ground)
+inserted completely
+• Verify 24V to X9 pin 3
+• Relays on SPM/CPD3 may be worn out. SPM/CPD are
+the switching element from the Chameleon’s view.
+
+Safety System Errors
+Symptoms: Interlock Open status and not able to clear
+Steps:
+• Verify both interlock circuits are closed
+• Check wiring at door switch/emergency switch on customer side
+• Verify connection at X9 pins 17 - 21 and 15 - 19
+• Check fuse at X9
+• If no FASS , then verify jumper from X9 pins 1 - 23 in place or reset
+switch is installed and closes then opens following reset.
+• If FASS installed, ensure reset switch in place X9 pins 1 - 23 is
+normally open, then closes and opens again following interlock
+open.
+• Both interlock circuits must open/close at same time. Too much
+time between open and close on circuit 1 and 2 results in Interlock
+Open.
+
+Safety System Errors
+Symptom: Clicking noise while Interlock Open
+Steps:
+• System is designed for double pole switch (two
+channel redundant interlock circuit). If only using
+single pole switch and just replace one jumper
+with switch then clicking noise will be heard. This
+is a relay struggling to latch and this will do long -
+term damage to CPD/SPM board.
+• Use following wiring scheme with single pole
+switch:
+• X9 pins 17 - 21 install single pole
+switch from pins 15 - 19
+• Jumper pins 15 - 17 and 19 - 21
+
+Industrial Protocols ( EtherNet /IP or PROFINET)
+Symptom: The Miscellaneous Interface Controller (MIC)
+was not found or is not supported. E15100
+Steps:
+• Verify MIC board connected to Chameleon if exists in system
+• Verify that Web Interface> Other>External Interface shows
+“”Disabled” if no MIC present.
+
+Industrial Protocols ( EtherNet /IP or PROFINET)
+Symptoms: The Interface communications module
+couldn’t be detected. E15101 or E15102
+Steps:
+• Verify MIC board connected to Chameleon
+• Ensure correct MIC (Blue dot for EtherNet /IP or Yellow for
+PROFINET
+• Verify that Web Interface> Other>External Interface has
+correct MIC selected ( EtherNet /IP or PROFINET)
+
+Web Interface Changes
+
+Changes to Web Interface
+• Crash Dump – Download Crash File upon failure
+• Select galvo Tuning in Config >Edit
+- Tuning 1 = Quality
+- Tuning 2 = Speed
+• System Information Page
+• SAR Software Version
+-- Displayed in “About” menu
+• License Information – Copy of Open Source
+License Information. Requirement from Legal.
+
+Selectable Tuning for Galvos
+Tuning 1 = Quality
+Tuning 2 = Speed
+Better to set through TCS+. Description is better and no reboot required.
+
+Crash Dump
+• If the OS crashes and laser shuts down then a Crash Dump will
+be created. Reboot and connect to Web Interface and download
+Crash Dump to send with escalation (if escalated).
+• Could also be used if disconnect issues.
+• Only one crash dump stored in memory at a time. Must delete to
+create a new Crash Dump if one already exists.
+
+System Information Page
+Access from About menu
+• Temperatures
+• Part numbers
+• Beam source info
+• FASS relay states (if
+installed)
+
+System Information – Beam Source Section
+Data only visible if
+key switch closed!
+If beam source is
+changed, please
+document which errors
+and how many.
+Building data on failures for
+future troubleshooting.
+
+System Information – FASS Relay Status
+Displays when relays on CPD are opened/closed
+Color = Closed
+No color = Open
+Only displays status when FASS is present. If SPM only
+then there is no information displayed here.
+
+System Information – Software Info
+If any TCL/SAR
+installed will be
+shown here
+
+SmartGraph Changes
+
+SmartGraph Changes
+• Export of database is now always . gz instead of . ydb
+• Barcode types added: EAN8, UPC_E, RSSLIMGP
+• IDMatrix (2D codes) types added: Micro QR, PDF417
+• Information window (in Template tab) expanded and
+includes graph
+• Fixed width text fields now have selectable anchor point
+(upper left, center/center, etc.)
+• Filled fonts and logos – additional controls for outlines and
+filling
+
+Filling Parameters
+Used with Fill Fonts and Logos
+that were not filled on import
+Changes:
+• Indexes can be assigned
+separately to outline and filling
+• Acceleration Compensation for
+outline and filling
+• Meander filling
+• Sort Vectors
+• Bidirectional filling
+
+Contour Parameter
+Example above:
+Real contour: Black line, Distance = 0.0 mm
+Positive distance: red line, Distance = 0.1 mm
+Negative distance: blue line, Distance = - 0.1
+Distance - Defines the offset of an outline. Effectively shrinks or
+expands the outline of character. Can compensate for line width of
+laser (i.e. draws character outline slightly smaller to compensate for
+large spot size/line width).
+
+Acceleration Compensation
+Acceleration Compensation for Fillings
+Acceleration Compensation for Outlines
+Acceleration Compensation – An extension at the beginning
+and end of the vectors. Use an extension to eliminate irregularities
+at the beginning and end of vectors. Close gaps at ends of lines
+(outlines or fillings).
+
+Filling Parameters -
+Index Step
+Index Step can be applied to
+Outlines and Fillings separately
+
+Filling Parameters -
+Meander Filling
+Meander Filling avoids jumps by
+connecting via parts of the Outline.
+
+Filling Parameters -
+Sort Vectors & Bidirectional Filling
+Sort Vectors – Filling path is optimized to
+minimize number of jumps.
+Bidirectional Filling – Fillings mark in
+both directions to ensure jumps at end of
+lines are shorter. If option is not active then
+all fillings are in same direction. This leads to
+longer jumps to get to next vector.
+
+Bidirectional Filling
+Bidirectional Filling Unidirectional Filling
+
+TCS+ and TU430 Changes
+
+Changes to TU430
+• Rotate Display 180 °
+-- Can now mount with cable up or down
+• Splash Screen during boot
+-- No longer looks like something is wrong during boot
+• Disable ability to connect USB keyboard
+-- Avoids possible misuse and unwanted access
+-- Can still connect USB mouse
+
+Improvements to TCS+
+• Reuse variables
+• Supports Layers
+• Font Import Tool
+• IP Address Configuration
+• Laser name in Browser Tab
+• Mark Settings Helper Dialogue
+• Display active User in Home screen
+
+Changes to TCS+
+Reuse variables
+- Variable in text and barcode can have same name now
+- Previously TCS+ would add “_1” to one of the variables if
+had same name
+
+Layers
+Access Layers
+Configure Layers
+Assign Layer
+to Elements
+
+Changes to TCS+
+• Font Import Tool
+-- Supports . fn , . fnt , . ttf , . otf , . pfa , . pfb , and . svg
+Upload button (Browser)
+or Fonts>Transfer on
+TU430
+
+Changes to TCS+
+• IP address configuration
+- Set IP addresses for laser and gateway
+• Select the Optimization (Tuning)
+for galvos
+- Speed: 2,000 char/sec (SHF60) and
+1,300 char/sec (SHF100)
+- Quality: 1,300 char/sec (SHF60) and
+1,000 char/sec (SHF100)
+Tuning also adjustable through Web Interface -
+Called Tuning 1 (Quality) and 2 (Speed)
+Always set to Quality (Tuning 1) by default.
+• If set in TCS+ then no reboot necessary.
+• Global setting saved to System
+Database.
+• Key switch must be open to change
+setting
+
+Quality vs. Speed Tuning
+QualityTuning: Speed Tuning:
+Filling: Filling:
+Straight Outline
+Outline disturbed
+Steady filling
+Unsteady filling
+(Filling on metal)
+(Filling on metal)
+Character Marking:
+Character Marking:
+Characters become not readable at high speeds @2000cps
+Characters still readable at high speeds @2000cps
+Good for high quality markings
+Good for high speed character
+(e.g. filled logos)
+markings (e.g. Best of date)
+
+Changes to TCS+
+• Mark Settings Helper Dialogue
+”?” button next to each Mark Setting to give description and
+example of the Mark Setting
+
+Changes to TCS+
+• Laser name in Browser Tab
+- Then: Laser name in browser tab could only be the IP address
+- Now: Tab name from Laser Name in Web Interface> Configuration
+• Display active User in Home screen
+
+Adding EtherNet /IP or
+PROFINET
+
+Industrial Protocols
+• EtherNet /IP is primarily adopted in North America
+• Standard offering for Allen - Bradley (Rockwell Automation)
+• PROFINET is primarily adopted in Europe
+• Standard offering for Siemens and GE PLCs.
+• Decision based on:
+• Customer’s current environment (is one already in place)?
+• Real - time constraints – PROFINET has deterministic real - time
+performance.
+• The application (commands) support is equal for both PROFINET
+and EtherNet /IP .
+
+Pertinent Info
+PROFINET
+• Conformance Class: C
+• Cyclic Rate: 250 us (microseconds)
+EtherNet /IP
+• Cyclic Rate not documented.
+Both PROFINET and EtherNet /IP
+• Star, Closed Ring, and Open Ring (daisy chain) topologies
+supported
+• Update of counter values is not done in real time, but updates
+at least every 100ms.
+
+Commands Available
+Laser to PLC PLC to Laser
+• Laser Status (limited status • Clear Alarms
+choices) • Position Adjustment
+• Marking Completed • Rotation Adjustment
+• Command in Progress • Scale Adjustment
+• Command Executed • Intensity Adjustment
+• Command Response • Set Job Name
+• Active Job Name • 5 Variable Fields per
+• Position Value packet
+• Rotation Value • Set Line Setup
+• Scale Value • Start/Stop Marking
+• Intensity Value • Load Data for next print
+• Number of Errors/Warnings
+• Performance Metrics
+(Mark Counter, Product Counter, Batch Size,
+Batch Counter)
+
+Files Available To Customers
+Already posted at ODVA
+EtherNet /IP
+• EDS files (download from either ODVA website or on Sharepoint )
+(One file for each model number)
+https://marketplace.odva.org/products/2085 - vj7x30 - vj7x10 - vj3x40 - vj3x40 - pharmaline
+• Protocol Document (Guide) – Provided on CD with MIC
+- Available commands
+- Sample project step by step
+• Sample project to download (ACD file)
+Will be posted at ProfiBUS at launch
+PROFINET
+• GSDML file (download from either ProfiBUS website or on
+Sharepoint
+https://de.profibus.com/produkte/produktkatalog/?tx_solr%5Bfilter%5D%5B0%5D=member%3
+AVideojet+Technologies+Inc
+• Protocol Document (Guide) - Provided on CD with MIC
+- Available commands
+- Sample project step by step
+- Sample project to download (.zip file)
+
+Considerations
+✓ Make sure customer wants EtherNet /IP or PROFINET
+ProfiBUS is not supported! It is not the same thing as PROFINET!
+EtherCAT not supported! Not the same as EtherNet /IP !
+✓ Do not use with CLARiTY Laser Controller!
+This only controls laser. Jobs live on CLARiTY Controller so cannot access
+them with EtherNet /IP or PROFINET.
+✓ Standard ASCII characters only! No Unicode!
+✓ How will you connect cable to MIC? Make sure you have enough
+RJ45 connectors for all cables or order gland plate.
+✓ If PROFINET, what kind of cable/connector are they using?
+Some are too large to fit directly into area around MIC. May only be
+able to use RJ45 on back plate and not directly connect to MIC.
+
+Space Limitations
+Area of concern. Limited space for long
+MIC
+connectors (especially likely with PROFINET)
+
+Considerations
+✓ CPU load increased approximately 10% when using Industrial
+Protocols.
+✓ Compatible with TCL scripts (such as Ultimate or other SARs)
+✓ Compatible with TCS+ and SmartGraph
+✓ Limit of five variable fields per packet. If more than five variable
+fields two separate packets will be required and will take more
+time to populate fields.
+✓ No test tool for emulation yet (Molex has online free tool for
+EtherNET /IP, but use at your own risk).
+✓ Videojet does not have a part number for a switch. Switch should
+be for Industrial Protocols (i.e. for PROFINET or EtherNet /IP )
+✓ Certifications available on Sharepoint
+
+Coming from Factory
+• Order MIC - EtherNet /IP - or - MIC - PROFINET
+Not the same and cannot be reprogrammed in the field!!!
+• MIC enabled by manufacturing
+Must plug customer cable into MIC (or move an RJ45 patch cable
+to MIC). No connection to MIC in units from factory!!
+• Service/Customer changes IP address via web interface
+on install
+• Provide customer documents and sample project
+
+Upgrade in Field
+• Install Chameleon MCIP and correct MIC board
+( EtherNet /IP or PROFINET)
+Features not available with previous Chameleon boards!
+Must have Chameleon MCIP!
+• Must plug customer cable into MIC (or move an RJ45
+patch cable to MIC). No connection to MIC by default.
+Do you need to change communications plate? Need additional RJ45 ports?
+• Load CMark version 4.5
+• Enable MIC and provide IP address via Web Interface
+• Provide customer documents and sample project
+
+Enable EtherNet /IP or PROFINET
+1) Connect to Web Interface
+2) Select Other menu
+3) Select External Interface
+4) Select EtherNet /IP or
+PROFINET from drop - down
+
+Enable EtherNet /IP or PROFINET
+• DHCP set by default; remove checkmark to use static IP
+• Set Host Name (if desired)
+• Click Save button
+• No reboot required. Allow about 2 minutes for connection
+and screen refresh
+
+Enable EtherNet /IP or PROFINET
+After about 1 minute screen will refresh and Status will show
+“Active”
+
+MIC - LEDs
+Each MIC has following LEDs, but with different behavior for
+PROFINET versus EtherNet /IP :
+Number Description
+1 Network Status
+2 Module Status
+3 Link/Activity – Port 1
+4 Link/Activity – Port 2
+
+Troubleshooting: Industrial Protocols
+( EtherNet /IP or PROFINET)
+Symptom: The Miscellaneous Interface Controller (MIC)
+was not found or is not supported. E15100
+Steps:
+• Verify MIC board connected to Chameleon if exists in system
+• Verify that Web Interface> Other>External Interface shows
+“”Disabled” if no MIC present.
+
+Troubleshooting: Industrial Protocols
+( EtherNet /IP or PROFINET)
+Symptom: The Interface communications module couldn’t be
+detected. (E15101 - EtherNet/IP not found – or - E15102 - PROFINET
+not found)
+Steps:
+• Verify MIC board connected to Chameleon
+• Ensure correct MIC (Blue dot for EtherNet /IP or Yellow for
+PROFINET
+• Verify that Web Interface> Other>External Interface has correct
+MIC selected ( EtherNet /IP or PROFINET)
+
+Beyond 7230/7330
+✓ Chameleon MCIP and MIC (either EtherNet /IP or PROFINET
+versions) can be retrofitted into all Chameleon - based laser
+systems (Release date for this option is pending)
+✓ Chameleon MCIP will be used in all Chameleon lasers going
+forward once stock of existing Multi - Core Chameleon boards
+is burned down. (Release date for this option is pending)
+✓ Spare parts in future will only include Single Core
+Chameleon and Chameleon MCIP (multi - core with MIC
+connector). Green Multi - Core Chameleon will be obsoleted.
+
+PROFINET Addressing of Process
+Data
+
+Data Allocation
+(partial snapshot of
+Laser to PLC Byte
+assignment shown;
+see User Guide for all
+Process Data
+Assignment)
+
+Data Allocation
+(partial snapshot of PLC to
+Laser Byte assignment shown;
+see User Guide for all
+available)
+• Make sure that Job
+and Field Names and
+Data and do not
+exceed maximum
+length!
+• Only use ASCII
+characters!
+
+Performance Metrics
+These fields do not update in real time, but do update at
+least every 100 ms.
+Slower than exchange of process data (filling variable
+fields, getting status of laser, etc.)
+
+Commands
+(partial snapshot of
+commands shown; there
+are additional available
+shown in user guide)
+These commands
+would be located
+within Byte 0 of
+packet sent to laser
+
+Command Responses
+Partial snapshot
+of responses
+shown; all
+available are
+shown in user
+guide.
+
+Notes and Rules
+• Process data is exchanged periodically, though
+commands are not executed each time. This is done to
+change the command ID to trigger next action.
+• Command “ NoOperation ” must be sent before a new
+command can be sent. Example: NoOP - Start - NoOP - Stop
+• Exception to this rule: To trigger loading of field data,
+these commands can be toggled: NoOP - LoadFieldDataA -
+LoadFieldDataB - LoadFieldDataA …
+• When “ NoOp ” is sent, the sender must check and wait for:
+CommandRespons =“ CommandSuccess ” and
+CommandExecuted =“ NoOp ”
+
+Notes and Rules
+• Only one command can be executed at a time. If a command
+is in progress and a new one arrives, it will be postponed and
+executed when the first one has been finished.
+• When a command was executed successfully the Response
+will be set to " CommandSuccessful " and the ID of the
+command will be assigned to " CommandExecuted ".
+• When a command failed to execute, Response will contain
+respective error ID and " CommandExecuted " will not be set.
+• Commands with an unknown ID will be answered with
+"Unknown Command".
+• " CommandInProgress " indicates the processing of
+command and not the action.
+• " CommandInProgress " will not be set for " NoOperation “ and
+commands with unknown ID.
+
+Command Data
+Can be… Where
+Command Set in Data O2T (PLC to laser) Byte 0
+Command In Progress Read from T2O (Laser to PLC) – Byte 3
+Command Executed Read from T2O (Laser to PLC) – Byte 4
+Command Response Read from T2O (Laser to PLC) – Byte 5
+
+Thank you and watch for
+announcements of 7230/7330
+launch date and cut - in of new
+Chameleon and MIC into existing
+product line.

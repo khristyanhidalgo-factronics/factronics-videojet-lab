@@ -1,0 +1,1894 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\7340 7440 Tech no TCS  11 02 22.pdf
+# cifrado=False bloques=152 caracteres=59735
+
+7340/7440
+20/30W Fiber Laser Systems
+Technical Training
+Rev. 1
+
+Table of Contents
+1) Safety
+2) Introduction
+1) Product Features
+3) System Overview
+1) Supply Unit
+2) Marking Head
+3) Inputs/Outputs
+4) Safety Circuit
+4) Troubleshooting
+5) VRS
+6) TCS+ Expansion (separate presentation)
+
+Safety
+Confidential - Company Proprietary
+
+Ocular Absorption Site Vs. Wavelength
+Confidential - Company Proprietary
+
+Dangers to Eyes and Skin
+• The laser system produces class 4 laser radiation. Infrared laser radiation
+is not visible for the human eye. Therefore eyes and skin are endangered
+through high - energy laser radiation.
+• High radiation intensity causes a local heating and burning of the cornea
+and thus a reduction or loss of sight!
+Confidential - Company Proprietary
+
+Retinal Damage
+Confidential - Company Proprietary
+
+Primate Retinal Damage
+Confidential - Company Proprietary
+
+MULTIPLE PULSE RETINAL INJURY
+Confidential - Company Proprietary
+
+The Human Skin
+File:Skin.jpg
+Confidential - Company Proprietary
+
+Wavelength Vs. Skin effects
+Confidential - Company Proprietary
+
+Suitable Safety Glasses
+• Designed for the wavelength range of the fiber
+laser of 1,040 – 1,090 nm.
+Careful with confusion!
+• Safety glasses for other lasers, e.g. CO2 laser,
+do not provide adequate protection against
+radiation of a fiber laser!
+Confidential - Company Proprietary
+
+OD on Eyewear Labels
+YAG and
+Fiber
+CO2
+Confidential - Company Proprietary
+
+An Nd:YAG laser with a power of 50 watts is projected onto a fully dilated human eye pupil of
+7 - mm diameter. The eye is exposed for a duration of 10 seconds. Calculate the minimum optical
+density OD of a laser safety goggle needed to protect the eye from damage. Refer to ANSI Z136 - 2014
+Table 2 - 3 for the appropriate maximum permissible exposure (MPE).
+Given:
+• Nd:YAG
+• λ = 1064 nm
+• t = 10 s
+• Eye diameter = 7 mm
+• MPE = 0.0051 W/cm2 (See Table 2 - 3 for Nd:YAG, 1.064 μm, 10 - second exposure.)
+• P = 50 W
+Area of pupil =
+π D ² = (3.14)(0.7 cm) ² = 0.38 cm²
+4 4
+Solution:
+Where OD = log10 E 0 and E 0 = P / A, we get:
+MPE
+OD = log10 5 0 W / 0.38 cm²
+0.0051 W / cm²
+OD = log10 25,799
+OD = 4.4 Rounded up to an Optical Density of 5
+Now with 100 Watt fiber OD equal to or greater than 6 should be used
+Confidential - Company Proprietary
+
+Fire Hazard
+▪ Material
+▪ Laser settings
+▪ Ignition of gases / fumes
+▪ Flammable solvents
+▪ Fire extinguisher
+▪ Keep area clean
+▪ Maintenance
+Confidential - Company Proprietary
+
+Electrical Safety
+• Danger of explosion exists if battery is incorrectly
+replaced.
+• Replace only with the same or equivalent type.
+• Dispose of used batteries according to the
+battery manufacturer’s instructions.
+• Power supply is on if laser is plugged in.
+Confidential - Company Proprietary
+
+High Voltage Shock Hazard
+▪ The most common laser - related cause of
+death
+▪ Do not disable enclosure safety switches
+▪ Do not wear anything metal like a ring,
+bracelet, watch, bet buckle, earrings, or keys
+▪ Never stand on a wet surface
+Confidential - Company Proprietary
+
+Mechanical Hazards
+• Moving equipment
+• Loose fitting clothing, ties, jewelry, should
+not to be worn
+• When to put the system into Emergency
+Stop mode
+Confidential - Company Proprietary
+
+Cleaning Solvents
+• Solvents
+– Acetone
+– Methyl alcohol (methanol)
+– Isopropyl Alcohol (rubbing
+alcohol)
+• Flammable
+• Irritants
+Confidential - Company Proprietary
+
+General Safety
+Class 1:
+Not capable of emitting accessible laser radiation in access of
+what the AEL allows for class one.
+Example: Laser Printer, CD player
+Class 2:
+Not capable of emitting accessible laser radiation greater than
+AEL allows with .25 exposure duration.
+Example: Pilot laser and He - Ne alignment Laser
+Class 3:
+Potentially hazardous if focused at the eye or skin for less time
+than what’s allowed for class 2
+May cause acute eye hazards
+Example: Laser Pointer, level/guide
+Class 4:
+May present a serious fire, skin or diffuse reflection hazard.
+Output exceeds that of a Class 3
+Recommend Class 1 installation (shielding, interlocks, etc.)
+Example: CO2 and YAG laser tubes
+Confidential - Company Proprietary
+
+Reflections of light
+Confidential - Company Proprietary
+
+Fume Extractors
+Wear mask, gloves and
+eye protection when
+handling used filters.
+Xtract Pro (Interior)
+Confidential - Company Proprietary
+
+Fume Extractors
+Xtract Lite
+Xtract Pro Xtract
+Xtract PVC
+Max
+Important:
+• Power cord must be ordered separately (not integrated like previous models; except
+Xtract Max 115V)
+• IO cable must be ordered separately (not integrated like legacy fume extractors)
+• IO cable wiring different from legacy fume extractors
+• Xtract Max does not include hose kit (other Xtract models include hose)
+Confidential - Company Proprietary
+
+Fume Hazard
+▪ Some materials, such as certain plastics, emit
+toxic gas when they burn under a laser beam
+▪ Consult the manufacturer of material
+▪ Turn on ventilation system
+Direction of product movement
+Confidential - Company Proprietary
+
+Fume Hazard
+• When printing on materials with laser radiation by
+products are produced which are dangerous to
+health!
+• Through vaporization of materials fine dust and
+vapors are produced which might include
+hazardous byproducts depending on type of
+material.
+• It is highly recommended that an exhaust unit be
+installed to prevents contamination and gradual
+destruction of optical elements of the beam delivery
+system by dust particles.
+Confidential - Company Proprietary
+
+Why Fume Extraction?
+Headaches
+Eye Irritation
+Sore Throat
+Occupational Asthma
+Respiratory Irritation
+Confidential - Company Proprietary
+
+Safety Guards Side View
+• A safe installation requires that the laser beam
+be guarded utilizing interlocks
+Length must be sufficient to
+prevent skin and eye contact
+with beam path.
+Ceramic tile should be
+affixed opposite the laser
+head (other side of product)
+to absorb laser light if no
+product is present (if fired).
+Laser hazard stickers
+should be affixed to the
+guard in clear view.
+FIBER LASER Insert laser head here.
+Removal requiring
+special tools.
+Confidential - Company Proprietary
+
+Safety Guards Top View
+• Any parts of the safety guard which can be
+removed (slides or hinged parts) should be
+interlocked so the laser is paused (shutter
+closed) when those parts are open or
+removed
+Top View of Guard
+Sliding cover to allow
+PRODUCT access to conveyor PRODUCT
+Removable parts
+should be
+electrically
+interlocked in
+No laser reflective CLOSED position.
+materials should interrupt
+the beam path (metal)
+Confidential - Company Proprietary
+
+Laser Safety References
+• CDRH - Center for Devices and Radiological Health
+– An agency within the U.S. Food and Drug Administration which publishes
+and enforces legal requirements on laser product manufacturers. For copies
+of the CDRH regulations, contact: CDRH (HFZ - 312), 2098 Gaither Road,
+Rockville, MD 20850, Telephone (301) 594 - 4654
+• ANSI/OSHA - ANSI (American National Standards Institute)
+– U.S. organization that publishes standards for laser users. Their laser safety
+standards are not laws, but they form the basis for state and OSHA
+requirements for the use of lasers. For copies contact ANSI in New York at
+(212) 642 - 4900 or the Laser Institute of America, at Telephone (407) 380 -
+1553, Fax (407) 380 - 5588
+• OSHA - The Occupational Safety & Health Administration
+– Does not have specific laser safety requirements. However, if they are
+called into a facility, the inspectors follow published guidelines (OSHA
+Instruction PUB 8 - 1.7 Guidelines for Laser Safety and Hazard Assessment)
+that are based on an earlier (1986) ANSI Z136.1 standard.
+Confidential - Company Proprietary
+
+ANSI Z 136.1 - 2014
+Purpose
+• Create a standard of measurement.
+• Determine thresholds where radiant
+energy becomes a hazard.
+• Categorizes laser into four basic hazards.
+• Provides recommendations for the safe
+usage of lasers and laser systems between
+180nm and 1mm.
+Confidential - Company Proprietary
+
+Product Features
+
+Variants/Options
+Wattage
+• 20 Watt (7340) – 3 meter only
+• 30 Watt (7440) – 3 meter or 10 meter umbilical
+• Focus Finder beam - TCS+ only!
+• Pilot laser standard
+Marking Heads
+• CFS - S/ - M/ - L – straight out marking head
+• CFT - S/ - M/ - L – turned outcoupling
+Interfaces
+• TCS+ (browser or TU430 touchscreen)
+• SmartGraph (PC software)
+• CLARiTY Laser Controller
+Add - On Features Available
+No Traversing!!!
+• EtherNet /IP Module
+If you wear out
+• ProfiNET Module
+umbilical you must
+• Special Wifi kit that uses internal power
+replace beam source!!!
+
+System Overview
+Supply Unit
+Marking
+Unit
+
+Approved Mounting Options – Supply Unit
+Must rotate compressor (inside supply
+unit) if installing supply unit on side.
+Only this side position approved ( keyswitch
+toward bottom)
+Do not mount supply unit upside
+down or with umbilical facing
+downward.
+
+Membrane Keyboard
+Stop
+Start
+Power On Standby
+Key
+switch
+Shutter
+Status Bar LEDs
+Emission
+Open LED
+Error LED
+Booting and Marking
+LED
+Status
+
+Supply Unit Rear
+Communications Plate
+Customer Interface Plate
+(Standard shown;
+TU440/TU430 Connector
+(Standard shown)
+options available)
+(Optional; not included on standard)
+Power Cord
+Receptacle
+Fuse
+Insert
+Power Switch
+Umbilical
+
+Customer Interface Options
+Rear Panel – Left Side
+CI Type 4 (Standard)
+Quick Connect (Optional) Cable Passage (Optional)
+
+Controller Options
+Rear Panel - Center
+Cover Plate (Standard)
+TU440 Connector (Optional)
+Be sure to order
+connector too if ordering
+TU440. Connector not
+automatically put on
+machine when TU440
+ordered.
+
+Communications Options
+(Rear Panel - Right Side)
+Single RJ45 (Standard) Double RJ45 (Optional)
+Cable Glands (Optional)
+Note: Cable Passage plate
+on right hand side is different
+part number. Screws are
+different sizes.
+
+Marking Head Holder Options
+Sensor
+Holders
+• Detects when head is out of holder (optional)
+• Order sensor plus appropriate cable (3m/10m)
+• Works with Tube or Dovetail holders
+• Separate from Interlock/ Shutterlock
+Dovetail
+Tube
+Sensor
+
+Block Diagram of System
+
+System Overview - Electrical
+
+Supply Unit (Top View - Main Components)
+Laser
+Source
+HIC_CPA
+CP - Light
+CMark 4.12.1
+or newer
+ignores
+UADB even if
+MIC
+present UADB Chameleon
+LIC_JPT
+(Not present after Dec. 2021) (Optional)
+MCIP
+
+System Cooling
+3 x Cooling Fans
+(Key switch
+activated)
+Not the same
+fans as 7610
+Supply Unit
+Cooling Fan
+(Constant)
+Cooling Compressor
+(Cooling for Marking Unit)
+
+Chameleon Board MCIP2 Artix
+Requires
+FPGA
+EEPROM
+min. CMark MIC Connector
+Qseven
+DSP
+4.15.1
+2 TCP/IP
+Ports
+USB - for Rescue
+Stick only
+2 Serial
+HDMI – for
+Ports TU440/TU430
+only!!!
+(only use
+lower port)
+Customer
+Interface
+Keypad
+Connector
+SPM/CPD Connectors
+X28 Power
+Confidential - Company Proprietary
+
+Necessary to boot process
+The Backup - Battery
+The battery buffers the following dynamic data, in the SRAM (128 KB) on the
+Chameleon board:
+• The last used template
+• Dynamic datas for all templates (e.g.: serial numbers, variables, shift codes, etc.)
+• Time and date (the clock even runs if the laser is switched off)
+The lifetime of the
+Battery
+battery is more than
+1 year, typical 3 years.
+QSeven
+SRA
+QSeven
+M
+Confidential - Company Proprietary
+
+Chameleon Board - Overview 3
+DIP - switch No.1 to ON :
+X23 A&B
+temporary IP - address 192.168.1.1 is generated
+Two Ethernet Connectors DIP
+Switches Reset
+X31 A&B
+RS - 232
+ports
+HIC
+LIC
+X3
+Customer
+Keypad &
+Interface Keyswitch
+Connector
+X28
+Power Supply
+X18 X6
+connector
+CPD/SPM Connectors
+Confidential - Company Proprietary
+
+Multi - Core Chameleon Boards
+Color may differ, but mostly similar features and procedures.
+Differences:
+▪ Green (MC) does not have MIC Connector
+▪ Blue and Red do not have SD slot
+▪ Red (MCIP2 Artix ) requires minimum CMark 4.15.1 and minimum PlexMark v.
+1.14 (Rescue Stick)
+Oldest to Newest
+Chameleon MCIP M2
+Chameleon MCIP Chameleon MCIP2
+Chameleon MC
+(Only used in 3x40s
+(Multi Core Industrial Artix
+(Multi Core)
+manuf. in Europe )
+(Min. CMark 4.15.1;
+Protocols)
+Confidential - Company Proprietary
+Qseven color may vary)
+
+SD LEDs not present on
+boards with no SD slot
+D77 SDIO activity (not active)
+D66 SDIO overload
+D52 DSP power
+D76 SDIO power
+D33 DSP alive
+D57 Lase
+D56 Vector
+D55 Trigger
+D54 Marking
+D18 Encoder ChA Status
+D2 Encoder ChB Status
+D4 Encoder Index Status
+D6 Trigger Sensor Status
+D8 On if Trig Enable is on (bridged)
+D22 Reserved
+D20 On if Trig Connected
+D16 On if Encoder Connected
+D70 24 V present
+D71 5 V present
+D72 3.3 V present
+D73 2.5 V present
+D74 1.2 V present
+D47 48 V present
+D11 12V present
+K
+D35 CI 24V Present
+1
+IC72
+Confidential - Company Proprietary
+
+Chameleon Board – X28 (Power)
+Default Connections:
+Pin 01 (V) and 02 (GND): 24V to fan (single, small fan in supply unit)
+Pin 06 (GND) and 12 (V): 48V to CP - Light board
+Pin 10 (GND) and 11(V): Power to Chameleon (48V) from electronics PSU
+Pin 13 (V) and 14 (GND): Feedback from laser PSU (24V)
+External Power 12V/24V: Pins 07 (V) & 08 (GND): 12V/24V and GND
+from customer to supply CI
+Important :
+While supplying external 12V/24V, the complete customer interface is potential
+free! Also the connectors for incremental encoders and light barriers!
+Laser Power Supply Control: Pin 13 - 14
+The Chameleon Board monitors if laser voltage (24V) is switched to the beam source
+External startup: Pin 3 - 5
+Customer can boot the system remotely, by applying a pulse of 24V_STDBY here.
+By using the autostart bridge on X28.3 and X28.5, the system boots up automatically, after
+switching mains and never powers down after shutdown sequence (reboots). Ensure
+system main power is removed before reboot or safety system reset failure will occur.
+NO EXT 24V allowed!!
+
+Chameleon Board – X28 (Power)
+Pin: Name: Description:
+X28.1 CHAM_24V_SWITCH OUT 24V to fan (single, small fan in supply unit)
+CHAM_24V_SWITCH
+X28.2 OUT GND for fan (single, small fan in supply unit)
+_GND
+The system can be started remotely by a pulse from X28.5. If
+X28.3 Ext_Startup IN permanently connected to X28.5 system boots automatically after mains
+is connected. No connection to 24 V Ext allowed.
+X28.4 Not populated --- GND
+Output terminals of 24V of standby power supply.
+X28.5 24V_STDBY OUT
+(Not connection to 24V Ext allowed if CI should be isolated)
+X28.6 HEAD_GND OUT GND for CP - Light 4 board
+External Power Supply
+X28.7 IN 12 - 24V Input from customer to supply power for Customer Interface
+12 - 24V
+External Power Supply
+X28.8 IN GND Input from customer to supply ground for Customer Interface
+GND
+X28.9 Not populated ---
+X28.10 PSU1_GND IN GND to Chameleon (no customer connection allowed)
+X28.11 PSU1_48V IN 48V Power to Chameleon board (no customer connection allowed)
+X28.12 48V_HEAD OUT 48V for CP - Light 4 board
+X28.13 LASER Voltage IN 24V from laser power supply. Used for monitoring laser PSU output.
+X28.14 LASER GND IN Ground from laser power supply. Used for monitoring laser PSU output.
+
+The Voltage Jumpers – X19 + X20
+X20: green
+X19: yellow
+Confidential - Company Proprietary
+
+HIC_CPA (Head Interface Controller)
+• Shutter cable (signal) goes from HIC to CP - Light 4 board.
+• There is no electromechanical shutter in the system.
+• The shutter function is realized on the CP - Light 4 board and then
+through the galvo cables.
+• For 15ms there is a boost current necessary, in order to deflect
+the mirrors safely to the shutter position.
+LVDS cable from HIC
+to CP - Light (CAT 7
+Ethernet cable)
+
+LIC_JPT (Laser Interface Controller)
+• New board! Works with JPT beam sources.
+• Interface between Chameleon and JPT beam source.
+• Two ribbon cables – integrated into LIC board connects on back of
+laser source. One is digital (latch signal) and other is RS232.
+• Board contains an air pressure sensor, for monitoring the
+compressor pump for the marking head.
+• Has input from UADB board (orientation of cooling compressor).
+UADB not present in lasers made after Dec. 2021. Not monitored
+beginning with CMark version 4.12.1.
+
+LIC_JPT - LEDs
+Laser is in Normal Operation when
+D2 is ON and D3, D4, & D5 are OFF
+▪ D6 (Green): is active, when system is
+lasing.
+▪ D7 (Yellow): indicates, that the
+monitoring of the air pressure sensor and
+the orientation sensor on the UADB is
+running.
+▪ D71 (Green): i s switched on, when an
+isolated voltage of 5V is present.
+
+Electronics Power Supply (48VDC)
+• 48 VDC (200W) PSU for everything except laser source.
+• Incoming AC voltage always received from SPM/CPD as long as unit is
+plugged in.
+• SPM/CPD does not switch off AC voltage to electronics power supply
+ever.
+
+Laser Power Supply (24VDC)
+• 24VDC PSU only supplies the laser source and nothing else.
+• Incoming AC voltage for power supply is switched by the
+SPM/CPD based on keyswitch , emissions LEDs, and Interlock
+channels (2) all being closed.
+
+Safety Options
+Standard – SPM (Safety Power Module)
+• Shutterlock - No Performance Level
+• Interlock (no special parts) – No Performance Level
+• Interlock with specific parts - Performance Level „d“
+• O nly if mechanical positive break interlock NC - contacts, single
+screened interlock wires (cross wire short detection), and push button
+manual reset button are used. Any deviation from this results in no
+performance level.
+• No possibility to add FASS
+Marking Head Sensor is
+• Different SPM than on 3640 models!!
+not part of Safety Circuit
+Optional – CPD3 + FASS
+Following performance levels achieved only with mechanical positive break NC -
+contacts and single screened wires (cross wire short detection)
+• Performance Level „d“ for Door (Shutterlock)
+• Performance Level „e“ for Emergency Circuit (Interlock with
+manual reset switch)
+
+SPM (Safety Power Module)
+K1/K2: Interlock channel 1 and 2 (connected doors closed or jumpers in place)
+K3/K4: Chameleon board (software/logic/shutter/emissions LEDs)
+K5: Part of error detection circuit for Performance Level D (detects damage
+to external wiring of interlock system)
+
+CPD + FASS
+- K1+2: Reacts on interlock circuit and switches off the laser beam source
+(Driver = CPD/FASS) -- Interlock important
+- K3: Reacts on a safety logic (when the signal ‘safe laser power on‘ is
+missing, K3 switches off the laser beam source too) (Driver =
+Chameleon). Shutter and emissions LEDs important.
+- K4+8: No function on 7x30
+
+Laser Sources
+• JPT 20 Watt – 3 meter fiber length only
+• JPT 30 Watt – 3 or 10 meter fiber length
+• Pilot laser is generated by beam source
+– Key switch must be turned in order to use
+– Pilot laser is also used in Focus Finder function
+– Shielding or safety glasses required when pilot active because cannot guarantee
+no fiber beam is escaping/being generated since same source!!
+
+Laser Sources
+• Laser sources include fiber cable and collimator (all one part).
+• Made by JPT
+• There are no beam expansion modules in the collimator.
+• Beam diameter at the output is 2.2 - 2.8 mm for CFT and CFS .
+• The pulse width is at 200ns.
+• Waveform at 200ns/25kHz
+When setting laser type in Laser Configuration (Web Interface or TCS+/Service),
+you must specify which length umbilical. If incorrect length errors will occur.
+(Errors generated: E19512: Wrong System Config, E00107: Wrong Configuration, and E10507:
+Error Reading Objective File)
+
+Laser Sources – Power Measurement
+• Use 30 kHz for both sources because difference in power per
+pulse.
+• 20W laser – 2/3 mJ per pulse x 30,000 pulses = 20 Watts expected output
+• 30W laser – 1 mJ per pulse x 30,000 pulses = 30 Watts expected output
+• Measure from following distance so that air knife does not cool power
+meter target resulting in false/underpower reading.
+Marking head Sensor distance
+CFx - S 350mm
+CFx - M 400mm
+CFx - L 450mm
+Expected output power
+From Isolator directly:
+▪ 20.5W min. (20W beam source)
+▪ 30.5W min. (30W beam source)
+At Marking Head Output (min.):
+▪ 18.0W for 7340
+▪ 27.5W for 7440
+Confidential - Company Proprietary
+
+Umbilical
+• Umbilical is part of the laser source
+• Cannot be changed separately
+• Includes marking head cable, air hose for cooling head, and fiber
+optic cable from source
+• To replace umbilical you must change the beam source
+• Min. bending radius of umbilical is 90 mm . The umbilical will be
+made for stationary use only. No traversing applications!!
+
+MIC (Miscellaneous Interface Controller)
+Available as a factory or field upgrade. MIC board with connectors plugs
+into Chameleon MCIP version only!!! MIC cannot be used with earlier
+versions of Chameleon.
+Two versions with different part numbers:
+• EtherNet /IP (Blue sticker)
+• PROFINET (Yellow sticker)
+• Not interchangeable.
+• Firmware/software is on MIC and cannot be changed field.
+• MIC must be enabled through Web Interface.
+• RJ45 ports on MIC for PROFINET and EtherNet /IP only!
+• Use Chameleon RJ45 ports for TCS+, SmartGraph , etc.
+
+Terminal Block
+Block In Out 1 Out 2
+1 +24V 24V PSU Beam 80mm
+Source Fans
+2 +24V Shorted Beam 80mm
+to 1 Source Fans
+3 +24V Shorted Cooling 80mm
+to 2 Compressor Fans
+4 GND 24V PSU Beam Front fan
+Source
+5 GND Shorted Beam Front fan
+to 4 Source
+6 GND Shorted Cooling Front fan
+to 5 Compressor
+7 +48V 48V PSU Wi - Fi Kit Wi - Fi kit PN: AL - SP79930 is
+(Optional)
+specific to 7340/7440.
+Includes regular Wi - Fi kit plus
+8 GND 48V PSU Wi - Fi Kit
+(Optional) cable for power from 48V.
+
+Cooling Compressor
+Creates filtered, cooled air for marking unit and air knife across
+protective glass
+• Diaphragm pump with linear magnetic motor
+• Lifetime of compressor: 16,000 - 20,000 hours expected
+• Air into pump is pre - filtered by front fan filter mats
+• 2 Filters – 1 in - line and 1 bulb style filter on pump
+– Maintenance: Change filters on pump every 6 months
+• Orientation matters!! Pump must be rotated 90 degrees if installing supply
+unit in an orientation other than feet down.
+• Air pressure monitored at LIC board – if pressure is too high or too low then
+error will occur. Monitors pressure in millibars, not air flow (120 - 180 mb
+acceptable)
+• UADB (Universal Acceleration Detection Board)
+- No longer present in new units after December 2021. CMark 4.12.1 or newer
+ignores UADB even if present.
+- detects the orientation of compressor. Generates error if pump position is not
+correct. Example: if supply unit installed on its side, but compressor not rotated.
+Confidential - Company Proprietary
+
+Cooling Compressor & UADB
+Air
+Pressure
+and
+orientation
+sensors
+connected
+on LIC
+Cooling
+Compressor
+(Cooling for Marking
+Unit)
+Primary Filter
+From
+Air
+UADB Board
+(compressor input filter)
+UADB
+Pressure
+Secondary Filter
+(Not present after
+(compressor output filter)
+Dec. 2021) Sensor
+Confidential - Company Proprietary
+
+Cooling Compressor – Spare Parts
+Compressor Kit (AL - SP79917) includes:
+• Compressor 24VDC
+• Blue hoses (does not include hose through umbilical)
+• T - fitting
+• In - line filter
+• Bulb - style filter
+• Not included: Bracket and UADB board
+Filter Part Numbers:
+• AL - SP79916 – Compressor Filter (bulb - style)
+• AL - 80418 – In - line Filter
+Confidential - Company Proprietary
+
+CP - Light 4 or 5 (Cool Print Light version 4 or 5)
+• Paired with marking head. Do not separate! Comes as one part number.
+• Once used in a laser there is code written to CP - Light that cannot be undone
+except by Service user in TCS+ (CMark4.7+). Creates fault if system sees that
+code on CP - Light does not match laser configuration. So if moving CP -
+Light/Marking Unit to another laser with different umbilical length/wattage/head
+type you need to reset code or fault will occur.
+• Set includes calibration files to upload, located on a USB - stick.
+• Larger capacity EEPROM stores four different tunings for marking head (2 sets:
+Precision or Speed; 3 - meter or 10 - meter fiber length).
+✓ Automatically selects fiber length tuning upon boot by looking to Chameleon system
+database.
+✓ Precision or Speed tuning selectable in software
+CP - Light5 (requires min. CMark 4.15)
+CP - Light4 (obsolete)
+
+CP - Light (Cool Print Light)
+Thermistor connector (white/brown wires on X7)
+- Displayed in Marking Head Temperature in
+Thermistor connector (red/violet cable):
+System Information.
+Sensor in marking head and cable
+- Connected to X7/Pin 3+5 (X galvo)
+connects here, but not used.
+- Sensor in marking unit.
+Power +48VPower +48V
+XX -- Mirror currentMirror current
+(X7)(X7)
+YY -- Mirror currentMirror current
+CAT7 Cable
+(X9)(X9)
+from HIC
+Vector signals
+(LVDS)
+Shutter function cable
+LEC
+EEPROM – 4 Tunings
+from HIC - CPA
+X - Y - Mirror feedback
+(2 sets of tunings: speed
+or quality and for 3 m
+Environmental Temperature in Marking Head section of
+versus 10 meter umbilical)
+System Information is measured at the CP - Light
+
+The CP - Light - Board
+Error diagnostic LED‘s
+Board voltages (Green)
+Communication Error
+(Red if comms error -
+CAT5 cable)
+Heartbeat
+(CPU is alive
+OTW
+if blinking green)
+(Red if PWM Driver
+is overtemperature)
+Fault
+Done
+Fault PWM
+(Red is Marking
+(Green if FPGA
+(Red if PWM Driver
+head error)
+is programmed)
+has an error)
+Confidential - Company Proprietary
+
+Marking Head Cable
+CFT / CFS Marking Heads
+CP - Light
+• Connects CP - Light with the galvo mirrors in the marking head. Part of beam
+• Connects CP - Light with LEC board source/umbilical.
+• Provide a Thermistor to measure the marking head temperature
+• HIC - CPA to CP - Light board.
+• CP - Light to two thermistors in the marking head. Only one is actually used
+(System information: Marking Head Temperature).
+Confidential - Company Proprietary
+
+Marking Unit
+Overview
+Confidential - Company Proprietary
+
+Marking Unit Overview
+Marking Head always IP65 and IP69
+Straight
+Supply unit is IP21
+(CFS Head)
+Two by three versions
+• CFS ( - S/ - M/ - L) Colibri Fiber Straight
+• CFT ( - S/ - M/ - L) Colibri Fiber Turned
+Tuning is selectable in the Laser Web
+Interface and in the TCS+ Software.
+• Tuning 1: Quality - more precise but less
+characters per second
+• Tuning 2: Speed (up to 2,0 00 characters
+per second)
+Turned
+(CFT Head)
+Confidential - Company Proprietary
+
+Working Distances and Mark Fields
+Working Marking Fields
+Distances
+Head Working Distance Working Distance A B
+Size CFS CFT
+S 72 89 37.01 63.58
+M 112.5 129.5 48.25 89.30
+L 171 188 64.46 126.30
+All values in mm
+Confidential - Company Proprietary
+
+Marking Unit - Orientation
+CFT - Black line
+should be vertical.
+Window frame
+should not be
+perfectly
+horizontal for
+marking.
+Score marks (black lines) identify relative position of head
+Confidential - Company Proprietary
+
+Marking Unit Overview
+CFS
+(Straight)
+CFT
+(Turned)
+Slightly longer because requires an additional mirror just before output
+• Galvos are same on all marking heads.
+• Lenses inside unit make the difference in marking field size
+• Air cooling path sealed to optical components
+• Spare part will have sticker on outside of cover with serial number of
+marking unit and marking head type (i.e. CFS - S)
+Confidential - Company Proprietary
+
+Marking Unit Overview
+Beam path (for CFT and CFS Marking Heads):
+1. 1st lens (expansion lens)
+2. 1st turning mirror
+3. 2nd lens (collimating lens)
+4. X - galvo mirror
+5. 2nd turning mirror
+6. 3rd turning mirror
+7. Y - galvo mirror
+__________________
+8. output mirror large (only CFT Marking heads)
+Plus additional focus finder mirror in both heads.
+Confidential - Company Proprietary
+
+Marking Unit – Optics
+Screw(s) to fix the outer
+protective glass
+• Two layers of protective glass:
+- One permanently mounted in
+marking unit housing (Spare part =
+housing)
+- Protective glass (Spare part = Protective
+window with frame)
+• Cannot change expanding or
+focusing lens. They are glued into
+the marking unit (not removeable).
+• If you want different mark field you
+have to change the entire marking
+unit.
+Confidential - Company Proprietary
+
+Marking Unit – Galvos & Shutter
+• Citizen galvos (bigger coils) and slightly bigger mirrors than 6 mm
+• Galvos act as shutter (uses both X - and Y - galvo ).
+• Marking head overtemperature warning at 62 ° C and error at 65 ° C.
+Temperature sensor on marking unit near galvos.
+• Duckbill at end of marking unit. Closes when no pressure coming
+from compressor to seal air tube for head cooling. Correct orientation
+for duckbill shown below. Ensure correct orientation. Replace as
+needed.
+Confidential - Company Proprietary
+
+Marking Unit – Collimator
+• Collimator is the end of the fiber optic cable that is part of the laser
+source. Gives beam its shape and size.
+• Marking unit has groove and fixing plate to hold collimator precisely
+in place.
+Confidential - Company Proprietary
+
+Marking Unit – Calibration Files
+• Marking Unit and CP - Light 4 are paired and come as a set
+• When changing the Marking Unit you will also receive a
+USB with Calibration Files. Load these through TCS+ Lens
+Compensation or Hi - Res in Web Interface.
+• Make a backup in case Chameleon ever needs to be
+changed!! Hi - Res files are stored on Chameleon as part of
+CMark .
+• 1,000 point calibration so high positional accuracy, but spot
+size is less consistent than F - theta lens systems (7510/7610/7810)
+Confidential - Company Proprietary
+
+Marking Unit Lenses
+Not F - Theta lenses so working distance is not the
+same across the marking field.
+F - theta Lens
+Working Distance best at different points
+Working Distance consistent
+in mark field. Spot size varies slightly
+across mark field
+across mark field.
+Manufacturing will find best working distance and set into COS .xml.
+This will be shown in TCS+/ SmartGraph
+Confidential - Company Proprietary
+
+7340/7440 Marking Head Plane
+SHF60A, SHCxxx
+7340/7440 SHF100A, CP - 10
+mirror
+mirror
+mirror
+focussing
+focussing
+lens
+focussing lens
+lens
+(F -Theta objective )
+output window
+X
+X
+X1 2
+3
+f * Θ
+X1 ≈ X2 >>X3
+Only F - Theta objective based marking heads have almost flat marking plains.
+Confidential - Company Proprietary
+
+Pilot Laser
+• While activating the pilot laser, the usage of appropriate
+eyewear is mandatory!!
+• Always integrated in the beam source
+• Is laser Class 2 (below 1mW)
+• Wavelength: 630 - 670nm
+• Can also be used in “Direct Marking mode” from Template tab,
+but only draws once instead of continuous.
+• Is also used for Focus Finder functionality (through TCS+/Line
+Setup)
+• Pilot laser is deactivated on reboot of laser.
+CMark 4.9 and newer: Pilot laser and Focus Finder can be activated directly
+from Main Menu in TCS+
+Confidential - Company Proprietary
+
+Focus Finder
+Keyswitch must be armed to use Focus Finder because pilot laser is used and that is part of the
+laser source.
+Confidential - Company Proprietary
+
+Pilot Laser & Focus Finder
+If using anything in this
+Can use multiples in
+column then no other items
+this column
+can be used at same time.
+CMark 4.9 and newer has quicker access to Focus Finder and several
+new Pilot Laser images
+Confidential - Company Proprietary
+
+LEC – Laser Emission Control Board
+• Part of safety circuit along with red LED on key pad
+• Board is located at end of umbilical, but looks like part of
+marking head
+• LEC contains red LEDs that light when laser is enabled
+• If any LEDs fail then laser cannot be powered (fatal error)
+and the LEC board must be replaced
+• Also provides electrical shielding contact via metalized
+shielding holes
+Confidential - Company Proprietary
+
+Safety System
+Overview & Wiring
+Confidential - Company Proprietary
+
+Safety Options
+Standard – SPM (Safety Power Module)
+• Shutterlock - No Performance Level
+• Interlock (no special parts) – No Performance Level
+• Interlock with specific parts - Performance Level „d“
+• O nly if mechanical positive break interlock NC - contacts, single
+screened interlock wires (cross wire short detection), and push button
+manual reset button are used. Any deviation from this results in no
+performance level.
+• No possibility to add FASS
+Marking Head Sensor is
+• Different SPM than on 3640 models!!
+not part of Safety Circuit
+Optional – CPD3 + FASS
+Following performance levels achieved only with mechanical positive break NC -
+contacts and single screened wires (cross wire short detection)
+• Performance Level „d“ for Door (Shutterlock)
+• Performance Level „e“ for Emergency Circuit (Interlock with
+manual reset switch)
+
+SPM Only
+SPM version with IEC C14 mains entry can carry 8 Amps maximum current (fused)
+Three Ways to Wire for Safety:
+Magnetic/reed switches not
+Shutterlock (No Performance Level Rating)
+recommended with Interlock
+• No rated performance level
+on SPM (current too high)
+• Use fused 24V outputs for Shutterlock on X9 as directed in sample wiring
+Interlock (No Performance Level Rating)
+• Wire using any MECHANICAL switch. Do not use solid state switch or damage
+may occur to switch (capacitors that have high current).
+• Can jumper reset switch if performance level not needed.
+If using 115VAC for laser system then only use
+Shutterlock no matter type of switch. Current
+Interlock ( Performance Level “D”)
+too high on Interlock when 115 VAC unit .
+• Performance Level “d” only if wired exactly as directed AND using exact parts
+(cable and switch) in sample wiring (Use Schmersal AZ 16 - 02ZVRK (min contact
+load 12 V / 5 mA) switch and shielded cable )
+• Must use 24V_fused output on X9 for Reset Switch to maintain Level D rating and
+to avoid errors which will result in Interlock Open status even when closed
+• Requires reset switch for Peformance Level “d” (use push button type).
+Confidential - Company Proprietary
+
+SPM (Safety Power Module)
+K1/K2: Interlock channel 1 and 2 (connected doors closed or jumpers in place)
+K3/K4: Chameleon board (software/logic/shutter/emissions LEDs)
+K5: Part of error detection circuit for Performance Level D (detects damage
+to external wiring of interlock system)
+
+SPM LEDs
+LED Name Color
+D5 Laser Enabled Green (ON) Laser is enabled (both Interlock circuits closed)
+D6 Shutter Enabled Yellow (ON) Shutter is enabled (both Shutterlock circuits are
+closed)
+D7 Shutter Closed Blue (ON) Shutter is closed (“Shutter is Closed”=High)
+D8 Shutter Command Blue (OFF) Close shutter command (“Open Shutter”=Low)
+D9 Laser Power Red (ON) Laser power supply is on
+Fuse (F1) – 1 Amp: Blows when too much current on interlock/ shutterlock to
+detect damage of external wiring. Not a system power fuse.
+
+CPD + FASS
+- K1+2: Reacts on interlock circuit and switches off the laser beam source
+(Driver = CPD/FASS) -- Interlock important
+- K3: Reacts on a safety logic (when the signal ‘safe laser power on‘ is
+missing, K3 switches off the laser beam source too) (Driver =
+Chameleon). Shutter and emissions LEDs important.
+- K4+8: No function on 7x30
+
+CPD3 + FASS
+From CPD3
+
+Wiring SPM (Double Pole Switch)
+Default Jumpers (X9)
+1 - 23: Interlock Reset
+5 - 16: Shutterlock 2
+7 - 14: Shutterlock 1
+15 - 19: Interlock 2
+17 - 21: Interlock 1
+10 - 12: Reserved
+22 - 24: Reserved
+Interlock Reset (1 - 23):
+Can be either jumpered
+or put reset switch in
+place. Reset switch must
+be open when booting or
+fatal error will occur.
+
+Wiring SPM (Single Pole Switch - Interlock)
+If using single pole switch, replace one Interlock
+jumper and put in switch. Then jumper from each
+leg of switch to second channel. If only replace
+one jumper with switch and leave second jumper
+“as is” then once you open door you will remain
+in Interlock Open state forever.
+Failure to wire Interlock with single pole switch as shown
+will result in unclearable Interlock Open!!!
+Interlock
+Wiring
+
+Wiring CPD+FASS
+System reaction:
+Door1/2: Shutterlock Open
+EM1/2: Interlock Open (has to be reset with
+S2)
+Reset Switch (S2) : Must close and then
+open to reset after interlock open condition is
+corrected. Not necessary after Shutterlock
+open.
+Default Bridges
+10 - 12 Door Feedback
+22 - 24 Emergency Feedback
+5 - 16 Door 2 ( Shutterlock )
+7 - 14 Door 1 ( Shutterlock )
+15 - 19 Emergency 2 (Interlock)
+17 - 21 Emergency 1 (Interlock)
+
+Customer Interface
+7340/7440
+Note: Customer Interface programming varies slightly by
+model. Not all lasers have identical inputs/outputs.
+Confidential - Company Proprietary
+
+The Chameleon Board - Customer Interface
+Input Specification (24V):
+Rated voltage 24V
+Current Input 2.5 mA
+Maximum INPUT Voltage level to still <=8.4 V
+be considered a LOW
+Minimum INPUT Voltage level to be >= 9.4 V
+considered a HIGH
+Max. frequency 200 Hz
+Important: If the customer interface is supplied internally, the load must not
+exceed 250 mA
+Output Specification (12V):
+Rated voltage 24 V/Push Pull (high and low activated)
+Max. output current 50 mA max. (short - circuit proof)
+Confidential - Company Proprietary
+
+The Chameleon Board - Customer Interface
+Maximum Frequencies
+Input/Output Max . Frequency
+General Inputs/Outputs (e.g. Start/Stop) 50 Hz
+Encoder 240 kHz
+Trigger 25 kHz
+Confidential - Company Proprietary
+
+The Customer Interface - X21
+Suction Control
+Pin Name Direction Active Description
+High/Low
+1 Exhaust Error In Low Monitors error from fume
+extractor. Bridge if not using.
+2 Suction On Out High Fume extractor can be
+activated remotely via this
+output. Activated on Laser
+Ready
+3 Filter Full In Low Filter status of fume extractor
+can be monitored via this input
+4 GND_CI -
+5 24V_CI -
+6 GND_CI -
+Default Bridges (when
+Xtract Pro, PVC & Max Xtract Lite wiring: AD Oracle wiring:
+fume extractor is not
+wiring: Pin 1: Orange (Suction Pin 1: green (Exhaust
+connected):
+Pin 1: Yellow (Suction Error) Error)
+Pin 1 to Pin 2: Exhaust
+Error) Pin 2: Red (Suction On) Pin 1 to 3: bridged
+Error to Suction On
+Pin 2: Brown (Suction On) Pin 3: Green (Filter Full) Pin 2: red (Suction On)
+Pin 3 to Pin 5: Filter Full
+Pin 3: Green (Filter Full) Pin 4: Black (Shielding) Pin 5: white (24V)
+to 24V
+Pin 4: Black (Shielding) Pin 5: White (24V) Pin 4/6 : black (ground)
+Pin 5: White (24V) Pin 6: Gray (ground)
+Pin 6: Gray (ground)
+
+The Customer Interface - X22
+Variable I/O
+Pin Direction Laser Control
+X22.1 IN None
+X22.2 OUT Laser Ready
+X22.3 IN Marking Head
+New Input
+Removed from Holder
+X22.4 OUT Marking
+X22.5 IN Start Marking
+X22.6 OUT Ready to Mark
+Marking Head Removed from Holder
+X22.7 IN Stop Marking (tied to
+If using head sensor, input from sensor goes here.
+24V if not used)
+Active low input. Must he tied high if not using.
+X22.8 OUT Shutter Closed
+Laser Ready:
+X22.9 IN None > Tied to 24V
+Set when the system is in system state ‘‘Laser
+X22.10 GND_CI
+Ready‘‘ and no error occured.
+X22.11 24V_CI
+Default Bridges:
+X22.12 GND_CI
+Pin 3 to Pin 7: Marking Head Missing to Stop Marking
+Pin 7 to Pin 9: Stop Marking to Input None
+Pin 9 to Pin11: Input None to 24V
+Confidential - Company Proprietary
+
+Marking Head Removed from Holder
+This Error is new for 7340/7440
+• Active low input.
+• Tied to 24V out of box.
+• Keep tied high if not using.
+• Use sensor to monitor when head is removed from
+holder. Senses metal internal half of holder.
+• Only senses metal so use only with the dovetail or tube
+holders offered for laser. CIJ internal is plastic.
+• Must order two pieces: Sensor and Cable (3m or 10m)
+Description Wire Color
+X22.3 Signal Black
+X22.10 GND Blue
+X22.11 24V Brown
+X22.3 on other lasers does not generate this fault.
+Remember I/ Os are set based on model.
+Confidential - Company Proprietary
+
+The Customer Interface - X25
+Line Interface Connector (Encoder and Trigger)
+Pin: Name: Direction: Description:
+X25.1 CHA IN Input for encoder’s first track
+X25.2 CI line supply 0 OUT Supply pin for encoder
+X25.3 CHB IN Input for encoder’s second track
+System Senses Encoder
+X25.4 CI line supply 1 OUT Supply pin for Trigger
+and/or Product Detect.
+X25.5 Index IN Input for encoder index track
+If selected in software, but
+X25.6 GND_CI - Use this ground for Encoder
+if not connected in
+X25.7 Trigger IN Trigger (product detect) input hardware an error will
+occur.
+X25.8 GND_CI - Use this ground for Trigger
+CMark 3.4 or newer: Turn off
+X25.9 Trigger Enable IN Bridge to X25.12. Must have
+error monitoring in Web
+12V/24V to allow trigger.
+Interface or TCS+.
+X25.10 GND_CI -
+Older Cmark : If using dry
+contact use a 4.7 KOhm
+X25.11 CI line 5 - reserved
+resistor across pins 4 - 8 or 2 - 6
+X25.12 24V_CI 24V supply interface
+to create load for External
+Trigger/Encoder setup and
+Both tracks of the encoder must be used !
+resistor
+The value for ‘pulses per rotation‘ must be doubled in the product registration of SmartGraph!!
+The value for ‘pulses per rotation ‘ must not be doubled in the Line Setup of the TCS+/CLARiTY software!!!
+Confidential - Company Proprietary
+
+Trigger and Encoder - X25
+• System Senses Encoder and/or Product Detect by drain on X25.2
+(encoder) and X25.4 (trigger).
+• If selected in software, but a drain on these 24V outputs is not
+detected then an error will occur.
+• CMark 3.4 or newer: Turn off error monitoring in Web Interface.
+• Older Cmark : Use a 4.7 KOhm resistor across pins 4 - 8 or 2 - 6 to create
+load for External Trigger/Encoder setup and resistor
+Using Dry Contact for Trigger
+Necessary to use pin X25.12 (24V supply
+interface) as the Supply pin for the Trigger
+(24V).
+Confidential - Company Proprietary
+
+The Customer Interface - X27
+Variable I/O
+Pin: Direction: Description:
+X27.1 IN Shutdown
+X27.2 OUT PC Connected
+X27.3 IN None
+X27.4 OUT Good
+X27.5 IN None
+X27.6 OUT Bad
+Default Bridge:
+X27.7 - Bridged to X33.3 to
+enable CPD and FASS
+Pin 7 to X33 Pin 3: Default bridge to
+X27.8 OUT None enable CPD and FASS
+X27.9 IN None
+X27.10 GND_CI
+X27.11 +24V_CI
+X27.12 GND_CI
+Confidential - Company Proprietary
+
+The Customer Interface - X29
+Variable I/O
+Pin Direction Description
+X29.1 IN Error Status Customer (active
+low - tie high if not used)
+X29.2 OUT Error
+X29.3 IN Error Confirm
+X29.4 OUT System Ready
+X29.5 IN None
+System Ready Output behavior is based
+X29.6 OUT Ack _ Job_Selection
+on the System Integration Mode setting
+X29.7 24V_CI
+in Web Interface:
+X29.8 GND_CI
+X29.9 24V_CI Stand alone: System Ready is high when
+the laser has finished the booting sequence.
+X29.10 GND_CI
+Laser with Smart Graph : System Ready
+high when the laser has finished the
+Default Bridge:
+booting sequence and the PC with
+SmartGraph is booted and the connection is
+Pin 1 to Pin 7: Error Status Customer to 24V
+established
+Confidential - Company Proprietary
+
+The Customer Interface - X30
+Variable I/O (external template selection )
+Pin: Direction: Description:
+X30.1 IN JobSelect0
+X30.2 IN JobSelect1
+X30.3 IN JobSelect2
+X30.4 IN JobSelect3
+X30.5 IN JobSelect4
+X30.6 IN JobSelect5
+X30.7 IN JobSelect6
+X30.8 IN JobSelect7
+X30.9 IN JobSelectStrobe
+X30.10 GND_CI
+X30.11 +24V_CI
+X30.12 GND_CI
+Confidential - Company Proprietary
+
+The Customer Interface - X33
+Internal Connection
+Do not connect Interlock - and
+Do not Shutterlock - contacts at X33.
+remove any
+Use X9 on the CPD - board!!!
+bridges
+External Keyswitch can be used for
+connection of remote keyswitch
+Default Bridges (Do not remove):
+Pin 1 to Pin 8: External keyswitch (Only bridge that can be removed )
+Pin 2 to Pin 6: Interlock (do not connect interlock here – connect on CPD)
+Pin 3 to X27 Pin 7: Default bridge to enable CPD and FASS
+Confidential - Company Proprietary
+
+The Customer Interface
+Default Bridges
+Pins: Description:
+X25.9 - 12 Trigger Enable tied to 24V
+X27.7 - Enables CPD and FASS
+X33.3
+X21.1 - 2 Exhaust Error to Suction On (24V output)
+X21.3 - 5 Filter Full tied to 24V
+X29 .1 - 7 Error Status Customer tied to 24V
+X22.3 - 7 Marking Head Removed from Holder
+X22.7 - 9 Stop marking tied to 24V
+X22.9 - 11 Internal use
+X33.1 - 8 External key switch (Input to Output)
+X33.2 - 6 Internal Use
+Confidential - Company Proprietary
+
+Timing Diagram
+Confidential - Company Proprietary
+
+Standard
+Wiring 1
+Confidential - Company Proprietary
+
+Standard wiring 2
+Confidential - Company Proprietary
+
+VJ Quick Connectors
+Confidential - Company Proprietary
+
+Overview of Quick Connectors - External
+Trigger
+Encoder
+Safety
+(Interlock)
+Cable
+Gland
+Uses CIJ or
+LPA beacon
+Beacon
+RS232
+Extractor
+Confidential - Company Proprietary
+
+Overview of Quick Connectors - Internal
+Confidential - Company Proprietary
+
+Overview of Quick Connectors - Internal
+Excludes Safety
+System
+Confidential - Company Proprietary
+
+Overview of Quick Connectors - Internal
+Safety System
+(Interlock/ Shutterlock )
+Confidential - Company Proprietary
+
+Maintenance & Troubleshooting
+
+Preventative Maintenance
+Maintenance Interval Measures
+Monthly • Check the marking head protective glass for dust and dirt. Clean
+(more frequently when protective glass if dirt/debris is detected.
+operated in dirty • Check the fan filters on front of supply unit. Blow out or replace
+ambient conditions) as necessary.
+When control lamp on • Replace filters on fume extractor. Combined filter will usually be
+Fume Extractor lights more often than HEPA filter. Exchange combined filter and if
+up control lamp on fume extractor remains on then change HEPA
+filter.
+Every six months • Exchange both bulb - style and in - line filter on compressor.
+(more frequently when • Carry out a visual inspection of the laser system including warning
+operated in dirty labels. They must be readable and positioned correctly.
+ambient conditions) • Check the product detector (light barrier). Clean or readjust as
+necessary.
+• Check the fume extractor for air leaks.
+Annually • Exchange HEPA filter (charcoal filter) on fume extractor (if has not
+already been changed). Charcoal absorbs moisture from the air
+and loses efficiency.
+16,000 - 20,000 hours • Replace compressor. Kit contains filters and tubing.
+( keyswitch closed)
+
+Backups
+Type Frequency of Create… Includes
+backup required
+System Database Infrequent After installation Model, head, lens and other
+laser configuration settings
+saved on EEPROM. Backup
+creation very quick.
+CMark Backup Less frequently After installation and at Entire CMark including
+preventative customer database. Takes
+maintenance visits 20 - 30 minutes to create
+backup. Does not include
+System Database.
+Complete Laser Most frequently At preventative Customer database. Useful
+Image (TCS+) or maintenance visits or if CMark needs to be
+Backup of more frequently if reloaded and no CMark
+Database in customer creates backup available. Backup
+SmartGraph or significant number of creation is very fast. Goal:
+Clone in CLARiTY jobs. Backup of jobs, logos,
+parameters/mark settings,
+product reg./line setup.
+Confidential - Company Proprietary
+
+Recommended Tools
+Suggested tools for working on 7340/7440:
+• Allen Key 0.9 mm for the suction unit connector
+• Allen Key 1.5 mm for the Marking Head cover
+• Allen Key 3 mm/ 250mm length (minimum) for electronics rack
+(very difficult to service without this)
+Also recommended (sold separately):
+• “WAGO Tool, rail mount, terminal block” Part - No: AL - 77274 (small,
+bent screwdriver that fits Chameleon and CPD/SPM connectors)
+
+No Power to System
+❖ Symptom: No Lights on Keypad
+Under normal conditions (power, but not booted) following should
+occur:
+• Blue LED on ON/Standby button is lit
+• 48V dc input to Chameleon board – X28.11 (48V) and X28.10 (GND)
+• D47 (green LED) (48V) lit on Chameleon board
+❖ If above are missing, check:
+• Mains Power Supply
+• Ensure Main Power switch in ‘On” position
+• Mains Input connector – 2 x fuses
+• 48 V dc supply
+• Membrane keypad and cable
+- Use Autobridge to start without keypad – Jumper X28.3 - X28.5 (Ensure power
+to system disconnected after test or safety circuit reset failure will occur)
+• Chameleon board
+Confidential - Company Proprietary
+
+Unsuccessful Boot – Diagnostic Checks
+Multi - Core Chameleon
+Symptom: White light on, but not flashing (On/Standby button)
+Symptom: White light does not stop flashing (On/Standby button)
+▪ Did you wait long enough (big lag time)
+▪ Check battery voltage. 2.7 Volts or greater?
+▪ Use Rescue Stick to overwrite system
+Must load CMark after
+software (must use min. PlexMark 1.14 for red
+Rescue Stick using
+Chameleon boards)
+Web Interface (or
+▪ If boots after that, then load CMark TCS+ if PlexMark 1.14
+or newer).
+▪ If still won’t boot after Rescue Stick Procedure
+replace Chameleon board
+Confidential - Company Proprietary
+
+Rescue Stick for Multi - Core Chameleon Board
+“Rescue Stick” is a USB (you provide) to which a PlexMark.img file is written with a
+software to make the USB a bootable device. The . img used is the same as the
+manufacturer - installed software called PlexMark that is on new Chameleon boards
+(manufacturing or spares).
+o Rescue Stick can be used to attempt to recover multi - core Chameleon when won’t boot.
+o Rescue Stick first wipes out the CMark on Chameleon and then loads PlexMark .
+o After PlexMark is loaded then still need to load CMark.
+o Rescue Stick does not erase System Database (model, head, lens, serial number, etc.)
+Use PlexMark 1.14
+Write PlexMark to USB using freeware called Rufus (Files on Sharepoint )
+• Insert Rescue Stick directly into Chameleon USB; do not use TU440 USB ports!
+• Boot with Rescue Stick. Laser goes to Standby when complete.
+• Remove Rescue Stick and then reboot.
+-- If boots, then load CMark using PC with web browser connected to TCS+ or Web Interface.
+( Web Interface will say FOBA/Alltec until after you load CMark.)
+-- If laser will still not boot after Rescue Stick, please try Rescue Stick again. Do not replace
+Chameleon until tried Rescue Stick at least two times.
+Previous PlexMark versions only allowed loading of CMark via Web Interface. If cannot load
+CMark via TCS+ then try Web Interface.
+Note: Use PC, not TU440
+to load CMark.
+Confidential - Company Proprietary
+
+Inherit Customer Data (CMark 4.16 or newer)
+Use the following procedure when installing red Chameleon (board requires CMark
+4.15.1 minimum) and CMark on board being replaced is older version.
+Must use CMark 4.16 or newer to load customer data from SD/USB/PC to board via
+this method (appears in 4.15, but not functional until 4.16). Note: requires PC with SD
+card reader if inheriting from SD card.
+Requires unzipped CMark backup on PC/USB connected to PC if inheriting from
+older Multi - Core Chameleon.
+1) Replace Chameleon.
+2) Update CMark to 4.16 or newer via Web Interface (check for BIOS update before
+rebooting after update).
+3) Reboot laser.
+4) Connect to Web Interface and set laser model, head type, lens type, etc. in
+“Configuration” within “Laser” menu.
+5) Reboot laser when prompted.
+6) Insert SD card into PC card reader (if inheriting from SD card).
+7) Connect to Web Interface and select “Other” menu and then “Customer Data”
+8) Click Browse button and navigate to “smarties” folder on SD card or in unzipped
+CMark backup on PC/USB.
+9) Click “Upload” and then “Confirm” when prompted.
+10) Reboot laser when prompted to start laser with inherited data and correct laser
+configuration.
+Confidential - Company Proprietary
+
+Marking Head Errors
+Symptom: No Communication with Marking Head error
+(E09100)
+Components involved: HIC, Marking Head Cable, CP -
+Light and Galvos
+Steps:
+• Verify 48V at CP - Light
+• Is CAT7 LVDS cable connected between HIC
+(RJ45) and CP - Light4 (RJ45)
+• Marking head cable connected at galvos and CP -
+Light4
+
+Marking Head Errors
+Symptom: Marking Head: Temp of FM/MHI Assembly Group
+Too High (E09000)
+Steps:
+• Galvo block temperature is too high –
+-- Lower duty cycle (increase distance between markings if possible) or improve
+cooling of head.
+• CP - Light Board temperature is too high
+– check if the fan is running and connected on Chameleon X28.1 - X28.2
+
+Shutter Error
+Symptom: Beam Shutter Does Not Stay Open/Closed
+errors (E10302 or E10303)
+Steps:
+• Check connections of shutter cable at HIC and CP - Light4
+• Check continuity of shutter cable (HIC to CP - Light4)
+• Check marking head cable connections at CP - Light4 and
+at galvos
+• Do galvos move on initial startup ?
+-- If no, move gently with power off to different position and repeat.
+If still no movement, or only movement on one galvo , then replace
+marking head.
+
+Galvo Concept
+• Voltage out to galvos from CP - Light and position detect back to CP -
+Light from galvos is a closed loop. If loop is not closed then errors
+will occur.
+• Galvos also used as shutter
+Galvo
+Voltage
+Position Detect
+
+Galvo Errors
+Symptom:
+Overpositioning of X - or Y - Mirror (E09002 or E09003) - or -
+X - or Y - Mirror Overcurrent (E09006 or E09005) - or -
+X - or Y - Mirror Missing (E09006 or E09005)
+Steps:
+• Verify X and Y galvo voltage connectors from CP - Light out to
+galvos are seated correctly
+• Verify X and Y galvo position detect connectors (feedback from
+galvos) are seated correctly on CP - Light
+• Verify shutter cable is connected at CP - Light
+• Check marking head cable
+
+Red Emission LED Defective
+Causes:
+• Failure of one or more of the LEDs of the LEC board at
+top of marking head. - Replace LEC.
+• Failure of the red LED on the membrane keyboard.
+- Check forward and backward resistsance across pins 2 - 15
+on ribbon cable of keypad.
+- Replace membrane keypad.
+
+Wrong HIC Detected
+Symptoms: Wrong HIC Detected Error (E00213)
+Steps:
+• Ensure the HIC board is present and securely connected to
+the Chameleon board.
+• Connect to Web Interface/TCS+ and verify that model and
+marking head type are correct in Laser Configuration page.
+-- If the model and marking head set in the Web Interface are not
+correct, log in and change Configuration to the correct laser type or
+marking head type.
+This is a Fatal Error, so a complete reboot of system is required in
+order to clear error.
+
+Wrong LIC Detected
+Symptoms: Wrong LIC Detected Error (E00212)
+Steps:
+• Ensure X28 on Chameleon is seated completely
+• Verify 24VDC Chameleon X28.13 to X28.14 (laser supply voltage)
+• LIC not connected to Chameleon
+• Wrong model selected in Web Interface
+• Ensure ribbons cables from LIC are connected securely at
+back of laser source.
+• CP - Light has code written based on cable length upon first
+boot of CP - Light in laser
+• Longer marking head cable length has different resistance that
+shorter cable
+• If you put that CP - Light/Marking head set in a different laser wattage,
+then fault will occur due to the mismatch
+• Service will be able to clear this code
+
+Laser Source Errors
+Symptoms: Laser Not Ready Error (E00200)
+Steps:
+• Verify 24VDC at Terminal block 1
+• Check serial connection (small ribbon cable) to laser
+source (on key switch turned looks for info from source
+right away).
+• Check DB25 connector (big ribbon cable) to laser source
+(on key switch turned looks for info from source right
+away).
+
+Laser Source Errors
+Symptoms: General Error (E00204)
+Steps:
+Usually bad laser source, but verify:
+• 24V at Terminal Block 1 and 2 and back of laser source
+• Serial interface cable securely connected at back of
+laser source (small ribbon cable)
+• Digital interface cable securely connected at back of
+laser source (large ribbon cable)
+
+Laser Source Errors
+Symptoms: Defective Element in Laser Supply
+(E00211)
+Steps:
+• Verify X9 pin 3 on SPM/CPD has red wire (laser
+power) inserted completely and X9 pin 13 has gray
+(laser ground) inserted completely
+• Verify 24V to X9 pin 3
+• Relays on SPM/CPD3 may be worn out. SPM/CPD are
+the switching element from the Chameleon’s view.
+
+Interlock Open Won’t Clear
+Symptoms: Interlock Open even when any guard doors are closed
+Steps:
+• Verify that jumper from X9 pins 1 - 23.
+• Ensure all four wires from double pole switch are making good contact and in
+correct locations on X9. If CPD+FASS, ensure you have a normally open reset
+switch in place from 1 - 23. You cannot clear Interlock Open until reset when
+FASS is present.
+• If using SPM only and single pole switch , ensure that you have added
+additional jumpers to second channel. If you only remove a jumper on X9 and
+install single pole switch then once Interlock opened it cannot be reset.
+(Correct: Single pole switch from 15 - 19 and jumpers from 15 - 17 and 19 - 21)
+• Remove wiring for any door switches and replace jumpers to out of box
+condition. If using SPM remember to put jumper from 1 - 23. Check for Interlock
+Open after reboot with only jumpers.
+• If Interlock Open with only jumpers in place then check fuse next to X9.
+
+UADB (Compressor Board) Errors
+Symptoms: Wrong air pump assembly position
+(E00312) or The connection to the air pump orientation
+sensor is lost (E00311)
+Steps:
+• Mount air pump assembly according to supply unit
+orientation.
+• Remove UADB if present and update CMark to
+version 4.12.1 or newer. UADB not monitored starting
+in CMark 4.12.1.
+UADB board discontinued in December 2021. No spare part
+replacement available. Must upgrade CMark as remedy for E00311
+and E00312.
+
+Cooling Compressor Errors
+Symptoms: Air pressure sensor failure (E00310)
+Steps:
+• Check air hose connection between pump and sensor.
+• Check air hose and umbilical for kinks or damage.
+• Replace LIC (air flow sensor may be blocked).
+
+Cooling Compressor Errors
+Symptoms: Air flow blocked (E00314); Increased air pressure
+(W00316) No air flow (E00313); Air flow too low (W00315)
+Steps:
+• Voltage wiring from terminal block secure and correct?
+• Check air hose connection between pump, sensor, and at T - fitting. Are there
+kinks, leaks, or damage?
+• Do you hear any abnormal noise fluctuations of the compressor? If yes, change
+the compressor.
+• Check status of LED D7 on LIC board. After key is close and “Laser Ready”,
+this LED must be On continuously. If turning on and off, check wiring to LIC
+and/or change LIC board.
+• Clean the air knife exit. If blocked or damaged, replace protection window.
+• Exchange air pump filters.
+• Check or exchange cooling compressor.
+• Replace LIC (air flow sensor may be blocked).
+
+VRS
+Confidential - Company Proprietary
+
+VRS Capability – CMark 4.7
+• VNC now available with TCS+ or CLARiTY Laser Controller
+(CLC); no SmartGraph visibility
+• VRS dashboard takes you to TCS+ on laser and can switch to
+CLARiTY view from there by pressing Remote Access View. IP for
+Remote Access IP should already be set to CLC IP. Should be
+done on install of VRS.
+• Always use Service user login when taking control remotely so
+that interaction is captured in Event Log and also so logged out
+after 20 minutes of no activity. Admin at site has to re - enable VNC
+after 20 minutes of no activity from laser at RES.
+• Customer must enable VNC session locally and then once you
+take control remotely local user will see safety message, “Please
+make sure it is safe to mark” at start of session. You will be able to
+fire laser remotely! So use caution.
+• Can download Event Log remotely.
+Confidential - Company Proprietary
+
+VRS - Install
+• Wired or Wi - Fi available
+• Wi - Fi kit for 7340/7440 uses 48VDC from
+Terminal Block (do not use this kit for other
+lasers).
+• Wi - Fi kit for lasers uses AC power cords.
+Confidential - Company Proprietary
+
+VRS – Enable VRS on Laser
+Steps (in TCS+):
+1) From Laser Unit Settings>Network, change Laser IPs and
+laser Name. VRS should use secondary IP. Press Save.
+2) Reboot and connect on new IP.
+3) Go to Laser Unit Settings>Remote Service and enter Remote
+Edge Server IP and checkmark the Enabled Remote Service
+box.
+4) If using CLARiTY Laser Controller as interface then also
+enter the IP of the CLARiTY Controller in the Remote Access
+IP field.
+5) Save and reboot.
+Ensure that all IP addresses on the network including laser,
+RES, and any PCs all have unique IP addresses.
+Confidential - Company Proprietary
+
+VRS – Enable VRS on Laser
+Enter RES IP address and checkmark Enable Remote Service
+Customer checkmarks to
+Only need Remote Access IP if
+enable Remote Session
+CLARiTY Laser Controller is used
+Confidential - Company Proprietary
+
+VRS – Enable Remote Session on Laser
+• Customer must enable Remote Session locally via TCS+ (Laser Unit
+Settings>Remote Service and checkmark Remote Access Available).
+• No way to enable through CLARiTY Controller directly. Still requires
+enable through TCS+.
+Confidential - Company Proprietary
+
+VRS – Remote Access Functionality
+Select Printer to connect
+to from Customer Site List
+Click on Remotely Service
+Printer button
+Confidential - Company Proprietary
+
+Warning appears on customer interface
+Only use for access to CLARiTY
+Set to IP of laser for TCS+ view;
+IP of CLC for CLARiTY view
+Confidential - Company Proprietary
+
+VNC – Remote View CLARiTY
+To allow remote access session when CLARiTY laser, customer must
+hook up PC and connect to TCS+ first to Enable session.
+Confidential - Company Proprietary

@@ -1,0 +1,982 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\LN100 Lesson 2 System Overview.pdf
+# cifrado=False bloques=74 caracteres=40582
+
+Lesson 2 – System Overview
+Table of Contents
+Introduction ………………………………………………………………………………………… 2 - 2
+Objectives ………………………………………………………………………………………… 2 - 2
+Activities ………………………………………………………………………………………… 2 - 2
+System overview ………………………………………………………………………………………… 2 - 3
+Marking unit ………………………………………………………………………………………… 2 - 3
+Pump chamber ………………………………………………………………………………………… 2 - 4
+Ignition module ………………………………………………………………………………………… 2 - 9
+Q - switch ………………………………………………………………………………………… 2 - 10
+Mode aperture ………………………………………………………………………………………… 2 - 1 3
+Telescope ………………………………………………………………………………………… 2 - 1 5
+Mirrors ………………………………………………………………………………………… 2 - 1 7
+LHC ………………………………………………………………………………………… 2 - 19
+FM board ………………………………………………………………………………………… 2 - 21
+Laser head ………………………………………………………………………………………… 2 - 21
+Beam quality ………………………………………………………………………………………… 2 - 2 3
+PCM ………………………………………………………………………………………… 2 - 33
+Control unit ………………………………………………………………………………………… 2 - 3 5
+Supply unit ………………………………………………………………………………………… 2 - 42
+Cooling units ………………………………………………………………………………………… 2 - 47
+Touch screen ………………………………………………………………………………………… 2 - 51
+CI CAN I/O ………………………………………………………………………………………… 2 - 53
+Videojet Technologies Inc. October , 20 14
+
+Lesson 2 – Equipment Orientation and Specifications
+Introduction
+Materials: LN100 YAG laser, Participant Training Guide; LN100 PowerPoint (PPT)
+Technical Presentation , LN100 service manuals , LN100 Start Up PowerPoint (PPT)
+Technical Presentation .
+Objectives
+❑ Identify the common components of the LN100
+❑ Describe the function of the common components
+❑ Indentify the c orrect focal distance for the LN100
+❑ Explain the electrical connection for the customer interface
+❑ Explain ACC and FM board LED’s
+❑ Explain the ACC startup sequence
+❑ Explain the cooling differences
+❑ Demonstrate the ability to switch the system on
+❑ Demonstrate the ability to bleed the system
+❑ Open the supply units top cover to view the internal components
+Activities
+❑ Open the supply units cover to view the ACC board, Power supplies, MMC card
+and laser relay
+❑ Remove the laser cover to view the FM board , pilot laser and laser tube
+❑ Remove the marking head cover to view X and Y galvo’s
+❑ Bleed system
+❑ Start system up
+VJ A LN100
+System
+O verview
+The following is a list of references & materials for this topic.
+References &
+Materials
+❑ LN 100 Training Guide
+❑ LN 100 Technical Guide
+❑ LN 100 PPT
+❑ LN 100 laser
+Videojet Technologies Inc. October , 20 14
+2 - 2
+
+1 Marking Unit of a lamp pumped Nd: YAG laser
+The marking unit consists of the following components:
+Laser head
+The laser head comprises:
+• P ump chamber with lamp for optical pumping of the Nd:YAG rod
+• O utput coupler and end mirror, forming together the optical resonator
+• Q - switch for generating laser pulses and switching the laser beam on and off during the marking process
+• M ode aperture for limitation of the beam diameter
+• B eam shutter for safe interruption of the laser beam
+• L aser beam expander for defined expansion of the laser beam before the deflection system
+• LHC board (Laser Head Controller), responsible for interlock monitoring, control of the pilot laser and
+monitoring of the Q - switch temperature
+• O ptional: pilot laser
+Marking head
+The marking head comprises:
+• C ontrol electronics for galvo motors
+• G alvo motors with deflection mirrors for defined movement of the laser beam in x and y direction
+• F lat field lens with protective glass for focusing the laser beam
+Videojet Technologies Inc. October , 20 14
+2 - 3
+
+1.1 Structure of a lamp pumped Nd: YAG laser
+A laser pumped with an arc lamp or a flash lamp is usually pumped through the lateral wall of
+the lasing medium, which is often in the form of a crystal rod containing a metallic impurity or a
+glass tube containing a liquid dye, in a condition known as "side - pumping." To use the lamp's
+energy most efficiently, the lamps and lasing medium are contained in a reflective cavity that
+will redirect most of the lamp's energy into the rod. Nd: YAG is a Neodymium - Doped Yttrium -
+Aluminum - Garnet (lasing material used in near - infrared lasers)
+1.1.1 Pumped chamber of Nd: YAG laser
+- Flow: 6 gallons per minute (approx. 20 l/min)
+- Diameter of the LN 100A YAG - rod: 4mm
+- The smaller the diameter of the rod, the smaller is the diameter of the laser beam.
+- No working hour counter in the pump chamber. Working hours are stored in the EEPROM
+(ID Board) placed on the LHC
+- K rypton arc lamp (exchange after 700 - 1000 working hours)
+Videojet Technologies Inc. October , 20 14
+2 - 4
+
+The pump chamber uses side pumping technology.
+- highest output power
+- power/ beam quality adjustable
+- TEM00 operation possible
+- highest application flexibility
+Effective coupling of the lamp light into the Nd:YAG rod
+1.1.2 YAG rod and filter of Nd: YAG laser
+For generation of the laser light a Nd:YAG crystal is used. This is an Y ttrium A luminium G arnet
+(typically shaped as cylindrical rod) doped with neodymium ions, concentration ca. 1% by
+weight. The Nd ions emit the light for the lasing process. The YAG serves as host to 'hold' and
+'prepare' the Nd ions for the emission process. According to the energy source applied, Nd:YAG
+lasers are classified into lamp - pumped and diode - pumped.
+Videojet Technologies Inc. October , 20 14
+2 - 5
+
+1.1.3 Pumped chamber break down
+The exchange of the lamp is necessary
+• I f the lamp has burst. This is indicated by:
+- E rror message in the software (current error/burst lamp/flow too low)
+- N o ignition
+Videojet Technologies Inc. October , 20 14
+2 - 6
+
+- W ater leakage in the laser head
+• A fter certain intervals/wear. This is indicated by:
+- 700 to 1,000 operating hours
+- B ad ignition
+- D ecreasing laser power
+The lamp is intact
+Push the lamp slowly and carefully with your thumb from one side into the pump chamber until
+you can grab it with your fingers and pull it out at the other side.
+Make sure that the lamp does not get wedged (danger of breaking!).
+The lamp has burst
+Pull out the cables on both sides and remove the splinters from the reflector ceramic.
+Important
+Water deposits on the lamp that can easily be removed using a cotton plug and acetone indicate
+contaminated cooling water.
+In this case exchange the particle filter, the DI resin and the cooling water.
+1.1.4 The krypton lamp module
+Flash lamp and arc lamps are high - intensity discharge devices commonly used in photography
+and laser technology and usually contain gases such as xenon and krypton. The flash or arc is
+initiated by a high voltage across the discharge tube, which in turn ionizes the gas and produces
+a high - intensity light with output peaks in both the visible and infrared regions of the
+electromagnetic spectrum.
+Discharge lamps used for laser pumping are grouped in two categories: arc lamps and flash
+lamps. Arc lamps are optimized for continuous - wave operation , whereas flash lamps (flash
+lamps) produce pump pulses for either free - running or Q - switched lasers . (Note that the term
+flash lamp is often wrongly used instead of arc lamp .) Both types of lamps essentially consist of
+a glass tube, filled with some gas (e.g. krypton at a few atmospheres) and having a metallic
+electrode at each end.
+Videojet Technologies Inc. October , 20 14
+2 - 7
+
+For pumping solid - state lasers, one usually uses linear lamps with an electrode separation
+between 5 and 15 cm. (Short - arc lamps with a much smaller electrode separation of normally
+less than 1 mm, sometimes also with carbon electrodes, are used for other purposes.) The shape
+of the lamp's electrodes depends on the mode of operation: flash lamps have rounded cathodes,
+whereas pointed cathodes are better for arc lamps, which are operated with much lower current
+densities
+1.1.4 The aging factor of a LN 100
+Videojet Technologies Inc. October , 20 14
+2 - 8
+
+1.2 Ignition Module of Nd: YAG laser
+- Flow: 6 gallons per minute (approx. 20 l/min)
+- Diameter of the LN 100A YAG - rod: 4mm
+- The smaller the diameter of the rod, the smaller is the diameter of the laser beam.
+- No working hour counter in the pump chamber. Working hours are stored in the EEPROM
+(ID Board) placed on the LHC
+- K rypton arc lamp (exchange after 700 - 1000 working hours)
+- Laser power supply delivers the voltage (800 - 1200 V) for the ignition module.
+- Ignition voltage is higher than 15kV.
+- Operating voltage: 170 - 200V
+- Warning label must be positioned on top of the case of the ignition module.
+- If the lamp has to be exchanged, the laser must be switched off. After 6 minutes the lamp can
+be exchanged (don‘t forget to wear protective goggles). After the exchange, bleed the laser for at
+least 1 0 minute s , to avoid a repeated burst of the lamp.
+Videojet Technologies Inc. October , 20 14
+2 - 9
+
+Ignition Module
+
+1.3 Q - Switch
+- Cooling tube diameter is smaller than pump chamber cooling tube.
+- Flow: 0,5l/min
+- LN100 from 0 to max. 60W (RF - driver) (opening and blocking of the q - switch)
+- 27,1 MHz from the RF - driver
+- 10 – 65000 pulses per second
+- Temperature controlled
+- Material: LN aluminium / DN brass
+Videojet Technologies Inc. October , 20 14
+2 - 10
+
+Q - switch
+
+1.3.1 Structure and function of a Q - Switch
+Acousto - optic modulators (AOM) can be used to alter the amplitude, direction, frequency, and
+polarization of a laser beam. Principle: a piezoelectric transducer is mounted onto a transparent
+solid (e.g. a tellurium oxide (TeO2), dense flint glass, fused quartz block). Via an rf signal
+the transducer is set vibrating. The resulting acoustic (pressure) wave propagates through the
+optical medium causing a periodic density and therefore a periodic refraction index change in the
+medium. The material behaves like a sinusoidal grating. An incident light beam passing this
+grating is diffracted into several orders. With appropriate design and alignment of the AOM the
+first order beam has the hig h est intensity. Its angular deviation and intensity can be adjusted via
+the rf frequency and power
+The deflection ang le θB ≈ λ frf / va
+The efficiency η ≈ sin2 (const Urf / λ)
+A resonator - internal AOM can Q - switch the laser by deflecting the laser beam out of the
+optical axis and back (laser light off/ laser light on). A resonator - external AOM can be used
+to angular de flect the laser beam .
+The RF - driver delivers a constant frequency of 27,1 MHz to the transducer.
+By power change, a more or less strong acoustic wave is produced.
+This wave breaks the beam. The absorber neutralizes the acoustic wave, so that it could not be
+reflected.
+(At the cabl e s a power loss of over 20% is possible.
+The values above are effective power values of the q - switch.)
+Videojet Technologies Inc. October , 20 14
+2 - 11
+
+1.3.2 Functioning of a Q - Switch in pulse operation
+1.3. 3 Functioning of a Q - Switch in continuous wave
+operation (CW)
+Videojet Technologies Inc. October , 20 14
+2 - 12
+
+1.4 Mode Aperture
+• The mode aperture contains the mode wheel and the beam shutter.
+• The mode wheel has holes (LN100A from 1mm to 5 mm.
+• If the beam shutter is open the LED on top of the housing is on.
+• The beam shutter consists of filter glass. The pilot laser beam is tran s parent for the shutter.
+During the resonator adjustment, the beam shutter has to be open, to avoid reflections.
+Videojet Technologies Inc. October , 20 14
+2 - 13
+
+Mode aperture
+
+The interlock closes only the beam shutter. He doesn‘t switch off the laser power supply
+After a 30 min. time - out the laser power supply will be shut off, to protect the filter glass of the
+beam shutter.
+Videojet Technologies Inc. October , 20 14
+2 - 14
+
+1.5 Expansion Module (telescope)
+Videojet Technologies Inc. October , 20 14
+2 - 15
+
+1.5.1 Beam expander
+Videojet Technologies Inc. October , 20 14
+2 - 16
+
+1.6 Out Coupling Mirror
+• Mounting position: in front the expansion module
+• The arrow on the edge of the mirror, shows in direction of the pump chamber.
+• The ou t coupling mirrors for DN10, DN50 and LN100 are different, because of the different
+YAG rod diameters and thermal lenses of each rod.
+• LN100: 75% reflective
+• Shape: flat on both sides
+• Base material: glass
+• Multilayer surface
+Videojet Technologies Inc. October , 20 14
+2 - 17
+
+1.7 End Mirror
+• Nearly 100% reflective
+• Base material: glass
+• Multilayer surface
+• Shape: flat /convex (convex side to the pump chamber)
+• The arrow on the edge of the mirror, shows in direction of the pump chamber.
+• The end mirrors for DN10, DN50 and LN100 have different radii on the convex side,
+because of the different YAG - rod diameters and thermal lenses of each rod.
+• Mounting position: behind the pilot laser unit
+Videojet Technologies Inc. October , 20 14
+2 - 18
+
+1. 8 LHC Laser Head control
+- CAN - bus termination (jumper) - Temperature control
+- Pilot laser control - Beam shutter control
+- Q - switch control - Interlock
+- Storage of working hours on the ID - board
+- prospective: automatic mode aperture
+LHC Blink codes of LEDs:
+Code Meaning
+Yellow LED on MDB
+constant blinking bootloader is running
+2 x flashing LHC application is running
+Green operational LED
+constant blinking CAN Bus preoperational
+on CAN Bus operational
+Videojet Technologies Inc. October , 20 14
+2 - 19
+
+1.9 Fast Move Board (FM Board)
+• The board is positioned in the marking head.
+• On the board is an EEPROM, with data about lenses and mirrors.
+• ADM - Y 10 (Advanced Digital Marking head YAG / mirror size: 10mm)
+• Type of the marking head is recognized by the system
+• Option: 8 and 12 mm mirrors (10 mm is standard)
+• Galvanometers are supplied by Lumonics
+• In case of an error, the whole unit must be exchanged
+Note: if the galvo or Fm board fails replace the entire marking head ADM - Y10.
+Videojet Technologies Inc. October , 20 14
+2 - 20
+
+1.9.1 Function of a Vector Scanning Laser System
+1.10 Components in the Laser head
+Videojet Technologies Inc. October , 20 14
+2 - 21
+
+1.10.1 Influence of the focal length on marking
+parameters
+1.10.2 ADM - Y10AHS
+Videojet Technologies Inc. October , 20 14
+2 - 22
+
+The marking head ADM - Y10AHS is introduced for ALLPRINT laser systems LN - A and DN - A.
+The marking head is to be selected from the configurator.
+The standard length of the fan cable is 10 m. The cable must not be shortened.
+1.10.3 Lens
+In most of the cutting edge laser machinery, laser optics will be incorporated into system to
+realize various applications like marking, drilling, welding, dicing, scribing, cutting, engraving
+etc. F - theta scanning lens is used in conjunction with X and Y galvanometer scanner and beam
+expander to form a two dimensions scanning system. The scan lens is optimized to provide a flat
+field image with diffraction - limited spot size in micron scale over the entire scan field. The
+image field height is almost directly proportional to the scan angle. Typically, the linearity f -
+theta distortion is kept less than 1% without software correction to ensure minimal distortion.
+High Trans missive AR coating is coated onto the lens elements surface to ensure minimal
+power loss and hence increase the throughput. The scan lenses are designed with an industrial
+standard M85x1 mount threading to facilitate lens installation into laser machine. To
+Videojet Technologies Inc. October , 20 14
+2 - 23
+
+accommodate different standard mount thread, mount adaptors are available for ease of
+conversion.
+1. 10.4 Focusing the Laser Beam: Resolution and
+Intensity
+It is a well - known principle of optical physics: as shorter the wavelength of the light as higher
+the maximum resolution. This principle is reflected in equation Eq. 6 which describes to a good
+a pproximation the focusing of a laser beam by a lens such as the flat field lens in a laser stroke
+marking system. Equation Eq. 7 indicates the intensity in the focal plane of the lens.
+Focusing a laser beam by a lens
+F = =focal length of lens (mm)
+Λ = laser wavelength (in nm)
+B = mode factor: TEMₒₒ = 1
+TEM ∅∅ / multi mode > 1
+P = laser power
+A = focal area
+Dl = Diameter of the laser beam before the lens (in mm)
+Df = diameter of the beam in the focus (in mm)
+I = intensity in focal area I = P/A ~ P/ dF²
+Figure 1 - 11 Laser Focal Length
+Focal diameter
+dF ~ F * λ * B / dL
+Intensity
+P * dL²
+I ~ ----------------
+F² * λ² * B²
+Notice the wavelength dependence of the spot size and intensity in these equations.
+Videojet Technologies Inc. October , 20 14
+2 - 24
+
+Consequences:
+Due to its shorter wavelength t he Nd:YAG laser can generate (at least theoretically) ten times
+thinner lines and 100 times higher intensities at a product surface than a comparable CO2 laser:
+Focal diameter dF (Nd:YAG) = 1/10 * dF (CO2)
+Intensity I (Nd:YAG) = 100 * I (CO2)
+Therefore whenever high resolution and/ or high intensity is required the YAG laser is
+the first choice provided the material effects are suited.
+A laser operated in the TEM00 mode generates the best beam quality possible. Its B factor
+equals to 1. With decreasing laser beam quality the B factor increases strongly and consequently
+the spot size while the intensity decreases.
+1. 10.4.1 Depth of Field
+Figure 1 - 12 Laser Depth of Field
+The depth of field is the area, where the diameter of the laser beam, is smaller than twice the
+focal diameter.
+The bigger the beam expansion factor is, the smaller the laser beam can be focused.
+The bigger the beam expansion factor is, the bigger is the depth of field.
+The bigger the focal length is, the bigger is the depth of field.
+1. 10.4.2 Focused radiation
+Videojet Technologies Inc. October , 20 14
+2 - 25
+
+1. 10.4.2 Beam characteristics
+1. 10.4.3 Beam characteristics (TEM)
+Videojet Technologies Inc. October , 20 14
+2 - 26
+
+1. 10.4.4 How is the spot size influenced?
+Videojet Technologies Inc. October , 20 14
+2 - 27
+
+Videojet Technologies Inc. October , 20 14
+2 - 28
+
+Videojet Technologies Inc. October , 20 14
+2 - 29
+
+1. 10.4.5 What is the area of the marking and working
+area?
+Videojet Technologies Inc. October , 20 14
+2 - 30
+
+1. 10.4.6 Influence of the focal length
+The marking field area, the diameter of the size of the beam (spot) and the depth of field become
+larger with the increases in focal length (lens type).
+Videojet Technologies Inc. October , 20 14
+2 - 31
+
+1. 10.4.7 Working distance and marking field
+Videojet Technologies Inc. October , 20 14
+2 - 32
+
+1. 10.4.8 Intensity Distribution of different laser modes
+The standing light waves that principally can build up in the resonator are called laser
+modes. The ’active’ laser modes make up the laser beam and therefore determine its
+light distribution. Which modes principally can occur and which of these modes really become
+active is determined by the resonator design and the laser operating parameters (pump power
+etc.). Dependent on this only one mode can make up the laser beam or several modes
+simultaneously. Accordingly we distinguish between single - mode and multi - mode operation of
+a laser. Figure Fig. 4 indicates possible modes of a laser. These so - called T ransverse
+E lectromagnetic M odes are distinguished by the indices mn. The TEM00 mode (also denoted
+fundamental or Gaussian mode) comes with a
+Gaussian energy distribution across the beam and the best laser beam quality which is possible
+for a laser. As higher the order of the mode (TEM00 TEM01* TEM11 ...) as lower the laser
+beam quality.
+Videojet Technologies Inc. October , 20 14
+2 - 33
+
+2. PCM Power Control Module
+No. Type Function
+.
+S1 Main switch Applies the mains power and initializes the laser.
+In this state no marking process can be started!
+0 = off
+1 = on
+S2 Key switch Switches the ALLPRINT laser system to mode "Laser ready"
+and activates the cooling.
+0 = off
+1 = on
+Note:
+Remove the key if switched off to protect the system from
+unauthorized operation!
+L1 LED - white - Lights up it the main switch is on
+L2 LED - red - Lights up during the marking process and when the beam shutter is
+open.
+The red LED on the marking head lights up simultaneously.
+D Touch screen For operating the laser system. A detailed description can be
+found in the software section.
+Videojet Technologies Inc. October , 20 14
+2 - 34
+
+PCM - Power Control Module
+The Power Control Module consists of the following components:
+Control unit (1) Functions:
+• A ctivation and operation of the laser system via touch screen
+• E rror diagnosis
+• La ser control and communication with PC
+• 24 V power supply for control electronics deflection system RF power supply
+Supply unit (2) Functions:
+• P ower supply of the lamp
+• C ontrol of the Q - switch
+• C ommunication with control unit
+• M onitoring of cooling unit
+• D istribution of mains voltage supply
+• C ooling of the PCM
+Cooling unit (3) Functions:
+• C ooling of the complete laser system
+• W ater treatment (particle filter and DI filter)
+Customer interface (4) Functions:
+• C ommunication with PC/ Smart Graph software
+• E xternal laser control via digital inputs and outputs
+Videojet Technologies Inc. October , 20 14
+2 - 35
+
+2.1 Control Unit LN
+Time relay
+5sec. slope delayed, takes care for a controlled laser system shut down.
+Main - switch ON:
+- Both power supplys are immediately turned on.
+- Power supply for all boards and galvanometer mirrors.
+Key - switch ON:
+- Power supply is turned on.
+- Time relay contacts at once
+- Main contactor in the supply closes contact. Cooling Unit is switched on.
+Videojet Technologies Inc. October , 20 14
+2 - 36
+
+2. 1 . 1 P anel I/O (System - database)
+The Panel - IO is mounted in the control unit next to the ACC - 2. The terminal on the Panel - IO connects the
+keyswitch with the ACC - 2. The Panel - IO holds the laser emission LED and the system database
+(EEPROM). The system database belongs to the laser marking system, so if the Panel - IO has to
+be changed, take out the system database and insert it in the new Panel - IO.
+The Panel I/O contains the following entries:
+• Working time counter of the system
+• Serial number
+• Type of the system ( LN or DN)
+• Data of the mirrors
+• Lens data
+• RF - driver data
+• Time zone
+• Language
+Advantage: If the ACC - 2 has to be exchanged, the system data remains in the laser.
+Videojet Technologies Inc. October , 20 14
+2 - 37
+
+Videojet Technologies Inc. October , 20 14
+2 - 38
+
+2. 1.2 Advanced Controller Card - 2 (ACC - 2)
+Specification:
+Main board of the Nd:YAG - Laser
+- Booting of the system
+- Control of the system
+- Trigger processing
+- Control of the galvanometer mirrors
+- Boot - and initialisation processes
+- Push - Pull - Slot for one Multi Media Card (MMC)
+Explanation of ACC2 LEDs:
+Group Name, Comment
+Color
+Marking TR, yellow TRIGGER: Switched on if system if waiting for a trigger
+Status
+Marking MK, green MARKING: Switched on as long as the system is carrying out a marking
+Status
+Marking LAS, red LASE: Switched on when the laser is making pulses
+Status
+Marking VEC, VECTOR: Switched on when the mirrors are moving
+Status green
+Remark: On ACC - 2 64131 - D the labels on the PCB belong to the marking test pins, not to the marking LEDs.
+Refer to the colors of the LEDs if you want to know the LED's meaning, not to the labels.
+Videojet Technologies Inc. October , 20 14
+2 - 39
+
+Optical fiber LP, red LASER PULSE: Switched on every time the LPC gets the signal to make a pulse
+status
+Optical fiber ERR, red ERROR: Switched on when an error occured while receiving data from the FM
+status
+Optical fiber RCV, RECEVING: Switched on when the ACC - 2 is receiving data from the FM
+status green
+Power status 24V, 24V: Switched on when 24V is applied to the ACC - 2
+green
+Power status 5V, green 5V: Switched on when 5V is generated to the ACC - 2
+Power status 3.3V, 3.3V: Switched on when 3.3V is generated to the ACC - 2
+green
+Power status 1.8V, 1.8V: Switched on when 1.8V is generated to the ACC - 2
+green
+PowerPC red read/write access to MMC
+status
+PowerPC yellow not used
+status
+PowerPC green Flashes slow as long as the bootloader is running and waiting for a MMC
+status Flashes fast while the bootloader loads Linux from the MMC
+PowerPC ERR, red On if an internal error occured.
+status
+Ethernet green, 100MBit: On if a 100MBit connection is established, off if a 10MBit connection is
+status 100 established. Also on if no connection exists, in this case all other LEDs of the
+ethernet status are off.
+Ethernet yellow, FD Full Duplex: On if a full duplex connection is established.
+status
+Ethernet red, COL Collision: On if a collision on the ethernet connection was detected.
+status
+Ethernet green, Transmitting: On if the ACC - 2 is transmitting data.
+status TRM
+Ethernet green, Receiving: On if the ACC - 2 is receiving data.
+status RCV
+Ethernet green, Linked: On if the ACC - 2 is connected to some other ethernet device.
+status LNK
+Videojet Technologies Inc. October , 20 14
+2 - 40
+
+Ethernet Configuration Jumpers
+The following configurations are selectable by two jumpers on header X27 .
+X27 Advertised Mode
+no jumper 10BASE - T or 100BASE - TX, HALF OR FULL DUPLEX
+[ Default setting ]
+1 - 3 / 2 - 4 10BASE - T, only HALF DUPLEX
+1 - 3 / 4 - 6 10BASE - T or 100BASE - TX, only HALF DUPLEX
+3 - 5 / 4 - 6 only 10BASE - T, HALF or FULL DUPLEX
+3 - 5 / 2 - 4 only 100BASE - X, HALF or FULL DUPLEX
+2. 1. 3 Dip Switch
+Videojet Technologies Inc. October , 20 14
+2 - 41
+
+2. 1.4 MMC Multi Media Card
+On the MMC the following data are permanently stored:
+- Customer database
+- Component files (system, marking head, objective, RF - driver)
+- Operating system (OS, Linux)
+- Processor - and board software (FPGA, FM, LHC, LPC, SP)
+An operating system update, and an update of logics or component files, can be easily done,
+by exchanging the MMC, when the system is switched off. A renewed booting of the system,
+happens already with the new software releases.
+2. 1.5 Battery Back up on ACC
+The battery buffers the following dynamic data, in the SRAM (128 KB) on the ACC - 2 board:
+• The last used template
+• Dynamic data for all templates (e.g.: serial numbers, variables, shift codes, etc.)
+• Time and date (the clock even runs if the laser is switched off)
+• Error warnings and messages
+If the laser is switched off, the lifetime of the battery is approximately 1.5 - 2 years.
+If the laser is switched on, the lifetime is approximately 8 - 10 years.
+That means, the longer the laser is switched on, the longer is the lifetime of the battery.
+When the battery is empty, an error warning will be generated.
+• Voltage: 18V...30V
+• Current: up to 800mA at 24V
+• Battery lifetime: typical 10 years
+Videojet Technologies Inc. October , 20 14
+2 - 42
+
+MMC M ulti M edia C ard
+
+2.2 Supply Unit LN 100
+Main contactor
+(on the left the autom. cutout 15A)
+- closes contact when key - switch is closed
+- RF - driver gets supply voltage
+- Power suppl ies gets their supply voltages
+Terminal block
+- F or pump chamber - connections
+- F or primary voltage
+Laser power supply
+- A djustable via DIP - switch settings
+- D elivers 1200V to the ignition module (max.1800V/30A/ 6000W)
+Videojet Technologies Inc. October , 20 14
+2 - 43
+
+2.2.1 L aser Power Supply
+Part number: 64588
+DIP - Switches
+# Setting Comment
+1 ON Boost 1200V
+2 OFF Boost 1200V
+3 OFF Boost 1200V
+4 ON Boost 1200V
+5 ON Boost Voltage Programming Mode External
+6 OFF Autostart Disable
+7 OFF Lamp Current Analog
+8 OFF Parallel Port Enable
+Videojet Technologies Inc. October , 20 14
+2 - 44
+
+2.2. 2 LP C Laser Power Control
+The Laser Power Controller controls the lamp or diode of the beam source and the rf - driver that
+drives the Q - Switch. Additionally it monitors the cooling unit and turns it on and off.
+• Controls the power supply and the cooling unit.
+• Possibility to connect two cooling units (1 internal and 1 external, only for LN100 A).
+• LPC gets configuration data from the ACC - 2.
+• LPC gets the pulse from the ACC - 2 to mark.
+• Control of the power supply and the RF - driver.
+• LPC calculates the first pulse suppression (FPS).
+• Monitoring of the flow detector and water level.
+Videojet Technologies Inc. October , 20 14
+2 - 45
+
+DIP - Switches on LPC:
+# Name ON OFF Default
+S2.1 IN_ANA_0 0 - 5V 0 - 10V OFF
+S2.2 IN_ANA_1 0 - 5V 0 - 10V OFF
+S2.3 IN_ANA_2 0 - 5V 0 - 10V ON
+S2.4 IN_ANA_3 0 - 5V 0 - 10V ON
+S2.5 not used - - OFF
+S2.6 CAN - Bus terminated (120R) not terminated OFF
+Blink codes of LEDs:
+Code Meaning
+Yellow LED on MDB
+constant flashing bootloader is running
+3 x flashing LPC application is running
+Green operational LED
+constant blinking CAN Bus preoperational
+on CAN Bus operational
+Videojet Technologies Inc. October , 20 14
+2 - 46
+
+M ini D SP B oard
+Part number: 64388
+The MDB is a processor card with a digital signal processor. It has a boot loader program that starts the
+MDB and then waits for the application that has to be sent via the CAN - Bus from the ACC - 2.
+The MDB is used by the LHC and the LPC .
+Blink codes of yellow status LED:
+Code Meaning
+constant flashing bootloader is running
+3 x flashin LPC application is running
+2 x flashing LHC application is running
+Videojet Technologies Inc. October , 20 14
+2 - 47
+
+2. 4 Cooling Unit
+Internal cooling circuit:
+• Flow: 18 l/min (is stored in the component - file on the MMC - card.
+• Stainless steel pump
+• 5 liter expansion tank for d i stilled Wate r.
+• 5 inch particle filter (with filter insert 75μm)
+• 5 inch ion - exchange cartridge (changes d i stilled water into de - ionized water)
+• Conductivity of de - ionized Wa t er: 1μS /cm
+• Max. tube length: 15m
+• F low sensor
+Depending on customer requirements the L N100 laser can be cooled as follows:
+1. External DI Chiller
+With an external DI chiller the cooling water passes two filter cups of the integrated adapter
+module and is lead directly into the laser module. The left filter cups contains a filter (1μm) and
+the right filter cup is filled with 400 ml resin to reduce the conductivity of the water.
+A flow sensor for monitoring the cooling circuit is integrated into the return circuit.
+2. Internal Water/Water Cooler
+• W ith external non - DI chiller
+The water/water cooler has two cooling water circuits: one closed laser - internal cooling circuit
+and an open fresh - water circuit.
+Within the laser - internal cooling circuit the water is lead through the components to be cooled
+and absorbs heat. The heat is transferred to the open fresh - water circuit via a heat exchanger.
+The fresh - water circuit transmits the heat taken from the laser - internal circuit to the non - DI
+chiller.
+Videojet Technologies Inc. October , 20 14
+2 - 48
+
+Attention
+The internal cooling circuit of the laser system must be filled exclusively
+with distilled water!
+• W ith external cooling circuit (municipal water or in - house cooling circuit)
+In order to ensure a trouble - free operation when using municipal water or in - house cooling
+circuit, the external water filter (art. no. AL - 65905) must be installed in the water feed line.
+Additionally a common water stop valve should be installed after the water tap. This is a low -
+cost protection against flooding the working area in case of a burst hose.
+Further information about the external chiller can be found in the enclosed manual of the
+manufacturer.
+Videojet Technologies Inc. October , 20 14
+2 - 49
+
+2.4.1 CPT cooler terminal PCB
+Videojet Technologies Inc. October , 20 14
+2 - 50
+
+2. 5 System Overview
+The Advanced Controller Card (ACC) is the main circuit board of the laser system. The ACC
+communicates via CAN bus and optical fibre with other boards of the system controlling and
+monitoring components. The ACC contains two processors:
+The PowerPC controls the communication with the PC ( Smart Graph software) and
+administrates the application database on the MultiMediaCard (MMC).
+The Digital Signal Processor (DSP) receives prepared marking data from the PowerPC and
+transmits the commands for positioning the galvo mirrors to the FM and for generating the laser
+pulses to the LPC. Thus the DSP is responsible for the actual marking.
+The Laser Power Controller (LPC) and the Laser Head Controller (LHC) are controlling and
+monitoring the laser power supply, the cooling system and the laser beam source.
+The Fast Move (FM) board in the marking head of the laser system controls the galvo mirrors.
+The Customer Interface (CI) comprises all interfaces: network (ethernet), serial interface,
+digital inputs and outputs for system states and commands, digital inputs for connecting trigger
+signals and encoders.
+Videojet Technologies Inc. October , 20 14
+2 - 51
+
+2. 6 TFT Touch Screen
+Videojet Technologies Inc. October , 20 14
+2 - 52
+
+The TFT - Touch - Screen
+• TFT Touch Screen at
+Power Control Module
+• Start/ Stop of a template
+• operational and service
+functions
+• system status messages
+• display of system
+information:
+- serial number
+- software version
+- etc.
+
+Videojet Technologies Inc. October , 20 14
+2 - 53
+
+2. 7 CI - CAN I/O
+CI - CAN - IO
+Part number: 65343
+- Between CAN High and CAN Low, there must always be a 120 Ohm resistor to terminate the
+system - bus.
+- 8 digital Out - and Inputs are available.
+- 24 V power feed from the customer periphery
+The CI - CAN - IO consist of 7 modules:
+Behind the CAN - bus coupler the CI - CAN I/O is galvanically separated!
+Digital Outputs
+1 SYSTEM_READY
+2 MARKING
+3 READY_TO_MARK
+4 SHUTTER_CLOSED
+5 WARNING
+6 GOOD
+7 ERROR
+8 BAD
+Videojet Technologies Inc. October , 20 14
+2 - 54
+
+Digital Inputs
+1 START
+2 PAUSE
+3 STOP
+4 TRIGGER1
+5 EXT_EVENT
+6 EXHAUST_FAULT
+7 RESERVED
+8 EXT_FAULT
+Videojet Technologies Inc. October , 20 14
+2 - 55
+
+Module 5: Digital Inputs Module 6: Digital Inputs Module 7: Termination
+START PAUSE EXT_EVENT EXHAUST_FAULT N.C. N.C.
+X1.4.1 X1.4.5 X1.5.1 X1.5.5
+LED A, Bit0 LED C, Bit1 LED A, Bit4 LED C, Bit5
+24V 24V 24V 24V N.C. N.C.
+Customer Customer Customer Customer
+X1.4.2 X1.4.6 X1.5.2 X1.5.6
+GND GND GND GND N.C. N.C.
+Customer Customer Customer Customer
+X1.4.3 X1.4.7 X1.5.3 X1.5.7
+STOP TRIGGER 1 RESERVED EXT_FAULT N.C. N.C.
+X1.4.4 X1.4.8 X1.5.4 X1.5.8
+LED B, Bit2 LED D, Bit3 LED B, Bit6 LED D, Bit7
+KL1114 KL1114 KL9010
+Videojet Technologies Inc. October , 20 14
+2 - 56
+
+Specification of the outputs:
+Rated load voltage 24 V DC ( - 15 %/+20 %)
+Load type ohmic, inductive, lamp load
+Max. output current (per 0.5 A (short circuit proof)
+channel)
+Reverse voltage yes
+protection
+Electrical isolation 500 Vrms (K - Bus/field potential)
+Specification of the inputs:
+Nominal voltage 24 V DC ( - 15%/+20%)
+"0" signal voltage - 3 V ... 5 V
+"1" signal voltage 15 V ... 30 V
+Input current typ. 5mA
+Input filter 0.2 ms
+Minimum signal ????
+length
+Electrical isolation 500 Vrms (K - Bus/field potential)
+Videojet Technologies Inc. October , 20 14
+2 - 57
+
+Option: external template selection (Part number 65856)
+For the external template selection you need two ad d it ional input modules.
+These modules have to be inserted between the last input module (6) and the termination module(7).
+Module A: Digital Inputs Module B: Digital Inputs
+DATA 0 DATA 1 DATA 4 DATA 5
+X1.6.1 X1.6.5 X1.7.1 X1.7.5
+LED A, Bit8 LED C, Bit9 LED A, Bit12 LED C, Bit13
+24V 24V 24V 24V
+Customer Customer Customer Customer
+X1.6.2 X1.6.6 X1.7.2 X1.7.6
+GND GND GND GND
+Customer Customer Customer Customer
+X1.6.3 X1.6.7 X1.7.3 X1.7.7
+DATA 2 DATA 3 DATA 6 DATA 7
+X1.6.4 X1.6.8 X1.7.4 X1.7.8
+LED B, Bit10 LED D, Bit11 LED B, Bit14 LED D, Bit15
+KL1114 KL1114
+DATA 0 .. DATA 7 build an eight bit integer that selects the template with the according number.
+The selection takes place every time a positive edge is asserted to the standard input EXT_EVENT.
+Before and after this edge all signals have to be stable for at least 10 ms.
+Status Display on bus coupler
+RUN blink codes (left green LED on bus coupler)
+Videojet Technologies Inc. October , 20 14
+2 - 58
+
+CAN - ERR blink codes (left red LED on bus coupler)
+Local errors
+Two LEDs, the “K - bus LEDs”, indicate the operational state of the bus terminals and the connection to
+these bus terminals. The green LED lights up in order to indicate fault - free operation. The red LED blinks
+with two different frequencies in order to indicate an error. The error is encoded in the blinks as follows:
+1. fast blinking: Start of the error code
+2. first slow sequence: Error code
+3. second slow sequence: Error code argument
+Errors:
+Passive bus terminals, such as a power feed terminal, are not included in the terminal count.
+In the case of some errors, rectification does not cause the bus coupler to leave the blink sequence. The
+bus coupler can only be re - started either by switching the power supply off and on again, or by a software
+reset.
+Videojet Technologies Inc. October , 20 14
+2 - 59
+
+2. 7.1 CI - Fast IN (Option)
+The CAN - bus is comparative slow, thus for Mark on the Fly (MOTF) applications, the CI -
+FAST - IN is necessary.
+Trigger enabled: ENABLE and 24V
+Trigger disabled: DISABLE and 24V (before INHIBIT)
+Videojet Technologies Inc. October , 20 14
+2 - 60
+
+CI - FAST - IN (option)
+• The CAN - bus is comparative slow, thus for Mark on the Fly
+(MOTF) applications, the CI - FAST - IN is necessary.
+Trigger enabled: ENABLE and 24V
+Trigger disabled: DISABLE and 24V (before INHIBIT)
+
+CI - FAST - IN
+Part number: 65981
+Terminal Name Description
+X1.1 24V System power
+X1.2 TRIGGER2 Trigger input 2
+X1.3 MONITOR2 Monitor input for trigger 2
+X1.4 GND System ground
+X1.5 24V System power
+X1.6 TRIGGER3 Trigger input 3
+X1.7 MONITOR3 Monitor input for trigger 3
+X1.8 GND System ground
+X1.9 24V System power
+X1.10 ENABLE High on this input enables trigger inputs
+X1.11 DISABLE High on this input disables trigger inputs
+X1.12 GND System ground
+Videojet Technologies Inc. October , 20 14
+2 - 61
+
+X2.1 24V System power
+X2.2 ENC_IDX Input for encoder's index track
+X2.3 ENC_T1 Input for encoder's first track
+X2.4 ENC_T2 Input for encoder's second track
+X2.5 GND System ground
+X2.6 AUX1 Auxiliary input 1
+X2.7 AUX2 Auxiliary input 2
+X2.8 GND System ground
+Description of enable and disable:
+The ENABLE and DISABLE signals make it possible to enable the trigger inputs with an active high or an
+active low signal.
+If you want to use an active high enable signal, tie DISABLE to 0V and use the ENABLE input:
+Enable Disable result:
+24V 0V trigger inputs enabled
+0V 0V trigger inputs disabled
+If you want ot use and active low enable signal (this is the same as an active high disable signal), tie
+ENABLE to 24V and use the DISABLE input:
+Enable Disable result:
+24V 0V trigger inputs enabled
+24V 24V trigger inputs disabled
+Specification of the inputs:
+"0" signal voltage - 3 V ... 5 V
+"1" signal voltage 15 V ... 30 V
+Input current at 24V typ. 20mA
+Minimum signal length without software filter 2 µs
+Electrical isolation none
+Videojet Technologies Inc. October , 20 14
+2 - 62
+
+2. 7. 2 C an Overview
+Transfer from data, configurations entr ie s and error warnings, from one module to another.
+The CAN - bus has to be terminated by a 120 Ohm resistor! On the LHC via a jumper (JP1) .
+ACC - 2 delivers 24 V to the CAN - bus .
+2. 8 Standard Connection
+Videojet Technologies Inc. October , 20 14
+2 - 63
+
+Videojet Technologies Inc. October , 20 14
+2 - 64
+
+Videojet Technologies Inc. October , 20 14
+2 - 65
+
+Videojet Technologies Inc. October , 20 14
+2 - 66
+
+Vcvt d`pfpgmmYSFYglyfup|headl@6hheaMz$$hmtx fA^locaxmp$maxpH metaad`namen.6post$dD prep2Pq_<`t^Q!EWt^bML@53%3f.x[TMC @ F3!@L 9DHqQT.nS9J,S bXL|9%%V"VJ#*s!H#3*"
+z,@:;1'Hck"1A+X@#++%,0%,0'@>6FFY2F#Y@:F**'8>68P..@..@B88BTZ+NM]q??<<<<9999.+}10Cy@pA4%0&%%@&8&,%<%&!&%%316A$>9+6;
+_['jjig&j'h3{|'v,|3&'3'2
+3://$$Y!"!#3$,5+$"
+&3/13#&3413'
+UU@!U"0@U@UU%$%1!++N]+++]q<M+++<?]q?<999++10Cy@;;+<+qr]]qll?+2?+9/01Y5!#"#"&54763232654'&'&#E1S&Ct^l!, 3'$/ +0'%%1 zi]<1*[6BTg!"LC+X@{lu{v0y5z6mE.d66Ue@@3C2222*%/?O44053@B@PE@B344204T24CTX@!/"<ED00'
+'=::
+'%%%4 r}*%%4 rL'+X@K@O5'-8x""!"!!"!#!#""""@'@S 0@UUU
+&
+&,3
+:Ly%#%'2#2'E#E''
+99+++++++YY]l??3+2901Y#&'&&'5!654&'&'5H%5
+/
+'9?:9&"%&8/78-""--/?@> / /.!.!"988''&h??+ 0`p@D S d 2"""@A!k++]]]q]?<<<?<<<99.+}.+}Y10]]CX /]Y]]]]qCX/
+'4@5@U56',?//?+99/++++++++2+/++++++10+CTX@X4U5U '456,'UUUUUU87!U!U!U!-U-U-U--879/++++++9/++++++//??9910++@/8@*58`]6%&88888+P8`8p88@8
+@UUUU@UUUUUU@U
+AV8$$<U@G#p0W+XCTX@Y@UY@UUUL0U0U0@U0+U+17FUFUF@!UFAGAUAUAUALULULULUL@ULUL+U+U+7@U7U7@U7U7@U7U7U7UU @U 0U @U *U @U U @U /2EH@ GTU@U/UOUoUUUVG1%,<,??///?]]+/+++++++++/+++++++++/+++++++++++++++++10++CTX@<%,<,TUV1GU U +U+U+7AUAUAL U X7U7U7U77XLULULULLYX9/+++9/+++9/+++++++///???10KTXFE/08888888Y@4YYY`]6+Y
+U @U U @U UUUUU$@% ,U/+??99?/+++++/+++++10+CTX@W@`p $%%,UUU UUU& U U &UUU'&9/+++9/++9/++++++???99?]10@5'`]6 '`'p''47: HH O'#!O%'#'AD %E@%%,! g@p@%$P `&+N]qr<M<]q<<<<?<?<<<99++10Cy@+<+]]+YY$l%l?+??3+201Y327#5#"&&54&&5!32674&'5c!'-v|EMq,7HAY?+mK9ZG#qBYA2%P6LN7% +XCTX ??/9/10CTX@1"!U*UU U ?+?+?+?+?99/10@SX[5"@a5#"! $ :9:95:JIDEEIi""-"2`4"+14"
+NiK$*#2J%#, g?+X@
+K?gI7tl_G
+$A 0
+>0&&+[3+
+
+pN^@,!:0>1S-'+X@D%$D&%@H
+0

@@ -1,0 +1,580 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\73821-AA Manual DataMaster Videojet EN.pdf
+# cifrado=False bloques=50 caracteres=36795
+
+Operating Instructions
+DataMasterSoftware
+P/N: AL-73821
+Revision: AA, March 2012
+
+MAQ$Q6n`d'@_ofmbAtOo{~alySnwJs]P28>>@BT@?>=<;:9876543210/.-,+*
+8Y10qq]]]]]]]]]#!#737676632&#"6,,"m8g@1&Tm/@K0#UK|?@4I
+
+Copyright 2012, Videojet Technologies Inc. (herein referred to as Videojet). All rights reserved.
+This document is the property of Videojet Technologies Inc. proprietary information owned by and contains confidential and Videojet. Any unauthorized copying, use or disclosure of it without
+the prior written permission of Videojet is strictly prohibited.
+Videojet Technologies Inc.
+1500 Mittel BoulevardPhone:1-800-843-3610Wood Dale, ILFax:1-800-582-1343INTL: Canada, France, Germany, Ireland, Japan, Spain, Offices - USA: Atlanta, Chicago, Los Angeles, Philadelphia
+60191-1073 USAIntl Fax:630-616-3629Singapore, The Netherlands,The United Kingdom www.videojet.comDistributors Worldwide
+
+Table of Contents
+1 DataMaster Software...................................................3
+1.1 Requirements.............................................................1.2 Installation..............................................3................................................................3
+1.3 Starting the Software................................1.4 User Levels..............................................................4................................................................5
+2 User Interface..............................................................7
+2.1 Introduction..........................................................2.2 Overview....................................7..................................................................................7
+2.3 General Area....................................................................................9
+2.3.1 Cell »Home«...........................................................2.3.2 Cell »Campaign«.......................................................9...........................................................................10
+2.3.3 Cell »Lasers«........................................................2.3.4 Cell »User«...........................................................11................................................................................12
+2.3.5 Cell »Settings«......................................................2.3.6 Cell »Logo«..................................................................14.........................................................................15
+2.4 Individual Laser Area.....................................................................16
+2.4.1 Cell »Data input«.............................................2.4.2 Cell »Campaign«............................................................17...........................................................................21
+2.4.2.1 Selection of the Master Laser System and Job...................................................232.4.2.1.1 Data processing configuration........................................................................28
+2.4.3 Cell »Laser«..................................................................................................35
+2.4.3.1 Deleting of a Laser System from the Campaign..................................................37
+2.4.4 Cell »Job« ............................................................2.4.5 Cell »Data Display«.................................................38.............................................................................39
+2.4.6 Cell »Performance«............................................2.4.7 Cell »Logs«....................................................................40.........................................................................41
+3 Examples...................................................................43
+3.1 Example 1: Creating of a Campaign with a Laser System.............433.2 Example 2: Stopping and Continuing of the Campaign
+"Olympics"..............................................................................................44
+3.2.1 Stopping of the Campaign...............................3.2.2 Continuing of the .................................Campaign........................44.............................................................44
+3.3 Example 3: Assigning of a "Olympics"..............Laser System to the Campaign ................................................................................45
+1
+
+Table of Contents
+2
+
+DataMaster Software
+1 DataMaster Software
+The DataMaster software is a high power software to suuously with marking data. This software will be used on a normal PC.pply up to eight laser systems contin-
+1.1 Requirements
+To operate the software properly the following hardware and software requirements have to bemet:
+PC "State of art" with Microsoft Windows XP
+Ethernet connection (only for the laser systems)
+1.2 Installation
+NoteIf the PC is to be connected directly to one laser system the connection mustbe made using a crossover ethernet cable.
+If the PC is to be connected to several laser systems the connection must bemade using a reliable Gigabit switch of industrial quality.
+If the DataMaster software is used with several laser systems, it is expres-sively recommended to run the laser systems in a separate subnet via a dif-
+ferent network card or network switch and not via the home network.
+Important: Within this subnet, only the laser systems should be availablewhich are currently used with DataMaster software!
+The cables which are used should have industrial quality, preferably CAT-7.
+No other software (including antivirus software, automatic updates) shouldrun on the same PC as DataMaster software, neither should an external
+operating panel (Handheld) be connected.
+Please proceed as follows to install the DataMaster software:
+1.Insert the USB stick (dongle) into the USB port of the PC.
+2.Open the USB drive in the Windows Explorer.
+3.Start the setup.exe and follow the instructions of the Install wizard.
+ImportantThe USB stick (dongle) is to be connected PC and must not be removed from the PC after the installation or during ofconstantly to the USB port of the
+the operation of the software.
+03/12 - Rev. AA 3
+
+DataMaster Software
+1.3 Starting the Software
+NoteWhen the DataMaster software is started and the dongle is not connected tothe USB port the following dialog is displayed:
+When you want to use an already installed software with a new dongle (newlicense, exchange of dongle) confirm the following dialog with »YES»:.
+When the dongle is removed during of the software operation the cells of theuser interface are deactivated and the DataMaster software is to be closed.
+You can either double click on the DataMasterclick on » software symbol on the desktop of Windows orDataMaster software« in the start menu.
+The login dialog is displayed. Enter the nameuser interface is displayed. and the password. Confirm with »OK« and the
+4 03/12 - Rev. AA
+
+DataMaster Software
+1.4 User Levels
+For operating the DataMaster software different user levelsfunctions depend on the user level of the entered password. have been defined. The available
+There are three user levels:
+LevelFunction
+OperatorClosing of the Software.
+Access to the cells »Home« und »Logo«.
+Starting and stopping of the laser system in the cell »Campaign« (indivi-dual area).
+Confirmation of warnings and error messages in the cell »Laser« (indivi-dual area).
+Access to the cell »Data Display«.
+Access to the cell »Performance«.
+Export of the logs in the cell »Logs«.
+SupervisorAll functions of the level »Operator«.
+Assigment of the laser system from the cell »Lasers« to the existing cam-paign (individual area).
+Assigment of the data from the cell »Data Input« (existing campaign).
+Deletion of warnings and error messaarea).ges in the cell »Laser« (individual
+Access to the cell »Job«.
+Deletion of the logs in the cell »Logs«.
+AdministratorAll functions of the level »Supervisor«.
+Assigment and deletion of a user in the cell »User«.
+Selection the language of the software user interface.
+Configuration of the directories in the cell »Campaign« (individual area).
+Adding of a campaign in the cell »Campaign« (general area).
+Changing of the software settings for data directory, input parator and logging settings.*.csv file se-
+Configuration of the data processing area).in the cell »Campaign« (individual
+Deletion of the campaign in the cell »Campaign« (individual area).
+Setting of the data buffers configuration in the cell »Campaign« (individu-al area).
+03/12 - Rev. AA 5
+
+DataMaster Software
+6 03/12 - Rev. AA
+
+User Interface
+2 User Interface
+2.1 Introduction
+The data lens technology is going to be applied for the face.DataMaster software graphic user inter-
+By clicking into a cell, the user interface morphsumns and enlarging the active cell. By clicki by slowly compressing all other rows and col-ng into the cell »Home« the home screen of the
+Data Master software is displayed.
+2.2 Overview
+The home screen is divided into two areas:
+Note When clicking with the left mouse into the cell, the cell is activated.
+AreaFunction
+1General area
+HomeDisplay of the Home screen, all cells areclosed.
+CampaignAdding of campaign
+1 LasersDisplay of the available laser systems
+2
+03/12 - Rev. AA 7
+
+User Interface
+AreaFunction
+UserManagement of the users
+SettingsShutting down of the software, selectionof the language and configuration of the
+log functionality
+LogoDisplay of the software version and com-pany address
+2Individuallaser area
+Data inputDisplay of the available marking datafrom the defined folders and assignment
+of the marking data to that campaign.
+Campaign Marking rules can be defined andassigned to individual laser systems or
+groups.
+Assignment of the job and of the masterlaser system, definition of directories,
+buffers and structure of the marking data.START and STOP of the laser systems
+belonging to that campaign.
+LaserDisplay of the laser name and the laserstatus, confirmation and deletion of the
+warnings and error messages.
+JobDisplay of the marking jobs which arecurrently available on the laser system.
+Data displayDisplay of the currently processed mark-ing data.
+Performance Graphical display of the individual cas-caded buffers.
+LogsExporting and deleting of the log files.
+8 03/12 - Rev. AA
+
+User Interface
+2.3 General Area
+The cells of the general area are related to the entire individual laser systems or laser groups.DataMaster software and do not refer to
+2.3.1 Cell »Home«
+1.Click with the left mouse key onto »Home« and the home screen of the software is dis-played.
+NoteBy clicking on this cell, the currently open cell folds and the home screen isdisplayed with all cells being closed.
+03/12 - Rev. AA 9
+
+User Interface
+2.3.2 Cell »Campaign«
+1.Click with the left mouse key onto »Campaign« and the cell is enlarged:
+2.Click onto »Add « and enter a name for the campaign in the field »Enter a campaign name« . Confirm with »OK«.
+10 03/12 - Rev. AA
+
+User Interface
+2.3.3 Cell »Lasers«
+1.Click with the left mouse key onto »Lasers«. The following display is opened:
+Note All available laser system are displayed.
+2.Assign the desired laser system from »Lasers« to an existing campaign via drag and drop.
+NoteIn the individual area, the laser systems are displayed which have beenassigned for that campaign.
+03/12 - Rev. AA 11
+
+User Interface
+2.3.4 Cell »User«
+1.Click with the left mouse key onto »User«. The following dialog is displayed:
+NoteIn this dialog all available users and their roles (access rights) are displayedin alphabetical order.
+Users with the right "Administrator" can field to the right of the user name:assing the following roles via the list
+Operator
+Administrator and
+Supervisor
+In the dialog the following can be set:
+Add user1.Click onto »Add user« in order to create a new user.The following dialog is displayed:
+2.Enter the name and the password of the new user. Confirm with »OK«.
+12 03/12 - Rev. AA
+
+User Interface
+Delete user1.Click onto »Delete user« to remove a user from the list. The following dialog is displayed:
+2.Confirm with »OK« or abort the process with »Cancel«.
+03/12 - Rev. AA 13
+
+User Interface
+2.3.5 Cell »Settings«
+1.Click with the left mouse key onto »Settings«. The following dialog is displayed:
+The following settings can be made:
+Program shutdownClick onto »Program shutdown« to shut down the software. Thefollowing dialog is displayed:
+With »OK« the software is closed,log is displayed. with »Cancel« the previous dia-
+Program languageIn the list field »Program language« the available languages canbe selected. The selection is to be confirmed with »OK«.
+Data directoryIn the list field »Data directory« a directory for the software datafiles (logs, preprocessed marking data etc.) can be selected.
+Input .csv file separatorIn the list field »Input .csv file separator« the separator for the mar-king data files of the file format "csv" (comma separated values)
+can be defined.
+14 03/12 - Rev. AA
+
+User Interface
+Logging settingsClick onto »Logging settings« and the following dialog is dis-played:
+Under »Maximum log size« the maxibe defined.mum size of the log file can
+When »Logs auto export« is not active, the internal log file is over-written when reaching the maximum size.
+When »Logs auto export« is active you can enter a path for savingthe log file under »Enter the directory path«. When reaching the
+maximum size the file is saved to the specified path in a file format"csv" (comma separated values).
+Under »Output .csv file separator« the separators for the indivi-dual log entries of the log file can be defined.
+2.3.6 Cell »Logo«
+1.Click with the left mouse key onto »Logo«. The software version numbers and the addressof the company are displayed.
+03/12 - Rev. AA 15
+
+User Interface
+2.4 Individual Laser Area
+In this area the laser systems controlled by the DMS including their assignment to campaignsand the data sets are managed.
+The general data flow direction is from left to right:
+Data inputDisplay of the available marking assignment of the marking data to that campaign.data from the defined folders and
+Campaign Marking rules can be defined and assigned to individual laser sys-tems or groups.
+Assignment of the job and of the master laser system, definition ofdirectories, buffers and structure of the marking data. START and
+STOP of the laser systems belonging to that campaign.
+LaserDisplay of the laser name and the laser status, confirmation and dele-tion of the warnings and error messages.
+Job Display of the marking jobs which are currently available on the lasersystem.
+Data displayDisplay of the currently processed marking data.
+Performance Graphical display of the individual cascaded buffers.
+LogsExporting and deleting of the log files.
+16 03/12 - Rev. AA
+
+User Interface
+2.4.1 Cell »Data input«
+1.Click with the left mouse key onto »Data input« and all currently available data files are dis-played as inactive.
+NoteIf new data have been discovered in one of the configured directories inwhich the software searches constantly, i.e. USB stick, CD drive and other
+defined directories, the Data input cell stnew data are available.arts blinking to indicate the user that
+03/12 - Rev. AA 17
+
+User Interface
+The data are to be supplied in the following format:
+File types
+The file types *.dat are the standard marking data files. These files containthe data sets which are to be marked. They are indicated by a data icon.
+The file types *.oob are the Out-of-band marking data files. These files con-tain the data sets which defined with the standard data files are to be com-
+bined and marked. They are indicated by a crown icon.
+The file types *.exl are the exclusion list data files. This file contains thedata sets which are not to be marked. The DataMaster software checks the
+available standard marking data files to indicated by a filter icon.the exclusion list data files. They are
+First the exclusion list data files must be assigned to the campaign, then Out-of-band markig data files, and, finally, general data files..
+NoteThe format of the *.exl and *.oob data files is to be identical with the formatof the used *.dat data files.
+Format and Name of the data files
+The following naming conventions apply: Name.XXX.YYY.[ZZZ]
+XXX can be dat,oob or exl
+YYY can bexls,txt, xml or csv
+ZZZ can be pgp,zip or zip.pgp and is optional
+Example: Standard data file: Olympiade.dat.xls.zip
+Out-of-band data file: Olympiade.oob.xls.zip
+Exclusion list data file: Olympiade.exl.xls.zip
+18 03/12 - Rev. AA
+
+User Interface
+NoteBefore assignment of the data files to the desired campaign:
+the master laser system and the master job must be selected (see page 23) and
+the data processing configuration must be defined (see page 28).
+After data processing configuration of the data files the data files are dis-played as active in »Data Input«.
+NoteThe available data files in »Data Input« are displayed as inactive if:
+the data files are already used in a campaign
+the naming convention of the data file does not correspond to the naming convention: Name.XXX.YYY.[ZZZ]
+the structure of the data files does not match
+the data file content is corrupted and
+the data files are used by another application (e.g. MS Excel).
+By positioning the cursor onto the inactive data file the reason for deactiva-tion is displayed as a tooltip.
+03/12 - Rev. AA 19
+
+User Interface
+2.Assign the desired data files to the cell »Campaign« via drag and drop.
+NoteIn the "Data factory" the data files are assigned to the campaign by clickingon the button »Enable data factory«.
+3.After assigning the data files to a campaign the data files are imported into the buffers.
+20 03/12 - Rev. AA
+
+User Interface
+2.4.2 Cell »Campaign«
+1.Click with the left mouse key onto an existing campaign and the cell is enlarged.
+2.If necessary assign the desired laser system bypaign via drag and drop (see page 11). moving it from »Lasers« to the existing cam-
+03/12 - Rev. AA 21
+
+User Interface
+NoteWhen assigning the laser system to a campaign the following is checked:
+was the laser system assigned to this campaign already and
+are there saved data for the laser system. If saved data exist the following dialog ist displayed:
+By confirming with »OK« the saved data are tranfered to the laser system.
+22 03/12 - Rev. AA
+
+User Interface
+2.4.2.1 Selection of the Master Laser System and Job1.Click with the left mouse key onto the newly created campaign cell. The following dialog is
+displayed:
+NotePlease note the following:
+a master laser system must be selected.
+only jobs of the master laser system are displayed for selection.
+the jobs from the other laser systems assigned to the campaign are to be named identically as the selected job of the master laser system.
+the jobs from the other laser systems assigned to the campaign need to have the same variables as the selected job of the master laser system.
+The variables which are not to be marked must be set to an the inactive layer. The contents of these variables are not marked and get lost.
+03/12 - Rev. AA 23
+
+User Interface
+This symbol marks templates.
+By positioning the cursor onto the symbol the following tooltip is displayed:
+This symbol marks template lists, template sequences and template batches.
+By positioning the cursor onto the symbol the following tooltip is displayed:
+24 03/12 - Rev. AA
+
+User Interface
+The following settings can be made:
+Master laserselectionIn the list field »Master laser« the master laser system is selected.
+Job selectionIn the field »Job selection« a job is selected for a campaign.
+Note: Only jobs of the master laser system are displayed.
+Set master laser and jobClick on »Set master laser and job« to assign the master laser systemand the selected job to the campaign.
+Startmarking/Stopcampaign Click on »Startmarking/Stopcampaign« to start or stop the laser sys-tems assigned to the campaign. The button »Startmarking« is active
+when all laser systems assigned to the campaign are ready to mark-ing. By positioning the cursor onto the deactivated button the reason
+for deactivation is displayed as a tooltip.
+DirectoriesconfigurationThe DataMaster software searches and manages data in the locationsdefined for the campaign. These locations can be USB sticks, CD/
+DVD drives and other defined directoriemarking data files are displayed in »Data input«.s. In this locations available
+Data processingconfigurationThis button is active when a masterbeen assigned to the campaign. laser system including job has
+Click on »Data processing configuration« to select the structure of themarking data and how they are assigned to the job.
+Buffers configurationClick on »Buffers configuration« to define the buffer settings:
+under »Buffers number« the number of the buffers can be entered
+under »Buffers length« the number of the values which are saved in a buffer can be entered.
+03/12 - Rev. AA 25
+
+User Interface
+Delete campaignClick on »Delete« to delete the selected campaign. With »OK« the cam-paign is deleted, with »Cancel« the previous dialog is displayed.
+2.Select the master laser system in the list field »Master laser selection« .
+3.Select the job in the field »Job selection« .
+4.Confirm with »Set master laser and job«.
+5.Click onto »Directory configuration«.
+AddInsertion of a new path.
+DeleteDeletion of a path from the selection.
+OK Take over of all modifications.
+CancelCancel of the dialog.
+26 03/12 - Rev. AA
+
+User Interface
+6.Click onto »Add« and enter the desired path.
+7.Confirm with »OK« or cancel the process with »Cancel«.
+03/12 - Rev. AA 27
+
+User Interface
+2.4.2.1.1 Data processing configuration
+1.Click onto »Data processing configuration« and define the difor the jobs.stribution of the marking data
+In the list field »Data source« all available marking data from »Data input« can be selected.
+The selected data is only used for the definition of the data structure.
+After definition of the data structure
+only the marking data with the corresponding structure are pro-vided in »Data input«.
+28 03/12 - Rev. AA
+
+User Interface
+File type*.xls
+1.Select the file of type *.xls (excel format) in the list field »Data source« .The following dialog is displayed:
+NoteUnder »File structure preview« a schematic representation of the selected fileis displayed.
+On the right side the available variables of the job are displayed.
+2.Assign the available columns into the Example:respective variables via drag and drop.
+Click into the column A in the field »File structure preview« and assign the column A to the vari-able 1 via drag and drop.The column is displayed in the box next to the variable name.
+In the field »Out-of-band data processing« thermarking data.e are two options to assign the "Out-of-band"
+1.Start after XX entriesafter XX markings of the "Out-of-band" aremarked.
+Interleave, every YY entriesafter XX markings of the standard markingdata the "Out-of-band" data are marked after
+each YY markings of the standard markingdata.
+2.Random, earliest YY, latest ZZentries the "Out-of-band" marking data are marked atthe earliest after each YY markings and at the
+latest after ZZ markings. The exact time isaccidental in this range.
+3.Select the assignment of the "Out-of-band" marking data in the field »Out-of-band data pro-cessing«.
+Confirm the desired option by clicking into the box.
+03/12 - Rev. AA 29
+
+User Interface
+File type*.csv
+1.Select the file of type *.csv (comma separated values) in the list field »Data source« .The following dialog is displayed:
+NoteUnder »File structure preview« a data set of the selected file is displayed.On the right side the available variables of the job are displayed.
+2.Assign the available fragments (range between two semicolons) into the respective variablesvia drag and drop.
+Example:Select the first fragment in the field »File structure preview« and assign the fragment to the vari-
+able 1 via drag and drop. The content of the fragmentname. is displayed in the box next to the variable
+In the field »Out-of-band data processing« thermarking data:e are two options to assign the "Out-of-band"
+1.Start after XX entriesafter XX markings of the "Out-of-band" aremarked.
+Interleave, every YY entriesafter XX markings of the standard markingdata the "Out-of-band" data are marked after
+each YY markings of the standard markingdata.
+2.Random, earliest YY, latest XXentries the "Out-of-band" marking data are marked atthe earliest after each YY markings and at the
+latest after XX markings. The exact time isaccidental in this range.
+3.Select the assignment of the "Out-of-band" marking data in the field »Out-of-band data pro-cessing«.
+Confirm the desired option by clicking into the box.
+30 03/12 - Rev. AA
+
+User Interface
+File type *.txt
+1.Select the file type *.txt (CR LF separated data) in the list field »Data source«.The following dialog is displayed:
+2.Assign the available section into the respective variables via drag and drop.
+Example:
+NoteUnder »File structure preview« a data set of the selected file is displayed.On the right side the available variables of the job are displayed.
+Select the section 1 in the field »File structure preview« and assign the section 1 to the variable1 via drag and drop. The content of the section is displayed in the box next to the variable name.
+In the field »Out-of-band data processing« thermarking data:e are two options to assign the "Out-of-band"
+1.Start after XX entriesafter XX markings of the "Out-of-band" aremarked.
+Interleave, every YY entriesafter XX markings of the standard markingdata the "Out-of-band" data are marked after
+each YY markings of the standard markingdata.
+2.Random, earliest YY, latest XXentries the "Out-of-band" marking data are marked atthe earliest after each YY markings and at the
+latest after XX markings. The exact time isaccidental in this range.
+3.Select the assignment of the "Out-of-band" marking data in the field »Out-of-band data pro-cessing«.
+Confirm the desired option by clicking into the box.
+03/12 - Rev. AA 31
+
+User Interface
+File type*.xml
+1.Select the file of type *.xml in the list field »Data source«.The following dialog is displayed:
+2.Assign the desired attribute into the respective variables via drag and drop.
+Example:
+NoteUnder »File structure preview« the availaplayed.ble attributes of the data set are dis-
+On the right side the available variables of the job are displayed.
+Select the attribute 1 in the field »File structure preview« and assign the attribute 1 to the vari-able 2 via drag and drop. The content of the attribute is displayed in the box next to the variable
+name.
+In the field »Out-of-band data processing« thermarking data:e are two options to assign the "Out-of-band"
+1.Start after XX entriesafter XX markings of the "Out-of-band" aremarked.
+Interleave, every YY entriesafter XX markings of the standard markingdata the "Out-of-band" data are marked after
+each YY markings of the standard markingdata.
+2.Random, earliest YY, latest XXentries the "Out-of-band" marking data are marked atthe earliest after each YY markings and at the
+latest after XX markings. The exact time isaccidental in this range.
+3.Select the assignment of the "Out-of-band" marking data in the field »Out-of-band data pro-cessing«.
+Confirm the desired option by clicking into the box.
+32 03/12 - Rev. AA
+
+User Interface
+File type "Data factory"
+When selecting "data factory" as a data source the file assignment for standard data marking but genDataMaster software does not need dataerates standard marking data randomly ac-
+cording to defined data factory rules.
+1.Select the file of type Data factory The following dialog is displayed:in the list field »Data source«.
+NoteOn the left side the variables of the job are displayed.Under »Sample preview« a generated data set example is displayed.
+Under »ExternalX« the data generation properties are assigned to the dis-played variables.
+Properties:Under »Number of characters« the minimal and maximal length of the data is
+entered.Under »Character alphabet« the character range of the data set is selected.
+Under »Restrict alphabet to« the selected data set can be limited even more,e.g. by entering the range 9-A. The entered characters must correspond to the
+selected range. The sorting is carried out according to ASCII code.
+When »Explicit list of characters« is selected it is possible to enter individualcharacters to be used for data generation (see below).
+Character alphabet Descriptione.g.
+Digits 0...9Capital characters (A...Z) numberscapital characters 2-6A-C
+Capital characters A...Z + digits 0...9Capital+small characters A...Z a...zcapital characters+numberscapital+small characters9-BC-t
+Capital+small characters+digits A..Z a..z 0..9Explicit list of characterscapital+small characters+numbersdetailed list of individual characters9-c4-A;J=
+03/12 - Rev. AA 33
+
+User Interface
+2.Assign the desired properties to all displayed variables.In the field »Out-of-band data processing« there are two options to assign the "Out-of-band"
+marking data:
+1.Start after XX entriesafter XX markings of the "Out-of-band" aremarked.
+Interleave, every YY entriesafter XX markings of the standard markingdata the "Out-of-band" data are marked after
+each YY markings of the standard markingdata.
+2.Random, earliest YY, latest XXentries the "Out-of-band" marking data are marked atthe earliest after each YY markings and at the
+latest after XX markings. The exact time isaccidental in this range.
+3.Select the assignment of the "Out-of-band" marking data in the field »Out-of-band data pro-cessing«. Confirm the desired option by clicking into the box.
+34 03/12 - Rev. AA
+
+User Interface
+2.4.3 Cell »Laser«
+1.Click with the left mouse key onto »Laser«. The following dialog is displayed (without or with the error status):
+Laser statusIn the field »Laser status« the current status of the laser system is dis-played.
+Error listIn the field »Error list« all warnings or error messages are displayed.
+Confirm allClick on »Confirm all« to confirm the displayed warnings and error mes-sages.
+DeleteClick on »Delete« to delete of the confirmed warnings or error mes-sages. Confirm with »OK« or cancel with »Cancel«.
+03/12 - Rev. AA 35
+
+User Interface
+2.Confirm the displayed warnings or error messages with »Confirm all«.
+3.If necessary delete the confirmed warnings or error messages with »Delete«.
+NoteIn the cell »Laser« the system states of the laser system are displayed incolour:
+blueready for marking
+yellowwarning state
+rederror state
+orangekey switch open
+greenmarking
+greystart up (the state after closing the key switch)
+There are the following system causes for the state "not ready for marking":
+The laser system is not ready for marking (z.B. Key-switch open, Interlock open)
+The laser system is not applicable for the campaign for the following reasons:
+1.The template defined in the campaign does not exist on all lasersystems
+2.The template on a laser system does not contain the variables de-fined in the campaign.
+3.The variables on the laser system are too short for the marking datadefined in the campaign.
+36 03/12 - Rev. AA
+
+User Interface
+2.4.3.1 Deleting of a Laser System from the Campaign1.Move the laser system from »Laser« to »Lasers« via drag and drop.
+NoteWhen there are data in the buffer of the laser system the following dialog isdisplayed:
+2.Confirm with »OK«.The data are saved and will be available upon new assignment of the laser
+system to the campaign.
+03/12 - Rev. AA 37
+
+User Interface
+2.4.4 Cell »Job«
+1.Click onto »Job« and all available jobs are displayed.
+NoteVia drag and drop the jobs can be copied to other laser systems.
+38 03/12 - Rev. AA
+
+User Interface
+2.4.5 Cell »Data Display«
+1.Click with the left mouse key onto »Data display«. The current data set is displayed:
+NoteThis information is updated automatically.
+03/12 - Rev. AA 39
+
+User Interface
+2.4.6 Cell »Performance«
+1.Click with the left mouse key onto »Performanctheir filling state is displayed.:e«. The number of the individual buffers and
+40 03/12 - Rev. AA
+
+User Interface
+2.4.7 Cell »Logs«
+1.Click with the left mouse key onto »Logs«. The log files are displayed:
+The following settings can be made:
+DeleteClick on »Delete« to delete of the currentwith »Cancel«. log file. Confirm with »OK« or cancel
+03/12 - Rev. AA 41
+
+User Interface
+ExportClick on »Export« to save of the currentpath« the path for the desired memory location is entered. log files. Under »Enter the directory
+Confirm with »OK« or cancel with »Cancel«.
+42 03/12 - Rev. AA
+
+Examples
+3 Examples
+3.1 Example 1: Creating of a Campaign with a Laser System
+NoteThe delivered marking templates have to be copied onto the laser system(see manual "Smart Graph software" or "Simple Operator Interface").
+1.Start the DataMaster software.
+2.Click onto »Campaign« and create a campaign with the name "Olympics".
+3.Click onto »Lasers« and assign a laser system to the campaign.
+4.Click onto »Olympics«.
+5.Click onto »Directories configuration« and enter the path "C:\Sampledata" for the markingdata.
+6.Select the master laser system and the job "Job_1" and confirm with »Set master laser andjob«.
+7.Click onto »Data processing configuration« and file "Sample.dat.txt".select in the list field »Sample source« the
+8.Select the section "1234567" in the field »File structure preview« and assign it to the variableVar_1.
+9.Select the section "abcdefgh" in the field »File structure preview« and assign it to the variableVar_2.
+10.Select the section "1234567" in the field »File structure preview« and assign it to the variableVar_3.
+11.Confirm with »OK«.
+12.Click onto »Data input« and assign the marking data to the campaign "Olympics".
+13.Click onto "Olympics" and start the laser system by clicking onto »Start marking«.
+03/12 - Rev. AA 43
+
+Examples
+3.2 Example 2: Stopping and Continuing of the Campaign "Olympics"
+The example 2 is the continuation of the example 1:
+3.2.1 Stopping of the Campaign1.Click onto "Olympics" and stop the laser system by clicking onto »Stop campaign«.
+2.Assign the laser system to »Lasers« via drag and drop.
+3.When there are data in the buffer of the laser system the following dialog is displayed in thecell »Olympics«:
+4.Confirm with »OK«.The data are saved and will be available upon new assignment of the laser system to the
+campaign.
+5.The laser system is available for other tasks.
+3.2.2 Continuing of the Campaign
+6.Click onto »Lasers« and assign the laser system from »Lasers« to the campaign via dragand drop.
+7.Confirm the following dialog with »OK« and the saved data are tranfered to the laser system.
+8.Click onto "Olympics" and start the laser system by clicking onto »Start marking«.
+44 03/12 - Rev. AA
+
+Examples
+3.3 Example 3: Assigning of a Laser System to the Campaign "Olympics"
+The example 3 is the continuation of the example 1:
+NoteAll laser systems of a campaign must have a marking template with the iden-tical name and the identical variables.
+1.Click onto "Olympics" and stop the laser system by clicking onto »Stop campaign«.
+2.Click onto »Lasers« and assign the second lavia drag and drop.ser system from »Lasers« to the campaign
+NoteWhen assigning the laser system to a campaign the following is checked:
+was the laser system assigned to this campaign already and
+are there saved data for the laser system. If saved data exist the following dialog ist displayed:
+By confirming with »OK« the saved data are tranfered to the laser system.
+3.Click onto "Olympics" and start the laser system by clicking onto »Start marking«.
+03/12 - Rev. AA 45
+
+Examples
+46 03/12 - Rev. AA
+
+User Interface
+The data are to be supplied in the following format:
+File types
+The file types *.dat are the standard marking data files. These files containthe data sets which are to be marked. They are indicated by a data icon.
+The file types *.oob are the Out-of-band marking data files. These files con-tain the data sets which defined with the standard data files are to be com-
+bined and marked. They are indicated by a crown icon.
+The file types *.exl are the exclusion list data files. This file contains thedata sets which are not to be marked. The DataMaster software checks the
+available standard marking data files to the exclusion list data files. They areindicated by a filter icon.
+First the exclusion list data files must be assigned to the campaign, then Out-of-band markig data files, and, finally, general data files.
+NoteThe format of the *.exl and *.oob data files is to be identical with the formatof the used *.dat data files.
+Format and Name of the data files
+The following naming conventions apply: Name.XXX.YYY.[ZZZ]
+XXX can be dat,oob or exl
+YYY can bexls,txt, xml or csv
+ZZZ can be pgp,zip or zip.pgp and is optional
+Example: Standard data file: Olympiade.dat.xls.zip
+Out-of-band data file: Olympiade.oob.xls.zip
+Exclusion list data file: Olympiade.exl.xls.zip
+18 03/12 - Rev. AA

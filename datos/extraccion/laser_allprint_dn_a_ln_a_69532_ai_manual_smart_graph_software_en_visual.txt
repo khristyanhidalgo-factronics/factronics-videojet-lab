@@ -1,0 +1,3105 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\69532-AI Manual Smart Graph Software EN.pdf
+# cifrado=False bloques=126 caracteres=152945
+
+Index: AI [EN], February 2019
+AL-69532
+Translation of the original instructions
+Operating Instructions
+Smart Graph
+
+Distributors worldwide
+www.videojet.com
+Int'l Fax: 630-616-3629 The Netherlands, The United Kingdom
+Fax (USA): 1-800-582-1343 INT'L: Canada, France, Germany, Ireland, Japan, Spain, Singapore,
+Phone (USA): 1-800-843-3610 Offices - USA: Atlanta, Chicago, Los Angeles, Philadelphia
+60191-1073 USA
+Wood Dale, IL
+Videojet Technologies Inc.
+1500 Mittel Boulevard
+mission of Videojet is strictly prohibited.
+proprietary information owned by Videojet. Any unauthorized copying, use or disclosure of it without prior per-
+All rights reserved. This document is the property of Videojet Technologies Inc. and contains confidential and
+Copyright 2019, Videojet Technologies Inc. (herein referred to as Videojet)
+
+02/19 - Index: AI [EN] Smart Graph / Table of Contents iii
+4.7 Marking...................................................................................................... 103
+4.6 Information................................................................................................ 102
+4.5.1 Layer scripts.................................................................................... 99
+4.5 Layer........................................................................................................... 97
+4.4 Filling parameters........................................................................................ 92
+4.3.10 Tool »Matrix«.................................................................................. 87
+4.3.9 Tool »Logo«.................................................................................... 84
+4.3.8 Tool »ID matrix code«..................................................................... 74
+4.3.7 Tool »Barcode«............................................................................... 69
+4.3.6 Tool »Text«..................................................................................... 53
+4.3.5 Tool »Ellipse«.................................................................................. 51
+4.3.4 Tool »Rectangle«............................................................................ 50
+4.3.3 Tool »Polygon«............................................................................... 48
+4.3.2 Tool »Zoom«................................................................................... 47
+4.3.1 Selection tool................................................................................... 46
+4.3 Tool bar....................................................................................................... 44
+4.2 Icon bar....................................................................................................... 42
+4.1.1 Template properties........................................................................ 40
+4.1 Context menu.............................................................................................. 38
+4 »Template« interface .................................................................................... 37
+3.3 Messages.................................................................................................... 36
+3.2.4 Preview........................................................................................... 36
+3.2.3 Template positioning....................................................................... 34
+3.2.2 Variable settings.............................................................................. 33
+3.2.1 Select template............................................................................... 24
+3.2 Marking adjustment..................................................................................... 24
+3.1.3 Preview........................................................................................... 23
+3.1.2 Laser............................................................................................... 22
+3.1.1 Status.............................................................................................. 21
+3.1 Marking........................................................................................................ 21
+3 »Laser Operation« interface ........................................................................ 21
+2.2 Elements of a database............................................................................... 19
+2.1 Context menu.............................................................................................. 17
+2 »File« interface ............................................................................................. 10
+1.7 Backup creation............................................................................................. 9
+1.6 Components of a marking template.............................................................. 7
+1.5 Operating mode............................................................................................. 7
+1.4 Access levels................................................................................................. 6
+1.3 Accessing the software................................................................................. 6
+1.2 Installation..................................................................................................... 5
+1.1 Introduction.................................................................................................... 5
+1 Marking software ............................................................................................ 5
+Table of Contents
+
+02/19 - Index: AI [EN] Smart Graph / Table of Contents iv
+Index ............................................................................................................ 124
+5.5 Info............................................................................................................ 122
+5.4 Smart Graph.............................................................................................. 121
+5.3 System setting........................................................................................... 118
+5.2 Marking head............................................................................................. 117
+5.1.4 Product movement........................................................................ 112
+5.1.3 Entering the product movement.................................................... 111
+5.1.2 Trigger setting............................................................................... 110
+5.1.1 Name of product registration......................................................... 110
+5.1 Product registration................................................................................... 109
+5 »Configuration« interface .......................................................................... 109
+4.9 Select product registration......................................................................... 108
+4.8 Parameter set............................................................................................ 104
+
+02/19 - Index: AI [EN] Smart Graph / 1 Marking software 5
+already installed at the factory.
+If a PC is included in the delivery of your laser system, the marking software is
+NOTICE
+of the Install Shield Wizard.
+as the drive letter for your CD ROM drive of your PC. Follow the instructions
+3.Enter CD:\setup.exe in the empty text box, whereby this example uses CD
+2.Go to the Start menu of the Windows operating system and select »Run«.
+1.Insert the installation CD in the CD ROM drive of your PC.
+Install your marking software as follows:
+1.2 Installation
+your Windows documentation.
+operations. For more information about the operation of Windows, please refer to
+This operating manual does not include a detailed explanation of basic Windows
+See section " Backup creation [ } 9] ".
+Save your data in regular intervals and create backup copies for your files!
+The PC must be configured for a fixed IP address!
+NOTICE
+mation about available training, please contact Videojet Technologies Inc..
+nal operation of the laser system and the Smart Graph software. For more infor-
+Regular training sessions are offered for the trouble free entry into the professio-
+transferred easily to the laser system with the integrated computer interface.
+ter the creation of a marking content with the Smart Graph software it can be
+marking contents in the usual environment of your Windows operating system. Af-
+The Smart Graph software provides a comfortable option to you to create or edit
+• Transfer of created data to the laser system.
+• Configuration of the laser system.
+tions in the Windows environment.
+• Creation and managing of templates, parameter sets and product registra-
+The marking software "Smart Graph" provides the following functions:
+1.1 Introduction
+1 Marking software
+
+02/19 - Index: AI [EN] Smart Graph / 1 Marking software 6
+Graph ).
+Configuration -> Smart
+• Defining passwords (under
+tries.
+• Configuration of product en-
+2 2222 • All functions of Level 1.
+• Create template lists.
+• Create and edit templates.
+ment.
+• Complete database manage-
+1 1111 • All functions of Level 0.
+mation.
+• Displaying configuration infor-
+messages.
+• Saving, confirming and deleting
+current template.
+0 no password • Positioning and marking the -
+Level Default password Functions Icon
+not available until a specific access level are marked with an icon.
+This operating manual explains all functions of the software. Functions that are
+NOTICE
+Smart Graph at runtime.
+entered. The applicable access level can be edited under Configuration ->
+Available functions are contingent upon the access level of the password that was
+Different access levels have been defined to operate the Smart Graph software.
+1.4 Access levels
+will be displayed.
+Start page and clicking once on Smart Graph. The dialog for the password entry
+double-clicking on the Smart Graph icon or in the Menu selection of the Windows
+You have the option to open the software directly from the desktop interface by
+1.3 Accessing the software
+
+02/19 - Index: AI [EN] Smart Graph / 1 Marking software 7
+process through entering the product via sensors.
+The product registration contains all data that is required to trigger the marking
+Product registration
+and marking speed.
+the material of the product. The values it contains include values for laser output
+The parameter set is configured for the respective product, or, more specifically,
+Parameter set
+rial numbers, character sets, etc.
+The marking content defines the appearance of the marking, e.g. texts, logos, se-
+Marking content
+product:
+The following elements of the template must be defined to apply a marking to a
+template
+1.6 Components of a marking
+Graph.
+The operating mode change will not be active until after restarting the Smart
+NOTICE
+PC existed prior to the start.
+mode will automatically lead to a switch to the laser, even if a connection to the
+groups cannot be transferred to the PC. Starting the Smart Graph software in this
+In this mode, only the laser is available in the database manager. Elements or
+Laser mode (online)
+isted prior to the start.
+will automatically lead to a switch to the PC, even if a connection to the laser ex-
+cannot be transferred to the laser. Starting the Smart Graph software in this mode
+In this mode, only the PC is available on the File interface. Elements or groups
+PC mode (offline)
+fer elements or groups between the PC and the laser.
+(see Chapter 2 " »File« interface [ } 10] "). This mode provides the option to trans-
+The PC and the laser are available in the database manager of the File interface
+PC and Laser mode
+for the operating mode:
+under Configuration > Smart Graph . The following settings are available
+The operating mode of the Smart Graph software may be configured as needed
+1.5 Operating mode
+
+02/19 - Index: AI [EN] Smart Graph / 1 Marking software 8
+again.
+When the end the batch or sequence is reached, the first template will be used
+batch.
+trigger will be required, i.e. the process restarts with the first template of the
+triggers (product collection). When processing is canceled, a restart with a Start
+first impulse is the Start trigger. Continued processing occurs through subsequent
+The templates of a batch will be processed by consecutive trigger impulses. The
+Batch
+the sequence.
+processed will be queued in the trigger queue and processed following the end of
+product consecutively. Trigger impulses that are received while the sequence is
+A trigger impulse initiates a sequence of templates that will be applied to the
+Sequence
+tion is thereby applied:
+quence or batch will then be processed consecutively. The following differentia-
+Templates may be consolidated in sequences or batches. The templates in a se-
+the »Laser Operation« interface under »Set up marking«.
+ent position. Simply change the positioning directly on the template or on
+• You want to apply the same marking content on the same material in a differ-
+per« to »Plastic«.
+of on plastic. Simply access a new parameter set, e.g. switch from »Pa-
+• You want to apply the same marking at the same position on plastic instead
+Examples:
+very quickly for changed conditions.
+registration and positioning in the template provide the option to adjust a marking
+The combination of the four elements marking content, parameter set, product
+the product.
+The positioning feature indicates the position and size of the marking content on
+Positioning
+
+02/19 - Index: AI [EN] Smart Graph / 1 Marking software 9
+7.The database will be backed up accordingly and can be imported as needed.
+6.Click on »Save«.
+5.Enter a name and path on your PC.
+4.Select "complete database" under »Save as type«.
+3.Click on »Export«.
+2.Select the complete database.
+1.Select the PC or the laser system on the »File« interface.
+Follow the following steps to create a backup:
+the laser system. Both of them must be backed up in regular intervals.
+At a minimum, there is an offline database on the PC and an online database in
+1.7 Backup creation
+
+02/19 - Index: AI [EN] Smart Graph / 2 »File« interface 10
+read from left to right can be displayed.
+All database entries are Unicode capable. This means that all characters that are
+NOTICE
+PC and Laser mode
+file manager will be displayed as shown in the figure below.
+When the operating mode is set to »PC and Laser Mode«, the interface for the
+PC mode Laser mode
+the »PC Mode« and also the »Laser Mode«.
+figuration > Smart Graph. The figures below show the database manager for
+ing Mode [ } 7] ") and enter these settings in the Smart Graph software under Con-
+You have the option to select one of three different modes (see Chapter " Operat‐
+The appearance of the interface depends on the operating mode configuration.
+This interface is available in the database manager and only from Access Level 1.
+2 »File« interface
+
+02/19 - Index: AI [EN] Smart Graph / 2 »File« interface 11
+1.Select »Edit marking system«. The following dialog will be displayed
+If no systems exist in the selection field, proceed as follows:
+2
+laser type (CO or YAG) and adjust the display accordingly.
+When a connection is established, the software will automatically detect the
+the selection field.
+field. When multiple laser systems exist, the desired system can be selected from
+The name of the currently selected laser system will be displayed in the selection
+7
+based on and the required marking time of the templates.
+PC and the laser and indicate the number of vectors on which the template is
+The columns »Vectors« and »Marking time« apply to the Templates group on the
+6
+date. Click on the gray bar or on »Changed« to sort the data.
+Elements that are displayed in a group can be sorted alphabetically or by change
+fault« from the context menu.
+element other than the default, right-click on the element and select »Set as De-
+be used automatically for the creation of new templates. If you want to select an
+eters and product registrations. This element is the defined default value and will
+One element each will be shown in bold print in the groups character sets, param-
+will be displayed after the group name.
+set, product registration). The number of elements contained in the group name
+play a preview (logo, character set) or jump to the element (template, parameter
+elements are located within these groups. Double-clicking on an element will dis-
+batches, character sets, logos, parameters, product registrations. The respective
+the following groups: Templates, template lists, template sequences, template
+The database on the PC is shown on the left half. The tree structure consists of
+5
+The activated option (PC or Laser) will be highlighted with a yellow bar.
+4
+Number of database elements, date and time of program access.
+3
+the file under the desired path.
+new databases in this field: Select <New Database File>, enter a name and save
+the desired database can be selected with the selection field. You can also create
+path is defined during the software installation. When multiple databases exist,
+The path of the current database file will be displayed in the selection field. This
+2
+Graph software.
+window. This header will also be displayed for all other interfaces of the Smart
+The currently selected database will be displayed in the header of the software
+1
+
+02/19 - Index: AI [EN] Smart Graph / 2 »File« interface 12
+>> or << (Transfer)
+(the respective function refers to the selected element or active database):
+There are buttons between the two database views with the following functions
+9
+date. Click on the gray bar or on »Changed« to sort the data.
+Elements that are displayed in a group can be sorted alphabetically or by change
+character set is displayed after the character set name.
+will be displayed after the group name. The number of characters contained in the
+set, product registration). The number of elements contained in the group name
+play a preview (logo, character set) or jump to the element (template, parameter
+ements are located within these groups. Double-clicking on an element will dis-
+plates, character sets, logos, parameters, product registrations. The respective el-
+ments on the right half. The tree structure consists of the following groups: Tem-
+The online database of the selected laser system will be displayed with its ele-
+8
+nections. txt file and can now be selected in the selection field.
+2.Click on »Accept« to confirm your entries. The data will be written to the Con-
+tem«.
+1.Click on »New« and enter a name and IP address under »Edit marking sys-
+low:
+If the file Connections.txt does not include any systems, follow the steps be-
+desired laser system in the selection field.
+address and name of the laser system, confirm with »OK« and then select the
+2.Click on »Browse«, select the Connections.txt file that contains the IP
+
+02/19 - Index: AI [EN] Smart Graph / 2 »File« interface 13
+Parameter set .par,.xml
+Font .fn
+Logo .lgo
+Template .tpl,.svg,.mcl,.xml
+File Format
+The following formats are supported:
+be saved automatically after changes are made.
+dialog Configuration->Smart Graph is not activated. Otherwise, the database will
+The »Save« button is only visible when the »Background Save« function in the
+tory.
+When you export the database, make sure you export the entire database direc-
+NOTICE
+Save the database in regular intervals!
+at a different location.
+The selected element or the entire database can be saved under a different name
+Export
+memory and continues to exist even after the system has been shut down.
+The entire database will be saved. The data is thereby transferred to the fixed
+Save
+Graph is activated.
+the »Background Save« function in the dialog under Configuration-> Smart
+has been answered. The updated database will be saved automatically when
+The selected element will be deleted from the database after a security question
+Delete
+Only the content of the online database can be marked with the laser!
+ed.
+Save« function in the dialog under Configuration-> Smart Graph is activat-
+The target database will be saved automatically when the »Background
+The selected element or the selected group will be transferred (PC <-> Laser).
+
+02/19 - Index: AI [EN] Smart Graph / 2 »File« interface 14
+the X and Y values.
+average of the resolution will be created and displayed as the initial value in
+tical resolution must match the horizontal resolution. Otherwise, the arithmetic
+than 4800 dpi, a default value of 72 dpi will be displayed. Additionally, the ver-
+shown in the fields. If the resolution in the graphic is less than 60 dpi or more
+ To the extent that the image information exists in the file, these values will be
+Note:
+ed automatically for each entry to retain the ratios.
+You can edit the X, Y value or the dpi value. The other values will be calculat-
+2.Go to the »Import Bitmap« dialog and select the »Pixeltrace« import filter.
+1.Select a logo of one of the above listed types.
+logos, e.g. AI graphics (Adobe Illustrator files) can thereby be filled.
+Logo files with types BMP, JPG and GIF can be vectorized during import. The
+Import of logo files
+character set or specific characters with a Character Code List (CCL).
+expanded dialog view, you can import only specific segments from the desired
+available to import character sets (formats FN, FNT, TTF, PFA, PFB, SVG). In the
+alog under Configuration-> Smart Graph is activated. A preview function is
+base will be saved automatically when the »Background Save« function in the di-
+the database or complete databases can be imported. The updated or new data-
+parameter sets, logos, character sets, product registrations) can be imported to
+New elements (templates, template lists, template sequences, template batches,
+File
+Import
+Backup of database .gz
+Product registration .prd,.xml
+File Format
+
+02/19 - Index: AI [EN] Smart Graph / 2 »File« interface 15
+will import the AI graphic without division and without adjustment.
+If you do not activate »Division of complex objects« (no check mark), you
+2. The »AI Import« dialog will open.
+1. Select an AI type logo.
+Import of AI graphics
+Import filter: Pixeltrace Import filter: Standard
+lines.
+3.The imported graphic can be filled like an AI graphic, which results in smooth
+
+02/19 - Index: AI [EN] Smart Graph / 2 »File« interface 16
+properties of the desired TTF will be specified.
+A dialog window will be displayed for the import of a True Type Font, in which the
+Import of True Type fonts
+The division of complex objects for the import AI graphics may take some time!
+NOTICE
+ed graphic in the database.
+3. The Enter dialog will be displayed and you can assign a name to the import-
+Threshold 10 % Threshold 45 % Threshold 80 %
+threshold results in filling a larger area.
+vated in the Smart Graph software. It is clearly visible that an increased
+ues. The horizontal lines thereby show the filling for the graphic that is acti-
+The next figure shows an imported AI graphic with different threshold val-
+set to 45%.
+threshold value will not be marked or filled. By default, the threshold value is
+All other vector lines or areas of the graphic that are brighter than the
+darker or equal to the threshold value will be marked or filled with the laser.
+threshold value. This setting results in that vector lines or areas that are
+divided into their vectors. Additionally, you can then enter a black/white
+If you activate »Division of complex objects« for the import, graphics will be
+
+02/19 - Index: AI [EN] Smart Graph / 2 »File« interface 17
+ing options depending on the selected element:
+Right-click on the database view to display a context menu. You have the follow-
+2.1 Context menu
+2 Marking [ } 103]
+See also
+etc.) are located.
+database directory in which the individual files (templates, fonts, parameter sets,
+When you are importing a database, make sure that you are importing the entire
+Import of databases
+See " Marking [ } 103] ".
+ly be output with direct marking !
+Windows system fonts can be applied without prior import; however, they can on-
+NOTICE
+Click on »OK« to import the selected TTF to the current database.
+acter Set« tab.
+• The characters of the selected character set will be displayed on the »Char-
+will be imported. The respective number of characters will be displayed.
+whether all available characters of the character set or individual segments
+the preview window with the selected TTF. Under »Font«, you can select
+the »Simulation text« field, you can enter a text that will then be displayed in
+The »Font simulation« field will show a preview of the displayed font. In
+• On the »Selection of font type« tab, you select the TTF to be imported.
+The dialog has two tabs:
+field.
+You can select from TTFs that are installed on your PC in the »System Fonts« list
+
+02/19 - Index: AI [EN] Smart Graph / 2 »File« interface 18
+in the database view.
+Double-clicking on the desired element will automatically advance to the element
+start the search. All elements that contain the search keyword will be displayed.
+Accessing the Search function. Enter the search keyword (* as Wildcard) and
+Find
+tion-> Smart Graph is activated.
+cally when the »Background Save« function in the dialog under Configura-
+Importing files or True Type Fonts. The updated database will be saved automati-
+Import
+The selected element can be saved under a different name at another location.
+Export
+Display of all elements in which the active element is used.
+Dependencies
+the dialog under Configuration-> Smart Graph is activated.
+database will be saved automatically when the »Background Save« function in
+The element will be deleted (after answering a security question). The updated
+Delete
+tion in the dialog under Configuration-> Smart Graph is activated.
+target database will be saved automatically when the »Background Save« func-
+The active element will be transferred to the other database (PC <-> Laser). The
+Transfer
+A dialog to enter a new name will be displayed.
+Rename
+A copy of the element will be created.
+Copy
+ment (template, parameter set, product registration).
+A preview is displayed (logo, character set) or you will advance to the active ele-
+Open
+
+02/19 - Index: AI [EN] Smart Graph / 2 »File« interface 19
+Double-clicking on a logo will display a preview window with the logo.
+plt, mcl, bmp, ai, lgo, gif, jpg, jpeg
+The following graphics formats can currently be imported:
+imported to the database before it can be inserted in the template.
+A logo is a graphic element that is inserted in the template. The element must be
+Logo
+set.
+Double-clicking on a character set will display a preview window for this character
+played behind the respective character set in the database view.
+character sets (TTF) may be used. The number of included characters is dis-
+will be selected in the template. Character sets in *.fnt format and also True Type
+The database may contain multiple character sets. The applicable character set
+Font
+of the element in the database).
+(the number of templates is indicated by the number that is shown after the name
+A template list, sequence or batch contains a consolidation of multiple templates
+Template list, sequence or batch
+plate« interface and display the selected template.
+Double-clicking on a specific template will advance the software to the »Tem-
+numbers, character sets, etc.
+The template defines the appearance of the marking, e.g. texts, logos, serial
+Template
+2.2 Elements of a database
+2 »File« interface [ } 10]
+See also
+and automatically applied when a new template is created.
+The active element will be defined as the default in its group (shown in bold font)
+Set as default
+
+02/19 - Index: AI [EN] Smart Graph / 2 »File« interface 20
+uration« interface, »Product registration« section.
+Double-clicking on a product registration will advance the software to the »Config-
+process through entering the product via sensors.
+The product registration contains all data that is required to trigger the marking
+Product registration
+parameter set.
+Double-clicking on a parameter set will display the dialog with all settings for the
+and marking speed.
+the material of the product. The values it contains include values for laser output
+The parameter set is configured for the respective product, or, more specifically,
+Parameter set
+
+02/19 - Index: AI [EN] Smart Graph / 3 »Laser Operation« interface 21
+(for YAG only) ing is only possible when the key switch is open!
+Bleeding Removing air bubbles from the cooling circuit. Vent-
+to relieve the system components.
+the laser will automatically switch to standby mode
+Standby If no marking entries are made for a period of time.
+Observe the safety notes.
+Caution! Laser radiation!
+uct.
+Marking The current marking content is applied to the prod-
+of the template and the configuration.
+require a preparation time depending on the content
+Prepare for marking After the »START« button is pressed, the laser will
+Laser ready The laser system is ready for marking.
+the key switch is closed.
+Laser start-up The laser and cooling system will be activated when
+and entering password 8463).
+with the key switch (pressing the key switch button
+Key Switch open Initializing complete. The system can now be started
+tem will start.
+Initialize The individual control components of the laser sys-
+Operating status Description
+The following status values exist:
+The »Status« field displays the current operating status of the marking system.
+3.1.1 Status
+3.1 Marking
+3 »Laser Operation« interface
+
+02/19 - Index: AI [EN] Smart Graph / 3 »Laser Operation« interface 22
+restarted, the counter will be set to 0 automatically.
+plates, sequence or batch). When another template is selected or the system is
+Display of marked products (trigger signals) of the current template (or list of tem-
+Product counter
+is restarted, the counter will be set to 0 automatically.
+templates, sequence or batch). When another template is selected or the system
+Display of successfully completed markings for the current template (e.g. list of
+Marking counter
+The value cannot be changed.
+Display of all completed markings since the initial start-up of the laser system.
+Global counter
+The following counters will be displayed below the marking data:
+plied product version and marking duration).
+the name of the active marking system, name of the template, parameter set, ap-
+In addition, the data of the most recent marking will be displayed (this includes
+press »OK« to confirm.
+on. For this operation, enter the password 8463 in the dialog on the screen and
+Press the key switch button to close the key switch, i.e. switch the laser system
+ting).
+(requirement: The pilot laser was activated under Configuration > System Set-
+ongoing marking process. An existing pilot laser can be switched on and off here
+Press »START« to mark the currently loaded template and »STOP« to stop an
+3.1.2 Laser
+nicians.
+nance work and must only be used be trained tech-
+Service mode This operating status allows service and mainte-
+refer to the »Messages« page.
+switched off. For more information about this error,
+tion cannot continue. The laser system must be
+tem. This error cannot be acknowledged and opera-
+Fatal error A fatal error has occurred and deactivated the sys-
+about this error, refer to the »Messages« page.
+to continue with the operation. For more information
+Error An error occurred. This error must be acknowledged
+head.
+sideration of the settings for the template and write
+ser will be positioned in the position (0/0) under con-
+Note: When the Interlock switch is open, the pilot la-
+ed when the safety circuit is closed.
+rupted immediately. Markings can only be complet-
+is open). An ongoing marking process will be inter-
+Interlock open The safety circuit is interrupted (e.g. the safety door
+Operating status Description
+
+02/19 - Index: AI [EN] Smart Graph / 3 »Laser Operation« interface 23
+editor will be displayed.
+Mode« as the operating mode, the currently loaded template from the template
+template of the laser in the preview window. If you have selected the »PC
+and Laser Mode« and »Laser Mode« operating modes display the currently active
+This window displays the content and position of the active template. The »PC
+3.1.3 Preview
+set to 0 automatically.
+When another template is selected or the system is restarted, the counter will be
+with »Cancel«, the previous value will remain active.
+This value may be changed during operation. If the change is terminated
+quence or batch).
+Display of the defined lot total for the current template (or list of templates, se-
+Lot total
+lot total is 0, the lot counter cannot be reset or changed.
+This counter is only active when a lot total has been specified. If the value for the
+NOTICE
+restarted, the counter will be set to 0 automatically.
+products must be replaced). When another template is selected or the system is
+This value may be changed during the operation (e.g. when incorrectly marked
+below) is reached.
+quence or batch). The laser system will stop when the value of the lot total (see
+Display of completed markings for the current template (or list of templates, se-
+Lot counter
+been marked in duplicate (counter »Products« is lower).
+products have been marked (counter »Products« is higher) or products have
+The values »Markings« and »Products« must match. If this is not the case, not all
+NOTICE
+
+02/19 - Index: AI [EN] Smart Graph / 3 »Laser Operation« interface 24
+the laser system and can be applied to the product.
+The template that was selected with this method becomes the current template of
+encoding to inputs DATA 0 to DATA 7 and imported with signal EXT_EVENT.
+The number of the desired template, e.g. of an SPS, will be created with binary
+A specific number will be assigned to a template in the template list (see below).
+ped with two optional input modules (Part number: AL-65856)
+In order to use the external template selection, the laser system must be equip-
+For YAG systems:
+NOTICE
+template selection .
+pendix" in the manual for the laser system). This process is called the External
+digital inputs DATA 0 to DATA 7 (for interface assignments, refer to Chapter "Ap-
+The templates that are stored in the laser system can also be selected with the
+Template list
+be changed in the template.
+iables can be specified in the »Marking adjustment« dialog and no positions can
+quence or template batch. If you select a template list, sequence or batch, no var-
+Here, you can select the template to be marked, a list of templates, template se-
+3.2.1 Select template
+template editor.
+Mode« as the operating mode, the selected template will also be loaded in the
+plate will then be displayed in the preview window. If you have selected the »PC
+tains variables, you can change them here. The content and position of the tem-
+Here, you can select and position the template to be marked. If the template con-
+3.2 Marking adjustment
+
+02/19 - Index: AI [EN] Smart Graph / 3 »Laser Operation« interface 25
+entry in the template list.
+templates that exist in the current database. Click on »OK« to accept the created
+under »Number«. Select a template in the list field »Name«. You can only select
+Assigning a new template number. Enter the template number for the new entry
+Add
+plate list.
+Click on this switch to open the following dialog to enter a name for a new tem-
+New
+curity question) from the database.
+Click on »Delete« to remove the selected template list (after confirmation of a se-
+Delete (template list)
+template lists have not been defined, the Show menu will be empty.
+All template lists that have been specified in the database will be displayed. If
+Show menu
+list or the creation of a valid template list.
+The use of the external template selection feature requires an existing template
+NOTICE
+templates and numbers for the external template selection.
+You can select a template list in the »Template list« dialog and specify links from
+
+02/19 - Index: AI [EN] Smart Graph / 3 »Laser Operation« interface 26
+and start time will be indicated during processing.
+The footer of the table displays the current date and time. The number of runs
+selected.
+example, if only one index level has been defined, only that index level can be
+ble field and select the desired entry. The list fields only offer existing entries: For
+the row automatically. You can now access a list field by clicking on the applica-
+lect »Mark« from the list field. Click on the next field (»Template« column) to fill
+Click on the first field of the »Action« column to activate a row. Se-
+The database must be reloaded to maintain the original settings.
+settings from the process control feature.
+When the database is saved, the original presets will be overwritten with the
+NOTICE
+values that are assigned here will be used for processing.
+each template. Regardless of the settings that were defined in the template, the
+ter set, index, configuration, number of copies and delay in ms can be assigned to
+plates that will be processed or simulated by the laser. Values for layer, parame-
+The process control feature provides the option to compile a list of existing tem-
+Process control
+The dialog will close without changes.
+Cancel
+database, the template list will not be stored in the database.
+When no templates are defined in the template list or they were deleted from the
+tion is activated in the dialog under Configuration-> Smart Graph .
+At the same time, the database will be saved when the »Background save« func-
+The settings will be transferred to the laser system and the dialog will be closed.
+OK
+template.
+Display of name and product creation including parameter set to be used with the
+Information
+ber or related template in the dialog that is shown.
+Select an entry for editing and click on »Edit«. You can change the template num-
+Edit
+Next, click on »Delete« to delete the selected template number from the list.
+Select a template for deletion by clicking on the applicable template number.
+Delete (template)
+
+02/19 - Index: AI [EN] Smart Graph / 3 »Laser Operation« interface 27
+9 Logging the process
+8 Comment
+7 Creator
+6 Date and creation of last change
+5 Name of log file
+4 Stop process for every error message
+3 Time to wait for data until process will end
+2 Definition of number of runs
+1 Process until Stop or an error message is sent.
+here.
+Definition of process settings. Export the list file to save the entries you made
+Preferences
+Load an existing XML file.
+Import
+Save the created list as .XML file.
+Export
+Open a new (empty) table.
+New
+File
+
+02/19 - Index: AI [EN] Smart Graph / 3 »Laser Operation« interface 28
+Editing will stop.
+Stop (F7)
+ess must be finished to return to Smart Graph.
+and the preview window displaying the output templates will open. The Edit proc-
+As soon as processing has started, the Smart Graph interface will be minimized
+marking with the assigned settings, yellow: Wait for laser, red: Output of marking).
+Display of the processing status with color coding (green: Preparation of the
+late« entry was activated under »Options«, processing will only be simulated.
+Start editing the list. The laser will print the template contents. When the »Simu-
+Start (F8)
+Run
+Delete the selected row(s)
+Delete
+be filled with the data from the first row and can then be edited.
+Insert a row above or below the current position. The new row will automatically
+New
+Insert the row(s) that were copied to the clipboard
+Paste
+Cut the selected row(s) to the clipboard.
+Cut
+Copy the selected row(s) to the clipboard.
+Copy
+Click on the first column (Nb) to select a row.
+Edit
+Closing the process control dialog.
+Exit
+13 Apply, confirm or cancel settings.
+12 Storage location of the log file
+11 Append new data to file or overwrite.
+10 Logging of actions and/or error messages
+
+02/19 - Index: AI [EN] Smart Graph / 3 »Laser Operation« interface 29
+thereby applied:
+quence or batch will be processed consecutively. The following differentiation is
+Templates can be consolidated in sequences or batches. The templates in a se-
+Template sequence and template batch - an overview
+Specification of wait time prior to processing in ms.
+Delay
+signed settings.
+Specification of number of times that the template must be processed with the as-
+Repeat
+Selection of product registration.
+Configuration
+Selection of the desired index level of the parameter set.
+Index
+Selection of the parameter set.
+Parameter
+plate).
+Assignment of a specific layer (or application of the defined settings of the tem-
+Layer
+the template automatically; however, they can be changed individually.
+Selection of the template. The following columns will be filled with the settings of
+Template
+tion.
+Selection of actions to be performed, the »Mark« option is currently the only op-
+Action
+Updating of available data (templates, parameter sets, etc.)
+Resync
+Processing will not be carried out through the laser but as simulation only.
+Simulate
+Options
+
+02/19 - Index: AI [EN] Smart Graph / 3 »Laser Operation« interface 30
+trigger pulse.
+quence for which the template can be marked for the product consecutively with a
+cess the »Template sequences« dialog where you can select a template se-
+Click on the »Template Sequence« switch (see Marking adjustment [ } 24] ) to ac-
+Template sequence
+quence.
+The process starts again with the first template at the end of the batch or se-
+with the first template in the batch.
+be restarted with a Start trigger, i.e. processing starts over
+registration). If the processing function is interrupted, it must
+processing occurs through consecutive triggers (product
+trigger pulses. The first pulse is the Start trigger. Continued
+Batch The templates of a batch will be processed by consecutive
+sequence.
+the trigger queue and processed following the end of the
+received while the sequence is processed will be queued in
+applied to the product consecutively. Trigger pulses that are
+Sequence A trigger pulse initiates a sequence of templates that will be
+
+02/19 - Index: AI [EN] Smart Graph / 3 »Laser Operation« interface 31
+template.
+Display of name and product creation including parameter set to be used with the
+Information
+template within the template sequence.
+Press the Arrow Up or Arrow Down button to change the position of the selected
+Arrow Up and Arrow Down button
+grayed out.
+has been selected from the template sequence, the »Delete« switch will be
+on »Delete« to delete the selected template from the sequence. If no template
+Select a template to delete by clicking on the desired template. Next, click
+Delete (template)
+that exist in the current database.
+Adding a new sequence to the template sequence. You can only select templates
+Add
+a new template sequence.
+Click on this switch to open the following dialog in which you can enter a name for
+New
+security question) from the database.
+Click on »Delete« to remove the selected template sequence (after confirming a
+Delete (template sequence)
+sequence has been defined, the preview menu will be empty.
+All template sequences specified in the database will be displayed. If no template
+Preview menu
+
+02/19 - Index: AI [EN] Smart Graph / 3 »Laser Operation« interface 32
+Add
+new template batch.
+Click on this switch to open the following dialog where you can enter a name for a
+New
+curity question) from the database.
+Click on »Delete« to remove the selected template batch (after confirming a se-
+Delete (template batch)
+batches have been defined, the Preview menu will be empty.
+All specified template batches in the database will be displayed. If no template
+Preview menu
+its templates will be marked with consecutive trigger pulses for the product.
+the »Template batch« dialog in which you can select a template batch for which
+Click on the »Template batch« switch (see Marking adjustment [ } 24] ) to access
+Template batch
+The dialog will close without changes.
+Cancel
+from the database, the template sequence will not be stored in the database.
+If no templates have been defined in the template sequence or they were deleted
+tion is activated in the dialog under Configuration-> Smart Graph .
+At the same time, the database will be saved when the »Background save« func-
+The settings will be transferred to the laser system and the dialog will be closed.
+OK
+
+02/19 - Index: AI [EN] Smart Graph / 3 »Laser Operation« interface 33
+text. If this is not the case, an error message will be displayed.
+ters »0«...»9« and »A«...»F« and an even number of characters are used in the
+variable, a check will run to determine if the approved charac-
+Note: If »Binary« was specified in the »External text« dialog as encoding for the
+ber of characters.
+text" in Chapter "»Template« interface"). You can fall short of the maximum num-
+specified when the »External text« text field was created (see Section "External
+Change the external text. The maximum possible number of characters was
+External text
+The following changes are possible:
+Select the variable to be changed and enter the change in the input field.
+the laser system by clicking on »Apply« and will not change the template itself.
+The changes that were made here will be transferred to the temporary memory of
+NOTICE
+the laser system where they can be marked.
+Click on »Reset« to reverse your changes. Click on »Apply« to transfer them to
+Here, you can change the offset values of all existing variables in the template.
+This section will only appear if the selected template contains variables!
+3.2.2 Variable settings
+2 Marking adjustment [ } 24]
+See also
+The dialog will close without changes.
+Cancel
+the template batch will not be stored in the database.
+If no templates were defined in the template batch or deleted from the database,
+Graph .
+tion in the dialog is activated in the dialog under Configuration-> Smart
+At the same time, the database will be stored when the »Background Save« func-
+The settings will be transferred to the laser system and the dialog will be closed.
+OK
+the template.
+Display of name and product registration including parameter set to be used with
+Information
+ed template within the template batch.
+Click on the Arrow Up or Arrow Down button to change the position of the select-
+Arrow Up and Arrow Down button
+selected from the template batch, the »Delete« switch will be grayed out.
+on »Delete« to delete the selected template from the batch. If no template was
+Select a template to delete by clicking on the desired template. Next, click
+Delete (template)
+exist in the current database.
+Adding a new template to the template batch. You can only select templates that
+
+02/19 - Index: AI [EN] Smart Graph / 3 »Laser Operation« interface 34
+methods:
+ing the position of the template content in the marking field with three different
+The subsequently shown area of the »Marking adjustment« dialog permits chang-
+3.2.3 Template positioning
+ter "»Template« interface").
+range between the start and end value (see Section "Serial number" in the Chap-
+number. All other settings remain unchanged. The number must be in the number
+Enter the desired serial number. The marking begins with the specified serial
+Serial number:
+ative numerical values and select units between seconds, minutes and hours.
+Change the deviation of a time field. You can enter not only positive but also neg-
+Offset of a time field:
+years.
+ative numerical values and select the units among days, weeks, months and
+Change the deviation of a date field: You can enter not only positive but also neg-
+Offset of a date field:
+the Smart Graph software is running.
+in the Smart Graph handles the keyboard language setting of the PC on which
+same functions as those of a standard PC keyboard. The alphanumeric keyboard
+Cancel : Clicking on this switch will discard the entries. All other keys have the
+played in the preview window.
+OK : Clicking on this switch will apply the changes and the new text will be dis-
+and/or right.
+< and/or > : These switches will move the cursor within the text one step to the left
+The following functions are thereby available:
+board that you can use to easily change the external text:
+nal text« input field with your finger to access the following alphanumeric key-
+switched on in the Configuration -> Smart Graph dialog - touch the »Exter-
+In addition, you can - if you have a touch screen and the »Softkey« function is
+
+02/19 - Index: AI [EN] Smart Graph / 3 »Laser Operation« interface 35
+Del : Clicking on »Del« will delete the number in front of the cursor.
+< and/or > : These switches will move the cursor one increment to the left or right.
+The following functions are thereby available:
+tion on the screen:
+numerical Softkey Pad and enter the values for the desired movement or rota-
+ber« and »Zoom« input fields twice with your finger to access the following
+set«, »Y-Offset«, »Rotation«, »Date Offset«, »Serial Num-
+Configuration -> Smart Graph dialog, you can touch the »X-Off-
+• If you have a touch screen and the »Softkey« function is activated in the
+immediately be displayed in the preview window.
+desired direction. The relative movements in XY direction and rotations will
+on the blue arrow keys will rotate the template content in 1° increments in the
+plate content will be moved by 1 mm or 0.04 inches with each click. Clicking
+dimensional unit in the Configuration -> Smart Graph dialog, the tem-
+direction. Depending on whether millimeter or inch has been specified as the
+• Clicking on the green arrow keys can also move the template content in X/Y
+input field or press the »Return« button.
+The change will be shown in the preview window as soon as you leave the
+• Entry of desired offset (in mm) or rotation (in °) in the applicable input fields.
+
+02/19 - Index: AI [EN] Smart Graph / 3 »Laser Operation« interface 36
+the manual for the laser system.
+For a list of all messages, refer to Chapter "Malfunctions and Error Messages" in
+for the file in the dialog that will be displayed.
+Save Messages can be saved in a file. Define the name and path
+completely.
+Delete After the messages have been confirmed, they can be deleted
+Confirm The messages must be confirmed for deletion.
+System messages, Warnings and Error messages.
+has been connected including the date and time of their occurrence. There are
+This windows displays all messages that have appeared since the laser system
+3.3 Messages
+of displayed in the preview window to this value.
+enter a percentage value directly and then click on »Zoom« to adjust the content
+large or reduce the size of the display in increments (buttons + and -) or you can
+Display of the template content and its position in the marking field. You can en-
+3.2.4 Preview
+Cancel : Clicking on this switch will discard all entries.
+the template in the preview window.
+OK : Clicking on this switch will apply all changes and display the new position of
+tion.
+. (Period): Clicking on the period will insert a comma at the current cursor posi-
+- : Clicking on this switch will switch between positive and negative values.
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 37
+font supporting Unicode is selected.
+The Smart Graph software can display all characters read from left to right if a
+NOTICE
+The functions of the bars and their buttons are described in the following sections.
+• The property bar (depending on the selected tool).
+• The tool bar and
+• The symbol bar,
+completely within the marking field.
+If you mark non-moving products make sure that the content of the template is
+NOTICE
+figuration > Marking head),
+• The available marking field (form and size depend on the settings under Con-
+The template window consists of the following components:
+1 is required for using this interface.
+In this user interface the templates to be marked are created or edited. User level
+4 »Template« interface
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 38
+• Group or ungroup objects
+properties dialog of the template, see below)
+• Center object(s) around a defined center (the center point is defined in the
+• Cut, copy or delete selected object
+Additional functions if an object is selected:
+available for selection: Marking field, standard grid or ellipse.
+tion is required for production and service). Three different test patterns are
+automatically. This pattern can be marked to check the write head (this func-
+• Generate test pattern. Thus a pattern fitted to the marking field is generated
+• Definition of the template properties (see below),
+• Measure distances,
+• Group all objects in the template,
+• Select all objects in the template,
+• Creating and editing layers (description, see Layer [ } 97] ),
+• Align objects with grid,
+• Display of grid points,
+• Insert contents of clipboard,
+If no object is selected:
+options:
+object is selected, and what type of object is selected, you will have the following
+Right-click in the template to display a context menu. Depending on whether an
+4.1 Context menu
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 39
+Tool »Matrix« [ } 87] )
+• With selected matrix: Editing a matrix and definition of matrix properties (see
+• Cancel selection of selected objects
+ground and also marked by the laser in that order)
+• Change the marking order (thus objects are shifted to foreground or back-
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 40
+Line center Outer edge of line
+ings it is possible to select the outer edge of the line as reference.
+In order to allow exact positioning also in case of a high line width or small mark-
+to the line center of the object.
+By default, the bounding box used for size and position of an object usually refers
+4.1.1.2 Bounding Box
+specified under Configuration -> Smart Graph .
+The unit of measurement for the product entries and marking head settings is
+valid for all dimensions in the template.
+center function. Additionally you can select the unit of measurement (mm or inch)
+Here the center point is defined around which an object will be centered with the
+4.1.1.1 General
+All settings defined here only apply to the current template.
+NOTICE
+menu.
+(without selecting any objects) and select entry »Properties« from the context
+To define basic template settings click with the right mouse key into the template
+4.1.1 Template properties
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 41
+or it can be optimized for marking moving products.
+The sorting order can be used as defined in the template (non-moving products)
+and the value defined in the product registration will be used.
+tion ->Product registration. »Default« will reset the value to 1 degree
+of moving products (mark on the fly) than the angle defined under Configura-
+Here you can enter a sorting angle if a different angle is required for the marking
+4.1.1.4 Sorting
+ing.
+have to enter values for the grid center which can not be divided by the grid spac-
+If the grid center shall not coincide with the center point of the marking field you
+Enter the vertical and horizontal distance of the grid points.
+4.1.1.3 Grid
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 42
+ject can be selected again.
+The selected object is moved to the back. Thus objects possibly behind that ob-
+To back
+no longer be selected.
+The selected object is moved to the foreground. Objects behind that object can
+To front
+Divides a group back into its individual objects.
+Ungroup
+gether.
+clicking on other objects. Grouped objects can be shifted, rotated and scaled to-
+Groups selected objects. Select an object and hold down the CTRL key while
+Group
+Repeats the reversed steps.
+Redo
+Reverses any number of steps.
+Undo
+Pastes the contents of the clipboard into the template.
+Paste
+Copying the selected object from the template.
+Copy
+on »Delete«.
+If you only want to delete the object, right-click on the object and then click
+board and can be pasted at a different position (see Paste ).
+Cuts the selected object from the template. The cut object is moved to the clip-
+Cut
+base has been saved in the »File« interface!
+porary memory and the changes are only kept permanently after the data-
+If the feature »Autosave« is not activated, the template is stored in the tem-
+batch, an error message appears.
+plate under a name, which has already been used for a template list, sequence or
+wish to save the current template under a different name. If you try to save a tem-
+plies, if you save the template using the Ctrl+S shortcut. Select »Save as«, if you
+in the dialog under Configuration-> Smart Graph is activated. The same ap-
+Transferring the current template to the database when the »Autosave« function
+Save/Save as
+dow. Confirm with »OK« and the template is opened.
+Opens an existing template. Select a template from the list in the selection win-
+Open
+template in the dialog window. Confirm with »OK« and the template is opened.
+Creating a new template. Enter a name under which you want to save the new
+New
+4.2 Icon bar
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 43
+-> General (see General [ } 40] ).
+field or around the center point defined in the context menu under Properties
+Centers the selected objects of the template around the zero point of the marking
+Center
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 44
+many times as you like without having to select it again and again.
+lect the object in the tool bar with the cursor. Now you can insert the object as
+If you want to insert one object several times keep the CTRL key pressed and se-
+NOTICE
+selection tool is activated automatically.
+2.Release the mouse key and the selected object is fitted into the frame. The
+sired position into the marking field.
+desired position in the marking field or click with the left mouse key at the de-
+1.Select the desired object and open a frame with pressed left mouse key at the
+Inserting objects
+individual object will be explained.
+Basic principles for handling objects are explained on the next page. Next, each
+[ } 104] ) tration
+(see Parameter set Selection of product regis-
+Parameter set Product registration
+[ } 103] )
+plate (see Marking
+Display of marking data Output of the current tem-
+Information Marking
+other options of the tool bar:
+Logo Matrix
+Barcode ID matrix code
+(including variables) (if hidden)
+Text Show icon bar
+currently not implemented
+Ellipse Curves
+Polygon Rectangle
+Selection tool Zoom
+edited there.
+erties of the currently selected object are displayed in the property bar and can be
+The tool bar includes all objects that are required to create a template. The prop-
+4.3 Tool bar
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 45
+context menu.
+right mouse key onto the object to be deleted and select entry »Delete« from the
+Select the object to be deleted and press "Del" on the keyboard or click with the
+Deleting objects
+be moved to the desired position keeping the keys pressed.
+of the selected object is inserted at the same position as the object and can
+• Hold down the CTRL key and left mouse button until a + is displayed. A copy
+• Select the object and press key combination CTRL+C.
+menu.
+• Select the object with the right mouse key and select »Copy« from the context
+• Select the object and click on »Copy« in the icon bar.
+To copy an object you have the following possibilities:
+Copy objects
+lect »Center objects« in the context menu.
+al«. Select the object and click on »Center objects« in the icon bar or se-
+the coordinates of that point in the context menu under »Properties -> Gener-
+• If you want to center the object around a defined center point you can enter
+select »Align with grid« from the context menu.
+• If you want to align objects with the grid, right click in the marking field and
+into the property bar.
+cal or horizontal plane. For precise positioning, enter the desired coordinates
+• If you additionally hold down the Shift key, the object is only moved in a verti-
+and moved.
+• If you additionally hold down the CTRL key, a copy of this object is generated
+holding the left mouse button down.
+Click on the object with the selection tool and move it to the desired position while
+Positioning objects
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 46
+Bounding Box [ } 40] ).
+can enter this setting under »Properties -> Bonding Box« accordingly (see
+you want to use the outer edge of the bonding box as the reference system, you
+The size and position of an object reference the line center of the bounding box. If
+NOTICE
+ject.
+• In addition, press the CTRL key for even scaling around the center of the ob-
+• In addition, press the Shift key to maintain the side ratio.
+ject.
+handles while holding down the left mouse button will change the size of the ob-
+A selected object is displayed with a bonding box with "handles". Dragging these
+Index level, see Information [ } 102] ).
+eters directly (see Filling parameters [ } 92] ), Layer (see Layer [ } 97] ) and
+• When several different objects have been selected, you can assign fill param-
+W: Angle of measuring device (angle definition, see Tool »Ellipse« [ } 51] )
+D: Length of the measured distance
+W/H: Width and height of the measured area
+X/Y: current cursor coordinates
+the button:
+ton to measure a desired area. The following data will be displayed next to
+• Measuring the template: Activate the »Ruler« button. Hold the left mouse but-
+laser).
+• Display of jumps (distances between vector lines that are not marked by the
+and end points of the vectors within a vector line are shown with blue dots.
+is shown with a green dot. The end point is shown with a red dot. The start
+• Display of start and end points of vector lines. The start point of a vector line
+mm).
+• Setting of the grid spacing in X and Y direction (value range from 0.1 to 99.9
+• Grid display for orientation when positioning objects.
+settings can be entered:
+The name of the current template is displayed in the property bar. The following
+played.
+several different objects are selected, the property bar of the template is dis-
+ed object the corresponding property bar is displayed. If no object is selected, or if
+With the selection tool you can select objects and tools. Depending on the select-
+4.3.1 Selection tool
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 47
+• undo last step or redo .
+Specify the step size to enlarge or reduce under »Zoom factor«.
+plete marking field.
+lect a value from the list field. 100 % corresponds to the display of the com-
+Enter the desired percentage for the enlargement under »Zoom level« or se-
+• Define zoom factor:
+• Display complete marking field:
+Select the object with the selection tool, change to the zoom tool and click on
+• Fit object to display:
+around the area to be enlarged.
+Click on the icon, keep the left mouse button pressed and draw a frame
+• Select area to be zoomed in:
+.
+• Zoom out step-by-step:
+on cursor position).
+ (Focus on screen center) or right-click directly into the marking field (focus
+• Zoom in step-by-step:
+The property bar of the zoom function offers the following options:
+mouse button (focus on cursor position).
+ (Focus on screen center) or click directly into the marking field with the left
+The Zoom tool is used to enlarge or reduce the size of the template.
+4.3.2 Tool »Zoom«
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 48
+7.Group both lines.
+downwards and finish this line also with a double-click.
+6.Click once in the center of the horizontal line, draw a vertical line of 30 mm
+to finish.
+5.Click once on a start point, draw a horizontal line of 30 mm and double-click
+4.Hold the CTRL button and select the polygon function.
+text menu.
+3.Right-click in the template and activate the »Align with grid« option in the con-
+2.Enter grid spacing "5.0 mm" (X and Y).
+1.Activate the grid display.
+You want to create the letter "T" using two lines (30 mm each).
+Example 1:
+sets dialog, refer to Parameter set [ } 104] .
+• Select index level of the current parameter set. For a description of parameter
+• Assign a layer. For a description of the layer dialog, refer to Layer [ } 97] .
+about fill parameters, refer to Section " Filling parameters [ } 92] ".
+on »Fill« and deactivate »Fill« in the dialog. For more detailed information
+fill parameters in the dialog and click on OK. To remove the filling, click
+• Fill object: Only closed objects can be filled! Click on »Fill«, select the desired
+open it, click on
+• Close object: Click on . The polygon is closed and can now be filled. To re-
+• Mirror object (horizontally and vertically)
+. Any existing content will be removed automatically.
+• Rotate object (in intervals of 90° or a defined value)
+If you want to retain the ratios, check the
+• Scale object (values W and H).
+• Change object coordinates (values X and Y)
+The property bar of the polygon function offers the following options:
+ box.
+can only be moved in horizontal or vertical level.
+(including the area below it). If you additionally hold down the Shift key, the dot
+drag it while holding the mouse button down to change the position of the point
+Double-clicking on an object will display the node points. Click on a node and
+drawing.
+the object. Now you can define more nodes by clicking. Double-click to finish
+Click on the button and then in the template window. This sets the start point for
+Drawing lines or polygons
+4.3.3 Tool »Polygon«
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 49
+values, e.g. Fill direction 0°, Edge distance 0.5 mm, Line spacing 1.0 mm.
+7.Click on »Fill«, activate the »Fill« option in the dialog and enter the desired
+6.Click on (close object) in the property bar.
+to the start point and finish the triangle with a double-click.
+mouse button, repeat the procedure with the second corner, move the cursor
+5.Click on a start point, move the cursor to the first corner, click with the left
+4.Select the polygon function.
+text menu.
+3.Right-click in the template and activate the »Align with grid« option in the con-
+2.Enter grid spacing "5.0 mm" (X and Y).
+1.Activate the grid display.
+You want to draw a filled triangle.
+Example 2:
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 50
+Multiple fills, Openings 2, Angle change 45°.
+values, e.g. Fill direction 90°, Edge distance 0.5 mm, Line spacing 1.0 mm,
+4.Click on »Fill«, activate the »Fill« option in the dialog and enter the desired
+3.Define the corner roundness in the property bar, e.g. 20 %.
+mensions.
+2.Keep the left mouse button pressed and draw a rectangle with the desired di-
+1.Select the rectangle function.
+You want to mark a rectangle with rounded corners that has multiple fillings.
+Example:
+sets dialog, refer to Parameter set [ } 104] .
+• Select index level of the current parameter set. For a description of parameter
+• Assign a layer. For a description of the layer dialog, refer to Layer [ } 97] .
+" Filling parameters [ } 92] ".
+dialog. For more detailed information about fill parameters, refer to Section
+click on OK. To remove the filling, click on »Fill« and deactivate »Fill« in the
+• Fill object: Click on »Fill«, select the desired fill parameters in the dialog and
+and 100)
+• Set corner rounding (with the slider or by directly entering a value between 0
+• Mirror object (horizontally and vertically)
+• Rotate object (in intervals of 90° or a defined value)
+If you want to retain the ratios, check the
+• Scale object (values W and H).
+• Change object coordinates (values X and Y)
+The property bar of the rectangle function offers the following options:
+ box.
+position in the marking field.
+Select the tool and open a frame with pressed left mouse button at the desired
+Drawing rectangles
+4.3.4 Tool »Rectangle«
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 51
+on
+3.To to the property bar and enter start value »90« and end value »360«. Click
+your mouse.
+2.Hold the Shift key down and draw a circle with the desired dimensions with
+.
+1.Select the ellipse function.
+You want to mark a filled 3/4 circle.
+Example:
+sets dialog, refer to Parameter set [ } 104] .
+• Select index level of the current parameter set. For a description of parameter
+• Assign a layer. For a description of the layer dialog, refer to Layer [ } 97] .
+" Filling parameters [ } 92] ".
+dialog. For more detailed information about fill parameters, refer to Section
+click on OK. To remove the filling, click on »Fill« and deactivate »Fill« in the
+• Fill object: Click on »Fill«, select the desired fill parameters in the dialog and
+Angle definition:
+icon or press Enter twice to confirm or select the values with the arrow keys.
+for the arc to be displayed or for the segment to be displayed and click on the
+• Opening an object or creating a segment : Enter a start and end able
+• Mirror object (horizontally and vertically)
+• Rotate object (in intervals of 90° or a defined value)
+• Scale object (values W and H). If you want to retain the ratios, check the
+• Change object coordinates (values X and Y)
+The property bar of the ellipse function offers the following options:
+box.
+draw a circle.
+spective position in the marking field, respectively, hold down the Shift button to
+Select the tool and hold down the left mouse button to draw an ellipse at the re-
+Drawing ellipses, circles, arcs
+4.3.5 Tool »Ellipse«
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 52
+values, e.g. Fill direction 90°, Edge distance 0.5 mm, Line spacing 1.0 mm.
+4.Click on »Fill«, activate the »Fill« option in the dialog and enter the desired
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 53
+• Assign a layer. For a description of the layer dialog, refer to Layer [ } 97] .
+tion about fill parameters, refer to Section " Filling parameters [ } 92] ".
+click on »Fill« and deactivate »Fill« in the dialog. For more detailed informa-
+the desired fill parameters in the dialog and click on OK. To remove the filling,
+• Fill object (depending on the selected character set): Click on »Fill«, select
+content.
+used as anchor point when the size of the text field changes due to variable
+ The reference point defines defines which position of the text field is to be
+the current text.
+tivate »Fixed field width« if you want to define the field width independently of
+The current field width will be displayed in the dialog for the selected text. Ac-
+•
+• Define the text field :
+trix Code« [ } 55] )
+• Set circular marking (see Text Editor for tools »Text«, »Barcode« and »ID Ma‐
+• Define character pitch and line pitch
+• Mirror object (horizontally and vertically)
+• Rotate object (in intervals of 90° or a defined value)
+If you want to retain the ratios, check the
+• Scale object (values W and H).
+• Change object coordinates (values X and Y)
+The property bar of the text function offers the following options:
+ box.
+fields in the template.
+field. »text« will be displayed in the rectangle. Double-click on the text to edit text
+Click on the button and open a rectangle at any position in the marking
+Entering text and variables
+4.3.6 Tool »Text«
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 54
+sets dialog, refer to Parameter set [ } 104] .
+• Select index level of the current parameter set. For a description of parameter
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 55
+Text alignment within text field
+ue. The font pitch and the line pitch can be defined in the property bar.
+Select the desired text and assign a font size from the list or enter the desired val-
+Font size
+this font be shown with question marks.
+When you assign a symbol font, any symbols in your text that are not included in
+NOTICE
+2.Assign a font from the list to the marked text.
+rator line.
+Windows fonts that are installed on your PC will be displayed below the sepa-
+database will be displayed above the ---- System fonts ---- separator line. All
+the list field in the window »Format« (see figure below). Existing fonts in the
+1.To assign a font to your text mark the desired text with the cursor and open
+printed with direct marking !
+Windows system fonts can be used without import; however, they can only be
+Exception: Windows system fonts
+into the database via user interface »File«.
+database are displayed. If you want to assign a different font you have to import it
+Select the desired text and assign a font from the list. Only fonts available in the
+Font
+The following options are available to configure the text you entered:
+itor will open:
+Double-click on the object to edit text, barcodes and ID matrix codes. The text ed-
+Matrix Code«
+4.3.6.1 Text Editor for tools »Text«, »Barcode« and »ID
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 56
+can select and insert them via the following dialog:
+If you want to insert characters into the text which are not on the keyboard you
+Special characters
+text occupies the entire width of the text field.
+The distances between the individual characters will be increased so that the
+• Block :
+The text is aligned to the right margin of the text field.
+• Flush right :
+The text is centered in the text field.
+• Centered :
+The text is aligned to the left margin of the text field.
+• Flush left :
+a fixed field width (
+The size of the text field is determined by the longest string of text or by entering
+be aligned as desired:
+ in the property bar). The individual lines of the text field can
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 57
+upper edge will be adjusted.
+of lower case characters will be adjusted to the radius, for outside inscriptions, the
+Selecting the direction of the inscription. For the inside inscription, the lower edge
+Inscription inside/outside
+Angle settings for the text field. Angle definition:
+Start/End angle
+the product of the number of lines and the font size.
+Radius of the circular marking. For multi-line text, the radius must at least match
+Radius
+ing« dialog and enter the desired settings:
+desired text, click on the icon in the formatting bar to open the »Circular mark-
+If you want to add circular marking to your template, create a text field, mark the
+Circular marking
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 58
+6.Position the text fields.
+5.Click in the template. The text is displayed in a circle.
+side . Confirm with OK.
+following values: Radius 10 , Start angle 180 , End angle 0 , Inscription out-
+4.Mark the text "Software", activate the circular marking function and enter the
+3.Click in the template. The text is displayed in a circle.
+Confirm with OK.
+following values: Radius 10 , Start angle 180 , End angle 0 , Inscription inside .
+2.Mark the text "Marking", activate the circular marking function and enter the
+1.Create two text fields, font size 5 .
+tion and "Software" as outside inscription.
+The following text must be output as circular marking: "Marking" as inside inscrip-
+Example:
+Center coordinates of the circle.
+Center point
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 59
+vided during marking. The following three options are available:
+This specifies the behavior of the variables when no new data contents are pro-
+Behavior
+done in steps of two.
+character number is increased or decreased by means of the arrow keys, this is
+binary variables require an even number of characters. If »Binary« is set and the
+an odd number of characters is entered, an error message appears indicating that
+deleted when the coding is changed to »Binary«. If coding is set to »Binary« and
+an even number and characters, which differ from the ones mentioned above, are
+acter number has been entered, the number of characters is automatically set to
+Assuming »Standard« is defined as coding and a standard text with an odd char-
+NOTICE
+field: »0«...»9« and »A«...»F«.
+only the characters below may be used in the »Standard text« input
+The variable has binary encoding. When this encoding format was selected,
+• Binary:
+The variable is encoded in UTF-8 format.
+• Standard:
+Specifies the coding for variables.
+Coding
+field, enter a higher number.
+field »External text« for marking. If you need additional characters for your text
+of the »Standard text« field. This number of characters is reserved for the text
+The »Characters« of the »External text« text field will be adjusted for the content
+Character length
+Text entry for the »External text« text field
+Standard
+der Laser Operation > Marking adjustment .
+Name for the external text. This name is required if the variable will be edited un-
+Name
+Marking adjustment .
+COM or directly in the Smart Graph software under Laser Operation ->
+this text field can be edited with programs such as AllprintBasic or SmartGraph
+The external text provides the option to define a variable text field. The content of
+4.3.6.2 Variable »External Text«
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 60
+state is created. The marking process is stopped.
+The variable content is marked once. During the marking process, an error
+• Mark once (error):
+process is not stopped.
+is created which contains the current variable contents. However, the marking
+The variable content is marked once. During the marking process, a warning
+• Mark once (warning):
+is determined when creating a variable.
+The variable content is marked by default. This is the standard setting which
+• Standard:
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 61
+configuration of the date field:
+displayed in the preview window. The following elements are available for the
+the desired element. A preview of the current date with the selected date format is
+To customize your own date format click on one of the six list boxes and choose
+• American short (4/3/97)
+• American (04/03/97) • Calendar week & year (107)
+• European short (3.4.97) • Julian & year (937)
+• European (03.04.97) • Julian (93)
+• European short (3.4.97) • American short (4/3/1997)
+• European (03.04.97) • American (04/03/1997)
+from the following default date formats:
+window will display the current date in the selected date format. You can choose
+ments of the date field are displayed in the six list boxes below it. The preview
+If you want to use a pre-defined data format, click on the upper list field. The ele-
+up to 6 individual elements.
+You can select a pre-defined data format or generate your own date format from
+Date format
+Laser Operation > Marking adjustment .
+Name for the date field. This name is required if the variable will be edited under
+Name
+system date. You can also define an offset to the current system date.
+You will enter a date field in the template. Thus the marking contains the current
+4.3.6.3 Variable »Date«
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 62
+Years.
+sired numeric value in the number field and click on Days, Weeks, Months or
+the current date. E.g., this can be used to include expiration dates. Enter the de-
+The »Offset« function is used to add or remove a specific period of time to/from
+Offset
+user-defined terms.
+that is currently being edited. Subsequently, other date variables have different
+For example: Formatting user-defined terms is limited to the »My Date« variable
+NOTICE
+the end of the entry. Clicking on »OK« accepts the values input.
+The terms must be separated with colons and the additional entry of a colon at
+08:2009:2010:2011:2012:
+• My year • 2001:2002:2003:2004:2005:2006:2007:20
+JUL:AUG:SEP:OCT:NOV:DEC:
+• My month • JAN:FEB:MAR:APR:MAY:JUN:
+• My weekday • Mo:Tu:We:Th:Fr:Sa:Su:
+28:29:30:31:
+4:15:16:17:18:19:20:21:22:23:24:25:26:27:
+• My day • 01:02:03:04:05:06:07:08:09:10:11:12:13:1
+Name: Term:
+matting. All user-defined terms are thereby defined with default values.
+The »Name« and »Term« columns provide the option for entering your own for-
+You can edit the user-defined terms by pressing the »Edit« button.
+User-defined terms
+• My weekday • My year
+• My day • My month
+In addition, you can select from the four following elements (user-defined terms):
+• Year (8) • Separator ( ) (blank space)
+• Year (98) • Separator (:)
+• Year (1998) • Separator (-)
+• Month short (1) • Separator (/)
+• Month (01) • Separator (.)
+• Day short (1) • Calendar week
+• Day (01) • Weekday
+• Blank (no character) • Julian Day
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 63
+Display of the current date in the selected date format.
+Preview
+can be up to ± 24 hours based on 0:00 o'clock.
+The »Date change« is used to indicate when the date must change. The offset
+Date change
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 64
+Display of the current time in the selected time format.
+Preview
+or Hours. The maximum possible offset is ± 600 hours.
+the current time. Enter the desired numeric value and click on Seconds, Minutes
+The »Offset« function is used to add or remove a specific period of time to/from
+Offset
+• Hour short (9) • Separator ( ) (blank space)
+• Hour (09) • Separator (:)
+• Minute short (3) • Separator (-)
+• Minute (03) • Separator (/)
+• Second short (3) • Separator (.)
+• Seconds (03) • am/pm symbol (am)
+• Blank (no character) • Hour American 0-11 (9)
+time field:
+view window. The following elements are available for the configuration of the
+the desired element. A preview of the current time format is displayed in the pre-
+To customize your own time format, click on one of the six list boxes and choose
+• American ( 1pm)
+• European (1:59 PM) • American ( 1:59pm)
+• European (13:59:35) • American ( 1:59:35pm)
+choose from the following default date formats:
+time is displayed in the selected time format in the preview window. You can
+ments of the time field are displayed in the six list boxes below that. The current
+If you want to use a pre-defined time format, click on the upper list field. The ele-
+6 individual elements.
+You can select a default time format or generate your own time format from up to
+Time format
+Laser Operation > Marking adjustment .
+Name for the time field. This name is required if the variable will be edited under
+Name
+time. You can also define an offset to the current system date.
+Insert a time field in the template. Thus the marking contains the current system
+4.3.6.4 Variable »Time«
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 65
+the number field.
+can enter the desired number of tests either with the sliders or enter a number in
+last serial number of the test will then be displayed in the preview window. You
+Click on the »Number of tests« number field to specify up to 1000 test runs. The
+view window.
+ment and copy settings will be counted up in increments and displayed in the pre-
+Click on »Test« test to display the number range with the corresponding incre-
+usual characters.
+fore the marking process, which is useful when marking serial numbers with un-
+used to check whether the correct serial numbers are marked on the product be-
+Display of the marking result after a specific number of serial numbers. This is
+Preview
+letters or limit the number range.
+der »Range«. By default, the number range is 0 to 9. However, you can also use
+You can enter the range of characters used to generate the serial numbers un-
+tive, the marking process is stopped when reaching the end value.
+ing will start again with the start value. If the function »Stop at end value« is ac-
+ing numbers for the serial numbers. As soon as the end value is reached, mark-
+Enter values in »Start value« and »End value« to specify the beginning and end-
+Serial number
+the number of characters of the serial number field.
+characters. Subsequent objects will adjust to the serial number field regardless of
+width of the serial number field will vary depending on the number of displayed
+number in a three-digit field. When the »Leading digits« field is not activated, the
+Specify if you want to display the leading zeros, e.g. for a single or two-digit serial
+Leading digits
+end value that was entered under »Serial number« is reached (see below).
+When this function is enabled, the marking will be stopped automatically when the
+Stop at end value
+Number of products to be marked with the same serial number.
+Copy
+values for increasing and negative values for decreasing serial numbers.
+Specification of increments between the individual serial numbers. Enter positive
+Increment
+ed under Laser Operation > Marking adjustment .
+Name for the serial number field. This name is required if the variable will be edit-
+Name
+Enter a serial number in the template.
+4.3.6.5 Variable »Serial number«
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 66
+ed shift code:
+With »Add« you can generate a new shift code. Click on »Edit« to edit the select-
+Text to be marked on the product.
+Shift code
+Time from which the new shift code will be marked on the product.
+Start
+Weekday on which the shift code will be marked on the product.
+Weekday
+the list is deleted! Only the first shift code is kept.
+If several shift codes have been defined and the option »Weekdays« is disabled
+NOTICE
+option is disabled the entered shift code is used any weekday.
+Click on »Weekdays« to switch the use of the weekday function ON or OFF. If the
+Weekdays
+Table of shift codes
+was produced to the marking.
+This can be used e.g. to add a label of the respective shift in which the product
+The shift code is used to print different texts on your product at different times.
+4.3.6.6 Variable »Shift code«
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 67
+You want to mark a shift code on your product that will contain the following data:
+Example 2:
+code is displayed.
+3.Click on OK. Depending on the current time of day the corresponding shift
+dialog window via »Add«:
+2.Delete the »Text« and select the shift code function. Enter the data into the
+1.Activate the variable tool and draw a frame at the desired position.
+22:00 CCC
+14:00 BBB
+06:00 AAA
+contain the following data:
+You want to (not weekday dependent) mark a shift code on your product that will
+Example 1:
+can delete all but one entry.
+To delete an entry from the list select the shift code and click on »Delete«. You
+dialog without any changes.
+With »OK« the new shift code is added to the list, with »Cancel« you can exit the
+for the shift code under »Shift code«.
+If the option »Weekdays« is active, select the desired weekday and enter the text
+Enter the desired time via numeric keys or with the up-down arrows of the dialog.
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 68
+played.
+3.Click on OK. Depending on the weekday, the corresponding shift code is dis-
+days« and enter the data into the dialog window via »Add«:
+2.Delete the »Text« and select the shift code function. Activate »Week-
+1.Activate the variable tool and draw a frame at the desired position.
+Sunday 00:00 SU
+Saturday 00:00 SA
+Friday 00:00 FR
+Thursday 00:00 TH
+Wednesday 00:00 WE
+Tuesday 00:00 TU
+Monday 00:00 MO
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 69
+sets dialog, refer to Parameter set [ } 104] .
+• Select index step of the current parameter set. For a description of parameter
+• Assign a layer. For a description of the layer dialog, refer to Layer [ } 97] .
+• Define extended functions under »more...« (see below)
+• Define settings for displayed text
+• Select barcode type
+• Mirror object (horizontally and vertically)
+• Rotate object (in intervals of 90° or a defined value)
+If you want to retain the ratios, check the
+• Scale object (value H).
+• Change object coordinates (values X and Y)
+The property bar of the barcode function offers the following options:
+ box.
+The text box (see Tool »Text« [ } 53] ) will open.
+Double-click on the barcode to enter the characters to be shown in the barcode.
+PZN.
+UPC_E, RSS14TR, RSS14ST, RSS14STO, RSSLIM, RSSLIMGP, RSSEXP and
+BC25I, BC39, BC39E, BC93, BC128, EAN8, EAN13, EAN128, SCC14, UPC_A,
+position in the marking field. At present, the available barcode types are: BC25,
+Select the tool and open a frame with pressed left mouse button at the desired
+Inserting a barcode
+4.3.7 Tool »Barcode«
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 70
+the »Return« key:
+tered in the second line of the text field, which can be accessed by pressing
+tion to the bar code (composite component). The characters to be coded are en-
+Types RSS14ST and RSSLIM provide the option to display a CC element in addi-
+CC-A/B
+00-99.
+Mode C: In this mode, only characters entered in duplicate can be encoded from
+escape characters can be coded.
+Mode B: In this mode, numbers, all capital and small letters as well as special and
+control characters can be coded.
+Mode A: With this mode, numbers, capital letters, special characters and ASCII
+Type BC128. The following modes are available:
+A mode that specifies which characters can be encoded may be specified for
+Set mode manually
+The calculated check number will be displayed.
+Display check number
+The check number for the barcode will be calculated.
+Calculate check number
+verted" and "Display Bearer Bar" options cannot be activated at the same time.
+A frame around the barcode may be displayed for Type SCC14. The "Display in-
+Display Bearer Bar
+The gaps of the barcode will be marked.
+Display inverted
+Depending on the selected type, the following can be defined under »more...«:
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 71
+product.
+sist of multiple lines marked with the laser depending on the bar code size on the
+The marking of the bar code consists of wide and narrow bars. These bars con-
+Line Width and Overlapping
+the modules. This value may vary from 1 to 2.
+Indicates the ratio of gaps between lines of individual characters and the width of
+Gap/Narrow
+Indicates the ratio of widths of modules and gaps. This value ranges from 1 to 2.
+Module/Gap
+This value cannot be specified for bar codes with a fixed ratio (e.g. EAN13)!
+ranges from 2 to 3.
+Indicates the ratio between wide and narrow lines of the bar code. This value
+Wide/Narrow
+width.
+the module width. This value ranges between 10 and 20 times of the module
+Indicates the width of the distance before and after the bar code as a multiple of
+Quiet Zone
+Indicates the width of the modules. This value can range from 0.1 mm to 30 mm.
+Module Width
+Only the CC element will be displayed.
+• Do not mark linear part
+Blank area of the CC element.
+• Quiet Zone
+Height of the CC element above the bar code.
+• Height of CC
+Height of the line between the CC and bar code.
+• Height of Separator Line
+1 1st line: Barcode (linear part) 2 2nd line: CC element
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 72
+bar code and click on
+4.If the bar code must be positioned in the center of the marking field, select the
+alignment »centered«.
+3.Double-click on the bar code, insert the date into the text field and select the
+ in the icon bar. ty bar (»more...«).
+2.Define the type, text position and the properties of the bar code on the proper-
+1.Activate the bar code tool and draw a frame at the desired position.
+at top. As text, the current date is to be displayed centered above the bar code.
+uct: Check digit, module width: 1, Resting zone: 10, Wide/Narrow: 2, Display text
+You want to mark a BC128 bar code with the following properties on your prod-
+Example 1:
+If you have questions about parameters, please contact us.
+overlap. The value for the over lap greatly depends on the material.
+The »Overlap« parameters define the extent to which the individual lines must
+must be a multiple of the line width.
+When creating bar codes, keep in mind that the width of the bars on the product
+NOTICE
+width. The measured width is entered in the respective parameter set.
+perimentally determined by marking a line on the product and measuring the line
+width greatly depends on the material. Therefore, the value of the line width is ex-
+»Line Width« defines the actual line width of the marking on the product. The line
+ter set: »Line Width« and »Overlap«.
+There are two parameters for the marking of bar codes included in every parame-
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 73
+bar code and click on
+4.If the bar code must be positioned in the center of the marking field, select the
+played EAN13 is filled automatically to 12 characters + checksum).
+3.Double-click on the bar code and insert the text field »1234567890« (the dis-
+ in the icon bar. ty bar (»more...«).
+2.Define the type, text position and the properties of the bar code on the proper-
+1.Activate the bar code tool and draw a frame at the desired position.
+bar code. As text, the character string »1234567890« is to be displayed.
+Narrow: 2. With this bar code type, the text is automatically displayed below the
+uct: Inverted display, check digit, module width: 1, Resting zone: 10, Wide/
+You want to mark an EAN13 bar code with the following properties on your prod-
+Example 2:
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 74
+sets dialog, refer to Parameter set [ } 104] .
+• Select index level of the current parameter set. For a description of parameter
+• Assign a layer. For a description of the layer dialog, refer to Layer [ } 97] .
+• Define extended functions under »more...« (see below)
+• Select character range (text type)
+• Select code type
+• Mirror object (horizontally and vertically)
+• Rotate object (in increments of 90° or a defined value)
+• Scale object in fixed defined increments (values W and H).
+• Change object coordinates (values X and Y)
+The property bar of the ID Matrix function offers the following options:
+• A...Z • A...Z;0...9; .,-;: • ASCII
+• 0...9 • A...Z;0...9 • ASCII128
+ternal Text« [ } 59] ).
+variable identifiers when an external variable is assigned to it (see Variable »Ex‐
+code can correctly interpret the applicable specified binary or default coding of the
+The specified character range may be used for ECC200. In addition, this matrix
+Different character sequences may be assigned to codes ECC000 to ECC140.
+fill information is entered as hexadecimal values (0...9 and A...F).
+Using ECC-plain you can define which cell of the code is filled and which not. The
+text window (see Tool »Text« [ } 53] ) will open.
+Double-click on the ID matrix code to enter the characters to be displayed. The
+code, Aztec and PDF417.
+ECC050, ECC080, ECC100, ECC140, ECC200, ECC-plain, QR, microQR, Dot-
+position in the marking field. The following codes can be inserted: ECC000,
+Select the tool and open a frame with pressed left mouse button at the desired
+Inserting an ID Matrix code
+4.3.8 Tool »ID matrix code«
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 75
+next marking position moving the mirrors.
+this the laser marks in straight parallel lines and jumps to the
+The elements of the ID Matrix code are marked in squares. For
+Grid
+The elements of the ID Matrix code are marked in little dots.
+Dots
+normal inverted
+white and vice versa.
+When this field is activated, the ID Matrix code will be shown inverted: black as
+Display inverted
+Representation
+»more...«
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 76
+no values are entered, a default field size of 20 x 20 is used automatically.
+For the ECC-plain the number of lines and columns can be defined as required. If
+the list field.
+want to define this value yourself, deactivate »Optimum« and select a value from
+The default »Optimum« setting automatically sets the size of the barcode. If you
+Lines and columns
+marked.
+vary depending on the laser system and on the material to be
+mum results these values must be adjusted individually. They
+and Line displacement in the ID Matrix properties. For opti-
+and Off-Delay and by the additional values for Jump distance
+The marking is controlled via the laser parameters On-Delay
+section Parameter set [ } 104] .
+lay, Mark-Delay and Stroke-Delay must be set to zero. See
+To use this function the marking head parameters Jump-De-
+laser is switched on and off in order to mark the elements.
+pletely, i.e. the mirrors do not jump to the next position but the
+lel lines. However, the mirror movement follows each line com-
+Similar to the grid representation the laser marks straight paral-
+Swipe
+individually.
+For optimum results the marking parameters must be adjusted
+ders instead of straight lines.
+The elements of the ID Matrix code are marked in little mean-
+Meander
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 77
+At the same time, the data volume of the microQR code increases.
+The higher the selected level, the higher is the capability of the error correction.
+available: L (approx. 7%), M (approx. 15%), Q (approx. 25%, only for version 4).
+dirty or damaged. For version 2 or higher the following error correction levels are
+The microQR code can correct errors to be used to restore data when the code is
+Level
+up to version 4 (17 x 17 modules).
+sion consists of a different number of modules, e.g. version 1 (11 x 11 modules)
+The version of the microQR code will be set with a range from 1 to 4. Each ver-
+Version
+microQR
+checked, upper and lower case letters will also be shown in the QR code.
+used. »Mixed« allows numbers and letters. If the »Case sensitive« function is
+bers can be used in the code. With the setting »Kanji«, letters can be
+You can adjust the QR Code mode. When choosing the setting »8 Bit«, only num-
+Mode
+of the QR code increases.
+higher is the capability of the error correction. At the same time, the data volume
+prox. 15%), Q (approx. 25%), H (approx. 30%). The higher the selected level, the
+or damaged. Four error correction levels are available: L (approx. 7%), M (ap-
+The QR code can correct errors to be used to restore data when the code is dirty
+Level
+extensive QR codes.
+maximum data volume, higher QR code symbol versions are required for more
+version 40 (177 x 177 modules). As each version can only store a determined
+consists of a different number of modules, e.g. version 1 (21 x 21 modules) up to
+The version of the QR code will be set with a range from 1 to 40. Each version
+Version
+QR-Matrix
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 78
+If active, only code set B is used for coding.
+Literal encoding
+Define an additional gap between the dots.
+DotCode gap
+number of rows and columns must be odd.
+columns The content to be coded is adjusted. The total
+Fixed number of rows and Enter the desired number of rows and columns.
+must be different.
+sired ratio of the DotCode is defined. The values
+Height to width ratio Using the values for rows and columns the de-
+coded.
+of rows varies depending on the contents to be
+Fixed number of columns Enter the desired number of columns. The number
+coded.
+columns varies depending on the contents to be
+Fixed number of rows Enter the desired number of rows. The number of
+The DotCode has the following additional possibilities:
+Lines and columns
+DotCodes cannot be displayed inverted.
+DotCode
+checked, upper and lower case letters will also be shown in the QR code.
+used. »Mixed« allows numbers and letters. If the »Case sensitive« function is
+numbers can be used in the code. With the setting »Kanji«, letters can be
+You can adjust the microQR Code mode. When choosing the setting »8 Bit«, only
+Modes
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 79
+mon).
+is dirty or damaged. Error correction levels L0 to L8 are available (Reed Solo-
+The PDF417 code is capable to fulfil error corrections to restore data if the code
+Error correction
+Binary: Data Bytes. A maximum of 1.2 bytes per codeword.
+characters per codeword.
+Alphanumeric: Text Characters, e.g. ASCII 32 to ASCII 127. A maximum of 2
+Numeric: Digits from 0..9. A maximum of 2.9 digits per codeword.
+tent.
+Auto: Automatic selection of optimum compaction mode depending on the con-
+If the compaction mode is activated the following options are available:
+Compaction mode
+PDF417
+on the setting of the Size mode. 01/.
+Number of data layers to be used in the Aztec code. The available values depend
+Nb. layers
+Percentage of check characters in the data layers (5 to 100 %).
+Error correction
+Standard: The number of layers can be set between 1 and 32
+Compact: The number of layers can be set between 1 and 4
+Auto: The number of layers cannot be set
+Size mode
+Aztec
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 80
+Then click in the template again.
+field: »FFFFF800018000180001FFFFF«.
+3.Double-click on the code and enter the hex values into the text
+encoded automatically.
+2.Select type ECC-plain in the property bar. The text »123« will be displayed
+1.Select the ID matrix code tool and drag a frame at the desired position.
+You want to mark a rectangle with ECC-plain (default length of 20 columns).
+Example 3:
+3.Double-click on the code and enter »ABCD1234« into the text field.
+der »more...«.
+2.Select type ECC200 in the property bar and activate option »Grid« un-
+1.Select the ID matrix code tool and drag a frame at the desired position.
+ABCD1234, displayed as »Grid«.
+You want to mark an ID matrix code ECC200 on your product. The code must be
+Example 2:
+3.Double-click on the code and enter »ABCD1234« into the text field.
+der »more...«.
+2.Select type ECC050 in the property bar and activate option »Dots« un-
+1.Select the ID matrix code tool and drag a frame at the desired position.
+ABCD1234, displayed as »Dots«.
+You want to mark an ID matrix code ECC050 on your product. The code must be
+Example 1:
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 81
+x 6.048 mm.
+tion. The outer dimensions of the ECC200 code are automatically set to 6.048
+6.Enter »6.0« for the W and H values in the property bar of the ID matrix func-
+0.048 mm and click on »OK«.
+5.In the »Edit parameters« dialog, change the value under »Line width« to
+[ } 104] .
+4.Click on the »Parameter set« option in the tool bar, see Parameter set
+field: »12345678901234«.
+3.Double-click on the code and enter the value in the text
+encoded automatically.
+2.Specify Type ECC200 in the property bar. The text »123« will be displayed
+1.Select the ID matrix code tool and drag a frame at the desired position.
+er line width.
+However, it is possible to approach the dimensions 6 x 6 mm by entering a small-
+cannot be entered, but the values 5.6 x 5.6 mm are set automatically instead.
+bar of the ID matrix function, you will notice that the exact values of 6 x 6 mm
+points of the code or entering the values in the W and H values in the property
+modify the dimensions of the ECC200 code by manually dragging the corner
+ber of grid points in one direction 14 x 50 micrometers = 0.7 mm). If you want to
+of the enlargement of each grid point diameter matches the exact line width (num-
+example above can only be changed in 0.7mm increments because the increase
+fied in the »Edit parameters« dialog is 0.05 mm. The outer measurements for the
+of »12345678901234« and dimensions 6 x 6 mm. The line width that was speci-
+You want to create a square ECC200 code with a content
+Example 4:
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 82
+8004 UPC/EAN Serial Identification 1-30 alphanumeric
+250 Second serial number 1-30 alphanumeric
+240 Additional product identification 1-30 alphanumeric
+95 Internal Company Code 1-30 alphanumeric
+23x Lot number 1-19 alphanumeric
+22 HIBCC Quantity, Date, Batch and Link 1-29 alphanumeric
+21 Serial number 1-20 alphanumeric
+20 Product variant 2 digits
+17 Expiration date 6 digits: YYMMDD
+13 Packaging date 6 digits: YYMMDD
+11 Creation date 6 digits: YYMMDD
+10 Batch number 1-20 alphanumeric
+02 Number of containers 14 Digits - numerical
+01 Shipping Container Code (SSCC-14) 14 digits - numerical
+(SSCC-18)
+00 Serial Shipping Container Code 18 digits - numerical
+AI Description Data format
+Identifiers for the GS1 format.
+can or have to follow, see the following extract from the table with the Application
+called Application Identifiers (AI), which signal to the laser how many characters
+uct information, e.g. the expiration date, production date, etc. is assigned to so-
+without defined lengths from each other in the data flow. In the GSI, various prod-
+cation Identifier default format. In the data flow, »~1« serves to separate fields
+first character, signals to the laser that the following data matches the GS1 Appli-
+The entry »~1« matches special character <FNC1>, which, if it is entered as the
+~1 matches <FNC1>
+plained below:
+the »~« (tilde) in combination with numbers or letter sequences, which are ex-
+You can encode different special characters in the barcode ECC200 by entering
+4.3.8.1 Special characters in the ECC200 barcode
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 83
+characters 065, 066, 067) are coded with »~d065«, »~d066« and »~d067«.
+acters in the ECC200 code. For example, the characters "A, B and C" (ASCII
+the ASCII coding of a corresponding character) is used to display all ASCII char-
+The character combination »~dNNN« (whereby the three NNN digits represent
+ASCII character coding
+product information have been coded.
+In the above displayed ECC200 code example, the four following details of the
+6 Product information
+Code)
+5 AI 01 (Shipping Container 11 Product information
+uct information values
+4 Separators between two prod- 10 AI 21 (serial number)
+formation values
+3 Product information 9 Separators between two product in-
+tion)
+2 AI (UPC/EAN Serial Identifica- 8 Product information
+sequence
+1 Serves to identify the EAN/UCC 7 AI 95 (Internal Company Code)
+UCC/EAN Application Identifier default format:
+Below is an example for an ECC200 Code that is encoded according to the
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 84
+vice versa.
+When this field is activated, the logo will be shown inverted: black as white and
+Display inverted
+Fill parameters
+Fill parameters for bitmaps:
+sets dialog, refer to Parameter set [ } 104] .
+• Select index step of the current parameter set. For a description of parameter
+• Assign a layer. For a description of the layer dialog, refer to Layer [ } 97] .
+selected logo.
+Note: The dialog displayed and its options depend on the format of the
+[ } 92] )
+• Enter settings for extended functions under »Fill« (see Filling parameters
+• Select the logo from the database
+• Mirror object (horizontally and vertically)
+• Rotate object (in intervals of 90° or a defined value)
+If properties must be retained, check the
+• Scale object (values W and H).
+• Change object coordinates (values X and Y)
+The property bar of the logo function offers the following options:
+box.
+mats can be imported: plt, mcl, bmp, ai, lgo, gif, jpg, jpeg.
+face »File« on »Import« and select the logos to be imported. The following for-
+If you want to import other logos to the database, click in user inter-
+can be inserted.
+original position of the coordinate system. Only logos that exist in the database
+right mouse button: The selected logo will be inserted in its original size at the
+mouse button: The selected log will be inserted at the cursor position. Click with
+Select a logo from the dialog and click in the marking field. Click with the left
+Inserting a logo
+4.3.9 Tool »Logo«
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 85
+logos that exist in the database will be displayed!
+1.Activate the logo tool and select the desired logo from the dialog. Note: Only
+09876/54321 below it.
+You want to mark the "Phone" logo on your product with the centered number
+Example:
+1 Dots 2 Grid
+You can switch between dots and grid in the display of the logo.
+Representation
+changed.
+not shown at all or shown blurred as soon as the original size of the bitmap is
+proximated with lines on the product. This may result in that individual dots are
+sions for a bitmap. The display of the individual dots of the bitmap is thereby ap-
+If »Scalable (independent of line width)« is enabled, you can specify any dimen-
+specified scaling factors will be rounded.
+Size changes will enlarge or reduce a bitmap by a multiple of the line width. The
+ing scaling and shown with a multiple of the line width.
+map must be a multiple of the line width. Each dot of the bitmap is preserved dur-
+If »Scalable (independent of line width)« is not selected, the dimensions of a bit-
+ter set [ } 104] ").
+the structure of the laser system and the product material (see Section " Parame‐
+which are marked on the product with the laser. The line width is determined by
+Bitmaps consist of a specific number of dots. These dots are shown with lines,
+Scalable (independently of line width)
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 86
+the text field centered below the logo.
+3.Activate the variable tool and enter »09876/54321« into the text field. Position
+2.Click on the desired position in the template. The selected logo is inserted.
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 87
+of cell« from the context menu or double-click into the cell to be edited next.
+can edit another. Right-click in the active cell and select »Matrix -> End editing
+When you are finished editing the cell, you have to end the process before you
+available tools, e.g. enter a text, logo or variables.
+The template grid will be displayed in the cell. You can edit the cell using the
+menu »Matrix -> Edit cell« (frame turns red).
+click with the right mouse button in the selected cell and select from the context
+red) or select the desired cell with the left mouse button (cell frame turns blue),
+To edit the cells proceed as follows: Double-click in the cell (cell frame turns
+sets dialog, refer to Parameter set [ } 104] .
+• Select index step of the current parameter set. For a description of parameter
+• Assign a layer. For a description of the layer dialog, refer to Layer [ } 97] .
+• Rotate object (by 90° or a defined value)
+• Define the reference point for rotations
+If properties must be retained, check the
+• Scale object (values W and H).
+• Change object coordinates (values X and Y)
+The property bar of the matrix function offers the following options:
+box.
+position in the marking field. A matrix of nine cells is fitted into the frame.
+Select the tool and open a frame with pressed left mouse button at the desired
+Inserting a matrix
+4.3.10 Tool »Matrix«
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 88
+ed with the above mentioned editing features
+the »Matrix -> Mark cell« setting is selected for a matrix cell, the cell can be edit-
+matrix cells by default. No matter whether the »Matrix -> Don't mark cell« or
+When a matrix is created, the »Matrix -> Mark cell« setting is displayed for all
+NOTICE
+lect »Matrix -> Mark cell« from the context menu.
+included in the marking process, click with the right mouse key in the cell and se-
+will not be included in the marking procedure accordingly. If a hidden cell is to be
+you will notice that the hidden matrix cells will not be displayed in the preview and
+When you are looking at the template in the preview window (see Preview [ } 36] ),
+-> Don't mark cell« . The cell border is displayed in the color of the background.
+If a cell of the matrix is not to be marked, right-click in the cell and select »Matrix
+trix« .
+cell« . To delete the contents of all cells in the matrix, select »Matrix -> Clear ma-
+To delete the content of a cell, right-click in the cell and select »Matrix -> Clear
+tent is copied to all other cells.
+sponding cell and select »Matrix -> Copy cell content to all cells« . The cell con-
+To insert the content of one cell into the entire matrix, right-click in the corre-
+lect cell, edit cell, select next cell).
+If you want different contents in every cell, repeat the procedure for every cell (se-
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 89
+• Successively (meander) or each row from the beginning again (jump).
+• By rows or columns
+Definition of the sequence in which the cells will be edited:
+Jump mode
+Definition of the starting point for the variable change.
+Origin cell
+Definition for the first element to be modified or not.
+• By cell
+• By column
+• By line
+Changing the start value and incremental range of the serial number:
+Serial number
+cell.
+Copy the name of the original cell to all cells or assign a unique name to each
+Name
+Here you can define the following:
+If the variable is a serial number, the following dialog is displayed:
+context menu. The cell content is copied to all other cells.
+be copied to all cells, select »Matrix -> Copy cell content to all cells« from the
+If you have entered a variable in a matrix cell and the content of the first cell shall
+4.3.10.1 Using variables in the Matrix
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 90
+Groups
+shifted.
+If rows or columns have been joined to groups (see below) the complete group is
+individual cells or both directions!
+Here you can shift either rows (X) or columns (Y) of cells. It is not possible to shift
+Interleave
+of rows and columns and the size of the matrix frame.
+The values entered here refer to the complete matrix. Enter the desired number
+Frame
+rotation).
+rotating the matrix (the reference point selected in the property bar is used for the
+the distance between the cells. If required you can also define the orientation for
+Enter the desired cell size, the distance between first cell and matrix frame and
+Cells
+automatically.
+E.g. if you alter the matrix size, the cell size and distances are changed as well
+All values are related to each other!
+NOTICE
+trix and select » Matrix -> Matrix properties « from the context menu.
+If you want to change the quantity, size and position of cells, right-click on the ma-
+4.3.10.2 Matrix properties
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 91
+leave« (see above) is applied to the group.
+Here you can join rows or columns to groups. Any shifting defined on page »Inter-
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 92
+» Overlapped lines«
+» Outlines« and » Filling«
+tion=50 µm tion=5000 µm tion=7500 µm tion=10000 µm
+Curve resolu- Curve resolu- Curve resolu- Curve resolu-
+er line of a TTF, AI graphic or arc is compiled.
+The curve resolution determines the length of straight vectors from which the out-
+» Curve resolution
+4.4 Filling parameters
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 93
+tor. The values can be defined individually for outlines and for fillings.
+to eliminate any irregularities at the beginning and at end of the marking of a vec-
+the vectors (in the example displayed in red). Due to this extension it is possible
+The acceleration compensation is an extension at the beginning and at the end of
+»Acceleration compensation«
+Negative distance: blue line, Distance = -0.1 mm
+Positive distance: red line, Distance = 0.1 mm,
+Real contour: black line, Distance = 0 mm,
+Example:
+size of the object).
+unexpected rendering effects we recommend to use small values (relative to the
+an object, for example to compensate the line width of the laser. In order to avoid
+Definition of an offset of the outline. Thus you can shrink or expand the contour of
+»Distance«
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 94
+» Multiple fillings«
+1 Line spacing
+The line spacing indicates the distance between the individual lines for the fill.
+» Line spacing«
+2 Distance from edge
+1 Filling direction
+» Filling direction« and » Edge distance«
+steps for outlines and fillings.
+eter set dialog (see Parameter set [ } 104] ). It is possible to use different index
+Selection of the index step to be used. The index steps are defined int he param-
+»Index step«
+Compensation for outlines Compensation for fillings
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 95
+the same direction which leads to longer jumps to get to the next vector.
+the end of the lines are shorter. If this option is not active, all filling vectors have
+Fillings are marked from left to right as well as from right to left. Thus the jumps at
+»Bidirectional filling«
+The filling path is optimized in order to minimize the number of jumps.
+»Sort vectors«
+To avoid jumps the filling lines are connected via parts of the outline.
+»Meander filling«
+2 Angle change of following cycles
+1 Filling direction
+OFF cycles=2 cycles=3 cycles=5
+Multiple fillings Number of filling Number of filling Number of filling
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 96
+bidirectional filling unidirectional filling
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 97
+Wait time in ms before marking will be start for the first object of the group.
+Delay
+explanations for the use of scripts, refer to Chapter 4.5.1 " Layer scripts [ } 99] ".
+Execution of user-defined scripts before and after marking objects. For detailed
+Script
+Visible sequence of the objects in the template (front, background).
+VSeq
+parameter set of the current template.
+Specification of the index level of this group. The index levels must exist in the
+Index
+Marking sequence of the layer groups.
+MSeq
+moved or removed in the template.
+When this box is checked, objects of this group cannot be selected, edited,
+Blocked
+automatically assigned to the active layer group.
+In this column, a layer will be defined as active. New objects in the template are
+Active
+template is printed.
+When this box is checked, all objects from this group will be printed when the
+Print
+plate. If it is not enabled, the objects ill be hidden.
+When this box is checked, all objects from this group will be displayed in the tem-
+Visible
+Number of objects of the current template that was assigned to this group.
+#
+ty bar or can be selected there).
+Name of the layer group (will be displayed in the layer selection box in the proper-
+Name
+The created layers only apply to the current template.
+NOTICE
+active column.
+ing on the header of a column will sort the table according to the content of the
+marking characteristics and assign them to objects of the current template. Click-
+log »Layer properties« appears. In this dialog you can define groups with different
+Right-click in the template and select »Layer« from the context menu. The dia-
+4.5 Layer
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 98
+Changes that were made will be accepted and the dialog will remain open.
+Apply
+The dialog will be closed without changes.
+Cancel
+transferred to the temporary memory.
+To activate the modifications in the current template, the template must be
+Applied changes will be transferred and the dialog will closed.
+OK
+0 % 50 % 80 % 95 %
+Examples for the transparency of the blue layer:
+ency are invisible and therefore cannot conceal anything.
+higher VSeq value) will be covered. Objects of a layer group with 100 % transpar-
+visible. Default setting is 0 %, objects below that (i.e. objects of a layer having a
+A transparency can be assigned to each layer group to make overlapped layers
+Transparency
+ferent layers.
+A color can be assigned to each layer for a visual differentiation between the dif-
+Layer color
+Moves the selected layer group one row up or down in the marking sequence.
+matically.
+When this box is checked, layers without assigned objects will be deleted auto-
+Remove unused layers
+Rename the selected layer group.
+Rename
+is to be removed, the objects are deleted from the template after a message.
+An active or blocked group cannot be removed. If a group with assigned objects
+NOTICE
+Delete the selected layer group.
+Remove
+Add a new layer group with a new name.
+New
+Display of the selected color under »Layer Color« for this layer group.
+Color
+the template but not marked enter 0.
+Number of markings for objects of this group. If a group is only to be displayed in
+Marking
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 99
+Some command languages and their file extensions are listed below.
+are to be executed on the PC side; for the laser side this definition is not required.
+File extension of the defined script. The file extension must be defined if scripts
+Script file extension
+tion commands.
+This section succeeds all script lines. This section normally contains synchroniza-
+Script End section
+er information, the activation of software packages and initialization commands.
+This section precedes all script lines. This section normally contains the interpret-
+Script Start section
+terface if global script sections are to be defined.
+Open the »Script default values« dialog box by pressing the »Script global« in-
+The definition of global script sections is valid for all scripts in the database!
+NOTICE
+scripts.
+Global definition of script sections that precede or succeed all start and end
+Script global
+Note: A script is only executed after completion of the previous script!
+ties« dialog.
+start script is indicated by an E in the column »Script« in the »Layer proper-
+Script that will run after the first object of this group has been marked. An existing
+End script
+ties« dialog.
+start script is indicated by an S in the column »Script« in the »Layer proper-
+Script that will run before the first object of this group will be marked. An existing
+Start script
+after the marking process.
+new »Edit layer scripts« dialog where you can define scripts to be run before and
+Double-clicking in the »Script« field in the »Layer Properties« dialog will open the
+4.5.1 Layer scripts
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 100
+wait wait wait
+abs b 0 abs b 0 abs b 0
+End section abs z 0 abs z 0 abs z 0
+abs y 0 abs y 20 abs y 20
+Main Script abs x 0 abs x 10 abs x 20
+ACC-Axis1.0 ACC-Axis1.0 ACC-Axis1.0
+Package requires Package requires Package requires
+tcfsh8.4 tcfsh8.4 tcfsh8.4
+Start section #! /usr/local/bin/ #! /usr/local/bin/ #! /usr/local/bin/
+Script 1 Script 2 Script 3
+The scripts can also be divided into three sections:
+wait wait wait
+abs b 0 abs b 0 abs b 0
+abs z 0 abs z 0 abs z 0
+abs y 0 abs y 20 abs y 20
+abs x 0 abs x 10 abs x 20
+is1.0 is1.0 is1.0
+package require ACC-Ax- package require ACC-Ax- package require ACC-Ax-
+#! /usr/local/bin/tcfsh8.4 #! /usr/local/bin/tcfsh8.4 #! /usr/local/bin/tcfsh8.4
+The following three scripts are an example for a possible activation:
+stop until a new position is received.
+move the table to the positions (0,0), (10,20) and (20,20). Then the table is to
+You want to activate an X-Y table with 4 axes with a TCL script. The script shall
+Example:
+transmitting templates from the PC to the laser and vice-versa!
+End scripts are transmitted, but not the global definition of script sections when
+Due to different operating systems on the PC and laser, only the layer Start and
+NOTICE
+The changes will not be applied and the dialog will be closed.
+Cancel
+Applied changes will be applied and the dialog will be closed.
+OK
+packages.
+terpreter, which contains SIO Server, SRAM Server and Axis Control software
+The installation of the Smart Graph software includes the installation of a TCL in-
+Windows scripting host .ws
+Windows / DOS commands .bat
+Java Script .js
+PERL .pl
+TCL .tcl
+Command language: File extension:
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 101
+same start- and end sections apply due to the global definition.
+3.Repeat step 1 to assign different main scripts to other layers for which the
+tions.
+2.Select »Script global« to define afterwards the common start and end sec-
+means the execution of a script before marking any objects.
+main script in the »Edit layer scripts« dialog box, e.g. as Start script which
+1.Select a layer from your template to which you want to add a script. Define a
+Thus, a global definition of the start and end sections is possible:
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 102
+graphically.
+time and percentage of the total time. Additionally, the listed values are displayed
+Detailed list of all factors involved in the total marking time including their required
+Timing
+Total height of the template and dimensions in ± Y direction
+Total width of the template and dimensions in ± X direction
+Bounding box
+Traveled distance with closed Q-switch
+Jump distance
+Traveled distance with open Q-switch
+Mark distance
+Number of vectors within a template
+Number of points
+Number of polygons within a template
+Number of polygons
+plate .
+The »Information« window provides an overview of marking data for your tem-
+4.6 Information
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 103
+mission via PC.
+To be able to use this function the laser system must be configured for start per-
+NOTICE
+with »STOP«.
+the »Laser mode« is activated. The marking process can be interrupted
+the template editor is also activated as current template for the marking when
+Laser operation > Marking adjustment . In addition, the template from
+ser by pressing the »START« button, independent of the template selected under
+In all operating modes the template from the template editor is marked by the la-
+system!
+emitted laser radiation. Observe the safety instructions in the manual of the laser
+Make sure that all persons within range of the laser system are protected against
+Laser radiation!
+ WARNING
+connected laser system without prior transfer to the online database.
+The »Marking« function enables the direct output of the template content to a
+4.7 Marking
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 104
+rameter set and click on »Delete« (see Chapter "»File« Interface").
+You can delete a parameter set on the »File« interface: Select the respective pa-
+copy of the data of the previous parameter set.
+the new parameter set in the dialog. The generated parameter set contains a
+displayed. With »New« you can create a new parameter set. Enter the name for
+Here you can select a parameter set. The data of the selected parameter set is
+Current parameter set
+[ } 33] .
+log. For details about the operation of the Softkey Pad, refer to Variable settings
+by tapping twice with your finger in the input fields for numerical values of the dia-
+figuration -> Smart Graph dialog, you can access a numeric Softkey pad
+If you have a touch screen and the »Softkey« function is activated in the Con-
+2
+system (YAG or CO ).
+The available settings of this dialog depend on the type of the connected laser
+synthetic material.
+The parameter sets are adjusted to specific materials or products, e.g. paper or
+ing quality.
+The parameters depend on the material of your product and on the desired mark-
+Parameter sets provide an option for adjusting laser parameters to your product.
+4.8 Parameter set
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 105
+during the marking process.
+indicates the speed at which the laser beam moves across the product surface
+Marking speed
+laser beam is thereby switched off. A typical value is 20000 mm/s.
+indicates the speed at which the laser beam moves from one line to the next. The
+Jump speed
+Marking head parameters
+set.
+When saving the database, this comment is saved together with the parameter
+In this field you can enter additional information on the current parameter set.
+Comment
+Only the highest index step can be deleted!
+Click on »Delete« to delete an index step.
+parameters of the previous index step.
+Click on »Add« to add an index step. The new index step contains a copy of the
+dex steps with parameters adjusted to the materials 1 and 2.
+The parameter set assigned to this template should contain at least 2 different in-
+index step 2 for text 2.
+To adapt the marking to the different materials, use index level 1 for text 1 and
+half consists of Material 2.
+You want to mark a product and its upper half consist of Material 1 and its lower
+Example
+qualities.
+mark a product made of different materials or if you want to use different font
+ing the marking to different marking conditions. This adjustment is required if you
+Assigning different index steps to different objects in a template is used for adjust-
+tain different laser parameters.
+Each parameter set can contain up to 10 index steps. Every index step can con-
+Index steps
+ter set cannot be restored!
+figuration-> Smart Graph or the database was saved, a deleted parame-
+When the »Background Save« function in the dialog is activated under Con-
+Smart Graph software is exited without saving the database.
+ration-> Smart Graph , a deleted parameter set can be restored when the
+If the »Background Save« function is not activated in the dialog under Configu-
+set!
+Make sure that the right parameter set is selected before deleting any parameter
+NOTICE
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 106
+very high pulse power can be generated.
+beam is switched on and off with a defined frequency. Thus laser pulses with a
+If this checkbox is not activated, the laser is pulsed, i.e. using a Q-switch the laser
+Continuous line operation ( continuous wave ) of the laser.
+CW operation (for YAG only)
+the end of a line.
+indicates the period of time for which the laser beam will remain activated after
+Off-Delay
+beginning of a line.
+indicates delays for which waiting is required before the laser is activated after the
+On-Delay
+value.
+Control of the marking intensity with the Q-switch without impact on the current
+Grey value (for YAG only)
+range from 0 to 3).
+Correction factor for the first pulse suppression for consistent marking (value
+FPS correction factor (for YAG only)
+50 kHz 19 µs
+10 kHz 99 µs
+5 kHz 199 µs
+1 kHz 999 µs
+Pulse frequency Maximum opening time
+er. The opening time approximately corresponds with the pulse distance.
+The pulse frequency and opening time are dimensions that depend on each oth-
+through during this period of time.
+Opening time of the Q-Switch in µs. The Q-switch will permit pulses to travel
+Opening time Q-Switch (for YAG only)
+(CO2). Low values may be used to generate a broken line.
+This frequency can be set between 10 Hz and 65 kHz (YAG), 50 Hz to 20 kHz
+Pulse frequency
+the assembly specific maximum output.
+Setting of the output using the current value, whereby 100 % corresponds with
+Marking intensity
+Laser
+ing the end of a line.
+indicates the wait time before the laser beam will jump to the next line after reach-
+Stroke Delay
+of a vector within a line.
+indicates the delay after which marking of the next vector will begin after marking
+Mark Delay
+indicates the delay after which the marking of the next line will begin after a jump.
+Jump Delay
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 107
+vectors.
+specifies the maximum length of a vector. Longer vectors are divided into shorter
+Max. Vector
+specifies the minimum length of a vector. Shorter vectors are not marked.
+Min. Vector
+Vector length
+this chapter.
+width and is indicated in percent (for more information, see "Bar code" section in
+distance between them (negative values). The value refers to the specified line
+indicates the extent to which two adjoining lines overlap (positive values) or the
+Overlap
+be found in section "Bar codes" in this chapter).
+pends on the material and is defined by measurements (further information can
+specifies the line width, e.g. for bar codes on the product. This parameter de-
+Line width
+Filling parameters
+
+02/19 - Index: AI [EN] Smart Graph / 4 »Template« interface 108
+found in chapter "User Interface »Configuration«", section "Product registration".
+A detailed description of the product registrations and their setup values can be
+tion will be applied automatically.
+this template is output on the laser, the settings of the assigned product registra-
+Assign a specific product registration to the open template with this dialog. When
+4.9 Select product registration
+
+02/19 - Index: AI [EN] Smart Graph / 5 »Configuration« interface 109
+can change the setting as with any other product registration.
+The standard ALLPRINT product registration cannot be deleted; however, you
+You can generate different product entries and assign them to optional templates.
+which, just like the parameter set, is assigned to a template.
+ger settings are, etc. These settings are consolidated in a Product registration,
+will be moved during marking, how this movement will be recorded, what the trig-
+Here, you can enter values for settings to determine whether or not the product
+5.1 Product registration
+Click on »Reset« to reset all changed settings to the original values.
+Data in the temporary memory will be deleted at system shut-down!
+NOTICE
+manager.
+you save the database to »File« by clicking on the »Save« interface in the file
+memory of the selected system and will not be transferred to the database until
+tion-> Smart Graph . Otherwise, the settings will be transferred to the temporary
+the »Background Save« function is activated in the dialog under Configura-
+Click on »Apply« to transfer the current settings directly to the database when
+The following applies in general:
+• the software (language, measuring units, password protection).
+• the system (type, date and time, delays),
+• the marker head (work distance, marking field),
+• the product registration (product movement and trigger setting),
+The next pages provide the definition of the applicable settings for
+This interface is used to enter the settings for the marking system and software.
+5 »Configuration« interface
+
+02/19 - Index: AI [EN] Smart Graph / 5 »Configuration« interface 110
+uct movement.
+The availability of trigger settings depends on the selected trigger type and prod-
+settings are divided into »Start trigger«, »Consecutive trigger« and »Stop trigger«.
+There are different settings options for entering product movements. The trigger
+5.1.2 Trigger setting
+WITHOUT saving the database.
+A deleted product registration can only be restored if the software is closed
+NOTICE
+Click on »Delete« to delete the current product registration.
+registration contains the values of the previous product registration.
+name for the new product registration in the following dialog. The new product
+Registration«. Click on »New« to generate a new product registration. Enter a
+Select the desired product registration in the list field under »Name of Product
+5.1.1 Name of product registration
+details about the operation of the Softkey Pad, refer to Variable settings [ } 33] .
+ing the input fields for numerical values of the dialog twice with your finger. For
+ration Dialog -> Smart Graph, you can activate a numerical Softkey Pad by touch-
+If you have a touch screen and the »Softkey« function is activated in the Configu-
+
+02/19 - Index: AI [EN] Smart Graph / 5 »Configuration« interface 111
+ment, you can enter additional settings under »Product movement«.
+Select the applied product movement. Depending on the selected product move-
+5.1.3 Entering the product movement
+ger impulse will be accepted after the end trigger impulse.
+» Start block« indicates the period of time that must elapse until a new start trig-
+system is a YAG laser, there are three different input channels available.
+whether the rising or falling flank must be used as the trigger. If the connected
+If the marking process must be stopped by an external signal you can adjust
+other trigger pulses will be accepted.
+»None« indicates that only the start trigger pulse will trigger a marking, but no
+be resumed with a new start trigger signal.
+device). The laser system remains ready for marking, i.e. the marking process will
+marking process (e.g. the end of a cable or a Stop signal from an external control
+» Stop trigger« specifies the settings for a trigger pulse that will interrupt the
+trigger must be specified here.
+time that must elapse before a consecutive trigger will be accepted after the start
+next marking can be triggered. If »No Product Movement« has been selected, a
+» Consecutive block« indicates the distance the product must travel before the
+the »Start trigger«).
+ent input channels for selection with YAG lasers (usually the same channel as for
+whether the rising or falling flank must be used as a trigger. There are three differ-
+The marking process can also be triggered by an external signal. You can adjust
+moves during the marking process.
+time intervals or product distances depending on whether or not the product
+gered continuously and internally, i.e. the marking process is repeated in fixed
+When the consecutive trigger is set to »Auto«, the marking process will be trig-
+you only want to generate one single marking.
+other trigger pulses will be accepted. Set the consecutive trigger to »None« when
+»None« indicates that only the start trigger pulse will trigger a marking, but no
+» Consecutive trigger« selects the trigger setting for all subsequent products.
+the time between start trigger pulse and marking is specified in ms.
+directly in front of the marking head. When »No Product Movement« is selected,
+uct. The product must travel this distance after the trigger before it is positioned
+of the labeling field of the laser system and the center of the marking on the prod-
+trigger pulse before it will be marked. This distance is the gap between the center
+» Start distance« indicates the distance the product passes through after the start
+available.
+the connected system is a YAG laser, there are three different input channels
+setting indicating whether the rising or falling flank must be used as a trigger. If
+If you want to start the marking process with an external signal, you can enter a
+laser system will start the marking process.
+When the trigger is set to »Auto«, pressing the Start key on the control pad of the
+ess will be activated by the »Start trigger«.
+» Start trigger« indicates the settings for the initial trigger, i.e. the marking proc-
+
+02/19 - Index: AI [EN] Smart Graph / 5 »Configuration« interface 112
+lay«. The next marking procedure cannot start until the »Block delay« has ended.
+dure. The laser system will not accept any trigger signals during the »Block de-
+the »Start delay«. The »Block delay« starts at the beginning of the marking proce-
+After the Start trigger pulse, the start of the marking procedure will be delayed by
+nal (Start trigger 1/2/3).
+control panel of the laser system (Start trigger »Auto«) or an external trigger sig-
+This settings permits an individual marking by pressing the Start button on the
+1.a) Start trigger: Auto or 1/2/3 – Consecutive trigger: None
+The following configuration settings can be entered depending on the trigger type:
+triggered by an internal trigger in specified time intervals or by external signals.
+The product does not move during the marking process. This marking is either
+1. Registration: No product movement
+uct movements.
+Below is a description of the settings for the possible methods for entering prod-
+5.1.4 Product movement
+
+02/19 - Index: AI [EN] Smart Graph / 5 »Configuration« interface 113
+ess. The angles are specified as shown in the following graphics:
+movement must be adjusted to compensate movement during the marking proc-
+The angle between the marking head of the laser system and direction of product
+The product moves at a fixed speed during the marking procedure.
+2. Registration: Fixed speed
+ing duration.
+The »Block delay« may be selected less than, equal to or greater than the mark-
+marking procedure starts after the end of the »Block delay« at the earliest.
+system will not accept any trigger signals during the »Block delay«. The next
+The »Block delay« starts at the beginning of the marking procedure. The laser
+two markings must at least be equal to the »Block delay«.
+This setting generates consecutive marking procedures. The time period between
+1.b) Start trigger: Auto or 1/2/3 – Consecutive trigger: 1/2/3
+
+02/19 - Index: AI [EN] Smart Graph / 5 »Configuration« interface 114
+ended.
+The next marking process cannot be triggered until the block distance b has
+laser system and the center of the marking on the product.
+marked. This distance is the gap between the center of the labeling field of the
+After the Start trigger pulse, the product will travel the distance a before it is
+nal signal (Start trigger 1/2/3).
+button on the control panel of the laser system (Start trigger »Auto«) or an exter-
+This setting generates one single marking that is triggered by pressing the Start
+2.a) Start trigger: 1/2/3 – Consecutive trigger: None
+The following configuration settings can be entered depending on the trigger type:
+second.
+is moving during the marking process. The speed is specified in millimeters per
+The marking process requires a specification of the »Speed« at which the product
+
+02/19 - Index: AI [EN] Smart Graph / 5 »Configuration« interface 115
+1/2/3
+2.c) Start trigger: 1/2/3 - Consecutive trigger: Auto - Stop trigger:
+products in the trigger queue will be marked after the marking process ends.
+tive trigger and the marking head of the laser system. This means, that up to 50
+to 50 products may be positioned between the position of the Start and Consecu-
+For setting options 2.a) and 2.b), the Start distance must be selectable so that up
+triggering each individual product with Start and Consecutive trigger.
+Deviations of the distances between the individual products can be entered by
+ended.
+The next marking process cannot be triggered until the block distance b has
+ing head.
+el this distance after the trigger before it is positioned directly in front of the mark-
+laser system and the center of the marking on the product. The product must trav-
+marked. This distance is the gap between the center of the labeling field of the
+After the Start trigger pulse, the product will travel the distance a before it is
+2.b) Start trigger: 1/2/3 – Consecutive trigger: 1/2/3
+
+02/19 - Index: AI [EN] Smart Graph / 5 »Configuration« interface 116
+der Item 2. Registration: Fixed speed.
+The angle information and setting options for triggering correspond with those un-
+itoring.
+wise« and »counterclockwise«. Select »None« to disable rotational direction mon-
+slip of the conveyor belt. You can choose between a direction of rotation »clock-
+mental encoder. For example, this is used to hide pulses that developed due to a
+»Rotational direction monitoring« indicates the direction of rotation of the incre-
+doubled for the incremental encoder and specified in the »Pulses/Rot« field.
+If two tracks will be analyzed, the specified number of pulses per rotation must be
+lyzed.
+er and also on whether one or two tracks of the incremental encoder will be ana-
+The number of pulses per rotation depends on the type of the incremental encod-
+NOTICE
+during a full rotation.
+»Pulses/Rot« indicates the number of pulses sent by the incremental encoder
+rotation of the incremental encoder.
+»Distance/Rot« indicates the distance that the product will travel for a complete
+stant and entered through an incremental encoder.
+The product moves during the marking process. The movement speed is not con-
+3. Registration: Rotary encoder
+product.
+traveled distance a. For example, the Stop trigger is activated by the end of the
+ing process will start as soon as the product has activated the Start trigger and
+This setting is practical for profile markings on long products (cables). The mark-
+
+02/19 - Index: AI [EN] Smart Graph / 5 »Configuration« interface 117
+marking field« and enter the desired positions for the marking field edges.
+is active. If you want to define the marking field yourself, deactivate »Maximum
+No additional settings will be required when the »Maximum marking field« option
+mized area of the objective or for an adjustment to existing radiation protection.
+You can enter settings for the marking field, e.g. to move the marking to the opti-
+Marking Field
+marking laser.
+scaling for the pilot laser can be entered independent from the settings for the
+If the system is equipped with an optional pilot laser, the settings for offset and
+Pilot laser
+be scaled independently.
+coordinates. The default value is 1. The coordinates of the x and y axes can
+»X-Scaling« and »Y-Scaling« must be indicated as a multiple of the original
+• Scaling Factor
+indicated in millimeters from the center point of the marking field.
+»X-Delta« and »Y-Delta« indicate an offset of the marking field. The offset is
+• Zero position
+then applies globally to all templates.
+Enter an offset, scaling data or rotation in this field. This offset, scaling or rotation
+Marking head
+tube length and deviation. The actual working distance will be displayed.
+The system will determine the working distance. Enter the values for possible
+Working distance
+jective type will be displayed.
+objective that is installed on the laser system. The focal length of the selected ob-
+Select the objective type from this list field. This objective type must match the
+Select objective
+The marking head type that is installed for this laser system will be displayed.
+Marking head
+5.2 Marking head
+
+02/19 - Index: AI [EN] Smart Graph / 5 »Configuration« interface 118
+YAG Marking system
+The display of the interface depends on the selected marking system.
+5.3 System setting
+Click on »Reset« to reset all changed settings to the original values.
+Data in the temporary memory will be deleted at system shut-down!
+NOTICE
+manager.
+you save the database to »File« by clicking on the »Save« interface in the file
+memory of the selected system and will not be transferred to the database until
+tion-> Smart Graph . Otherwise, the settings will be transferred to the temporary
+the »Background Save« function is activated in the dialog under Configura-
+Click on »Apply« to transfer the current settings directly to the database when
+Changes
+
+02/19 - Index: AI [EN] Smart Graph / 5 »Configuration« interface 119
+when the pilot laser is activated.
+in the »Standby« system status. Note: There is no Power Change Delay
+Wait time to execute the marking process when the START button is pressed
+• Power change delay
+Delays
+tion dates. Press on »PC time« to accept the data as set up in the PC.
+Setting the system date and time. This data will be used as the basis for expira-
+Date/Time
+ter settings for the pilot laser.
+Check this box if the system is equipped with a pilot laser. This is required to en-
+Pilot laser
+Selection of the language for the messages and the touch screen on the PCM.
+Language
+Address of the subnet mask
+• Subnet
+Network address of the laser system
+• IP
+Name of the laser system in the network
+• Name
+Identification
+the correct settings will be selected automatically.
+for the marking head and objective do not match the selected laser system and
+to »Marking head«, a message will appear notifying you that the current settings
+PC). Select another laser system and press on »Apply«. When you then switch
+will be displayed. You can switch the laser system in offline operation (on the
+The name and type that were entered under »Identification« for the laser system
+Marking system
+2
+CO Marking system
+
+02/19 - Index: AI [EN] Smart Graph / 5 »Configuration« interface 120
+Click on »Reset« to reset all changed settings to the original values.
+Data in the temporary memory will be deleted at system shut-down!
+NOTICE
+manager.
+you save the database to »File« by clicking on the »Save« interface in the file
+memory of the selected system and will not be transferred to the database until
+tion-> Smart Graph . Otherwise, the settings will be transferred to the temporary
+the »Background Save« function is activated in the dialog under Configura-
+Click on »Apply« to transfer the current settings directly to the database when
+Changes
+This function is not supported at this time!
+Minimum signal length
+This function is not supported at this time!
+Characteristic of RF driver
+PCB.
+Setting the network address and address of the subnet mask of the optional IOEB
+2
+IOEB (for CO only)
+ment, 1: Major adjustment)
+Factor settings for software related aging adjustments. Value 0 to 1 (0: No adjust-
+Aging factor (for YAG only)
+can be reset to zero for LN-A systems by pressing on »Reset«.
+After a pump chamber switch, the operating hours counter of the pump chamber
+Display of total operating hours of the laser system and installed pump chamber.
+Operating hours
+This function is not supported at this time.
+• Interlock release
+to the »Standby« system status.
+Wait time after the end of the marking process before the system will switch
+• Standby delay
+
+02/19 - Index: AI [EN] Smart Graph / 5 »Configuration« interface 121
+ed to the new user level when it runs.
+3.Click on »OK«. The configuration of the Smart Graph software will be adjust-
+2.Enter the corresponding password for the desired user level.
+(see Accessing the software [ } 6] ).
+1.Click on »Set user level«. The dialog to enter the password will be displayed
+In addition, you can enter another user level.
+must enter the new password for this user level at the next software startup.
+5.A message is displayed that the password was changed successfully. You
+4.Confirm your entries with OK.
+der »Repeat password«.
+3.Enter the desired password in the »Password« field and enter it again un-
+2.Select the user level for which you want to change the password.
+1.Click on »Change password«.
+define passwords for user levels 1 and 2:
+In addition, you can activate or deactivate the password protection function and
+at the next software startup.
+selecting the language, click on »Apply«. The selected language will be displayed
+With access level 2, you can select the language of the software interface. After
+interface and measuring unit to be used.
+With access level 1, you can adjust the resolution of the Smart Graph software
+5.4 Smart Graph
+
+02/19 - Index: AI [EN] Smart Graph / 5 »Configuration« interface 122
+played on this page.
+System data, version numbers and operating hours for the system will be dis-
+5.5 Info
+Click on »Reset« to reset all changed settings to the original values.
+Click on »Apply« to transfer all current settings to the system.
+Changes
+key Pad for easy input of values to set up the marking template.
+Variable settings [ } 33] ). When the »Softkey« box is checked, you can use a Soft-
+Smart Graph software, e.g. for user-friendly input of values for templates (see
+In addition, you can specify whether the Softkey functions are available in the
+ground Save« but after the marking process has been completed.
+During the marking process, changes are not immediately transferred with »Back-
+ware is installed, i.e. the function is active!
+By default, the »Background Save« box is checked when the Smart Graph soft-
+NOTICE
+mode will be saved automatically after changes are made.
+the »Background Save« box is checked, the database for the corresponding
+database manually on the »File« interface with the »Save« interface. When
+applicable operating mode must be stored automatically or if you want to save the
+In this dialog section, you can also specify whether or not the database for the
+when the software is restarted.
+this interface. Select the desired mode. The mode change will become active
+In addition, you can adjust the operating mode of the Smart Graph software on
+
+02/19 - Index: AI [EN] Smart Graph / 5 »Configuration« interface 123
+the laser system that is used and the region where it is used.
+The display of the applicable data and service addresses depends on the type of
+ment in the event of a problem.
+To simplify troubleshooting, this data must be forwarded to the Service Depart-
+
+02/19 - Index: AI [EN] Smart Graph/ Index 124
+External text 59
+External template selection 24
+Error Messages 36
+Ellipse 51
+Edge distance 94
+E
+Outlines 93 Logo scalable 85
+Distance Logo inverted 84
+Deleting objects 45 Logo display 85
+Date 61 Logo 84
+Database manager 10 Lines 48
+Database elements 19 Line width 107
+Line spacing 94
+Layer scripts 99
+D
+Layer 97
+CW - Continuous wave 106 Lanuages (software interface) 121
+Curve resolution 92 screen) 119
+Counters 22 Language (messages and touch
+Copy objects 45
+Consecutive trigger 111
+L
+Consecutive block 111
+Connection (Software -> Laser) 11 Jump speed 105
+Configuration 109 Jump delay 106
+Circular marking 57
+J
+C
+Inserting objects 44
+Information 102 82
+Barcode ECC200, special characters Index step 94
+Barcode (formatting) 55 ID Matrix-Code 74
+Barcode 69 ID Matrix code inverted 75
+Backup Database 9 ID matrix code (formatting) 55
+Swipe 76
+Meander 76
+B
+Grid 75
+Arc 51 Dots 75
+Aging factor 120 ID Matrix code
+Activate pilot laser 119 Icon bar 42
+Access level 6
+Acceleration compensation 93
+I
+Grey value 106
+A
+Circle 51
+G
+FPS Correction Factor 106
+Symbols
+Filling direction 94
+Filling 92
+F
+Index
+
+02/19 - Index: AI [EN] Smart Graph/ Index 125
+Q-Switch (opening time) 106
+Q
+Pulse frequency 106
+Property bar 37
+Product registration 108, 109
+Zoom 47
+Product movement 112
+Process control 26
+Z
+Power change delay 119
+Positioning objects 45
+Warnings 36
+Position of the template content 34
+Polygon 48
+W
+Pilot laser settings 117
+Password 6 Version number 122
+Vector length 107
+Variables 33
+P
+Overlapping 71
+V
+Overlapped lines 92
+Overlap 107 User-defined terms 62
+Outlines 92
+Operating status 21
+U
+Operating mode 7
+Operating hours 120, 122 True Type Fonts 16
+On-Delay 106 Trigger setting 110
+Off-Delay 106 Tool bar 44
+Time 64
+Text Editor 55
+O
+Text (formatting) 55
+Network address 119 Text 53
+Template sequence 29, 30
+Template list 24
+N
+Template batch 29, 32
+Multiple fillings 94
+MinVector 107
+T
+Measuring 46
+MaxVector 107 System messages 36
+Matrix properties 90 System data 122
+Interleave 90 Stroke delay 106
+Groups 91 Stop trigger 111
+Frame 90 Start trigger 111
+Cells 90 Start distance 111
+Matrix Start block 111
+Marking template 7 Standby delay 120
+Marking speed 105 Shift code 66
+Marking intensity 106 Serial number 65
+Marking head 117 Selection tool (cursor) 46
+Marking field 117
+Marking data 102
+S
+Marking 103
+Mark delay 106 Rectangle 50
+M R
+
+7BPZdsx,cAKU_sAd*8t,@ ,;DVcWd6P9ND$B"`9,N8iT=qAPO5R,ewl@vDr@BUT@?>=<;:987543210/.-,+*

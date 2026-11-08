@@ -1,0 +1,101 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\67657 Modification DN-A Cooling Unit.pdf
+# cifrado=False bloques=10 caracteres=4591
+
+67657Modification Instructions
+for DN-A Cooling Unit
+1 Modification of the Cooling Unit
+Due to EMC problems caused by the switching of valve Y1 a solid state relay must be mountedin the cooling unit. All parts required for the modification are included in the modification kit (part
+no. 67655). The wiring diagrams are included at the end of this document.
+1.1 Preparation
+DangerBefore starting any work the laser system must be dead!1.Turn the key switch to position »0«.
+Remove the key to ensure that the laser system cannot be switched on.
+2.Wait until the message »Key switch open« is displayed on the touch screen.
+3.Switch off main switch.
+4.Disconnect the mains supply.
+1.Remove the strain relief plate of the cooling hoses at the back of the PCM.
+2.Remove the front panel of the PCM housing.
+3.Remove the fixing screws in the bottom plate and of the supply module and pull out the coolingunit until the terminal box is accessible from the side.
+10/04 - Rev. 1.0 1
+
+67657Modification Instructions
+for DN-A Cooling Unit
+4.Remove the screws of the cover of the terminal box and open it.
+5.Disconnect the 14-pole female connector from the CTP (Cooler Terminal PCB).
+6.Remove connector X 300 by loosening the locking screws and disconnecting the connection.
+7.Remove the screws of the female connector and pull it backwards.
+8.Push the cover of the terminal box through the opening in the bottom plate of the cooling unit.
+9.Place a palette or similar having the same height as the PCM bottom plate in front of the PCM.
+10.Pull out the cooling unit using the handles and place it onto the pallet (if necessary unlockthe supply unit and pull it out as well).
+1.2 Modification
+1.Remove the right side panel of the cooling unit.
+2.Drill three holes into the side cover, two for the solid state relay (K3) and one for the shieldof the 2-pole round cable (W16).
+3.Mount the solid state relay (K3) to the side cover so that the connections (OUTPUT) are on the left side (see photo above).K3.1 and K3.2
+side cover
+right side panel
+terminal box
+temperature sensor
+W10
+Y1
+side cover
+for K3
+for shield of W16
+10/04 - Rev. 1.0 2
+
+67657Modification Instructions
+for DN-A Cooling Unit
+4.Disconnect the line coming from the valve (Y1) from cable). Connect a bridge from X7.5 and connect it to X7.5K3.1 to (shortenK3.2 (see wiring diagrams).
+5.Wrap the spiral hose around the cables.
+6.Plug the compensating resistance R3 onto K3.3the wiring diagram (see last page). and connect the cable W16 according to
+7.In the terminal box:- Disconnect line W7.2 (connected to X3.2)
+There are two lines (W7.3 and W7.2) connected to K1.A1. - Disconnect W7.3, connect W7.2 to X3.2 and connect a bridge from X3.2 to K1.A1.
+8.At the temperature controller (N1):
+Disconnect the lines from the suppressor choke (L1) to lines of the suppressor choke and remove the choke.N1.10 and N1.12, cut off the other
+Connect W16 according to the wiring diagram to a bridge from N1.10 and N1.4N1.12 of the controller and connect to N1.5.
+NoteW10 must be laid from the temperature controller downwards in the edge ofthe cooling unit (see photo above) to the temperature sensor (R1) at the
+water container (see drawIf this is not the case disconnect W10 from the controller and lay it accord-ing on previous page).
+ingly.
+9.Mount the side panel of the cooling unit.
+W16
+spiral hose
+shield of W16
+W16
+W6
+W7
+front right edgeof cooling unit
+W10
+10/04 - Rev. 1.0 3
+
+67657Modification Instructions
+for DN-A Cooling Unit
+1.3 Mounting
+1.Insert the cooling unit into the PCM housing so that the terminal box remains accessible.
+2.Push the cover of the terminal box through the opening in the bottom plate of the cooling unit.
+3.Mount the female connector.
+4.Connect connector X 300 to the female connector.
+5.Connect the 14-pole female connector to the CTP.
+6.Close the cover of the terminal box and tighten the screws.
+7.Push the cooling unit into the PCM housing up to the stop.Make sure that the black cooling hoses are not bent or squeezed!
+8.Fix the cooling unit using the fixing screws.
+9.Lock the supply unit and tighten the fixing screw.
+10.Mount the front panel of the PCM housing.
+11.Mount the strain relief plate of the cooling hoses at the back of the PCM.
+10/04 - Rev. 1.0 4
+
+67657Modification Instructions
+for DN-A Cooling Unit
+2 Wiring Diagrams
+2.1 Before Modification
+10/04 - Rev. 1.0 5
+
+67657Modification Instructions
+for DN-A Cooling Unit
+10/04 - Rev. 1.0 6
+
+67657Modification Instructions
+for DN-A Cooling Unit
+2.2 After Modification
+10/04 - Rev. 1.0 7
+
+67657Modification Instructions
+for DN-A Cooling Unit
+10/04 - Rev. 1.0 8

@@ -1,0 +1,124 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\19346 - Offset Calculation Incorrect for Year-End Dates.pdf
+# cifrado=False bloques=5 caracteres=4630
+
+Field Service Bulletin
+FSB #: 000019346
+Affected Model Categories
+Version: 2
+3210 3140 3340 3350 7510 7610 7810 7920 7330
+7230 7340 7440 3640
+Published: 10/3/2025
+Contact: lasersupport@videojet.com
+Offset Calculation Incorrect for Year- End Dates
+Related Technical Escalations
+TS25092521245 - Incorrect Date Offset with CMark 5.4
+Global Laser Technical Support has identified an issue with CMark version 5.4 and
+5.4.1. Specifically, expiration or best- by dates set between December 29 to Decem -
+ber 31 are incorrectly calculating the dates in the following year.
+The issue occurs with year- end dates in specific years, including 2025, 2029, 2030,
+2031, 2035, and 2036.
+CMark 5.4 was introduced on July 21, 2025; only laser systems that were shipped
+between July 21 and October 1, or had CMark 5.4 installed during this range, are
+affected.
+Required Downgrade for Affected Customers
+Field Service Engineers should proactively downgrade CMark version 5.4 for
+customers affected by the date offset issue, following the instructions in
+Corrective Action .
+Disclaimer
+The contents of this bulletin and any linked documents are provided as a convenience to highlight useful information and
+troubleshooting tips. When working with a product, always consult the product user manual and follow the product safety pre -
+cautions and recommendations, including using Personal Protective Equipment when necessary. If you have any questions or
+© 2025 Videojet Technologies - Page 1 of 5 -
+
+Affected Models
+Table 1 : Affected Models
+3140, 3210, 3340, 3350, 3640
+CO2
+7230, 7330, 7340, 7440, 7510,
+Fiber
+7610
+7810, 7920
+UV
+Symptoms
+If the offset date falls on December 29, 30 or 31, the software incorrectly calculates
+the date by adding one extra year.
+Figure 1:  Example of a 90 days offset that results in the incorrect date
+Corrective Action
+Perform the steps in  (Escalation) End of Year Date Offset Incorrect .
+© 2025 Videojet Technologies - Page 2 of 5 -
+
+Related Knowledge Articles
+(Escalation) End of Year Date Offset Incorrect 4
+© 2025 Videojet Technologies - Page 3 of 5 -
+
+Article #: 000019345
+Article #: 000019345
+Applies to Models
+Revision: 2
+3140 3340 3350 7510 7610 7810 7920 7330 7230
+7340 7440 3640
+Published: 10/3/2025
+Type: Issue- Problem
+(Escalation) End of Year Date Offset Incorrect
+Global Laser Technical Support is aware of reports about CMark version 5.4 and 5.4.1,
+indicating that expiration or best- by dates set between December 29 to December
+31 are incorrectly calculating the dates in the following year.
+The issue occurs with year- end dates in specific years, including 2025, 2029, 2030,
+2031, 2035, and 2036.
+Symptoms
+If the offset date falls on December 29, 30, or 31, the software incorrectly calculates
+the date by adding one extra year.
+Figure 1: Example of a 90 days offset that results in the incorrect date
+How to Tell if the Problem Is Related to the PLE
+l
+The laser model is any of the following:
+l
+3140, 3210, 3340, 3350, 3640
+l
+7230, 7330, 7340, 7440, 7510, 7610
+l
+7810, 7920
+l
+The CMark version is 5.4 or 5.4.1
+© 2025 Videojet Technologies - Page 4 of 5 -
+
+Corrective Action
+1. Download CMark 5.2.3 and 5.3.1. Software is available at Service Resources |
+Service Software | Laser | CMark | CMark Software - Multi- Core .
+2. Perform a backup on the current interface (TCS+ or SmartGraph). This is
+necessary because after the downgrade, no files will be available.
+3. Install the applicable version, depending on the printer model:
+l
+CMark 5.2.3  - 3140, 3350, 3640, 7230, 7330, 7340, 7440, 7510, 7610, or
+7810
+l
+CMark 5.3.1 - 7920
+4. Upload the backup to the correct interface, either TCS+ or SmartGraph.
+5. When closing Mandatory Downgrade Work Orders , close the work order
+with one of the following results, as appropriate:
+l
+Upgrade Complete
+l
+Customer Rejected Upgrade
+l
+Equipment not operable/present
+l
+Other - See Notes
+What is Being Done to Find a Permanent Solution
+l
+MOL Engineering has identified the root cause as a previous fix in CMark 5.4
+related to the calendar week bug. Developers are actively working on a
+resolution.
+l
+Systems being shipped from WD manufacturing sites beginning October 2,
+2025, will have laser systems with CMark 5.2.3 installed for CO2/Fiber or CMark
+5.3.1 for 7920 UV.
+l
+Systems being shipped from SD/ZH manufacturing sites beginning October 3,
+2025, will have laser systems with CMark 5.2.3 installed for CO2/Fiber or CMark
+5.3.1 for 7920 UV.
+l
+Field service is advised to downgrade systems for customers who use this date
+offset that could result in a calculated date between December 29 and
+December 31, 2025.
+© 2025 Videojet Technologies - Page 5 of 5 -

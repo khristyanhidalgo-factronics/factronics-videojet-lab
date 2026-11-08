@@ -1,0 +1,352 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Esp\18352-Instalacion 63_6530 (Esp).pdf
+# cifrado=False bloques=15 caracteres=19008
+
+Instalación 6530
+C o n t e n i d o
+T í t u l o Instalación 6530
+C o n t e n i d o
+I n s t a l a c i ó n 6 5 3 0
+Solicitudes de TT O
+Requisitos de instalación
+Estudio del sitio
+Hoja de verificación
+Montaje de soporte
+Montaje de los soportes
+Rodillo de platina
+Rodillos de montaje
+Asamblea de registro
+La tecnología TT O requiere contacto físico con materiales objetivo a alto rendimiento y colocación dentro de
+otros equipos para alcanzar esa película objetivo en el momento correcto. La planificación y la instalación
+adecuada son fundamentales para el éxito de las impresoras TT O. La instalación posterior es menos indulgente
+que en otras tecnologías, por lo que vale la pena tomarse el tiempo para corregir las cosas la primera vez.
+Advertencia de peligro de choque
+Los voltajes letales están presentes dentro de este equipo cuando está conectado a la red eléctrica. A
+menos que sea necesario utilizar la impresora, desconéctela de la red eléctrica antes de retirar las
+cubiertas o intentar cualquier actividad de servicio o reparación. No seguir esta advertencia puede
+causar la muerte o lesiones personales.
+Lesiones Personales
+El uso inadecuado de este equipo puede provocar lesiones personales.
+Posibles daños en el equipo
+El uso inadecuado de este equipo puede provocar daños en el equipo.
+Posibles daños en el equipo
+Apague la impresora antes de conectar o desconectar cualquier cable o equipo hacia o desde la
+impresora. NO conecte cables u otros equipos a la impresora mientras esté encendida.
+S o l i ci t u d es d e T T O
+
+Las aplicaciones de los clientes que requieren impresoras TT O variarán y cada instalación es única. Le ayudará
+a familiarizarse con las máquinas más comunes en las que se instalarán nuestras impresoras.
+M á q u i n a s d e e n s a c a d o v e r t i c a l
+Las máquinas de ensacado vertical funcionan en conjunto con pesadoras multicabezal.
+Modo continuo e intermitente disponible.
+Por lo general, se utiliza para bolsas individuales, sobres o paquetes.
+La impresora generalmente se monta debajo de la ruta de la banda.
+Figura 1: Ilustración de una máquina de llenado vertical de formularios.
+Las aplicaciones de forma vertical, llenado y sellado (VFFS ) utilizan la gravedad para alimentar (soltar) el
+producto en una bolsa parcialmente formada que luego se sella después del llenado. Las máquinas VFFS a
+menudo tienen registro incorporado. El propósito de la unidad de registro es permitir que la posición de
+impresión en la película de embalaje se mueva al área requerida.
+La Figura 1 muestra el flujo típico del material de embalaje de película en una aplicación VFFS.
+Por lo general, la película se alimenta desde un rollo en la parte posterior de la unidad de envasado,
+hasta la parte superior de la unidad y sobre el collar de formación, como se muestra en la Figura 1 .
+La bolsa se sella en un lado para formar un tubo (sello de aleta).
+En las mandíbulas de sellado, las mandíbulas se cierran para sellar la parte superior de una bolsa y la
+parte inferior de la siguiente.
+Cuando se sella el fondo de la bolsa, el producto cae y las mandíbulas se cierran para sellar la parte
+superior de esa bolsa y la parte inferior de la siguiente, y así sucesivamente....
+Las máquinas VFFS (también conocidas como embolsadoras ) tienen una velocidad limitada en función de la
+rapidez con que pueden caer los productos.
+El collar de formación convierte la película de una forma plana a un tubo.
+Problemas de calidad de impresión en el collar
+Un problema de calidad de impresión a tener en cuenta: el ángulo que la película envuelve
+alrededor del cuello es muy nítido y puede raspar parte de la imagen de la película impresa.
+Las mordazas de sellado sellan la parte superior de la bolsa llena y la parte inferior de la siguiente
+bolsa vacía que se está formando.
+Problemas de calidad de impresión en las mordazas de sellado
+Problemas de calidad de impresión: qué buscar: a menudo se calientan, por lo que es
+importante asegurarse de que la imagen impresa no esté en esta área del paquete.
+
+Figura 2: V ista frontal de una máquina VFFS.
+M á q u i n a s h o r i z o n t a l e s
+Figura 3: Ilustración de una máquina de llenado de formularios horizontales.
+Las envolturas de flujo generalmente se usan con productos o colaciones más suaves: pastel,
+productos de panadería, bolsas múltiples.
+Bolsillos individuales o barras de vuelo separan los productos.
+Muchas envolvedoras de flujo tienen un diseño en voladizo.
+Modos continuos e intermitentes disponibles.
+E n v o l v e d o r a s d e f l u j o d e v e l o c i d a d l e n t a a m o d e r a d a
+Figura 4: Envolvedoras de flujo
+Funcionamiento continuo: la película nunca se detiene
+La mayor base instalada de cualquier máquina de embalaje flexible
+Es posible un rendimiento y velocidades de línea más rápidos (hasta 500 ppm)
+Facturado por Fuji/Formost, Sig/Doboy , Rose Foregrove, FMC
+Los codificadores rotativos son los más comunes
+No hay escasez de aplicaciones principales de TT O
+R eq u i si t o s d e i n st al aci ó n
+
+Potencia (1 15/230V AC)
+Soporte de montaje
+Codificador (solo movimiento continuo)
+Disparador de impresión (SOLO PNP)
+Señal de control
+Sensor
+E st u d i o d el si t i o
+Para obtener más información sobre las expectativas de Site Survey , consulte Site Survey (6530, 6230).
+H o j a d e ver i f i caci ó n
+Esta es la hoja de comprobación de instalación para una instalación básica de TT O. La instalación real puede
+variar .
+1. Reúnase con el cliente para revisar los requisitos y especificaciones de instalación.
+2. Complete la documentación de salud y seguridad in situ del cliente según sea necesario.
+3. Cliente para proporcionar pin outs de terminal para las entradas de la máquina host.
+4. Desempaque el equipo y verifique que no haya defectos.
+5. Prueba la secuencia de encendido 6530.
+6. A yudar al cliente a cargar Configuration Manager y adquirir CLARiSOFT .
+7. Compruebe la tensión de alimentación con DVM.
+8. Haga que el cliente aísle y bloquee la electricidad de la máquina host.
+9. Mida y monte el soporte universal según las especificaciones de instalación o SAR.
+10. Soporte universal de montaje o SAR.
+1 1. Controlador de claridad de montaje y soporte.
+12. Instale el codificador .
+13. Instale y ajuste la impresora al soporte.
+14. Conecte el cable de perfil bajo y monte la fotocélula si es necesario.
+15. Conecte las salidas de disparo y falla de impresión a la máquina host.
+16. Conecte el cable de alimentación a la fuente de alimentación.
+17. Retire la alimentación de bloqueo.
+18. Re-web host machine con película (responsabilidad del cliente)
+19. Configure la impresora.
+20. Confirme las señales de impresión.
+21. Confirme las salidas de fallas con el cliente.
+22. Aplicación de prueba.
+23. Inserte contraseñas (anote la contraseña para el cliente).
+24. Configuración del administrador de configuración de archivado.
+25. BackupCopia de seguridad de trabajos de CLARiSOFT en PC y USB (CSE y cliente).
+26. Cableado de amarre de cables según sea necesario.
+27. Limpie el material de embalaje y el área de trabajo.
+28. Formación básica en operación y mantenimiento de equipos.
+29. Capacitación en CLARiSOFT .
+30. El técnico rellena el documento para la firma del cliente
+31. Documentos de salud y seguridad cerrados.
+M o n t aj e d e so p o r t e
+Mida y monte el soporte universal según las especificaciones de instalación o SAR. Al medir un soporte, la
+dimensión A son los bordes exteriores del conjunto de soporte universal. La figura 6 proporciona un ejemplo de
+las dimensiones del tubo y el rodillo asumiendo una dimensión A de 600 mm.
+Figura 5: La medición de la dimensión A.
+
+Figura 6: Ejemplo de medidas de soporte.
+Figura 7: Diseño del soporte universal.
+Conocer la dimensión del soporte es importante durante la instalación. Debido al espacio limitado en la máquina
+OEM, nos encontramos modificando el soporte universal.
+
+Figura 8: Dimensiones universales y de registro.
+Antes del montaje del soporte universal, haga un inventario de su soporte y verifique que no haya defectos.
+La figura 9 es un inventario de un kit de soporte universal típico. T enga en cuenta que el número de rodillos de
+desvío puede variar .
+Figura 9: Conjunto de soporte universal
+Los principales componentes del Universal Bracket Assembly son:
+T abla 1: Componentes principales
+Descripción Quanity
+Placas laterales Lado 2
+T ubos de soporte de placas 4
+Rodillos de desviación 4
+
+Descripción Quanity
+Montaje de la impresora 1
+Figura 10: Placas laterales de ensamblaje de soporte universal, desglose detallado de piezas
+T abla 2: Lista de materiales de Bracket
+Descripción Cantidad
+Placa lateral 2
+T ubo de soporte de placa lateral 4
+T apa de obturación del tubo de soporte 8
+Rodillo de desviación 4
+T apa de la cubierta del extremo del rodamiento 8
+Eje Stub 8
+Collarín de eje Stub 8
+Platina de montaje de impresora 1
+Conjunto de tornillo T -Bar 1
+Soporte de soporte de impresora 1
+T ornillo de hombro 2
+Placa de cuña de impresora 3
+Lavadora 8mm 1
+Placa de conexión (soporte universal a la máquina
+2
+host o placa de registro)
+T ornillo 5mm X 25mm, cabeza de zócalo 8
+
+Descripción Cantidad
+T ornillo 6mm X 20mm, cabeza de zócalo 12
+T ornillo 6mm X 30mm, cabeza de zócalo 4
+T ornillo 6mm X 16mm, cabeza de zócalo 8
+T ornillo 6mm X 12mm, cabeza de zócalo 4
+Números de pieza de ensamblaje de la unidad de registro y lista de materiales. La unidad de registro se utiliza
+principalmente en aplicaciones intermitentes.
+Figura 1 1: Asamblea de la Unidad de Registro.
+Cuadro 3: Lista de materiales de la unidad de registro
+Descripción Quanity
+Placa lateral 2
+Eje de rodillos de registro 1
+Registro Collar de eje de rodillos 1
+Registro T ubo de rodillos 2
+T apa final de la cubierta del rodamiento 4
+Eje Stub 2
+Collarín de eje Stub 2
+Piñón roscado 1
+Piñón liso 1
+Estante dentado 2
+Placa de conexión (unidad de registro a soporte
+2
+universal)
+V olante 2
+Arandela, 10mm 3
+T uerca, Full, 10mm 1
+T uerca, media, 10mm 1
+T ornillo, 5 mm x 12 mm, cabezal de zócalo 4
+T ornillo, 6 mm x 16 mm, cabezal de zócalo 2
+T ornillo, 6 mm x 20 mm, cabezal de zócalo 12
+T ornillo, 6 mm x 30 mm, cabezal de zócalo 4
+
+M o n t aj e d e l o s so p o r t es
+Al montar el sistema de soporte, es importante asegurarse de que el soporte sea cuadrado.
+Posibles daños en el equipo
+No apriete demasiado los pernos, ya que esto provocará daños en el equipo.
+1. Coloque las tapas de obturación del tubo de soporte en los tubos de soporte de la placa lateral y use
+un mazo de goma o un martillo suave para golpear la tapa de obturación del tubo de soporte hasta
+que esté completamente asentada.
+Figura 12: T apones de obturación de tubo de soporte.
+2. Repita 8 veces para que todas las tapas estén instaladas.
+3. Ensamble el conjunto de montaje de la impresora.
+4. Coloque (2) tubos de soporte de la placa lateral en el conjunto de montaje de la impresora.
+Figura 13: T ubos de soporte laterales enganchados al conjunto de montaje de la impresora.
+5. Encaje los tubos de soporte de la placa lateral en una placa lateral. Estos tubos de soporte de la placa
+lateral están montados frente a los orificios del rodillo de registro.
+Asegúrese de que los orificios empotrados de los pernos estén hacia abajo.
+Si va a utilizar un rodillo de platina, instálelo en este momento.
+Figura 14: T ubos de soporte de placa lateral instalados en la placa lateral.
+6. Coloque el otro (2) tubo de soporte de la placa lateral en la placa lateral.
+7. Apriete los pernos que sujetan los tubos de la placa lateral a la placa lateral.
+8. Coloque la segunda placa lateral en la parte superior . Asegurarse de que el soporte sea cuadrado.
+
+Asegúrese de que ambos orificios de registro estén en el mismo lado.
+Asegúrese de que los orificios empotrados de los pernos estén hacia arriba.
+9. Apriete los pernos que sujetan los tubos de la placa lateral a las placas laterales.
+10. Si es intermitente, ensamble la almohadilla de la platina y conéctela al tubo de soporte de la placa
+lateral.
+El soporte debe parecerse a la figura 15 .
+Figura 15 : Ejemplo: Soporte completamente montado para intermitente.
+R o d i l l o d e p l at i n a
+El rodillo de la platina se instala en aplicaciones continuas o en aplicaciones intermitentes cuando el área
+impresa es superior a 75 mm.
+Figura 16: Diseño de rodillos de platina
+Para instalar el rodillo de la platina en el soporte universal. Es mejor tener solo una placa lateral ensamblada.
+1. Localice los orificios para el rodillo de la platina.
+Figura 17: Orificio de rodillo de platina en el soporte universal.
+2. Coloque la varilla a través del rodillo de la platina.
+3. Deslice un cojinete a cada lado de la varilla.
+
+Figura 18: Rodamientos de rodillos de platina.
+4. Centra el rodillo en la varilla.
+5. Apriete los tornillos del rodamiento.
+6. Fije el conjunto de rodillos de la platina a las placas laterales.
+Figura 19: El rodillo de platina instalado en el soporte universal.
+7. Apriete los tornillos de la placa lateral para sujetar la varilla.
+8. Repita los pasos 5 y 6 en la otra placa lateral.
+R o d i l l o s d e m o n t aj e
+El sistema de soporte utiliza muchos tipos diferentes de rodillos estándar y grado alimenticio son los tipos más
+populares. T ambién hay trabajos presionados y pesados.
+Ahora que el soporte está construido podemos empezar a montar los rodillos de desviación. Es importante que
+los rodillos de desviación se hayan cortado al tamaño correcto.
+Figura 20: Distribución del diseño del rodillo
+Los rodillos de desvío de grado alimenticio son diferentes de los rodillos de desvío convencionales y requieren
+una herramienta de montaje que viene en el kit de soporte.
+
+Figura 21: Rodillo de desvío (izquierda) y herramienta de montaje (derecha).
+1. Coloque la tapa de la tapa del extremo del cojinete sobre los tubos de soporte de la placa lateral. Si
+utiliza rodillos de grado alimenticio, siga las instrucciones para rodillos de grado alimenticio.
+2. Inserte el collarín del eje del stub en el eje del stub.
+3. Apriete el collar del eje del talón para que no se deslice pero no esté completamente apretado. Esto se
+hará más adelante.
+4. Repita los pasos 1-3 en el otro extremo.
+5. Coloque el rodillo de desviación en el soporte en el orificio del perno deseado.
+6. Usando una llave para bloquear el eje del tubo, atornille el perno y apriete.
+Figura 22: Apretar el eje del stub
+7. Repita los pasos 5 y 6 en el otro lado.
+8. Centra tu rodillo de desviación.
+9. Apriete completamente los collarines de los ejes (2).
+A sam b l ea d e r eg i st r o
+Para montar el rodillo de registro, siga estos pasos:
+1. Fije los rieles dentados a las placas laterales con tornillos M5 x 12 mm. Los orificios contra hundidos
+deben estar en el lado opuesto de los rieles.
+Figura 23: Placas terminales con rieles dentados
+2. Corte el eje de registro. La dimensión de extremo a extremo del eje, incluidas las roscas, debe ser 2.5"
+más larga que los tubos de soporte de acero inoxidable en el soporte universal.
+3. Enrosque la media tuerca de 10 mm en el eje. Si la tuerca no está disponible, omita este paso y
+continúe con el paso 4.
+4. Enrosque el piñón roscado (sin los tornillos de fijación) en el eje.
+5. Asegúrese de que la media tuerca y el piñón estén roscados hasta donde los hilos se encuentran con
+el extremo sólido de la varilla. Inserte el extremo roscado del eje a través de la ranura de la placa final
+con el riel dentado en el interior .
+6. Inserte una arandela de 10 mm en el lado roscado del eje, moviendo la arandela hacia la placa final.
+7. Enrosque la perilla del volante (una con roscas a través del mango) en el eje.
+8. Enrosque la tuerca completa de 10 mm en el eje.
+9. Rosca la segunda perilla del volante hasta el extremo del eje.
+
+Figura 24: Montaje completo del rodillo de registro y la corredera de la rueda de mano
+10. Corte los rodillos de aluminio aproximadamente 2.75" más cortos que los tubos de soporte de acero
+inoxidable en el soporte universal.
+1 1. Inserte las tapas de los extremos del rodamiento en cada extremo de los rodillos de aluminio.
+12. Inserte un rodillo de aluminio en el extremo no roscado del eje hacia la media tuerca de 10 mm. Si la
+media tuerca no está disponible, inserte una arandela de 10 mm antes de insertar el rodillo de
+aluminio.
+13. Inserte el collar del eje (collar pequeño) en el extremo no roscado del eje. NO ASEGURE EL COLLAR.
+14. Inserte el piñón sin roscar en el extremo no roscado del eje. NO ASEGURE LOS T ORNILLOS DE
+AJUSTE DEL COLLAR.
+15. Inserte la otra arandela de 10 mm en el extremo no roscado del eje.
+16. Inserte la segunda placa final con riel de dientes en el interior .
+Figura 25: Montaje completo del eje de rodillos de registro en el lado de la rueda no manual.
+17. Inserte los ejes de la talla en las tapas finales del segundo rodillo de aluminio. Fije el collarín del eje
+del talón a cada eje del tubo. Acople el segundo rodillo de aluminio a las placas finales con tornillos M6
+x 16 mm.
+Figura 26: Rodillo de registro completado
+18. Asegure el conjunto de registro al soporte universal utilizando los bloques de conexión y los tornillos
+M6 x 20 mm.
+A j u s t e s d e l r o d i l l o d e r e g i s t r o
+El rodillo de registro se puede ajustar para que la ventana de impresión de la película quede debajo de la
+impresora en modo de impresión intermitente.
+1. Empuje el rodillo de registro hasta un extremo. Asegúrese de que el rodillo esté recto.
+
+2. Asegure el collar del eje y los tornillos de ajuste del piñón. El rodillo de registro debe viajar libremente
+y en línea recta a lo largo de los rieles sin ataduras.
+3. Para bloquear el rodillo de registro en su lugar , apriete el volante más cerca de la placa final y apriete
+la tuerca completa de 10 mm contra el volante. Asegúrese de que la perilla esté roscada hasta
+detenerse antes de asegurar la tuerca.
+Figura 27: Asamblea de registro
+M e t a d a t o s d e l a r t í c u l o
+N o m b r e d e l a U R L 6530-Instalación-cf6f71fe
+U R L p e r m a n e n t e
+Haga clic derecho y copie el enlace para compartir la URL de este artículo
+p a r a L i g h t n i n g
+V i s i b l e e n l a
+a p l i c a c i ó n i n t e r n a
+V i s i b l e p a r a e l
+s o c i o
+V i s i b l e p a r a e l
+c l i e n t e
+T i p o d e r e g i s t r o d e
+Artículo de formación
+a r t í c u l o
+E s t a d o d e
+Aprobado - Uso interno de FS
+v a l i d a c i ó n
+E s t a d o d e
+Publicado
+p u b l i c a c i ó n
+V i s i b l e e n l a b a s e
+d e c o n o c i m i e n t o
+p ú b l i c a
+D a t o s i n t e r n o s
+C o m e n t a r i o s
+i n t e r n o s
+R e n u n c i a
+E lcontenido de este correo electrónico y los archivos adjuntos se proporcionan para com odidad de los clientes de V ideojetpara destacar inform ación útily consejos para la so lución de
+problem as.C uando trabaje con un producto,consulte siem pre elm anualdelusuario delproducto y siga las precauciones y recom endaciones de seguridad delproducto,incluido eluso
+
+de equipo de protección personalcuando sea necesario.S itiene alguna pregunta o no tiene experiencia en eluso o m antenim iento de equipos de V ideojet,póngase en conta cto con
+V ideojetpara obtener ayuda.

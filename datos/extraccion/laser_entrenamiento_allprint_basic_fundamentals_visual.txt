@@ -1,0 +1,133 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\ALLPRINT Basic fundamentals.pdf
+# cifrado=False bloques=10 caracteres=6164
+
+Allprint BasicFundamentals
+
+01/05 - Rev. 1.0 1
+
+Allprint BasicFundamentals
+Examples for the Allprint Basic commands used most
+Calling a variable in the Smart Job
+V[1]=Left(inputlen)The complete data string is defined as variable 1.
+V["Number",Global]=Left(5) The variable "Number" consists of the first 5 charac-ters.
+V["Destination",Global]=MID(6,1) The variable "Destination" consists only of the sixthcharacter.
+V["Destination",Global]=MID(6,3) The variable "Destination" consists of the characters6, 7 and 8.
+V["Number",Global]=Right(5) The variable "Number" consistsacters of the data string. of the last five char-
+J="Job 1" The job "Job 1" is selected.
+if (Left(1)=="0") then J="Job0";endif; If the first character is "0" the job "Job0" is selected.
+if (mid (17,1)==CHR(13)) then V["X",global]=mid(1,10)If the 17th character is a CHR(13) (= carriage return)the variable "X" consists of characters 1 to 10 of the
+data string.
+Prompt(6,"123456","Number") The variable consists of max. six characters, thedefault text is 123456, the variable name is Number.
+01/05 - Rev. 1.0 2
+
+Allprint BasicFundamentals
+Creation and testing of an Allprint Basic file
+1.Define the desired marking: Determine the variables and the data transfer.
+2.Boot the laser with the standard database in order to delete existing Allprint Basic files.
+3.Create a template with the desired variables in the Smart Job software and assign it to a job.
+4.Create an Allprint Basic file.
+5.Transfer the Allprint Basic file to the laser system via Transfer -> DBF file in the Smart Job.
+6.Save the database.
+7.Switch the laser system off and on again to activate the Allprint Basic program.
+8.Transfer the data string, e.g. using a terminal program.
+9.Start the marking process and check the marking result.
+01/05 - Rev. 1.0 3
+
+Allprint BasicFundamentals
+Example 1: Job selection and setting of variables
+Template:Prompt(4, "4321", "Number")
+EOLPrompt(1, "X", "Destination")
+EOLPrompt(15, "Weight in kg", "Weight")
+Job names:Job0 . . . . . . Job4
+Example string:68493A<1003,045kg>
+Marking:6849
+A1003,045kg
+Allprint Basic v 1.3Date: 11/30/2004
+Settings of second serial port of the ACC:
+Baudrate: 4800 Parity: EVEN
+Number of Bits: 8 Hardware Handshaking: NONE
+Number of Stopbits: 1 Interface Selection: RS_232
+Protocol (LEVEL 1): PROTOCOL_TIMEOUTTimeout Time: 5 x 20 ms
+Protocol (LEVEL 2): ALLPRINT_BASIC
+The following Basic string is used to interpret messages from serial 2
+if (MID(5,1)=="0") thenif ( J="MID(5,1)=="Job0";endif1") ;then J="Job1";endif;
+if (MID(5,1)=="2") thenif ( J="MID(5,1)=="Job2";endif3") ;then J="Job3";endif; The fifth character selects the job.of the data string
+if (MID(5,1)=="4") then J="Job4";endif;
+V["Number",Global]=Left(4) The variable "Number" consists of the first4 characters.
+V["Destination",Global]=MID(6,1) The variable "Destination" is the sixthcharacter of the data string.
+V["Weight",Global]=MID(instr(7,"<")+1,instr(7,">")-instr(7,"<")-1);The variable "Weight" has no definedlength, it is the data string between the
+characters < and >.
+01/05 - Rev. 1.0 4
+
+Allprint BasicFundamentals
+Example 2: Setting a variable and sending a check sum
+Template:Height(2.2)
+Ring(in,250,290)Radius(7)
+SpacingFont(1.1)("Sr")
+Prompt(16, "1234567890ABCDEF", "Var1")
+String:
+Reply:¿ (CHR(168))
+Calculation of the check sum in DEC (ASCII Code):
+Allprint Basic v 1.3Date: 11/30/2004
+Settings of second serial port of the ACC:
+Baudrate: 9600 Parity: NONE
+Number of Bits: 8 Hardware Handshaking:Sum = 936 NONE
+Number of Stopbits: 1 this corresponds to 3A8 in HEX; only the last two ciphers are used: A8; Interface Selection: RS_232A8 corresponds to 168 in DEC (character ¿ ).
+Protocol (LEVEL 1): PROTOCOL_EOTSUMWith this protocol a check sum is returned.
+Protocol (LEVEL 2): ALLPRINT_BASICMarking:
+The following Basic string is used to interpret messages from serial 2
+V[1]=Left(inputlen)The complete data string is defined as variable 1.
+(STX)0123456789ABCDEF(EOT)Do not enter STX and EOT in the terminal program!
+[stx]= 023= 517= 55B= 66F= 70
+0= 484= 528= 56C= 67[EOT]= 04
+1= 495= 539= 57D= 68
+2= 506= 54A= 65E= 69
+01/05 - Rev. 1.0 5
+
+Allprint BasicFundamentals
+Example 3: Reading two barcodes for a templateThe data are read via a manual scanner. Two subsequent barcodes are read, to differentiate
+the barcodes there is a carriage return CHR(13) at the end of one barcode.
+Allprint Basic v 1.3Date: 12/01/2004
+Settings of second serial port of the ACC:
+Baudrate: 9600 Parity: NONE
+Number of Bits: 7 Hardware Handshaking: NONE
+Number of Stopbits: 1 Interface Selection: RS_232
+Protocol (LEVEL 1): PROTOCOL_TIMEOUTTimeout Time: 10 x 20 ms
+Protocol (LEVEL 2): ALLPRINT_BASIC
+The following Basic string is used to interpret messages from serial 2
+if (mid (17,1)==CHR(13)) V["Rollthen",global]=mid(1,10);If the 17th character corresponds to CHR(13) (= car-riage return), the variable "Roll" is set.
+else
+if (left(2)=="30V") ["thenQuality",global]="TEST 3";
+endifif (left(2)=="53") then Selection of the text content of the variable "Quality"
+V["Quality",global]="endifGREY CHIP"; via defined number combinations.
+if (left(2)=="70V") ["Qualitythen",global]="OPTIMA";
+endif
+V["Weight",Global]=MID(3,3);Variable "Weight" consists of character 3, 4 and 5.
+V["Width",Global]=MID(6,4); Variable "Width" consists of character 6, 7, 8 and 9.
+V["Roll weight",Global]=MID(10,4);Variable "Roll weight" consists of character 10, 11, 12and 13.
+if (mid (14,1)=="V["0Roll length" then",global]=mid(15,4);
+elseV["Roll length",global]=mid(14,5);A preceding zero is filtered.
+endif
+endif
+01/05 - Rev. 1.0 6
+
+Allprint BasicFundamentals
+Template:Height(2) "ROLL" prompt(20,"0123456789", "Roll")
+EOLprompt(20,"Roll length", "Roll length")"MTR "
+prompt(20,"Roll weightEOL", "Roll weight")"KG"
+prompt(20,"QualityEOL", "Quality")
+prompt(20,"Weightprompt", "Weight(20,"")"WidthGMS", " "Width")"MM"
+String:Barcode 1 0161383033826174 CHR(13)
+Barcode 2 701252250248908850
+Marking:REEL 0161383033
+8850 MTR2489 KG
+OPTIMA125 GMS
+2250 MM
+01/05 - Rev. 1.0 7
+
+Allprint BasicFundamentals
+ASCII Character Codes
+01/05 - Rev. 1.0 8
+
+MAQ$Q6n`d'@_ofmbAtOo{~alySnwJs]P28>>@BT@?>=<;:9876543210/.-,+*
+Xxy"EGXXY"& $-&%% !!H@

@@ -1,0 +1,86 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Port\18010-Eixos de Polias Livres 6530 Causando Danos a Placa Base (Escalation).pdf
+# cifrado=False bloques=3 caracteres=4070
+
+19/05/2023, 1 1:42 Artigo de Conhecimento
+(Escalonamento) 6530 Impressoras
+de 107 mm - Eixos de polia de
+marcha lenta causando danos na
+placa de base (roscas descascadas)
+C o n t e ú d o
+T í t u l o (Escalonamento) 6530 Impressoras de 107 mm - Eixos de polia de marcha lenta causando danos na
+placa de base (roscas descascadas)
+C o n t e ú d o
+( E s c a l o n a m e n t o ) 6 5 3 0 I m p r e s s o r a s d e 1 0 7 m m - E i x o s d e p o l i a d e
+m a r c h a l e n t a c a u s a n d o d a n o s n a p l a c a d e b a s e ( r o s c a s
+d e s c a s c a d a s )
+Foi relatado um problema em que o eixo da polia de marcha lenta em impressoras 6530 de 107 mm
+sofre algum tipo de dano, o que faz com que o eixo retire as roscas na placa de base. A Figura 1
+mostra a localização dos fios danificados.
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Escalation-6530-107mm-Printers-Idler-Pulley-Shafts-Causing-Baseplate-Damage-S … 1 /3
+Figura 1: Os threads afetados.
+S i n t o m as
+Por causa das roscas descascadas, o eixo da polia de roldana não pode mais ser retido, e o
+eixo gira no lugar , sem segurança.
+Como resultado do sintoma acima, quando em produção inicia a impressora:
+
+19/05/2023, 1 1:42 Artigo de Conhecimento
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Escalation-6530-107mm-Printers-Idler-Pulley-Shafts-Causing-Baseplate-Damage-S … 2 /3
+Declara falhas, geralmente erro de posição do carro do cabeçote de impressão
+T em baixa qualidade de impressão
+S o l u ç ã o / S o l u ç ã o
+a l t e r n a t i v a
+M i t i g ação / S o l u ção al t er n at i va
+Se uma impressora tiver roscas danificadas na placa de base, conforme descrito aqui, a única
+solução atual é substituir a impressora inteira. Depois que a impressora for substituída, envie a
+impressora danificada de volta para a W ood Dale em RMA.
+I n f o r m açõ es N ecessári as
+Se uma impressora com roscas danificadas na placa de base for encontrada, solicitamos que você
+notifique o Suporte Técnico Global em dataflexsupport@videojet.com e forneça o seguinte:
+Nome do Cliente
+Número de série da impressora
+V ersão do software da impressora
+Contagem T otal
+Arquivo
+T rabalhos, especificando qual estava sendo impresso quando o dano ocorreu
+Throughput
+Logs de eventos
+Logs de auditoria de produção
+T ipo de suporte - T ipo de janela padrão ou algo personalizado, como travessia
+Se a impressora apresentou alguma falha antes de causar danos, como erro de posição do
+carro do cabeçote de impressão
+Se algum cabeçote de impressão e/ou motores de carro foram substituídos antes do dano
+P r ó x i m o s p a s s o s
+d a t r i a g e m
+T r i a g e m d e P e ç a s
+R e c o m e n d a d a s
+C a u s a r a i z
+M e t a d a d o s d o a r t i g o
+N o m e d a U R L Escalonamento-6530-107mm-Impressoras-Idler-Pulley-Shafts-Causing-Baseplate-Damage-Stripped-
+Threads
+P e r m a n e n t U R L
+Right click and copy link to share this Article's URL
+f o r L i g h t n i n g
+V i s i b l e I n I n t e r n a l
+A p p
+V i s i b l e t o P a r t n e r
+V i s i b l e t o
+C u s t o m e r
+A r t i c l e R e c o r d
+Issue-Problem
+T y p e
+V a l i d a t i o n S t a t u s Approved - Internal FS Use
+P u b l i c a t i o n S t a t u s Published
+V i s i b l e I n P u b l i c
+K n o w l e d g e B a s e
+
+19/05/2023, 1 1:42 Artigo de Conhecimento
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Escalation-6530-107mm-Printers-Idler-Pulley-Shafts-Causing-Baseplate-Damage-S … 3 /3
+I n t e r n a l D a t a
+I n t e r n a l C o m m e n t s
+R e l a t e d E s c a l a t i o n
+D i s c l a i m e r
+T he contents ofthis em ailand any attachm ents are provided as a convenience to V ideojetcustom ers to highlightusefulinform ation and troubleshooting tips.W hen w orking w ith a
+product,alw ays consultthe productuser m anualand follow the productsafety precautions and recom m endations,including using P ersonalP rotective E quipm entw hen necessary.If
+you have any questions or are notexperienced in using or servicing V ideojetequipm ent,contactV ideojetfor assistance.
+E s c a l a t i o n C a s e i s
+C l o s e d

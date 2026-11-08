@@ -1,0 +1,107 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\Temperaturregler.pdf
+# cifrado=False bloques=8 caracteres=3523
+
+Einstellungen für den Temperaturregler
+
+1 Einstellungen für den Temperaturregler
+Folgende Parametereinstellungen am Temperaturrser-Kühler und die DN-A Kühleinheit vorzunehmen.egler sind spezifisch für den Wasser/Was-
+Thermostateinstellungen Carel IR32: DN-A Kühleinheit und Wasser/Wasser-KühlerDie aktuellen Werte entnehmen Sie den Tabellen auf der Service-CD.
+Die Ausgangsposition ist die Anzeige des Temperatur-Istwertes.
+PRG
+mute aux
+SEL
+07/04-Rev. 1.0 1
+
+def
+
+Einstellungen für den Temperaturregler
+1.1 Sollwerteinstellung
+1.Drücken Sie die Taste »In der Anzeige erscheint kurz SEL« für 2 Sekunden.
+St1 und anschließend wird der Temperatursollwert blinkendangezeigt.
+2.Mit den Tasten
+PRG
+mute aux
+def
+SEL
+∆ ∇ können Sie den Temperatursollwert ändern (innerhalb des Sollwertbe-reiches).
+3.Bestätigen Sie mit der Taste »SEL«.
+4.Danach erscheint kurz
+St2 und anschließend blinkend der Temperatursollwert.
+5.Bestätigen Sie wieder mit der Taste »SEL«.
+07/04-Rev. 1.0 2
+
+Einstellungen für den Temperaturregler
+1.2 Einstellung der Parameter ohne Zugangscode
+Beispiel:1.Drücken Sie die Taste »PRG« für 5 Sekunden.
+In der Anzeige erscheint blinkend
+P1 .
+2.Wählen Sie mit den Tasten
+PRG
+mute aux
+def
+SEL
+∆ ∇ den unteren Alarm-Grenzwert P25 an.
+3.Bestätigen Sie mit der Taste »SEL« und anschließend wird der untere Alarm-Grenzwert blin-kend angezeigt.
+4.Mit den Tasten
+PRG
+mute aux
+def
+SEL
+∆ ∇ können Sie den unteren Alarm-Grenzwert ändern.
+5.Durch Bestätigen der Taste »SEL« befinden Sie sich wieder im P-Modus.
+6.Wählen Sie mit den Tasten
+∆ ∇ den oberen Alarm-Grenzwert P26 an.
+7.Bestätigen Sie mit der Taste »SEL« und anschließend wird der obere Alarm-Grenzwert blin-kend angezeigt.
+8.Mit den Tasten
+PRG
+mute aux
+def
+SEL
+HinweisAlle P-Parameter (P1, P2, P3, P14, P25, P26, P27, P28) sind ohne Eingabedes Zugangscodes einstellbar.
+∆ ∇ können Sie den oberen Alarm-Grenzwert ändern.
+9.Durch Bestätigen der Taste »SEL« befinden Sie sich wieder im P-Modus.
+10.Beenden Sie den P-Modus durch Drücken der Taste »PRG«.
+07/04-Rev. 1.0 3
+
+Einstellungen für den Temperaturregler
+1.3 Einstellung der gesamten Parameter
+Beispiel:1.Drücken Sie gleichzeitig die Tasten »PRG« und »SEL« für 5 Sekunden.
+2.Danach blinkt in der Anzeige die 0 und Sie können mit den Tasten
+∆ ∇ die gangscode für die Programmierebene, einstellen.77 , den Zu-
+3.Bestätigen Sie mit der Taste »SEL« und anschließend wird in der Anzeige
+PRG PRG
+mute aux mute aux
+def def
+SEL SEL
+C0 angezeigt. blinkend
+4.Wählen Sie mit den Tasten
+PRG
+mute aux
+def
+SEL
+∆ ∇ die untere Sollwertbegrenzung C21 an.
+5.Bestätigen Sie mit der Taste »SEL« und anschließend wird die untere Sollwertbegrenzungblinkend angezeigt.
+6.Mit den Tasten
+PRG
+mute aux
+def
+SEL
+HinweisAlle P- und C-Parameter sind nach Eingabe des Zugangscodes 77 einstellbar.
+∆ ∇ können Sie die untere Sollwertbegrenzung ändern.
+7.Durch Bestätigen der Taste »SEL« befinden Sie sich wieder im C-Modus.
+07/04-Rev. 1.0 4
+
+Einstellungen für den Temperaturregler
+8.Wählen Sie mit den Tasten ∆ ∇ die obere Sollwertbegrenzung C22 an.
+9.Bestätigen Sie mit der Taste »SEL« und anschließend wird die obere Sollwertbegrenzung blinkend angezeigt.
+10.Mit den Tasten
+PRG
+mute aux
+def
+SEL
+∆ ∇ können Sie die obere Sollwertbegrenzung ändern.
+11.Durch Bestätigen der Taste »SEL« befinden Sie sich wieder im C-Modus.
+12.Beenden Sie den C-Modus mit der Taste »PRG«.
+HinweisUm andere Reglerparameter zu verändern, siehe Datei "TemperaturreglerCarel IR32 Wasser-Wasser-Kühler", bzw. "Temperaturregler Carel IR32
+PCM-Kühleinheit".
+07/04-Rev. 1.0 5

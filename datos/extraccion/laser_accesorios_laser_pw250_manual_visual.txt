@@ -1,0 +1,194 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\PW250_Manual.pdf
+# cifrado=True bloques=10 caracteres=12187
+
+Direct or diffuse laser radiation can inict severe bodily damage, including, but not
+Danger
+limited to, permanent eye damage or blindness, and severe burns to human or animal
+serious
+tissue. Always wear the appropriate eye protection when in the same area as an operat -
+ing laser. Do not allow a direct or reected beam to contact a person.
+personal
+injury Always be aware of the lasers beam path when using a laser power meter and always
+use a beam block to prevent the beam from traveling beyond the intended work area.
+
+SYNRAD, Inc.
+4600 Campus Place
+Mukilteo, WA 98275
+tel 1.425.349.3500
+fax 1.425.349.3667
+e-mail synrad@synrad.com
+web www.synrad.com
+
+Instructions
+Important Note: Power Wizard power meters are designed as diagnostic and service tools for verifying laser power.
+They are not intended for use in validating critical process parameters and should not be used in such
+applications.
+Note: Read these instructions thoroughly before using the PW-250. Certain steps in the measurement process must be
+made in a timely manner to prevent erroneous power readings.
+Setup
+1 Position a beam block in a manner that prevents the laser beam from traveling beyond the work area during power
+measurements.
+
+2 Ensure that all personnel in the area are wearing the appropriate protective eyewear.
+3 Apply power to the laser. Enable lasing just as you are ready to begin power measurements.
+
+Rev 2 / 21 Oct 2009
+P/N 900-00005-02
+
+Power Wizard PW-250 Operating
+Instructions (cont.)
+Power measurements
+1 Hold the PW-250 so that the LCD display is in your hand with the black anodized target facing away from you.
+2 Press and hold the RESET/POWER button for at least two seconds. This activates the PW-250 and initializes the
+measurement computer.
+3 Release the RESET/POWER button to begin the six-second measurement sequence. The LCD display should read
+00.0 Watts (00.3 W). If the reading is not within this range, repeat Step 2.
+4 Quickly insert the PW-250 target into the beam path. Position the PW-250 so the beam is centered in the middle of
+target and hold the PW-250 as steady as possible.
+Take all power measurements at a point in the beam path where the laser beam is
+Caution
+unfocused . To prevent damage to the PW-250, never measure a laser beam at the point
+possible
+of focus!
+equipment
+Do not use the Power Wizard to measure power levels exceeding 250 watts as this may
+damage damage internal components.
+Note: Avoid moving the target after insertion into the beam path. Excessive target motion may result in an erroneous
+power reading.
+5 The Power Wizards LCD display will show readings increasing to the nal value within three to four seconds after
+insertion into the beam.
+6 Remove the PW-250 from the beam path when you hear a series of ve beeps. This indicates the measurement se -
+quence is complete and begins a 1215 second hold sequence.
+Note: The hold feature locks the displayed power reading for a period of 1215 seconds after the measurement sequence
+is complete. This allows the PW-250 to be inserted into areas where it is difcult or dangerous to visually monitor
+the LCD display while the laser is operating.
+7 After the 1215 second hold sequence, a series of fast beeps indicates the PW-250 is automatically shutting down.
+8 To perform another power measurement, repeat Steps 16.
+Measurement notes/guidelines
+u The heat capacity of the target is sufcient to allow multiple, low-power measurements in rapid succession without im -
+mediate cooling. On a 25 W laser, approximately ten consecutive readings may be taken. About two measurements in
+rapid succession can be taken on a 100 W laser. Only a single measurement can be taken around the 250 W level before
+the unit must be allowed to cool.
+u When using the PW-250 on medium power lasers in the range of 100 watts or more, caution should be exercised not
+to overheat the sensor or case by excessive exposure time. An overheated target is indicated by continuous beeping, at
+which time the target must be allowed to cool. You can accelerate cooling by placing the PW-250 under a fan. Do not
+cool the PW-250 by immersing it in water; this will damage the electronics.
+u Use care to place the beam on the target, rather than the PW-250 case. Move the PW-250 in and out of the beam
+quickly, without letting the beam dwell on the case. It is permissible to turn on the laser after the PW-250 target has
+been placed in the beam path; however, be sure the measurement is complete before the six-second measurement period
+has elapsed. Never press the RESET/POWER button while the target is exposed to the laser beam, the computer will
+not be initialized properly.
+
+Power Wizard PW-250 Operating
+Instructions (cont.)
+u The PW-250 can be used to measure laser power anywhere along the beam path, including between a focusing lens and
+work piece, and can be used to measure power emitted from optical bers.
+Important Note: While the PW-250 target has a very high damage threshold, the target should never be placed
+at the focal point of a lens. Place the PW-250 target either in front/above or behind/below the
+beams focal point, thus minimizing power density without overlling the target area. The maxi -
+2
+mum allowable power density at the target is 20 kW/cm ; exposure to power densities above this
+value may damage the target, leading to loss of accuracy and calibrated performance.
+u Erroneous readings may indicate one or more of the following conditions exists: a) the PW-250 was not reset for at least
+two seconds, b) the target is not being held stationary in the beam path, c) the beam is not completely within the target
+area, d) laser power is uctuating too rapidly, or e) the PW-250 is malfunctioning.
+Calibration
+Each PW-250 is individually calibrated to 5% accuracy at the 10.6 micron (m) CO wavelength with calibration trace -
+2
+able to the National Institute of Standards and Technology (NIST).
+Maintenance
+PW-250 battery life is approximately ve years, even with constant use, for a capacity of about 25,000 measurement cycles.
+Current drain of the unit is less than 0.5 mA. Replace batteries when BAT appears on the LCD display. To access the
+three CR2025 lithium batteries, remove the three screws on the rear half of the PW-250 case and lift the rear cover away.
+DO NOT remove the screws on the front (display) side.
+Warranty
+The PW-250 is warranted for twelve (12) months from the date of purchase, provided it is used per the operating instruc -
+tions described above. SYNRAD, Inc. is not responsible for damage caused by improper use, particularly water immersion or
+overheating. SYNRAD, Inc. will repair or replace at no charge any PW-250 that fails due to manufacturing or design defect.
+Defective unit must be returned to SYNRAD, Inc. freight prepaid. Prior to returning the unit, you must rst obtain a Return
+Authorization (RA) number by calling SYNRAD Customer Service at 1.800.796.7231, outside the U.S. at 1.425.349.3500
+or fax to 1.425.349.3667.
+Theory of operation
+The PW-250 uses a patented measurement principle to achieve unprecedented convenience and performance. The unit
+measures the rate of change of temperature (both heating and cooling) induced in an aluminum mass by incident laser
+power. A sophisticated analog computer evaluates the temperature of the probe, the cooling rate before laser application,
+and the heating rate of the probe during laser application. Knowledge of these three values is sufcient to compute incident
+power using mathematical formulas, regardless of the targets immediate thermal history.
+Upon activating and initializing the computer (by pressing and holding the RESET/POWER button for two seconds), the
+present cooling rate of the laser target is stored into memory. If the target was not previously exposed, the current cooling
+rate is zero. Releasing the RESET/POWER button starts a timer that produces an audible beeping signal after approximately
+six seconds. During the six-second measurement window, the target is exposed to laser power and the heating rate is then
+calculated. The calculated power value, based on the stored cooling rate and present heating rate, is continuously updated
+on the LCD display. When the heating rate settles and stabilizes about three seconds after exposure, the correct power
+reading is displayed. The thermal settling rate is sufciently shorter than the six-second timing sequence, to allow adequate
+time to place the target into the beam and allow stabilized conditions to be reached. After the timing sequence has elapsed
+(indicated by a series of beeps), the power reading remains locked on the LCD display for a period of 1215 seconds so the
+PW-250 can be removed from the laser beam and the reading can be recorded. After 1215 seconds, a series of fast beeps
+indicates the PW-250 is automatically shutting down.
+
+Power Wizard PW-250 Operating
+Instructions (cont.)
+The useful temperature range of the target is 0150 C (32302 F). Accurate measurements can be performed at any tem -
+perature in between. Damage to the target and sensor can occur if the temperature of the target exceeds 180 C (356 F).
+The PW-250 will beep continuously if the target temperature exceeds 150 C (302 F).
+The targets absorption is relatively constant as a function of wavelength (see Figure 1). No calibration factors are required
+when using the PW-250 with CO , YAG, near IR (diode), Visible or Excimer lasers because the change in target absorption
+2
+is less than 3%. When using the PW-250 with Carbon Monoxide (CO) lasers, multiply the displayed reading by a factor of
+1.03 for improved accuracy.
+Figure 1 Target absorption versus wavelength
+Specications
+3 2
+Range (3 1/2 digits) ............................... 1250 W Max. peak energy density (J/cm ) ............ 1
+Resolution .............................................. 0.1 W Max. target temperature (C) ................... 180
+1
+Wavelength range ................................. 190 nm11 m Typical target temperature rise per
+measurement (C/W) ............................... 0.4
+1
+Individual calibrated wavelength ......... 10.6 m
+Battery life, typ .......................................... 5 years /
+1
+Target absorption ,
+................................................................... 25,000 readings
+190 nm1.1 m, 911 m ...................... 0.960.99
+Battery type, 3 each .................................. CR2025 Lithium
+1
+Target absorption ,
+4
+190 nm11 m ....................................... 0.930.99 Auto shut-off time (seconds) ................... 25
+Accuracy ................................................ 5% Data hold time (seconds) .......................... 15
+Target diameter (mm) ............................ 22 Size (mm) .................................................. 159 30 12
+Settling time (seconds) .......................... <4 Weight (g) ................................................. 80
+*specications subject to change without notice.
+Max. allowable input power
+1Typical absorption curve supplied with each meter.
+(single application, W) .......................... 300
+2Damage to coating may occur above this value.
+2
+Max. average power density
+3For pulsed lasers and 50 s pulse width.
+2
+(kW/cm ) ............................................... 20
+4After release of RESET/POWER button.
+
+Declaration of Conformity
+Declaration of Conformity
+in accordance with ISO / IEC 17050-2:2004
+We,
+Manufacturers Name:SYNRAD, Inc.
+Manufacturers Address:Mukilteo, WA 982754600 Campus Place
+U.S.A.
+hereby declare under our sole responsibility that the following equipment:
+Product Name:Power Wizard
+Model Number:conforms to the following Directive(s) and Standard(s):PW-250
+Applicable Directive(s):2004/108/ECElectromagnetic Compatibility Directive
+Applicable Standard(s):EN 61000-6-3:2001Generic Immunity and Emissions
+EN 55011:1998Conducted and Radiated Emissions, Class A
+EN 50082-1:1997RF Electromagnetic Immunity
+IEC 1000-4-2:1995Electrostatic Discharge Immunity
+IEC 1000-4-3:1995RF Electromagnetic Fields Immunity
+IEC 1000-4-4:1995Electrical Fast Transient/Burst Immunity
+Corporate Ofcer:European Contact:
+Excel Technology Europe GmbHMnchner Str. 2a
+Dave Clarke, President of SYNRAD, Inc.D-82152 PlaneggGermany
+Dated 01 September 2009

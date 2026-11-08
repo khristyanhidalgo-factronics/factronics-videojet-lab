@@ -1,0 +1,216 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Ing\18351-TTO Site Survey (Eng).pdf
+# cifrado=False bloques=6 caracteres=12413
+
+Site Survey (6530, 6230)
+C o n t e n t
+T i t l e Site Survey (6530, 6230)
+C o n t e n t
+S i t e S u r v e y ( 6 5 3 0 , 6 2 3 0 )
+Site survey is conducted by the salesmen. However , it is a good idea to understand what goes into a
+site survey .
+Areas of Evaluation
+Environment
+Application
+Physical Integration
+Actions Requiring Customer Assistance
+Discuss and get confirmation from customer that they will provide their own maintenance
+personnel to perform the following:
+Drilling & T apping for bracket and component placement
+Electrical Interface to the FFS equipment
+Any required climbing or like to integrate 6530 equipment
+V ideojet personnel are not to perform any of these actions.
+E n vi r o n m en t
+Ambient T emperature
+Is temperature within specifications?
+< 40 F (5 C) min = SAR Heater may be required
+>104 F (40 C) max= Cooling fan may be required
+Ambient Humidity
+Extreme condensation is fairly common on refrigerated rooms
+Significant condensation may require the use of SAR Heater
+Condensation moisture the film can inhibit the TT O’ s ability to transfer full image
+Dust Contamination
+Extreme dust/particle contamination will require periodic cleaning
+W ash-Down / W et Environment
+The 6530 has no IP rating.
+Bagging TT O is not recommended.
+TT O in W et Environments
+How harsh an environment can a TT O printer operate in? TT O printers have a very
+low IP rating due to the necessary open area where the print head comes into
+contact with the substrate. Therefore, areas where wash down occurs will require the
+printer to be installed with an IP65 housing, as will the operator interface, due to the
+“D” type connections and communication ports. Dust or fluids on the substrate
+
+could put the printhead at risk and cause excessive wear or thermal shock.
+Therefore, the cleaner and drier the environment the better .
+The enclosure is for wash down only the unit will not print with the IP65 enclosure in
+place.
+A p p l i cat i o n
+Identify and confirm mode of operation; Intermittent or Continuous
+Identify the maximum print area requirements
+Identify message structure to confirm it is within 6530 software capabilities
+Identify maximum speed & throughput requirements
+Have print samples been provided to the customer?
+I n t e r m i t t e n t a p p l i c a t i o n
+What is the minimum dwell time?
+Is the intermittent cycle indexing more than one product?
+What is the maximum expected prints/min?
+What is the maximum width and height of the message?
+Is there a built in Registration Roller?
+C o n t i n u o u s a p p l i c a t i o n
+What is the maximum film speed?
+1000 mm/s (157 ft./m) for 53
+What is the maximum expected prints/min?
+Does film speed ramp up/down severely?
+What is the maximum film width?
+What is the maximum and minimum product length?
+Does the film stay tight in the printing area?
+Does the film speed ramp up or down?
+Have you obtained a film sample with print & direction Indicated?
+Is there a designated print window?
+Print signal using PEC (does all film used have a reg. Mark Print signal using proximity
+sensor Print signal provided by host machine
+Do they ever use plain film with no registration marks?
+Is there a clean 6 bar air supply?
+Has a suitable position been identified for the printer?
+Are there any guards in the coder areas – sketch
+Will the printer bracket cause any obstruction?
+Where will the controller mount?
+Specify the max/min film speeds/Min
+Specify max film width Maxis
+machine continuous or intermittent
+Specify max/min temperatures in the environment
+P h ysi cal I n t eg r at i o n
+Important notes when selecting bracket placement.
+Observe film print side
+Determine “End to End” bracket width dimension
+Determine placement of required divert rollers.
+Determine Printer Orientation Right vs. Left
+Bracket end plates may be positioned in any orientation
+Determine if Printer Electrical connectors will interfere with objects
+Bracket may be installed in a cantilevered position (do not exceed 25” total width)
+End Plates may be positioned supported from above (“hanging”)
+Film must NOT make contact with support tubes
+
+Figure 1: Integration fastening options.
+F a s t e n i n g a 6 5 3 0 B r a c k e t - B r a c k e t M o u n t i n g
+Bracket mounting can be accomplished in a number of dif ferent methods
+Bracket Mounting - Continuous
+Determine width of Impression Roller
+V erify that shaft encoder can be placed without interference
+V erify that film has an adequate “wrap” around roller
+Bracket Mounting - Intermittent
+V erify available space for registration roller (if applicable)
+FFS side frames or wall must be solid steel or aluminum (be aware of 1/8” cover
+plating)
+Be aware of electrical or mechanical components on the opposite side of frame to
+be drilled for bracket fastening
+Brackets/rollers must NOT interfere with safety covers or other objects
+Brackets must be fastened using bolts no less than 1/4” (preferably 5/16”)
+Changing the web path must NOT create a potential safety hazard for operators
+A wkward Printer/Controller operator accessibility may result in safety hazard. DO
+NOT consider
+Important Note
+There are no “W ritten Rules” about integration. Success will depend on how the site survey is
+conducted and how integration is determined to take place
+I n t e r m i t t e n t
+Figure 2: Illustration of Registration Unit.
+A registration unit allows the print position on the packaging film to be moved into the required area.
+By adjusting the registration roller up or down, the length of the film between the supply reel and the
+sealing jaws of the packaging machine is made longer or shorter . This changes the printing position on
+the film accordingly .
+
+The registration unit should, ideally , be positioned between the sealing jaws of the packaging machine
+and the printer . This will ensure the print position can be changed when the registration roller position
+is adjusted.
+Registration units are used on the packaging film in intermittent applications. Occasionally , there are
+continuous applications where the film is moving too quickly or too slowly for the 6530 to print. By
+using the registration unit, it may be possible to adjust the film path to a faster or slower part of the
+packaging cycle, allowing a suitable opportunity for printing with the 6530.
+In order to achieve the best quality print from a continuous application, the substrate should wrap a
+minimum of 90 degrees around the print roller .
+Figure 3: Registration Roller Intermittent
+Intermittent Considerations
+When adopting the Modular System for intermittent packaging applications, the following information is
+important and will af fect the specified solution outcome.
+The width of the reel carriage, and therefore the maximum permissible substrate material, is a key
+factor in specifying the required bracket width. The Modular System is designed with a flat pack
+dimension of 1m wide (wider applications are rare but possible by specifying separately). The common
+denomination to specify a bracket width is known as the A Dimension (all other cutting lengths on a
+bracket width are arrived at by simple formulae derived from the A Dimension). The A Dimension is
+the overall width of a fully assembled bracket, measured to the outside surface of the end
+plates.
+Where does the bracket go? Each Packaging machine will have a dif ferent web path configuration, but
+all can be categorized into three groups. T emplates are available, which, when held up to the machine
+can mimic the intended bracket position, verifying that appropriate space is available and its ef fect on
+other reel gear on the machine. The majority of VFFS Machines allow mounting of a Modular System
+on the top portion of the machine or above the supply reel gear , as shown in Figure 3 . Height
+clearance above the machine (due to platform where the products are to be weighed) can sometimes
+be limiting, depending on the type of product being packed. Where space is not available then the rear
+of the machine is used but the further the coder is mounted from the sealing point of the bag means
+that more bags can be wasted on changeover
+Positioning of guide rollers will vary from application to application, but because they are “plug and
+play” it is easy to adjust these rollers on installation. The criteria for the roller positioning are that they
+must present the substrate in the correct plane to the print head and that also the web should not foul
+on any stationary part of the bracket or machine frame, causing additional web drag.
+The Modular System, when fitted to intermittent machines, must have adequate adjustment to print at
+any point across the width of the bag or at any point along the length of the longest bag. The
+adjustment across the width of the substrate is taken care of by manually moving the printer across
+the bracket, and the adjustment up and down the bag length is achieved by implementing a
+registration module. The registration module allows the stopping position of the film to change in
+relation to the print head and is ef fected by adjustment of a moveable roller up and down a rack.
+C o n t i n u o u s
+Why do we need the registration roller in continuous mode?
+
+Figure 4: Registration Roller Continuous
+The majority of continuous applications do not require a registration unit as the substrate does not
+stop moving, an electronic delay can be set within the 6530, when the delay expires, the coder
+receives the signal to print. All continuous printers will require an encoder to match the substrate
+speed to print speed.
+Continuous Considerations
+As with the intermittent considerations, it is important that the bracket is able to cope with the widest
+substrate on the application. The A dimension should reflect this. On HFFS machines, which are
+generally continuous, the reel gear is quite often cantilevered in design, as opposed to the traditional
+VFFS machine which of fers bracket support at both ends. This does not cause a problem as the
+Modular Bracket design is very strong. However , once the reel gear width increases beyond 600mm,
+then it is common practice to brace the suspended end of the bracket. This is achieved either by
+bracing to other rollers cantilevered on the parent machine or to the product transport table.
+As with vertical machines it is essential that the coder is always mounted after the break dancing arm
+(which is normally immediately after the supply reel and is intended to prevent reel overrun). On
+continuous wrappers, however , it is also more common to find automatic splicing systems, for parent
+machines which of fer a twin reel facility . It is also essential on these machines that the coder is
+mounted after these assemblies.
+For Registration adjustment along the pack length, this is normally af fected electronically either at the
+coder , but more normally by the parent machine.
+Another consideration when gathering information on continuous applications is whether the machine
+runs plain or print registered film. Fitting of a print registration sensor needs to be a consideration
+where high accuracy of print position is required and the wrapper has auto-bag length correction.
+Divert Rollers change the path of the film, allowing it to be:
+Diverted easily out of the existing film path
+Move freely through the printer
+Diverted back into the existing film path
+Figure 5: Film path without bracket.
+
+Figure 6: Diverted film path.
+A r t i c l e M e t a d a t a
+U R L N a m e Site-Survey-6530-6230-22cebf f0
+P e r m a n e n t U R L
+Right click and copy link to share this Article's URL
+f o r L i g h t n i n g
+V i s i b l e I n I n t e r n a l
+A p p
+V i s i b l e t o P a r t n e r
+V i s i b l e t o
+C u s t o m e r
+A r t i c l e R e c o r d
+T raining Article
+T y p e
+V a l i d a t i o n S t a t u s Approved - Internal FS Use
+P u b l i c a t i o n S t a t u s Published
+V i s i b l e I n P u b l i c
+K n o w l e d g e B a s e
+I n t e r n a l D a t a
+I n t e r n a l C o m m e n t s
+D i s c l a i m e r
+T he contents ofthis em ailand any attachm ents are provided as a convenience to V ideojetcustom ers to highlightusefulinform ation and troubleshooting tips.W hen w orking w ith a
+product,alw ays consultthe productuser m anualand follow the productsafety precautions and recom m endations,including using P ersonalP rotective E quipm entw hen necessary.If
+you have any questions or are notexperienced in using or servicing V ideojetequipm ent,contactV ideojetfor assistance.

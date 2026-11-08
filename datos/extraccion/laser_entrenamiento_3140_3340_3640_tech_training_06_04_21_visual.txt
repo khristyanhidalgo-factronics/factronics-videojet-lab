@@ -1,0 +1,4047 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\3140 3340 3640 Tech Training  06 04 21.pdf
+# cifrado=False bloques=370 caracteres=115550
+
+3140/3340/3640
+2
+CO Laser Systems
+Technical Training
+Rev. 1
+
+Table of Contents
+1. Safety 4. Safety Modules
+• Review
+5. Installation
+• Options
+6. Laser Web Interface
+2. Introduction
+7. Updating CMark
+• Product Features
+8. TCS/TCS+ User Interface
+• Options
+9. Routine Maintenance
+3. System Overview
+10. Troubleshooting
+• Supply Unit
+11. Ultimate 6
+• Laser Head
+• Marking Head
+12. Videojet Remote Service
+
+Objectives
+❖ Identify the features of the 3140/3340/3640 laser
+system
+❖ Set up and Install the 3140/3340/3640 laser system
+to achieve an acceptable mark using SmartGraph
+❖ Carry out Inspections and Maintenance as described
+in the relevant manual
+❖ Diagnose basic faults and replace modules
+❖ Create basic messages using the TouchUS user
+interface
+❖ Perform basic installation using TouchUS
+❖ Perform basic functions using Ultimate 6 and
+Interface Monitor
+
+1. Safety
+
+Laser Hazards
+➢ Exposure of your eyes
+➢ Exposure of your skin to the beam
+➢ Fire
+➢ Fumes
+➢ Electrical
+➢ Mechanical
+➢ Lens
+
+Exposure of Eyes
+
+PPE - Eyewear
+– Eyewear must be for the
+appropriate laser wavelength,
+attenuate the beam to safe
+levels, yet be comfortable
+enough to wear
+O.D. => 6
+for CO2
+laser
+
+Exposure of Skin - Wavelength
+
+Fire Hazards
+▪ Material
+▪ Laser settings
+▪ Ignition of gases / fumes
+▪ Flammable solvents
+▪ Fire extinguisher
+▪ Keep area clean
+▪ Maintenance
+
+Fume Hazards
+▪ Some materials, such as certain plastics, emit toxic gas
+when they burn under a laser beam
+▪ Consult the manufacturer of material
+▪ Turn on ventilation system (Fume Extractor)
+Fume Extractor
+Direction of product movement
+
+Fume Extractor
+
+Electrical Hazard
+Specific Hazard
+▪ Main Switch permanently On
+-- Main Switch mounted behind IP65 cable sleeve
+▪ Mains voltage present at power supply when
+system in standby mode
+General High Voltage Shock Hazards
+▪ The most common laser - related cause of death
+▪ Do not disable enclosure safety switches
+▪ Do not wear anything metal like a ring, bracelet,
+watch, belt buckle, earrings, or keys
+▪ Never stand on a wet surface
+
+Mechanical Hazards
+• Moving equipment
+• Loose fitting clothing, ties, and jewelry should
+not be worn
+• When to put the system into Emergency Stop
+mode
+
+General Safety – Modification to
+Equipment
+• Perform only those
+equipment modifications
+which have been formally
+approved (FSB)
+• Never perform an
+unauthorized modification
+to the design of a piece of
+VTI equipment
+
+Lens Hazard
+The laser system contains optics constructed from Zinc Selenide. When broken into
+small pieces or exposed to acidic conditions, they may give rise to harmful products.
+In normal use however, the laser optical components are not considered to be
+hazardous.
+In the event that a laser optical component is damaged in any way, the material and any
+packaging must be treated as hazardous waste and disposed of accordingly.
+
+Cleaning Solvents
+• Solvents
+– Acetone
+– Methyl alcohol (methanol)
+– Isopropyl Alcohol (rubbing alcohol)
+• Flammable
+• Irritants
+
+Laser Accidents
+• Statistically laser accidents are due to several
+factors:
+• Eye exposure unexpectedly during alignment,
+eye protection not being worn, equipment
+malfunction, high voltage mishandling, non -
+beam hazards, incorrect eyewear, inhalation of
+air contaminants, viewing of laser - generated
+plasmas, and in general using equipment
+incorrectly
+• The most common type of injury is to the eye
+(around 70%). There have been a few deaths,
+mostly caused by electrocution or fires.
+
+General Safety
+Class 1:
+Not capable of emitting accessible laser radiation in excess of what
+the AEL allows for class one.
+Example: Laser Printer, CD player
+Class 2:
+Not capable of emitting accessible laser radiation greater than AEL allows
+with .25 exposure duration.
+▪ Example: Pilot laser and He - Ne alignment Laser
+Output must be less than 1mW
+Class 3:
+Potentially hazardous if focused at the eye or skin for less time than what’s
+allowed for class 2
+May cause acute eye hazards
+▪ Example: Laser Pointer, level/guide
+Output is greater than 1mW but less than 0.5W
+Class 4:
+May present a serious fire, skin or diffuse reflection hazard. Output
+exceeds that of a Class 3.
+Output is greater than 0.5W
+▪ Example: CO2 and YAG laser tubes
+Recommend Class 1 installation (shielding, interlocks, etc )
+
+Reflections of Light
+
+Safety Recommendations
+ANSI Z 136.1 - 2014
+• Create a standard of measurement
+• Determine thresholds where radiant
+energy becomes a hazard
+• Categorizes laser into four basic
+hazards
+• Provides recommendations for the
+safe usage of lasers and laser systems
+between 180nm and 1mm
+
+Laser Safety References
+• CDRH - Center for Devices and Radiological Health
+– An agency within the U.S. Food and Drug Administration which publishes
+and enforces legal requirements on laser product manufacturers. For copies
+of the CDRH regulations, contact: CDRH (HFZ - 312), 2098 Gaither Road,
+Rockville, MD 20850, Telephone (301) 594 - 4654
+• ANSI/OSHA - ANSI (American National Standards Institute)
+– U.S. organization that publishes standards for laser users. Their laser safety
+standards are not laws, but they form the basis for state and OSHA
+requirements for the use of lasers. For copies contact ANSI in New York at
+(212) 642 - 4900 or the Laser Institute of America, at Telephone (407) 380 -
+1553, Fax (407) 380 - 5588
+• OSHA - The Occupational Safety & Health Administration
+– Does not have specific laser safety requirements. However, if they are called
+into a facility, the inspectors follow published guidelines (OSHA Instruction
+PUB 8 - 1.7 Guidelines for Laser Safety and Hazard Assessment) that are
+based on an earlier (1986) ANSI Z136.1 standard.
+
+Safety Guards
+• A safe installation requires that the laser
+beam be guarded utilizing interlocks
+Length must be sufficient to
+prevent skin and eye contact
+with beam path.
+Ceramic tile should be affixed
+opposite the laser head (other Laser hazard stickers
+side of product) to absorb should be affixed to the
+Insert laser head here.
+guard in clear view.
+laser light if no product is
+Removal requiring
+present (if fired).
+special tools.
+Side View of Guard
+
+Safety Guards
+• Any parts of the safety guard which can be
+removed (slides or hinged parts) should be
+interlocked so the laser is paused (shutter
+closed) when those parts are open or
+removed
+Top View of Guard
+Sliding cover to allow
+PRODUCT access to conveyor PRODUCT
+Removable parts
+should be electrically
+interlocked in
+CLOSED position.
+No laser reflective
+materials should interrupt
+the beam path (metal)
+
+Nominal Hazard Zone
+
+2. Introduction
+System Overview and Options
+
+3140/3340/3640 System Overview
+Supply unit
+(controller)
+Laser head
+Marking
+head
+3340 and 3640
+PharmLine
+User Interface
+versions
+(Current: CLARiTY Controller, TCS+ via
+available: Extra
+TU430 or web browser, or SmartGraph
+documentation
+software)
+included
+(Legacy: Handheld Controller or TCS/TU420)
+
+Available Interfaces for 3x40 (Current)
+CMark v. 4.x
+Laser operating system
+Flash on Board only!
+SmartGraph
+CLARiTY Controller
+TCS+
+PC based software
+Runs on laser
+Use web browser or TU430
+
+Available Interfaces for 3x40 (Legacy)
+Cmark v. 3.x
+Laser operating system
+SD Card only!
+TouchUS –
+Handheld -
+Spares only
+Only as spare part
+TCS software on TU420H
+Only as spare part now
+
+The Membrane Board
+Emission LED
+Shutter State LED
+Error LED
+Start Stop
+Key switch
+Power on Standby
+
+Supply Unit Rear Panel
+Interface
+I/O Connector
+Connector
+Umbilical
+Plate
+(S5) Main power switch is
+always on behind the cover.
+(No switch or fuses on 3640)
+For complete separation the
+mains connector must
+be disconnected from the
+power socket. Potentiometer
+Fan
+Cover
+No. Type Function
+S5 Main Power Switch Switches the mains of the system on and off.
+(no switch on 3640)
+I1 Socket Ethernet connection
+I9 Socket and fuse insert Mains cable connection and two fuses (T8A, behind the IP cover)
+(no fuses on 3640)
+
+Options for Interfacing with Laser
+• 3x40 lasers have a standard connector plate which will be
+fitted on laser when no option is specified on factory order.
+• Two optional customer interface plates are available, but must
+be ordered as an upgrade.
+• Optional plates will be available either from factory or as a
+field upgrade kit.
+Optional:
+Optional:
+Cable Passage
+Standard Quick Connectors
+Field Upgrade Kit: AL - 78772
+Field Upgrade Kit: AL - 78771 Field Upgrade Kit: AL - 78773
+
+Standard Connector Plate
+A Cable feed through (2 ports; each M16)
+B Connection for Encoder (4 pin connector)
+C Connection for Product Detect (3 pin connector)
+Lasers ordered with no options selected for Customer Interface then this
+plate will be fitted on laser.
+This plate will also be available as a field upgrade kit/spare.
+
+Optional: Cable Passage (Gland) Plate
+Cable Passage Plate
+A 10 cable passage blocks
+
+Optional: Quick Connector Plate
+Quick Connector Plate
+A Cable feed through
+B Connection for Product Detect (3 pin connector)
+C Connection for Encoder (4 pin connector)
+D Connection for Interlock (7 pin connector)
+E Connection for Beacon (6 pin connector)
+F Connection for Fume Extractor (5 pin connector)
+G Serial Interface (RS - 232)
+
+3. System Hardware
+Supply Unit
+
+Block Diagram – System – 3140/3340
+Keypad
+FASS X Y
+(Optional; only
+compatible with CPD3)
+Chameleon
+Safety
+IOs
+ETH CP - Light
+CPD3 or
+Q7
+DSP
+RS232
+AC
+SPM
+IO
+FPGA
+Laser
+Tube
+PSU
+48V PSU
+Laser
+Electronics
+LIC_CO2
+HIC
+Umbilical
+Umbilical
+
+Stars indicate where
+Block Diagram - System - 3640
+different than 3140/3340
+Keypad
+FASS
+X Y
+(Optional; only compatible
+with SPM - 16A - FASS)
+Chameleon
+Safety
+CP -
+SPM - 16A or IOs
+ETH
+Light
+Q7
+SPM - 16 - A - FASS
+DSP
+RS232
+AC
+IO
+FPGA
+Laser
+Tube
+48V
+PSU
+PSU
+HIC
+LIC_CO2
+Electronics
+Laser
+Umbilical
+Umbilical
+
+Supply Unit Overview - Top View
+5 1. PCB, Chameleon
+2. Terminal Block
+3. Laser power supply
+6
+4. Electronics power supply
+2
+5. Cable Glands or Quick Connectors
+1
+6. Customer Interface
+3
+4
+
+Supply Unit Interior 3140/3340 - Top View
+Optional connector for TU430 or
+Connector for
+Customer Interface
+CLARiTY / SmartGraph or
+SPM/CPD
+Connectors
+G55/TU420
+Cooling Fan
+for laser
+LAN
+power supply
+Connectors (2)
+Mounting Panel
+– Chameleon &
+Power Supply
+Chameleon
+Board
+(MCIP Chameleon
+version shown)
+Terminal
+Block
+Electronics
+Laser Power
+Power Supply
+Supply
+(underneath)
+(underneath)
+
+Supply Unit Interior - 3640 - Top View
+Optional connector for TU430 or
+SPM - 16A/SPM - 16A -
+CLARiTY / SmartGraph or G55/TU420 Customer Interface
+FASS Connector
+Connectors
+Cooling Fan
+for laser
+LAN
+power supply
+Connector
+Mounting Panel
+– Chameleon &
+Power Supply
+Chameleon
+Board
+(Single Core
+Chameleon shown)
+Terminal
+Block
+(expanded)
+Laser Power
+Electronics Power
+Supply –
+Supply
+48V/2000W
+(tuned to 50V)
+
+The Power Supplies (3140/3340)
+SPM board
+Laser PSU
+Electronics PSU
+• 36V or 48V(624 W)
+48VDC / depending on laser
+tube generation
+200 Watt
+• Adjust voltage
+based on umbilical
+length
+
+The Power Supplies - 3640
+SPM - 16A
+board
+Electronics Laser PSU
+PSU (48Volt/2000Watt)
+48VDC / Tuned to approx
+200 Watt 50VDC
+Now has its own
+mounting bracket
+
+The Electronics Power Supply
+3140 / 3340 / 3640
+UHP 200 - 48
+SP 240 - 48
+• Powers everything other than laser tube
+• Two generations could be present:
+• UHP 200 - 48 (48V/200W)
+• SP 240 - 48 (48V/240W)
+• Spares kits are backwards compatible and include parts needed
+to retrofit.
+• Don’t confuse with 48V laser power supplies which are higher wattage!
+
+The Laser Power Supply
+All 3140 and 3340 with V30 laser tube – 36V (600 Watt) PSU
+• Adjust voltage down based on umbilical length
+3140/3340 (36 VDC PSU)
+3m : 31.0 VDC (+/ - 0.3V)
+• Goal is 30V at laser tube
+5m : 31.5 VDC (+/ - 0.3V)
+10m : 32.0 VDC (+/ - 0.3V)
+3340 (48 VDC PSU)
+3340 with Vi30 laser tube – 48V PSU (624 Watt)
+3m : 48.5 VDC (+/ - 0.3V)
+• Adjust voltage up based on umbilical length
+5m : 48.7 VDC (+/ - 0.3V)
+10m : 49.1 VDC (+/ - 0.3V)
+• Goal is 48V at laser tube
+* Adjust voltage through potentiometer opening on rear of supply unit for
+3140/3340.
+Measurements for
+PSU adjust are taken
+at X28.13 or X9.3 or
+All 3640 – 48V PSU turned to 50V (2000 Watt)
+Terminal block
+• Spares are already adjusted up to 50V
+• No adjustment needed based on umbilical length.
+• Cannot adjust through potentiometer opening in rear of supply unit,
+but no adjustment should be needed.
+
+IEC Fuses (3140/3340 Only)
+• There are two fuses (8 Amp) for mains power
+• Access through the rear of supply unit
+• Part of the SPM or CPD3 assembly
+• Fuses are part of fuse kit (also includes all other fuses for 3140/3340)
+• If no power on keypad and Chameleon board check fuses
+Push down on top and bottom of
+fuse holder to remove fuse holder
+Remove 4 screws
+Uses C13
+on cover
+connector on cord
+
+Power Cord Receptacle (3640)
+• No fuses for IEC
+• Access through the rear of supply unit
+• Part of the SPM16 - A assembly
+• Different cord than 3140/3340
+• No main power switch
+C20 Remove 4 screws
+on cover
+Connector
+
+24V and GND for fan and
+Terminal Block
+G55/ TouchUS
+3140/3340
+Voltage/GND out
+to umbilical
+You must use
+(laser tube)
+specific GND for “+”
+and 24V/GND
+Laser and 24V (as
+out to
+shown).
+fan/handheld/
+Not interchangeable!!
+TouchUS
+In from X 28
+Chameleon
+and Laser
+Power Supply
+“+” Laser Voltage can be
+either 30V or 48V
+depending on laser tube
+version
+V and GND for Laser Tube
+
+50V and GND
+Terminal Block
+Important!!!
+for Laser Tube
+Use large
+3640
+Phillips
+screwdriver to
+You must use
+press on
+specific GND for 48V,
+connector or
+50V and 24V (as
+shown). ferrules will be
+Not interchangeable!!
+difficult to
+remove.
+24V and GND
+48V and GND
+for fan and
+for Marking Head
+G55/ TouchUS
+
+The Chameleon Board - Overview 1
+EEPROM
+FPGA
+MIC Connector
+DSP
+QSeven
+SD - Card
+(only used on
+2 TCP/IP
+Single Core
+Ports
+version)
+USB - for Rescue
+Stick only
+2 Serial
+HDMI – for
+Ports
+TU430 only!!!
+(only use
+lower port)
+Micro USB –
+not used
+Customer
+Interface
+X28 Power
+
+EEPROM
+Stores the System Database
+Chameleon Board - Overview 2
+- Type of lens
+- L aser type
+- O perating hours
+Ethernet Switch
+- C onfiguration data
+DSP (Digital Signal Processor )
+- 600MHz clock frequency
+EEPROM
+DSP
+FPGA - Laser source control
+- Marking trigger process
+- Marking head control
+- Marking process
+FPGA (Field Programmable Gate Array) :
+The bridge between Q7 and DSP
+The FPGA is the Interface to :
+Q7
+- Marking heads (HIC)
+- Laserbeam source (LIC)
+- PCI express
+- SRAM
+- CAN - Bus
+- Customer Interface
+Q7 Specification:
+Communication to customer interface
+SVG database is stored in the Q7 module
+- Intel ATOM processor
+- 1GB Ram/1.46 GHz
+Q7 is the gateway to:
+- USB
+- Serial Port
+- SD - Card
+- EEPROM
+- Ethernet
+
+Chameleon Board - Overview 3
+DIP - switch No.1 to ON :
+X23 A&B
+temporary IP - address
+Two Ethernet Connectors
+192.168.1.1 is generated
+Reset
+DIP Switch
+X31 A&B
+RS - 232
+ports
+HIC
+LIC
+X3
+Customer
+Keypad &
+Interface
+Keyswitch
+Connector
+X28
+Power Supply
+X18 X6
+connector
+CPD/SPM Connectors
+
+Three Main Versions of Chameleon Board
+Multi Core Industrial
+Single Core Chameleon Multi Core (MC) Chameleon
+Protocols (MCIP)
+Chameleon
+Discontinued; use
+Available as spare
+Available as spare
+MCIP version
+Uses 1 GB SD Card
+Uses Flash on Q7 (SD slot present, but not used)
+Requires CMark v. 3.x
+Requires CMark v. 4.x (includes TCS+ User Interface)
+
+Three Main Versions of Chameleon Board
+Single Core Chameleon Multi - Core and Multi - Core Industrial
+Protocols Chameleon
+• Uses SD Card (1 GB only!)
+• CMark v. 3.x • Uses Flash on Q7 (does not use SD)
+• TCS user interface is installed on • CMark v. 4.x
+a PC (if used) • Has TCS+ user interface as part of
+• CMark/SARs can be loaded using: CMark automatically
+XMarkCopyTool , Web Interface, or • CMark/SARs can only be loaded and
+Copy/Paste backed up via Web Interface or TCS+
+• Reload or replace SD card if can’t (CMark 4.7 or newer only)
+boot. • Create and use Rescue Stick to try to
+recover if can’t boot.
+• Only difference between MC and MCIP
+is MCIP has connector for MIC board.
+MCIP needed for EtherNet /IP or
+PROFINET functionality.
+
+Necessary to boot process
+The Backup - Battery
+The battery buffers the following dynamic data, in the SRAM (128 KB) on the
+Chameleon board:
+• The last used template
+• Dynamic datas for all templates (e.g.: serial numbers, variables, shift codes, etc.)
+• Time and date (the clock even runs if the laser is switched off)
+The lifetime of the
+battery is more than
+Battery
+1 year, typical 3 years.
+QSeven
+QSeven
+SRAM
+
+The Voltage Jumpers – X19 + X20
+X20: green
+X19: yellow
+
+Principle Wiring
+Customer Interface Supply Options
+X19 X20
+Power Supply - X28
+1 - 2 1 - 2 Internal Supply 24V
+2 - 4 1 - 2 Internal Supply 12V
+2 - 3 2 - 3 External Supply 12…24V (min 12V – 5% = 11.4V)
+24V
+Stepdown
+12V
+12/24V EXT
+GND SYS
+GND EXT
+External loads max. 250mA!
+
+Pin: Name: Direction: Description:
+The Power Supply Connector - X28
+24V for supply unit fan and
+X28.1 CHAM_24V_SWITCH OUT
+G55/ TouchUS
+CHAM_24V_SWITCH_ GND for supply unit fan or
+Default Connections:
+X28.2
+GND G55/ TouchUS
+Pin 01+02 : Chameleon 24V switch to fan/G55
+The system can be started remotely
+Pin 06+12 : 48V to CP - Light board
+by a pulse from X28.5. If
+Pin 10+11 : Chameleon Power Supply
+permanently connected to X28.5
+X28.3 Ext_Startup IN
+system boots automatically after Pin 13+14 : Laser Power Supply Control
+mains is connected. No connection
+to 24 V Ext allowed.
+External startup: Pin 3 - 5
+X28.4 GND GND
+Customer can boot the system
+Output terminals of 24V of standby
+remotely, by applying a pulse of
+power supply. Not connection to
+X28.5 24V_STDBY OUT
+24V_STDBY here.
+24V Ext allowed if CI should be
+isolated. By using the autostart bridge on X28.3
+GND for Head (No customer
+and X28.5, the system boots up
+X28.6 HEAD_GND OUT
+connection allowed) Wire #6
+automatically, after switching mains and
+External Power Supply 12 - 24V Input from customer to
+X28.7 IN never powers down after shutdown
+12 - 24V supply power for Customer Interface
+sequence (reboots). NO EXT 24V
+External Power Supply GND Input from customer to supply
+X28.8 IN
+Allowed.
+GND ground for Customer Interface
+24V power supply for Chameleon (if
+External Power 12V/24V: Pins 07 & 08
+X28.9 24V_STDBY IN Chameleon supplied by 24V). No
+12V/24V and GND from customer to
+customer connection allowed.
+GND for Chameleon (no customer supply CI
+X28.10 PSU1_GND IN
+connection allowed)
+Important :
+48V power supply for Chameleon (if
+While supplying external 12V/24V, the
+X28.11 PSU1_48V IN Chameleon supplied by 24V). No
+complete customer interface is potential
+customer connection allowed.
+free! Also the connectors for incremental
+48V switched marking head supply
+encoders and light barriers !
+voltage if Chameleon supplied by
+X28.12 48V_HEAD OUT
+48V. No customer connection
+allowed. Wire #5 Laser Power Supply Control: Pin 13 - 14
+Voltage from laser power supply
+The Chameleon Board monitors if laser voltage
+X28.13 LASER Voltage IN
+(from Terminal Block)
+(30V/48V/50V depends on generation and model) are
+X28.14 LASER GND IN GND laser supply (from Terminal
+switched to the beam source
+Block)
+
+D77 SDIO activity (not active)
+D66 SDIO overload
+D52 DSP power
+D76 SDIO power
+D33 DSP alive
+D57 Lase
+D56 Vector
+D55 Trigger
+D54 Marking
+D75 WDOG activity
+D18 Encoder ChA Status
+D2 Encoder ChB Status
+D31 Reserved
+D4 Encoder Index Status
+D6 Trigger Sensor Status
+D8 On if Trig Enable is on (bridged)
+D22 Reserved
+D20 On if Trig Connected
+D16 On if Encoder Connected
+D70 24 V present
+D71 5 V present
+D72 3.3 V present
+D73 2.5 V present
+D74 1.2 V present
+D47 48 V present
+D11 12V present
+K1
+D35 CI 24V Present
+IC72
+
+L aser I nterface C ontroller – LIC - CO
+2
+
+L aser I nterface C ontroller – LIC - CO
+2
+▪ Same LIC - CO2 board for 10W, 30W and 60 Watt CO2 laser tubes
+▪ Different LIC - CO2 LED behavior for each tube
+
+L aser I nterface C ontroller – LIC - CO
+2
+10 Watt Laser Tubes
+
+L aser I nterface C ontroller – LIC - CO
+2
+30 Watt Laser Tubes
+
+L aser I nterface C ontroller – LIC - CO
+2
+60 Watt Laser Tubes
+
+H ead I nterface C ontroller - HIC - CP Light or HIC_CPA
+HIC is an interface board between Chameleon and CP - Light
+Two versions of HIC can be in 3x40 lasers:
+• Older – HIC - CP Light (Green board)
+• Newer – HIC - CPA (White board)
+➢ Same purpose/functionality
+➢ Three connectors for cables, but only two are used in 3x40 laser
+➢ Shutter and LVDS cables connect to CP - Light board from HIC
+➢ HIC_CPA can be used in most Chameleon - based lasers
+Shutter LVDS
+
+H ead I nterface C ontroller - LEDs
+HIC CP (green board) LEDs: HIC _CPA (white board) LEDs:
+D1 LED green, Shutter is closed D1 LED green, Shutter is closed
+D2 LED orange, Shutter is open D4 LED yellow, Shutter is open
+
+MIC (Miscellaneous Interface Controller)
+Available as a factory or field upgrade. MIC board can only be used with
+Chameleon MCIP version!!! MIC cannot be used with earlier versions of
+Chameleon (connector for MIC not on earlier Chameleons).
+Two versions with different part numbers:
+• EtherNet /IP (Blue sticker)
+• PROFINET (Yellow sticker)
+• Not interchangeable.
+• Firmware/software is on MIC and cannot be changed field.
+• MIC must be enabled through Web Interface.
+• RJ45 ports on MIC for PROFINET and EtherNet /IP only!
+• Use Chameleon RJ45 ports for TCS+, SmartGraph , etc.
+• Requires minimum version CMark 4.5
+
+Umbilical
+3140/3340/
+3640
+3130/3330
+
+Umbilical – Supply Unit Side
+HIC (LVDS)
+HIC (Shutter)
+Signal cables in
+umbilical
+LIC (Laser Signals)
+Voltage
+30V (from Term block)
+cables in
+A1
+A2
+umbilical
+GND (from Term block)
+A4
+Marking Head 48V and A3
+GND – from X28
+
+Laser Harness - (From umbilical to tube and CP - Light)
+Power (to CP - Light/ Galvos )
+Shutter (to CP - Light)
+Cables on both
+10W and 30W
+models
+LVDS (to CP - Light)
+Laser cables on 30W
+Laser tube signals
+Laser tube signals
+Laser tube signals
+Laser tube power
+Laser tube power
+Laser cables on 10W
+Two laser harnesses for 3340: Regular and Vi - version
+(2 - pole power for V30/ 3 - pole for Vi30 version)
+
+Laser Harness - (From umbilical to tube and CP - Light)
+Power (to CP - Light/ Galvos )
+Cables on
+10W, 30W, 60W Shutter (to CP - Light)
+models
+LVDS (to CP - Light)
+Laser tube signals
+Laser tube power
+Laser cables on 60W
+Connectors
+for fan and
+FSPC
+
+System Hardware
+Laser Head
+
+Laser Head
+Cooling Fan
+Beam
+(IP54 only)
+Expander
+Laser Source
+CP - Light Board
+
+Laser Head - Laser Tube
+New in
+2020
+30 Watt – Vi30
+30 Watt – V30
+10 Watt
+
+3340 – V30 or Vi30??
+V30
+Available in 10.6, 10.2, and 9.3 micron wavelengths
+Not interchangeable! Both V30 and Vi30 available as spares!
+Vi30
+
+V30 and Vi30 Dependencies
+V30 Vi30
+• 48V/600 W PSU (AL - SP80581) turned up
+• 36V/600W PSU (AL - 75990) turned down to
+to) 48.5 - 49.1V based on umbilical length
+31 - 32V based on umbilical length (30V at
+(48V at tube)
+tube)
+• 48V fan (AL - SP80577) for cooling laser
+• 24V fan (AL - SP76070) for cooling laser
+tube (IP54 only)
+tube (IP54 only)
+• AL - 80826: Harness , Laser Head,
+• AL - 76115: Harness , Laser Head,
+30W,Internal, CO2 Laser Vi - Version (3 pole
+Internal,30W,CO2 Laser G3 (2 pole
+connector for tube power and fan connector
+connector for tube power and fan connector
+pins moved to pins 1 - 2)
+uses pins 1 - 3)
+Estimated life expectancy still 45,000 hours (ambient conditions and duty cycle
+dependent. Warranty on tube remains 2 years.
+Protection against damage: After key is turned, system compares laser type (and tube type)
+against code on CP - Light. Will not send power to tube if these codes don’t match. Important
+protection for customers with multiple 3340 generations who may swap supply units & laser heads.
+
+V30 and Vi30 - Software
+• CMark 4.7.5 required for Vi30.
+• Has additional setup in Web Interface
+and TCS+ (Service) to set Beam Source
+Type.
+• Shown in Laser Config and System
+Information tabs (Web Inter & TCS+) and
+VRS Dashboard
+• Compares Beam Source Type to code on
+CP - Light and shuts down power to
+source if codes don’t match.
+Errors generated when Beam Source
+Type and code on CP - Light are not
+matched include: E19512: Wrong
+System Config, E00107: Wrong
+Configuration, and possibly E00212
+Wrong LIC Detected.
+
+Laser Tube 3640 Only
+Shutter
+Temp
+Only LASE LED is useful.
+(Blue)
+(Green/Red)
+Interlock
+Ready Lase
+Otherwise all LEDs should
+(Green/Red)
+(Yellow) (Red)
+be ON or OFF
+Interlock & Shutter are
+internal to tube and
+monitored here
+Control
+DC
+I/ Os
+Power
+Normal Conditions
+Marking = All LEDs On
+Not Marking (no error) = LASE Off
+Error = All LEDs Off
+
+Laser Tubes
+• Synrad 10 Watt (48 - Series)
+– 10.6 micron wavelength (standard)
+– 9.3 micron wavelength (optional)
+• Synrad 30 Watt and 60 Watt (V30 or Vi30, and ti60 Series)
+– 10.6 micron wavelength (standard)
+– 9.3 micron wavelength (optional)
+– 10.2 micron wavelength (optional)
+IP 54 or IP 65 available on both 10/30/60 Watt
+
+PET Package Marking
+10.6 µm
+9.3 µm
+Power 8 W 5 W
+Notice: for PET marking (9.3 µm & 10.6 µm)
+ special exhaust system needed
+➔ clogging of filters ➔ ’ PET - type’ exhaust
+Pfeufer 03.09.05
+
+Laser Wavelength Effects
+Laminated Cardboard Cartons
+10.2 versus 10.6 micron
+Pfeufer 03.09.05
+
+IP 54 and IP 65
+IP 54 – Bigger fan on 3640 than
+3140/3340
+IP 65 – New air guidance (3640)
+
+Laser Head – 3640 Fan Speed Control (FSPC)
+Fan Speed Control Board
+• Plugs into DB9 on side of laser tube
+• Controls fan speed for cooling
+• Contains power from tube, signals to fan, and signal from
+temperature sensor mounted to right of board.
+
+What is the Beam Expander?
+Without a beam expander the spot size is larger and energy is spread out unevenly within the spot.
+f
+D
+2wo
+d
+
+
+To concentrate energy a simple trick is to expand the beam through two lenses one of which is
+negative. This device called a "Galilean Beam Expander” allows us to expand by about 5 times the
+diameter of the beam emerging from the laser tube. The result is an almost collimated beam with
+significant reduction of the spot in the focal point.
+f
+D
+2wo
+d
+
+
+
+
+Laser Tube
+
+
+Beam - expander
+The quality of the beam (BPP) is an invariable system and remains constant throughout the optical path
+
+Beam Expander
+Expanders for 3640 are different than for other CO2 models
+Do not use other expanders in 3640 or damage may occur!!!
+Do not use 3640 beam expanders in previous models
+▪ 3140/3340 have same beam expanders (no update)
+▪ 3640 beam expanders are different
+-- One of the lenses inside beam expander tilted to reduce back reflection
+(except 5x beam expander – Remains same from 3340 – SHC150 head)
+-- Lenses in beam expanders for 3640 have broadband coating
+
+Beam Expanders – Side By Side Comparison
+
+The CP - Light (front view)
+Marking Head Controller Card
+Error Diagnostic
+LEDs
+
+The CP - Light
+(Generals)
+Marking Head Controller Card
+▪ PWM (Pulse Width Modulation) driver circuits for x - and y - mirrors replace
+the comparator circuit from the FM board
+▪ CP - Light and Galvos are replaced as a set on all marking heads (change
+from previous SHC60)
+▪ Paired with galvo set in manufacturing. Never break up set (galvos/CP -
+Light). Always changed as a set and ordered as one part.
+▪ Programmed to prevent cross - connection of 10/30W heads with 60W
+supply unit. Causes fault if supply unit sees code on CP - Light for wrong
+laser type so that damage does not occur (higher Wattage laser PSU in
+3340 with Vi30 and in 3640). Written at first boot of CP - Light in laser. Code
+cannot be reset unless CMark 4.9 or newer!
+
+CP - Light versus CP - Light2 and 4
+▪ Three versions of CP - Light
+Green = CP - Light
+Must be paired with SHCxxC
+marking heads
+Blue = CP - Light 2 or CP - Light4
+Must be paired with SHCxxD (CP - Light2)
+or SHCxxE (CP - Light4) marking heads.
+CP - Light4 has higher capacity EEPROM.
+
+The CP - Light - Board (front view)
+2 PWM Circuit Drivers
+JTAG for debugging
+on the rear side of board
+Power +48V
+Pilot Laser
+X - Mirror current
+(X3)
+(X7)
+Y - Mirror current
+CAT7 Cable (X9)
+from HIC
+Vector signals
+(LVDS)
+Shutter ( Function )
+Control from HIC
+X - Y - Mirror feedback for
+(X1)
+EEPROM
+Interlock - / Shutterlock - State Emission LED
+(contains tuning for
+(X8 and X10) (X2)
+specific galvo set)
+
+The CP - Light - Board
+Error diagnostic LED‘s
+Board voltages (Green)
+Communication Error
+(Red if comms error -
+CAT5 cable)
+Heartbeat
+(CPU is alive
+OTW
+if blinking green)
+(Red if PWM Driver
+is overtemperature)
+Fault
+Done
+Fault PWM
+(Red is Marking
+(Green if FPGA
+(Red if PWM Driver
+head error)
+is programmed)
+has an error)
+
+System Hardware
+Marking Head
+
+Marking Heads
+▪ SHC60c/SHC60d/SHC60e
+▪ SHC100c/SHC100d/SHC100e
+▪ SHC120c
+▪ SHC150c (3340 and 3640 only)
+• Larger mark fields (400mm, 500mm and 600 mm lenses)
+• Wide web applications are target
+Note: SHCxxC , SHCxxD and SHCxxE marking head types for 60 and 100.
+Important to know for spares ordering!!!
+Different galvos/CP - Light board and marking head cables for “C”, “D” and “E”
+
+Identification of marking head type
+Ways to tell marking head generation:
+• Component combination (preferred)
+• Software
+Marking Head Type CP - Light Galvo Connector Additional Notes:
+Board Color Color (on cable)
+SHC60C/SHC100C Green Black Galvo block open at top; galvo
+mirrors visible from top
+SHC60D/SHC100D Blue White Galvo block closed at top; galvo
+mirrors not visible from top
+SHC60E/SHC100E Blue Black Galvo block closed at top; galvo
+mirrors not visible from top
+Marking Head Type in Web Interface/ SmartGraph /TCS+/etc.
+▪ SHC60c or SHC100c
+Upgrade kits for Type E available. Includes:
+galvos/CP - Light and appropriate marking
+▪ SHC60d or SHC100d
+head cables (4 lengths).
+▪ SHC60e or SHC100e
+Marking Head Type always defaults to SHC60c when no marking had communication (no matter the
+actual type) in CMark older than 4.9.x so this is the least preferred method to determine generation ).
+Use hardware identification whenever possible for most accurate identification.
+Remember: Only 3x40 - SHC60 and SHC100 affected; SHC120 and SHC150 remain the
+same. No 3x20/3x30 lasers affected.
+
+Marking Head Cables - Types
+Cable Type Fits Marking Heads Board Has
+Thermistor?
+A Old (3x20/3x30) SHC60 Green - FM Board No
+B (3x20/3x30) SHC100/SHC120/ Green – FM Board No
+(3x40) SHC100c/SHC120c Green CP - Light
+C (3340/3640) SHC150c Green CP - Light No
+D (3x40) SHC60c Green CP - Light No
+(Cable is obsolete; use Cable
+Type L for replacement)
+E (3x40) SHC60d Blue CP - Light2 Yes
+G (3x40) SHC100d Blue CP - Light2 Yes
+L (3x40) SHC60e Blue CP - Light4 Yes
+(Use also for SHC60c heads)
+M (3x40) SHC100e Blue CP - Light4 Yes
+(Use also for SHC100c heads)
+Marking head cables are available in different lengths to accommodate use of
+BTUs and BUSs
+Be aware of multiple generations of SHC60 and SHC100 cables; Galvo connectors are
+different between generations of marking heads.
+
+Marking Head Cables - Types
+Change in marking head cables
+How do I tell them
+apart??
+Galvo connectors
+• Galvo connector color
+• Is thermistor present?
+
+Marking Head Cable & Galvo Block
+Type E Marking Head
+Type C Marking Head
+Type D Marking Head
+• Black galvo connectors on
+• Black galvo connectors on
+• White galvo connectors on
+cable
+cable
+cable
+• Closed galvo block (mirrors
+• Open galvo block (mirrors
+• Closed galvo block (mirrors
+not visible from top)
+visible from top).
+not visible from top)
+• Thermistor
+• No thermistor
+• Thermistor
+
+Marking Head Cables
+
+Marking Head – Interior 3140/3340
+Emissions
+LED
+X Galvo /mirror
+connectors
+Error will occur and
+laser power not Y Galvo /mirror
+possible if either of 2
+Emission LEDs fail
+
+Marking Heads - 3640
+• Metal parts inside head protect cables and
+pilot laser from any damaging back reflection.
+• Change from 3140/3340 marking heads.
+• Type D & E marking heads for all 3x40 models
+have redesigned galvo block with top enclosed
+to protect cables. No more separate cover
+piece (picture on right).
+
+Marking Head Lenses
+Broadband coated lenses will are now the
+only lenses available for all 10/30/60 Watt
+lasers. Old lenses (non - broadband) for
+3140/3340 discontinued.
+• Lenses now have special broadband coating (Zinc Selenide internally)
+• Broadband coated lenses can be used in all previous models
+• “BBAR” notation in part description tells you it is “broadband anti -
+reflective”.
+• 3140/3340 lenses did not originally have broadband coating, but now do.
+• 3640 only has one generation; only broadband.
+• Prevents back reflection of beam from lens back into marking head.
+Lenses from previous models (including 3140/3340) must not be used in
+3640!!! Danger of back reflection!
+
+The Influence of the Focal Length I
+Depth of Focus means that we can stay in focus even on surfaces not perfectly flat. But we must
+verify that the decrease in irradiance, resulting from the focal spot, is not likely to be below the
+threshold of interaction with the material preventing proper and well - contrasted markings.
+For example, moving from 100 to 300 focus, the irradiance is reduced to 15% of that available,
+with focal 100th The laser spot is 3 times as large, but the depth of field increases by 6 times.
+
+Operational Differences
+
+To achieve best print and avoid damage:
+Ensure lens is clean!!!
+• Double the power means dirty lens may cause
+reflection back into head or create burn marks on
+lenses
+• Clean all surfaces of lenses
+• Important to have good lens cleaning habits
+Reflection from substrate
+• Some materials with high reflectance should be
+avoided or at least not marked where beam hits
+surface perpendicularly
+• Metallized plastic/paper and foil may have higher
+back reflection
+
+To achieve best print and avoid damage:
+If possible, avoid marking in center of mark field when head
+directly above product
+• Worst power is when beam hits surface perpendicularly
+Avoid Better
+Beam Beam
+
+Option: BTU and BUS
+BTU: B eam T urning U nit
+BUS: B eam U nit
+S hort
+
+4. Customer Interface
+Overview
+
+Connector Plate
+10 Cable Glands (Pass - Through)
+IP65 on all units (regardless of IP unit)
+
+The Chameleon Board - Customer Interface
+Input Specification (24V):
+Rated voltage 24V
+Current Input 2.5 mA
+Maximum INPUT Voltage level to still <=8.4 V
+be considered a LOW
+Minimum INPUT Voltage level to be >= 9.4 V
+considered a HIGH
+Max. frequency 200 Hz
+Important: If the customer interface is supplied internally, the load must not
+exceed 250 mA
+Output Specification (12V):
+Rated voltage 24 V/Push Pull (high and low activated)
+Max. output current 50 mA max. (short - circuit proof)
+
+The Chameleon Board - Customer Interface
+Maximum Frequencies
+Input/Output Max . Frequency
+General Inputs/Outputs (e.g. Start/Stop) 50 Hz
+Encoder 240 kHz
+Trigger 25 kHz
+
+The Customer Interface - X21
+Suction Control
+Pin Name Direction Active Description
+High/Low
+1 Exhaust Error In Low Monitors error from fume
+extractor. Bridge if not using.
+2 Suction On Out High Fume extractor can be
+activated remotely via this
+output. Activated on Laser
+Ready
+3 Filter Full In Low Filter status of fume extractor
+can be monitored via this input
+4 GND_CI -
+5 24V_CI -
+6 GND_CI -
+AD Oracle wiring:
+Pin 1: green (Exhaust Error)
+Default Bridges (when fume extractor is not connected):
+Pin 1 to 3: bridged
+Pin 1 to Pin 2: Exhaust Error to Suction On
+Pin 2: red (Suction On)
+Pin 3 to Pin 5: Filter Full to 24V
+Pin 5 : white ( 24V )
+Pin 4/6 : black (ground)
+
+The Customer Interface - X22
+Variable I/O
+Pin Direction Laser Control
+X22.1 IN None
+X22.2 OUT Laser Ready
+X22.3 IN None > Tied to 24V
+X22.4 OUT Marking
+X22.5 IN Start Marking
+X22.6 OUT Ready to Mark
+X22.7 IN Stop Marking (tied to
+24V if not used)
+Laser Ready:
+X22.8 OUT Shutter Closed
+Set when the system is in system state ‘‘Laser
+X22.9 IN None > Tied to 24V
+Ready‘‘ and no error occured.
+X22.10 GND_CI
+X22.11 24V_CI
+Default Bridges:
+X22.12 GND_CI Pin 3 to Pin 7: Input None to Stop Marking
+Pin 7 to Pin 9: Stop Marking to Input None
+Pin 9 to Pin11: Input None to 24V
+
+The Customer Interface - X25
+Line Interface Connector (Encoder and Trigger)
+Pin: Name: Direction: Description:
+X25.1 CHA IN Input for encoder’s first track
+X25.2 CI line OUT Supply pin for encoder
+supply 0
+X25.3 CHB IN Input for encoder’s second track
+X25.4 CI line OUT Supply pin for Trigger
+System Senses Encoder
+supply 1
+and/or Product Detect.
+X25.5 Index IN Input for encoder index track
+If selected in software,
+but if not connected in
+X25.6 GND_CI - Use this ground for Encoder
+hardware an error will
+X25.7 Trigger IN Trigger (product detect) input
+occur.
+X25.8 GND_CI - Use this ground for Trigger
+CMark 3.4 or newer: Turn off
+error monitoring in Web
+X25.9 Trigger IN Bridge to X25.12. Must have
+Interface.
+Enable 12V/24V to allow trigger.
+Older Cmark : If using dry
+X25.10 GND_CI -
+contact use a 4.7 KOhm
+X25.11 CI line 5 - reserved resistor across pins 4 - 8 or 2 -
+6 to create load for External
+X25.12 24V_CI 24V supply interface Trigger/Encoder setup
+
+The Customer Interface - X27
+Variable I/O
+Pin: Direction: Description:
+X27.1 IN Shutdown
+X27.2 OUT PC Connected
+X27.3 IN None
+X27.4 OUT Good
+X27.5 IN None
+X27.6 OUT Bad
+Default Bridge:
+X27.7 - Bridged to X33.3 to
+enable CPD and FASS Pin 7 to X33 Pin 3: Default bridge to
+enable CPD and FASS
+X27.8 OUT None
+X27.9 IN None
+X27.10 GND_CI
+X27.11 +24V_CI
+X27.12 GND_CI
+
+The Customer Interface - X29
+Variable I/O
+Pin Direction Description
+X29.1 IN Error Status Customer (active
+low - tie high if not used)
+X29.2 OUT Error
+X29.3 IN Error Confirm
+X29.4 OUT System Ready
+X29.5 IN None
+System Ready Output behavior is based
+X29.6 OUT Ack _ Job_Selection
+on the System Integration Mode setting
+X29.7 24V_CI
+in Web Interface:
+X29.8 GND_CI
+Stand alone: System Ready is high when
+X29.9 24V_CI
+the laser has finished the booting sequence.
+X29.10 GND_CI
+Laser with Smart Graph : System Ready
+high when the laser has finished the booting
+Default Bridge:
+sequence and the PC with SmartGraph is
+booted and the connection is established
+Pin 1 to Pin 7: Error Status Customer to 24V
+
+The Customer Interface - X30
+Variable I/O (external template selection )
+Pin: Direction: Description:
+X30.1 IN JobSelect0
+X30.2 IN JobSelect1
+X30.3 IN JobSelect2
+X30.4 IN JobSelect3
+X30.5 IN JobSelect4
+X30.6 IN JobSelect5
+X30.7 IN JobSelect6
+X30.8 IN JobSelect7
+X30.9 IN JobSelectStrobe
+X30.10 GND_CI
+X30.11 +24V_CI
+X30.12 GND_CI
+
+The Customer Interface - X33
+Internal Connection
+Do not connect Interlock - and
+Do not remove
+Shutterlock - contacts at X33.
+any bridges
+Use X9 on the CPD - board!!!
+External Keyswitch can be used for
+connection of remote keyswitch
+Default Bridges (Do not remove):
+Pin 1 to Pin 8: External keyswitch (Only bridge that can be removed )
+Pin 2 to Pin 6: Interlock (do not connect interlock here – connect on CPD)
+Pin 3 to X27 Pin 7: Default bridge to enable CPD and FASS
+
+The Customer Interface
+Default Bridges
+Pins: Description:
+X25.9 - 12 Trigger Enable tied to 24V
+X27.7 - X33.3 Enables CPD and FASS
+X21.1 - 2 Exhaust Error to Suction On (24V output)
+X21.3 - 5 Filter Full tied to 24V
+X29 .1 - 7 Error Status Customer tied to 24V
+X22.3 - 7 Internal use
+X22.7 - 9 Stop marking tied to 24V
+X22.9 - 11 Internal use
+X33.1 - 8 External key switch (Input to Output)
+X33.2 - 6 Internal Use
+
+Standard
+Wiring 1
+
+Standard wiring 2
+
+VJ Quick Connectors
+
+Overview of Quick Connectors - External
+Trigger
+Encoder
+Safety
+Cable
+(Interlock)
+Gland
+Uses CIJ or
+LPA beacon
+Beacon
+RS232
+Extractor
+
+Overview of Quick Connectors - Internal
+
+Overview of Quick Connectors - Internal
+Excludes Safety
+System
+
+Overview of Quick Connectors - Internal
+Safety System
+(Interlock/ Shutterlock )
+
+5. The Safety Modules
+3140/3340
+- SPM only (default on newer models)
+- CPD only (default on older models)
+- CPD and FASS (optional)
+
+Interlock versus Shutterlock
+Interlock
+Shutterlock
+• Shutter closes
+• Shutter closes
+• System powers off supply to
+• Laser source remains powered
+laser
+• System reports ‘ Shutterlock
+• Emission LED “OFF”
+Open’
+• System reports “Interlock Open”
+• Emission LED ‘ON’
+• Without FASS
+• Resets when door is closed
+- 5 second delay between door
+(no reset signal necessary)
+close and laser power on again
+• With FASS
+• Use in applications where door
+- Requires reset signal before
+will be opened/closed
+can continue
+frequently
+• Use in Mark on the Fly
+applications
+
+Safety System Summary
+3140/3340
+• SPM (white) replaced CPD3 as the standard.
+• SPM has jumper on X9 pins 1 - 23. Without this jumper laser will always show
+Interlock Open after first time door opened. CPD3 cannot have this jumper or it
+will fault.
+• Use mechanical switch with SPM or damage to contacts in switches will occur.
+Solid State/Reed switches are not recommended.
+• Be careful when using single pole switch. If not wired correctly then will always
+show Interlock Open!!!
+• CPD3+FASS still used when Performance Level Rating required.
+3640
+• U ses SPM - 16A (red) as standard ( not the same as SPM!!)
+• SPM - 16A has jumper on X9 pins 1 - 23. Without this jumper laser will always show
+Interlock Open after first time door opened.
+• Use mechanical switch with SPM - 16 - A or damage to contacts in switches will
+occur. Solid State/Reed switches are not recommended.
+• Be careful when using single pole switch. If not wired correctly then will always
+show Interlock Open!!!
+• SPM - 16A - FASS (blue) + FASS board used when Performance Level Rating
+required.
+
+Safety Options – 3140/3340
+Standard – SPM (Safety Power Module)
+Requires jumper on
+X.9 pins 1 - 23!!!!
+• Shutterlock - No Performance Level
+• Interlock (no special parts) – No Performance Level
+• Interlock with specific parts - Performance Level „d“
+• O nly if mechanical positive break interlock NC - contacts, single
+screened interlock wires (cross wire short detection), and push button
+manual reset button are used. Any deviation from this results in no
+performance level.
+Older model 3140/3340 had
+• No possibility to add FASS
+CPD3 as standard.
+• Different SPM than on 3640 models!!
+All spares still available.
+Optional – CPD3 + FASS
+Following performance levels achieved only with mechanical positive break NC -
+contacts and single screened wires (cross wire short detection)
+• Performance Level „d“ for Door (Shutterlock)
+• Performance Level „e“ for Emergency Circuit (Interlock with
+manual reset switch)
+Needs reset switch if wired as
+Interlock (Emergency Circuit)!
+
+SPM (Safety Power Module)
+K1/K2: Interlock channel 1 and 2 (connected doors closed or jumpers in place)
+K3/K4: Chameleon board (software/logic/shutter/emissions LEDs)
+K5: Part of error detection circuit for Performance Level D (detects damage
+to external wiring of interlock system)
+
+SPM LEDs
+LED Name Color
+D5 Laser Enabled Green (ON) Laser is enabled (both Interlock circuits closed)
+D6 Shutter Enabled Yellow (ON) Shutter is enabled (both Shutterlock circuits are
+closed)
+D7 Shutter Closed Blue (ON) Shutter is closed (“Shutter is Closed”=High)
+D8 Shutter Command Blue (OFF) Close shutter command (“Open Shutter”=Low)
+D9 Laser Power Red (ON) Laser power supply is on
+Fuse (F1) – 1 Amp: Blows when too much current on interlock/ shutterlock to
+detect damage of external wiring. Not a system power fuse.
+
+Wiring SPM (Double Pole Switch)
+Default Jumpers (X9)
+1 - 23: Interlock Reset
+5 - 16: Shutterlock 2
+7 - 14: Shutterlock 1
+15 - 19: Interlock 2
+17 - 21: Interlock 1
+10 - 12: Reserved
+22 - 24: Reserved
+Interlock Reset (1 - 23):
+Can be either jumpered or
+put reset switch in place.
+Reset switch must be
+open when booting or fatal
+error will occur.
+
+Wiring SPM (Single Pole Switch - Interlock)
+If using single pole switch, replace one Interlock
+jumper and put in switch. Then jumper from each
+leg of switch to second channel. If only replace
+one jumper with switch and leave second jumper
+“as is” then once you open door you will remain in
+Interlock Open state forever.
+Failure to wire Interlock with single pole switch as shown
+will result in unclearable Interlock Open!!!
+Also need
+jumper from 1 - 23
+(not shown)
+Interlock
+Wiring
+
+CPD3 Board
+• Used as standard in older model
+3140/3340
+- or -
+• In all generations of 3140/3340 in
+combination with FASS when
+Performance Level needed
+
+CPD3 - Cobra Power Distribution
+- CPD is available as stand alone (older 3140/3340) or with FASS (Configurable in the
+Laser Web Interface)
+- With CPD stand alone, doesn‘t provide an emergency stop
+- The customer has to provide an emergency switch and an EM release button , if he wants
+to use this function together with the FASS board .
+- All power supplies are switched on, on the primary side via X4. X5 is not connected.
+- No noise filter
+X4
+X5
+X8
+Input/Output
+X10 to FASS
+Input/Output
+(optional)
+to
+Chameleon X2
+X7
+X6
+Mains
+
+CPD3 - Cobra Power Distribution (CPD only)
+- K1+2: Reacts on interlock circuit and switches off the laser beam source (Driver = CPD/FASS)
+-- Interlock important
+- K3: Reacts on a safety logic (when the signal ‘safe laser power on‘ is missing, K3 switches
+off the laser beam source too) (Driver = Chameleon).
+-- Shutter and emissions LEDs important.
+- K4+8: No function on 3140/3340
+8
+1
+4
+3
+2
+
+CPD - Cobra Power Distribution
+Indicator LEDs
+D10: Status K3 Release Laser Supply
+- > Switched by Software/Chameleon
+D4: Status K2 Release Laser Supply
+- > Switched by FASS/Emergency Switches
+D3: Status K1 Release Laser Supply
+- > Switched by FASS/Emergency Switches
+D25: 5V Status
+- > ON if 5V generated
+
+CPD - Cobra Power Distribution
+The diagnostic LEDs – Safety Circuit
+Diagnostic LEDs
+If CPD only is connected:
+D6, D12, D19, D22 are on,D8 is
+flashing with 20Hz.
+X9 Connector (24 pins)
+D13 & D18 represent shutter
+for Door circuits
+status.
+If FASS is connected:
+All diagnostic LEDs are switched
+on when the system is ready and
+D8 22 19 18 13 12 6 5
+all the relay contacts are closed.
+
+CPD - Cobra Power Distribution
+The Diagnostic LEDs – Safety Circuit
+Name: FASS: CPD_Only CPD2&3
+Safety Status Input Emergency Circuit
+D5: FASS_K1_K2 Green Status Interlock (INTERLOCK OPEN)
+1 & 2
+Status Input Shutterlock Status
+D6: FASS_K3 Yellow Safety Status Input Door Circuit 1
+(SHUTTERLOCK1 CLOSED)
+Status Input Shutterlock Status
+D12: FASS_K4 Yellow Safety Status Input Door Circuit 2
+(SHUTTERLOCK2 CLOSED)
+D13: FASS_K5 Blue Safety Status Input Shutter 1 (Control) Shutter Control (OPEN SHUTTER)
+D18: FASS_K6 Blue Safety Status Input Shutter 2 (Status) Shutter Status (SHUTTER IS CLOSED)
+Safety Status Input Suction 1
+D19: FASS_K7 Red permanent ON
+(Control)
+D22: FASS_K8 Red Safety Status Input Suction 2 (Status) permanent ON
+Permanent On
+D8: FASS_DIAG White Flashing with 20Hz (13% Dutycycle )
+Blinkcodes in Error condition (Chapter
+4.9)
+Diagnostic LEDs are reacting on signals from FASS.
+D8 is able to send out flashing codes. The following list
+displays all error possibilities. In next CMark versions,
+these errors, will be displayed in SmartGraph messages.
+D8 22 19 18 13 12 6 5
+CPD only D19 and D22 are switched on permanentely.
+
+Optional: The FASS - board
+Follower of K40
+X10a
+X10
+FASS – Optional safety controller used with CPD
+Following signals are monitored by FASS:
+• Emergency switch 2 Channels with contact extension and cross circuit detection
+• Door circuit 2 Channels with contact extension and cross circuit detection
+• Shutter signals (status and control)
+
+CPD - Cobra Power
+Distribution
+Connector X9 (CPD only)
+Double pole switch used
+System reaction when circuit open:
+Door1 (X9 Pin 7 - 14): Shutterlock Open
+Door2 (X9 Pin 5 - 16): Shutterlock Open
+EM1 (X9 Pin 17 - 21) : Interlock Open
+EM2 (X9 Pin 15 - 19) : Interlock Open
+Default bridges:
+(If no interlock connected)
+Pin 05 - 16: Shutterlock bridge 1
+Pin 07 - 14: Shutterlock bridge 2
+Pin 10 - 12: Door feedback bridge
+Pin 15 - 19: Interlock bridge 1
+Pin 17 - 21: Interlock bridge 2
+Pin 22 - 24: Emergency Reset bridge
+Default
+bridges
+
+CPD only – Using Single Pole Switch
+The Connector X9
+Wiring single pole switch for:
+(1) Shutterlock or
+(2) Interlock
+Default bridges
+
+Wiring CPD (Single Pole Switch - Interlock)
+If using single pole switch, replace one Interlock
+jumper and put in switch. Then jumper from
+each leg of switch to second channel. If only
+replace one jumper with switch and leave
+second jumper “as is” then you will hear clicking
+noise while Interlock Open.
+Failure to wire Interlock with single pole switch as shown
+will result in long term damage to CPD!!!
+Interlock
+Wiring
+
+CPD + FASS
+The Connector X9 (FASS connected)
+System reaction:
+Door1/2: Shutterlock Open
+EM1/2: Interlock Open (has to be reset with S2)
+Switch 2 : Must close to reset after
+interlock open condition is corrected.
+Not necessary after Shutterlock open
+Default Bridges
+10 - 12 Door Feedback
+22 - 24 Emergency Feedback
+5 - 16 Door 2 ( Shutterlock )
+7 - 14 Door 1 ( Shutterlock )
+15 - 19 Emergency 2 (Interlock)
+17 - 21 Emergency 1 (Interlock)
+
+CPD - Cobra Power Distribution
+The Connector X9 (FASS connected)
+System reaction
+Only active when customer uses the
+Door1/2: Shutterlock Open
+contact extension with additional relays
+EM1/2 : Emergency Error
+(EM K10+K2 / Doors K30+K40).
+(has to be reset)
+
+Safety Power Modules
+3640 Only
+- SPM – 16A (default)
+- SPM – 16A - FASS (optional)
+
+SPM – Safety Power Module
+Two Different SPM boards:
+Requires jumper on
+• SPM - 16A
+X9 pins 1 - 23!!!!
+• No Performance Level rating for Shutterlock
+• Performance Level „d“ for Interlock ( only if specified switch and reset used)
+• No possibility of expansion for FASS; connectors for FASS not on SPM - 16A
+• SPM - 16A - FASS
+• Optional
+Needs reset switch if wired as
+• Use with FASS board
+Interlock (Emergency Circuit)!
+• Performance Level „d“ for Door
+• Performance Level „e“ for Emergency Circuit
+
+SPM 16A
+• Stand alone Cables/Connectors
+for Chameleon
+• Red in color
+• 5 relays
+• No possibility to add FASS (board layout/components different)
+
+SPM 16A
+K1
+K4
+K2
+K3
+K5
+• K1 – Interlock driven
+• K2 – Interlock driven
+• K3 – Chameleon driven (software/logic/shutter)
+• K4 – Chameleon driven (software/logic/shutter)
+• K5 – Part of detection circuit for performance level D.
+-- Part of circuit for the harness to detect if external wiring is damaged.
+
+LEDs SPM - 16A – LEDs & Fuse
+Fuse (F1) – 500mA: Blows when too much current on interlock/ shutterlock
+to detect damage of external wiring. Not a system power fuse.
+LED Name Color When On
+D5 Laser Disabled Green Laser is disabled (both interlock circuits are
+open)
+D6 Shutter Enabled Yellow Shutter can open (both shutterlock circuits are
+closed)
+D7 Shutter Closed Blue Shutter closed
+D8 Shutter Command Blue Open Shutter command
+D9 Laser Power Red Laser Power Supply is on
+
+Wiring to meet performance level
+(SPM - 16A only installed)
+Shutterlock (No Performance Level Rating)
+• No rated performance level
+• Use fused 24V outputs for Shutterlock on X9 as directed in sample wiring
+Interlock ( Performance Level “D”)
+• Performance Level “d” only if wired exactly as directed AND using exact parts
+(cable and switch) in sample wiring (Use Schmersal AZ 16 - 02ZVRK (min
+contact load 12 V / 5 mA) switch and shielded cable )
+• Must use 24V_fused output on X9 for Reset Switch to maintain Level D rating
+and to avoid errors which will result in Interlock Open status even when closed
+• Requires reset switch for Peformance Level “d” (use push button type).
+Interlock (No Performance Level Rating)
+• Wire using any MECHANICAL switch. Do not use solid state switch or damage
+may occur to contacts in switch.
+• Can jumper reset switch if performance level not needed.
+
+Wiring For Performance Level (SPM - 16A only installed - No FASS)
+Default Jumpers (X9)
+1 - 23: Interlock Reset
+5 - 16: Shutterlock 2
+7 - 14: Shutterlock 1
+15 - 19: Interlock 2
+17 - 21: Interlock 1
+10 - 12: Reserved (never remove)
+22 - 24: Reserved (never remove)
+• Must use Schmersal AZ - 16 -
+02ZVRK switch (need
+actuator too) and shielded
+cable
+• Paired screened cable
+recommended.
+• Must use reset switch for level
+“d”
+• Use of any other parts results
+in no performance level!!!
+
+Wiring SPM (Single Pole Switch - Interlock)
+If using single pole switch, replace one Interlock
+jumper and put in switch. Then jumper from each
+leg of switch to second channel. If only replace
+one jumper with switch and leave second jumper
+“as is” then once you open door you will remain in
+Interlock open forever.
+Failure to wire Interlock with single pole switch as shown
+will result in unclearable Interlock Open!!!
+Interlock
+Wiring
+Not shown: Jumper from 1 - 23
+
+Wiring for Performance Level D (SPM - 16A only installed - No FASS)
+Grounding bar is the aluminum sheet
+metal with “T” shapes between
+Chameleon and X9 connector.
+You can use these “T”s for strain relief
+and to make a shield/ground
+connection with cable ties.
+
+Wiring – No Performance Level Needed (SPM - 16A only installed - No FASS)
+Default Jumpers (X9)
+1 - 23: Interlock Reset
+5 - 16: Shutterlock 2
+7 - 14: Shutterlock 1
+15 - 19: Interlock 2
+17 - 21: Interlock 1
+10 - 12: Reserved (never remove)
+22 - 24: Reserved (never remove)
+• Always use mechanical, not
+solid state switch
+• Paired screened cable
+recommended
+• No reset switch necessary
+(jumper)
+
+SPM 16A – FASS
+Connectors for
+Chameleon
+Connectors
+for FASS
+• Optional
+• Blue in color
+• 4 relays
+• Must be used with FASS board
+
+SPM 16A – FASS
+K1
+K4
+K3
+K2
+• K1 – Interlock driven
+• K2 – Interlock driven
+• K3 – Chameleon driven (software/logic/shutter)
+• K4 – Chameleon driven (software/logic/shutter)
+K1/K2 must be closed before K3/K4 will energize. K3/K4 are switching the high
+inrush current of laser power supply.
+
+LEDs – SPM with FASS
+Fuse (F1) – 500mA: Polyswitch which will only become active if
+interlock wiring is damaged. Not a system power fuse.
+LED Name Color When On
+D5 Laser Disabled Green Laser is disabled (both emergency circuits are open)
+D6 Shutter Enabled Yellow Shutter can open (both door circuits are closed)
+8
+D7 Shutter Closed Blue Shutter closed
+D8 Open Shutter Blue Open Shutter command
+D9 Laser Power Red Laser Power Supply is on
+D10 Diag Blink FASS Diagnosis
+
+SPM + FASS Wiring
+(SPM - 16A - FASS)
+Default Bridges:
+(If no interlock connected)
+Pin 05 - 16: Shutterlock bridge 1
+Pin 07 - 14: Shutterlock bridge 2
+Pin 10 - 12: Door feedback bridge
+Pin 15 - 19: Interlock bridge 1
+Pin 17 - 21: Interlock bridge 2
+Can use solid state switches with
+Pin 22 - 24: Emergency Reset bridge
+FASS option
+System reaction when circuit open:
+Door1 (X9 Pin 7 - 14): Shutterlock Open
+Door2 (X9 Pin 5 - 16): Shutterlock Open
+Emergency1 (X9 Pin 17 - 21) : Interlock Open
+Emergency 2 (X9 Pin 15 - 19) : Interlock Open
+Emergency Stop must be reset with
+– S02 (reset switch) after safe state
+has been restored
+
+Wiring with Additional Contacts SPM with FASS
+(SPM - 16A - FASS)
+Default bridges and system
+reactions same as SPM + FASS
+(SPM - 16A - FASS)
+
+Optional: The FASS - board
+Follower of K40
+X10a
+X10
+FASS – Optional safety controller used with CPD
+Following signals are monitored by FASS:
+• Emergency switch 2 Channels with contact extension and cross circuit detection
+• Door circuit 2 Channels with contact extension and cross circuit detection
+• Shutter signals (status and control)
+
+Cover for Chameleon Connectors
+1) Break off rectangular tab
+near Chameleon connectors
+2) Place tab over
+Chameleon connectors
+using mounting screws –
+separates high and low voltages
+
+Lab – Safety Switch Installation
+❑ Wire Shutterlock with Double Pole Switch
+❑ Wire Interlock (no FASS ) with Double Pole Switch
+❑ Wire Interlock (no FASS) with Single Pole Swit ch
+❑ Wire as Interlock with Emergency Switch (FASS)
+
+5. Installation
+
+Pre - Installation Checks
+➢ Check Shock / Tilt watches on packaging
+➢ Unpack laser system, and check contents and condition
+of laser system
+➢ Connect laser system to temporary power supply
+➢ Position target correct distance from Marking Head
+➢ Take sample mark of the Test Pattern and customer
+code ( SmartGraph to create Test Pattern)
+➢ Verify BTU alignment (if installed)
+➢ Mark 100 x 100 square and adjust scaling (if necessary)
+
+Installation
+➢ Set Jumpers on X19 and X20 based on power
+source for Customer Interface (internal or external)
+➢ Options for Connecting Accessories:
+❑ Quick Connector plate
+❑ Standard (Cable Gland) plate
+➢ Accessories Specifications:
+• Product Detect
+- Must be 15V to 30V PNP detector
+• X 25 on Internal Customer Interface connections
+• Encoder
+- Must be 24V Quadrature encoder
+• X 25 on Internal Customer Interface connections
+• Interlocks
+- All internal connections for Interlock/ Shutterlock /E - Stop switches
+are made to X9 on CPD/SPM board
+
+The Installation – cont‘d
+➢ Connections for the following:
+• Fume Extractor
+➢ Exhaust Error / Filter Full
+➢ If not connected to system IOs then jumpers/jumper plug
+must be fitted
+• Beacon
+• The following are also available:
+➢ System Ready
+➢ Ready to Mark
+➢ Good Mark
+➢ Bad Mark
+➢ External Job Select
+➢ External Start - up
+➢ External Start Marking / Stop Marking
+➢ Connect Coder to mains supply
+
+Creating Customer‘s Code
+➢ If Customer’s code information available:
+– Create customer’s message and new Parameters with
+parameters from the Sample Marking report form.
+➢ If Customer’s code and Sample Marking information not available:
+– Create new Parameters
+– Template> Parameters
+• Give name of product or substrate
+– Create a new message
+• TEST over Serial Number
+– Font and style to represent customers final code (Font Height 3mm)
+– Select Parameters created above
+– Select ‘Stationary’ as Product Registration
+– Activate message and take sample marks to check setup
+
+Hands - On Exercise
+♦ Install 3140/3340 to conveyor system
+– Mount Laser system to stand
+• Marking Head to product distance (Working distance)
+– Connect Product Detector and Encoder
+– Switch ON
+– Create Product Registration (“Static”)
+– Select Message 1 or Message 2
+– Take sample marks to check orientation and setup are correct
+
+Hands - On Exercise
+♦ Import Kompensation template to laser system
+♦ Mark Kompensation template with moving product
+♦ Adjust Product Registration settings until horizontal
+and vertical lines are straight
+♦ Adjust Parameters until mark quality is acceptable
+
+Kompensation Template
+When the line distorts in the axis of product movement, the distance per rotation
+“Distance/Rot“ or “Speed“ has to be changed
+Line distorts in direction of line movement.
+Increase Distance per rotation or Speed
+Line distorts against line movement.
+Decrease Distance per rotation or Speed
+When the line distorts in the axis of the laser, the angle has to be changed in the field:
+“Angle between laser and direction of product movement“.
+Increase a ngle
+line dire c tion
+Decrease angle
+
+Hands - On Exercise
+❖ Create the following message in SmartGraph
+Best by: DATE
+TIME SHIFT CODE
+DATE = Alpha month - DD - YY plus 180 days; date change at 6 am
+SHIFT CODE = 3 shifts
+7 am = G
+3 pm = L
+11 pm = R
+❖ Print message on the fly with good print quality and no errors
+
+Installation - Objectives
+Confirmed
+1. Describe the unpacking and preparation of a laser
+system for installation as described in the Operating
+Instruction
+2. Describe and explain the equipment to be used and
+their connection to the laser system
+3. Demonstrate the installation and set up of the laser
+system using the menus of SmartGraph interface
+4. Demonstrate the use of Kompensation template
+
+6. The Laser Web Interface
+
+Laser Web Interface
+Connect to the Laser Web Interface by entering IP address of the laser system
+• View settings without logging in
+• Login to change settings
+When logged in can change:
+• Laser type/marking head type/lens type
+• Permissions
+• Date/time
+• IP address for laser
+• Update Cmark
+• Load AllPrintBasic files
+• Enable Remote Service function (if customer has Videojet Remote Service server)
+
+Laser Web Interface
+Connect to the Laser Web Interface by:
+• Enter IP address – Single Core Chameleon
+• Example: 10.27.222.140
+• Enter IP:8080 - Multi - Core Chamleon
+• Example: 10.27.222.140:8080
+Important:
+• Use Internet Explorer version 9 or newer!!! File upload issues with
+some Chrome versions.
+• Connect on configured primary IP if it has been changed from
+default. Do not use the default IP or secondary IP. Functions in
+Web Interface involving file transfer will fail on default IP or
+secondary IP!!!!
+
+Laser Web Interface
+Single Core Chameleon
+• CMark v. 3.x
+• Can manipulate SD card to add/remove files in Windows
+Explorer
+• Web Interface can be used to upload CMark or AllPrintBasic
+files.
+• Several options for loading CMark and other files.
+Multi - Core Chameleon
+• CMark v. 4.x
+• All system files (CMark, TCL scripts, AllPrintBasic ) loaded
+through Web Interface only! Since CMark 4.5 you can also load
+via TCS+ (except CMark on new board).
+• No access to files via Windows Explorer
+• Only Web Interface or TCS+ to load CMark, TCL, and
+AllPrintBasic files.
+
+Login to change settings:
+1) Click on Log In (upper right corner or window)
+2) Enter User Name: service
+3) Enter Password: 123@service
+4) Click on Login
+5) Change or modify settings
+6) System must be restarted for changes to take effect
+
+Laser Web Interface
+Configuring the System
+Laser Configuration:
+• Laser Type
+• Marking Head
+• Lens
+• Serial Number
+• IP Address
+• Subnet Mask
+• Secondary IP Address
+• Timezone
+• Pilot Laser
+• Safety Circuit
+• Disable Trigger/Encoder
+detached errors (Cmark 3.4
+and newer)
+Do not adjust:
+• Tube Length
+• Leakage Protection (leave on)
+unless causing errors
+• Trigger Enable Voltage Needed
+• System Integration Mode
+
+Leakage Protection
+The Good: This feature closes Shutter after 9 seconds of no trigger.
+Example would be customer’s production line slows or stops, but laser is still in
+waiting for trigger state.
+The Bad: This feature can cause issues when shutter ( galvos ) cannot
+open and get to start position before product exits mark window.
+Faults can range from Product Movement Too Fast, Beam Shutter errors, or
+even X - or Y - Mirror errors.
+Whenever errors are
+appearing after conveyor
+slow or stop while laser still
+in marking mode (waiting
+for trigger) turn off Leakage
+Protection in Web Interface
+and reboot.
+Always enabled by default.
+
+Laser Web Interface – Other Functions
+Boot Log (SmartGraph
+version info)
+Version Information
+• System Configuration
+• Cmark
+• Permissions
+• DSP
+• Date/Time
+• Update Cmark
+• FPGA
+• Upload AllPrintBasic files
+• CP - Light
+• Setup Arc Compensation
+• SmartGraph (Cmark
+• VJ Remote Service
+3.4 and newer only)
+
+Laser Web Interface – Multi - Core Additional
+Functions
+• Update Cmark
+• Upload TCL Scripts (Ultimate 1.6)
+• Create CMark Backup
+
+Laser Web Interface – SmartGraph Version Info
+CMark v. 3.2.1
+and older
+
+Laser Web Interface – SmartGraph Version Info
+CMark v. 3.4 and newer
+
+Laser Web Interface – Multi - Core Chameleon Only!
+➢ Can create a backup of CMark from laser
+➢ Creates a downloadable .zip in RAM
+➢ Backup is deleted from RAM upon shutdown
+➢ Downloaded .zip can be uploaded through Web Interface –
+CMark Update option
+• Backup includes : System +
+Customer data
+• Not included : SystemDB
+enteries such as Serial
+Number, Laser Type, Head,
+Lens, IP - Address, etc.
+Similar to making backup of SD
+card in past
+
+Rescue Stick – Multi - Core Chameleon Only!
+➢ Rescue Stick can be used to try to boot when otherwise can’t access Web
+Interface or can’t boot.
+➢ Will overwrite entire image on flash so only use if no other choice. Does not
+erase System Database, but will erase everything else including jobs, fonts, etc..
+➢ Create ahead of time. 2GB image take long time to download.
+➢ Generalized Steps:
+1) Write Rescue Image to USB (Miniumum 2 GB USB) using HDD Raw Copy Tool.exe.
+2) Insert USB into Chamelon. – Image on USB does not contain CMark. Only
+contains enough software to boot system and get into Web Interface.
+3) Power up and press On button on keypad. Shuts down when done loading
+rescue image. Takes about same amound of time as a boot.
+4) Restart laser.
+5) Load CMark through Web Interface. (Web Interface will say FOBA/Alltec until
+after you load Cmark and specify Videojet model laser.)
+6) Reboot and verify System Configuration is correct in Web Interface.
+Rescue Image and detailed instructions will be maintained on Sharepoint .
+
+Upgrade from Single to Multi - Core Chameleon
+If upgrading to Multi - Core, must be able to update CMark to v. 4.x.
+Single Core Chameleon still available if customer can’t update due to
+SAR, etc.
+1) Replace Single Core Chameleon with Multi Core
+2) S tart the Laser with new Board.
+3) Insert existing SD card from Single Core board
+4) Update CMark via Web Interface
+-- Use Inherit Customer Data from SD - Card option from dropdown
+5) Program laser, head, lens type, etc. in Web Interface.
+6) Power laser to start with inherited data
+
+7. Update the CMark Software (OS)
+Single - Core Boards
+Multiple methods to update:
+1) Web Interface (preferred)
+2) XMark Copy Tool (new or corrupt card)
+3) Manually – Windows Explorer
+
+Update of the CMark - software (OS)
+with Web Interface
+Keyswitch must be
+1. Connect to laser system through Web Interface
+open or “update not
+2. Log In to Service level
+possible”
+3. From Other drop - down menu select CMark Update
+4. Click on Browse button to navigate to location of desired CMark
+version . Must be a .zip file!!
+5. Click the Upload File button to begin update process
+6. After the system acknowledges the file selected you will be
+prompted to select whether to Inherit Customer Data . If selected,
+after updating CMark on SD card the system will replace Database
+folder and AllPrintBasic /TCL files on SD with customer’s files.
+7. Click Update
+8. When process is complete, you must restart the system in order
+for changes to take effect.
+9. Press Power/Standby button to restart the system.
+Must use Internet Explorer 9 newer or update will fail.
+Some versions of Chrome had file upload bugs. Only use IE!!!
+
+Update of the CMark - software (OS)
+with XMarkCopy Tool
+The Xmark Copy Tool software is a tool to prepare a new SD - card for a Linux OS and to
+copy the new CMark on the SD - card.
+This is only neccessary for a non - prepared card!!!
+A CMark - update can also be carried out in the laser Web I nterface ( only for prepared cards).
+During the preparation and copying process the following steps are carried out:
+1. Formatting of the SD - card
+2. Master boot record is written
+3. Unpack files and copy them into the local folder
+4. Copy the files from the local folder on the SD - card
+5. Verify each folder and each file binary
+6. Delete local folder
+7. Eject SD - card
+- Expected update time: not longer than 30min.
+- Use 1GB sized SD - cards from Transcend (industrial grade)
+
+Update CMark - software
+with Xmark Copy Tool
+1. Switch off the key switch by turning it to the vertical position. Remove the key to ensure
+laser system cannot be switched on.
+2. Press the push button Standby. Blue light will illuminate when in Standby mode.
+Do not proceed until laser is in Standby mode!
+3. Open the supply unit cover and locate the SD card.
+4. Remove the SD card by gently pushing in to release and then pulling card out.
+5. Insert SD card into card reader on PC.
+6. Install XMarkCopyTool.exe and start the software
+
+Update CMark Software - Xmark Copy Tool (2)
+7. Click on the Select File button
+8. Select and open the desired CMark version (must be a zip file) from a directory on your PC.
+9. Click the arrow next to Destination and select the drive with SD card inserted.
+Important: Drive cannot
+be named “D”
+Must rename to letter
+other than “D”
+
+Update Cmark software – Xmark Copy Tool (3)
+10. Click on the Start button. You will be asked to name backup file. Rename if desired.
+Please note that the upload process
+may take a couple of minutes.
+Do not cancel the process!
+11. After the process has been carried out successfully, the following message is displayed
+12. Confirm the message by clicking OK button.
+13. Close the software by clicking the Close button in the File menu.
+14. Insert SD card back into its holder on Chameleon board.
+15. Turn power on to laser system and allow system to boot.
+
+Manual Update of the CMark - software
+(OS)
+➢ Requires card to have been prepared (i.e. bootloader
+installed)
+➢ Must backup customer files before updating CMark
+(Database, AllPrint Basic, tcl scripts)
+➢ Extract zipped CMark to SD card
+➢ Replace customer - specific files to SD card after
+update.
+
+Manual Update of the CMark - software (OS)
+
+8. TCS/TCS+
+
+TCS versus TCS+
+TCS
+• Installed on a PC (version 5.x is for Chameleon; version 2.x is only for Ice board
+(3020/3030).
+• Used with Single Core Chameleon and early multi - core Chameleon. Support for
+TCS (pc - based) ended with CMark 4.5.
+• TCS version needs to be matched to CMark (list of matches on Sharepoint )
+• TU420 with 8 - pin connector available (Windows touchscreen PC inside stainless
+steel box; one TU420 per laser needed if using).
+• Limited features including need for SmartGraph for file conversion and loading if
+additional fonts or logos are needed.
+TCS+
+• Runs natively from laser. Always part of CMark since version 4.x.
+• Since it is part of CMark, TCS+ never needs to be updated separately.
+• Access TCS+ via web browser (IP address) or with TU430/TU440. TU430/TU440
+can only be used with TCS+. It is a touchscreen monitor not a PC.
+• Faster because not relying on PC processor.
+• Features available have continued to increase and as of CMark 4.9 has many of the
+features of both SmartGraph and Web Interface.
+
+Biggest Difference: Connection
+
+TCS: Connection Settings (Oldest)
+From Connection Settings you can edit:
+• Name for Connection
+• IP of Laser that TCS should look for
+Connect and Disconnect to the laser from this screen
+
+TCS: Middle Generation
+More options for connection and also configuration of laser
+
+TCS+
+• Use web browser and enter IP or connect using TU430/TU440
+(automatic; no IP involved with TU430/TU440).
+• Laser Unit Settings now contains not only connection settings, but all
+of Web Interface as well.
+
+TCS+
+
+Objectives:
+• Operator Functions
+• Job Creation/Editing
+• Mark Settings
+• Line Setup
+• Users/Roles/Access Rights
+• File Management
+• Service Level Settings
+
+TCS+
+➢ Always installed and accessible (no licensing)
+➢ Exists only on Multi - Core Chameleon boards
+➢ Is part of the CMark version 4.x image
+➢ Lives in flash memory of Q7 on Chameleon board
+➢ Can be accessed by any web enabled device or TU430
+➢ All of the features of TCS, plus added features including Event Log,
+Electronic Signatures option, and enhanced security settings
+➢ To access TCS+: enter IP address of laser into web browser on any
+device on the same network
+
+New Features in CMark 4.7 (released 2019)
+• Most of Web Interface is now available in TCS+
+• Service user Login in TCS+ requires “Daily Password”
+• Focus Finder feature activated via TCS+ only. No other user interface can
+activate. (Only 7340/7440 has Focus Finder in this CMark version)
+• Comms Monitor to check data sent to/from PLC ( EtherNet /IP and PROFINET)
+• Faster boot time for laser
+• Single User Functionality (higher level kicks out lower)
+• Homescreen live without Login
+• System Information page allows .PDF export
+
+CMark 4.9 - New Features
+TCS+
+• Logo import
+• DXF import (as logo or as complete .Job)
+• Group job elements
+• More Pilot Laser modes (now in Main Menu)
+• Easier access to view Event Log
+• Complex Jobs (List, Sequence or Batch)
+• Trigger Queue control (Interlock/ Shutterlock only)
+• Multi Laser Support
+• Anchor point selection (Static Text, Variable Text and 2D codes)
+• Filling options expanded (now matches SmartGraph )
+• “Consider marked after interruption” setting for Variable Text (Mark Once)
+• Head Mounting setting now allows decimals
+• Tool Step Width setting allows decimals
+General
+• CMark updates differently (new version loads after reboot)
+• Expanded Laser Status responses – EtherNet /IP and PROFINET
+
+Touch Control Software
+Service User in
+CMark 4.7 or
+newer only!
+• Must select a level to login (unless disable Password on Start)
+• Preconfigured with 4 Users (Admin, Operator, Supervisor, Service )
+• Can add or edit Users, Roles, Access Rights, and Passwords
+
+Home Screen
+1
+7
+6
+5
+2
+4
+3
+1 Status Bar 5 Line Setup
+2 Preview Area 6 Job
+3 Quick Edit Toolbar 7 Global Functions
+4 Performance
+
+Status Bar
+Nothing wrong, but not
+marking
+Marking
+Warning
+Press “i” for expanded information on specific warning or error
+Error
+
+Global Function Buttons
+
+Selecting a Job
+Touch Pen button in Jobs pane
+Select Manage Jobs
+Click on desired Job from the list
+(job will appear in blue after
+selection)
+Click on the circle next to the job
+name to make the “Active” job to be
+marked
+Click Confirm when prompted
+
+Firing the Laser
+Key switch must be in the ON (closed) position to fire
+Press the Start button
+Laser will indicate Marking during the
+marking process
+Press Stop button to discontinue
+marking
+Laser will indicate Ready to Mark after
+the marking process is complete
+
+Lab Excercise
+Select and Mark Message
+• Select and Activate “Message 1”
+• Mark the Message
+
+Create a Job
+
+Creating A New Job
+Select the Pen button next to Job
+Name and Mark Settings
+Then select Manage Jobs
+Click Create button
+
+Creating A New Job (2 )
+Click Add button
+Select a Job Element
+from the drop - down list
+
+Creating A New Job (3)
+Click in the
+marking field
+to place the
+Job Element
+Configure Element features such as Font,
+variable name and content, etc. in the column
+on right hand side of screen.
+To add other job elements such as date, time, shift and
+barcodes, press the Return button, then press the Add button.
+
+Lab Excercise
+Create New Message
+Font type OCRB1
+A = shift code: A 0700, B1500, C
+2300
+123 = Julian (3 digit) date no offset
+ddmmyyyy = today's date no offset
+23 = fixed text
+000 = serializer : 000 start; 999
+end; increment by 5
+Sell by = fixed text
+ddmmyy = 89 day offset
+Save message as “Lab 2”
+Mark your message at least 2 times to verify serializer is working
+
+A123ddmmyyyy23000
+Sell by ddmmyy
+
+Create/Edit Mark Set
+
+Create New Mark Set
+Click on the Menu button in upper right hand
+corner of screen
+Select Mark Settings
+Create a new Mark Set by
+clicking Create button
+Assign your Mark Set to a Job in the
+Job Edit screen
+
+Edit Current Mark Set
+Several places to Edit
+Mark Sets
+Pen button in Job box in Home screen
+Pen button in message editing screen
+
+Edit Current Mark Set
+In individual Job Element editing
+screen
+Note: Each Job Element can have a
+different Mark Set. Acts like Indexes
+in other laser interfaces.
+
+Mark Settings – Helper Dialogue
+”?” button next to each Mark Setting to give description and
+example of the Mark Setting
+
+Lab Excercise
+Change Mark Settings
+• Create a message with the following information:
+BBE = Fixed text
+Date with format: DD.MM.YY +120 day expiration
+Time with format: HH:MM
+L2= Fixed text
+298= Julian date
+A= Shift Code (A= 6 am; R= 2 pm; Z=10pm)
+• Mark the code
+• Adjust Mark Settings to achieve good quality
+
+Group Elements
+1) Press Add in Job Editing screen.
+2) Select Group from the list.
+3) Click Create button.
+4) Select items to be grouped.
+5) Save
+6) Group appears in Elements list and you can
+treat as a single item. Ungroup if desired.
+Group function
+available in
+CMark 4.9.2 or
+newer.
+
+Layers
+Access Layers
+Configure Layers
+Assign Layer
+to Elements
+
+Create Complex Job
+
+Job List/Sequence/Batch
+Select the Pen button next to Job
+Name and Mark Settings
+Then select Manage Jobs
+Click Create
+Complex Jobs
+button
+
+Job List/Sequence/Batch
+Select which type to create and
+then populate with existing Jobs
+Job List – Contains Jobs with
+numbers assigned to them that
+are then selected and marked
+based on on the voltage received
+via X30 on the Chameleon
+Customer Interface section.
+Job Sequence – A trigger
+impulse initiates a sequence of
+Jobs that will be applied to the
+same product.
+Job Batch - The Jobs of a batch
+will be processed by consecutive
+trigger impulses.
+
+Line Setup
+
+Creating A Line Setup
+Click the Pen button in the Line
+Setup field.
+Click on Manage Line Setups to
+create a new Line Setup
+Click on Create button and then
+name your new line setup
+
+Position and Orientation
+Select form the following: Line Movement, Focus Finder (only on models where
+available), Product Side Selection, Laser Position and Job Orientation.
+
+Position and Orientation
+PRODUCT SIDE SELECTION
+LASER POSITION
+
+Line Speed Setup
+If using Configure Manually option for encoder setup remember do not double Encoder
+Pulses in TCS+ or CLARiTY . Only in SmartGraph are pulses doubled.
+
+Fixed Speed
+
+Measure Line Distance
+
+Product Size
+
+Measure Line Speed
+
+Configure Manually
+If using Configure Manually option for encoder setup remember do not double Encoder
+Pulses in TCS+ or CLARiTY . Only in SmartGraph are pulses doubled.
+
+Trigger Settings
+
+Trigger Settings
+Trigger Mode
+‘External Rising’
+-- Fires off rising edge of pulse from trigger source
+‘External Falling’
+-- Fires off falling edge of pulse from trigger source
+‘Internal Once’
+-- Used for static print
+‘Internal Continuous’
+-- Will fire continuously
+-- Care is necessary when selecting this option as
+dangerous situations may occur
+
+Marking Field and Test
+Note : Can print from this tab, but will print active message NOT the
+marking field boundaries. Tests your Line Setup.
+
+Lab Excercise - Line Setup (Fixed Speed)
+• Use message created in previous lab (shown below)
+• Change to product movement (Fixed speed)
+• Create a new Line setup (name)
+-- Set up ‘wizard’
+Position and Orientation
+-- Direction of Line Movement
+Line Speed
+-- Enter Fixed Speed
+• Meters / min
+Trigger
+-- Start Distance
+• Should be not less than 50% of the marking area of the lens in that
+axis
+• This is the physical distance of the Product Sensor to the laser
+• May need to be longer to allow mirrors time to reach start position
+-- Blocking Distance – 90% of Product pitch
+
+Lab Excercise - Line Setup (Encoder)
+• Use message created in previous lab (shown below)
+• Change Line Setup to use Encoder and Product Detect
+• Investigate the following options available for setting the Encoder
+values:
+✓ Measure Line Distance
+✓ Enter Product Size
+✓ Measure Line Speed
+✓ Configure manually
+• Use calculated values to take sample marks
+
+Main Menu
+
+Main Menu – New Order & Functions
+▪ Only place to Create Mark
+Settings
+▪ View Event Log
+▪ Easier access to Pilot Laser and
+Focus Finder. New patterns for
+Pilot Laser also included!
+
+Main Menu – Event Log
+View the Event Log
+here.
+Download Event Log
+is still in File
+Management .
+
+Event Log – View/Filter
+Access this view from Main Menu now. Different than previous.
+Access to
+File Management only allows for download now and not viewing.
+Electronic
+Signatures and set
+Export Reminders
+Export Event Log
+from File
+Management tab
+as .PDF or
+Database (. db ) file
+Timestamp in
+Event Log is
+always UTC (+0)
+even when time
+zones applied or
+daylight saving
+time.
+Define Log time to view (does
+Filter by Event Type
+not define download period)
+
+Event Log
+Event Log Limits
+• Warning Level: 5 MB
+• Error Level: 10 MB
+Rolling Event Log Option:
+If setting is enabled (default) the oldest 500 Entries are deleted as soon as the Warning
+Level is reached.
+If this setting is disabled (interesting for regulated markets):
+• Warning shown when Warning Level is reached with a reminder to export and delete
+the DB.
+• Error shown when Error Level is reached with a reminder to export and delete the DB.
+
+Event Log Settings – Electronic Signatures
+✓ Enable requirement for Electronic Signatures for all functions or for
+individual functions
+✓ When enabled user will have to sign in for each action that requires an
+electronic signature each time that action is performed.
+
+Pilot Laser Modes
+Easier access now in
+Main Menu
+Left Column: Right Column:
+Can enable combination of Only one Mode can be
+Modes at the same time. enabled at a time.
+Focus Finder not available
+on 3x40 lasers.
+
+File Management
+
+File Management (Setup Menu)
+➢ Messages may be transferred from one laser coder to
+another using USB (TU430) or via Ethernet (Web Browser)
+TU430 version
+Messages are in XML format
+• Must be in a folder called TCS
+• This folder is created on USB when selecting to move
+messages
+Web Browser
+Messages are in .job format
+• Put into your downloads folder or specified location
+• Files for upload do not have to be in any specific folder.
+➢ Laser coder backup to USB stick or via Web Browser
+-- ‘Complete laser Image’ OR
+-- Can select what to copy from Options
+
+File Management
+File Upload/Download
+➢ TU430 Touchscreen
+• USB only (need folder named “TCS”)
+➢ PC/Tablet
+• Select where to download (varies by
+browser and settings in browser)
+Fonts can be imported here
+Logos can be imported here
+Download Event Log from here. View can be
+done from Main Menu directly. Change from
+previous versions.
+Firmware = CMark (Create backup or load CMark) ;
+only use PC to load CMark not TU430.
+7340/7440 only (typically)
+
+Firmware (CMark)
+Update/Backup
+CMark Update and Backup can now be done in TCS+, but
+called Firmware
+Beware: When updating Chameleon to CMark 4.7 a BIOS
+update will be performed immediately following the load
+of CMark. Following message will appear.
+Do not interrupt this BIOS update!!!!
+Board will no longer be usable if interrupted. Allow
+additional time for boot following BIOS update and do not
+interrupt the boot.
+
+Font Import Tool
+• Font Import Tool
+-- Supports . fn , . fnt , . ttf , . otf , . pfa , . pfb , and . svg
+Upload button (Browser)
+or Fonts>Transfer on
+TU430
+
+Logo Import
+• Logos must be uploaded and converted to . lgo file type before usable in Job.
+- svg , plt , mcl, bmp, jpeg, gif, pdf, ps , eps, ai, dxf and dwg can be imported
+Upload button
+(Browser) or Logos
+Change Logo name
+>Transfer on TU430
+(if desired) and
+choose Import Filter
+(default is standard)
+
+.DXF/.DWG Import
+• Choose to import as a Logo or as a Job.
+• When imported as a Job all vectors and text are editable
+• When imported as Logo vectors are not editable; imported like normal logo
+Upload button
+(Browser) or Logos
+When . dxf /.dwg file type is noticed you will be
+>Transfer on TU430 prompted to choose import as Job or import as Logo
+
+Users, Roles and Access Rights
+
+Users, Roles, and Access Rights
+Top Level – Sign in level
+Users
+Pre - programmed set of Access Rights
+(allowed functions)
+Roles
+Individual functions within a Role
+Access Rights
+
+Users, Roles, and Access Rights
+Default Users Password Also a Role? Can Duplicate?
+Operator 0000 Yes Yes
+Supervisor 1111 Yes Yes
+Administrator 2222 Yes Yes
+Service Daily Password No No
+➢ There is only one Service and this user cannot be duplicated or changed
+➢ Service has additional access beyond Administrator
+➢ Service can assign some Service level access rights to other Users, but some
+Service functions such as changing Laser Type, Serial Number, etc. cannot be
+done by any user other than Service and requires Daily Password.
+Roles and Access Rights
+Administrator access required for adding Users and for changing Roles/Access Rights
+
+Security Settings
+Configure new security features through Settings button in Users menu
+Includes more control over password creation, expiration, and methods of login
+
+Security Settings -
+Passwords
+Password policies can be
+configured to include:
+✓ Minimum length
+✓ Minimum upper/lower case/special characters
+✓ Maximum number of repeated characters
+✓ Check for use of repetition of password from previous
+✓ Prevent using password similar to user name
+✓ Set maximum number of failed login attempts before setting user to Inactive status
+
+Security Settings - Reminder
+Set Reminders for password change/account expiration
+• Users can be required to change passwords regularly
+• User accounts can be set to expire on a specific date
+• Reminders before these actions occur are set here
+
+Security Settings - Login
+• Different methods for customizing Login
+• Auto Logout must be enabled here and then can be customized for
+each Role in Roles/Access Rights screen. (Enable here and set time
+period for each role in Roles/Access Rights).
+• Single User Access (if enabled) only allows one User to be logged in at a
+time. Service and/or Admin can kick off lower level users (Service always
+wins).
+
+Single User - Examples
+Caution: Remember to log off if Service
+or Admin or else no one else can log in.
+
+User Controls
+Administrator can set
+for each User:
+Set a password
+for User
+Set days between
+password changes
+or specific date for
+account expiration
+Service does not have
+Change User Status
+access to all displayed
+functions.
+Require User to set
+password on login
+
+Role Management
+Set Auto Logout for each Role:
+✓ Auto Logout in Security
+Settings can be set to a default
+value for all new Users (Auto
+Logout must also be enabled in
+User Security Settings or Role level
+Auto - Logout will not function).
+✓ Adjust for each Role
+individually in Roles and
+Access Rights menu
+
+Laser Unit Settings – Overview
+Laser Unit Settings
+Some access rights cannot be
+assigned to Admin. Only
+Service User (new) can make
+changes such as serial number,
+laser type, etc.
+Service User login is always the
+daily password (same as CIJ
+and TTO).
+Most of Laser Web
+Interface has been
+migrated into here.
+
+Laser Unit Settings
+Main menu (Left column) –
+Right column changes based on Main Menu
+Items in red only shown when logged in as
+selection (in this case Laser Configuration)
+service or User’s Role has Access Rights
+
+Laser Unit Settings – Laser Configuration
+Previously located in Web Interface. Only Service login can change the items in red.
+Service login can grant access to Admin user for all other functions on this tab.
+
+Laser Unit Settings – Date and Time
+
+Laser Unit Settings – Pilot Laser
+• If Pilot Laser is installed, needs to be check marked here to let system know it exists.
+• Should always be check marked here.
+• Pilot Laser button in Main Menu for easy access.
+
+Laser Unit Settings - Network
+
+Laser Unit Settings - Permissions
+Permissions = IP addresses for devices allowed to fire laser ( SmartGraph )
+CMark 4.7 and higher: discovers connected IP address and allow you to
+add you IP without typing IP in again.
+
+Laser Unit Settings – External Interfaces
+• Enable EtherNet /IP or PROFINET
+• Configure IP for MIC board
+
+Laser Unit Settings – Comms Monitoring
+• Access to Monitoring from External Interface tab
+• Live display on info accepted by laser from PLC and data going to
+PLC from laser
+• Logging function also available
+
+Laser Unit Settings – Comms Monitoring
+Data accepted by laser from PLC Data being sent from laser to PLC
+
+Laser Unit Settings – Comms Monitoring
+Save creates a log file
+in .txt format
+
+Laser Unit Settings – AllPrint Basic
+
+Laser Unit Settings – AllPrint Basic
+• Remember to Activate after upload.
+• Star inside circle indicates Active file.
+
+Laser Unit Settings – Arc Compensation
+Service User has to assign Access Rights to Admin in order for Admin to use Arc
+Compensation. Service is only User with access unless Access Rights extended.
+
+Laser Unit Settings – Remote Service
+Only use for access to CLARiTY
+Set to IP of laser for TCS+ view;
+IP of CLC for CLARiTY view
+Remote Service enabled here and IP for Remote Access defined (TCS+ and CLC
+only; no SmartGraph ). Remote Access View button will take you to CLARiTY as long
+as IP in bottom box set correctly and Remote Access Available is checked.
+
+Laser Unit Settings – System Database
+Don’t use Delete Current System Database – only
+meant for manufacturing
+Default settings for Admin only allows Download.
+Service user can give rights to Upload.
+
+Laser Unit Settings - Logging
+• Don’t create Core Dump unless requested
+by tech support. Only software
+developers will have any use for it. Might
+be requested as part of an escalation.
+• Was called Crash Dump in Web Interface.
+
+Laser Unit Settings – Trigger Queue
+CMark 4.9
+and newer
+• Can choose to preserve Triggers already in buffer when Interlock/ Shutterlock Open.
+• Triggers not preserved when an Error occurs and have to Start again.
+• Should only be used in mark on the fly with encoder & product detect. No indexing
+applications.
+
+Main Settings
+
+Main Settings
+Decimals now
+accepted
+Pilot Laser used to be turned ON/OFF here, but now moved to Main Menu for easier access.
+
+System Information
+
+System Information
+• Accessed through Home Screen
+• System Information has extended information including: temps,
+board and software versions.
+• Licenses is info about open source software used
+• About only give version of CMark and TCS+
+• Help refers you to the manual (not on the laser)
+
+System Information - Detail
+Mainboard Temp near EEPRM
+by SD slot/USB
+
+System Info - continued
+Marking Head Temperatures
+Environmental Temperature is CP -
+Light board temperature
+Temperature is the temp inside the
+marking head (brown/white wires in
+marking head that run back to CP - Light
+
+System Info -
+continued
+
+System Information – Generate PDF
+Can generate a PDF doc to
+download with all info from System
+Database screen.
+
+TU430 Touchscreen
+
+Overview – TU430
+➢ Passive display to be used with TCS+ only
+➢ Touchscreen monitor; no processing onboard!
+➢ Uses customized HDMI cable/connector for power and signals
+➢ Hardwired on display side
+➢ IP 65
+➢ No power button
+➢ 2 USB ports
+➢ Calibrate touchscreen in TCS+
+
+Connect to 3x40
+➢ Port on rear of supply unit
+▪ Factory installed or field upgradeable
+▪ Use IP65 cover on cable
+▪ Note warning stickers
+▪ Cap for port available as spare
+Make customers aware that
+HDMI port on laser will
+damage regular monitors
+due to voltage on HDMI (not
+a standard HDMI)!!!!
+
+9. Maintenance Plan
+
+The Maintenance Plan
+Maintenance Interval Measures
+Daily or as necessary Inspect supply unit fan filters (not applicable on IP65). Replace as
+necessary. More frequently when operated in dirty ambient
+conditions.
+Monthly or as necessary (more Inspect the filters in blower unit. Replace as necessary.
+frequently when operated in dirty
+ambient conditions)
+Monthly or as necessary (more Inspect the output lens for dust or dirt. Clean the lens when
+frequently when operated in dirty necessary.
+ambient conditions)
+When control lamp on Fume Replace filters on fume extractor. Combined filter will usually be
+Extractor lights up more often than HEPA filter. Exchange combined filter and if
+control lamp on fume extractor remains on then change HEPA filter.
+Every three months (more Carry out a visual inspection of the laser system including warning
+frequently when operated in dirty labels. They must be readable and positioned correctly.
+ambient conditions) Check the product detector (light barrier). Clean or readjust as
+necessary.
+Every six months Inspect laser tube and blow off with compressed air if necessary
+Annually Exchange HEPA filter (charcoal filter) on fume extractor. Charcoal
+absorbs moisture from the air.
+
+Cleaning the Laser Scan Lens
+
+10. Troubleshooting
+
+Timing
+
+Errors and Warnings
+▪ Fatal Error (0) – requires system to be rebooted
+▪ System Error (1) – power supply to laser turned off
+▪ Error (2) – marking is stopped
+▪ Warning (W) – system continues to mark
+-- Errors and Warnings cause Yellow light to flash
+-- System Errors (1) and Errors (2) must be
+acknowledged/confirmed before system will start marking
+again
+
+Always verify jumpers are correct and no pieces of wire
+broken off inside connector
+Possible Error/Symptom When Jumper Is Missing
+Pins: Description:
+Waiting for Trigger
+X25.9 - 12 Trigger Enable tied to 24V
+Shutterlock Open
+X27.7 - Enables CPD and FASS (never remove –
+X33.3 wiring for CPD and FASS done on X9 on
+CPD board)
+Suction Control Error E19502
+X21.1 - 2 Exhaust Error to Suction On (24V
+output)
+Filter is Full Warning or Error W19503 or E19504
+X21.3 - 5 Filter Full tied to 24V
+CI indicates an External Error E10907
+X29.1 - 7 Error Status Customer tied to 24V
+No specific symptom or errors noted
+X22.3 - 7 Internal use (never remove)
+Start button active, but product and mark count do not
+X22.7 - 9 Stop marking tied to 24V
+increase when Start is clicked
+Affects Stop getting 24V so same behavior as when
+X22.9 - 11 Internal use (never remove)
+X22.7 - 9 missing. If this jumper is out of place then other
+X22.7 and X22.3 are not getting 24V to hold high.
+Key Switch Open status
+X33.1 - 8 External key switch (Input to Output)
+Laser Voltage Too High/Too Low Error E00201
+X33.2 - 6 Internal Use (never remove)
+
+First Steps
+Check:
+• Output lens – clean if necessary
+• Working distance (Marking head to product distance)
+• Product detect and encoder are connected and in serviceable
+condition
+• Condition of umbilical and cables
+• Switch laser ON
+• Look up any Error messages
+• If system does not switch on, go to seven point plan
+• Check Product Registration/Line Setup
+• Verify the desired Product Registration is assigned to template
+• Verify the settings in the Product Registration
+• Verify Configuration settings (mark head, lens type)
+• Fire in static mode to test ability to fire laser without peripherals
+• Check Parameters/Mark Settings (Intensity/Mark Speed/etc.)
+• Start the marking process
+• If system fails, or there is no mark, or mark quality is bad use the seven point
+plan
+
+Standby Mode
+❖ Supply Unit switch on – Standby Mode
+- Power to Supply Unit
+• Main switch in permanent ‘ON’ position
+• Blue LED on ON/Standby button comes on
+• 48V dc input to Chameleon board – X28.11 (48V) and
+X28.10 (GND)
+• D47 (green LED) (48V) lit on Chameleon board
+❖ Diagnostics
+• Mains Power Supply
+• Mains Input connector – 2 x fuses (3140/3340 only)
+• 48 V dc supply
+• Membrane keypad and cable
+- Use Autobridge to start without keypad – Jumper X28.3 - X28.5
+• Chameleon board
+
+System Start Up
+Note: Always 48V to Chameleon unless unplugged or rear panel power switch is in Off
+position!!
+• Press On/Standby button
+• K1 on Chameleon board operates
+• CPD/SPM board operates
+-- Diagnostic LED on CPD board flashes
+• White light come on
+• Voltage LEDs on Chameleon board lit
+-- 24VDC on to Supply Unit fan (IP54 only)
+• White light starts to flash
+-- Software loads
+• Chameleon board IC72 turns on 48V to Marking Head
+-- Voltage LEDs on CP - Light board lit
+• Communication with CP - Light board established
+-- Red comms LED on CP - Light goes out
+• Identifies position of mirrors (Shutter)
+-- D1on HIC is lit
+• White light stops flashing
+
+System Start Up – Diagnostic Checks
+Single Core Chameleon
+Symptom: White light on, but not flashing (On/Standby button)
+Check:
+▪ Did you wait long enough (big lag time)
+▪ Battery in place and good
+▪ SD card seated correctly
+▪ Reload software on SD card
+▪ Use new SD card (with clean version of CMark)
+▪ Chameleon board
+-- Note: In this condition the ON/Standby button is inoperative.
+Need to power off at source.
+
+System Start Up – Diagnostic Checks
+Single Core Chameleon
+Symptom: White light does not stop flashing (On/Standby button)
+Check:
+▪ SD card seated correctly
+▪ Reload software on SD card
+▪ Use new SD card (with clean version of Cmark )
+➢ If still flashing replace Chameleon board
+
+System Start Up – Diagnostic Checks
+Multi - Core Chameleon
+Symptom: White light on, but not flashing (On/Standby button)
+Symptom: White light does not stop flashing (On/Standby button)
+▪ Did you wait long enough (big lag time)
+▪ Check battery voltage. 2.7 Volts or greater?
+▪ Use Rescue Stick to overwrite system software
+▪ If boots after that, then load CMark
+▪ If still won’t boot after Rescue Procedure then replace
+Chameleon board
+
+Replacing Chameleon
+▪ If upgrading from Single to Multi - Core insert SD card into
+board before booting
+▪ Boot laser
+▪ Connect to Web Interface on primary IP. ( Alltec Foba Web
+Interface will be shown)
+▪ Load CMark – choose SD card to inherit customer database if
+upgrading from Single Core board
+▪ After CMark loaded, reboot and connect to Web Interface
+again
+▪ Set laser type, head type, lens, serial number, etc. in
+Configuration. There are no laser/heads/lenses available to select
+until after CMark is loaded).
+
+System Start Up – Diagnostic Checks
+Symptom: White light stops flashing, but Marking Head error
+displayed
+Check:
+▪ Verify head type is correct in Web Interface
+▪ HIC board
+▪ CP - Light board
+▪ CAT - 7 cable
+▪ No 48V power at CP - Light
+▪ Shutter cable
+▪ Marking Head cable
+
+Shutter Cable – Diagnostic Checks
+Shutter Connector CP
+10
+Shutter Connector HIC
+Umbilical connector
+HDLED_EMIS_RET BL
+9 GY/BN 32
+8
+WH/GY MBLED_EMIS_RET
+PK
+31
+7 SHUICLO
+YE/BN
+GY
+30
+6 SHUIOP
+GY/PK
+SHUT_RET YE
+5 WH/YE 29
+24 V_SHUT
+4 BN/GN 28 GN
+GND
+WH/GN 27
+3 BN
+-
++5V
+2 26
+RD/BL Light
+WH
+1
+
+Key switch closed - Interlocks closed
+3140/3340
+• Mains voltage applied to laser power supply
+- Via relays 1, 2 and 3 on CPD/SPM board.
+• DC voltage output from laser source power supply
+-- 30VDC for 3140(all) and 3340 with V30 tube/48VDC for 3340 with
+Vi30 tube)
+• VDC returned to X28.13 and X28.14 on Chameleon board
+• VDC returned to X9 on CPD3
+* Actual voltage dependant upon length of conduit
+• LED’s lit on LIC
+• Fan in Laser Head comes on (IP54)
+• VDC to Laser source in Laser Head
+• Emission LED’s come on
+• System goes to ‘Laser Ready’
+
+Key switch closed - Interlocks closed
+3640
+• System displays ‘Start Laser’
+• Mains voltage applied to 50 V dc laser power supply via
+relays on SPM
+• 50 V dc output from laser power supply
+• 50 V dc returned to X28.13 and X28.14 on Chameleon
+• 50 V dc returned to X9 on SPM
+• LED’s lit on LIC
+• Fan in Laser Head comes on (IP54)
+• 50 V dc to Laser source in Laser Head
+• Emission LED’s come on
+• One or more 10 second warm up periods occur (more if cold
+start)
+• System goes to ‘Laser Ready’
+
+Laser Ready? - 3140/3340
+Diagnostics
+• Verify model in Web Interface
+• 30VDC (or 48VDC for Vi30) output to Laser Head
+- Relay K1, K2 and K3 on CPD/SPM board
+- Cables / connectors
+• LED’s on LIC
+- Refer to table of LED’s
+• Interlocks are closed
+- Interlock circuit
+- Relay K1, K2 and K3 on CPD board / FASS
+
+Laser Ready?
+Diagnostics
+• Did you wait long enough?
+• Several 10 second warm up periods may occur before ‘Laser
+Ready’ displayed (longer on cold starts)
+• Verify model in Web Interface
+- Wrong model doesn’t fault until key switch armed
+• 50 V dc output to Laser Head
+- Relay K1, K2, K3, K4 on SPM board
+- Laser power supply always adjusted to 50 V at power supply. No
+variation for umbilical length.
+- Cables / connectors
+• LED’s on LIC
+- Refer to table of LED’s
+• Interlocks are closed
+- - Relay K1, K2, K3 and K4 on SPM / FASS
+
+Startup/Warmup Time
+➢ 60W tube has feature that identifies when really
+ready
+➢ Time from key switch on (“Start Laser” status) until
+“Laser Ready” status will be slightly longer than
+previous models
+➢ Means will not have faint first few prints (this was
+more likely after laser sitting idle for long periods
+rather than after brief shutdowns)
+
+Laser Tube Startup Time
+• Laser tries to light the plasma 5,000 times per second
+• Check if lit 10 times per second
+• If not lit after 3 minutes, then error occurs:
+o Initial Laser Self - Stabilization Process Was Not
+Successful. Quality of First Mark May be
+Insufficient. ( SmartGraph /G55/TCS)
+o No Strike Error ( CLARiTY )
+• Generally less than one minute for laser ready
+• Longer after extended shut - downs and cold temperatures
+• If error occurs, clear error and can mark, but first marks
+may be missing or faded
+
+The Beam Source Power Supply (3140/3340)
+This power supply must be adjusted based on
+length of umbilical. Adjustment is made through
+hole on rear of laser without removing PSU.
+Measure at X9 CPD connector pin 3 (Voltage)
+and pin 13 (GND)
+Umbilical Volts dc at Volts dc at
+Length Terminal Block Terminal Block
+3140/3340 with 3340 with Vi30
+V30 laser tube laser tube
+3 Meter 31.0 (+/ - 0.3V) 48.5 (+/ - 0.3V)
+5 Meter 31.5 (+/ - 0.3V) 48.7 (+/ - 0.3V)
+10 Meter 32.0 (+/ - 0.3V) 49.1 (+/ - 0.3V)
+Key switch must be closed when adjustment is
+made. Only necessary to adjust after replacement
+of Laser PSU or if suspect PSU failure.
+
+Laser Ready – Diagnostic Checks (10 Watt tube)
+Continuity Check
+
+Laser Ready – Diagnostic Checks (30 Watt tube)
+Continuity check
+
+Laser Ready – Diagnostic Checks (60 Watt tube)
+Continuity check
+
+Laser Power Measurement
+For safety, please ensure beam is hitting target by
+using low Intensity first (approximately 10%) with
+laser reactive material (such as heat sensitive cash
+register receipt paper) over target of power meter
+first.
+Then increase Intensity to 100% when
+sure beam is hitting target.
+
+Red Emissions LED Defective
+Symptom: E00210 Red Emissions LED Defective received when
+keyswitch is armed.
+Red LED on marking head and on keypad are part of the safety circuit and
+laser power will not be enabled if either one of the LEDs is bad.
+• With power to laser system off, disconnect umbilical connector at rear of laser
+head and inspect pins on male side. Look specifically for bent pins or pins which
+are not sticking out as far as the others. Specifically focus on pins 31 and 32.
+• Check forward and backward resistance on the membrane keypad pins 2 - 10. If
+open, replace the keypad.
+• Check the resistance between leads on the marking head LED. If open, replace
+the LED.
+• Check continuity on shutter cable for HDLED_EMIS_RET and
+MBLED_EMIS_RET wires.
+- If open from HIC to Umbilical Connector replace umbilical.
+- If open from Umbilical Connector to CP - Light, replace laser head harness.
+
+SmartGraph Connection to PC
+Symptom: SmartGraph will not connect to laser
+• Confirm the version of PC SmartGraph matches the
+laser’s CMark version by connecting to Web Interface
+(Boot Log)
+• Edit marking system set correctly?
+• Is the PC IP address set correctly?
+• Is the correct network connection selected?
+• Confirm that the laser default IP setting is selected (DIP
+switch 1 ON) 192.168.1.1
+• Is the Ethernet cable in serviceable condition?
+-- Is it the correct cable (i.e. Crossover)
+• Can you ping the network address?
+• Check for activity at the Ethernet status LEDs
+
+System Status: Waiting for Trigger
+Symptom: SmartGraph status displays “Waiting for Trigger” but
+no marking
+• Web Interface
+- Trigger Enable voltage necessary – True (or default 3340 true)
+- Ensure 24V to Trigger Enable input on X25.9 - 12
+• Goes to ‘Waiting For Trigger’
+- Awaiting detection signal
+• Depends on settings in Product Registration / Line Settings
+• Check product detect connection
+• Verify product detect signal (LED on Chameleon flashes)
+
+Marking
+Symptom: Product and Mark Count increase, but no mark
+observed on product
+Checks
+• Parameter and Product Registration settings ( SmartGraph ) are correct
+• Product Sensor / Start Marking signal
+- System reports error if detector not attached. (If selected in Product
+Registration or Line Settings)
+• Encoder operation
+- System reports error if encoder not attached. (If selected in Product
+Registration or Line Settings).
+• Check Lase LED on back of laser tube. If doesn’t flash when mark count
+increases verify continuity of laser signals cable.
+• Obstructions in beam path
+- Conveyor guards
+- Extraction nozzles
+• Hardware
+- Sample burn
+- Output Power test
+
+Marking Quality
+Symptom: Mark quality is unacceptable
+Check
+• Is Marking Head perpendicular to product?
+• Is worst print quality in center of mark field (3640)?
+• Place message offset from center when possible
+• Is Marking Head settings in SmartGraph correct?
+• Mounting Position
+• Have parameters of installation changed?
+• Has product changed?
+• Does product contain calcium carbonate?
+• Product is wet or covered in ice?
+Diagnostic checks
+• Use installation Kompensation (Cross) template to
+check setup
+
+Specialized Tools:
+Part # Description What is it?
+Tool to reach potentiometer for laser PSU
+AL - 76378 TOOL,ADJUST,POTENTIOMETER
+Loosen/tighten umbilical nut inside supply unit
+AL - 76390 WRENCH,30MM,UMBILICAL
+Landing wires on customer interface connectors
+AL - 77274 WAGO TOOL,RAIL MNT TERMINAL BLOCK
+239547 0.9 mm Allen Fits fume extractor quick connector plug
+10 mm nut driver Chassis/Mounting Plate nut
+Generally useful CO2 tools (not 3140/3340 only):
+Part Number Description What is it?
+234657 Binder/Spanner wrench For removing quick connectors
+212450 Power wizard Synrad Power Wizard Power Meter
+Wago push down tool “Barbie Wrench” WAGO 734 - 191
+210820 CO2 only Safety Glasses
+Crossover Ethernet Cable
+239546 2.5 mm t - handle allen the millions of cover screws on laser head
+234642 2mm ball handle allen screwdriver style allen (CIJ part number)
+239544 2.5 mm ball handle allen Screwdriver style allen (CIJ part number)
+234644 3mm ball handle allen screwdriver style allen (CIJ part number)
+239545 5 mm Long T - handle allen Laser Tube screws
+210779 Laser Marking Paper Black ink coated cards for test marking
+234638 7 mm nut driver
+Metric/Standard tape measure 12 foot tape measure with metric & standard
+DIN Rail mountable relay socket and insert 24VDC relay (need both part #s to work)
+3 position Wago jumper block Useful for temporary wiring (3 snap down terminals)
+
+11. Ultimate 1.6
+
+What is Ultimate 1.6?
+1. General Information
+2. Features of Ultimate
+3. Protocol
+4. Interface Monitor
+
+General Information – What is TCL
+• TCL – Tool Command Language
+• Simple Syntax
+• “Everything is a String”
+• Scripting Language
+• Interpreter included in QMark / IceMark / CMark
+Available as an SAR
+Files are included in all new Qmark and CMark, but requires startup file
+from SAR group. Contact SAR group ( Alltec ) for file, instructions, and
+pricing.
+
+What is Ultimate 1.6?
+• Collection of most common features
+• Laser Operation
+• Template Adjustment
+• Variable Handling
+• Error Handling
+• Event Notification
+• Remotely control laser system without PC
+• Requires system to be setup up with SmartGraph
+
+General Information - Naming
+• ACC3
+- Ultimate3
+• Chameleon
+- Ultimate5
+• Platform independent since Version 1.6 “Ultimate 6”
+
+Available Interfaces
+RS232
+BaudRate 9600
+Databits 8
+Stopbits 1
+Parity None
+Handshaking Off
+TCP/IP
+Server/Client Application
+Server: Laser
+Client: Customer Network Device
+Listen Port 20001
+Event Port 20003
+
+General Information – Features/Limitations
+• Available as an SAR
+• Comes on a USB
+• Single Core Chameleon - Copy/Paste onto SD card in
+proper location (location depends on Qmark /CMark
+version) or upload using Interface Monitor Tool
+• Multi - Core Chameleon – Upload .zip file via Web Interface
+
+Single Core Chameleon - Setting Ultimate for
+TCP or RS232
+1) Ultimate comes set to use TCP by default
+2) Open tcl folder with Ultimate files from SAR group
+3) Open Setup.txt file in Notepad++
+4) Change interface from tcp to rs232
+5) Save file
+6) Files are now ready to install (see instructions for install on Single
+Core versus Multi - Core Chameleon.)
+
+Setting Ultimate for TCP or RS232
+Set to “ tcp ” by default
+Can change to “rs232” for serial communications
+
+Notes on Loading Ultimate
+Single Core Chameleon Multi - Core and Multi - Core Industrial
+Protocols Chameleon
+• Copy/paste files onto SD card in
+• Must format Ultimate files to load correctly
+location smarties/customer/ tcl
+• Upload via Web Interface or TCS+ (CMark
+• Do not drag and drop to
+4.7 or newer)
+copy/paste files
+• Zip files within tcl folder from USB
+• Ensure you navigate deep enough
+-- Zip using 7 - zip not Windows zip
+when pasting on card.
+-- Must be a .zip file type/extension
+
+General Information – Protocol/ Datastring
+• Encoding UTF - 8
+• Parameter Delimiter is Semicolon (0x3B)
+• End Delimiter is Carriage Return [CR] and Line Feed [LF] (0x0D, 0x0A)
+• Returns Acknowledged [ACK] or NotAcknowledged [NAK] (0x06, 0x15)
+• Command
+Commandname;Arguments ;<CR><LF>
+• Answer
+<ACK>; ResultCode;Arguments ;<CR><LF>
+<NAK>; ResultCode ;<CR><LF>
+• Event
+Event;EventName;Arguments ;<CR><LF>
+
+Interface Monitor
+
+Interface Monitor
+• Provides all features of Ultimate Interface
+• Connects to the laser on desired IP Address
+• Visualizes Event Notifications
+• Allows to log Debug Information and store them
+to file for further analysis
+• Why use?
+• Provides all of the most common functions at the
+push of a button rather than typing into RealTerm,
+Hercules, HyperTerminal. Less chance of mis -
+typing.
+• Allows for testing of functionality of Ultimate 6
+
+Interface Monitor
+Upload tab
+Field Function
+Laser IP Address Network address of the laser
+Ultimate Zip - File Path to Zip - File containing Ultimate TCL
+Upload Connects to laser and uploads TCL files
+
+Interface Monitor
+Connection tab
+Field Function
+Laser IP Address Network address of the laser
+Use Function Interface Allows to send commands to laser
+Use Event Interface Activates Event Socket to visualize
+events
+Use Debug Interface Allows to read Debug Information
+Connect Connects to the laser
+
+Interface Monitor
+Screen Structure
+Field Function
+Command Text Displays DataString sent to Laser
+ResultText Displays DataString received from Laser
+Result Code Result code of command
+Result Arguments Returned arguments
+Duration Duration from sending command until
+receiving answer in Milliseconds
+
+Interface Monitor
+Function Tab
+Field Function
+Operation Operation related functions
+Counter Counter functions
+JobHandling Manage Jobs
+Layout Layout Offsets
+Messages Error Handling
+Template Change Templates
+ParameterSet Parameter Set functions
+Product Registration Product Registration functions
+Variables Manage Variables
+System System Functions
+Buffer Value Queue Features
+
+Interface Monitor
+Field Function
+Debug Level Set Debug Level
+Log Folder Directory for Log
+File output
+Log Active Displays the current
+log status
+Start Log Creates a new file
+Stop Log Stops writing to the
+log
+deletes file if empty
+
+Testing with Hercules/HyperTerminal
+
+Troubleshooting Ultimate 6
+1) Are activated files installed on SD/MMC card or uploaded via Web
+Interface?
+a) Don’t drag and drop to copy/paste to SD card.
+b) Were files copied/pasted in Smarties/customer/ tcl ? Don’t paste to
+smarties/customer.
+c) Use 7 - zip to zip files for upload via Web Interface/TCS+ not Windows
+zip.
+2) Is interface type correct? Set by default to TCP/IP. If RS - 232 then
+Setup.txt file must be edited.
+3) Are comms settings correct? If TCP/IP is customer port number set to
+20001? If RS - 232, are baud rate, data bits, stop bits, etc. set correctly?
+4) If an existing customer switching from previous SAR for comms (such
+as SAR 09258), ensure they are using Ultimate commands and not
+commands from previous SAR. Use Interface Monitor tool to
+send/receive and compare to what customer sent/received. Commands
+are different than previous SARs.
+
+Hands On Exercise
+Create a message in SmartGraph :
+• Name template Service
+• Include a date with 30 day offset
+• Create an External Variable Field called “Lot”
+with “XXX” as characters
+Use the Interface Monitor to:
+• Change the Template to Service
+• Check the Status of the laser
+• Change the Variable in message to ABC
+• Change the date offset to 90 days
+
+12. Videojet Remote Service
+
+Requirements for Laser
+• Only available on 3140/3340/3640 lasers and most ACC -
+based lasers
+• Run utilization test on ACC - based lasers to see if enough processing power left on
+top of application needs
+• Minimum versions necessary for VRS on laser
+- CMark: 3.2.1
+- Qmark 8.7.0
+- Can use SmartGraph , Handheld, or CLARiTY
+- TCS 5.1 (earlier versions could not change IP TCS would look for)
+- If using CLARiTY Laser Controller, then
+- CLARiTY : 404756.CU.r02
+- CLARiSOFT : CS.4.409.SP7
+- CLARiTY CONFIG: 401242.r22
+- CLARiNET : CN.4.409.SP7
+• VNC only available on lasers with CMark 4.7 or newer (TCS+ and
+CLARiTY interfaces only)
+• Always use laser IP address and connect VRS to laser (even
+when using CLARiTY Laser Controller)
+
+Activate VRS on Laser in Web Interface
+1) Connect to Web Interface
+2) Login
+3) Laser menu option
+4) Select Config
+5) Change Laser Name to
+the Friendly name you
+have chosen for laser
+st
+6) Change 1 IP to desired
+IP for local User Interface
+connection
+7) Check Secondary IP
+enabled
+8) Enter IP that will be
+laser’s network IP
+address
+9) Click on Save
+
+Activate VRS on Laser - Continued
+1) Click on Other menu
+2) Select Remote Service option
+from drop - down
+3) Click Enabled Remote Service
+4) Enter Res IP as Plant Server IP
+(and Gateway if necessary)
+-- Do no use Automatically
+Detect Plant Server IP
+5) Save
+6) Reboot laser
+
+VNC option
+VNC not available on lasers
+unless CMark at least v. 4.7.x
+
+VRS with CMark 4.7 or newer
+
+VRS Capability – CMark 4.7
+• VNC now available with TCS+ or CLARiTY Laser Controller (CLC);
+no SmartGraph visibility
+• VRS dashboard takes you to TCS+ on laser and can switch to
+CLARiTY view from there by pressing Remote Access View. IP for
+Remote Access IP should already be set to CLC IP. Should be
+done on install of VRS.
+• Always use Service user login when taking control remotely so that
+interaction is captured in Event Log and also so logged out after 20
+minutes of no activity. Admin at site has to re - enable VNC after 20
+minutes of no activity from laser at RES.
+• Customer must enable VNC session locally and then once you
+take control remotely local user will see safety message, “Please
+make sure it is safe to mark” at start of session. You will be able to
+fire laser remotely! So use caution.
+• Can download Event Log remotely.
+
+VRS - Install
+• Wired or Wi - Fi available
+• Wi - Fi kit for 7340/7440 uses 48VDC from Terminal
+Block (do not use this kit for other lasers).
+• Wi - Fi kit for lasers uses AC power cords.
+
+VRS – Enable VRS on Laser TCS+
+Steps (TCS+ enable only in Cmark 4.7 or newer):
+1) From Laser Unit Settings>Network, change Laser IPs and
+laser Name. VRS should use secondary IP. Press Save.
+2) Reboot and connect on new IP.
+3) Go to Laser Unit Settings>Remote Service and enter Remote
+Edge Server IP and checkmark the Enabled Remote Service
+box.
+4) If using CLARiTY Laser Controller as interface then also
+enter the IP of the CLARiTY Controller in the Remote Access
+IP field.
+5) Save and reboot.
+Ensure that all IP addresses on the network including laser,
+RES, and any PCs all have unique IP addresses.
+
+VRS – Enable VRS on Laser
+Enter RES IP address and checkmark Enable Remote Service
+Customer checkmarks to
+Only need Remote Access IP if
+enable Remote Session
+CLARiTY Laser Controller is used
+
+VRS – Enable Remote Session on Laser
+• Customer must enable Remote Session locally via TCS+ (Laser Unit
+Settings>Remote Service and checkmark Remote Access Available).
+• No way to enable through CLARiTY Controller directly. Still requires
+enable through TCS+.
+
+VRS – Remote Access Functionality
+Select Printer to connect to
+from Customer Site List
+Click on Remotely Service
+Printer button
+
+Warning appears on customer interface
+Only use for access to CLARiTY
+Set to IP of laser for TCS+ view;
+IP of CLC for CLARiTY view
+
+VNC – Remote View CLARiTY
+To allow remote access session when CLARiTY laser, customer must
+hook up PC and connect to TCS+ first to Enable session.
+
+QUUU????9++++222?01Y%#".5##".'##".5463323>332q0%$00""0/%$06-.B0 "
+&4
+S@23222i@&&-e&ehh???99?/3/99//9901%#".''#"&&67&&66327>32?+18 5$->>7/61,39e0$L#+$
+I!IL??9?01Y#".'.54>327>32'C65C&1%
+0w9/+2,7+9+4#%a%E+CUX@%&%L@H'L'@K?+2?+2/99//01_^]^]@%%L@H'L'@K?+2?+201_^]^]Y%#!"&554>7!"&54>3!2!2N!`g
+&+*
+'3m*.?.!'-@'...+!!~??9/93]22/9/32201%###".55!".54>7>3232#3m@&&!2%*6"@""aaI1C8V1$,$,@44.1H@H/
+y;H@#.$/#//#08"/##5
+
+}~X++???99?01Y#".'#"&&67&>32>32
+{|X++????9?01Y%#".7##".'##".7663323>332 !+i' %-hw|"
+&0LlJ
+X++?++?99++?+?+?9999+01Y#".'&&54>3232>54.54>32&&54>3232##32>32#".54>7#"&54>3376654&#"#".#">5P]O57gZ/SC0"7R=7O44OO5,?LV/,4e`d
+ */8R8e}~+!+;ToE/*77T9ZU
+ */8R8e}~+!+3 3<UoC/*77T9ZU
+X++?+?++9/9+01Y4>32#".'&&54>3232>7#".732>76654&#"m3Qt`Z}P#.Ijx =7.%8M1dqM;^VzM#.I4%LJDbXF3"7zvkR05^N'}qCJ|.,KfQ%>,Dr-zk!:KTU_37k+X=
+{|X++??9/101
+{|X++?+?+901Y#".54>766324&#"3267>6Q6DkZ,$1;#JaT]2j`0f11'2N66d
+?dFnJ{Z2Q]9hS:A^p:OvO
+>0 `g<_''?0!,2<H3c],32!4c^z
+i &'$DwgWH;70 "
+F3-Oh;GR#
+-%
+8
+1J4!#J+1H/W!E+-$5#-_O2%;L
+
+t??/01#"&54>32#".#"326632!;*Id:+
+q2ts???99?/2901#".55#".54>324>32&&#"3267h0b<AZ8 @_?3U*h-Q-
+-$'?5$9
+;&
+%IlH+lkih&87|!:E:A??01#"&54>324&#"32>7=bHv<bHDa=WUW3A%VW4A$_r@_r@8mn8`~F8`~X+vF:G?2?301#!"&54633&54677663232|RtI.&1:$E0<G??901#!"&54677>54.#"#"5467>32!2&U5E
+
+/#&:
+$:
+&_"
+"15
+#U8*E7
+HIX++????9999???9/01#".#"32###"&'&54>3232>7!32>32#".54>7#"&54>337>32!7>32 /"=[|P:R!."mT&
+HIX++???9901%#".7!32>32#".54>7#"&54>337>32!2#".7>321%$0oT&
+.L3SG>!3&%/ l_"qMb|KHIX+CUX-
+JKX++?]q+]q+?9/?9?9/2399}01#".'&54>3232>7667#".54>3276632&&#"32>72U|U>3%&8
+HIX++??99//3301#".7>32#".54>76632+
+D7
+T%*"%08x|WI9-I9-pn"3+
+TUDEX+?33?39/3232339=/3301#"&7#"&'#"&76633266332Z'85#i#2'Pi
+
+,,0,,&,,,,,,,,,y,,o,,e,,[,,Q,,d,,Z,,m,1,,,I,!,,nQQQQQ&&&Q,"&&&&&N&&Q&+&*-&&&&-G&&&&&&&&&&-{&&&&&&&
+.i....Q....6.k....Q.Q...<.}...'.h....P....5.j...*Q.P....:.{....^..//I/~///5/j////R/// /</}!//#"%$&

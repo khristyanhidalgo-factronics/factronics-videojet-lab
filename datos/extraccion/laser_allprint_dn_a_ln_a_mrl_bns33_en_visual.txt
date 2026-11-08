@@ -1,0 +1,423 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\mrl_bns33_en.pdf
+# cifrado=True bloques=19 caracteres=16131
+
+Operating instructions
+Safety sensor BNS 33
+1. About this document
+1.1 Function
+This operating instructions manual provides all the information you
+need for the mounting, set-up and commissioning to ensure the safe
+operation and disassembly of the safety switchgear. The operating
+instructions must be available in a legible condition and a complete ver -
+sion in the vicinity of the device.
+1.2 Target group: authorised qualified personnel
+All operations described in this operating instructions manual must
+be carried out by trained specialist personnel, authorised by the plant
+operator only.
+Please make sure that you have read and understood these operat -
+ing instructions and that you know all applicable legislations regarding
+occupational safety and accident prevention prior to installation and
+putting the component into operation.
+The machine builder must carefully select the harmonised standards to
+be complied with as well as other technical specifications for the selec -
+tion, mounting and integration of the components.
+1.3 Explanation of the symbols used
+EN 1
+
+Information, hint, note:
+This symbol is used for identifying useful additional informa -
+tion.
+Caution: Failure to comply with this warning notice could
+lead to failures or malfunctions.
+Warning: Failure to comply with this warning notice could
+lead to physical injury and/or damage to the machine.
+1.4 Appropriate use
+The products described in these operating instructions are developed to
+execute safety-related functions as part of an entire plant or machine. It
+is the responsibility of the manufacturer of a machine or plant to ensure
+the correct functionality of the entire machinery or plant.
+The safety switchgear must be exclusively used in accordance with the
+versions listed below or for the applications authorised by the manufac -
+turer. Detailed information regarding the range of applications can be
+found in the chapter "Product description".
+1.5 General safety instructions
+The user must observe the safety instructions in this operating instruc -
+tions manual, the country-specific installation standards as well as all
+prevailing safety regulations and accident prevention rules.
+Further technical information can be found in the Schmersal
+catalogues or in the online catalogue on the Internet:
+
+Content
+1 About this document
+1.1 Function .............................................. 1
+1.2 7DUJHWJURXSDXWKRULVHGTXDOLHGSHUVRQQHO .................. 1
+1.3 Explanation of the symbols used ........................... 1
+1.4 Appropriate use ........................................ 1
+1.5 General safety instructions ...............................
+www.schmersal.net.
+The information contained in this operating instructions manual is pro -
+vided without liability and is subject to technical modifications.
+There are no residual risks, provided that the safety instructions as well
+as the instructions regarding mounting, commissioning, operation and
+maintenance are observed.
+
+1
+1.6 Warning about misuse ................................... 2
+1.7 Exclusion of liability ..................................... 2
+2 Product description
+2.1 Ordering code ......................................... 2
+2.2 Special versions ........................................ 2
+2.3 Destination and use ..................................... 2
+2.4 Technical data ......................................... 2
+2.5
+
+6DIHW\FODVVLFDWLRQ ..................................... 2
+3 Mounting
+3.1 General mounting instructions ............................. 3
+3.2 Dimensions ........................................... 3
+3.3 Axial misalignment ...................................... 3
+3.4 Adjustment ............................................ 4
+4 Electrical connection
+4.1 General information for electrical connection .................. 4
+4.2 Contact variants
+
+........................................ 4
+4.3 Connector plug ......................................... 4
+5 Set-up and maintenance
+5.1 Functional testing ....................................... 5
+5.2 Maintenance .......................................... 5
+6 Disassembly and disposal
+6.1 Disassembly ........................................... 5
+6.2 Disposal .............................................. 5
+7 Appendix
+7.1 EC Declaration of conformity
+
+.............................. 6
+
+EN Operating instructions . . . . . . . . . . . . . pages 1 to 6
+Translation of the original operating instructions
+x.000 / Dezember 2012 / v.A. - 101114748-EN / N / 2012-12-13 / AE-Nr. 2158
+
+1.6 Warning about misuse Connecting more than two magnetic safety sensors BNS 33-12z to the
+safety monitoring modules AES 1112/7112 is not possible.
+In case of inadequate or improper use or manipulations of the
+safety switchgear, personal hazards or damage to machin - In case of series-wiring at SRB max. 1 sensor with LED indication
+ery or plant components cannot be excluded. The relevant for U .
+N
+requirements of the standard EN 1088 must be observed.
+The user must evaluate and design the safety chain in ac -
+1.7 Exclusion of liability cordance with the relevant standards and the required safety
+We shall accept no liability for damages and malfunctions resulting from level.
+defective mounting or failure to comply with this operating instructions
+manual. The manufacturer shall accept no liability for damages result -
+ing from the use of unauthorised spare parts or accessories. If multiple safety components are wired in series, the Perfor -
+mance Level to EN ISO 13849-1 will be reduced due to the
+For safety reasons, invasive work on the device as well as arbitrary re - restricted error detection under certain circumstances.
+pairs, conversions and modifications to the device are strictly forbidden;
+the manufacturer shall accept no liability for damages resulting from
+such invasive work, arbitrary repairs, conversions and/or modifications The entire concept of the control system, in which the safety
+to the device. component is integrated, must be validated to EN ISO 13849-2.
+2.4 Technical data
+2. Product description Standards: IEC 60947-5-3; BG-GS-ET-14
+Enclosure: glass-fibre reinforced thermoplastic
+2.1 Ordering code Protection class: IP67 to EN 60529
+This operating instructions manual applies to the following types: Termination: Boflex cable or M8 connector
+Connecting cable: 4 x 0.25 mm
+BNS 33- Z -
+Version with integrated connector: M8 x 1, 4-pole
+No. Option Description Tightening torque for connectors: max. 0.3 Nm
+Operating principle: magnetic
+11 1 NO contact / 1 NC contact Actuator: BPS 33; BPS 33; coded
+12 1 NO contact / 2 NC contact Limit distances:
+without LED Assured switching distance s : 5 mm (BPS 33);
+ao
+G with LED 8 mm (BPS 33-2326)
+Connecting cable Assured switch-off distance s : 15 mm (BPS 33);
+ar
+ST integrated connector 15 mm (BPS 33-2326)
+Switching condition indication: LED only with ordering suffix G
+2.2 Special versions Rated insulation voltage U : 32 V
+i
+For special versions, which are not listed in the order code below 2.1, Rated impulse withstand voltage U : 0.8 kV
+imp
+these specifications apply accordingly, provided that they correspond to Switching voltage: without LED: max. 100 VAC/DC
+the standard version. with LED: max. 24 VDC
+with connector: max. 60 VAC/DC
+2.3 Destination and use Switching current: without LED: max. 400 mA
+The BNS 33 safety sensor is designed for application in safety circuits with LED: max. 10 mA
+and is used for monitoring the position of movable safety guards to EN Switching capacity: without LED: max. 10 W
+1088 and IEC 60947-5-3. To actuate the safety sensors, only the BPS with LED: max. 240 mW
+33 actuators can be used. Required short-circuit current: 100 A
+Ambient temperature: &&
+The safety switches are used for applications, in which the hazardous Storage and transport temperature: &&
+situation is terminated without delay when the safety guard is opened. Repeat accuracy R: [V
+ao
+Max. switching frequency: 5 Hz
+Only the entire system consisting of the safety sensor (BNS 33), the Resistance to shock: 30 g / 11 ms
+actuator (BPS 33) and the safety-monitoring module (AES, SRB) meets Resistance to vibration: 10 ... 55 Hz, amplitude 1 mm
+the requirements of the standard IEC 60947-5-3.
+2.5 Safety classification
+Information for the selection of suitable safety-monitoring Standards: EN ISO 13849-1, EN 60947-5-3
+modules can be found in the Schmersal catalogues or in the B (NC/NO contact): 25.000.000
+10d
+online catalogue on the Internet: www.schmersal.net. at max. 20 % contact load
+Service life: 20 years
+Connecting multiple EX-BNS 33-11Z safety sensors to one AES safety-
+Bd xxh3600s/h
+monitoring module is technically possible. To connect multiple safety
+n
+op
+MT TF 10d opop
+d
+0,1 x n t
+sensors (check if authorised!), their NO contacts are wired in parallel op cycle
+and their NC contacts in series. The Protect-IE-11 or PROTECT-PE-11
+(-AN) input expander module can be used to connect up to 4 safety (Specifications can vary depending on the application-specific param -
+sensors with NC/NO contacts. For safety sensors with LED, the LED is eters h , d and t as well as the load.)
+op op cycle
+illuminated when the safety guard is open. If safety sensors with LED
+are used, the light intensity of the LED's will decrease as the number of
+open safety guards increases.
+Safety sensors equipped with LED's shall not be wired in series, except
+for the Protect-IE or PROTECT-PE input expander module. As a result
+of this, the luminosity of the LED's would considerably decrease and
+the voltage could drop below the minimum input voltage of the down -
+stream safety-monitoring module.
+2
+
+Operating instructions
+Safety sensor BNS 33
+EN
+
+3. Mounting Actuator
+88
+78
+3.1 General mounting instructions
+4,5
+)LWWLQJLVRQO\DXWKRULVHGLQDGHHQHUJLVHGFRQGLWLRQ
+5
+'RQRWXVHWKHVHQVRUDQGWKHDFWXDWRUDVDPHFKDQLFDOEDFNVWRS
+$Q\PRXQWLQJSRVLWLRQSURYLGHGWKDWWKHDFWLYHVXUIDFHVDUHRSSRVLWH
+73,5
+25
+,QVHSDUDEO\IL[WKHVDIHW\VHQVRUDQGWKHDFWXDWRUWRWKHVDIHW\JXDUG
+1318,53
+(QVXUHWKHVDIHW\VHQVRULVPRXQWHGRQDIODWVXUIDFHVWRDYRLGWHQVLOH
+stresses that could damage the sensor or lead to varying switching
+distances
+'RQRWLQVWDOOWKHVDIHW\VHQVRUDQGWKHDFWXDWRULQVWURQJPDJQHWLF
+fields
+,ISRVVLEOHGRQRWPRXQWWKHVHQVRUDQGWKHDFWXDWRURQIHUURPDJQHWLF
+material. Otherwise, the following variations of the switching distances
+may be expected: A distance of 05 mm from the mounting surface
+to the ferromagnetic material: switching distance is only approx. 40 % Spacer
+7 5
+of the original switching distance; A distance of 58 mm: approx. 80 % 8,
+of the original switching distance; > 10 mm: no change (use spacer
+BN 31/33)
+5
+'RQRWVXEMHFWWKHVDIHW\VHQVRUDQGDFWXDWRUWRH[WUHPHYLEUDWLRQV
+and shocks.
+.HHSDZD\IURPPHWDOFKLSV
+7KHPRXQWLQJGLVWDQFHEHWZHHQWZRVHQVRUVVKRXOGDOZD\VEHDW
+3,5
+least 50 mm
+2510
+18,513
+3.2 Dimensions
+8878
+All measurements in mm.
+Safety sensor with cable
+88
+3.3 Axial misalignment
+78 1000
+4,5 A horizontal and vertical misalignment of the safety sensor and the
+5LED
+actuator is tolerated. The possible misalignment depends on the dis -
+73,5
+18,5
+6,5
+7,5 tance of the active surfaces of the sensor and the actuator. The sensor
+remains active within the tolerance range.
+25
+The specified switching distances refer to opposedly mounted safety
+sensors and actuators. Different arrangements are possible, may lead
+to different switching distances, however.
+133
+2
+4
+5
+5,5
+6
+0
+1
+2
+3
+4
+5
+Safety sensor with connector
+4,5
+6
+5,5
+5
+34
+518,5
+0,5
+3,57
+25
+78
+assured switching distance:s = 5 mm,
+ao
+88 M8
+8mm (Ordering suffix -2326)
+assured switch-off distance:s = 15 mm
+ar
+18 mm (Ordering suffix -2326)
+133
+15
+A B
+54 15015
+66 33
+Legend
+A Base position area (sensor actuated, release)
+B Switch-off area (at the latest at this point,
+all Reed contacts are not actuated)
+3
+
+Operating instructions
+Safety sensor BNS 33
+EN
+
+3.4 Adjustment 4.3 Connector plug
+If the central marking of the actuator is within the represented base po -
+sition area, a release signal is given at the connected safety-monitoring
+Integrated connector M8, 4-pole
+module.
+Since under certain operation circumstances or due to tolerances, the
+case may happen that both outputs in the safety sensor do not operate
+124 3
+precisely simultaneously, the LED cannot be the only criterion for a
+correct adjustment.
+4. Electrical connection
+4.1 General information for electrical connection Accessories: connecting cable with coupling
+M8, 4-pole, 2 m 5 m 10 m
+The electrical connection may only be carried out by author -
+PUR, screw terminals
+ised personnel in a de-energised condition.
+1 BN
+straight 101209947 101209981 -
+The safety sensors must be wired in accordance with the wire colours
+2 WH
+3 42
+1
+or the pin configuration.
+3 BU
+angled 101204903 101204904 -
+4 %.
+4.2 Contact variants
+The contact position shows the actuated sensor function when the
+safety guard is closed. If the safety sensor is equipped with a LED, the
+8 mm, 4-pole, 2 m 5 m 10 m
+LED will be illuminated when the guard is open.
+PVC, cage clamps
+Safety contacts:S21-S22 and S11-S12 or S13-S14 1 BN
+straight 101209940 101209941 101209927
+or C-S22 and C-S12 or C-S14
+2 WH
+3421
+Signalling contact:S31-S32 or C-S32
+3 BU
+angled 101209987 101209995 101209939
+4 %.
+The numbers between brackets indicate the PIN configuration of the
+versions with integrated connector; indication of the wire colours for the
+version with cable.
+Accessory: Y-adapter BNS-Y-11
+BNS 33-11Z
+BNS 33-11Z-2063 BNS 33-11ZG
+BK 13WH 2114 BU22 BN
+BK 13
+WH 2114 BU22 BN
+BNS 33-12Z
+BNS 33-12Z-2063 BNS 33-12ZG
+BK 22WH 3214 BUC BN
+BK 22
+WH 3214 BUC BN
+BNS33-11Z
+1234
+S2112AES12
+S22S133SRB3
+S144 BNS-Y-114
+BNS 33-11ZST BNS 33-11ZST
+13 14 13 14
+21 22 21 22
+1234 1234
+BNS 33-12ZST BNS 33-12ZST
+22 14 22 14
+c c
+32 32
+1234 1234
+4
+
+5. Set-up and maintenance 6. Disassembly and disposal
+5.1 Functional testing 6.1 Disassembly
+The safety function of the safety components must be tested. The fol - The safety switchgear must be disassembled in a de-energised condi -
+lowing conditions must be previously checked and met: tion only.
+1. Fitting of the sensor and the actuator.
+2. Fitting and integrity of the power cable. 6.2 Disposal
+3. The system is free of dirt and soiling (in particular metal chips). The safety switchgear must be disposed of in an appropriate manner in
+accordance with the national prescriptions and legislations.
+5.2 Maintenance
+In the case of correct installation and adequate use, the safety sensor
+features maintenance-free functionality.
+A regular visual inspection and functional test, including the following
+steps, is recommended:
+&KHFNRIWKHVDIHW\IXQFWLRQ
+&KHFNWKHILWWLQJRIWKHVHQVRUDQGWKHDFWXDWRU
+5HPRYHSRVVLEOHPHWDOFKLSV
+&KHFNWKHFDEOHIRUGDPDJH
+Damaged or defective components must be replaced.
+5
+
+7. Appendix
+7.1 EC Declaration of conformity
+EC Declaration of conformity
+Translation of the original Translation of the original declaration of conformity .$6FKPHUVDO*PE+&R.*
+Declaration of Conformity Industrielle Sicherheitsschaltsysteme
+Mddinghofe 30, 42279 Wuppertal
+Germany
+Internet: www.schmersal.com
+We hereby certify that the hereafter described safety components both in its basic design and con -
+struction conform to the applicable European Directives.
+Name of the safety component: BNS 33
+Description of the safety component: Coded safety-sensor with magnetic operating
+principle in combination with the AES / AZR /
+SRB safety-monitoring modules from Schmer -
+sal or an equivalent safety-oriented control
+V\VWHPIXOOOLQJWKHUHTXLUHPHQWV
+of the IEC 60947-5-3.
+Relevant EC-Directives: 2006/42/EC-EC-Machinery Directive
+Person authorized for the compilation of the Oliver Wacker
+technical documentation: Mddinghofe 30
+42279 Wuppertal
+Place and date of issue: Wuppertal, November 27, 2012
+Authorised signature
+Philip Schmersal
+Managing Director
+The currently valid declaration of conformity can be down -
+loaded from the internet at www.schmersal.net.
+6
+
+Operating instructions
+Safety sensor BNS 33
+BNS 33-C-DE
+EN
+
+K.A.Schmersal GmbH & Co. KG
+Industrielle Sicherheitsschaltsysteme
+Mddinghofe 30, D-42279 Wuppertal
+Postfach 24 02 63, D-42232 Wuppertal
+Phone:+49-(0)202-6474-0
+Telefax+49-(0)202-6474-100
+E-Mail:info@schmersal.com
+Internet:http://www.schmersal.com

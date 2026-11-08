@@ -1,0 +1,115 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: drawings fibra\7510 Internal Technical Information.pdf
+# cifrado=False bloques=4 caracteres=3594
+
+08 Technical description, drawings
+Technical description
+General
+Lasersystem VJ7510
+Overall System Mechanical Configuration supply unit - marking unit
+Construction Material metal housing with one plastic cover on the head
+weight Head 8 kg, Supply unit 15 kg
+Environment Operating temperature Temperatur: 15  35 °C, up to 40 °C with up to 70% laser power
+Storage temperature -10 - 70 °C
+Humidity 10-90% noncondensing
+IP rating Head IP54 Supply unit IP21
+cooling air automatic overheat detection
+noise level (1 m distance)
+Laser System VJ7510
+Laser Source Laser Type ytterbium fiber laser
+Laser - Average Power [W] 50
+Operating mode pulsed (Q-switch)
+Maximum Pulse Energy [mJ] 1
+Pulse Duration [ns] 100
+Umbilical Length [m] 3
+Pulse Frequency [kHz] 2 - 200
+Beam Diameter [mm] 6 - 9
+M² of Laser Beam < 2
+Specification E27129 R01
+Note
+Model YLP-V2-1-
+100-50-50-AL
+Interface Type E: E27110 R01
+Item #
+mechanical beam shutter yes
+Supply Unit Height 132,5 mm
+Length 544,5 mm
+Width 482,6 mm
+Material painted sheet metal
+environmental protection IP21
+
+cooling air
+supply cable length 2m
+Laser System VJ7510
+Marking Unit connection unit with CP10 scannerhead
+Height 148 mm
+Length 558 mm
+Width 107,9 mm
+weight 8 kg
+material painted sheet metal, plastic cover
+environmental protection IP54
+cooling air
+umbilical length 3m
+min bending radius of umbilical 90 mm
+available optics 100, 160, 163, 254 and 420 mm
+laserpointer yes
+IMP camera no
+IMP lighting no
+Electrical supply
+Voltage range 100 - 240 Volt (autorange); 1-phase
+Frequency 50/60 Hz (autorange)
+electrical consumption 500VA max.
+standby current 60 mA@100V; 50mA@230V (not measured yet)
+Lasersystem VJ7510
+Compliance
+legislative standards CE
+CDRH Accesion number 1410353-000
+CB report yes
+RoHS conform yes
+Markinghead
+CP-10 head Optics
+
+focal length 100 mm 160 mm 163 mm 254 mm 420 mm
+working distance (mm) 122 200 223 339 543
+max width A (mm) 87,2 113,8 142,2 221,6 366,5
+max height B (mm) 113,6 173,7 181,8 283,0 498,4
+width for max area 63,6 108 119,8 194,0 314,5
+rectangle a (mm)
+height for max. area 80,3 122,8 128,6 200,1 368,1
+rectangle b (mm)
+max. ellipse width A' (mm) 90.0 152,7 169,4 274,4 444,7
+max. ellipse height B' (mm) 113,6 173,7 181,8 283,0 520,6
+width of max square area c (mm)
+Focus spot size (µm)    *) 37,5 59,9 61,1 95,1 157,3
+*)
+The stated Spotsize data is based on theoretical calculations!  All data refere to a nominal input beam diameter of 7,5 mm at 1/e²-intensity levels, gaussian distribution assumed!
+According to IPG beam specs there are tolerances that can lead to significant deviations from the above stated focus spot sizes.
+Aberrations introduced by the objective are not included!
+Attention!
+Spot size data is not valid for Y.0301 because the associated laser source provides only a samller nominal input beam diameter (Ø 5mm).
+
+Compounents
+Category Compounent Article Number Index
+PCB Complex: BOARD,CPU,CHAMELEON,WITH FAN FO-110908 AE
+BASE-BOARD-CP-10 FO-108262 AG
+PO-BOARD-PDIFF,CP10 FO-108774 AD
+SAFETY CONTROL,FASS,V1.0 [RoHS] FO-109119 AA
+PCB easy: HEAD-INTERFACE-HIC,CP-10 FO-108276 AC
+Laser interface board LIC-YLP FO-108528 AD
+CPD FO-109500 AF
+CP-STEP FO-108784 AD
+PILOTLASER FO-108503 AB
+LUMINOUS-TAPE,CPFLEX,CP10 FO-108802 AB
+Memory Card: SD-Card
+EEPROM
+Battery: 1x
+Power Supply: 3x
+Cable: 2x
+Umbilical: 1x
+Galvos: 2x
+Keyborads: MEMBRANE KEYBOARD,VIDEOJET,COBRA [RoHS] FO-111071 AB
+Fan: 1x
+Beam source: Fiber
+Optics for smal power densities: 2x
+CAD Drawings
+A complete 3D modell and the harness are stored on the fileserver: P:\Entwicklung\int\Systemdaten\Faserlaser\VJ7510\Design
+Marketing material

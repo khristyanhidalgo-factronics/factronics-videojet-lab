@@ -1,0 +1,174 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\Nueva carpeta\78972-AC WiFi Setup.pdf
+# cifrado=False bloques=16 caracteres=8746
+
+AL-78972Service Part Installation Instruction
+WiFi Setup with wAP MikroTik
+1 WiFi Setup with wAP MikroTik
+1.1 Required C o mp o n e n t s
+To enable WiFi access to the laser the upgrade following:kit (AL-78968-AB) is required. It contains the
+AL-78968-ABQuantityDescription
+AL-789691POWER SUPPLY,WIFI ACCESS POINT,US,POE 12W
+3939151WIFI ACCESS POINT, MIKROTIK
+3928912LAN CABLE, PATCH 3
+AL-789811CABLE,POWER SUPPLY US,WIFI ACCESS POINT,EU
+AL-789821CABLE,POWER SUPPLY US,WIFI ACCESS POINT,UK
+AL-789831CABLE,POWER SUPPLY US,WIFI ACCESS POINT,JP
+AL-789841CABLE,POWER SUPPLY US,WIFI ACCESS POINT,CH
+AL-789721MANUAL,KIT,WIFI ACCESS,ENGLISH
+Additionally required for Videojet 7x40 and FOBA Y.0x00-xs:
+AL-80385 1HARNESS, INTERNAL POWER SUPPLY, WLAN KIT
+09/19 - Rev. AC 1
+
+Service Part Installation InstructionAL-78972
+WiFi Setup with wAP MikroTik
+1.2 Setup and Connection of MikroTik
+1.Connect mains cable (1) to the POE adapter (if the mains cable from the kit is appropriapower supply) (2). The POE is not necessaryte for the customer site. Connect the POE adapter
+with MikroTik wAP (3) using one of the LAN cables (4) from the kit and close the cover (5).
+NoteCables from the kit might be black or white.
+2.Download and install the WinBox apllication if you have not already done so.
+Go to https://www.mikrotik.com/download
+Click the WinBox button and select the latest version.
+3.Power on your laptop and ensure WifFi is enabled.Do not connect the MikroTik Ethernet cable to your PC yet.
+4.Click the network icon in your system tray to open the list of available WiFi networks.
+MikroTik with POEMikroTik with power cord from the kit
+1
+13
+24
+3
+5
+4
+2 09/19 -Rev. AC
+
+AL-78972Service Part Installation Instruction
+WiFi Setup with wAP MikroTik
+5.Select the MikroTik-XXXXXX network where the "wAP MAC address. If you need to confirm this, the MAC address on the back of the wAPXXXXXX" is the last six characters of the
+device and on the packaging.
+6.If you cannot find the MikroTik-XXXXXX network open a web browser.
+NoteThe MikroTik ships in two different configurations, one of which does notbroadcast WiFi out of box. If your wAP does not broadcast a WiFi network out of
+the box, skip ahead to step 11.
+7.Type 192.168.88.1 into the address bar and press Enter. This will connect you to the WCAand allow you to configure it.
+If prompted for credentials:
+8.Click Reset Configuration in the lower right corner.
+09/19 - Rev. AC 3
+
+Service Part Installation InstructionAL-78972
+WiFi Setup with wAP MikroTik
+9.Click to toggle on No Default Configuration and Do Not Backup.
+10.Click Reset Configuration again and click OK when prompted to confirm.
+11.Connect the Ethernet cable into the POE (1). If the mains cable from the kit fits the customersite, connect the Ethernet cable to the MikroTik (2). Connect the wAP device to your laptop
+by plugging the other side of the Ethernet cable into your laptop.
+12.Open the WinBox application.
+1 2
+Mains cable
+Ethernet cable
+4 09/19 -Rev. AC
+
+AL-78972Service Part Installation Instruction
+WiFi Setup with wAP MikroTik
+13.Enter the MAC Address of the wAP devices ETH1 NIC as printed on the device itself in thetext field Connect To.
+14.Click Connect and wait one minute before proceeding.
+15.Maximize the WinBox window.
+16.If RouterOS Default Configuration window pops up, you must remove the configuration now.If it does not, continue to step 17.
+Click Remove Configuration and confirm when prompted.
+On the left side of the screen, select Systems | Reset Configuration.
+09/19 - Rev. AC 5
+
+Service Part Installation InstructionAL-78972
+WiFi Setup with wAP MikroTik
+Click to toggle on No Default Configuration and Do not Backup.
+Click Reset Configuration again and click OK when prompted to confirm.
+17.Select Quick Set on the left side of the WinBox window.
+NoteProceed with section 1.3 Client Mode to join to an existing WiFi-Network Client Mode or 1.5 Access Point Mode - to provide a WiFi-
+Network Access Mode.
+6 09/19 -Rev. AC
+
+AL-78972Service Part Installation Instruction
+WiFi Setup with wAP MikroTik
+1.3 Client Mode to join to an existing WiFi-Network
+This instruction will describe how to setup the MikroTik (A) connects to an existing Wireless LAN Network (WiFi) (B). The laser system isMikroTik in Client Mode. In Client Mode the
+connected to the WiFi adapter.
+1.In the top right corner under Configuration, select Bridge.
+2.In the Bridge group, select Automatic for DHCP networks or Static (preferred) to assignan IP address.
+09/19 - Rev. AC 7
+
+Service Part Installation InstructionAL-78972
+WiFi Setup with wAP MikroTik
+3.If present, toggle Bridge all LAN Ports to ON. If this feature does not appear in the Bridgegroup, move on tho the next step.
+4.In the Wireless group, select the WiFi network to which you will connect.
+5.Enter the password into the text field WiFi Password and click Connect.
+6.Click Apply in the upper right corner of the window and then click OK (also in the upperright corner).
+The device is now fully configured.
+7.Reboot the wAP and verify that your laptop connected to the network and Internet.
+8.Reconnect to the wAP via WinBox using the device MAC Address.
+9.Set a new password on the wAP.
+Enter the "Customer Site ID number" for this customer site in to the text field Password.
+Reenter the same value into the text field Confirm Password
+Click Apply
+When logging into the wAP in the future, use the admin username and the "Customer Site ID number" ID that you just entered as the password.
+8 09/19 -Rev. AC
+
+AL-78972Service Part Installation Instruction
+WiFi Setup with wAP MikroTik
+1.4 Connect MikroTik to Laser
+1.Disconnect the MicroTik Ethernet cable from your laptop.
+1.4.1 Power Supply Connection (Only 7x40 and Y.0x00-xs)1.Open the housing cover of the supply unit.
+2.Guide the power supply cable AL-80385 through the appropriate cable gland into the supplyunit and connect the wires to -X100 as follows:
+-W154 white to pin 7-W154 brown to pin 8
+3.Connect the other end of the power supply cable to the MikroTik.
+4.For connecting the ethernet cable see next section.
+-W154
+-W155
+09/19 - Rev. AC 9
+
+Service Part Installation InstructionAL-78972
+WiFi Setup with wAP MikroTik
+1.4.2 Connection to Fiber Lasers1.Open the housing cover of the supply unit.
+2.Remove cable gland by loosening screws on the housing. The screw connection can appeardifferent on different laser types.
+3.Remove the plug in the upper left corner.
+4.Insert the Ethernet cable into a grommet and insert it into the cable gland.
+5.Fasten the cable gland by fastening the screws.
+6.Connect the Ethernet cable to the Ethernet port on the Chameleon Board.
+10 09/19 -Rev. AC
+
+AL-78972Service Part Installation Instruction
+WiFi Setup with wAP MikroTik
+7.Fix the Ethernet cable to the grommet using a cable tie.
+8.Close the housing and attach the MikroTik to the laser system.
+1.4.3 Connection to CO2 Laser Systems1.Connect MikroTik Ethernet cable to Ethernet port on the outside of the laser systems
+supply unit and attach the MikroTik to the laser system.
+09/19 - Rev. AC 11
+
+Service Part Installation InstructionAL-78972
+WiFi Setup with wAP MikroTik
+1.5 Access Point Mode - to provide a WiFi-Network
+This instruction will describe how to setup the MiMode the MikroTik (A) provides a Wireless LAN kroTik in Access Point Mode. In Access PointNetwork (WiFi) and you can directly connect
+your mobile Devices (B) to the Laser-System.
+1.Follow steps in section 1.2 Setup and Connection of MikroTik.
+2.Change "Quick Set" to "WISP AP" using the drop down menu in the upper left part of thewindow.
+3.In the top right corner under Configuration, select Bridge.
+12 09/19 -Rev. AC
+
+AL-78972Service Part Installation Instruction
+WiFi Setup with wAP MikroTik
+4.In the Bridge group select Automatic for DHCP networks or Static (preferred) to assignan IP address.
+5.If you select static enter the IP address and netmask in the text fields IP Address andNetmask.
+6.Under Wireless select Wireless Protocol.
+09/19 - Rev. AC 13
+
+Service Part Installation InstructionAL-78972
+WiFi Setup with wAP MikroTik
+7.Enter the name of the network in the text field Network Name.
+8.Under Band select "2GHz-B/G/N" from the drop down menu.
+9.Under Country choose the country from the drop down menu.
+10.Under Security, toggle on WPA and WPA2.
+11.Select Encryption.
+12.Define WiFi password, enter it into the text field WiFi Password and click Connect.
+14 09/19 -Rev. AC
+
+AL-78972Service Part Installation Instruction
+WiFi Setup with wAP MikroTik
+13.In the upper right corner of the window click Apply and then OK.
+14.Connect the MikroTik to the laser by following steps in section Laser. 1.4 Connect MikroTik to
+15.Reboot the wAP.
+16.Use your mobile device and connect to the network with name that you just configured.
+09/19 - Rev. AC 15

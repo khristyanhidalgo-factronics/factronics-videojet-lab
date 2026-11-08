@@ -1,0 +1,781 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\LN100 Lesson 5 Communication.pdf
+# cifrado=False bloques=43 caracteres=29689
+
+L esson 5 – Communications
+Table of Contents
+Introduction ……………………………………………………………………… 5 - 2
+Objectives ……………………………………………………………………… 5 - 2
+Activities ……………………………………………………………………… 5 - 2
+AllprintBasic ……………………………………………………………………… 5 - 4
+Creating a ……………………………………………………………………… 5 - 5
+template
+Using allprintBasic ……………………………………………………………………… 5 - 7
+Transferring ……………………………………………………………………… 5 - 13
+AllprintBasic
+Using Realterm ……………………………………………………………………… 5 - 19
+software
+Hex, binary, oct ……………………………………………………………………… 5 - 2 3
+chart
+Realterm ……………………………………………………………………… 5 - 25
+AllprintBasic ……………………………………………………………………… 5 - 31
+examples
+Eternal templates ……………………………………………………………………… 5 - 36
+Videojet Technologies Inc. 5 - 1 January, 2008
+
+Lesson 5 – AllprintBasic so ftware
+Introduction
+❑ This lesson will provide the participants with AllprintBasic hands - on
+experience using serial communications. The purpose of this exercise is to
+remotely change data in external text field designed in Smartgraph.
+❑ How to install and create templates for the CAN I/O.
+❑ Warning: all participants to use safety glasses
+❑ Warning: power the laser down prior to installing the serial cable
+Objectives
+❑ Demonstrate the ability to create a template using external text.
+❑ Demonstrate the ability to create a n A llprint B asic file.
+❑ Upload and activate the current AllprintBasic file in web interface.
+❑ Demonstrate the ability to create a template list.
+Activities
+❑ Send remote data and mark once using AllprintBasic.
+❑ Locate I/O terminals and use the template list feature in S martgraph the
+setup and select vari ous templates.
+5 - 2
+Videojet Technologies Inc. January, 2008
+
+References & The following is a list of references & materials for this topic.
+Materials
+❑ LN100/DN50 YAG Training Guide
+❑ LN100/DN50 Technical Guide
+❑ LN100/DN50 PPT
+❑ LN100/DN50
+❑ Safety glasses
+❑ Cardstock
+❑ Serial cable
+❑ Crossover cable
+5 - 3
+Videojet Technologies Inc. January, 2008
+
+AllprintBasic Training
+Scope
+The purpose of this training is to introduce the technician to the AllprintBasic software. We will be using
+serial communication only for the training. The following message is designed to allow the first 12
+characters and only 4 to be used with an external template.
+Items needed
+Null modem cable
+VJ 3320/3120/3430/LN100/DN50 laser
+Hyper terminal or equivalent program
+AllprintBasic
+Template created in Smartgraph
+Safety glasses
+Note: check the compatibility list to ensure the right
+version of AllprintBasic is used with a compatible version
+of Smart Graph.
+5 - 4
+Videojet Technologies Inc. January, 2008
+
+Creating the template
+You will be creating the following templates in Smartgraph
+Note : see below before starting.
+5 - 5
+Videojet Technologies Inc. January, 2008
+
+First external text field
+Select external text
+Enter the following characters
+Name= Var1
+Text=8888
+Characters=4
+Check mark once
+5 - 6
+Videojet Technologies Inc. January, 2008
+
+Second external text field
+Name= Var2
+Text=88888888
+Characters=4
+Check mark once
+5 - 7
+Videojet Technologies Inc. January, 2008
+
+Third text field
+Name= Var3
+Text=8888
+Characters=4
+Check mark once
+Save template as “Game4 - 8 - 4”
+5 - 8
+Videojet Technologies Inc. January, 2008
+
+Using AllprintBasic
+This program is designed for project engineers who want to connect the Smart Laser System via its serial
+or digital interface to the customer's devices or control system.
+The Smart can be programmed by special entries in the Smart database to react to the diverse signals of
+the customer's hardware.
+With this tool these entries, here called documents, can be generated, loaded, imported, edited, tested,
+exported, saved and printed.
+Document types
+Customers can control the Smart via the serial interface or the digital interface. Since these interfaces are
+different, the documents which describe these interfaces are different, too.
+Generally documents consist of configuration elements and a basic - like language - AllprintBasic - which
+defines the reaction of the Smart to events or messages from the customer.
+5 - 9
+Videojet Technologies Inc. January, 2008
+
+Creating data
+1. Open AllprintBasic
+2. Select new
+3. Select serial
+Serial documents
+Before the second serial interface of the Smart can be used by the customer it must be configured.
+The following standard configurations are available:
+· Baud rate (600, 1200, 2400, 4800, 9600, 19200, 38400)
+· Number of data bits (8, 7)
+· Parity (NONE, ODD, EVEN)
+· Number of stop bits (1, 2)
+· Hardware handshaking (NONE, RTS_CTS)
+· Interface selection (RS_232, RS_422)
+Additionally different protocols can be selected which describe how the Smart should react when
+receiving characters.
+5 - 10
+Videojet Technologies Inc. January, 2008
+
+4. Make necessary changes to Configuration - Elements.
+Low level communication protocol
+The task of this protocol is to separate a stream of characters, which are received by the serial interface,
+into a message. Single characters are interpreted in a special way.
+There are three protocols available:
+The timeout protocol
+The 3964R protocol
+The EOTSUM protocol
+These protocols can be selected in the upper part of a serial document by clicking on the configuration
+element 'Protocol (Level 1)'.
+For this exercise we will be using EOTSUM protocol only.
+The timeout protocol
+This protocol separates data streams by using timeouts. The timeout can bet set in units of 20 ms in the
+upper part of a serial document by clicking on the configuration element 'Timeout Time'.
+Receiving:
+First of all the Smart Laser System awaits the first character of a message. After receiving it, a timer is
+started to measure the time between two characters. If the timer reaches the timeout, any characters that
+were received before this event are combined to one message.
+Transmitting:
+Messages are sent directly without any controlling.
+The 3964R protocol
+This communication protocol, which was first introduced by 'Siemens', provides a higher communication
+security for data transmissions. The messages are included by predefined control characters and
+transmissions are only possible after a special preparation between the Smart Laser System and the
+customer's hardware before every transmission. Additionally a kind of checksum is transmitted to
+recognize transmission errors.
+For further information on the 3964R protocol please refer to a general description of the 3964R.
+5 - 11
+Videojet Technologies Inc. January, 2008
+
+The EOTSUM protocol
+This protocol manages a transfer of ASCII characters between a master and slave and offers a framing
+and a simple checksum.
+The master (i.e. host PC) frames each telegram with a "Start of Text" and "End of Transmission"
+character. The transmission is completed by the transmission of the checksum cc. The protocol follows
+the rule [STX] "mydata" [EOT] cc.
+If the slave (i.e. Smart) receives the telegram and computes the same cc it replies with an acknowledge
+[ACK], otherwise with a negative acknowledge [NACK].
+If the cc was correct the slave can reply to the master using the command "Send". The answer is framed
+with [EOT] and cc.
+Example:
+<STX>"mydata"<EOT>cc #sent by the host PC (master)
+<ACK> #generated automatically by the protocol (slave)
+126<EOT>cc #if the ALLPRINT Basic program reacts with send("126") to the incoming
+"mydata"
+The checksum is a simple 8 - bit addition including all control characters.
+High level communication protocol
+After the characters from the serial interface are separated into a complete message by the low level
+communication protocol, the messages are relayed to this protocol level. Here the messages are
+interpreted and assigned to Smart commands.
+The AllprintBasic protocol
+This protocol provides the greatest flexibility to adapt to the customer's specifications. With a special
+AllprintBasic instruction string the reaction of the Smart Laser System to a message of the customer can
+be programmed.
+Example:
+The customer wants the Smart Laser System to start if an "A" is sent to the Smart and to stop if a "B" is
+sent. This can be implemented easily by using the following AllprintBasic instruction string:
+If (Left(1) == "A") Then Start; Else Stop;
+For an overview of the commands please refer to the section AllprintBasic instruction string.
+AllprintBasic instruction string
+In the lower part of a document the instruction string can be edited. It determines the reaction of the
+Smart Laser System to a message from the customer. This message can be received via the serial or
+digital interface.
+5 - 12
+Videojet Technologies Inc. January, 2008
+
+For that purpose a basic - like language was developed. With some string manipulation functions the
+message of the customer can be interpreted in several ways.
+The language elements are described in a kind of pseudo code:
+[]: means: optional
+(): means: use one of
+{}: means: repeat optional even no time
+{}1+: means: repeat optional but minimum one time
+| : means: or
+5. Create the following message:
+'EOTSUM Protocol serial data will be composed of
+'stx (start of transmission) followed by 16characters no more no less followed by eot (end of transmission)
+followed by cc (checksum)
+'first 4 characters (first variable), next 8 characters (second variable), last 4 characters (third variable)
+'Example data
+'02H 30H 31H 32H 33H 34H 35H 36H 37H 38H 39H 41H 42H 43H 44H 45H 46H 04H A8H
+'Var1 = 0123
+'Var2 = 456789AB
+'Var3 = CDEF
+V["Var1"] = Left (4)
+V["Var2"] = Mid (5,8)
+V["Var3"] = Right (4)
+6. Save and name AllprintBasic “ 3Var4 - 8 - 4 ”
+5 - 13
+Videojet Technologies Inc. January, 2008
+
+Transfer ring AllprintBasic job to smart G raph
+Note: Smartgraph 6.3.5 and below can only use method one
+Method one
+7. Open Smartgraph and import Allprint basic file
+8. Under “File of type:” select (*.*)
+5 - 14
+Videojet Technologies Inc. January, 2008
+
+9. Select the 3var4 - 8 - 4 AllprintBasic file from the correct file on your computer.
+10. Save data base!
+11. Shutdown and power up laser so that changes will take.
+12. View job under Laser operation/Marking
+5 - 15
+Videojet Technologies Inc. January, 2008
+
+Method two using Ethernet explore
+Click on AllprintBasic
+Select the upload option
+5 - 16
+Videojet Technologies Inc. January, 2008
+
+Select the browse option
+High light the desired allprintBasic file
+Open the desired allprintBasic file
+Select the upload option in Ethernet explore
+5 - 17
+Videojet Technologies Inc. January, 2008
+
+Check the desired allprintBasic file
+Select the activate option
+5 - 18
+Videojet Technologies Inc. January, 2008
+
+Using Realterm
+13. Connect to IOEB board using RS232 cable
+14. Open Realterm software
+15. Select the following on the display tab settings:
+Display As= Hex+ ASCII
+Half duplex
+Click on change
+16. Select the following on the port tab settings
+Baud = 9600
+Port = (normally port 1 )
+Parity= none
+Data Bits = 8
+Stop bits= 1
+Hardware flow control= none
+Click change
+5 - 19
+Videojet Technologies Inc. January, 2008
+
+See note
+Note: after changes have taken effect you will see the baud rate in the lower right hand corner.
+Note: Ensure open button is depressed
+Your CTS clear to send and DSR data send ready buttons should be green.
+17. Type in the following S end tab characters
+Send numbers = 02H 30H 31H 32H 33H 34H 35H 36H 37H 38H 39H 41H 42H 43H 44H 45H 46H 04H
+A8H
+Click send numbers
+5 - 20
+Videojet Technologies Inc. January, 2008
+
+Note: 06 at the end indicates that the transmission was acknowledged changes and 15 indicates negative
+acknowledgement. A error should be visible under Laser operation/Marking
+Errors
+5 - 21
+Videojet Technologies Inc. January, 2008
+
+Note: because mark once was selected the laser will only fire the code once and will revert back to the
+8”s if the same code is fired twice an error will be given.
+5 - 22
+Videojet Technologies Inc. January, 2008
+
+Dec Oct Hex Bin ASCII Control Meaning
+00 '000 Hex00 00000000 ^@ NUL Null Prompt (End Of C String)
+01 '001 Hex01 00000001 ^A SOH Start Of Heading
+02 '002 Hex02 00000010 ^B STX Start Of Text
+03 '003 Hex03 00000011 ^C ETX End Of Text
+04 '004 Hex04 00000100 ^D EOT End Of Transmission
+05 '005 Hex05 00000101 ^E ENQ Enquiry
+06 '006 Hex06 00000110 ^F ACK Acknowledge
+07 '007 Hex07 00000111 ^G BEL Bell
+08 '010 Hex08 00001000 ^H BS Backspace
+09 '011 Hex09 00001001 ^I HT Horizontal Tab
+10 '012 Hex0A 00001010 ^J LF Line Feed
+11 '013 Hex0B 00001011 ^K VT Vertical Tab
+12 '014 Hex0C 00001100 ^L FF Form Feed
+13 '015 Hex0D 00001101 ^M CR Carriage Return
+14 '016 Hex0E 00001110 ^N SO Shift Out
+15 '017 Hex0F 00001111 ^O SI Shift In
+16 '020 Hex10 00010000 ^P DLE Data Link Escape
+17 '021 Hex11 00010001 ^Q DC1 Device Control 1 (XON)
+18 '022 Hex12 00010010 ^R DC2 Device Control 2
+19 '023 Hex13 00010011 ^S DC3 Device Control 3 (XOFF)
+20 '024 Hex14 00010100 ^T DC4 Device Control 4
+21 '025 Hex15 00010101 ^U NAK No Acknowledge
+22 '026 Hex16 00010110 ^V SYN Synchronous Idle
+23 '027 Hex17 00010111 ^W ETB End Transmission Blocks
+24 '030 Hex18 00011000 ^X CAN Cancel
+25 '031 Hex19 00011001 ^Y EM End Of Medium
+26 '032 Hex1A 00011010 ^Z SUB Substitute (End Of Text File)
+27 '033 Hex1B 00011011 ^[ ESC Escape
+28 '034 Hex1C 00011100 ^ \ FS File Separator
+29 '035 Hex1D 00011101 ^] GS Group Separator
+30 '036 Hex1E 00011110 ^^ RS Record Separator
+31 '037 Hex1F 00011111 ^_ US Unit Separator
+Printable Characters start here
+32 '040 Hex20 00100000 (space)
+33 '041 Hex21 00100001 !
+34 '042 Hex22 00100010 "
+35 '043 Hex23 00100011 #
+36 '044 Hex24 00100100 $
+37 '045 Hex25 00100101 %
+38 '046 Hex26 00100110 &
+39 '047 Hex27 00100111 '
+40 '050 Hex28 00101000 (
+41 '051 Hex29 00101001 )
+42 '052 Hex2A 00101010 *
+43 '053 Hex2B 00101011 +
+44 '054 Hex2C 00101100 ,
+45 '055 Hex2D 00101101 -
+46 '056 Hex2E 00101110 .
+47 '057 Hex2F 00101111 /
+Dec Oct Hex Binary ASCII Dec Oct Hex Binary ASCII
+048 '060 Hex30 00110000 0 091 '133 Hex5B 01011011 [
+5 - 23
+Videojet Technologies Inc. January, 2008
+
+049 '061 Hex31 00110001 1 092 '134 Hex5C 01011100 \
+050 '062 Hex32 00110010 2 093 '135 Hex5D 01011101 ]
+051 '063 Hex33 00110011 3 094 '136 Hex5E 01011110 ^
+052 '064 Hex34 00110100 4 095 '137 Hex5F 01011111 _
+053 '065 Hex35 00110101 5 096 '140 Hex60 01100000 '
+054 '066 Hex36 00110110 6 097 '141 Hex61 01100001 a
+055 '067 Hex37 00110111 7 098 '142 Hex62 01100010 b
+056 '070 Hex38 00111000 8 099 '143 Hex63 01100011 c
+057 '071 Hex39 00111001 9 100 '144 Hex64 01100100 d
+058 '072 Hex3A 00111010 : 101 '145 Hex65 01100101 e
+059 '073 Hex3B 00111011 ; 102 '146 Hex66 01100110 f
+060 '074 Hex3C 00111100 < 103 '147 Hex67 01100111 g
+061 '075 Hex3D 00111101 = 104 '150 Hex68 01101000 h
+062 '076 Hex3E 00111110 > 105 '151 Hex69 01101001 i
+063 '077 Hex3F 00111111 ? 106 '152 Hex6A 01101010 j
+064 '100 Hex40 01000000 @ 107 '153 Hex6B 01101011 k
+065 '101 Hex41 01000001 A 108 '154 Hex6C 01101100 l
+066 '102 Hex42 01000010 B 109 '155 Hex6D 01101101 m
+067 '103 Hex43 01000011 C 110 '156 Hex6E 01101110 n
+068 '104 Hex44 01000100 D 111 '157 Hex6F 01101111 o
+069 '105 Hex45 01000101 E 112 '160 Hex70 01110000 p
+070 '106 Hex46 01000110 F 113 '161 Hex71 01110001 q
+071 '107 Hex47 01000111 G 114 '162 Hex72 01110010 r
+072 '110 Hex48 01001000 H 115 '163 Hex73 01110011 s
+073 '111 Hex49 01001001 I 116 '164 Hex74 01110100 t
+074 '112 Hex4A 01001010 J 117 '165 Hex75 01110101 u
+075 '113 Hex4B 01001011 K 118 '166 Hex76 01110110 v
+076 '114 Hex4C 01001100 L 119 '167 Hex77 01110111 w
+077 '115 Hex4D 01001101 M 120 '170 Hex78 01111000 x
+078 '116 Hex4E 01001110 N 121 '171 Hex79 01111001 y
+079 '117 Hex4F 01001111 O 122 '172 Hex7A 01111010 z
+080 '120 Hex50 01010000 P 123 '173 Hex7B 01111011 {
+081 '121 Hex51 01010001 Q 124 '174 Hex7C 01111100 |
+082 '122 Hex52 01010010 R 125 '175 Hex7D 01111101 }
+083 '123 Hex53 01010011 S 126 '176 Hex7E 01111110 ~
+084 '124 Hex54 01010100 T 127 '177 Hex7F 01111111 ⌂
+085 '125 Hex55 01010101 U 128 '200 Hex80 10000000 Ç
+086 '126 Hex56 010 10110 V 129 '201 Hex81 10000001 ü
+087 '127 Hex57 01010111 W 130 '202 Hex82 10000010 é
+088 '130 Hex58 01011000 X 131 '203 Hex83 10000011 â
+089 '131 Hex59 01011001 Y 132 '204 Hex84 10000100 ä
+090 '132 Hex5A 01011010 Z 133 '205 Hex85 10000101 à
+⌂
+5 - 24
+Videojet Technologies Inc. January, 2008
+
+Dec Oct Hex Binary ASCII Dec Oct Hex Binary ASCII
+134 '206 Hex86 10000110 å 170 '252 HexAA 10101010 ¬
+135 '207 Hex87 10000111 ç 171 '253 HexAB 10101 011 ½
+136 '210 Hex88 10001000 ê 172 '254 HexAC 10101100 ¼
+137 '211 Hex89 10001001 ë 173 '255 HexAD 10101101 ¡
+138 '212 Hex8A 10001010 è 174 '256 HexAE 10101110 «
+139 '213 Hex8B 10001011 ï 175 '257 HexAF 10101111 »
+140 '214 Hex8C 10001100 î
+176 '260 HexB0 10110000 ░
+141 '215 Hex8D 10001101 ì
+177 '261 HexB1 10110001 ▒
+142 '216 Hex8E 10001110 Ä
+178 '262 HexB2 10110010 ▓
+143 '217 Hex8F 10001111 Å
+179 '263 HexB3 10110011 │
+144 '220 Hex90 10010000 É
+180 '264 HexB4 10110100 ┤
+145 '221 Hex91 10010001 ‘
+181 '265 HexB5 10110101 ╡
+146 '222 Hex92 10010010 Æ
+182 '266 HexB6 10110110 ╢
+147 '223 Hex93 10010011 ô
+183 '267 HexB7 10110111 ╖
+148 '224 Hex94 10010100 ö
+184 '270 HexB8 10111000 ╕
+149 '225 Hex95 10010101 ò
+185 '271 HexB9 10111001 ╣
+150 '226 Hex96 10010110 û
+186 '272 HexBA 10111010 ║
+151 '227 Hex97 10010111 ù
+187 '273 HexBB 10111011 ╗
+152 '230 Hex98 10011000 ÿ
+188 '274 HexBC 10111100 ╝
+153 '231 Hex99 10011001 Ö
+189 '275 HexBD 10111101 ╜
+154 '232 Hex9A 10011010 Ü
+190 '276 HexBE 10111110 ╛
+155 '233 Hex9B 10011011 ¢
+191 '277 HexBF 10111111 ┐
+156 '234 Hex9C 10011100 £
+192 '300 HexC0 11000000 └
+157 '235 Hex9D 10011101 ¥
+193 '301 HexC1 11000001 ┴
+158 '236 Hex9E 10011110 û
+194 '302 HexC2 11000010 ┬
+159 '237 Hex9F 10011111 ƒ
+195 '303 HexC3 11000011 ├
+160 '240 HexA0 10100000 á
+196 '304 HexC4 11000100 ─
+161 '241 HexA1 10100001 í
+197 '305 HexC5 11000101 ┼
+162 '242 HexA2 10100010 ó
+198 '306 HexC6 11000110 ╞
+163 '243 HexA3 10100011 ú
+199 '307 HexC7 11000111 ╟
+164 '244 HexA4 10100100 ñ
+200 '310 HexC8 11001000 ╚
+165 '245 HexA5 10100101 Ñ
+201 '311 HexC9 11001001 ╔
+166 '246 HexA6 10100110 ª
+202 '312 HexCA 11001010 ╩
+167 '247 HexA7 10100111 º
+203 '313 HexCB 11001011 ╦
+168 '250 HexA8 10101000 ¿
+204 '314 HexCC 11001100 ╠
+169 '251 HexA9 10101001 ⌐ 205 '315 HexCD 11001101 ═
+5 - 25
+Videojet Technologies Inc. January, 2008
+
+Dec Oct Hex Binary ASCII Dec Oct Hex Bina ry ASCII
+231 '347 HexE7 11100111 ç
+206 '316 HexCE 11001110 ╬
+232 '350 HexE8 11101000 è
+207 '317 HexCF 11001111 ╧
+208 '320 HexD0 11010000 ╨ 233 '351 HexE9 11101001 θ
+234 '352 HexEA 11101010 ê
+209 '321 HexD1 11010001 ╤
+235 '353 HexEB 11101011 ë
+210 '322 HexD2 11010010 ╥
+236 '354 HexEC 11101100 ì
+211 '323 HexD3 11010011 ╙
+237 '355 HexED 11101101 í
+212 '324 HexD4 11010100 ╘
+238 '356 HexEE 11101110 î
+213 '325 HexD5 11010101 ╒
+214 '326 HexD6 11010110 ╥ 239 '357 HexEF 11101111 ∩
+215 '327 HexD7 11010111 ╫ 240 '360 HexF0 11110000 ≡
+241 '361 HexF1 11110001 ±
+216 '330 HexD8 11011000 ╪
+217 '331 HexD9 11011001 ┘ 242 '362 HexF2 11110010 ≥
+218 '332 HexDA 11011010 ┌ 243 '363 HexF3 11110011 ≤
+219 '333 HexDB 11011011 █ 244 '364 HexF4 11110100 ⌠
+220 '334 HexDC 11011100 ▄ 245 '365 HexF5 11110101 ⌡
+246 '366 HexF6 11110110 ÷
+221 '335 HexDD 11011101 ▌
+222 '336 HexDE 11011110 ▐ 247 '367 HexF7 11110111 ≈
+248 '370 HexF8 11111000 °
+223 '337 HexDF 11011111 ▀
+249 '371 HexF9 11111001 ·
+224 '340 HexE0 11100000 α
+250 '372 HexFA 11111010 ˙
+225 '341 HexE1 11100001 β
+226 '342 HexE2 11100010 Г 251 '373 HexFB 11111011 √
+227 '343 HexE3 11100011 π 252 '374 HexFC 11111100 ⁿ
+253 '375 HexFD 11111101 ²
+228 '344 HexE4 11100100 ∑
+229 '345 HexE5 11100101 б 254 '376 HexFE 11111110 ▪
+230 '346 HexE6 11100110 µ 255 '377 HexFF 11111111 ÿ
+5 - 26
+Videojet Technologies Inc. January, 2008
+
+Realterm is a terminal program specially designed for capturing, controlling and
+debugging binary and other difficult data streams. It is far better for debugging comms
+than Hyperterminal. It has no support for dialing modems, BBS etc - that is what
+hyperterminal does.
+• Text or Binary views of data
+• binary viewed as hex, 8 bit, 16 bit, little/big endian, signed, unsigned, special fonts
+• colorised: rx and tx data are different colors
+• ansi terminal or plain text or binary modes
+• protocol analyser / "port spying" mode
+• fixed frame sizes/line lengths
+• sync patterns with masks and xors
+• data inversion
+• full remote control through active X/ Windows Scripting
+• extensive command - line control
+• can be used for serial I/O component of other programs via activeX. Full support for
+minimize,hide,iconize, tooltray
+• special ascii+hex font to see hidden control chars
+• capture to file, settable capture size or capture duration
+• view and change control lines (cts,rts, dcd etc)
+• easy to send binary sequ ences
+• serial (comports) or telnet via tcp
+• arbitary baud rates
+• reset / power buttons for Pic Programmer
+• hideable to run in invisible or on tool - tray
+• can dump files to serial port
+• Drives I2C and SPI chips via BL233
+5 - 27
+Videojet Technologies Inc. January, 2008
+
+• Read the popup h ints carefully. They give a lot of information
+• Right mouse context menu has some extra functions
+5 - 28
+Videojet Technologies Inc. January, 2008
+
+This bit stream represents the byte F4h, using 8N1 ( 8
+bits/character, N o parity bit, and 1 stop bit.)
+5 - 29
+Videojet Technologies Inc. January, 2008
+
+DTE stands for Data Terminal Equipment, which is usually a
+PC.
+Signal Definitions
+The signals are described in terms of a PC (DTE) and a modem (DCE.) As mentioned
+before, in the simple case an embedded system will only use RXD, TXD, and GND,
+unless hardware handshaking is used.
+• T ransmit D ata - PC's serial data output stream to modem
+• R eceive D ata - PC's serial data input stream from modem
+• GND - Signal ground
+• C arrier D etect - tells PC that modem has good remote connection
+• C lear T o S end - modem is ready to receive data from PC
+• D ata S et R eady - tells PC that modem is ready
+• D ata T erminal R eady - tells modem that PC is ready
+• R equest T o S end - tells modem PC wants to send data
+• R ing I ndicator - modem detected a ringing signal
+5 - 30
+Videojet Technologies Inc. January, 2008
+
+Examples for the Allprint Basic commands used most
+Calling a variable in the Smart graph
+V [1]= Left (inputlen) The complete data string is defined as variable 1.
+V [" Number ",Global]= Left (5) The variable "Number" consists of the first 5 characters.
+V [" Destination ",Global]= MID (6,1) The variable "Destination" consists only of the sixth
+character.
+V [" Destination ",Global]= MID (6,3) The variable "Destination" consists of the characters
+6, 7 and 8.
+V [" Number ",Global]= Right (5) The variable "Number" consists of the last five characters
+of the data string.
+J =" Job 1 " The job "Job 1" is selected.
+if ( Left (1)==" 0 ") then J=" Job0 "; endif ; If the first character is "0" the job "Job0" is selected.
+if ( mid (17,1)== CHR (13)) then V [" X ",global]= mid (1,10) If the 17th character is a CHR(13) (= carriage return)
+the variable "X" consists of characters 1 to 10 of the
+data string.
+Example 1: Job selection and setting of variables
+Allprint Basic s ettings of second serial port of the ACC:
+Baudrate: 96 00
+Parity: EVEN
+Number of Bits: 8
+Hardware Handshaking: NONE
+Number of Stopbits: 1
+Interface Selection: RS_232
+Protocol (LEVEL 1): PROTOCOL_TIMEOUT
+Timeout Time: 5 x 20 ms
+Protocol (LEVEL 2): ALLPRINT_BASIC
+The following AllprintB asic string is used to interpret messages from serial 2
+if ( MID (5,1)==" 0 ") then J=" Job0 "; endif ;
+if ( MID (5,1)==" 1 ") then J=" Job1 "; endif ;
+if ( MID (5,1)==" 2 ") then J=" Job2 "; endif ;
+if ( MID (5,1)==" 3 ") then J=" Job3 "; endif ;
+if ( MID (5,1)==" 4 ") then J=" Job4 "; endif ;
+Note: The fifth character of the data string selects the job.
+5 - 31
+Videojet Technologies Inc. January, 2008
+
+V [" Number ",Global]= Left (4) The variable "Number" consists of the first 4 characters.
+V [" Destination ",Global]= MID (6,1) The variable "Destination" is the sixth character of the data
+string.
+V [" Weight ",Global]= MID ( instr (7," < ")+1, instr (7," > ") - The variable "Weight" has no defined length, it is the data string
+instr (7," < ") - 1); between the characters < and >.
+Template: external text
+Prompt (4, " 4321 ", " Number ")
+EOL
+Prompt (1, " X ", " Destination ")
+EOL
+Prompt (15, " Weight in kg ", " Weight ")
+Job names:
+Job0 , Job1, Job2, Job3, Job4
+Example of string:
+68493 A <1003,045kg>
+The message will appear as :
+6849
+A
+1003,045kg
+5 - 32
+Videojet Technologies Inc. January, 2008
+
+5 - 33
+Videojet Technologies Inc. January, 2008
+
+Example serial sting:
+68493A<1003,045kg>
+The variable "Weight" has no defined length,
+it is the data string between the characters < and >.
+The variable "Destination" is the sixth character of the data st ring.
+The fifth character of the data string selects the job.
+Job 3 has been selected.
+The variable "Number" consists of the first 4 characters.
+
+Example 2: Setting a variable and sending a check
+sum
+Allprint Basic settings
+Baudrate: 9600
+Parity: NONE
+Number of Bits: 8
+Hardware Handshaking: NONE
+Number of Stopbits: 1
+Interface Selection: RS_232
+Protocol (LEVEL 1): PROTOCOL_EOTSUM With this protocol a check sum is
+returned.
+Protocol (LEVEL 2): ALLPRINT_BASIC
+The following Allprint Basic string is used to interpret messages from serial 2
+Method 1
+V [ “ Var1 ” ] = Left (inputlen)
+The complete data string is defined as variable 1.
+Note: inputlen does not have a character limit
+Method 2
+V [ “ Var1 ” ] = Left ( 16 )
+The variable "Number" consists of the first 16 characters.
+Note: this method offers more control over what is being sent.
+Note: methods 1 and 2 can be used with protocol (timeout) which does not require a
+check sum.
+5 - 34
+Videojet Technologies Inc. January, 2008
+
+Template:
+Height (2.2)
+Ring (in,250,290)
+Radius (7)
+Spacing (1.1)
+Font (" Sr ")
+Prompt (16, " 1234567890ABCDEF ", " Var1 ")
+String:
+(STX)0123456789ABCDEF(EOT) Do not enter STX and EOT in the terminal program!
+Reply:
+¿ (CHR(168))
+Calculation of the check sum in DEC (ASCII Code):
+[stx] = 02 3 = 51 7 = 55 B = 66 F = 70
+0 = 48 4 = 52 8 = 56 C = 67 [EOT] = 04
+1 = 49 5 = 53 9 = 57 D = 68
+2 = 50 6 = 54 A = 65 E = 69
+[stx] = 02 1 = 49 2 = 50 3 = 51 4 = 52 5 = 53 6 = 54 7 = 55 8 = 56
+9 = 57 0 = 48 A = 65 B = 66 C = 67 D = 68 E = 69 F = 70 [EOT] = 04
+Sum = 936
+This corresponds to 3A8 in HEX; only the last two ciphers are used: A8;
+A8 corresponds to 168 in DEC (character ¿ ).
+5 - 35
+Videojet Technologies Inc. January, 2008
+
+External Template Selection
+1 Preparation
+In order to use the external template selection the laser system must be equipped with
+two optional input modules (art. no. 65856). These input modules have to be inserted
+between input module 6 and the termination module 7.
+Additionally, a valid template list is required for using the external template selection.
+2 Template List
+In the Smart Graph software under Laser Operation - > Marking adjustment
+you can create a template list using the templates existing in the laser system.
+A template is assigned to a certain number in the template list (see below). The number
+of the desired template is sent - e.g. by a PLC - binary coded to the digital inputs DATA
+0 to DATA 7
+and is taken over with the signal EXT_EVENT. The selected template becomes current
+template of the laser system and can be marked on the product. This procedure is
+called External Template Selection .
+The dialog »Template list« contains the assignment of templates and template numbers
+for the external template selection.
+5 - 36
+Videojet Technologies Inc. January, 2008
+
+Add Assign a new template number. Enter the template number for the new
+entry under »Number«. Select a template from the selection field
+»Name«. You can only select templates existing on the current database.
+Click on »OK« to add the created entry to the template list.
+Delete Select an entry to be deleted by clicking on the template number. Click
+on »Delete« to remove the selected template number from the list.
+Edit Select an entry to be edited and click on »Edit«. In the displayed dialog
+you can change the template number or the template assigned to a number.
+Apply The settings are transferred to the laser system and the dialog is closed.
+Reset Modifications are undone.
+X The dialog is closed.
+5 - 37
+Videojet Technologies Inc. January, 2008
+
+3 Interface Assignment
+3.1 Module 6: Digital Inputs
+(refer to chapter "Appendix" in the laser manual for the complete list of
+inputs)
+Terminal Signal Description
+X1.5.1 EXT_EVENT This signal is used for the external template selection.
+With a positive edge the signals (DATA 0 to DATA 7) of the
+optional input modules are taken over.
+3.2 Optional: Modules for External Template Selection
+Module A
+Terminal Signal Description
+X1.6.1 DATA 0 The template is selected via its assigned template number
+by an 8 bit value built via inputs DATA 0 to DATA 7. The
+selection is taken over by the signal EXT_EVENT.
+X1.6.2 Customer 24 V 24 V Customer
+X1.6.3 Customer GND GND Customer
+X1.6.4 DATA 2 see DATA 0
+X1.6.5 DATA 1 see DATA 0
+X1.6.6 Customer 24 V 24 V Customer
+X1.6.7 Customer GND GND Customer
+X1.6.8 DATA 3 see DATA 0
+5 - 38
+Videojet Technologies Inc. January, 2008
+
+Module B
+Terminal Signal Description
+X1.7.1 DATA 4 see DATA 0
+X1.7.2 Customer 24 V 24 V customer
+X1.7.3 Customer GND GND customer
+X1.7.4 DATA 6 see DATA 0
+X1.7.5 DATA 5 see DATA 0
+X1.7.6 Customer 24 V 24 V customer
+X1.7.7 Customer GND GND customer
+X1.7.8 DATA 7 see DATA 0
+3.3 Timing Diagram
+External Template Selection
+Setup Time: > 10 ms
+Hold Time: > 10 ms
+The template change is carried out after the current marking process is finished. The
+minimum time delay (hold time) between signal EXT_EVENT and template change is
+about 10 ms. The duration of the delay increases if there is heavy load on the CAN bus
+or the Smart OS software.
+5 - 39
+Videojet Technologies Inc. January, 2008
+
+5 - 40
+Videojet Technologies Inc. January, 2008
+
+5 - 41
+Videojet Technologies Inc. January, 2008
+
+pN^@,!:0>1S-'+X@D%$D&%@H
+0

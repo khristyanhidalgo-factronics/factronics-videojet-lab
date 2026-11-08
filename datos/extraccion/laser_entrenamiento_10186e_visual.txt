@@ -1,0 +1,85 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\10186E.pdf
+# cifrado=False bloques=5 caracteres=4401
+
+Videojet Technologies Inc.
+SAR10186E
+Printer Model: 3120/3130/3320/3330/3430/7210/7310/DN50/LN100
+Description: Pulldate Insert . (Offset relative to following pull day.)
+Base Version: 8. 9.1.1
+Engineered By: P . W ard
+Verified By: P. Ward
+Date Completed: February 16, 2022
+See Addendum to the Operating Instructions for modification details.
+Revision A: Fixed +0700 rollover issue.
+Revision B: Rebased on QMark 8.5.3.4T7 .
+Revision C : Added <.day> option to suppo rt pull day of week other than Monday. Rebased to 8.5.3.8T0 .
+Revision D : Rebased to 8.5.3.8T2.
+Revision E : Rebased to 8. 9.1.1 .
+1 / 5
+Confidential - Company Proprietary
+
+VIDEOJET TECHNOLOGIES INC. SAR10186E
+ADDENDUM TO OPERATING INSTRUCTIONS
+Pulldate Insert
+The insert is added to a Message ( Template ) by creating an External Text insert and using the followi ng
+command syntax in the default Text field :
+PULL<offset><.day><rolltime><format>
+Where,
+• <offset> is the number of weeks (1 to 999) to offset the pulldate insert value. The value of the
+insert is calculated by adding an offset in weeks to the followi ng pull day .
+• <.day> is an optional parameter to specify the pull day of week on which to base the pulldate
+insert value. Valid entries are ".B", ".M", ".T", ".W", ".R", ".F" and ".S" for Sunday through
+Saturday, respectively. The default is Monday.
+• < rolltime> is an optional parameter to specify the time offset from 00:00 on the Pull Day to begin
+the week. The value is in the form (+/ - )HHMM .
+• <format> is an optional parameter to specify a custom format. If this parameter is omitted, the
+format will default to “ MMM DD YY ”
+The following sub formats can be combined in any order with any punctuation or space characters to
+create custom formats :
+• MMM Where, MMM is the 3 character abbreviation of the month are J AN , F EB , M AR , A PR , M AY , J UN , J UL ,
+A UG , S EP , O CT , N OV and D EC .
+• MM Where, MM is the 2 character abbreviation of the month are JA , FE , MR , AL , MA , JN , JL , AU , SE , OC ,
+NO and DE .
+• NN Where, NN is the 2 digit month.
+• DD Where, DD is the 2 digit day of the month.
+• Y Where, Y is the 1 digit year.
+• YY Where, YY is the 2 digit year.
+• YYYY Where, YYYY is the 4 digit year.
+2 / 5
+Confidential - Company Proprietary
+
+VIDEOJET TECHNOLOGIES INC. SAR10186E
+Example 1: Offset = 13 weeks, week begins at 00:00 on Monday, format = MMM DD YY .
+Since MMM DD YY is the default format, we only have to enter “ PULL 13 “ in the Text fie ld on the
+External Text menu , however, we need to increase the Number Of Characters to 9 or the result
+will be truncated. Given a current date of December 12 , 2007, the value of text field would be:
+” MAR1 7 08 ”
+If using SmartGraph, the insert would be ente red as follows:
+3 / 5
+Confidential - Company Proprietary
+
+VIDEOJET TECHNOLOGIES INC. SAR10186E
+Example 2 : Offset = 13 weeks, week begins at 05:00 on Monday, format = MMM DD YY .
+Since MMM DD YY is the default format, we only have to enter “ PULL 13 +0500 “ in the Text field on
+the External Text menu. Given a current date of A pril 7 , 200 8 at 04:59 , the value of text field
+would be: ” JUL 07 08 ” . Given a current date of April 7, 2008 at 05:00, the value of text field
+would be: ” JUL 14 08 ” .
+If using SmartGraph, the insert would be entered as follows:
+4 / 5
+Confidential - Company Proprietary
+
+VIDEOJET TECHNOLOGIES INC. SAR10186E
+Example 3 : Offset = 13 weeks , week begins at 00:00 on Monday , format = MMM - DD - YY
+Since we are not using the default format, we have to enter “ PULL 13 MMM - DD - YY “ in the Text field
+on the External Text menu. Since the default Number Of Characters for the insert is great er
+than what is required, we don’t need to change this value. Given a current date of December 12 ,
+2007, the value of text field would be: ” MAR - 1 7 - 08 ”
+If using SmartGraph, the insert would be entered as follows:
+Example 4 : Offset = 13 weeks, week be gins at 00:00 on Friday, format = MMM - DD - YY
+For example, your customer would enter “ PULL 13 .FMMM - DD - YY ” to create a Pulldate that is 13
+weeks from Friday 2/17 given the current date of 2/22, the date printed would be MAY 25 12 . On
+2/23, the data printed would change to JUN 01 12 .
+If you have questions or concerns regarding this SAR, contact the Technical Support department of
+Videojet Technologies Inc. 1 - 800 - 843 - 3610 x3103
+5 / 5
+Confidential - Company Proprietary

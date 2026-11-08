@@ -1,0 +1,402 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\AL-73574-K40 option (002) Safety Module Mashine (1).pdf
+# cifrado=False bloques=23 caracteres=21340
+
+AL-73574Modification Instruction/Umbauanleitung
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1 MaschinenintegrationsplatinMaschinenintegratione und Sicherheitsmodul zur
+Machine Integration Board and IntegrationSafety Controller for Machine
+Bei ordnungsgemem Anschluss des Sicher73570) erreichen die damit ausgersteten Laserheitsmoduls zur Maschinenintegration (AL-systeme den Performance Level "d" nach EN-
+ISO 13849-1 oder die Sicherheitskategorie 3 nach der alten Norm EN 954-1.When the safety module for machine integration (AL-73570) is connected according to the
+instructions all laser systems equipped with the safety module meet the requirements for theperformance level d according to EN-ISO 13849-1 or the safety category 3 according to the
+previous standard EN 954-1.
+Folgende Lasersysteme knnen mittels der Maschinenintegrationsplatine VJ3010-C.0100 AL-73954 an das Sicherheitsmodul zurMaschinenintegrationsplatine AL-73572/
+Maschinenintegration angeschlossen werden:The following laser systems can be connected to the safety controller for machine integration
+using the machine integration board AL73572/machine integration board VJ3010-C.0100AL73954:
+Lasersystem/systemLaserAnschlussmglichkeiten/Connection optionsMaschinenintegrationsplatine/Machine integration board
+LC100/3120/SL101 AL-73572
+LC300/3320/SL301AL-73572
+1-phasig mit 230V/1-phase with 230VLF100/7210AL-73572
+LF200/7310AL-73572
+C.0100/VJ3010AL-73954
+DN-AAL-73572
+LN-A3-phasig mit 400V/3-phase with 400VAL-73572
+08/11 - Rev. AD 1
+
+MAQ$Q6n`d'@_ofmbAtOo{~alySnwJs]P28>>@BT@?>=<;:9876543210/.-,+*
+[&XK|8[7?jW>L|?@4I
+
+Modification Instruction/UmbauanleitungAL-73574
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1.1 Anschlieen der MaschineninteLasersystemgrationsplatine AL-73572 an das
+Connect the Machine Integration Board bersicht der MaschinenintegrationsplatineAL-73572 to the Laser System
+Overview of the machine integration board
+Stecker X22Stecker X23
+Stecker X20 (5-polig)
+Stecker X21 (4-polig)
+Connector X22Connector X23Connector X20 (5-pin)
+4-poliges FlachbandverbindungskabelConnector X21 (4-pin)4-pin flat connection cable
+GefahrVor Beginn der Arbeiten muss das Lasersystem unbedingtspannungsfrei geschaltet werden!
+Danger Bevor starting any work the laser system must be dead!
+X20 Beschreibung/Description
+1WHStrahlverschluss ffnen/Beam shutter open
+2BNStrahlverschluss geffnet/Beam shutter is opened
+3GN24V
+4YEGND
+5GYMeldung Schutztrkreis/Message safety door circuit
+Stecker X20 (5-polig)Connector X20 (5-pin)
+Machine integration board
+54321
+Maschinenintegrationsplatine
+2 08/11 - Rev. AD
+
+AL-73574Modification Instruction/Umbauanleitung
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1.1.1 LF100/200, 7210/7310
+HinweisFr das Lasersystem LF100/200 wird das mitgelieferteFlachbandverbindungskabel nicht verwendet.
+Note For the laser system LF100/200 the delivered flat connection cable is notused.
+1.Schlieen Sie die Adern des 4-poligen StLasersystems an:eckers X21 an die Kundenschnittstelle des
+Connect the wires of the 4-pin connector X21 to the customer interface of the laser system:
+X21Klemme/TerminalPin
+1WHX4B5
+2BNX4B6
+3GNX4D9
+4YEX4C2
+2.Befestigen Sie die Maschinenintegrationsplatine mit einem Kabelbinder am Gehuse derVersorgungseinheit.
+Fasten the machine integration board to the housing of the supply unit using a cable tie.
+Wire 1, Pin 5Wire 2, Pin 6 Wire 3, Pin 9
+Ader 1, Pin 5Ader 2, Pin 6Ader 1, Pin 5Ader 3, Pin 9
+Ader 4, Pin 2Wire 4, Pin 2
+X21
+08/11 - Rev. AD 3
+
+Modification Instruction/UmbauanleitungAL-73574
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1.1.2 LC100/300, 3120/3320, SL101/3011.Ziehen Sie den Shutter-Stecker von der ACC ab und schlieen Sie den abgezogenen
+Stecker an den Stecker X23 auf der Maschinenintegrationsplatine an.Disconnect the shutter connector from the ACC and connect the disconnected connector
+to the connector X23 of the machine integration board.
+2.Schlieen Sie das FlachbandverbindungskabelShutter-Anschluss auf der ACC. der Maschinenintegrationsplatine an den
+Connect the flat connection cable of the machine integration board to the shutter connectoron the ACC.
+Connector X23Stecker X23Flachbandverbindungskabel flat connection cable
+ACC
+Flachbandverbindungskabelflat connection cable
+4 08/11 - Rev. AD
+
+AL-73574Modification Instruction/Umbauanleitung
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+3.Schlieen Sie die Adern des 4-poligen StLasersystems an:eckers X21 an die Kundenschnittstelle des
+Connect the wires of the 4-pin connector X21 to the customer interface of the laser system:
+X21Stecker/ConnectorPin
+1WHX21
+2BNX22
+3GNX204
+4YEX24
+4.Befestigen Sie die Maschinenintegrationsplatine mit einem Kabelbinder am Gehuse derVersorgungseinheit.
+Fasten the machine integration board to the housing of the supply unit using a cable tie.
+X7 X6 X2
+X20 X16
+12345
+X14
+12314253647586
+1234567123841526345
+Ader 3, PIN 4Wire 3, PIN 4Wire 1, PIN 1Wire 4, PIN 4 Ader 1, PIN 1Ader 4, PIN 4
+Wire 2, PIN 2 Ader 2, PIN 2
+08/11 - Rev. AD 5
+
+Modification Instruction/UmbauanleitungAL-73574
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1.1.3 LN-A/DN-A
+HinweisFr das Lasersystem LN-A/DN-A wird das mitgelieferte Flachband-verbindungskabel nicht verwendet.
+Note For the laser system LN-A/DN-A the delivered flat connection cable is notused.
+1.Schlieen Sie die Adern des 4-poligen StLasersystems an:eckers X21 an die Kundenschnittstelle des
+Connect the wires of the 4-pin connector X21 to the customer interface of the laser system:
+X21Klemme/Terminal Pin
+1WH"Interlock"X501.1
+2BN"Interlock"X501.2
+3GNCI-CAN-IO, Modul 3: Digitale Ausgnge/digital outputsX1.2.8
+4YECI-CAN-IO, Modul 3: Digitale Ausgnge/digital outputsX1.2.7
+2.Befestigen Sie die Maschinenintegrationsplatine mit einem Kabelbinder am Gehuse derVersorgungseinheit.
+Fasten the machine integration board to the housing of the supply unit using a cable tie.
+orange AdernKlemme "Interlock"
+orange wiresterminal "Interlock"
+Wire 1, Pin X501.1
+Wire 2, Pin X501.2
+Wire 4, Pin X1.2.7Wire 3, Pin X1.2.8
+Ader 1, Pin X501.1
+Ader 2, Pin X501.2
+Ader 4, Pin X1.2.7Ader 3, Pin X1.2.8
+6 08/11 - Rev. AD
+
+AL-73574Modification Instruction/Umbauanleitung
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+HinweisWenn nach dem Initialisierungsvorgang des Lasersystems die beiden LED-Anzeigen K5 und K6 des Sicherheitsmoduls nicht leuchten, mssen die
+beiden orangen Adern der Klemme "Interlock" getauscht werden (siehe Bildvorherige Seite).
+Note If both LEDs K5 and K6 of the safety cotroller are not on after the initializationprocess both orange wires of the terminal "Interlock" must be changed (see
+figure previous page).
+08/11 - Rev. AD 7
+
+Modification Instruction/UmbauanleitungAL-73574
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1.1.4 VJ3010/C.0100
+HinweisFr diese Lasersysteme wird die MaC.0100 AL-73954 im Sicherheitsmodul schinenintegrationsplatine VJ3010-zur Maschinenintegration montiert
+(siehe Abschnitte "bersicht der MaC.0100" und "Befestigen/Anschlieen der Maschinenintegrationsplatine anschinenintergrationsplatine VJ3010-
+die bergabeleiterkarte" auf der Seite 17).
+Das Lasersystem wird mit dem Sicherverbunden.heitsmodul ber das Verbindungskabel
+Note For these laser systems the machine integration board VJ3010-C.0100 AL-73954is mounted to the safety controller for machine integration (see
+sections "Overview of the machine integration board VJ3010-C.0100" and"Mounting/Connecting the machine integration board to the transfer board" on
+the page 17).
+The laser system is connected to the sacable.fety controller via the connecting
+1.Entfernen Sie die Interlock-Brcke von dem Anschluss der Kundenschnittstelle amGehuse des Lasersystems.
+Remove the interlock jumper from the customer interface on the housing of the lasersystem.
+2.Schlieen Sie das Verbindungskabel an die Kundenschnittstelle an.Connect the connecting cable to the customer interface.
+Anschluss der KundenschnittstelleConnection of customer interface
+VerbindungskabelConnecting cable
+8 08/11 - Rev. AD
+
+AL-73574Modification Instruction/Umbauanleitung
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1.2 Sicherheitsmodul zur MaschinenintegrationSafety Controller for the Machine Integration
+1.2.1 bersichtOverview
+1.2.2 Funktion des NetztrennschaltersFunction of Line Disconnector
+Um die komplette Laserananlage ein- und Gehuse des Sicherheitsauszuschalten muss der Netztrennschalter ammoduls verwendet werden.
+In order to switch-on/off the complete laser system only the line disconnector at the housing ofthe safety controller must be used.
+Status-Anzeigeelement
+Sicherheitssteuerung
+bergabeleiterkarte
+Status indications
+Safety controller
+KlemmenblockTerminal unit
+ALK4xC-
+Transfer boardALK4xC
+RESET-TasterRESET Push-Button
+Switch (S00)
+NetztrennschalterLine disconnector
+(Q00)
+08/11 - Rev. AD 9
+
+Modification Instruction/UmbauanleitungAL-73574
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1.2.3 Stecker der SicherheitssteuerungConnectors of the Safety Controller
+X04K40 (NC)X03K40X02K40 (NC)X01K40
+X05K40X06K40
+10 08/11 - Rev. AD
+
+AL-73574Modification Instruction/Umbauanleitung
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1.2.4 StatusanzeigeStatus Indications
+Auf dem Deckel des Gehuses befinden sich grne LED-Anzeigen mit folgenden Funktionen:On the housing cover of the safety controller are green LEDs with the following functions:
+LEDFunktion/Functions
+U
+Betriebsspannung/Operating voltage
+U
+B
+Interne Betriebsspannung/Internaloperating voltage
+K1Statusanzeige NOT-HALT, Kreis1Status indication EMERGENCY STOP, circuit1
+i K2Statusanzeige NOT-HALT, Kreis2Status indication EMERGENCY STOP, circuit2
+K3Statusanzeige Schutztrkreis, Kreis1Status indication safety door circuit, circuit1
+K4Statusanzeige Schutztrkreis, Kreis2Status indication safety door circuit, circuit2
+K5Statusanzeige Strahlverschluss, Kreis1Status indication beam shutter, circuit1
+K6Statusanzeige Strahlverschluss, Kreis2Status indication beam shutter, circuit2
+08/11 - Rev. AD 11
+
+Modification Instruction/UmbauanleitungAL-73574
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1.2.5 Stecker der ALK4xC-bergabeleiterkarteConnectors of the Transfer Board ALK4xC
+1.2.6 AnschlussmglichkeitenConnection options
+X05X10
+X09
+X12
+X08
+X11
+X07
+X06
+X03
+X01X02X04
+1-phasig fr 230V1-phase for 230V
+Stecker/ConnectorPinAnschluss/Connection
+X01K401230V L Einspeisung Kunde230V L supply customer
+3230V N Einspeisung Kunde230V N supply customer
+X03K401230V L Ausgang Not-Halt Laser230V L output emergency stop laser
+3230V N Ausgang Not-Halt Laser230V N output emergency stop laser
+12 08/11 - Rev. AD
+
+AL-73574Modification Instruction/Umbauanleitung
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+3-phasig fr 400V3-phase for 400V
+Stecker/ConnectorPinAnschluss/Connection
+X01K401400V L1 Einspeisung Kunde400V L1 supply customer
+2400V L2 Einspeisung Kunde400V L2 supply customer
+3400V L3 Einspeisung Kunde400V L3 supply customer
+X03K401400V L1 Ausgang Not-Halt Laser400V L1 output emergency stop laser
+2400V L2 Ausgang Not-Halt Laser400V L2 output emergency stop laser
+3400V L3 Ausgang Not-Halt Laser400V L3 output emergency stop laser
+1.2.7 PIN-Belegung nach NormPIN Definition according to Standard
+Abkrzung/AbbreviationBeschreibung/Description
+1WHwei/ white
+2BNbraun/brown
+3GNgrn/ green
+4YEgelb/yellow
+5GYgrau/grey
+6PKpink/pink
+7BUblau/blue
+8RDrot/ red
+9BKschwarz/black
+10VTviolett/violet
+08/11 - Rev. AD 13
+
+Modification Instruction/UmbauanleitungAL-73574
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1.2.8 Anschlieen des Lasersystems an das Sicherheitsmodul zur Maschinenintegration
+Connect the Laser System to the Safety Controller for Machine IntegrationDas Lasersystem wird ber das Sicherheitsmodul mit Spannung versorgt.
+The laser system is supplied via the safety controller.
+1.2.8.1 Spannung 230V/Voltage 230V
+Klemme/TerminalKabel/CableBeschreibung/Description
+5GN/YESchutzleiter PE/Protective earth conductor
+6BNPhase L1/Phase L1
+8BUNeutralleiter N/Neutral conductor N
+3+4GYBrcke/Jumper
+1.2.8.2 Spannung 400V/Voltage 400V
+Klemme/TerminalKabel/CableBeschreibung/Description
+4BUNeutralleiter N/Neutral conductor N
+5GN/YESchutzleiter PE/Protective earth conductor
+6BKPhase L1/Phase L1
+7BNPhase L2/Phase L2
+8BKPhase L3/Phase L3
+14 08/11 - Rev. AD
+
+AL-73574Modification Instruction/Umbauanleitung
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1.2.9 Anschlieen des Sicherheitsmoduls zur Maschinenintegration an die Netzspannung
+Connect the Safety Controller to Machine Integration to Supply Voltage
+1.2.9.1 Spannung 230V/Voltage 230V
+Klemme/TerminalKabel/CableBeschreibung/Description
+1BNPhase L1/Phase L1
+3BUNeutralleiter N/Neutral conductor N
+5GN/YESchutzleiter PE/Protective earth conductor
+3+4GYBrcke/Jumper
+1.2.9.2 Spannung 400V/Voltage 400V
+Klemme/TerminalKabel/CableBeschreibung/Description
+1BKPhase L1/Phase L1
+2BNPhase L2/Phase L2
+3BKPhase L3/Phase L3
+4BUNeutralleiter N/Neutral conductor N
+5GN/YESchutzleiter PE/Protective earth conductor
+08/11 - Rev. AD 15
+
+Modification Instruction/UmbauanleitungAL-73574
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1.2.10 Anschlieen der Maschinenintegrationsplatine an die bergabeleiterkarteConnect the Machine Integration Board to the Transfer Board
+1.2.10.1 LC100/3120/SL101, LC300/3320/SL101, LF100/7210, LF200/7310, DN-A/LN-A
+HinweisDie Maschinenintegrationsplatine (AKabel an die ALK4xC-berL-73572) wird mit einem 5-adrigengabeleiterkarte angeschlossen.
+Note The machine integration board (AL-73572) is connected to the transfer boardALK4xC using the 5-wire cable.
+WichtigPositionieren Sie die MaschinenintegrStecker X20 sich auf der rechten Seite der Platine befindet.ationsplatine so, dass der 5-polige
+Important Position the machine integration board so that the 5-pin connector X20 is onthe right side of the board.
+X20 Stecker bergabeleiterkarte/Connector transfer board
+1WHX03 PIN2
+2BNX03 PIN1
+3GNX02 PIN1
+4YEX02 PIN2
+5GYX11 PIN2
+X02
+X03
+X11
+ALK4xCTransfer board
+Stecker X20 (5-polig)Connector X20 (5-pin)
+Machine integration board
+54321
+ALK4xC-bergabeleiterkarte
+Maschinenintegrationsplatine
+16 08/11 - Rev. AD
+
+AL-73574Modification Instruction/Umbauanleitung
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1.2.10.2 VJ3010/C.0100
+bersicht der MaschinenintegratiOverview of the Machine Integronsplatine VJ3010-C.0100 AL-73954ation Board VJ3010-C.0100 AL-73954
+Anschluss fr Interlock-BrckeAnschluss fr VerbindungskabelConnection for intelock jumperConnection for connecting cable
+SteckerX24 (5-polig)ConnectorX24 (5-pin)
+HinweisDie Maschinenintegrationsplatine VJ3010-C.0100 (AL-73954) wird mit einem5-adrigen Kabel an die ALK4xC-bergabeleiterkarte angeschlossen.
+Note The machine integration boardVJ3010-C.0100 (AL-73954) is connected tothe transfer board ALK4xC using the 5-wire cable.
+1.Enfernen Sie den Bolzen.Remove the protecting bolt.
+BolzenProtecting bolt
+08/11 - Rev. AD 17
+
+Modification Instruction/UmbauanleitungAL-73574
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+2.Befestigen Sie die MaschinenintegrationsSicherheitsmodul fest.platine mit vier Befestigungsschrauben im
+Fasten the machine integration board to the safety controller using four fixing screws.
+3.Schlieen Sie den Stecker X24 an die Maschinenintegrationsplatine und die 5 Adern desKabels an die bergabeleiterkarte an.
+Connect the connector X24 to the machine intto the transfer board ALK4xCegartion board and the 5 wires of the cable.
+BefestigungsschraubenFixing screws
+Stecker X24Connector X24
+5-adriges Kabel5-wire cable
+ALK4xC-bergabeleiterkarte
+ALK4xCTransfer board
+X02
+X03 X11
+18 08/11 - Rev. AD
+
+AL-73574Modification Instruction/Umbauanleitung
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+X24 Stecker bergabeleiterkarte/Connector transfer board
+1WHX03 PIN2
+2BNX03 PIN1
+3GNX02 PIN1
+4YEX02 PIN2
+5GYX11 PIN2
+4.Schlieen Sie das Verbindungskabel Maschinenintegrationsplatine an.und die Interlock-Brcke an die
+Connect the connecting cable and the interlock jumper to the machine integration board.
+VerbindungskabelConnecting cableInterlock jumperInterlock-Brcke
+08/11 - Rev. AD 19
+
+Modification Instruction/UmbauanleitungAL-73574
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1.2.11 RESET-TasterRESET Push-Button Switch
+Das Sicherheitsmodul ist mit einem RESET-Taster ausgestattet. Dieser Taster sitzt neben demNetztrennschalter am Gehuse des Sicherheitsmoduls, siehe Seite 9. Durch kurzes Bettigen
+des RESET-Tasters wird das Sicherheitsmodul freigegeben.An das Sicherheitsmodul kann auch ein externer RESET-Taster angeschlossen werden.
+The Safety Controller includes a RESET push-buttonext to the line disconnector at the housing of the safety controller, see page 9. Pushing then switch. This push-button switch is located
+RESET push-button switch for a short time enables the safety controller.It is also possible to connect an external RESET push-button switch to the safety controller.
+Anschlieen des externen RESET-Tasters an die bergabeleiterkarteConnect the external RESET Push-Button Switch to the Transfer Board
+Der RESET-Taster dient zur Freigabe des Sicherheitsmoduls und muss an den Stecker X09PIN 1 angeschlossen werden. Der Taster kann ber den Stecker X01 PIN 1 mit 24V versorgt
+werden. Durch kurzes Bettigen des RESET-Tasters wird dasDas Sicherheitsmodul reagiert auf die abfa Sicherheitsmodul freigegeben.llende Flanke der 24V am Stecker X09 PIN 1.
+The RESET push-button switch is used to enable the safety controller and is to be connectedto the connector X09 PIN 1. The push-button switch can be supplied with 24 V coming from the
+connector X01 PIN1. Pushing the RESET push-busafety controller. The safety controller reacts tton switch for a short time enables theto the falling edge of the 24V on the connector
+X09 PIN 1.
+WichtigDie Sicherheitsteuerung funktioniert nur mit einem angeschlossenenRESET-Taster .
+Important The connected RESET push-button switchsafety controller. is required for operating the
+X09, PIN 1
+20 08/11 - Rev. AD
+
+AL-73574Modification Instruction/Umbauanleitung
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1.2.12 Anschlieen der Schutztren an das bergabeleiterkarteConnect the Safety Doors to the Transfer Board
+Die Schutztren werden an die Stecker X06, X07 und X08 der ALK4xC-bergabeleiterkarteangeschlossen. Wenn nicht alle Schutztren an diese Stecker angeschlossen werden, mssen
+die nicht angeschlossenen Stecker gebrckt bleiben.The safety doors are connected to the connectors X06, X07 and X08 of the transfer board
+ALK4xC. If not all safety doors are connected to these connectors, the jumpers must remainon the connectors not used.
+X06X08X07
+08/11 - Rev. AD 21
+
+Modification Instruction/UmbauanleitungAL-73574
+Sicherheitsmodul zur Maschinenintegration/Safety Controller for Machine Integration
+1.3 Einschalten des Lasersystems mit dem Sicherheitsmodul zur Maschinenintegration
+Switch-On of the Laser System withIntegration Safety Controller for Machine
+1.Schalten Sie den Netztrennschalter am Lasersystem ein.
+2.Schalten Sie den NetztrennschalteDie LED-Anzeigen Ur am Sicherheitsmodul ein.
+, U , K3, K4, K5, K6 leuchten.
+3.Bettigen Sie kurz den RESET-Taster am Gehuse des Sicherheitsmoduls oder denexternen RESET-Taster (X09. Pin1).
+B i Alle LED-Anzeigen des Sicherheitsmoduls leuchten.
+4.Stellen Sie sicher, dass der Schlsselschalter in Position 0 ist und schalten Sie dasLasersystem ein.
+Die weie LED blinkt, das Lasersystem befindet sich im Initialisierungszustand. Der Vorgangkann 1-2 Minuten dauern. Nach diesem Vorgang ist das System im betriebsbereiten Zustand
+und die weie LED leuchtet.
+5.Schalten Sie den Schlsselschalter ein.Die rote LED an der Versorgungseinheit leuchtet. Das Lasersystem ist bereit.
+1.Switch on the line disconnector at the laser system.
+2.Switch on the line disconnector at the safety controller.The LEDs U
+WichtigDer Netztrennschalter am Lasersystem bleiben.sollte im eingeschalteten Zustand
+WichtigWhrend des Initialisierungszustands sein.muss der Schutztrkreis geschlossen
+ImportantThe line disconnector at the laser system should remain switched on.
+, U , K3, K4, K5, K6 are on.
+3.Press the RESET push-button switch at the housing of the safety controller or the externalRESET push-button switch for a short time (X09. Pin1).
+B i All LEDs of the safety controller are on.
+4.Make sure that the key switch is in position 0 and switch on the laser system.The white LED flashes, indicating the initialization of the laser system. This process can take
+1 to 2 minutes. After that the system is ready and the white LED is on.
+ImportantDuring the initialization process the safety door circuit must be closed.
+5.Switch on the key switch.The red LED on the supply unit is on. The laser system is ready.
+22 08/11 - Rev. AD

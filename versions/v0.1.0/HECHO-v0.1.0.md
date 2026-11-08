@@ -46,3 +46,8 @@
 - [x] **`datos/sds_propiedades.json`**: sección 9 de 561 fichas, 12.728 campos (pH, inflamación, ebullición, densidad, presión de vapor, viscosidad, volatilidad...), integrados por ficha en `cij_tintas.json`. Estado: borrador.
 - [x] **Composición con CAS validado**: 1.773/1.773 componentes con dígito de control CAS correcto → `estado: verificado` por componente (`cas_valido`); 547 fichas con composición.
 - [x] **Repositorio global `Proyecto-Simplicity-Global` registrado** como fuente: `datos/simplicity_global_inventario.json` (3/12 partes, 3 archivos clasificados por tecnología) + catálogo actualizado; alcance TTO/CIJ/LASER documentado.
+- [x] **`datos/tto_ribbons.json`**: 64 grados de ribbon + 694 ítems de suministros + longitudes/anchos por impresora/grado + lógica de lote (chart oficial 2.5.26). Estado: verificado.
+- [x] **`datos/laser_inventario.json`**: 1.908 archivos inventariados (1.253 PDFs); `tools/lote_laser.py` en marcha para extraer el texto de todos los PDFs con el extractor visual v3.
+- [x] **Descifrado completo RC4/AES-128/AES-256** (`tools/leer_pdf_cifrado.py` v3: sAlT, hash 2.B, O/U hex): 27/27 documentos bloqueados recuperados (manuscritos Allprint AES/BNS, manual 6330/6530, instrucciones 463xxx).
+- [x] **LÁSER: extracción completa** de 1.253 PDFs (1.165 OK / 28 escasos / 60 escaneados) + inventario de 1.908 archivos con estado por archivo.
+- [x] **TTO: extracción completa** de 163 PDFs (156 OK / 7 sin texto) además del chart de ribbons estructurado.

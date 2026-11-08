@@ -1,0 +1,64 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\Nueva carpeta\79437-AC Installation-Exchange of the MIC-HMS for IP.pdf
+# cifrado=False bloques=5 caracteres=2979
+
+AL-79437Service Part Installation Instruction
+Installation/Exchange of the MIC-HMS for Industrial Protocols
+1 Installation/Exchange of the MIC-HMS for Industrial Protocols
+1.1 Preparation
+DangerBefore starting any work the laser system must be completely dis-connected!
+1.Turn the key-operated switch to position 0.Remove the key, in order to ensure that the laser system cannot be
+switched on.
+2.Save the database in theFor a detailed description see the manual of the software. software.
+3.Turn off the main switch.
+4.Pull the mains plug.
+1.1.1 Fiber Laser System 7x30/Y.0200-S1.Remove the screws at the back of the supply unit.
+2.Open the cover by pulling it back a little (1), lift the back side (2) and pull it off.
+2
+1
+06/19 - Rev. AC 1
+
+AL - 79437
+Service Part Installation InstructionInstallation/Exchange of the MIC-HMS for Industrial Protocols
+1.1.2 Fiber Laser System 7x40/Y.0x00-xs1.Remove the screws of the cover at the back of the supply unit.
+2.Open the cover by pulling it back and then lift it off.
+1.1.3 CO
+ Laser System
+1.Unlock the cover inserting a large screwdriver, turning it to the left.
+2
+2.Open the cover (it is held in upright position by a pneumatic spring).
+2
+1
+2 06/19 -Rev. AC
+
+AL-79437Service Part Installation Instruction
+Installation/Exchange of the MIC-HMS for Industrial Protocols
+1.2 Installation of the MIC-HMS
+Connector for
+MIC-HMS board
+NoteOnly the Chameleon MCIP (AL-78900) can be used with a MIC-HMS board.
+There are two types of MIC-HMS boards:
+PROFINET (AL-79384), yellow sticker on the left RJ45 socket
+EtherNet/IP (AL-79426), blue sticker on the left RJ45 socket
+1.Plug the MIC-HMS onto the Chameleon board and tighten it with two screws.
+2.Connect a PC to the Ethernet socket on the Chameleon board.
+3.Connect the laser to mains.
+4.Switch on the main switch at the back of the supply unit.
+5.Start the laser by pressing the button POWER/STANDBY on the keypad.Wait until the booting process is complete.
+06/19 - Rev. AC 3
+
+AL - 79437
+Service Part Installation InstructionInstallation/Exchange of the MIC-HMS for Industrial Protocols
+6.Open a browser on the PC and enter the IP address of the laser followed by the port 8080,e.g. 192.168.1.1:8080
+7.The Web-Interface is displayed. Click on Log In.
+8.Enter the user name "Service" and the password "123@service".
+9.Select menu Other, entry External Interface.
+10.Select the corresponding protocol and confirm with Save.
+11.The communication between MIC-HMS and Chameleon is established when the IP addressof the module is displayed. This might take a few seconds.
+12.Confirm with Save. The entry Status is displayed as "Active", the standard settings havebeen set.
+13.The LEDs on the MIC-HMS are on and indicate that the board is ready.
+1.3 Exchange of the MIC-HMS
+1.Disconnect the connector(s) from the MIC-HMS:
+2.Remove the two screws.
+3.Lift out the MIC-HMS.
+4.When mounting a new board follow the steps described in section Installation of the MIC-HMS on page 3.
+4 06/19 -Rev. AC

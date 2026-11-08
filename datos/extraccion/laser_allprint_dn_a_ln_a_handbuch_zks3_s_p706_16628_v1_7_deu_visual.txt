@@ -1,0 +1,649 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\Handbuch ZKS3-S P706-16628_V1.7_deu.pdf
+# cifrado=False bloques=31 caracteres=37687
+
+Version 1.7 P700
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+BETRIEBSANLEITUNG
+P706-16628
+Stand April 2009
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com
+
+Version 1.7 P700
+Die Termotek AG behält sich das Recht vor, die in diesen Unterlagen enthaltenen Angaben
+aufgrund von technischen Änderungen oder Verbesserungen ohne vorherige Ankündigung zu
+ändern. Ferner besteht die Möglichkeit, dass vom Kunden eine geänderte Ausstattung
+gewünscht wurde, z.B. Farbgebung, Seitenwand, Füllstandsanzeige, Leitwertmessung,
+Spannung oder Frequenz, die dann von den Fotos in dieser Anleitung abweicht.
+Ohne ausdrückliche schriftliche Genehmigung der Termotek AG darf kein Teil dieser Unterlagen
+auf irgendeine Art und Weise vervielfältigt oder übertragen werden.
+© Termotek AG, Baden-Baden, 2009
+Alle Rechte vorbehalten.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 2
+
+Version 1.7 P700
+INHALTSVERZEICHNIS
+1. HINWEISE ZUR BENUTZUNG DES HANDBUCHS.......................................................................4
+2. ZUSAMMENFASSUNG DER ACHTUNGS- UND SICHERHEITSHINWEISE...............................5
+3. EINFÜHRUNG.................................................................................................................................6
+3.1 P RODUKTKURZBESCHREIBUNG ..............................................................................................................6
+3.2 B ESTIMMUNGSGEMÄßE V ERWENDUNG ..................................................................................................6
+3.2.1 Elektrische Sicherheit........................................................................................................7
+3.2.2 Betriebssicherheit..............................................................................................................7
+3.2.3 Sicherheitskennzeichen.....................................................................................................7
+4. INBETRIEBNAHME.........................................................................................................................8
+4.1 A USPACKEN ..........................................................................................................................................8
+4.2 B ETRIEBSBEREITSCHAFT HERSTELLEN ..................................................................................................9
+4.2.1 Wasserschläuche anschließen..........................................................................................9
+4.2.2 Elektrische Anschlüsse herstellen...................................................................................10
+4.2.3 Gerät in Betrieb nehmen..................................................................................................12
+4.3 K ÜHLWASSER -R ÜCKKÜHLER FÜR DEN T RANSPORT ZUM K UNDEN BEREITSTELLEN ............................13
+4.3.1 Lagerung..........................................................................................................................13
+4.3.2 Aufstellungsort.................................................................................................................13
+4.3.3 Transport zum Kunden....................................................................................................14
+5. SYSTEMBESCHREIBUNG...........................................................................................................15
+5.1 A UFBAU UND F UNKTIONSWEISE ..........................................................................................................15
+5.1.1 Kältekreislauf...................................................................................................................15
+5.1.2 Kühlwasserkreislauf.........................................................................................................16
+5.1.3 Luftkreislauf......................................................................................................................16
+5.1.4 Elektrokreis......................................................................................................................17
+5.1.5 Schaltplan........................................................................................................................18
+6. WARTUNGSARBEITEN................................................................................................................21
+6.1 S ICHERHEITSHINWEISE ........................................................................................................................21
+6.2 A USTAUSCH DES W ASSERFILTERS .......................................................................................................21
+6.3 W ASSER NACHFÜLLEN ........................................................................................................................23
+6.4 W ASSER WECHSELN ............................................................................................................................24
+6.5 K ÜHLKREISLAUF .................................................................................................................................25
+7. REPARATURANLEITUNGEN.......................................................................................................26
+7.1 S ICHERHEITSHINWEISE ........................................................................................................................26
+7.2 R EPARATUREN AM E LEKTROKREIS ......................................................................................................27
+7.2.1 Sicherung auswechseln...................................................................................................27
+8. SONSTIGES...................................................................................................................................28
+8.1 S ERIENNUMMER ..................................................................................................................................28
+8.2 E NTSORGUNGSANWEISUNG .................................................................................................................28
+8.3 N ICHT ZUFRIEDEN ?..............................................................................................................................29
+8.4 CE - K ONFORMITÄTSERKLÄRUNG .......................................................................................................30
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 3
+
+Version 1.7 P700
+1. Hinweise zur Benutzung des Handbuchs
+Dieses Handbuch wurde erstellt, um den Benutzer bei Transport, der Installation und
+Inbetriebnahme, dem Betrieb, der Wartung und Reparatur des Kühlgerätes zu unterstützen. Der
+Benutzer sollte das Handbuch lesen, bevor er mit der Installation des Geräts beginnt. Die
+Termotek AG
+übernimmt keine Haftung für Schäden, die auf falsche Installation, unkorrekte
+Inbetriebnahme und Reparaturen oder unsachgemäßen Betrieb zurückzuführen sind.
+Dieses Kühlgerät entspricht den gegenwärtigen Bestimmungen der Europa Normen. Durch
+Änderungen an der Konstruktion oder Abweichungen von dem sachgemäßen Einsatz durch
+den Kunden, kann diese Übereinstimmung hinfällig werden.
+Konventionen im Handbuch
+Die nachfolgenden Symbole gelten durchgängig im gesamten Handbuch.
+W ARNUNG VOR EINER G EFAHR
+W ARNUNG VOR ÄTZENDEN S TOFFEN
+W ARNUNG VOR ELEKTRISCHER S PANNUNG
+W ARNUNG VOR GESUNDHEITSSCHÄDLICHEN S TOFFEN
+V OR Ö FFNEN N ETZSTECKER ZIEHEN
+N ÜTZLICHE I NFORMATION
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 4
+
+Version 1.7 P700
+2. Zusammenfassung der Achtungs- und Sicherheitshinweise
+• Wartungs- und Reparaturarbeiten dürfen nur von sachkundigem Personal ausgeführt
+werden.
+• Nehmen Sie keine Arbeiten am Kältekreis vor, da giftige, ätzende Gase und Flüssigkeiten
+austreten können (Kältemittel R134a).
+Arbeiten am Kältekreislauf dürfen nur Kältefachkräfte durchführen.
+• Beachten Sie bei einem Eingriff in das Gerät die gesetzlich gültigen
+Unfallverhütungsvorschriften der Berufsgenossenschaften.
+• Bei Arbeiten am Kühlgerät darf das Kühlgerät nicht unter Spannung stehen. Es ist dafür zu
+sorgen, dass ein unberechtigtes Einschalten nicht möglich ist.
+• Setzen Sie die Sicherheitseinrichtungen nicht außer Kraft.
+• Das Kühlgerät darf nur mit fest montiertem Lüftergitter betrieben werden.
+• Der elektrische Anschluss entspricht der VDE und den EN- und IEC- Normen. Sorgen Sie
+ferner dafür, dass das Gerät ordnungsgemäß geerdet ist.
+• Betreiben Sie den Kühler nicht ohne Kühlwasser, um die Komponenten (z.B. Pumpe) nicht
+zu zerstören.
+• Betreiben Sie den Kühler nicht ohne Wasserfilter.
+• Betreiben Sie den Kühler nur mit dem erlaubten gefiltertem (< 5 µm) Kühlmedium.
+• Betreiben Sie den Kühler nur innerhalb von Gebäuden. Diese Geräte sind nicht dafür
+ausgelegt im Freien betrieben zu werden.
+• Achten Sie darauf, dass ein freies Ansaugen und Ausblasen der Kühlluft und ein
+ausreichender Luftwechsel zur Wärmeabfuhr am Einbauort gewährleistet ist.
+• Ändern Sie die Reglereinstellungen nicht. Durch veränderte Einstellungen kann das Gerät
+funktionsuntüchtig werden.
+• Achten Sie auf die Flussrichtung, wenn Sie die Wasserschläuche anschließen.
+• Entleeren Sie das Gerät komplett, bevor Sie das Gerät versenden. Ansonsten kann es
+Frostschäden von dem im Kühler verbliebenen Wasser geben.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 5
+
+Version 1.7 P700
+3. Einführung
+3.1 Produktkurzbeschreibung
+Das Kühlgerät wurde konstruiert und entwickelt, um ein Verbrauchermedium mit Hilfe des
+Kühlprozesses innerhalb von zuvor festgelegten Temperaturgrenzen konstant zu halten. Es ist
+für die Kühlung im Dauerbetrieb, beispielsweise von Laseranlagen, ausgelegt.
+Das Kühlgerät ist in einem Edelstahlblechgehäuse kompakt und robust aufgebaut.
+Vorteile des Kühlgerätes
+ kompakte Bauform
+ wartungsarm
+ einfache Bedienung und Handhabung
+ Einsatz bei Umgebungstemperaturen von +15°C bis +40°C
+ zuverlässiger, ruhiger Betrieb
+ hohe Temperaturkonstanz des Kühlwassers
+3.2 Bestimmungsgemäße Verwendung
+Das Kühlgerät eignet sich ausschließlich zur Kühlung von gefiltertem (< 5 µm) Wasser unter
+Einhaltung aller Einbau- und Sicherheitsvorschriften.
+Die Termotek AG
+übernimmt keine Haftung für Schäden durch unsachgemäßen Gebrauch oder
+unsachgemäßen Betrieb des Geräts.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 6
+
+Version 1.7 P700
+3.2.1 Elektrische Sicherheit
+Das Kühlgerät ist nach den allgemein anerkannten Regeln der Technik gebaut worden.
+Vorsicht, Gefahr durch elektrischen Strom!
+Führen Sie alle Montagearbeiten nur im spannungslosen Zustand der Anlage durch. Sämtliche
+A rbeiten am Kühlgerät, insbesondere an den elektrischen Komponenten, dürfen nur von
+speziell geschultem Personal durchgeführt werden.
+3.2.2 Betriebssicherheit
+Bei dem Kühlgerät handelt es sich um einen Kompressorkühler mit geschlossenem
+Kühlkreislauf.
+Achtung!
+Betreiben Sie das Kühlgerät nicht ohne Kühlwasser. Überprüfen Sie regelmäßig den
+Kühlwasserstand.
+Der Kühler versteht sich als untergeordnete Komponente im Gesamtsystem (slave). Bei
+Fehlermeldungen vom Kühler (Min/Max-Temp) ist dieser kurzfristig abzuschalten. Bei nicht
+beachten dieser Anforderung sind Folgeschäden am Gesamtsystem nicht auszuschließen. Für
+diese Schäden übernimmt TERMOTEK keinerlei Haftung.
+3.2.3 Sicherheitskennzeichen
+Information!
+Zerstörte oder unleserliche Sicherheitskennzeichen müssen umgehend ersetzt werden.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 7
+
+Version 1.7 P700
+4. Inbetriebnahme
+4.1 Auspacken
+Das Kühlgerät besteht aus einer Vielzahl von elektronischen und mechanischen Komponenten.
+Um die einzelnen Komponenten während des Transports vor Beschädigung zu schützen, wird
+spezielles Verpackungsmaterial verwendet. Dieses Verpackungsmaterial ist stoßhemmend und
+vibrationsdämpfend. Das innere Verpackungsmaterial ist ein Verpackungspolster aus PU-
+Schaum. Für die äußere Verpackung wird Pappe eingesetzt, die das Gerät vor Staub und
+Verschmutzung schützt.
+Gehen Sie beim Auspacken des Kühlgerätes wie folgt vor:
+1. Überprüfen Sie die Verpackung auf Transportschäden.
+2. Öffnen Sie die Verpackung und entfernen Sie das Verpackungspolster.
+3. Entnehmen Sie das Kühlgerät.
+4. Überprüfen Sie das Kühlgerät auf Transportschäden.
+Information!
+Sollte das Kühlgerät beim Transport beschädigt worden sein, informieren Sie bitte umgehend
+das Transportunternehmen und den Lieferanten durch eine schriftliche Nachricht. Bewahren
+Sie das Verpackungsmaterial auf, und vermerken Sie sowohl äußere als auch innere Schäden.
+Erstellen Sie ein oder mehrere Fotos.
+5. Stellen Sie das Kühlgerät an den vorgesehenen Installationsort.
+6. Schützen Sie das Kühlgerät bis zur Installation vor Staub und Feuchtigkeit.
+7. Entsorgen Sie das Verpackungsmaterial.
+Information!
+Sorgen Sie bitte dafür, dass der umhüllende Karton, die Transportpalette und die
+Verpackungspolster getrennt der Rohstoffwiederverwertung zugeführt werden.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 8
+
+Version 1.7 P700
+4.2 Betriebsbereitschaft herstellen
+4.2.1 Wasserschläuche anschließen
+Bevor Sie das Kühlgerät das erste Mal gemeinsam mit dem Verbrauchergerät in Betrieb
+nehmen, müssen Sie zunächst die Wasserschläuche anschließen. Stellen Sie sicher, dass alle
+Leitungen für den maximalen Arbeitsdruck des Kühlgerätes ausgelegt sind. Die
+Wasseranschlüsse befinden sich an der Frontseite des Kühlgerätes.
+Stellen Sie die Wasserverbindung zum Verbraucher her. Stellen Sie sicher, dass keine
+Querbelastungen an den Anschlussstellen auftreten. Gegebenenfalls installieren Sie eine
+ausreichende Zugentlastung.
+Achtung!
+Beachten Sie beim Anschluss der Wasserschläuche die Fließrichtung des Wassers:
+blaues Schild = Wasservorlauf Kühlgerät (OUT),
+rotes Schild = Wasserrücklauf (IN)
+Wasservorlauf PCM-Kühlung Entlüftung Tank
+ Wasserrücklauf PCM-Kühlung Befüllstutzen
+Wasserrücklauf (vom Verbraucher)
+ROT
+Entleerungsschlauch
+Wasservorlauf (zum Verbraucher)
+BLAU
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 9
+
+Version 1.7 P700
+4.2.2 Elektrische Anschlüsse herstellen
+Anschluss der Versorgungsspannung
+A n der rechten Seitenwand ist die Anschlussbox der elektrischen Stromversorgung installiert.
+Sichern Sie außerdem die Phase mit einer Sicherung von 16A ab. Bei Verwendung eines
+Sicherungsautomaten (Charakteristik C) darf dieser gleichzeitig auch als Trenneinrichtung
+verwendet werden, wenn die genannte Anforderung an diese erfüllt ist. Die Sicherungen
+müssen für induktive Last ausgelegt werden!
+Spannungsversorgung
+24 V, DC
+Spannungsversorgung 230V AC
+50/60 Hz
+Signalnschluss 15pin zu PCM
+RS232 Interface
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 10
+
+Version 1.7 P700
+Anschluss für den Datenaustausch (SUB-D Stecker)
+Der Stecker SUB-D 15 pol. (oben) zur Datenübertragung befindet sich an der rechten Seite des
+Kühlgerätes. Die Signalkontakte werden potentialfrei herausgeführt und sind im Fehlerfall
+öffnend. Maximale Belastung der Kontakte 100mA/24V.
+Signalanschluss
+Steckerbelegung Signalausgang
+Pin 1 Alarm Übertemperatur
+Pin 2 Signal Durchfluss
+Pin 3 Kühler EIN
+Pin 4 GND
+Pin 5 +24 V DC
+Pin 6 NC
+Pin 7 Kühler EIN
+Pin 8 Warnung Wasserstand
+Pin 9 NC
+Pin 10 Common GND
+Pin 11 Kodierung 0
+Pin 12 Kodierung 1
+Pin 13 Kodierung 2
+Pin 14 Kodierung 3
+Pin 15 NC
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 11
+
+Version 1.7 P700
+4.2.3 Gerät in Betrieb nehmen
+1. Nachdem Sie die Versorgungsspannung angelegt haben, leuchtet die rote Leuchtdiode und
+erscheint in der Anzeige der Kühlersteuerung die Fehlermeldung Wasserstandsalarm.
+2. Füllen Sie nun über den Einfüllschlauch an der Vorderseite des Kühlers das Wasser auf bis die
+Fehlermeldung Wasserstandswarnung erscheint (Kap. 6.3).
+3. Füllen Sie den Kühler weiter auf bis die Fehlermeldung Wasserstandswarnung nicht mehr
+erscheint. Bestätigen Sie die Meldung mit der QuitTaste (Ø). Die rote LED hört auf zu
+leuchten.
+4. Wenn der max. Wasserstand erreicht ist kann der Kühler über die AUF-Taste eingeschaltet
+werden.
+V erfügt der Kühler über die Option Fernstart, muss der Kühler über den Fernstart
+eingeschaltet werden.
+5. Eventuell muss noch das Schlauchsystem des Lasers befüllt werden. Aktivieren Sie hierzu in
+der zweiten Programmierebene den Befüllmodus und füllen Sie anschließend das
+Schlauchsystem über die Einfüllöffnung des Kühlers (Kap. 5.1.4). Nach aktivieren des
+Befüllmodus müssen Sie den Kühler starten. Der Befüllmodus unterdrückt für einen kurzen
+Zeitraum die Wasserstandskontrolle und aktiviert die Pumpe, so dass das Schlauchsystem mit
+einem einzigen Befüllvorgang befüllt werden kann.
+Füllen Sie auf jeden Fall Wasser nach, wenn Sie den Befüllmodus nutzen. Ansonsten
+besteht die Gefahr des Trockenlaufens der Pumpe und ihrer Beschädigung sowie die
+Gefahr der Beschädigung des Kühlers und der Lasers!
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 12
+
+Version 1.7 P700
+4.3 Kühlwasser-Rückkühler für den Transport zum Kunden bereitstellen
+Da das Kühlgerät aus einer Vielzahl von empfindlichen, elektronischen und mechanischen
+Komponenten besteht, sollten Sie bei Lagerung, Einbau und Transport des Geräts die
+nachfolgenden Voraussetzungen und Hinweise beachten.
+4.3.1 Lagerung
+Das Kühlgerät muss vor dem Einlagern immer entleert werden (Kapitel 6.5). Das Kühlgerät darf
+nur waagerecht gelagert werden. Sorgen Sie dafür, dass es vor Staub und Feuchtigkeit
+geschützt ist. Für die Lagerung gelten folgende Umgebungsbedingungen:
+Temperatur: +5°C bis +65°C
+Relative Luftfeuchtigkeit: 10  75%, nicht kondensierend
+4.3.2 Aufstellungsort
+• Installieren Sie das Kühlgerät nicht in einem Bereich, in dem andere Werksanlagen eine hohe
+Umgebungstemperatur verursachen. Das Kühlgerät arbeitet effizient bei
+Umgebungstemperaturen bis zu +35°C. Bei höheren Umgebungstemperaturen erreicht das
+Kühlgerät keine Kühlleistung mehr, da das Kältemittel nicht genügend abgekühlt werden kann.
+Vor dem Druckanstieg des Kühlmittels schützt ein Überdruckschalter den Kältemittelkreislauf.
+Die Diode an der Frontplatte leuchtet auf.
+• Das Kühlgerät muss so eingebaut werden, dass eine ausreichende Luftzirkulation gesichert ist.
+Vergewissern Sie sich, dass Lufteintritts- und Austrittsöffnungen des Schaltschranks auch im
+späteren Betrieb vollständig frei sind. Eine Einschränkung des Luftstroms verringert die
+Kühlkapazität.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 13
+
+Version 1.7 P700
+4.3.3 Transport zum Kunden
+Der Transport des Kühlgerätes sollte so vorsichtig und so erschütterungs- und vibrationsfrei wie
+möglich durchgeführt werden. Beachten Sie bitte folgende Maßnahmen:
+• Das Kühlgerät muss vor dem Transport vollständig entleert werden.
+• Das Kühlgerät darf nur waagerecht transportiert und nicht geworfen werden.
+• Verwenden Sie nur geeignetes Verpackungsmaterial  stoßhemmend und
+vibrationsdämpfend, so dass ein sicherer Transport der empfindlichen Komponenten
+gewährleistet ist. Achten Sie bei der Verpackung auch darauf, dass das Kühlgerät vor
+Staub und Verschmutzung geschützt ist.
+• Verpacken Sie das Kühlgerät so, dass es gegen Stöße und Herunterfallen gesichert ist.
+• Versenden Sie den Kühler nur gebändert auf einer Palette.
+• Wird das Kühlgerät separat versendet, verwenden Sie die originalen Verpackungspolster.
+Eine Kennzeichnung des Transportguts mit "Vor Nässe schützen", "Aufrecht transportieren
+und lagern" sowie "Zerbrechlich" ist erforderlich.
+Achtung Frostgefahr!
+Vor dem Transport muss das Kühlgerät vollständig entleert werden, da ansonstendie Gefahr
+der Beschädigung durch gefrierendes Kühlwasser besteht.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 14
+
+Version 1.7 P700
+5. Systembeschreibung
+5.1 Aufbau und Funktionsweise
+Das Kühlgerät ist ein Kompressorkühler mit geschlossenem Kühlkreislauf. Das Gerät ist eine
+geschlossene Einheit und hat folgende Kreisläufe:
+ Kältekreislauf
+ Kühlwasserkreislauf
+ Luftkreislauf
+ Elektrokreis.
+5.1.1 Kältekreislauf
+Der Kältekreislauf ist ein geschlossenes System, in dem das Kältemittel zirkuliert
+Im Kältekreislauf saugt der Kompressor gasförmiges Kältemittel R 134a aus dem Verdampfer
+an und verdichtet es. Im Kondensatorblock wird die dadurch entstandene Wärme im Kältemittel
+an das Medium Luft abgegeben. Bei diesem Vorgang verflüssigt sich das Kältemittel.
+Es fließt dann zunächst über einen Trockner, der dem Mittel Restfeuchtigkeit entzieht, und wird
+anschließend über ein Expansionsventil (Düse) in die Spirale (Wärmetauscher) im Tank
+eingespritzt. Das Kältemittel verdampft bei niedrigem Druck und entzieht dabei dem
+Kühlwasserkreislauf (Wasser) die benötigte Wärme für diesen Vorgang. Das Wasser kühlt
+dabei ab.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 15
+
+Version 1.7 P700
+5.1.2 Kühlwasserkreislauf
+Das warme Wasser fließt über die Wassereintrittsleitung in das Kühlgerät. Ein
+Durchflusswächter, direkt hinter dem Wassereintritt montiert, überwacht den Durchfluss im
+Wasserkreislauf. Das Wasser fließt dann zunächst in den Tank. Hier findet der
+Wärmeaustausch zwischen Kältemittel und Kühlwasser statt. Anschließend wird das Wasser
+von der Pumpe angesaugt.
+Von der Pumpe fließt das Wasser zur Filtereinheit. Hier werden kleinste Schmutzpartikel aus
+dem Wasser gefiltert. Nach dem Filter verlässt das abgekühlte Wasser über die
+Wasseraustrittsleitung das Kühlgeräte.
+Über einen Bypass kann Kühlwasser für die PMC  Kühlung genutzt werden.
+Information!
+Der Filter ist in regelmäßigen Zeitabständen auszuwechseln. Nähere Informationen
+entnehmen Sie dem Kapitel "Wartungsarbeiten, Austausch des Wasserfilters".
+5.1.3 Luftkreislauf
+Als Kühlluft steht die Umgebungsluft zur Verfügung. Sie wird durch die Front in das Gerät
+gesaugt. Im Kondensatorblock kühlt die Luft das Kühlmittel und wird anschließend von dem
+Lüfter an der Rückfront des Geräts wieder ausgeblasen.
+Achtung!
+Achten Sie darauf, dass ein freies Ansaugen und Ausblasen der Kühlluft und ein
+ausreichender Luftwechsel zur Wärmeabfuhr am Aufstellungsort gewährleistet sind.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 16
+
+Version 1.7 P700
+5.1.4 Elektrokreis
+Startbildschirm
+Der Betriebmodus wird durch das leuchten der grünen LED angezeigt. Sollte ein Fehler
+auftreten, so leuchtet die rote LED, je nach Fehler und eingestellten Parametern stellt die
+Kühlung ihren Betrieb ein. In diesem Fall erlischt die grüne Betriebs-LED. Die Hupe können sie
+mit der Stumm-Taste unterdrücken. Die Fehlermeldungen sind selbsterklärend.
+Fehler LED
+Betriebs LED
+ESCAPE/Sollwert
+LINKS/Stumm
+Display
+ENTER/Menü
+AUF/Ein/Aus
+RECHTS/Roll/Info
+AB/Quit
+Sollwerteinstellung
+Durch Drücken der ESCAPE-Taste gelangen Sie vom Startbildschirm in die Sollwertverstellung
+(1. Programmierebene). Mittels der AUF- und AB-Taste können Sie den jeweiligen Ziffernwert
+verstellen. Über die Links- und Rechtstaste können Sie die einzelnen Ziffern auswählen. Den
+eingegebenen Wert bestätigen Sie mit der ENTER-Taste, die Eingabe brechen Sie mit der
+ESCAPE-Taste ab.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 17
+
+Version 1.7 P700
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+5.1.5 Schaltplan
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com
+
+Version 1.7 P700
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 19
+
+Version 1.7 P700
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 20
+
+Version 1.7 P700
+6. Wartungsarbeiten
+6.1 Sicherheitshinweise
+Achtung!
+• Reparaturarbeiten dürfen nur von sachkundigem Personal durchgeführt werden.
+• Bei Arbeiten am Kühlgerät darf das Kühlgerät nicht unter Spannung stehen. Die
+Netzspannung ist abzuschalten. Sorgen Sie auch dafür, dass ein unberechtigtes
+Einschalten des Geräts nicht möglich ist.
+• Setzen Sie die Sicherheitseinrichtungen nicht außer Kraft.
+Vorsicht  giftige, ätzende Gase und Flüssigkeiten!
+Nehmen Sie keine Arbeiten am Kältekreis vor, da giftige, ätzende Gase und Flüssigkeiten
+austreten können. (Kältemittel R134a)
+Sollte eine Reparatur am Kältekreis erforderlich sein, benachrichtigen Sie einen
+Kältefachmann oder Ihren Lieferanten.
+6.2 Austausch des Wasserfilters
+Durch das Sammeln aller Partikel >= 5 µm im Kühlwasserkreislauf setzt sich der Filter zu. Er
+wird grau und muss dann ausgetauscht werden. Die maximale Einsatzzeit von 6 Monaten sollte
+nicht überschritten werden. Die Wasserqualität muss in regelmäßigen Abständen (alle 12
+Monate) überprüft werden. Das Wassersystem sollte entleert und ausgespült werden. Der
+Partikelfilter sollte ausgewechselt werden, nachdem das System gereinigt wurde. Auf folgende
+Weise kann das Wasser abgelassen und das System gespült werden, ohne die Anschlüsse zu
+lösen:
+Entleeren Sie den Behälter, indem Sie die das Wasser über die Entleerung ablassen. Entlüften
+Sie den Tank dabei durch Öffnen der Einfüllöffnung.
+Füllen Sie den Behälter wieder mit sauberem Wasser. Lassen Sie die Pumpe ca. 10 Minuten
+laufen, um die Leitungen des Systems durchzuspülen. Wiederholen Sie diesen Vorgang ca. 3-
+mal.
+Überprüfen Sie währenddessen, ob die Pumpe ruhig läuft. Eine laute Pumpe zeigt einen hohen
+Druckaufbau an, der durch abgeklemmte Schläuche verursacht werden kann. Überprüfen Sie
+auf Wasseraustritt an den Dichtungen und Schläuchen. Ersetzen Sie den Partikelfilter. Füllen
+Sie den Behälter wie im Installationsabschnitt beschrieben auf.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 21
+
+Version 1.7 P700
+Partikelfilter
+Der Filter ist im Wasser-Vorlauf an der Front des Kühlers angebracht. Der Filter kann wie folgt
+ausgewechselt werden:
+• Schalten Sie den Kühler ab und entfernen Sie die Spannungsversorgung.
+• Schrauben Sie den durchsichtigen Filterdom ab und nehmen Sie diesen nach unten
+weg, um den eingeschobenen Filtereinsatz freizulegen. Der Behälter sollte zuvor
+entleert und nach dem Filterwechsel wieder mit sauberem Wasser aufgefüllt werden.
+Ersetzen Sie das Filterelement durch ein neues
+• Reinigen Sie die Filtertasse.
+• Schrauben Sie die Filtertasse auf das Oberteil. Prüfen Sie dabei die Qualität des
+Dichtrings auf mögliche Beschädigungen.
+Wasserfilter
+Achtung!
+Betreiben Sie das Kühlgerät nicht ohne Wasserfilter.
+Kontrollieren Sie nach dem Filtertausch den korrekten Sitz des Wasserfilters.
+Überprüfen Sie nach dem Filtertausch die Dichtheit des Behälters, der Halterung und der
+Schläuche.
+Wechseln Sie den Filter mindestens alle 6 Monate.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 22
+
+Version 1.7 P700
+6.3 Wasser nachfüllen
+Das Kühlgerät zeigt den Wasserstand an der Füllstandsanzeige an. Sinkt der Wasserstand
+unter den Min. Level wird dies durch die entsprechende Meldung angezeigt. Wird die
+Alarmgrenze für den Wasserstand unterschritten, werden die Funktionen (Pumpe, Kompressor,
+Heizung) des Kühlgerätes abgeschaltet. Zusätzlich erscheint die entsprechende Meldung und
+die rote Diode leuchtet.
+Führen Sie folgende Schritte durch, um Wasser nachzufüllen:
+1. Entfernen Sie den Stopfen vom Einfüllstutzen und von der Tankentlüftung
+2. Füllen Sie nach und nach das gefilterte (< 5 µm) Wasser über den Einfüllstutzen in den
+Tank ein, bis Sie den maximalen Anzeigestand erreicht haben.
+Einfüllstutzen
+Tankentlüftung
+Ablassschlauch
+3. Bestätigen Sie die Meldung mit der Quit  Taste (Ø). Die rote LED hört auf zu leuchten.
+4. Verschließen Sie die Stopfen wieder.
+Verfügt der Kühler über die Option Fernstart, muss der Kühler über den Fernstart eingeschaltet
+bzw. quittiert werden.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 23
+
+Version 1.7 P700
+6.4 Wasser wechseln
+Unter folgenden Bedingungen muss das Wasser abgelassen bzw. gewechselt werden:
+- der Kühler wird verschickt
+- der Kühler wird eingelagert
+Führen Sie folgende Schritte durch um das Kühlwasser abzulassen:
+1. Schalten Sie den Kühler ab und entfernen Sie die Spannungsversorgung.
+2. Ziehen Sie die Wasserschläuche auf der Frontseite des Kühlers ab.
+3. Stellen sie ein ausreichend großes Gefäß zum Auffangen des Kühlwassers bereit.
+4. Drehen Sie den Entleerungsschlauch nach unten in das Auffanggefäß.
+5. Ziehen Sie den Stopfen aus dem Entleerungsschlauch und öffnen Sie die
+Tankentlüftung.
+6. Lassen Sie das Wasser durch den Entleerungs-Schlauch ab.
+7. Warten Sie bis kein Wasser mehr aus dem Ablassschlauch fließt.
+8. Leeren Sie die Filtertasse wie in Kapitel 6.2 beschrieben.
+Die Filtertasse muss komplett entleert sein um Frostschäden zu vermeiden.
+9. Saugen Sie am Wasservorlauf- und am Wasserrücklaufanschluss an der Rückseite des
+Kühlers, das Wasser ab.
+10. Verschließen Sie den Entleerungs-Schlauch und die Tankentlüftung wieder mit dem
+Stopfen.
+Tankentlüftung
+Entleerungs-Schlauch
+Zum Wiederbefüllen gehen Sie wie folgt vor:
+1. Schließen Sie die Schläuche an der Rückseite wie in Kapitel 4.2.1 beschrieben wieder
+an.
+2. Befüllen Sie den Kühler wie in Kapitel 4.2.3 und Kapitel 6.3 beschrieben.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 24
+
+Version 1.7 P700
+6.5 Kühlkreislauf
+Prüfen Sie in regelmäßigen Abständen, ob der Kondensationsblock nicht mit Schmutz oder
+anderen Fremdkörpern verstopft ist. Durch die Seitenpaneele wird Luft angesaugt, daher
+sammelt sich Schmutz auf der Innenseite des Blocks an. Der Kondensationsblock kann wie
+folgt gereinigt werden:
+• Schalten Sie den Kühler ab und entfernen Sie die Spannungsversorgung.
+• Nehmen Sie die Seitenverkleidungen ab.
+• Blasen Sie den Schmutz aus dem Block. Es kann notwendig sein, ein Entfettungsmittel zu
+benutzen, um Ölablagerungen zu entfernen. Bei übermäßig starken Ablagerungen kann auch
+das Gebläse ausgebaut werden. Reinigen Sie die Ventilatorflügel. Entfernen Sie allen Staub
+und andere Fremdstoffe aus der Ventilatorhaube.
+• Arbeiten am aktiven Kältekreislauf dürfen nur von einem Kältetechniker durchgeführt werden!
+• Der Kühler ist mit dem Kältemittel R 134a befüllt. Von diesem Kühlmittel gehen keinerlei
+Gefahren aus, wenn es sich im geschlossenen Kreislauf der Geräte befindet. Sollte im
+Fehlerfall Kühlmittel austreten, können geringe Gefahren für Personen und Umwelt auftreten.
+Beachten Sie folgende Hinweise.
+• Nicht einatmen oder einnehmen, Haut  und Augenkontakt vermeiden. Bereits auf Haut oder
+Augen gekommene Substanz zuerst verdunsten lassen, dann mit Wasser spülen.
+• Erste Hilfe Maßnahmen sind in der Regel ausreichend. Bei auftretenden Beschwerden durch
+starke Kontamination ist jedoch ein Arzt aufzusuchen. Dieser ist darüber zu informieren, dass
+die Beschwerden durch R134a verursacht sind.
+• Austretendes R134a stellt eine geringe Gefahr für die Umwelt dar. Es sollte jedoch nicht in
+die Umwelt gelangen. Es ist aufzusaugen oder das Austreten ist zu unterbinden.
+• Es ist für eine ausreichende Belüftung zu sorgen! Fenster und Türen weit öffnen!
+• Der Kältekreislauf ist durch einen Hochdruckschalter abgesichert. Dieser stellt sich nach dem
+auslösen selbstständig wieder zurück.
+• Der Hochdruckschalter wird aktiv wenn der Kältekreislauf überlastet, das Kältemittel somit unter
+hohem Druck steht.
+•Bei Rückfragen nehmen Sie bitte direkt mit dem Hersteller Kontakt auf:
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 25
+
+Version 1.7 P700
+7. Reparaturanleitungen .
+7.1 Sicherheitshinweise
+Achtung!
+• Reparaturarbeiten dürfen nur von sachkundigem Personal durchgeführt werden.
+• Bei Arbeiten am Kühlgerät darf das Kühlgerät nicht unter Spannung stehen. Die
+Netzspannung ist abzuschalten. Sorgen Sie auch dafür, dass ein unberechtigtes
+Einschalten des Geräts nicht möglich ist.
+• Setzen Sie die Sicherheitseinrichtungen nicht außer Kraft.
+Vorsicht  giftige, ätzende Gase und Flüssigkeiten!
+Nehmen Sie keine Arbeiten am Kältekreis vor, da giftige, ätzende Gase und Flüssigkeiten
+austreten können. (Kältemittel R134a)
+Sollte eine Reparatur am Kältekreis erforderlich sein, benachrichtigen Sie einen
+Kältefachmann oder Ihren Lieferanten.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 26
+
+Version 1.7 P700
+7.2 Reparaturen am Elektrokreis
+7.2.1 Sicherung auswechseln
+Um eine Sicherung auszuwechseln, gehen Sie wie folgt vor:
+1. Schalten Sie das Kühlgerät ab.
+2. Lösen Sie die vier Befestigungsschrauben des Reglers und nehmen Sie ihn vorsichtig
+nach vorne heraus.
+3. Drehen Sie die defekte Sicherung mit einem Schraubendreher heraus.
+4. Setzen Sie die neue Sicherung ein.
+Sicherungstyp: 5x20
+F1 F2 F3 F4 F5
+F1: NC
+F2: Pumpe T6,3A
+F3: Heißgasventil T1A
+F4: NC
+F5: Lüfter T1,6A
+Achtung!
+Nur Sicherungen mit gleicher Auslösecharakteristik einsetzen.
+Löst die Sicherung erneut aus besteht ein gravierender Defekt im Kühler.
+•Setzen Sie sich mit dem Hersteller in Verbindung.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 27
+
+Version 1.7 P700
+8. Sonstiges
+8.1 Seriennummer
+Die Seriennummer ist in der Regel auf der Rückseite des Kühlers angebracht. Die relevanten
+Daten für unseren Service sind auf dem folgenden Muster grau hinterlegt.
+76532 Baden-Baden, Im Rollfeld 6
+Tel. 07221/9711-0
+Typ: P706-16628 AL-72385-A
+Kühlleistung: 1100W bei 20°C Wasser/35 °C Umgebung
+Pumpenleistung: 7l/min bei 3 bar
+Elektrische Leistung: 230 V, 50/60 Hz, 7/8 A
+Kältemittel: R134a Max Druck: 18,5 Bar
+Serien-Nr: XXXXX Baujahr: MM/2007
+8.2 Entsorgungsanweisung
+Der Kühler besteht aus mehreren Bauteilen die getrennt Entsorgt werden müssen. Die Entsorgung
+muss fachgerecht und an geeigneten Stellen durchgeführt werden.
+Der Kühler kann in 3 Gruppen eingeteilt werden.
+1. Elektrogeräte/Bauteile/Kabel aller Art werden nach Möglichkeit zerlegt und die einzelnen
+Materialfraktionen werden anschließend verwertet. Elektrogeräte/Bauteile können auf den
+Recyclinghöfen, bei der Elektrogeräte-Zerlegung direkt angeliefert werden.
+2. Nicht verwertbare Abfälle (Kunststoffe, Isoliermaterial, Blechteile u.s.w.) können über
+Restabfalltonnen bzw. Recyclinghöfe entsorgt werden.
+3. Der Kältekreis muss komplett von einem laut § 52 Abs. 1 Kreislaufwirtschafts- und
+Abfallgesetz (KrW-/AbfG) zertifizierten Unternehmen entsorgt werden. Die Demontage des
+Kältekreises darf nur von Fachkräften der Kältetechnik durchgeführt werden.
+4. Verunreinigtes oder mit Zusätzen vermischtes Kühlwasser darf nicht in die Kanalisation oder
+Gewässer gelangen. Das Kühlwasser wird als Sondermüll eingestuft und darf nur über ein
+zugelassenes Unternehmen oder Recyclinghöfe entsorgt werden.
+Achtung!
+Alle Abfälle sind unter Einhaltung der Umweltschutzbestimmungen von Bund,
+Ländern und Gemeinden zu entsorgen!
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 28
+
+Version 1.7 P700
+8.3 Nicht zufrieden?
+Dies bedauern wir sehr. Auf unserer Homepage <<http://www.termotek-ag.com>> haben wir unter
+der Rubrik <<Kontakt>> eine Trouble Shooting Prozedur (englisch) zum Herunterladen hinterlegt.
+Sollte diese Ihnen nicht weiterhelfen, kontaktieren Sie bitte Ihren Händler. Um die Bearbeitung zu
+erleichtern, halten Sie bitte die Modellnummer und die Seriennummer (auf der Rückseite
+angebracht) des Kühlers bereit
+.
+Wir sind immer bestrebt unsere Produkte und Dokumentation zu verbessern. Wenn Sie einen
+Verbesserungsvorschlag haben oder einen Fehler entdecken, teilen Sie ihn uns bitte mit. Natürlich
+freuen wir uns jederzeit auch über ein Lob.
+Sie können uns Ihre konstruktiven Verbesserungsvorschläge und Ideen gerne direkt über Telefon
+(+49 (0)7221 9711-0), Fax (+49 (0)7221 9711-111) oder Email (info@termotek-ag.com) mitteilen.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 29
+
+Version 1.7 P700
+8.4 CE - Konformitätserklärung
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 30

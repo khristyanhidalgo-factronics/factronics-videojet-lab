@@ -1,0 +1,331 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Ing\18352-63_6530 Installation (Eng).pdf
+# cifrado=False bloques=14 caracteres=16192
+
+6530 Installation
+C o n t e n t
+T i t l e 6530 Installation
+C o n t e n t
+6 5 3 0 I n s t a l l a t i o n
+TT O Applications
+Installation Requirements
+Site Survey
+Check Sheet
+Bracket Assembly
+Assembling the Brackets
+Platen Roller
+Mounting Rollers
+Registration Assembly
+TT Otechnology requires physical contact with target materials at high throughput and placement within other
+equipment to reach that target film at the correct time. Planning and proper installation are critical to the success
+of TT O printers. Post installation is less forgiving than in other technologies, so it is worth taking the time to get
+things correct the first time.
+Shock Hazard W arning
+Lethal voltages are present within this equipment when it is connected to the mains electrical supply .
+Unless it is necessary to run the printer , disconnect the printer from the mains electrical supply before
+removing the covers, or attempting any service or repair activity . Failure to follow this warning can
+cause death or personal injury .
+Personal Injury
+Improper use of this equipment may result in personal injury .
+Possible Equipment Damage
+Improper use of this equipment may result in equipment damage.
+Possible Equipment Damage
+Power the printer OFF before connecting or disconnecting any cables or equipment to or from the
+printer . DO NOT connect cables or other equipment to the printer while it is powered on.
+T T O A p p l i cat i o n s
+
+Customer applications that require TT Oprinters will vary and every installation is unique. It will help to familiarize
+yourself with the most common machines in which our printers will be installed.
+V e r t i c a l B a g g i n g M a c h i n e s
+V ertical Bagging Machines operate in conjunction with multi-head weighers.
+Continuous and intermittent mode available.
+Usually used for individual bags, sachets, or packets.
+The printer is generally mounted underneath the web path.
+Figure 1: Illustration of a V ertical Form Fill machine.
+V ertical Form, Fill and Seal (VFFS) applications use gravity to feed (drop) product into a partially formed bag
+which is then sealed after filling. VFFS machines often have built in registration. The purpose of the registration
+unit is to allow the print position on the packaging film to be moved into the required area.
+Figure 1 shows the typical flow of the film packaging material in a VFFS application.
+T ypically , the film is fed from a roll at the back of the packaging unit, up onto the top of the unit, and
+onto the forming collar as shown in Figure 1 .
+The bag is sealed on one side to form a tube (fin seal).
+At the sealing jaws, the jaws close to seal the top of one bag and the bottom of the next.
+When the bottom of the bag is sealed the product falls in and the jaws close to seal the top of that bag
+and the bottom of the next, and so on….
+VFFS machines (aka: baggers ) are limited in speed based on how fast products can fall.
+The forming collar converts the film from a flat shape to a tube.
+Print Quality Issues at the Collar
+A print quality issue to watch for - The angle the film wraps around the collar is very sharp and
+can scrape some of the image off of the printed film.
+The sealing jaws seal the top of the filled bag and the bottom of the next empty bag that is being
+formed.
+Print Quality Issues at the Sealing Jaws
+Print quality issues – what to look for - They are often heated so it is important to make sure
+the printed image is not in this area of the package.
+
+Figure 2: Front view of a VFFS machine.
+H o r i z o n t a l M a c h i n e s
+Figure 3: Illustration of a Horizontal Form Fill machine.
+Flow wrappers are usually used with softer products or collations – cake, bakery products, multi-bags.
+Individual pockets or flight bars separate the products.
+Many flow wrappers are cantilevered in design.
+Continuous and intermittent modes available.
+S l o w t o M o d e r a t e S p e e d F l o w W r a p p e r s
+Figure 4: Flow W rappers
+Continuous operation – film never stops
+Largest install base of any flexible packaging machine
+Faster throughput and line speeds are possible (up to 500 ppm)
+Manufactured by Fuji/Formost, Sig/Doboy , Rose Foregrove, FMC
+Rotary coders are most common
+No shortage of prime TT O applications
+I n st al l at i o n R eq u i r em en t s
+Power (1 15/230V AC)
+
+Mounting bracketry
+Encoder (Continuous motion only)
+Print trigger (PNP ONL Y)
+Control Signal
+Sensor
+S i t e S u r vey
+For details on Site Survey expectations, see Site Survey (6530, 6230) .
+C h eck S h eet
+This is the installation check sheet for a basic TT O install. Y our actual install may vary .
+1. Meet with customer to review installation requirement and specifications.
+2. Complete customer ’ s onsite health and safety documentation as required.
+3. Customer to provide terminal pin outs for host machine inputs.
+4. Unpack equipment and check against zero defect.
+5. T est 6530 power up sequence.
+6. Assist customer with loading Configuration Manager and purchased CLARiSOFT .
+7. Check supply voltage with DVM.
+8. Have customer isolate and lock out electrical of host machine.
+9. Measure and assemble universal bracket based on installation specifications or SAR.
+10. Mount universal bracket or SAR.
+1 1. Mount clarity controller and bracket.
+12. Install encoder .
+13. Install and adjust printer to bracket.
+14. Connect low profile cable and mount photocell if required.
+15. Connect print trigger and fault outputs to host machine.
+16. Connect power cable to electrical supply .
+17. Remove lock out power .
+18. Re-web host machine with film (customer responsibility)
+19. Configure the printer .
+20. Confirm print signals.
+21. Confirm fault outputs with customer .
+22. T est application.
+23. Insert passwords (make note of password for customer).
+24. Archive configuration manager settings.
+25. Backup CLARiSOFT jobs on PC and USB (CSE and customer).
+26. Cable tie wiring as necessary .
+27. Clean up packing material and work area.
+28. Basic training on equipment operation and maintenance.
+29. T raining on CLARiSOFT .
+30. T echnician fills out document for customer signature
+31. Closed of f health and safety documents.
+B r acket A ssem b l y
+Measure and assemble universal bracket based on installation specifications or SAR. When measuring a bracket
+the dimension A is the outside edges of the universal bracket assembly . Figure 6 provides an example of tube
+and roller dimensions assuming an A dimension of 600mm.
+Figure 5: The A Dimension measurement.
+
+Figure 6: Example of bracket measurements.
+Figure 7: Layout of the Universal Bracket.
+Knowing the bracket dimension is important during installation. Because of limited space in the OEM machine we
+find ourselves modifying the universal bracket.
+
+Figure 8: Universal and Registration Dimensions.
+Prior to the assembly of the universal bracket, inventory your bracket and check to ensure there are no defects.
+Figure 9 is an inventory of a typical universal bracket kit. Keep in mind that the number of diverting rollers may
+vary .
+Figure 9: Universal Bracket Assembly
+The main components of the Universal Bracket Assembly are:
+T able 1: Main Components
+Description Quanity
+Side Plates Side 2
+Plate Support T ubes 4
+Diversion Rollers 4
+
+Description Quanity
+Printer Mounting Assembly 1
+Figure 10: Universal Bracket Assembly Side Plates, Detailed Parts Breakdown
+T able 2: Bracket Bill of Materials
+Description Quantity
+Side Plate 2
+Side Plate Support T ube 4
+Support T ube Blanking Cap 8
+Diversion Roller 4
+Bearing End Cover Cap 8
+Stub Axle 8
+Stub Axle Collar 8
+Printer Mounting Platen 1
+T -Bar Screw Assembly 1
+Printer Support Bracket 1
+Shoulder Screw 2
+Printer Shim Plate 3
+W asher 8mm 1
+Connecting Plate (universal bracket to host machine
+2
+or registration plate)
+Screw 5mm X 25mm, socket head 8
+
+Description Quantity
+Screw 6mm X 20mm, socket head 12
+Screw 6mm X 30mm, socket head 4
+Screw 6mm X 16mm, socket head 8
+Screw 6mm X 12mm, socket head 4
+Registration Unit Assembly Part Numbers and Bill of Materials. The registration unit is used primarily in
+intermittent applications.
+Figure 1 1: Registration Unit Assembly .
+T able 3: Registration Unit Bill of Materials
+Description Quanity
+Side Plate 2
+Registration Roller Shaft 1
+Registration Roller Shaft Collar 1
+Registration Roller tube 2
+Bearing Cover End Cap 4
+Stub Axle 2
+Stub Axle Collar 2
+Threaded Pinion 1
+Plain Pinion 1
+T oothed Rack 2
+Connection Plate (Registration Unit to Universal
+2
+Bracket)
+Hand-wheel 2
+W asher , 10mm 3
+Nut, Full, 10mm 1
+Nut, Half, 10mm 1
+Screw , 5mm x 12mm, Socket Head 4
+Screw , 6mm x 16mm, Socket Head 2
+Screw , 6mm x 20mm, Socket Head 12
+Screw , 6mm x 30mm, Socket Head 4
+
+A ssem b l i n g t h e B r acket s
+When assembling the bracket system, it is important to ensure the bracket is square.
+Possible Equipment Damage
+Do not over tighten bolts as this will result in equipment damage.
+1. Place support tube blanking caps into the side plate support tubes and use a rubber mallet or soft
+hammer to tap the support tube blanking cap until fully seated.
+Figure 12: Support T ube Blanking Caps.
+2. Repeat 8 times so that all caps are installed.
+3. Assemble the printer mounting assembly .
+4. Place (2) side plate support tubes into the printer mounting assembly .
+Figure 13: Side Support T ubes latched to the Printer Mounting Assembly .
+5. Fit the side plate support tubes into a side plate. These side plate support tubes are mounted opposite
+the registration roller holes.
+Ensure the recessed bolt holes are facing down.
+If you will use a platen roller , install it at this time.
+Figure 14: Side plate support tubes fitted into Side Plate.
+6. Place the other (2) side plate support tube into the side plate.
+7. T ighten the bolts that secure the side plate tubes to the side plate.
+8. Place the second side plate on top. ensuring that your bracket is square.
+
+Ensure both registration holes are on the same side.
+Ensure the recessed bolt holes are facing up.
+9. T ighten the bolts that secure the side plate tubes to the side plates.
+10. If intermittent, assemble the platen pad and attach to the side plate support tube.
+Y our bracket should look like Figure 15 .
+Figure 15: Example: Fully assembled bracket for Intermittent.
+P l at en R o l l er
+The platen roller is installed on continuous applications or in intermittent applications when the printed area is
+greater than 75mm.
+Figure 16: Platen Roller Layout
+T o install the platen roller into the universal bracket. It is best to have only one side plate assembled.
+1. Locate the holes for the platen roller .
+Figure 17: Platen Roller hole in the universal bracket.
+2. Fit the rod through the platen roller .
+3. Slide one bearing to each side of the rod.
+
+Figure 18: Platen Roller bearings.
+4. Center the roller on the rod.
+5. T ighten the bearing screws.
+6. Attach the platen roller assembly to the side plates.
+Figure 19: The Platen Roller fitted to the Universal Bracket.
+7. T ighten the side plate screws to clamp the rod.
+8. Repeat steps 5 and 6 on the other side plate.
+M o u n t i n g R o l l er s
+The bracket system uses many dif ferent types of rollers standard and food grade are the most popular types.
+There are pressed and heavy duty as well.
+Now that the bracket is built we can start mounting the diverting rollers. It is important that the diverting rollers
+have been cut to the correct size.
+Figure 20: Diverting Roller Layout
+Food grade diverting rollers are dif ferent from the conventional diverting rollers and require a mounting tool that
+comes in the bracket kit.
+
+Figure 21: Diverting Roller (left) and Mounting T ool (right).
+1. Place the bearing end cover cap over the side plate support tubes. If using food grade rollers follow
+instructions for food grade rollers.
+2. Insert the stub axle collar onto the stub axle.
+3. T ighten the stub axle collar so that it is not slipping but not fully tightened. This will be done later .
+4. Repeat steps 1-3 at the other end.
+5. Place the diverting roller into the bracket at the desired bolt hole.
+6. Using a wrench to lock the stub axle, screw in your bolt and tighten.
+Figure 22: T ightening the Stub Axle
+7. Repeat steps 5 and 6 on the other side.
+8. Center your diverting roller .
+9. Fully tighten your (2) stub axle collars.
+R eg i st r at i o n A ssem b l y
+T o assemble the registration roller use the following steps:
+1. Attach the T oothed Rails to the side plates using M5 x 12mm screws. The counter sunk holes should
+be on opposite side of rails.
+Figure 23: End Plates with T oothed Rails
+2. Cut the registration shaft. End-to-end dimension of the shaft including threads should be 2.5” longer
+than the stainless steel support tubes on the universal bracket.
+3. Thread the 10mm half nut onto the shaft. If nut is not available, skip this step and move onto step 4.
+4. Thread the threaded pinion (without the set screws) onto the shaft.
+5. Be sure the half nut and pinion is threaded all the way down to where the threads meet the solid end of
+the rod. Insert the threaded end of the shaft through the end plate slot with the toothed rail on the
+inside.
+6. Insert a 10mm washer on the threaded side of the shaft, moving washer toward the end plate.
+7. Thread the hand-wheel knob (one with threads all the way through the handle) onto the shaft.
+8. Thread the 10mm full nut onto the shaft.
+9. Thread second hand-wheel knob to end of shaft.
+
+Figure 24: Completed Assembly of Registration Roller and Hand Wheel Slide
+10. Cut the aluminum rollers approximately 2.75” shorter than the stainless steel support tubes on the
+universal bracket.
+1 1. Insert the bearing end covers on each end of the aluminum rollers.
+12. Insert one aluminum roller onto non-threaded end of shaft towards the10mm half nut. If the half nut is
+not available, insert a 10mm washer before inserting aluminum roller .
+13. Insert shaft collar (small collar) onto non-threaded end of shaft. DO NOT SECURE THE COLLAR.
+14. Insert the un-threaded pinion onto non-threaded end of shaft. DO NOT SECURE THE COLLAR
+SETSCREWS.
+15. Insert the other 10mm washer onto non-threaded end of shaft.
+16. Insert second end plate with tooth rail on the inside.
+Figure 25: Completed Assembly of Registration Roller Shaft on Non-Hand Wheel Side.
+17. Insert stub axles into the end caps of second aluminum roller . Attach stub axle collar to each stub axle.
+Attach second aluminum roller to end plates using M6 x 16mm screws.
+Figure 26: Completed Registration Roller
+18. Secure the Registration Assembly to the universal bracket using the connecting blocks and M6 x 20mm
+screws.
+R e g i s t r a t i o n R o l l e r A d j u s t m e n t s
+The Registration roller can be adjusted so that the print window on the film is under the printer in intermittent
+printing mode.
+1. Push the registration roller all the way to one end. Make sure roller is straight.
+
+2. Secure the shaft collar and pinion setscrews. The registration roller should travel freely and straight
+along the rails without binding.
+3. T o lock the registration roller in place, tighten hand-wheel closest to the end plate and tighten the full
+10mm nut against the hand-wheel. Make sure the knob is threaded to a stop before securing the nut.
+Figure 27: Registration Assembly
+A r t i c l e M e t a d a t a
+U R L N a m e 6530-Installation-cf6f71fe
+P e r m a n e n t U R L
+Right click and copy link to share this Article's URL
+f o r L i g h t n i n g
+V i s i b l e I n I n t e r n a l
+A p p
+V i s i b l e t o P a r t n e r
+V i s i b l e t o
+C u s t o m e r
+A r t i c l e R e c o r d
+T raining Article
+T y p e
+V a l i d a t i o n S t a t u s Approved - Internal FS Use
+P u b l i c a t i o n S t a t u s Published
+V i s i b l e I n P u b l i c
+K n o w l e d g e B a s e
+I n t e r n a l D a t a
+I n t e r n a l C o m m e n t s
+D i s c l a i m e r
+T he contents ofthis em ailand any attachm ents are provided as a convenience to V ideojetcustom ers to highlightusefulinform ation and troubleshooting tips.W hen w orking w ith a
+product,alw ays consultthe productuser m anualand follow the productsafety precautions and recom m endations,including using P ersonalP rotective E quipm entw hen necessary.If
+you have any questions or are notexperienced in using or servicing V ideojetequipm ent,contactV ideojetfor assistance.

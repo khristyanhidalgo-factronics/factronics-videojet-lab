@@ -1,0 +1,81 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\85102-AA Exchange of the SHC-SF marking head incl. CP-A7 board.pdf
+# cifrado=False bloques=6 caracteres=3438
+
+AL-85102Service Part Installation Instruction
+Exchange of the SHC-SF Marking Head incl. CP-A7 Board
+1 Exchange of the SHC-SF Marking Head incl. CP-A7 Board
+1.1 Overview
+90 beam path(output window facing down)straight beam path(output window facing front)
+NoteSHC-SF marking head and CP-A7 board must always be exchangedtogether as matched pair!
+DangerBefore starting any work the laser system must be completely discon-nected!
+1.Turn the key-operated switch to position 0.Remove the key, in order to ensure that the laser system cannot be
+switched on.
+2.Save the database in theFor a detailed description see the manual of the software. software.
+3.Turn off the main switch.
+4.Pull the mains plug.
+For exchanging the marking head you require:
+Allen key 2.5 mm
+Allen key 3 mm
+Cleaning material for the optics (if necessary)
+12/22 - Rev. AA 1
+
+Service Part Installation InstructionAL-85102
+Exchange of the SHC-SF Marking Head incl. CP-A7 Board
+1.2 Removal of SHC-SF and CP-A7
+1.Place a protective cover onto the output window of the marking head.
+2.Remove the screws of the laser head cover using a 2.5 mm Allen key.
+3.Remove the cover.
+4.Remove all connectors from the CP-A7 board.
+protective cap
+2 12/22 -Rev. AA
+
+AL-85102Service Part Installation Instruction
+Exchange of the SHC-SF Marking Head incl. CP-A7 Board
+5.Position the cables out of the way.
+6.Remove the dust protection.
+7.Remove the three fixing screws of the CP-A7 board using a 3 mm Allen key.
+dust protection
+8.Remove the CP-A7 board including cooling plate.
+9.Remove the four fixing screws of the mounting plate using a 3 mm Allen key.
+10.Remove the marking head including mounting plate.
+12/22 - Rev. AA 3
+
+Service Part Installation InstructionAL-85102
+Exchange of the SHC-SF Marking Head incl. CP-A7 Board
+1.3 Mounting of New SHC-SF and CP-A7
+1.Mount the new CP-A7 board with pre-assembled cooling plate.
+2.Check the lens in the mounting plate of the new head. Clean it if necessary.
+3.Insert the marking head mounted to the mounting plate into the laser head using thepositioning pins..
+4.Mount the plate to the laser head using a 3mm Allen key.
+90 versionstraight out version
+lens
+positioning pins
+holes for pins
+90 versionstraight out version
+4 12/22 -Rev. AA
+
+AL-85102Service Part Installation Instruction
+Exchange of the SHC-SF Marking Head incl. CP-A7 Board
+5.Insert the dust protection.
+6.Connect all connectors to the new CP-A7 board. Make sure to connect X (blue), Y (black) and Z (yellow) correctly.
+dust protection
+7.Close the cover of the laser head and tighten the screws using a 2.5 mm Allen key.
+X Y Z
+X
+Y
+Z
+12/22 - Rev. AA 5
+
+Service Part Installation InstructionAL-85102
+Exchange of the SHC-SF Marking Head incl. CP-A7 Board
+1.4 Uploading HiRes File
+1.Log into TCS+/FOBA Go/LinxVision as "Service".
+2.Go to Global Settings and select Laser Unit Settings.
+3.Select Lens Compensation and select File Management.
+4.In the File Management dialog select Upload and navigate to the corresponding HiRes file(on USB stick, connected laptop, PC or TU4x0).
+NoteAll HiRes files can be found on the Service Pages under Software > HiResFiles > SHC-SF. The folder name contains the serial number correponding to
+the number of the marking head and board.
+5.Select the file to be uploaded. It will automatically be copied to the correct category.
+6.In the Lens Compensation now select Activate best compensation.
+7.Close the Laser Unit Settings dialog.
+6 12/22 -Rev. AA

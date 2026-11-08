@@ -1,0 +1,1356 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\VJA 3130  3330 Tech Training  12 29 15.pdf
+# cifrado=False bloques=147 caracteres=34913
+
+VJ 3330/3130
+Laser Technical Training
+
+Learning Objectives
+At the end of this training class you will be able to :
+✓ Safely install a 3130/3330 laser
+✓ Identify the function of the 3130/3330 components
+✓ Demonstrate the ability to create static and dynamic messages
+using the Smartgraph software
+✓ Demonstrate your ability to print in static and dynamic using the
+handheld controller
+✓ Troubleshoot common problems associated with 3130/3330 laser
+✓ Remove and replace major components of the laser system
+
+Course Overview
+• Introduction • Handheld Controller
+• Safety • Maintenance
+• Principles of Operation • Module Replacement
+• System Overview • Troubleshooting
+• Software • Course Review
+• Installation • Test
+
+Non - ionizing Radiation
+Radiation that has enough energy to move atoms in a molecule around or cause them to vibrate,
+but not enough to remove electrons, is referred to as "non - ionizing radiation."
+Examples of this kind of radiation are sound waves, visible light, and microwaves. (source: EPA)
+
+Laser Beam
+Light Amplification by Stimulated Emission of Radiation
+Laser beam has unique characteristics:
+- Monochromatic
+- Light is of a single color or wavelength
+2
+- CO laser light is invisible to the human eye
+- Collimated
+- Laser light has little divergence or spreading
+- Coherent
+- All light energy particles or photons travel in phase with each
+other
+
+Monochromatic
+10,600nm
+10.6 µm
+
+Methods of product marking
+Ablation
+- Removal of a layer to reveal contrasting layer below
+- Inked panel on packing
+- Produce coding (vaporization of outer surface)
+Thermal or chemical change
+- Color change due to heat/light from laser e.g. PVC
+Physical change
+- Surface of product crazes and material removed as in glass
+
+Excitation of Atoms
+
+Light Amplification (avalanche
+effect)
+
+How does a laser work
+Gas
+Emission L.A.S.E.R.
+Emissione amplificata - stimolata – ordinata
+100% reflective morir
+E
+80% reflective
+Emissions
+
+Laser Spectrum
+
+Laser Hazards
+➢ Exposure of your eyes
+➢ Exposure of your skin to the beam
+➢ Fire
+➢ Toxic Fumes
+➢ Lethal high - voltage shock
+➢ Mechanical
+➢ Lens
+
+The human Eye
+
+Ocular Absorption Site Vs
+Wavelength
+
+• Cornea
+– (1) Ultraviolet and low energy far - infrared radiation can injure the epithelial layer of
+the cornea; a condition that is painful and visually handicapping. At lower powers, this
+injury is primarily due to a photochemical reaction. A latency period of hours may exist
+between the time of exposure and the development of the corneal pathology. Minimal
+corneal lesions heal
+within a few days, but meanwhile they produce a decrement in visual performance.
+– (2) High energy far - infrared radiation is absorbed mainly by the cornea, producing
+immediate burns at all corneal layers. An infrared laser can produce a burn resulting in
+immediate visual incapacitation and may lead to permanent cornea scarring. Very high
+energy can perforate the cornea; this perforation may lead to loss of the eye.
+
+The Human Skin
+File:Skin.jpg
+
+Wavelength Vs Skin effects
+
+Hazard Classification
+➢ Fire Hazard
+▪ Material
+▪ Laser settings
+▪ Ignition of gases / fumes
+▪ Flammable solvents
+▪ Fire extinguisher
+▪ Keep area clean
+▪ Maintenance
+
+Hazard Classification
+
+Hazard Classification
+➢ Fume Hazard
+▪ Some materials, such as certain plastics, emit
+toxic gas when they burn under a laser beam
+▪ Consult the manufacturer of material
+▪ Turn on ventilation system (Fume Extractor)
+Fume Extractor
+Direction of product movement
+
+Hazard Classification
+➢ High voltage shock hazard
+▪ The most common laser - related cause of death
+▪ Do not disable enclosure safety switches
+▪ Do not wear anything metal like a ring, bracelet,
+watch, bet buckle, earrings, or keys
+▪ Never stand on a wet surface
+
+Hazard Classification
+➢ Mechanical
+• Moving equipment
+• Loose fitting clothing, ties, jewelry, should
+not to be worn
+• When to put the system into Emergency
+Stop mode
+
+General safety – modification to equipment
+• Perform only those
+equipment modifications
+which have been formally
+approved (FSB)
+• Never perform an
+unauthorized modification
+to the design of a piece of
+VTI equipment
+
+Non - beam hazards - Lens hazard
+▪ The laser system contains optics constructed from Zinc Selenide . When broken
+into small pieces or exposed to acidic conditions, they may give rise to harmful
+products.
+▪ In normal use however, the laser optical components are not considered to be
+hazardous.
+▪ In the event that a laser optical component is damaged in any way, the material
+and any packaging must be treated as hazardous waste and disposed of
+accordingly.
+
+Lens Cleaning - Solvents
+Solvents for cleaning lens
+Do not use Videojet
+make - up to clean lens!
+– Acetone
+– Methyl alcohol (methanol)
+– Isopropyl Alcohol (rubbing alcohol)
+• Flammable
+• Irritants
+
+Laser Accidents
+Statistically laser accidents are due to several factors:
+• Eye exposure unexpectedly during alignment, eye
+protection not being worn, equipment malfunction, high
+voltage mishandling, non - beam hazards, incorrect
+eyewear, inhalation of air contaminants, viewing of
+laser - generated plasmas, and in general using
+equipment incorrectly
+• The most common type of injury is to the eye (around
+70%). There have been a few deaths, mostly caused
+by electrocution or fires.
+
+Causes of laser accidents
+
+General safety
+Class 1:
+Not capable of emitting accessible laser radiation in excess of what
+the AEL allows for class one.
+Example: Laser Printer, CD player
+Class 2:
+Not capable of emitting accessible laser radiation greater than AEL allows
+with .25 exposure duration.
+▪ Example: Pilot laser and He - Ne alignment Laser
+Output must be less than 1mW
+Class 3:
+Potentially hazardous if focused at the eye or skin for less time than what’s
+allowed for class 2
+May cause acute eye hazards
+▪ Example: Laser Pointer, level/guide
+Output is greater than 1mW but less than 0.5W
+Class 4:
+May present a serious fire, skin or diffuse reflection hazard. Output
+exceeds that of a Class 3.
+Output is greater than 0.5W
+▪ Example: CO2 and YAG laser tubes
+Recommend Class 1 installation (shielding, interlocks, etc )
+
+Reflections of light
+
+ANSI Z 136.1 - 2014
+Purpose
+• Create a standard of measurement
+• Determine thresholds where radiant
+energy becomes a hazard
+• Categorizes laser into four basic hazards
+• Provides recommendations for the safe
+usage of lasers and laser systems
+between 180nm and 1mm
+
+Laser Safety References
+• CDRH - Center for Devices and Radiological Health
+– An agency within the U.S. Food and Drug Administration which publishes
+and enforces legal requirements on laser product manufacturers. For copies
+of the CDRH regulations, contact: CDRH (HFZ - 312), 2098 Gaither Road,
+Rockville, MD 20850, Telephone (301) 594 - 4654
+• ANSI/OSHA - ANSI (American National Standards Institute)
+– U.S. organization that publishes standards for laser users. Their laser safety
+standards are not laws, but they form the basis for state and OSHA
+requirements for the use of lasers. For copies contact ANSI in New York at
+(212) 642 - 4900 or the Laser Institute of America, at Telephone (407) 380 -
+1553, Fax (407) 380 - 5588
+• OSHA - The Occupational Safety & Health Administration
+– Does not have specific laser safety requirements. However, if they are called
+into a facility, the inspectors follow published guidelines (OSHA Instruction
+PUB 8 - 1.7 Guidelines for Laser Safety and Hazard Assessment) that are
+based on an earlier (1986) ANSI Z136.1 standard.
+
+Safety Guards
+• A safe installation requires that the laser
+beam be guarded utilizing interlocks
+Length must be sufficient to
+prevent skin and eye contact
+with beam path.
+Ceramic tile should be affixed
+opposite the laser head (other Laser hazard stickers
+side of product) to absorb should be affixed to the
+Insert laser head here.
+guard in clear view.
+laser light if no product is
+Removal requiring
+present (if fired).
+special tools.
+Side View of Guard
+
+Safety Guards
+Any parts of the safety guard which can be
+removed (slides or hinged parts) should be
+interlocked so the laser is paused (shutter closed)
+when those parts are open or removed
+Top View of Guard
+Sliding cover to allow
+PRODUCT access to conveyor PRODUCT
+Removable parts
+should be electrically
+interlocked in
+CLOSED position.
+No laser reflective
+materials should interrupt
+the beam path (metal)
+
+PPE Control Measures
+Appropriate eyewear
+– Eyewear must be for the
+appropriate laser
+wavelength, attenuate
+the beam to safe levels,
+yet be comfortable
+enough to wear
+– Gloves
+– Special Clothing
+
+OD on Eyewear Labels
+YAG and Fiber
+C02
+
+OD for a direct laser beam 30 watt CO ² laser
+Φ 4 Ф Average Power ( Φ )=30 watts
+r
+Exposure= = Reflection coefficient ( ρ ) = 100%
+π d ² π d² Viewing angle ( θ ) = 0
+4 cos0 = 1
+r
+(4) (30)
+Exp=
+π (0.35) ²
+Exp= 312 W/cm ²
+312
+Overexposure= =3120 OD = log ₁₀ (3120) = 3.5 so round up to a OD of 4
+0.100
+ALL Videojet technicians SHALL wear glasses with
+r
+a OD of 5 to cover 10 to 110 watts.
+
+Nominal Hazard Zone
+Average Power ( Φ )=30 watts
+Nominal Hazard Zone lens on laser
+Lens focal length (f₀) = 127mm
+example 2: CO² laser on lens at 30 watts
+Beam size at lens (b₀) = 3mm
+f₀ 4 Φ ½ 127 4 (30) ½
+r r
+NOHD= NOHD=
+b₀ π MPE 3 π (0.100)
+120 ½
+r
+NOHD= 42.3
+.31415
+½
+42.3 382 =16158.6
+x
+r
+NOHD= 42.3 382
+x
+382 y .5
+N
+=826.7
+Λ 1 2
+d
+42.3 =826.7
+x
+NOHD= 826.7cm
+r
+NOHD= 8.2m or 27 feet
+
+Guarding and interlocks
+ZNRO ZNRO
+The removal of covers or guarding, or
+Classe 4
+the bypassing of interlocks, will place
+Classe 4
+a Class 1 laser into a Class 4
+condition.
+ZNRO
+A laser operating with its covers and
+Classe 1
+guarding in place, and interlocks
+Classe 4
+active, is in a Class 1 condition
+ZNRO
+ZNRO
+Classe 4
+Classe 4 Classe 1
+Classe 1
+
+Any questions?
+
+3130 and 3330 system overview
+Supply unit
+(controller)
+Laser head
+Marking
+head
+Focusing
+User Interface
+Module (lens)
+(Clarity Controller, Handheld
+Controller, SmartGraph
+software, or SOI)
+
+VJ 3130
+The VJ3130 (10 Watt) and the VJ3330 (30 Watt), have the same user interfaces and share
+many parts. The only replaceable parts that differ from the VJ3130 to the VJ3330 are as
+follows:
+Differing part numbers for the 3130:
+• FM Board (part number depends on head type)
+• Beam Expander (part number depends on head type)
+• 10 Watt 10.6 micron tube
+• 10 Watt 9.3 micron tube (“K” tube)
+• 300 Watt power supply (Positive PSU)
+• Laser tube cooling fan (IP32/54 only)
+• Supply unit cooling fan (IP32/54 only)
+
+Videojet PET Packages
+laser wavelength effects
+marking speed 800 mm/s
+Laser wavelength power 8W @ 10.6 µm Power 5 @ 9.3 µm
+10.6 µm ➔ engraving
+9.3 µm ➔ melting, less power needed,
+higher contrast
+Pfeufer 03.09.05
+
+Laser Wavelength Effects
+Laminated Cardboard Cartons -
+10.2 versus 10.6 micron
+Pfeufer 03.09.05
+
+Videojet PET Package
+10.6 µm 9.3 µm
+Power 8 W 5 W
+Notice: for PET marking (9.3 µm & 10.6 µm)
+ special exhaust system needed
+➔ clogging of filters ➔ ’ PET - type’ exhaust
+Pfeufer 03.09.05
+
+The Supply Unit – Front Panel
+NO. NAME FUNCTION
+Applies the power supply for the laser beam source. The marking
+S1 Key Switch
+process can be started.
+Note: Remove key if switched off to protect the system from
+unauthorized operation!
+S2 Start Button Starts the marking process.
+S3 Stop Button Immediately stops the marking process.
+L1 White LED Flashes during initialization of the laser system. is on when the laser
+system is ready for operation. is on during the marking process.
+L2 Yellow LED Flashes in case of malfunction.
+L3 Red LED Is on when the key switch is in position »1«. Simultaneously the red
+LED on the marking head lights up.
+
+The Supply Unit – Rear Panel
+NO. NAME FUNCTION
+Applies the mains power for the supply unit.
+S4 Mains Switch
+P1 Mains Cable Main power cable (fuse in receptacle inside box)
+I1 Product Detect 3 - pin DIN connector for product detector
+I2 Encoder 4 - pin DIN connector for encoder
+I3 User Interface 8 - pin DIN connector for handheld or other user interface (adapters
+available for RJ45 or 6 pin handheld controllers)
+I4 25 - Pin I/O 25 - pin connector for inputs/outputs
+I5 Interlock 12 - pin DIN connector for interlock
+I6 Ethernet Ethernet connector (Optional)
+I7 Job Select 14 - pin DIN connector for Job Select (Optional)
+I8 RS - 232 RS - 232 Connection (Optional)
+
+Block Diagram
+
+SLEB Board
+X4: Ethernet Configuration
+LEDs for
+Ethernet Status
+X5: Ethernet Port
+X3: Job Select &
+RS - 232 Connector
+
+POWER PC STATUS LEDS
+CUSTOMER INTERFACE LED
+SYSTEM DATABASE
+PILOT
+DIP - SWITCH X24 LASER INTERFACE
+LVDS
+X5 SHUTTER
+X2
+X14
+INPUTS
+INTERNAL WIRING
+LVDS LEDS
+MMC CARD
+X6 X16
+LASER STATUS LEDS
+OUTPUTS
+MARKING STATUS LEDS
+BATTERY
+ENCODER/PRODUCT LEDS
+X7 X20
+RESET
+192.168.1.1
+30 VDC POWER
+X17 12/24 VDC
+SL EXTENSION BOARD (SLEB)
+POWER STATUS - LEDS
+ETHERNET STATUS LEDS
+CONNECTOR
+
+Dip Switch
+DIP - SWITCH
+Using the DIP switch you can set the IP address as follows:
+DIP switch 1 ON: The IP address 192.168.1.1 with subnet mask 255.255.255.0 is
+saved in the system database. Via this address the PC or
+handheld can communicate with the laser system.
+DIP switch 1 OFF: The IP address can be set in the SmartGraph software. Thus a
+network can be installed.
+DIP switch 1 is set to ON when shipped from manufacturing.
+DIP switch 2 is not used.
+
+LP - enable
+Power pc status
+CI voltage
+Shutter closed
+Marking
+Laser status
+Interlock detect
+head
+Key detect
+System Database
+Stop
+Vector Lase
+Marking Trigger
+Internal error Read/write Not used
+Start
+Trigger monitor
+Ready Lase
+Voltage Temp
+Trigger enable
+MMC
+LVDS error LP_enable_detect
+LVDS receive
+External error
+Flashes slow as long as the boot loader is running and waiting for a MMC Good
+Flashes fast while the boot loader loads Linux from the MMC
+12/24 V Bad
+5V Error
+Encoder CHA
+3.3V
+Close shutter
+Encoder CHB
+1.8V
+Marking
+Encoder index
+Trigger Ready to mark
+ACC - 3 LED’s and name
+System ready
+LED TX and RX will flash if connected
+LED LNK should be on
+
+ACC board is
+connected to rear
+panel by cable
+harnesses (models
+made before Sept 2015)
+Encoder, Product
+Detect, Interlock, and
+other IOs are
+accessed by
+connectors on outside
+rear panel
+
+Circuit between ACC board and rear panel for User Interface
+(i.e. G55 handheld, Clarity Controller, PC, etc.)
+Fuse holder in line
+between PSU and
+rear panel
+
+I/O Board
+• Newer models have a ribbon cable, instead of wire
+harnesses, connecting ACC inputs/outputs to external rear
+panel connections via a circuit board.
+• No functional difference (no need to upgrade)
+• Most rear panel connectors integrated into I/O board
+• Two versions of I/O board: SLEB and Non - SLEB
+SLEB Non - SLEB
+version version
+
+Other I/O Board Features
+• PNP/NPN capability – move jumper to switch
+• LEDs – visual indicator outputs from ACC to I/O received
+
+Location of I/O Board
+
+ACC to I/O Board Connections
+Only on SLEB version
+of board
+
+ALIVE - LED ERROR - LED
+X
++ -
+ON
+5V
+RECEIVE ERROR - LED
+Y
+- 24
+3.3
+GND
+V -
++24
+RECEIVE - LED
+VCORE
+X POSITION
++12V
+1.8V
+EMISSION - LED
+Y POSITION
+LVDS - 12V
+Y CURRENT
+Measure scanner
+SHUTTER
+voltage
+X CURRENT
+
+IP 32/54
+All IP32 and IP54 units use a fan in the supply
+unit and a fan in the laser head for cooling.
+IP 32/54 3330 units
+also have an
+additional fan above
+ACC/SLEB board for
+cooling
+
+IP 65
+Supply
+Exhaust
+Air flow
+Exhaust
+Supply
+
+Beam Turning Unit (BTU)
+Combination of BTU modules
+allows laser to always reach
+the product
+
+Marking heads SHC60, SHC100 & 120
+
+How the X and Y galvo work
+X mirror
+Y mirror
+
+The influence of the focal length
+Focal length can stay in focus even on surfaces not perfectly flat. But we must verify that the decrease in
+irradiance, resulting from the focal spot, is not likely to be below the threshold of interaction with the material
+preventing proper and well - contrasted markings.
+F =300
+F =100
+Depth of Focus
+Depth of Focus
+r m a r r m a r
+e k e k
+s in s in
+g g
+a a
+L L
+For example, moving from 100 to 300 focus, the irradiance is reduced to 15% of that available with focal
+100. The laser spot is 3 times as large but the depth of field increases by 6 times.
+
+What is the Beam - expander
+The laser beam output from the source has generally small diameter (d) with a difference that, as reduced,
+not allowing it to remain well collimated along the way these features are not the best you can then focus
+on the small spot of obtaining high irradiance.
+f
+D
+2wo
+d
+
+
+A simple trick is then on expanding the beam through two lenses of which one is negative. This device
+called the "Galilean Beam Expander allows to expand to around 20 times the diameter of the beam
+emerging from the resonator. The difference is reduced as a result of the same proportion, so you can
+finally have an almost collimated beam with significant reduction of the spot in the focal point.
+f
+D
+2wo
+d
+
+
+
+
+Risonatore
+
+
+Beam - expander
+The quality of the beam (BPP) is an invariable system and remains constant throughout the optical path
+
+10 and 30 watt laser tubes
+
+30 VDC Power
+supplies
+10 watt Laser
+30 watt Laser
+W10:3,W12
+W10:2
+GNDs for fan and
+W11:1
+U Interface (G55)
+U Interface (G55)
+V+ and Fan V+
+W13, W14
+W11:1
+W10:2
+U Interface (G55)
+GNDs for fan and
+V+ and Fan V+
+W10:3,W12
+U Interface (G55)
+W13, W14
+
+Umbilical Supply Unit Side
+
+Pinout – Umbilical Quick Disconnect Side
+Female
+8 1
+connector -
+A4 A3 A2 A1
+15 9
+umbilical quick
+32 16
+disconnect
+Pin Number Function From Pin Number Function From
+A1 LASER V+ W 10:1 15 LASER CONTROL X105 (Pin 8)
+A2 GND W 10:2 16 FM V+ W 10:3 (Pin 1)
+A3 NOT USED 17 FM V+ W 10:3 (Pin 2)
+A4 PE (GND??) W 10:PE 18 FM GND W 10:4 (Pin 1)
+1 LVDS X102 GRN - WH (Shield 1) 19 FM GND W 10:4 (Pin 2)
+2 LVDS X102 WH 20 FM V - W 10:5 (Pin 1)
+3 LVDS X102 GN 21 FM V - W 10:5 (Pin 2)
+4 LVDS X102 GRN - WH (Shield 2) 22 LVDS X102 BN - YE (Shield 2)
+5 SHUTTER X103 (Pin 1) 23 LVDS X102 YE
+6 SHUTTER X103 (Pin 2) 24 LVDS X102 BN
+7 SHUTTER X103 (Pin 3) 25 LVDS X102 BN - YE (Shield 3)
+8 SHUTTER X103 (Pin 4) 26 LASER CONTROL X105 (Pin 1)
+9 LVDS X102 GRN - WH (Shield 3) 27 LASER CONTROL X105 (Pin 3)
+10 LVDS X102 BN - YE (Shield 1) 28 LASER CONTROL X105 (Pin 5)
+11 NOT USED 29 LASER CONTROL X105 (Pin 7)
+12 LASER CONTROL X105 (Pin 2) 30 LASER CONTROL X105 (Pin 9)
+13 LASER CONTROL X105 (Pin 4) 31 PILOT V+ X121 VT
+14 LASER CONTROL X105 (Pin 6) 32 PILOT OUT X121 RD
+3130/3330
+
+Umbilical – Quick D isconnect E nd
+X105 (Laser Control)
+X102 (LVDS)
+X103 (Shutter)
+Power for FM
+X121 (Pilot)
+Laser Power
+Ground
+3130/3330
+
+Pinout – Laser Head Connector
+Pin side view -
+Back of laser
+head (male
+connector)
+Pin Number Function From Pin Number Function From
+A1 LASER V+ W 10:1 15 LASER CONTROL X105 (Pin 8)
+A2 GND W 10:2 16 FM V+ W 10:3 (Pin 1)
+A3 NOT USED 17 FM V+ W 10:3 (Pin 2)
+A4 PE (GND??) W 10:PE 18 FM GND W 10:4 (Pin 1)
+1 LVDS X102 GRN - WH (Shield 1) 19 FM GND W 10:4 (Pin 2)
+2 LVDS X102 WH 20 FM V - W 10:5 (Pin 1)
+3 LVDS X102 GN 21 FM V - W 10:5 (Pin 2)
+4 LVDS X102 GRN - WH (Shield 2) 22 LVDS X102 BN - YE (Shield 2)
+5 SHUTTER X103 (Pin 1) 23 LVDS X102 YE
+6 SHUTTER X103 (Pin 2) 24 LVDS X102 BN
+7 SHUTTER X103 (Pin 3) 25 LVDS X102 BN - YE (Shield 3)
+8 SHUTTER X103 (Pin 4) 26 LASER CONTROL X105 (Pin 1)
+9 LVDS X102 GRN - WH (Shield 3) 27 LASER CONTROL X105 (Pin 3)
+10 LVDS X102 BN - YE (Shield 1) 28 LASER CONTROL X105 (Pin 5)
+11 NOT USED 29 LASER CONTROL X105 (Pin 7)
+12 LASER CONTROL X105 (Pin 2) 30 LASER CONTROL X105 (Pin 9)
+13 LASER CONTROL X105 (Pin 4) 31 PILOT V+ X121 VT
+14 LASER CONTROL X105 (Pin 6) 32 PILOT OUT X121 RD
+3130/3330
+
+Laser Head – Internal cable harness
+FM BOARD
+LASER
+TO FAN & FAN CONTROLLER
+3130/3330
+
+Review of System
+
+Software Upgrading a Printer
+
+Videojet laser operating systemsVideojet laser operating systems
+DN50
+DN50
+LN100
+LN100
+3120/3320
+3120/3320
+3130/3330
+3130/3330
+3430
+3430
+7210/7310
+7210/7310
+QMark SmartGraph
+7510
+Laser operating system PC based software
+DN50
+LN100
+3120/3320
+3120/3320
+3130/3330
+3130/3330
+3430
+3430
+7210/7310
+7210/7310
+7510
+Handheld
+Simple Operator Interface (SOI)
+3020
+3120/3320
+3130/3330
+3430
+7210/7310
+7510
+CLARiTY Controller
+
+Networking 101
+• Connecting to the printer with your laptop
+• At the end of this section you will be able to:
+– Determine the IP address of your printer
+(default ACC address is 192.168.1.1)
+– Set a static address on your laptop which will allow
+you to communicate with the printer
+– Select the appropriate Ethernet cable for your
+network environment (Crossover cable)
+– Use Smartgraph to connect to a printer
+– Set appropriate network privileges for computers
+connected to a printer
+
+Laser Web Interface
+
+Exercise: Connect to Laser
+• Set you laptop IP address 192.168.1.x
+• Use Web Interface to gain Permissions
+• Find QMark version on your laser
+• Does your laser have an SAR Qmark version?
+
+File Tab
+
+Parts of a template
+
+Guided Exercise in Creating a T emplate
+
+Exercise 1: Fixed text message
+1) Create a New template with the following
+message:
+Hi, my name is [fill in your name]
+Today is Tuesday
+I am learning to use the Alltec Smart graph Software
+I will soon be a master.
+2) Save your message to your PC.
+
+Importing Fonts
+
+Exercise 2
+1) Import a True Type font from your laptop
+2) Create a New template and call it “font”
+3) Create a message using your new font
+4) Print a sample
+
+Variable Date and Time
+
+Exercise 3: Using variable dates/times
+1) Create the following message:
+[Your Name ] made this message on [ d.mm.yyyy ]
+And will finish it on [ offset date by 3 days ] at [ H pm ]
+2) Print a sample
+
+Exercise 4: Date, Time, Shift Codes
+1) Create the following message with 3mm font height
+Your Name [ DD.MM.YYYY ]
+SPECIAL CODE (see below) [ AAA 1A AQU ]
+Best if used by [ offset date by 3 days ]
+The special code consists of 3 parts:
+– A 3 digit alphabetic serial number
+month code
+– A 2 digit shift code based on the shift code table
+Jan AQU
+– A 3 digit month code based on the month table
+Feb PIC
+Mar ARI
+Shift 6:00 10:00 6:00 10:00
+Apr TAU
+Codes AM AM PM PM
+May GEM
+Sun 1A 1B
+Jun CAN
+Mon 1A 1B
+Jul LEO
+Tue 1A 1B
+Aug VIR
+Wed 1A 2A 1B 2B
+Sep LIB
+Thu 2A 2B
+Oct SCO
+Fri 2A 2B
+Nov SAG
+Sat 2A 2B
+Dec CAP
+
+Laser Operation Tab (Printing)
+
+Parameters
+
+Laser Parameters
+
+Direction of travel
+Product Registration set to run from left to right
+Line Direction
+VJA
+Product Registration set to run from right to left
+Line Direction
+VJA
+
+Static printing
+Product registration set to no movement
+Note: adjust one Parameter at a time!!!
+
+Display jumps
+
+Jump speed too high
+
+One noticeable characteristic is skirting of lines. You can almost see the dots in every
+line. This could be corrected by decreasing Marking Speed or increasing the Frequency.
+
+Marking intensity
+The laser parameter Marking Intensity significantly affects the quality of the marking.
+Marking Intensity alters the power of the laser marking system.
+The Marking intensity is adjustable from 0 to 100%.
+
+Note the jagged line on “M”. The galvos have not stabilized yet and the laser is turned on.
+This could be corrected by reducing the Jump Speed and or increasing Jump Delay.
+
+The delay between the
+marking of individual vectors
+within a stroke. (curves)
+
+Mark Delay too high
+Curves of characters are thick, but straight lines appear normal
+
+Notice that characters like the “O”, “0” does not close, “M” have short legs.
+The galvo is tracing the outline of the character but the laser is still on.
+This could be adjusted with decreasing the Laser ON Delay.
+On some sensitive materials a very low Laser On delay can puncture the substrate.
+This sometimes could be mistaken as Laser off delay.
+Take note where the start and stop of the strokes are.
+
+On Delay too high
+
+Notice tails drilling on end of characters. The galvos jumped to the new vector and the
+laser is still on. This can be adjusted by reducing the Laser Off delay.
+
+Notice some segments of the characters are short and other like the “O” and “”0”
+does not close. The galvos are still tracing the end of the characters but the laser is off
+already. This can be corrected with increasing the Laser off delay.
+
+Pulse frequency
+The pulse frequency is adjustable from 50 to 20000Hz.
+If you want to increase the pulse frequency, it is only possible to do this in a certain range.
+When the range is exceeded, the max. acceptable value is displayed.
+As far as the frequency of repetition of single spot the laser, it can be command liberations within the range concurred
+(from the tens with the hundreds of kHz). Higher it is the greater frequency is the superimposition (overlap) between the
+spot. Or higher it is the execution speed
+30%
+40%
+60%
+LOW Medium
+High
+Frequency
+Frequency
+
+Pulse frequency too low
+
+Mark speed of 1500
+Intensity 100%
+Mark speed of 1500
+Intensity 70%
+2
+Most CO applications will print with a frequency of 10,000, some high speed PET
+applications may need 15,000 to 20,000.
+At lower frequencies it may be necessary lower the marking speed to prevent dotted
+lines.
+
+Jump
+Stroke
+Mark delay
+Jump delay AB =Jump speed
+B G E H
+B =Jump delay
+Stroke delay
+B =On delay
+On delay
+BC =Mark speed
+Off delay
+C =Mark delay
+F
+C D
+C =Stroke delay
+Jump speed
+A
+C =Off delay
+Jump delay
+AB DE FG HI
+BC CD EF GH
+Jump
+Stroke
+
+nd
+2 Jump delay
+st
+1 Jump speed
+th
+5 Mark delay
+th
+4 Marking intensity
+th
+6 Stroke delay
+7thOff delay
+rd
+3 Laser on delay
+th
+4 Marking speed
+
+Parameter Definition Min/Max To high To low Dependant
+Jump speed The speed at which the 3,000/20,000 Jump Delay
+galvo mirrors are
+moving while the laser is
+off.
+Look for it after long
+jumps beginning of first
+stroke.
+Mark speed The speed at which the 500/8,000 Marking Intensity
+galvo mirrors are
+moving while the laser is
+on.
+Look for fuzzy or burnt
+print.
+Jump delay Break time after each 40/200 Jump Speed
+jump.
+Look for it after long
+jumps.
+Mark delay Break between marking 0/60 Laser On - delay
+individual vectors within
+a stroke.
+Look for it in the
+curves.
+
+Stroke Break time at the end of 40/200 Laser Off - Delay
+delay each stroke.
+Look for tails at the end
+of a stroke.
+On delay The time between the 0/200 Mark delay and
+starting of the galvo Stroke Delay
+mirrors at the beginning
+of a stroke and the
+turning - on of the laser
+beam. Look for hot
+spots or short strokes at
+the beginning.
+Off delay The time between 50/200 Mark delay and
+stopping of the galvo Stroke Delay
+mirrors at the end of a
+stroke and the turning - off
+of the laser beam. Look
+for hot spots or short
+strokes at the end.
+
+Product Registrations
+
+Product Registrations
+
+Line Direction
+3430
+Mounting position= - 90
+Product movement angle= 90
+3430
+Mounting position= 180
+Product movement angle= 0
+3430
+Mounting position= 90
+Product movement angle= - 90
+3430
+Mounting position= 0
+Product movement angle= 180
+Note: must be in administrator/system settings/ marking head to
+adjust mounting position .
+
+Line Direction
+Mounting position= - 90
+3430
+Product movement angle= - 90
+Mounting position= 180
+3430
+Product movement angle=180
+3430
+Mounting position= 90
+Product movement angle=90
+Mounting position=0
+3430
+Product movement angle=0
+Note: must be in administrator/system settings/ marking head
+to adjust mounting position .
+
+Marking head
+Marking head to
+Marking head
+product
+type
+Lens type
+
+System settings
+
+Installing a Printer
+
+Connecting External Equipment
+Product Detect, Encoders, and
+other external devices are
+connected through the rear panel.
+If the device does not already
+have proper connector, you must
+order the proper cable and
+connector to attach to rear panel
+
+Example: Connecting Product Detect
+In this example: If product detect used does not have proper
+connector, then a 3 - Way DIN connector would be used to
+interface the product detect to the rear panel of laser
+Pin Wire Color Description
+1 White 12/24V
+2 Brown Trigger
+3 Green Ground
+
+Encoder
+An encoder is connected to the laser via a 4 pin DIN connector
+on rear panel of laser. If not using a pre - wired Videojet
+encoder, you will need a 4 - Way DIN cable/connector.
+Example of connecting an encoder and 4 - WAY DIN cable/connector
+Pin Wire Color Description
+1 White 24 Volts
+2 Brown Encoder Track A
+*If Encoder Index Track is needed, all
+3 Green Encoder Track B
+encoder signals are also accessible
+4 Yellow Ground
+through 25 - pin IO connector
+
+Pin Use Wire color
+Standard
+A 30v for Interlock White
+B Interlock Return Brown
+C System 12/24V Green
+D System Ground Yellow
+E Trigger Enable Gray
+Interlock
+F Used for K40 Interlock Option Pink
+G Used for K40 Interlock Option Blue
+H Used for K40 Interlock Option Red
+J Used for K40 Interlock Option Black
+K Used for K40 Interlock Option Violet
+Connecting a standard
+L Not used
+M Not used
+interlock requires a 12 - Way
+DIN cable/connector which You must bridge System 24V to
+would be hooked to a Trigger Enable on this
+switch connector/cable no matter what the
+trigger source may be!!!!
+
+Jumper Plugs
+➢ Laser comes with jumper plugs for Interlock and 25 - Pin
+Customer Interface
+➢ If you are not using an Interlock Switch or are not
+connecting any external devices that require the 25 - Pin
+Connector use these jumper plugs or errors will occur
+
+25 - Pin Customer Interface
+To connect devices
+such as fume extractor,
+beacon, etc. use 25 - Pin
+connector
+
+Accessories for Connecting
+Use either 25 - Pin Cable
+or Junction Box kit to
+connect external
+devices to laser
+
+Wiring and Signals on 25 - Pin Accessories
+Rear Panel PCB will be introduced later in 2015
+
+Signals that must be bridged if not being used
+Typical jumper configuration:
+U _ Interface 24V to System 12/24 V
+U_Ground _Interface to System Ground
+24V to Stop
+24V to External Error
+Signals can be bridged either:
+• On wires of 25 - Pin cable – or -
+• In Junction Box - or -
+• On ACC board Customer Interface (see System Overview chapter) – or -
+• Use 25 - Pin jumper plug (comes pre - wired)
+
+Example: Connecting a Beacon
+Not shown: Jumpers for U Interface 24V – System 24V; U
+GND Interface - System GND; Stop and External Error to 24V
+Ensure you trim and
+cap/heatshrink unused wires for
+25 - pin cable to prevent shorting!!!
+
+Junction Box
+
+Using Junction Box: Connectors
+
+Signaling during normal operation
+
+Compensation of the system
+(Mark on the fly) I
+
+Compensation of the system
+(Mark on the fly) I
+
+Handheld controller
+F1 F2 F3 F4 F5
+
+Handheld controller exercise 1
+• Exercise 1
+– Create a variety of New static Codes to include the
+following:
+• Date and Time with 6 month offset
+• Serial number
+– Decrement count
+• Shift code
+– 4 shifts
+– Change every six hour
+
+Handheld controller exercise 2
+Create the following 2 line message To fill marking area
+30mm x 10mm
+410 day offset
+Fix text
+Shift
+ABC
+Hour code
+Time
+Julian date
+Fixed text
+
+Reloading the G55 software
+Contact Technical Support if suspected that
+software for G55 Handheld needs to be
+reloaded.
+
+Technician Menu Overview
+Technician Return
+Active alerts
+Active
+messages
+Adjust marking
+X&Y
+Rotation Laser power Marking speed Return
+offset
+Main menu
+Product System
+messages Parameters Alert history Return
+registration settings
+Edit Home F1 New F2 Delete F4
+Date & time
+Save
+database
+
+Administration Menu Overview
+Administration Return
+Active alerts
+Active
+messages
+Adjust marking
+X&Y Product
+Rotation Laser power Marking speed
+offset registration
+Main menu
+Product System
+Save
+Parameters Alert history Return
+registration settings
+database
+Time & Unit of Handheld System Network Marking
+IME Password
+Date measurement language language setup head
+
+Allprint basic
+'AllPrint Basic for Norplas
+'New template parameter seperators:
+'<batch> </batch>
+'<exp> </exp>
+'The customer must be sending the string in the format
+'<batch>yyyyyy</batch><exp>xxxxxx</exp>
+V["Exp"]=MID(instr(1,"<exp>")+5, instr(1,"</exp>") - instr(1,"<exp>") - 5);
+V["Batch"]=MID(instr(1,"<batch>")+7, instr(1,"</batch>") - instr(1,"<batch>") - 7);
+
+Maintenance Schedules
+
+Maintenance Interval Measures
+Monthly or as needed Check the laser scan lens for dust and dirt. Clean
+the lens in case of dust or stains. Cleaning may
+be required more frequently if conditions result in
+frequent build - up of material on lens. (s ee Lens
+Cleaning Procedure)
+Monthly or w hen extractor control If in stalled: Exchange pre - filter inside the exhaust unit
+lamp lights up (refer to manual of the exhaust unit).
+Every three months Carry out a visual inspection of the laser system.
+(more frequen tly when operated Dust collecting on/in laser system increases the
+in dirty ambient conditions) temperature of the laser unit and decreases
+efficiency.
+Every year or when exchanging pre - If installed: Exchange the charcoal filter inside the
+filter does not clear control lamp on exhaust unit (refer to manual of the exhaust unit) if it
+extractor unit. has not been changed in the last 12 months. The
+combined filter contains carbon which has a
+maximum lifes pan of one year regardless of usage.
+
+Pilot laser exercise
+• Make a cross 30mmX30mm centered
+• Create a dot 10 font centered
+• Create a product registration called
+cross (single shot only)
+• Create a product registration called dot
+(continuous)
+
+Optical lens – SHC100/120
+Lenses for SHC 100 & 120 are fitted into a holder (Lens
+Holder)unlike the SHC 60 lenses that are pre - mounted
+Two different size Lens Holders:
+• 100/150 mm lens
+• 200/300/351/400 mm lens
+
+Trouble Shooting Exercises
+Please Restore the room
+• Restore the start of class database on all printers
+• Uninstall the printers
+• Course review
+• Test
+
+Videojet 3130/3330
+Thank you
+Travel safely
+ALLTEC Laser Business Unit – Training Files – Product Description Videojet Company Confidential
+
+cvt d_fpgmmYSEYglyfkLpTheadl@6hheaMz$$hmtxEA^loca|&K$maxpH metaa`nameno.6post$d prep2P<_<`t^Q!EWt^bML@53%3f.x[TMC @ F3!@L 9D9KT.nS9J,S bX|V"VJ#*s!H3*"
+o3oBz2K4K@,4
+_['jjig&j'h3{|'v,|3&'3'2
+3://$$Y!"!#3$,5+$"
+&3/13#&3413'
+UU@!U"0@U@UU%$%1!++N]+++]q<M+++<?]q?<999++10Cy@;;+<+qr]]qll?+2?+9/01Y5!#"#"&54763232654'&'&#E1S&Ct^l!, 3'$/ +0'%%1 zi]<1*[6BTg!"LC+X@{lu{v0y5z6mE.d66Ue@@3C2222*%/?O44053@B@PE@B344204T24CTX@!/"<ED00'
+'=::
+'%%%4 r}*%%4 rL'+X@K@O5'-8x""!"!!"!#!#""""@'@S 0@UUU
+&
+&,3
+:Ly%#%'2#2'E#E''
+99+++++++YY]l??3+2901Y#&'&&'5!654&'&'5H%5
+/
+'4@5@U56',?//?+99/++++++++2+/++++++10+CTX@X4U5U '456,'UUUUUU87!U!U!U!-U-U-U--879/++++++9/++++++//??9910++@/8@*58`]6%&88888+P8`8p88@8
+@UUUU@UUUUUU@U
+AV8$$<U@G#p0W+XCTX@Y@UY@UUUL0U0U0@U0+U+17FUFUF@!UFAGAUAUAUALULULULUL@ULUL+U+U+7@U7U7@U7U7@U7U7U7UU @U 0U @U *U @U U @U /2EH@ GTU@U/UOUoUUUVG1%,<,??///?]]+/+++++++++/+++++++++/+++++++++++++++++10++CTX@<%,<,TUV1GU U +U+U+7AUAUAL U X7U7U7U77XLULULULLYX9/+++9/+++9/+++++++///???10KTXFE/08888888Y@4YYY`]6+Y
+U @U U @U UUUUU$@% ,U/+??99?/+++++/+++++10+CTX@W@`p $%%,UUU UUU& U U &UUU'&9/+++9/++9/++++++???99?]10@5'`]6 '`'p''47: HH O'#!O%'#'AD %E@%%,! g@p@%$P `&+N]qr<M<]q<<<<?<?<<<99++10Cy@+<+]]+YY$l%l?+??3+201Y327#5#"&&54&&5!32674&'5c!'-v|EMq,7HAY?+mK9ZG#qBYA2%P6LN7% +XCTX ??/9/10CTX@1"!U*UU U ?+?+?+?+?99/10@SX[5"@a5#"! $ :9:95:JIDEEIi""-"2`4"+14"
+K?gI7tl_G
+$A 0
+>0&&+[3+
+
+QUUU????9++++222?01Y%#".5##".'##".5463323>332q0%$00""0/%$06-.B0 "
+&4
+S@23222i@&&-e&ehh???99?/3/99//9901%#".''#"&&67&&66327>32?+18 5$->>7/61,39e0$L#+$
+0w9/+2,7+9+4#%a%E+CUX@%&%L@H'L'@K?+2?+2/99//01_^]^]@%%L@H'L'@K?+2?+201_^]^]Y%#!"&554>7!"&54>3!2!2N!`g
+&+*
+'3m*.?.!'-@'...+!!~??9/93]22/9/32201%###".55!".54>7>3232#3m@&&!2%*6"@""aaI1C8V1$,$,@44.1H@H/

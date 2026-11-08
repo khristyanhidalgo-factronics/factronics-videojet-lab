@@ -1,0 +1,2458 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\7810 CSE UV laser 09 22 21.pdf
+# cifrado=False bloques=225 caracteres=77410
+
+7810 2 Watt Ultraviolet Laser
+Training for Operation and Maintenance
+of the 2 watt Ultraviolet - Laser Systems
+Confidential - Company Proprietary
+
+Learning Objectives
+At the end of this training class you will be able to :
+1. Safely install a UV laser
+2. Identify the function of the UV components.
+3. Demonstrate the ability to create static and dynamic messages using the
+Smartgraph software.
+4. Demonstrate the ability to transfer databases using the Allprint Basic software.
+5. Troubleshoot common problems associated with UV laser.
+6. Demonstrate your ability to Align the 7810 laser.
+7. Remove and replace major components of the laser system
+8. Understand the wavelength reaction with various substrates
+Confidential - Company Proprietary
+
+Course Overview
+• Introduction
+• ARC Compensation
+• Safety
+• Maintenance
+• Principles of Operation
+• Module Replacement
+• System Overview
+• Troubleshooting
+• Software
+• Course Review
+• Hands on
+• Test
+• Installation
+Confidential - Company Proprietary
+
+Class room hours
+When is everything?
+• Class from 8 AM to 4 PM . Do not make plans to
+leave early at this time.
+• Breaks in Morning and Afternoon
+• Lunch 11 to 12:00 (about 1 hour)
+Confidential - Company Proprietary
+
+Where is Everything?
+On site facilities
+• Washrooms are across the hall.
+• Smoking is out the West door to the far side
+of the parking lot.
+• Cafeteria is down stairs near the lobby.
+( I’ll show you during the first break )
+Confidential - Company Proprietary
+
+CLASSROOM SAFETY
+• Fire Exits
+• Escape route
+• Extinguishers
+• 3 things before printing
+• Emergency Numbers 1+
+and……
+• PLEASE turn off cell phones
+Confidential - Company Proprietary
+
+Definition of a laser
+Non - ionizing Radiation
+Confidential - Company Proprietary
+
+Comparison white light - laser light
+Confidential - Company Proprietary
+
+Material Effects
+Good on
+HDPE and
+some
+others
+Not good
+for ink
+removal
+Not good
+for
+engraving
+UV is considered a “cold”
+Can be good at frosting glass, but takes time (slow)
+mark. Doesn’t generate the
+heat that CO2 and fiber do.
+Confidential - Company Proprietary
+
+Excitation of Atoms
+Confidential - Company Proprietary
+
+Light Amplification (avalanche effect)
+Confidential - Company Proprietary
+
+Laser Spectrum
+UV 355
+Confidential - Company Proprietary
+
+Focusing of the laser beam
+• Diameter of the focus point
+Confidential - Company Proprietary
+
+Depth of Field
+Definition:
+The depth of field is the area, where the diameter of the laser beam is smaller the
+twice the focal diameter.
+Knowledge:
+The bigger the beam expansion factor is, the smaller the laser beam can be focused.
+The bigger the beam expansion factor is, the smaller is the depth of field.
+The bigger the focal length is, the bigger is the depth of field.
+Confidential - Company Proprietary
+
+The influence of the focal length
+Focal length can stay in focus even on surfaces not perfectly flat. But we must verify that the decrease in irradiance,
+resulting from the focal spot, is not likely to be below the threshold of interaction with the material preventing proper and
+well - contrasted markings.
+F =214
+F =100
+Depth of Focus
+Depth of Focus
+r m a r r m a r
+e k e k
+s in s in
+g g
+a a
+L L
+For example, moving from 100 to 300 focus, the irradiance is reduced to 15% of that available with focal 100th The laser
+spot is 3 times as large but the depth of field increases by 6 times.
+Confidential - Company Proprietary
+
+The influence of the focal length
+The marking field area, the diameter of the size of the beam (spot) and the depth of field
+become larger with the increases in focal length (lens type).
+2z= 2mm
+working 100 mm
+Marking Area 65.1x75.6 mm
+2z= 12mm
+Focal 214mm
+Marking Area 156.9x156.9 mm
+Confidential - Company Proprietary
+
+Intensity Distribution of different Laser
+Transverse Modes
+A transverse mode of a beam of electromagnetic radiation is a particular electromagnetic field
+pattern of radiation measured in a plane perpendicular (i.e., transverse) to the propagation
+direction of the beam.
+Confidential - Company Proprietary
+
+Laser Hazards
+➢ Exposure of your eyes
+➢ Exposure of your skin to the beam
+➢ Fire
+➢ Toxic Fumes
+➢ Lethal high - voltage shock
+➢ Mechanical
+➢ Lens
+Confidential - Company Proprietary
+
+The human Eye
+Choroid
+Sclera Aqueous
+Retina
+Lens
+Macula
+Cornea
+Vitreous
+Optic Nerve
+Confidential - Company Proprietary
+
+Wavelength Vs. the Eye
+Laser radiation in the invisible, short wave UV - A range (wavelength 315
+nm - 380 nm) of low intensity can cause inflammation of the cornea
+( photokeratitis ) or of the conjunctiva ( photoconjunctivitis ) as well as
+cataract (clouding of the eye lens). In case of higher radiation intensity it
+can cause reversible corneal opacity, irreversible corneal opacity and
+cataracts.
+Confidential - Company Proprietary
+
+Ultraviolet Radiation Damage
+http://s1.hubimg.com/u/6851722_f520.jpg
+Confidential - Company Proprietary
+
+Cataract
+Normal, clear lens
+Lens clouded by cataract
+http://umm.edu/health/medical/reports/articles/~/media/ADAM/Images/en/18012.ashx
+A cataract is an opacity of the normally clear lens which may develop
+as a result of aging, metabolic disorders, trauma or heredity.
+Confidential - Company Proprietary
+
+Conjunctiva
+File:Beccas Oga.JPG
+Conjunctiva line the inside of the eyelids and covers the sclera (white
+part of the eye.
+Confidential - Company Proprietary
+
+Photokeratitis
+http://informationng.com/wp-content/uploads/2012/12/photokeratitis.jpg
+Photokeratitis or ultraviolet keratitis is a painful eye condition caused by exposure of
+insufficiently protected eyes to the UV rays from either natural or artificial sources.
+Photokeratitis is akin to a sunburn of the cornea and conjuntiva , and is not usually noticed until
+several hours after exposure. Symptoms include increased tears and a feeling of pain, likened to
+having sand in the eyes.
+Confidential - Company Proprietary
+
+data:image/jpeg;base64,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
+Ptervgia
+Growth on the whites of the eyes.
+Confidential - Company Proprietary
+
+Macular degeneration
+Macular degeneration , is a medical condition that usually affects older adults and results in a
+loss of vision in the center of the visual field in the macula because of damage to the retina.
+Confidential - Company Proprietary
+
+The Human Skin
+File:Skin.jpg
+Confidential - Company Proprietary
+
+Skin cancer
+http://images.nailsmag.com/post/1-M-na1209p84skincancer.jpg
+• Ultraviolet (UV)
+– UV can cause skin injuries comparable to sun burn.
+– As with damage from the sun, there is an increased risk for
+developing skin cancer from UV laser exposure.
+Confidential - Company Proprietary
+
+Wavelength Vs. Skin effects
+Confidential - Company Proprietary
+
+Biological Effects of Radiation
+Confidential - Company Proprietary
+
+Non Beam Hazards
+➢ Fire Hazard
+▪ Material
+▪ Laser settings
+▪ Ignition of gases / fumes
+▪ Flammable solvents
+▪ Fire extinguisher
+▪ Keep area clean
+▪ Maintenance
+Confidential - Company Proprietary
+
+Fume Hazard
+Use proper PPE when changing filters
+Confidential - Company Proprietary
+
+Material Hazard Classification
+➢ Fume Hazard
+▪ Some materials, such as certain plastics, emit
+toxic gas when they burn under a laser beam
+▪ Consult the manufacturer of material
+▪ Turn on ventilation system (Fume Extraction)
+Fumex
+Direction of product movement
+Confidential - Company Proprietary
+
+Why Fume Extraction?
+Headaches
+Eye Irritation
+Sore Throat
+Occupational Asthma
+Respiratory Irritation
+Confidential - Company Proprietary
+
+High voltage shock hazard
+▪ The most common laser - related cause of death
+▪ Do not disable enclosure safety switches
+▪ Do not wear anything metal like a ring, bracelet,
+watch, bet buckle, earrings, or keys
+▪ Never stand on a wet surface
+Confidential - Company Proprietary
+
+Mechanical Hazards
+➢ Mechanical:
+• Moving equipment
+• Loose fitting clothing, ties, jewelry, should not
+to be worn
+• When to put the system into Emergency Stop
+mode
+Confidential - Company Proprietary
+
+Lens hazard
+Lenses used with the 355 nm laser system do not contain hazardous material and
+do not need to be disposed of as hazardous. Amon Videojet laser systems only
+CO2 laser lenses must be treated as hazardous if broken.
+Confidential - Company Proprietary
+
+Cleaning Solvents
+• Solvents (High grade)
+– Acetone
+– Methyl alcohol (methanol)
+– Isopropyl Alcohol Flammable
+• Irritants
+Confidential - Company Proprietary
+
+Laser Accidents
+• Statistically laser accidents are due to several factors:
+• eye exposure unexpectedly during alignment, eye
+protection not being worn, equipment malfunction,
+high voltage mishandling, non - beam hazards,
+incorrect eyewear, inhalation of air contaminants,
+viewing of laser - generated plasmas, and in general
+using equipment incorrectly
+• The most common type of injury is to the eye
+(around 70%). There have been a few deaths, mostly
+caused by electrocution or fires.
+Confidential - Company Proprietary
+
+Causes of laser accidents
+Confidential - Company Proprietary
+
+General safety
+Class 1:
+Not capable of emitting accessible laser radiation in access of what
+the AEL allows for class one.
+Example: Laser Printer, CD player
+Class 2:
+Not capable of emitting accessible laser radiation greater than AEL
+allows with .25 exposure duration. Less than 1mw.
+Example: Pilot laser and He - Ne alignment Laser
+Class 3:
+Potentially hazardous if focused at the eye or skin for less time than
+what’s allowed for class 2. Less than 500 mw.
+May cause acute eye hazards
+Example: Laser Pointer, level/guide
+Class 4:
+May present a serious fire, skin or diffuse reflection hazard. Output
+exceeds that of a Class 3. Greater than 500mw.
+Recommend Class 1 installation (shielding, interlocks, etc.)
+Example: CO2 and YAG laser tubes
+Confidential - Company Proprietary
+
+Reflections of light
+Confidential - Company Proprietary
+
+Reflected UV light
+Danger: during the alignment the
+cross wire will reflect the UV laser
+energy in all directions.
+Confidential - Company Proprietary
+
+ANSI Z 136.1 - 2014
+Purpose
+• Create a standard of measurement.
+• Determine thresholds where radiant energy
+becomes a hazard.
+• Categorizes laser into four basic hazards.
+• Provides recommendations for the safe usage of
+lasers and laser systems between 180nm and
+1mm.
+Confidential - Company Proprietary
+
+Laser Safety References
+• CDRH - Center for Devices and Radiological Health
+– An agency within the U.S. Food and Drug Administration which publishes and
+enforces legal requirements on laser product manufacturers. For copies of the
+CDRH regulations, contact: CDRH (HFZ - 312), 2098 Gaither Road, Rockville, MD
+20850, Telephone (301) 594 - 4654
+• ANSI/OSHA - ANSI (American National Standards Institute)
+– U.S. organization that publishes standards for laser users. Their laser safety
+standards are not laws, but they form the basis for state and OSHA requirements
+for the use of lasers. For copies contact ANSI in New York at (212) 642 - 4900 or the
+Laser Institute of America, at Telephone (407) 380 - 1553, Fax (407) 380 - 5588
+• OSHA - The Occupational Safety & Health Administration
+– Does not have specific laser safety requirements. However, if they are called into a
+facility, the inspectors follow published guidelines (OSHA Instruction PUB 8 - 1.7
+Guidelines for Laser Safety and Hazard Assessment) that are based on an earlier
+(1986) ANSI Z136.1 standard.
+Confidential - Company Proprietary
+
+Safety Guards
+• A safe installation requires that the laser beam
+be guarded utilizing interlocks
+Length must be sufficient to
+prevent skin and eye contact
+with beam path.
+Ceramic tile should be affixed
+opposite the laser head (other Laser hazard stickers
+side of product) to absorb laser should be affixed to the
+Insert laser head here.
+light if no product is present (if guard in clear view.
+Removal requiring special
+fired).
+tools.
+Side View of Guard
+Confidential - Company Proprietary
+
+Safety Guards
+• Any parts of the safety guard which can be
+removed (slides or hinged parts) should be
+interlocked so the laser is paused (shutter
+closed) when those parts are open or
+removed
+Top View of Guard
+Sliding cover to allow
+PRODUCT access to conveyor PRODUCT
+Removable parts
+should be electrically
+interlocked in CLOSED
+position.
+No laser reflective materials
+should interrupt the beam
+path (metal)
+Confidential - Company Proprietary
+
+PPE Control Measures
+• Appropriate eyewear
+– Eyewear must be for the
+appropriate laser
+wavelength, attenuate the
+beam to safe levels, yet be
+comfortable enough to
+wear
+– Gloves
+– Special Clothing (long
+Protective Gloves, Size 10, Quantity 3
+sleeves)
+Confidential - Company Proprietary
+
+OD on Eyewear Labels
+UV laser is 355
+YAG and Fiber
+C02
+Confidential - Company Proprietary
+
+An UV laser laser with a power of 2 watts is projected onto a fully dilated human eye pupil of 7 - mm diameter.
+The eye is exposed for a duration of 10 seconds. Calculate the minimum optical density OD of a laser safety goggle needed
+to protect the eye from damage. Refer to ANSI Z136 - 2014 Table 5a for the appropriate maximum permissible exposure
+(MPE).
+Given:
+• UV laser
+• λ = 355 nm
+• t = 10 s
+• Eye diameter = 7 mm
+• MPE = 0.1 W/cm2 (See Table 5a for355 nm, 10 - second exposure.)
+• P = 2 W
+Area of pupil =
+π D ² = (3.14)(0.7 cm) ² = 0.38 cm²
+4 4
+Solution:
+Where OD = log10 E 0 and E 0 = P / A, we get:
+MPE
+OD = log10 2 W / 0.38 cm²
+0.1 W / cm²
+OD=52.6
+OD = log10= 1.7
+OD = 1.7 Rounded up to a Optical Density of 2, all VJ technicians will use an OD of 6
+Confidential - Company Proprietary
+
+UV Laser PPE Controls
+1. Engineering controls (enclosure and Barriers)
+• Enclose UV laser beam paths to extent practical
+• Design barriers or enclosures for beam dumps to minimize potential diffuse
+exposures.
+2. Administrative Procedures
+• Attenuate laser beam and plan work to minimize exposure time
+• Keep exposed skin as far as practical from open beams
+3. Skin PPE
+• Wear long sleeved shirts
+• Use gloves when working with hands accessible laser beams (primary or stray)
+• Use gloves when diffuse reflection NHZ> 20cm, if working within that distance
+• Use face shield when diffuse reflection NHZ> 1m if working within that distance
+4. Medical exams
+• Periodic skin exams recommended for laser personnel who may have exposures >
+MPE
+5. Site specific training
+• OJT and SOP must describe potential for skin injury and controls to use
+Confidential - Company Proprietary
+
+Questions?
+In a fraction of a second, your vision can go dark.
+Confidential - Company Proprietary
+
+System Overview
+Photo shows supply unit as of 2020; older versions did not have terminal block near front.
+Confidential - Company Proprietary
+
+The Membrane Board
+Power on Standby
+Start Stop
+USB ports
+Currently not in use
+Error LED
+Status Bar LEDs
+Key switch Booting and Marking state
+Emission LED
+Shutter State LED
+Confidential - Company Proprietary
+
+Supply Unit Overview 1
+1. PCB, Chameleon
+7
+8
+2. Mounting base
+3. Membrane Keyboard
+1
+4. Key actuator
+5. UV - laser power supply
+6
+5 2
+6. Signal cable to beam source
+7. Cable gland
+8. Customer interface
+3
+4
+Confidential - Company Proprietary
+
+Supply Unit Overview 2
+1. Z - board
+1
+10
+2
+2. Fan unit
+7
+3. Power supply 75W, - 15V,5A
+4. Power Supply 75W,+15V,5A
+3
+8
+5. Power Supply 75W,+24V,3.2A
+6. Wels, PCB and main switch
+4
+7. Distribution block
+9
+8. UV - laser power supply
+5
+9. PSU - fan
+10. Key actuator
+6
+Confidential - Company Proprietary
+
+Key switch
+To Z board
+Confidential - Company Proprietary
+
+Z Board
+To key switch
+Wels connector X18
+Membrane keyboard
+Membrane keyboard
+connector X3
+Confidential - Company Proprietary
+
+Chameleon Board Overview 1
+Dip
+DSP FPGA QSeven
+TCP/IP SD card
+switch
+Serial
+EEPROM
+(only
+use
+lower)
+USB
+HIC
+HDMI
+(Beware: 24V
+output)
+LIC
+CI
+(Customer
+Interface)
+X28:
+Power
+Confidential - Company Proprietary
+
+Three Main Versions of Chameleon Board
+Multi Core Industrial
+Single Core Chameleon Multi Core (MC) Chameleon
+Protocols (MCIP)
+Chameleon
+Available as spare (7810
+Discontinued; use
+Available as spare
+oldest version had fan instead of
+MCIP version
+pinned heatsink)
+Uses Flash on Q7 (SD slot present, but not used)
+Uses 1 GB SD Card
+Requires CMark v. 4.x (includes TCS+ User Interface)
+Requires CMark v. 3.x
+
+Chameleon Board Overview 2
+EEPROM
+Stores the System Database
+- Type of lens
+- L aser type
+- O perating hours
+Ethernet Switch
+- C onfiguration data
+DSP (Digital Signal Processor )
+- 600MHz clock frequency
+EEPROM
+DSP
+FPGA - Laser source control
+- Marking trigger process
+- Marking head control
+- Marking process
+FPGA (Field Programmable Gate Array) :
+The bridge between Q7 and DSP
+The FPGA is the Interface to :
+Q7
+- Marking heads (HIC)
+- Laserbeam source (LIC)
+- PCI express
+- SRAM
+- CAN - Bus
+- Customer Interface
+Q7 Specification:
+Communication to customer interface
+SVG database is stored in the Q7 module
+- Intel ATOM processor
+- 1GB Ram/1.46 GHz
+Q7 is the gateway to:
+- USB
+- Serial Port
+- SD - Card
+- EEPROM
+- Ethernet
+Confidential - Company Proprietary
+
+Chameleon Board Overview 3
+HIC head
+interface
+connection
+LIC laser
+interface
+connection
+Confidential - Company Proprietary
+
+L aser I nterface C ontroler
+( LIC - Matrix)
+X1 is an analog output
+(Analog Power) 0 - 12V.
+This Output is not used for
+7810 or V.0020 - uv
+X1
+X2
+X2 is a digital output (5V) for gating the
+laser.
+The RF - signal cable opens or closes the
+Q - Switch.
+Confidential - Company Proprietary
+
+L aser I nterface C ontroller
+( LIC - Matrix)
+D5 is a software programmable LED for future use.
+X6 is the RS232 laser interface.
+X3
+D5
+X6
+D3 indicates 12V power supply.
+D3
+D4 is switched on, when an isolated voltage
+of 5V is present.
+D4
+5V potential free voltage, generated on board.
+D4 & D5 on even when laser is not booted.
+Confidential - Company Proprietary
+
+H ead I nterface C ontroller
+(HIC - Raylase)
+- Shutter state detection
+- D2: Shutter is closed
+- D3: Shutter is open
+Do not use white HIC - CPA used on other lasers.
+It does not have the connector necessary for UV marking heads.
+Confidential - Company Proprietary
+
+X3 and X18 Connectors Keyboard and Wels
+Current 7810: Red square are both coming from Z - board (Wels & keypad ribbon cables).
+Blue squares both are coming from CPD3 (2 ribbon cables)
+Confidential - Company Proprietary
+
+MIC (Miscellaneous Interface Controller)
+Available as a factory or field upgrade. MIC board can only be used with
+Chameleon MCIP version!!! MIC cannot be used with earlier versions of
+Chameleon (connector for MIC not on earlier Chameleons).
+Two versions with different part numbers:
+• EtherNet /IP (Blue sticker)
+• PROFINET (Yellow sticker)
+• Not interchangeable.
+• Firmware/software is on MIC and cannot be changed field.
+• MIC must be enabled through Web Interface.
+• RJ45 ports on MIC for PROFINET and EtherNet /IP only!
+• Use Chameleon RJ45 ports for TCS+, SmartGraph , etc.
+• Requires minimum version CMark 4.5
+
+The backup battery
+Necessary to boot process
+The battery buffers the following dynamic data, in the SRAM (128 KB) on the
+Chameleon board:
+• The last used template
+• Dynamic datas for all templates (e.g.: serial numbers, variables, shift codes, etc.)
+• Time and date (the clock even runs if the laser is switched off)
+The lifetime of the
+battery is more than
+Battery
+1 year, typical 3 years.
+QSeven
+QSeven
+SRAM
+Confidential - Company Proprietary
+
+The Voltage Jumpers X19 + X20
+X20: green
+X19: yellow
+Older versions of Chameleon will only have two positions
+for X19 (internal 24V and external; no 12V internal)
+Confidential - Company Proprietary
+
+Principle Wiring Power Supply - X28
+Customer Interface Supply Options
+X19 X20
+1 - 2 1 - 2 Internal Supply 24V
+2 - 4 1 - 2 Internal Supply 12V
+2 - 3 2 - 3 External Supply 12…24V (min 12V – 5% = 11.4V)
+24V
+Stepdown
+12V
+12/24V EXT
+GND SYS
+GND EXT
+External loads max. 250mA!
+Confidential - Company Proprietary
+
+The Power Supply Connector - X28
+Pin Name Direction Description
+X28.1 CHAM_24V_SWITCH OUT 24V for fan in front of laser PSU
+Default Connections:
+Pin 01+02 : 24V from Chameleon to fan for laser PSU
+X28.2 CHAM_24V_SWITCH_GND GND for fan in front of laser PSU
+Pin 9 +10 : Chameleon Power Supply (24V to Chameleon)
+The system can be started remotely by a
+Pin 13+14 : Laser Power Supply output feedback
+pulse from X28.5. If permanently
+X28.3 Ext_Startup IN connected to X28.5 system boots
+automatically after mains is connected. No
+External startup: Pin 3 - 5
+connection to 24 V Ext allowed.
+Customer can boot the system
+X28.4 GND GND
+remotely, by applying a pulse of
+Output terminals of 24V of standby power
+X28.5 24V_STDBY OUT supply. Not connection to 24V Ext allowed 24V_STDBY here.
+if CI should be isolated.
+By using the autostart bridge on X28.3
+X28.6 HEAD_GND OUT Not used here and X28.5, the system boots up
+automatically, after switching mains and
+External Power Supply 12 - 12 - 24V Input from customer to supply
+X28.7 IN
+never powers down after shutdown
+24V power for Customer Interface
+sequence (reboots). NO EXT 24V
+External Power Supply GND Input from customer to supply
+X28.8 IN
+Allowed.
+GND ground for Customer Interface
+24V power supply for Chameleon from
+X28.9 Chameleon power supply IN
+PSU. No customer connection allowed.
+External Power 12V/24V: Pins 07 & 08
+Chameleon power supply GND for Chameleon (no customer
+12V/24V and GND from customer to
+X28.10 IN
+GND connection allowed)
+supply CI
+X28.11 NC
+Important :
+While supplying external 12V/24V, the
+X28.12 NC
+complete customer interface is potential
+free! Also the connectors for incremental
+X28.13 LASER Voltage IN 24 laser supply (from Terminal Block)
+encoders and light barriers !
+X28.14 LASER GND IN GND laser supply (from Terminal Block)
+Laser Power Supply Control: Pin 13 - 14
+The Chameleon Board monitors if laser voltage is
+switched on to the beam source
+Confidential - Company Proprietary
+
+Customer interface
+Input Specification (24V):
+Rated voltage 24V
+Current Input 2.5 mA
+Maximum INPUT Voltage level to still be <=8.4 V
+considered a LOW
+Minimum INPUT Voltage level to be >= 9.4 V
+considered a HIGH
+Max. frequency 200 Hz
+Input/Output Max . Frequency
+General Inputs/Outputs (e.g. Start/Stop) 50 Hz
+Encoder 240 kHz
+Trigger 25 kHz
+Important: If the customer interface is supplied internally, the load must not exceed 250 mA
+Output Specification (12V):
+Rated voltage 24 V/Push Pull (high and low activated)
+Max. output current 50 mA max. (short - circuit proof)
+Confidential - Company Proprietary
+
+The Customer Interface - X21
+Suction Control
+Pin Name Direction Active Description
+High/Low
+1 Exhaust Error In Low Monitors error from fume
+extractor. Bridge if not using.
+2 Suction On Out High Fume extractor can be activated
+remotely via this output.
+Activated on Laser Ready
+3 Filter Full In Low Filter status of fume extractor can
+be monitored via this input
+4 GND_CI -
+5 24V_CI -
+6 GND_CI -
+AD Oracle wiring:
+Pin 1: green (Exhaust Error)
+Default Bridges (when fume extractor is not connected):
+Pin 1 to 3: bridged
+Pin 1 to Pin 2: Exhaust Error to Suction On
+Pin 2: red (Suction On)
+Pin 3 to Pin 5: Filter Full to 24V
+Pin 5: white (24V)
+Pin 4/6 : black (ground)
+Confidential - Company Proprietary
+
+The Customer Interface - X29
+Variable I/O
+Pin Direction Description
+X29.1 IN Error Status Customer (active low -
+tie high if not used)
+X29.2 OUT Error
+X29.3 IN Error Confirm
+X29.4 OUT N/A (system ready on other
+models)
+• Error Status Customer was called
+X29.5 IN None
+External Error on ACC board. Has
+X29.6 OUT Ack _ Job_Selection
+same behavior and notification in errors.
+X29.7 24V_CI
+X29.8 GND_CI
+• 7510 and 7810 do not have System
+X29.9 24V_CI
+Ready output that is available on other
+X29.10 GND_CI
+Chameleon - based lasers.
+• Inputs/outputs are programmed based
+Default Bridge:
+on the laser model selected and small
+variations exists across lasers.
+Pin 1 to Pin 7: Error Status Customer to 24V
+Confidential - Company Proprietary
+
+The Customer Interface - X22
+Variable I/O
+Pin Direction Laser Control
+X22.1 IN None
+X22.2 OUT Laser Ready
+X22.3 IN None > Tied to 24V
+X22.4 OUT Marking
+X22.5 IN Start Marking
+X22.6 OUT Ready to Mark
+X22.7 IN Stop Marking (tied to 24V
+if not used)
+Laser Ready:
+X22.8 OUT Shutter Closed
+Set when the system is in system state ‘‘Laser Ready‘‘
+X22.9 IN None > Tied to 24V
+and no error occured.
+X22.10 GND_CI
+X22.11 24V_CI
+Default Bridges:
+X22.12 GND_CI
+Pin 3 to Pin 7: Input None to Stop Marking
+Pin 7 to Pin 9: Stop Marking to Input None
+Pin 9 to Pin11: Input None to 24V
+Confidential - Company Proprietary
+
+The Customer Interface - X33
+Internal Connection
+Do not connect Interlock - and
+Do not
+Shutterlock - contacts at X33.
+remove any
+Use X9 on the CPD - board!!!
+bridges
+External Keyswitch can be used for
+connection of remote keyswitch
+Default Bridges (Do not remove):
+Pin 1 to Pin 8: External keyswitch (Only bridge that can be removed )
+Pin 2 to Pin 6: Interlock (do not connect interlock here – connect on CPD)
+Pin 3 to X27 Pin 7: Default bridge to enable CPD and FASS
+Confidential - Company Proprietary
+
+Interlock and Shutter Lock X33
+X33 Internal Connection
+Confidential - Company Proprietary
+
+The Customer Interface - X25
+Line Interface Connector (Encoder and
+Trigger)
+Pin: Name: Direction: Description:
+X25.1 CHA IN Input for encoder’s first track
+X25.2 CI line OUT Supply pin for encoder
+supply 0
+X25.3 CHB IN Input for encoder’s second track
+X25.4 CI line OUT Supply pin for Trigger
+System Senses Encoder
+supply 1
+and/or Product Detect.
+X25.5 Index IN Input for encoder index track
+If selected in software, but
+X25.6 GND_CI - Use this ground for Encoder
+if not connected in
+hardware an error will
+X25.7 Trigger IN Trigger (product detect) input
+occur.
+X25.8 GND_CI - Use this ground for Trigger
+CMark 3.4 or newer: Turn off
+X25.9 Trigger IN Bridge to X25.12. Must have 12V/24V to
+error monitoring in Web
+Enable allow trigger.
+Interface.
+X25.10 GND_CI -
+Older CMark: If using dry
+X25.11 CI line 5 - Reserved
+contact use a 4.7 KOhm resistor
+across pins 4 - 8 or 2 - 6 to create
+X25.12 24V_CI 24V supply interface
+load for External Trigger/Encoder
+setup
+Confidential - Company Proprietary
+
+The Customer Interface - X30
+Variable I/O (external template selection )
+Pin: Direction: Description:
+X30.1 IN JobSelect0
+X30.2 IN JobSelect1
+X30.3 IN JobSelect2
+X30.4 IN JobSelect3
+X30.5 IN JobSelect4
+X30.6 IN JobSelect5
+X30.7 IN JobSelect6
+X30.8 IN JobSelect7
+X30.9 IN JobSelectStrobe
+X30.10 GND_CI
+X30.11 +24V_CI
+X30.12 GND_CI
+Confidential - Company Proprietary
+
+The Customer Interface - X27
+Variable I/O
+Pin: Direction: Description:
+X27.1 IN Shutdown
+X27.2 OUT PC Connected
+X27.3 IN None
+X27.4 OUT Good
+X27.5 IN None
+X27.6 OUT Bad
+X27.7 - Bridged to X33.3 to enable
+CPD and FASS
+X27.8 OUT None
+X27.9 IN None
+Default Bridge:
+X27.10 GND_CI
+X27.11 +24V_CI
+Pin 7 to X33 Pin 3: Default bridge to
+enable CPD and FASS
+X27.12 GND_CI
+Confidential - Company Proprietary
+
+The Customer Interface
+Default Bridges
+Pins: Description:
+X25.9 - 12 Trigger Enable tied to 24V
+X27.7 - Enables CPD and FASS
+X33.3
+X21.1 - 2 Exhaust Error to Suction On (24V output)
+X21.3 - 5 Filter Full tied to 24V
+X29 .1 - 7 Error Status Customer tied to 24V
+X22.3 - 7 Internal use
+X22.7 - 9 Stop marking tied to 24V
+X22.9 - 11 Internal use
+X33.1 - 8 External key switch (Input to Output)
+X33.2 - 6 Internal Use
+Confidential - Company Proprietary
+
+D77 SDIO activity
+(active on 7810)
+D52 DSP power D66 SDIO overload
+D33 DSP alive D76 SDIO power
+D57 Lase
+D56 Vector
+D55 Trigger
+D54 Marking
+D75 WDOG activity
+Not on unless error
+D18 Encoder ChA Status
+Not on for 7810
+D2 Encoder ChB Status
+D31 Reserved
+D4 Encoder Index Status
+D6 Trigger Sensor Status
+D8 On if Trig Enable is on (bridged)
+D22 Reserved
+D20 On if Trig Connected
+D16 On if Encoder Connected
+D70 24 V present
+D71 5 V present
+D72 3.3 V present
+D73 2.5 V present
+D74 1.2 V present
+D47 48 V present
+Not on for 7810
+D11 12V present
+K1
+D35 CI 24V Present
+IC72
+Confidential - Company Proprietary
+
+Power Supplies
+Chameleon Power Galvo Power
+- 15VDC
++24VDC +15VDC
+Power
+supply
+CPD
+fan
+Confidential - Company Proprietary
+
+CPD – Cobra Power Distribution (CPD only)
+Older version of CPD (CPD2 and early CPD3)
+- K1+2: Reacts on a two channel interlock circuit and switches off the laser beam source.
+- K3: Reacts on a safety logic ( when the signal ‘ safe laser power on‘ is missing , K3 switches off the
+laser beam source to.
+- K8: Switches on (primary side) the laser power supply for the marking head (+15 and - 15 VDC).
+- K11: To avoid a welding of contacts, the inrush current is limited by two resistors. Additional K11 sends
+out the signal ‘ laser power is on‘.
+Mains
+K11
+K3 K2 K1
+K8
+Confidential - Company Proprietary
+
+CPD – Cobra Power Distribution (CPD only)
+- CPD is available with FASS or stand alone. (Configuration is possible in the Laser Web Interface.)
+- CPD stand alone , doesn‘t provide an emergency stop .
+- The customer has to provide an emergency switch and an EM release button , if he wants to use this function
+together with the FASS board .
+- All power supplies are switched on, on the primary side via X4. X5 is not connected.
+- No noise filter .
+- X11 supplies 24V to an additional fan .
+Mains
+X12
+X6
+Input/Output to
+Input/Output to
+FASS
+X2 Chameleon
+X11
+X10
+X1
+X5
+X4
+X8
+Confidential - Company Proprietary
+
+CPD3 - Cobra Power Distribution (CPD only)
+- Newer revision of CPD (has been in use for many years now)
+- Same ribbon cable connections for Chameleon and FASS
+- Difference from CPD2 is in the number of relays.
+- Caution: Read FSB regarding combination of Chameleon MCIP (rev AA or AB) and
+CPD3 (rev AC). This combo of revisions of boards requires rewiring of a few wires on
+terminal block.
+8
+1
+4
+3
+2
+Confidential - Company Proprietary
+
+CPD – Cobra Power Distribution
+The diagnostic LEDs
+Diagnostic LEDs
+X9 Connector (24 pins)
+for Door circuits
+If CPD only is connected:
+D6 and D12 are on,
+D8 is flashing with 2Hz.
+If FASS is connected:
+All diagnostic LEDs are switched
+on, when the system is ready and
+D8 22 19 18 13 12 6 5
+all the relay contacts are closed.
+Confidential - Company Proprietary
+
+CPD – Cobra Power Distribution
+The Diagnostic LEDs
+Diagnostic LEDs are reacting on signals from FASS.
+D8 is able to send out flashing codes. The following list
+D8 22 19 18 13 12 6 5
+displays all error possibilities. In CMark versions,
+these errors, will be displayed in SmartGraph messages.
+VJUV Service Training Confidential - Company Proprietary
+
+CPD – Cobra Power Distribution
+The diagnostic LED DIAG (D8) with FASS
+D8 22 19 18 13 12 6 5
+Error code Blinkcode slow Blinkcode fast description
+11 1 1 Supply voltage too high (>28V)
+12 1 2 Supply voltage too low (<18V)
+13 1 3 Cross circuit EM1 to EM2 or 24VDC
+14 1 4 Cross circuit EM2 to EM1 or 24VDC
+21 2 1 Q01 Nominal state =0, current state =1
+22 2 2 Q02 Nominal state =0, current state =1
+23 2 3 Q03 Nominal state =0, current state =1
+24 2 4 Q04 Nominal state =0, current state =1
+31 3 1 Q01 Nominal state =1, current state =0
+32 3 2 Q02 Nominal state =1, current state =0
+33 3 3 Q03 Nominal state =1, current state =0
+34 3 4 Q04 Nominal state =1, current state =0
+41 4 1 Q1 connot be switched off
+42 4 2 Q2 connot be switched off
+43 4 3 Q3 connot be switched off
+44 4 4 Q4 connot be switched off
+51 5 1 Q1 during on switching is on
+52 5 2 Q2 during on switching is on
+53 5 3 Q3 during on switching is on
+54 5 4 Q4 during on switching is on
+Confidential - Company Proprietary
+
+CPD – Cobra Power Distribution
+The Connector X9 (CPD only )
+System reaction:
+Door1 (X9 Pin 7 - 14): Shutterlock Open
+Door2 (X9 Pin 5 - 16): Shutterlock Open
+EM1 (X9 Pin 17 - 21) : Interlock Open
+EM2 (X9 Pin 15 - 19) : Interlock Open
+Default bridges:
+Pin 05 - 16: Shutterlock bridge 1
+Pin 07 - 14: Shutterlock bridge 2
+Pin 10 - 12: Door feedback bridge
+Pin 15 - 19: Interlock bridge 1
+Pin 17 - 21: Interlock bridge 2
+Pin 22 - 24: Emergency Reset bridge
+(not in use for CPD only)
+Confidential - Company Proprietary
+
+CPD - Cobra Power
+Distribution
+Connector X9 (CPD only)
+Double pole switch used
+System reaction when circuit open:
+Door1 (X9 Pin 7 - 14): Shutterlock Open
+Door2 (X9 Pin 5 - 16): Shutterlock Open
+EM1 (X9 Pin 17 - 21) : Interlock Open
+EM2 (X9 Pin 15 - 19) : Interlock Open
+Default bridges:
+(If no interlock connected)
+Pin 05 - 16: Shutterlock bridge 1
+Pin 07 - 14: Shutterlock bridge 2
+Pin 10 - 12: Door feedback bridge
+Pin 15 - 19: Interlock bridge 1
+Pin 17 - 21: Interlock bridge 2
+Default
+Pin 22 - 24: Emergency Reset bridge
+bridges
+Confidential - Company Proprietary
+
+CPD only – Using Single Pole Switch
+The Connector X9
+Wiring single pole switch for:
+(1) Shutterlock - or -
+(2) Interlock
+Default bridges
+Confidential - Company Proprietary
+
+Optional: The FASS - board
+Follower of K40
+Mounting plate
+located under power
+supplies
+X10a
+X10
+Confidential - Company Proprietary
+
+CPD + FASS
+The Connector X9 (FASS connected)
+System reaction:
+Door1/2: Shutterlock Open
+EM1/2: Interlock Open (has to be reset with S2)
+Switch 2 : Must close then open again to
+reset after interlock open condition is
+corrected. Not necessary after Shutterlock
+open.
+Default Bridges
+10 - 12 Door Feedback
+22 - 24 Emergency Feedback
+5 - 16 Door 2 ( Shutterlock )
+7 - 14 Door 1 ( Shutterlock )
+15 - 19 Emergency 2 (Interlock)
+17 - 21 Emergency 1 (Interlock)
+Confidential - Company Proprietary
+
+CPD – Cobra Power Distribution
+The Connector X9 (FASS connected and with contact extensions)
+System reaction
+Door1/2: Shutterlock Open
+Contact extension
+EM1/2 : Emergency Error - has to be resetted
+with FASS
+Confidential - Company Proprietary
+
+X200 Distribution Block
+• Junction for AC and DC voltages in system
+• Also has Solid State Relay ( Opto ) for Interlock on Laser
+Power Supply. Separate from Safety Interlock wired
+from customer door(s). Internal only.
+• See Wiring Diagram for full layout in/out terminal block
+IN OUT
+Optocoupler 5V (Junction between Laser PSU Interlock, 24V for relay and
+Voltage to CPD3 pin 3)
+1 - 15V from PSU - 15V to Marking head
+2 - 4 GND GND
+5 GND from 24V PSU GND for Chameleon Voltage
+(X28.2)
+6 GND for 24V Laser GND for Chameleon laser
+power (X28.14)
+7 +15V from PSU +15V to Marking head
+8 +24V from PSU +24V to Chameleon (X28.1)
+9 +24V for Chameleon Laser +24V to Chameleon Laser
+Power Power (X28.13)
+10
+N Neutral (Laser PSU VAC)
+L1 Line (Laser PSU VAC)
+Confidential - Company Proprietary
+
+Laser Source and Power Supply
+http://cdn.pressebox.de/a/e7a4bce3f2a37a47/attachments/0392302.attachment/filename/Coherent+MATRIX+1064+CW.jpg
+Source and power supply come
+together (single part number).
+Must be replaced as a set.
+Confidential - Company Proprietary
+
+LDA/LDK = Laser Diode
+Anode and Cathode
+( Kathode in German)
+Laser Power Supply
+LDK RS 232
+USB
+LDA Laser Head Interlock
+UDL+
+UDL -
+LDA/LDK: Connection to laser diodes (different sizes to avoid error), affects the output power.
+Interlock: Connected to opto coupler on terminal block. Traditioinal Interlock is on X9 of the CPD board.
+RS232: Interface to chameleon board and PC (Matrix Analysis Software).
+Laser Head: Connection to the beam source.
+Confidential - Company Proprietary
+
+Solid State Laser Technology
+• After 15,000 - 25,000 hours the beam source must be changed; 2 year warranty just like all
+other sources.
+• Fans turn on at 40 ° C (fans cannot be replaced separately; not all run at same time so don’t
+worry if only 1 or 2 running at a time)
+• When replacing the laser source enter the CIP/Power Correction Factor on the web page.
+Power Correction Factor (aging) can be increased with age to get more power, but don’t set
+to 1 (100%). Unstable behavior at setting of 1 !!! CIP value to enter comes on paperwork with spare
+source (convert to decimal).
+• Always short the laser source prior to disconnecting the power cables. (Shorting plug
+should also be in place on new laser source.)
+• Laser should be mounted in the horizontal position. No other approved mounting.
+Confidential - Company Proprietary
+
+Laser Tube Rear
+X01 from Laser Power Supply
+X04 X03
+X01
+X03 and X04 from LIC board
+Confidential - Company Proprietary
+
+Coherent Beam Source Specification
+Confidential - Company Proprietary
+
+Output Power and Frequency
+Default
+settings
+for 7810
+Reference
+settings
+from
+Coherent
+Confidential - Company Proprietary
+
+UV - Resonator – Schematic Diagram
+UV light
+(355nm)
+output
+pump laser SHG THG
+end q - switch
+coupler
+Diode mirror crystal crystal
+crystal
+808 nm
+The laser (Vanadate) is pumped by the pump diode and generates infrared light (IR,
+1064nm). Then the IR light is doubled in the SHG crystal (Green. 532nm) and tripled in the
+THG crystal (UV, 355nm). Only the UV light is coupled out of the optical setup. Pulses are
+generated in the setup with the Q - switch which blocks the beam first and then allows the
+light to resonate between the end mirrors so that a pulse can be generated.
+Confidential - Company Proprietary
+
+The Shutter and Pilot Laser
+Pilot laser
+Shutter
+Confidential - Company Proprietary
+
+INTERLOCK AND SHUTTER LOCK
+INTERLOCK:
+• Leads to a shut down of the laser beam source. Beam shutter is closed
+• System state: interlock open.
+• Emission LED: Off
+SHUTTER LOCK:
+• The power for the laser beam is not switched off.
+• Beam shutter is closed
+• System state: shutter lock open.
+• Emission LED: On
+EXTERNAL KEY SWITCH:
+• Leads to a shut down of the laser beam source.
+• Beam shutter is closed
+• System state: key switch open.
+• Emission LED: Off
+Confidential - Company Proprietary
+
+Beam Expander
+• 3x, 5x and 7x are available for TS10.
+• 3x and 5x available for SS7 (no 7x; 7x
+would make beam too big for
+mirrors in SS7)
+• 3x is the default module.
+• Must be aligned after source
+installation or if removed for any
+reason.
+• Fine adjustment available to change
+spot size and focal distance slightly.
+Confidential - Company Proprietary
+
+Marking Head Overview
+Turbo Scan 10
+(10 mm mirrors)
+Super Scan 7
+(7 mm mirrors)
+• Smallest parts replacement is the entire marking head.
+• Galvos not replaceable on their own.
+Confidential - Company Proprietary
+
+Marking Head Status LED’s and Connectors
+LEDs differ on SS7
+Power
+Command
+and TS10
+D7 D11
+D3
+D5 D9
+D1
+D4 D8
+D2
+D6 D10
+Confidential - Company Proprietary
+
+Lens Working Distance
+Marking head Raylase TS10 TY (all values in mm)
+Laser scans lens: focal length f 100 160 214 511
+Working distance 193 227 301 650
+Max. width (A) 63.6 118 155.9 374.6
+Max. width (B) 75.6 118 155.9 374.6
+Marking head Raylase SS7 TY
+Laser scans lens: focal length f 100 160 214 511
+Working distance 209.5 253 316 668
+Max. width (A) Diameter 65.1 110.6 156.9 374.6
+Max. width (B) 75.6 118 156.9 374.6
+Adapter
+required for
+some lenses
+Confidential - Company Proprietary
+
+Active and Ready LED
+Booted
+Laser Armed
+Confidential - Company Proprietary
+
+System Overview (New)
+Confidential - Company Proprietary
+
+System Overview (Old)
+Confidential - Company Proprietary
+
+Laser Software
+• Smartgraph
+• TCS (pc - based; CMark 3 or 4 - 4.5)
+• TCS+ (runs natively from laser;
+CMark 4.5 or newer)
+• CLARiTY
+• Web interface (add :8080 to IP)
+Confidential - Company Proprietary
+
+Laser Web Interface
+(Home page)
+Connect to the Laser Web Interface by entering IP address of the laser system
+• View settings without logging in
+• Login to change settings
+When logged in can change:
+• Laser type/marking head type/lens type
+• Permissions
+• Date/time
+• IP address for laser
+• Update Cmark
+• Load AllPrintBasic files
+• Enable Remote Service function (if customer has Videojet Remote Service server)
+Confidential - Company Proprietary
+
+Laser Web Interface
+(log in)
+Login to change settings:
+1) Click on Log In (upper right corner or window)
+2) Enter User Name: service
+3) Enter Password: 123@service
+4) Click on Login
+5) Change or modify settings
+6) System must be restarted for changes to take effect
+Confidential - Company Proprietary
+
+Laser Web Interface
+(Laser Configuration)
+Laser Configuration:
+• Laser Type
+• Marking Head
+• Lens
+• Serial Number
+• IP Address
+• Subnet Mask
+• Secondary IP Address
+• Timezone
+• Pilot Laser
+• Safety Circuit
+• Disable Trigger/Encoder
+detached errors (Cmark 3.4
+and newer)
+Do not adjust:
+• Tube Length
+• Leakage Protection (leave on)
+unless causing errors
+• Trigger Enable Voltage Needed
+• System Integration Mode
+Confidential - Company Proprietary
+
+Laser Web Interface
+(Other Functions)
+Boot Log (SmartGraph
+version info)
+Version Information
+• System Configuration
+• Cmark
+• Permissions
+• DSP
+• Date/Time
+• Update Cmark
+• FPGA
+• Upload AllPrintBasic files
+• CP - Light
+• Setup Arc Compensation
+• SmartGraph (Cmark
+• VJ Remote Service
+3.4 and newer only)
+Confidential - Company Proprietary
+
+Laser Web Interface
+(Logs)
+CMark v. 3.2.1 and
+older
+Confidential - Company Proprietary
+
+Laser Web Interface
+(SmartGraph Version Info)
+CMark v. 3.4 and newer
+Confidential - Company Proprietary
+
+File Menu
+Edit marking system
+Create laser data
+base
+Function
+button
+PC
+database
+Online
+Database
+Confidential - Company Proprietary
+
+Creating a database
+1. Select new database file
+2. Select database location and
+name
+3. Select laser type, marking
+head and lens, then press OK.
+Confidential - Company Proprietary
+
+Administration of marking systems
+Name the laser
+Enter the lasers IP address
+Confidential - Company Proprietary
+
+Creating templates
+Confidential - Company Proprietary
+
+Templates main tool bar
+Confidential - Company Proprietary
+
+Template tool bar list
+Confidential - Company Proprietary
+
+Parts of a Template
+Confidential - Company Proprietary
+
+Focus Finding Template
+• Use special template and parameter set
+Confidential - Company Proprietary
+
+Exercise 1
+Create the following 3 line message. Using the standard 1L
+font at 4mm.
+FIX TEXT MONTH/YEAR 410 DAY OFFSET
+EXP 12/14
+TIME
+23:59 L1365A
+FIX TEXT serialize
+LOT# P74801 SER000
+L= Hour code 0000=A, 0100=B, 0200=C, 0300=D, 0400=E, 0500=F etc..
+1 = First text
+365 = Julian date=todays date
+A = Shift 0700=A, 1500=B and 2300=C (every Day).
+000 = serialize
+Confidential - Company Proprietary
+
+Parameter Set Dialogue
+Confidential - Company Proprietary
+
+Laser Parameters
+Confidential - Company Proprietary
+
+Direction of travel
+Product Registration set to run from left to right
+Line Direction
+VJA
+Product Registration set to run from right to left
+Line Direction
+VJA
+Confidential - Company Proprietary
+
+Static printing
+Product registration set to no movement
+Note: adjust one at a time!!!!!
+Confidential - Company Proprietary
+
+Display jumps
+Confidential - Company Proprietary
+
+Confidential - Company Proprietary
+
+Jump speed too high
+Confidential - Company Proprietary
+
+Confidential - Company Proprietary
+
+One noticeable characteristic is skirting of lines. You can almost see the dots in every
+line. This could be corrected by decreasing Marking Speed or increasing the Frequency.
+Confidential - Company Proprietary
+
+Marking Intensity
+The laser parameter marking intensity significantly affects the quality of the marking.
+It alters the power of the laser marking system.
+The marking intensity is adjustable from 0 to 100%.
+Under 70% leads to an unstable marking.
+60KHz @ 100% Intensity = 1 watt measure 24 amps DC
+20KHz @ 100% Intensity = 2 watts measure 60 amps DC
+Note: With UV laser, changes to Intensity lead to an approximately 70 sec delay as crystal
+stabilizes. Avoid Intensity changes in Indexes ,if possible, by adjusting frequency or Q - switch
+width. Those do not result in a delay.
+Confidential - Company Proprietary
+
+The marking speed
+The velocity vector markup is very high, amounting to tens of meters per second for focal
+medium. This speed is not always exploitable, however, because of excessive reduction of the
+overlap of the spot that makes a broken line that you want instead is continuous.
+dx =20  m
+w =30  m
+s =100mm
+v =1000mm/s
+F =50000 Hz
+ + 
+
+dx =100  m
+w =30  m
+s =100mm
+L
+ =  
+v =5000mm/s
+v
+F =50000 Hz
+Confidential - Company Proprietary
+
+50% intensity
+5000 Mark Speed
+50% intensity
+2500 Mark Speed
+100% intensity
+300 Mark Speed
+Confidential - Company Proprietary
+
+Confidential - Company Proprietary
+
+Note the jagged line on “M”. The galvos have not stabilized yet and the laser is turned on.
+This could be corrected by reducing the Jump Speed and or increasing Jump Delay.
+Confidential - Company Proprietary
+
+Confidential - Company Proprietary
+
+Mark Delay too high
+Curve markings are thick
+Confidential - Company Proprietary
+
+Confidential - Company Proprietary
+
+Confidential - Company Proprietary
+
+Confidential - Company Proprietary
+
+Notice that characters like the “O”, “0” does not close, “M” have short legs.
+The galvo is tracing the outline of the character but the laser is still of.
+This could be adjusted with decreasing the Laser ON Delay.
+On some sensitive materials a very low Laser On delay can puncture the substrate.
+This sometimes could be mistaken as Laser off delay.
+Take note where the start and stop of the strokes are.
+Confidential - Company Proprietary
+
+On delay too high
+Confidential - Company Proprietary
+
+Confidential - Company Proprietary
+
+Notice tails drilling on end of characters. The galvos jumped to the new vector and the
+laser is still on. This can be adjusted by reducing the Laser Off delay.
+Confidential - Company Proprietary
+
+Notice some segments of the characters are short and other like the “O” and “”0”
+does not close. The galvos are still tracing the end of the characters but the laser is off
+already. This can be corrected with increasing the Laser off delay.
+Confidential - Company Proprietary
+
+Pulse frequency
+The frequency of the pulses can be set from 20 to 100 kHz.
+If you want to increase the pulse frequency, it is only possible to do this in a certain range.
+When the range is exceeded, the max. acceptable value is displayed.
+As far as the frequency of repetition of single spot the laser, it can be command liberations within the range concurred (fro m t he tens
+with the hundreds of kHz). Higher it is the greater frequency is the superimposition (overlap) between the spot. Or higher it is the
+execution speed
+30%
+40%
+60%
+LOW Medium
+High
+Frequency
+Frequency
+Confidential - Company Proprietary
+
+• Pulse frequency with UV significantly affects power.
+• Maximum power is achieved at 20kHz ( appox . 2 Watts) and declines at higher or
+lower frequencies (approx. 1 Watt at 60KHz).
+• Intensity and Q - switch width also affect power output on UV laser.
+Confidential - Company Proprietary
+
+nd
+2 Jump delay
+st
+1 Jump speed
+th
+5 Mark delay
+th
+4 Marking intensity
+th
+6 Stroke delay
+7thOff delay
+rd
+3 Laser on delay
+th
+4 Marking speed
+Confidential - Company Proprietary
+
+Confidential - Company Proprietary
+
+Confidential - Company Proprietary
+
+Confidential - Company Proprietary
+
+Confidential - Company Proprietary
+
+Index steps
+Confidential - Company Proprietary
+
+Layers
+Confidential - Company Proprietary
+
+Laser Operation Marking Adjustments
+Confidential - Company Proprietary
+
+Laser Operation Marking
+System
+state
+Template
+information
+Confidential - Company Proprietary
+
+Laser operation Messages
+Confidential - Company Proprietary
+
+Exercise 2
+• Create the following message:
+• Arial non filled 4.0 font
+• Logo 10X56
+• QR barcode one digit year
+Month short
+Two digit day
+• Note radius is the same length
+Confidential - Company Proprietary
+
+Exercise 3
+Videojet Technologies
+• Print 2 UPC - A barcode.
+• Enter the following information into the barcode ddmmyyyy
+• Square should be in the template but will not be printed
+• Note the effect.
+• The word “Videojet Technologies” should print 3 time off of one trigger.
+Confidential - Company Proprietary
+
+Exercise 4
+AA J 66 A 128 1400
+Month code
+Time
+Day of the Fixed text Shift code Julian date
+week code +90 day offset
+AA J A
+MONTH Printed information DAY Printed information SHIFT 0700 1000 1500 2300
+Jan A1 MON A CODES
+Feb B2 TUE B MON A B D 1
+Mar D3 WED E TUE C H G 2
+Apr F4 THR F WED E M N 3
+May H5 FRI J THR F Q R 4
+June K6 SAT K FRI J T U 5
+Jul P7 SUN P SAT K W X 6
+Aug R8 SUN S Z Y 7
+Sep S9
+Oct W0
+Nov Y1
+Dec L2
+Confidential - Company Proprietary
+
+Template list
+Confidential - Company Proprietary
+
+Template Sequence
+Confidential - Company Proprietary
+
+Template Batch
+Confidential - Company Proprietary
+
+Installation
+➢ Set Jumpers on X19 and X20 based on power source for
+Customer Interface (internal or external)
+➢ Accessories Specifications:
+• Product Detect
+- Must be 15V to 30V PNP detector
+• X 25 on Internal Customer Interface connections
+• Encoder
+- Must be 24V Quadrature encoder
+• X 25 on Internal Customer Interface connections
+• Interlocks
+- All internal connections for Interlock/ Shutterlock /E - Stop switches are
+made to X9 on CPD/SPM board
+Confidential - Company Proprietary
+
+The Installation
+(cont‘d)
+➢ Connections for the following:
+• Fume Extractor
+➢ Exhaust Error / Filter Full
+➢ If not connected to system IOs then jumpers/jumper plug must
+be fitted
+• Beacon
+• The following are also available:
+➢ System Ready
+➢ Ready to Mark
+➢ Good Mark
+➢ Bad Mark
+➢ External Job Select
+➢ External Start - up
+➢ External Start Marking / Stop Marking
+➢ Connect Coder to mains supply
+Confidential - Company Proprietary
+
+Product Registration
+Confidential - Company Proprietary
+
+Product Registrations
+Sensor
+Sends trigger pulses to the trigger input
+Mark on the product
+123125
+Start distance Direction of
+product movement
+Blocking
+distance
+Laser
+Confidential - Company Proprietary
+
+Line Direction
+Mounting position= - 90
+7810
+Product movement angle= 90
+Mounting position= 180
+7810
+Product movement angle= 0
+7810
+Mounting position= 90
+Product movement angle= - 90
+7810
+Mounting position= 0
+Product movement angle= 180
+Confidential - Company Proprietary
+
+Line Direction
+Mounting position= - 90
+7810
+Product movement angle= - 90
+Mounting position= 180
+3310
+Product movement angle=180
+Mounting position= 90
+7810
+Product movement angle=90
+Mounting position=0
+7810
+Product movement angle=0
+Confidential - Company Proprietary
+
+Pulses per mm
+𝐷 𝑋 Л = 942 . 45 𝑚𝑚
+𝐷 𝑋 Л = 314 𝑚𝑚
+300
+100 = Diameter
+100
+Diameter X Л (Pi) = Distance per rotation
+3600/942.45=3.8 pulses per mm
+3600/314=11 pulses per mm
+Start Roll Finish
+Conclusion the 100mm wheel almost 4 times the
+resolution of the 300mm wheel. Solution get a
+higher resolution encoder.
+5000/942.45=5.3 pulses per mm
+Confidential - Company Proprietary
+
+Kompensation Template
+When the line distorts in the axis of product movement, the distance per rotation
+“Distance/Rot“ or “Speed“ has to be changed
+Line distorts in direction of line movement.
+Increase Distance per rotation or Speed
+Line distorts against line movement.
+Decrease Distance per rotation or Speed
+When the line distorts in the axis of the laser, the angle has to be changed in the field:
+“Angle between laser and direction of product movement“.
+Increase a ngle
+line dire c tion
+Decrease angle
+Confidential - Company Proprietary
+
+Compensation of the system
+1. Create a job called square test, use the current parameters and product
+registration. The size and the marking time should correspond to the job to be
+marked later on. The dimensions should match the height of the message. Don’t
+forget to adjust the laser power in the field.
+2. Start the test. When the square open or closes in line direction, the distance per
+rotation has to be modified in the field “Distance/Rot”.
+Square opens in the line direction.
+Remedy/Measure: Distance per rotation must be increased!
+Square closes in the line direction.
+Remedy/Measure: Distance per rotation must be decreased!
+Line direction
+Confidential - Company Proprietary
+
+Compensation of the system
+When the square opens or closes in direction of the laser, the angles has be changed
+in the field. “Angle between Laser Axis and Direction of Product Movement”.
+Square opens in the laser direction.
+Remedy/Measure: Angle must be increased!
+Square closes in the laser direction.
+Remedy/Measure: Angle must be decreased!
+Line direction
+Advice: First laser out the square without any product movement, to be sure that parameters
+are OK!
+Confidential - Company Proprietary
+
+Marking head
+Marking head to
+Marking head
+product
+type
+Lens type
+Confidential - Company Proprietary
+
+System settings
+Confidential - Company Proprietary
+
+Exercise 5 CLARiTY Laser Controller
+Merge field
+Shift
+Equipment
+ddMMMYYYY A 22 Y 14 123 adf F 18
+Reference
+User entered
+Date Constant Year Julian
+text 3 letters only
+( dd ) Text ( yy ) Date
+Month Codes:
+Shift Codes:
+January J
+0900 J
+February F
+1700 F
+March M
+April A
+May N
+June Z
+Using only the CLARiTY Controller
+July Y
+August H
+print in static and MOTF, 5mm
+September S
+October O
+font, Stand 1L.
+November L
+December D
+Confidential - Company Proprietary
+
+Arc Compensation
+Enable Configuration
+√
+X offset:123 Encoder 3600
+pulses
+Y offset: 0
+Ratio:1
+X
+Clock wise =
+Pulses/Turn= - 7200
+a negative value
+Y
+Start angle= 20
+Lock angle=0
+Rising
+Start trigger
+V
+Rising
+Consecutive trigger
+V
+None
+Stop trigger
+V
+clockwise
+Rotation
+V
+Save
+Confidential - Company Proprietary
+
+Y offset from center
+Enable Configuration
+√
+X offset:123 Encoder 3600
+pulses
+Y offset: - 3
+Ratio:1
+X
+Clock wise =
+Pulses/Turn= - 7200
+a negative value
+Y
+Start angle= 20
+Lock angle=0
+Rising
+Start trigger
+V
+Rising
+Consecutive trigger
+V
+None
+Stop trigger
+V
+clockwise
+Rotation
+V
+Save
+Confidential - Company Proprietary
+
+Y offset
+Enable Configuration
+√
+X offset:0
+Y offset: - 225
+Ratio:1
+Pulses/Turn= - 7200
+X
+Start angle=30
+Lock angle=15
+Y
+Auto
+Start trigger
+V
+Auto
+Consecutive trigger
+V
+None
+Stop trigger
+V
+None
+Rotation
+V
+Save
+Confidential - Company Proprietary
+
+X offset from center
+Enable Configuration
+√
+X offset: 25
+Y offset: - 225
+Ratio:1
+Pulses/Turn= - 7200
+X
+Start angle=30
+Y
+Lock angle=15
+Auto
+Start trigger
+V
+Auto
+Consecutive trigger
+V
+None
+Stop trigger
+V
+None
+Rotation
+V
+Save
+Confidential - Company Proprietary
+
+Y offset
+Enable Configuration
+√
+X offset: 0
+Y offset: 225
+Ratio:1
+Clock wise =
+Pulses/Turn= - 7200
+a negative value
+Start angle= 30
+Lock angle=0
+X
+Rising
+Start trigger
+V
+Y
+Rising
+Consecutive trigger
+V
+None
+Stop trigger
+V
+None
+Rotation
+V
+Save
+Confidential - Company Proprietary
+
+Ratio Arc Compensation
+Encoder 3600 pulses
+Star wheel Diameter
+Enable Configuration Diameter 160mm
+√ 490mm
+X offset:123
+Top
+Y offset: 0
+Ratio 490/160=3.06
+Ratio:3.06
+X
+Clock wise =
+Pulses/Turn= - 7200
+a negative value
+Y
+Start angle= 20
+Lock angle=0
+Rising
+Start trigger
+V
+Rising
+Consecutive trigger
+V
+None
+Stop trigger
+V
+clockwise
+Rotation
+V
+Save
+Confidential - Company Proprietary
+
+Angled Laser with Encoder Geared
+Enable Configuration
+√
+X offset: 5
+Filler
+Y offset : - 404
+Ratio: 6
+Clock wise =
+Pulses/Turn= - 65536 Blower
+a negative value
+Start angle= 18
+Lock angle=0
+Rising
+Start trigger
+V
+Consecutive trigger Rising
+V
+30000 pulse
+encoder
+None
+Stop trigger
+V
+Laser printing
+clockwise
+Rotation
+V
+up
+Camera
+Reject
+Save
+Confidential - Company Proprietary
+
+AllPrint Basic
+Confidential - Company Proprietary
+
+System states
+Confidential - Company Proprietary
+
+System Start Up
+Confidential - Company Proprietary
+
+Marking Sequence Normal Operation
+Conditions:
+- Product Registration “Rising/ Rising” configured
+- Shutterlock (Emergency circuit) closed
+- Interlock(Door circuit) closed
+- Error Customer not active and no error conditions while whole sequence
+- Mains switch closed
+Confidential - Company Proprietary
+
+Timing Diagram FASS - CPD
+Confidential - Company Proprietary
+
+Maintenance
+Confidential - Company Proprietary
+
+Cleaning the Laser Scan Lens
+Confidential - Company Proprietary
+
+Power Test
+3mm
+Warning do not use a CO2 power meter!
+3mm
+Printed square
+Warning ensure you are out of focus!
+Product registration
+Auto/Auto
+Jump speed 20,000
+Mark speed 1
+Jump delay 0
+Mark delay 0
+Stroke delay 0
+On delay 0
+Off delay 200
+Marking intensity 100%
+Frequency 20,000
+Q - switch width 2µs
+Q - Switch Width and Frequency affect
+power output (along with Intensity)
+Confidential - Company Proprietary
+
+Beam Source Exchange 1
+Ten Fixing screws ( five on each side )
+• Take out the expansion module first
+• Take off the marking head, but keep the electrical connection established
+• Unlock the ten fixing screws
+• Exchange the beam sources
+Confidential - Company Proprietary
+
+Beam Source Exchange 2
+• Enter the CIP value in the Laser Web - Interface (Power Correction value as a decimal).
+• Start the 60kHz template and check the output power (1,08 Watt).
+• Set in the cross spider and adjust the beam source in x - direction first .
+( Therefore , you might need to loosen the four screws from the fixtures .)
+• Now adjust the y - direction , with two adjusting screws .
+• Tighten the fixing screws and check the x - position - readjust if neccessary .
+Fixtures (4 pcs .) Fixing screws (4 pcs .)
+Confidential - Company Proprietary
+
+CIP Value (Current in Percent)
+• CIP is the actual current value in percent.
+- Value of 0 corresponds to a pump current of 0% and a value of 1 equals 100%.
+- The current value of the nominal power and frequency is specified on the data
+sheet that accompanies the beam source, e.g. Current(CIP) = 46.74%
+Depending on the system, the CIP roughly ranges from 40% to mid - 70%.
+• For the CIP there is a rollover point at which the system can no longer consume
+power. From that point on the power decreases with increasing current.
+• Power Correction value must be entered in Laser Configuration as a decimal value.
+If CIP value on datasheet is 39.74%, then divide by 100 (equals .3974) and round
+up to .40.
+• CIP value comes from Coherent and is necessary to reference the beam source at 1
+Watt (max output power) at 100% Intensity, 60kHz Frequency and 2 microsecond Q -
+switch Width.
+• Power Correction value can be changed after thousands of working hours in order
+to compensate for the power loss due to the aging of the laser.
+Confidential - Company Proprietary
+
+CIP Value (Current in Percent)
+Value as shown on Data Sheet
+that accompanies new source.
+Convert the CIP to a decimal
+and enter in Laser
+Configuration of Web Interface.
+Confidential - Company Proprietary
+
+Beam Source Exchange 3
+• Put in the expansion module.
+• Adjust the expansion module with the four fixing screws and tighten screws.
+• Adjust the expansion module to the expected focal length and lock it with the
+set - screw.
+Fixing screws
+Set - screw
+Confidential - Company Proprietary
+
+Malfunctions and error messages
+• Start up Sequence
+• Malfunctions
+• Error Messages
+• Prints
+Confidential - Company Proprietary
+
+Some Notes
+• Expected lifetime of the laser beam source: 15,000 - 25,000 hours of beam on time (2 year warranty)
+• Power measurement settings :
+Marking Intensity : 100%
+Frequency : 20kHz
+Q - Switch Width: 2µs
+Underneath the lens: approx. 2W (in cw - mode below 1mW)
+• 26A (2,2Volt) measured with amp clamps with power measurement settings.
+• Marking Intensity less than approx . 75%, leads to an unstable marking.
+• Laser On Delay: 7 minutes (after closing the key - switch.)
+System state : ‘Start Laser‘.
+• Default Power Change Delay: 20 seconds or more (can be 70 seconds; if you have change in Intensity setting
+then there will be a delay — including between Indexes if Intensity different between Indexes)
+System state : ‘ Prepare for Marking ‘.
+• After the first marking wait for 2 hours until the beam source runs stable.
+Only neccessary for very high quality requirements and after the system was turned off for several hours.
+It‘s neccessary to warm up the SHG/THG crystals to approx. 40 ° C, in order to achieve optimal conversion and a
+good output power stability.
+Confidential - Company Proprietary
+
+Error Codes from COS
+1. ‘ E00200: Laser not ready ‘: If power supply error or communication error between controller
+and beam source occurs .
+2. ‘ E00202: Laser overtemperature ‘: If error code ‘ Temperature too high‘ or ‘ Temperature heat
+sink laserhead too high‘ or ‘ Temperature laserdiodes too high‘
+is received from the Matrix source .
+3. ‘ E00204: General error ‘: If error code ‘Laserdiode(s)down‘ or one of the other errors is received from
+the Matrix source .
+4. ‘ E00212: Wrong LIC detected ‘: If a wrong LIC is inserted in LIC interface .
+‘ Laser not ready ‘ is the only error code which indicates a possible failure of the
+laser power supply .
+‘ Laser overtemperature ‘ and ‘ General error ‘ are generated, when the beam source fails.
+They are related to the next error codes pages .
+Means the Matrix UV - beam source has to be exchanged .
+Confidential - Company Proprietary
+
+Additional Error Codes from COS
+“ Additional Information: 0x1001 Date, Time, W19512 “
+When this warning is generated, the beam source was in start up process, but is not responding.
+Parallel, the Error: E00200 Laser not ready is generated.
+“ Additional Information: 0x1002 Date, Time, W19512 “
+When this warning is generated, the beam source is not responding, during normal monitoring (after the
+start up). Parallel, the Error: E00200 Laser not re ady is generated.
+“ Additional Information: 0x1100 + Coherent Code, Date, Time, W19512 “
+When this warning is generated, the beam source is defective.
+The Coherent code matches to the Error code lists on the next pages.
+Parallel, the Error “ E00202 Laser overtemperature “ or “ E00204 General error “ is generated.
+Confidential - Company Proprietary
+
+Error Codes 1
+Confidential - Company Proprietary
+
+Error Codes 2
+Confidential - Company Proprietary
+
+Malfunctions and Error Messages 1
+Confidential - Company Proprietary
+
+Malfunctions and Error Messages 2
+Confidential - Company Proprietary
+
+Malfunctions and Error Messages 3
+Confidential - Company Proprietary
+
+Malfunctions and Error Messages 4
+Confidential - Company Proprietary
+
+Update the CMark Software (OS)
+Multiple methods to update:
+1) Web Interface (preferred for Single Core/required for Multi - Core)
+2) XMark Copy Tool (new or corrupt card; Single Core Only)
+3) Manually – Windows Explorer (Single Core Only)
+Confidential - Company Proprietary
+
+Update of the CMark - software (OS)
+( with Web Interface)
+1. Connect to laser system through Web Interface
+Keyswitch must be open or
+“update not possible”
+2. Log In to Service level
+3. From Other drop - down menu select CMark Update
+4. Click on Browse button to navigate to location of desired CMark version .
+Must be a .zip file!!
+5. Click the Upload File button to begin update process
+6. After the system acknowledges the file selected you will be prompted to
+select whether to Inherit Customer Data . If selected, after updating
+CMark on SD card the system will replace Database folder and
+AllPrintBasic /TCL files on SD with customer’s files.
+7. Click Update
+8. When process is complete, you must restart the system in order for
+changes to take effect.
+9. Press Power/Standby button to restart the system.
+Use Primary Configured IP Address (not default or secondary) when loading/backing up CMark.
+Must use Internet Explorer 9 newer or update will fail.
+Some versions of Chrome had file upload bugs. Only use IE!!!
+Confidential - Company Proprietary
+
+Update of the CMark - software (OS)
+(with XMarkCopy Tool)
+The Xmark Copy Tool software is a tool to prepare a new SD - card for a Linux OS and to
+copy the new CMark on the SD - card.
+This is only neccessary for a non - prepared card!!!
+A CMark - update can also be carried out in the laser Web I nterface ( only for prepared cards).
+During the preparation and copying process the following steps are carried out:
+1. Formatting of the SD - card
+2. Master boot record is written
+3. Unpack files and copy them into the local folder
+4. Copy the files from the local folder on the SD - card
+5. Verify each folder and each file binary
+6. Delete local folder
+7. Eject SD - card
+- Expected update time: not longer than 30min.
+- Use 1GB sized SD - cards from Transcend (industrial grade)
+Confidential - Company Proprietary
+
+Update CMark - software
+(with Xmark Copy Tool)
+1. Switch off the key switch by turning it to the vertical position. Remove the key to ensure laser
+system cannot be switched on.
+2. Press the push button Standby. Blue light will illuminate when in Standby mode.
+Do not proceed until laser is in Standby mode!
+3. Open the supply unit cover and locate the SD card.
+4. Remove the SD card by gently pushing in to release and then pulling card out.
+5. Insert SD card into card reader on PC.
+6. Install XMarkCopyTool.exe and start the software
+Confidential - Company Proprietary
+
+Update CMark Software
+( Xmark Copy Tool (2)
+7. Click on the Select File button
+8. Select and open the desired CMark version (must be a zip file) from a directory on your PC.
+9. Click the arrow next to Destination and select the drive with SD card inserted.
+Important: Drive cannot be
+named “D”
+Must rename to letter other
+than “D”
+Confidential - Company Proprietary
+
+Update Cmark software
+( Xmark Copy Tool (3)
+10. Click on the Start button. You will be asked to name backup file. Rename if desired.
+Please note that the upload process
+may take a couple of minutes.
+Do not cancel the process!
+11. After the process has been carried out successfully, the following message is displayed
+12. Confirm the message by clicking OK button.
+13. Close the software by clicking the Close button in the File menu.
+14. Insert SD card back into its holder on Chameleon board.
+15. Turn power on to laser system and allow system to boot.
+Confidential - Company Proprietary
+
+Manual Update of the CMark - software (OS)
+➢ Requires card to have been prepared (i.e. bootloader installed)
+➢ Must backup customer files before updating CMark (Database, AllPrint Basic,
+tcl scripts)
+➢ Extract zipped CMark to SD card
+➢ Replace customer - specific files to SD card after update.
+Confidential - Company Proprietary
+
+Manual Update of the CMark - software (OS)
+Confidential - Company Proprietary
+
+Thank You
+Confidential - Company Proprietary
+
+QUUU????9++++222?01Y%#".5##".'##".5463323>332q0%$00""0/%$06-.B0 "
+&4
++
+S@23222i@&&-e&ehh???99?/3/99//9901%#".''#"&&67&&66327>32?+18 5$->>7/61,39e0$L#+$
+I!IL??9?01Y#".'.54>327>32'C65C&1%
+0w9/+2,7+9+4#%a%E+CUX@%&%L@H'L'@K?+2?+2/99//01_^]^]@%%L@H'L'@K?+2?+201_^]^]Y%#!"&554>7!"&54>3!2!2N!`g
+&+*
+'3m*.?.!'-@'...+!!~??9/93]22/9/32201%###".55!".54>7>3232#3m@&&!2%*6"@""aaI1C8V1$,$,@44.1H@H/
+ ??/01#".'&&54632326546326T<
+""#$R##"x50#/5
+y;H@#.$/#//#08"/##5
+
+/#&:
+$:
++???9/99??01Y%#".'##".'&>323>323>32,C36C%/&B4<H'F72
+&_"
+"15
+#U8*E7
+HIX++????9999???9/01#".#"32###"&'&54>3232>7!32>32#".54>7#"&54>337>32!7>32 /"=[|P:R!."mT&
+HIX++???9901%#".7!32>32#".54>7#"&54>337>32!2#".7>321%$0oT&
+.L3SG>!3&%/ l_"qMb|KHIX+CUX-
+JKX++?]q+]q+?9/?9?9/2399}01#".'&54>3232>7667#".54>3276632&&#"32>72U|U>3%&8
+HIX++??99//3301#".7>32#".54>76632+
+D7
+T%*"%08x|WI9-I9-pn"3+
+TUDEX+?33?39/3232339=/3301#"&7#"&'#"&76633266332Z'85#i#2'Pi
+TUDEX+?3?339/9=///33333301#".'#".'&76632>32>32-"%/ 1$&-3/5$' '-"1m''''''333333 +KKKKKKKKKKKKKAAAAAAghhhwOOOOOOOOOOOOGGGGzzzzzzzzzzzXXXXXXNNNNNNNNNNNNN2222nGGGGK&&&_ > > > > >!!!!!!!!"
+
+pN^@,!:0>1S-'+X@D%$D&%@H
+RAweO>: 9N[d3+
+0

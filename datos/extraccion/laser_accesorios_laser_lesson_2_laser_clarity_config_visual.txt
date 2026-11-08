@@ -1,0 +1,918 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\Lesson 2 Laser Clarity config.pdf
+# cifrado=False bloques=27 caracteres=29256
+
+Lesson 2 – Clarity Configuration Manager
+Table of Contents
+Introduction 2 - 2
+Objectives 2 - 2
+2 .1 Activities 2 - 2
+2 .2 Installing Configuration manager 2 - 3
+2 .3 Connecting to Configuration using Ethernet 2 - 4
+2 .4 Saving Changes to CLARiTY 2 - 6
+2 .5 Archiving CLARiTY Configuration 2 - 6
+2 .6 Loading Saved Archive 2 - 6
+2.7 Advanced Passwords 2 - 7
+2 . 8 CLARiTY Configuration manager Menu 2 - 9
+2.9 Shift Codes 2 - 20
+2.10 Webserver 2 - 21
+
+Lesson 2 – Clarity Configuration Manager
+Introduction
+❑ This lesson will provide the participants with Clarity Configuration
+Manager hands on training.
+❑ Caution: Close clarisoft and Clarity Configuration software
+should not be opened at the same time.
+Objectives
+❑ Installing software
+❑ Describe the print parameters settings used in the configuration software.
+❑ Demonstrate the ability to upload/and down load changes to the printer .
+❑ Demonstrate the ability to create codes and shifts parameters.
+❑ Demonstrate the abilit y to archive the printer.
+□ Printing on substrate .
+Activities
+□ Understanding how t o edit parameters.
+□ Using the a rchive features in configuration manager.
+The following is a list of references & materials for this topic.
+References &
+Materials
+❑ CLARiTY Pod T raining Guide
+❑ CLARiTY Pod Technical Guide
+❑ CLARiTY Pod PPT
+❑ CLARiTY Pod
+❑ Laser
+❑ substrate
+❑ Ethernet cable ( crossing )
+❑ CLARiTY Configuration Manager CD
+2 - 2
+
+2.1 Installing the CLARiTY Configuration Manager
+To install the CLARiTY Configuration Manager on a PC, insert the CLARiTY Configuration
+Manager CD - ROM. The installation routine commences automatically. Follow the on - screen
+instructions to install the software.
+If your PC has the auto run facility disabled, the installation routine will not start automatically.
+To enable the installation procedure, proceed as follows:
+Step 1 Click the Start button.
+Step 2 Click the Run button to open a dialog box.
+Step 3 Type “D: \ setup.exe” in the dialog box and press enter/return key.
+Note: D: is the drive letter of the PC's CD - ROM drive. If it is different for your PC, replace the
+letter D with the appropriate drive letter. The software is installed in the PC and is ready for use.
+2 .2 Connecting the CLARiTY Configuration Manager to the
+Printer
+To connect the CLARiTY Configuration Manager to the printer, proceed as follows:
+Connecting CLARiTY Configuration Manager to the Printer using an RS 232 connection
+Step 1 Connect the PC serial port to the CLARiTY controller using the null - modem cable.
+Ensure that all other programs (such as, Active sync and other PDA applications) that use the
+serial port are disabled.
+Step 2 Run the CLARiTY Configuration Manager on the PC (Figure 5 - 1 ).
+Figure 2 - 1 : CLARiTY Configuration Manager
+Step 3 Ensure that the printer status panel (at the bottom left of the window) reports the message
+"Connection Active" and the new printer icon turns green. If the status displays "Not connected",
+disable or quit the other applications running on the PC that are using the serial port. Check that
+the baud rate settings on the Configuration Manager matches with the printer’s baud rate.
+Step 4 Click the Upload button. The progress of the operation is displayed in the status pane.
+This uploads the printer parameters set to the PC. The list of folders containing the configuration
+2 - 3
+
+parameters appears in the parameter listing (in the right hand frame of the Configuration
+Manager).
+2 .3 Connecting the CLARiTY Configuration Manager to the
+Printer using an Ethernet cable
+Connecting the printer to CLARiTY Configuration Manager via Ethernet requires the following
+To connect the CLARiTY Configuration Manager to the printer, the following settings have to
+be done on the PC ethernet port and printer’s ethernet port:
+PC • A correct Ethernet cable: - If connection is being made directly between the PC and the
+printer a crossed Ethernet cable must be used - If the connection is being made via an office
+LAN or Ethernet hub, then an ordinary uncrossed patch cable is required
+• Correct configuration of the PC ethernet port
+• Correct configuration of the printer’s ethernet port
+The PC Ethernet port must be set up to connect at a specific IP address. If you are connecting via
+an office LAN, consult with your IT manager before assigning IP addresses to your PC. If you
+are making a direct connection, you may specify any IP address.
+Step 1 Open the PC Ethernet port properties and modify the TCP/IP not to assign an IP address
+automatically. Then specify the new address (for example 10.27.55.130 in Figure 5 - 2 and the
+subnet mask (Usually 255.255.255.0).
+Figure 2 - 2: IP Address Settings on the PC
+Step 2 Click OK to apply the settings.
+Printer (Coder) Ethernet Port
+2 - 4
+
+Step 3 Connect the CLARiTY Configuration Manager to the printer using an RS232 connection
+and upload the printers parameters.
+Step 4 Locate the TCP/IP configuration parameters as shown in Figure 5 - 3.
+Figure 5 - 3 : Printer Settings
+Step 5 Set the Binary Comms Network Port parameter to 3001.
+Step 6 Set the IP address to be in the same range as the PC port (for example 10.27.55.131 in
+Figure 5 - 3 )
+Note : The printer IP address should not be the same as the IP address of the PC.
+Step 7 Set the subnet mask to match that of your PC port.
+Step 8 Click the Download button to download the parameters to the printer.
+Step 9 Click the New printer icon and change the method of connection to Network. Enter the
+correct IP address and Port number to match the values downloaded into the printer
+Step 10 Click Apply and the new settings are activated and the printer icon turns green
+Step 11 Click the Upload button. The progress of the operation is displayed in the status pane.
+This uploads the printer parameters set to the PC. The list of folders containing the configuration
+parameters appears in the parameter listing (in the right hand frame of the Configuration
+Manager).
+2 - 5
+
+2 .4 Saving the Changes in the Printer
+To make the changes effective, proceed as follows:
+Step 1 Click the printer icon in the left - hand pane to open the printer controls at the bottom pane
+of the window.
+Step 2 Click the download button to update the printer with the changes that you have made to
+the parameters. A dialog box opens with the message “The parameters to be downloaded have
+not been saved to an archive”.
+Step 3 Touch OK to continue with the download.
+Step 4 The new parameters are active when the download is complete.
+Note: Unless steps 1 to 4 are performed, none of the parameter changes become effective in the
+printer.
+2 .5 Archiving the Current Parameters
+The set of parameters can be saved as an archive and are stored on the PC. The archive can be
+loaded into the Configuration Manager and downloaded to the printer again at a later date to
+revert to the archived set of parameters.
+Once the printer has been configured, it is recommended that all the parameters be uploaded into
+the PC, and saved as an archive.
+To archive the current parameters, proceed as follows:
+Step 1 Right click the Archives folder in the left - hand panel.
+Step 2 Select the New Save option from the pop - up menu. A file for the new save appears under
+the archives folder with a name containing the current time and date.
+Step 3 Change the name of the archive in the bottom panel, and click the Apply button.
+2 .6 Loading a Saved Archive
+To load an archive that was saved previously, proceed as follows:
+Click the printer icon from the left - hand panel and click the Download button to load the archive
+of parameters to the printer.
+Step 1 Locate the archive in the left panel and right click on it.
+Step 2 Choose Load from the pop - up menu. The archived parameters are displayed on the right -
+hand pane.
+2 - 6
+
+2 .7 Advance d Passwords
+CLARiTY Configuration Manager has a default administrative password. This protects certain
+parameters from change. To change the administrative password navigate to Advanced passwords >
+Change Admin Password. The Default password is password .
+2 . 7.1 How to Save the User Password changes in the printer
+Do the following tasks to make the changes effective:
+1 Click the Printer icon in the left - hand pane to open the printer controls at the bottom pane of the
+window.
+2 Either select ‘Update Passwords on Download’ to update the passwords when changes are
+downloaded to the printer or select ‘Update Passwords’ to update the passwords only.
+2 - 7
+
+2. 7 . 2 User Interfaces>>Passwords
+Enable Passwords: Enables or disables password protection.
+CLARiTY® has five different functions that may be optionally password
+protected:
+• Job Select
+• Registration
+• Set - up
+• Diagnostics
+• Databases
+Password control can be set up as per the user requirement. The password
+level remains active until logged out by the user or timed out.
+• Standard (normal) Passwords: This is a general password setup where
+the printer function is protected by a common password for the level
+of user.
+• Advanced Passwords: This is a fully configurable option that allows
+individual users to be setup for bespoke access either as an individual
+or part of an access group with individual passwords.
+If enabled, the 3 levels of passwords must be set up using the following 9 parameters.
+Last Update:
+Level 1: Mask Check which functions are to be available to Level 1 users
+Level 1: Name The name of a level 1 user e.g. Operator
+Level 1: Password The password for level 1 (numeric only) User Interfaces Passwords
+Level 2: Mask Check which functions are to be available to Level 2 users
+Level 2: Name The name of a level 2 user e.g. Supervisor
+Level 2: Password The password for level 2 (numeric only)
+Level 3: Mask Check which functions are to be available to Level 3 users
+Level 3: Name The name of a level 3 user e.g. Technician
+Level 3: Password The password for level 3 (numeric only)
+Advanced Pass words
+2 - 8
+
+2 . 8 Clarity configuration manager Menu
+See Table 2 - 5: Printer Configuration Manager
+Note: always upload first when going from one printer the another in order to avoid transferring
+the wrong printer parameters to another printer.
+2 - 9
+
+2. 8 .1 Parameters
+Value Description
+Name
+Availability
+Event Log
+Progress
+0 - 3 Allows laser system availability
+Value
+calculation to change between
+user selected operating modes that
+is either ‘running’ or ‘laser
+system - on’ mode. Proxy choice
+ensures the calculation of
+availability matches the operating
+mode of user. The operational
+availability column in the Avail -
+ability page.
+Status
+0 - 3
+Value
+2 - 10
+
+Petro Collection
+0: Sort By Downtime Allows the user to sort the list
+Sort By
+based on laser system downtime
+1: Sort By Frequency
+or fault frequency.
+Devices
+PHds
+1
+Configuration
+0 - 360 To compensate the product
+Angle
+movement during the marking
+process the angle between the
+marking head of the laser system
+and the direction of product
+movement have to be defined.
+Sets the distance in between
+Consecutive
+produces on materials like wire.
+Delay
+After the start trigger pulse the
+Consecutive
+product covers the distance a until
+Distance
+the marking process is started,
+which is the distance between the
+center of the marking field of the
+laser system and the center of the
+marking on the product.
+0: auto Defines how the laser will be
+Consecutive
+triggered.
+1: trigger 1 raise
+Trigger Source
+2: trigger 1 fall
+3: trigger 2 raise
+4: trigger 2 fall
+5: trigger 3 raise
+6: trigger 3 fall
+7: program
+Defines the distance the product
+Distance Per
+covers with one full turn of the
+Rotation
+incremental
+encoder.
+Select yes if no encoder
+Fixed Speed
+available.
+0 - 360 Allows the user to change the
+Mounting
+position of the marking on your
+Position
+product.
+States the number of pulses the
+Pulses Per
+incremental encoder emits when
+Rotation
+performing one full turn.
+0: left Defines the direction of rotation
+Rotation
+of the incremental encoder.
+1: right
+2 - 11
+
+Direction Monitor 2: none It is used e.g. to cut out signals
+that derive from slipping of the
+conveyor belt. You can select
+clockwise or counterclockwise
+rotation. Select »None« to turn the
+detection of the direction of
+rotation off.
+Start Delay defines the time until
+Start Delay
+the marking process is started,
+which is the distance between the
+center of the marking field of the
+laser system and the center of the
+marking on the product.
+Defines the distance until the
+Start Distance
+marking process is started, which
+is the distance
+between the center of the marking
+field of the laser system and the
+center of the marking on the
+product .
+0: auto Defines how the laser will be
+Start Trigger
+triggered.
+1: trigger 1 raise
+Source
+2: trigger 1 fall
+3: trigger 2 raise
+4: trigger 2 fall
+5: trigger 3 raise
+6: trigger 3 fall
+7: program
+Defines the time settings for a
+Stop Delay
+trigger pulse that stops the
+marking process.
+Defines the distance until the
+Start Distance
+marking process is started, which
+is the distance
+between the center of the marking
+field of the laser system and the
+center of the marking on the
+product .
+0: auto Defines the settings for a trigger
+Stop Trigger
+pulse that stops the marking
+1: trigger 1 raise
+Source
+process.
+2: trigger 1 fall
+3: trigger 2 raise
+4: trigger 2 fall
+5: trigger 3 raise
+6: trigger 3 fall
+7: program
+0: No Product Here you select the product
+Type
+movement used.
+Movement
+1: Fixed Speed
+2 - 12
+
+2: Encoder
+Line Setup
+Line Speed
+Defines the distance the product
+Distance
+covers with one full turn of the
+Per Revolution
+incremental encoder.
+States the number of pulses the
+Pulses Per
+incremental encoder emits when
+Revolution
+performing one full turn.
+Position
+Orientation
+Allows the user to enter the angle
+Job
+precisely from 0 to 359 degrees.
+Orientation Manual
+Allows the user to enter the angle
+Laser
+precisely from 0 to 359 degrees.
+Position Manual
+Allows the user to set the
+Line
+direction of Job relative to the
+Movement
+laser head. Select line movement
+where product moves from left to
+right or from right to left or is
+Static (no line movement).
+Sets the side of the product that
+Product Side
+needs to be marked. The red color
+Selection 1
+indicates the side on which the
+marking happens.
+Sets the side of the product that
+Product Side
+needs to be marked. The red color
+Selection 2
+indicates the side on which the
+marking happens.
+Trigger
+Settings
+If No Product Movement is
+Blocking
+selected, then the blocking defines
+Trigger Delay
+the time that the product has to
+pass after a start trigger until a
+next trigger is accepted.
+Blocking defines the distance the
+Blocking
+product has to cover before the
+Trigger Distance
+next marking can be started.
+Defines the distance until the
+Start
+marking process is started, which
+Trigger Delay
+is the distance
+between the center of the marking
+field of the laser system and the
+center of the marking on the
+product.
+2 - 13
+
+Defines the settings for the first
+Start
+trigger pulse. The marking
+Trigger Distance
+process is started
+by the first trigger pulse.
+Allows the user to select one of
+Trigger
+the following settings to
+Mode
+determine the trigger for the
+product marking:
+External Rising : Select the
+trigger mode as External Rising if
+the trigger pulse is to be given by
+the product that is entering the
+product detection zone. External
+Falling: Select the trigger mode
+as External Falling if the trigger
+pulse is to be given by the product
+that is leaving the product
+detection zone. Internal Once : If
+Internal once is selected then
+marking is started on selecting the
+start button.
+Internal Continuous : If Internal
+Continuous is selected then
+marking is continuous and can be
+stopped manually.
+Note: The default value is
+External Rising.
+Note: If the line direction is static,
+then all the four modes are
+available, else only External
+Rising and External Falling
+modes are available.
+Imaging
+CLARiTY Data File
+0:ACSII Defines which character set will
+Character Set
+be used.
+1:UTF8
+2:UNICODE
+Date Codes
+<1>, <2>, <3>, - <31>, Allows the setting of unique
+Day of the Month
+special codes for each day of the
+Codes
+month. It is a global setting for the
+printer and all layouts that
+reference a day of month code
+will print these values.
+<A>, <B>, <C>, - <D>, Allows the setting of unique
+Day of the Week Codes
+special codes for each day of the
+<E>, <F>, <G>
+week. It is a global setting for the
+printer and all layouts that
+2 - 14
+
+reference a day of week code will
+print these values.
+<1>, <2>, <3>, - <24>, Allows the setting of unique
+Hour Codes
+special codes for each hour of the
+day. It is a global setting for the
+printer and all layouts that
+reference an hour of day code will
+print these values.
+<1>, <2>, <3>, - <60>, Allows the setting of unique
+Minute Codes
+special codes for each minute of
+the day. It is a global setting for
+the printer and all layouts that
+reference an minute of day code
+will print these values.
+<1>, <2>, <3>, - <12>, Allows the setting of unique
+Month Codes
+special codes for each month of
+the year. It is a global setting for
+the printer and all layouts that
+reference a month of year code
+will print these values.
+<1>, <2>, <3>, - <52>, Allows the setting of unique
+Week of Year Codes
+special codes for each week of the
+year. It is a global setting for the
+printer and all layouts that
+reference a week of year code will
+print these values.
+<1>, <2>, <3>, - <31>, Allows the setting of unique
+Year of Decade Codes
+special codes for each year of the
+decade. It is a global setting for
+the printer and all layouts that
+reference a year of decade code
+will print these values.
+Line Selection
+0:NO To enable the line selection
+Enable Line Selection
+mode where printer prints on
+1:YES
+more than one line.
+0:Communications Line Select mode allows the
+Line Selection Mode
+controller to hold multiple jobs in
+1:Binary Inputs
+RAM, which in turn allows the
+2:Binary Hot Bit
+user to select the jobs for printing.
+Inputs
+Line selection mode allows up to
+16 jobs to be configured on the
+printer.
+2 - 16 No. of lines
+Number of Lines
+Printhead Mapping
+1 Not used – always set to map
+Printhead1
+printhead 1 to number 1
+2 - 15
+
+2 Not used – always set to map
+Printhead2
+printhead 1 to number 1
+3 Not used – always set to map
+Printhead3
+printhead 1 to number 1
+4 Not used – always set to map
+Printhead4
+printhead 1 to number 1
+Printer Codes
+0 - 255 Allows the setting of a unique
+Equipment Reference
+special code for the production
+Machine ID. It is a global setting
+for the printer and all layouts that
+reference a Machine ID code will
+print this value.
+0 - 255 Allows the setting of a unique
+Factory Reference
+special code for the Factory ID. It
+is a global setting for the printer
+and all layouts that reference a
+factory ID code will print this
+value.
+0 - 255 Allows the setting of a unique
+Line Reference
+special code for the production
+Line ID. It is a global setting for
+the printer and all layouts that
+reference a Line ID code will
+print this value.
+0:NO When using a sequence of print
+Reset Print Limit on Startup
+images, this parameter forces the
+1:YES
+sequence to reset back to the start
+when the printer goes offline.
+Shift Codes
+0 - 168 The number of shifts per day.
+Number of Shifts
+- 23:59 to +23:59 Sets the start of the day when all
+Start of Day
+automatically calculated date
+codes change eg the factory ‘day’
+can be set to start at 2.00am or
+6.00am.
+- 167:00:00 to
+Start of Hour of Week
++167:00:00
+ABCDEFGHIJ
+Time Code Encryption
+Update Queue
+1 - 20 Sets the limit on the number of
+Max Queue Length
+jobs that can be in the selection
+queue when Allocation printing is
+enabled.
+System
+2 - 16
+
+Com Port 1
+0: 110 Sets the baud rate of serial comm
+Baud Rate
+port (default 115200).
+1: 300
+2: 600
+3: 1200
+4: 2400
+5: 4800
+6: 9600
+7: 14400
+8: 19200
+9: 38400
+10: 56000
+11: 57600
+12: 115200
+0:None Sets hardware or software
+Flow Control
+handshaking (default none).
+1:Software
+2:Hardware
+0:None Sets the protocol running on the
+Usage
+port (None, Simple ASCII
+1:Text
+comms, CLARiTY comms -
+Communication
+default).
+2:CLARiTY
+0:Local Is the layout database local in the
+Database Location
+printer, or remote, accessed via
+1:Remote
+CLARiNET.
+0:NO Decides whether the printer Test
+Enable User Test Print
+Print function is available from
+1:YES
+the CLARiTY home screen.
+0:Product Code Selection of job by product code
+Job Selection Mode
+(default) or tiered job selection
+1:Tiered
+(via CLARiNET).
+Lodging
+0:NO
+Include Job Events
+1:YES
+0:None In Normal logging mode, the log
+Logging Mode
+entries are deleted if there are
+1:Normal
+over 500 log entries and older
+2:Advanced
+than 90 days. In Advanced
+logging mode, entries must be
+archived to a USB stick before
+logs will be deleted.
+Power Saving
+0:None None= User interface will not dim
+Mode
+when power is applied. Minimal
+1:Minimal
+=User interface will dim after 1
+2:High
+minute of inactivity. High= User
+3:Full
+interface dims after 1 minute of
+2 - 17
+
+inactivity. User interface turns off
+after a further 14 minutes of
+inactivity. Full=User interface
+dims after 1 minute of inactivity.
+User interface turns off after a
+further 14 minutes of inactivity.
+Service Information
+0 to 99 characters Allows the user to enter the laser
+Address Line 1
+system location address.
+0 to 99 characters Allows the user to enter the laser
+Address Line 2
+system location address.
+0 to 99 characters Allows the user to enter the laser
+Address Line 3
+system location address.
+0 to 99 characters Allows the user to enter the laser
+Address Line 4
+system location address.
+0 to 99 characters Allows the user to enter the laser
+Customer Name
+system customer’s name.
+0 to 99 characters Allows the user to enter the laser
+Printer Location
+system location address.
+0 to 99 characters Allows the user to enter the laser
+Serial Number
+system serial number.
+0 to 99 characters Allows the user to enter the laser
+Telephone Number
+system VJ service number.
+0:NO Select yes to show the job
+Show Job Description on
+description if provided for the
+1:YES
+Home Screen
+print job.
+TCPIP
+3001 Set to Zero if Ethernet is not
+Binary Comms Network
+being used, otherwise it is set to
+0 to 256000
+Port
+the Ethernet Port which is default
+3001.
+192.168.1.0 A default gateway is the node on
+Default Gateway
+the computer network that the
+network software uses when an IP
+address does not match any other
+routes in the routing table .
+192.168.1.1 IP address of the printer on an
+IP Address
+Ethernet network.
+255.255.255.0 Ethernet network subnet mask.
+Subnet Mask
+Text Communication
+0:Normal Selection of job by product code
+Job Selection Mode
+or tiered job selection (via
+1:Selection Per Print
+CLARiNET)
+0 to 256000 Set to Zero if Ethernet is not
+Network Port
+being used, otherwise it is set to
+the Ethernet Port.
+2 - 18
+
+Text Comms Async
+Notification Enable
+ZipherASCIIComms Name of the xml file defining the
+Text Comms Parameter File
+text comms protocol. Default
+Protocol.xml
+ZipherASCIICommsProtocol.xml.
+USB
+0:NO Select yes to prompt if printer
+Prompt on CLARiTY Data
+detects a CLARiTY Data file on
+1:YES
+File Detect
+the USB.
+0:NO Select yes to prompt if printer
+Prompt on CLARiTY
+detects a CLARiTY archive file
+1:YES
+Parameter Archive Detect
+on the USB.
+0:NO Select yes to prompt if printer
+Prompt on CLARiTY
+detects a CLARiTY printer clone
+1:YES
+Printer Clone Detect
+file on the USB.
+0:NO When a USB memory stick is
+Prompt on CLARiTY
+inserted and USB is enable,
+1:YES
+Update Detect
+CLARiTY automatically runs the
+CLARiTY update if there is a
+valid file on the stick. When the
+USB is disable, the user has to
+manually initiate the action from
+the CLARiTY screen.
+User Interface
+CLARiTY
+English Sets the active language being
+Language
+used by CLARiTY.
+0:Metric Select units - inches or mm
+Measurement Units
+1:Inches
+Passwords
+0:Disable Enables or disables password
+Enable Passwords
+protection. If enabled, the 3 levels
+1:Normal
+of passwords must be set up using
+2:Advanced
+the following 9 parameters.
+0:NO Allows the user to recalibrate the
+Recalibrate
+touchscreen, if touching the
+1:YES
+Touchscreen
+screen does not accurately locate
+the correct CLARiTY button or
+Icon.
+Quick Position Edit
+0:Disable To reposition the individual fields
+Enable
+in a printing job, the user can use
+1:Enable
+the ‘Quick Position Edit’ feature.
+2 - 19
+
+Touch to Edit
+0:Disable To update and change user fields
+Enable
+quickly and easily in a printing
+1:Enable
+job, the user can use the ‘ Touch
+To Edit ’ feature.
+CLARiTY Config
+Laser 1 Flags whether this setup has ever
+Archive
+been archived (auto set).
+12/25/2018 Flags when the setup was last
+Last Update
+changed (auto set).
+Web Server
+0:NO Allows the coder to be monitored
+Enable
+and controlled using internet
+1:YES
+explore from a window based PC
+or controller.
+2. 9 Imaging>> Shift Codes
+Number of Shifts: The number of shifts per day
+Shift number: For each shift, you can set a shift start time and identify the days of the week that
+shift runs on e.g. you can exclude weekends. Each shift can be given a unique code which is
+printed whenever the layout demands a shift code. The printed shift code automatically changes
+to the time pattern entered in this parameter
+Start of day : In CLARiTY Config, positive (+) values will print the current date until the
+specified time then roll forward to the next day. If you set the Start of Day value for +05:00:00
+the coder will print the current date until it reaches 5:00 AM and then roll over to the following
+day’s date.
+Negative values ( - ) will print the previous day’s date and roll over to the current date at the
+specified time. Negative values are subtracted from midnight, i.e. a Start of Day value of -
+05:00:00 is five hours before midnight, or 7:00 PM. The coder will print the previous day’s date
+until it reaches 7:00 PM then roll over to the following date.
+2 - 20
+
+2 .1 0 Web server exercise lab
+2 .1 0 .1 Enabling Web Server on the Printer
+Connect to printer using Clarity Configuration Manager, and Upload settings.
+1. Expand the UserInterfaces Folder.
+2. Expand the WebServer Folder.
+3. Change the Enabled setting to Yes and select Apply.
+4. Download changes to the printer.
+2 - 21
+
+2 .1 0 .2 Finding the printers IP number on the controller
+Go to tools/ diagnostics/ control/ communications/ TCP/IP
+Record the IP address of the printer example 10.0.0.150
+Note this can also be found using configuration manager
+2 - 22
+
+2 .1 0 .3 Setting your PC’s IP address
+Note: this procedure is done assuming you know what the Printer IP address is 10.0.0.150.
+Click start
+Click control panel or connect to
+If you choose control panel click network connections, if you choose connect to click show all
+connections.
+Select local area connection
+Under local area connection properties/general tab/this connection uses the following items
+select TCP/IP
+Click properties
+Under internet Protocol (TCP/IP)/general select use the following IP address
+2 - 23
+
+The following tab should appear general .
+Select: use the following IP address
+Under IP address: type in 10.0.0.15?.(your desired number)
+Type in the following subnet mask 255.255.255.0
+Under internet Protocol (TCP/IP)/general click the OK button
+Under local area connection properties/general tab
+PC IP configuration is complete
+2 - 24
+
+2 .1 0 .4 Logging into the web server
+Note: if you are having trouble getting logging in IP address
+Note: in the setting PC IP address example above we used an IP address of 10.0.0.154
+You will need to turn the printer on and connect a crossover cable from you PC the Dataflex
+printer.
+Click on the internet explore icon
+Enter the laser’s IP address 10.0.0.150
+Click go or press enter
+The Next Screen will show Clarity initializing the module and then display the User Interface of
+the WebServer.
+2 - 25
+
+The web server screen will appear on your PC.
+The Web Server is now active, and using the mouse, messages may be selected, as if you were at
+the Clarity Interface of the printer.
+This feature allows the printer to be controlled via a PC/Packaging machine operating Internet
+Explorer
+2 - 26
+
+:cvt d`TfpgmmYSFdYglyfc~p`headl@6hheaMz$$hmtxA^locaoT_8$maxpH metaa,`namen.6post$d prep2P"If_<`t^Q!EWt^bM>@53%3f.x[TMC @ F3!@L 9DT.%nS9J,S bXLQ9%V"VJ#*s!H#3*"
++9=?AYa17@ " / D"%cew="uvw@Wtsrqponmlkjihgfeb]UTON@?>=<;:9876543210/.-,+*
+3://$$Y!"!#3$,5+$"
+&3/13#&3413'
+UU@!U"0@U@UU%$%1!++N]+++]q<M+++<?]q?<999++10Cy@;;+<+qr]]qll?+2?+9/01Y5!#"#"&54763232654'&'&#E1S&Ct^l!, 3'$/ +0'%%1 zi]<1*[6BTg!"LC+X@{lu{v0y5z6mE.d66Ue@@3C2222*%/?O44053@B@PE@B344204T24CTX@!/"<ED00'
+'=::
+'%%%4 r}*%%4 rL'+X@K@O5'-8x""!"!!"!#!#""""@'@S 0@UUU
+&
+&,3
+:Ly%#%'2#2'E#E''
+99+++++++YY]l??3+2901Y#&'&&'5!654&'&'5H%5
+/
+'4@5@U56',?//?+99/++++++++2+/++++++10+CTX@X4U5U '456,'UUUUUU87!U!U!U!-U-U-U--879/++++++9/++++++//??9910++@/8@*58`]6%&88888+P8`8p88@8
+@UUUU@UUUUUU@U
+AV8$$<U@G#p0W+XCTX@Y@UY@UUUL0U0U0@U0+U+17FUFUF@!UFAGAUAUAUALULULULUL@ULUL+U+U+7@U7U7@U7U7@U7U7U7UU @U 0U @U *U @U U @U /2EH@ GTU@U/UOUoUUUVG1%,<,??///?]]+/+++++++++/+++++++++/+++++++++++++++++10++CTX@<%,<,TUV1GU U +U+U+7AUAUAL U X7U7U7U77XLULULULLYX9/+++9/+++9/+++++++///???10KTXFE/08888888Y@4YYY`]6+Y
+U @U U @U UUUUU$@% ,U/+??99?/+++++/+++++10+CTX@W@`p $%%,UUU UUU& U U &UUU'&9/+++9/++9/++++++???99?]10@5'`]6 '`'p''47: HH O'#!O%'#'AD %E@%%,! g@p@%$P `&+N]qr<M<]q<<<<?<?<<<99++10Cy@+<+]]+YY$l%l?+??3+201Y327#5#"&&54&&5!32674&'5c!'-v|EMq,7HAY?+mK9ZG#qBYA2%P6LN7% +XCTX ??/9/10CTX@1"!U*UU U ?+?+?+?+?99/10@SX[5"@a5#"! $ :9:95:JIDEEIi""-"2`4"+14"
+K?gI7tl_G
+$A 0
+>0&&+[3+

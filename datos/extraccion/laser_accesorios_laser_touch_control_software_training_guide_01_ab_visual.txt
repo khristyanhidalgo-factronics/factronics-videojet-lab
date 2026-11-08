@@ -1,0 +1,1860 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\Touch Control Software+ Training Guide_01_ AB.pdf
+# cifrado=False bloques=114 caracteres=86285
+
+Touch Control Software+
+Training Guide
+Touch Control Software usage for Videojet Lasers
+Revision: AB 5/23/2018
+
+Touch Control Software+ Training Guide
+Copyright 2018, Videojet Technologies Inc. (herein referred to as Videojet). All rights reserved.
+This document is the property of Videojet Technologies Inc. and contains confidential and proprietary information owned by
+Videojet. Any unauthorized copying, use, or disclosure of it without the prior written permission of Videojet is strictly prohibited.
+Revision Date Changes
+AA 1/5/2017 Initial Version
+AB 5/23/2018 Updated to Web Based TCS+ . The PC based TCS is now legacy and will no longer be updated.
+Videojet Technologies Inc. Phone : 1- 800- 843- 3610 Offices - USA: Atlanta, Chicago,
+Los Angeles, Philadelphia
+1500 Mittel Boulevard Wood Fax: 1- 800- 582- 1343
+Dale, IL Int’l: Canada, France, Germany,
+Int’l Fax : 630- 616- 3629
+Ireland, Japan, Spain, Singapore,
+60191- 1073 USA
+Netherlands, and The United King -
+www.videojet.com
+dom
+Distributors Worldwide
+
+Contents
+Notes & Warnings 5
+Safety 1
+Electrical Safety Guidelines 3
+Compressed Air Safety Guidelines 5
+Medical Emergencies 5
+TU430 Overview 7
+Cable and Connectors 8
+Hot Plugging the TU430 9
+Parts Replacement 10
+TouchUS Hardware (TU420H) 13
+Touch Control Software (TCS+) 15
+Login to TCS+ Over the LAN 15
+Login 16
+Home Screen 17
+Alerts 18
+Global Function Buttons 20
+Activate & Mark Job 23
+Jobs 25
+Create A Job 26
+Edit a Job 30
+Static Text Elements 31
+Date Elements 32
+My Month 34
+Barcode Elements 37
+3
+Rev AB
+
+Touch Control Software+ Training Guide
+Mark Settings and Line Setup 41
+Create a Mark Set 42
+Edit Current Mark Setting 44
+Create Line Setup 46
+System Configuration 51
+IP Address Configuration 51
+Laser IP Change 53
+TU430 Screen Calibration 55
+Users, Roles, & Access Rights 58
+Enhanced User Controls 61
+Enhanced Security Settings 64
+Enhanced Role Management 71
+File Management 73
+Enhanced File Management 73
+File Import & Export 76
+Import a Font into a Laser with TCS 80
+Importing a Graphic into TCS 86
+Backup & Restore 90
+Event log 93
+Exporting the Event Log 99
+Viewing an Exported Event Log Database 102
+Appendices 105
+List of Tables 106
+Index 107
+4
+Rev AB
+
+Notes & Warnings
+Notes & Warnings
+Pay close attention to these statements because they contain important information on avoiding potential hazards to you or to
+the equipment.
+General Information
+Extra information regarding a task or concept above and beyond the basics.
+Care Notes
+Care messages provide information on properly maintaining your equipment to keep it functioning in a state
+that provides Uptime Peace of Mind.
+Cautions Against Unsafe Practices
+Indicates hazards or advises against unsafe practices that result in equipment or property damage.
+Warnings to Prevent Injury or Death
+Indicates danger to you or those around you is possible unless you carry out procedures as directed. Always fol -
+low all warnings and wear any PPE called out in warning messages.
+5
+Rev AB
+
+Safety
+The laser system must only be used for the treatment of material surfaces. The surfaces are locally heated by intensive class 4
+laser radiation and are modified thereby. These systems are mainly applied for marking of product surfaces (expiry dates, batch
+printing, serial numbers, etc.).
+The radiation produced by the laser system is of high energy and therefore improper use represents a danger to persons or
+objects!
+It is the policy of Videojet Technologies, INC to manufacture non- contact printing/coding systems and ink supplies which must
+meet high performance and reliability quality standards. Videojet Technologies, INC enforces strict quality control techniques to
+eliminate the potential for defects and hazards in its products.
+The intended use of Videojet Technologies, INC Laser Marking Systems is to print information directly onto a product. Use of this
+equipment in any other fashion may lead to serious personal injury.
+The safety guidelines provided here are intended to educate all attending the presented course on all safety issues such that they
+may install, operate, service, and maintain the subject printer (s) in a safe manner.
+1
+Rev AB
+
+Touch Control Software+ Training Guide
+Never expose human beings or animals to laser radiation.
+This might result in severe burns of eyes or skin.
+Never expose flammable materials to laser radiation!
+Ensure the laser beam is housed in a shielded enclosure.Paper (circuit diagrams, leaflets, posters on the walls,
+etc.), curtains not treated with flame retardant, wooden boards, or similar flammable materials can easily
+ignite by direct or reflected laser radiation.Install smoke detectors, fire detectors, or similar or similar safety
+equipment to detect fire should it occur.
+Never expose reflective surfaces to laser radiation! The reflected
+laser beam may cause the same dangers - in some cases even
+greater dangers - as the original laser beam.
+Never expose reflective surfaces to laser radiation! The reflected laser beam may cause the same dangers - in
+some cases even greater dangers - as the original laser beam.
+Never expose unknown materials to laser radiation!
+Some materials (e.g. polyethylene, polypropylene, glass) are easily penetrated by the laser beam, although they
+seem to be opaque for the human eye.
+Danger of explosion! Make sure that the laser area is free of flam -
+mable/explosive materials and vapors!.
+Arbitrary modifications or changes to the laser system are forbidden.
+If a modification made by the user to a previously classified laser system leads to a change of its performance
+data and/or its intended use that person or organization performing the modification is responsible for a new
+classification and labeling of the laser system. The person or organization is then regarded as the man -
+ufacturer .
+The laser system must be operated with open laser and/or open
+beam delivery system by specially trained personnel only!
+Observe all laser protection rules.
+Feedback Radiation
+When marking highly reflective material there might be a feedback of radiation into the laser. In this case the
+system switches to fatal error mode.
+A reset has to be carried out to continue: the laser must be switched off and on again.
+2
+Rev AB
+
+Safety
+Electrical Safety Guidelines
+This section explains the safety guidelines related to electrical power supply, electrical cables, fuses, bonding, and grounding.
+Electrical Power Supply
+Personal Injury
+Lethal voltages are present within this equipment when it is connected to the mains electrical supply. Only
+trained and authorized personnel must carry out the maintenance work.
+Personal Injury
+Observe all statutory electrical safety codes and practices. Unless it is necessary to run the printer, disconnect
+the printer from the mains electrical supply before removing the covers or attempting any service or repair
+activity. Non- adherence to this warning can result in death or personal injury.
+Personal Injury
+A high AC voltage is present at the inverter and backlight. Extreme caution is required when diagnosing failure
+in these areas.
+Electrical Cables
+Personal Injury
+Use only the mains power cable supplied with the printer. This cable must terminate in an approved, three-
+pole, mains plug which has a protective ground conductor.
+l The electrical power cables, sockets, and plugs must be kept clean and dry.
+l For pluggable equipment, the socket- outlet must be installed near the equipment and must be easily access -
+ible.
+Personal Injury
+Always inspect the cables for damage, wear, corrosion, and deterioration. Make all grounding/bonding con -
+nections void of areas of paint, ink build- up, and corrosion.
+3
+Rev AB
+
+Touch Control Software+ Training Guide
+Bonding & Grounding
+Personal Injury
+The printer must be connected only to an AC power supply that has a protective ground conductor and must
+be according to IEC requirements or applicable local regulations.
+Personal Injury
+Do not use the printer if there is any interruption in the protective ground conductor or if the protective ground
+conductor is disconnected. The failure to follow this warning can cause an electrical shock.
+Personal Injury
+Always ground conductive equipment to an earthing electrode or to the building grounding system with
+approved cables as per NEC standards in order to drain all potential static discharge. For example, a metal ser -
+vice tray to earth ground.
+Personal Injury
+A resistance reading from the grounded service tray to the equipment chassis or mounting bracket should be 0
+to less than 1 ohm. A resistance check should be made using a safe and reliable ohmmeter and should be
+done on a frequent basis.
+Personal Injury
+The PCBs contain static sensitive devices. A suitably grounded, antistatic wrist strap must be worn when work -
+ing on or handling PCBs.
+Personal Injury
+Always prevent static discharge from occurring. Use proper Grounding and Bonding methods. Only use Video -
+jet approved metallic service trays and ground cables.
+Personal Injury
+Always bond conductive equipment together with approved cables to maintain them at the same potential
+and minimize static discharge. For example, printhead to metal service tray.
+4
+Rev AB
+
+Safety
+Personal Injury
+The Optional Wash Station has been solely designed for the cleaning of the printhead. Do not use it for pur -
+ging or printing operations or for any other purposes. Always ensure that the jet is stopped and that any haz -
+ardous voltages are switched off prior to the commencement of the printhead wash down.
+Possible Equipment Damage
+Always empty the service trays frequently. Some inks and cleaning solutions are flammable. Make sure that
+the waste fluids are disposed according to HAZMAT.
+Fuses
+Personal Injury
+To ensure continued protection against fire hazards, replace fuses only with the specified type and rating.
+Compressed Air Safety Guidelines
+Personal Injury
+Airborne particles and substances are a health hazard. Do not use high pressure compressed air for cleaning
+purposes.
+Medical Emergencies
+In the event of a medical emergency, contact a doctor immediately
+Emergencies Involving Acetone Fluids
+If the incident involves lens cleaning solution, bring the bottle and/or Safety Data Sheet (SDS) with you to the
+doctor’s office. These items contain important information, which the doctor may require in order to provide
+treatment.
+Rocky Mountain Poison Control Center
+(303) 623- 5716
+5
+Rev AB
+
+Touch Control Software+ Training Guide
+Medical Care Outside of the U.S.A.
+Persons outside the U.S.A. requiring medical attention can have a doctor contact the Rocky Mountain Poison
+control Center in the U.S.A. or a poison control center or hospital in their own area.
+6
+Rev AB
+
+TU430 Overview
+TU430 Overview
+The TU430 is a touchscreen for use only with TCS+, which runs only on Multi- Core Chameleon boards. There is no processing on
+board the TU430, so the unit cannot run the legacy, PC- based versions of TCS software.
+Laser units connect to the TU430 through a specialized HDMI connector and cable which carry both signal and power for the
+touchscreen.
+Possible Equipment Damage - Powered HDMI Port
+Never plug a standard monitor into the laser HDMI port as voltage at the HDMI port will damage the monitor.
+TU430 is a passive display to interface with the TCS+ program running on the Quad Core Chameleon board. You can calibrate
+the TU430 touchscreen via the TCS+ software. See "TU430 Screen Calibration" on page 55 .
+There are two versions of the TU430:
+l AL- 78550 - TU430 for 3x40 CO2 lasers. Requires a port on the supply unit for connection (AL- SP78053).
+l AL- 78185 - TU430 for 7510/7610/7810 fiber and UV lasers. Modifications to the cable allow for connection and grounding
+inside supply unit. No external port is necessary.
+7
+Rev AB
+
+Touch Control Software+ Training Guide
+Cable and Connectors
+The cable for the TU430 is replaceable but note that it does not utilize a quick disconnect at the screen side. The cable connector
+has an IP65 housing for use with 3140/3340/3640 laser units. The cable connector fits into a connector on the rear of
+3140/3340/3640 supply units.
+F IGURE 1- 1: (Left) Cable from TU430 with IP65 housing installed. (Right) Connector for TU430 on supply unit of 3x40 laser.
+The IP65 housing is incompatible with 7510/7610/7810 lasers as the connector fits directly onto connector on Chameleon. The
+IP65 cover prevents the cable from fully inserting to the connector on the board. The AL- 78185 part number for TU430 is spe -
+cific to 7510/76107810 fiber and UV lasers. There is no housing on the connector and the cable is stripped so that applying a
+cable tie to hold the stripped portion against the grounding bar inside a 7510/7610/7810 supply unit creates a shield ground.
+8
+Rev AB
+
+TU430 Overview
+F IGURE 1- 2: HDMI connection on 7510/7610/7810.
+Hot Plugging the TU430
+So long as no external USB memory drive is plugged into the TU430, you may hot plug or unplug the unit from the laser at any
+time. However, if a USB drive is plugged into the TU430 hot plugging may cause file corruption on the USB memory drive.
+While a USB memory drive is inserted, only plug/unplug the TU430 connector at the laser when the system is off or in Standby
+mode.
+9
+Rev AB
+
+Touch Control Software+ Training Guide
+Parts Replacement
+The cable, ChamTouch, and USB caps on the TU430 are replaceable. The display screen and outer stainless steel housing are not
+replaceable on their own. Damage to these components requires a replacement of the TU430 unit.
+Accessories
+Part
+Name Description
+Number
+AL- 78550 Control Unit, Touch UI, TU430 touchscreen monitor. Requires AL- 78053 for use with 3x40
+TU430, Videojet lasers.
+AL- 78185 Control Unit, Touch UI, TU430 touchscreen monitor with HDMI housing removed and
+TU430, Videojet, Fiber/UV cable stripped to create ground inside supply unit of
+Laser 7510/7610/7810.
+AL- 78053 Kit, Connecting, Control HDMI port and internal cable for supply unit for 3x40. Necessary to
+Unit, TU4x0 connect TU430 on 3x40 lasers. Not needed with 7510/7610/7810.
+AL- 78968 Kit, Upgrade, Laser, WiFi Ubiquity AirGateway WiFi adapter and AC power cords for all
+Access regions.
+Spare Parts
+Part
+Name Description
+Number
+AL- Board, Driver board inside TU430. This is not the display screen.
+SP111576 ChamTouch,
+TU4x0
+AL- Cap, Black rubber caps for USB ports on TU430
+SP73984 USB Port
+AL- Harness, Con - Cable running from inside TU430 to laser.
+SP76040 trol Unit,
+TU4x0
+AL- Kit, Upgrade, Multi- Core Chameleon and installation instructions
+SP78052 Chameleon,
+MC, TU4x0
+10
+Rev AB
+
+TU430 Overview
+Part
+Name Description
+Number
+AL- Kit, Con - HDMI port and internal cable for supply unit for 3x40. Necessary to connect
+SP78053 necting Con - TU430 on 3x40 lasers. Not needed with 7510/7610/7810.
+trol Unit,
+TU4x0
+AL- 78970 Kit, Field Upgrade from single core Chameleon to Multi- Core Chameleon for 3x40 lasers.
+Upgrade, Includes Multi- Core Chameleon, supply unit internal harness with HDMI port,
+Control Unit, and TU430 touchscreen monitor. For fiber laser upgrade order only AL-
+Touch UI, SP78052 (Multi- Core Chameleon) and AL- 78185 (TU430 for fiber/UV laser).
+TU430, Video -
+jet
+AL- 77513 Sealing, Plug, Cap for HDMI port on supply unit of 3x40
+GPN, 350- 25
+AL- 78550 Control Unit, TU430 touchscreen monitor. Requires AL- 78053 for use with 3x40 lasers.
+Touch UI,
+TU430, Video -
+jet
+AL- 78185 Control Unit, TU430 touchscreen monitor with HDMI housing removed and cable stripped to
+Touch UI, create ground inside supply unit of 7510/7610/7810 laser supply units.
+TU430, Video -
+jet, Fiber/UV
+Laser
+11
+Rev AB
+
+TouchUS Hardware
+(TU420H)
+The TouchUS is only compatible with lasers using a single core Chameleon board and CMark version 3.x. Systems with a multi-
+core Chameleon board and CMark version 4.1 or newer have TCS+ user interface installed on the Chameleon board itself. TCS+
+can be accessed via a web browser or TU430 touchscreen monitor. TouchUS is no longer sold with 3x40 laser systems, but is avail -
+able as a spare part.
+The TouchUS touchscreen PC (TU420H) is loaded with Touch Control Software (TCS) with which you can create and mark jobs
+on the 3340/3140 /3640 laser system. The TouchUS unit has an integrated power and Ethernet cable that are combined into a
+single cable and connector. Power for the unit is via this integrated connector which has 8 pins and plugs directly into the 8 pin
+user interface connector on the rear of the supply unit.
+8 Pol Kit Required
+It is important that when ordering a 3340/3140 /3640 with TouchUS interface that you select the optional 8
+pol kit as an option or you will be unable to connect the TouchUS .
+The following are the specifications for the TouchUS controller exclusive of the Touch Control Software.
+13
+Rev AB
+
+Touch Control Software+ Training Guide
+Hardware Electrical Supply
+l Intel Atom E3815 @ 1.46GHz l 20VDC to 32VDC
+l 1 GB SDRAM l Max. 1A
+l Intel Graphics Media Accelerator 500
+Dimensions
+l SSD 16GB
+l Length: 300 mm
+Display & Touch
+l Width: 215 mm
+l 10.1" LCD l Depth: 62 mm (without rubber pads)
+l Display resolution: 1024 x 600 l Weight: 3.4 kg
+l Resistive Touch l Cable length (combining Ethernet and power): 5
+meters
+Connectivity
+Regulatory Approvals
+l Hardwired
+l CE
+l 1 x 100Mbit Ethernet
+l TUV (NRTL/CSA)
+l 2 x USB 2.0 ports
+l FCC
+Operating Environment
+Operating System
+l Operating Temperature Range: 5- 40 degree Celsius
+l Microsoft Windows Embedded Standard 7
+l Humidity Range: 10- 90%, non- condensing
+l Protection Class: IP65
+14
+Rev AB
+
+Touch Control Software
+(TCS+)
+Touch Control Software (TCS+) performs the following functions:
+l Generating and organizing jobs and parameter settings
+l Configuring the Line setup
+l Transferring data to the laser system
+With the TCS+ software, you can easily generate and edit the marking content of a job on your touch screen device, PC, or the
+TU430 touchscreen monitor. Your data is transferred to the laser system through either Ethernet or Wifi (when installed) or
+through a dedicated cable on the TU430 touchscreen.
+Training is regularly offered on the operation of the laser system and the TCS+ user interface. For further information, please con -
+tact Videojet Technologies Inc. or one of their representatives.
+Login to TCS+ Over the LAN
+The following details logging into TCS+ with a supported web browser on a PC/tablet that is connected either to the laser system
+to the same network as the laser system.
+If using the TU430 touchscreen the TCS+ interface displays on the TU430 as long as it is connected to the laser. There are no
+additional steps required to connect via the TU430.
+1. Using a PC, tablet, or similar device connected to the same LAN as the laser, start your preferred web browser and type in
+the IP address of the laser system to which you want to connect.
+15
+Rev AB
+
+Touch Control Software+ Training Guide
+2. Press Enter to open the login page of TCS+.
+Login
+1. Start the laser system as described in the laser system manual.
+2. After a short delay, the display illuminates on the screen. If the software is protected by Password on Start option, the
+Select User screen replaces the Start screen and displays a user list.
+If the Password on Start option is not toggled on in the Main Settings screen, you are automatically logged in as Oper -
+ator and the Home screen is displayed.
+16
+Rev AB
+
+Touch Control Software (TCS+)
+3. Select the User Level desired. A keyboard will display on screen.
+4. Enter the password relevant to the user level required and touch OK . The Home screen opens and you may now proceed
+based on access rights of the User level you are logged in as.
+You can create a new user profile, or use one of the available user profiles and passwords. For more information on users, pass -
+words, and creating new users see "Users, Roles, & Access Rights" on page 58 .
+Home Screen
+The Touch Control Software (TCS+) Home Screen and its main features are shown below.
+17
+Rev AB
+
+Touch Control Software+ Training Guide
+Table 3- 1: Functions Available from the TCS Homescreen
+Number Item Function
+1 Status Bar Displays the system status, Warnings and Fault signals. It has the buttons for start -
+ing/stopping the marking process and clearing Faults. Shows the Lasers that are
+connected to the Touchscreen.
+2 Preview Displays the content of the selected job.
+Area
+3 Quick Edit Access to commonly used functions during marking process including position
+Toolbar adjust and set variables.
+4 Performance Displays information on different counters on the laser.
+5 Line Setup Displays information on and allows editing of the active line setup on the laser.
+6 Job Displays information and allows editing of the active job on the laser.
+7 Global Func - Displays three main types of functional buttons: Shutdown, Menu, and Logo.
+tions (See "Global Function Buttons" on page 20 )
+Alerts
+The Touch Control Software (TCS+) shows two kinds of alerts:
+l Warnings
+Displayed by a Yellow Status Bar.
+l Error
+Displayed by a Red Status Bar.
+If there are both Warnings and Error alerts, the Status bar is displayed in red.
+If there are no alerts, the Alert button (‘i’) is not displayed on the Status bar.
+18
+Rev AB
+
+Touch Control Software (TCS+)
+Clearing Alerts
+If an alert is displayed:
+1. Touch the i (alert) button on the status bar. A screen is displayed with the current Errors or Warnings listed.
+2. Touch Confirm All to confirm the Error or Warnings, but not delete them. Alternatively, touch Confirm and Delete All to
+both Confirm the Errors or Warnings and to delete them from history.
+It is necessary to confirm Errors in order to start the marking process. It is not necessary to delete errors in order to con -
+tinue.
+Fatal Error
+If a red Status Bar indicates Fatal Error, the system will shut down. A Fatal Error cannot be confirmed and oper -
+ation cannot be continued until error is corrected and system is restarted.
+19
+Rev AB
+
+Touch Control Software+ Training Guide
+Global Function Buttons
+In the TCS+ Home screen there are three Global Function buttons that allow access to all functions in the software:
+l Shutdown
+l Menu
+l Logo
+The functionality of these buttons changes with the User Level as different users have differing access to functionality. See
+"Users, Roles, & Access Rights" on page 58 for changing rights for users.
+Shutdown Button
+The Shutdown button allows the user to either:
+l Switch User
+Always active.
+l Shutdown
+Only active if logged in as a User with Access rights to shutdown software.
+Auto Shut Down
+If Shut down system after exit is toggled on in the Main Settings screen, the TouchUS (TU420) unit
+will close down within one minute of touching the Shut down button. This option is not available in
+TCS+.
+20
+Rev AB
+
+Touch Control Software (TCS+)
+Menu Button
+Table 3- 2: Menu Functions
+Option Function
+Mark Set - Define or edit Mark Settings
+tings
+File Man - Export the complete laser database or its sections such as jobs, fonts, logos and so onto a USB
+agement drive or import sections or elements into laser database from USB drive. If using TCS+ with
+PC/tablet you may also export/import to device or network as well.
+Users Display the currently logged in user. You can create new users. The user can also change from
+one user account (or user profile) to another user account (or user profile).
+21
+Rev AB
+
+Touch Control Software+ Training Guide
+Option Function
+Roles and Defines the Roles and Access rights of different users. See "Users, Roles, & Access Rights"
+Access on page 58 .
+Rights
+Laser Unit Defines Laser Settings for all lasers connected by Touch Control Software. If using TouchUS
+Settings unit only one laser can be connected. Laser Settings include lens fitted to laser, date, time, and
+enable pilot laser.
+Main Set - Defines Main Settings which include the language, units, and options for behavior of TCS on
+tings start up and shutdown. TCS+ and TCS options in this menu will vary.
+Logo Button
+The button with Videojet logo gives access to:
+l About
+Shows version information for TCS+ software.
+l Help
+Launches a PDF copy of the Touch Control software manual in PC- based TCS software. TCS+ will display informational
+message directing you to the manual on USB/CD that came with the laser.
+22
+Rev AB
+
+Touch Control Software (TCS+)
+Activate & Mark Job
+In order to mark a job it is necessary to first activate the job. Activation makes the job the one to be marked and not just edited.
+Activate Job
+This procedure assumes a job is already created.
+1. Touch the Pen button in the Job pane. A context menu opens.
+2. Touch Manage Jobs . The Manage Jobs screen opens with a list of job names.
+3. Touch the job you want to activate.
+4. Touch the empty circle in the Active column to the left of the name of the job you want to activate. You will be prompted
+to confirm activation (press Cancel to activate a different job instead).
+5. Touch OK to activate the selected job. The circle next to the job you just activated should now be filled in. This denotes the
+Active job.
+6. Touch Close to return to the Home screen.
+23
+Rev AB
+
+Touch Control Software+ Training Guide
+Mark the Active Job
+1. Close the key switch. The Status Bar will change from Initializing to Ready to Mark and then the Start button will appear.
+2. Touch the Start button to start the marking process. The currently selected job is ready to be marked onto the product by
+the laser system.
+3. To stop the marking process touch the Stop button which is shown while the laser is in the marking mode.
+24
+Rev AB
+
+Jobs
+Job defines the final content that is marked on the product. The Job Mark Settings provide the mark parameters for each job.
+However they can be edited as required, to add texts, logos, serial number and other job elements.
+25
+Rev AB
+
+Touch Control Software+ Training Guide
+Create A Job
+The following procedure details how to create a Job in TCS+ interface.
+1. Touch the Pen button in the Job pane.
+2. Touch the Manage Jobs button. The Manage Jobs screen opens.
+3. Touch the Create button. A keyboard opens.
+26
+Rev AB
+
+Jobs
+4. Type in a name for your new job.
+5. Touch OK to save the job. The new job is added alphanumerically to the list and the Edit Job screen is displayed.
+27
+Rev AB
+
+Touch Control Software+ Training Guide
+6. Touch Add to put elements such as static text, date, etc. into the job.
+28
+Rev AB
+
+Jobs
+7. Touch in the mark field to place your job element when prompted by software.
+8. Touch Return . To add more job elements press Add. Repeat until all desired job elements are added and edited.
+9. Touch Save .
+10. Touch Close to return to the Home screen.
+11. Touch Yes when prompted to make your job the Active job. Touch No if you would like to save and close without making
+it the active job.
+29
+Rev AB
+
+Touch Control Software+ Training Guide
+Edit a Job
+1. Touch the Pen button in the job pane.
+2. Select Edit Current Job .
+- OR-
+Select Manage Jobs
+3. Press the Pen icon next to the job you want to edit.
+4. Edit the job details as required.
+5. Touch Save followed by Close to save the changes and return to the Home screen.
+30
+Rev AB
+
+Jobs
+Static Text Elements
+Static text elements do not change after you create them and save their settings.
+To create a Static Text element:
+1. Create or open the Job where the Static Text will be added.
+2. Create the Static Text element if it is not yet in the job.
+3.  Press the Add button and select Static Text from the menu that appears.
+4. Enter Static Text information in the fields in the column on right hand side of screen.
+Content The content (for example, text) to be marked for the job element.
+Font The font for the content of the text element.
+Font When you add the element to the field, the font size is calculated according to the height/ -
+Size margin settings of the field.
+Spacing You can set the space between the characters of the text element. The default value is 0.
+See the TCS+ User Manual for details on advanced field settings such as Positioning and Filling.
+5. Press Return when editing of this Static Text element is complete. To add more job elements press Add . Repeat until all
+desired job elements are added and edited.
+6. Touch Save to save the changes.
+7. If required, touch Return to make further changes to the list of job elements.
+8. Touch Close to close the Edit Job screen and return to the Home screen.
+31
+Rev AB
+
+Touch Control Software+ Training Guide
+Date Elements
+To create a Date element in a Job, open or create a Job.
+1. Press Add button in Job Editing screen.
+2. Press in the mark field to place your Date element when prompted by software.
+3. Touch the Date element you want to update.
+4. Enter the Date element information in the respective fields.
+Table 4- 1: Date Element Fields
+Field Description
+You can select from different default date formats or generate your own date format
+Date
+with up to six elements. The elements of the chosen date format are displayed in the six
+Format
+other fields. A preview of the current date is displayed in the preview window. You can
+select from the following default date formats:
+l ddmmyy (03.04.09) l mmddyyyy (04/03/2009)
+l dmyy (3.4.09) l mdyyyy (4/3/2009)
+l ddmmyy (03.04.2009) l Julian ddd (093)
+l ddmmyyyy (3.4.2009) l Julian and year dddy (0939)
+l mmddyy (04/03/09) l Calendar week and year (109)
+l mdyy (4/3/09) l Custom
+Segments Select the desired increment for the 1st, 2nd, and 3rd Segments.
+l Day (01) l Weekday
+l Day short (1) l Calendar week
+l Month (01) l My weekday
+l Month short (1) l My day
+l Year (2009) l My month
+l Year (09) l My year
+l Year (9) l none
+l Julian day
+32
+Rev AB
+
+Jobs
+Field Description
+Select the desired Separator to follow each Segment.
+Separators
+l Dot (.) l Colon (:)
+l Slash (/) l Space (  )
+l Dash (-) l none
+5. To edit My weekday/day/month/year fields, click on the Pen button to the right of the Segment with the My week -
+day/day/month/year and a keyboard will appear and allow you to edit the custom field selected.
+Using Custom Segments
+Note Using the custom terms My weekday/day/month/year the following rules apply:
+l use only roman characters and numbers, e.g. letters from a- z and capital letters A- Z and all digits 0- 9
+in any sequence.
+l the term items must contain at least one letter or digit.
+l all term items must be separated by a colon (:) and must end with a colon.
+l My day must be defined by exactly 31 term items.
+l My weekday must be defined by exactly 7 term items.
+l My month must be defined by exactly 12 term items.
+6. Touch Save to save the changes.
+7. If required, touch Return to make further changes to the list of job elements.
+8. Touch Close to close the Edit Job screen and return to the Home screen.
+33
+Rev AB
+
+Touch Control Software+ Training Guide
+My Month
+All date format options for month within the quick format drop- down options are numeric. Alpha characters can be used, but the
+My Month option must be selected in the position in which you would like the month to appear. The following procedure demon -
+strates how to insert the My Month option and also how to edit the contents of My Month.
+Inserting My Month
+1. Open or create file in which you want to add a custom date (such as alpha characters).
+2. Add the Date element (if creating new date field) and press in the mark field to place date element. The Date editing menu
+will open on the right side of the screen.
+3. Click on the position where you want to insert the custom month. Choose My Month from the dropdown selector.
+By default, the months are programmed to be three digit alpha month abbreviation, but may be changed to any char -
+acters a- z (lower case or upper case) or 0- 9. Each month must be at least one character long as a minimum.
+34
+Rev AB
+
+Jobs
+4. Touch the Pen button next to My Month.
+A keyboard will appear on- screen showing the default options for My Month.
+5. Touch the typing box and edit the desired characters for each month. Ensure that there are 12 items and that there is a
+colon between each item and a colon at the end of the string.
+In the example below, several of the months have been edited down to only two alpha characters each.
+35
+Rev AB
+
+Touch Control Software+ Training Guide
+6. Touch OK when editing is complete.
+7. Touch Return when finished editing the entire date field.
+36
+Rev AB
+
+Jobs
+Barcode Elements
+Create the Barcode element if it is not yet in the job.
+1.  Press Add and select Barcode from the list of Elements that appears.
+2.  Press in the mark field to place your Barcode element when prompted by software.
+3.  Press Return . To add more job elements press Add. Repeat until all desired job elements are added and edited.
+4. Touch the Barcode element you want to update.
+5. Touch the Barcode Pen button and then touch the Edit button.
+6. Enter the barcode information in the applicable fields.
+Table 4- 2: Basic Barcode Properties
+Field Description
+Barcode The options available are BC128, BC25, BC25I, BC39, BC39E, BC93E, EAN128, EAN13,
+Type EAN8, POSTNET, PZN, RSS14ST, RSS14STO, RSS14TR, RSSEXP, RSSLIM, SCC14,
+UPC_ A and UPC_ E. The EN128 is the default barcode type.
+DATA The content elements for the barcode. Select the Add button from the toolbar to add new ele -
+ments to the list. You can Edit or Delete the elements.
+37
+Rev AB
+
+Touch Control Software+ Training Guide
+Table 4- 3: Barcode Representation Properties
+Field Description
+Display Select an option where the text is positioned with respect to the bar- code. The available
+Text options are None, Bottom and Top.
+Font Select the font for the text element of the barcode.
+Barcode Enter the height of the barcode element in mm with respect to the height of the field.
+Height
+Text Enter the height of the text element in percentage with respect to the height of the field.
+Height
+Display If this checkbox is selected, the barcode is displayed inverted: black as white and vice
+Inverted versa.
+Calculate If this checkbox is selected, the check digit of the barcode text is
+Check
+Number calculated. This field appears only if you have selected the barcode element type as BC25,
+BC25I, BC39, BC39E, PZN, and RSS14ST.
+Table 4- 4: Barcode Size Properties
+Field Description
+Module Defines the module width. This value may vary from 0.1 mm to 30 mm.
+Width
+Quiet Zone Defines the quiet zone width as a multiplier of the module width. This value may vary
+from 10 to 20 times the module width.
+Wide/Narrow Defines the ratio of wide and narrow barcode lines. This value may vary from 2 to 3. The
+Wide/Narrow field cannot be edited with barcodes that have a fixed ratio (EAN13).
+Module/Gap Defines the ratio of modules and gaps width. This value may vary from 1 to 2.
+Gap/Narrow Defines the ratio of gaps between lines belonging to characters and the module width.
+This value may vary from 1 to 2.
+Positioning The position of the barcode element within the marking field.
+Mark Set - The mark setting for the barcode element. You can set the quality of the marking against
+tings the speed of the marking by using the Mark Settings.
+38
+Rev AB
+
+Jobs
+Field Description
+Filling Select the filling for the barcode element. You can also modify the filling details.
+7. Enter information for additional fields (if any) particular to the selected barcode type.
+8. Touch Save to save the changes.
+9. If required, touch Return to make further changes to the list of job elements.
+10. Touch Close to close the Edit Job screen and return to the Home screen.
+39
+Rev AB
+
+Mark Settings and Line
+Setup
+You define all the mark settings in the Mark Setting screen. You can also create, edit, duplicate, or delete a mark setting. Line
+Setups contain the settings that trigger the laser and encoder or line speed information.
+41
+Rev AB
+
+Touch Control Software+ Training Guide
+Create a Mark Set
+1. Touch the Menu button on the Status bar. The Menu Options list opens.
+2. Select the Mark Settings option from the list displayed. The Mark Settings list appears.
+3. Touch the Create button. A keyboard appears.
+4. Enter a name for the new Mark Setting file.
+5. Touch OK to save the Mark Setting. The Mark Setting file is added alphanumerically to the list.
+6. Touch the Pen to the right of the Mark Setting you created to edit individual settings within the file.
+7. Touch Save when editing is complete.
+8. Touch Close to return to the Home screen. You may now attach your Mark Settings file to one or more Jobs.
+42
+Rev AB
+
+Mark Settings and Line Setup
+9. Touch the Pen in the Job Editing pane and select Manage Jobs .
+10. Select the desired job from the list of Jobs shown.
+11. Touch the Pen next to Mark Settings in the Message Editing screen.
+12. Select your Mark Settings file from the list.
+13. Touch Return and then touch Close .
+43
+Rev AB
+
+Touch Control Software+ Training Guide
+Edit Current Mark Setting
+Mark Settings are a group of settings saved into one file. These settings greatly affect both the quality of the mark made and also
+the amount of time it takes to make the mark. Mark Settings control the speed of the mirrors in the marking head and also the
+behavior of the laser tube.
+The following procedure assumes the Mark Settings file is already created. For instructions on creating a Mark Set, see "Create a
+Mark Set" on page 42 .
+1. Touch the Pen button in the Job pane of Home screen.
+2. Touch the Edit Current Mark Setting option from menu and the Message Editing screen will open.
+3. Touch the Pen to the right of Job Mark Settings. The Mark Set Editing screen will appear.
+4. Touch the setting to be adjusted and a keypad will open which displays the minimum and maximum settings allowed for
+the selected Mark Setting item.
+5. Edit all desired settings.
+6. Click Save button and then Close button.
+7. Touch the Save button from Message Editing screen. You will return to the Home screen.
+44
+Rev AB
+
+Mark Settings and Line Setup
+Table 5- 1: Description of Mark Settings
+Field Description
+Marking The speed of the mirrors while the laser is on (marking strokes).
+Speed
+Mark The delay between the marking of individual vectors within a stroke.
+Delay
+Stroke The delay between the end of a stroke and the jump to the next stroke. Break time at the end of
+Delay each stroke.
+Jump The speed of the movement of the mirrors when moving from one stroke to the next. The laser is
+Speed switched off during a jump.
+Jump The delay between the end of a jump and the start of a stroke. Break time at the end of each jump.
+Delay
+Marking Percentage setting 0- 100%. Results in more or less intense burn.
+Intensity
+On Delay The delay between attainment of the start position of a stroke by the mirrors and the switching on
+of the laser.
+Off Delay The delay between the attainment of the end position of a stroke by the mirrors and the switching
+off of the laser.
+Pulse Fre - The frequency of the pulses used to make the mark. Lower values can be used to achieve a
+quency broken (dotted) line.
+Line Width The actual line width of the marking on the product. The width highly depends on the material.
+Therefore the line width is determined by marking a single line on the desired product and by
+measuring the line width.
+45
+Rev AB
+
+Touch Control Software+ Training Guide
+Create Line Setup
+1. Click the Pen in the Line Setup pane.
+2. Touch Manage Line Setups . The Manage Line Setups window will open.
+3. Touch Create .
+4. Type a name for your new Line Setup and touch OK on the onscreen keyboard. The Position and Orientation screen will
+open.
+46
+Rev AB
+
+Mark Settings and Line Setup
+5. Touch the appropriate buttons for the direction of line movement, side of the product laser will be marking on, orientation
+of the laser head, and direction you would like text to appear as outputted from the marking head. Based on your settings,
+the image in left side of screen will update with a preview of what your configuration would look like.
+6. Touch the Line Speed tab.
+47
+Rev AB
+
+Touch Control Software+ Training Guide
+7. Select one of the Line Speed options. Only select one option.
+Enter or Measure Fixed Speed : Enter a fixed line speed. Used when conveyor speed is constant and no encoder is being
+used. Only recommended if conveyor speed will be steady and no ramp up or ramp down in speed. Use of an encoder is
+recommended on applications where line speed will vary.
+Measure Line Distance : For applications using an encoder. Follow on screen instructions for making mark on conveyor
+and belt and measuring how much mark moves after at least one rotation of encoder. Conveyor must be moving
+extremely slow during measurement and no alterations can be made after entering distance traveled. Not a preferred
+method of line setup.
+Enter Product Size : For applications using an encoder and product detector. Follow onscreen instructions to enter
+product size. When conveyor moves product past detector the number of pulses received while traveling past detector is
+used to calibrate pulses per millimeter. Conveyor must be moving extremely slow during measurement and no alter -
+ations can be made after entering distance traveled. Not a preferred method of line setup.
+Measure Line Speed : Measure line speed method requires use of tachometer used on moving line and then entered into
+box on screen. Do not vary the speed of the line during this setup. In this method, the reference speed and number of
+pulses detected become a benchmark for calculating other speeds based on number of pulses detected in a given time
+period.
+Configure Manually : For use with applications using an encoder. Enter the number of pulses per rotation (resolution of
+encoder) and if using a friction wheel enter the circumference of the wheel. If not using a friction wheel then enter the
+distance the line travels during one revolution of the encoder. Any variations from the actual distance of travel or cir -
+cumference of the wheel will affect spacing in print characters. This is the preferred setup for use in encoder applic -
+ations because adjustments may be made to the Distance per Rotation setting after initial entry.
+8. Touch the Trigger tab. The Trigger Settings page will open. If a product detector is connected the green light to the left of
+Product detector will be green.
+48
+Rev AB
+
+Mark Settings and Line Setup
+9. Touch Start Distance to set the delay from the time a trigger is received until the laser begins the mark.
+10. Touch Blocking (optional) to set the distance from the first trigger that all additional triggers will be ignored. This is used
+when marks on packaging are causing multiple triggers on one product or if product detector has noise causing stray trig -
+gers.
+11. Touch one of the four options under Trigger Mode .
+External Rising - trigger from leading edge of trigger signal.
+External Falling - trigger from trailing edge of trigger signal.
+Internal Once - laser will mark only once when Start button is pressed and then will stop marking. Does not wait for
+external trigger signal. Uses internally generated signal.
+Internal Continuous - laser will mark continuously once Start button is pressed and will only stop marking when the Stop
+button is pressed. Does not wait for external trigger signal. Uses internally generated signal.
+12. Touch the Marking Field and Test button. If desired, boundaries of mark field may be edited. This will result in a smaller
+mark field which can result in errors if marking speed is not sufficient to complete mark while product is in the marking win -
+dow. Generally recommended to leave full marking field selected for most applications.
+49
+Rev AB
+
+Touch Control Software+ Training Guide
+13. Touch Start in the Marking Field and Test Button tab if you would like to mark a sample of the marking field.
+Caution
+Laser may fire when this button is touched. Ensure all guards are in place before pressing button.
+14. Touch Save when all changes are complete.
+50
+Rev AB
+
+System Configuration
+You configure and maintain both the Touch US interface and the laser itself via the Touch Control Software.
+IP Address Configuration
+This procedure is for connecting to laser with PC- based TCS only. If using TCS+, which runs from the laser, you do not need to tell
+the software what IP to look for. Rather, you will either connect a TU430 which does not look at IP or if connecting with web
+enabled device then you type the IP of the laser into the address bar of a supported browser.
+By default, the TCS software is set to connect to a laser with IP address of 192.168.1.1. It is possible to change the IP address
+that the TCS software should look for to connect through the TCS software.
+1. Launch the TCS software.
+2. Log in at a User Level with Administrator rights.
+3. Press the Menu button and select Connection and Laser Unit Settings .
+51
+Rev AB
+
+Touch Control Software+ Training Guide
+4. Press the box to the right of Connection IP Address and a numeric keypad will open.
+5. Type in the IP address of the laser to which you want to connect.
+The IP address must contain 4 octets each separated by a "."
+You may also change the Display Name of the connection as well. This only changes the name in the TCS software and
+does not change the name the laser has stored locally.
+6. Connect to the laser by touching Connect to the right of Connection State .
+The IP of the attached laser must the same as the IP set in the TCS software. To change IP of laser see "IP Address Con -
+figuration" on the previous page
+52
+Rev AB
+
+System Configuration
+If IP address set in Connection Settings matches the IP address of the laser, the Connection State will change to Dis -
+connect and a green light will be shown on screen.
+Laser IP Change
+The IP address of a laser may be changed through the TCS+/TCS software.To change the IP of the laser you must first connect
+with the IP already assigned to the laser.
+Current Laser IP Address
+To connect to laser web interface so you must know the current IP address of the laser so that you can con -
+nect to it to make any necessary changes. The default IP address of the laser interface is 192.168.1.1. If the
+current IP address is unknown you can set dip switch 1 to ON to reset the IP address to default on boot. You
+must set the dip switch back to OFF before the next reboot or the IP address will again reset to default.
+Change Laser IP Address
+1. Connect to the laser with web- enabled device or TU430.
+2. Go to the Menu and select Connections and Laser Unit Settings .
+If the IP address of the laser and the IP address TCS is assigned to look for in Connection Settings tab match then there
+will be a green light to the right of Connection Status in Connections tab and the button to the right will say Disconnect.
+53
+Rev AB
+
+Touch Control Software+ Training Guide
+If TCS does not connect it may be necessary to change the IP address that TCS is looking for in Connection Settings. The
+IP address shown in Connection Settings and the IP address of the laser must match in order to connect.
+3. Touch to select the Laser Unit Settings tab.
+4. Touch the button to the right of Laser IP Address and a keyboard will open on screen showing current IP address of the
+laser.
+5. Type in the desired IP address for laser.
+6. Press OK . A warning will display informing you that the change in IP for the laser will not be active until the laser is
+rebooted.
+54
+Rev AB
+
+System Configuration
+7. Add a second IP address if required. From this window you may also adjust Date, Time, Time Zone, and can enable the
+Pilot Laser (if equipped). Touch the Connection Settings button to return to the Connection Settings tab if you would like to
+change the IP that the TCS software will look for when connecting. For more information see "IP Address Configuration" on
+page 51 .
+8. Touch Close when editing of the Connection and Laser Unit Settings is complete.
+9. Exit the TCS software.
+10. Shut down TouchUS computer using the Windows Start button. When Windows shuts down you may turn off power to
+the laser.
+Did you reset to the default IP address?
+If you used dip switch 1 in ON position to set the laser IP address, set it back to OFF before rebooting or
+your IP address changes will not take effect.
+11. Boot laser system. The new IP for the laser will now be active.
+TU430 Screen Calibration
+Screen calibration for the TU430 touchscreen is available through the Main Menu of the TCS+ software.
+Only available on TU430
+Screen calibration through the TCS+ software is only available on the TU430. In legacy deployments of pre -
+vious touchscreen models (TU420, TU420H) TCS ran on a Windows based computer. For TU420 and TU420H,
+calibration the touchscreen through Windows settings.
+1. Press the Menu button at the top of the screen.
+.
+2. Press Main Settings in the dropdown menu.
+55
+Rev AB
+
+Touch Control Software+ Training Guide
+3. Press Start to the right of Calibrate Screen. This menu option does not appear when using a web browser on a PC/tablet.
+The Calibrate Screen option only appears when connected with a TU430.
+4. Follow the on- screen prompts to touch the center of the red cross on the screen as it moves throughout the calibration
+process. The black "x" represents the on- screen mouse button and can be ignored during this process.
+Best Results with Stylus
+For best results use a stylus to touch the red cross during the calibration process.
+56
+Rev AB
+
+System Configuration
+Possible Equipment Damage
+Do not use an open pen or marker. Do not use any metal tool that could scratch the screen.
+If calibration process is started from Main Settings, but no interaction on screen is sensed within 60 seconds the cal -
+ibration process will abort.
+57
+Rev AB
+
+Touch Control Software+ Training Guide
+Users, Roles, & Access Rights
+When you log into the Touch Control Software (TCS) the interface will display a list of Users. Each of these Users has a Role
+assigned which includes a group of Access Rights.
+Users
+The profiles available at the login screen. There are three predefined Users in the TCS software: Operator, Supervisor, and Admin -
+istrator. You may create additional Users if desired.
+Table 6- 1: Default TCS User levels
+Username Password Privileges
+Operator 0000 Operator has basic privileges to perform operations like Start Laser, Stop
+Laser, and change counters. Operators do not have rights to create new jobs.
+The Operator can do adjustments to an already created job like activating a job,
+scaling, rotating, and adjusting the horizontal and vertical positions of the job.
+Operator can also set the intensity value of a job and can edit the values of vari -
+ables.
+Supervisor 1111 Supervisor has higher privileges than an Operator. The Supervisor can perform
+all the tasks that an Operator can do. Additionally, Supervisor can create jobs,
+edit jobs, and delete jobs. Supervisor can add new users, modify an existing
+user, or delete users. Supervisor can also set Main Settings and Mark Settings.
+Administrator 2222 Administrator has application privileges like creating new users, modifying
+users, and deleting users. Administrator assigns Access Rights to the newly cre -
+ated users and resets passwords. Administrator can also add a new role,
+modify a role, and delete a role.
+Roles
+Roles are a set of functions that are allowed to be either seen (read- only) or executed. Roles are assigned to a User. Three pre-
+defined Roles are available in TCS, but additional roles may be created and edited to allow only specific functions to be accessed
+by a User.
+Access Rights
+Access rights are default privileges to execute tasks in the TCS software. After you create a role, default access rights are assigned
+to the role. You can edit the access rights individually to the respective roles. The Access Rights screen lists all the function and
+sub- functions. The required access rights for different sub- functions has to be specified by selecting either read- only or full
+access icon.
+Following are the types of functions for which access rights may be limited:
+58
+Rev AB
+
+System Configuration
+l Operation: Displays general, line setup, and job editor sub- functions
+l Maintenance: Displays software and backup/restore types of sub- functions
+l Configuration: Displays laser setup and program setup sub- functions
+l Access Rights: Displays User Administrator and Roles sub- functions
+For each of these Access Rights levels (Operation, Maintenance, Configuration, and Access Rights), you may select either top level
+Read- only Access (user cannot make changes to these functions), Full Access (all functions within the Access Rights group will be
+editable by the user), or you can choose to Edit Access Rights for the Role individually.
+Once selected, each Access Rights level will display either the following icon depending on your settings:
+l Read- only Access: eye icon
+l Full Access: hand icon
+l Edited functionality: VAR is displayed indicating that functionality varies from either read- only or full access.
+Adding Users
+To add a User:
+1. Touch the Menu button on the Status bar.
+2. Touch Users . The Users screen will open.
+59
+Rev AB
+
+Touch Control Software+ Training Guide
+3. Touch Create to add a new User.
+4. Type in a name for the new User when the keyboard is opened onscreen.
+5. Press OK .
+6. Touch the Role dropdown selector next to your new User to assign a Role to them.
+7. Touch Close .
+Additional Information
+For more information on editing Users or for editing Roles or Access Rights refer to the Touch Control
+Software Manual.
+60
+Rev AB
+
+System Configuration
+Enhanced User Controls
+TCS+ contains additional functionalities to configure User accounts including account expiration, resetting a forgotten pass -
+word, and setting status of a User account. PC- based TCS does not contain the features below regarding advanced password pro -
+tection. In PC- based TCS the administrator sets passwords for all Users.
+To access the enhanced User controls:
+1. Click the Menu button on the Status bar.
+2. Click Users in the dropdown menu.
+3. Click the Pen button to the right of the User you would like to configure. You can also create additional Users by clicking
+the Create button at the top of the Users dialogue.
+61
+Rev AB
+
+Touch Control Software+ Training Guide
+The Set Expiration, User Status Changes, and Reset Password options within the Pen menu are only available in TCS+ and were
+not present in the PC- based version of TCS.
+Expiration Settings
+To open the Expiration settings dialog, click Set Expiration in the Pen menu for the specific User you want to configure.
+62
+Rev AB
+
+System Configuration
+Password Expiration
+The Password Expiration setting allows you to set a number of days after which the user's password expires.
+To activate Password expiration:
+1. Click Password Expiration in the left column.
+2. Click to toggle on Password Expiration enabled in the right column.
+3. Set the number of days before new password is required for that User.
+4. Click the Save button to make the change.
+Account Expiration
+The Account Expiration setting allows you to set a date when the User account will be set to Inactive (see User Status ).
+To activate Account Expiration,
+1. Click Account Expiration in the left column.
+2. Click to toggle on Account expiration enabled.
+3. Specify the date on which the user account shall expire.
+4. Click Save to make the change.
+63
+Rev AB
+
+Touch Control Software+ Training Guide
+User Status
+To change the status of a user account, click User status changes in the Pen menu.
+A user account can be set to the following status:
+l Inactive
+A user with an account that is in status Inactive is not allowed to log in or to perform any modification to the laser system
+via TCS+.
+TCS+ automatically sets and account to Inactive when the maximum allowed login attempts are exceeded (see "Pass -
+word policy" on the facing page ) or if the account has expired (see "Account Expiration" on the previous page ).
+l Dormant
+A user with an account that is in status Dormant is not allowed to log in or to perform any modification to the laser sys -
+tem via TCS+. In comparison to an account that is Inactive the status Dormant can only be set manually.
+l Active
+A user with an account that is in status Active is allowed to perform any actions that are not restricted by the Access
+Rights (see section 4.8 Roles and Access Rights in the TCS+ Operating Instructions Manual ).
+Reset Password
+Use the Reset password option to reset a forgotten password. A temporary password can be set by a User with sufficient Access
+Rights.
+The temporary password can be changed by the User after a successful login with the temporary password.
+Enhanced Security Settings
+TCS+ provides additional security settings not included in PC- based TCS, such as password strength rules and acceptable login
+methods, configurable in the Security Setting dialog.
+To open the Security Setting dialog:
+1. Click the Menu button on the Status bar.
+2. Click Users in the dropdown menu.
+64
+Rev AB
+
+System Configuration
+3. Click the Security Settings button.
+Within the Security Settings dialogue are the following options:
+l Password policy
+l Reminder
+l Login Settings
+Password policy
+In the Security Settings dialog, you can configure how strong the User passwords shall be by clicking on Password Policy option
+in the left column. With Password Policy is selected in the left column, options for configuring password strength display in the
+right column.
+65
+Rev AB
+
+Touch Control Software+ Training Guide
+Table 6- 2: TCS+ Password Parameters
+Parameter Description
+Password must consist of at least the given amount of characters.
+Minimum Length
+Password must contain at least the given amount of upper case characters.
+Minimum number
+of upper case char -
+acters
+Password must contain at least the given amount of lower case characters.
+Minimum number
+of lower case char -
+acters
+Password must contain at least the given amount of numeric characters.
+Minimum number
+of numeric char -
+acters
+Minimum number Password must contain at least the given amount of special characters.
+special characters
+The list of special characters that users may insert into their password, if a min -
+Special characters
+imum number of special characters has been specified.
+Click the field with the special characters to edit the list.
+Check repeated Enable this option to check for multiple occurrences of a single character in the
+characters password.
+66
+Rev AB
+
+System Configuration
+Parameter Description
+Sets the number of maximum allowed consecutive repetitions of a character.
+Maximum number
+For example, if Maximum number of repeated characters is set to a value of 3, the
+of repeated char -
+following passwords are valid:
+acters
+l aaabcd
+l aaabaaabaaabaaab
+following passwords are not valid:
+l aaaabcd
+l abaaaabaaaa
+This option is only available if Check repeated characters is checked.
+Enable this option to require that each user's changed passwords differ from the
+Check reuse of pass -
+passwords they used previously. Set the length of the password history in Min -
+word
+imum unrepeated password .
+Set the length of the password history. For example, if the value has been set to 3,
+Minimum unre -
+the new password of this User must be different to the last three passwords that
+peated password
+had been used by the User before.
+This option is only available if Check reuse of password is toggled on.
+Check for con - Enable this option to prevent using a password that is similar to the User name.
+secutive characters
+from user name
+Set the maximum number of characters that are matching the User name. For
+Maximum number
+example, if the value has been set to 3 and the User name is “John Doe”
+of matches to user
+Following passwords are valid:
+name
+l J1o2h3n
+l Doe123
+Following passwords are invalid. Please note that a space is also checked.
+l John123
+l 123 Doe
+This option is only available if Check for consecutive characters from User name is
+toggled on.
+Enable this option to prevent unlimited login attempts.
+Check login
+attempts
+67
+Rev AB
+
+Touch Control Software+ Training Guide
+Parameter Description
+Set the maximum allowed login attempts before a User account will be set to Inact -
+Maximum number
+ive.
+of login attempts
+This option is only available if Check login attempts is toggle on.
+Reminder
+The reminder functionality allows you to inform the User about an expiring password or an expiring account before it expires.
+The User will be reminded on log in.
+To enable reminders, click Reminders in the left column of the Security Settings dialogue. Options for Reminders will display in
+right hand column.
+Table 6- 3: TCS+ Password Reminder Parameters
+Parameter Description
+Toggle this option on to activate the reminder functionality for password expir -
+Reminder for pass -
+ation.
+word change
+Enter the amount of days the reminder message will be displayed to the User
+Days before password
+before the password expires.
+change
+Toggle this option on to activate the reminder functionality for account expir -
+Reminder for account
+ation.
+expiry
+Enter the amount of days the reminder message will be displayed to the User
+Days before account
+before the account expires.
+expiry
+68
+Rev AB
+
+System Configuration
+Login Settings
+When the Login Settings option in left column is selected within the Security Settings dialog, you can configure the desired
+behavior of TCS+ during login through options shown in right column.
+Table 6- 4: TCS+ Login Setting Parameters
+Parameter Description
+Toggle this option on to allow quick login via URL. If this option is enabled, you can directly
+Allow login
+log in with the given User name and password by adding the credentials in your web browser
+via URL
+like "192.168.1.1/?user=Administrator&password=2222"
+Toggle this option on to prevent opening the list of available Users when connecting to TCS+
+Don’t show
+(see Login to TCS+ Over the LAN ). Instead, all Users will be required to enter both their
+user list in
+User name and password on login.
+login
+69
+Rev AB
+
+Touch Control Software+ Training Guide
+Parameter Description
+Toggle this on to log out a User after given timespan of inactivity. Configure this timespan in
+Auto logout
+Default auto logout timeout . The Default auto logout timeout will apply to all new User
+and Roles. You can also set auto log out timeout for Roles individually (see "Enhanced Role
+Management" on the facing page ).
+Set the timespan (in minutes) before a User is automatically logged out.
+Default auto
+This setting is only available if Auto logout is toggled on.
+logout
+timeout
+70
+Rev AB
+
+System Configuration
+Enhanced Role Management
+Role- based Auto Logout settings are available in TCS+. This feature is not available in PC- based TCS.
+Auto Logout allows you to individually enable and configure an automatic logout time for each Role. For the default log out set -
+ting, see "Enhanced Security Settings" on page 64 .
+To open the Auto Logout setting dialog:
+1. Click the Menu button on the Status bar
+2. Click Roles and Access Rights . The Roles and Access Rights dialog will open.
+3. Click the Role that you want to change. The Role is highlighted.
+4. Click the Pen button on the right side of the Role to be modified.
+5. Click Auto logout settings .
+6. Click toggle on Activate Auto logout .
+7. Set the timespan (in minutes) before the User of the selected Role is automatically logged out.
+Must Enable Auto Logout in Security Settings
+You must enable the Auto logout option in the Users | Security Settings menu if you want to configure an
+Auto logout at the Role level. See "Enhanced Security Settings" on page 64 .
+71
+Rev AB
+
+File Management
+Files including Jobs, Mark Settings, Line Setups, and all sub- components may be transferred to and from the laser using a USB
+drive.
+Enhanced File Management
+With TCS+ running in a web browser, the File Management Dialog is enhanced to allow uploading of files directly from your
+device. The PC- based TCS user interface is only able to transfer files between the laser and USB.
+If using a TU430 with TCS+ then file transfer is only possible to/from the laser and a USB connected to the TU430.
+Table 7- 1: TCS+ Supported File Types
+File File Type
+Job, Mark Settings, Line Setups .xml
+Job archive (PC/tablet) .job
+Logo .lgo
+Font .fn
+Backup Database .gz
+File Type .tpl is Not Supported
+Templates of file type '.tpl' are currently not supported in TCS+. These are Templates created in SmartGraph.
+Transfer Files to the Laser from PC/Tablet
+To upload files from your device to the laser:
+1. Click the Menu button on the Status bar.
+2. Click File Management . The File Management screen will open.
+3. Click Upload and select a file from your device. As long as you select a supported file type the TCS+ software will save
+the file to the correct location. For example, a file with the extension .lgo would be saved to the Logos category and a file
+with extension .fn would be saved with fonts on the laser.
+When connected with a PC/tablet, the File Management screen will only show one pane. Once you click Upload, Win -
+dows Explorer will open and allow you to select the file location.
+73
+Rev AB
+
+Touch Control Software+ Training Guide
+Different File Downloads for Devices
+Job files will be downloaded with the file extension '.job' when using a PC/tablet. This file type includes neces -
+sary fonts and mark settings along with the Job file, though they are not shown individually.
+If using TU430 for download of jobs, there will be at least three files downloaded to the USB folder named
+TCS. This will include '.xml' for Job file, '.fn' for Font (s), and another '.xml' for the Mark Settings file.
+Unique File Names
+If the name of the element to be copied already exists, the system copies it with a suffix of "_ 1". The system
+increments the suffix number to maintain a unique element name like Logofile.lgo, Logofile_ 1.log, Logofile_
+2.lgo, and so on.
+The system will not overwrite files if they have the same name. You will be notified by a dialogue box when
+duplicate names exist. You may choose Skip to skip copying or OK to proceed and have the name with
+numbered extension.
+TU430 File Upload
+If using the TU430 touchscreen with TCS+ then file upload/download is only possible through USB as these are the only ports
+available. The File Management screen will display two panes when USB is connected to TU430.
+74
+Rev AB
+
+File Management
+If trying to Upload files they must be contained in a folder named TCS at the root level on USB. This folder will be created by the
+system when downloading files from the laser to USB. You must create this folder trying to load files to laser from a USB that was
+not written from the laser directly.
+To upload files from USB to laser with a TU430:
+1. Click on the Menu button on the Status bar.
+2. Click on File Management button. The File Management screen will open.
+3. Select the element (s) on the USB that you want to copy to the laser by touching the Pen button to the right of the element
+type.
+4. Click on either Copy to Laser or Show Content .
+l Copy to Laser will copy all the files of that element type to the laser.
+l Show Content will display the files of that element type contained on USB. You can then select individual file to
+Copy to Laser from within this group.
+75
+Rev AB
+
+Touch Control Software+ Training Guide
+File Import & Export
+You must directly import or export files between the laser and a USB storage drive via the TCS+ interface with TU430 touchscreen
+or when using PC- based TCS. You cannot transfer these files (such as jobs (.xml), logos (.lgo), and fonts (.fn) by any means other
+than a USB storage drive under these conditions.
+If you are using TCS+ with a web browser then you can map to a storage location on your device or network. See "Enhanced File
+Management" on page 73
+If you need to make a backup of the entire laser database or restore a previous backup to the laser, see "Backup & Restore" on
+page 90 .
+Exporting Files
+1. If using TU430/TU420 insert a USB flash drive into controller.
+2. Launch TCS+ software.
+3. Touch the Menu global function button in the status bar.
+4. Touch File Management . The File Management screen will open.
+5. In the Laser Local pane (left side), touch the folder that contains the target file or element.
+76
+Rev AB
+
+File Management
+6. Touch the Pen and select Show Content . The contents of the element will display.
+7. Select the file or element you want to copy from the laser. Selected items highlight in blue.
+8. Touch the Pen next to the selected file or element.
+9. Touch Backup to Device .
+77
+Rev AB
+
+Touch Control Software+ Training Guide
+TCS+ will copy the file/element to the root of the attached USB storage drive in a folder called TCS. If the folder does not
+yet exist, the software will create it.
+Importing Files
+1. Insert the USB flash drive into TU430/TU420 controller.
+2. Launch TCS+ software.
+3. Touch the Menu global function button in the status bar.
+4. Select File Management . The File Management window will display.
+5. In the USB Device pane (right side), click on the type of file you want to import.
+78
+Rev AB
+
+File Management
+6. Click the Pen next to the file type you selected.
+7. Select Copy to Laser if all files of this type on the USB flash drive in the TCS folder should be copied onto the laser.
+- OR-
+Select Show Content if you would like to pick a single file to transfer.
+79
+Rev AB
+
+Touch Control Software+ Training Guide
+Duplicate File Names
+If the name of the element to be copied already exists, the system copies it with a suffix ‘_ 1’. The sys -
+tem increments the suffix number to maintain a unique element name. For example, Logofile.lgo,
+Logofile_ 1.lgo, Logofile_ 2.lgo and so on.
+8. Click Close to exit the File Management screen and to return Home.
+The imported file is now available when creating or editing a Job.
+Import a Font into a Laser with TCS
+You may import either laser fonts or True Type fonts onto a laser with Touch Control Software (TCS+/TCS). However, you must
+first use SmartGraph software to convert the font into a format importable to TCS+/TCS. The following procedure details how to:
+l Import a font into SmartGraph
+l Export a font from SmartGraph onto USB drive
+l Import font onto laser with TCS
+Import a Font into SmartGraph
+1. Open SmartGraph software.
+2. Click the File tab.
+80
+Rev AB
+
+File Management
+3. Click Import and select Import TTF  from the context menu.
+The Import TTF Font window will display.
+81
+Rev AB
+
+Touch Control Software+ Training Guide
+4. Select from the System Fonts dropdown selector the font you would like to import into SmartGraph.
+5. Click OK .
+6. Rename the font or accept suggested name and click OK .
+82
+Rev AB
+
+File Management
+7. Verify the font was transferred into SmartGraph.
+Export a Font from SmartGraph onto USB Drive
+This procedure is only necessary if using TCS+ with TU430 touchscreen monitor or PC- based TCS. If using TCS+ with PC/tablet
+proceed to Import a Font onto Laser and see section on using a web enabled device.
+1. Insert USB flash drive into PC/laptop.
+2. Using Windows Explorer, create a folder on USB called TCS.
+83
+Rev AB
+
+Touch Control Software+ Training Guide
+3. In SmartGraph software File tab, click on the font that you would like to export to drive and eventually to laser with TCS.
+4. Click Export .
+5. Navigate to the TCS folder on the USB drive.
+6. Click Save .
+7. Properly remove the USB drive from your PC.
+Import a Font onto Laser
+If using a browser enabled device with TCS+:
+84
+Rev AB
+
+File Management
+1. Touch the Menu global function button.
+2. Select File Management from Menu options. The File Management window will display
+3. Touch Upload button. Select the font to be uploaded. It will automatically be copied to the correct category.
+Duplicate File Names
+If the name of the element to be copied already exists, the system copies it with a suffix ‘_ 1’. The system incre -
+ments the suffix number to maintain a unique element name. For example, Logofile.lgo, Logofile_ 1.lgo, Logo -
+file_ 2.lgo and so on.
+When using a TU430 or using TCS on TU420 or PC:
+1. Insert USB drive into TU420/TU430 controller.
+2. Launch TCS software.
+3. Navigate to Menu global function button.
+4. Select File Management from Menu options. The File Management window will display.
+5. Touch Fonts in the column labeled USB Device.
+6. Touch the Pen button next to Fonts.
+7. Select Copy to Laser if all fonts on USB in TCS folder should be copied onto the laser. Select Show Content if you would
+like to pick a single font to transfer.
+85
+Rev AB
+
+Touch Control Software+ Training Guide
+Duplicate File Names
+If the name of the element to be copied already exists, the system copies it with a suffix ‘_ 1’. The sys -
+tem increments the suffix number to maintain a unique element name. For example, Logofile.lgo,
+Logofile_ 1.lgo, Logofile_ 2.lgo and so on.
+8. Click Close to exit File Management and return to Home.
+The imported font is now available when creating or editing a Job.
+Importing a Graphic into TCS
+To import a graphic into the Touch Control Software (TCS+/TCS) you must first use SmartGraph to convert the graphic and to
+make it a usable file type. The following procedure describes how to:
+l Import a graphic into SmartGraph
+l Export a graphic from SmartGraph to USB drive (if using TCS or TCS+ with a TU430 only)
+l Import graphic onto laser through TCS
+Import a Graphic into SmartGraph
+1. Open SmartGraph software.
+2. Click to select the File tab.
+3. Click Import .
+4. Select Import File from the dropdown selector. You will be prompted to adjust the Intensity .
+86
+Rev AB
+
+File Management
+Intensity & Image Quality
+The Intensity adjustment here is not the same Intensity setting in Parameters. This Intensity adjusts
+lines in the imported image to be more or less distinct. For best results, edit graphics prior to importing.
+The ideal file type for importing onto laser is Adobe Illustrator (.AI), though other files types are accep -
+ted.
+5. Navigate to where your logo graphic is stored. In Windows 7 logos saved in the Pictures folder may not import. Save the
+logo into My Documents and retry.
+6. Select the logo graphic. If you cannot find the graphic you would like to import, ensure the File Type selected at bottom of
+Open window is Logo .
+7. Click OK . A window will display suggesting a name for the file. You may accept or change the name.
+8. Click OK to save your logo in SmartGraph.
+Export the Graphic onto a USB Flash Drive
+It is not necessary to put the graphic onto a USB drive if using TCS+ with a web- enabled device. If using TCS+ with web enabled
+device proceed to Import Graphic onto Laser Through TCS
+87
+Rev AB
+
+Touch Control Software+ Training Guide
+1. Insert a USB flash drive into PC/laptop.
+2. Using Windows Explorer create a folder called "TCS".
+3. In SmartGraph, select the File Tab and click on the graphic to export.
+4. Click Export .
+88
+Rev AB
+
+File Management
+5. Navigate to the TCS folder on the USB flash drive.
+6. Ensure File Type to save as at bottom of window is Logo (.lgo) .
+7. Click Save .
+Import Graphic onto Laser Through TCS
+If using a browser enabled device with TCS+:
+1. Touch the Menu global function button.
+2. Select File Management from Menu options. The File Management window will display
+3. Touch Upload button. Select the graphic to be uploaded. It will automatically be copied to the correct category.
+Duplicate File Names
+If the name of the element to be copied already exists, the system copies it with a suffix ‘_ 1’. The system incre -
+ments the suffix number to maintain a unique element name. For example, Logofile.lgo, Logofile_ 1.lgo, Logo -
+file_ 2.lgo and so on.
+When using a TU430 with TCS+ or using TCS on TU420 or PC:
+89
+Rev AB
+
+Touch Control Software+ Training Guide
+1. Insert the USB flash drive into TouchUS controller or PC/laptop with TCS.
+2. Launch TCS software.
+3. Navigate to Menu global function button.
+4. Select File Management . The File Management window will display.
+5. Click Logos in the column labeled USB Device.
+6. Click Pen button next to Logos.
+7. Select Copy to Laser if all logos on the USB flash drive in the TCS folder should be copied onto the laser.
+- OR-
+Select Show Content if you would like to pick a single logo to transfer.
+Duplicate File Names
+If the name of the element to be copied already exists, the system copies it with a suffix ‘_ 1’. The sys -
+tem increments the suffix number to maintain a unique element name. For example, Logofile.lgo,
+Logofile_ 1.lgo, Logofile_ 2.lgo and so on.
+8. Click Close to exit the File Management screen and to return Home.
+The imported logo is now available when creating or editing a Job.
+Backup & Restore
+You can use the File Management option in TCS to create a backup of the complete laser database which includes all TCS jobs,
+fonts, line setups, and marking sets.
+By default, the backup file name is written as the IP address of the laser and the backup date. For example, if the laser IP is
+192.168.1.1 and backup is created on May 27, 2017 the file name will be IP_ 192.168.1.1_ backup_ 05_ 27_ 2017.
+90
+Rev AB
+
+File Management
+Create Backup of Laser Database
+1. Touch the Menu button on the Status Bar.
+2. Touch File Management . The File Management screen will open.
+3. Touch Complete Laser Image on the Laser Local (left side) of File Management window. The number next to Complete
+Laser Image refers to the number of files stored in the image.
+4. Touch the Pen next to Complete Laser Image .
+5. Touch Backup to Device in the context menu that opens.
+l TCS will export the entire database the USB device as one complete file. Files are not written to the USB device indi -
+vidually. To import/export only individual files to/from TCS see "File Import & Export" on page 76 .
+l While transferring, if any of the files already exist on USB, a confirmation dialogue opens with the duplicate file
+name and asks if you want to continue. Touch OK to continue the transfer of files or Skip to stop the transfer of a
+file to USB.
+l When Copy All is toggled ON, TCS copies all files without confirmation.
+l You cannot copy an existing font or logo.
+6. Touch Close to close the File Management screen and return to the Home screen.
+7. Restart TCS to see the Backup on USB. Until you restart the program the backup is not visible on the USB device in TCS.
+91
+Rev AB
+
+Touch Control Software+ Training Guide
+Restore a Backup to Laser
+1. Touch the Menu button on the Status Bar.
+2. Touch File Management . The File Management screen will open.
+3. Touch Complete Laser Image on the USB (right side) of File Management window. The number next to Complete Laser
+Image refers to the number of files stored in the image.
+4. Touch the Pen next to Complete Laser Image .
+5. Touch the Restore button to the right of Complete Laser Image you wish to restore.
+6. Touch OK to confirm when prompted.
+7. Touch OK to continue. A message warns you that continuing will erase all TCS files on laser and not to exit during the res -
+toration process.
+92
+Rev AB
+
+File Management
+8. Touch OK to continue.
+9. When the file transfer is complete, restart the Touch Control Software.
+Event log
+TCS+ records an Event Log that can be used to track actions performed by all users. These actions include user login/out, chan -
+ging or editing Jobs, Mark Settings, Line Settings, etc. made anywhere in TCS+. Furthermore, laser system reactions, such as errors
+and warnings, will also write to the log.
+Actions in other user interfaces such as SmartGraph are not recorded in the Event Log.
+Event Log functionality is not supported in PC- based TCS.
+To open the Event log:
+93
+Rev AB
+
+Touch Control Software+ Training Guide
+1. Click on Menu button on the Home page.
+2. Click File Management . The File Management screen will open.
+3. Click the Pen icon next to Event log .
+94
+Rev AB
+
+File Management
+4. Click Show Content . The Event Log will display.
+Event Log Detail
+There are many columns of data and several functions in the Event Log window.
+95
+Rev AB
+
+Touch Control Software+ Training Guide
+Table 7- 2: Event Log Fields & Functions
+Field Description
+SETTINGS Opens the Event log settings.
+(a)
+Illustrates the type on an event.
+Type
+Laser warning
+Laser error
+Internal event other than error or warning
+Event that has been signed electronically
+Timestamp Point of time when the event occurred.
+Timestamp format is ISO 8601
+YYYY- MM- DDThh:mm:ss (24- hour clock, laser time)
+96
+Rev AB
+
+File Management
+Field Description
+User name The name of the user that interacted with the system.
+Role The role of the user that interacted with the system.
+Event ID Identification number of the current event.
+Description A textual description of the event.
+Details Detailed information about the event. If suitable old and new value are captured.
+Signature Electronic signature key if event needed to be signed (see Electronic signatures)
+PAGE Use this button to navigate backwards/forwards within large event logs.
+LEFT/RIGHT
+(b)
+TIMEFRAME Select a time frame to filter for all events that happen within that time frame.
+selection box
+(c)
+Filter selector AUDIT - Show all events that were signed electronically.
+(d)
+SYSTEM - Show all system or internal events.
+ALARMS - Show all errors and warnings.
+ALL - Show all events in given time frame.
+Close Close the Event Log screen.
+Event Log Settings
+The Event Log Settings dialog allows you to configure which events need to be confirmed with an Electronic Signature and also
+allows you to enable and configure an Export Reminder.
+To open the Event Log Settings dialog:
+1. Open the Event log .
+2. Click the Settings icon. The Event Log Setting dialogue will open.
+97
+Rev AB
+
+Touch Control Software+ Training Guide
+3. Configure settings as desired and click Save to save changes.
+l General
+Toggle on Rolling event log to avoid warning or error messages when the log file size limit is reached. When the
+warning limit is reached, the oldest 500 entries will be deleted when writing new logs. If this option is toggled off,
+you will be notified when the size of the log file is close to the internal limitation. Warnings occur at 5 MB and
+error messages assert at 10 MB.
+Rolling event log is enabled by default.
+l Electronic Signatures
+Toggle all actions you want to be signed off before execution. The user will be asked to enter the password
+before the actual action or action group can be performed.
+If electronic signature is enabled for an action, a user specific key is added to event log entries for that action.
+You can enable signature for all actions by toggling the All checkbox.
+98
+Rev AB
+
+File Management
+l Export Reminder
+Toggle on the Export Reminder to prompt the user that an Event Log export is needed. It is mandatory to reg -
+ularly complete this action to free internal memory if Rolling Event Log is disabled.
+Click to toggle Show export reminder on or off as desired.
+When Export reminder is enabled, you can configure the number of days between reminders.
+Exporting the Event Log
+The Event log can be exported to archive the logged interactions for your records. The data can be exported in the following
+formats:
+l PDF document format (.PDF)
+l SQLite3 database (.db)
+To export the current Event log:
+99
+Rev AB
+
+Touch Control Software+ Training Guide
+1. Click on the Main Menu button.
+2. Select File Management from the drop- down menu. The File Management window will be displayed.
+100
+Rev AB
+
+File Management
+3. Click on the Pen icon next to Event logs option.
+4. Click on either Download as .PDF document or Download as database document to save the file to a USB if using TU430
+or you may map to any drive if using PC/tablet (depends on browser settings).
+101
+Rev AB
+
+Touch Control Software+ Training Guide
+Export Contains All Entries
+Download will contain all Event Log entries even if you selected a time period while viewing the Event
+Log. There is no option to export only a part of the Event Log.
+Only database files (.db) can be reopened for viewing in TCS+.
+5. Click either Yes or No when prompted to delete database entries from Event log that will remain on laser system.
+Yes - will delete items from Event Log.
+No - will download the Event Log, but retain items in the Event Log on laser.
+Viewing an Exported Event Log
+Database
+To open formerly exported databases (.db) files:
+1. Click the Main Menu button.
+2. Click File Management .
+102
+Rev AB
+
+File Management
+3. Click Upload . It is not necessary to click on the Event logs option. When you select a .db file, TCS+ will recognize it as an
+Event log without any additional action.
+103
+Rev AB
+
+Touch Control Software+ Training Guide
+Only .db Files May Be Viewed in TCS+
+TCS+ can only open and show event logs downloaded in .db format. Event logs downloaded in .PDF
+files cannot be opened and viewed through TCS+.
+4. Browse to the location of your saved database and select your database file.
+TCS+ will automatically verify the content of your database and open the database for inspection if the selected data -
+base file is valid.
+The file is read only and is not saved to the laser when opened for viewing.
+Following is an example of an exported event log opened in TCS+ with file name circled in red. The live/rolling event log does not
+show a file name at the top and would have a time period drop down menu in the lower left hand corner.
+If the exported database file is manipulated in another software program the TCS+ software will not open the edited file.
+104
+Rev AB
+
+Appendices
+List of Tables 106
+105
+Rev AB
+
+Touch Control Software+ Training Guide
+List of Tables
+Table 3- 1: Functions Available from the TCS Homescreen 18
+Table 3- 2: Menu Functions 21
+Table 4- 1: Date Element Fields 32
+Table 4- 2: Basic Barcode Properties 37
+Table 4- 3: Barcode Representation Properties 38
+Table 4- 4: Barcode Size Properties 38
+Table 5- 1: Description of Mark Settings 45
+Table 6- 1: Default TCS User levels 58
+Table 6- 2: TCS+ Password Parameters 66
+Table 6- 3: TCS+ Password Reminder Parameters 68
+Table 6- 4: TCS+ Login Setting Parameters 69
+Table 7- 1: TCS+ Supported File Types 73
+Table 7- 2: Event Log Fields & Functions 96
+106
+Rev AB
+
+Index
+A G
+Acetone 5 Graphics 89
+Importing 86
+B
+I
+Backup and Restore
+TCS files 90 Import and Export
+TCS files 76
+C
+J
+Connections
+TouchUS 13 Job 18
+Activation (TCS) 23
+Create (TCS) 26
+D
+Mark (TCS) 24
+Jump Delay 44
+Database 21
+Jump Speed 44
+Date&Time 22
+L
+E
+Lenses 22
+Electronic Signatures 98
+Line Setup
+Errors 18
+TCS 46
+Event Log 93
+Line Width 44
+F
+M
+Fonts 80
+Mark Delay 44
+107
+Rev AB
+
+Touch Control Software+ Training Guide
+Mark Set (TCS) 42 , 44
+Marking Intensity 44
+Marking Speed 44
+O
+Off Delay 44
+On Delay 44
+P
+Permissions 22
+Pilot Laser 22
+Pulse Frequency 44
+S
+Specifications
+TouchUS Controller 13
+Stroke Delay 44
+W
+Warnings 18
+108
+Rev AB

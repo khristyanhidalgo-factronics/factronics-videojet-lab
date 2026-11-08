@@ -1,0 +1,772 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\TCS Plus CMark 4 9  01 20 21.pdf
+# cifrado=False bloques=106 caracteres=22209
+
+TCS+
+
+Objectives:
+• Operator Functions
+• Job Creation/Editing
+• Mark Settings
+• Line Setup
+• Users/Roles/Access Rights
+• File Management
+• Service Level Settings
+
+TCS+
+➢ Always installed and accessible (no licensing)
+➢ Exists only on Multi - Core Chameleon boards
+➢ Is part of the CMark version 4.x image
+➢ Lives in flash memory of Q7 on Chameleon board
+➢ Can be accessed by any web enabled device or TU430
+➢ All of the features of TCS, plus added features including Event Log,
+Electronic Signatures option, and enhanced security settings
+➢ To access TCS+: enter IP address of laser into web browser on any
+device on the same network
+
+New Features in CMark 4.7 (released 2019)
+• Most of Web Interface is now available in TCS+
+• Service user Login in TCS+ requires “Daily Password”
+• Focus Finder feature activated via TCS+ only. No other user interface can
+activate. (Only 7340/7440 has Focus Finder in this CMark version)
+• Comms Monitor to check data sent to/from PLC ( EtherNet /IP and PROFINET)
+• Faster boot time for laser
+• Single User Functionality (higher level kicks out lower)
+• Homescreen live without Login
+• System Information page allows .PDF export
+
+CMark 4.9 - New Features
+TCS+
+• Logo import
+• DXF import (as logo or as complete .Job)
+• Group job elements
+• More Pilot Laser modes (now in Main Menu)
+• Easier access to view Event Log
+• Complex Jobs (List, Sequence or Batch)
+• Trigger Queue control (Interlock/ Shutterlock only)
+• Multi Laser Support
+• Anchor point selection (Static Text, Variable Text and 2D codes)
+• Filling options expanded (now matches SmartGraph )
+• “Consider marked after interruption” setting for Variable Text (Mark Once)
+• Head Mounting setting now allows decimals
+• Tool Step Width setting allows decimals
+General
+• CMark updates differently (new version loads after reboot)
+• Expanded Laser Status responses – EtherNet /IP and PROFINET
+
+Touch Control Software
+CMark 4.7 or
+newer only!
+• Must select a level to login (unless disable Password on Start)
+• Preconfigured with 4 Users (Admin, Operator, Supervisor, Service )
+• Can add or edit Users, Roles, Access Rights, and Passwords
+
+Home Screen
+1
+7
+6
+5
+2
+4
+3
+1 Status Bar 5 Line Setup
+2 Preview Area 6 Job
+3 Quick Edit Toolbar 7 Global Functions
+4 Performance
+
+Status Bar
+Nothing wrong, but not
+marking
+Marking
+Warning
+Press “i” for expanded information on specific warning or error
+Error
+
+Global Function Buttons
+
+Selecting a Job
+Touch Pen button in Jobs pane
+Select Manage Jobs
+Click on desired Job from the list
+(job will appear in blue after
+selection)
+Click on the circle next to the job
+name to make the “Active” job to be
+marked
+Click Confirm when prompted
+
+Firing the Laser
+Key switch must be in the ON (closed) position to fire
+Press the Start button
+Laser will indicate Marking during the
+marking process
+Press Stop button to discontinue
+marking
+Laser will indicate Ready to Mark after
+the marking process is complete
+
+Lab Excercise
+Select and Mark Message
+• Select and Activate “Message 1”
+• Mark the Message
+
+Create a Job
+
+Creating A New Job
+Select the Pen button next to Job
+Name and Mark Settings
+Then select Manage Jobs
+Click Create button
+
+Creating A New Job (2 )
+Click Add button
+Select a Job Element
+from the drop - down list
+
+Creating A New Job (3)
+Click in the
+marking field
+to place the
+Job Element
+Configure Element features such as Font,
+variable name and content, etc. in the column
+on right hand side of screen.
+To add other job elements such as date, time, shift and
+barcodes, press the Return button, then press the Add button.
+
+Lab Excercise
+Create New Message
+Font type OCRB1
+A = shift code: A 0700, B1500, C
+2300
+123 = Julian (3 digit) date no offset
+ddmmyyyy = today's date no offset
+23 = fixed text
+000 = serializer : 000 start; 999
+end; increment by 5
+Sell by = fixed text
+ddmmyy = 89 day offset
+Save message as “Lab 2”
+Mark your message at least 2 times to verify serializer is working
+
+A123ddmmyyyy23000
+Sell by ddmmyy
+
+Create/Edit Mark Set
+
+Create New Mark Set
+Click on the Menu button in upper right hand
+corner of screen
+Select Mark Settings
+Create a new Mark Set by
+clicking Create button
+Assign your Mark Set to a Job in the
+Job Edit screen
+
+Edit Current Mark Set
+Several places to Edit
+Mark Sets
+Pen button in Job box in Home screen
+Pen button in message editing screen
+
+Edit Current Mark Set
+In individual Job Element editing
+screen
+Note: Each Job Element can have a
+different Mark Set. Acts like Indexes
+in other laser interfaces.
+
+Mark Settings – Helper Dialogue
+”?” button next to each Mark Setting to give description and
+example of the Mark Setting
+
+Lab Excercise
+Change Mark Settings
+• Create a message with the following information:
+BBE = Fixed text
+Date with format: DD.MM.YY +120 day expiration
+Time with format: HH:MM
+L2= Fixed text
+298= Julian date
+A= Shift Code (A= 6 am; R= 2 pm; Z=10pm)
+• Mark the code
+• Adjust Mark Settings to achieve good quality
+
+Group Elements
+1) Press Add in Job Editing screen.
+2) Select Group from the list.
+3) Click Create button.
+4) Select items to be grouped.
+5) Save
+6) Group appears in Elements list and you can
+treat as a single item. Ungroup if desired.
+Group function
+available in
+CMark 4.9.2 or
+newer.
+
+Layers
+Access Layers
+Configure Layers
+Assign Layer
+to Elements
+
+Create Complex Job
+
+Job List/Sequence/Batch
+Select the Pen button next to Job
+Name and Mark Settings
+Then select Manage Jobs
+Click Create
+Complex Jobs
+button
+
+Job List/Sequence/Batch
+Select which type to create and
+then populate with existing Jobs
+Job List – Contains Jobs with
+numbers assigned to them that
+are then selected and marked
+based on on the voltage received
+via X30 on the Chameleon
+Customer Interface section.
+Job Sequence – A trigger
+impulse initiates a sequence of
+Jobs that will be applied to the
+same product.
+Job Batch - The Jobs of a batch
+will be processed by consecutive
+trigger impulses.
+
+Line Setup
+
+Creating A Line Setup
+Click the Pen button in the Line
+Setup field.
+Click on Manage Line Setups to
+create a new Line Setup
+Click on Create button and then
+name your new line setup
+
+Position and Orientation
+Select form the following: Line Movement, Focus Finder (only on models where
+available), Product Side Selection, Laser Position and Job Orientation.
+
+Position and Orientation
+PRODUCT SIDE SELECTION
+LASER POSITION
+
+Focus Finder
+Focus Finder now in Main
+Menu (Home screen) too
+in CMark 4.9 (not all
+models support Focus
+Finder feature).
+Keyswitch must be armed to use Focus Finder because pilot laser is used and that is part of the
+laser source.
+Enabling Focus Finder temporarily turns on pilot beam and alternates two images very quickly between galvos
+and a mirror in marking head used specifically for focus finding purpose. Images switch too quickly for human
+eye to notice so it looks like one image. Only when in focus will the dot and circle overlap due to the angle of
+mirror in head.
+
+Focus Finder (continued)
+• Enabling Focus Finder temporarily turns on pilot
+beam and alternates two images very quickly
+between galvos and a mirror in marking head
+used specifically for focus finding purpose.
+• Images switch too quickly for human eye to
+notice so it looks like one image.
+• Only when in focus will the dot and circle overlap
+due to the angle of mirror in head.
+
+Line Speed Setup
+If using Configure Manually option for encoder setup remember do not double Encoder
+Pulses in TCS+ or CLARiTY . Only in SmartGraph are pulses doubled.
+
+Fixed Speed
+
+Measure Line Distance
+
+Product Size
+
+Measure Line Speed
+
+Configure Manually
+If using Configure Manually option for encoder setup remember do not double Encoder
+Pulses in TCS+ or CLARiTY . Only in SmartGraph are pulses doubled.
+
+Trigger Settings
+
+Trigger Settings
+Trigger Mode
+‘External Rising’
+-- Fires off rising edge of pulse from trigger source
+‘External Falling’
+-- Fires off falling edge of pulse from trigger source
+‘Internal Once’
+-- Used for static print
+‘Internal Continuous’
+-- Will fire continuously
+-- Care is necessary when selecting this option as
+dangerous situations may occur
+
+Marking Field and Test
+Note : Can print from this tab, but will print active message NOT the
+marking field boundaries. Tests your Line Setup.
+
+Lab Excercise - Line Setup (Fixed Speed)
+• Use message created in previous lab (shown below)
+• Change to product movement (Fixed speed)
+• Create a new Line setup (name)
+-- Set up ‘wizard’
+Position and Orientation
+-- Direction of Line Movement
+Line Speed
+-- Enter Fixed Speed
+• Meters / min
+Trigger
+-- Start Distance
+• Should be not less than 50% of the marking area of the lens in that
+axis
+• This is the physical distance of the Product Sensor to the laser
+• May need to be longer to allow mirrors time to reach start position
+-- Blocking Distance – 90% of Product pitch
+
+Lab Excercise - Line Setup (Encoder)
+• Use message created in previous lab (shown below)
+• Change Line Setup to use Encoder and Product Detect
+• Investigate the following options available for setting the Encoder
+values:
+✓ Measure Line Distance
+✓ Enter Product Size
+✓ Measure Line Speed
+✓ Configure manually
+• Use calculated values to take sample marks
+
+Main Menu
+
+Main Menu – New Order & Functions
+▪ Only place to Create Mark
+Settings
+▪ View Event Log
+▪ Easier access to Pilot Laser and
+Focus Finder. New patterns for
+Pilot Laser also included!
+
+Main Menu – Event Log
+View the Event Log
+here.
+Download Event Log
+is still in File
+Management .
+
+Event Log – View/Filter
+Access this view from Main Menu now. Different than previous.
+Access to
+File Management only allows for download now and not viewing.
+Electronic
+Signatures and set
+Export Reminders
+Export Event Log
+from File
+Management tab
+as .PDF or
+Database (. db ) file
+Timestamp in
+Event Log is
+always UTC (+0)
+even when time
+zones applied or
+daylight saving
+time.
+Define Log time to view (does
+Filter by Event Type
+not define download period)
+
+Event Log
+Event Log Limits
+• Warning Level: 5 MB
+• Error Level: 10 MB
+Rolling Event Log Option:
+If setting is enabled (default) the oldest 500 Entries are deleted as soon as the Warning
+Level is reached.
+If this setting is disabled (interesting for regulated markets):
+• Warning shown when Warning Level is reached with a reminder to export and delete
+the DB.
+• Error shown when Error Level is reached with a reminder to export and delete the DB.
+
+Event Log Settings – Electronic Signatures
+✓ Enable requirement for Electronic Signatures for all functions or for
+individual functions
+✓ When enabled user will have to sign in for each action that requires an
+electronic signature each time that action is performed.
+
+Pilot Laser Modes
+Easier access now in
+Main Menu
+Left Column: Right Column:
+Can enable combination of Only one Mode can be
+Modes at the same time. enabled at a time.
+
+File Management
+
+File Management (Setup Menu)
+➢ Messages may be transferred from one laser coder to
+another using USB (TU430) or via Ethernet (Web Browser)
+TU430 version
+Messages are in XML format
+• Must be in a folder called TCS
+• This folder is created on USB when selecting to move
+messages
+Web Browser
+Messages are in .job format
+• Put into your downloads folder or specified location
+• Files for upload do not have to be in any specific folder.
+➢ Laser coder backup to USB stick or via Web Browser
+-- ‘Complete laser Image’ OR
+-- Can select what to copy from Options
+
+File Management
+File Upload/Download
+➢ TU430 Touchscreen
+• USB only (need folder named “TCS”)
+➢ PC/Tablet
+• Select where to download (varies by
+browser and settings in browser)
+Fonts can be imported here
+Logos can be imported here
+Download Event Log from here. View can be
+done from Main Menu directly. Change from
+previous versions.
+Firmware = CMark (Create backup or load CMark) ;
+only use PC to load CMark not TU430.
+7340/7440 only (typically)
+
+Firmware (CMark)
+Update/Backup
+CMark Update and Backup can now be done in TCS+, but
+called Firmware
+Beware: When updating Chameleon to CMark 4.7 a BIOS
+update will be performed immediately following the load
+of CMark. Following message will appear.
+Do not interrupt this BIOS update!!!!
+Board will no longer be usable if interrupted. After BIOS
+update is finished, it is necessary to unplug/cut power to
+the system. Keypad is inactive until after power down.
+
+Font Import Tool
+• Font Import Tool
+-- Supports . fn , . fnt , . ttf , . otf , . pfa , . pfb , and . svg
+Upload button (Browser)
+or Fonts>Transfer on
+TU430
+
+Logo Import
+• Logos must be uploaded and converted to . lgo file type before usable in Job.
+- svg , plt , mcl, bmp, jpeg, gif, pdf, ps , eps, ai, dxf and dwg can be imported
+Upload button
+(Browser) or Logos
+Change Logo name
+>Transfer on TU430
+(if desired) and
+choose Import Filter
+(default is standard)
+
+.DXF/.DWG Import
+• Choose to import as a Logo or as a Job.
+• When imported as a Job all vectors and text are editable
+• When imported as Logo vectors are not editable; imported like normal logo
+Upload button
+(Browser) or Logos
+When . dxf /.dwg file type is noticed you will be
+>Transfer on TU430 prompted to choose import as Job or import as Logo
+
+Users, Roles and Access Rights
+
+Users, Roles, and Access Rights
+Top Level – Sign in level
+Users
+Pre - programmed set of Access Rights
+(allowed functions)
+Roles
+Individual functions within a Role
+Access Rights
+
+Users, Roles, and Access Rights
+Default Users Password Also a Role? Can Duplicate?
+Operator 0000 Yes Yes
+Supervisor 1111 Yes Yes
+Administrator 2222 Yes Yes
+Service Daily Password No No
+➢ There is only one Service and this user cannot be duplicated or changed
+➢ Service has additional access beyond Administrator
+➢ Service can assign some Service level access rights to other Users, but some
+Service functions such as changing Laser Type, Serial Number, etc. cannot be
+done by any user other than Service and requires Daily Password.
+Roles and Access Rights
+Administrator access required for adding Users and for changing Roles/Access Rights
+
+Security Settings
+Configure new security features through Settings button in Users menu
+Includes more control over password creation, expiration, and methods of login
+
+Security Settings -
+Passwords
+Password policies can be
+configured to include:
+✓ Minimum length
+✓ Minimum upper/lower case/special characters
+✓ Maximum number of repeated characters
+✓ Check for use of repetition of password from previous
+✓ Prevent using password similar to user name
+✓ Set maximum number of failed login attempts before setting user to Inactive status
+
+Security Settings - Reminder
+Set Reminders for password change/account expiration
+• Users can be required to change passwords regularly
+• User accounts can be set to expire on a specific date
+• Reminders before these actions occur are set here
+
+Security Settings - Login
+• Different methods for customizing Login
+• Auto Logout must be enabled here and then can be customized for
+each Role in Roles/Access Rights screen. (Enable here and set time
+period for each role in Roles/Access Rights).
+• Single User Access (if enabled) only allows one User to be logged in at a
+time. Service and/or Admin can kick off lower level users (Service always
+wins).
+
+Single User - Examples
+Caution: Remember to log off if Service
+or Admin or else no one else can log in.
+
+User Controls
+Administrator can set
+for each User:
+Set a password
+for User
+Set days between
+password changes
+or specific date for
+account expiration
+Service does not have
+Change User Status
+access to all displayed
+functions.
+Require User to set
+password on login
+
+Role Management
+Set Auto Logout for each Role:
+✓ Auto Logout in Security
+Settings can be set to a default
+value for all new Users (Auto
+Logout must also be enabled in
+User Security Settings or Role level
+Auto - Logout will not function).
+✓ Adjust for each Role
+individually in Roles and
+Access Rights menu
+
+Laser Unit Settings – Overview
+Laser Unit Settings
+Some access rights cannot be
+assigned to Admin. Only
+Service User (new) can make
+changes such as serial number,
+laser type, etc.
+Service User login is always the
+daily password (same as CIJ
+and TTO).
+Most of Laser Web
+Interface has been
+migrated into here.
+
+Laser Unit Settings
+Main menu (Left column) –
+Right column changes based on Main Menu
+Items in red only shown when logged in as
+selection (in this case Laser Configuration)
+service or User’s Role has Access Rights
+
+Laser Unit Settings – Laser Configuration
+Previously located in Web Interface. Only Service login can change the items in red.
+Service login can grant access to Admin user for all other functions on this tab.
+
+Laser Unit Settings – Date and Time
+
+Laser Unit Settings – Pilot Laser
+• If Pilot Laser is installed, needs to be check marked here to let system know it exists.
+• Should always be check marked here.
+• Pilot Laser button in Main Menu for easy access.
+
+Laser Unit Settings - Network
+
+Laser Unit Settings - Permissions
+Permissions = IP addresses for devices allowed to fire laser ( SmartGraph )
+CMark 4.7 and higher: discovers connected IP address and allow you to
+add you IP without typing IP in again.
+
+Laser Unit Settings – External Interfaces
+• Enable EtherNet /IP or PROFINET
+• Configure IP for MIC board
+
+Laser Unit Settings – Comms Monitoring
+• Access to Monitoring from External Interface tab
+• Live display on info accepted by laser from PLC and data going to
+PLC from laser
+• Logging function also available
+
+Laser Unit Settings – Comms Monitoring
+Data accepted by laser from PLC Data being sent from laser to PLC
+
+Laser Unit Settings – Comms Monitoring
+Save creates a log file
+in .txt format
+
+Laser Unit Settings – AllPrint Basic
+
+Laser Unit Settings – AllPrint Basic
+• Remember to Activate after upload.
+• Star inside circle indicates Active file.
+
+Laser Unit Settings – Arc Compensation
+Service User has to assign Access Rights to Admin in order for Admin to use Arc
+Compensation. Service is only User with access unless Access Rights extended.
+
+Laser Unit Settings – Lens Compensation
+Each marking head will have its
+own Lens Compensation file that
+needs to be uploaded.
+
+Laser Unit Settings – Lens Compensation
+Each marking head will have its own Lens Compensation file that needs to be uploaded.
+Must Activate the file after you Upload it. Make sure it says “Active” to the right of file name.
+
+Laser Unit Settings – Remote Service
+Only use for access to CLARiTY
+Set to IP of laser for TCS+ view;
+IP of CLC for CLARiTY view
+Remote Service enabled here and IP for Remote Access defined (TCS+ and CLC
+only; no SmartGraph ). Remote Access View button will take you to CLARiTY as long
+as IP in bottom box set correctly and Remote Access Available is checked.
+
+Laser Unit Settings – System Database
+Don’t use Delete Current System Database – only
+meant for manufacturing
+Default settings for Admin only allows Download.
+Service user can give rights to Upload.
+
+Laser Unit Settings - Logging
+• Don’t create Core Dump unless requested
+by tech support. Only software
+developers will have any use for it. Might
+be requested as part of an escalation.
+• Was called Crash Dump in Web Interface.
+
+Laser Unit Settings – Multi Laser Support
+CMark 4.9
+and newer
+• Allows 2 lasers to be controller by single TU430 or tab in web browser.
+• Leader/Follower with all data, line setup, etc. being generated by Leader. Follower marks
+half the characters by being sent vector information from Leader.
+
+Laser Unit Settings – Trigger Queue
+CMark 4.9
+and newer
+• Can choose to preserve Triggers already in buffer when Interlock/ Shutterlock Open.
+• Triggers not preserved when an Error occurs and have to Start again.
+• Should only be used in mark on the fly with encoder & product detect. No indexing
+applications.
+
+Main Settings
+
+Main Settings
+Decimals now
+accepted
+Pilot Laser used to be turned ON/OFF here, but now moved to Main Menu for easier access.
+
+System Information
+
+System Information
+• Accessed through Home Screen
+• System Information has extended information including: temps,
+board and software versions.
+• Licenses is info about open source software used
+• About only give version of CMark and TCS+
+• Help refers you to the manual (not on the laser)
+
+System Information - Detail
+Mainboard Temp near EEPRM
+by SD slot/USB
+
+System Info - continued
+Marking Head Temperatures
+Environmental Temperature is CP -
+Light board temperature
+Temperature is the temp inside the
+marking head (brown/white wires in
+marking head that run back to CP - Light
+
+System Info -
+continued
+
+System Information – Generate PDF
+Can generate a PDF doc to
+download with all info from System
+Database screen.
+
+TU430 Touchscreen
+
+Overview – TU430
+➢ Passive display to be used with TCS+ only
+➢ Touchscreen monitor; no processing onboard!
+➢ Uses customized HDMI cable/connector for power and signals
+➢ Hardwired on display side
+➢ IP 65
+➢ No power button
+➢ 2 USB ports
+➢ Calibrate touchscreen in TCS+
+
+Connect to 7340/7440/3x40
+➢ Port on rear of supply unit
+▪ Factory installed or field upgradeable
+▪ Use IP65 cover on cable
+▪ Note warning stickers
+▪ Cap for port available as spare
+Make customers aware that
+HDMI port on laser will
+damage regular monitors
+due to voltage on HDMI (not
+a standard HDMI)!!!!
+
+Connect on 3210
+➢ HDMI port inside connector compartment on 3210.
+➢ Service/Customer needs to remove the housing from the TU430
+connector to reveal only the HDMI connector.
+-- Unscrew upper portion of housing.
+-- Then pull from cable side to slide cable and connector out of housing.
+Make customers aware that HDMI port on laser will damage regular
+monitors due to voltage on HDMI (not a standard HDMI)!!!!
+
+t??/01#"&54>32#".#"326632!;*Id:+
+q2ts???99?/2901#".55#".54>324>32&&#"3267h0b<AZ8 @_?3U*h-Q-
+-$'?5$9
+;&
+%IlH+lkih&87|!:E:A??01#"&54>324&#"32>7=bHv<bHDa=WUW3A%VW4A$_r@_r@8mn8`~F8`~X+vF:G?2?301#!"&54633&54677663232|RtI.&1:$E0<G??901#!"&54677>54.#"#"5467>32!2&U5E
+
+QUUU????9++++222?01Y%#".5##".'##".5463323>332q0%$00""0/%$06-.B0 "
+I!IL??9?01Y#".'.54>327>32'C65C&1%
+
+/#&:
+$:
+&_"
+"15
+#U8*E7
+HIX++????9999???9/01#".#"32###"&'&54>3232>7!32>32#".54>7#"&54>337>32!7>32 /"=[|P:R!."mT&
+HIX++???9901%#".7!32>32#".54>7#"&54>337>32!2#".7>321%$0oT&
+.L3SG>!3&%/ l_"qMb|KHIX+CUX-
+JKX++?]q+]q+?9/?9?9/2399}01#".'&54>3232>7667#".54>3276632&&#"32>72U|U>3%&8
+HIX++??99//3301#".7>32#".54>76632+
+D7
+T%*"%08x|WI9-I9-pn"3+
+TUDEX+?33?39/3232339=/3301#"&7#"&'#"&76633266332Z'85#i#2'Pi

@@ -1,0 +1,1248 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\3210 Tech Training 05 12 21.pdf
+# cifrado=False bloques=104 caracteres=42689
+
+Videojet 3210
+30 Watt CO Laser
+2
+(Only for Asia and India)
+Technical Training
+Rev 3/30/21
+
+Table of Contents
+1) Safety
+2) Features
+3) System Overview
+4) Inputs/Outputs
+5) CMark and TCS+ Software Summary
+6) Maintenance
+7) Troubleshooting
+
+Learning Objectives
+At the end of this training class you will be able to :
+• Describe where the 3210 fits into the Videojet laser offerings.
+• Identify the function of the 3210 components
+• Safely install a 3210 laser
+• Demonstrate ability to perform service level functions with TCS+
+software
+• Troubleshoot common problems associated with 3210 laser
+Training on TCS+ user interface for message creation, line setup
+and mark settings is contained in a separate training.
+
+1. Safety
+
+Summary of Safety for 3210
+• Lens contains Zinc Selenide so treat as hazardous if
+broken.
+• No performance level rating.
+• 48V to Bifrost board as long as main power switch on
+back is on. Beware inside system even when power off until
+capacitors have discharged (LEDs on board fade to off).
+• Recommended OD =>6 for all Videojet technicians to
+cover 10 - 100 Watt CO .
+2
+
+Laser Hazards
+➢ Exposure of your eyes
+➢ Exposure of your skin to the beam
+➢ Fire
+➢ Fumes
+➢ Electrical
+➢ Mechanical
+➢ Lens
+
+Exposure of Eyes
+
+PPE - Eyewear
+– Eyewear must be for the
+appropriate laser wavelength,
+attenuate the beam to safe
+levels, yet be comfortable
+enough to wear
+O.D. => 6
+@10,600
+nm for
+CO laser
+2
+
+Exposure of Skin - Wavelength
+
+Fire Hazards
+▪ Material
+▪ Laser settings
+▪ Ignition of gases / fumes
+▪ Flammable solvents
+▪ Fire extinguisher
+▪ Keep area clean
+▪ Maintenance
+
+Fume Hazards
+▪ Some materials, such as certain plastics, emit toxic gas
+when they burn under a laser beam
+▪ Consult the manufacturer of material
+▪ Turn on ventilation system (Fume Extractor)
+Fume Extractor
+Direction of product movement
+
+Fume Extractor
+
+Electrical Hazard
+Specific Hazards
+▪ Main power switch located on back of unit.
+▪ Mains voltage present at power supply when system in standby mode.
+▪ A fter switching off the mains voltage, the capacitors are still charged for a
+certain time! At least as long as the green LED in the power supply is still
+lit. (~10 seconds). Ensure all LEDs on keypad/Bifrost have faded to off
+before touching any internal components.
+▪ BEFORE opening the system, AC must be switched off, the plug must be
+disconnected and the system must be secured against being switched on
+again! Until you reach this state, the capacitors may still hold a charge.
+General High Voltage Shock Hazards
+▪ The most common laser - related cause of death.
+▪ Do not disable enclosure safety switches.
+▪ Do not wear anything metal like a ring, bracelet, watch, belt buckle,
+earrings, or keys.
+▪ Never stand on a wet surface.
+
+Mechanical Hazards
+• Moving equipment
+• Loose fitting clothing, ties, and jewelry should not be worn
+• When to put the system into Emergency Stop mode
+
+General Safety – Modification to
+Equipment
+• Perform only those
+equipment modifications
+which have been formally
+approved (FSB)
+• Never perform an
+unauthorized modification
+to the design of a piece of
+VTI equipment
+
+Lens Hazard
+The laser system contains optics constructed from Zinc Selenide. When broken into
+small pieces or exposed to acidic conditions, they may give rise to harmful products.
+In normal use however, the laser optical components are not considered to be
+hazardous.
+In the event that a laser optical component is damaged in any way, the material and
+any packaging must be treated as hazardous waste and disposed of accordingly.
+
+Cleaning the Lens
+• Use lint - free wipe and solvent
+• Acceptable solvents:
+– Acetone
+– Methyl alcohol (methanol)
+– Isopropyl Alcohol (rubbing alcohol)
+– Do not use CIJ makeup or cleaning solution
+• Flammable
+• Irritants
+
+Laser Accidents
+Statistically laser accidents are due to several factors:
+• Eye exposure unexpectedly during alignment, eye
+protection not being worn, equipment malfunction, high
+voltage mishandling, non - beam hazards, incorrect
+eyewear, inhalation of air contaminants, viewing of laser -
+generated plasmas, and in general using equipment
+incorrectly
+• The most common type of injury is to the eye (around
+70%). There have been a few deaths, mostly caused by
+electrocution or fires.
+
+General Safety
+Class 1:
+Not capable of emitting accessible laser radiation in excess of what
+the AEL allows for class one.
+Example: Laser Printer, CD player
+Class 2:
+Not capable of emitting accessible laser radiation greater than AEL allows
+with .25 exposure duration.
+▪ Example: Pilot laser and He - Ne alignment Laser
+Output must be less than 1mW
+Class 3:
+Potentially hazardous if focused at the eye or skin for less time than what’s
+allowed for class 2
+May cause acute eye hazards
+▪ Example: Laser Pointer, level/guide
+Output is greater than 1mW but less than 0.5W
+Class 4:
+May present a serious fire, skin or diffuse reflection hazard. Output
+exceeds that of a Class 3.
+Output is greater than 0.5W
+Laser = Class 4
+▪ Example: CO2 and YAG laser tubes
+Pilot Laser = Class 2
+Recommend Class 1 installation (shielding, interlocks, etc )
+
+Reflections of Light
+
+Safety Recommendations
+ANSI Z 136.1 - 2014
+• Create a standard of measurement
+• Determine thresholds where radiant
+energy becomes a hazard
+• Categorizes laser into four basic
+hazards
+• Provides recommendations for the
+safe usage of lasers and laser systems
+between 180nm and 1mm
+
+Laser Safety References
+• CDRH - Center for Devices and Radiological Health
+– An agency within the U.S. Food and Drug Administration which publishes
+and enforces legal requirements on laser product manufacturers. For copies
+of the CDRH regulations, contact: CDRH (HFZ - 312), 2098 Gaither Road,
+Rockville, MD 20850, Telephone (301) 594 - 4654
+• ANSI/OSHA - ANSI (American National Standards Institute)
+– U.S. organization that publishes standards for laser users. Their laser safety
+standards are not laws, but they form the basis for state and OSHA
+requirements for the use of lasers. For copies contact ANSI in New York at
+(212) 642 - 4900 or the Laser Institute of America, at Telephone (407) 380 -
+1553, Fax (407) 380 - 5588
+• OSHA - The Occupational Safety & Health Administration
+– Does not have specific laser safety requirements. However, if they are called
+into a facility, the inspectors follow published guidelines (OSHA Instruction
+PUB 8 - 1.7 Guidelines for Laser Safety and Hazard Assessment) that are
+based on an earlier (1986) ANSI Z136.1 standard.
+
+Safety Guards
+• A safe installation requires that the laser
+beam be guarded utilizing interlocks
+Length must be sufficient to
+prevent skin and eye contact
+with beam path.
+Ceramic tile should be affixed
+opposite the laser head (other Laser hazard stickers
+side of product) to absorb should be affixed to the
+Insert laser head here.
+guard in clear view.
+laser light if no product is
+Removal requiring
+present (if fired).
+special tools.
+Side View of Guard
+
+Safety Guards
+• Any parts of the safety guard which can be
+removed (slides or hinged parts) should be
+interlocked so the laser is paused (shutter
+closed) when those parts are open or
+removed
+Top View of Guard
+Sliding cover to allow
+PRODUCT access to conveyor PRODUCT
+Removable parts
+should be electrically
+interlocked in
+CLOSED position.
+No laser reflective
+materials should interrupt
+the beam path (metal)
+
+2. System Overview
+
+System Overview
+The Videojet 3210 CO laser removes the need to compromise on
+2
+quality versus cost.
+Advanced engineering and extensive laser application expertise are combined into a
+refined design that makes laser coding achievable for everyone.
+• 30 Watt CO laser
+2
+• One box design with IP54 rating
+• Pilot laser and integrated Focus Finder beam are standard
+• User Interface: TCS+ via TU440/TU430 Touch Handheld or web browser
+
+System Specifications
+• Three wavelengths available: 10.6, 10.2 or 9.3 micron
+• 90 degree or 0 degree marking heads (requires both new laser tube and new marking head
+with Bifrost board to change head orientation in field; need to order correctly)
+• Three lens options: 100/150/200 mm focal distance
+• Autostart and PNP/NPN for product detect can be configured in software
+• Optional stand available.
+• TCS+ only (no SmartGraph or CLARiTY )
+Speeds:
+• Characters per second: 1,300 cps (2 mm characters)
+• 400 parts per minute (15 characters alpha - numeric)
+Standard Fonts:
+• Standard laser fonts included
+• Simplified Chinese fonts included
+• Font import tool onboard
+• Variables: Text, date, time, serial number, shift code
+• Graphical Elements: Ellipse, Rectangle, Polygon
+• Logo Import tool including .DXF/.DWG
+• Barcodes
+• SARs such as Ultimate available; No EtherNet /IP or PROFINET available
+
+System Specifications
+Dimensions:
+• 641 mm length x 167 mm width x 191.5 mm height
+• Weight: 18 kg
+Environmental Conditions:
+• Internally Air Cooled
+• Ambient Temperature: 5 ° to 40 ° C (70% duty cycle with 100% laser power)
+• Humidity range : 20 - 90 % non - condensing
+
+3210 versus 3340
+3340
+3210
+• 2,000 characters per second
+• 1,300 characters per second
+• IP54 or IP65 option
+• IP54
+• Two box design with optional umbilical lengths
+• Single box design (compact)
+• 90 or straight marking head with optional
+• 90 or straight marking head (no
+BTU/Bus
+BTU/BUS)
+• Four marking heads and 6 - 8 lens options per
+• One marking head with 3 lens options
+head
+• Limited I/ Os
+• More I/ Os
+• TCS+ user interface
+• TCS+ or SmartGraph or CLARiTY user
+• No performance level rating for safety
+interfaces
+• Pilot laser and Focus Finder standard
+• EtherNet /IP or PROFINET capable
+• Performance Level Rating D or E possible
+(with FASS)
+• Pilot laser optional; no Focus Finder available
+
+Connectors and Accessories
+Digital I/O HDMI
+Interior (covered) Connectors:
+RJ45
+USB
+• USB – Rescue Stick or backup/load
+CMark*
+• HDMI - TU440 or TU430 only!
+• RJ45 – Connect TCS+ via browser
+• 25 pin Sub - D - Digital I/O Product
+Detect 1
+Exterior Connectors:
+Encoder
+• Product Detector (3 pin DIN)
+– or -
+nd
+• Encoder (4 pin DIN) – or -- 2
+Product
+detector ( Optex dual detect
+Detect 2
+accessory)
+Power
+Switch
+System monitors if Product Detect
+and Encoder are connected.
+Power
+Cord
+* - see notes in software section regarding limitations
+
+Connector Compartment
+Additional set of cable feedthrough blocks
+Screws for connector
+available as spare part. Set includes:
+• 9 mm opening (2 blocks) compartment cover
+• 8 mm opening (1 block)
+• 6 mm opening (1 block)
+
+Correct Orientation Cable Feedthrough
+Incorrect
+Correct
+Orientation
+Orientation
+• Notch (cutout) on cable feedthrough block should face inside compartment.
+• Tether should be oriented down toward fan.
+
+Product Detect/Encoder Options
+➢ Two product detects and one encoder
+are already configured in software so that
+setup with those accessories is quick and
+easy.
+➢ Other accessories can be used and can
+be configured manually through software.
+➢ Either PNP or NPN accessories can be
+used. Selectable in TCS+ interface.
+➢ Encoder and Product Detect connection
+monitored by system by looking at drain
+on voltage outputs for these items.
+Disable errors in TCS+ if product
+detect/encoder will be used but will not
+be powered via the laser system.
+
+3210 Accessory Setup in Software
+Enable accessories in Line Setup – Already configured in drop - down
+• Optex Detector (PNP)
+• Optex Dual Detector (2 PNP product detects with bracket of known
+distance; no encoder needed). Assembly with 2 product detects (one 3 - pin DIN and
+one 4 - pin DIN) and bracket. Known distance already set by software when this device is
+selected (must use included bracket). Not appropriate for all applications.
+• Generic PNP or NPN choice in case using other product detects or
+encoders (switch in TCS+ from PNP to NPN)
+• Nemicon Encoder (2,000 pulse; 204 mm distance per rotation) – pulses and
+distance per revolution already set in software when selected.
+AL - 81182 Nemicon Encoder
+AL - 81282 Optex Detector
+AL - 82214 Optex Dual Detector
+
+Optex Dual Detector
+Dual detector accessory detects the speed of the product and automatically
+adjusts the line speed set in laser for each separate product. This allows for
+a variable speed belt and for users to move the laser from line to line with
+the greatest of ease.
+Considerations:
+• Gap between products: Minimum 40 mm gap
+• Constant belt speed: Changes in speed while product being sensed will lead to
+inaccurate placement.
+• Material reflectivity : The speed sensor sensitivity must be set correctly. For more IR
+reflective products, a lower sensitivity is recommended. For less IR reflective products,
+a higher sensitivity is recommended to minimize double trigger likelihood.
+• Type of ambient light: Overhead florescent tube or LED office lighting, no direct
+intense sunlight or incandescent lighting onto front of sensors.
+• Product Shape: The line speed sensor works by detecting a difference between
+nothing being there (low amounts of infrared light reflected back into the sensor) and
+something being there (large amounts of infrared light reflected back). The sharpness
+of that transition is provided by the shape and material of the item to be printed onto.
+
+Optex Dual Detector – Product Shape
+Strong sharp edge
+This is the best shape for marking placement results.
+Soft/rounded/draft edges
+These products will require more adjustment of the sensitivity value
+and alterations to the nominal marking offset so that the marking is
+placed in the correct position. Placement variability will also be larger
+but is in general still perfectly acceptable.
+Odd shapes
+A higher sensitivity is likely needed to ensure that double triggers do
+not take place. The item material should also be more reflective.
+Gaps in product
+This will lead to double triggers. A Product Detect and Encoder is
+required. Do not use Dual Detector.
+
+Optex Dual Detector – Placement of Detectors
+Detector with 4 - pin DIN connector
+should always be the first to see
+the product.
+Detector with 3 - pin DIN connector
+should always be located
+downstream (closer to the laser).
+
+Optex Dual Detector - Detector Sensitivity
+Adjust the trigger sensitivity via the potentiometers.
+• Green LED indicates that the light barrier is on.
+• Yellow LED lights up during product detection.
+When adjusting the sensitivity make sure the sensors are adjusted to the same
+detection distance. That distance must not exceed the depth of the conveyor!
+
+TU440 Touchscreen
+• Replacement for TU430 (uses same display
+as 1860/1580 CIJ printers)
+• IP65
+• Stainless steel
+• Two USB ports (on left side of screen)
+• 4 meter cable
+• Connects via specialized HDMI cable
+(power over HDMI)
+• Same mounting pattern as TU430
+• New internal parts/different spares than TU430
+Must remove housing around connector to use with 3210.
+Improved covers for
+Unscrew cap at junction with cable.
+USB ports
+
+TU430 Touchscreen
+• Replaced by TU440, but still works
+with Bifrost and Chameleon - based
+lasers.
+• IP65
+• Stainless steel
+• Two USB ports
+• 4 meter cable
+• Connects via specialized HDMI cable
+(power over HDMI)
+Must remove housing around connector to use with 3210.
+Unscrew cap at junction with cable.
+
+Stand – Type M
+• Only for 3210 laser (not for other Videojet lasers)
+• Rotation for laser: +/ - 90 degrees
+
+Stand – Type M
+
+Mounting the 3210
+• Mounting Pattern (12 holes, M6 screws)
+• Only approved mounting position is horizontal (any other position
+voids IP rating and TUV certification), but will still function.
+
+Keypad & Indicator Lights
+Laser Emissions Indicator (Red)
+Standby/ Power On
+Keyswitch / Stop
+Laser
+Error
+Start
+(Blue/White)
+Arm Laser button
+Emission
+Indicator
+button
+(Green)
+Indicator
+(Yellow)
+(Red)
+• Flashing = Open
+• Solid = Closed
+• Off = Key removed
+• Keypad and Lights are a replaceable sticker.
+• Buttons are on the Bifrost board.
+• Keyswitch is part of keypad. “Insert” and “Remove” key in TCS+ software .
+
+Keyswitch Behavior
+Keyswitch
+LED
+Keyswitch
+Button
+• Keyswitch button is on Bifrost board.
+• Controls DC voltage to laser tube on/off.
+• Keyswitch disabled on delivery of new laser.
+• Must enable in TCS+ (password required).
+• After activated then the button on keypad will be usable.
+• Keyswitch can be locked out for servicing laser by first opening Keyswitch button
+(LED blinking) and then in TCS+ you can “remove” key (lockout for service).
+• Keyswitch LED OFF on keypad means Keyswitch is “removed”.
+• When you boot laser the key is in same state as when laser was shut down.
+
+Keyswitch Behavior
+Keyswitch
+LED
+Keyswitch
+Button
+Open/Close Key is on Keypad Remove/Insert Key is in TCS+.
+of Laser. Use this in the same way as
+Use this to arm/disarm laser removing/inserting physical key
+emissions. such as for “Lockout/Tagout”.
+Who can Insert/Remove key:
+• Systems delivered with Key Removed.
+• By default only Service and Admin Roles can Insert/Remove
+• Access Rights for other Roles can be changed to allow Insert/Remove Key.
+
+Block Diagram
+
+Bifrost Board - Overview
+• Main control board
+• Battery (CR2032) buffers RAM and retains
+dynamic data such as date, time, variables. Will
+• Uses CMark (minimum version 4.11)
+boot without battery.
+• Paired with marking head; only available
+• Buttons and LEDs integrated in board
+as a set. Do not separate!! Tuning for
+instead of separate keypad
+specific galvos are saved on this board.
+
+Bifrost – Top View
+Battery
+Fan Connector
+48V DC
+Terminals
+from PSU
+48V DC
+Terminals
+to Laser
+FPGA DSP
+
+Bifrost LEDs and Buttons
+Stop Button Start Button
+Emission LEDs
+Power Fail LED
+(Red)
+(Red)
+Alive LED
+Error LED
+(Flashing Green)
+(Amber)
+Emission LED CI Voltage LED
+(Red) (Solid Green)
+Keyswitch LED
+(Green)
+Keyswitch
+Button
+Status LED
+(White)
+Standby LED
+(Blue)
+Power Button
+Service LEDs are visible from connector compartment
+• Power Fail LED – lit when issue with power on board
+• Alive LED – DSP alive
+• CI Voltage LED – power to the customer interface section
+
+Bifrost – Bottom View
+Laser I/O
+Customer
+I/O
+I/O
+Connector
+for
+Encoder
+and
+Product
+Detect Ethernet
+HDMI
+for TU4x0
+touchscreen
+Reset IP for
+only!
+Ethernet
+port via
+TU4x0 or via
+USB
+keypad
+for Rescue
+combination:
+Stick or
+Stop +
+loading/backup
+Shutdown,
+of CMark only
+Galvo Connectors
+PWM Driver Stage
+Q7 Module
+Start
+
+Digital I/ Os - Summary
+Inputs
+• Start
+• Stop
+• External Job Selection (5 bit)
+Outputs
+• Marking
+• Shutter Closed
+• Error
+• Ready to Mark
+• Acknowledge Job Change
+Safety (no Performance Level)
+• Shutterlock
+• Interlock
+
+Digital I/ Os - Inputs
+Pin Direction Signal Polarity
+1 IN Interlock IN Active Low
+2 IN Start Active High
+3 IN Stop Active Low
+4 IN Shutterlock IN Active Low
+5 IN Data 0 Active High
+6 IN Data 2 Active High
+7 IN Data 4 Active High
+11 IN Customer Interface Voltage IN -
+13 IN Customer Interface GND IN -
+18 IN Data 1 Active High
+19 IN Data 3 Active High
+20 IN External Event to Trigger Data 0 - 4 Active High
+
+Digital I/ Os - Outputs
+Pin Direction Signal Polarity
+8 OUT Marking Active High
+9 OUT Customer Interface Voltage OUT --
+10 OUT Customer Interface Voltage GND --
+12 OUT Error Active Low
+14 OUT Interlock Out Bridge to Pin 1 to close Interlock
+15 OUT Ready to Mark Active High
+16 OUT Shutterlock Out Bridge to Pin 4 to close Shutterlock
+17 OUT Shutter is Closed Active High
+21 OUT Customer Interface Voltage OUT --
+22 OUT Customer Interface GND OUT --
+23 OUT System 24V OUT --
+24 OUT Acknowledge Data 0 - 4 Active High
+25 OUT System GND OUT --
+
+Digital I/ Os – Interlock & Shutterlock
+• Both Shutterlock and Interlock circuits must be closed in order for laser to
+fire.
+• Wire safety switch based on desired behavior (typically choose only one):
+• Shutterlock – Laser tube stays powered, but shutter closes to block any beam.
+Better for applications where enclosure door is opened and closed frequently
+and quick recovery is required. Approximately 500 ms delay after Shutterlock
+closed (confirmation prior to launch).
+• Interlock – Laser tube power removed and shutter closes. Preferred for mark
+on the fly applications because safer, but longer recovery time after door is
+closed. Approximately 5 seconds delay until Laser Ready .
+Pin Direction Signal Polarity
+4 IN Shutterlock In Active Low
+16 OUT Shutterlock Out Bridge to Pin 4 to close Shutterlock
+1 IN Interlock In Active Low
+14 OUT Interlock Out Bridge to Pin 1 to close Interlock
+
+25 Pin Digital Input Output Connector
+14 25
+1
+13
+AL - 73112 Interlock Jumper included on system
+and available as a spare (same part as 3020)
+Pin locations are looking at Bifrost
+connector (female connector) or from rear
+of jumper plug (cap portion)
+
+25 Pin Digital - Connector and Jumper Plug
+
+25 Pin I/O Accessories Available
+Part Number Description
+AL - 82213 I/O, Terminal Block, Assembly
+AL - 82211 SubD25, Solder Terminals
+AL - 81584 Cable, SubD25, Open Wires
+
+Laser Source
+• 30 Watt source from Coherent (C - 30+, Axial Flow)
+• Laser source is specific to 90 degree or 0 degree marking head --
+Different part numbers for straight versus turned head output.
+• 10.6, 10.2 and 9.3 micron wavelengths available
+Wavelength (μ m) 9.3 μ m 10.2 μ m 10.6 μ m
+Beam size 1.8 mm (+/ - 0.2)
+Frequency 0 - 100 kHz
+Input power 48 VDC/11.5 A
+Output power (Watt) 17 30 30
+
+Laser Source
+▪ RJ45 control cable (cannot be replaced) connects to Bifrost board for signals
+▪ 48 VDC power from Bifrost board
+▪ No LEDs on laser source
+▪ Beam expansion lens is inside aligned laser source. Cannot access in field. Need
+special alignment fixture.
+Six part numbers for spare tubes (3 wavelengths each in 0 or 90 degree version)
+
+Power Supply
+Power Supply
+• 750W/48VDC Power Supply
+• Powers everything in system through Bifrost board
+
+Cooling Fan
+Cooling Fan
+Fan filter & cover
+• 48VDC
+• Speed control based on temperature sensor located on outside of
+laser tube (in between cooling fins of laser tube).
+
+Cooling (Airflow)
+Air intake at the side of the system
+Filter with „snap on“ cover
+Air output at rear of the
+• No additional air exchange/input at front.
+system through fan
+• Foam parts will help protect electronics from dust.
+• Ensure filter mats at intake and exhaust changed
+together (sold in pairs; three pairs per box).
+
+What is the “Marking Head”?
+Marking head is
+inside the front
+housing
+0 ° orientation
+Front Housing
+(not the actual marking head) 90 ° orientation
+Two spare part numbers or marking head:
+• Down (90 degree)
+• Straight (0 degree)
+
+Marking Head
+iSHC60
+90 ° orientation 0 ° orientation
+• 6 mm mirrors (CTI galvos)
+• 90 ° or 0 ° marking head options
+Marking head
+Must change beam source, marking head and Bifrost board to convert
+differences:
+from 90 degree to straight or straight to 90 degree!!
+Location of
+• Three lens options
+cable entry
+• Focus finder and Pilot Laser standard
+• Galvos are used as shutter
+• Marking head, cable and Bifrost board are replaced as a single part
+-- Includes head as seen above with marking head cable already installed; goal is to never
+open actual marking head. Cable routing is difficult inside. Bifrost board has calibration
+specific to the marking head which affects the Focus Finder.
+
+Marking Fields
+Lens Focal Working X - axis Y - axis X - axis X - axis
+Length Distance diameter diameter maximum maximum
+(A) (B) rectangle (a) rectangle (b)
+100 91 51 80 36 57
+150 141 76 120 54 85
+200 190 102 160 72 113
+All values in mm
+
+Working Distance
+Lens Focal Distance (mm) 100 150 200
+Working Distance (mm) 91 141 190
+Working
+Distance
+measured
+from just
+outside the
+lens on
+cover. Working
+Distance
+Product
+
+Pilot Laser and Focus Finder
+• Pilot laser (component) and Focus Finder (feature that uses pilot laser) are
+standard on 3210.
+• The Focus Finder beam offers easier, faster and more precise focal alignment
+during the installation process or when needing frequent line and / or product
+changeovers.
+• Enabling Focus Finder temporarily turns on pilot beam and alternates two images
+very quickly between galvos and a fixed mirror in marking head used specifically
+for focus finding purpose.
+-- Images switch too quickly for human eye to notice so it looks like one image.
+-- Only when in focus will the dot and circle overlap due to the angle of mirror in head.
+Lens
+Focus Finder beam on
+product
+Spot where images
+overlap is correct
+focal distance
+Out of In
+focus focus
+
+Marking Head Cable
+• Connects Bifrost board to galvos .
+• Only one cable length and type since internal.
+• Thermistor and pilot laser connector integrated into cable.
+• Part of the marking head/Bifrost board spare part (not available separately).
+
+Marking Head Cable
+Connections in Marking Head
+Connections in Laser Unit
+
+Major Components Summary
+Main Components
+• Bifrost board with marking head kit (straight or 90 degree versions)
+• Power Supply (750W/48V)
+• Laser Tube (3 wavelengths; straight or 90 degree versions)
+• Fan (120mm/48V)
+Internal Cables
+• Encoder/Product Detect to Bifrost (AL - SP81180: Cable Set, Trigger and Encoder,
+Internal)
+• Internal Power (IEC on rear to power supply ) (AL - SP81185: Cable Set, Internal)
+• Marking Head Cable (part of Marking Head spare part)
+Important: Order correct orientation (90 or straight)!! Reconfiguring in field
+requires replacement of laser tube AND marking head/Bifrost board!
+
+3. CMark 4.11 and TCS+
+Software
+New General Features and 3210
+Specific Functions
+Note: Use Google Chrome, Firefox or Microsoft Edge as web browser for
+TCS+. Internet Explorer is not supported and may display incorrectly.
+
+CMark 4.9 or newer - Features in TCS+
+• Logo import
+• DXF/DWG import (as logo or as complete .Job)
+• Group job elements
+• More Pilot Laser modes
+• Easier access to view Event Log
+• Complex Jobs (List, Sequence or Batch)
+• Trigger Queue control (Interlock/ Shutterlock only)
+• Anchor point selection (Static Text, Variable Text and 2D codes)
+• Filling options expanded (now matches SmartGraph )
+• “Consider marked after interruption” setting for Variable Text
+• Head Mounting setting now allows decimals
+• Tool Step Width setting allows decimals
+Includes features available on any laser with CMark 4.9 or newer
+
+CMark 4.11 - 3210 Specific Features
+The following features are only available in CMark 4.11 with 3210 :
+• Quick setup encoder and product detects already configured in software.
+• Switch between PNP and NPN for product detect and encoder in TCS+
+• Autostart can be set in Laser Unit Settings/Laser Configuration (when set to ON
+then laser will boot whenever main power turned on without pushing button on
+keypad).
+• Simplified Chinese fonts available when model is 3210. Font names are
+“jiahe0219” and “Standard_Font_1_ZH”
+
+Pilot Laser and Focus Finder
+• Turn on either pilot laser or Focus Finder in Main Menu > Pilot Laser . This is the
+only location to enable the pilot laser/focus finder. Start button on keypad and Start
+button in Home Screen always enable the CO2 laser beam only!
+• Combine any items in left hand column (example: Job Elements and Marking Field).
+• Items in right column can only be used alone (example: no other items can be enabled
+while Centered Dot is enabled).
+• Pilot Laser and Focus Finder will automatically be deactivated after 40 minutes.
+
+Loading CMark on Bifrost
+(No Existing CMark)
+Bifrost boards where Rescue Stick has been used do not contain
+CMark . After using Rescue Stick board will only have a
+manufacturer level software called Plexmark .
+You must load desired CMark version using one of the following methods:
+1) TCS+ via PC with Web Browser – fastest; load from anywhere on PC.
+Available as long as PlexMark 1.11 on Bifrost board (manufacturer level software).
+PlexMark 1.11 is newer version than was on Chameleon boards.
+2) Web Interface via PC with Web Browser - slower, but always available
+even if wrong/older PlexMark on Bifrost board. Use of older Rescue Stick used for
+Chameleon boards (version 1.7) will require using Web Interface to load CMark for first
+time.
+
+3210 CMark Update/Upgrade
+(CMark already exists on Bifrost Board)
+If reloading CMark or updating CMark version (CMark already exists
+on Bifrost board), or with new Bifrost board (spare part) then any of
+the following methods may be used:
+1) TCS+ via PC with Web Browser – fastest; load from anywhere on PC.
+Available as long as PlexMark 1.11 on Bifrost board (manufacturer level software)
+2) USB at Bifrost board (only for reload/update of CMark; cannot use this
+method for loading Bifrost if no CMark already installed) - CMark 4.11 or newer
+only! USB plugged directly into USB port on Bifrost, not ports on TU4x0. Must use
+TU4x0 for control; cannot navigate with PC with web browser to load from USB
+connected to laser.
+3) Web Interface via PC with Web Browser – slowest
+File requirements when loading from USB at Bifrost:
+• Must be file type .zip
+• Name must start with “CMark” (example: CMark_4.11_rev.9999)
+• File must be saved inside folder named “TCS” on USB (TCS in all capital letters)
+Note: Loading CMark via USB currently only supported for Bifrost board
+
+3210 CMark Backup
+CMark backup contains all Customer Data as well as the CMark
+operating system. Backup process can take 10 - 30 minutes depending
+on method used.
+• CMark backup does not contain System Database (laser configuration such as
+model, head type, IP address etc.) A backup of the System Database can be done
+separately as this is contained in different location on Bifrost.
+• Complete Laser Image backup can be done more frequently and saves Customer
+Database (includes Jobs, Fonts, Mark Settings, etc.).
+Preferred Method (in order):
+1) TCS+ via PC with Web Browser – fastest; saves backup to Downloads
+folder on PC unless web browser settings have been changed.
+2) USB at Bifrost board – saved in folder on USB called TCS (if such folder does
+not already exist). USB must have at least 600 MB of free space available.
+3) Web Interface via PC with Web Browser – slowest; creates backup in
+RAM on laser and then can be downloaded to PC Downloads folder.
+Note: Backup of CMark via USB currently only supported for Bifrost board.
+
+3210 Load CMark
+➢ Load CMark in TCS+ (two methods)
+Possible also to load from PC via Web Interface
+(web browser), but slower than TCS+
+Load CMark from USB directly at
+Load CMark from PC via
+Bifrost board using TU4x0 as controller
+TCS+ (web browser)
+
+Rescue Stick for Bifrost Board
+“Rescue Stick” is a USB (you provide) to which a PlexMark.img file is written with a
+software to make the USB a bootable device. The . img used is the same as the
+manufacturer - installed software called PlexMark that is on new Bifrost boards
+(manufacturing or spares).
+o Rescue Stick first wipes out the CMark on the Bifrost board and then loads PlexMark .
+o After PlexMark is loaded then still need to load CMark.
+o Rescue Stick does not erase System Database (model, head, lens, serial number, etc.)
+Use PlexMark 1.11 for 3210
+• Write PlexMark to USB using freeware called Rufus (Files on Sharepoint )
+• Insert Rescue Stick directly into Bifrost USB; do not use TU4x0 USB!
+• Boot with Rescue Stick. Laser goes to Standby when complete.
+• Remove Rescue Stick and then reboot.
+-- If boots, then load CMark using PC with web browser connected to TCS+. Loading via
+PC connected by Web Interface also possible, but slower. Loading via USB at Bifrost not possible
+first time after Rescue Stick used. Loading from USB only works when CMark exists already.
+-- If laser will still not boot after Rescue Stick, please try Rescue Stick again. Do not
+replace Bifrost until tried Rescue Stick at least two times.
+Previous PlexMark versions only allowed loading of CMark via Web Interface. If cannot load
+CMark via TCS+ then try Web Interface.
+
+4. Maintenance
+
+Maintenance Schedule
+Maintenance Interval Measures
+Monthly or as necessary (more • Inspect the output lens for dust or dirt. Clean the lens when
+frequently when operated in dirty necessary.
+ambient conditions) • Inspect air intake and fan filters. Clean (blow out or vacuum) or
+replace as necessary. Inspect and clean or replace more
+frequently when operated in dirty ambient conditions.
+• Replace both air filters together. Not changing rear filter
+when changing side filter will result in buildup of debris/dirt
+inside laser system. Filters come together in pairs so
+exchange together.
+When control lamp on Fume Replace filters on fume extractor. Combined filter will usually be
+Extractor lights up filled more often than HEPA filter. Exchange combined filter and if
+control lamp on fume extractor remains on then change HEPA filter.
+Every three months (more Carry out a visual inspection of the laser system including warning
+frequently when operated in dirty labels. They must be readable and positioned correctly.
+ambient conditions) Check the product detector (light barrier). Clean or readjust as
+necessary.
+Every six months Inspect laser tube and blow off with compressed air if necessary
+Annually Exchange HEPA filter (charcoal filter) on fume extractor. Charcoal
+absorbs moisture from the air.
+
+Backups
+Type Frequency of Create… Includes
+backup required
+System Database Infrequent After installation Model, head, lens and
+other laser configuration
+settings saved on
+EEPROM. Backup
+creation very quick.
+CMark Backup Less frequently After installation and at Entire CMark including
+preventative customer database. Takes
+maintenance visits 20 - 30 minutes to create
+backup. Does not include
+System Database.
+Complete Laser Most frequently At preventative Customer database.
+Image maintenance visits or Useful if CMark needs to
+more frequently if be reloaded and no
+customer creates CMark backup available.
+significant number of Backup creation is very
+jobs. fast.
+
+Filter Locations
+Rear
+Side
+• Two filters on system:
+- Rear (exhaust)
+Slot for small screwdriver
+on bottom of side filter
+- Side (intake)
+cover to pry cover
+• Filter kit does not include the plastic covers for filters.
+out/away. Insert screwdriver
+between outer filter cover
+• Covers are available as a spare part kit separately.
+and inner filter holder.
+• No IP rating if operated without filters.
+• Do not operate system with side filter off and rear filter in place. This can cause
+disruption as rear filter would then clog quickly and air would not be able to be exhausted.
+
+Filter Locations
+Not a filter
+Side Rear
+Front
+• Side filter - Slots for small flatblade screwdriver on bottom of cover to pry cover
+out/away. Insert screwdriver between outer filter cover and inner filter holder so only outer
+layer of black cover is removed. Inner layer of black plastic with filter should remain in place.
+• Rear filter - Cover has one screw to hold filter cover in place.
+• Round cap on front of marking head is not a filter , though called Round Filter
+Assembly in spares list (named early in development). Round cap should have
+foam insert inside to keep all air/debris out. No maintenance necessary.
+
+Inlet Filter Mat – Preferred Orientation
+Air Inlet filter (side of laser) needs to be installed with the fluffy side toward the
+outside and the stiffer side toward the inside. This way, large particles can be caught in the
+fluffy region while smaller particles will be caught on the more densely packed side. If it
+were mounted the other way around, the efficiency of the filter would still be the same, but it
+would get clogged faster.
+Air outlet filter (rear of laser) does not have a preferred orientation.
+Fluffy, loosely packed
+More densely packed,
+fibers.
+stiff side of filter.
+This side of filter toward
+This side of filter toward
+ambient air (outside).
+laser interior (inside).
+
+5. Troubleshooting
+
+Normal System Operation
+• Power on from main power button
+• AC Voltage to power supply
+• 48VDC to Bifrost board
+• Blue Light on Keypad
+• On/Standby button pushed
+• White LED starts flashing
+• Power (current) and signals from Bifrost to galvos
+• White LED on solid
+• Keyswitch armed (button press)
+• Bifrost verifies key, shutter, interlock/ shutterlock
+• 48VDC from Bifrost to laser tube
+• Shutterlock open removes marking signals
+• Interlock open removes 48 VDC to laser tube
+
+Power On Issues
+Symptom: No LEDs illuminated on keypad
+Check:
+• Mains cable connected (at rear of laser and to wall
+outlet/power source)?
+• Main power rocker switch on?
+• Mains VAC at power supply?
+• If no voltage replace internal mains cable.
+• Measure VDC at Bifrost board System
+Power terminals.
+• If 48VDC present: exchange Bifrost board.
+• If 0 VDC present: exchange power supply.
+
+Boot Issues
+Symptom: White light on keypad does not start to flash or flashed for
+more than 3 minutes and does not stay on solid.
+Remedies:
+• Use Rescue Stick ( PlexMark 1.11) to wipe board and then load CMark .
+- Rescue Stick procedure removes all system files and loads only web interface
+software (no CMark or TCS+). New Rescue Stick image and directions
+- After Rescue Stick ( Plexmark 1.11 and newer) then you must load CMark via either
+TCS+ (web browser only) or Web Interface. Do not use TU4x0 USB ports to load
+CMark!! Previous Rescue Stick image (for Chameleon) would not allow for loading
+of CMark via TCS+. Had to first load CMark via Web Interface first.
+- System Database (model, lens, serial number, IP address, etc.) are not erased with
+Rescue Stick, but will not be correct/visible in Web Interface until after CMark is
+loaded.
+• Replace Bifrost board if still cannot boot laser. Only replace after at
+least 3 attempts at recovering with Rescue Stick.
+
+TU4x0 Does Not Display TCS+
+Issues:
+• TU4x0 does not display TCS+ and instead shows something like this:
+Possible Causes:
+• CMark not loaded on Bifrost board.
+• PlexMark (manufacturer level software) not loaded on Bifrost board.
+Remedies:
+• Load CMark via TCS+ through PC with web browser (if Plexmark 1.11 or newer
+installed) or Web Interface on PC with web browser.
+• Use Rescue Stick on Bifrost board (loads PlexMark ) and then load CMark.
+
+Fan Fails to Run
+Symptom: System boots, but fan does not operate
+Possible Causes:
+• Check fan connection at Bifrost board
+• Measure 48 VDC between fan connectors
+- 48 VDC present: exchange fan
+- 0 VDC present: exchange Bifrost board
+
+Laser Tube Issues
+Issue: E00200 Laser Not Ready error occurs or E00208 No Strike error
+occurs
+Check:
+• Open keyswitch . Wait 10 seconds. Close keyswitch . Does error return?
+• Reboot system. Does error return?
+• Laser tube connection at Bifrost board. Is connector seated completely?
+Disconnect and reseat if error continues to occur.
+• Replace laser tube.
+Laser Ready signal from laser tube is
+carried via the cable with RJ45
+connector from laser tube to Bifrost
+board.
+Technical Description of Error:
+Occurs when Laser Ready signal not
+generated by laser source or not
+received by Bifrost board.
+
+Laser Tube Issues
+Issue: E00201 Laser supply: voltage too high or too low error occurs
+Check:
+• Visually inspect condition of laser tube power cable to/from Bifrost
+board.
+• Check laser tube power supply connection at Bifrost board. Power for
+laser tube supplied by Bifrost board. Good connection?
+• Measure laser tube supply voltage at connection on Bifrost board.
+- 48 VDC present at connector: exchange laser tube
+- 0 VDC present at connector: Ensure connection of laser tube power
+supply cable at Bifrost is secure and correct.
+Technical Description of Error:
+Occurs when 48 VDC not
+received at laser tube.
+
+Laser Overtemperature
+Issues: E00202 Laser Overtemperature error occurs
+Check:
+• Is ambient temperature over 40 degrees C
+• Is fan running
+• Are filters clogged (side and rear of laser)
+• Is laser tube clean/dust - free
+
+Beam Shutter or Galvo Missing Errors
+Issue: E10302 Shutter does not stay open or E10303 Shutter does not stay
+closed error occurs.
+Issues: E09006 No X - Mirror connected or E09007 No Y - Mirror connected error
+occurs
+Check:
+1) Reboot system.
+2) Disable Leakage Protection in TCS+ > Main Menu > Laser Unit Settings >
+Laser Configuration and then reboot system when prompted. If error continues
+to occur after reboot then continue to step 3.
+3) Ensure galvo connectors at Bifrost board are seated securely. Ensure laser unit
+is completely powered down and capacitors have discharged and then reseat
+connectors.
+4) Replace Bifrost/Marking head
+
+Galvo Overcurrent Errors
+Issues: E09004 Marking head: Overcurrent X mirror or E09005 Marking head:
+Overcurrent X mirror error occurs
+Check:
+1) Check that Mark Settings are correct for the system and application. Reduce
+Jump Speed .
+2) Check that the Laser Position is correct in Line Setup.
+3) Disable Leakage Protection in TCS+ > Main Menu > Laser Unit Settings >
+Laser Configuration and then reboot system when prompted.
+4) Ensure galvo connectors at Bifrost board are seated securely. Ensure laser unit
+is completely powered down and capacitors have discharged and then reseat
+connectors.
+
+Marking Head Temperature
+Issues: E09000 Marking Head: Temperature of Marking Head
+Assembly Group Too High error occurs
+Check:
+• Is ambient temperature over 40 degrees C?
+• Is fan is running?
+• Are filters clogged?
+• Reduce Jump Speed and/or increase gap between products
+
+No Encoder/Trigger Detected
+Issues: E10813 No Encoder Connected or E10814 No Trigger
+Detector Connected error occurs
+When Line Setup is set to look for encoder or product detect, but no
+drain on 24V output on DIN connectors then error is generated.
+Check:
+• Line Setup – should encoder/product detect be enabled or is the
+application static/indexing?
+• Encoder or Product Detector is connected
+• Verify wiring of Encoder or Product Detector to DIN connectors (3
+pin and 4 pin DINs) if using alternate trigger source encoder
+• Check I/O cable (internal cable from DINs to Bifrost board)
+
+Interlock/ Shutterlock Issues
+Symptom: Interlock Open or Shutterlock Open will not clear.
+Verify wiring:
+• Jumper plug in place (if nothing connected on Customer I/O)
+• Interlock 24VDC being returned at pin 1 from pin 14
+• Shutterlock 24VDC being returned at pin 4 from pin 16
+
+Print Quality Troubleshooting
+▪ Before adjusting Mark Settings ensure: Lens is clean, focal distance is correct, and head is
+perpendicular to product
+▪ Only adjust one setting at a time
+Is the issue with entire code (faint, dotted, scorched) or is Mark Time is too high (need to mark code faster)?
+Yes
+Mark Speed *
+Intensity
+Frequency
+No
+Where are flaws in code?
+Beginning of Stroke
+Curves
+End of Stroke
+• Jump Speed *
+• Mark Delay *
+• Stroke Delay *
+• Jump Delay *
+• Off Delay
+• On Delay
+* - Affects Mark Time
+
+Additional Resources
+The following documents are also available:
+• Errors List with suggestions for mitigation of warnings/faults
+• Wiring diagram
+• Sample Wiring diagram with I/O timing
+• Training guide for 3210
+• Training guide and Manual for TCS+
+
+Thank you for your attention and
+participation.
+
+{|X++????9?01Y%#".7##".'##".7663323>332 !+i' %-hw|"
+{|X++??9?01Y#".7&&66323>32K" L
+&0LlJ
+X++?++?99++?+?+?9999+01Y#".'&&54>3232>54.54>32&&54>3232##32>32#".54>7#"&54>3376654&#"#".#">5P]O57gZ/SC0"7R=7O44OO5,?LV/,4e`d
+ */8R8e}~+!+;ToE/*77T9ZU
+ */8R8e}~+!+3 3<UoC/*77T9ZU
+%AY5!E#481$=lX0+XX+CUX#

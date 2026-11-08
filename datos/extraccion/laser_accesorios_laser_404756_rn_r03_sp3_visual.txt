@@ -1,0 +1,136 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\404756.RN.r03.SP3.pdf
+# cifrado=False bloques=9 caracteres=6641
+
+Videojet Software Release Notes
+Product: CLARiTY Laser Controller
+Part Number 404756 r03 SP3
+Release Date: 28th March 2019
+Released By: John Bartram
+This document describes all of the changes to the product software since the previous
+revision. Changes are listed as new features and bug fixes, also included are all of the
+known problems that have been found.
+CLARiTY is a registered trademark.
+New Features Summary
+Required Software Version
+(or later)
+Case# Name Summary Description CCM CLARiSOFT
+E01188 ZJF support added ZJF Job Files Can Now Be Imported from USB Not Applicable Not Applicable
+E01190 7810 Q-Switch minimum Q-Switch now allows values down to 2µs Not Applicable 4.510 SP7
+value enhancement
+E01223 Added Hexadecimal Data Added the capability of including hexadecimal data Not Applicable Not Applicable
+Format for QR Barcodes format for QR Barcodes for laser printers
+E01230 Added Support for 7610 Clarity laser controller now supports connection to 7610 Not Applicable Not Applicable
+laser printers laser printers
+E01231 Added Support For 7330 CLC now supports connection to 7330 and 7230 laser Not Applicable Not Applicable
+and 7230 Laser Printers printers
+Software Release notes for Part Number 404756 r03 SP3 Page 1 of 9
+
+Bug Fix Summary
+Required Software Version
+(or later)
+Case# Name Summary Description CCM CLARiSOFT
+B01211 Restore All Jobs fix Fix for restoration of all jobs at once (that contain logos) Not Applicable Not Applicable
+Software Release notes for Part Number 404756 r03 SP3 Page 2 of 9
+
+Case# E01188 NAME ZJF support added Type: Enhancement
+Summary Description Required Software Version (or later)
+ZJF Job Files Can Now Be Imported from USB
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+ZJF file produced by Videojet Connect Template Designer can now be imported into
+CLARiTY printers using a USB memory device. ZJF files may be placed in the 'Jobs' folder
+or the USB root folder.
+Software Release notes for Part Number 404756 r03 SP3 Page 3 of 9
+
+Case# E01190 NAME 7810 Q-Switch minimum value Type: Enhancement
+enhancement
+Summary Description Required Software Version (or later)
+Q-Switch now allows values down to 2µs
+CCM CLARiSOFT
+Not Applicable 4.510 SP7
+Details:
+With Previous revisions of software, Q-Switch parameter was capped at a minimum value
+of 9µs.
+Now, values are allowed down to 2µs, and can be modified in the User Interface.
+Note: CLARiSOFT 4.510 SP7 (or newer) will be required to create jobs with Q-Switch
+values of less than 9µs.
+Software Release notes for Part Number 404756 r03 SP3 Page 4 of 9
+
+Case# E01223 NAME Added Hexadecimal Data Format for Type: Enhancement
+QR Barcodes
+Summary Description Required Software Version (or later)
+Added the capability of including hexadecimal data format for QR Barcodes for
+laser printers
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+The capability of including the hexadecimal data format option for QR Barcodes for laser
+printers has been added. This enhancement will accept data up to the length specified
+in the QR barcode specification.
+NOTE:
+Merged fields are not supported, fixed text must be added directly to the QR barcode.
+It is recommended that only binary data cited in the defined section of ISO IEC 8859-1 is
+used.
+Software Release notes for Part Number 404756 r03 SP3 Page 5 of 9
+
+Case# E01230 NAME Added Support for 7610 laser printers Type: Enhancement
+Summary Description Required Software Version (or later)
+Clarity laser controller now supports connection to 7610 laser printers
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Clarity laser controller now supports connection to 7610 laser printers and their
+additional faults and warnings in accordance with Version1 item B-07306
+Software Release notes for Part Number 404756 r03 SP3 Page 6 of 9
+
+Case# E01231 NAME Added Support For 7330 and 7230 Type: Enhancement
+Laser Printers
+Summary Description Required Software Version (or later)
+CLC now supports connection to 7330 and 7230 laser printers
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+CLC now supports connection to 7330 and 7230 laser printers and can handle their
+additional faults and warnings in accordance with Version1 item B-08080
+Software Release notes for Part Number 404756 r03 SP3 Page 7 of 9
+
+Case# B01211 NAME Restore All Jobs fix Type: Bug Fix
+Summary Description Required Software Version (or later)
+Fix for restoration of all jobs at once (that contain logos)
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Previously, if a number of jobs were stored in the Jobs folder on a USB stick that
+contained logos, and all were restored to the printer at the same time (by pressing
+'Restore All Job') then only the logos in the first job were restored.
+This could result in a number of jobs with missing logos.
+This is now resolved and 'Restore All Jobs' now works as expected if they contain logos.
+Software Release notes for Part Number 404756 r03 SP3 Page 8 of 9
+
+Update Procedure
+In order to update a machine with a previous software revision to the latest you should use
+a USB memory device or the latest CLARiTY Configuration Utility.
+a) To use a USB memory device, the CAB update file requires copy and pasting into a
+‘CLARITYupdate’ folder in the root of the USB device. Insert the USB device into the port
+on the printer and after a short while the screen may show an option to load new
+software, depending on the printer settings in CCFG. If it does select ‘Yes’ then select the
+required update, press ‘OK’ and follow on-screen instructions. If it does not, keep the USB
+device in the printer and on the printers User Interface scroll to
+Tools\Setup\Control\CLARiTY Update, select the required update and press ‘OK’ and follow
+on-screen instructions.
+b) To use the CLARiTY Configuration Utility, start the utility, and connect it to the printer
+you wish to update. Ensure that the CLARiTY Configuration Utility has a valid TCP/IP
+connection to the printer; this can be observed by the printer icon turning green, and the
+"Active Connection" message being displayed in the status pane.
+Right click on the name of the coder you wish to update and select the CLARiTY Update
+option. Then locate the file with the same name as the part number above, and the
+CLARiTY Update will then proceed automatically.
+Software Versions
+CLARiTY 4.03.00 (22827-50741)
+Operating System 6.00.01 (0029)
+Boot Loader 1.00.01 (0021)
+Known Issues with 404756 r03 SP3
+Merging of partial fields still merges all of the original field.
+The inclusion of the '&' character in the laser name can cause connection issues to CLC.
+Software Release notes for Part Number 404756 r03 SP3 Page 9 of 9

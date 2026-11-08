@@ -1,0 +1,1576 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\Lesson 3 Laser CLARiSOFT.pdf
+# cifrado=False bloques=109 caracteres=64601
+
+Lesson 3 – Clarisoft
+Table of Contents
+3 .1 CLARiCOM Products 3 - 4
+3 .2 Getting started 3 - 6
+3 .3 LAB 4 - 1 LAB 4 - 1 Installing CLARiSOFT 3 - 7
+3 . 4 Starting CLARiSOFT 3 - 1 2
+3 . 5 CLARiSOFT Menus 3 - 13
+3 . 5 .1 File Menu 3 - 1 3
+3 . 5 .2 Edit Menu 3 - 14
+3 . 5 .3 View Menu 3 - 1 4
+3 . 5 .4 Tools Menu 3 - 14
+3 . 5 .5 Help Menu 3 - 15
+3 . 5 .6 Field Types 3 - 1 5
+3 . 6 Creating a Job 3 - 1 7
+3 . 6 .1 Creating a new Job 3 - 1 7
+3 . 6 .2 Selecting a Printer Type 3 - 1 8
+3.6.3 Printing area 3 - 18
+3.7 Creating a job exercise 3 - 19
+3 . 7.1 Inserting a Text Field 3 - 19
+3 . 7 .1 Selecting the Type of Field 3 - 2 1
+3 . 7 .2 Inserting International Characters 3 - 2 2
+3 . 7 .3 The Font Tab 3 - 2 3
+3 . 7 .4 The General Tab 3 - 2 4
+3 . 8 Inserting a Time Field 3 - 25
+3 . 8 .1 Time Field Format 3 - 2 6
+3 . 9 Inserting a Date Field 3 - 28
+
+3 .1 0 Inserting a Counter Field 3 - 3 1
+3 .1 1 Inserting a Primary Barcode 3 - 3 5
+3 .1 1 .1 Selecting a Primary Barcode 3 - 3 5
+3 .1 1 .2 Merging Fields into a Barcode 3 - 3 6
+3 .1 1 .3 Unprinted Fields 3 - 3 7
+3 .1 2 Merging Text Fields 3 - 40
+3.13 Mark Sets 3 - 41
+3 .1 4 Saving the Job 3 - 65
+3 .1 4 .1 Saving a Job to a USB device 3 - 65
+3 .1 4 .2 Previewing your Job 3 - 67
+3 .1 5 Turning on the printer 3 - 68
+3 .1 5 .1 Putting the printer Online 3 - 68
+3 .1 5 .2 Downloading the job from the USB device to the printer 3 - 69
+3 .1 5 .3 Selecting your Job on the printer 3 - 72
+3 .1 6 Logo Fields 3 - 73
+3 .1 7 Drawing Fields 3 - 73
+3 .1 8 CLARiSOFT Print Manager 3 - 74
+3.1 8 .2 CLARiSOFT Print Manager login 3 - 74
+3.1 8 .2.1 CLARiSOFT Print Manager setup 3 - 7 5
+3.1 8 .2.2 CLARiSOFT Print Manager job selection 3 - 7 9
+3. 1 9 Data files 3 - 82
+3. 20 Using text files with clarity 3 - 88
+3.21 Printing Exercise 100
+Customer training 101
+3 - 2
+
+Lesson 3 – Clarisoft
+Introduction
+Materials: CO², Fiber laser printer, Participant Training Guide; CLARITY
+CONTROLLER PowerPoint (PPT) Technical Presentation, CLARITY
+Controller service manuals, CLARiSOFT service CD.
+Objectives
+❑ Install CLARiSOFT software
+❑ Identify the all tool bars and there functions
+❑ Demonstrate the ability to select a coder, head and lens type
+❑ Define the mark set
+❑ Demonstrate the ability to create job using the text features
+❑ Demonstrate the ability to create job using the time features
+❑ Demonstrate the ability to create job using the date features
+❑ Demonstrate the ability to create job using the barcode features
+❑ Demonstrate the ability to create job using the logo features
+❑ Demonstrate the ability to transfer a job to the printer
+❑ Demonstrate the ability to transfer a job to the print using a USB drive
+❑ Demonstrate the ability to operate clarisoft print manger
+Activities
+❑ Obtain a licensed copy of Clarisoft
+❑ Create message using Clarisoft software
+❑ Down load message to the printer
+❑ Down load jobs using the USB drive
+❑ Down load multiple jobs at once
+❑ Make correction to the mark set to improve print quality
+❑ Print manager
+3 - 3
+
+The following is a list of references & materials for this topic.
+References &
+Materials
+❑ CLARITY CONTROLLER Training Guide
+❑ CLARITY CONTROLLER Technical Guide
+❑ CLARITY CONTROLLER PPT
+❑ CO², Fiber laser printer s
+❑ CLARiSOFT service CD
+❑ Serial or Ethernet cable
+❑ USB stick
+3 .1 CLARiCOM Products
+“The Claricom Package Coding Management System eliminates all potential errors of
+printed information at source whether it is dates, batch codes or pricing.
+It is the most cost effective and flexible system focused on ensuring accuracy on pack
+and negates the need for camera based verification systems that are expensive, inflexible
+and time consuming in set - up.
+T he Claricom PCMS has been proven in the field to give real cost savings in time,
+efficiency and labor and is "future proof" as new technologies are introduced to stock
+handling and identification e.g. RFID tagging“.
+3 - 4
+
+• Field - Based Image Design
+– Intuitive positioning and sizing of fields
+– Field specific properties; x, y, size, font etc.
+• Coder Independent File Format (CIFF)
+– One design format used for all coder types
+• Even images designed for a specific coder are stored in a generic
+format
+– Provides a superset of all known image properties
+• Date Calculations
+– Part of the overall design (not part of the individual fields)
+– A single calculation can be used by many fields
+• Allows multi - lingual dates / Allows a single date to be used for
+barcodes and text
+• Support for real - time coder features (such as time and counter fields)
+3 - 5
+
+3 .2 Getting started – you will need
+– A Laptop or PC (Win 2000, XP or Vista, windows 7)
+– A copy of Clarisoft image design software with the relevant license
+• Clarisoft with USB license – part # 218671
+– There is a fully functioning software license version
+available that is for sales and service engineers only (not
+for resale)
+– Clarisoft is supplied as a CD with the particular license ordered. The
+licence activates the software to enable the user to create edit and save
+Jobs (images)
+• The USB license options are preferred because they allow the user
+to move the license between computers
+• The software license is for Videojet personnel only and is fixed to
+one computer only
+• The software will run as a demo version if the license is not
+activated.
+Demo version means that any label created cannot be saved – it is purely for
+demonstrating the capabilities of the program
+3 - 6
+
+Lab Exercise 4 - 1 _________________________________
+3 .3 LABS
+_______________
+Name Date
+Activating CLARiSOFT
+Objective: Upon completion of this laboratory exercise the trainee will have
+demonstrated the ability to: Install the latest version of CLARiSOFT and
+properly register the software on their designated laptop (PC).
+Instructions: All materials created from this lab exercise should be:
+Initialed, dated, labeled with exercise specific data (where applicable) and
+stapled to this worksheet.
+Note: This document is for training purposes only and does not replace the
+service manual.
+Claricom Software Upgrade and Licensing Instructions (NA VJ
+employees only)
+In addition to licensing, you will need to upgrade the software to 4.3XX
+(latest version). The upgrade file will be located at the
+http://www.myzipher.co.uk/ .
+NOTES:
+• Videojet requires all CLARiSOFT users to be licensed .
+• The upgrade file is ~ 35MB.
+• If CLARiSOFT has never been installed and licensed on your PC,
+then it will be necessary to load this program from a supplied CD to
+provide the platform for proper licensing following Steps 1 - 29 below.
+• If you already have a version of CLARiSOFT earlier than 4.315
+installed and licensed on your PC, then uninstall your current version
+of CLARiSOFT via Add/Remove Software under Control Panel.
+During the uninstall process you will be prompted to save your
+current software license file. Select “Yes” to save the file.
+• After installing the latest version of CLARiSOFT, check to make sure
+that you can continue to create and save jobs. If the saving function is
+grayed out, and/or a dialogue box appears stating that your software
+is not licensed, then you will need to follow Steps 1 – 29 below to re -
+establish a new license.
+These are the steps you need to follow:
+Registration, Software Key and Installation
+1. Close all running programs.
+2. Make sure that you are disconnected from a live Ethernet connection
+3 - 7
+and disable all wireless connection devices for the entire activation
+process. Then remove the wireless card from your PC. If using a
+docking station, remove the PC from the docking station. These
+
+5. Select the “Install CLARiSOFT” to begin the installation process.
+6. Select all defaults values, directory and usual protocol.
+7. When prompted, type the 24 digit installation key :
+2A30 - E5D7 - 847F - 2BA1 - 3D7C - 39AE
+8. Conclude the installation process by clicking on Finish.
+9. Close and restart the CLARiSOFT application.
+Activation Process
+10. Open CLARiSOFT . It will be under
+Start/Programs/Claricom/ CLARiSOFT .
+11. You will see a message ( CLARiSOFT Software license is
+Unactivated, would you like to activate now? Click Yes .
+12. Click on the “Begin Activation Button ”.
+13. When prompted agree to the license and click Next .
+14. Read the licensing process instructions then click Next .
+15. When prompted to license via Email, Fax or Telephone, choose Fax.
+3 - 8
+
+LABS
+16. After selecting Next , you will be required to fill in your company
+information.
+17. Next, save the Fax as a PDF with the filled - in information that will
+contain your licensing confirmation code. If you do not have a PDF
+Creator output, then select a printer that you have access to and print
+out a hard copy of the Fax.
+3 - 9
+
+LABS
+18. A sample of the Fax document is shown below.
+19. Once the Fax document has been saved or printed, close out the above
+Activation Step 4 window by ticking the box “I have printed my fax
+and sent it to Claricom then selecting Finish .
+20. Email the FAX document in PDF as an attachment along with your
+license request to Blvl TechSupport at
+blvl.techsupport@videojet.com . If the FAX was printed as a hard
+copy, then carefully enter the Installation Key and Confirmation Code
+information into an e - mail message and send your request to the above
+referenced e - mail address.
+21. You will then receive a reply to your email with a n activation code for
+you to enter to license the software usually within 24 hours.
+22. Close the CLARiSOFT application and restart it.
+3 - 10
+
+LABS
+23. You will be prompted again to complete the activation. Click Yes .
+24. Click on the Fax Activation bu tton to complete the process.
+25. Enter the supplied activation code into the next window as show
+below.
+26. Once you have entered the code, you will be able to click a bu tton
+labeled “Finish”.
+27. Restart CLARiSOFT.
+28. Restart CLARiSOFT and check to be sure that you can build and save
+a job.
+29. Finally, copy and save your CLARiSOFT License file to an external
+source from your PC such as USB stick memory or CD. Follow the
+path C: \ Program Files \ CLARICOM \ Data and save the file as shown
+below:
+Saving the license file safeguards against losing the file in case of a
+PC failure, PC re - image, or accidently deletion during a CLARiSOFT
+version upgrade.
+Note: You should also download the software release notes to learn about the
+latest software enhancements.
+Note: If you have CLARiSOFT and CLARiNET installed on the same
+computer it is essential that they are both installed or upgraded to the same
+version.
+3 - 11
+
+3 . 4 S tart ing CLARiSOFT
+– Now that the Clarisoft software is loaded onto the computer
+• Software updates are available from the Zipher web site
+www.myzipher.co.uk at no cost
+– Click on the Clarisoft icon to activate the program (once installed)
+– The following Clarisoft screen appears
+Figure 3 - 1 CLARiSOFT home screen
+3 - 12
+
+3 . 5 The CLARiSOFT M enu
+File Basic File Functions and program setup functions
+Edit Cut, Copy and Paste functions and Undo
+View Controlling of the WYSIWYG display and other view controls.
+Tools Provides access to the program options command
+Help Access to help and program information
+Click on the required option or use the Short - Cut e.g. Alt - F for file.
+3 . 5 .1 File Menu
+New Opens a new blank file.
+Open Opens an existing CLARiSOFT file.
+Save Saves the current state of the active CLARiSOFT file.
+Save As Saves the current active file to a new file with a new filename
+or location.
+User Level Allows user login/Logoff and User Set - up for authorised
+users.
+Data Provides access to the Data Calculation Manager
+Calculations
+Data Sources Provides access to the Data Sources Dialog
+Select Coder Allows you to select the Target Coder
+Properties Provides access to the Image Properties Page
+Print Provides access to the Print Preview task.
+Preview
+Print Provides access to CLARiSOFT Print .
+Exit Closes this program after prompting you to save any unsaved
+changes.
+3 - 13
+
+3 . 5 .2 Edit Menu
+Cut Removes the currently selected field from the image and
+saves it on the clipboard.
+Copy Copies the currently selected field from the image to the
+clipboard.
+Paste Inserts the contents of the clipboard on the currently selected
+line.
+Delete Deletes the selected field from the image.
+Mark Sets Laser and marking head parameters
+3 . 5 .3 View Menu
+Toolbar Displays or hides the program toolbar
+Status Bar Displays or hides the program status bar
+Zoom in
+Causes CLARiNET to zoom in to the next list zoom
+percentage as listing in the zoom information box .
+Zoom out
+Causes CLARiNET to zoom out to the previous list
+zoom percentage as listing in the zoom information box .
+3 . 5 .4 Tools Menu
+Alignment Gives options for field alignment and field ordering:
+• Left Edge Alignment
+• Right Edge Alignment
+• Top Edge Alignment
+• B utton Edge Alignment
+• Bring to Front
+• Send to Back
+Rotation Provides command for rotating field left (anti -
+clockwise) and right (clockwise).
+Field Order Allows control over the field order for printers where the order
+of sending data is essential. See the section “Using Template
+Mode Printers with CLARiSOFT”
+3 - 14
+
+Options Provides access the CLARiSOFT options menu .
+Start of day Set the time the date will change
+3 . 5 .5 Help Menu
+Contents Shows the help contents page
+About Displays the program version information
+CLARiSOFT
+3 . 5 .6 Field Types
+To add a new field select the required field type in the CLARiSOFT Toolbox .
+Field Type Description
+Text Fields Fixed and User Entered text fields are
+supported.
+Time Fields Time fields that use the capabilities of your
+coder are supported.
+Date Fields Date fields calculated by you PC at download
+or using the capabilities of your coder are
+supported.
+• Current Date
+• Calculated Date
+• User Entered Data
+Are Supported.
+Calculated Dates Earlier versions of CLARiSOFT provided a
+specific bu tton for adding calculated dates.
+This functionality is now accessed via Date
+Fields.
+Offset dates (Best Before End, User By, Sell
+By dates) are added by selected calculated
+date for the date type within the Date Field
+Properties dialog.
+Counters Incremental and Decremental fields. Alpha,
+Alpha Numeric and Numeric fields are
+supported.
+3 - 15
+
+Primary Barcodes Barcodes typically used on primary
+packaging such as the datamatrix and QR
+only .
+Secondary Barcodes Barcodes typically used on shipping
+cartons such as none supported at this
+time .
+Logos or Graphics Not supported
+Drawing Not supported
+Text Blocks Some printers support the use of Text
+Blocks or Paragraphs. In these fields the
+size of the text block is specified and line
+breaks are added automatically. These
+fields also allow the use of left, right and
+centre alignment of the text.
+3 - 16
+
+3 . 6 Creating a Job
+– To get Jobs (images) into the laser printer s it is necessary to create them
+on the Clarisoft image design software package.
+– When the Jobs (images) are created and saved they can then be
+downloaded to the laser printer s using the serial communication port,
+Ethernet or USB.
+– The laser printers will permit 100’s of Jobs to be loaded.
+– Over the next pages you will work through the various icons on the
+Clarisoft screen to create a Job that includes the basic fields that can be
+created using this software package.
+• A ‘field’ is the term used to describe a single piece of data that is
+entered into the Job editing field.
+– It is important to note that the Job created in Clarisoft can have any
+number of fields until the job creation file is full.
+• i.e. for a laser printer with 1 printhead . Any amount of fields can
+be added to this job file until the field is full
+– Ok, lets start
+3 . 6 .1 Creating a new Job
+– Click on the New sheet icon
+Figure 3 - 2 the new job icon
+– And the following screen appears
+– Select Videojet
+Figure3 - 3 Selecting the coder you wish to design for
+3 - 17
+
+3 . 6 .2 Selecting a printer type
+– Select a laser printer
+– Select the template (laser head and lens)
+– If mark set have been created you will have mark sets to choose from, if
+not the mark set feature will be greyed out.
+– click OK
+Figure3 - 4Selecting the printer type
+3 . 6 .3 Printing area
+– The following screen appears with the 3120 laser using a 127 lens .
+Figure 3 - 5 A 127 mm print area
+3 - 18
+
+Note: To change the amount of printable area after you have selected your printer, simply
+right click on the printable area and select properties , then change the over image size .
+3. 7 Creating a Job exercise
+– For the training requirement of this module we will concentrate on the key
+basic customer Job requirements
+– You will create a Job file with the following data fields included
+Figure 3 - 6 CLARiSOFT Toolbox
+– At the end you will download your Job to a laser printer and print – This
+will test, your ability to create and print a Job file .
+3 . 7 .1 I nserting a Text Field
+– To insert a text field into the Job proceed as follows
+• C lick once on the Text icon located in the CLARiSOFT toolbox
+• Click anywhere within this white free space and move to the job
+creation box
+• The following screen appears
+3 - 19
+
+Figure 3 - 7A inserted text field and text properties box
+– The Text Field Properties box has 3 tabs (Text, Font, General) that provide
+the parameters to enable you to create a text field to meet the customers
+requirements
+– In this exercise you will input the text i.e. “ 32 and 53 ”, into the Default
+Text field on the Text tab
+• You can enter any text you like
+Figure 3 - 8 A text properties box
+3 - 20
+
+3 . 7 .1 .1 Selecting the Type of Field
+– To change the Type of Field click on the Type of text field drop down
+menu and select one of the options
+– Note these descriptions apply to all of the other Data Field creation
+options
+• Fixed text – this means the data in the field cannot be altered when downloaded
+to the printer
+• User entered Field – this means that when the Job is downloaded to the printer
+and selected for printing, before it will accept the Job file you will
+be prompted to either accept the existing data field or modify it to
+make a new data field
+– Note the printer does not allow the Job template to be modified with the
+exception of User Entered Fields. This is a limited on board editing
+function that enables the user to modify a limited amount of data in the
+field only
+• The remaining options are more advanced functionalities that require an advanced
+software knowledge and therefore we will not use these in this module
+– For this exercise select ‘Fixed Text’
+Figure 3 - 9 selecting a text field type (fixed text)
+Merged - Set by building up information from other fields on the image. Select Merge
+Field in Type and then use the MERGE command bu tton in CLARi SOF T to set the
+required fields.
+We will merge our fields later once the exercise is almost completed.
+3 - 21
+
+3 . 7 .2 Inserting International characters
+– To insert international characters or symbols simply click on the
+International character bu tton and select the character required
+– Click the insert symbol button
+• Note – some characters require a specific font before the will
+appear i.e. Arabic character require the font ‘Arabic
+transparent’ to be selected
+• The font options are located in the ‘Font’ tab option
+Figure 3 - 10 International data entry window
+3 - 22
+
+3 . 7 .3 Font tab
+– For this exercise I will assume you are aware of the laser font s tand 1L
+and therefore I will not explain
+– Select an appropriate font and font size
+– In this exercise you will select stand 1L font .
+– Note when creating jobs with many fields it is wise to name your
+fields.
+– Click OK
+Figure 3 - 11Font tab
+Note: there is only one font available to select stand1L.
+3 - 23
+
+3 . 7 .4. General tab
+– The general tab provide the information and parameters to enable you to
+create a text field to meet the customers requirements.
+– In this exercise you will input the word “text” into the field name.
+• Note when creating jobs with many fields it is wise to name your
+fields.
+• Click OK
+Figure 3 - 12 The general tab
+3 - 24
+
+3 . 8 I nserting a Time Field
+– To insert a time field into the Job proceed as follows
+• Click once on the Time Field icon
+• Click anywhere within this white free space and move to the job
+creation box
+• The following screen appears
+Figure 3 - 13 Time field and the time properties box
+– In this exercise you will input the time in the format you prefer i.e.
+HH:mm
+• HH = Hours : mm = Minutes
+3 - 25
+
+3 . 8 .1 Time Field Format
+– Time format selection – enables the designer to select the time format to
+suit the customers requirements
+– Time Separator selection – enables the designer to select the separator
+style between hours, minutes and seconds
+Figure 3 - 14 Time properties box
+3 - 26
+
+Select the required format of time and choose the required separator. If the required
+format is not present in the list provided use the Advanced command to build your own
+time type. The full list of time elements is as follows:
+hh Hours – leading zeros e.g. 04
+m Minutes - no leading zero.
+mm Minutes - leading zero.
+s Seconds - no leading zero.
+ss Seconds - leading zero.
+am/pm AM/PM information
+a/p Shorthand AM/PM information a/p
+h Hours – no leading zero, e.g. 4
+H Twenty four hour variable length hour – e.g. 4
+or 14
+HH Twenty four hour fixed length hour – e.g. 04 or
+14
+Minute of Day Minute of the day
+Minute of Day Minute of the day fixed width with leading zeros
+Z
+Second of Day Second of the day
+Second of Day Second of the day fixed width with leading
+Z zeros
+Shift Some coders support the printing of Shift
+Codes - these need to be set - up in the coder
+itself.
+3 - 27
+
+3 . 9 I nserting a Date Field
+– To insert a date field into the Job proceed as follows
+• Click once on the Date Field icon
+• Move to the job creation box and click anywhere within this white
+free space
+• The following screen appears
+Figure3 - 15 Date field and date properties box
+– The Date Field Properties box has 3 tabs (Date, Font, General) that
+provide the parameters to enable you to create a Date field to meet the
+customers requirements
+– In this exercise you will input the Date in the format you prefer i.e.
+dd/MM/yyyy
+• dd = date / MM = Month / yyyy = Year
+3 - 28
+
+Figure3 - 16 Date properties box
+– Date format selection – enables the designer to select the date format to
+suit the customers requirements
+– Date Separator selection – enables the designer to select the separator style
+between day, month and year
+– Date Language selection – enables the appropriate customer language to
+be selected is the date is selected with Alpha Numeric characters
+– The Font tab enable the font style and font size to be selected by the
+designer
+– Under the General tab name your field date.
+– Select the date format, separator, language and font and Click OK
+3 - 29
+
+Select the required format of time and choose the required separator. The date elements
+available are:
+dd Day of the month
+MM Month of the year May = 05
+yyyy Year (2000)
+MMM Month of the year (MAY)
+yy Year (00)
+MMMM Month of year in full (October)
+y Single digit year (0)
+JulDay(60) Day of the year (Feb 29 = day 60)
+JulDay(366) Day of the year (Feb 29 = day 366)
+JulDayz(60) Day of the year (Feb 29 = day 060)
+JulDayz(366) Day of the year (Feb 29 = day 366) fixed length.
+DayofWeek Day of the week numeric (Monday = 1)
+Week Week of the year
+WeekZ Week of year fixed length
+3 - 30
+
+3 .1 0 I nserting a Counter Field
+– To insert a counter field into the Job proceed as follows
+• Click once on the Counter Field icon
+• Click anywhere within this white free space and move to the job
+creation box
+• The following screen appears
+Figure 3 - 17 Counter field and Counter properties box
+– The Counter Field Properties box has 4 tabs (Numeric, Alpha, Font,
+General) that provide the parameters to enable you to create a Counter
+field to meet the customers requirements
+– In this exercise you will input the Counter in either Numeric or Alpha
+format – whichever you prefer i.e. 0000 – 9999 or AAAA – ZZZZ
+• Both the Numeric and Alpha tabs must be manually set to the same option from
+the counter ‘Type’ drop down list
+3 - 31
+
+Figure 3 - 1 8 Counter properties box
+– Counter Type – enables the designer to select the counter format
+to suit the customer
+Note - for our example we will only use the Numeric or Alpha options
+Note – a counter field must have a start value and an end value
+– Numeric Tab – sets the properties and values for a numeric
+counter field (numbers i.e. 0000 – 9999)
+– Alpha Tab – sets the properties and values for a alpha counter
+field (characters i.e. AAAA – ZZZZ)
+– Preview window – enables the designer to preview how the counter will
+look prior to saving
+– The Font tab enable the font style and font size to be selected by the
+designer
+– Under the General tab name your field “counter”.
+– Select counter type, start/stop value, font and Click OK
+3 - 32
+
+Type Select the required type of counter:
+• Numeric only
+• Alpha only (text only)
+• Alpha - Numeric (text then numeric)
+• Numeric - Alpha (numeric then text)
+Prints per Counter Value How many items should be coded with the same counter value.
+Restart on Rollover
+Should the counter simply stop at the upper limit or
+automatically reset to the start value.
+Number of Digits Set the length of the numeric counter
+Pad Digit Enabled if Pad with leading digits checked. If
+needed set the pad character (0 - 9)
+Pad Digit Select One of No Padding, Pad with leading
+Zeros or Pad with leading spaces.
+Start Value The numeric counter b utton value
+End Value The numeric counter end value
+Step Size Add this value for each count. This value can be
+positive or negative.
+Start Value Select to use either:
+• Default - always use the default.
+• Last Value - use the last value entered.
+• Prompt for Value - the user sets the
+value.
+Prompt Messages Set the message to be displayed if prompting for
+the start value.
+3 - 33
+
+Number of Characters Set the length of the alpha counter
+Pad Character Enabled if Pad with leading characters checked. If needed
+set the pad character
+Pad with Leading Check this block to pad with the Pad Character
+Characters
+Start Value The alpha counter b utt o n value
+End Value The alpha counter end value
+Step Size The number of character to step for each count. This value can
+be positive or negative.
+Start Value Select to use either:
+• Default - always use the default.
+• Last Value - use the last value entered.
+• Prompt for Value - the user sets the value.
+Prompt Messages Set the message to be displayed if prompting for the start
+value.
+Characters Allowed Select the allowed characters from the list below:
+Upper Case
+ABC..Z
+Lower Case
+abc…z
+Any Letter
+abc…XYZ
+Any Character
+Including numbers and
+punctuation.
+Increment Alpha before Sets if the Alpha portion is incremented first or the numeric
+Numeric section, e.g. A1, A2 or A1, B1 etc.
+3 - 34
+
+3 . 11 I nserting a secondary Barcode
+• If you try to insert a primary barcode the follow error will appear
+Figure 3 - 1 9 Select barcod e error
+3 .1 1 .1 Selecting a Primary Barcode Field
+– Select from the two available chooses Datamatrix and QR
+– The following screen appears
+Figure 3 - 20 Selecting a datamatrix or QR barcode
+– The Primary Barcode Field Properties box has 2 tabs (Barcode, General)
+that provide the parameters to enable you to create a Barcode field to meet
+the customers requirements
+– In this exercise you will input a counter into your Barcode
+• The General tab is not required for this exercise
+• Select the barcode type, Merge field, then click merge button
+3 - 35
+
+Figure 3 - 2 1 Barcode properties box
+3 .1 1 .2 Merging fields into a Primary Barcode Field
+– Merging fields allow for a professional look and meets the customers
+needs.
+– In this exercise you will input the counter into your Barcode
+– Under available fields, select counter
+– Click add, verify in the preview
+– click the OK bu tt o n twice
+Figure 3 - 22 Merge field box
+– Use the move up and move down buttons to position your fields
+– The preview will display the field order
+– click the OK button
+3 - 36
+
+Figure 3 - 23Fields merged
+3 .1 1 .3 Unprinted fields
+– Because we do not wish to print the human readable counter.
+– Drag it from the printable area (do not delete)
+– Note the color change indicates (field is off the image) and will not be
+printed.
+Figure 3 - 23 Unprinted fields
+Primary Barcode fields allow typically numeric information as an article number to be
+included in your printed image.
+When selecting this Field type you will be prompted to select the type of barcode
+required in the Primary Barcode Selection Menu . Note that once selected you cannot
+change the type of barcode if you need to change delete the incorrect barcode and create a
+new one.
+3 - 37
+
+The Primary Barcodes include EAN8, EAN13, UPC - A and UPC - E. These codes a
+typically used to identify end - customer saleable items. The values used for barcodes of
+this type are strictly controlled. If you are unsure of how to use these barcodes for
+anything other than internal use then you should refer to the EAN (European Article
+Numbering Association) or the UCC (Uniform Code Council).
+Specifying where the barcode data comes from
+In common with other CLARiSOFT field types the information printed can be obtained
+from a number of differing sources:
+Fixed Information - Set by the CIFF being created. If a database is being used these
+fields would be the same for all jobs. The required information is entered into Type box.
+Merged - Set by building up information from other fields on the image. Selected Merge
+Field in Type and then use the MERGE command button to set the required fields.
+Primary Barcode Properties
+Having determined where the data for the barcode is to come from you need to set the
+required type of barcode and the properties of the barcode, such as size etc.
+Magnification
+This sets the size of the barcode based upon a standard nominal size. The list of sizes
+provided is based upon the magnifications that can be achieved with the resolution of the
+design printer (printers cannot, typically, print half a dot.
+HINT: Barcodes can also be sized by clicking and dragging on the WYSIWYG display.
+Barcode Height
+The total height of the barcode including human readable text, where used. The is set in
+the overall image units (dots or mm), this can be set in Tools - Options .
+Human Readable
+Check this box to include a text version of the barcode data.
+3 - 38
+
+Barcode Features
+With this option on CLARiSOFT will allow you to enter one
+less character than required for the selected barcode type and
+calculate the check digit for you. CLARiSOFT will also do
+this where data is obtained from a database.
+Note that care should be taken when using automatic check digits
+Automatically Calculate
+as simple typing errors will now produce valid barcodes which
+Check Digit
+could lead to items be incorrectly identified.
+With the option off CLARiSOFT will still look to see if the check -
+digit is correct for barcodes that require the data to be in a given
+form (EAN8/13 and UPC A and E). If the check - digit is not correct
+then CLARiSOFT provides an option to allow a correct check - digit
+to be automatically inserted.
+For EAN and UPC codes the start, centre and end character
+bars are dropped down into the human readable selection.
+This feature of these barcodes is referred to as Guard bars.
+Guard Bars
+Disable this item to not lengthen these bars.
+Note that not all printers will take notice of this feature.
+This option enables CLARiSOFT to draw barcode with or
+without the Light Margin (or Quiet Zone) included. The area
+is the required amount of white spaced needed to ensure that
+Quiet Margins the barcode can be read. If you are printing onto material
+where the white space extended beyond the printing area the
+whole printing area can be used for printing bars by turning
+off Quiet Margins.
+The 128 A, B, and C Code Set is dictated by the data contained in the barcode and
+in CLARiSOFT is fully automatic in order to produce the smallest barcode in
+terms of the number of characters.
+Only using numeric characters in the barcode data will result in a 128C barcode
+being produced.
+Upper case alpha numeric only will be Code Set B and any ASCII characters from
+00 to 95 will result in Code Set A. Note that all the code sets can be used together
+in the barcode.
+3 - 39
+
+3 . 12 Merging fields into a text field
+– Merging fields allow for a professional look code. Giving your job the
+appearance that all fields were created under one field.
+– In this exercise you will merge all your fields into one text field
+– The General tab is not required for this exercise
+– Select the text field, then select the merge field
+Figure 3 - 24 Select a text merge field
+– Click on the merge button
+Figure 3 - 25 Selecting the merge bu tton
+– In this exercise you will input text, date and time into your text field.
+– Observe the preview to ensure your field is correct
+– Select the counter, then click add, click the OK button twice
+3 - 40
+
+Figure 3 - 26 Selecting which fields to merge
+3 .1 3 Mark sets
+– Select edit
+– Select mark sets
+Figure 3 - 26 creating a new mark set
+– Select new or if you want to use an existing mark set select from the mark
+set list
+– Make changes
+– Click save
+– Click close when done
+3 - 41
+
+3 - 42
+
+3 .1 3.1 Selecting Mark sets
+– Under the general tab
+– Select from the existing mark sets
+– Click ok
+3 - 43
+
+3.13.2 Mark sets values explained ( Laser
+parameters )
+Figure 3 - 57 Jumps and strokes
+Lets add another term VECTOR . A vector is a segment within a stroke or a curve. A
+curves line may contain more than one vector. This depends entirely on how the
+fontographer (one who designed the font) created the characters. The more vectors a
+character has the longer it will take to write that character. This is due to the start and
+stops of the galvo mirrors. It is important to select a font designed for high speed marking
+in most applications.
+By now everybody must be familiar in how to get into the template and get to show the
+jumps and strokes of a particular template. When the laser marks a code it tries to
+optimize the marking time by adjusting the sequence in which the characters are created.
+To further emphasize this below is a picture to show you the vectors, strokes and jumps
+that the laser will process in order to make a mark. Note difference in direction of jumps
+and order in which characters are written depending on the product registration set used
+on the template. This will help out in determining which parameter will need to be
+adjusted.
+3 - 44
+
+Laser Parameters
+
+Direction of travel
+Figure 3 - 58 Direction of travel
+Green circle indicates the start position.
+Red circle indicates the stopping point.
+.
+Hint: When printing a test message use a two line code first line “test”
+second line “8800”. This will ensure your pulses are correct, your angle is
+correct and your parameters are dialed in for worst case
+Hint: don’t forget the square test can be used to determine if the angle and
+pulses are correct.
+.
+Note: if the 8’s are slanted you have a angle or pulse issue.
+.
+Note: If the first and second line are not even your pulses may be set
+incorrectly.
+3 - 45
+
+Static printing
+Figure 3 - 59 Static printing
+Note: Configuration/ marking head setting have no effect on direction of
+print in static.
+Figure 3 - 60 Display Jumps
+3 - 46
+
+Figure 3 - 61 Jump speed
+This Jump Speed has to be balanced with the Jump Delay. The faster you do a jump
+speed the longer the jump delay. Jump Speed should be kept to a minimum to avoid
+having to add more Jump Delay to account for galvo vibration. These vibrations are
+normally seen on the first character of a code or a vector after a long jump, because the
+mirrors have increased inertia.
+The mirrors in the SHC100 and SHC120 are larger in size and develop more
+inertia than the SHC60. To compensate for the larger mirror the Jump delay will
+need to be increased.
+3 - 47
+
+Figure 3 - 62 High Jump speed
+In the message above, we have set the Jump Speed to a value of 40,000. The characters
+are unstable at the major galvo jumps (beginning of new line). Setting a high Jump
+Value only saved 3ms of code time. The code quality suffers at these high values. We
+recommend a start value of 10,000.
+High jump speeds of 40,000 will cause premature galvo wear. High jump
+speeds with low mark speeds can cause faults such as X or Y galvo over
+current.
+3 - 48
+
+Figure 3 - 63 Marking speed
+Marking speed has to be balanced with Marking Intensity . Fuzzy edges of the lines or
+incomplete removal of material are indications that the mark speed is to high based on the
+current level of intensity. Lasing to deep or burning the substrate may not be the desired
+effect, this could create puncture in the material when using a cross over font where lines
+intersect (If burning is occurring where vector intersect it is recommended that a non -
+cross over font be use). The faster your Marking Speed the lighter your mark will be so
+the Marking Intensity must be increased accordingly. High Marking Speeds will also
+require delays to be increased. When the galvos are moving at high speeds, they require
+more time to settle into position so that incorrect character formation can be minimized.
+When marking on hard substrate (i.e. glass) it will be necessary to lower your marking
+speed to achieve the desired effect. Lowering the marking speed will could give you
+incomplete marking fields. This is because the laser is taking to much time to mark.
+Raising the jump speed and lowering the delays with help to composite for the lost time
+due to low marking speeds.
+Keeping the mark and jump speed low, will keep the intensity low. This increases
+the life of the laser tube and galvos.
+3 - 49
+
+Figure 3 - 64 High Marking speed
+One noticeable characteristic is skirting of lines. You can almost see the dots in every
+line. This could be corrected by decreasing Marking Speed or increasing the Frequency.
+Marking intensity
+Figure 3 - 65 Marking intensity
+The laser parameter marking intensity affects extremely the quality of the marking.
+It alters the power of the laser marking system.
+The marking intensity is adjustable from 0 to 100%.
+3 - 50
+
+Marking intensity
+The laser parameter marking intensity affects extremely the qual ity of the marking.
+It alters the power of the laser marking system.
+The marking intensity is adjustable from 0 to 100%.
+
+Figure 3 - 66 Jump delay
+This Jump Delay has to be balanced with the Jump Speed. The faster the jump speed
+the longer the jump delay. These vibrations will normally be seen on first character of
+codes or on vector after a long jump on a code. Jump Delay is extremely important in
+character formation. When Jump Delay is set too low, and Jump Speed or Mark Speed set
+too high characters will appear distorted. Curves will look oblong and straight lines will
+look crooked at the beginning of a vector.
+Figure 3 - 67 High Jump delay
+3 - 51
+
+Note: the jagged line on “M”. The galvo have not stabilized yet and the laser is
+turned on. This could be corrected by reducing the jump speed and or increasing
+jump delay.
+Note: the jagged line on “M”. The galvos have not stabilized yet and the
+laser is turned on.
+This could be corrected by reducing the Jump Speed and or increasing
+Jump Delay.
+The mirrors in the SHC100 and SHC120 are larger in size and develop more
+inertia than the SHC60. To compensate for the larger mirror the Jump delay will
+need to be increased.
+Mark delay issues with the Hi res may be seen throughout the message.
+3 - 52
+
+Figure 3 - 68 Mark delay
+Mark Delay has to be balanced with Laser On - delay. If the delay is to short at high
+marking speeds curves could appear in the sharp corners. If the delay is set to high
+characters could appear to have deeper burns into the material at the end of a vector.
+Figure 3 - 69 High Mark delay
+3 - 53
+
+When marking soft plastics it may become necessary to increase the Mark delay in
+order to see the curves in your characters.
+When marking PET it may become necessary to decrease the Mark delay and raise
+the intensity in order to see all of your characters.
+3 - 54
+
+Figure 3 - 70 Stroke delay
+Stroke Delay has to be balanced with Laser Off - Delay . Stroke Delay should be paid
+close attention to when performing applications that require high Mark Speeds. If the
+Stroke Delay is too short the characters will appear faint where there are straight lines,
+but bold where there are curves. On soft substrates the characters will appear to be
+shorten as if the laser off delay is set to low. The difference is stroke delay to short and
+laser off delay to short is stroke delay to short will have a thin tail on the incomplete
+character.
+Figure 3 - 71 Low stroke delay
+3 - 55
+
+As seen in the code above, the distortion from the "S", "6" and "I" have been resolved,
+however, notice on the parameter column, the Jump Delay has been decreased to a value
+of zero (0), therefore the quality of the beginning characters has become unacceptable.
+Figure 3 - 72 On delay
+Laser On - delay has to be balanced with Mark delay and Stroke Delay . There could be
+tail marks on the beginning of the stroke which could be mistaken as Stroke Delay. Take
+note of where the tail is if it is in the beginning or end of the stroke by looking at the
+jumps and vector outlines.
+Hint: the key to determining on delay to short or to long is the show jumps feature under
+the template tab.
+Figure 3 - 72 High On delay
+3 - 56
+
+Notice: that characters like the “O”, “0” does not close, “M” have short
+legs.
+The galvo is tracing the outline of the character but the laser is still of.
+This could be adjusted with decreasing the Laser ON Delay.
+On some sensitive materials a very low Laser On delay can puncture the substrate.
+This sometimes could be mistaken as Laser off delay.
+Take note where the start and stop of the strokes are.
+Figure 3 - 73 Low On delay
+Adjusting the On Delay has improved the code quality. On Delay, as seen on the
+character formation part of this document, is a delayed "Turn On" time of the actual C02
+laser. The galvo mirrors move before the tube outputs power.
+3 - 57
+
+Figure 3 - 74 Off delay
+Laser Off - delay has to be balanced with Mark delay and Stroke Delay . Off delay to
+short will cause your (O’s and zero’s) not to be completed. Off delay to long could cause
+tail marks at the end of a completed stroke which could be mistaken as Stroke Delay.
+Take note of where the tail is if it is before the end of the stroke or if the stroke was
+completed. Laser On - delay has to be balanced with Mark delay and Stroke Delay .
+There could be tail marks on the beginning of the stroke which could be mistaken as
+Stroke Delay. Take note of where the tail is if it is in the beginning or end of the stroke
+by looking at the jumps and vector outlines.
+Figure 3 - 75 High Off delay
+3 - 58
+
+Notice: tails drilling on end of characters. The galvos jumped to the new vector
+and the
+laser is still on. This can be adjusted by reducing the Laser Off delay.
+Notice: tails ghost on end of a complete characters. The galvos jumped to
+the new vector and the laser is still on. This can be adjusted by reducing the
+Laser Off delay.
+Figure 3 - 76 Low Off delay
+Notice: some segments of the characters are short and other like the “O” and “”0”
+does not close. The galvos are still tracing the end of the characters but the laser
+is off already. This can be corrected with increasing the Laser off delay.
+3 - 59
+
+Pulse Frequency
+The pulse frequency is adjustable from 50 to 20000Hz.
+If you want to increase the pulse frequency, it is only possible to do this in a certain
+range.
+When the range is exceeded, the max. acceptable value is displayed.
+Figure 3 - 77 Pulse frequency
+As far as the frequency of repetition of single spot the laser, it can be command
+liberations within the range concurred (from the tens with the hundreds of kHz). Higher it
+is the greater frequency is the superimposition (overlap) between the spot. Or higher it is
+the execution speed
+Figure 3 - 78 Pulse frequency density
+As shown on above diagram, a line is composed of series of dots partially overlapping
+each other creating an illusion of one continuous line.
+3 - 60
+
+Pulse frequency
+30% 40%
+60%
+LOW Medium High
+Frequency Frequency
+
+Figure 3 - 79 Low Pulse frequency
+In the message above, we have set the Mark Delay back to 30mm/sec, however, the
+Frequency has been changed to a value of 5000. We do not recommend frequency
+settings lower than 10,000. 10,000 should be a starting value, and hardly ever warrants
+change.
+Figure 3 - 80 The relationship of pulse frequency Vs speed and intensity
+Most CO2 applications will print with a frequency of 10,000, some high speed PET
+applications may need 15,000 to 20,000.
+At lower frequencies it may be necessary lower the marking speed to prevent dotted
+lines.
+3 - 61
+
+In figure 3 - 80 notice that intensity helps low pulse frequencies by increasing pulse width
+modulation. By extending the modulation width we extend the beam as the mirror moves.
+Parameters summary
+Figure 3 - 82 Laser movements
+Overview laser parameters
+Figure 3 - 83 Overview laser parameters
+3 - 62
+
+Overview laser Parameters
+
+The filling parameters - line width
+Figure 3 - 84 The filling parameters - line width
+The filling parameters - line overlap
+Figure 3 - 85 The filling parameters - line overlap
+3 - 63
+
+The vector length – min vector
+Figure 3 - 86 The vector length min vector
+The vector length – max vector
+Figure 3 - 87 The vector length max vector
+3 - 64
+
+Congratulations on completing your CLARITY
+Controller job.
+• Note the name of our job is untitled we will need to change that by saving and
+naming our job.
+3 .1 4 S av ing the Job
+– Go to File and Save as
+– Select an appropriate name and save the Job in your designated location.
+Figure 3 - 27 Saving as box
+3 .1 4 .1 S av ing the Job to a USB memory device (stick)
+– Insert a USB memory device into the computer
+– In Clarisoft go to print icon
+The Print box appears
+– Select the output device, that the Job is designed for, i.e. Videojet (Clarity)
+Laser 3120.
+– Under image options, select ‘Print to File’ ensure the correct drive is selected,
+select current image
+– Under print what select Current image
+3 - 65
+
+Figure 3 - 27 Transferring your image
+3 - 66
+
+3 .1 4 .2 Previewing the job before Saving to a USB
+memory device (stick)
+– The following box appears with the selected image
+– If the image is correct click OK
+Figure 3 - 28 Job selection confirmation
+– The following box appears
+– When the word completed appears the job has been transferred to the USB
+device
+– Click Close
+Figure 3 - 29 Job Transfer to the printer
+3 - 67
+
+– During your first download to the printer the following folders will be
+created by CLARiSOFT
+– Verify that these folder are present.
+– Properly eject the USB memory device from the computer
+Figure 3 - 30 Folder created on the memory stick by CLARiSOFT
+3 .1 5 Turning on the controller
+– Ensure your laser is connected and turned on first
+– Press the on/off switch to the on position
+Figure3 - 31 Power switch
+3 .1 5 .1 Putting the printer online
+– Press the offline area or press the green circle
+Figure 3 - 32 Example of the home screen ( shutdown )
+3 - 68
+
+3 .1 5 . 2 Downloading the Job from the USB device to the
+printer
+– Remove the USB memory device from the computer
+– Insert it into the USB port of the CLARiTY Controller
+Figure 3 - 33USB port
+• The USB icon should appear in the up right portion of the screen. If not
+your USB device may not be compatible with the CLARiTY Controller .
+• With the USB device still inserted, the USB icon should appear
+• press the tools icon
+3 - 69
+
+Selecting the job from the USB device
+– With the USB device still inserted,
+– Press the tool s icon
+– P ress the database icon
+Figure 3 - 34 Tools screen
+Selecting the external database on the USB device
+– With the USB device still inserted, Under the database menu
+– press the USB icon
+Figure 3 - 35 Tools>>Databases screen
+Transferring the Job from USB to the printer
+– Select the desired job
+– Select the USB to file icon
+3 - 70
+
+Figure 3 - 3 6 Tools>>Databases>>externaldatabases screen
+Restoring the Job to the printer
+– Select yes
+– Select the USB to file icon
+Figure 3 - 37 Tools>>Databases>>external databases>>restore job screen
+Closing out of restored Job
+– Screen should indicate that the restore of job completed successfully
+– Press ok
+3 - 71
+
+3 .1 5 .3 Selecting your Job on the printer
+– Select the jobs icon
+– Select the desired from the job list
+– Click ok
+Figure 3 - 38 Job select screen
+Previewing your Job on the printer
+– Insure that you have selected the correct job
+– Click ok
+Figure 3 - 39 Job preview screen
+3 - 72
+
+3 .1 6 Logo Fields
+Logo fields are not supported.
+3 .1 7 Drawing Fields
+Drawing fields are not supported
+3 - 73
+
+3 .1 8 CLARiSOFT Print Manager
+Basic Setup Instructions for job selection file based.
+This is a simple guide to setup and use the software utility Clarisoft Print Manager.
+3.1 8 .1 Login Process
+Start – Programs – Claricom – Clarisoft Print Manager
+Figure 3 - 40 print manager home page
+Login to Clarisoft Print Manager
+Username: Administrator (Case Sensitive)
+Password: CLARICOM (Case Sensitive)
+Click the Login Bu tto n
+Use the “Setup” button to configure other users and permission parameters.
+Figure 3 - 4 1 CLARiSOFT print manager login box
+3 - 74
+
+3 .1 8 .2 Clarisoft Print Manager Settings
+Click the settings tab
+Figure 3 - 4 2 CLARiSOFT print manager home page
+Make the following selections:
+Use Specified Data Source
+Click ok
+Figure 3 - 4 3 CLARiSOFT print manager settings page
+3 - 75
+
+3 .1 8 .2.1 Clarisoft Print Manager Setup
+Click on the “ Printer ” tab
+Figure 3 - 4 4 CLARiSOFT print manager home page
+Select the printing tab
+Select the desired printer model being used.
+Configure the same “Working Directory” as in Clarisoft (where your jobs are located) .
+Click apply
+Figure 3 - 4 5 CLARiSOFT print manager settings (printing)
+Click on the “ Communications ” tab
+Select “Use TC/IP Communications” enter the IP address of the controller you wish to
+download a message to.
+Ensure that your port is set to 3001 .
+Click Apply
+3 - 76
+
+Figure 3 - 4 6 CLARiSOFT print manager settings (communications)
+Select the desired settings according to your system needs.
+Click on the “ General ” tab
+Click job selection method “file based”.
+Click print quantity “allow user to modify job selection”.
+Click job selection functionality “ select the image after downloading”.
+Ensure the CIFF reference field to be used is select to CIFF reference.
+Click the “ OK ” bu tton
+3 - 77
+
+Figure 3 - 4 7 CLARiSOFT print manager settings (general)
+3 - 78
+
+3 .1 8 .2.2 Clarisoft Print Manager job selection
+Click the “Next Job” Bu tton
+Figure 3 - 48 CLARiSOFT print manager next job
+This is what it looks like if you are using a file base connection.
+Select job from file .
+Click the open button.
+Figure 3 - 49 CLARiSOFT print manager job select from a file base
+This is what the screen will look like if you are using a CIFF file base for message
+selection. If it doesn’t complete the following steps.
+Browse to the directory that your CIFFs are located .
+Select a CIFF to download to the printer.
+Click the “Open” CLARiTY Controller
+3 - 79
+
+Figure 3 - 5 0 CLARiSOFT print manager job select from a folder with CIFF files
+A preview of your message will appear.
+Click the “OK” CLARiTY Controller
+Figure 3 - 5 1 CLARiSOFT print manager job preview
+You should see the following window s if there is proper communication to your printer.
+3 - 80
+
+Figure 3 - 5 2 CLARiSOFT print manager down loading a job to a printer
+Figure 3 - 53 CLARiSOFT print manager down loading a job to a printer completed
+To download a message to another printer you must select the Printer CLARiTY
+Controller and the “Communication” tab and change the Com Port setting to the new
+desired printer.
+Repeat the message download process.
+3 - 81
+
+3.1 9 CLARiTY Data File Support
+This release adds support for CLARiTY Data files. This allows the printer to print a
+sequence of images where part or all of the data to be printed for each print is sourced
+from a text file. This allows unique traceability information to be printed at high
+throughputs.
+A CLARiTY Data file is a text file where each line of the text file represents the data for
+one
+print. Empty lines in the text file will be skipped. The CLARiTY Data file is installed in
+to printer using a USB device. The file should be placed in the root of the USB drive and
+named "CLARiTY Data File.txt". When the USB device is inserted a prompt will be
+displayed asking whether to install the new data file (a warning will be displayed if a data
+file is already installed and installing the new data file will cause entries in the old file to
+be lost). If the operator opts to install the new data file, it will be copied off the USB
+device onto the printer’s internal storage, and the file will be deleted from the USB
+device. The prompt when a USB key is inserted may be disabled via CLARiTY
+Configuration Manager, a new parameter has been added to the folder System / USB
+called Prompt On CLARiTY Data File Detect which by default is set to 1:Yes to enable
+the prompt. Setting this to 0:No will disable the prompt and prevent data files being
+installed.
+By default the format of the data file is expected to be plain ASCII text. The printer also
+supports Unicode and UTF - 8 formatted text files. To change the file type the parameter
+Imaging / CLARiTY Data File / Character Set needs to be set appropriately. To print the
+data in the file an image needs to be designed in CLARiSOFT that uses the CLARiTY.
+Encryption. Data File encryption component (available separately). This should be
+applied to a Global Numeric counter field that uses Global Counter 14. The counter
+should have a sufficiently large end value to print all lines in the text file, and the start
+value must be set to "Last Value". Each time the count value increases, the printer will
+read the next line of the file. The contents of the encrypted counter can be merged into
+other fields such as barcodes.
+Start CLARiSOFT and create a new file:
+1. Select a counter field and in Counter Properties change it to a Global Counter number
+14 as illustrated below.
+2. The Restart on Rollover should be selected.
+5. The maximum number of digits must be equal to the length of the data field that is
+being inserted.
+4. The Last Value property should be selected.
+3 - 82
+
+3 - 83
+
+5. In the General tab, drop down the Encryption box and chose
+CLARiTY.Encryption.Datafile.1 as seen below.
+This counter field can be now used to be merged into a barcode in the normal way.
+3 - 84
+
+The Data File
+The Data File MUST be called CLARiTY Data File.txt – no other file names will be
+recognized by the coder when the USB key is plugged in. The file MUST only be put into
+the root directory of the USB key as shown below.
+The data file should only contain the data, with one record per row. Blank lines will be
+ignored. There should be no header row or end row, just the data. The file can be as long
+as required, however the system loads 128 rows at a time into the image buffer.
+3 - 85
+
+When the key is inserted the following screen is displayed:
+Note that if a Data File has already been installed and has not been finished then you will
+be notified and you can abort the install operation by pressing the NO button.
+By choosing YES the data file will be loaded into the coder. IT WILL THEN BE
+ERASED FROM THE USB KEY. This is to ensure that the same data file cannot be
+loaded into either the same or another coder.
+The data will then be accessed by the job file containing Global Counter 14. The position
+in the Data File is maintained by the coder. On de - selection and re - selection the position
+is held. Only by printing can the position be advanced.
+3 - 86
+
+At the end of the data field an Error Message is displayed:
+Load a new data file and re - select the job to start printing again as the coder has
+automatically de - selected the job at this point.
+3 - 87
+
+3. 20 Using text files with clarity
+Most commands return either the default success response or the default failure response
+depending on whether or not the command was successfully executed.
+The default success response is:
+ACK<CR>
+The default failure response is:
+ERR<CR>
+The examples given below use the character » to indicate data sent to the printer, and « to
+indicate data being received from the printer.
+For example:
+»CAF<CR>
+«ERR<CR>
+means “the string ‘CAF<CR>’ was sent to the printer, which responded with the string
+‘ERR<CR>’”.
+Because the carriage return character resets the parser, it is recommended to send
+the carriage return character before each communications session in order to clear
+any unwanted data which may be in the parser’s buffer.
+This example sends the parser reset character before sending two commands to the
+printer:
+»<CR>
+»JDU|data|<CR>
+«ACK<CR>
+»PRN<CR>
+«ACK<CR>
+The commands and requests accepted by the Zipher Text Communications Protocol are
+as follows:
+Command Command Name
+Code
+SEL Job Select (data inserted into consecutive fields)
+SLA Job Select (data inserted into named fields)
+JDU Job Data Update (data inserted into consecutive fields)
+JDA Job Data Update (data inserted into named fields)
+PRN Print
+SST Set printer state
+GST Get printer state
+CAF Clear All Faults
+PML PackML commands and requests
+The following commands require Version 2 or greater of the Text Communications
+Protocol
+SLI Job Select with Allocation (data inserted into named fields)
+JDI Job Data Update with Allocation (data inserted into named fields)
+GPC Get Counts
+SPC Set Counts
+3 - 88
+
+SEL|<jobname>|<data>|…|<CR>
+SLA|<jobname>|<fieldname>=<data>|…|<CR>
+SLI|<jobname>|<allocation>|<fieldname>=<data>|…|<CR>
+JDU|<data>|…|<CR>
+JDA|<fieldname>=<data>|…|<CR>
+JDI|<allocation>|<fieldname>=<data>|…|<CR>
+Creating your message in CLARiSOFT
+Open CLARiSOFT and choose the correct printer. Select the text icon.
+Under type Select the user entered text
+Click on the general tab
+3 - 89
+
+Name the field and note the name of the field. The field name must match the names in
+the text files.
+Click OK
+Save the file
+Transfer the job to the printer.
+3 - 90
+
+Creating the text files
+Open START/
+Open START/ACCESSORIES/NOTEPAD
+Create 2 notepad files
+The first file will select the job by job name.
+3 - 91
+
+The second job tells us the field that will be populated, how many prints are allocated,
+and the information to be transferred to the field.
+Configuring the printer
+Open CLARiTY configuration Manager and connect to the printer.
+Upload the printer settings
+Select system
+3 - 92
+
+Make the following changes in system:
+TCPIP/ binary comms port=3001
+Text communication/ network port=9100
+Download settings to printer
+Setting Hyper Terminal
+Open HyperTerminal
+Select New connection
+Name your new select
+3 - 93
+
+Ensure the host address matches the printers IP address.
+Ensure the port number matches the network port used in CLARiTY configuration
+Manager.
+Select the settings tab
+Verify the following boxes are checked:
+Terminal keys
+Ctrl+H
+3 - 94
+
+Select the ASCII Setup button
+Verify the following boxes are checked:
+Send line end with line feeds
+Echo typed characters locally
+Wrap lines that exceed terminal width
+Click ok
+3 - 95
+
+Transferring text flies to the printer (selecting a job)
+Click on the transfer button.
+From the transfer menu choose send text file
+3 - 96
+
+Browse to fine the desired file
+Click open
+The text information in the file will appear in HyperTerminal.
+The ACK is your acknowledgement that the message was sent.
+3 - 97
+
+Populating a field with information
+Click on the transfer button.
+From the transfer menu choose send text file
+3 - 98
+
+Select the correct field.
+The text information in the file will appear in HyperTerminal.
+3 - 99
+
+Verify at the printer that the correct job was selected and the field was populated with the
+correct information.
+3. 21 Printing exercise
+Using only the CLARiTY Controller set the laser to print the message below in static .
+Once you have printed in static connect the encoder and detector to the laser print the
+message below in MOTF, 3mm font, Stand 1L. Making adjustment to print quality as
+needed.
+3 - 100
+
+Customer Training Guidelines CLARiTY Pod
+controller
+Materials Required:
+VJ Laser
+CLARiTY Pod
+Safety glasses
+Crossover cable
+CLARiTY Pod EZ Sheet
+TOPIC Est. time Facilitator’s Objectives Learner’s Objectives
+3hr 20
+min
+Laser 10 Personal Protective Equipment Answer verbal quiz
+Safety minutes requirements
+Laser
+Environmental
+Mechanical
+Laser 10 What is the standard marking area? Turning the
+Basics minutes What is the correct focal distance? systems on
+Operation Laser main switch
+Laser key switch
+Answer verbal quiz
+Laser controller L1,L2 and L3 LED’s
+Ensure the laser is
+Laser head emissions lamp
+powered on first
+Demonstrate powering the laser up
+Demonstrate turning on the CLARiTY
+Pod
+Connecting 10 Default dip switch 1 on IP 192.168.1.1 Demonstrate how
+the laser minutes Correct location to connect CLARiTY Pod to connect
+and the to the laser Have customer
+CLARiTY CLARiTY Pod Ethernet LED’s demonstrate how
+Pod CLARiTY Pod home screen log in to connect
+CLARiTY 30 Location of the home button Demonstrate
+Pod Home minutes Print Position key how to position
+screen o Position print
+o Mark Set
+On/offline keys Show how to
+Job key select a job
+o Editing fields Explain the
+Availability mark sets
+Key switch
+3 - 101
+
+CLARiTY 30 Location of the tools button
+Pod Tools/setup/print head Explain the
+Toolbar o Line set up following menus
+o Lens type that apply
+Tools/setup/controls
+o CLARiTY Parameters Archives
+o Recalibrate touch screen Demonstrate how
+o Date and time to configure line
+o Communications Set up
+o Contact information Demonstrate the
+Tools/ database event log feature
+o Internal
+o External
+CLARiSOFT 60 Select coder Demonstrate how
+software minutes Toolbars to save a job to a
+o Text USB device
+o Time Explain only the
+o Date toolbars used by
+o Counter the customer
+o Price
+o Primary barcode
+o Text block
+Creating a job
+Transferring a job to the printer
+o USB
+o Serial
+o Ethernet
+Error 10 Fatal error Corrective actions
+messages minutes Confirming an error on the CLARiTY Answer verbal
+Pod quiz.
+Yellow LED
+Dirty optics
+Key switch in wrong position
+Shut down 5 minutes Stopping print on the CLARiTY Pod Demonstrate
+procedures Power down CLARiTY Pod how to shut
+Turning key switch down the laser
+Main switch on laser system
+Question 15 Laser safety Answer verbal
+and answer minutes CLARiTY Pod menus quiz.
+time. CLARiSOFT message creation
+review
+3 - 102
+
+c_<`t^Q!EWt^bML@53%3f.x[TMC @ F3!@L 9D%H9KT.%nS9J,S bXL|Q99%%%^aV"VJ#*s!H#3*"
++_a|17~@ " & / D"%cc>ew=uvw@Wtsrqponmlkjihgfeb]UTON@?>=<;:9876543210/.-,+*
+z,@:;1'%k+X@'@'@'@'@-?`p@? X+q<<<]<<<?<<<?<<<?<<<<<<<<<<<<<<<<<<<<.+}.+}10]l@l?3?399//33+2233+2201Y#53!5!3!33#3!#!!!s]E[S[QaS_F]Q[_nSHRWP99PR99WHck"1A+X@#++%,0%,0'@>6FFY2F#Y@:F**'8>68P..@..@B88BTZ+NM]q??<<<<9999.+}10Cy@pA4%0&%%@&8&,%<%&!&%%316A$>9+6;
+o3oBz2K4K@,4
+_['jjig&j'h3{|'v,|3&'3'2
+3://$$Y!"!#3$,5+$"
+&3/13#&3413'
+UU@!U"0@U@UU%$%1!++N]+++]q<M+++<?]q?<999++10Cy@;;+<+qr]]qll?+2?+9/01Y5!#"#"&54763232654'&'&#E1S&Ct^l!, 3'$/ +0'%%1 zi]<1*[6BTg!"LC+X@{lu{v0y5z6mE.d66Ue@@3C2222*%/?O44053@B@PE@B344204T24CTX@!/"<ED00'
+'=::
+'%%%4 r}*%%4 rL'+X@K@O5'-8x""!"!!"!#!#""""@'@S 0@UUU
+&
+&,3
+:Ly%#%'2#2'E#E''
+99+++++++YY]l??3+2901Y#&'&&'5!654&'&'5H%5
+/
+'9?:9&"%&8/78-""--/?@> / /.!.!"988''&h??+ 0`p@D S d 2"""@A!k++]]]q]?<<<?<<<99.+}.+}Y10]]CX /]Y]]]]qCX/
+'4@5@U56',?//?+99/++++++++2+/++++++10+CTX@X4U5U '456,'UUUUUU87!U!U!U!-U-U-U--879/++++++9/++++++//??9910++@/8@*58`]6%&88888+P8`8p88@8
+@UUUU@UUUUUU@U
+AV8$$<U@G#p0W+XCTX@Y@UY@UUUL0U0U0@U0+U+17FUFUF@!UFAGAUAUAUALULULULUL@ULUL+U+U+7@U7U7@U7U7@U7U7U7UU @U 0U @U *U @U U @U /2EH@ GTU@U/UOUoUUUVG1%,<,??///?]]+/+++++++++/+++++++++/+++++++++++++++++10++CTX@<%,<,TUV1GU U +U+U+7AUAUAL U X7U7U7U77XLULULULLYX9/+++9/+++9/+++++++///???10KTXFE/08888888Y@4YYY`]6+Y
+U @U U @U UUUUU$@% ,U/+??99?/+++++/+++++10+CTX@W@`p $%%,UUU UUU& U U &UUU'&9/+++9/++9/++++++???99?]10@5'`]6 '`'p''47: HH O'#!O%'#'AD %E@%%,! g@p@%$P `&+N]qr<M<]q<<<<?<?<<<99++10Cy@+<+]]+YY$l%l?+??3+201Y327#5#"&&54&&5!32674&'5c!'-v|EMq,7HAY?+mK9ZG#qBYA2%P6LN7% +XCTX ??/9/10CTX@1"!U*UU U ?+?+?+?+?99/10@SX[5"@a5#"! $ :9:95:JIDEEIi""-"2`4"+14"
+K?gI7tl_G
+$A 0
+>0&&+[3+
+ !#
+
+BM}LA@">
+0
+'X.
+! 0@P@
+G550E?,$B]89[E4#0MnNDvdI
+/%MvY>+T%2
+9dNpZQ&BkO<LRKG&ve%%-#'!3ZO?1&2lfE
+$$/B
+7F=%4^H+.9#22N8Y|O$
+6F&MLL#hghLKhggfNOO]^^SVVdfddffd`__dLKjiLiKjijjiihddjw.C;$#kjih^V]d`^83>>'q^fggSOMkjj'KM?23233?3/9/3/22/33/9/99+}3/33+}3/32/33+}10]]]]]]]]]]]]]]]]]]]]]]]]]]]4>32#".#32676654&#"32>32#".54>3!!"3!72>7'###".<3^T+44%'%
+
+QUUU????9++++222?01Y%#".5##".'##".5463323>332q0%$00""0/%$06-.B0 "
+&8H,-'Y@"/--"4h@"5d-&dhhh????9?/29=/9929901%#".5##".'##".5463323>3320%&08? -0&&/.&-@.+:'',16

@@ -1,0 +1,35 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Port\BT1908031 (Nova Configuração de Intertravamento VJ 6230, VJ 6330, VJ 6530)-convertido.pdf
+# cifrado=False bloques=2 caracteres=1770
+
+Videojet Technologies Brasil
+BT1908031
+Data: 03/08/2019
+Equipos: VJ 6230 / VJ 6330 / VJ 6530 - TTO
+Tema: Nova Configurao de Intertravamento das VJ 6230, VJ 6330, VJ 6530
+Fomos informados por VJWD que devido localizao fsica do Micro-Rel interno de falha das novas
+Impressoras VJ 6x30, localizado bem no centro da pl aca, rudo eltrico gerado ou advindo do PLC ou
+da Cabeao da Embaladora do cliente, pode induzir falhas aleatrias no funcionamento das nossas
+Impressoras VJ 6x30.
+O Rel interno de falhas (Micro-Rel) fica localiza do bem no centro na PCB da unidade Impressora,
+podendo induzir rudos em outros componentes digita is internos da VJ 6x30, a partir de rudos
+eltricos externos da embaladora ou de cabeaes ex ternas.
+Soluo:
+Isolar eletricamente os 24Vdc e GND do PLC do clien te, da nossa Impressora, usando um opto-
+acoplador externo de 24Vdc.
+Veja abaixo o novo circuito eletrnico
+Esta nova opo de intertravamento para deter a emb aladora, em caso de falha ou estado de Fora de
+Linha da VJ 6x30 (OFF LINE) dever ser feito, como no circuito abaixo.
+
+Ser necessrio fazer um jumper por fio entre os pi nos 1 e 6 do conector DB15 fmea.
+Opto acoplador WBZ-0001-039 deve ser instalado a no mximo 2,5 m de distncia da nossa VJ 6x30.
+A partir de agora, o Depto de Vendas ir colocar es ta pea acessria (WBZ-0001-039), no fechamento
+das mquinas TTO novas vendidas, para j estar disp onvel ao tcnico VJ, no momento da instalao
+da impressora.
+Vantagens desta Nova Conexo:
+- Isolar eletricamente da nossa mquina, os 24Vdc e o GND da embaladora, isolando rudos.
+- No necessitar de nenhuma configurao especial n o Sw Clarity Config CCFG.
+MC / AM / ML
+Tech Support Brasil
+Videojet Technologies Ltd
+Tel: +1 630 8607300 (USA _ Headquarters).
+Tel: +55 11 4689-8800 (Brazil Office).

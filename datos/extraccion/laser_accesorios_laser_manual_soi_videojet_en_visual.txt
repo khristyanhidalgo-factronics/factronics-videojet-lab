@@ -1,0 +1,294 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\Manual SOI Videojet EN.pdf
+# cifrado=False bloques=24 caracteres=21424
+
+Operating Instructions
+Simple OperatorInterface
+Software Version 1.x
+P/N: AL-72741
+Revision: AA, November 2008
+
+MAQ$Q6n`d'@_ofmbAtOo{~alySnwJs]P28>>@BT@?>=<;:9876543210/.-,+*
+[&XK|8[7?jW>L|?@4I
+Xxy"EGXXY"& $-&%% !!H@
+
+Copyright 2008, Videojet Technologies Inc. (herein referred to as reserved.Videojet). All rights
+This document is the property of Videojet Technologies Inc. proprietary information owned by and contains confidential and Videojet. Any unauthorized copying, use or disclosure of it
+without the prior written permission of Videojet is strictly prohibited.
+Videojet Technologies Inc.
+1500 Mittel BoulevardPhone:1-800-843-3610OWood Dale, ILFax:1-800-582-1343INTL: Canada, France, Germany, Ireland, Japan, Spain, ffices - USA: Atlanta, Chicago, Los Angeles, Philadelphia
+60191-1073 USAIntl Fax:630-616-3629Singapore, The Netherlands,The United Kingdom www.videojet.comDistributors Worldwide
+
+Table of Contents
+1 Simple Operator Interface (SOI)................................. 3
+1.1 Introduction......................................................................1.2 Requirements........................................ 3......................................................... 3
+1.3 Installation........................................................................1.4 Starting the Software....................... 3............................................................... 4
+1.5 User Levels..................................................................................... 4
+2 User Interface............................................................. 5
+2.1 Select Laser System......................................2.2 System States of the Las................................. 6er System................................................ 7
+2.3 Start and Stop Laser Marking....................................2.4 Select a Message........................................ 8......................................................... 8
+2.5 Modify Positioning..........................................2.6 Modify Intensity........................................... 9................................................................... 10
+2.7 Modify Variables.......................................2.8 Change Throughput Unit..................................... 11s............................................................. 11
+2.9 Set Counter..........................................................2.10 Alerts..................................... 12............................................................................... 13
+3 Configuration............................................................ 15
+3.1 Laser..........................................................................3.2 Miscellaneous..................................... 15............................................................. 16
+3.3 Password...................................................................3.4 Functions............................................. 17............................................................. 18
+1
+
+Table of Contents
+2
+
+Chapter 1Simple Operator Interface (SOI)
+1 Simple Operator Interface (SOI)
+1.1 Introduction
+The Simple Operator Interface (SOI) is an easy-to-use and convenient program to select andmodify messages which are to be marked with the laser system and to start the actual marking
+process. The software can be run on a normal PC or a touchscreen. Upon start-up, it connectswith the laser system and can access the messages which are stored in the laser database.
+1.2 Requirements
+To operate the software properly the following hardware and software requirements have to bemet:
+Microsoft Windows 2000, XP or Vista
+Pentium IV Processor > 2 GHz
+1024 MB RAM
+CD-ROM drive (optional - if SOI software is to be installed from CD-ROM)
+200 MB hard disk memory
+1.3 Installation
+NoteTo create new messages the Smart Graph software is required.
+For more information about creating messages (so-called templates in theSmart Graph) please refer to the manual of the Smart Graph software.
+NoteIf the PC is to be connected directly to the laser system (and not via network)the connection must be made using a crossover ethernet cable. Otherwise
+communication is not possible.
+If the SOI software is not delivered pre-installed, please proceed as follows to install the SOI:
+1.Insert the SOI software CD-ROM inload the corresponding files down onto your PC.to the CD-ROM drive of your PC or
+2.Select »Execute« from the start-menu of your Windows operating system.
+3.Enter CD:\setup.exe in the text field and follow the instructions of the InstallShield wizard(CD is a place holder for the letter of the CD-ROM drive in your PC, if you install after download
+please enter the corresponding drive letter).
+09/08 - Rev. AA 3
+
+Simple Operator Interface (SOI)Chapter 1
+1.4 Starting the Software
+You can either double click on the SOI symbol on the desktop of Windows or click on »SOI« inthe start menu.
+When starting the software for the first time a connection to a laser system must be established.This can only be done by user level Administrator in the configuration dialog, see section "La-
+ser" of chapter "Configuration" on page 15.
+When the connection between the program and the laser has been established after the startupthe user interface for user level Operator is displayed automatically. To change to Supervisor
+or Administrator level you have to login by clicking on the administration button.
+The login dialog and a numeric key pad are displalevel and confirm with »OK«. The corresyed. Enter the password for the required userponding user interface is displayed.
+1.5 User Levels
+For operating the SOI different user levels have been defined. The available functions dependon the user level of the entered password.
+There are three user levels:Operator (no default password)
+Supervisor (standard password: 2222)
+Administrator (standard password: 1111)
+The rights of the user levels Operator and Supervisorconfiguration dialog whic are defined by the h is only available at Administrator in theAdministrator level. For details refer to chapter
+"Configuration" on page 15.
+4 09/08 - Rev. AA
+
+Chapter 2User Interface
+2 User Interface
+When starting the SOI the connection to the laserently active message and the system status are displayed.r system is established automatically, the cur-
+NoteIn the following sections the complete scope of functions is described.
+However, the functions actually available depend on the configuration of theuser levels done by the Administrator (see page 15).
+The main screen of the SOI is divided into the following areas:
+AreaFunction
+1Active connectionsAll laser systems set up by the administrator (max. four)are displayed in tabs. Clicking on a tab the respective
+laser system is active.
+2Administration & brandingLogin button displaying the current user level. Clicking onthis button the login dialog is displayed for changing the
+user level (see sections "User Levels" on page 4 and"Configuration" on page 15).
+Clicking on the company logo, name and version of thesoftware and the companys address are displayed.
+13 2
+45 6
+7
+09/08 - Rev. AA 5
+
+Chapter 2User Interface
+2.1 Select Laser System
+AreaFunction
+3System status & controlDisplay of system status, warnings and error messages.
+Control buttons for starting/stopping a marking processand confirmation of messages.
+4KeypadDisplay of a numerical or alphanumerical keyboard,depending on the required input.
+5ToolbarButtons to modify message positioning, marking inten-sity, variables and counter values.
+6Preview windowDisplay of the contents of the current message.
+7JobmenuName of the current message. Clicking on the button, allavailable messages are listed and can be selected.
+The administrator can define up to four laser systems in the laser configuration (see page 15).The laser systems are displayed in tabs on the user interface.
+Each laser will be added as a tab and the tab will show the laser name as set in the laser con-figuration. When clicking on a tab the corresponding laser system is selected as active laser
+system and all its information is displayed. The laser name color and laser tab background col-or change depending on the status as follows:
+ColorFunction
+Dark Grey backgroundCurrently selected laser system. There are no warnings or errors.
+Light grey backgroundUnselected laser (not active). There are no warnings or errors.
+Yellow backgroundThere are one or more warnings but the laser is functional.
+Red backgroundThe laser has stopped working and laser state is in error or fatalerror mode.
+Green textThe laser is currently marking. There are no errors.
+Blue backgroundSOI has lost connection to the laser.
+6 09/08 - Rev. AA
+
+Chapter 2User Interface
+2.2 System States of the Laser System
+The current state of the laser system is displayed on top of the active laser page.
+There are the following system states:
+System StateDescription
+InitializeThe control components of the laser system are started.
+Key-switch openThe initialisation is complete. The system can now be started byclosing the key-switch.
+Laser start-upAfter closing the key-switch the laser and the cooling system areactivated.
+Laser readyThe laser system is ready for marking.
+Prepare for markingAfter pressing »START« the laser requires a preparation time,the length depends on the template contents and the configura-
+tion.
+MarkingThe current marking content is marked onto the product.
+Laser radiation is emitted! Make sure that the safety instructions are observed.
+StandbyIf no marking is carried out for some time the laser switches tostandby in order to relieve the system components.
+Interlock openThe safety circuit is interrupted (e.g. protective door open). Amarking process is stopped immediately. Marking is only possi-
+ble with closed safety circuit.
+ErrorAn error occurred. To continue operation the error must be con-firmed. Information on the error can be found on page »Mes-
+sages«.
+Fatal errorA fatal error occurred and has deactivated the system. This errorcannot be confirmed and the operation cannot be continued.
+The laser system has to be turned off. Information on the errorcan be found on page »Messages«.
+Service modeThis system state enables service and maintenance work andmust only be used by especially trained personnel.
+09/08 - Rev. AA 7
+
+Chapter 2User Interface
+2.3 Start and Stop Laser Marking
+To the right of the system status the button for starting/stopping the marking process is dis-played.
+2.4 Select a Message
+Click on »Start Laser« to start the marking process. The currently selectedmessage is marked onto the product by the active laser system.
+While marking, the button changes to »Stop Laser«. Clicking onto the buttonthe marking process is stopped.
+To select a message proceed as follows:
+1.Click on the button in the lower left corner displaying the name of the currently selectedmessage. The following menu is displayed:
+2.Select the desired message from the list. On the right side of the window a preview of themessage is displayed (you can deactivate the preview function by clicking on »without pre-
+view«).
+NoteDepending on the configuration setting ofnot all existing messages are displayed. entry »Hide $« it is possible, that
+3.Confirm your selection with »Open message«.
+4.The selection dialog is closed and the content ofwindow of the SOI. the new message is displayed in the preview
+8 09/08 - Rev. AA
+
+Chapter 2User Interface
+2.5 Modify Positioning
+To change the positioning of the marking contents click onto the corresponding button (hori-zontal, vertical, or rotation) in the toolbar.
+To the left, a keypad is displayed. You can enter the desired offset or rotation value directly viathe keypad. The entered value is displayed in the top field of the keypad. The positioning must
+be confirmed by pressing OK on the keypad section.
+You can also shift the message content in steps via the buttons displayed in the preview win-dow:
+Horizontal positioning.By clicking on the buttons, the marking content is moved to the left/right in
+steps. The offset value is displayed in the top field of the keypad.
+Vertical positioning.By clicking on the buttons, the marking content is moved up/down in
+steps. The offset value is displayed in the top field of the keypad.
+Rotation.By clicking on the buttons, the marking content is rotated left/right in steps.
+The offset value is displayed in the top field of the keypad.
+The original position is indicated by a dotted cross, the new coordinates by a normal cross.
+09/08 - Rev. AA 9
+
+Chapter 2User Interface
+2.6 Modify Intensity
+NoteThe marking intensity can only be changedmarking. when the laser system is not
+To change the marking intensity (i.e. the output power of the laser) click onto the correspondingbutton in the toolbar (see figure).
+To the left, a keypad is displayed. You can enter the desired value directly via the keypad. Theentered value is displayed in the top field of the keypad. The new value must be confirmed by
+pressing OK on the keypad section.
+You can also change the intensity value in steps via the buttons +/- displayed in the previewwindow. The displayed percent value in the top field of the keypad is altered accordingly. The
+new value must be confirmed by pressing OK on the keypad section.
+NoteIf the option »Autosave« has not been activated by the administrator, the but-ton »Save« is displayed on the top left of the keypad. Click on this button if
+the new intensity value is to be kept after restarting the system.
+10 09/08 - Rev. AA
+
+Chapter 2User Interface
+2.7 Modify Variables
+A message can contain elements with variable ified:contents. The following elements can be mod-
+external textdate
+timeserial number
+If the messages contains variables which are not hidden due to configuration, the variables aredisplayed and editable in the preview window:
+1.Select the variable to be edited by clicking onto the corresponding line. A keypad is displayed. The current variable content is displayed in the top field of the key-
+pad. If an element (e.g. barcode) contains several variables you can select the variable to be ed-
+ited by clicking several times onto the element untop field of the keypad.til the desired variable is displayed in the
+2.Enter the desired text, start point for a serial number or define a date/time offset.
+3.Confirm with OK. The new value or text will be displayed.
+2.8 Change Throughput Units
+The throughput value is displayed directly on the button. It shows the marking timerequired for marking one product in milliseconds.
+The information is read only. However, by clicking on the button you can change the unit ofmeasurement from the default ms to products per second, per minute or per hour (PPS, PPM,
+PPH).
+09/08 - Rev. AA 11
+
+Chapter 2User Interface
+2.9 Set Counter
+To change the counter setting click onto the corresponding button in the toolbar (see figure).
+On the counter button either the number of markings (one line) or the batch (two lines, first line:number of markings, second line: batch size).
+NoteGenerally, the batch counter is displayed on the counter button.
+If the batch counter is set to 0/0, the marking counter is displayed on thecounter button.
+To the left, a keypad is displayed. You can enter the desired value directly via the keypad. Theentered value is displayed in the active top field of the keypad, first field being the marking
+counter, second line the batch counter and batch background.size. The active field is indicated by a blue
+A new value entered via the keypad must be confirmed by pressing OK.
+You can also change the value in steps via the The displayed value in the active top field of the keypad is altered accordingly. The new valuebuttons +/- displayed in the preview window.
+must be confirmed by pressing OK on the keypad section.
+12 09/08 - Rev. AA
+
+Chapter 2User Interface
+2.10 Alerts
+There are three different types of alerts:warnings
+errorsfatal errors
+A list of all available warnings and error messages can be found in the operating instructionsof the laser system.
+Warnings are displayed in yellow, errors and fatal errors in red. If there are both types of alertsthe background will be red.
+If there is only one alert, it can be confirmed dicurrent laser status will be displayed.rectly by clicking onto button »Confirm«. The
+If there is more than one alert, two triangles with exclamation marks are displayed together withthe number of alerts and the arrow icon pointing downwards (see figure below).
+Clicking on the arrow icon, the alerts are displayed. They can be confirmed individually (button»Confirm« to the right of the alert) or all at once (button »Confirm all« at the bottom). Clicking
+again on the arrow icon, the list is closed.
+Clicking onto one alert, more details are displayed.
+After confirmation, the number of alerts is updated automatically. If all alerts are confirmed, thecurrent laser status is displayed.
+09/08 - Rev. AA 13
+
+Chapter 2User Interface
+14 09/08 - Rev. AA
+
+Chapter 3Configuration
+3 Configuration
+On the configuration pages all basic settings of laser connection, software and functionalitiesavailable for Operator and Supervisor are defined.
+3.1 Laser
+NoteThe configuration pages are only available for user level Administrator.
+On page »Laser« the laser connection is defined starting SOI for the first time at least one laser system must be defined for operation. Then thevia IP address of the laser system. When
+connection is established automatically when starting the SOI.
+Up to four laser systems can be set up.
+NoteWhen removing laser systems from the list be aware that one must remain. Itis not possible to delete all.
+Name, date and time can be configured individuarespective field and enter the vally for each laser system by clicking on thelues or characters via keypad.
+09/08 - Rev. AA 15
+
+Chapter 3Configuration
+3.2 Miscellaneous
+On this page the following settings can be made:
+LanguageLanguage of user interface and warnings and error mes-sages.
+Automatic saveChanges concerning the markithe laser system.ng intensity will be saved to
+Unit of measurementUnit of measurement displayed in the preview window.Default is mm.
+Shut down after exitPC will be shut down when exiting SOI. This does not affectthe laser system!
+16 09/08 - Rev. AA
+
+Chapter 3Configuration
+3.3 Password
+On this page the following settings can be made:
+Password on StartA login is required when starting the SOI.
+Max. password lengthLimitation of number of characters for all passwords. Range 1to 8.
+Administrator Password to be entered for user level Administrator (notexceeding the length defined under »Max. password
+length«). Only numerical values are admitted for passwords.
+The preset super password is 79531, it can be reactivated bypressing 000000000 (9 x 0) in case the administrator pass-
+word is lost.
+Supervisor Password to be entered for user level Supervisor (notexceeding the length defined under »Max. password
+length«). Only numerical values are admitted for passwords.
+Operator Password to be entered for user level Operator (not exceed-ing the length defined under »Max. password length«). Only
+numerical values are admitted for passwords.
+09/08 - Rev. AA 17
+
+Chapter 3Configuration
+3.4 Functions
+On this page the Administrator defines the functionalities available for user levels and Operator. Click onto the icon to change it. There are three levels:Supervisor
+IconFunction
+Hidden. The function is not available and not visible.
+View. The function can be seen but not edited.
+Edit. The function can be seen and edited.
+Thus the following functionalities can be assigned:
+Start laserThe marking process of the currently selected message is started.
+Stop laserThe current marking process is stopped.
+JobA message can be selected.
+InsertsIf a message contains variable contents (date, time, etc.) offsets can bedefined.
+Handling $Messages or variables containing $ as suffix can be treated differently.
+PositioningThe position of the marking content wified (up/down, right/left, rotate).thin the marking field can be modi-
+IntensityThe marking intensity (laser power) can be adjusted.
+ThroughputMarking speed measured in ms, PPS, PPM or PPH (product per second/minute/hour)
+18 09/08 - Rev. AA
+
+Chapter 3Configuration
+AlertsWarnings and error messages can be read and/or confirmed.
+Offset unitsOffset units can be edited.
+09/08 - Rev. AA 19
+
+Chapter 3Configuration
+20 09/08 - Rev. AA
+
+'&%$#"! ,E#F` &`&#HH-,E#F#a &a&#HH-,E#F` a F`&#HH-,E#F#a ` &a a&#HH-,E#F`@a f`&#HH-,E#F#a@` &a@a&#HH-, <<-, E# D# ZQX# D#Y QX# MD#Y QX# D#Y!!-, EhD ` EFvhE`D-,C#Ce-,C#C-,#p>#pE:-,E#DE#D-, E%EadPQXED!!Y-,Cc#b#B+-, EC`D-,CCe-, i@a ,b`+d#daXaY-,E+#Dz-,E+#D-,CXE+#DzEi #D QX+#Dz!zYY-,-,%F`F@aH-,KS XYXY-, %E#DE#DEe#E %`j #B#hj`a Ry!@E TX#!?#YaDRy@ E TX#!?#YaD-,C#C-,C#C-,C#C-,C#Ce-,C#Ce-,C#Ce-,KRXED!!Y-, %#I@` c RX#%8#%e8c8!!!!!Y-,KdQXEiC`:!!!Y-,%# `#-,%# a#-,%-, ` <<-, a <<-,++**-,CC-,>**-,5-,v##p #E PXaY:/-,!!d#d@b-,!QXd#d b@/+Y`-,!QXd#dUb/+Y`-,d#d@b`#!-,&&&&Eh:-,&&&&Ehe:-,KS#KQZX E`D!!Y-,KTX E`D!!Y-,KS#KQZX8!!Y-,KTX8!!Y-,CXY-,CXY-,KTCZX8!!Y-,CX%%d#dadQX%% F`H F`HY!!!!Y-,CX%%d#dadQX%% F`H F`HY!!!!Y-,KS#KQZX:+!!Y-,KS#KQZX;+!!Y-,KS#KQZCZX8!!Y-,KT&KTZCZX8!!Y-,KRX%%I%%Ia TX! CUX%%88Y@TX CTX%8Y CTX%%88%8YYYY!!!!-,F#F`F# F`ab# #pE` PXaFY`h:-,B#Q@SZX TXC`BY$QX @TXC`B$TX C`BKKRXC`BY@TXC`BY@cTXC`BY@cTXC`BY@cTX@C`BYYYYY-,CTXKS#KQZX8!!Y!!!!Y->NC&999^ssIwVXZ||@r9A99sUss<sVssUsMsasSsU99prpsZoVVfV9m97Vs9cV9XV0VVV
+- !#"#

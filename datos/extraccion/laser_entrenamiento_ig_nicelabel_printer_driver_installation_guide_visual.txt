@@ -1,0 +1,642 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\ig-NiceLabel_Printer_Driver_Installation_Guide.pdf
+# cifrado=False bloques=28 caracteres=29783
+
+NiceLabel Printer Driver
+Installation Guide
+Rev- 1601 ©NiceLabel 2016.
+www.nicelabel.com
+
+Contents
+Contents 2
+Purpose of this Manual 3
+Printer Driver Installation 4
+NiceLabel Printer Driver Installation Using PrnInst 4
+PrnInst Based Driver Installation using Remote Desktop 6
+Printer Driver Installation using Windows Installer 7
+Additional Installation Options 10
+Uninstalling a Printer Driver 13
+Uninstalling a NiceLabel Driver Using PrnInst 13
+Uninstalling a Driver using Command Line Parameters 15
+Uninstalling a Printer Driver using Windows Administrative Tools 15
+Removing Drivers from Windows Driver Store 15
+Printer Driver Update 17
+Selecting the Drivers 17
+Updating the Printer Drivers using PrnInst 17
+Troubleshooting 19
+Locked Printer Driver 19
+Possible Printer Driver Update Issues 20
+Appendix: Command Line Parameters for PrnInst Installation 21
+Online Self- help 27
+www.nicelabel.com 2
+
+Purpose of this Manual
+The purpose of this installation manual is to guide you through the process of NiceLabel printer
+driver installation.
+This manual should be used in combination with printer installation and user manuals. See the
+driver release notes for detailed information on the latest features, specifics, solved and known
+issues.
+www.nicelabel.com 3
+
+Printer Driver Installation
+There are two ways to install NiceLabel printer drivers. We recommend using the NiceLabel
+PrnInst application. The application is controlled by the graphical user interface or via command
+line interface. An alternative option is to use the Windows Add printer process.
+See the corresponding sections of this manual to perform the driver installation successfully.
+Before starting with printer driver installation, make sure you are logged in as an administrator.
+NiceLabel Printer Driver Installation Using
+PrnInst
+Printer Installation Wizard (PrnInst) is a dedicated application for installing printer drivers on
+Windows based systems.
+PrnInst based installation is available for the devices that are connected to LAN networks or any
+computer port except for USB. For printers that support plug and play installation procedure,
+see section "Plug and Play Driver Setup" on page 7 .
+Download the correct printer driver to your local disk and run the downloaded self- extractable
+.exe file. PrnInst starts automatically. Follow the below described wizard steps to install the
+driver.
+l Unzip the installation files to a selected folder.
+l Welcome screen appears. Click Next .
+l Select Install Printer .
+www.nicelabel.com 4
+
+l Accept the terms of license agreement and click Next .
+l Select the manufacturer and the appropriate printer model. Click Next .
+l Printer Options window appears. Select the appropriate port, add a port or delete it.
+l After clicking Add Port , the Advanced TCP/IP Port Configuration window appears.
+Insert the appropriate printer network settings and click OK .
+www.nicelabel.com 5
+
+l Additional Install Options window appears allowing you to install the NiceStatus Mon -
+itor (optional).
+l Click Finish to install the driver without installing the NiceStatus Monitor or proceed to
+the next step.
+l After clicking Next in the Printer options window, PrnInst offers the option to install an
+additional application which simplifies managing of multiple printers. This application may
+be added later. To install it, run StatusMonitorSetup.exe in the driver installation folder.
+See section "NiceLabel Printer Driver Installation Using PrnInst" on page 4 for details.
+l Click Finish .
+PrnInst Based Driver Installation using Remote
+Desktop
+Printer mapping must be disabled when installing a printer driver using the remote desktop. To
+disable it, deselect Printers option of the Local Resources tab in the Remote Desktop
+Connection window.
+www.nicelabel.com 6
+
+Printer Driver Installation using Windows
+Installer
+Printer driver installation using Windows Installer is used on devices that are connected via one
+of the following ports:
+l USB port
+l Parallel port (LPT)
+Plug and Play Driver Setup
+During this procedure, Windows automatically detects the newly connected hardware using a
+plug and play event on both ports – USB and LPT.
+Follow these steps to install a NiceLabel printer driver:
+1. Connect the printer to a power outlet and turn it on.
+2. Connect the printer to a computer using USB or LPT port.
+3. The driver is located online and downloaded to the PC. Automatic installation follows
+immediately.
+4. The installed printer is ready for printing.
+NOTE Automatic printer detection is supported on USB and LPT ports only. The driver needs
+to be installed using PrnInst on other ports .
+The Add a printer detection procedure differs between various operating systems. Follow the
+below described steps.
+Windows 7 and Later
+The operating system automatically checks Windows Update and installs the driver.
+www.nicelabel.com 7
+
+Windows Vista
+l The operating system displays a message box. Select Locate and install the driver soft -
+ware .
+l Select Yes, search online this time only .
+Windows XP
+The operating system displays a message box. Select:
+l Yes, this time only. If you wish to check for printer driver using Windows Update .
+l No, not this time. If you wish to select the printer driver manually.
+From this point on, the installation procedure differs if the printer driver is available on the
+Windows Update site or not. See the scenarios in the following two subsections.
+Printer Driver Available on Windows Update Site
+The printer driver is automatically downloaded and installed.
+www.nicelabel.com 8
+
+On the latest operating systems (Windows 7 and later), a system notification message is
+displayed. If you click the notification message, the new Driver Software Installation dialog is
+displayed. Monitor the installation status using this dialog:
+Printer Driver Unavailable on Windows Update Site – Manual
+Printer Driver Installation
+If the printer driver is unavailable on the Windows Update site, download the printer driver to
+the local disk. Follow these steps to install a NiceLabel printer driver using the manual Windows
+Add a printer procedure.
+1. Connect the printer to power outlet and turn it on.
+2. Connect the printer to a computer.
+3. Windows detects the printer.
+4. Windows Update automatically checks for the printer driver online and fails. Start with
+manual installation.
+The manual driver installation varies between various operating systems. Follow the below
+described steps.
+Windows 7 and Later
+1. Open Control Panel and click Hardware and Sound - > Devices and Printers - > Device
+Manager
+2. Expand node Other devices . The installed printer is listed here.
+3. Right click the printer and select Update Driver Software .
+4. At the prompt How do you want to search for driver software? select Browse my com -
+puter for driver software.
+Windows Vista
+1. Found New Hardware wizard displays a page that requests inserting the disk with
+printer drivers. If the drivers are stored locally on the hard drive, select option I don’t
+have the disc. Show me other options .
+2. On the next page, select Browse my computer for driver software option and follow
+the wizard steps.
+Windows XP
+1. Add New Hardware Wizard starts. Follow the wizard steps.
+2. Select option Install from a list or specific location and click Next .
+3. Select Don’t search. I will choose the driver to install. option and click Next .
+4. Select Printers hardware type and click Next .
+5. Click Have Disk and select the driver location on your local hard drive.
+6. Select your printer model from the list and follow the on- screen instructions.
+Preinstalling the Printer Drivers
+Driver pre- installation option brings two benefits:
+l It speeds up the installation process – Windows Update is not contacted.
+l It simplifies the USB printer installation when printer drivers are not available on the Win -
+dows Update site.
+To preinstall a printer driver on Windows, use the PrnInst command line options – see section
+Appendix: PrnInst Based Printer Driver Installation Using Command Line Parameters . If new
+hardware is detected via plug and play event (on USB or parallel port), the operating system
+automatically installs the preinstalled printer driver. It does not query Windows Update for the
+driver.
+www.nicelabel.com 9
+
+Syntax
+PrnInst.exe /PREINSTALL=<full path to INF file>
+Sample
+PrnInst.exe /PREINSTALL=C:\Drivers\SAMPLE_ DRIVER\SAMPLE_ DRIVER.inf
+Additional Installation Options
+NiceStatus Monitor
+NiceStatus Monitor is a utility that makes status monitoring for multiple installed printers easy
+and efficient. There are two ways to install the Nice Status Monitor. Follow the steps described
+in the subsections below.
+Installation during PrnInst based Printer Driver Installation.
+Nice Status Monitor installation is an option offered by the PrnInst. To run it, check the Launch
+installation of Nice Status Monitor Setup Wizard option in the Additional Installation
+Options window.
+This option runs the installation wizard:
+l Nice Status Monitor setup window appears. Click Next .
+l Select the installation folder. Click Next .
+www.nicelabel.com 10
+
+l Select the Start Menu Folder. If you don't want to create it, clear the Start Menu Folder
+checkbox. Click Next .
+l Select Additional Tasks :
+l By default, a desktop icon is created for Nice Status Monitor. Clear the checkbox to
+disable this option.
+l By default, Nice Status Monitor runs at Windows startup. Clear the checkbox to dis -
+able this option.
+Click Next .
+l Ready to Install summary window appears. Click Install .
+Independent installation
+Nice Status Monitor may be installed at any time. To install it, run StatusMonitorSetup.exe in
+the driver installation folder.
+Using the Nice Status Monitor
+Nice Status Monitor is an application that gives you an overview of:
+l installed printers with status indicators.
+l printer statute descriptions
+l job names
+www.nicelabel.com 11
+
+Printer status indicators are:
+l icon indicates that the printer is up and ready for printing ( Status : Online).
+l icon indicates that the installed printer is currently not accessible – printing is not pos -
+sible ( Status : Not accessible).
+l icon indicates an error – printing is not possible ( Status : <error description>).
+l icon indicates warning – printing is possible, check warning message.
+Job name displays the currently printed file name.
+Printer Setup button allows you to access the selected printer properties.
+www.nicelabel.com 12
+
+Uninstalling a Printer Driver
+As with driver installation, uninstalling it may also be completed in two ways. Standard method is
+to use the PrnInst via graphical user interface or command line. Another option is to use the
+Windows Administrative Tools .
+Make sure you are logged in as a user with sufficient rights for uninstalling the printer driver.
+When removing a printer driver, make sure that:
+l The printer is not set as a default printer.
+l There are no print jobs waiting in the print queue.
+l The printer is not locked by the Windows Spooler process.
+If you are unable to delete the printer driver, perform one of the following actions:
+l Restart Windows Spooler.
+l Delete print jobs from the Windows Spooler.
+l Computer restart is required in certain cases.
+Uninstalling a NiceLabel Driver Using PrnInst
+To uninstall a printer driver using PrnInst, follow these steps:
+l Start PrnInst and click Next .
+l Select Uninstall Printer .
+l Select the printer driver to be removed.
+l Click Next . Successful printer removal is confirmed.
+www.nicelabel.com 13
+
+Simultaneous Removal of Preloaded Printer Drivers using
+PrnInst
+Follow these steps to remove the preloaded printer drivers using PrnInst.
+l Start PrnInst and click Next .
+l Select Remove Preloaded Drivers .
+l Click Next .
+l Select printers from the list and click Next .
+www.nicelabel.com 14
+
+NOTE The Remove Preloaded Drivers option only removes the driver installation files from
+the system. To uninstall a driver, select option Uninstall Printer in the PrnInst Options
+window.
+Uninstalling a Driver using Command Line
+Parameters
+Use the command line parameters to remove the printer drivers without interacting with GUI.
+Control the PrnInst with command scripts as defined in the following section.
+Provide the printer name in the command- line parameter UNINSTALLPRN.
+Syntax
+/UNINSTALLPRN=<printer name>
+Sample
+PrnInst.exe "/UNINSTALLPRN=Nice Thermal Printer"
+Uninstalling a Printer Driver using Windows
+Administrative Tools
+Follow this procedure to delete a printer and to remove a printer driver from the system.
+Choose the procedure, compatible with your operating system.
+NOTE For advanced users only. We recommend using PrnInst for uninstalling the drivers.
+Windows 7 or Later
+1. To open the Print Management console, click Control Panel - > System and Security -
+> Administrative Tools and double click Print Management .
+2. Expand Print Servers - <computer name> node.
+3. Select Printers node .
+4. Delete the printer.
+5. Select Drivers node.
+6. To delete a driver, select it and run Action - > Remove Driver Package .
+NOTE Print Management console is not available by default. Please refer to the console
+instructions for activating it.
+Windows Vista
+1. Open Control Panel – > Printer .
+2. Delete the printer.
+3. Open Print Server Properties dialog by selecting File – > Server Properties menu
+option.
+4. Go to Driver tab, select the printer driver and click Remove .
+Windows XP
+1. Open the Printers and Faxes window.
+2. Delete the printer.
+3. Open Print Server Properties dialog by selecting File – > Server Properties menu
+option.
+4. Go to Driver tab, select printer driver and click Remove .
+Removing Drivers from Windows Driver Store
+To completely remove all printer files from Windows driver store, follow the procedure
+described in this section.
+www.nicelabel.com 15
+
+1. Uninstall the printer driver. See section "Uninstalling a Printer Driver" on page 13 . When
+deleting the printer from your computer, this procedure only removes the printer as a
+device. Driver files still exist on the disk. When you connect the printer next time, Win -
+dows installs the stored previously- used printer driver. To verify which drivers are stored
+in the system, do the following:
+a. Open Command Prompt as an administrator.
+b. Enter the following command: pnputil.exe - e
+2. A list of all INF files for the installed drivers appears. They are named as oem<number>.inf.
+Here is an example:
+3. When searching for the appropriate INF file, check for:
+l Driver package provider
+l Driver date and version
+To delete a driver package, follow this procedure:
+1. Open Command Prompt as administrator.
+a. Open All programs – > Accessories Start menu group.
+b. Right click Command Prompt .
+c. Select Run as administrator in the menu.
+2. Run the following command to list all INF files: pnputil.exe - e
+3. Find INF package to be removed (check Driver package provider , Driver date and Ver -
+sion to identify the correct package.
+4. Delete package using the following command: pnputil.exe – f – d oem<num -
+ber>.inf
+Replace <number> parameter with the number that identified in step 2.
+The utility deletes the INF file:
+www.nicelabel.com 16
+
+Printer Driver Update
+Selecting the Drivers
+A majority of printer driver distributions contains printer drivers for several printers. Certain
+driver files are shared among the printers that are included in the same printer driver
+distribution.
+NOTE If you have installed several drivers from the same printer driver distribution, the
+drivers for all these printers are going to be updated if you update a single driver.
+Updating the Printer Drivers using PrnInst
+Start the normal printer driver installation procedure using PrnInst. After selecting the
+previously installed printer, the following dialog box appears.
+Select one of the options:
+l Update existing printer driver (s) updates the existing printer driver (s). This option
+updates the installed printer drivers.
+l Add new printer adds a new printer driver and updates the existing printer drivers of the
+same type. Use this option to install an equal type of a printer that is already installed.
+l Cancel stops the driver update.
+With print jobs waiting in the Windows Spooler, PrnInst displays the following notification:
+These two options are available:
+l Manual mode. Delete current print jobs manually. To check if the queue is empty and to
+continue with the driver update, click Refresh .
+l Automatic mode – PrnInst deletes all print jobs and continues with the installation.
+To verify that the printer driver has been updated correctly, check the driver version in the
+About tab after the update. If the old version is displayed, reboot Windows to finish the update
+process.
+www.nicelabel.com 17
+
+On a 64- bit Windows operating system, there is a separate process named Splwow64.exe that
+allows 32- bit applications printing using the 64- bit printer drivers. During the driver installation,
+a warning message showing Splwow64.exe locked the printer driver, is shown. After clicking
+Next , PrnInst restarts the Splwow64.exe process to unlock the printer driver.
+www.nicelabel.com 18
+
+Troubleshooting
+Locked Printer Driver
+During the installation, PrnInst checks for applications that could lock the printer driver files. If
+detected, the locking applications are displayed.
+WARNING Locked drivers cannot be replaced.
+With locked drivers present, the following options are available:
+l Close the applications that are locking the printer driver.
+l Stop the installation and restart the computer. After restarting, repeat the installation
+procedure.
+l If closing the application window has no effect, use Task Manager to end the tasks. See
+the examples below.
+l Continue with the installation. New files are copied – installation is complete after restart -
+ing the computer.
+Example 1: Windows Explorer Locking a Driver
+If the printer properties have been checked in Devices and Printers , Windows Explorer locks
+the printer driver. Even after closing the Devices and Printers , Windows Explorer still locks the
+driver.
+In such case, restart Windows Explorer process in Task Manager - > Processes tab.
+www.nicelabel.com 19
+
+To restart the process, right click Windows Explorer process and select Restart .
+Example 2: Status Monitor Locking a Driver
+In certain cases, Status Monitor application locks the printer driver and makes uninstalling a
+driver impossible.
+To stop the Status Monitor, open the Task Manager and search for the Status Monitor in
+Processes tab. Right click Status monitor and select End task .
+Possible Printer Driver Update Issues
+The driver installer may try to update an already installed printer driver. There are several
+possible issues that prevent the driver update. The most common two causes are:
+l Printer driver is locked. An application has locked it. This prevents the new driver from
+being installed. The driver files are copied, but unused until the operating system reboot.
+l There are print jobs waiting to be printed. You must make sure the there are no jobs in
+queue. You must either print or delete jobs from Windows Spooler.
+In most cases you will have to restart the PC to complete the printer driver installation. We
+recommend using PrnInst installation utility. Benefits are:
+l PrnInst informs about possible issues.
+l PrnInst helps resolving problems, which arise during the driver update.
+To verify that the printer driver is updated correctly, verify the driver version in the About tab
+after the update. If the old version is still displayed, reboot Windows to finish the update
+process.
+www.nicelabel.com 20
+
+Appendix: Command Line
+Parameters for PrnInst
+Installation
+Use the command line parameters to install the printer drivers without interacting with the
+PrnInst GUI. Control PrnInst with command scripts as defined in this section.
+INSTPRN – Printer Driver Installation
+Use this parameter to install a printer driver. Specify the printer name and the port that the
+driver should use. The specified printer name must match the actual name of the printer. To find
+out the correct name of the printer, see the <printer_ brand>.INF file. It contains the list of all
+available printer names. Search for the .INF file in the folder, where you have stored the printer
+driver installation files.
+Syntax
+/INSTPRN=xxxxxxxxx#yyyyy [#wwwww]
+xxxxx - full printer driver name
+yyyyy - port name
+wwwww – printer destination name - optional
+Sample
+Use the /DIR parameter with the /INSTPRN parameter to define the printer driver location.
+NOTE INSTPRN must be the last specified parameter in the command line.
+INSTMULTPRN – Installation of Multiple Printers
+Use this parameter to simultaneously install drivers for multiple printers. Specify printer name
+and port the driver should use. Printer name must match the actual name of the printer.
+To find out the correct name of the printer, see the <printer_ brand>.INF file. It contains the list
+of all available printer names. You will find the .INF file in the folder, where you have stored the
+printer driver installation files.
+Syntax
+/INSTMULTPRN=xxxxx
+xxxxx - full file name and path of Printer Driver Installation List file
+Syntax of Printer Driver Installation List file structure:
+xxxxxxxxxxxxx#yyyyyyyyyyy#zzzzzzzzzz [#wwwwwwwww]
+xxxxxxxxxxxxx - full path of start folder for "reading of .INF files"
+yyyyyyyyyyy - full printer driver name
+zzzzzzzzzz - port name
+wwwwwwwwww – printer destination name - optional
+Sample
+PrnInst.exe /INSTMULTPRN=C:\tmp\PrinterList.tmp
+For example, PrinterList.tmp file contains the following lines.
+C:\Drivers\PRINTER1\#Printer1#LPT1:
+www.nicelabel.com 21
+
+C:\Drivers\PRINTER2\#Printer2#LPT2:
+C:\Drivers\PRINTER3\#Printer3#LPT3:
+Three printer drivers are installed in this sample – Printer1 (linked to LPT1 port), Printer2 (linked
+to LPT2 port) and Printer3 (linked to LPT3 port).
+LANG – Setting the PrnInst Language
+Use this parameter to define the language used in the Printer Installation Wizard. The
+application always uses the default Windows operating system language. Default language is
+defined in Control Panel - > Regional and Language Options .
+Use this parameter to specify other languages for the Printer Installation Wizard.
+NOTE If you omit this parameter, the default language is used.
+Syntax
+/LANG=xxx
+xxx - language ID
+Language Language ID
+Chinese – Simplified SCH
+Chinese – Traditional CHI
+Croatian CRO
+Danish DAN
+Dutch DUT
+English ENG
+Finnish FIN
+French FRA
+German GER
+Greek GRE
+Hebrew HEB
+Hungarian HUN
+Italian ITA
+Japanese JAP
+Korean KOR
+Lithuanian LIT
+Polish POL
+Portuguese POR
+Russian RUS
+Slovak SVK
+Slovenian SLO
+Spanish ESP
+Swedish SWE
+Thai TAI
+Ukrainian UKR
+Sample
+PrnInst.exe /LANG=GER
+www.nicelabel.com 22
+
+UNINSTALL – Uninstall Printer
+Use this parameter to run the PrnInst in the uninstall mode. You will see the list of installed
+printer drivers. Select one or more drivers and remove them.
+Syntax
+/UNINSTALL
+Sample
+PrnInst.exe /UNINSTALL
+UNINSTALLPRN – Uninstall specific printer
+Use this parameter to uninstall a specific printer driver from the system.
+NOTE Provide the exact printer name (as installed). To be sure, copy the printer name from
+Control Panel
+- > Printers & Faxes .
+Syntax
+/UNINSTALLPRN=xxxxx
+xxxxx – the exact printer name you wish to uninstall
+Sample
+PrnInst.exe "/UNINSTALLPRN=NiceLabel- Printer"
+UNINSTALLALL – Uninstall all Printers
+Use this parameter to uninstall all printer drivers from the Windows system.
+WARNING This action erases the entire range of installed NiceLabel printer drivers from the
+system.
+Syntax
+/UNINSTALLALL
+Sample
+PrnInst.exe /UNINSTALLALL
+NOLICENCE – No License Display
+Use this parameter to start the application in a mode where no NiceLabel printer driver license
+and warranty information are displayed during the installation.
+Syntax
+/NOLICENCE
+Sample
+PrnInst.exe /NOLICENCE
+NOCERT – Do not Force Driver Certification when Installing a Driver
+Use this parameter to prevent the PrnInst from using the certification installation if the driver
+has not been digitally signed. Even if the driver has been certified, the installation remains as if a
+normal non certified driver would be installed.
+Syntax
+/NOCERT
+www.nicelabel.com 23
+
+Sample:
+PrnInst.exe /NOCERT
+DIR – Change Start Browsing Path
+Use this parameter to specify the location of the drivers. This is the path that the application will
+use to browse for the printer drivers. The default location is the folder and subfolders, from
+where the application is started.
+NOTE DIR must always be the first parameter in the command line.
+Syntax
+/DIR=xxxxx
+xxxxx - full path from which to start searching for .INF files
+Sample
+PrnInst.exe /DIR=C:\Drivers\
+PREINSTALL – Preinstall Driver Package
+Use this parameter to preinstall the printer driver on the system. Windows will automatically find
+the driver needed when the user connects the printer.
+Syntax
+/PREINSTALL=xxxxx
+xxxxx - full path pointing to the .inf file
+Sample
+PrnInst.exe /PREINSTALL=C:\Drivers\SAMPLE_ DRIVER\SAMPLE_ DRIVER.inf
+UNINSTALLPACKAGE – Uninstall Driver Package
+Use this parameter to uninstall the printer driver from the system. Windows cannot
+automatically find the driver of the printer, because it was removed from Windows Driver
+Storage.
+Syntax
+/UNINSTALLPACKAGE=xxxxx
+xxxxx - full path pointing to the .inf file
+Sample
+PrnInst.exe /UNINSTALLPACKAGE=C:\Drivers\Nice\NiceLabel- printer.inf
+INSTALLPORTMON – Silent Installation of Port Monitor
+Use this parameter to silently install a port monitor from the printer driver distribution. When
+using this command, do not use any other commands from the command line list. Note that this
+installation does not install the printer driver, just the Port Monitor.
+Syntax
+/INSTALLPORTMON /name=aaaaa [/type=bbbbb] [/monitor=ccccc] [/inf=ddddd]
+[]
+Network port type
+/ip=eeeee [/port=fffff]
+Serial port type
+/port=ggggg [/baudRate=hhhhh] [/dataBits- iiiii] [/parity=jjjjj]
+[/stopBits=kkkkk] [/flowControl=lllll]
+www.nicelabel.com 24
+
+Parallel port type
+/port=mmmmm [/reception=nnnnn] [/receptionInterval=ooooo]
+[/transmission=ppppp]
+Specific port types
+[/download=rrrrr] [/printingTimeout=qqqqq] [/downloadTimeout=sssss]
+aaaaa – port name that will be displayed in port list
+bbbbb – type of port <LAN, LPT, COM>. Parameter is omissible, depending
+on Port Monitor.
+ccccc – name of the Port Monitor being installed. Port monitor name can
+be found in information installation (.inf) file. Omissible if there is
+only 1 port monitor.
+ddddd – folder location of the information installation file containing
+Port Monitor. Search for installation information files is subfolder
+recursive. Omissible if there is only one information file in Printer
+Installation Wizard folder (or subfolders).
+LAN Port
+eeeee – ip address of printer on the network.
+fffff – printer s network port number. Parameter is omissible, depending
+on Port Monitor.
+COM Port
+ggggg – systems COM port number (example for COM3: value is 3)
+hhhhh – baud rate of serial port in bits per seconds (valid values: 100,
+300, 600, 1200, 2400, 4800, 9600, 14400, 19200, 38400, 57600, 115200,
+128000, 256000)
+iiiii – data bits parameter for serial port. (Valid values: 5, 6, 7, 8)
+jjjjj – parity parameter for serial communication. (Valid values: none,
+odd, even, mark, space)
+kkkkk – stop bits parameter. (Valid values: 1, 1.5, 2)
+lllll – flow control parameter (Valid values: xonxoff, hardware, none)
+LPT Port
+mmmmm – systems LPT port number (example for LPT1: value is 1)
+nnnnn - reception timeout for LPT port when download function is enabled.
+Parameter is omissible. Default value is 500ms.
+ooooo – reception interval for LPT port when download function is
+enabled. Parameter is omissible. Default value is 200ms.
+ppppp – transmission for LPT port when download function is enabled.
+Parameter is omissible. Default value is 3000ms.
+Specific Ports
+rrrrr – enabled port specifics for downloading to printer. Omissible,
+default values is disabled. (Valid values: 0 - disabled, 1 - enabled)
+qqqqq – printing timeout value in milliseconds for port specific
+communication. Omissible, default values is 50ms.
+sssss - download timeout value in milliseconds for port specific
+communication. Omissible, default values is 7000ms.
+Sample
+PrnInst.exe /INSTALLPORTMON "– monitor=Advanced Port Monitor"
+/name=MyNewPort /ip=192.168.1.5 /port=9100
+www.nicelabel.com 25
+
+PrnInst.exe /INSTALLPORTMON – inf=c:\temp\driver\ "/monitor=Advanced Port
+Monitor" /name=NewLanPort /ip=192.100.021.005 /port=9100
+PrnInst.exe /INSTALLPORTMON /inf=c:\temp\driver\ "/monitor=Specific Port
+Monitor" /ip=192.100.1.1 /type=LAN
+PrnInst.exe /INSTALLPORTMON "/monitor=Specific Port Monitor"
+/name=MySerialPort /type=COM /port=3 /baudRate=128000 /dataBits=8
+/Parity=Even /flowControl=none /StopBits=2
+PrnInst.exe /INSTALLPORTMON "/monitor=Specific Port Monitor"
+/name=MySerialPort2 /type=COM /port=1 /baudRate=19200 /dataBits=8
+/Parity=none /flowControl=Hardware /StopBits=1.5
+PrnInst.exe /INSTALLPORTMON "/monitor=Specific Port Monitor"
+/name=MyParallelPort /type=LPT /port=3
+www.nicelabel.com 26
+
+Online Self- help
+You can find the latest builds, updates, workarounds for problems and Frequently Asked
+Questions (FAQ) on the product web site at www.nicelabel.com .
+For more information please refer to:
+l Knowledge base: http://www.nicelabel.com/support/knowledge- base
+l NiceLabel Support: http://www.nicelabel.com/support/technical- support
+l NiceLabel Tutorials: http://www.nicelabel.com/learning- center/tutorials
+l NiceLabel Forums: http://forums.nicelabel.com/
+NOTE If you have a Service Maintenance Agreement (SMA), please contact the premium
+support as specified in the agreement.
+www.nicelabel.com 27
+
+Americas
++1 262 784 2456
+sales.americas@nicelabel.com
+EMEA
++386 4280 5000
+sales@nicelabel.com
+Germany
++49 6104 68 99 80
+sales@nicelabel.de
+China
++86 21 6249 0371
+sales@nicelabel.cn
+www.nicelabel.com

@@ -1,0 +1,91 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\Nueva carpeta\82336-AA Multi Laser Configuration.pdf
+# cifrado=False bloques=10 caracteres=5378
+
+AL-82336Service Part Installation Instruction
+Multi Laser Configuration
+1 Multi Laser Configuration
+NoteBefore starting with the multi laser configuration make sure that the two mar-king heads have been adjusted by using the pilot laser functions. See detai-
+led instructions in "AL-82337 Marking Head Alignment".
+All steps in this document are carried out using TCS+ on the Leadersystem only.
+1.Connect to the Leader laser with TCS+/FOBA Go using a web browser on PC and log inas "Service".
+3.For the alignment create a Job on the Leaderand system. Make sure that the Job orientation used in the Laser positionLine setup correspond to the mechanical setup of the mar-
+king head and to the direction of movement of the product.
+4.As Job elements create two rectangles lying on top of each other.
+The rectangles should be as wide as the available marking field (for this set the borders ofthe marking field to "default").
+Note: For the alignment the trigger and the laser parameters are not important.
+10/20 - Rev. AA 1
+
+Service Part Installation InstructionAL-82336
+Multi Laser Configuration
+5.Add one line of characters as shown in the figure below.
+6.Go to Global Settings and select Laser Unit Settings.
+7.Select Multi Laser Configuration.
+2 10/20 - Rev. AA
+
+AL-82336Service Part Installation Instruction
+Multi Laser Configuration
+10/20 - Rev. AA 3
+
+Service Part Installation InstructionAL-82336
+Multi Laser Configuration
+8.Activate the checkbox Enable multi laser mode(Follower to enable the usage of the second laser).
+9.Activate the checkbox Synchronize Marking FieldLeader to use the marking field settings of the also for the Follower.
+10.Activate the checkbox Synchronize Line Setupfor the to use the line setup of the Follower. Leader also
+11.Enter the IP address of the Follower system.
+12.As Marking head distance enter the distance from the trigger source to the king head. See calculation example below.Follower mar-
+Example:Distance fork light barrier to Leader marking field center: 78.88mm
+Distance Leader to Follower marking field center: 43.5mmValue to be entered: 78.88mm + 43.5mm = 122.38mm
+NoteThe values need to adapted according to the requirements, e.g. add desiredmarking content position measured from product trigger point to 78.88mm
+and 122.38mm.
+13.Enter the Rotation for second marking head.
+14.Close the key switches of both laser systems.
+15.Go to Global Settings and select Pilot Laser.
+16.Select option Job Elements.
+4 10/20 - Rev. AA
+
+AL-82336Service Part Installation Instruction
+Multi Laser Configuration
+17.The result should look like this.
+Any deviation from this image can be adjusted by changing values in the figuration screen for head rotation, offset and scale for the second marking head (Multi Laser Con- Follower)
+as explained below.
+Deviation examples:
+18.After the two systems are aligned, create the complete the Laser mark settingJob of the customer application and on the Leader system, edit Line Setup to enter the correct trigger
+and encoder setup..
+NoteMake sure to check the working distance when using the class 4 laser. A more accurate adjustment of the working distance may be necessary.
+Head rotation of -95.5X and Y offset of 5mm
+Scaling
+Head rotation of 180
+10/20 - Rev. AA 5
+
+Service Part Installation InstructionAL-82336
+Multi Laser Configuration
+1.1 Adjustment for Beverage Can Application
+1.For the beverage can application, restrict the available marking area to a minimum (notlarger than the can bottom width) whereby the laser system should still be able to complete
+the marking at the required product speed. This is useful to ensure that the product is in better focus during the marking because of the
+shape of the can bottom.
+NoteTo establish which part of the marking is carried out by which laser reducethe Power Adjustment of the Follower laser to -90 %. Thus only the mar-
+king of the Leader will be visible.
+Set the Power Adjustment back to 0 %code lines are parallel and equidistant on the same horizontal level (see figu- and adjust the Follower until both
+res below).
+6 10/20 - Rev. AA
+
+AL-82336Service Part Installation Instruction
+Multi Laser Configuration
+2.If there is a small rotation offset visible in the marking result, adjust the second marking head. Head rotation for
+3.If there is a difference of real laser power vs intensity level between the two systems, youcan enter an offset value to Power Adjustment in steps of +/- 10%.
+10/20 - Rev. AA 7
+
+Service Part Installation InstructionAL-82336
+Multi Laser Configuration
+4.If there is an offset in X or Y direction (between the two systems) visible in the marking result,you can adjust this in the Secondary marking head Offset for X and Y direction.
+5.If there is still a small size difference visible between the two parts of the marking, you canadjust the scaling of the Follower system with Secondary marking head Scale.
+8 10/20 - Rev. AA
+
+AL-82336Service Part Installation Instruction
+Multi Laser Configuration
+6.Click Save and Close.
+7.Close the key switches on both systems and wait for "Laser Ready".
+NoteIt is recommended to close the key switch of the ensure that the FollowerFollower system first to is ready by the time the Leader is ready.
+If you try to start marking before the Followerbe displayed. is ready an error message will
+8.Now you can start the marking from the Home screen on the Leader System.
+10/20 - Rev. AA 9

@@ -1,0 +1,306 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\qsi_qterm-g55_data_sheet.pdf
+# cifrado=False bloques=7 caracteres=14855
+
+QTERM -G55
+Ethernet-Enabled Graphic Terminal
+with Object-Based Programming
+2212 South West Temple #50 4 Commerce Way
+Salt Lake City, Utah Leighton Buzzard
+84115-2648 LU7 4RW
+USA UK
+Phone 801-466-8770 Phone + 44 (0)1525 373800 / 374466
+Fax 801-466-8792 Fax + 44 (0)1525 374468
+Email info@qsicorp.com Email information@qsieurope.com
+www.qsicorp.com www.qsieurope.com
+Rev. 3.4
+ 2007 QSI Corporation. QSI reserves the right to modify this document and/or the product(s) it describes without notice. In no event
+shall QSI be liable for incidental or consequential damages, or for the infringement of any patent rights or third party rights, due to the
+use of its products.
+
+Handheld / Panel-mount Graphic Terminal
+with Object-Based Programming
+QTERM-G55
+Certified
+FEATURES
+320x240 pixels, lighted transflec -
+tive FSTN grayscale LCD display
+measuring 96 mm (3.8) diagonal.
+Optional TFT color display avail -
+able.
+Handheld or panel-mount enclo
+-
+sure, or available as a module for
+tighter integration.
+24- or 40-key steel-dome mem-
+brane keypad; optional lighted key -
+pad.
+4 or 5 programmable LEDs on key
+-
+pad, plus shift and power LEDs.
+10Base-T Ethernet option; sup
+-
+HARDWARE
+ports TCP/IP, UDP/IP and other
+protocols
+Power-over-Ethernet (802.3af)
+DISPLAY: The QTERM-G55 features a QVGA, 320x240 pixel, LCD trans -
+flective FSTN, grayscale (16 shades) display or optional active-matrix TFT
+(256 colors) display.
+option.
+Two serial ports (2nd oEIA-232, -422, -485 on either.ptional).
+NEMA-4 or -12 depending on
+Both displays use a light emitting diode (LED) backlight. The LED provides
+excellent readability under most lighting conditions and can operate in either
+portrait or landscape mode. The FSTN contrast is software-controlled and
+compensated for temperature. The transflective display provides excellent
+sunlight or high ambient light readability. The backlight provides white light -
+configuration. NEMA 4 sealing for
+ing for high contrast and easy readability. Brightness of the backlight and
+hose-down, icing and salt spray
+-20 to 60 C operating tempera
+FSTN contrast are controlled by software.
+-
+KEYPAD: User input occurs through a rugged 24-key or 40-key membrane
+ture; consumes 210 mA @ 12
+keypad with steel domes. The top row of keys are commonly used as soft keys
+VDC.
+Powerful
+to navigate through a set of changing menus at the bottom of the display. The
+standard keypad comes with four or five LEDs under the soft keys that can be
+Qlarity object-based
+used as status or alarm indicators. Power and shift LEDs are included on both
+programming for easy application
+keypad configurations. The power button puts the terminal into a sleep mode.
+development.
+Windows
+The 40-key keypad allows for function / soft keys, eight-way directional
+ programming, simula -
+control and numeric entry in the unshifted mode and alphanumeric data entry
+tion and debugging environment.
+Programmable speaker, optional
+in the shifted mode. Keys can perform alternate functions when the shift key
+is enabled.
+audio (.wav) decoder, optional
+real-time clock. The standard keypad legends are shown in the image above.
+Manufacturer ID code protects
+A two-pole, one open, one closed emergency stop (E-stop) switch is available
+your development investment.
+CE Certified. Tough ABS/polycar as an option. The conductors for each pole (Pole 1 and Pole 2) of the switch
+are shorted until the switch is activated. After activation, each pole is an open
+-
+circuit until the switch is reset. Units with the E-stop option may be equipped
+bonate case available in blue, gray
+with a single serial port, Ethernet or Power-over-Ethernet.
+or black with black molded rubber
+boot.
+Make the G55 your product with a
+HOUSING: The QTERM-G55 handheld is made of an ABS polycarbonate
+plastic with an overmolded rubber boot for comfort and shock protection. The
+case meets NEMA-12 standards and can optionally be configured to meet
+custom key legend and company
+NEMA-4 specifications for hose-down, icing and salt spray. See Figure 3 for
+logo.
+dimensions.
+| |
+2 QSI Corporation www.qsicorp.com www.qsieurope.com
+
+QTERM-G55 Handheld / Panel-Mount
+The panel-mount version meets NEMA-4 specifications and is designed to be
+129 mm
+43 mm
+mounted in a hole cut in your panel (Figure 2). No screw holes are required;
+77 mm
+mounting hardware is included with the unit.
+The components of the QTERM-G55 are available as a module (display, CPU
+58 mm
+board, keypad and mounting brackets) for mounting in your housing if these
+mounting options will not fit your needs.
+CONNECTORS: The QTERM-G55 comes standard with one serial con -
+234 mm
+nection, two if the terminal is configured with the second serial option. The
+terminal can optionally support Ethernet or Power-over-Ethernet (802.3 af).
+The handheld has a durable, round, 12-pin, locking connector on the bottom
+of the unit for communications and power. The handheld QTERM-G55 can
+be optionally equipped with an integral cable (instead of the 12-pin round
+connector). This cable is terminated with a DB15f connector.
+97 mm
+The Panel-mount uses the primary DB9f for serial communications and
+129 mm
+43 mm
+power. A secondary DB9f is used for the second serial port and an 8-pin
+77 mm
+modular jack (RJ45) for the Ethernet option. Selection of certain communica -
+tion options may preclude some features.
+58 mm
+SPEAKER: A speaker with software-controlled pitch and duration is
+included on the rear of the unit. Pitch is set by specifying musical tones and
+durations to simplify creation of distinctive audio sequences.
+234 mm
+The QTERM-G55 can optionally be configured with an audio chipset to play
+voice, music or other .wav files through the speaker. These sounds can be
+played in response to events such as a key press, a critical setpoint reached,
+data received or other events.
+FLASH MEMORY: The QTERM-G55 includes 2 Mbytes of flash memory
+and 16 Mbytes of RAM. The flash memory contains the firmware, user appli -
+97 mm cation, objects and file space.
+QTERM-G55 handheld dimensions
+ Figure 1
+(mm) shown with a 40-key keypad.
+Firmware and application upgrades can be downloaded through the serial or
+Ethernet interfaces and into memory without opening the terminal housing.
+POWERSUPPLY: The QTERM-G55 includes a switching power supply
+with a wide input voltage range (8-32 VDC). A 5 VDC version is available
+but requires a well-regulated 5 VDC ( 0.25 VDC) supply. Typically, power
+is supplied through the primary serial port, however, if you have chosen the
+Power-over-Ethernet (PoE) option, power is supplied through the Ethernet
+cable and your PoE-compliant hub.
+Power-over-Ethernet (PoE) (IEEE 802.3af), also called Active Ethernet,
+eliminates the need to provide a separate DC supply to your wired Ethernet
+terminal. By running a single CAT5 cable providing power lines in addition
+to data lines, you have greater flexibility in where you locate your terminal,
+and you significantly reduce installation costs.
+BATTERY-BACKED REAL-TIME CLOCK: A battery-backed real-time
+clock with one-second resolution is available as an option. The real-time clock
+can be used to display the current time on the display, time and date stamp
+The QTERM-G55 provides control and
+messages or for timed polling and program execution.
+feedback for a PCB rework station.
+| |
+QSI Corporation www.qsicorp.com www.qsieurope.com 3
+
+Handheld / Panel-mount Graphic Terminal
+with Object-Based Programming
+QTERM-G55
+SERIAL PORT: The standard QTERM-G55 ships with one EIA-232
+serial interface with hardware handshaking. The primary and / or optional
+secondary serial ports can be configured for EIA-232, EIA-422 or EIA-485.
+127
+9.6 36
+76.8
+ETHERNET / POWER-O VER-ETHERNET: An Ethernet 10Base-T port
+with RJ45 connector (panel-mount) is available as an option. TCP/IP, UDP/IP,
+Modbus and other communications are supported. For handhelds, Ethernet
+57.5
+is connected to the unit through the 12-pin connector.
+228.6
+SOFTWARE AND SETUP
+OBJECT-BASEDPROGRAMMING LANGUAGE: Software for the
+QTERM-G55 is based on QSI's scripted graphic terminal programming
+language called Qlarity (pronounced Clarity). Qlarity uses objects to dis -
+play information on the screen, accept user input and communicate with other
+devices.
+PROGRAMMING TOOLS: Qlarity Foundry is a PC-based software tool
+117.2 p1
+that aids in screen design, application development, compilation and loading
+programs into the QTERM-G55. Qlarity Foundry is powerful enough for the
+R1.6 Maximum
+elementary user yet flexible enough for the technical user. Intelligent appli -
+cations can be created by modifying object properties and without writing a
+single line of code.
+For more information about Qlarity and Qlarity Foundry refer to the appro -
+212.6 p1
+priate section of this catalog or visit us on the web at www.qlarity.com.
+MANUFACTURERID: A unique MID code can be factory programmed
+into your QTERM-G55 (for a nominal one-time setup fee). Your Qlarity
+application can query this MID code to determine if the terminal was pur -
+chased by you. If the MID code does not match, your application can halt,
+preventing your software from being used on QSI terminals purchased by
+others, and protecting your development investment.
+QTERM-G55 panel-mount and
+ Figure 3
+panel cutout dimensions (mm).
+INTERFACES
+EIA-232: With proper cables and grounding, the QTERM-G55 can commu -
+nicate up to 15 meters at its top speed of 115,200.
+EIA-422: Using the EIA-422 interface, the QTERM-G55 can operate at
+distances up to 1000 meters.
+EIA-485: Multiple terminals can be connected to each other in a multidrop
+chain to reduce cabling costs.
+ETHERNET: Standard 10Base-T interface with TCP/IP and UDP/IP support.
+POWER-O VER-ETHERNET: Power-over-Ethernet (PoE) (IEEE 802.3af) sup -
+ports 10Base-T Ethernet communications and power over a single CAT5 cable.
+A pick and place machine is controlled by a
+panel-mount QTERM-G55
+| |
+4 QSI Corporation www.qsicorp.com www.qsieurope.com
+
+QTERM-G55 Handheld / Panel-Mount
+DISPLAY Grayscale transflective FSTN Color TFT (256 colors) optional
+Pixels: 320x24076.8x57.6 mm live area - FSTN; 72.5x54.4 mm "live area" - TFT
+Dot Pitch:0.24 mm - FSTN; 0.227 - TFTContrast:Software-controllable, temperature-compensated
+Lighting:White LED backlight Brightness is software-controllable
+KEYPAD # of keys:Construction:24- or 40-key keySteel snap domes in membrane
+Options:Lighted keypad with electroluminescent lightingEmergency stop (E-stop) switch (two pole, one open, one closed)
+INTERFACE EIA-232 serial port with hardware or software handshakingBaud rates:1200, 2400, 4800, 9600, 14,400, 19,200, 38,400, 57,600 and 115,200
+Data formats:8n1, 8e1, 8o1, 8n2, 7e1, 7o1, 7n2, 7e2 and 7o2Connector:12-pin round (Hirose HR30-8R-12SC) - Handheld
+Integral cable with DB15f - HandheldDB9f (primary and secondary) - Panel-mount
+8-pin modular (RJ45) with Ethernet or Power-over-Ethernet - Panel mountOptions:Configurable primary and secondary serial ports: EIA-232, EIA-422 or EIA-485
+Ethernet 10Base-T option
+Power-over-Ethernet option
+MEMORY 2 Mbytes flash and 16 Mbytes RAM memory
+SPEAKER Software programmable pitch and durationAudio decoder for .wav file audio support is available as an option
+PHYSICAL Handheld and panel-mount configurationsHousing:ABS polycarbonate with overmolded rubber boot - Handheld
+ABS polycarbonate with rubber overmolded - Panel-mount
+UL HB flame ratingSize:129x234x43 mm - Handheld
+127x228.6x95.6 mm - Panel-mount
+Mass:520 g - Handheld700 g - Panel-mount
+Processor:Colors:ARM720T 77 MhzBlue, black and gray
+ENVIRONMENTAL Sealing:Panel-mount - NEMA-4. Handheld - NEMA-12 (NEMA-4 optional).
+IP-65 pending (both)Temperature:Operating -20 to 60 C
+(-10 to 50 C Prototype legend)Storage -40 to 85 C
+Humidity:0 to 95%, non-condensingVibration:5 to 2000 Hz, 4 g-pk
+Shock:20 g, 6 ms, any axisDrop:1 m onto concrete - Handheld
+ POWER 8 to 32 VDC or 5 VDC 210 mA @ 12 VDC (standard terminal), Power-over-Ethernet (IEEE 802.3af)
+ SOFTWARE Qlarity Object-based programming language
+Qlarity Foundry Windows design environment
+CUSTOMIZING Prototype and Custom legends are available as an optionInternal module available for custom mounting requirements.
+CERTIFICATION FCC Part 15, Class BCE Certified: EN60950-1:2001, EN55022:1998 FCC Part 15, Subpart B, ICES-003, EN55024:1998
+| |
+QSI Corporation www.qsicorp.com www.qsieurope.com 5
+
+Order Worksheet
+QTERM-G55
+ORDER WORKSHEET
+!!FILLINAPPROPRIATEAbout five letters maximum per LED in the LED label area.AREASFORCUSTOMIZING!!
+40-key units: up to two words, about five letters each on key labels.24-key units: up to two words, about six letters each on key labels.
+Draw a heavy outline around text to indicate shifted keys.The power LED is on the lower left key for either keypad.
+The shift LED is in the left column, second key from the bottom for either keypad.
+(1)These keys are required to operate the 24- and 40-key terminals Power-on Setup facility and
+should not be removed.(2)These keys are the built in Shift Keys for the 24- and 40-key unit as labeled. It should not be
+removed if the built in Shift Key function is desired.(3)These keys are the built in Power Keys for the 24- and 40-key unit as labeled. It should not
+be removed.
+NOTE: Keypad is not to scale.
+1 1 1
+LEDs
+24- key
+Ke ypad
+40- key
+Ke ypad
+2
+3
+2
+3
+Logo Area
+24- and 40-key
+| |
+6 QSI Corporation www.qsicorp.com www.qsieurope.com
+
+*,.0248:>@B`dp&,28>DJPx?zA|C=$*06<y?{A}C=~: &,GHIJK53%3fzMono@ F3!@@F$~Y#~O_:U " & . 0 3 : < > D o !!!!"!&!.!T!^!!""""""""
+z,@:;1'%k^@'@'@'@'@-?`p@? X+q<<<]<<<?<<<?<<<?<<<<<<<<<<<<<<<<<<<<.+}.+}10]#53!5!3!33#3!#!!!s]E[S[QaS_F]Q[_nSHRWP99PR99WHck"1AE@#++%,0%,0'@>6FFY2F#Y@:F**'8>68P..@..@B88BTZ+NM]q??<<<<9999.+}10Cy@pA4%0&%%@&8&,%<%&!&%%316A$>9+6;
+_['jjig&j'h3{|'v,|3&'3'2
+3://$$Y!"!#3$,5+$"
+&3/13#&3413'
+UU@!U"0@U@UU%$%1!++N]+++]q<M+++<?]q?<999++10Cy@;;+<+qr]]q5!#"#"&54763232654'&'&#E1S&Ct^l!, 3'$/ +0'%%1 zi]<1*[6BTg!"LC@{lu{v0y5z6mE.d66Ue@@3C2222*%/?O44053@B@PE@B344204T24CTX@!/"<ED00'
+'=::
+'%%%4 r}*%%4 rL'@K@O5'-8x""!"!!"!#!#""""@'@S 0@UUU
+&
+&,3
+:Ly%#%'2#2'E#E''
+99+++++++YY]#&'&&'5!654&'&'5H%5
+/
+'4@5@U56',?//?+99/++++++++2+/++++++10+CTX@X4U5U '456,'UUUUUU87!U!U!U!-U-U-U--879/++++++9/++++++//??9910++@/8@*58`]6%&88888+P8`8p88@8
+@UUUU@UUUUUU@U
+AV8$$<U@G#p0WCTX@Y@UY@UUUL0U0U0@U0+U+17FUFUF@!UFAGAUAUAUALULULULUL@ULUL+U+U+7@U7U7@U7U7@U7U7U7UU @U 0U @U *U @U U @U /2EH@ GTU@U/UOUoUUUVG1%,<,??///?]]+/+++++++++/+++++++++/+++++++++++++++++10++CTX@<%,<,TUV1GU U +U+U+7AUAUAL U X7U7U7U77XLULULULLYX9/+++9/+++9/+++++++///???10KTXFE/08888888Y@4YYY`]6+Y
+U @U U @U UUUUU$@% ,U/+??99?/+++++/+++++10+CTX@W@`p $%%,UUU UUU& U U &UUU'&9/+++9/++9/++++++???99?]10@5'`]6 '`'p''47: HH O'#!O%'#'AD %E@%%,! g@p@%$P `&+N]qr<M<]q<<<<?<?<<<99++10Cy@+<+]]+YY327#5#"&&54&&5!32674&'5c!'-v|EMq,7HAY?+mK9ZG#qBYA2%P6LN7% CTX ??/9/10CTX@1"!U*UU U ?+?+?+?+?99/10@SX[5"@a5#"! $ :9:95:JIDEEIi""-"2`4"+14"
+BA#L_P"f8%&Ir;
+t!EWt&9D%lH9KqQT.%nS9J,S bXL|Q99%%%^aV"VJ#*s!H#3*"

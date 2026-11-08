@@ -1,0 +1,29 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\Trigger Blocking.pdf
+# cifrado=False bloques=2 caracteres=2744
+
+Notes for Usingthe Trigger Blocking
+Notes for Using the Trigger Blocking The trigger blocking is used to debounce trigger signals. The following figure shows five exem-
+plary configurations with trigger pulses given by products all 100ms. Each signal has a lengthof approx. 12ms and the laser has been configured to react to the positive edge of the signal.
+The green area is the time in which the system rtrigger input is blocked, noeacts to trigger pulses. In the red areas the trigger pulses are accepted.
+Case AThis is the ideal case. The trigger signal has clear edges, no bounces and each signal has the
+same length. In this case the blocking time is irrelevant since there are no additional triggeredges except the actual trigger edges of the signal. However, in reality this ideal case is ex-
+tremely rare.
+Case BIn case B the signal bounces on the rising edge. Instead of one edge there are three for each
+product. Without blocking this would result in three markings per product. The blocking of90ms safely prevents those multiple triggers.
+Case CHere the signal bounces on the falling edge. The same applies as to case B: the blocking safely
+prevents multiple triggers.
+11/03 - Rev. 1.0 1
+
+Notes for Usingthe Trigger Blocking
+Case DIn this case the input signal looks as in case C. However, here the wrong blocking time has
+been selected. Already five seconds after the fibouncing edge at the end of the signal gives a new trigger pulse (in the example even two puls-rst trigger the input is reactivated. Thus the
+es). As a result there are three markings on the product instead of one.
+Case EThe last example illustrates that a highly disturbed signal cannot be compensated even by the
+trigger blocking. Just after the blocking time a new trigger is caused by the disturbance. Thusthe second product is marked far too early. Since the blocking starts immediately afterwards,
+and therefore also too early, a disturbance is interpreted as trigger also for the third product.Thus also the third product is marked too early.
+In this case you can only make sure that the input signal has no disturbances.
+Hints for Setting the BlockingThe blocking time should be set to 90% of the minimum distance between two products. In the
+examples 90% of 100ms => 90ms. Of course thtween two products at maximum throughput of the machine.is has to be based on the time distance be-
+The marking time is irrelevant since the blocking time refers only to the input signal. In case ofMOTF the time is replaced by distances. If the products always have a minimum distance of
+100mm, the blocking distance is 90mm (90% of 100mm). The speed or throughput are irrel-evant but it must be sure that the products can never be closer together.
+11/03 - Rev. 1.0 2

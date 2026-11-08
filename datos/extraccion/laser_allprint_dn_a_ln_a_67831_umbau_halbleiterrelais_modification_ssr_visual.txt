@@ -1,0 +1,1378 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\67831 Umbau Halbleiterrelais - Modification SSR.pdf
+# cifrado=False bloques=19 caracteres=21841
+
+AL-67831Inhalt
+Table of Contents
+
+1 Einleitung.....................................................................1
+2 Einbau Halbleiterrelais in PCM-Versorgungseinheit...13 Umbau der Steuereinheit des PCM.............................2
+4 Introduction..................................................................4
+5 Mounting the SSR into the 6 Modification of the Control UnSupply Unit of the PCM....4it of the PCM................5
+04/05 - Rev. 2.0 i
+
+AL-67831Umbau Halbleiterrelais DN-A
+1 Einleitung
+Das Schütz in der Versorgungseinheit des PCM verursacht Störungen und muss daher durchein Halbleiterrelais ersetzt werden. Um Störungen durch den hohen Einschaltstrom zu vermei-
+den, soll das Schaltnetzteil des RF-Treibers in der Steuereinheit sekundärseitig geschaltetwerden.
+2 Einbau des Halbleiterrelais in die Versorgungseinheit des PCM
+Folgende Teile entfallen:Schütz K101 (AL-67823) und
+Relais K100 (AL-65938). Das Halbleiterrelais (AL-67823) wird an der Stelle auf die
+Tragschiene montiert, an der sich vorher das Schütz befand(siehe unten).
+Folgende Kabel entfallen: W119, W143, W144, W145, W146.
+1.Befestigen Sie das Halbleiterrelais mit den Platten AL-67826 und AL-67827 auf der Trag-schiene wie in der Zeichnung dargestellt.
+2.W131 wird auf A1 vom Halbleiterrelais (K100 im Schaltplan) aufgelegt.
+3.W132 wird auf A2 vom Halbleiterrelais (K100) aufgelegt.
+4.W117 und W120 sind zu kurz und müssen neu verlegt werden:W117 wird von X103/7 nach A106/N verlegt.
+W120 wird von X103/8 nach A107/N verlegt.
+5.W116 wird auf L1 vom Halbleiterrelais (K100) aufgelegt.
+6.W141 und W142 werden auf T2 vom Halbleiterrelais (K100) aufgelegt.
+500
+005
+010
+015
+7,5
+Pos.Nr.MengeArt.Nr.Benennung
+0051AL-67823Halbleiterrelais 12A/400V
+0101AL-67826Platte, oben
+0151AL-67827Platte, unten
+500201079Zylinderschr. M4x20-A2 DIN 912
+04/05 - Rev. 2.0 1
+
+AL-67831Umbau Halbleiterrelais DN-A
+3 Umbau der Steuereinheit des PCM
+Zeitrelais
+K200
+Die Steuereinheit wird so umgebaut, dass das Schaltnetzteil A204 nicht mehr primärseitig überdas Zeitrelais K200 geschaltet wird, sondern sekundärseitig über das Relais K201.
+Dazu muss die Tragschiene gegen eine längere ausgetauscht werden.
+1.Demontieren Sie die Reiter und lösen Sie alle Klemmen von der Tragschiene.
+HinweisDie einzelnen Adern werden nicht abgeklemmt!
+2.Lösen Sie die Befestigungsschrauben der Tragschiene und ziehen Sie sie unter den Klem-men heraus.
+3.Bauen Sie die längere Tragschiene in umgekehrter Reihenfolge wieder ein.
+4.Montieren Sie die Relaisfassung für das Relais K201 zwischen dem Zeitrelais K200 und denKlemmen auf die Tragschiene. Dabei zeigen die Anschlüsse A1 und A2 der Relaisfassung
+nach links.
+5.Stecken Sie das Diodenmodul AL-67832 in die Relaisfassung.
+HinweisDas Diodenmodul hat einen Verpolungsschutz und kann daher nur in einerRichtung gesteckt werden.
+6.Stecken Sie das Relais AL-13291 in die Relaisfassung.
+7.Tauschen Sie W202 und W203 durch längere Kabel aus. Dabei wird W202 von A204/L1 auf X201/1 aufgelegt.
+W203 wird von A204/N auf X201/5 aufgelegt.
+8.Verlegen Sie W238 neu von A204/+24V nach K201/11.
+9.Verdrahten Sie W220 um von X201/21 nach K201/14.
+10.Verdrahten Sie eine Brücke (W235) von K200/A1 nach K200/15.
+HinweisVerwenden Sie Aderendhülsen mit Doppeleingang.
+11.Verlegen Sie W236 neu von K200/18 nach K201/A1.
+04/05 - Rev. 2.0 2
+
+AL-67831Umbau Halbleiterrelais DN-A
+12.Verdrahten Sie eine Brücke (W237) von K200/A2 nach K201/A2.
+HinweisVerwenden Sie Aderendhülsen mit Doppeleingang.
+AchtungDie Kontakte des Relais K201 (AL-13291) in der Steuereinheit verklebten ineinigen Fällen.
+Daher muss das Relais K201 (orange, siehe Abbildung) gegen einneues ausgetauscht werden (schwarz, Artikelnummer AL-68430).
+Zeitrelais K200
+Relais K201 (alt)
+04/05 - Rev. 2.0 3
+
+AL-67831Modification Solid State Relay
+1 Introduction
+Since the contactor in the supply unit of the PCM causes interferences it must be replaced bya solid state relay (SSR). In order to avoid interferences caused by the high starting current the
+power supply of the RF driver in the control unit has to be modified to be switched via the sec-ondary circuit.
+2 Mounting the SSR into the Supply Unit of the PCM
+The following components have to be removed:Contactor K101 (AL-67823) and
+Relay K100 (AL-65938). The solid state relay (AL-67823) will be mounted to the bear-
+ing rail in place of the contactor (see below).The following cables are no longer used: W119, W143, W144,
+W145, W146.
+1.Mount the solid state relay to the bearing rail using the plates AL-67826 and AL-67827 asshown in the drawing below.
+2.W131 is connected to A1 of the SSR (K100 in the wiring diagram).
+3.W132 is connected to A2 of the SSR (K100).
+4.W117 and W120 are too short and must be laid out anew:W117 is to be laid from X103/7 to A106/N.
+W120 is to be laid from X103/8 to A107/N.
+5.W116 is connected to L1 of the SSR (K100).
+6.W141 and W142 are connected to T2 of the SSR (K100).
+500
+005
+010
+015
+7,5
+Pos.No.QuantityArt.No.Designation
+0051AL-67823Solid state relay 12A/400V
+0101AL-67826Plate, above
+0151AL-67827Plate, below
+500201079Cheese-head screw M4x20-A2 DIN 912
+04/05 - Rev. 2.0 4
+
+AL-67831Modification Solid State Relay
+3 Modification of the Control Unit of the PCM
+timing relay
+K200
+The control unit is to be modified so that the power supply A204 is no longer switched via theprimary circuit by timing relay K200 but via the secondary circuit by relay K201.
+For this the bearing rail must be replaced by a longer one.
+1.Dismount the riders and remove all terminals from the bearing rail.
+NoteThe individual wires are not removed!
+2.Remove the fixing screws of the bearing rail and pull the rail out from under the terminals.
+3.Mount the longer bearing rail in reverse order.
+4.Mount the relay socket for relay K201 onto the bearing rail between the timing relay and theterminals. The connections A1 and A2 of the relay socket point left.
+5.Insert the diode module AL-67832 into the relay socket.
+NoteThe diode module is protected against polarity inversion and therefore canbe inserted only in one direction.
+6.Insert the relay AL-13291 into the relay socket.
+7.Replace W202 and W203 by longer cables.W202 is connected from A204/L1 to X201/1.
+W203 is connected from A204/N to X201/5.
+8.Lay W238 new from A204/+24V to K201/11.
+9.Reconnect W220 from X201/21 to K201/14.
+10.Wire a bridge (W235) from K200/A1 to K200/15.
+NoteUse dual wire cable ends.
+11.Lay W236 new from K200/18 to K201/A1.
+04/05 - Rev. 2.0 5
+
+AL-67831Modification Solid State Relay
+12.Wire a bridge (W237) from K200/A2 to K201/A2.
+NoteUse dual wire cable ends.
+AttentionIn some cases the contacts of relay K201 (AL-13291) in the control unit didagglutinate.
+Therefore the relay K201 (orange, see figure) must be replaced by anew one (black, article number AL-68430).
+timing relay K200
+relay K201 (old)
+04/05 - Rev. 2.0 6
+
+I@+& &
+
+9
+16.09.2005 2
+K och
+B latt-N r. 6
+Ä nderuDnagtum N orm U rspr. E rs.für B lvon A nz
+9
+8
+7
+6
+5
+4
+3
+2
+D atum 1
+B earb.
+G epr.
+Z ustand N am e
+0
+8
+7
+6
+5
+4
+3
+2
+1
+H
+C
+H H T
+I
+C C E E
+T T L L W
+I I
+B B S
+-
+W W A A
+Y
+S S
+- - N N
+E
+E E
+Y Y K
+E E _
+P P
+K K L L R
+1 2 3 4 5
+.
+4 3
+1 C 1
+.
+N O T -A U S :P in 2
+N
+5
+1 1
+8
+2
+X
+² -
+² ²
+m
+m m
+m
+m m 5
+5 5 7
+.
+7 7
+. . 0
+0 0
+U
+D D B
+R R D
+1 2 3
+3 3 3
+2 2 2
+W W W
+- - -
+0
+C O N T R O L U N I T - F R O N T
+-A 2 0 8
+-X 1
+E TH E R N E T
+1 A C C 2
+P A N E L I / O
+A L -6 5 2 3 6
+10
+-D 1 LA S E R E M IS S IO N
+-D 4 SW LAS E R E N A B LE
+-D 5 -X 2 KE Y S W ITC H C LO S E D
+ET H ER N E T
+-D 6 1 C U S TOIMNETRE R LO C K C LO S ED
+10
+S Y S T E M D A T A -
+B A S E
+O
+/
+I
+_
+-X 4
+1 L
+-X 3
+D IG ITA L I/O
+B A
+1 8 :
+T
+0 I
+0
+N O T -A U S :P in 1 G
+=5+P C M -C U S TO M E R -IN T E R FA C E /3.1 2 I
+=5+P C M -C U S TO M ER -IN TER FA C E /3.1 K D
+4 4
+. .
+3 5
+/ /
+13
+-S 2 0 0
+K E Y S W IT C H
+L A S E R14O N
+Lei 13.12.2C001 A L05-1113 A L L T E C G m b H A nlage
+A n d e r T ra ve 2 7 -3 1 A L - 6 7 8 1 3
+O rt P C M -C O N T R O L-U N IT
+2 3 9 2 3 S e lm sd o rf G e rm a n y
+Tel.:+49(0)3882355-225
+E rs.d.P C M - C O N T R O L U N I T 10/10
+
+9
+16.09.2005 2
+K och
+B latt-N r. 5
+Ä nderuDnagtum N orm U rspr. E rs.für B lvon A nz
+9
+8
+7
+6
+5
+4
+3
+2
+D atum 1
+B earb.
+G epr.
+Z ustand N am e
+0
+8
+7
+25
+BN
+14
+6
+4
+G N
+W S
+YE
+BN
+T O U C H S C R E E N 6 4 6 0 0
+C A N _ L P C
+=1+P C M -SU P P LY -U N IT/5.1
+5
+O F _ L P C
+=1+P C M -SU P P LY -U N IT/5.1
+-X 2 1 31
+3
+O F _ L H
+4
+C A N _ C I
+2
+S E R 1 & D IG I._ I/O _ C U S .
+3
+-X 2 0 2
+1
+C I_ E T H E R N E T
+2
+1
+-X 2 0 9
+B K BU
+-X 2 0 3
+BK
+1
+1
+-X 5 0 6
+1
+-A 2 0 7 .1
+T o u c h
+-A 2 0 6
+-X 1
+1 1
+LA M P 1 24V
+C C F L
+2 1
+I N LAV M PE2 GR N DT E R
+-X 2 A L -6 4 6 5 2
+0
+7
+0
+5
+X
+-
+1 -X 5 0 8
+1
+2
+3
+4
+5
+6
+0
+2
+X
+-
+1
+2
+-A 2 0 5
+3
+-X 2
+E TH E R N E T
+-X 5
+1 4
+P O W E R
+1 C C FL IN V E R TE R =5+P C M -C U S TO M ER -IN TE R FA C E /3.1
+8
+8 2 5
+3
+-X 8
+D IG IT A L I/O
+1 C U S T O M E R
+=5+P C M -C U S TO M ER -IN TER FA C E /3.1
+26 5
+-A 2 0 7
+S E R IA L 1 0 1
+8
+2
+-X 2 8 X
+C A N 2 -
+G N
+1
+Lei 18.09.2C001 A L05-1113 A L L T E C G m b H A nlage
+W S -X 3
+2 =5+P C M -C U S TO M E R -IN TE R FA C E/2.1 A n d e r T ra ve 2 7 -3 1 A L - 6 7 8 1 3
+LC D .
+0 O rt P C M -C O N T R O L-U N IT
+YE l 2 3 9 2 3 S e lm s d o rf G e rm a n y
+3 1
+3 o Tel.:+49(0)3882355-225
+A C C 2
+4
+L C D 2 p
+E rs.d.P C M - C O N T R O L U N I T 9/10
+5 14 8
+A L -6 4 1 3 1 W
+-
+-X 2 4
+-X24-B O F
+=4+M A R K IN G -U N IT/4.1
+-X2O4-FA
+-X 2 0 8 -X 2 5 -X 4 O
+/
+O F TO U C H I
+1D
+_
+V
+N L
+4
+2 G 4 A
+-X 6: :
+T
+5 C A5N 1 I
+1
+0 0
+G
+2 2 2 I
+3 A A D
+-X 1 -X 9
+4
+P O W E R D IG ITA L I/O
+5
+1 2 1 8
+3 3 5
+. . .
+3 3 6
+/ / /
+2
+
+-A 2 0 2
+S PL-7N5P-E2 4
+P O W E R S U P P L Y
+24V G N D
+-A 2 0 1
+S P L-3N0 0P-E2 4
+P O W E R S U P P L Y
+24V G N D
+9
+16.09.2005 2
+K och
+B latt-N r. 4
+Ä nderuDnagtum N orm U rspr. E rs.für B lvon A nz
+9
+8
+7
+A 2 0 4 :G N D
+/3.6
+6
+5
+4
+3
+A 2 0 4 :2 4 V
+2
+/3.6
+D atum 1
+B earb.
+G epr.
+Z ustand N am e
+0
+8
+A 2 0 2 :-2 4 V
+/3.1
+A 2 0 2 :G N D
+/3.1
+A 2 0 1 :G N D
+/3.2
+7
+A 2 0 1 :2 4 V
+/3.2
+A 2 0 1 :P E
+/2.4
+6
+A 2 0 1 :N
+/2.4
+5
+A 2 0 1 :L 1
+/2.4
+A 2 0 2 :P E
+/2.6
+4
+A 2 0 2 :N
+/2.6
+3
+A 2 0 2 :L 1
+/2.5
+2
+A 2 0 4 :P E
+/2.3
+1
+A 2 0 4 :N
+/2.3
+8 9
+3 1
+2 2
+²
+m
+m
+0
+5
+.
+-A 2 0 4
+2
+S P L-3N0 0P-E2 4
+D
+A 2 0 4 :L 1
+/2.3 R P O W E R S U P P L Y
+8
+24V G N D
+3
+2
+W
+-
+8
+3
+2
+0
+2
+2
+11
+-K 2 0 1
+/3.5
+1142
+Lei 13.12.2C001 A L05-1113 A L L T E C G m b H A nlage
+A n d e r T ra ve 2 7 -3 1 A L - 6 7 8 1 3
+O rt P C M -C O N T R O L-U N IT
+23 9 2 3 S e lm sd o rf G e rm a n y
+Tel.:+49(0)3882355-225
+E rs.d.P C M - C O N T R O L U N I T 8/10
+
+9
+16.09.2005 2
+Lei
+B latt-N r. 3
+Ä nderuDnagtum N orm U rspr. E rs.für B lvon A nz
+9
+8
+7
+6
+5
+4
+3
+2
+D atum 1
+B earb.
+G epr.
+Z ustand N am e
+0
+8
+7
+6
+G N D
+5
+16 15
+5
+18
+12 11
+/4.6
+14
+S U :G N D
+=1+P C M -S U P P LY -U N IT/3.1
+4
+S U :2 4 V
+=1+P C M -S U P P LY -U N IT/3.1
+-X 2 0 1
+11
+R F :2 4 V
+3
+=1+P C M -S U P P LY -U N IT /3.1
+F M :V -
+R F :G N D
+=1+P C M -S U P P LY -U N IT/3.1
+2
+F M :G N D
+C I:2 4 V
+1
+F M :V +
+-X 2 0 1
+20
+19
+C I:G N D
+A 1
+-K 2 0 1
+A 2
+L H C :G N D
+18
+0
+3 0
+5 3
+1 1
+-W 2 3 6
+23 R D 0 .7 5 m m ²
+15
+9 0
+1 2
+2 2
+² B 1 A² 1 ²
+² ² ² ² ² ² ²
+² m -K 2 0 0
+m m
+m m m m m O p e ra tin gAm2o d e = S F m m
+m m
+m m
+T im e = 5 s e c
+m m m m m m m m
+5 5 5
+0 5 5 0 0 7 7 7 5 5
+0 . . . . .
+. . . . . .
+1 2 2 1 1 0 0 0 2 2
+1
+E R D R R D R D D R D
+Y G R G G R G R R G R
+2 3 4 5 6 7 8 4 5 9 0
+1 1 1 1 1 1 1 3 3 1 2
+2 2 2 2 2 2 2 2 2 2 2
+W W W W W W W W W W W
+- - - - - - - - - 15 - - Lei C
+26.11.2003 A L05-1113 A L L T E C G m b H A nlage
+4 A n d e r T ra ve 2 7 -3 1 A L - 6 7 8 1 3
+O rt P C M -C O N T R O L-U N IT
+-K 2 0 0 2 3 9 2 3 S e lm sd o rf G e rm a n y
+L H C :2 4 V Tel.:+49(0)3882355-225
+=4+M A R K IN G -U N IT/3.1
+1186
+E rs.d.P C M - C O N T R O L U N I T 7/10
+=4+M A R K IN G -U N IT/3.1
+=4+M A R K IN G -U N IT/4.1
+=4+M A R K IN G -U N IT/4.1 =5+P C M -C U S TO M E R -IN TE R FA C E /3.1
+=4+M A R K IN G -U N IT/4.1 =5+P C M -C U S TO M ER -IN TE R FA C E /3.1
+V - 2 4 V R F R: GF N: 2D 4 V R E S E R V E
+-X 2 0 1 -X 2 0 1 -X 2 0 1 -X 2 0 1
+V D D D D
+V V V
+4 121314 1617 21 22
+N N N 1 N
+4 4 4
+2
+- G 2 G G 2 B G 2
+: : : : : : : : :
+2 2 1 1 5 5 0 4 4
+0 0 0 0 0 0 0 0 0
+2 2 2 2 2 2 2 2 2
+A A A A A A K A A
+0 0 0 0 3 3 4 0 0
+. . . . . . . . .
+4 4 4 4 5 5 6 4 4
+/ / / / / / / / /
+-W 2 3 7
+G R 0 .7 5 m m ²
+
+9
+16.09.2005 2
+K och
+B latt-N r. 2
+Ä nderuDnagtum N orm U rspr. E rs.für B lvon A nz
+9
+8
+7
+6
+5
+4
+3
+2
+D atum 1
+B earb.
+G epr.
+Z ustand N am e
+0
+8
+7
+6
+5
+4
+3
+2
+1
+0
+Lei 02.10.2C001 A L05-1113 A L L T E C G m b H A nlage
+A n d e r T ra ve 2 7 -3 1 A L - 6 7 8 1 3
+O rt P C M -C O N T R O L-U N IT
+2 3 9 2 3 S e lm sd o rf G e rm a n y
+Tel.:+49(0)3882355-225
+P C M - C O N T R O L U N I T
+E rs.d. 6/10
+F r o n t
+L 1 N P E
+X1
+-H 2 0 0
+W S
+X2
+P O W E R O N
+G e h ä u s e
+F A R B E N /C O L O R S
+B K = s c h w a r z / b l a c k
+B N = b r a u n / b r o w n
+R D = r o t / r e d
+O G = o r a n g e / o r a n g e
+Y E = g e l b / y e l l o w
+G N = g r ü n / g r e e n
+B U = b l a u / b l u e
+V T = v i o l e t t / v i o l e t
+G Y = g r a u / g r e y
+W H = w e i ß / w h i t e
+P K = r o s a / p i n k
+G D = g o l d / g o l d
+T Q = t ü r k i s / t u r q u o i s e
+S R = s i l b e r / s i l v e r
+G N Y E = g r ü n - g e l b / g r e e n - y e l l o w
+10
+C O N T R O L U N IT :P E
+=1+P C M -S U P P LY -U N IT/2.8
+-X 2 0 1
+1
+9
+-W 2 0 1 B U 1 .5 m m ²
+C O N T R O L U N IT :N
+=1+P C M -S U PP LY -U N IT/2.8
+8
+² ² ² ²
+m m m m
+² ² ² ² ² ²
+m m m m
+m m m m m m
+5 5 5 5
+. . . .
+m m m m m m
+1 1 1 1
+5 5 5 5 5 5
+. . E . . E . . E E
+1 1 1 1 1 1
+Y Y Y Y
+K U N K U N K U N N
+B B G B B G B B G G
+2 3 4 5 6 7 8 9 0 1
+0 0 0 0 0 0 0 0 1 1
+2 2 2 2 2 2 2 2 2 2
+C O N T R O L U N IT :L 2 -W 2 0 0 B K 1 .5 m m ²
+=1+P C M -S U P P LY -U N IT/2.8
+W W W W W W W W W W
+- - - - - - - - - -
+-X 2 0 1 -X 2 0 1
+2 3 4 5 6 7
+1 E 1 E 1 E
+L N P L N P L N P
+: : : : : : : : :
+4 4 4 1 1 1 2 2 2
+0 0 0 0 0 0 0 0 0
+2 2 2 2 2 2 2 2 2
+A A A A A A A A A
+0 0 0 0 0 0 0 0 0
+. . . . . . . . .
+4 4 4 4 4 4 4 4 4
+/ / / / / / / / /
+
+9
+15.09.2005 1
+K och
+B latt-N r. 5
+Ä nderuDnagtum N orm U rspr. E rs.für B lvon A nz
+9
+8
+7
+6
+5
+4
+3
+2
+D atum 1
+B earb.
+G epr.
+Z ustand N am e
+0
+8
+7
+6
+5
+4
+B N
+3
+1
+YE YE
+-X 1 0 9
+1
+2
+R F -O U T P U T
+-W 1 5 1
+L W L
+1 E X T E R N A L C H IL L E R
+-W 1 5 0
+16
+IN T E R N A L C H IL L E R
+16
+D IP S W IT C H -X 4
+R F O U T P U T
+1 2 3 4 5 6
+1
+O FF
+O N
+R F D R I V E R
+D IP 1 = IN V E R S E IN P U T
+D IP 2 = IN V ER S E V S W R
+D IP 3 = IN V E R S E TE M P
+D IP 4 = 75 O hm -1K
+D IP 5 = G N D
+D IP 6 = N .C .
+-X 1
+-X 2 -X 3
+P O W E R
+P O W E R LO G IC
+C O N TR O L C O N TR O L
+1 0 1 1 9
+2 2
+1 1
+X X
+- -
+1 1
+2 2 0
+3 3
+4 4
+5 5
+O F _ L P C
+=2+P C M -C O N TR O L-U N IT/5.8
+1
+-X 1 1 0
+1
+C A N _ L H C
+9 8
+1 2
+1 1 1 1 0
+6
+1 1 1
+2
+X X
+- -
+e
+e l
+l
+b
+b
+a
+a
+c
+c
+-A 1 0 2 t
+t
+a
+-X 9 -X 1 0 a l
+C A N C A N l f
+G N G N f
+1 1 .
+4 l 5 l
+W S W S
+2 2 o o
+C A N _ L P C 5 5
+=2+P C M -C O N TR O L-U N IT/5.8 3 3 =4+M A R K INp G -U N IT/3.1 p
+1 1
+BN L P C 6 0
+4 4
+W 2 W 1
+5 5 - -
+A L -6 4 3 6 9
+Lei 08.10.2001 B A E M 022/05 A L L T E C G m b H A nlage
+-O F 1 -X 6
+-X 1 1 1 A L - 6 7 8 1 3
+O F IN TE R N A L A n d e r T ra v e 2 7 -3 1
+1 O rt P C M -S U P P LY -U N IT
+1 C H ILLE R 2 3 9 2 3 S e lm s d o rf G e rm a n y
+Tel.:+49(0)3882355-225
+=3+P C M -C O O LIN G -U N IT/2.1 + -
+PE rCs.Md. - S U P P L Y U N I T D N 1 0 / 5 50/1A0
+M D B
+16
+A L -6 4 2 8 8
+-X 1 3 3 4
+E X TE R N A L 3 3
+C H ILLE R 1 1
+1
+=3+P C M -C O O LIN G -U N IT/2.1 4
+2 1 9
+-X-7X 516
+A N A-PLXOO2 GW E R--X 1 2 1
+P O CW UERRRFR-ESDNURTPIPVSLEEYRT X
+-
+-A 11 0231 1 2610
+D D
+V V
+N 3 N
+4 4
+2 G X 2 G
+-X 1 0 8 : : -X 1 2 5 : : :
+=4+M A R K IN G -U N IT/2.8
+2 2 2 3 3
+0 0 0 0 0
+1 1 1 1 1
+A A A A A
+A L -6 4 6 4 0
+5 5 8 2 2
+. . . . .
+3 3 4 3 3
+/ / / / /
+
+9
+16.09.2005 1
+K och
+B latt-N r. 4
+Ä nderuDnagtum N orm U rspr. E rs.für B lvon A nz
+9
+8
+7
+6
+5
+4
+3
+2
+D atum 1
+B earb.
+G epr.
+Z ustand N am e
+0
+8
+7
+A 1 0 7 :N
+/2.5
+6
+A 1 0 6 :N
+/2.4
+5
+A 1 0 7 :P E
+/2.5
+A 1 0 6 :P E
+/2.4
+4
+A 1 0 6 /A 1 0 7 :L 1
+/2.3
+3
+A 1 0 1 :O U T +
+2
+A 1 0 1 :O U T -
+1
+A 1 0 1 :G N D
+/3.4
+-A 1 0 1
+-X 6
+P O W E R
+1
+2
+D N S U P P L Y U N I T
+A L -6 5 9 3 1
+-X 5
+1
+O U TP U T D IO D E -
+2
+O U TP U T D IO D E +
+² ² ² ² 3
+IN P U T G N D
+m m m m
+4
+m m m m IN P U T +27V
+5 5 5 5
+. . . .
+2 2 2 2
+U U K K
+B B B B
+5
+IN P U T G N D -X 3
+4 3 2 1 P O W ER
+4 4 4 4 S U P P L6Y
+IN P U T +27V
+1 1 1 1 1 25
+W W W W
+- - - -
+0
+A 1 0 1 :2 4 V
+/3.4
+=4+M A R K IN G -U N IT/2.8 -A 1 0 7
+=4+M A R K IN G -U N IT/2.8 G N D
+L1 V -
+PE
+N V +
++27V
+S P -5 0 0 -2 7
+1L1
+-X 1 0 4
+-K 1 0 0 1
+/3.3 2
+2T1
+.
+l
+6
+o
+0 1
+5
+p
+1 2
+5
+X
+- 2
+B
+U
+-A 1 0 6 S
+-
+G N D
+L1 V - D
+PE
+N V +
++27V
+3
+S P -5 0 0 -2 7
+X
+:
+2
+0
+1
+A
+4
+.
+5
+/
+A c h t u n g !
+B e im D N 1 0 N e tz te il e n tfä llt A 1 0 7 .
+D ie + 2 7 V u n d d ie G N D - L e itu n g Dvioen+ 2 7 V u n d d ie G N D - L e itu n g v o n
+A 1 0 7 w e r d e n a u f A 1 0 6 a u fg e le Ag t1!0 7 w e r d e n a u f A 1 0 6 a u fg e le g t!
+A t t e n t i o n !
+T h e D N 1 0 p o w e r s u p p ly h a s n o A 1 0 7 .
++ 2 7 V a n d G N D o f A 1 0+ 72 7a Vrea cnodnGnNe Dc toefdA 1 0 7 a re c o n n e c te d
+to A 1 0 6 . to A 1 0 6 .
+Lei 27.09.2001 C A L05-1113 A L L T E C G m b H A nlage
+A n d e r T ra ve 2 7 -3 1 A L - 6 7 8 1 3
+O rt P C M -S U P P LY -U N IT
+2 3 9 2 3 S e lm sd o rf G e rm a n y
+Tel.:+49(0)3882355-225
+PE rCs.Md. - S U P P L Y U N I T D N 1 0 / 5 40/1A0
+
+9
+16.09.2005 1
+leistner
+B latt-N r. 3
+Ä nderuDnagtum N orm U rspr. E rs.für B lvon A nz
+9
+8
+7
+6
+5
+4
+3
+2
+D atum 1
+B earb.
+G epr.
+Z ustand N am e
+0
+8
+7
+-X 1 0 3
+15
+6
+-W 1 3 0 R D 1 .5 m m ²
+5
+-W 1 5 3 G R 1 .5 m m ²
+4
+-W 1 2 9 R D 1 .5 m m ²
+3
+-W 1 2 8 G R 1 .5 m m ²
+1L1 2T1
+/4.4
+C O O L IN G U N IT :G N D
+2
+R F :2 4 V
+=2+P C M -C O N TR O L-U N IT/3.8
+C O O L IN G U N IT :2 4 V
+24
+1
+R F :G N D
+=2+P C M -C O N TR O L-U N IT /3.8
+23 26
+S U :2 4 V
+=2+P C M -C O N T R O L-U N IT/3.8
+0
+0 3
+3 5
+1 1
+-X 1 0 3 -X 1 0 3
+22 25
+18
+3 1 4 2
+3 3 3 3
+1 1 1 1
+² ² ² ² ² ²
+² ² ² ²
+m m m m m m
+m m m m
+m m m m m m
+m m -X 1 0 3 m m
+5 5 5 5 5 5
+5 5 7 7 19 7 7 0 0 7 7
+. . . . . . . . . .
+1 1 0 0 0 0 1 1 0 0
+D R D R D R D R D R
+R G R G R G R G R G
+3 4 1 2 5 6 7 8 9 0
+3 3 3 3 3 3 3 3 3 4
+1 1 1 1 1 1 1 1 1 1
+W W W W W W W W W W
+- - - - - - - - - -
+S U :G N D
+=2+P C M -C O N T R O L-U N IT/3.8
+2
+3
+1
+=3+PC M -C O O LIN G -U N IT/2.1
+V D
+=3+PC M -C O O LIN G -U N IT/2.1 4
+N
+2
+Lei 23.01.2003 C A L05-1113 A L L T E C G m b H G A nlage
+A n d e r T ra ve 2 7 -3 1 A L - 6 7 8 1 3
+O rt P C M -S U P P LY -U N IT
+2 3 9 2 3 S e lm s d o rf G e rm a n y
+Tel.:+49(0)3882355-225
+PE rCs.Md. - S U P P L Y U N I T D N 1 0 / 5 30/1A0
+1
+3 M M
+1
+D D D -M 1 -M 2
+V V V
+N N N
+4 4 4 F A N 1 F A N 2
+2 G 2 G 2 G
+R F : 2 4 V R F : G N D 2 4 V : : G N D R e s e r v e : : : :
+3 3 1 1 2 2
+-X 1 0 3
+0 0 0 0 0 0
+16 17 2021
+1 1 1 1 1 1
+A A A A A A
+6 6 1 1 3 3
+. . . . . .
+5 5 4 4 5 5
+/ / / / / /
+-X 1 0 0 -X 1 0 0
+A 2
+-K 1 0 0
+A 1
+H a lb le ite rre la is
+
+9
+16.09.2005 1
+K och
+B latt-N r. 2
+Ä nderuDnagtum N orm U rspr. E rs.für B lvon A nz
+9
+8
+7
+6
+5
+4
+3
+2
+D atum 1
+B earb.
+G epr.
+Z ustand N am e
+0
+8
+F A R B E N /C O L O R S
+B K = s c h w a r z / b l a c k
+B N = b r a u n / b r o w n
+R D = r o t / r e d
+O G = o r a n g e / o r a n g e
+Y E = g e l b / y e l l o w
+G N = g r ü n / g r e e n
+B U = b l a u / b l u e
+V T = v i o l e t t / v i o l e t
+G Y = g r a u / g r e y
+W H = w e i ß / w h i t e
+P K = r o s a / p i n k
+G D = g o l d / g o l d
+T Q = t ü r k i s / t u r q u o i s e
+S R = s i l b e r / s i l v e r
+G N Y E = g r ü n - g e l b / g r e e n - y e l l o w
+P E :L A S E R H E A D
+7
+C O N T R O L U N IT :P E
+=2+P C M -C O N TR O L-U N IT/2.1
+6
+C O N T R O L U N IT :N
+=2+P C M -C O N TR O L-U N IT/2.1
+C O N T R O L U N IT :L 2
+=2+P C M -C O N TR O L-U N IT/2.1
+5
+C O O L IN G U N IT :P E
+4
+C O O L IN G U N IT :N
+3
+C O O L IN G U N IT :L 1
+2
+8 14
+P E :C I
+7 13
+-W 1 2 3 G N Y E 1 .5 m m ²
+1
+1
+0 A
+1 5
+-X 1 0 3 12
+F 1
+- 6
+² ²
+m m
+m m
+5 5
+. .
+2 2
+K U
+B B
+9 2
+0 1
+1 1
+W W
+- - -W 1 2 2 B U 1 .5 m m ²
+-X 1 0 3
+1
+4
+0
+1
+5 6
+0 0
+1 1
+²
+11
+m
+² ² 5
+² ² ² ²
+m
+0
+m m m m m m
+0
+.
+m m m m m m
+4
+0 0 0 0 0 0
+. . . . E . .
+4 4 4 4 1 1
+Y
+K K K U N K U
+B B B B G B B
+4 5 6 7 8 5 6
+0 0 0 0 0 6 6
+1 1 1 1 1 1 1
+²
+² ²
+W W W W W W W
+m
+- - - - - - -
+m m
+m
+² ² ²
+m m
+5
+m m m .
+5 5
+. . 2
+m m m
+2 2
+5 6 E
+5 5 5
+0 0 . . E . E
+Y
+1 1 2 1
+2 Y Y
+N
+K U N U N
+G
+²
+-Q 1 0 1 B B G B G
+1 3 5 7
+4
+m
+M A I0N S W IT C H
+6 7 8 0 5 7
+1
+m
+1 1 1 2 2 2
+-W 1 1 3 B K 2 .5 m m ² 7
+2 4 6 8 1 1 1 1 1 1
+0
+6 .
+1 W W W W W W
+1
+-W 1 0 2 G N Y E 2 .5 m m ²
+- - - - - -
+W E
+-
+Y
+=3+P C M -C O O LO IN G -U N IT/2.1
+N
+E NIL =3+P C M -C O O LO IN G -U N IT/2.1
+G
+=3+P C M -C O O LO IN G -U N IT/2.1
+1
+-W 1 2 1 B K 1 .5 m m ²
+L
+:
+7
+0
+1 E E
+=4+M A R K IN G -U N IT/2.8
+A N P N P
+/ : : : :
+=5+P C M -C U S TO M ER -IN TE R FA C E /3.1
+6 6 6 7 7
+F r o n t 0 0 0 0 0
+1 1 1 1 1
+A A A A A
+N CN C 1
+0 N L 1 P E
+1 -X 1 0 3
+N
+2 3 4 9 10 1 1 1 1 1
+W . . . . .
+- 4 4 4 4 4
+/ / / / /
+K
+B
+P E
+U
+E
+B
+Y
+N
+G
+-Z 1 0 1
+F IL T E R
+L1 N PE
+-X 1 0 2
+S O C K E T
+-W 1 0 3 Lei 17.09.2001 C A L05-1113 A L L T E C G m b H A nlage
+G N Y EF 2il.t5emrms²h e e t A n d e r T ra ve 2 7 -3 1 A L - 6 7 8 1 3
+O rt P C M -S U P P LY -U N IT
+2 3 9 2 3 S e lm s d o rf G e rm a n y
+Tel.:+49(0)3882355-225
+P C M - S U P P L Y U N I T D N 1 0 / 5 0 A
+E rs.d. 2/10
+C o o lin g p la t e
+P C M H o u s in g
+L1
+-X 1 0 1
+1 / N / P E 2 3 0 V 5 0 H z
+
+9
+16.09.2005 0
+Lei
+B latt-N r. 1
+Ä nderuDnagtum N orm U rspr. E rs.für B lvon A nz
+9
+8
+7
+6
+5
+4
+3
+2
+D atum 1
+B earb.
+G epr.
+Z ustand N am e
+0
+8
+7
+6
+5
+4
+3
+2
+1
+0
+LeCi 0A6L.0015-.21010153 A L L T E C G m b H A nlage
+A n d e r T ra ve 2 7 -3 1 A L - 6 7 8 1 3
+O rt
+2 3 9 2 3 S e lm s d o rf G e rm a n y
+Tel.:+49(0)3882355-225
+E rs.d. C O V E R P A G E 1/10
+W i r i n g d i a g r a m m
+A L L P R I N T P C M - U m b a u s a t z H a l b l e i t e r r e l a i s D N - A
+A r t . - N r . : A L - 6 7 8 1 3
+I n d e x : C I n d e x : C
+D a t u m : 1 6 . 0 9 D . a2 t0 u 0 m 5 : 1 6 . 0 9 . 2 0 0 5
+A l l t e c G m b H
+A n d e r T r a v e 2 7 -A 3n 1 d e r T r a v e 2 7 - 3 1
+2 3 9 2 3 S e l m s d o r 2f 3 9 2 3 S e l m s d o r f
+N u r f ü r i n t e r n e n G e b r a u c h !
+O n l y f o r i n O t ne lr yn af ol ru is ne t! e r n a l u s e !

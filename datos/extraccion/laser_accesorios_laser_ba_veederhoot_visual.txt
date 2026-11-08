@@ -1,0 +1,149 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\BA_VeederHoot.pdf
+# cifrado=False bloques=5 caracteres=6799
+
+AplicaçõesAplicações
+BA - ENCODER INCREMENTALBA - ENCODER INCREMENTAL
+ Shaft Encoder para Uso Industrial
+ Diversos Diâmetros de Eixo
+ Proteção Contra Sobre Tensão e Curto-Circuito
+ Freqüência até 100 kHz
+ Disco Inquebrável
+ Diversas Proporções
+MecânicaMecânica AmbientalAmbiental
+Caixa Zamak PesoTemperatura de Operação0,800 kg0ºC a 50ºC
+Eixo Mancal Aço Inoxidável2 rolamentos (6001ZZ) Temp. de Armazenamento0ºC a 70ºC
+Máquinas OperatrizesSistemas de Impressão Torque Inicial Momento de Inércia 0,9 n.cm100 gcm UmidadeProteção até 98% sem condensaçãoIP54 sem selo no eixo e IP55 com
+Velocidade do Eixo 6000 rpm selo de proteção no eixo e conexão elétrica com prensa cabo
+Tolerância do Eixoh6
+VE
+Sistemas de Corte AutomáticoPontes Rolantes EVE
+DEE
+RDE
+RR
+OOR
+TOO
+T
+Máquinas de EmbalagemPosicionamento
+ElétricaElétrica
+Como EspeciÞ car
+Incremental1 até 2500 pulsos por volta Código do SinalResolução
+Dois canais em quadratura (AB) com sinal de referência (Z) e sinais complementares opcionais FormatoDefasagem
+Sinal B adiantado em relação a A com o eixo virando no sentido horário (olhando para o centro do eixo)
+90º +/- 18º elétrico180º +/- 10º elétrico Defasagem da QuadraturaSimetria
+180º +/- 18º elétrico (sem forma deOnda quadrada com bordas de descida e subida menor que 1 microsegundo (T+, T-)Þ nida) Sinal de Referência (Z,Z)Formato do Sinal
+5 Vcc consumo máximo até 90 mA e 10 Vcc a 30 Vcc máximo consumo de 120 mA, não in-cluindo as cargas na saída Alimentação/Consumo
+Push-PullDiferencial (Line Driver): 20 mA : 40 mA Carga Máxima na Saída
+100 kHz max para versão Line Driver e 50 kHz para versão push-pullInversão de polaridade para as versões 10 Vcc a 30 Vcc, curto-circuito entre as saídas, curto-Resposta de FreqüênciaProteção Elétrica
+circuito entre alimentação para todas as versões1500 Vef por 1 segundo Isolamento
+ Este catálogo está sujeito a alterações sem prévio aviso. (05/2007)
+ PUSH-PULL: LINE DRIVER: (CMOS - TTL)
+T+ 200 ns T+ 100 ns
+A T- 200 ns T- 100 ns
+AB
+OB
+O
+T+ T-
+Rua Ado Benatti, 92  Lapa  05037-904  São Paulo - SPTel: 55 (11) 3879-6600 / Fax: 55 (11) 3611-1982
+www.veeder.com.br  dicinfo.icg@veeder.com
+ffolheto BA 2007.indd 1olhetoBA2007.indd1 227/4/2007 11:15:217/4/200711:15:21
+
+COMO ESPECIFICAR
+BA X XX X - XXXX
+Diâmetro do Eixo e FlangeDiâmetro do Eixo e Flange Conexão ElétricaConexão Elétrica Conexão ElétricaConexão Elétrica
+Código Diâmetro Tipo de ß ange Código Características
+ A 6 mm I B 6 mm com selo I 1 Prensa Cabo (2 metros de Cabo) - Radial 2 Conector Redondo 5 Pinos - Radial
+ 1 10 mm sem selo I 2 12 mm sem selo I 3 Conector Redondo 8 Pinos - Radial 5 Prensa Cabo (2 metros de Cabo) - Axial
+ 3 10 mm com selo I 6 Conector Redondo 5 Pinos - Axial 7 Conector Redondo 8 Pinos - Axial
+ 4 12 mm com selo I Outros Comprimentos de Cabo Disponíveis
+ C 6 mm II D 6 mm com selo II
+ 5 10 mm sem selo II 6 12 mm sem selo II
+ 7 10 mm com selo II 8 12 mm com selo II
+ 9 6 mm III
+Pulsos Pulsos por Rotação (PPR)por Rotação (PPR)
+00010002 00120013 00450050 01000120 02400250 03850400 08000900 15001800
+00030004 00200024 00600064 01300150 02540287 04500480 09601000 20002048
+00050006 00250030 00700080 01520180 03000320 05000565 10241200 2500
+00080010 00360040 00900095 01920200 03600378 06000720 12501440
+Código de SaídaCódigo de Saída
+CódigoTipo de ConexãoPinagemCor do FioFunção
+1- Saída Radial (lateral) Cabo 8 vias MarromLaranja Saída sinal ASaída sinal B
+5- Saída Axial (traseiro) AmareloVermelho Saída sinal ZAlimentação +V
+PretoVerde Comum Aterramento
+Marrom/BrancoLaranja/Branco Saída sinal ASaída sinal B
+Amarelo/Branco Saída sinal Z
+2- Saída Radial6- Saída AxialConector 5 pinos ComumAlimentação + V Pino 1Pino 2
+Saída sinal ASaída sinal B Pino 3Pino 4
+Saída sinal Z Pino 5
+3- Saída Radial7- Saída AxialConector 8 pinos ComumAlimentação + VPino 1Pino 2
+Saída sinal ASaída sinal BPino 3Pino 4
+Saída sinal ASaída sinal BPino 5Pino 6
+Saída sinal ZSaída sinal ZPino 7Pino 8
+CONFIGURAÇÃO DO SINAL CONFIGURAÇÃO DO CIRCUITO
+A DimensionalDimensional
+BO
+AB
+AO
+A
+CONFIGURAÇÃO DA SAÍDA PUSH-PULL
+01 02 Bidirecional c/03 Unidirecional c/16 Alimentação 10 Vcc a 30 Vcc
+UnidirecionalBidirecionalsinal de referênciasinal de referência Saída Push Pull 10 Vcc a 30 Vcc
+CONFIGURAÇÃO DA SAÍDA LINE DRIVER
+04 05 Bidirecional c/ 06 Unidirecional c/17 Alimentação 10 Vcc a 30 Vcc
+UnidirecionalBidirecionalsinal de referênciasinal de referência Saída CMOS 9 Vcc a 12 Vcc
+07 08 Bidirecional c/09 Unidirecional c/18 Alimentação 5 Vcc
+UnidirecionalBidirecionalsinal de referênciasinal de referência Saída TTL 5 Vcc
+CONFIGURAÇÃO DA SAÍDA LINE DRIVER COMPLEMENTAR
+10 11 Birecional c/12 Unidirecional c/20 Alimentação 10 Vcc a 30 Vcc
+UnidirecionalBidirecionalsinal de referênciasinal de referência Saída Line Driver 9 Vcc a 12 Vcc
+13 14 Bidirecional c/15 Unidirecional c/21 Alimentação 5 Vcc
+UnidirecionalBidirecionalsinal de referênciasinal de referência Saída Line Driver 5 Vcc
+31 32 Bidirecional c/33 Unidirecional c/34 Alimentação 10 Vcc a 30 Vcc
+UnidirecionalBidirecionalsinal de referênciasinal de referência Saída Line Driver 10 Vcc a 30 Vcc
+A
+BO
+A
+B A
+O
+A
+ TIPO DE FLANGE I
+ TIPO DE FLANGE II
+ TIPO DE FLANGE III
+A
+AA
+AB O
+B O
+OO
+AA
+AA
+BB
+ffolheto BA 2007.indd 2olhetoBA2007.indd2 227/4/2007 11:15:227/4/200711:15:22
+
+MAQ$Q6n`d'@_ofmbAtOo{~alySnwJs]P28>>@BT@?>=<;:9876543210/.-,+*
+[&XK|8[7?jW>L|?@4I
+
+MAQ$Q6n`d'@_ofmbAtOo{~alySnwJs]P28>>@BT@?>=<;:9876543210/.-,+*
+
+ub7vzewEp,x:^Fy^Lz;6,|D*~T
+008D>WEgKuS^h|qxwt}pnkihfeeeeeeeeeee//*"$!# -55I<ZCiLuUa{jvqrwo|ljhfecbbbbbbbbbbb-
+@u*=}+:-8.6/40312212121212121212yog"`,Z4T<OCJIGOCU@[>a;f9m6t 4}!1#/$-%,&+&*'
+#
+I'C'?&;$8"5"2"0".","*"
+H'R&]$j#y"! zj]S J D >:7420.,*
+@
+&$" $,4=GR_niZNE= 61-
+g'w&&%%%&m^RH@:620..-,,+*
+.6?ITapcUI@82-
+*+----$...:.H-X-j-,+*
+'&&%%$$$$~~pcWLB8/*
+6COZdmu}&%&'%!-<I U!_"h"p#x###$$$$%%&&&&&&&&
+F'Q&^%n$##""#$weVKB:50-,+*
+!%'!-28?FMV`l{{l^OB61,'# !&,17>FOYft./3,7-80764?1K/X,f*t
+q5l?hHdPaW]^ZfWnTwQ N#K%I&H'G'G$H"I JJJJn{upm#i0e;aE]MZTWTcQkNtKHE C!B"A"A BBCCCCuyjec`+]6Y@VISQPYM`JiGrD}B?=<;;;;<<<<|}qdZWU#S0P;MDKMHUE]Ce@o>z;97655444444thPIHF'E3C=AG?P=X:a8k6w420/..-,,,,,vj^RG=876'534=3G1Q0[.e,q*
+cr4`r=^rE[qMYqTWp[TpcRokPotMnKnInGmFnEnFmFmGmGlGlGl_iqw{|{uxkwewax_x$]y0Zy:XyBVxJSxQQwXOw`LvhJvrHu}EuCuBu@u@u@t@tAsAsAsAsdnv|re]YW U+S6Q>OFMNKUI]FfD~pB~{?~=}<}:}:~:|:{:{:z:z:zit|{n`UPNM&K0I:HBFJDRBZ@c=m;x97543333333pzuhZOGDCA*@4?==E;M:V8_6i4u20.-,,+++++xzmaUI?976"4,352>1G0P.Z-d+q
+IK0GK8FL?ELFDLNCMVBM_@Mj?Mv=N<N;N9O9O9O9N9N9M:MNV[_aax^iX_VTRLOIOGPEP%CP-BP5AQ<@QD?QL>RT<R];Rg:Rs8S7S5S4S3T3S4S4R4R4RRZ`dfetcf^\QXGUBU@U?V!=V*<V2;V9:WA9WI8WQ7XZ5Xe4Xq2X1X/Y.Y-Y-Y.X.W.W.VW_eij|jqhceXbM_C]<[:87&5].4]63]>2]F1^N0^W/^b-^n,_}*_
+"+5@NnxjOB6
+/F'0O%0[$1h#1w"2!23333 3!2CIMO|PsOhLFRCI??;66.2+2
++.*5
+|'r%i"_WNF?841.,*
+]$TKC;4-
+?cwbg6?^9<L#o}HodQWHt8Z#,}U9""|W0Lr6K>/Z$^w%j}[+L<0-a''U'%v]J<2-,09GjK/og4<;1oBPi7/"y4Ftjc

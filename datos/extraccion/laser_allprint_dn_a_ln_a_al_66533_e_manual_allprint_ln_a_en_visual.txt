@@ -1,0 +1,3408 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\AL-66533-E Manual ALLPRINT LN-A EN.pdf
+# cifrado=False bloques=171 caracteres=172269
+
+Operating Instructions
+ALLPRINT LN-A
+Keep for future use!Strictly follow the safety instructions!
+CE
+• Date: July 2008 • Part No.: AL-66533 • Index: E
+
+Table of Contents
+1 Safety Instructions.......................................................9
+1.1 Symbols Used............................................................1.2 Laser Classes........................................9..............................................................10
+1.3 Intended Use........................................................1.4 Maintenance and Servic..........................11e...............................................................12
+1.5 Safety Devices and Warning Lights...............1.6 Dangers to Eyes and Sk................................13in..............................................................14
+1.7 Adjustment/Modification of the Marking Fiel1.8 Fire and Explosion Hazd................................15ard.............................................................15
+1.9 Electrical Safety.......................................1.10 Decomposition Produc......................................16ts..............................................................16
+1.11 Warning and Information Labels..................................................17
+2 Installation.................................................................21
+2.1 Transport and Storage.............................2.2 Unpacking....................................................................21........................................................22
+2.3 Installation Conditions..............................2.4 Specification of Cooling ......................................22Water.......................................................23
+2.4.1 Definitions.............................................................2.4.2 Properties of the C............................ooling Circuit.........................23......................................................23
+2.5 Installation and Start-up.................................2.6 Draining of the Laser Sy................................24stem.........................................................25
+2.7 Exhaust Unit.........................................................2.8 Interfaces of the ALLPRINT..........................29 Laser System....................................29
+2.9 Hardware and Software Requirements................2.10 Installation of the Smar..........................30t Graph Software.....................................30
+3 The ALLPRINT Laser System...................................31
+3.1 Functioning of the ALLPRINT Laser System.3.2 The Laser Beam Source..................................31..............................................................32
+3.3 The Marking Head................................................3.4 The Marking of the Produc..........................32t Surface..............................................33
+3.5 The Laser Parameters.........................................3.6 The Structure of the ALLPRI..........................33NT Laser System..............................34
+3.6.1 PCM - Power Control Module...............................3.6.2 Marking Unit.................................................................35.........................................................................36
+3.7 Cooling.......................................................................3.8 Data and Signal Processi....................37ng...........................................................38
+3.9 Technical Data...............................................................................39
+1
+
+Table of Contents
+3.10 Working Distance and Marking Field...........................................41
+4 Operation...................................................................43
+4.1 Marking with the PCM....................................................................43
+4.1.1 Control Elements.............................................4.1.2 States of the A.................................LLPRINT Laser System................43.....................................................45
+4.1.3 Switch-On/Off of the PCM.............................................................................46
+4.2 Operation via Touch Screen..........................................................47
+4.2.1 Status.............................................................4.2.2 Messages...............................................................................48......................................................................48
+4.2.3 Marking.................................................................4.2.4 System.........................................................................49.........................................................................49
+4.2.4.1 Contrast...............................................................................................................4.2.4.2 Service................................................................................................................49 .50
+5 Maintenance..............................................................53
+5.1 General Notes Concerning Maintenance.......5.2 Maintenance Plan............................................53..............................................................54
+5.3 Bleeding of the Laser System..............................5.4 Exchange of the Lamp...............................55..............................................................57
+5.4.1 Disassembly of the Pump Chamber and Remo5.4.2 Mounting of tval of the Lamp...he Lamp.................................58..................................................................60
+5.4.3 Mounting of the Pump Chamber...................................................................60
+5.5 Cleaning of the Protective Glass of the Flat Field Lens.................61
+5.5.1 Disassembly of the Flat Field Lens................5.5.2 Cleaning the Protective Glas...............................................61s.......................................................................62
+5.5.3 Mounting of the Flat Field Lens.....................................................................62
+5.6 Exchange of Cooling Water and Filters..........5.7 Protocols for Maintenance, Re................................63pair and Replacement....................69
+6 Malfunctions and Error Messages.............................79
+6.1 Notes..........................................................................6.2 Warning Messages..............................79..............................................................80
+6.3 Error Messages..............................................................................91
+7 Appendix.................................................................129
+7.1 Accessories..................................................................................129
+7.1.1 Maintenance Kit..........................................................................................131
+7.2 Assignment of the Customer Interface.........................................132
+7.2.1 Interlock..............................................................7.2.2 CI-CAN-IO....................................................................132.......................................................................132
+7.2.3 Optional: Modules for External Template Selection............7.2.4 CI-FAST-IN..................................................136.......................................................................140
+7.2.5 Serial Interface............................................................................................142
+2
+
+Table of Contents
+7.2.6 Network Interface................................................7.2.7 Wiring Example 1:............................ Control via PLC...................142......................................................143
+7.2.8 Wiring Example 2: Direct Connection (MOTF - mark on the fly).................144
+7.3 Declaration of Conformity...............................7.4 Drawings........................................................145............................................................146
+7.5 Safety Data Sheets......................................................................149
+7.5.1 Amberlite.....................................................................................................150
+7.6 Service Request Form.................................................................151
+3
+
+Table of Contents
+4
+
+Preface
+This manual...
+...contains all information required for the safe operation, remedy of minor malfunctions andmaintenance of the laser system. The operation manual is always enclosed to every laser sys-
+tem.
+This operation manual is intended for the trained operation and service personnelser system. of the la-
+This operation manual is subject to technical modifications for improvement or technical prog-ress without notice.
+Before starting your work carefully read the chapter "Safety Instructions"!
+NoteThe printed safety instructions must be stored near the laser system, easilyaccessible for the operator.
+Make sure that you have understood all notes. In case of any questions please contactALLTEC GmbH directly.
+Strictly follow the instructions!
+If you need help...
+...please contact the service hotline of ALLTEfrom Monday to Friday from 06:00 to 18:00 andC in Selmsdorf, Germany. We are obtainable on Saturdays from 08:00 to 14:00 under the
+following number:
+If for any reason it is impossible to connect you directly with our service technician, you are au-tomatically connected to our answer-phone. Please provide the following information:
+Your name
+Name of your company
+Your phone number!
+The reason for your call.
+We will return your call latest on the following work day.
+In the chapter "Appendix" you will find the request needed please fill in the form and fax it to:form for service support and spare parts. If
+For an immediate and effective processing of your request, please fill in completely!the form precisely and
++49-(0)38823-55-360
++49-(0)38823-55-301
+07/08 - Rev. E 5
+
+Preface
+Caution Laser Radiation!
+Caution!
+With open delivery systemdangerous laser radiation
+class 4 might be released!
+This might cause severe burns of the eyes
+and the skin as well as damage to objects!
+Thoroughly read this operation manualand strictly follow the safety instructions!
+6 07/08 - Rev. E
+
+Preface
+Contents
+1Safety Instructions
+2Installation
+3The ALLPRINT Laser System
+4Operating the ALLPRINT Laser System
+5Maintenance
+6Malfunctions and Error Messages
+7Appendix
+The Smart Graph Software
+Spare Parts List
+07/08 - Rev. E 7
+
+Preface
+8 07/08 - Rev. E
+
+Chapter 1Safety Instructions
+1 Safety Instructions
+1.1 Symbols Used
+Dangerrefers to an immediately impending danger. If the danger is not avoided, itcould result in death or severe (crippling) injury.
+Warningrefers to a possibly dangerous situation. If it is not avoided, it could result indeath or severe injury.
+Carefulrefers to a possibly dangerous situation. If it is not avoided, it could result inslight or minor injury. May also be used to warn of damage to property.
+Cautionrefers to a possibly harmful situation. If it is not avoided, damage could becaused to the product or to something in its environment.
+Importantrefers to handling tips and other particulsignify a dangerous or harmful situation.arly useful information. This does not
+Laserradiationrefers to the emission of laser radiation and therefore to a possibly danger-ous situation. Please comply exactly with the safety instructions! Failure to
+comply with the instructions could result in minor or major injuries to the eyesor to the skin, together with damage to property.
+Note:
+Registered trademarks, patterns, designs and patental. This does not mean that they are out of copyrights or that they may be used freely.s are not indicated explicitly in this manu-
+07/08 - Rev. E 9
+
+Safety InstructionsChapter 1
+1.2 Laser ClassesThe Complete ALLPRINT Laser System
+The laser itself is classified as class 4 laser system. Up to the beam outlet thesystem acts as a class 1 laser system closed in lasernormal operation
+1
+.
+If the beam outlet including the object to be marked is shielded appropriately, theclosed laser system acts as a class 1 laser system complete, in normal operation
+1
+protection is required for operation. The shielding prevents emerging of laser radiation or laser and no additional
+beam reflexes.
+NoteThe shielding is not included in the scope of delivery!
+LaserradiationCaution!
+As soon as the closed shielding or the housing of the laser are opened any-where the complete laser system is set to class 4!
+In that case appropriate measures have to be taken in order to protect peo-ple working in the laser area against too high radiation!
+LaserradiationCaution with modifications!
+EN 60825, part 1, »Radiation safety of laser systems«, section 4.1.1 says:
+If a modification by the user to a laser system previously classified in accor-dance with this standard leads to a change of its performance data and/or its
+intended use that person or organization performing the modification isresponsible for a new classification and labeling of the laser system.
+ImportantThe optional pilot laser is a class 1 laser source when installed. The laserradiation is not harmful.
+However, avoid exposure of the eyes and do not look directly into the laserbeam!
+The Laser Source
+The Nd:YAG laser - hereinafter called laser - is operated in pulsed or continuous wave opera-tion respectively. The laser itself is classified as class 4. It produces invisible, infrared radiation
+which is extremely dangerous for the eye and dangerous for the skin.
+In pulsed operating mode the pulse frequency operating mode and pulse frequency depends on adjusts between 10 Hz and 65 kHz. The actualthe application. The average power density
+can reach up to 11,9W/mm
+2 2
+. The energy density can reach up to 1.7J/mm (at 3 kHz).
+1.Normal operation does not include service, maintenance nor repairs.
+10 07/08 - Rev. E
+
+Chapter 1Safety Instructions
+1.3 Intended Use
+The ALLPRINT Laser System must only be used for the treatment of material surfacesThe surfaces are locally heated by intensive clas.s 4 laser radiation and are modified thereby.
+These systems are mainly applied for marking of serial numbers, etc.).product surfaces (expiry dates, batch printing,
+The radiation produced by the ALLPRINT Laser System is of high energy and therefore im-proper use represents a danger to persons or objects!
+LaserradiationNever expose human beings or animals to laser radiation! This might result in severe burns of eyes or skin.
+Never expose flammable materials to laser radiation! Always ensure appropriate shielding of the laser beam! Errors during
+marking on flammable materials (e.g. able safety measures by installing e.g.paper) might cause fires. Take suit- smoke or fire detectors, or similar!
+Never expose reflecting surfaces to laser radiation! The reflected laser beam may cause the same dangers - in individual cas-
+es even greater dangers - as the original laser beam.
+Never expose unknown materials to laser radiation! Some materials (e.g. polyethylene, polypropylene, glass) are easily pene-
+trated by the laser beam, although they seem to be opaque for the human eye.
+Danger of explosion! Make sure that the laser area is free of explosive materials or vapors!
+For safety reasons arbitrary modifications or changes to the laser system are forbidden!
+If a modification made by the user to a previously classileads to a change of its performance data and/or its intended use that per-fied laser system
+son or organization performing the modification is responsible for a new classification and labeling of the laser system. The person or organization
+is then regarded as »manufacturer«.
+The laser system must be operated with open laser and/or open beam delivery system by specially trained personnel only!
+Make sure that the laser protection rules are always observed!
+07/08 - Rev. E 11
+
+Safety InstructionsChapter 1
+1.4 Maintenance and Service
+The maintenance tasks described hereinafter are to be carried out by sonnel. The service tasks are exclusively to be specially trained per-carried out by service personnel of ALLTEC
+GmbH or one of their representatives. During these works the laser system has to be operatedin class 4. The Unfallverhütungsvorschrift (Accident Prevention Regulations) 46.0 »Laser Ra-
+diation« (BGV B2) says that the responsible tradesponsible for occupational safety (Trade Supervis cooperative association and the authority re-ory Office) have to be given notice of class
+3B or 4 laser systems before initial operation.
+ImportantWe urgently recommend:
+Give notice of the laser system to the responsible trade cooperative asso-ciation and the Trade Supervisory Office before initial operation.
+Have a person responsible for the safety of the laser system trained as la-ser safety officer and inform the trade cooperative association in writing
+about this person.
+Note:In order to facilitate safe performance of all necessary maintenance tasks without assistance
+and to ensure highest safety for the operating and maintenance personnel Messrs. ALLTECoffer special training seminars.
+Training for technicians:The trainee gains the knowledge required to perform all maintenance tasks at the laser sys-
+tem safely and professionally without assistance.
+Combined training:In addition to the knowledge gained during the training for technicians the person is trained
+as laser safety officer. This training is accepted by the trade cooperative association (see above).
+Ask for free information material!
+Please be aware that (in Germany) the personnel ed according to §12 of the Health and Safety at Work Act and §4 BGV A1 (Prevention Princi-operating the laser system must be instruct-
+ples) at least once a year.
+12 07/08 - Rev. E
+
+Chapter 1Safety Instructions
+1.5 Safety Devices and Warning Lights
+The complete laser system includes various safety devices and warning lights which shall pre-vent damages to people or objects. There must not be any alterations to safety devices nor
+warning lamps (see section "Laser Classes")!
+Safety Devices
+Warning Lights
+Key-operated switchprevents operation of the laser system by unauthorized people.Make sure that the key is withdrawn and available to authorized
+personnel only!
+Beam shutteris located within the laser head. When the beam shutter is closedthere is no emission of laser radiation.
+Interlock switch(es)opens the safety circuit. The markately. If several interlock switcing process is stopped immedi-hes are connected: Laser radiation
+cannot be emitted if at least one interlock switch is opened.
+Interlock switches can safeguard safety doors, protective covers,etc. Number and position of the interlock switches are system-spe-
+cific.
+For the marking process all interlock switches must be closed.
+Red light"Marking Head"The red LED on the marking head is on during the marking pro-cess and when the shutter is open.
+Red light"PCM"The red LED on the PCM is on during the marking process andwhen the shutter is open.
+07/08 - Rev. E 13
+
+Safety InstructionsChapter 1
+1.6 Dangers to Eyes and Skin
+The ALLPRINT Laser System produces class 4 visible for the human eye. Therefore eyes and skin are endangered through high-energy laserlaser radiation. Infrared laser radiation is not
+radiation.
+High irradiation causes an extreme local heatingsubject to special risks. High ra and burning of the tissue. The eyes arediation intensity causes a local heating and burning of the cor-
+nea and thus a reduction or loss of sight.
+Suitable safety goggles provide protection against tered laser radiation.direct, specularly reflected or diffusely scat-
+Suitable safety goggles:
+are designed for the narrow wavelength rangeCareful with confusions! of the YAG laser (wavelength = 1,064 nm).
+Safety goggles for other lasers, e.g. CO
+People staying in the area of the lasersafety goggles must wear against laser radiation while carrying out suitable
+maintenance, adjustment or service work at the open laserhousing and/or open beam delivery system!
+Never look directly into the laser beam!
+ laser, do not provide adequate protection againstradiation of a YAG laser!
+are designed for the power range of the YAG laser:
+2 LN100Amax. 150 W
+are designed for pulse and continuous wave operation.PRINTLaser System adjusts between 10 Hz and 65 kHz, depending on the application. The pulse frequency of the ALL-
+The skin can withstand higher radiation intensities than the eye. However - depending on theradiation period and radiation intensity - the tissue is destroyed through burns. Therefore pro-
+tect your skin by wearing adequate protective clothing!the laser radiation! Avoid the laser beam to get in contact with your clothing! Avoid any exposure of your skin to
+For the use of the optional pilot laser no additionlooking directly into the laser beam!al protective measures are necessary. Avoid
+14 07/08 - Rev. E
+
+Chapter 1Safety Instructions
+1.7 Adjustment/Modification of the Marking Field
+Via the software the marking field of the laser can be modified in such a way that the laser beamcan possibly be directed to the shielding or onto other components or parts. Thus, surfaces ex-
+posed to irradiation can be damaged or destroyed.
+A password is required for changing the marking field (if the password tivated in the software). The password can be changed subsequently by a user authorized forprotection has been ac-
+the corresponding user level.
+We explicitly point out that the person who will fulfil a modification of the marking field,will assume the full responsibility for any consequential damages and problems!
+LaserradiationIf, as a result of the modification, the laser beam gets accessible the com-plete laser system is set to class 4 (see section "Laser Classes" on page10).
+CautionFire and explosion hazard if there aratmospheres within the area of the laser beam.e flammable materials or explosive
+LaserradiationThe high output power of a class 4 laser can inflame various materials.Therefore, while performing maintenance and service work at the open la-
+ser housing and/or open beam delivery system, make sure that fire protec-tion measures were taken before starting the works!
+Paper (circuit diagrams, leaflets, posterare not impregnated fire retardently, wooden boards or similar flammables on the walls, etc.), curtains which
+materials can easily be inflamed by direct or reflected laser radiation.
+Make sure that the working area of the laser system is ers with flammable or explosive solvents or cleaning agents!free from contain- Unin-
+tended exposure of a container to intensive invisible laser radiation mighteasily cause fires or explosions.
+1.8 Fire and Explosion Hazard
+07/08 - Rev. E 15
+
+Safety InstructionsChapter 1
+1.9 Electrical Safety
+The ALLPRINT laser system was designed in accordance with the general rules of technologyincluding regulations EN 61010 »Safety requirements for electrical equipment for measure-
+ment, control and laboratory use« and EN 60825-1 »Safety of laser products«.
+1.10 Decomposition Products
+CautionDuring works at the open laser housing alive components are accessible!
+Make sure that rules and regulations for works on alive components are al-ways observed!
+All works at the open laser housing, especially at electrical components,must only be performed by specially trained personnel!
+CautionWhen treating materials with laser radiduced which are dangerous to health!ation decomposition products are pro-
+Through vaporization of materials fine dust and vapors are produced whichmight include hazardous decomposition products depending on type and
+composition of the respective materials.
+Therefore we highly recommend to instalspective requirements which is equipped l an exhaust unit according to the re-with special dust and activated char-
+coal filters to ensure that the decomposition products are sucked off wherethey are produced.
+Protect yourself and your colleagues against hazardous decompositionproducts!
+An exhaust unit also prevents contamination and gradual destruction of optical elements of thebeam delivery system by dust particles. Messrs. ALLTEC offer different exhaust units as ac-
+cessories.
+16 07/08 - Rev. E
+
+Chapter 1Safety Instructions
+1.11 Warning and Information Labels
+Label/SymbolPosition
+on the sides of the marking head
+on the rear side of the laser head
+on the marking unit, if pilot laser available
+on the ignition module
+Visible and invisiblelaser radiation
+is emitted fromthis aperture
+INVISIBLE LASER RADIATION
+AVOID EYE OR SKIN EXPOSURETO DIRECT OR SCATTERED RADIATION
+LASER CLASS 4
+according to EN 60825-1/06.04MAX: POWER: ___ W
+WAVELENGTH: OPERATING MODE: constant/pulsedλ = 1064 nm
+PILOTLASER
+IF HOUSING IS OPEN:
+LASER RADIATION
+DO NOT STARE INTO THE BEAM
+LASER CLASS 2according EN 60825-1/06.04
+P<1mWλ = 635 nm
+WARNING!
+BEFORE OPENING THE HOUSING:
+DISCONNECT MAINS LINE
+WAIT FOR MINIMUM 6 MINUTES!
+DISCHARGE TIME OF CAPACITORS
+WARNING HIGH VOLTAGE!
+DURING IGNITION:
+U = 25 kV
+MAX
+U AFTER IGNITION:= 200 V
+MAX
+07/08 - Rev. E 17
+
+Safety InstructionsChapter 1
+Label/SymbolPosition
+on the pump chamber
+on the rear of and within the laser head
+on the panel of the supply unit and on therear of the PCM
+on the panel of the supply unit
+CAUTION
+on the panel of the cooling unit
+Danger of splintering whenopening pump chamber or
+replacing high-pressure lamp!Wear protective goggles!
+DANGER
+Invisible laser radiation when open.
+Avoid eye or skin exposure
+to direct or scattered radiation.
+WARNING!
+BEFORE OPENING THE HOUSING:
+DISCONNECT MAINS LINE
+HOUSING MUST BE OPENED BY
+TRAINED PERSONNEL ONLY
+Safety Interlock
+To open the supply unit:loosen screws,
+lift supply unit slightlyand draw it out
+CAUTION!
+DANGER OF TILTING
+DO NOT LOAD FROM ABOVE
+IF MODULE IS PULLED OUT
+PCM UNIT MIGHT TILT FORWARD!
+CAUTION!DANGER OF TILTING
+IF MODULE IS PULLED OUTPCM UNIT MIGHT
+TILT FORWARD!
+18 07/08 - Rev. E
+
+Chapter 1Safety Instructions
+Label/SymbolPosition
+on the rear of the PCM, mains connection
+on the rear of the PCM
+on the rear side of the PCM
+ATTENTION
+230 V ONLY!
+m
+GmbH
+An der Trave 27 - 31 D-23923 SelmsdorfModel:
+Serial No.Date:
+VACMade in GermanyØkVAHz
+07/08 - Rev. E 19
+
+Safety InstructionsChapter 1
+20 07/08 - Rev. E
+
+Chapter 2Installation
+2 Installation
+2.1 Transport and Storage
+The ALLPRINT Laser System is a precision-made inic and optical components. Please avoid any mechanical stress (shock, vibrations, etc.) on thestrument and includes numerous electron-
+ALLPRINT Laser System! In case of questions tact us.concerning transport and storage please con-
+AttentionIn not case, the PCM is to be tilted.
+Otherwise water can escape from the water tank!
+AttentionThe PCM must be transported in an upright position and the marking unit must be transported only in a horizontal position.
+Please make sure that the supply line connecting marking unit and supply unit is not bent! This might damage optical or electronic elements
+and may set the ALLPRINT Laser System out of operation!
+Before transport switch off the ALLPRINTmains connector and drain the complete laser system (see section Drain- laser system, disconnect the
+ing the Laser System)!
+Make sure that packaging materials are dust and water-proof.
+Make sure that transport is safe from vibrations.
+ImportantThe ALLPRINT Laser System has to be protected against frostmeans that the storage temperature , which must not fall below 0°C. The air hu-
+midity is supposed to be within 10 to 90%.
+Never expose the ALLPRINT Laser Systemdirect sunlight or one of its components ! The storage temperature must not exceed +65°C.to
+Before transporting or storing the laser and the cooling system at temper-atures below + 4 °C make sure that their cooling systems are completely
+emptied. Otherwise the laser or the cooling system might be damaged by frozen cooling water (see section Draining the Laser System)!
+Transport
+Storage
+07/08 - Rev. E 21
+
+Chapter 2Installation
+2.2 Unpacking
+1.Open the packaging and remove the filling material.
+2.Remove the individually packed components.
+3.Check all parts for damage during transport.In case of damage please inform the forwarding agent and Messrs. ALLTEC or their repre-
+sentative immediately in writing. Keep the packaging material and note damages on the in-side and outside.
+4.Transport the ALLPRINTLaser System and the components to the intended place of in-stallation.
+5.Protect the ALLPRINT Laser System and all components stallation.from dust and humidity until in-
+2.3 Installation ConditionsSpace Required
+The standard dimensions of the ALLPRINT Laser System can be found in the drawings in thechapter "Appendix".
+For systems manufactured according to special customer requirements this information can befound in the erection plan or the dimension and data sheets you received upon order handling.
+Connections
+The ALLPRINT Laser System requires mains connection. Information on the connection canbe found in the data sheets you have received upon order handling.
+When installing the mains connection and selecting the place for erecting the System please observe the cable length specified in the data sheets.ALLPRINT Laser
+Ambient Conditions
+Please ensure that the enwrapping cardboard box, the transport pallet and thepackaging material are recycled separately!
+Temperature: 5 - 40°C
+Air humidity: 10 - 90%, non condensing
+22 07/08 - Rev. E
+
+Chapter 2Installation
+2.4 Specification of Cooling Water
+2.4.1 DefinitionsDistilled water (dist. water) contains no salts and has very low conductivity. It is used for the
+laser system.
+According to DIN VDE 0510 the following parameters apply to distilled water:
+Conductivity< 20 µS/cmtyp. 1.8 - 2.2 µS/cm
+pH value5 - 8typ. 6.6 - 7.2
+De-ionized water (DI water) contains nearly no ions. The average conductivity is 0.05 mS/cm.De-ionized water is produced using an anion/cation exchanger.
+2.4.2 Properties of the Cooling CircuitThe cooling circuit of the laser system LN100A is filled with distilled water. The anion/cation ex-
+changer located in a 5" cartridge of the adapter level. In this cooling circuit the distilled watemodule keeps the conductivity on a very lowr receives a subsequent treatment by the exchang-
+er so that we can also call it de-ionized water (DI water).
+The following parameters apply to the water in this cooling circuit:
+Conductivity1 µS/cm (typical)
+Additiveanion/cation exchanger
+These water properties result in special requirements of the materials used in the cooling cir-cuit. In case of any questions please contact us.
+07/08 - Rev. E 23
+
+Chapter 2Installation
+2.5 Installation and Start-up
+Installation and start-up of the ALLPRINT Laser System require profound knowledge and ex-perience. Therefore it should be accomplished by personnel of ALLTEC GmbH or one of their
+representatives only.
+The ALLPRINT Laser System consists of numerouscomponents. To prevent the individual comp electronic, optical and optomechanicalonents from damage during transport please ob-
+serve the following:
+In order to facilitate quick and easy start-up pleasystem can be installed:se prepare the place of erection such that the
+Proceed as described in section "Unpacking".
+Please provide all connections - as described indocuments you received upon order handling - in time. section "Installation Conditions" and in the
+In case of questions please contact Messrs. ALLTEC.
+AttentionThe cooling circuit of the laser (pump chamber, Q-switch) and the coolingunit must be drained completely before transport and storage. Otherwise
+both systems can be damaged due to freezing cooling water.
+NoteThe company operating the laser system is responsible for the safe use ofthe laser system, especially for meeting the local codes and regulations
+regarding the operation of laser systems and their components (beam pro-tection, exhaust system, cooling, etc.).
+ALLTEC GmbH does not accept responsiuse of equipment, incorrect operation or negligence.bility for any damages due to mis-
+24 07/08 - Rev. E
+
+Chapter 2Installation
+2.6 Draining of the Laser SystemWater/Water Cooler with non-DI Chiller or Municipal Water
+The following is required from the accessory kit:
+draining adapter
+connecting piece
+AttentionMake sure that no dirt gets to the connections of the cooling hoses.
+ 2 protection caps
+DangerBefore starting any work the laser system must be dead!
+1.Turn the key switch to position »0«.Remove the key to ensure that the laser system cannot be switched on.
+2.Wait until the message »Key switch open« is displayed on the touch screen.
+3.Switch off main switch.
+4.Disconnect the mains supply.
+5.Switch off the non-DI chiller or close the water taps of the in-house cooling circuit.
+6.Remove the front panel of the PCM housing and take the draining hose out.
+7.Position a drain pan or similar under the draining hose.
+8.Remove the stopper from the draining hose by pressing the guard ring down while pullingout the stopper. Let the water drain completely into the receptacle.
+9.Remove the water connections at the marking unit and connect both hoses to the connectingpiece.
+Make sure that the receptacle does not overflow.
+10.Take the draining adapter and connect it to a gas bottle (nitrogen or helium, max. pressure5bar).
+Blow out the adapter for approx. 10 seconds.
+11.At the water/water cooler: Remove the connection for initial water for the cooling plate (blue)and let the water drain into a receptacle.
+07/08 - Rev. E 25
+
+Chapter 2Installation
+12.At the water/water cooler: Remove the connection for initial water for the marking unit (blue),connect the draining adapter and blow out the cooler for approx. 1 minute.
+13.Open the left filter cup, remove the filter and remount the drained filter cup.
+14.Open the right filter cup, remove the DI resin and remount the filter cup.
+15.Remove the draining adapter and connect the hose to the initial water circuit to protect thesystem from dirt.
+16.Tighten the initial water circuit for the cooling plate (blue).
+17.Connect the draining adapter to the initial water of the marking unit and blow out the markingunit for approx. 2 minutes.
+18.Remove the draining adapter and close the wateprotect the system from dirt.r connections using two protection caps to
+19.Remove the water connection for the external cooling circuit (initial water: white, return water:green).
+20.For draining the non-DI chiller please follow the instructions in the manual of the manufac-turer.
+21.Connect the draining adapter to the return wate(green) and blow out the cooling plate for approx. 30 seconds.r connection of the external cooling circuit
+Connect the hoses to the connecting piece to protect the system from dirt.
+22.Mount the front panel of the PCM housing.
+26 07/08 - Rev. E
+
+Chapter 2Installation
+Adapter Module with DI Chiller
+The following is required from the accessory kit:
+draining adapter
+connecting piece
+AttentionMake sure that no dirt gets to the connections of the cooling hoses.
+ 2 protection caps
+DangerBefore starting any work the laser system must be dead!
+1.Turn the key switch to position »0«.Remove the key to ensure that the laser system cannot be switched on.
+2.Wait until the message »Key switch open« is displayed on the touch screen.
+3.Switch off main switch.
+4.Disconnect the mains supply.
+5.Switch off the DI chiller.
+6.Remove the front panel of the PCM housing.
+7.Remove the connections for initial and return water at the DI chiller and let the water draininto a receptacle.
+8.For draining the DI chiller please follow the instructions in the manual of the manufacturer.
+9.Remove the water connections at the marking unit and connect the hoses to the connectingpiece.
+Make sure that the receptacle does not overflow.
+10.Take the draining adapter and connect it to a gas bottle (nitrogen or helium, max. pressure5bar).
+Blow out the adapter for approx. 10 seconds.
+11.Connect the draining adapter to the initial water hose of the adapter module and blow outthe hose and the adapter module for approx. 1 minute.
+07/08 - Rev. E 27
+
+Chapter 2Installation
+12.Remove the draining adapter and connect the system from dirt.hoses to the connecting piece to protect the
+13.Open the left filter cup, remove the filter and remount the drained filter cup.
+14.Open the right filter cup, remove the DI resin and remount the filter cup.
+15.Connect the draining adapter to the initial water of the marking unit and blow out the markingunit for approx. 2 minutes.
+16.Remove the draining adapter and close the wateprotect the system from dirt.r connections using two protection caps to
+17.Mount the front panel of the PCM housing.
+28 07/08 - Rev. E
+
+Chapter 2Installation
+2.7 Exhaust Unit
+In order to remove marking residues which might be dangerous to health we recommend in-stalling a exhaust unit. The exhaust unit is to be installed such that marking particles are sucked
+off directly at the place of the formation.
+In addition a exhaust unit prevents that dust particles gradually destroy optical components ofthe ALLPRINT Laser System.
+We offer exhaust units as accessories. If a exhausfind further information in the enclosed operation manual of the exhaust unit.t unit is part of the complete delivery please
+2.8 Interfaces of the ALLPRINT Laser System
+Serial InterfaceConnection of a PC and a PLC.
+Interlock CircuitThe interlock circuit is used to safeguard the System. If one of the interlock switches connected to the interlockALLPRINT Laser
+(Label: IL) circuit opens the marking stops immediately. The marking cannot
+be continued until all interlock swbutton is pressed.itches are closed and the START-
+The ALLPRINT Laser System provides +24 V.
+Customer InterfaceThe assignment of the customer interface can be found in the datasheets you received upon order handling.
+(Label: SIG)
+IncrementalEncoderAny incremental encoder can be connected to the incremental-encoder interface. The ALLPRINT Laser System provides +24 V
+(Label: ENC) for the incremental encoder.
+The incremental-encoder interface is not galvanically sepa-rated!
+Trigger InterfaceThe ALLPRINT Laser System has three trigger input ports. Up tothree different sensors (e.g. photoelectric barrier, etc.) can be con-
+(Label: SEN) nected to the ALLPRINT Laser System.
+The trigger input port is supplied with +24 V. ports are not galvanically separated!The trigger input
+Ethernet InterfaceConnection for bidirectional control via Smart Graph software.
+07/08 - Rev. E 29
+
+Chapter 2Installation
+2.9 Hardware and Software Requirements
+To operate the Smart Graph Software properly the following hardware and software require-ments have to be met:
+Microsoft Windows 2000, XP or Vista
+Pentium IV Processor > 2 GHz
+1024 MB RAM
+CD-ROM drive (optional - if Smart Graph software is to be installed from CD-ROM)
+200 MB hard disk memory
+2.10 Installation of the Smart Graph Software
+NoteIf the PC is to be connected directly to the laser system (and not via network)the connection must be made using a crossover ethernet cable. Otherwise
+communication is not possible.
+If a PC is part of the delivery the Smart Graph Software is installed already.
+To install the Smart Graph Software please follow the steps as described below:
+1.Insert the Smart Graph Software CD-ROM into the CD-ROM drive of your PC.
+2.Select »Execute« from the start-menu of your Windows operating system.
+3.Enter CD:\setup.exe in the text field and follow the instructions of the InstallShield wizard(CD is a place holder for the letter of the CD-ROM drive in your PC).
+30 07/08 - Rev. E
+
+Chapter 3The ALLPRINT Laser System
+3 The ALLPRINT Laser System
+3.1 Functioning of the ALLPRINT Laser System
+The Nd:YAG laser working in pulsed or continuousser beam with small diameter. For a bet operation produces an infrared invisible la-ter focusing the laser beam is expanded.
+The expanded laser beam reaches the marking head hitting two movable mirrors. They deflectit such that it passes over the lines of the opened template. The lines are divided into individual
+vectors (x and y coordinates). The result of lining up those vectors is the marking on the prod-uct. The laser beam »writes« onto the product.
+The calculation of vectors and the control of the laser is performed by the Advanced ControllerCard (ACC) in the control unit.
+The deflected laser beam is focussed onto the prodally the marking is produced at the focus of the laser beam.uct surface by a flat field objective. Gener-
+Figure 3-1: Functioning of the ALLPRINT Laser System
+galvo motors
+galvo mirrory-axis
+galvo mirrorx-axis
+flat field objective(system of several lenses)
+product
+07/08 - Rev. E 31
+
+The ALLPRINT Laser SystemChapter 3
+3.2 The Laser Beam Source
+Continuously stimulated, acousto-optically Q-swto 100W in continuous wave operation are used foitched Nd:YAG lasers in a power range of upr light generation. Due to the acousto-optical
+modulator, the so-called quality switch, the laser can be used in pulsed operation enabling laserpulses with a much higher pulse power.
+The generated laser radiation is reflected between two facing mirrors: end mirror and outputcoupler. By means of stimulated emission the laser radiation is amplified. The end mirror re-
+flects 100% of the generated laser radiation. The output coupler does not reflect 100%, it cou-ples part of the laser radiation out for the marking process.
+3.3 The Marking Head
+After the laser beam is expanded by the telescmirrors are located inside the marking head which deflect the laser beam vertically and hori-ope it reaches the marking head. Two movable
+zontally.
+The X and Y axes of the coordinate system of the marking field are defined by the position ofthe marking head. A translation or rotation of the marking head also translates or rotates the
+axes of the coordinate system.
+Figure 3-2: The Coordinate System
++ X
++ Y
+marking field
+32 07/08 - Rev. E
+
+Chapter 3The ALLPRINT Laser System
+3.4 The Marking of the Product Surface
+The marking of the product surface is performed by the effect of intense laser radiation on theproduct material.
+The laser beam is focussed onto the product surface and heats up the topmost layer of the ma-terial, which causes a color change or a vaporization of the topmost dye layer.
+The symbols and characters which shall be marked on the product are subdivided into vectorstrokes (1). Each vector stroke is again subdivided into smaller vectors.
+When the laser beam jumps from one stroke to the next (2) the laser is switched off and theproduct is not marked.
+Figure 3-3: Strokes and Jumps
+3.5 The Laser Parameters
+Parameters are used to adapt the ALLPRINT Laser System to different materials. These pa-rameters have to be determined and adjusted for each application in order to achieve the best
+possible marking quality.
+Determining the correct parameters requires profound knowledge and experience, becausethe parameters highly depend on the application and the material which shall be marked. In
+case of questions please contact our representative.
+The parameters for individual materials are combined in parameter sets. Parameter sets canbe generated and altered either with the Smart Graph Software. For detailed information on the
+parameters please refer to the chapter "Smart Graph Software", section "Template".
+07/08 - Rev. E 33
+
+The ALLPRINT Laser SystemChapter 3
+3.6 The Structure of the ALLPRINT Laser System
+The complete ALLPRINT Laser System consists of the PCM (power control module, 1) and themarking unit (2).
+Figure 3-4: The ALLPRINT Laser System
+2
+1
+34 07/08 - Rev. E
+
+Chapter 3The ALLPRINT Laser System
+3.6.1 PCM - Power Control ModuleThe Power Control Module consists of the following components:
+Control unit (1)Functions:
+activation and operation of the laser system via touch screen
+error diagnosis
+laser control and communication with PC
+24 V power supply for control electronics, deflection system and RF power supply
+Supply unit (2)Functions:
+power supply of the lamp
+control of the Q-switch
+communication with control unit
+monitoring of cooling unit
+distribution of mains voltage supply
+cooling of the PCM
+Cooling unit (3)Functions:
+cooling of the complete laser system
+water treatment (particle filter and DI filter)
+Customer interface (4)Functions:
+communication with PC/Smart Graph software
+external laser control via digital inputs and outputs
+Figure 3-5: The Power Control Module
+4
+1
+2
+3
+07/08 - Rev. E 35
+
+The ALLPRINT Laser SystemChapter 3
+3.6.2 Marking UnitThe marking unit consists of the following components:
+Laser headThe laser head comprises:
+pump chamber with lamp for optical pumping of the Nd:YAG rod
+output coupler and end mirror, forming together the optical resonator
+Q-switch for generating laser pulses and switching the laser beam on and off during the marking process
+mode aperture for limitation of the beam diameter
+beam shutter for safe interruption of the laser beam
+laser beam expander for defined expansion of the laser beam before the deflection system
+LHC board (Laser Head Controller), responsible for interlock monitoring, control of the pilot laser and monitoring of the Q-switch temperature
+optional: pilot laser
+Marking headThe marking head comprises:
+control electronics for galvo motors
+galvo motors with deflection mirrors for defined movement of the laser beam in x and y direction
+flat field lens with protective glass for focusing the laser beam
+Figure 3-6: The Marking Unit
+LHC (Laser Head Controller)
+laser beam expander
+output coupler
+pump chamber
+aperture &safety shutter
+Q-switch
+end mirror
+ignition module
+marking head
+pilot laser, optional
+flat field lens
+laser head
+36 07/08 - Rev. E
+
+Chapter 3The ALLPRINT Laser System
+3.7 Cooling
+Depending on customer requirements the laser can be cooled as follows:
+1. External DI ChillerWith an external DI chiller the cooling water passes two filter cups of the integrated adapter
+module and is lead directly into the laser module. The left filter cups contains a filter (1µm) andthe right filter cup is filled with 400ml resin to reduce the conductivity of the water.
+A flow sensor for monitoring the cooling circuit is integrated into the return circuit.
+2. Internal Water/Water Cooler with external non-DI chiller
+The water/water cooler has two cooling water circuits: one closed laser-iand an open fresh-water circuit.nternal cooling circuit
+Within the laser-internal cooling circuit the water is lead through the components to be cooledand absorbs heat. The heat is transferred to the open fresh-water circuit via a heat exchanger.
+The fresh-water circuit transmits the heat taken from the laser-internal circuit to the non-DI chill-er.
+AttentionThe internal cooling circuit of the laser system must be filled exclusivelywith distilled water!
+ with external cooling circuit (municipal water or in-house cooling circuit)In order to ensure a trouble-free operation when using municipal water or in-house cooling cir-
+cuit, the external water filter (art. no. AL-65905) must be installed in the water feed line. Addi-tionally a common water stop valve should be installed after the water tap. This is a low-cost
+protection against flooding the working area in case of a burst hose.
+Further information about the external chiller can be found in the enclosed manual of the man-ufacturer.
+07/08 - Rev. E 37
+
+The ALLPRINT Laser SystemChapter 3
+3.8 Data and Signal Processing
+The Advanced Controller Card (ACC) is the main circuit board of the laser system. The ACCcommunicates via CAN bus and optical fibre with other boards of the system controlling and
+monitoring components. The ACC contains two processors:
+The PowerPC controls the communication with the PC (trates the application database on the MultiMediaCard (MMC).Smart Graph software) and adminis-
+The Digital Signal Processor (DSP) receives prepared marking data from the PowerPC andtransmits the commands for positioning the galvo mirrors to the FM and for generating the laser
+pulses to the LPC. Thus the DSP is responsible for the actual marking.
+The Laser Power Controller (LPC) and the Laser Head Controllermonitoring the laser power supply, the cooling system and the laser beam source. (LHC) are controlling and
+The Fast Move (FM) board in the marking head of the laser system controls the galvo mirrors.
+The Customer Interface (CI) comprises all interfaces: network (ethernet), serial interface, dig-ital inputs and outputs for system states and commands, digital inputs for connecting trigger
+signals and encoders.
+Figure 3-7: Data and Signal Processing of the ALLPRINT Laser System
+PLC
+EthernetSerial
+Panel-IO Touchpanel
+MMC
+TCP/IP SER1 Touchpanel
+MDB MDB
+PowerPC
+DSP
+CAN
+CI-CAN-IO
+CI-FAST-IN
+Interlock
+Optional
+TriggerEncoder
+ACC-2
+OF OF
+Laser Scanner
+LE-LED
+LE-LED
+FM
+OF CAN
+LPC LHC-YAG
+IL
+OF
+CAN
+Scanner
+Markinghead
+Power
+Diode or lamp
+RF-Driver
+Cooler
+Control-Unit
+Power-Unit
+YAG-Laserhead
+Cooling-Unit
+PCM
+38 07/08 - Rev. E
+
+Chapter 3The ALLPRINT Laser System
+3.9 Technical Data
+Unit LN100A
+Laser typeNd:YAG, continuously pumped,acousto-opticallyQ-switched
+Operating modescontinuous wave (CW)
+pulsed (QS)
+mixed (parameterizable)
+Laser class4
+Pump sourcearc lamp
+Max. laser powerW150
+Max. power consumptionkW7.0
+Power stability+
+5 %
+Power densityW/mm
+2
+11.9
+Energy density at 3 kHzJ/mm
+2
+1.7
+Beam diameter before expandermm1 - 5
+Focus diameterµmup to 10 µm
+Beam quality (M
+2
+) up to 1
+Supply voltageV3/N/PE 400
+Power line frequencyHz50 / 60
+Input fuseA3 x 16
+Ambient temperature°C10 - 40
+Humidity%10 - 90; non condensing
+SealingIP 51
+Weightkg190
+Wavelengthnm1064
+Line widthmm0.01 - 0.8
+Marking speed
+a
+m/s20
+Conveyor speedm/s15
+Q-SwitchkHz0.01 - 65
+Mode aperturemm1 - 5
+07/08 - Rev. E 39
+
+The ALLPRINT Laser SystemChapter 3
+Unit LN100A
+a.Any statements referring to marked characters or actual markings are typical values. These values highly depend on the material and may only be taken as a guideline. These are no
+specifications
+Coolingexternal cooling or WWK
+Controlvia PC and Smart Graph software
+Due to our policy of continuous improvement, tetice.chnical data is subject to change without no-
+40 07/08 - Rev. E
+
+Chapter 3The ALLPRINT Laser System
+3.10 Working Distance and Marking Field
+flat field lens: focal lenght f 100 mm163 mm254 mm420 mm
+working distance116 mm218 mm334 mm538 mm
+reference distance66 mm168 mm284 mm488 mm
+max. area: large axis A of ellipse75,8 mm142.2 mm215.5 mm361.5 mm
+max. area: large axis B of ellipse118.7 mm193.5 mm301.5 mm498.5 mm
+max. area: small side b of rectangle102.4 mm162.8 mm278.2 mm455.4 mm
+max. area: large side a of rectangle53.6 mm107.3 mm152.4 mm255.6 mm
+max. square: marking field102.4 x 53.6 mm
+162.8 x 107.3 mm 278.2 x 152.4 mm 455.4 x 255.6 mm
+2 2 2 2
+reference distanceworking distance
+07/08 - Rev. E 41
+
+The ALLPRINT Laser SystemChapter 3
+42 07/08 - Rev. E
+
+Chapter 4Operation
+4 Operation
+4.1 Marking with the PCM
+4.1.1 Control Elements
+No.TypeFunction
+S1Main switchapplies the mains power and initializes the laser.
+In this state no marking process can be started!
+0 = off
+1 = on L1L2D
+S2Key switchswitches the ALLPRINT laser system to mode "Laser ready"and activates the cooling.
+0 = off S2
+1 = on
+Note: S1
+Remove the key if switched off to protect the system from unau-thorized operation!
+L1LED -white-lights up it the main switch is on.
+07/08 - Rev. E 43
+
+Chapter 4Operation
+No.TypeFunction
+L2LED -red-lights up during the marking process and when the beam shut-ter is open.
+The red LED on the marking head lights up simultaneously.
+DTouch screenfor operating the laser system. A detailed description can befound on the following pages.
+44 07/08 - Rev. E
+
+Chapter 4Operation
+4.1.2 States of the ALLPRINT Laser SystemOn the touch screen below the buttons »Start« and »Stop« the current system state is dis-
+played. There are the following system states:
+System StateDescription
+InitializeThe control components of the laser system are started.
+Key-switch openThe initialization is complete. The system can now be started byclosing the key-switch.
+Laser start-upAfter closing the key-switch the laser and the cooling system areactivated.
+Laser readyThe laser system is ready for marking.
+Prepare for markingAfter pressing »START« the laser requires a preparation time,the length depends on the template contents and the configura-
+tion.
+MarkingThe current marking content is marked onto the product.
+StandbyIf no marking is carried out for some time the laser switches tostandby in order to relieve the system components.
+BleedingRemoval of air bubbles from the cooling water circuit.
+Bleeding is only possible with open key-switch!
+Interlock openThe safety circuit is interrupted (e.g. protective door open). Amarking process is stopped immediately. Marking is only possi-
+ble with closed safety circuit.
+ErrorAn error occurred. To continue operation the error must be con-firmed. Information on the error can be found on page »Mes-
+sages«.
+Fatal errorA fatal error occurred and has deactivated the system. This errorcannot be confirmed and the operation cannot be continued.
+The laser system has to be turned off. Information on the errorcan be found on page »Messages«.
+Service modeThis system state enables service and maintenance work andmust only be used by especially trained personnel.
+07/08 - Rev. E 45
+
+Chapter 4Operation
+4.1.3 Switch-On/Off of the PCM
+Switch-On
+1.Make sure that the safety instructions are observed.
+2.If installed: Switch on the exhaust unit.
+3.Make sure that the key switch is in position »0«. Put main switch (S1) to position »I«. The white LED indicates that the mains power is applied. The system is started, this process
+can take 1 to 2 minutes. The touch screen is in the mode »Status« and displays the template executed last with its
+settings.The system is in state »Key switch open«.
+4.Switch on the key switch.The laser and the cooling system are activated. The system changes from state »Initialize«
+to »Laser ready«.
+5.The red LED indicates the emission of laser radiation. The current template is marked.
+Switch-Off
+NoteIf there is no operation for a longer permatically to state »Standby«.iod of time, the system changes auto-
+1.Stop the marking process. The red LED is switched off.
+2.Turn the key switch to position »0«. The laser and the cooling unit are switched off.
+3.Wait until »Key switch open« is displayed on the touch screen.
+4.Turn the main switch to position »0«. The white LED and the touch screen are switched off.
+5.If installed: Turn off the exhaust unit.
+46 07/08 - Rev. E
+
+Chapter 4Operation
+4.2 Operation via Touch Screen
+The structure of the touch screen display is as follows:
+No.DesignationDescription
+1Button »Start«starts the marking process
+2Beam shutter positionindicates of the shutter position: open/closed
+3Button »Stop«stops the marking process
+4System statedisplays the current system state (see section "States ofthe ALLPRINT Laser System")
+5Display fieldcontents of the current display page
+6Display page selectionselection of the display page:
+Status
+1 2Messages3
+Marking
+System -> Version -> Service
+Shutterclosed
+Start Stop
+4
+Marking
+5
+Template: Alltec
+Parameter: ParameterAlltec
+Product: ProductAlltec
+Connected with: 192.168.1.98
+11. Nov. 2002 11:11
+MessagesStatusMarkingSystem
+6
+07/08 - Rev. E 47
+
+Chapter 4Operation
+4.2.1 Status
+Display of the current template including its elements (parameter set, product registration) andof the network address of the system. Pressing »Start« this template will be marked (if the sys-
+tem is in standby the marking process starts with a delay).
+To select a different template or for editing you have to use the Smart Graph software!
+4.2.2 Messages
+Display of warning and error messages including date, time and error number.
+Messages not confirmed yet are identified by >> at the beginning of the line.
+To leave this display the error messages must be confirmed.
+If you want to delete the messages confirm the current message and press »Delete«. All mes-sages are deleted without safety message.
+Shutterclosed
+Start Stop
+Marking
+Template: Alltec
+Parameter: ParameterAlltec
+Product: ProductAlltec
+Connected with: 192.168.1.98
+11. Nov. 2002 11:11
+MessagesStatusMarkingSystem
+Shutteropen
+Start Stop
+Error
+Confirm Clear
+>> Template does not exist 01.01.2004 10:12:35
+ E10107
+MessagesStatusMarkingSystem
+48 07/08 - Rev. E
+
+Chapter 4Operation
+4.2.3 Marking
+Display of the contents of the current template and, if existing, of the number of variables usedin the template.
+4.2.4 System
+4.2.4.1 ContrastWith the buttons +/- (lighter and darker) you can adjust the contrast of the display. With button
+»Accept« the new setting is saved.
+Shutteropen
+Start Stop
+Marking
+Alltec GmbHSmart marked
+MessagesMarkingStatusSystem
+Shutterclosed
+Start Stop
+Marking
+Contrast Service Operation
++ Info Resume
+- BleedingPause
+AcceptMore ...
+MessagesStatusMarkingSystem
+07/08 - Rev. E 49
+
+Chapter 4Operation
+4.2.4.2 Service
+Info
+Pressing button »Info« all information on the laser system and its components is displayed.
+Under System the serial number of the laser system, the marking head type, the network ad-dress and the software version of the operating system are listed.
+Under Components the article numbers and software versions of all boards and interfaces ofthe system are listed.
+Shutteropen
+Start Stop
+Marking
+System:Serial number: 1000000
+Marking head: ADM-Y10IP: 192.168.1.1
+OS-Version: 1.0.0
+Components:ACC: PN: 64131-B SP: 1.0.0 FPGA: 1.0.0
+ssages MarkingSystem Version
+Bleeding
+Press button »Bleeding« to start the ventilation process. This is only possible if the key switchis open!
+Pressing the button again the ventilation process is stopped.
+50 07/08 - Rev. E
+
+Chapter 4Operation
+More
+Pressing button »More ...« the service address is displaybility to calibrate the touch screen.ed. Additionally you have the possi-
+Pressing button »Calibration« the following display appears:
+Take a pencil and touch the center of each point displayed.
+To check the quality of calibration touch several must be closely together.places on the display. The symbols displayed
+With »Accept« the calibration is saved, with »Canceland with »« you can return to the display »Service«Default« you can reset the calibration to its standard value.
+Shutteropen
+Start Stop
+Marking
+ALLTEC GmbHAn der Trave 27 - 31
+23936 Selmsdorf/Germany
+Tel: +49-(0)38823 55-0Fax: +49-(0)38823 55-222
+Calibration Cancel
+Marking SystemVersion Service
+Touch screen calibrationPlease press
+Default
+Accept Cancel
+07/08 - Rev. E 51
+
+Chapter 4Operation
+52 07/08 - Rev. E
+
+Chapter 5Maintenance
+5 Maintenance
+5.1 General Notes Concerning Maintenance
+Please carry out maintenance works in the stated intervals.
+The ALLPRINT Laser System is designed such that maintenance can be performed safely. Allmaintenance works are described in the following sections.
+CautionNote:
+Maintenance has to be performed by instructed operating and mainte-nance personnel only!
+For reasons of safety make sure that the main key-operated switch is turned to '0', the key is withdrawn and the mains is disconnected!
+Document the regular maintenance in the maintenance protocols in this chapter! Non-conformance with the maintenance plan might result in limi-
+tations of warranty.
+ImportantBefore carrying out the maintenance works at the optics, please note the following:
+Acetone is not included upon delivery and has to be purchased via other companies. Open the following Internet page to order acetone in a quick
+and uncomplicated way: www.vwr.com/index.htm
+When purchasing acetone make sure that you order acetone pro analysi (p.a. = highest purity grade).
+07/08 - Rev. E 53
+
+Chapter 5Maintenance
+5.2 Maintenance Plan
+The ALLPRINT Laser System is designed such that maintenance can be performed safely.
+Please carry out maintenance works in the stated intervals.
+The maintenance intervals are laid out for a use of the mately 10 hours daily and regular dirty work area.ALLPRINT Laser System of approxi-
+If the time of daily use should exceed 10 hours continuously or in case of very dirty ambientconditions please shorten the maintenance intervals accordingly. In case of questions please
+contact Messrs. ALLTEC or one of their representatives.
+Maintenance IntervalsMeasures
+Daily Check the protective glass of the flat field lens at the marking head for dust and dirt and clean the glass if
+necessary.
+Check all hose connections for leakage.
+MonthlyExchange the filter mat of the industrial PC.
+Check the cooling water level and refill cooling water if necessary.If installed: Exchange the filter bag of
+the exhaust unit (see manual of the manufacturer).
+Every three monthsCheck the cooling water, the particle filter and the DI filter. If one component is contaminated, all compo-
+nents must be exchanged!
+Check the prefilter (75µm) for municipal water or house-internal water connection.
+Every six monthsIf installed: Exchange the charcoal filter inside the exhaust unit (see manual of the manufacturer).
+Yearly Exchange the cooling water, the particle filter and the DI filter.
+Exchange the prefilter (75µm) for municipal water or house-internal water connection.
+Note:
+We offer special training seminars for maintenance and service personnel. In case of questionsplease contact ALLTEC GmbH or one of their representatives.
+54 07/08 - Rev. E
+
+Chapter 5Maintenance
+5.3 Bleeding of the Laser System
+AttentionBefore the first start-up of the laser system and after any mainte-nance works on the cooling system the cooling system must be bled
+carefully.The laser cooling circuit must be filled exclusively with distilled wa-
+ter.Make sure that no dirt gets to the connections of the cooling hoses.
+Attention1.Connect the mains connector.
+2.Switch on the main switch.
+3.Wait until the message »Key switch open« is displayed on the touch screen.
+4.The key switch remains in position »0«.Remove the key in order to ensure that the laser system cannot be switched
+on.
+1.Remove the front panel of the PCM housing.
+2.Change the touch screen from display »Status« to display »System«.
+3.Press button »Bleeding« and make sure that no water leaks from the system.
+AttentionIf after 5 seconds no water is pumped into the filter housing press again but-ton »Bleeding« to stop the bleeding process and open the left filter housing
+for a short time.
+ImportantThe following three steps must only be carried out after exchanging thelamp:
+4.After 60seconds press again button »Bleeding« to stop the bleeding pro-cess.
+5.Clean the sieve in the return water circuit of the marking unit and replaceit if necessary.
+6.Press button »Bleeding«.
+7.Check the water level in the expansion tank of the cooling system. Before the water levelsinks below the minimum press »Bleeding« to stop the bleeding process and refill the water
+up to the maximum.
+8.Repeat step 7. until the water level does not sink below the maximum.
+9.Let the circulating pump run until there are no air bubbles in the left filter housing (for approx.60 seconds).
+07/08 - Rev. E 55
+
+Chapter 5Maintenance
+AttentionThere must be no air bubbles in the filter element before starting thelaser system!
+10.Mount the front panel of the PCM housing.
+56 07/08 - Rev. E
+
+Chapter 5Maintenance
+5.4 Exchange of the Lamp
+The exchange of the lamp is necessary
+if the lamp has burst.- error message in the software (current error/burst lamp/flow too low) This is indicated by:
+- no ignition- water leakage in the laser head
+after certain intervals/wear.- 700 to 1,000 operating hours This is indicated by:
+- bad ignition- decreasing laser power
+The following is required
+of the accessory kit:screwdriver
+hex keys 3mm and 4mm
+of the maintenance kit:protective gloves
+Danger of splintering!
+Lamp is under high pressure!
+Due to the danger of splintering you have to wear safetygoggles during all works with opened pump chamber or
+handling the lamp.
+07/08 - Rev. E 57
+
+Chapter 5Maintenance
+5.4.1 Disassembly of the Pump Chamber and Removal of the Lamp
+DangerBefore starting any work the laser system must be dead!
+1.Turn the key switch to position »0«.Remove the key to ensure that the laser system cannot be switched on.
+2.Wait for the message »Key switch open« to be displayed on the touchscreen.
+3.Switch off the main switch.
+4.Disconnect the mains connector.
+5.Wait for 6 minutes for the ignition mocharged!dule contacts to be completely dis-
+1.Open the housing cover of the laser head.
+2.If cooling water has leaked into the laser head let the laser head dry and remove the splinters.Make sure that all beam protection tubes are inserted. If this is not the case please contact us.
+3.Remove both lamp connections from the ignition module and remove the cables from thecable holders on the upper part of the pump chamber.
+4.Loosen first the ventilating screw and then both lochamber.cking screws in order to ventilate the pump
+5.Carefully lift the upper part of the pump chamber putting your fingers below the part so thatthe reflector ceramic cannot fall out. Place the upper part of the pump chamber up-side-down
+onto a clean surface.
+ImportantThe marking unit must be placed above the level of the cooling unit!
+6.Remove the lamp splinters from the filter glass in the lower part of the pump chamber.
+7.Check whether the filter glass is broken and replace it if necessary.
+ventilating screw
+locking screws
+58 07/08 - Rev. E
+
+Chapter 5Maintenance
+8.Remove the splinters from the water channels in the lower part of the pump chamber.
+9.Open the water connection of the return water circuit and remove the splinters from the sieve.Connect the hose to the return water circuit.
+10.Remove both holders of the arc lamp in the upper part of the pump chamber by removingthe four screws.
+11.Both ends of the lamp are sealed with silicone o-rings. If they are burnt into the lamp surfaceremove the o-rings using forceps.
+12.Check the state of the lamp.
+The lamp is intactPush the lamp slowly and carefully with your thumb from one side into the pump chamber until
+you can grab it with your fingers and pull it out at the other side. Make sure that the lamp does not get wedged (danger of breaking!).
+The lamp has burstPull out the cables on both sides and remove the splinters from the reflector ceramic.
+ImportantWater deposits on the lamp that can and acetone indicate contaminated cooling water.easily be removed using a cotton plug
+In this case exchange the particle filter, the DI resin and the cooling water.
+07/08 - Rev. E 59
+
+Chapter 5Maintenance
+5.4.2 Mounting of the Lamp
+ImportantWear protective gloves during the complete mounting of the lamp!Touch the lamp only at the metal connections.
+Before mounting check the quartz casiger prints or similar). If necessary, ng for possible contaminations (fin-clean it using optics paper and some
+drops of acetone from the maintenance kit.
+1.Observe the correct mounting position.The anode (+) has a red cable, the cathode (-) a black cable.
+The polarity is labeled on top of the upper part of the pump chamber.
+2.Push the lamp carefully and straight from the side into the lamp housing. Make sure thatthe lamp does not get wedged (danger of breaking!).
+3.Position the lamp in the lamp housing so that the length of the quartz casing is completelywithin the area of the reflector ceramic (symmetric mounting position).
+4.Put two new silicone o-rings onto the lamp ends.
+5.Pull a cable through each arc lamp holder and mount the holder.
+6.Tighten the screws carefully and evenly by hand. Make sure that the silicone o-rings stayin the correct mounting position.
+5.4.3 Mounting of the Pump Chamber1.Hold the reflector ceramic in the lamp housing with your fingers.
+2.Turn the upper part of the pump chamber and place it carefully onto the lower part of thepump chamber.
+Make sure that the UV protection glass in the rod housing is not damaged.
+3.Tighten all three screws of the upper part of the pump chamber.
+4.Mount the lamp connections to the terminals of the ignition module.Observe the correct polarity: red cable to (+) and black cable to (-).
+Incorrect polarity causes lamp failure after a short operating time!
+5.Lay the connecting cables in an arc and clamp of the pump chamber.each into a cable holder on the upper part
+ImportantMake sure that the cables do not touch the dust protection flange.
+ImportantThe lamp generates a lot of radiant heaoperation without cooling can result in a burst lamp. After opening the pumpt during operation. Even a short-time
+chamber there is air in the cooling circuit. Before the lamp can be switchedon this air must be removed by bleeding the system (see section "Bleeding
+of the Laser System" in this chapter).
+60 07/08 - Rev. E
+
+Chapter 5Maintenance
+5.5 Cleaning of the Protective Glass of the Flat Field Lens
+The laser system has been designed in such a way dust and dirt, except for the flat field lens whicthat to a great extent it is protected againsth focuses the laser beam onto the product. As its
+outer optical surface it has a flat, anti-reflex coated surface of a parallel plate, called protectiveglass. During the interaction of the laser beam with the product surface, dust an vapors are pro-
+duced which might contaminate the lens.
+Using a suitable exhaust unit these contaminations can be reduced but they cannot be avoidedcompletely. Therefore check the protective glass every day (visual inspection). If any contam-
+ination is found proceed as follows:
+For cleaning the protective glass of the flat field lens the following is required:
+acetone
+of the maintenance kit:
+optics cleaning paper
+protective gloves
+ImportantWear protective gloves during the complete procedure!
+5.5.1 Disassembly of the Flat Field Lens
+DangerBefore starting any work the laser system must be dead!
+1.Turn the key switch to position »0«.Remove the key to ensure that the laser system cannot be switched on.
+2.Wait for the message »Key switch open« to be displayed on the touchscreen.
+3.Switch off the main switch.
+4.Disconnect the mains connector.
+5.Firmly grip the flat field lens with both hands and turn it carefully until it is released from thethread.
+Do not touch the lens surface with your fingers!
+ImportantThe fine thread requires several turns before the scan lens is released. Makesure that you are holding the lens firmly with both hands.
+6.Remove the flat field lens from the marking head.
+07/08 - Rev. E 61
+
+Chapter 5Maintenance
+5.5.2 Cleaning the Protective Glass1.Hold the flat field lens in horizontal position with the protective glass facing upwards onto a
+clean surface. Fold a sheet of optics cleaning paper (at least 5 times) creating a flat cushion.
+2.Hold the optics cleaning paper between thumb etone onto the optics cleaning paper.and index finger and put some drops of ac-
+3.Carefully and slowly pull the optics cleaning paper across the surface to be cleaned. Make sure that you do not touch the surface with the gloves.
+Apply only very light pressure onto the paper!
+4.If necessary repeat the procedure with a new sheet of optics cleaning paper.
+ImportantNever use polishing agents! Polishing agents destroy the flat field lens!
+Never use contaminated optics cleaning paper.Make sure that the optics cleaning paper is stored in a clean place.
+5.Check the surface of the lens side located in the marking head for contclean it as described above.amination. If necessary,
+If the lens cannot be cleaned or the surface of the protective glass is severely scratched: Fit anew protective glass.
+5.5.3 Mounting of the Flat Field Lens1.Position the thread of the flat field lens straight onto the laser beam outlet of the marking
+head.
+2.Carefully screw in the flat field lens until the fine thread has caught and tighten it by handonly. Do not use any tools!
+If the fine thread jams during screwing proceed as follows:
+3.Place the flat field lens straight onto the laser beam outlet and turn it in the wrong directionuntil you hear the clear click as the first thread engages.
+4.The screw in the flat field lens slowly and straight in the right direction, handtight.
+62 07/08 - Rev. E
+
+Chapter 5Maintenance
+5.6 Exchange of CoolWater/Water Cooler with non-DIing Water and Filters Chiller or Municipal Water
+AttentionBefore the first start-up of the laser system and after any mainte-nance works on the cooling system the cooling system must be bled
+carefully.The laser cooling circuit must be filled exclusively with distilled water
+without any additives.Make sure that no dirt gets to the connections of the cooling hoses.
+The following is required:
+filter key (located on the bottom plate of the PCM housing)
+of the accessory kit:funnel
+draining adapter
+connecting piece
+sieve
+of the maintenance kit:filter cartridge
+DI resin
+DangerBefore starting any work the laser system must be dead!
+1.Turn the key switch to position »0«.Remove the key to ensure that the laser system cannot be switched on.
+2.Wait for the message »Key switch open« to be displayed on the touchscreen.
+3.Switch off the main switch.
+4.Disconnect the mains connector.
+5.Remove the front panel and take out the draining hose of the cooling unit.
+6.Position a drain pan or similar under the drain hose.
+7.Remove the stopper from the draining hose and from the fill pipe by pressing the guard ringdown while pulling out the stopper. Let the water drain completely into the receptacle.
+07/08 - Rev. E 63
+
+Chapter 5Maintenance
+8.Remove the water connections at the marking unit and connect both hoses to the connectingpiece.
+Make sure that the receptacle does not overflow.
+ImportantClean and, if necessary, exchange the sieve in the return water circuit of themarking unit.
+9.Take the draining adapter and connect it to a gas bottle (nitrogen or helium, max. pressure5bar).
+Blow out the adapter for approx. 10 seconds.
+10.At the cooler: Remove the connection for initial water for the cooling plate (blue) and let thewater drain into a receptacle.
+11.At the cooler: Remove the connection for initial water for the marking unit (blue), connectthe draining adapter to the hose and blow out the cooling unit for approx. 1 minute.
+12.Open the left filter cup using the filter key. Drain and clean the cup, exchange the filter andremount the filter cup.
+13.Open the right filter cup using the filter key and remove the DI resin.
+14.Fill the cup with 400ml DI resin.
+ImportantMake sure that no resin gets on the sealing.
+Pull the pressure plate down to the white filter to make contact between pressure plate and resin.
+15.Mount the right filter cup using the filter key.
+16.Remove the draining adapter and connect the hose to the initial water of the water/watercooler (blue) to protect the system from dirt.
+17.Mount the initial water connection for the cooling plate (blue).
+18.Connect the draining adapter to the initial water of the marking unit and blow out the markingunit for approx. 30 seconds.
+19.Close the draining hose with the stopper.
+connecting piece
+64 07/08 - Rev. E
+
+Chapter 5Maintenance
+20.Connect the funnel to the fill pipe and fill the tank up to the maximum with distilled water.
+21. Remove the connecting piece from the hosObserve the color-code of the hoses (initial water: blue, return water: red)!es and connect them to the marking unit.
+ImportantAfter exchanging water and filters the laser system must be bled (seesection "Bleeding of the Laser System" in this chapter).
+22.Close the fill pipe with the stopper.
+23.Mount the front panel of the PCM housing.
+07/08 - Rev. E 65
+
+Chapter 5Maintenance
+Adapter Module with DI Chiller
+AttentionBefore the first start-up of the laser system and after any mainte-nance works on the cooling system the cooling system must be bled
+carefully.The laser cooling circuit must be filled exclusively with distilled water
+without any additives.Make sure that no dirt gets to the connections of the cooling hoses.
+The following is required:
+filter key (located on the bottom plate of the PCM housing)
+of the accessory kit:funnel
+draining adapter
+connecting piece
+sieve
+of the maintenance kit:filter cartridge
+DI resin
+DangerBefore starting any work the laser system must be dead!
+1.Turn the key switch to position »0«.Remove the key to ensure that the laser system cannot be switched on.
+2.Wait for the message »Key switch open« to be displayed on the touchscreen.
+3.Switch off the main switch.
+4.Disconnect the mains connector.
+5.Switch off the DI chiller.
+6.Remove the front panel of the PCM housing.
+7.Remove the initial and return water connections at the DI chiller and let the water drain intoa receptacle.
+8.For draining the DI chiller please follow the instructions in the manual of the manufacturer.
+66 07/08 - Rev. E
+
+Chapter 5Maintenance
+9.Remove the water connections at the marking unit and connect both hoses to the connectingpiece.
+Make sure that the receptacle does not overflow.
+ImportantClean and, if necessary, exchange the sieve in the return water circuit of themarking unit.
+10.Take the draining adapter and connect it to a gas bottle (nitrogen or helium, max. pressure5bar).
+Blow out the adapter for approx. 10 seconds.
+11.Connect the draining adapter to the initial water of the adapter module (blue) and blow outthe hose and the adapter module for approx. 1 minute.
+12.Remove the draining adapter and connect the system from dirt.hoses to the connecting piece to protect the
+13.Open the left filter cup using the filter key. Drain and clean the cup, exchange the filter andremount the filter cup.
+14.Open the right filter cup using the filter key and remove the DI resin.
+15.Fill the cup with 400ml DI resin.
+ImportantMake sure that no resin gets on the sealing.
+Pull the pressure plate down to the white filter to make contact between pressure plate and resin.
+16.Mount the right filter cup using the filter key.
+17.Connect the draining adapter to the initial water of the marking unit and blow out the markingunit for approx. 30 seconds.
+18.Remove the connecting piece and connect the initial and return water circuit of the adaptermodule to the DI chiller.
+19.For filling the DI chiller please follow the instructions of the manufacturer.
+20.Remove the connecting piece from the cooling hoses and connect them to the marking unit.Observe the color-code of the hoses (initial water: blue, return water: red)!
+connecting piece
+07/08 - Rev. E 67
+
+Chapter 5Maintenance
+21. Switch on the main switch of the DI chiller.
+ImportantAfter exchanging water and filters the laser system must be bled (seesection "Bleeding of the Laser System" in this chapter).
+22.Mount the front panel of the PCM housing.
+68 07/08 - Rev. E
+
+Chapter 5Maintenance
+5.7 Protocols for Maintenance, Repair and Replacement
+It is strongly recommended that accurate recordment procedures.s are kept of maintenance, repair and replace-
+On the following pages you will find forms to recan be made and used to keep an ongoing record of the procedures recommended throughoutcord all maintenance tasks specified. Copies
+the life of the ALLPRINT Laser System.
+You will also find forms to record the repairs and replacements. The records will provide a use-ful tool in anticipating future maintenance requirements and in determining cost of ownership
+of the ALLPRINT Laser System.
+07/08 - Rev. E 69
+
+Chapter 5Maintenance
+Inspection and Cleaning of the Protective Glass of the Flat Field Lens
+Maintenance Interval: Daily
+Carried out on:Carried out by:
+Date Name
+70 07/08 - Rev. E
+
+Chapter 5Maintenance
+Exchange of the Filter Bag of the Exhaust Unit
+(if installed)
+Maintenance Interval: Monthly or when control lamp lights up
+Carried out on:Carried out by:
+Date Name
+07/08 - Rev. E 71
+
+Chapter 5Maintenance
+Visual Inspection and Refilling of Cooling System
+Maintenance Interval: Monthly
+Carried out on:Carried out by:
+Date Name
+72 07/08 - Rev. E
+
+Chapter 5Maintenance
+Inspection of Cooling Water, Particle Filter, DI Filter and Prefilter (75 µm)
+Maintenance Interval: All three months
+Carried out on:Carried out by:
+Date Name
+07/08 - Rev. E 73
+
+Chapter 5Maintenance
+Exchange of Charcoal Filter within the Exhaust Unit
+(if installed)
+Maintenance Interval: Every six months
+Carried out on:Carried out by:
+Date Name
+74 07/08 - Rev. E
+
+Chapter 5Maintenance
+Exchange of Cooling Water, Particle Filter, DI Filter and Prefilter (75 µm)
+Maintenance Interval: Every year
+Carried out on:Carried out by:
+Date Name
+07/08 - Rev. E 75
+
+Chapter 5Maintenance
+Exchange of the Lamp
+Maintenance Interval: After 700 to 1,000 operating hours
+Carried out on:Carried out by:
+Date Name
+76 07/08 - Rev. E
+
+Chapter 5Maintenance
+Update of the Smart Graph Software
+Carried out on:Carried out by:
+Date Name
+07/08 - Rev. E 77
+
+Chapter 5Maintenance
+Repair and Replacement Protocol
+Laser Model:Serial Number:
+Date: Repair or ReplacementComments
+(faults, etc.)
+Carried out by:
+Date: Repair or ReplacementComments
+(faults, etc.)
+Carried out by:
+Date: Repair or ReplacementComments
+(faults, etc.)
+Carried out by:
+Date: Repair or ReplacementComments
+(faults, etc.)
+Carried out by:
+78 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+6 Malfunctions and Error Messages
+6.1 Notes
+In this chapter you will find a description of possible malfunctions, tsuitable measures for troubleshooting. In additionheir possible causes and this chapter contains a description of all mes-
+sages of the laser system and suitable measmust be performed by instructed operation and maintenance personnel only.ures for troubleshooting. The measures stated
+ImportantTasks for troubleshooting going beyond the ones mentioned here must beperformed by specially trained personnel only! Strictly follow the safety
+instructions!
+07/08 - Rev. E 79
+
+Malfunctions and Error MessagesChapter 6
+6.2 Warning Messages
+W00001: Parts of the marking are beyond the marking field.
+Possible cause(s):Parts of the marking are beyond the user-defined marking field.
+Possible effect(s):Incomplete marking.
+Remedy:Reduce size of marking.
+Expand marking field to maximum size.
+Select objective with higher focal length and thus increase the max. possible marking field.
+W00002: Incomplete marking, product movement too fast.
+Possible cause(s):Parts of the marking contents cannot be marked since the product was not in the marking field.
+Usually the reason is that the marking is not executed fast enough. It is also possible that thestart delay has been set too short causing the marking to be started too late. The start delay
+must be set so that in the moment of triggering no part of the marking is yet within the markingfield.
+Possible effect(s):Incomplete marking. This applies to all individual markings for which this message is displayed.
+Remedy:Increase distance of start delay. Usually this requires the sensors to be adjusted.
+Optimize parameters so that the marking can be executed faster.
+Reduce size of marking so that it can be executed faster.
+Select speed-optimized font.
+If possible, increase marking field by selecting a different objective.
+W00003: AOS does not send data after trigger (>10ms).
+Possible cause(s):After the trigger it took more than 10 ms before the AOS sent marking data.
+Possible effect(s):Faulty marking.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+W00004: Delayed data from the AOS.
+Possible cause(s):During the marking process it took more than 500 µs before the AOS sent new data.
+80 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+If the AOS does not sent the data as fast as theymarking. This causes the laser to be switched are marked artificial pauses are added to theoff even within an vector stroke and switched on
+again as soon as data are available. For this process Laser-On-Delay and Laser-Off-Delay areused.
+Possible effect(s):There might be small burns within vector strokes of the marking.
+Remedy:Increase the values of the start delay or trigger delay. Thus more data can be processed before
+the marking execution is started.
+W00005: Trigger lost.
+Possible cause(s):Trigger queue overflow, a new trigger had to be rejected.
+That means that the trigger signals are coming in faster than they can be processed. The trig-ger queue is a buffer for trigger signals. If it is full and more signals are coming in this warning
+is displayed.
+Possible effect(s):The product that has released the trigger is not marked. This applies to each product for which
+the message is displayed.
+Remedy:Since the trigger signals are coming faster than they can be processed the marking time has
+to be reduced.
+If the marking time cannot be reduced any more the throughput has to be reduced.
+If you can preclude that there are too many regular trigger signals there might be mistrig-gers. If e.g. the marking takes 50 ms and there is definitely each 100 ms a new product and
+thus a new trigger then the trigger signal is interfered. In this case the blocking should be checked which usually should be 90 % of the minimum time between two trigger signals. In
+the example this would be 90 ms.
+W00006: Incorrect index step selected.
+Possible cause(s):Internal error: A not initialized index step has been selected. The system uses the previously
+selected index step.
+Possible effect(s):Parameters are not used for marking as previously set.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+07/08 - Rev. E 81
+
+Malfunctions and Error MessagesChapter 6
+W09008: Parts of the marking are not withead.hin the marking field of the marking
+Possible cause(s):Parts of the marking are outside the ellipse representing the maximum marking field of the
+marking head.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Reduce size of marking.
+Select objective with higher focal length.
+Reposition template and make sure all items are within the marking field.
+W09016: Communication error ACC -> FM/MHI: inadmissible command
+Possible cause(s):ACC sent a command to the marking head which is not admitted in the current mode.
+Possible effect(s):Marking possibly incorrect.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+W09017: Communication error ACC -> FM/MHI: unknown command
+Possible cause(s):ACC sent an unknown command to the marking head.
+Possible effect(s):Marking possibly incorrect.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+W09018: Communication error ACC -> FM/MHI: Protocol error
+Possible cause(s):ACC did not keep to protocol.
+Possible effect(s):Marking possibly incorrect.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+82 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+W10410: The parameter set of the active tetem.mplate has been adjusted to the sys-
+Possible cause(s):The parameter set of the active template contains inadmissible settings for the laser. The ap-
+plication database possibly belongs to a different laser system.
+Possible effect(s):The automatic adjustment affects the marking and will be taken over when saving the data-
+base.
+Remedy:When the database has been saved this message will no longer appear.
+Possibly the settings of the concerned parameter set have to be modified manually.
+W10411: External text: <name>: Value can only be marked once.
+Possible cause(s):For an external text the property "Prompt Once (warning)" has been set and it has been tried
+to mark the external text with the same value twice.
+Possible effect(s):Remedy:
+Change the contents of the external text or change the property "Prompt Once (warning)".
+W10503: The database format has changed. Please save system.
+Possible cause(s):An older database has been loaded by a new AOS.
+Possible effect(s):None.
+Remedy:Saving the database it is automatically converted to the new format. Then the warning mes-
+sage will no longer be displayed.After conversion the database cannot be read by an older AOS.
+W10504: Not all previously used templates have been saved.
+Possible cause(s):New templates have been added to the database and selected for marking. Then the system
+has been booted without saving the changed database.
+Possible effect(s):If the template marked last does not exist in the database the first template of the database is
+selected automatically for marking.
+Remedy:Save the database after creating or importing new templates.
+07/08 - Rev. E 83
+
+Malfunctions and Error MessagesChapter 6
+W10505: The template used last was not saved.
+Possible cause(s):A new template has been added to the database and selected for marking. Then the system
+has been booted without saving the changed database.
+Possible effect(s):The template marked last does not exist in the database. The first template of the database is
+selected automatically for marking.
+Remedy:Save the database after creating or importing new templates.
+W10506: Invalid value of absolute operating hours in SRAM.
+Possible cause(s):The battery buffering the SRAM is running down.
+Possible effect(s):The value of the absolute operating hours corresponds to the value of the last system start.
+Remedy:Check battery and replace if necessary.
+W10517: According to the system database there is no marking head connected
+Possible cause(s):The system database contains the entry 'MARKING_HEAD_ATTACHED=0'. Thus the marking
+head is not addressed.
+Possible effect(s):Marking is not possible.
+Remedy:If you want to mark a marking head must be connected and the entry in the system database
+has to be changed to 'MARKING_HEAD_ATTACHED=1group. '. Please contact the technical support
+W10552: AllprintBasic - MsgBox:\n\r <name>
+Possible cause(s):This is a regular message, no error.
+The AllprintBasic command string triggered the output of this message.
+Possible effect(s):None.
+Remedy:None.
+84 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+W10555: The AllprintBasic command "Warning" has been executed.
+Possible cause(s):Depending on the AllprintBasic program.
+Possible effect(s):Depending on the AllprintBasic program.
+Remedy:Depending on the AllprintBasic program.
+W10812: Invalid SmartSP telegram 0x%X
+Possible cause(s):Internal communication error.
+Possible effect(s):Marking is not possible.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+W10904: The customer interface (CI) is not supplied with 24 V by the customer.
+Possible cause(s):The power supply of the customer interface is not available or switched off.
+Possible effect(s):The output signals of the customer interface are invalid.
+Input signals at the customer interface are ignored.
+Remedy:Check if power is supplied between terminals X16.1 and X16.5 of customer interface on ACC
+board.For units equipped with CAN-IO, connect bus terminal KL9110 pin 2 or pin 6 to external 24 V
+and pin3 or pin7 to external GND.
+W10905: The CAN bus detected a not implemented event (<name>).
+Possible cause(s):Depending on the event a function to be implemented in the future has been used (e.g. CI ter-
+minal: reserved).
+Possible effect(s):None.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+W10908: External STOP from the CI.
+Possible cause(s):The STOP input is supplied constantly with 0 V so that the START input is not evaluated.
+07/08 - Rev. E 85
+
+Malfunctions and Error MessagesChapter 6
+Possible effect(s):Marking is not possible.
+Remedy:Connect STOP input to 24 V.
+W10925: The admissible limits for the mtime t=0 (new part) haveaximum current of the pump chamber at been exceeded. (XX mA)
+Possible cause(s):Pump chamber ID board at the LHC is missing or incorrectly programmed.
+Possible effect(s):The aging of the laser is not adapted correctly.
+Remedy:Check connection between LHC and ID board of pump chamber.
+W10930: Connected customer interface is ignored due to a database entry.
+Possible cause(s):A customer interface is connected to the system. However, in the system database
+(CI_CAN_IO) it has been defined that no customer interface is to be used.
+Possible effect(s):The customer interface is ignored completely.
+Remedy:If the system does not require a customer interface it should be removed. If it is required the
+entry CI_CAN_IO of the database has to be set to '1'.
+W19310: Laser cannot connect to ActiveCpected.ontrol with version XX. Version XX ex-
+Possible cause(s):The version of the ActiveControl.dll installed with the Smart Graph cannot be connected to the
+laser.
+Possible effect(s):No connection between Smart Graph and laser.
+Remedy:Use Smart Graph with corresponding ActiveControl.dll or install the software expecting the ver-
+sion of the ActiveControl.dll to the laser.
+W24200: LHC overtemperature XX.XX °C.
+Possible cause(s):The temperature measured on the LHC board exceeded the limit value.
+(This warning is generated every minute as long as the temperature is too high)
+Possible effect(s):Reduced output power.
+86 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+Remedy:Check cooling system.
+W29000: LHC detected communication error.
+Possible cause(s):The LHC received commands containing inadmissible parameters via CAN bus.
+Version conflict between AOS and LHC.
+Possible effect(s):Certain functions of the LHC are not carried out (e.g. pump chamber entries, etc.).
+Remedy:Check versions of LHC and AOS.
+W39007: Internal cooling circuit: Water level too low
+Possible cause(s):Not enough water in the internal cooling circuit
+Incorrect wiring
+Possible effect(s):The cooling system can fail in the near future.
+Remedy:Check cooling water.
+Check wiring.
+W39017: Optical fiber ACC --- LPC: Receiving error
+Possible cause(s):Defective optical fiber connection between ACC and LPC.
+Possible effect(s):Marking is not possible.
+Remedy:Check optical fiber.
+W39019: Internal Cooling Circuit: Tempervalueature during start up above/below limit
+Possible cause(s):1) Temperature out of range
+2) Broken cable of temperature signal3) Defective controller within cooling device
+Possible effect(s):Laser cannot be started (power supply does not start).
+07/08 - Rev. E 87
+
+Malfunctions and Error MessagesChapter 6
+Remedy:1) Wait; if the error condition is remedied within a certain time (minute range), i.e. the cooling
+water temperature is within limits, the system starts.
+W55000: Defective customer interface (CI): The arrangemhas been changed.ent of the bus terminals
+Possible cause(s):The hardware configuration of the CI has been changed. (Beckhoff error)
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check the bus terminals of the customer interface.
+W55001: Defective customer interface (CI): Incompatible bus terminal.
+Possible cause(s):The bus terminal used is not supported. (Beckhoff error)
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check the bus terminals of the customer interface.
+W55002: Defective customer interface (CI): EEPROM error
+Possible cause(s):An error occurred while saving the configuration to the EEPROM. (Beckhoff error)
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check the bus terminals of the customer interface.
+W55003: Defective customer interface (CI): Connection nals.error between bus termi-
+Possible cause(s):There has been a communication error between the Beckhoff terminals. (Terminal ERROR)
+(Beckhoff error)
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check the bus terminals of the customer interface.
+88 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+W55004: Customer interface (CI): Unknown error (XX, XX)
+Possible cause(s):The bus coupler of the customer interface (CI) has sent an undocumented error.
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check the bus terminals of the customer interface.
+W58100: Customer interface (CI): CAN bus warning limit exceeded
+Possible cause(s):The bus coupler of the customer interface received too many error frames successively.
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check bus terminals of the customer interface.
+Check wiring of CAN bus.
+W58101: Customer interface (CI): CAN bus OFF
+Possible cause(s):The CAN bus has not been connected correctly to the bus coupler of the customer interface.
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check wiring of the CAN bus.
+W58102: Customer interface (CI): CAN bus transmission buffer overflow
+Possible cause(s):The CAN bus has not been connected correctly to the bus coupler of the customer interface.
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check wiring of the CAN bus.
+W58103: Customer interface (CI): CAN bus receiving buffer overflow
+Possible cause(s):Internal error of bus coupler.
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+07/08 - Rev. E 89
+
+Malfunctions and Error MessagesChapter 6
+Remedy:Exchange bus coupler.
+W58104: Customer interface (CI): CAN bus incorrect PDO length
+Possible cause(s):Internal communication error.
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+W58105: Customer interface (CI): Sync of CAN bus delayed or failed.
+Possible cause(s):The CAN bus has not been connected correctly to the bus coupler of the customer interface.
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check wiring of the CAN bus.
+W58106: Customer interface (CI): Guarding of CAN bus delayed or failed.
+Possible cause(s):The CAN bus has not been connected correctly to the bus coupler of the customer interface.
+Possible effect(s):The inputs and outputs of the customer interface do not work properly.
+Remedy:Check wiring of CAN bus.
+90 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+6.3 Error Messages
+E00100: Critical error SP.
+Possible cause(s):Fatal internal error: A not initialized interrupt has been called or similar.
+Possible effect(s):The system is stopped and must be switched off.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+E00101: Stack error SP.
+Possible cause(s):Fatal internal error: Stack overflow.
+Possible effect(s):The system is stopped and must be switched off.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+E00102: SP received unknown command from AOS.
+Possible cause(s):Internal communication error on the ACC. In most cases this error indicates a version conflict.
+Possible effect(s):Possibly incorrect markings.
+Remedy:Check versions, use new MMC if necessary.
+E00103: Timing error SP.
+Possible cause(s):Fatal internal error: Internal timing was not met.
+Possible effect(s):Possibly incorrect marking.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+E00104: AOS sends repeatedly data with delay
+Possible cause(s):During one marking the AOS needed more than 20 times more than 500 µs to send new data.
+The marking is aborted.See also warning W00004.
+07/08 - Rev. E 91
+
+Malfunctions and Error MessagesChapter 6
+Possible effect(s):Marking not possible.
+Remedy:Change the parameters so that the marking is carried out slower.
+E00105: Marking aborted, product movement too fast.
+Possible cause(s):The marking has been aborted because more than 50 vectors cannot be marked since the
+product has already left the marking field.Usually this is caused by too slow marking.
+It is also possible that the start distance is too small and the marking is started too late. Thestart distance should always be long enough so that no part of the marking is in the marking
+field at the trigger moment.See also W00002.
+Possible effect(s):The marking is not complete. The system is stopped.
+Remedy:Enlarge the start distance correspondingly, usually by moving the sensors.
+Optimize the parameters so that the marking can be carried out faster.
+Reduce marking so that it can be marked faster.
+Select a font which has been speed optimized.
+Enlarge the marking field by using a different objective if possible.
+E00205: Internal cooling circuit: Flow too low
+Possible cause(s):Problems within the cooling circuit of the system.
+Faulty coolant flow switch.
+Possible effect(s):Overheating of the system.
+Remedy:Check coolant level and pump operation.
+Check coolant flow switch and cable.
+Check fuseboard operation, ACC interface and cables to ACC.
+E00206: RF circuit: VSWR fault
+Possible cause(s):Mis-match between RF PSU and laser tube.
+Faulty RF cable or laser tube.
+Faulty RF PSU.
+92 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+Possible effect(s):No or reduced laser tube output.
+Remedy:Check RF cable.
+Check RF PSU operation.
+Check laser tube operation.
+Check ACC interface board operation and cables.
+E00207: RF circuit: Overmodulation
+Possible cause(s):System software error.
+RF PSU faulty.
+Faulty cables between ACC, ACC interface board and RF PSU.
+Possible effect(s):Intermittent tube output.
+Remedy:Check modulation output to RF PSU.
+Check cable between ACC and RF PSU.
+Check RF PSU operation.
+Check ACC interface board operation.
+Check ACC operation.
+E00208: RF circuit: Incorrect RF PSU power
+Possible cause(s):Faulty RF PSU.
+Faulty ACC interface board or faulty cables.
+No jump link on JP1 on ACC interface board.
+Possible effect(s):Low laser tube output.
+Remedy:Check RF PSU operation.
+Check ACC interface board operation.
+E00209: Back reflection
+Possible cause(s):Closed beam path, laser light is reflected back into the laser.
+07/08 - Rev. E 93
+
+Malfunctions and Error MessagesChapter 6
+E09000: Marking head: Temperature of FM/MHI assembly group too high.
+Possible cause(s):The temperature of the FM or MHI board has exceeded the maximum value.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Improve cooling of the marking head, clean cooling fins if necessary.
+Increase distance between markings if possible.
+Check internal fan operation.
+E09001: Marking head: Supply voltage too low.
+Possible cause(s):The supply voltage of the marking head is too low (<16V).
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check voltage supply at the marking head, at the power supply module in the control unit and
+at the marking head connector.
+E09002: Marking head: Overpositioning of X mirror.
+Possible cause(s):Due to an error the X mirror was brought to a position beyond the admitted maximum area.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check X mirror.
+Check wiring in the marking head.
+E09003: Marking head: Overpositioning of Y mirror.
+Possible cause(s):Due to an error the Y mirror was brought to a position beyond the admitted maximum area.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check Y mirror.
+Check wiring in the marking head.
+94 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+E09004: Marking head: Overcurrent X mirror.
+Possible cause(s):The current consumption of the X mirror is too high.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check X mirror.
+Check wiring in the marking head.
+E09005: Marking head: Overcurrent Y mirror.
+Possible cause(s):The current consumption of the Y mirror is too high.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check Y mirror.
+Check wiring in the marking head.
+E09006: Marking head: No X mirror connected.
+Possible cause(s):The X mirror is not connected correctly to the FM/MHI board. A cable might be loose or broken.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check connection between X mirror and FM/MHI board.
+E09007: Marking head: No Y mirror connected.
+Possible cause(s):The Y mirror is not connected correctly to the FM/MHI board. A cable might be loose or broken.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check connection between Y mirror and FM/MHI board.
+E09012: Communication error ACC -> FM/MHI: Gaps in the data flow
+Possible cause(s):Faulty communication between ACC and FM/MHI.
+07/08 - Rev. E 95
+
+Malfunctions and Error MessagesChapter 6
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check connection between ACC and marking head (optical fibre or LVDS connection).
+E09021: Internal error: Cannot set control mode of the FM/MHI.
+Possible cause(s):The FM/MHI cannot change to control mode. This indicates an error in the communication be-
+tween ACC and FM/MHI.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check connection between ACC and marking head.
+E09022: Internal error: Cannot set configuration mode of the FM/MHI.
+Possible cause(s):The FM/MHI cannot change to configuration mode. This indicates an error in the communica-
+tion between ACC and FM/MHI.
+Possible effect(s):Possibly incorrect marking.
+Remedy:Check connection between ACC and marking head or MHI.
+E09023: Internal error: Cannot set download mode of the FM/MHI.
+Possible cause(s):The FM/MHI cannot change to download mode. This indicates an error in the communication
+between ACC and FM/MHI.
+Possible effect(s):Marking is not possible.
+Remedy:Check connection between ACC and marking head or MHI.
+E09100: No communication with marking head.
+Possible cause(s):No marking head connected.
+Faulty power supply of marking head.
+Faulty connection between ACC and FM/MHI.
+Faulty FM/MHI.
+Possible effect(s):Marking not possible.
+96 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+Remedy:Check power supply of marking head.
+Check connection between ACC and marking head or MHI.
+E09101: Internal error: Error status of the FM/MHI cannot be reset.
+Possible cause(s):The error flags on the FM/MHI cannot be reset. This indicates an error in the communication
+between ACC and FM/MHI.
+Possible effect(s):Marking is not possible.
+Remedy:Check connection between ACC and marking head or MHI.
+E09102: Interrupted communication with marking head.
+Possible cause(s):There have been errors on the ACC while receiving data from the FM/MHI.
+Faulty connection between ACC and FM/MHI.
+Faulty FM/MHI.
+Possible effect(s):Marking is not possible.
+Remedy:Check connection between ACC and marking head or MHI.
+E09103: Internal error: FM/MHI not in configuration mode, cannot executed com-mand.
+Possible cause(s):It has been tried to execute a command in the control mode that is only admitted in the config-
+uration mode.
+Possible effect(s):The marking is possibly incorrect.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+E09104: No data received from the marking head.
+Possible cause(s):The ACC receives permanently or temporarily not data from the marking head because
+the connection to the marking head has been separated.
+the power supply of the marking head failed.
+07/08 - Rev. E 97
+
+Malfunctions and Error MessagesChapter 6
+Possible effect(s):Marking is not possible.
+Remedy:Check connection between ACC and marking head or MHI.
+Check power supply of marking head.
+E10001: No data can be read from the system database.
+Possible cause(s):Faulty connection to the EEPROM of the system database.
+Possible effect(s):The system is not operable.
+Remedy:Check whether EEPROM has been inserted correctly.
+Check connection between ACC and Panel-IO.
+Check whether EEPROM of Panel-IO has been inserted correctly.
+E10002: Backup of system database was loaded!
+Possible cause(s):Several entries are missing in the system database. Therefore the backup of the system data-
+base has been loaded.
+Possible effect(s):The backup is generated with every saving process. Maybe the last saving process has been
+interrupted and the backup file is not up-to-date.
+Remedy:Check entries of system database and correct if necessary.
+E10003: Cannot write (all) to the backup of the system database.
+Possible cause(s):Not enough space left on the MultiMediaCard.
+Possible effect(s):In case of an error in the system database the backup file cannot be used. In that case the sys-
+tem is no longer operable.
+Remedy:Check space on MultiMediaCard and reduce application database if necessary. 1024 Bytes are
+required.
+E10004: Cannot write to system database.
+Possible cause(s):Faulty connection to the EEPROM of the system database.
+98 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+Possible effect(s):The new values cannot be applied. A restart of the system might fail. In that case the system
+is no longer operable (see error 0001).
+Remedy:Check the state of the system database and save all data.
+E10005: Cannot read backup of the system database.
+Possible cause(s):The backup has not been generated at the previous start of the system or it has been deleted.
+Possible effect(s):The system cannot be started.
+Remedy:Check contents of the system database and contents and memory space of the MultiMediaC-
+ard.
+E10006: Overflow of system database
+Possible cause(s):By changing or adding an entry to the system database the admissible size has been exceed-
+ed.
+Possible effect(s):Changes are not applied.
+Remedy:Shorten entries of variable length and retry changes.
+The following settings can have an impact:
+SmartGraph, Configuration, - name in the field "Identification"dialog "System Settings"
+- YAG systems: Number of digits after the decimal point for the aging factor
+SmartGraph, Configuration, dialog "Marking head"- Number of digits after the decimal point in the fields Mounting position, Working distance,
+Marking head and Pilot laser
+E10101: Version conflict (command not executed)
+Possible cause(s):An unknown command has been sent to the ACC via the ethernet interface.
+Possible effect(s):The ethernet communication might be disturbed severely, the message appears repeatedly.
+Remedy:If the ethernet communication has been disturbed severely: separate the connection and then
+connect again.
+07/08 - Rev. E 99
+
+Malfunctions and Error MessagesChapter 6
+E10102: Unknown command: <name>
+Possible cause(s):An unknown command has been sent to the ACC via the ethernet interface, the unknown com-
+mand is displayed.
+Possible effect(s):None.
+Remedy:Check program which is sending the command.
+E10103: Key not found in system database
+Possible cause(s):The database entry requested via ethernet does not exist.
+Possible effect(s):None.
+Remedy:Check program which is sending the command.
+E10104: Database write error.
+Possible cause(s):Transmission error while transmitting a database object via ethernet or version conflict be-
+tween database object and AOS.
+Possible effect(s):A database object transmitted via ethernet cannot be inserted into the database.
+Remedy:Repeat transfer; check version.
+E10105: Database read error.
+Possible cause(s):Database entry required for executing a command received via ethernet is missing.
+Possible effect(s):Command is not executed.
+Remedy:Check the database entries.
+E10106: Template contains no data.
+Possible cause(s):Template information has been requested via ethernet. The corresponding template contains
+no data.
+100 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+Possible effect(s):Information is not sent.
+Remedy:Check template and save it.
+E10107: Template does not exist.
+Possible cause(s):Template information has been requested via ethernet. The corresponding template does not
+exist in the application database.
+Possible effect(s):Information is not sent.
+Remedy:Check template and save it.
+E10108: No variables in template.
+Possible cause(s):The variables requested via ethernet do not exist in the template.
+Possible effect(s):Data is not sent.
+Remedy:Check template.
+E10109: Format is invalid.
+Possible cause(s):Via ethernet a command with missing or incorrectly formatted parameters has been sent.
+Possible effect(s):The ethernet communication might be disturbed severely, the message appears repeatedly.
+Remedy:Correct the format of the command.
+E10111: Errors while saving
+Possible cause(s):The MultiMediaCard is full, not inserted correctly or defective.
+Possible effect(s):Data cannot be saved.
+Remedy:Check MultiMediaCard.
+07/08 - Rev. E 101
+
+Malfunctions and Error MessagesChapter 6
+E10113: This database entry cannot be deleted since it. XX other entries depend on
+Possible cause(s):Other database entries depend on this entry.
+Possible effect(s):The entry is not deleted.
+Remedy:Delete the depending entries first.
+E10114: The transmitted object cannot bewhether your system supports the object. saved to the database. Please check
+Possible cause(s):Version conflict.
+Possible effect(s):The object is not saved to the database.
+Remedy:Check versions and make an update if necessary.
+E10115: Too many variables are used in plates you do not need.the templates. Please delete all tem-
+Possible cause(s):Number of variables or number of templates too high.
+Possible effect(s):The template cannot be marked.
+Remedy:Reduce number of variables or templates.
+E10116: Error while reading directory <name>.
+Possible cause(s):The MultiMediaCard on the ACC cannot be read.
+Possible effect(s):Marking is not possible.
+Remedy:Check MultiMediaCard.
+E10300: Data for initialization cannot be read completely from the database.
+Possible cause(s):Defective system database or customer database.
+The MultiMediaCard is full or damaged.
+102 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+Possible effect(s):The system cannot be started.
+Remedy:Check whether the EEPROM has been inserted correctly.
+Check connection between ACC and Panel-IO.
+Check whether the EEPROM of the Panel-IO has been inserted correctly.
+E10301: The parameter set <name> contaitomatically adjusted before marking.ns inadmissible settings which are au-
+Possible cause(s):The application database belongs to a different laser system.
+Possible effect(s):The parameter set is adjusted automatically to the system before marking. This can affect the
+marking quality.
+Remedy:To avoid the automatic adjustment of the settings you can modify the parameter set manually.
+If you save the corrected parameter set to the database the error message will no longer ap-pear.
+E10302: Shutter does not stay open.
+Possible cause(s):Defective beam shutter.
+Possible effect(s):Marking is not possible.
+Remedy:Exchange beam shutter.
+E10303: Shutter does not stay closed.
+Possible cause(s):Defective beam shutter.
+Possible effect(s):The system has to be restarted.
+Remedy:Exchange beam shutter.
+E10401: Template invalid: <name>
+Possible cause(s):The template selected for marking is defective or does not exist.
+07/08 - Rev. E 103
+
+Malfunctions and Error MessagesChapter 6
+Possible effect(s):Marking is not possible.
+Remedy:Check template and used parameters, product registration and (if existing) logos.
+Select template again.
+E10402: Marking head could not be selected.
+Possible cause(s):For multiple-head systems: The beam switch does not react correctly.
+Remedy:Check the beam switch.
+E10403: Incorrect trigger input, no CI-FAST-IN available.
+Possible cause(s):Trigger 2 or trigger 3 has been selected in the product registration. For those trigger inputs a
+CI-FAST-IN is required which does not exist in the system.
+Possible effect(s):Marking is not possible.
+Remedy:Select a different trigger input or install a CI-FAST-IN.
+E10404: External text: <name>: Value can be marked only once.
+Possible cause(s):For an external text the property "Prompt Once (error)" has been set and it has been tried to
+mark an external text with the same value twice.
+Possible effect(s):The marking is not carried out.
+Remedy:Change the contents of the external text or change the property "Prompt Once (error)".
+E10405: Invalid FPS parameter loaded.
+Possible cause(s):The parameter set contains incorrect values.
+Possible effect(s):FPS does not work, marking is not possible.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+104 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+E10407: The beam shutter does not open.
+Possible cause(s):The beam shutter got jammed or is not identified.
+Possible effect(s):Marking is not possible.
+Remedy:Check the beam shutter.
+Check the shutter cable.
+Check the plug-in connections on the board.
+E10408: The beam shutter does not close.
+Possible cause(s):The beam shutter got jammed or is not identified.
+Possible effect(s):After a marking the next marking cannot be started without confirmation of the error message.
+Remedy:Check the beam shutter.
+Check the shutter cable.
+Check the plug-in connections on the board.
+E10409: System error during preparation of marking.
+Possible cause(s):Internal error during preparation of marking.
+Possible effect(s):Marking is not possible.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+E10500: Cannot load database.
+Possible cause(s):The application database and its backup cannot be loaded.
+Possible effect(s):Marking is not possible.
+Remedy:A new database file has to be written to the MMC.
+07/08 - Rev. E 105
+
+Malfunctions and Error MessagesChapter 6
+E10501: Backup database has been loaded.
+Possible cause(s):The application database is defective.
+Possible effect(s):Modifications are lost.
+Remedy:Please save the database.
+E10502: System Message: XX
+Possible cause(s):Error during determination of the current template or its variables.
+Probably the database does not contain any templates.
+Possible effect(s):Remedy:
+If the database contains no template: create and add a new template and save the database.
+E10507: Error while reading the objective file.
+Possible cause(s):The objective file does not exist in the comp directory of the MultiMediaCard.
+The MultiMediaCard is not inserted correctly.
+Possible effect(s):The system is not operable.
+Remedy:Check MultiMediaCard, if necessary reinstall software on MMC.
+E10508: Error while reading the laser file.
+Possible cause(s):The laser file does not exist in the comp directory of the MultiMediaCard.
+The MultiMediaCard is not inserted correctly.
+Possible effect(s):The system is not operable.
+Remedy:Check MultiMediaCard, if necessary reinstall software on MMC.
+E10509: Error while reading the head file.
+Possible cause(s):The head file does not exist in the comp directory of the MultiMediaCard.
+The MultiMediaCard is not inserted correctly.
+Possible effect(s):The system is not operable.
+106 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+Remedy:Check MultiMediaCard, if necessary reinstall software on MMC.
+E10510: No FPGA image file available!
+Possible cause(s):The file fpgaimgX.h is missing on the MultiMediaCard.
+Possible effect(s):The system cannot work properly without FPGA image file.
+Remedy:Check the contents of the MultiMediaCard.
+E10511: No SP program available!
+Possible cause(s):The file smartspX.sp is missing on the MultiMediaCard.
+Possible effect(s):The system cannot work properly without SP program.
+Remedy:Check the contents of the MultiMediaCard.
+E10512: AllprintBasic: Protocol configuration error
+Possible cause(s):The AllprintBasic command string in the AOS database ("Config","Input") contains a configura-
+tion error for the serial protocol.
+Possible effect(s):The control via AllprintBasic (serial port) does not work.
+Remedy:Modify the protocol settings on the PC with AllprintBasic and import again via SmartGraph into
+the AOS database. Then reboot the ACC.
+E10513: AllprintBasic: Configuration error of the serial interface
+Possible cause(s):The AllprintBasic command string in the AOS database ("Config","Input") contains a configura-
+tion error for the serial interface.
+Possible effect(s):The control via AllprintBasic (serial port) does not work.
+Remedy:Modify the interface parameters on the PC with AllprintBasic and import again via SmartGraph
+into the AOS database. Then reboot the ACC.
+07/08 - Rev. E 107
+
+Malfunctions and Error MessagesChapter 6
+E10514: FM/MHI download error (<name>).
+Possible cause(s):A program has to be transmitted from the MMC to the FM/MHI. During this download an error
+occurred.
+Possible effect(s):Marking is no longer possible since the FM/MHI hardware has no program for mirror position-
+ing.
+Remedy:Check connection between ACC and FM/MHI.
+Check FM/MHI.
+Check ACC.
+Reboot.
+E10515: FM/MHI download: File <name> is missing.
+Possible cause(s):The required file does not exist on the MultiMediaCard.
+Faulty connection between ACC and FM/MHI.
+Possible effect(s):System cannot be set up.
+Remedy:Copy the missing file to the MultiMediaCard.
+Check connection.
+E10516: The marking head is not connected.
+Possible cause(s):Faulty connection to the marking head.
+No marking head connected.
+Possible effect(s):Marking is not possible.
+Remedy:Check connection between ACC and FM/MHI.
+Connect marking head.
+E10518: The parameter set <name> does replace this entry in the database.not correspond to the laser type. Please
+Possible cause(s):A database has been copied to the MMC which does not correspond to the laser type.
+Possible effect(s):Marking is not possible.
+108 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+Remedy:Copy a suitable database to the MMC
+orcreate a new suitable database using the Smart Graph offline. Add a parameter set having the
+same name and transfer it to the laser.In this way all parameter sets of the laser database need to be replaced.
+E10550: AllprintBasic: Syntax error (line: XX, column: XX)
+Possible cause(s):The AllprintBasic command string in the AOS database ("Config","Input") contains a syntax er-
+ror.
+Possible effect(s):The control via AllprintBasic (serial port) does not work.
+Remedy:Test the command string on the PC with AllprintBasic, correct it and import again via Smart-
+Graph into the AOS database. Then reboot the ACC.
+E10551: The template does not contain the requested variable.
+Possible cause(s):The variable to be modified in the AllprintBasic command string does not exist in the template.
+Possible effect(s):The control via AllprintBasic (serial port) does not work.
+Remedy:Check the corresponding template or the AllprintBasic command string and modify if neces-
+sary. If the command string has been changed the ACC must be rebooted.
+E10553: Illegal command in AllprintBasic command string.
+Possible cause(s):This AllprintBasic version does not support the command.
+Possible effect(s):The control via AllprintBasic (serial port) does not work.
+Remedy:Check command string and change if necessary. If the string has been changed you have to
+reboot the ACC.
+E10554: The AllprintBasic command "Error" has been executed.
+Possible cause(s):Depending on the AllprintBasic program.
+Possible effect(s):Depending on the AllprintBasic program.
+07/08 - Rev. E 109
+
+Malfunctions and Error MessagesChapter 6
+Remedy:Depending on the AllprintBasic program.
+E10601: No template list selected.
+Possible cause(s):The external template selection has failed because no template list has been selected.
+Possible effect(s):Marking is not possible.
+Remedy:Create and select a template list using the Smart Graph.
+E10602: The chosen template number XX cannot be assigned to any template.
+Possible cause(s):The external template selection has failed because the selected template number cannot be
+assigned to any template in the template list.
+Possible effect(s):Marking is not possible.
+Remedy:Check template list.
+E10701: Out of memory. Cannot create database object.
+Possible cause(s):Internal error or database is too large.
+Possible effect(s):Marking is not possible.
+Remedy:If the message is no longer displayed after rebooting, there might be an internal error. Inform
+the technical support group.
+If the message is still displayed after rebooting all elements not needed should be deleted fromthe database.
+E10702: Format error while creating a database object.
+Possible cause(s):Version conflict between database object and AOS.
+Possible effect(s):Marking is not possible.
+Remedy:Check versions of Smart Graph and QMark and carry out an update if necessary.
+110 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+E10800: DSP does not send telegrams.
+Possible cause(s):The DSP has not been initialized correctly or the connection to the DSP is faulty.
+Possible effect(s):The system does not work.
+Remedy:Restart the system.
+E10811: DSP buffer overflow
+Possible cause(s):Internal communication error.
+Possible effect(s):Marking is not possible.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+E10900: General CAN bus error (XX)
+Possible cause(s):Faulty wiring.
+Strong source of interferences near by.
+Faulty assemblies.
+Possible effect(s):The system cannot be set up.
+Remedy:Check wiring of CAN bus.
+Eliminate source of interference.
+Replace faulty assemblies.
+E10901: A CAN node (<name>) has carried out an inadmissible reset.
+Possible cause(s):The entered CAN bus node is defective.
+Defective wiring.
+Possible effect(s):Marking is not possible.
+Remedy:Check the CAN bus node.
+Check wiring of CAN bus.
+07/08 - Rev. E 111
+
+Malfunctions and Error MessagesChapter 6
+E10902: Lost connection to a CAN node (<name>).
+Possible cause(s):The entered CAN bus node is defective.
+Defective wiring.
+Possible effect(s):Marking is not possible.
+Remedy:Check the CAN bus node.
+Check wiring of CAN bus.
+E10903: A CAN node (<name>) cannot be initialized.
+Possible cause(s):The entered CAN bus node is defective.
+Defective wiring.
+Possible effect(s):The system cannot be started.
+Remedy:Check the CAN bus node.
+Check wiring of CAN bus.
+E10906: The customer interface (CI) indicates an error of the external exhaust.
+Possible cause(s):External exhaust defective or incorrect wiring of CI terminal.
+Possible effect(s):External exhaust does not work.
+Remedy:Repair external exhaust or connect the corresponding CI terminal to 24 V.
+E10907: The customer interface (CI) indicates an external error.
+Possible cause(s):Detection of external error or incorrect wiring of the CI terminal.
+Possible effect(s):Depending on customer or CI terminal EXT_ERROR.
+Remedy:Remove external error or connect the corresponding CI terminal to 24 V.
+E10909: A CAN node (<name>) has carried out an inadmissible state change.
+Possible cause(s):The corresponding node has probably carried out a reset.
+112 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+Possible effect(s):All functions of this node are no longer available.
+Remedy:Check wiring of CAN bus.
+Check CAN node.
+E10913: File <name> is missing.
+Possible cause(s):The file is supposed to be on the MultiMediaCard.
+Possible effect(s):The system cannot be started.
+Remedy:Copy desired file to the MultiMediaCard.
+E10914: Faulty transmission of a domain to a node (<name>).
+Possible cause(s):Erroneous wiring of CAN bus.
+Possible effect(s):Marking is not possible.
+Remedy:Check wiring of CAN bus.
+E10915: A CAN node <name> does not react after download or software reset.
+Possible cause(s):Defective connections.
+Defective CAN node.
+Possible effect(s):The system cannot be started.
+Remedy:Check wiring of CAN bus.
+Check corresponding CAN node.
+E10916: Faulty download to node <name>.
+Possible cause(s):Defective wiring of CAN bus.
+The corresponding node is faulty.
+Required program not available on MultiMediaCard.
+07/08 - Rev. E 113
+
+Malfunctions and Error MessagesChapter 6
+Possible effect(s):The system cannot be started.
+Remedy:Check wiring of CAN bus.
+Check corresponding CAN bus node, if necessary update of MDB of the CAN bus node.
+Transmit missing program to MultiMediaCard.
+E10917: A CAN node (<name>) signals unsuitable software.
+Possible cause(s):Defective wiring of CAN bus.
+The corresponding node is faulty.
+Required program not available on MultiMediaCard.
+Possible effect(s):The system cannot be started.
+Remedy:Check wiring of CAN bus.
+Check corresponding CAN bus node, if necessary update of MDB of the CAN bus node.
+Transmit missing program to MultiMediaCard.
+E10918: A problem with the RF driver file occurred.
+Possible cause(s):The RF driver file on the MultiMediaCard is faulty.
+Possible effect(s):The system cannot be started.
+Remedy:Check RF driver file on MultiMediaCard.
+E10919: A driver error prevents triggers being transmitted from the CAN bus.
+Possible cause(s):Internal error
+Possible effect(s):The system cannot be started.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+E10920: A driver error prevents control of the red emission LED.
+Possible cause(s):Internal error.
+114 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+Possible effect(s):The system cannot be started.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+E10921: Less than two CI input bus terminals connected.
+Possible cause(s):Not enough input bus terminals existing.
+Possible effect(s):The system cannot be started.
+Remedy:Equip system with two input bus terminals.
+E10922: Less than two CI output bus terminals connected.
+Possible cause(s):Not enough output bus terminals existing.
+Possible effect(s):The system cannot be started.
+Remedy:Equip system with two output bus terminals.
+E10923: Ext. template selection requires at least 4 CI input bus terminals.
+Possible cause(s):To use the external template selection at least 4 input bus terminals must be available at the
+customer interface.
+Possible effect(s):The external template selection cannot be used.
+Remedy:Add two input bus terminals.
+E10924: Certain data of the pump chamber (LHC) cannot be determined.
+Possible cause(s):CAN bus problems. Data are not transmitted fast enough from LHC to OS.
+Faulty connection between LHC and ID board of pump chamber.
+Possible effect(s):The aging of the laser is not adapted correctly. Marking is not possible.
+Remedy:Check CAN bus.
+Check connection between LHC and ID board of pump chamber.
+07/08 - Rev. E 115
+
+Malfunctions and Error MessagesChapter 6
+E10926: Entry (<name>) is missing in the database.
+Possible cause(s):Defective database.
+Possible effect(s):Marking is not possible.
+Remedy:Complete or exchange database.
+E10927: A configuration value (<name>) of the LPC cannot be set or read.
+Possible cause(s):Interrupted connection to LPC.
+Possible effect(s):Marking is not possible.
+Remedy:Check connection to LPC and repair if necessary.
+E10928: A configuration value (<name>) of the LHC cannot be set or read.
+Possible cause(s):Interrupted connection to LHC.
+Possible effect(s):Marking is not possible.
+Remedy:Check connection to LHC and repair if necessary.
+E10929: CAN bus error: <name>
+Possible cause(s):Faulty line of CAN bus.
+Possible effect(s):Components are possibly not configured completely.
+Remedy:Check CAN bus cable and connections.
+E19201: Template <name> does not exist.
+Possible cause(s):The template does not exist in the database.
+Possible effect(s):Marking is not possible.
+116 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+Remedy:Create or transmit the corresponding template.
+E19202: Faulty template: <name>
+Possible cause(s):The template selected for marking is defective or does not exist.
+Possible effect(s):Marking is not possible.
+Remedy:Check template and used parameters, product registration and (if existing) logos.
+Select template again.
+E19203: Parameter set <name> does not exist.
+Possible cause(s):The parameter set required by a template is missing.
+Possible effect(s):The template concerned cannot be marked.
+Remedy:Assign an existing parameter set to the template or add the required parameter set to the da-
+tabase.
+E19204: Product registration <name> does not exist.
+Possible cause(s):The product registration required by a template is missing.
+Possible effect(s):The template concerned cannot be marked.
+Remedy:Assign an existing product registration to the template or add the required product registration
+to the database.
+E19205: At least one index level does not exist in the parameter set.
+Possible cause(s):The template uses an index level which does not exist in the parameter set.
+Possible effect(s):The template cannot be marked.
+Remedy:Add the missing index level to the parameter set or assign an existing index level to all elements
+of the concerned template.
+07/08 - Rev. E 117
+
+Malfunctions and Error MessagesChapter 6
+E19210: The direct marking cannot be carried out.
+Possible cause(s):Faulty connection between PC and ACC.
+Possible effect(s):The direct marking cannot (or only incompletely) be carried out.
+Remedy:Check the ethernet connection between PC and ACC.
+E19301: The template sequence does not contain any template.
+Possible cause(s):Template sequences are not supported yet.
+E19302: The template <name> of the template sequence does not exist.
+Possible cause(s):Template sequences are not supported yet.
+E19303: The heads <name> of templates ofcal. a template sequence must be identi-
+Possible cause(s):Template sequences are not supported yet.
+E19304: The product registrations of templates of a template sequence must beidentical.
+Possible cause(s):Template sequences are not supported yet.
+E19305: Product registration <name> does not exist.
+Possible cause(s):Template sequences are not supported yet.
+E19306: Defective template in the template sequence: <name>
+Possible cause(s):Template sequences are not supported yet.
+E19307: The circuit for external laser enable has been opened.
+Possible cause(s):The circuit for the external laser enable is open. This can be caused by an open emergency
+switch.
+Possible effect(s):The system remains in state "Key switch open" even if the key switch has been closed.
+Remedy:Close the circuit for external laser enable.
+118 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+E19308: Cannot select beam source.
+Possible cause(s):Error in the CAN communication.
+Possible effect(s):Marking is not possible.
+Remedy:Check CAN bus.
+E19309: The clock had to be restarted. Please set the time!
+Possible cause(s):The clock did stop and has already been restarted. The battery voltage might be too low.
+Possible effect(s):The marked time is not correct.
+Remedy:Set the time.
+If this happens every time after switch-on exchange the battery.
+E19311: Fiber Laser Extension Board has not been detected.
+Possible cause(s):No board or wrong board conntected to the ACC.
+Possible effect(s):Laser does not start.
+Remedy:Check connection to FLEB.
+E19312: Fiber Laser Overtemperature.
+Possible cause(s):Faulty fan.
+Clogged ventilating slots.
+Possible effect(s):The laser switches off.
+Remedy:Check cooling and ambient temperature.
+E19313: The laser stop switch has been pressed.
+Possible cause(s):The laser stop switch has been pressed.
+07/08 - Rev. E 119
+
+Malfunctions and Error MessagesChapter 6
+Possible effect(s):The system remains in state "Key switch open" even if the key switch has been closed.
+Remedy:Release laser stop switch.
+E19314: SL501 Laser Extension Board cannot be identified.
+Possible cause(s):No or incorrect board conntected to the ACC.
+Possible effect(s):Laser does not start.
+Remedy:Check connection to SLEB.
+E19413: The interlock circuit has been opened.
+Possible cause(s):The interlock circuit has been opened.
+Possible effect(s):The system remains in the state "Key switch open" even if the key switch has been closed.
+Remedy:Close the interlock circuit.
+E24201: Overtemperature of Q-switch
+Possible cause(s):The overtemperature switch of the Q-switch has reacted.
+The cable connecting Q-switch and LHC is defective.
+Possible effect(s):Marking is not possible.
+Remedy:Check cooling system.
+Check cable connecting Q-switch and LHC.
+E26100: LHC has unexpected internal errors (ID: XX[XX])
+Possible cause(s):Program error
+Possible effect(s):unknown
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+120 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+E29009: Beam shutter error
+Possible cause(s):Defective beam shutter.
+Defective cable between beam shutter and LHC.
+Possible effect(s):Marking is not possible.
+Remedy:Check beam shutter and cable.
+E29010: A service has been requested frconnected or not responding.om a device on the LHC which is not
+Possible cause(s):The LHC can carry out certain actions only if the corresponding device is connected. E.g. the
+operating hours of the pump chamber can only be reset if the ID board (LN-PumpChamber) isconnected.
+Possible effect(s):Certain actions requested from the LHC are not carried out (e.g. logbook entries, aging adjust-
+ment of the pump chamber might not be working).
+Remedy:Connect the device to the LHC (e.g. connect or re-initialize ID board).
+E29011: Error while accessing an EEPROM of the LHC.
+Possible cause(s):EMC interferences in the area of the LHC.
+Possible effect(s):The logbook and operating hours of the pump chamber are not kept correctly.
+Remedy:Remove EMC interferences.
+E32300: Power supply: Current error XX.XX A
+Possible cause(s):The internal current measurement of the power supply detected an inadmissible deviation be-
+tween actual and reference current value.
+Possible causes:
+Alltec DN-A power supply
+When starting: Interrupted output circuit
+During operation: 1) Interrupted output circuit during operation.
+During operation: 2) Current above/below limit value.
+07/08 - Rev. E 121
+
+Malfunctions and Error MessagesChapter 6
+During operation: 3) Electr. malfunction of cooler.
+Alltec LN-A power supply
+not defined yet
+Possible effect(s):The system cannot be started.
+Remedy:Check wiring of output circuit for interruption.
+E32301: Power supply: Current error/phase failure
+Possible cause(s):Defective power supply
+Phase failure in the house supply
+Over/Undercurrent
+Phase voltage has fallen below limit value
+Broken cable
+Contact resistance at terminals too high, e.g. insulation of cable eye is clamped.
+Possible effect(s):The system cannot be started.
+Remedy:Check house supply.
+Check wiring.
+Exchange power supply.
+E32302: Power supply: Short circuit in the lamp circuit XX.XXA
+Possible cause(s):Before ignition of the lamp there is a short circuit in the lamp circuit.
+Possible effect(s):The system cannot be started.
+Remedy:Check lamp, check lamp wiring. Replace lamp if necessary.
+E33100: Power supply: Phase failure
+Possible cause(s):Defective power supply
+Phase failure in the house supply
+Over-/Undercurrent
+Phase voltage has fallen below limit value
+122 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+Broken cable
+Contact resistance at terminals too high, e.g. insulation of cable eye is clamped.
+Possible effect(s):The system cannot be started.
+Remedy:Check house supply.
+Check wiring.
+Exchange power supply.
+E33301: Power supply: Inadmissible terminal voltage XX.XX V
+Possible cause(s):While starting: Short circuit at the output of the power supply.
+During operation: 1) Defective pump chamber2) Electr. malfunction of cooler.
+Possible effect(s):The system cannot be started.
+Remedy:Check wiring between power supply and diode for short circuit.
+E34200: Power supply: Overtemperature
+Possible cause(s):The temperature within the power supply module is too high.
+Possible effect(s):The system cannot be started.
+Remedy:Check cooling system.
+E34201: Internal cooling circuit: Temperature above/below limit value
+Possible cause(s):Internal cooling circuit is faulty.
+A possibly connected external chiller has no sufficient cooling power.
+Broken cable of the signal line (X6.1).
+Possible effect(s):The system cannot be started.
+Remedy:Check internal cooling circuit.
+Check external chiller.
+Check cables.
+07/08 - Rev. E 123
+
+Malfunctions and Error MessagesChapter 6
+E34203: RF driver: Temperature error
+Possible cause(s):Defective cooling system
+Broken cable between RF driver and LPC
+Defective RF driver
+Possible effect(s):The system cannot be started.
+Remedy:Check cooling system.
+Check cables.
+Exchange RF driver.
+E36100: LPC: Internal error
+Possible cause(s):Internal software or hardware error.
+Possible effect(s):The system cannot be started.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+E39000: Power supply: IGBTdefective
+Possible cause(s):Device type
+- Alltec power supply LN-ASource of error
+- Power supply-internal signalError condition from the IGBT module
+- High level at X3.20 (LPC, IN_NPN_9) for more than 1 ms (only if key switch is closed)Possible causes
+- Error of IGBT module- Error of IGBT drivers
+Limit values- none
+E39001: Power supply: Broken lamp
+Possible cause(s):Broken lamp
+Incorrect wiring between power supply and lamp
+Possible effect(s):The system cannot be started. If the cooling system is started water can leak into the laser
+head.
+124 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+Remedy:Check lamp and exchange if necessary.
+Check wiring.
+E39002: Power supply: Lamp does not ignite
+Possible cause(s):Defective lamp
+Defective power supply
+Possible effect(s):The system cannot be started.
+Remedy:Exchange lamp.
+Exchange power supply.
+E39003: Internal cooling circuit: Pump not ready for operation
+Possible cause(s):The internal pump is defective.
+Wiring error.
+Possible effect(s):The system cannot be started.
+Remedy:Check pump.
+Check wiring.
+E39005: Internal cooling circuit: Flow too low XX.XX l/min
+Possible cause(s):Contaminated filters
+Leakage or interruption of the cooling circuit
+Defective pump
+Defective flow sensor
+Faulty wiring
+Possible effect(s):Cooling water can leak out.
+Remedy:Check filters and exchange if necessary.
+Check cooling circuit for leakages.
+Check pump.
+07/08 - Rev. E 125
+
+Malfunctions and Error MessagesChapter 6
+Check flow sensor.
+Check wiring.
+E39006: Optical fibre ACC --- LPC: Interruption
+Possible cause(s):Optical fibre not connected to ACC or to LPC
+Defective optical fibre
+Error on ACC
+Possible effect(s):The system cannot be started.
+Remedy:Check optical fibre.
+Check ACC.
+E39008: Internal cooling circuit: Flow too high XX.XX l/min
+Possible cause(s):Leakage or interruption of the cooling circuit
+Defective flow sensor
+Incorrect wiring
+Possible effect(s):Cooling water can leak out. The system cannot be started.
+Remedy:Check cooling circuit for leakage.
+Check flow sensor.
+Check wiring.
+E39009: RF driver: VSWR error
+Possible cause(s):Defective cable between RF driver and Q-switch.
+Defective cable between RF driver and LPC.
+RF power supply is defective.
+Possible effect(s):The system cannot be started.
+Remedy:Check wiring.
+Exchange RF driver.
+126 07/08 - Rev. E
+
+Chapter 6Malfunctions and Error Messages
+E39012: Power supply: General error
+Possible cause(s):An internal monitoring function of the power supply has detected an error.
+Alltec DN-A power supply: Short circuit during operation.
+Possible effect(s):The system cannot be started.
+Remedy:Check power supply and exchange if necessary.
+E39013: Internal cooling system not connected!
+Possible cause(s):There is no connection between LPC and internal cooling system.
+Possible effect(s):The system cannot be started.
+Remedy:Check wiring.
+E39014: External chiller not connected
+Possible cause(s):There is no connection between LPC and external chiller.
+Possible effect(s):The system cannot be started.
+Remedy:Check wiring.
+E39015: External cooling circuit: Collective malfunction message
+Possible cause(s):There is an error in the external cooling system.
+Defective connection between LPC and external chiller.
+Possible effect(s):The system cannot be started.
+Remedy:Check external cooling system.
+Check wiring.
+E39016: FPS data not transmitted completely
+Possible cause(s):Internal software error.
+07/08 - Rev. E 127
+
+Malfunctions and Error MessagesChapter 6
+Possible effect(s):Marking is not possible.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+E39018: Invalid index step selected.
+Possible cause(s):Via the optical fibre an inadmissible index step has been selected.
+Possible effect(s):Marking is not possible.
+Remedy:In case this error occurs in released versions it must be reported to the technical support group.
+128 07/08 - Rev. E
+
+Chapter 7Appendix
+7 Appendix
+7.1 Accessories
+PiecesArt. no.DesignationUse
+100478hex key 3/175
+166918hex key w. cross handle 4/150
+166796offset hex key 4
+166921offset hex key 5
+166797insulated screwdriver size 4
+166923combination spanner size10
+1011069fuse d=5 x 20 mm
+15 A slow
+166596reader/writer (USB)loading data from and save data to theMMC
+for MMC
+166778screw set
+166781o-ring set pump chamberLN-A pump chamber sealing
+166252funnel compl.refilling cooling water
+465431hose liner 13 with cooling hose connections
+screw cap 3/4"
+465289hose liner 16 with cooling hose connections
+screw cap 3/4"
+265291hose angle 16 with cooling hose connections
+screw cap 3/4"
+265287connecting piecefor connecting the cooling hoses, see
+"Draining of the Laser System"
+"Exchange of Cooling Water and Filters"
+400492screw clamping ring 12-20fixing of cooling hoses
+494025screw clamping ring 16-25fixing of cooling hoses
+366594screw clamping ring 8-16fixing of cooling hoses
+07/08 - Rev. E 129
+
+Chapter 7Appendix
+PiecesArt. no.DesignationUse
+265483protection cap (d=10)Service: pump chamber DN-A
+(water connections)
+165518plastic hose PUN Service: pump chamber DN-A(bridge for cooling water hoses)
+10 x1.5 L=100 mm
+166922draining adapter"Draining of the Laser System"
+"Exchange of Cooling Water and Filters"
+265492protection cap d=14.9pump chamber LN-A
+(water connections) see
+"Draining of the Laser System"
+865550protection cap d=20 Z20x14 protection of all components of the laserhead during maintenance
+166282protection cap d=36.7 U29Service: protection of the beam expander(beam entry)
+265559protection cap d=27.8 U25Service: protection of the beam expander(beam exit) and the marking head (beam
+entry)
+165558protection cap d=82 B820Service: protection of the beam markinghead (beam exit)
+166284protection cap d=23.4 U22Service: for the opening in the plate forconnecting the marking head
+165012silicone hosefor fixing the beam protection tubesbetween the individual components
+transparent within the laser head
+165506dirt sievecooling water circuit LN-A
+"Exchange of the lamp"
+"Exchange of Cooling Water and Filters"
+167302short circuit bridge DN-AService: pump chamber DN-A
+166798grounding wrist strap cablel=2 m Service: protection against static charge
+130 07/08 - Rev. E
+
+Chapter 7Appendix
+7.1.1 Maintenance Kit
+PiecesArt. no.DesignationUse
+2566294optics cleaning paper"Cleaning of the Protective Glass of theFlat Field Lens"
+1011462paper for test markingtest markings
+266890protective gloves"Cleaning of the Protective Glass of theFlat Field Lens"
+"Exchange of the Lamp"
+365326filter cartridge 1 µm"Draining of the Laser System"
+"Exchange of Cooling Water and Filters"
+366599DI resin "Draining of the Laser System"
+400 ml can "Exchange of Cooling Water and Filters"
+164685arc lamp LN-A, complete"Exchange of the Lamp"
+07/08 - Rev. E 131
+
+Chapter 7Appendix
+7.2 Assignment of the Customer Interface
+7.2.1 Interlock
+7.2.2 CI-CAN-IOThe interface CI-CAN-IO is provided as a standard. This interface is used for sending digital
+status signals and receiving digital command signals.
+Module 1: Bus Coupler
+Module 2: Feed Terminal
+TerminalSignalDescription
+X501.1INTERLOCKInput for interlock circuit
+X501.2INTERLOCKInput for interlock circuit
+X501.3EXTERNAL_LASER_POWER_ENABLEEXTERNAL_LASER_POWER_ENABLE isset in order to switch the laser system to
+mode "Standby" and deactivate the cooling.
+X501.4EXTERNAL_LASER_POWER_ENABLEEXTERNAL_LASER_POWER_ENABLE isset in order to switch the laser system to
+mode "Standby" and deactivate the cooling.
+TerminalSignalDescription
+X1.0.1CAN HighCAN bus, only internal
+X1.0.224 V24 V system, only internal
+X1.0.3GNDGND system, only internal
+X1.0.4ShieldCAN bus shield, only internal
+X1.0.5CAN LowCAN bus, only internal
+X1.0.624 V24 V system, only internal
+X1.0.7GNDGND system, only internal
+X1.0.8ShieldCAN bus shield, only internal
+All following terminals are supplied via this terminal and they are separated galvanically fromthe internal power supply. The customer has to supply the voltage via X1.1.2 and X1.1.3 or via
+X1.1.6 and X1.1.7.
+TerminalSignalDescription
+X1.1.1N.C.not connected
+X1.1.2Customer 24 V24 V customer
+X1.1.3Customer GNDGND customer
+132 07/08 - Rev. E
+
+Chapter 7Appendix
+TerminalSignalDescription
+X1.1.4N.C.not connected
+X1.1.5N.C.not connected
+X1.1.6Customer 24 V24 V customer
+X1.1.7Customer GNDGND customer
+X1.1.8N.C.not connected
+TerminalSignalDescription
+X1.2.1SYSTEM_READYSYSTEM_READY is set as soon as the sys-tem has completed its initialization and is
+ready to operate. Switched off in servicemode. Entries via the digital inputs are
+accepted only if this signal is set.
+X1.2.2Customer 24 V24 V customer
+X1.2.3Customer GNDGND customer
+X1.2.4READY_TO_MARKThis signal is set as soon as all necessarydata and a start signal have been received.
+The system is ready to mark and waits for atrigger signal. The red LEDs on the PCM and
+on the marking head are on.
+X1.2.5MARKINGThis signal is set during the marking process.
+X1.2.6Customer 24 V24 V customer
+X1.2.7Customer GNDGND customer
+X1.2.8SHUTTER_CLOSEDThis signal is set if the beam shutter isclosed.
+TerminalSignalDescription
+X1.3.1WARNINGThis output is LOW active and indicates thatthere has been at least one warning since the
+start of the system (e.g. Parts of the markingare not in the marking field). This output is
+reset with the next start.
+X1.3.2Customer 24 V24 V customer
+X1.3.3Customer GNDGND customer
+Module 3: Digital Outputs
+Module 4: Digital Outputs
+07/08 - Rev. E 133
+
+Chapter 7Appendix
+TerminalSignalDescription
+X1.3.4ERRORThis output is LOW active. The system isstopped immediately if an error occurs during
+the marking process (e.g. Laser overtemper-ature). The output is reset (but may be set
+immediately after restart if the error was notcleared).
+X1.3.5GOODThis output is LOW active and indicates thatthe last marking has been completed without
+a warning or error. The output is reset withthe next trigger signal.
+X1.3.6Customer 24 V24 V customer
+X1.3.7Customer GNDGND customer
+X1.3.8BADThis output is LOW active and indicates thatthe last marking was not completed due to a
+warning or an error. The output is reset withthe next trigger signal.
+TerminalSignalDescription
+X1.4.1STARTStarts the marking process, waits for triggersignal, reacts to rising edge. START has no
+function if STOP is set to LOW.
+X1.4.2Customer 24 V24 V customer
+X1.4.3Customer GNDGND customer
+X1.4.4STOPStops the marking process, reacts to LOW.
+The signal has to be set to HIGH if not used.
+Bridged with terminal X1.4.2 when delivered.
+X1.4.5PAUSEnot implemented yet, bridged with terminalX1.3.6 when delivered.
+X1.4.6Customer 24 V24 V customer
+X1.4.7Customer GNDGND customer
+X1.4.8TRIGGER 1The trigger signal starts the actual marking.The edge is configured via software. For fast
+triggers use the optional CI-FAST-IN.
+Module 5: Digital Inputs
+134 07/08 - Rev. E
+
+Chapter 7Appendix
+Module 6: Digital Inputs
+TerminalSignalDescription
+X1.5.1EXT_EVENTThis signal is used for the external templateselection. With a positive edge the signals
+(DATA0 to DATA7) of the optional inputmodules are taken over.
+X1.5.2Customer 24 V24 V customer
+X1.5.3Customer GNDGND customer
+X1.5.4RESERVEDReserved for future use. Always set to HIGH.
+Bridged with terminal X1.5.2 when delivered.
+X1.5.5EXHAUST_FAULTThis LOW active signal is used to detect anerror of the exhaust system.
+If not used, the signal has to be set to HIGH.
+Bridged with terminal X1.4.6 when delivered.
+X1.5.6Customer 24 V24 V customer
+X1.5.7Customer GNDGND customer
+X1.5.8EXT_FAULTThis LOW active signal is used to detect anexternal error.
+If not used, the signal has to be set to HIGH.
+Bridged with terminal X1.5.6 when delivered.
+07/08 - Rev. E 135
+
+Chapter 7Appendix
+7.2.3 Optional: Modules for External Template SelectionIn order to use the external template selection the laser system must be equipped with two op-
+tional input modules (art. no. 65856). These input modules have to be inserted between inputmodule 6 and the termination module 7.
+Module A
+Module B
+TerminalSignalDescription
+X1.6.1DATA 0The template is selected via its assigned tem-plate number by an 8 bit value built via inputs
+DATA0 to DATA7. The selection is takenover by the signal EXT_EVENT.
+X1.6.2Customer 24 V24 V customer
+X1.6.3Customer GNDGND customer
+X1.6.4DATA 2see DATA 0
+X1.6.5DATA 1see DATA 0
+X1.6.6Customer 24 V24 V customer
+X1.6.7Customer GNDGND customer
+X1.6.8DATA 3see DATA 0
+TerminalSignalDescription
+X1.7.1DATA 4see DATA 0
+X1.7.2Customer 24 V24 V customer
+X1.7.3Customer GNDGND customer
+X1.7.4DATA 6see DATA 0
+X1.7.5DATA 5see DATA 0
+X1.7.6Customer 24 V24 V customer
+X1.7.7Customer GNDGND customer
+X1.7.8DATA 7see DATA 0
+136 07/08 - Rev. E
+
+Chapter 7Appendix
+Output Specification:
+Input Specification:
+Rated voltage24 V DC (-15 %/+20 %)
+Load typeohmic, inductive, lamp
+Max. output current (per channel)0.5 A (short-circuit proof)
+Polarity protectionyes
+Electrical insulation500 Vrms (K bus/field potential)
+Rated voltage24 V DC (-15 %/+20 %)
+"0" signal voltage-3 V to 5 V
+"1" signal voltage15 V to 30 V
+Current inputtyp. 5 mA
+Filter input0.2 ms
+Electrical insulation500 Vrms (K bus/field potential)
+07/08 - Rev. E 137
+
+Chapter 7Appendix
+Timing Diagrams
+Normal operation
+>> STOP
+>> START
+>> TRIGGER
+<< SYSTEM_READY
+<< READY_TO_MARK
+<< MARKING
+<< SHUTTER_CLOSED
+<< WARNING
+<< ERROR
+<< GOOD
+<< BAD
+System state
+User action
+Laser Keyswitchstart-upopen Laserready Prepare formarkingWait fortriggerKeyswitchopenLaserWait forready triggerWait fortrigger delayWait fortriggerWait forMarkingMarkingtrigger delay
+close key switchstarttriggertriggeropen key switchstop
+Error in marking
+>> STOP
+>> START
+>> TRIGGER
+<< SYSTEM_READY
+<< READY_TO_MARK
+<< MARKING
+<< SHUTTER_CLOSED
+<< WARNING
+<< ERROR
+<< GOOD
+<< BAD
+System state
+User action
+Laser Keyswitchstart-upopen Laserready Prepare formarkingWait fortriggerPrepare forWait forError 2Wait fortrigger delaymarkingMarkingLasertriggerreadyWait fortrigger delay
+close keyswitchacknowledgestartstarttriggertrigger
+138 07/08 - Rev. E
+
+Chapter 7Appendix
+Warning in marking
+>> STOP
+>> START
+>> TRIGGER
+<< SYSTEM_READY
+<< READY_TO_MARK
+<< MARKING
+<< SHUTTER_CLOSED
+<< WARNING
+<< ERROR
+<< GOOD
+<< BAD
+System state
+User action
+Laser Keyswitchstart-upopen Laserready Prepare formarkingWait fortriggerKeyswitchopenLaserWait forready triggerWait fortrigger delayWait fortriggerWait forMarkingMarkingtrigger delay
+close key switchstarttriggertriggeropen key switchstop
+External Template Selection
+>>EXT_EVENT
+>>DATA0 ... DATA7
+Template is changed
+Setup Time: > 10 msHold Time: > 10 ms
+The template change is carried out after the currtime delay (hold time) between signal EXT_EVEent marking process is finished. The minimumNT and template change is about 10 ms. The
+duration of the delay increases if there is heavy load on the CAN bus or the SmartOS software.
+07/08 - Rev. E 139
+
+Chapter 7Appendix
+7.2.4 CI-FAST-INThe interface CI-FAST-IN is optional and it is required for signals of the incremental encoder
+when marking moving products (MOTF - mark on the fly) and for fast trigger signals.
+The signals of the CI-FAST-IN are separated galIN are automatically considered vanically. Sensors connected to the CI-FAST-as part of the marking system.
+Trigger Inputs
+Incremental Encoder Inputs
+TerminalSignalDescription
+X1.124 VVoltage supply
+X1.2TRIGGER2Input trigger 2
+X1.3MONITOR2Input, monitoring trigger 2
+X1.4GNDSystem ground
+X1.524 VVoltage supply
+X1.6TRIGGER3Input trigger 3
+X1.7MONITOR3Input, monitoring trigger 3
+X1.8GNDSystem ground
+X1.924 VVoltage supply
+X1.10ENABLEEnabling of trigger inputs, bridged with terminalX1.9 when delivered. See figure next page.
+X1.11DISABLEDisabling of trigger inputs, see next page.
+X1.12GNDSystem ground
+TerminalSignalDescription
+X2.124 VVoltage supply
+X2.2ENC_IDXInput for index track of encoder
+X2.3ENC_T1Input for track 1 of encoder
+X2.4ENC_T2Input for track 2 of encoder
+X2.5GNDSystem ground
+X2.624 VVoltage supply
+X2.7AUX1Additional input 1
+X2.8AUX2Additional input 2not used yet
+X2.9GNDSystem ground
+140 07/08 - Rev. E
+
+Chapter 7Appendix
+Release SignalsUsing the signals ENABLE and DISABLE you can define whether the trigger inputs are re-
+leased by a HIGH active or by a LOW active signal.
+If the trigger inputs are to be released by a HIGH active signal concontrol the release via ENABLE.nect DISABLE to 0 V and
+If the trigger inputs are to be released by a LOW active signal connect ENABLE to 24 V andcontrol the release via DISABLE.
+The release affects all trigger sources:
+AUTO, TRIGGER 1 (on CI-CAN-IO)
+TRIGGER 2, TRIGGER 3 (on CI-FAST-IN)
+PROGRAM (Allprint Basic)
+24 V
+0 V
+trigger inputs enabled
+ENABLE
+trigger inputs disabled
+0 V DISABLE
+ENABLE24 V
+24 V trigger inputs disabled
+0 V
+DISABLE
+trigger inputs enabled
+07/08 - Rev. E 141
+
+Chapter 7Appendix
+Input Specification
+"0" signal voltage-3 V to 5 V
+"1" signal voltage15 V to 30 V
+Input current at 24 Vtyp. 20 mA
+Minimum signal length without software filter2 µs
+Electrical insulationnone
+7.2.5 Serial Interface
+PinSignalNameDirection
+1DCDCarrier DetectInput
+2RXDReceive DataInput
+3TXDTransmit DataOutput
+4DTRData Terminal ReadyOutput
+5GNDSignal Ground
+6DSRData Set ReadyInput
+7RTSRequest To SendOutput
+8CTSClear To SendInput
+9RIRing IndicatorInput
+7.2.6 Network Interface
+TerminalSignalDescription
+X503ETHERNETConnection, RJ45
+142 07/08 - Rev. E
+
+Chapter 7Appendix
+7.2.7 Wiring Example 1: Control via PLC
+12345678
+1
+2
+DIP 7DIP 8BaudrateDIP 1-6 = Note ID
+0 0 AUTO
+1 0 500kBd
+0 1 250kBd
+1 1 125kBd
+YAG-LASER
+Serial Interface Ethernet
+KL5100KL9110KL2134KL2134KL1114KL1114X501
+R120
+X503RJ 45
+24VCAN Low
+CAN High 24V Costumer 24V System ReadyMarking Warning StartPause Interlock DCD
+GND Customer 24V Customer 24V Good Customer 24V Interlock TXDRXD
+GND Customer GND Customer 24V Customer 24VCustomer 24V Customer 24VCI-CAN-IOFEED TERMINALDIGITAL OUTPUTSDIGITAL OUTPUTSDIGITAL INPUTSDIGITAL INPUTS DTR
+Shield Customer GND Customer GND Customer GND Customer GND GND
+Shield Customer GND Customer GND Customer GND DSR
+Ready to markShutter Closed Error Stop Trigger 1 RTS
+Bad CTSRI
+X1.0 X1.1 X1.2 X1.3 X1.4 EXT_Event X1.5
+Customer 24VExhaust_Fault
+152637482637152637481526374815263748152637481212345678918 Customer GNDCustomer 24 V
+ReservedCustomer GND
+Ext_Fault
+GNWHYEBN shield
+CAN_CI
+Internal
+L+M
+DC 24V
+-A2PLC
+11
+Input 12
+Input 4xDC
+4xTRANS. 0,3A -S1
+Output Interlock
+RUN/STOP
+Voltage Supply
+The inputs and outputs are supplied via terminals X1.1.2 and X1.1.3 in order to separate themarking system galvanically from the PLC.
+System Status
+The following signals are processed:
+SYSTEM_READY
+MARKING
+READY_TO_MARK and
+ERROR
+Control
+The system is controlled via:
+START
+STOP
+TRIGGER_1
+07/08 - Rev. E 143
+
+Chapter 7Appendix
+7.2.8 Wiring Example 2: Direct Connection (MOTF - mark on the fly)
+81 123456789
+12345678
+1
+2 RXDDCD
+DIP 1-6 = Note ID DTRTXD
+DIP 7DIP 8Baudrate GND
+0 0 AUTO RTSDSR
+1 0 500kBd CTS
+0 1 250kBd RI
+1 1 125kBd
+152637482637152637481526374815263748152637481234567891011121234567812
+X503RJ 45
+YAG-LASER
+Ethernet
+Serial Interface
+CI-CAN-IOFEED TERMINALDIGITAL OUTPUTSDIGITAL OUTPUTSDIGITAL INPUTSDIGITAL INPUTSTRIGGER INPUTSCI-FAST-IN ENCODER INPUTSCI-FAST-IN KL5100KL9110KL2134KL2134KL1114KL1114 X501
+R120
+24VCAN Low System Ready Start 24V
+CAN High 24V Costumer 24V Marking Warning Pause EnableDisable Interlock
+GND Customer 24V Customer 24V Customer 24VGood Customer 24V GND Interlock
+GND Customer GNDCustomer GND Customer 24V Customer 24V Customer 24V
+ShieldShield Customer GND Customer GND Customer GND
+Ready to markCustomer GND Customer GND StopCustomer GND
+Shutter Closed ErrorBad Trigger 1
+X1.0 X1.1 X1.2 X1.3 X1.4 EXT_Event X1.5X1.1X1.7
+Customer 24VExhaust_Fault
+Customer GNDCustomer 24 V
+ReservedCustomer GND
+Ext_Fault
+24VTrigger 2
+Monitor 2GND
+24VTrigger 3
+Monitor 3GND
+24VENC_IDX
+ENC_T1ENC_T2
+GNDAUX1
+AUX2GND
+GNWHYEBN shield
+CAN_CI
+Internal
+RT
+BL
+WS
+RS
+VI
++-
++ 11
+A -
+K1
+K2 12
+K0
+-S1
+-B1 -G1
+Interlock
+Light barrier Encoder
+Light Barrier
+connected to TRIGGER 2
+voltage supply by marking system
+no galvanical separation
+Incremental Encoder
+NoteFor this application the optional module CI-FAST-IN is required.
+connected with both tracks and index track
+voltage supply by marking system
+no galvanical separation
+144 07/08 - Rev. E
+
+Chapter 7Appendix
+7.3 Declaration of Conformity
+1
+Declaration of Conformity
+Document No.2007/001/YAG
+Product nameLaser system
+Model/Type:ALLPRINT LN-A
+The conformity of above product with the relevant Council Directives
+2004/108/EC Electromagnetic Compatibility
+2006/95/EC Low Voltage Directive
+is proven by complete compliance with the following standards:
+Harmonized European standards:EN 61010-1EN 61000-3-2
+EN 61326-1EN 61000-3-3
+EN 61000-6-2EN 60825-1
+EN 61000-6-4
+2
+Machine Declaration
+The product cannot function independently as machinery directive 98/37/EC and amendments and therefore does not correspond in alla machine according to article 4 (2) EC
+parts to the relevant provisions of this directive.
+The following harmonized standards have been used for validation of conformity:
+EN ISO 12100-1EN 60204-1
+EN ISO 12100-2EN 1050
+The equipment must NOT be put into service until the relevant machinery into which it isincorporated - alone or as part of a system - has been declared operative and in conformity
+with the machinery directive.
+Name, TitleH. Klein, General Manager
+Location, DateSelmsdorf, 20.06.2008
+Signature
+1.This declaration certifies compliance with the mentof properties. The safety inioned directives. It does not represent a guaranteestructions of the product documentation must be observed.
+2.Only for installation or integration of the above product into a machine or machine system.
+07/08 - Rev. E 145
+
+Chapter 7Appendix
+7.4 DrawingsLaser System
+PCM
+525
+631
+~226,75
+31,5
+7
+816,5
+146 07/08 - Rev. E
+
+Chapter 7Appendix
+The Marking Unit
+1375
+175
+160
+102
+189
+1120
+90
+48
+166,8
+62
+WD
+71,5
+30,5 40
+07/08 - Rev. E 147
+
+Chapter 7Appendix
+The Marking Head
+90
+98
+58
+58
+160 36,8
+7
+165
+8
+50 33
+105
+179,6
+148 07/08 - Rev. E
+
+Chapter 7Appendix
+7.5 Safety Data Sheets
+07/08 - Rev. E 149
+
+Chapter 7Appendix
+7.5.1 Amberlite
+150 07/08 - Rev. E
+
+Chapter 7Appendix
+7.6 Service Request Form
+07/08 - Rev. E 151
+
+Chapter 7Appendix
+152 07/08 - Rev. E
+
+Index
+laser power max. 39
+A
+laser type 39
+ACC (Advanced Controller Card) 38
+LHC (Laser Head Controller) 38
+amberlite 150
+LHC board 36
+ambient temperature 39
+line width 39
+LPC (Laser Power Controller) 38
+B
+beam diameter before expander 39 M
+beam quality 39
+maintenance intervals 54
+beam shutter 36
+maintenance works 54
+bleeding 50
+marking field 32, 41
+marking head 36
+C
+marking speed 39
+CI (Customer Interface) 38
+mode aperture 36, 39
+control 40
+control elements 43 N
+control unit 35
+normal operation 10
+conveyor speed 39
+cooling 37, 40
+O
+cooling unit 35
+operating modes 39
+customer interface 35
+P
+D
+PCM - power control module 35
+declaration of conformity 145
+pilot laser 36
+DSP (Digital Signal Processor) 38
+power consumption max. 39
+power density 39
+E
+power line frequency 39
+energy density 39
+power range 14
+exhaust unit 29
+power stability 39
+PowerPC 38
+F
+protocols for maintenance 69
+flat field lens 36
+pump chamber 36
+FM (Fast Move) 38
+pump source 39
+focus diameter 39
+Q
+H
+Q-switch 36, 39
+humidity 39
+R
+I
+request form 151
+input fuse 39
+interface assignment 132 S
+interfaces 29
+safety devices 13
+safety goggles 14
+L
+sealing 39
+laser beam expander 36
+service request form 5
+laser class 39
+Stillllegung 21
+laser classes 10
+storage 21
+laser head 36
+supply unit 35
+laser parameters 33
+supply voltage 39
+153
+
+Index
+system states 45
+T
+timing diagrams 138
+touch screen 47
+transport 21
+V
+vector stroke 33
+W
+warning lights 13
+wavelength 39
+weight 39
+working distance 41
+154
+
+I@+& &
+C@&#&!0606"0 1
+
+16. OTHER INFORMATION
+Emergency telephone number
+European Region +33 (0) 140025045
+United States of America +1-215-592-3000
+Legend
+ACGIH American Conference of Governmental Industrial Hygienists
+BAc Butyl acetate
+OSHA Occupational Safety and Health Administration
+PEL Permissible Exposure Limit
+STEL Short Term Exposure Limit (STEL):
+TLV Threshold Limit Value
+TWA Time Weighted Average (TWA):
+| Bar denotes a revision from prior MSDS.
+The information provided in this Safety Data Sheet is correct to the best of our knowledge, information and belief at the date of its publication. The information given is designed only as a guidance for safe
+handling, use, processing, storage, transportation, disposal and release and is not to be considered a warranty or quality specification. The information relates only to the specific material designated and
+may not be valid for such material used in combination with any other materials or in any process, unless specified in the text.
+Version: 1
+Revision date: 08.09.2003 .0
+Print Date:12/09/2004
+Layout 210298
+
+13. DISPOSAL CONSIDERATIONS
+Environmental precautions: No special environmental precautions required.
+Disposal
+Unused material may be incinerated or landfilled regulations. in facilities meeting local, state, and federal
+Contaminated packaging:
+Empty containers should be taken to local recyclers for disposal. Refer to applicable federal, state, and local regulations.
+European Waste Catalogue (94/3 EC)
+The definitive assignment of this material to the appropriate EWC group and thus its proper EWC code will depend on the use that is made of
+this material. If the material as delivered must be disposed of, or you require assistance with assigning the proper EWC code, please contact
+your local Rohm and Haas office
+14. TRANSPORT INFORMATION
+Classification for ROAD and Rail transport (ADR/RID):
+ Not regulated (Not dangerous for transport)
+Classification for SEA transport (IMO-IMDG):
+ Not regulated (Not dangerous for transport)
+Classification for AIR transport (IATA/ICAO):
+ Not regulated (Not dangerous for transport)
+15. REGULATORY INFORMATION
+Label
+Classification and labeling have been performed according to EU directives 67/548/EEC and 99/45/EC including amendments.
+Hazard symbol and Indication of danger
+This product is not hazardous according to EEC Directives 67/548/EEC and 99/45/EC.
+EU. EINECS (EINECS) This product satisfies all the requirements of the European Inventory of Existing Chemical Substances (EINECS).
+US. Toxic Substances Control Act (TSCA) All components of this product are in compliance with the inventory listing requirements of the U.S. Toxic Substances Control Act (TSCA) Chemical
+Substance Inventory.
+
+Hygiene measures: General industrial hygiene practice.
+Protective measures: Facilities storing or utilizing this materifacility. al should be equipped with an eyewash
+9. PHYSICAL AND CHEMICAL PROPERTIES
+Physical state Beads
+Colour Amber to red
+Odour Amine odor
+pH 5,0 - 9,0 Aqueous slurry
+Boiling point/range 100 °C water
+Ignition temperature 500 °C estimated
+Lower explosion limit Not Applicable
+Upper explosion limit Not Applicable
+Vapour pressure at Water solubility20 °C water
+insoluble
+Relative density 1,08 - 1,20
+Percent volatility 59 - 64 %
+NOTE: The physical data presented above are typical values and should not be construed as a specification.
+10. STABILITY AND REACTIVITY
+Hazardous reactions Stable under recommended storage conditions.
+Materials to avoid
+Strong Oxidizers
+polymerization
+Product will not undergo polymerization.
+11. TOXICOLOGICAL INFORMATION
+Acute oral toxicity LD50 rat >5.000 mg/kg
+Acute dermal toxicity
+LD50 rabbit >5.000 mg/kg
+MutagenicityDid not show mutagenic effects in animal experiments.
+12. ECOLOGICAL INFORMATION
+Limited effects are expected from exposure of the environmental compartments by insoluble plastic beads of large diameter (0.3 to 1.2 mm).
+
+Specific hazards during fire fighting:
+Do not use a solid water stream as it may scatter and spread fire. Dusts at sufficient concentrations can form explosive mixtures with air.
+Special protective equipment for fire-fighters:
+In the event of fire, wear self-contained breathing apparatus.
+6. ACCIDENTAL RELEASE MEASURES
+Personal precautions
+Ventilate the area. Refer to protective measures listed in sections 7 and 8.
+Avoid dust formation. Material can create slippery conditions.
+Environmental precautions
+No special environmental precautions required.
+Methods for cleaning up
+Pick up and transfer to properly labelled containers.
+7. HANDLING AND STORAGE
+HandlingNo special precautions required. For personal protection see section 8. NOTE: This product as
+supplied is a whole bead resin and may produce slight eye irritation. However, the ground form of this resin should be treated as a severe eye irritant. Worker exposure to ground resins can be controlled
+with local exhaust ventilation at the point of dust generation, or use of suitable personal protective equipment (dust/mist air-purifying respirator and safety goggles). Avoid repeated freeze-thaw cycles;
+beads may fracture. If frozen, thaw at room temperature.
+StorageStorage temperature:
+Other data:49 °C (120 °F)
+Stable under normal conditions.
+Further information: CAUTION: Do not pack column with dry ion exchange resins. Dry beads expand when wetted; this
+exapnsion can cause glass column to shatter.
+8. EXPOSURE CONTROLS / PERSONAL PROTECTION
+Exposure limit(s)
+Exposure limits are listed below, if they exist.
+Exposure controls
+Eye protection: safety glasses
+Hand protection:Cotton or canvas gloves. leather gloves
+Respiratory protection: No personal respiratory protective equipment normally required.
+
+SAFETY DATA SHEET
+Safety Data Sheet according to Directive 2001/58/EC
+1. PRODUCT AND COMPANY IDENTIFICATION
+Product name: AMBERLITE(TM) MB6113 Resin
+Product description: Quaternary ammonium divinylbenzene/styrene copolymer.
+Product Use Description: Ion exchange and/or Adsorption process
+Supplier Rohm and Haas Company Lennig House 2, Mason Avenue
+Croydon CR9 3NB United Kingdom Telephone: +44 (0)208-774-5300
+Emergency telephone number United Kingdom +44 (0)191-4898181
+2. COMPOSITION/INFORMATION ON INGREDIENTS
+This product is a preparation.
+This product does not contain any substances presenting a health or environmental hazard as defined by Directive 67/548/EEC nor any substances for which there are community workplace exposure limits
+in concentrations equal to or greater than those laid down in Directive 99/45/EC.
+3. HAZARDS IDENTIFICATION
+This product is not hazardous according to EEC Directives 67/548/EEC and 99/45/EC.
+4. FIRST AID MEASURES
+Skin contact:
+Wash off immediately with soap and plenty of water.
+Eye contact:
+Rinse thoroughly with plenty of water for at least 15 minutes and consult a physician.
+5. FIRE-FIGHTING MEASURES
+Thermal decomposition 190,00 °C
+Suitable extinguishing media:
+carbon dioxide (CO2) dry chemical
+water spray
+
+MAQ$Q6n`d'@_ofmbAtOo{~alySnwJs]P28>>@BT@?>=<;:9876543210/.-,+*
+
+ALLTEC Service Request
+Error Description
+Error Message/Error Code Detailed Error Description
+(how often do you face the problem?)
+(is the problem reproduceable?)
+What have you tried to solve the problem?
+Priority Low Medium High
+Spare Parts Request
+Part Number Part Description
+Error Message/Error Code
+ALLTEC sends
+service engineer for repair exchange part
+new part
+ALLTEC International Service Centre An der Trave 27  31 Hotline Tel.: +49-(0)38823/55-360
+23923 Selmsdorf Tel.: +49-(0)38823/55-300   Germany Spares Tel.: +49-(0)38823/55-364 E-mail: service@alltec.org
+Fax: +49-(0)38823/55-301 Internet: http://www.alltec.org
+Page 2 of 2
+
+An der Trave 27 31 23923 Selmsdorf   Germany Hotline Tel.: +49-(0)38823/55-360 Spares Tel.: +49-(0)38823/55-364
+Tel.: +49-(0)38823/55-300 Fax: +49-(0)38823/55-301 E-mail: service@alltec.org Internet: http://www.alltec.org
+
+ALLTEC Service Request
+If you need service support please it to fill in this form and fax or e-mail ALLTEC International Service Centre:
+Fax No.: +49-(0)38823 55-301
+E-mail: service@alltec.org
+For an immediate and effectivwe need your cooperation. e processing of your request
+Please fill in this form precisely and completely.
+Customer Data
+Customer/Company Address
+Contact Name
+Phone
+Fax
+E-mail
+Laser System
+Type/Serial Number Order Number
+Date of Commission
+Counter/Working Hours
+Software Version
+ALLTEC International Service Centre
+Page 1 of 2
+
+TheDeclarationofConformityinthismanual
+isvaliduntilDecember28,2009.
+TheDeclarationofConformityvalidfromDecember29,2009
+canbefoundinthedirectoryConformity
+ontheManualCD.

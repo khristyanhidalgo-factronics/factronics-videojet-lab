@@ -1,0 +1,758 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\ST710-KHXV.102_e.pdf
+# cifrado=False bloques=23 caracteres=36467
+
+Wiringdiagram
+ST710-KHXV.102FH
+PIDcontroller
+Ordernumber900310.0 22
+Productdescription
+Thismicro-processedcontrollerservesfortemperaturecontrolathighmeasuringaccuracy.
+For connection with a NTC sensor. T hePIDregulationand/orthermostatregulationcan
+beactivatedviaparametersetting.Outputsare three r elaycontacts.
+Red LEDlampsindicatethestatusoftheoutputrelays.Thesetpointsandparametersdetermining
+the processareadjustedwitha5-eldplasticfoilkeyboard.
+Sensor: NTC
+Range: -30...90 °C
+Frontsize: 84mmx42mm
+Panelcut-out: 67.5mmx31.5mm
+Connector: plugandsocket
+1
+
+2
+
+Key UP
+· starts defrosting ( after 3 seconds )
+· increasing the setpoint
+· within p arameter m en u : selection of the next parameter level (C -- , b -- , etc.) or ne xt
+p arameter name (C 1, C 2, ...)
+· within parameter menu : increasing p arameter value
+Key DOWN
+· switching off the buzzer (parameter C64 )
+· decreasing the setpoint
+· within parameter menu: selection of the previous parameter level (C -- , b -- , etc.) or
+previous parameter name (C 2, C 1, ...)
+· within paramet er menu: decreasing parameter value
+Fun c tion key 2  s tandard setting : switching setpoint
+(parame t er H32 )
+· switching the control on or off
+· setpoint changeover
+· start autotuning of the PID control ( heating circ uit )
+· connection to an output relay
+Key SET
+· displaying the setpoint
+· within parameter menu : confirmation of the selected parameter level or parameter
+name
+· together with keys UP und  DOWN  to adjust a parameter value or the setpoint
+Fun c tion key 1  s tandard setting : s tandby
+(parame t er H31 )
+· switching the c ontrol on or off
+· setpoint changeover
+· start autotuning of the PID control (heating circ uit )
+· connection to an output relay
+SOFTWARE .102
+Adjustment options
+
+A -- Analogue level Parameter for analogue in - and outputs
+d -- Defrost level Defrosting parameters (control circuit 1)
+H -- Hardware level Hardware parameters
+b -- Between level Connecting parameters
+C -- Controller level Application parameters
+By simultaneously pressing the UP and DOWN key for at least 4 seconds, the controller changes
+to menu level. It consists of several sub - menus listed by the respective initial letter followed by 2
+lines (e.g. C -- for the C - level).
+Parameter Untermenü Funkti on
+Die Version num b er of the s oftware c an be requested by simultaneously pressing keys SET +
+ U P  +  DOWN  .
+Menu level
+nd
+* The ac tiv ation of the 2 setpoint C2 is indicated in the display by a flashing point on the right. C2
+can be activated either with the switching input or with function key 1 or 2
+(see parameter H31 / H32 ).
+See also chapter Annotations for setpoint changeover .
+Software version
+Setpoint 2 f o r control circui t 1 C10...C11 0.0 °C
+C2
+(*)
+Setpoint 1 for control circ uit 1 C10...C11 0.0 °C
+C1
+and/or PID - control
+Parameter setting of the control setpoint
+The setpoint C1 can be selected by pressing the SET - key .
+By ad ditionally pressing the U P  - or  DOWN  - key it can be adjusted .
+Para - Function description Adjustment range Standard Custom
+meter setting setting
+First control level:
+
+The last parameter of the respective sub - menu (e.g. C99, b99...) corresponds to the current
+password of this level and can be changed there.
+Attention : With m aster password - 19 a selected parameter level can be i nvoked ( important in
+case of a forgotten password ).
+If the password is correct, the display jumps to the sub - menu and shows the first listed parameters
+when the set key is released. Pressing the SET key, the value of the selected parameter is
+indicated. Additiona lly pressing the UP or DOWN key, the value can be adjusted. Releasing all
+keys, the new value is saved long term.
+If UP and DOWN keys are simultaneously pressed again for at least 4 seconds, the display
+switches to the menu level again. Upon repeated press ing for 4 seconds or no pressing of any key
+for more than 60 seconds, the system jumps back to the initial state.
+Adju stment of control parameters
+Selection of the sub - menu takes place by scrolling with the UP and DOWN key. Upon pressure of
+the SET key the password of the respective level is requested. The password must be adjusted by
+additionally pressing the UP or DOWN key (standard value: 0).
+
+2
+3
+4
+5
+6 8
+7
+2
+3
+4
+5
+6 8
+7
+2
+3
+4
+5
+6 8
+7
+2
+3
+4
+5
+6 8
+7
+6 8
+7
+1
+2 0
+3
+H48
+4
+5
+Analogue output
+Signal processing
+Heating
+PID Cooling
+Analogue
+Hybrid
+K4
+K3
+K2
+C1...11
+C21...29
+A1...40
+C41...49
+H32
+1
+0
+H41
+K1
+1
+0
+H42
+1
+0
+H43
+H31
+C61...65 1
+0
+H44
+C82...89
+A50...55
+Function
+key 1
+Function
+key 2
+Alarm
+Actual
+value
+Thermostat 3
+Thermostat 2
+Thermostat 1
+Controller configuration
+Block diagram of the controller structure . With the different p arameter s (H41 . ..H4 4 ) a specific
+control function c an be assigned to each output. Every control module is configured by the
+respective parameter.
+
+C29 Function control circuit 2 0: relay off 0
+at sensor error 1: relay on
+C28 Minimum action time control 0...400 sec. 0 sec.
+circuit 2 "OFF""
+C27 Minimum action time control 0...400 sec. 0 sec.
+circuit 2 "ON"
+C26 Hysteresis mode 0: symmetrical 0
+control circuit 2 1: one -sided
+C25 Hysteresis control circuit 2 0.1 ... 99.9°K 1K
+C24 Switching sense 0: heating function 1
+control circuit 2 1: cooling function
+C23 Delta W2 (b1=1) -99...99°K -3 K
+C21 Setpoint control circuit 2 -99...999°C 2 0°C
+(b1=0)
+* The activation of the second desi red value C2 is indicated on the display with a flashing point to
+the right. It can either be activated via switching entrance or with function key 1 (depending on
+parameter H31/H32 ).
+See also chapter Annotations for setpoint chang eover .
+Thermostat 2
+Para - Function Adjustment range Standard Custom
+meter setting setting
+C11 Control range limitation, C10 ... 999.0°C 28, 0°C
+maximum Setpoint 1
+C10 Control range limitation, -99.0°C ... C11 20 .0°C
+minimum Setpoint 1
+C9 Fun ction control circuit 1 0: relay off 0
+at sensor error 1: relay on
+C8 Minimum action time control 0 ... 400 sec. 0 sec.
+circuit 1 "OFF"
+C7 Minimum action time control 0 ... 400 sec. 0 sec.
+circuit 1 "ON"
+C6 Hysteresis mode 0: symmetrical 0
+control circuit 1 1: one -sided
+C5 Hysteresis control circuit 1 0.1 ... 99.9°K 1.0°K
+C4 Switching sense 0: heating function 1 0
+control circuit 1 1: cooling function
+C3 Offset for C1/C2 - 99.0 ... 99.0°K 0.0°K
+C2 Setpoint control circuit 1 (*) - 99.0 ... 99.0°K 2 0.0°C
+C1 Setpoint control circuit 1 - 99 ... 999°C 2 0.0°C
+This level contains the application parameters.
+Thermostat 1
+Para - Function Adjustment range Standard Custom
+meter setting setti ng
+The C - level (controller)
+
+Thermostat 3
+Para- meter Function Adjustment range Standard setting Custom setting
+C41 Sollwert control circuit 3 (b2=0) -99...999°C 0.0°C
+C43 Delta W3 (b2=1) -99.0 ... 99.0°K 0.0°K
+C44 Switching sense control circuit 3 0: heating function 1: cooling function 0
+C45 Hysteresis control circuit 3 0.1 ... 99.9°K 1.0°K
+C46 Hysteresis mode control circuit 3 0: symmetrical 1: one-sided 0
+C47 Minimum action time control circuit 3 "ON" 0...400 sec. 0 sec.
+C48 Minimum action time control circuit 3 "OFF"" 0...400 sec. 0 sec.
+C49 Function control circuit 3 at sensor error 0: relay off 1: relay on 0
+Alarm circuit
+Para- meter Function Adjustment range Standard setting Custom setting
+C61 Lower alarm value -99.0 ... C62 -16,5
+C62 Upper alarm value C61 ... 999.0 30.0
+C63 Alarm functions 0: Boundary alarm, relative boundaries 5
+1: Boundary alarm, absolute boundaries
+2: Range alarm, relative boundaries
+3: Range alarm, absolute boundaries
+4: Boundary alarm, relative boundaries, alarm invers
+5: Boundary alarm, absolute boundaries, alarm invers
+6: Range alarm, relative boundaries, alarm invers
+7: Range alarm, absolute boundaries, alarm invers
+C64 Special function at boundary alarm 0: not active 1: flashing display 4
+2: buzzer 3: buzzer + flashing display
+4: like 3, buzzer can be cancelled
+5: like 4, restarts after 10 min. 6: like 4, restarts after 30 min.
+C65 Hysteresis alarm circuit 0.1 ... 9.9°K 0,1K
+
+PID-controller
+Para- meter Function Adjustment range Standard setting Custom setting
+C82 Proportional area at PID regulation 0.1  999.0°K 5 K
+C83 Reset time at PID regulation (I-portion) 0...999 sec., 0: inactive 300 sec.
+C84 Lead time at PID regulation (D-portion) 0...999 sec., 0: inactive 0 sec.
+C85 Cycle time at PID regulation 2...100 sec. 10 sec.
+C86 Control variable dead volume 0.0  100.0% 0.0%
+C87 Function PID control circuit at sensor error -100.0% ... 0 ... 100.0% 0.0%
+C88 PID-mode 0: PID 1: DiffPID 0
+ (2 relays  heating, cooling) 2: PID with dead volume at
+ analogue exit
+C89 Cycle time motor valve (Differential PID) 2...100 sec. 8 sec.
+Password
+Para- meter Function Adjustment range Standard setting Custom setting
+C99 Password C-level -99999 0
+Annotations for setpoint changeover
+and/or The changeover of the two setpoints
+The following regularities are valid:·A setpoint switched by a function key
+pressing another function key. The function keys must be set to setpointchangeover with parameters
+ ·The activation of the second setpoint C2is indicated by a flashing point at the right side of the temperature controller.
+ ·In case of a power failure and/or standby operation the last condition is stored.
+C1 and C2 can be executed as well with function key F1
+F2.
+C1 to C2 can be switched back by
+H31 = 2 (F1) and/or H32 = 2 (F2).
+
+C2: Setpoint control circuit 1
+Setpoint C2 can only be dis played with the SET - key , if input E1 is closed or a function key is
+pressed (see also chapter Annotations for setpoint changeover ).
+C3: Offset for C1/C2
+This adjusted value will build the difference to the setpoint for control circuit 1, i.e. there is no
+regulation according to the pre - set value, but according to the sum of desired value and the value
+of C3 .
+C4: Switching sen se control circuit 1
+The switching sense for the relays, i.e. cooling or heating function, can be programmed
+independently. Heating function means that the contact falls as soon as the pre - set setpoint is
+reached, thus power interruption. At cooling functi on the contact only tightens, if the actual value is
+above the required setpoint.
+C5: Hysteresis control circuit 1
+The hysteresis can be set symmetrically or one - sided at the desired value (see C6 ). At one - sided
+setting, the hysteresis works downward with heating contact and upward with cooling contact. At
+symmetrical hysteresis, half of the hysteresis value is effective below and half of the value above
+the switching point (see fig. 1 and 2).
+Fig. 1: Heating controller, one - sided hysteresi s Fig. 2: Cooling controller, symmetrical hysteresis
+C6: Hysteresis mode control circuit 1
+Th is parameter allow s selection as to whether the hysteresis values which are adjustable with C5
+are set symmetrically or one - sided at the respective switching point. At symmetrical hysteresis, half
+of the hysteresis value is effective below and half of the value above the switching point. The one -
+sided hysteresis works downward with heating contact and upward with cooling contact.
+C7/C8: Minimum action time c ontrol circuit 1 "On"/"Off"
+These parameters permit a delay in switching on/off the relay in order to reduce the switching
+frequency. The adjusted time sets the entire minimum time period for a switching - on or switching -
+off phase.
+C1: Setpoint control circuit 1
+This value corresponds with the setpoint set at the first control level .
+Parameter description C - level:
+Thermostat - 1
+
+C21: Setpoint control circuit 2 (thermostat) (b1=0)
+If b1 =1, this value is ineffective.
+C23: Value deltaW2 (b1=1)
+If b1 =1, the setpoi nts for control circuit 1 and 2 are linked with one another via switching difference
+deltaW2 ( C23 ) (operation with deltaW).
+The following applies: Setpoint thermostat 2 = setpoint control circuit 1 ( C1/C2 ) + deltaW2.
+This difference can take positive or ne gative values. Thus, a leading or following contact can be
+realised.
+C24: Switching sense control circuit 2
+The switching sense for the relays, i.e. cooling or heating function, can be programmed
+independently at works. Heating function means that the con tact falls as soon as the pre - set
+setpoint is reached, thus power interruption. At cooling function the contact only tightens, when the
+actual value is above the required setpoint.
+C25: Hysteresis control circuit 2
+The hysteresis can be set symmetrically or one - sided at the setpoint (see C26 ). At one - sided
+setting, the hysteresis works downward with heating contact and upward with cooling contact. At
+symmetrical hysteresis, half of the hysteresis value is effective below and half of the value above
+the sw itching point (see fig. 1 and 2).
+C26: Hysteresis mode control circuit 2
+Th is parameter allow s selection as to whether the hysteresis values which are adjustable with C25
+are set symmetrically or one - sided at the respective switching point.
+At symmetrical hysteresis, half of the hysteresis value is effective below and half of the value
+above the switching point. The one - sided hysteresis works downward with heating contact and
+upward with cooling contact.
+C27: Minimum action time control circuit 2 "On"
+C2 8: Minimum action time control circuit 2 "Off"
+These parameters permit a delay in switching on/off the relay, in order to reduce the switching
+frequency. The adjusted time sets the entire minimum time period for a switching - on or switching -
+off phase.
+C29: Function control circuit 2 at sensor error
+At sensor error the selected relay (see H41 43 ) falls back into the condition pre - set here.
+C9: Function control circ uit 1 at sensor error
+At sensor error the selected relay (see H41 43 ) falls back into the condition pre - set here.
+C10: Setpoint limit (minimum) setpoint 1
+C11: Setpoint limit (maximum) setpoint 1
+The adjustment range of the setpoint can be limited in bot h directions. This is to prevent the end
+user of a unit from setting inadmissible or dangerous setpoints.
+Thermostat - 2
+
+C41: Setpoint thermostat 3 (b2=0)
+If b2=1, this value is ineffective.
+C43: Value deltaW3 (b2=1)
+If b2 =1, the setpoints for thermostat 1 and 3 are linked with one another via switching difference
+deltaW3 (operation with deltaW). The following applies:
+Setpoint thermostat 3 = setpoint thermostat 1 ( C1/C2 ) + deltaW3.
+This difference can take positive or ne gative values. Thus a leading or following contact can be
+realised.
+C44: Switching sense control circuit 3
+The switching sense for the relays, i.e. cooling or heating function, can be programmed
+independently at works. Heating function means that the cont act falls as soon as the pre - set
+setpoint is reached, thus power interruption. At cooling function the contact only tightens, if the
+actual value is above the required setpoint.
+C45: Hysteresis control circuit 3
+The hysteresis can be set symmetrically or one - sided at the setpoint (see C46 ). At one - sided
+setting, the hysteresis works downward with heating contact and upward with cooling contact. At
+symmetrical hysteresis, half of the hysteresis value is effective below and half of the value above
+the switc hing point (see fig. 1 and 2).
+C46: Hysteresis mode control circuit 3
+Th is parameter allow s selection as to whether the hysteresis values which are adjustable with C45
+are set symmetrically or one - sided at the respective switching point.
+At symmetrical hy steresis, half of the hysteresis value is effective below and half of the value
+above the switching point. The one - sided hysteresis works downward with heating contact and
+upward with cooling contact.
+C47: Minimum action time control circuit 3 "On"
+C48: Minimum action time control circuit 3 "Off"
+These parameters permit a delay in switching on/off the relay in order to reduce the switching
+frequency. The adjusted time sets the entire minimum time period for a switching - on or switching -
+off phase.
+C49: Fun ction control circuit 3 at sensor error
+At sensor error the selected relay (see H41 43 ) falls back into the condition pre - set here.
+Thermostat - 3
+
+C63=3 limits absolute
+C63=2 limits relative
+Range alarm, alarm contact normal
+Fig. 4:
+C63=1 limits absolute
+C63=0 li mits relative
+Boundary alarm, alarm contact normal
+Fig. 3:
+C63=7 limits absolute
+C63=6 limits relative
+inverse
+Range alarm, alarm contact
+Fig. 6:
+C63=5 limits absolute
+C63=4 limits relative
+inverse
+Boundary alarm, alarm contact
+C61: Lower alarm value
+C62: Upper alarm value
+The exit alarm is a boundary alarm or a range alarm with one - sided hysteresis (see parameter
+C65 ). Both at the boundary alarm and the range alarm, limit values can be relative, i.e. going along
+with the setpoint C1/C2 , or absolute, i.e. independent of the setpoint C1/C2 . At boundary alarm the
+hysteresis works o ne - sided inwardly, and at range alarm outwardly (see fig. 3 - 6 below).
+Fig. 5:
+-
+C63: Function exit alarm
+The exit alarm evaluates an upper and a lower limit value (see parameters C61 and C62 ), whereas
+a selection is possible a s to whether the alarm is active if the temperature lies within these two
+limits, or whether the alarm is released if the temperature lies beyond them. In the case of sensor
+error, the alarm is activated independently of this adjustment. The exit can also be inverted, so that
+it functions like a release (see fig. 3  6).
+Alarm fun c tion s
+
+C82: Proportional band at PID regulation
+The propor tional band works in such a way that with approximation of the actual value to the
+setpoint the variable is reduced linearly from + - 100% to 0%.
+C83: Reset time at PID regulation (I - portion)
+C84: Lead time at PID regulation (D - portion)
+The proportional con troller as such has a remaining deviation of the actual value from the setpoint.
+The integral portion provides for a complete compensation of this offset.
+The reset time is a measure for the period of time needed to adjust a remaining temperature
+deviation of the size of the proportional range.
+If a small reset time is set, a fast post - adjustment will take place. At a too small reset time,
+however, the system may tend to vibrate.
+The differential portion dampens temperature changes.
+If lead time is set for long, damping is strong. At too long lead time, however, the system may tend
+to vibrate. At setting 0 the values are ineffective. It is therefore possible to realise a pure PI or PD
+regulation.
+C85: Cycle time at PID regulation
+During the cycle time the c ontrol exit runs through one switching period, i.e. once switched out and
+once switched on. The smaller the cycle time, the faster the regulation. By consequence, however,
+there is also an increased switching frequency of the output, which can lead to rapi d wear of relay
+contacts. For very fast control ways with the respective high switching frequency a voltage output
+is therefore of advantage.
+C86: Control variable dead volume
+With parameter C86 the size of the dead volume is
+adjustable in % of the PID variable.
+Usually this finds application with phased PID
+controllers (relays), in order to obtain a minimum switch -
+C64: Special function at alarm on time. At C88 = 1 (differential PID) a pseudo
+Here can be selected whether, in case of an emergency, the display flashes and/or the buzzer is to hysteresis can be realised this way. This leads to a
+start. decrease in the switching frequency, if actual value ~
+Attention: Switching off the alarm buzzer with th e DOWN key is only possible if C64 > 3. setpoint. For C88 = 2 the dead volume is made
+available at the analogue output as well (fig. 7).
+Sensor alarm (display F1L or F1H ) is indicated independently thereof by a flashing display and the
+buzzer. In this case the buzzer can always be switched off with the DOWN key. However it starts Fig. 7: Dead volume
+again after 10 minu tes if the error is still valid.
+C87: Function PID control circuit at sensor error
+C65: Hysteresis alarm circuit In the case a sensor error, the PID variable automatically goes to the condition set here.
+Hysteresis is set one - sided at the adjusted limit value. It becomes effective depending on alarm
+definition (see fig. 3 - 6).
+PID - control
+
+Thus, control valves almost show the same controlling results as analogue valves. The table
+shows the different behaviour of both modes within the same control system.
+C89: Cycle time control valve (DiffPID)
+This parameter sets the time the control valve needs to go from 0% to 100%.
+If C88 =1, the PID variable is converted to this interval. The PID cycle time ( C85 ) remains
+unaffected by this. When this time is defined, indication with a rounded up value in seconds is
+recommended.
+Furthermore C85 should be > = C89 .
+At ± 100% the respective exit remains durably active (synchronisation).
+, a new start of
+C99: Password
+the tuning process is necessary. The abovementioned parameters has been changed
+This p arameter is to set the password for the C  level.
+· Adjusting the setpoint requires a new tuning process.
+· Potentially you have to adjust ma nually the above mentioned parameters C82 , C83 , C84 , C85
+after the autotuning .
+Autotuning of the PID control circuit
+The a utotuning is supposed to adjust and optimize the control behaviour to the controlled system.
+The following is to be noticed :
+· Autotuning can be started with functi on key 1 or 2. ( H31 or H32 = 3 )
+· The a utotuning affects only the heating circuit. Before the tuning process at least one output
+relay (K1K4) has to be set to heating with parameters H41 . .. H44 = 5 .
+· The setpoint must be at least 20K more than the actual value, otherwise  ----  is displayed (f or
+2 s e c .) a nd a utotuning will not start .
+· During the tuning process the display alternates between the normally disp layed value (i.e. the
+actual value) and Auto ( the process can last for more than 1 hour ).
+· The t uning process changes parameters C82 , C83 , C84 , C85 .
+· After a power failure or after switching to standby mode before end of tuning
+- 30% 0% 30%
+- 20% 0% 20%
+5
+- 15% 0% 15%
+10% 10% 0%
+4
+0% 0%
+± 0
+25% 25% 0%
+3
++5% 5% 0%
+25% 25% 0%
+2
++20% 20% 0%
+20% 20% 0%
+1
+K2: cooling
+PID K1: heating K2: cooling DiffPID K1 : heating
+ The differential mode is particularly suitable for the use of control valves (e.g .
+K1=OPEN, K2=CLOSED). As long as the value computed by the PID circuit remains constant,
+both exits remain inactive, i.e. the valve stops at the current position.
+PID standard (C88=0/2) PID differential (C88=1)
+C88: PID - Mode
+[C88 = 0] PID s tandard
+[C88 = 1] PID d ifferen tia l (see below )
+[C88 = 2] PID s tandard with dead volume at analogue exit
+PID differential:
+
+Parameter description b - level:
+b1: Activation setpoint combination for thermostat 1 and the rmostat 2 (deltaW2)
+This parameter determines whether the setpoints for thermostat 1 and 2 independently adjustable
+(parameter C21) or whether they are tied with one another via a switching offset deltaW2
+(parameter C23).
+b2: Activation setpoint combinati on for thermostat 1 and thermostat 3 (deltaW3)
+This parameter determines whether the setpoints for thermostat 1 and 3 independently adjustable
+(parameter C41) or whether they are tied with one another via a switching offset deltaW2
+(parameter C43).
+b11: D elay control circuit 1, 2, 3 after "Power - On"
+This parameter allows a switching - on delay of relays after switching - on the mains voltage. This
+delay corresponds with the time set here.
+b12: Mutual delay control circuit 1, 2, 3
+This parameter makes a mutual switching - on delay of relays possible, depending on whichever
+contact is switched first.
+b13: Alarm suppression after "Power - On", "setpoint"
+This parameter allows a switching - on delay of the alarm contact after switching on the mains
+voltage. This delay corresponds with the time set here.
+Attention: Sensor errors are always indicated instantly , despite alarm suppression.
+b99: Password
+This parameter is to set the password for the blevel.
+b99 Password b - level - 99 ... 999 0
+b21 Linkage analogue output 0: regulating variable n.a.
+1: actual value
+2: setpoint
+b13 Alarm suppression after "P ower - On", 0...60 min. 0 min.
+"setpoint"
+b12 Mutual delay control circuit 1, 2, 3 0...400 sec. 0 sec.
+b11 Delay control circuit 1, 2, 3 after 0...400 sec. 0 sec.
+"Power - On"
+b2 Activation setpoint combination for 0: no combination 0
+therm ostat 1 and 3 (deltaW3) 1: setpoint thermostat 3 =
+ C1/C2 + C43
+b1 Activation setpoint combination for 0: no combination 1
+thermostat 1 and 2 (deltaW2) 1: Setpoint thermostat 2 =
+ C1/C2 + C23
+This level contains the parameters for different combinat ions.
+Para - Function Adjustment range Standard Custom
+meter setting setting
+b - level (between)
+
+H99 Passwor d H - level - 99..999 0
+L0 ST - Bus address 1  250 5
+H51 Mains freque ncy 0: 50Hz 0
+1: 60Hz
+H44 Function output K4 see H41 n.a.
+H43 Function output K3 see H41 4
+H42 Function output K2 see H41 5
+H41 Function output K1 0: no connection
+1: thermostat 1
+2: thermostat 2
+3: thermostat 3
+4: alarm function
+5: PID - mode heating 2
+6: PID - mode cooling
+7: Function key 1 (H31>0)
+8: Function key 2 (H32>0)
+H35 Activation of key 0: no key acknowledgement 0
+acknowledgement 1: key acknowledgement
+ with buzzer
+H32 Assigning function key 2 0: no function
+1: standby key
+2: setpoint 1 / setpoint 2 2
+3: start autotuning
+4: relay (H41H44)
+H31 Assigning function key 1 0: no function
+1: standby key 1
+2: setpoint 1 / setpoint 2
+3: start autotuning
+4: relay (H41H44)
+H17 Mode following "Power - On" 0: Off
+1: On 1
+2: Auto
+H16 Indication standby 0: display deactivated
+ (point to the right)
+1: AUS 1
+2: OFF
+H15 Temperature scale 0: Celsius 0
+1: Fahrenheit
+H12 Display 1 mode 1: actual value 1
+2: setpoint
+3: PID regulating variable
+H11 Indication mode display 1 0: integrals
+1: decimals in 0.5°K
+2: decimals in 0.1°K 2
+3: decimals in 0.01°K
+H1 Key - lock 0: no key - lock 0
+1: key - lock
+This level contains the hardware parameters.
+Para - Function Adjustment range Standard Custom
+meter setting setting
+H - level (hardware)
+
+Parameter description H - level:
+H1: Setpoint - lock
+The key - lock allows blocking of the setpoint adjustment ( C1 / C2 ) . However the parameters are
+indicated by pressing the SET key. And it is possible to change values within the parameter menu
+as usual.
+H11: Indication mode display 1
+The value can be indicated in integrals or with decimals in 0.5°K or 0.1°K. At indication in 0.5°K the
+value is rounded up or down. In general, all parameter indications are presented in 0.1°K.
+H12: Display 1 mode
+H12=1 indicates the actual value, H12=2 indicates the setpoint C1 or C2 and H12 =3 statically
+indicates the PID variable in the disp lay. Therefore, the current actual value can only be indicated
+with parameter A01 .
+H15: Temperature scale
+Indication can be switched between Fahrenheit and Celsius. At conversion, the parameters and
+setpoints maintain their numerical value and adjustment range. (Example: A controller with the
+setpoint of 0°C is switched to Fahrenheit. The new setpoint is then interpreted as 0°F, which
+corresponds to a temperature of - 18°C).
+NOTE: Indication limits with °F can be smaller than the actual measuring range!
+H1 6: Indication standby
+In standby mode the here set value appears in the display.
+H17: Mode following "Power - On"
+After switching on the mains voltage the controller automatically goes to the condition set here.
+H17=2 applies to the condition prior to the s eparation from the net.
+H31: Assigning function key 1
+H32: Assigning function key 2
+Setting =0 deactivates the key, =1 functions as standby key.
+H31/H32 =2 thus allows to change between setpoint 1 (C1) and setpoint 2 (C2).
+Setting =3 starts the autotunin g process.
+Setting =4 assigns the key to a relay specified with H41...H44
+ In case of a power failure the last condition is stored..
+ Exceptions:
+· Restart of autotuning
+· A possibly switched on relay must again be switched.
+H35: Activation of key acknowledgement
+This parameter permits to switch the internal buzzer on/off by key confirmation.
+H41 -44: Function output K1 -4
+Generally, the exits are exch angeable with parameter adjustments, in order to achieve an optimal
+relation of the existing hardware with regard to contact rating, kind of contact and cycle number.
+Therefore, these parameters first assign the exits to the controller function.
+H51: Main s frequency
+This parameter is to select the mains frequency.
+L0: Bus ad dress
+Adjust the ST Bus address.
+H99: Password
+This parameter is to adjust the password for the H level.
+
+d-level (defrosting functions)
+This level contains the parameters for defrosting.
+NOTE: Defrosting parameter only affects control circuit 1
+Para- meter Function Adjustment range Standard setting Custom setting
+d0 Defrosting interval TH1 1 ... 99h 0: no defrosting 0
+d2 Defrosting temperature TH1 -99.0 ... 999.0°C 10.0 °C
+d3 Defrosting time limit TH1 1  99 min. 0: no time limit 30 min.
+d9 Manual defrosting TH1 0...1 0
+d99 Password d-level -99...999 0
+Parameter description d-level:
+d0: Defrosting interval The "defrosting interval" defines the time, after which a defrosting process is started. After each
+defrosting start, this time is reset and runs the next interval.
+Manual defrosting: Pressing the key UP for at least 3 sec. the defrosting interval is activated earlier. Alternatively
+parameter d9 can be applied for this function, too. The next automatic defrosting process takes place again after the time d0. (defrosting synchronisation)
+d2: Defrosting temperature This permits to terminate defrosting when the adjusted desired temperature value is reached. The
+defrosting time set with "d3" nevertheless runs at the same time, i.e. it functions as safety net to terminate the defrosting process in case the defrosting temperature is not reached.
+d3: Defrosting time limit After the here set time the defrosting process is terminated.
+d9: Defrosting time limit At change of 0 - > 1 the defrosting process is started and the defrosting interval is re-set.
+(defrosting synchronisation)
+d99: Password This parameter is to set the password for the d-level.
+
+A-level (analogue values)
+This level contains the parameters for analogue inputs and outputs.
+Para- meter Function Adjustment range Standard setting Customsetting
+A1 Indication of actual value analogue input -
+A2 Actual value correction analogue input -99.0 ... 99.9 °K 0 °K
+A3 Weighing factor analogue input (without U, I-entrance) 0.50 ... 1.50 1.00
+A4 Sensor type 1: Thermo element type J 2: Thermo element type K
+11: Pt100 two-wire 12: Pt100 three-wire 25
+13: Pt1000 two-wire 14: Pt1000 three-wire
+25: NTC10 kOhm at 25 °C31: Voltage input 0...10V
+32: Voltage input 2...10V 41: Current input 0...20mA
+42: Current input 4...20mA
+A5 Indication value for lower value linear analogue input -99.0 ... 999.0 n.a.
+A6 Indication value for upper value linear analogue input -99.0 ... 999.0 n.a.
+A40 Time constant of the software filter 0: not active, average value with
+1: 2 measuring values (2*X s) 2: 4 measuring values (4*X s) 2
+3: 8 measuring values (8*X s) 4: 16 measuring values (16*X s)
+5: 32 measuring values (32*X s) 6: 64 measuring values (64*X s)
+7: 128 measuring values (128*X s)
+A50 Indication of the PID variable -
+A51 Indication value for lower value at analogue output (0V/0mA) -99.0  (A52-0.5) 0V if sensor error (b21 = 1) n.a.
+A52 Indication value for upper value at analogue output (10V/20mA) (A51+0.5)  999.0 n.a.
+A53 Indication value full cooling performance (-100.0..0%) 0 ... 10.0 (10 corresponds 10V or 20mA) n.a.
+A54 Indication value "0" performance 0 ... 10.0 (10 corresponds 10V or 20mA) n.a.
+A55 Indication value full heating performance (0..100.0%) 0 ... 10.0 (10 corresponds 10V or 20mA) n.a.
+A60Type setpoint sensor 0: fixed value from parameter (=C1) 0
+A99 Password A-level -99 ... 999  0
+
+Parameter description A-level:
+A1: Indication of actual value analogue input The here indicted temperature value is the sum of the actual measured value of sensor F1 and the
+actual value correction according to parameter A2.
+A2: Actual value correction analogue input With this parameter it is possible to correct actual value deviations caused by sensor tolerances or
+extremely long sensor lines for example. The control measuring value is increased or decreased by the here set value.
+A3: Weighing factor analogue input (without U, I-entrance) With this parameter the actual value can be submitted to weighing. The measured value is
+multiplied by it and both indicated in the display and applied for regulation.
+A4: Analogue input type These parameters permit selection of the sensor type, respectively the type of analogue input if the
+needed hardware prerequisites are available.
+A5: Indication value for lower value linear analogue input A6: Indication value for upper value linear analogue input
+These parameters allow scaling of the linear analogue input. The value to be indicated for the lower and upper input value then defines the range the controller will indicate.
+A40: Time constant of the software filter With several measuring values, it is possible to obtain an average value. If a sensor with a very
+fast reaction to external influences is used, an average value ensures a calm signal process.
+A50: Indication of the PID variable Indication of the internally computed PID variable from -100%... 100%.
+A51: Indication value for lower value at analogue output (0V) A52: Indication value for upper value at analogue output (10V)
+Indication of the actual value (see b21) is subject to the following range adjustment: If the indication value reaches the value set in A51, voltage is 0 V.
+If the indication value reaches the value set in A52, voltage is 10 V.
+A53: Indication value full cooling performance (-100.0..0%) A54: Indication value "0" performance
+A55: Indication value full heating performance (0..100.0%) Indication of the actual value (see b21) is subject to the following range adjustment:
+If cooling is to be performed with 100% cooling performance, voltage is as set in A53. If neither heating nor cooling is required, tension is as set in A54.
+If heating is to be performed with 100 % heating performance, voltage is as set in A55.
+A60 Typesetpoint sensor The setpoint of this device is a fixed value from the data store (C1).
+A99: Password This parameter permits setting of the password for the A-level.
+
+Status indications and error messages
+Message Cause Error elimination
+F 1_ Sensor error (H: open-circuit or L: short-circuit at sensor F1) Check sensor
+F 2_ Sensor error (H: open-circuit or L: short-circuit at 3-wire Check sensor
+correction
+E P_ 0: Error program memory 1: Error parameter memory Repair controller
+=> ALL EXITS WILL BE SWITCHED OFF
+--- Display overrun or key-lock
+flashing indication Temperature alarm at too high or too low temperatur (if activated)
+If an error is recognised in the parameter memory (indication EP) and therefore the saved settings cannot to be used, relays are set out of power supply.
+Independent of this, a sensor error (display F1/2L or F1/2H) is indicated by a flashing display andthe buzzer. Switching off the buzzer with the DOWN key is possible at any time. The buzzer
+restarts after 10 minutes if the error is eliminated.
+
+Technical data of ST710-PHXV.102HP
+Measuring inputF1: Temperature sensor NTC type 103AT-11-50081 (1%, 10 kOhm at 25 °C)
+ Measuring range:
+OutputsK1: Relay, normally-open contact, 8(1.5)A 250V. permanent current max. 4A (param. H41)
+K2: Relay, normally-open contact, 8(1.5)A 250V, permanent current max. 4A (param. H42)K3: Relay, normally-open contact, 6 (0.5)A 250V, permanent current max. 4A (param. H43)
+Installed buzzer, ca. 85dB
+DisplayOne 4-digit LED-Display, height 13mm, for temperature display, colour red, with decimal point
+Three LEDs, diameter 3mm, for status display of the outputs K1, K2 and K3.
+Power supply12-24V~ or 16-36V=, power consumption max. 3VA
+Connectors Plug and socket
+Terminal A: 12-pole, spacing 5.0 mm, for cable up to 2.5 mm² Terminal B: 11-pole, spacing 3.5 mm, for cable up to 1.5 mm²
+Ambient conditions:Storage temperature: -20°C...+70°C
+Operating temperature: 0...55°C Relative humidity: max. 75%, without dew
+Weightca. 280g
+EnclosureFront IP65, IP00 from behind
+DirectivesCE 73/23/EEC
+EN 60335-1:2002 EN 60730-1:2002
+ EN 61010-1:2001
+ CE EMV-directive 89/336/EEC,
+Installation data The unit is to be installed in an instrument panel.
+Front size: 84 x 42 mmPanel cut-out: 67.2 x 31.2 mm
+Installation depth: ca. 90 mmMounting by fixing strap
+-30...+90 °C

@@ -1,0 +1,113 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\85109-AA Installation of Access Box.pdf
+# cifrado=False bloques=9 caracteres=5346
+
+AL-85109Service Part Installation Instruction
+Installation of the Access Box
+1 Installation of the Access Box
+The access box enables the data transmission from for better remote serviceability. The box is suand to the laser system via Wi-Fi or cellularpplied with 20V DC voltage and max. 1A via a
+USB-C interface.
+1.1 Requirements
+Wireless network
+Available signalCheck the signal strength to define the best position for the access box!
+Ambient temperature between 5 and 40 C
+The system must be equipped with Chameleon AL-80518 (red) or newer. Older boards do not support the access box!
+The operating software must be CMark 5.0 or higher.Older versions do not support the access box.
+1.2 Installation PossibilitiesNoteThe access box AB210 is only to be used with the laser systems 3350/CSL30.
+The access box AB220 is only to be used with the laser system 3350.
+The laser system supports the access box starting from CMark version 5.0.
+ModelAccess Option
+AB210Wi-Fi
+AB220Wi-Fi and cellular
+The access box is delivered in a package including a holding bracket, screws and cable ties.The cable length is 3m.
+05/23 - Rev. AA 1
+
+Service Part Installation InstructionAL-85109
+Installation of the Access Box
+Directly to the housing of the supply unit
+1.Mount the access box to the holes in the side of the supply unit using the included screws.
+With a holder to the bottom of the supply unit
+1.Bend the holder as required.
+2.Mount the access box to the holder using the included screws.
+bending example
+2 05/23 -Rev. AA
+
+AL-85109Service Part Installation Instruction
+Installation of the Access Box
+3.Select the appropriate position at the supply unit (see examples below).
+4.Mount the holder to one of the holes in the bottom of the supply unit.
+05/23 - Rev. AA 3
+
+Service Part Installation InstructionAL-85109
+Installation of the Access Box
+Anywhere within the cable range (3 m)
+1.Fix the box as required, e.g. using the included cable ties.
+4 05/23 -Rev. AA
+
+AL-85109Service Part Installation Instruction
+Installation of the Access Box
+1.3 Connection of Access Box to Supply Unit
+DangerBefore starting any work the laser system must be completely discon-nected!
+1.Turn the key-operated switch to position 0.Remove the key, in order to ensure that the laser system cannot be
+switched on.
+2.Save the database in theFor a detailed description see the manual of the software. software.
+3.Turn off the main switch.
+4.Pull the mains plug.
+1.Unlock the cover inserting a large screwdriver, turning it to the left.
+2.Open the cover (it is held in upright position by a pneumatic spring).
+2
+1
+05/23 - Rev. AA 5
+
+Service Part Installation InstructionAL-85109
+Installation of the Access Box
+3.Feed the cable of the access box through the cable gland of the supply unit. Depending on the backpanel type:
+- Loosen the union nut of the cable gland or - Disassemble the cable passages frame, take the corresponding cable passage block, insert
+the cable, insert the block back into the frame and re-assemble the frame.
+4.Guide the cable inside to the front of the supply unit (see below).
+union nut
+union nut
+cable passages framewith cable passage blocks
+6 05/23 -Rev. AA
+
+AL-85109Service Part Installation Instruction
+Installation of the Access Box
+5.Connect it to the USB connector on the Chameleon board.
+NoteThe required USB connector is only newer. available on Chameleon AL-80518 or
+Older boards do not support the access box.
+6.Lay the cable as shown in the front of the supply unit (if the complete 3m are not required).
+7.Fix the cable position using cable ties (see above).
+8.Make sure the union nut of the cable gland is properly tightened to ensure IP65.
+9.Close the supply unit.
+NoteIf the box needs to be moved to a different position later, e.g. for betterreception, you need to remove the cable ties and loosen the union nut of the
+cable gland to pull out the cable.
+Make sure that the remaining cable is laid and tied properly again.
+cable gland
+cableties
+Chameleon board
+USB
+remainingcable
+connector
+05/23 - Rev. AA 7
+
+Service Part Installation InstructionAL-85109
+Installation of the Access Box
+1.4 Activation
+Depending on your local regulations you can use Wi-Fi (AB210) or either cellular network orWi-Fi (AB220) with the access box. In the following both options are described.
+1.Log into TCS+/LinxVision software.
+2.Open the settings menu and go to Laser Unit Settings.
+3.In the Laser Unit Settings open Laser Configurationoperated in. and select the Country the box is
+4.Cellular: In the Laser Unit Settings open Confirm with Cellular NetworkSave and check the Enable box.. Continue with step 6.
+cellular board with LTE antenna
+Wi-Fi boardwith Wi-Fi
+antenna
+8 05/23 -Rev. AA
+
+AL-85109Service Part Installation Instruction
+Installation of the Access Box
+5.Wi-Fi: In the Laser Unit Settings open Wi-Fi Networkwith Save. and check the Enable box. Confirm
+If there are several Wi-Fi connections, select the desired connection and click on in the pen menu.Connect
+A dialog is displayed. Make the required selections and enter the password of the local accesspoint. Confirm with Connect.
+NoteWAP2-Enterprise is available.
+6.Click on Close to close the dialog. The cellular network or Wi-Fi is enabled.
+NoteIf the system is connected to the customers network the customer can alsoaccess the UI of the laser system via web browser.
+05/23 - Rev. AA 9

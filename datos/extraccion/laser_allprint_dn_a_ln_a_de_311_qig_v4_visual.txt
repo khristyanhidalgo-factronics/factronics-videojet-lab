@@ -1,0 +1,178 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\DE-311_QIG_v4.pdf
+# cifrado=False bloques=11 caracteres=7701
+
+t
+Front Panel View
+Female DB9 serial porDIP Switches
+NPort DE-311 Quick Installation Guide
+Fourth Edition, September 2006
+1. Overview Welcome to Moxas NPort Express DEcommunication device that allows you to control RS-232/422/485 -311, a compact palm-sized data 2. Package Checklist Before installing the DE-311, verifyfollowing items: that the package contains the 3. Hardware Introduction  1   2   3 
+serial devices over a TCP/IP Ethernet network. yNPort DE-311 universal serial device server
+yNPort Express Quick Installation Guide for the DE-311 yPower adapter
+yNPort Documentation & Software CD yMini adapter
+Optional Accessories
+yDK-35A (for 35 mm DIN-rail; includes 4 screws) Please notify your sales representative if any of the above items is
+missing or damaged.
+
+ON
+123
+Top Panel View
+
+Express
+DE-311 RS-232/422/485 Device Server
+PWR
+Link
+Ready
+
+The ready LED will flash five times every second when the factory defaults have been loaded. You may release the reset button at this
+time.
+The ready LED will flash every half-second when the password has been erased. You may release the reset button at this time.
+y10 seconds to load factory defaults
+Rear Panel View
+Power input
+RJ45 10BaseT Ethernet portReset button
+Reset ButtonHold the reset button down to erase the password or load the factory defaults, depending on how long the button is held down:
+y3 seconds to erase the password
+DIN-Railscrew hole
+Wallmountscrew hole
+DC-IN RESET10/100MEthernet
+SerialSW
+
+LED Function
+red Power is on
+green 100 Mbps Ethernet connection green System is ready
+orange 10 Mbps Ethernet connection
+LED Color
+Link off Ethernet cable is disconnected, or
+has a short
+PWR off Power is off, or power error condition exists
+Ready off System error
+LED Name
+4. Hardware Installation Placement Options You may place the Wall Mount
+unit on a desktop or other horizontal
+surface. You may also make use of the
+DIN-rail or wall mount options, as
+illustrated here.
+LED Indicators There are three LED indicators on the top panel:
+
+Express
+DE-311 RS-232/422/485 Device Server
+PWR
+Link
+Ready
+
+DIN-Rail
+DC-IN RESET10/100MEthernet
+SerialSW
+
+ON OFF 2-wire RS-485 by RTS
+OFF OFF RS-232 OFF ON RS-422
+ON RS-232 Console --- --- ---
+Serial OFF Data Comm
+SW1 Connection SW2 SW3 Interface Mode ON ON 2-wire RS-485 by ADDC
+SW1 is used to activate the serial console. When SW1 has been changed, the unit will reboot to initialize the new setting. You will need to wait for 5. Software Installation Information Detailed instructions for installing the included software can be found on the NPort Documentation & Software CD in the NPort Family Software
+the green Ready LED to turn off and then on again, which indicates that serial console mode has been activated or deactivated. SW2 and SW3 are Installation Guide.
+used to select the serial port interface. (Note that RTS stands for Ready To Send and ADDC stands for Automatic Data Direction Control.)
+When adjusting the DIP switches, please keep the following in mind:
+yTo use the serial port as an RS-232 console connection, such as when using MOXA PComm Terminal Emulator or HyperTerminal, set SW1
+to ON. ySome configuration may be carried out through a Telnet connection,
+during which data is transmitted through the units Ethernet port. SW1 must be OFF in order for the unit to establish a Telnet connection.
+DIP Switch
+The top panel contains the following table, which explains the DIP switch settings for the serial port. The DIP switches are located at the rear panel.
+P/N: 1802003114400
+
+c
+'&%$#"! ,E#F` &`&#HH-,E#F#a &a&#HH-,E#F` a F`&#HH-,E#F#a ` &a a&#HH-,E#F`@a f`&#HH-,E#F#a@` &a@a&#HH-, <<-, E# D# ZQX# D#Y QX# MD#Y QX# D#Y!!-, EhD ` EFvhE`D-,C#Ce-,C#C-,#p>#pE:-,E#DE#D-, E%EadPQXED!!Y-,Cc#b#B+-, EC`D-,CCe-, i@a ,b`+d#daXaY-,E+#Dz-,E+#D-,CXE+#DzEi #D QX+#Dz!zYY-,%F`F@aH-,KS XYXY-, %E#DE#DEe#E %`j #B#hj`a Ry!@E TX#!?#YaDRy@ E TX#!?#YaD-,C#C-,C#C-,C#C-,C#Ce-,C#Ce-,C#Ce-,KRXED!!Y-, %#I@` c RX#%8#%e8c8!!!!!Y-,KdQXEiC`:!!Y-,%# `#-,%# a#-,%-, ` <<-, a <<-,++**-,CC-,>**-,5-,v#p E PXaY:/-,!!d#d@b-,!QXd#d b@/+Y`-,!QXd#dUb/+Y`-,d#d@b`#!-,&&&&Eh:-,&&&&Ehe:-,KS#KQZX E`D!!Y-,KTX E`D!!Y-,KS#KQZX8!!Y-,KTX8!!Y-,KS#KQZ%%%I#EiRZX%%%F#Ei`HY!!!-,CXY-,CXY-,KTCZX8!!Y-,CX%%d#dadQX%% F`H F`HY!!!!Y-,CX%%d#dadQX%% F`H F`HY!!!!Y-,KS#KQZX:+!!Y-,KS#KQZX;+!!Y-,KS#KQZCZX8!!Y-,KT&KTZCZX8!!Y-,F#F`F# F`ab# #XXpE` PXaFY`h:-,B#Q@SZX TXC`BY$QX @TXC`B$TX C`BKKRXC`BY@TXC`BY@cTXC`BY@cTXC`BY@cTX@C`BYYYYY-,CTXKS#KQZX8!!Y!!!!Y-!EWt&9D%lH9KqQT.%nS9J,S bXL|Q99%%%^aV"VJ#*s!H#3*"
+o3oBz2K4K@,4
+_['jjig&j'h3{|'v,|3&'3'2
+3://$$Y!"!#3$,5+$"
+&3/13#&3413'
+5!ad6!"!"!#!#UUU"p0P`_UUU@Ua p!!!0!P!`!!!a+N]qr++++]qqr<M+++<?<?<++++10++++%!5327654'&'&##5!#"3x0T&,00E1S& +0%%%1 zlg!%%1 zg!"LC@{lu{v0y5z6mE.d66Ue@@3C2222*%/?O44053@B@PE@B344204T24CTX@!/"<ED00'
+'=::
+'%%%4 r}*%%4 rL'@K@O5'-8x""!"!!"!#!#""""@'@S 0@UUU
+&
+&,3
+:Ly%#%'2#2'E#E''
+99+++++++YY]#&'&&'5!654&'&'5H%5
+/
+'9?:9&"%&8/78-""--/?@> / /.!.!"988''&h??+ 0`p@D S d 2"""@A!k++]]]q]?<<<?<<<99.+}.+}Y10]]CX /]Y]]]]qCX/
+'4@5@U56',?//?+99/++++++++2+/++++++10+CTX@X4U5U '456,'UUUUUU87!U!U!U!-U-U-U--879/++++++9/++++++//??9910++@/8@*58`]6%&88888+P8`8p88@8
+@UUUU@UUUUUU@U
+AV8$$<U@G#p0WCTX@Y@UY@UUUL0U0U0@U0+U+17FUFUF@!UFAGAUAUAUALULULULUL@ULUL+U+U+7@U7U7@U7U7@U7U7U7UU @U 0U @U *U @U U @U /2EH@ GTU@U/UOUoUUUVG1%,<,??///?]]+/+++++++++/+++++++++/+++++++++++++++++10++CTX@<%,<,TUV1GU U +U+U+7AUAUAL U X7U7U7U77XLULULULLYX9/+++9/+++9/+++++++///???10KTXFE/08888888Y@4YYY`]6+Y
+U @U U @U UUUUU$@% ,U/+??99?/+++++/+++++10+CTX@W@`p $%%,UUU UUU& U U &UUU'&9/+++9/++9/++++++???99?]10@5'`]6 '`'p''47: HH O'#!O%'#'AD %E@%%,! g@p@%$P `&+N]qr<M<]q<<<<?<?<<<99++10Cy@+<+]]+YY327#5#"&&54&&5!32674&'5c!'-v|EMq,7HAY?+mK9ZG#qBYA2%P6LN7% CTX ??/9/10CTX@1"!U*UU U ?+?+?+?+?99/10@SX[5"@a5#"! $ :9:95:JIDEEIi""-"2`4"+14"
+
+H
+H
+ Tel: +886-2-8919-1230
+0Hwww.moxa.comH1Hsupport@moxa.com
+DB9 (Male) Null-ModemDE-311s DB9(Female)Mini adapterDevices DB9(Female)
+12 13
+34 26
+56 54
+78 87
+The NPort Express DE-311 accepts devices with both male and female connectors. A D-shell female serial
+connector is built-in, and a DB9 male null-modem adapter is included as a standard accessory.
+RS-232Signals RS-232Signals
+DCD Cable WiringDCD
+TxDRxD RxDTxD
+DSRGND DTRGND
+DTRCTS DSRRTS
+RTS CTS
+If you wish to make your own DB9 to DB9 null-modem (or cross-over) cable, the pinouts are as follows: 7. Environmental Specifications Power requirements DC 9V to 30V, 300 mA at 9V Operating temp. 0 to 55C Fax: +886-2-8919-1231
+Operating humidity 5 to 95% RH 90 × 100.4 × 22 mm Dimensions (W×D×H)
+3.54 × 3.95 × 0.87 in (including ears)
+67 × 100.4 × 22 mm 2.64 × 3.95 × 0.87 in (without ears)
+Surge protection 15 KV ESD for serial port Magnetic isolation 1.5 KV for Ethernet
+Regulatory approvals FCC B, CE B, UL, CUL, TUV
+Copyright Moxa Technologies Co., Ltd. 2006
+All rights reserved. Reproduction without permission is prohibited.
+Mini Adapter
+RS-485 Wiring
+RS-422 Wiring
+FemaleMale DB9DB9
+Male DB9Male DB9FemaleDB9 FemaleDB9
+34
+FemaleMale DB9 3 5
+1 1 DB9 42
+23 32 15
+45 65
+67 48
+8 7
+DE-311 2-wireRS-485
+RS-422 Device
+DE-311 Device 9 Pins Cable Wiring
+9 pins Cable Wiring Data+(B)Data-(A) Data+(B)Data-(A)
+TxD+(B)TxD-(A) RxD+(B)RxD-(A) GND GND
+DE-311 DCEDevice RxD+(B)RxD-(A) TxD+(B)TxD-(B)
+GND GND
+9 pins9 pins Cable Wiring
+DCDTxD DCDRxD
+RxDDSR TxDDTR
+GNDDTR GNDDSR
+CTSRTS RTSCTS
+CTS-(A)CTS+(B)RTS+(B)RTS-(A)
+16
+59
+RS-422/485
+GND
+RxD-(A)
+RxD+(B)
+DTR CTS RTS
+Data-(A) / TxD-(A)
+Data+(B) / TxD+(B)
+Male DB9Male DB25
+12 82
+34 36
+56 207
+78 54
+RS-232 1 6. Pin Assignments and Cable Wiring
+6
+59
+TXD RxD
+DCD DSR DTE
+Female DB9 Connector Pin Assignments GND FemaleDB9 FemaleDB25 DE-311 Device  4   5   6 
+RS-232 Wiring 9 pins25 pins Cable Wiring
+DCDTxD DCDRxD
+RxDDSR TxDDTR
+GNDDTR GNDDSR
+CTSRTS RTSCTS

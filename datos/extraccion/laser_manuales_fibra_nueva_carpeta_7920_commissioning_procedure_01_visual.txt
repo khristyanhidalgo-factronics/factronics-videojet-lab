@@ -1,0 +1,284 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\Nueva carpeta\7920 Commissioning Procedure_01.pdf
+# cifrado=False bloques=17 caracteres=15242
+
+Service Instruction
+7920 Commissioning Procedure
+Personal Injury
+All personnel within the room must wear safety goggles suitable against laser radiation while performing maintenance or adjustments at the open laser hous -
+ing or near an open beam delivery system!
+Technician
+Date
+Laser Serial Number
+1 Inspect the laser system carton packaging. Does the packaging look damaged?
+2 Remove the laser system from the carton.
+3 Verify that the following aspects of the laser configuration match the order and that all ordered accessories are present.
+l l l
+Laser model Lens (203, 290, 460) Marking head orientation
+(180° or straight)
+l l
+Wavelength IP rating (IP54, IP65)
+Disclaimer
+The contents of this document and any linked documents are provided as a convenience. When working with any Videojet product, always consult the product user manual and follow the product safety precautions and
+recommendations, including using Personal Protective Equipment when necessary. If you have any questions or are not experienced in using or servicing the Videojet equipment this document references, contact Videojet
+for assistance.
+© 2024 Videojet Technologies - Page 1 of 16 - Rev AB
+
+7920 Commissioning Procedure
+4 Verify whether the laser configuration is correct for the intended installation and whether any significant modifications are
+Issues Noted
+required.
+l
+Does the configuration require a BTU/BUS that is not included in the order?
+l
+Is the marking head output angle (90° or straight) correct for the application, or does it need the other type installed?
+l
+Is the ordered configuration wrong for the application (wrong marking head or wrong IP rating)?
+l
+If the configuration is missing accessories or otherwise incorrect, stop and contact your FSM immediately.
+5 Inspect the exterior of the laser system. Are there significant scratches or dents on the cabinet or damage to the umbilical,
+power cord, or lens?
+6 Open the supply unit and inspect the interior of the supply unit. Are there loose connectors or cables?
+© 2024 Videojet Technologies - Page 2 of 16 - Rev AB
+
+7920 Commissioning Procedure
+l
+Is the USB- C connector properly seated?
+Issues Noted
+© 2024 Videojet Technologies - Page 3 of 16 - Rev AB
+
+7920 Commissioning Procedure
+l
+If a White SPM board is installed, then verify that there is a jumper on X9 from pin 1 to pin 23.
+Issues Noted
+l
+If a Green CPD board is present, then verify that there is no jumper from pin 1 to pin 23.
+© 2024 Videojet Technologies - Page 4 of 16 - Rev AB
+
+7920 Commissioning Procedure
+l
+Press on each Wago conenctor to ensure it is seated, then verify that all white latching arms on all connectors on the main
+board and the SPM/CPD are latched securely.
+Issues Noted
+l
+Inspect the 32- pin umbilical connector at the back of the laser head. Are all pins sticking out evenly? Are any bent?
+7 Connect the umbilical to the marking unit.
+© 2024 Videojet Technologies - Page 5 of 16 - Rev AB
+
+7920 Commissioning Procedure
+8 Connect the system to power.
+Issues Noted
+1. Connect the TU440 (or CLARiTY Laser Controller) to the Laser Control Unit.
+2. Connect the power cord to the Laser Supply Unit.
+3. Plug the laser into mains power and secure using the four mounting screws.
+4. Ensure that the blue LED on the keypad is illuminated after mains power is connected.
+9 Boot the laser and allow at least 5 minutes for the laser to finish booting.
+l
+Does the laser boot successfully?
+l
+Does the laser boot with errors (e.g. amber flashing LED on keypad)? If the laser boots with errors, document all error num -
+bers shown in the user interface.
+10 Connect to TCS+ via a PC using a web browser.
+Note: The Laser Web Interface does not exist on this model. Use TCS+ via PC web browser for system file management and
+configuration.
+1. Set the IP Address of the laptop / PC to 192.168.1.2 (or other address up to 192.168.1.254).
+2. Use an Ethernet cable to connect the laptop / PC to the RJ45 port on the rear of the Laser Supply Unit.
+3. Open a web browser (Google Chrome, Microsoft Edge, or Firefox).
+4. Type 192.168.1.1 into the address bar. TCS+ should now be displayed in the web browser.
+5. When prompted, log in as Service and enter the Videojet daily 6- digit password.
+11 Are any errors or warnings shown in the top status bar, other than "Front Panel Keyswitch Open"? Document any additional
+warnings or error numbers.
+© 2024 Videojet Technologies - Page 6 of 16 - Rev AB
+
+7920 Commissioning Procedure
+12 Verify the active Line Setup settings are:
+Issues Noted
+l
+Static (no product movement)
+l
+Trigger: Internal Once
+13 ( IP65 unit only ) Connect and prepare the laser system to use the cooling unit.
+1. Connect cooling unit exhaust ducting to the intake port on the back of the marking unit.
+© 2024 Videojet Technologies - Page 7 of 16 - Rev AB
+
+7920 Commissioning Procedure
+2. Go to Laser Unit Settings | Laser Configuration and verify that IP 65 housing (Disable Beamsource fan) is toggled
+ON .
+Issues Noted
+3. Power the cooling unit ON.
+14 Prepare for and then test the keyswitch:
+1. Ensure a carbon block is under / in front of the marking head lens / window before performing next step.
+2. Close the keyswitch and allow up to ten minutes for the laser system to reach Laser Ready. Does the system achieve the
+Laser Ready state with no errors?
+3. Note any warnings or errors.
+4. Disarm / open the keyswitch.
+15 Prepare for and a perform a power measurement as described in the Power measurement procedure.
+See KA 18890 - Power measurement (7920 UV Laser System .
+© 2024 Videojet Technologies - Page 8 of 16 - Rev AB
+
+7920 Commissioning Procedure
+16 Note the power reading and compare to the expected values.
+Issues Noted
+With a standard 90 or 190 degree straight through marking head , the system should achieve an output of 4.0 watts .
+With a BTU or BUS installed , the system should achieve an output of at least 3.6 watts . This decrease is expected due to a
+10% loss through the BTU or BUS.
+Power output is as expected
+Record the following in your Service Report :
+Data Example
+2412 / 001
+Serial Numbers of the Laser Unit
+and Laser Source
+4.1 watts
+Measured Power
+82%
+Power Correction %
+Power output is NOT as expected
+If output is less than 4.0 watts (3.6 with BTU / BUS) at 100% power correction, the system is considered an out of box failure.
+Stop installation and order a replacement unit. If there are questions, contact Tech Support for further information.
+17 Perform an initial backup of the System Database and Complete Laser Image. This is a safeguard against any anomalies which
+may occur during the CMark upgrade process.
+1. Go to Main Menu | Laser Unit Settings and download the current system database from the laser to your laptop.
+2. Go to Main Menu | File Management and download the Complete Laser Image from the laser to your laptop.
+© 2024 Videojet Technologies - Page 9 of 16 - Rev AB
+
+7920 Commissioning Procedure
+18 Verify that the cellular (conical bars) and/or Wi- Fi (vertical bars) icons display at the top of the screen. This validates that the
+Issues Noted
+Digital Access Box is connected securely and recognized by the laser system, even if no signal is available. An X through the icon
+means that Cellular or Wi- Fi is enabled, but not connected.
+Troubleshooting - No icons display
+1. Power the supply unit OFF.
+2. Open the supply unit
+3. Re- seat the USB- C connector on the main system board.
+4. Close the supply unit and power the system ON.
+© 2024 Videojet Technologies - Page 10 of 16 - Rev AB
+
+7920 Commissioning Procedure
+19 Configure the laser system's Name and Country .
+Issues Noted
+Set the Country parameter correctly
+The Country parameter establishes the frequency bands the cellular module (within the Digital Access Box) will use .
+1. Go to the Main menu (wrench icon) and select Laser Unit Settings .
+2. Select Laser Configuration .
+3. Enter the Name of the laser. This name will be displayed in VideojetConnect Remote Service, wfx.videojet.com, and in the
+tab at the top of the web browser window (when connected to TCS+).
+4. Verify that the Serial Number, Model Number, Marking head, and Lens all match the traveler data sheet and serial number
+plate.
+5. Use the right hand scroll bar to scroll to bottom of right column and set the Country .
+6. Press Save .
+7. Reboot the laser when prompted.
+20 After rebooting, log into TCS+ again as Service.
+© 2024 Videojet Technologies - Page 11 of 16 - Rev AB
+
+7920 Commissioning Procedure
+21 If network connectivity is established, then register the laser with wfx.videojet.com and upgrade the laser to the latest version of
+Issues Noted
+CMark, if a newer version is available.
+Note: Network connectivity is necessary for Over the Air Updates . If a connection is not available, then skip to the next step.
+1. With a cellular or other Internet- facing network connection available:
+2. Select Main Menu (wrench icon) | Laser Unit Settings
+3. Scroll down to Software Download .
+4. Press the Register Laser button. After a few seconds the Registration Status should show Complete.
+5. Select preferred Upgrade Behavior (when updates should be installed).
+6. After registration, look at bottom on Software Download to see if new CMark version available. Download will start auto -
+matically as long as the keyswitch is open.
+7. Reboot to install the CMark update.
+© 2024 Videojet Technologies - Page 12 of 16 - Rev AB
+
+7920 Commissioning Procedure
+22 If network connectivity cannot be established, then manually upgrade the laser to the latest version of CMark.
+Issues Noted
+1. Export the Printer Registration File (PRI) to your laptop by going to Main menu (wrench icon) | Laser Unit Settings |
+Software Download | Export Registration File .
+2. Upload the .pri from your laptop to wfx.videojet.com after locating the laser in the portal (search for its serial number).
+3. Observe if a newer version of CMark is available (a yellow or red triangle will be displayed next to the laser's serial number /
+friendly name).
+4. Click the yellow triangle, red triangle, or the download button.
+5. Go to Management | Product .
+6. Locate and download the latest version of CMark (currently this step is required when manually upgrading a laser via
+wfx.videojet.com).
+7. After the new CMark version downloads to your laptop, connect to TCS+ and go to  Main menu | File Management .
+Note: The best practice is to use a PC / laptop to load CMark (and SARs). The TU440 should not be used to load system files.
+8. Press the Upload button and navigate to the CMark file to be loaded.
+9. When the CMark update is complete, reboot the laser system and proceed.
+10. In TCS+ select Main menu (wrench icon) | Laser Unit Settings | Software Download .
+11. Press the Export Registration File button to get a new PRI file. Upload this second .pri file to wfx.videojet.com at the earli -
+est opportunity. This step will complete the software upgrade process.
+© 2024 Videojet Technologies - Page 13 of 16 - Rev AB
+
+7920 Commissioning Procedure
+23 If the laser system will not have any connection to the Internet, or if the customer is a pharmaceutical, medical, or SmartGraph
+Issues Noted
+customer, then toggle Activate Over the Air Upgrade to OFF .
+For SmartGraph or pharmaceutical / medical customers: you must toggle
+off Over the Air upgrades
+Toggling off Over the Air upgrades will prevent unauthorized software upgrades and future mismatches between
+CMark and SmartGraph.
+24 After the CMark update is complete, install any required SARs (if applicable).
+1. Go to Main menu (wrench icon) | File Management and press the Upload button.
+2. Locate the SAR file on your PC and upload it.
+If the SAR is installed correctly then the laser system will prompt you to reboot.
+Laptop / PC Required
+SARs may only be installed via a laptop/PC and Ethernet cable, and must be formatted correctly.
+l
+System files such as CMark and SARs cannot be loaded via TU440.
+l
+SARs must be formatted correctly (.zip with startup.sh file at the root level of the .zip file).
+l
+If the laser system asserts errors upon upload, then ensure that there are no PDFs (user guide, instructions, etc.)
+within the .zip file before trying again.
+l
+It may be necessary to unzip to get to the SAR package.
+© 2024 Videojet Technologies - Page 14 of 16 - Rev AB
+
+7920 Commissioning Procedure
+25 If it is safe to do so (if you are in an enclosed area or the laser is in a shielded area), then make a test mark.
+Issues Noted
+1. Create a new Job in TCS+.
+2. Add a Test Pattern from Add list.
+3. Select Marking Field .
+4. Click in the marking field to insert the marking field pattern into the Job.
+5. Press the Save button and Close . When prompted, activate the job.
+6. Place an easy- to- mark substrate beneath the marking head at the working distance (check Laser Unit Settings | Laser Con -
+figuration to identify the working distance).
+7. Mark the pattern.
+Was the mark created with no errors?
+If errors are asserted, or if no mark is created at the correct focal distance (on a known easy- to- mark material such as
+ink- coated cardboard) and with no accessories connected, then do not proceed with installation. A qualified engineer
+must perform a power check to determine the emitted wattage.
+26 Evaluate the print quality and determine if it is acceptable.
+27 Create new backups after installation and before releasing the laser system to the customer.
+1. Select Main menu (wrench icon) | Laser Unit Settings | System Database | Download to create another backup of the
+System Database . You may then delete the original backup.
+2. Create another backup of the Complete Laser Image under File Management. You may then delete the original backup.
+© 2024 Videojet Technologies - Page 15 of 16 - Rev AB
+
+7920 Commissioning Procedure
+28 (Field Installation Only) Download the System Information PDF from TCS+.
+Issues Noted
+1. Press the Videojet logo in the upper right- hand corner of the Homescreen.
+2. Select System Information .
+3. Press the Create PDF button. This will generate a complete snapshot of the laser system, including hardware and software
+versions installed. This is useful when the laser system is not connected to VRS.
+4. Save or copy the PDF to a location (such as OneDrive) accessible via the mobile device from which you access Field Service
+Lightning.
+29 (Field Installation Only) Upload the System Information PDF created in the previous step to the Work Plan checklist when pos -
+sible.
+30 (Field Installation Only) Enter the total time of commissioning the laser into the Work Plan Checklist.
+© 2024 Videojet Technologies - Page 16 of 16 - Rev AB
+
+I[j j^[ 9ekdjho fWhWc[j[h Yehh[Yjbo
+&# -3,207 .0+#2#0 #12 *'1&#1 2&# $0#/3#,!7 ,"1 2&# !#**3*0 +-"3*# H5'2&', 2&# '%'2* !!#11 -6J 5'** 31#@
+-,$'%30#2&#*1#01712#+1 +# ," -3,207 @
+&RPPLVVLRQLQJ3URFHGXUH
+,VVXHV1RWHG
+@ -2-2&# ',+#,3 H50#,!&'!-,J,"1#*#!2 1#0,'2#22',%1 @
+@ #*#!2 1#0-,$'%302'-, @
+@ ,2#02&# +# -$2&#*1#0@&'1,+#5'** #"'1.*7#"','"#-(#2-,,#!2#+-2##04'!#A5$6@4'"#-(#2@!-+A,"',2&#
+2 22&#2-.-$2&#5# 0-51#05',"-5H5&#,!-,,#!2#"2-J@
+@ #0'$72&22&##0'*3+ #0A-"#*3+ #0A0)',%&#"A,"#,1**+2!&2&#204#*#0"21&##2,"1#0'*,3+ #0
+.*2#@
+@ 1#2&#0'%&2&,"1!0-** 02-1!0-**2- -22-+-$0'%&2!-*3+,,"1#22&# -3,207 @
+@ 0#11 4# @
+@ # --22&#*1#05&#,.0-+.2#"@
+$2#00# --2',%A*-%',2-%',1#04'!#@
+['"#-(#2#!&,-*-%'#1 Q%#-$Q#4

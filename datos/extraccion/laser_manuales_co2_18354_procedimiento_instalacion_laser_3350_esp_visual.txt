@@ -1,0 +1,272 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\18354-Procedimiento Instalacion Laser 3350 (Esp).pdf
+# cifrado=False bloques=8 caracteres=16452
+
+V ideojet 3350 MQT y procedimiento
+de instalación
+C o n t e n i d o
+T í t u l o V ideojet 3350 MQT y procedimiento de instalación
+C o n t e n i d o
+V i d e o j e t 3 3 5 0 M Q T y p r o c e d i m i e n t o d e i n s t a l a c i ó n
+Lesiones Personales
+¡T odo el personal dentro de la sala debe usar gafas de seguridad adecuadas contra la radiación láser
+mientras realiza el mantenimiento o los ajustes en la carcasa láser abierta o cerca de un sistema de
+entrega de haz abierto!
+1. Inspeccione el embalaje de cartón láser . ¿El embalaje parece dañado?
+2. Retire el láser y verifique que la configuración del láser recibida sea correcta, incluido el modelo, la
+longitud de onda, la cabeza, la lente, la longitud umbilical y la clasificación IP . ¿Estos artículos
+coinciden con lo que se pidió?
+¿Están incluidos todos los accesorios enumerados en el pedido?
+3. ¿La configuración del láser es correcta para la instalación? ¿Se requieren modificaciones significativas
+para la instalación, tales como: necesidad de agregar BTU / BUS, requiere marcar la conversión del
+cabezal de 90 grados a recto? ¿O la configuración es incorrecta para la aplicación, como una longitud
+de onda incorrecta, un cabezal de marcado incorrecto o una clasificación IP incorrecta?
+Si la configuración es incorrecta, deténgase y póngase en contacto con su FSM.
+4. Inspeccione el exterior del láser . ¿Hay rasguños o abolladuras significativas en el gabinete o daños en
+el cordón umbilical, el cable de alimentación o la lente?
+5. Inspeccione el interior de la unidad de suministro. ¿Hay conectores o cables sueltos?
+¿El conector USB-C está bien asentado en la placa principal?
+Si hay una placa SPM blanca instalada, verifique que haya un puente en X9 desde el pin 1
+hasta el pin 23.
+
+Si hay una placa CPD verde , no debe haber ningún puente del pin 1 al pin 23.
+V erifique que todos los brazos de enganche blancos en todos los conectores de la placa
+principal y el SPM/CPD estén bien enganchados.
+Inspeccione el conector umbilical de 32 pines en la parte posterior del cabezal láser . ¿T odos
+los pines sobresalen uniformemente?
+
+6. Conecte el cordón umbilical al cabezal láser .
+7. Conecte el sistema a la alimentación.
+1. Conecte el cable de alimentación a la unidad de alimentación.
+2. Conecte el láser a la red eléctrica.
+3. Asegúrese de que el LED azul del teclado esté iluminado después de conectar la
+alimentación principal.
+8. Arranque lase y espere al menos 5 minutos para que el láser termine de arrancar .
+¿El láser arranca correctamente?
+Hace arranque láser con errores (LED parpadeante ámbar en el teclado). Si arranca con
+errores, conéctese usando TCS+ y anote errores.
+9. Conéctese a TCS + a través de la PC con el navegador web.
+Nota: La interfaz web láser no existe en el 3350. Utilice TCS+ a través de PC con un navegador web
+para toda la gestión y configuración de archivos del sistema.
+1. Establezca la dirección IP de la computadora portátil / PC en 192.168.1.2 (u otro hasta
+192.168.1.254).
+2. Conecte el ordenador portátil/PC al puerto RJ45 de la unidad de suministro láser mediante un
+cable Ethernet.
+3. Abra un navegador web (Google Chrome, Microsoft Edge o Firefox).
+4. Escriba 192.168.1.1 en la barra de direcciones. TCS+ ahora debería mostrarse en el
+navegador web.
+5. Cuando se le solicite, inicie sesión como usuario del Servicio escribiendo "Servicio" (distingue
+entre mayúsculas y minúsculas) y la contraseña diaria de V ideojet (la misma contraseña
+diaria que CIJ).
+10. ¿Algún error o advertencia que se muestre en la barra de estado superior que no sea la advertencia
+"Front Panel Keyswitch Open"? T enga en cuenta cualquier advertencia o error adicional.
+1 1. V erifique que la configuración de Line Setup activa sea:
+Estático (sin movimiento de producto)
+Disparador: Interno Una vez
+12. Prepárese y pruebe a activar el interruptor de tecla:
+1. Asegúrese de que un bloque de carbono esté debajo / delante de la lente / ventana del
+cabezal de marcado antes de realizar el siguiente paso.
+2. Cierre el interruptor de tecla. ¿Se logra el estado Laser Ready sin errores?
+3. T enga en cuenta cualquier advertencia o error que no sea "Interruptor de tecla del panel
+frontal abierto".
+4. Desarmar / abrir el interruptor de tecla.
+13. V erifique y haga una copia de seguridad del archivo de compensación de lentes (solo cabezales de
+marcado SHC-SF).
+1. V aya al menú principal (icono de llave inglesa) y seleccione Administración de archivos .
+
+2. Desplácese hacia abajo hasta Compensación de lente (debe iniciar sesión como Servicio
+para ver este elemento).
+3. V erifique que Compensación de lente dice "1" junto a él.
+4. Haga clic en el botón Pluma y seleccione Mostrar contenido .
+5. Cuando se muestre el nombre del archivo, pulse el botón Pluma y seleccione Descargar .
+Es muy importante tener una copia de seguridad de este archivo , ya que es específico para el
+cabezal de marcado individual. Si se utiliza una palanca de rescate o se reemplaza la placa principal
+del sistema, ¡será necesario volver a cargar este archivo! No cambie el nombre del archivo. Coloque
+este archivo en una carpeta en su PC con el nombre del sistema láser .
+14. V erifique que los íconos de datos celulares y Wi-Fi se muestren en la parte superior de la pantalla (los
+datos celulares y Wi-Fi no están disponibles en todos los países). Esto valida que la caja de acceso
+esté conectada de forma segura y reconocida por el láser , incluso si no hay señal disponible. Una X a
+través del icono significa que Celular o WiFi está habilitado, pero no conectado. Una X a través de
+cualquiera de los iconos es aceptable para este paso.
+Si no aparece ningún icono pero el cuadro de acceso está conectado, vuelva a colocar el conector
+USB-C en la placa principal del sistema.
+15. Configure el nombre y el país del láser . Compruebe que la configuración está configurada
+correctamente.
+1. V aya al menú principal (icono de llave inglesa) y seleccione Configuración de la unidad
+láser .
+2. Seleccione Configuración láser .
+3. Establezca el nombre del láser . Este se convertirá en el nombre del láser en VRS,
+wfs.videojet.com y en la pestaña en la parte superior de la ventana del navegador web
+cuando se conecte a TCS +.
+4. V erifique que el número de serie, el número de modelo, el cabezal de marcado y la lente
+coincidan con la hoja de datos del viajero y la placa del número de serie.
+5. Use la barra de desplazamiento de la derecha para desplazarse hasta la parte inferior de la
+columna derecha y establecer el País .
+Establecer el valor de país correcto
+El valor establecido aquí establece qué bandas de frecuencia utilizará el módulo
+celular , según la entidad de certificación celular local.
+6. Pulse Guardar .
+7. Reinicie el láser cuando se le solicite.
+16. Después de reiniciar , inicie sesión en TCS+ nuevamente como usuario del servicio.
+17. Asegúrese de una conexión estable para Cellular o Wi-Fi.
+Para V ideojet Cellular:
+1. V aya al menú principal (icono de llave inglesa) y seleccione Configuración de la unidad
+láser .
+2. En la columna izquierda, desplázate hacia abajo hasta Red celular y verifica que la conexión
+sea L TE. Si no, espere unos minutos para ver si se mueve a L TE en lugar de GSM. Si solo
+hay una conexión GSM disponible después de 20 minutos, entonces no puede usar celular ya
+que la conexión es demasiado débil e inestable para admitirla. Use Wi-Fi en su lugar , si está
+disponible.
+Para V ideojet W i-Fi:
+
+1. V aya al menú principal (icono de llave inglesa) y seleccione Configuración de la unidad
+láser .
+2. Desactivar la red celular en la configuración de la unidad láser | Celular .
+3. En la sección Red Wi-Fi de Configuración de la unidad láser , asegúrese de que el Wi-Fi de
+V ideojet se conecte automáticamente como se espera (SSID V ideojet Wi-Fi).
+Para otros W i-Fi:
+1. V aya al menú principal (icono de llave inglesa) y seleccione Configuración de la unidad
+láser .
+2. Desactivar la red celular en la configuración de la unidad láser | Celular .
+3. En la sección Red Wi-Fi de Configuración de la unidad láser , seleccione el nombre de la red.
+4. Pulsa el botón del lápiz
+5. Seleccione Conectar en el menú desplegable o presione el botón Conectar a red oculta .
+6. Introduzca la información necesaria. El tipo de red (pública, privada o empresarial) determina
+qué información / credenciales deben ingresarse para la conexión.
+18. (Sistemas láser con celular / WLAN / LAN conectados) Registre el láser en el portal.
+Nota: Es necesaria una conexión celular u otra conexión a la red externa para registrarse directamente
+desde el sistema láser . Si una conexión no está disponible, vaya al paso siguiente.
+1. Con conexión celular u otra conexión disponible (orientada a Internet):
+2. Seleccione Menú principal (icono de llave inglesa) | Configuración de la unidad láser
+3. Desplácese hacia abajo hasta Descarga de software .
+4. Pulse el botón Register Laser (Registrar láser ). Después de unos segundos, el Estado de
+registro debería mostrarse Completado.
+5. Seleccione el comportamiento de actualización preferido (cuándo deben instalarse las
+actualizaciones).
+6. Después del registro, mire en la parte inferior de Descarga de software para ver si hay una
+nueva versión de CMark disponible. La descarga se iniciará automáticamente mientras la
+clave esté abierta.
+7. Reinicie para instalar la actualización.
+19. (Sistemas láser sin conexión celular u otra conexión a Internet) Registre manualmente el láser con
+el Portal utilizando la PC para conectarse a TCS+
+1. Exporte el archivo de registro de la impresora (PRI) yendo al menú principal (icono de llave
+inglesa) | Configuración de la unidad láser | Descarga de software | Exportar archivo de
+registro .
+2. Cargue en wfx.videojet.com utilizando la búsqueda del número de serie para encontrar el
+láser específico.
+3. Observe si se necesita / está disponible una versión más reciente de CMark y descárguela
+del portal de wfx.videojet.com.
+4. Si descarga una nueva versión de CMark para instalar , en TCS+ vaya a Menú principal |
+Gestión de archivos .
+Nota: Debe usar una PC / computadora portátil para cargar CMark y SAR. El TU440 no se
+puede utilizar para cargar archivos del sistema.
+5. Presione el botón Cargar y navegue hasta el archivo de actualización de CMark que se
+cargará. El nombre debe comenzar con "cmark" para que el sistema láser lo considere un
+tipógrafo de archivos válido.
+6. Cuando se complete la actualización de CMark, reinicie el sistema láser y continúe.
+7. En TCS+ seleccione Menú principal (icono de llave inglesa) | Configuración de la unidad
+láser | Descarga de software .
+8. Presione el botón Exportar archivo de registro para obtener un nuevo PRI para cargarlo
+posteriormente en el portal. Esto mostrará al portal que la actualización de software se ha
+
+completado.
+9. Si el sistema láser no tiene ninguna conexión a Internet, entonces en TCS + vaya al menú
+principal (icono de llave inglesa) | Configuración de la unidad láser | Descarga y
+desmarca la casilla Activar actualización inalámbrica .
+20. (Solo clientes farmacéuticos, médicos o SmartGraph) Desactive las actualizaciones automáticas de
+software.
+Si es cliente de SmartGraph o cliente farmacéutico/médico: debe desactivar las
+actualizaciones automáticas de software!!
+Si se instala una actualización de CMark, pero la versión de SmartGraph en PC no, entonces el
+láser y la PC perderán la conexión debido a versiones no coincidentes. Es posible que los
+clientes farmacéuticos / médicos tengan que volver a calificar si CMark se actualiza
+automáticamente.
+1. V aya al menú principal (icono de llave inglesa)>Configuración de la unidad
+láser>Descarga de software .
+2. Desmarca la casilla situada junto a Activar actualización inalámbrica .
+3. Haga clic en Guardar .
+El sistema láser ya no descargará automáticamente las actualizaciones de CMark.
+21. Una vez completada la actualización del software, instale cualquier SAR que haya comprado (si
+corresponde).
+1. Ir al menú principal (icono de llave inglesa) | Administración de archivos y presione el
+botón Cargar .
+2. Navegue hasta donde está almacenado el SAR en su PC.
+Si SAR (TCL) está instalado correctamente, el láser le pedirá que reinicie.
+Se requiere computadora portátil / PC
+Los SAR solo se pueden instalar con un ordenador portátil/PC y un cable Ethernet y deben
+formatearse correctamente.
+Los archivos del sistema, como CMark y SAR, no se pueden cargar a través de TU440.
+Los SAR deben tener el formato correcto (.zip con startup.sh archivo en el nivel raíz
+del .zip).
+Si se producen errores al cargar , asegúrese de que no haya archivos PDF (guía del
+usuario, instrucciones, etc.) dentro del .zip.
+Puede ser necesario descomprimir para llegar al paquete SAR.
+22. Si es seguro hacerlo (área cerrada o láser en área protegida), haga una marca de prueba.
+1. Crear un nuevo trabajo en TCS+.
+2. Agregar un patrón de prueba desde Agregar lista.
+3. Seleccione Campo de marcado .
+4. Haga clic en el campo de marcado para insertar el patrón de campo de marcado en el
+trabajo.
+5. Pulse el botón Guardar y Cerrar . Cuando se le solicite, active el trabajo.
+6. Marque el patrón.
+¿Se creó la marca sin errores?
+
+Si se afirman errores o si no se crea ninguna marca a la distancia focal correcta (en material conocido
+fácil de marcar , como cartón recubierto de tinta) y sin accesorios conectados, no continúe con la
+instalación. Se debe realizar una verificación de potencia para determinar la potencia que se emite.
+23. ¿La calidad de impresión fue aceptable en material relativamente fácil de marcar? No necesariamente
+el material del cliente en esta etapa.
+24. Después de la instalación y antes de liberar el láser al cliente:
+1. Crear copia de seguridad de la base de datos del sistema ( menú principal (icono de llave
+inglesa) | Configuración de la unidad láser | Base de datos del sistema | Descargar ).
+2. Cree una copia de seguridad de CMark si se configuran SAR, AllPrint Basic o VRS y OT A.
+¡Cuantas más cosas adicionales se instalen, más importante es hacer una copia de
+seguridad de CMark!
+3. Cree un backup de la base de datos del cliente utilizando la interfaz de usuario del cliente
+(SmartGraph, TCS+ o CLARiTY).
+4. Si corresponde, asegúrese de que se realizó una copia de seguridad de la compensación de
+la lente si el cabezal de marcado SHC-SF . Esto no es necesario para los cabezales de
+marcado SHC60/100/150.
+25. (Sólo instalación en campo) Descargue el PDF de información del sistema de TCS+.
+1. Presione el logotipo V en la esquina superior derecha de la pantalla de inicio
+2. Seleccione Información del sistema .
+3. Pulse el botón Crear PDF . Esto generará una instantánea completa del sistema láser ,
+incluidas las versiones de hardware y software instaladas. Esto es útil cuando el sistema
+láser no está conectado a VRS.
+4. Guarde o copie el PDF en una ubicación (como OneDrive) accesible en su dispositivo móvil
+desde el que acceda a FSL.
+26. (Sólo instalación en campo) Cargue el PDF de información del sistema creado en el paso anterior en la
+lista de verificación del plan de trabajo cuando sea posible.
+27. (Sólo instalación en campo) Ingrese el tiempo total de puesta en marcha del láser en la Lista de
+verificación del plan de trabajo.
+M e t a d a t o s d e l a r t í c u l o
+N o m b r e d e l a U R L V ideojet-3350-MQT -y-Procedimiento-de-instalación-bd154ec3
+U R L p e r m a n e n t e
+Haga clic derecho y copie el enlace para compartir la URL de este artículo
+p a r a L i g h t n i n g
+
+V i s i b l e e n l a
+a p l i c a c i ó n i n t e r n a
+V i s i b l e p a r a e l
+s o c i o
+V i s i b l e p a r a e l
+c l i e n t e
+T i p o d e r e g i s t r o d e
+Artículo de formación
+a r t í c u l o
+E s t a d o d e
+Aprobado - Uso interno de FS
+v a l i d a c i ó n
+E s t a d o d e
+Publicado
+p u b l i c a c i ó n
+V i s i b l e e n l a b a s e
+d e c o n o c i m i e n t o
+p ú b l i c a
+D a t o s i n t e r n o s
+C o m e n t a r i o s
+i n t e r n o s
+R e n u n c i a
+E lcontenido de este correo electrónico y los archivos adjuntos se proporcionan para com odidad de los clientes de V ideojetpara destacar inform ación útily consejos para la so lución de
+problem as.C uando trabaje con un producto,consulte siem pre elm anualdelusuario delproducto y siga las precauciones y recom endaciones de seguridad delproducto,incluido eluso
+de equipo de protección personalcuando sea necesario.S itiene alguna pregunta o no tiene experiencia en eluso o m antenim iento de equipos de V ideojet,póngase en conta cto con
+V ideojetpara obtener ayuda.

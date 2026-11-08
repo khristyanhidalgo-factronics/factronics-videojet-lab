@@ -1,0 +1,136 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Ing\14038-E 3236 Carriage Position Error 6330, 6530 (Eng)_v2.pdf
+# cifrado=False bloques=6 caracteres=8779
+
+6330/6530 - Printhead Carriage Position
+Error (E3236)
+C o n t e n t
+T i t l e 6330/6530 - Printhead Carriage Position Error (E3236)
+C o n t e n t
+6 3 3 0 / 6 5 3 0 - P r i n t h e a d C a r r i a g e P o s i t i o n E r r o r ( E 3 2 3 6 )
+The printer asserts a Printhead Carriage Position Error (E3236).
+S o l u t i o n / W o r k a r o u n d
+S o l u t i o n
+Contact V ideojet to Schedule Necessary Repairs
+Customers troubleshooting their equipment should not attempt to make repairs on their own. If your printer requires repair ,
+contact V ideojet T echnical Support to schedule service at (877)947-2289.
+Note - Measuring Printhead Gap
+T o measure the printhead gap, use the printhead gap tool and ensure the printhead is over the platen pad / print roller in
+the "ready to print" position.
+1. Ensure the printhead gap does not exceed 5 mm . Keep in mind if trying to test print on a bench, the printhead
+needs to come into contact with a platen surface as it needs to measure the printhead gap. If it senses nothing
+and comes down too far (greater than 5mm), you will always get this fault.
+2. Ensure the printhead gap is not less than 1mm . If it is too close to the printing surface, it could drag and cause
+the printhead to not travel freely . This is especially true in intermittent applications. This printer supports a gap
+between 1-5mm, with 2mm being the ideal gap setting.
+3. Ensure the printer is running r12 SP5 or greater software.
+4. If this is a continuous application, ensure proper print position setting over the print roller .
+Print Position for Continuous Applications
+While TT O T echnical Support typically recommends that the printhead be as close over the center of the roller as
+possible, there are applications in which it may be required to print on a dif ferent spot on the roller .
+TT O T echnical Support has found that in slow(er) applications, the printhead may need to be a few mm
+in from of the center of the print roller .
+If we were to say 50.00mm setting was the center of the roller , then decreasing the value would move
+printhead in front of the roller .
+TT O T echnical Support has also found that in fast(er) applications, the printhead may need to be
+positioned slightly behind the center of the roller .
+If we were to again say that 50.00mm setting is the center of the roller , then increasing the value would
+move the printhead behind the roller .
+An improper print position setting could cause the fault.
+5. If running in continuous mode with an encoder , check that the encoder rubber O-ring is installed and intact.
+6. Check the carriage for binding:
+1. Power the printer OFF .
+2. Remove the cassette and slide the carriage back and forth. It will have a bit of resistance but for the
+most part should move free from any obstructions, debris, or binding.
+3. If there is slight binding, try cleaning the linear slide by blowing it out with dry , compressed air . Y ou can
+also lubricate the slide using the VJ linear slide lubrication kit (P/N: 4021 13).
+4. Check the carriage position belt pully for binding or wear .
+7. Inspect the peel roller shaft and peel arm assembly ensuring they are not bent as this could keep the printhead
+from coming down unobstructed. Below is a picture of a correct peel arm assembly parallel with the carriage
+
+assembly . Replace if bent. Note: The following would apply to printers with serial numbers before
+182401 1002TZH. The design was changed later .
+8. Inspect the entirety of the belts for wear or physical damage, ensuring you pay close attention to the belt section
+around the clamps. W orn/damaged belts in the clamp area can/will cause the carriage to slip which can/will raise
+the fault. Replace as necessary .
+Note that there is a second clamp located under the carriage assembly .
+Note - Remove Carriage Assemply and Clamps
+Y ou must remove the carriage assembly and clamps for proper inspection.
+The following images depict extreme belt wear/damage in the clamp areas.
+
+9. Ensure all of the magnets on the printhead mount and the printhead pivot assembly are in place and not loose or
+damaged/cracked.
+10. Inspect the 2-piece printhead belt clamp and the carriage belt clamp to ensure they are fully clamped and flush
+with one another . The clamp is secured with 2 Phillips screws. A belt on a loose clamp can cause the belt to slip
+and potentially raise the fault.
+Figure 1: A belt clamp whose securing screws are semi-loose (top) vs. a belt clamp whose securing screws are
+tight (bottom).
+1 1. Ensure there are no obstructions keeping the printhead from reaching the home/park position, such as loose
+screws (Figure 2) or dowel pins (Figure 3).
+
+Figure 2: A loose screw on the light box prevents the printhead from parking.
+Figure 3: A loose dowel pin prevents the printhead from parking.
+12. If you hear a grinding noise or if the carriage does not move freely across the slide, inspect the pulleys and
+ensure no physical damage or that they have seized. If seized, replace the pulleys.
+13. If you hear a grinding noise and the pulleys are fine, inspect the printhead motor connections on the main
+PCB ensuring the connectors on the main PCB are fully seated and also that the connections on the motors are
+plugged into the correct connectors on the main PCB. The motor connections need to be connected into the
+connectors on the main PCB closest to the motors (see Figure 4). TIP: The motor that has the encoder on it
+always plugs into X27.
+Grinding Noises Unrelated to Hand Setting
+In previous TT O printers, a grinding noise followed by the fault could be caused by the printer hand being set
+incorrectly . With the 6330/6530, the hand is automatically set/detected by the printhead PCB. Y ou can verify if it
+is correct by going to T ools | Diagnostics | Printhead | General .
+
+Figure 4: Correct printhead motor and printhead encoder connections.
+14. Investigate whether the fault occurred immediately after the ribbon ran out. It is possible for this fault to occur
+ifthe ribbon leader breaks free from the ribbon core when the reel has finished. The leader can then 'stick' to and
+tug the printhead, which could raise the fault. However , in this case there is no real negative impact because
+when the ribbon is replaced and the "End of Reel" fault is cleared, the "Printhead Carriage Position Fault" can
+also be cleared.
+15. If this is an intermittent application, ensure the film is at a complete standstill at all times when printing. If the
+substrate begins to advance as the printer is still printing, the substrate can tug/pull the printhead, which could
+then raise the fault.
+16. If at power up, the printer makes a loud grinding/buzzing noise, the carriage moves erratically , and then the
+printhead extends out, then the issue is likely due to the main printer PCB.
+17. If all the above checks out fine, the next option is to tension the belt. This is only to be carried out by VJ Service
+personnel.
+Follow the tensioning instructions as detailed in Belt T ensioning Instructions.PDF
+Y ou will need V ideojet belt tension service tool.
+18. If all of the previous check out fine, and re-tensioning the belt does not resolve the issue, it could be a faulty
+printhead motor w/encoder sensor (32mm/53mm/107mm printers) or it could be a faulty carriage motor
+w/encoder sensor (107mm printer). These tend to be very reliable parts and you should only
+attempt replacement if you are absolutely certain nothing else listed here was the issue.
+T r i a g e N e x t S t e p s
+T r i a g e
+R e c o m m e n d e d P a r t s
+R o o t C a u s e
+A r t i c l e M e t a d a t a
+U R L N a m e 6330-6530-Printhead-Carriage-Position-Error-E3236
+P e r m a n e n t U R L
+Right click and copy link to share this Article's URL
+f o r L i g h t n i n g
+V i s i b l e I n I n t e r n a l
+A p p
+V i s i b l e t o P a r t n e r
+V i s i b l e t o
+C u s t o m e r
+E m a i l T e m p l a t e f o r
+E s c a l a t i o n
+
+A r t i c l e R e c o r d
+Issue-Problem
+T y p e
+V a l i d a t i o n S t a t u s Approved - External Use
+P u b l i c a t i o n S t a t u s Published
+V i s i b l e I n P u b l i c
+K n o w l e d g e B a s e
+I n t e r n a l D a t a
+I n t e r n a l C o m m e n t s
+- 407932 Spare 53mm TT(iii) Idler Pulley Assy
+R e l a t e d E s c a l a t i o n TS23122007864
+D i s c l a i m e r
+The contents ofthis em ailand any attachm ents are provided as a convenience to Videojetcustom ers to highlightusefulinform ation and troubleshooting tips.W hen w orking w ith a product,alw ays consultthe product
+userm anualand follow the productsafety precautions and recom m endations,including using PersonalProtective Equipm entw hen necessary.Ifyou have any questions orare notexperienced in using orservicing
+Videojetequipm ent,contactVideojetforassistance.
+E s c a l a t i o n C a s e i s
+C l o s e d

@@ -1,0 +1,558 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\AL-68045-AF External customer interface-Externe Kundenschnittstelle.pdf
+# cifrado=False bloques=31 caracteres=24541
+
+AL-68045Service Part Installation Instruction/Einbauanleitung Ersatzteil
+External Customer Interface
+1 External Customer Interface
+1.1 Introduction
+The templates stored in the laser system can be selected via the digital inputs DATA0 toDATA7 on the input modules A and B. The template is selected via its assigned template
+number by an 8 bit value built via inputs DATA0 signal EXT_EVENT.to DATA7. The selection is taken over by the
+This procedure is called External Template Selectionmer interface (AL-70588). and is enabled via the external custo-
+A template is assigned to a certain number in the template list (see below). The number of thedesired template is sent - e.g. by a PLC - binary coded to the digital inputs DATA0 to DATA7
+and is taken over with the signal EXT_EVENT. The selected teplate of the laser system and can be marked on the product.mplate becomes current tem-
+The dialog »Template list« contains the assignment of templates and template numbers for theexternal template selection.
+ImportantTo use the external template selection there has to be a valid template list.
+For more information, please refer to the Smart Graph-Software instruction.
+The binary coding of the template number:
+Template No.:Data7Data6Data5Data4Data3Data2Data1Data0
+000000000
+100000001
+2000000 10
+300000011
+...
+25511111111
+07/08 - Rev. AF 1
+
+Service Part Installation InstAL-68045ruction/Einbauanleitung Ersatzteil
+External Customer Interface
+1.2 Overview of the External Customer Interface
+The external customer interface consists of the following components:
+supply terminal block
+CI-CAN-IO
+CAN-Bus
+24V supply internal
+supply terminal blockCI-CAN-IO
+external supply cable
+CAN-Bus Input modules A and B for external template selection
+2 07/08 - Rev. AF
+
+AL-68045Service Part Installation Instruction/Einbauanleitung Ersatzteil
+External Customer Interface
+1.3 CI-CAN-IO Interface
+The CI-CAN-IO is used for sending digital status signals and receiving digital command signals
+This inerface consist of the folowing modules:
+Modul 1Bus Coupler
+Modul 2Feed Terminal
+Modul 3Digital Outputs
+Modul 4Digital Outputs
+Modul 5Digital Inputs
+Modul 6Digital Inputs
+Modul ADigital Inputs for External Template Selection
+Modul BDigital Inputs for External Template Selection
+Modul 7Termination
+N.C.
+07/08 - Rev. AF 3
+
+Service Part Installation InstAL-68045ruction/Einbauanleitung Ersatzteil
+External Customer Interface
+Module 1: Bus Coupler
+Module 2: Feed Terminal
+TerminalSignalDescription
+X1.0.1CAN HighCAN bus, only internal
+X1.0.224 V24 V system, only internal
+X1.0.3GNDGND system, only internal
+X1.0.4ShieldCAN bus shield, only internal
+X1.0.5CAN LowCAN bus, only internal
+X1.0.624 V24 V system, only internal
+X1.0.7GNDGND system, only internal
+X1.0.8ShieldCAN bus shield, only internal
+All following terminals are supplied via this terminal and they are separated galvanically fromthe internal power supply.
+TerminalSignalDescription
+X1.1.1N.C.not connected
+X1.1.2Customer 24 V24 V customer
+X1.1.3Customer GNDGND customer
+X1.1.4N.C.not connected
+X1.1.5N.C.not connected
+X1.1.6Customer 24 V24 V customer
+X1.1.7Customer GNDGND customer
+X1.1.8N.C.not connected
+4 07/08 - Rev. AF
+
+AL-68045Service Part Installation Instruction/Einbauanleitung Ersatzteil
+External Customer Interface
+Module 3: Digital Outputs
+Module 4: Digital Outputs
+TerminalSignalDescription
+X1.2.1SYSTEM_READYSYSTEM_READY is set as soon as the sys-tem has completed its initialization and is
+ready to operate. Switched off in servicemode. Entries via the digital inputs are
+accepted only if this signal is set.
+X1.2.2Customer 24 V24 V customer
+X1.2.3Customer GNDGND customer
+X1.2.4READY_TO_MARKThis signal is set as soon as all necessarydata and a start signal have been received.
+The system is ready to mark and waits for atrigger signal. The red LEDs on the PCM and
+on the marking head are on.
+X1.2.5MARKINGThis signal is set during the marking process.
+X1.2.6Customer 24 V24 V customer
+X1.2.7Customer GNDGND customer
+X1.2.8SHUTTER_CLOSEDThis signal is set if the beam shutter isclosed.
+TerminalSignalDescription
+X1.3.1WARNINGThis output is LOW active and indicates thatthere has been at least one warning since the
+start of the system (e.g. Parts of the markingare not in the marking field). This output is
+reset with the next start.
+X1.3.2Customer 24 V24 V customer
+X1.3.3Customer GNDGND customer
+X1.3.4ERRORThis output is LOW active. The system isstopped immediately if an error occurs during
+the marking process (e.g. Laser overtemper-ature). The output is reset (but may be set
+immediately after restart if the error was notcleared).
+X1.3.5GOODThis output is LOW active and indicates thatthe last marking has been completed without
+a warning or error. The output is reset withthe next trigger signal.
+07/08 - Rev. AF 5
+
+Service Part Installation InstAL-68045ruction/Einbauanleitung Ersatzteil
+External Customer Interface
+TerminalSignalDescription
+X1.3.6Customer 24 V24 V customer
+X1.3.7Customer GNDGND customer
+X1.3.8BADThis output is LOW active and indicates thatthe last marking was not completed due to a
+warning or an error. The output is reset withthe next trigger signal.
+TerminalSignalDescription
+X1.4.1STARTStarts the marking process, waits for triggersignal, reacts to rising edge. START has no
+function if STOP is set to LOW.
+X1.4.2Customer 24 V24 V customer
+X1.4.3Customer GNDGND customer
+X1.4.4STOPStops the marking process, reacts to LOW.The signal has to be set to HIGH if not used.
+Bridged with terminal X1.4.2 when delivered.
+X1.4.5PAUSEnot implemented yet, bridged with terminalX1.3.6 when delivered.
+X1.4.6Customer 24 V24 V customer
+X1.4.7Customer GNDGND customer
+X1.4.8N.C.not connected
+Module 5: Digital Inputs
+6 07/08 - Rev. AF
+
+AL-68045Service Part Installation Instruction/Einbauanleitung Ersatzteil
+External Customer Interface
+Module 6: Digital Inputs
+Module A: External Template Selection
+TerminalSignalDescription
+X1.5.1EXT_EVENTThis signal is used for the external templateselection. With a positive edge the signals
+(DATA0 to DATA7) of the optional inputmodules are taken over.
+X1.5.2Customer 24 V24 V customer
+X1.5.3Customer GNDGND customer
+X1.5.4RESERVEDReserved for future use. Always set to HIGH.Bridged with terminal X1.5.2 when delivered.
+X1.5.5EXHAUST_FAULTThis LOW active signal is used to detect anerror of the exhaust system.
+If not used, the signal has to be set to HIGH.Bridged with terminal X1.4.6 when delivered.
+X1.5.6Customer 24 V24 V customer
+X1.5.7Customer GNDGND customer
+X1.5.8EXT_FAULTThis LOW active signal is used to detect anexternal error.
+If not used, the signal has to be set to HIGH.Bridged with terminal X1.5.6 when delivered.
+TerminalSignalDescription
+X1.6.1DATA 0The template is selected via its assigned tem-plate number by an 8 bit value built via inputs
+DATA0 to DATA7. The selection is takenover by the signal EXT_EVENT.
+X1.6.2Customer 24 V24 V customer
+X1.6.3Customer GNDGND customer
+X1.6.4DATA 2see DATA 0
+X1.6.5DATA 1see DATA 0
+X1.6.6Customer 24 V24 V customer
+X1.6.7Customer GNDGND customer
+X1.6.8DATA 3see DATA 0
+07/08 - Rev. AF 7
+
+Service Part Installation InstAL-68045ruction/Einbauanleitung Ersatzteil
+External Customer Interface
+Module B: External Template Selection
+Output Specification:
+Input Specification:
+TerminalSignalDescription
+X1.7.1DATA 4see DATA 0
+X1.7.2Customer 24 V24 V customer
+X1.7.3Customer GNDGND customer
+X1.7.4DATA 6see DATA 0
+X1.7.5DATA 5see DATA 0
+X1.7.6Customer 24 V24 V customer
+X1.7.7Customer GNDGND customer
+X1.7.8DATA 7see DATA 0
+Rated voltage24 V DC (-15 %/+20 %)
+Load typeohmic, inductive, lamp
+Max. output current (per channel)0.5 A (short-circuit proof)
+Polarity protectionyes
+Electrical insulation500 Vrms (K bus/field potential)
+Rated voltage24 V DC (-15 %/+20 %)
+"0" signal voltage-3 V to 5 V
+"1" signal voltage15 V to 30 V
+Current inputtyp. 5 mA
+Filter input0.2 ms
+Electrical insulation500 Vrms (K bus/field potential)
+8 07/08 - Rev. AF
+
+AL-68045Service Part Installation Instruction/Einbauanleitung Ersatzteil
+External Customer Interface
+Timing Diagrams
+Normal Operation
+Error in Marking
+ACC
+Key switch
+System state
+User action
+openLaserstart-upLaserreadyPrepare formarkingWait fortriggerWait fortrigger delayMarkingWait fortriggerWait fortrigger delayMarkingWait fortriggerLaserreadyKey-switchopen
+close key switchstarttriggertriggerstopopen key switch
+ACC
+Key switch
+System state
+User action
+openLaserstart-upLaserreadyPrepare formarkingWait fortriggerWait fortrigger delayMarkingError message 2Wait forLasertrigger delayreadyWait fortrigger Prepare formarking
+close key switchstarttriggerconfirmationstarttrigger
+07/08 - Rev. AF 9
+
+Service Part Installation InstAL-68045ruction/Einbauanleitung Ersatzteil
+External Customer Interface
+Warning in Marking
+The template change is carried out after the currtime delay (hold time) between signal EXT_EVEent marking process is finished. The minimumNT and template change is about 10 ms. The
+duration of the delay increases if there is heavy load on the CAN bus or the SmartOS software.
+ACC
+Key switch
+System state
+User action
+openLaserstart-upLaserreadyPrepare formarkingWait fortriggerWait fortrigger delayMarkingWait fortriggerWait fortrigger delayMarkingWait fortriggerLaserreadyKey-switchopen
+close key switchstarttriggertriggerstopopen key switch
+External Template Selection
+>>EXT_EVENT
+>>DATA0 ... DATA7
+Template is changed
+Setup Time: > 10 msHold Time: > 10 ms
+10 07/08 - Rev. AF
+
+I@+& &
+C@&#&!0606"0 1
+
+AL-68045Service Part Installation Instruction/Einbauanleitung Ersatzteil
+External Customer Interface
+1.4 Start-Up of the External Customer Interface
+1.4.1 Connection of the external supply cable to the customer interfaceFor technical information of the following steps, please refer to the attached wiring diagrams.
+1.Remove the cover of the external customer interface.
+2.Insert the external supply cable from the outside through the opening of the external customerinterface.
+3.Connect the appropriate eight wires to the inputs DATA 0 to DATA 7 (modules A and B).
+4.Connect the appropriate wire to the input EXT_EVENT (modul 6).
+5.Connect the appropriate two wires for the 24V supply to the supply terminal block.
+6.If you wish to switch the 24V supply from external to internal, the two jumpers on the supplyterminal block have to be changed as follows.
+Voltage supply
+external internal
+07/08 - Rev. AF 11
+
+Service Part Installation InstAL-68045ruction/Einbauanleitung Ersatzteil
+External Customer Interface
+1.4.2 Connection of the external customer interface to the supply unit1.Connect the CAN-bus to the ACC board.
+CAN-bus
+1.5 Upgrade of the External Customer Interface
+When upgrading the external customer interface, make sure that the below mentioned itemshave the required index:
+required index
+ACC (AL-67676)I
+IOEB (AL-67961)C
+OS-Software6.3.5
+NoteThe system database for the external template (AL-SP70831) selection mustalways be ordered additionally.
+12 07/08 - Rev. AF
+
+AL-68045Service Part Installation Instruction/Einbauanleitung Ersatzteil
+External Customer Interface
+1.5.1 Exchange of the system databaseSupply Unit Type 1
+1.Loosen both screws of the housing cover by a half turn and remove the cover.
+Supply Unit Type 21.Open the housing cover of the supply unit by loosening the fixing screws of the cover and
+removing it carefully with the PE cable.
+2.Remove the system database on the ACC board carefully by inserting a screwdriver under-neath and using it as lever.
+3.Insert the new system database for the external template selection on the ACC board.
+4.Fasten the housing cover of the supply unit.
+screws
+fixing screws of the housing cover
+systemdatabase
+07/08 - Rev. AF 13
+
+Service Part Installation InstAL-68045ruction/Einbauanleitung Ersatzteil
+External Customer Interface
+14 07/08 - Rev. AF
+
+AL-68045Service Part Installation Instruction/Einbauanleitung Ersatzteil
+Externe Kundenschnittstelle
+2 Externe Kundenschnittstelle
+2.1 Einführung
+Die im Lasersystem gespeicherten Vorlagen k0 bis DATA 7 auf den Eingansmodulen A und B önnen auch über die digitalen Eingänge DATAausgewählt werden. Über diese Eingänge wird
+ein 8-Bit-Wert angelegt, der die Vorlage mit derwird durch das Signal EXT_EVENT über entsprechenden Nummer anwählt. Die Anwahlnommen. Dieser Vorgang wird als "Externe Vorla-
+genanwahl" bezeichnet und über die externe Kundenschnittstelle (AL-70588) ermöglicht.
+In der Vorlagenliste der Smart Graph-Software wird einer Vorlage eine bestimmte Nummerzugeordnet (s.u.). Die Nummer der gewünschten Vorlage wird - z.B. von einer SPS - binär
+kodiert an die Eingänge DATA0 bis DATA7 angenommen. Die so gewählte Vorlage wird zur aktulegt und mit dem Signal EXT_EVENT über-ellen Vorlage des Lasersystems und kann auf
+das Produkt aufgebracht werden.
+Im Dialog »Vorlagenliste« legen Sie die Verknüpfungen von Vorlage und Nummer zur exter-nen Vorlagenanwahl fest.
+WichtigEs muss zur Verwendung der externengenliste vorhanden bzw. erzeugt worden sein. Vorlagenanwahl eine gültige Vorla-
+Weitere Information finden Sie in der Smart Graph-Software Anleitung.
+Die binäre Kodierung der Vorlagennummer:
+Vorlagennr.Data7Data6Data5Data4Data3Data2Data1Data0
+000000000
+100000001
+2000000 10
+300000011
+25511111111
+07/08 - Rev. AF 15
+
+Service Part Installation InstAL-68045ruction/Einbauanleitung Ersatzteil
+Externe Kundenschnittstelle
+2.2 Übersicht der externen Kundenschnittstelle
+Die externe Kundenschnittstelle besteht aus folgenden Komponenten:
+Versorgungsklemmleiste
+CI-CAN-IO
+CAN-Bus
+24V Versorgung intern
+Versorgungskabelextern
+VersorgungsklemmleisteCI-CAN-IO
+CAN-Bus Eingangsmodule A und B für
+externe Vorlagenanwahl
+16 07/08 - Rev. AF
+
+AL-68045Service Part Installation Instruction/Einbauanleitung Ersatzteil
+Externe Kundenschnittstelle
+2.3 CI-CAN-IO Schnittstelle
+Die CI-CAN-IO Schnittstelle dient zur Ausgabe von digitalen Befehlssignalen.von digitalen Statussignalen und zum Empfang
+Sie besteht aus folgenden Modulen:
+Modul 1Buskoppler
+Modul 2Einspeiseklemme
+Modul 3Digitale Ausgänge
+Modul 4Digitale Ausgänge
+Modul 5Digitale Eingänge
+Modul 6Digitale Eingänge
+Modul ADigitale Eingänge für externe Vorlagenanwahl
+Modul BDigitale Eingänge für externe Vorlagenanwahl
+Modul 7Abschlussmodul
+N.C.
+07/08 - Rev. AF 17
+
+Service Part Installation InstAL-68045ruction/Einbauanleitung Ersatzteil
+Externe Kundenschnittstelle
+Modul 1: Buskoppler
+Modul 2: Einspeiseklemme
+KlemmeSignalBeschreibung
+X1.0.1CAN HighCAN-Bus, nur intern
+X1.0.224 V24 V System, nur intern
+X1.0.3GNDGND System, nur intern
+X1.0.4ShieldCAN-Bus-Schirm, nur intern
+X1.0.5CAN LowCAN-Bus, nur intern
+X1.0.624 V24 V System, nur intern
+X1.0.7GNDGND System, nur intern
+X1.0.8ShieldCAN-Bus-Schirm, nur intern
+KlemmeSignalBeschreibung
+X1.1.1N.C.nicht angeschlossen
+X1.1.2Customer 24 V24 V Kunde
+X1.1.3Customer GNDGND Kunde
+X1.1.4N.C.nicht angeschlossen
+X1.1.5N.C.nicht angeschlossen
+X1.1.6Customer 24 V24 V Kunde
+X1.1.7Customer GNDGND Kunde
+X1.1.8N.C.nicht angeschlossen
+KlemmeSignalBeschreibung
+X1.2.1SYSTEM_READYSYSTEM_READY wird gesetzt, sobalddas System die Initialisierung abge-
+schlossen hat und betriebsbereit ist. ImService-Modus deaktiviert. Eingaben
+über die digitalen Eingänge werden nurakzeptiert, wenn das Signal gesetzt ist.
+X1.2.2Customer 24 V24 V Kunde
+Alle folgenden Klemmen werden von dieser Klemme mit Spannung versorgt und sind von derinternen Spannungsversorgung galvanisch getrennt.
+Modul 3: Digitale Ausgänge
+18 07/08 - Rev. AF
+
+AL-68045Service Part Installation Instruction/Einbauanleitung Ersatzteil
+Externe Kundenschnittstelle
+KlemmeSignalBeschreibung
+X1.2.3Customer GNDGND Kunde
+X1.2.4READY_TO_MARKDieses Signal wird gesetzt wenn allebenötigten Daten und ein Startsignal
+gesendet wurden. Das System ist mar-kierbereit und wartet auf ein Triggersig-
+nal. Die roten LEDs auf der Steuereinheitund am Schreibkopf leuchten.
+X1.2.5MARKINGDieses Signal wird während des Markier-vorganges gesetzt.
+X1.2.6Customer 24 V24 V Kunde
+X1.2.7Customer GNDGND Kunde
+X1.2.8SHUTTER_CLOSEDDieses Signal wird gesetzt, wenn derStrahlverschluss geschlossen ist.
+KlemmeSignalBeschreibung
+X1.3.1WARNINGDieser Ausgang ist LOW-aktiv und zeigtan, dass seit Systemstart mindestens
+eine Warnung ausgegeben wurde (z.B.Teile der Markierung sind nicht innerhalb
+des Markierfeldes). beim nächsten Start zurückgesetzt.Dieser Ausgang wird
+X1.3.2Customer 24 V24 V Kunde
+X1.3.3Customer GNDGND Kunde
+X1.3.4ERRORDieser Ausgang ist LOW-aktiv. Das Sys-tem stoppt sofort, wenn während des
+Markiervorgangs ein Fehler auftritt (z.B.Laser-Übertemperatur). Dieser Aus-
+gang wird beim nächsten Start zurück-gesetzt (kann aber sofort wieder gesetzt
+werden, wenn der Fehler nicht behobenwurde).
+X1.3.5GOODDieser Ausgang ist LOW-aktiv und zeigtan, dass die letzte Markierung ohne
+Warnung oder Fehler ausgeführt wurde.Der Ausgang wird mit dem nächsten
+Triggersignal zurückgesetzt.
+X1.3.6Customer 24 V24 V Kunde
+X1.3.7Customer GNDGND Kunde
+Modul 4: Digitale Ausgänge
+07/08 - Rev. AF 19
+
+Service Part Installation InstAL-68045ruction/Einbauanleitung Ersatzteil
+Externe Kundenschnittstelle
+KlemmeSignalBeschreibung
+X1.3.8BADDieser Ausgang ist LOW-aktiv und zeigtan, dass die letzte Markierung aufgrund
+einer Warnung bzw. eines Fehlers nichtvollständig ausgeführt wurde. Der Aus-
+gang wird mit dem nächsten Triggersig-nal zurückgesetzt.
+KlemmeSignalBeschreibung
+X1.4.1STARTStartet den Markiervorgang, wartet aufTriggersignal, reagiert auf steigende
+Flanke. START hat keine Funktion,wenn STOP auf LOW gesetzt ist.
+X1.4.2Customer 24 V24 V Kunde
+X1.4.3Customer GNDGND Kunde
+X1.4.4STOPStoppt den Markiervorgang, reagiert aufLOW.
+Wenn es nicht verwendet wird, muss dasSignal auf High gesetzt werden.
+Bei der Auslieferung mit der KlemmeX1.4.2 gebrückt.
+X1.4.5PAUSEnoch nicht implementiert, bei der Auslie-ferung mit der Klemme X1.3.6 gebrückt.
+X1.4.6Customer 24 V24 V Kunde
+X1.4.7Customer GNDGND Kunde
+X1.4.8N.C.nicht angeschlossen
+Modul 5: Digitale Eingänge
+20 07/08 - Rev. AF
+
+AL-68045Service Part Installation Instruction/Einbauanleitung Ersatzteil
+Externe Kundenschnittstelle
+Modul 6: Digitale Eingänge
+KlemmeSignalBeschreibung
+X1.5.1EXT_EVENTDieses Signal wird für die externe Vorla-genanwahl verwendet. Eine positive
+Flanke übernimmt die Signale (DATA0bis DATA7) der optionalen Eingangs-
+module.
+X1.5.2Customer 24 V24 V Kunde
+X1.5.3Customer GNDGND Kunde
+X1.5.4RESERVEDReserviert für zukünftige Funktionen.Immer auf High gesetzt.
+Bei der Auslieferung mit der KlemmeX1.5.2 gebrückt.
+X1.5.5EXHAUST_FAULTDieses LOW-aktive Signal wird verwen-det, um Fehlermeldungen der Absau-
+gung auszuwerten.
+Wenn es nicht verwendet wird, muss dasSignal auf High gesetzt werden.
+Bei der Auslieferung mit der KlemmeX1.4.6 gebrückt.
+X1.5.6Customer 24 V24 V Kunde
+X1.5.7Customer GNDGND Kunde
+X1.5.8EXT_FAULTDieses LOW-aktive Signal wird verwen-det, um externe Fehlermeldungen aus-
+zuwerten.
+Wenn es nicht verwendet wird, muss dasSignal auf High gesetzt werden.
+Bei der Auslieferung mit der KlemmeX1.5.6 gebrückt.
+07/08 - Rev. AF 21
+
+Service Part Installation InstAL-68045ruction/Einbauanleitung Ersatzteil
+Externe Kundenschnittstelle
+Modul A: Externe Vorlagenanwahl
+Modul B: Externe Vorlagenanwahl
+KlemmeSignalBeschreibung
+X1.6.1DATA 0Über die Eingänge DATA0 bis DATA7wird ein 8Bit-Wert angelegt, der die Vor-
+lage mit der entsprechenden Nummeranwählt. Die Anwahl wird durch das
+Signal EXT_EVENT übernommen.
+X1.6.2Customer 24 V24 V Kunde
+X1.6.3Customer GNDGND Kunde
+X1.6.4DATA 2siehe DATA 0
+X1.6.5DATA 1siehe DATA 0
+X1.6.6Customer 24 V24 V Kunde
+X1.6.7Customer GNDGND Kunde
+X1.6.8DATA 3siehe DATA 0
+KlemmeSignalBeschreibung
+X1.7.1DATA 4siehe DATA 0
+X1.7.2Customer 24 V24 V Kunde
+X1.7.3Customer GNDGND Kunde
+X1.7.4DATA 6siehe DATA 0
+X1.7.5DATA 5siehe DATA 0
+X1.7.6Customer 24 V24 V Kunde
+X1.7.7Customer GNDGND Kunde
+X1.7.8DATA 7siehe DATA 0
+22 07/08 - Rev. AF
+
+AL-68045Service Part Installation Instruction/Einbauanleitung Ersatzteil
+Externe Kundenschnittstelle
+Spezifikation der Ausgänge:
+Spezifikation der Eingänge:
+Nennspannung24 V DC (-15 %/+20 %)
+Lastartohmsch, induktiv, Lampe
+Max. Ausgangsstrom (pro Kanal)0,5 A (kurzschlusssicher)
+Verpolungschutzja
+elektrische Isolierung500 Vrms (K-Bus/Feldpotential)
+Nennspannung24 V DC (-15 %/+20 %)
+"0" Signalspannung-3 V bis 5 V
+"1" Signalspannung15 V bis 30 V
+Stromeingangtyp. 5 mA
+Filtereingang0,2 ms
+elektrische Isolierung500 Vrms (K-Bus/Feldpotential)
+07/08 - Rev. AF 23
+
+Service Part Installation InstAL-68045ruction/Einbauanleitung Ersatzteil
+Externe Kundenschnittstelle
+Timing-Diagramme
+Normalbetrieb
+Fehlermeldungen
+ACC
+Betriebszustand Schlüsselschalter Markieren Markieren Warte LaserbereitSchlüssel-Warte aufaufTrigger-Warteauf
+aufTrigger schalter fahren offenTrigger verzögerungverzögerungTrigger
+Bedieneraktion SchlüsselschalterStartTriggerTriggerStopSchlüssselschalter
+schließen öffnen
+offenLaserhoch-LaserbereitMarkierenvorbereitenWarteWarte aufTrigger-
+ACC
+Laserbereit Fehlermeldung 2SchlüsselschalterLaserbereit Markieren MarkierenvorbereitenWarteaufWarte aufTrigger-
+Betriebszustand Trigger verzögerung
+Bedieneraktion StartTriggerBestätigenSchlüsselschalterschließen StartTrigger
+offenLaserhoch-MarkierenvorbereitenWarteaufWarte aufTrigger-
+fahren Trigger verzögerung
+24 07/08 - Rev. AF
+
+AL-68045Service Part Installation Instruction/Einbauanleitung Ersatzteil
+Externe Kundenschnittstelle
+Warnmeldungen
+Externe Vorlagenanwahl
+Während des Markiervorganges kann die Vorlage digung der laufenden Markierung wird die neue Vonicht gewechselt werden. Erst nach Been-rlage aktiv. Die Wartezeit zwischen Signal
+EXT_EVENT und Vorlagenwechsel beträgt mindesCAN-Bus bzw. der tens 10 ms. Bei starker Auslastung desSmartOS-Software kann die Wartezeit höher sein.
+ACC
+Markieren Markieren Schlüssel-
+Warteauf schalter aufLaserbereit
+Trigger Trigger verzögerungoffen
+Systemzustand
+Bedieneraktion LaserLaserMarkierenWarte aufWarte WarteWarte auf
+offenhoch-bereitfahrenvorbereitenTrigger-verzögerungTrigger auf Trigger-
+Schlüsselschalter
+SchlüsselschalterStartschließenTriggerTriggerStopSchlüsselschalteröffnen
+>>EXT_EVENT
+>>DATA0 ... DATA7
+Setup-ZeitWartezeit
+Vorlage AVorlage wirdgewechseltVorlage B
+Setup-Zeit: > 10 msWartezeit: > 10 ms
+07/08 - Rev. AF 25
+
+Service Part Installation InstAL-68045ruction/Einbauanleitung Ersatzteil
+Externe Kundenschnittstelle
+2.4 Inbetriebnahme der externen Kundenschnittstelle
+2.4.1 Anschließen des externen Versorgungskabels an die KundenschnittstelleAnschauliche Informationen zu den folgenden Schritten entnehmen Sie bitte den angehängten
+Schaltplänen.
+1.Öffnen Sie den Gehäusedeckel der externen Kundenschnittstelle.
+2.Führen Sie das externe Versorgungskabel duschnittstelle. rch die Öffnung im Gehäuse der Kunden-
+3.Schließen Sie die entsprechenden acht Aderdule A und B).n an die Eingänge DATA 0 bis DATA 7 an (Mo-
+4.Schließen Sie die entsprechende Ader an den Eingang EXT_EVENT (Modul 6).
+5.Schließen Sie die entsprechenden zwei Adern für die 24V Versorgung an die Versorgungs-klemmleiste an.
+6.Wenn Sie die 24V Spannungsversorgung von extern auf intern umschalten wollen, müssenSie die beiden Brücken auf der Versorgungsklemmleiste wie folgt verändern.
+Spannungsversorgung
+externintern
+26 07/08 - Rev. AF
+
+AL-68045Service Part Installation Instruction/Einbauanleitung Ersatzteil
+Externe Kundenschnittstelle
+2.4.2 Anschließen der externen Kundenschnittstelle an die Versorgungseinheit1.Schließen Sie den CAN-Bus an die ACC-Platine an.
+CAN-Bus
+2.5 Nachrüsten der externen Kundenschnittstelle
+Für das Nachrüsten ist zu beachten, dass die naclichen Index haben:hfolgend aufgeführten Bauteile den erforder-
+erforderlicher Index
+ACC (AL-67676)I
+IOEB (AL-67961)C
+OS-Software6.3.5
+HinweisDie Systemdatenbank für die externe Vorlagenanwahl (AL-SP70831) mussimmer zusätzlich bestellt werden.
+07/08 - Rev. AF 27
+
+Service Part Installation InstAL-68045ruction/Einbauanleitung Ersatzteil
+Externe Kundenschnittstelle
+2.5.1 Austausch der SystemdatenbankVersorgungseinheit Typ 1
+1.Lösen Sie die beiden Schrauben des Gehäusedeckels mit einer halben Umdrehung undnehmen Sie ihn ab.
+Versorgungseinheit Typ 21.Öffnen Sie den Gehäusedeckel der Versorgungseinheit, indem Sie die Befestigungschrau-
+ben des Deckels lösen und den Deckel mit dem PE-Kabel vorsichtig abnehmen.
+2.Hebeln Sie die Systemdatenbank auf der ACC-aus.Platine vorsichtig mit einem Schraubendreher
+3.Stecken Sie die neue Systemdatenbank für die externe Vorlagenanwahl auf die ACC-Platine.
+4.Befestigen Sie den Gehäusedeckel der Versorgungseinheit.
+Schrauben
+Befestigungsschrauben des Gehäusedeckels
+Systemdatenbank
+28 07/08 - Rev. AF
+
+AL-68045Service Part Installation Instruction/Einbauanleitung Ersatzteil
+Wiring Diagrams
+3 Wiring Diagrams
+07/08 - Rev. AF 29

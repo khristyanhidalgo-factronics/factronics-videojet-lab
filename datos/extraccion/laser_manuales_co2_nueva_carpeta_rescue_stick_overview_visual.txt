@@ -1,0 +1,31 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\Nueva carpeta\Rescue Stick Overview.pdf
+# cifrado=False bloques=2 caracteres=2066
+
+The Chameleon Rescue Stick
+The Chameleon Rescue
+Stick
+A Rescue Stick is a USB memory stick prepared with a CMark image that allows you to recover a failed laser. You can
+create a rescue stick and carry it with you as a service tool.
+Minimum Required Version
+CMark versions 4.0 and later support the Rescue Stick feature. You cannot recover single core
+Chameleon boards with the rescue stick, only multi- core boards.
+Use a Rescue Stick:
+l When a laser running CMark from the Flash memory will not boot.
+l When a laser will not finish the boot cycle, preventing you from reloading CMark via the Web Interface.
+l Before replacing the Chameleon to resolve failure to boot. A Rescue Stick will overwrite system files on the
+Chameleon, allowing the laser to successfully boot if corrupted system files were the root cause.
+It is suggested that you create a rescue stick before you need it and carry it as service tool. It takes approximately 45
+minutes to download the rescue image and write the files to USB.
+When a prepared Rescue Stick is inserted into the USB slot on Chameleon board, it will automatically overwrite anything
+in the Chameleon Board Flash Memory. This will completely erase all files on Chameleon and set it to manufacturer
+default state with the exception of the system database . After this rewrite process, it is necessary to connect to the
+Web Interface to load CMark. CMark is not included as part of the rescue image. After loading CMark, you should verify
+the Laser Configuration in the Web Interface.
+Possible Data Loss - Full System Rewrite
+Use a Rescue Stick only as a last resort if corruption of system files is suspected. The main symptom
+of corrupted system files an inability to boot the system successfully. If a Rescue Stick is inserted into
+the USB port and the laser is booted, all existing customer files will be wiped from memory and over -
+written with factory default image. All customer files and CMark will be lost. The system database is not
+erased (Laser type/Marking Head type/Lens/Serial Number/IP addresses).
+1 - 1
+Rev AA

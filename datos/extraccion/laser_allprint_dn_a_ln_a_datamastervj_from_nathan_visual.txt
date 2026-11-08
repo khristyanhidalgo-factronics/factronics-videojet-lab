@@ -1,0 +1,182 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\DataMasterVJ from Nathan.pdf
+# cifrado=False bloques=23 caracteres=6833
+
+DataMaster V1.1.0
+Nathan Matthews EMEA
+Confidential Internal Use Only
+
+Datamaster – what is it?
+• DataMaster is an intelligent program for the balanced
+distribution of data – such as promotional or lottery codes –
+from source files to up to eight Videojet laser marking
+systems. The software is perfect for highly sensitive
+applications such as lottery and on pack promotions requiring
+data security and demanding ultimate operator ease - of - use.
+• DataMaster is a real win - win graphical user interface
+program : It helps users to reduce code errors and waste,
+and increases uptime while quickly marking consumer
+packages with winning contents.
+Confidential Internal Use Only
+
+Datamaster Main Features
+• Clear and Intuitive: Easy to Use and Monitor
+• Easy to Setup
+• Logging, Excluding, Winning
+- Extensive logging feature tracks actions related to
+campaigns, data import and printed data.
+- Intelligent distinguishing between general data and winning
+data.
+- Visual code safety feature: If codes have been marked, their
+respective data file is displayed grayed out, thus, they are
+excluded for being marked a second time.
+- Users can create special exclusion lists for data being
+excluded for marking.
+Confidential Internal Use Only
+
+Datamaster - User Interface
+• General software concept – Data lens technology
+As for the DataMaster software, it is crucial that e.g. the status of the
+individual lasers are always visible, the data lens technology concept
+is going to be applied for the DataMaster software user interface.
+By clicking into a cell, the UI morphs by slowly compressing all other
+rows and columns and enlarging the active cell.
+=> =>
+=>
+The major advantage:
+The user always sees where he is and what information is currently
+displayed and where it belongs to.
+Confidential Internal Use Only
+
+Datamaster - User Interface
+Home cell : For decreasing the currently open cell.
+Campaigns : For creating new campaigns.
+Confidential Internal Use Only
+Lasers : Pool of available lasers to the program.
+Users : For adding, editing and deleting users.
+Settings : For setting up the program (languages and folders) and program shutdown.
+Logo : For getting information about the software.
+
+Campaigns
+In the Campaigns cell, a new campaign can be created. By confirming the creation, it will be shown in
+the working area.
+Confidential Internal Use Only
+
+Lasers
+In the Lasers cell, the lasers which are available to the program are shown.
+From here, they can be dragged and dropped onto a campaign to be used with it.
+Confidential Internal Use Only
+
+Users
+In the User cell, users can be created and deleted and be assigned to different roles (change of
+access rights).
+Confidential Internal Use Only
+
+Settings
+In the Settings cell, program settings can be made.
+Furthermore, the program is been shut down here.
+Confidential Internal Use Only
+
+Working Area
+The Working Area is separated from the General Area by a thick double line.
+Within the Working Area, the work flow is from left to right.
+Important : At least, one campaign has to be created in order to show
+the working area.
+Confidential Internal Use Only
+
+Set Up - Campaigns
+Result: The campaign is shown in the working area.
+Confidential Internal Use Only
+
+Set up – add lasers
+Drag selected lasers
+into the cell
+Result: The laser(s) will be shown in the working area.
+Confidential Internal Use Only
+
+Set Up – Input Data
+1. Opening the created Campaign cell (Olympiade cell in our example) and
+specifiy a master laser and template.
+2. Specify the Input directories for the campaign.
+Result: The selected template will be shown in
+the working area.
+Confidential Internal Use Only
+
+Set Up – Input Data
+Data Input area for formats .txt, .csv, .xls, .xml,
+DataMaster can also create unique data code
+itself (via DataFactory partition).
+1. Furthermore, all the files that are available in the defined input directories are
+shown in the Data Input cell.
+2. However, these files are still shown grayed out, as the Campaign‘s data processing
+has not been configured yet.
+Confidential Internal Use Only
+
+Set Up – Input Data
+1. Configure the Data processing configuration within the Campaign cell
+Result: The Start marking button is displayed active.
+Confidential Internal Use Only
+
+Set Up – Input Data
+1. Files which match Campaign configuration get enabled. Now they can be
+dragged onto the Campaign cell.
+Result: Content of the file is devided into multiple buffer structers.
+First portion of the buffers is transferred to the lasers.
+Confidential Internal Use Only
+
+Set Up - Completed
+1. The user interface looks as follows:
+Confidential Internal Use Only
+
+Working
+Data can be set into the campaign and data added whilst the campaign is running.
+Input time is 3.5 hours for 40 million with 16 digits (~700MB) codes so it’s a couple
+of hours to run for approx. 1 week.
+Result: If the Buffer is running out of data,
+this will be displayed in the software
+Confidential Internal Use Only
+
+Working
+Buffer size can be selected very nice as
+you can see the progress visually on the
+screen and it gives a warning when the
+data left is low to prompt adding more data.
+Campaigns can be stopped deleted and
+run with remaining unused data.
+Out of band data (winners) can be selected and chosen
+to be included at intervals or randomly - with a start and
+finish position set
+Confidential Internal Use Only
+
+Laser Status
+According to the laser‘s current state, the Laser cell is displayed in different
+colors for easy recognition.
+Confidential Internal Use Only
+
+Log Cell
+Confidential Internal Use Only
+
+Specifications
+Requirements:
+PC: DualCore, > 2.6 GHz, 4GB RAM, Windows XP
+Laser marking software SmartGraph version 8.2.3 (including QMark version 8.2.3)
+Communication via Ethernet
+Installation from USB flash drive
+Confidential Internal Use Only
+
+Specifications
+Specifications:
+• Runs on PC connected with up to 8 laser markers
+• Supplies up to 8 Videojet systems with data (e.g. promotional codes) so that they can be marked
+synchronously on the products
+• Cell - based screen layout concept: Entire UI is always visible
+colour coded laser status, campaigns, users, settings, buffer loads, logs, etc.
+• Data Input Formats: .txt, .csv, .xls, .xml, DataMaster can also create unique data code itself (via
+DataFactory partition)
+• Job Creation via SmartGraph software and Videojet G55 handheld > one handheld or SmartGraph
+per customer site is recommended in addition to DataMaster. The handheld must be disconnected,
+during DataMaster is running.
+• 3 password protected user levels (Administrator, Supervisor, Operator)
+• Extensive logging feature > All actions, marked codes, active users, etc. are logged
+• Languages: English, German, French, Spanish, Russian
+• Compatible with Videojet CO2 - systems VJ3120, VJ3320, VJ3430 and fibre lasers VJ7210, VJ7310.
+Confidential Internal Use Only

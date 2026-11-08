@@ -1,0 +1,110 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\Industrial Protocols - Profinet.pdf
+# cifrado=False bloques=7 caracteres=5787
+
+Industrial Protocols - Profinet
+H e a d e r
+V i d e o j e t T e c h n o l o g i e s , I n c . K n o w l e d g e A r t i c l e
+R e l a t e d S i t e
+C o n t e n t
+Industrial Protocols - Profinet
+V ideojet supports two common Industrial Protocols, the Profinet protocol is covered in this
+document.
+Profinet
+Used primarily with Siemens PLC’ s
+Profinet (usually styled as PROFINET , as a portmanteau for Process Field Net) is an industry
+technical standard for data communication over Industrial Ethernet, designed for collecting data
+from, and controlling equipment in industrial systems, with a strength in delivering data under tight
+time constraints (on the order of 1ms or less). The standard is maintained and supported by
+PROFIBUS & PROFINET International (PI), an umbrella organization headquartered in Karlsruhe,
+Germany .(2019 - Sep Wikipedia - Profinet).
+Certifications and Performance
+PROFINET is certified as Conformance Class C and has a cycle rate of 250 μs (microseconds).
+Performance Metrics such Product Count, Mark Count, Batch Count are not updated in real time,
+but are updated at least every 100 milliseconds.
+Certifications are available on Sharepoint. Contact V ideojet T echnologies, Inc Laser T echnical
+Support for certifications.
+T ypologies supported:
+Star
+Open Ring (Daisy Chain)
+Closed Ring
+Limitations
+CLARiTY Laser Controller cannot be used with PROFINET . SmartGraph, TCS+, and most
+SARs (including Ultimate) can be used with PROFINET .
+CPU load is increased by approximately 10%, when using PROFINET .
+Only ASCII characters are supported. No Unicode may be used.
+Maximum of five variable fields per (Packet) transmission.
+Components:
+Requirements:
+Connector Kit
+Chameleon Board
+Profinet board
+Software (CMark and .GSDML file)
+Connector Kits:
+
+Communications connector plates and options vary by laser model. Important to ensure that you have a way to
+connect cable to Profinet board in addition to any other cables needed. Refer to each laser model's available
+connector plates.
+ Dual Connector Kit (only available on 7230/7330/7340/7440)
+ AL-79734 (490) – Kit, Rating Back plate, Double RJ45, Assy .
+Single connector Kit (only available on 7230/7330/7340/7440)
+AL-79733 (485) – Kit, Rating Back plate, RJ45, Assy .
+Chameleon Board
+AL-SP78900 ( Board, PCBA, CPU, Chameleon, MCIP )
+FSB (9792): Spare parts Change – Replacement Multi-core Chameleon PCBA
+Profinet connector located on the Multi-Core Chameleon board
+
+AL-SP79384 - (250) Kit, Modul, HMS Modul Profinet (Europe). The identifier is a Y ellow dot sticker
+attached to the board.
+Kit contents:
+Note: the individual components contained within the kit, are not individually order able.
+1 – AL-79468 – Kit, rating, Modul, HMS, Profinet (Assembly)
+1 – AL-79384 – Profinet, HMS Module (Board)
+1 – AL-62596 - Screw , Soc HD, SS M3x4, DIN 912 [RoHS]
+1 – AL-80035 – CD, Manual, V ideojet, Industrial Protocols
+1 – AL-79437 – Instruction, Exchange, HMS Modul
+Software:
+CMark:
+Use CMark version 4.5 or greater
+GSDML files:
+Used to configure the PLC to communicate with the laser unit. All lasers use the same .GSDML file
+regardless of model. T o obtain a copy of the designated .GSDML file, use the following link:
+https://de.profibus.com/produkte/produktkatalog/?
+tx_solr%5Bfilter%5D%5B0%5D=member%3A V ideojet+T echnologies+Inc
+Enable the Profinet board
+
+The Profinet board needs to be configured in W eb Interface page before the use.
+The Profinet has its own part number and is specific to this protocol. It is not possible to change the
+firmware and software if the wrong part is ordered, the solution is simply to order the correct board.
+Following the installation of the board, complete the following steps to enable and configure the
+board.
+1) Connect to W eb Interface.
+2) Click on Other menu from the home screen.
+3) Select External Interface from the drop-down menu.
+4) From the drop-down menu under the Other icon, select the External Interface icon, next select
+the Profinet selection. Select the Save icon, to save the configuration setting.
+5) The default configuration is DHCP , to enter a Host Name for the PLC, remove the check mark
+and enter the static IP for the Ethernet/IP board.
+pic
+6) Click Save button.
+
+7) Power cycling the unit is not required. The system reloads the changes, the minimum wait is two
+(2) minutes as the system connects to the Ethernet/IP board. When the Ethernet/IP board has been
+acknowledged, the system screen and Status will show Active . Additional information such as the
+MAC Address and Firmware version will be populated.
+8) Install the cable from the PLC to either port on the board and that port will change from NoLink to
+Connected when activity is present. T o test without a PLC connected, you may connect Ethernet
+from either port on Chameleon board to board and the status of Port1 or 2 should change.
+Remember to return the Ethernet cable back to its original position once testing is complete.
+
+9) Laser system is now configured for use with the appropriate PLC. Customer documents
+regarding programming, such as GSD, EDS, and Sample Projects, should be provided to customer
+for programming their PLC for use with the laser system.
+D i s c l a i m e r
+T he contents ofthis em ailand any attachm ents are provided as a convenience to V ideojetcustom ers to highlightusefulinform ation and troubleshooting tips.W hen w orking w ith a product,alw ays consultthe
+productuser m anualand follow the productsafety precautions and recom m endations,including using P ersonalP rotective E quipm entw hen necessary.Ifyou have any questions or are notexperienced in usin g
+or servicing V ideojetequipm ent,contactV ideojetfor assistance.
+I n t e r n a l C o m m e n t s
+T i t l e
+
+Industrial Protocols - Profinet
+U R L N a m e Industrial-Protocols-Profinet

@@ -1,0 +1,1347 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\3020 CSE.pdf
+# cifrado=False bloques=126 caracteres=49890
+
+®
+Videojet 3020 Laser Coder
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Agenda
+• Safety
+• Specifications
+• Components
+• Marking fields & Working Distance
+• Touch control unit
+• Static labs
+• Installation
+• MOTF labs
+• Maintenance and troubleshooting
+• Part numbers
+• 3020 vs. 3120
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Objectives
+At the end of this training class you will be able to :
+• Demonstrate the ability to safely install a 3020 laser
+• Identify the function of the 3020 components.
+• Demonstrate the ability to create static and dynamic
+messages using the Touch Control Screen software ( TCS ).
+• Demonstrate the ability to troubleshoot common problems
+associated with 3020 laser.
+• Demonstrate the ability to remove and replace major
+components of the laser system
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Safety Instructions
+• Danger refers to an immediately impending danger. If the danger is not avoided, it will
+result in death or severe (crippling) injury.
+• Warning refers to a possibly dangerous situation. If it is not avoided, it could result in
+death or severe injury.
+• Careful refers to a possibly dangerous situation. If it is not avoided, it could result in
+slight or minor injury. May also be used to warn of damage to property.
+• Caution refers to a possibly harmful situation. If it is not avoided, damage could be
+caused to the product or to something in its environment.
+• Important refers to handling tips and other particularly useful information. This does not
+signify a dangerous or harmful situation.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Intended Use
+• The laser system must only be used for the treatment of
+material surfaces . The surfaces are locally heated by
+intensive class 4 laser radiation and are modified thereby.
+These systems are mainly applied for marking of product
+surfaces (expiry dates, batch printing, serial numbers, etc.).
+• The radiation produced by the laser system is of high energy
+and therefore improper use represents a danger to persons
+or objects!
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+LASER CLASSIFICATION
+Class 1 Incapable of causing injury during normal operation
+Class 1M Incapable of causing injury during normal operation
+unless collecting optics are used
+Class 2 Visible lasers incapable of causing injury in 0.25 s.
+Class 2M Visible lasers incapable of causing injury in 0.25 s
+unless collecting optics are used
+Class 3R Marginally unsafe for intrabeam viewing; up to 5 times the class 2 limit
+for visible lasers or 5 times the class 1 limit for invisible lasers
+Class 3B Eye hazard for intrabeam viewing, usually not an eye hazard for
+diffuse viewing
+Class 4 Eye and skin hazard for both direct and scattered exposure
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Safety Devices
+• Key - operated switch prevents operation of the laser system by unauthorized people. The
+"switch" is closed by entering a password in the Touch Control. Make sure that the login
+information is available to authorized personnel only! 8463
+• Beam shutter is located within the marking head and prevents the emission of laser
+radiation.
+• Interlock switches opens the safety circuit. The marking process is stopped immediately.
+If several interlock switches are connected: Laser radiation cannot be emitted if at least one
+interlock switch is opened. Interlock switches can safeguard safety doors, protective
+covers, etc. For the marking process all interlock switches must be closed. If an interlock
+switch is open the message "Error Interlock open" is displayed in the software. After closing
+the interlock switch the marking process can be continued after a delay of 5 seconds.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Warning Lights
+• Red light ("bumper") on the head of the laser system lights up
+when the emission of laser radiation is possible.
+• Red LED "Laser emission“ on the keypad of the laser
+system, lights up when the emission of laser radiation is
+possible.
+Red light ("bumper")
+Red LED "Laser emission“
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Danger to the Eyes
+• The laser system produces class 4 laser radiation. Infrared
+laser radiation is not visible for the human eye. Therefore eyes
+and skin are endangered through high - energy laser radiation.
+• High irradiation causes an extreme local heating and burning
+of the tissue . The eyes are subject to special risks. High
+radiation intensity causes a local heating and burning of the
+cornea and thus a reduction or loss of sight!
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Suitable Eye Protection
+• People within the area of the laser must wear suitable safety
+goggles against laser radiation while carrying out maintenance,
+adjustment or service work at the open laser housing and/or
+open beam delivery system!
+• Never look directly into the laser beam!
+YAG and Fiber
+protection only!
+C02 protection
+only!
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Laser wavelength ranges
+• Suitable safety goggles are: designed for the wavelength range
+of the CO2 laser of 10.6 μm. See name plate of the laser system.
+• Careful with confusions! Safety goggles for other lasers, e.g.
+Nd:YAG laser, do not provide adequate protection against
+radiation of a CO2 laser!
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Radiation Reflection
+• Suitable safety
+goggles provide
+protection
+Direct
+against direct,
+specularly
+reflected or
+diffusely
+scattered laser
+Reflective
+radiation.
+Defused
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Zinc Selenide Lenses
+Caution The laser scan lens consists of coated zinc selenide and
+contains an extremely small amount of the radioactive substance
+thorium. This applies to all CO2 laser marking systems available
+on the market.
+• Zinc Selenide This material contains components which are
+dangerous to health!
+• Zinc selenide is toxic when inhaled or ingested. Dust may lead to
+irritation of the eyes and the respiratory system. Do not eat, drink
+or smoke while handling zinc selenide. Wash hands thoroughly
+afterwards.
+• For detailed information see safety data sheet in the chapter
+"Appendix".
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Thorium
+Thorium is a potential health hazard when inhaled or ingested. The
+thorium layer is embedded within other layers within the lens.
+Thus no radioactive material can escape from the coating as
+long as the lens is intact. Avoid any surface scratches of the lens.
+• In case of a broken lens... ...do not inhale material particles! In
+case of breaking of the laser scan lens please collect the
+fragments wearing gloves (avoid raising dust when sweeping up
+the pieces), pack the fragments into a closed plastic bag and
+send them back to us for disposal.
+• Note There is no danger of radiation during normal handling
+and cleaning of the optical system!
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Fire and Explosion Hazard
+• The high output power of a class 4 laser can inflame various materials.
+Therefore, while performing maintenance and service work at the open
+laser housing and/or open beam delivery system, make sure that fire
+protection measures were taken before starting the works!
+• Paper (circuit diagrams, leaflets, posters on the walls, etc.), curtains which
+are not impregnated fire retardant, wooden boards or similar flammable
+materials can easily be inflamed by direct or reflected laser radiation.
+• Make sure that the working area of the laser system is free from
+containers with flammable or explosive solvents or cleaning agents!
+Unintended exposure of a container to intensive invisible laser radiation
+might easily cause fires or explosions.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Decomposition of Products
+• Caution When treating materials with laser radiation decomposition
+products are produced which are dangerous to health!
+• Through vaporization of materials fine dust and vapors are produced
+which might include hazardous decomposition products depending on
+type and composition of the respective materials.
+• Therefore we highly recommend to install an fume extractor according
+to the respective requirements which is equipped with special dust
+and activated charcoal filters to ensure that the decomposition
+products are sucked off where they are produced.
+• In addition a fume extractor prevents that dust particles gradually
+destroy optical components of the laser system. !
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Safety References
+• CDRH - Center for Devices and Radiological Health
+– An agency within the U.S. Food and Drug Administration which publishes and enforces legal
+requirements on laser product manufacturers. For copies of the CDRH regulations, contact:
+CDRH (HFZ - 312), 2098 Gaither Road, Rockville, MD 20850, Telephone (301) 594 - 4654
+• ANSI/OSHA - ANSI (American National Standards Institute)
+– U.S. organization that publishes standards for laser users. Their laser safety standards are not
+laws, but they form the basis for state and OSHA requirements for the use of lasers. For copies
+contact ANSI in New York at (212) 642 - 4900 or the Laser Institute of America, at Telephone
+(407) 380 - 1553, Fax (407) 380 - 5588
+• OSHA - The Occupational Safety & Health Administration
+– Does not have specific laser safety requirements. However, if they are called into a facility, the
+inspectors follow published guidelines (OSHA Instruction PUB 8 - 1.7 Guidelines for Laser Safety
+and Hazard Assessment) that are based on an earlier (1986) ANSI Z136.1 standard.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Laser characteristics
+Monochromatic
+- Light is of a single color or wave length
+- CO2 laser light is invisible to the human eye
+Directional
+- Laser light has little divergence or spreading
+Coherent
+- All light energy particles or photons travel in phase with each
+other
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Techniques of Marking
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Specifications #1
+Videojet 3020 (10W CO2)
+Laser Type Sealed - off CO2 laser; 10W; wavelength 10.6 µm
+System One - box laser marker; aluminum chassis, plastic housing
+Standard Configuration
+Laser Marking Unit (includes: laser, digital high - speed galvanometer scanners, lens with lens
+protection, controller, I/O panel, built - in keypad, power supply, connectors, lamps, switches,
+focus finder) Laser beam orientation: 90 - degree beam exit
+Product Detector; Touch Control Unit (user interface)
+Options & Accessories
+Mobile Stand, Beam Shield, Exhaust Unit, Mounting Brackets, Touch Brackets, Fiber Optics
+Photocell, Encoder
+Integration Stand - alone solution when optionally available stand is utilized
+Usage without stand: direct integration into production lines via mounting brackets
+Dimensions Height: 159 mm | Length: 613 mm | Width: 155 mm
+Weight ~7kg (~10kg packed)
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Specifications #2
+Videojet 3020 (10W CO2)
+Speed Depends on the application! Line speed: Max. 1m/s (60m/min)
+Marking/ Standard fonts (Simplified Chinese, Western European) | Machine - readable codes : ID matrix,
+Data
+bar codes | Logos/ symbols (pixel - based, vector - based) | Graphical elements (ellipse, rec -
+Formats
+tangle, polygon) | Variables (serial numbers, text, date, time, shift code, GS1)
+Marking
+Fields
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Specifications #3
+Videojet 3020 (10W CO2)
+User Touch Control Unit
+Interfaces
+PC based; communicating with the marking unit via Ethernet
+USB interface on touch screen for data exchange
+Configurable in English, Simplified Chinese, Spanish, Portuguese (Brazilian), Korean
+Built - In Keypad
+Start and stop keys | LED indicators for status, laser emission, error
+Software Touch Control Software
+®
+Easy - to - use graphical touch screen user interface under Windows for the intuitive and fast
+preparation of marking jobs, easy line setup, easy print parameter setup and system config.
+Creation and editing of jobs | Vertical/ horizontal adjustment, rotation and scaling of marking
+contents and intensity variations | WYSIWYG | Various password - protected security levels
+Communication
+Inputs for encoder and product detector
+Digital I/Os for start, stop, interlock, shutter lock, ready, error, shutter locked
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Specifications #4
+Videojet 3020 (10W CO2)
+Supply 100 to 120V/ 200 to 240V, auto range
+1PH, 350 VA, 50/60 Hz
+Environmental Dust protected, internally air cooled
+Conditions
+Ambient temperature: 5 ° to 40 ° C (up to 45 ° C with reduced duty cycle)
+Humidity range: 10 - 90 % non - condensing
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+System Components
+• Standard Configuration
+– Laser Marking Unit (90 - degree beam exit)
+• Includes: laser, digital high - speed galvanometer scanners, one lens with lens
+protection, controller, I/O panel, built - in keypad, power supply, connectors,
+lamps, switches, focus finder.
+– Product Detector
+– Touch Control Unit (user interface)
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+3020 System Structure: Overall
+Fan
+Mounting
+Connectors/ interfaces for
+power supply, encoder, Touch
+Control and customer interface
+Laser
+Deflection Unit
+Power Supply Electronics
+Warning Lights
+Air Outlets
+Lens
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Keypad
+System LED white: flashes during initialization, on
+Keypad
+when system is ready for operation, on with higher Error LED
+allows for quick and easy intensity during the marking process
+yellow
+access to
+– Start + stop keys
+– LED indicators for
+• Status
+• Laser emission
+• Error
+Emission LED red : on when key switch is in position »1« and
+interlock is closed. Simultaneously front LED lights up.
+Push button to START the currently
+Push button to STOP
+selected marking job
+the marking process
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+ICE Board
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+ICE Board Connectors
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Connector/ interface
+Connection of power supply
+Connection of
+Main power switch
+customer interface
+Connection for
+Detector/ Encoder
+Connection of product
+Connection for
+detector (light barrier)
+Touch Control (UI)
+> not on the image,
+on bottom of system
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Product Detector/ Encoder Connector
+Pin Function
+1 24V
+2 Encoder Channel A
+3 Encoder Channel B
+4 Encoder Index
+5 GND
+6 24V
+7 Product Detector
+8 24V
+9 GND
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Ethernet and Product Detector
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+25 Pin Digital Input/ Output Connector
+1 INTERLOCK_IN
+PIN 25
+2 START
+3 STOP
+4 SHUTTER_LOCK_IN
+5 - 10 n.c. do not connect,
+11 24V_IN
+12 n.c. do not connect,
+13 INTERFACE_GND
+14 INTERLOCK_OUT
+15 READY_TO_MARK
+16 SHUTTER_LOCK_OUT
+17 SHUTTER_CLOSED
+18 - 24 n.c. do not connect
+23 24 _OUT
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+25 INTERFACE_GND_OUT
+
+Customer Interface Jumper
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+ICE Board LED’S
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+ETHERNET CONNECTION (GREEN LED = TRANSMITTING)
++1.8V
++24V
++ 5 V
+DPLX MODE 2.5 V
+100 M Bit
+3.3 V
++ 1.5 V
+1000 M Bit
+10 M Bit
++ 1.2 V
+TRIGGER
+INDEX
+IN START
+CHANNEL B
+IN STOP
+CHANNEL A
+Flashes slow as long as the boot loader
+ENCODER ATTACHED
+is running and waiting for a SD.
+DETECTOR ATTACHED
+Flashes fast while the boot loader
+loads Linux from the SD
+MIMI SD CARD
+DSP DEBUG
+sk
+open
+DIP SWITCHS
+SYSTEM DATABASE
+NOT USED GREEN LED
+SD/MMC ACTIVITY
+PPC SYSTEM ERROR
+- 12V PWM
+DSP ALIVE
+1 2
++12V PWM
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Deflection Unit
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Power Supply
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Laser Tube
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Hardware Overview
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Accessories Overview
+• Available Options & Accessories
+– Mobile Stand
+– Beam Shield
+– Exhaust Unit
+– Mounting Bracket
+– Encoder
+– Fiber Optic Photocell
+– Touch Bracket
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Mobile Stand
+Touch Control Unit and
+Touch Brackets (neither Stand with 3020 Laser
+are included in the Marking Unit
+stand)
+Setup
+directions
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Mounting Brackets
+*aluminum profile not included
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Mounting Brackets
+Part #: AL - 73237
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Beam Shields
+• Laser safety cover
+• 1 beam shield per lens
+Part # Lens
+AL - 73377 100mm
+AL - 73376 150mm
+AL - 73374 200mm
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Exhaust Unit
+General Remarks/ Recommendation
+In order to remove marking residues which might be dangerous
+we recommend installing a fume extractor along with the
+Videojet 3020 laser coder.
+The fume extractor is to be installed such that marking particles
+are removed directly at the place of the formation.
+In addition a fume extractor prevents dust particles from
+gradually destroying optical components of the laser system.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Exhaust Unit: AD ACCESS
+Which fume extractor fits to 3020 applications?
+AD - ACCESS
+– For static or slow moving applications
+and smaller workstations with light burn - up.
+– Wet area applications are not recommended.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Exhaust Unit: AD ACCESS
+General Information
+AL - 72311 Exhaust unit VIDEOJET AD - ACCESS 115V 50/60Hz
+AL - 72310 Exhaust unit VIDEOJET AD - ACCESS 230V 50/60Hz
+For the Light Duty, Laser Marking, Coding and Engraving Industries
+AD Access combines economic ownership with performance to match
+low or small volume laser applications. A three stage filter condition
+indicator is included as a standard feature, together with three stage
+filtration: pre filter, HEPA and chemical section.
+• Ideal for low or small volume laser marking applications
+• Three stage filtration
+• Comes complete with filter condition indicator
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Exhaust Unit: AD ACCESS
+Technical Specification
+SCOPE OF DELIVERY
+Every unit comes with the following accessories:
+1x Pre - Filter, 1 x Combined Filter
+10m Signal Cable, 10 m Mains cable,
+50mm hose kit:
+- 4m 50mm flex with cuffs
+- 50mm arm with nozzle
+- and 2 x cobra clips)
+GUIDE TO FILTER LIFE:
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+ADAD -- ACCESSACCESS
+MarkingMarking SpeedSpeed 0 0 –– 150 150 prodprod /min/min 151 151 –– 500 500 prodprod /min/min 500 500 prodprod /min/min
+ShiftsShifts /Day/Day 11 33 11 33 11 33
+PrePre filterfilter / / CombinedCombined filterfilter durationduration in in monthsmonths usingusing a 2 a 2 lineslines codecode
+TargetTarget SubstrateSubstrate
+Card Card whitewhite 2/42/4 1/21/2 1/21/2 N/RN/R N/RN/R N/RN/R
+Card Card PaintedPainted 2/42/4 1/21/2 2/42/4 N/RN/R N/RN/R N/RN/R
+Glass (Glass ( nonenone treatedtreated )) 5/65/6 3/53/5 5/65/6 4/64/6 4/64/6 N/RN/R
+PaintedPainted MetalsMetals 5/65/6 3/53/5 4/64/6 N/RN/R N/RN/R N/RN/R
+PlasticsPlastics N/RN/R
+2/42/4 1/21/2 1/31/3 N/RN/R N/RN/R
+PET PET 2/42/4 1/21/2 2/42/4 N/RN/R N/RN/R N/RN/R
+
+Exhaust Unit: AD ACCESS
+Consumables & Spares
+DSC00575
+Accessories
+Extended Hose
+The max. hose length between the
+extraction area and the unit is 5 m.
+• Keep hose lengths as short as possible.
+• Longer lengths can be achieved but
+should be referred to SAR on each
+installation basis.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Encoder + Photocell
+• Encoder Part #: AL - 73365
+• Photocell standard reflective
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Touch Screen Bracket
+• Holder for Touch Control and stand
+– Used in combination with stand or mounting bracket
+Part #: AL - 73395
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Touch Control Unit
+Easy - to - use and intuitive operator interface
+– Quick and easy job creation, parameter
+settings, line setups, system configuration
+– Intuitively designed
+• Intuitive icons
+• Always visible: easy - to - read job preview
+• Eliminates operator confusion
+• Simplifies training
+• Reduces coding errors
+– Various password - protected security levels
+– Configurable in English, Simplified Chinese, Spanish, Portuguese
+(Brazilian), Korean
+– Troubleshooting: is a simple matter of pressing a button
+• Online help center
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Marking Fields
+Working distance
+Graphic shows 3 available marking fields in original size
+White field: 100mm lens > working distance: 80mm
+Dark blue field: 150mm lens > working distance: 128mm
+Light blue field: 200mm lens > working distance: 179mm
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Marking Fields: Working Distance
+• For easy application setup and adjustment of the
+correct working distance a focus finder is used
+– Adjust working distance with focus finder as depicted
+Put focus finder under lens Start marking
+1 Move system down
+to
+the product
+2 Remove focus finder
+1
+2
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Software
+Quick start and easy operation
+• Operator interface on Touch Control
+handheld
+– simple and intuitive
+– for maximum ease of use
+• Application setup + job creation: only 30 min.
+• Line setup: straightforward
+– from select box and preview window
+• Automatic detection of encoder and product detector
+– both are ready - to - use from the start
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Touch Control: Screen Layout
+1 1. Status bar
+1. Key switch
+2. Logo button +
+3
+2
+Job list area
+software
+Job preview
+information
+window
+2. List area (displays
+(Operator mode)
+jobs or variables)
+3. Preview area
+4. Toolbar
+5
+5. Home button (access
+4
+to available menus)
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Menu Structure
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Data Entry: Keypad + Keyboard
+Keypad Keyboard
+Opens by double click on text based element
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Online Help Center
+Need help?
+Keep finger pressed for 2 sec. on an element
+> online help center opens
+Example shows
+help screen for
+“mark settings”
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Customization: Colored Screens
+You can select one out of three color themes
+• Standard is “grey”
+• Options are “beige colored” and “silver colored”
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Users & Roles
+Users
+– Freely selectable number
+of Users
+– Each User is assigned
+1 out of 3 roles
+– Available User functions
+depend on respective access
+rights defined under “Roles”
+– Password protected
+Roles
+– Administrator
+– Supervisor
+– Operator
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Users & Roles
+Roles
+– Available access rights/
+user functionalities
+• Hide (circles)
+• View (eye)
+• Edit (hand)
+– Access rights > set by
+Administrators only
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+File Management
+Upload and download files
+– entire databases or
+individual elements
+• Import
+– complex graphics/ logos
+• Download (drag & drop)
+– laser > device (e.g. USB)
+• Upload (drag & drop)
+– device > laser
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Line Setup #1
+How to use your Touch Control User Interface to set up your
+laser coding system for the line
+“Menu” > “Line Setup” > “Add”
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Line Setup #2
+“Add” > enter name for the new line Press “Ok” for line confirmation
+line is added to list of line setups
+Select new line setup
+Activate “Product movement”
+for mark on the fly applications
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Line Setup #3
+Press “Position/ orientation Enter values for parameters
+> product size, > start delay
+settings” + select settings
+according to your needs via
+Select the settings
+touch screen
+> invert polarity, > trigger mode
+Put several products on conveyor,
+let them pass the light barrier
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Line Setup #4
+Software defines encoder values Scroll to top level entry, press new
+“pulses/revolution” + line setup > “Activate”
+“distance/revolution” automatically
+1
+2
+Line setup is activated
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Job Editor: Job Creation #1
+How to use your Touch Control User Interface to create a job:
+Creation of a simple 1 line code using the Job Editor and the mark
+settings
+2 steps to create a job:
+1. Create the elements you need
+– Text, barcode, variable, etc.
+– Position your element/s freely
+– Drag elements in the preview area
+2. Define mark settings
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Job Editor: Job Creation #2
+Open Job Editor, create a new job
+3
+2
+1
+4
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Job Editor: Job Creation #3
+Add and define element/s
+3
+2
+1
+1. Add element
+4
+2. Name element
+3. Confirm
+4. Select element type
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Job Editor: Job Creation #4
+Select corresponding marking setting ,
+e.g. carton
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Job Editor: Job Creation #5
+• Once your job is created …
+– Go back to the Home screen
+– Select your new job
+– Activate your new job
+– Close key switch
+– Start marking
+• Marking on the fly?
+– Do not forget to set +
+activate line settings
+• see line setups section
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Laser Optimization
+Parameters
+Materials Application
+Print Quality
+Focusing Fonts
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+The Influence of Spot Size
+Depth of field 2mm
+Focal 60 mm
+80mm Lens
+Marking Area 31x45 mm
+Focal 84 mm
+180mm Lens
+Depth of field 10 mm
+Max rectangl marking Area 62x 89 mm
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+The Influence of Focal Length
+F =80 lens
+F =180 lens
+Small
+depth of
+focus
+Large
+depth of
+focus
+r m a r
+e k
+in
+s
+g
+a
+L
+r m a r
+e k
+in
+s
+g
+a
+L
+Larger spot
+size less
+Small spot
+Uneven
+density
+size greater
+print
+density
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Focusing
+The top print samples are chemical and ablation created in focus. The below print
+samples were taken at less than 10mm out of focus.
+• Corrective action: Adjust the distance between the product and the laser head
+refer to the laser system manufacturer’s manual.
+• Out focus causes fuzzy print
+• Weak laser power
+• Causes characters such as 0 and 8 not to close
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Font advantages
+• Speed
+Fonts designed to reduces the number of vectors
+Fonts designed with reduced character rounding
+• Crossing and non crossing
+Eliminates drilling caused by intersecting points
+• Application and material specific
+Camera systems (track and trace)
+Thin materials such as PET and webbed film
+High speed applications
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Font applications
+Standard applications
+STANDARD 1L
+- complete font containing several special characters
+- crossings
+- irregular distribution of vectors
+PET marking with 10.6 µm; SMART 6
+- complete font containing several special characters
+- no crossings (ho=1mm || = 70µm)
+- regular distribution of vectors
+Standard font for image processing
+OCR B
+- only numbers and capital letters
+- no crossings (ho=1mm || = 40µm)
+- regular distribution of vectors
+S_X
+very high marking speed
+- complete font
+- crossings
+- no rounding, for very fast applications
+- ATTENTION: ho=1mm corresponds to a height of 0.87
+mm on the product!
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Crossing and non crossing
+Crossing
+Cross section shows
+double markings
+Non crossing
+Cross section shows no
+double markings
+Red areas indicate material that has been affected by laser energy.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Examples of crossing and non crossing
+The white spots are caused by the laser system writing twice in these positions. First
+try reducing the laser power. If this is unsatisfactory you can use a non crossing font
+as shown below. It is important to use a non crossing font when marking onto thin
+delicate films. DataLase Ltd. recommend the use of laser systems with non crossing
+fonts to image DataLase.
+None. The lines do not cross over each other, so the DataLase is not imaged twice
+and the white spots are not produced.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Font printing time
+Note: In this illustration of the information toolbar of three different fonts, of the
+same size, with the same parameters, all have different marking times.
+Not all fonts are created equal. The number of polygons and points play a major
+role in the amount of time needed to complete a character.
+The more marking done on the X or Y axis the lower the print time (S_X font)
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Jumps and Strokes
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Displaying jumps and strokes
+It is physically impossible to watch moving print and determine when the
+laser is printing at the beginning and ending of a stroke. The display jumps
+and strokes feature is a technician's number one tool for troubleshooting
+print quality issues.
+• Display of start and end points of vector strokes.
+• The start point of a vector stroke is green, the end point is red. Start and
+end
+points of the vectors within a vector stroke are blue.
+• Display of jumps (distances between vector strokes which are not marked
+by the laser).
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Static printing
+Green circle indicates the start position.
+Red circle indicates the stopping point.
+Blue dots indicate vectors
+Blue arrows indicate jumps
+Black lines indicate strokes
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Direction of travel
+When printing on the fly, the printer will print the first characters to come into the print
+window.
+Product Registration set to run from left to right
+Line Direction
+VJA
+Product Registration set to run from right to left
+Line Direction
+VJA
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Jump Speed
+Defines the speed of movement
+of the laser beam when moving
+from one stroke to the next.
+The laser is switched off during a
+jump. A typical value is 10,000 mm/s.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Jump speed notes
+• This Jump Speed has to be balanced with the Jump Delay. The faster the jump speed the longer the
+jump delay will need to be.
+• Jump Speed should be kept to a minimum to avoid having to add more Jump Delay to account for galvo
+vibration. These vibrations are normally seen on the first character of a code or a vector after a long jump,
+because the mirrors have increased inertia.
+• High jump speed can decrease the life of the marking head.
+Marking speed of
+500
+The picture to the left is a
+display of incorrect jump
+Marking speed of speeds at various marking
+1500 speed. The faster the
+marking speed the more the
+Marking speed of mirror jumps are effected.
+2500
+Marking speed of
+3500
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Marking speed
+Defines the speed of movement of the
+laser beam when marking the product
+adjustable from 1 to 7.000 mm/s
+Low marking speed
+High marking speed
+Marking speed to fast
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Mark speed notes
+• Marking speed has to be balanced with Marking Intensity . Fuzzy edges of the lines or incomplete
+removal of material are indications that the mark speed is to high based on the current level of intensity.
+• Lasing to deep or burning the substrate may not be the desired effect, this could create puncture in the
+material when using a cross over font where lines intersect (If burning is occurring where vector intersect it
+is recommended that a non - cross over font be use). The faster your Marking Speed the lighter your mark
+will be so the Marking Intensity must be increased accordingly.
+• High Marking Speeds will also require delays to be increased. When the galvos are moving at high
+speeds, they require more time to settle into position so that incorrect character formation can be
+minimized.
+• When marking on hard substrate (i.e. glass) it will be necessary to lower your marking speed to achieve
+the desired effect. Lowering the marking speed could give you incomplete marking fields. This is because
+the laser is taking to much time to complete the mark. Raising the jump speed and lowering the delays with
+help to composite for the lost time due to low marking speeds.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+High
+marking
+speed.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Marking intensity
+The laser parameter marking intensity affects extremely the quality of the marking.
+It alters the power of the laser marking system.
+The marking intensity is adjustable from 0 to 100%.
+Marking intensity have to be balanced with Marking Speed . Fuzzy edges of the
+lines or incomplete removal of material are things that have to be looked at. Lasing
+too deep may not be the desired effect that you need and could create puncture in
+the material especially on areas where lines intersect (Might need to use non - cross
+over font).
+Note: For CO² laser high marking intensity may shorten the life of the laser tube.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Temperature in relation to the output power
+(Duty Cycle)
+100%
+70%
+30%
+0%
+5 ° C 36 ° C 40 ° C 45 ° C
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Relationship between
+Marking speed and Intensity
+The picture above was printed with the same parameter settings with the exception
+of marking speed. As marking speed is decreased the pulses overlap at a given
+pulse rate. This can cause the substrate to appear to be burnt or discolored.
+Note: the change in beam diameter and color of the print.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+To much intensity
+To much intensity removes the chemical that reacts with the laser wave length.
+Corrective action: Reduce the laser intensity or increase the marking speed until
+solid lines are produced, 50% intensity shown .
+Corrective action: no adjustments required good code at 30% intensity shown.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Jump Delay
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Note the jagged line on “M”. The galvos have not stabilized yet and the laser is
+turned on.
+This could be corrected by reducing the Jump Speed and or increasing Jump Delay.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Mark Delay
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Mark delay notes
+• Mark Delay has to be balanced with Laser On - delay. If the delay is to short at high marking speeds
+curves could appear in the sharp corners.
+• If the delay is set to high characters could appear to have deeper burns into the material at the end of a
+vector.
+Note: the thickening of ablation in the curves
+Note: the thinning of ablation on the X or Y axis
+Note: raising the intensity will only cause the curves to become thicker or burn
+the
+Material. The mark delay must be decrease first. Then determine if you need to
+raise the intensity.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Mark Delay to high
+Curve marking are thick
+In the message above, it is clear to see the curved characters seem to print thicker
+than the straight characters. The reason is, the Mark Delay is set too high, therefore
+there is a pause at every end of vector. Since the curved characters have more
+vectors than straight characters, the laser energy is more concentrated at these
+points.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Stroke Delay
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Stroke delay notes
+• Stroke Delay has to be balanced with Laser Off - Delay .
+• Stroke Delay should be paid close attention to when performing applications that require high Mark
+Speeds. If the Stroke Delay is too short the characters will appear faint where there are straight lines, but
+bold where there are curves.
+• On soft substrates the characters will appear to be shorten as if the laser off delay is set to low. The
+difference between stroke delay to short and laser off delay to short is stroke delay to short will have a thin
+tail on the incomplete character.
+• Hint: The key to determining stroke delay to short is incomplete vectors with very light tails (substrate
+dependant).
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+As seen in the code above, the distortion from the "S", "6" and "I" have been
+resolved, however, notice on the parameter column, the Jump Delay has been
+decreased to a value of zero (0), therefore the quality of the beginning characters has
+become unacceptable.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+On Delay
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+On delay notes
+• Laser On - delay has to be balanced with Mark delay and Stroke Delay . There could be tail marks on the
+beginning of the stroke which could be mistaken as Stroke Delay. Take note of where the tail is if it is in the
+beginning or end of the stroke by looking at the jumps and vector outlines.
+• Hint: the key to determining on delay to short or to long is the show jumps feature under the template tab.
+In the picture above, while printing on black plastic the technician attempted to
+eliminate hot spots at the beginning to the strokes by increasing the on delay. A
+close up show the beginning of the characters are missing.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+On delay
+high
+Notice that characters like the “O”, “0” does not close, “M” have short legs.
+The galvo is tracing the outline of the character but the laser is still off.
+This could be adjusted with decreasing the Laser ON Delay.
+On some sensitive materials a very low Laser On delay can puncture the substrate.
+This sometimes could be mistaken as Laser off delay.
+Take note where the start and stop of the strokes are.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+On delay to low
+On Delay, as seen on the character formation part of this document, is a delayed
+"Turn On" time of the actual C02 laser. The laser tube is on before galvo mirrors
+move.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Off Delay
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Off delay notes
+• Laser Off - delay has to be balanced with Mark delay and Stroke Delay .
+Off delay to short will cause your (O’s and zero’s) not to be completed.
+• Off delay to long could cause tail marks at the end of a completed stroke
+which could be mistaken as Stroke Delay. Take note of where the tail is if it
+is before the end of the stroke or if the stroke was completed.
+• Hint: the key to determining off delay to short or to long is the show jumps
+feature under the template tab.
+Hot spots
+O’s not closing
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Notice tails drilling on end of characters. The galvos jumped to the new vector and
+the laser is still on. This can be adjusted by reducing the Laser Off delay.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Notice some segments of the characters are short and other like the “O” and “”0”
+does not close. The galvos are still tracing the end of the characters but the laser is
+off already. This can be corrected with increasing the Laser off delay.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Pulse frequency
+Pulse frequency can be set between 50 Hz to 20 kHz. Low values can be used to
+achieve a broken line.
+As far as the frequency of repetition of single spot the laser, it can be command
+liberations within the range concurred (from the tens with the hundreds of kHz).
+Higher it is the greater frequency is the superimposition (overlap) between the spot.
+Or higher it is the execution speed
+30%
+40%
+60%
+LOW Medium
+High
+Frequency
+Frequency
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Mark speed of 1500
+Intensity 100%
+Mark speed of 1500
+Intensity 70%
+Most CO2 applications will print with a frequency of 10,000, some high speed PET
+applications may need 20,000.
+When adjusting frequency, it has to be balanced with marking speed and intensity .
+At lower frequencies it may be necessary lower the marking speed to prevent dotted
+lines.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+SUMMARY
+nd
+2 Jump delay
+st
+1 Jump speed
+th
+5 Mark delay
+th
+4 Marking intensity
+th
+6 Stroke delay
+7thOff delay
+rd
+3 Laser on delay
+th
+4 Marking speed
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Maintenance plan
+Monthly
+• Check the laser scan lens for dust and dirt.
+• Clean the laser scan lens in case of dust or stains.
+• Exchange the filter in the laser system.
+Monthly or when control lamp lights up
+• If installed: Exchange the filter bag inside the fume extractor (refer to fume extractor manual).
+Every three months
+• Carry out a visual inspection of the laser system.
+Every six months If installed: Exchange the charcoal filter inside the
+• fume extractor (refer to manual of the fume extractor).
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Cleaning the Scanner Lens
+• 1. Place the laser scan lens onto a clean surface. Fold a sheet of optics cleaning paper (at
+least 5 times) creating a flat cushion.
+• 2. Hold the optics cleaning paper between thumb and index finger and put some drops of
+acetone onto the optics cleaning paper.
+• 3. Carefully and slowly pull the optics cleaning paper across the surface to be cleaned.
+Make sure that you do not touch the surface with the gloves.
+Apply only very light pressure onto the paper!
+• 4. If necessary repeat the procedure with a new sheet of optics cleaning paper.
+• 5. Check the surface of the lens side located in the marking head for contamination. If
+necessary, clean it as described above.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Laser Filter Mat
+1. Open the grille at the back of the system by pressing the
+grooves (see figure below) and pushing the grille upwards.
+2. Remove the mat. Dispose of the mat according to the local
+requirements.
+3. Insert a new mat.
+4. Close the grille.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Timing Diagram
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Knowledge Base Software
+• Offline Manual/Document Access
+– Stop lugging around heavy paper manuals! Always be sure they are the latest
+versions, and knowing they are accessible no matter where the customer is.
+• Automatic Updates
+– Be notified of updates to new releases, and download the update online to get the
+newest manuals.
+• Technical How - to & Integration Guides
+– Not only are the official manuals and documents included, but guides written by
+tech support and product engineers to help you integrate equipment.
+• Instructions & Troubleshooting Guides
+– All the instructions for servicing and troubleshooting equipment in one place.
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Ordering Information #1
+Part # Description Remarks Photos
+AL - 73050 Videojet 3020 Laser incl.: laser, digital high - speed galvo scanners, lens protection,
+Marking System controller, I/O panel, built - in keypad, power supply, connectors, lamps,
+switches, focus finder); with Product Detector and Touch Control
+Unit (UI)
+Focusing Modules
+AL - 73055 100mm focal length lens Including matching focus finder
+AL - 73056 150mm focal length lens Including matching focus finder
+AL - 73057 200mm focal length lens Including matching focus finder
+Language Kits
+AL - 73071 Language Kit, English
+AL - 73072 Language Kit, Spanish
+AL - 73073 Language Kit, Chinese
+AL - 73074 Language Kit, Brazilian
+AL - 73075 Language Kit, Korean
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Ordering Information #2
+Part # Description Remarks Photos
+Accessories Details > see presentation Options & Accessories
+AL - 73488 Floor Stand
+AL - 73395 Touch Bracket Holder for Touch Control operator interface @ stand or
+elsewhere
+AL - 73237 Mounting Bracket For mounting the laser marking unit to the stand
+AL - 73365 Encoder Measures the speed of the production line
+AL - 73487 Fiber Optics Photocell Replaces standard reflective photocell when this cannot be
+used
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Ordering Information #3
+Part # Description Remarks Photos
+Accessories Details > see presentation Options & Accessories
+AL - 73374 Beam Protection Laser safety cover
+200mm lens
+One beam shield per lens available
+AL - 73376 Beam Protection Laser safety cover
+150mm lens One beam shield per lens available
+AL - 73377 Beam Protection Laser safety cover
+100mm lens
+One beam shield per lens available
+Exhaust/ Fume Extraction
+AL - 72311 Exhaust unit VIDEOJET
+AD - ACCESS 115V 50/60Hz
+AL - 72310 Exhaust unit VIDEOJET
+AD - ACCESS 230V 50/60Hz
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Differentiation 3020 vs. 3120
+Videojet 3020 (10W CO2) Videojet 3120 (10W CO2)
+Market Low performance (in emerging markets) High performance (developed markets)
+Purchase Price driven Feature driven
+Decision
+Speed Up to 500 cps Up to 1200 cps
+Config. One box, limited flexibility, Very flexible: different beam turning units,
+Flexibility different marking heads and lenses
+no beam turning unit, 3 lenses
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+Differentiation 3020 vs. 3120
+Videojet 3020 (10W CO2) Videojet 3120 (10W CO2)
+Size One box, small + compact Marking unit, supply unit (2 boxes)
+Size optimized marking head
+Dimensions 613 x 159 x 155 mm Marking Unit: 850 x 110 x 140mm
+Supply Unit: 340 x 320 x 140mm
+> 65% less volume compared to 3120
+> Marking unit 37% shorter
+Weight 10 kg 26 kg (complete system
+(complete system, packed) incl. marking, supply unit, marking head)
+Software Reduced capabilities Rich set of functions
+Electrical Fewer interface (less I/Os, only one communications Lots of interfaces
+Interface interface, defined set of encoders)
+IP rating Dust proof (low rating on water) IP54 or IP65 as an option
+Key differ - Lower speed, limited mechanical integration
+entiation to
+capability, limited marking head options (0 ° , 90 ° ),
+3120
+simple and limited user interface
+© Videojet Technologies Inc • Confidential – For Internal Use Only!
+
+cvt d`fpgmmYSFYglyfQTpheadl@6hheaMz$$hmtxEDA^loca|xHp$maxpH metaad`namenm.6post$dD prep2Pln%p_<`t^Q!EWt^bML@53%3f.x[TMC @ F3!@L 9DHT.%nS9J,S bL|%V"VJ#*s!H#3"
+z,@:;1'Hck"1A+X@#++%,0%,0'@>6FFY2F#Y@:F**'8>68P..@..@B88BTZ+NM]q??<<<<9999.+}10Cy@pA4%0&%%@&8&,%<%&!&%%316A$>9+6;
+_['jjig&j'h3{|'v,|3&'3'2
+3://$$Y!"!#3$,5+$"
+&3/13#&3413'
+5!ad6!"!"!#!#UUU"p0P`_UUU@Ua p!!!0!P!`!!!a+N]qr++++]qqr<M+++<?<?<++++10++++ll?+2?+201Y%!5327654'&'&##5!#"3x0T&,00E1S& +0%%%1 zlg!%%1 zg!"LC+X@{lu{v0y5z6mE.d66Ue@@3C2222*%/?O44053@B@PE@B344204T24CTX@!/"<ED00'
+'=::
+'%%%4 r}*%%4 rL'+X@K@O5'-8x""!"!!"!#!#""""@'@S 0@UUU
+&
+&,3
+:Ly%#%'2#2'E#E''
+99+++++++YY]l??3+2901Y#&'&&'5!654&'&'5H%5
+/
+'9?:9&"%&8/78-""--/?@> / /.!.!"988''&h??+ 0`p@D S d 2"""@A!k++]]]q]?<<<?<<<99.+}.+}Y10]]CX /]Y]]]]qCX/
+'4@5@U56',?//?+99/++++++++2+/++++++10+CTX@X4U5U '456,'UUUUUU87!U!U!U!-U-U-U--879/++++++9/++++++//??9910++@/8@*58`]6%&88888+P8`8p88@8
+AV8$$<U@G#p0W+XCTX@Y@UY@UUUL0U0U0@U0+U+17FUFUF@!UFAGAUAUAUALULULULUL@ULUL+U+U+7@U7U7@U7U7@U7U7U7UU @U 0U @U *U @U U @U /2EH@ GTU@U/UOUoUUUVG1%,<,??///?]]+/+++++++++/+++++++++/+++++++++++++++++10++CTX@<%,<,TUV1GU U +U+U+7AUAUAL U X7U7U7U77XLULULULLYX9/+++9/+++9/+++++++///???10KTXFE/08888888Y@4YYY`]6+Y
+U @U U @U UUUUU$@% ,U/+??99?/+++++/+++++10+CTX@W@`p $%%,UUU UUU& U U &UUU'&9/+++9/++9/++++++???99?]10@5'`]6 '`'p''47: HH O'#!O%'#'AD %E@%%,! g@p@%$P `&+N]qr<M<]q<<<<?<?<<<99++10Cy@+<+]]+YY$l%l?+??3+201Y327#5#"&&54&&5!32674&'5c!'-v|EMq,7HAY?+mK9ZG#qBYA2%P6LN7% +XCTX ??/9/10CTX@1"!U*UU U ?+?+?+?+?99/10@SX[5"@a5#"! $ :9:95:JIDEEIi""-"2`4"+14"
+K?gI7tl_G
+$A 0
+>0&&+[3+
+
+S@23222i@&&-e&ehh???99?/3/99//9901%#".''#"&&67&&66327>32?+18 5$->>7/61,39e0$L#+$
+I!IL??9?01Y#".'.54>327>32'C65C&1%
+0w9/+2,7+9+4#%a%E+CUX@%&%L@H'L'@K?+2?+2/99//01_^]^]@%%L@H'L'@K?+2?+201_^]^]Y%#!"&554>7!"&54>3!2!2N!`g
+Nt7h<
+'3m*.?.!'-@'...+!!~??9/93]22/9/32201%###".55!".54>7>3232#3m@&&!2%*6"@""aaI1C8V1$,$,@44.1H@H/

@@ -1,0 +1,65 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\Nueva carpeta\6651 - (QMark and CMark) Incomplete Marking with Error W10899 or W00002 ....pdf
+# cifrado=False bloques=2 caracteres=3251
+
+Field Service Bulletin
+000006651
+FSB #:
+Models Affected
+3
+Version:
+3130/3330 7510 Software.CMark Soft
+8/2/2016 ware.QMark/Icemark
+Published:
+Contact:
+Incomplete Marking with Error W10899 or W00002 Caused
+by Leakage Protection Feature
+Lasers with the Leakage Protection feature enabled may fault on incomplete or unmarked mes -
+sages when some events increase the amount of time between trigger signals and marking or
+interrupt marking entirely.
+Leakage Protection is intended to prevent power leaks on aging beam sources.
+Leakage Protection prevents damage to conveyors or product by setting the shutter to a closed
+position after 10 seconds (QMark) or reducing the laser intensity to 0% after 500 ms (CMark).
+The time required for movement to and from the shutter closed galvo position or power charge
+delay to return to normal laser intensity creates an additional variable that can result in incom -
+plete marks when product speed varies or is interrupted. The higher the throughput of an applic -
+ation, the more likely leakage protection is to negatively impact marking speed.
+Symptoms
+Encoder Applications
+l Faulty marking while marking with the activated encoder.
+l Warning W10899: Marking incomplete, Product movement too slow.
+Fixed Speed Applications
+l Increased marking time can lead to faulty marking.
+l Warning W00002: Marking incomplete, Product movement too fast.
+l Error E00105: Marking aborted, Product movement too fast.
+Disclaimer
+The contents of this bulletin and any linked documents are provided as a convenience to highlight useful information and troubleshooting tips.
+When working with a product, always consult the product user manual and follow the product safety precautions and recommendations, including
+using Personal Protective Equipment when necessary. If you have any questions or are not experienced in using or servicing the Videojet equip -
+ment this document references, contact Videojet for assistance.
+© 2016 Videojet Technologies - Page 1 of 2 -
+
+Corrective Actions (QMark)
+Encoding Applications
+After switching off the conveyor for more than 9 seconds marking must be stopped if unmarked
+products are in the trigger queue.
+1. Make sure that the product movement is no less than 10 mm/s for more than 9 seconds .
+2. If the conveyor is stopped for more than 9 seconds make sure that no trigger signal is
+released.
+3. Deactivate Leakage protection in the Laser Web Interface.
+Fixed Speed Applications
+1. Connect to the laser web interface.
+2. Deactivate Leakage protection.
+3. Increase the value for Start distance in the software under Product Registration.
+Corrective Actions (CMark)
+Encoding Applications
+After switching off the conveyor, the marking must be stopped if unmarked products are in the
+trigger queue.
+1. Make sure that the product movement is not less than 10 mm/s for more than 500 ms .
+2. Deactivate Leakage protection in the Laser Web Interface.
+Fixed Speed Applications
+1. Connect to the laser web interface.
+2. Deactivate Leakage protection.
+Note: Stop Marking Prior to Line Stops
+Stop marking prior to long pauses in throughput (e.g. line stops) to prevent the laser
+remaining in "Wait for Trigger", "Wait for Trigger delay" or "Marking" states.
+© 2016 Videojet Technologies - Page 2 of 2 -

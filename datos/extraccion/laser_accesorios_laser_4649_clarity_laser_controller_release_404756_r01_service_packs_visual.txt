@@ -1,0 +1,348 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\4649 - Clarity Laser Controller Release 404756 r01 Service Packs.pdf
+# cifrado=False bloques=8 caracteres=14862
+
+Clarity Laser Controller Release 404756 r01 Service Packs
+Header
+Videojet Technologies, Inc. Knowledge Article
+Article Number 000004649
+Information
+This document describes all changes to the software in the current revision (r01). Each service pack
+includes changes from previous service packs. Changes are listed as new features, bug fixes, and known
+problems already found.
+CLARiTY is a registered trademark.
+Version Release Date
+404756 r01 SP5 (current) July 2015
+404756 r01 SP4 May 2015
+404756 r01 SP3 April 2015
+404756 r01 SP2 Nov 2014
+404756 r01 SP1 July 2014
+404756 r01
+404756 r01 Service Packs and full release notes are available on box.com.
+https://danaher.box.com/s/no5634q3tiyp8dwdyebtv5f7k87xn82r
+Videojet Software Release Notes SP5
+New Features Summary
+Minimum
+Software
+Version
+Case# Name Summary Description CCM Clarisoft
+CLARiTY Laser Controller now CLARiSOFT 4.408 SP14 (or newer)
+E00953 NA 4.408 SP14
+supports Transmitted Fields required to generate CIFF files
+Bug Fix Summary
+None.
+Change Details
+New Feature Detail
+E00953 - CLARiTY Laser Controller now supports Transmitted Fields
+CLARiSOFT 4.408 SP14 (or newer) required to generate CIFF files.
+One (1) field per job file can now output transmitted data either on Job Select/Job Update or on a Per-Print
+basis. This works only through Serial RS232 and a CIFF will first have to be correctly designed.
+
+In CLARiSOFT, right-click on the field required to be transmitted and on the General TAB, the option for
+Transmitted Field is now available, this should be ticked. Load this job into your CLARiTY Laser
+Controller.
+In CCFG, there is now the option of Imaging/Transmitted Field.
+Enable Trigger Mode to be either Transmit on Job Select/Update or Transmit on Print.
+Note that ASCII, UTF8 and UNICODE are supported as are Parse Escape Sequences.
+In CCFG, System/ComPort1/Usage also requires configuring as Transmitted Field.
+Known Issues
+Text Communications do not update Concessions on Calculated Dates.
+Updating to 404756 r01 SP5
+Update to resolve any issues corrected in this release.
+1. Download the software from Box.com
+(https://danaher.box.com/s/no5634q3tiyp8dwdyebtv5f7k87xn82r).
+2. Update Clarity Software.
+3. Verify software versions after updating.
+Verify Software Versions after Updating
+After updating software, verify that the printer software is at the correct version.
+1. Select Tools | Diagnostics | Control | Versions in the Clarity interface.
+2. Check that all of the software versions match those listed.
+Software Versions for 404756 r01 SP5
+Bootloader 1.00.00 (0015)
+Operating System 6.00.00 (0018)
+Clarity 4.03.00 (17382-38587)
+Videojet Software Release Notes SP4
+New Features Summary
+None.
+Bug Fix Summary
+Minimum Required Software
+Version
+Case# Name Summary Description CCM Clarisoft
+Sporadic Printhead Very occasional internal 'race
+Absent conditions' would
+B00933 N/A N/A
+issues no longer previously cause clearable
+occur Printhead Absent's
+Variable fields now
+For more robust Text Coms
+update
+B00934 and Touch To Edit live N/A N/A
+subsequently
+updates
+merged fields
+Application Errors
+when
+Remote communications no
+
+updating >50 longer cause Application
+B00935 N/A N/A
+merged Errors to pop up on screen
+variable fields now
+fixed
+Observe Line
+caused Save
+Database when
+B00936 This no longer happens. N/A N/A
+changed
+under normal
+operations.
+Change Details
+Bug Fix Detail
+Case# B00933 - Sporadic Printhead Absent issues no longer occur
+This no longer happens with r01 SP4 and newer software.
+Case# B00934 - Variable fields now update subsequently merged fields
+For more robust Text Coms and Touch To Edit live updates.
+With r01 SP4 (and newer) software, variable fields that are then subsequently merged
+into other fields all correctly update with remote communications and Touch To Edit.
+Previously, only the original variable field would update.
+Case# B00935 - Application Errors when updating >50 merged variable fields now fixed
+Remote communications no longer cause Application Errors to pop up on screen.
+If a variable field (that was subsequently merged into 50 or more other fields) received a
+remote update command the CLC would crash with an Application Error.
+This does not happen with r01 SP4 (and newer) software.
+Case# B00936 - Observe Line caused Save Database when changed under normal
+This no longer happens.
+Although Observe Line no longer causes a Save Database under normal operations, if a
+Line Setup is changed then the system will still save the database as the new line setup
+parameters need to be saved.
+Known Issues
+Text Communications do not update Concessions on Calculated Dates.
+Videojet Software Release Notes SP3
+New Features Summary
+Minimum Required Software
+Version
+Case# Name Summary Description CCM Clarisoft
+CLC now provides By means of a PC icon on
+E00930 indication the top right-hand corner of N/A N/A
+of 'Laser Busy' the CLC status bar.
+Bug Fix Summary
+
+Minimum Required Software
+Version
+Case# Name Summary Description CCM Clarisoft
+Very Large jobs
+would CLC could also enter
+B00929 previously not load E6220 Laser Marking N/A N/A
+from the Head Absent.
+CLC
+Toggling the
+This could cause the
+key-switch no
+marking system and CLC
+B00931 longer inappropriately N/A N/A
+to
+activates the JOB
+become out of sync
+button
+Change Details
+Enhancements
+Case# E00930 - CLC now provides indication of 'Laser Busy'
+Whenever the CLC is waiting for a reply from the marking system, r01 SP3 and newer CLC software will
+provide an indication of this on the Status Bar, by way of an icon of a PC. A good example of this is when
+a new job is loaded via the CLC, this PC icon will remain visible for the duration of vector rendering.
+It is advised not to attempt changing any parameters via the CLC when this icon is
+present.
+Bug Fix Detail
+Case# B00929 - Very Large jobs would previously not load from the CLC
+CLC could also enter E6220 Laser Marking Head Absent.
+Very large jobs would never load even though they would appear to have done so at the CLC, with no
+indication otherwise. This would cause confusion as to why the previous job was still being printed.
+Now, jobs over the maximum packet size are partitioned into multiple smaller messages (buffered) as they
+are sent down, so even very large jobs load and print without issue, provided all fields are within the
+marking area and the key-switch is not toggled during job loading.
+Jobs with up to 200 fields have been tested, note: this is the maximum number of fields allowed by
+CLARiSOFT.
+Jobs that take up to 10 minutes to load have been tested.
+Case# B00931 - Toggling the key-switch no longer inappropriately activates the JOB
+This could cause the marking system and CLC to become out of sync.
+The Home Screen's JOB button should remain grey (and un-selectable) when a new job is being loaded
+(and when in RUNNING state).
+It was found that if the key switch was toggled during job selection (i.e. while the marking system was
+calculating its vectoring), the JOB button would become selectable (black). This was incorrect behaviour.
+During job selection, toggling the key switch no longer enables the JOB button at inappropriate times.
+Note: It is still ill-advised to toggle the key-switch during job selection.
+Known Issues
+No known Issues.
+Videojet Software Release Notes SP2
+New Features Summary
+
+Minimum Required
+Software Version
+Case # Name Summary Description CCM Clarisoft
+7510 Lasers Now
+7510 Lasers Now
+E00905  Supported by Clarity N/A  4.408 SP6
+Supported by Clarity Pod
+Pod
+Arabic Date New Arabic Date
+E00908  N/A  N/A
+Improvements  Formats Supported
+Barilla Date is a special
+Barilla Dates Now
+E00910  day offset of Julian Day + N/A  N/A
+Supported
+400 days.
+Bug Fix Summary
+Minimum Required
+Software Version
+Case# Name Summary Description CCM Clarisoft
+JOB Button on
+Incorrect behaviour of Home
+B00878  Home Screen N/A  N/A
+Screen JOB button now rectified
+Fixes
+Two known issues that could
+Job Download
+B00879  cause Job Download Failure are N/A  N/A
+Failure Fixes
+now resolved
+Manufacturer Password no longer,
+Daily Manufacturer
+B00880  under certain conditions, requests N/A  N/A
+Password Issue
+Alpha characters.
+Raise Error For E6222 Error Now Raised when
+B00881  Unsupported Laser connected to unsupported laser N/A  N/A
+type  types
+By setting Yes/No correctly
+Fixed Speed
+B00904  configures encoder/non-encoder N/A  N/A
+printing button
+usage
+Grid or Dot
+Clarisoft setting is now adhered to
+B00907  Printing of 2D N/A  N/A
+by Clarity Laser Controller
+barcodes
+Download & Selecting Arabic
+B00912  Arabic Date Fix  Encrypted Dates now load without N/A  N/A
+fault
+Dates & Day
+Dates & Day Rollover Issues
+B00913 Rollover Issues N/A  N/A
+Fixed
+Fixed
+Change Details
+Enhancements
+E00908 - Arabic Date Improvements
+The following date formats are now supported by the Clarity Laser Controller when using the Arabic
+Encryption:
+d (Day of month with no leading Zero)
+dd (Day of month with leading Zero)
+M (Calendar month with no leading zero)
+MM (Calendar month with leading zero)
+y(2010=0) (year of century with no leading zero)
+yy (2-digit year e.g. 14)
+yyyy (4-digit year e.g. 2014)
+The fields will have to be created in Clarisoft with the font 'Standard_Font_1_arabic'. These fields will
+also need the Encrypted Field set to 'Clarity.Encryption.Arabic' in Clarisoft.
+
+E00910 - Barilla Dates Now Supported
+Barilla Date is a special day offset of Julian Day + 400 days.
+First, a special Script File will need to be installed on the Laser's MMC card, please see your Laser
+Technical Support Representative for this.
+Secondly, the Barilla date field will have to be created in Clarisoft with the following applied:
+1. Create a new Date field.
+2. In its Property Box, click on the 'Advanced' button.
+3. Remove all default Selected Formats.
+4. In the drop-down box at the bottom, select 'Claricom.BarillaJulianDate' and click Add.
+5. In this date field's Property Box's General TAB, ensure that the Field name is the same as that in the
+MMC Card Script file.
+Bug Fix Detail
+B00878 - JOB Button on Home Screen Fixes
+Incorrect behavior of Home Screen JOB button now rectified
+JOB button now remains disabled during marking (RUNNING). Previously, there were instances that this
+became enabled which should not happen.
+JOB button is also now correctly disabled when viewing on Webserver
+B00879 - Job Download Failure Fixes
+Two known issues that could cause Job Download Failure are now resolved
+Failure 1: There should only ever be 1 Clarity designed job on the laser at any one time (which
+should be over-written with each job select from Clarity Pod). If, somehow, more than 1 Clarity job
+managed to find its way on to the Laser, subsequent job selects would fail. This is now resolved by
+way of 'cleaning up' residual Clarity jobs on each new job select.
+Failure 2: If for some reason the Clarity Pod thought it lost power (e.g. removing the PCB battery),
+subsequent Job Selects would result in Job Download Failed, even if the E1014 Time and Date
+may be incorrect warning had been cleared. Now, once this warning has cleared, Job Selects will
+succeed.
+B00880 - Daily Manufacturer Password Issue
+Manufacturer Password no longer, under certain conditions, requests Alpha characters.
+If in CCFG Advanced Passwords were set to 'Alpha Only' an operator could not type in the daily
+Manufacturer Password, which is Numeric Only.
+Now, Manufacturer Password always requests Numeric Only no matter how Advanced Passwords are
+configured.
+B00881 - Raise Error For Unsupported Laser type
+E6222 Error Now Raised when connected to unsupported laser types Clarity Pod does not, at this point in
+time, support all Laser types.
+If a Clarity pod is connected to an unsupported Laser type, the FAULT "E6222 - The Laser Type
+XXXXX; is not supported. Contact the technical support group for further support." is now raised.
+Previously, "E6219 Unsupported Laser System AOS" was incorrectly raised.
+B00904 - Fixed Speed printing button
+By setting Yes/No correctly configures encoder/non-encoder usage
+Found at Clarity User Interface at Tools/Setup/Printhead/Line Speed.
+Previously, setting a value in Enter Fixed Speed or going into Configure Manually and configuring
+encoder settings did not always correctly set encoder/non-encoder usage. Now, this works as expected.
+Within Configure Manually there is a new Fixed Speed Printing option which can be set to Yes or No.
+This now forces the changes to work. Furthermore, if you are already running via encoder, simply entering
+a Fixed Print Speed automatically sets the Fixed Speed Printing option to Yes. Also, by using Configure
+Manually, Clarity automatically sets Fixed Speed Printing to No.
+
+B00907 - Grid or Dot Printing of 2D barcodes
+Clarisoft setting is now adhered to by Clarity Laser Controller
+In Clarisoft there is a setting of Barcode Printing in the Property Box of Datamatrix & QR barcodes.
+High Quality = Grid style printing.
+High Speed = Dots style printing.
+This setting is now correctly adhered to by the CLC. Previous versions of CLC software always printed in
+Grid style, no matter what the setting in Clarisoft.
+B00912 - Arabic Date Fix
+Download & Selecting Arabic Encrypted Dates now load without fault
+With previous revisions of CLC software, Arabic encrypted dates that were Download&Selected from
+Clarisoft would result in the CLC faulting out with Job Conversion Failed, where Download (only) and
+Print to File would work without fault.
+Download&Select from Clarisoft now also works without issue.
+B00913 - Dates & Day Rollover Issues Fixed
+Under certain conditions with previous revisions of CLC software, Day Rollovers would cause erratic and
+incorrect behaviour. Some dates would increment 2 days instead of 1 and in the specific case of formatting
+a Calculated Date with Fixed Text an Application Error would happen at day rollover.
+All dates now rollover without issue.
+Known Issues
+Text Communications do not update Concessions on Calculated Dates.
+Videojet Software Release Notes SP1
+New Features Summary
+Minimum Required Software
+Version
+Summary
+Case # Name CCM Clarisoft
+Description
+Availability Availability
+E00867  N/A  N/A
+Webserver  Webserver
+Bug Fix Summary
+None.
+Change Details
+Enhancements
+E00867 - Availability Webserver
+View Availability screens and the Event Log screen via the Webserver.
+Known Issues
+No Known Issues.
+Disclaimer
+
+The contents of this email and any attachments are provided as a convenience to Videojet customers to highlight useful information
+and troubleshooting tips. When working with a product, always consult the product user manual and follow the product safety
+precautions and recommendations, including using Personal Protective Equipment when necessary. If you have any questions or are
+not experienced in using or servicing Videojet equipment, contact Videojet for assistance.
+First Published
+12/17/2014 9:46 AM
+Date
+Last Published
+7/22/2015 2:07 PM
+Date
+Version 3

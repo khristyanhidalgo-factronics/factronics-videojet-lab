@@ -1,0 +1,897 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\Lesson 1 CLARiTY.pdf
+# cifrado=False bloques=58 caracteres=39606
+
+Lesson 1 – Clarity
+Table of Contents
+Introduction 1 - 2
+Objectives 1 - 2
+Activities 1 - 2
+References & Materials 1 - 2
+CLARiTY Controller 1 - 4
+Turning the unit on 1 - 4
+Logging in 1 - 5
+Home screen interface 1 - 7
+Print Position 1 - 9
+Mark Set Parameter 1 - 11
+Performance 1 - 13
+Jobs 1 - 15
+Frame Buttons 1 - 18
+How to print a job 1 - 20
+Tools 1 - 2 4
+Tools>>Setup>>Printhead 1 - 24
+Tools>>Setup>>Control 1 - 33
+Creating Archives 1 - 34
+Creating Clones 1 - 36
+Tools>>Databases 1 - 40
+Loading jobs with USB 1 - 42
+Updating Controller Software with USB 1 - 44
+Tools>> Diagnostics >> Printhead 1 - 46
+
+Lesson 1 – Clarity
+Introduction
+❑ This lesson will provide the participants with hands - on experience in the
+operation of the Clarity touch screen .
+❑ Warning: power down before disconnecting and printer cables.
+Objectives
+❑ Demonstrate the ability to navigate through the Clarity touch screen
+menus .
+❑ Demonstrate the ability to adjust print parameters .
+❑ Demonstrate create jobs using all three software learned in the course .
+❑ Demonstrate the ability to con nect the laser to the CLARiTY Pod .
+❑ Demonstrate the ability to configure the printer for web server
+configuration .
+❑ Demonstrate the ability to configure the printer for using line set up .
+Activities
+Clarity
+□ L earn clarity screens
+❑ Operate printer using web server.
+❑ Send down CLARiTY jobs
+❑ Connect printer to laser
+The following is a list of references & materials for this topic.
+References &
+Materials
+❑ CLARiTY Laser Training Guide
+❑ CLARiTY Laser Technical Guide
+❑ CLARiTY Laser labs sheet
+❑ Serial cable
+❑ Cross over cable
+❑ Cat5 cable
+1 - 2
+
+1. CLARiTY Controller
+Figure 1 - 1 CLARiTY controller components
+CLARiTY laser controller has 1 serial port, 1 USB port, 3 Ethernet ports. The serial port
+can be used to download jobs, connect external devices, and CLARiTY Configuration
+Manager software. The USB port is used to preform CLARiTY updates, archives, clones
+and jobs downloads. The Ethernet ports are used to update software, CLARiTY
+Configuration software, archives, connect Smartgraph and webserver.
+Ports Description
+Ethernet 1 Allows the user to communicate with
+corporate LAN or local PC through RJ45
+Ethernet Cable.
+Ethernet 2 Allows the user to communicate with
+corporate LAN or local PC through RJ45
+Ethernet Cable
+Laser Ethernet Connection Allows the user to communicate with laser
+system through standard RJ45 Ethernet
+Cable
+Mains Lead Connector Connection to the mains power
+Fuse Holder Threaded holder for the AC Mains Power
+Fuse ( 5 A fuse).
+Main Power Switch Turns the system ON/OFF
+USB USB Port that allows the connection of a USB
+memory stick for functions such as laser system
+software updates, transferring Jobs and
+backup/restore of laser system archive or clone files
+Serial Port (IOIOI) RS - 232 Serial Port for connecting to PC, PLC or
+other capable device (special adapter cable required)
+1 - 3
+
+1.1 CLARiTY software Vs. Q and C Mark
+Figure 1 - 2 CLARiTY software and Qmark
+The CLARiTY software w ill view and print only CLARiTY Jobs. Smartgraph will print
+Qmark and C - mark t emplates. Smartgraph will let you view the active CLARiTY job. To
+create a CLARiTY job you must have the CLARiSOFT software.
+1.2 Turning the unit on (Getting started)
+Figure 1 - 3 CLARiTY controller power switch and Ethernet connection
+Connect the power cord and the Ethernet cable from the controller to the laser. You can
+use any of the Ethernet ports. The default IP address for the controller is 192.168.1.2.
+To avoid errors it is best to switch the laser on first and allow it to completely boot up
+with the white LED on solid. To switch the controller on, turn the power switch on the
+CLARiTY® controller to the power switch to the ( I ) On position.
+Once power is switched ON, the controller will boot - up. This will take approximately 90
+seconds, during which startup screen appears. On successful boot - up, the home page
+appears (Figure 1 - 4 ).
+1 - 4
+
+1 .3 Logging in
+Figure 1 - 4 CLARiTY locked home screen
+The “Locked” icon on the Home Screen indicates that a valid user is not currently logged
+on. Accessing any password - protected option brings up the Select User screen. Such as
+touching the tools or job button.
+Figure 1 - 5 Tools>>Select User Screen
+Select the appropriate user level.
+1 - 5
+
+Figure 1 - 6 Tools>>Enter Setup Password Screen
+Enter the password using the keypad provided. The “Unlocked” icon on the Home Screen
+indicates that a valid user is now logged on.
+1 - 6
+
+2. CLARiTY Home S creen
+CLARiTY® is an icon - based operator control system. It has an easy - to - use touch screen
+and most areas of the display are "active", that is, simply touching an area of the screen is
+like pressing a "button" on a traditional control panel. The CLARiTY® home screen’s
+main buttons are shown in Figure 1 - 8 .
+Figure 1 - 7 CLARiTY controller home screen
+• Color touch - screen interface for ease of operation
+• Icon based operator controls are simple and easy to learn
+• WYSIWYG display reduces ‘set - up’ errors – PREVIEW THE LEGEND
+• Detailed on - screen diagnostics reduce downtime associated with faults and
+warnings
+• Password protection capabilities minimize potential for error
+• Instead of connecting a PC/laptop to the printer to download jobs, the USB device
+can be connected directly into the USB port on the CLARiTY Operator Interface
+1 - 7
+
+2.1 Home screen layout
+Figure 1 - 8 Home Screen lay out
+1. Controller Status B ar 5. Print Position Button
+2. Tools Button 6. Control Frame Buttons
+3 . Current Job Details Button 7. Home Button
+4. Performance Status Button 8. Job Bu t ton
+Information the tools and home are s hortcut buttons that take you directly to the key pages,
+regardless of the page that you are currently viewing.
+1. Controller status bar p rovides information about the status of the controller:
+• Starting Up - Controller unit establishing communication with the laser marking and
+coding system and keyswitch is disabled.
+• Shutdown - Laser system is turned on and the keyswitch is disabled.
+• Offline - Laser system is turned on and keyswitch is enabled.
+• Running - Laser system is turned on and printing. Keyswitch is enabled.
+• Allows the user to enable/disable printing as requested.
+• If warnings or faults are present, it allows the user to access and review them when
+selected.
+2. Tools Button allows the user to access the Tools page and opens the tools menu.
+3. Current Job Details Button d isplays the actual job being printed. Selecting the bar will
+display the job preview. If touch to edit and print position options are enabled, selecting
+the job detail bar will allow the user to access these functions.
+4. Performance Status Button d isplays the following printer performance information:
+• Throughput: Throughput of the printer in prints per minute since the current Job was
+loaded.
+• Batch Count: Number of prints since the current Job was loaded.
+• Total Count: Number of prints over the life of the controller. Selecting this area opens
+the performance page showing additional statistical information on the printer
+throughput.
+1 - 8
+
+5. Print Position Button a llows the user to adjust the print position, scale, rotation or mark
+sets for the current job.
+6. Control Frame Buttons a llows the user to perform the following actions:
+• Keyswitch enable/disable (software keyswitch only).
+• Disable (Stop) the print mode.
+• Enable (Run) the print mode.
+7. Home Button a llows the user to access the Home screen
+8. Job Button Allows the user to select the required job from the list by opening the job select page.
+2. 1 Print Position Button
+Touch Print Position button at the lower left hand bottom side of any screen to adjust the
+current job parameters .
+Figure 1 - 9 Print Position Screen
+2.1.1 Laser Beam Source
+The user can select the beam source as pilot laser or marking laser. The pilot laser, if
+available, when selected will show the path of the job, without marking, when job started.
+Selecting marking laser will allow the laser to mark.
+1 - 9
+
+2. 1. 2 Print Position>>Position
+Figure 1 - 10 Print Position>>Position Screen
+The Offset X and Offset Y adjustment buttons allows the user to move the position of the
+print in either or both of the X or Y axis in both negative and positive direction. Position
+(0,0) indicates the cent er of the print or lens. Select one or both buttons to modify the
+position as required.
+2. 1 . 3 Print Position>>Scale
+Figure 1 - 11 Print Position>>Scale Screen
+The Scale X and Scale Y buttons allows the user to increase or decrease the scale of the
+print in either or both of the X or Y axis. Scale ‘1.0000’ is the default value. Select one or
+both buttons to modify the scale as required.
+1 - 10
+
+2. 1 . 4 Print Position>>Rotation
+Figure 1 - 1 2 Print Position>>Rotation Screen
+The rotation button allows the user to rotate th e job in clockwise or counter - cl ockwise by
+360 degrees. ‘0’ degree rotation relates to both the line setup and job configuration.
+Note: Rotation is used mostly with static application. To rotate the print when MOTF use
+the mounting position feature.
+2. 1 . 5 Print Position>>Mark Set
+Figure 1 - 1 3 Print Position
+A mark set is a specific set of laser print parameters where maximum and minimum
+values for these parameters are unique to each laser coding/marking system. Each job has
+the actual values of the mark set needed, which is determined during job setup. Selecting
+mark set allows the user to adjust the job values for the particular marking job.
+Note : If no job is selected, the mark set list will be empty.
+1 - 11
+
+2. 1 . 5.1 Print Position>>Mark Set Parameters
+Figure 1 - 1 4 Print Position>>Mark Set Parameters
+Marking head parameters
+Jump speed defines the speed of movement of the laser beam when moving from one
+stroke to the next. The laser is switched off during a jump. A typical value is 20000
+mm/s.
+Marking speed defines the speed of movement of the laser beam when marking the
+product.
+Jump - Delay defines the delay between the end of a jump and the start of the marking
+process.
+Mark - Delay defines the delay between the marking of individual vectors within a stroke.
+Stroke - Delay defines the delay between the end of a stroke and the jump to the next
+stroke.
+Laser Parameters
+Marking intensity sets the output power via the current value (with 100 %
+c orresponding to the maximum power of the laser).
+Pulse frequency can be set between 10 Hz and 65 kHz (YAG), 50 Hz to 20 kHz
+(CO 2 ). Low values can be used to achieve a broken line.
+On - Delay defines the delay between the attainment of the start position of a stroke and
+the switching - on of the laser.
+Off - Delay defines the delay between the attainment of the end position of a stroke and
+the switching - off of the laser.
+1 - 12
+
+Filling parameters
+Line width defines the actual line width for e.g. barcodes on the product.
+This parameter highly depends on the material and is defined by measuring the line
+width on the product (further information can be found in section "Barcodes" in this
+chapter).
+Overlap defines whether two adjacent lines overlap each other (positive
+values) or if there is a certain distance between two adjacent lines (negative values).
+This parameter refers to the entered line width and is stated in percent (further
+information can be found in section "Barcodes" in this chapter).
+Vector length
+Min. vector defines the minimum length of a vector. Shorter vectors are not marked.
+Max. vector defines the maximum length of a vector. Longer vectors are divided into
+shorter vectors.
+3 Performance
+Figure 1 - 1 5 Performance
+Displays the following printer performance information:
+• Throughput: Throughput of the printer in prints per minute since the current Job was
+loaded.
+• Batch Count: Number of prints since the current Job was loaded.
+• Total Count: Number of prints over the life of the controller.
+Selecting this area opens the performance page showing additional statistical information
+on the printer throughput.
+1 - 13
+
+3 . 1 Performance>>Availability
+Figure 1 - 1 6 Performance >>Availability
+Availability is a measurement of equipment uptime. It is the amount of time that the
+equipment is ready to run when required by production. This is one of the three key
+metrics of Overall Equipment Effectiveness (OEE).
+Displays the Availability page. The user can view simultaneously the printer availability
+and operational availability data against the time frame. The history of the availability
+data in the Timeframe column enables the user to correlate seasonal changes affecting
+availability.
+3 .2 Performance>>Availability>> Printer Avai lability
+Figure 1 - 1 7 Performance>>Availability>>Fault Pareto
+1 - 14
+
+3 . 4 Performance>>Availability>>Operation Availability
+Figure 1 - 1 8 Performance>>Availability>>Fault Pareto
+4 Jobs
+Figure 1 - 1 9 Job
+Allows the user to select the required job from the list by opening the job select page.
+Figure 1 - 20 Job, User Entered Text
+1 - 15
+
+Displays the actual job being printed. Selecting the bar will display the job preview. If
+touch to edit and print position options are enabled, selecting the job detail bar will allow
+the user to access these functions.
+4.1 How to select a job
+1) From the Home Screen, press the “Job” button
+Figure 1 - 21 selecting the job button
+2) Select the job to be loaded from the list provided, and
+then press “OK”.
+Figure 1 - 22 selecting the desired job then OK
+1 - 16
+
+3) IF any of the fields of the job were previously
+designated as “User Editable”, then they may be
+modified at this time. Press “OK” to accept the
+displayed contents of the job.
+Figure 1 - 23 Editing a Job
+4) The “Preview” screen displays the “final” contents of
+the job, including any user edits. Press “OK” to load.
+Figure 1 - 24 Pressing OK
+5) The Home Screen display is updated with the
+contents of the newly - loaded message.
+Figure 1 - 25 New Job selected
+1 - 17
+
+5 Control Frame Buttons
+Figure 1 - 26 Control Frame Buttons
+Allows the user to perform the following actions:
+• Keyswitch enable/disable (software keyswitch only).
+• Disable (Stop) the print mode (red) .
+• Enable (Run) the print mode (green) .
+5.1 Keyswitch 3320/3120/3310/3330/7210/7310/7510
+Figure 1 - 27 keyswitch open
+Keyswitch open, red LED on laser head off, the key is for display only.
+Figure 1 - 28 keyswitch closed
+Keyswitch closed, red LED on laser head on, the key is for display only .
+1 - 18
+
+5.2 Keyswitch 3020/3030
+Figure 1 - 29 keyswitch open
+Keyswitch open, red LED on laser head off, touch the key to start the laser .
+Figure 1 - 30 keyswitch closed
+Keyswitch closed, red LED on laser head on, touch the key to stop the laser .
+1 - 19
+
+5.3 How to Print A Job
+1) With the Laser on and the CLARiTY Laser Controller
+connected turn the key to the (1) position.
+Figure 1 - 31 keyswitch in the (1) position
+2) Verify the red LED is on and the Yellow LED is not
+flashing.
+Figure 1 - 32 Red LED on
+3) Press the Offline button to put the printer in print
+mode.
+Figure 1 - 33 Putting the printer into print mode
+1 - 20
+
+4) The CLARiTY Laser Controller will indicate Running
+when the system is ready.
+Figure 1 - 34 Controller in print mode
+5) To stop the marking process, press the running
+button. The marking process has been stopped when
+the CLARiTY Laser Controller indicates Offline.
+Figure 1 - 35 Stopping the marking process
+6) To disarm the laser turn the key to the (0) position.
+The red LED will go out.
+Figure 1 - 36 Keyswitch open in the (0) position
+1 - 21
+
+5.4 System shutdown
+1) To avoid faults it is necessary to power down in the
+following order. Switch the CLARiTY Pod switch to the
+(O) off position.
+Figure 1 - 37 controller power switch off
+2) Turn the laser keyswitch to the (O) position. Verify
+the red laser LED goes out.
+Figure 1 - 38 Laser keyswitch open
+3) At the laser switch the power off by pressing the
+power switch to the (O) position.
+Figure 1 - 39 Laser power switch to off
+4) Verify the laser white LED is off.
+Figure 1 - 40 all laser LED’s off
+1 - 22
+
+5) Press the red button on the extractor to turn the
+extractor system off. All lights should be off.
+Figure 1 - 41 Extractor power switch off
+6) If IP65 turn off blower by pressing the red button in
+the rear of the unit.
+Figure 1 - 42 IP 65 Blower off
+1 - 23
+
+6 Tools
+6. 1 Tools>> Setup>>Printhead
+Figure 1 - 43 T ools>>Setup>>Printhead Screen
+Lens Type
+In this list field you can select the lens type. The selected lens type has to correspond to
+the lens installed at the marking head of the laser system. The focal length of the selected
+lens type is displayed.
+Focal distance
+The working distance is calculated by the system. Enter the values for a possible tube
+length and deviations and the actual working distance is displayed.
+Pilot Laser
+If the system is equipped with an optional pilot laser you can enter here translation and
+scaling values for the pilot laser independently from the settings of the marking laser.
+1 - 24
+
+6. 1 . 1 Tools>> Setup>>Printhead >>Line Setup
+Figure 1 - 44 Tools>>Setup>>Printhead>>Line Setup Screen
+6. 1. 1 .2 Tools>>Setup>>Printhead>> Line setup >>
+Position and Orientation
+Figure 1 - 45 Tools>>Setup>>Printhead>>Line Setup >>Position and Orientation
+Screen
+1 - 25
+
+Line movement
+The product does not move during the marking process. The marking process is triggered
+by an internal or external trigger signal. Depending on the trigger type the following
+configurations can be set:
+Indicates the direction product moves during the marking process .
+Figure 1 - 46 Tools>>Setup>>Printhead>>Line Setup>>Line Movement
+Figure 1 - 47 Tools>>Setup>>Printhead>>Line Setup>>Line Movement (options)
+Product Side Selection
+Sets the side of the product that needs to be marked. The red color indicates the side on
+which the marking happens.
+Note: The last two selections are only available if Line Movement is set to the Static
+option.
+Figure 1 - 48 Tools>>Setup>>Printhead>>Line Setup>>Product Side Selection
+1 - 26
+
+Laser Position
+To compensate the product movement during the marking process the angle between the
+marking head of the laser system and the direction of product movement have to be
+defined. Allows the user to specify the orientation of the laser head with respect to the
+product.
+Figure 1 - 49 Tools>>Setup>>Printhead>>Line Setup>>Laser Position
+Job Orientation
+Allows the user to specify the orientation of the marking with respect to the product.
+Figure 1 - 50 Tools>>Setup>>Printhead>>Line Setup>>Job Orientation
+Current settings
+Screen shows the graphic representation of the current line setup.
+Figure 1 - 51 Tools>>Setup>>Printhead>>Line Setup>>Position and Orientation
+1 - 27
+
+6. 1. 2 Line s peed
+Enter Fixed Speed
+Allows the user to input the line speed, either by entering it directly or measuring the
+speed.
+Measure Line Distance
+Figure 1 - 52 Tools>>Setup>>Printhead>>Line Speed>>Measure Line Distance
+1. Make reference marks on the conveyor or belt and a stationary fixture that are
+next to each other.
+2. Jog or move the line manually, ensure that the encoder rotates at least one full
+rotation
+3. Measure the distance moved and enter the value on the next screen.
+4. Press next to proceed or cancel to quit.
+1 - 28
+
+Enter Product Size
+Figure 1 - 53 Tools>>Setup>>Printhead>>Line Speed>>Enter Product Size
+Note When you select the method "Enter Product Size" please note the following:
+The first product must reach the product detection (light barrier) within 5 s after
+confirmation of the product size value.
+Measure line speed
+Ensure that the line is moving at constant speed during measurement and entry of line
+speed.
+Press the next to enter the measured speed in m/min or cancel to quit.
+Configure Manually
+»Distance/Rot.« defines the distance the product covers with one full turn of the
+incremental encoder.
+»Pulses/Rot.« states the number of pulses the incremental encoder emits when
+performing one full turn.
+1 - 29
+
+6. 1.3 Trigger Mode
+Figure 1 - 54 Tools>>Setup>>Printhead>>Line Setup>>Trigger Setting
+Trigger Settings
+S tart trigger defines the settings for the first trigger pulse. The marking process is
+started by the first trigger pulse.
+With the trigger set to »Auto«, the marking process is started by pressing START on the
+control panel of the laser system.
+To start the marking process via an external signal you can define whether the rising or
+the falling edge is to be used as trigger. If the connected system is a YAG laser, you have
+the choice between three different input channels.
+S tart delay defines the distance until the marking process is started, which is the distance
+between the center of the marking field of the laser system and the center of the marking
+on the product. After the trigger the product has to cover this distance before it is in front
+of the marking head. If »No product movement« has been selected the start delay defines
+the time between start trigger pulse and marking in ms.
+Consecutive trigger defines the settings for all trigger pulses following the start trigger
+pulse.
+If the consecutive trigger is set to »None«, only the start trigger pulse starts a marking
+process.
+All following trigger pulses are not accepted. Select »None« whenever you want to
+generate a single marking.
+With the consecutive trigger set to »Auto«, the marking process is triggered internally
+and continuously.
+The marking process is repeated with a certain frequency or after the product has
+covered a certain distance - depending on the settings for the product movement.
+To trigger the marking process via an external signal you can define whether the rising or
+the falling edge is to be used as trigger. If the connected system is a YAG laser, you have
+the choice between three different input channels (usually the same channel as for the
+start trigger).
+1 - 30
+
+6.1.3.1 Blocking
+Blocking defines the distance the product has to cover before the next marking can be
+started.
+If »No product movement« has been selected the blocking defines the time that has to
+pass after a start trigger until a consecutive trigger is accepted.
+Stop trigger defines the settings for a trigger pulse that stops the marking process (e.g.
+the end of a cable or a stop signal from an external control unit). The laser system
+remains ready to mark after a stop trigger pulse, which means that the marking process
+will be continued if another start trigger pulse is detected.
+If the trigger is set to »None«, only the start trigger pulse starts a marking process. All
+following trigger pulses are not accepted.
+To stop the marking process via an external signal you can define whether the rising or
+the falling edge is to be used as trigger. If the connected system is a YAG laser, you have
+the choice between three different input channels.
+Start blocking sets the blocking time after the stop trigger pulse, where no external
+trigger pulses are accepted (debouncing).
+6.1.3.2 Trigger mode
+Figure 1 - 55 Tools>>Setup>>Printhead>>Line Setup>>Trigger Mode
+Allows the user to select one of the following settings to determine the trigger for the
+product marking:
+External Rising : Select the trigger mode as External Rising if the trigger pulse is to be
+given by the product that is entering the product detection zone.
+External Falling: Select the trigger mode as External Falling if the trigger pulse is to be
+given by the product that is leaving the product detection zone.
+Internal Once : If Internal once is selected then marking is started on selecting the start
+button.
+Internal Continuous : If Internal Continuous is selected then marking is continuous and
+can be stopped manually.
+Note: The default value is External Rising.
+Note: If the line direction is static, then all the four modes are available, else only
+External Rising and External Falling modes are available.
+1 - 31
+
+6. 1 . 4 Marking Filed
+Figure 1 - 56 Tools>>Setup>>Printhead>>Line Setup>>Marking Field
+If Use Max Marking Field is set to Yes , then the options to adjust the borders are disabled
+and the controller uses the maximum set marking field for printing.
+The border limits are determined by the edge of the marking area nearest to the border
+being moved and the current position of the opposite border. For example, the left border
+is limited by the left edge of the marking area and the current right border.
+1 - 32
+
+6.2 Tools>> Setup>>Con trol
+Figure 1 - 57 Tools>> Setup>>Control
+The control page allows you to set the following parameters:
+• CLARiTY Archive allows you to save the current printer setting.
+• Clone is the current printer settings and jobs. Memory device must be inserted to see
+clones.
+• Set Screen Orientation: Rotates the entire display through 180 degrees in the event
+that the CLARiTY panel is installed in an inverted orientation
+• Internationalisation: Sets the language of the CLARiTY screen and the international
+region which control date/time formats displayed within CLARiTY
+• Recalibrate Touchscreen: Allows the user to recalibrate the touchscreen, if touching
+the screen does not accurately locate the correct CLARiTY button or Icon. The
+printer requests the user to touch several crosses which are displayed on the screen,
+one after the other. The screen is recalibrated when the automated process is
+complete.
+Information If the calibration of the machine has too many errors and does not allow a
+user to navigate to this screen via the CLARiTY panel, the same functionality can be
+triggered from within CLARiTY Configuration manager.
+• Date and Time: Sets the system date and time of the coder
+• Communications: Enables resetting of all serial communication reports in the event
+that their setup has become corrupted .
+• Contact information: has the customer and printer information
+1 - 33
+
+6.2.1 How to create an Archive
+1) Insert memory device. Select “Tools”, then select
+“Setup”, then select “Control”.
+Figure 1 - 58 Tools>> Setup>>Control
+2) Select CLARiTY Parameter Archives.
+Figure 1 - 59 Tools>> Setup>>Control>>CLARiTY Parameter Archives
+1 - 34
+
+3) If you are creating an Archive select the “Create
+Archive” button.
+Figure 1 - 60 Create Archive button
+4) Name your archive that will be stored on the memory
+device.
+Figure 1 - 6 1 OK button
+Select OK.
+1 - 35
+
+5) After the archive has been created you will be
+notified, press OK to exit.
+Figure 1 - 62 Successfully created archive notice
+Remove the memory device.
+1 - 36
+
+6.2.2 How to create a Clone
+1) Insert memory device. Select “Tools”, then select
+“Setup”, then select “Control”.
+Figure 1 - 63 Tools>> Setup>>Control
+3) Select CLARiTY Printer Clones .
+Figure 1 - 64 Tools>> Setup>>Control>>CLARiTY Printer Clones
+1 - 37
+
+3) If you are creating an Clone select the “Create Clone ”
+button.
+Figure 1 - 65 Create clone button
+4) Name your archive that will be stored on the memory
+device.
+Figure 1 - 66 Key board
+Select OK.
+1 - 38
+
+5) When the cloning process starts you will be notified.
+Clones will take longer than Archives.
+Figure 1 - 67 Creating the clone
+5) After the Clone has been created you will be notified,
+press OK to exit.
+Figure 1 - 68 CLARiTY Printer Clone successfully created
+Remove the memory device.
+1 - 39
+
+6.3 Tools>> Database s
+Figure 1 - 69 Tools>> Databases
+• Internal: Shows the job stored in the printer.
+• Capacity: Shows the details like the space used in the internal database and space
+available.
+• External: Shows the Jobs stored on the inserted USB memory stick, and allows the
+user to transfer Jobs to the Internal database. The user is also able to delete Jobs from
+the USB memory stick. Information When an external USB memory device is
+connected to the printer, it is accessed in the same page.
+6.3.1 I nternal Databases
+Figure 1 - 70 Tools>> Databases>>Internal
+1 - 40
+
+To remove jobs that are no longer required, proceed as follows:
+1 Touch the Tools button on the home page.
+2 Touch the Database button on the tools page to open the database page. This page
+contains a list of all the available print jobs along with details of the space availa ble for
+the storage of new jobs .
+3 Touch the name of the job that you want to remove from the list of jobs. The select job
+will show in the p review.
+4 Ensure that the job is the one that you want to delete.
+5 Touch the Edit and select the job to be deleted or press cancel.
+6 Confirm the job to be removed.
+1 - 41
+
+6.3.2 Loading jobs with USB device
+1) Insert memory device wait till UBS icon appears the
+press the “Tools” button on the Home screen.
+Figure 1 - 71 Tools
+2) On the Tools screen, press the “Databases” button.
+Figure 1 - 72 Tools>> Databases
+3) Press “External” button.
+Figure 1 - 73 Tools>> Databases>>External
+4) Select the desired job from the USB menu.
+To restore the job to the controller select the transfer
+button.
+Figure 1 - 74 Transfer button
+1 - 42
+
+5) You will be asked if you want to restore the job
+select yes.
+Figure 1 - 75 Restore job prompt
+The screen will indicate that the job was successfully
+restore select OK .
+Figure 1 - 76 Restore of job completed
+1 - 43
+
+6. 3 .3 CLARiTY Update via a USB Memory Stick
+Updating of printer software is possible from a USB memory stick as opposed to a
+PC/Lap top and CLARiTY Configuration Manager.
+To update the CLARiTY using an USB, proceed as follows:
+1 Copy the CLARiTY software onto an USB memory stick.
+Note: The software must be stored in a root directory called \ CLARiTY update.
+2. Connect the stick to the CLARiTY Operator Interface via the USB port.
+3 If the CLARiTY Configuration Manager parameter called “Prompt On CLARiTY
+Update Detect “is set to Yes, when the USB device with the correct software is connected
+to the CLARiTY Laser Controller , a confirmation page is displayed.
+Figure 1 - 77 Tools>> CLARiTY Update
+4. If the parameter is set to No, you will have to change it in CLARiTY configuration
+manager software .
+5 Select 'Yes' to proceed to the next stage of the update or 'No' to return to the 'Home'
+screen.
+If 'Yes' is selected, the CLARiTY update screen is displayed.
+Only updates applicable to the current model of printer are displayed.
+6 Touch OK, a confirmation page appears
+1 - 44
+
+7 Touch Yes and the printer starts to update the software.
+Note: It is very important to ensure that the power to the printer is not removed during
+the update process or the flash card in the printer may get corrupted.
+When the update is finished you will have to cycle power, CLARiTY re - boots and the
+new software version will be displayed.
+8 Check the Software Part number in the Tools>> Diagnostics >>Control>>Versions
+screen to check that the update has been successful.
+1 - 45
+
+6 .4 Tools>> Diagnostics>>Printhead
+Figure 1 - 78 Tools>> Diagnostics >> Printhead
+The printhead general diagnostics page allows you access the following parameters:
+Scanner Type
+Here the marking head installed in the laser system is displayed.
+Product counter
+Throughput of the product detector since the current Job was loaded
+Print Count
+Number of prints since the current Job was loaded.
+Global Print Counter
+Total Count: Number of prints over the life of the controller.
+Marking Time
+Time required for marking the template in ms
+Line Speed
+The fixed speed of the line.
+1 - 46
+
+Event log
+Contains the log of events, faults and warnings over a total period of 180 days. Allows
+the user to select a fault or warning event on the screen for further information. Also
+allows the user to hide various events (such as faults or warnings) and export the
+information to USB as required.
+• Detailed event logs are stored for 6 months
+• Monthly Availability Summary is stored for the life of the printer
+Touch a box to Drill Down into specific event detail
+Figure 1 - 79 Tools>> Diagnostics>>Printhead>>Event Log
+Event Log
+Faults – Will effect Availability
+Warnings with drill - down option/detail - Effects Availability
+Warnings – Do not effect Availability
+Events – Do not effect Availability
+1 - 47
+
+Inputs
+Figure 1 - 80 Tools>> Diagnostics>>Printhead>>Inputs
+Indicates the laser clock time
+Indicates that a product detector is attached
+Indicated that an encoder is attached
+• UI 24 Volt Supply: Shows the voltage supply for the printers I/O (must be 24V)
+• UI PCB Temperature: Shows the real - time temperature of the hottest component inside
+the printer unit.
+Relative operating hours
+Display of the total number of operating hours of the laser system
+Absolute Operating Hours
+Display of the total number of operating hours of the laser system
+Laser System State
+Initialize The control components of the laser system are started.
+Key - switch open The initialisation is complete. The system can now be started by
+closing the key - switch.
+Laser start - up After closing the key - switch the laser and the cooling system are
+activated.
+Laser ready The laser system is ready for marking.
+Prepare for marking After pressing »START« the laser requires a preparation time,
+the length depends on the template contents and the configuration.
+Marking The current marking content is marked onto the product.
+1 - 48
+
+Laser radiation is emitted!
+Make sure that the safety instructions are observed.
+Standby If no marking is carried out for some time the laser switches to standby in order
+to relieve the system components.
+6.5 CLARiTY Controller
+6.5 .1 Specifications
+Controller / User interface (CLARiTY)
+8.4” TFT SVGA
+Operator Interface Full color LCD touch - panel CLARiTY Interface
+On - board Memory SD Card
+External Data Commu - nication Ethernet 10/100 base TX network communica - tions
+Binary and ASCII Comms Protocols and Win - dows
+and Drivers Host PC mode (Remote database) using
+CLARiNET ® USB Port
+Power Supply Requirements 90 - 264 V (100 - 240 VAC), 50 - 60 Hz, 24 V @ 25 W
+Temperature Range 5 o C - 45 o C
+This manual uses metric units of
+measurement. The equivalent English
+measures are included in parenthesis. For
+Units of Measurement
+example, 240 mm (9.44 inches).
+Ethernet 1 Allows the user to communicate with corporate
+LAN or local PC through RJ45 Ethernet Cable.
+Ethernet 2 Allows the user to communicate with corporate
+LAN or local PC through RJ45 Ethernet Cable
+Laser Ethernet Connection Allows the user to communicate with laser system
+through standard RJ45 Ethernet Cable
+1 - 49
+
+6.5.2 Standard Controller Assembly
+Figure 1 - 8 1 Controller Illustrated Parts Brake Down
+Figure 1 - 8 2 Yoke Assembly Illustrated Parts Brake Down
+Item Number P/N Description Qty
+406058 Controller 1
+A
+1 Bottom Case 1
+2 Screw 2
+3 402789 CLARiTY LCD 8.4 1
+Display and Touch
+Screen
+4 Screw 2
+5 Top Case 1
+6 Screw 6
+7 404249 PCB Assembly 1
+404457 Yoke assembly
+B
+8 Screw 2
+1 - 50
+
+9 Tube Mounting 1
+Bracket
+10 Yoke Bracket 1
+11 Hand wheel 2
+12 Washer 2
+6.5. 3 Volt Power Supply
+Figure 1 - 8 3 Controller Bottom Case
+Number Description
+1 XP power supply 24 VDC
+2 Fuse and power switch
+1 - 51
+
+6.5. 4 Fuse Assembly
+Figure 1 - 8 4 5 A Fuse hold and Power Switch
+6.5.5 PCB Components
+Figure 1 - 8 5 Controller PCB Board
+1 - 52
+
+Number Description
+1 SD card holder
+2 Ethernet 1
+3 Ethernet 2
+4 Ethernet 3
+5 USB Port
+6 Serial Port
+7 Battery
+6.5.6 PCB Connections
+Figure 1 - 8 6 Controller PCB Board Connection and Links
+Number Description
+1 LK3
+2 LK1
+3 Touch Screen Cable
+4 Back light Cable
+5 Video Cable
+6 LK5
+7 Power cable from XP power Supply
+1 - 53
+
+6.6 Cleaning High - Power Laser Optics
+The most common cause of laser damage is using a component without cleaning it.
+Most users correctly assume that the manufacturer cleaned the optics properly. However,
+under irradiation at the fluencies considered here, every cost - effective packaging method
+contaminates an optic to an unacceptable degree. The first time you use a component;
+clean it as described in Stage 3 below.
+The most important consideration in cleaning optics is to avoid introducing more
+contaminants than you remove. We recommend a three - stage process, but you should
+apply stages 2 and 3 only if the first and/or second fail to eliminate the problem.
+Handle optics only while wearing powder less latex gloves or powder less finger cots
+(cleanroom compatible). After putting on the gloves, clean them with an appropriate
+cleaning agent to eliminate any contamination from finger oils.
+Always handle optics from the edge, not the surface.
+To clean the laser scan lens you need of the maintenance kit:
+• Lens cleaning tissues
+• Acetone
+• Air bulb
+• Isopropyl alcohol
+Risk: The laser system must be disconnected from the power supply before
+starting with the activity.
+1 - 54
+
+1. Turn the key - operated switch in the position »0«.
+Remove the key, in order to ensure that the laser system cannot be switched - on.
+2. Save the database in Smart Graph - Software if you are not using auto save mode, user
+interface »File«.
+A detailed description can be found in the operating instructions of Smart Graph -
+Software.
+3. Turn - off the main switch.
+4. Pull the mains plug.
+Cleaning High - Power Laser Optics
+Stage 1
+In a clean environment use e.g. an air bulb or ear syringe to blow contaminants off the
+optical surface. We do not recommend using compressed air or nitrogen lines because
+these may contain their own contaminants (propellant, oil, etc.).
+1 - 55
+
+Stage 2
+Place a lens tissue on the surface of the component. We recommend a soft lens tissue.
+Place a drop of acetone on the tissue, wetting the entire surface, and then slowly pull the
+tissue off the component. Note that a tissue moistened with solvent can absorb water
+vapor from the atmosphere, thus becoming useless after about 20 seconds. Discard the
+tissue after one use.
+Stage 3
+Fold a piece of lens paper one or more times to create a cushion so that pressure will be
+applied evenly over the optical surface. Moisten the paper with the cleaning agent.
+Holding the lens tissue with the index, middle and ring fingers, wipe across the
+component in one smooth, straight motion, covering the entire surface. We advise against
+holding the tissue in forceps, because they will produce an uneven pressure. If the
+element is too large to be cleaned in one swath, clean half with a C - shaped motion, then
+the other half in the opposite direction.
+When cleaning mounted optics, you may need to fold the lens tissue into a triangle to
+reach into the mounted edges.
+1 - 56
+
+cvt d`$fpgmmYSF4Yglyfipheadl@6hheaMz$$hmtx A^locaxdL$maxpH metaa@`namen.6post$d prep2PLK_<`t^Q!EWt^bML@53%3f.x[TMC @ F3!@L 9DqQT.nS9J,S bXL|Q99%V"VJ#*s!H#3*"
+_['jjig&j'h3{|'v,|3&'3'2
+3://$$Y!"!#3$,5+$"
+&3/13#&3413'
+UU@!U"0@U@UU%$%1!++N]+++]q<M+++<?]q?<999++10Cy@;;+<+qr]]qll?+2?+9/01Y5!#"#"&54763232654'&'&#E1S&Ct^l!, 3'$/ +0'%%1 zi]<1*[6BTg!"LC+X@{lu{v0y5z6mE.d66Ue@@3C2222*%/?O44053@B@PE@B344204T24CTX@!/"<ED00'
+'=::
+'%%%4 r}*%%4 rL'+X@K@O5'-8x""!"!!"!#!#""""@'@S 0@UUU
+&
+&,3
+:Ly%#%'2#2'E#E''
+99+++++++YY]l??3+2901Y#&'&&'5!654&'&'5H%5
+/
+'9?:9&"%&8/78-""--/?@> / /.!.!"988''&h??+ 0`p@D S d 2"""@A!k++]]]q]?<<<?<<<99.+}.+}Y10]]CX /]Y]]]]qCX/
+'4@5@U56',?//?+99/++++++++2+/++++++10+CTX@X4U5U '456,'UUUUUU87!U!U!U!-U-U-U--879/++++++9/++++++//??9910++@/8@*58`]6%&88888+P8`8p88@8
+@UUUU@UUUUUU@U
+AV8$$<U@G#p0W+XCTX@Y@UY@UUUL0U0U0@U0+U+17FUFUF@!UFAGAUAUAUALULULULUL@ULUL+U+U+7@U7U7@U7U7@U7U7U7UU @U 0U @U *U @U U @U /2EH@ GTU@U/UOUoUUUVG1%,<,??///?]]+/+++++++++/+++++++++/+++++++++++++++++10++CTX@<%,<,TUV1GU U +U+U+7AUAUAL U X7U7U7U77XLULULULLYX9/+++9/+++9/+++++++///???10KTXFE/08888888Y@4YYY`]6+Y
+U @U U @U UUUUU$@% ,U/+??99?/+++++/+++++10+CTX@W@`p $%%,UUU UUU& U U &UUU'&9/+++9/++9/++++++???99?]10@5'`]6 '`'p''47: HH O'#!O%'#'AD %E@%%,! g@p@%$P `&+N]qr<M<]q<<<<?<?<<<99++10Cy@+<+]]+YY$l%l?+??3+201Y327#5#"&&54&&5!32674&'5c!'-v|EMq,7HAY?+mK9ZG#qBYA2%P6LN7% +XCTX ??/9/10CTX@1"!U*UU U ?+?+?+?+?99/10@SX[5"@a5#"! $ :9:95:JIDEEIi""-"2`4"+14"
+K?gI7tl_G
+$A 0
+>0&&+[3+
+
+'3m*.?.!'-@'...+!!~??9/93]22/9/32201%###".55!".54>7>3232#3m@&&!2%*6"@""aaI1C8V1$,$,@44.1H@H/

@@ -1,0 +1,314 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\FSB4783 - BALDR Accessories.pdf
+# cifrado=False bloques=7 caracteres=8113
+
+BALDR Accessories
+Header
+Videojet Technologies, Inc. Knowledge Article
+Article Number 000004783
+Parts List
+Adapters for User Interface
+Part # Description Conversion
+AL-74686 Handheld Terminal, QTerm G55
+(new handheld unit with 8pinM connector and Power Over New G55 to new laser
+integrated cable) Ethernet
+PC Adaptor cable
+AL-74763
+8pinM  RJ45 w/o Power Over PC to new laser
+Ethernet
+G55 Adaptor cable Old G55 (type 2) to new
+AL-74764
+ 6pinF to 8pinM laser
+G55 Adapter cable New G55 to old type 2
+AL-74761
+8pinF  6pinM laser
+G55 Adaptor cable New G55 to old laser
+AL-74766
+8pinF  RJw5 w/POE type 1
+*POE- Power Over Ethernet
+Available Product Detects and Connectors/Cable
+Part # Description Type
+AL-74971 Detector EZ-Pro Proximity fiber (PNP version of 234211)
+AL-74972 Detector EZ-Pro Proximity Thro Beam fiber (PNP version of 234212)
+AL-74976 Detector Retro Smart for clear materials (PNP version of 234215)
+AL-75006 3 way DIN connector with cable (see below)
+Pinout for Product Detect
+Based on AL-75006 Rev. AB (3 Way DIN Plug with Cable)
+Pin Wire Color Description
+1 White 12/24V
+2 Brown Trigger
+3 Green Ground
+Available Shaft Encoders and Connector/Cable
+Part # Description
+SP378821 3600 PPR encoder kit (encoder, w/ 25ft cable)
+4 way DIN connector with cable
+AL-74977
+(see below)
+Pinout for Shaft Encoder
+Based on AL-74977 Rev. AD (4 Way DIN Plug with Cable)
+Pin Wire Color Description
+1 White 24 Volts
+
+2 Brown Encoder Track A
+3 Green Encoder Track B
+4 Yellow Ground
+Pin Assignment  25 pin I/O on Supply Unit
+Printer side view (Outside of supply unit looking at connector)
+Pin No. Use
+1 User Interface
+2 User Interface System
+3 Start (Input)
+4 Stop (Input)
+5 Ground Interface
+6 Ground
+7 System Ready (Output)
+8 Ready to Mark (Output)
+9 Marking (Output)
+10 Shutter Closed (Output)
+11 Error (Output)
+12 Bad (Output)
+13 Good (Output)
+14 External Error (Input)
+15  Not used
+16 Trigger Monitor (Input)
+17 Encoder Index (Input)
+18 Encoder A (Input)
+19 Encoder B (Input)
+20 Ground
+21 Ground
+22-25 Not used
+Accessories Available for Connecting to 25 Pin Customer Interface
+Part
+Description
+Number
+I/O 25 Way Connector With
+AL-74983
+Cable
+AL-75326 I/O 25 Way Split Cable
+AL-75144 Laser I/O Junction Box
+Pin Assignment & Wire Colors I/O 25 Way Connector With Cable (AL-74983)
+Based on Part No. AL-74983 Rev. AE
+Pin No. Wire Color Use
+1 White User Interface
+
+2 Brown User Interface System
+3 Green Start (Input)
+4 Yellow Stop (Input)
+5 Gray Ground Interface
+6 Pink Ground
+7 Blue System Ready (Output)
+8 Red Ready to Mark (Output)
+9 Black Marking (Output)
+10 Violet Shutter Closed (Output)
+11 Gray/Pink Error (Output)
+12 Red/Blue Bad (Output)
+13 White/Green Good (Output)
+14 Brown/Green External Error (Input)
+15
+16 Yellow/Brown Trigger Monitor (Input)
+17 White/Gray Encoder Index (Input)
+18 Gray/Brown Encoder A (Input)
+19 White/Pink Encoder B (Input)
+20 Pink/Brown Ground
+21 White/Blue Ground
+Wire and Pin Assignment I/O 25 Way Split Cable (AL-75326)
+Based on PN: AL-75326 Rev. AA (I/O 25 Way Split Cable)
+Bulgin (25 Pin) Wire Color (25 pin Cable #
+Wire Color Signal
+Connector  connector to split) /Destination
+Pin 1 Black Black 3 - I/O cable User Interface
+1 - Beacon cable
+White Pin 1
+User Interface
+Pin 2 Red Light Green 2 - Extractor cable
+System
+Red Pin 1
+3 - I/O cable
+Pin 3 White White 3 - I/O cable Start (Input)
+Pin 4 Light Green Light Green 3 - I/O cable Stop (Input)
+Pin 5 Orange Orange 3 - I/O cable Ground Interace
+1 - Beacon cable
+Black Pin 2
+Pin 6 Light Blue Black 2 - Extractor cable Ground
+Light Blue Pin 2
+3 - I/O cable
+System Ready
+Pin 7 White/Black White/Black 3 - I/O cable
+(Output)
+1 - Beacon cable
+Green Pin 3
+Ready to Mark
+Pin 8 Red/Black Red 2 - Extractor cable
+(Output)
+Red/Black Pin 3
+3 - I/O cable
+Light
+Pin 9 Light Green/Black 3 - I/O cable Marking (Output)
+Green/Black
+Beacon cable Pin
+
+Pin 10 Orange/Black Brown 4 Shutter Closed
+Orange/Black 3 - I/O cable (Output)
+1 - Beacon cable
+Red
+Pin 5
+White
+Pin 11 Light Blue/Black 2 - Extractor cable Error (Output)
+Light
+Pin 2
+Blue/Black
+3 - I/O cable
+Pin 12 Black/White Black/White 3 - I/O cable Bad (Output)
+Pin 13 Red/White Red/White 3 - I/O cable Good (Output)
+Light External Error
+Pin 14 Light Green/White 3 - I/O cable
+Green/White (Input)
+Pin 16 Light Blue Light Blue 3 - I/O cable
+Trigger Monitor
+Pin 17 Black/Red Black/Red 3 - I/O cable
+(Input)
+Encoder Index
+Pin 18 White/Red White/Red 3 - I/O cable
+(Input)
+Pin 19 Orange/Red Orange/Red 3 - I/O cable Encoder A (Input)
+Light
+Pin 20 Light Blue/Red 3 - I/O cable Encoder B (Input)
+Blue/Red
+Pin 21 Red/Green Red/Green 3 - I/O cable Ground
+Junction Box (AL-75144)
+Junction box kit includes I/O 25 Way Connector With Cable.
+The Junction Box has an IP rating of 65.
+Junction Box with Cover Hidden
+
+Junction Box Parts Included
+Qty Part
+DIN Rail with 25 terminal blocks (3
+1
+contacts per terminal)
+Empty DIN Rail for expansion
+1 including terminal blocks or DIN
+mounted relays
+Cable glands for entry/exit of cables
+10
+(5 each on 2 sides)
+Standard Interlock
+Based on PN: AL-74969 Rev. AD (12 Way DIN Plug with Cable)
+Pin Assignment for 12 Way Connector (Pin Side View)
+Wire color
+Pin Use
+(external cable)
+A 30v for Interlock White
+B Interlock Return Brown
+C System 12/24V Green
+D System Ground Yellow
+
+E Trigger Enable Gray
+Used for K40
+F Pink
+Interlock Option
+Used for K40
+G Blue
+Interlock Option
+Used for K40
+H Red
+Interlock Option
+Used for K40
+J Black
+Interlock Option
+Used for K40
+K Violet
+Interlock Option
+L Not used
+M Not used
+Fuses
+Spare fuses come as part of a kit:  AL-75215 (see below)
+Existed in
+Part # Description Where?
+3120/3320?
+FUSE, 10A, 250V, 5x20mm, SLO-BLO,
+220100 Main incoming power plug No/New
+RoHS (Qty. 2)
+In-line from +30V PSU to Interface
+AL-04073 FUSE 5 x 20 TIME LAG 1.6A (Qty. 2) No/New
+connector (AL-74676)
+FUSE,6.3x32MM,20A,QUICK ACTION, In-line from +30V PSU to relay for
+AL-68589 Existing
+CERAMIC, [RoHS] (Qty. 2) laser power
+FUSE,D=6.3x32 MM,25A,FAST-ACTING 10 Watt Laser Tube only (back of Existing
+AL-62034
+(Qty.2) laser tube) (Outside NA)
+Existing
+FUSE,6.3x32MM,10A,QUICK-ACTION 10 Watt Laser Tube only (back of
+AL-11066 (North
+(Qty. 2) laser tube)
+America)
+Summary of Supply Unit Rear Panel Connectors
+Number of
+Connector Description Standard/Optional
+Pins
+3 Product Detect Standard
+4 Shaft Encoder Standard
+Optional (requires additional
+7 K30 Interlock
+hardware)
+Standard
+User Interface
+8 Adapters available to allow RJ45 or
+(G55/PC/SOI)
+Old G55
+12 Interlock Standard
+14 External Job Selection Optional (requires SLEB)
+25 Customer I/O Standard
+RS-232 Optional (requires SLEB)
+Major Cable Assemblies
+Description Part # From To Includes
+Main power Positive and Negative
+Mains AL-74668
+receptacle Power Supplies
+ACC (X16, Customer Interface, product
+Inputs, outputs, product
+Rear Panel AL-74669 X20, X6, X7, detect, and encoder external
+detect, encoder
+X14) connectors
+Key Switch, Membrane,
+Front Panel AL-74671 ACC (X8)
+and Relay
+Safety Lock ACC (X2 & Standard Interlock external Interlock, trigger enable,
+AL-74672
+(Std) X6) connector and K40 (optional)
+
+Safety Lock
+AL-74673
+K30
+(optional)
+RS232 & Job
+SLEB board Job Select and RS232
+Select AL-74674
+(X60) external connectors
+(optional)
+ACC3
+User User Interface external
+AL-74676 (Ethernet G55/PC connections
+Interface connector
+connection)
+SLEB board Optional Ethernet port
+Ethernet port AL-74984 Additional Ethernet port
+(X5) external connector
+Umbilical Umbilical
+FM power, LVDS,
+Harness connector FM board, laser tube, fan,
+AL-74770 laser/fan power, laser
+(in laser inside laser pilot laser
+control, shutter, ground
+head) head
+Disclaimer
+The contents of this email and any attachments are provided as a convenience to Videojet customers to highlight useful information
+and troubleshooting tips. When working with a product, always consult the product user manual and follow the product safety
+precautions and recommendations, including using Personal Protective Equipment when necessary. If you have any questions or are
+not experienced in using or servicing Videojet equipment, contact Videojet for assistance.
+First Published
+2/16/2015 9:44 AM
+Date
+Last Published
+2/16/2015 9:44 AM
+Date
+Version 1

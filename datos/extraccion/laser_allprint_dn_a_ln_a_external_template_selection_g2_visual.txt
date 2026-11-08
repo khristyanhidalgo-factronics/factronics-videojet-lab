@@ -1,0 +1,71 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\External template selection G2.pdf
+# cifrado=False bloques=7 caracteres=3408
+
+External Template SelectionG2 Systems
+
+1 Preparation
+In order to use the external template selection the laser system must be equipped with two op-tional input modules (art. no. 65856). These input modules have to be inserted between input
+module 6 and the termination module 7. Additionally, a valid template list is required for using the external template selection.
+2 Template List
+In the SmartGraph software under LaserOperation->Markingadjustmentcreate a template list using the templates existing in the laser system. you can
+A template is assigned to a certain number in the template list (see below). The number of thedesired template is sent - e.g. by a PLC - binary coded to the digital inputs DATA0 to DATA7
+and is taken over with the signal EXT_EVENT. The selected teplate of the laser system and can be marked on the product. This procedure is called mplate becomes current tem-External
+Template Selection.
+The dialog »Template list« contains the assignment of templates and template numbers for theexternal template selection.
+09/04 - Rev. 1.0 1
+
+External Template SelectionG2 Systems
+AddAssign a new template number. Enter the template number for the newentry under »Number«. Select a template from the selection field
+»Name«. You can only select templates existing on the current data-base. Click on »OK« to add the created entry to the template list.
+DeleteSelect an entry to be deleted by clicking on the template number. Clickon »Delete« to remove the selected template number from the list.
+EditSelect an entry to be edited and click on »Edit«. In the displayed dialogyou can change the template number or the template assigned to a num-
+ber.
+ApplyThe settings are transferred to the laser system and the dialog is closed.
+ResetModifications are undone.
+X The dialog is closed.
+09/04 - Rev. 1.0 2
+
+External Template SelectionG2 Systems
+3 Interface Assignment
+3.1 Module 6: Digital Inputs
+(refer to chapter "Appendix" in the laser manual for the complete list of inputs)
+3.2 Optional: Modules for External Template Selection
+TerminalSignalDescription
+X1.5.1EXT_EVENTThis signal is used for the external template selection.With a positive edge the signals (DATA0 to DATA7) of
+the optional input modules are taken over.
+Module A
+TerminalSignalDescription
+X1.6.1DATA 0The template is selected via its assigned template numberby an 8 bit value built via inputs DATA0 to DATA7. The
+selection is taken over by the signal EXT_EVENT.
+X1.6.2Customer 24 V24 V customer
+X1.6.3Customer GNDGND customer
+X1.6.4DATA 2see DATA 0
+X1.6.5DATA 1see DATA 0
+X1.6.6Customer 24 V24 V customer
+X1.6.7Customer GNDGND customer
+X1.6.8DATA 3see DATA 0
+Module B
+TerminalSignalDescription
+X1.7.1DATA 4see DATA 0
+X1.7.2Customer 24 V24 V customer
+X1.7.3Customer GNDGND customer
+X1.7.4DATA 6see DATA 0
+X1.7.5DATA 5see DATA 0
+X1.7.6Customer 24 V24 V customer
+X1.7.7Customer GNDGND customer
+X1.7.8DATA 7see DATA 0
+09/04 - Rev. 1.0 3
+
+External Template SelectionG2 Systems
+3.3 Timing Diagram
+External Template Selection
+>>EXT_EVENT
+>>DATA0 ... DATA7
+Template is changed
+Setup Time: > 10 msHold Time: > 10 ms
+The template change is carried out after the currtime delay (hold time) between signal EXT_EVEent marking process is finished. The minimumNT and template change is about 10 ms. The
+duration of the delay increases if there is heavy load on the CAN bus or the SmartOS software.
+09/04 - Rev. 1.0 4
+
+I@+& &
+C@&#&!0606"0 1

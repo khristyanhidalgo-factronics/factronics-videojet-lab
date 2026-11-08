@@ -1,0 +1,92 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\Nueva carpeta\Technical Specification Videojet 7230-7330.pdf
+# cifrado=False bloques=5 caracteres=3159
+
+Technical Specification
+Technical Specification of
+Laser Marking System
+Videojet 7230/7330
+Environmental
+Electrical supply
+Operating temperature:+5 C to +40 C ambient
+Storage temperature:+5 C to +65 C ambient
+Humidity range:10 % to 90 % relative humidity, non-condensing
+IP rating:
+Supply unitIP21
+Marking headIP54
+Cooling:Internal air-cooling
+Voltage range:100 to 240 VAC (auto-range), single phase, 50/60 Hz
+Max. power consumption:200 VA
+Current rating:1.4 A at 110 VAC
+0.8 A at 230 VAC
+Fuse:2 x T8 A/250 V
+The electrical safety of the equipment has been tested according to the test defined inEN 62368-1.
+WarningThe laser system must be earthed/grounded.
+03/19 - Rev. AA 1 of 4
+
+Technical Specification
+Laser characteristics
+Optical characteristics
+Laser source:Ytterbium fiber laser
+Laser class:4
+Power output, typical:
+723010 W (max. 12 W)
+733020 W (max. 24 W)
+Wavelength (nominal):1055 - 1075 nm
+Operating mode:pulsed
+Pulse duration:80 - 120 ns
+Pulse energy:1 mJ
+Pulse frequency:2 - 200 kHz
+Laser source warranty:2 years
+Focusing lenses
+Refer to the current Parts List.
+Laser beam
+Marking field size:From 18 mm x 13 mm up to 455 mm x 255 mm, dependingon marking head and lens.
+Spot size:min. 70 (depends on the installed optical components).m
+Line width:Depends on the product material and the parameter set-tings.
+2 of 4 03/19 - Rev. AA
+
+Technical Specification
+Marking characteristics
+External interfaces
+Marking speed:1 to 30,000 mm/s (typical).
+Character generation:SHF60B: Up to 2,000 characters per second (typical).SHF100B: Up to 1,300 characters per second (typical).
+Number of lines of text:Limited by character size and marking field height.
+Character height:Limited by marking field height.
+Marking distance (mm)
+SHCF60B56, 106, 170, 263
+SHF100B127, 229, 345, 549
+Fonts (character sets):Any standard font (special characters are available onrequest at an additional cost).
+Customer interface:Input and output signals are 0 V or +12/24 V.
+Input signalsStart Marking; Stop Marking; Shutdown; Shutter Lock; Inter-lock; Exhaust error; Error Confirm; Filter Full; Error Status
+Customer; Job Select (8-bit parallel inputs); External Event(job selection strobe); Shut Down; Key Switch; Start Up.
+Output signalsReady to Mark; Laser Ready; Marking; Shutter Closed;Exhaust On; Error; Bad; Good; System Ready; Acknow-
+ledge (confirms successful job selection), Trigger Enable.
+Bi-directional signalsRS-232 (TXD, RXD, CTS, RTS).
+Encoder inputsDual channel, 24 V, CHA/CHB/Index, hard wire or quickconnect, sensor output: Push Pull, PNP
+Product sensor inputSingle, 24 V, hard wire or quick connect, sensor output:PNP
+Ethernet (to PC)RJ45 connector (1 GB/s).
+Mains power connection:Country-specific cable and plug
+Control options:Smart Graph software
+TU430
+TCS+ software
+CLARiTY
+03/19 - Rev. AA 3 of 4
+
+Technical Specification
+Dimensions
+Supply Unit
+Length:545 mm (excluding key for key switch)
+Width:436 mm
+Height:133 mm
+Weight:Approximately 18.5 kg
+Marking Unit SHF60B
+Length:456.6 mm
+Width:74 mm
+Height:105 mm
+Weight:Approximately 3.7 kg
+Marking Unit SHF100B
+Length:494.5 mm
+Width:120 mm
+Height:150.4 mm
+Weight:Approximately 5.4 kg
+4 of 4 03/19 - Rev. AA

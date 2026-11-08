@@ -1,0 +1,214 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\09258T.pdf
+# cifrado=False bloques=6 caracteres=7845
+
+Videojet Technologies Inc.
+SAR09258T
+Printer Model: 3120 /31 3 0 /3320 /3330 /3430/ 7210 /7220 /7310 /7320/ /DN50/LN100
+Description: Simple Printer Protocol based on TCP port .
+Base Version: QMark 8. 9 . 1.1
+Engineered By: P . War d
+Date Completed: February 16, 2022
+See Addendum to the Operating Instructions for modification details.
+Revision “A” Rebased to 6.9.3.1. Fixed string length check for UTF - 8 strings. Fixed GetTText for shift codes.
+Revision “B” Fixed GetPCount.
+Revisi on “C” Added Print Done feature .
+Revision “ D ” Added ability to translate PState. Added GetPStateRaw command .
+Revision “E” Rebased to 6.9.3.2. SAR starts automatically when system boots up. Moved TCP Server from
+OS to application. SAR will automatica lly close existing TCP Port when new port is opened.
+Removed timeout mechanism since it is no longer applicable. Added “debugging via web page
+SAR - Log” feature.
+Revision “ F ” Fixed issue with receiving multiple commands (or double carriage returns).
+Revi sion “ G ” Added GetLotData and SetLotData commands.
+Revision “ H ” GetPCount and GetLotData modified to use last count provided by AOS. Use GetPCountF and
+GetLotDataF to force an update from the AOS. Note that forcing the update from the AOS can
+cause a del ay in the image/print process resulting in “Line Speed Too Fast” error.
+Revision “I” Rebased to 6.9.3.2.1
+Revision “J” Rebased to 8.5.3
+Revision “K” Rebased to 8.5.3.2
+Revision “L” Rebased to 8.5.3.6
+Revision “M” Rebased to 8.5.3.8TO
+Revision “N” Fixed d elay associated with SetPState when NAK response occurs.
+Revision “0” Fixed utf - 8 encoding.
+Revision “P” Rebased to 8.6.0. Fixed GetTText command.
+Revision “Q” Rebased to 8.7.0.
+Revision “R” Rebased to 8.9.0.
+Revision “S” Catch error associated with flushing port.
+Revision “ T ” Rebased to 8.9. 1.1 .
+1 of 6
+Confidential - Company Proprietary
+
+VIDEOJET TECHNOLOGIES INC. SAR09258T
+Simple Printer P rotocol
+For Lasers
+1. Host Port Configuration:
+TCP Client, Port 20000
+2. Timeout :
+None.
+3. Basic format:
+REQUEST: <Command>|<Parameters><CR><LF>
+RESPONSE: <Result>|<Parameters><CR><LF>
+4. Parameters:
+<TName> = Template Name (case sensitive)
+<VName> = Variable Name (case sensitive)
+<VSize> = Variable Data Size
+<VData> = Variable Data
+<VType> = ET,SN,DT or TM (ExternalText,SerialNumber,Date or Time)
+<TPos> = Template position (xOffset yOffset Rotation) eg. "10 20 180.000"
+<TText> = Template text
+<OType> = Object Type (Text, Barcode or IDMatrix)
+<PState> = ON, OFF, ERR or CHK (ERR and CHK are readonly)
+<Result> = ACK or NAK:Reason
+< Hours > = Operating Hour s ( 6509 )
+<Clock> = Date and Time (2008 - 04 - 20T04:04:12)
+<PCount> = Print Count
+< L Size> = Lot Size
+< LCount > = Lot Count
+<ECode> = Error Code
+< PDone > = ON or OFF
+<SarNum> = SAR Number and Revision
+<T Info > = Template Inform ation (MarkingTime VectorCount PointCount MarkingDistance
+JumpDistance Height Width Xmax Xmin Ymax Ymin) eg. "129 10 321 161.77 35.91 12.04
+56.89 28.45 - 28.45 6.02 - 6.02"
+5. Commands:
+Get Print State
+REQUEST: GetPState<CR><LF>
+RESPONSE: <Result> |<PState><CR><LF>
+Set Print State
+REQUEST: SetPState|<PState><CR><LF>
+RESPONSE: <Result><CR><LF>
+Get Print Count
+REQUEST: GetPCount<CR><LF>
+RESPONSE: <Result>|<PCount><CR><LF>
+2 of 6
+Confidential - Company Proprietary
+
+VIDEOJET TECHNOLOGIES INC. SAR09258T
+Reset Print Count
+REQUEST: ResetPCount<CR><LF>
+RE SPONSE: <Result><CR><LF>
+Get Lot Data
+REQUEST: Get LotData <CR><LF>
+RESPONSE: <Result>|< LSize >|< L Count><CR><LF>
+S et Lot Data
+REQUEST: S et LotData |< LSize >|< L Count><CR><LF>
+RESPONSE: <Result><CR><LF>
+Get Operating Hours
+REQUEST: Get Hou rs <CR><LF>
+RESPONSE: <Result>|< Hours ><CR><LF>
+Get Clock
+REQUEST: GetClock<CR><LF>
+RESPONSE: <Result>|<Clock><CR><LF>
+Set Clock
+REQUEST: SetClock|<Clock><CR><LF>
+RESPONSE: <Result><CR><LF>
+Get Templates
+REQUEST: GetTNames<CR><L F>
+RESPONSE: <Result>|<TName1>|<TName2>...|<TNamen><CR><LF>
+Get Template Text
+REQUEST: GetTText|<TName><CR><LF>
+RESPONSE: <Result>|<OType1>|<TText1>...|<OTypen>|<TTextn><CR><LF>
+Get Template Position
+REQUEST: GetTPos|<TName><CR><LF>
+RESPONSE: <Result>|<TPos><CR><LF>
+Set Template Position
+REQUEST: SetTPos|<TName>|<TPos><CR><LF>
+RESPONSE: <Result><CR><LF>
+G et Template Information
+REQUEST: G etT Info |<TName><CR><LF>
+RESPONSE: <Result> |<TInfo <CR><LF>
+Get Active Templat e
+REQUEST: GetActiveTName<CR><LF>
+RESPONSE: <Result>|<TName><CR><LF>
+Set Active Template
+REQUEST: SetAct ive TName|<TName><CR><LF>
+RESPONSE: <Result><CR><LF>
+Get Variable Names
+REQUEST: GetVNames|<TName>|<VType><CR><LF>
+RESPONSE: <Result>|<VName1>|<VSize1>...|<VNamen>|<VSizen><CR><LF>
+3 of 6
+Confidential - Company Proprietary
+
+VIDEOJET TECHNOLOGIES INC. SAR09258T
+Get Variable Data(s)
+REQUEST: GetVData|<TName>|<VName1>|<VName2>...|<VNamen><CR><LF>
+RESPONSE: <Result>|<VData1>|<VData2>...|<VDatan><CR><LF>
+Note: When <TName> is set to “*”, the Active T emplate Name will be used.
+Set Variable Data(s)
+REQUEST: SetVData|<TName>|<VName1>|<VData1>...|<VNamen>|<VDatan><CR><LF>
+RESPONSE: <Result><CR><LF>
+Note: When <TName> is set to “*”, all variables with the name VName will be set
+to VData regar dless of the Template Name.
+Configure Variable Data List
+REQUEST: Cfg VData List |<TName 1 >|<VName1>...|< T Namen>|<VNamen><CR><LF>
+RESPONSE: <Result><CR><LF>
+Set Variable Data List
+REQUEST: SetVData List |<VData1>...|<VDatan><CR><LF>
+RESPON SE: <Result><CR><LF>
+Get Error Codes
+REQUEST: GetECodes<CR><LF>
+RESPONSE: <Result>|<ECode1>|<ECode2>...|<ECoden><CR><LF>
+Acknowledge Error Codes
+REQUEST: AckECodes<CR><LF>
+RESPONSE: <Result><CR><LF>
+Save
+REQUEST: Save<CR><LF>
+RESPONSE: <Result><CR><LF>
+Get SAR Number
+REQUEST: GetSarNum<CR><LF>
+RESPONSE: <Result>|<SarNum><CR><LF>
+Get Print Done Mode
+REQUEST: Get PDone <CR><LF>
+RESPONSE: <Result>|< PDone ><CR><LF>
+S et Print Done Mode
+REQUEST: S et PDone |< PDon e ><CR><LF>
+RESPONSE: <Result >< CR><LF>
+Help
+REQUEST: Help|<Command><CR><LF>
+RESPONSE: <Result>|<Details><CR><LF>
+4 of 6
+Confidential - Company Proprietary
+
+VIDEOJET TECHNOLOGIES INC. SAR09258T
+6 . Unicode
+All strings are UTF - 8 encoded.
+Code range UTF - 8 Notes
+0000 – 007F 0zzzzzzz ASCII equivalence range; byte begins wi th zero
+0080 – 07FF 110yyyyy 10zzzzzz first byte begins with 110, the following byte begins with 10.
+first byte begins with 1110, the following 2 bytes begin with
+0800 – FFFF 1110xxxx 10yyyyyy 10zzzzzz
+10.
+7 . Print Done
+When PDone is ON, the following wi ll be sent to the host device:
+If no unacknowledged errors exist
+PRN|OK<CR><LF>
+Else
+PRN|ERR<CR><LF>
+Note that PDone defaults to OFF whenever a TCP Connection is established.
+8 . Translate PState
+The PState strings are defined in the \ smarties \ custome r \ pstate.txt file located on the MMC card.
+This is simple text file that can be edited to change the default PState strings as required by your
+application. To translate these states, edit only the text within the quotation marks for each state.
+9 . GetP StateRaw
+Get Print State Raw
+REQUEST: GetPState Raw <CR><LF>
+RESPONSE: <Result>|<PState Raw ><CR><LF>
+<PState Raw > can be any of the following:
+LaserStatusReady LaserStatusServiceMode
+LaserStatusKeySwitchOpen LaserStatusFatalError
+LaserStatusStartUp LaserStatusError1
+LaserStatusPrepareForMarking LaserStatusError2
+LaserStatusWai tForTrigger LaserStatusServic eLaserStartUp
+LaserStatusWaitForTriggerDelay LaserStatusWaitForPause
+LaserStatusMarking LaserStatusInitialize
+LaserStatusStandby LaserStatusPause
+LaserStatusBleeding LaserStatusTimeoutInterlock
+LaserStatusInterlockOpen LaserStatusTimeoutRelease
+LaserStatusProtectedServiceMode LaserStatusUnknown
+If you have questions or concerns regarding this SAR, contact the Technical Support department of Video jet
+5 of 6
+Confidential - Company Proprietary
+
+VIDEOJET TECHNOLOGIES INC. SAR09258T
+Technologies Inc. 1 - 800 - 843 - 3610 x3103
+6 of 6
+Confidential - Company Proprietary

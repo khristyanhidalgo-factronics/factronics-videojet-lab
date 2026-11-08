@@ -1,0 +1,28 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Port\BT2206141-Funcao Autorunning Impressoras TTO (Port).pdf
+# cifrado=False bloques=2 caracteres=1395
+
+Boletim Tcnico
+ !"
+A funo Autorunning em impressoras TTO permite que a impressora entre em modo
+Imprimindo (online) to logo fechemos o cassete, sem a necessidade de utilizar o boto
+correspondente
+Esta funo pode ser usada, por exemplo, em impress oras que necessitem trabalhar sem a
+tela Clarity (GUI), onde no teramos como por a im pressora em modo Imprimindo. Entretanto,
+esta funo no est disponvel como padro no soft ware Clarity nem no Clarity Config. Para
+disponibilizar essa funo necessrio carregar um arquivo .xml para a impressora por meio
+do Carity Config.
+A seguir seguem instrues para disponibilizar esta funo nas impressoras TTO:
+1 Obter o arquivo AutoRunning.xml
+2 Salvar o arquivo na pasta CLARiTYConfig Archiv es do PC com Clarity Config instalado.
+Esta pasta normalmente est dentro da pasta Docume ntos do Windows
+(C:\Users\usuario\Documents\CLARiTYConfig Archives) .
+
+3 Conectar a impressora TTO desejada ao PC e esta belecer comunicao com o Clarity
+Config.
+4 No Clarity Config, abrir a pasta Archives, lo calizar o arquivo AutoRunning e arrastar esse
+arquivo para o cone da impressora conectada, que a parece na cor verde ao lado esquerdo.
+5 A funo Autorunning j estar disponvel no Cl arity Config, dentro da pasta System e
+poder ser ativada e desativada, selecionando respe ctivamente as opes Yes ou No.
+Videojet Technologies Inc.
+Tech Support Latin America
+la.tec@videojet.com

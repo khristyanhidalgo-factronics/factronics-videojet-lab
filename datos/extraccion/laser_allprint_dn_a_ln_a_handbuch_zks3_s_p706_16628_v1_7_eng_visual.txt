@@ -1,0 +1,624 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\Handbuch ZKS3-S P706-16628_V1.7_eng.pdf
+# cifrado=False bloques=31 caracteres=35859
+
+Version 1.7 P700
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+INSTRUCTION HANDBOOK P706-16628
+Keep for later use!
+Version April 2009
+76532 Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com
+
+Version 1.7 P700
+Termotek AG reserves the right to make technical changes or improvements to this document
+without giving prior notice. Furthermore, it is possible that the customer wishes to make
+modifications such as colour, side panels, level display, conductivity measurement, voltage,
+frequency, which lead to inaccuracies in the displayed photos.
+No part of this document may be copied in any way or transmitted without written permission of
+Termotek AG.
+© Termotek AG, Baden-Baden, 2009
+All rights reserved.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 2
+
+Version 1.7 P700
+CONTENTS
+1. NOTES TO USING THIS MANUAL.................................................................................................4
+2. SUMMARY OF THE WARNING AND PRECAUTIONARY NOTES...............................................5
+3. INTRODUCTION..............................................................................................................................6
+3.1 P RODUCT DESCRIPTION .........................................................................................................................6
+3.2 N OTES TO APPLICATION .........................................................................................................................6
+3.2.1 Electrical safety..................................................................................................................7
+3.2.2 Operational safety..............................................................................................................7
+3.2.3 Safety labels......................................................................................................................7
+4. GETTING STARTED.......................................................................................................................8
+4.1 U NPACKING THE UNIT ...........................................................................................................................8
+4.2 O PERATING THE CHILLER ......................................................................................................................9
+4.2.1 Connecting the water hoses..............................................................................................9
+4.2.2 Setting Up the Electrical Connections.............................................................................10
+4.2.3 Getting ready to operate..................................................................................................12
+4.3 P REPARING THE COOLANT WATER - FEEDBACK CHILLER FOR TRANSPORT TO THE CUSTOMER ...............13
+4.3.1 Storage.............................................................................................................................13
+4.3.2 Place of Operation...........................................................................................................13
+4.3.3 Transport to the customer................................................................................................14
+5. SYSTEM DESCRIPTION...............................................................................................................15
+5.1 S ET UP AND FUNCTION .........................................................................................................................15
+5.1.1 Refrigerant circuit.............................................................................................................15
+5.1.2 Coolant water circuit........................................................................................................16
+5.1.3 Air circulation...................................................................................................................16
+5.1.4 Electrical circuit................................................................................................................17
+5.1.5 Electrical circuit................................................................................................................18
+6. MAINTENANCE WORK................................................................................................................21
+6.1 S AFETY NOTES .....................................................................................................................................21
+6.2 R EPLACING THE WATER FILTER ...........................................................................................................21
+6.3 R EFILLING WATER ...............................................................................................................................23
+6.4 R EPLACING THE WATER .......................................................................................................................24
+6.5 C OOLANT WATER CIRCUIT ...................................................................................................................25
+7. INSTRUCTIONS FOR REPAIR.....................................................................................................26
+7.1 S AFETY NOTES .....................................................................................................................................26
+7.2 R EPAIRS TO THE ELECTRICAL CIRCUIT .................................................................................................27
+7.2.1 Replacing the fuses.........................................................................................................27
+8. OTHER...........................................................................................................................................28
+8.1 S ERIAL NUMBER ..................................................................................................................................28
+8.2 W ASTE DISPOSAL INSTRUCTION ..........................................................................................................28
+8.3 N OT SATISFIED ?..................................................................................................................................29
+8.4 CE-D ECLARATION OF CONFORMITY ....................................................................................................30
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 3
+
+Version 1.7 P700
+1. Notes to using this manual
+This manual has been designed to support the user with the transport, installation,
+commissioning, operation, inspection, servicing and repair of the unit.
+The user should read the manual before beginning to install the unit. Termotek AG takes no
+responsibility for damage caused through incorrect installation, commissioning, repair or
+operation of this unit.
+This chiller complies with the current European standards. Changes made to the construction or
+deviations from the intended application by the customer can void this compliance.
+The notational convention to this user manual
+The following notation and symbols apply throughout the whole document.
+C AUTION . D ANGER !
+C AUTION . C ORROSIVE MATERIAL
+C AUTION . E LECTRICAL VOLTAGE
+C AUTION . N OXIOUS MATERIAL
+R E - MOVE PLUG BEFORE OPENING
+U SEFULL INFORMATION
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 4
+
+Version 1.7 P700
+2. Summary of the warning and precautionary notes
+• Service and repair work should only be carried out by appropriately qualified personnel.
+• Undertake no work on the refrigerant circuit as there is a danger that poisonous and
+corrosive gas (R134a) may leak out. Any work carried out on the refrigerant circuit must be
+carried out by refrigeration experts. (Refrigerant R134a).
+• When working on the chiller, ensure that the unit is disconnected from the power supply.
+Switch the power supply off. Ensure that unauthorised reconnection of the power supply is
+not possible.
+• Do not disable any security measures.
+• The chiller unit must only be operated with a securely mounted fan grid.
+• The electrical connection is designed according to the VDE and the EN- and IEC-
+Standards. Ensure that the live and neutral wires are correctly connected. Furthermore,
+ensure that the unit is correctly earthed.
+• Do not operate the unit without water to avoid damaging internal components e.g. pump.
+• Refill the unit only with the permitted and filtered (< 5 µm) coolant water.
+• Do not operate the chiller unit without a water filter.
+• Do not use or maintain the chiller outdoors. These units were not designed to withstand
+outdoor weather conditions.
+• Ensure that the cooling air inlet and outlet remains unrestricted and that sufficient air
+circulation is maintained to guarantee the required heat transfer.
+• Do not alter the controller setting. An altered setting can render the unit non-functional.
+• Note the water flow direction when connecting the water hoses.
+• Before transporting the unit, it must be thoroughly drained. Otherwise it is possible that the
+unit be damaged by residual water freezing inside the unit.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 5
+
+Version 1.7 P700
+3. Introduction
+3.1 Product description
+The chiller unit was constructed and developed to maintain the temperature of a user medium )
+between two predefined limits with the help of a cooling process. It has been designed to
+operate under continual operation for the purpose of cooling systems such as for laser
+equipment.
+The chiller is fitted inside a robust and compact stainless steel enclosure.
+Advantages of the chiller unit:
+ compact enclosure
+ low service
+ simple operation and handling
+ intended for use at ambient temperatures of +15°C to +40°C
+ reliable, quiet operation
+ high temperature stability of the coolant water
+3.2 Notes to application
+The chiller unit is intended, exclusively, to cool filtered water (< 5 µm) in compliance with all the
+corresponding installation and safety regulations.
+Termotek AG takes no responsibility for damage caused through improper use or improper
+operation of the unit.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 6
+
+Version 1.7 P700
+3.2.1 Electrical safety
+The chiller unit has been built according to the generally recognised technical regulations.
+Caution, danger of electrical shock!
+Ensure that the unit is disconnected from the power supply before carrying out any assembly
+work. All work undertaken on the chiller unit, particularly on electrical equipment, is only to be
+carried out by suitably trained personnel.
+3.2.2 Operational safety
+The chiller unit is a compressor chiller design with a closed cooling circuit.
+Attention!
+Do not operate the chiller without coolant water. Check the coolant water level at regular
+intervals. The chiller is quoted as secondary component of the complete system (Slave). At
+error messages of the chiller (low/high temp.), it must be rapidly switched off. If you dont follow
+these instructions, consequential damage to the complete system cant be ruledout. For these
+damages TERMOTEK excludes liability.
+3.2.3 Safety labels
+Information!
+Damaged or unreadable safety labels must be replaced immediately. When reordering please
+give the article number.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 7
+
+Version 1.7 P700
+4. Getting started
+4.1 Unpacking the unit
+The chiller contains many electrical and mechanical components. In order to protect the
+individual components during transport, a special packaging material has been used. This
+material absorbs most of the shock and vibration likely to occur.
+The packaging material consists of PU - foam. The external packing material used is cardboard.
+This protects the unit from dust and other pollution.
+When unpacking the unit proceed as follows:
+1. Check the packaging for signs of damage.
+2. Open the packaging and remove the packing foam
+3. Take the chiller out.
+4. Check the chiller for signs of transport damage.
+Information!
+Should the chiller have been damaged during transport, inform both the haulage firm and the
+supplier in writing without delay. Retain the packaging material and note the external and
+internal damage. Take one or more photos.
+5. Place the chiller at the planned operating location.
+6. Protect the chiller from dirt and dampness prior to installation.
+7. Dispose of the packaging material.
+Information!
+Please ensure that the surrounding cardboard, the transport pallet and the packing foam are
+disposed of separately for recycling purposes.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 8
+
+Version 1.7 P700
+4.2 Operating the chiller
+4.2.1 Connecting the water hoses
+Before the chiller can be operated together with the user equipment, the water hoses must be
+connected correctly. Ensure that the hoses to be used, are designed to operate at the maximum
+pressure required by the unit. The water connections are located on the front panel of the
+chiller.
+Connect the water supply to the chiller. Please ensure that the connection points are not under
+any strain. If necessary, take steps to ensure that no strain on the connections can occur during
+operation of the chiller.
+Attention!
+Note the direction of flow when connecting the hoses:
+Blue label = water outlet chiller (OUT)
+Red label = water inlet chiller (IN)
+Bleeding tank
+Water outlet cabinet cooling Filling port
+ Water inlet cabinet cooling
+Water inlet (from user)
+RED
+Drainage hose
+Water outlet (to user)
+BLUE
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 9
+
+Version 1.7 P700
+4.2.2 Setting Up the Electrical Connections
+Connecting the Power Supply
+A electrical box has been fitted on to the right side of the chiller for the purpose of connecting
+the electrical power supply. Use a 16 A fuse in the power phase. When using an automatic cut
+out fuse (Charakteristic C) it is possible to use this as the power supply separator as long as
+this fulfills the requirements. The fuses must be designed for inductive loads!
+Sub-D-Interface 15 pol.
+to PCM
+power supply
+24 Volt DC
+power supply
+230V AC 50/60 Hz
+ )
+RS232 Interface
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 10
+
+Version 1.7 P700
+Interlock wirering for data transfer (SUB-D Connector)
+The 15 pin Sub-D connector for data transfer and interface is on a cable located on the right
+side of the chiller unit. Open circuit in error case.
+Maximum load of contacts 100mA/24V.
+Signal connector
+Pin Connections Signal Outputs
+Pin 1 Alarm high temperature
+Pin 2 Signal flow
+Pin 3 Chiller on
+Pin 4 GND
+Pin 5 +24 V DC remote start from customer
+Pin 6 NC
+Pin 7 Chiller on
+Pin 8 Warning water level
+Pin 9 NC
+Pin 10 Common GND
+Pin 11 Encoding 0
+Pin 12 Encoding 1
+Pin 13 Encoding 2
+Pin 14 Encoding 3
+Pin 15 NC
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 11
+
+Version 1.7 P700
+4.2.3 Getting ready to operate
+1. After connecting the power supply, water level alarm appears in the chiller controller display
+and the red LED lights.
+2. Fill the chiller with water using the filler pipe located on the front panel of the chiller until the
+error message water level warning appears (chap 6.3).
+3. Continue filling the chiller until no more water level error message appears. Confirm the
+message with the quit  key (Ø). The red LED switches off.
+4. If the maximum water level is reached, you can switch on the chiller by pressing the UP-button.
+If the chiller has the option remote start, it is has to be switched on via remote start.
+5. Sometimes the hose system of the laser must be filled. Therefore activate the filling mode in the
+2
+nd
+ programming level and fill the hose system via the filler pipe of the chiller (Chap 5.1.4).Start
+the chiller after you have activate the fill mode. The filling mode disables the water level control
+and activates the pump for a short period to fill the hose system in one process.
+Fill water in any event if you use the filling mode. Otherwise there is danger of dry
+running and damaging of the pump and is danger of damaging the chiller and laser!
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 12
+
+Version 1.7 P700
+4.3 Preparing the coolant water-feedback chiller for transport to the customer
+Since the chiller comprises of a large number of sensitive, electronic and mechanical
+components, keep to the following requirements and instructions before storing, installing or
+transporting the unit.
+4.3.1 Storage
+Should the expected storage time of the chiller exceed four weeks then the coolant water
+should be completely drained out of the unit. The chiller must be stored in a horizontal position.
+Ensure that the unit is protected from pollution and dampness. The following ambient conditions
+are necessary during storage:
+Temperature: +5°C to +65°C
+Relative humidity: 10  75%, no condensation
+4.3.2 Place of Operation
+• Do not install the chiller in an environment where other equipment is likely to cause a high
+ambient temperature. The chiller operates efficiently for ambient temperatures of up to 35°C.
+Above this temperature, the cooling capacity will not be maintained, as the refrigerant cannot be
+sufficiently cooled. An over-pressure switch protects the refrigerant circuit from pressure
+increases.
+• The chiller unit must be installed such that sufficient air circulation can be maintained. Ensure
+that the air inlet and outlets of the rack enclosure system are completely unrestricted during
+operation at a later date. A restriction of the air flow will have an adverse effect on the cooling
+capacity of the unit.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 13
+
+Version 1.7 P700
+4.3.3 Transport to the customer
+The chiller should be transported as carefully as possible, with a minimum of shock and
+vibration. Please take note of the following precautions:
+• The chiller must be completely drained before being transported.
+• The chiller must be kept upright during transport and may not be thrown.
+• Use only suitable packing materials - which absorb shock and vibration  in order to ensure
+that sensitive components inside the chiller are not damaged during transport. Ensure that
+the unit is protected from dust and other pollution. Also ensure that the chiller is packed to
+prevent damage from shock or being dropped.
+• Should the chiller be despatched individually, then use the original packing materials.
+• Ship the chiller only fixed on a pallet.
+• Before transportation, the packed unit should also be labelled: protect against moisture,
+Transport and store this way up, Fragile.
+Attention frost damage!
+Before transportation, the unit should be completely drained, otherwise there is a danger of
+r esidual coolant water freezing and causing damage inside the chiller.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 14
+
+Version 1.7 P700
+5. System description
+5.1 Set up and function
+The chiller is a compressor chiller with a closed coolant circuit. The chiller is a closed unit and
+has the following circuits:
+ Refrigerant circuit
+ Coolant water circuit
+ Air circuit
+ Electrical circuit
+5.1.1 Refrigerant circuit
+The refrigerant circuit is a closed system, inside which the refrigerant medium circulates.
+Within the refrigerant circuit, the compressor sucks gaseous refrigerant medium R 134a out of
+the evaporator and compresses it. The heat generated by the compressed refrigerant is
+transferred to the circulating air. During this compressing process the refrigerant changes from
+gas to fluid.
+The refrigerant fluid then passes through the dryer, which removes any residual moisture, and
+is finally injected into the coil (heat exchanger) in the tank, via an expansion valve (nozzle). The
+refrigerant evaporates at the reduced pressure, and takes the energy required for this process
+from the coolant water circuit. This results in the coolant water being cooled.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 15
+
+Version 1.7 P700
+5.1.2 Coolant water circuit
+The warm water flows into the chiller via the water inlet hose. A flow monitor, located directly
+after the water inlet point, monitors the flow in the water circuit. The water then flows on its way
+to the tank. This is where the heat is transferred to the refrigerant from the coolant water in the
+tank. The cooled water is then pumped out of the tank into the pump.
+The coolant water flows from the pump to the filter. The filter removes minute dirt particles out of
+the water. After passing through the filter, the coolant water flows out of the chiller via the chiller
+outlet hose.
+Over a bypass coolant water is used for cabinet cooling (PCM).
+Information!
+The filter should be changed at regular intervals. More detailed information can be found in the
+chapters for Service work and Replacing the filter.
+5.1.3 Air circulation
+The air surrounding the chiller provides the coolant air for the unit. The coolant air is sucked into
+the unit via the front. The air then cools the refrigerant as it passes through the condenser block
+before being blown out of the rear panel via the fan.
+Attention!
+Ensure that the air inlets and outlets are not obstructed and that air can circulate sufficiently to
+provide the necessary heat transfer.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 16
+
+Version 1.7 P700
+5.1.4 Electrical circuit
+The operational mode is indicated by lighting of the green LED. If a fault occurs, the red LED will
+light. It depends to the fault and the adjusted parameters whether the chiller discontinues
+operating. In this case, the green LED goes out. The beeper can be disabled by pressing the
+mute-button. The error messages are self-explanatory.
+errorr LED
+operational mode LED
+ESCAPE/set value
+LEFT/mute
+display
+ENTER/menu
+UP/on/off
+RIGHT/roll/info
+DOWN/quit
+Adjusting set value
+By pressing the escape-button, you can reach the set value display (1
+st
+programming level). By
+pressing the UP- and DOWN-button you can adjust the value of the digit, with the RIGHT- and
+DOWN-button you can choose the digit. The set value is affirmed by pressing the ENTER-
+button, you can cancel the input by pressing the ESCAPE-button.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 17
+
+Version 1.7 P700
+5.1.5 Electrical circuit
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 18
+
+Version 1.7 P700
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 19
+
+Version 1.7 P700
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 20
+
+Version 1.7 P700
+6. Maintenance work
+6.1 Safety notes
+Attention!
+• Service work must only be carried out by suitably qualified personel.
+• When carrying out any work on the chiller, ensure that the power supply is off. Switch the
+power supply off and ensure that it cannot be switched on accidentally.
+• Do not disable the security measures.
+Attention  poisonous, corrosive gases and liquids!
+Do not undertake any work on the refrigerant circuit, as poisonous, corrosive gases and liquids
+may leak out. Should a repair on the refrigerant circuit be necessary, contact a refrigerant
+engineer or your supplier.
+6.2 Replacing the water filter
+The filtering out of all particles >= 5 µm within the coolant water circuit will eventually lead to
+blockage of the filter. Once the filter has turned grey, it should be replaced. The maximum time
+of use of a filter should not exceed 6 months. The water quality must be checked at regular
+intervals (every 12 months). The water circuit should be drained and rinsed.
+The particle filter can be replaced once the circuit has been rinsed. The system can be drained
+and rinsed without removing any connections as follows:
+Drain the water out of the tank using the drainage hose in front of the chiller. Ventilate the tank
+by opening the tank bleeding.
+Refill the tank with clean water and let the pump run for approx. 10 minutes in order to rinse out
+the system hoses and connections. Repeat this process approx. 3 times. Check that the pump
+is running quietly. Should the pump become loud during operation, then it is likely that the
+pressure is too high  this can be caused through a bent hose preventing the water flow. Check
+for any water leakage around the seals and hoses. Now proceed to replace the particle filter:
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 21
+
+Version 1.7 P700
+Particle filter
+The particle filter is installed in the water outlet hose inside the chiller. The filter can be replaced
+as follows:
+• Switch the chiller off and disconnect from power supply.
+• Unscrew the filter dome and remove this by pulling downwards in order to reveal the
+inserted filter sleeve.
+Replace the old filter with a new one,
+• Clean the filter sleeve cap.
+• Screw the filter sleeve cap onto the upper portion. Check the seal for signs of damage
+when doing this.
+Water filter
+Attention!
+• Do not operate the chiller without the water filter.
+• After replacing the filter check that it is correctly fitted.
+• After replacing the filter check the tank, its mounts and the hoses for leaks.
+• Replace the filter at least every 6 months.
+.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 22
+
+Version 1.7 P700
+6.3 Refilling water
+The chiller indicates the water level with the water level display on the front panel. Should the
+water level fall below the minimum, then the aquivalant message will be displayed. Should the
+level fall further, below the minimum alarm level, then various components inside the chiller are
+switched off (pump, compressor, heating). This condition is indicated by a red LED and a
+corresponding message.
+To refill water, proceed as follows:
+1. Remove the caps from the filling port and from the tank bleed port.
+2. Gradually fill filtered (< 5 µm) water into the chiller via the filling port until the maximum
+level is displayed.
+Filling port
+Tank bleeding
+Filler and drainage hose
+3. Confirm the message with the quit  key (Ø). The red LED switches off.
+4. Screw the caps back onto the filler port and bleeding port.
+If the chiller has the option remote start, it is has to be switched on or to quit via remote
+start.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 23
+
+Version 1.7 P700
+6.4 Replacing the water
+In the following cases, it is necessary to drain the water out of or to replace the water in the
+chiller:
+- The chiller is to be despatched to another location
+- The chiller is to be put into long term storage
+Carry out the following steps to drain out the coolant water:
+1. Switch the chiller off and disconnect from the power supply.
+2. Remove the water hoses from the front panel of the chiller.
+3. Place a sufficiently large vessel beneath the chiller to collect the water.
+4. Turn down the drainage hose into the vessel.
+5. Remove the cap from the drainage port and the bleeding port.
+6. Allow the water to drain out of the drainage hose into the vessel.
+7. Continue until no more water drains out of the tank.
+8. Drain the filter cup as described at chapter 6.2. The filter cup must be completely drained
+at least to avoid damages through freezing water.
+9. Suck the water at the water outlet and inlet off.
+10. Reseal the drainage hose and turn it to the vertical position.
+11. Reseal the bleeding port.
+Filling port
+Tank bleeding
+Filler and drainage hose
+To refill, proceed as follows:
+1. Connect the hoses to the rear panel as described in chapter 4.2.1.
+2. Fill the chiller as described in chapter 4.2.3 and chapter 6.3.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 24
+
+Version 1.7 P700
+6.5 Coolant water circuit
+The condenser block should be checked for blockage with dirt or other foreign bodies at regular
+intervals. Since air is sucked in via the side panels, dirt tends to accumulate on the inside of the
+blocks. The condenser block can be cleaned as follows:
+• Switch the chiller off and disconnect from power supply.
+• Remove the side panels.
+• Blow the dirt out of the block by using compressed air. It may be necessary to use a solvent in
+order to remove any oil residue. Should the accumulated dirt be excessive, the fan can be
+removed to assist the cleaning. Clean the fan blades. Remove all dirt deposits from the fan
+housing.
+• Any work to be carried out on the refrigeration circuit should be undertaken by a refrigeration
+engineer!
+• The chiller is filled with the refrigerant R 134a. There is no danger as long as the refrigerant
+circuit does not leak. Should, however, a leak of refrigerant occur, there is a slight danger to
+personnel or environment. Please note the following precautions:
+• Do not inhale or consume any refrigerant residue, avoid skin and eye contact. Should
+refrigerant come into contact with the skin or eyes, then first allow it to evaporate and then
+rinse with water.
+• First aid measures are usually sufficient. How, should the contamination be considerable,
+then professional medical assistance is necessary. In this case the doctor should be informed
+that the contamination is caused through R134a.
+• The leakage of R134a is of slight danger to the environment. To prevent this happening,
+absorb and remove and refrigerant leakage and avoid any further leakage.
+• Ensure sufficient ventilation! Open all windows and doors!
+• The refrigerant circuit is protected with a high pressure switch. These switches will auto-reset
+after being activated provided the pressure has returned to normal.
+• The high pressure switch becomes active when the refrigerant circuit is overloaded, i.e. the
+refrigerant pressure is too high.
+•Should there be any queries, please contact the manufacturer:
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 25
+
+Version 1.7 P700
+7. Instructions for repair.
+7.1 Safety notes
+Attention!
+• Service work must only be carried out by suitably qualified personel.
+• When carrying out any work on the chiller, ensure that the power supply is off. Switch the
+power supply off and ensure that it cannot be switched on accidentally.
+• Do not disable the security measures.
+Attention  poisonous ,corrosive gases and liquids!
+Do not undertake any work on the refrigerant circuit, as poisonous, corrosive gases and liquids
+may leak out. Should a repair on the refrigerant circuit be necessary, contact a refrigerant
+engineer or your supplier.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 26
+
+Version 1.7 P700
+7.2 Repairs to the electrical circuit
+7.2.1 Replacing the fuses
+To replace one of the fuses, proceed as follows:
+1. Switch the chiller off.
+2. Loose the four fastening screws of the
+controller and take it carefully out
+3. Using a screwdriver, unscrew the cap of the defective fuse.
+4. Replace with a new fuse.
+Fuse type: 5x20mm
+F1: NC
+F2: Pump T6,3A
+F3: Hot gas valve T1A
+F4: NC
+F5: Fan T1,6A
+Attention!
+Use only fuses with the same trigger characteristic.
+Should the fuse trigger again, then it is possible that there is a serious defect within the
+chiller.
+•In this case, please contact the manufacturer.
+F1 F2 F3 F4 F5
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 27
+
+Version 1.7 P700
+8. Other
+8.1 Serial number
+The serial number is locatoed on the rear panel of the chiller. All important data for our service are
+marked grey on the sample.
+76532 Baden-Baden, Im Rollfeld
+Tel. 07221/9711-0
+Typ: P706-16628 AL-72385-A
+Cooling power: 1100 W ati 20 °C water/35 °C ambient
+Pumping power: 7l/min at ? bar
+Electrical consumption: 230V, 50/60 Hz, 7/8 A
+Refrigerant: R134a Max pressure: 18,5 Bar
+Serrial-Nr.: XXXXX year of construction: MM/2007
+8.2 Waste disposal instruction
+The chiller is constructed of several parts, which have to be disposed separately. The waste
+disposal must be professional and must be done on adequate places.
+The chiller can be divided into three parts.
+1. Electrical equipment/components/cables of all types will be deconstructed as far as possible
+and disposed afterwards. Electrical equipment/componets can be delivered to the recycling
+area or the electrical equipment deconstruction.
+2. Not disposal waste (synthetic materiel, insulating material, sheet metal compenents and so on)
+can be disposed via the dust bin respectively the recycling areas.
+3. The refrigeration circuit must be disposed following your local laws. The deconstruction of the
+refrigeration circuit may only be done by a refrigeration engineer.
+4. Contaminated cooling medium or cooling medium with additives may not reach the
+canalisation or waters. The cooling medium is classified as hasardous waste and is allowed to
+be disposed via authorised companies and recycling areas only.
+Attention!
+All waste must be disposed according to the local laws.
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 28
+
+Version 1.7 P700
+8.3 Not satisfied?
+We really regret this. We publiced a trouble shooting procedure at <<http://www.termotek-
+ag.com>>, category <<contact>> for download. If this procedure cannot help you, please contact
+your dealer. To facilitate please have the model number and serial number (located on rear of the
+chiller) of the unit.
+We are always anxious to improve our products and documentation. If you have a suggestion for
+improvement or you discover a fault, please give notice. Certainly we will be glad about a
+commendation too.
+You can communicate to us your constructive suggestions for improvement and ideas via phone
+(+49 (0)7221 9711-0), fax (+49 (0)7221 971-111) or email (info@termotek-ag.com).
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 29
+
+Version 1.7 P700
+8.4 CE-Declaration of conformity
+Phone: +49(0)7221/9711-0  Fax: +49(0)7221/9711-111Im Rollfeld 6
+76532Baden-Baden, Germany E-Mail: info@termotek-ag.com - www.termotek-ag.com 30

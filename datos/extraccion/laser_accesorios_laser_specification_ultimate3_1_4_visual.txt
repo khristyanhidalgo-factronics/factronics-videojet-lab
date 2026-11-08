@@ -1,0 +1,356 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\Specification_Ultimate3_1.4.pdf
+# cifrado=False bloques=10 caracteres=18314
+
+Ultimate 3
+TCL-Script Alltec AL
+Ultimate 3 Page 1/10
+Ultimate 3
+TCL-Script
+TCP / IP
+AL-SAR511392180-01
+Specification
+Version No.: 1.4
+Author: Andre Lindemann
+Telephone: ++49-38823-55-177
+Email: alindemann@alltec-laser.com
+Version Date: May.22.2013
+Copyright: ALLTEC GmbH. All Rights Reserved
+Compiled: Reviewed: Released Archiv-Nb.:
+on: 22.05.13 on: on: Version Nb.: 1.4
+Ultimate 3 TCL
+by: AL by: by:
+
+Ultimate 3
+TCL-Script Alltec AL
+Ultimate 3 Page 2/10
+Introduction....................................... ................................................... ................................................... .....................3
+1.1 Protocol........................................... ................................................... ................................................... ................3
+1.2 Contruction of Datastring.......................... ................................................... ................................................... ...3
+1.3 Command-Overview................................... ................................................... ................................................... ...4
+1.4 Command Details.................................... ................................................... ................................................... .......5
+1.4.1 Start;............................................. ................................................... ................................................... ............5
+1.4.2 Stop;.............................................. ................................................... ................................................... ...........5
+1.4.3 GetStatus;......................................... ................................................... ................................................... ........5
+1.4.4 GetVarNames;....................................... ................................................... ................................................... ..5
+1.4.5 GetVars;........................................... ................................................... ................................................... ........5
+1.4.6 GetVars;VarName1;VarName3;......................... ................................................... ........................................5
+1.4.7 SetVars;VarName1;VarValue;......................... ................................................... ...........................................5
+1.4.8 SetVarsSimple;VarValue;VarValue;................... ................................................... .......................................6
+1.4.9 GetJobNames;....................................... ................................................... ................................................... ...6
+1.4.10 GetJob;............................................ ................................................... ................................................... .........6
+1.4.11 SetJob;JobName;.................................... ................................................... ................................................... .6
+1.4.12 SetLayoutPosition;X;Y;............................. ................................................... .................................................6
+1.4.13 GetLayoutPosition;................................. ................................................... ................................................... .6
+1.4.14 SetRotation;Angle;................................. ................................................... ................................................... ..6
+1.4.15 GetRotation;....................................... ................................................... ................................................... ......6
+1.4.16 GetMessageID;...................................... ................................................... ................................................... ..7
+1.4.17 GetMessages;....................................... ................................................... ................................................... ....7
+1.4.18 ConfirmMessages;................................... ................................................... ................................................... 7
+1.4.19 GetRTC;............................................ ................................................... ................................................... .......7
+1.4.20 SetRTC;2012-01-31T15:00:15;........................ ................................................... ..........................................7
+1.4.21 SetVarPosition;VarName1;15.0;25.0;VarName2;25.0;30. 0;................................................. ........................7
+1.4.22 SetRepeat;Ser1;1;.................................. ................................................... ................................................... ...7
+1.4.23 SetRepeatSimple;1;2;............................... ................................................... ................................................... 7
+1
+1.4.24 SetIncrement;Ser1;1;............................... ................................................... ................................................... .7
+1.4.25 SetIncrementSimple;1;2;............................ ................................................... .................................................7
+1.4.26 SetDateOffset;Date1;2;Date3;1;..................... ................................................... ............................................8
+1.4.27 SetDateOffsetSimple;2;1;........................... ................................................... ................................................8
+1.4.28 SetDateUnit;Date1;Days;............................ ................................................... ................................................8
+1.4.29 SetDateUnitSimple;Days;Weeks;...................... ................................................... .........................................8
+1.4.30 SetIntensity;50;40;................................ ................................................... ................................................... ...8
+1.4.31 GetIntensity;...................................... ................................................... ................................................... .......8
+1.4.32 SetStartTriggerDelay;3000;......................... ................................................... ...............................................8
+1.4.33 SetStopTriggerDelay;3000;.......................... ................................................... ..............................................8
+1.4.34 SetConsecutiveTriggerDelay;3000;................... ................................................... .........................................8
+1.4.35 GetStartTriggerDelay;.............................. ................................................... ................................................... 8
+1.4.36 GetStopTriggerDelay;............................... ................................................... ..................................................9
+1.4.37 GetConsecutiveTriggerDelay;........................ ................................................... ............................................9
+1.4.38 SetMarkSpeed;3000;................................. ................................................... ..................................................9
+1.4.39 GetMarkSpeed;...................................... ................................................... ................................................... ..9
+2 Deliverables....................................... ................................................... ................................................... ....................10
+2.1 Prerequisites...................................... ................................................... ................................................... ...........10
+3 Wiring............................................. ................................................... ................................................... .......................10
+4 Delivery Period.................................... ................................................... ................................................... ..................10
+Compiled: Reviewed: Released Archiv-Nb.:
+on: 22.05.13 on: on: Version Nb.: 1.4
+Ultimate 3 TCL
+by: AL by: by:
+
+Ultimate 3
+TCL-Script Alltec AL
+Ultimate 3 Page 3/10
+1 Introduction
+Basic TCL Script for Alltec Lasers
+1.1 Protocol
+- TCP / IP
+- Server / Client Applikation
+- Laser = Server
+- Customer Network device = Client
+- Port 20001
+- Datastring must be UTF8-Characters
+- End of Datastring must be CR,LF (0x0D,0x0A)
+1.2 Contruction of Datastring
+- Command: Command;Arguments;[CR][LF]
+- Answer good: [ACK];ResultCode;Arguments;[CR][LF]
+- Answer bad: [NAK];ResultCode;[CR][LF]
+- Command Text is not case sensitive
+- ResultCode is 0000 if everything works correctly
+Compiled: Reviewed: Released Archiv-Nb.:
+on: 22.05.13 on: on: Version Nb.: 1.4
+Ultimate 3 TCL
+by: AL by: by:
+
+Ultimate 3
+TCL-Script Alltec AL
+Ultimate 3 Page 4/10
+Sent Received
+Start;[CR][LF] [ACK];0000;[CR][LF]
+Stop;[CR][LF] [ACK];0000;[CR][LF]
+GetStatus;[CR][LF] [ACK];0000;Laserstatus;[CR][LF]
+GetVarNames;[CR][LF] [ACK];0000;VarName1;VarName2;[ CR][LF]
+GetVars;[CR][LF] [ACK];0000;VarName1=abc;VarName2=d ef;[CR][LF]
+GetVars;VarName1;[CR][LF] [ACK];0000;VarName1=abc;[ CR][LF]
+SetVars;VarName1;123;[CR][LF] [ACK];0000;[CR][LF]
+SetVarsSimple;123;456;789;[CR][LF] [ACK];0000;[CR][ LF]
+GetJob;[CR][LF] [ACK];0000;JobName;[CR][LF]
+SetJob;JobName;[CR][LF] [ACK];0000;[CR][LF]
+SetLayoutPosition;40000;40000;[CR][LF] [ACK];0000;[ CR][LF]
+GetLayoutPosition;[CR][LF] [ACK];0000;40000;40000;[ CR][LF]
+SetRotation;45.5;[CR][LF] [ACK];0000;[CR][LF]
+GetRotation;[CR][LF] [ACK];0000;45.5;[CR][LF]
+GetMessageID;[CR][LF] [ACK];0000;ID1;ID2;ID3;[CR][L F]
+GetMessages;[CR][LF] [ACK];0000;Message 1;Message 2 ;Message 3;[CR][LF]
+ConfirmMessages;[CR][LF] [ACK];0000;[CR][LF]
+GetRTC;[CR][LF] [ACK];0000;2012-01-30T15:00:15;[CR] [LF]
+SetRTC;2012-01-30T15:00:15;[CR][LF] [ACK];0000;[CR] [LF]
+SetVarPosition;VarName1;15.0;25.0;[CR][LF] [ACK];00 00;[CR][LF]
+SetRepeat;Ser1;1;[CR][LF] [ACK];0000;[CR][LF]
+SetRepeatSimple;1;2;[CR][LF] [ACK];0000;[CR][LF]
+SetIncrement;Ser1;1;[CR][LF] [ACK];0000;[CR][LF]
+SetIncrementSimple;1;2;[CR][LF] [ACK];0000;[CR][LF]
+SetDateOffset;Date1;2;[CR][LF] [ACK];0000;[CR][LF]
+1.3 Command-Overview SetDateOffsetSimple;1;2;[CR][LF] [ACK];0000;[CR][LF ]
+SetDateUnit;Date1;Days;[CR][LF] [ACK];0000;[CR][LF]
+SetDateUnitSimple;Days;Years;[CR][LF] [ACK];0000;[C R][LF]
+SetIntensity;50;[CR][LF] [ACK];0000;[CR][LF]
+GetIntensity;[CR][LF] [ACK];0000;50;[CR][LF]
+SetStartTriggerDelay;3000;[CR][LF] [ACK];0000;[CR][ LF]
+SetStopTriggerDelay;3000;[CR][LF] [ACK];0000;[CR][L F]
+SetConsecutiveTriggerDelay;3000;[CR][LF] [ACK];0000 ;[CR][LF]
+GetStartTriggerDelay;[CR][LF] [ACK];0000;3000;[CR][ LF]
+GetStopTriggerDelay;[CR][LF] [ACK];0000;3000;[CR][L F]
+GetConsecutiveTriggerDelay;[CR][LF] [ACK];0000;3000 ;[CR][LF]
+SetMarkSpeed;3000;[CR][LF] [ACK];0000;[CR][LF]
+GetMarkSpeed;[CR][LF] [ACK];0000;3000;[CR][LF]
+Compiled: Reviewed: Released Archiv-Nb.:
+on: 22.05.13 on: on: Version Nb.: 1.4
+Ultimate 3 TCL
+by: AL by: by:
+
+Ultimate 3
+TCL-Script Alltec AL
+Ultimate 3 Page 5/10
+1.4 Command Details
+1.4.1 Start;
+Starts the laser process
+- Answer: [ACK];0000;
+1.4.2 Stop;
+Stops the laser process
+- Answer: [ACK];0000;
+1.4.3 GetStatus;
+Returns the current Laser status
+- Answer: [ACK];0000;LaserStatus;
+1.4.4 GetVarNames;
+Returns all Variablenames used in the active Templa te
+- Answer: [ACK];0000;VarName1;VarName2;VarName3;
+Additional Information:
+- Return arguments may include Prompt, Serialnumber s, Date and Time variables
+1.4.5 GetVars;
+Returns all variables used in the active template a nd their values
+- Answer: [ACK];0000;VarName1=VarValue1;VarName2=Va rValue2;VarName3=VarName3;
+Additional Information:
+- Return arguments may include Prompt, Serialnumber s, Date and Time variables
+1.4.6 GetVars;VarName1;VarName3;
+Returns the values of the named variables
+- Answer: [ACK];0000;VarName1=VarValue1;VarName3=Va rName3;
+Additional Information:
+- Return arguments may include Prompt, Serialnumber s, Date and Time variables
+1.4.7 SetVars;VarName1;VarValue;
+Sets the value of the given variable
+- Answer: [ACK];0000;
+Additional Information:
+- Arguments may include Prompt and Serialnumbers va riables
+- SmartGraph/LinxDraw/FobaDraw does not update its screen when variables change in a template list
+Compiled: Reviewed: Released Archiv-Nb.:
+on: 22.05.13 on: on: Version Nb.: 1.4
+Ultimate 3 TCL
+by: AL by: by:
+
+Ultimate 3
+TCL-Script Alltec AL
+Ultimate 3 Page 6/10
+1.4.8 SetVarsSimple;VarValue;VarValue;
+Sets the values of variables without reference name s (Variables have to be Var1, Var2, Var3 and so on)
+- Answer: [ACK];0000;
+Additional Information:
+- Arguments may include Prompt and Serialnumbers va riables
+1.4.9 GetJobNames;
+Returns the names of the templates stored in the da tabase
+- Answer: [ACK];0000;Template1;Template2;Template3;
+1.4.10 GetJob;
+Return the name of the current template
+If current template is part of a template-list, Job Name Parameter is lead by TL:
+- Answer: [ACK];0000;JobName;
+or
+- Answer: [ACK];0000;TL:JobName;
+1.4.11 SetJob;JobName;
+Sets the current template or template-list
+- Answer: [ACK];0000;
+1.4.12 SetLayoutPosition;X;Y;
+Set the position of the layout
+- Answer: [ACK];0000;
+Additional Information:
+- Argument Datatype Integer Value 10000 = Offse t 1 mm
+1.4.13 GetLayoutPosition;
+Gets the position of the layout
+- Answer: [ACK];0000;40000;40000;
+Additional Information:
+- Return values Datatype Integer Value 10000 = Offset 1 mm
+1.4.14 SetRotation;Angle;
+Set the rotation of the layout
+- Answer: [ACK];0000;
+Additional Information:
+- Arguments:
+Datatype Integer Value 45 = Rotation 45
+Or Datatype Double Value 45.0 = Rotation 45.0
+1.4.15 GetRotation;
+Compiled: Reviewed: Released Archiv-Nb.: Gets the rotation of the layout
+- Answer: [ACK];0000;45.5;[CR][LF]
+on: 22.05.13 on: on: Version Nb.: 1.4
+Ultimate 3 TCL
+by: AL by: by:
+
+Ultimate 3
+TCL-Script Alltec AL
+Ultimate 3 Page 7/10
+1.4.16 GetMessageID;
+Returns the list of un-acknowledged Message IDs
+- Answer: [ACK];0000;3000;5000;40100;
+1.4.17 GetMessages;
+Returns the list of un-acknowledged Messages
+- Answer: [ACK];0000;Message 1;Message 2;Message 3;
+1.4.18 ConfirmMessages;
+Confirms every un-acknowledged Message
+- Answer: [ACK];0000;
+1.4.19 GetRTC;
+Returns the lasers current Real Time Clock Value
+- Answer: [ACK];0000;2012-01-30T15:00:15;
+1.4.20 SetRTC;2012-01-31T15:00:15;
+Sets the lasers current Real Time Clock Value
+- Answer: [ACK];0000;
+1.4.21 SetVarPosition;VarName1;15.0;25.0;VarName2;2 5.0;30.0;
+Sets the x and y position of named Variables
+- Answer: [ACK];0000;
+1.4.22 SetRepeat;Ser1;1;
+Sets the repeating of single increment steps of the named variables
+- Answer: [ACK];0000;
+1.4.23 SetRepeatSimple;1;2;
+Sets the repeating of single increment steps withou t reference names
+(Variables have to be Ser1, Ser2, Ser3 and so on)
+- Answer: [ACK];0000;
+1.4.24 SetIncrement;Ser1;1;
+Sets the increment step range of the named variable s
+- Answer: [ACK];0000;
+1.4.25 SetIncrementSimple;1;2;
+Sets the increment step range without reference nam es
+(Variables have to be Ser1, Ser2, Ser3 and so on)
+- Answer: [ACK];0000;
+Compiled: Reviewed: Released Archiv-Nb.:
+on: 22.05.13 on: on: Version Nb.: 1.4
+Ultimate 3 TCL
+by: AL by: by:
+
+Ultimate 3
+TCL-Script Alltec AL
+Ultimate 3 Page 8/10
+1.4.26 SetDateOffset;Date1;2;Date3;1;
+Sets the date offset of the named variables
+- Answer: [ACK];0000;
+1.4.27 SetDateOffsetSimple;2;1;
+Sets the date offset without reference names
+(Variables have to be Date1, Date2, Date3 and so on )
+- Answer: [ACK];0000;
+1.4.28 SetDateUnit;Date1;Days;
+Sets the date unit of the named variables
+- Answer: [ACK];0000;
+Additional Information:
+- allowed Arguments: Days; Weeks; Months; Years;
+1.4.29 SetDateUnitSimple;Days;Weeks;
+Sets the date unit without reference names
+(Variables have to be Date1, Date2, Date3 and so on )
+- Answer: [ACK];0000;
+1.4.30 SetIntensity;50;40;
+Sets the marking intensity of the active parameter set
+(Indices have to be Index1, Index2, Index3 and so o n)
+- Answer [ACK];0000;
+1.4.31 GetIntensity;
+Returns the marking intensities of the active param eter set
+(Indices have to be Index1, Index2, Index3 and so o n)
+- Answer [ACK];0000;50;40;
+1.4.32 SetStartTriggerDelay;3000;
+Sets the start trigger delay to the active productr egistration
+- Answer [ACK];0000;
+1.4.33 SetStopTriggerDelay;3000;
+Sets the stop trigger delay to the active productre gistration
+- Answer [ACK];0000;
+1.4.34 SetConsecutiveTriggerDelay;3000;
+Sets the consecutive trigger delay to the active pr oductregistration
+- Answer [ACK];0000;
+Compiled: Reviewed: Released Archiv-Nb.:
+1.4.35 GetStartTriggerDelay;
+Returns the start trigger delay of the active produ ctregistration
+on: 22.05.13 on: on: Version Nb.: 1.4
+Ultimate 3 TCL
+by: AL by: by:
+
+Ultimate 3
+TCL-Script Alltec AL
+Ultimate 3 Page 9/10
+- Answer [ACK];0000;
+1.4.36 GetStopTriggerDelay;
+Returns the start trigger delay of the active produ ctregistration
+- Answer [ACK];0000;
+1.4.37 GetConsecutiveTriggerDelay;
+Returns the consecutive trigger delay of the active productregistration
+- Answer [ACK];0000;
+1.4.38 SetMarkSpeed;3000;
+Sets the marking speed of the active parameter set
+- Answer [ACK];0000;
+1.4.39 GetMarkSpeed;
+Returns the marking speed of the active parameter s et
+- Answer [ACK];0000;3000;
+Compiled: Reviewed: Released Archiv-Nb.:
+on: 22.05.13 on: on: Version Nb.: 1.4
+Ultimate 3 TCL
+by: AL by: by:
+
+Ultimate 3
+TCL-Script Alltec AL
+Ultimate 3 Page 10/10
+2 Deliverables
+Alltec will deliver the following items:
+1) Software system as described above
+ 2) Sample template.
+3) Installation instructions in English as necessar y
+2.1 Prerequisites
+Templates with appropriate variable names and struc ture.
+ QMARK Version <= 6.9.3.1, but not 6.8.0 !
+3 Wiring
+No special wiring required.
+4 Delivery Period
+Alltec delivers the solution within four week after order entry.
+Compiled: Reviewed: Released Archiv-Nb.:
+on: 22.05.13 on: on: Version Nb.: 1.4
+Ultimate 3 TCL
+by: AL by: by:

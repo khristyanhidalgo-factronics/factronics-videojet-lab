@@ -1,0 +1,136 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Port\14038-E 3236 Erro de Posicao do Carro 6330, 6530 (Port)_v2.pdf
+# cifrado=False bloques=5 caracteres=9868
+
+27/12/2022 12:20 Knowledge Article
+6330/6530 – Erro de posição do carro do
+cabeçote de impressão (E3236)
+I n f o r m a t i o n
+H e a d e r
+V i d e o j e t T e c h n o l o g i e s , I n c . K n o w l e d g e A r t i c l e
+R e l a t e d E s c a l a t i o n
+C o n t e n t
+6 3 3 0 / 6 5 3 0 – E r r o d e p o s i ç ã o d o c a r r o d o c a b e ç o t e d e i m p r e s s ã o ( E 3 2 3 6 )
+A impressora confirma um Erro de Posição do Carro do Cabeçote de Impressão (E3236).
+I n t e r n a l C o m m e n t s
+https://videojet.my .salesforce.com/articles/pt_BR/Knowledge/6330-6530-Printhead-Carriage-Position-Error-E3236/p 1 /5
+S o l u t i o n / W o r k a r o u n d
+S o l u ção
+Entre em contato com a V ideojet para agendar os reparos necessários
+Os clientes que resolvem problemas de seus equipamentos não devem tentar fazer reparos sozinhos. Se a sua
+impressora precisar de reparos, entre em contato com o suporte técnico da V ideojet para agendar a manutenção pelo
+telefone (877)947-2289.
+1 . Certifique-se de que a folga do cabeçote de impressão não exceda 5 mm . Lembre-se de que, ao tentar testar a
+impressão em uma bancada, o cabeçote de impressão precisa entrar em contato com uma superfície de
+impressão, pois precisa medir a folga do cabeçote de impressão. Se não sentir nada e descer muito (maior que
+5 mm) você sempre terá essa falha.
+2 . Certifique-se de que a folga do cabeçote de impressão não seja inferior a 1 mm . Se estiver muito próximo da
+superfície de impressão, isso pode arrastar e fazer com que o cabeçote de impressão não se desloque
+livremente. Isso é especialmente verdadeiro em aplicações intermitentes. Esta impressora suporta uma folga
+entre 1 e 5 mm, com 2 mm sendo a configuração de folga ideal.
+3 . Se esta for uma aplicação contínua, certifique-se de que a posição de impressão esteja correta sobre o rolo de
+impressão.
+Posição de impressão para aplicações contínuas
+Embora o suporte técnico TT O normalmente recomende que o cabeçote de impressão esteja o mais próximo
+possível do centro do rolo, há aplicações nas quais pode ser necessário imprimir em um local diferente no rolo.
+O suporte técnico da TT O descobriu que, em aplicações lentas, o cabeçote de impressão pode
+precisar estar a alguns mm do centro do rolo de impressão.
+Se dissermos que a configuração de 50.00 mm era o centro do rolo, então diminuir o valor moveria o
+cabeçote de impressão na frente do rolo.
+O suporte técnico da TT O também descobriu que, em aplicações (mais) rápidas, o cabeçote de
+impressão pode precisar estar posicionado ligeiramente atrás do centro do rolo.
+Se dissermos que a configuração de 50.00 mm era o centro do rolo, então aumentar o valor moveria o
+cabeçote de impressão na frente do rolo.
+Uma configuração incorreta da posição de impressão pode causar a falha.
+4 . V erifique se o carro está emperrado:
+1 . DESLIGUE a impressora.
+2 . Remova o cassete e deslize o carro para frente e para trás. Ele terá um pouco de resistência, mas a
+maior parte deve se mover livre de obstruções, detritos ou emperramentos.
+3 . Se houver uma ligeira ligação, tente limpar a lâmina linear soprando-a com ar comprimido seco. V ocê
+também pode lubrificar a lâmina usando o kit de lubrificação de lâminas lineares VJ (PN: 4021 13).
+
+27/12/2022 12:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/pt_BR/Knowledge/6330-6530-Printhead-Carriage-Position-Error-E3236/p 2 /5
+5 . Inspecione o eixo do rolo de tração e o conjunto do braço de tração, certificando-se de que não estejam
+dobrados, pois isso pode impedir que o cabeçote de impressão desça desobstruído. Abaixo está uma imagem
+de um conjunto correto do braço de tração paralelo ao conjunto do carro. Substitua se estiver dobrado. Nota: O
+texto abaixo se aplica a impressoras com números de série anteriores a 182401 1002TZH. O design foi
+alterado depois disso.
+6 . Inspecione a totalidade das correias quanto a desgaste ou danos físicos, garantindo que você preste muita
+atenção à seção da correia ao redor das braçadeiras. Correias desgastadas/danificadas na área da braçadeira
+podem/farão com que o carro escorregue, o que pode/aumentará a falha. Substitua conforme necessário.
+Abaixo está uma imagem do desgaste/dano extremo da correia na área da braçadeira.
+7 . Certifique-se de que todos os ímãs na montagem do cabeçote de impressão e no conjunto de pivô do cabeçote
+de impressão estejam no lugar e não estejam soltos ou danificados/quebrados.
+8 . Inspecione a braçadeira da correia do cabeçote de impressão de 2 peças e a braçadeira da correia do carro
+para garantir que estejam totalmente presas e niveladas umas com as outras. A braçadeira é fixada com 2
+parafusos Phillips. Uma correia em uma braçadeira solta pode fazer com que a correia escorregue e
+potencialmente cause a falha.
+
+27/12/2022 12:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/pt_BR/Knowledge/6330-6530-Printhead-Carriage-Position-Error-E3236/p 3 /5
+Figura 1: Uma braçadeira de correia cujos parafusos de fixação são semi-soltos (superior) vs. uma braçadeira
+de correia cujos parafusos de fixação são apertados (inferior).
+9 . Certifique-se de que não haja obstruções impedindo que o cabeçote de impressão atinja a posição
+inicial/estacionado, como parafusos soltos (Figura 2) ou cavilhas (Figura 3).
+Figura 2: Um parafuso solto na caixa de luz impede que o cabeçote de impressão estacione.
+Figura 3: Um pino de cavilha solto impede que o cabeçote de impressão estacione.
+
+27/12/2022 12:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/pt_BR/Knowledge/6330-6530-Printhead-Carriage-Position-Error-E3236/p 4 /5
+10 . Se ouvir um ruído de esmerilhamento ou se o carro de transporte não se mover livremente pela corrediça,
+inspecione as polias e certifique-se de que não haja danos físicos ou que elas estejam presas. Se estiver preso,
+substitua as polias.
+1 1 . Se você ouvir um ruído de esmerilhamento e as polias estiverem bem, inspecione as conexões do motor do
+cabeçote de impressão na PCB principal, certificando-se de que os conectores na PCB principal estejam
+totalmente encaixados e também que as conexões nos motores estejam conectadas aos conectores corretos na
+PCB principal. As conexões do motor precisam ser conectadas aos conectores na placa de circuito impresso
+principal mais próxima dos motores (consulte a Figura 4). DICA: O motor que tem o encoder nele sempre é
+conectado ao X27.
+Ruídos de moagem não relacionados à configuração manual
+Nas impressoras TT O anteriores, um ruído de esmerilhamento seguido pela falha poderia ser causado pela mão
+da impressora sendo definida incorretamente. Com o 6330/6530, a mão é automaticamente definida/detectada
+pelo PCB do cabeçote de impressão. V ocê pode verificar se está correto acessando Ferramentas | Diagnóstico |
+Cabeçote de impressão | Geral.
+Figura 4: Conexões corretas do motor do cabeçote de impressão e do codificador do cabeçote de impressão.
+12 . Investigar se a falha ocorreu imediatamente após a fita acabar . É possível que essa falha ocorra se o condutor
+da fita se soltar do núcleo da fita quando o carretel terminar . O líder pode, então, 'colar' e puxar o cabeçote de
+impressão, o que pode gerar a falha. No entanto, neste caso, não há impacto negativo real porque quando a fita
+é substituída e a falha de "Fim de Bobina" é removida, a "Falha de posição de transporte do cabeçote de
+impressão" também pode ser removida.
+13 . Se esta for uma aplicação intermitente, certifique-se de que o filme esteja totalmente parado em todos os
+momentos durante a impressão. Se o substrato começar a avançar à medida que a impressora ainda estiver
+imprimindo, o substrato pode puxar o cabeçote de impressão, o que poderia então gerar a falha.
+14 . Se todas as opções acima estiverem corretas, a próxima opção é tensionar a correia. Isso só deve ser realizado
+pelo pessoal de serviço da VJ.
+Siga as instruções de tensionamento detalhadas em Instruções de substituição do conjunto da polia
+louca e da correia.PDF
+V ocê precisará da ferramenta de serviço de tensão da correia V ideojet.
+15 . Se toda a verificação anterior estiver correta e o retesamento da correia não resolver o problema, pode ser um
+motor de cabeçote de impressão com defeito com sensor de codificador (impressoras de 32 mm/53 mm/107
+mm) ou pode ser um motor de carro com defeito com sensor de codificador (impressora de 107 mm). Essas
+peças costumam ser muito confiáveis e você só deve tentar a substituição se estiver absolutamente
+certo que nada mais listado aqui causa o problema.
+R o o t C a u s e
+T r i a g e N e x t S t e p s - Inspect linear slide for debris. Clean as necessary .
+- With power of f, slide the printhead carriage back and forth and ensure it is smooth with no binding.
+- Inspect idler pulleys for debris/wear/bearing seizure.
+- Ensure proper motor connections on main pcb.
+- Ensure the printhead gap does not exceed 5mm.
+T r i a g e - 407932 Spare 53mm TT(iii) Idler Pulley Assy
+R e c o m m e n d e d P a r t s
+
+27/12/2022 12:20 Knowledge Article
+https://videojet.my .salesforce.com/articles/pt_BR/Knowledge/6330-6530-Printhead-Carriage-Position-Error-E3236/p 5 /5
+D i s c l a i m e r
+The contents ofthis em ailand any attachm ents are provided as a convenience to Videojetcustom ers to highlightusefulinform ation and troubleshooting tips.W hen working with a product,always consultthe productuser
+m anualand follow the productsafety precautions and recom m endations,including using PersonalProtective Equipm entw hen necessary.Ifyou have any questions orare notexperienced in using orservicing Videojet
+equipm ent,contactVideojetforassistance.
+E s c a l a t i o n C a s e i s
+C l o s e d
+T i t l e 6330/6530 – Erro de posição do carro do cabeçote de impressão (E3236)
+U R L N a m e 6330-6530-Printhead-Carriage-Position-Error-E3236
+I n t e r n a l D a t a
+R e p o r t e d ?
+R e p o r t e d t o
+w h o m ?
+W h e n r e p o r t e d ?

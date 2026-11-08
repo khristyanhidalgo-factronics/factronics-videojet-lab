@@ -1,0 +1,327 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\3640 Spare Parts List_2021-09.pdf
+# cifrado=False bloques=17 caracteres=21876
+
+Updated Part
+Number P/N Description
+Umbilical
+AL-74939 PLASTIC DUST CAP,50POL,SOCKET Red cap for umbilical connector; umbilical side
+AL-74940 PLASTIC DUST CAP,50POL,PIN CONNECTOR Red cap for umbilical connector; laser head side
+AL-SP76037 UMBILICAL,SU<->LH,L=3m 3140/3340/3640
+AL-SP76038 UMBILICAL,SU<->LH,L=5m 3140/3340/3640
+AL-SP76039 UMBILICAL,SU<->LH,L=10m 3140/3340/3640
+Boards
+Multi-Core Chameleon with connector for optional MIC board. Requires CMark v. 4.x.
+Main control board 3140/3340/3640. Kit only because it contains instructions. Use this
+AL-SP78900 BOARD,PCBA,CPU,CHAMELEON,MCIP unless can't upgrade because SAR CMark or pharma customer.
+Use AL-SP78900
+now AL-SP78052 KIT, UPGRADE, CHAMELEON, MC, TU4X0 Multi-Core Chameleon. Discontinued. Use Chameleon MCIP now.
+Single Core Chameleon. Uses CMark v. 3.x Main control board 3140/3340/3640. Use
+AL-SP77290 BOARD,PCBA,CPU,CHAMELEON,PASSIVE COOLED for SAR CMark customer or pharma (only use when can't upgrade to Multi-Core.)
+FO-111645 KIT,RECEPTACLES,BOARD,CPU,CHAMELEON Replacement connector set for Customer Interface
+FO-SP113952 FO-SP112922 PCBA,MARKING HEAD INTERFACE,HIC_CP 3140/3340/3640
+FO-SP111129 PCBA,LASER INTERFACE,LIC_CO2 3140/3340/3640
+AL-SP77292 Board,PCB,FSPC Fan Speed Control Board - 3640 only!!
+AL-SP76436 BOARD,PCB,SPM_16A Basic safety board - 3640 only!!
+AL-SP76930 BOARD,PCB,SPM_16A w. FASS Optional safety board; must also use FASS with this -- 3640 only!!
+FO-SP109119 SAFETY CONTROL,FASS,V1.0 Use with CPD3 or SPM-16a-FASS - 3140/3340/3640
+MIC board for EtherNet/IP functionality. Requires Chameleon MCIP and Cmark v. 4.5
+KIT, RATING, MODUL, HMS, ETHERNET IP
+AL-SP79426 or newer.
+MIC board for PROFINET functionality. Requires Chameleon MCIP and Cmark v. 4.5 or
+KIT, RATING, MODUL, HMS, PROFINET
+AL-SP79384 newer.
+For CP-Light board see Marking Head section
+Supply Unit Parts
+AL-77042 HARNESS,SUPPLY UNIT,60W,INTERNAL Power supply harness - 3640 only
+AL-76032 HARNESS,KEYPAD AND KEYSWITCH 3140/3340/3640
+AL-76062 MEMBRANE KEYBOARD,VIDEOJET,3x40 3140/3340/3640
+AL-76116 HARNESS,BACK PANEL,VIDEOJET,VJ3x40 Quick Connector Plate for 3140/3340/3640
+AL-76013 POWER SUPPLY,2000W/48V Laser Power Supply -- 3640 only!!!
+AL-SP79451 AL-76157 POWER SUPPLY,240W/48V Electronics power supply - 3140/3340/3640 (kit includes parts to upgrade if have old style PSU)
+AL-76148 PLUG,D=6mm cap for potentiometer opening on supply unit (3140/3340/3640)
+AL-77049 KEY SWITCH,IP65 3140/3340/3640
+AL-79722 AL-76074 FAN,24V,80X80X38MM Cooling fan for supply unit (changed to FAN, AXIAL, 60x60x25mm, 24V )
+#Confidential - Company Proprietary
+
+AL-75215 FUSE SET 3140/3340/3640
+AL-77272 FILTER MAT,G3,FAN,80x80mm 3140/3340/3640 (filter for fans on supply unit)
+AL-75998 EXHAUST FILTER,80x80mm,BLACK 3140/3340/3640. Filter and black plastic grate that covers filter
+AL-SP77273 Exchange Battery f. Chamaleon Board 3140/3340/3640
+FO-SP108770 SD-Card with CMark Software Version x.x.x 3140/3340/3640
+Laser Head Parts
+AL-77043 HARNESS,LASER HEAD,60W,INTERNAL Harness from back of laser head to tube and CP-Light board -- 3640 only
+AL-SP78043 HOSE,SILICONE,DI=30,L=90 Connect laser tube to beam expander; prevents dust -- 3640 only!!!
+AL-SP77395 LASER TUBE,60W,9.3,ALIGNED 3640 only!!
+AL-R77395 Refurbished, tube, laser, 60W, 9.3μm, Aligned For warranty replacement only!!
+AL-SP77390 LASER TUBE,60W,10.2,ALIGNED 3640 only!!
+AL-R77390 Refurbished, tube, laser, 60W, 10.2um, Aligned For warranty replacement only!!
+AL-SP76340 LASER TUBE,60W,10.6,ALIGNED 3640 only!!
+AL-R76340 Refurbished, tube, laser, 10.6μm, Aligned For warranty replacement only!!
+AL-SP77780 FAN,120MM,READY TO MOUNT 3640 only!!
+AL-SP77810 BEAM EXPANDER,V=2.0, HP 3640 only!!
+AL-SP77815 BEAM EXPANDER,V=3.0,HP 3640 only!!
+AL-SP76559 BEAM EXPANDER,V=3.6,HP 3640 only!!
+AL-SP76025 BEAM EXPANDER,V=5.0 3140/3340/3640
+Marking Head Parts
+Very important to identify which generation the marking head is!!! SHC60 and SHC100 have "c" and "d" versions. See notes before giving out any galvo/CP-Light/Marking head cable part numbers.
+AL-68908 Mirror d=15,9mm s=1,5 Si [RoHS] 3140/3340/3640
+AL-68926 RING,GROOVED,50x40x7,NBR 878,[RoHS] 3140/3340/3640
+AL-68948 MIRROR CO2 d=19,1 s=3,1 Si [RoHS] 3140/3340/3640
+AL-SP77264 LED,24 V,RED 3140/3340/3640
+3640 only!!! Includes CP-Light board and galvo block for SHC 60c (not for 3x20/3x30).
+AL-SP77826 See notes BLOCK,GALVO,X/Y-MIRROR W. GALVO,CP-LIGHT, SHC60c Not for SHC60d!!! Please verify before ordering.
+3640 only!!! Includes CP-Light board and galvo block for SHC 100c (not for 3x20/3x30).
+AL-SP78127 See notes BLOCK,GALVO,X/Y-MIRROR W. GALVO,CP-LIGHT, SHC100c Not for SHC100d!!! Please verify before ordering.
+AL-SP78128 BLOCK,GALVO,X/Y-MIRROR W. GALVO,CP-LIGHT,SHC120c 3640 only!!!
+AL-SP76092 BLOCK,GALVO,X/Y-MIRROR W. GALVO,CP-LIGHT,SHC150c 3640 only!!!
+3640 only!!! Includes CP-Light2 board and galvo block for SHC100d. Not for SHC100c!!!
+AL-SP78648 See notes GALVO BLOCK SHC100D HP, GALVOS, CP-LIGHT2 Please verify before ordering.
+3640 only!!! Includes CP-Light2 board and galvo block for SHC 60d (not for 3x20/3x30).
+AL-SP78652 See notes GALVO BLOCK SHC60D , GALVOS, CP-LIGHT2 Not for SHC60c!! Please verify before ordering.
+#Confidential - Company Proprietary
+
+Marking Head Cables
+Very important to identify which generation the marking head is!!! SHC60 and SHC100 have "c" and "d" versions. See notes before giving out any galvo/CP-Light/Marking head cable part numbers.
+SHC 100c/120c cable from CP-Light to galvos (3140/3340/3640). Must identify if
+marking head is SHC100c or SHC100d!!! Not interchangeable. Works for all SHC120
+AL-SP70261 See notes CABLE,MARKING HEAD,PRE-ASSY,TYPE B (SHC100/120) generations.
+SHC 100c/120c cable from CP-Light to galvos (3140/3340/3640). Must identify if
+marking head is SHC100c or SHC100d!!! Not interchangeable. Works for all SHC120
+AL-SP70262 See notes CABLE,MARKING HEAD,PRE-ASSY,TYPE B, L=220MM generations.
+SHC 100c/120c cable from CP-Light to galvos (3140/3340/3640). Must identify if
+marking head is SHC100c or SHC100d!!! Not interchangeable. Works for all SHC120
+AL-SP70263 See notes CABLE,MARKING HEAD,PRE-ASSY,TYPE B, L=320MM generations.
+SHC 100c/120c cable from CP-Light to galvos (3140/3340/3640). Must identify if
+marking head is SHC100c or SHC100d!!! Not interchangeable. Works for all SHC120
+AL-SP70267 See notes CABLE,MARKING HEAD,PRE-ASSY,TYPE B, L=160MM generations.
+AL-SP76107 CABLE,MARKING HEAD,PRE-ASSY,TYPE C SHC 150c only (3340/3640); cable from CP-Light to galvos
+AL-SP76108 CABLE,MARKING HEAD,PRE-ASSY,TYPE C, L=160mm SHC 150c only (3340/3640); cable from CP-Light to galvos
+AL-SP76109 CABLE,MARKING HEAD,PRE-ASSY,TYPE C, L=320mm SHC 150c only (3340/3640); cable from CP-Light to galvos
+AL-SP76110 CABLE,MARKING HEAD,PRE-ASSY,TYPE C, L=460mm SHC 150c only (3340/3640); cable from CP-Light to galvos
+SHC 60c only (3140/3340/3640) ; cable from CP-Light to galvos (new cable; not for
+3x20/3x30). Must identify if marking head is SHC60c or SHC60d!!! Not
+AL-SP76111 See notes CABLE,MARKING HEAD,PRE-ASSY,TYPE D interchangeable.
+SHC 60c only (3140/3340/3640) ; cable from CP-Light to galvos (new cable; not for
+3x20/3x30). Must identify if marking head is SHC60c or SHC60d!!! Not
+AL-SP76112 See notes CABLE,MARKING HEAD,PRE-ASSY,TYPE D, L=190MM interchangeable.
+SHC 60c only (3140/3340/3640) ; cable from CP-Light to galvos (new cable; not for
+3x20/3x30). Must identify if marking head is SHC60c or SHC60d!!! Not
+AL-SP76113 See notes CABLE,MARKING HEAD,PRE-ASSY,TYPE D, L=450mm interchangeable.
+SHC 60c only (3140/3340/3640) ; cable from CP-Light to galvos (new cable; not for
+3x20/3x30). Must identify if marking head is SHC60c or SHC60d!!! Not
+AL-SP76121 See notes CABLE,MARKING HEAD,PRE-ASSY,TYPE D, L=350MM interchangeable.
+SHC 60 d only (3140/3340/3640) ; cable from CP-Light to galvos (new cable; not for
+3x20/3x30). Must identify if marking head is SHC60c or SHC60d!!! Not
+AL-SP78135 See notes CABLE,MARKING HEAD,PRE-ASSY,TYPE E interchangeable.
+SHC 60 d only (3140/3340/3640) ; cable from CP-Light to galvos (new cable; not for
+3x20/3x30). Must identify if marking head is SHC60c or SHC60d!!! Not
+AL-SP78136 See notes CABLE,MARKING HEAD,PRE-ASSY,TYPE E, L=190MM interchangeable.
+SHC 60 d only (3140/3340/3640) ; cable from CP-Light to galvos (new cable; not for
+3x20/3x30). Must identify if marking head is SHC60c or SHC60d!!! Not
+AL-SP78137 See notes CABLE,MARKING HEAD,PRE-ASSY,TYPE E, L=350MM interchangeable.
+SHC 60 d only (3140/3340/3640) ; cable from CP-Light to galvos (new cable; not for
+3x20/3x30). Must identify if marking head is SHC60c or SHC60d!!! Not
+AL-SP78138 See notes CABLE,MARKING HEAD,PRE-ASSY,TYPE E, L=450MM interchangeable.
+SHC100d only (3140/3340/3640) ; cable from CP-Light to galvos (not for 3x20/3x30).
+AL-SP78515 See notes CABLE,MARKING HEAD,PRE-ASSY,TYPE G Must identify if marking head is SHC100c or SHC100d!! Not interchangeable.
+#Confidential - Company Proprietary
+
+SHC100d only (3140/3340/3640) ; cable from CP-Light to galvos (not for 3x20/3x30).
+AL-SP78516 See notes CABLE,MARKING HEAD,PRE-ASSY,TYPE G, L=160mm Must identify if marking head is SHC100c or SHC100d!! Not interchangeable.
+SHC100d only (3140/3340/3640) ; cable from CP-Light to galvos (not for 3x20/3x30).
+AL-SP78517 See notes CABLE,MARKING HEAD,PRE-ASSY,TYPE G, L=230mm Must identify if marking head is SHC100c or SHC100d!! Not interchangeable.
+SHC100d only (3140/3340/3640) ; cable from CP-Light to galvos (not for 3x20/3x30).
+AL-SP78518 See notes CABLE,MARKING HEAD,PRE-ASSY,TYPE G, L=320mm Must identify if marking head is SHC100c or SHC100d!! Not interchangeable.
+BTU parts
+AL-SP68986 TURNING MIRROR BODY-TYPE B BTU part
+AL-SP68987 BUSH,CENTERING,BTU BTU part (cylinder inside collar meeting point)
+AL-SP68988 DISK,SEALING BTU part (teflon gasket)
+AL-SP69245 TURNING MIRROR BODY-CLAMP BTU Part
+O-Rings
+AL-03352 O-RING,72x2,NBR,75 SHORE Fits inside SHC100/120 lens holder; larger of 2 O-rings in there
+AL-62513 O-RING,15x2.5,NBR,70 SHORE [RoHS] Small O-ring between laser head and marking head on SHC60/100/120
+O-ring between laser head and marking head on SHC60C when head is straight shooter
+AL-62873 O-Ring 24x2 Vi500 80 Shore [RoHS] (0 degree) output AL-62355
+Larger diameter O-ring between laser head and marking head (also a smaller diameter
+AL-68954 O-RING 30x2 NBR 75 SHORE[RoHS] O-ring)
+AL-74701 O-RING,103x2,NBR,70 SHORE [RoHS] O-ring on SHC60 marking head cover
+AL-74706 O-RING, 140 x 2, NBR, 70 SHORE, SHC 100/ O-ring on SHC100 & 120 marking head cover
+AL-93159 O-RING,37x2,NBR,70 SHORE [RoHS] O-ring on final lens for SHC60 head.
+AL-75996 GASKET,COVER,SHC150c O-Ring between halves of marking head cover
+AL-76354 O-RING,18x2.5,NBR,70 SHORE [P583] Small O-ring between laser head and marking head on SHC150 head
+AL-10464 O-Ring behind red LED on marking head O-Ring behind red LED on marking head
+Lenses
+AL-68945 HOLDER,LENS,SHC F=100/150/500/600 For SHC 100/120/150 heads (only focal distances listed!!)
+AL-68946 THRUST RING,LENS,SHC100/120 [RoHS] Part of lens holder for SHC100/120/150
+AL-69226 HOLDER,LENS,SHC F=200/300//351/400 For SHC 100/120/150 (only focal distances listed!!)
+AL-SP68985 MOUNT,BAYONET,FOCUSSING LENS SHC 60 lens holder
+Lens holder with positive air inputs for SHC100/120 heads with focal distances 200 mm
+AL-SP71766 Compressed Air Supply SHC100/120 F>200 or less
+AL-SP72094 Compressed Air Supply SHC60 Lens holder with positive air inputs for SHC60 head
+Lens holder with positive air inputs for SHC100/120 heads with focal distances of
+AL-SP72565 Compressed Air Supply SHC100/120 F=100/150 100/150 mm
+AL-74849 FOCUSFINDER, SMALL, F=64MM SHC60 marking head only
+AL-74850 FOCUSFINDER, SMALL, F=95MM SHC60 marking head only
+#Confidential - Company Proprietary
+
+AL-74851 FOCUSFINDER, SMALL, F=127MM SHC60 marking head only
+AL-74852 FOCUSFINDER, SMALL, F=190MM SHC60 marking head only
+AL-74853 FOCUSFINDER, SMALL, F=254MM SHC60 marking head only
+AL-74854 FOCUSFINDER,100MM SHC100/120 marking heads only
+AL-74855 FOCUSFINDER,150MM SHC100/120 marking heads only
+AL-74856 FOCUSFINDER,200MM SHC100/120 marking heads only
+AL-74857 FOCUSFINDER,300MM SHC100/120 marking heads only
+AL-74858 FOCUSFINDER,351MM SHC100/120 marking heads only
+AL-74859 FOCUSFINDER,400MM SHC100/120 marking heads only (not for SHC150)
+AL-SP78112 FOCUSFINDER,LARGE,F=100mm SHC150 marking head only
+AL-SP78113 FOCUSFINDER,LARGE,F=150mm SHC150 marking head only
+AL-SP78114 FOCUSFINDER,LARGE,F=200mm SHC150 marking head only
+AL-SP78115 FOCUSFINDER,LARGE,F=300mm SHC150 marking head only
+AL-SP78116 FOCUSFINDER,LARGE,F=351mm SHC150 marking head only
+AL-SP76367 FOCUSFINDER,LARGE,F=400mm SHC150 marking head only
+AL-SP76368 FOCUSFINDER,LARGE,F=500mm SHC150 marking head only
+AL-SP76369 FOCUSFINDER,LARGE,F=600mm SHC150 marking head only
+AL-SP77842 LENS,F-THETA,MEN.,ZNSE,BBAR,F=63mm,D=38.1mm SHC 60c (does not include lens holder)
+AL-SP77843 LENS,F-THETA,MEN.,ZNSE,BBAR,F=95.2mm,D=38.1mm SHC 60c (does not include lens holder)
+AL-SP77844 LENS,F-THETA,MEN.,ZNSE,BBAR,F=125.9mm,D=38.1mm SHC 60c (does not include lens holder)
+AL-SP77845 LENS,F-THETA,MEN.,ZNSE,BBAR,F=190.2mm,D=38.1mm SHC 60c (does not include lens holder)
+AL-SP77846 LENS,F-THETA,MEN.,ZNSE,BBAR,F=254mm,D=38.1mm SHC 60c (does not include lens holder)
+AL-SP77836 LENS,F-THETA,MEN.,ZNSE,BBAR,F=100mm,D=48mm SCH 100c/120c (does not include lens holder)
+AL-SP77837 LENS,F-THETA,MEN.,ZNSE,BBAR,F=150mm,D=48mm SCH 100c/120c (does not include lens holder)
+AL-SP77838 LENS,F-THETA,MEN.,ZNSE,BBAR,F=200mm,D=48mm SCH 100c/120c (does not include lens holder)
+AL-SP77839 LENS,F-THETA,MEN.,ZNSE,BBAR,F=300mm,D=48mm SCH 100c/120c (does not include lens holder)
+AL-SP77840 LENS,F-THETA,MEN.,ZNSE,BBAR,F=351mm,D=48mm SCH 100c/120c (does not include lens holder)
+AL-SP77841 LENS,F-THETA,MEN.,ZNSE,BBAR,F=400mm,D=48mm SCH 100c/120c/150c (does not include lens holder)
+AL-SP76005 LENS,F-THETA,MEN.,ZNSE,FL=500MM,D=48MM SHC 150 only (does not include lens holder)
+AL-SP76006 LENS,F-THETA,MEN.,ZNSE,FL=600MM,D=48MM SHC 150 only (does not include lens holder)
+Power Cords
+AL-77280 CABLE,MAINS,OPEN END,CO2-LASER G4 Power cord --free ends
+AL-77281 CABLE,MAINS,EU,CO2-LASER G4 Power cord EU
+AL-77282 CABLE,MAINS,US,CO2-LASER G4 Power cord US
+AL-77283 CABLE,MAINS,CN,CO2-LASER G4 Power cord Canada
+AL-77284 CABLE,MAINS,JP,CO2-LASER G4 Power cord Japan
+AL-77285 CABLE,MAINS,UK,CO2-LASER G4 Power cord UK
+Accessories
+Blocks/absorbs laser beam; used in enclosures or to prevent marking table when
+213524 CARBON BLOCK,6 X 12 X .25 THICK,FOCUS servicing laser
+Includes 4 sheets polycarbonate, carbon block, and single pole switch. If double pole
+375265 KIT, SHIELD, BEAM switch need order XXXXXX too
+#Confidential - Company Proprietary
+
+AL-SP68940 PILOT LASER,ASSY Optional access; installed inside marking head and shows where mark will appear.
+Ubiquity AirGateway wifi adapter and AC power cords (all regions included). For VRS or
+AL-78968 KIT, UPGRADE, LASER, WIFI ACCESS for TCS+ access (requires Multi-Core Chameleon to access TC S+)
+Connector Plates - Customer Interface
+Quick Connector plate; Chameleon to Quick Connectors (no jumpers or mounting
+AL-76116 HARNESS,BACK PANEL,VIDEOJET,VJ3x40 screws)
+Quick Connector plate kit; Includes connector plate with DIN style connectors, jumper
+KIT,FIELD UPGRADE,QUICK CONNECTOR,CUSTOMER INTERFACE I/O
+AL-78773 plugs for fume extractor and interlock, and mounting screws
+AL-78772 KIT,FIELD UPGRADE,CUSTOMER INTERFACE I/O,IP65 Cable Gland Plate; includes frame, blocks, and mounting screws
+KIT,FIELD UPGRADE,CUSTOMER INTERFACE I/O,TYPE 3 Standard connector plate (hybrid DIN & pass thru); includes plate with PD & ENC DIN
+AL-78771 style connectors and 2 pass-thru ports for any other cables; includes mounting screws
+Handheld and Touchscreens
+AL-SP69036 HANDHELD,G55,TYP1 Handheld controller with no cable
+AL-76122 CABLE,CONNECTION,HANDHELD Handheld cable only (detachable) 8 pin connector
+AL-75478 LABEL DETACHMENT f. G55 CONTROL PANEL Sticker for handheld cable that says not to twist
+AL-77335 TOUCHUS,VIDEOJET,TU420H,L=5m TouchUS controller (Windows PC inside). Requires 8 pole connector on supply unit.
+TU430 touchscreeen includes cable. Needs AL-SP78053 port on supply unit (if not
+already installed) and only works with Multi-Core Chameleon board!! No Windows PC
+AL-78550 CONTROL UNIT, TOUCH UI, TU430, VIDEOJET inside touchscreen. Only works with TCS+.
+Includes Multi-Core Chameleon, harness and port for TU430, and TU430 touchscreen
+AL-SP78970 KIT, FIELD UPGRADE, CONTROL UNIT, TOUCH UI, TU430, VIDEOJET monitor.
+AL-SP76040 HARNESS, CONTROL UNIT, TU4X0 Replacement cable for TU430 touchscreen monitor. Connect touchscreen to laser.
+FO-SP111576 BOARD, CHAMTOUCH, TU4X0 Driver board inside TU430. Not the display screen!!! Display is not replaceable.
+AL-SP73984 CAP, USB PORT Black rubber cap for USB port on TU430.
+AL-77513 SEALING, PLUG, GPN 350-25 Cap for rear of supply unit HDMI port.
+Ports for G55 and TouchUS
+Internal harness to connect G55 handheld or TouchUS panel pc (includes supply unit
+AL-SP76397 KIT,RATING,CONNECTOR 8-pole connector and harness to Chameleon)
+Internal harness for second Ethernet port (includes supply unit connector and harness to
+AL-SP76398 KIT,RATING,CONNECTOR RJ45 Chameleon)
+HDMI port for rear of 3x40 supply unit and internal cable that connect port to
+AL-SP78053 KIT, CONNECTING, CONTROL UNIT, TU4X0 Chameleon. For connecting TU430 on 3x40.
+Product Detectors
+AL-74971 Detector EZ-Pro Proximity Fiber (PNP-234211) For models with quick connector plate; Has pinned connector on it.
+AL-74972 Detector EZ-Pro Proximity Fiber (PNP-234212) For models with quick connector plate; Has pinned connector on it.
+#Confidential - Company Proprietary
+
+AL-74976 Detector Retro Smart for clear materials (PNP version of 234215) For models with quick connector plate; Has pinned connector on it.
+Encoders
+AL-75217 12 inch circular wheel
+AL-75218 12 inch circular wheel with replaceable ring
+AL-75219 3600 PPR encoder kit (encoder, w/ 25ft cable)
+AL-75481 Spring bracket lateral adjustment
+AL-75482 Spring bracket Standard
+AL-75216 Replaceable ring for 377529
+Quick Connector Plate Access
+AL-75987 CABLE PASSAGE,IP65 Cable gland block set with frame (replacement cable gland blocks)
+AL-74477 COVER, D SUB 9 IP65 RS--232 cover on models with quick connectors
+For models with quick connector plate where desired photo eye does not have connector
+AL-SP75006 3 WAY DIN PLUG WITH CABLE on it.
+For models with quick connector plate where desired encoder does not have connector
+AL-SP74977 4 WAY DIN connector with cable on it.
+For models with quick connector panel; can be used as either jumper or connector
+AL-76119 FUME EXTRACTOR,JUMPER PLUG,CO2-LASER G3 (includes small allen key)
+For models with quick connector plate; use with beacons that do not have pinned
+AL-77271 Male Plug 6pin connector already installed
+For models with quick connector plate to connect Interlock/Shutterlock switches. Can be
+AL-SP75007 7 WAY DIN PLUG WITH CABLE used with AL-76726 double pole magnetic switch
+AL-74722 Door/ Interlock Jumperplug (7 pin) Jumper for models with quick connector plate (Interlock/Shutterlock)
+AL-62195 Cap for cable gland - quick disconnct option Cover for cable gland on the quick connector plate option
+Fume Extractor Hoses
+AL-SP70628 Hose, D=32mm L=5m,incl. screw clamping ring
+AL-SP72871 Hose, D=75mm L=5m, incl. screw clamping ring
+AL-SP72872 Hose, D=75mm L=3m, incl. screw clamping ring
+AL-SP72873 Hose, D=50mm L=5m, incl. screw clamping ring
+Conversion Kits
+AL-SP72281 KIT,CONVERSION,BUS,SHC100/120,VJA300,90° Includes marking head cables for both SHC100c/SH120c and SHC100d marking heads.
+AL-SP72283 KIT,CONVERSION,BTU,200 MM,SHC100/120,VJA300,90° Includes marking head cables for both SHC100c/SH120c and SHC100d marking heads.
+AL-SP72285 KIT,CONVERSION,BTU,300 MM,SHC100/120,VJA300,90° Includes marking head cables for both SHC100c/SH120c and SHC100d marking heads.
+AL-SP76361 KIT,RATING,SHC150c,STRAIGHT Use existing marking head cable for conversion.
+AL-SP76420 KIT,RATING,SHC100c/120c,STRAIGHT Use existing marking head cable for conversion.
+AL-SP76520 KIT,CONVERSION,BUS,SHC60c,30W,90° Includes marking head cables for both SHC60c and SHC60d marking heads.
+AL-SP76526 KIT,CONVERSION,BTU,200 MM,SHC60c,30W,90° Includes marking head cables for both SHC60c and SHC60d marking heads.
+#Confidential - Company Proprietary
+
+AL-SP76528 KIT,CONVERSION,BTU,300 MM,SHC60c,30W,90° Includes marking head cables for both SHC60c and SHC60d marking heads.
+AL-SP76532 KIT,CONVERSION,BUS,SHC150c,30W,90° Includes marking head cable
+AL-SP76534 KIT,CONVERSION,BTU,200 MM,SHC150c,30W,90° Includes marking head cable
+AL-SP76536 KIT,CONVERSION,BTU,300 MM,SHC150c,30W,90° Includes marking head cable
+Requires additional marking head cable. Does not include cable. Use eithe r AL-SP76112
+AL-SP78129 RATING KIT, SHC60, HP, STRAIGHT if SHC60C marking head o r AL-SP78136 if SHC60D marking head
+#Confidential - Company Proprietary
+
+#Confidential - Company Proprietary
+
+#Confidential - Company Proprietary
+
+#Confidential - Company Proprietary
+
+O-ring for variable focus module on SHC100/120 heads (if
+equipped with variable focus module)
+#Confidential - Company Proprietary
+
+#Confidential - Company Proprietary
+
+#Confidential - Company Proprietary
+
+#Confidential - Company Proprietary
+
+QUUU????9++++222?01Y%#".5##".'##".5463323>332q0%$00""0/%$06-.B0 "
+&4
+S@23222i@&&-e&ehh???99?/3/99//9901%#".''#"&&67&&66327>32?+18 5$->>7/61,39e0$L#+$
+I!IL??9?01Y#".'.54>327>32'C65C&1%
+""#$R##"x50#/5
+
+}~X++???99?01Y#".'#"&&67&>32>32
+{|X++????9?01Y%#".7##".'##".7663323>332 !+i' %-hw|"
+&0LlJ
+X++?++?99++?+?+?9999+01Y#".'&&54>3232>54.54>32&&54>3232##32>32#".54>7#"&54>3376654&#"#".#">5P]O57gZ/SC0"7R=7O44OO5,?LV/,4e`d
+ */8R8e}~+!+;ToE/*77T9ZU
+ */8R8e}~+!+3 3<UoC/*77T9ZU
+?dFnJ{Z2Q]9hS:A^p:OvO
+>0 `g<_''?0!,2<H3c],32!4c^z
+i &'$DwgWH;70 "
+F3-Oh;GR#
+1J4!#J+1H/W!E+-$5#-_O2%;L

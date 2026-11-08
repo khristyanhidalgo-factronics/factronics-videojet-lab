@@ -1,0 +1,545 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\AL-69472-AB Manual Handheld Alltec ENG.pdf
+# cifrado=False bloques=33 caracteres=38755
+
+Operating Instructions
+Handheld
+Version 1.x
+Keep for future use!Strictly follow the safety instructions!
+CE
+• Date: February 2006 • Part No.: AL-69472 • Index: AB
+
+MAQ$Q6n`d'@_ofmbAtOo{~alySnwJs]P28>>@BT@?>=<;:9876543210/.-,+*
+[&XK|8[7?jW>L|?@4I
+
+Table of Contents
+1 The Handheld..............................................................1
+1.1 Switch-On and Switch-Off....................................1.2 Control of the Handheld............................1...................................................................1
+1.3 Basic Operation....................................................1.4 Use of the IME.............................................3................................................................4
+1.5 System States of the Laser System...............1.6 Used Symbols....................................................5................................................................6
+1.7 User Levels and Passwords...........................1.8 Home Screen.....................................................7................................................................8
+2 User Level »Operator«................................................9
+3 User Level »Technician«...........................................11
+3.1 Main Menu.....................................................................................12
+3.1.1 Messages......................................................................................................12
+3.1.1.1 Variable Types.....................................................................................................13
+3.1.2 Parameters...........................................................3.1.3 Product Registration.........................................................17....................................................................18
+3.1.4 System Settings...............................................3.1.5 Alert History......................................................................20.........................................................................20
+4 User Level »Administrator«.......................................21
+4.1 Main Menu.....................................................................................22
+4.1.1 Parameters...........................................................4.1.2 Product Registration.........................................................22....................................................................24
+4.1.3 System Settings...............................................4.1.4 Alert History......................................................................26.........................................................................27
+02/06 - Rev. AB i
+
+Table of Contents
+ii 02/06 - Rev. AB
+
+Chapter 1The Handheld
+1 The Handheld
+The handheld is a device for comfortably operating the laser system without using a PC.
+1.1 Switch-On and Switch-Off
+The handheld needs no batteries, voltage is supplied via an interface in the supply unit of thelaser system. As soon as the handheld is connected it is switched on and ready for operation.
+In order to switch off the device just disconnect it from the supply unit.
+1.2 Control of the Handheld
+NoteThe marking process is not affected by disconnecting the handheld.
+The display of the handheld consists of three basic parts:
+system state
+Laser Ready
+1234567890ABCDEFGH
+display field
+Active Message: Test1
+Active Alerts
+Adjust Marking
+function bar
+02/06 - Rev. AB 1
+
+Chapter 1The Handheld
+The selection of menus and input of data is carried out via the keyboard of the handheld:
+1Selection of the functions shown in the function bar of the display.
+2Input of alphabetic characters
+3Input of numeric characters (if NUM is active)
+4ArrowsINS Navigation within the menusChange between modes "insert" and "overwrite" of data input
+ESCHOME/END Escape, current entry is left without any changesCursor is positioned at beginning or end of the line
+DELENTER Delete, characters are removedSelection or confirmation of current entry
+5NUM If active (green LED is on):Input of numeric characters
+SPACEIME Input of blank characters (no LED)Input of characters not available on the keyboard (Input Method
+CAPS Editor, see page4)Input of capital letters
+1
+2
+3
+5 4
+2 02/06 - Rev. AB
+
+Chapter 1The Handheld
+1.3 Basic Operation
+You want to...Key
+Move within the menuArrows UP/DOWN
+Select a menuENTERor: RIGHT arrow (depending on user level and menu structure)
+Edit a selected itemENTERor: RIGHT arrow (depending on user level and menu structure)
+Leave an editable itemENTER (confirming changes)ESC (without changes)
+Leave the menu (go back)Select »Return«, then ENTERor: arrow LEFT
+Go to the home screenPress F1
+Save changes to theworking memoryWhen prompted "Apply changes?" (e.g. when leaving a menu)confirm with »Accept« (F5).
+Note: If power is lost after this, the changes will be lost.
+Save changes to thepermanent memoryGo to the home screen (F1) and press ENTER on the entry»Save Database«.
+The following symbols are displayed in all menus:
+Indication of the cursor position.
+This arrow (up or down) indicates that there are more entries than can be displayed inthe display field. Scroll with arrow UP/DOWN to see all entries.
+02/06 - Rev. AB 3
+
+Chapter 1The Handheld
+1.4 Use of the IME
+To enter characters not available on the keyboard of the handheld, the used. The type of IME is set by user leveInput Method Editorl Administrator, see System Settings on page26. is
+If you want to insert characters proceed as follows:
+1.Select the entry to be edited.
+2.Activate key »IME« (green LED is on).
+3.Press key ».«
+4.The IME appears above the function bar:
+5.Position the cursor on the desired character using the arrows LEFT/RIGHT and insert thecharacter by pressing ENTER. You can also page through the list of characters using the
+arrows UP/DOWN.
+6.If you need more characters of the IME, press ».« again and repeat step 5.
+current cursor position
+total number of characters
+current character
+4 02/06 - Rev. AB
+
+Chapter 1The Handheld
+1.5 System States of the Laser System
+In the header of the handheld display the current laser system state is shown. There are thefollowing system states:
+System StateDescription
+InitializeThe control components of the laser system are started.
+Key-switch openThe initialisation is complete. The system can now be started byclosing the key-switch.
+Laser start-upAfter closing the key-switch the laser and the cooling system areactivated.
+Laser readyThe laser system is ready for marking.
+Prepare for markingAfter pressing »START« the laser requires a sort preparation timethat depends on the message contents and the configuration.
+MarkingThe current marking content is marked onto the product.
+Laser radiation is emitted! Make sure that the safety instructions are observed.
+StandbyIf no marking is carried out for some time the laser switches tostandby in order to relieve the system components.
+Interlock openThe safety circuit is interrupted (e.g. protective door open). Amarking process is stopped immediately. Marking is only possible
+with closed safety circuit.
+ErrorAn error occurred. To continue operation the error must becleared. Go to »Active Alerts« on the home screen for more
+details and to clear the error.
+Fatal errorA fatal error occurred and has deactivated the system. The opera-tion cannot continue. The laser system has to be turned off. Go to
+»Active Alerts« on the home screen for more details.
+Service modeThis system state enables service and maintenance work andmust only be used by especially trained personnel.
+02/06 - Rev. AB 5
+
+Chapter 1The Handheld
+1.6 Used Symbols
+LoginGo to the login dialog to change the user level.
+HomeGo to the home screen.
+StartStart marking the active message with laser.
+StopStop the marking process.
+NewCreate a new element (message contents, parameters, product registration, etc.).
+CopyGenerate a copy of the selected element.
+DeleteRemove the selected element.
+HelpDisplay of useful information.
+AcceptConfirm process or prompt. Changes are saved to the working memory. To save
+them permanently select »Save Database« on the home screen.
+CancelAbort process.
+Insert VariableInsert a variable into the text.
+Edit VariableEdit the inserted variable.
+6 02/06 - Rev. AB
+
+Chapter 1The Handheld
+1.7 User Levels and Passwords
+For operating the laser system via the handheld different user levels have been defined. Theavailable functions depend on the user level of the entered password.
+Upon delivery there are no preset passwords. For the basic user level is required. In order to define the passwords for user level Operator no passwordTechnician and Administrator go
+to »Main Menu -> System Settings -> Passwords« and enter the desired passwords. Pleasemake sure that the passwords are given to qualified operation and service personnel only.
+On the following pages each user level and its functions are described separately.
+LevelAvailable functions
+OperatorStart and stop marking of the active message.
+Adjust marking (e.g. position, variable offset, laser power).
+Select other messages (if existing).
+If there are any active alerts: the list of alerts can be displayed, alerts can be deleted.
+If there are any changes: the database can be saved.
+TechnicianAll functions of level Operator.
+Creation and editing of simple messages.
+Creation and editing of product registrations.
+Display the alert history, clear alerts.
+Set date and time of the system.
+AdministratorCreation and editing of product registrations.
+Creation and editing of parameters.
+Modification of system settings including marking head settings, unit of measurement, language, IME.
+Network configuration of handheld.
+02/06 - Rev. AB 7
+
+Chapter 1The Handheld
+1.8 Home Screen
+When the handheld is connected, the home screen is displayed. Below the system state youcan see a preview of the active message contents.
+NoteYou can return to the home screen from any other page by pressing F1.
+Depending on the current user level the home screen can consist of different entries as de-scribed on the following pages.
+On the home screen the following functions are available:
+F1Login as different user. See section User Levels and Passwords on page7.
+F3Start the marking process of the active message.
+F4Stop an ongoing marking process.
+F5Display of help information.
+System State
+1234567890ABCDEFGH
+Active Message: Test1
+Active Alerts
+Adjust Marking
+8 02/06 - Rev. AB
+
+Chapter 2User Level »Operator«
+2 User Level »Operator«
+The home screen contains the following entries:
+Active AlertsThis entry is only displayed if there been cleared. In the display you can see the error code, date and timeare system errors that have not
+of occurrence. F5 »?« will display the error code.actual error string for the specific
+Error codes deleted from this list are still kept in the alert history. For access to the alert history user level Technician or higher is
+required.
+Save DatabaseThis entry is only displayed if there have been changes. Select thisentry and press ENTER to save the database to the permanent mem-
+ory.
+Active MessageDisplay of the currently selected message contents. Pressing ENTERyou can select a different message if there are several messages in the
+database.
+Only the active message can be marked with the laser.
+Adjust MarkingThe following values of the active message can be adjusted:
+Set variablesIf the message contains variables you can e.g. define an offset,
+change units or reset the start value.
+RotationThe message will be rotated by this value in the marking field.
+XY OffsetThe position of the message in the marking field is shifted.
+Laser PowerIncrease or decrease the laser power. This value is changed in the
+parameter set used for the active message and therefore applies to all messages using the same parameter set.
+10/05 - Rev. 1.0 9
+
+User Level »Operator«Chapter 2
+10 10/05 - Rev. 1.0
+
+Chapter 3User Level »Technician«
+3 User Level »Technician«
+The home screen contains the following entries:
+Active AlertsThis entry is only displayed if there been cleared. In the display you can see the error code, date and timeare system errors that have not
+of occurrence. F5 »?« will display the error code.actual error string for the specific
+Error codes deleted from this list are still kept in the alert history(see page20)!
+Save DatabaseThis entry is only displayed if there have been changes. Select thisentry and press ENTER to save the database to the permanent mem-
+ory.
+Active MessageDisplay of the currently selected message contents. Pressing ENTERyou can select a different message if there are several messages in the
+database or you can directly go to the menu for editing the messagepressing RIGHT arrow.
+Adjust MarkingThe following values of the active message can be adjusted:
+Set variablesIf the message contains variables you can e.g. define an offset,
+change units or reset the start value.
+RotationThe message will be rotated by this value in the marking field.
+XY OffsetThe position of the message in the marking field is shifted.
+Laser PowerIncrease or decrease the laser power. This value is changed in the
+parameter set used for the active message and therefore applies to all messages using the same parameter set.
+Marking SpeedChange the speed of movement of the laser beam when marking the
+product. This value is changed in the parameter set used for the ac-tive message and therefore applies to all messages using the same
+parameter set.
+Product RegistrationSelect the product registration for marking the message.
+Main MenuA detailed description can be found in the following section.
+02/06 - Rev. AB 11
+
+User Level »Technician«Chapter 3
+3.1 Main Menu
+The main menu contains the following entries
+3.1.1 MessagesHere you can create a new message (F2), copy an existing one (F3) or delete a message (F4).
+It is not possible to delete the active message!
+Select the message to be edited. The following menu appears:
+Edit TextThe text line(s) of the message can be edited, a variable can be inserted(F2), an existing variable can be edited (F3). To exit the dialog confirm with
+F5.
+The following variables are available:Date, time, serial number, shift code, external text. For a detailed descrip-
+tion of the variable settings see page13.
+NameEdit the name of the message.
+ProductRegistrationWith ENTER a different registration (if existing) can be selected, withRIGHT arrow the menu »Product Registration« is opened (see below).
+ParametersThis entry is only displayed if there is more than one parameter set avail-System Stateable.
+Main MenuMessagesWith ENTER a different parameter set can be selected, with RIGHT arrowthe menu »Parameters« is opened (see below).
+ParametersProduct RegistrationsX/Y-ScaleThe X and Y dimension of the message can be scaled independently.
+System Settings AdvancedSetupCharacter SpacingDefinition of the distance between characters.
+Alert HistoryReturn Line Spacing
+Definition of the distance between lines.
+Text Line AttributesDefinition of text alignment, font and character height.
+12 02/06 - Rev. AB
+
+Chapter 3User Level »Technician«
+3.1.1.1 Variable TypesA variable can be inserted (F2), an existing variable can be edited (F3). To exit the dialog con-
+firm with F5.
+The following variables are available: date, time, serial number, shift code and external text.
+Variable »Date«
+Insert a date field into the message. This adds the current system date to the message. Youcan also define an offset to the current system date.
+NameName of the date field.
+PreviewDisplay the current date in the selected date format.
+Offset UnitsChoose from days, weeks, months or years for the offset value.
+OffsetEnter a positive or negative offset of the current date. The offset can beused to mark a best-before date on your product. Enter the desired
+numeric value for the defined »Offset Units«.
+Date changeEnter the time of day of the date change. The offset can be up to ± 24hours based on 0:00 o'clock (midnight).
+Quick formatYou can choose from the different default date formats:
+European (03.04.97)European short (3.4.97)American short (4/3/97)American (04/03/1997)
+European (03.04.1997)European short (3.4.1997)Julian (93)Julian & year (937)
+American (04/03/97) Calendar week & year (107)
+FormatTo customize your own date format cland choose the desired element. A preview of the current date format isick on one of the six format items
+displayed under »Preview«. Choose from the following elements tocustomize your date format:
+BlankDay(01) Julian dayWeekday
+Day short (1)Month (01) Calendar weekSeparator (.)
+Month short (1)Year (1998) Separator (/)Separator (-)
+Year (98)Year (8) Separator (:)Separator ( ) (blank)
+02/06 - Rev. AB 13
+
+User Level »Technician«Chapter 3
+Variable »Time«
+Insert a time field into the message. This adds the current system time to the message. Youcan also define an offset to the current system time.
+NameName of the time field.
+PreviewDisplay the current time in the selected time format.
+Offset UnitsChoose from hours, minutes or seconds for the offset value.
+OffsetEnter a positive or negative offset of the current time. Enter the desirednumeric value for the defined »Offset Units«.
+Quick formatYou can choose from the different default time formats:
+European (13:59:35)European (13:59)American ( 1:59:35pm)American ( 1:59pm)
+American ( 1pm)
+FormatTo customize your own time format cland choose the desired element. A preview of the current time format isick on one of the six format items
+displayed under »Preview«. Choose from the following elements to cus-tomize your time format:
+No symbolSecond (03) Hour American 0-11 (9)am/pm symbol (am)
+Second short (3)Minute (03) Separator (.)Separator (/)
+Minute short ( 3)Hour (09) Separator (-)Separator (:)
+Hour short (9) Separator ( ) (blank)
+14 02/06 - Rev. AB
+
+Chapter 3User Level »Technician«
+Variable »Serial Number«
+Insert a serial number into the message.
+NameName of the serial number field.
+StartStopThe »Start« and »Stop« values define the range of serial numbers. If thestop value is reached the marking starts again with the start value.
+IncrementDefines how many digit positions shthe next one. Enter positive values for increasing and negative values forall separate one serial number from
+decreasing serial numbers.
+RepetitionDefines the number of products to be marked with the same serial num-ber consecutively. Value »1« means that the serial number is marked
+once.
+Leading digitsEnables or disables the display of leading digits. If the leading digits arenot displayed the serial number field changes its width according to the
+number of digits. No blanks are displayed and adjoining elements mayshift.
+Note: Adjoining elements may also shift as serial numbers change whenproportional fonts are used.
+Range (from)Range (to)Defines the range of digits used for serial numbers. Default setting is 0 to9. You can reduce the range of digits and add characters used in the
+serial number.
+02/06 - Rev. AB 15
+
+User Level »Technician«Chapter 3
+Variable »Shift«
+A shift code is used to mark different texts at different times of day on your product. This canbe used to add a code representing the shift in which the product was produced.
+Within the variable you can define the desired shift code. Thus you can define a different shift number of shift codes. Press F2 to add a newcode for every day of the week (if you need only
+one shift code for the week, select weekday »Everyday«).
+Each shift code name is created from SelectedWeekday StartingTime ShiftCodeFor example, if you have a code to be marked ev. ery Monday, at 2 and the shift is »ABC«, the
+name of the shift code will be »Monday 2 ABC«.
+Variable »External Text«
+Shift CodeEnter the text to be marked on the product.
+WeekdayDefine the day on which the shift code is marked on the product. Youcan select either a specific weekday or choose the option »Everyday«.
+Starting TimeSet the time from which on the new shift code is marked on the product.
+The external text provides the possibility to define a variable text field. The contents of this textfield can be changed via the serial interface.
+NameName of the external text.
+TextEnter the desired text for the text field »External text«.
+Number ofcharactersThe number of characters of the text field »External text« is adapted tothe contents of the field »Text«. This number of characters is reserved
+for the text field »External text«. If you want to reserve more charactersfor the text field, enter a larger number.
+Mark onceThe content of the variable is marked only one time. If the content is to bemarked a second time an error message will be displayed.
+16 02/06 - Rev. AB
+
+Chapter 3User Level »Technician«
+3.1.2 ParametersParameter sets are assigned to every message and offer the possibility to adapt the laser
+parameters to your product. The parameters depend on the material of your product and onthe desired marking quality. The parameter sets are adjusted to specific materials or products,
+e.g. paper or synthetic material. In this menu you can change the name of a parameter set oredit the following values:
+Mark Speeddefines the speed of movement of the laser beam when marking theproduct.
+Jump Speeddefines the speed of movement of the laser beam when moving from onestroke to the next. The laser is switched off during a jump. A typical value
+is 20000 mm/s.
+Jump Delay defines the delay between the end of a jump and the start of the markingprocess.
+Mark Delay defines the delay between the marking of individual vectors within astroke.
+Stroke Delaydefines the delay between the end of a stroke and the jump to the nextstroke.
+Laser Parameters
+Laser Powersets the output power via the current value (with 100% corresponding tothe maximum power of the laser).
+On-Delaydefines the delay between the attainment of the start position of a strokeand the switching-on of the laser.
+Off-Delaydefines the delay between the attainment of the end position of a strokeand the switching-off of the laser.
+Pulse Frequencycan be set between 50Hz and 20kHz. Low values can be used toachieve a broken line.
+Filling Parameters
+Line widthdefines the actual line width for e.g. barcodes on the product. This param-eter highly depends on the material and is defined by measuring the line
+width on the product.
+Overlapdefines whether two adjacent lines overlap each other (positive values) orif there is a certain distance between two adjacent lines (negative values).
+This parameter refers to the entered line width and is stated in percent.
+Vector Length
+Min. vectordefines the minimum length of a vector. Shorter vectors are not marked.
+Max. vectordefines the maximum length of a vector. Longer vectors are divided intoshorter vectors.
+02/06 - Rev. AB 17
+
+User Level »Technician«Chapter 3
+3.1.3 Product RegistrationHere you can define whether the product is moving during the marking process, how this move-
+ment shall be detected, how the triggers are set, registration and - like the parameter set - assigned to a message.etc. These settings are combined in a product
+Product Movement
+The following types of product movement can be selected:No product movement
+Fixed speed
+Encoder (no monitoring of rotational direction)
+Directional encoder (monitoring of rotational direction)
+The available entries depend on the type of product movement (e.g. if there is no movementthere is no speed to be defined). In the following all possible entries are listed.
+Angle
+To compensate for the product movement during marking head of the laser system and the direction of product movement has to be defined.the marking process the angle between the
+Dist./Rot.
+This value defines the distance the product covers with one full turn of the incremental encoder.
+Pulse/Rot.
+This value states the number of pulses the incremental encoder emits when performing one fullturn.
+Speed
+Value in mm/s to define a fixed speed for the product movement.
+Direction
+If a directional encoder is used for detecting the product movement you can define its rotationaldirection: clockwise or counterclockwise.
+18 02/06 - Rev. AB
+
+Chapter 3User Level »Technician«
+Triggers
+There are different settings for the registration of product movement. The triggers are subdivid-ed into »Start Trigger« and »Next Trigger« and »Stop Trigger«. The availability of the individual
+trigger settings depends on the selected trigger type and the product movement.
+»Start Trigger« defines the settings for the first triggerby the first trigger pulse. pulse. The marking process is started
+With the trigger set to »Auto«, the marking process is started by pressing START on the con-trol panel of the laser system.
+To start the marking process by an external signal an input channel can be selected. For thechannel you can select whether the rising or the falling edge is to be used as trigger.
+»Start Delay« defines the distance until the marking prbetween the center of the marking field of the laser system and the center of the marking onocess is started, which is the distance
+the product. After the trigger the product has to coveing head. If »No product movement« has been seler this distance before is in front of the mark-cted the start delay defines the time be-
+tween start trigger pulse and marking in ms.
+»Next Trigger« defines the settings for all trigger pulsenext trigger is set to »None«, only the start triggers following the start trigger pulse. If the pulse starts a marking process. All following
+trigger pulses are not accepted. Select »None« ing.whenever you want to generate a single mark-
+With the next trigger set to »Auto«, the marking process is triggered internally and continu-ously. The marking process is repeated with a certain frequency or after the product has cov-
+ered a certain distance - depending on the settings for the product movement.The marking process can be triggered by an external trigger signal. For the channel you can
+select whether the rising or the falling edge is to be used as trigger.
+»Blocking« defines the distance the product has to cover before the next marking can be start-ed. If »No product movement« has been selected the blocking defines the time that has to pass
+after a start trigger until a next trigger is accepted.
+»Stop Trigger« defines the settings for a trigger pulse that stops the marking process (e.g.the end of a cable or a stop signal from an external control unit). The laser system remains
+ready to mark after a stop trigger pulse, which means that the marking process will be contin-ued if another start trigger pulse is detected.
+If the trigger is set to »None«, only the start trigger pulse starts a marking process. All follow-ing trigger pulses are not accepted.
+To stop the marking process by an external signal an input channel can be selected. For thechannel you can select whether the rising or the falling edge is to be used as trigger.
+»Stop Blocking« sets the blocking time after the stop trigger pulse, where no external triggerpulses are accepted (debouncing).
+02/06 - Rev. AB 19
+
+User Level »Technician«Chapter 3
+3.1.4 System SettingsIn this dialog you can set the time and date of the system. These data are required e.g. for cal-
+culating expiration dates.
+3.1.5 Alert HistoryA list of error and warning codes is displayed together with the date and time of occurrence. F5
+»?« will display the actual error string for the specfunctions and Error Messages" in the user manual of ific error code. Please refer to chapter "Mal-the laser system to find the list of all error
+and warning codes of the system including a description of possible causes and remedies.
+You can delete the list of error codes with F4. Thus the list »Active Alerts« of the home screenis automatically cleared as well.
+20 02/06 - Rev. AB
+
+Chapter 4User Level »Administrator«
+4 User Level »Administrator«
+The home screen contains the following entries:
+Active AlertsCurrent list of alerts from the system. In the display you can see the error code, date and time of occurrence.
+Error codes deleted from this list are still kept in the alert history(see page27)!
+Save DatabaseThis entry is only displayed if there have been changes. Select thisentry and press ENTER to save the database to the permanent mem-
+ory.
+Active MessageThe currently selected message is displayed. You can press ENTER toselect a different message if there is more than one message saved in
+the database.
+Adjust MarkingThe following values of the active message can be adjusted:
+Set variablesIf the message contains variables you can adjust the parameters such
+as, the offset, units, start value.
+RotationThe message is rotated by this value in the marking field.
+XY OffsetThe position of the message in the marking field is shifted.
+Laser PowerIncrease or decrease the laser power. This value is changed in the
+parameter set used for the active message and therefore applies to all messages using the same parameter set.
+Marking SpeedChange the speed of movement of the laser beam when marking the
+product. This value is changed in the parameter set used for the ac-tive message and therefore applies to all messages using the same
+parameter set.
+Product RegistrationSelect the product registration for marking the message.
+Main MenuA detailed description can be found in the following section.
+02/06 - Rev. AB 21
+
+User Level »AChapter 4dministrator«
+4.1 Main Menu
+The main menu contains the following entries:
+4.1.1 ParametersWith ENTER a different parameter set can be selected, with RIGHT arrow the menu »Param-
+eters« is opened (see below).
+Parameter sets are assigned to every message and offer the possibility to adapt the laser pa-rameters to your product. The parameters depend on the material of your product and on the
+desired marking quality. The parameter sets are adjusted to specific materials or products (e.g.paper or synthetic material).
+In this menu you can change the name of a parameter set or edit the following values:
+Mark Speeddefines the speed of movement of the laser beam when marking theproduct.
+Jump Speeddefines the speed of movement of the laser beam when moving from onestroke to the next. The laser is switched off during a jump. A typical value
+is 20000 mm/s.
+Jump Delay defines the delay between the end of a jump and the start of the markingprocess.
+System State Mark Delay defines the delay between the marking of individual vectors within astroke.
+Main MenuParameters Stroke Delaydefines the delay between the end of a stroke and the jump to the next
+Product Registrations stroke.
+Laser Parameters System SettingsAlert History
+Return Laser Powersets the output power with 100% corresponding to the maximum powerof the laser.
+On-Delaydefines the delay between the start position of a stroke and the switching-on of the laser.
+Off-Delaydefines the delay between the end position of a stroke and the switching-off of the laser.
+22 02/06 - Rev. AB
+
+Chapter 4User Level »Administrator«
+Pulse Frequencycan be set between 50Hz and 20kHz. Low values can be used toachieve a broken line.
+Filling Parameters
+Line widthdefines the actual line width for e.g. barcodes on the product. This param-eter depends on the material and is defined by measuring the line width
+on the product.
+Overlapdefines whether two adjacent lines overlap each other (positive values) orif there is a certain distance between two adjacent lines (negative values).
+This parameter refers to the entered line width and is stated in percent.
+Vector Length
+Min. vectordefines the minimum length of a vector within a stroke. Strokes shorterthan the min. vector are not marked.
+Max. vectordefines the maximum length of a vector within a stroke. Strokes longerthan the max. vector are divided into vectors.
+02/06 - Rev. AB 23
+
+User Level »AChapter 4dministrator«
+4.1.2 Product RegistrationHere you can define the product motion during the marking process, how this movement shall
+be detected and how the triggers are set. These settings are combined in a product registrationand, like the parameter set, assigned to a message.
+Product MovementThe following types of product movement can be selected:
+No product movement
+Fixed speed
+Encoder (no monitoring of rotational direction)
+Directional encoder (monitoring of rotational direction)
+Other available entries depend on the type of product movement (e.g. if there is no movementthere is no speed to be defined). All possible entries are listed here.
+AngleTo compensate for the product movement during the marking process, the angle between the
+marking head of the laser system and the direction of product movement has to be defined.
+Dist./Rot.This value defines the distance the product covers with one full turn of the incremental encoder.
+Pulse/Rot.This value defines the number of pulses the incremental encoder emits when performing one
+full turn.
+SpeedValue in mm/s to define a fixed speed for the product movement.
+DirectionIf a directional encoder is used for detecting the product movement you can define its rotational
+direction: clockwise or counterclockwise.
+24 02/06 - Rev. AB
+
+Chapter 4User Level »Administrator«
+TriggersThere are different settings for the registration of product movement. The triggers are subdivid-
+ed into »Start Trigger« and »Next Trigger« and »Strigger settings depends on the selected top Trigger«. The availability of the individualtrigger type and the product movement.
+»Start Trigger« defines the settings for the first triggerby the first trigger pulse. pulse. The marking process is started
+With the trigger set to »Auto«, the marking process is started by pressing START on the con-trol panel of the laser system.
+To start the marking process by an external signal an input channel can be selected. For thechannel you can select whether the rising or the falling edge is to be used as trigger.
+»Start Delay« defines the distance until the marking prbetween the center of the marking field of the laser system and the center of the marking onocess is started, which is the distance
+the product. After the trigger the product has to coveing head. If »No product movement« has been seler this distance before is in front of the mark-cted the start delay defines the time be-
+tween start trigger pulse and marking in ms.
+»Next Trigger« defines the settings for all trigger pulsenext trigger is set to »None«, only the start triggers following the start trigger pulse. If the pulse starts a marking process. All following
+trigger pulses are not accepted. Select »None« ing.whenever you want to generate a single mark-
+With the next trigger set to »Auto«, the marking process is triggered internally and continu-ously. The marking process is repeated with a certain frequency or after the product has cov-
+ered a certain distance - depending on the settings for the product movement.The marking process can be triggered by an external trigger signal. For the channel you can
+select whether the rising or the falling edge is to be used as trigger.
+»Blocking« defines the distance the product has to cover before the next marking can be start-ed. If »No product movement« has been selected the blocking defines the time that has to pass
+after a start trigger until a next trigger is accepted.
+»Stop Trigger« defines the settings for a trigger pulse that stops the marking process (e.g.the end of a cable or a stop signal from an external control unit). The laser system remains
+ready to mark after a stop trigger pulse, which means that the marking process will be contin-ued if another start trigger pulse is detected.
+If the stop trigger is set to »None«, only the start trigger pulse starts a marking process. All fol-lowing trigger pulses are not accepted.
+To stop the marking process by an external signal an input channel can be selected. For thechannel you can select whether the rising or the falling edge is to be used as trigger.
+»Stop Blocking« sets the blocking time after the stop trigger pulse, where no external triggerpulses are accepted (debouncing).
+02/06 - Rev. AB 25
+
+User Level »AChapter 4dministrator«
+4.1.3 System SettingsIn this menu all basic settings are carried out.
+Set time and date
+In this dialog you can set the time and date of the system. These settings are required for cal-culating expiration dates.
+Unit of measurement
+Select the unit of measurement of all displayed linear values.
+Handheld Language
+Select the desired language for the user interface of the handheld.
+System Language
+Select the desired language for the alerts from the laser system.
+IME
+Select the type of Input Method Editor to be used for entering characters not available on thekeyboard of the handheld. Available are: Punctuation & symbols only, European, Chinese.
+Network setup
+Here you can enter the IP-Addresses for the laser system, the handheld and the subnet mask.
+Marking head
+TypeDisplay of the marking head installed in the laser system.
+Laser Scan LensIn this list field you can select the lens type. The selected lens type has to correspond to the
+lens installed at the marking head of the laser system. The focal length of the selected lens typeis displayed.
+Mounting PositionDefines the position of the marking head in relation to the product. The set angle refers to the
+product in relation to the marking head and applies to all messages.
+Working DistanceThe working distance is calculated by the system. Enter the values for a possible tube length
+and deviations and the actual working distance is displayed.
+26 02/06 - Rev. AB
+
+Chapter 4User Level »Administrator«
+Marking HeadHere you can enter a translation, scaling factor or rotation that applies globally to all templates.
+Passwords
+Zero position»X« and »Y« define the translation of refers to the center of the marking field and is stated in millimeters.the marking field. The translation
+Scaling factor»X« and »Y« are stated as a multiplier for the respective coordinates. Thedefault value is 1. The coordinates of X and Y axes can be scaled individ-
+ually.
+In this menu the passwords for user level Technicianentered passwords are displayed in plain text. Here you can also define the user level to be and Administrator are defined. The
+active after startup of the system.
+4.1.4 Alert HistoryA list of error and warning codes is displayed together with the date and time of occurrence. F5
+»?« will display the actual error string for the specfunctions and Error Messages" in the user manual of ific error code. Please refer to chapter "Mal-the laser system to find the list of all error
+and warning codes of the system including a description of possible causes and remedies.
+You can delete the list of error codes with F4. Thus the list »Active Alerts« of the home screenis automatically cleared as well.
+02/06 - Rev. AB 27
+
+User Level »AChapter 4dministrator«
+28 02/06 - Rev. AB

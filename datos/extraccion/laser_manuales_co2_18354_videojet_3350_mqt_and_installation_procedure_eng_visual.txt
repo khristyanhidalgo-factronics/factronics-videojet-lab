@@ -1,0 +1,224 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\18354-Videojet 3350 MQT and Installation Procedure (Eng).pdf
+# cifrado=False bloques=7 caracteres=13515
+
+V ideojet 3350 MQT and Installation
+Procedure
+C o n t e n t
+T i t l e V ideojet 3350 MQT and Installation Procedure
+C o n t e n t
+V i d e o j e t 3 3 5 0 M Q T a n d I n s t a l l a t i o n P r o c e d u r e
+Personal Injury
+All personnel within the room must wear safety goggles suitable against laser radiation while performing
+maintenance or adjustments at the open laser housing or near an open beam delivery system!
+1. Inspect the laser carton packaging. Does the packaging look damaged?
+2. Remove the laser and verify that the laser configuration received is correct including model,
+wavelength, head, lens, umbilical length, and IP rating. Do these items match what was ordered?
+Are all accessories listed on the order included?
+3. Is the laser configuration correct for installation? Are any significant modifications required for
+installation such as: need to add BTU/BUS, requires marking head conversion from 90 degrees to
+straight? Or is the configuration wrong for the application such as wrong wavelength, wrong marking
+head, or wrong IP rating?
+If configuration is incorrect please stop and contact your FSM.
+4. Inspect the exterior of the laser . Are there significant scratches or dents on the cabinet or damage to the
+umbilical, power cord, or lens?
+5. Inspect the interior of the supply unit. Are there loose connectors or cables?
+Is the USB-C connector well seated in the main board?
+IF a White SPM board is installed, verify that there is a jumper on X9 from pin 1 to pin 23.
+
+If a Green CPD board is present, there should be no jumper from pin 1 to pin 23.
+V erify that all white latching arms on all connectors on the main board and the SPM/CPD are
+latched securely .
+Inspect the 32 pin umbilical connector at the back of the laser head. Are all pins sticking out
+evenly?
+
+6. Connect umbilical to laser head.
+7. Connect the system to Power .
+1. Connect power cord to supply unit.
+2. Plug laser into mains power .
+3. Ensure blue LED on keypad is illuminated after main power connected.
+8. Boot lase and allow at least 5 minutes for the laser to finish booting.
+Does laser boot successfully?
+Does laser boot with errors (amber flashing LED on keypad). If boots with errors, connect
+using TCS+ and note errors.
+9. Connect to TCS+ via PC with web browser .
+Note: The Laser W eb Interface does not exist on the 3350. Use TCS+ via PC with a web browser for all
+system file management and configuration.
+1. Set the IP Address of the laptop / PC to 192.168.1.2 (or other up to 192.168.1.254).
+2. Connect the laptop/PC to the laser supply unit's RJ45 port via an Ethernet cable.
+3. Open a web browser (Google Chrome, Microsoft Edge, or Firefox).
+4. T ype 192.168.1.1 into the address bar . TCS+ should now be displayed in the web browser .
+5. When prompted, login as the Service user by typing in “Service” (case sensitive) and the
+V ideojet daily password (same daily password as CIJ).
+10. Any errors or warning shown in top status bar other than "Front Panel Keyswitch Open" warning? Note
+any additional warnings or errors.
+1 1. V erify active Line Setup settings are:
+Static (no product movement)
+T rigger: Internal Once
+12. Prepare for and then test engaging the keyswitch:
+1. Ensure a carbon block is under / in front of the marking head lens/window before performing
+next step.
+2. Close the keyswitch. Is the Laser Ready state achieved with no errors?
+3. Note any warnings or errors other than "Front Panel Keyswitch Open".
+4. Disarm / open the keyswitch.
+13. V erify and backup the Lens Compensation File (SHC-SF marking heads only).
+1. Go to Main menu (wrench icon) and select File Management .
+2. Scroll down to Lens Compensation (must be logged in as Service to see this item).
+3. V erify Lens Compensation says “1” next to it.
+4. Click the Pen button and select Show Content .
+5. When the file name is shown, press the Pen button and select Download .
+
+It is very important to have backup of this file as it is specific to the individual marking head. If a
+Rescue Stick is used or the main system board is replaced, then reloading of this file will be necessary!
+Do not change name of file. Put this file into a folder on your PC with the name of the laser system.
+14. V erify that cellular and Wi-Fi icons are displayed at the top of the screen (cellular and Wi-Fi are not
+available in all countries). This validates that the access box is connected securely and recognized by
+the laser even if no signal is available. An X through the icon means that Cellular or WiFi is enabled, but
+not connected. An X through either icon is acceptable for this step.
+If no icons display but the access box is connected, reseat the USB-C connector at main system board.
+15. Configure Laser Name and Country . V erify the configuration is set correctly .
+1. Go to Main menu (wrench icon) and select Laser Unit Settings .
+2. Select Laser Configuration .
+3. Set the Name of the laser . This will become the name of the laser in VRS, wfs.videojet.com,
+and in the tab at the top of the web browser window when connected to TCS+.
+4. V erify that the Serial Number , Model Number , Marking head, and Lens all match the traveler
+data sheet and serial number plate.
+5. Use the right hand scroll bar to scroll to bottom of right column and set the Country .
+Set the correct Country V alue
+The value set here establishes which frequency bands the cellular module will use,
+based upon the local cellular certification entity .
+6. Press Save .
+7. Reboot laser when prompted.
+16. After rebooting, login to TCS+ again as Service user .
+17. Ensure a stable connection for Cellular or Wi-Fi.
+For V ideojet Cellular:
+1. Go to Main Menu (wrench icon) and select Laser Unit Settings .
+2. In left column, scroll down to Cellular Network and verify connection is L TE. If not, wait a few
+minutes to see if moves to L TE instead of GSM. If only a GSM connection is available after 20
+minutes, then you cannot use cellular as the connection is too weak and unstable to support.
+Use Wi-Fi instead, if available.
+For V ideojet W i-Fi:
+1. Go to Main Menu (wrench icon) and select Laser Unit Settings .
+2. Disable Cellular Network in Laser Unit Settings | Cellular .
+3. In the Wi-Fi Network section of Laser Unit Settings, ensure the V ideojet Wi-Fi connected
+automatically as expected (SSID V ideojet Wi-Fi).
+For Other W i-Fi:
+1. Go to Main Menu (wrench icon) and select Laser Unit Settings .
+2. Disable Cellular Network in Laser Unit Settings | Cellular .
+3. In the Wi-Fi Network section of Laser Unit Settings select the network name.
+4. Press the Pen button
+5. Select Connect from the dropdown or press Connect to Hidden Network button.
+
+6. Enter the required information. The type of network (public, private or enterprise) determines
+what information / credentials must be entered for connection.
+18. (Lasers Systems with cellular / WLAN / LAN connected) Register the Laser with the Portal.
+Note: A cellular or other connection to the outside network is necessary to register directly from the
+laser system. If a connection is not available, skip to the next step.
+1. With cellular or other connection available (internet-facing):
+2. Select Main Menu (wrench icon) | Laser Unit Settings
+3. Scroll down to Software Download .
+4. Press the Register Laser button. After a few seconds the Registration Status should show
+Complete.
+5. Select preferred Upgrade Behavior (when updates should be installed).
+6. After registration, look at bottom on Software Download to see if new CMark version available.
+Download will start automatically as long as key is open.
+7. Reboot to install update.
+19. (Laser systems with no cellular or other internet-facing connection) Manually register the Laser
+with the Portal using PC to connect to TCS+
+1. Export the Printer Registration File (PRI) by going to Main menu (wrench icon) | Laser Unit
+Settings | Software Download | Export Registration File .
+2. Upload to wfx.videojet.com using the Serial Number search to find the specific laser .
+3. Observe if a newer version of CMark is needed / available and download it from the
+wfx.videojet.com portal.
+4. If you download a new CMark version for install, in TCS+ go to Main menu | File
+Management .
+Note: Y ou must use a PC / laptop to load CMark and SARs. The TU440 cannot be used to
+load system files.
+5. Press the Upload button and navigate to the CMark update file to be loaded. The name must
+begin with “cmark” for the laser system to consider it a valid file typer .
+6. When the CMark update is complete, reboot the laser system and proceed.
+7. In TCS+ select Main menu (wrench icon) | Laser Unit Settings | Software Download .
+8. Press the Export Registration File button to get a new PRI for later upload to the portal. This
+will show the portal that the software update is complete.
+9. If the laser system will not have any connection to the internet, then in TCS+ go to Main
+menu (wrench icon) | Laser Unit Settings | Software Download and uncheck the Activate
+Over the Air Upgrade box.
+20. (Pharma, Medical, or SmartGraph Customers Only) Disable automatic software updates.
+If a SmartGraph customer or pharma/med customer: you must turn off automatic
+software updates!!!
+If a CMark update is installed, but SmartGraph version on PC is not, then the laser and PC will
+lose connection due to mismatched versions. Pharma/med customers may have to requalify if
+CMark is updated automatically .
+1. Go to Main menu (wrench icon)>Laser Unit Settings>Software Download .
+2. Uncheck the box next to Activate Over the Air Upgrade .
+3. Click Save .
+The laser system will no longer automatically download CMark updates.
+
+21. After software update is complete, install any SAR which was purchased (if applicable).
+1. Go to Main menu (wrench icon) | File Management and press the Upload button.
+2. Navigate to where the SAR is stored on your PC.
+If SAR (TCL) installed correctly then laser will prompt you to reboot.
+Laptop / PC Required
+SARs may only be installed using a laptop/PC and Ethernet cable and must be formatted
+correctly .
+System files such as CMark and SARs cannot be loaded via TU440.
+SARs must be formatted correctly (.zip with startup.sh file at the root level of the .zip).
+If errors assert on upload, ensure there are no PDFs (user guide, instructions, etc.)
+within the .zip.
+It may be necessary to unzip to get to the SAR package.
+22. If safe to do so (enclosed area or laser in shielded area), make a test mark.
+1. Create a new Job in TCS+.
+2. Add a T est Pattern from Add list.
+3. Select Marking Field .
+4. Click in the marking field to insert the marking field pattern into the Job.
+5. Press the Save button and Close . When prompted, activate the job.
+6. Mark the pattern.
+W as mark created with no errors?
+If errors are asserted or if no mark is created at the correct focal distance (on known easy to mark
+material such as ink coated cardboard) and with no accessories connected, then do not proceed with
+installation. A power check should be performed to determine wattage being emitted.
+23. W as print quality acceptable on relatively easy to mark material? Not necessarily the customer material
+at this stage.
+24. After installation and before releasing laser to customer:
+1. Create backup of System Database ( Main menu (wrench icon) | Laser Unit Settings |
+System Database | Download ).
+2. Create a CMark backup if SARs, AllPrint Basic, or VRS and OT A are setup.
+The more additional things installed the more important it is to backup CMark!
+3. Create a backup of the customer database using the customer's user interface (SmartGraph,
+TCS+ or CLARiTY).
+4. If applicable, ensure a backup of the Lens Compensation was performed if SHC-SF marking
+head. This is not necessary for SHC60/100/150 marking heads.
+25. (Field Installation Only) Download the System Information PDF from TCS+.
+1. Press the V logo in the upper right-hand corner of the Homescreen
+2. Select System Information .
+
+3. Press the Create PDF button. This will generate a complete snapshot of the laser system,
+including hardware and software versions installed. This is useful when the laser system is not
+connected to VRS.
+4. Save or copy the PDF to a location (such as OneDrive) accessible on your mobile device from
+which you access FSL.
+26. (Field Installation Only) Upload the System Information PDF created in previous step to the W ork Plan
+checklist when possible.
+27. (Field Installation Only) Enter the total time of commissioning the laser into the W ork Plan Checklist.
+A r t i c l e M e t a d a t a
+U R L N a m e V ideojet-3350-MQT -and-Installation-Procedure-bd154ec3
+P e r m a n e n t U R L
+Right click and copy link to share this Article's URL
+f o r L i g h t n i n g
+V i s i b l e I n I n t e r n a l
+A p p
+V i s i b l e t o P a r t n e r
+V i s i b l e t o
+C u s t o m e r
+A r t i c l e R e c o r d
+T raining Article
+T y p e
+V a l i d a t i o n S t a t u s Approved - Internal FS Use
+P u b l i c a t i o n S t a t u s Published
+V i s i b l e I n P u b l i c
+K n o w l e d g e B a s e
+I n t e r n a l D a t a
+I n t e r n a l C o m m e n t s
+D i s c l a i m e r
+T he contents ofthis em ailand any attachm ents are provided as a convenience to V ideojetcustom ers to highlightusefulinform ation and troubleshooting tips.W hen w orking w ith a
+product,alw ays consultthe productuser m anualand follow the productsafety precautions and recom m endations,including using P ersonalP rotective E quipm entw hen necessary.If
+you have any questions or are notexperienced in using or servicing V ideojetequipm ent,contactV ideojetfor assistance.

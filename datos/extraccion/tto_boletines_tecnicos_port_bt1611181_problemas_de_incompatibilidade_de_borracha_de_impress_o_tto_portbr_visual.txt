@@ -1,0 +1,39 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Port\BT1611181-Problemas de Incompatibilidade de Borracha de Impressão TTO (PortBR).pdf
+# cifrado=False bloques=2 caracteres=2122
+
+Videojet Technologies Ltd
+BT1611181
+Fecha: 18/11/2016
+Equipos: TTO 6210 / 6320 / 6420 / Dataflex Plus / Dataflex Plus IP65 Intermitentes
+Tema: Problemas de Incompatibilidade de Borracha de Impresso com Substrato
+Este BT para ajudar a identificar possveis probl emas causados por incompatibilidade da borracha da base de
+impresso TTO com algumas aplicaes.
+A borracha da base de impresso padro dos equipos TTO Videojet a borracha de cor preta com cdigo
+215965 (kit com 10) ou WBZ1000015 (pea unitria) fotos abaixo:
+Em determinadas aplicaes, por conta do substrato, necessrio utilizar uma borracha mais macia (de menor
+dureza) que a padro para que se consiga uma melhor qualidade de impresso. Etiquetas de papel um bo m
+exemplo de substrato que trabalha melhor com borrac ha mais macia. Em algumas situaes uma borracha
+incompatvel chega a provocar enrugamento do ribbon . Abaixo seguem fotos com exemplos de impresso rui m
+provocada por borracha incompatvel:
+Abaixo seguem fotos de exemplos de borracha com sil icone, mais macia que a borracha preta padro e que
+solucionaram os problemas de qualidade de impresso das fotos acima.
+
+Evidentemente, antes de verificar a borracha nece ssrio verificar todos os outros pontos:
+ Presso do ar
+ Distncia e alinhamento da cabea
+ Compatibilidade de ribbon
+ Parmetros do equipamento
+ Caso o equipamento imprima cdigo de barras, reduz ir no Clarity Config o valor do parmetro
+TrailingEdgeDarkness (Devices>PHds>PrintInformation >TrailingEdgeDarkness) para o mnimo sem que
+prejudique a qualidade de impresso isso ajuda a eliminar o enrugamento do ribbon.
+Normalmente o tipo de borracha definido antes da venda do equipamento, durante o processo de amostra s,
+ento ao trocar a borracha durante uma manuteno, sempre certificar-se do tipo de borracha que est s endo
+usado. Ao trocar a borracha, atentar para os seguin tes pontos:
+ Limpar bem a base de impresso. Deve estar lisa, s em irregularidades e sem vestgios de cola ou
+sujeira.
+ Ao colar a nova borracha tomar cuidado para no de ixar ondulaes e/ou bolhas de ar.
+JAM
+Videojet Technologies Ltd
+VJ LA Tec
+Latin America
+la.tec@videojet.com

@@ -1,0 +1,65 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\Create Rescue Stick Rufus.pdf
+# cifrado=False bloques=4 caracteres=2623
+
+Create a Rescue Stick
+Create a Rescue Stick
+The following procedure details installing the Rescue Image to a USB memory stick.
+Rufus (The Reliable USB Formatting Utility, with Source) is a free and open- source portable application for Microsoft
+Windows that can be used to format and create bootable USB flash drives or Live USBs. Other software tools may also
+be used, but are untested. It is important that a software tool is used to create a bootable drive and that you don not just
+copy and paste files onto the USB drive.
+Requirements for creating Rescue Stick
+l
+USB 4GB or larger
+l
+Plexmark 1.14 or newer (.iso file type)
+l
+RUFUS 3.10 or newer, or other software capable of writing the Plexmark image to the USB drive.
+The following procedure uses RUFUS, but other software for creating bootable media may be
+used, though only RUFUS has been tested.
+1. Download both PlexMark 1.14.zip and Rufus 3.10.zip. Contact Videojet Technical Support if you do not have
+access to the download locations.
+VTI Technology & Support Team Space File Location
+Service Resources/Service Software/Laser/Utility/Rescue Stick for Multicore Chameleon/Rescue Stick v 1.14
+2. Unzip (extract) both the Plexmark 1.14 and Rufus folders.
+3. Insert the USB drive into an open port on your PC.
+Data Loss
+All files on the USB drive will be deleted by this procedure.
+4. Double click the Rufus executable (Application) to open the software application.
+5. If you need to change the user interface language, click the Globe icon in the lower left and select the desired lan -
+guage from drop- down list.
+1
+Rev AF
+
+3140 3340 3640 Technician Training
+6. Select your USB drive from the Device dropdown selector. If it is not listed, restart Rufus. Ensure the USB drive
+is inserted before launching RUFUS so that the software discovers the USB drive.
+7. Click Select and browse to the Plexmark.iso image file. When returned to the Drive Properties window, the file
+name should display in the Boot selection field.
+2
+Rev AF
+
+Create a Rescue Stick
+8. Check each of the following settings and use the dropdown selector for each to choose the correct value as
+necessary.
+Setting Target Value
+MBR
+Partition Scheme
+UEFI (non CSM)
+Target System
+FAT32
+File System
+16 kilobytes
+Cluster Size
+Other settings may work but have not been tested. This procedure tested with a Patriot Rage Xt 32GB USB
+stick.
+9. Press Start.
+10. Click OK to confirm when warned about data loss.
+3
+Rev AF
+
+3140 3340 3640 Technician Training
+11. Wait until the Status Ready appears in green. Progress is shown during the writing process. The Rescue Stick
+is now ready to be used.
+4
+Rev AF

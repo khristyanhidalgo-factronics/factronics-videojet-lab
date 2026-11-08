@@ -1,0 +1,297 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\404756.RN.r01.SP3.pdf
+# cifrado=False bloques=18 caracteres=14662
+
+Videojet Software Release Notes
+Product: CLARiTY Laser Controller
+Part Number 404756 r01 SP3
+Release Date: April 2015
+Released By: Jeff Froggatt
+This document describes all of the changes to the product software since the previous
+revision. Changes are listed as new features and bug fixes, also included are all of the
+known problems that have been found.
+CLARiTY is a registered trademark.
+New Features Summary
+Required Software Version
+(or later)
+Case# Name Summary Description CCM CLARiSOFT
+E00867 Availability Webserver Availability Webserver Not Applicable Not Applicable
+E00905 7510 Lasers Now Supported 7510 Lasers Now Supported by CLARiTY Pod Not Applicable 4.408 SP6
+by CLARiTY Pod
+E00908 Arabic Date Improvements New Arabic Date Formats Supported Not Applicable Not Applicable
+E00910 Barilla Dates Now Supported Barilla Date is a special day offset of Julian Day + 400 Not Applicable Not Applicable
+days.
+E00930 CLC now provides indication By means of a PC icon on the top right-hand corner of Not Applicable Not Applicable
+of 'Laser Busy' the CLC status bar.
+Software Release notes for Part Number 404756 r01 SP3 Page 1 of 18
+
+Bug Fix Summary
+Required Software Version
+(or later)
+Case# Name Summary Description CCM CLARiSOFT
+B00878 JOB Button on Home Incorrect behaviour of Home Screen JOB button now Not Applicable Not Applicable
+Screen Fixes rectified
+B00879 Job Download Failure Fixes Two known issues that could cause Job Download Not Applicable Not Applicable
+Failure are now resolved
+B00880 Daily Manufacturer Manufacturer Password no longer, under certain Not Applicable Not Applicable
+Password Issue conditions, requests Alpha characters.
+B00881 Raise Error For Unsupported E6222 Error Now Raised when connected to Not Applicable Not Applicable
+Laser type unsupported laser types
+B00904 Fixed Speed printing button By setting Yes/No correctly configures encoder/non- Not Applicable Not Applicable
+encoder usage
+B00907 Grid or Dot Printing of 2D CLARiSOFT setting is now adhered to by CLARiTY Laser Not Applicable Not Applicable
+barcodes Controller
+B00912 Arabic Date Fix Download & Selecting Arabic Encrypted Dates now load Not Applicable Not Applicable
+without fault
+B00913 Dates & Day Rollover Issues Dates & Day Rollover Issues Fixed Not Applicable Not Applicable
+Fixed
+B00929 Very Large jobs would CLC could also enter E6220 Laser Marking Head Absent. Not Applicable Not Applicable
+previously not load from the
+CLC
+B00931 Toggling the key-switch no This could cause the marking system and CLC to Not Applicable Not Applicable
+longer inappropriately become out of sync
+activates the JOB button
+Software Release notes for Part Number 404756 r01 SP3 Page 2 of 18
+
+Case# E00867 NAME Availability Webserver Type: Enhancement
+Summary Description Required Software Version (or later)
+Availability Webserver
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+View Availability screens and the Event Log screen via the Webserver.
+Software Release notes for Part Number 404756 r01 SP3 Page 3 of 18
+
+Case# E00905 NAME 7510 Lasers Now Supported by Type: Enhancement
+CLARiTY Pod
+Summary Description Required Software Version (or later)
+7510 Lasers Now Supported by CLARiTY Pod
+CCM CLARiSOFT
+Not Applicable 4.408 SP6
+Details:
+Software Release notes for Part Number 404756 r01 SP3 Page 4 of 18
+
+Case# E00908 NAME Arabic Date Improvements Type: Enhancement
+Summary Description Required Software Version (or later)
+New Arabic Date Formats Supported
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+The following date formats are now supported by the CLARiTY Laser Controller when
+using the Arabic Encryption:
+d (Day of month with no leading Zero)
+dd (Day of month with leading Zero)
+M (Calendar month with no leading zero)
+MM (Calendar month with leading zero)
+y(2010=0) (year of century with no leading zero)
+yy (2-digit year e.g. 14)
+yyyy (4-digit year e.g. 2014)
+The fields will have to be created in CLARiSOFT with the font 'Standard_Font_1_arabic'.
+These fields will also need the Encrypted Field set to 'CLARiTY.Encryption.Arabic' in
+CLARiSOFT.
+Software Release notes for Part Number 404756 r01 SP3 Page 5 of 18
+
+Case# E00910 NAME Barilla Dates Now Supported Type: Enhancement
+Summary Description Required Software Version (or later)
+Barilla Date is a special day offset of Julian Day + 400 days.
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+First, a special Script File will need to be installed on the Laser's MMC card, please see
+your Laser Technical Support Representative for this.
+Secondly, the Barilla date field will have to be created in CLARiSOFT with the following
+applied:
+1. Create a new Date field.
+2. In its Property Box, click on the 'Advanced' button.
+3. Remove all default Selected Formats.
+4. In the drop-down box at the bottom, select 'Claricom.BarillaJulianDate' and click Add.
+5. In this date field's Property Box's General TAB, ensure that the Field name is the same
+as that in the MMC Card Script file.
+Software Release notes for Part Number 404756 r01 SP3 Page 6 of 18
+
+Case# E00930 NAME CLC now provides indication of 'Laser Type: Enhancement
+Busy'
+Summary Description Required Software Version (or later)
+By means of a PC icon on the top right-hand corner of the CLC status bar.
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Whenever the CLC is waiting for a reply from the marking system, r01 SP3 and newer CLC
+software will provide an indication of this on the Status Bar, by way of an icon of a PC.
+A good example of this is when a new job is loaded via the CLC, this PC icon will remain
+visible for the duration of vector rendering.
+It is advised not to attempt changing any parameters via the CLC when this icon is
+present.
+Software Release notes for Part Number 404756 r01 SP3 Page 7 of 18
+
+Case# B00878 NAME JOB Button on Home Screen Fixes Type: Bug Fix
+Summary Description Required Software Version (or later)
+Incorrect behaviour of Home Screen JOB button now rectified
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+JOB button now remains disabled during marking (RUNNING). Previously, there were
+instances that this became enabled which should not happen.
+JOB button is also now correctly disabled when viewing on Webserver
+Software Release notes for Part Number 404756 r01 SP3 Page 8 of 18
+
+Case# B00879 NAME Job Download Failure Fixes Type: Bug Fix
+Summary Description Required Software Version (or later)
+Two known issues that could cause Job Download Failure are now resolved
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Failure 1: There should only ever be 1 CLARiTY designed job on the laser at any one
+time (which should be over-written with each job select from CLARiTY Pod). If,
+somehow, more than 1 CLARiTY job managed to find its way on to the Laser, subsequent
+job selects would fail. This is now resolved by way of 'cleaning up' residual CLARiTY jobs
+on each new job select.
+Failure 2: If for some reason the CLARiTY Pod thought it lost power (e.g. removing the
+PCB battery), subsequent Job Selects would result in “Job Download Failed”, even if the
+“E1014 Time and Date may be incorrect” warning had been cleared. Now, once this
+warning has cleared, Job Selects will succeed.
+Software Release notes for Part Number 404756 r01 SP3 Page 9 of 18
+
+Case# B00880 NAME Daily Manufacturer Password Issue Type: Bug Fix
+Summary Description Required Software Version (or later)
+Manufacturer Password no longer, under certain conditions, requests Alpha
+characters.
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+If in CCFG Advanced Passwords were set to 'Alpha Only' an operator could not type in the
+daily Manufacturer Password, which is Numeric Only.
+Now, Manufacturer Password always requests Numeric Only no matter how Advanced
+Passwords are configured.
+Software Release notes for Part Number 404756 r01 SP3 Page 10 of 18
+
+Case# B00881 NAME Raise Error For Unsupported Laser Type: Bug Fix
+type
+Summary Description Required Software Version (or later)
+E6222 Error Now Raised when connected to unsupported laser types
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+CLARiTY Pod does not, at this point in time, support all Laser types.
+If a CLARiTY pod is connected to an unsupported Laser type, the FAULT "E6222 - The
+Laser Type XXXXX; is not supported. Contact the technical support group for further
+support." is now raised.
+Previously, "E6219 Unsupported Laser System AOS" was incorrectly raised.
+Software Release notes for Part Number 404756 r01 SP3 Page 11 of 18
+
+Case# B00904 NAME Fixed Speed printing button Type: Bug Fix
+Summary Description Required Software Version (or later)
+By setting Yes/No correctly configures encoder/non-encoder usage
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Found at CLARiTY User Interface at Tools/Setup/Printhead/Line Speed.
+Previously, setting a value in Enter Fixed Speed or going into Configure Manually and
+configuring encoder settings did not always correctly set encoder/non-encoder usage.
+Now, this works as expected.
+Within Configure Manually there is a new Fixed Speed Printing option which can be set to
+Yes or No. This now forces the changes to work. Furthermore, if you are already
+running via encoder, simply entering a Fixed Print Speed automatically sets the Fixed
+Speed Printing option to Yes. Also, by using Configure Manually, CLARiTY automatically
+sets Fixed Speed Printing to No.
+Software Release notes for Part Number 404756 r01 SP3 Page 12 of 18
+
+Case# B00907 NAME Grid or Dot Printing of 2D barcodes Type: Bug Fix
+Summary Description Required Software Version (or later)
+CLARiSOFT setting is now adhered to by CLARiTY Laser Controller
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+In CLARiSOFT there is a setting of Barcode Printing in the Property Box of Datamatrix &
+QR barcodes.
+High Quality = Grid style printing.
+High Speed = Dots style printing.
+This setting is now correctly adhered to by the CLC. Previous versions of CLC software
+always printed in Grid style, no matter what the setting in CLARiSOFT
+Software Release notes for Part Number 404756 r01 SP3 Page 13 of 18
+
+Case# B00912 NAME Arabic Date Fix Type: Bug Fix
+Summary Description Required Software Version (or later)
+Download & Selecting Arabic Encrypted Dates now load without fault
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+With previous revisions of CLC software, Arabic encrypted dates that were
+Download&Selected from CLARiSOFT would result in the CLC faulting out with ‘Job
+Conversion Failed’, where Download (only) and Print to File would work without fault.
+Download&Select from CLARiSOFT now also works without issue.
+Software Release notes for Part Number 404756 r01 SP3 Page 14 of 18
+
+Case# B00913 NAME Dates & Day Rollover Issues Fixed Type: Bug Fix
+Summary Description Required Software Version (or later)
+Dates & Day Rollover Issues Fixed
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Under certain conditions with previous revisions of CLC software, Day Rollovers would
+cause erratic and incorrect behaviour. Some dates would increment 2 days instead of 1
+and in the specific case of formatting a Calculated Date with Fixed Text an Application
+Error would happen at day rollover.
+All dates now rollover without issue
+Software Release notes for Part Number 404756 r01 SP3 Page 15 of 18
+
+Case# B00929 NAME Very Large jobs would previously not Type: Bug Fix
+load from the CLC
+Summary Description Required Software Version (or later)
+CLC could also enter E6220 Laser Marking Head Absent.
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Very large jobs would never load even though they would appear to have done so at the
+CLC, with no indication otherwise. This would cause confusion as to why the previous
+job was still being printed.
+Now, jobs over the maximum packet size are partitioned into multiple smaller messages
+(buffered) as they are sent down, so even very large jobs load and print without issue,
+provided all fields are within the marking area and the key-switch is not toggled during
+job loading.
+Jobs with up to 200 fields have been tested, note: this is the maximum number of fields
+allowed by CLARiSOFT.
+Jobs that take up to 10 minutes to load have been tested.
+Software Release notes for Part Number 404756 r01 SP3 Page 16 of 18
+
+Case# B00931 NAME Toggling the key-switch no longer Type: Bug Fix
+inappropriately activates the JOB
+Summary Description Required Software Version (or later)
+This could cause the marking system and CLC to become out of sync
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+The Home Screen's JOB button should remain grey (and un-selectable) when a new job is
+being loaded (and when in RUNNING state).
+It was found that if the key switch was toggled during job selection (i.e. while the
+marking system was calculating its vectoring), the JOB button would become selectable
+(black). This was incorrect behaviour.
+During job selection, toggling the key switch no longer enables the JOB button at
+inappropriate times.
+Note: It is still ill-advised to toggle the key-switch during job selection.
+Software Release notes for Part Number 404756 r01 SP3 Page 17 of 18
+
+Update Procedure
+In order to update a machine with a previous software revision to the latest you should use
+a USB memory device or the latest CLARiTY Configuration Utility.
+a) To use a USB memory device, the CAB update file requires copy and pasting into a
+‘CLARITYupdate’ folder in the root of the USB device. Insert the USB device into the port
+on the printer and after a short while the screen may show an option to load new
+software, depending on the printer settings in CCFG. If it does select ‘Yes’ then select the
+required update, press ‘OK’ and follow on-screen instructions. If it does not, keep the USB
+device in the printer and on the printers User Interface scroll to
+Tools\Setup\Control\CLARiTY Update, select the required update and press ‘OK’ and follow
+on-screen instructions.
+b) To use the CLARiTY Configuration Utility, start the utility, and connect it to the printer
+you wish to update. Ensure that the CLARiTY Configuration Utility has a valid TCP/IP
+connection to the printer; this can be observed by the printer icon turning green, and the
+"Active Connection" message being displayed in the status pane.
+Right click on the name of the coder you wish to update and select the CLARiTY Update
+option. Then locate the file with the same name as the part number above, and the
+CLARiTY Update will then proceed automatically.
+Software Versions
+CLARiTY 4.03.00 (17204-38089)
+Boot Loader 1.00.00 (0015)
+Operating System Version 6.00.00 (0018)
+Known Issues with 404756 r01 SP3
+None known.
+Software Release notes for Part Number 404756 r01 SP3 Page 18 of 18

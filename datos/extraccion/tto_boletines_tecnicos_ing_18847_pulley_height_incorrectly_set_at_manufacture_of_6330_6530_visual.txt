@@ -1,0 +1,124 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Ing\18847 - Pulley Height Incorrectly Set at Manufacture of 6330, 6530.pdf
+# cifrado=False bloques=6 caracteres=5208
+
+Field Service Bulletin
+000018847
+FSB #:
+Affected Model Categories
+1
+Version:
+Dataflex.6330/6530
+6/26/2024
+Published:
+dataflexsupport@videojet.com
+Contact:
+Pulley Height Incorrectly Set at Manufacture of 6330, 6530
+Related Escalations
+This bulletin addresses the following escalations:
+TS24062143343 - 6x30 pivot assembly collides with motor pulley
+Videojet Global Technical Support and Manufacturing have identified the root cause of cus -
+tomer reported instances of a 6330/6530 pivot arm colliding with or rubbing on the rear motor pul -
+ley. This issue is the result of a manufacturing tool being of the incorrect dimensions. Figure 1
+depicts the pivot arm rubbing on the motor pulley of an affected left hand printer (Figure 1, left)
+and the markings it made on the pivot arm (Figure 1, right). Some black markings may also be
+seen on the motor pulley.
+Affected Units
+Investigative data suggests the tool of incorrect dimension has been in use since product
+launch. While all previously manufactured units are potentially affected, the issue is more likely
+on left hand units due to slight differences in behavior between left hand and right hand units.
+Manufacturing Changes
+The correct tool is now in use for setting the pulley height on the motor shaft as of the new unit
+and spare part serials listed in Table 1.
+Disclaimer
+The contents of this bulletin and any linked documents are provided as a convenience to highlight useful information and troubleshooting tips.
+When working with a product, always consult the product user manual and follow the product safety precautions and recommendations, including
+using Personal Protective Equipment when necessary. If you have any questions or are not experienced in using or servicing the Videojet equip -
+ment this document references, contact Videojet for assistance.
+© 2024 Videojet Technologies - Page 1 of 6 -
+
+Table 1: Beginning Serials
+Part or Coder Serial
+32/53mm Printer 2416919001TZH
+107mm printer 2417318001TZH
+Spare 32/53mm motor 24168
+Spare 107mm motor  24174
+Figure 1: Pivot arm rubbing with rear motor pulley.
+Symptoms
+Possible symptoms of this issue would arise soon after installation and may include:
+l
+Visible markings on the pivot arm or motor pulley from these rubbing one another, such as in
+Figure 1.
+l
+Physical damage to these parts.
+l
+Printer faults, such as (E3236) Printhead Carriage Position Error.
+l
+Being unable to print a full 75mm long image in intermittent mode.
+Corrective Action
+l
+Where printers in the field exhibit the listed symptoms and have visible damage, adjust the
+linear slide as described in Pivot Assembly Arm Damage, E3236, Unable to Print Longer
+Messages (6330, 6530) .
+l
+There is no need to proactively adjust any printer that is not displaying the listed symptoms.
+Tools Required
+2.5mm Allen wrench/Hex Key
+© 2024 Videojet Technologies - Page 2 of 6 -
+
+Related Knowledge Articles
+Pivot Assembly Arm Damage, Unable to Print Longer Messages (6330, 6530) 4
+© 2024 Videojet Technologies - Page 3 of 6 -
+
+Article #: 000018840
+000018840
+Article #:
+Applies to Models
+2
+Revision:
+Dataflex.6330/6530
+6/26/2024
+Published:
+Issue- Problem
+Type:
+Pivot Assembly Arm Damage, Unable to Print Longer Messages (6330, 6530)
+l
+Visible markings on the pivot arm or motor pulley from these rubbing one another, such as in
+Figure 1.
+l
+Possibly unable to print a full 75mm long image in intermittent mode.
+l
+Possibly printer faults, such as (E3236) Printhead Carriage Position Error.
+See Solution for mitigating a printer with these symptoms. The root cause for this has been iden -
+tified as described in Pulley Height Incorrectly Set at Manufacture of 6330, 6530 .
+Figure 1: Pivot arm rubbing with rear motor pulley.
+Solution
+Before making adjustments, check the pivot arm and rear motor assemblies for marking or dam -
+age that indicates these are making contact.
+l
+If no damage is present and the printer is asserting faults, follow standard troubleshooting for
+those faults. For E3236, see 6330/6530 - Printhead Carriage Position Error (E3236) .
+l
+If there is damage as shown in Figure 1 or if the pivot arm and rear motor are touching with
+no gap at all between, proceed to Adjusting the Linear Slide.
+Adjusting the Linear Slide
+1. Power the printer OFF.
+2. Remove the cassette from the printer.
+© 2024 Videojet Technologies - Page 4 of 6 -
+
+3. Loosen each of the screws securing the linear slide by one turn.
+l
+You can manually slide the printhead across the linear slide to access each screw.
+l
+There are six screws to loosen, except on the 107mm, which has only four.
+Figure 2: Linear slide screw location
+4. Once all six screws are loosened, apply force to the linear slide, moving it away from
+the side that houses the pulleys, as shown by the arrows in Figure 3. Move it as far as it
+will allow - how far it can move is limited by the linear slide hole size and screw being
+used, so there is no way to move it too far.
+Figure 3: Direction in which to apply force to the linear slide.
+© 2024 Videojet Technologies - Page 5 of 6 -
+
+5. While continuing to apply force, re- tighten the outer screw at each end.
+Figure 4: The outer screws.
+6. Re- tighten the remaining screws.
+© 2024 Videojet Technologies - Page 6 of 6 -

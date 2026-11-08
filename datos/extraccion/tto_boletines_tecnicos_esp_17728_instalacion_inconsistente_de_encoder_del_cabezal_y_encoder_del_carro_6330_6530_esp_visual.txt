@@ -1,0 +1,116 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: Boletines Tecnicos\Esp\17728-Instalacion Inconsistente de Encoder del Cabezal y Encoder del Carro 6330, 6530 (Esp).pdf
+# cifrado=False bloques=4 caracteres=7054
+
+Instalación inconsistente del encoder
+del cabezal de impresión y del encoder
+del carro (6330, 6530)
+Información
+Tipo de boletín Boletín de Servicio de Campo
+Videojet Technologies, Inc. Field Service Bulletin
+ FSB # 17728
+Visión general
+Instalación inconsistente del codificador del cabezal de impresión y
+del codificador del carro (6330, 6530)
+Los equipos de soporte técnico e ingeniería de Videojet han determinado que en algunas compilaciones
+recientes de 6330 y 6530, los encoders del cabezal de impresión y de los motores del carro se montaron
+de manera inconsistente. La instalación inconsistente del encoder puede evitar que el encoder
+permanezca sincronizado con precisión con el motor. Si esto ocurre, es posible que el software ya no
+controle con precisión el motor y puede generar un "Error de posición del carro del cabezal de impresión".
+Si bien hay otros problemas que pueden hacer que un 6330 o 6350 afirme un error de posición del carro
+del cabezal de impresión, en el caso de las unidades afectadas por este problema de construcción, la
+única resolución ha sido reemplazar el motor del cabezal de impresión con encoder (impresoras de 32
+mm / 53 mm / 107 mm) o el motor del carro con encoder (impresoras de 107 mm).
+Unidades afectadas
+Las unidades potencialmente afectadas se fabricaron entre el 23 de marzo de 2020 y el 4 de
+agosto de 2021.
+Las unidades potencialmente afectadas llevan números de serie entre 2008511002TZH y
+2122110014TZH.
+Solo algunas unidades en estos rangos se ven afectadas.
+A pesar de las instalaciones inconsistentes de encoders que abarcan más de un año, no anticipamos
+que todas las unidades fabricadas en este rango tengan problemas. Los datos recopilados y nuestras
+pruebas internas sugieren que las impresoras en aplicaciones continuas no deberían tener problemas.
+Otros factores nos llevan a creer que ni todas las impresoras tendrán problemas y los casos reales de
+unidades sintomáticas son limitados.
+Cambios en la fabricación
+Desde el 5 de agosto de 2021, la Manufactura Videojet ha mejorado el proceso de instalación del
+encoder para evitar que se produzcan más problemas.
+Número de serie de la impresora de inicio - 2122110015TZH
+Repuestos de arranque - Anteriormente, los motores de repuesto tenían un número de lote en
+la caja. Ahora, los motores de repuesto con la instalación del encoder corregida tendrán el
+número de serie real del motor en la caja como se muestra en la Figura 1 .
+
+Figura 1: Numero serial y punto verde en el motor (izquierda) y en la caja del motor de
+repuesto (derecha).
+ La caja de repuestos y la etiqueta en el motor contarán con un punto verde para ayudar a
+identificar la instalación corregida del codificador, pero esto solo será durante los primeros
+seis meses. La presencia del número de serie en la caja, sin embargo, será un medio
+permanente para identificar la instalación del codificador corregido.
+Productos TTO. DATAFLEX.6330/6530
+afectados
+Síntomas
+Síntomas
+El síntoma más prominente de un encoder que se monta en el motor de manera inconsistente es la
+impresora 6330/6530 al azar y con frecuencia afirmar "Error de posición del ca rro del cabezal de
+impresión" durante el funcionamiento normal. En la mayoría de los casos, apagar y reencender la
+impresora borra temporalmente la falla, pero la falla recurrente dificulta en gran medida el
+funcionamiento de la impresora.
+Acción
+correctiva
+Acción correctiva
+Para cualquier unidad que afirme un error de posición del carro del cabezal de impresión, ya sea en el
+rango afectado o no, realice las siguientes acciones para asegurarse de que se descartan o identifican
+todas las posibles causas raíz.
+1. Siga todas las acciones estándar de solución de problemas como se describe en el
+procedimiento 6330/6530 - Error de posición del carro del cabezal de impresión (E3236).
+2. Si aún no se ha identificado una causa raíz, realice las acciones descritas en Solución de
+problemas del Conjunto del Motor con Encoder.
+Solución de problemas del Conjunto del Motor con Encoder
+Si siguiendo todos los pasos 6330/6530 – Error de posición del carro del cabezal de impresión (E3236)
+no identifica una causa raíz, lo siguiente puede ayudarle a identificar si el motor con encoder puede ser
+la causa raíz.
+1. Retire la impresora del soporte y acuéstela sobre una superficie plana.
+2. Retire la tapa trasera de la impresora.
+3. Retire la PCB principal.
+4. Coloque la oreja junto al encoder del cabezal de impresión (impresoras de 32 mm/53 mm/107
+mm) y/o del encoder del carro (impresora de 107 mm).
+5. Deslice con cuidado y lentamente el cabezal de impresión a lo largo del deslizamiento lineal
+mientras escucha el encoder.
+Si escucha un ruido de raspado distintivo , esto implica que es probable que haya un problema
+con la instalación del encoder. Cuando el encoder está instalado correctamente, debe estar en
+silencio. Si está presente, tal ruido de raspado sería distinto y fácilmente identificable.
+
+Las Figuras 2 y 3 muestran las ubicaciones del codificador en los respectivos motores para
+ayudar a identificar dónde se debe apoyar la oreja.
+Figura 2: Ubicación del Encoder del Cabezal 32mm/53mm.
+Figura 3: Ubicación de los Encoders del Carro y del Cabezal 107mm.
+6. Si escucha el sonido de raspado, reemplace el motor respectivo con el encoder. Consulte la
+Tabla 1 para conocer los números de parte.
+Table 1: Partes de repuesto Motor, Encoder
+Part Number Descripción
+407873 Spare 32mm/53mm TT(iii) Printhead Motor w/Encoder Sensor
+408675 Spare 107mm_TT(iii) Printhead Motor
+408676 Spare 107mm_TT(iii) Carriage Motor
+
+Nota sobre Impresoras 107mm
+Dado que la impresora de 107 mm utiliza un encoder en cada motor, es posible que uno o
+ambos necesiten ser reemplazados .
+Elementos
+requeridos
+Autor Manuel Nevarez
+Enviar Preguntas
+la.tec@videojet.com
+a
+Disclaimer
+The contents of this email and any attachments are provided as a convenience to Videojet customers to highlight useful information and troubleshooting tips. When working with a
+product, always consult the product user manual and follow the product safety precautions and recommendations, including usin g Personal Protective Equipment when necessary. If
+you have any questions or are not experienced in using or servicing Videojet equipment, contact Videojet for assistance.
+Comentários
+En las últimas semanas, se enviaron al Soporte Técnico Global algunas impresoras que estaban
+ Internos
+experimentando la falla dond e se afirmó que se siguieron todos los pasos del artículo de solución de
+problemas. A los pocos minutos de que el Soporte Técnico Global inspeccionara las impresoras, se
+determinó que la causa raíz era algo que se mencionaba en el artículo de solución de p roblemas y
+nada que ver con el motor con encoder . Hay muchas causas potenciales para la falla, por lo que es
+imperativo que se sigan los pasos adecuados para la solución de problemas y no simplemente centrar
+la atención en el motor con codificador, incluso si se encuentra dentro del marco de tiempo.
+Título Instalación Inconsistente del Encoder del Cabezal y Encoder del Carro (6330, 6530)

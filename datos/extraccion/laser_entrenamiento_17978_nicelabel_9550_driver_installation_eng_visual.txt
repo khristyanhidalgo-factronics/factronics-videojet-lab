@@ -1,0 +1,83 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\17978-Nicelabel 9550 Driver Installation (Eng).pdf
+# cifrado=False bloques=6 caracteres=4762
+
+27/12/2022 1 1:31 Knowledge Article
+Nicelabel 9550 Driver Installation
+H e a d e r
+V i d e o j e t T e c h n o l o g i e s , I n c . K n o w l e d g e A r t i c l e
+C o n t e n t
+N i c e l a b e l 9 5 5 0 D r i v e r I n s t a l l a t i o n
+Nicelabel software requires a Nicelabel 9550 driver to use it with the V ideojet 9550.
+1 . If you have not done so already , go to the Loftware/Nicelabel website
+( https://www .nicelabel.com/downloads/printer-drivers ) and download the Nicelabel 9550 driver .
+2 . Unzip the downloaded Nicelabel V ideojet driver executable file.
+3 . Locate the folder to which the PrnInst driver file was unzipped.
+4 . Double click the PrnInst Printer Install Wizard application.
+5 . When the Printer Install Wizard opens, select Next .
+6 . Choose the V ideojet printer model, then select Next .
+7 . Select Network Port then select Next .
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Nicelabel-9550-Driver-Installation/p 1 /6
+8 . Select the Manual button.
+
+27/12/2022 1 1:31 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Nicelabel-9550-Driver-Installation/p 2 /6
+9 . Select the Create a new network port radio button, then select Next .
+10 . Select Advanced Port Monitor from A vailable port types, then select New Port .
+1 1 . Enter a distinctive name into the Name field.
+12 . In the TCP/IP Data section, enter the Network Name or IP Address of the printer and then
+enter 3001 into the Port Number field.
+
+27/12/2022 1 1:31 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Nicelabel-9550-Driver-Installation/p 3 /6
+Once done it show look something like example below .
+13 . Select OK on the Advanced TCP/IP Port Configuration window .
+After the configuration is successful, the created port will display under A vailable Port Directly . A vailable
+ports can be found under the Printer Properties of the installed driver , located under the POR T tab.
+P r i n t er S et t i n g s
+This section explains the Printer Settings required once the driver is installed for NICELABEL. It is
+recommended that all settings to be controlled by the printer are set in Clarity Configuration Manager .
+The only settings that should be set in the driver are Media Width, Height, and Rotation. All others will
+be set to Use setting set on printer .
+1 . Click the Windows Start Button on the taskbar , then select Settings . The Windows Settings
+menu will display .
+2 . Select Devices , then select Printers & Scanners .
+3 . Select the Nicelabel driver , then select Manage .
+
+27/12/2022 1 1:31 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Nicelabel-9550-Driver-Installation/p 4 /6
+4 . Select Page Setup.
+5 . Set the Media Width, Height and Rotation to the desired values.
+6 . Ensure Override internal printer orientation is toggled ON .
+7 . Ensure Mirror is set to Use setting set on printer .
+8 . Select Print Options and ensure all settings are set to Use setting set on printer .
+
+27/12/2022 1 1:31 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Nicelabel-9550-Driver-Installation/p 5 /6
+9 . Select Print Mode and ensure all settings are set to Use setting set on printer .
+10 . Ensure that Cancel all current and queued printing documents is toggled ON . This will
+cancel all jobs that are in the printer buf fer before new jobs are loaded to the printer .
+1 1 . Keep all other settings in this section (Graphic Option, Custom Commands, Maintenance, and
+Units) at their default values.
+T r o u b l esh o o t i n g
+If after configuring these settings there are some menus that change when a new print job is sent to the
+printer , this is caused by a setting within the Nicelabel software that is set incorrectly and is af fecting
+label jobs using this printer driver .
+T r i a g e N e x t
+S t e p s
+T r i a g e
+R e c o m m e n d e d
+P a r t s
+
+27/12/2022 1 1:31 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Nicelabel-9550-Driver-Installation/p 6 /6
+D i s c l a i m e r
+T he contents ofthis em ailand any attachm ents are provided as a convenience to V ideojetcustom ers to highlightusefulinform ation and troubleshooting tips.W hen w orking w ith a pro duct,
+alw ays consultthe productuser m anualand follow the productsafety precautions and recom m endations,including using P ersonalP rotective E quipm entw hen necessary.Ifyou have any
+questions or are notexperienced in using or servicing V ideojetequipm ent,contactV ideojetfor assistance.
+I n t e r n a l
+C o m m e n t s
+T i t l e Nicelabel 9550 Driver Installation
+U R L N a m e Nicelabel-9550-Driver-Installation
+P e r m a n e n t U R L
+Right click and copy link to share this Article's URL
+f o r L i g h t n i n g

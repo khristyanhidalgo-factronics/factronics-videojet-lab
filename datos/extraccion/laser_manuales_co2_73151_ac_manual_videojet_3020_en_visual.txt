@@ -1,0 +1,1226 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\73151-AC_Manual_Videojet_3020_EN.pdf
+# cifrado=False bloques=75 caracteres=69412
+
+Operating Instructions
+Videojet 3020
+P/N: AL-73151
+Revision: AC, June 2012
+
+'R'@/? @O++<++]q]q+<+?]qr+2?<?<]]q<99.+}9999<<<<10q]]]q]]r!!!#"'7326 6 P9Vvb-E/:F9}R Z|?@4I
+Xxy"EGXXY"& $-&%% !!H@
+
+Copyright 2012, Videojet Technologies Inc. (herein referred to as All rights reserved. Videojet).
+This document is the property of Videojet Technologies Inc.proprietary information owned by and contains confidential and Videojet. Any unauthorized copying, use or disclosure of it
+without prior permission of Videojet is strictly prohibited.
+Videojet Technologies Inc.
+1500 Mittel BoulevardPhone:1-800-843-3610Wood Dale, ILFax:1-800-582-1343INTL: Canada, France, Germany, Ireland, Japan, Spain, Offices - USA: Atlanta, Chicago, Los Angeles, Philadelphia
+60191-1073 USAIntl Fax:630-616-3629Singapore, The Netherlands, The United Kingdomwww.videojet.comDistributors worldwide
+
+Table of Contents
+1 Safety Instructions...................................................... 7
+1.1 Symbols Used................................................................................. 71.2 Laser Classes................................................................................. 8
+1.3 Intended Use................................................................................. 101.4 Maintenance and Service.............................................................. 11
+1.5 Safety Devices and Warning Lights.............................................. 121.6 Dangers to Eyes and Skin............................................................. 14
+1.7 Safety Information for Zinc Selenide Lenses................................ 151.8 Adjustment/Modification of the Marking Field............................... 16
+1.9 Fire and Explosion Hazard............................................................ 171.10 Electrical Safety.......................................................................... 17
+1.11 Decomposition Products............................................................. 181.12 Cleaning Agents.......................................................................... 18
+1.13 Warning and Information Labels................................................. 19
+2 Installation................................................................ 21
+2.1 Installation and Start-up................................................................ 212.2 Transport and Storage.................................................................. 21
+2.3 Unpacking..................................................................................... 222.4 Installation Conditions................................................................... 22
+2.5 Cooling.......................................................................................... 232.6 Fume extractor.............................................................................. 23
+2.7 Interfaces of the Laser System..................................................... 242.8 Product Detector........................................................................... 24
+2.8.1 Adjusting the Sensitivity Control.................................................................. 24
+2.9 Shut-Down.................................................................................... 26
+2.9.1 Temporary Shut-Down................................................................................. 262.9.2 Final Shut-Down.......................................................................................... 26
+3 Description of the Laser System.............................. 27
+3.1 The Marking of the Product Surface............................................. 273.2 The Structure of the Laser System............................................... 28
+3.3 Technical Data.............................................................................. 293.4 Working Distance and Marking Field............................................ 31
+4 Operating the Laser System..................................... 33
+4.1 Operation of the Laser System..................................................... 334.2 Elements on the Laser System..................................................... 34
+4.3 System States of the Laser System.............................................. 35
+06/12 - Rev. AC 1
+
+Table of Contents
+4.4 Switch-On/Off of the Laser System............................................... 36
+4.4.1 Switch-On.................................................................................................... 364.4.2 Switch-Off.................................................................................................... 36
+5 Maintenance............................................................. 37
+5.1 General Notes Concerning Maintenance...................................... 375.2 Maintenance Plan......................................................................... 38
+5.3 Cleaning the Focusing Module...................................................... 39
+5.3.1 Disassembly of the Focusing Module.......................................................... 405.3.2 Cleaning the Focusing Module.................................................................... 40
+5.3.3 Mounting the Focusing Module.................................................................... 40
+5.4 Exchange of the Focusing Module................................................ 415.5 Cleaning the Housing.................................................................... 42
+5.6 Exchange of the Filter Mat............................................................ 425.7 Update of the Touch Control Software.......................................... 42
+5.8 Update of the QMark Software...................................................... 435.9 Protocols for Maintenance, Repair and Replacement................... 45
+6 Malfunctions............................................................. 55
+6.1 Notes............................................................................................. 556.2 Malfunction Descriptions............................................................... 56
+7 Appendix.................................................................. 59
+7.1 Interfaces...................................................................................... 59
+7.1.1 Encoder........................................................................................................ 597.1.2 Ethernet....................................................................................................... 60
+7.1.3 Digital I/O..................................................................................................... 60
+7.1.3.1 Output Specification:........................................................................................... 627.1.3.2 Input Specification:............................................................................................. 62
+7.1.4 Product Detection........................................................................................ 62
+7.2 Drawings....................................................................................... 637.3 Safety Data Sheets....................................................................... 64
+7.3.1 Zinc-Selenide (ZnSe) + Thorium Fluoride (ThF )........................................ 65
+4
+2 06/12 - Rev. AC
+
+Preface
+Preface
+This manual...
+...contains all information required for the safe operation, remedy of minor malfunctions andmaintenance of the laser system. The operation manual is always enclosed to every laser sys-
+tem. This operation manual is intended for the the laser system.trained operation and service personnel of
+This operation manual is subject to technical modifications for improvement or technical prog-ress without notice.
+Before starting your work carefully read the chapter "Safety Instructions"!
+NoteThe printed safety instructions must be stored near the laser system, easilyaccessible for the operator.
+Make sure that you have understood all notes. In case of any questions please contact VideojetTechnologies Inc. directly.
+Strictly follow the instructions!
+If you need help...
+...please contact Videojet Technologies Inc. at 1-800-843-3610 (for all customers within theUnited States). Outside the U.S., customers should contact their Videojet Technologies Inc.
+distributor or subsidiary for assistance.
+Videojet Technologies Inc.1500 Mittel Boulevard
+Wood Dal IL 60191-1073, USAPhone (USA): 1 800 843 3610
+International: +1 630 860 7300
+Fax (USA): 1 800 582 1343International Fax: +1 630 616 3629
+Website: www.videojet.com
+06/12 - Rev. AC 3
+
+Preface
+Caution Laser Radiation!
+Caution!
+With open delivery systemdangerous laser radiation
+class 4 might be released!
+This might cause severe burns of the eyesand the skin as well as damage to objects!
+Thoroughly read this operation manualand strictly follow the safety instructions!
+4 06/12 - Rev. AC
+
+Preface
+Contents
+1Safety Instructions
+2Installation
+3Description of the Laser System
+4Operating the Laser System
+5Maintenance
+6Malfunctions
+7Appendix
+06/12 - Rev. AC 5
+
+Preface
+6 06/12 - Rev. AC
+
+Chapter 1Safety Instructions
+1 Safety Instructions
+1.1 Symbols Used
+Dangerrefers to an immediately impending danger. If the danger is not avoided, itcould result in death or severe (crippling) injury.
+Warningrefers to a possibly dangerous situation. If it is not avoided, it could result indeath or severe injury.
+Carefulrefers to a possibly dangerous situation. If it is not avoided, it could result inslight or minor injury. May also be used to warn of damage to property.
+Cautionrefers to a possibly harmful situation. If it is not avoided, damage could becaused to the product or to something in its environment.
+Importantrefers to handling tips and other particularly useful information. This does notsignify a dangerous or harmful situation.
+Laserradiationrefers to the emission of laser radiation and therefore to a possibly danger-ous situation. Please comply exactly with the safety instructions! Failure to
+comply with the instructions could result in minor or major injuries to the eyesor to the skin, together with damage to property.
+Note:
+Registered trademarks, patterns, designs and patents are not indicated explicitly in this manu-al. This does not mean that they are out of copyrights or that they may be used freely.
+06/12 - Rev. AC 7
+
+Safety InstructionsChapter 1
+1.2 Laser ClassesThe Complete Laser System
+The laser itself is classified as class 4 laser system. Up to the beam outlet thesystem acts as a class 1 laser system closed in lasernormal operation
+1
+.
+If the beam outlet including the object to be marked is shielded appropriately, theclosed laser system acts as a class 1 laser system complete, in normal operation
+1
+protection is required for operation. The shielding prevents emerging of laser radiation or laser and no additional
+beam reflexes.
+NoteThe shielding is not included in the scope of delivery!
+Laser radiationThe beam path must always be closed, also if there is no product in front ofthe laser lens.
+max. average power densityenergy density
+at the beam outletup to 1.5 x 10
+The Laser Source
+The CO laser - hereinafter called laser - is operated in pulsed or continuous wave operation.The laser itself is classified as class 4. It produces invisible (infrared) radiation which is ex-
+tremely dangerous for the eye and dangerous for the skin.
+2 In pulsed operating mode the pulse frequency adjusts between 50 Hz and 20 kHz. The actualoperating mode and pulse frequency depends on the application.
+The following values can be reached (no specification):
+6 2 2 2
+ W/m 7 x 10 J/m (at 1 kHz and50 % duty cycle
+a
+)
+9 2 6 2
+in focusup to 5 x 10
+ W/m 3 x 10 J/m (at 1 kHz and50 % duty cycle
+a
+)
+Laser radiationCaution!
+As soon as the closed shielding or the housing of the laser are opened any-where the complete laser system is set to class 4!
+In that case appropriate measures have to be taken in order to protect peopleworking in the laser area against too high radiation. Make sure to meet the lo-
+cal regulations regarding protection against laser radiation.
+a.duty cycle: The ratio between the period of laser emission and the operation terms.
+1.Normal operation does not include service, maintenance nor repairs.
+8 06/12 - Rev. AC
+
+Chapter 1Safety Instructions
+LaserradiationCaution with modifications!
+EN 60825, part 1, »Safety of laser systems«, section 4.1.1 says:
+If a modification by the user to a laser system previously classified in accor-dance with this standard leads to a change of its performance data and/or its
+intended use that person or organization performing the modification is re-sponsible for a new classification and labeling of the laser system.
+06/12 - Rev. AC 9
+
+Safety InstructionsChapter 1
+1.3 Intended Use
+The laser system must only be used for the treatment of material surfacesare locally heated by intensive class 4 laser radiation and are modified thereby. These systems. The surfaces
+are mainly applied for marking of product surfaces (expiry dates, batch printing, serial numbers,etc.).
+The radiation produced by the laser system is of high energy and therefore improper use rep-resents a danger to persons or objects!
+LaserradiationNever expose human beings or animals to laser radiation! This might result in severe burns of eyes or skin.
+Never expose flammable materials to laser radiation! Always ensure appropriate shielding of the laser beam! Errors during
+marking on flammable materials (e.g. paper) might cause fires. Take suit-able safety measures by installing e.g. smoke or fire detectors, or similar!
+Never expose reflecting surfaces to laser radiation! The reflected laser beam may cause the same dangers - in individual cas-
+es even greater dangers - as the original laser beam.
+Never expose unknown materials to laser radiation! Some materials (e.g. polyethylene, polypropylene, glass) are easily pene-
+trated by the laser beam, although they seem to be opaque for the human eye.
+Danger of explosion! Make sure that the laser area is free of explosive materials or vapors!
+For safety reasons arbitrary modifications or changes to the laser system are forbidden!
+If a modification made by the user to a previously classified laser system leads to a change of its performance data and/or its intended use that per-
+son or organization performing the modification is responsible for a new classification and labeling of the laser system. The person or organization
+is then regarded as »manufacturer«.
+The laser system must be operated with open laser and/or open beam delivery system by specially trained personnel only!
+Make sure that the laser protection rules are always observed!
+10 06/12 - Rev. AC
+
+Chapter 1Safety Instructions
+1.4 Maintenance and Service
+The maintenance tasks described hereinafter should only be carried out by personnel. The service tasks are exclusively to be carried out by service personnel of VIDEO-especially trained
+JET or one of their representatives. During these works the laser system has to be operated inclass 4. The Unfallverhütungsvorschrift (Accident Prevention Regulations) 46.0 »Laser Radi-
+ation« (BGV B2) says that the responsible trade cooperative association and the authority re-sponsible for occupational safety (Trade Supervisory Office) have to be given notice of class
+3B or 4 laser systems before initial operation.
+Note:
+ImportantGive notice of the laser system to the responsible trade cooperative asso-ciation and the Trade Supervisory Office before initial operation.
+Have a person responsible for the safety of the laser system trained as la-ser safety officer and inform the trade cooperative association in writing
+about this person.
+In order to facilitate safe performance of all necessary maintenance and service tasks withoutassistance and to ensure highest safety for the operating and maintenance personnel we offer
+special training seminars.
+Training for technicians:The trainee gains the knowledge required to perform all maintenance and service tasks at
+the laser system safely and professionally without assistance.
+Combined training:In addition to the knowledge gained during the training for technicians the person is trained
+as laser safety officer. This training is accepted by the trade cooperative association (see above).
+Ask for free information material!
+Please be aware that (in Germany) the personnel operating the laser system must be instruct-ed according to §12 of the Health and Safety at Work Act and §4 BGV A1 (Prevention Princi-
+ples) at least once a year.
+06/12 - Rev. AC 11
+
+Safety InstructionsChapter 1
+1.5 Safety Devices and Warning Lights
+The complete laser system includes various safety devices and warning lights which shall pre-vent damages to people or objects. There must not be any alterations to safety devices nor
+warning lamps (see section "Laser Classes" on page 8)!
+Safety Devices
+Warning Lights
+Key-operated switchprevents operation of the laser system by unauthorized people.The "switch" is closed by entering a password in the Touch Con-
+trol. Make sure that the login information is available to authorizedpersonnel only!
+Beam shutteris located within the marking head and prevents the emission of la-ser radiation.
+Interlock switch(es)open(s) the safety circuit. The marking process is stopped imme-diately. If several interlock switches are connected: Laser radia-
+tion cannot be emitted if at least one interlock switch is opened.
+All safety doors, protective covers, etc. must be safeguarded byinterlock switches. Number and position of the interlock switches
+are system-specific.
+For wiring the safety circuit single wires must be used and theymust be laid separately to avoid the risk of short-circuits.
+For the marking process all interlock switches must be closed. Inan interlock switch is open the message "Error Interlock open" is
+displayed in the software.
+After closing the interlock switch the marking process can be con-tinued after a delay of 5 seconds.
+We recommend the interlock monitoring module for proximity safe-ty switches AES 1235 in combination with the magnetic guard door
+BNS 33 and the actuating magnet BPS 33 by Schmersal.
+The interlock circuit must be checked regularly.
+NoteThe input »Interlock« is to be used exclusively for connecting external inter-lock switches. It is not intended for controlling the laser system. For that pur-
+pose please use the input »Shutter Lock«.
+Red light ("bumper")on the head of the laser system lights up when the emission oflaser radiation is possible.
+Red LED"Laser emission"on the keypad of the laser system, lights up when the emission oflaser radiation is possible.
+12 06/12 - Rev. AC
+
+Chapter 1Safety Instructions
+ImportantWhen installing the laser you must ensure that at least one of the warningLEDs is always visible.
+06/12 - Rev. AC 13
+
+Safety InstructionsChapter 1
+1.6 Dangers to Eyes and Skin
+The laser system produces class 4 laser radiation. the human eye. Therefore eyes and skin are endangered through high-energy laser radiation.Infrared laser radiation is not visible for
+High irradiation causes an extreme local heating and subject to special risks. High radiation intensity causes a local heating and burning of the cor-burning of the tissue. The eyes are
+nea and thus a reduction or loss of sight!
+Suitable safety goggles provide protection against direct, specularly reflected or diffusely scat-tered laser radiation.
+Suitable safety goggles are:
+designed for the wavelength range of the CO
+ laser of 10.6 system.μm. See name plate of the laser
+Careful with confusions! Safety goggles for other lasers, e.g. Nd:YAG laser, do not provide adequate protection
+2 against radiation of a CO
+People within the area of the lasergoggles must wear against laser radiation while carrying out maintenance, suitable safety
+adjustment or service work at the open laser housing and/or openbeam delivery system!
+Never look directly into the laser beam!
+ laser!
+designed for the power range of the laser. Values of maximum average power:
+2 Videojet 302012 W
+are designed for pulse and continuous wave operation.
+The skin can withstand higher radiation intensities than the eye. However - depending on theradiation period and radiation intensity - the tissue is destroyed through burns. Therefore pro-
+tect your skin by wearing adequate protective clothing!the laser radiation! Avoid the laser beam to get in contact with your clothing! Avoid any exposure of your skin to
+14 06/12 - Rev. AC
+
+Chapter 1Safety Instructions
+1.7 Safety Information for Zinc Selenide Lenses
+Zinc Selenide
+ laser marking systems available on the market.
+2
+NoteThere is no danger of radiation during normal handling and cleaning ofthe optical system!
+This material contains components which are dangerous to health!
+Zinc selenide is toxic when inhaled or ingested. Dust may lead to irritation of the eyes and therespiratory system. Do not eat, drink or smoke while handling zinc selenide. Wash hands thor-
+oughly afterwards.
+For detailed information see safety data sheet in the chapter "Appendix".
+Thorium
+CautionThe focusing module consists of coated zinc selenide and contains anextremely small amount of the radioactive substance thorium. This applies to
+all CO
+Thorium is a potential health hazard when inhaled or ingested. The thorium layer is embeddedwithin other layers within the lens. Thus no radioactive material can escape from the coating
+as long as the lens is intact. Avoid any surface scratches of the lens.
+In case of a broken lens......do not inhale material particles! In case of breaking of the lens please collect the fragments
+wearing gloves (avoid raising dust when sweeping up the pieces), pack the fragments into aclosed plastic bag and send them back to us for disposal.
+Maintenance of the focusing moduleInformation concerning the maintenance of the focusing module can be found in chapter "Main-
+tenance", section "Cleaning the focusing module".
+Please contact us if more information is required.
+06/12 - Rev. AC 15
+
+Safety InstructionsChapter 1
+1.8 Adjustment/Modification of the Marking Field
+Via the software the marking field of the laser can be modified in such a way that the laser beamcan possibly be directed to the shielding or onto other components or parts. Thus, surfaces ex-
+posed to irradiation can be damaged or destroyed.
+LaserradiationIf, as a result of the modification, the laser beam gets accessible the com-plete laser system is set to class 4 (see section "Laser Classes" on page 8).
+CautionFire and explosion hazard if there are flammable materials or explosiveatmospheres within the area of the laser beam.
+A password is required for changing the marking field (if the password protection has been ac-tivated in the software). The password can be changed subsequently by a user authorized for
+the corresponding user level.
+We explicitly point out that the person who will fulfil a modification of the marking field,will assume the full responsibility for any consequential damages and problems!
+16 06/12 - Rev. AC
+
+Chapter 1Safety Instructions
+1.9 Fire and Explosion Hazard
+1.10 Electrical Safety
+LaserradiationThe high output power of a class 4 laser can inflame various materials.Therefore, while performing maintenance and service work at the open la-
+ser housing and/or open beam delivery system, make sure that fire protec-tion measures were taken before starting the works!
+Paper (circuit diagrams, leaflets, posters on the walls, etc.), curtains whichare not impregnated fire retardantly, wooden boards or similar flammable
+materials can easily be inflamed by direct or reflected laser radiation.
+Make sure that the working area of the laser system is ers with flammable or explosive solvents or cleaning agents!free from contain- Unin-
+tended exposure of a container to intensive invisible laser radiation mighteasily cause fires or explosions.
+The laser system was designed in accordance with the general rules of technology includingregulations EN 61010 »Safety requirements for electrical equipment for measurement, control
+and laboratory use« and EN 60825-1 »Safety of laser products«.
+CautionDuring works at the open laser housing alive components are accessible!
+Make sure that rules and regulations for works on alive components are al-ways observed!
+All works at the open laser housing, especially at electrical components,must only be performed by specially trained personnel!
+06/12 - Rev. AC 17
+
+Safety InstructionsChapter 1
+1.11 Decomposition Products
+CautionWhen treating materials with laser radiation decomposition products are pro-duced which are dangerous to health!
+Through vaporization of materials fine dust and vapors are produced whichmight include hazardous decomposition products depending on type and
+composition of the respective materials.
+Therefore we highly recommend to install an fume extractor according to therespective requirements which is equipped with special dust and activated
+charcoal filters to ensure that the decomposition products are sucked offwhere they are produced.
+Protect yourself and your colleagues against hazardous decompositionproducts!
+CautionThe housing of the laser system is made of PC/ABS (polycarbonate withacrylonitrile butadiene styrene). This material can be corroded by aggressive
+substances.
+To clean the housing use only a damp cloth (water or mild detergent solu-tion).
+Acetone must only be used for cleaning the lens surface and must not get incontact with the housing!
+A fume extractor also prevents contamination and gradual destruction of optical elements ofthe beam delivery system by dust particles. We offer different fume extractors as accessories.
+1.12 Cleaning Agents
+18 06/12 - Rev. AC
+
+Chapter 1Safety Instructions
+1.13 Warning and Information Labels
+Label/SymbolPosition
+Left and right side of the housing, at theback end.
+Left and right side of the housing, at thefront end (above the focusing module).
+Inside
+Bottom side, close to the type plate.
+Bottom side of the laser system.
+INVISIBLE LASER RADIATION
+AVOID EYE OR SKIN EXPOSURE TO DIRECT OR SCATTERED RADIATION
+LASER CLASS 4(EN 60825-1/06.04)
+INVISIBLELASER RADIATION
+IS EMITTED FROMTHIS APERTURE
+CAUTION
+INVISIBLE LASER RADIATION WHEN OPEN.
+AVOID EYE OR SKIN EXPOSURE TODIRECT OR SCATTERED RADIATION.
+Attention!
+Alive unless mains line disconnected or switched
+off by main switch
+06/12 - Rev. AC 19
+
+Safety InstructionsChapter 1
+20 06/12 - Rev. AC
+
+Chapter 2Installation
+2 Installation
+2.1 Installation and Start-up
+In order to facilitate quick and easy start-up please prepare the place of installation such thatthe system can be installed:
+Proceed as described in section "Unpacking", page 22.
+Please provide all connections - as described in section "Installation Conditions" and in the documents you received upon order handling - in time.
+Install the system according to the description in the QUICK START GUIDE.
+In case of questions please contact us.
+2.2 Transport and Storage
+The laser system is a precision-made instrument and includes numerous electronic and opticalcomponents. Please avoid any mechanical stress (shock, vibrations, etc.) on the laser system!
+In case of questions concerning transport and storage please contact us.
+Transport
+Storage
+NoteThe company operating the laser system is responsible for the safe use ofthe laser system, especially for meeting the local codes and regulations
+regarding the operation of laser systems and their components (beam pro-tection, exhaust system, cooling, etc.).
+Videojet Technologies Inc. does not accept responsibility for any damagesdue to misuse of equipment, incorrect operation or negligence.
+AttentionSwitch off the laser system before transport and disconnect mains connec-tion!
+Store the laser system in a horizontal position and protected against dust and humidity. Neverexpose the laser system or one of its components to direct sunlight! The storage temperature
+must be between -10 °C and +70 °C. The air humidity must be between 10 % to 90 %, non con-densing.
+06/12 - Rev. AC 21
+
+Chapter 2Installation
+2.3 Unpacking
+1.Open the packaging and remove the filling material.
+2.Remove the individually packed components.
+3.Check all parts for damage during transport.In case of damage please inform the forwarding agent and Videojet Technologies Inc. or
+their representative immediately in writing. Keep the packaging material and note damageson the inside and outside.
+4.Transport the laser system and the components to the intended place of installation.
+5.Protect the laser system and all components from dust and humidity until installation.
+2.4 Installation Conditions
+Space Required
+The standard dimensions of the laser system can be found in the drawings in the chapter "Ap-pendix".
+For systems manufactured according to special customer requirements this information can befound in the installation plan or the dimension and data sheets you received upon order han-
+dling.
+Connections
+Please ensure that the enwrapping cardboard box and the packaging materialare recycled separately!
+ImportantThe laser system must not be subject to any mechanical stress (shock, vibra-tions, etc.) since this reduces the marking quality and can result in damaging
+the system.
+The laser system requires a mains connection. Information on the type, number and referencevalues of the connections can be found in the terminal diagrams you have received upon order
+handling.
+The power connection cable of the laser system is 2 m long. Make sure that the adequate pow-er sockets are in range.
+WarningOnly the delivered power connection cable must be used!
+Check the cable regularly for damages. If the cable is damaged it must beexchanged to avoid the risk of electrical shocks due to insufficient grounding.
+22 06/12 - Rev. AC
+
+Chapter 2Installation
+Ambient Conditions
+2.5 Cooling
+The laser system is cooled by air. The internal cooling system is designed to supply sufficientcooling.
+Make sure that the cooling air can be sucked in and blown out freely and that there is sufficientair exchange at the installation site to ensure heat dissipation.
+2.6 Fume extractor
+Temperature range:5 - 40 °C at 70 % duty cycle(up to 45 °C at 30 % duty cycle)
+Air humidity:10 - 90 %, non condensing
+CautionTo avoid condensation wait one hour before starting the system if the systemwas brought from a cold to a warm environment.
+Make sure that there is no condensed water in the system.
+NoteThe venting slots of the supply unit must not be covered. Make sure thatthere is sufficient air supply (see also section "Cooling").
+In order to remove marking residues which might be dangerous to health we recommend in-stalling a fume extractor. The fume extractor is to be installed such that marking particles are
+sucked off directly at the place of the formation. Make sure that there are no air leaks.
+In addition a fume extractor prevents that dust particles gradually destroy optical componentsof the laser system.
+We offer fume extractors as accessories. If an fume extractor is part of the complete deliveryplease find further information in the enclosed operation manual of the fume extractor.
+06/12 - Rev. AC 23
+
+Chapter 2Installation
+2.7 Interfaces of the Laser System
+2.8 Product Detector
+Touch Control interfaceConnection of the Touch Control.
+Make sure that the laser system can be seen when operating the touch control.
+Interlock circuitThe interlock circuit is used to safeguard the laser system. If oneof the interlock switches connected to the interlock circuit opens
+the marking stops immediately. The marking cannot be continueduntil all interlock switches are closed and the START-button is
+pressed.
+The closed interlock circuit is supplied by the laser system.
+Customer interfaceThe general assignment of the customer interface can be found inchapter "Appendix".
+The customer-specific assignment of the customer interface canbe found in the data sheets you received upon order handling.
+A product detector (light barrier) is included upon delivery of the system.
+Type photoelectric sensor, diffused reflection
+Detecting distance110 mm
+Sensitivity adjustmentrotation volume
+For mounting and setup of the product detector please refer to the QUICK START GUIDE andthe software description in chapter "Touch Control".
+2.8.1 Adjusting the Sensitivity ControlTo adjust the sensitivity control of the sensor please proceed as follows:
+1.Set the detectable object at the detection position and turn the sensitivity control slowly fromMIN towards MAX until the indicating lamp lights up. Call it position A.
+2.Remove the detectable object and turn the sensitivity control from MAX towards MIN untilthe indicating lamp is extinguished. Call it position B.
+24 06/12 - Rev. AC
+
+Chapter 2Installation
+3.Point C in the middle between A and B is the optimum sensitivity position (see below).
+06/12 - Rev. AC 25
+
+Chapter 2Installation
+2.9 Shut-Down
+2.9.1 Temporary Shut-DownIf the laser system is shut down temporarily (e.g. for the duration of a works holiday), the fol-
+lowing work is to be carried out:
+1.Save the data onto a USB device before switching the laser system off. See manual ofTouch Control software for details.
+2.Switch the laser system off after the data backup.
+3.Secure the laser system against unauthorized start-up.
+4.Clean the focusing module (lens).
+2.9.2 Final Shut-Down
+WarningDisassembly work must only be carried out by a qualified electrician or underthe direction and supervision of a qualified electrician in accordance with the
+respective electro-technical regulations.
+Ensure that all live parts are switched off and that work can be carried outsafely on these parts.
+If the laser system is shut down permanently (e.g. for selling or disposal), the following work isto be carried out:
+1.Carry out all work listed in section Temporary Shut-Down on page 26.
+2.Disconnect the laser system from the electric power supply.
+In case of selling and transport
+3.Package the laser system according to the instructions in section Transport and Storageon page 21.
+In case of disposal
+4.Dispose of the components of the laser system in a manner that is safe and environmentallycompatible. Observe all applicable legal and local regulations.
+Please dispose of the components of the laser system separated for recyclingof raw materials.
+26 06/12 - Rev. AC
+
+Chapter 3Description of the Laser System
+3 Description of the Laser System
+3.1 The Marking of the Product Surface
+The marking of the product surface is performed by the effect of intense laser radiation on theproduct material.
+The laser beam is focussed onto the product surface and heats up the topmost layer of the ma-terial, which causes a color change or a vaporization of the topmost dye layer.
+Two movable mirrors deflect it such that it passes over the lines of the active job on the product.The lines are divided into vectors (X and Y coordinates). The line up of vectors produces a
+marking on the product, the laser »writes« on the product surface.
+When the laser beam jumps from one stroke to the next (2) the laser is switched off and theproduct is not marked.
+Figure 3-1: Strokes and jumps
+06/12 - Rev. AC 27
+
+Description of the Laser SystemChapter 3
+3.2 The Structure of the Laser System
+The laser system consists of the following components:
+1Fan (air intake)
+2Keypad (see page 34)
+Using the keypad the marking process can be started and stopped. For controlling thelaser system, creating and editing marking contents etc., the Touch Control is
+required (see chapter "Touch Control").
+3Mounting
+4Interfaces (see page 34)
+On top of the system are theinterfaces for power supply,
+encoder, Touch Control andcustomer interface.
+On the bottom is the interface and mounting point for the product detector.
+5Air outlets
+6Warning light
+7Focusing module (lens, aperture for laser radiation)
+4
+5
+2 3
+1
+6
+7
+28 06/12 - Rev. AC
+
+Chapter 3Description of the Laser System
+3.3 Technical Data
+Unit Videojet 3020
+Laser typesealed-off CO
+laser
+Operating modes- continuous wave (cw)- pulsed 50 Hz - 20 kHz
+2 Laser class4
+Laser power typ.W10
+Max. power consumptionVA350
+Supply voltageVAC100 to 120/200 to 240; 1-phase
+Mains frequencyHz50 / 60
+FuseT8A/250 V
+Ambient temperature°C5 - 40(for special requirements please contact us)
+Humidity%10 - 90; non condensing
+Dimensionsmm610 x 155 x 150
+Weight (typical)kg7
+SealingIP 51
+Wavelengthm10.6
+Marking speed
+a
+mm/s1 - 10,000
+Speed of production linem/s0 - 3
+Characters/Second
+a
+max. 500
+Working distancemm80, 130, 180
+Focus diameterm150 - 450(depending on the installed optics)
+Line widthdepends on the materialand the laser parameters
+Fonts (character sets)any standard font(special characters on demand
+for additional charge)
+Coolinginternal air-cooling
+ControlTouch Control
+06/12 - Rev. AC 29
+
+Description of the Laser SystemChapter 3
+Unit Videojet 3020
+a.Any statements referring to marked characters or actual markings are typical values. These values highly depend on the material and may only be taken as a guideline. These are no
+specifications
+Interfacesencoder (D-type, 9-pin, female)product detection (circular, 4-pin, female)
+connection to Touch Control (ethernet)customer interface (D-type, 25-pin, female)
+Due to our policy of continuous improvement, technical data is subject to change without no-tice.
+30 06/12 - Rev. AC
+
+Chapter 3Description of the Laser System
+3.4 Working Distance and Marking Field
+Marking Head (all values in mm)
+Focusing module:working distance80128179
+focal length100150200
+max. width (A)446587
+max. height (B)6394126
+width for max. rectangle (a)314662
+height for max. rectangle (b)456789
+max. rectangle: marking field31 x 4546 x 6762 x 89
+working distance
+06/12 - Rev. AC 31
+
+Description of the Laser SystemChapter 3
+32 06/12 - Rev. AC
+
+Chapter 4Operating the Laser System
+4 Operating the Laser System
+4.1 Operation of the Laser System
+The laser system is operated using the Touch Control. The Touch Control is a touch screenconnected to the laser system.
+The software on the touch screen runs under Windows
+®
+full range of fonts, logos and tools to create layouts. With the software you can access theand preview the marking on the screen. In
+addition you can access all laser parameters and system settings.
+A detailed description on creating jobs and layouts can be found in the chapter "Touch Control"and in the Quick Start Guide.
+06/12 - Rev. AC 33
+
+Operating the Laser SystemChapter 4
+4.2 Elements on the Laser System
+S1
+L1
+L2
+L3
+S2
+I1I3I2 S3I4(bottom side)I5
+No.TypeFunction
+S1Push buttonSTART -green-With »START« the currently selected job can be marked.
+Laser radiation is emitted!Make sure that the safety instructions are observed.
+S2Push buttonSTOP -red-With »STOP« a marking process can be stopped.
+S3Main power switchswitches the laser system on.
+LED status indicators
+L1 Emission -red-is on when the key switch is in position »1« and the inter-lock is closed.
+Simultaneously the red LED at the front lights up.
+L2Error -yellow-flashes in case of malfunction.
+L3System -white-flashes during initialization of the laser system.is on when the laser system is ready for operation.
+flashes when data are written to the memory card.
+I1Socketconnection of mains supply
+I2Socketconnection of encoder
+I3Socketconnection of Touch Control
+I4Socketconnection of customer interface
+I5Socket (bottom side)connection of product detector (light barrier)
+34 06/12 - Rev. AC
+
+Chapter 4Operating the Laser System
+4.3 System States of the Laser System
+On the Touch Control user interface the current laser system state is displayed.
+There are the following system states:
+System StateDescription
+InitializeThe control components of the laser system are started.
+Key-switch openThe initialization is complete. The system can now be started bylogging into the system via Touch Control.
+Laser start-upAfter closing the key-switch the laser and the cooling system areactivated.
+Laser readyThe laser system is ready for marking.
+Prepare for markingAfter pressing »START« the laser requires a preparation time,the length depends on the template contents and the configura-
+tion.
+MarkingThe current marking content is marked onto the product.
+Laser radiation is emitted! Make sure that the safety instructions are observed.
+StandbyIf no marking is carried out for some time the laser switches tostandby in order to relieve the system components.
+Interlock openThe safety circuit is interrupted (e.g. protective door open). Amarking process is stopped immediately. Marking is only possi-
+ble with closed safety circuit.
+ErrorAn error occurred. To continue operation the error must be con-firmed. Information on the error can be found on page »Mes-
+sages«.
+Fatal errorA fatal error occurred and has deactivated the system. This errorcannot be confirmed and the operation cannot be continued.
+The laser system has to be turned off. Information on the errorcan be found on page »Messages«.
+Service modeThis system state enables service and maintenance work andmust only be used by especially trained personnel.
+06/12 - Rev. AC 35
+
+Operating the Laser SystemChapter 4
+4.4 Switch-On/Off of the Laser System
+4.4.1 Switch-On1.Make sure that the safety instructions are observed.
+2.If installed: Switch on the fume extractor.
+3.Switch on the main power switch (switch S3). The white LED flashes, indicating the initialization of the laser system. This process can take
+1 to 2 minutes. After that the system is ready for operation and the white LED is on.
+4.Switch on the Touch Control.
+5.Log into the system via Touch Control by pressing the key switch button in the upper rightcorner of the software and entering the password (see Quick Start Guide).
+The red LED on the keypad and the red LED on the front of the laser system are on. Thelaser is ready.
+4.4.2 Switch-Off1.Stop the marking process.
+2.Open the key switch via Touch Control by clicking on the key switch button and confirmingthe displayed message.
+The red LED on the keypad and the red LED on the front of the laser system are turned off.
+3.If the white LED is flashing, wait until it is continuously on.
+NoteThe white LED is flashing while data are written to the SD card. Do not switch off the system during this process!
+4.Switch off the main power switch (switch S3).The white LED is turned off.
+5.Switch off the Touch Control.
+6.If installed: Switch off the fume extractor.
+36 06/12 - Rev. AC
+
+Chapter 5Maintenance
+5 Maintenance
+5.1 General Notes Concerning Maintenance
+The time for maintenance of the laser system is very short. Please carry out maintenanceworks in the stated intervals.
+The laser system is designed such that maintenance can be performed safely.
+CautionMaintenance has to be performed by instructed operating and mainte-nance personnel only!
+Before the beginning of the cleaning works of the laser system and its environment, the laser system must be disconnected from the
+power supply.
+Document the regular maintenance in the maintenance protocols in this chapter! Non-conformance with the maintenance plan might result in limi-
+tations of warranty.
+ImportantBefore carrying out the maintenance works at the optics, please note the following:
+Acetone is not included upon delivery and has to be purchased via other companies. Open the following Internet page to order acetone in a quick
+and uncomplicated way:
+www.vwr.com/index.htm
+When purchasing acetone make sure that you order acetone pro analysi (p.a. = highest purity grade).
+Make sure that the acetone does not get in contact with the housing since it might corrode the PC/ABS.
+06/12 - Rev. AC 37
+
+Chapter 5Maintenance
+5.2 Maintenance Plan
+The maintenance intervals are laid out for a use of the laser system of approximately 10 hoursdaily and regular dirty work area.
+If the time of daily use should exceed 10 hours continuously or in case of very dirty ambientconditions please shorten the maintenance intervals accordingly. In case of questions please
+contact Videojet Technologies Inc. or one of their representatives.
+The basic maintenance works are described in the following sections. For all other potentialtasks please check the Maintenance screen of the Touch Control.
+Maintenance IntervalMeasures
+Monthly(more frequently when operated in Check the focusing module for dust and dirt. Cleanthe focusing module in case of dust or stains.
+dirty ambient conditions) Exchange the filter in the laser system.
+Monthly or when control lamp lights upIf installed: Exchange the filter bag inside the fumeextractor (refer to manual of the fume extractor).
+Every three months(more frequently when operated inCarry out a visual inspection of the laser systemincluding the warning labels. They must be readable
+dirty ambient conditions) and positioned correctly.
+Check the product detector (light barrier). Clean orreadjust if necessary.
+Check the fume extractor for air leaks.
+Every six monthsIf installed: Exchange the charcoal filter inside thefume extractor (refer to manual of the fume extractor).
+Note:We recommend a professional check by our service engineers once a year (more often in a
+very dusty environment).
+We offer special training seminars for maintenance and service personnel. In case of questionsplease contact Videojet Technologies Inc. or one of their representatives.
+38 06/12 - Rev. AC
+
+Chapter 5Maintenance
+5.3 Cleaning the Focusing Module
+The focusing module is located at the front of the laser system (bottom side).
+It may be contaminated by dust or floating particles. Contamination of the focusing module canlead to damages of the focusing module and gradually reduce the quality of the marking. There-
+fore the lens has to be cleaned regularly.
+Generally just the outwardly facing side of the focusing module has to be cleaned, but checkboth sides for contamination and clean them, if necessary.
+ImportantAs with all optical components the focusing module is an object of highest andsophisticated design.
+Slightest damages of the surface might (in the long term) result in unusabilityof the component or reduction of marking quality. Any contaminants must only
+be removed by means of a cotton tip and acetone!
+Make sure that no contaminants enter the marking head while cleaning the fo-cusing module!
+To clean the focusing module you need:
+Optics cleaning paper
+Acetone
+Protective gloves
+ImportantWear protective gloves during the complete procedure!
+06/12 - Rev. AC 39
+
+Chapter 5Maintenance
+5.3.1 Disassembly of the Focusing Module
+DangerBefore starting any work the laser system must be dead!1.Switch off the laser system (main switch on top of the laser system).
+2.Disconnect the mains connector.
+1.Firmly grip the focusing module and turn it carefully until it is released from the thread. Do not touch the lens surface!
+ImportantThe fine thread requires several turns before the scan lens is released. Makesure that you are holding the lens firmly.
+2.Remove the focusing module from the marking head and place it on a clean surface.
+5.3.2 Cleaning the Focusing Module1.Place the focusing module onto a clean surface. Fold a sheet of optics cleaning paper (at
+least 5 times) creating a flat cushion.
+2.Hold the optics cleaning paper between thumb and index finger and put some drops of ac-etone onto the optics cleaning paper.
+3.Carefully and slowly pull the optics cleaning paper across the surface to be cleaned. Make sure that you do not touch the surface with the gloves.
+Apply only very light pressure onto the paper!
+4.If necessary repeat the procedure with a new sheet of optics cleaning paper.
+ImportantNever use polishing agents! Polishing agents destroy the focusing module!
+Never use contaminated optics cleaning paper.Make sure that the optics cleaning paper is stored in a clean place.
+5.Check the surface of the lens side located in the marking head for contamination. If necessary,clean it as described above.
+5.3.3 Mounting the Focusing Module1.Place the focusing module straight onto the laser beam outlet and turn it in the wrong direc-
+tion until you hear the clear click as the first thread engages.
+2.Screw in the focusing module slowly and straight in the right direction, handtight.
+40 06/12 - Rev. AC
+
+Chapter 5Maintenance
+5.4 Exchange of the Focusing Module
+In order to exchange the focusing module proceed as follows:
+DangerBefore starting any work the laser system must be dead!1.Switch off the laser system (main switch on top of the laser system).
+2.Disconnect the mains connector.
+3.Firmly grip the focusing module and turn it carefully until it is released from the thread. Do not touch the lens surface!
+ImportantThe fine thread requires several turns before the scan lens is released. Makesure that you are holding the lens firmly.
+4.Remove the focusing module from the marking head.
+If it is broken dispose of the lens according to the local regulations.
+If it is to be reused place it on a clean surface. Place the protective caps onto the lens andwrap it up e.g. in bubble foil so that it is shockproof and protected against dust and dirt.
+5.Place the focusing module straight onto the laser beam outlet and turn it in the wrong directionuntil you hear the clear click as the first thread engages.
+6.Screw in the focusing module slowly and straight in the right direction, handtight.
+7.Remove the protective cap from the focusing module.
+8.Place the focus finder under the focusing module and push the protective cap of the focusfinder upwards onto the focusing module.
+9.Adjust the working distance between the focusing module and the product.
+06/12 - Rev. AC 41
+
+Chapter 5Maintenance
+5.5 Cleaning the Housing
+For cleaning the housing of the laser system use only a damp cloth (water or mild detergentsolution). Make sure not to touch the lens surface.
+Make sure that all warning labels are clean, readable and positioned correctly.
+5.6 Exchange of the Filter Mat
+To exchange the filter mat proceed as follows:
+1.Open the grille at the back of the system by pressing the grooves (see figure) and pushingthe grille upwards.
+2.Remove the mat. Dispose of the mat according to the local requirements.
+3.Insert a new mat.
+4.Close the grille.
+5.7 Update of the Touch Control Software
+To update the software proceed as follows:
+1.Unzip the ZIP file containing the new software version and copy it to a USB device.
+2.Start the Touch Control.
+3.Connect the USB device containing the new software.
+4.Start the file setup.exe and follow the instructions of the InstallShield wizard.
+42 06/12 - Rev. AC
+
+Chapter 5Maintenance
+5.8 Update of the QMark Software
+The update can be carried out via Ethernet using the Laser Web Interface.
+NotePlease note that the corresponding QMark version (zip file) has to be copiedbeforehand to a directory accessible by the Touch Control!
+Please contact our Service department or hotline for more information how toreceive the appropriate QMark version for your laser system.
+Open the Internet Explorer on the Touch Control. It will automatically open the lasers homesite. An overview about the current software versions which are installed on the laser system
+and a navigation column on the left hand side is displayed.
+By clicking on the »Software Update« link in the column on the left side, the following page isdisplayed. From here, you can upload a QMark.zip file with the appropriate QMark version onto
+your laser system.
+1.Click onto »Browse«.The following dialog is displayed.
+2.Select and open a QMark version (zip file) from a directory on your PC.
+06/12 - Rev. AC 43
+
+Chapter 5Maintenance
+The path and the respective QMark version are displayed in the Main window.
+If the checkbox »Inherit customer specific data« is checked, the customers former databaseand other specific data are kept and can be used with the new QMark version.
+3.Click onto »Upload« to upload the selected QMark version to your laser system.
+NotePlease note that the upload process may take a couple of minutes. During thattime, a text is displayed.
+Do not cancel the process by closing the browser, as the process might failand the laser system cannot be rebooted later!
+Do not switch off the laser!
+4.After the upload process has been carried out successfully, the following message is dis-played:
+5.Restart the laser system by turning the laser system off and on again.
+44 06/12 - Rev. AC
+
+Chapter 5Maintenance
+5.9 Protocols for Maintenance, Repair and Replacement
+It is strongly recommended that accurate records are kept of maintenance, repair and replace-ment procedures.
+On the following pages you will find forms to record all maintenance tasks specified. Copiescan be made and used to keep an ongoing record of the procedures recommended throughout
+the life of the laser system.
+You will also find forms to record the repairs and replacements. The records will provide a use-ful tool in anticipating future maintenance requirements and in determining cost of ownership
+of the laser system.
+06/12 - Rev. AC 45
+
+Chapter 5Maintenance
+Inspection and Cleaning of the Focusing Module
+Maintenance interval: Monthly
+Carried out on:Carried out by:
+Date Name
+46 06/12 - Rev. AC
+
+Chapter 5Maintenance
+Exchange of the Filter Mat
+Maintenance interval: Monthly
+Carried out on:Carried out by:
+Date Name
+06/12 - Rev. AC 47
+
+Chapter 5Maintenance
+Exchange of Filter of the fume extractor
+(if installed)
+Maintenance interval: Monthly or when control lamp lights up
+Carried out on:Carried out by:
+Date Name
+48 06/12 - Rev. AC
+
+Chapter 5Maintenance
+Exchange of the Charcoal Filter of the Fume Extractor
+(if installed)
+Maintenance interval: Every six months
+Carried out on:Carried out by:
+Date Name
+06/12 - Rev. AC 49
+
+Chapter 5Maintenance
+Visual Inspection (incl. Warning Labels)
+Maintenance interval: Every three months
+Carried out on:Carried out by:
+Date Name
+50 06/12 - Rev. AC
+
+Chapter 5Maintenance
+Inspection of the Product Detector
+Maintenance interval: Every three months
+Carried out on:Carried out by:
+Date Name
+06/12 - Rev. AC 51
+
+Chapter 5Maintenance
+Inspection of Fume Extractor for Air Leaks
+Maintenance interval: Every three months
+Carried out on:Carried out by:
+Date Name
+52 06/12 - Rev. AC
+
+Chapter 5Maintenance
+Update of the Touch Control Software
+Update of the QMark Software
+Carried out on:Carried out by:
+Date Name
+Carried out on:Carried out by:
+Date Name
+06/12 - Rev. AC 53
+
+Chapter 5Maintenance
+Repair and Replacement Protocol
+Laser model:Serial number:
+Date: Repair or ReplacementComments
+(faults, etc.)
+Carried out by:
+Date: Repair or ReplacementComments
+(faults, etc.)
+Carried out by:
+Date: Repair or ReplacementComments
+(faults, etc.)
+Carried out by:
+Date: Repair or ReplacementComments
+(faults, etc.)
+Carried out by:
+54 06/12 - Rev. AC
+
+Chapter 6Malfunctions
+6 Malfunctions
+6.1 Notes
+In this chapter you will find a description of possible malfunctions, their possible causes andsuitable measures for troubleshooting. The measures stated must be performed by instructed
+operation and maintenance personnel only.
+ImportantTasks for troubleshooting going beyond the ones mentioned here must beperformed by specially trained personnel only! Strictly follow the safety
+instructions!
+06/12 - Rev. AC 55
+
+Chapter 6Malfunctions
+6.2 Malfunction Descriptions
+SymptomCauses/Measures
+The laser system cannot be switched on.Check the plug.
+Check the main switch.
+Check the power supply, e.g. RCD (residual current protective device).
+The system does not boot or bootingtakes very long.Please note that the booting process can take several minutes.
+Check the size of the database, the booting time depends on that.
+Note the booting time and report it to the ser-vice helpdesk.
+The laser cannot be started.Check the interlock (must be closed).
+Check for error messages.
+Check the key switch (must be closed).
+Check for an external STOP signal.
+Check the kill switch (if available).
+No marking although START has beenpressed.Check the encoder.
+Check the product detection.
+Check the working distance.
+Check the lens. Clean it if necessary.
+Check the power setting of the parameter set.
+Is the correct product registration selected?
+Check the total working time of the laser beam source.
+Check the external STOP signal (if existing).
+Lopsided marking.Check the laser positioning.
+Check the template.
+Shifted marking.Check the sensor position.
+Check the product carrier for accuracy.
+Stretched/shrunk marking.Check the encoder setting.
+56 06/12 - Rev. AC
+
+Chapter 6Malfunctions
+SymptomCauses/Measures
+Faint marking.Has the product been changed (e.g. dimen-sions, material)?
+Check the lens. Clean it if necessary.
+Check the working distance.
+Check the parameter set (power too low, speed too high).
+Check the product (must be free from dirt, wa-ter, dust, oil, etc.).
+Check the fume extractor (must be on and suitable for the application).
+Incomplete marking.Check the product speed.
+Check the lens. Clean or exchange if neces-sary.
+Check the product (must be free from dirt, wa-ter, dust, oil, etc.).
+Check the encoder. If it is slipping increase the press-on force of the roll.
+Poor marking quality.Check for product or laser vibration.
+Has the product been changed (e.g. dimen-sions, material)?
+Check the lens. Clean it if necessary.
+Check the working distance.
+Check the parameter set (power too low, speed too high).
+Check the product (must be free from dirt, wa-ter, dust, oil, etc.).
+Check the fume extractor (must be on and suitable for the application).
+Check the encoder. If it is slipping increase the press-on force of the roll.
+Laser stops due to overtemperature.Clean filter(s) and system.
+Is the ambient temperature within the speci-fied limits (see product documentation)?
+Is there enough space for the air intake?
+Check the cooling system (if existing).
+06/12 - Rev. AC 57
+
+Chapter 6Malfunctions
+58 06/12 - Rev. AC
+
+Chapter 7Appendix
+7 Appendix
+7.1 Interfaces
+The laser interface is located on top of the laser system and it consists of four connectors andone switch (a fifth connector is on the bottom of the system):
+#Function
+1Power inlet, 100 to 120/200 to 240 V
+2Encoder
+3Ethernet connection for Touch Control
+4Power switch
+5Digital I/O
+6Product detector (on bottom of system)
+7.1.1 EncoderD-Type connector, 9 pin, female, with same pin out:
+PinFunction
+124V
+2Encoder Channel A
+3Encoder Channel B
+4Encoder Index
+5GND
+624V
+7Product Detect
+12 34 5 6
+a
+824V
+9GND
+a.The connection for the product detector included upon delivery is on the bottom of the sys-tem. If a different product detection is applied you can also use this connection.
+06/12 - Rev. AC 59
+
+Chapter 7Appendix
+7.1.2 EthernetStandard RJ45, 100 MBit/s, no power
+Connection for the touch screen with Touch Control.
+NoteThis interface cannot be used for PC connection.
+7.1.3 Digital I/OD-Type connector, 25 pins, female, galvanically separated.
+Customer interface. The galvanically separated inputs and outputs are provided as a standard.They are used for sending digital status signals and receiving digital command signals.
+Upon delivery a dongle will be provided with every laser system. It will connect the interlock andshutter lock pins and also STOP with 24 V.
+PinNameDescription
+1INTERLOCK_INTogether with INTERLOCK_OUT: Need to be connectedfor marking. If the interlock is open the laser is discon-
+nected from power and the shutter is closed.
+2STARTStarts the marking-process, awaits trigger signal, reactsto low-high edge. START has no function if STOP is set
+to LOW.
+3STOPStops the marking-process, reacts to low level.
+Has to be tied high if not used.
+4SHUTTER_LOCK_INTogether with SHUTTER_LOCK_OUT: Need to be con-nected for marking.
+If open, the beam shutter will be closed and the PWMsignal will be disconnected from the laser tube. The laser
+is on standby and can start the next marking immediatelyafter the SHUTTER_LOCK is closed again.
+5n.c.do not connect, reserved for future use
+6n.c.do not connect, reserved for future use
+7n.c.do not connect, reserved for future use
+8n.c.do not connect, reserved for future use
+9n.c.do not connect, reserved for future use
+10n.c.do not connect, reserved for future use
+1124V_INInput 24 V for digital interface
+12n.c.do not connect, reserved for future use
+60 06/12 - Rev. AC
+
+Chapter 7Appendix
+PinNameDescription
+13INTERFACE_GNDGND for the digital interface input
+14INTERLOCK_OUTTogether with INTERLOCK_IN: Need to be connectedfor marking. If the interlock is open the laser is discon-
+nected from power and the shutter is closed.
+15READY_TO_MARKReady to mark is set as soon as all necessary data and astart signal have been received. The system is ready to
+mark and awaits a trigger signal. In case of an error thesignal is set to low.
+16SHUTTER_LOCK_OUTTogether with SHUTTER_LOCK_IN: Need to be con-nected for marking.
+If open, the beam shutter will be closed and the PWMsignal will be disconnected from the laser tube. The laser
+is on standby and can start the next marking immediatelyafter the SHUTTER_LOCK is closed again.
+17SHUTTER_CLOSEDThis signal is set if the beam shutter is closed.
+18n.c.do not connect, reserved for future use
+19n.c.do not connect, reserved for future use
+20n.c.do not connect, reserved for future use
+21n.c.do not connect, reserved for future use
+22n.c.do not connect, reserved for future use
+2324VOutput 24 V for digital interface
+24n.c.do not connect, reserved for future use
+25INTERFACE_GND_OUTGND for digital interface output
+06/12 - Rev. AC 61
+
+Chapter 7Appendix
+7.1.3.1 Output Specification:
+Rated voltage24 V DC (-15 %/+20 %)
+Load typeohmic, inductive, lamp
+Max. output current (per channel)100 mA (short-circuit proof)
+7.1.3.2 Input Specification:
+Rated voltage24 V DC (-15 %/+20 %)
+"0" signal voltage0 V to 8.3 V
+"1" signal voltage9.5 V to 30 V, nominal 24 V
+Current inputtyp. 5 mA
+Min. signal length300 μs
+7.1.4 Product DetectionCircular connector, 4 pin, female, of Binder series 768
+PinFunction
+124 V
+2Trigger
+324 V
+4GND
+62 06/12 - Rev. AC
+
+Chapter 7Appendix
+7.2 Drawings
+06/12 - Rev. AC 63
+
+Chapter 7Appendix
+7.3 Safety Data Sheets
+64 06/12 - Rev. AC
+
+Chapter 7Appendix
+7.3.1 Zinc-Selenide (ZnSe) + Thorium Fluoride (ThF )
+4
+Material Safety Data Sheet II-VI Deutschland
+Revision Date: 21.08.2001
+Trade name of the product:Zinc Selenide (ZnSe-)-Optic with AR- (Anti-Reflection-) Coatingfor 10.6 μm
+CAS-No.:1315-09-9
+Synonyms:Raytran ZnSe, Kodak Irtran-4
+Form: Solid Optical Element
+Chemical family:Inorganic chemical belonging to the II-VI compound group
+1.Product identification
+2.Hazardous ingredients
+Material components:atomicCAS-Number
+ZincSelenium50 %50 %7440-66-67782-49-2
+Coating ingredients:
+Zinc SelenideThorium FluorideN/AN/A1315-09-913709-59-6
+Boiling point, 760 mm HG:sublimes
+Melting point:1525 °C
+Specific gravity (H
+3.Physical properties
+-3
+O=1):5.27 g cm
+2
+Vapor pressure:N/A
+Vapor density (Air = 1):N/A
+Solubility in H
+O, % by WT:insoluble
+% Volatiles by volume:N/A
+2 Appearance & odor:yellow / transparent / solid / odorless
+06/12 - Rev. AC 65
+
+Chapter 7Appendix
+4.Flammability and explosive properties
+Flash point (test method):not flammable and not explosive
+5.Health hazard data
+Threashold limit value
+MaterialLimit
+Zinc oxide fumes5 mg/m
+3
+3
+Zinc oxide dust10 mg/m
+3
+Selenium and compounds0.2 mg/m
+Threshold value of the amount of inhaled particles that can be handled by thebody of persons who
+permanently deal with this material job related:
+For Thorium Fluoride Dust with 1 (This value is getting higher significantly with bigger particles.μm Particle Size
+Particles bigger than 20 μm can not be inhaled any more.)136 mg
+Threshold value of the amount of inhaled particles that can be handled by thebody of persons who does
+not deal with this material job related:
+For Thorium Fluoride Dust with 1 (This value is getting higher significantly with bigger particles.μm Particle Size
+Particles bigger than 20 μm can not be inhaled any more.)3 mg
+Effects of overexposure:
+ZnSe - Effects are not known, but some Zinc and Selenium can be formed,such as: Zinc Oxide - Chills and fever. Selenium and Compounds - Acute
+exposure might produce sternal pain, cough, nausea, pallor, coated tongue,gastro-intestinal disorders, nervousness and/or conjunctivitis. A garlic odor of
+the breath or sweat may occur.
+Thorium - eventually cancer producing, because of its radio activity. But noimpact has been recognized through inhalation of less than 270 - 540 mg/year.
+One assumes that from this point the risk enlarges linear to the inhalation. Theexposure through the continuing contact with a lens for 2000 hours/year is less
+than the exposure that occurs when your teeth are x-rayed two times, youmake a trans-continental flight or fume 1/3 of a cigarette/day. Inorganic Fluo-
+rides - normally an irritant and toxic. Inhaling can be the cause for irritations ofthe respiratory tract and the mucosa, asthma attack, increased salivation,
+thirst, sweating, vomitus and colic.
+66 06/12 - Rev. AC
+
+Chapter 7Appendix
+6.Reactivity data
+Stability:stable
+Conditions to avoid:extreme heat greater than 500 °C could result in decom-position
+Materials to avoidstrong acids, strong bases
+Hazardous decomposition products:Selenium / Oxides of Selenium / Zinc Oxide
+Hazardous polymerization:will not occur
+Conditions to avoid:N/A
+Steps to take in case material is released or spilled:N/A
+7.Spill or Leak Procedures
+Emergency and First Aid Procedures (in dust form):
+Eyes: wash with plenty of water - see physician
+Skin: wash with plenty of water - see physician
+Ingestion: call physician
+Inhalation: remove from exposure, treat symptomatically, call physician
+8.Special Protection Information
+Type of respiratory protection required:
+NIOSH approved respiratory with fume type cartridge
+Ventilation:
+In case of vaporization leave the room and allow the dust to settle. Clean allsurfaces if the room has ventilation, allow for several air changes. Locate
+exhaust near location of ZnSe processing or use if failure by melting is likely.
+06/12 - Rev. AC 67
+
+Chapter 7Appendix
+9.Special Precautions
+Handling and storage precaution:
+If material is to be machined, ground or polished, processes should be donewet so as to minimize dust which could result in inhalation. Good work prac-
+tices such as keeping hands clean and not letting slurry splash significantlyshould be followed so that transferal to mouth by contamination on the hands
+or clothing followed by ingestion will not occur. Wash hands and face thor-oughly after handling material and before eating.
+If parts are dropped or otherwise broken, sweep up pieces which may havesharp edges as one would clean up broken glass and safely TRANSFER TO
+DISPOSAL CONTAINER: large pieces may have salvage value.
+References for material safety and threshold limit values:
+1."Dangerous Properties of Industrial Materials" Richard J. Lewis, Sr., 1992, 8th Edition
+2."TLVs Threshold Limit Values for Chemical Substances and Physical Agents in the Work-room Environment with Intended Changes for 1981" American Conference of Industrial Hy-
+gienists
+3.1998 "Threshold Limit Values for Chemical Substances and Physical Agents and BiologicalExposure Indices" edited by the American Conference of Industrial Hygienists
+4.Zinc Selenide Material has been found not toxical in a study about toxical limit values byToxikon. This test was initiated on January 7th, 1993 by II-VI, according to the prescription
+"Federal hazardous substances Act. 16CFR, Part 1500.3, January 1990."
+5.International Commission on Radiological Protection, ICRP Publication 71, "Age-dependantDoses to members of the Public from Intake of Raionuclides: part 4 Inhalation Dose Coef-
+ficients", 1996
+6.International Commission on Radiological Protection, ICRP Publication 26, "Recommenda-tions of the International Commission on Radiological Protection", 1977
+7.This information has been taken from the Material Safety Data Sheet of our distributor. Thedatasheet has been generated carefully. However we will take no liability for the content,
+no matter which legal ground is given.
+68 06/12 - Rev. AC
+
+Chapter 7Appendix
+Details of the Manufacturer and the DistributorAddress of the manufacturer:
+II-VI Incorporated375 Saxonburg Blvd.
+Saxonburg, Pennsylvania 16056USA
+Address of the distributor (please call here for further information):
+II-VI Deutschland GmbHIm Tiefen See 58
+64293 Darmstadt
+Tel.: 06151-8806-29 / Fax: 06151-8966-67
+06/12 - Rev. AC 69
+
+Chapter 7Appendix
+70 06/12 - Rev. AC
+
+Index
+A M
+ambient temperature 29 mains frequency maintenance intervals29
+maintenance protocol38
+B
+air leaks of fume extractor 52
+beam protection (shielding) 8
+charcoal filter of fume extractor 49
+filter mat 47
+C
+filter of fume extractor 48
+characters/second cleaning29
+focusing module 46
+product detector 51
+housing 42
+update QMark 53
+lens connectors39
+update Touch Control 53
+24 , 30 , control elements59
+visual inspection maintenance works50
+control options34
+malfunctions38
+cooling29
+marking field56
+23 , 29
+marking speed31
+29
+D
+Dimensions 29
+O
+operating modes 29
+E
+encoder 59
+P
+power consumption (max.) power range29
+F
+product detector14
+24
+filter mat focus diameter42
+focusing module29
+fonts (character sets)31
+S
+fume extractor29
+safety devices safety goggles12
+fuse23
+sealing14
+29
+shielding (beam protection)29
+shut-down8
+H
+humidity 29 final 26
+temporary speed of production line26
+storage29
+I
+supply voltage21
+interfaces 24 , 30 , interlock59
+system states29
+12 , 24
+35
+L
+T
+laser class laser power29
+Thorium Touch Control15
+laser source29
+transport33
+laser type8
+21
+lenses29
+light barrier31
+U
+line width24
+29
+update
+06/12 - Rev. AC 71
+
+Index
+QMark 43
+Touch Control 42
+W
+warning lights wavelength12
+weight29
+working distance29
+29 , 31
+Z
+Zinc Selenide 15
+72 06/12 - Rev. AC

@@ -1,0 +1,2909 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\SBPL_ProgrammingGuide.pdf
+# cifrado=False bloques=94 caracteres=103219
+
+SBPL
+Programming Guide
+Basic Command
+Ver 01.20.01
+
+Chapter 1
+Installation of SBPL
+About Basic Command Reference...................... ..........................................1
+SBPL (Sato Barcode Programming Language)........... .................................1
+Chapter 2
+Overview of SBPL
+Format Command..................................... ................................................... .2
+Regulation of Escape Sequence and Syntax........... .....................................2
+SBPL Font.......................................... ................................................... .......2
+Selection of Font.................................. ..................................................2
+Enlarg Font........................................ ................................................... .3
+Fixed Pitch and Proportional Pitch................. ........................................3
+Difference between Outline Font and Bitmap Font.... ............................3
+Basic Concept of SBPL.............................. ................................................... 3
+Character Rotation................................. ................................................... ....4
+Custom-Design Character Registration............... .........................................5
+Table of Contents
+Chapter 3
+SBPL Printer Configuration
+Operation Mode..................................... ................................................... ....8
+Printing Type Specification........................ ................................................... 9
+Print Density Specification........................ ................................................... .9
+Start Position Specification....................... ..................................................1 0
+Sensor Selection................................... ................................................... ...10
+Save Settings...................................... ................................................... .....10
+Chapter 4
+SBPL Command Tutorial
+Preface............................................ ................................................... ........11
+Tutorial 1. Creating a simple label................ ..............................................12
+Tutorial 2. Printing and Rotating Font............. ............................................14
+Tutorial 3. Frame Overlay Registration and Searchin g...............................16
+
+Chapter 5
+SBPL Basic Command Reference
+Preface............................................ ................................................... ........18
+SBPL Basic Command Reference....................... .......................................18
+Control Commands
+<A> Data Send Start Specification.................. ................................................... 19
+<Z> Data Send End Specification.................... ..................................................1 9
+<Q> Print Number Specification..................... ................................................... ..20
+Print Position Commands
+<H> Print Horizontal Position Specification........ ................................................21
+<V> Print Vertical Position Specification.......... ..................................................2 2
+<P> Character Pitch Specification.................. ................................................... .23
+<L> Enlargement Specification...................... ................................................... .24
+<E> Automatic Line Feed Specification.............. ................................................25
+Rotation Command
+<%> Rotation Specification (Start point fixing).... ................................................26
+Font Commands
+<XU> XU Font Specification (Basic Size 5 x 9 dots). ............................................27
+<XS> XS Font Specification (Basic Size 17 x 17 dots ).........................................27
+<XM> XM Font Specification (Basic Size 24 x 24 dots )........................................28
+<XB> XB Font Specification (Basic Size 48 x 48 dots ).........................................28
+<XL> XL Font Specification (Basic Size 48 x 48 dots ).........................................29
+<U> U Font Specification (Basic Size 5 x 9 dots)... ............................................30
+<S> S Font Specification (Basic Size 8 x 15 dots).. ...........................................30
+<M> M Font Specification (Basic Size 13 x 20 dots). ..........................................31
+<WB> WB Font Specification (Basic Size 18 x 30 dots )........................................31
+<WL> WL Font Specification (Basic Size 28 x 52 dots )........................................32
+<OA> OCR-A Font.................................... ................................................... ..........33
+<OB> OCR-B Font.................................... ................................................... ..........34
+<$> Outline Font Shape Specification............... .................................................35
+<$=> Outline Font Print Specification.............. ................................................... ..36
+<RD> CG Font Specification......................... ................................................... .....37
+Barcode Commands
+<B> Barcode Specification (Ratio 1:3).............. ..................................................3 8
+<BC> CODE93 Barcode Specification.................. ................................................39
+<BG> CODE128 Barcode Specification................. ...............................................40
+<BI> UCC/EAN-128 Specification..................... ..................................................4 1
+<BP> Postnet Specification......................... ................................................... .......42
+<BF> Bookland Specification........................ ................................................... .....43
+<D> Barcode Specification (Ratio 1:2).............. ..................................................4 4
+<D><d> Barcode Specification (Selection of a descri ption character).....................45
+<BD> Barcode Specification (Ratio 2:5)............. ................................................... 46
+<BT> Barcode Ratio Registration Specification...... ..............................................47
+<BW> Barcode Ratio Registration Print Specification ...........................................48
+
+Additional Functions
+<FW> Ruler and Frame Print Specification........... ................................................49
+<(> White/Black Inversion Print Specification...... ..............................................50
+<J> Journal Print Specification.................... ................................................... ....51
+<G> Graphic Print Specification.................... ................................................... ...52
+<GP> PCX File Print Specification.................. ................................................... ...53
+<GM> BMP File Print Specification.................. ................................................... ...54
+<0> Part Editing Function Specification............ .................................................55
+<WD> Copy with a label (Part Copy) Specification... .............................................56
+<F> Sequential Number Print Specification.......... .............................................57
+Font Control
+<PS> Proportional Pitch Specification.............. ................................................... .58
+<PR> Proportional Pitch Cancel Specification....... ...............................................58
+Registration Call Up
+<&> Form Overlay Registration Specification........ .............................................59
+</> Form Overlay Call Specification................ ..................................................6 0
+System
+<ID> Job ID Number Specification................... ................................................... .61
+<WK> Job Name Specification........................ ................................................... ...62
+<NUL> (~) Multi Cut Specification.................. ................................................... ............63
+<~A> Cut Number Unit Specification................. ................................................... 64
+<~B> Cut Operation Specification................... ................................................... ..65
+<A1> Label Size Specification...................... ................................................... .....66
+<CS> Print Speed Specification..................... ................................................... ....67
+<#E> Print Density Specification................... ................................................... ....68
+<PG> Printer Operation Registration................ ................................................... ..69
+<A3> Start Point Correction Specification.......... ..................................................7 3
+<*> Clear Specification............................ ................................................... .......74
+<FC> Font Delete Specification..................... ................................................... ....75
+<@> Off-line Specification......................... ................................................... .......75
+<2S> Two Color Print Area Specification............ .................................................76
+<PO> Offset Specification.......................... ................................................... ........77
+<TG> Space Size between Labels Specification....... ...........................................78
+<IG> Sensor Type Specification..................... ................................................... ..79
+<PH> Print Method Specification.................... ................................................... ...79
+<PM> Operation Mode Specification.................. ................................................... 80
+<C> Reissue Specification.......................... ................................................... .....80
+<RF> Font/Logo Search Print Specification.......... ................................................81
+<KC> Kanji Code Specification...................... ................................................... ....82
+<YE> Paper Type Specification...................... ................................................... ...83
+<AX> Print Area Enlargement Specification.......... ...............................................84
+<AR> Print Area Standard Specification............. ..................................................8 5
+<EP> Final Position Print Specification............ ................................................... ..86
+Calendar
+<WT> Calendar Setup Specification.................. ................................................... .87
+<WP> Calendar Addition Specification............... ................................................... 88
+<WA> Calendar Print Specification (Real Time Method ).......................................89
+
+Font Character Set
+XU Font Character Set.............................. ................................................... ..................90
+XS Font Character Set.............................. ................................................... ...................91
+XM Font Character Set.............................. ................................................... ..................92
+XB Font Character Set.............................. ................................................... ...................93
+XL Font Character Set.............................. ................................................... ...................94
+U Font Character Set............................... ................................................... ....................95
+S Font Character Set............................... ................................................... ....................96
+M Font Character Set............................... ................................................... ...................97
+WB Font Character Set.............................. ................................................... ..................98
+WL Font Character Set.............................. ................................................... ..................99
+OCR-A Font Character Set........................... ................................................... .............100
+OCR-B Font Character Set........................... ................................................... .............101
+Barcode Table
+NW-7 Code Table.................................... ................................................... ..................102
+CODE39 Code Table.................................. ................................................... ...............103
+Interleaved 2/5, Matrix 2/5, Industrial 2/5,UPC, EA N, UPC-E Code Table..................104
+CODE93 Code Table.................................. ................................................... ...............105
+CODE128 Code Table................................. ................................................... ..............106
+
+Chapter 1
+Installation of SBPL
+About Basic Command Reference
+This manual describes the function and format of th e SBPL commands.
+As the SBPL manual explains, SBPL is a common comma nd to control the SATO barcode label
+printer.
+This manual describes the commands to create a form at and print a label/tag, function and
+meaning of the command, command format and paramete r, and additional information and
+cautions.
+SBPL (Sato Barcode Programming Language)
+SBPL (Sato Barcode Programming Language) is a high level printer control language used to
+define the label format and label printing process.
+This makes it possible to send SBPL commands to the printer and print many different types of
+label/tags from simple to complicated types.
+For example, by combining multiple SBPL commands, n ot only can various fonts, character,
+barcodes and graphics be defined but it also possib le to extend to command of fonts, lines, and
+inversion of Black/White printing.
+The SBPL commands have powerful and flexible langua ge functions and provide the following
+functions:
+ Print control of many types of graphic formats
+ Sequential field creation that allows to define th e increase/decrease calculation
+ Outline font specification
+ Compatibility with PC networks
+ Return the Printer Status Information
+1
+
+Chapter 2
+Overview of SBPL
+Format Command
+A Format Command is the print design information of the label/tag to be printed by the barcode
+label printer.
+The label printer does not have the concept of colu mn or line, which is different from a serial
+printer. Therefore, free print designs can be creat ed within the print effective area.
+There are format commands to create such print desi gn.
+The format command includes
+information such as label size, starting field posi tion to be printed
+and the type of field (character, barcode, lines an d graphics).
+For more information about these commands, refer to the Command Reference.
+Regulation of Escape Sequence and Syntax
+Except for some commands, assemble an Escape Seque nce, which combines an escape (<>)
+and command, and create data to be sent to the prin ter. An escape sequence is a string that an
+escape character (ESC) is placed at the top with an escape character that is a hex value 1B(H).
+SBPL Font
+The SATO printer installs 12 types of bitmap fonts and one outline font by default.
+The size and density of the font depends on the pri nter head density.
+Selection of Font
+When you use the fonts installed, specify ESC+ (Fon t Type Command).
+Matrix
+Font
+Type Pitch
+Command
+WXH (dot)
+0A (8 dots) 15 x 22 OCR-A Font Specification Fixed
+0B (8 dots) 20 x 24 OCR-B Font Specification Fixed
+0A (12 dots) 22 x 33 OCR-A Font Specification Fixed
+0B (12 dots) 30 x 36 OCR-B Font Specification Fixed
+XU 5 x 9 XU Font Specification Fixed
+XS 17 x 17 XS Font Specification Fixed/Proportional
+XM 24 x 24 XM Font Specification Fixed/Proportional
+XB 48 x 48 XB Font Specification Fixed/Proportional
+XL 48 x 48 XL Font Specification Fixed/Proportional
+U 5 x 9 U Font Specification Fixed
+S 8 x 15 S Font Specification Fixed
+M 13 x 20 M Font Specification Fixed
+WB 18 x 30 WB Font Specification Fixed
+WL 28 x 52 WL Font Specification Fixed
+2
+
+Enlarge Font
+The fonts installed can be enlarged up to 12x.
+Bitmap and outline fonts can be downloaded and adde d to the printer.
+The internal bitmap fonts can be enlarged from the basic size to 12x. For example, when the
+basic size font is 5 (W) x 9 (H) dot and it is enla rged by 3x, it will be 15 (W) x 27 (H) dot.
+The following is the parameter setting of character height x enlargement and width x
+enlargement ratio to be printed.
+Width x Enlargement ratio = the setting value of wi dth parameter
+Height x Enlargement ratio = the setting value of h eight parameter
+The Enlargement Specification command (<L>) control s the size of enlargement. This
+parameter is specified by amplification.
+For example, if <L>0304 is specified, the font is e nlarged by 3x in the horizontal direction and 4x
+in the vertical direction.
+If the Enlargement Specification command is specifi ed, the character pitch is also enlarged.
+Fixed Pitch and Proportional Pitch
+For XS XL fonts, either the fixed or the proporti onal pitch printing can be selected.
+The specification of the pitch mode can be set by t he Proportional Specification <PS>
+command, the Proportional Pitch Cancel <PR> command , or the user mode of the printer LCD.
+The size of the proportional pitch varies depending on the font type. Katakana does not
+influence the proportional pitch. However, if you s pecify the proportional pitch, the space
+between alphanumerics will be smaller.
+For the fixed pitch, specify the pitch width that i s specified for all fonts.
+Difference between Outline Font and Bitmap Font
+The Bitmap font is installed in the printer at a fi xed height and width size. In fact, the height of
+the Bitmap font is slightly larger than the width.
+The Bitmap font is the maximum size of the font mat rix. For the font types and size, refer to the
+previous section Selection of Font.
+For outline fonts, if you set the height and width equally, a well-balanced font can be generated
+by using the Smooth Scaling Algorithm function of t he printer. In addition, many font styles such
+as character decoration, reverse plate, shadow, and italics can be selected.
+Basic Concept of SBPL
+By understanding SBPL, its concepts and terms, you will be able to increase your knowledge of
+SBPL.
+3
+
+Character Rotation
+A character can be rotated by 90 degrees in the lab el feeding direction. The start print position
+should be specified as shown in the figure below.
+90 degrees character rotation
+<A>
+<%>1
+<V>800<H>200
+<L>0202
+<P>02
+<XM>ABC
+<Q>1
+<Z>
+Starting
+position
+V800 Label feeding
+direction
+V/H
+specification
+position
+ABC
+H200
+This figure shows the character rotation result and command <%> used.
+Since <%>1 is used, a 90 degree rotation printing i s executed.
+If you use <%>2 or <%>3, you can rotate the charact er by 180 degrees or 270 degrees.
+This specification is effective until you specify a nother value. If you specify <%>0 (0 degree),
+you can return the character rotation from the orig inal position.
+This command is canceled with <Z> (0 is default).
+Character Rotation of a Barcode
+A barcode can be rotated and printed. However, if y ou rotate it by specifying Serial 1 or Serial 2,
+the size of the barcode may be smaller due to its e nlargement ratio.
+In addition, when the printer head density is 203dp i, one dot is 0.125mm, and when it is
+304dpi, one dot is 0.083mm. Therefore, you should not execute such print (narrow bar is one
+dot) because of the barcode scanner specs. Please n ote that L represents the enlargement
+ratio of the bar ratio.
+Parallel 1: Positive direction printing
+Parallel 2: Reverse direction printing (180 degrees rotation)
+Serial 1: Positive direction printing with 90 degre es rotation
+Serial 2: Positive direction printing with 270 degr ees rotation
+The positive direction is the condition in which a character is printed in the horizontal direction
+of the label feeding.
+1) When a character is printed by specifying Parall el 1 and 2, specify the enlargement ratio of
+the bar width so that the narrow bar becomes more t han 2 dots.
+When the bar ratio is 1:2, more than 2L
+When the bar ratio is 1:3, more than 2L
+When the bar ratio is 2:5, more than 1L
+When UPC-A/EAN/JAN, more than 2L
+4
+
+Custom-Design Character Registration
+A Custom-design character, 16 x 16 or 24 x 24 of do t structure, can be registered and printed.
+The registration of Custom-design character is a us eful function for customers who want to use
+their original characters or figures. The registere d Custom-design character can be called from
+the system by specifying the code just like the con ventional Kanji characters.
+If you register a Custom-design character into the printer memory, the data is deleted when you
+turn off the printer. In this case, you must regist er it again. If you register Custom-design
+character data in the memory card, the data is save d even if the printer is turned OFF, as long
+as there is memory card battery level remaining.
+This printer allows the user to use a Custom-design character, in 16 x 16 dot Custom-design
+character registration or in a 24 x 24 dot structur e, in the same manner as conventional Kanji
+characters in the system, so you can use these func tions for accent and smoothing effects.
+2) When a character is printed by specifying Serial 1 and 2, specify the enlargement ratio of
+Registration Types
+the bar width so that the narrow bar becomes more t han 3 dots.
+When the bar ratio is 1:2, more than 3L
+There are two types of registration, 16 x 16 dot an d 24 x 24 dot
+When the bar ratio is 1:3, more than 3L
+1: 16 x 16 dot
+When the bar ratio is 2:5, more than 2L
+2: 24 x 24 dot
+When UPC-A/EAN/JAN, more than 3L
+3) When you specify 0 dot for the bar top, printing does not take place, regardless of the
+rotation setting.
+Data Transfer
+4) When you print a character by specifying Serial 1 and 2, the printing speed should be
+slowed down.
+Data can be transferred in binary code or hex chara cter code.
+B: Transfer in binary code
+H: Transfer in hex code
+Custom-design character Identification Number
+By registering a Custom-design character in the und efined area for Kanji, you can print a
+Custom-design character in the same manner as Kanji . The code specification varies depending
+on the registration or search processes.
+For JIS Kanji code
+Register to the undefined area for JIS Kanji code f rom 9021(H) to 907F(H)
+Registration: From 21(H) to 7F(H) (specify the last two digits)
+Search: From 9021(H) to 907F(H)
+For Shift-JIS Kanji code
+Register to the undefined area for Shift-JIS Kanji code from F040(H) to F09E(H)
+Registration: From 40(H) to 9E(H) (specify the last two digits)
+Search: From F040(H) to F09E(H)
+5
+
+Registered Custom-design character Printing
+Since a registered Custom-design character is treat ed as Kanji code, searching and printing a
+Custom-design character can be done by specifying K 1 or K2 in the same manner as regular
+Kanji specification.
+Example) For JIS Kanji code
+Registration: T2H21****
+Search: K2H9021
+Example) For Shift-JIS Kanji code
+16 dots
+Registration: T2H40****
+8 dots 8 dots
+Search: K2HF040
+The following section describes a specific
+example of the registration print method.
+The section describes the 16 x 16 dot Custom-
+design character. Create a Custom-design
+character within a rectangle as shown in the
+Figure.
+Convert every 8 dot into hex values and
+register the character according to the data
+transfer specification.
+Hex value
+8 dots
+First line: 0180
+ .
+ .
+Second line: 0300
+16th line: 318C
+Since this registered data is treated in the same m anner as Kanji code as mentioned before,
+specify it by using the identification number of th e Kanji command allocated to the JIS Kanji
+code table from 9021(H) to 907F(H).
+Register 24 x 24 dot is the same manner.
+The following is an above mentioned script written in BASIC.
+Example 1)
+When a 16 x 16 dot Custom-design character is sent by H specification,
+ 10 C$=CHR$(&H1B) : STX$=CHR$(&H2) : ETX$=CHR$(&H3 )
+ 20 OPEN COM:N81NN FOR OUTPUT AS #1
+ 30 PRINT #1, STX$;
+8 dots
+ 40 PRINT #1, C$;A;
+ 50 PRINT #1, C$;T1H21;
+ 60 PRINT #1, 018003003FFC3FFC;
+ 70 PRINT #1, 300C3FFC300C3FFC;
+ 80 PRINT #1, 3FFC01803FFC3FFC;
+ 90 PRINT #1, 318C318C318C318C;
+100 PRINT #1, C$;V100;C$;H200;C$;L0505;C$;K 1H9021;
+110 PRINT #1, C$;Q1;C$;Z;
+01(H) 80(H)
+120 PRINT #1, ETX$;
+130 CLOSE #1
+140 END
+6
+
+Example 2)
+When a 16 x 16 dot Custom-design character is sent by B specification,
+ 10 C$=CHR$(&H1B) : STX$=CHR$(&H2) : ETX$=CHR$(&H3 )
+ 20 OPEN COM:N81NN FOR OUTPUT AS #1
+ 30 PRINT #1, STX$;
+ 40 PRINT #1, C$;A;C$;T1B;CHR$(&H21);
+ 50 PRINT #1, CHR$(&H1);CHR$(&H80);CHR$(&H3);CHR$ (&H0);
+ 60 PRINT #1, CHR$(&H3F);CHR$(&HFC);CHR$(&H3F);CH R$(&HFC);
+ 70 PRINT #1, CHR$(&H30);CHR$(&HC);CHR$(&H3F);CHR $(&HFC);
+ 80 PRINT #1, CHR$(&H30);CHR$(&HC);CHR$(&H3F);CHR $(&HFC);
+ 90 PRINT #1, CHR$(&H3F);CHR$(&HFC);CHR$(&H1);CHR $(&H80);
+100 PRINT #1, CHR$(&H3F);CHR$(&HFC);CHR$(&H3F);CHR $(&HFC);
+110 PRINT #1, CHR$(&H31);CHR$(&H8C);CHR$(&H31);CHR $(&H8C);
+120 PRINT #1, CHR$(&H31);CHR$(&H8C);CHR$(&H31);CHR $(&H8C);
+130 PRINT #1, C$;V100;C$;H200;C$;L0505;
+140 PRINT #1, C$;K1B;CHR$(&H90);CHR$(&H21);
+150 PRINT #1, C$;Q1;C$;Z;
+160 PRINT #1,ETX$;
+170 CLOSE #1
+180 END
+7
+
+Chapter 3
+SBPL Printer Configuration
+The printer is configured via the LCD or Dip Switch (DSW) of the printer. The following switching
+procedure is not required if you do not wish to cha nge the settings from your PC over a network.
+In many cases, the printer can be configured with S BPL commands. When the printer receives
+the Configuration command, it changes the settings. This is effective until you turn off the
+printer. When the label is issued the next time, th e changes are reflected the settings.
+This chapter describes the printer configuration us ing the SBPL command. The following is a list
+of Printer Configuration commands.
+<#E> (Print Density): Sets the print density.
+<A3> (Start Position): Sets the start position.
+<CS> (Print Speed): Sets the print speed.
+<IG> (Sensor Selection): Specifies the selection of the transparent sensor or the
+reflection sensor.
+<A1> (Label Size Setting): Sets the label size.
+<TG> (Space Setting between Labels): Sets the space between labels.
+Operation Mode
+Specifies the operation mode.
+0: Continuous Operation
+1: Tear Off Operation
+2: Cutter Operation (Head position)
+3: Cutter Operation (Cutter position)
+4: Cutter Operation (without back feed)
+5: Linerless Operation (Cutter position)
+6: Linerless Operation (without back feed)
+7: Dispenser Operation (Head position)
+8: Dispenser Operation (Dispenser position)
+You do not have to specify this command for regular label printing.
+When you turn off the printer, all specified values are invalid and the registered values in the
+printer are valid when the printer is restarted.
+8
+
+Printing Type Specification
+Specifies the Print type.
+1. Thermal Type
+2. Direct Thermal Type
+You do not have to specify this command for regular label printing.
+When you turn off the printer, all specified values are invalid and the registered values in the
+printer is valid when the printer is restarted.
+Print Density Specification
+Specify the print density.
+Specification of the print density level (can be om itted; default value is 3)
+1=Light
+2=Medium Light
+3=Normal
+4=Medium Dark
+5=Dark
+Specification of print density (can be omitted; def ault value is A)
+A=A
+B=B
+C=C
+D=D
+E=E
+F=F
+Each value of the print density parameter is suitab le for the following labels.
+A: Regular thermal A, Techno-thermal A, Distri bution-thermal A
+The print density parameter can be specified in six types from A to F and five types from
+Light to Dark, which means 30 possible combinat ions.
+The setting varies depending on the type of device. For more information, refer to the Print
+Density Specification <#E> command.
+9
+
+Start Position Specification
+Specifies the start position coordinate.
+Specifies the vertical start position correction si gnal.
+Start Point
+ +,
+before specifying
+Specifies the vertical start position correction si gnal as dot.
+ 0 - 999
+V
+Specifies the horizontal start position correction signal.
+H
+ +,
+Specifies the horizontal start position correction
+signal as dot.
+ 0 - 800
+When you turn off the printer, all specified
+values are invalid.
+Start Point
+after
+specifying
+Sensor Selection
+Specifies the sensor type.
+Sensor Type Specification (Default: 1)
+1. Reflection sensor (Eye mark)
+2. Transparent sensor (Space)
+3. Sensor Ignore type
+You do not have to specify this command for regular label printing.
+When you turn off the printer, all specified values are invalid and the registered values in the
+printer are valid when the printer is restarted.
+Save Settings
+The <PG> command registers and saves the printer se ttings into the EEPROM .
+The settings to be registered as follows.
+<<CL408e CL412e CL608e CL612e M-8400RVe>>
+In general, you should adjust the settings from the User Mode of the printer.
+<< CT400DT/TT CL410DT/TT >>
+Refer to the User Manual to change the registered v alues such as Print Speed, Cutter
+Operation, Dispenser Operation, Linerless Operation , Print Density, Sensor Type, Kanji
+Code, 0 Slash, Label Specification, Initial Feed, P roportional Pitch, Label Size, Start Position
+Correction Value, Label Pitch, Offset, TearOff Offs et, Cutter Offset, Dispenser Offset, Space
+Size between Labels and Alarm Sound Setting, use th e PG command or the Printer Setting
+Tool on CD-ROM that comes with the printer. For de tails on the Printer Setting Tool, refer
+to the manual.
+10
+
+Chapter 4
+SBPL Command Tutorial
+Preface
+This tutorial is designed for first-time and experi enced SBPL users.
+First-time SBPL users should read this tutorial ent irely. It is setup in a simple manner so you can
+become familiar with all sections in a short time.
+If you are familiar with some SBPL commands, you ca n skip to the sections that describe the
+functions.
+Most sections are independent of each other but som e sections are prerequisites fors other
+sections.
+Before starting this section, make sure that the la bel and ribbon are correctly setup in the
+printer. For more information on setting a label an d ribbon, refer to the manual that comes with
+the printer.
+The following label size is specified for this sect ion.
+104mm(W) x 178mm(H)
+In this section, the printer head density is 8 dot/ mm. When you use a 12 dot/mm printer, the
+print size will be smaller.
+You can use another label but you must change the p arameter of the Print Data Size Field
+value.
+You can create the program introduced in this secti on by using any text editor or word processor
+that can generate an ASCII file.
+Note: For this section, use the default settings of the printer unless the tutorial section
+instructs you to change the settings.
+Note: To use the default settings, refer to the manual t hat comes with the printer.
+11
+
+Tutorial 1. Creating a simple label
+In this section, we will discuss how to create a si mple label format. We will also learn basic
+information to create a label for both character an d barcode.
+SBPL command sent to the printer
+<A>
+<V>100<H>50<L>0404<XB>1SATO
+<V>350<H>100<B>104250*12345*
+<V>600<H>150<L>0101<XB> 1*12345*
+<Q>1
+<Z>
+Description of the command
+<A>
+Shows that data send has started.
+<V>100
+Specifies the vertical print position to 100 dot be low from the start position.
+<H>50
+Specifies the horizontal print position to 50 dot r ight from the start position.
+<L>0404
+Enlarges the character by 4x in the vertical and ho rizontal direction.
+<XB> 1SATO
+Print SATO with a font type XB (with smoothing)
+<B>1004250*12345*
+Prints a CODE39 barcode with Ratio1:3, narrow bar w idth 4L, barcode top 250 dot. Print
+information*12345*
+<Q>1
+Command to print one label.
+<Z>
+Shows that data transfer is completed.
+Execution Result
+When the SBPL of this section is sent to the printe r, the label is printed as shown in the
+following figure. If printing fails, confirm that t he data to be sent to the printer is identical to t he
+code in this section and try resending the code.
+12
+
+Execution Result
+13
+
+Tutorial 2. Printing and Rotating Font
+In this section, we will learn about the font types and how to rotate them.
+SBPL command sent to the printer
+<A>
+<%>0
+<V>700<H>400<L>0101<XB>0LAB0
+<%>1
+<V>700<H>400<L>0101<XB>0LAB1
+<%>2
+<V>700<H>400<L>0101<XB>0LAB2
+<%>3
+<V>700<H>400<L>0101<XB>0LAB3
+<Q>1
+<Z>
+Description of the command
+<%>0
+Prints the specified command in the positive direct ion as shown below.
+<%>1
+Prints the specified command with a 90 degree rotat ion as shown below.
+<%>2
+Prints the specified command with a 180 degree rota tion as shown below.
+<%>3
+Prints the specified command with a 270 degrees rot ation as shown below.
+<V>700<H>400<XB>0LAB0
+Prints LAB0 using an XB font with 700 dots below fr om the start position and 400 dots to
+the right (without smoothing)
+<Q>1
+Specifies the print number to 1
+14
+
+Execution Result
+15
+
+Tutorial 3. Frame Overlay Registration and Searching
+In this section, we will learn about the necessary information on frame overlay registration and
+searching.
+SBPL command to be sent to the printer
+<A>
+<V>100<H>50<FW>1010V800H750
+<V>100<H>50<FW>0505V760H710
+<V>150<H>100<XB>0MODEL
+<&>
+<Z>
+<A>
+</>
+<V>200<H>100<P>0<$>B, 100, 100, 6
+<$=>SATOPRINTER
+<V>720<H>150<B>102100*95000012345*
+<Q>1
+<Z>
+Description of the command
+<&>
+Registers <A> to <Z> as the frame overlay.
+</>
+Calls the registered overlay.
+<V>200<H>100<P>0<$>B, 100, 100, 6
+<$=>SATOPRINTER
+Prints characters SATOPRINTER using an outline fo nt (character pitch fixed fonts 100
+(W) x 100 (H) dots with reverse plate) at 200 dots from the start position and 100 dots to
+the right.
+<V>720<H>150<B>102100*95000012345*
+Prints 95000012345 with a CODE39 barcode (thin ba r ratio 2L and 100 dots at the top)
+720 dots from the start position and 150 dots to th e right.
+16
+
+Execution Result
+17
+
+Chapter 5
+SBPL Basic Command Reference
+Preface
+The SBPL Basic Command Reference describes the comm ands installed in the SBPL printer.
+In this chapter, an explanation of the selected com mand parameters is provided.
+A new SBPL is added to the firmware of the new prin ter and is explained as an application.
+Refer to the command list and firmware list for mor e details.
+SBPL Basic Command Reference
+This section describes the basic commands explained from chapters 1 to 4 and the commands
+that the printer supports.
+18
+
+[Function]
+Specifies the start sending data.
+[Supplement]
+01. Add this command to the top of the data in orde r to represent the start of the block.
+02. Always use this command with the <Z> command th at represents the end of the data
+column.
+03. If this command is not specified, printing is n ot started.
+Example of the Data Send Start Specification
+<A>
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>2
+<Z>
+ESC+Z
+Data Send End Specification
+[Function]
+Specifies the end sending data.
+[Supplement]
+01. Add this command to the end of the data in orde r to represent the end of the block.
+02. All command settings, except for system command s and some commands, are reset to the
+default values.
+03. Always use this command with the <A> command th at represents the start of the data
+column.
+04. If this command is not specified, printing will not start.
+Example of the Data Send End Specification Command
+<A>
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>2
+<Z>
+Data Send Start Specification
+ESC+A
+19
+
+[Function]
+Specifies the print number.
+[Supplement]
+01. Specify the print number of labels/tags as one page specified with <A> <Z>.
+02. When there is a field where the consecutive pri nt specification <F> is specified, the print
+result may be affected by the field.
+Example of the Print Number Specification Command
+<A>
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>2
+<Z>
+[Parameter] <Q>aaaaaa
+ a Print Number = Valid Range: 1-999999
+Print Number Specification
+ESC+Q
+20
+
+[Function]
+Specifies the horizontal position from the start po int with dot.
+[Supplement]
+01. Information outside the print range (characters , barcodes, graphics) is not printed.
+02. When you print a character with <%> command a 9 0 or a 270 degree rotation combined
+with the line <FW> command or inversion <%> command , the vertical and horizontal value
+of the specified range will vary.
+Example of the Print Horizontal Position Specificat ion Command
+<A>
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>2
+<Z>
+[Parameter] <H>aaaa
+ a Print Horizontal Position Specification = Vali d Range: Refer to the table below
+Device Type Valid Range (dot)
+CL408e 1 - 832
+CL412e 1 - 1248
+M-8400RVe 1 - 832
+CL608e 1 - 1216
+CL612e 1 - 1984
+CT400DT/TT 1 - 832
+CT410DT/TT 1 - 1248
+Print Horizontal Position
+Specification
+ESC+H
+21
+
+[Function]
+Specifies the vertical position from the start poin t with dot.
+[Supplement]
+01. Information outside the print range (characters , barcodes, graphics) is not printed.
+02. When you print a character with <%> command or a 90 or a 270 degree rotation combined
+with the line <FW> command or inversion <%> command , the vertical and horizontal value
+of the specified range will vary.
+Example of the Print Vertical Position Specificatio n Command
+<A>
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>2
+<Z>
+[Parameter] <V>aaaa
+ a Print Vertical Position Specification = Refer to the table below
+Device Type Valid Range (dot)
+CL408e 1 - 1424
+CL412e 1 - 2136
+M-8400RVe 1 - 1424
+CL608e 1 - 1424
+CL612e 1 - 2136
+CT400DT/TT 1 - 3200
+CT410DT/TT 1 - 4800
+Print Vertical Position Specification
+ESC+V
+22
+
+[Function]
+Specifies the character pitch with dot.
+[Supplement]
+01. The character pitch is the space between fonts and characters when a barcode is specified
+or when there are intervals between characters.
+02. The default value of this command is 02.
+03. The dots are increased according to the enlarge ment command <L>.
+04. When the Font command is specified, the default value is reset. However, this command
+does not reset to the default if CR is used as an a utomatic line feed. It returns to the default
+with <Z>.
+05. When this command is specified immediately befo re a barcode specification, the Pitch
+command becomes effective for the barcode module.
+Target barcode: NW-7 CODE39 Industrial 2 of 5, Matr ix 2 of 5
+06. If you specify data other than a number or exce ed the number of digits, the default value is
+reset.
+Example of the Character Pitch Specification Comman d
+<A>
+<V>100<H>200<P>10<L>0202<XM>ABCD
+<Q>2
+<Z>
+[Parameter] <P>aa
+ a Character Pitch : Valid Range: 0 - 99 (dot)
+Character Pitch Specification
+ESC+P
+23
+
+[Function]
+Specifies the enlargement ratio of the character.
+[Supplement]
+01. The default value of this command is 1x in bo th vertical and horizontal direction (if there is
+no specification between <A> <Z>). The enlargemen t also applies to the character pitch.
+02. The specified enlargement ratio is maintained u ntil this command is specified again.
+03. Returns to the default with <Z>.
+04. This is effective not only for a character font but also graphics and PCX/BMP file printing.
+05. This is invalid for the barcode specification.
+Example of the Enlargement Specification Command
+<A>
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>2
+<Z>
+[Parameter] <L>aabb
+ a Enlargement Ratio in Horizontal Direction : Va lid Range: 01 - 12
+ b Enlargement Ratio in Vertical Direction : Val id Range: 01 - 12
+Enlargement Specification
+ESC+L
+24
+
+[Function]
+Specifies the line pitch.
+[Supplement]
+01. When CR (0DH) is specified, a line feed is give n to only the specified pitch.
+02. Effective for the rotation print specification.
+03. The line feed pitch can be changed during the o peration.
+04. Specify <E> before specifying a repeat printing of one line.
+05. An automatic line feed is applied as long as th e CR (0DH) specification continues. However,
+it is determined by the pitch specified with this c ommand and <H> specification value after
+this command. Please note that more than one <H> ar e specified after this command, the
+returned position by CR is the last <H> position.
+Example of the Automatic Line Feed Specification Co mmand
+<A>
+<E>10
+<V>100<H>200<P>2<L>0304<XM>
+ABCDE+CR
+FGHIJ+CR
+<Q>2
+<Z>
+[Parameter] <E>aaan~n + CR
+ a Line Pitch Width = 0-999 (dot)
+ n Print Data = Print Data
+ CR Control Code = 0dh
+Automatic Line Feed Specification
+ESC+E
+25
+
+[Function]
+Specifies the rotation of the font and barcode.
+[Supplement]
+01. The position specification of <V> and <H> comma nds are absolute values from the start
+point.
+02. The specified rotation status is maintained as long as this command is not specified again.
+03. Returns to the default value (0 degree and para llel 1) with <Z>.
+[Note]
+01. When parameter a value is between 4 and 9, a command error occurs and the value is
+ignored. If the value is other than a number, it wi ll also ignored and 0 will be printed.
+02. When you print a barcode with a serial 1 or ser ial 2, you must be careful of any barcode
+blurring. Please slow down the print speed when you use a serial 1 or serial 2 for rotation
+print.
+Example of the Rotation Specification (Start point fixing) command
+<A>
+<%>1
+<V>100<H>200<P>10<L>0202<XM>ABCD
+<Q>2
+<Z>
+[Parameter] <%>a
+ a Font Rotation 0: 0 degree 1: 90 degrees
+ 2: 180 degrees 3: 270 degrees
+ Barcode Rotation 0: Parallel 1 1: Serial 1
+ 2: Parallel 2 3: Serial 2
+Parallel 1 Parallel 2 Serial 1 Serial 2
+Label feeding Label feeding Label feeding
+Label feeding
+direction direction direction direction
+Rotation Specification (Start
+ESC+%
+point fixing)
+26
+
+ESC+XU
+XU Font Specification
+(Basic Size 5 x 9 dots)
+[Function]
+Specifies the font structured as its basic size 5 x 9 dots.
+[Supplement]
+01. For the font image, refer to the Font Characte r Set section.
+02. Only the fixed pitch can be set for a XU font.
+Example of the XU Font Specification Command
+<A>
+<V>100<H>200<P>2<L>0304<XU>ABCDE
+<Q>2
+<Z>
+[Parameter] <XU>n-n
+ n Print Data = Data
+ESC+XS
+XS Font Specification
+(Basic Size 17 x 17 dots)
+[Function]
+Specifies the font structured as its basic size 17 x 17 dots.
+[Supplement]
+01. For the font image, refer to the Font Characte r Set section.
+02. For an XS font, you can select a proportional o r fixed pitch.
+03 A proportional and fixed pitch can be set with t he User Mode of the printer LCD or command
+specification (The User Mode of the printer LCD is only effective for the e series).
+Example of the XS Font Specification Command
+<A>
+<V>100<H>200<P>2<L>0304<XS>ABCDE
+<Q>2
+<Z>
+[Parameter] <XS>n-n
+ n Print Data = Data
+27
+
+[Function]
+Specifies the font structured as its basic size 24 x 24 dots.
+[Supplement]
+01. For the font image, refer to the Font Characte r Set section.
+02. For an XM font, you can select a proportional o r fixed pitch.
+03. A proportional and fixed pitch can be set with the User Mode of the printer LCD or command
+specification (The User Mode of the printer LCD is only effective for the e series).
+Example of the XM Font Specification Command
+<A>
+<V>100<H>200<P>2<L>0304<XM>ABCDE
+<Q>2
+<Z>
+[Parameter] <XM>n-n
+ n Print Data = Data
+ESC+XB
+XB Font Specification
+(Basic Size 48 x 48 dots)
+[Function]
+Specifies the font structured as its basic size 48 x 48 dots.
+[Supplement]
+01. For the font image, refer to the Font Characte r Set section.
+02. For an XB font, you can select a proportional o r fixed pitch.
+03. A proportional and fixed pitch can be set with the User Mode of the printer LCD or command
+specification (The User Mode of the printer LCD is only effective for the e series).
+Example of the XB Font Specification Command
+<A>
+<V>100<H>200<P>2<L>0304<XB>0ABCDE
+<Q>2
+<Z>
+[Parameter] <XB>an-n
+ a Smoothing Specification = 0: Smoothing invalid
+ 1: Smoothing valid (3x -12x)
+ n Print Data = Data
+XM Font Specification
+(Basic Size 24 x 24 dots)
+ESC+XM
+28
+
+[Function]
+Specifies the font structured as its basic size 48 x 48 dots.
+[Supplement]
+01. For the font image, refer to the Font Characte r Set section.
+02. For an XL font, you can select a proportional o r fixed pitch.
+03. A proportional and fixed pitch can be set with the User Mode of the printer LCD or command
+specification (The User Mode of the printer LCD is only effective for the e series).
+Example of the XL Font Specification Command
+<A>
+<V>100<H>200<P>2<L>0304<XL>0ABCDE
+<Q>2
+<Z>
+[Parameter] <XL>an-n
+ a Smoothing Specification = 0: Smoothing invalid
+ 1: Smoothing valid (3x-12x)
+ n Print Data = Data
+XL Font Specification
+(Basic Size 48 x 48 dots)
+ESC+XL
+29
+
+[Function]
+Specifies the font configuration to Basic Size 5 x 9 dots.
+[Supplement]
+01. For the font image, refer to the Font Characte r Set section.
+02. The U Font is set only for the Fixed Pitch.
+Example of the U Font Specification Command.
+<A>
+<V>100<H>200<P>2<L>0304<U>ABCDE
+<Q>2
+<Z>
+[Parameter] <U>n-n
+ N Print Data = Data
+ESC+S
+S Font Specification
+(Basic Size 8 x 15 dots)
+[Function]
+Specifies the font configuration to Basic Size 8 x 15 dots.
+[Supplement]
+01. For the font image, refer to the Font Characte r Set section.
+02. The S Font is set only for the Fixed Pitch.
+Example of the S Font Specification Command.
+<A>
+<V>100<H>200<P>2<L>0304<S>ABCDE
+<Q>2
+<Z>
+U Font Specification
+(Basic Size 5 x 9 dots)
+ESC+U
+30
+
+[Function]
+Specifies the font configuration to Basic Size 13 x 20 dots.
+[Supplement]
+01. For the font image, refer to the Font Characte r Set section.
+02. The M Font is set only for the Fixed Pitch.
+Example of the M Font Specification Command.
+<A>
+<V>100<H>200<P>2<L>0304<M>ABCDE
+<Q>2
+<Z>
+[Parameter] <M>n-n
+ n Print Data = Data
+ESC+WB WB Font Specification
+(Basic Size 18 x 30 dots)
+[Function]
+Specifies the font configuration to Basic Size 18 x 30 dots.
+[Supplement]
+01. For the font image, refer to the Font Characte r Set section.
+02. The WB Font is set only for the Fixed Pitch.
+Example of the WB Font Specification Command.
+<A>
+<V>100<H>200<P>2<L>0304<WB>0ABCDE
+<Q>2
+<Z>
+[Parameter] <WB>an-n
+ a Smoothing Specification = 0 : Smoothing inacti ve
+ 1 : Smoothing active (Triple-Twelve times)
+ n Print Data = Data
+M Font Specification
+(Basic Size 13 x 20 dots)
+31
+ESC+M
+
+[Function]
+Specifies the font configuration to Basic Size 28 x 52 dots.
+[Supplement]
+01. For the font image, refer to the Font Characte r Set section.
+02. The WL Font is set only for the Fixed Pitch.
+Example of the WL Font Specification Command.
+<A>
+<V>100<H>200<P>2<L>0304<WL>0ABCDE
+<Q>2
+<Z>
+[Parameter] <WL>an-n
+ a Smoothing Specification = 0 : Smoothing inacti ve
+ 1 : Smoothing active (Triple-12 times)
+ n Print Data = Data
+WL Font Specification
+(Basic Size 28 x 52 dots)
+ESC+WL
+32
+
+[Function]
+Specifies the OCR-A font (alphanumeric and symbol).
+[Supplement]
+01. For the font image, refer to the Font Characte r Set section.
+Example of the OCR-A Font Specification Command
+<A>
+<V>100<H>100<P>2<L>0202<OA>ABC
+<Q>2
+<Z>
+[Parameter] <OA>n-n
+ n Print Data = Data
+Printer Type Font Size (dot)
+CL408e 15 x 22
+CL412e 22 x 33
+M-8400RVe 15 x 22
+CL608e 15 x 22
+CL612e 22 x 33
+CT400DT/TT 15 x 22
+CT410DT/TT 22 x 33
+OCR-A Font
+ESC+OA
+33
+
+[Function]
+Specifies the OCR-B font (alphanumeric and symbol).
+[Supplement]
+01. For the font image, refer to the Font Characte r Set section.
+Example of the OCR-B Font Specification Command
+<A>
+<V>100<H>100<P>2<L>0202<OB>ABC
+<Q>2
+<Z>
+[Parameter] <OB>n-n
+ n Print Data = Data
+Printer Type Font Size (dot)
+CL408e 20 x 24
+CL412e 30 x 36
+M-8400RVe 20 x 24
+CL608e 20 x 24
+CL612e 30 x 36
+CT400DT/TT 20 x 24
+CT410DT/TT 30 x 36
+OCR-B Font
+ESC+OB
+34
+
+[Function]
+Specifies the font type, size and style for the out line font.
+[Supplement]
+01. An italics is a 15-degree slanted style with th e Font Width Specification.
+02. The print information specification of the outl ine font is specified with <$=> after this
+command.
+03. Be aware that if the specified dot is small for the font style 1-9, it will not be recognized as a
+font.
+04. If the size specification is out of range, a de fault value of 50 dots is applied. However, some
+fonts less than 24 dots are not printed clearly.
+Example of the Outline Font Shape Specification Com mand
+<A>
+<V>100<H>100<P>2<L>0101
+<$>A, 100, 100, 1<$=>SATO
+<Q>2
+<Z>
+[Parameter] <$>a, bbb, ccc, d
+ a Font Type Specification = A: Helvetica Bold (p roportional)
+ B: Helvetica Bold (fixed character pitch)
+ b Font Width Specification = 50-999
+ c Font Height Specification = 50-999
+ d Font Style Specification = 0: Standard font (b lack)
+ 1: Inversion font (enclose font)
+ 2: Gray font (pattern 1)
+ 3: Gray font (pattern 2)
+ 4: Gray font (pattern 3)
+ 5: Shadow font
+ 6: Inversion with shadow font
+ 7: Mirror font
+ 8: Standard italic font
+ 9: Inversion with shadow italic font
+Outline Font Shape Specification
+ESC+$
+35
+
+[Function]
+Specifies the print of an outline font set with <$> .
+[Supplement]
+01. Specify each outline font style with <$> before using this command.
+02. The specification for the font height includes the area of ascender and descender. In
+addition, each letter size font width varies when t his font is applied to the proportional font.
+03. The font pitch can be specified with <P>.
+04. An italics is a 15-degree slanted style with th e Font Width Specification. The specification
+for the font height includes the area of ascender a nd descender.
+05. Be aware that if the specified dot is small for the font style 1-9, it will not be recognized as a
+font.
+06. If the size specification is out of range, a de fault value of 50 dots is applied. However, some
+fonts less than 24 dots are not printed clearly.
+Example of the Outline Font Print Specification Com mand
+<A>
+<V>100<H>100<P>2<L>0202
+<$>A, 100, 100, 1<$=>SATO
+<Q>2
+<Z>
+[Parameter] <$=>n-n
+ n Print Data = Data
+Outline Font Print Specification
+ESC+$=
+36
+
+[Function]
+Specifies the type of CG font, font style, font siz e and print data.
+[Supplement]
+01. The font size is set with Dot Specification o r Point Specification.
+02. The dot size varies according to the printer mo del.
+For CL408e, M-8400RVe, CL608e, CT400DT/TT,
+One dot = 0.125mm
+For CL412e, CL612e, CT410DT/TT, MT/MR110w,
+One dot = 0.083mm
+03. When one point is converted to mm,
+One point = 0.35mm
+Example of the CG Font Specification Command
+<A>
+<V>100<H>100<P>2<L>0202
+<RD>A00, P10, P10, SATO
+<Q>2
+<Z>
+[Parameter] <RD>abb, ccc, ddd, n-n
+ a Font Type = A: CG Times
+ = B: CG Triumvirate
+ b Font Style = 00 Normal
+ 01 Bold
+ c Horizontal Size = 16-999 (Dot specification)
+ P08-P72 (Point specification)
+ d Vertical Size = 16-999 (Dot specification)
+ P08-P72 (Point specification)
+ n Print Data = Data
+CG Font Specification
+ESC+RD
+37
+
+[Function]
+Specifies a 1:3 ratio barcode with a narrow bar and wide bar.
+[Supplement]
+01. Do not specify anything other than the above me ntioned code to parameter a.
+02. There is no module structure ratio available fo r the following barcode types.
+(JAN/EAN-13, JAN/EAN-8, CODE93, UPC-E, CODE128, UPC -A, UCC-128, POSTNET)
+03. You can specify a character space with the Char acter Pitch Specification <P> for the
+following barcode types.
+(NW-7, CODE39, Industrial 2 of 5, Matrix 2 of 5)
+04. The character pitch specification <P> becomes e ffective by immediately specifying it before
+this command. If it is not located immediately befo re this command, the default value (one
+dot) is applied.
+05. The character pitch is a multiplied value of th e character pitch specification value or default
+value (if a character pitch is not specified) and t he thin width specification.
+Example: Character pitch specification (none or 0, 1) x Thin bar width (2L)
+ = Font space (2 dots)
+Character pitch specification (2) x Thin bar width (3L) = Font space (6 dots)
+06. A barcode is not printed if the applicable barc ode type is not set in the data part.
+07. [C/D] of CODE128 and CODE93 is automatically ge nerated.
+08. C/D of JAN/EAN-13, UPC-A and JAN/EAN-8 can be a utomatically generated.
+Example: Data 11-digit Input = C/D is calculated by adding 0 to the top.
+Data 12-digit Input (7-digit input) = C/D calculati on
+Data 13-digit Input (8-digit input) = No C/D calcul ation. However, () is for
+JAN/EAN-8.
+Example of the 1:3 Ratio Barcode Specification Comm and
+<A>
+<V>100<H>100<B>103160*1234567890*
+<Q>2
+<Z>
+[Parameter] <B>abbcccn-n
+ a Barcode Type = 0: NW-7 (Codabar)
+ 1: CODE39
+ 2: Interleaved 2 of 5
+ 3: UPC-A/EAN-13 (without a guide bar or descrip tion font)
+ 4: EAN-8 (without a guide bar or description fo nt)
+ 5: Industrial 2 of 5
+ 6: Matrix 2 of 5
+ A: MSI
+ C: CODE93
+ E: UPC-E
+ G: CODE128
+ F: Bookland
+ H: UPC-A (without a guide bar or description fo nt)
+ I: UCC/EAN-128 (18 digit fixed barcode for sta ndard carton ID)
+ P: POSTNET
+ b Thin Bar Width = 01-12
+ c Bar Top Length = 001-600 (dots)
+ n Print Data = Data
+Barcode Specification (Ratio 1:3)
+ESC+B
+38
+
+[Function]
+Specifies the CODE93 barcode.
+[Supplement]
+01. The C/D is automatically generated.
+02. The maximum digit of the data is 99.
+03. The data digit and input data number should alw ays be equal.
+04. If the data digit and input data number are not equal, a command error occurs and the
+character will not be printed correctly.
+Example of the CODE93 Barcode Specification Command
+<A>
+<V>100<H>200<BC>031600512345
+<Q>2
+<Z>
+[Parameter] <BC>aabbbccn-n
+ a Thin Bar Width = 01-12
+ b Barcode Top = 001-600 (dots)
+ c Data digit = 01-99
+ n Print Data = Data
+CODE93 Barcode Specification
+ESC+BC
+39
+
+[Function]
+Specifies the CODE 128 Barcode.
+[Supplement]
+01. The C/D is generated automatically.
+Example of the CODE128 Barcode Specification Comman d.
+<A>
+<V>100<H>200<BG>031600123456789
+<Q>2
+<Z>
+[Parameter] <BG>aabbbn-n
+ a Narrow Bar Width = 01-12
+ b Barcode Height = 001-600 (dots)
+ n Print Data = Data
+<<CL408e, CL412e, M-8400RVe, CL608e, CL612e>>
+01. When using the CODE128 Start Character C, make sure to specify the print data as even
+numbers.
+02. When the Start Character C has been specified a s an uneven number, the first letter of the
+print data should be switched to either Start Chara cter A or B, then the remaining data
+should be set to Start Character C and converted in to an even number.
+Example 1: In the case of 15 digits 1234567890123 45
+ <B>1<C>23456789012345
+Example 2: In the case of 9 numbers and 6 letters and numbers 123456789ABC123
+ <C>12345678<B>9ABC123
+03. When the Start Character C has been specified a s an uneven number, a command error
+message will appear and the barcode will not be pri nted.
+04. Please be aware that if the printers Dip Switc h 2-8 is set to ON, and if the Start Character C
+has been specified as an uneven number, the last nu mber printed on the data will be a 0
+to make it an even number.
+<<CT400TT/DT, CT410TT/DT>>
+01. When using the CODE128s Start Character C, mak e sure to specify the print data as even
+numbers.
+02. When the Start Character C has been specified a s an uneven number, the first letter of the
+print data should be switched to either Start Chara cter A or B, then the remaining data
+should be set to Start Character C and converted in to an even number.
+03. Please be aware that if the Start Character C h as been specified as an uneven number, the
+last number printed on the data will be a 0 to ma ke it an even number.
+CODE128 Barcode Specification
+ESC+BG
+40
+
+[Function]
+Specifies the UCC/EAN-128 barcode.
+[Supplement]
+01. The standard code, function, encode and identif ier (only 00 is supported) are automatically
+added.
+02. The modulus 10 check character and modulus 103 check character are automatically
+generated.
+03. For the code table, refer to the UCC/EAN-128 coming with this manual.
+04. The consecutive number barcode data can be used .
+05. Printing is executed for the automatic descript ion font specification according to the
+following regulation.
+06. The character pitch is fixed to 10 dots for the barcode and description font width.
+07. When the width of a barcode is wider than the d escription font, printing is started from the
+barcode print start position.
+08. When the width of a barcode is narrower than th e description font, printing is started by
+adjusting the description font with the center of t he barcode.
+09. The font type of the description font is printe d with OCR-B.
+10. When the description font is out of the print r ange, it is not printed. When you specify the
+description font Valid, specify <V> and <H> by co nsidering the description font printing.
+Example of the UCC/EAN-128 Specification Command
+<A>
+<V>100<H>200<BI>031600512345678901234567
+<Q>2
+<Z>
+[Parameter] <BI>aabbbcn-n
+ a Thin Bar Width = 01-12
+ b Barcode Top = 001-600 (dot)
+ c Barcode Description Font Specification
+ = 0: Without Description Font
+ 1: With Description Font (top of a barcode)
+ 2: With Description Font (bottom of a barcode)
+ n Print Data = Data
+EAN-128 (Barcode for the Standard Carton ID) Fixed 18
+digits.
+ Transport Container Code Identifier.
+ Packing Type
+ Country Code, Maker Code
+ Shipping Container Consecutive Number
+ Check Digit.
+* As the Check Digit is automatically added on, set the data
+as Check Digit with 17 digits omitted.
+UCC/EAN-128 Specification
+ESC+BI
+41
+
+[Function]
+Specifies the Postnet Code.
+[Supplement]
+01. The Postnet codes are mentioned below. This com mand will not be valid if the values are
+not within the digit specifications.
+* 5 digit specification (Postnet-32 format)
+* 6 digit specification (Postnet-37 format)
+* 9 digit specification (Postnet-52 format)
+ 11 digit specification (Postnet-62 Delivery Point format)
+ Example of the Postnet Specification Command
+<A>
+<V>100<H>200<BP>01234567890
+<Q>2
+<Z>
+Parameter <BP>n-n
+ N Print Data = Data (Address Display Number)
+Postnet Specification
+ESC+BP
+42
+
+[Function]
+Specifies the Bookland Barcode.
+[Supplement]
+01. Please set ONLY the values 0-9 in the parameter s.
+Example of the Bookland Barcode Specification Comma nd.
+<A>
+<H>325<V>725<B>D30315009827721123
+<L>0101<H>295<V>800<OB>0
+<H>340<V>878<OB>98277
+<H>480<V>878<OB>21123
+<H>640<V>760<BF>0313021826
+<H>655<V>730<OB>21826
+<Q>1
+<Z>
+[Parameter] <BF>bbccn-n
+ b Narrow Bar Width = 01-03
+ c Bar Height = 001-600 (dots)
+ n Print Data = 2-5 digits
+Bookland Specification
+ESC+BF
+43
+
+[Function]
+Specifies a 1:2 ratio barcode with a narrow bar and a wide bar.
+[Supplement]
+01. Do not specify anything other than the above me ntioned code to parameter a.
+02. There is no module structure ratio available fo r the following barcode types.
+(JAN/EAN-13, JAN/EAN-8, UPC-A)
+03. For the following barcode types, the character pitch specification <P> becomes effective by
+immediately specifying it before this command. If i t is not located immediately before this
+command, the default value (one dot) is applied.
+(NW-7, CODE39, Industrial 2 of 5, Matrix 2 of 5)
+04. The character pitch specification <P> is effect ive by specifying immediately before this
+command. If it is not located immediately before th is command, the default value (one dot)
+is applied.
+05. The character pitch is a multiplied value of th e character pitch specification value or default
+value (if a character pitch is not specified) and t he thin width specification.
+Example: Character pitch specification (none or 0, 1) x Thin bar width (2L)
+= Font space (2 dots)
+Character pitch specification (2) x Thin bar width (3L) = Font space (6 dots)
+06. A barcode is not printed if the applicable barc ode type is not set in the data part.
+07. C/D of JAN/EAN-13, UPC-A and JAN/EAN-8 can be a utomatically generated.
+Example: Data 11-digit Input = C/D is calculated by adding 0 to the top.
+Data 12-digit Input (7-digit input) = C/D calculati on
+ Data 13-digit Input (8-digit input) = No C/D calcu lation.
+ However, () is for JAN/EAN-8.
+Example of the 1:2 Ratio Barcode Specification Comm and
+<A>
+<V>100<H>200<D>103160*1234567890*
+<Q>2
+<Z>
+[Parameter] <D>abbcccn-n
+ a Barcode Type = 0: NW-7 (Codabar)
+ 1: CODE39
+ 2: Interleaved 2 of 5
+ 3: JAN/EAN-13 (with a guide bar, without a desc ription font)
+ 4: JAN/EAN-8 (with a guide bar, without a descr iption font)
+ 5: Industrial 2 of 5
+ 6: Matrix 2 of 5
+ H: UPC-A (with a guide bar, without a descripti on font)
+ b Thin Bar Width = 01-12
+ c Bar Top Length = 001-600 (dot)
+ n Print Data = Data
+Barcode Specification (Ratio 1:2)
+ESC+D
+44
+
+[Function]
+Specifies the guide and center bar long type barcod e.
+[Supplement]
+01. A description character is added to a specified character.
+02. C/D of JAN/EAN-13, UPC-A and JAN/EAN-8 can be a utomatically generated.
+Example: Data 11-digit Input = C/D is calculated b y adding 0 to the top.
+Data 12-digit Input (7-digit input) = C/D calculati on
+ Data 13-digit Input (8-digit input) = No C/D calcu lation.
+ However, ( ) is for JAN/EAN-8.
+03. If you specify anything other than the specifie d data, the character will not printed. In
+addition, if the ratio of the barcode is small and you specify a large character type, a
+description character may overlap the barcode.
+Example of the Barcode Description Character Select ion Specification Command
+<A>
+<V>100<H>200<D>302060490308011505
+<XS>490308011505
+<Q>2
+<Z>
+[Parameter] <D>abbcccn-n +ESC+dn-n
+ a Barcode Type = 3: JAN/EAN-13
+ 4: JAN/EAN-8
+ H: UPC-A
+ b Thin Bar Width = 01-12
+ c Bar Top Length = 001-600
+ d Character Type Specification = XU
+ XS
+ XM
+ XB
+ XL
+ OA
+ OB
+Barcode Specification (Selection of
+a description character)
+45 ESC+D
+ESC+d
+
+[Function]
+Specifies a 2:5 ratio barcode with a narrow bar and wide bar.
+[Supplement]
+01. Do not specify anything other than the above me ntioned code to parameter a.
+02. There is no module structure ratio available fo r the following barcode types.
+(JAN/EAN-13, JAN/EAN-8, CODE93, UPC-E, CODE128, UPC -A, UCC-128, POSTNET)
+03. You can specify a character space with the Char acter Pitch Specification <P> for the
+following barcode types.
+(NW-7, CODE39, Industrial 2 of 5, Matrix 2 of 5)
+04. The character pitch specification <P> becomes e ffective by immediately specifying it before
+this command. If it is not located immediately befo re this command, the default value (2 dot)
+is applied.
+05. The character pitch is a multiplied value of th e character pitch specification value or default
+value (if a character pitch is not specified) and t he thin width specification.
+Example: Character pitch specification (none or 0, 2) x Thin bar width (2L) =
+Font space (4 dots)
+Character pitch specification (1) x Thin bar width (3L) = Font space (3 dots)
+Character pitch specification (3) x Thin bar width (3L) = Font space (9 dots)
+06. A barcode is not printed if the applicable barc ode type is not set in the data part.
+07. C/D of JAN/EAN-13, UPC-A and JAN/EAN-8 can be a utomatically generated.
+Example: Data 11-digit Input = C/D is calculated by adding 0 to the top.
+Data 12-digit Input (7-digit input) = C/D calculati on
+Data 13-digit Input (8-digit input) = No C/D calcul ation.
+However, ( ) is for JAN/EAN-8.
+Example of the Ratio 2:5 Barcode Specification Comm and
+<A>
+<V>100<H>200<BD>103160*1234567890*
+<Q>2
+<Z>
+[Parameter] <BD>abbcccn-n
+ a Barcode Type = 0: NW-7 (Codabar)
+ 1: CODE39
+ 2: Interleaved 2 of 5
+ 3: JAN/EAN-13 (with a guide bar and description font)
+ 4: JAN/EAN-8 (with a guide bar and description font)
+ 5: Industrial 2 of 5
+ 6: Matrix 2 of 5
+ H: UPC-A (with a guide bar and description font )
+ b Thin Bar Width = 01-12
+ c Barcode Top = 001-600 (dots)
+ n Print Data = Data
+Barcode Specification (Ratio 2:5)
+46 ESC+BD
+
+[Function]
+Specifies a ratio with a narrow bar and wide bar as a free value.
+[Supplement]
+01. The barcode print specification with the ratio definition should be done by specifying <BW>
+after this command.
+02. When <BW> and <Q> are missing, only specify the narrow and wide bar ratio registration
+by specifying this command.
+03. Only one registration type is effective.
+04. If you set anything other than the specified da ta, a command error occurs and the
+registration fails.
+05. If the previous registration is regular data an d the data you are trying to register is an invalid
+data, the previous data is printed.
+Example of the Barcode Ratio Registration Specifica tion Command
+<A>
+<BT>103060306
+<V>100<H>200<BW>01233*ABCD*
+<Q>2
+<Z>
+[Parameter] <BT>abbccddee
+ a Barcode Type = 0: NW-7
+ 1: CODE39
+ 2: Interleaved 2 of 5
+ 5: Industrial 2 of 5
+ 6: Matrix 2 of 5
+ b Narrow Space = 01-99
+ c Wide Space = 01-99
+ d Narrow Bar = 01-99
+ e Wide Bar = 01-99
+Barcode Ratio Registration
+Specification
+ESC+BT
+47
+
+[Function]
+Specifies the barcode registered with the Barcode R atio Registration Specification command
+<BT>.
+[Supplement]
+01. You can specify a character space with the Char acter Pitch Specification <P> for the
+following barcode types.
+(NW-7, CODE39, Industrial 2 of 5, Matrix 2 of 5)
+02. The character pitch specification <P> is effect ive by specifying immediately before this
+command. If it is not located immediately before th is command, the default value (narrow
+space value specified with the <BT> is applied.
+03. The character pitch is a multiplied value of th e character pitch specification value or default
+value (if a character pitch is not specified) and t he thin width specification.
+Example:
+When a narrow space value specified with <BT> = 3,
+Character pitch specification (none or 0, 3) x Thin bar width (2) = Font space (6 dots)
+When a character pitch is specified,
+Character pitch specification (2) x Thin bar width (3) = Font space (6 dot)
+04. If you specify anything other than the specifie d data, a barcode is not printed.
+05. If <BT> is not specified, a barcode is printed with the ratio of the narrow bar and wide bar
+that the <BT> was registered.
+However, if <BT> was not registered, barcode is not printed.
+Example of the Barcode Raito Registration Print Spe cification
+<A>
+<BT>102060206
+<V>100<H>200<B>02160*12345*
+<Q>2
+<Z>
+[Parameter] <BW>aabbn-n
+ a Thin Bar Width = 01-12
+ b Bar To = 001-600
+ n Print Data = Data
+Barcode Ratio Registration Print
+Specification
+ESC+BW
+48
+
+[Function]
+Specifies the print ruler and frame print.
+[Supplement]
+01. When the rotation command <%> is used, the coor dinate of the vertical and horizontal
+against the start point is reversed if a 90 degree or 270 degree rotation is applied.
+Example of the Ruler and Frame Print Specification Command
+<A>
+<V>100<H>200<FW>0808V300H400
+<Q>2
+<Z>
+When a ruler is printed,
+[Parameter]
+<FW>aabcccc
+ a Line Width = 02-999 (dot)
+ b Specification of Horizontal and Vertical direct ion
+ = H: Horizontal direction
+ V: Vertical direction
+ c Line Length = 1-H Max
+ 1-V Max
+When a frame is printed,
+[Parameter]
+<FW>aabbVccccHdddd
+ a Vertical Line Width = 02-99 (dot)
+ b Horizontal Line Width = 02-99 (dot)
+ c Vertical Line Length = 1-V Max
+ d Horizontal Line Length = 1-H Max
+Vertical Line Length
+Horizontal Line Length
+Model (dot)
+(dot)
+CL408e 832 1424
+CL412e 1248 2136
+M-8400RVe 832 1424
+CL608e 1216 1424
+CL612e 1984 2136
+CT400DT/TT 832 3200
+CT410DT/TT 1248 4800
+Ruler and Frame Print Specification
+49 ESC+FW
+
+[Function]
+Specifies the Black/White inversion print.
+[Supplement]
+01. For the print start position, specify the <H> a nd <V> commands before this command.
+02. When the rotation command <%
+> is used, the coordinate of the vertical and horizo ntal
+against the start point is reversed if a 90 degree or 270 degree rotation is applied. If the
+print start position overruns, a command error occu rs and the character is not printed.
+03. When the print start position overruns, a comma nd error occurs and the black/white
+inversion is not printed.
+04. If the Print Start Position goes over, a comman d error will be displayed and the Black and
+White Inversion will not be printed.
+Specify the print area so that the black printed ar ea does not exceed more than 30% of
+the entire area.
+Example of the Black/White Inversion Print Specific ation Command
+<A>
+<V>50<H>50<P>2<L>0202<XM>ABCD
+<V>50<H>50<(>200, 70
+<Q>2
+<Z>
+[Parameter] <(>aaaa, bbbb
+ a Inversion Area Specification in Horizontal dire ction = 8-H Max
+ b Inversion Area Specification in Vertical direct ion = 8-V Max
+CL408e 832 1424
+CL412e 1248 2136
+M-8400RVe 832 1424
+CL608e 1216 1888
+CL612e 1984 2136
+CT400DT/TT 832 1424
+CT410DT/TT 1248 2136
+White/Black Inversion Print
+Specification
+<V>50<H>50<(>200, 70
+H50
+V50
+70
+200
+Inversion in Vertical
+Inversion in Horizontal
+Model Area (dot)
+Area (dot)
+ESC+(
+50
+
+[Function]
+Specifies the Journal print.
+[Supplement]
+01. Prints the journal from <V>2<H>2 position.
+02. The character pitch is 2 dots and the line pitc h is 16 dots.
+03. The font type is an X21 font and printed at 2 x 2.
+04. This command cannot be used with other commands of the Journal Print command.
+However, <C> and <(> are excluded.
+Example of the Journal Print Specification Command
+<A>
+<J>
+ABCD+CR
+EFGH+CR
+<Z>
+ [Parameter] <J>a-a+CR
+ a Journal Print Column = Print Data
+ CR Control Code (0DH)
+Journal Print Specification
+ESC+J
+51
+
+[Function]
+Specifies a graphic print.
+[Supplement]
+01. The length of the code of specification B is longer than specification H. However, the
+transfer data length is split in half so you have a n advantage in terms of capacity.
+02. The rotation <%> and enlargement <L> commands c an be used.
+Example of the Graphic Print Specification Command
+<A>
+<V>50<H>50<G>H020002888888888888
+<Q>2
+<Z>
+[Parameter] <G>abbbcccn-n
+ a Specifies the data as hex and binary
+ H: Hex data
+ Separate an 8-bit data into 4-bit data and outp ut as a hex code that
+ supports ASCII.
+ B: Binary data
+ An 8-bit data is output as one font data.
+ b Specifies a graphic area of the H direction as the byte unit
+ c Specifies a graphic area of the V direction as the byte unit
+ n Graphic Data
+Maximum Byte in V
+Maximum Byte in H
+Model direction
+direction
+CL408e 104 400
+CL412e 156 600
+M-8400RVe 104 400
+CL608e 152 400
+CL612e 248 600
+CT400DT/TT 104 400
+CT410DT/TT 156 600
+Graphic Print Specification
+ESC+G
+52
+
+[Function]
+Specifies the PCX file print created with Windows d rawing applications such as Paint.
+[Supplement]
+01. Data can be sent as binary data (output 8-bit a s one font data).
+02. In a PCX file, the first 128 byte of the data i s treated as a header and the following data is
+compressed.
+03. If the total data does not match with the trans ferred data, printing will not be successful.
+04. The total byte is the size that appears by ente ring the dir command.
+05. A PCX file can only be used in Black/White mode . A PCX file with the color mode is not
+printed because a command error occurs. In addition , print BMP file cannot be specified
+with this command. Confirm that the file is . PCX and start printing.
+***
+06. You need Windows to create a PCX file. A PCX fi le cannot be created if Windows is not
+installed in your PC.
+07. When you install Windows in your PC, you may ne ed to add memory. For more information,
+refer to the Windows manual or technical documentat ion.
+08. Both the rotation <%> and enlargement <L> comma nds can be used.
+[Parameter] <GP>aaaaa, n-n
+ a Total Byte of a PCX file
+ n Data
+PCX File Print Specification
+ESC+GP
+53
+
+[Function]
+Specifies the BMP File Print created with Windows d rawing applications such as Paint.
+This command cannot be used with the CT series.
+[Supplement]
+01. Data can be sent as binary data (output 8-bit a s one font data).
+02. In a BMP file, the first 62 bytes of data are t reated as a header and the following data is
+compressed.
+03. If the total data does not match with the trans ferred data, printing will not be successful.
+04. The total byte is the size that appears by sele cting the Property command.
+05. A BMP file can only be used in the Black/White mode. A BMP file with the color mode is not
+printed because a command error occurs. In addition , print BMP file cannot be specified
+with this command. Confirm that the file is . BMP and start printing.
+***
+06. You need Windows to create a BMP file.
+07. When you install Windows in your PC, you may ne ed to add memory. For more information,
+refer to the Windows manual or technical documentat ion.
+08. Both the rotation <%
+> and enlargement <L> commands can be used.
+[Parameter] <GM>aaaaa, n-n
+ a Total Byte of a BMP file
+ n Data
+BMP File Print Specification
+ESC+GM
+54
+
+[Function]
+Specifies the Part Editing Function for the previou s printing data.
+[Supplement]
+01. This function is used when a part of the previo us data is changed.
+02. Find the previous print data with the Part Edit ing command <0> and edit the part then print
+the data. You need to specify the same print positi on to be changed for the previous data
+and send the changed data.
+03. The previous data specified for the same positi on is cleared.
+04. This command is valid until you set the <Z> aft er <A>.
+Previous Print
+ <A> [DATA1] n1 [DATA2] n2..<Z>
+Partly Changed Print
+ <A> <0> [DATA2] n3..<Z>
+Second page
+First page
+Part Editing
+ABC ABC
+DEF 1 2 3
+05. When the Rotation command applies to the partly edited position, you need to use the
+command during editing.
+06. This command should be used with the same fixed pitch, font and digit.
+Example of the Part Editing Function Specification Command
+<A>
+<V>100<H>200<P>2<L>0202<XM>ABC
+<V>100<H>200<P>2<L>0202<XM>DEF
+<Q>1
+<Z>
+<A>
+<0>
+<V>200<H>200<P>2<L>0202<XM>123
+<Q>1
+<Z>
+Part Editing Function Specification
+ESC+0
+55
+
+[Function]
+Specifies the Copy within a label (Part Copy).
+[Supplement]
+01. For the print start position, specify <V> and < H> before this command.
+02. Do not specify the copy destination in the copy source range.
+03. When a rotation command <%> is used, the coordi nate of the vertical and horizontal against
+the start point is reversed if 90 degree or 270 deg ree rotation is applied. If the print start
+position overruns, a command error occurs and the c haracter is not printed.
+Example of the Copy with a label (Part Copy) Specif ication Command
+<A>
+<V>50<H>50<P>2<L>0202<XS>123
+<V>300<H>100<WD>V50H50Y200X400
+<Q>2
+<Z>
+[Parameter] <WD>VaaaaHbbbbYccccXdddd
+ a V Start point of copy source = 1-V Max
+ b H Start point of copy source = 1-H Max
+ c Vertical copy size of copy source = 1-V Max
+ d Horizontal copy size of copy source = 1-H Max
+ABCD
+aaaa
+dddd
+ABCD
+bbbb
+cccc
+Copy source H start point
+Copy source V start point
+Model of Horizontal copy size
+of Vertical copy size
+CL408e 2848 dots 832 dots
+CL412e 4272 dots 1248 dots
+M-8400RVe 2848 dots 832 dots
+CL608e 3776 dots 1216 dots
+CL612e 4272 dots 1984 dots
+CT400DT/TT 3200 dots 832 dots
+CT410DT/TT 4800 dots 1248 dots
+Copy within a label (Part Copy)
+Specification
+ESC+WD
+56
+
+[Function]
+Set this command before the Data Setting command of a font or barcode and print the
+sequential number of the connected data.
+[Supplement]
+01. The sequential number specification position fo r one format can be set up to 8.
+02. You cannot copy the numbers that are arranged c ontinuously. However, you can copy the
+part when the number is printed continuously.
+03. Black/White inversion cannot be applied to the sequential numbers.
+04. The automatic line feed <E> cannot be used.
+Example of the Sequential Number Print Specificatio n Command
+<A>
+<V>100<H>100<P>2<L>0202
+<F>100+1, 5, 0<XS>10000
+<Q>2
+<Z>
+[Parameter] <F>aaaabcccc, dd, ee, f
+ a Print Number Specification of the identical inf ormation
+ = 1-9999
+ b Increase/Decrease Specification = + : Additio n
+ : Reduction
+ c Setting Increase/Decrease value = 1-9999
+ d Sequential Number Effective Digit = 1-99 Defa ult 8 (can be omitted)
+ e Low Level Invalid Digit = 0-99 Default 0 (can be omitted)
+ f Decimal or Hex Sequential Number Specification
+ = 0 : Decimal Default 0 (can be omitted)
+ = 1 : Hex
+Sequential Number Print
+Specification
+ESC+F
+57
+
+[Function]
+Specifies the proportional pitch.
+[Supplement]
+01. The effective font types are from XU to XL.
+02. The proportional print is effective after speci fying this command.
+03. This command is effective between <A> and <Z>.
+04. Katakana cannot be used even if this command is specified. Please note that the width of a
+number is narrower when this command is specified.
+The proportional print is not effective if you set anything other than the specified data.
+Example of the Proportional Pitch Specification Com mand
+<A>
+<PS>
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>2
+<Z>
+ESC+PR
+Proportional Pitch Cancel
+Specification
+[Function]
+Cancels the proportional pitch specification.
+[Supplement]
+01. When the printer is shipped, this command (Prop ortional Pitch Cancel) is set as a default
+(Fixed Pitch). You can set the default settings (Fi xed/Proportional) by using the User Mode
+Setting of the printer LCD and/or Printer Setting Tool.
+Example of the Proportional Pitch Cancel Specificat ion Command
+<A>
+<PS>
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<PR>
+<V>300<H>200<P>2<L>0202<XM>ABCD
+<Q>2
+<Z>
+Proportional Pitch Specification
+ESC+PS
+58
+
+[Function]
+Specifies the form the overlay registration.
+[Supplement]
+01. The fixed print information is stored with this command and output with drawing data by
+entering the Call Specification </>.
+02. This command should be specified at the end of a data string to be stored. The effective
+area of the drawing registration is identical to th e printing area of the printer.
+03. This command can register only one form.
+04. In order to change the information, you must cl ear the form overlay <*&> and register new
+data.
+05. The registered information can be found with </ >.
+06. The fixed data registered with this command is deleted when you turn off the printer.
+Example of the Form Overlay Registration Specificat ion Command
+<A>
+<V>100<H>50<FW>1010V800H750
+<V>100<H>50<FW>0505V760H710
+<V>150<H>100<XB>0MODEL
+<&>
+<Z>
+Form Overlay Registration
+Specification
+ESC+&
+59
+
+[Function]
+Specifies the form overlay call.
+[Supplement]
+01. This command finds and prints the information r egistered with <&>.
+02. When this command is detected in the print data column, it is combined with drawing data
+stored in the form overlay and printed.
+Example of the Form Overlay Call Specification Comm and
+<A>
+</>
+<V>200<H>100<P>0<$>B, 100, 100, 6
+<$=>SATOPRINTER
+<V>720<H>150<B>102100*95000012345*
+<Q>2
+<Z>
+Form Overlay Call Specification
+ESC+/
+60
+
+[Function]
+Specifies the Job ID Number for status return.
+[Supplement]
+01. The command is effective when receiving the sta tus request [ENQ] while printing (including
+QTY is not 0, offline and error) is executed with t he Status Return Communication protocol.
+02. If the status request [ENQ] is received while p rinting is not being executed (QTY is 0, when
+the printer is started or when there is no received data), a space [20H] is set to the status
+and returned to the printer.
+03. The information between <A
+> and <Z > is invalid when this command is received with only
+the Registration command (Format, Graphics, Custom- design character, etc.).
+04. The last specification is valid when this comma nd (<A> - <ID> - <ID> - <Z>) is specified to
+more than one place within one form.
+05. For more information, refer to the Interface: High Speed RS-232C manual.
+Example of the Job ID Number Specification for the status return Command
+<A>
+<ID>01
+<V>200<H>100<P>0<$>B, 100, 100, 6
+<$=>SATOPRINTER
+<Q>2
+<Z>
+[Parameter] <ID>aa
+ a ID Number = 00-99
+Job ID Number Specification
+ESC+ID
+61
+
+[Function]
+Specifies the Job Name for status return.
+[Supplement]
+01. The command is effective when receiving the sta tus request [ENQ] while printing (including
+QTY is not 0, offline and error) is executed with t he Status Return Communication protocol.
+02. The information between <A> and <Z> is invalid when this command is received with only
+the Registration command (Format, Graphic, Custom-d esign character, etc.).
+03. The last specification is valid when this comma nd (<A> - <WK> -<WK> - <Z>) is set in more
+than one place within one form.
+04. For more information, refer to the Interface: High Speed RS-232C manual.
+05. The Protocol for the driver of High Speed RS-2 32C, IEEE1284, USB and LAN can be
+used as an interface.
+Example of the Job Name Specification for status re turn Command
+<A>
+<WK>TEST01
+<V>200<H>100<P>0<$>B, 100, 100, 6
+<$=>SATOPRINTER
+<Q>2
+<Z>
+[Parameter] <WK>a-a
+ a Job Name = ASCII CODE 16 digit, Kanji 8 digit
+Job Name Specification
+ESC+WK
+62
+
+[Function]
+Specifies this command when you cut a label with an y number.
+[Supplement]
+01. This command is effective for a printer with a cutter.
+02. NUL is set as Hex (00h) and ~ as Hex (7Eh).
+03. When you enter 0, the cutter does not take ef fect. When you do not use the cutter, enter
+the above setting.
+04. If you enter an alphabet, symbol and more than 5 letters, one label cut applies.
+05. The print and cut multiple should not exceed th e maximum print number (999999).
+06. This command should be set after specifying the <Q> command. The <Q> command
+specifies the number of labels to be cut.
+<A>
+<Q>4
+<NUL>2
+<Z>
+Cut Cut
+Cut Cut
+Two
+ABC ABC ABC ABC ABC ABC ABC ABC
+4 sheets
+Example of the Multi Cut Specification Command
+<A>
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>4
+<NUL>2
+<Z>
+[Parameter] <NUL>aaaa
+ a Print number before cutting = 1-9999
+Multi Cut Specification
+ESC+NUL (~)
+63
+
+[Function]
+Specifies the cut number unit.
+[Supplement]
+01. This command is effective for a printer with a cutter.
+02. If you do not specify this command with the Cut ter Operation Mode, one label cut applies.
+03. If a = 0 is specified, the cut is not applied.
+04. The <~A> command should be set before specifyin g the <Q> command.
+<~A>**** <Q>****
+The <Q> command specifies the number of label to be printed.
+<A>
+Remaining 1
+<~A>2
+<Q>7
+<Z>
+Cut Cut
+Cut Cut
+Two
+ABC
+ABC ABC ABC ABC ABC ABC
+ 7 sheets
+Example of the Cut Number Unit Specification Comman d
+<A>
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<~A>2
+<Q>7
+<Z>
+[Parameter] <~A>aaaa
+ a Cut Unit Number = 0-9999
+Cut Number Unit Specification
+ESC+~A
+64
+
+[Function]
+Specifies the cut operation.
+[Supplement]
+01. This command is effective for a printer with a cutter.
+02. This command is used while the printer has stop ped the cut status of NUL (Multi Cut
+Specification) or ~A (Cut Number Unit Specification ).
+03. This command should be used by differentiating between <A> and <Z>.
+04. This command cannot be used with other commands .
+05. Print Stop Position
+ A: Printed
+B: No Print
+C: No Print
+D: No Print
+Cut Position Head Position
+06. Command Reception
+1. Feed a label in the cut position.
+2. Cut a label.
+3. Back feed to the head position.
+A B C
+Example of the Cut Operation Specification Command
+<A>
+A B C D
+B C D
+D
+B C
+<~B>
+<Z>
+Cut Operation Specification
+ESC+~B
+65
+
+[Function]
+Specifies the label size.
+[Supplement]
+01. If you use a label smaller than the width of th e printer head, you can adjust the start position
+to the label by using this command.
+02. When you specify the size, consider the size of the backing paper.
+Example) CL408e/412e
+1 640
+1
+Feeding Direction
+Start Point
+Label Size
+100mm
+Label Size
+(80mm x 100mm)
+178mm
+(1424 dots)
+(2136 dots)
+640(dot)
+923(dot)
+(800 dots)
+(1200 dots)
+80mm
+104mm
+(832)/(1248)dots
+Example of the Label Size Specification Command
+<A>
+<A1>08000640
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>2
+<Z>
+[Parameter] <A1>aaaabbbb
+ a Vertical Label Size = 1-V Max (dot)
+ b Horizontal Label Size = 1-H Max (dot)
+Model Horizontal Label Size Vertical Label Size
+CL408e 832 2848
+CL412e 1248 4272
+M-8400RVe 832 2848
+CL608e 1216 3776
+CL612e 1984 4272
+CT400DT/TT 832 3200
+CT410DT/TT 1248 4800
+Label Size Specification
+ESC+A1
+66
+
+[Function]
+Specifies the print speed.
+In general, the print speed is set with the User M ode Operation of the printer but you can also
+temporarily set it with this command.
+[Supplement]
+01. This command should be used by differentiating between <A and <Z>.
+02. The value specified with this command is invali d when you turn off the printer and the
+default value is effective when the printer is rest arted.
+03. When you set the default print speed, use the User Mode of the printer.
+04. When the setting value saved in the printer is changed, use the PG command or the Printer
+Setting Tool on CD-ROM that comes with the printer .
+ For details on the Printer Setting Tool, refer t o the manual.
+Example of the Label Speed Specification Command
+<A>
+<CS>2
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>2
+<Z>
+[Parameter] <CS>aa
+Model Print Speed aa Model Print Speed aa
+CL408e 1 : 2 inch/s M-8400RVe 1 : 2 inch/s
+CL412e 2 : 3 inch/s (DSW2-8 OFF) 2 : 4 inch/s
+3 : 4 inch/s 3 : 6 inch/s
+4 : 5 inch/s 4 : 8 inch/s
+5 : 6 inch/s 5 : 10 inch/s
+CL608e 4 : 4 inch/s M-8400RVe 1 : 2 inch/s
+CL612e 6 : 6 inch/s (DSW2-8 ON) 2 : 3 inch/s
+8 : 8 inch/s 3 : 4 inch/s
+4 : 5 inch/s
+5 : 6 inch/s
+CT400DT/TT 2 : 2 inch/s CT410DT/TT 2 : 2 inch/s
+3 : 3 inch/s 3 : 3 inch/s
+4 : 4 inch/s 4 : 4 inch/s
+5 : 5 inch/s
+6 : 6 inch/s
+Print Speed Specification
+ESC+CS
+67
+
+[Function]
+Specifies the print density.
+[Supplement]
+01. You should adjust the settings from the User M ode of the printer.
+02. The value specified with this command is saved in the printer.
+Example of the Print Density Specification Command
+<A>
+<#E>3
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>2
+<Z>
+Parameter <#E>ab
+ a Specification of Print Density Level
+ b Print Density Specification can be omitted = A -F
+ e series It is usually A.
+Model Print Density a Model Print Density a
+CL408e 1 : Light CL608e 1 : Light
+CL412e 2 : Medium Light CL612e 2 : Normal
+CT400DT/TT 3 : Normal 3 : Dark
+CT410DT/TT 4 : Medium Dark
+M-8400RVe 5 : Dark
+Print Density Specification
+ESC+#E
+68
+
+[Function]
+Registers the printer operation in the EEPROM.
+[Supplement]
+01. You should adjust the settings from the User M ode of the printer.
+02. The operation setting specified with this comma nd is maintained even if you turn off the
+printer.
+[Parameter] <PG>abcdefghhijklmnooppqqrrstuvwxy
+<<CL408e, CL412e, M-8400RVe, CL608e, CL612e>>
+No. Item Description
+a Not Used 00h fixed
+b Not Used 00h fixed
+c Print Speed (Default:02h) 00h 2 inch/s 05h 7 inch /s
+01h 3 inch/s 06h 8 inch/s
+02h 4 inch/s 07h 9 inch/s
+03h 5 inch/s 08h 10 inch/s
+04h 6 inch/s
+d Not Used 00h fixed
+e Not Used 00h fixed
+f Not Used 00h fixed
+g Not Used 00h fixed
+h Print Density Specification (Default:A) 41h A
+42h B (Not Used)
+43h C (Not Used)
+44h D (Not Used)
+45h E (Not Used)
+46h F (Not Used)
+h Print Density Level (Default:03h) 01h Density 1
+02h Density 2
+03h Density 3
+04h Density 4
+05h Density 5
+i Not Used 00h fixed
+j 0 Slash 00h Invalid
+01h Valid
+k Kanji Code (Default:00h) 00h JIS Code
+01h Shift-JIS Code
+l Not Used 00h fixed
+m Initial Feed 00h Invalid
+01h Valid
+Printer Operation Registration
+ESC+PG
+69
+
+No. Item Description
+n Proportional Pitch 00h fixed
+(Default:00h) 01h Proportional Pitch
+o Vertical Label Size (dot) CL408e : [01h 0b20h] (1 2848)
+CL412e : [01h 10b0h] (1 4272)
+CL608e : [01h 0b20h] (1 2848)
+CL612e : [01h 10b0h] (1 4272)
+M-8400RVe : [01h 0b20h] (1 2848)
+p Horizontal Label Size (dot) CL408e : [01h 034 0h] (1 832)
+CL412e : [01h 04e0h] (1 1248)
+CL608e : [01h 04c0h] (1 1216)
+CL612e : [01h 07c0h] (1 1984)
+M-8400RVe : [01h 0340h] (1 832)
+q Vertical Start Point Correction Value [00h 318h] [0 792]
+(dot) [0ffffh 0fce9h] [-1 -792]
+r Horizontal Start Point Correction [00h 318h] [0 792]
+Value (dot) [0ffffh 0fce9h] [-1 -792]
+s Not Used 00h fixed
+t Not Used 00h fixed
+u Not Used 00h fixed
+v Not Used 00h fixed
+w Not Used 00h fixed
+x Space between Labels (dot) [00h 40h] [0 64]
+y Alarm Sound Setting 00h On
+01h Off
+* You can set these settings by using the Printer Setting Tool stored on the CD-ROM that
+comes with the printer.
+70
+
+No. Item Description
+a Not Used 00h fixed
+b Not Used 00h fixed
+c Print Speed (Default:02h) 00h 2 inch/s
+01h 3 inch/s
+02h 4 inch/s
+03h 5 inch/s (CT400DT/TT only)
+04h 6 inch/s (CT400DT/TT only)
+d Not Used 00h fixed
+e Cutter Operation 00h Operation 1 (Head position)
+01h Operation 2 (Cutter position)
+02h Operation 3 (Without back feed)
+f Dispenser Operation 00h Operation 1 (Head positio n)
+01h Operation 2 (Dispenser position)
+g Linerless Operation 00h Linerless (Cutter positio n)
+01h Linerless (Back feed)
+h Print Density Specification (Default:A) 41h A
+42h B
+43h C
+44h D
+45h E
+46h F
+h Print Density Level (Default:03h) 01h Density 1
+02h Density 2
+03h Density 3
+04h Density 4
+05h Density 5
+<<CT400DT/TT, CT410DT/TT>>
+i Sensor Type 00h Reflection sensor
+01h Transparent sensor
+02h Sensor ignore type
+j 0 Slash 00h Invalid
+01h Valid
+k Kanji Code (Default:00h) 00h JIS Code
+01h Shift-JIS Code
+l Label type Specification 00h Adhesive Label
+01h Non-adhesive Tag
+m Initial Feed 00h Invalid
+01h Valid
+n Proportional Pitch (Default:00h) 00h Fixed pitch
+01h Proportional pitch
+71
+
+No. Item Description
+o Vertical Label Size (dot) CT400DT/TT : [01h 0c8 0h] (1 3200)
+CT410DT/TT : [01h 12c0h] (1 4800)
+p Horizontal Label Size (dot) CT400DT/TT : [01h 0340h] (1 832)
+CT410DT/TT : [01h 04e0h] (1 1248)
+q Vertical Start Point Correction Value [00h 318h] [0 792]
+(dot) [0ffffh 0fce9h] [-1 -792]
+r Horizontal Start Point Correction [00h 318h] [0 792]
+Value (dot) [0ffffh 0fce9h] [-1 -792]
+s Label pitch offset (dot) [00h 63h] [0 63]
+[0ffh 9dh] [-1 -99]
+t TearOff offset (dot) [00h 63h] [0 63]
+[0ffh 9dh] [-1 -99]
+u Cutter offset (dot) [00h 63h] [0 63]
+[0ffh 9dh] [-1 -99]
+v Dispenser offset (dot) [00h 63h] [0 63]
+[0ffh 9dh] [-1 -99]
+w Control Code Specification 00h Standard Code
+01h Non-standard Code
+x Gap between Labels (dot) [00h 40h] [0 64]
+y Alarm Sound Setting 00h On
+01h Off
+* You can set these settings by using the Printer Setting Tool stored on the CD-ROM that
+comes with the printer. For details on the Printer Setting Tool, refer to the manual.
+72
+
+[Function]
+Specifies the change of the start point coordinate.
+[Supplement]
+01. You should adjust the settings from the User M ode of the printer.
+Example of the Start Point Correction Specification Command
+<A>
+<A3>V10H10
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>2
+<Z>
+[Parameter] <A3>VaaaaHbbb
+ a Vertical direction (dot) = 1-V Max
+ b Horizontal direction (dot) = 1-H Max
+Start point before
+specification
+V
+H
+Start point after
+specification
+Model Vertical Label Size (dot) Horizontal Label Size (dot)
+CL408e 832 1424
+CL412e 1248 2136
+M-8400RVe 832 1424
+CL608e 1216 1424
+CL612e 1984 2136
+CT400DT/TT 832 3200
+CT410DT/TT 1248 4800
+Start Point Correction Specification
+ESC+A3
+73
+
+[Function]
+Clears the registered information in the printer me mory.
+[Supplement]
+01. This command should be used by differentiating between <A> and <Z>.
+02. This command does not clear the data while prin ting.
+03. This command is effective between items.
+04. Each data transferred before executing All Clea r with this command is deleted by sending
+the All Clear (a=X) of this command when the printe r is set to the Multiple Reception Mode.
+05. In this case, the Custom-design character regis tration and overlay are also cleared.
+ Only for ESC+* <*>
+One Item = Reception buffer/Drawing buffer (it is n ot issued again)
+Multiple Item = Reception buffer/Drawing buffer (JO B is cleared while printing)
+Example of the Clear Specification Command
+<A>
+<*>X
+<Z>
+ For the internal memory clear <*a>
+a = Clear Item Specification
+T: Custom-design character Registration area
+&: Form Overlay Buffer
+X: All Clear (Reception Buffer, Edit Buffer, Custom -design character Registration, Form
+Overlay)
+* However, the print job cannot be cleared while pr inting.
+F: Font Registration Area
+Clear Specification
+ESC+*
+74
+
+[Function]
+Specifies the deletion of the fonts registered in t he internal memory.
+[Supplement]
+01. This command should be used to differentiate be tween <A> and <Z>.
+02. This command prepares the Font Preparation Tool and deletes the fonts that have been
+downloaded into the printer.
+Example of the Font Delete Specification Command.
+<A>
+<FC>01
+<Z>
+[Parameter] <FC>aa
+ a Font ID Number = 01-99
+ESC+@
+Off-line Specification
+[Function]
+Changes the printer's status from on-line to off-li ne.
+[Supplement]
+01. This command should be used by differentiating between <A> and <Z>.
+02. Use One Item for the printer reception mode.
+Example of the Off-line Specification Command
+<A>
+<@>, load Blue Labels
+<Z>
+[Parameter] <@>, a~a
+ a The message appears on the printer's LCD.
+ It is possible to insert a maximum of 32 digits.
+Font Delete Specification
+ESC+FC
+75
+
+[Function]
+Specifies the two color print area.
+This command works only with CT400DT/CT410DT.
+[Supplement]
+01. This command should be used with the Label Size Specification <A1> command.
+02. Up to 10 areas of two color print can be regist ered.
+03. The print quality is affected by the Print Spee d Specification and Print Density Specification.
+04. SATO does not guarantee the quality of the barc ode printed with the two color print.
+[Note]
+For 2mm inside from the printed area, two colors pr int may not be printed clearly.
+Start
+Position
+Note
+Head Block
+(Left)
+For CT400DT, it is 4mm
+(32 dot) left from the
+head center position.
+Original
+Position
+Head Block
+End
+Paper Feed
+(Left)
+Position
+Direction
+Head Block
+(Both)
+52mm (624 dot) 52mm (624 dot)
+For CT410DT
+48mm (384 dot) 56mm (448 dot)
+For CT400DT
+Example of the Two Color Print Area Specification C ommand
+<A>
+<V>100<H>200<P>2<L>0202<X22>ABCD
+<2S>2V0001Y0892
+<Q>2
+<Z>
+[Parameter] <2S>aVbbbbYcccc
+ a Head Block Specification = 0: Left
+ 1: Right
+ 2: Both
+ b Start Vertical position = 1-Label Vertical Siz e
+ c End Vertical position = 1-Label Vertical Size
+Two Color Print Area Specification
+ESC+2S
+76
+
+[Function]
+Specifies the label stop position for each operatio n.
+This command works only with the CT series.
+[Supplement]
+01. Adjust the position by moving the printer volum e.
+02. You do not have to use this command for regular label printing.
+03. Use this command when you experience some speci fic offset.
+Example of the Offset Specification Command
+<A>
+<PO>3+08
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>2
+<Z>
+[Parameter] <PO>abcc
+ a Offset Specification = 0: Cutter Operation
+ 1: Dispenser Operation
+ 2: Tear Off Operation
+ 3: Continuous Operation
+ b Offset Direction Specification = +/ Selecti on
+ c Offset Amount Specification = 00-99
+Offset Specification
+ESC+PO
+77
+
+[Function]
+Specifies the gap size between labels.
+[Supplement]
+01. The standard gap size between labels is 3mm.
+02. For a non-adhesive tag, you do not have to spec ify the gap.
+03. You do not have to specify this command.
+Example of the Space Size between Labels Specificat ion Command
+<A>
+<TG>36
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>2
+<Z>
+[Parameter] <TG>aa
+ a Space size between labels = 0-64 (dot)
+ 8/mm (Default:24)
+ 12/mm (Default:36)
+Space between labels
+Space Size between Labels
+Specification
+ESC+TG
+78
+
+[Function]
+Specifies the sensor type.
+Except for CT series, this command is specified by using the printer Dip Switches.
+[Supplement]
+01. You do not have to specify this command for reg ular label printing.
+Example of the Sensor Type Specification Command
+<A>
+<IG>0
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>2
+<Z>
+[Parameter] <IG>a
+ a Sensor Type Specification = 0: Reflection sens or (Eye mark)
+ 1: Transparent sensor (Space)
+ 2: Sensor Ignore type
+ESC+PH
+Print Method Specification
+[Function]
+Specifies the print method.
+This command is specified by using Dip Switches of the printer.
+[Supplement]
+01. You do not have to specify this command for reg ular label printing.
+Example of the Print Method Specification Command
+<A>
+<IG>0
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>2
+<Z>
+[Parameter] <PH>a
+ a Print Method Specification = 0: Thermal Type
+ 1: Direct Thermal Type
+Sensor Type Specification
+ESC+IG
+79
+
+[Function]
+Specifies the operation mode.
+This command is specified by using Dip Switches of the printer.
+[Supplement]
+01. You do not have to specify this command for reg ular label printing.
+[Parameter] <PM>a
+ a Operation Mode Specification = 0: Continuous O peration
+ 1: Tear Off Operation
+ 2: Cutter Operation (Head position)
+ 3: Cutter Operation (Cutter position)
+ 4: Cutter Operation (without back feed)
+ 5: Linerless Operation (Cutter position)
+ 6: Linerless Operation (without back feed)
+ 7: Dispenser Operation (Head position)
+ 8: Dispenser Operation (Dispenser position)
+ESC+C
+Reissue Specification
+[Function]
+Specifies reissuing the previously printed contents .
+[Supplement]
+01. This command does not take effect if you turn o ff the printer and the contents are cleared.
+Example of the Reissue Specification Command
+<A>
+<C>
+<Z>
+Operation Mode Specification
+80
+ESC+PM
+
+[Function]
+Searches and prints the downloaded font or logo.
+[Supplement]
+01. Specify a value where the higher byte of Unicod e is replaced with the lower byte for printing.
+02. When accessing and printing the Logo, specify t he following:
+ Print Digit Number : 0002, Print Data : <826B>
+.
+16
+03. Use Font Create Tool, Logo Create Tool and Download Tool on the CD-ROM to
+register or delete a font or logo.
+04. You can find a font ID for the downloaded font or logo from the Font ID item of the dialog
+box by selecting [Maintenance]-[Download Logo/Font Maintenance] from [Font Create
+Tool], [Logo Create Tool] or [Download Tool] menu.
+05. For more information, refer to the Font Create Tool, Logo Create Tool or Download
+Tool documentation on the CD-ROM.
+[Parameter] <RF>aabbbb, n-n
+ a Font ID Number
+ b Print Digit Number
+ n Print Data
+Example of the Font/Logo Search Print Specification Command
+1) When a single byte AB is printed by using the Font Search Print function.
+ (For Unicode: A: <0041>
+ B: <0042> )
+16 16
+<A>
+<PS><V>100<H>100<L>0101<RF>010004,
+<0041> <0042>
+16 16
+<Z>
+2) When Logo Search Print is used.
+<A>
+<V>100<H>100<L>0101<RF>020002, <826B>
+16
+<Z>
+Font/Logo Search Print
+Specification
+ESC+RF
+81
+
+[Function]
+Specifies the Kanji code.
+In general, the Kanji code is setup through the Us er Mode of the printer and it is possible to
+temporarily change the setting by using this comman d.
+[Supplement]
+01. You do not have to specify this command for reg ular label printing.
+02. When you turn off the printer, all specified va lues are invalid and the registered values in the
+printer are valid when the printer is restarted.
+03. Use the User Mode of the printer when the def ault Kanji code has been setup.
+04. When the setting value registered in the printe r is changed, use the PG command or the
+Printer Setting Tool on the CD-ROM.
+For details on the Printer Setting Tool, refer to the manual.
+[Parameter] <KC>a
+ a Kanji Code Type Specification (Default:0) = 0: JIS code
+ 1: Shift-JIS code
+Example of the Kanji Code Specification Command
+<A>
+<KC>1
+<Z>
+Kanji Code Specification
+ESC+KC
+82
+
+[Function]
+Specifies the label type.
+This command works only with for CT series.
+[Supplement]
+01. When you turn off the printer, all specified va lues are invalid and the registered values in the
+printer are valid when the printer is restarted.
+02. When the setting value registered in the printe r is changed, use the PG command or the
+Printer Setting Tool on the CD-ROM.
+For details on the Printer Setting Tool, refer to the manual.
+[Parameter] <YE>a
+ a Paper Type Specification = 0: Non-adhesive La bel
+ 1: Non-adhesive Tag
+Example of the Kanji Code Specification Command
+<A>
+<YE>0
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Q>4
+<Z>
+Paper Type Specification
+ESC+YE
+83
+
+[Function]
+Enlarges the vertical size of the print area.
+[Supplement]
+01. Enlarges the print area of the pitch direction.
+02. This command should be placed after <A> command .
+03. When using this command, the print area will re turn to its standard size when the printer is
+turned off.
+Example of the Print Area Enlargement Specification Command.
+<A>
+<AX>
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Z>
+[Parameter] <AX>
+Maximum Printing Area
+Printing
+Resolution
+ Printer Model
+(Head
+Standard Enlarged
+Standard print area
+Density)
+Height Height
+203dpi 178mm 356mm
+1 CL408e
+(8dot/mm) (1424dot) (2848dot)
+300dpi 178mm 356mm
+2 CL412e
+(12dot/mm) (2136dot) (4272dot)
+Enlarged print area
+203dpi 178mm 356mm
+3 M-8400RVe
+(8dot/mm) (1424dot) (2848dot)
+203dpi 178mm 356mm
+4 CL608e
+(8dot/mm) (1424dot) (2848dot)
+300dpi 178mm 356mm
+5 CL612e
+(12dot/mm) (2136dot) (4272dot)
+CT400DT 203dpi
+6
+CT400TT (8dot/mm)
+CT410DT 300dpi
+7
+CT410TT (12dot/mm)
+Print Area Enlargement
+Specification
+ESC+AX
+84
+
+[Function]
+This command returns the print area from command <A X> back to its standard size.
+[Supplement]
+01. This command should be placed after the <A> com mand.
+Example of the Print Area Standard Specification Co mmand.
+<A>
+<AR>
+<V>100<H>200<P>2<L>0202<M>ABCD
+<Z>
+[Parameter] <AR>
+Maximum Print Area
+Print
+Resolution
+Printer Model
+(Head
+Standard Enlarged
+Standard print area
+Density)
+Height Height
+203dpi 178mm 356mm
+CL408e
+1
+(8dot/mm) (1424dot) (2848dot)
+300dpi 178mm 356mm
+CL412e
+2
+(12dot/mm) (2136dot) (4272dot)
+Enlarged print area
+203dpi 178mm 356mm
+M-8400RVe
+3
+(8dot/mm) (1424dot) (2848dot)
+203dpi 178mm 356mm
+CL608e
+4
+(8dot/mm) (1424dot) (2848dot)
+300dpi 178mm 356mm
+CL612e
+5
+(12dot/mm) (2136dot) (4272dot)
+CT400DT 203dpi
+6
+CT400TT (8dot/mm)
+CT410DT 300dpi
+7
+CT410TT (12dot/mm)
+Print Area Standard Specification
+ESC+AR
+85
+
+[Function]
+Specifies the final position for the prints height .
+[Supplement]
+01. This command must be placed after the Label Siz e Specification command <A1>.
+02. The final position of the print data will be ve rtical label size specified by the Label Size
+Specification command.
+Example of the Final Position Print Specification C ommand.
+<A>
+<A1>14240832
+<EP>
+<V>100<H>200<P>2<L>0202<XM>ABCD
+<Z>
+Example) CL408e / 412e
+1
+1
+640
+Feeding direction
+Starting
+point
+100mm
+80mm x 100mm
+Label
+178mm
+(1424 dots)
+(2136 dots)
+640(dot)
+923(dot)
+(800 dots)
+(1200 dots)
+80mm
+104mm
+(832)/(1248 dots)
+Model Horizontal Label Size Vertical Label Size
+CL408e 832 2848
+CL412e 1248 4272
+M-8400RVe 832 2848
+CL608e 1216 2848
+CL612e 1984 4272
+CT400DT/TT 832 3200
+CT410DT/TT 1248 4800
+Final Position Print Specification
+ESC+EP
+86
+
+[Function]
+Sets the calendar (the year, the month and the day) .
+[Supplement]
+01. This command should be used for differentiating between <A> and <Z>.
+02. This command needs an option calendar to base i tself on.
+Example of the Calendar Setup Specification Command .
+<A>
+<WT>0012251300
+<Z>
+[Parameter] <WT>aabbccddee
+ a Year Setup = Valid Range : 00-99
+ b Month Setup = Valid Range : 01-12
+ c Day Setup = Valid Range : 01-31
+ d Time Setup = Valid Range : 00-23
+ e Minute Setup = Valid Range : 00-59
+Calendar Setup Specification
+ESC+WT
+87
+
+[Function]
+Specifies the Calendar Addition.
+[Supplement]
+01. This command needs an optional calendar to base itself on.
+02. Its possible to specify only one type of added heading.
+03. It is valid for the last specified command.
+Example of the Calendar Addition Specification Comm and.
+<A>
+<WP>M03
+<V>100<H>200
+<XM><WA>DD/MM/YY
+<Q>2
+<Z>
+[Parameter] <WP>abbb
+ a Year * Month * Day * Time Setup = Y : Year
+= M : Month
+= D : Day
+= h: Hour
+ b Year, Month, Day and Time Range Setup Y Valid Range Specification = 09
+M = 00-99
+D = 000-999
+h = 000-999
+Calendar Addition Specification
+ESC+WP
+88
+
+[Function]
+Specifies the printing of the Calendar.
+[Supplement]
+01. It replaces the characters in the calendar.
+02. It replaces the last two digits with year.
+03. It replaces MM for month, DD for Day, hh for ti me, and mm for minutes.
+04. When the printer is set for multiple prints lik e <Q> = 100, the calendar will be printed on
+each page.
+05. Within one form, it is possible to specify up t o 6 places the Calendar Print command.
+06. The calendar print data will be made maximum 16 characters.
+07. This command needs an option calendar to base i tself on.
+08. The type of character should be specified befor e <WA>.
+09. Partly copying the calendar print data or black /white inversion is not possible.
+10. It is possible that the time on one label can b e different.
+Example of the Calendar Print Specification Command .
+<A>
+<WP>M03
+<V>100<H>200
+<XM><WA>DD/MM/YYhh : mm
+<Q>2
+<Z>
+[Parameter] <WA>a
+ a Specification of the Year / Month / Date to be printed
+ YY / MM / DD hh : mm
+Calendar Print Specification
+(Real Time Method)
+ESC+WA
+89

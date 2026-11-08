@@ -1,0 +1,928 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\DRS60_3014.pdf
+# cifrado=False bloques=26 caracteres=27769
+
+DRS 60: Incremental Encoderswith Zero-Pulse-Teach
+HEET
+S
+ATA
+D
+·Long LED lifetime as a result of
+automatic light regulation
+·Maximum reliability as a result of
+opto-ASICs with Chip-on-Board
+technology
+·Interchangeable collets for hollow
+shaft diameters from 6 to 15 mm
+and 1/4, 3/8, 1/2 inch.
+Whether with face mount flange,
+servo flange, blind or through hollow
+shaft with connector or cable outlet,
+TTL or HTL interface – DRS 60
+encoders will meet virtually any
+application profile.
+CoreTech technology permits
+tailor-made solutions for every
+application, due to its modular
+design. DRS 60 incremental
+encoders are available with any
+desired number of lines between
+1 and 8,192. Further highlights of
+this generation of encoders:
+·Simple zero-pulse-teach by
+pressing a button located under
+a cap on the rear of the encoder
+·Excellent price/performance
+ratio
+C
+
+Number of lines1 up to 8,192
+Incremental Encoder
+
+Incremental Encoder DRS 60, face mount flange
+Dimensional drawing face mount flange radial
+Number of lines1 up to 8,192
+Incremental Encoder
+deep
+Connector or cable outletProtection class up to IP 66
+Electrical interfaces TTL and HTL
+Zero-Pulse-Teach via pressing abutton
+1
+· R = bending radius min. 40 mm
+Dimensional drawing face mount flange axial
+deep
+1
+General tolerances according to DIN ISO 2768-mk
+· R = bending radius min. 40 mm
+General tolerances according to DIN ISO 2768-mk
+PIN and wire allocation/cable 11 core
+PINSignalWire colourExplanation
+(Cable outlet)
+1BblackSignal line
+2Sense +greyConnected
+internally to U
+s
+3ZlilacSignal line
+4ZyellowSignal line
+5AwhiteSignal line
+6AbrownSignal line
+7N. C.Not connected
+8BpinkSignal line
+9ScreenHousing potential
+10GNDblueZero volt connected to the encoder
+11Sense –greenConnected internally to GND
+12U
+AccessoriesConnection systems 1)
+Mounting systems
+redSupply voltage to the encoder
+s
+1)
+Potential free tohousing
+View of the connector M23 fitted to the encoder body
+2SICK-STEGMANN
+
+DRS 60
+Technical DataDRS 60 face mount flange Flange type
+face m.
+Solid shaft10 mm
+Number of lines per revolution 00001 up to 08192,see order info
+Electrical InterfaceTTL/RS 422, 6-channel
+HTL/push-pull, 6-channel
+1)
+Mass Approx. 0.3 kg
+2
+Moment of inertia of the rotor54 gcm
+Measuring step90°/number of lines
+Reference signal
+Number 1
+2)
+Position 90°or 180°
+Error limits
+binary number of lines0.035°
+non-binary number of lines0.046°
+Measuring step deviation
+binary number of lines0.005°
+non-binary number of lines0.016°
+Max. output frequency
+TTL820 kHz
+HTL 200 kHz
+Operating torque max.
+-1
+with shaft seal 6,000 min
+3) -1
+without shaft seal 10,000 min
+5 2
+Max. angular acceleration5x10 rad/s
+Operating torqueTyp. 0.3 Ncm
+Start up torqueTyp. 0.4 Ncm
+Permissible shaft loading
+radial20 N
+axial 10 N
+9
+Bearing lifetime3.6x10 revolutions
+Working temperature range– 20 … + 85 °C
+Storage temperature range– 40 … + 100 °C
+4)
+Permissible relative humidity 90 %
+5)
+EMC
+Resistance
+6)
+to shocks 50/11 g/ms
+7)
+to vibration 20/10 … 150 g/Hz
+Protection class IEC 60529
+8)
+Connector outlet IP 65
+Cable outletIP 66
+Operating voltage range
+Load current TTL/RS 422 , 4.5 … 5.5 V Max. 20 mA
+TTL/RS 422 , 10 … 32 V Max. 20 mA
+HTL/push-pull , 10 … 32 V Max. 60 mA
+No-load operating current
+at 10 … 32 VTyp. 100 mA
+at 5 VTyp. 120 mA
+9)
+Operation of zero-set ≥100 ms
+Initialization time after power on40 ms
+1) 4) 6)
+Concerning encoder with connector Condensation not permitted To DIN EN 60068-2-27
+2) 5) 7)
+Electrical, logically linked to A and B To DIN EN 61000-6-2 To DIN EN 60068-2-6
+3) and DIN EN 61000-6-3 8)
+In case, that shaft seal has beenremoved by customer With mating connector fitted
+9)
+Only with shaft stationary
+3
+SICK-STEGMANN
+Order information see page 5
+
+Incremental Encoder DRS 60, face mount flange
+Incremental pulse diagram
+Number of lines1 up to 8,192
+Incremental Encoder
+Measuring step
+Connector or cable outletProtection class up to IP 66
+Electrical interfacesTTL and HTL
+Zero-Pulse-Teach via pressing abutton
+A / A
+B / B
+eitherzero-pulse width 90°
+Z / Z
+orzero-pulse width 180°
+Z / Z
+Electrical interface
+4.5 … 5.5 VTTL (RS 422)10 … 32 VTTL (RS 422)10 … 32 VHTL (push-pull)
+Supply voltage Interfaces/drivers
+Connection type
+Cable radialCable axialConnector radialConnector axial
+AccessoriesConnection systems
+Mounting systems
+4 SICK-STEGMANN
+
+DRS 60
+Order information
+Incremental Encoder DRS 60, face mount flange, solid shaft
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 –
+Electrical interface Mechanical interface Connection type Number of lines
+Connector M23, 12 pin, radial= A
+4.5 … 5.5 V, TTL/RS 422 Face mount flange, solid shaft10 mm= 4 Each number of lines from 00001
+Zero-pulse width 90°= A Connector M23, 12 pin, axial= B up to 08192 possible.
+Cable 11 core, radial 1.5 m= K Always 5 characters in clear text
+4.5 … 5.5 V, TTL/RS 422
+Zero-pulse width 180°= B Cable 11 core, radial 3 m= L
+Cable 11 core, radial 5 m=M
+10 … 32 V, TTL/RS 422
+Zero-pulse width 90°= C Cable 11 core, axial 1.5 m= R
+Cable 11 core, axial 3 m= S
+10 … 32 V, TTL/RS 422
+Zero-pulse width 180°= D Cable 11 core, axial 5 m= T
+10 … 32 V, HTL/push-pull
+Zero-pulse width 90°= E
+10 … 32 V, HTL/push-pull
+Zero-pulse width 180°= F
+Order example Incremental Encoder DRS 60
+4.5 … 5.5 V, TTL/RS 422 zero-pulse width 90°; face mount flange; connector M23, 12 pin, radial; number of lines: 360
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 – A 4 A 0 0 3 6 0
+Please enter your individual encoder here
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 –
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 –
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 –
+SICK-STEGMANN5
+
+Incremental Encoder DRS 60, servo flange
+Dimensional drawing servo flange radial
+Number of lines1 up to 8,192
+deep
+Incremental Encoder
+Connector or cable outletProtection class up to IP 66
+Electrical interfacesTTL and HTL
+Zero-Pulse-Teach via pressing abutton
+1
+1 R = bending radius min. 40 mm
+General tolerances according to DIN ISO2768-mk
+Dimensional drawing servo flange axial
+deep
+1
+· R = bending radius min. 40 mm
+General tolerances according to DIN ISO2768-mk
+PIN and wire allocation/cable 11 core
+PINSignalWire colourExplanation
+(Cable outlet)
+1BblackSignal line
+2Sense +greyConnected
+internally to U
+s
+3ZlilacSignal line
+4ZyellowSignal line
+5AwhiteSignal line
+6AbrownSignal line
+7N. C.Not connected
+8BpinkSignal line
+9ScreenHousing potential
+10GNDblueZero volt connected to the encoder
+11Sense –greenConnected internally to GND
+12U
+1)
+AccessoriesConnection systems
+Mounting systems redSupply voltage to the encoder
+s
+1)
+View of the connector M23 fitted to the encoder body Potential free to
+housing
+6 SICK-STEGMANN
+
+DRS 60
+Technical DataDRS 60 servo flange Flange type
+servo
+Solid shaft6 mm
+Number of lines per revolution 00001 up to 08192,see order info
+Electrical InterfaceTTL/RS 422, 6-channel
+HTL/push-pull, 6-channel
+1)
+Mass Approx. 0.3 kg
+2
+Moment of inertia of the rotor48 gcm
+Measuring step90°/number of lines
+Reference signal
+Number 1
+2)
+Position 90°or 180°
+Error limits
+binary number of lines0.035°
+non-binary number of lines0.046°
+Measuring step deviation
+binary number of lines0.005°
+non-binary number of lines0.016°
+Max. output frequency
+TTL820 kHz
+HTL 200 kHz
+Operating torque max.
+-1
+with shaft seal 6,000 min
+3) -1
+without shaft seal 10,000 min
+5 2
+Max. angular acceleration5x10 rad/s
+Operating torqueTyp. 0.2 Ncm
+Start up torqueTyp. 0.25 Ncm
+Permissible shaft loading
+radial20 N
+axial 10 N
+9
+Bearing lifetime3.6x10 revolutions
+Working temperature range– 20 … + 85 °C
+Storage temperature range– 40 … + 100 °C
+4)
+Permissible relative humidity 90 %
+5)
+EMC
+Resistance
+6)
+to shocks 50/11 g/ms
+7)
+to vibration 20/10 … 150 g/Hz
+Protection class IEC 60529
+8)
+Connector outlet IP 65
+Cable outletIP 66
+Operating voltage range
+Load current TTL/RS 422 , 4.5 … 5.5 V Max. 20 mA
+TTL/RS 422 , 10 … 32 V Max. 20 mA
+HTL/push-pull , 10 … 32 V Max. 60 mA
+No-load operating current
+at 10 … 32 VTyp. 100 mA
+at 5 VTyp. 120 mA
+9)
+Operation of zero-set ≥100 ms
+Initialization time after power on40 ms
+1) 4) 6)
+Concerning encoder with connector Condensation not permitted To DIN EN 60068-2-27
+2) 5) 7)
+Electrical, logically linked to A and B To DIN EN 61000-6-2 To DIN EN 60068-2-6
+3) and DIN EN 61000-6-3 8)
+In case, that shaft seal has beenremoved by customer With mating connector fitted
+9)
+Only with shaft stationary
+SICK-STEGMANN7
+Order information see page 9
+
+Incremental Encoder DRS 60, servo flange
+Incremental pulse diagram
+Number of lines1 up to 8,192
+Incremental Encoder
+Measuring step
+Connector or cable outletProtection class up to IP 66
+Electrical interfacesTTL and HTL
+Zero-Pulse-Teach via pressing abutton
+A / A
+B / B
+eitherzero-pulse width 90°
+Z / Z
+orzero-pulse width 180°
+Z / Z
+Electrical interface
+4.5 … 5.5 VTTL (RS 422)10 … 32 VTTL (RS 422)10 … 32 VHTL (push-pull)
+Supply voltage Interfaces/drivers
+Connection type
+Cable radialCable axialConnector radialConnector axial
+AccessoriesConnection systems
+Mounting systems
+8 SICK-STEGMANN
+
+DRS 60
+Order information
+Incremental Encoder DRS 60, servo flange, solid shaft
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 –
+Electrical interface Mechanical interface Connection type Number of lines
+Servo flange, solid shaft 6 mm = 1 Connector M23, 12 pin, radial= A
+4.5 … 5.5 V, TTL/RS 422 Each number of lines from 00001
+Zero-pulse width 90°= A Connector M23, 12 pin, axial= B up to 08192 possible.
+Cable 11 core, radial 1.5 m= K Always 5 characters in clear text
+4.5 … 5.5 V, TTL/RS 422
+Zero-pulse width 180°= B Cable 11 core, radial 3 m= L
+Cable 11 core, radial 5 m=M
+10 … 32 V, TTL/RS 422
+Zero-pulse width 90°= C Cable 11 core, axial 1.5 m= R
+Cable 11 core, axial 3 m= S
+10 … 32 V, TTL/RS 422
+Zero-pulse width 180°= D Cable 11 core, axial 5 m= T
+10 … 32 V, HTL/push-pull
+Zero-pulse width 90°= E
+10 … 32 V, HTL/push-pull
+Zero-pulse width 180°= F
+Order example Incremental Encoder DRS 60
+4.5 … 5.5 V, TTL/RS 422 zero-pulse width 90°; servo flange; connector M23, 12 pin, radial; number of lines: 360
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 – A 1 A 0 0 3 6 0
+Please enter your individual encoder here
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point . 12 Point 13 Point 14
+D R S 6 0 –
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 –
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 –
+SICK-STEGMANN9
+
+Incremental Encoder DRS 60, blind hollow shaft
+Dimensional drawing blind hollow shaft radial
+Number of lines1 up to 8,192
+Incremental Encoder
+Connector or cable outletProtection class up to IP 66
+Electrical interfacesTTL and HTL
+Zero-Pulse-Teach via pressing abutton
+Insertion depth of mounting shaftmin. 15 mm, max. 30 mm
+1
+Insertion depth of mounting shaftmin. 15 mm, max. 30 mm
+· R = bending radius min. 40 mm
+Dimensional drawing blind hollow shaft axial
+1
+General tolerances according to DIN ISO2768-mk
+· R = bending radius min. 40 mm
+General tolerances according to DIN ISO2768-mk
+PIN and wire allocation/cable 11 core
+PINSignalWire colourExplanation
+(Cable outlet)
+1BblackSignal line
+2Sense +greyConnected
+internally to U
+s
+3ZlilacSignal line
+4ZyellowSignal line
+5AwhiteSignal line
+6AbrownSignal line
+7N. C.Not connected
+8BpinkSignal line
+9ScreenHousing potential
+10GNDblueZero volt connected to the encoder
+11Sense –greenConnected internally to GND
+12U
+1)
+AccessoriesConnection systems
+Mounting systems redSupply voltage to the encoder
+Collets s
+1)
+View of the connector M23 fitted Potential free tohousing
+to the encoder body
+10 SICK-STEGMANN
+
+DRS 60
+Technical DataDRS 60 blind hollow shaft Flange type
+blind
+Hollow shaft diameter 6, 8, 10, 12, 15 mm, 1/4", 3/8", 1/2"
+Number of lines per revolution 00001 up to 08192,see order info
+Electrical InterfaceTTL/RS 422, 6-channel
+HTL/push-pull, 6-channel
+1)
+Mass Approx. 0.3 kg
+Moment of inertia of the rotorSee Fig. 1
+Measuring step90°/number of lines
+Reference signal
+Number 1
+2)
+Position 90°or 180°
+Error limits
+binary number of lines0.035°
+non-binary number of lines0.046°
+Measuring step deviation
+binary number of lines0.005°
+non-binary number of lines0.016°
+Max. output frequency
+TTL820 kHz
+HTL 200 kHz
+-1
+Operating torque max.3,000 min
+5 2
+Max. angular acceleration5x10 rad/s
+Operating torqueTyp. 0.4 Ncm
+Start up torqueTyp. 0.6 Ncm
+Permissible movement of the
+drive element
+radial static/dynamic movement±0.3/±0.1 mm
+axial static/dynamic movement±0.5/±0.2 mm
+9
+Bearing lifetime3.6x10 revolutions
+Working temperature range– 20 … + 85 °C
+Storage temperature range– 40 … + 100 °C
+3)
+Permissible relative humidity 90 %
+4)
+EMC
+Resistance
+6)
+to shocks 50/11 g/ms
+6)
+to vibration 20/10 … 150 g/Hz
+Protection class IEC 60529
+7)
+Connector outlet IP 65
+Cable outlet IP 66
+Operating voltage range
+Load current TTL/RS 422 , 4.5 … 5.5 V Max. 20 mA
+TTL/RS 422 , 10 … 32 V Max. 20 mA
+HTL/push-pull , 10 … 32 V Max. 60 mA
+No-load operating current
+at 10 … 32 VTyp. 100 mA
+at 5 VTyp. 120 mA
+8)
+Operation of zero-set ≥100 ms
+Initialization time after power on40 ms
+1) 4)
+Concerning encoder with connectorFig. 1 To DIN EN 61000-6-2 mm
+gcm
+2) and DIN EN 61000-6-3
+15
+Electrical, logically linked to A and B
+3) 5)
+Condensation not permitted To DIN EN 60068-2-27
+6)
+To DIN EN 60068-2-6
+7)
+With mating connector fitted
+6
+8)
+Only with shaft stationary
+2
+42 48 54
+SICK-STEGMANN11
+Order information see page 13
+
+Incremental Encoder DRS 60, blind hollow shaft
+Incremental pulse diagram
+Number of lines1 up to 8,192
+Incremental Encoder
+Measuring step
+Connector or cable outletProtection class up to IP 66
+Electrical interfaces TTL and HTL
+Zero-Pulse-Teach via pressing abutton
+A / A
+B / B
+eitherzero-pulse width 90°
+Z / Z
+orzero-pulse width 180°
+Z / Z
+Electrical interface
+4.5 … 5.5 VTTL (RS 422)10 … 32 VTTL (RS 422)10 … 32 VHTL (push-pull)
+Supply voltage Interfaces/drivers
+Connection type
+Cable radialCable axialConnector radialConnector axial
+AccessoriesConnection systems
+Mounting systems
+Collets
+12 SICK-STEGMANN
+
+DRS 60
+Order information
+Incremental Encoder DRS 60, blind hollow shaft
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 –
+Electrical interface Mechanical interface Connection type Number of lines
+1)
+Blind hollow shaft = A Connector M23, 12 pin, radial= A
+4.5 … 5.5 V, TTL/RS 422 Each number of lines from 00001
+1)
+Zero-pulse width 90°= A Connector M23, 12 pin, axial= B up to 08192 possible.
+Collets for 6, 8, 10, 12 mm and 1/4",3/8" and 1/2" as accessories, separate
+order item (see below).
+Cable 11 core, radial 1.5 m= K Always 5 characters in clear text
+4.5 … 5.5 V, TTL/RS 422
+Zero-pulse width 180°= B Cable 11 core, radial 3 m= L
+For 15 mm shaft diameter, collet is notneeded.
+Cable 11 core, radial 5 m=M
+10 … 32 V, TTL/RS 422
+Zero-pulse width 90°= C Cable 11 core, axial 1.5 m= R
+Cable 11 core, axial 3 m= S
+10 … 32 V, TTL/RS 422
+Zero-pulse width 180°= D Cable 11 core, axial 5 m= T
+10 … 32 V, HTL/push-pull
+Zero-pulse width 90°= E
+10 … 32 V, HTL/push-pull
+Zero-pulse width 180°= F
+Order example Incremental Encoder DRS 60
+4.5 … 5.5 V, TTL/RS 422 zero-pulse width 90°; blind hollow shaft; connector M23, 12 pin, radial; number of lines: 360
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 – A A A 0 0 3 6 0
+Please enter your individual encoder here
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 –
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 –
+Point 1 Stelle 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 –
+Blind hollow shaft collets
+Type Part no. Shaft diameter
+SPZ-006-AD-A 2 029 174 6 mm
+1
+SPZ-1E4-AD-A 2 029 175 / 4 "
+SPZ-008-AD-A 2 029 176 8 mm
+3
+SPZ-3E8-AD-A 2 029 177 / 8 "
+SPZ-010-AD-A 2 029 178 10 mm
+SPZ-012-AD-A 2 029 179 12 mm
+1
+SPZ-1E2-AD-A 2 029 180 / 2 " SICK-STEGMANN13
+
+Incremental Encoder DRS 60, through hollow shaft
+Dimensional drawing through hollow shaft radial
+Number of lines1 up to 8,192
+Incremental Encoder
+Connector or cable outletProtection class up to IP 64
+Electrical interfaces TTL and HTL
+Zero-Pulse-Teach via pressinga button
+Insertion depth of mounting shaftmin. 15 mm
+1
+1 R = bending radius min. 40 mm
+General tolerances according to DIN ISO2768-mk
+PIN and wire allocation/cable 11 core
+PINSignalWire colourExplanation
+(Cable outlet)
+1BblackSignal line
+2Sense +greyConnected
+internally to U
+s
+3ZlilacSignal line
+4ZyellowSignal line
+5AwhiteSignal line
+6AbrownSignal line
+7N. C.Not connected
+8BpinkSignal line
+9ScreenHousing potential
+10GNDblueZero volt connected to the encoder
+11Sense –greenConnected internally to GND
+12U
+1)
+redSupply voltage to the encoder
+s
+AccessoriesConnection systems
+Mounting systems
+Collets
+1)
+View of the connector M23 fitted Potential free tohousing
+to the encoder body
+14 SICK-STEGMANN
+
+DRS 60
+Technical DataDRS 60 through hollow shaft Flange type
+through
+Hollow shaft diameter 6, 8, 10, 12 mm sowie 1/4", 3/8", 1/2"
+Number of lines per revolution 00001 up to 08192,see order info
+Electrical InterfaceTTL/RS 422, 6-channel
+HTL/push-pull, 6-channel
+1)
+Mass Approx. 0.3 kg
+Moment of inertia of the rotorSee Fig. 1
+Measuring step90°/number of lines
+Reference signal
+Number 1
+2)
+Position 90°or 180°
+Error limits
+binary number of lines0.035°
+non-binary number of lines0.046°
+Measuring step deviation
+binary number of lines0.005°
+non-binary number of lines0.016°
+Max. output frequency
+TTL820 kHz
+HTL 200 kHz
+-1
+Operating torque max.3,000 min
+5 2
+Max. angular acceleration5x10 rad/s
+Operating torqueTyp. 1.6 Ncm
+Start up torqueTyp. 2.2 Ncm
+Permissible movement of the
+drive element
+radial static/dynamic movement±0.3/±0.1 mm
+axial static/dynamic movement±0.5/±0.2 mm
+9
+Bearing lifetime3.6x10 revolutions
+Working temperature range– 20 … + 85 °C
+Storage temperature range– 40 … + 100 °C
+3)
+Permissible relative humidity 90 %
+4)
+EMC
+Resistance
+5)
+to shocks 5 /11 g/ms
+6)
+to vibration 20/10 … 150 g/Hz
+Protection class IEC 60529
+7)
+Connector outlet IP 64
+Cable outlet IP 64
+Operating voltage range
+Load current TTL/RS 422 , 4.5 … 5.5 V Max. 20 mA
+TTL/RS 422 , 10 … 32 V Max. 20 mA
+HTL/push-pull , 10 … 32 V Max. 60 mA
+No-load operating current
+at 10 … 32 VTyp. 100 mA
+at 5 VTyp. 120 mA
+8)
+Operation of zero-set ≥100 ms
+Initialization time after power on40 ms
+1) 4)
+Concerning encoder with connectorFig. 1 To DIN EN 61000-6-2 mm
+gcm
+2) and DIN EN 61000-6-2
+12,8
+Electrical, logically linked to A and B
+3) 5)
+Condensation not permitted To DIN EN 60068-2-27
+6)
+To DIN EN 60068-2-6
+7)
+With mating connector fitted
+6
+8)
+Only with shaft stationary
+2
+39 42 45
+SICK-STEGMANN15
+Order information see page 17
+
+Incremental Encoder DRS 60, through hollow shaft
+Incremental pulse diagram
+Number of lines1 up to 8,192
+Incremental Encoder
+Measuring step
+Connector or cable outletProtection class up to IP 64
+Electrical interfacesTTL and HTL
+Zero-Pulse-Teach via pressinga button
+A / A
+B / B
+eitherzero-pulse width 90°
+Z / Z
+orzero-pulse width 180°
+Z / Z
+Electrical interface
+4.5 … 5.5 VTTL (RS 422)10 … 32 VTTL (RS 422)10 … 32 VHTL (push-pull)
+Supply voltage Interfaces/drivers
+Connection type
+Cable radialConnector radial
+AccessoriesConnection systems
+Mounting systems
+Collets
+16 SICK-STEGMANN
+
+DRS 60
+Order information
+Incremental Encoder DRS 60, through hollow shaft
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 –
+Electrical interface Mechanical interface Connection type Number of lines
+1)
+Through hollow shaft = D Connector M23, 12 pin, radial= A
+4.5 … 5.5 V, TTL/RS 422 Each number of lines from 00001
+1)
+Zero-pulse width 90°= A Cable 11 core, radial 1.5 m= K up to 08192 possible.
+Collets for 6, 8, 10, 12 mm and 1/4",3/8" and 1/2" as accessories, separate
+order item (see below).
+Cable 11 core, radial 3 m= L Always 5 characters in clear text
+4.5 … 5.5 V, TTL/RS 422
+Zero-pulse width 180°= B Cable 11 core, radial 5 m=M
+10 … 32 V, TTL/RS 422
+Zero-pulse width 90°= C
+10 … 32 V, TTL/RS 422
+Zero-pulse width 180°= D
+10 … 32 V, HTL/push-pull
+Zero-pulse width 90°= E
+10 … 32 V, HTL/push-pull
+Zero-pulse width 180°= F
+Order example Incremental Encoder DRS 60
+4.5 … 5.5 V, TTL/RS 422 Zero-pulse width 90°; through hollow shaft; connector M23, 12 pin, radial; number of lines: 360
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 – A D A 0 0 3 6 0
+Please enter your individual encoder here
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 –
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 –
+Point 1 Point 2 Point 3 Point 4 Point 5 Point 6 Point 7 Point 8 Point 9 Point 10 Point 11 Point 12 Point 13 Point 14
+D R S 6 0 –
+Through hollow shaft collets
+Type Part no. Shaft diameter
+SPZ-006-AD-D 2 029 192 6 mm
+1
+SPZ-1E4-AD-D 2 029 193 / 4 "
+SPZ-008-AD-D 2 029 194 8 mm
+3
+SPZ-3E8-AD-D 2 029 195 / 8 "
+SPZ-010-AD-D 2 029 196 10 mm
+SPZ-012-AD-D 2 029 197 12 mm
+1
+SICK-STEGMANN17
+SPZ-1E2-AD-D 2 029 198 / 2 "
+
+Accessories Connection systems/Mounting systems
+Dimensional drawings and order information
+Screw-in system M23, 12 pin
+Cable connector M23 female, 12 pin, straight, screened Cable connector M23, 12 pin, straight, screened
+Type Part no. Contacts Type Part no. Contacts
+DOS-2312-G 6 027 538 12 STE-2312-G 6 027 537 12
+approx. 55
+2
+Connector M23 female, 12 pin, straight, cable 12 cores, 4x2x0.25 + 2x0.5 + 2x0.14 mm with screening,
+capable of being dragged, cable diameter 7,8 mm
+Type Part no. Contacts Cable length
+DOL-2312-G1M5MA3 2 029 212 12 1.5 m
+DOL-2312-G03MMA3 2 029 213 12 3.0 m
+DOL-2312-G05MMA3 2 029 214 12 5.0 m
+DOL-2312-G10MMA3 2 029 215 12 10.0 m
+2
+DOL-2312-G20MMA3 2 029 216 12 20.0 m
+2
+DOL-2312-G30MMA3 2 029 217 12 30.0 m
+2 2
+Cable 8 core, per meter, 4 x 2 x 0.15 mm with screening, Cable 11 core, per meter, 4x2x0.25+2x0.5+1x0.14 mm
+cable diameter 5.6 mm with screening, cable diameter 7.5 mm
+Type Part no. Wires Type Part no. Wires
+LTG-2308-MWENC 6 027 529 8 LTG-2411-MW 6 027 530 11
+2
+Cable 12 core, per meter, 4x2x0.25+2x0.5+2x0.14 mm with
+screening, capable of being dragged, cable diameter 7.8 mm
+Type Part no. Wires
+LTG-2512-MW 6 027 531 12
+18 SICK-STEGMANN
+
+DRS 60
+Dimensional drawings and order information
+Couplings
+Bellows coupling, max. shaft offset radial ±0.3 mm, axial 0.4 mm, angle ±4 degrees, torsion spring stiffness 120 Nm/rad,
+bellows of stainless steel, hubs of aluminum
+Type Part no. Shaft diameter
+KUP-0606-B 5 312 981 6 mm… 6 mm
+KUP-0610-B 5 312 982 6 mm… 10 mm
+KUP-1010-B 5 312 983 10 mm …10 mm
+KUP-1012-B 5 312 984 10 mm … 12 mm
+Cheese-head screwM2,5x8 DIN912 A2
+Spring-disc coupling, max. shaft offset radial ±0.3 mm, axial 0.4 mm, angle ±2.5 degrees, torsion spring stiffness 50 Nm/rad,
+flange of aluminum, spring-discs of glass-fibre-reinforced plastic
+Type Part no. Shaft diameter
+KUP-0610-F 5 312 985 6 mm… 10 mm
+KUP-1010-F 5 312 986 10 mm …10 mm
+General tolerances according to DIN ISO 2768-mk
+SICK-STEGMANN19
+
+Accessories Mounting systems
+Dimensional drawings and order information
+Mechanical Adapters
+Adapter flange of aluminum for face mount flange, spigot 36 mm
+Type Part no. Adaption
+BEF-FA-036-050 2 029 160 To 50 mm servo flange
+Adapter flange of aluminum for face mount flange, spigot 36 mm
+Type Part no. Adaption
+BEF-FA-036-060REC 2 029 162 To 60 mm square mounting plate
+Adapter flange of aluminum for face mount flange, spigot 36 mm
+Type Part no. Adaption
+BEF-FA-036-060RSA 2 029 163 To 60 mm square mounting plate with shock absorbers
+deep)
+Spring washer (4x)
+Hexagonal nut (4x)(secure with Loctite 241)
+20 SICK-STEGMANN
+
+DRS 60
+Dimensional drawings and order information
+Mechanical Adapters
+Mounting bell incl. fixing set for encoder with servo flange Mounting angle incl. fixing set for encoder with face mount flange
+Type Part no. Flange spigot Type Part no. Flange spigot
+BEF-MG-50 5 312 987 Diameter 50 mm BEF-WF-36 2 029 164 Diameter 36 mm
+Servo clamps half ring, Set (comprises 2 pieces) for servo flanges Servo clamps small, Set (comprises 3 pieces) for servo flanges
+with spigot diameter 50 mm Type Part no.
+Type Part no. BEF-WK-SF 2 029 166
+BEF-WG-SF050 2 029 165
+SICK-STEGMANN21
+
+Accessories mounting systems/Collets
+Dimensional drawings and order information
+Mechanical Adapters
+Measuring wheel for encoder shafts with diameter 10 mm, type mate- Measuring wheel for encoder shafts with diameter 10 mm, type mate-
+rial plastic (Hytrel), wheel material plastic with aluminum hub rial plastic (Hytrel), wheel material plastic with aluminum hub
+Type Part no. Circumference Type Part no. Circumference
+BEF-MR-010020 5 312 988 0.2 m BEF-MR-010050 5 312 989 0.5 m
+Collets
+Collets for blind hollow shaft encoder Collets for through hollow shaft encoder
+Type Part no. Shaft diameter Type Part no. Shaft diameter
+SPZ-006-AD-A 2 029 174 6 mm SPZ-006-AD-D 2 029 192 6 mm
+1 1
+SPZ-1E4-AD-A 2 029 175 / 4 " SPZ-1E4-AD-D 2 029 193 / 4 "
+SPZ-008-AD-A 2 029 176 8 mm SPZ-008-AD-D 2 029 194 8 mm
+3 3
+SPZ-3E8-AD-A 2 029 177 / 8 " SPZ-3E8-AD-D 2 029 195 / 8 "
+SPZ-010-AD-A 2 029 178 10 mm SPZ-010-AD-D 2 029 196 10 mm
+SPZ-012-AD-A 2 029 179 12 mm SPZ-012-AD-D 2 029 197 12 mm
+1 1
+SPZ-1E2-AD-A 2 029 180 / 2 " SPZ-1E2-AD-D 2 029 198 / 2 "
+22 SICK-STEGMANN
+
+DRS 60
+SICK-STEGMANN23
+
+Contact:
+AustraliaPhone+61 3 9497 4100
+1800 33 48 02 – tollfreeE-Mail sales@sick.com.au
+Belgique/LuxembourgPhone+32 (0)2 466 55 66
+E-Mail info@sick.beBrasil
+Phone +55 11 5091-4900E-Mailsac@sick.com.br
+Ceská RepublikaPhone +420 2 57 91 18 50
+E-Mailsick@sick.czChina
+Phone+852-2763 6966E-Mailghk@sick.com.hk
+DanmarkPhone+45 45 82 64 00
+E-Mailsick@sick.dkDeutschland
+Phone+49 (0)2 11 53 01-250E-Mailvzdinfo@sick.de
+EspañaPhone+34 93 480 31 00
+E-Mailinfo@sick.esFrance
+Phone+33 1 64 62 35 00E-Mailinfo@sick.fr
+Great BritainPhone +44 (0)1727 831121
+E-Mail info@sick.co.ukItalia
+Phone +39 011 797965E-Mail stegmann@stegmann.it
+JapanPhone +81 (0)3 3358 1341
+E-Mail info@sick.jpKorea
+Phone +82-2 786 6321/4E-Mail kang@sickkorea.net
+NederlandPhone +31 (0)30 229 25 44
+E-Mail info@sick.nlNorge
+Phone +47 67 81 50 00E-Mail austefjord@sick.no
+ÖsterreichPhone +43 (0)22 36 62 28 8-0
+E-Mail office@sick.atPolska
+Phone +48 22 837 40 50E-Mail info@sick.pl
+SchweizPhone +41 41 619 29 39
+E-Mail contact@sick.chSingapore
+Phone +65 6744 3732E-Mail admin@sicksgp.com.sg
+SuomiPhone +358-9-25 15 800
+E-Mail sick@sick.fiSverige
+Phone +46 8 680 64 50E-Mail info@sick.se
+TaiwanPhone +886 2 2365-6292
+E-Mail sickgrc@ms6.hinet.netUSA
+Phone +1 937-454-1956E-Mail sales@stegmann.com
+More representatives and agenciesin all major industrial nations at
+www.sick.com
+6900 West 110th StreetSICK SICK STEGMANN, Inc.7496 Webster Street
+Minneapolis, MN 55438Ph: 800.325.SICK (7425) • Fax: 952.941.9287Dayton, OH 45414Ph: 937.454.1983 • Fax: 937.454.1955
+www.sickusa.com www.stegmann.com
+7 028 108.0406 • Printed in USA • Subject to change without notice

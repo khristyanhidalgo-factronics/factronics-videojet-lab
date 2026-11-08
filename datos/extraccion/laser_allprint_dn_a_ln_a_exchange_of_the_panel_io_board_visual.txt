@@ -1,0 +1,38 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\Exchange of the panel IO board.pdf
+# cifrado=False bloques=5 caracteres=1188
+
+Exchange of the Panel IO Board
+
+1 Exchange of the Panel IO Board
+The following is required for exchanging the Panel IO board:hex key 3 mm (00478, accessory kit)
+offset hex key 5 mm
+1.1 Dismounting
+1.Remove the front panel of the PCM housing.
+2.Loosen the safety interlock (2 turns).
+3.Pull out the control unit using the handles.
+11/04 - Rev. 1.0 1
+
+safety interlock
+control unit
+
+Exchange of the Panel IO Board
+4.Disconnect connector X 205 from the ACC board.
+5.Disconnect one cable at a time from the PanePanel IO board. Repeat this procedure with all cables.l IO board and directly connect it to the new
+6.Loosen the three nuts and remove the Panel IO board.
+7.Remove the IC (system database) from the old board and insert the IC on the new PanelIO board.
+Make sure that the notch (point) of the IC points towards the resistors.
+Panel I/O
+ACC
+IC socket
+connector X 205
+blue
+pink
+W232W231
+red
+1.2 Mounting
+ImportantThe red cables must not be swapped!
+1.Fasten the new Panel IO board using the nuts.
+2.Connect X 205 to the ACC board (see figure section "Dismounting", point 4).
+3.Push the control unit into the PCM.
+4.Lock the control unit and mount the front panel.
+11/04 - Rev. 1.0 2

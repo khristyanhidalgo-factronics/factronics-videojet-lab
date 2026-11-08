@@ -1,0 +1,49 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\Setup Instruction_V1.6.pdf
+# cifrado=False bloques=2 caracteres=2440
+
+Installation Instructions
+Preface
+In the following instruction it is shown how to configure the TCL script a t the laser .
+Requirements
+Laser with software versions minimum QMark 8. 5. x or CMark 2. 3.x
+Preparation
+Switch off the laser. Remove the MMC /SD car d from it. Put the MMC/SD card into a suitable
+card reader which is properly connected to your PC. Copy all files and sub - folders into the
+appropriate folder on MMC/SD card . Replace existing files if necessary.
+On QMark (ACC3) based systems with QMark ver sion < 8.6 , copy all files to
+[MMC]/smarties/customer and overwrite existing files
+On QMark (ACC3) based systems with QMark version >= 8.6, copy all files to
+[MMC]/smarties/customer /tcl and overwrite existing files
+Copy file “ startup.sh ” from subfolder “ Startup QMark 8.6 ” to
+[MMC]/smarties/customer / and overwrite the existing file
+On CMark (Chameleon) based systems, c opy all files to
+[SD]/smarties/customer/tcl and overwrite existing files
+Configure Interface
+Open the file “ S etup.txt” with any file editor, e.g. notepad++. Configure the interface
+accordingly by changing the values:
+
+setting values description
+a ctive 0 | 1 a ctivates or deactivates the Interface
+interface tcp | rs232 defines which interface is to be used
+tcpListenPort 20001 p ortno for synchronous communication
+ttyMode 9600,n,8,1 defines serial interface settings
+ttyHandshake none defines ser ial interface handshake mode
+receiveDelimiter ; delimiter between result code and arguments passed
+sendDelimiter ; delimiter between commands and arguments passed
+sendAnswer 0 | 1 defines whether sent commands are acknowledged
+debugPort 20002 p ortno fo r debug purpose
+debugLevel 1 - 10 d efines which debug messages are sent
+asyncport 20003 p ortno for asynchronous communication
+d efines laser state change messages to be pushed on
+pushstatechange 0 | 1 asynchronous port
+defines tem plate change messages to be pushed on
+pushtemplatechange 0 | 1 asynchronous port
+defines marking counter change messages to be pushed
+pushmarkingcounterchange 0 | 1 on asynchronous port
+defines product counter messages to be pushed on
+pushproductcounterchange 0 | 1 asynchronous port
+0 | 1 defines mark results to be pushed on asynchronous port
+pushmarkresult
+Paste Files into Customer - Folder
+Save th e modified file S etup.txt on the MMC/SD card . Replace existing file if necessary.
+Afterwards don't forget to “safely remove” the S D/ MMC by Windows.

@@ -1,0 +1,317 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\TCS  04 17 17.pdf
+# cifrado=False bloques=47 caracteres=7468
+
+TouchUS
+(TCS Software on Touchscreen)
+
+Objectives:
+• Logging in
+• Selecting a job
+• Firing the laser
+• Creating a new job
+• Creating a new Line Setup
+• Adjusting Mark Settings
+• Backing up database
+
+Touch Control Software
+• Pinned to Start menu
+• Must select a level to login
+• Preconfigured with 3 Users (Admin, Oper , Super)
+• Can add or edit Users, Roles, Access Rights, and Passwords
+
+Home Screen
+1 7
+6
+2
+5
+4
+3
+1 Status Bar 5 Line Setup
+2 Preview Area 6 Job
+3 Quick Edit Toolbar 7 Global Functions
+4 Performance
+
+Status Bar
+Nothing wrong, but not
+marking
+Marking
+Warning
+Press “i” for expanded information on specific warning or error
+Error
+
+Global Function Buttons
+
+Selecting a Job
+Select Pen button
+Select Manage Jobs
+
+Selecting a Job (2)
+Click on desired Job from the list
+(job will appear in blue after
+selection)
+Click on the circle next to the job name
+to make the “Active” job to be marked
+
+Selecting a Job (3)
+Press OK button to confirm
+activation
+Verify Active box has
+symbol
+Click on Close button
+
+Firing the Laser
+Key switch must be in the ON (closed) position to fire
+Press the Start button
+Laser will indicate Marking during the
+marking process
+Press Stop button to discontinue marking
+Laser will indicate Ready to Mark after the
+marking process is complete
+
+Lab Excercise
+Select and Mark Message
+• Select and Activate “Message 1”
+• Mark the Message
+
+Creating A New Job
+Select the Pen button next to Job Name
+and Mark Settings
+Se lect Manage Jobs
+
+Creating A New Job (2)
+Click Create button
+Enter Job name
+Press OK
+
+Creating A New Job (3)
+Click Add button
+Select a Job Element from the drop -
+down list
+If applicable, a keyboard will appear
+Enter information using keyboard as
+necessary
+
+Creating A New Job (4)
+Click in the marking field to place the Job
+Element
+Note: Text can be moved by touching the field or using the positioning X/Y keys
+To add other job elements such as date, time, shift and barcodes,
+press the Return button, then press the Add button .
+
+Creating A New Job (5)
+To select the parameters to be used with
+this job click the Job Mark Settings edit
+button
+- Select a Preset job marking setting from
+the list
+- To make changes to the selected Job Mark
+Settings click on Customize
+- When changes are complete select Save
+and then Return
+
+Creating A New Job (6)
+Select Close
+Select Yes to make your job the active
+one
+Select No and the job will be saved
+but not active
+
+Lab Excercise
+Create New Message
+Font size = 3mm, font type
+OCRB1
+A = shift code: A 0700, B1500, C
+2300
+123 = Julian (3 digit) date no offset
+ddmmyyyy = today's date no offset
+23 = fixed text
+000 = serializer : 000 start; 999
+end; increment by 5
+Sell by = fixed text
+ddmmyy = 89 day offset
+Save message as “Lab 2”
+Mark your message at least 2 times to verify serializer is working
+
+A123ddmmyyyy23000
+Sell by ddmmyy
+
+Create New Mark Set
+Click on the Menu button in upper right hand
+corner of screen
+Select Mark Settings
+Create a new Mark Set by clicking
+Create button
+
+Create New Mark Set
+Assign your Mark Set to a Job in the Job Edit screen
+
+Edit Current Mark Set
+Several places to Edit
+Mark Sets
+Pen button in Job box in Home screen
+Pen button in message editing screen
+
+Edit Current Mark Set
+In individual Job Element editing screen
+Note: Each Job Element can have a
+different Mark Set. Acts like Indexes in
+other laser interfaces.
+
+Recommended Initial Settings
+RECOMMENDED SETTINGS
+Parameter SHC60c SHC100c / 120c SHC150c
+Jump Speed (mm/s) 10,000 7,000 5,000
+Marking Speed (mm/s) 3,000 3,000 3,000
+Jump Delay (µs) 100 100 120
+Mark Delay (µs) 10 10 10
+Stroke Delay (µs) 100 100 120
+Marking Intensity (%) 50 50 50
+3140: 20,000 3140: 20,000 3140: 20,000
+Pulse Frequency (Hz)
+3340: 25,000 3340: 25,000 3340: 25,000
+On Delay (µs) 50 50 50
+Off Delay (µs) 140 140 160
+
+Lab Excercise
+Change Mark Settings
+• Create a message with the following information:
+BBE = Fixed text
+Date with format: DD.MM.YY +120 day expiration
+Time with format: HH:MM
+L2= Fixed text
+298= Julian date
+A= Shift Code (A= 6 am; R= 2 pm; Z=10pm)
+• Mark the code
+• Adjust Mark Settings to achieve good quality
+
+Creating A Line Setup
+Click the Pen button in the Line Setup
+field.
+Click on Manage Line Setups to create a
+new Line Setup
+Click on Create button and then name
+your new line setup
+
+Position and Orientation
+Select form the following: Line Movement, Product Side Selection, Laser Position and Job
+Orientation.
+
+Position and Orientation
+PRODUCT SIDE SELECTION
+LASER POSITION
+
+Line Speed Setup
+
+Fixed Speed
+
+Measure Line Distance
+
+Product Size
+
+Measure Line Speed
+
+Configure Manually
+
+Trigger Settings
+
+Trigger Settings
+Trigger Mode
+‘External Rising’
+-- Fires off rising edge of pulse from trigger source
+‘External Falling’
+-- Fires off falling edge of pulse from trigger source
+‘Internal Once’
+-- Used for static print
+‘Internal Continuous’
+-- Will fire continuously
+-- Care is necessary when selecting this option as
+dangerous situations may occur
+
+Marking Field and Test
+
+Lab Excercise - Line Setup (Fixed Speed)
+• Use message created in previous lab (shown below)
+• Change to product movement (Fixed speed)
+• Create a new Line setup (name)
+-- Set up ‘wizard’
+• Position and Orientation
+-- Direction of Line Movement
+• Line Speed
+-- Enter Fixed Speed
+• Metres / min
+• Trigger
+-- Start Distance
+• Should be not less than 50% of the marking area of the lens
+in that axis
+• This is the physical distance of the Product Sensor to the
+laser
+• May need to be longer to allow mirrors time to reach start
+position
+-- Blocking Distance – 90% of Product pitch
+
+Lab Excercise - Line Setup (Encoder)
+• Use message created in previous lab (shown below)
+• Change Line Setup to use Encoder and Product Detect
+• Investigate the following options available for setting the Encoder values:
+✓ Measure Line Distance
+✓ Enter Product Size
+✓ Measure Line Speed
+✓ Configure manually
+• Use calculated values to take sample marks
+
+Product Marking
+PRODUCT SIDE SELECTION
+LASER POSITION
+
+File Management (Setup Menu)
+➢ Messages may be transferred from one laser
+coder to another using USB
+-- Messages are in XML format
+• Must be in a folder called TCS
+• This folder is created on USB when selecting to move messages
+➢ Laser coder backup to USB stick
+-- ‘Complete laser Image’ OR
+-- Can select what to copy from Options
+
+Users, Roles, and Access Rights
+Top Level – Sign in level
+Users
+Pre - programmed set of Access Rights (allowed
+functions)
+Roles
+Individual functions within a Role
+Access Rights
+
+Users, Roles, and Access Rights
+Users
+Roles and Access Rights
+➢ Three levels of default Users
+– Administrator access required for
+• Operator
+adding Users and changing Access
+• Supervisor
+Rights
+• Administrator
+➢ Passwords
+• 0000
+• 1111
+• 2222
+➢ Main Settings > ‘Password on start’ to enable login and access control
+➢ When ‘Password on start’ is not enabled, access is as previous login
+
+Laser Unit Settings
+
+Main Settings
+
+IO??33/01+#".54>3232>54>32#"&546320;_E'%%4!"-,!"-,!avR*3RP10"!00"!0$@&IO??33/01#".54>3232>54>320;_E'%%4!avR*3RPYr4G@
+t??/01#"&54>32#".#"326632!;*Id:+
+q2ts???99?/2901#".55#".54>324>32&&#"3267h0b<AZ8 @_?3U*h-Q-
+%IlH+lkih&I.&1:$E0<G??901#!"&54677>54.#"#"5467>32!2&U5E
+
+QUUU????9++++222?01Y%#".5##".'##".5463323>332q0%$00""0/%$06-.B0 "
+&4
+S@23222i@&&-e&ehh???99?/3/99//9901%#".''#"&&67&&66327>32?+18 5$->>7/61,39e0$L#+$
+I!IL??9?01Y#".'.54>327>32'C65C&1%
+0w9/+2,7+9+4#%a%E+CUX@%&%L@H'L'@K?+2?+2/99//01_^]^]@%%L@H'L'@K?+2?+201_^]^]Y%#!"&554>7!"&54>3!2!2N!`g
+ ??/01#".'&&54632326546326T<
+""#$R##"x50#/5

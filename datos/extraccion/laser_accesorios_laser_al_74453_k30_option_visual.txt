@@ -1,0 +1,766 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\AL-74453-K30 option.pdf
+# cifrado=False bloques=10 caracteres=7873
+
+AL-74453Modification Instruction
+Safety Controller for Machine Integration
+1 Sicherheitssteuerung zur MaschinenintegrationSafety Controller for Machine Integration
+Bei ordnungsgemäßem Anschluss der Sicherheitssteuerung zur Maschinenintegration (AL-SP74335) erreichen die damit ausgerüsteten Lasersysteme den Performance Level "d" nach
+EN-ISO 13849-1 oder die Sicherheitskategorie 3 nach der alten Norm EN 954-1.When the safety module for machine integration (AL-SP74335) is connected according to the
+instructions all laser systems equipped with the safety module meet the requirements for theperformance level d according to EN-ISO 13849-1 or the safety category 3 according to the
+previous standard EN 954-1.
+Lasersystem/Laser systemSicherheitssteuerung/Safety Controller
+LC100/3120/SL101/SL102AL-SP74335
+LC300/3320/SL301/SL302
+GefahrVor Beginn der Arbeiten muss das Lasersystem unbedingt spannungs-frei geschaltet werden.
+1.Drehen Sie den Schlüsselschalter in die Position »0«.Ziehen Sie den Schlüssel ab, um sicherzustellen, dass das Lasersystem
+nicht eingeschaltet werden kann.
+2.Sichern Sie die Datenbank in der »Datei«. Smart Graph-Software, Oberfläche
+Eine detaillierte Beschreibung finden Sie in der Bedienungsanleitung derSmart Graph-Software.
+3.Schalten Sie den Netztrennschalter aus.
+4.Ziehen Sie den Netzstecker.
+DangerBefore starting any work the laser system must be dead!
+1.Turn the key-switch in the position »0«.Remove the key, in order to ensure that the laser system cannot be
+switched-on.
+2.Save the database in Smart Graph-Software, user interface »File«. For a detailed description see the manual of Smart Graph-Software.
+3.Turn-off the main switch.
+4.Disconnect the mains cable.
+11/12 - Rev. AC 1
+
+[&XK|8[7?jW>L|?@4I
+
+AL - 74453
+Modification InstructionSafety Controller for Machine Integration
+1.1 Anschließen der Sicherheitssteuerung an das LasersystemConnect the Safety Controller to the Laser System
+1.Öffnen Sie den Gehäusedeckel der Versorgungseinheit.Open the housing cover of the supply unit.
+2.Ziehen Sie den Netzwerkschnittstellen-Stecker ab.Remove the network interface connector.
+3.Ziehen Sie alle vier Flachsteckhülsen vom Relais ab.Remove all four push-on connectors from the relay.
+2 11/12 - Rev. AC
+
+AL-74453Modification Instruction
+Safety Controller for Machine Integration
+4.Lösen Sie die beiden Muttern des Relais und nehmen Sie das Relais heraus.Loosen both relay nuts and remove the relay.
+5.Lösen Sie die Verriegelung und nehmen Sie das Schaltelement heraus.Loosen the lock and remove the circuit element.
+6.Ziehen Sie alle Anschlüsse auf der ACC ab.Remove all connections from the ACC.
+11/12 - Rev. AC 3
+
+AL - 74453
+Modification InstructionSafety Controller for Machine Integration
+7.Lösen Sie die 5 Befestigungsschrauben der ACC und nehmen Sie die ACC heraus.Loosen the 5 fixing screws of the ACC and remove the ACC.
+8.Lösen Sie die beiden Bolzen und nehmen Sie sie heraus.Loosen both bolts and remove them.
+9.Setzen Sie die Sicherheitssteuerung in die Versorgungseinheit hinein.Insert the safety controller into the supply unit.
+4 11/12 - Rev. AC
+
+AL-74453Modification Instruction
+Safety Controller for Machine Integration
+10.Befestigen Sie die beiden Bolzen.Fasten both bolts.
+11.Befestigen Sie die Sicherheitssteuerung mit den beiden mitgelieferten Bolzen.Fasten the safety controller using the delivered bolts.
+12.Schließen Sie die Flachsteckhülse W21 an Klemme X02 Pin4 der Sicherheitssteuerung unddie Flachsteckhülse W19 an die Klemme X02 Pin3 an.
+Connect the push-on connector W21 to the terminal X02 Pin4 of the safety controller andthe push-on W19 to the terminal X02 Pin3.
+13.Schließen Sie ggf. den Stecker X03 an die Sicherheitssteuerung an.Connect the connector X03 to the safety controller, necessary.
+W21W19
+11/12 - Rev. AC 5
+
+AL - 74453
+Modification InstructionSafety Controller for Machine Integration
+14.Lösen Sie die Schraube und klemmen Sie den Anschluss 3 des Schaltelements ab.Schließen Sie den Anschluss 3 an die Klemme 2 des Steckers X03 und den Anschluss 1
+des Steckers X03 an die Klemme 3 des Schaltelements.Loosen the screw and disconnect the connection 3 of the circuit element. Connect the
+connection 3 to the terminal 2 of the connector X03 and the connection 1 of the connectorX03 to the terminal 3 of the circuit element.
+15.Setzen Sie das Schaltelement in die Position 2 der Halterung hinein.Insert the circuit element into the holder to the position 2.
+16.Schließen Sie die Flachsteckhülse W10:1 an die Klemme X02 Pin1 der Sicherheitssteuerungund die Flachsteckhülse W 11.2 an die Klemme X02 Pin2 an.
+Connect the push-on connector W10:1 to the terminal X02 Pin1 of the safety controller andthe push-on connector W11.2 to the terminal X02 Pin2.
+W10:1W11.2
+6 11/12 - Rev. AC
+
+AL-74453Modification Instruction
+Safety Controller for Machine Integration
+17.Befestigen Sie die ACC mit den Befestigungsschrauben und schließen Sie alle Anschlüssewieder an.
+Achten Sie darauf, dass die mittlere Befestigungsschraube mit einer Isolierscheibeeingebaut wird, um einen Kurzschluss der Platine zu vermeiden (siehe Abbildung).
+Fasten the ACC with the fixing screws and connect all connections.A plastic insulating washer must be installed under the mounting screw (see figure
+below).Failure to install this washer may result in a short circuit that will cause the board tofail to boot.
+18.Klemmen Sie die Anschlüsse der Sicherheitstür an den Servicetür-Stecker X01 an undschließen Sie den Servicetür-Stecker X01 an die Sicherheitssteuerung an (siehe
+Schaltplan).Connect the connections of the safety door to the servicedoor connector X01 and connect
+the servicedoor connector X01 to the safety controller (see wiring).
+HinweisNoteZwei potentialfreie Öffnerkontakte werden benötigt.Two potential-free normally closed contacts are needed.
+WichtigImportantBeim Öffnen der Sicherheitstür wird in der Software die Meldung"Schlüsselschalter offen" angezeigt. Beim Schließen der Sicherheitstür ist
+die Meldung automatisch bestätigt.When opening the safety door the message "Key switch open" is
+displayed in the software. When closing the safety door the message isconfirmed automatically.
+11/12 - Rev. AC 7
+
+AL - 74453
+Modification InstructionSafety Controller for Machine Integration
+19.Schließen Sie den Gehäusedeckel der Versorgungseinheit.Close the housing cover of the supply unit.
+8 11/12 - Rev. AC
+
+2
+1
+4
+3
+6
+5
+6
+2
+0
+Q
+-
+6
+5
+4
+3
+2
+1
+5
+1
+0
+Q
+-
+1
+2
+2
+2
+5
+1
+0
+Q
+-
+1
+2
+2
+2
+6
+2
+0
+Q
+-
+0
+3
+K
+-
+1
+A
+1
+X
+1
+4
+2
+2
+S
+2
+A
+2
+X
+2
+4
+1
+2
+S
+4
+3
+4
+2
+4
+1
+2
+1
+S
+3
+3
+3
+2
+3
+1
+1
+1
+S
+)
++
+(
+)
+-
+(
+N
+A
+L
+P
+F
+U
+A
+L
+M
+O
+R
+T
+S
+M
+A
+R
+G
+A
+I
+D
+G
+N
+I
+R
+I
+W
+SICHERHEISSTEUERUNG VORMONTIERT
+n
+o
+i
+t
+k
+n
+u
+F
+g
+n
+u
+n
+n
+e
+n
+e
+B
+x
+e
+d
+n
+i
+s
+g
+n
+u
+r
+e
+d
+n
+g
+n
+u
+r
+e
+d
+n
+e
+t
+z
+t
+e
+l
+e
+m
+a
+N
+m
+u
+t
+a
+D
+t
+l
+l
+e
+t
+s
+r
+e
+.
+r
+N
+-
+.
+s
+g
+n
+u
+n
+h
+c
+i
+e
+Z
+.
+n
+e
+d
+r
+e
+w
+t
+r
+e
+d
+n
+e
+g
+m
+r
+i
+h
+c
+s
+d
+l
+i
+B
+m
+a
+r
+u
+n
+f
+r
+a
+d
+g
+n
+u
+n
+h
+c
+i
+e
+Z
+e
+t
+l
+l
+e
+t
+s
+r
+e
+-
+D
+A
+C
+e
+s
+e
+i
+D
+!
+n
+2
+e
+A
+1
+A
+t
+9
+2
+K
+h
+-
+4
+1
+2
+c
+1
+1
+1
+7
+3
+a
+1
+e
+1
+b
+3
+1
+4
+2
+R
+4
+3
+1
+E
+2
+S
+N
+3
+A
+I
+2
+8
+L
+1
+D
+2
+1
+R
+1
+W
+6
+5
+2
+E
+1
+0 1
+h
+1
+T
+W
+A
+c
+W
+1
+L
+2
+=
+7
+R
+a
+3
+1
+A
+3
+3
+1
+3
+0
+n
+W
+H
+R
+0
+1
+-
+1
+1
+C
+0
+F
+N
+1
+R
+k
+W
+S
+-
+1
+2
+2
+5
+L
+r
+2
+R
+1
+E 3
+1
+e
+3
+E
+W
+S
+m
+2
+3
++
+0
+S
+r
+1
+R
+R
+1
+-
+e
+1
+W
+L
+v
+0
+T
+4
+H
+N
+z
+E
+1
+R
+C
+1
+t
+C 2
+A
+S
+1
+W
+A
+u
+I
+2
+5
+R
+0
+Q
+V
+h
+1
+-
+E
+1
+1
+2
+R
+4
+c
+2
+2
+S
+W
+7
+5
+E
+6
+N
+S
+7
+A
+3
+4
+S
+7
+E
+1
+e
+g
+a
+L
+l
+2
+n
+A
+t
+r
+2
+O
+R
+A
+D
+1
+H
+A
+O
+1
+N
+1
+0
+C
+Q
+O
+-
+U
+1
+m
+T
+1
+r
+o
+N
+:
+n
+a
+2
+g
+n
+u
+n
+h
+e
+4 l
+n
+A
+D
+n
+I
+2
+4
+K
+2
+7
+1
+6
+0
+6
+C
+E
+7
+I
+I
+:
+g
+n
+i
+w
+o
+l
+l
+o
+F
+R
+T
+S
+0
+1
+E
++
+1
+5
+0
+A
+=
+6
+1
+4
+E
+3
+3
+7
+4
+7
+R
+-
+L
+3 A
+8
+W
+4
+2
+7
+C
+1
+E
+2
+7
+S
+1
+4
+I
+M
+8
+3
+6
+8
+0
+V
+O
+1
+9
+1
+Y
+W
+5
+9
+R
+2 0
+2
+T
+1
+E
+4
+W
+2
+2
+K
+E
+S
+K
+3
+0
+-
+1
+S
+U
+2
+x x
+X
+3
+2
+1
+x x x x
+X
+0
+C
+-
+x x
+1
+1
+x x x x W
+1
+W
+System
+SAFTY CONTROL, PREMOUNTED
+N
+E
+D T D W
+I
+E E
+6 H O
+R R
+2 R
+W
+B
+1
+X
+W
+1 2
+3
+0
+X
+-
+1 2 3 4
+9 0
+1 2
+1 1 1
+0
+W W
+X
+-
+1 2 4 6 5
+0 0 0 0 0
+1 1 1 1 1
+W W W W W
+1 1
+0
+R
+-
+s
+e
+g
+s
+e
+o
+5
+2
+1 r
+W
+2
+1
+0
+2
+.
+8
+0
+4
+2 .
+1
+7
+W
+0
+2
+1
+3
+2
+1
+0
+W
+2
+.
+7
+0
+.
+6
+1

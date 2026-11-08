@@ -1,0 +1,2243 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\Nueva carpeta\Error-Messages-Blueberry (1).pdf
+# cifrado=False bloques=90 caracteres=88674
+
+Fatal Error System must be restarted
+Error 1 Laser power supply is turned off
+Error 2 Marking was aborted
+Warning System is marking further
+ID Error Class Message Possible Cause
+00001 Warning Parts of the marking are beyond the Parts of the marking are beyond the
+marking field. user-defined marking field.
+00002 Warning Incomplete marking, product Parts of the marking contents
+movement too fast. cannot be marked since the product
+was not in the marking field.
+Usually the reason is that the
+marking is not executed fast
+enough. It is also possible that the
+start delay has been set too short
+causing the marking to be started
+too late. The start delay must be set
+so that in the moment of triggering
+no part of the marking is yet within
+the marking field.
+00003 Warning COS does not send data after trigger After the trigger it took more than
+(>10ms). 10 ms before the COS sent marking
+data.
+00004 Warning Delayed data from the COS. During the marking process it took
+more than 500 µs before the COS
+sent new data.
+If the COS does not sent the data as
+fast as they are marked artificial
+pauses are added to the marking.
+This causes the laser to be switched
+off even within a vector stroke and
+switched on again as soon as data
+are available. For this process Laser-
+On-Delay and Laser-Off-Delay are
+used.
+# Confidential - Company Proprietary
+
+00005 Warning Trigger lost. Trigger queue overflow, a new
+trigger had to be rejected.
+That means that the trigger signals
+are coming in faster than they can
+be processed. The trigger queue is a
+buffer for trigger signals. If it is full
+and more signals are coming in this
+warning is displayed.
+00006 Warning Incorrect index step selected. Internal error: A not initialized index
+step has been selected. The system
+uses the previously selected index
+step.
+00007 Warning Debug warning 1 This message does not occur in
+released versions.
+00008 Warning Debug warning 2 This message does not occur in
+released versions.
+00100 Fatal Error Critical error SP. Fatal internal error: A not initialized
+interrupt has been called or similar.
+00101 Fatal Error Stack error SP. Fatal internal error: Stack overflow.
+00102 Error 2 SP received unknown command Internal communication error. In
+from COS. most cases this error indicates a
+version conflict.
+00103 Fatal Error Timing error SP. Fatal internal error: Internal timing
+was not met.
+00104 Error 2 COS sends repeatedly data with During one marking the COS needed
+delay for more than 20 vectors more than
+500 µs to send new data. The
+marking is aborted.
+See also warning W00004.
+# Confidential - Company Proprietary
+
+00105 Error 2 Marking aborted, product The marking has been aborted
+movement too fast. because the product has already left
+the marking field.
+Usually this is caused by too slow
+marking.
+It is also possible that the start
+distance is too small and the
+marking is started too late. The start
+distance should always be long
+enough so that no part of the
+marking is in the marking field at the
+trigger moment.
+See also W00002.
+00106 Error 1 OS repeatedly missed to send data. The OS has not been initialized
+correctly or the connection between
+OS and DSP is faulty.
+00107 Error 2 Wrong DSP configuration detected During system initialization a wrong
+configuration was detected.
+# Confidential - Company Proprietary
+
+00108 Fatal Error Incomplete marking due to internal
+communication issue. ||Language     ||Possible cause||
+|Deutsch|Fataler
+Kommunikationsfehler zwischen SP,
+FPGA und FM.|
+|English|Fatal internal
+communication error between DSP,
+FPGA and CP/HIC-Raylase.|
+|Danish|Fatal kommunikationsfejl
+mellem SP, FPGA og FM.|
+|Dutch|Fatale communicatiefout
+tussen SP, FPGA en FM.|
+|French|Erreur de communication
+fatale entre SP, FPGA et FM.|
+|Itailan|Errore di comunicazione
+fatale tra SP, FPGA e FM.|
+|Portuguese|Erro fatal de
+comunicação entre SP, FPGA e FM.|
+|Spanish|Error de comunicación
+fatal entre SP, FPGA y FM.|
+00110 Error 2 Alarm output has been set by trigger A connected trigger sensor set the
+sensor alarm output. This usually happens
+when there is dirt on the sensor.
+00117 Error 2 Product tracking error. Product tracking is enabled in the
+active line setup, the trigger for a
+product was detected, but there was
+no signal from the product tracking
+sensor detected within the
+configured tolerance.
+Products on the conveyor may got
+stuck under the laser, or the product
+tracking sensor is defective, covered
+or dirty.
+# Confidential - Company Proprietary
+
+00118 Error 2 Unexpected Product Tracking signal 1. Product tracking signals are
+detected. detected but no trigger.
+The trigger sensor is defective or
+dirty.
+When it happens immediately after
+restarting production, there could
+have been more products between
+trigger sensor and tracking sensor
+than triggers in the trigger queue.
+ 2. Product tracking signals are
+detected outside the expected
+tolerance for the corresponding
+trigger.
+The product tracking settings need
+to be adjusted.
+00119 Error 2 Too many products to track. Overflow of the number of tracked
+products.
+00200 Error 1 Laser not ready. Error while monitoring the laser
+source: Laser ready status can not
+be read back. This might be caused
+by the source itself or by wiring.
+00201 Error 1 Laser supply: voltage too high or too Error while monitoring the laser
+low source: Laser status shows voltage
+issue. This might be caused by the
+source itself or by wiring.
+00202 Error 2 Laser overtemperature Error while monitoring the laser
+source: Laser status shows
+overtemperature condition.This
+might be caused by the cooling
+conditions. Wiring could also be a
+cause.
+00203 Error 1 Unknown laser beam source Incorrect entry in system database;
+OS sends invalid laser type ID
+00204 Error 2 General error Error while monitoring the laser
+source: Laser status shows a general
+error condition.
+00205 Error 1 Internal cooling circuit: Flow too low Problems within the cooling circuit
+of the system.
+Faulty coolant flow switch.
+00206 Error 1 RF circuit: VSWR fault Mis-match between RF PSU and
+laser tube.
+Faulty RF cable or laser tube.
+Faulty RF PSU.
+# Confidential - Company Proprietary
+
+00207 Error 1 RF circuit: Overmodulation System software error.
+RF PSU faulty.
+Faulty cables between ACC, ACC
+interface board and RF PSU.
+00208 Error 1 RF circuit: Incorrect RF PSU power Faulty RF PSU.
+Faulty ACC interface board or faulty
+cables.
+No jump link on JP1 on ACC
+interface board.
+00209 Error 1 Back reflection Closed beam path, laser light is
+reflected back into the laser.
+00210 Fatal Error Red laser emission LED defective. The emission warning function of
+system is corrupted. Hardware
+error. The red laser emission LED
+and/or the red LED at the keypad is
+not functioning.
+00211 Fatal Error Defective element in laser supply Hardware error. The power for the
+circuit. laser tube can not be switched as
+expected by the system.
+00212 Fatal Error Wrong LIC detected Hardware error. A wrong laser
+interface board was detected during
+system initialization.
+00213 Fatal Error Wrong HIC detected. Hardware error. A wrong head
+interface board was detected during
+system initialization.
+00214 Fatal Error Tube monitoring error. In operation the monitoring of the
+laser source detected an error.
+00215 Error 1 Laser: subnormal temperature
+00216 Error 2 No strike
+00217 Error 2 Overtemperature beam source Error while monitoring the laser
+optical module source: Laser status shows
+overtemperature condition of
+optical module.
+This might be caused by the cooling
+conditions.
+00218 Error 2 Overtemperature beam source Error while monitoring the laser
+electrical module source: Laser status shows
+overtemperature condition of
+electrical module.
+This might be caused by the cooling
+conditions.
+# Confidential - Company Proprietary
+
+00219 Error 2 Overtemperature beam source Error while monitoring the laser
+pump diode source: Laser status shows
+overtemperature condition of beam
+source pump diode.
+00220 Fatal Error Mismatched beam source Error in system configuration. Beam
+configuration source model ID read from the
+beam source memory does not
+match the selected laser marking
+system.
+00221 Error 1 Laser beam source communication Error while monitoring the
+error communication between
+Chameleon board and laser beam
+source.
+This might be caused by electrical
+connection failure or missing power
+supply at laser beam source or
+defective laser beam source.
+00222 Warning Beam source optical module Warning while monitoring the laser
+temperature too high. source: Laser status shows
+overtemperature condition of
+optical module.
+This might be caused by the cooling
+conditions.
+00223 Warning Beam source electrical module Warning while monitoring the laser
+temperature too high. source: Laser status shows
+overtemperature condition of
+electrical module.
+This might be caused by the cooling
+conditions.
+00302 Error 1 Shutter does not stay open. Defective beam shutter.
+00303 Fatal Error Shutter does not stay closed. Defective beam shutter.
+00310 Fatal Error Air pressure sensor failure. Air pressure sensor provides no
+data.
+00311 Fatal Error The connection to the air pump Cable to senor board detached or
+orientation sensor is lost. defect. UADB sensor board defect.
+00312 Error 1 Wrong air pump assembly position. Wrong air pump assembly
+orientation.
+00313 Error 2 No air flow. Pump defect or filter is full.
+# Confidential - Company Proprietary
+
+00314 Error 2 Air flow blocked. Air hose damaged or extremely
+kinked. Air knife exit completly
+blocked.
+00315 Warning Air flow too low. Filter is full.
+00316 Warning Increased air pressure. Air knife exit is blocked. Air hose or
+umbilical kinked.
+00317 Fatal Error The system fan is not connected to Broken wire to the system fan or not
+the mainboard. connected.
+00407 Error 2 The beam shutter does not open. The beam shutter got jammed or is
+not identified.
+00408 Error 1 The beam shutter does not close. The beam shutter got jammed or is
+not identified.
+01000 Warning Invalid vector data between {1} and Invalid data stream from COS to DSP
+{2}.
+01001 Warning Illegal system state transition from
+{1} to {2}.
+01100 Warning Zero division in
+TEL_MOTF_CONFIG_SPEC.
+01101 Warning Wrong configuration in
+TEL_MOTF_CONFIG_SPEC.
+01102 Warning Zero division in TEL_MOTF_CONFIG.
+01103 Warning Wrong configuration in
+TEL_MOTF_CONFIG.
+01104 Warning Wrong configuration in
+TEL_SET_MARKING_FIELD:
+configuration between layer start
+and layer end is not allowed.
+01105 Warning Wrong configuration in
+TEL_SET_HEAD_EXTENSIONS: IMP
+value is bigger than 100%.
+01106 Warning Wrong configuration in
+TEL_LAYER_START_MODE: unkown
+mode.
+01107 Warning Wrong configuration in TEL_DELAY:
+negative value for delay.
+# Confidential - Company Proprietary
+
+01108 Warning Wrong configuration in
+TEL_PARAMETER: VJump or VMark
+is bigger than 45000mm/s.
+01109 Warning Wrong configuration
+in_TEL_LAS_CONFIG: unkown laser
+ID.
+01110 Warning Wrong configuration
+in_TEL_HEAD_CONFIG: unkown
+head ID.
+01111 Warning Wrong HIC detected, Hardware says
+a NO HIC is connected.
+01112 Warning Wrong HIC detected, Hardware says
+a HIC-CP10 is connected.
+01113 Warning Wrong HIC detected, Hardware says
+a HIC-Raylase is connected.
+01114 Warning Supply unit and laser unit do not
+matching together.
+01115 Warning Wrong configuration of marking
+system umbilical length.
+01200 Warning Emergency stop is detected because
+24V is applied to K41 and the laser
+doesn't goes in systemstate Error in
+one second.
+01201 Warning Keyswitch is open and the laser
+doesn't goes in systemstate
+"keyswitch open" in one second.
+01202 Warning Interlock is open and the laser
+doesn't goes in systemstate
+"interlock open" in one second.
+01203 Warning Laser relay should be on, but it is off
+over 3s.
+01204 Warning Laser relay should be off, but it is on
+over 1s.
+01205 Warning Laser power supply could not be
+enabled.
+01206 Warning Shutter Okay Signal is off over 3s.
+01207 Warning Laser Power Enable Info off Host is
+off over 3s.
+01208 Warning Shutter doesn't open.
+01209 Warning Shutter doesn't close.
+01300 Warning YLP-Laser: Back reflection alarm
+counter {1}.
+01301 Warning YLP-Laser: Temperature alarm
+counter {1}.
+# Confidential - Company Proprietary
+
+01302 Warning YLP-Laser: System alarm counter {1}.
+01303 Warning YLP-Laser: HK Supply alarm counter
+{1}.
+01304 Warning YLP-Laser: Main supply alarm
+counter {1}.
+01305 Warning YLP-Laser: RS232 Timeout. The Fiber-
+Laser has not answered a query
+within the defined timeframe.
+01306 Warning YLP-Laser: The selected pulse width
+is not supported.
+01400 Warning Unused.
+01401 Warning JPT-Laser RS232 response error
+(command not correct or not
+known).
+01402 Warning JPT-Laser: Model (Device ID) is not
+correct.
+01403 Warning Beam source: RS232 Timeout Error while monitoring the
+communication between
+Chameleon board and laser beam
+source.
+This might be caused by electrical
+connection failure or missing power
+supply at laser beam source or
+defective laser beam source.
+01404 Warning Beam source: Wrong response Error while monitoring the
+communication between
+Chameleon board and laser beam
+source.
+This might be caused by electrical
+connection failure or missing power
+supply at laser beam source or
+defective laser beam source.
+01405 Warning Beam source: Wrong response Error while monitoring the
+communication between
+Chameleon board and laser beam
+source.
+This might be caused by electrical
+connection failure or missing power
+supply at laser beam source or
+defective laser beam source.
+01406 Warning Beam source: No laser diode current internal beam source error
+# Confidential - Company Proprietary
+
+01500 Warning IPG PICO: Chiller High temperature
+cut off alarm.
+01501 Warning IPG PICO: Chiller Low temperature
+cut off alarm.
+01502 Warning IPG PICO: Chiller Internal sensor
+failure alarm.
+01503 Warning IPG PICO: Laser not ready.
+01504 Warning IPG PICO: Seed start error.
+01505 Warning IPG PICO: Seed clock error.
+01506 Warning IPG PICO: 24 volts housekeeping is
+missing.
+01507 Warning IPG PICO: Laser 5 V missing.
+01508 Warning IPG PICO: Laser Bus voltage is
+missing.
+01509 Warning IPG PICO: Laser ground fault.
+01510 Warning IPG PICO: Power was lower than it
+was supposed to be.
+01511 Warning IPG PICO: Case temperature too
+high.
+01512 Warning IPG PICO: Head temperature too
+high.
+01513 Warning IPG PICO: Laser internal fiber fuse
+photodiode reading exceeded its
+threshold.
+01514 Warning IPG PICO: Stages (1 to 5) Shutdown:
+One or more of the amplification
+stages were shutdown.
+01515 Warning IPG PICO: Emergency shutdown.
+01516 Warning IPG PICO: Fiber interlock cable
+connection.
+01517 Warning IPG PICO: Error occur within the
+safety module.
+01518 Warning IPG PICO: Safety module
+communication timeout.
+01519 Warning IPG PICO: Laser module
+communication timeout.
+01520 Warning IPG PICO: Safety module interlocks -
+indicates that two interlock channels
+are not in sync. Need to open and
+then close both interlock channels.
+01600 Warning UV-Laser came not up while
+initialization.
+01601 Warning UV-Laser RS232 Timeout.
+01602 Warning UV-Laser: NTC heatsink laserdiodes
+master shorted.
+# Confidential - Company Proprietary
+
+01603 Warning UV-Laser: NTC heatsink laserdiodes
+master broken.
+01604 Warning UV-Laser: Temperature heatsink
+laserdiodes too high.
+01605 Warning UV-Laser: NTC laser crystal shorted.
+01606 Warning UV-Laser: NTC laser crystal broken.
+01607 Warning UV-Laser: Temperature laser cyrstal
+too high.
+01608 Warning UV-Laser: NTC tripler shorted.
+01609 Warning UV-Laser: NTC tripler broken.
+01610 Warning UV-Laser: Temperature NTC tripler
+too high.
+01611 Warning UV-Laser: NTC doubler shorted.
+01612 Warning UV-Laser: NTC doubler broken.
+01613 Warning UV-Laser: Temperature NTC doubler
+too high.
+01614 Warning UV-Laser: NTC heatsink laserhead
+shorted.
+01615 Warning UV-Laser: NTC heatsink laserhead
+broken.
+01616 Warning UV-Laser: Temperature NTC
+heatsink laserhead too high.
+01617 Warning UV-Laser: Interlock open.
+01618 Warning UV-Laser: Overcurrent laserdiode 1.
+01619 Warning UV-Laser: NTC laserdiode 1 shorted.
+01620 Warning UV-Laser: NTC laserdiode 1 broken.
+01621 Warning Temperature NTC laserdiode 1 too
+high.
+01622 Warning UV-Laser: Bad command.
+01623 Warning UV-Laser: Bad data format.
+01624 Warning UV-Laser: Range error.
+01625 Warning UV-Laser: Head Eeprom defect.
+01626 Warning UV-Laser: Supply Eeprom defect.
+01627 Warning UV-Laser: Laserdiode 1 Eeprom
+defect.
+01628 Warning UV-Laser: RF driver 1 Eeprom
+defect.
+01629 Warning UV-Laser: Checksum incorrect.
+01630 Warning UV-Laser: Checksum is zero.
+01631 Warning UV-Laser: Laserdiode(s) down.
+01632 Warning UV-Laser: IR power too low.
+# Confidential - Company Proprietary
+
+01633 Warning UV-Laser: Laserdiode 1 temperature
+out of range.
+01634 Warning UV-Laser: Laser crystal temperature
+out of range.
+01635 Warning UV-Laser: Vanadate 2 temperature
+out of range.
+01636 Warning UV-Laser: Doubler temperature out
+of range.
+01637 Warning UV-Laser: Tripler temperature out of
+range.
+01638 Warning UV-Laser: Communication fault I2C-
+Bus 1.
+01639 Warning UV-Laser: Communication fault I2C-
+Bus 2.
+01640 Warning UV-Laser: Communication fault I2C-
+Bus 3.
+01641 Warning UV-Laser: Allowed only in stand-by.
+01642 Warning UV-Laser: Current above limit.
+System halted.
+01643 Warning UV-Laser: Laser power is out of
+range.
+01644 Warning UV-Laser: Head Eprom 2 not
+available.
+01645 Warning UV-Laser: Warning, crystal shift has
+to be done soon. Manually
+performed crystal shift fixes the
+error.
+01646 Warning UV-Laser: Allowed only in normal
+operation.
+01647 Warning UV-Laser: Laser performance is low.
+01648 Warning UV-Laser: Laser performance is too
+low.
+01649 Warning UV-Laser: Internal fault master.
+01650 Warning UV-Laser: Allowed only in stand-by /
+warmup.
+01651 Warning UV-Laser: Q-Switch mode not
+supported.
+01652 Warning UV-Laser: Burstrate out of range.
+01653 Warning UV-Laser: Q-Switch mode not
+allowed in lightloop.
+01654 Warning UV-Laser: Repetition rate out of
+range.
+01655 Warning UV-Laser: Not allowed in actual Q-
+Switch mode.
+# Confidential - Company Proprietary
+
+01656 Warning UV-Laser: External I2C interface
+usage enabled.
+01657 Warning UV-Laser: Q-Switch offtime out of
+range.
+01658 Warning UV-Laser: First pulse correction time
+out of range.
+01659 Warning UV-Laser: Mismatch FPCtime /
+Chargetime / Reprate / Qofftime.
+01660 Warning UV-Laser: Wrong head software
+version.
+01661 Warning UV-Laser: Mismatch reprate -
+Qofftime.
+01662 Warning UV-Laser: Mismatch reprate -
+FPCtime.
+01663 Warning UV-Laser: Eprom not available.
+01664 Warning UV-Laser: Internal fault Interlock.
+01665 Warning UV-Laser: Analog interface usage.
+01666 Warning UV-Laser: Reprate limit out of range.
+04200 Error 1 Board temperature too high.
+09000 Error 1 Marking head: Temperature of The temperature of the CP or HIC-
+CP/HIC-Raylase assembly group too Raylase board has exceeded the
+high. maximum value.
+09001 Error 1 Marking head: Supply voltage too The supply voltage of the marking
+low. head is too low (<16V).
+09002 Error 2 Marking head: Overpositioning of X Due to an error the X mirror was
+mirror. brought to a position beyond the
+admitted maximum area.
+09003 Error 2 Marking head: Overpositioning of Y Due to an error the Y mirror was
+mirror. brought to a position beyond the
+admitted maximum area.
+09004 Error 2 Marking head: Overcurrent X mirror. The current consumption of the X
+mirror is too high.
+09005 Error 2 Marking head: Overcurrent Y mirror. The current consumption of the Y
+mirror is too high.
+# Confidential - Company Proprietary
+
+09006 Fatal Error Marking head: No X mirror The X mirror is not connected
+connected. correctly to the CP/HIC-Raylase
+board. A cable might be loose or
+broken.
+09007 Fatal Error Marking head: No Y mirror The Y mirror is not connected
+connected. correctly to theCP/HIC-Raylase
+board. A cable might be loose or
+broken.
+09008 Warning Parts of the marking are not within Parts of the marking are not within
+the marking field of the marking the marking field of the marking
+head. head.
+09009 Fatal Error Selected tuning is missing or During initialization an unknown
+defective. tuning for the marking head was
+detected.
+09010 Error 2 Marking head: Over positioning of Z Due to an error the Z mirror was
+mirror. brought to a position beyond the
+admitted maximum area.
+09011 Error 2 Marking head: Overcurrent Z mirror. The current consumption of the Z
+mirror is too high.
+09012 Error 2 Communication error Chameleon-> Faulty communication between
+CP/HIC-Raylase: Gaps in the data Chameleon and CP/HIC-Raylase.
+flow
+09013 Fatal Error Marking head: No Z mirror The Z mirror is not connected
+connected. correctly to the CP/HIC-Raylase
+board. A cable might be loose or
+broken.
+09014 Error 1 Marking head: No X mirror The mirror speed is set too high.
+movement detected
+The X mirror is not connected
+correctly to the CP/HIC-Raylase
+board. A cable might be loose or
+broken.
+The CP/HIC-Raylase board may be
+defective.
+The mirror galvo may be defective.
+# Confidential - Company Proprietary
+
+09015 Error 1 Marking head: No Y mirror The mirror speed is set too high.
+movement detected The Y mirror is not connected
+correctly to the CP/HIC-Raylase
+board. A cable might be loose or
+broken.
+The CP/HIC-Raylase board may be
+defective.
+The mirror galvo may be defective.
+09016 Warning Communication error Chameleon-> There was a wrong command to the
+CP/HIC-Raylase: inadmissible marking head detected which is not
+command admitted in the current mode.
+09017 Warning Communication error Chameleon->
+CP/HIC-Raylase: unknown command
+09018 Warning Communication error Chameleon-> There was protocol error detected
+CP/HIC-Raylase: Protocol error in marking head communication.
+This indicates an error in the
+communication to marking head.
+09019 Error 1 Marking head: No Z mirror The mirror speed is set too high.
+movement detected The Z mirror is not connected
+correctly to the CP/HIC-Raylase
+board. A cable might be loose or
+broken.
+The CP/HIC-Raylase board may be
+defective.
+The mirror galvo may be defective.
+09021 Error 1 Internal error: Cannot set control The marking head cannot change to
+mode of the CP/HIC-Raylase. control mode. This indicates an
+error in the communication to
+marking head.
+09022 Error 1 Internal error: Cannot set Internal error: Cannot set
+configuration mode of the CP/HIC- configuration mode of the marking
+Raylase. head. This indicates an error in the
+communication to marking head.
+09023 Error 1 Internal error: Cannot set download Internal error: Cannot set download
+mode of the CP/HIC-Raylase. mode of the marking head. This
+indicates an error in the
+communication to marking head.
+# Confidential - Company Proprietary
+
+09100 Error 2 No communication with marking No communication with marking
+head. head. This indicates an error in the
+communication to marking head.
+09101 Error 1 Internal error: Error status of the Internal error: Error status of the
+CP/HIC-Raylase cannot be reset. marking head cannot be reset
+09102 Error 1 Interrupted communication with There have been errors on the main
+marking head. control board while receiving data
+from the marking head control
+board. Faulty connection between
+main control board and marking
+head. Faulty marking head control
+board.
+09103 Error 1 Internal error: CP/HIC-Raylase not in Internal error: Cannot set
+configuration mode, cannot configuration mode of the marking
+executed command. head. This indicates an error in the
+communication to marking head.
+09104 Error 1 No data received from the marking The main control board receives
+head. permanently or temporarily no data
+from the marking head because the
+connection to the marking head has
+been separated or the power supply
+of the marking head failed.
+09105 Error 1 Marking head: Protection window Protection window not mounted.
+missing.
+10001 Fatal Error No data can be read from the Faulty connection to the EEPROM of
+system database. the system database.
+10002 Error 1 Backup of system database was Several entries are missing in the
+loaded! system database. Therefore the
+backup of the system database has
+been loaded.
+# Confidential - Company Proprietary
+
+10003 Error 1 Cannot write (all) to the backup of Write error to backup system
+the system database. database
+10004 Error 1 Cannot write to system database. Faulty connection to the EEPROM of
+the system database.
+10005 Fatal Error Cannot read backup of the system The backup has not been generated
+database. at the previous start of the system
+or it has been deleted.
+10006 Error 1 Overflow of system database By changing or adding an entry to
+the system database the admissible
+size has been exceeded.
+10008 Fatal Error Laser reboot is required. System settings (e.g. laser type)
+have been changed and require a
+reboot.
+10009 Fatal Error CI initialization failure, no valid Invalid customer IO configuration
+configuration file available. file or missing IO configuration file.
+10010 Error 1 SD card is locked / write-protected. The storage device has write lock
+enabled. In case of SD card, write
+protection might be enabled. In case
+of internal emmc storage,
+something went wrong during boot
+or partition creation.
+10101 Error 2 Version conflict (command not An unknown command has been
+executed) sent to the Chameleon via the
+ethernet interface.
+# Confidential - Company Proprietary
+
+10102 Error 2 Unknown command: {1} An unknown command has been
+sent to the Chameleon via the
+ethernet interface, the unknown
+command is displayed.
+10103 Error 2 Key not found in system database The database entry requested via
+ethernet does not exist.
+10104 Error 2 Database write error. Transmission error while
+transmitting a database object via
+ethernet or version conflict between
+database object and COS.
+10105 Error 2 Database read error. Database entry required for
+executing a command received via
+ethernet is missing.
+10106 Error 2 Layout contains no data. Template information has been
+requested via ethernet. The
+corresponding template contains no
+data.
+10107 Error 2 Layout does not exist. Template information has been
+requested via ethernet. The
+corresponding template does not
+exist in the application database.
+10108 Error 2 No variables in layout. The variables requested via ethernet
+do not exist in the template.
+10109 Error 2 Format is invalid. Via ethernet a command with
+missing or incorrectly formatted
+parameters has been sent.
+10111 Error 2 Errors while saving The MultiMediaCard is full, not
+inserted correctly or defective.
+10113 Error 2 This database entry cannot be Other database entries depend on
+deleted since {1} other entries this entry.
+depend on it.
+10114 Error 2 The transmitted object cannot be Version conflict.
+saved to the database. Please check
+whether your system supports the
+object.
+10115 Error 2 Too many variables are used in the Number of variables or number of
+layouts. Please delete all layouts you templates too high.
+do not need.
+10116 Error 2 Error while reading directory {1}. The SD-Card on the main control
+board cannot be read.
+10300 Fatal Error Data for initialization cannot be read Defective system database or
+completely from the database. customer database.
+# Confidential - Company Proprietary
+
+10301 Error 2 The parameter set {1} contains The application database belongs to
+inadmissible settings which are a different laser system.
+automatically adjusted before
+marking.
+10304 Warning Marking process interrupted by The interlock was opened during
+interlock. marking operation.
+10305 Warning Key switch has been opened while The key switch was opened during
+marking marking operation.
+10306 Warning The pilot output stopped due an Error condition appeared while pilot
+error condition. laser marking.
+10307 Warning Marking process interrupted by Shutterlock was opened while laser
+shutterlock. marking.
+10308 Error 1 System not ready. Marking has been started while
+importing into database on laser.
+10401 Error 2 Layout invalid: {1} The template selected for marking is
+defective or does not exist.
+10404 Error 2 Value can be marked only once: {1} For an external text the property
+"Mark Once (error)" has been set
+and it has been tried to mark an
+external text with the same value
+twice.
+10406 Error 2 The selected trigger input does not While initializing the system a wrong
+exist. configuration was detected.
+10409 Error 2 System error during preparation of Internal error during preparation of
+marking. marking.
+10410 Warning The parameter set of the active The parameter set of the active
+layout has been adjusted to the template contains inadmissible
+system. settings for the laser. The
+application database possibly
+belongs to a different laser system.
+10411 Warning Value can only be marked once: {1} For an external text the property
+"Mark Once (warning)" has been set
+and it has been tried to mark the
+external text with the same value
+twice.
+10412 Warning The parameter set {1} is above Mark or jump speed is higher than
+recommended speed. recommended.
+# Confidential - Company Proprietary
+
+10413 Error 2 Cannot change variable {1}. Prompt variable with
+<ValueQueues> could not be set
+because it cannot be encoded in a
+barcode or IDMatrix
+10414 Error 2 Template validation failed: The Various. More information
+target working distance offset is contained in error message (%s is
+outside the allowed range. Affected replaced by affected template name
+Layer(s): {1}. and error message).
+10415 Warning Template validation failed: The Various. More information
+target working distance offset is contained in error message (%s is
+outside the allowed range. Affected replaced by affected template name
+Layer(s): {1}. and error message).
+10416 Error 2 Template validation failed: The The number of unique working
+number of unique working distance distance offsets has reached the
+offsets exceeded. Amount: {1} technical limit and thus marking of
+job won't be possible
+10417 Warning Template validation failed: The
+number of unique working distance
+offsets exceeded. Amount: {1}
+10500 Error 1 Cannot load database. The application database and its
+backup cannot be loaded.
+10501 Error 1 Backup database has been loaded. The application database is
+defective.
+10502 Additional System Message: {1} Error during determination of the
+Informatio current template or its variables.
+n Probably the database does not
+contain any templates.
+10503 Warning The database format has changed. An older database has been loaded
+by a new COS.
+10504 Warning Not all previously used layouts have New templates have been added to
+been saved. the database and selected for
+marking. Then the system has been
+booted without saving the changed
+database.
+# Confidential - Company Proprietary
+
+10505 Warning The Job used last was not saved. A new template has been added to
+the database and selected for
+marking. Then the system has been
+booted without saving the changed
+database.
+10506 Warning Invalid value of absolute operating The battery buffering the SRAM is
+hours in SRAM. running down.
+10507 Fatal Error Error while reading the objective The objective file does not exist in
+file. the CMark.
+10508 Fatal Error Error while reading the laser file. The laser file does not exist in the
+CMark.
+10509 Fatal Error Error while reading the head file. The head file does not exist in the
+CMark.
+10512 Error 1 AllprintBasic: Protocol configuration The AllprintBasic command string in
+error the COS database ("Config","Input")
+contains a configuration error for
+the serial protocol.
+10513 Error 1 AllprintBasic: Configuration error of The AllprintBasic command string in
+the serial interface the COS database ("Config","Input")
+contains a configuration error for
+the serial interface.
+10514 Fatal Error CP/HIC-Raylase download error A program has to be transmitted to
+({1}). the CP/HIC-Raylase. During this
+download an error occurred.
+10515 Fatal Error CP/HIC-Raylase download: File {1} is The required file does not exist.
+missing. Faulty connection between
+Chameleon and CP/HIC-Raylase.
+10516 Error 1 The marking head is not connected. Faulty connection to the marking
+head.
+No marking head connected.
+10517 Warning According to the system database The system database contains the
+there is no marking head connected entry
+'MARKING_HEAD_ATTACHED=0'.
+Thus the marking head is not
+addressed.
+10519 Error 1 Please select a lens corresponding to A lens and laser head mismatch has
+the marking head. been detected. Please select the
+appropriate lens for this system.
+# Confidential - Company Proprietary
+
+10520 Fatal Error A marking head has been identified A laser head mismatch has been
+which is not admitted for this laser detected. Please select the
+type. appropriate head for this system.
+10521 Fatal Error Wrong safety circuit detected. During system initialization the
+system detected a wrong safety
+controller compared to
+configuration.
+10522 Warning According to the system database Beamsource_attached is false in
+there is no beam source attached systemdatabase
+10550 Error 1 AllprintBasic: Syntax error (line: {1}, The AllprintBasic command string in
+column: {2}) the COS database ("Config","Input")
+contains a syntax error.
+10551 Error 1 The layout does not contain the The variable to be modified in the
+requested variable. AllprintBasic command string does
+not exist in the template.
+10552 Warning AllprintBasic - MsgBox:\n\r {1} This is a regular message, no error.
+The AllprintBasic command string
+triggered the output of this
+message.
+10553 Error 1 Illegal command in AllprintBasic This AllprintBasic version does not
+command string. support the command.
+10554 Error 1 The AllprintBasic command "Error" Depending on the AllprintBasic
+has been executed. program.
+10555 Warning The AllprintBasic command Depending on the AllprintBasic
+"Warning" has been executed. program.
+10601 Error 2 No layout list selected. The external template selection has
+failed because no template list has
+been selected.
+10602 Error 2 The chosen layout number {1} The external template selection has
+cannot be assigned to any layout. failed because the selected template
+number cannot be assigned to any
+template in the template list.
+10701 Error 2 Out of memory. Cannot create Internal error or database is too
+database object. large.
+10702 Error 2 Format error while creating a Version conflict between database
+database object. object and COS.
+# Confidential - Company Proprietary
+
+10800 Fatal Error DSP does not send telegrams. The DSP has not been initialized
+correctly or the connection to the
+DSP is faulty.
+10811 Fatal Error DSP buffer overflow Internal communication error.
+10812 Warning Invalid SmartSP telegram 0x{1} Internal communication error.
+10813 Error 2 No encoder attached. 1) In the product registration an
+encoder was selected although no
+encoder is connected.
+2) In the product registration an
+encoder was selected which has
+been removed during operation.
+10814 Error 2 No trigger detector attached. 1) In the product registration
+external trigger was selected
+although no trigger detector is
+connected.
+2) In the product registration a
+trigger detector was selected which
+has been removed during operation.
+10815 Error 1 Marking head removed from holder. Marking head was removed from
+holder.
+Sensor not connected or defect.
+10899 Warning Incomplete marking, product The marking has been aborted to
+movement too slow. prevent burning because the
+conveyor belt is moving too slow or
+has stopped.
+10904 Warning The customer interface (CI) is not The power supply of the customer
+supplied with 24 V by the customer. interface is not available or switched
+off.
+10907 Error 1 The customer interface (CI) indicates Interrupted marking, incomplete
+an external error. marking, marking is not possible
+until error is confirmed
+10908 Warning External STOP from the CI. The STOP input is supplied
+constantly with 0 V so that the
+START input is not evaluated.
+10913 Fatal Error File {1} is missing. The file is supposed to be on the file
+system.
+10926 Error 2 Entry ({1}) is missing in the database. Defective database.
+# Confidential - Company Proprietary
+
+14200 Error 2 The temperature of the supply unit In operation the critical temperature
+is too high. threshold in supply unit was
+reached. The temperature
+conditions are too high.
+14201 Warning Supply unit temperature limit is In operation the temperature
+approaching. warning level in supply unit was
+reached. The temperature
+conditions are too high.
+14202 Warning The marking head temperature limit In operation the temperature
+is approaching. warning level in marking head was
+reached. The temperature
+conditions are too high.
+14203 Warning The marking head environment In operation the temperature
+temperature limit is approaching. warning level for the environment of
+the marking head was reached. The
+temperature conditions are too
+high.
+14204 Warning Laser source: temperature warning In operation the temperature
+warning level for beam source was
+reached. The temperature
+conditions are too high.
+15100 Error 1 The Miscellaneous Interface A MIC has been installed, that is not
+Controller (MIC) was not found or is supported or not correctly mounted
+not supported. to the base board.
+15101 Error 1 The interface communication Wrong module type is installed or
+module couldn't be detected. configured. i.e. EtherNet/IP module
+Ethernet/IP module not found. is configured, but the module is for
+PROFINET.
+15102 Error 1 The interface communication Wrong module type is installed or
+module couldn't be detected. configured. i.e. ProfiNet Module is
+ProfiNET module not found. configured, but the module is for
+EtherNet/IP.
+15103 Error 1 An unsupported communication The module that is connected to the
+module has been detected. laser is not supported.
+15104 Error 1 There is a communication problem Module internal error.
+with the module. No answer
+received from module (no answer or
+timeout).
+15105 Error 1 An unknown internal error occurred Module internal error.
+in the communication module.
+15106 Error 1 Failed to initialize the Driver problem in the laser software
+communication module.
+# Confidential - Company Proprietary
+
+15107 Warning The watch dog was triggered CPU load of the laser was too high.
+because a communication timeout
+occurred during data processing.
+15108 Error 1 The communication module sent Instable contact to MIC, EMC issues.
+invalid data (CRC32 error). Note: Error will be raised only if
+checksum error occurred 10x in a
+row. Reinitialize external interface.
+15109 Error 1 The connection to the external There is no cable connected to the
+device is lost. module anymore or the cable /
+connection is not stable.
+15110 Error 1 There is a communication error There is no cable connected to the
+between the laser and the external module anymore or the cable /
+device. connection is not stable.
+15111 Error 1 There is an address conflict with The are multiple devices with the
+another external device. same IP address in the same
+network.
+15112 Warning The laser received an invalid External device sent an unknown or
+command from external device. invalid command.
+15113 Warning The laser received invalid data from External device sent invalid data.
+the external device.
+15114 Error 2 Unable to initialize the Wrong system database entries,
+communication module due to corrupted or missing configuration
+wrong configuration. files.
+15115 Error 2 Unable to setup network Configurations wrong.
+parameters for the communication.
+15116 Warning The connection to the external One of two cables is not connected
+device is lost. properly anymore.
+15117 Error 1 The interface communication EtherCAT-Module not connected,
+module couldn't be detected. defect or instable connection.
+EtherCAT module not found.
+18000 Warning Cannot connect to PLC. Faulty communication with the PLC
+while PLC is not busy.
+18001 Error 1 PICOLA script interrupted, dump PLC error
+follows. {1}
+18003 Warning PLC reports warning, dump follows. PLC error while PLC is not busy.
+{1}
+19201 Error 2 Layout {1} does not exist. The template does not exist in the
+database.
+# Confidential - Company Proprietary
+
+19202 Error 2 Faulty layout: {1} The template selected for marking is
+defective or does not exist.
+19203 Error 2 Parameter set {1} does not exist. The parameter set required by a
+template is missing.
+19204 Error 2 Product registration {1} does not The product registration required by
+exist. a template is missing.
+19205 Error 2 At least one index level does not The template uses an index level
+exist in the parameter set. which does not exist in the
+parameter set.
+19210 Error 2 The direct marking cannot be carried Faulty connection between PC and
+out. Chameleon.
+19301 Error 2 The layout sequence does not The selected template sequence
+contain any layout. does not contain any template
+19302 Error 2 The layout {1} of the layout The selected template in the
+sequence does not exist. sequence does not exist.
+19303 Error 2 The heads {1} of layouts of a layout The configured templates in the
+sequence must be identical. sequence use different marking
+head configurations.
+19304 Error 2 The product registrations of layouts The configured templates in the
+of a layout sequence must be sequence use different product
+identical. registrations.
+19305 Error 2 Product registration {1} does not The product regristration selected
+exist. by the active template does not
+exist in the database.
+19306 Error 2 Defective layout in the layout While initializing the template
+sequence: {1} sequence an error occurred.
+19309 Error 1 The clock had to be restarted. Please The clock did stop and has already
+set the time! been restarted. The battery voltage
+might be too low.
+19310 Warning Laser cannot connect to The version of the ActiveControl.dll
+ActiveControl with version {1}. installed with the Smart Graph
+Version {2} expected. cannot be connected to the laser.
+19414 Message Connection rejected: TCP port 2288 There is already one logging client
+is already connected to IP {1}. connected TCP port 2288.
+19498 Message Test version will expire in {1} days. Test version installed. Test versions
+expire after shown amount of days.
+Update to new test version or to a
+non-test version.
+# Confidential - Company Proprietary
+
+19499 Fatal Error Test version expired. Please update The test version is expired. Please
+the software. update the software to a newer
+version.
+19500 Warning General maintenance warning
+19502 Error 1 Suction control error While monitoring the fume
+extraction an control error
+happened.
+19503 Warning The filter is full. While monitoring the fume
+extraction the filter status became
+active.
+19504 Error 2 The filter is full. While monitoring the fume
+extraction the filter status is active.
+19505 Warning The Safety circuit is open. The door at the safety circuit is open
+19506 Warning The front panel keyswitch is open. The frontpanel keyswitch is open
+19507 Warning The customer interface (CI) The external keyswitch is open
+keyswitch is open.
+19508 Warning The front panel stop button was The front panel stop button was
+pressed. pressed.
+19509 Error 1 Safety connector has a signal on The configured safety circuit does
+unused line. not match the circuit attached.
+19511 Error 1 K40 Emergency stop The emergency stop circuit is
+opened.
+19512 Warning The DSP has detected an internal
+error.
+19513 Error 1 The machine job can't be executed.
+19515 Fatal Error Safety circuit reset failure. The reset of the safety circuit was
+not possible during system
+initialization. System is not able to
+release safety circuit
+# Confidential - Company Proprietary
+
+19516 Warning Safety circuit: Emergency stop. The emergency stop circuit is
+opened.
+19517 Error 1 The machine reports an error.
+19518 Message The pilot laser has been stopped The pilot laser is stopped
+automatically due to timeout. automatically after a certain time.
+19801 Error 1 The event log database is full. Export
+required.
+19802 Warning The event log database is almost
+full. Export is strongly advised.
+19803 Error 1 Marking not possible, system has The system has been started from
+been started from an external an external storage device. For
+storage device. safety reasons marking is not
+possible.
+19804 Error 1 Wrong network settings. Invalid IP address or subnet has
+been configured.
+19805 Message The {1} network connection is lost.
+Please check the placement of the
+antenna box or the cable
+connection.
+19900 Warning Connected laser system warning: {1} A laser in a multi laser configuration
+throwed a warning message
+19901 Error 1 Connected laser system error: {1} A laser in a multi laser configuration
+throwed an error1
+19902 Error 2 Connected laser system error: {1} A laser in a multi laser configuration
+throwed an error2
+19903 Fatal Error Connected laser system fatal error: A laser in a mutli laser configuration
+{1} throwed a fatal error
+19904 Additional Connected laser system message: A laser in a multi laser configuration
+Informatio {1}. throwed a message
+n
+19905 Error 2 Follow laser {1} has been A network cable or device within the
+disconnected. multi laser configuration was
+unplugged
+19906 Error 2 Laser is not ready for marking. The laser is still in an error state or
+the keyswitch or safety circuit is
+open
+# Confidential - Company Proprietary
+
+19908 Message Internal memory is almost full.
+19909 Warning Please check the product tracking # Product tracking is acitve and you
+settings in the active line setup. have changed the start distance.
+Please adjust the tracking distance
+the distance if you have moved the
+trigger sensor.
+# You try to enable product tracking
+with invalid values for tracking
+distance or tracking tolerance.
+The tracking distance must be at
+least as high as the start distance
+but not lower than the tolerance.
+19910 Message Important: Laser source
+maintenance required.
+19911 Message Urgent: Laser source maintenance
+due soon.
+60001 Message New firmware is ready for manual
+installation.
+60002 Message New firmware is available for
+download.
+60003 Message New firmware is ready for download
+and installation.
+60004 Message New firmware will be installed
+automatically on next system
+shutdown.
+60005 Message A firmware download was canceled
+when the key switch was closed.
+60006 Message New firmware will be installed
+automatically on next system start-
+up.
+# Confidential - Company Proprietary
+
+Effects
+Incomplete marking.
+Incomplete marking. This applies to
+all individual markings for which this
+message is displayed.
+Faulty marking.
+There might be small burns within
+vector strokes of the marking.
+# Confidential - Company Proprietary
+
+The product that has released the
+trigger is not marked. This applies to
+each product for which the message
+is displayed.
+Parameters are not used for marking
+as previously set.
+none
+none
+The system is stopped and must be
+switched off.
+The system is stopped and must be
+switched off.
+Possibly incorrect markings.
+Possibly incorrect marking.
+Marking not possible.
+# Confidential - Company Proprietary
+
+The marking is not complete. The
+system is stopped.
+The system is not operable.
+System boots with error conditions.
+# Confidential - Company Proprietary
+
+The system is stopped and must be
+restarted.
+||Language   ||Effects||
+|Deutsch|System wird gestoppt und
+muss ausgeschaltet werden.|
+|English|The system is stopped and
+must be restarted.|
+|Danish|Systemet standses og skal
+slås fra.|
+|Dutch|Systeem wordt gestopt en
+moet worden uitgeschakeld.|
+|French|Le système est arrêté et
+doit être désactivé.|
+|Italian|Il sistema viene arrestato e
+deve essere spento.|
+|Portuguese  |O sistema é parado e
+deve ser desligado.|
+|Spanish|El sistema se parará y
+deberá desconectarse.|
+Trigger signals are possibly not
+identified correctly.
+# Confidential - Company Proprietary
+
+Marking stops.
+Marking is not possible.
+Marking is not possible.
+Marking is not possible.
+Marking is not possible.
+Marking is not possible.
+Overheating of the system.
+No or reduced laser tube output.
+# Confidential - Company Proprietary
+
+Intermittent tube output.
+Low laser tube output.
+Incomplete marking.
+Marking not possible.
+System would not power up the
+laser after turning the keyswitch.
+Marking not possible.
+Systems is booting with fatal error
+condition. Marking is not possible.
+Systems is booting with fatal error
+condition. Marking is not possible
+Incomplete marking. Fatal error
+condition. The system is not able to
+mark.
+Marking is not possible.
+Marking is not possible.
+# Confidential - Company Proprietary
+
+Marking is not possible.
+System initialization fails.
+Marking is not possible.
+Marking quality possibly degraded.
+Marking quality possibly degraded.
+Marking is not possible or
+interrupted.
+Marking is not possible.
+Air flow monitoring of marking head
+cooling circuit not possible.
+Air pump is not turned on due to
+unknown mounting position.
+Air pump will not turned on in
+wrong assembly position.
+No active cooling of marking head.
+No marking possible.
+# Confidential - Company Proprietary
+
+Insufficient cooling of marking head.
+Marking not possible.
+Insufficient cooling of marking head.
+Temperature warning/error
+possible.
+Insufficient cooling of marking head.
+Temperature warning or
+temperature error possible.
+Rising temperatures in the system
+housing.
+Marking is not possible.
+After a marking the next marking
+cannot be started without
+confirmation of the error message.
+Marking aborted?
+# Confidential - Company Proprietary
+
+# Confidential - Company Proprietary
+
+Marking is not possible
+Marking is not possible
+Marking is not possible
+Marking is not possible
+# Confidential - Company Proprietary
+
+# Confidential - Company Proprietary
+
+# Confidential - Company Proprietary
+
+# Confidential - Company Proprietary
+
+Possibly incorrect marking.
+Possibly incorrect marking.
+Possibly incorrect marking.
+Possibly incorrect marking.
+Possibly incorrect marking.
+Possibly incorrect marking.
+# Confidential - Company Proprietary
+
+The system is not able to mark.
+The system is not able to mark.
+Possibly incorrect marking.
+System cannot be set up.
+Possibly incorrect marking.
+Possibly incorrect marking.
+Possibly incorrect marking.
+Possible incorrect marking.
+Possibly incorrect marking.
+# Confidential - Company Proprietary
+
+Possibly incorrect marking.
+Marking possibly incorrect.
+Marking possibly incorrect.
+Possibly incorrect marking.
+Possibly incorrect marking.
+Possibly incorrect marking.
+Marking is not possible.
+# Confidential - Company Proprietary
+
+Marking not possible.
+Marking is not possible.
+Marking is not possible.
+The marking is possibly incorrect.
+Marking is not possible.
+Laser output power degradation due
+to optical components dust
+contanimation.
+The system is not operable. Marking
+is not possible.
+Possibly incorrect system settings.
+# Confidential - Company Proprietary
+
+In case of an error in the system
+database the backup file cannot be
+used. In that case the system is no
+longer operable.
+The new values cannot be applied. A
+restart of the system might fail. In
+that case the system is no longer
+operable (see error 0001).
+The system cannot be started.
+Changes are not applied.
+System is unable to mark and needs
+to be rebooted.
+Changed system settings will be
+applied after the reboot.
+Laser is unable to load the customer
+interface configuration file and
+cannot configure the CI. Marking is
+not possible.
+System cannot save changes.
+Probably update is also no possible.
+System reinitialisation with rescue
+stick might be appropriate.
+The ethernet communication might
+be disturbed severely, the message
+appears repeatedly.
+# Confidential - Company Proprietary
+
+None.
+None.
+A database object transmitted via
+ethernet cannot be inserted into the
+database.
+Command is not executed.
+Information is not sent.
+Information is not sent.
+Data is not sent.
+The ethernet communication might
+be disturbed severely, the message
+appears repeatedly.
+Data cannot be saved.
+The entry is not deleted.
+The object is not saved to the
+database.
+The template cannot be marked.
+Marking is not possible.
+The system cannot be started.
+# Confidential - Company Proprietary
+
+The parameter set is adjusted
+automatically to the system before
+marking. This can affect the marking
+quality.
+Marking stopped and marking
+content might be in an unfinished
+state.
+Marking stopped and marking
+content might be in an unfinished
+state.
+Pilot marking stopped.
+Marking interrupted and marking
+content might be in an unfinished
+state.
+Marking is not possible.
+Marking is not possible.
+The marking is not carried out.
+Marking is not possible.
+Marking is not possible.
+The automatic adjustment affects
+the marking and will be taken over
+when saving the database.
+Variable content has been marked
+twice with the same content.
+Overheating of the galvos
+# Confidential - Company Proprietary
+
+Marking stops and usage of queue is
+switched off.
+The validation is started when
+template is activated (resulting in
+warning 0415) and when template is
+beeing marked (resulting in error2
+0414).
+The validation is started when
+template is activated (resulting in
+warning 0415) and when template is
+beeing marked (resulting in error2
+0414).
+No marking possible
+Marking is not possible.
+Modifications are lost.
+None.
+If the template marked last does not
+exist in the database the first
+template of the database is selected
+automatically for marking.
+# Confidential - Company Proprietary
+
+The template marked last does not
+exist in the database. The first
+template of the database is selected
+automatically for marking.
+The value of the absolute operating
+hours corresponds to the value of
+the last system start.
+The system is not operable.
+The system is not operable.
+The system is not operable.
+The control via AllprintBasic (serial
+port) does not work.
+The control via AllprintBasic (serial
+port) does not work.
+Marking is no longer possible since
+the CP/HIC-Raylase hardware has no
+program for mirror positioning.
+System cannot be set up.
+Marking is not possible.
+Marking is not possible.
+Marking is not possible.
+# Confidential - Company Proprietary
+
+The system is not operable.
+Fatal error condition. The system
+can not mark.
+No laser power available when
+marking
+The control via AllprintBasic (serial
+port) does not work.
+The control via AllprintBasic (serial
+port) does not work.
+None.
+The control via AllprintBasic (serial
+port) does not work.
+Depending on the AllprintBasic
+program.
+Depending on the AllprintBasic
+program.
+Marking is not possible.
+Marking is not possible.
+Marking is not possible.
+Marking is not possible.
+# Confidential - Company Proprietary
+
+The system does not work.
+Marking is not possible.
+Marking is not possible.
+Marking not possible.
+Marking not possible.
+Marking aborted and system is in
+error state.
+Incomplete marking
+The output signals of the customer
+interface are invalid.
+Input signals at the customer
+interface are ignored.
+Depending on customer or CI
+terminal EXT_ERROR.
+Marking is not possible.
+The system cannot be started.
+Marking is not possible.
+# Confidential - Company Proprietary
+
+Incomplete marking, interrupted
+marking
+If temperature condition is not
+improved the system will stop
+marking.
+If temperature condition is not
+improved the system will stop
+marking.
+If temperature condition is not
+improved the system will stop
+marking.
+If temperature condition is not
+improved the system will stop
+marking.
+MIC and the module cannot be
+used. No communication possible.
+The module cannot be used. No
+communication possible.
+The module cannot be used. No
+communication possible.
+The module cannot be used. No
+communication possible.
+Limited or no further
+communication possible.
+The module cannot be used. No
+communication possible.
+The module cannot be used. No
+communication possible.
+# Confidential - Company Proprietary
+
+Interupted communication.
+Interupted communication.
+Interrupted or no communication.
+Interrupted or no communication.
+no communication, network
+disturbances.
+Command wont be executed.
+Protocol command wont be
+executed.
+MIC and the module cannot be
+used. No communication possible.
+Communication module not usable.
+In i.e. a ring network topology the
+"backup connection" is used now.
+No direct impact as the second
+connection is still available, however
+for a healthy ring topology the two
+connections should be available.
+EtherCAT cannot be used.
+New started scripts are possibly not
+executed correctly.
+Marking is not possible.
+# Confidential - Company Proprietary
+
+Marking is not possible.
+The template concerned cannot be
+marked.
+The template concerned cannot be
+marked.
+The template cannot be marked.
+The direct marking cannot (or only
+incompletely) be carried out.
+A marking can not be executed
+because no template is selected.
+A marking can not be executed
+because no template is selected.
+A marking can not be executed
+because no template is selected.
+A marking can not be executed
+because no template is selected.
+Marking of active template is not
+possible.
+Marking of template is not possible.
+The marked time is not correct.
+No connection between Smart
+Graph and laser.
+Connection is rejected until all other
+clients are disconnected.
+The current version is not officially
+released. The laser will start in the
+Fatal Error state and cannot be used
+for marking until a newer version
+has been installed.
+# Confidential - Company Proprietary
+
+The current version is not officially
+released. The laser will start in the
+Fatal Error state and cannot be used
+for marking until a newer version
+has been installed.
+Marking is not possible
+In a short timeframe the system will
+generate an error and stops
+marking.
+Interrupted markings, incomplete
+markings, marking is not possible
+Marking can not be carried out
+Marking can not be carried out
+Marking can not be carried out
+Interrupted marking, incomplete
+marking
+The system is not operable.
+None. This is default for K40 safety
+controller option.
+Fatal error condition during system
+initialization. Marking is not possible
+# Confidential - Company Proprietary
+
+None
+Unable to set primary or secondary
+ethernet settings. No IP address set.
+Laser is unreachable via network.
+See warning of the connected laser
+See error of the connected laser
+See error of the connected laser
+See fatal error of the connected
+laser
+See message of the connected laser
+No multi laser marking possible
+No multi laser marking possible
+# Confidential - Company Proprietary
+
+This warning appears as reminder to
+check the tracking settings.
+# Confidential - Company Proprietary
+
+Remedy
+Reduce size of marking.
+Expand marking field to maximum size.
+Select objective with higher focal length and thus increase the max.
+possible marking field.
+Check parameter/template settings.
+Increase distance of start delay. Usually this requires the sensors to be
+adjusted.
+Optimize parameters so that the marking can be executed faster.
+Reduce size of marking so that it can be executed faster.
+Select speed-optimized font.
+If possible, increase marking field by selecting a different objective.
+Check parameter/product registration settings.
+In case this error occurs in released versions it must be reported to the
+technical support group.
+Increase the values of the start delay or trigger delay. Thus more data can
+be processed before the marking execution is started.
+# Confidential - Company Proprietary
+
+Since the trigger signals are coming faster than they can be processed the
+marking time has to be reduced.
+If the marking time cannot be reduced any more the throughput has to be
+reduced.
+If you can preclude that there are too many regular trigger signals there
+might be mis-triggers. If e.g. the marking takes 50 ms and there is
+definitely each 100 ms a new product and thus a new trigger then the
+trigger signal is interfered. In this case the blocking should be checked
+which usually should be 90 % of the minimum time between two trigger
+signals. In the example this would be 90 ms.
+This may also be caused by mis-triggers or double triggers due to dirty
+product detector optics. Clean the lens of the product detector, and
+recalibrate it for your product.
+In case this error occurs in released versions it must be reported to the
+technical support group.
+In case this error occurs in released versions it must be reported to the
+technical support group.
+In case this error occurs in released versions it must be reported to the
+technical support group.
+Restart the laser. If the error persists, contact your local service
+representative or support team who will be able to provide assistance.
+In case this error occurs in released versions it must be reported to the
+technical support group.
+Check versions.
+In case this error occurs in released versions it must be reported to the
+technical support group.
+Change the parameters so that the marking is carried out slower.
+# Confidential - Company Proprietary
+
+Enlarge the start distance correspondingly, usually by moving the sensors.
+Optimize the parameters so that the marking can be carried out faster.
+Reduce marking so that it can be marked faster.
+Select a font which has been speed optimized.
+Enlarge the marking field by using a different objective if possible.
+Restart the system. Internal communication error on the main control
+board. In most cases this error indicates a version conflict. Check your
+CMark version. If the error persists, contact your local service
+representative or support team who will be able to provide assistance.
+Check system configuration. Reset system. Try to update to latest
+software version. Contact your local service representative or support
+team who will be able to provide assistance.
+# Confidential - Company Proprietary
+
+If the problem persists after rebooting the laser, please contact the
+technical support group.
+Check sensor and clean if necessary.
+For further possible causes see data sheet of the sensor.
+1. Remove products that got stuck on the conveyor belt between trigger
+and product tracking sensor.
+2. Clean the tracking sensor and make sure that it is not defective or
+covered.
+3. Check if the configured tracking sensor distance in the active line setup
+matches the distance between trigger and product tracking sensor.
+4. Increase the tolerance configured in the line setup, if necessary.
+To continue production without checking for products stucking under the
+laser while emission, disable product tracking in the active line setup.
+# Confidential - Company Proprietary
+
+Clean the trigger detector and make sure that it is not defective.
+Check the product tracking settings and the start distance configured in
+the active line setup.
+When marking was stopped, remove all products between trigger sensor
+and product tracking sensor from the conveyor belt, bevor restarting.
+(This does not apply when preserving trigger queue is active.)
+To continue production without checking for products stuck under the
+laser while emission, disable product tracking in the active line setup.
+Reduce the distance between tigger sensor and tracking sensor and adjust
+the tracking sensor settings of the active line setup accordingly.
+Check laser status "Laser Ready". If it is inactive after turning the
+keyswitch there is no voltage supplied to the laser. The cause can be a
+broken cable, a defective relay or power supply.
+Faulty power supply module or incorrect voltage setting. Check voltage,
+adjust laser voltage setting if necessary or exchange power supply
+module. If the voltage is ok check power contacts in the laser head.
+Ensure jumper on CI X33.2-6 is in place and making good contact.
+Insufficient cooling. Check cooling system. Check signal cable between
+main control board and laser.
+Check system configuration. Reset system. Try to update to latest
+software version. Contact your local service representative or support
+team who will be able to provide assistance.
+Laser source error. Check interface between control board and laser.
+Check condition of laser source. Check laser interface path: Chameleon,
+LIC, Laser Source
+Check coolant level and pump operation.
+Check coolant flow switch and cable.
+Check fuseboard operation, ACC interface and cables to ACC.
+Check RF cable.
+Check RF PSU operation.
+Check laser tube operation.
+Check ACC interface board operation and cables.
+# Confidential - Company Proprietary
+
+Check modulation output to RF PSU.
+Check cable between ACC and RF PSU.
+Check RF PSU operation.
+Check ACC interface board operation.
+Check ACC operation.
+Check RF PSU operation.
+Check ACC interface board operation.
+The tube status indicates a back reflection into the tube, check laser tube
+and for reflective material under the focus optics. Repower system and try
+to mark again. If error remains: Contact your local service representative
+or support team who will be able to provide assistance.
+Please check and replace the red LED in the marking head. Also the
+keypad on the supply unit has to be checked.
+Check connection path between laser power supply and laser source.
+Check switching electronics (CPD/SPM).
+Check laser interface board (LIC) or system configuration.
+Check head interface board (HIC) or system configuration.
+The tube status shows it is active while it should be inactive. Check
+harness to laser, hardware and laser source.
+Insufficient cooling. Check cooling system of laser marking unit.
+Insufficient cooling. Check cooling system of laser marking unit.
+# Confidential - Company Proprietary
+
+Laser beam source pump diode control error.
+Bring laser system to cooler area and aclimate to temperatures <40°C
+(source internal pump diode error limit is 40°C)
+If error persits, then replace laser beam source.
+Check system configuration.
+Check communication to laser beam source.
+Check electrical connection to beam source.
+Check LIC board status LED's
+Check 48V power supply at supply unit (X100) and at the DCDC board
+connector (X6)
+Check power supply (12V) at laser beam source at the DCDC board's screw
+terminals (X3:12V and X4:GND).
+Insufficient cooling. Check cooling system of laser marking unit.
+Insufficient cooling. Check cooling system of laser marking unit.
+Defective beam shutter. Improper marking head operation. Check beam
+shutter. Check galvo operation. Check marking head electronics, galvos,
+galvo cables, umbilical, laser head harness, HIC, marking head board, main
+control board
+Defective beam shutter. Improper marking head operation. Check beam
+shutter. Check galvo operation. Check marking head electronics, galvos,
+galvo cables, umbilical, laser head harness, HIC, marking head board, main
+control board
+Exchange the LIC board and reboot laser.
+Check and replace UADB sensor board connection cable.
+Replace UADB sensor board.
+Mount air pump assembly according to supply unit orientation. Check
+UADB sensor board mounting position on air pump frame.
+Check or exchange air pump. Replace filter.
+# Confidential - Company Proprietary
+
+Check umbilical for extreme bendings or damages and replace if
+necessary. Exchange protection window when air knife blocked or
+damaged.
+Exchange air pump filter. Check air hose connection between pump and
+sensor.
+Check air hose and umbilical for kinked mountings or damages. Clean air
+knife exit. Exchange the protection window.
+Check the beam shutter.
+Check the shutter cable.
+Check the plug-in connections on the board.
+Check galvo/marking head board operation.
+Check the beam shutter.
+Check the shutter cable.
+Check the plug-in connections on the board.
+Check galvo/marking head board operation.
+# Confidential - Company Proprietary
+
+Check hardware and system configuration.
+Check hardware and system configuration.
+Check hardware and system configuration.
+Check hardware and system configuration.
+# Confidential - Company Proprietary
+
+The IPG lasersource does not answer via RS232 within the defined
+timeframe. Check serial connection between LIC and laser source.
+The configured pulse width can not be configured.
+Check electrical connection to beam source.
+Check LIC board status LED's
+Check 48V power supply at supply unit (X100) and at the DCDC board
+connector (X6)
+Check power supply (12V) at laser beam source at the DCDC board's screw
+terminals (X3:12V and X4:GND).
+Check electrical connection to beam source.
+Check LIC board status LED's
+Check 48V power supply at supply unit (X100) and at the DCDC board
+connector (X6)
+Check power supply (12V) at laser beam source at the DCDC board's screw
+terminals (X3:12V and X4:GND).
+Check electrical connection to beam source.
+Check LIC board status LED's
+Check 48V power supply at supply unit (X100) and at the DCDC board
+connector (X6)
+Check power supply (12V) at laser beam source at the DCDC board's screw
+terminals (X3:12V and X4:GND).
+replace beam source
+# Confidential - Company Proprietary
+
+# Confidential - Company Proprietary
+
+# Confidential - Company Proprietary
+
+# Confidential - Company Proprietary
+
+Improve cooling of the marking head, clean cooling fins if necessary.
+Increase distance between markings if possible.
+Check internal fan operation.
+Decrease dutycycle of system. Improve external thermal conditions.
+Check voltage supply at the marking head, at the power supply module in
+the control unit and at the marking head connector.
+Check X mirror.
+Check wiring in the marking head.
+Check marking head electronics.
+Check Y mirror.
+Check wiring in the marking head.
+Check marking head electronics.
+Check X mirror.
+Check wiring in the marking head.
+Can be caused by overpositioning. Reduce jump speed marking
+parameter. Review and optimize mark set parameters.
+Check Y mirror.
+Check wiring in the marking head.
+Can be caused by overpositioning. Reduce jump speed marking
+parameter. Review and optimize mark set parameters.
+# Confidential - Company Proprietary
+
+Check connection between X mirror and CP/HIC-Raylase board.
+Check connection between Y mirror and CP/HIC-Raylase board.
+Reduce size of marking.
+Select objective with higher focal length.
+Reposition template and make sure all items are within the marking field.
+Select a different tuning.
+Check Z mirror.
+Check wiring in the marking head.
+Check galvo harness, galvo and marking head electronics
+Check Z mirror.
+Check wiring in the marking head.
+Check connection between main control board and marking head. Check
+marking head communication path: Chameleon, HIC, Umbilical, Laser
+Head Harness, marking head electronics
+Check connection between Z mirror and CP/HIC-Raylase board.
+Use slower speeds for mirror movement.
+Check connection between X mirror and CP/HIC-Raylase board.
+Check connection between CP board and HIC board.
+Exchange CP/HIC-Raylase and mirror set.
+# Confidential - Company Proprietary
+
+Use slower speeds for mirror movement.
+Check connection between Y mirror and CP/HIC-Raylase board.
+Check connection between CP board and HIC board.
+Exchange CP/HIC-Raylase and mirror set.
+Check connection between main control board and marking head. Check
+marking head communication path: Chameleon, HIC, Umbilical, Laser
+Head Harness, marking head electronics
+In case this error occurs in released versions it must be reported to the
+technical support group.
+Use slower speeds for mirror movement.
+Check connection between Z mirror and CP/HIC-Raylase board.
+Check connection between CP board and HIC board.
+Exchange CP/HIC-Raylase and mirror set.
+Check connection between main control board and marking head. Check
+marking head communication path: Chameleon, HIC, Umbilical, Laser
+Head Harness, CP_Light
+Check connection between main control board and marking head. Check
+marking head communication path: Chameleon, HIC, Umbilical, Laser
+Head Harness, CP_Light
+Check connection between main control board and marking head. Check
+marking head communication path: Chameleon, HIC, Umbilical, Laser
+Head Harness, CP_Light
+# Confidential - Company Proprietary
+
+No marking head connected. Faulty power supply of marking head. Faulty
+connection between main control board and the marking head. Faulty
+marking head control board. Check power supply of marking head. Check
+connection between main control board and the marking head. Check
+marking head communication path: Chameleon, HIC, Umbilical, Laser
+Head Harness, CP_Light
+The error flags on the marking head control board cannot be reset. This
+indicates an error in the communication between main control board and
+the marking head. Check connection between main control board and the
+marking head. Check marking head communication path: Chameleon, HIC,
+Umbilical, Laser Head Harness, CP_Light
+Check connection between main control board and marking head.Check
+marking head communication path: Chameleon, HIC, Umbilical, Laser
+Head Harness, CP_Light
+Check connection between main control board and marking head. Check
+marking head communication path: Chameleon, HIC, Umbilical, Laser
+Head Harness, CP_Light
+Check connection between main control board and marking head. Check
+power supply of marking head. Check marking head communication path:
+Chameleon, HIC, Umbilical, Laser Head Harness, CP_Light.
+Please mount the protection window.
+Check main control board. Check system configuration in software and
+restart.
+Check system configuration and correct if necessary.
+# Confidential - Company Proprietary
+
+Check main control board.
+Check the state of the system database and save all data.
+Save factory settings.
+Shorten entries of variable length and retry changes.
+The following settings can have an impact:
+SmartGraph, Configuration, dialog "System Settings"
+- name in the field "Identification"
+- YAG systems: Number of digits after the decimal point for the aging
+factor
+SmartGraph, Configuration, dialog "Marking head"
+- Number of digits after the decimal point in the fields Mounting position,
+Working distance, Marking head and Pilot laser
+Please reboot the laser to apply your changes.
+Check for latest CMark and update.
+Release the write protection lock of the SD-card. Replace the SD-card with
+a new spare part SD-card. Check main control board if problem remains.
+If the ethernet communication has been disturbed severely: separate the
+connection and then connect again.
+# Confidential - Company Proprietary
+
+Check program which is sending the command.
+Check program which is sending the command.
+Repeat transfer; check version.
+Check the database entries.
+Check template and save it.
+Check template and save it.
+Check template.
+Correct the format of the command.
+Check MultiMediaCard.
+Delete the depending entries first.
+Check versions and make an update if necessary.
+Reduce number of variables or templates.
+Check SD-Card.
+Contact your local service representative or support team who will be
+able to provide assistance.
+# Confidential - Company Proprietary
+
+To avoid the automatic adjustment of the settings you can modify the
+parameter set manually. If you save the corrected parameter set to the
+database the error message will no longer appear.
+Interlock has been opened. Close the interlock to continue. Check wiring
+of customer interface and power switching electronics (e.g. CPD/SPM).
+Check default bridges (CPD/SPM X9.15, X9.17).
+Keyswitch has been opened. Close the keyswitch to continue. Check
+keyswitch, keyswitch wiring, customer interface wiring and external wiring
+of external keswitch. Check default bridges (Chameleon X33.1 to X33.8).
+Check for error conditions. Check default bridges on customer interface
+(Chameleon X29.1). Check external wiring. Check hardware.
+Check shutterlock circuit. Check default bridges on customer interface
+(CPD/SPM X9.14, X9.16). Check external wiring. Check hardware.
+Wait until import is finished, confirm error and start again.
+Check template and used parameters, product registration and (if existing)
+logos.
+Select template again.
+Change the contents of the external text or change the property "Mark
+Once (error)".
+Select a different trigger input.
+Check the beam shutter.
+Check the shutter cable.
+Check the plug-in connections on the board.
+When the database has been saved this message will no longer appear.
+Possibly the settings of the concerned parameter set have to be modified
+manually.
+Change the contents of the external text or change the property "Mark
+Once (warning)".
+Reduce jump or markingspeed.
+# Confidential - Company Proprietary
+
+Make sure that the variable value you want to apply
+1. does not exceed the maximal length as defined in the template editor
+2. is not used in an IDMatrix or a Barcode that cannot encode that value
+3. Prompt variables with active value queues are not running out of values
+Make sure that the effective working distance is inside the available
+working distance adjustment range. Check:
+1. layer working distance offset in Job editor
+2. working distance adjustment in Home screen
+3. working distance zero position offset in Laser Unit Settings
+Make sure that the effective working distance is inside the available
+working distance adjustment range. Check:
+1. layer working distance offset in Job Editor
+2. working distance adjustment in Home screen
+3. working distance zero position offset in Laser Unit Settings
+Reduce the number of unique working distances below the maximum
+stated in the error message, by editing the property "Working distance
+offset" and setting it to an already used value or disable the "Marked"
+property or by deleting layers not needed having content.
+Reduce the number of unique working distances below the maximum
+stated in the error message, by editing the property "Working distance
+offset" and setting it to an already used value or disable the "Marked"
+property or by deleting layers not needed having content.
+A new database file has to be written.
+Please save the database.
+If the database contains no template: create and add a new template and
+save the database.
+Saving the database it is automatically converted to the new format. Then
+the warning message will no longer be displayed.
+After conversion the database cannot be read by an older COS.
+Save the database after creating or importing new templates.
+# Confidential - Company Proprietary
+
+Save the database after creating or importing new templates.
+Check battery and replace if necessary.
+Reinstall CMark.
+Reinstall CMark.
+Reinstall CMark.
+Modify the protocol settings on the PC with AllprintBasic and import again
+via SmartGraph into the COS database. Then reboot the laser.
+Modify the interface parameters on the PC with AllprintBasic and import
+again via SmartGraph into the COS database. Then reboot the laser.
+Check connection between Chameleon and CP/HIC-Raylase.
+Check CP/HIC-Raylase.
+Check Chameleon.
+Reboot.
+If running an old software on a new system this error might happen.
+Check for latest CMark and update. Bad connection to the marking head
+could also cause this.
+Check connection between Chameleon and CP/HIC-Raylase.
+Connect marking head.
+If you want to mark a marking head must be connected and the entry in
+the system database has to be changed to
+'MARKING_HEAD_ATTACHED=1'. Please contact the technical support
+group.
+Please select the appropriate lens for this system. If you receive this error
+and the head/lens configuration has not changed, it may indicate a
+marking head failure.
+# Confidential - Company Proprietary
+
+A head mismatch has been detected. Check system configuration by
+selecting the appropriate head matching to this system. If you receive this
+error and the head or laser configuration has not changed, it may indicate
+a hardware failure. Check connection to marking head.
+The configured safety circuit does not match the circuit attached. Check
+the system configuration. Check wiring between safety controller and
+main control board. Contact your local service representative or support
+team who will be able to provide assistance if error remains.
+If you want to mark a beamsource must be connected and the entry in the
+system database has to be changed to 'BeamSourceAttached=1'. Please
+contact the technical support group.
+Test the command string on the PC with AllprintBasic, correct it and
+import again via SmartGraph into the COS database. Then reboot the
+laser.
+Check the corresponding template or the AllprintBasic command string
+and modify if necessary. If the command string has been changed the
+laser must be rebooted.
+None.
+Check command string and change if necessary. If the string has been
+changed you have to reboot the laser.
+Depending on the AllprintBasic program.
+Depending on the AllprintBasic program.
+Create and select a template list using the Smart Graph.
+Check template list.
+If the message is no longer displayed after rebooting, there might be an
+internal error. Inform the technical support group.
+If the message is still displayed after rebooting all elements not needed
+should be deleted from the database.
+Check versions of Smart Graph and CMark and carry out an update if
+necessary.
+# Confidential - Company Proprietary
+
+Restart the system.
+Restart the system. If the error persists, contact your local service
+representative or support team who will be able to provide assistance.
+Restart the system. If the error persists, contact your local service
+representative or support team who will be able to provide assistance.
+Connect encoder or deselect encoder in the product registration. Check
+wiring of shaft encoder, settings in product registration and hardware
+configuration.
+Check wiring of photo eye, settings in product registration and hardware
+configuration.
+Insert marking head into holder and confirm error message to enable
+marking.
+Please check the conveyor. Check leackage protection configuration.
+Check if power is supplied to the customer interface on main control
+board. Check jumpers (X19, X20) and supply terminal (Chameleon X28.7 &
+X28.8).
+Check jumper bridges (Chameleon X29.1), wiring of customer interface
+and external wiring.
+Check jumper bridges (Chameleon X22.7), wiring of customer interface
+and external wiring.
+Check software version and carry out an update if possible. If error
+remains check also main control board.
+Complete or exchange database.
+# Confidential - Company Proprietary
+
+Check ambient conditions. Provide cooling to the supply unit and check if
+filters are clogged.
+Check ambient conditions. Provide cooling to the supply unit and check if
+filters are clogged.
+Check ambient conditions. Provide cooling to the marking head and check
+if filters are clogged.
+Check ambient conditions. Provide cooling to the marking head and check
+if filters are clogged.
+Check ambient conditions. Provide cooling to the laser source and check if
+filters are clogged.
+Recheck if the MIC is mounted properly and check if the index is still
+supported.
+Check if the installed module is an EtherNet/IP module. (Blue sticker +
+"M40-EIP-xxx" written on the label)
+Check if the installed module is a PROFINET module. (Yellow sticker +
+"M40-PIR-xxx" written on the label)
+Only use compatible modules or update the laser software.
+Check if the MIC and the module is mounted properly and reinitialize
+external interface.
+Check if the MIC and the module is mounted properly and reinitialize
+external interface.
+Restart the laser and reinitialize external interface.
+# Confidential - Company Proprietary
+
+Close client connections if possible. Avoid large import or exports during
+operation.
+Check if there are possible electromagnetic disturbances. Check if the MIC
+and the module is mounted properly.
+Check if the RJ45 cables are connected properly. If the issue still remains,
+exchange the cable.
+Check if the RJ45 cables are connected properly. If the issue still remains,
+exchange the cable.
+Check IP addresses in the network or use DHCP if possible.
+Check protocol.
+Check protocol and data.
+Reinitialize external interface. Reinstall laser software.
+Reinitialize external interface. Reset network settings.
+Check if the RJ45 cables are connected properly. If the issue still remains,
+exchange the cable.
+Check EtherCAT-module connection or swap EtherCAT-mdule.
+Check availability of PLC before starting PICOLA scripts.
+See product manual.
+See product manual.
+Create or transmit the corresponding template.
+# Confidential - Company Proprietary
+
+Check template and used parameters, product registration and (if existing)
+logos.
+Select template again.
+Assign an existing parameter set to the template or add the required
+parameter set to the database.
+Assign an existing product registration to the template or add the required
+product registration to the database.
+Add the missing index level to the parameter set or assign an existing
+index level to all elements of the concerned template.
+Check the ethernet connection between PC and Chameleon.
+Check template sequence configuration in database. Reset database, if
+error remains reset or update system software
+Check template sequence configuration in database. Reset database, if
+error remains reset or update system software
+Check template sequence configuration in database. Reset database, if
+error remains reset or update system software.
+Check template sequence configuration in database. Reset database, if
+error remains reset or update system software.
+Check template sequence configuration in database. Create requested
+product regristration. Reset database, if error remains reset or update
+system software
+Configure a proper template sequence: Review sequence
+Set the time.
+If this happens every time after switch-on exchange the battery.
+Use Smart Graph with corresponding ActiveControl.dll or install the
+software expecting the version of the ActiveControl.dll to the laser.
+Disconnect all other logging clients first.
+Update to new testversion or to officially released version for the laser
+type in use.
+# Confidential - Company Proprietary
+
+Update to new test version or to officially released version for the laser
+type in use.
+Check the fume extraction. If no fume extraction is connected check the
+default bridges (Chameleon X21.1) and the main control board.
+Check the filter of the fume extraction. Check the filter condition and
+replace if necessary. If no fume extraction is connected check the default
+bridges (Chameleon X21.3) and the main control board.
+Check the filter of the fume extraction. Check the filter condition and
+replace if necessary. If no fume extraction is connected check the default
+bridges (Chameleon X21.3) and the main control board.
+Indication that door circuit is opened. This warning will be generated by
+default if FASS option is equipped and system is in shutterlock open
+status. Check default bridges (CPD/SPM X9.14, X9.16).
+Close the keyswitch to continue.
+Close the keyswitch to continue. Check jumper bridge (Chameleon X33.1
+to X33.8), wiring of customer interface and external wiring.
+If Stop was not pressed, check wiring to the front panel, the front panel
+keypad and the main control board.
+The configured safety circuit does not match the circuit attached. Check
+equipped hardware and system configuration. Check internal wiring and
+hardware. Contact your local service representative or support team who
+will be able to provide assistance.
+Close the emergency stop circuit. If this error appears unattended check
+safety circuit wiring and switches. This error should only appear on
+systems with K40 safety controller option.
+Check reset input for safety circuit and wiring of safety circuit. Reset
+switch must be open during initialization. Check default bridges and power
+switching board (e.g. CPD/SPM) and connection to main control board.
+Ensure jumper on X9.22-24 is in place and making good contact.
+# Confidential - Company Proprietary
+
+This warning will be generated by default if FASS option is equipped and
+system is in interlock open status. Then there is nothing to check, because
+it is a normal operation. But if the Emergency Stop warning occurs
+unintentionally then check wiring to doors/contacts. Check default bridges
+(CPD/SPM X9.15, X9.17).
+Restart the pilot laser.
+Export the event log database.
+Export the event log database.
+Restart the system form internal memory.
+Check configured network settings. Make sure that address is in proper
+format.
+Place the antenna box in a different location or try using a different
+network. Check the cable in case of a cable network.
+See warning of the connected laser
+See error of the connected laser
+See error of the connected laser
+See fatal error of the connected laser
+See message of the connected laser
+All lasers in the setup need to be connected properly. If only leader laser
+shall be used, please disable multi laser configuration
+All lasers in the setup need to be in laser ready state.
+1. Bring follower laser(s) into laser ready or
+2. If only leader laser shall be used, please disable multi laser
+configuration
+# Confidential - Company Proprietary
+
+Check the product tracking settings in the active Line Setup.
+The tracking distance must be the distance between trigger sensor and
+tracking sensor.
+It must be greater than the start distance.
+The tracking tolerance must not be greater than the tracking distance.
+The beam source needs to be maintained soon. Please contact service.
+The beam source needs to be maintained soon. Please contact service.
+# Confidential - Company Proprietary

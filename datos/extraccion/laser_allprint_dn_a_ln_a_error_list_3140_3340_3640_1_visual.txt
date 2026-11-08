@@ -1,0 +1,2261 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\Error List 3140 3340 3640 (1).pdf
+# cifrado=False bloques=28 caracteres=64339
+
+8/28/2019 Knowledge Article
+Error List 3140/3340/3640
+H e a d e r
+V i d e o j e t T e c h n o l o g i e s , I n c . K n o w l e d g e A r t i c l e
+C o n t e n t
+E r r o r L i s t 3 1 4 0 / 3 3 4 0 / 3 6 4 0
+W arning: System is marking further
+Fatal Error: System must be restarted
+Error 1: Laser power supply is turned of f
+Error 2: Marking was aborted
+T able 1: Error Code List
+ID Error classes: Message Possible cause Effects Remedy
+Reduce size of the
+overall message by
+reducing the
+scaling factor .
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 1 /28
+Expand marking
+field to maximum
+size. Select
+Parts of the marking are Parts of the marking are beyond Incomplete
+00001 W arning objective with
+beyond the marking field the user-defined marking field. marking.
+higher focal length,
+thereby increasing
+the maximum
+possible marking
+field. Check
+parameter/template
+settings.
+Increase distance
+of start delay .
+Usually this
+requires the
+sensors to be
+Parts of the marking contents
+adjusted. Optimize
+cannot be marked since the
+parameters so that
+product was not in the marking
+Incomplete the marking can be
+field. Usually the reason is that
+marking. This executed faster .
+the marking is not executed fast
+applies to all Reduce size of
+Incomplete marking, enough. It is also possible that
+individual marking so that it
+00002 W arning product movement too the start delay has been set too
+markings for can be executed
+fast short causing the marking to be
+which this faster . Select
+started too late. The start delay
+message is speed-optimized
+must be set so that in the
+displayed. font. If possible,
+moment of triggering no part of
+increase marking
+the marking is yet within the
+field by selecting a
+marking field.
+dif ferent objective.
+Check
+parameter/Product
+registration
+settings.
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 2 /28
+ID Error classes: Message Possible cause Effects Remedy
+In case this error
+occurs in released
+After the trigger it took more than
+OS does not send data Faulty versions it must be
+00003 W arning 10 ms before the OS sent
+after trigger (>10ms) marking. reported to the
+marking data.
+technical support
+group.
+In case this error
+occurs in released
+During the marking process a
+Delayed data from the Faulty versions it must be
+00004 W arning gap in the internal communication
+OS marking. reported to the
+between OS and DSP appeared.
+technical support
+group.
+Since the trigger
+signals are coming
+faster than they
+can be processed
+the marking time
+has to be reduced.
+If the marking time
+cannot be reduced
+any more the
+throughput has to
+be reduced. If you
+can preclude that
+there are too many
+regular trigger
+signals there might
+be mistriggers. If
+e.g. the marking
+The product
+takes 50 ms and
+T rigger queue overflow , a new that has
+there is definitely
+trigger had to be rejected. That released the
+each 100 ms a new
+means that the trigger signals are trigger is not
+product and thus a
+coming in faster than they can be marked. This
+00005 W arning T rigger lost new trigger then
+processed. The trigger queue is a applies to each
+the trigger signal is
+buf fer for trigger signals. If it is full product for
+interfered. In this
+and more signals are coming in which the
+case the blocking
+this warning is displayed. message is
+should be checked
+displayed.
+which usually
+should be 90 % of
+the minimum time
+between two trigger
+signals. In the
+example this would
+be 90 ms. This may
+also be caused by
+mistrigger or
+double triggers due
+to dirty product
+detector optics.
+Clean the lens of
+the product
+detector , and
+recalibrate it for
+your product.
+In case this error
+Internal error: A not initialized Parameters occurs in released
+Incorrect index step index step has been selected. are not used versions it must be
+00006 W arning
+selected The system uses the previously for marking as reported to the
+selected index step. previously set. technical support
+group.
+In case this error
+occurs in released
+This message does not occur in versions it must be
+00007 W arning Debug use only none
+released versions. reported to the
+technical support
+group.
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 3 /28
+ID Error classes: Message Possible cause Effects Remedy
+In case this error
+occurs in released
+This message does not occur in versions it must be
+00008 W arning Debug use only none
+released versions. reported to the
+technical support
+group.
+In case this error
+occurs in released
+versions it must be
+reported to the
+technical support
+group. This fault
+cannot be cleared
+directly . T urn of f the
+Laser Controller
+and the laser
+The system is
+Fatal internal error: A not marking system.
+stopped and
+00100 Fatal Error Critical error DSP initialized interrupt has been After a short
+must be
+called or similar . interval turn on the
+switched of f.
+Laser Controller
+and the laser
+marking system
+and confirm normal
+operation. Contact
+your local service
+representative or
+support team who
+will be able to
+provide assistance.
+In case this error
+The system is occurs in released
+Fatal internal error: Stack stopped and versions it must be
+00101 Fatal Error Stack error SP .
+overflow . must be reported to the
+switched of f. technical support
+group.
+Internal
+communication
+error on the main
+control board. In
+most cases this
+error indicates a
+Internal communication error version conflict.
+Possibly
+DSP received unknown between OS and DSP . In most Check your CMark
+00102 Error 2 incorrect
+command from OS cases this error indicates a version, and use a
+markings.
+version conflict. new SD-Card if
+necessary . Contact
+your local service
+representative or
+support team who
+will be able to
+provide assistance.
+In case this error
+occurs in released
+Possibly
+Fatal internal error: Internal versions it must be
+00103 Fatal Error T iming error DSP incorrect
+timing was not met. reported to the
+marking.
+technical support
+group.
+During one marking the OS
+Change the
+needed too much time to send
+Marking is not parameters so that
+00104 Error 2 OSdata transfer delayed new data. The marking is
+possible. the marking is
+aborted. See also warning
+carried out slower .
+W00004.
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 4 /28
+ID Error classes: Message Possible cause Effects Remedy
+Enlarge the start
+distance
+correspondingly ,
+The marking has been aborted usually by moving
+because the product has left the the sensors.
+marking field while marking was Optimize the
+not finished. Usually this is parameters so that
+caused by too slow marking. It is the marking can be
+The marking is
+also possible that the start carried out faster .
+Marking aborted, product not complete.
+00105 Error 2 distance is too small and the Reduce marking so
+movement too fast The system is
+marking is started too late. The that it can be
+stopped.
+start distance should always be marked faster .
+long enough so that no part of the Select a font which
+marking is in the marking field at has been speed
+the trigger moment. See also optimized. Enlarge
+W00002. the marking field by
+using a dif ferent
+objective if
+possible.
+Restart the system.
+Internal
+communication
+error on the main
+control board. In
+most cases this
+error indicates a
+version conflict.
+The OS has not been initialized Check your CMark
+COS repeatedly missed The system is
+00106 Error 1 correctly or the connection version, and use a
+to send data not operable.
+between OS and DSP is faulty . new SD-Card if
+necessary . If the
+error persists,
+contact your local
+service
+representative or
+support team who
+will be able to
+provide assistance.
+Check system
+configuration.
+Reset system. T ry
+to update to latest
+System boots software version.
+W rong configuration During system initialization a
+00107 Error 2 with error Contact your local
+detected wrong configuration was detected
+conditions. service
+representative or
+support team who
+will be able to
+provide assistance.
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 5 /28
+ID Error classes: Message Possible cause Effects Remedy
+Check laser status
+"Laser Ready". If it
+is inactive after
+turning the
+keyswitch there is
+no voltage supplied
+to the laser . The
+cause can be a
+broken cable, a
+Error while monitoring the laser defective relay or
+source: Laser ready status can power supply . If the
+Marking is not
+00200 Error 1 Laser not ready not be read back. This might be status is active the
+possible.
+caused by the source itself or by cable between
+wiring. laser and main
+control board might
+be defective.
+Check: Laser
+interface path:
+Chameleon, LIC,
+Umbilical, CPD/
+SPM, Laser
+source, Laser
+power supply
+Faulty power
+supply module or
+incorrect voltage
+setting. Check
+voltage, adjust
+laser voltage
+Error while monitoring the laser setting if necessary
+source: Laser status shows or exchange power
+Laser supply: voltage too Marking is not
+00201 Error 1 voltage issue. This might be supply module. If
+high or too low possible.
+caused by the source itself or by the voltage is OK
+wiring. check power
+contacts in the
+laser head. Ensure
+jumper on CI
+X33.2-6 is in place
+and making good
+contact.
+Insuf ficient cooling.
+Error while monitoring the laser
+Check cooling
+source: Laser status shows
+system. Check
+overtemperature condition. This Marking is not
+00202 Error 2 Laser overtemperature signal cable
+might be caused by the cooling possible.
+between main
+conditions. Wiring could also be a
+control board and
+cause.
+laser .
+Check system
+configuration.
+Reset system. T ry
+to update to latest
+Incorrect entry in system software version.
+Unknown laser beam Marking is not
+00203 Error 1 database; OS sends invalid laser Contact your local
+source possible.
+type ID service
+representative or
+support team who
+will be able to
+provide assistance.
+Laser source error .
+Check interface
+between control
+board and laser .
+Error while monitoring the laser
+Marking is not Check condition of
+00204 Error 2 General error source: Laser status shows a
+possible. laser source.
+general error condition.
+Check laser
+interface path:
+Chameleon, LIC,
+Laser Source
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 6 /28
+ID Error classes: Message Possible cause Effects Remedy
+The tube status
+indicates a back
+reflection into the
+tube, check laser
+tube and for
+Incomplete reflective material
+marking. Fatal under the focus
+Closed beam path, laser light is error condition. optics. Repower
+00209 Fatal Error Back reflection
+reflected back into the laser . The system is system and try to
+not able to mark again. If error
+mark. remains: Contact
+your local service
+representative or
+support team who
+will be able to
+provide assistance.
+Laser source error .
+Check interface
+between control
+Interrupted board and laser .
+Laser source monitoring showed
+Laser: subnormal marking, Check condition of
+0020A Error 1 that source detected a subnormal
+temperature incomplete laser source.
+temperature condition.
+marking. Check laser
+interface path:
+Chameleon, LIC,
+Laser Source
+Initial laser self- Repower laser
+stabilization process was Laser source monitoring showed Quality of first source by opening
+0020B Error 2 not successful. Quality of that source was not able to mark may be and closing the
+first marks may be stabilize itself during power up. insuf ficient. keyswitch. Discard
+insuf ficient. first product.
+The red laser
+emission LED is
+not functioning.
+The emission warning function of
+Please check and
+system is corrupted. Hardware
+Red laser emission LED Marking is not replace the red
+00210 Fatal Error error . The red laser emission LED
+defective possible. LED in the marking
+and/or the red LED at the keypad
+head. Also the
+is not functioning.
+keypad on the
+supply unit has to
+be checked.
+System would Check connection
+not power up path between laser
+Hardware error . The power for
+the laser after power supply and
+Defective element in the laser tube can not be
+0021 1 Fatal Error turning the laser source.
+laser supply circuit switched as expected by the
+keyswitch. Check switching
+system.
+Marking is not electronics
+possible. (CPD/SPM).
+Check laser
+interface board
+(LIC) or system
+configuration. If
+accidentally a
+wrong system is
+Systems is
+configured which
+booting with
+Hardware error . A wrong laser does not match to
+fatal error
+00212 Fatal Error W rong LIC detected interface board was detected hardware
+condition.
+during system initialization. configuration this
+Marking is not
+error would be
+possible
+generated. Contact
+your local service
+representative or
+support team who
+will be able to
+provide assistance.
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 7 /28
+ID Error classes: Message Possible cause Effects Remedy
+Check laser
+interface board
+(HIC) or system
+configuration. If
+accidentally a
+wrong system is
+Systems is
+configured which
+booting with
+Hardware error . A wrong head does not match to
+fatal error
+00213 Fatal Error W rong HIC detected interface board was detected hardware
+condition.
+during system initialization. configuration this
+Marking is not
+error would be
+possible
+generated. Contact
+your local service
+representative or
+support team who
+will be able to
+provide assistance.
+The tube status
+Incomplete
+shows it is active
+marking. Fatal
+while it should be
+In operation the monitoring of the error condition.
+00214 Fatal Error T ube monitoring error inactive. Check
+laser source detected an error . The system is
+harness to laser ,
+not able to
+hardware and laser
+mark.
+source.
+Improve cooling of
+the marking head.
+Decrease duty
+cycle of system.
+Marking head:
+The temperature of the marking Increase distance
+T emperature of marking Interrupted
+09000 Error 1 head assembly group has between markings
+head assembly group too markings
+exceeded the maximum value. if possible. Check
+high
+fan or blower
+operation. Improve
+external thermal
+conditions.
+The supply voltage
+of the marking
+head is too low .
+Possibly Check voltage
+incorrect supply at the
+Marking head: Supply The supply voltage of the
+09001 Error 1 marking. marking head, at
+voltage too low marking head is too low .
+Interrupted the power supply
+markings. terminal in the
+supply unit and at
+the marking head
+connector .
+Check X mirror .
+Check wiring in the
+Marking head: Due to an error the X mirror was Possibly marking head.
+09002 Error 2 Overpositioning of X brought to a position beyond the incorrect Check galvo
+mirror . admitted maximum area. marking. harness, galvo and
+marking head
+electronics
+Check Y mirror .
+Check wiring in the
+Marking head: Due to an error the Y mirror was Possibly marking head.
+09003 Error 2 Overpositioning of Y brought to a position beyond the incorrect Check galvo
+mirror . admitted maximum area. marking. harness, galvo and
+marking head
+electronics
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 8 /28
+ID Error classes: Message Possible cause Effects Remedy
+The current
+consumption of the
+X mirror is too high.
+Check X mirror .
+Possibly Check wiring in the
+incorrect marking head. Can
+Marking head: The current consumption of the X
+09004 Error 2 marking. be caused by over
+Overcurrent X mirror mirror is too high.
+Interrupted positioning.
+markings. Reduce jump
+speed marking
+parameter . Review
+and optimize mark
+set parameters.
+The current
+consumption of the
+Y mirror is too high.
+Check Y mirror .
+Check wiring in the
+Possibly marking head. Can
+Marking head: The current consumption of the Y
+09005 Error 2 incorrect be caused by
+Overcurrent Y mirror mirror is too high.
+marking. overpositioning.
+Reduce jump
+speed marking
+parameter . Review
+and optimize mark
+set parameters.
+While monitoring
+Incomplete the position of the
+The X mirror is not connected marking. Fatal mirror , mirror is not
+correctly to the marking head error condition. moving as
+09006 Fatal Error No X-Mirror connected
+electronics. A cable might be The system is expected. Check
+loose or broken. not able to galvo harness,
+mark. galvo and marking
+head electronics
+While monitoring
+Incomplete the position of the
+The Y mirror is not connected marking. Fatal mirror , mirror is not
+correctly to the marking head error condition. moving as
+09007 Fatal Error No Y -Mirror connected
+electronics. A cable might be The system is expected. Check
+loose or broken. not able to galvo harness,
+mark. galvo and marking
+head electronics
+Reduce size of
+marking. Select
+lens with higher
+Parts of the marking are Parts of the marking are not Possibly focal length.
+09008 W arning not within the marking within the marking field of the incorrect Reposition
+field of the marking head marking head. marking. template fields and
+make sure all items
+are within the
+marking field.
+An unknown tuning
+During initialization an unknown
+Selected tuning is System cannot for the marking
+09009 Fatal Error tuning for the marking head was
+missing or defective. be set up. head was selected
+detected.
+via web interface.
+Check connection
+between main
+control board and
+marking head.
+Marking head Possibly Check marking
+Faulty communication to marking
+09012 Error 2 communication error: incorrect head
+head
+Gaps in the data flow marking. communication
+path: Chameleon,
+HIC, Umbilical,
+Laser Head
+Harness, CP_Light
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 9 /28
+ID Error classes: Message Possible cause Effects Remedy
+Check connection
+between main
+control board and
+marking head.
+There was a wrong command to
+Marking head Marking Check marking
+the marking head detected which
+09016 W arning communication error: possibly head
+is not admitted in the current
+Inadmissible command incorrect. communication
+mode.
+path: Chameleon,
+HIC, Umbilical,
+Laser Head
+Harness, CP_Light
+In case this error
+There was protocol error
+occurs in released
+Marking head detected in marking head Marking
+versions it must be
+09018 W arning communication error: communication. This indicates an possibly
+reported to the
+Protocol error error in the communication to incorrect.
+technical support
+marking head.
+group.
+Check connection
+between main
+control board and
+marking head.
+The marking head cannot change
+Internal error: Cannot set Marking Check marking
+to control mode. This indicates an
+09021 Error 1 control mode of the possibly head
+error in the communication to
+marking head. incorrect.. communication
+marking head.
+path: Chameleon,
+HIC, Umbilical,
+Laser Head
+Harness, CP_Light
+Check connection
+between main
+control board and
+Internal error: Cannot set marking head.
+Internal error: Cannot set configuration mode of the Marking Check marking
+09022 Error 1 configuration mode of marking head. This indicates an possibly head
+the marking head error in the communication to incorrect.. communication
+marking head. path: Chameleon,
+HIC, Umbilical,
+Laser Head
+Harness, CP_Light
+Check connection
+between main
+control board and
+Internal error: Cannot set marking head.
+Internal error: Cannot set download mode of the marking Check marking
+Marking is not
+09023 Error 1 download mode of the head. This indicates an error in head
+possible.
+marking head the communication to marking communication
+head. path: Chameleon,
+HIC, Umbilical,
+Laser Head
+Harness, CP_Light
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 10 /28
+ID Error classes: Message Possible cause Effects Remedy
+No marking head
+connected. Faulty
+power supply of
+marking head.
+Faulty connection
+between main
+control board and
+the marking head.
+Faulty marking
+head control board.
+No communication with marking Check power
+No communication with head. This indicates an error in Marking not supply of marking
+09100 Error 2
+marking head the communication to marking possible. head. Check
+head. connection
+between main
+control board and
+the marking head.
+Check marking
+head
+communication
+path: Chameleon,
+HIC, Umbilical,
+Laser Head
+Harness, CP_Light
+The error flags on
+the marking head
+control board
+cannot be reset.
+This indicates an
+error in the
+communication
+between main
+control board and
+Internal error: Error the marking head.
+Internal error: Error status of the Marking is not
+09101 Error 1 status of the marking Check connection
+marking head cannot be reset possible.
+head cannot be reset between main
+control board and
+the marking head.
+Check marking
+head
+communication
+path: Chameleon,
+HIC, Umbilical,
+Laser Head
+Harness, CP_Light
+Check connection
+between main
+There have been errors on the control board and
+main control board while marking head.
+Interrupted receiving data from the marking Check marking
+Marking is not
+09102 Error 1 communication with head control board. Faulty head
+possible.
+marking head connection between main control communication
+board and marking head. Faulty path: Chameleon,
+marking head control board. HIC, Umbilical,
+Laser Head
+Harness, CP_Light
+Check connection
+between main
+control board and
+Internal error: Cannot set marking head.
+Internal error: Marking
+configuration mode of the Possibly Check marking
+head not in configuration
+09103 Error 1 marking head. This indicates an incorrect head
+mode, cannot executed
+error in the communication to marking. communication
+command.
+marking head. path: Chameleon,
+HIC, Umbilical,
+Laser Head
+Harness, CP_Light
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 1 1 /28
+ID Error classes: Message Possible cause Effects Remedy
+Check connection
+between main
+control board and
+The main control board receives marking head.
+permanently or temporarily no Check power
+data from the marking head supply of marking
+No data received from Marking is not
+09104 Error 1 because the connection to the head. Check
+the marking head possible.
+marking head has been marking head
+separated or the power supply of communication
+the marking head failed. path: Chameleon,
+HIC, Umbilical,
+Laser Head
+Harness, CP_Light.
+Check whether
+No data can be read Faulty connection to the EEPROM has been
+Marking is not
+10001 Fatal Error from the system EEPROM of the system inserted correctly .
+possible.
+database database. Check main control
+board.
+Several entries are missing in the Changes in Check system
+Backup of system system database. Therefore the system configuration and
+10002 Error 1
+database was loaded! backup of the system database database may correct if
+has been loaded. not be applied. necessary .
+In case of an
+error in the
+system
+database the
+Cannot write (all) to the backup file
+W rite error to backup system Check main control
+10003 Error 1 backup of the system cannot be
+database board.
+database. used. In that
+case the
+system is no
+longer
+operable.
+The new
+values cannot
+be applied. A
+restart of the
+Check the state of
+system might
+Cannot write to system the system
+10004 Error 1 Cannot write to system database fail. In that
+database database and save
+case the
+all data.
+system is no
+longer
+operable (see
+error 0001).
+The backup has
+not been generated
+The backup has not been at the previous
+The system
+Cannot read backup of generated at the previous start of start of the system
+10005 Fatal Error cannot be
+the system database the system or it has been or it has been
+started.
+deleted. deleted. Check
+memory space of
+the SD-Card.
+Shorten entries of
+variable length and
+By changing or adding an entry to retry changes. The
+Overflow of system the system database the Changes are following settings
+10006 Error 1
+database admissible size has been not applied. can have an
+exceeded. impact:
+SmartGraph,
+Configuration
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 12 /28
+ID Error classes: Message Possible cause Effects Remedy
+Please try to
+update CMark
+again using the
+web interface. If
+that fails a second
+Systems is
+During CMark update via the web time, contact your
+booting with
+CMark update failed. interface an error happened. If local service
+fatal error
+10007 Fatal Error Please try the update update was not Completely representative or
+condition.
+again finished before reboot this might support team who
+Marking is not
+happen. will be able to
+possible
+provide assistance.
+If updating via web
+interface would not
+work at all replace
+the SD card.
+System needs a reboot. This can Please reboot the
+A change requires Marking is not
+10008 Fatal Error happen during configuration (e.g. laser to apply your
+rebooting the laser possible.
+via web interface) changes.
+The file is
+supposed to be on
+the SD-Card as
+CI initialization failure, no A configuration file can not be
+The system is part of the CMark.
+10009 Fatal Error valid configuration file found during initialization of
+not operable. Reformat SD card
+available. system.
+with latest CMark.
+Check for latest
+CMark and update.
+Release the write
+System protection lock of
+settings can the SD-card.
+The write lock of the SD-card is not be Replace the SD-
+SD Card is locked /
+10010 Error 1 set. V ariable Data can not be modified, card with a new
+write-protected.
+applied to system. changes to spare part SD-card.
+database will Check main control
+not be applied board if problem
+remains.
+The Ethernet
+communication If the Ethernet
+might be communication has
+An unknown command has been
+V ersion conflict disturbed been disturbed,
+10101 Error 2 sent to the main control board via
+(command not executed) severely , the separate the
+the Ethernet interface.
+message connection and
+appears then connect again.
+repeatedly .
+An unknown command has been Check program
+10102 Error 2 Unknown command sent to the main control board via None which is sending
+the Ethernet interface. the command.
+Check program
+Key not found in system The database entry requested via
+10103 Error 2 None which is sending
+database Ethernet does not exist.
+the command.
+T ransmission error while
+transmitting a database object via
+Ethernet or version conflict
+Repeat transfer;
+10104 Error 2 Database write error between database object and None
+check version.
+OS. A database object
+transmitted via Ethernet cannot
+be inserted into the database.
+Database entry required for
+Command is Check the
+10105 Error 2 Database read error executing a command received
+not executed. database entries.
+via Ethernet is missing.
+T emplate information has been
+T emplate contains no requested via Ethernet. The Information is Check template
+10106 Error 2
+data corresponding template contains not sent. and save it.
+no data.
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 13 /28
+ID Error classes: Message Possible cause Effects Remedy
+T emplate information has been
+requested via Ethernet. The Information is Check template
+10107 Error 2 T emplate does not exist
+corresponding template does not not sent. and save it.
+exist in the application database.
+The variables requested via
+Data is not
+10108 Error 2 No variables in template Ethernet do not exist in the Check template.
+sent.
+template.
+The Ethernet
+communication
+might be
+V ia Ethernet a command with
+disturbed Correct the format
+10109 Error 2 Format is invalid missing or incorrectly formatted
+severely , the of the command.
+parameters has been sent.
+message
+appears
+repeatedly .
+The SD Card is full, not inserted Data cannot
+101 1 1 Error 2 Errors while saving Check SD-Card.
+correctly or defective. be saved.
+This database entry
+Delete the
+cannot be deleted since Other database entries depend The entry is
+101 13 Error 2 depending entries
+other entries depend on on this entry . not deleted.
+first.
+it
+The transmitted object
+Check versions
+cannot be saved to the The object is
+and make an
+101 14 Error 2 database. Please check V ersion conflict. not saved to
+update if
+whether your system the database.
+necessary .
+supports the object
+T oo many variables are
+used in the templates. The template Reduce number of
+Number of variables or number of
+101 15 Error 2 Please delete all cannot be variables or
+templates too high.
+templates you do not marked. templates.
+need
+Error while reading The SD Card on the main control Marking is not
+101 16 Error 2 Check SD-Card.
+directory board cannot be read. possible.
+Data for initialization Check the SD card
+Defective system database or The system
+cannot be read or use new card.
+10300 Fatal Error customer database. The SD Card cannot be
+completely from the Check the main
+is full or damaged. started.
+database control board.
+T o avoid the
+automatic
+The parameter
+adjustment of the
+set is adjusted
+settings you can
+The parameter set automatically
+modify the
+contains inadmissible to the system
+The application database belongs parameter set
+10301 Error 2 settings which are before
+to a dif ferent laser system. manually . If you
+automatically adjusted marking. This
+save the corrected
+before marking can af fect the
+parameter set to
+marking
+the database the
+quality .
+error message will
+no longer appear .
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 14 /28
+ID Error classes: Message Possible cause Effects Remedy
+Defective beam
+shutter . Improper
+marking head
+operation. Check
+beam shutter .
+Check galvo
+Marking is not operation. Check
+Shutter does not stay
+10302 Error 1 Defective beam shutter . possible or marking head
+open
+interrupted. electronics, Galvos,
+Galvo Cables,
+Umbilical, Laser
+head harness, HIC,
+marking head
+board, Main control
+board
+Defective beam
+shutter . Improper
+marking head
+operation. Check
+beam shutter .
+Check galvo
+Fatal error
+operation. Check
+Shutter does not stay condition. The
+10303 Fatal Error Defective beam shutter . marking head
+closed system has to
+electronics, Galvos,
+be restarted
+Galvo Cables,
+Umbilical, Laser
+head harness, HIC,
+marking head
+board, Main control
+board
+Interlock has been
+opened. Close the
+interlock to
+continue. Check
+wiring of customer
+Marking process The interlock was opened during Interrupted interface and
+10304 W arning
+interrupted by interlock marking operation. marking power switching
+electronics (e.g.
+CPD/SPM). Check
+default bridges
+(CPD/SPM X9.15,
+X9.17).
+Keyswitch has
+been opened.
+Close the
+keyswitch to
+continue. Check
+Interrupted keyswitch,
+Key switch has been The key switch was opened marking, keyswitch wiring,
+10305 W arning
+opened while marking during marking operation. incomplete customer interface
+marking wiring and external
+wiring of external
+keyswitch. Check
+default bridges
+(Chameleon X33.1
+to X33.8).
+Check for error
+conditions. Check
+Pilot laser default bridges on
+The pilot output stopped Error condition appeared while marking is customer interface
+10306 W arning
+due an error condition. pilot laser marking interrupted or (Chameleon
+stopped X29.1). Check
+external wiring.
+Check hardware.
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 15 /28
+ID Error classes: Message Possible cause Effects Remedy
+Check shutterlock
+circuit. Check
+Pilot laser default bridges on
+Marking process
+Shutterlock was opened while marking is customer interface
+10307 W arning interrupted by
+pilot laser marking interrupted or (CPD/SPM X9.14,
+shutterlock.
+stopped X9.16). Check
+external wiring.
+Check hardware.
+Check template
+and used
+The template selected for parameters,
+Marking is not
+10401 Error 2 T emplate invalid marking is defective or does not product registration
+possible.
+exist. and (if existing)
+logos. Select
+template again.
+Change the
+An attempt was made to mark the
+contents of the
+same value a second time for an
+External text: V alue can The marking is external text or
+10404 Error 2 external text on which the
+be marked only once not carried out. change the
+property "Mark Once (error)" is
+property "Mark
+toggled on.
+Once (error)".
+Fatal error Configuration error .
+While initializing the system a
+The selected trigger condition. The Select a dif ferent
+10406 Fatal Error wrong configuration was
+input does not exist system is not trigger input if
+detected.
+able to mark. possible.
+Check the beam
+shutter . Check the
+shutter cable.
+The beam shutter does The beam shutter got jammed or Marking is not Check the plug-in
+10407 Error 2
+not open is not identified. possible. connections on the
+board. Check
+galvo/marking head
+board operation.
+After a Check the beam
+marking the shutter . Check the
+next marking shutter cable.
+The beam shutter does The beam shutter got jammed or cannot be Check the plug-in
+10408 Error 1
+not close is not identified. started without connections on the
+confirmation of board. Check
+the error galvo/marking head
+message. board operation.
+System error during Internal error during preparation Marking is not
+10409 Error 2
+preparation of marking of marking. possible.
+When the database
+The automatic has been saved
+The parameter set of the active adjustment this message will
+template contains inadmissible af fects the no longer appear .
+The parameter set of the
+settings for the laser . The marking and Possibly the
+10410 W arning active template has been
+application database possibly will be taken settings of the
+adjusted to the system
+belongs to a dif ferent laser over when concerned
+system. saving the parameter set have
+database. to be modified
+manually .
+Change the
+For an external text the property
+W arning during contents of the
+"Mark Once (warning)" has been
+External text: V alue can marking. Same external text or
+1041 1 W arning set and it has been tried to mark
+only be marked once content is change the
+the external text with the same
+marked twice. property "Mark
+value twice.
+Once (warning)".
+A new database file
+The application database and its Marking is not
+10500 Error 1 Cannot load database. has to be written to
+backup cannot be loaded. possible.
+the SD-card
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 16 /28
+ID Error classes: Message Possible cause Effects Remedy
+Backup database has The application database is Modifications Please save the
+10501 Error 1
+been loaded. defective. are lost. database.
+Error during
+determination of
+the current
+template or its
+variables. It is likely
+Error during determination of the that the database
+current template or its variables. Marking is not does not contain
+10502 Message System Message
+Probably the database does not possible. any templates. If
+contain any templates. the database
+contains no
+template: create
+and add a new
+template and save
+the database.
+Saving the
+database it is
+automatically
+converted to the
+new format. Then
+The database format has the warning
+An older database has been
+10503 W arning changed. Please save None. message will no
+loaded by a new OS.
+system. longer be
+displayed. After
+conversion the
+database cannot
+be read by an older
+OS version.
+If the template
+marked last
+does not exist
+New templates have been added in the
+Save the database
+Not all previously used to the database and selected for database the
+after creating or
+10504 W arning templates have been marking. Then the system has first template
+importing new
+saved been booted without saving the of the
+templates.
+changed database. database is
+selected
+automatically
+for marking.
+The template
+marked last
+does not exist
+A new template has been added in the
+Save the database
+to the database and selected for database. The
+The template used last after creating or
+10505 W arning marking. Then the system has first template
+was not saved importing new
+been booted without saving the of the
+templates.
+changed database. database is
+selected
+automatically
+for marking.
+The value of
+the absolute
+operating
+Invalid value of absolute Check battery and
+The battery buf fering the SRAM hours
+10506 W arning operating hours in replace if
+is running down. corresponds to
+SRAM. necessary .
+the value of
+the last system
+start.
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 17 /28
+ID Error classes: Message Possible cause Effects Remedy
+Ensure SD-Card is
+inserted correctly .
+Check SD-Card, if
+The objective file does not exist necessary reinstall
+Error while reading the in the comp directory of the SD- The system is software on SD-
+10507 Fatal Error
+objective file card. The SD-card is not inserted not operable. Card. If error
+correctly . remains exchange
+SD-card and check
+main processor
+board.
+Ensure SD-Card is
+inserted correctly .
+Check SD-Card, if
+The objective file does not exist necessary reinstall
+Error while reading the in the comp directory of the SD- The system is software on SD-
+10508 Fatal Error
+laser file card. The SD-card is not inserted not operable. Card. If error
+correctly . remains exchange
+SD-card and check
+main processor
+board.
+Ensure SD-Card is
+inserted correctly .
+Check SD-Card, if
+The objective file does not exist necessary reinstall
+Error while reading the in the comp directory of the SD- The system is software on SD-
+10509 Fatal Error
+head file card. The SD-card is not inserted not operable. Card. If error
+correctly . remains exchange
+SD-card and check
+main processor
+board.
+Check SD-Card, if
+necessary reinstall
+The system
+software on SD-
+cannot work
+No FPGA image file The file fpgaimgX.h is missing on Card. If error
+10510 Fatal Error properly
+available! the SD-card. remains exchange
+without FPGA
+SD-card and check
+image file.
+main processor
+board.
+Check SD-Card, if
+necessary reinstall
+The system
+software on SD-
+cannot work
+No DSP program The file smartspX.sp is missing Card. If error
+1051 1 Fatal Error properly
+available! on the SD-card. remains exchange
+without SP
+SD-card and check
+program.
+main processor
+board.
+Modify the protocol
+settings on the PC
+The AllprintBasic command string
+The control via with AllprintBasic
+in the OS database
+AllprintBasic: Protocol AllprintBasic and import again
+10512 Error 1 ("Config","Input") contains a
+configuration error (serial port) via W eb Interface
+configuration error for the serial
+does not work. into the OS
+protocol.
+database. Then
+reboot the system.
+Modify the protocol
+settings on the PC
+The AllprintBasic command string
+The control via with AllprintBasic
+AllprintBasic: in the AOS database
+AllprintBasic and import again
+10513 Error 1 Configuration error of the ("Config","Input") contains a
+(serial port) via W eb Interface
+serial interface configuration error for the serial
+does not work. into the OS
+interface.
+database. Then
+reboot the system.
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 18 /28
+ID Error classes: Message Possible cause Effects Remedy
+Marking is no Check connection
+longer possible between main
+A program has to be transmitted since the control board and
+Marking head download from the SD-Card to the marking marking head marking head.
+10514 Fatal Error
+error head. During this download an has no Check marking
+error occurred. program for head board. Check
+mirror main control board.
+positioning. Reboot.
+If running an old
+software on a new
+system this error
+might happen.
+The required file does not exist Check for latest
+Marking head download: on the SD-Card . Faulty System cannot CMark and update.
+10515 Fatal Error
+File is missing connection between main control be set up. A bad connection
+board and marking head. to the marking
+head could also
+cause this. Check
+for latest version of
+CMark.
+Check connection
+between main
+Faulty connection to the marking
+The marking head is not Marking is not control board and
+10516 Error 1 head. No marking head
+connected possible. the marking head.
+connected.
+Connect marking
+head.
+If you want to mark
+the marking head
+must be activated
+The marking head is deactivated and the entry in the
+According to the system
+by configuration in the system Marking is not system database
+10517 W arning database there is no
+database. Thus the marking head possible. has to be
+marking head connected
+is not addressed. reconfigured.
+Please contact the
+technical support
+group.
+Copy a suitable
+database to the
+system or create a
+new suitable
+database using the
+Smart Graph
+The parameter set
+of fline. Add a
+<name> does not A database has been copied to
+Marking is not parameter set
+10518 Fatal Error correspond to the laser the system which does not
+possible. having the same
+type. Please replace this correspond to the laser type.
+name and transfer
+entry in the database.
+it to the laser . In
+this way all
+parameter sets of
+the laser database
+need to be
+replaced.
+Please select the
+appropriate lens
+installed for this
+A lens and laser head mismatch system. If you
+Please select a lens
+has been detected. Please select Marking is not receive this error
+10519 Error 1 corresponding to the
+the appropriate lens installed for possible. and the head/lens
+marking head
+this system. configuration has
+not changed, it may
+indicate a marking
+head failure.
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 19 /28
+ID Error classes: Message Possible cause Effects Remedy
+A lens and laser
+head mismatch has
+been detected.
+Check system
+configuration by
+selecting the
+appropriate lens
+A marking head has A lens and laser head mismatch
+matching to this
+been identified which is has been detected. Please select The system is
+10520 Fatal Error system. If you
+not admitted for this laser the appropriate lens installed for not operable.
+receive this error
+type this system.
+and the head or
+laser configuration
+has not changed, it
+may indicate a
+hardware failure.
+Check connection
+to marking head.
+The configured
+safety circuit does
+not match the
+circuit attached.
+Check the system
+configuration.
+Check wiring
+During system initialization the Fatal error
+The detected safety between safety
+system detected a wrong safety condition. The
+10521 Fatal Error circuit does not match controller and main
+controller compared to system can not
+the configured setup. control board.
+configuration. mark.
+Contact your local
+service
+representative or
+support team who
+will be able to
+provide assistance
+if error remains.
+The AllprintBasic
+command string in
+the OS database
+("Config","Input")
+contains a syntax
+The AllprintBasic command string The control via
+error . T est the
+AllprintBasic: Syntax in the AOS database AllprintBasic
+10550 Error 1 command string on
+error ("Config","Input") contains a (serial port)
+the PC with
+syntax error . does not work.
+AllprintBasic,
+correct it and
+import again via
+W eb Interface into
+the OS database.
+The variable to be
+modified in the
+AllprintBasic
+command string
+does not exist in
+the template.
+Check the
+The control via corresponding
+The template does not The variable to be modified in the
+AllprintBasic template or the
+10551 Error 1 contain the requested AllprintBasic command string
+(serial port) AllprintBasic
+variable does not exist in the template.
+does not work. command string
+and modify if
+necessary . If the
+command string
+has been changed
+the main control
+board must be
+rebooted.
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 20 /28
+ID Error classes: Message Possible cause Effects Remedy
+This is a regular message, no
+error . The AllprintBasic command
+10552 W arning AllprintBasic - MsgBox None. None.
+string triggered the output of this
+message.
+This AllprintBasic
+version does not
+support the
+command. Check
+The control via
+Illegal command in command string
+This AllprintBasic version does AllprintBasic
+10553 Error 1 AllprintBasic command and change if
+not support the command. (serial port)
+string necessary . If the
+does not work.
+string has been
+changed you have
+to reboot the main
+control board.
+Depending on
+Depending on the
+The AllprintBasic Depending on the AllprintBasic the
+10554 Error 1 AllprintBasic
+command program. AllprintBasic
+program.
+program.
+Depending on
+Depending on the
+The AllprintBasic Depending on the AllprintBasic the
+10555 W arning AllprintBasic
+command program. AllprintBasic
+program.
+program.
+The external template selection Create and select a
+Marking is not
+10601 Error 2 No template list selected has failed because no template template list using
+possible.
+list has been selected. the Smart Graph.
+The external template selection
+The chosen template has failed because the selected
+Marking is not
+10602 Error 2 number cannot be template number cannot be Check template list.
+possible.
+assigned to any template assigned to any template in the
+template list.
+Internal error or
+database is too
+large. If the
+message is no
+longer displayed
+after rebooting,
+there might be an
+internal error .
+Out of memory . Cannot Internal error or database is too Marking is not
+10701 Error 2 Inform the technical
+create database object large. possible.
+support group. If
+the message is still
+displayed after
+rebooting all
+elements not
+needed should be
+deleted from the
+database.
+Check software
+Format error while
+V ersion conflict between Marking is not version carry out
+10702 Error 2 creating a database
+database object and OS. possible. an update if
+object
+necessary .
+Restart the system.
+If the error persists,
+contact your local
+The DSP has not been initialized
+DSP does not send The system is service
+10800 Fatal Error correctly or the connection to the
+telegrams not operable. representative or
+DSP is faulty .
+support team who
+will be able to
+provide assistance.
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 21 /28
+ID Error classes: Message Possible cause Effects Remedy
+Restart the system.
+If the error persists,
+contact your local
+The DSP has not been initialized
+The system is service
+1081 1 Fatal Error DSP buf fer overflow correctly or the connection to the
+not operable. representative or
+DSP is faulty .
+support team who
+will be able to
+provide assistance.
+Restart the system.
+If the error persists,
+contact your local
+The DSP has not been initialized
+The system is service
+10812 W arning Invalid DSP telegram correctly or the connection to the
+not operable. representative or
+DSP is faulty .
+support team who
+will be able to
+provide assistance.
+Connect encoder
+or deselect
+1) In the product registration an encoder in the
+encoder was selected although product
+no encoder is connected. 2) In Marking is not registration. Check
+10813 Error 2 No encoder connected
+the product registration an possible. wiring of shaft
+encoder was selected which has encoder , settings in
+been removed during operation. product registration
+and hardware
+configuration
+Connect trigger
+detector or
+1) In the product registration deselect external
+external trigger was selected trigger in the
+although no trigger detector is product
+No trigger detector Marking is not
+10814 Error 2 connected. 2) In the product registration. Check
+connected possible.
+registration a trigger detector was wiring of photo eye,
+selected which has been settings in product
+removed during operation. registration and
+hardware
+configuration
+The marking has
+been aborted to
+prevent burning
+because the
+The marking has been aborted to
+Incomplete marking, conveyor belt is
+prevent burning because the Incomplete
+10899 W arning product movement too moving too slow or
+conveyor belt is moving too slow marking
+slow has stopped.
+or has stopped.
+Please check the
+conveyor . Check
+leakage protection
+configuration.
+The output Check if power is
+signals of the supplied to the
+customer customer interface
+The customer interface The power supply of the interface are on main control
+10904 W arning (CI) is not supplied with customer interface is not invalid. Input board. Check
+24 V by the customer available or switched of f. signals at the jumpers (X19, X20)
+customer and supply terminal
+interface are (Chameleon X28.7
+ignored. & X28.8).
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 22 /28
+ID Error classes: Message Possible cause Effects Remedy
+Remove external
+Interrupted error or connect the
+marking, corresponding CI
+incomplete terminal to 24 V .
+The customer interface
+Detection of external error or marking, Check jumper
+10907 Error 1 (CI) indicates an external
+incorrect wiring of the CI terminal. marking is not bridges
+error
+possible until (Chameleon
+error is X29.1), wiring of
+confirmed customer interface
+and external wiring.
+Connect ST OP
+input to 24 V .
+Check jumper
+The ST OP input is supplied
+External ST OP from the Marking is not bridges
+10908 W arning constantly with 0 V so that the
+CI possible. (Chameleon
+ST AR T input is not evaluated.
+X22.7), wiring of
+customer interface
+and external wiring.
+Check software
+version carry out
+The system
+The file is supposed to be on the an update if
+10913 Fatal Error File is missing cannot be
+SD-card. possible. If error
+started.
+remains check also
+main control board.
+Complete or
+Entry <name> is missing Marking is not
+10926 Error 2 Defective database. exchange
+in the database. possible.
+database.
+Check ambient
+In operation the critical
+Incomplete conditions. Provide
+temperature threshold in supply
+The temperature of the marking, cooling to the
+14200 Error 2 unit was reached. The
+supply unit is too high. interrupted supply unit and
+temperature conditions are too
+marking check if filters are
+high.
+clogged.
+Check ambient
+If temperature
+In operation the temperature conditions. Provide
+condition is not
+Supply unit temperature warning level in supply unit was cooling to the
+14201 W arning improved the
+limit is approaching. reached. The temperature supply unit and
+system will
+conditions are too high. check if filters are
+stop marking.
+clogged.
+Check ambient
+If temperature
+In operation the temperature conditions. Provide
+The marking head condition is not
+warning level in marking head cooling to the
+14202 W arning temperature limit is improved the
+was reached. The temperature marking head and
+approaching. system will
+conditions are too high. check if filters are
+stop marking.
+clogged.
+Check ambient
+In operation the temperature If temperature
+conditions. Provide
+The marking head warning level for the environment condition is not
+cooling to the
+14203 W arning environment temperature of the marking head was improved the
+marking head and
+limit is approaching. reached. The temperature system will
+check if filters are
+conditions are too high. stop marking.
+clogged.
+If temperature Check ambient
+In operation the temperature
+The beam source condition is not conditions. Provide
+warning level for beam source
+14204 W arning temperature limit is improved the cooling to the laser
+was reached. The temperature
+approaching. system will source and check if
+conditions are too high.
+stop marking. filters are clogged.
+Create or transmit
+The template does not exist in Marking is not
+19201 Error 2 T emplate does not exist the corresponding
+the database. possible.
+template.
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 23 /28
+ID Error classes: Message Possible cause Effects Remedy
+Check template
+and used
+The template selected for parameters,
+Marking is not
+19202 Error 2 Faulty template marking is defective or does not product registration
+possible.
+exist. and (if existing)
+logos. Select
+template again.
+Assign an existing
+The template parameter set to
+Parameter set does not The parameter set required by a concerned the template or add
+19203 Error 2
+exist template is missing. cannot be the required
+marked. parameter set to
+the database.
+Assign an existing
+The template product registration
+Product registration does The product registration required concerned to the template or
+19204 Error 2
+not exist by a template is missing. cannot be add the required
+marked. product registration
+to the database.
+Add the missing
+index level to the
+parameter set or
+At least one index level The template uses an index level The template
+assign an existing
+19205 Error 2 does not exist in the which does not exist in the cannot be
+index level to all
+parameter set parameter set. marked.
+elements of the
+concerned
+template.
+The direct Check the Ethernet
+marking connection
+The direct marking Faulty connection between PC
+19210 Error 2 cannot (or only between PC and
+cannot be carried out and main control board.
+incompletely) laser marking
+be carried out. system.
+Check template
+A marking can sequence
+not be configuration in
+The template sequence
+The selected template sequence executed database. Reset
+19301 Error 2 does not contain any
+does not contain any template because no database, if error
+template
+template is remains reset or
+selected update system
+software
+Check template
+A marking can sequence
+not be configuration in
+A template in the
+The selected template in the executed database. Reset
+19302 Error 2 template sequence does
+sequence does not exist because no database, if error
+not exist
+template is remains reset or
+selected update system
+software
+Check template
+A marking can sequence
+not be configuration in
+The heads of templates The configured templates in the
+executed database. Reset
+19303 Error 2 of a template sequence sequence use dif ferent marking
+because no database, if error
+must be identical head configurations
+template is remains reset or
+selected update system
+software
+Check template
+A marking can sequence
+The product registrations not be configuration in
+The configured templates in the
+of templates of a executed database. Reset
+19304 Error 2 sequence use dif ferent product
+template sequence must because no database, if error
+registrations
+be identical template is remains reset or
+selected update system
+software
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 24 /28
+ID Error classes: Message Possible cause Effects Remedy
+Check template
+sequence
+configuration in
+database. Create
+The product registration selected Marking of
+Product registration does requested product
+19305 Error 2 by the active template does not active template
+not exist registration. Reset
+exist in the database is not possible
+database, if error
+remains reset or
+update system
+software
+Marking of Configure a proper
+Defective template in the While initializing the template
+19306 Error 2 template is not template sequence:
+template sequence sequence an error occurred
+possible Review sequence
+Set the time. If this
+The clock had to be The clock did stop and has The marked happens every time
+19309 Error 1 restarted. Please set the already been restarted. The time is not after switch-on
+time! battery voltage might be too low . correct. exchange the
+battery .
+Use Smart Graph
+with corresponding
+ActiveControl.dll or
+install the software
+expecting the
+Laser cannot connect to The version of the No connection version of the
+ActiveControl with ActiveControl.dll installed with the between Smart ActiveControl.dll to
+19310 W arning
+version %d. V ersion %d Smart Graph cannot be Graph and the laser . Check
+expected. connected to the laser . laser . software versions.
+If wrong
+SmartGraph
+version is
+connected this
+error is generated.
+Check the fume
+extraction. If no
+fume extraction is
+While monitoring the fume
+Marking is not connected check
+19502 Error 1 Suction control error extraction an control error
+possible the default bridges
+happened
+(Chameleon X21.1)
+and the main
+control board.
+Check the filter of
+the fume
+extraction. Check
+In a short time the filter condition
+frame the and replace if
+While monitoring the fume
+system will necessary . If no
+19503 W arning The filter is full extraction the filter status became
+generate an fume extraction is
+active
+error and stops connected check
+marking the default bridges
+(Chameleon X21.3)
+and the main
+control board.
+Check the filter of
+the fume
+extraction. Check
+Interrupted the filter condition
+markings, and replace if
+While monitoring the fume
+incomplete necessary . If no
+19504 Error 2 The filter is full extraction the filter status is
+markings, fume extraction is
+active
+marking is not connected check
+possible the default bridges
+(Chameleon X21.3)
+and the main
+control board.
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 25 /28
+ID Error classes: Message Possible cause Effects Remedy
+Indication that door
+circuit is opened.
+This warning will be
+generated by
+default if F ASS
+Marking can
+Safety circuit: The door The door at the safety circuit is option is equipped
+19505 W arning not be carried
+is open open and system is in
+out
+shutterlock open
+status. Check
+default bridges
+(CPD/SPM X9.14,
+X9.16).
+Marking can Close the
+The front panel
+19506 W arning The front panel keyswitch is open not be carried keyswitch to
+keyswitch is open
+out continue.
+Close the
+keyswitch to
+continue. Check
+Marking can
+The customer interface jumper bridge
+19507 W arning The external keyswitch is open not be carried
+(CI) keyswitch is open (Chameleon X33.1
+out
+to X33.8), wiring of
+customer interface
+and external wiring.
+If Stop was not
+pressed, check
+Interrupted
+wiring to the front
+The front panel stop The front panel stop button is marking,
+19508 W arning panel, the front
+button was pressed open incomplete
+panel keypad and
+marking
+the main control
+board.
+The configured
+safety circuit does
+not match the
+circuit attached.
+Check equipped
+hardware and
+system
+Safety connector has a The configured safety circuit does The system is configuration.
+19509 Error 1
+signal on unused line not match the circuit attached. not operable. Check internal
+wiring and
+hardware. Contact
+your local service
+representative or
+support team who
+will be able to
+provide assistance.
+Close the
+emergency stop
+circuit. If this error
+appears
+None. This is
+unattended check
+default for K40
+Safety circuit: The emergency stop circuit is safety circuit wiring
+1951 1 Error 1 safety
+Emergency stop. opened. and switches. This
+controller
+error should only
+option.
+appear on mature
+systems with K40
+safety controller
+option.
+This warning is
+The hexadecimal number can be generated to
+Additional information: Depends on
+19512 W arning used to get detailed provide more
+0X%X warning.
+troubleshooting information. detailed
+information.
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 26 /28
+ID Error classes: Message Possible cause Effects Remedy
+In case this error
+occurs in released
+Emergency stop is detected by
+Additional versions it must be
+19512 W arning DSP and COS does not switch
+information:0x00000000 reported to the
+system state
+technical support
+group.
+In case this error
+occurs in released
+Keyswitch is open and COS
+Additional versions it must be
+19512 W arning doesn’t go in systemstate
+information:0x00000001 reported to the
+keyswitch open inside 1s
+technical support
+group.
+In case this error
+occurs in released
+Interlock is open and COS
+Additional versions it must be
+19512 W arning doesn’t go in system state
+information:0x00000002 reported to the
+interlock open inside 1s
+technical support
+group.
+Check shutter
+Laser relay should be on, but it is
+Additional wiring. Check
+19512 W arning of f over 20s Maybe shutter state
+information:0x00000003 marking head
+is not OK
+connection path.
+Check power
+Additional Laser relay should be of f, but it is switching board
+19512 W arning
+information:0x00000004 on over 20s (e.g.
+CPD/SPM)relays.
+Check power
+Additional Laser power supply could not be switching board
+19512 W arning
+information:0x00000005 enabled. (e.g. CPD/SPM)
+relays.
+DSP send in info number the
+actual and next vector . Through
+Additional
+19512 W arning the information , it is possible to
+information:0x0030XXXX
+say between which vectors
+crashes.
+Additional
+19512 W arning Unknown systemstate transition.
+information:0x0040XXXX
+Additional Zero division in
+19512 W arning
+information:0x02000000 TEL_MOTF_CONFIG_SPEC
+Additional W rong configuration in
+19512 W arning
+information:0x02000001 TEL_MOTF_CONFIG_SPEC
+Additional Zero division in
+19512 W arning
+information:0x02000002 TEL_MOTF_CONFIG
+Additional W rong configuration in
+19512 W arning
+information:0x02000003 TEL_MOTF_CONFIG
+W rong configuration in
+Additional TEL_SET_MARKING_FIELD:
+19512 W arning
+information:0x02000004 configuration between layer start
+and layer and is not allowed
+W rong configuration in
+Additional
+19512 W arning TEL_SET_HEAD_EXTENSIONS:
+information:0x02000005
+IMP value is bigger 100%
+wrong configuration in
+Additional
+19512 W arning TEL_LA YER_ST AR T_MODE:
+information:0x02000006
+unknown mode
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 27 /28
+ID Error classes: Message Possible cause Effects Remedy
+wrong configuration in
+Additional
+19512 W arning TEL_DELA Y : negative value for
+information:0x02000007
+delay
+wrong configuration in
+Additional
+19512 W arning TEL_P ARAMETER: VJump or
+information:0x02000008
+VMark is bigger as 45000mm/s
+wrong configuration
+Additional
+19512 W arning in_TEL_LAS_CONFIG: unknown
+information:0x02000009
+laser ID
+wrong configuration
+Additional
+19512 W arning in_TEL_HEAD_CONFIG:
+information:0x0200000A
+unknown head ID
+Check hardware
+Additional wrong HIC detected, Hardware
+19512 W arning and system
+information:0x0200000B says a NO HIC is connected
+configuration.
+wrong HIC detected, Hardware Check hardware
+Additional
+19512 W arning says a HIC-CP10 / HIC-CP is and system
+information:0x0200000C
+connected configuration.
+Check hardware
+Additional wrong HIC detected, Hardware
+19512 W arning and system
+information:0x0200000D says a HIC-Raylase is connected
+configuration.
+W rong system configuration.
+During initialization the system Check hardware
+Additional
+19512 W arning detected a wrong system and system
+information:0x0200000E
+configuration between supply unit configuration.
+and laser head.
+Ensure SD-Card is
+inserted correctly .
+Check SD-Card, if
+The lens file does not exist in the necessary reinstall
+Failed to load lens comp directory of the SD-card. The system is software on SD-
+19514 Error 1
+compensation file. The SD-card is not inserted not operable. Card. If error
+correctly . remains exchange
+SD-card and check
+main processor
+board.
+It was not possible
+to reset the safety
+circuit. The reset is
+done during
+initialization. Check
+reset input for
+safety circuit and
+wiring of safety
+circuit. Reset
+Fatal error switch must be
+The reset of the safety circuit was condition open during
+Safety circuit reset not possible during system during system initialization. Use
+19515 Fatal Error
+failure. initialization. System is not able initialization. push button switch
+to release safety circuit Marking is not only for reset.
+possible Check default
+bridges and power
+switching board
+(e.g. CPD/SPM)
+and connection to
+main control board.
+Ensure jumper on
+X9.22-24 is in
+place and making
+good contact.
+
+8/28/2019 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/T raining_Article/Error-List-3140-3340-3640-1935350352/p 28 /28
+ID Error classes: Message Possible cause Effects Remedy
+Indication that
+emergency stop
+circuit is opened.
+This warning will be
+generated by
+default if F ASS
+option is equipped
+and system is in
+interlock open
+Safety circuit: The emergency stop circuit is status. Nothing to
+19516 W arning None
+Emergency stop opened. check. Normal
+operation. If
+Emergency Stop
+warning occurs
+unintentionally then
+check wiring to
+doors/contacts.
+Check default
+bridges (CPD/SPM
+X9.15, X9.17).
+In case this error
+occurs in released
+Communication error to Marking
+An unknown command was versions it must be
+59017 W arning the marking head: possibly
+received by the marking head. reported to the
+unknown command incorrect.
+technical support
+group.

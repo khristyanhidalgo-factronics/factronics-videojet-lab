@@ -1,0 +1,1781 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\75671-AD Manual Videojet 7810 EN.pdf
+# cifrado=False bloques=77 caracteres=76713
+
+Index: AD [EN], March 2021
+AL-75671
+Translation of the original instructions
+Operating Instructions
+Videojet 7810
+
+Distributors worldwide
+www.videojet.com
+Int'l Fax: 630-616-3629 The Netherlands, The United Kingdom
+Fax (USA): 1-800-582-1343 INT'L: Canada, France, Germany, Ireland, Japan, Spain, Singapore,
+Phone (USA): 1-800-843-3610 Offices - USA: Atlanta, Chicago, Los Angeles, Philadelphia
+60191-1073 USA
+Wood Dale, IL
+Videojet Technologies Inc.
+1500 Mittel Boulevard
+mission of Videojet is strictly prohibited.
+proprietary information owned by Videojet. Any unauthorized copying, use or disclosure of it without prior per-
+All rights reserved. This document is the property of Videojet Technologies Inc. and contains confidential and
+Copyright 2021, Videojet Technologies Inc. (herein referred to as Videojet)
+
+03/21 - Index: AD [EN] Videojet 7810 / Table of contents iii
+5.1 Operation of the Laser System .................................................................... 31
+5 Operating the Laser System ........................................................................ 31
+4.8 Working Distance and Marking Field ........................................................... 29
+4.7 Technical Data ............................................................................................ 26
+4.6 The Structure of the Laser System .............................................................. 26
+4.5 The Laser Parameters ................................................................................. 25
+4.4 The Marking of the Product Surface ............................................................ 25
+4.3 The Marking Head ....................................................................................... 25
+4.2 The Laser Beam Source ............................................................................. 24
+4.1 Function Principle of a Vector-Scanning Laser System .............................. 24
+4 Description of the Laser System ................................................................. 24
+3.9.2 Final Shutdown ............................................................................... 22
+3.9.1 Temporary Shutdown ...................................................................... 22
+3.9 Shutdown .................................................................................................... 22
+3.8 Definition of the IP Address ......................................................................... 22
+3.7 Interfaces of the Laser System .................................................................... 22
+3.6 Fume Extractor ............................................................................................ 21
+3.5 Cooling ........................................................................................................ 21
+3.4 Installation Conditions ................................................................................. 20
+3.3 Unpacking ................................................................................................... 20
+3.2 Transport and Storage ................................................................................ 19
+3.1 Installation and Start-Up .............................................................................. 19
+3 Installation ..................................................................................................... 19
+2.12 Warning and Information Labels ................................................................. 17
+2.11 Decomposition Products ............................................................................. 16
+2.10 Electrical Safety ........................................................................................... 15
+2.9 Fire and Explosion Hazard .......................................................................... 15
+2.8 Noise Hazard ............................................................................................... 14
+2.7 Adjustment/Modification of the Marking Field .............................................. 14
+2.6 Dangers to Eyes and Skin ........................................................................... 13
+2.5 Safety Devices and Warning Lights ............................................................ 11
+2.4 Maintenance and Service ............................................................................ 11
+2.3.1 Marking of Highly Reflective Material .............................................. 10
+2.3 Intended Use ................................................................................................. 9
+2.2 Laser Classes ................................................................................................ 7
+2.1 Symbols Used ............................................................................................... 7
+2 Safety Instructions ......................................................................................... 7
+1 Preface ............................................................................................................. 5
+Table of contents
+
+03/21 - Index: AD [EN] Videojet 7810 / Table of contents iv
+Index .............................................................................................................. 76
+8.4 Drawings ..................................................................................................... 74
+8.3.4 Safety Circuit Variant 2 ................................................................... 72
+8.3.3 Without Safety Circuit ...................................................................... 71
+8.3.2 Fume Extractor/Encoder/Trigger ..................................................... 70
+8.3.1 Laser Control/Job Selection ............................................................ 69
+8.3 Wiring Examples ......................................................................................... 69
+8.2.8 Assignment of Connector X27 Laser Control .................................. 68
+8.2.7 Assignment of Connector X30 External Job Selection .................... 67
+8.2.6 Assignment of Connector X25 Encoder/Product Detector .............. 65
+8.2.5 Assignment of Connector X33 Internal Signals ............................... 64
+8.2.4 Assignment of Connector X22 Laser Control .................................. 62
+8.2.3 Assignment of Connector X29 Laser Control .................................. 61
+8.2.2 Assignment of Connector X21 Fume Extractor ............................... 60
+X28) ................................................................................................. 58
+8.2.1 Power Supply Connector for the Customer Interface (Connector
+8.2 Assignment of the Customer Interface ........................................................ 56
+8.1 Safety Circuit of the Laser System .............................................................. 50
+8 Appendix ....................................................................................................... 50
+7.2 Malfunctions Descriptions ........................................................................... 47
+7.1 Notes ........................................................................................................... 47
+7 Malfunctions ................................................................................................. 47
+6.4 Protocols for Maintenance, Repair and Replacement ................................. 39
+6.3.3 Mounting the Laser Scan Lens ....................................................... 39
+6.3.2 Cleaning the Laser Scan Lens ........................................................ 38
+6.3.1 Disassembly of the Laser Scan Lens .............................................. 38
+6.3 Cleaning the Laser Scan Lens .................................................................... 37
+6.2 Maintenance Plan ........................................................................................ 36
+6.1 General Notes Concerning Maintenance .................................................... 36
+6 Maintenance .................................................................................................. 36
+5.3.2 Switch-Off ........................................................................................ 34
+5.3.1 Switch-On ........................................................................................ 33
+5.3 Switch-On/Off of the Laser System ............................................................. 33
+5.2 Elements on the Supply Unit ....................................................................... 32
+
+03/21 - Index: AD [EN] Videojet 7810 / 1 Preface 5
+Website: www.videojet.com
+International Fax: +1 630 616 3629
+Fax (USA): 1 800 582 1343
+International: +1 630 860 7300
+Phone (USA): 1 800 843 3610
+Wood Dale IL 60191-1073, USA
+1500 Mittel Boulevard
+Videojet Technologies Inc.
+jet Technologies Inc. distributor or subsidiary for assistance.
+within the United States). Outside the U.S., customers should contact their Video-
+...please contact Videojet Technologies Inc. at 1-800-843-3610 (for all customers
+If you need help...
+Strictly follow the instructions!
+contact Videojet Technologies Inc. directly.
+Make sure that you have understood all notes. In case of any questions please
+cessible for the operator!
+The printed safety instructions must be stored near the laser system, easily ac-
+NOTICE
+Before starting your work carefully read the chapter »Safety Instructions«!
+technical progress without notice.
+This operation manual is subject to technical modifications for improvement or
+tended for the trained operation personnel of the laser system.
+enclosed with every laser system on a data carrier. This operation manual is in-
+functions and maintenance of the laser system. The operation manual is always
+...contains all information required for the safe operation, remedy of minor mal-
+This manual...
+1 Preface
+
+03/21 - Index: AD [EN] Videojet 7810 / 1 Preface 6
+structions!
+Thoroughly read this operation manual and strictly follow the safety in-
+to objects!
+This might cause severe burns of the eyes and the skin as well as damage
+released!
+With open delivery system dangerous laser radiation of class 4 might be
+Caution Laser Radiation!
+
+03/21 - Index: AD [EN] Videojet 7810 / 2 Safety Instructions 7
+flected radiation can be hazardous. There may also be a risk of fire.
+Laser radiation of class 4 is dangerous to the eye and the skin. Also diffusely re-
+reflex, turning the head) are not suppressed. Do not stare into the beam.
+Laser radiation of class 2 is safe for the eye if natural defense mechanisms (blink
+cessible in normal operation.
+sers are classified as class 1 systems if the hazardous laser radiation is not ac-
+even in case of long-term intentional viewing. Also encapsulated high-power la-
+Laser radiation of class 1 is safe for the eye and does not result in any damage
+tem.
+Laser classes 1, 2 and 4 according to EN 60825-1 are relevant for this laser sys-
+2.2 Laser Classes
+the skin, together with damage to property.
+the instructions could result in minor or major injuries to the eyes (blindness) or to
+uation. Please comply exactly with the safety instructions! Failure to comply with
+refers to the emission of laser radiation and therefore to a possibly dangerous sit-
+ DANGER LASER RADIATION
+nify a dangerous or harmful situation.
+refers to handling tips and other particularly useful information. This does not sig-
+NOTICE
+or minor injury. May also be used to warn of damage to property.
+refers to a possibly dangerous situation. If it is not avoided, it could result in slight
+ CAUTION
+or severe injury.
+refers to a possibly dangerous situation. If it is not avoided, it could result in death
+ WARNING
+result in death or severe (crippling) injury.
+refers to an immediately impending danger. If the danger is not avoided, it could
+ DANGER
+2.1 Symbols Used
+2 Safety Instructions
+
+03/21 - Index: AD [EN] Videojet 7810 / 2 Safety Instructions 8
+This laser radiation can damage the eye if it stares into the beam.
+Optionally, a pilot laser can be installed emitting visible laser radiation of class 2.
+which is extremely dangerous for the eye and dangerous for the skin.
+The laser itself is classified as class 4. It produces invisible (ultraviolet) radiation
+4
+The Nd:YVO laser - hereinafter called laser - is operated in pulsed operation.
+The Laser Source
+ Normal operation does not include service, maintenance nor repairs.
+1.
+laser lens.
+The beam path must always be closed, also if there is no product in front of the
+ DANGER LASER RADIATION
+The shielding is not included in the scope of delivery!
+NOTICE
+does not sufficiently attenuate the radiation of the pilot laser.
+the complete system with shielding is to be classified as class 2 if the shielding
+If a pilot laser is installed please note that this is a laser of class 2 and therefore
+The laser beam exits at the marking head through the focusing lens (arrow).
+vents emerging of laser radiation or laser beam reflections.
+ation and no additional protection is required for operation. The shielding pre-
+1
+complete, closed laser system acts as a class 1 laser system in normal oper-
+If the beam outlet including the object to be marked is shielded appropriately, the
+normal operation .
+1
+to the beam outlet the closed laser system acts as a class 1 laser system in
+The laser itself is classified as class 4 laser system according to EN 60825-1. Up
+The Complete Laser System
+
+03/21 - Index: AD [EN] Videojet 7810 / 2 Safety Instructions 9
+measures by installing e.g. smoke or fire detectors, extinguishers, or similar!
+on flammable materials (e.g. paper) might cause fires. Take suitable safety
+Always ensure appropriate shielding of the laser beam! Errors during marking
+• Never expose flammable materials to laser radiation!
+This might result in severe burns of eyes or skin.
+• Never expose human beings or animals to laser radiation!
+Examples for Improper Use and the Resulting Risks
+The laser system must only be installed in production sites with restricted access.
+proper use represents a danger to persons or objects!
+The radiation produced by the laser system is of high energy and therefore im-
+ DANGER LASER RADIATION
+ces(dates, batch printing, serial numbers, etc.).
+fied thereby. These systems are mainly applied for marking of product surfa-
+The surfaces are locally heated by intensive class 4 laser radiation and are modi-
+The laser system must only be used for the treatment of material surfaces .
+ty regulations safety goggles must be worn.
+2.3 Intended Use
+ In this case the fiber laser is switched off via the software. Due to the laser safe-
+a.
+laser radiation.
+a
+Also in this case you must wear laser safety goggles for protection against fiber
+The pilot laser can be used for simulation or adjustment without the fiber laser.
+ WARNING
+new classification and labeling of the laser system.
+use that person or organization performing the modification is responsible for a
+with this standard leads to a change of its performance data and/or its intended
+If a modification by the user to a laser system previously classified in accordance
+EN 60825, part 1, »Radiation safety of laser systems«, section 4.1.1 says:
+... with modifications!
+ CAUTION
+nance and Service«.
+ate safety measures we offer special training seminars, see also section »Mainte-
+working in the laser area against excessive radiation! For information on appropri-
+In that case appropriate measures have to be taken in order to protect people
+the complete laser system is set to class 4.
+As soon as the closed shielding or the housing of the laser are opened anywhere
+ DANGER LASER RADIATION
+
+03/21 - Index: AD [EN] Videojet 7810 / 2 Safety Instructions 10
+the laser system off and on again and observe the above mentioned notes.
+If the laser system has switched to fatal error mode, a reset is required: Switch
+mum power the material cannot be marked using this laser.
+power until the marking result is satisfying. If no marking is visible at maxi-
+• When setting the laser power start with the maximum value and reduce the
+field.
+field. Position the product so that the marking is in the edge of the marking
+• When marking reflecting material try not to mark in the center of the marking
+paper.
+flecting material. Use a weakly reflecting material for testing, e.g. laminated
+• Make sure that the working distance is set correctly before marking any re-
+Observe the following when marking highly reflective materials:
+age of the system.
+ly if the working distance was not set correctly this may lead to irreversible dam-
+back into the laser. In this case the system switches to fatal error mode. Especial-
+When marking highly reflective material there might be a reflection of radiation
+2.3.1 Marking of Highly Reflective Material
+In this case a new risk assessment is required.
+garded as »manufacturer«.
+tion and labeling of the laser system. The person or organization is then re-
+or organization performing the modification is responsible for a new classifica-
+leads to a change of its performance data and/or its intended use that person
+If a modification made by the user to a previously classified laser system
+ing system are forbidden and result in loss of warranty!
+• For safety reasons arbitrary modifications or changes to the laser mark-
+Make sure that the laser area is free of explosive materials or vapors!
+• Danger of explosion!
+to be opaque for the human eye.
+Some materials are easily penetrated by the laser beam, although they seem
+• Never expose unknown materials to laser radiation!
+of Highly Reflective Material [ } 10] ".
+even greater dangers - as the original laser beam. See also section " Marking
+The reflected laser beam may cause the same dangers - in individual cases
+• Never expose reflecting surfaces to laser radiation!
+
+03/21 - Index: AD [EN] Videojet 7810 / 2 Safety Instructions 11
+tions to safety devices nor warning lamps (see section " Laser Classes [ } 7] ")!
+which shall prevent damage to people or objects. There must not be any altera-
+The complete laser system includes various safety devices and warning lights
+Lights
+2.5 Safety Devices and Warning
+Ask for free information material!
+operative association (see above).
+son is trained as laser safety officer. This training is accepted by the trade co-
+In addition to the knowledge gained during the training for technicians the per-
+• Combined training:
+service tasks at the laser system safely and professionally without assistance.
+The trainee gains the knowledge required to perform all maintenance and
+• Training for technicians:
+tenance personnel we offer special training seminars.
+tasks without assistance and to ensure highest safety for the operating and main-
+In order to facilitate safe performance of all necessary maintenance and service
+person if the system is operated in class 4 for maintenance purposes.
+safety officer and inform the trade cooperative association in writing about this
+Have a person responsible for the safety of the laser system trained as laser
+and the Trade Supervisory Office before initial operation.
+Give notice of the laser system to the responsible trade cooperative association
+NOTICE
+make sure to comply with your local regulations.
+be given notice of class 3R, 3B or 4 laser systems before initial operation. Please
+authority responsible for occupational safety (Trade Supervisory Office) have to
+Laser Radiation« says that the responsible trade cooperative association and the
+system has to be operated in class 4 . In Germany, the DGUV Regulation 11 »
+jet Technologies Inc. or one of their representatives. During these works the laser
+The service tasks are exclusively to be carried out by service personnel of Video-
+cially trained personnel.
+The maintenance tasks described hereinafter should only be carried out by espe-
+2.4 Maintenance and Service
+
+03/21 - Index: AD [EN] Videojet 7810 / 2 Safety Instructions 12
+ways visible.
+When installing the laser make sure that at least one of the warning lights is al-
+NOTICE
+lights sion displays (system-specific).
+Additional warning Additional lights can be connected as external emis-
+system cannot start the laser.
+of these lights is monitored. In case of malfunction the
+laser radiation of class 4 is possible. The functioning
+"Laser emission" and on the marking unit light up when the emission of
+Red lights The red lights on the control panel of the supply unit
+Warning Lights
+2 can be emitted.
+state. In that case no laser radiation higher than class
+It is possible to continue using the pilot laser in this
+ted.
+closed. Thus no laser radiation of class 4 can be emit-
+( Interlock) ply module is deactivated and the beam shutter is
+Safety interlock If the safety interlock is opened, the laser power sup-
+diation of class 2 is still possible.
+If a pilot laser is used, the emission of visible laser ra-
+prevents the emission of laser radiation of class 4.
+Beam shutter The beam shutter is located within the laser head and
+withdrawn and available to authorized personnel only!
+by unauthorized people. Make sure that the key is
+Key switch The key switch prevents operation of the laser system
+Safety Devices
+
+03/21 - Index: AD [EN] Videojet 7810 / 2 Safety Instructions 13
+with your clothing.
+exposure of your skin to the laser radiation. Avoid the laser beam to get in contact
+Therefore protect your skin by wearing adequate protective clothing. Avoid any
+burn and skin cancer.
+etrates the skin several millimeters. Thus it can cause reddening of the skin, sun-
+es can also occur after some time. Short wave UV-A light (315 nm - 380 nm) pen-
+can penetrate the skin deeply and damage the skin cells and nuclei. The damag-
+Depending on the radiation intensity or focusing of the laser beam the radiation
+Effects on the skin
+in focus 2 1.5 x 10 4 x 10
+5 5
+at the beam outlet 2 0.6 3
+W/mm
+2
+density mJ/cm
+2
+W max. average power max. energy density
+The following values can be reached (no specification):
+The pulse peak power can reach up to 16 kW.
+energy is 180 µJ.
+ The pulse duration can be between 5 ns and 35 ns and the maximum pulse
+• designed for continuous wave as well as for pulse operation .
+Videojet 7810 : 2 W
+er:
+• designed for the power range of the laser. Values of maximum average pow-
+4
+tection against radiation of a Nd:YVO laser!
+2
+Safety goggles for other lasers, e.g. CO lasers, do not provide adequate pro-
+Careful with confusions!
+label of the laser system.
+4
+• designed for the wavelength range of the Nd:YVO laser of 355 nm. See ID
+diffusely scattered laser radiation. Suitable safety goggles are:
+Suitable safety goggles provide protection against direct, specularly reflected or
+Never look directly into the laser beam!
+sers with open laser housing and/or open beam delivery system!
+ser radiation while carrying out maintenance, adjustment or service work on la-
+People within the area of the laser must wear suitable safety goggles against la-
+ DANGER LASER RADIATION
+versible corneal opacity and cataracts.
+In case of higher radiation intensity it can cause reversible corneal opacity, irre-
+the conjunctiva (photoconjunctivitis) as well as cataract (clouding of the eye lens).
+nm) of low intensity can cause inflammation of the cornea (photokeratitis) or of
+Laser radiation in the invisible, short wave UV-A range (wavelength 315 nm - 380
+Effects on the eye
+is not visible for the human eye.
+The laser system produces class 4 laser radiation. The ultraviolet laser radiation
+2.6 Dangers to Eyes and Skin
+
+03/21 - Index: AD [EN] Videojet 7810 / 2 Safety Instructions 14
+Protect your ears and wear a suitable hearing protection.
+NOTICE
+During the marking process high-frequency noises are produced.
+2.8 Noise Hazard
+age and problems!
+marking field, will assume the full responsibility for any consequential dam-
+We explicitly point out that the person who will fulfil a modification of the
+by a user authorized for the corresponding user level.
+has been activated in the software). The password can be changed subsequently
+A password is required for changing the marking field (if the password protection
+sive atmospheres.
+Appropriate safety measures must be taken if the laser is to be operated in explo-
+pheres within the area of the laser beam.
+Fire and explosion hazard if there are flammable materials or explosive atmos-
+ WARNING
+plete laser system is set to class 4 (see section " Laser class [ } 7] ").
+If, as a result of the modification, the laser beam becomes accessible the com-
+ DANGER LASER RADIATION
+stroyed.
+nents or parts. Thus, surfaces exposed to irradiation can be damaged or de-
+the laser beam can possibly be directed to the shielding or onto other compo-
+Via the software the marking field of the laser can be modified in such a way that
+Marking Field
+2.7 Adjustment/Modification of the
+tasks, e.g. working with machines.
+ces due to glare. This must be kept in mind when carrying out safety-related
+The bright laser light may cause startle reflexes and temporary visual disturban-
+are not suppressed when unintentionally looking into the beam.
+It is safe for the eye if natural defense mechanisms (blink reflex, turning the head)
+This laser radiation may cause damage to the eye when staring into the beam.
+length range of 600 nm to 700 nm. The laser power is < 1 mW.
+If a pilot laser is installed it emits visible laser radiation of class2 in the wave-
+
+03/21 - Index: AD [EN] Videojet 7810 / 2 Safety Instructions 15
+0100-200:2006-06 (protection class I).
+grounding labeled with the grounding symbol according to DIN VDE
+For electrical safety the laser system is equipped with protective
+ly be performed by specially trained personnel!
+All works at the open laser housing, especially at electrical components, must on-
+observed!
+Make sure that rules and regulations for works on alive components are always
+During works at the open laser housing alive components are accessible.
+ DANGER
+gy.
+The laser system was designed in accordance with the general rules of technolo-
+2.10 Electrical Safety
+sions.
+a container to intensive invisible laser radiation might easily cause fires or explo-
+flammable or explosive solvents or cleaning agents! Unintended exposure of
+Make sure that the working area of the laser system is free from containers with
+easily be inflamed by direct or reflected laser radiation.
+impregnated fire retardantly, wooden boards or similar flammable materials can
+Paper (circuit diagrams, leaflets, posters on the walls, etc.), curtains which are not
+before starting the works!
+open beam delivery system, make sure that fire protection measures were taken
+while performing maintenance and service work at the open laser housing and/or
+The high output power of a class 4 laser can inflame various materials. Therefore,
+ WARNING
+2.9 Fire and Explosion Hazard
+
+03/21 - Index: AD [EN] Videojet 7810 / 2 Safety Instructions 16
+extractors as accessories.
+elements of the beam delivery system by dust particles. We offer different fume
+A fume extractor also prevents contamination and gradual destruction of optical
+Protect yourself and your colleagues against hazardous decomposition products!
+the safety instructions of the operating instructions must be observed.
+radiation is responsible for meeting the local codes and regulations. Additionally,
+The company operating the system for treatment of material surfaces using laser
+atmosphere.
+place, i.e. the fume extraction system must lead the exhaust air outside into the
+ruled out. This can result in the prohibition of the air recirculation to the work-
+Marking those materials the formation of carcinogenic substances cannot be
+late) or different tool steels, e.g. with chromium additions.
+and LDPE (polyethylene), PAN (polyacrylonitrile), PBT (polybutylene terephtha-
+ABS (acrylonitrile butadiene styrene), SAN (styrene acrylonitril copolymer), HDPE
+This can be the case marking different plastics, e.g. POM (polyoxymethylene),
+the air recirculation to the workplace.
+ther, detailed requirements regarding the performance of the fume extractor or
+for air purification at work must be observed. Those regulations can result in fur-
+When treating materials with laser radiation the national and relevant regulations
+composition products are removed from where they are produced.
+special dust and activated charcoal filters must be installed to ensure that the de-
+A fume extractor according to the respective requirements which is equipped with
+the respective materials.
+include hazardous decomposition products depending on type and composition of
+Through vaporization of materials fine dust and vapors are produced which might
+which are dangerous to health!
+When treating materials with laser radiation decomposition products are produced
+ WARNING
+2.11 Decomposition Products
+
+03/21 - Index: AD [EN] Videojet 7810 / 2 Safety Instructions 17
+ing unit (next to the supply line)
+on the back of the supply unit and on the mark-
+on the interface unit
+on the marking head (front)
+Label/Symbol Position
+Labels
+2.12 Warning and Information
+
+03/21 - Index: AD [EN] Videojet 7810 / 2 Safety Instructions 18
+on the supply unit
+on the fans
+on the fuse insert
+on the cover inside the supply unit
+Label/Symbol Position
+
+03/21 - Index: AD [EN] Videojet 7810 / 3 Installation 19
+Wear safety shoes!
+Do not use the umbilical to carry the laser system!
+supply unit is not bent!
+Please make sure that the supply line ("umbilical") connecting marking unit and
+Switch off the laser system before transport and disconnect mains connection!
+ CAUTION
+Transport
+storage please contact Videojet Technologies Inc..
+tions, etc.) on the laser system. In case of questions concerning transport and
+tronic and optical components. Please avoid any mechanical stress (shock, vibra-
+The laser system is a precision-made instrument and includes numerous elec-
+3.2 Transport and Storage
+misuse of equipment, incorrect operation or negligence.
+Videojet Technologies Inc. does not accept responsibility for any damage due to
+tor, cooling, etc.).
+operation of laser systems and their components (beam protection, fume extrac-
+ser system, especially for meeting the local codes and regulations regarding the
+The company operating the laser system is responsible for the safe use of the la-
+NOTICE
+In case of questions please contact Videojet Technologies Inc..
+lation.
+tions" and in the documents you received upon order handling - prior to instal-
+• Please provide all connections - as described in section "Installation Condi-
+• Proceed as described in section " Unpacking [ } 20] ".
+tion such that the system can be installed:
+In order to facilitate quick and easy start-up please prepare the place of installa-
+ogies Inc. or one of their representatives only.
+perience. Therefore it should be accomplished by personnel of Videojet Technol-
+Installation and start-up of the laser system requires extensive knowledge and ex-
+3.1 Installation and Start-Up
+and the Trade Supervisory Office before initial operation.
+Give notice of the laser system to the responsible trade cooperative association
+NOTICE
+3 Installation
+
+03/21 - Index: AD [EN] Videojet 7810 / 3 Installation 20
+found in the terminal diagrams you have received upon order handling.
+Information on the type, number and reference values of the connections can be
+The laser system requires a mains socket with a protective earthing connection.
+Connections
+received upon order handling.
+mation can be found in the installation plan or the dimension and data sheets you
+For systems manufactured according to special customer requirements this infor-
+chapter "Appendix".
+The standard dimensions of the laser system can be found in the drawings in the
+Space Required
+When installing the system the regulations of EN 62368-1 must be observed.
+no injuries can be caused by the installed supply line.
+marking unit is not designed for continuous alternating bending. Make sure that
+Please consider upon installation that the supply line between supply unit and
+tem.
+etc.) since this reduces the marking quality and can result in damaging the sys-
+The laser system must not be subject to any mechanical stress (shock, vibrations,
+ CAUTION
+3.4 Installation Conditions
+Separate packaging material for recycling.
+Protect the environment!
+stallation.
+5.Protect the laser system and all components from dust and humidity until in-
+stallation.
+4.Transport the laser system and the components to the intended place of in-
+ble.
+material and note damage on the inside and outside. Take pictures, if possi-
+gies Inc. or their representative immediately in writing. Keep the packaging
+In case of damage please inform the forwarding agent and Videojet Technolo-
+3.Check all parts for damage during transport.
+2.Remove the individually packed components.
+1.Open the packaging and remove the filling material.
+3.3 Unpacking
+midity must be between 10 % to 95 %.
+midity. The storage temperature must be between -20 °C and +50 °C. The air hu-
+Store the laser system in a horizontal position and protected against dust and hu-
+Storage
+
+03/21 - Index: AD [EN] Videojet 7810 / 3 Installation 21
+the fume extractor.
+plete delivery please find further information in the enclosed operation manual of
+We offer fume extractors as accessories. If a fume extractor is part of the com-
+there are no air leaks.
+which gradually destroy optical components of the laser system. Make sure that
+rectly at the place of the formation to prevent the accumulation of dust particles
+The fume extractor is to be installed such that marking particles are sucked off di-
+extractor must be installed.
+In order to remove marking residues which might be dangerous to health a fume
+3.6 Fume Extractor
+there is sufficient air exchange at the installation site to ensure heat dissipation.
+Make sure that the cooling air can be sucked in and blown out freely and that
+ply sufficient cooling.
+The laser system is cooled by air. The internal cooling system is designed to sup-
+3.5 Cooling
+face unit.
+For proper mounting of the marking unit there is a T-slot at the bottom of the inter-
+Mounting
+The sealing IP21 is only applicable if the supply unit is installed horizontally.
+Make sure that there is sufficient air supply (see also section "Cooling").
+The venting slots of the supply unit and of the marking unit must not be covered.
+Make sure that there is no condensed water in the system.
+brought from a cold to a warm environment.
+To avoid condensation wait one hour before starting the system if the system was
+NOTICE
+Air humidity: 0 - 90 %, not condensing
+Temperature range: 15 - 40 °C
+Ambient Conditions
+that the adequate power sockets are in range.
+The power connection cable of the laser system is about 2 m long, make sure
+changed.
+Check the cable regularly for damages. If the cable is damaged it must be ex-
+Only the delivered power connection cable must be used!
+ WARNING
+
+03/21 - Index: AD [EN] Videojet 7810 / 3 Installation 22
+2.Disconnect the machine from the electric power supply.
+1.Carry out all work listed in section "Temporary Shutdown".
+al), the following work is to be carried out:
+If the laser marking machine is shut down permanently (e.g. for selling or dispos-
+on these parts.
+Ensure that all live parts are switched off and that work can be carried out safely
+ WARNING
+3.9.2 Final Shutdown
+4.Clean the laser scan lens (see section »Cleaning the Laser Scan Lens).
+(key switch).
+3.Secure the laser system against unauthorized startup by removing the key
+the Laser System«).
+2.Switch the laser system off after the data backup, (see chapter »Operation of
+tailed description can be found in the manual of the marking software.
+1.Save the data on the computer before switching the laser system off. A de-
+day), the following work is to be carried out:
+If the laser system is shut down temporarily (e.g. for the duration of a works holi-
+3.9.1 Temporary Shutdown
+3.9 Shutdown
+A different IP address can be configured via the software.
+Subnet mask: 255.255.255.0
+Standard IP: 192.168.1.1
+When the laser system is delivered the following IP address is set:
+3.8 Definition of the IP Address
+be shielded.
+Note: All cables connected to the system must
+received upon order handling.
+er interface can be found in the data sheets you
+The customer-specific assignment of the custom-
+can be found in chapter "Appendix".
+Customer interface The general assignment of the customer interface
+software.
+Network interface Connection of a PC for controlling via the marking
+3.7 Interfaces of the Laser System
+
+03/21 - Index: AD [EN] Videojet 7810 / 3 Installation 23
+raw materials.
+Please dispose of the components of the laser system separated for recycling of
+ronmentally compatible. Observe all applicable legal and local regulations.
+Dispose of the components of the laser system in a manner that is safe and envi-
+In case of disposal
+age [ } 19] ".
+Package the machine according to the instructions in section " Transport and Stor‐
+In case of selling and transport
+
+03/21 - Index: AD [EN] Videojet 7810 / 4 Description of the Laser System 24
+up to 2 W.
+changed to an ultraviolet laser with a wavelength of 355 nm and a power range of
+4
+odymium. Using a frequency tripling the base wave of the Nd:YVO laser is
+The beam generation is based on an Yttrium orthovanadate crystal doted with ne-
+4.2 The Laser Beam Source
+lens (5). Generally the marking is produced at the focus of the lens (6).
+The deflected laser beam is focussed onto the product surface (7) by a laser scan
+ler card in the supply unit (1).
+The calculation of vectors and the control of the laser is performed by the control-
+produces a marking on the product, the laser »writes« on the product surface.
+The lines are divided into vectors (X and Y coordinates). The line up of vectors
+deflect it such that it passes over the lines of the opened template on the product.
+The expanded beam reaches the marking head (4) where two movable mirrors
+two-lens telescope (3).
+visible laser beam with small diameter. The laser beam is expanded by means of
+The laser (2) working in pulsed or continuous operation produces an infrared in-
+Scanning Laser System
+4.1 Function Principle of a Vector-
+4 Description of the Laser System
+
+03/21 - Index: AD [EN] Videojet 7810 / 4 Description of the Laser System 25
+which shall be marked. In case of questions please contact us.
+ence, because the parameters highly depend on the application and the material
+Determining the correct parameters requires profound knowledge and experi-
+ieve the best possible marking quality.
+rameters have to be determined and adjusted for each application in order to ach-
+Parameters are used to adapt the laser system to different materials. These pa-
+4.5 The Laser Parameters
+off and the product is not marked.
+When the laser beam jumps from one stroke to the next (2) the laser is switched
+tors.
+into vector strokes (1). Each vector stroke is again subdivided into smaller vec-
+The symbols and characters which shall be marked on the product are subdivided
+most dye layer.
+layer of the material, which causes a color change or a vaporization of the top-
+The laser beam is focussed onto the product surface and heats up the topmost
+diation on the product material.
+The marking of the product surface is performed by the effect of intense laser ra-
+Surface
+4.4 The Marking of the Product
+to the marking head are defined as displayed in the following figure:
+translates or rotates the axes of the coordinate system. X and Y axes in relation
+position of the marking head. A translation or rotation of the marking head also
+The X and Y axes of the coordinate system of the marking field are defined by the
+beam vertically and horizontally according to the current template.
+Two movable mirrors are located inside the marking head. They deflect the laser
+4.3 The Marking Head
+
+03/21 - Index: AD [EN] Videojet 7810 / 4 Description of the Laser System 26
+Beam divergence mrad < 2.8
+Pulse frequency kHz 10 - 100
+Pulse width ns < 25
+Max. pulse energy mJ (kHz) 0.1 (20)
+Operating mode pulsed
+Laser class 4
+Wavelength nm 355
+4
+Laser type Nd:YVO laser
+Unit Videojet 7810
+4.7 Technical Data
+is controlled via the marking software on a PC.
+ing unit comprises the interface unit (2) and the marking head (3). The supply unit
+The laser system consists of the supply unit (1) and the marking unit. The mark-
+System
+4.6 The Structure of the Laser
+switch width. The larger the Q-switch width the smaller the laser power.
+The laser power can be modified via parameter »Marking intensity« or via the Q-
+NOTICE
+on the parameters please refer to the manual of the marking software.
+ter sets can be generated and altered using the software. For detailed information
+The parameters for individual materials are combined in parameter sets. Parame-
+
+03/21 - Index: AD [EN] Videojet 7810 / 4 Description of the Laser System 27
+Wavelength nm 630 - 670
+Laser power mW < 1
+Laser class 2
+Option: Pilot laser
+Interfaces Network interfaces
+software under Windows
+• browser-enabled device with TCS+
+• CLARiTY Laser Controller
+• TU430/TU440 Touch Display
+Graph software under Windows
+Control • Windows-compatible PC with Smart
+line
+Min. bending radius of supply mm 140
+supply unit
+Max. distance marking unit - m 4
+Cooling internal air-cooling
+on demand for additional charge)
+Fonts any standard font (special characters
+parameters
+Line width depending on the material and the laser
+(depending on the installed optics)
+Focus diameter (min.) µm 7
+• SS10 TY/SS7 TY 100, 160, 214, 511
+Marking heads:
+Focal length of focussing lens mm
+Characters/Second 700
+a
+Speed of production line m/s 0 - 10
+Marking speed mm/s 1 - 6000
+a
+• Marking unit IP 20
+• Supply unit IP 21
+Sealing
+• Marking unit 48
+• Supply unit 20
+Weight (typical) kg
+Dimensions of supply unit mm 545 x 436 x 133
+Rel. humidity % 10 - 90; non-condensing
+(typical, depending on operation)
+Ambient temperature °C 15 - 40
+Mains frequency Hz 50 - 60
+Supply voltage VAC 100 to 240 (autorange); 1-phase
+Max. power consumption VA 750
+Max. laser power W 2.2
+Unit Videojet 7810
+
+03/21 - Index: AD [EN] Videojet 7810 / 4 Description of the Laser System 28
+data is subject to change without notice.
+Due to Videojet Technologies Inc.'s policy of continuous improvement, technical
+guideline. These are no specifications!
+values. These values highly depend on the material and may only be taken as a
+ Any statements referring to marked characters or actual markings are typical
+a.
+
+03/21 - Index: AD [EN] Videojet 7810 / 4 Description of the Laser System 29
+max. height (B) 75.7 118.0 156.9 374.6
+max. width (A) 63.6 118.0 156.9 374.6
+Working distance (wd) 193 227 303 650
+(D34) (D32) (D53) (D41)
+Focal length f
+Laser scan lens: 103 160 214 511
+Marking Head Raylase SS10 TY (all values in mm)
+The actual marking field depends on the configuration of the system.
+NOTICE
+Field
+4.8 Working Distance and Marking
+divergence of approx. 10° and operated in continuous wave mode.
+correspond to those of the laser of 355 nm, except for the laser of 800 nm with a
+The values of pulse width and pulse frequency as well as the beam divergence
+1 mW is emitted.
+the range of 532 nm, 800 nm and 1064 nm at a max. power of 1 mW, 5 mW and
+Additionally to the UV laser light of 355 nm it is possible that residual radiation in
+NOTICE
+
+03/21 - Index: AD [EN] Videojet 7810 / 4 Description of the Laser System 30
+max. height (B) 75.7 118.0 156.9 374.6
+max. width (A) 65.1 110.6 156.9 374.6
+Working distance (wd) 209.5 253 316 668
+(D34) (D32) (D53) (D41)
+Focal length f
+Laser scan lens: 103 160 214 511
+Marking Head Raylase SS7 TY (all values in mm)
+
+03/21 - Index: AD [EN] Videojet 7810 / 5 Operating the Laser System 31
+laser systems. The active system is controlled via TCS+.
+Using a web browser you can connect to one or several
+It permits you to easily create, edit, select and mark jobs.
+under Windows.
+TCS+ Software The TCS+ software runs on a browser-enabled device
+required.
+For creating and editing of marking jobs CLARiSOFT is
+lect and mark templates.
+CLARiTY Using the CLARiTY Laser Controller you can easily se-
+plates.
+It permits you to easily create, edit, select and mark tem-
+diplayed and controlled on the touch screen.
+TU430/TU440 The TCS+ software runs on the laser system and can be
+ated templates directly to the supply unit for marking.
+Using the Smart Graph software you can transfer the cre-
+fonts, create and edit laser parameters, etc.
+ser system, create complex layouts, import logos, change
+puter under Windows. It permits you to configure the la-
+Smart Graph-Software The Smart Graph software runs on your personal com-
+The laser system can be operated via:
+the marking process.
+your premises there are several ways to generate a marking template and start
+The laser system is built up modularly. Depending on the laser system installed in
+5.1 Operation of the Laser System
+5 Operating the Laser System
+
+03/21 - Index: AD [EN] Videojet 7810 / 5 Operating the Laser System 32
+head lights up.
+Simultaneously the red LED on the marking
+source.
+« and the power is applied to the laser
+L2 Emission -red- is on when the key switch is in position »I
+L1 Beam shutter open -red- is on when the shutter is open.
+LED status indicators
+STOP stopped.
+S4 Push button With »STOP« a marking process can be
+observed.
+Make sure the safety instructions are
+Laser radiation is emitted!
+START plate can be marked.
+S3 Push button With »START« the currently selected tem-
+thorized operation!
+sition »0«) to protect the system from unau-
+Remove the key switch if switched off (po-
+Note:
+can be started.
+source (position »I«). The marking process
+S2 Key switch applies the power supply for the laser beam
+ration the main power switch must be used.
+from the power supply. For complete sepa-
+The system is not separated completely
+Attention:
+tronics off.
+the laser beam source an the control elec-
+If the supply unit is on this button switches
+POWER/STANDBY
+S1 Push button switches the supply unit on.
+No. Type Function
+5.2 Elements on the Supply Unit
+
+03/21 - Index: AD [EN] Videojet 7810 / 5 Operating the Laser System 33
+3. Make sure that the key switch is in the vertical position »0«.
+puts (Galvanically Separated)).
+switch on the fume extractor by using a signal (see Inputs and Out-
+2. Switch on the fume extractor or use the possibility to let the system
+1. Make sure that the safety instructions are observed.
+5.3.1 Switch-On
+System
+5.3 Switch-On/Off of the Laser
+I9 Socket and fuse insert Mains cable connection and two fuses (T8A)
+off.
+S5 Main power switch switches the mains of the laser system on and
+No. Type Function
+Backview of the supply unit
+• of the marking process.
+and
+• during initialization of the laser system
+They display the progress and the status
+L4 System -green- This system indicator consists of five LEDs.
+LED system indicators
+L3 Error -yellow- flashes in case of malfunction.
+No. Type Function
+
+03/21 - Index: AD [EN] Videojet 7810 / 5 Operating the Laser System 34
+3. Press push button »POWER/STANDBY« (S1).
+STANDBY« (S1) is on.
+The white LED on the push button »POWER/
+off.
+unit and the red LED on the marking unit are
+The red LED »Emission« (L2) on the supply
+tion »0«.
+2. Switch off the key switch by turning it to the vertical posi-
+1. Stop the marking process.
+5.3.2 Switch-Off
+and the status of the marking process.
+The LED system indicators display the progress
+ware.
+button »START« (S3) or via the user interface of the soft-
+6. The marking process can be started by pressing the push
+laser is ready.
+and the red LED on the marking unit are on. The
+The red LED »Emission« (L2) on the supply unit
+All LED system indicators are turned off.
+tion »I«.
+5. Switch on the key switch by turning it to the horizontal posi-
+are on.
+the white LED is on and all LED system indicators
+tem. After that the system is ready for operation
+sively indicating the initialization of the laser sys-
+The LED system indicators (L4) are on succes-
+the brightness of the LED increases.
+push button flashes. The flashing frequency and
+After approx. 10 seconds the white LED on the
+4. Press push button »POWER/STANDBY« (S1).
+« (S1) is on.
+The blue LED on the push button »POWER/STANDBY
+position »I«.
+Switch the main switch (S5) at the back of the supply unit to
+
+03/21 - Index: AD [EN] Videojet 7810 / 5 Operating the Laser System 35
+5. Switch off the fume extractor.
+to position »0«.
+4. Switch the main switch (S5) at the back of the supply unit
+ER/STANDBY« is on.
+Then the blue LED on the push button »POW-
+The yellow LED »Error« (L3) flashes.
+
+03/21 - Index: AD [EN] Videojet 7810 / 6 Maintenance 36
+All maintenance works are described in the following sections.
+one of their representatives.
+accordingly. In case of questions please contact Videojet Technologies Inc. or
+above normal dusty/dirty environment please shorten the maintenance intervals
+If the time of daily use exceeds 10 hours of continuous operation or in case of
+mately 10 hours of daily operation on a normal working environment.
+The maintenance intervals are laid out considering laser system use of approxi-
+6.2 Maintenance Plan
+highest purity grade).
+When purchasing acetone make sure that you order acetone pro analysi (p.a. =
+cated way: www.vwr.com/index.htm
+nies. Open the following Internet page to order acetone in a quick and uncompli-
+Acetone is not included upon delivery and has to be purchased via other compa-
+ing:
+Before carrying out the maintenance works at the optics, please note the follow-
+NOTICE
+Inc. reserves the right to limit the warranty!
+In case of non-conformance with the maintenance plan Videojet Technologies
+Document the regular maintenance in the maintenance protocols in this chapter!
+disconnected from the mains power supply.
+Before cleaning the laser system and its environment, the laser system must be
+disconnected!!
+For reasons of safety make sure that the main key is withdrawn and the mains is
+sonnel only!
+Maintenance has to be performed by instructed operating and maintenance per-
+ CAUTION
+The laser system is designed such that maintenance can be performed safely.
+maintenance works in the stated intervals.
+The time for maintenance of the laser system is very short. Please carry out
+Maintenance
+6.1 General Notes Concerning
+6 Maintenance
+
+03/21 - Index: AD [EN] Videojet 7810 / 6 Maintenance 37
+• Acetone
+• Optics cleaning paper
+To clean the laser scan lens you need:
+scan lens!
+Make sure that no contaminants enter the marking head while cleaning the laser
+moved by means of optics cleaning paper and acetone.
+component or reduction of marking quality. Any contaminants must only be re-
+Slightest damage of the surface might (in the long term) result in unusability of the
+sion and sophisticated design!
+As with all optical components the laser scan lens is an object of highest preci-
+ CAUTION
+but check both sides for contamination and clean them, if necessary.
+Generally, just the outwardly facing side of the laser scan lens has to be cleaned,
+ponents of the marking system. Therefore the lens has to be cleaned regularly.
+power a contamination of the laser scan lens can result in damage to other com-
+lens and gradually reduce the quality of the marking. Especially using higher laser
+ess. Contamination of the laser scan lens can lead to damage of the laser scan
+dust, floating particles in the air or other substances formed by the marking proc-
+The laser scan lens is located at the marking head. It may be contaminated by
+6.3 Cleaning the Laser Scan Lens
+sentatives.
+case of questions please contact Videojet Technologies Inc. one of their repre-
+We offer special training seminars for maintenance and service personnel. In
+often in a very dusty environment).
+We recommend a professional check by our service engineers once a year (more
+NOTICE
+tor).
+fume extractor (refer to manual of the fume extrac-
+Every six months If installed: Exchange the charcoal filter inside the
+Check the fume extractor for air leaks.
+readjust if necessary.
+Check the product detector (light barrier). Clean or
+tions)
+ated in dirty ambient condi- They must be readable and positioned correctly.
+(more frequently when oper- Clean if necessary. Check also the warning labels.
+Every three months Carry out a visual inspection of the laser system.
+lamp lights up extractor (refer to manual of the fume extractor).
+Monthly or when control If installed: Exchange the filter bag inside the fume
+Exchange if necessary.
+tions)
+If installed: Check the filter mats of the supply unit.
+ated in dirty ambient condi-
+(more frequently when oper- the laser scan lens in case of dust or stains.
+Monthly Check the laser scan lens for dust and dirt. Clean
+Maintenance Intervals Measures
+
+03/21 - Index: AD [EN] Videojet 7810 / 6 Maintenance 38
+new laser scan lens.
+If the lens cannot be cleaned or the surface of the lens is severely scratched: Fit a
+tion. If necessary, clean it as described above.
+5.Check the surface of the lens side located in the marking head for contamina-
+4.If necessary repeat the procedure with a new sheet of optics cleaning paper.
+only very light pressure onto the paper!
+cleaned. Make sure that you do not touch the surface with the gloves! Apply
+3.Carefully and slowly pull the optics cleaning paper across the surface to be
+drops of acetone onto the optics cleaning paper.
+2.Hold the optics cleaning paper between thumb and index finger and put some
+paper (at least 5 times) creating a flat cushion.
+1.Place the laser scan lens onto a clean surface. Fold a sheet of optics cleaning
+Make sure that the optics cleaning paper is stored in a clean place.
+Never use contaminated cleaning paper to clean the optic.
+Never use polishing agents! Polishing agents destroy the laser scan lens.
+ CAUTION
+6.3.2 Cleaning the Laser Scan Lens
+sure that you are holding the lens firmly with both hands.
+The fine thread requires several turns before the scan lens is released. Make
+NOTICE
+surface.
+5.Remove the laser scan lens from the marking head and place it on a clean
+Do not touch the lens surface!
+until it is released from the thread.
+4.Firmly grip the laser scan lens with both hands and turn it clockwise carefully
+3.Disconnect the mains connector.
+2.Switch off the laser system (push button »STANDBY«).
+system cannot be switched on.
+1.Turn the key switch to position »0«. Remove the key to ensure that the laser
+Before starting any work the laser system must be completely switched off.
+ DANGER
+6.3.1 Disassembly of the Laser Scan Lens
+Wear suitable protective gloves during the complete procedure!
+NOTICE
+• Protective gloves
+
+03/21 - Index: AD [EN] Videojet 7810 / 6 Maintenance 39
+throughout the life of the laser marking system.
+made and used to keep an ongoing record of the procedures recommended
+You will also find forms to record the repairs and replacements. Copies can be
+timely maintenance can help to minimize malfunctions of the laser system.
+The maintenance protocols specify the tasks and their intervals. The correct and
+placement procedures.
+It is strongly recommended that records are kept of maintenance, repair and re-
+Repair and Replacement
+6.4 Protocols for Maintenance,
+handtight.
+2.The screw in the laser scan lens slowly and straight in the right direction,
+wrong direction until you hear the clear click as the first thread engages.
+1.Place the laser scan lens straight onto the laser beam outlet and turn it in the
+If the fine thread jams during screwing proceed as follows:
+caught and tighten it by hand only. Do not use any tools!
+2.Carefully screw in the laser scan lens anti-clockwise until the fine thread has
+of the marking head.
+1.Position the thread of the laser scan lens straight onto the laser beam outlet
+6.3.3 Mounting the Laser Scan Lens
+
+03/21 - Index: AD [EN] Videojet 7810 / 6 Maintenance 40
+Date Name
+Carried out on: Carried out by:
+Maintenance interval: Monthly
+Inspection and Cleaning of the Laser Scan Lens
+
+03/21 - Index: AD [EN] Videojet 7810 / 6 Maintenance 41
+Date Name
+Carried out on: Carried out by:
+Maintenance interval: Monthly
+(if installed)
+Inspection an Cleaning of the Filter Mats
+
+03/21 - Index: AD [EN] Videojet 7810 / 6 Maintenance 42
+Date Name
+Carried out on: Carried out by:
+Maintenance interval: Monthly or when control lamp lights up
+(if installed)
+Exchange of the Pre-Filter of the Fume Extractor
+
+03/21 - Index: AD [EN] Videojet 7810 / 6 Maintenance 43
+Date Name
+Carried out on: Carried out by:
+Maintenance interval: Every six months
+(if installed)
+Exchange of the Combined (Charcoal) Filter of the Fume Extractor
+
+03/21 - Index: AD [EN] Videojet 7810 / 6 Maintenance 44
+Date Name
+Carried out on: Carried out by:
+Maintenance interval: Every three months
+Visual Inspection
+
+03/21 - Index: AD [EN] Videojet 7810 / 6 Maintenance 45
+Date Name
+Version: Carried out on: Carried out by:
+Update of the CMark Software
+
+03/21 - Index: AD [EN] Videojet 7810 / 6 Maintenance 46
+Carried out by:
+(faults, etc.)
+Date: Repair or Replacement Comments
+Carried out by:
+(faults, etc.)
+Date: Repair or Replacement Comments
+Carried out by:
+(faults, etc.)
+Date: Repair or Replacement Comments
+Carried out by:
+Protocol (faults, etc.)
+Date: Repair and Replacement Comments
+Laser model: Serial number:
+Repair and Replacement Protocol
+
+03/21 - Index: AD [EN] Videojet 7810 / 7 Malfunctions 47
+• Check for an external STOP signal.
+• Check the key switch (must be closed).
+• Check for error messages.
+The laser cannot be started. • Check the interlock (must be closed).
+service helpdesk.
+• Note the booting time and report it to the
+ing time depends on that.
+• Check the size of the database, the boot-
+booting takes very long. take several minutes.
+The system does not boot or • Please note that the booting process can
+heit").
+section "Elemente an der Versorgungsein-
+sealing on the rear of the supply unit, see
+• Check the fuse(s) (for this remove the
+al current protective device).
+• Check the power supply, e.g. RCD (residu-
+• Check the main switch.
+switched on.
+The laser system cannot be • Check the plug.
+Symptom Causes/Measures
+7.2 Malfunctions Descriptions
+tions!
+formed by specially trained personnel only! Strictly follow the safety instruc-
+Tasks for troubleshooting going beyond the ones mentioned here must be per-
+ CAUTION
+performed by trained and qualified operation and maintenance personnel only.
+causes and suitable measures for troubleshooting. The measures stated must be
+In this chapter you will find a description of possible malfunctions, their possible
+7.1 Notes
+7 Malfunctions
+
+03/21 - Index: AD [EN] Videojet 7810 / 7 Malfunctions 48
+the press-on force of the wheel.
+• Check the encoder. If it is slipping increase
+water, dust, oil, etc.).
+• Check the product (must be free from dirt,
+essary.
+• Check the lens. Clean or exchange if nec-
+Incomplete marking. • Check the product speed.
+suitable for the application).
+• Check the fume extractor (must be on and
+water, dust, oil, etc.).
+• Check the product (must be free from dirt,
+speed to high).
+• Check the parameter set (power too low,
+• Check the working distance.
+• Check the lens. Clean it if necessary.
+mensions, material)?
+Faint marking. • Has the product been changed (e.g. di-
+Stretched/shrunk marking. • Check the encoder setting.
+• Check the product carrier for accuracy.
+Shifted marking. • Check the sensor position.
+• Check the template.
+Lopsided marking. • Check the laser position.
+the shutter.
+• Error message "Shutter defect", exchange
+ing).
+• Check the external STOP signal (if exist-
+beam source.
+• Check the total working time of the laser
+ed?
+• Is the correct product registration select-
+set.
+• Check the power setting of the parameter
+• Check the lens. Clean if necessary.
+• Check the working distance.
+• Check the product detection.
+has been pressed.
+No marking, although START • Check the encoder.
+Symptom Causes/Measures
+
+03/21 - Index: AD [EN] Videojet 7810 / 7 Malfunctions 49
+• Check the cooling system (if existing).
+• Is there enough space for the air intake?
+tion)?
+specified limits (see product documenta-
+• Is the ambient temperature within the
+ture.
+Laser stops due to overtempera- • Clean filter(s) and system.
+the press-on force of the wheel.
+• Check the encoder. If it is slipping increase
+suitable for the application).
+• Check the fume extractor (must be on and
+water, dust, oil, etc.).
+• Check the product (must be free from dirt,
+speed to high).
+• Check the parameter set (power too low,
+• Check the working distance.
+• Check the lens. Clean it if necessary.
+mensions, material)?
+• Has the product been changed (e.g. di-
+Poor marking quality. • Check for product or laser vibration.
+Symptom Causes/Measures
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 50
+for the door circuit and performance level "e" for the emergency stop circuit.
+2.With safety circuit according to EN 13849-1, achieving performance level "d"
+1.Without safety circuit as a system without performance level (non-EU).
+The laser system can be ordered in 2 variants:
+Position of X9:
+Position of the board in the laser system:
+The safety circuit is realized via connector X9 on the CPD board.
+System
+8.1 Safety Circuit of the Laser
+8 Appendix
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 51
+lock.
+X9.21 INTERLOCK 1 Output Connect to X9.17 to close the inter-
+X9.20 - Output
+lock.
+X9.19 INTERLOCK 2 Output Connect to X9.15 to close the inter-
+X9.18 - Output
+Default: Bridge to X9.21
+lock.
+Connect to X9.21 to close the inter-
+switched off immediately.
+opened, the laser power supply is
+X9.17 INTERLOCK 1 Input If one of the interlock circuits is
+Default: Bridge to X9.5
+terlock.
+Connect to X9.5 to close the shut-
+ser is closed immediately.
+opened, the beam shutter of the la-
+X9.16 SHUTTERLOCK 2 Input If one of the shutterlock circuits is
+Default: Bridge to X9.19
+lock.
+Connect to X9.19 to close the inter-
+switched off immediately.
+opened, the laser power supply is
+X9.15 INTERLOCK 2 Input If one of the interlock circuits is
+Default: Bridge to X9.7
+terlock.
+Connect to X9.7 to close the shut-
+ser is closed immediately.
+opened, the beam shutter of the la-
+X9.14 SHUTTERLOCK 1 Input If one of the shutterlock circuits is
+X9.13 GND_LAS Input
+X9.12 - Output Bridge to X9.10
+X9.11 GND_INT Output
+X9.10 - Input Bridge to X9.12
+X9.9 GND_INT Output -
+X9.8 - Output reserved
+X9.7 24V_INT Output -
+X9.6 - Output reserved
+X9.5 24V_INT Output -
+X9.4 GND_INT Output -
+X9.3 24V_LAS Input -
+X9.2 GND_INT Output -
+X9.1 24V_INT Output -
+Terminal Signal In/Output Description
+Assignment Variant 1
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 52
+Wiring see Without Safety Circuit [ } 71] .
+X9.24 - Output Bridge to X9.22
+X9.23 - Input
+X9.22 - Input Bridge to X9.24
+Terminal Signal In/Output Description
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 53
+Default: Bridge to X9.7
+circuit.
+Connect to X9.7 to close the door
+ser is closed immediately.
+opened, the beam shutter of the la-
+X9.14 DOOR 1 IN Input If one of the door circuits is
+X9.13 - Input
+Bridge to X9.10
+OUT contacts of the extension relays.
+X9.12 DOOR FEEDBACK Output Feedback output for forceguided
+X9.11 GND_INT Output
+Default: Bridge to X9.12
+IN contacts of the extension relays.
+X9.10 DOOR FEEDBACK Input Feedback input for forceguided
+X9.9 GND_INT Output -
+sample wiring.
+must be wired according to the
+used and the feedback circuits
+drawn. Flyback diodes must be
+more than 50 mA per relay may be
+Using the contact extension no
+RELAY 2 relays if door circuit is opened.
+X9.8 RELEASE DOOR Output Extension to switch off additional
+X9.7 24V_INT Output -
+sample wiring.
+must be wired according to the
+used and the feedback circuits
+drawn. Flyback diodes must be
+more than 50 mA per relay may be
+Using the contact extension no
+RELAY 1 relays if door circuit is opened.
+X9.6 RELEASE DOOR Output Extension to switch off additional
+X9.5 24V_INT Output -
+X9.4 GND_INT Output -
+X9.3 - Input -
+X9.2 GND_INT Output -
+X9.1 24V_INT Output -
+Terminal Signal In/Output Description
+emergency stop circuit must be connected with a double-pole switch.
+When using the safety circuit please observe that the door circuit as well as the
+NOTICE
+Assignment Variant 2
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 54
+Default: Bridge to X9.24
+FEEDBACK IN contacts of the extension relays.
+X9.22 EMERGENCY Input Feedback input for forceguided
+OUT emergency stop circuit.
+X9.21 EMERGENCY 1 Output Connect to X9.17 to close the
+sample wiring.
+must be wired according to the
+used and the feedback circuits
+drawn. Flyback diodes must be
+more than 50 mA per relay may be
+Using the contact extension no
+opened.
+GENCY RELAY 2 relays if emergency stop circuit is
+X9.20 RELEASE EMER- Output Extension to switch off additional
+OUT emergency stop circuit.
+X9.19 EMERGENCY 2 Output Connect to X9.15 to close the
+sample wiring.
+must be wired according to the
+used and the feedback circuits
+drawn. Flyback diodes must be
+more than 50 mA per relay may be
+Using the contact extension no
+opened.
+GENCY RELAY 1 relays if emergency stop circuit is
+X9.18 RELEASE EMER- Output Extension to switch off additional
+Default: Bridge to X9.21
+reset pulse to X9.23.
+emergency stop circuit and apply
+Connect to X9.21 to close the
+switched off immediately.
+opened, the laser power supply is
+X9.17 EMERGENCY 1 IN Input If the emergency stop circuit is
+Default: Bridge to X9.5
+circuit.
+Connect to X9.5 to close the door
+ser is closed immediately
+opened, the beam shutter of the la-
+X9.16 DOOR 2 IN Input If one of the door circuits is
+Default: Bridge to X9.19
+reset pulse to X9.23.
+emergency stop circuit and apply
+Connect to X9.19 to close the
+switched off immediately.
+IN
+opened, the laser power supply is
+X9.15 EMERGENCY 2 Input If the emergency stop circuit is
+Terminal Signal In/Output Description
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 55
+Wiring see Safety Circuit Variant 2 [ } 72] .
+Default: Bridge to X9.22
+FEEDBACK OUT contacts of the extension relays.
+X9.24 EMERGENCY Output Feedback output for forceguided
+the safe state has been restored.
+SET IN setting the emergency stop when
+X9.23 EMERGENCY RE- Input Connection to external reset for re-
+Terminal Signal In/Output Description
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 56
+X27 Laser control
+X30 External job selection
+X25 Encoder/Product detector interface
+X33 Internal signals
+X22 Laser control
+X29 Laser control
+X21 Fume extractor
+X28 Power supply
+Connector Description
+Description of the connectors
+supply unit of the laser system.
+The terminals of the customer interface are located on the control board in the
+The shielding should be connected to the provided grounding rail.
+All cables connected to the system must be shielded.
+NOTICE
+Interface
+8.2 Assignment of the Customer
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 57
+(except interface for encoder/product detector)
+Max. frequency: 200 Hz
+level:
+Current threshold for HIGHT >= 9.4 V
+level:
+Current threshold for LOW <= 8.4 V
+Current input: 2.5 mA
+Rated voltage: 24 V
+Specification of the 24 inputs:
+Max. output current: 50 mA max. (short-circuit proof)
+(high and low activated)
+Rated voltage: 24 V/Push Pull
+Specification of the 12 outputs:
+X25. 9-12 Trigger enable
+X33. 2-6 reserved
+X33. 1-8 External key switch
+X22. 9-11 reserved
+X22. 7-9 Stop marking
+X22. 3-11 reserved
+X21. 3-5 Filter full
+X21. 1-2 Exhaust error
+X27.7 - X33.3 reserved
+X29. 1-7 Input customer error
+Bridge Description
+The following terminals are to be connected to 12 or 24 V for operation:
+wiring
+Description of the bridges necessary for operation without external
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 58
+Internal supply +12 V (non-isolated):
+In this case X28.7 and X28.8 are not connected.
+set as follows.
+For the non-isolated configuration (internal power supply) the jumpers must be
+Non-isolated configuration
+X28.7 (+) and X28.8 (-).
+The external supply of 12 or 24 V +/- 10 % max. 50 W is to be connected to
+External supply +12 V to +24 V (potential-free):
+must be set as follows:
+For the potential-free configuration (power supply by the customer) the jumpers
+Potential-free configuration
+The jumpers X19 (yellow) and X20 (green) are used for configuration.
+solated).
+er (opto-decoupled potential-free connection) or internally with 12 V or 24 V (noni-
+The power supply of the customer interface can either be supplied by the custom-
+(Connector X28)
+8.2.1 Power Supply Connector for the Customer Interface
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 59
+X28.14 RESERVED reserved for internal purposes
+X28.13 RESERVED reserved for internal purposes
+X28.12 RESERVED reserved for internal purposes
+X28.11 RESERVED reserved for internal purposes
+X28.10 RESERVED reserved for internal purposes
+X28.9 RESERVED reserved for internal purposes
+ER_SUPPLY -
+X28.8 EXTERNAL_POW- GND supplied by customer
+ER_SUPPLY +
+X28.7 EXTERNAL_POW- 12 - 24 V supplied by customer
+X28.6 RESERVED reserved for internal purposes
+X28.5 PWR_INT Connection to X28.3
+X28.4 RESERVED reserved for internal purposes
+after switching mains on.
+nently the system boots automatically
+If X28.3 and X28.5 are bridged perma-
+No other connections allowed!
+applying here a pulse of X28.5.
+X28.3 EXT_STARTUP The system can be booted remotely by
+X28.2 RESERVED reserved for internal purposes
+X28.1 RESERVED reserved for internal purposes
+Terminal Signal Description
+Connector X28: Power Supply
+If the customer interface is supplied internally, the load must not exceed 250 mA.
+ CAUTION
+Internal supply +24 V (non-isolated):
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 60
+X21.6 GND_CI Output
+X21.5 24 V_CI Output Power supply
+X21.4 GND_CI Output
+process.
+full during the marking
+of the fume extractor is
+immediately if the filter
+X21.3 FILTER_FULL Input low The system is stopped
+switched on.
+fume extractor is to be
+X21.2 EXHAUST_ON Output high This signal is set if the
+process.
+curs during the marking
+ROR the fume extractor oc-
+HAUST_ER- immediately if an error of
+X21.1 EX- Input low The system is stopped
+Terminal Signal In/Output high/low Description
+8.2.2 Assignment of Connector X21 Fume Extractor
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 61
+X29.10 GND_CI Output
+X29.9 +24V_CI Output
+X29.8 GND_CI Output
+X29.7 +24V_CI Output
+completed yet.
+High: Job selection not
+LECTION plete.
+X29.6 ACK_JOB_SE- Output high Low: Job selection com-
+X29.5 reserved Input
+X29.4 reserved Output
+FIRM confirmation.
+X29.3 ERROR_CON- Input high Input for external error
+ing process.
+occurs during the mark-
+immediately if an error
+X29.2 ERROR Output low The system is stopped
+ER ate error conditions.
+TUS_CUSTOM- signal is used to evalu-
+X29.1 ERROR_STA- Input low Connected to 24 V. The
+Terminal Signal In/Output high/low Description
+8.2.3 Assignment of Connector X29 Laser Control
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 62
+X22.10 GND_CI Output
+poses
+X22.9 reserved Input reserved for internal pur-
+TER_CLOSED beam shutter is closed.
+X22.8 SHUT- Output high This signal is set if the
+tive.
+START_MARKING if ac-
+prevents
+ING marking process and
+X22.7 STOP_MARK- Input low This signal stops the
+(waiting for trigger).
+have been received
+data and START signal
+ARK soon as all necessary
+X22.6 READY_TO_M Output high This signal is set as
+active.
+STOP_MARKING is not
+ING marking process, if
+X22.5 START_MARK Input high This signal starts the
+the marking process.
+X22.4 MARKING Output high This signal is set during
+edge poses
+X22.3 reserved Input falling reserved for internal pur-
+ing process.
+nals for starting a mark-
+system accepts start sig-
+successfully. If high, the
+source was initialized
+is closed and the laser
+SER_READY soon as the key switch
+X22.2 LA- Output high This signal is set as
+poses
+X22.1 reserved Input reserved for internal pur-
+Terminal Signal In/Output high/low Description
+8.2.4 Assignment of Connector X22 Laser Control
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 63
+X22.12 GND_CI Output
+X22.11 +24V_CI Output
+Terminal Signal In/Output high/low Description
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 64
+Input X33.1 must be potential-free from output X33.8.
+X33.8 EXT_KEY Output External output for key switch
+X33.7 NC -
+X33.6 reserved Input
+X33.5 NC -
+X33.4 reserved Input
+X33.3 reserved Output
+X33.2 reserved Output
+X33.1 EXT_KEY Input External input for key switch
+Terminal Signal In/Output Description
+8.2.5 Assignment of Connector X33 Internal Signals
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 65
+doubled in the product registration.
+If both tracks of the encoder are used the value for pulses per rotation must be
+NOTICE
+min. load 20 mA
+min. pulse length 2 µs
+below.
+The encoder and the product detector are to be connected as shown in the figure
+X25.9)
+X25.12 24 V CI Output Voltage supply 24 V (bridge to
+X25.11 reserved Output
+X25.10 GND_CI Output GND
+X25.12)
+X25.9 TRG_EN Input Trigger enable (bridge to
+X25.8 GND_CI Output GND
+X25.7 TRG Input Input trigger (product detection)
+X25.6 GND_CI Output GND
+X25.5 IN_ENC_IDX Input Input for index track of encoder
+X25.4 CI line supply 1 Output 24 V for trigger
+X25.3 CHB Input Input for track 2 of encoder
+X25.2 CI line supply 0 Output 24 V for encoder
+X25.1 CHA Input Input for track 1 of encoder
+Terminal Signal In/Output Description
+Detector
+8.2.6 Assignment of Connector X25 Encoder/Product
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 66
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 67
+X30.12 GND_CI Output
+X30.11 24V_CI Output
+X30.10 GND_CI Output
+E
+LECT_STROB edge mask"
+X30.9 JOB_SE- Input rising Strobe signal "read bit-
+LECT_BIT_7
+X30.8 JOB_SE- Input high Input for bitmask Bit 7
+LECT_BIT_6
+X30.7 JOB_SE- Input high Input for bitmask Bit 6
+LECT_BIT_5
+X30.6 JOB_SE- Input high Input for bitmask Bit 5
+LECT_BIT_4
+X30.5 JOB_SE- Input high Input for bitmask Bit 4
+LECT_BIT_3
+X30.4 JOB_SE- Input high Input for bitmask Bit 3
+LECT_BIT_2
+X30.3 JOB_SE- Input high Input for bitmask Bit 2
+LECT_BIT_1
+X30.2 JOB_SE- Input high Input for bitmask Bit 1
+LECT_BIT_0
+X30.1 JOB_SE- Input high Input for bitmask Bit 0
+Terminal Signal In/Output high/low Description
+8.2.7 Assignment of Connector X30 External Job Selection
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 68
+X27.12 GND_CI
+X27.11 24V_CI
+X27.10 GND_CI
+X27.9 reserved Input high
+X27.8 reserved Output high
+X27.7 reserved Input low Connected to X33.3
+next trigger signal.
+output is reset by the
+or error message. This
+pleted due to a warning
+marking was not com-
+X27.6 BAD Output low Indicates that the last
+X27.5 reserved Input high
+next trigger signal.
+output is reset by the
+or error message. This
+ried out without warning
+marking has been car-
+X27.4 GOOD Output low Indicates that the last
+X27.3 reserved Input high
+NECTED connected.
+X27.2 PC_CON- Output high Is set as soon as a PC is
+down.
+"high" the system is shut
+X27.1 SHUTDOWN Input high If this input is set to
+Terminal Signal In/Output high/low Description
+8.2.8 Assignment of Connector X27 Laser Control
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 69
+8.3.1 Laser Control/Job Selection
+8.3 Wiring Examples
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 70
+8.3.2 Fume Extractor/Encoder/Trigger
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 71
+2.Interlock open.
+1.Shutterlock open.
+System response:
+8.3.3 Without Safety Circuit
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 72
+stored.
+ Emergency stop must be reset with S02 after the safe state has been re-
+ System response: Interlock open. Message: Emergency stop open.
+2.Emergency stop performance level "e".
+ System response: Shutterlock open. Message: Door circuit open.
+1.Door circuit performance level "d".
+8.3.4 Safety Circuit Variant 2
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 73
+Safety Circuit (extended)
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 74
+Supply Unit
+8.4 Drawings
+
+03/21 - Index: AD [EN] Videojet 7810 / 8 Appendix 75
+Interface Unit with Marking Head
+
+03/21 - Index: AD [EN] Videojet 7810/ Index 76
+Vector stroke 25
+V
+Line width 27
+Transport 19
+Lenses 29, 30
+Laser type 26
+Laser scan lens 29, 30 T
+Laser power 27
+Supply voltage 27
+Laser parameters 25
+Supply unit 26
+Laser class 26
+(max. length) 27
+Supply line
+L
+Storage 20
+Speed of production line 27
+Interlock 12
+Sealing 27
+Interfaces 22, 27
+Safety interlock 12
+Safety goggles 13
+I
+Safety devices 12
+Humidity (rel.) 27
+S
+H
+Pulse width 26
+Pulse frequency 26
+Fume extractor 21
+Pulse energy 26
+Fonts 27
+power range 13
+Focus diameter 27
+Power consumption (max.) 27
+Focal length 27
+Pilot laser (optional) 27
+pilot laser 9
+F
+Dimensions 27
+P
+Operating mode 26
+D
+Cooling 21, 27
+O
+Control options 27, 31
+Marking unit 26
+Characters 27
+Marking speed 27
+Marking head 25
+C
+Marking field 29
+Malfunctions 47
+Bedienelemente 32
+Maintenance works 36
+Beam divergence 26
+Visual inspection 44
+Laser scan lens 40
+B
+Fume extractor 42
+Ambient temperature 27 Filter mats 41
+Filter 42
+Charcoal filter 43
+A
+Maintenance protocol
+Mains frequency 27
+M
+Index
+
+03/21 - Index: AD [EN] Videojet 7810/ Index 77
+Working distance 29, 30
+Weight 27
+Wavelength 26
+Warning lights 12
+W

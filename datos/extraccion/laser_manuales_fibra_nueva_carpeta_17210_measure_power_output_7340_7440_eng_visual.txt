@@ -1,0 +1,174 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\Nueva carpeta\17210-Measure Power Output 7340, 7440 (Eng).pdf
+# cifrado=False bloques=9 caracteres=10534
+
+09/01/2023 12:21 Knowledge Article
+Measure Power Output (7340, 7440)
+H e a d e r
+V i d e o j e t T e c h n o l o g i e s , I n c . K n o w l e d g e A r t i c l e
+C o n t e n t
+M e a s u r e P o w e r O u t p u t ( 7 3 4 0 , 7 4 4 0 )
+Applies to models: 7340, 7440.
+As part of troubleshooting bad print quality or potential broken components, it may be necessary to check the power out of
+the marking unit. The easiest place to take the power measurement is directly at the end of the marking head. If low or no
+power is observed at the output of the marking unit, it may then become necessary to take of f the marking unit and
+measure power directly out of the collimator to determine if low power is due to laser source or due to components in
+marking unit blocking the laser beam.
+E q u i p m en t N eed ed
+This procedure requires special equipment. Only use the AL-82208 (Power Meter Y AG/CO2, Assembly) or AL-SP67438
+Power meter (Laser Point Power Meter; discontinued). Do not use the Synrad Power W izard Power Meter . The Power
+Wizard is not meant for the wavelength emitted by fiber lasers and can give inaccurate readings.
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Measure-Power-Output-954483376/p 1 /9
+Figure 1: Older version of power meter . Figure 2: AL-SP67438 Laser Point power meter .
+Figure 3: AL-82208 Power meter (current).
+C r eat e a P o w er C h eck Jo b i n T C S +
+Before Y ou Start
+Before proceeding, take the following safety precautions.
+Position a beam block in a manner that prevents the laser beam from traveling beyond the work area during
+power measurements. If available, use a carbon block (V ideojet Part Number: 213524) under or across from the
+
+09/01/2023 12:21 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Measure-Power-Output-954483376/p 2 /9
+marking unit to absorb beam.
+Ensure that all personnel in the area are wearing the appropriate protective eye wear .
+1 . Connect to TCS+ as a User with access rights to create a Job and edit Line Setup.
+2 . Create a new Mark Set by pressing the Main Menu button in Home screen and selecting Mark Settings .
+3 . Press the Create button and name the Mark Set "Power Check".
+4 . Set the values as seen in the following figure:
+Mark Setting V alue
+Marking Speed 1 mm/s
+Mark Delay 0 microseconds
+Stroke Delay 0 microseconds
+Jump Speed 10,000 mm/s
+Jump Delay 0 microseconds
+Marking Intensity 100%
+On Delay 0 microseconds
+Of f Delay 0 microseconds
+Frequency 30,000 Hz
+5 . Press Save and then Close .
+6 . Create a new job called Power Check .
+7 . Add a 2 mm x 2 mm square in the center of the marking field by pressing Add and then select Graphic from the
+dropdown selector .
+8 . Click in the middle of the mark field to insert the graphic.
+9 . Select Rectangle as the type and adjust the height and width to 2 mm by 2 mm.
+
+09/01/2023 12:21 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Measure-Power-Output-954483376/p 3 /9
+10 . Assign the Mark Setting Power Check that you created previously .
+1 1 . Save the job and press Close .
+12 . When prompted "Do you want to Activate the Job?" press Y es .
+13 . Create a Line Setup called Power Check.
+14 . Set the Line Movement to Static in Position and Orientation tab.
+15 . Set T rigger to Internal Continuous and then set Blocking to 6700 milliseconds.
+
+09/01/2023 12:21 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Measure-Power-Output-954483376/p 4 /9
+16 . Save the Line Setup and then Activate .
+S et u p P o w er M et er
+1 . Plug in the monitor unit and the fan.
+2 . Power on the device
+3 . Select W avelength from the bottom box and ensure it is set to 1064 nm. On Star Lite meters, select .8-6 as the
+wavelength range (.8 - 6 is in microns, which equates to 800 - 6,000 nanometers).
+4 . Set Unit to W atts. The display should show zero W atts at this time.
+
+09/01/2023 12:21 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Measure-Power-Output-954483376/p 5 /9
+If using an older power meter , ensure the display says Y AG .
+P o si t i o n t h e B eam f o r T est i n g
+1 . Position the target of the power meter .
+2 . Ensure the marking unit distance to the target on power meter is set out of focus.
+If measurement is taken at the correct focal distance for marking, then damage to power meter may
+occur .
+If the distances below cannot safely be achieved, then please measure at a point closer than the focal
+distance. In this case, 1/4 to 1/3 of the actual working distance for the marking head is suggested.
+3 . Place a carbon block behind the target of the power meter to absorb the beam if missing the target.
+4 . T urn the keyswitch to the Armed position.
+5 . Enable the Pilot Laser . The interface dif fers dependent on the version of CMark installed on the laser system.
+CMark 4.9 or Newer
+1 . Press Main Menu button in TCS+ home screen and select Pilot Laser in the dropdown menu.
+2 . Press the Job Elements button to enable the pilot laser to display of the square you created.
+
+09/01/2023 12:21 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Measure-Power-Output-954483376/p 6 /9
+CMark Older than 4.9
+1 . Press Main Menu | Main Settings and select Pilot Laser from dialogue window .
+2 . Press the Start button in Home screen to enable the pilot laser to display the square you created.
+If red pilot beam is not visible on target, ensure the checkmark is on Pilot Laser and not Laser in
+Main Menu | Main Settings .
+6 . V erify that the red pilot laser is displaying your square in the target area of the power meter .
+7 . (CMark 4.9 or newer) Press Stop Pilot Laser in the Pilot Laser dialogue box.
+-OR-
+(CMark Older than 4.9) Press the Stop button in the Home screen.
+8 . (CMark Older than 4.9 only) Press Main Menu | Main Settings and press Laser to switch back from Pilot to
+regular fiber beam before continuing.
+M easu r e P o w er at t h e M ar ki n g U n i t O u t p u t
+1 . Ensure the marking unit distance to the target on power meter is set out of focus. If measurement is take at the
+correct focal distance then damage to power meter may occur .
+
+09/01/2023 12:21 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Measure-Power-Output-954483376/p 7 /9
+Air Knife Effect - Measurement Distance
+The positive air that is used to cool the marking unit and which acts as an air knife at the marking unit output
+can contribute to erroneous readings by cooling the power the power meter sensor . The recommended distance
+from power meter sensor is as follows:
+Marking Head Distance from Power Meter Sensor
+CFS/CFT - Small 350mm
+CFS/CFT - Medium 400mm
+CFS/CFT - Large 450mm
+2 . Select and Activate the Power Check job and Power Check line setup.
+3 . T urn the keyswitch to the Armed position.
+4 . Ensure the power meter is on and set to the correct W avelength measurement.
+5 . Start marking and observe the measurement on power meter display .
+Stop the marking if smoke is observed. This typically indicates that you are missing the target and
+burning the paint of f of the area surrounding the target.
+Let marking run for at least 30 seconds after the start of marking before observing W attage
+measurement.
+6 . Press Stop on the TCS+ Home page to stop the marking.
+7 . Compare your results to the expected values for the 7340/7440 at two points in T able 1 .
+T able 1: Expected Power Output Measurement - W atts
+Model Marking Unit Output (Minimum Acceptable) Directly out of Collimator (Expected)
+7340 17.6 20.5
+7440 26.4 30.5
+Measured with 30,000 Hz Pulse Frequency for 7340 and 7440 models
+M easu r i n g P o w er at t h e C o l l i m at o r
+If the power at the marking unit output is below the values in T able 1 , then you must measure the output directly out of the
+collimator .
+Possible Equipment Damage
+W ear powder-free gloves during this procedure.
+Ensure the marking unit is kept as clean as possible during the procedure. Many of the components inside the
+marking unit are not accessible and cannot be cleaned!
+Best to have a second person to help with this procedure so that they can start/stop the marking while you hold
+the collimator during measurement.
+1 . Remove the marking unit cover .
+2 . Loosen the screws for collimator fixture and remove the fixture.
+
+09/01/2023 12:21 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Measure-Power-Output-954483376/p 8 /9
+3 . Slide the collimator slightly upward and out of the marking unit galvo block.
+4 . Ensure the collimator is aimed directly at the target.
+Possible Equipment Damage
+Ensure galvo block/marking unit/cables are not in the beam path !
+5 . Start the Power Check job marking.
+Stop the marking if smoke is observed. This typically indicates that you are missing the target and burning the
+paint of f of the area surrounding the target.
+6 . Press Stop marking button after the measurement is taken.
+T r o u b l esh o o t i n g
+If power output from marking unit output was low but straight out of collimator the power is acceptable, replace
+the marking unit. Assume something is blocking beam within the marking unit.
+If power output from marking unit was low and power straight out of collimator is zero or very low:
+1 . Ensure Mark Settings were correct (Intensity 100% and Frequency 30,000 Hz).
+2 . If the mark settings where correct, replace the laser source.
+D el et e t h e P o w er C h eck F i l es f r o m t h e L a s e r
+
+09/01/2023 12:21 Knowledge Article
+https://videojet.my .salesforce.com/articles/en_US/Knowledge/Measure-Power-Output-954483376/p 9 /9
+In order to avoid users accidentally selecting the Power Check Job, Mark Set, or Line Setup you should delete these files
+from the laser after testing is complete. Y ou can download these files to your PC in order to save time later .
+D i s c l a i m e r
+The contents ofthis em ailand any attachm ents are provided as a convenience to V ideojetcustom ers to highlightusefulinform ation and troubleshooting tips.W hen w orking w ith a product,alw ays consultthe productuser
+m anualand follow the productsafety precautions and recom m endations,including using P ersonalP rotective E quipm entw hen necessary.Ifyou have any questions orare notexperienced in using orservicing V ideojet
+equipm ent,contactVideojetforassistance.
+T i t l e Measure Power Output (7340, 7440)
+U R L N a m e Measure-Power-Output-954483376
+P e r m a n e n t
+U R L f o r Right click and copy link to share this Article's URL
+L i g h t n i n g

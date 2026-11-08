@@ -1,0 +1,1458 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\3350 Tech Training 06 07 23 Pre launch.pdf
+# cifrado=False bloques=88 caracteres=69338
+
+3350 (Galileo)
+CO2 Laser Systems
+Technical Training
+Revision: Draft Beta Installs 05 08 23
+
+Table of Contents
+• Product Features
+• System Overview
+• TCS+ in CMark 5
+• Install procedure
+• Digital Access Box Setup
+• Over the Air Updates
+• VRS Enable
+• Smart Focus Marking Head Setup (TCS+)
+• Smart Focus Marking Head Setup ( SmartGraph )
+• Maintenance
+• Troubleshooting
+Confidential - Company Proprietary
+
+3350 Installation – Checklist and MQT
+• Look for new installation checklist and MQT instructions at launch.
+• The checklist and instructions will assist in installation and will also
+identify any out of box issues that occur and what to do in those
+instances.
+• Process similar to 1880 checklist and MQT.
+Confidential - Company Proprietary
+
+3350 Product Features
+3340 to be discontinued
+• 30 - Watt CO2 laser system
+• Marking Head Options: SHC 60, 100, 150 and new SHC - SF (Smart Focus)
+• Wavelengths available: 10.6, 10.2 and 9.3 micron
+• Up to 2,000 cps
+• 90 degree and straight - out (0 degree) marking head options
+-- Head can be rotated in 90 - degree increments with no additional parts
+-- BTU/BUS still available for SHC60/100/150 heads
+-- No BTU/BUS with Smart Focus Marking Head
+• IP54 and IP65 variants
+• Pilot Laser Optional (standard on SHC - SF marking head; optional on SHC60/100/150 heads)
+• Focus Finder beam standard on SHC - SF marking head (not available on SHC60/100/150 heads; Focus
+Finder only available with TCS+ user interface)
+• Interface plates changed to include cable entry for Access Box. Quick Connector Plate and Standard
+plate still have same connectors as previous, but now 1 additional.
+• Digital Access Box standard - Cellular and Wi - Fi; Wi - Fi only in some countries; no access box in
+some countries. Cellular and Wi - Fi is country dependent and not available in all countries.
+Confidential - Company Proprietary
+
+3340 vs 3350
+Model name 3340 3350 3350 with SHC - SF Head
+Laser power 30W 30W
+Wavelengths 9.3µm, 10.2µm and 10.6µm 9.3µm, 10.2µm and 10.6µm
+Marking Unit: IP54, optional IP65 Marking Unit: IP54, optional IP65
+Sealing
+Supply Unit: IP54, optional IP65 Supply Unit: IP54, optional IP65
+Marking heads SHC - 60, SHC - 100, SHC - 150 SHC - 60, SHC - 100, SHC - 150 SHC - SF
+Focussing method Focussing lens Focussing lens Dynamic telescope
+multiple configurations per multiple configurations per
+Lens Option marking head marking head No lens selection
+Marking speed up to 2000cps (SHC - 60) up to 2000cps (SHC - 60) up to 2000cps
+Beam exit options 90 ° and straight - out 90 ° and straight - out 90 ° and straight - out
+Rotate head in 90 ° raster √ √ √
+Pilot laser integrated optional optional √
+Focus finder feature x x √
+Flat field correction x x √
+Dynamic product change - over x x √
+Multi - level mark content x x √
+BTU/BUS √ √ x
+Connectivity - Cellular x Standard Standard
+Connectivity - WIFI Optional Wi - Fi Kit Standard Standard
+Confidential - Company Proprietary
+
+Technical Changes from 3340 to 3350
+• Uses CMark v. 5.x (new loading procedure) ; compatible SmartGraph v. 11.x
+• Must use Chameleon MCIP Artix ; AL - SP80518 ( red with USB - C connector ; Digital Access Box
+connection is via USB - C).
+• New Rescue Stick/ Plexmark : Plexmark v. 2.4 or newer required for CMark 5
+• SHC - SF (Smart Focus) marking head uses new CP - Light 3D A7 for 3 axis connection/control.
+SHC60100/150 marking heads use traditional CP - Light with 2 axis connection/control.
+• Only TCS+ user interface has all features/ control for both Smart Focus head and Digital Access
+Box. SmartGraph and CLARiTY have limited capability for SHC - SF and Access Box control.
+• TCS+ has many new features (CMark v. 5.x) that improve Job creation and handling. Also some
+significant differences from previous (e.g. no default Users and passwords)
+TCS+ SmartGraph CLARiTY
+SHC - SF capabilities (2.5D control) Yes Yes, but limited Range Mode only; no 2.5D
+(Don’t use SHC - SF with CLARiTY )
+setup help
+Access Box control Yes No No
+Focus Finder control Yes No No
+Confidential - Company Proprietary
+
+Block Diagram – System – 3350
+Keypad
+FASS X
+Y
+Z
+(Optional; only
+compatible with CPD3)
+Chameleon
+Access
+Safety
+Box
+CP - Light
+IOs
+(3D A7 for SHC - SF)
+ETH
+SPM or
+Q7
+DSP
+AC
+RS232
+CPD3
+IO
+FPGA
+Laser
+Tube
+PSU
+48V PSU
+Laser
+Electronics
+LIC_CO2
+HIC
+Umbilical
+Umbilical
+Confidential - Company Proprietary
+
+MCIP Artix Chameleon
+• Must use Chameleon MCIP Artix which has USB - C in 3350 (AL - SP80518).
+• Older Chameleons do not have USB - C connector necessary for Digital Access Box connection.
+• Use CMark 5.x for 3350 (supports Digital Access Box and SHC - SF marking head). Use Rescue Stick Plexmark v. 2.4 or
+newer. – Plexmark v. 2.4 partitions board correctly for loading of CMark 5.
+• MCIP Artix board can be used with CMark 4.x for models other than 3350.
+Beware: Looks very
+similar to previous
+(AL - 84620)
+Chameleon, but this
+version has USB - C
+Confidential - Company Proprietary
+
+Note on Chameleon & RJ45 Ports
+NOTE: The two RJ - 45 ports on the mainboard of the laser marking unit are connected to
+an internal unmanaged level 2 switch.
+Note: When configuring the two different networks, the two networks are connected on
+the mainboard, which allows interaction between the two networks, which might be
+unintended.
+Note: The use of the optional MIC adapter ( Profinet and Ethernet cards) are isolated
+environment from the two RJ - 45 ports.
+Note: It’s the customer’s responsibility for configuring the network applications.
+Confidential - Company Proprietary
+
+Smart Focus Marking Head
+Smart Focus is a 2.5D technology that eliminates the need for manual adjustment of
+the Z height. What does that mean? No Need to move the laser up and down!
+Faster product changeover :
+• Working distance for products built into Jobs
+• No need to adjust physical laser height changeover
+Mult i - l evel mar k i n g :
+• Smart Focus head in trodu c es m u l t i - level mar k i n g in on e job
+• Mar k i n g in u p t o 5 d i ffe r ent heights/levels/ f oca l planes
+• St a tic mar k i n g and mar k i n g o n - t h e - fly
+Pilot Laser + Focus Finder:
+• Pilot Laser + Focus Finder are a standard feature (TCS+ only for Focus Finder).
+• Focus Finder will determine the working distance without the aid of a gauge or ruler.
+• Pilot Laser is a visual display to preview the printing.
+Flat Field Correction:
+• Able to use the entire marking field without losing print quality along the edges.
+0 ° to 90 °
+• Can move the marking head from 0 to 90 without any additional parts.
+Confidential - Company Proprietary
+
+Flat Field Correction with SHC - SF Head
+SHC - SF Marking Head
+Without flat field correction :
+has flat field correction:
+Beam spot size varies over the
+Beam spot size is constant
+marking field plane
+over the marking field plane
+Confidential - Company Proprietary
+
+2.5D versus 3D
+3D example: car dashboard
+XXXX
+3D support requires highly complex surface structure analysis
+and geometric compensation models of marking contents.
+2.5D example: butter tub, box with multiple levels
+- 2.5D support is required for product change over when product size changes
+(e.g. tub sizes) or multi - level mark contents (e.g. electronics housings.)
+- Up to 5 planes can be marked in single Job.
+Example:
+Example: Print on
+Different size same
+packages product at
+(ease of different
+changeover) planes
+Confidential - Company Proprietary
+
+SHC - SF Marking Volume
+Size mode
+Z - axis Working distance Spot size Field size X Field size Y
+mm um mm mm
+(job layer offset)
+WD minimum 94.77 ( - 23.10) 301 52.72 129.35
+Note: Working
+WD mid (nominal) 117.88 (0.0) 374 62.54 156.03
+distance is
+WD maximum 137.27 (19.39) 436 70.79 178.42
+asymmetrical
+(mid is not really
+Range mode
+the middle of the
+Z - axis).
+Z - axis Working distance Spot size Field size X Field size Y
+mm um mm mm
+Distance from
+(job layer offset)
+mid (nominal)
+WD minimum 94.77 ( - 23.10) 301 52.72 129.35
+is not the same
+WD mid (nominal) 117.88 (0.0) 374 52.72 129.35
+up and down.
+WD maximum 144.77 (26.90) 460 52.72 129.35
+Confidential - Company Proprietary
+
+Size versus Range Mode (SHC - SF Marking Head only)
+Range mode Size mode
+Marking field size is reduced to 52.72 x 129.35 Marking field size increases with working distance.
+mm. Marking field size is constant at all working Marking field size is larger as working distance is
+distances. increased.
+Higher working distance range of up to 50 mm Working distance range limited to 42 mm
+Areas to be marked must be between 94.7 and 144.77 Areas to be marked must be between 94.7 and 137.27
+mm from marking head. mm from marking head.
+Pro: 50 mm Z axis; constant marking field size Pro: Bigger marking fields possible
+Con: Smaller marking field Con: 42 mm Z axis; marking field size depends on
+working distance
+94 , . 7 m m 9 4 , . 7 mm
+1 4 4 . 77 mm 1 3 7 . 27 mm
+Confidential - Company Proprietary
+
+When Can SHC - SF Be Used?
+When Should SHC - SF Be Used?
+✓ All locations to be marked are within 42 mm (Size mode) or 50 mm (Range mode)
+✓ All products to be marked have been sampled together as a group
+• Spot size varies from shortest to longest focal distance. Need to verify that products all intended products can be marked
+within the range without moving marking head.
+✓ Parts marking where 5 or fewer planes to be marked.
+✓ Testing via Sample Lab is extremely important!!!
+When Should SHC - SF NOT Be Used?
+✓ Product surfaces to be marked are more than 42 or 50 mm
+✓ Significantly sloped or curved surfaces (unless tested); this is 2.5D not 3D
+3D
+2.5D
+Few applications will truly
+require full 3D
+Confidential - Company Proprietary
+
+SHC - SF Marking Head - Details
+• Marking head can be rotated in 90 - degree increments.
+• No spare parts necessary to convert from 90 degree to 0 degree (straight) or 0 degree to 90 degree. All
+necessary parts are already on board.
+• X and Y galvo positions flipped from existing heads (opposite of SHC60/100/150)
+• X/Y galvos same as SHC - 60, but Z (double mirror) is from a different supplier.
+• Inline pilot laser (part of beam turning block) instead of offset like other CO2 heads. Means pilot beam has
+same position as real beam without user software correction.
+Rotate in 90 - degree increments
+Pilot Beam turning block
+Telescope galvo
+X and Y galvos Retro reflector block
+laser
+(Z galvo)
+Confidential - Company Proprietary
+
+SHC - SF Marking Head - Details
+• Output window is not a lens!!! It is not necessary for marking, but is there to keep water, dust and fingers from
+getting into marking head. Microswitch detects if output window is in place. Fault if output window missing.
+• Marking head is the galvo block. If galvo replacement necessary, then whole head is replaced (includes CP -
+Light 3D A7). 90 - or 0 - degree spare heads available to save time (separate spare part numbers).
+• Smaller spare parts such as output window, microswitch, beam turning block (includes pilot laser) available.
+• Each SF marking head has a unique Lens Compensation file that is stored in CMark. If marking head is
+replaced: new Lens Compensation file will be available on Sharepoint . Must be downloaded locally and then
+loaded and activated in TCS+>Laser Unit Settings. Stored by Serial Number of Marking Head, not by laser
+Serial Number.
+Microswitch
+Pin is pressed
+up by output
+window when in
+place pushes
+button on
+microswitch
+Output window
+Confidential - Company Proprietary
+
+How Does Smart Focus Work?
+Rotational movement of the
+double - mirror Z galvo
+effectively changes the
+distance to the focal point.
+As double mirror
+Z galvo rotates
+the working
+distance changes
+Beam Path Animation
+In the SHC - SF marking head the optical path length variation is realized
+by a double mirror system driven by a galvanometer and a retro
+reflector mirror system. The advantage is a fast (galvo) and highly
+integrated (rotational vs. linear) solution for a variable optical telescope
+Working Distance Range Animation
+Confidential - Company Proprietary
+
+SHC - SF Beam Path
+Input laser beam (straight out)
+beam combiner
+Z - scanner ( telescope )
+Input laser beam (90 ° )
+Double - mirrors of telescope
+Aperture
+Pilot laser turning mirror
+Retro - reflector (2 mirrors)
+Pilot laser
+Turning mirror
+Output window
+Y - scanner
+X - scanner
+Focal plane WD min
+Focus Finder mirror
+2nd telescope lens
+Focal plane WD mid
+1st telescope lens
+Focal plane WD max
+Confidential - Company Proprietary
+
+SHC - SF 90 Degree Beam Path
+Sequence* Descriptive Name
+1
+Pre - Lens
+SHC - SF Beam Path – 90 ° (Standard) 2 Beam Combiner
+3 Deflection Mirror
+4 Deflection Mirror
+5 First Telescope - Lens
+Beam Combiner Second Telescope - Lens 6 Telescope - Mirror 1
+Deflection Mirror
+7 Telescope - Mirror 2
+Pre - Lens
+8 Retro - Reflector - Mirror 1
+9 Retro - Reflector - Mirror 2
+10 Telescope - Mirror 2
+11 Telescope - Mirror 1
+12 Second Telescope - Lens
+Y - Mirror
+13 X - Mirror (Scanning Mirror)
+14 Y - Mirror (Scanning Mirror)
+15 Output Window
+Retro - Reflector - Mirrors
+Pilot Laser
+Deflection Mirror
+Telescope - Mirrors
+Output Window Telescope Rotor
+*Sequence for beam path
+X - Mirror
+First Telescope - Lens
+Confidential - Company Proprietary
+
+SHC - SF 0 - Degree Beam Path
+Sequence* Descriptive Name
+SHC - SF Beam Path – Straight Out
+Difference in Beam Path (0 vs 90)
+1
+Pre - Lens
+0 - degree beam path only uses one deflection
+2 Beam Combiner
+mirror (pilot uses both deflection mirrors).
+Pre - Lens
+3 Deflection Mirror
+90 - degree path uses both deflection mirrors
+4 First Telescope - Lens
+for beam path.
+5 Telescope - Mirror 1
+Beam
+6 Telescope - Mirror 2
+Combiner Second Telescope - Lens
+7 Retro - Reflector - Mirror 1
+8 Retro - Reflector - Mirror 2
+Deflection Mirror
+9 Telescope - Mirror 2
+10 Telescope - Mirror 1
+11 Second Telescope - Lens
+12 X - Mirror (Scanning Mirror)
+Y - Mirror
+13 Y - Mirror (Scanning Mirror)
+14 Output Window
+Retro - Rreflector - Mirrors
+Pilot Laser
+Deflection Mirror
+Telescope - Mirrors
+Output Window
+X - Mirror Telescope Rotor
+*Sequence for beam path
+First Telescope - Lens
+Confidential - Company Proprietary
+
+New
+How Focus is Achieved
+Simplified version of how focus is achieved:
+Pre - lens: minor focusing just to reduce power losses on internal aperture (the laser beam itself is slightly divergent)
+1.lens: creating a focus between the two telescope lenses ( Keplar principle)
+Telescope: optical component to vary the beam path length between 1. and 2. lens
+2.lens: focusing output beam
+Window (output): just ingress protection, not adding optical properties
+Focal plane: varies with the beam path length between 1. and 2. lens determined by the telescope
+Confidential - Company Proprietary
+
+SHC - SF Optional Air Knife
+Integrated output window
+• Provides flow of air across
+output window
+• Keeps window cleaner longer
+• Best for applications where
+debris will fall onto window
+(head up applications)
+• Do not use if customer cannot
+provide dry & oil - free air!!
+Specifications
+Maximum pressure 2 bar (29 psi)
+Air quality Dry and oil - free
+Tube Diameter (input) 6 mm
+Confidential - Company Proprietary
+
+SHC - SF Marking Head: Convert 90 - to 0 - Degree
+Note: If you remove microswitch to give
+1) Disconnect cables from CP - Light 3D A7 and remove head.
+you more room to work, don’t lose the
+2) Remove marking head cable.
+pin that senses output window.
+3) Remove Beam Turning Block from head
+4) Rotate top 180 degrees (notch indicates head orientation desired)
+Upper portion
+5) Move plugs from top to back
+with arrow to be
+6) Re - route marking head c able through top opening
+rotated
+Beam Turning Block
+Confidential - Company Proprietary
+
+CP - Light 3D A7
+• CP - Light 3D A7 used only with SHC - SF marking head.
+• SHC 60/100/150 marking heads use traditional CP - Light.
+• SHC - SF marking heads have a unique Lens Compensation file is uploaded and stored on Chameleon.
+Make backup of this file in case it is lost or overwritten! If you replace marking head then it will come
+with a new Lens Compensation file on USB. Load via TCS+ and Activate (Laser Unit Settings>Lens
+Compensation). Backups will also be stored on Sharepoint .
+LVDS
+X, Y and Z
+X
+Y Z
++48 VDC
+galvo current
+outputs
+X
+Shutter
+Colors (heat shrink & dots)
+X = Blue
+Y = Black (no dot on board)
+Y
+Pilot laser
+Z = Yellow
+X, Y and Z
+Microswitch
+Z
+galvo
+(protective window)
+feedback
+Emissions LED
+Confidential - Company Proprietary
+
+CP - Light 3D A7 - LEDs
+LEDs here should be
+on green all the time.
+LED Name Behavior
+Fault Red; On only if fault
+Alive Green Flashing
+Done Green On
+COM Error Red On during early boot; Off after laser boots
+Confidential - Company Proprietary
+
+Digital Access Box &
+New Software Management Procedures
+Confidential - Company Proprietary
+
+3350 Connectivity + Smart Focus = Futureproof
+3350’s connectivity allows customers to purchase a solution that can adapt to a changing production environment.
+Connectivity enhances the strengths of the products we offer.
+• Automation
+• Connections to other plant systems to handle production monitoring and job selection. No need to physically interact with the
+3350 interface.
+• When a changeover occurs, the Smart Focus marking head can handle a change in distance to the product without manual
+intervention
+• When put together – a 3350 connected to a PLC with a Smart Focus marking head is a winning combination. Customers no
+longer have to worry about adjusting their laser as a part of their changeover routine (and risk errors occurring)
+• Over - the - air (OTA) updates – The ability to update a device without the need of a service tech
+• Safety and stability: As new safety updates become available, the 3350 can be automatically updated. Customers can count on
+the latest safety updates being sent directly to the unit
+• Future functionality and applications: As we develop new capabilities, modules, and software, customers can access it directl y
+and on day 1.
+• VRS monitoring – with cellular connectivity, customers can opt to connect directly to VRS without going through IT
+hurdles.
+• Portability – Less wires mean more mobility. Less ethernet drops mean less workload, cost, and maintenance
+Confidential - Company Proprietary
+
+Access Box Specifications
+Access box: Used for VRS and OTA (Over the Air) Software Updates
+➢ Internal RES on laser establishes connection to VRS (vrs.videojet.com) – and -
+➢ Connection to software updates via Videojet Workflow Portal (wfx.videojet.com)
+➢ Setup via TCS+ (Laser Unit Settings) only!! SmartGraph and CLARiTY do not contain settings
+➢ Two versions of access box : Wi - Fi only - or - Cellular and Wi - Fi. Version coming with laser determined by
+certification by country. Spares available for both configuations.
+VRS not required for OTA.
+✓ Standard on all 3350 units (where certified)
+Cell service included in price of unit; no monthly fee.
+✓ IP65 rated with cable length of 3 meters
+✓ Only one cable needed: USB - C plugged directly into Chameleon board (minimum Chameleon AL - 80518 which
+is red and has USB - C )
+Cellular = VRS and WFX Portal only
+✓ No external power supply needed
+✓ Cable cannot be removed from either supply unit or access box
+Wi - Fi = VRS and WFX, but also
+✓ Same Wi - Fi / cellular modules will be used as 1580 + and 1580 - C
+customer use such as TCS+, Ultimate,
+✓ Box will have different mounting options
+All Print Basic, etc.
+• Certification for 17 tier 1 countries (countries with VRS)
+• Austria, Brazil, Canada, Dominican Rep., France, Germany, Italy, Mexico, Netherlands, Poland, Portugal, Puerto
+Rico, Spain, Switzerland, Turkey, United Kingdom, United States
+Confidential - Company Proprietary
+
+Mounting Options for Access Box
+a. Default placement of the box will be on the side of the supply unit. Supply unit has threaded
+holes on side for mounting box.
+b. Bracket (included) that allows the service technician to place the box somewhere on the bottom
+side of the supply unit. Bracket fits between bottom of supply unit and mounting plate on H -
+based stand or other mounting.
+c. The access box can be placed anywhere in the customer environment within the cable range
+(3m) and attach it with zip ties.
+c
+a
+b
+Note: Access box color will be black at launch
+Confidential - Company Proprietary
+
+Connection of Access Box to Supply Unit
+a. Access box USB - C cable will be fed through cable gland on back side of supply unit
+b. USB cable will be guided to front side of supply unit
+c. USB cable will be connected to Chameleon USB - C port (must use Chameleon MCIP Artix which has USB - C; AL -
+SP80518; older Chameleons do not have USB - C connector). Note: Chameleon silkscreen may say AL - 80521. This is the
+base level board, but not the finished good part number. See sticker on board for actual PN & Rev
+Note: Power and signals on this cable. If for any reason customer requires removal of Access Box, ensure that cable is not
+connected to Chameleon on inside. Leaving open end on outside of supply unit could cause damage to Chameleon.
+Carrier board
+a
+a
+b
+New standard back
+plates with gland for
+c
+Access Box cable.
+Cellular module Wi - Fi antenna
+Cellular antenna Wi - Fi module
+Confidential - Company Proprietary
+
+Software Management
+New Procedure
+• CMark versions controlled by wfx.videojet.com portal. D igitally signed CMarks will be available.
+• CMark installed on laser will be compared to latest available version on portal and user notified if new
+version available. Can install updates automatically (if internet/cellular connection) or manually (with or
+without internet/cellular connection).
+• SARs are purchased either during sale or via traditional SAR channel. No Workflow Modules or
+purchasing SARs via WFX portal. Not like CIJ.
+• Escalation CMark can be assigned to specific lasers instead of sending and potentially having test
+software found on non - escalation lasers.
+• Resync required after Rescue Stick or Chameleon board change.
+What Stays the Same
+• Loading of CMark, SARs, etc. still the same process via File Management in TCS+; can now load
+CMark even when CMark isn’t on board such as after Rescue Stick as long as proper Plexmark (version
+2.x) is present on Chameleon.
+Confidential - Company Proprietary
+
+WFX Portal (wfx.videojet.com)
+• Same portal that has been used for CIJ for years.
+• Same symbols, but laser will not have Workflow Modules or SARs managed through portal.
+• CMark versions will be available through specific laser Serial Number (shows if new CMark available)
+or generic versions via Management>Product .
+There w ill not be SARs or WFMs shown here – Laser not adopting
+this method of distribution for SARs and no WFMs exist.
+Confidential - Company Proprietary
+
+CMark 5 Changes
+Confidential - Company Proprietary
+
+CMark Loading Changes with CMark v. 5.x
+• CMark must now be zipped with 7zip, though file extension will still be .zip
+• Requires password to unzip (Not meant to be unzipped. Open archive to view files instead of
+unzipping.) Intended to keep people from modifying CMark.
+• To load CMark v. 5.x the Chameleon board must have Plexmark v. 2.4 or newer installed
+first (Rescue Stick). Only when Plexmark 2.x or higher is present will CMark 5 be loaded. Older
+Plexmark such as 1.14 will not create correct partitions for loading.
+Rescue Stick ( Plexmark )
+➢ Use Rufus freeware to write PlexMark to USB (2 GB minimum)
+Plexmark v. 2 is not backwards compatible for loading CMark v. 4. Need to be prepared with both
+rescue sticks/ Plexmarks depending on which CMark you need to load!
+➢ Rescue Stick ( Plexmark ) for CMark v. 4.x = Plexmark v. 1.14 (3x40)
+➢ Rescue Stick ( Plexmark ) for CMark v. 5.x = Plexmark v. 2.4 or newer (3350)
+Confidential - Company Proprietary
+
+CMark 5
+General
+• No Web Interface. All Web Interface functions now in TCS+ for improved security
+• Support for SHC - SF marking head
+• No RES necessary for VRS. Software which was on RES is resident on laser now.
+• VRS support for SHC - SF features: view working distance offsets, layer information, etc.
+• Over the Air CMark Upgrades (OTA) available (in conjunction with Digital Access Box or internet - facing network
+connection).
+• CMark package changes - compressed with 7z instead of zip, but still.zip file extension. Get an error now when try to
+open with zip program. Also now need a password to open file. Updating CMark on laser remains the same.
+• Date Change offset can be specified in minutes (TCS+ and SmartGraph )
+• Expanded network settings including improved ethernet (DHCP and DNS available).
+• Engineering Logs available via VRS.
+• Can use NTP or get time from VRS . More time zones than previous.
+• PLC ( EtherNet /IP and PROFINET) process data now include Job Working Distance to support SHC - SF 2.5D capabilities.
+• ECC200 IDMatrix now supports many DMRE ( Datamatrix Rectangular Extension) formats (rectangular to fit better on
+small spaces, but extension so can hold more data)
+• New version Allprint Basic (v. 2.x) that includes command SetPositionWdOffset for SHC - SF
+• Total and Used Memory now shown in TCS+>System Information; broken down by type of memory
+Confidential - Company Proprietary
+
+New
+Other New Software in the Works
+Ultimate In progress New command to adjust Working Distance Offset for SHC - SF marking
+head
+AllPrint Basic In progress An updated version of the Allprint documentation will be available.
+version 2.x Only one new command has been added (adjust Working Distance
+Offset for SHC - SF head)
+Rescue Stick Released Supports install of CMark v. 5; will be available on Sharepoint
+( Plexmark version
+2.4)
+EDS file for In progress; will be We want to switch to a single EDS instead of multiple files for individual
+EtherNet /IP post launch Lasertypes . We have a preliminary EDS file, however, as industrial
+protocol certification will happen post launch, the eds might be subject
+to be changed during certification process.
+GSD file PROFINET In progress; will be Same as above.
+post launch
+Confidential - Company Proprietary
+
+New Features in TCS+
+(CMark 5.x)
+Confidential - Company Proprietary
+
+New: See note in yellow highlight below
+TCS+ New Features (CMark v. 5.x)
+• Security improvements for Users, Auto Logout, etc. (See next slide; very important changes!)
+• Pilot Laser Dialog in TCS+ changed to allow display of different Layers (for support of SHC - SF marking head) and
+can be accessed in more locations (Main Menu, Job Editor and Line Setup)
+• Multi - Selection Tool – allows editing of multiple Job Elements at once such as Position, Mark Settings, Filling, and
+change Layer assignment. Can be done with or without Grouping which is now available here instead of Add Job
+Elements menu.
+• Ability to link “Line Setup” to Job (Main Menu>Main Settings) [Note: Links between Jobs and Link setup are
+currently broken when loading a Complete Laser Image Backup or backup of Job. Resolution in progress, but may
+not be fixed before launch}
+• Complex Text (multi - line) support including ability to apply Font and spacing changes to some or all of line(s)
+• Test Pattern creation possible (like SmartGraph )
+• Matrix support (rows and columns like SmartGraph )
+• Job Information visible (estimated time to mark, number of vectors, etc.)
+• MOTF Sorting Angle adjustable now
+• CO2 Laser Position and Scaling Factor now adjustable in Laser Unit Settings>Laser Configuration (global setting;
+now like SmartGraph has always been).
+• Search available in Manager dialogs (Jobs, Line Setups, Mark Settings)
+• Enable/Disable HTTPS for TCS+ webserver and upload customer SSL certificates
+• Cellular, Wi - Fi and Ethernet – Cell and Wi - Fi enabled by default (where access box is installed).
+Confidential - Company Proprietary
+
+Updated
+Security Features TCS+
+To improve security, TCS+ in CMark v. 5.x contains the following features:
+• Upon install new passwords for default users must be created on first login (Administrator,
+Supervisor, Operator). 2222, 1111 and 0000 used for initial login, but will be prompted to create new
+password.
+• User list not displayed and user must type in User Name to login ( can change to show list in
+Users>Wrench icon>Login Settings ).
+• Limits/rules on acceptable User names . Example: cannot create user called Admin or Admin1.
+• Auto Logout on by default . Can disable, but even if disabled any Users with Administrator ROLE will
+still be logged out after 5 minutes of inactivity.
+• When no one is logged in then Job Preview is hidden (Can turn this off in Users>Login Settings)
+• Enable/Disable HTTPS for TCS+ webserver and upload customer SSL certificates . HTTPS
+enabled by default.
+Please leave the above security features enabled. Notes on how to turn off some features are provided as
+guidance where 3340 customers find new behavior unacceptable. Do not include italicized text on how to turn off
+features in customer trainings.
+Confidential - Company Proprietary
+
+Service User Only Settings
+➢ Requires daily password
+➢ No other user can be assigned Access Rights to the following:
+(All in Laser Unit Settings unless noted)
+• Edit serial number
+• Change laser type
+• Select marking head
+• Select safety circuit
+• Load system settings via barcode (this is for VJ manufacturing only)
+• Reset CP - Light
+• Upload System Database
+• Delete System Database
+• Save Current S ystem D atabase as Factory
+• Settings „Remove Service Session“ for VRS
+• Disable Focus Finder (in Main Menu>Main Settings)
+There are additional items that only Service user sees by default, but access
+rights can be granted to other roles (Arc Compensation, Multi - Laser Functionality, etc.).
+Confidential - Company Proprietary
+
+Updated
+Options for Access Box (VRS & WFX)
+In order of priority in system:
+1) Cellular directly from laser Access Box (Internal RES)
+2) Wi - Fi to customer Wi - Fi network (if internet facing then use Internal RES; if not then must use External RES)
+3) Wi - Fi to Cradlepoint (use Wi - Fi from Access Box on laser to CG100 ( Cradlepoint /SAFE panel) which
+has External RES (set laser to External Res)
+4) LAN to customer network (if internet facing then use Internal RES; if not then must use External RES)
+In addition to VRS and WFX portal, customer can also use Wi - Fi for TCS+, Ultimate, etc.
+Cellular is only for VRS and WFX portal.
+Note: Setup Cellular, Wi - Fi and LAN in TCS+ > Laser Unit Settings (no Web Interface
+anymore in CMark v. 5)
+VRS service is not required for OTA CMark updates. Services are independent.
+Confidential - Company Proprietary
+
+OTA and VRS Install Process
+Pre - work
+• Site survey: Check if cellular signal available in area where laser will be installed. If no cellular signal with mobile
+phone, use CG100 site survey kit to see if CG100 is possibility to use cellular for VRS/OTA (Over the Air Updates of
+CMark).
+• OTA: Ensure Serial Number/laser is in WFX Portal
+• VRS: Generate VRS Activation Code (code good for up to 30 days for unlimited number of printers/lasers, but only
+valid for 48 hours after first use)
+Installation (Cellular)
+1) Login to TCS+ via TU440 or web browser on laptop (IP of laser) as Service user
+2) Go to Main Menu (wrench icon)> Laser Unit Settings
+3) Verify Serial Number
+4) Set Name of laser (will be used as Friendly Name in VRS and in WFX Portal)
+5) Set Country (sets Cellular frequency bands and carrier)
+6) Press Save button
+7) Reboot laser and allow some time for cellular to connect. Login again.
+8) Ensure LTE cellular connection in Main Menu>Laser Unit Settings> Cellular . Allow 5 minutes if GSM for laser to find and
+establish best connection. Must have LTE service or VRS cannot be connected via cellular.
+*If Cellular is not available and OTA/VRS is desired, then set Wi - Fi or LAN for use with internet facing customer network (with
+internal RES) or CG100 ( Cradlepoint /SAFE) to use traditional RES.
+For CG100 connection: disable Cellular and Enable Wi - Fi (Main Menu>Laser Unit Settings>Cellular or Laser Unit Settings>Wi -
+Fi) Connect to Videojet Wi - Fi SSID. Password is already programmed in the system when the laser sees Videojet Wi - Fi
+available. See VRS Installation Manual for CG100 configuration.
+Confidential - Company Proprietary
+
+Cellular
+• Enabled by default as long as there is Access Box that includes cellular (certified countries only)
+• Laser automatically looks for cell signal and tries to establish communications to VRS and wfx
+• Ensure “Country” is set correctly in Laser Unit Settings>Laser Configuration so that cellular uses correct frequencies.
+• Allow time for cellular to establish good connection . LTE connection (4G) is necessary for stable VRS connection. GSM
+(3G) cellular is not allowed for VRS connection. Must use alternate method for connection, such as CG100
+( Cradelepoint /SAFE), if cellular is not LTE.
+• No settings in Cellular to adjust. It is either Enabled or Disabled. The rest is up to the system.
+Confidential - Company Proprietary
+
+Wi - Fi
+Connect/
+Disconnect/
+Details
+Wi - Fi Disabled Wi - Fi Enable and
+Wi - Fi Disconnected,
+(no icon) Connected
+but Enabled
+Confidential - Company Proprietary
+
+OTA and VRS Install Process
+After cellular, Wi - Fi or LAN connection established. Must have connection to internet to have Over the Air
+Updates. If laser will have no connection, then disable automatic updates so doesn’t give confusing info
+to customer.
+Set OTA (Over the Air) update behavior (even if updates not desired):
+1) Main Menu>Laser Unit Settings> Software Download
+2) Register Laser with wfx.videojet.com portal by pushing Register Laser button. Laser Registered box
+should appear after a few seconds.
+3) With keyswitch open, allow 5 minutes to see if update if available.
+4) If update available, install before proceeding by rebooting laser after screen shows Download 100% and
+there is an Update button shown in gray under Available versions. Behavior is set to automatically install
+update upon startup. Ensure update is installed and laser rebooted prior to completing next steps.
+5) Return to Main Menu>Laser Unit Settings> Software Download
+6) Disable automatic updates if SmartGraph customer or if pharma/med, or if customer preference
+by unchecking box for “Activate Over the Air Upgrade”. Auto updates to the laser will result in a mismatch
+of versions between laser and PC where SmartGraph is installed. This will lead to inability to connect
+laser to SmartGraph . Pharma customers may have to revalidate line if laser CMark updates.
+7) Select Upgrade Behavior from drop - down menu and set desired behavior (install updates on start - up,
+shutdown or manually meaning the customer will be notified and must allow. This is similar to mobile
+phone notification that update is available)
+8) Press Save button.
+Confidential - Company Proprietary
+
+OTA (Over the Air) Software Updates
+• Registration : Displays the status of laser registration. You must have cellular/internet connection to Register the Laser and for OTA.
+• Connection : It displays the status of laser connection with Videojet Portal. -- Polling mechanism pings wfx.videojet.com every 3 minutes to c heck
+for connection and if new Cmark version available. Only downloads new version during Keyswitch Open or Fatal Error states.
+• Download : Displays the status of package download from Videojet Portal.
+• Idle; In Progress; Ready To Process; Suspended
+• Activate Over the Air Upgrade : Enables the automatic Cmark update feature. Disable if SmartGraph or pharma customer!
+• Upgrade Behavior : Displays options for different upgrade behaviors.
+• Install upgrades automatically on startup (default); Install upgrades automatically on shutdown; Manually install upgrades
+• Available Versions : It displays a Software Version along with “Currently Installed” text. If updates available then Upgrade or Download button will
+be present.
+Confidential - Company Proprietary
+
+OTA Status
+When the higher version of CMark firmware package is available on Videojet Portal, then it displays the available package
+version along with Download button, as following. Click Download button to begin download process.
+When behavior is set to Automatically install at startup or shutdown the buttons below appear, but do not require user
+intervention to proceed.
+When the CMark firmware package is already downloaded in the laser, then it displays the downloaded package version
+along with Upgrade button, as following. Click Upgrade button to install.
+During Upgrade process TCS+ via laptop will display dialog message “System is preparing for update. This may take a while,
+please do not power off. Once the laser powers off, please power it on to continue laser update.” TU440 will show white scre en
+with “update preparation in progress” shown until complete.
+After upgrade is complete with no newer version on Videojet Portal the following message is displayed :
+Confidential - Company Proprietary
+
+OTA Notifications
+Information messages are displayed on home screen to notify users with OTA software updates received
+from portal.
+Note that the message description displayed i s based on the upgrade behavior mode that user selected.
+The modes can be set from drop down menu available on Laser Unit Settings>Software D ownload page.
+Message possibilities:
+• 60001: New firmware is ready for manual installation.
+• 60002: New firmware is available for download.
+• 60003: New firmware is ready for download and installation.
+• 60004: New firmware will be installed automatically on next shutdown of the system.
+• 60005: A firmware download was canceled when the key switch was closed.
+• 60006: New firmware will be installed automatically on next start - up of the system.
+Confidential - Company Proprietary
+
+Software Management in Portal (Laser Offline)
+• If there will be no connection at laser, best practice is still to Register Laser, but will be a manual process similar to CI J. This allows for
+dashboard view via WFX Portal to see installed software on laser and to quickly assess from WFX Portal if a new, mandatory or
+escalation version of CMark is available or required.
+• Registration is only done when the laser is connected. If offline (no connection) then registration process is one - way (upload o f PRI to
+portal manually)
+• All following steps are assumed using TCS+ connection via Web Browser and PC.
+1) In Laser Unit Settings>Software Download, press the Export Registration File button.
+2) In Export Registration File dialogue click on Export button. The PRI file is downloaded
+to your Downloads folder on connected PC .
+3) Connect via PC with internet connection to the Videojet Portal.
+4) Search by Serial Number for the Laser and when found click on Upload PRI
+5) After upload, the portal will determine if a new version of CMark is available or
+required. (Red triangle= mandatory update available; yellow triangle = optional update
+available and gray triangle = software update for laser has been downloaded, but no
+new PRI has been loaded to portal to verify status). Download if desired or required.
+6) Ensure downloaded package (CMark) name begins with “ cmark ” before loading via
+TCS+>File Management. CMark file names must begin with “ Cmark ” (not case
+sensitive) or file will be seen by laser as invalid file type.
+7) Reboot laser to install new CMark.
+8) Export new PRI (Laser Unit Settings>Software Download>Export PRI)
+9) Load updated PRI to WFX Portal to close loop.
+10) Cycle is complete.
+Confidential - Company Proprietary
+
+New
+What if… Portal Sees Laser Out of Sync
+• If CMark on laser is unexpected when PRI is uploaded to WFX.Videojet.com portal, then a Resync Package
+can be generated from portal and loaded to laser (from Other Actions>Printer Configurations).
+• Upload Resync Data button in Laser Unit Settings>Software Download only visible to Service User.
+Steps for out of sync laser:
+• Click Other Actions>Printer Configurations button
+• Select option to generate Resync Package and download
+to PC.
+• Connect to laser via TCS+ and login as Service
+Confidential - Company Proprietary
+
+New
+What if… Portal Sees Laser Out of Sync (continued)
+• Upload Resync Data to laser (success window appears).
+• Export Registration File to PC.
+• Upload PRI to portal and now laser is no longer out of sync.
+Confidential - Company Proprietary
+
+New
+What if… Chameleon Replaced
+• Must have portal admin unregister laser and then Register laser after board replacement or after Rescue
+Stick is used.
+• CMark must be installed manually on new board. Spare boards and boards where Rescue Stick used do not
+have any CMark installed and therefore are not programmed to look for wfx.videojet.com until CMark is
+installed. Manually download CMark from WFX.Videojet.com portal (Management>Products) and upload to
+laser.
+• System Database must be loaded or configured. (Country is lost upon Rescue Stick so ensure you set to
+correct Country in Laser Config after Rescue and CMark loading.
+• Connection settings (Cellular, Wi - Fi, etc.) will need to be reconfigured even if a backup of System Database
+is available. Some settings exist in System Database, but others are stored as part of CMark. This
+reconfiguration is necessary after Rescue Stick because of the divergent storage. Failure to set country
+correctly may result in no cellular connection as it is looking for wrong carriers/bands.
+• New board means new MAC address so after configuring serial number, name, country, cellular, Wi - Fi or
+Ethernet then: Register the laser onboard (if cell or other connection on laser) or download PRI from laser
+and upload to the WFX portal manually. Remember that a portal admin must first unregister the laser before
+can be registered again. Make sure you program correct serial number into Chameleon!!
+Confidential - Company Proprietary
+
+What if… OTA and Manual Update
+If OTA automatic updates are enabled and you are trying to manually update CMark through File Management,
+then the following message may be displayed:
+System having installed CMark, plus downloaded CMark from automatic updates, plus the version of CMark
+you are uploading manually could make the laser run out of disk space. Warning dialog allows you to disable
+automatic updates while loading. Can re - enable afterward.
+If you select “Yes” from dialog, then the CMark downloaded automatically by the system will be deleted in order
+to make room for your manual upload.
+Confidential - Company Proprietary
+
+VRS Install Process
+To enable VRS: Connection via Cellular, Wi - Fi or LAN must already be configured. If using external RES or CG100 complete
+RES setup prior to performing steps below.
+1) Login to TCS+ as Service user.
+2) Go to Main Menu>Laser Unit Settings> Remote Service
+3) If LTE cellular or internet facing customer network available:
+1) Checkmark Enable VRS box
+2) Select Internal RES (if not already selected)
+3) Enter Activation code (include dashes; not case sensitive)
+4) If using customer’s WLAN or LAN then check box to “Allow VRS traffic over customer network”
+5) Press Save button
+6) Status should show Active and VRS icon at top of Home screen shown
+If using CG100 or traditional RES (Configure CG100 or RES before performing the following steps):
+1) Checkmark Enable VRS box
+2) Select External RES
+3) Enter Remote Edge Server IP (RES IP)
+4) Select customer’s preferred time source (manual from laser, NTP or from VRS)
+5) If using customer’s WLAN or LAN then check box to “Allow VRS traffic over customer network”
+6) Press Save button
+7) Status should show Active and VRS icon at top of Home screen shown
+Confidential - Company Proprietary
+
+VRS Install Process
+If there is a CLARiTY Controller:
+1) Set Remote Access IP to match the IP of CLARiTY Laser Controller.
+Note: The Remote Access View button is only shown when a Remote Access IP is configured.
+Confidential - Company Proprietary
+
+Setup Smart Focus Head in TCS+
+Confidential - Company Proprietary
+
+Smart Focus Marking Head
+▪ All products intended to be marked with SHC - SF marking head on same
+production line must be sampled together to ensure they can all fit within the
+range of working distances available AND with the marking field size and spot size.
+Are any of these distances to
+product less than 95 mm or
+more than 137 (Size mode) or
+144.7 mm (Range mode)? If
+yes, then all products cannot
+be marked using only
+software adjustment!
+Difference in planes to be marked (within
+Mechanical adjustment
+single Job or among all products) smaller than
+would also be required to
+42 mm (Size Mode) or 50 mm (Range Mode)?
+reach all products.
+Then all products can be marked using only
+software adjustment.
+Confidential - Company Proprietary
+
+Save often. Admin user is logged out after 5 minutes!
+Setup of Smart Focus Head TCS+ (No Complete Laser Image Available)
+1) Based on sample report results (PDF), select a product that was sampled and physically adjust laser
+marking head distance to product based on sample results. Example: 12 - ounce bottle sample result states
+working distance 123 mm Working Distance. Position laser marking head flat surface (area outside of
+protective window; flat, black area) 123 mm from surface to be marked on 12 - ounce bottle.
+2) Based on Sample Report (PDF), were products sampled using Range Mode or Size Mode ?
+3) Are all other product marking surfaces between 95 mm and 137 mm from the face of the laser marking
+head (Size Mode) or 95 mm – 144.7 mm (Range Mode)? If surfaces intended to be marked on any
+products fall outside of these ranges, then Smart Focus head software adjustment alone will not reach the
+product surfaces.
+4) If all product surfaces to be marked fall within the ranges above, then proceed with next step.
+5) Login to TCS+ as Administrator (will be logged out every 5 minutes) or Service.
+6) Go to Main Menu> Main Settings and enable (check box) Link Line Setups and Jobs Individually.
+7) Create new Line Setup for customer application. In Marking Field and Test tab within Line Setup, select
+Range Mode or Size Mode from drop - down based on Sample Results (PDF). Save this Line Setup. You
+can edit the other values later as needed (Start Delay, Encoder, etc.).
+8) Create a new Job (Jobs pane>Pen button>Manage Jobs>Create button) and give the Job a descriptive
+name.
+9) From the Job Editing screen that appears, press the Line Setup button.
+10) Select the Line Setup created in previous step.
+Confidential - Company Proprietary
+
+Finding Working Distance Offset
+Product distance – WD mid = Working D istance O ffset
+Product distance: measured by you. Distance from marking
+SHC - SF
+marking head
+head face to location where product will be marked.
+WD_mid : Constant value always 117.88. It is a reference
+point off which all adjustments are based
+WD min
+N egative ( - ) WD O ffset
+Working Distance Offset: Value you enter. Enter Negative
+WD mid
+117.88mm
+number if product is closer to marking head than 117.88
+mm. Enter Positive value if product is farther from marking
+Positive (+) WD O ffset
+head than 117.88 mm.
+#1 #2 #3
+WD max
+After you enter the Working Distance Offset value into TCS+
+product product product
+then the Working Distance shown for Layer (not adjustable)
+should now equal what you measured in real life.
+Confidential - Company Proprietary
+
+Setup of Smart Focus Head
+11) Press the Layers button.
+12) Press the Pen button and select Edit for Default layer.
+13) Press the Pen button on the top of the screen to give the layer a new name if desired. If multiple planes will
+be marked in the same job then name the layer something very descriptive (such as the area to be marked
+like “top surface” or descriptive of the content that the layer should be linked to such as “logo”).
+14) Set the Working Distance Offset for this Layer (plane). The Working Distance Offset value is: Actual
+measured working distance from marking head to surface to be marked minus 117.88 which is the nominal
+reference point. Example: 123 mm working distance – 117.88 = 5.12 mm. The 5.12 mm is the value to be
+entered into the Working Distance Offset box. Example: 112.5 mm working distance – 117.88 = - 5.38 mm
+Working Distance Offset. Ensure if the measured working distance is smaller than 117.88 that the Working
+Distance Offset is entered as a negative number. After value is entered then the Working Distance shown
+should change and match the actual measured working distance
+15) If multiple surfaces will be marked within the same Job, create additional Layers, give descriptive name
+and enter Working Distance Offset. Ensure names are descriptive so that Layer can be matched to content
+in later steps!! Select different colors for different layers to make it easier to see that there are multiple
+layers from Job Edit screen.
+Confidential - Company Proprietary
+
+Setup of Smart Focus Head
+16) After Layers are created and Working Distance Offsets are entered for all planes to be marked, proceed to
+next step.
+17) Set Marking Order for Layers (if more than one layer). Extremely important if marking multiple layers on
+the fly.
+18) Add job content. While editing each Job Element, expand Layer (bottom option in right hand column) and
+select the Layer to which content should be assigned.
+19) Create all content.
+20) If content needs to be moved to a different Layer or to verify what Layer content is assigned to, press the
+Pen next to the Job Element and select Move to option
+Confidential - Company Proprietary
+
+If On the Fly with Multiple Layers
+Setup of Job with multiple planes for mark on the fly application:
+You must set the order to mark the Layers in order to most efficiently. Example: if product will be moving left to right
+under marking head, then set the Layers so that the content assigned to the layers is marking in efficient order.
+Layer 3 Set Layer order to mark:
+Layer 2
+Layer 1
+Layer 2
+Layer 3
+Layer 1
+If Marking Order of
+Layers are not set
+Product Movement (left to right)
+correctly then
+inefficient order could
+Layer 3 Set Layer order to mark:
+cause Marking
+Layer 1
+Aborted: Product
+Layer 1 Layer 2
+Layer 3
+Movement Too Fast
+Layer 2
+faults.
+Product Movement (right to left)
+Confidential - Company Proprietary
+
+Setup of Smart Focus Head
+20) To verify content Working Distances, place product to be marked in front of laser in location on production
+line where it will be marked.
+21) Press the Pilot Laser button at top of Job Editing window.
+22) Close keyswitch .
+23) In Scope section of Pilot Laser dialog, select a Layer and ensure that product surface where that Layer
+should be marked is directly across from marking head output (Focus Finder beam to be used is always
+displayed in center of marking field).
+24) Press Focus Finder and ensure dot and circle projected are completely overlapped on surface where layer
+is to be marked. If can’t see red pilot laser beam on product surface then place white tape or paper on
+surface just for this step.
+25) If dot and circle of Focus Finder beam do not completely overlap, then use the + and – buttons to adjust
+working distance by 1 mm or press the Working Distance Offset box to change the Working Distance Offset
+value by less than +/ - 1 mm. (insert capture here)
+26) Press Stop button to stop Focus Finder.
+27) Repeat using Focus Finder with any other Layers in this Job.
+28) Edit Line Setup values for Encoder and Trigger including Start Delay and Blocking.
+29) Activate the Job for marking. Activated Line Setup should also have changed to Line Setup attached to Job
+in earlier step.
+Confidential - Company Proprietary
+
+Setup of Smart Focus Head
+30) Mark Job.
+31) Administrator or Supervisor Roles can make adjustments to the Job Position (x/y position) or Job Working
+Distance through either the Quick Toolbar (unlock LOCK button in lower left first) or from the Pilot Laser
+dialogs in Main Menu>Pilot Laser or Line Setup>Pilot Laser or Job Editor>Pilot Laser. Adjustments made
+in the Pilot Laser dialogs affect the real marking as well!!!! Note: Adjustments to Layer Working Distances
+can only be accomplished through Job Editor screen either by editing Working Distance Offset in Layers or
+in Pilot Laser dialog within Job Editor screen in Scope section.
+32) If markings on all Layers within same Job are too big or small compared to size in Job Editor, trying
+adjusting Job Working Distance in Quick Toolbar or adjust Scaling. If markings on only one Layer are too
+big/small in a Job with multiple Layers then do not edit Job Working Distance Offset. Instead return to Job
+Editor screen and edit specific Layer Working Distance Offset value.
+33) Ensure proper Line Setups are attached to Jobs by verifying in Manage Jobs.
+34) Adjust Mark Settings as needed.
+Confidential - Company Proprietary
+
+Setup Smart Focus Head
+in SmartGraph
+Confidential - Company Proprietary
+
+Setup Smart Focus Head in SmartGraph
+1) Range/Size mode is a Global setting (not tied to Line Setup like in TCS+). Access from Configuration>Marking
+Head.
+2) Setup working distances for different products/different planes in Templates>Layers . If multiple planes to be
+marked in same Template, then create multiple Layers.
+3) Assign Layers to Job Elements
+4) Operator has access to adjust WD Offset in Laser Operation>Marking Adjustment. This adjusts all layers (all
+working distances within the template up/down). These distances are not changed within the template layers
+themselves.
+Note: Though the Smart Focus head can be used with SmartGraph , Focus Finder feature is not available in
+SmartGraph to assist with finding Working Distances. Additionally, Pilot Laser mode is limited to displaying all content
+whereas TCS+ can display content from each layer individually.
+For best performance with the SHC - SF head TCS+ should be used.
+Confidential - Company Proprietary
+
+SmartGraph Global Settings (SF Head only)
+Start here before creating Jobs. Know which mode you need based on sample results.
+Global Working
+Distance Offset
+(+/ - deviation from
+nominal WD
+117.88mm)
+Global Mode:
+Range or Size
+Confidential - Company Proprietary
+
+SmartGraph Template Setup SF Head
+Create Job and set working distance offset from nominal (offset from 117.88 mm WD) for this template.
+Create multiple layers if marking multiple planes within same template .
+Assign layers to pieces of content by selecting item in marking field and assign layer via bottom toolbar.
+Layers
+• New feature – working distance offset
+• Layers affect only the individual template they are created in/attached to.
+• Create/access Layers dialog by right clicking within unpopulated part of marking field and select Layers from the drop -
+down menu. Assign Layers to content after creation.
+Confidential - Company Proprietary
+
+SmartGraph Template Setup SF Head
+Range Mode
+Size Mode – Marking Field Changes
+Marking Field size does not change. Boundaries always the
+same.
+Size Mode Only
+Marking Field changes size when selecting elements
+belonging to layers with different working distance offset.
+Examples here show Size Mode effects on Marking Field.
+Note distances
+Blue/smaller working distance layer selected.
+between
+Smaller marking field boundaries displayed.
+marking field
+boundaries
+and toolbars.
+Toolbars were
+stationary.
+Marking field
+changed based
+on selection.
+No content selected. Maximum boundary shown.
+Red/larger working distance layer selected.
+Larger marking field boundaries displayed.
+Confidential - Company Proprietary
+
+SmartGraph Operator Control – SF Head
+Laser Operation>
+Marking Adjustment>
+Working Distance Offset –
+controls working distance
+offset outside the template.
+Affects all layers within the
+template.
+This modification will not be
+visible in the template. The
+offset is preserved even after
+selecting another template to
+mark.
+Per Template basis.
+If global (all templates)
+adjustment is needed, then
+adjust in
+Configuration>Marking Head.
+Confidential - Company Proprietary
+
+Where is it?
+Feature TCS+ SmartGraph
+Range Mode/Size Mode Setting Line Setup (Line Setup Specific; not Configuration>Marking Head (Global setting)
+Global)
+Set Working Distance (within Job/Template) Layers Layers
+Pilot Laser
+Set Global Offset from nominal Laser Unit Settings>Laser Config (Global Configuration>Marking Head (Global Offset)
+Offset)
+Pilot Laser to display different Layers (Focus Job Editor NA
+Finder in the Pilot Laser window) Line Setup Editor
+Main Menu>Pilot Laser
+Setting to enable Link Line Setup to Job Main menu>Main Settings NA - Product Registration is always linked.
+Link Line Setup to Job Job Editor (button) or Job Manager (drop - NA
+down)
+Job Information (estimated mark time) – “i” icon Job Editor Template tab
+Grouping Job Editor>Multi - selection tool Template tab>Group button top toolbar
+Disable HTTPS Main Menu>Main Settings NA
+Confidential - Company Proprietary
+
+Maintenance & Troubleshooting
+Confidential - Company Proprietary
+
+Preventative Maintenance
+Maintenance Interval Measures
+Daily or as necessary Inspect supply unit fan filters (not applicable on IP65). Replace as necessary.
+More frequently when operated in dirty ambient conditions.
+Monthly or as necessary (more Inspect the filters in blower unit (IP65 only). Replace as necessary.
+frequently when operated in dirty
+ambient conditions)
+Monthly or as necessary (more Inspect the output window for dust or dirt. Clean the window when necessary.
+frequently when operated in dirty
+ambient conditions)
+When control lamp on Fume Replace filters on fume extractor. Pre - filter will usually need to be changed more
+Extractor lights up often than Combined (charcoal) filter. Exchange Pre - filter and if control lamp on
+fume extractor remains on then change Combined (charcoal) filter.
+Every three months (more Carry out a visual inspection of the laser system including warning labels. They
+frequently when operated in dirty must be readable and positioned correctly.
+ambient conditions) Check the product detector (light barrier). Clean or readjust as necessary.
+Every six months Inspect laser tube and blow off with compressed air if necessary
+Annually Exchange Combined filter (charcoal filter) on fume extractor. Charcoal absorbs
+moisture from the air and loses efficiency.
+Confidential - Company Proprietary
+
+Backups
+Type Frequency of Create… Includes
+backup required
+System Database Infrequent After installation Model, head, lens and other laser configuration settings
+saved on EEPROM. Backup creation very quick.
+Lens Compensation Infrequent At installation or if Unique compensation file specific to individual marking
+(SHC - SF only) Marking Head is head. Backup is available on FOBA - Alltec Service Pages
+Exchanged Sharepoint space (need serial number of marking head,
+not serial number of laser).
+CMark Backup Less frequently After installation and at Entire CMark including customer database. Takes 20 - 30
+preventative maintenance minutes to create backup. Does not include System
+visits Database.
+Complete Laser Image Most frequently At preventative Customer database. Useful if CMark needs to be
+(TCS+) or Backup of maintenance visits or reloaded and no CMark backup available. Backup
+Database in SmartGraph more frequently if creation is very fast. Goal: Backup of jobs, logos,
+or Clone in CLARiTY customer creates parameters/mark settings, product reg./line setup.
+significant number of
+jobs.
+Confidential - Company Proprietary
+
+CMark Loading Changes with CMark v. 5.x
+• CMark must now be zipped with 7zip, though file extension will still be .zip
+• Requires password to unzip (Not meant to be unzipped. Open archive to view files instead
+of unzipping.) Intended to keep people from modifying CMark.
+• To load CMark v. 5.x the Chameleon board must have Plexmark v. 2.4 or newer installed
+first (Rescue Stick). Only when Plexmark 2.4 or higher is present will CMark 5 be loaded.
+Older Plexmark such as 1.14 will not create correct partitions for loading.
+Confidential - Company Proprietary
+
+Rescue Stick for CMark 5.x
+➢ Must use Plexmark v. 2.4 or newer in order to load CMark 5. Cannot load CMark v. 5.x if
+older Plexmark has been used. Partitions the board differently than for CMark v. 4.x.
+➢ Use Rufus freeware to write PlexMark to USB (2 GB minimum)
+Plexmark v. 2.4 is not backwards compatible for loading CMark v. 4. Need to be prepared with
+both rescue sticks/ Plexmarks depending on which CMark you need to load!
+➢ Rescue Stick ( Plexmark ) for CMark v. 4.x = Plexmark v. 1.14 (3x40)
+➢ Rescue Stick ( Plexmark ) for CMark v. 5.x = Plexmark v. 2.4 or newer (3350)
+Plexmark v. 1.14 is backwards compatible and can be used with all multicore Chameleons. No
+need to carry Plexmark v. 1.7 anymore.
+Confidential - Company Proprietary
+
+Z Galvo (Telescope Galvo) Errors (Hardware)
+Symptom(s): W10415 or E10414 The validation of the template has failed: The target working
+distance offset is outside the allowed range. Affected Layer(s): xxx (name of Layer).
+Check:
+1) Was Job created with Range Mode selected in Line Setup? If Line Setup is changed to Size
+Mode or if different Line Setup is selected which is set to Size Mode then Job (Layer) may contain
+entry that is outside bounds of Size Mode.
+2) Ensure calculated Working Distance is really inside working distance adjustment range (Laser
+Unit Settings>Laser Configuration page for the upper and lower limits for Range Mode and Size
+Mode.
+3) Working Distance Adjustment in Home screen Quick Adjust toolbar. Has someone made
+adjustment here that when added to Layer working distance offset results in out of range?
+4) Is Working Distance Zero position in Laser Unit Settings>Laser Configuration set to value other
+than 0? If value other than 0, then when added to the WD offsets within Layers of Job the total
+might be out of the possible range.
+Confidential - Company Proprietary
+
+Z Galvo (Telescope Galvo) Errors (Hardware)
+Symptom(s):
+• E009010 Due to an error the Z mirror was brought to a position beyond the admitted maximum
+area - or -
+• E009011 The current consumption of the Z mirror is too high – or -
+• E009013 The Z mirror is not connected correctly to the FM/MHI board. A cable might be loose or
+broken.
+Check:
+1) Current out and feedback in connectors in place and seated well at CP - Light 3D A7 board? Colors
+of heat shrink match dot on board for connection?
+2) Connector securely connected at Z galvo in marking head?
+Confidential - Company Proprietary
+
+Identifying Working Distance Issues with SF Head
+Symptoms: Code is not the correct size on product (characters too large or too small)
+Check if measured Working Distance is correct. Try increasing or decreasing Working
+Distance Offset value for affected Layer/content. Especially true when multiple Layers (planes)
+in same Job.
+Confidential - Company Proprietary
+
+Protection Window Not Mounted
+Symptoms: E09105 Protection Window Not Mounted
+Check:
+1) Is protection window in place?
+2) If window in place, but error still occurs then with
+power to system off remove side plate of marking
+head and verify microswitch is present and connected
+correctly (red wire on top and gray wire on side as
+shown here).
+3) Is Contact Pin present? It is possible for this pin to fall
+out if microswitch was removed during service. Pin is
+not captured. If pin is missing order new microswitch.
+4) Test continuity of microswitch using meter. Push on
+button on microswitch while reading continuity. If open
+while button is depressed, then replace microswitch.
+5) Ensure spade of microswitch is within metal of
+connector and not between plastic and metal.
+Confidential - Company Proprietary
+
+Replace Smart Focus Head
+The SHC - SF marking head is replaced with a complete new marking head and matched CP -
+Light 3D A7 board. Additionally, the existing Lens Compensation file must be deleted first and
+then new Lens Compensation file must be loaded and activated .
+New Lens Compensation file is not included with spare marking head. Must be downloaded
+from Danaher Sharepoint in the FOBA - Alltec Service Page space. The files are organized by
+serial number of the MARKING HEAD not the laser system serial number.
+Confidential - Company Proprietary
+
+Backup, Delete or Activate Lens Compensation
+Always backup existing Lens Compensation as one of first steps of installation on laser with SHC - SF.
+Backup Lens Compensation File:
+Must be logged in as Service for the following: TCS+>File Management>Lens Compensation>Pen>Show
+Content>Download.
+Note: There are several Lens Compensation files actually loaded on laser,
+but only the user (unique, calibration for specific marking head) will
+be shown in File Management.
+Replacing Marking head:
+Download Lens Compensation file for new marking head from FOBA - ALLTEC Service Pages>Service>Software>Hires
+Files>download file based on serial number.
+Must be logged in as Service to perform the following steps (must use PC with web browser not TU440):
+1) Delete the old Lens Compensation user file (Laser Unit Settings>Lens Compensation> press Pen button next to shc -
+sf_hiresxxx_ usr .xml and select Delete).
+2) Only KTE and shc - sf_hiresxxx_def.xml should now be shown.
+3) Press File Management button and then Upload button when File Management dialog appears.
+4) Navigate to new Lens Compensation file and select.
+5) Once confirmation that loaded press the Close button to return to Laser Unit Settings>Lens Compensation.
+6) New file should now be shown (usr.xml), but must now be activated.
+7) Press the umber of new marking head. File does not come in package with new head.
+8) Activate Best Compensation button. The word Active should now appear next to the usr file instead of def.
+Confidential - Company Proprietary
+
+Pilot Laser or Focus Finder Not Working or Not
+Working Correctly
+Symptom(s): Pilot Laser button not shown in TCS+ or grayed out in SmartGraph or
+Pilot laser enabled, but no beam output or Pilot laser beam coming out, but behaving strangely
+(drawing very slowly or is very dull/not bright)
+Check:
+• Is pilot laser actually installed? If SHC - SF then always physically installed (standard item), but if
+SHC60/100/150 then pilot laser is optional. Ensure hardware in marking head is present.
+• Is pilot laser enabled in Laser Unit Settings? (TCS+>Laser Unit Settings>Pilot Laser). Should be check
+marked if pilot is installed.
+• Is Focus Finder disabled (TCS+>Main Menu>Main Settings>Disable Focus Finder — make sure this in
+not checked
+• Is pilot laser connected? Check cable connection between pilot laser and CP - Light board.
+• Check Mark Settings called Pilot Parameters: Does this parameter set matter to the functionality??
+• Intensity = 100%?
+• Marking speed = 7000 mm/sec
+Confidential - Company Proprietary
+
+In progress
+Power Check with SHC - SF Marking Heads
+Power check procedure with SHC60/100/150 marking heads remains the same as previous models.
+Make sure to take measurement out of focus (at least 50% out of focus) to prevent damage to meter!
+Expected output SHC60/100/150: 10.6 micron tube = 30+Watts
+10.2 micron tube = 25+ Watts
+9.3 micron tube = 20+ Watts
+With SHC - SF marking head there are more optical components for the beam to hit/pass through before exiting
+the marking head. Therefore, the measured output power may be lower than on SHC60/100/150.
+Also, since focal point is variable, you need to ensure that you are truly out of focus.
+• For power check with 3350 with SHC - SF marking head position target of meter less than 45 mm from
+marking head or more than 220 mm away to avoid being in focus no matter the Working Distance setting.
+• Create power check Job and use Pilot Laser > Job Elements to ensure you are hitting target of meter.
+• Take first measurement at 20% Intensity setting to again ensure hitting target of meter.
+• Stop and increase Intensity setting to 100% and take another reading.
+Numbers to come. In progress.
+Expected output SHC - SF: 10.6 micron tube =
+There can be up to 31% power loss between tube and exit of
+10.2 micron tube =
+marking head due to 1) number of optical components in beam
+9.3 micron tube =
+path and 2) CO2 beam quality varies significantly between tubes.
+Confidential - Company Proprietary
+
+{|X++????9?01Y%#".7##".'##".7663323>332 !+i' %-hw|"
+&0LlJ
+X++?++?99++?+?+?9999+01Y#".'&&54>3232>54.54>32&&54>3232##32>32#".54>7#"&54>3376654&#"#".#">5P]O57gZ/SC0"7R=7O44OO5,?LV/,4e`d
+ */8R8e}~+!+;ToE/*77T9ZU
+ */8R8e}~+!+3 3<UoC/*77T9ZU
+{|X++??9/101
+{|X++?+?+901Y#".54>766324&#"3267>6Q6DkZ,$1;#JaT]2j`0f11'2N66d
+?dFnJ{Z2Q]9hS:A^p:OvO
+>0 `g<_''?0!,2<H3c],32!4c^z
+i &'$DwgWH;70 "
+F3-Oh;GR#
+-%
+X++/+01Y%###"&77#"&54>337663232
+8
+X++?+?901Y%###".57!"&54>7663232#3J5/0%OIqq jv5;+X4r%3]&@
+X++?+?+9/9+99//01Y%#".'&&54>3232>54&#"#"&7663!2#!6232+PvI30
+X++???9/+?01Y#"&7!#"&76632!6632%'@A%
+
+QUUU????9++++222?01Y%#".5##".'##".5463323>332q0%$00""0/%$06-.B0 "
+&4
++
+S@23222i@&&-e&ehh???99?/3/99//9901%#".''#"&&67&&66327>32?+18 5$->>7/61,39e0$L#+$
+I!IL??9?01Y#".'.54>327>32'C65C&1%
+0w9/+2,7+9+4#%a%E+CUX@%&%L@H'L'@K?+2?+2/99//01_^]^]@%%L@H'L'@K?+2?+201_^]^]Y%#!"&554>7!"&54>3!2!2N!`g
+'3m*.?.!'-@'...+!!~??9/93]22/9/32201%###".55!".54>7>3232#3m@&&!2%*6"@""aaI1C8V1$,$,@44.1H@H/
+ ??/01#".'&&54632326546326T<
+""#$R##"x50#/5
+y;H@#.$/#//#08"/##5
+
+/#&:
+$:
++??99//9901Y#".#"#".54>3232>54.54>32*=R46K0$<MOM<$LxAnU:/F`C;Y<$;KNK;$Hk2ZJ4$%1=$7/,09Ka?^wD! %' % 4E
+&_"
+"15
+#U8*E7
+HIX++????9999???9/01#".#"32###"&'&54>3232>7!32>32#".54>7#"&54>337>32!7>32 /"=[|P:R!."mT&
+HIX++???9901%#".7!32>32#".54>7#"&54>337>32!2#".7>321%$0oT&
+.L3SG>!3&%/ l_"qMb0gHIX+CUX#
+JKX++?]q+]q+?9/?9?9/2399}01#".'&54>3232>7667#".54>3276632&&#"32>72U|U>3%&8
+HIX++??99//3301#".7>32#".54>76632+
+LMX++??9/999/9///3301#".'&&54>3232>54.#"#"&7663!2#!>32`=_g,SK@%=V=NsJ$1U@41,p&"QG7d],>}ueK+&
+?Z<LsO'3UBAg*p&"e47#4i^,AsbH
+JKX++??9//9+3301%#"&'&&54>3232>54.#"#"&7663!2#!6232-^f8b#'7'-A
+JKX++??9//9/9901#"&'&&54>3232>7#".54>326654&#"326t$?gc9Y
+D7
+T%*"%08x|WI9-I9-pn"3+
+TUDEX+?33?39/3232339=/3301#"&7#"&'#"&76633266332Z'85#i#2'Pi

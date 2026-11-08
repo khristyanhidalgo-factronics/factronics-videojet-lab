@@ -1,0 +1,380 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\DataMaster Tech Training Jan 2021.pdf
+# cifrado=False bloques=39 caracteres=15832
+
+DataMaster version 1.5.5
+Technical Training
+January2021
+Confidential Internal Use Only
+
+DataMaster what is it
+DataMaster is an intelligent program for the balanced distribution of data such as
+promotional, lottery codes or uniue codes for tracking from source files to up to eight
+ideoet laser marking systems. The software is perfect for highly sensitie applications
+such as lottery and on pack promotions reuiring data security and demanding ultimate
+operator easeofuse.
+DataMaster is a real win-win graphical user interface program : It helps users to
+reduce code errors and waste and increases uptime while uickly marking consumer
+packages with winning contents.
+Confidential Internal Use Only
+
+DataMaster Main Features
+Clear and Intuitive: Easy to Use and Monitor
+Easy to Setup
+Logging, Excluding, Winning
+tensie logging feature tracks actions related to campaigns, data import and printed
+data.
+Intelligent distinguishing between general data and winning data.
+isual code safety feature: If codes hae been marked, their respectie data file is
+displayed grayed out, thus, they are ecluded for being marked a second time.
+Users can create special eclusion lists for data being ecluded for marking.
+Confidential Internal Use Only
+
+Specifications
+Specifications:
+Runs of PC and supplies up to Videojet laser systems with data (e.g. promotional codes) so that
+they can be marked synchronously on the products.
+Cell-based screen layout concept: Entire UI is always visible.
+Data Input Formats: .txt, .csv, .xls, and .xml. DataMaster can also create unique data codes itself
+(via DataFactory option).
+ob creation via SmartGraph software, TCS+ and Videojet G55 handheld. The handheld must be
+disconnected while DataMaster is running.
+3 password protected user levels (Administrator, Supervisor, Operator)
+Extensive logging feature All actions, marked codes, active users, etc. are logged
+Languages: English, German, French, Spanish, Russian, Brazilian-Portuguese.
+TheDataMaster USBstickservesas alicense dongle.
+Therefore,itneedstobeleftintheUSBport ofthePC on which DataMaster is running!
+Confidential Internal Use Only
+
+Specifications
+DataMaster version 1.5.5 is compatible with:
+Chameleon based systems:
+SmartGraph version: 1.11
+CMark Version: 4..6
+ACC based systems:
+SmartGraph version: ..3
+Mark Version: ..3
+All DataMaster historical versions are linked to specific CMark or Mark and specific SmartGraph
+version. Not interchangeable.
+hen Cark .. is released you must use ataaster ... Change to the internal
+communications echange between ataaster and aser. Older ataaster ersions will be
+incompatible with Cark ersion . or newer.
+Confidential Internal Use Only
+
+Requirements for PC/Network
+PC/Network side requirements:
+ummary: etwork should be fast and separate
+Windows or 1 PC. Data Master Version 1.5.5 is compatible with Windows 1 Pro, Windows 1 Pro
+for Workstation and Windows 1 Enterprise based operating systems.
+If the PC is to be connected directly to one laser system, the connection must be made using a
+crossover ethernet cable.
+If the PC is to be connected to several laser systems, the connection must be made using a reliable
+Gigabit switch of industrial quality.
+If the DataMaster software is used with several laser systems, it is expressively recommended to run
+the laser systems in a separate subnet via a different network card or network switch and not via the
+home network.
+Important: Within this subnet, only the laser systems which are used with DataMaster software
+should be available!
+The cables which are used should be industrial quality, preferably CAT-.
+No other software (including antivirus software -neither real-time protection nor scheduled drivers
+scan, automatic updates) should run on the same PC as DataMaster software, neither should an
+external operating panel (Handheld) be connected.
+The Firewall of the connected PC must be deactivated.
+Confidential Internal Use Only
+
+DataMaster -User Interface
+Data Lens technology
+or the ataaster software, it is crucial that the status of the indiidual lasers are
+always isible. Therefore, the data lens technology concept is applied to the
+ataaster software user interface.
+By clicking into a cell, the UI morphs by slowly compressing all other rows and
+columns and enlarging the actie cell.
+The maor adantage:
+The user always sees where he is, what information is currently
+displayed and where it belongs.
+Confidential Internal Use Only
+
+DataMaster -Three User Levels
+Confidential Internal Use Only
+
+DataMaster -Three User Levels
+User: admin
+Password: admin
+Confidential Internal Use Only
+
+DataMaster -Additional Information
+ynamic logos can only be marked, when the selected font contains logos.
+ataaster can not display these logos, but rather the UnicodeAsciialue. Apart from
+that, only static logos and graphics, which are already part of the template, can be
+marked.
+ataaster is allways opening in full screen mode. Users can leae this mode, by
+using the short keys (ALT+TAB), in order to change to other windows.
+hile a laser is in error state or no longer ready to mark, the other laser systems are
+still marking. This behaiour is regarding the ataaster specification. Its
+recommended to use the output error of the lasers, in order to stop the production line
+of the customer.
+Confidential Internal Use Only
+
+DataMaster -Notes
+All buffer contents are stored temporarily in the A on the ACCChameleon.
+All other data, which are loaded into the campaign and which are not already loaded
+into the buffers, are stored in the following path indows :
+C:ProgramDataDataMaster1.5.5
+hen data runs out the laser will stop marking.
+After changing parameters in martraph, the buffers on each laser are emptied and
+wont be refilled by new data. This works as designed. hile changing a template, the
+corresponding parameter set or the product registration of your master template, there
+are data losses. eans the A of the laser system, where all the buffers are located,
+is deleted.
+Confidential Internal Use Only
+
+DataMaster -Buffer Size
+Buffers are lost when laser is powered down. Stop Marking does not cause buffer
+loss. o not make buffer too large in case of power loss or necessary reboot.
+By decreasing the default amount of buffers from to and the buffer length from
+to , you can aoid too much data loss.
+The amount of buffers can be changed from and the length of each from
+, lines. efault is buffers and lines each.
+Recommendation: Start with default buffer and decide if needs to be increased.
+You can see buffer performance during production and change to larger/smaller
+in future Campaigns.
+inimum amount of loaded data lines is .
+Confidential Internal Use Only
+
+DataMaster -
+Before Starting a Campaign
+Before Creating a New Campaign:
+ata files regular codes, ecluded codes optional and winning codes optional
+should be saed in a folder before building a campaign.
+ont sae data too deep. ou will hae to type in file path later.
+Think about how large the data file is. ile import time can be long so may be
+adantage to split massie file into two or more smaller files. ata can be imported
+into Campaign during production.
+ariable tet fields must be set to ark Once rror when building the obTemplate
+to aoid marking duplicate codes
+nsure files are named correctly according to ataaster rules.
+Confidential Internal Use Only
+
+DataMaster -Naming Conventions
+The ormat of files, which contains the ariable data, must fulfill the following naming
+conentions: Name.xxx.yyy.zzz
+xxx is the comparision between normal data and eclusion list or out of band data
+can be dat, el or oob.
+yyy is the file type and can be ls, tt, ml or cs.
+zzz is optional and can be ip, pgp or ip.pgp
+ote: In general, it is faster to upload unipped files, because ataaster doesnt hae
+to spend time for unipping those files.
+Example file names: pringCodes.OOB. .OOB is type of data and . is the file
+type and and pringCodes.AT. .AT is the type of data and . is the file type
+Confidential Internal Use Only
+
+DataMaster -
+Example 4 campaigns with 2 laser systems
+Confidential Internal Use Only
+
+DataMaster -General Area
+Home cell : For decreasing the currently open cell.
+Campaigns : For creating new campaigns.
+Lasers : Pool of available lasers to the program.
+Users : For adding, editing and deleting users.
+Settings : For setting up the program (languages and folders) and program Shutdown.
+Logo : Software version information.
+Confidential Internal Use Only
+
+Campaigns
+In the Campaigns cell, a new campaign can be created.
+By confirming the creation, it will be shown in the working area.
+Confidential Internal Use Only
+
+Lasers
+In the Lasers cell, the lasers which are available to the program are shown.
+From here, they can be dragged and dropped onto a campaign to be used with it.
+Confidential Internal Use Only
+
+Users
+In the User cell, users can be created and deleted and be assigned to different roles (change of
+access rights).
+Confidential Internal Use Only
+
+Settings
+In the Settings cell, program settings can be made.
+Furthermore, the program is Shutdown from here.
+Confidential Internal Use Only
+
+Working Area
+General Area
+eadings, but with some
+functionality
+Working Area
+ows Campaigns
+The Working Area is separated from the General Area by a thick double line.
+Within the Working Area, the work flow is from left to right.
+Important : At least, one campaign has to be created in order to show
+the working area.
+Confidential Internal Use Only
+
+Set Up Create a Campaign
+Click here to
+add Campaign.
+. Click in Campaigns bo and Add button will appear.
+. ie the Campaign a name and then it will appear in the orking area below.
+Result: The campaign is shown in the working area.
+Confidential Internal Use Only
+
+Set up Add lasers
+. Click in Lasers bo
+in eneral Area.
+. Aailable lasers will
+be displayed in same
+cell.
+. rag and drop
+selected lasers
+into the cell with your
+Campaign name.
+Result: The laser(s) will be shown in the working area.
+Confidential Internal Use Only
+
+Set Up Campaign Cell
+.Click the created Campaign cell Olympiade cell in our eample and specifiy a master
+laser and template.
+.Click Set master laser and job button.
+.Add the directory for data to be used ia Directory configuration button. ust type in or
+copypaste the path.
+Result: The selected template name will be shown in the working area.
+Confidential Internal Use Only
+
+Set Up Input Data
+ata Input area for formats .tt, .cs, .ls and .ml.
+ataaster can also create uniue data code itself
+ia ataactory partition.
+All the files that are aailable in the defined input directories are shown in the Data
+Input cell.
+However, these files are still shown grayed out, as the Campaign’s data
+processing has not been configured yet.
+Confidential Internal Use Only
+
+Set Up Data Processing Config
+Click the Data processing configuration buttonwithin the Campaign cell.
+elect a data file from dropdown that is configured for your Campaign acts as
+maskframework for setup you will actually selectimport the file later.
+rag and drop data fragmentscolumn nameetc. into the ariables shown. ariable
+names shown are based on the obTemplate selected for aster laser.
+et Out of Band data processing if using .OOB file to mi in winning codes.
+Click O button.
+
+DataMaster -Data Factory
+Data Factory is a module in ataaster in ata rocessing Config drop
+down, which is able to generate data, within a selected range, on its own.
+Symbol:
+Important:
+ata actory creates file of codes for printing, but customer still needs to hae an .OOB
+Out of Bands file for winners if applicable.
+Only .C file type can be used with ataactory for .OOB or .
+.OOB must be imported into Campaign before enabling ataactory.
+alues of the .OOB data should differ from the settings of the data factory, for eample, if
+the letter A occurs in all winning codes, this letter A should be ecluded when setting
+the data generation.
+Confidential Internal Use Only
+
+Set Up Input Data
+1.
+Click on Data Input cell.
+2.
+Files which match Campaign configuration are now enabled.
+3.
+Drag the file(s) to be used into the the Campaign cell in the following order (if applicable):
+Exclusion list (.EXL) first, then Out of Band (.OOB) and then General data (.DAT).
+esult: irst portion of the buffers is transferred to the lasers.
+Confidential Internal Use Only
+
+DataMaster -Data Order
+It is very important, to use the following order, when uploading
+data (drag and drop) to a campaign:
+. clusion ist ata . if desired not a must.
+. Out of Band ata .OOB if desired not a must.
+. ormal ata .AT
+Confidential Internal Use Only
+
+Set Up -Completed
+After you drag/drop to load the data files then buffers on lasers will be filled (green
+boxes in Logo column show loading progress. Also, codes to be marked for each laser
+are shown in Settings column.
+Confidential Internal Use Only
+
+Working
+Crown aboe buffer OOB
+code in that buffer
+ata can be set into the campaign and data added whilst the campaign is running.
+Input time is . hours for million with digits B codes so its a couple
+of hours to run for appro. week.
+Result: If the Buffer is running out of data,
+this will be displayed in the software
+Confidential Internal Use Only
+
+Working
+Buffer size can be selected. As
+you can see the progress visually on the
+screen and it gives a warning when the
+data left is low to prompt adding more data.
+Campaigns can be stopped, deleted and
+run with remaining unused data.
+Out of band data (winners) can be selected and chosen
+to be included at intervals or randomly -with a start and
+finish position set
+Confidential Internal Use Only
+
+Laser Status
+Laser cell is displayed in different colors based on each lasers
+state for easy recognition.
+Confidential Internal Use Only
+
+Log Cell
+Confidential Internal Use Only
+
+Notes: Version 1.4.2
+Two new features added, which have to be enabled in the ’configuration.xml’ file. et false to
+true.
+. Even Data Distribution: The amount of lasers has to be assigned in the campaign in buffer
+configuration templates. As a result, the data is distributed eenly to the laser systems. All systems
+hae the same amount of markings.
+. OOB data information in ’Data Input’ window:
+The amount of winning codes, who are currently not
+marked, are isible. The operator, can react on
+running out OOBdata.In order to hae OOB counter,
+it must be enabled in:
+C:ProgramDataDataMaster1.4.2ResourcesXML
+configuration.xml.
+OOBCountertrueOOBCounter
+Confidential Internal Use Only
+
+Notes: Version 1.5.3
+One new feature added, which has to be enabled in the configuration.ml file.
+et false to true. ee also serice bulletin B.
+DataMaster deletes obsolete campaign folders, and all files and folders which have been
+created not by DM in the selected folder.
+By default, the data path is: C:ProgramDataDataMaster1.5.3Data
+Confidential Internal Use Only
+
+Notes: Version 1.5.4
+ersion .. is only supporting a new type of license dongles.
+ith ersion .. the new dongle type is not in function
+Confidential Internal Use Only
+
+Notes: Version 1.5.5
+ataaster ersion .. is compatible with indows ro, indows ro for orkstation
+and indows nterprise based operating systems.
+ersion .. isalso supportinga newtype oflicensedongles.
+ithersion .. thenewdongletype isnot in function
+Information fromourO group:
+e made performance test with ataaster and chameleon board laser systems. e were
+able to run these test with .
+ataaster has to handle lots of small files, so the sie of the A should not be too small. The
+handling of multiple files is also the reason why we do not recommend to use a irus scanner or
+other software in parallel with ataaster.
+Confidential Internal Use Only
+
+Notes: Version 1.5.6
+Changes in the internal communication proides new way of information echange
+between ataaster .. and laser. This proides a way to display messages with
+parameter in ebTC. Older ersions hae become incompatible with the new Cark
+. or higher
+Confidential Internal Use Only

@@ -1,0 +1,1080 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\Videojet Xtract PVC User Manual V3.0 (English).pdf
+# cifrado=False bloques=35 caracteres=40421
+
+Xtract PVC
+USER MANUAL
+V 3.0 July 2020
+
+Contents
+1 01 Overview: Front ................................ ................................ ................................ ....... 3
+1 02 Overview: Rear ................................ ................................ ................................ ....... 4
+1 03 Overview: Interface ................................ ................................ ................................ 5
+2 01 Safety: labels ................................ ................................ ................................ ............... 6
+2
+2 02 Safety: instructions ................................ ................................ ................................ . 7
+01 Pre Installation ................................ ................................ ................................ ......... 8
+3
+01 Extraction application ................................ ................................ .......................... 9
+4
+02 Setup: Connection power ................................ ................................ ................. 10
+4
+03 Interface: signals ................................ ................................ ................................ . 11
+4
+04 Interface: feature(s) ................................ ................................ ............................ 12
+4
+01 Operation ................................ ................................ ................................ ................. 13
+55
+5 02 Configuring airflow ................................ ................................ ............................. 14
+5
+03 Airflow initialization ................................ ................................ .......................... 15
+5
+01 Maintenance: General ................................ ................................ ......................... 16
+6
+02 Filter replacement ................................ ................................ ............................... 17
+6
+01 Display features ................................ ................................ ................................ .... 18
+7
+02 Alarm: VOC & HCL ................................ ................................ ............................... 19
+7
+03 Alarm: Run safe ................................ ................................ ................................ ..... 20
+7
+04 USB: upload ................................ ................................ ................................ ............. 21
+7
+05 USB: download ................................ ................................ ................................ ..... 22
+7
+06 USB: data collection ................................ ................................ ............................ 23
+7
+01 Error codes ................................ ................................ ................................ ............. 24
+8
+01 Consumables & Filter Disposal ................................ ................................ ...... 25
+9
+01 System Specifications ................................ ................................ ......................... 26
+10
+01 Consumables and Parts ................................ ................................ .................... 27
+11
+01 Electrical Schematics ................................ ................................ .......................... 30
+12
+01 Contact information ................................ ................................ ............................. 31
+13
+Xtract PVC User Manual
+Page 2 of 30
+
+Overview : Front
+1 0 1
+LCD Display
+Standby Button
+Return “Enter” Button
+Company Branding
+Up/Down Buttons
+Lockable Upper
+Door Latch
+USB Port
+Upper Door Panel
+Lower Door Panel
+Combined Filter
+Combined Filter
+Lever
+Door latches
+Pre Filter in
+cage
+Lockable Castors
+Xtract PVC User Manual
+Page 3 of 30
+
+Overview : Rear
+1 0 2
+On/ Off switch
+Mains inlet Connection Motor Cooling
+I/O interface
+connection
+connection
+Air Outlet
+Air Inlet
+Xtract PVC User Manual
+Page 4 of 30
+
+Overview : Interface
+1 0 3
+Xtract PVC User Manual
+Page 5 of 30
+
+/
+point
+h
+/
+3
+Alarmwindow
+Motorrunhours
+Targetairflowset
+CFMorm
+Actualairflowin
+Motorstatusicon
+F
+0
+/
+C
+0
+condition
+condition
+Realtimeprefilter
+Internalunittemperature
+RealtimeCombinedfilter
+
+S afety : Labels
+Dangers to eyes, breathing and skin
+Once used, the filters within the system may contain a mixture
+of particulates, some of which may be sub - micron size . When
+the used filters are moved it may agitate some of this
+particulate, which could get into the brea thing zone and eyes of
+2 0 1
+the operative. Additionally, dependin g on the materials being
+processed , the particulate may be an irritant to the skin.
+Important safety notes
+This unit should not be used on processes with sparks of
+flammable materials or with explosive dusts and gases,
+Concerning symbols used on the extraction unit and referred to
+without implementation of additional precautions.
+within this manual.
+Caution:
+When changing used filters always wear a mask, safety
+Danger
+glasses and acid proof gloves. Hydrochloric acid may also be
+present. Handle with extreme care.
+R efers to an immediately impending danger. If the danger is not
+avoided, it could result in death or severe (crippling) injury. Please
+Carbon selection
+consult the manual when this symbol is displayed.
+Please note that the media within the gas filter fitted in the unit
+Warning
+is capable of adsorbing a wide range of organic compounds.
+However, it is the responsibility of the user to ensure it is suitable
+R efers to a possibly dangerous situation. If not avoided it could
+for the particular application it is being used on.
+result i n death or severe injury. Please consult the manual when
+this symbol is displayed.
+Techn ical Service
+Ca ution
+If you need help, please contact Videojet Technologies Inc. at 1 -
+800 - 843 - 3610 (for all customers within the United States).
+R efers to a possibly harmful situation. If not avoided, damage
+Outside the U.S. customers should contact their Videojet
+could be caused to the product or something in its environment.
+Technologies Inc. distributor or subsidiary for assistance.
+Important (Refer to manual)
+Videojet Technologies Inc.
+1500 Mittel Boulevard
+R efers to handling tip and other particularly useful information.
+Wood Dale IL 60191 - 1073, USA
+This does not signify a dangerous or harmful situation. Refer to
+Phone (USA) 1 800 582 1343
+manual when this symbol is displayed.
+Electrical Safety
+International: +1 630 860 7300
+Fax (USA): 1 800 582 1343
+The unit has been designed to meet the Essential Health and
+International Fax: +1 630 616 3629
+Safety Requirements of the Machinery Directive 2006/42/EC.
+Website: www.videojet.com
+Warning
+When working with the pump/motor housing open, Live 230/115
+Serial Number
+volt mains components are accessible. Ensure that the rules and
+regulations for work on live components are always observed.
+For future refere nce, fill in your system details in the space
+provided. The seri al number is on the rating label loca ted on the
+Impo rtant
+side/ rear of the unit.
+To reduce the risk of fire, electric shock or injury:
+Serial Number :
+1. Always isolate the system from the mains power
+supply before removing the pump/motor access panel.
+2. Use only as described in this manual.
+3. Connect the system to a properly grounded outlet.
+Xtract PVC User Manual
+Page 6 of 30
+
+S afety : Instructions
+This label contains a variety of information about the
+extraction unit, including.
+• Company name, A ddress & Contact number
+• Extractor model
+2 0 2
+• Unit serial number
+• Operating voltage range
+Warning and Information labels
+• Maximum current load
+The following listing de tails labels used on your unit.
+• Operating frequency
+• Year of Manufacture
+Eye protection, Mask, Gloves, Information
+• Relevant approval markings/ logos
+PLEASE NOTE: If the equipment is used in a manner not specified
+by the manufacturer, the protection provided by the equipment
+Goggles, Gloves and Masks should be worn while handling used
+maybe compromised .
+filters.
+Fire Risk Warning
+Do Not Cover Label
+In the very rare event that a burning ember or spark is drawn into
+the fume extraction unit, it may be possible that the filters will
+ignite. Whilst any resultant f ire would typically be retained within
+the fume extraction unit, the damage to the extractor could be
+Do not cover any louvers or holes adjacent to the label.
+significant.
+It is therefore essential to minimise the possibility of this occurring
+Electrical Danger by undertaking an appropriate Risk assessment to determine: -
+a). Whet her additional fire protection equipment should be
+Removal of panels with this label attached will allow installed.
+b). Appropriate maintenance procedures to prevent the risk of
+access to potentially live components.
+build - up of debris which could potentially combust .
+This unit should not be used on processes where sparks could
+occur, with explosive dusts and gases, or with particulates which can
+Warning Label
+be pyrophoric (can spontaneously ignite), without implementation
+of additional precautions
+It is essential that nozzles or other extraction/ fume capture devices
+Power should be isolated before the panel with this label attached
+and hoses/pipework are c leaned regularly to prevent the build - up of
+is opened/ removed.
+potentially ignitable debris
+Corrosive Danger
+Replacing the HCL sensor
+The HCL sensor inside the PVC extraction unit must be changed at
+least once every 12months. It is the responsibility of the user to
+ensure this change is car ried out within the specified time period.
+Used filters may contain Hydro chloric acid which is corrosive.
+The procedure must be carried out by a competent person, please
+Always wear a mask, safety glasses and acid proof gloves when
+contact your seller for more information.
+handling used filters.
+Serial Number Label
+Xtract PVC User Manual
+Page 7 of 30
+
+Pre installation
+3. With the unit in position lock the 2 front castors.
+3 0 1
+Inner transit packaging removal & unit placement
+Unlocked Position Locked Position
+Before installation, check the extraction unit for damage.
+All packaging must be removed before the unit is connected
+to the power supply.
+Caution
+Please read all instructions in this manual before using this
+Do not block or cover the cooling vents on the unit, as this
+extractor.
+severely restricts airflow and may cause damage to the unit.
+1. Move the unit to the location where it is going to be
+Caution
+installed and remove the outer packaging. This unit
+should be ins talled in a well - ventilated area .
+Under no circumstances should the exhaust outlet/s be
+covered as this will restrict the airflow and cause overheating.
+2. Open the front door and remove the transit foam
+from the centre of the unit.
+4. Check the filters are located in their correct
+position before closing the door and securing the
+door latches.
+Note: The door will not close fully if the Combined filter
+has not been secured in place using the internal lever. (As
+detailed below)
+Caution
+Due to the weight of the extractor suitable lifting equipment
+should be used and with regard to appropriate safety
+precautions. (See Appendix for product weight details)
+Ensure that 500 mm space is available around any vented
+panels on the extra ctor to ensure adequate ai rflow.
+Xtract PVC User Manual
+Page 8 of 30
+
+Extraction application
+4 0 1
+Enclosures
+The unit has been designed to remove and filter fume containing
+The extraction hose and nozzle can be attached to the enclosure
+potentially hazardous particulate and gases generated during
+surrounding the marking zone provided that the extraction
+manufacturing processes. Such hazardous substances are
+point is within 50 - 75mm of the marking point.
+captured within a multistage filtration system after which the
+cleaned air is return ed to the workplace.
+Fume Capture Methods
+The fume is normally captured by 1 of 3 methods.
+• Flexible arm / Nozzle
+• Enclosures
+• Cabinets
+General Guideline s for a successful installation
+• Keep duct run length to a minimum
+• Avoid sharp bends / turns in the ductwork
+• Avoid multiple bends / turns in the ductwork
+Cabinets
+• Use a larger diameter duct where able
+Cabinets normally have a 75mm 0r 100mm spigot for fume
+• Position the capture device as close as possible to the
+extraction. For best performance use the same diameter hose as
+marking point. (if used on high speed lines, position the
+the spigot and reduce at the extractor end if necessary. Keep the
+capture device slightly downstream)
+hose run as short as possible.
+Flexible Arm & Nozzle Extraction
+The stay put arm should be mounted as close as possible to the
+marking point using the horseshoe clips. Unscrew the push fit
+connector from the other side of the flexible hose. Cut the
+flexible hose to suit the distance back to the extractor
+connection and push onto the extractor inlet.
+Purge air should be kept to a minimum, where possible, to
+prevent the fume being blown away from the nozzle.
+Connection to extraction unit
+High speed bottling lines may need bigger scoops or nozzles
+both sides of the bottles becau se of the turbulence caused by
+All du ctwork should be installed and connected to the
+the speed of the bottles.
+extraction unit before the system is turned on.
+Moving products
+Exhausting filtered air outside
+For applications where the product to be marked is moving past
+the stationary laser head the capture nozzle should be
+The unit is fitted with an exhaust outlet spigot. This provides a
+positioned as close as possible to the marking area on the side
+connection point for exhaust pipework to be fitted. It is
+t he product is moving towards.
+important to keep any ducting to a minimum, in order to reduce
+back pressure within the system.
+Xtract PVC User Manual
+Page 9 of 30
+
+Setup: Connection to power
+4 0 2
+Connection to Power Supply
+Please follow the specification at the rear of the manual when
+selecting the power supply outlet for the system, ensure the
+power supply is suitable before connecting the system.
+Check the Integrity of the electr ical power cable , if the supply
+cord is damaged the extraction unit should not be connected
+to the mains. The supply cord should only be replaced by a n
+approved engineer as an electrical safety test may be
+required after replacement.
+The system MUST be connected to a pro perly earthed outlet.
+If your system was ordered with any optional extras please
+read section 4.03 before the power connection is made as
+additional connections may be required before power is
+connected to the extractor.
+Connect the power cable to an isolated electrical
+supply.
+The mains socket should be installed near the
+ex tractor it should be easily accessible and able to be
+switched On/ Off . he cable run should be arranged so as not
+to create a trip hazard.
+Xtract PVC User Manual
+Page 10 of 30
+
+Switch in “Off” position
+Interface : Signals
+In this position the extractor motor will run without the
+requirement for an external start signal. This feature is useful
+for engineers carrying out works/ tests on the extractor
+4 without the need for the laser / auxiliary signal being pres ent.
+0 3
+Interface features
+The unit is configured with an interface cable.
+( If unsure what features your system is equipped with
+please contact the seller with the unit serial number,
+(Refer to section 2 for location) who will be able to advise
+what specification has been supplied.
+Remote Stop/Start feature
+Enables the extraction unit to be remotely turned On / Off via
+an external signal.
+DC Voltage input
+This configuration requires Pins 2 and 5 of the signal cable
+(Refer to section 1 for location) to be connected to a known
+and tested DC power supply, in order to start the extrac tor.
+Suction ON
+The operating voltage for this signal is between 12 & 24VDC.
+GND_Cl
+Only voltages within this range should be connected.
+Voltages connected outside of this range may cause
+irreversible damage to the internal control PCB.
+Pin 2 = Suction ON
+Pin 5 = GND_Cl
+When the extractor is provided with the correct DC voltage
+the motor will start and maintain the set flow rate (Refer to
+section 5 for how to set the flow) when the DC voltage is
+removed the motor will slow down and come to a stop.
+The extractor wi ll need to be turned on and be out of standby
+mode (See section 5 for turning the extractor on) in order for
+this feature to operate.
+Override
+Enables the extractor to operate fully with or without DC
+voltage input. The override feature can be toggled On / Off
+by a switch mounted on the internal motor access panel (see
+below for switch location)
+Switch in “On” position
+In this position the extractor will require a start signal to
+enable the motor within the extraction unit to operate.
+Xtract PVC User Manual
+Page 11 of 30
+
+Interface : Feature(s)
+4
+0 4
+Filter Blocked / System Fail Signal
+With this option the system will output a signal to alert the
+user when the extractor has failed or when the filters are
+blocked.
+This feature will not directly stop the extractor from running
+correctly, but if fitted this feature should be terminated
+FILTER FULL
+correctly before power is applied to the system.
+24V_Cl
+SUCTION ERROR
+Connection specification
+This signal is available via the interface connection. The
+system will provide a volt free Open / Closed signal that can
+be connected to the laser, following the specification below.
+• Maximum input voltage: 24V AC
+• Maximum current load: 3A @ AC
+OR
+• Maximum input voltage: 24V DC
+• Maximum input load: 3A @ DC
+Combined signal configuration
+With this configuration the Filter blocked & System fail
+signals will be separated to give 2 individual signals.
+When the filters become blocked the connection between
+pins 1 & 3 will become “Open”
+If the system develops a fault (Refer to section 8 for
+Troubleshooting & Error codes) the connection between pins
+1 & 4 will become “Open”
+When the extraction system is running normally the
+connection between pins 1 & 3 and 1 & 4 will become “Closed”
+Xtract PVC User Manual
+Page 12 of 30
+
+On
+Operation
+5 0 1
+Turning extraction unit On
+There ar e 2 stages to powering up your extraction unit. First
+the main switch must be switched to the “ On ” position (Refer
+to section 1 for switch location) by depressing the Green side
+/ (I) of the switch.
+This will place the extraction unit in Standby mode, indicated
+by the front panel power button glowing Red.
+Changing the display units
+The Airflow and temperature readings can be displayed in 2
+ways.
+o
+1. Temperature displayed as C
+3
+Airflow displayed as m /h
+OR
+o
+2. Temperature displayed as F
+Airflow displayed as CFM
+The display value can be changed by pressing the “Enter”
+button once.
+To start the extraction unit press the front panel power
+1)
+button (refer to section 1 for switch loca tion) the button will
+change from Red to Green i ndicating the extraction unit is
+now fully On.
+It is recommend ed that the rear isolation switch is left in the
+On position and the front standby switch is used to toggle the
+extractor On / Off.
+Standby
+2)
+Xtract PVC User Manual
+Page 13 of 30
+
+Configuring Airflow
+1)
+5 0 2
+Setting the desired airflow
+The system features automatic flow control. This enables the
+2)
+user to set the required airflow rate, then over time as the
+filters begin to block the motor will automatically be gin to
+increase in speed to compensate for any loss in performance
+caused by the added restriction of the partially blocked
+filters.
+The extractor and all pipe work must be fully
+installed and connected before the airflow is set
+3)
+To set the airflow
+3
+(The a irflow can be set between 100 - 35 0m /h)
+1. Press and hold the “Enter” (middle) button (Refer to
+section 1 for button location) for 3 seconds , or until
+all 3 button lights flash green.
+2. Release the Enter button, the system is now in set
+mode. Press either the Up or Down button to adjust
+the airflow accordingly.
+Real time airflow is displayed on the LCD screen,
+Refer to section 1 for Display information)
+3. Once you have your desired airflow, leave the
+controls, after around 10seconds the flashing
+buttons will illuminate constantly to confirm the
+airflow is stored.
+The set airflow will now be maintained throughout the life of
+the filters. When the extraction unit can no longer maintain
+the set airflow an alarm will be given and the display will
+indicate which filter should be changed .
+Xtract PVC User Manual
+Page 14 of 30
+
+Airflow initialization
+5 0 3
+Airflow Auto Adjust (first installation only)
+When first setting the airflow o n your new extraction unit the
+system will detect if the desired airflow is achievable with the
+installation that has been connected to the extraction unit.
+If the installation is causing too much restriction for the
+de si red airflow to be reached , the Auto Adjust feature will be
+activated . The procedure events are listed below.
+1) The 3 buttons will begin flashing Red along with the
+airflow setting on the LCD screen.
+2) The airflow setting on the screen will drop to display the
+highest airflow that can be achieve.
+3) The airflow will stabilise and the buttons will turn green to
+show the airflow has set.
+Xtract PVC User Manual
+Page 15 of 30
+
+Maintenance : General
+Pre Filter blocking Combined Filter Blocking
+6 0 1
+Maintenance : General
+TIME
+User maintenance is limited to cleaning the unit and filter
+replacement, o nly the manufacturers trained maintenance
+technicians are authorised to carry out component testing
+and replacement. Unauthorised work or the use of
+unauthorised replacement filters may result in a potentially
+dangerous situation and/or damage to the extractor unit and
+will in validate the manufacturer’s warranty.
+Contact the seller for more information about inspection and
+certification .
+A log of the changes should be maintained by the user.
+Cleaning the unit
+The filters require attention when the display shows the filter
+blocked icon/ filter output signal (if fitted) or when the
+The stainless steel units should be cleaned with a cleaner
+extractor no longer removes fume efficiently.
+designed for stainless steel and wipe with the grain using a
+non abrasive cloth.
+It is recommended that a spare set of filters are kept on site
+to avoid prolonged unit unavailability. Par t numbers for
+The cooling inlets and outlets should be cleaned once a year
+replacement filters can be found on the filters fitted in your
+to prevent build - up of dust and overheating of the unit.
+system. Alternatively, refer to the spare parts table in this
+manual.
+Replacing the HCL sensor
+To prevent overheating, units should not be run with a
+The HCL s ensor inside the PVC extraction unit must be
+blocked filter condition, or wi th dust obstruction of Inlets
+changed at least once every 12months. It is the responsibility
+Outlets.
+of the user to ensure this change is carried out within the
+specified time period.
+The procedure must be carried out by a competent person,
+75% filter blocked indication
+please contact your seller for more information.
+When the filters become 75% blocked the buttons on the
+front of the extraction unit will turn from Green to Amber and
+Replacing Filters
+if fitted the system will output a signal to indicate this. At this
+The sy stem constantly monitors the condition of the
+time it is recommended spare filters are available as a change
+individual filters . As the filters block the LCD display will show
+may be needed shortly.
+the relevant filter symbol filling up. (see section 1 for LCD
+details) E ach filter symbol fills up in 5 % increments, when the
+filter icon is filled that particular filter will need replacing.
+Xtract PVC User Manual
+Page 16 of 30
+
+will glow Red and if fitted the filter blocked signal will be
+Filter Replacement
+given.
+To remove and replace the Combined filter follo w the
+procedure detailed below.
+6 0 2
+1. Isolate the electrical supply to the extractor
+2. Undo the catches on the front of the unit and open
+the door.
+Pre Filter Replacement
+3. The Combined filter is the higher of the 2 filters
+The Pre filter needs replacing when the display flashes
+(refer to section 1 for filter location) rotate the lever
+between the 2 images shown below, at this point the buttons
+o
+below the filter through 180 to lower the combined
+will glow Red and if fitted the filter blocked signal will be
+filter.
+given.
+4. U sing the handle on the front of the filter, pull it out
+of the unit being careful to sup port it as it comes free
+as it is heavy.
+5. Once removed it is recommend that the used filters
+ar e bagged and sealed.
+6. Slide the new filter into position making s ure it is
+pushed in all the way.
+0
+7. Rotate the lever back through 180 to raise the filter
+into posi tion.
+To remove and replace the Pre filter follow the procedure
+8. Close the door and fasten the 2 latches
+detailed below.
+9. Reconnect the power supply
+1. Isolate the electrical supply to the extractor
+2. Undo the catches on the front of the unit and open
+th e door .
+3. The Pre filter is the lower of the 2 filters (refer to
+section 1 for filter location) using the handle on the
+front of the filter, pull it out of the unit.
+4. Unfasten the Velcro strips and r emove the filter bag
+and chemical pad from its metal cage. Once
+removed it is recommend that the used filters ar e
+bagged and sealed.
+5. Place the new filter bag and chemical pad in the
+metal cage, fasten Velcro strips and s lide into
+position making sure it is pushed all the way in and
+is located correctly on the spigot in the back of the
+unit.
+6. Close the door and fasten the 2 latches.
+Combined Filter Replacement
+The Combined filter needs replacing when the display flashes
+Caution:
+between the 2 images shown below, at this point the buttons
+When changing used filters always wear a mask, safety
+glasses and acid proo f gloves. Hydrochloric acid may also
+be present. Handle with extreme care.
+Both filters MUST be fitted when the extractor is in use, if
+the combined filter is not installed c orrectly the system
+will not allow the motor to start.
+Xtract PVC User Manual
+Page 17 of 30
+
+Display : Features
+Hose blocked alarm
+The system features a 2 stage Hose blocked alarm.
+• Partial hose blockage
+• Full hose blockage
+7 0 1
+Partial hose blocked alarm
+Display Features This ala rm will become active when the system detects a part
+The display has the ability to display all the faults associated blockage in the installation. The system interprets a partial
+with your extraction unit. The image below shows an blockage as a vacuum spike within the ductwork but is only a
+example of some of the fault icons that may appear in the partial blockage as the extractor is still able to maintain its set
+alarm window of the LCD display. airflow.
+During this tim e it is normal to hear the motor increase in
+speed. The blockage will need to remain in the ductwork for
+over 5 seconds before the alarm is given.
+Visual Alarms on the system
+The system can visually display a wide range of alarms on its
+LCD panel. The visual displays, meanings and solutions are
+Full hose blockage
+detailed below. All alarms will trigger the system alarm
+This ala rm will become active when the system detects a full
+interface output signal and the inbuilt audible buzzer , if
+blo ckage in the installation. The system interprets a full
+fitted / activated .
+blockage as a vacuum spike within the ductwork and is
+considered a full blocked as the extractor cannot maintain
+Over Temperature Alarm
+the set airflow with the blockage present .
+If the system detects an internal temperature greater than
+o
+60 C then it will automatically shut down the extractor to
+During this time it is normal to hear the motor increase in
+prevent damage to components within the extractor.
+speed. The blockage will need to remain in the ductwork for
+over 5 seconds before the alarm is given.
+0
+Once the internal temperat ur e has dropped by 5 C the
+extraction unit will be able to restart.
+To remove the blockage, isolate the extraction unit from the
+To restart the extractor after an over temperature alarm the
+mains, remove the flexible hose, locate and remove the
+unit needs to be placed in Standby mode then powered on
+blockage then reattach the hose as previously installed.
+again.
+Xtract PVC User Manual
+Page 18 of 30
+
+Alarm: VOC & HCL
+7 0 2
+Gas Filter monitoring (VOC Sensing)
+The unit is fitted with VOC (Volatile Organic Compound)
+sensing technology and will be constantly monitoring the
+exhaust gas of the extraction unit.
+If the VOC level in the exhaust exceeds the PPM (Parts per
+million) pre - set level then the Gas alarm will be trigg ered and
+display the Gas icon as shown below.
+HCL (Hydrochloric gas ) Sensing
+The unit is fi tted with HCL (Hydrochloric gas ) sensing
+technology and will be constantly monitoring the exhaust
+gas of the extraction unit.
+If the HCL level in the exhaust exceeds the PPM (Parts per
+million) pre - set level then the Gas alarm will be triggered and
+displ ay the Gas icon as shown below.
+Removing the Gas alarm warning
+The VOC option is a perfect way to monitor how the carbon
+section of the combined filter is performing. Once the carbon
+within the filter is saturated the VOC sensor will alarm. At this
+point the extractor should be isolated from the mains and a
+new combined filter fitted. Once a new filter is installed the
+alarm will clear.
+Xtract PVC User Manual
+Page 19 of 30
+
+Alarm: Run safe
+7 0 3
+Run Safe Feature
+To ensure personnel protection and avoid damage to the unit
+the system will automatically shut down 5 seconds after no
+combined filter is detected. If no combined filter is fitted the
+motor will stop and the display will appear as below.
+To resolve this, isolate th e extractor fit the combined filter
+(see section 6.02 ) and turn the extractor On.
+Xtract PVC User Manual
+Page 20 of 30
+
+USB : upload
+7 0 4
+USB Port
+USB Connectivity
+The system is equipped with a USB drive, that operates as a
+2 way device, as detailed below.
+• Duplicati ng settings
+• Download d ata
+Duplicating settings (USB Upload)
+This USB upload feature has been designed for customers
+that have multiple extractors a nd specific set of parameters
+that they wish to duplicate across their extraction units. The
+Procedure for duplicating extractor settings is detailed
+below.
+1. Obtain the memory stick file from the seller (if
+specification has been pre - arranged with the seller )
+Or download original settings from your master
+unit) ( Max capacity USB Stick 4 GB)
+2. Download this file to a blank memory stick
+3. Place the system in standby mode (Front power
+button glowing Red)
+4. Open the front door and insert the memory stick
+into the USB slot
+5. The LCD display will show “upload ” press the button
+corresponding to this
+6. The display will show a progress complete bar and
+when finished a completion “Tick”
+7. The USB stick can now be removed from the unit,
+the door closed and the extractor turned back On
+If the USB upload procedure fails the screen
+will display the symbol s hown adjacent.
+Xtract PVC User Manual
+Page 21 of 30
+
+USB : down load
+7 0 5
+USB Port
+Download Data (USB Download)
+With this feature the customer is able to downl oad all stored
+data within the system , this information can then be us ed to
+keep records of how your system is performing, this is also
+very beneficial for the technical team when diagnosing issues
+with the extraction system . The following list shows the
+information available within the event log .
+Downloading d ata
+To dow nload the information from the system please follow
+the procedure below.
+1. Obtain a memory stick ( Max capacity USB Stick
+4 GB)
+2. Place the system in standby mode (Front power
+button glowing Red)
+3. Open the front door and insert the memory stick
+into the USB slot
+4. The LCD display will show “download” press the
+button corresponding to this
+5. The display will show a progress complete bar and
+when finished a completion “Tick”
+6. The USB stick can now be removed from the unit,
+the door closed and the extractor turned back On
+If the USB upload procedure fails the screen
+will display the symbol shown adjacent.
+Xtract PVC User Manual
+Page 22 of 30
+
+the combined filter blockage is shown as an exact percentage
+USB: Data Collection
+of its full capa city.
+Inlet % (installation restriction)
+Shows the percentage of the system capacity that is taken up
+7 0 6
+by the installation (pipe work) this value would also rise if the
+inlet or pipe work becomes blocked.
+Motor output
+The system will take a snapshot of the sys tem performance
+every 1 5minutes or if a system adjustment is made or an
+Shows the percentage the motor is being run at to achieve
+alarm is triggered.
+the airflow set by the user. This value will increase as the
+filters begin to block.
+Some of the information captured is listed below.
+• Date
+Internal temperature
+• Time
+Shows the internal temperature of the extraction unit, the
+• Airflow
+sensor is mounted to the main PCB when this sensor reaches
+• Airflow Set point
+o
+60 C it will shut down the extractor and a log will be recorded.
+• Pre filter % blocked
+• Combined filter % blocked
+Hours Run
+• Inlet % (installation restriction)
+• Motor output
+This is a simple hours run counter that will begin from the first
+• Internal Temperature
+time the extraction is switched on by the user. The hours run
+• Hours r un
+counter will only be activated when the motor is running.
+• Alarms
+Alarms
+• Faults
+W hen the system has an issue that requires the user to act
+Date & Time upon this is classed as an alarm, when this occurs a code will
+appear in this column, the main alarm codes are listed below.
+The date and time will be set as part of the testing stage with
+NOTE: combinations of codes will be displayed as 2 or more
+the manufacturer and set to GMT.
+fault numbers added together. Example: If alarm code for
+VOC 4 and Over temperature alarm code 16 happened
+Airflow
+simultaneously then alarm code number 20 would be
+This column shows the real time airflow through the
+displayed.
+extractor.
+Code Meaning
+Airflow set point
+1 Door Open
+4 VOC alarm
+Shows the target airflow that has been set by the user, this
+16 Over temperature
+will record every time an adjustment is made.
+32 Inlet partially blocked
+64 Inlet fully blocked
+Pre filter % blocked
+128 No combined filter fitted
+512 Motor failure
+The display on the extractor will show the pre filter blocking
+2048 System 100% blocked
+in 5% increments, but with this downloadable file the pre
+4096 Combined filter blocked
+filter blockage is shown as an exact percentage of its full
+8192 Pre filter blocked
+capacity.
+16777216 System 75% blocked
+Faults
+Combined filter % blockage
+This column will display a code if a fault with the system is
+detected, for analysis of any faults in this column please
+The display on the extractor will show the combined filter
+contact the Videojet helpline.
+blocking in 5% increments, but with this downloadable file
+Xtract PVC User Manual
+Page 23 of 30
+
+Error Codes on the display
+Error Codes
+The sys tem is able to self - diagnose problems relating directly
+to the monitoring system. Faults are displayed as a number
+in the error window within the display.
+8 0 1
+Fault Indication
+The system intelligently monitors the whole extraction unit.
+In the unlikely event of a problem with the extraction unit
+please read this section of the manual before contacting the
+helpline.
+This section cont ains details on all faults the system is able to
+display , these faults are detailed below.
+In the event of an error code being displayed please contact
+your local representative who will be able to diagnose the
+Motor Failure
+fault and advise on the most efficient solution.
+If the extraction unit develops a fault relating to the motor
+then the motor icon on the display will stop rotating and flash
+USB diagnosis
+3
+the airflow will read O m /h.
+For a “Real time” eve nt log of any faults with your system
+please see section 7.04 & 7.05 to download a full analysis of
+the extraction system.
+If the above symbol is displayed power should be isolated
+from the extractor and arrangements should be made to
+replace the motor.
+Internal Power Supply
+The extractor is fitted with an internal transformer tha t
+outputs 12V DC providing the s ystem with power.
+If the buttons on the front panel are not illuminated or
+operational this would indicate a problem with the internal
+power supply (provided the main isolation switch is in the ON
+position and voltage is proven at this point)
+If the power supply has faile d, arrangements should be made
+to replace the transformer.
+Xtract PVC User Manual
+Page 24 of 30
+
+For your guidance
+Consumables & Filter Disposal
+Deposit EWC Comment
+Listing*
+Hazardous 15 02 02M The type of hazard needs to
+be identified and the
+9 0 1
+associated risks defined.
+The thresholds for these
+risks can then be compared
+Consumable Spares
+with the amount of material
+The extraction system contains a pre filter and a combined
+in the filters to see if they
+filter. These should be replaced w hen instructed to do so by
+fall into the hazardous
+the system (see section 6 for replacing the filters)
+category, if so, the filters
+will need to be disposed of
+To maintain performance it is important that the filters are in line with the
+local/national regulations.
+replaced with identical Videojet filters. To re - order please
+*European Waste Catalogue
+refer to the Filter number printed on the filter installed in your
+extraction unit.
+Maintenance Protocol
+The data logging function en ables the retrieval of filter
+change intervals. Users may also wish to record changes on
+the table below.
+Unit Serial Number:
+Pre filter & Chemical Pad Combined filter
+Date Engineer Date Engineer
+.
+Filter disposal
+The Pre and Combined filters are manufactured from non -
+toxic materials. Filters are not re - usable, cleaning used filters
+is not recommended. The method of d isposal of the used
+filters depends on the material deposited on them.
+Xtract PVC User Manual
+Page 25 of 30
+
+System Specifications
+1 0 0 1
+Unit: Xtract PVC
+3
+Capacity: 35 0m /h (206 cfm)
+Weight: 90.6Kg (199 lbs)
+Motor: Centrifugal Fan
+Output: 1100w
+Electrical supply: 115 - 230V
+Hertz: 50/60Hz
+Full Load Current: 12.5A FLC
+Noise Level: Below 60dB (A)
+(at typical operating speed)
+Maximum altitude – 2000m
+Size:
+Metric Imperial
+(mm) (inches)
+Height 106 6 42
+Depth 604 23.7
+Width 567 22.3
+Filters :
+Filter Surface area Efficiency
+Type
+2
+Pre filter 2.0 m 95% @
+0.9micron
+2
+Combined 3.0m 99.997% @
+filter 0.3micron
+Combined Filter (Gas section)
+Filter Carbon type Amount
+Type
+Combined Activated 20 kgs
+filter carbon
+( Gas )
+Environmental operating range:
+o o
+Temperature: +5 C to + 40 C
+o
+Humidity: Max 80% RH up to 31 C
+o
+Max 50% RH at 40 C
+Xtract PVC User Manual
+Page 26 of 30
+
+Consumables and Spare Parts
+11
+0 1
+Consumables
+Xtract PVC Primary Filter
+Xtract Max Combined Filter
+Spare Parts:
+Xtract PVC PCB
+Xtract PVC 115 / 230V Fan
+Supply Filter EMC Filter
+Power Supply 12VDC Transformer
+Xtract PVC User Manual
+Page 27 of 30
+
+Mains switch 16A and bezel
+HCL replacement PCB
+VOC replacement PCB
+Front Panel Label
+Xtract PVC User Manual
+Page 28 of 30
+
+Electrical Schematic
+12
+0 1
+Xtract PVC User Manual
+Page 29 of 30
+
+Contact Information
+13
+0 1
+Videojet Technologies Inc.
+1500 Mittel Boulevard
+Wood Dale, IL
+60191 - 1073 USA
+www.Videojet.com
+Phone (USA): 1 - 800 - 843 - 3610
+Fax (USA): 1 - 800 - 582 - 1343
+Int’l Fax: 630 - 616 - 3629
+Offices: - USA: Atlanta, Chicago
+Of fices: - Int’l: Canada, France, Germany, Ireland,
+Japan, Spain, Singapore, Netherlands, United
+Kingdom.
+Xtract PVC User Manual
+Page 30 of 30
+
+MpGHg
++O*.[Zf`.4P75K/A -/@%&%"
+@" ?]?9//10632#"&'532>54.#"!!&QrI!2SEc&0Z38+,I6BEB'C[4?kM+*&-S/1@,,
+4y*_0;j#~0z0U%0+7L+0UG?e8]w@0PUI0GE0C1
+
+S@23222i@&&-e&ehh???99?/3/99//9901%#".''#"&&67&&66327>32?+18 5$->>7/61,39e0$L#+$
+0w9/+2,7+9+4#%a%E+CUX@%&%L@H'L'@K?+2?+2/99//01_^]^]@%%L@H'L'@K?+2?+201_^]^]Y%#!"&554>7!"&54>3!2!2N!`g
+&+*
+'3m*.?.!'-@'...+!!~??9/93]22/9/32201%###".55!".54>7>3232#3m@&&!2%*6"@""aaI1C8V1$,$,@44.1H@H/
+
+0"#D"@".-D..! 0'/29/29/9/3?++/+++/++9/9/+10@#H@Hl"l".l.?+/+/++9/9/+01Y#.#!326673#.##!2>73!5>54.'5 b "
+M<D
+Ethvo,3e^iZK=''x@&@@@D@&@ D&B
+3RS300+9/+29?33+32++31066326632!5>554.#"!5>554.#"!5>54&&'573!:g2FVCf5'=/
+0**@11&&5?55?-?>9/9/9/9/9999?+?++/+910#"&&54667'&&546632326654&&#"326654&&#"jrj~h6Lhfjxh1kUIh6;kFsy3qVPk5<oJD^:*vuaYtT|V&0qfpWL>~XZ>ZQHV`K-Pjg6e+,-f@@%@@%%@-,B-, /
+*ZvU-
+[@1@H!'DD@'!!'B*
+':$% |=- >F4#3#--=@^*0-Un]=*}"/_/.@"#"%!.%.3-
+--$0/#-d-S
+/#--$0/#--$0/#--#1.$--#1]=}<3@,9/32//33//?2/210!5>54&&'5!?***5
+R<G/#--$0/#-8d-q..5.--/9/?/10"&546632326654&#"gqNd|xSi-~qtz-`m}b^_]=}'P.'%.3@-""

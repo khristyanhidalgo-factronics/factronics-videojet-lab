@@ -1,0 +1,344 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\7810 Site Survey Training 06 12 20.pdf
+# cifrado=False bloques=36 caracteres=11689
+
+7810 2 Watt Ultraviolet
+Site Survey Training for 7810
+
+Laser Spectrum
+UV 355
+
+Laser Hazards
+➢ Exposure of your eyes
+➢ Exposure of your skin to the beam
+➢ Fire
+➢ Toxic Fumes
+➢ Lethal high - voltage shock
+➢ Mechanical
+➢ Lens
+
+Wavelength Vs. the Eye
+Laser radiation in the invisible, short wave UV - A range (wavelength
+315 nm - 380 nm) of low intensity can cause inflammation of the
+cornea ( photokeratitis ) or of the conjunctiva ( photoconjunctivitis )
+as well as cataract (clouding of the eye lens). In case of higher
+radiation intensity it can cause reversible corneal opacity,
+irreversible corneal opacity and cataracts.
+
+Ultraviolet Radiation Damage
+http://s1.hubimg.com/u/6851722_f520.jpg
+
+Cataract
+Normal, clear lens
+Lens clouded by cataract
+http://umm.edu/health/medical/reports/articles/~/media/ADAM/Images/en/18012.ashx
+A cataract is an opacity of the normally clear lens which may develop
+as a result of aging, metabolic disorders, trauma or heredity.
+
+Conjunctiva
+File:Beccas Oga.JPG
+Conjunctiva line the inside of the eyelids and covers the sclera (white
+part of the eye.
+
+Photokeratitis
+http://informationng.com/wp-content/uploads/2012/12/photokeratitis.jpg
+Photokeratitis or ultraviolet keratitis is a painful eye condition caused by exposure of
+insufficiently protected eyes to the UV rays from either natural or artificial sources.
+Photokeratitis is akin to a sunburn of the cornea and conjuntiva , and is not usually
+noticed until several hours after exposure. Symptoms include increased tears and a
+feeling of pain, likened to having sand in the eyes.
+
+Wavelength Vs. Skin effects
+
+Biological Effects of Radiation
+
+Lens hazard
+The laser system contains optics constructed from Zinc Selenide. When broken into small
+pieces or exposed to acidic conditions, they may give rise to harmful products.
+In normal use however, the laser optical components are not considered to be hazardous.
+In the event that a laser optical component is damaged in any way, the material and any
+packaging must be treated as hazardous waste and disposed of accordingly.
+
+Cleaning Solvents
+• Solvents (High grade)
+– Acetone
+– Methyl alcohol (methanol)
+– Isopropyl Alcohol Flammable
+• Irritants
+
+Reflected UV light
+Danger: during the alignment the
+cross wire will reflect the UV laser
+energy in all directions.
+
+An UV laser laser with a power of 2 watts is projected onto a fully dilated human eye pupil of 7 - mm diameter.
+The eye is exposed for a duration of 10 seconds. Calculate the minimum optical density OD of a laser safety goggle needed
+to protect the eye from damage. Refer to ANSI Z136 - 2014 Table 5a for the appropriate maximum permissible exposure
+(MPE).
+Given:
+• UV laser
+• λ = 355 nm
+• t = 10 s
+• Eye diameter = 7 mm
+• MPE = 0.1 W/cm2 (See Table 5a for355 nm, 10 - second exposure.)
+• P = 2 W
+Area of pupil =
+π D ² = (3.14)(0.7 cm) ² = 0.38 cm²
+4 4
+Solution:
+Where OD = log10 E 0 and E 0 = P / A, we get:
+MPE
+OD = log10 2 W / 0.38 cm²
+0.1 W / cm²
+OD=52.6
+OD = log10= 1.7
+OD = 1.7 Rounded up to a Optical Density of 2, all VJ technicians will use an OD of 5
+
+UV Laser PPE Controls
+1. Engineering controls (enclosure and Barriers)
+• Enclose UV laser beam paths to extent practical
+• Design barriers or enclosures for beam dumps to minimize potential diffuse
+exposures.
+2. Administrative Procedures
+• Attenuate laser beam and plan work to minimize exposure time
+• Keep exposed skin as far as practical from open beams
+3. Skin PPE
+• Wear long sleeved shirts
+• Use gloves when working with hands accessible laser beams (primary or stray)
+• Use gloves when diffuse reflection NHZ> 20cm, if working within that distance
+• Use face shield when diffuse reflection NHZ> 1m if working within that distance
+4. Medical exams
+• Periodic skin exams recommended for laser personnel who may have exposures >
+MPE
+5. Site specific training
+• OJT and SOP must describe potential for skin injury and controls to use
+
+UV Shielding Options
+• Can use Polycarbonate as long as wavelength and OD are know and
+permissible for the wavelength (355 nm).
+• Does not require a tint on the polycarbonate.
+• Beam shield Kit for CO2 (less expensive) or special beam shield kit for
+Fiber/UV (expensive and small sheet of material) will both work if simple
+beam shield.
+
+Supply Unit
+Power on Standby
+Start Stop
+USB ports
+Currently not in use
+Error LED
+Status Bar LEDs
+Key switch Booting and Marking state
+Emission LED
+Shutter State LED
+
+Supply Unit - Other Things to Know
+• Power Supply for beam source is very heavy and located in supply unit. Therefore
+supply unit is heavy (44 pounds/20kg)
+• Only cable gland connector plates available. No other options.
+• No connector for TU430 so just run cable through gland plate.
+• CPD3 on basic model. Interlock or Shutterlock possible.
+• FASS available as upgrade: Interlock with FASS requires manual reset switch.
+Shutterlock does not require manual reset switch.
+
+Laser/Marking Head
+
+Beam Expander
+• 3x, 5x and 7x are available for TS10.
+• 3x and 5x available for SS7 (no 7x for
+SS7; beam would be too big for 7
+mm mirrors)
+• 3x is the default module.
+• Must be aligned after source
+installation or if removed for any
+reason.
+• Fine adjustment available to change
+spot size and focal distance slightly.
+
+Focus Finding
+You will typically have to find best focal distance at site. Will vary from focal/working
+distance in the manual. This template will allow you to find best settings as it allows
+you to vary focus and draws in different spots. So you are just adjusting focus and
+nothing else while it prints.
+• Use special template and parameter set
+
+Marking Head Overview
+Super Scan 10
+(10 mm mirrors)
+Turbo Scan 7
+(7 mm mirrors)
+Terminology
+• Smallest parts replacement is the entire marking head.
+now changed to
+• Galvos not replaceable on their own.
+SS7 and SS10 for
+ordering.
+
+Marking Head Notes
+• Marking head can be turned upside down or turned 90 degree increments in
+field. Does not come that way from factory.
+• There is a BTU available as SAR for SS10 head only.
+• TS7 (7 mm mirrors) and SS10 heads (10 mm mirrors) can reach same speeds
+and use same settings, but the di sadvantage of the SS10 is the higher inertia
+of the mirrors which means lower quality at high speeds in the image
+formation.
+
+Lens Working Distance
+Marking head Raylase TS10 TY (all values in mm)
+Laser scans lens: focal length f 100 160 214 511
+Working distance 193 227 301 650
+Max. width (A) 63.6 118 155.9 374.6
+Max. width (B) 75.6 118 155.9 374.6
+Marking head Raylase SS7 TY
+Laser scans lens: focal length f 100 160 214 511
+Working distance 209.5 253 316 668
+Max. width (A) Diameter 65.1 110.6 156.9 374.6
+Max. width (B) 75.6 118 156.9 374.6
+Adapter
+required for
+some lenses
+
+Mounting Laser
+• Always mount the laser head horizontally with bottom plate
+facing ground (i.e. not upside down!!). Don’t mount vertically.
+• Turn the head upside down if need to print from underneath
+product.
+• Laser source is too heavy and too finely adjusted to hang
+upside down.
+
+Tube to Head
+• TS7 Head only has 70 mm tube to scan head (connects body to head)
+• SS10 has different lengths of tube available (70, 110, 150, and 200 mm)
+
+BTU is for SS10 Head only!
+
+Beam Source – How Mounted and
+Adjusted (1)
+Ten Fixing screws ( five on each side )
+
+Beam Source – How Mounted and
+Adjusted (2)
+Fixtures (4 pcs .) Fixing screws (4 pcs .)
+
+Some Notes on Source & Warm Up Time
+• Expected lifetime of the laser beam source: 15,000 - 25,000 hours. But warranty is for 2
+years.
+• Marking Intensity less than approx. 75%, leads to an unstable marking.
+• Laser On Delay: 7 minutes. (After having closed the key - switch.)
+So don‘t turn off key very often like we would have recommended on other lasers.
+• Each time you make an adjustment to Intensity it will take up to 1 minute for the laser
+source to adjust. That is why you will rarely see indexes with different Intensity
+settings used in UV applications.
+• After the first marking wait for 2 hours until the beam source runs stable.
+Only neccessary for very high quality requirements (2D barcodes, etc.) and after the
+system was turned off for several hours.
+Neccessary to warm up the SHG / THG crystals in source to approx. 40 ° C in order
+to achieve optimal conversion and a good output power stability.
+• Regular applications don‘t need 2 hour warm - up time, but remember that each time
+you open key switch it will take about 7 minutes to recover and that anytime you
+adjust Intensity it will require a delay.
+
+Considerations for Site Survey – All Lasers
+• Material type? • Distance from top of product or side of
+• Samples provided? product to the nearest obstruction?
+• If so, what lens will be used? • Product information to be printed?
+• Print area size? • Variable information?
+• Direction of print (right to left, front to • What interface ( Smartgraph , TCS+,
+back)? CLARiTY )?
+• What side of the product will we be • Is interface selected capable of printing
+printing on? code for specific application?
+• Will a vision system be used? • Is font used available for the interface?
+• If so, how far from the printer? ( CLARiTY can’t add fonts)
+• Is there a reject station? • Any non - standard communication
+• If so how far from the printer? necessary ( EtherNet /IP, Profinet ,
+• Static or Mark on the fly? Ultimate 6)?
+• Product speed? • Will the standard extractor work? Or is
+• Product throughput? special extractor such as PVC needed?
+• Product size? • Will Arc Compensation be used?
+• Conveyor height?
+• Is there enough air flow for the controller?
+
+Special Considerations for 7810 Site Survey
+• Does Sample Report give working distance? UV may use working distance that is different from the
+manual. Often need to make slight adjustment in distance to get desired effect on specific material.
+Don’t just go by manual!!
+• When mounted to mark on side of product you don’t have much adjustment in/out for focusing. Make
+sure measurements are correct for distance from product.
+• Is there enough space by the conveyor? (Remember this laser is very large)
+• Will we be using a stand or will we be fabricating a bracket (Regular stand won’t work with UV — too large
+and heavy). There is SAR H - based stand available.
+• Where will the controller be located?
+• Will you need an environmental cabinet for the controller (IP21 supply unit/IP20 marking head)?
+• Will the standard extractor work (even when you don’t see smoke you can still be generating gas)?
+• Ensure you only consider mounting laser head horizontally and also not upside down (even if horizontal).
+• Do you need a BTU? Remember only SS10 head has one available and it is an SAR.
+• What kind of safety switch will be used? If FASS board, you will need additional reset switch if wiring as
+Interlock with FASS. (7810 has CPD standard and FASS available as upgrade).
+
+Arc Compensation
+Enable Configuration
+√
+X offset:123 Encoder 3600
+pulses
+Y offset: 0
+Ratio:1
+X
+Clock wise =
+Pulses/Turn= - 7200
+a negative value
+Y
+Start angle= 20
+Lock angle=0
+Rising
+Start trigger
+V
+Rising
+Consecutive trigger
+V
+None
+Stop trigger
+V
+clockwise
+Rotation
+V
+Save
+
+Angled Laser with Encoder Geared
+Enable Configuration
+√
+X offset: 5
+Filler
+Y offset : - 404
+Ratio: 6
+Clock wise =
+Pulses/Turn= - 65536 Blower
+a negative value
+Start angle= 18
+Lock angle=0
+Rising
+Start trigger
+V
+Consecutive trigger Rising
+V
+30000 pulse
+encoder
+None
+Stop trigger
+V
+Laser printing
+clockwise
+Rotation
+V
+up
+Camera
+Reject
+Save
+
+QUUU????9++++222?01Y%#".5##".'##".5463323>332q0%$00""0/%$06-.B0 "
+&4
+S@23222i@&&-e&ehh???99?/3/99//9901%#".''#"&&67&&66327>32?+18 5$->>7/61,39e0$L#+$
+I!IL??9?01Y#".'.54>327>32'C65C&1%
+&+*
+'3m*.?.!'-@'...+!!~??9/93]22/9/32201%###".55!".54>7>3232#3m@&&!2%*6"@""aaI1C8V1$,$,@44.1H@H/
+
+pN^@,!:0>1S-'+X@D%$D&%@H
+0

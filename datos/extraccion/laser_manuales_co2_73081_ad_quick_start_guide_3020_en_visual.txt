@@ -1,0 +1,441 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\73081-AD Quick Start Guide 3020 EN.pdf
+# cifrado=False bloques=33 caracteres=28420
+
+Quick Start Guide
+Videojet 3020
+P/N: AL-73081
+
+[&XK|8[7?jW>L|?@4I
+Xxy"EGXXY"& $-&%% !!H@
+
+Copyright 2012, Videojet Technologies Inc. (herein referred to as All rights reserved. Videojet).
+This document is the property of Videojet Technologies Inc.proprietary information owned by and contains confidential and Videojet. Any unauthorized copying, use or disclosure of it
+without prior permission of Videojet is strictly prohibited.
+Videojet Technologies Inc.
+1500 Mittel BoulevardPhone:1-800-843-3610Wood Dale, ILFax:1-800-582-1343INTL: Canada, France, Germany, Ireland, Japan, Spain, Offices - USA: Atlanta, Chicago, Los Angeles, Philadelphia
+60191-1073 USAIntl Fax:630-616-3629Singapore, The Netherlands, The United Kingdomwww.videojet.comDistributors worldwide
+
+Table of Contents
+1 Safety Instructions.......................................................4
+1.1 Laser Classes..................................................................................41.2 Intended Use....................................................................................5
+1.3 Safety Devices and Warning Lights.................................................61.4 Dangers to Eyes and Skin................................................................7
+1.5 Safety Information for Zinc Selenide Lenses...................................81.6 Adjustment/Modification of the Marking Field..................................8
+1.7 Fire and Explosion Hazard...............................................................91.8 Electrical Safety...............................................................................9
+1.9 Decomposition Products..................................................................91.10 Cleaning Agents.............................................................................9
+2 Operating the Laser System......................................10
+2.1 Elements on the Laser System......................................................102.2 System States of the Laser System...............................................11
+3 Setup.........................................................................12
+3.1 Assembly........................................................................................123.2 Adjustment of Working Distance....................................................13
+3.3 Connection.....................................................................................143.4 Switch-On of the Laser System......................................................16
+3.5 Line Setup (mark on the fly)...........................................................17
+3.5.1 Line movement "L to R" or "R to L"...............................................................183.5.2 Line movement "Static".................................................................................20
+3.6 Creating a Job................................................................................243.7 Marking..........................................................................................29
+3.8 Switch-Off of the Laser System......................................................30
+1
+
+Table of Contents
+2
+
+Before starting your work carefully read the chapter "Safety Instructions"!
+NoteThe printed safety instructions must be stored near the laser system, easily accessible for theoperator.
+Make sure that you have understood all notes. In case of any questions please contact Videojet Technologies Inc.directly.
+Strictly follow the instructions!
+If you need help...
+...please contact Videojet Technologies Inc. at 1-800-843-3610 (for all customers within the United States). Outsidethe U.S., customers should contact their Videojet Technologies Inc. distributor or subsidiary for assistance.
+Videojet Technologies Inc.1500 Mittel Boulevard
+Wood Dal IL 60191-1073, USAPhone (USA): 1 800 843 3610
+International: +1 630 860 7300
+Fax (USA): 1 800 582 1343International Fax: +1 630 616 3629
+Website: www.videojet.com
+Caution!
+With open delivery system dangerous laser radiationclass 4 might be released!
+This might cause severe burns of the eyesand the skin as well as damage to objects!
+Caution Laser Radiation!
+06/12 - Rev. AD 3
+
+Safety Instructions
+1 Safety Instructions
+1.1 Laser ClassesThe Complete Laser System
+The laser itself is classified as class 4 laser system. Up to the beam outlet the1 laser system in normal operation closed laser system acts as a class
+1
+.
+If the beam outlet including the object to be marked is shielded appropriately, theacts as a class 1 laser system complete, closed in normal operation laser system
+1
+ and no additional protection is required for operation. Theshielding prevents emerging of laser radiation or laser beam reflexes.
+NoteThe shielding is not included in the scope of delivery!
+Laser radiationThe beam path must always be closed, also if there is no product in front of the laser lens.
+max. average power densityenergy densityat the beam outlet
+up to 1.5 x 10
+The Laser Source
+The CO laser - hereinafter called laser - is operated in pulsed or continuous wave operation. The laser itself is clas-sified as class 4. It produces invisible (infrared) radiation which is extremely dangerous for the eye and dangerous
+for the skin.
+2 In pulsed operating mode the pulse frequency adjusts between 50 Hz and 20 kHz. The actual operating mode andpulse frequency depends on the application.
+The following values can be reached (no specification):
+6 2 2 2
+ W/m 7 x 10 J/m (at 1 kHz and 50 %duty cycle
+a
+)
+9 2 6 2
+in focus up to 5 x 10
+ W/m 3 x 10 J/m (at 1 kHz and 50 %duty cycle
+a
+)
+Laser radiationCaution!
+As soon as the closed shielding or the housing of the laser are opened anywhere the completelaser system is set to class 4!
+In that case appropriate measures have to be taken in order to protect people working in the laserarea against too high radiation. Make sure to meet the local regulations regarding protection
+against laser radiation.
+LaserradiationCaution with modifications!
+EN 60825, part 1, »Safety of laser systems«, section 4.1.1 says:
+If a modification by the user to a laser system previously classified in accordance with this stan-dard leads to a change of its performance data and/or its intended use that person or organiza-
+tion performing the modification is responsible for a new classification and labeling of the lasersystem.
+a.duty cycle: The ratio between the period of laser emission and the operation terms.
+1.Normal operation does not include service, maintenance nor repairs.
+4 06/12 - Rev. AD
+
+Safety Instructions
+1.2 Intended Use
+The laser system must only be used for the treatment of material surfacesintensive class 4 laser radiation and are modified thereby. These systems are mainly applied for marking of product. The surfaces are locally heated by
+surfaces (expiry dates, batch printing, serial numbers, etc.).
+The radiation produced by the laser system is of high energy and therefore improper use represents a danger topersons or objects!
+LaserradiationNever expose human beings or animals to laser radiation! This might result in severe burns of eyes or skin.
+Never expose flammable materials to laser radiation! Always ensure appropriate shielding of the laser beam! Errors during marking on flammable
+materials (e.g. paper) might cause fires. Take suitable safety measures by installing e.g. smoke or fire detectors, or similar!
+Never expose reflecting surfaces to laser radiation! The reflected laser beam may cause the same dangers - in individual cases even greater
+dangers - as the original laser beam.
+Never expose unknown materials to laser radiation! Some materials (e.g. polyethylene, polypropylene, glass) are easily penetrated by the laser
+beam, although they seem to be opaque for the human eye.
+Danger of explosion! Make sure that the laser area is free of explosive materials or vapors!
+For safety reasons arbitrary modifications or changes to the laser system are forbid-den!
+If a modification made by the user to a previously classified laser system leads to a change of its performance data and/or its intended use that person or organization performing the
+modification is responsible for a new classification and labeling of the laser system. The per-son or organization is then regarded as »manufacturer«.
+The laser system must be operated with open laser and/or open beam delivery system by specially trained personnel only!
+Make sure that the laser protection rules are always observed!
+06/12 - Rev. AD 5
+
+Safety Instructions
+1.3 Safety Devices and Warning Lights
+The complete laser system includes various safety devices and warning lights which shall prevent damages to peo-ple or objects. There must not be any alterations to safety devices nor warning lamps (see section "Laser Classes"
+on page 4)!
+Safety Devices
+Key-operated switchWarning Lightsprevents operation of the laser system by unauthorized people. The "switch" isclosed by entering a password in the Touch Control. Make sure that the login infor-
+mation is available to authorized personnel only!
+Beam shutteris located within the marking head and prevents the emission of laser radiation.Interlock switch(es)open(s) the safety circuit. The marking process is stopped immediately. If several
+interlock switches are connected: Laser radiation cannot be emitted if at least oneinterlock switch is opened.
+All safety doors, protective covers, etc. must be safeguarded by interlock switches.Number and position of the interlock switches are system-specific.
+For wiring the safety circuit single wires must be used and they must be laid sepa-rately to avoid the risk of short-circuits.
+For the marking process all interlock switches must be closed. In an interlock switchis open the message "Error Interlock open" is displayed in the software.
+After closing the interlock switch the marking process can be continued after a delayof 5 seconds.
+We recommend the interlock monitoring module for proximity safety switches AES1235 in combination with the magnetic guard door BNS 33 and the actuating mag-
+net BPS 33 by Schmersal.
+The interlock circuit must be checked regularly.
+NoteThe input »Interlock« is to be used exclusively for connecting external interlock switches. It isnot intended for controlling the laser system. For that purpose please use the input »Shutter
+Lock«.
+Red light ("bumper")on the head of the laser system lights up when the emission of laser radiation ispossible.
+Red LED"Laser emission"on the control panel of the laser system, lights up when the emission of laser radi-ation is possible.
+ImportantWhen installing the laser you must ensure that at least one of the warning LEDs isalways visible.
+6 06/12 - Rev. AD
+
+Safety Instructions
+1.4 Dangers to Eyes and Skin
+The laser system produces class 4 laser radiation. Infraredfore eyes and skin are endangered through high-energy laser radiation. laser radiation is not visible for the human eye. There-
+High irradiation causes an extreme local heating and burning of the tissueHigh radiation intensity causes a local heating and burning of the cornea and thus a . The eyes are subject to special risks.reduction or loss of sight!
+Suitable safety goggles provide protection against direct, specularly reflected or diffusely scattered laser radiation.
+Suitable safety goggles are:
+designed for the wavelength range of the CO
+ laser of 10.6 Careful with confusions! μm. See name plate of the laser system.
+Safety goggles for other lasers, e.g. Nd:YAG laser, do not provide adequate protection against radiation of a CO
+2
+People within the area of the laser must wearlaser radiation while carrying out maintenance, adjustment or service work at the suitable safety goggles against
+open laser housing and/or open beam delivery system!
+Never look directly into the laser beam!
+laser!
+designed for the power range of the laser. Values of maximum average power:2
+Videojet 302012 W
+are designed for pulse and continuous wave operation.
+The skin can withstand higher radiation intensities than the eye. However - depending on the radiation period andradiation intensity - the tissue is destroyed through burns. Therefore protect your skin by wearing adequate pro-
+tective clothing! Avoid any exposure of your skin to the laser radiation! Avoid the laser beam to get in contact withyour clothing!
+06/12 - Rev. AD 7
+
+Safety Instructions
+1.5 Safety Information for Zinc Selenide Lenses
+Zinc Selenide
+on the market. laser marking systems available
+2
+NoteThere is no danger of radiation during normal handling and cleaning of the optical sys-tem!
+LaserradiationIf, as a result of the modification, the laser beam gets accessible the complete laser system isset to class 4 (see section "Laser Classes" on page 4).
+CautionFire and explosion hazard if there are flammable materials or explosive atmospheres within thearea of the laser beam.
+This material contains components which are dangerous to health!
+Zinc selenide is toxic when inhaled or ingested. Dust may lead to irritation of the eyes and the respiratory system.Do not eat, drink or smoke while handling zinc selenide. Wash hands thoroughly afterwards.
+For detailed information see safety data sheet in the chapter "Appendix".
+Thorium
+Thorium is a potential health hazard when inhaled or ingested. The thorium layer is embedded within other layerswithin the lens. Thus no radioactive material can escape from the coating as long as the lens is intact. Avoid any
+surface scratches of the lens.
+In case of a broken lens......do not inhale material particles! In case of breaking of the focusing module please collect the fragments wearing
+gloves (avoid raising dust when sweeping up the pieces), pack the fragments into a closed plastic bag and sendthem back to us for disposal.
+Maintenance of the focusing moduleInformation concerning the maintenance of the focusing module can be found in chapter "Maintenance", section
+"Cleaning the focusing module".
+Please contact us if more information is required.
+CautionThe focusing module consists of coated zinc selenide and contains an extremely small amountof the radioactive substance thorium. This applies to all CO
+1.6 Adjustment/Modification of the Marking Field
+Via the software the marking field of the laser can be modified in such a way that the laser beam can possibly bedirected to the shielding or onto other components or parts. Thus, surfaces exposed to irradiation can be damaged
+or destroyed.
+A password is required for changing the marking field (if the password protection has been activated in the software).The password can be changed subsequently by a user authorized for the corresponding user level.
+We explicitly point out that the person who will fulfil a modification of the marking field, will assume the fullresponsibility for any consequential damages and problems!
+8 06/12 - Rev. AD
+
+Safety Instructions
+1.7 Fire and Explosion Hazard
+1.8 Electrical Safety
+LaserradiationThe high output power of a class 4 laser can inflame various materials. Therefore, while per-forming maintenance and service work at the open laser housing and/or open beam delivery
+system, make sure that fire protection measures were taken before starting the works!
+Paper (circuit diagrams, leaflets, posters on the walls, etc.), curtains which are not impreg-nated fire retardantly, wooden boards or similar flammable materials can easily be inflamed
+by direct or reflected laser radiation.
+Make sure that the working area of the laser system is ble or explosive solvents or cleaning agents!free from containers with flamma- Unintended exposure of a container to in-
+tensive invisible laser radiation might easily cause fires or explosions.
+CautionDuring works at the open laser housing alive components are accessible!
+Make sure that rules and regulations for works on alive components are always observed!
+All works at the open laser housing, especially at electrical components, must only beperformed by specially trained personnel!
+CautionWhen treating materials with laser radiation decomposition products are produced which aredangerous to health!
+Through vaporization of materials fine dust and vapors are produced which might include haz-ardous decomposition products depending on type and composition of the respective materials.
+Therefore we highly recommend to install an exhaust unit according to the respective require-ments which is equipped with special dust and activated charcoal filters to ensure that the de-
+composition products are sucked off where they are produced.
+Protect yourself and your colleagues against hazardous decomposition products!
+CautionThe housing of the laser system is made of PC/ABS (polycarbonate with acrylonitrile butadienestyrene). This material can be corroded by aggressive substances.
+To clean the housing use only a wet cloth or soapy water (2 % soap).
+Acetone must only be used for cleaning the lens surface and must not get in contact with thehousing!
+The laser system was designed in accordance with the general rules of technology including regulations EN 61010»Safety requirements for electrical equipment for measurement, control and laboratory use« and EN 60825-1 »Safe-
+ty of laser products«.
+1.9 Decomposition Products
+An exhaust unit also prevents contamination and gradual destruction of optical elements of the beam delivery sys-tem by dust particles. We offer different exhaust units as accessories.
+1.10 Cleaning Agents
+06/12 - Rev. AD 9
+
+Operating the Laser System
+2 Operating the Laser System
+2.1 Elements on the Laser System
+L1
+L2
+S1
+L3
+S2
+I1I2S3I3I4I5
+(bottom side)
+No.TypeFunction
+S1Push buttonSTART -green-With »START« the currently selected template can be marked.
+Laser radiation is emitted!
+Make sure that the safety instructions are observed.
+S2Push buttonSTOP -red-With »STOP« a marking process can be stopped.
+S3Main power switchswitches the laser system on.
+LED status indicators
+L1 Emission -red-is on when the key switch is in position »1«.Simultaneously the red LED on the marking head lights up.
+L2Error -yellow-flashes in case of malfunction.
+L3System -white-flashes during initialization of the laser system.
+is on when the laser system is ready for operation.
+flashes when data are written to the memory card.
+I1Socketconnection of mains supply
+I2Socketconnection of encoder
+I3Socketconnection of Touch Control
+I4Socketconnection of customer interface
+I5Socket (bottom side)connection of product detector (light barrier)
+10 06/12 - Rev. AD
+
+Operating the Laser System
+2.2 System States of the Laser System
+On the Touch Control user interface the current laser system state is displayed.
+There are the following system states:
+System StateDescriptionInitializeThe control components of the laser system are started.
+Key-switch openThe initialization is complete. The system can now be started by logging into thesystem via Touch Control.
+Laser start-upAfter closing the key-switch the laser and the cooling system are activated.Laser readyThe laser system is ready for marking.
+Prepare for markingAfter pressing »START« the laser requires a preparation time, the lengthdepends on the template contents and the configuration.
+MarkingThe current marking content is marked onto the product.
+Laser radiation is emitted! Make sure that the safety instructions are observed.
+StandbyIf no marking is carried out for some time the laser switches to standby in orderto relieve the system components.
+Interlock openThe safety circuit is interrupted (e.g. protective door open). A marking process isstopped immediately. Marking is only possible with closed safety circuit.
+Error An error occurred. To continue operation the error must be confirmed. Informa-tion on the error can be found on page »Messages«.
+Fatal errorA fatal error occurred and has deactivated the system. This error cannot be con-firmed and the operation cannot be continued. The laser system has to be
+turned off. Information on the error can be found on page »Messages«.
+Service modeThis system state enables service and maintenance work and must only beused by especially trained personnel.
+06/12 - Rev. AD 11
+
+Setup
+3 Setup
+3.1 Assembly
+1.Unpack the laser system and the stand.
+2.Mount the stand.
+NoteThe stand is optional and needs to be ordered separately. Information concerning the as-sembly of the stand can be found in the service instruction "Assembly of the Stand".
+3.Loosen both fixing screws of the clamping ring on the coupler of the extension arm and fasten the laser systemat the extension arm using both screws.
+NoteFor further adjustment of the laser system in the horizontal or the vertical position at a certainangle loosen the fixing screw.
+NoteIn order to rotate the laser system clockwise or counterclockwise (360°) loosen a fixingscrew of both clamping rings.
+extension arm
+coupler
+clamping ring
+fixing screws
+fixing screws
+fixing screw of clamping ring
+12 06/12 - Rev. AD
+
+Setup
+4.Mount the clamp for the Touch Control on the stand at the required position.
+5.Mount the beam protection on the laser system.
+3.2 Adjustment of Working Distance
+NoteThe beam protection is not included in the scope of delivery!
+NoteFor easy adjustment of the working distance a focus finder is delivered with the system.
+The length of the focus finder corresponds to the focal length of the lens.
+1.Remove the protective cap from the focusing module.
+2.Place the focus finder under the focusing module and push the protective cap of the focus finder upwards ontothe focusing module.
+3.Adjust the working distance between the focusing module and the product using the crank.
+4.Move up the laser system by one turn.
+5.Carefully remove the focus finder.
+6.Move down the laser system by one turn to the previous position.
+protective cap
+focusing module
+focus finder
+of focus finder
+workingdistance
+product
+crank
+06/12 - Rev. AD 13
+
+Setup
+3.3 Connection
+1.Connect Touch Control to the mains.
+2.Connect the Touch Control to the laser system.
+3.Connect the mains supply connector to the laser system.
+4.Connect the encoder connector to the laser system.
+5.Connect the product detection connector (light barrier) to the bottom of the laser system and fasten it with the nut.
+6.Assemble the product detection unit and fasten it on the bottom of the laser system.
+mains supplyTouch Controlencodercustomer interface
+nut
+connector
+product detection unit
+14 06/12 - Rev. AD
+
+Setup
+7.Position the light barrier according to your requirements vertically (1) or horizontally (2).
+NoteMake sure that the light barrier is positioned close to the marking field.
+1
+2
+06/12 - Rev. AD 15
+
+Setup
+3.4 Switch-On of the Laser System
+1.Make sure that the safety instructions are observed.
+2.If installed: Switch on the fume extractor.
+3.Switch on the main power switch (switch S3). The white LED flashes, indicating the initialization of the laser system. This process can take 1 to 2 minutes.
+After that the system is ready for operation and the white LED is on..
+4.Switch on the Touch Control.
+5.Log into the system via Touch Control by pressing the key switch button in the upper right corner of the softwareand entering the password 8463.
+ImportantThe password must be used by authorized personnel only!
+6.The red LED on the keypad and the red LED on the front of the laser system are on. The laser is ready.
+main power switch
+16 06/12 - Rev. AD
+
+Setup
+3.5 Line Setup (mark on the fly)
+For detailed information see the software manual "Touch Control".
+1.Press »Pen« in the field »Line Setup«.
+2.Press »Manage Line Setups«. The manage line setup dialog is displayed.
+3.Press »Create« and enter the name for the new line setup.
+06/12 - Rev. AD 17
+
+Setup
+4.Confirm with »OK« and the new line setup is added to the list of line setups.
+5.Select the line movement in the field »Line movement«.There are two options:
+1. Line movement from left to right "L to R" or from right to left "R to L".2. Static (no line movement)
+3.5.1 Line movement "L to R" or "R to L"1.Under »Positioning & Orientation settings« select the following settings according to your requirements via the
+touchscreen:- Line movement "L to R" or "R to L"
+- Product side selection- Laser position
+- Job orientation
+18 06/12 - Rev. AD
+
+Setup
+2.Press »Speed Fitting« and select the method "Enter or Measure Fixed Speed" via the touchscreen:
+NoteWhen you select the method "Enter Product Size" please note the following:The first product must reach the product detection (light barrier) within 5 s after confirmation
+of the product size value.
+3.Enter the value for the fixed speed.
+4.Press »Trigger Settings« and enter the value for the following parameter:- Start Distance
+- Blocking Distance
+5.Press "External Rising" or "External Falling" in the field »Trigger Mode«.
+06/12 - Rev. AD 19
+
+Setup
+3.5.2 Line movement "Static"1.Under »Positioning & Orientation settings« select the following settings according to your requirements via the
+touchscreen:- Line movement "Static"
+- Product side selection- Laser position
+- Job orientation
+2.For static marking no speed settings are required (»Speed Fitting« is deactivated).
+3.Press »Trigger Settings« and enter the value for the following parameter:- Start Delay
+- Blocking Delay
+4.In the field »Trigger Mode« select one of the following settings:- External Rising
+- External Falling- Internal Once
+- Internal Continuous
+20 06/12 - Rev. AD
+
+Setup
+5.Press »Marking Field & Test« and the marking field size is displayed.
+NoteDo not change the marking field size.
+6.Press »Key Switch« in the field »Test Marking«.
+06/12 - Rev. AD 21
+
+Setup
+7.Press »CloseKeySwitch« and enter the password for closing the key switch: 8463. Confirm with »OK«.
+8.Press »Start« and carry out a test marking. The test marking is a square in the middle of the marking field.
+9.Press »Save« and the new line setup is saved.
+22 06/12 - Rev. AD
+
+Setup
+10.Press »Close« and »Yes« in order to activate the new line setup. With »No« the new line setup is not activated.
+06/12 - Rev. AD 23
+
+Setup
+3.6 Creating a Job
+1.Press »Pen« in the field »Job«.
+2.Press »Manage Jobs«. The manage jobs dialog is displayed.
+3.Press »Create« and enter the name for the new job.
+24 06/12 - Rev. AD
+
+Setup
+4.Confirm with »OK« and the job dialog is displayed.
+5.Press »Add« in the field »Job Elements« and select the corresponding element type (e.g. date).
+06/12 - Rev. AD 25
+
+Setup
+6.Click into the preview area to place the job element.
+In the following an exemplary job is described.
+26 06/12 - Rev. AD
+
+Setup
+7.Press »Date Format« and select the corresponding date format.
+8.Select the corresponding parameter set (e.g. carton).
+06/12 - Rev. AD 27
+
+Setup
+9.Scale the element »date« by clicking on the »Height/Width« with the pen in the list area. Enter the desired sizeof the element type via keyboard.
+10.Change the position of the element »date« by clicking on the »Positioning X/Y« with the pen in the list area.Enter the desired position of the element type via keyboard.
+Or click onto the element »date« with the pen in the preview window and change the position of the element»date« by pulling the arrows (see figure above).
+11.Press »Save« and the new job is saved.
+12.Press »Close« and »Yes« in order to activate the new job. With »No« the new job is not activated.
+28 06/12 - Rev. AD
+
+Setup
+3.7 Marking
+1.Press »Pen« and then »Manage Jobs«.
+2.Select the new job and press »Activate«. Confirm the message with »OK« and the new line setup is activated.
+3.Press the key switch button in the upper right corner of the software and that press »Close Key Switch«.
+06/12 - Rev. AD 29
+
+Setup
+4.Enter the password for closing the key switch: 8463. Confirm with »OK«.
+5.Switch-on the conveyor.
+6.Start the marking by pressing the button »START« on the laser system (see page 10) or the button »START«in the upper left corner of the software.
+Start
+3.8 Switch-Off of the Laser System
+WarningLaser radiation is emitted!Make sure that the safety instructions are observed.
+1.Stop the marking process.
+2.Open the key switch via Touch Control by clicking on the key switch button and confirming the displayed message.The red LED on the keypad and the red LED on the front of the laser system are turned off.
+3.If the white LED is flashing, wait until it is continuously on.
+NoteThe white LED is flashing while data are written to the SD card. Do not switch off the system during this process!
+4.Switch off the main power switch (switch S3).The white LED is turned off.
+5.Switch off the Touch Control.
+6.If installed: Switch off the fume extractor.
+30 06/12 - Rev. AD

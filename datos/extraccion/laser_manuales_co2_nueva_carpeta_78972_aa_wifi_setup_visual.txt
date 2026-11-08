@@ -1,0 +1,127 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales co2\Nueva carpeta\78972-AA WiFi Setup.pdf
+# cifrado=False bloques=10 caracteres=6882
+
+AL-78972Service Part Installation Instruction
+WiFi Setup
+1 WiFi Se t u p
+1.1 Required C o mp o n e n t s
+To enable WiFi access to the laser the upgrade following:kit (AL-78968) is required. It contains the
+AL-78968QuantityDiscription
+AL-789691POWER SUPPLY,WIFI ACCESS POINT,US,POE 12W
+3928881WIFI ACCESS POINT,UBIQUITI AIRGATEWAY-LR
+3928911LAN CABLE, PATCH 3
+AL-789811CABLE,POWER SUPPLY US,WIFI ACCESS POINT,EU
+AL-789821CABLE,POWER SUPPLY US,WIFI ACCESS POINT,UK
+AL-789831CABLE,POWER SUPPLY US,WIFI ACCESS POINT,JP
+AL-789841CABLE,POWER SUPPLY US,WIFI ACCESS POINT,CH
+AL-789721MANUAL,KIT,WIFI ACCESS,ENGLISH
+03/18 - Rev. AA 1
+
+Service Part Installation InstructionAL-78972
+WiFi Setup
+1.2 Access Point Mode  to provide a WiFi-Network
+This instruction will describe how to setup the Point Mode the airGateway (A) provides a Wireless Lan Network (WiFi) and you can directlyairGateway in Access Point Mode. In Access
+connect your mobile Devices (B) to the Laser-System.
+Set airGateway in operation and connect to it
+1.Connect mains cable to the POE adapter (power supply) and mount the WiFi adapter to thePOE adapter.
+2.Plug one end of an Ethernet patch cable into the LAN port on the WiFi adapter and the otherend into the LAN port of your laptop.
+2 03/18 -Rev. AA
+
+AL-78972Service Part Installation Instruction
+WiFi Setup
+3.Connect the POE adapter to mains.
+4.The power LEDs should illuminate on the POE adapter and on the Wifi adapter.
+Configure your Local Area connection IP Address to 192.168.1.5 on your laptop
+1.Select Start | Control Panel and set View to Small Icons.
+2.Select Network and Sharing Center.
+3.Select Change adapter settings from the left pane.
+4.Right click Local Area Connection and select Properties from the context menu.
+5.Select Internet Protocol Version 4 (TCP/IPv4) from the list and click Properties.
+6.Select Use the following IP address.
+7.Enter 192.168.1.5 into the IP Address field.
+8.Press Tab to move into the Subnet Mask field - it will autofill with the default of 255.255.255.0.
+9.Click OK to save changes.
+10.Open a web browser.
+11.Type 192.168.1.1 into the address bar and press You may be prompted that the connection is unsafEnter. e as the WiFi client does not have a security
+certificate of its own.
+Internet Explorer requires only to click Continue to this website.
+Firefox and Chrome require that you add an exception.
+03/18 - Rev. AA 3
+
+Service Part Installation InstructionAL-78972
+WiFi Setup
+Adding a Security Exception (Firefox & Chrome)
+12.Click Advanced and then Add Exception. The Add Security Exception window will open.
+13.Click Confirm Security Exception.
+4 03/18 -Rev. AA
+
+AL-78972Service Part Installation Instruction
+WiFi Setup
+14.The login page appears.
+15.Enter the default values into the User Name and Password fields.
+16.Select your Country and Language from the dropdown selectors.
+17.Check the box I agree to these Terms of use and click Login.
+18.Click Cancel to close Quick Setup Wizard.
+19.Click Dismiss when prompted to change your password.
+20.Select the Wireless tab and select Advanced from the dropdown selector.
+03/18 - Rev. AA 5
+
+Service Part Installation InstructionAL-78972
+WiFi Setup
+21.Type in a new SSID in the field.
+22.Select WPA2-AES in from the Security dropdown selector.
+23.Type in a password in the field WPA Preshared Keymaximum 63). (minimum 8 printable ASCII characters,
+24.Click Change button and then click the Apply button.
+6 03/18 -Rev. AA
+
+AL-78972Service Part Installation Instruction
+WiFi Setup
+25.Disconnect the Ethernet patch cable from your laptop and connect to the Laser Ethernet port.
+NoteThe IP address of the laser system (e.g. 192.168.1.2) must be different fromthe address of the WiFi adapter (192.168.1.1).
+WCA = Wireless Client Adapter
+26.Mount the WiFi adapter using the included hook and loop strips.
+27.Connect to the created WiFi from step 21 on WiFi network and type in the password from step 23 on page6.page6 with your mobile device. Choose the
+28.Open a web browser and type the IP address of the laser system (e.g. 192.168.1.2) into theaddress bar.
+29.You may be prompted that the connection is unsafe. In this case refer to step 11 on page3.
+03/18 - Rev. AA 7
+
+Service Part Installation InstructionAL-78972
+WiFi Setup
+30.Now you should see the Web User-Interface ofa smartphone). the laser system on your mobile device (e.g.
+8 03/18 -Rev. AA
+
+AL-78972Service Part Installation Instruction
+WiFi Setup
+1.3 Client Mode  to join to an existing WiFi-Network
+This instruction will describe how to setup the airGateway in Client Mode. In Client Mode theairGateway (A) connects to an existing Wireless Lan Network (WiFi) (B). The laser system is
+connected to the WiFi adapter.
+1.Follow instructions from step 1 on page2 to step 20 on page5.
+2.Select Station from the Wireless Mode dropdown selector.
+3.Click Select on SSID.The Site Survey window will open and scan for available wireless network SSIDs.
+4.Select the desired wireless network's SSID.
+5.Click Select to save the SSID choice.
+6.Click to select from the Security dropdown selector the type of encryption required by thewireless network, then enter the appropriate authentication settings and keys as appropriate.
+- If you installed the WAP or wireless router, use the security settings you defined there.- If you are connecting to a WAP or wireless router managed by customer IT, get this
+information from your customer IT Group contact.
+03/18 - Rev. AA 9
+
+Service Part Installation InstructionAL-78972
+WiFi Setup
+7.Set up security according to WiFi network (no WiFi networks that have portal pages orexpiration).
+8.Click Change button and then click the Apply button.
+WCA = Wireless Client Adapter
+9.Select the Network tab.
+10.Choose Bridge from the Network Mode dropdown selector.
+11.Set the Manage Network Settings- Toggle ON to Videojet defaults. the Static radio button.
+- Enter 192.168.15.11 into the - Enter IP Address255.0.0.0 into the field.Netmask field.
+12.Click Change to apply your new settings.
+13.Change your laptop's Local Area Connection toof 255.0.0.0. IP address 192.168.15.1 with a subnet mask
+14.In your web browser, enter 192.168.15.11 in the Address field and press to the wireless client adapter.Enter to reconnect
+You may have to make a security exception again, but you should connect to the managementinterface as before.
+15.Disconnect the Ethernet patch cable from your laptop and connect to the Laser Ethernet port.
+NoteThe IP address of the laser system must be different from the address of theWiFi adapter.
+16.Configure the laser system for network communication per the instructions for the relevantinterface using DHCP or a static IP address determined by your site survey and/or
+consultation with the customer IT Group.
+17.Mount the WiFi adapter using the included hook and loop strips.
+18.Now you can connect to the laser system over the existing network.
+10 03/18 -Rev. AA

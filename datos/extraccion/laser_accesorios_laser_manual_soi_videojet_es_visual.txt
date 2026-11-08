@@ -1,0 +1,314 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: accesorios laser\Manual SOI Videojet ES.pdf
+# cifrado=False bloques=24 caracteres=23147
+
+Instrucciones de uso
+Simple Operator Interface
+Software Versión 1.x
+P/N: AL-72742
+Revisión: AA, Noviembre de 2008
+
+MAQ$Q6n`d'@_ofmbAtOo{~alySnwJs]P28>>@BT@?>=<;:9876543210/.-,+*
+[&XK|8[7?jW>L|?@4I
+
+Copyright 2008, Videojet Technologies Inc. Todos los derechos reservados. Ninguna parte de esta obra puede ser reproducida de forma (a continuación denominada Videojet ).
+alguna sin la anterior autorización de Videojet.
+Este documento es propiedad intelectual de confidenciales y protegidas de la propiedad intelectual que son propiedad de Videojet y contiene informaciones Videojet. Está
+estrictamente prohibida toda copia, utilización o publicación de este documento sin autorización escrita de Videojet.
+Videojet Technologies Inc.
+1500 Mittel BoulevardTel. (EE.UU.):1-800-843-3610Wood Dale, ILFax (EE.UU.):1-800-582-1343Mundialmente: Sucursales - EE.UU.: Atlanta, Chicago, Los Ángeles, FiladelfiaCanadá, Francia, Alemania, Irlanda, Japón, España,
+60191-1073 EE.UU.Fax:001 630-616-3629Singapur, Países Bajos, Gran Bretaña www.videojet.comDistribuidor mundial
+
+Tabla de materias
+1 Simple Operator Interface (SOI)..................................3
+1.1 Introducción..........................................................1.2 Condiciones.................................................3................................................................3
+1.3 Instalación............................................................1.4 Activación del software............................3....................................................................4
+1.5 Niveles de usuario............................................................................4
+2 Interfaz del usuario......................................................5
+2.1 Selección del sistema láser..................................2.2 Estados de operación del si............................6stema láser..........................................7
+2.3 Iniciar y parar el proceso de marcación.....................2.4 Seleccionar plantilla...............................9................................................................9
+2.5 Cambiar posicionamiento.........................2.6 Cambiar intensidad de marc......................................10ación..................................................11
+2.7 Cambiar variables................................................2.8 Cambiar unidad para el cau..........................12dal de tráfico......................................12
+2.9 Cambiar configuración del contador..............2.10 Advertencias y mensajes................................13 de errores............................................14
+3 Configuración............................................................15
+3.1 Láser..........................................................................3.2 Diversos.............................15................................................................................16
+3.3 Contraseña.................................................................3.4 Funciones...................................................17........................................................18
+1
+
+Tabla de materias
+2
+
+Capítulo 1Simple Operator Interface (SOI)
+1 Simple Operator Interface (SOI)
+1.1 Introducción
+Con el software "Simple Operator Interface" (SOI) se pueden seleccionar, editar y a través delsistema láser emitir plantillas de marcación de forma sencilla y poco complicada. El software
+se puede utilizar en un PC normal o en una pantalla se establecerá una conexión con el sistema láser y así se tendrá acceso a las plantillas quetáctil. Después de iniciar automáticamente
+se encuentran en la base de datos del sistema láser.
+1.2 Condiciones
+Para el funcionamiento perfecto deben cumplirscuanto a hardware y software:e como mínimo los siguientes requisitos en
+Microsoft Windows 2000, XP o Vista
+Procesador Pentium IV > 2 GHz
+1024 MB RAM
+Unidad de CD-ROM (opcional si SOI se debe instalar con CD-ROM)
+Memoria de disco rígido 200 MB
+1.3 Instalación
+AtenciónPara crear plantillas nuevas es necesario el software Smart Graph.
+En el manual de uso del software informaciones sobre cómo crear plantillas de marcación.Smart Graph encontrará más
+AtenciónSi el PC se debe conectar directamentde una red) la conexión se debe efectuar con un cable Ethernet Crossover.e con el sistema láser (y no a través
+De lo contrario la comunicación no es posible.
+Si el software SOI no se suministra ya instalado proceda de la siguiente forma:
+1.Coloque el CD de instalación del Smart Graph en la unidad para el CD-ROM de suordenador o
+cargue los archivos correspondientes para su ordenador.
+2.En el menú inicial del sistema operativo de Windows seleccione el comando »Ejecutar«.
+3.En el campo de texto libre ingrese CD:\setup.exeInstallShield (aquí CD está como ejemplo para la unidad de CD-ROM de su ordenador, si y siga las instrucciones del asistente
+lo instala después de una descarga, por favor ingrese la letra de la unidad respectiva)
+09/08 - Rev. AA 3
+
+Simple Operator Interface (SOI)Capítulo 1
+1.4 Activación del software
+El software se puede abrir opcionalmente haciendoen la interfaz del escritorio o simplemente haciendo clic en la opción »SOI« del menú de la clic doble en el símbolo SOI directamente
+barra de inicio de Windows.
+Si el software se activa por primera vez se debe establecer una conexión con el sistema láser.Esto sólo se puede realizar a través del nivel de usuario Administrator en el diálogo de
+configuración, véase párrafo "Láser" en el capítulo "Configuración" en la página 15.
+Después de llamar el software se establecerá automáticamentláser y se exhibirá la interfaz del usuario dele una conexión con el sistema nivel de usuario Operator. Para cambiar para el
+nivel Supervisor o Administrator haga clic en el menú de la administración del usuario:
+Se exhibirá el diálogo para ingresar la contraseña y un teclado numérico. Ingrese la contraseñapara el nivel de usuario deseado y confirme con »OK«. Se exhibirá la respectiva interfaz de
+usuario.
+1.5 Niveles de usuario
+Para operar el software SOI están definidos diferentes niveles de usuario. Las funcionesdisponibles dependen del nivel de usuario de la contraseña ingresada.
+Existen los siguientes estados del sistema:Operator (sin contraseña estándar)
+Supervisor (contraseña estándar: 2222)
+Administrator (contraseña estándar: 1111)
+Los derechos de los niveles de usuario AdministratorOperator y en el diálogo de configuración. Este diálogSupervisor son definidos por elo sólo está disponible para el nivel
+Administrator. En el capítulo "Configuración" en la página 15 encontrará una descripción sobreello.
+4 09/08 - Rev. AA
+
+Capítulo 2Interfaz del usuario
+2 Interfaz del usuario
+Al llamar el software SOI automáticamente se establecerá una conexión con el sistema láser,se exhibirán la plantilla activa y el estado de operación del sistema láser.
+AtenciónEn los siguientes párrafos se describirá el funcionamiento completo.
+Las funciones realmente disponibles dependen de la configuración de losniveles de usuario a través del Administrator (véase página 15).
+¡Sólo se puede salir del software en el nivel de usuario Administrator!
+La página principal del SOI está dividida en los siguientes campos:
+CampoFunción
+1Conexiones activasTodos los sistemas láser configurados por elAdministrator (máximo cuatro) se exhiben en tarjetas de
+registro. Al seleccionar una tarjeta de registro el sistemaláser respectivo será el sistema activo.
+13 2
+45 6
+7
+09/08 - Rev. AA 5
+
+Capítulo 2Interfaz del usuario
+CampoFunción
+2.1 Selección del sistema láser 2Administración y logotipoMenú de la administración del usuario con exhibición delnivel de usuario actual. Para cambiar el nivel de usuario
+haga clic en el menú y se exhibirá el diálogo paraingresar la contraseña (véase párrafos "Niveles de
+usuario" en la página 4 y "Configuración" en la página15).
+Al hacer clic en el logotipo de la empresa se exhibirán elnombre y la versión del software y la dirección comercial.
+3Estado de operación ymanejoVisualización del estado de operación del sistema láser,advertencias y mensajes de errores.
+Menús para el manejo (iniciar/parar) del proceso demarcación y para confirmar los mensajes.
+4Campo de teclasVisualización de un campo de teclas. Dependiendo de laentrada necesaria, o numérica o alfanumérica.
+5Barra de herramientasMenús para editar y posicionar el contenido demarcación, la intensidad de marcación, las variables y
+los estados del contador.
+6Ventana de visualizaciónVisualización del contenido de marcación de la plantillaactual.
+7PlantillaNombre de la plantilla actual. Al hacer clic en el menú seexhibirá una lista de todas las plantillas disponibles a
+partir de la cual se puede seleccionar otra plantilla.
+El Administrator puede configurar hasta cuatro sipágina 15). Los sistemas láser se exhibirán en tarjetas de registro en la interfaz del usuario.stemas láser en la configuración láser (véase
+Para cada sistema láser se añadirá una tarjeta de registro en la que se exhibirá el nombredefinido en la configuración del láser. Al seleccionar la tarjeta de registro el sistema láser
+respectivo se transformará en el sistema activo y se exhibirán todas las informacionespertenecientes a él. Según sea el estado, los colores del nombre y de la tarjeta de registro
+cambian como a continuación:
+ColorFunción
+Fondo gris oscuroSistema láser seleccionado actualmente.No existen advertencias ni mensajes de errores.
+6 09/08 - Rev. AA
+
+Capítulo 2Interfaz del usuario
+2.2 Estados de operación del sistema láser
+ColorFunción
+Fondo gris claroSistema láser no seleccionado (no activo).No existen advertencias ni mensajes de errores.
+Fondo amarilloExisten una o más advertencias pero el sistema láser puedefuncionar.
+Fondo rojoEl sistema láser paró y el estado de operación está en el modo"Error" o "Error grave".
+Texto verdeEl sistema láser marca. No existen mensajes de error.
+Fondo azulSOI perdió una conexión con el sistema láser.
+El estado de operación actual se exhibirá arriba en la tarjeta de registro del sistema láseractivo.
+Existen los siguientes estados:
+Estado del sistemaDescripción
+IniciarLos componentes de control del sistema láser son iniciados.
+Interruptor de llaveabiertoLa iniciación está completa. Ahora el sistema puede ser iniciadocerrando el interruptor de llave.
+Arranque del láserDespués de cerrar el interruptor de llave será activado el láser.
+Láser preparadoEl sistema láser está preparado para marcar.
+Preparar para marcarDespués de activar la tecla »INICIAR« el láser necesita de untiempo de preparación según sea el contenido de la plantilla y la
+configuración.
+MarcaciónEl contenido de marcación actual es marcado sobre el producto.
+¡Es emitida radiación láser!Asegúrese que se observen las instrucciones de
+seguridad.
+StandbySi no se efectúa ninguna marcación durante algún tiempo elláser conmuta para standby a fin de aliviar los componentes del
+sistema.
+09/08 - Rev. AA 7
+
+Capítulo 2Interfaz del usuario
+Estado del sistemaDescripción
+Interbloqueo abiertoEl circuito de seguridad es interrumpido (p.e. puerta deprotección abierta). El proceso de marcación es detenido
+inmediatamente. Sólo es posible marcar con el circuito deseguridad cerrado.
+ErrorOcurrió un error. Para continuar la operación debe retirarse elerror. Ir para »Alertas activos« en la pantalla doméstica para ver
+más detalles.
+Error fatalOcurrió un error fatal y desactivó el sistema. La operación nopuede continuar. El sistema láser debe ser apagado. Ir para
+»Alertas activos« en la pantalla doméstica para ver másdetalles.
+Modo ServicioEste estado de operación permite efectuar trabajos de servicio ymantenimiento y sólo puede ser utilizado por personal
+especializado competente.
+8 09/08 - Rev. AA
+
+Capítulo 2Interfaz del usuario
+2.3 Iniciar y parar el proceso de marcación
+A la derecha al lado del estado exhibido de operación se encuentra el menú para Iniciar/Pararel proceso de marcación.
+2.4 Seleccionar plantilla
+Con el menú »Start Laser« se inicia el proceso de marcación. La plantillaseleccionada actualmente será colocada sobre el producto por el sistema
+láser activo.
+Durante la marcación el menú cambia para »Stop Laser«. Al hacer clic en elmenú el proceso de marcación corriente será parado.
+Para seleccionar una plantilla proceda de la siguiente forma:
+1.Haga clic en el menú abajo a la izquierda seleccionada actual. Se abre la siguiente ventana:en el que está el nombre de la plantilla
+2.Seleccione la plantilla deseada de la lista. A la derecha se exhibirá una visualización delcontenido de la plantilla (la función de visualización se puede desactivar en »Descon.
+visualización«
+AtenciónDependiendo de la configuración de la entrada »Manipulación $« es posibleque no se exhiban todas las plantillas existentes en la base de datos del
+sistema láser.
+3.Confirme la selección con »OK«.
+4.La ventana se cerrará y el contenido de la nueva plantilla se exhibirá en la ventana devisualización del SOI.
+09/08 - Rev. AA 9
+
+Capítulo 2Interfaz del usuario
+2.5 Cambiar posicionamiento
+Para cambiar la posición del contenido de ma(horizontal, vertical o rotación) de la barra de herramientas.rcación haga clic en el menú correspondiente
+A la izquierda se exhibirá un campo de tecldirectamente a través del campo de teclas. El valor ingresado se exhibirá en el campo superioras. Usted puede ingresar el valor deseado
+del campo de teclas. El valor nuevo se debe confirmar con el menú OK del campo de teclas.
+Usted puede cambiar la posición también gradualmente a través de los menús +/- exhibidosen la ventana de visualización.
+Posicionamiento horizontal.Al hacer clic en los menús el contenido de marcación se desplazará
+gradualmente hacia la izquierda/ derecen el campo superior del campo de teclas.ha. El desplazamiento se exhibirá
+Posicionamiento vertical.Al hacer clic en los menús el contenido de marcación se desplazará
+gradualmente hacia arriba/ abajo. Elcampo superior del campo de teclas. desplazamiento se exhibirá en el
+Rotación.Al hacer clic en los menús el contenido de la marcación se girará
+gradualmente en el sentido de las agujcontrario. El desplazamiento se exhibirá en el campo superior del campoas del reloj o en el sentido
+de teclas.
+La posición original se exhibirá mediante una cruz toda verde y la nueva a través de una cruzcon línea de puntos rojos.
+10 09/08 - Rev. AA
+
+Capítulo 2Interfaz del usuario
+2.6 Cambiar intensidad de marcación
+AtenciónLa intensidad de marcación sólo se puede cambiar si el sistema láser noestá marcando.
+Para cambiar la intensidad de marcación (o sea la potencia láser emitida), haga clic en el menúcorrespondiente de la barra de herramientas (véase ilustración).
+A la izquierda se exhibirá un campo de tecldirectamente a través del campo de teclas. El valor ingresado se exhibirá en el campo superioras. Usted puede ingresar el valor deseado
+del campo de teclas. El valor nuevo se debe confirmar con el menú OK del campo de teclas.
+Usted puede cambiar la intensidad también gradualmente a través de los menús +/- exhibidosen la ventana de visualización. El valor porcentual exhibido en el campo superior del campo
+de teclas se cambiará respectivamente. El valor nuevo se debe confirmar con el menú OK delcampo de teclas.
+AtenciónSi la opción »Memoria automática« no fue activada por el Administrator,arriba a la izquierda en el campo de teclas se exhibirá el menú »Guardar«.
+Haga clic en este menú si la nueva intensidad de marcación se debe usartambién después de reiniciar el sistema.
+09/08 - Rev. AA 11
+
+Capítulo 2Interfaz del usuario
+2.7 Cambiar variables
+Una plantilla puede contener elementos con siguientes elementos:contenido variable. Se pueden cambiar los
+Texto externoFecha
+HoraNúmero de serie
+Si una plantilla contiene variables que no se ocvariables se exhibirán en la ventana de visualización y pueden ser editadas:ultan por el ajuste de la configuración, las
+1.Seleccione una variable haciendo clSe exhibirá un campo de teclas. El contenido acic en el menú correspondientetual de la variable se exhibirá en el campo
+superior del campo de teclas.Si un elemento (p.
+ex. el código de barras) contiene varias variables, seleccione la variable a ser modificadahaciendo clic varias veces sobre el elemento hasta que se exhiba la variable deseada en
+el campo superior del campo de teclas.
+2.Ingrese el texto deseado, el valor inicial para un número de serie o un offset para la fecha/hora.
+3.Confirme presionando OK. Se exhibirá el nuevo valor o texto.
+2.8 Cambiar unidad para el caudal de tráfico
+El caudal de tráfico se exhibirá directamente en el menú. La duración demarcación que es necesaria para la marcación de un producto está predefinida
+en milisegundos.
+Esta información sólo se puede leer. Pero al hacer clic en el menú es posible cambiar la unidadde medida de ms predefinida para producto por segundo, por minuto o por horas (PPS, PPM,
+PPH).
+12 09/08 - Rev. AA
+
+Capítulo 2Interfaz del usuario
+2.9 Cambiar configuración del contador
+Para cambiar la configuración del contador haga clic en el menú correde herramientas (véase ilustración).spondiente de la barra
+En el menú del contador se exhibirá o la cantidad de las marcaciones realizadas (una línea) ola carga (dos líneas, primera línea: cantidad de marcaciones, segunda línea: tamaño de la
+carga).
+AtenciónBásicamente se exhibirá el contador de carga.
+Si un contador de carga se coloca para 0/0 en el menú se exhibirá el númerode unidades.
+A la izquierda se exhibirá un campo de tecldirectamente a través del campo de teclas. El valor ingresado se exhibirá en el campo superioras. Usted puede ingresar el valor deseado
+del campo de teclas. En el primer campo está el valor real de las marcaciones efectuadas y enel segundo campo la cantidad a ser alcanzada (carga). El campo activo se presenta con un
+fondo azul.
+El valor ingresado nuevo se debe confirmar con el menú OK del campo de teclas.
+Usted puede cambiar el valor también gradualmente a través de los menús +/- exhibidos en laventana de visualización. El valor exhibido en el campo superior activo del campo de teclas se
+cambiará respectivamente. El valor nuevo se debe confirmar con el menú OK del campo deteclas.
+09/08 - Rev. AA 13
+
+Capítulo 2Interfaz del usuario
+2.10 Advertencias y mensajes de errores
+Existen los siguientes tres tipos:Advertencia
+ErrorError fatal
+En las instrucciones de uso del sistema láser encavisos de errores disponibles.ontrará una lista de todas las advertencias y
+Las advertencias se exhiben con fondo amarillo, los errores y errores graves con rojo. Siexisten ambos tipos se exhibirá un fondo rojo.
+Si existe un mensaje el mismo se puede reconocestado de operación actual del sistema láser se exhibirá nuevamente.er directamente con el menú »Confirmar«. El
+Si existe más de un mensaje, se exhibirán dosmensajes y una flecha indi triángulos de aviso junto con la cantidad decando hacia abajo (véase ilustración más abajo).
+Al hacer clic sobre la flecha se exhibirán los mensajes. Se pueden confirmar uno a uno (menú»Confirmar« a la derecha de cada mensaje) o todos juntos (menú »Confirmar todos« abajo).
+Al hacer clic nuevamente sobre la flecha la lista se volverá a cerrar.
+Al hacer clic sobre un mensaje se exhibirán más informaciones.
+Después de confirmar un mensaje la canticonfirmados todos los mensajdad se actualizará automáticamente. Una vezes se exhibirá el estado de operación del sistema láser.
+14 09/08 - Rev. AA
+
+Capítulo 3Configuración
+3 Configuración
+En las páginas de configuración se definen tsistemas láser, software y para las funciones disponibles de los niveles odos los ajustes básicos para la conexión deOperator y Supervisor.
+3.1 Láser
+AtenciónLas páginas de configuración sólo estAdministratorán disponibles en el nivel de usuario.
+¡Sólo se puede salir del software en el nivel de usuario Administrator!
+En la página »Láser« se define la conexión del láláser. Al llamar por primera vez el SOI se debe definir como mínimo un sistema láser para laser a través de la dirección IP del sistema
+operación. Luego al llamar el software se establecerá automáticamente una conexión con elsistema láser.
+Se pueden configurar hasta cuatro sistemas láser.
+AtenciónComo mínimo debe estar configurado un sistema láser. No es posible borrartodos los sistemas de la lista.
+El nombre, la fecha y hora se pueden definir ello haga clic en el campo correspondiente e inindividualmente para cada sistema láser. Paragrese los datos a través del campo de teclas.
+09/08 - Rev. AA 15
+
+Capítulo 3Configuración
+3.2 Diversos
+En esta página se pueden efectuar las siguientes configuraciones:
+IdiomaIdioma de la interfaz de usuario y de los mensajes deadvertencia y de errores.
+Unidad de medidaUnidad de medida representada en la ventana devisualización. Predefinición en mm.
+Memoria automáticaLos cambios de la intensidad de marcación se guardaránautomática y directamente en el sistema láser.
+Salir de PCAl salir del software se saldrá también del PC.
+Atención: ¡Esto no afecta al sistema láser!
+16 09/08 - Rev. AA
+
+Capítulo 3Configuración
+3.3 Contraseña
+En esta página se pueden efectuar las siguientes configuraciones:
+Contraseña al iniciarAl iniciar el SOI es necesario ingresar una contraseña.
+Largo máx. de contraseñaLimitación de la cantidad de caracteres para todas lascontraseñas. Campo de 1 a 8.
+AdministratorContraseña para el nivel de usuario dentro del campo definido en »Largo máx. de contraseña«.Administrator (largo
+Sólo se aceptan cifras.
+La súper contraseña predefinida es 79531, si se pierde lacontraseña para el Administrator se la puede recuperar
+ingresando 000000000 (9 x 0).
+Supervisor Contraseña para el nivel de usuario del campo definido en »Largo máx. de contraseña«. Sólo seSupervisor (largo dentro
+aceptan cifras.
+OperadorContraseña para el nivel de usuario del campo definido en »Largo máx. de contraseña«. Sólo seOperator (largo dentro
+aceptan cifras.
+09/08 - Rev. AA 17
+
+Capítulo 3Configuración
+3.4 Funciones
+En esta página el Administrator define las funciones disponibles para los niveles Operator. Al hacer clic sobre el símbolo la funcSupervisor yión se cambiará. Existen tres niveles de
+función:
+SímboloNivel
+Oculto. La función no está disponible ni visible.
+Visible La función está visible pero no se la puede editar.
+Editable. La función está visible y se puede editar.
+De esa forma se pueden asignar las siguientes funciones:
+Start LaserEl proceso de marcación de la plantilla seleccionada actual se iniciará.
+Stop LaserEl proceso de marcación se parará.
+PlantillaSe puede seleccionar una plantilla.
+VariableSi una plantilla contiene variables (fecha, hora, etc.) se pueden definiroffsets.
+Manipulación $El tratamiento de plantillas o variables con el sufijo $ se puede definirseparadamente.
+PosicionamientoLa posición del contenido de marchorizontal, rotación).ación se puede cambiar (vertical,
+IntensidadLa intensidad de marcación (potencia de láser) se puede ajustar.
+18 09/08 - Rev. AA
+
+Capítulo 3Configuración
+Caudal de tráficoVelocidad de marcación en ms, PPS, PPM o PPH (producto porsegundo/minuto/horas)
+MensajesLas advertencias y los mensajes confirmar.de errores se pueden leer y/o
+Unidades offsetCambiar unidades offset
+09/08 - Rev. AA 19
+
+Capítulo 3Configuración
+20 09/08 - Rev. AA

@@ -1,0 +1,1641 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\7320 7220 CSE Fiber.pdf
+# cifrado=False bloques=136 caracteres=33544
+
+7220/7320 Fiber Laser
+Operation and Maintenance Training
+Kevin L. Rose
+Videojet Technologies, Inc .
+1500 Mittel Boulevard Wood Dale, IL 60197
+Telephone: 630 - 860 - 7394
+kevin.rose@videojet.com
+
+STUDENT REGISTRATION
+Introduce Yourself
+• Name
+• Region
+• Experience with Lasers
+• One question you want
+answered in this class
+
+Learning Objectives
+At the end of this training class you will be able to :
+1. Safely install a 7310/ 7320laser
+2. Identify the function of the 7310/ 7320components.
+3. Demonstrate the ability to create advanced static and dynamic messages
+using the Smartgraph software.
+4. Demonstrate the ability to transfer remote data using the AllprintBasic
+software.
+5. Troubleshoot common problems associated with 7310/ 7320laser.
+6. Demonstrate your ability to print in static and dynamic using the
+handheld controller.
+7. Remove and replace major components of the laser system
+
+Agenda
+• Introduction • CAN I/O
+• Safety • Module Replacement
+• System Overview • Maintenance
+• Theory of Operation • Optical alignment
+• Installation • Troubleshooting
+• Handheld operation • Training
+• AllprintBasic • Course Review
+
+When is everything?
+Class Hours
+• Class from 8 AM to 4 PM . Do not make
+plans to leave early at this time.
+• Breaks in Morning and Afternoon
+• Lunch 11 to 12:00 (about 1 hour)
+
+Where is Everything?
+Domestic Arrangements
+• Washrooms are across the hall.
+• Smoking is out the West door to the far
+side of the parking lot.
+• Cafeteria is down stairs near the lobby.
+( I’ll show you during the first break )
+
+CLASSROOM SAFETY
+• Fire Exits
+• Escape route
+• Extinguishers
+• 3 things before printing
+• Emergency Numbers 1+
+and……
+• PLEASE turn off cell phones
+
+Ocular Absorption Site Vs. Wavelength
+
+Dangers to Eyes and Skin
+• The laser system produces class 4 laser radiation. Infrared laser radiation is
+not visible for the human eye. Therefore eyes and skin are endangered
+through high - energy laser radiation.
+• High radiation intensity causes a local heating and burning of the cornea and
+thus a reduction or loss of sight!
+
+Retinal Damage
+
+PRIMATE RETINAL HEMORRHAGE
+Laser - Professionals.com
+Photo courtesy of U S Air Force
+
+MULTIPLE PULSE RETINAL INJURY
+Laser - Professionals.com
+
+The Human Skin
+File:Skin.jpg
+
+Wavelength Vs. Skin effects
+
+YAG Skin Burners
+YAG burns
+
+Suitable safety goggles
+• Designed for the wavelength range of the
+fiber laser of 1055 - 1070 nm.
+Careful with confusions!
+• Safety goggles for other lasers, e.g. CO2
+laser, do not provide adequate protection
+against radiation of a fiber laser!
+
+YAG safety goggles
+Never forget when working at the open laser and/or the open
+beam delivery system:
+Wear appropriate laser safety goggles!
+
+OD on Eyewear Labels
+YAG and Fiber
+C02
+
+Optical Density of a 100 watt laser with
+a 1cm beam
+• DL = 10mm and Df = 7.0mm
+• Note that the beam is larger that the pupil.
+• Use the average irradiance through the limiting
+aperture from table 8a.
+• Area = Л (1 cm)² /4= 0.785 cm²
+• Eavg = [100 watts] / [0.785 cm²] = Eavg 127
+• Eavg =127 W/cm² and MPE = 0.005W/cm²
+• OD = log ₁₀ (127/0.005) = 25400
+• 25400 =4.4 round up for a OD of 5 log
+
+Optical Density of a 100 watt laser with
+a .3cm beam
+• DL = 10mm and Df = 7.0mm
+• Note that the beam is larger that the pupil.
+• Use the average irradiance through the limiting
+aperture from table 8a.
+• Area = Л (.3 cm)² /4= 0.2356 cm²
+• Eavg = [100 watts] / [0.2356 cm²] = Eavg 23.56
+• Eavg =23.56 W/cm² and MPE = 0.005W/cm²
+• OD = log ₁₀ (23.56/0.005) = 4712
+• 4712 =3.67 round up for a OD of 4
+log
+
+Fire Hazard
+• The high output power of a class 4 laser can inflame
+various materials.
+• Therefore, while performing maintenance and service
+work at the open laser housing and/or open beam
+delivery system, make sure that fire protection
+measures were taken before starting the works!
+• Never expose flammable materials to laser
+radiation!
+Always ensure appropriate shielding of the laser
+beam! Errors during marking on flammable materials
+(e.g. paper) might cause fires.
+
+Electrical Safety
+• Danger of explosion exists if battery is
+incorrectly replaced.
+• Replace only with the same or equivalent type.
+• Dispose of used batteries according to the
+battery manufacturer’s instructions.
+• Power supply is on if laser is plugged in.
+
+Over heating
+• The laser system is cooled by air. The
+internal cooling system is designed to supply
+sufficient cooling.
+• Make sure that the cooling air can be sucked
+in and blown out freely and that there is
+sufficient air exchange at the installation site
+to ensure heat dissipation.
+
+Fume hazard
+• When printing on materials with laser radiation
+by products are produced which are dangerous
+to health!
+• Through vaporization of materials fine dust and
+vapors are produced which might include
+hazardous byproducts depending on type of
+material.
+• It is highly recommend that a exhaust unit be
+installed to prevents contamination and gradual
+destruction of optical elements of the beam
+delivery system by dust particles.
+
+Laser Fume Extraction
+• A fume extractor
+removes the smoke and
+dust particles associated
+with laser marking
+• A fume extractor is
+recommended in all
+applications, and is
+required in PVC marking
+• Typically, the fumes
+created during the laser
+marking process are
+99% nuisance dust
+
+Why Fume Extraction?
+Headaches
+Eye Irritation
+Sore Throat
+Occupational Asthma
+Respiratory Irritation
+
+Lens hazard
+The laser system contains optics constructed from Zinc Selenide. When broken
+into small pieces or exposed to acidic conditions, they may give rise to harmful
+products.
+In normal use however, the laser optical components are not considered to be
+hazardous.
+In the event that a laser optical component is damaged in any way, the material
+and any packaging must be treated as hazardous waste and disposed of
+accordingly.
+
+Safety Guards Side View
+• A safe installation requires that the laser
+beam be guarded utilizing interlocks
+Length must be sufficient to
+prevent skin and eye contact
+with beam path.
+Ceramic tile should be affixed
+opposite the laser head (other
+side of product) to absorb
+laser light if no product is
+present (if fired).
+Laser hazard stickers
+should be affixed to the
+guard in clear view.
+FIBER LASER Insert laser head here.
+Removal requiring
+special tools.
+
+Safety Guards Top View
+• Any parts of the safety guard which can
+be removed (slides or hinged parts)
+should be interlocked so the laser is
+paused (shutter closed) when those
+parts are open or removed
+Top View of Guard
+Sliding cover to allow
+PRODUCT access to conveyor PRODUCT
+Removable parts
+should be electrically
+interlocked in
+CLOSED position.
+No laser reflective
+materials should interrupt
+the beam path (metal)
+
+Enclosures
+Extruded material
+Viewing windows Turn tables
+
+General Safety
+• Min. bending radius of supply cable is 40 mm . The umbilical will be made for
+stationary use. It will also sustain slow moving with low acceleration a few times a
+day.
+Before carrying out the maintenance works at the optics, please note
+the following:
+• Acetone is not included in delivery and has to be purchased via other companies.
+Open the following Internet page www.vwr/index.htm to order acetone
+in a quick and uncomplicated way.
+• When purchasing acetone, make sure that you order acetone pro analysi
+(p.a. = highest purity grade). Do not use IPA.
+Never expose unknown materials to laser radiation!
+Some materials (e.g. polyethylene, polypropylene, glass) are easily penetrated by the
+laser beam, although they seem to be opaque for the human eye.
+
+Laser Safety References
+• CDRH - Center for Devices and Radiological Health
+– An agency within the U.S. Food and Drug Administration which publishes
+and enforces legal requirements on laser product manufacturers. For copies
+of the CDRH regulations, contact: CDRH (HFZ - 312), 2098 Gaither Road,
+Rockville, MD 20850, Telephone (301) 594 - 4654
+• ANSI/OSHA - ANSI (American National Standards Institute)
+– U.S. organization that publishes standards for laser users. Their laser safety
+standards are not laws, but they form the basis for state and OSHA
+requirements for the use of lasers. For copies contact ANSI in New York at
+(212) 642 - 4900 or the Laser Institute of America, at Telephone (407) 380 -
+1553, Fax (407) 380 - 5588
+• OSHA - The Occupational Safety & Health Administration
+– Does not have specific laser safety requirements. However, if they are called
+into a facility, the inspectors follow published guidelines (OSHA Instruction
+PUB 8 - 1.7 Guidelines for Laser Safety and Hazard Assessment) that are
+based on an earlier (1986) ANSI Z136.1 standard.
+
+System Overview
+Supply Unit with
+10W or 20W
+Fiber laser
+Two different
+Marking Units with
+6 or 10 mm
+Marking Head
+Optional Beam
+Turning Unit
+Marking Speed SHF60A > 1,000 char./ second (application dependent)
+Marking Speed SHF100A > 800 char./ second (application dependent)
+
+Board overview
+ACC - 3: Most complex board in the system.
+FM: Controls the galvo’s and sends feedback to the ACC - 3
+board.
+FLEB - Plus: Converts ACC - 3 laser signals for the fiber laser
+source.
+Interface board: New design but rather simple board: mainly
+connectors, filters and relays plus one voltage converter
+LED and Shutter: Very simple boards, only connectors and
+LEDs
+
+Supply Unit (front)
+L2
+L3
+L1
+S3
+S1/S2
+S4/S5
+G55
+S1/S2 Main switch: Power/Standby:
+L1 Laser is ready to mark or marking.
+Starts the booting/shuts down the laser
+The key - operated switch is in position ON,
+laser radiation can be released.
+S3 Key - operated switch:
+L2 Blinking: Error
+Applies the laser power for the beam source
+L3 Blinking: System is booting
+0 = Laser is not ready to mark
+Normal white: System is booted
+1 = Laser is ready to mark
+Bright white: System is marking
+S4/S5 Start/Stop switch:
+Starts and stops the marking process.
+G55 Socket for handheld
+
+Supply Unit (Back)
+Intakes PC Cable
+Laser head
+Power Fiber
+
+Top Panel (Removed)
+24V/320W - Power - supply:
+- By connecting mains the FM
+power supply is powered up
+(fan in the power supply is
+Fan
+running).
+- When the ON button is
+pressed, the relay on the ACC - 3
+interface board, connects the
+power supply to the interface
+FLEB+
+24V
+board (system boots up).
+Interface board
+Marking head cable
+Customer interface
+Mains cable
+Ethernet - connection
+Cable - gland
+Fiber cable
+Serial Interface RS232
+
+Keyswitch
+21 volts key open
+0 volts key closed
+FLUKE
+21 Vdc
+F1 F2 F3 F4
+scope Cursor
+Meter Zoom
+Record Replay
+A B
+mV mV
+S Time ns
+V V
+Move
+
+ACC3 board
+TO INTERFACE BOARD
+TO FM
+TO FLEB TO FLEB
+POWER PC
+Index J
+STATUS
+MARKING
+LVDS
+STATUS
+LASER STATUS
+NOT USED
+TO FLEB
+
+POWER PC STATUS LEDS
+CUSTOMER INTERFACE LED
+SYSTEM DATABASE
+PILOT
+DIP - SWITCH X24 LASER INTERFACE
+LVDS
+X5 SHUTTER
+X2
+X14
+INPUTS
+INTERNAL WIRING
+LVDS LEDS
+MMC CARD
+X6 X16
+LASER STATUS LEDS
+OUTPUTS
+MARKING STATUS LEDS
+BATTERY
+ENCODER/PRODUCT LEDS
+X7 X20
+RESET
+192.168.1.1
+30 VDC POWER
+X17 12/24 VDC
+FIBER LASER EXTENTION BOARD
+ETHERNET STATUS LEDS
+POWER STATUS - LEDS
+
+ACC - 3 LEDs
+LP - enable
+Power pc status
+CI voltage
+Shutter closed
+Marking
+Laser status
+Interlock detect
+head
+Key detect
+Stop
+Vector Lase
+Marking Trigger
+Internal error Read/write Not used
+Start
+Trigger monitor
+Ready Lase
+Voltage Temp
+Trigger enable
+LVDS error LP_enable_detect
+LVDS receive
+MMC
+External error
+Flashes slow as long as the
+bootloader is running and waiting
+Good
+for a MMC
+Flashes fast while the bootloader
+12/24 V Bad
+loads linux from the MMC
+5V Error
+Encoder CHA
+3.3V
+Close shutter
+Encoder CHB
+1.8V
+Marking
+Encoder index
+Trigger Ready to mark
+System ready
+
+Ethernet LEDs
+Ethernet status - green, 100 - 100MBit: On if a 100MBit connection is established, off if a 10MBit
+connection is established. Also on if no connection exists, in this case all other LEDs of the
+Ethernet status are off.
+Ethernet status - red, COL - Collision: On if a collision on the Ethernet connection was detected.
+Ethernet status - green, LNK - Linked: On if the ACC - 3 is connected to some other Ethernet device.
+Ethernet status - green, TRM - Transmitting: On if the ACC - 3 is transmitting data.
+Ethernet status - green, RCV - Receiving: On if the ACC - 3 is receiving data.
+Ethernet status - yellow, FD - Full Duplex: On if a full duplex connection is established.
+SPD
+COL LNK TX RX
+DPX
+1 2
+3 4
+5 6
+
+Dip Switch
+DIP - SWITCH
+FLEB IP Address 192.168.2.1
+
+FLEB (Fiber Laser Extension Board)
+FROM ACC
+DEBUG
+LASER FROM ACC
+SERIAL
+TO FIBER LASER
+ETHERNET 2
+ETHERNET
+2 LED’S
+TO
+INTERFACE
+BOARD
+5V LED
+ERR LED
+CAR LED
+3.3V LED
+
+FLEB (LEDs)
+X2 data 0 - 7 and ext. event
+(strobe)
+X3 digital power set / laser error
+X7/X11 over temperature / enable
+voltage fault / laser ready
+When DIP Switch No.1, on the
+ACC - 3, is set to ON, the FLEB+
+generates automatically the IP -
+address : 192.168.2.1 and
+Subnet Mask: 255.255.255.0
+
+The (FM)
+X11: shutter X12: emission
+X2: LVDS
+X6: Y - position X6: X - position
+LED
+X9: Y - current
+Receive Receive LED
+Error LED
+Error LED Alive LED
+X7: X - current
+X10:
+24V/GND/ - 24V
+
+ALIVE - LED ERROR - LED
+X
++ -
+ON
+5V
+RECEIVE ERROR - LED
+Y
+- 24
+3.3
+GND
+V -
++24
+RECEIVE - LED
+VCORE
+X POSISTION
++12V
+1.8V
+EMISSION - LED
+Y POSISTION
+LVDS - 12V
+X,Y Scanner
+Y CURRENT
+Voltage
+SHUTTER
+X CURRENT
+
+Interface board Circuits
+Category 3 safety relay:
+Automatic start up circuit: Setting the
+Laser warmup “On switching”.
+Switch 24V/8A to the beam
+jumper JP100, leads to an automatic
+The relay reacts on the key
+source after closing the
+system boot up , when mains is connected.
+switch and switches on the
+keyswitch.
+red LED on the membrane
+Shut down
+board and on the marking
+Auto Start
+head.
+On switching
+Shut down circuit: The relay
+Safety relay
+slopes when the stand by
+Jumpers
+button is pressed.
+The white LED on the
+Galvanic Separation
+membrane board, lights up
+(inductive)
+immediately after pressing
+White LED
+the power button.
+Potential free control of
+the beam source
+(inductive).
+Current limiting
+- 24V Power Supply (air
+- 24V supply
+cooled).
+MOS - FET (101)
+MOS - FET (T101) switches 24V to
+the electronics of the beam source Current limiting: beam source consumes most of the
+after the power button is pressed. current during switch - on (170A). To avoid welding of
+the Cat3 relay contacts, the starting current is
+automatically limited for a short period of time.
+
+Interface board Connectors
+X118 Shutter control
+X116 RS232 to FLEB & ext. X112 Panel signals from
+from ACC - 3
+template selection ACC - 3 to X109
+X111 G55 Power
+REL100
+Supply
+X115 Test box
+X109 Membrane
+Production
+X119 Pilot laser
+REL104
+X102 ACC/FM power
+Customer
+supply
+X113 ACC - 3 to
+X500 to FLEB
+interface
+X107 Fan lower unit
+Customer interface
+REL105
+X501 Laser
+REL103
+X120 Shutter & LED Laser X117 Serial interface
+emission RS232 receive of external
+data via ALLPRINT Basic
+X108 Fan upper unit
+REL106
+X110 Keyswitch
+X103 24V Laser Beam Source
+X106 & X105 GND & 24V to the
+Electronics
+Laser Beam Source
+X100 & X101 24V & GND from PSU
+
+Customer Interface
+JP102 JP101
+JP103
+X4A X4B X4C X4D X4E
+JP100
+
+Customer Interface
+Specification of the separated inputs:
+"0" signal voltage 0 V ... 5 V
+"1" signal voltage 8.5 V ... 30 V, nom. 24V
+Input current at 24V typ. 10mA
+Minimum signal length without 2 µs
+software filter
+Electrical isolation yes
+Specification of the non separated inputs (Trigger and Encoder):
+"0" signal voltage 0 V ... 5 V
+"1" signal voltage 8.5 V ... 30 V, nom. 24V
+Input current at 12V typ. 4mA
+Input current at 24V typ. 10mA
+Minimum signal length without 2 µs
+software filter
+Electrical isolation none
+
+SYSTEM READY DATA 0
+DATA 1
+READY TO MARK DATA 2
+DATA 3
+MARKING DATA 4
+DATA 5
+SHUTTER CLOSED DATA 6
+DATA 7
+ERROR EXTERNAL EVENT
+INTERLOCK
+BAD N.C.
+INTERLOCK
+GOOD N.C.
+START
+U_INTERFACE GND INTERFACE
+STOP
+U_INTERFACE GND INTERFACE
+EXTERNAL ERROR
+GND INTERFACE
+U_INTERFACE
+SHUTTER LOCK
+GND
+12/24
+SHUTTER LOCK
+GND
+12/24
+12/24
+IN TRIGGER MONITOR
+TRIGGER
+IN_TRIGGER_ENABLE
+GND
+12/24
+12/24
+ENCODER_INDEX
+ENCODER_T1
+ENCODER_T2
+SEPARATED OUTPUTS JUMPER
+SEPARATED INPUTS
+NON SEPARATED INPUTS
+SYSTEM POWER
+SEPARATED POWER FOR SEPARATED O/I
+
+Specification of the separated outputs:
+Rated load voltage 24 VDC ( - 15%/+20%)
+Load type ohmic, inductive, lamp load
+Max. outpu t current (per channel) 200 mA (short circuit proof)
+Electrical isolation yes
+
+Customer Interface Connections
+INTERLOCK
+ENCODER
+CHB CHA 24V
+GND
+24V
+PRODUCT
+TRIGGER
+
+Customer Interface Jumpers
+JP1
+JP4
+D115 Green Trigger
+JP1/101 NPN/PNP TRIGGER ENABLE
+JP1 NPN MODE
+JP1 PNP MODE
+(DEFAULT)
+D113 Green Trigger Monitor
+JP2/102 NPN/PNP TRIGGER MONITOR
+JP2 NPN MODE
+JP2 PNP MODE
+(DEFAULT)
+JP3/103 NPN/PNP TRIGGER
+D111 Green Trigger Enable
+JP3 JP2
+JP3 NPN MODE
+JP4 AUTO 0N/OFF
+JP3 PNP MODE
+JP4 AUTO MODE ON
+(DEFAULT)
+JP4 AUTO MODE OFF
+(DEFAULT)
+
+Power Supply
+• Universal AC input/ full range
+• Protections: short circuit/ overload/ overvoltage/ over temperature
+• Forced air cooling by built in DC fan
+• Built in fan speed control
+• Fixed switching frequency at 100KHz
+DISCRIPTION VALUES
+DC voltage 24V
+Rated current 13A
+Rated power 312W
+Voltage range 88 - 264VAC
+115VAC=5A
+Ac current
+230VAC=1.5A
+
+V2 Laser Source
+Optical Fiber
+Length = 3 m
+Converging lens +
+Isolator (back reflections)
+Laser beam outlet
+LF100: YLP - V2 - 1/100/10/10 AL
+LF200: YLP - V2 - 1/100/20/20 AL
+Air Cooling 3 fans
+The Fiber Laser is operated in
+pulsed mode only.
+
+Fiber lasers: Basics
+Function principle of an end pumped fiber laser:
+Laser Diodes
+λ ≈ 900 nm
+“Follower”
+Laser Beam Outlet
+“Leader”
+λ = 1055 - 1070 nm
+*)
+Beam diameter = 3 to 4.5 mm
+Laser Diode
+- Oscillator -
+λ = 1055 - 1070 nm *) Frequency is selected in SmartGraph
+
+Structure of the Fiber
+Coating
+Pump Core
+Ø = 500 µm
+Ø = 400 µm
+(Silikon)
+(Quartz)
+Refraction Index
+n
+L
+n
+P
+n
+c
+The laser core is doped with Ytterbium (Yb).
+Ytterbium is a metal.
+Laser Core
+Ø = 10 µm
+(Quartz - Yb doped)
+
+Interface unit
+beam expander collimator lens optical isolator Umbilical
+
+Lenses/ Focusing modules SHF60A
+Lenses/ Focusing modules SHF60A (6mm marking head)
+Various marking field options > 4 laser scan lenses available:
+f = 50 mm, f = 100 mm, f = 165 mm, f = 258 mm
+> Marking field size depends on lens used
+> Unlimited no. of lines
+SHF60A f=… mm
+6mm marking head
+50 100 165 258
+Working distance in mm 56 106 170 263
+Max A/mm 19.5 70.2 115.4 180.5
+Max B/mm 26 70.2 115.4 180.5
+
+Lenses/ Focusing modules SHF100A
+Lenses/ Focusing modules SHF100A (10mm marking head)
+Various marking field options > 4 laser scan lenses available:
+f = 100 mm, f = 163 mm, f = 254 mm, f = 420 mm
+> Marking field size depends on lens used
+> Unlimited no. of lines
+SHF100A f=… mm
+10mm marking head
+100 163 254 420
+Working distance in mm 127 229 345 549
+Max A/mm 75.8 142.2 215.5 361.5
+Max B/mm 118.7 193.5 301.5 498.5
+
+F =254
+F =100
+Depth of Focus
+Depth of Focus
+r m a r r m a r
+e k e k
+in in
+s s
+g g
+a a
+L L
+La ser marki ng
+
+6mm Head SHF60A
+
+6mm Pilot laser and shutter
+shutter
+Shutter
+motor
+Pilot
+laser
+
+10mm Head SHF100A
+
+10mm Pilot laser and shutter
+shutter Pilot
+laser
+
+Beam Turning Unit
+The beam turning unit is an optional part which turns the
+beam
+by 90 ° between the interface unit and the marking head.
+This reduces the length of the system by increasing
+the height at the same time:
+In the BTU the beam is reflected by a small mirror.
+The marking head cable is routed through the BTU.
+
+Software
+• Web Interface
+• Smartgraph
+• LABs
+• Installation
+
+File Menu
+Edit marking system
+Create laser
+data base
+Function
+button
+PC
+database
+Online
+Database
+
+Creating a database
+1. Select new
+database file
+2. Select database
+location and name
+3. Select laser type,
+marking head and
+lens, then press OK.
+
+Administration of marking systems
+Select
+new
+Name the
+laser
+Enter the lasers
+IP address
+Press OK
+
+Creating templates
+
+Templates main tool bar
+
+Template tool bar list
+
+Parts of a Template
+Attach only. Created in
+product registration tab
+Product
+Registration
+Contents:
+Contents:
+- Text
+- Mark on the fly
+- Numbers
+- marking angle
+- Dates/Time
+- Encoder operation
+- Serial numbers
+- Photocell, slope
+- Logos
+- Start distance
+- Lines
+- Triggering
+- Geometrical objects
+- Blocking
+- Barcodes
+- ID matrix codes
+Parameter set
+Arrangements
+Contents:
+- Positioning (X,Y coordinates)
+- Marking intensity
+- Rotation, mirroring…
+- Marking speed
+- Text options (scaling, ring marking)
+Attach, create, and
+- Jump speed
+make adjustments
+- Pulse frequency
+- Delays
+
+Parameters
+
+Print Samples
+
+Laser Parameters
+
+Direction of travel
+Product Registration set to run from left to right
+Line Direction
+VJA
+Product Registration set to run from right to left
+Line Direction
+VJA
+
+Static printing
+Product registration set to no movement
+Note: adjust one at a time!!!!!
+
+Display jumps
+
+Jump speed to high
+
+One noticeable characteristic is skirting of lines. You can almost see the dots in every
+line. This could be corrected by decreasing Marking Speed or increasing the Frequency.
+
+Marking intensity
+The laser parameter marking intensity affects extremely the quality of the marking.
+It alters the power of the laser marking system.
+The marking intensity is adjustable from 0 to 100%.
+
+Note the jagged line on “M”. The galvos have not stabilized yet and the laser is turned on.
+This could be corrected by reducing the Jump Speed and or increasing Jump Delay.
+
+Mark Delay to high
+Curve marking are thick
+
+Notice that characters like the “O”, “0” does not close, “M” have short legs.
+The galvo is tracing the outline of the character but the laser is still of.
+This could be adjusted with decreasing the Laser ON Delay.
+On some sensitive materials a very low Laser On delay can puncture the substrate.
+This sometimes could be mistaken as Laser off delay.
+Take note where the start and stop of the strokes are.
+
+On delay to high
+
+Notice tails drilling on end of characters. The galvos jumped to the new vector and the
+laser is still on. This can be adjusted by reducing the Laser Off delay.
+
+Notice some segments of the characters are short and other like the “O” and “”0”
+does not close. The galvos are still tracing the end of the characters but the laser is off
+already. This can be corrected with increasing the Laser off delay.
+
+Pulse frequency
+The pulse frequency is adjustable from 50 to 20000Hz.
+If you want to increase the pulse frequency, it is only possible to do this in a certain range.
+When the range is exceeded, the max. acceptable value is displayed.
+As far as the frequency of repetition of single spot the laser, it can be command liberations within the range concurred
+(from the tens with the hundreds of kHz). Higher it is the greater frequency is the superimposition (overlap) between the
+spot. Or higher it is the execution speed
+30%
+40%
+60%
+LOW Medium
+High
+Frequency
+Frequency
+
+Pulse frequency to low
+
+nd
+2 Jump delay
+st
+1 Jump speed
+th
+5 Mark delay
+th
+4 Marking intensity
+th
+6 Stroke delay
+7thOff delay
+rd
+3 Laser on delay
+th
+4 Marking speed
+
+Parameter Definition Min/Max To high To low Dependant
+Jump speed The speed at which the 3,000/20,000 Jump Delay
+galvo mirrors are
+moving while the laser is
+off
+Mark speed The speed at which the 500/8,000 Marking Intensity
+galvo mirrors are
+moving while the laser is
+on
+Jump delay Break time after each 40/200 Jump Speed
+jump
+Mark delay Break time at the end of 0/60 Laser On - delay
+each stroke
+
+Stroke Break time at the end of 40/200 Laser Off - Delay
+delay each stroke
+On delay The time between the 0/200 Mark delay and
+starting of the galvo Stroke Delay
+mirrors at the beginning
+of a stroke and the
+turning - on of the laser
+beam.
+Off delay The time between 50/200 Mark delay and
+stopping of the galvo Stroke Delay
+mirrors at the end of a
+stroke and the turning - off
+of the laser beam.
+
+Exercise 1
+Text is 5mm
+Box is 20 H X 45 W
+Step 1 print box only without removing
+the text from the template.
+Step 2 with out removing the box from
+the template make the box non printed
+and print the word text only.
+
+Exercise 2
+Create the following template
+Modify the serial numbers so that they appear in order cell by cell, have the serial
+numbers jump from column to column
+
+Exercise 3
+Create the following message
+ECC200 data matrix code
+Insert the following information
+Year 4 digit , Time HHmm Date MMDD
+Made in the USA text at bottom
+
+Exercise 4
+• Print the following information continuous
+• Template one 4 digit serializer 5 times
+have laser switch to Template two
+hh:mm:ss 4 times template three your
+name 2 times with out stopping.
+• Set a delay of 2 seconds between prints.
+• Carefully move paper to verify code
+change
+
+Exercise 5
+Arial font filled
+Logo of your
+choice
+Standard IL
+font
+
+Product Registrations
+
+Line Direction
+VJA
+Mounting position= - 90
+Product movement angle= 90
+VJA
+Mounting position= 180
+Product movement angle= 0
+VJA
+Mounting position= 90
+Product movement angle= - 90
+VJA
+Mounting position= 0
+Product movement angle= 180
+Note: must be in administrator/system settings/ marking head to
+adjust mounting position .
+
+Line Direction
+Mounting position= - 90
+VJA
+Product movement angle= - 90
+Mounting position= 180
+3430
+Product movement angle=180
+VJA
+Mounting position= 90
+Product movement angle=90
+Mounting position=0
+VJA
+Product movement angle=0
+Note: must be in administrator/system settings/ marking head
+to adjust mounting position .
+
+ACC - 3 I/O
+PIN 1 CHA
+PIN 1
+PIN 2 CHB
+ENCODER
+PIN 4 GND
+PIN 2
+PIN 7 24 VOLTS
+INTERLOC K
+PRODUCT
+PIN 1 SINGLE
+PIN 4 GND
+PIN 5 24 VOLTS
+
+ACC - 3 Extractor
+
+Compensation (mark on the fly)
+
+Compensation (mark on the fly)
+
+Exercise 6 High Speed printing
+Print the following message at 400ft per minute
+Videojet Technologies
+Best before YYYY/MM/DD
+000000
+Character height 2mm
+To be printed at an angle
+
+Technician Menu Overview
+Technician Return
+Software 6.7.X and above
+Active
+Active alerts
+messages
+Adjust marking
+Position Laser power Marking speed Marking Time Product Count
+Return Reset Count Print Count
+Main menu
+Product System
+messages Parameters Alert history Return
+registration settings
+Date & time
+Edit Home F1 New F2 Delete F4
+Unit of
+Measurement
+Save
+database
+Network IME
+
+Administration Menu Overview
+Administration Return
+Software 6.7.X and above
+Active
+Active alerts
+messages
+Adjust marking
+Position Laser power Marking speed Marking Time Product Count
+Return Reset Count Print Count
+Main menu
+Product System
+Save
+Parameters Alert history Return
+registration settings
+database
+Time & Unit of Handheld System Network Marking
+IME Password
+Date measurement language language setup head
+Text line
+Next Trigger Blocking Auto save
+Attributes
+
+Handheld controller exercise 1
+Create the following 2 line message To fill marking area
+30mm x 10mm at 100FT/m
+Fix text
+410 day offset
+BBE 31/12/01
+23:59 L1365A
+Julian date
+Hour
+Time
+Fixed text
+Shift
+ABC
+
+AllprintBasic
+
+Customer Interface Can - IO
+
+Exercise 6 Template List
+Using the Can I/O demonstrate the ability to select different templates.
+
+Pilot laser Alignment
+• Make a cross 30mmX30mm centered
+• Create a dot 10 font centered
+• Create a product registration called
+cross (single shot only.
+• Create a product registration called dot
+(continuous)
+
+Power Test
+Jump speed 15,000
+Laser point
+mw
+Mark speed 1
+20watt
+mj
+Jump delay 50
+Mark delay 0
+Stroke delay 50
+T/p
+ON - OFF
+On delay 0
+(Zero)
+Off delay 200
+E
+Marking intensity 100%
+Warning do not use a CO2 power meter!
+Frequency 20,000
+Warning ensure you are out of focus!
+
+Timing diagrams
+Normal operation
+
++24 VDC
+POWER
+115V
+Power up
+SUPPLY RL1
+INTERFACE BOARD
++24
++24
+- 24
+RL2
+24 VOLT LASER ON
+- 24
++24
+FIBER
+ACC FM
+LASER
+
+EMMISSION LED
+KEY SWITCH
+System connections
+SHUTTER
+FM FAN
+INTERFACE BOARD
+POWER
+EXTERNAL
+CONNECTION
+EXTERNAL CONNECTION
+USB
+INTERNAL CONNECTION
+ETHERNET 2
+SHUTTER
+SERIAL CUSTOMER INTERFACE
+USB
+LASER
+Control interface
+Template select
+LASER
+INTERFACE
+INTERFACE
+ACC
++24
+FIBER
+DEBUG
+DEBUG
+LASER
+FLEB
+IOEB
+HANDHELD COM
+PILOT LASER
+X&Y POS
+LVDS
+X&Y AMP
+FM
+
+2
+24 V
+Interlock
+1 27 5V 1
+X1
+5
+X14 X15
+2 9 Shutter is closed 2
+X5
+3 28 Pilot laser on 3
+1 24 V
+4 10 Emission LED on 4
+2 Out shutter Shutter
+5
+ACC
+5 29 Out shutter
+3 In is closed
+6 6
+11 IL return
+4 GND
+7 30 GND 7
+Interface
+X3 X2
+Out laser diode
+1
+5V 1 2 3 1 2
+2
+X21
+3.3V
+3
+N.C.
+Connector
+Key
+switch
+Emission LED on
+10 GND
++5V Pilot laser on
+X8
+Out emissions GND
+11
+N.C.
+Shutter voltage
+Pilot Laser
+Emission LED
+
+PWM
+1 1 Power set D0 1
+GND
+2 2 GND 14
+X11
+Laser ready 3 Power set D1 2
+X3
+3
+X24
+Voltage fault 5 Power set D2 3
+4
+6 Laser alarm 1
+Lase
+5
+7 Power set D3 4
+Fiber
+GND
+6 9 Power set D4 5
+ACC
+Over temp 10 Emission Enable 18
+laser
+7
+FLEB
+11 Power set D5 6
+Enable
+8
+12 Laser Modulation 19
+9 13 Power set D6 7
+14 SYNC 20
+10
+15 Power set D7 8
+16 Laser alarm 0
+17 Power set Latch 9
+18 Guide Laser 22
+19 GND
+21 Laser Alarms 2
+23 Laser Alarms 3
+X9
+1 TTL in
+Tin
+X6 Tout X7
+2 TTL out 3
+T out
+TTL RS232
+3 5
+R in
+4 GND
+RS232
+Rin
+Tout 9 GND
+IOEB
+
+Interlock Circuit
+
+Maintenance
+Maintenance Interval Measures:
+Weekly Check the laser scan lens for dust and dirt. Clean the laser scan lens in case of
+dust or stains (clean with acetone).
+Monthly or when control lamp lights up
+If installed: Exchange the filter bag inside the exhaust unit (refer to manual of the
+exhaust unit).
+Every three months (more frequently when operated in dirty ambient conditions)
+Carry out a visual inspection of the laser system. (visual inspection air flow of the intakes
+and exhaust)
+Every six months If installed: Exchange the charcoal filter inside the
+exhaust unit (refer to manual of the exhaust unit).
+
+Initial steps I
+1. The laser system stops operating. The yellow status LED is flashing.
+Possible cause(s): Measures:
+An error occurred. Connect the handheld or the PC to the system
+and read the error messages. Follow the
+remedy instructions given for the error
+message
+on the following pages.
+2. START has been pressed on the handheld or the PC but no marking is visible.
+Possible cause(s): Measures:
+The chosen parameter set is not adapted Select or create a suitable parameter set.
+to the material.
+The laser control is defective. MMC, database, replace necessary parts
+The lens is contaminated. Clean the lens. Train the customer
+The distance between product and marking Check the working distance, Lens type and
+head type.
+head is not correct or poor print.
+
+Initial steps II
+3. The line width has changed (too wide/not wide enough).
+Possible cause(s): Measures:
+The working distance between laser scan Adjust the working distance to the value
+lens and product has changed. stated in the data sheets.
+Wrong parameter set or wrong setting of Use the right parameter set or correct the
+parameters. verify that the correct product
+parameters.
+registration is attached to the template.
+The product surface or the product material Adjust the parameters to the product. In case
+has changed. of questions have sample done please contact
+sales representative.
+(Seven point plan)
+
+ACC - 3 power status LED’s
+12/24
+5V
+3.3V
+Voltage
+Check interface
+no no
+Ensure ACC
+good
+Check power Board input/
+or cables are Replace ACC 1.8V
+24 volt LED
+Supply voltage Output
+not grounded
+voltage
+no no
+Ensure ACC
+or cables are Replace ACC
+5 volt LED
+not grounded
+Harness and LVDS
+If you can prove
+Check umbilical
+no no Cables good
+Ensure ACC Check the
+the FM good
+And harness
+or cables are Status of the Replace ACC
+3.3 volt LED
+For
+not grounded FM board
+continuity
+All Harness and LVDS
+Check
+connection
+Check umbilical
+Cables good
+connection Check the
+no good
+And harness
+To the marking Status of the Replace ACC
+1.8 volt LED
+For
+Head FM board
+continuity
+
+Power PC status
+Copy MMC
+Read/write Not used
+Internal error
+Internal Order
+on on on on
+database Try new Order new
+Error Database
+Reload MMC card ACC
+LED chip Flashes slow as long as the
+MMC
+bootloader is running and waiting
+for a MMC
+off
+off
+Flashes fast while the bootloader
+Copy MMC loads linux from the MMC
+off
+on
+database Try new
+Read/write
+Reload MMC card
+Order new
+MMC
+ACC
+off
+no
+Copy MMC
+Order
+on on
+Order
+Yellow database Try new Order new
+Database
+Database
+Not used Reload MMC card ACC
+chip
+chip
+MMC
+no
+no no no no no
+Flashes Copy MMC
+System
+yes yes yes
+yes
+Slow Green LED Green LED database Try new
+Green LED Reads/
+Then fast On steady On steady Reload MMC card
+writes
+Then off MMC
+
+LED’s for status of connection to marking head
+Harness and LVDS
+Check umbilical
+LVDS
+Cables good
+Check the
+on on good
+Wait 1 Replace
+And harness
+Status of the LVDS error
+Error LVDS receive
+For
+minute ACC
+FM board
+LED continuity
+Damaged
+Replace
+Problem
+good
+Umbilical
+Or harness
+LVDS
+Receive
+LED
+
+Shutter closed
+Shutter fault
+Good
+Good
+Close shutter
+readings
+readings
+Close Shutter
+Check Defective
+no yes no no
+Clear
+Meter Faulty
+Shutter Closed
+Voltage +/ - Galvo
+faults
+readings galvo
+LED LED
+To FM cable
+no
+No
+continuity
+Bad
+readings
+Inspect for
+Replace
+Tears and
+umbilical
+yes
+continuity
+yes
+no
+Replace
+ACC
+If Hires unit replace complete
+galvo assembly and FM board
+Meter reading X5
+Clear
+Note: CO2 30VDC
+Fiber 24 VDC
+Pin 1 to 2 24VDC when shutter is open
+Pin 1 to 3 24 VDC when shutter is closed
+
+Laser voltage
+Laser 5V 5V
+Pin 2 to 8 5 VDC when key is closed
+Pin 2 to 3 5 VDC when key is closed
+Pin 2 to 5 3 VDC when printing
+Laser GND
+Pin 2 to 9 5 VDC when printing
+
+Debug voltage
+TTL - in
+1 3.3VDC
+2 TTL - out
+3.3VDC
+3
+4 GND
+
+Customer Training
+Training to be carried out at time of installation
+– Course guides included in training Manual
+• Level 1 Operator training
+– How to create a message with the handheld
+– Training guide
+– Operator customer training guide
+• Level 2 Maintenance training
+– Above information
+– Preventive maintenance training
+– Maintenance customer training guide
+
+Review
+• Clean the room
+• Course review
+• Test
+• Labs
+• Course evaluation
+
+pN^@,!:0>1S-'+X@D%$D&%@H
+0
+
+t??/01#"&54>32#".#"326632!;*Id:+
+q2ts???99?/2901#".55#".54>324>32&&#"3267h0b<AZ8 @_?3U*h-Q-
+-$'?5$9

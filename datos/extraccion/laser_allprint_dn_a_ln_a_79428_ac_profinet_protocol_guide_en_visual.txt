@@ -1,0 +1,662 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ALLPRINT DN-A LN-A\79428-AC PROFINET Protocol Guide EN.pdf
+# cifrado=False bloques=41 caracteres=36012
+
+xClick the right mouse button and select "Modify operand" Figure 18and select "Modify to 1" as shown in
+Figure 18: "Modify operand" for Reset to Default tag. Set to true (=1).
+During one program scan, the function will be executedimmediately. You don't need to do anything else. All the data that the PLC sends to the and thecaller's tag will be reset l aserwill take
+the values according to Figure 16.
+11/20-Index: AC PROFINET / 5 Sample Session 39
+
+To reset all parameters to default values
+xOpen the main routine Main [OB1] as shown in Figure 17
+Figure 17: main routine Main [OB1]
+xRefer to network 3 and find tag %M2.0 named "Reset to Default" as shown in Figure 18
+Figure 17: Tag %M2.0 named "Reset to Default"place
+11/20-Index: AC PROFINET / 5 Sample Session 38
+
+Set All Transmitted Data to Defaults
+In this example project, it is possible to reset all transmitted values to 0.
+A special function performs this action. Find the function FC named «Transmit Defaults» in the project tree. The contents of this function are shown in Figure 16.
+You can edit this FC function in order to set the default values that you want
+Figure 16: Data that the PLC sends to the default Laser
+11/20-Index: AC PROFINET / 5 Sample Session 37
+
+Figure 15: The readed parameters should be exactly the same as the parameters that you set.
+If the value of the Cmd Response tag is 122 , this means that the command is not executed, because the adjustment value was not setor was out of range.
+11/20-Index: AC PROFINET / 5 Sample Session 36
+
+Load Global AdjustmentsExample
+Apply global adjustments for the active jobto mark.
+xOpen the data block « Transmitted Adjustments» and w rite parameters below
+1.Position X/Y allows to shift the position of the job by +/-12.7 cm
+xPosition X in hundreds of mm (must be from -12700 to 12700)
+xPosition Y in hundreds of mm (must be from -12700 to 12700)
+It will temporarilydisplacethejob content inside the marking field.
+1.Rotation in degree (must be from 0 to 359)
+It will temporarily change therotation of the job.
+2.Scale Xin percentage(must be from 50 to 200)
+It will temporarilychange the scaling of the job.
+3.Scale Y in percentage (must be from50to 200)
+It will temporarilychange the scaling of job.
+4.Intensity in percentage (must be from 0 to 100)
+It will temporarilychange the marking intensity,
+as shown in Figure 14
+Figure 14: Writing value foradjustment parameters tag
+xOpen the data block «Transmitted *COMMAND*» and enter the value 0. Make sure the command has been executed: Tag value of Cmd Response is 127, and Cmd Executed is
+0.
+xOpen the data block «Transmitted *COMMAND*» and w rite down value 13 for command tag
+xOpen the data block «Received *COMMAND STATUS*» and progress is value 13make sure the command in
+xAfter the laserhas executed, the tag value Cmd Response should be 127, which means that the command was successful.You can also open the received data block «Received
+Adjustments» as shown in Figure 15
+11/20-Index: AC PROFINET / 5 Sample Session 35
+
+Load Line Setup Example
+Load a Line Setupconfiguration.
+xOpen the Transmitted Setup Line data block and enter the text in string tag. You do not need to write the length of the line in the integer tag. The value of this tag will be calculated automatically
+using the function FC "Transmit". An example of text input is shown in the Figure13
+Figure 13: Entering text values
+xOpen the data block «Transmitted *COMMAND*» and enter the value 0. Make sure the command has been executed: Tag value of Cmd Response is 127, and Cmd Executed is
+0.
+xOpen the data block «Transmitted *COMMAND*» and w ritedown value 12  for command tag
+xOpen the data block «Received *COMMAND STATUS*» and progress is value 12make sure the command in
+xAfter the laserhas executed, the tag value Cmd Response should be 127, which means that the command was successful. If the value of the Cmd Response tag is 125 , this means that
+the requested Line Setupdoes not exist on the l aser.
+11/20-Index: AC PROFINET / 5 Sample Session 34
+
+Load Job Example
+Load a job formarking
+xOpen the Transmitted Job Select data block and enter the text in string tag. You do not need to write the length of the line in the integer tag. The value of th istag will be calculated automatically
+using the function FC "Transmit". An example of text input is shown in the Figure 12
+Figure 12: Entering text values
+xOpen the data block «Transmitted *COMMAND*» and enter the value 0. Make sure the command has been executed: Tag value of Cmd Response is 127, and Cmd Executed is 0.
+xOpen the data block «Transmitted *COMMAND*» and w rite down value 11 for command tag
+xOpen the data block «Received *COMMAND STATUS*» and progress is value 11make sure that the command in
+xAfter the laserhas executed, the tag value Cmd Response should be 127, which means that the command was successful. If the value of the Cmd Responsetag is 124, this means that
+the requested j ob does not exist on the l aser.
+11/20-Index: AC PROFINET / 5 Sample Session 33
+
+Load Fields Data B Example
+Load field data for the active job to mark. With this command it is possible to load data for up to 5 fields at once. If more than 5 field shall be used, repeat the procedure until all desired fields are
+filled with data.
+This is a duplicate of Load Field Data A. If the user is attempting high speed data download the user can switch between Load Field A and Load Field B to obtain higher throughput (no need to
+set the Command tagto 0 in between Load Field commands)commands is shown in Figure 11..Switching between these two
+Figure 11: Writing down the value for Command tag 9 and the subsequent writing value 10,then again value is 9, etc.
+NOTE: You must monitor the Status of each one-Use data block «Received *COMMAND STATUS*» for this. time downloadCommand (9 and 10).
+11/20-Index: AC PROFINET / 5 Sample Session 32
+
+Load Fields Data A Example
+Load field data for the active job to mark. With this cto 5 fieldommandsat once. If more than 5 field shall be used, repeat the procedure until all desired fields are it is possible to load data for up
+filled with data.
+xOpen the Transmitted Fields data block and enter the text in all swritethe length of the lines in the integer tags. The values tring tags. You do not need to of these tags will be calculated
+automatically using the function FC "Transmit". An example of text input is shown in the figure 10
+Figure 10: Entering text values
+xOpen the data block «Transmitted *COMMAND*» and enter the value 0. Make sure the command has been executed: Tag value of Cmd Response is 127, and Cmd E xecutedis 0.
+xOpen the data block «Transmitted *COMMAND*» and w ritedown value 9 for Command tag
+xOpen the data block «Received *COMMAND STATUS*» and progressmake sure the that command in
+xAfter the laserhas executed, the tag value Cmdthe command was successful. If the value of the Cmd Response tag is 120, this means that Response should be 127, which means that
+the command is not executed, because the field name does not exist in currently selected job. If the value of the Cmd Response tag is 119, this means that the command is not executed,
+because the field data given is invalid. It may be the wrong length, not in the proper format, or not valid for this type of insert.
+Note: If you want to execute this command several times, i between command values 9 and 10t is possible to switch instead to reset 0 first.(See the next chapter)
+11/20-Index: AC PROFINET / 5 Sample Session 31
+
+Start Marking Example
+Starts the laser to markthe active job.
+NOTE: In order to start marking all alarms must be cleared
+xOpen the data block «Transmitted *COMMAND*» and enter the value 0. Make sure the command has been executed: Tag value of Cmd Response is 127, and Cmd executed is 0.
+xOpen the data block «Transmitted *COMMAND*» and w ritedown value 3 for Command tag
+xOpen the data block «Received *COMMAND STATUS*» and progress is value 3 make sure the command in
+xAfter the laserhas executed, the tag value Cmd Response should be 127, which means that the command was successful. If the value of the Cmd Response tag is 115, this means that
+the command is not executed, because start marking failed.
+Stop Marking Example
+An active marking will be stopped.
+xOpen the data block «Transmitted *COMMAND*» and enter the value 0. Make sure the command has been executed: Tag v alue of Cmd Response is 127, and Cmd E xecuted is 0.
+xOpen the data block «Transmitted *COMMAND*» and w ritedown value 4 forcommand tag
+xOpen the data block «Received *COMMAND STATUS*» and progress is value 4 make sure thecommand in
+xAfter the laserhas executed, the tag value Cmd Response should be 127, which means that the command was successful. The command will always be successful.
+11/20-Index: AC PROFINET / 5 Sample Session 30
+
+Clear single Alarm Example
+Clears all alarms, if theID of an active a larm is valid.compatibility reasons. This command is provided only for
+First you will need to specify the ID of an active alarm.actions specified in the chapter Clear All Alarms ExampleThen you will need to repeat the .
+xOpen the data block « Transmitted Alarm Clearing» and w in Figure 9rite down ID of Alarm Clearing as shown
+Figure 9: Writing value for ID of Alarm Clearing tag
+xOpen the data block «Transmitted *COMMAND*» and enter the value 0. Make sure the command has been executed: Tag value of Cmd Response is 127, and Cmd E xecuted is 0.
+xOpen the data block «Transmitted *COMMAND*» and w rite down value 7 for Command tag
+xOpen the data block «Received *COMMAND STATUS*» and progress is value 7make sure the command in
+xAfter the laserhas executed, the tag value Cmd Response should be 127, which means that the command was successful. If the value of the Cmd Response tag is 123, this means that
+the command is not executed, because the Alarm ID specified does not exist.
+11/20-Index: AC PROFINET / 5 Sample Session 29
+
+Figure 6: The location of the data block«Received *COMMAND STATUS*» in the project tree
+Figure 7: The contents of the data block«Received *COMMAND STATUS*»
+xMake sure the value of «Kommandin progressthat the »tag lis 6aser,as shown in Figure 7. has accepted your command and is now executing it.This means
+xAfter the command has beenexecuted, the tag means that the command was successful.value Cmd Response should be  127, which The command will always return 127, even if there
+are no alarms to clear.
+Figure 8: Writing value 0 for Command tag
+11/20-Index: AC PROFINET / 5 Sample Session 28
+
+Figure 3: "Modify operand"for Command tag
+xWrite down value 6 for Command tagas shown in Figure 4.
+Figure 4: Writing values 6 for Command tag
+xMake sure the command is 6 as shown in Figure 5.
+Figure 5: commandvalueis 6
+xOpen the data block «Received*COMMANDSTATUS*» as shown in Figures 6and 7
+11/20-Index: AC PROFINET / 5 Sample Session 27
+
+How to work with commands
+A command value can be sent from PLC to laser via the data block «Transmitted *COMMAND*».
+When a command has been sent, the caller need to check the result in the data tags "Cmd Response" and "Cmd Executed". While the laser is executing a command, the tag "Cmd In
+Progress" will reflect the command in progress.
+Before a new command can be send to the laser, "NoOperation" (0) must be sent. Example: "No Operation" -"Start Marking" - "No Operation" - "Stop Marking".
+When the laser finished processing, check the result in the tags "Cmd Executed" and "Cmd Response". Please refer to the data definition table for command- and respond values.
+Clear All Alarms Example
+All alarms (Errorsand Warnings) will be cleared on thelaser.
+NOTE: All alarm messages can be cleared. However, tstates, but fatal errors are not recoverablehe laser can recover from Error , the laser must be restarted. Warnings do not change
+the laserstate.
+Do the following:
+xOpen the data block «Transmitted *COMMAND*»
+xPress the "Monitor all" button as shown in Figure 2
+Figure 2: «Monitor All» button
+xClick the right mouse button and select "Modify operand" as shown in Figure 3
+11/20-Index: AC PROFINET / 5 Sample Session 26
+
+PLC S7-1200 series Sample Session
+Data identification
+At first, open the sample project SampleProj_PROFINET_S7 application. Connect to the PLC and expand the "Program Blocks" -1200.ap15 in the TIA Portal item in project tree as shown in
+Figure 1.
+Figure 1: Program Blocks
+All data blocks DB sent fromPLC to the LaserThe reverse is also true.contain a portion of the name Transmitted XXX. All the database data blocks DB that the PLC receives from the l asercontain
+a portion of the name Received XXX.
+For convenience, all transmitted and received information is grouped into separate data blocks. If you want to do something using a PLC, then first decide for yourself whether the necessary action
+relates toreceiving or sending information.
+11/20-Index: AC PROFINET / 5 Sample Session 25
+
+11/20 - Index: ACPROFINET / 5 Sample Session 24
+NOTICE
+5 Sample Session
+See following pages.
+The sample project delivered as part of the package is not supposed to run on
+your PLC to control the laser. It is a generic sample that does not contain required
+product references. A PLC programmer needs to alter the sample project in order
+to use it with real devices. That is: the laser type, the PLC type and the latest de-
+vice file for the laser. It is mandatory that your laser matches the laser type, ver-
+sion and device file used in the PLC project!
+
+11/20 - Index: ACPROFINET / 4 Process Data 23
+• "Command Response" can be read from: T2O - Byte 5
+• "Command Executed" can be read from: T2O - Byte 4
+• "Command In Progress" can be read from: T2O (Laser to PLC) - Byte 3
+• "Command" can be set in data O2T (PLC to laser) - Byte 0
+– "CommandInProgress" will not be set for "NoOperation" and commands
+6. "CommandInProgress" indicates the processing of command and not the ac-
+5. Commands with an unknown ID will be answered with "Unknown Command".
+with unknown ID.
+4. When a command failed to execute, Response will contain respective error
+tion.
+3. When a command was executed successfully the Response will be set to
+ID, "CommandExecuted" will not be set.
+2. Only one command can be executed at a time. While a command is in
+– "CommandSuccessful" and the ID of the command will be assigned to "Com-When "NoOperation" was sent, the sender must check and wait for: Com-
+– progress and a new one arrives, it will be postponed and executed when theThere is one exception: To trigger loading of field data, these commands
+– mandExecuted".mandResponse = “CommandSuccess” and CommandExecuted = "NoOpThe command "NoOperation" must be sent before any other new com-
+1. first one has been finished.The process data is exchanged periodically. Commands will not be executedcan be toggled: NoOp - LoadFieldDataA - LoadFieldDataB - LoadField-
+mand can be send. Example: NoOp - Start - NoOp - Stop
+every time. Instead it's needed to change the command ID to trigger an ac-DataA - ...
+4.4 Notes
+tion.
+Command Data
+
+11/20 - Index: ACPROFINET / 4 Process Data 22
+Stop marking failed114 Stop marking failed Stop markingN/A
+Start marking failed115 Start marking failedStart markingN/A
+Invalid Field Data119 Command Failed. The Field DataLoad Field Data A
+Field Name not valid120 Command Failed. The FieldLoad Field Data A
+given is invalid. It may be the
+All alarms not cleared121 Command Failed Load Field Data BClear all AlarmsN/A
+name does not exist in the cur-
+Adjustment failure122 Command Failed. The Adjust-Adjust Parameters
+wrong length, not in the properLoad Field Data B
+Alarm not cleared123 Command Failed. The alarm IDClear Alarm Clears always
+rently selected Job
+Job does not exist124 Command Failed. The requestedment value was not set.Load Job All alarms can
+format, or not valid for this type of
+Line Setup does not exist125 Command Failed. The requestedspecified does not exist.Load Line Setupall alarms, if
+Unknown Command 126 Command Failed. The commandJob does not exist on the laser.All commandsbe cleared on
+insert.
+Command Successful127 Command is executed success-All commands
+Line Setup dos not exist on the alarm ID exists
+Command ResponseID Description Valid for Com-Notes
+is invalid laser.
+fully
+4.3.2 Command Responseslaser.
+mands
+
+11/20 - Index: ACPROFINET / 4 Process Data 21
+13Adjust Param-Load global adjustments for active job.O2T -> Adjust-
+eters ment - Position
+12Load LineLoad the Line Setup for marking.O2T -> Select
+This is used to define adjustments to the
+(X)
+Setup Line Setup -
+11Load Job Load the Job to Run.placement and size of the job being marked.O2T ->Mark
+The Line Setup is defined using 2 data ele-
+IDCommand Purpose Data ElementsNotes
+Length
+This Job (SelectO2T -> Adjust-
+ments - Select Line Setup - Length, Select
+The Job is defined using 2 data elements -Used
+Job) - Lengthment - Position
+Line Setup - Data, where Length is theO2T -> Select
+Mark This Job - Length, Mark This Job -
+(Y)
+length of the line setup name and Data isLine Setup -
+Data, where Length is the length of the jobO2T -> Mark
+characters of the line setup name.Data
+name and Data is characters of the jobThis Job (SelectO2T -> Adjust-
+name. Job) - Datament - Rotation
+O2T ->Adjust-
+ment - Scale X
+O2T -> Adjust-
+ment - Scale Y
+O2T -> Adjust-
+ment - Intensity
+
+11/20 - Index: ACPROFINET / 4 Process Data 20
+10Load FieldLoads Field data for use in the next mark-O2T -> Field
+ing(s). This is a duplicate of Load Field DataInfo 1-5
+Data B
+9 Load FieldLoads Field data for use in the next mark-O2T -> Field
+8 Not used - -
+A. If the user is attempting high speed data
+ing(s). Takes up to 5 pieces of Field InfoInfo 1-5
+7 Clear AlarmData A Clears all alarms (faults and warnings) onO2T -> ClearOn laser, always all alarms
+download the user can switch between
+and loads them to the laser for use in mark.
+6 Clear allClears all alarms (faults and warnings) on- On laser, all alarms can be
+the laser, if the alarm ID is a valid/activeAlarm Flag/IDwill be cleared, i.e. Clear
+5 Not used Load Field A and Load Field B to obtain- -
+4 Stop markingStop marking. -
+3 Start MarkingStart marking the current job.-
+Alarms the laser. cleared. For Error1 and Er-
+2 Not used alarm ID.Please note that the fields must be markedWill respond with “true“ for compatibility- Alarm Command in combi-N/A
+higher throughput (no need to set the com-
+1 Not used Will respond with “true“ for compatibility- N/A
+0 No operationContinue operation -
+ror2, the laser state is able
+in the Job as User Prompted to be updatednation with a valid (active)
+IDCommand mand to 0 in between Load Field com-Purpose Data ElementsNotes
+Response is always “true“
+4.3.1 Command Definition Response is always “true“to recover. Fatal errors are
+remotely. If less than 5 fields need to be up-alarm ID will still clear all
+mands). Used
+not recoverable
+dated set the Name length and Data lengthalarms.
+to 0.4.3 Process Commands and
+Responses
+
+11/20 - Index: ACPROFINET / 4 Process Data 19
+4 Batch Size Count Size of batch/products to mark
+3 Batch CounterCount Counter for product markings, laser will
+2 Product CounterCount Will be set to zero when active job
+1 Marking CounterCount Will be set to zero when active job
+ID Name Unit stop when batch counter = batch sizeDescription
+changed
+changed
+4.2 Performance Metric
+Performance Metrics IDs
+Range for all counters is: 0..65535
+
+11/20 - Index: ACPROFINET / 4 Process Data 18
+256 - 287Select Line Setup -SINT[32]ASCII Each Char-Name of the Line Setup to use when
+252 - 255Select Line Setup -DINT String 1-32 Length of the Name of the Line Setup
+Data Charactersacter (0x20performing commands that involve
+212 - 251Field Name/Data 540 bytes See above for Field information (for
+Length Length to use when performing commands
+172 - 211Field Name/Data 440 bytes See above for Field information (for
+- 0xFF)Line Setups. Valid only for the length
+(see above) field name, length of name, field data,
+132 - 171Field Name/Data 340 bytes See above for Field information (for
+Byte Description Data TypeUnits Range Usesthat involve Line Setups.
+(see above) field name, length of name, field data,
+defined above.
+length of data).
+(see above) field name, length of name, field data,
+length of data).
+length of data).
+
+11/20 - Index: ACPROFINET / 4 Process Data 17
+92 - 131Field Name/Data 240 bytes See above for Field information (for
+72 - 91Field Data 1 - StringSINT[20]ASCII Each Char-Data of the first Field to use when
+(see above) field name, length of name, field data,
+68 - 71Field Data 1 -DINT String 1-20 Length of the Data for first Field to re-
+Charactersacter (0x20performing commands that involve
+length of data).
+56 - 67Field Name 1 - DataSINT[12]ASCII Each Char-Name of the first Field to use when
+Length Length place data when performing com-
+52 - 55Field Name 1 -DINT String 1-12 Length of the Name of the first Field
+- 0xFF)Fields within a Job. Valid only for the
+Charactersacter (0x20performing commands that involve
+mands that involve Fields within a Job
+20 - 51Select active jobLength SINT[32]ASCIILength Each Char-Name of the Job to use when per-to use when performing commands
+length defined above
+- 0xFF)Fields within a Job. Valid only for the
+16 - 19Select active jobDINT String 1-32 When performing commands that pro-
+14 - 15Adjustments - Inten-(Characters) INT PercentageCharacters0 to 100acter (0x20Temporary change to the marking in-forming commands that provide a Jobthat involve Fields within a Job
+12 - 13Adjustments - ScaleINT Percentage50 to 200Temporary scaling of the job.length defined above
+(Length of name) Length vide a Job, value is the length of
+10 - 11Adjustments - ScaleINT Percentage50 to 200Temporary scaling of the job.
+sity - 0xFF)tensity in percent.Name.
+8 - 9 Adjustments - Rota-INT Degree 0-359 de-Temporary rotation of the job.
+Y
+6 - 7 Adjustments - Posi-INT Hundreds-12700 toName of the Job.Temporary displacement of job con-
+X
+4 - 5 Adjustments - Posi-INT Hundreds-12700 toTemporary displacement of job con-
+3 tionPad Bytes BYTE N/A greesN/A
+Valid only for the length defined in
+tion (Y) of mm 12700 tent inside the marking field.
+1 - 2 Clear Alarm Flag/IDINT Alarm ID0-64000ID of a currently active alarm.
+tion (X) of mm 12700 tent inside the marking field.
+item above.
+0 Command USINT Command- Command to perform.
+Byte Description Data TypeUnits Range Uses
+Note: However, all alarms will be
+4.1.3 O2T Data (PLC to Laser)ID
+cleared.
+See Process Commands and Re-
+sponses [ } 20 ] for further definition.
+
+VVjTc2l2Cebds.2(fAx: C,No2j2 w2AL-9dyy28a7a V6
+UG22r(I(7E 3NF SF
+uE2r(IrPU h
+2up(G2uE2r(I 3c
+U1uIrPUU2P2G7 3D
+( 3t
+Aengnme.mwFTmF
+(3 36
+MP2Pr( 3S
+U1uI 3l
+7(2I29U1uI 38
+uE2r(I(7E C.ji4ajnFVnjx.Tmf 3
+•r9uE) 33
+U2PE9• 3h
+7PGU c
+LPu2M(7PGU D
+pPuE) t
+LPu2M(2u))9rP 6
+LPu2M(2u)) S
+77PM(pPuE) l
+rPUP9 8
+rPUU2P2G7
+ULu2I(7E 3
+uEu2uPru h
+WaydL257a7Iy va4Id
+raxnjFUbab x
+
+11/20 - Index: ACPROFINET / 4 Process Data 15
+84-107Pad byte / reserved /BYTE N/A N/A
+82-83 Performance MetricINT Value Varies Dependent on the ID the value can be
+81 Pad Byte BYTE N/A N/A
+for future use
+80 Performance MetricSINT ID 0-X ID of a performance metric.
+Value 4
+in different forms. See Performance
+78-79 Performance MetricINT Value Varies Dependent on the ID the value can be
+77 Pad Byte BYTE N/A N/A
+ID 4
+Metric [ } 19 ] for more information.
+76 Performance MetricSINT ID 0-X See ID of a performance metric.Performance Metric [ } 19 ] for
+Value 3
+in different forms. See Performance
+74-75 Performance MetricINT Value Varies Dependent on the ID the value can be
+73 Pad Byte BYTE N/A N/A
+ID 3 more information.
+Metric [ } 19 ] for more information.
+72 Performance MetricSINT ID 0-X See ID of a performance metric.Performance Metric [ } 19 ] for
+Value 2
+in different forms. See Performance
+70-71 Performance MetricINT Value Varies Dependent on the ID the value can be
+69 Pad Byte BYTE N/A N/A
+ID 2 more information.
+Metric [ } 19 ] for more information.
+68 Performance MetricSINT ID 0-X See ID of a performance metric.Performance Metric [ } 19 ] for
+Value 1
+in different forms. See Performance
+66-67 Adjustments INT Percentage0 to 100Temporary change of the marking in-
+64-65 Adjustments INT Percentage50 to 200Temporary scaling of the active job.
+ID 1 more information.
+Byte Description Data TypeUnits Range Uses
+Metric [tensity. } 19 ] for more information.
+See Performance Metric [ } 19 ] for
+- Marking intensity
+- Scale Y
+more information.
+
+11/20 - Index: ACPROFINET / 4 Process Data 14
+62-63 Adjustments INT Percentage50 to 200Temporary scaling of the active job.
+60-61 Adjustments INT Degree 0 -359 de-Temporary rotation of the active job.
+58-59 Adjustments INT Hundredth-12700 toTemporary displacement of the job
+56-57 - Scale XAdjustments INT Hundredth-12700 toTemporary displacement of the job
+grees
+- Rotation
+52-55 Pad bytes / re-DINT of mmN/A 12700N/A content inside the marking field.
+- Position (Y)
+50-51 Current Warning IDUINT Warning IDof mm 0-6400012700 Warning ID of the highest prioritycontent inside the marking field.
+49 Pad Byte BYTE N/A N/A
+- Position (X)
+48 served / for futureNumber of WarningsUSINT Count 0-255 Number of Warnings currently active
+46-47 Current Error IDUINT Fault ID0-64000warning on the laserFault ID of the highest priority Fault
+45 Pad Byte BYTE N/A N/A
+44 useNumber of ErrorsUSINT Count 0-255 on the laser.Number of Faults currently active on
+on the laser.
+12-43 Active job nameSINT[32]ASCII Each Char-Name of the active job currently being
+the laser.
+8-11 Active job DINT String 1-32 Length of the name of the active
+7 Pad Byte BYTE N/A N/A
+6 Pad Byte BYTE N/A N/A
+Charactersacter: marked. Only valid for the length de-
+(Characters of name)
+Length marking job.
+5 Command ResponseUSINT Result 0-255 Status of last completed command.
+(Length of name)
+4 Command ExecutedUSINT Command(0x20-0xFF- fined above.Last command executed successfully.
+3 Command In USINT Command- A command is in progress,
+2 Pad Byte BYTE N/A N/A)
+ID
+See Process Commands and Re-
+1 Markings CompletedUSINT Count 0-255 Indicates the last completed product
+Progress ID
+0 Laser Status USINT Status 0-99 Indicates the laser status. See table
+Byte Description Data TypeUnits Range See Usessponses [ Process Commands and Re-} 20 ] for further definition.
+(1-255 cycle) count in rolling value.
+4.1.2 T2O Data (Laser to PLC)
+Laser Status [ } 16 ] .
+sponses [ } 20 ] for further definition.
+After 255 the value will go to 0.
+
+11/20 - Index: ACPROFINET / 4 Process Data 13
+BYTE Bit String (8-bits)
+DINT Signed Integer (32-bit)
+INT Signed Integer (16-bit)
+SINT Signed Integer (8-bit)
+UINT Unsigned Integer (16-bit)
+USINT Unsigned Short Integer (8-bit)
+Data Type Description
+4.1.1 Data Types
+O2T Originator to Target (data output)
+4.1 Process Data DefinitionT2O Target to Originator (data input)
+AbbreviationsMeaning
+PLC to Laser
+Laser to PLC
+4 Process Data
+General
+Before a job can be used to set marking data (variable content) from a PLC, the
+job needs to be created upfront e.g. with TCS+.
+The user needs to setup the job according the specifications for the product to
+mark: place elements (like barcode, text fields, etc.) where needed and assign
+fields (text variables) for the content to set via PLC.
+Make sure that the length of job names, field names, etc. do not exceed the maxi-
+mum allowed length and that names consist of characters only from ASCII
+charset.
+Allowed ranges are given in the tables below. If values are out of range, it is not
+possible to address these variables from PLC.
+Abbreviations
+
+11/20 - Index: ACPROFINET / 3 Addressing of Process Data 12
+3 0x41 Bytes 92- 287
+Output (PLC to Laser)2 0x40 Bytes 0 - 91
+Input (Laser to PLC)1 0x30 Bytes 0 - 107
+Data SlotIndexMapped to Process Data
+3 Addressing of Process Data
+
+SSo1R S L6]PocCmSS So10e eds1SsSL6]PocCm
+c: RgameFbvnFgjT/n0bFbjnnFameFianFx jnFnVnjsbv.mwF.xF0Tig-nbneFx 00nxxC --s
+axFxvT4mF.mFM.w jnxFcNF3h:
+D: PmeFC.ma--sF0vamwnFbvnF7rIFbTFGEFiTenFaxFxvT4mF.mFM.w jnFD:
+AL-79 28 IvamwnFbvnF7rIFbTFGEFiTen
+AL-79C28 (m-.mnFiTm.bTj.mw
+AL-794,28 (m-.mnFgjT/n0bFbjnn
+
+SSo1R S L6]PocCmSS So10e eds1SsSL6]PocCm
+7. Start modules after Downloading to PLC as shown in Figure 7.
+6. Allow modules to stop if needed, select it as shown in Figure 6.
+Protcn D Extended download to device screen
+ProtcR D Allow modules to stop
+ProtcO D Allow modules to start
+
+SSo1R S L6]PocCmSS So10e eds1SsSL6]PocCm
+5. Click the Start Search button. When your PLC is available, select it as shown
+in Figure 5.
+c]moC
+4. Click «Download to device» -> «Software (All)» to load the Project to PLC as
+shown in Figure 4.
+Protcm D TIA Portal - Project tree
+The name of the controller 1215С is contained in the project name.
+Protce D TIA Portal - Compile screen
+
+11/20 - Index: ACPROFINET / 2 Installation of PROFINET 8
+3. Click on “Project View” file to open the contains of project. Figure 3 shows the
+project tree.
+2. Double click on “SampleProj_1215C-DcDcDc.ap14” file to open the project.
+Figure 2 shows the opened project.
+1. Open the “SampleProj_1215C-DcDcDc” folder as shown in Figure 1.
+2.3 Software Download
+Download of Sample Project to the PLC
+Sample TIA Portal Project “SampleProj_1215C-DcDcDc” which is created using
+TIA portal version V14 will be provided as part of PROFINET package
+(PROFINET.zip).
+Follow the below steps to open, compile and load the project in PLC.
+Laser St Sample TIA portal project folder
+LaseruSt TIA Portal - Opened project
+
+11/20 - Index: ACPROFINET / 2 Installation of PROFINET 7
+NOTICE
+Normally, it is not necessary to configure network settings, as the PLC will do this.
+However, if a manual setup is required, it can be done here.
+Once configured, the user interface will show the current network configuration.
+
+11/20 - Index: ACPROFINET / 2 Installation of PROFINET 6
+3. Enter the corresponding settings and confirm with “Save“.
+2. Select the corresponding interface.
+1. Go to Global Settings and select Laser Unit Settings .
+2.2 Interface Configuration
+To configure the communcation interface start the TCS+ software by entering the
+IP address of your laser system into your browser, e.g. 192.168.1.1 .
+
+11/20 - Index: ACPROFINET / 2 Installation of PROFINET 5
+2.1 Connection between PLC and
+2 Installation of PROFINET
+Laser
+The connections for the interfaces are located on the add-on board (MIC module)
+on the control board (Chameleon) inside the housing.
+Inside the housing the system is equipped for connecting standard RJ45 connec-
+tors and cables (of type 6XV1870-3QH20). For this the cables need to be fed into
+the housing.
+If other connectors are to be used (type 6GK1901-1BB10-2AA0) or the connec-
+tion needs to be outside the unit it is possible to use the interface (RJ45) at the
+back. For this the internal network cable of the control board can be connected to
+the industrial interface on the MIC module.
+
+Protclc D umP
+
+11/20 - Index: ACPROFINET / 1 Introduction 4
+• PROFINET IRT (isochronous real time) employs special communication hard-
+• PROFINET RT (real time) offers a communication channel with optimized per-
+ware to enable clock rates of less than 1 ms (down to 31.25μs) and a jitter
+formance (1-128ms clock rate with jitter of ±10% or ±10ms, whichever is
+precision of less than 1 μs. This channel is mainly of use for motion control
+lower) that is suitable for most factory automation tasks.
+applications.
+1 Introduction
+PROFINET
+PROFINET is the open Industrial Ethernet standard of PROFIBUS and
+PROFINET International (PI) for automation based on Industrial Ethernet and
+uses TCP/IP, UDP and IT standards.
+PROFINET uses a real-time model for communications known as PROFINET IO,
+which is similar to PROFIBUS DP. PROFINET IO is generally referred to as just
+PROFINET.
+PROFINET offers scalable communication for different applications in industrial
+automation:
+PROFINET IO uses a view of distributed I/O similar to PROFIBUS DP. IO con-
+trollers (e.g. PLCs) run an automation program, IO devices (e.g. absolute en-
+coders) are remotely assigned field devices, and IO supervisors (e.g. program-
+ming devices) are used for commissioning and diagnostics.
+The engineering of PROFINET IO is done similar to PROFIBUS. The field buses
+(i.e. Ethernet topologies) are assigned to control systems during configuration.
+The IO device is configured in the actual system based on the contents of its GS-
+DML file.
+After completion of the engineering, the installer loads the data for the expansion
+into the IO controller (PLC) and the IO controller assumes data exchange with the
+IO device.
+An IO device is addressed within PROFINET (and also possibly by external IT
+components) through its IP address and device name.
+Process data will be exchanged between the Controller and the Device via cyclic
+messages at the desired speed. Data can also be queried in acyclic way from an
+IO Supervisor system.
+General
+This document describes the usage of the PROFINET interface on the laser. With
+this interface, the laser is able to operate as a field bus device controlled by a
+PLC. The basic functionality provided by the PROFINET protocol is to start and
+stop laser markings, to select marking templates (jobs) and line/product detection
+configuration.
+Furthermore, the PLC can set variable content for a job to mark, do adjustments
+on the job, like position offset, scaling and rotation. For general operation, the
+laser state and current laser errors and warnings can be read out.
+
+11/20 - Index: ACPROFINET / Table of Contents iii
+5Sample Session ............................................................................................. 24
+4.4Notes ............................................................................................................ 23
+4.3.2Command Responses ...................................................................... 22
+4.3.1Command Definition ......................................................................... 20
+4.3Process Commands and Responses ........................................................... 20
+4.2Performance Metric ...................................................................................... 19
+4.1.3O2T Data (PLC to Laser) .................................................................. 17
+4.1.2T2O Data (Laser to PLC) .................................................................. 14
+4.1.1Data Types ........................................................................................ 13
+4.1Process Data Definition ................................................................................ 13
+4Process Data .................................................................................................. 13
+3Addressing of Process Data ......................................................................... 12
+2.3Software Download ........................................................................................ 8
+2.2Interface Configuration ................................................................................... 6
+2.1Connection between PLC and Laser .............................................................. 5
+2Installation of PROFINET ................................................................................ 5
+1Introduction ...................................................................................................... 4
+Table of Contents
+
+7vTmnFAGUPfO3oDhhoDl8o863h(CC.0nxFoFGUPOFPb-ambaNFIv.0awTNFrTxFPmwn-nxNF7v.-aen-gv.a
+vmbd-rd72od90e-4-pmdy2Ce9i
+MaRFAGUPfO 3oDhhoSD o38l8uE2yrOFIamaeaNFMjam0nNF)njiamsNFujn-ameNFBagamNFUga.mNFU.mwagTjnN
+umby-FMaRO 68ho636o86 c2vnFEnbvnj-amexNF2vnFGm.bneF.mweTi
+3ShhFp.bbn-F•T -nVaje
+8my7LmtI7-Ly2g-L4bgmbd
+LTTeF9a-nNFur
+6h3c3o3ht8FGUP
+gggihmbd-rd7i9-n
+ITgsj.wvbF h hNF1.enT/nbF2n0vmT-Tw.nxFum0:FAvnjn.mFjnCnjjneFbTFaxF1.enT/nbf
+P--Fj.wvbxFjnxnjVne:F2v.xFeT0 inmbF.xFbvnFgjTgnjbsFTCF1.enT/nbF2n0vmT-Tw.nxFum0:FameF0Tmba.mxF0TmC.enmb.a-Fame
+gjTgj.nbajsF.mCTjiab.TmFT4mneFdsF1.enT/nb:FPmsF ma bvTj.5neF0Tgs.mwNF xnFTjFe.x0-Tx jnFTCF.bF4.bvT bFgj.TjFgnjo
+i.xx.TmFTCF1.enT/nbF.xFxbj.0b-sFgjTv.d.bne:
+
+AL-79428
+Index: AC, November 2020
+Protocol Document
+PROFINET

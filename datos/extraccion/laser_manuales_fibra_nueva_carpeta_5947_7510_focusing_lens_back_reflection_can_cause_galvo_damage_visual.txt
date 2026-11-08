@@ -1,0 +1,84 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: manuales fibra\Nueva carpeta\5947 - 7510 Focusing Lens Back Reflection Can Cause Galvo Damage.pdf
+# cifrado=False bloques=3 caracteres=3014
+
+7510 Focusing Lens Back Reflection Can Cause Galvo Damage
+Header
+Videojet Technologies, Inc. Field Service Bulletin
+Article Number 000005947
+First Published
+7/14/2015 1:53 PM
+Date
+Last Published
+7/14/2015 1:53 PM
+Date
+Overview
+Overview
+Videojet Engineering has identified a potential problem on VJ7510 fiber laser units in which back
+reflection from focusing lenses can damage the galvos.
+Affected units include VJ7510 systems up to serial number Y1504/023 with CMark software
+1.2.0.7 or below.
+VJ7510 laser units with F100 focusing lens are most at risk.
+New CMark 1.2.0.8 and compatible SmartGraph 8.5.3.6.10 software is available to help prevent this
+issue.
+Installation of a new focusing lens and/or adaptor ring may be required..
+Working Distance/Marking Distance and available marking field have changed on some focusing
+lenses.
+Products
+LASER.7510; LASER.SOFTWARE.CMARK
+Affected
+Symptoms
+Symptoms
+The only known symptom of this issue is otherwise early failure of galvos.
+Corrective
+Action
+
+Corrective Action
+In addition to the new software, some hardware may need to be replaced to prevent back reflection.
+1. Update the CMark software to version 1.2.0.8.
+2. Replace/Install lens and/or adapter as necessary.
+Current Lens Actions Required
+1. Replace adapter.
+F100
+2. Replace lens.
+1. Install adapter.
+F160 (Discontinued)
+2. Replace lens.*
+1. Replace adapter.
+F163
+2. Replace lens.
+1. Install Adapter.
+F254
+2. Replace lens (optional)
+F420 1. No installation or replacement action.
+*The F160 focusing lens has been discontinued. Order and install the closest available focusing lens
+that will meet your requirements.
+3. Adjust the Working Distance (WD).
+Setting per Lens in mm
+Parameter F100 F163 F254 F420
+Working Distance(WD) 129.00 219.00 350.00 543.00
+Marking field size X-dimension 84.65 142.24 221.66 366.52
+Marking field size Y-dimension 107.40 181.86 267.81 498.47
+Size of max. area rectangle, X-dim. 59.86 119.81 162.07 314.51
+Size of max. area rectangle, Y-dim.  75.95 128.60 189.37 368.19
+Max. square, XY dim 66.48 123.97 174.13 338.19
+4. If using Smartgraph, update to v8.5.3.6.10.
+Items Required
+Items Required
+Lens and/or adapter as required by Corrective Actions.
+Part Number
+Item F100 F163 F254 F420
+Focusing Optics w/ Adapter Ring FO-112040 FO-112240 FO-112245 AL-94313
+Adapter Ring only AL-65467 FO-112401 FO-112402 N/A
+Objective/Focusing Lens Only FO-112409 FO-112410 AL-94312 AL-94313
+SD card reader to upgrade to CMark 1.2.0.8
+Send Questions
+July Aliento
+to:
+Disclaimer The contents of this email and any attachments are provided as a convenience to Videojet customers to highlight useful information and troubleshooting tips. When working with a product, always consult the product
+user manual and follow the product safety precautions and recommendations, including using Personal Protective Equipment when necessary. If you have any questions or are not experienced in using or servicing
+Videojet equipment, contact Videojet for assistance.
+Version 1
+FSB File 1
+
+FSB File 2
+FSB File 3

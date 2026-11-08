@@ -1,0 +1,461 @@
+# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: ENTRENAMIENTO\404756.RN.r03.SP14.pdf
+# cifrado=False bloques=25 caracteres=23863
+
+Videojet Software Release Notes
+Product: CLARiTY Laser Controller
+Part Number: 404756 r03 SP14
+Release Date: 29 June 2023
+Released By: James Cupit
+This document describes all of the changes to the product software since the previous
+revision. Changes are listed as new features and bug fixes, also included are all of the
+known problems that have been found.
+CLARiTY is a registered trademark.
+New Features Summary
+Required Software Version
+(or later)
+Case# Name Summary Description CCM CLARiSOFT
+E01188 ZJF support added ZJF Job Files Can Now Be Imported from USB Not Applicable Not Applicable
+E01190 7810 Q-Switch minimum Q-Switch now allows values down to 2µs Not Applicable 4.510 SP7
+value enhancement
+E01223 Added Hexadecimal Data Added the capability of including hexadecimal data format Not Applicable Not Applicable
+Format for QR Barcodes for QR Barcodes for laser printers
+E01230 Added Support for 7610 Clarity laser controller now supports connection to 7610 Not Applicable Not Applicable
+laser printers laser printers
+E01231 Added Support For 7330 and CLC now supports connection to 7330 and 7230 laser Not Applicable Not Applicable
+7230 Laser Printers printers
+E01255 Added Support for 7340, 7340 7440-3m and 7440-10m lasers are now supported Not Applicable Not Applicable
+7440-3m and 7440-10m by the Clarity laser controller
+laser printers
+E01279 Retain X Offset and Y Offset Retain X Offset and Y Offset settings on the connected Not Applicable Not Applicable
+settings on the connected laser when the current job is downloaded again
+laser.
+E01280 Ability to correctly read SD This fix resolves escalation TS2002979941 (Version One Not Applicable Not Applicable
+Cards formatted by entry B-08353 Comet Resetting IP Address After Re-
+Windows10 power)
+Software Release notes for Part Number 404756 r03 SP14 Page 1 of 25
+
+E01317 Improvements to 'Print This is an enhancement to Case # E01279 Not Applicable Not Applicable
+Position' Parameters
+E01319 VRS Enhancement & Bug Fix 'Allow Remote Access' now available Not Applicable Not Applicable
+E01355 New 'Local' Markset Control This resolves Version One entry B-08581 Enable mark Not Applicable Not Applicable
+Ability sets to be controlled locally in the CLC
+E01417 CLC Counter Reset This allows the user to reset a counter at the laser. Not Applicable Not Applicable
+Enhancement
+E01424 CLC Variable Text Update This allows the user to modify user-entered texts at the Not Applicable Not Applicable
+Enhancement laser.
+E01439 Further Enhancement for This allows the user to modify NiceLabel-generated Not Applicable Not Applicable
+CLC Variable Text Update variable texts at the laser.
+Software Release notes for Part Number 404756 r03 SP14 Page 2 of 25
+
+Bug Fix Summary
+Required Software Version
+(or later)
+Case# Name Summary Description CCM CLARiSOFT
+B01208 Web Server Improvements Various fixes and minor changes to the web server Not Applicable Not Applicable
+interface
+B01211 Restore All Jobs fix Fix for restoration of all jobs at once (that contain logos) Not Applicable Not Applicable
+B01247 CLC 'Maximum Fixed Speed' Maximum Line Speed now 20,000mm/s instead of Not Applicable Not Applicable
+Amendment 5,000mm/s
+B01256 CLC controller displays TS1906879469 - CLC controller displays “Program Not Applicable Not Applicable
+“Program Memory very low” Memory very low” after a period of time running against a
+7610 laser
+B01311 Memory Leak Fix Memory Leaks that would result in Printhead Absent Not Applicable Not Applicable
+Errors have now been fixed
+B01326 Fix for User Entered Counter This fix resolves B-08511 CLC JDA Counter Update issue Not Applicable Not Applicable
+values
+B01383 Improved CLC behaviour This resolves B-08701 / TS22021452718 "CLC Status Not Applicable Not Applicable
+when putting laser into Issue with Laser Front Panel 'Standby Mode'"
+'Standby' via front panel
+Software Release notes for Part Number 404756 r03 SP14 Page 3 of 25
+
+Case# E01188 NAME ZJF support added Type: Enhancement
+Summary Description Required Software Version (or later)
+ZJF Job Files Can Now Be Imported from USB
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+ZJF file produced by Videojet Connect Template Designer can now be imported into
+CLARiTY printers using a USB memory device. ZJF files may be placed in the 'Jobs' folder
+or the USB root folder.
+Software Release notes for Part Number 404756 r03 SP14 Page 4 of 25
+
+Case# E01190 NAME 7810 Q-Switch minimum value Type: Enhancement
+enhancement
+Summary Description Required Software Version (or later)
+Q-Switch now allows values down to 2µs
+CCM CLARiSOFT
+Not Applicable 4.510 SP7
+Details:
+With Previous revisions of software, Q-Switch parameter was capped at a minimum value
+of 9µs.
+Now, values are allowed down to 2µs, and can be modified in the User Interface.
+Note: CLARiSOFT 4.510 SP7 (or newer) will be required to create jobs with Q-Switch
+values of less than 9µs.
+Software Release notes for Part Number 404756 r03 SP14 Page 5 of 25
+
+Case# E01223 NAME Added Hexadecimal Data Format for Type: Enhancement
+QR Barcodes
+Summary Description Required Software Version (or later)
+Added the capability of including hexadecimal data format for QR Barcodes for
+laser printers
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+The capability of including the hexadecimal data format option for QR Barcodes for laser
+printers has been added. This enhancement will accept data up to the length specified in
+the QR barcode specification.
+NOTE:
+Merged fields are not supported, fixed text must be added directly to the QR barcode.
+It is recommended that only binary data cited in the defined section of ISO IEC 8859-1 is
+used.
+Software Release notes for Part Number 404756 r03 SP14 Page 6 of 25
+
+Case# E01230 NAME Added Support for 7610 laser printers Type: Enhancement
+Summary Description Required Software Version (or later)
+Clarity laser controller now supports connection to 7610 laser printers
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Clarity laser controller now supports connection to 7610 laser printers and their
+additional faults and warnings in accordance with Version1 item B-07306
+Software Release notes for Part Number 404756 r03 SP14 Page 7 of 25
+
+Case# E01231 NAME Added Support For 7330 and 7230 Type: Enhancement
+Laser Printers
+Summary Description Required Software Version (or later)
+CLC now supports connection to 7330 and 7230 laser printers
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+CLC now supports connection to 7330 and 7230 laser printers and can handle their
+additional faults and warnings in accordance with Version1 item B-08080
+Software Release notes for Part Number 404756 r03 SP14 Page 8 of 25
+
+Case# E01255 NAME Added Support for 7340, 7440-3m and Type: Enhancement
+7440-10m laser printers
+Summary Description Required Software Version (or later)
+7340 7440-3m and 7440-10m lasers are now supported by the Clarity laser
+controller
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Clarity laser controller now supports connection to 7340, 7440-3m and 7440-10m laser
+printers and their additional faults and warnings in accordance with Version1 item B-
+08234
+Software Release notes for Part Number 404756 r03 SP14 Page 9 of 25
+
+Case# E01279 NAME Retain X Offset and Y Offset settings Type: Enhancement
+on the connected laser.
+Summary Description Required Software Version (or later)
+Retain X Offset and Y Offset settings on the connected laser when the current job
+is downloaded again
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Retain X Offset and Y Offset settings on the connected laser when the current job is
+downloaded or pulled from an external database again.
+This feature is enabled through the Clarity Configuration Manager tool. To enable this
+feature the setting: Devices\Phds\1\Lasers\Laser\Configuration\RetainPrintPosition must
+be set to 1.
+Existing offsets will not be saved until an adjustment is made to them. Once an
+adjustment has been made to either the X Offset or the Y Offset the settings will be
+retained even if the Clarity Laser Controller is rebooted. Each job's settings will be
+retained even after the same job has been reloaded from either CLARiSOFT or CLARiNET.
+Offset settings are on a per job basis.
+To disable this feature set the RetainLaserPosition parameter to 0.
+Software Release notes for Part Number 404756 r03 SP14 Page 10 of 25
+
+Case# E01280 NAME Ability to correctly read SD Cards Type: Enhancement
+formatted by Windows10
+Summary Description Required Software Version (or later)
+This fix resolves escalation TS2002979941 (Version One entry B-08353 Comet
+Resetting IP Address After Re-power)
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Reports were received of CE6 CLARiTY printers resetting their IP Address to default
+values after a power-cycle.
+Root Cause was found to be how the SD Card had been formatted.
+It was discovered that Microsoft had changed the way formatting partitioned SD cards
+between Windows7 and Windows10 Operating Systems.
+Windows 7 writes a partition type of 0x06 and windows 10 writes 0x0E when formatting
+the card.
+CE6 CLARiTY did not read Type 0x0E formatted cards correctly in the boot sequence,
+which would result in an IP Address reset on power-cycle.
+This is now resolved by an update to the Operating System and CE6 CLARiTY printers no
+longer lose their IP Address after a power-cycle.
+Software Release notes for Part Number 404756 r03 SP14 Page 11 of 25
+
+Case# E01317 NAME Improvements to 'Print Position' Type: Enhancement
+Parameters
+Summary Description Required Software Version (or later)
+This is an enhancement to Case # E01279
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+This release includes Improvements to the retention of 'Print Position' Parameters.
+There is now a third method of retaining print setup parameters in CCFG behind:
+Devices\PHds\1\Lasers\Laser\Configuration\RetainPrintPosition
+This is a further enhancement to Case # E01279.
+0: "Rest On Job Download".
+X Offset, Y Offset, X Scale, Y Scale and Rotation are saved in the Ciff file when altered
+on the CLC interface. These changes are lost if the job is downloaded again, or changed
+for another job.
+1: "Job Name Specific, Retain X and Y Offsets".
+X Offset, Y Offset are stored against the Ciff File Name when altered on the CLC interface
+These parameters will be retained for individual jobs, even if the same job is re-
+downloaded and re-selected.
+The Third (new) option is.
+2: "All Manual Settings Retained".
+X Offset, Y Offset, X Scale, Y Scale and Rotation are saved as 'Global' parameters when
+altered on the CLC interface.
+Therefore, these settings will be applied to all jobs and retained even if the current job
+selection is changed or jobs are re-downloaded or if the CLC or laser are rebooted.
+Further changes to the settings using the CLC user interface (Home Screen/Print Position
+button) will be remembered in the same way.
+B-08439 "Extending the X-Y, Scale and Rotational offset selection option with Clarity
+Config/Clarinet/Clarisoft" is now resolved.
+Software Release notes for Part Number 404756 r03 SP14 Page 12 of 25
+
+Case# E01319 NAME VRS Enhancement & Bug Fix Type: Enhancement
+Summary Description Required Software Version (or later)
+'Allow Remote Access' now available
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+VRS parameters 'Serial Number', 'Friendly Name', and 'Allow Remote Access' (New) can be
+found behind Diagnostics/Control/Communications/TCPIP/Remote Service.
+Allow Remote Access behaves the same as all other CLARiTY printers that support it and
+allows remote support without the need to use CCFG.
+***The laser its-self will need to be re-powered for this change to take effect in the
+laser***
+B-08389 CLC granting remote Access is now resolved.
+It was noticed internally that the read-only 'Friendly Name' parameter was blank in a
+few previous SP's. This is now fixed and 'Friendly Name' now displays the expected
+information, as configured in the marking system.
+Software Release notes for Part Number 404756 r03 SP14 Page 13 of 25
+
+Case# E01355 NAME New 'Local' Markset Control Ability Type: Enhancement
+Summary Description Required Software Version (or later)
+This resolves Version One entry B-08581 Enable mark sets to be controlled
+locally in the CLC
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Previously, whenever a job was re-sent form CLARiSOFT/CLARiNET or re-loaded via USB
+stick any changes that the CLC had previously done to the Marksets in that job would be
+overwritten.
+In some circumstances this was undesirable.
+Now, there is a new parameter in CCFG under Devices/PHds/1/Lasers/Laser/Laser
+Configuration called 'Mark Set Control' which can be set to 'Remote' (Default setting) and
+'Local.
+When set to 'Remote' the Marksets will still be controlled by CLARiSOFT and Markset
+behaviour will remain as it always has been.
+When set to 'Local' further downloads of jobs from CLARiSOFT will not overwrite changes
+to the Marksets that may have occurred at CLC since the last download.
+Also, at the CLC user interface behind the 'Print Position' button there will be the ability
+to 'Delete a single Markset' and to 'Delete all unused Marksets'.
+Any Markset can be deleted, even Marksets associated with the currently loaded job..
+If a Markset attached to a job still in the CLC database is selected for 'Delete a single
+Markset' an "E6257 Selected Markset still used in a job(s)" WARNING will be presented to
+the user.
+Software Release notes for Part Number 404756 r03 SP14 Page 14 of 25
+
+Case# E01417 NAME CLC Counter Reset Enhancement Type: Enhancement
+Summary Description Required Software Version (or later)
+This allows the user to reset a counter at the laser.
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+It was reported that when the laser reset the counter, the counter in the CLC was not
+reset. On the next print trigger, the CLC sent down its existing counter value and
+overwrote the value that was reset at the laser by external input (B-08894).
+This software release now allows the laser to reset the counter value and that reset
+propagate to the CLC.
+NOTE: The new parameter, "CounterFromExternalPrinthead" under the "Imaging" folder,
+in CLARiTY Configuration Manager, must be set from 0 to 1 to ensure the CLC resets its
+counter value when the laser resets the counter.
+For laser to control counter reset, set the new parameter,
+"CounterFromExternalPrinthead" to 1.
+For CLC to control counter reset, set the new parameter,
+"CounterFromExternalPrinthead" to 0.
+Software Release notes for Part Number 404756 r03 SP14 Page 15 of 25
+
+Case# E01424 NAME CLC Variable Text Update Type: Enhancement
+Enhancement
+Summary Description Required Software Version (or later)
+This allows the user to modify user-entered texts at the laser.
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+It was reported that when modifying user-entered text fields at the laser, the user-
+entered texts in the CLC remained unchanged, causing the variable texts in the CLC and
+laser to go out of sync (B-08903).
+This software release now allows the laser to update user-entered text fields via
+SmartGraph and using SetVars and SetVarsAsync commands, and that update propagates
+to the CLC.
+NOTE: The new parameter, "CounterFromExternalPrinthead", under the "Imaging" folder,
+in CLARiTY Configuration Manager, must be set from 0 to 1 to ensure the CLC updates
+the user-entered texts when the user modifies the user-entered text fields at the laser.
+For laser to update user-entered texts, set the new parameter,
+"CounterFromExternalPrinthead" to 1.
+For CLC to control user-entered texts, set the new parameter,
+"CounterFromExternalPrinthead" to 0.
+Software Release notes for Part Number 404756 r03 SP14 Page 16 of 25
+
+Case# E01439 NAME Further Enhancement for CLC Type: Enhancement
+Variable Text Update
+Summary Description Required Software Version (or later)
+This allows the user to modify NiceLabel-generated variable texts at the laser.
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+It was reported when modifying variable texts designed in NiceLabel Designer 10 at the
+laser, the variable texts in the CLC were updated but not in the laser.
+This software release now allows the laser to update NiceLabel-generated variable texts
+via SmartGraph and using SetVars and SetVarsAsync commands, and that update
+propagates to both CLC and laser.
+NOTE: The new parameter, "CounterFromExternalPrinthead", under the "Imaging" folder,
+in CLARiTY Configuration Manager, must be set from 0 to 1 to ensure the CLC updates
+the variable texts when the user modifies variable text fields at the laser.
+For laser to update variable texts, set the new parameter,
+"CounterFromExternalPrinthead" to 1.
+For CLC to control variable texts, set the new parameter,
+"CounterFromExternalPrinthead" to 0.
+Software Release notes for Part Number 404756 r03 SP14 Page 17 of 25
+
+Case# B01208 NAME Web Server Improvements Type: Bug Fix
+Summary Description Required Software Version (or later)
+Various fixes and minor changes to the web server interface
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+This release includes a number of fixes and minor changes to the web server. These
+include:
+- Improved performance and faster response times and updates.
+- Improved layout and feature support for various CLARiTY screens (especially the home
+screen).
+- Added support to the CLARiTY status bar to display the USB and packaging check icons.
+- Improved support for right to left languages (job selection screen now displays
+correctly; text is now correctly aligned on most screens).
+- Protection against cross site scripting attacks.
+- Fixes for various crashes that could be caused by remote clients sending malformed
+requests.
+Software Release notes for Part Number 404756 r03 SP14 Page 18 of 25
+
+Case# B01211 NAME Restore All Jobs fix Type: Bug Fix
+Summary Description Required Software Version (or later)
+Fix for restoration of all jobs at once (that contain logos)
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Previously, if a number of jobs were stored in the Jobs folder on a USB stick that
+contained logos, and all were restored to the printer at the same time (by pressing
+'Restore All Job') then only the logos in the first job were restored.
+This could result in a number of jobs with missing logos.
+This is now resolved and 'Restore All Jobs' now works as expected if they contain logos.
+Software Release notes for Part Number 404756 r03 SP14 Page 19 of 25
+
+Case# B01247 NAME CLC 'Maximum Fixed Speed' Type: Bug Fix
+Amendment
+Summary Description Required Software Version (or later)
+Maximum Line Speed now 20,000mm/s instead of 5,000mm/s
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+Maximum Line Speed is a configurable parameter only displayed when the CLC is set up
+on a moving line.
+The parameter can be found at Tools/Setup/Printhead/Line Setup/Line Speed: Enter
+Fixed Speed
+Previously, the maximum value allowed for this parameter was 5,000mm/s, now it is
+20,000mm/s.
+Software Release notes for Part Number 404756 r03 SP14 Page 20 of 25
+
+Case# B01256 NAME CLC controller displays “Program Type: Bug Fix
+Memory very low”
+Summary Description Required Software Version (or later)
+TS1906879469 - CLC controller displays “Program Memory very low” after a
+period of time running against a 7610 laser
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+After a period of time running against the new quad core laser types the CLC would
+report “Program Memory very low”. The CLC became ususable at this point and would
+need rebooting. This was detailed in Version1 item B-08176. The software has now been
+modified to cope with the increased frequency of messages from the laser when running
+at very high pack per minute speeds.
+Software Release notes for Part Number 404756 r03 SP14 Page 21 of 25
+
+Case# B01311 NAME Memory Leak Fix Type: Bug Fix
+Summary Description Required Software Version (or later)
+Memory Leaks that would result in Printhead Absent Errors have now been fixed
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+It was found with previous software that with certain job files, E6220 Printhead Absent
+FAULT's would occur within a week of operation.
+This was due to the CLC running out of memory when certain job files were being
+printed.
+'Printer memory critically low' could also pop up in a separate window on the UI.
+This memory leak is resolved with r03 SP6 and B-08440 "TS20061034572 - Random
+printhead absent errors CLC" is now closed.
+Software Release notes for Part Number 404756 r03 SP14 Page 22 of 25
+
+Case# B01326 NAME Fix for User Entered Counter values Type: Bug Fix
+Summary Description Required Software Version (or later)
+This fix resolves B-08511 CLC JDA Counter Update issue
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+With previous revision of software, if Touch to Edit or Text Comms JDA command were
+used to update a User Entered Counter value then the change would not make it through
+to the laser its-self, leading to a mismatch between CLC display and what was being
+printed.
+This was not an issue with Text Comms SLA command.
+With r03 SP8 and newer software, User Entered Counter fields update as expected via
+Touch to Edit, JDA and SLA commands.
+Software Release notes for Part Number 404756 r03 SP14 Page 23 of 25
+
+Case# B01383 NAME Improved CLC behaviour when Type: Bug Fix
+putting laser into 'Standby' via front
+Summary Description Required Software Version (or later)
+This resolves B-08701 / TS22021452718 "CLC Status Issue with Laser Front
+Panel 'Standby Mode'"
+CCM CLARiSOFT
+Not Applicable Not Applicable
+Details:
+IF TCPIP lead was removed or the laser was powered off via the rear panel on/off switch
+then CLC would go into "E6220 Marking Head Absent FAULT" and allowed to come out of
+that fault soon after the action had been reversed.
+An issue was reported where putting a laser into 'Standby Mode' via the front panel would
+not put CLARiTY into E6220 FAULT and CLC would keep behaving as if the laser was still
+turned on and functioning.
+With r03 SP10 (and newer) CLC software, CLC also raises E6220 FAULT when putting laser
+into Standby and allows the fault to be cleared once the laser has re-booted.
+Software Release notes for Part Number 404756 r03 SP14 Page 24 of 25
+
+Update Procedure
+In order to update a machine with a previous software revision to the latest you should use
+a USB memory device or the latest CLARiTY Configuration Utility.
+a) To use a USB memory device, the CAB update file requires copy and pasting into a
+‘CLARITYupdate’ folder in the root of the USB device. Insert the USB device into the port
+on the printer and after a short while the screen may show an option to load new
+software, depending on the printer settings in CCFG. If it does select ‘Yes’ then select the
+required update, press ‘OK’ and follow on-screen instructions. If it does not, keep the USB
+device in the printer and on the printers User Interface scroll to
+Tools\Setup\Control\CLARiTY Update, select the required update and press ‘OK’ and follow
+on-screen instructions.
+b) To use the CLARiTY Configuration Utility, start the utility, and connect it to the printer
+you wish to update. Ensure that the CLARiTY Configuration Utility has a valid TCP/IP
+connection to the printer; this can be observed by the printer icon turning green, and the
+"Active Connection" message being displayed in the status pane.
+Right click on the name of the coder you wish to update and select the CLARiTY Update
+option. Then locate the file with the same name as the part number above, and the
+CLARiTY Update will then proceed automatically.
+Software Versions
+Bootloader 1.01.00 (0021)
+CLARiTY 4.03.00 (57367-JJ0170)
+Operating System 6.00.01 (0085)
+Known Issues with 404756 r03 SP14
+CLC does not reliably support Line Select mode, Queueing or Datafiles.
+Software Release notes for Part Number 404756 r03 SP14 Page 25 of 25
