@@ -67,6 +67,17 @@
         "CIJ",
         "LASER"
       ]
+    },
+    {
+      "id": "simplicity-global",
+      "descripcion": "Repositorio GLOBAL de contenido de Videojet «Proyecto-Simplicity-Global» (GitHub, publico): documentacion y CAD de TODAS las tecnologias, subido por partes (3 de 12 partes hasta hoy). Contenido actual: ensamble 3D STEP del gabinete 1580 (CIJ), competencia Leibinger (referencia) y seguridad industrial (transversal).",
+      "cubre": [
+        "TTO",
+        "CIJ",
+        "LASER"
+      ],
+      "estado_extraccion": "inventario de la carga actual en datos/simplicity_global_inventario.json (3 archivos, 274 MB declarados en la API); partes 4-12 pendientes de que el dueno las suba. El inventario se refresca por API con cada parte.",
+      "aviso": "el nombre «Simplicity» NO es solo el documento de makeup/inks: es el repositorio global de todas las tecnologias Videojet. Enfoque del proyecto: TTO, CIJ y LASER; el resto queda para ampliacion futura."
     }
   ],
   "dataset_vinculos": {
@@ -104,6 +115,13 @@
       "estado": "borrador",
       "fuente": "seccion 3 de las SDS Videojet descifradas (tools/leer_pdf_cifrado.py v2 -> tools/estructurar_sds_fichas.py)",
       "resumen": "547 de 563 SDS con composicion estructurada: 1.773 componentes con nombre, CAS, porcentaje y clasificacion GHS; version y fecha de revision de cada SDS. Ejemplo verificado: V471-D v6.07 (2/16/2026) = Metiletilcetona 78-93-3 40-<50%, Etanol 64-17-5 13-<20%, PGMEA 108-65-6 5-<10%, Xilenos 1330-20-7 1-<3%, bromuro de tetrabutilamonio 1643-19-2 1-<3%, colorante 92257-31-3 1-<3%."
+    },
+    "simplicity_global_inventario": {
+      "archivo": "datos/simplicity_global_inventario.json",
+      "tecnologia": "TTO+CIJ+LASER (global)",
+      "estado": "inventario-parcial",
+      "fuente": "API de GitHub del repo Proyecto-Simplicity-Global (rama main)",
+      "resumen": "repo global de contenido Videojet: 3 commits = partes 1-3 de 12; arbol actual con 3 archivos (CAD STEP 1580 ~86 MB, competencia Leibinger ~85 MB, seguridad industrial ~102 MB); clasificacion por tecnologia y foco TTO/CIJ/LASER."
     }
   },
   "tecnologias": [

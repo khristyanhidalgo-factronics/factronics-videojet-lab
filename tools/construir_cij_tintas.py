@@ -108,6 +108,12 @@ def principal():
     for f in sds.get('fichas', []):
         if f.get('componentes'):
             sds_por_slug[f['slug']] = f
+    props = cargas_json(os.path.join(DATOS, 'sds_propiedades.json')) or {}
+    props_por_slug = {f['slug']: f for f in props.get('fichas', [])
+                      if f.get('propiedades')}
+    CAMPOS_CLAVE = ('estado_fisico', 'color', 'ph', 'punto_inflamacion',
+                    'punto_ebullicion', 'densidad_relativa', 'presion_vapor',
+                    'viscosidad', 'volatilidad', 'solubilidad')
     brochure_txt = leer_txt(os.path.join(DATOS, 'extraccion',
                                          'cij_tintas_brochure_us.txt'))
     ts_txt = leer_txt(os.path.join(DATOS, 'extraccion',
@@ -175,10 +181,16 @@ def principal():
                 'fecha_revision': comp.get('fecha_revision'),
                 'componentes': [{'componente': c['componente'],
                                  'cas': c['cas'],
-                                 'porcentaje': c['porcentaje']}
+                                 'porcentaje': c['porcentaje'],
+                                 'estado': c.get('estado', 'borrador')}
                                 for c in comp['componentes']],
+                'componentes_verificados': comp.get('componentes_verificados'),
                 'estado': 'borrador',
             }
+            propiedades = props_por_slug.get(slug_desc, {}).get('propiedades') or {}
+            resumen = {k: propiedades[k] for k in CAMPOS_CLAVE if k in propiedades}
+            if resumen:
+                fichas_por_tinta[codigo][-1]['sds']['propiedades'] = resumen
 
     datos = {
         'producto': 'Dataset tintas CIJ Videojet v1',
@@ -196,6 +208,7 @@ def principal():
             'datos/cij_uso_solvente.json',
             'datos/fichas_tintas_inventario.json',
             'datos/sds_composicion.json',
+            'datos/sds_propiedades.json',
             'datos/extraccion/cij_tintas_brochure_us.txt',
             'datos/extraccion/cij_tinta_ts22051529684_v471_d.txt',
             'datos/extraccion/cij_tinta_ts22051529684_v471_d_dec.txt',
@@ -206,6 +219,12 @@ def principal():
             'total_fichas': sds.get('total_fichas'),
             'fichas_con_componentes': sds.get('fichas_con_componentes'),
             'total_componentes': sds.get('total_componentes'),
+            'componentes_con_cas_valido': sds.get('componentes_con_cas_valido'),
+            'propiedades': {
+                'archivo': 'datos/sds_propiedades.json',
+                'fichas_con_propiedades': props.get('fichas_con_propiedades'),
+                'total_campos': props.get('total_campos'),
+            },
             'estado': 'borrador',
         },
         'tintas': {},

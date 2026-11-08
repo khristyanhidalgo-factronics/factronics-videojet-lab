@@ -4,7 +4,7 @@
 - Recorre la carpeta 'ficha de tintas' (564 PDFs).
 - Descifra (RC4 handler estandar) + aplica CMaps ToUnicode.
 - Guarda datos/extraccion/cij_tinta_<slug>_descifrado.txt (UTF-8, con cabecera).
-- Resumen acumulado en datos/extraccion/_lote_fichas_descifrado_resumen.json
+- Resumen acumulado en datos/extraccion/_lote_fichas_visual_resumen.json
   (archivo, chars, cifrado, estado: ok / cifrado-no-soportado / sin-texto / error).
 - Los .txt viejos de 0 caracteres se conservan como evidencia del intento previo.
 """
@@ -15,13 +15,13 @@ import sys
 import traceback
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from leer_pdf_cifrado import extraer  # noqa: E402
+from leer_pdf_cifrado import extraer_visual  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CARPETA = (r'C:\Users\Sr_Hidalgo\Documents\Documentos Videojet'
            r'\DOCUMENTOS VIDEOJET ETERNOSSSSSSSSSSSSSSSSSSSSS\ficha de tintas')
 EXTRACCION = os.path.join(RAIZ, 'datos', 'extraccion')
-RESUMEN = os.path.join(EXTRACCION, '_lote_fichas_descifrado_resumen.json')
+RESUMEN = os.path.join(EXTRACCION, '_lote_fichas_visual_resumen.json')
 RENOMBRES = {
     'ts22051529684_information_for_v471_d': None,  # no aplica en esta carpeta
 }
@@ -46,11 +46,11 @@ def main():
             continue
         ruta = os.path.join(CARPETA, nombre)
         slug = slug_de(nombre)
-        destino = os.path.join(EXTRACCION, 'cij_tinta_%s_descifrado.txt' % slug)
+        destino = os.path.join(EXTRACCION, 'cij_tinta_%s_visual.txt' % slug)
         registro = {'archivo': nombre, 'slug': slug, 'chars': 0,
                     'cifrado': None, 'estado': 'error'}
         try:
-            partes, bloques, cifrado = extraer(ruta)
+            partes, bloques, cifrado = extraer_visual(ruta)
             texto = limpiar('\n\n'.join(partes))
             registro['cifrado'] = cifrado
             registro['bloques'] = bloques
@@ -62,9 +62,9 @@ def main():
             else:
                 registro['estado'] = 'sin-texto'
             with open(destino, 'w', encoding='utf-8') as f:
-                f.write('# EXTRAIDO POR tools/leer_pdf_cifrado.py v2 (stdlib) - fuente: %s\n'
+                f.write('# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 VISUAL (stdlib) - fuente: %s\n'
                         % nombre)
-                f.write('# cifrado=%s bloques=%d caracteres=%d\n\n'
+                f.write('# cifrado=%s bloques=%d orden=visual caracteres=%d\n\n'
                         % (cifrado, bloques, len(texto)))
                 f.write(texto)
         except RuntimeError as e:

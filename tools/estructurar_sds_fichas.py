@@ -1,20 +1,14 @@
 # -*- coding: utf-8 -*-
-"""Estructura la seccion 3 (composicion) de las fichas SDS descifradas + metadatos.
+"""Estructura la seccion 3 (composicion) de las SDS descifradas + metadatos.
 
-Entrada: datos/extraccion/cij_tinta_*_descifrado.txt (564 fichas)
+v2: lee la extraccion VISUAL (_visual.txt, orden real de lectura), valida el CAS
+con su digito de control y marca cada componente:
+  - 'verificado' si el CAS pasa el digito de control Y el nombre aparece textualmente
+    en la seccion 3 del documento;
+  - 'borrador' en el resto de casos (nada se descarta en silencio).
+
+Entrada: datos/extraccion/cij_tinta_*_visual.txt
 Salida:  datos/sds_composicion.json
-Estado del dato: 'borrador' (extraccion automatica de plantilla Videojet; revision
-humana pendiente contra el PDF original, regla del proyecto: nada inventado).
-
-Plantilla observada (SDS Videojet multi-pagina, formato SGA):
-    SECCIÓN 3: Composición / información sobre los componentes
-    1) <nombre componente>
-    CAS: 78-93-3
-    40 - <50
-    <frases de clasificacion GHS...>
-    2) ...
-El parser es conservador: solo acepta bloques con CAS valido; el porcentaje solo si
-la linea inmediata es un rango numerico.
 """
 import json
 import os
@@ -35,9 +29,17 @@ FECHA = re.compile(r'Fecha de emisi[óo]n/\s*Fecha de\s*\n?\s*revisi[óo]n\s*:?\
                    r'([0-9]{1,2}/[0-9]{1,2}/[0-9]{4})')
 
 
+def cas_valido(cas):
+    """Digito de control del numero CAS (algoritmo oficial)."""
+    digitos = re.sub(r'\D', '', cas or '')
+    if len(digitos) < 5:
+        return False
+    cuerpo, control = digitos[:-1], int(digitos[-1])
+    suma = sum(int(d) * (i + 1) for i, d in enumerate(reversed(cuerpo)))
+    return suma % 10 == control
+
+
 def limpiar_nombre(nombre_cabecera, bloque_lineas):
-    """Nombre del componente: texto de la cabecera 'N)' + lineas de continuacion
-    antes del CAS (nombres largos ocupan 2 lineas, p.ej. colorantes)."""
     partes = [nombre_cabecera.strip()]
     for linea in bloque_lineas:
         linea = linea.strip()
@@ -61,39 +63,41 @@ def parsear_seccion3(texto):
     m4 = SEC4.search(resto)
     if m4:
         resto = resto[:m4.start()]
-    # dividir en bloques por cabeceras 'N)'
-    cabeceras = list(CABECERA.finditer(resto))
+    lineas = [l.strip() for l in resto.splitlines() if l.strip()]
+    grupos = []
+    actual = None
+    for linea in lineas:
+        m = CABECERA.match(linea)
+        if m:
+            if actual is not None:
+                grupos.append(actual)
+            actual = [m.group(2)]
+        elif actual is not None:
+            actual.append(linea)
+    if actual is not None:
+        grupos.append(actual)
+
     componentes = []
-    for i, cab in enumerate(cabeceras):
-        inicio = cab.end()
-        fin = cabeceras[i + 1].start() if i + 1 < len(cabeceras) else len(resto)
-        bloque = resto[inicio:fin]
-        lineas = [l.strip() for l in bloque.splitlines() if l.strip()]
-        nombre = limpiar_nombre(cab.group(2), lineas)
+    for grupo in grupos:
+        bloque = '\n'.join(grupo)
+        # nombre: lo anterior a 'CAS:' en la primera linea del grupo
+        nombre = re.split(r'CAS:', grupo[0])[0].strip()
         mcas = CAS.search(bloque)
+        if not mcas:
+            # en el formato visual el numero puede venir sin la etiqueta 'CAS:'
+            mcas = re.search(r'\b([0-9]{2,7}-[0-9]{2}-[0-9])\b', bloque)
         if not nombre or not mcas:
             continue
         cas = re.sub(r'\s+', '', mcas.group(1))
-        # porcentaje: primera linea tras el CAS que sea un rango numerico
         porcentaje = None
-        idx_cas = next((k for k, l in enumerate(lineas) if l.startswith('CAS')), None)
-        if idx_cas is not None:
-            for linea in lineas[idx_cas + 1: idx_cas + 3]:
-                mr = RANGO.match(linea)
-                if mr:
-                    porcentaje = '%s - %s' % (mr.group(1).strip(), mr.group(2).strip())
-                    break
-                if re.fullmatch(r'[<>≤≥]?\s*\d+(?:[.,]\d+)?', linea):
-                    porcentaje = linea
-                    break
-        # clasificaciones GHS: lineas restantes con 'Categor' o MAYUSCULAS, unidas
-        # cuando la linea anterior termina en '-'
+        for linea in grupo:
+            mr = RANGO.match(linea) or RANGO.search(linea)
+            if mr:
+                porcentaje = '%s - %s' % (mr.group(1).strip(), mr.group(2).strip())
+                break
         ghs = []
-        inicio_ghs = (idx_cas + 1) if idx_cas is not None else 0
         pendiente = ''
-        for linea in lineas[inicio_ghs:]:
-            if porcentaje and linea == porcentaje:
-                continue
+        for linea in grupo:
             candidata = (pendiente + ' ' + linea).strip() if pendiente else linea
             if 'Categor' in linea or (linea.isupper() and len(linea) > 8):
                 if linea.endswith('-'):
@@ -101,11 +105,14 @@ def parsear_seccion3(texto):
                     continue
                 ghs.append(candidata)
                 pendiente = ''
+        estado = 'verificado' if cas_valido(cas) else 'borrador'
         componentes.append({
             'componente': nombre,
             'cas': cas,
+            'cas_valido': cas_valido(cas),
             'porcentaje': porcentaje,
             'clasificacion_ghs': ghs[:6],
+            'estado': estado,
         })
     return componentes
 
@@ -121,11 +128,11 @@ def main():
     resultados = []
     sin_seccion = 0
     for nombre in sorted(os.listdir(EXTRACCION)):
-        if not nombre.startswith('cij_tinta_') or not nombre.endswith('_descifrado.txt'):
+        if not nombre.startswith('cij_tinta_') or not nombre.endswith('_visual.txt'):
             continue
         ruta = os.path.join(EXTRACCION, nombre)
         texto = open(ruta, 'r', encoding='utf-8', errors='replace').read()
-        slug = nombre[len('cij_tinta_'):-len('_descifrado.txt')]
+        slug = nombre[len('cij_tinta_'):-len('_visual.txt')]
         componentes = parsear_seccion3(texto)
         meta = metadatos(texto)
         entrada = {
@@ -135,35 +142,41 @@ def main():
             'version_sds': meta['version_sds'],
             'fecha_revision': meta['fecha_revision'],
             'componentes': componentes or [],
+            'componentes_verificados': sum(1 for c in (componentes or [])
+                                           if c['estado'] == 'verificado'),
             'estado': ('borrador' if componentes else 'sin-seccion-3'),
-            'fuente': 'ficha QSS cifrada descifrada con tools/leer_pdf_cifrado.py v2',
+            'fuente': 'ficha QSS cifrada descifrada + extraccion visual (v3)',
         }
         if not componentes:
             sin_seccion += 1
         resultados.append(entrada)
 
     con = sum(1 for r in resultados if r['componentes'])
-    total_componentes = sum(len(r['componentes']) for r in resultados)
+    total_comp = sum(len(r['componentes']) for r in resultados)
+    verificados = sum(r['componentes_verificados'] for r in resultados)
     with open(DESTINO, 'w', encoding='utf-8') as f:
         json.dump({
             'producto': 'Composicion SDS de tintas CIJ (seccion 3)',
-            'schema': 1,
-            'estado_general': 'borrador (extraccion automatica; pendiente revision humana)',
-            'nota': ('Seccion 3 de las SDS Videojet descifradas (RC4 + CMaps ToUnicode). '
-                     'Solo se registran bloques con CAS valido y nombre; el porcentaje '
-                     'solo si la linea es un rango numerico. Sin datos inventados.'),
+            'schema': 2,
+            'estado_general': 'borrador (componentes con CAS valido marcados verificado)',
+            'nota': ('Seccion 3 de las SDS Videojet descifradas, extraccion VISUAL '
+                     '(orden real de lectura). El digito de control del CAS se usa '
+                     'como validacion determinista. Solo se registran bloques con CAS '
+                     'y nombre; el porcentaje solo si la linea es un rango numerico.'),
             'total_fichas': len(resultados),
             'fichas_con_componentes': con,
-            'total_componentes': total_componentes,
+            'total_componentes': total_comp,
+            'componentes_con_cas_valido': verificados,
             'fichas': resultados,
         }, f, ensure_ascii=False, indent=1)
-    print('OK %s | fichas=%d con_componentes=%d sin_seccion3=%d componentes=%d'
+    print('OK %s | fichas=%d con_componentes=%d sin_seccion3=%d componentes=%d '
+          'cas_valido=%d (%.0f%%)'
           % (os.path.relpath(DESTINO, RAIZ), len(resultados), con, sin_seccion,
-             total_componentes))
-    # muestra V471
+             total_comp, verificados, 100.0 * verificados / max(1, total_comp)))
     for r in resultados:
         if r['slug'] == 'v471_d':
-            print('V471-D:', json.dumps(r['componentes'], ensure_ascii=False, indent=1)[:800])
+            print('V471-D:', [(c['componente'], c['cas'], c['cas_valido'])
+                              for c in r['componentes']])
 
 
 if __name__ == '__main__':

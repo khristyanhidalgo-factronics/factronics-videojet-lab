@@ -392,22 +392,227 @@ def extraer(ruta):
     return partes, bloques, handler is not None
 
 
+# ---------------------------------------------------- extraccion POSICIONAL (v3)
+TOKENS_POS = re.compile(
+    rb'\((?:\\.|[^()\\])*\)'      # string literal
+    rb'|<[0-9A-Fa-f\s]*>'         # string hex
+    rb'|/[^\s/<>\[\](){}]+'       # nombre
+    rb'|[-+]?[0-9]*\.?[0-9]+'     # numero
+    rb'|\[|\]'                    # delimitadores de array
+    rb"|[A-Za-z*'\"]+"            # operador
+)
+
+
+def runs_de_flujo(dato, fuentes):
+    """Corridas de texto con coordenadas VISUALES: [(y, x, texto)]. Implementa el
+    modelo basico de matrices de texto (Tm/Td/TD/T*/TL/Tj/TJ/'/") y la matriz
+    grafica (q/Q/cm) para que el orden sea el visual real de la pagina."""
+    pila = []
+    en_array = None
+    runs = []
+    fuente = None
+    tamano = 10.0
+    tm = [1.0, 0.0, 0.0, 1.0, 0.0, 0.0]   # a b c d e f
+    lm = [1.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+    leading = 0.0
+    ctm = [1.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+    pila_ctm = []
+
+    def multiplicar(m1, m2):
+        a1, b1, c1, d1, e1, f1 = m1
+        a2, b2, c2, d2, e2, f2 = m2
+        return [a1 * a2 + b1 * c2, a1 * b2 + b1 * d2,
+                c1 * a2 + d1 * c2, c1 * b2 + d1 * d2,
+                e1 * a2 + f1 * c2 + e2, e1 * b2 + f1 * d2 + f2]
+
+    def emitir(txt):
+        if not txt or not txt.strip():
+            return
+        x = lm[4] + tm[4]
+        y = lm[5] + tm[5]
+        X = ctm[0] * x + ctm[2] * y + ctm[4]
+        Y = ctm[1] * x + ctm[3] * y + ctm[5]
+        runs.append((round(Y, 1), round(X, 1), txt))
+        # avance aproximado de la linea (sin metricas de fuente): ancho medio 0.45em
+        lm[4] += len(txt) * tamano * 0.45
+
+    for m in TOKENS_POS.finditer(dato):
+        t = m.group(0)
+        if t == b'[':
+            en_array = []
+            continue
+        if t == b']':
+            pila.append(('array', en_array or []))
+            en_array = None
+            continue
+        if t.startswith(b'(') or t.startswith(b'<'):
+            if t.startswith(b'('):
+                datos, _ = leer_literal_bytes(t, 0)
+            else:
+                hexd = re.sub(rb'\s+', b'', t[1:-1])
+                if len(hexd) % 2:
+                    hexd += b'0'
+                try:
+                    datos = bytes.fromhex(hexd.decode('ascii'))
+                except ValueError:
+                    datos = b''
+            texto = decodificar_bytes(datos, fuente)
+            if en_array is not None:
+                en_array.append(texto)
+            else:
+                pila.append(texto)
+            continue
+        if t.startswith(b'/'):
+            pila.append(('nombre', t[1:].decode('latin-1')))
+            continue
+        if re.fullmatch(rb'[-+]?[0-9]*\.?[0-9]+', t):
+            valor = float(t)
+            if en_array is not None:
+                en_array.append(valor)
+            else:
+                pila.append(valor)
+            continue
+
+        op = t.decode('latin-1')
+        numeros = [x for x in pila if isinstance(x, float)]
+        textos = [x for x in pila if isinstance(x, str)]
+        nombres = [x for x in pila if isinstance(x, tuple)]
+        arrays = [x[1] for x in pila if isinstance(x, tuple) and x[0] == 'array']
+
+        if op == 'q':
+            pila_ctm.append(list(ctm))
+        elif op == 'Q':
+            if pila_ctm:
+                ctm = pila_ctm.pop()
+        elif op == 'cm' and len(numeros) >= 6:
+            ctm = multiplicar(ctm, list(numeros[-6:]))
+        elif op == 'Tf':
+            tamano = numeros[-1] if numeros else 10.0
+            fuente = fuentes.get(nombres[-1][1]) if nombres else fuente
+        elif op == 'Tm' and len(numeros) >= 6:
+            tm = list(numeros[-6:])
+            lm = list(numeros[-6:])
+        elif op in ('Td', 'TD') and len(numeros) >= 2:
+            tx, ty = numeros[-2], numeros[-1]
+            lm[4] += tx
+            lm[5] += ty
+            if op == 'TD':
+                leading = -ty
+        elif op == 'T*':
+            lm[5] -= leading if leading else tamano * 1.2
+        elif op == 'TL' and numeros:
+            leading = numeros[-1]
+        elif op == 'Tj' and textos:
+            emitir(textos[-1])
+        elif op == 'TJ' and arrays:
+            # un TJ es UNA corrida de texto: sus strings se concatenan sin espacios
+            # (los numeros intermedios son ajustes de kerning, no separadores)
+            texto = ''.join(e for e in arrays[-1] if isinstance(e, str))
+            emitir(texto)
+        elif op == "'" and textos:
+            lm[5] -= leading if leading else tamano * 1.2
+            emitir(textos[-1])
+        elif op == '"' and textos:
+            lm[5] -= leading if leading else tamano * 1.2
+            emitir(textos[-1])
+        pila = []
+    return runs
+
+
+def lineas_de_runs(runs, tolerancia_y=1.5):
+    """Agrupa corridas por linea visual (y) y ordena por x dentro de cada linea."""
+    if not runs:
+        return ''
+    ordenados = sorted(runs, key=lambda r: (-r[0], r[1]))
+    lineas = []
+    actual = None
+    for y, x, txt in ordenados:
+        if actual is None or abs(y - actual[0]) > tolerancia_y:
+            actual = [y, [(x, txt)]]
+            lineas.append(actual)
+        else:
+            actual[1].append((x, txt))
+    salida = []
+    for _, celdas in lineas:
+        celdas.sort(key=lambda c: c[0])
+        partes = []
+        fin_anterior = None
+        for x, txt in celdas:
+            if fin_anterior is not None and x - fin_anterior > 2.5:
+                partes.append(' ')
+            partes.append(txt)
+            fin_anterior = x + max(1.0, len(txt) * 2.6)
+        salida.append(''.join(partes).rstrip())
+    return '\n'.join(salida)
+
+
+def extraer_visual(ruta):
+    """Como extraer() pero ordena el texto por posicion (lectura visual real)."""
+    b = open(ruta, 'rb').read()
+    handler = leer_handler(b)
+    if handler is None and b'/Encrypt' in b:
+        raise RuntimeError('PDF cifrado no soportado (AES u otro filtro)')
+    dicts = objetos_dict(b)
+    if handler:
+        dicts.update(objetos_objstm(b, dicts, handler))
+    fuentes = fuentes_del_pdf(b, dicts, handler) if handler else {}
+    partes = []
+    bloques = 0
+    for m in PATRON_STREAM.finditer(b):
+        cabecera = b[max(0, m.start() - 320):m.start()]
+        om = None
+        for cand in PATRON_OBJ.finditer(cabecera):
+            om = cand
+        if om is None:
+            continue
+        num = int(om.group(1))
+        dicc = cabecera[om.end():]
+        if b'/Image' in dicc or b'/ObjStm' in dicc or b'/FontFile' in dicc:
+            continue
+        if b'FlateDecode' not in dicc:
+            continue
+        inicio = m.end()
+        fin = b.find(b'endstream', inicio)
+        if fin < 0:
+            continue
+        crudo = b[inicio:fin]
+        if handler:
+            crudo = handler.descifrar(num, 0, crudo)
+        try:
+            dato = zlib.decompressobj().decompress(crudo)
+        except zlib.error:
+            continue
+        if b'BT' not in dato:
+            continue
+        bloques += 1
+        runs = runs_de_flujo(dato, fuentes)
+        t = lineas_de_runs(runs)
+        if t.strip():
+            partes.append(t)
+    return partes, bloques, handler is not None
+
+
 def main():
     if len(sys.argv) < 3:
-        print('Uso: python tools/leer_pdf_cifrado.py ORIGEN.pdf SALIDA.txt')
+        print('Uso: python tools/leer_pdf_cifrado.py ORIGEN.pdf SALIDA.txt [--visual]')
         sys.exit(1)
     origen, salida = sys.argv[1], sys.argv[2]
-    partes, bloques, cifrado = extraer(origen)
+    visual = '--visual' in sys.argv[3:]
+    if visual:
+        partes, bloques, cifrado = extraer_visual(origen)
+    else:
+        partes, bloques, cifrado = extraer(origen)
     texto = '\n\n'.join(partes)
     texto = re.sub(r'[ \t]+', ' ', texto)
     texto = re.sub(r'\n{3,}', '\n\n', texto).strip()
     with open(salida, 'w', encoding='utf-8') as f:
-        f.write('# EXTRAIDO POR tools/leer_pdf_cifrado.py v2 (stdlib) - fuente: %s\n'
+        f.write('# EXTRAIDO POR tools/leer_pdf_cifrado.py v3 (stdlib) - fuente: %s\n'
                 % os.path.basename(origen))
-        f.write('# cifrado=%s flate_texto=%d caracteres=%d\n\n'
-                % (cifrado, bloques, len(texto)))
+        f.write('# cifrado=%s flate_texto=%d orden=%s caracteres=%d\n\n'
+                % (cifrado, bloques, 'visual' if visual else 'stream', len(texto)))
         f.write(texto)
-    print('OK %s bloques=%d chars=%d cifrado=%s' % (salida, bloques, len(texto), cifrado))
+    print('OK %s bloques=%d chars=%d cifrado=%s orden=%s'
+          % (salida, bloques, len(texto), cifrado, 'visual' if visual else 'stream'))
 
 
 if __name__ == '__main__':

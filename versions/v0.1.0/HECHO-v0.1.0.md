@@ -42,3 +42,7 @@
 - [x] **Composicion SDS estructurada** (`tools/estructurar_sds_fichas.py`): `datos/sds_composicion.json` - 547 de 563 fichas con seccion 3, **1.773 componentes** con CAS, porcentaje y clasificacion GHS, mas version/fecha de cada SDS. Estado: borrador (revision humana pendiente).
 - [x] **`datos/cij_tintas.json` regenerado**: cada ficha QSS lleva su SDS (version, fecha, componentes); V471-D y V471-K v6.07 con 6 componentes cada una; 134 tintas / 132 con curvas verificadas.
 - [x] Catalogo `datos/catalogo.json`: fuente cij-tintas con el descifrado completo (562 RC4 + 2 sin cifrado), vinculos `fichas_tintas_inventario` y `sds_composicion`, nota de fuentes actualizada.
+- [x] **Extractor visual v3** (`tools/leer_pdf_cifrado.py --visual`): matrices Tm/cm + orden de lectura real; 564/564 fichas en `*_visual.txt` (17.274.230 chars). Inventario: 564/564 `legible-visual`.
+- [x] **`datos/sds_propiedades.json`**: sección 9 de 561 fichas, 12.728 campos (pH, inflamación, ebullición, densidad, presión de vapor, viscosidad, volatilidad...), integrados por ficha en `cij_tintas.json`. Estado: borrador.
+- [x] **Composición con CAS validado**: 1.773/1.773 componentes con dígito de control CAS correcto → `estado: verificado` por componente (`cas_valido`); 547 fichas con composición.
+- [x] **Repositorio global `Proyecto-Simplicity-Global` registrado** como fuente: `datos/simplicity_global_inventario.json` (3/12 partes, 3 archivos clasificados por tecnología) + catálogo actualizado; alcance TTO/CIJ/LASER documentado.

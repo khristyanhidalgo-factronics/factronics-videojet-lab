@@ -47,9 +47,11 @@ def principal():
             txts[os.path.splitext(nombre)[0]] = os.path.join(EXTRACCION, nombre)
 
     entradas = []
-    resumen = {'legible-descifrado': 0, 'texto-escaso-descifrado': 0,
-               'sin-texto-descifrado': 0, 'legible': 0, 'texto-escaso': 0,
-               'sin-texto-sacado': 0, 'sin-extraccion': 0}
+    resumen = {'legible-visual': 0, 'texto-escaso-visual': 0,
+               'sin-texto-visual': 0, 'legible-descifrado': 0,
+               'texto-escaso-descifrado': 0, 'sin-texto-descifrado': 0,
+               'legible': 0, 'texto-escaso': 0, 'sin-texto-sacado': 0,
+               'sin-extraccion': 0}
     for nombre in sorted(os.listdir(CARPETA)):
         if not nombre.lower().endswith('.pdf'):
             continue
@@ -57,6 +59,7 @@ def principal():
         clave_legacy = RENOMBRES.get(slug, 'cij_tinta_%s' % slug)
         ruta_txt = txts.get(clave_legacy)
         ruta_desc = txts.get('cij_tinta_%s_descifrado' % slug)
+        ruta_vis = txts.get('cij_tinta_%s_visual' % slug)
         entrada = {
             'archivo': nombre,
             'slug': slug,
@@ -66,6 +69,8 @@ def principal():
             'bloques': 0,
             'txt_descifrado': None,
             'caracteres_descifrado': 0,
+            'txt_visual': None,
+            'caracteres_visual': 0,
             'estado_extraccion': 'sin-extraccion',
         }
 
@@ -103,6 +108,16 @@ def principal():
                 entrada['estado_extraccion'] = 'texto-escaso-descifrado'
             else:
                 entrada['estado_extraccion'] = 'sin-texto-descifrado'
+        if ruta_vis:
+            cuerpo, bloques = leer_cuerpo_y_bloques(ruta_vis)
+            entrada['txt_visual'] = os.path.basename(ruta_vis)
+            entrada['caracteres_visual'] = len(cuerpo)
+            if len(cuerpo) >= 200:
+                entrada['estado_extraccion'] = 'legible-visual'
+            elif len(cuerpo) > 0:
+                entrada['estado_extraccion'] = 'texto-escaso-visual'
+            else:
+                entrada['estado_extraccion'] = 'sin-texto-visual'
         resumen[entrada['estado_extraccion']] += 1
         entradas.append(entrada)
 
@@ -116,9 +131,12 @@ def principal():
                  'con el handler estandar (RC4 128 bits, contrasena de usuario vacia) se '
                  'descifraron con tools/leer_pdf_cifrado.py v2 y sus CMaps ToUnicode -> '
                  'extraccion <slug>_descifrado.txt. Los .txt de 0 caracteres previos se '
-                 'conservan como evidencia del intento original. Estados: '
-                 'legible-descifrado / texto-escaso-descifrado / sin-texto-descifrado / '
-                 'legible / texto-escaso / sin-texto-sacado / sin-extraccion.'),
+                 'conservan como evidencia del intento original. Ademas se genero una '
+                 'extraccion VISUAL (_visual.txt, v3: coordenadas Tm/cm + orden real de '
+                 'lectura) que es la preferente. Estados: legible-visual / '
+                 'texto-escaso-visual / sin-texto-visual / legible-descifrado / '
+                 'texto-escaso-descifrado / sin-texto-descifrado / legible / '
+                 'texto-escaso / sin-texto-sacado / sin-extraccion.'),
         'fichas': entradas,
     }
     with open(DESTINO, 'w', encoding='utf-8') as f:

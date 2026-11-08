@@ -1,0 +1,73 @@
+{
+ "producto": "Inventario del repositorio global de contenido Videojet (Simplicity Global)",
+ "schema": 1,
+ "fuente": {
+  "nombre": "Proyecto-Simplicity-Global",
+  "url": "https://github.com/khristyanhidalgo-factronics/Proyecto-Simplicity-Global",
+  "descripcion_github": "Uso para la recacion y buscada de informacion de simplicity",
+  "visibilidad": "publico",
+  "rama": "main",
+  "tamano_kb": 187262,
+  "creado": "2026-10-09T14:52:18Z",
+  "ultimo_push": "2026-10-09T15:35:05Z",
+  "estado": "carga parcial: 3 de 12 partes subidas (segun mensajes de commit)"
+ },
+ "alcance": {
+  "tecnologias_cubiertas": "todas las tecnologias de Videojet (global)",
+  "foco_actual_del_proyecto": [
+   "TTO",
+   "CIJ",
+   "LASER"
+  ],
+  "nota": "El resto de tecnologias queda para ampliacion futura (ver ROADMAP); el contenido se incorporara por partes a medida que el dueno las suba."
+ },
+ "commits": [
+  {
+   "parte": "1 de 12",
+   "mensaje": "Contenido parte 1 de 12 (98 MB)",
+   "fecha": "2026-10-09T15:27:52Z",
+   "sha": "d70a95adff4a60fe6f8ab6dd72ed5a43c9f001cc"
+  },
+  {
+   "parte": "2 de 12",
+   "mensaje": "Contenido parte 2 de 12 (83 MB)",
+   "fecha": "2026-10-09T15:33:10Z",
+   "sha": "ca53b4f85ccc2b4b9f7a833f565b80889f367aeb"
+  },
+  {
+   "parte": "3 de 12",
+   "mensaje": "Contenido parte 3 de 12 (81 MB)",
+   "fecha": "2026-10-09T15:34:34Z",
+   "sha": "63f113f2295fd8413febac8ffe93a5f25c2c769e"
+  }
+ ],
+ "arbol_actual": [
+  {
+   "ruta": "cad/3D 1580CABINET ASSY.STEP",
+   "bytes": 86346342,
+   "tipo": "CAD 3D (STEP)",
+   "tecnologia": "CIJ",
+   "detalle": "ensamble 3D del gabinete 1580 (serie 1000 CIJ)"
+  },
+  {
+   "ruta": "docs/competencia/002.COMPETENCIA LEIBINGER.pdf",
+   "bytes": 85402836,
+   "tipo": "PDF documentacion",
+   "tecnologia": "competencia",
+   "detalle": "material de competencia (Leibinger) - referencia, no es Videojet"
+  },
+  {
+   "ruta": "docs/seguridad/002.SEGURIDAD INDUSTRIAL.pdf",
+   "bytes": 102351104,
+   "tipo": "PDF documentacion",
+   "tecnologia": "transversal",
+   "detalle": "seguridad industrial (aplicable a TTO/CIJ/LASER)"
+  }
+ ],
+ "pendiente": {
+  "partes_por_subir": "4 a 12",
+  "actualizacion": "cada vez que el dueno suba una parte nueva se refresca este inventario por la API y se clasifican los archivos por tecnologia"
+ },
+ "estado_general": "inventario de la carga actual (parcial) - verificado por API",
+ "fecha_registro": "2026-11-08"
+}
