@@ -153,6 +153,13 @@
       "estado": "borrador",
       "fuente": "textos extraidos de la carpeta Boletines Tecnicos (curso 6x30)",
       "resumen": "113 boletines indexados (63 con titulo fiable; {'legible': 82, 'dudoso': 28, 'no-legible': 3}). Los no-legibles se conservan como evidencia sin inventar titulos."
+    },
+    "codigos_error": {
+      "archivo": "datos/codigos_error.json",
+      "tecnologia": "LASER+TTO",
+      "estado": "borrador",
+      "fuente": "listas de error de ALLPRINT/Videojet (18234 Laser Error Codes, Error List 3140/3340/3640, error_messages_blueberry) + boletines TTO (titulos y nombres de archivo con E####/W####)",
+      "resumen": "231 codigos (225 LASER con ID de 5 digitos y clase cuando aparece; 6 TTO E####). Se guarda codigo + contexto; no se reconstruyen tablas de causa/remedio. Requiere revision antes de publicar como firme."
     }
   },
   "tecnologias": [

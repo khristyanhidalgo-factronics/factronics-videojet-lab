@@ -54,3 +54,4 @@
 - [x] **`datos/laser_modelos.json`**: 21 modelos LASER con archivos de evidencia y menciones; CO2 y fibra separados; terceros (ALLPRINT, sensores) aparte.
 - [x] **`datos/tto_boletines.json`**: índice de 113 boletines con legibilidad medida y 63 títulos fiables.
 - [x] **OCR nativo**: `tools/ocr_windows.ps1` + `tools/lote_laser_ocr.py` — 29 escaneados con JPEG procesados (17 con texto, +16.277 chars; 12 sin resultado).
+- [x] **`datos/codigos_error.json`**: 231 codigos de error (225 LASER + 6 TTO) con contexto y clase; extraccion conservadora, estado borrador.

@@ -30,7 +30,8 @@
 - [ ] **Ampliar `cij_tintas.json`**: fichas QSS completas (composición/datos regulatorios) más allá de base+curva.
 - [ ] **Refrescar `simplicity_global_inventario.json`** cuando el dueño suba las partes 4-12 del repo global (hoy 3/12) y clasificar por tecnología.
 - [ ] **Muestreo visual de composiciones SDS** (nombres/porcentajes) contra los PDFs; el CAS ya está validado al 100%.
-- [ ] **Datasets derivados de manuales** láser/TTO (tablas de partes, códigos de error, mantenimiento) desde el texto ya extraído.
+- [x] ~~**Datasets derivados de manuales** (códigos de error)~~ → `datos/codigos_error.json` (231).
+- [ ] **Tablas de partes y mantenimiento** de manuales láser/TTO (siguiente derivado; requiere parseo de tablas).
 - [ ] **Revisar títulos de boletines TTO** marcados dudosos/no-legibles (63 títulos fiables de 113).
 
 ## Fase 2 — App web offline (presentar en v0.2.0–v0.3.0)
