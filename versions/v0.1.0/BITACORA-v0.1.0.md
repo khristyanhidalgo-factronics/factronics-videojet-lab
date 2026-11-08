@@ -13,3 +13,6 @@
 | 2026-11-08 | Creada la landing de fundación en `docs/index.html` (tema claro/oscuro/sistema, animaciones suaves, enlaces a notas y roadmap, sección de descarga de APK marcada "en desarrollo"). |
 | 2026-11-08 | Creado `datos/catalogo.json` semilla con tecnologías/modelos/tintas/niveles **tomados de los documentos del dueño** y estados de validación honestos. |
 | 2026-11-08 | Creado el logo único del proyecto como SVG vectorial (cabezal que emite una gota formando la "V" + trazo láser). |
+| 2026-11-08 | **Repositorio fundado en GitHub:** https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab — push inicial correcto (commit `3aea8f8`). |
+| 2026-11-08 | **GitHub Pages habilitado** (rama `main`, carpeta `/docs`) → https://khristyanhidalgo-factronics.github.io/factronics-videojet-lab/ |
+| 2026-11-08 | Bitácora y HECHO actualizados después del push para reflejar el resultado real (la memoria registra incluso su propia actualización). |

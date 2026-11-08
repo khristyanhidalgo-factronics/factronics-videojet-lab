@@ -18,3 +18,8 @@
 ## Interfaz
 - [x] Landing pública `docs/index.html`: tema claro/oscuro/sistema con persistencia, animaciones al hacer scroll, secciones de características, versión actual, notas (5 tipos enlazadas), roadmap y descargas.
 - [x] Logo único del proyecto dibujado a mano como **SVG** (`docs/assets/logo.svg`), integrado al landing y favicon.
+
+## Publicación (fundación)
+- [x] Repositorio de GitHub creado y sincronizado con push inicial (commit `3aea8f8`): <https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab>
+- [x] GitHub Pages activo (rama `main`, carpeta `/docs`) → <https://khristyanhidalgo-factronics.github.io/factronics-videojet-lab/>
+- [x] Notas de versión live en el repo y enlazadas desde la landing (publicadas).
