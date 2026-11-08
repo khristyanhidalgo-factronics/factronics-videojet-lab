@@ -2,13 +2,14 @@
   "producto": "Factronics Videojet Lab",
   "schema": 1,
   "actualizado": "2026-11-08",
-  "estado_general": "semilla",
-  "nota_de_fuentes": "Este catalogo solo contiene datos tomados de los documentos del equipo (inventario de carpetas del dueno) y logicamente de nombres de carpeta. Ningun dato inventado. Cada grupo lleva su estado: 'catalogado-por-fuentes' | 'por-definir'. En Fase 1 se extraen los datos detallados (numeros de parte, velocidades, consumos) de los PDF/Excel.",
+  "estado_general": "en-extraccion",
+  "nota_de_fuentes": "Fase 1 en curso. Este catalogo inventaria las fuentes y vincula los datasets derivados (que viven en su propio archivo: fuente unica por tema). Datos ya extraidos de fuentes del equipo: partes TTO 6x30 (Excel de curso) y curva de uso de solvente CIJ VJ1210/V401. Ningun dato inventado; estados de dato: 'verificado' | 'borrador' | 'por-definir'.",
   "fuentes_locales_descripcion": [
     {
       "id": "cij-solventes",
-      "descripcion": "17 dosieres de 'uso de solvente' por modelo CIJ (consumos de solvente oficiales por modelo)",
-      "cubre": ["CIJ"]
+      "descripcion": "17 carpetas de 'uso de solvente' por modelo CIJ (consumos de solvente oficiales por modelo): 46 PDFs 'CIJ Makeup Usage Model v14'",
+      "cubre": ["CIJ"],
+      "estado_extraccion": "1 de 46 PDFs procesado (VJ1210 con V401); acumulador listo en datos/cij_uso_solvente.json"
     },
     {
       "id": "cij-velocidades",
@@ -27,8 +28,10 @@
     },
     {
       "id": "cij-tintas",
-      "descripcion": "Fichas de tintas CIJ (V471, V4250, V4263, V4264...) y hoja maestra de tintas en Excel",
-      "cubre": ["CIJ"]
+      "descripcion": "Fichas de tintas CIJ (V471, V4250, V4263, V4264...) y listados tabulares de equivalencia de tintas y makeup 'Simplicity' de la serie 1000 (PDF)",
+      "cubre": ["CIJ"],
+      "estado_extraccion": "parcial: ficha V4250 extraida (borrador); los 2 listados tabulares (EquivalenciaTintasVJ1000, Simplicity Makeup) salieron con fuentes CID cifradas (texto ilegible) — pendiente herramienta de remapeo CID u OCR",
+      "aviso": "no existe un Excel de tintas en las carpetas del equipo (verificado por busqueda del sistema de archivos)"
     },
     {
       "id": "tto-curso-6x30",
@@ -46,6 +49,22 @@
       "cubre": ["TTO", "CIJ", "LASER"]
     }
   ],
+  "dataset_vinculos": {
+    "partes_tto": {
+      "archivo": "datos/partes_tto.json",
+      "tecnologia": "TTO",
+      "estado": "borrador",
+      "fuente": "Excel de curso TTO 6x30 (material interno del equipo): 3 archivos leidos con tools/leer_excel.py",
+      "resumen": "120 numeros de parte unicos de TTO 6330/6530 (anchos 32/53/107 mm), descripciones portugues/espanol/ingles conservadas por fuente, y spares recomendados por tamanio de flota (5/10/20/40 equipos)"
+    },
+    "cij_uso_solvente": {
+      "archivo": "datos/cij_uso_solvente.json",
+      "tecnologia": "CIJ",
+      "estado": "verificado",
+      "fuente": "CIJ Makeup Usage Model v14 (documento oficial del modelo, del equipo)",
+      "resumen": "VJ1210 con V401 (base MEK): curva de 10 a 40 C desde 5,1 hasta 16,7 ml/hr; cuadro 11,2 ml/hr a 30 C; 89 hrs por litro; cartucho 750 ml = 67 hrs. Referencia cruzada curva/cuadro: coincide. 45 PDFs por procesar en Fase 1."
+    }
+  },
   "tecnologias": [
     {
       "id": "TTO",
@@ -81,7 +100,11 @@
   ],
   "tintas_cij_documentadas": [
     { "id": "V471", "nombre_comercial": "V471", "estado": "ficha-disponible", "usos": "por-definir" },
-    { "id": "V4250", "nombre_comercial": "V4250", "estado": "ficha-disponible", "usos": "por-definir" },
+    { "id": "V4250", "nombre_comercial": "V4250", "estado": "borrador", "usos": "ver-descripcion-borrador",
+      "descripcion_borrador": "tinta negra con base de solvente tipo EK, alternativa a la V4210 con menor consumo de makeup (el documento indica ~50% menos que la V4210); resiste la formacion de condensacion; aplicaciones indicadas: vidrio, botellas plasticas y latas; ambientes humedos de llenado, refrigeracion y congelacion; para impresoras CIJ Videojet",
+      "fuente_doc": "ss-ink-v4250-us.pdf (documento oficial de Videojet presente en las carpetas del equipo)",
+      "extraido_de": "datos/extraccion/cij_tinta_v4250_ficha.txt",
+      "aviso": "extraccion parcial: el PDF usa fuentes CID con mapeo incompleto (perdida de caracteres); datos pendientes de revision humana contra el PDF original" },
     { "id": "V4263", "nombre_comercial": "V4263", "estado": "ficha-disponible", "usos": "por-definir" },
     { "id": "V4264", "nombre_comercial": "V4264", "estado": "ficha-disponible", "usos": "por-definir" }
   ],

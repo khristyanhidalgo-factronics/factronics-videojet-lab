@@ -1,0 +1,97 @@
+{
+ "producto": "Factronics Videojet Lab",
+ "schema": 1,
+ "actualizado": "2026-11-08",
+ "estado_general": "en-extraccion",
+ "nota": "Uso de solvente (makeup) CIJ por modelo y tinta, tomado de los documentos oficiales CIJ Makeup Usage Model v14 del equipo. Es una ESTIMACION (asi lo declara el propio documento): influyen solvente/base, temperatura, humedad, temperatura de boquilla, recirculacion, condensador y bomba.",
+ "fuentes": [
+  "documentos de uso de solvente del equipo (17 modelos, 46 PDFs v14)"
+ ],
+ "modelos": [
+  {
+   "modelo": "VJ1210",
+   "tinta": "V401",
+   "base_quimica": "MEK",
+   "tinta_documentada": "V401",
+   "curva": [
+    {
+     "temp_c": 10,
+     "uso_ml_hr": 5.1
+    },
+    {
+     "temp_c": 12,
+     "uso_ml_hr": 5.5
+    },
+    {
+     "temp_c": 14,
+     "uso_ml_hr": 5.9
+    },
+    {
+     "temp_c": 16,
+     "uso_ml_hr": 6.4
+    },
+    {
+     "temp_c": 18,
+     "uso_ml_hr": 6.9
+    },
+    {
+     "temp_c": 20,
+     "uso_ml_hr": 7.5
+    },
+    {
+     "temp_c": 22,
+     "uso_ml_hr": 8.1
+    },
+    {
+     "temp_c": 24,
+     "uso_ml_hr": 8.8
+    },
+    {
+     "temp_c": 26,
+     "uso_ml_hr": 9.6
+    },
+    {
+     "temp_c": 28,
+     "uso_ml_hr": 10.3
+    },
+    {
+     "temp_c": 30,
+     "uso_ml_hr": 11.2
+    },
+    {
+     "temp_c": 32,
+     "uso_ml_hr": 12.1
+    },
+    {
+     "temp_c": 34,
+     "uso_ml_hr": 13.1
+    },
+    {
+     "temp_c": 36,
+     "uso_ml_hr": 14.2
+    },
+    {
+     "temp_c": 38,
+     "uso_ml_hr": 15.4
+    },
+    {
+     "temp_c": 40,
+     "uso_ml_hr": 16.7
+    }
+   ],
+   "referencia": {
+    "temp_c": 30.0,
+    "uso_ml_hr": 11.2
+   },
+   "hrs_por_litro": 89.0,
+   "cartucho_ml": 750.0,
+   "hrs_por_cartucho": 67.0,
+   "estado": "verificado",
+   "fuente_doc": "CIJ Makeup Usage Model v14 (documento oficial del modelo)",
+   "extraido_de": "datos\\extraccion\\cij_solvente_1210_v401.txt",
+   "notas_verificacion": [
+    "referencia del cuadro coincide con la curva"
+   ]
+  }
+ ]
+}

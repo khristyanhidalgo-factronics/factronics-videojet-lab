@@ -1,6 +1,6 @@
 # ⏳ PENDIENTE — v0.1.0 · Fundación del proyecto
 
-> Lo que **falta por hacer** después de la fundación. Al congoglar esta versión, este documento
+> Lo que **falta por hacer** después de la fundación. Al congelar esta versión, este documento
 > alimenta el PLAN de la v0.2.0 (regla del sistema de notas).
 
 ## Fase 1 — Extracción de datos (datos desde las fuentes del dueño)
@@ -10,6 +10,16 @@
 - [ ] Extraer las velocidades de impresión (velocidades CIJ) para las exploradores especialmente.
 - [ ] Marcar en el catálogo cada dato como: `verificado` / `borrador` / `por definir`.
 - [ ] Láser: inventario de la carpeta `documentacion laser` y primera carga de contenido.
+
+## Fase 1 — pendientes derivados de la primera extracción (2026-11-08)
+- [ ] Procesar los 45 PDFs restantes de uso de solvente (17 modelos × tintas) con el acumulador `datos/cij_uso_solvente.json`.
+- [ ] Crear herramienta de remapeo CID/CMap (u OCR sin dependencias) para los PDFs tabulares cifrados: `EquivalenciaTintasVJ1000` y makeup «Simplicity» (hoy ilegibles — no se usan hasta decodificarlos).
+- [ ] Extraer las fichas V471, V4263 y V4264 (carpeta INFORMACION TINTAS).
+- [ ] Extraer las IPL 1000VJ (9 PDFs de partes ilustradas: 1210/1510 → 1710) → dataset `partes_cij`.
+- [ ] Extraer velocidades CIJ por modelo/boquilla (calculadores «Line Speed Calculator v9.7») → dataset `cij_velocidades`.
+- [ ] Extraer los datos de ribbons TTO (carpeta Ribbons del curso 6x30) → consumibles TTO.
+- [ ] Inventariar y clasificar `documentacion laser` (1900+ archivos).
+- [ ] Cruzar las partes TTO (borrador) contra las Official Parts Lists PDF para elevarlas a `verificado`.
 
 ## Fase 2 — App web offline (presentar en v0.2.0–v0.3.0)
 - [ ] App web (PWA) con: exámenes de 5 niveles (Básico, Básico-Medio, Intermedio-Avanzado, Avanzado, Profesional), modos estudio/prueba rápida/repaso, buscador de partes, calculadoras (consumo/costo/comparador), perfiles e historial, exportar/importar copia de seguridad.
