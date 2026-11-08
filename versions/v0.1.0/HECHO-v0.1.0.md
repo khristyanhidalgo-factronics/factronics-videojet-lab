@@ -51,3 +51,6 @@
 - [x] **Descifrado completo RC4/AES-128/AES-256** (`tools/leer_pdf_cifrado.py` v3: sAlT, hash 2.B, O/U hex): 27/27 documentos bloqueados recuperados (manuscritos Allprint AES/BNS, manual 6330/6530, instrucciones 463xxx).
 - [x] **LÁSER: extracción completa** de 1.253 PDFs (1.165 OK / 28 escasos / 60 escaneados) + inventario de 1.908 archivos con estado por archivo.
 - [x] **TTO: extracción completa** de 163 PDFs (156 OK / 7 sin texto) además del chart de ribbons estructurado.
+- [x] **`datos/laser_modelos.json`**: 21 modelos LASER con archivos de evidencia y menciones; CO2 y fibra separados; terceros (ALLPRINT, sensores) aparte.
+- [x] **`datos/tto_boletines.json`**: índice de 113 boletines con legibilidad medida y 63 títulos fiables.
+- [x] **OCR nativo**: `tools/ocr_windows.ps1` + `tools/lote_laser_ocr.py` — 29 escaneados con JPEG procesados (17 con texto, +16.277 chars; 12 sin resultado).

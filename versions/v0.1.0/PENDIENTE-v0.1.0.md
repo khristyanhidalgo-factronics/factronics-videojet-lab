@@ -12,20 +12,26 @@
 - [ ] Láser: inventario de la carpeta `documentacion laser` y primera carga de contenido.
 
 ## Fase 1 — pendientes derivados de la segunda extracción (2026-11-08)
-- [x] ~~Procesar los 45 PDFs restantes de uso de solvente~~ → **CERRADO: 802/802 procesados** (800 curvas verificado + 2 «sin-datos-en-documento»). Ver HECHO.
-- [x] ~~**Decodificador calibrado de fuentes subset** (offset por bloque;~~ (herramienta creada y ejecutada: cierre en HECHO) # (offset por bloque; pista 1: la familia IPL 1550 usa desplazamiento ASCII−3 verificable con «Illustrated parts»; pista 2: `#N/D` confirma hojas Excel exportadas). Aplica a: tablas de las 9 IPL, `EquivalenciaTintasVJ1000` y «Simplicity» Makeup. Regla: solo decodificación determinista validada con frases de control — nada reconstruido a mano.
-- [ ] Parser de tablas de las 9 IPL 1000VJ → dataset `datos/partes_cij.json` (número de parte + descripción + cantidad + referencia de ilustración), bloqueado por el decodificador.
-- [ ] Extraer las fichas V471, V4263 y V4264 (carpeta INFORMACION TINTAS; plantilla probada: `ss-ink-v4250-us.pdf`).
+- [x] ~~Procesar los 45 PDFs restantes de uso de solvente~~ → **CERRADO: 802/802 procesados** (800 curvas verificado + 2 «sin-datos-en-documento»).
+- [x] ~~Decodificador calibrado de fuentes subset~~ → **CERRADO**: `tools/decodificar_cipher_offset.py` v2 (decisión por bloque; offset +29 verificable con «Videojet Technologies» / «Illustrated Parts List»); salidas `*_dec.txt` para TS2205, 98039 y las 9 IPL.
+- [ ] **Números de parte de las IPL** → `partes_cij`: los rótulos ya decodifican, pero cada número debe cruzarse contra el PDF original (revisión/OCR); el parser sigue bloqueado.
+- [x] ~~Extraer las fichas V471/V4263/V4264~~ → **CERRADO**: las 564 fichas QSS se descifraron y extrayeron (V471-D/K, V4264-D/L, etc.); composición y propiedades estructuradas.
 - [ ] Extraer velocidades CIJ por modelo/boquilla (calculadores «Line Speed Calculator v9.7») → dataset `cij_velocidades`.
-- [ ] Extraer los datos de ribbons TTO (carpeta Ribbons del curso 6x30) → consumibles TTO.
-- [ ] Inventariar y clasificar `documentacion laser` (1900+ archivos).
+- [x] ~~Extraer los datos de ribbons TTO~~ → **CERRADO**: `datos/tto_ribbons.json` (64 grados, 694 ítems, matrices y lógica de lote).
+- [x] ~~Inventariar y clasificar `documentacion laser`~~ → **CERRADO**: 1.908 archivos inventariados; 1.253 PDFs extraídos; OCR nativo en los escaneados con JPEG.
 - [ ] Cruzar las partes TTO (borrador) contra las Official Parts Lists PDF para elevarlas a `verificado`.
 
-## Fase 1 - pendientes derivados del ciclo tintas/decodificador (2026-11-08)
-- [ ] **Números de parte de las IPL:** los rótulos ya decodifican ("Ink Cartridge", "Printhead"...), pero cada NUMERO requiere cruzarse contra el PDF original; `borrador-decodificado` no alcanza para datos estructurados → parser `partes_cij` sigue bloqueado.
-- [x] ~~**OCR de las 562 fichas QSS** `sin-texto-sacado`~~ → **CERRADO SIN OCR**: eran PDFs cifrados con RC4-128 (contrasena de usuario vacia); descifradas 564/564 y estructurada la composicion. Ver HECHO.
-- [ ] **Simplicity / EquivalenciaTintas:** siguen con fuentes CID sin mapear ("redundante-cifrado"); requiere OCR o remapeo CID para estructurar las tablas.
-- [ ] **Ampliar `cij_tintas.json`**: fichas QSS completas (composición/datos regulatorios) cuando ya exista OCR; quedan 132 tintas con solo base+curva.
+## Fase 1 - pendientes derivados del ciclo tintas/decodificador/ocr (2026-11-08)
+- [ ] **Números de parte de las IPL:** revisión contra el PDF original u OCR antes de estructurar `partes_cij`.
+- [x] ~~**OCR de las 562 fichas QSS**~~ → **CERRADO SIN OCR**: eran PDFs cifrados RC4-128; descifradas 564/564 y estructurada composición (1.773 componentes, CAS 100% validado) y propiedades (12.728 campos).
+- [x] ~~**OCR de los PDFs láser escaneados**~~ → **PARCIAL CERRADO**: OCR nativo de Windows sobre los 29 con JPEG (17 con texto, +16.277 chars); quedan 31 sin JPEG (JBIG2/vector).
+- [ ] **31 escaneados láser sin JPEG**: requerirían rasterizar el PDF a imagen para OCR (evaluar si aportan).
+- [ ] **Simplicity / EquivalenciaTintas:** fuentes CID sin ToUnicode ("redundante-cifrado"); requieren OCR o remapeo por comparación.
+- [ ] **Ampliar `cij_tintas.json`**: fichas QSS completas (composición/datos regulatorios) más allá de base+curva.
+- [ ] **Refrescar `simplicity_global_inventario.json`** cuando el dueño suba las partes 4-12 del repo global (hoy 3/12) y clasificar por tecnología.
+- [ ] **Muestreo visual de composiciones SDS** (nombres/porcentajes) contra los PDFs; el CAS ya está validado al 100%.
+- [ ] **Datasets derivados de manuales** láser/TTO (tablas de partes, códigos de error, mantenimiento) desde el texto ya extraído.
+- [ ] **Revisar títulos de boletines TTO** marcados dudosos/no-legibles (63 títulos fiables de 113).
 
 ## Fase 2 — App web offline (presentar en v0.2.0–v0.3.0)
 - [ ] App web (PWA) con: exámenes de 5 niveles (Básico, Básico-Medio, Intermedio-Avanzado, Avanzado, Profesional), modos estudio/prueba rápida/repaso, buscador de partes, calculadoras (consumo/costo/comparador), perfiles e historial, exportar/importar copia de seguridad.

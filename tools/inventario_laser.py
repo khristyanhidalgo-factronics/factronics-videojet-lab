@@ -45,7 +45,11 @@ def main():
                 tam = 0
             estado = 'pendiente-extraccion'
             if rel in estados:
-                estado = estados[rel].get('estado', 'pendiente-extraccion')
+                reg = estados[rel]
+                estado = reg.get('estado', 'pendiente-extraccion')
+                if estado == 'sin-texto' and reg.get('ocr_chars'):
+                    estado = ('ocr' if reg['ocr_chars'] >= 200
+                              else 'ocr-escaso')
             por_ext[ext] += 1
             por_sub[sub] += 1
             por_estado[estado] += 1

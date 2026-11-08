@@ -34,8 +34,10 @@
  "resumen_estado_extraccion": {
   "ok": 1165,
   "pendiente-extraccion": 655,
-  "sin-texto": 60,
-  "texto-escaso": 28
+  "sin-texto": 43,
+  "texto-escaso": 28,
+  "ocr": 12,
+  "ocr-escaso": 5
  },
  "nota": "Inventario completo del arbol. La extraccion de texto se hace con tools/lote_laser.py (PDFs, extractor visual v3, sirve cifrado y no cifrado); este archivo se regenera tras cada lote para reflejar chars/estado por PDF.",
  "archivos": [
@@ -499,7 +501,7 @@
    "bytes": 382416,
    "ext": ".pdf",
    "subcarpeta": "accesorios laser",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr-escaso"
   },
   {
    "ruta": "accesorios laser\\4 - Reservat. após 5 horas.JPG",
@@ -1066,7 +1068,7 @@
    "bytes": 952048,
    "ext": ".pdf",
    "subcarpeta": "accesorios laser",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr"
   },
   {
    "ruta": "accesorios laser\\AD350AVD 786-1500.pdf",
@@ -1346,14 +1348,14 @@
    "bytes": 55041,
    "ext": ".pdf",
    "subcarpeta": "accesorios laser",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr-escaso"
   },
   {
    "ruta": "accesorios laser\\BTU components1.pdf",
    "bytes": 50529,
    "ext": ".pdf",
    "subcarpeta": "accesorios laser",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr"
   },
   {
    "ruta": "accesorios laser\\Bofa EEMatrix_Parts & Consumables_09-08.pdf",
@@ -2074,7 +2076,7 @@
    "bytes": 262440,
    "ext": ".pdf",
    "subcarpeta": "accesorios laser",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr"
   },
   {
    "ruta": "accesorios laser\\FA2 Digital Wiring Diagram.pdf",
@@ -2095,7 +2097,7 @@
    "bytes": 537301,
    "ext": ".pdf",
    "subcarpeta": "accesorios laser",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr"
   },
   {
    "ruta": "accesorios laser\\FA2 WIRING DIAGRAM.pdf",
@@ -4153,7 +4155,7 @@
    "bytes": 255373,
    "ext": ".pdf",
    "subcarpeta": "accesorios laser",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr"
   },
   {
    "ruta": "accesorios laser\\SOI dimensoes.jpg",
@@ -4349,7 +4351,7 @@
    "bytes": 1963521,
    "ext": ".pdf",
    "subcarpeta": "accesorios laser",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr"
   },
   {
    "ruta": "accesorios laser\\Specification_Ultimate3_1.4.pdf",
@@ -5210,14 +5212,14 @@
    "bytes": 129785,
    "ext": ".pdf",
    "subcarpeta": "accesorios laser",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr"
   },
   {
    "ruta": "accesorios laser\\fa2-operations-manual.pdf",
    "bytes": 8039488,
    "ext": ".pdf",
    "subcarpeta": "accesorios laser",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr"
   },
   {
    "ruta": "accesorios laser\\filter-100-co2.pdf",
@@ -5231,7 +5233,7 @@
    "bytes": 4238163,
    "ext": ".pdf",
    "subcarpeta": "accesorios laser",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr"
   },
   {
    "ruta": "accesorios laser\\frame-laser-gpt-encore-large.pdf",
@@ -6652,7 +6654,7 @@
    "bytes": 55041,
    "ext": ".pdf",
    "subcarpeta": "ALLPRINT DN-A LN-A",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr-escaso"
   },
   {
    "ruta": "ALLPRINT DN-A LN-A\\BTUs_3x20-3x30.pdf",
@@ -9375,7 +9377,7 @@
    "bytes": 1023827,
    "ext": ".pdf",
    "subcarpeta": "drawings co2",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr"
   },
   {
    "ruta": "drawings co2\\AD350_datasheet_bofa.pdf",
@@ -9746,7 +9748,7 @@
    "bytes": 1444675,
    "ext": ".pdf",
    "subcarpeta": "drawings co2",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr"
   },
   {
    "ruta": "drawings co2\\prueba.pdf",
@@ -12539,7 +12541,7 @@
    "bytes": 3869362,
    "ext": ".pdf",
    "subcarpeta": "manuales fibra",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr"
   },
   {
    "ruta": "manuales fibra\\Nueva carpeta\\14675 - HDMI Cable for 7510, 7610, 7810.pdf",
@@ -12616,7 +12618,7 @@
    "bytes": 2385630,
    "ext": ".pdf",
    "subcarpeta": "manuales fibra",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr-escaso"
   },
   {
    "ruta": "manuales fibra\\Nueva carpeta\\18035-Locating Fault Messages in Laser Unit Interfaces (Eng).pdf",
@@ -12630,7 +12632,7 @@
    "bytes": 223710,
    "ext": ".pdf",
    "subcarpeta": "manuales fibra",
-   "estado_extraccion": "sin-texto"
+   "estado_extraccion": "ocr-escaso"
   },
   {
    "ruta": "manuales fibra\\Nueva carpeta\\18037-Laser User Interface Devices and Software (Eng).pdf",

@@ -59,8 +59,8 @@
       "cubre": [
         "LASER"
       ],
-      "estado_extraccion": "COMPLETO: 1.253/1.253 PDFs procesados con el extractor visual v3 (descifrado RC4/AES-128/AES-256 incluido): 1.165 con texto OK, 28 con texto escaso y 60 sin texto (escaneados). 20+ millones de caracteres en datos/extraccion/laser_*.txt; inventario con estado por archivo en datos/laser_inventario.json.",
-      "aviso": "los 60 sin texto parecen escaneados (requieren OCR). ZIP/EXE solo se inventarian. Manuales de competencia/terceros se conservan como referencia del curso, no como dato Videojet."
+      "estado_extraccion": "COMPLETO: 1.253/1.253 PDFs procesados (extractor visual v3 con descifrado RC4/AES-128/AES-256). 1.165 con texto OK + 28 escasos; de los 60 sin texto, 29 con JPEG se procesaron por OCR nativo (Windows.Media.Ocr): 17 con texto (12 OK + 5 escasos, +16.277 chars) y 12 sin resultado (planos/fotos de baja resolucion). Quedan 31 escaneados sin JPEG (JBIG2/vector) como pendientes.",
+      "aviso": "el OCR usa la API nativa de Windows (sin instalar nada). Los planos y fotos sin texto quedan como evidencia del intento. ZIP/EXE solo se inventarian. Manuales de competencia/terceros se conservan como referencia del curso."
     },
     {
       "id": "web-oficial",
@@ -138,7 +138,21 @@
       "tecnologia": "LASER",
       "estado": "extraccion-completa-pdfs",
       "fuente": "carpeta documentacion laser del equipo (1.908 archivos)",
-      "resumen": "anticipo: 1.908 archivos inventariados; 1.253 PDFs extraidos (1.165 OK, 28 escasos, 60 sin texto/escaneados) con extractor visual v3 y descifrado completo RC4/AESV2/AESV3. Manuales CO2/Fibra, entrenamiento, Allprint, accesorios y drawings."
+      "resumen": "1.908 archivos inventariados; 1.253 PDFs: 1.165 extraccion OK, 28 escasos, 12 OCR OK + 5 OCR escaso, 43 sin texto (31 de ellos escaneados sin JPEG - pendiente). Manuales CO2/Fibra, entrenamiento, Allprint, accesorios y drawings."
+    },
+    "laser_modelos": {
+      "archivo": "datos/laser_modelos.json",
+      "tecnologia": "LASER",
+      "estado": "verificado",
+      "fuente": "nombres de archivo de manuales/entrenamiento + menciones en los textos extraidos de documentacion laser (tools/catalogo_laser_modelos.py)",
+      "resumen": "21 modelos: CO2 3020/3120/3320/3350/3520 | fibra 7010/7020/7030/7130/7210/7220/7230/7310/7320/7330/7340/7440/7510/7610/7810/7920. ALLPRINT y sensores de seguridad registrados aparte como terceros/referencia."
+    },
+    "tto_boletines": {
+      "archivo": "datos/tto_boletines.json",
+      "tecnologia": "TTO",
+      "estado": "borrador",
+      "fuente": "textos extraidos de la carpeta Boletines Tecnicos (curso 6x30)",
+      "resumen": "113 boletines indexados (63 con titulo fiable; {'legible': 82, 'dudoso': 28, 'no-legible': 3}). Los no-legibles se conservan como evidencia sin inventar titulos."
     }
   },
   "tecnologias": [
@@ -220,10 +234,41 @@
       "id": "LASER",
       "nombre": "Marcado Laser",
       "tecnologia_grupo": "ablation-marcado",
-      "estado_modelos": "por-definir",
-      "modelos": [],
-      "consumibles": [],
-      "estado_consumibles": "por-definir"
+      "estado_modelos": "catalogado-por-fuentes",
+      "modelos": [
+        "3020",
+        "3120",
+        "3320",
+        "3350",
+        "3520",
+        "7010",
+        "7020",
+        "7030",
+        "7130",
+        "7210",
+        "7220",
+        "7230",
+        "7310",
+        "7320",
+        "7330",
+        "7340",
+        "7440",
+        "7510",
+        "7610",
+        "7810",
+        "7920"
+      ],
+      "consumibles": [
+        "lentes",
+        "filtros",
+        "extractores (Xtract)"
+      ],
+      "estado_consumibles": "por-definir",
+      "variantes_documentadas": [
+        "CO2: 3020/3120/3320/3350",
+        "Fibra: 7220/7320, 7230/7330, 7340/7440, 7510, 7610, 7810, 7920"
+      ],
+      "nota": "Modelos detectados por evidencia directa en manuales, entrenamiento y drawings del equipo. ALLPRINT DN-A/LN-A es marca de terceros: se registra como referencia, no como modelo Videojet."
     }
   ],
   "tintas_cij_documentadas": [
