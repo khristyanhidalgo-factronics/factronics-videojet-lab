@@ -61,6 +61,17 @@ def validar_notas():
     if version.get('version') != datos.get('version_actual'):
         avisos.append('version.json (%s) != INDICE.version_actual (%s)'
                       % (version.get('version'), datos.get('version_actual')))
+    docs_version = ruta('docs', 'version.json')
+    if not os.path.exists(docs_version):
+        fallos.append('Falta docs/version.json (version.json publicado en Pages)')
+    else:
+        publicado = json.load(open(docs_version, encoding='utf-8'))
+        if publicado.get('version') != version.get('version'):
+            fallos.append('docs/version.json desactualizado (%s != %s)'
+                          % (publicado.get('version'), version.get('version')))
+        if publicado.get('construccion') != version.get('construccion'):
+            fallos.append('docs/version.json build distinto (%s != %s)'
+                          % (publicado.get('construccion'), version.get('construccion')))
     print('Notas: %d versiones verificadas' % len(datos.get('versiones', [])))
 
 

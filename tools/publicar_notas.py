@@ -110,7 +110,10 @@ def escribir_version_json(versiones):
         },
         'repo': REPO_URL,
     }
-    with open(os.path.join(RAIZ, 'version.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(RAIZ, 'version.json'), 'w', encoding='utf-8', newline='') as f:
+        json.dump(datos, f, ensure_ascii=False, indent=2)
+    # Copia publicada en Pages (la raiz del sitio es docs/).
+    with open(os.path.join(DOCS, 'version.json'), 'w', encoding='utf-8', newline='') as f:
         json.dump(datos, f, ensure_ascii=False, indent=2)
     return datos
 
@@ -149,7 +152,7 @@ code{color:#fbbf24} .h{color:#4ade80;word-break:break-all;font-size:12px}
 <p>Historial permanente del proyecto. Las notas publicadas no se editan: cada archivo lleva su
 huella <b>SHA-256</b>, de modo que cualquier cambio posterior queda a la vista.</p>
 <p><a href="index.html">← Volver a la landing</a> · <a href="app/">Abrir la app</a> ·
-<a href="https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab/blob/main/version.json">version.json</a></p>
+<a href="version.json">version.json</a></p>
 <div class="rules"><b>Reglas:</b> las notas congeladas no se editan · el PENDIENTE alimenta el PLAN siguiente ·
 los hashes permiten auditar cambios.</div>
 %s

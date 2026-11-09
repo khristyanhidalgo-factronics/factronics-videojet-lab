@@ -1,28 +1,33 @@
 {
   "producto": "Factronics Videojet Lab",
-  "version": "0.1.0",
-  "versionCode": 1,
-  "etiqueta": "v0.1.0-dev",
+  "version": "v0.2.0-alpha",
+  "canal": "alpha",
+  "construccion": 4,
   "fecha": "2026-11-08",
-  "estado": "desarrollo",
-  "offline": true,
-  "idiomas": ["es", "en", "pt"],
-  "tecnologias": ["TTO", "CIJ", "LASER"],
-  "niveles_examen": ["basico", "basico-medio", "intermedio-avanzado", "avanzado", "profesional"],
-  "pais_festividades_base": "VE",
+  "app_web": {
+    "url": "https://khristyanhidalgo-factronics.github.io/factronics-videojet-lab/app/",
+    "ruta": "docs/app/index.html",
+    "offline": true,
+    "idiomas": [
+      "es",
+      "en",
+      "pt",
+      "it",
+      "zh"
+    ],
+    "banco_preguntas_tto": 372
+  },
+  "apk": null,
   "notas": {
-    "plan": "versions/v0.1.0/PLAN-v0.1.0.md",
-    "bitacora": "versions/v0.1.0/BITACORA-v0.1.0.md",
-    "hecho": "versions/v0.1.0/HECHO-v0.1.0.md",
-    "pendiente": "versions/v0.1.0/PENDIENTE-v0.1.0.md",
-    "roadmap": "versions/ROADMAP.md",
-    "indice": "versions/INDICE.json"
+    "indice": "versions/INDICE.json",
+    "pagina": "https://khristyanhidalgo-factronics.github.io/factronics-videojet-lab/notas.html",
+    "hashes": {
+      "bitacora": "93f2211c0a465e768fd77bf68646824af38e243baa5875306ba45866626e5a6c",
+      "hecho": "45341e20fa82e67c728df5d9e6f6d08da90edbf6de80ca11b96a2b8dfa26b832",
+      "pendiente": "dd8660d46aedc11dd95d2ef1637e2c86c04382232d18e1fa157749654bc19d90",
+      "plan": "ba93ea0e59fe684741a80fcda009baec406718d285f49fd7f3815287a4df12ac",
+      "roadmap_global": "150f59cf9e967ba2ba8b563e78df43f717a9f4e0bdaaa2d7d5299ad748eea816"
+    }
   },
-  "artefactos": {
-    "web": "docs/index.html",
-    "apk": null,
-    "apkUrl": null,
-    "apkSha256": null
-  },
-  "creador": "Khristyan Hidalgo — Factronics Venezuela (https://factronics.com.ve/)"
+  "repo": "https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab"
 }

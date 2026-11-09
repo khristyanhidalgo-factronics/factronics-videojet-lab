@@ -40,3 +40,4 @@
 - [x] **Respuestas de texto en preguntas «completar»** (p. ej. «intelligent motion») con comparación normalizada; `tools/test_banco_tto.py` valida 372 preguntas × 3 idiomas y sus 7 tipos, y quedó agregado al CI.
 - [x] **Idiomas IT y ZH:** interfaz completa en 5 idiomas (ES/EN/PT/IT/ZH), con selector, cadenas dinámicas y constancia traducidas; 0 claves faltantes y pruebas en navegador sin errores. El banco TTO conserva es/en/pt y usa español como respaldo en IT/ZH (indicado en la app).
 - [x] **Precache del shell verificado (7/7)** y registro del service worker con `updateViaCache:'none'` para recibir actualizaciones sin caché vieja.
+- [x] **`docs/version.json` publicado** (copia del `version.json` raíz) y validado contra la versión/build para que Pages no sirva datos viejos.
