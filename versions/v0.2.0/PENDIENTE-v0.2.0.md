@@ -13,16 +13,16 @@
 ## Superar la referencia (cuenta personal)
 - [x] ~~`version.json` + `docs/notas.html` con índice SHA-256~~ → hecho (`tools/publicar_notas.py`).
 - [ ] Idiomas IT y ZH (el catálogo de referencia ya los tiene).
-- [ ] Resultado con QR + constancia imprimible (como TTO Lab).
-- [ ] Repaso espaciado y cuaderno de errores.
-- [x] ~~CI de validadores~~ (JSON, notas SHA-256, app, enlaces) → `tools/validar_repo.py` + workflow. Quedan pruebas del motor del banco.
+- [x] ~~Resultado con QR + constancia imprimible~~ → botón 🎓 Constancia con QR offline (`vendor/qrcode.js`).
+- [x] ~~Repaso espaciado y cuaderno de errores~~ → cajas 1–5, pendientes del día y errores acumulados.
+- [x] ~~CI de validadores~~ (JSON, notas SHA-256, app, enlaces) → `tools/validar_repo.py` + workflow, más `tools/test_banco_tto.py` (372 preguntas × 3 idiomas) en el mismo CI.
 - [x] ~~Backup/restore de perfil e historial~~ → exportar/importar en la app.
 - [ ] **Rotar los dos tokens expuestos** (cuenta de proyecto y cuenta personal) al estabilizar.
 
 ## Fase 2 – resto (v0.2.x / v0.3.0)
-- [ ] **Exportar/importar copia de seguridad** (JSON) de perfil e historial.
-- [ ] **QR offline** para compartir resultados y enlace de descarga.
-- [ ] **Página pública de notas** `docs/notas.html` + CI de validadores JSON/enlaces.
+- [x] ~~Exportar/importar copia de seguridad (JSON) de perfil e historial~~ → hecho.
+- [x] ~~QR offline para compartir resultados~~ → incluido en la constancia.
+- [x] ~~Página pública de notas `docs/notas.html` + CI~~ → publicada con SHA-256.
 - [ ] **Temas festivos** por país (Venezuela base) sobre el tema claro/oscuro/sistema.
 - [ ] Más variedad de preguntas por nivel y banco separado por tecnología.
 

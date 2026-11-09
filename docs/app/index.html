@@ -193,6 +193,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
       </div>
       <div id="ex_body" style="margin-top:14px"></div>
       <div id="ex_hist" class="small" style="margin-top:10px"></div>
+      <div id="repaso_box" class="card" style="box-shadow:none;margin-top:12px"></div>
     </div>
   </section>
 
@@ -213,12 +214,20 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
       <button class="btn" id="bk_export">⬇️ Exportar copia</button>
       <label class="btn" style="cursor:pointer;display:inline-block">⬆️ Importar<input type="file" id="bk_import" accept="application/json" style="display:none"></label>
       <span class="small" id="bk_msg"></span>
+      <h3>Perfil para constancias</h3>
+      <div class="grid">
+        <div><label class="small">Nombre y apellido</label><br>
+          <input type="text" id="prof_nombre" placeholder="Nombre del participante" style="width:100%"></div>
+        <div style="display:flex;align-items:flex-end"><button class="btn" id="prof_guardar">Guardar</button></div>
+      </div>
+      <span class="small" id="prof_msg"></span>
     </div>
   </section>
 </main>
 <footer>Factronics Videojet Lab · <span id="foot"></span></footer>
 <script src="datos.js"></script>
 <script src="banco_tto.js"></script>
+<script src="vendor/qrcode.js"></script>
 <script>
 /* ================= i18n ================= */
 const I18N = {
@@ -287,6 +296,7 @@ function aplicarIdioma(){
   $('#lang').value = LANG;
   $('#foot').textContent = `${t('kpi_solventes')} · ${t('kpi_partes')} · offline`;
   renderKPIs(); renderFuentes(); renderEstudiar(); renderBuscar(); renderCalc(); renderHistorial();
+  if (typeof renderRepaso === 'function') renderRepaso();
 }
 function aplicarTema(){
   const pref = localStorage.getItem('fvl_theme') || 'auto';
@@ -617,7 +627,9 @@ function renderExamenGen(){
     });
     const nota = `${bien}/${examen.preguntas.length}`;
     body.insertAdjacentHTML('afterbegin',
-      `<div class="card" style="box-shadow:none"><b>${esc(t('ex_score'))}: ${nota}</b> — ${bien} ${esc(t('respuestas'))}</div>`);
+      `<div class="card" style="box-shadow:none"><b>${esc(t('ex_score'))}: ${nota}</b> — ${bien} ${esc(t('respuestas'))}
+       <button class="btn" id="cert_btn">🎓 Constancia</button></div>`);
+    $('#cert_btn').addEventListener('click', () => generarConstancia(t(NIVELES[examen.nivel]), bien, examen.preguntas.length));
     guardarHistorial(examen.nivel, bien, examen.preguntas.length);
   });
   $('#ex_again').addEventListener('click', () => $('#ex_go').click());
@@ -642,9 +654,12 @@ function renderExamenBanco(){
     } else if (q.t === 'multi') {
       cuerpo = (d.o||[]).map(([id,txt]) => `<button class="opt" data-i="${i}" data-o="${esc(id)}" data-multi="1">${esc(txt)}</button>`).join('');
     } else if (q.t === 'fill' || q.t === 'calc') {
-      cuerpo = (d.f||[]).map(([label,unit,answers,tol],k) => `
+      cuerpo = (d.f||[]).map(([label,unit,answers,tol],k) => {
+        const esNum = (answers||[]).length > 0 && answers.every(a => typeof a === 'number');
+        return `
         <div style="margin:6px 0"><span class="small">${esc(label||('Campo '+(k+1)))}${unit?(' ('+esc(unit)+')'):''}</span><br>
-        <input type="number" step="any" data-i="${i}" data-f="${k}" style="max-width:220px"></div>`).join('');
+        <input type="${esNum ? 'number' : 'text'}" ${esNum ? 'step="any"' : ''} data-i="${i}" data-f="${k}" style="max-width:280px"></div>`;
+      }).join('');
     } else {
       cuerpo = `<textarea data-i="${i}" rows="3" style="width:100%" placeholder="..."></textarea>`;
     }
@@ -705,10 +720,18 @@ function renderExamenBanco(){
       } else if (q.t === 'fill' || q.t === 'calc') {
         const campos = d.f || [];
         const valores = (r && typeof r === 'object') ? r : {};
+        const normaliza = (s) => String(s||'').toLowerCase().normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim();
         valor = campos.length && campos.every(([label,unit,answers,tol],k) => {
-          const v = parseFloat(valores[k]);
-          if (isNaN(v)) return false;
-          return (answers||[]).some(a => Math.abs(v - a) <= (tol != null ? tol : Math.max(0.01, Math.abs(a)*0.01)));
+          const respuestas = answers || [];
+          const crudo = valores[k];
+          if (respuestas.length && respuestas.every(a => typeof a === 'number')) {
+            const v = parseFloat(crudo);
+            if (isNaN(v)) return false;
+            return respuestas.some(a => Math.abs(v - a) <= (tol != null ? tol : Math.max(0.01, Math.abs(a)*0.01)));
+          }
+          const t = normaliza(crudo);
+          return t !== '' && respuestas.some(a => normaliza(a) === t);
         }) ? 1 : 0;
       } else {
         // describe / errorfix: se muestran respuesta modelo; autoevaluación
@@ -727,12 +750,18 @@ function renderExamenBanco(){
         }));
       }
       puntos += valor;
+      repasoActualizar(q.id, valor >= 1);
       if (d.x) res.innerHTML = `${valor>=1?'✅':valor>0?'◐':'❌'} <span class="small">${esc(d.x).slice(0,700)}</span>`;
     });
-    const nota = `${(Math.round(puntos*10)/10)}/${examen.preguntas.length}`;
+    const total = examen.preguntas.length;
+    const nota = `${(Math.round(puntos*10)/10)}/${total}`;
+    const etiqueta = 'Banco TTO · ' + (TIPOS_BANCO[examen.tipo]||examen.tipo);
     body.insertAdjacentHTML('afterbegin',
-      `<div class="card" style="box-shadow:none"><b>${esc(t('ex_score'))}: ${nota}</b> — ${Math.round(puntos*10)/10} ${esc(t('respuestas'))}</div>`);
-    guardarHistorial('Banco TTO · ' + (TIPOS_BANCO[examen.tipo]||examen.tipo), Math.round(puntos*10)/10, examen.preguntas.length);
+      `<div class="card" style="box-shadow:none"><b>${esc(t('ex_score'))}: ${nota}</b> — ${Math.round(puntos*10)/10} ${esc(t('respuestas'))}
+       <button class="btn" id="cert_btn">🎓 Constancia</button></div>`);
+    $('#cert_btn').addEventListener('click', () => generarConstancia(etiqueta, Math.round(puntos*10)/10, total));
+    guardarHistorial(etiqueta, Math.round(puntos*10)/10, total);
+    renderRepaso();
   });
   $('#ex_again').addEventListener('click', () => $('#ex_go').click());
 }
@@ -789,6 +818,103 @@ function importarCopia(archivo){
 $('#bk_export').addEventListener('click', exportarCopia);
 $('#bk_import').addEventListener('change', (e) => {
   if (e.target.files && e.target.files[0]) importarCopia(e.target.files[0]);
+});
+
+/* ================= repaso espaciado + constancia ================= */
+const INTERVALOS = [1, 3, 7, 14, 30];
+function repasoCargar(){ return JSON.parse(localStorage.getItem('fvl_review') || '{}'); }
+function repasoGuardar(r){ localStorage.setItem('fvl_review', JSON.stringify(r)); }
+function repasoActualizar(qid, ok){
+  if (!qid) return;
+  const r = repasoCargar();
+  const hoy = new Date().toISOString().slice(0, 10);
+  const reg = r[qid] || {box: 0, fails: 0};
+  if (ok) reg.box = Math.min(5, (reg.box || 0) + 1);
+  else { reg.box = 1; reg.fails = (reg.fails || 0) + 1; }
+  const dias = INTERVALOS[Math.min(INTERVALOS.length - 1, Math.max(0, (reg.box || 1) - 1))];
+  reg.due = new Date(Date.now() + dias * 86400000).toISOString().slice(0, 10);
+  reg.last = hoy;
+  r[qid] = reg;
+  repasoGuardar(r);
+}
+function repasoPendientes(){
+  const r = repasoCargar();
+  const hoy = new Date().toISOString().slice(0, 10);
+  return Object.entries(r).filter(([,v]) => (v.due || hoy) <= hoy).map(([id]) => id);
+}
+function repasoErrores(){
+  return Object.entries(repasoCargar()).filter(([,v]) => (v.fails || 0) > 0).map(([id]) => id);
+}
+function renderRepaso(){
+  const box = $('#repaso_box'); if (!box) return;
+  const r = repasoCargar();
+  const pend = repasoPendientes().length;
+  const err = repasoErrores().length;
+  const total = Object.keys(r).length;
+  box.innerHTML = `<h3>Repaso espaciado</h3>
+    <p class="small">Cuaderno de errores: <b>${err}</b> preguntas · para repasar hoy: <b>${pend}</b> · en seguimiento: ${total}</p>
+    <button class="btn" id="rp_due" ${pend?'':'disabled'}>📅 Repasar hoy (${pend})</button>
+    <button class="btn" id="rp_err" ${err?'':'disabled'}>📕 Cuaderno de errores (${err})</button>
+    <button class="btn" id="rp_clear" ${total?'':'disabled'}>🗑️ Vaciar</button>`;
+  $('#rp_due').onclick = () => iniciarRepaso('due');
+  $('#rp_err').onclick = () => iniciarRepaso('errores');
+  $('#rp_clear').onclick = () => { if (confirm('¿Vaciar el cuaderno de repaso?')) { localStorage.removeItem('fvl_review'); renderRepaso(); } };
+}
+function iniciarRepaso(modo){
+  if (!window.BANCO_TTO) return;
+  const ids = modo === 'due' ? repasoPendientes() : repasoErrores();
+  const pool = BANCO_TTO.preguntas.filter(p => ids.includes(p.id)).slice(0, 20);
+  if (!pool.length) return;
+  examen = {fuente: 'banco', tipo: 'repaso', preguntas: pool, respuestas: {}, autoeval: {}, corregido: false};
+  renderExamen();
+  window.scrollTo({top: document.getElementById('ex_body').offsetTop - 80, behavior:'smooth'});
+}
+function generarConstancia(etiqueta, puntos, total){
+  const nombre = (localStorage.getItem('fvl_profile') || '').trim() || 'Participante';
+  const fecha = new Date().toLocaleDateString();
+  const payload = JSON.stringify({app:'FVL', v:(D.meta||{}).version||'', examen: etiqueta, puntos, total, fecha});
+  let imgSrc = '';
+  try {
+    if (typeof qrcode === 'function') {
+      let qr = null;
+      for (const version of [0, 8, 12, 15]) {
+        try { const cand = qrcode(version, 'M'); cand.addData(payload); cand.make(); qr = cand; break; }
+        catch (e) { /* siguiente version */ }
+      }
+      if (qr) imgSrc = qr.createDataURL(6, 0);
+    }
+  } catch (e) {}
+  const w = window.open('', '_blank');
+  if (!w) { alert('Permite las ventanas emergentes para generar la constancia.'); return; }
+  const logo = 'https://khristyanhidalgo-factronics.github.io/factronics-videojet-lab/assets/logo.svg';
+  w.document.write('<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Constancia — ' + nombre + '</title>'
+    + '<style>body{font-family:Georgia,\'Times New Roman\',serif;margin:0;padding:40px;color:#111}'
+    + '.cert{max-width:760px;margin:0 auto;border:2px solid #1e3a8a;padding:36px;border-radius:8px}'
+    + 'h1{text-align:center;font-size:30px;margin:6px 0}.sub{text-align:center;color:#475569;margin-bottom:24px}'
+    + '.nombre{font-size:26px;text-align:center;margin:22px 0;border-bottom:1px solid #94a3b8;padding-bottom:8px}'
+    + '.detalle{display:flex;gap:30px;justify-content:center;margin:22px 0;font-size:15px}'
+    + '.qr{text-align:center;margin-top:18px}.qr img{width:170px;height:170px}'
+    + '.firma{display:flex;justify-content:space-between;margin-top:50px;font-size:14px;color:#334155}'
+    + '.nota{font-size:11px;color:#64748b;margin-top:26px;text-align:center}'
+    + '@media print{body{padding:0}.cert{border:none}}</style></head><body><div class="cert">'
+    + '<div style="text-align:center"><img src="' + logo + '" width="64" alt="logo"></div>'
+    + '<h1>Constancia de aprovechamiento</h1>'
+    + '<div class="sub">Factronics Videojet Lab · Entrenamiento técnico Videojet (TTO · CIJ · LÁSER)</div>'
+    + '<div class="nombre">' + nombre + '</div>'
+    + '<p style="text-align:center">Ha completado la evaluación <b>' + etiqueta + '</b> con un resultado de <b>' + puntos + ' / ' + total + '</b>.</p>'
+    + '<div class="detalle"><span>📅 ' + fecha + '</span><span>📱 App v' + ((D.meta||{}).version||'') + '</span></div>'
+    + '<div class="qr">' + (imgSrc ? '<img src="' + imgSrc + '" alt="QR de verificación">' : '')
+    + '<div class="nota">Escanea el QR para ver los datos del resultado.</div></div>'
+    + '<div class="firma"><span>____________________<br>Participante</span><span>____________________<br>Factronics VideoJet Lab</span></div>'
+    + '<div class="nota">Documento generado offline por la app. No sustituye la certificación oficial de Videojet Technologies.</div>'
+    + '</div><script>window.onload=function(){setTimeout(function(){window.print();},400);}<\/script></body></html>');
+  w.document.close();
+}
+const profInput = $('#prof_nombre');
+if (profInput) profInput.value = localStorage.getItem('fvl_profile') || '';
+$('#prof_guardar').addEventListener('click', () => {
+  localStorage.setItem('fvl_profile', profInput.value.trim());
+  $('#prof_msg').textContent = '✅ Nombre guardado.';
 });
 
 /* ================= arranque ================= */

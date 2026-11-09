@@ -18,3 +18,5 @@ jobs:
           python-version: '3.12'
       - name: Validar JSON, notas (SHA-256), app y enlaces
         run: python tools/validar_repo.py
+      - name: Probar banco de preguntas TTO
+        run: python tools/test_banco_tto.py
