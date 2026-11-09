@@ -38,3 +38,5 @@
 - [x] **Constancia imprimible con QR offline** (`docs/app/vendor/qrcode.js`): botón 🎓 Constancia en todo resultado, con logo, nombre del perfil, evaluación, puntaje, fecha, versión y QR del resultado; ventana lista para imprimir. Verificado sin errores de consola.
 - [x] **Repaso espaciado y cuaderno de errores:** cajas 1–5 con intervalos 1/3/7/14/30 días, pendientes del día, errores acumulados y repaso de hasta 20 preguntas; persistencia local. Verificado en navegador.
 - [x] **Respuestas de texto en preguntas «completar»** (p. ej. «intelligent motion») con comparación normalizada; `tools/test_banco_tto.py` valida 372 preguntas × 3 idiomas y sus 7 tipos, y quedó agregado al CI.
+- [x] **Idiomas IT y ZH:** interfaz completa en 5 idiomas (ES/EN/PT/IT/ZH), con selector, cadenas dinámicas y constancia traducidas; 0 claves faltantes y pruebas en navegador sin errores. El banco TTO conserva es/en/pt y usa español como respaldo en IT/ZH (indicado en la app).
+- [x] **Precache del shell verificado (7/7)** y registro del service worker con `updateViaCache:'none'` para recibir actualizaciones sin caché vieja.

@@ -86,7 +86,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
     <h1>Factronics Videojet Lab</h1>
     <span class="ver" id="ver">v0.2.0-alpha</span>
     <div class="controls">
-      <select id="lang" aria-label="Idioma"><option value="es">ES</option><option value="en">EN</option><option value="pt">PT</option></select>
+      <select id="lang" aria-label="Idioma"><option value="es">ES</option><option value="en">EN</option><option value="pt">PT</option><option value="it">IT</option><option value="zh">中文</option></select>
       <button class="btn" id="theme" title="Tema">◐</button>
     </div>
   </div>
@@ -209,16 +209,16 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
         (calculadora hermana). Este proyecto unifica TTO · CIJ · LÁSER en un solo lugar.
       </p>
       <p class="small">Repo: <a href="https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab" target="_blank" rel="noopener">factronics-videojet-lab</a> · <span id="av_fecha"></span></p>
-      <h3>Copia de seguridad</h3>
-      <p class="small">Exporta o importa tu perfil local (idioma, tema, historial de exámenes y nombre). Nada sale de tu dispositivo.</p>
-      <button class="btn" id="bk_export">⬇️ Exportar copia</button>
-      <label class="btn" style="cursor:pointer;display:inline-block">⬆️ Importar<input type="file" id="bk_import" accept="application/json" style="display:none"></label>
+      <h3 data-i18n="copia_t">Copia de seguridad</h3>
+      <p class="small" data-i18n="copia_s">Exporta o importa tu perfil local (idioma, tema, historial de exámenes y nombre). Nada sale de tu dispositivo.</p>
+      <button class="btn" id="bk_export" data-i18n="exportar">⬇️ Exportar copia</button>
+      <label class="btn" style="cursor:pointer;display:inline-block"><span data-i18n="importar">⬆️ Importar</span><input type="file" id="bk_import" accept="application/json" style="display:none"></label>
       <span class="small" id="bk_msg"></span>
-      <h3>Perfil para constancias</h3>
+      <h3 data-i18n="perfil_t">Perfil para constancias</h3>
       <div class="grid">
-        <div><label class="small">Nombre y apellido</label><br>
+        <div><label class="small" data-i18n="perfil_nombre">Nombre y apellido</label><br>
           <input type="text" id="prof_nombre" placeholder="Nombre del participante" style="width:100%"></div>
-        <div style="display:flex;align-items:flex-end"><button class="btn" id="prof_guardar">Guardar</button></div>
+        <div style="display:flex;align-items:flex-end"><button class="btn" id="prof_guardar" data-i18n="guardar">Guardar</button></div>
       </div>
       <span class="small" id="prof_msg"></span>
     </div>
@@ -274,12 +274,194 @@ const I18N = {
     av_t:'Aviso e fontes', av_s:'Material construído a partir dos documentos do equipamento e fontes oficiais Videojet. Não substitui o treinamento oficial nem os manuais de serviço.',
     kpi_solventes:'curvas de solvente', kpi_tintas:'tintas CIJ', kpi_partes:'peças', kpi_errores:'códigos de erro', kpi_ribbons:'graus de ribbon', kpi_modelos:'modelos laser',
     partes_de:'Peças', compon:'componentes', props:'propriedades', sds:'ficha SDS', sin_resultados:'Sem resultados',
-    respostas:'respostas corretas', ver:'Ver', volver:'Voltar', q:'Pergunta'
+    respuestas:'respostas corretas', ver:'Ver', volver:'Voltar', q:'Pergunta'
+  },
+  it: {
+    tab_inicio:'Home', tab_estudiar:'Studiare', tab_buscar:'Cercare', tab_calcular:'Calcolare', tab_examen:'Esame', tab_aviso:'Avviso',
+    inicio_t:'Benvenuto nel laboratorio', inicio_s:'Dati reali delle apparecchiature e documenti ufficiali Videojet. Funziona al 100% offline.',
+    inicio_acc:'Accessi rapidi', aviso_estados:'Stati:', est_verificado:'verificato', est_borrador:'bozza', est_sindatos:'nessun dato nel documento',
+    est_t:'Studiare', est_tintas:'Inchiostri CIJ', est_ribbons:'Ribbon TTO', est_laser:'LASER', est_mant:'Manutenzione',
+    bus_t:'Cercare', bus_all:'Tutto', bus_partes:'Parti', bus_tintas:'Inchiostri', bus_errores:'Codici errore', bus_ribbons:'Ribbon', bus_mant:'Manutenzione',
+    calc_t:'Calcolatore di consumo (CIJ)', calc_s:'Consumo di solvente dalla curva ufficiale (stima del documento, 10–40 °C).',
+    calc_modelo:'Modello', calc_tinta:'Inchiostro', calc_temp:'Temperatura (°C)', calc_precio:'Prezzo solvente (USD/L)',
+    ex_t:'Esame', ex_nivel:'Livello', ex_cant:'Domande', ex_go:'Genera esame', ex_send:'Correggi', ex_score:'Risultato', ex_again:'Un altro tentativo', ex_hist:'Cronologia',
+    n1:'Base', n2:'Base-Intermedio', n3:'Intermedio-Avanzato', n4:'Avanzato', n5:'Professionale',
+    av_t:'Avviso e fonti', av_s:'Materiale costruito dai documenti delle apparecchiature e da fonti ufficiali Videojet. Non sostituisce la formazione ufficiale né i manuali di servizio.',
+    kpi_solventes:'curve di solvente', kpi_tintas:'inchiostri CIJ', kpi_partes:'parti', kpi_errores:'codici di errore', kpi_ribbons:'gradi ribbon', kpi_modelos:'modelli laser',
+    partes_de:'Parti', compon:'componenti', props:'proprietà', sds:'scheda SDS', sin_resultados:'Nessun risultato',
+    respuestas:'risposte corrette', ver:'Vedi', volver:'Indietro', q:'Domanda'
+  },
+  zh: {
+    tab_inicio:'首页', tab_estudiar:'学习', tab_buscar:'搜索', tab_calcular:'计算', tab_examen:'考试', tab_aviso:'声明',
+    inicio_t:'欢迎来到实验室', inicio_s:'设备真实数据和 Videojet 官方文档。100% 离线运行。',
+    inicio_acc:'快速入口', aviso_estados:'状态：', est_verificado:'已验证', est_borrador:'草稿', est_sindatos:'文档中无数据',
+    est_t:'学习', est_tintas:'CIJ 墨水', est_ribbons:'TTO 色带', est_laser:'激光', est_mant:'维护',
+    bus_t:'搜索', bus_all:'全部', bus_partes:'部件', bus_tintas:'墨水', bus_errores:'错误代码', bus_ribbons:'色带', bus_mant:'维护',
+    calc_t:'CIJ 消耗计算器', calc_s:'根据官方曲线计算溶剂消耗（文档估算，10–40 °C）。',
+    calc_modelo:'型号', calc_tinta:'墨水', calc_temp:'温度 (°C)', calc_precio:'溶剂价格（美元/升）',
+    ex_t:'考试', ex_nivel:'级别', ex_cant:'题目数量', ex_go:'生成考试', ex_send:'评分', ex_score:'成绩', ex_again:'再试一次', ex_hist:'历史记录',
+    n1:'基础', n2:'基础-中级', n3:'中级-高级', n4:'高级', n5:'专业',
+    av_t:'声明与来源', av_s:'本材料基于设备文档和 Videojet 官方来源。不能替代官方培训或服务手册。',
+    kpi_solventes:'溶剂曲线', kpi_tintas:'CIJ 墨水', kpi_partes:'部件', kpi_errores:'错误代码', kpi_ribbons:'色带等级', kpi_modelos:'激光型号',
+    partes_de:'部件', compon:'成分', props:'特性', sds:'SDS 文件', sin_resultados:'无结果',
+    respuestas:'正确回答', ver:'查看', volver:'返回', q:'题目'
   }
 };
-Object.assign(I18N.es, { ex_fuente:'Fuente', fuente_gen:'Generado (5 niveles)', fuente_banco:'Banco TTO (372)', ex_tipo:'Tipo', tipo_todas:'Todas', self_ok:'Lo dominaba', self_no:'A revisar', respuesta_modelo:'Respuesta modelo', banco_nota:'Banco de preguntas TTO (372) adaptado de Factronics TTO Lab — es/en/pt.', kpi_banco:'preguntas TTO' });
-Object.assign(I18N.en, { ex_fuente:'Source', fuente_gen:'Generated (5 levels)', fuente_banco:'TTO bank (372)', ex_tipo:'Type', tipo_todas:'All', self_ok:'I knew it', self_no:'To review', respuesta_modelo:'Model answer', banco_nota:'TTO question bank (372) adapted from Factronics TTO Lab — es/en/pt.', kpi_banco:'TTO questions' });
-Object.assign(I18N.pt, { ex_fuente:'Fonte', fuente_gen:'Gerado (5 níveis)', fuente_banco:'Banco TTO (372)', ex_tipo:'Tipo', tipo_todas:'Todas', self_ok:'Eu dominava', self_no:'A revisar', respuesta_modelo:'Resposta modelo', banco_nota:'Banco de perguntas TTO (372) adaptado do Factronics TTO Lab — es/en/pt.', kpi_banco:'perguntas TTO' });
+Object.assign(I18N.es, {
+  ex_fuente:'Fuente', fuente_gen:'Generado (5 niveles)', fuente_banco:'Banco TTO (372)', ex_tipo:'Tipo', tipo_todas:'Todas',
+  self_ok:'Lo dominaba', self_no:'A revisar', respuesta_modelo:'Respuesta modelo',
+  banco_nota:'Banco de preguntas TTO (372) adaptado de Factronics TTO Lab — es/en/pt.', kpi_banco:'preguntas TTO',
+  buscar:'Buscar', curvas:'curvas', items:'Ítems', tareas:'tareas', docs:'docs', campo:'Campo', nivel:'nivel',
+  tipo_single:'Simple', tipo_multi:'Múltiple', tipo_fill:'Completar', tipo_calc:'Cálculo', tipo_describe:'Descripción',
+  tipo_errorfix:'Caso de falla', tipo_errmap:'Código→significado', tipo_repaso:'Repaso', ex_banco_titulo:'Banco TTO',
+  repaso_t:'Repaso espaciado',
+  repaso_resumen:'Cuaderno de errores: {err} preguntas · para repasar hoy: {pend} · en seguimiento: {total}',
+  repaso_hoy:'📅 Repasar hoy ({n})', repaso_err:'📕 Cuaderno de errores ({n})', repaso_clear:'🗑️ Vaciar',
+  repaso_confirm:'¿Vaciar el cuaderno de repaso?', constancia:'🎓 Constancia',
+  copia_t:'Copia de seguridad',
+  copia_s:'Exporta o importa tu perfil local (idioma, tema, historial de exámenes y nombre). Nada sale de tu dispositivo.',
+  exportar:'⬇️ Exportar copia', importar:'⬆️ Importar',
+  perfil_t:'Perfil para constancias', perfil_nombre:'Nombre y apellido', perfil_ph:'Nombre del participante', guardar:'Guardar',
+  msg_exportado:'✅ Copia exportada.', msg_importado:'✅ Copia importada ({n} registros).',
+  msg_invalido:'❌ Archivo no válido.', msg_guardado:'✅ Nombre guardado.', participante:'Participante',
+  cert_titulo:'Constancia de aprovechamiento',
+  cert_sub:'Factronics Videojet Lab · Entrenamiento técnico Videojet (TTO · CIJ · LÁSER)',
+  cert_texto:'Ha completado la evaluación {examen} con un resultado de {puntos} / {total}.',
+  cert_qr:'Escanea el QR para ver los datos del resultado.',
+  cert_participante:'Participante', cert_entidad:'Factronics VideoJet Lab',
+  cert_aviso:'Documento generado offline por la app. No sustituye la certificación oficial de Videojet Technologies.',
+  cert_popup:'Permite las ventanas emergentes para generar la constancia.',
+  q_base:'¿Qué base química usa la tinta {c}?', q_color:'Color del ribbon {g}:',
+  q_tec:'El código {c} pertenece a la tecnología:', q_ref:'Referencia @30 °C del consumo de solvente {m} ({t}):',
+  q_cas:'Componente CAS {cas} de la SDS {c}:',
+  h_litro:'h / litro', h_cartucho:'h / cartucho {n} ml', usd_hora:'USD / hora solvente', ml_h:'ml/h @ {t} °C',
+  ref_cij:'cij_tintas (bases documentadas)', ref_ribbons:'tto_ribbons (chart 2.5.26)',
+  ref_err:'codigos_error (borrador)', ref_sol:'cij_uso_solvente (verificado)', ref_sds:'sds_composicion (CAS validado)'
+});
+Object.assign(I18N.en, {
+  ex_fuente:'Source', fuente_gen:'Generated (5 levels)', fuente_banco:'TTO bank (372)', ex_tipo:'Type', tipo_todas:'All',
+  self_ok:'I knew it', self_no:'To review', respuesta_modelo:'Model answer',
+  banco_nota:'TTO question bank (372) adapted from Factronics TTO Lab — es/en/pt.', kpi_banco:'TTO questions',
+  buscar:'Search', curvas:'curves', items:'items', tareas:'tasks', docs:'docs', campo:'Field', nivel:'level',
+  tipo_single:'Single', tipo_multi:'Multiple', tipo_fill:'Fill in', tipo_calc:'Calculation', tipo_describe:'Description',
+  tipo_errorfix:'Fault case', tipo_errmap:'Code→meaning', tipo_repaso:'Review', ex_banco_titulo:'TTO bank',
+  repaso_t:'Spaced review',
+  repaso_resumen:'Error notebook: {err} questions · due today: {pend} · tracked: {total}',
+  repaso_hoy:'📅 Review today ({n})', repaso_err:'📕 Error notebook ({n})', repaso_clear:'🗑️ Clear',
+  repaso_confirm:'Clear the review notebook?', constancia:'🎓 Certificate',
+  copia_t:'Backup',
+  copia_s:'Export or import your local profile (language, theme, exam history and name). Nothing leaves your device.',
+  exportar:'⬇️ Export backup', importar:'⬆️ Import',
+  perfil_t:'Profile for certificates', perfil_nombre:'Full name', perfil_ph:'Participant name', guardar:'Save',
+  msg_exportado:'✅ Backup exported.', msg_importado:'✅ Backup imported ({n} records).',
+  msg_invalido:'❌ Invalid file.', msg_guardado:'✅ Name saved.', participante:'Participant',
+  cert_titulo:'Certificate of achievement',
+  cert_sub:'Factronics Videojet Lab · Videojet technical training (TTO · CIJ · LASER)',
+  cert_texto:'Has completed the {examen} assessment with a score of {puntos} / {total}.',
+  cert_qr:'Scan the QR to view the result data.',
+  cert_participante:'Participant', cert_entidad:'Factronics VideoJet Lab',
+  cert_aviso:'Document generated offline by the app. It does not replace official Videojet Technologies certification.',
+  cert_popup:'Allow pop-ups to generate the certificate.',
+  q_base:'Which chemical base does ink {c} use?', q_color:'Color of ribbon {g}:',
+  q_tec:'Code {c} belongs to the technology:', q_ref:'Reference @30 °C for solvent consumption {m} ({t}):',
+  q_cas:'CAS component {cas} of SDS {c}:',
+  h_litro:'h / liter', h_cartucho:'h / cartridge {n} ml', usd_hora:'USD / solvent hour', ml_h:'ml/h @ {t} °C',
+  ref_cij:'cij_tintas (documented bases)', ref_ribbons:'tto_ribbons (chart 2.5.26)',
+  ref_err:'codigos_error (draft)', ref_sol:'cij_uso_solvente (verified)', ref_sds:'sds_composicion (validated CAS)'
+});
+Object.assign(I18N.pt, {
+  ex_fuente:'Fonte', fuente_gen:'Gerado (5 níveis)', fuente_banco:'Banco TTO (372)', ex_tipo:'Tipo', tipo_todas:'Todas',
+  self_ok:'Eu dominava', self_no:'A revisar', respuesta_modelo:'Resposta modelo',
+  banco_nota:'Banco de perguntas TTO (372) adaptado do Factronics TTO Lab — es/en/pt.', kpi_banco:'perguntas TTO',
+  buscar:'Pesquisar', curvas:'curvas', items:'itens', tareas:'tarefas', docs:'docs', campo:'Campo', nivel:'nível',
+  tipo_single:'Simples', tipo_multi:'Múltipla', tipo_fill:'Completar', tipo_calc:'Cálculo', tipo_describe:'Descrição',
+  tipo_errorfix:'Caso de falha', tipo_errmap:'Código→significado', tipo_repaso:'Revisão', ex_banco_titulo:'Banco TTO',
+  repaso_t:'Revisão espaçada',
+  repaso_resumen:'Caderno de erros: {err} perguntas · para revisar hoje: {pend} · em acompanhamento: {total}',
+  repaso_hoy:'📅 Revisar hoje ({n})', repaso_err:'📕 Caderno de erros ({n})', repaso_clear:'🗑️ Esvaziar',
+  repaso_confirm:'Esvaziar o caderno de revisão?', constancia:'🎓 Certificado',
+  copia_t:'Cópia de segurança',
+  copia_s:'Exporte ou importe seu perfil local (idioma, tema, histórico de exames e nome). Nada sai do seu dispositivo.',
+  exportar:'⬇️ Exportar cópia', importar:'⬆️ Importar',
+  perfil_t:'Perfil para certificados', perfil_nombre:'Nome e sobrenome', perfil_ph:'Nome do participante', guardar:'Salvar',
+  msg_exportado:'✅ Cópia exportada.', msg_importado:'✅ Cópia importada ({n} registros).',
+  msg_invalido:'❌ Arquivo inválido.', msg_guardado:'✅ Nome salvo.', participante:'Participante',
+  cert_titulo:'Certificado de aproveitamento',
+  cert_sub:'Factronics Videojet Lab · Treinamento técnico Videojet (TTO · CIJ · LASER)',
+  cert_texto:'Concluiu a avaliação {examen} com resultado de {puntos} / {total}.',
+  cert_qr:'Escaneie o QR para ver os dados do resultado.',
+  cert_participante:'Participante', cert_entidad:'Factronics VideoJet Lab',
+  cert_aviso:'Documento gerado offline pelo app. Não substitui a certificação oficial da Videojet Technologies.',
+  cert_popup:'Permita pop-ups para gerar o certificado.',
+  q_base:'Qual base química a tinta {c} usa?', q_color:'Cor do ribbon {g}:',
+  q_tec:'O código {c} pertence à tecnologia:', q_ref:'Referência @30 °C do consumo de solvente {m} ({t}):',
+  q_cas:'Componente CAS {cas} da SDS {c}:',
+  h_litro:'h / litro', h_cartucho:'h / cartucho {n} ml', usd_hora:'USD / hora de solvente', ml_h:'ml/h @ {t} °C',
+  ref_cij:'cij_tintas (bases documentadas)', ref_ribbons:'tto_ribbons (chart 2.5.26)',
+  ref_err:'codigos_error (rascunho)', ref_sol:'cij_uso_solvente (verificado)', ref_sds:'sds_composicion (CAS validado)'
+});
+Object.assign(I18N.it, {
+  ex_fuente:'Fonte', fuente_gen:'Generato (5 livelli)', fuente_banco:'Banca TTO (372)', ex_tipo:'Tipo', tipo_todas:'Tutte',
+  self_ok:'Lo padroneggiavo', self_no:'Da rivedere', respuesta_modelo:'Risposta modello',
+  banco_nota:'Banca di domande TTO (372) adattata da Factronics TTO Lab — contenuto es/en/pt.', kpi_banco:'domande TTO',
+  buscar:'Cerca', curvas:'curve', items:'elementi', tareas:'attività', docs:'documenti', campo:'Campo', nivel:'livello',
+  tipo_single:'Semplice', tipo_multi:'Multipla', tipo_fill:'Completare', tipo_calc:'Calcolo', tipo_describe:'Descrizione',
+  tipo_errorfix:'Caso di guasto', tipo_errmap:'Codice→significato', tipo_repaso:'Ripasso', ex_banco_titulo:'Banca TTO',
+  repaso_t:'Ripasso dilazionato',
+  repaso_resumen:'Quaderno degli errori: {err} domande · da ripassare oggi: {pend} · in monitoraggio: {total}',
+  repaso_hoy:'📅 Ripassa oggi ({n})', repaso_err:'📕 Quaderno degli errori ({n})', repaso_clear:'🗑️ Svuota',
+  repaso_confirm:'Svuotare il quaderno di ripasso?', constancia:'🎓 Attestato',
+  copia_t:'Backup',
+  copia_s:'Esporta o importa il tuo profilo locale (lingua, tema, cronologia esami e nome). Nulla esce dal tuo dispositivo.',
+  exportar:'⬇️ Esporta backup', importar:'⬆️ Importa',
+  perfil_t:'Profilo per gli attestati', perfil_nombre:'Nome e cognome', perfil_ph:'Nome del partecipante', guardar:'Salva',
+  msg_exportado:'✅ Backup esportato.', msg_importado:'✅ Backup importato ({n} record).',
+  msg_invalido:'❌ File non valido.', msg_guardado:'✅ Nome salvato.', participante:'Partecipante',
+  cert_titulo:'Attestato di partecipazione',
+  cert_sub:'Factronics Videojet Lab · Formazione tecnica Videojet (TTO · CIJ · LASER)',
+  cert_texto:'Ha completato la valutazione {examen} con un risultato di {puntos} / {total}.',
+  cert_qr:'Scansiona il QR per visualizzare i dati del risultato.',
+  cert_participante:'Partecipante', cert_entidad:'Factronics VideoJet Lab',
+  cert_aviso:"Documento generato offline dall'app. Non sostituisce la certificazione ufficiale di Videojet Technologies.",
+  cert_popup:"Consenti i pop-up per generare l'attestato.",
+  q_base:'Quale base chimica usa questo inchiostro {c}?', q_color:'Colore del ribbon {g}:',
+  q_tec:'Il codice {c} appartiene alla tecnologia:', q_ref:'Riferimento @30 °C del consumo di solvente {m} ({t}):',
+  q_cas:'Componente CAS {cas} della SDS {c}:',
+  h_litro:'h / litro', h_cartucho:'h / cartuccia {n} ml', usd_hora:'USD / ora solvente', ml_h:'ml/h @ {t} °C',
+  ref_cij:'cij_tintas (basi documentate)', ref_ribbons:'tto_ribbons (chart 2.5.26)',
+  ref_err:'codigos_error (bozza)', ref_sol:'cij_uso_solvente (verificato)', ref_sds:'sds_composicion (CAS validato)'
+});
+Object.assign(I18N.zh, {
+  ex_fuente:'来源', fuente_gen:'自动生成（5 个级别）', fuente_banco:'TTO 题库（372）', ex_tipo:'类型', tipo_todas:'全部',
+  self_ok:'我已掌握', self_no:'待复习', respuesta_modelo:'参考答案',
+  banco_nota:'TTO 题库（372 题），改编自 Factronics TTO Lab — 题目内容为 es/en/pt。', kpi_banco:'TTO 题目',
+  buscar:'搜索', curvas:'条曲线', items:'项目', tareas:'任务', docs:'文档', campo:'字段', nivel:'级别',
+  tipo_single:'单选', tipo_multi:'多选', tipo_fill:'填空', tipo_calc:'计算', tipo_describe:'描述',
+  tipo_errorfix:'故障案例', tipo_errmap:'代码→含义', tipo_repaso:'复习', ex_banco_titulo:'TTO 题库',
+  repaso_t:'间隔复习',
+  repaso_resumen:'错题本：{err} 题 · 今日待复习：{pend} · 跟踪中：{total}',
+  repaso_hoy:'📅 今日复习（{n}）', repaso_err:'📕 错题本（{n}）', repaso_clear:'🗑️ 清空',
+  repaso_confirm:'清空复习本？', constancia:'🎓 证书',
+  copia_t:'备份',
+  copia_s:'导出或导入本地配置（语言、主题、考试记录和姓名）。数据不会离开您的设备。',
+  exportar:'⬇️ 导出备份', importar:'⬆️ 导入',
+  perfil_t:'证书资料', perfil_nombre:'姓名', perfil_ph:'参与者姓名', guardar:'保存',
+  msg_exportado:'✅ 备份已导出。', msg_importado:'✅ 备份已导入（{n} 条记录）。',
+  msg_invalido:'❌ 文件无效。', msg_guardado:'✅ 姓名已保存。', participante:'参与者',
+  cert_titulo:'结业证书',
+  cert_sub:'Factronics Videojet Lab · Videojet 技术培训（TTO · CIJ · 激光）',
+  cert_texto:'已完成 {examen} 考核，成绩为 {puntos} / {total}。',
+  cert_qr:'扫描二维码查看成绩数据。',
+  cert_participante:'参与者', cert_entidad:'Factronics VideoJet Lab',
+  cert_aviso:'本文档由应用离线生成，不能替代 Videojet Technologies 的官方认证。',
+  cert_popup:'请允许弹出窗口以生成证书。',
+  q_base:'墨水 {c} 使用哪种化学基质？', q_color:'色带 {g} 的颜色：',
+  q_tec:'代码 {c} 属于哪种技术：', q_ref:'溶剂消耗 {m}（{t}）在 30 °C 的参考值：',
+  q_cas:'SDS {c} 中 CAS 为 {cas} 的成分：',
+  h_litro:'小时 / 升', h_cartucho:'小时 / 墨盒 {n} ml', usd_hora:'美元 / 小时（溶剂）', ml_h:'ml/h @ {t} °C',
+  ref_cij:'cij_tintas（已记录基质）', ref_ribbons:'tto_ribbons（chart 2.5.26）',
+  ref_err:'codigos_error（草稿）', ref_sol:'cij_uso_solvente（已验证）', ref_sds:'sds_composicion（CAS 已验证）'
+});
 let LANG = localStorage.getItem('fvl_lang') || 'es';
 const t = (k) => (I18N[LANG] && I18N[LANG][k]) || I18N.es[k] || k;
 
@@ -295,6 +477,8 @@ function aplicarIdioma(){
   $$('[data-i18n]').forEach(el => { const k = el.getAttribute('data-i18n'); if (I18N[LANG][k]) el.textContent = I18N[LANG][k]; });
   $('#lang').value = LANG;
   $('#foot').textContent = `${t('kpi_solventes')} · ${t('kpi_partes')} · offline`;
+  $('#q').placeholder = t('buscar') + '...';
+  if ($('#prof_nombre')) $('#prof_nombre').placeholder = t('perfil_ph');
   renderKPIs(); renderFuentes(); renderEstudiar(); renderBuscar(); renderCalc(); renderHistorial();
   if (typeof renderRepaso === 'function') renderRepaso();
 }
@@ -361,7 +545,7 @@ function renderEstudiar(){
       <div class="list" id="tinta_list">${codes.map(c => {
         const x = D.tintas[c];
         return `<div class="row" data-tinta="${esc(c)}" style="cursor:pointer"><span class="n">${esc(c)}</span>
-          <span class="d">${esc((x.b||[]).join(' / '))}${x.col ? ' · ' + esc(x.col) : ''} · ${x.curvas||0} curvas</span></div>`;
+          <span class="d">${esc((x.b||[]).join(' / '))}${x.col ? ' · ' + esc(x.col) : ''} · ${x.curvas||0} ${esc(t('curvas'))}</span></div>`;
       }).join('')}</div><div id="tinta_det"></div>`;
     $('#tinta_list').addEventListener('click', e => {
       const r = e.target.closest('[data-tinta]'); if (r) detalleTinta(r.dataset.tinta);
@@ -374,7 +558,7 @@ function renderEstudiar(){
     box.innerHTML = `<h3 data-i18n="kpi_ribbons">${t('kpi_ribbons')}</h3>
       <div class="list">${D.ribbons.grados.map(g => `<div class="row"><span class="n">${esc(g.g||'')}</span>
         <span class="d">${esc(g.pn||'')} · ${esc(g.col||'')} · ${esc(g.vel??'')} mm/s · ${esc(g.tipo||'')}</span></div>`).join('')}</div>
-      <h3>Items (${D.ribbons.items.length})</h3>
+      <h3>${esc(t('items'))} (${D.ribbons.items.length})</h3>
       <input type="text" id="rib_q" placeholder="${esc(t('buscar'))}..." style="width:100%;margin:6px 0">
       <div class="list" id="rib_list" style="max-height:300px">${D.ribbons.items.map(([n,d]) => `<div class="row"><span class="n">${esc(n)}</span><span class="d">${esc(d)}</span></div>`).join('')}</div>`;
     $('#rib_q').addEventListener('input', e => {
@@ -386,7 +570,7 @@ function renderEstudiar(){
       <div class="chips">${D.modelosLaser.map(m => `<span class="badge">${esc(m)}</span>`).join(' ')}</div>
       <p class="small">${esc(t('partes_de'))}: ${D.partes.filter(p=>p.t==='LASER').length} AL- · ${esc(t('kpi_errores'))}: ${D.errores.filter(e=>e.t==='LASER').length}</p>`;
   } else {
-    box.innerHTML = `<h3>${esc(t('est_mant'))} — ${D.mant.docs.length} docs · ${D.mant.tareas.length} tareas</h3>
+    box.innerHTML = `<h3>${esc(t('est_mant'))} — ${D.mant.docs.length} ${esc(t('docs'))} · ${D.mant.tareas.length} ${esc(t('tareas'))}</h3>
       <div class="list">${D.mant.tareas.map(x => `<div class="row"><span class="badge">${esc(x.tec)}</span><span class="d">${esc(x.iv||'')} · ${esc(x.x)}</span></div>`).join('')}</div>`;
   }
 }
@@ -508,10 +692,10 @@ function calcular(){
   const hrsCart = (entrada.cm && uso) ? entrada.cm / uso : null;
   const costoHora = (uso && precio) ? (uso/1000)*precio : null;
   out.innerHTML = `<div class="grid">
-    <div class="kpi"><b>${uso!==null?uso.toFixed(1):'—'}</b><span>ml/h @ ${temp} °C</span></div>
-    <div class="kpi"><b>${hl?hl.toFixed(0):'—'}</b><span>h / litro</span></div>
-    <div class="kpi"><b>${hrsCart?hrsCart.toFixed(0):'—'}</b><span>h / cartucho ${entrada.cm||''} ml</span></div>
-    <div class="kpi"><b>${costoHora!==null?('$'+costoHora.toFixed(2)):'—'}</b><span>USD / hora solvente</span></div>
+    <div class="kpi"><b>${uso!==null?uso.toFixed(1):'—'}</b><span>${esc(t('ml_h').replace('{t}', temp))}</span></div>
+    <div class="kpi"><b>${hl?hl.toFixed(0):'—'}</b><span>${esc(t('h_litro'))}</span></div>
+    <div class="kpi"><b>${hrsCart?hrsCart.toFixed(0):'—'}</b><span>${esc(t('h_cartucho').replace('{n}', entrada.cm||''))}</span></div>
+    <div class="kpi"><b>${costoHora!==null?('$'+costoHora.toFixed(2)):'—'}</b><span>${esc(t('usd_hora'))}</span></div>
   </div>
   <p class="small">${esc(entrada.b||'')} · ref: ${esc(entrada.r||'—')} · ${badge(entrada.e)}</p>
   <table><thead><tr><th>T (°C)</th><th>ml/h</th></tr></thead><tbody>
@@ -537,31 +721,31 @@ function generarPregunta(nivel){
     const [c,x] = aleatorio(tintas.filter(([,x]) => (x.b||[]).length));
     const base = x.b[0];
     const pool = tintas.map(([,y]) => (y.b||[])[0]).filter(Boolean);
-    return {q:`¿Qué base química usa la tinta ${c}?`, a:base, ops:opciones(base, pool),
-      ref:'cij_tintas (bases documentadas)'};
+    return {q:t('q_base').replace('{c}', c), a:base, ops:opciones(base, pool),
+      ref:t('ref_cij')};
   }
   if (nivel === 2) {
     const g = aleatorio(grados.filter(g => g.col));
-    return {q:`Color del ribbon ${g.g||g.pn}:`, a:g.col, ops:opciones(g.col, grados.map(x=>x.col).filter(Boolean)),
-      ref:'tto_ribbons (chart 2.5.26)'};
+    return {q:t('q_color').replace('{g}', g.g||g.pn), a:g.col, ops:opciones(g.col, grados.map(x=>x.col).filter(Boolean)),
+      ref:t('ref_ribbons')};
   }
   if (nivel === 3) {
     const e = aleatorio(errs);
-    return {q:`El código ${e.c} pertenece a la tecnología:`, a:e.t, ops:opciones(e.t, ['LASER','TTO','CIJ']),
-      ref:'codigos_error (borrador)'};
+    return {q:t('q_tec').replace('{c}', e.c), a:e.t, ops:opciones(e.t, ['LASER','TTO','CIJ']),
+      ref:t('ref_err')};
   }
   if (nivel === 4) {
     const s = aleatorio(D.solventes.filter(s => s.e === 'verificado' && s.r));
-    return {q:`Referencia @30 °C del consumo de solvente ${s.m}${s.v?' '+s.v:''} (${s.t}):`, a:String(s.r)+' ml/h', ops:opciones(String(s.r)+' ml/h', D.solventes.map(x=>String(x.r)+' ml/h')),
-      ref:'cij_uso_solvente (verificado)'};
+    return {q:t('q_ref').replace('{m}', s.m+(s.v?' '+s.v:'')).replace('{t}', s.t), a:String(s.r)+' ml/h', ops:opciones(String(s.r)+' ml/h', D.solventes.map(x=>String(x.r)+' ml/h')),
+      ref:t('ref_sol')};
   }
   const conComp = tintas.filter(([,x]) => (x.fichas||[]).some(f => (f.comp||[]).length));
   if (conComp.length) {
     const [c,x] = aleatorio(conComp);
     const f = aleatorio(x.fichas.filter(f => (f.comp||[]).length));
     const comp = aleatorio(f.comp);
-    return {q:`Componente CAS ${comp.cas} de la SDS ${c}:`, a:comp.n, ops:opciones(comp.n, x.fichas.flatMap(f => (f.comp||[]).map(c=>c.n))),
-      ref:'sds_composicion (CAS validado)'};
+    return {q:t('q_cas').replace('{cas}', comp.cas).replace('{c}', c), a:comp.n, ops:opciones(comp.n, x.fichas.flatMap(f => (f.comp||[]).map(c=>c.n))),
+      ref:t('ref_sds')};
   }
   return {q:'—', a:'—', ops:['—'], ref:'—'};
 }
@@ -628,7 +812,7 @@ function renderExamenGen(){
     const nota = `${bien}/${examen.preguntas.length}`;
     body.insertAdjacentHTML('afterbegin',
       `<div class="card" style="box-shadow:none"><b>${esc(t('ex_score'))}: ${nota}</b> — ${bien} ${esc(t('respuestas'))}
-       <button class="btn" id="cert_btn">🎓 Constancia</button></div>`);
+       <button class="btn" id="cert_btn">${esc(t('constancia'))}</button></div>`);
     $('#cert_btn').addEventListener('click', () => generarConstancia(t(NIVELES[examen.nivel]), bien, examen.preguntas.length));
     guardarHistorial(examen.nivel, bien, examen.preguntas.length);
   });
@@ -638,14 +822,19 @@ function renderExamenGen(){
 /* ---------- examen del banco TTO (7 tipos) ---------- */
 const TIPOS_BANCO = {single:'Simple', multi:'Múltiple', fill:'Completar', calc:'Cálculo',
   describe:'Descripción', errorfix:'Caso de falla', errmap:'Código→significado'};
+function tipoEtiqueta(tipo){
+  const k = 'tipo_' + tipo;
+  const v = t(k);
+  return v === k ? (TIPOS_BANCO[tipo] || tipo) : v;
+}
 function datosIdioma(q, lang){
   const i = q.i || {};
   return i[lang] || i.es || {};
 }
 function renderExamenBanco(){
   const body = $('#ex_body');
-  const etiqueta = examen.tipo === 'todas' ? 'Todas' : (TIPOS_BANCO[examen.tipo] || examen.tipo);
-  body.innerHTML = `<h3>Banco TTO · ${esc(etiqueta)} (${examen.preguntas.length})</h3>
+  const etiqueta = tipoEtiqueta(examen.tipo);
+  body.innerHTML = `<h3>${esc(t('ex_banco_titulo'))} · ${esc(etiqueta)} (${examen.preguntas.length})</h3>
     <p class="small">${esc(t('banco_nota'))}</p>` + examen.preguntas.map((q,i) => {
     const d = datosIdioma(q, LANG);
     let cuerpo = '';
@@ -657,13 +846,13 @@ function renderExamenBanco(){
       cuerpo = (d.f||[]).map(([label,unit,answers,tol],k) => {
         const esNum = (answers||[]).length > 0 && answers.every(a => typeof a === 'number');
         return `
-        <div style="margin:6px 0"><span class="small">${esc(label||('Campo '+(k+1)))}${unit?(' ('+esc(unit)+')'):''}</span><br>
+        <div style="margin:6px 0"><span class="small">${esc(label||(t('campo')+' '+(k+1)))}${unit?(' ('+esc(unit)+')'):''}</span><br>
         <input type="${esNum ? 'number' : 'text'}" ${esNum ? 'step="any"' : ''} data-i="${i}" data-f="${k}" style="max-width:280px"></div>`;
       }).join('');
     } else {
       cuerpo = `<textarea data-i="${i}" rows="3" style="width:100%" placeholder="..."></textarea>`;
     }
-    const meta = `<div class="small">#${esc(q.id)} · ${esc(TIPOS_BANCO[q.t]||q.t)} · ${esc((q.m||[]).join(', '))}${q.d?(' · nivel '+q.d):''}</div>`;
+    const meta = `<div class="small">#${esc(q.id)} · ${esc(tipoEtiqueta(q.t))} · ${esc((q.m||[]).join(', '))}${q.d?(' · '+t('nivel')+' '+q.d):''}</div>`;
     return `<div class="q" data-i="${i}"><div><b>${i+1}.</b> ${esc(d.q||'')}</div>${meta}${cuerpo}<div class="small" data-res="${i}"></div></div>`;
   }).join('') +
   `<button class="btn primary" id="ex_send">${esc(t('ex_send'))}</button>
@@ -755,10 +944,10 @@ function renderExamenBanco(){
     });
     const total = examen.preguntas.length;
     const nota = `${(Math.round(puntos*10)/10)}/${total}`;
-    const etiqueta = 'Banco TTO · ' + (TIPOS_BANCO[examen.tipo]||examen.tipo);
+    const etiqueta = t('ex_banco_titulo') + ' · ' + tipoEtiqueta(examen.tipo);
     body.insertAdjacentHTML('afterbegin',
       `<div class="card" style="box-shadow:none"><b>${esc(t('ex_score'))}: ${nota}</b> — ${Math.round(puntos*10)/10} ${esc(t('respuestas'))}
-       <button class="btn" id="cert_btn">🎓 Constancia</button></div>`);
+       <button class="btn" id="cert_btn">${esc(t('constancia'))}</button></div>`);
     $('#cert_btn').addEventListener('click', () => generarConstancia(etiqueta, Math.round(puntos*10)/10, total));
     guardarHistorial(etiqueta, Math.round(puntos*10)/10, total);
     renderRepaso();
@@ -796,7 +985,7 @@ function exportarCopia(){
   a.download = 'factronics-backup-' + new Date().toISOString().slice(0,10) + '.json';
   a.click();
   URL.revokeObjectURL(a.href);
-  $('#bk_msg').textContent = '✅ Copia exportada.';
+  $('#bk_msg').textContent = t('msg_exportado');
 }
 function importarCopia(archivo){
   const lector = new FileReader();
@@ -808,9 +997,9 @@ function importarCopia(archivo){
       if (d.perfil && typeof d.perfil.nombre === 'string') localStorage.setItem('fvl_profile', d.perfil.nombre);
       if (Array.isArray(d.historial)) localStorage.setItem('fvl_exam_history', JSON.stringify(d.historial.slice(0, 50)));
       aplicarTema(); aplicarIdioma();
-      $('#bk_msg').textContent = '✅ Copia importada (' + ((d.historial||[]).length) + ' registros).';
+      $('#bk_msg').textContent = t('msg_importado').replace('{n}', (d.historial||[]).length);
     } catch (e) {
-      $('#bk_msg').textContent = '❌ Archivo no válido.';
+      $('#bk_msg').textContent = t('msg_invalido');
     }
   };
   lector.readAsText(archivo);
@@ -851,14 +1040,14 @@ function renderRepaso(){
   const pend = repasoPendientes().length;
   const err = repasoErrores().length;
   const total = Object.keys(r).length;
-  box.innerHTML = `<h3>Repaso espaciado</h3>
-    <p class="small">Cuaderno de errores: <b>${err}</b> preguntas · para repasar hoy: <b>${pend}</b> · en seguimiento: ${total}</p>
-    <button class="btn" id="rp_due" ${pend?'':'disabled'}>📅 Repasar hoy (${pend})</button>
-    <button class="btn" id="rp_err" ${err?'':'disabled'}>📕 Cuaderno de errores (${err})</button>
-    <button class="btn" id="rp_clear" ${total?'':'disabled'}>🗑️ Vaciar</button>`;
+  box.innerHTML = `<h3>${esc(t('repaso_t'))}</h3>
+    <p class="small">${esc(t('repaso_resumen').replace('{err}', err).replace('{pend}', pend).replace('{total}', total))}</p>
+    <button class="btn" id="rp_due" ${pend?'':'disabled'}>${esc(t('repaso_hoy').replace('{n}', pend))}</button>
+    <button class="btn" id="rp_err" ${err?'':'disabled'}>${esc(t('repaso_err').replace('{n}', err))}</button>
+    <button class="btn" id="rp_clear" ${total?'':'disabled'}>${esc(t('repaso_clear'))}</button>`;
   $('#rp_due').onclick = () => iniciarRepaso('due');
   $('#rp_err').onclick = () => iniciarRepaso('errores');
-  $('#rp_clear').onclick = () => { if (confirm('¿Vaciar el cuaderno de repaso?')) { localStorage.removeItem('fvl_review'); renderRepaso(); } };
+  $('#rp_clear').onclick = () => { if (confirm(t('repaso_confirm'))) { localStorage.removeItem('fvl_review'); renderRepaso(); } };
 }
 function iniciarRepaso(modo){
   if (!window.BANCO_TTO) return;
@@ -870,8 +1059,9 @@ function iniciarRepaso(modo){
   window.scrollTo({top: document.getElementById('ex_body').offsetTop - 80, behavior:'smooth'});
 }
 function generarConstancia(etiqueta, puntos, total){
-  const nombre = (localStorage.getItem('fvl_profile') || '').trim() || 'Participante';
-  const fecha = new Date().toLocaleDateString();
+  const nombre = (localStorage.getItem('fvl_profile') || '').trim() || t('participante');
+  const locales = {es:'es-VE', en:'en-US', pt:'pt-BR', it:'it-IT', zh:'zh-CN'};
+  const fecha = new Date().toLocaleDateString(locales[LANG] || 'es-VE');
   const payload = JSON.stringify({app:'FVL', v:(D.meta||{}).version||'', examen: etiqueta, puntos, total, fecha});
   let imgSrc = '';
   try {
@@ -885,9 +1075,14 @@ function generarConstancia(etiqueta, puntos, total){
     }
   } catch (e) {}
   const w = window.open('', '_blank');
-  if (!w) { alert('Permite las ventanas emergentes para generar la constancia.'); return; }
+  if (!w) { alert(t('cert_popup')); return; }
   const logo = 'https://khristyanhidalgo-factronics.github.io/factronics-videojet-lab/assets/logo.svg';
-  w.document.write('<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Constancia — ' + nombre + '</title>'
+  const texto = t('cert_texto')
+    .replace('{examen}', '<b>' + esc(etiqueta) + '</b>')
+    .replace('{puntos}', '<b>' + esc(puntos) + '</b>')
+    .replace('{total}', '<b>' + esc(total) + '</b>');
+  w.document.write('<!DOCTYPE html><html lang="' + LANG + '"><head><meta charset="utf-8"><title>'
+    + esc(t('cert_titulo')) + ' — ' + esc(nombre) + '</title>'
     + '<style>body{font-family:Georgia,\'Times New Roman\',serif;margin:0;padding:40px;color:#111}'
     + '.cert{max-width:760px;margin:0 auto;border:2px solid #1e3a8a;padding:36px;border-radius:8px}'
     + 'h1{text-align:center;font-size:30px;margin:6px 0}.sub{text-align:center;color:#475569;margin-bottom:24px}'
@@ -898,15 +1093,15 @@ function generarConstancia(etiqueta, puntos, total){
     + '.nota{font-size:11px;color:#64748b;margin-top:26px;text-align:center}'
     + '@media print{body{padding:0}.cert{border:none}}</style></head><body><div class="cert">'
     + '<div style="text-align:center"><img src="' + logo + '" width="64" alt="logo"></div>'
-    + '<h1>Constancia de aprovechamiento</h1>'
-    + '<div class="sub">Factronics Videojet Lab · Entrenamiento técnico Videojet (TTO · CIJ · LÁSER)</div>'
-    + '<div class="nombre">' + nombre + '</div>'
-    + '<p style="text-align:center">Ha completado la evaluación <b>' + etiqueta + '</b> con un resultado de <b>' + puntos + ' / ' + total + '</b>.</p>'
-    + '<div class="detalle"><span>📅 ' + fecha + '</span><span>📱 App v' + ((D.meta||{}).version||'') + '</span></div>'
+    + '<h1>' + esc(t('cert_titulo')) + '</h1>'
+    + '<div class="sub">' + esc(t('cert_sub')) + '</div>'
+    + '<div class="nombre">' + esc(nombre) + '</div>'
+    + '<p style="text-align:center">' + texto + '</p>'
+    + '<div class="detalle"><span>📅 ' + esc(fecha) + '</span><span>📱 App v' + esc((D.meta||{}).version||'') + '</span></div>'
     + '<div class="qr">' + (imgSrc ? '<img src="' + imgSrc + '" alt="QR de verificación">' : '')
-    + '<div class="nota">Escanea el QR para ver los datos del resultado.</div></div>'
-    + '<div class="firma"><span>____________________<br>Participante</span><span>____________________<br>Factronics VideoJet Lab</span></div>'
-    + '<div class="nota">Documento generado offline por la app. No sustituye la certificación oficial de Videojet Technologies.</div>'
+    + '<div class="nota">' + esc(t('cert_qr')) + '</div></div>'
+    + '<div class="firma"><span>____________________<br>' + esc(t('cert_participante')) + '</span><span>____________________<br>' + esc(t('cert_entidad')) + '</span></div>'
+    + '<div class="nota">' + esc(t('cert_aviso')) + '</div>'
     + '</div><script>window.onload=function(){setTimeout(function(){window.print();},400);}<\/script></body></html>');
   w.document.close();
 }
@@ -914,7 +1109,7 @@ const profInput = $('#prof_nombre');
 if (profInput) profInput.value = localStorage.getItem('fvl_profile') || '';
 $('#prof_guardar').addEventListener('click', () => {
   localStorage.setItem('fvl_profile', profInput.value.trim());
-  $('#prof_msg').textContent = '✅ Nombre guardado.';
+  $('#prof_msg').textContent = t('msg_guardado');
 });
 
 /* ================= arranque ================= */
@@ -922,7 +1117,7 @@ aplicarTema();
 aplicarIdioma();
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', aplicarTema);
 if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
-  navigator.serviceWorker.register('sw.js').catch(() => {});
+  navigator.serviceWorker.register('sw.js', {updateViaCache: 'none'}).catch(() => {});
 }
 </script>
 </body>

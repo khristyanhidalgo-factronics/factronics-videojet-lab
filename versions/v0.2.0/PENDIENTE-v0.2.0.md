@@ -12,7 +12,7 @@
 
 ## Superar la referencia (cuenta personal)
 - [x] ~~`version.json` + `docs/notas.html` con índice SHA-256~~ → hecho (`tools/publicar_notas.py`).
-- [ ] Idiomas IT y ZH (el catálogo de referencia ya los tiene).
+- [x] ~~Idiomas IT y ZH~~ → interfaz en 5 idiomas (ES/EN/PT/IT/ZH), cadenas dinámicas y constancia traducidas; banco TTO en es/en/pt con respaldo documentado.
 - [x] ~~Resultado con QR + constancia imprimible~~ → botón 🎓 Constancia con QR offline (`vendor/qrcode.js`).
 - [x] ~~Repaso espaciado y cuaderno de errores~~ → cajas 1–5, pendientes del día y errores acumulados.
 - [x] ~~CI de validadores~~ (JSON, notas SHA-256, app, enlaces) → `tools/validar_repo.py` + workflow, más `tools/test_banco_tto.py` (372 preguntas × 3 idiomas) en el mismo CI.
@@ -25,6 +25,7 @@
 - [x] ~~Página pública de notas `docs/notas.html` + CI~~ → publicada con SHA-256.
 - [ ] **Temas festivos** por país (Venezuela base) sobre el tema claro/oscuro/sistema.
 - [ ] Más variedad de preguntas por nivel y banco separado por tecnología.
+- [ ] Traducir el banco TTO a IT/ZH (372 × 2 preguntas) si se necesita contenido completo en esos idiomas.
 
 ## Datos (continuación)
 - [ ] Tablas de partes CIJ (`partes_cij`) tras OCR/revisión de la columna de números.
