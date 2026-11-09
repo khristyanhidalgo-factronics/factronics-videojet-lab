@@ -20,11 +20,10 @@ def ruta(*partes):
 
 
 def sha256(archivo):
-    h = hashlib.sha256()
+    # Huella estable entre Windows (CRLF) y Linux (LF): se normaliza a LF.
     with open(archivo, 'rb') as f:
-        for b in iter(lambda: f.read(65536), b''):
-            h.update(b)
-    return h.hexdigest()
+        datos = f.read().replace(b'\r\n', b'\n')
+    return hashlib.sha256(datos).hexdigest()
 
 
 def validar_json():

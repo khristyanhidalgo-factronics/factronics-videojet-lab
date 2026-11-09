@@ -25,11 +25,10 @@ CONSTRUCCION = 4
 
 
 def sha256(ruta):
-    h = hashlib.sha256()
+    # Huella estable entre Windows (CRLF) y Linux (LF): se normaliza a LF.
     with open(ruta, 'rb') as f:
-        for bloque in iter(lambda: f.read(65536), b''):
-            h.update(bloque)
-    return h.hexdigest()
+        datos = f.read().replace(b'\r\n', b'\n')
+    return hashlib.sha256(datos).hexdigest()
 
 
 def recopilar():
@@ -65,7 +64,9 @@ def escribir_indice(versiones):
         'version_actual': VERSION_ACTUAL,
         'estado_actual': 'alfa',
         'nota': ('Indice maestro de versiones. Incluye SHA-256 de cada nota: si un archivo '
-                 'cambia, el hash deja de coincidir (las notas publicadas no se editan).'),
+                 'cambia, el hash deja de coincidir (las notas publicadas no se editan). '
+                 'La huella se calcula sobre el contenido normalizado a LF para que sea '
+                 'identica en Windows y Linux.'),
         'tipos_de_nota': {
             'PLAN': 'versions/vX.Y.Z/PLAN-vX.Y.Z.md',
             'BITACORA': 'versions/vX.Y.Z/BITACORA-vX.Y.Z.md',
@@ -78,6 +79,7 @@ def escribir_indice(versiones):
             'Las notas publicadas (congeladas) no se editan nunca',
             'El PENDIENTE de cada version alimenta el PLAN de la siguiente',
             'Los SHA-256 publicados permiten detectar cualquier cambio posterior',
+            'La huella se calcula sobre el contenido normalizado a LF (estable Windows/Linux)',
         ],
     }
     with open(ruta, 'w', encoding='utf-8') as f:
