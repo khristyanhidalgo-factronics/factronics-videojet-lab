@@ -47,8 +47,9 @@
       `datos/analisis/auditoria_partes_cij.csv`) ya comprobó bloque, línea, P/N,
       descripción base y cantidad de los 1.397 registros: 0 P/N fuera de línea,
       0 cantidades distintas y solo los 3 conflictos conocidos como descripciones
-      no localizadas (399239, 399474, 399475). Queda la revisión visual humana de
-      esos 4 casos y el muestreo de páginas.
+      no localizadas (399239, 399474, 399475). La evidencia impresa de esos
+      4 casos está en `datos/analisis/conflictos_cij.md`; queda la revisión
+      visual humana de las páginas y el muestreo.
 - [ ] Simplicity/EquivalenciaTintas: mapeo GID pendiente.
 - [ ] Partes 4–12 del repo global `Proyecto-Simplicity-Global` (hoy 3/12).
 - [ ] 31 escaneados láser sin JPEG (rasterizado/OCR si aportan).

@@ -22,6 +22,11 @@
       descripciones sin P/N localizadas y 592/596 descripciones de partes
       localizadas; las 4 restantes son los 3 conflictos ya marcados (399239,
       399474, 399475). Evidencia: `datos/analisis/auditoria_partes_cij.csv`.
+- [x] **Evidencia de conflictos CIJ:** `datos/analisis/conflictos_cij.md` reúne
+      las descripciones impresas de 399239, 399474 y 399475 con documento,
+      tabla e ítem; `datos/analisis/LEEME.md` documenta los archivos de
+      análisis. Los 3 P/N siguen en `borrador` con
+      `conflicto_descripciones=true`.
 
 ## App (PWA)
 - [x] `docs/app/index.html` — Inicio, Estudiar (tintas/ribbons/láser/mantenimiento),
