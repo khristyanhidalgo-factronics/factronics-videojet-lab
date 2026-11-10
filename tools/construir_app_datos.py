@@ -25,6 +25,7 @@ def main():
     solvente = cargar('cij_uso_solvente.json')
     tintas = cargar('cij_tintas.json')
     partes_tto = cargar('partes_tto.json')
+    partes_cij = cargar('partes_cij.json')
     laser_partes = cargar('laser_partes.json')
     errores = cargar('codigos_error.json')
     ribbons = cargar('tto_ribbons.json')
@@ -42,6 +43,7 @@ def main():
             'fuentes': {'solventes': 'CIJ Makeup Usage Model v14 (802/802)',
                         'tintas': 'fichas QSS descifradas + brochures + uso de solvente',
                         'ttO': 'Excel de curso + chart de ribbons 2.5.26',
+                        'cij': '6 IPL 1000VJ (1210/1510, 1220/1520, 1520E, 1610 DH, 1620E, 1650)',
                         'laser': 'manuales CO2/Fibra + SpareParts',
                         'errores': 'listas oficiales de error',
                         'mantenimiento': 'manuales y procedimientos'},
@@ -130,6 +132,16 @@ def main():
         if not desc and descripciones:
             desc = descripciones[0].get('texto', '')
         paquete['partes'].append({'n': numero, 'd': str(desc)[:220], 't': 'TTO'})
+    # partes CIJ (6 IPL; se conserva el estado y los modelos)
+    for p in partes_cij.get('partes', []):
+        paquete['partes'].append({
+            'n': p['pn'],
+            'd': (p.get('descripcion') or '')[:220],
+            't': 'CIJ',
+            'm': ', '.join(p.get('modelos') or []),
+            'e': p.get('estado'),
+            'c': bool(p.get('conflicto_descripciones')),
+        })
     # partes LASER
     for p in laser_partes.get('partes', []):
         paquete['partes'].append({'n': p['numero_parte'],
@@ -143,11 +155,12 @@ def main():
         json.dump(paquete, f, ensure_ascii=False, separators=(',', ':'))
         f.write(';\n')
     tam = os.path.getsize(SALIDA)
-    print('OK %s (%.1f KB) | solventes=%d tintas=%d partes=%d errores=%d '
-          'ribbons=%d/%d mant=%d/%d modelos_laser=%d'
+    print('OK %s (%.1f KB) | solventes=%d tintas=%d partes=%d (CIJ=%d) '
+          'errores=%d ribbons=%d/%d mant=%d/%d modelos_laser=%d'
           % (os.path.relpath(SALIDA, RAIZ), tam / 1024.0,
              len(paquete['solventes']), len(paquete['tintas']),
-             len(paquete['partes']), len(paquete['errores']),
+             len(paquete['partes']),
+             len(partes_cij.get('partes', [])), len(paquete['errores']),
              len(paquete['ribbons']['grados']), len(paquete['ribbons']['items']),
              len(paquete['mant']['docs']), len(paquete['mant']['tareas']),
              len(paquete['modelosLaser'])))

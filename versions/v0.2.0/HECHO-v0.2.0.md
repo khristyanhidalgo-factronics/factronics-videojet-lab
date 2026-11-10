@@ -3,22 +3,25 @@
 > Lista de lo **completado y entregado** en la v0.2.0. Se actualiza a medida que avanza.
 
 ## Datos para la app
-- [x] **`tools/construir_app_datos.py`** → `docs/app/datos.js` (663,9 KB): paquete compacto
+- [x] **`tools/construir_app_datos.py`** → `docs/app/datos.js` (692,0 KB): paquete compacto
       con estados por dato.
 - [x] Incluye: 802 curvas de solvente, 134 tintas (bases, color, SDS con CAS/% y
-      propiedades), **2.690 partes** (120 TTO + 2.570 LÁSER), 231 códigos de error,
+      propiedades), **2.890 partes** (120 TTO + 200 CIJ + 2.570 LÁSER), 231 códigos de error,
       64 grados + 694 ítems de ribbons, mantenimiento (48 docs / 39 tareas), 21 modelos
       láser.
+- [x] **Partes CIJ de 6 IPL 1000VJ**: 1.397 registros, **200 P/N únicos** (124
+      verificados + 76 borradores; 0 por-definir) y 805 ítems sin P/N conservados como
+      evidencia. Buscador por P/N, descripción y modelo; estado y conflictos visibles.
 
 ## App (PWA)
 - [x] `docs/app/index.html` — Inicio, Estudiar (tintas/ribbons/láser/mantenimiento),
       Buscar unificado con filtros, Calcular, Examen, Aviso.
-- [x] i18n **es/en/pt** para la interfaz; tema claro/oscuro/sistema con persistencia.
+- [x] i18n **es/en/pt/it/zh** para la interfaz; tema claro/oscuro/sistema con persistencia.
 - [x] Detalle de tinta con tabla de composición (nombre, CAS, %, estado) y propiedades.
 - [x] Calculadora CIJ: interpolación 10–40 °C, ml/h, h/L, h/cartucho, costo/hora;
       aviso para `sin-datos-en-documento`.
 - [x] Exámenes de 5 niveles generados de datos reales, corrección con referencia e
-      historial local.
+      historial local; el nivel 3 incluye preguntas de **parte CIJ → descripción**.
 - [x] **Offline:** `manifest.webmanifest` + `sw.js` (precache y cache-first) + icono SVG;
       instalación como PWA desde el navegador.
 

@@ -13,14 +13,16 @@ estudiar, buscar partes, calcular consumos y practicar exámenes por niveles —
    - Tintas CIJ: bases químicas, color, curvas y fichas SDS (composición con CAS/%, propiedades).
    - Ribbons TTO: 64 grados (PN, color, velocidad, durabilidad, tipo, film) y 694 ítems.
    - LÁSER: 21 modelos documentados y partes `AL-` (enlazado al buscador).
+   - CIJ: 200 números de parte de 6 IPL de la serie 1000 (1210/1510, 1220/1520,
+     1520E, 1610 DH, 1620E, 1650/1650 UHS HR), con estado y modelos.
    - Mantenimiento: documentos y tareas con intervalo (estado borrador visible).
-2. **Buscar** unificado: partes (2.690: TTO + LÁSER), tintas, códigos de error (231),
+2. **Buscar** unificado: partes (2.890: TTO + CIJ + LÁSER), tintas, códigos de error (231),
    ribbons y mantenimiento, con filtros por tipo.
 3. **Calcular**: consumo de solvente CIJ por curva oficial (10–40 °C), interpolación por
    temperatura, horas por litro y por cartucho, y costo/hora con precio del solvente.
 4. **Examen** por 5 niveles y N preguntas, **generadas de datos reales** (tinta→base,
-   ribbon→color, código→tecnología, consumo de referencia, CAS→componente), corrección
-   con referencia a la fuente e historial local.
+   ribbon→color, código→tecnología, parte CIJ→descripción, consumo de referencia,
+   CAS→componente), corrección con referencia a la fuente e historial local.
 5. **i18n** es/en/pt para la interfaz; **tema** claro/oscuro/sistema; **offline** vía
    service worker; instalación como PWA (manifest + icono).
 

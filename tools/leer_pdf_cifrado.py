@@ -656,9 +656,17 @@ TOKENS_POS = re.compile(
 
 
 def runs_de_flujo(dato, fuentes):
-    """Corridas de texto con coordenadas VISUALES: [(y, x, texto)]. Implementa el
-    modelo basico de matrices de texto (Tm/Td/TD/T*/TL/Tj/TJ/'/") y la matriz
-    grafica (q/Q/cm) para que el orden sea el visual real de la pagina."""
+    """Corridas de texto con coordenadas VISUALES: [(y, x, texto)].
+
+    Implementa el modelo de matrices de texto del spec PDF:
+    - Tm fija la matriz de texto y la de linea.
+    - Td/TD/T* trasladan la matriz de linea y copian a la de texto.
+    - La escala de la fuente vive en Tm (a,b,c,d); Tf solo da el tamano
+      nominal en espacio de texto.
+    - Los numeros de TJ son ajustes de kerning en milisimas de espacio de
+      texto: se aplican a la matriz de texto (no a la de linea).
+    Asi las columnas de las tablas quedan en su x real.
+    """
     pila = []
     en_array = None
     runs = []
@@ -678,15 +686,19 @@ def runs_de_flujo(dato, fuentes):
                 e1 * a2 + f1 * c2 + e2, e1 * b2 + f1 * d2 + f2]
 
     def emitir(txt):
-        if not txt or not txt.strip():
+        if not txt:
             return
-        x = lm[4] + tm[4]
-        y = lm[5] + tm[5]
-        X = ctm[0] * x + ctm[2] * y + ctm[4]
-        Y = ctm[1] * x + ctm[3] * y + ctm[5]
-        runs.append((round(Y, 1), round(X, 1), txt))
-        # avance aproximado de la linea (sin metricas de fuente): ancho medio 0.45em
-        lm[4] += len(txt) * tamano * 0.45
+        if txt.strip():
+            x = tm[4]
+            y = tm[5]
+            X = ctm[0] * x + ctm[2] * y + ctm[4]
+            Y = ctm[1] * x + ctm[3] * y + ctm[5]
+            runs.append((round(Y, 1), round(X, 1), txt))
+        # avance aproximado en espacio de texto; la parte lineal de tm lo
+        # convierte a unidades de usuario (incluye la escala de la fuente).
+        dx = len(txt) * tamano * 0.45
+        tm[4] += dx * tm[0]
+        tm[5] += dx * tm[1]
 
     for m in TOKENS_POS.finditer(dato):
         t = m.group(0)
@@ -731,6 +743,7 @@ def runs_de_flujo(dato, fuentes):
         nombres = [x for x in pila if isinstance(x, tuple) and x[0] == 'nombre']
         arrays = [x[1] for x in pila if isinstance(x, tuple) and x[0] == 'array']
 
+
         if op == 'q':
             pila_ctm.append(list(ctm))
         elif op == 'Q':
@@ -743,29 +756,51 @@ def runs_de_flujo(dato, fuentes):
             fuente = fuentes.get(nombres[-1][1]) if nombres else fuente
         elif op == 'Tm' and len(numeros) >= 6:
             tm = list(numeros[-6:])
-            lm = list(numeros[-6:])
+            lm = list(tm)
         elif op in ('Td', 'TD') and len(numeros) >= 2:
             tx, ty = numeros[-2], numeros[-1]
-            lm[4] += tx
-            lm[5] += ty
+            # Td = trasladar en espacio de texto: se concatena con la matriz
+            # de linea (la escala de la fuente vive en lm), no se suma directo.
+            lm = multiplicar([1.0, 0.0, 0.0, 1.0, tx, ty], lm)
+            tm = list(lm)
             if op == 'TD':
                 leading = -ty
         elif op == 'T*':
-            lm[5] -= leading if leading else tamano * 1.2
+            dy = -(leading if leading else tamano * 1.2)
+            lm = multiplicar([1.0, 0.0, 0.0, 1.0, 0.0, dy], lm)
+            tm = list(lm)
         elif op == 'TL' and numeros:
             leading = numeros[-1]
         elif op == 'Tj' and textos:
             emitir(textos[-1])
         elif op == 'TJ' and arrays:
-            # un TJ es UNA corrida de texto: sus strings se concatenan sin espacios
-            # (los numeros intermedios son ajustes de kerning, no separadores)
-            texto = ''.join(e for e in arrays[-1] if isinstance(e, str))
-            emitir(texto)
+            # Cada cadena del TJ se emite por separado; los numeros intermedios
+            # son ajustes de kerning en milisimas de espacio de texto.
+            # Un ajuste enorme (|n| >= 1000) es un salto de columna de tabla:
+            # se marca con un separador de celda (US, \x1f) para que el parser
+            # reconstruya las celdas sin depender de la x aproximada.
+            for elem in arrays[-1]:
+                if isinstance(elem, str):
+                    emitir(elem)
+                else:
+                    if abs(elem) >= 1000:
+                        x = tm[4]
+                        y = tm[5]
+                        X = ctm[0] * x + ctm[2] * y + ctm[4]
+                        Y = ctm[1] * x + ctm[3] * y + ctm[5]
+                        runs.append((round(Y, 1), round(X, 1), '\x1f'))
+                    dx = -elem / 1000.0 * tamano
+                    tm[4] += dx * tm[0]
+                    tm[5] += dx * tm[1]
         elif op == "'" and textos:
-            lm[5] -= leading if leading else tamano * 1.2
+            dy = -(leading if leading else tamano * 1.2)
+            lm = multiplicar([1.0, 0.0, 0.0, 1.0, 0.0, dy], lm)
+            tm = list(lm)
             emitir(textos[-1])
         elif op == '"' and textos:
-            lm[5] -= leading if leading else tamano * 1.2
+            dy = -(leading if leading else tamano * 1.2)
+            lm = multiplicar([1.0, 0.0, 0.0, 1.0, 0.0, dy], lm)
+            tm = list(lm)
             emitir(textos[-1])
         pila = []
     return runs
@@ -775,7 +810,8 @@ def lineas_de_runs(runs, tolerancia_y=1.5):
     """Agrupa corridas por linea visual (y) y ordena por x dentro de cada linea."""
     if not runs:
         return ''
-    ordenados = sorted(runs, key=lambda r: (-r[0], r[1]))
+    ordenados = sorted((r for r in runs if r[2] != '\x1f'),
+                       key=lambda r: (-r[0], r[1]))
     lineas = []
     actual = None
     for y, x, txt in ordenados:
@@ -798,8 +834,11 @@ def lineas_de_runs(runs, tolerancia_y=1.5):
     return '\n'.join(salida)
 
 
-def extraer_visual(ruta):
-    """Como extraer() pero ordena el texto por posicion (lectura visual real)."""
+def extraer_runs_visual(ruta):
+    """Extrae las corridas con coordenadas por bloque: [(num_objeto, runs, texto)].
+
+    Cada run es (y, x, texto). Es la base para parsear tablas por filas y
+    columnas reales (el texto lineal pierde la separacion P/N / descripcion)."""
     b = open(ruta, 'rb').read()
     handler = leer_handler(b)
     if handler is None and b'/Encrypt' in b:
@@ -808,8 +847,7 @@ def extraer_visual(ruta):
     if handler:
         dicts.update(objetos_objstm(b, dicts, handler))
     fuentes = fuentes_del_pdf(b, dicts, handler)
-    partes = []
-    bloques = 0
+    bloques = []
     for m in PATRON_STREAM.finditer(b):
         cabecera = b[max(0, m.start() - 320):m.start()]
         om = None
@@ -836,12 +874,17 @@ def extraer_visual(ruta):
             continue
         if b'BT' not in dato:
             continue
-        bloques += 1
         runs = runs_de_flujo(dato, fuentes)
         t = lineas_de_runs(runs)
         if t.strip():
-            partes.append(t)
-    return partes, bloques, handler is not None
+            bloques.append((num, runs, t))
+    return bloques, handler is not None
+
+
+def extraer_visual(ruta):
+    """Como extraer() pero ordena el texto por posicion (lectura visual real)."""
+    bloques, cifrado = extraer_runs_visual(ruta)
+    return [t for _, _, t in bloques], len(bloques), cifrado
 
 
 def main():

@@ -1,9 +1,9 @@
 {
   "producto": "Factronics Videojet Lab",
   "schema": 1,
-  "actualizado": "2026-11-08",
-  "estado_general": "en-extraccion",
-  "nota_de_fuentes": "Fase 1 en curso. Datos extraidos de fuentes del equipo: partes TTO 6x30, uso de solvente CIJ 802/802, fichas QSS 564/564 DESCIFRADAS (handler estandar RC4 128 bits, contrasena de usuario vacia) y extraidas con CMaps ToUnicode (17,4 M caracteres); composicion seccion 3 de 547 fichas SDS estructurada (1.773 componentes con CAS/porcentaje/GHS); dataset tintas CIJ v1 (134 tintas, bases y curvas verificadas + colores del brochure US en borrador); decodificador calibrado v2 de fuentes subset para IPL/TS2205. Ningun dato inventado; estados: verificado | borrador | sin-datos-en-documento | por-definir | borrador-decodificado.",
+  "actualizado": "2026-11-10",
+  "estado_general": "app-pwa-alpha",
+  "nota_de_fuentes": "Fase 2 en curso (PWA offline v0.2.0-alpha). Datos extraidos de fuentes del equipo: partes TTO 6x30, uso de solvente CIJ 802/802, fichas QSS 564/564 DESCIFRADAS (handler estandar RC4 128 bits, contrasena de usuario vacia) y extraidas con CMaps ToUnicode; composicion seccion 3 de 547 fichas SDS estructurada (1.773 componentes con CAS/porcentaje/GHS); dataset tintas CIJ (134 tintas); partes CIJ de 6 IPL 1000VJ (200 P/N, 124 verificados + 76 borradores); partes LASER (2.570 AL-) y TTO (120). Ningun dato inventado; estados: verificado | borrador | sin-datos-en-documento | por-definir | borrador-decodificado.",
   "fuentes_locales_descripcion": [
     {
       "id": "cij-solventes",
@@ -33,8 +33,8 @@
       "cubre": [
         "CIJ"
       ],
-      "estado_extraccion": "9 de 9 PDFs IPL extraidos a texto con tools/lote_ipl.py (resumen en datos/extraccion/_lote_ipl_resumen.json); decodificador v2 tools/decodificar_cipher_offset.py con decision por bloque: IPL 1550 y 1650 con corridas legibles - Illustrated Parts List, Ink Cartridge, Makeup Cartridge, Printhead, Gasket Kit, Printer Wall Mount; salidas *_dec.txt en datos/extraccion. Estado del dato: BORRADOR | decodificador v2 por bloque ejecutado: corridas legibles en IPL 1550/1650; numeros de parte aun sin verificar. | reintento VISUAL v3: los rotulos mejoran, pero las columnas de NUMEROS de parte siguen en fuente subset sin ToUnicode: extras 1 numero de 6 digitos en todo el IPL 1550. Se mantiene bloqueado partes_cij.",
-      "aviso": "Los IPL usan fuentes subset desplazadas (offset calibrado +29 verificable) MEZCLADAS en el mismo documento con otras fuentes correctas o irreparables; la cobertura de la decodificacion es parcial por bloque y los NUMEROS DE PARTE siguen sin poder verificarse automaticamente. No se estrutura partes_cij hasta poder cruzar cada numero contra el PDF original (borrador-decodificado no alcanza para datos estructurados)."
+      "estado_extraccion": "6 archivos IPL estructurados (7 modelos: 1210/1510, 1220/1520, 1520E, 1610 DH, 1620E, 1650/1650 UHS HR): datos/partes_cij.json con 1.397 registros, 200 P/N unicos (124 verificados + 76 borradores, 0 por-definir) y 805 items sin P/N conservados como evidencia. Pendientes los IPL 1550 y 1710.",
+      "aviso": "La extraccion visual v3 + parser v5 ya separa P/N, descripcion, cantidad y designador; los P/N se validaron con muestras visuales (1210 p27/p50, 1220 p33, 1610 p11, 1620E p48, 1650 b51). El P/N 399475 aparece con dos descripciones incompatibles en el propio manual y queda marcado como borrador/conflicto. Los 805 items sin P/N son hardware o filas sin numero en el documento: no se reconstruyen."
     },
     {
       "id": "cij-tintas",
@@ -174,6 +174,13 @@
       "estado": "borrador",
       "fuente": "textos extraidos laser_*/tto_* (manuales, procedimientos de limpieza, servicio y reemplazo)",
       "resumen": "48 documentos de mantenimiento/limpieza/servicio/reemplazo y 39 tareas con intervalo (diario/semanal/mensual/anual/cada N horas). Estado borrador: revisar contra el manual antes de usar como procedimiento."
+    },
+    "partes_cij": {
+      "archivo": "datos/partes_cij.json",
+      "tecnologia": "CIJ",
+      "estado": "borrador",
+      "fuente": "6 IPL de la serie 1000VJ del equipo (1210/1510, 1220/1520, 1520E, 1610 DH, 1620E, 1650/1650 UHS HR), extraidos con tools/leer_pdf_cifrado.py (visual v3) y estructurados con tools/estructurar_partes_cij.py (parser v5).",
+      "resumen": "1.397 registros; 200 P/N unicos: 124 verificados (>=2 documentos con descripcion compatible) + 76 borradores; 0 por-definir; 805 items sin P/N. Cada parte conserva descripcion canonica, variantes, calificadores, tipo, estado, documentos, modelos y apariciones (tabla, item, cantidad, designador, grupo, conjunto, bloque, pagina). 399475 marcado con conflicto_descripciones=true."
     }
   },
   "tecnologias": [

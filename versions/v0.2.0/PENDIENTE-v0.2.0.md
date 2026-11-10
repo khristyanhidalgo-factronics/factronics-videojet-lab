@@ -28,7 +28,13 @@
 - [ ] Traducir el banco TTO a IT/ZH (372 × 2 preguntas) si se necesita contenido completo en esos idiomas.
 
 ## Datos (continuación)
-- [ ] Tablas de partes CIJ (`partes_cij`) tras OCR/revisión de la columna de números.
+- [x] ~~Tablas de partes CIJ (`partes_cij`) tras OCR/revisión de la columna de números.~~
+      → 6 IPL estructurados: 1.397 registros, 200 P/N, 124 verificados + 76 borradores,
+      805 ítems sin P/N. Integrado en la app.
+- [ ] Completar los IPL **1550** y **1710** (los otros 2 de los 9 PDFs de la serie 1000).
+- [ ] Revisión visual muestra a muestra de los 200 P/N y de los 805 ítems sin P/N;
+      hoy hay muestras verificadas (1210 p27/p50, 1220 p33, 1610 p11, 1620E p48,
+      1650 b51) y el conflicto real de 399475 marcado como borrador.
 - [ ] Simplicity/EquivalenciaTintas: mapeo GID pendiente.
 - [ ] Partes 4–12 del repo global `Proyecto-Simplicity-Global` (hoy 3/12).
 - [ ] 31 escaneados láser sin JPEG (rasterizado/OCR si aportan).
