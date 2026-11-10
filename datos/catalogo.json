@@ -33,8 +33,8 @@
       "cubre": [
         "CIJ"
       ],
-      "estado_extraccion": "6 archivos IPL estructurados (7 modelos: 1210/1510, 1220/1520, 1520E, 1610 DH, 1620E, 1650/1650 UHS HR): datos/partes_cij.json con 1.397 registros, 200 P/N unicos (124 verificados + 76 borradores, 0 por-definir) y 805 items sin P/N conservados como evidencia. Pendientes los IPL 1550 y 1710.",
-      "aviso": "La extraccion visual v3 + parser v5 ya separa P/N, descripcion, cantidad y designador; los P/N se validaron con muestras visuales (1210 p27/p50, 1220 p33, 1610 p11, 1620E p48, 1650 b51). El P/N 399475 aparece con dos descripciones incompatibles en el propio manual y queda marcado como borrador/conflicto. Los 805 items sin P/N son hardware o filas sin numero en el documento: no se reconstruyen."
+      "estado_extraccion": "6 archivos IPL estructurados (7 modelos: 1210/1510, 1220/1520, 1520E, 1610 DH, 1620E, 1650/1650 UHS HR): datos/partes_cij.json con 1.397 registros, 204 P/N unicos (124 verificados + 80 borradores, 0 por-definir) y 801 items sin P/N conservados como evidencia. Pendientes los IPL 1550 y 1710 (fuentes sin ToUnicode utilizable).",
+      "aviso": "La extraccion visual v3 + parser v5.1 ya separa P/N, descripcion, cantidad y designador; los P/N se validaron con muestras visuales (1210 p27/p50, 1220 p33, 1610 p11, 1620E p48, 1650 b51). El P/N 399475 aparece con dos descripciones incompatibles en el propio manual y queda marcado como borrador/conflicto. Los 801 items sin P/N son hardware o filas sin numero en el documento: no se reconstruyen; estan agrupados en datos/analisis/items_sin_pn.csv para revision humana."
     },
     {
       "id": "cij-tintas",
@@ -179,8 +179,8 @@
       "archivo": "datos/partes_cij.json",
       "tecnologia": "CIJ",
       "estado": "borrador",
-      "fuente": "6 IPL de la serie 1000VJ del equipo (1210/1510, 1220/1520, 1520E, 1610 DH, 1620E, 1650/1650 UHS HR), extraidos con tools/leer_pdf_cifrado.py (visual v3) y estructurados con tools/estructurar_partes_cij.py (parser v5).",
-      "resumen": "1.397 registros; 200 P/N unicos: 124 verificados (>=2 documentos con descripcion compatible) + 76 borradores; 0 por-definir; 805 items sin P/N. Cada parte conserva descripcion canonica, variantes, calificadores, tipo, estado, documentos, modelos y apariciones (tabla, item, cantidad, designador, grupo, conjunto, bloque, pagina). 399475 marcado con conflicto_descripciones=true."
+      "fuente": "6 IPL de la serie 1000VJ del equipo (1210/1510, 1220/1520, 1520E, 1610 DH, 1620E, 1650/1650 UHS HR), extraidos con tools/leer_pdf_cifrado.py (visual v3) y estructurados con tools/estructurar_partes_cij.py (parser v5.1).",
+      "resumen": "1.397 registros; 204 P/N unicos: 124 verificados (>=2 documentos con descripcion compatible) + 80 borradores; 0 por-definir; 801 items sin P/N. Cada parte conserva descripcion canonica, variantes, calificadores, tipo, estado, documentos, modelos y apariciones (tabla, item, cantidad, designador, grupo, conjunto, bloque, pagina). 399475 marcado con conflicto_descripciones=true."
     }
   },
   "tecnologias": [

@@ -3,15 +3,18 @@
 > Lista de lo **completado y entregado** en la v0.2.0. Se actualiza a medida que avanza.
 
 ## Datos para la app
-- [x] **`tools/construir_app_datos.py`** → `docs/app/datos.js` (692,0 KB): paquete compacto
+- [x] **`tools/construir_app_datos.py`** → `docs/app/datos.js` (692,4 KB): paquete compacto
       con estados por dato.
 - [x] Incluye: 802 curvas de solvente, 134 tintas (bases, color, SDS con CAS/% y
-      propiedades), **2.890 partes** (120 TTO + 200 CIJ + 2.570 LÁSER), 231 códigos de error,
+      propiedades), **2.894 partes** (120 TTO + 204 CIJ + 2.570 LÁSER), 231 códigos de error,
       64 grados + 694 ítems de ribbons, mantenimiento (48 docs / 39 tareas), 21 modelos
       láser.
-- [x] **Partes CIJ de 6 IPL 1000VJ**: 1.397 registros, **200 P/N únicos** (124
-      verificados + 76 borradores; 0 por-definir) y 805 ítems sin P/N conservados como
+- [x] **Partes CIJ de 6 IPL 1000VJ**: 1.397 registros, **204 P/N únicos** (124
+      verificados + 80 borradores; 0 por-definir) y 801 ítems sin P/N conservados como
       evidencia. Buscador por P/N, descripción y modelo; estado y conflictos visibles.
+- [x] **Parser CIJ v5.1:** cantidades partidas en varias corridas (`1` + `0` = 10)
+      unidas desde la última celda; tabla de variantes P/N | descripción | país del
+      1620E incorporada (4 P/N Excel: 399101, 399102, 399103, 399105).
 
 ## App (PWA)
 - [x] `docs/app/index.html` — Inicio, Estudiar (tintas/ribbons/láser/mantenimiento),

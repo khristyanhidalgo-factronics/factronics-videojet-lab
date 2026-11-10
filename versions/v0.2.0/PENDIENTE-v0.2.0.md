@@ -29,12 +29,20 @@
 
 ## Datos (continuación)
 - [x] ~~Tablas de partes CIJ (`partes_cij`) tras OCR/revisión de la columna de números.~~
-      → 6 IPL estructurados: 1.397 registros, 200 P/N, 124 verificados + 76 borradores,
-      805 ítems sin P/N. Integrado en la app.
+      → 6 IPL estructurados: 1.397 registros, 204 P/N, 124 verificados + 80 borradores,
+      801 ítems sin P/N. Integrado en la app.
 - [ ] Completar los IPL **1550** y **1710** (los otros 2 de los 9 PDFs de la serie 1000).
-- [ ] Revisión visual muestra a muestra de los 200 P/N y de los 805 ítems sin P/N;
+      **Bloqueo técnico:** sus tablas usan fuentes Type0 sin ToUnicode utilizable y
+      codificación mezclada/no constante; el parser devuelve 0 filas. Requieren OCR o
+      rasterizado con revisión visual; no se reconstruyen P/N a mano. El 1550 usa una
+      fuente de 2 bytes desplazada (-29) en algunas páginas, pero el mapeo de recursos
+      es por página y el `/TT0` global no sirve para todas.
+- [ ] Revisión visual muestra a muestra de los 204 P/N y de los 801 ítems sin P/N;
       hoy hay muestras verificadas (1210 p27/p50, 1220 p33, 1610 p11, 1620E p48,
-      1650 b51) y el conflicto real de 399475 marcado como borrador.
+      1650 b51) y el conflicto real de 399475 marcado como borrador. Los 801 ítems
+      sin P/N ya están agrupados en `datos/analisis/items_sin_pn.csv` (194
+      descripciones únicas; categorías heurísticas) para revisión humana. Se
+      conservan tal como están impresos (p. ej. `100 m Castor` en el 1620E).
 - [ ] Simplicity/EquivalenciaTintas: mapeo GID pendiente.
 - [ ] Partes 4–12 del repo global `Proyecto-Simplicity-Global` (hoy 3/12).
 - [ ] 31 escaneados láser sin JPEG (rasterizado/OCR si aportan).

@@ -1,9 +1,13 @@
 # -*- coding: utf-8 -*-
 """Estructura las partes CIJ de los IPL 1000VJ legibles.
 
-Parser v5 por lineas-ancla y celdas reales:
+Parser v5.1 por lineas-ancla y celdas reales:
 - Usa las corridas (y, x, texto) del extractor visual.
 - Los saltos de columna de los TJ vienen marcados con \\x1f (separador de celda).
+- La cantidad se une desde toda la ultima celda: cubre cantidades partidas en
+  varias corridas ('1' + '0' = 10) y evita que el '1' contamine la descripcion.
+- Las tablas de variantes P/N | descripcion | idiomas o pais usan el mismo
+  parser sin item ni cantidad (p. ej. Table 10-4 del 1620E).
 - Ancla = linea con item, o con designador + descripcion, o con P/N + descripcion.
 - El rango de fila llega hasta la siguiente ancla; dentro del rango se recogen
   todos los P/N de la columna P/N (soporta varios P/N apilados y variantes).
@@ -272,12 +276,9 @@ def clasificar_linea(linea, item_x, pn_x, desc_x):
     qty = None
     no_sep = [i for i, r in enumerate(runs) if r[1] != '\x1f']
     if no_sep:
-        i = no_sep[-1]
-        x, t, pos = runs[i]
-        # La columna Qty no siempre conserva la misma x entre objetos de
-        # texto (1220/1520 b33: la qty de la fila 30 queda en x=329.3).
-        # Si el numero va tras un separador de celda y la linea tiene item
-        # o P/N, es cantidad aunque la x no llegue al umbral.
+        # La cantidad puede venir partida en varias corridas dentro de la
+        # ultima celda ('1' + '0' = 10).  Si hay separador de celda, se une
+        # todo el texto de la ultima celda antes de decidir.
         contexto = False
         j0 = no_sep[0]
         if (PAT_ITEM.match(runs[j0][1].strip())
@@ -287,12 +288,30 @@ def clasificar_linea(linea, item_x, pn_x, desc_x):
             texto_izq = ''.join(r[1] for r in runs
                                 if r[1] != '\x1f' and r[0] < desc_x - 12)
             contexto = bool(buscar_pns(texto_izq))
-        tras_sep = i > 0 and runs[i - 1][1] == '\x1f'
-        if (PAT_QTY.match(t.strip())
-                and (x > desc_x + 120 or (tras_sep and contexto))):
-            qty = t.strip()
-            runs.pop(i)
-            no_sep = [j for j, r in enumerate(runs) if r[1] != '\x1f']
+        seps = [i for i, r in enumerate(runs) if r[1] == '\x1f']
+        if seps and contexto:
+            i0 = seps[-1] + 1
+            qty_runs = [i for i in range(i0, len(runs))
+                        if runs[i][1] != '\x1f']
+            qty_texto = ''.join(runs[i][1] for i in qty_runs).strip()
+            if qty_texto and PAT_QTY.match(qty_texto):
+                qty = qty_texto
+                for i in reversed(qty_runs):
+                    runs.pop(i)
+                no_sep = [j for j, r in enumerate(runs) if r[1] != '\x1f']
+        if qty is None:
+            i = no_sep[-1]
+            x, t, pos = runs[i]
+            # La columna Qty no siempre conserva la misma x entre objetos de
+            # texto (1220/1520 b33: la qty de la fila 30 queda en x=329.3).
+            # Si el numero va tras un separador de celda y la linea tiene item
+            # o P/N, es cantidad aunque la x no llegue al umbral.
+            tras_sep = i > 0 and runs[i - 1][1] == '\x1f'
+            if (PAT_QTY.match(t.strip())
+                    and (x > desc_x + 120 or (tras_sep and contexto))):
+                qty = t.strip()
+                runs.pop(i)
+                no_sep = [j for j, r in enumerate(runs) if r[1] != '\x1f']
     item = None
     if no_sep:
         i = no_sep[0]
@@ -989,10 +1008,15 @@ def consolidar(registros):
 
 
 def detectar_header_idiomas(runs):
-    """Devuelve la y de la cabecera de la tabla de idiomas, o None."""
+    """Devuelve la y de la cabecera de la tabla de idiomas, o None.
+
+    Ademas de la tabla clasica P/N | Languages, el IPL 1620E trae una
+    tabla P/N | Display Door with Keypad (EXCEL) | Country.  Ambas son
+    tablas de variantes sin item ni cantidad y comparten el mismo parser.
+    """
     for linea in agrupar_lineas(runs):
         p = plano(texto_de_linea(linea)).lower()
-        if 'partnumber' in p and 'languages' in p:
+        if 'partnumber' in p and ('languages' in p or 'country' in p):
             return linea['y']
     return None
 
@@ -1139,9 +1163,10 @@ def main():
         'items_sin_pn': len(sin_pn),
     }
     datos = {
-        'generado': '2026-11-09',
-        'fuente': 'Illustrated Parts Lists Videojet 1000VJ (6 documentos legibles)',
-        'metodo': 'Parser v5 por lineas-ancla y celdas reales del PDF',
+        'generado': '2026-11-10',
+        'fuente': ('Illustrated Parts Lists Videojet 1000VJ (%d documentos '
+                   'legibles)' % len(DOCUMENTOS)),
+        'metodo': 'Parser v5.1 por lineas-ancla y celdas reales del PDF',
         'resumen': resumen,
         'documentos': [
             {'archivo': n, 'modelo': m} for n, m in DOCUMENTOS
