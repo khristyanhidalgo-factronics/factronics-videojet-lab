@@ -180,7 +180,8 @@
       "tecnologia": "CIJ",
       "estado": "borrador",
       "fuente": "6 IPL de la serie 1000VJ del equipo (1210/1510, 1220/1520, 1520E, 1610 DH, 1620E, 1650/1650 UHS HR), extraidos con tools/leer_pdf_cifrado.py (visual v3) y estructurados con tools/estructurar_partes_cij.py (parser v5.1).",
-      "resumen": "1.397 registros; 204 P/N unicos: 124 verificados (>=2 documentos con descripcion compatible) + 80 borradores; 0 por-definir; 801 items sin P/N. Cada parte conserva descripcion canonica, variantes, calificadores, tipo, estado, documentos, modelos y apariciones (tabla, item, cantidad, designador, grupo, conjunto, bloque, pagina). 399475 marcado con conflicto_descripciones=true."
+      "resumen": "1.397 registros; 204 P/N unicos: 124 verificados (>=2 documentos con descripcion compatible) + 80 borradores; 0 por-definir; 801 items sin P/N. Cada parte conserva descripcion canonica, variantes, calificadores, tipo, estado, documentos, modelos y apariciones (tabla, item, cantidad, designador, grupo, conjunto, bloque, pagina). 399475 marcado con conflicto_descripciones=true.",
+      "auditoria": "datos/analisis/auditoria_partes_cij.csv: 596 apariciones de partes + 801 items sin P/N revisadas contra el bloque y la linea del PDF. 0 P/N fuera de linea, 0 cantidades distintas, 801/801 descripciones sin P/N localizadas y 592/596 descripciones de partes localizadas. Las 4 restantes corresponden a los 3 P/N en conflicto (399239, 399474, 399475 x2)."
     }
   },
   "tecnologias": [

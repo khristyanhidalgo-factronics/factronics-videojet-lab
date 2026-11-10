@@ -16,6 +16,12 @@
       `1` + `4` = 14) unidas desde la última celda o desde las corridas numéricas
       contiguas; tabla de variantes P/N | descripción | país del 1620E incorporada
       (4 P/N Excel: 399101, 399102, 399103, 399105).
+- [x] **Auditoría de evidencia CIJ:** `tools/auditar_partes_cij.py` revisa las
+      1.397 apariciones (596 de partes + 801 sin P/N) contra el bloque y la línea
+      del PDF. 0 P/N fuera de línea, 0 cantidades distintas, 801/801
+      descripciones sin P/N localizadas y 592/596 descripciones de partes
+      localizadas; las 4 restantes son los 3 conflictos ya marcados (399239,
+      399474, 399475). Evidencia: `datos/analisis/auditoria_partes_cij.csv`.
 
 ## App (PWA)
 - [x] `docs/app/index.html` — Inicio, Estudiar (tintas/ribbons/láser/mantenimiento),

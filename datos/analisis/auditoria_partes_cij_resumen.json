@@ -1,0 +1,33 @@
+{
+ "generado": "2026-11-10",
+ "fuente": "datos/partes_cij.json",
+ "estado": "borrador",
+ "nota": "Auditoria automatica de evidencia: comprueba que cada P/N y descripcion existan en la linea/ventana del PDF de origen. No corrige ni reconstruye datos; las alertas son candidatas a revision visual.",
+ "apariciones_partes": 596,
+ "items_sin_pn": 801,
+ "alertas": {
+  "partes": {
+   "bloque_fuera_de_rango": 0,
+   "bloque_objeto_distinto": 0,
+   "pn_no_en_linea": 0,
+   "desc_no_en_linea": 4,
+   "qty_distinta": 0
+  },
+  "sin_pn": {
+   "bloque_fuera_de_rango": 0,
+   "bloque_objeto_distinto": 0,
+   "desc_no_en_bloque": 0,
+   "qty_distinta": 0
+  }
+ },
+ "partes_con_desc_en_ventana": 592,
+ "partes_con_desc_en_bloque": 592,
+ "sin_pn_con_desc_en_ventana": 801,
+ "sin_pn_con_desc_en_bloque": 801,
+ "pn_con_alertas": [
+  "399239",
+  "399474",
+  "399475"
+ ],
+ "archivo_csv": "datos/analisis/auditoria_partes_cij.csv"
+}
