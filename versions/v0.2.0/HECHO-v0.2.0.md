@@ -12,9 +12,10 @@
 - [x] **Partes CIJ de 6 IPL 1000VJ**: 1.397 registros, **204 P/N únicos** (124
       verificados + 80 borradores; 0 por-definir) y 801 ítems sin P/N conservados como
       evidencia. Buscador por P/N, descripción y modelo; estado y conflictos visibles.
-- [x] **Parser CIJ v5.1:** cantidades partidas en varias corridas (`1` + `0` = 10)
-      unidas desde la última celda; tabla de variantes P/N | descripción | país del
-      1620E incorporada (4 P/N Excel: 399101, 399102, 399103, 399105).
+- [x] **Parser CIJ v5.1:** cantidades partidas en varias corridas (`1` + `0` = 10,
+      `1` + `4` = 14) unidas desde la última celda o desde las corridas numéricas
+      contiguas; tabla de variantes P/N | descripción | país del 1620E incorporada
+      (4 P/N Excel: 399101, 399102, 399103, 399105).
 
 ## App (PWA)
 - [x] `docs/app/index.html` — Inicio, Estudiar (tintas/ribbons/láser/mantenimiento),

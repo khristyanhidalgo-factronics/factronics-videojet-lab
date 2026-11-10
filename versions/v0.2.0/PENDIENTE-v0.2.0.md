@@ -40,7 +40,7 @@
 - [ ] Revisión visual muestra a muestra de los 204 P/N y de los 801 ítems sin P/N;
       hoy hay muestras verificadas (1210 p27/p50, 1220 p33, 1610 p11, 1620E p48,
       1650 b51) y el conflicto real de 399475 marcado como borrador. Los 801 ítems
-      sin P/N ya están agrupados en `datos/analisis/items_sin_pn.csv` (194
+      sin P/N ya están agrupados en `datos/analisis/items_sin_pn.csv` (193
       descripciones únicas; categorías heurísticas) para revisión humana. Se
       conservan tal como están impresos (p. ej. `100 m Castor` en el 1620E).
 - [ ] Simplicity/EquivalenciaTintas: mapeo GID pendiente.

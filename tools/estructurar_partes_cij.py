@@ -309,8 +309,23 @@ def clasificar_linea(linea, item_x, pn_x, desc_x):
             tras_sep = i > 0 and runs[i - 1][1] == '\x1f'
             if (PAT_QTY.match(t.strip())
                     and (x > desc_x + 120 or (tras_sep and contexto))):
-                qty = t.strip()
-                runs.pop(i)
+                # Sin separador de celda la cantidad tambien puede venir
+                # partida ('1' + '4' = 14).  Se unen las corridas numericas
+                # contiguas que estan en la columna de cantidad.
+                qty_runs = [i]
+                j = i - 1
+                while j >= 0 and runs[j][1] != '\x1f':
+                    px, pt, _ = runs[j]
+                    if (PAT_QTY.match(pt.strip()) and px > desc_x + 80
+                            and abs(x - px) <= 15):
+                        qty_runs.insert(0, j)
+                        x = px
+                        j -= 1
+                    else:
+                        break
+                qty = ''.join(runs[k][1] for k in qty_runs).strip()
+                for k in reversed(qty_runs):
+                    runs.pop(k)
                 no_sep = [j for j, r in enumerate(runs) if r[1] != '\x1f']
     item = None
     if no_sep:
