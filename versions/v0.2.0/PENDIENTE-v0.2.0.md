@@ -3,19 +3,23 @@
 > Lo que falta para **cerrar la v0.2.0**. Al congelar, alimenta el PLAN de v0.3.0.
 
 ## Cierre de v0.2.0
-- [ ] **Verificación en navegador real**: consola sin errores, service worker activo,
-      funcionamiento offline tras la primera carga, calculadora y exámenes de los 5 niveles.
-- [ ] **Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h
-      (curva verificada de `cij_uso_solvente.json`).
-- [ ] Revisión de textos i18n (es/en/pt) y de la redacción de preguntas.
+- [ ] **Verificación final en navegador real**: consola sin errores, service worker
+      activo, funcionamiento offline tras la primera carga, calculadora y exámenes de
+      los 5 niveles. Las rondas previas ya pasaron; falta la pasada con el SW `alpha-14`.
+- [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
+      → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
+- [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
+      cobertura 17.225/17.225 y pruebas automáticas; queda la revisión humana de estilo.
+- [ ] Revisión humana de estilo de las traducciones IT/ZH (`borrador-de-traduccion`):
+      confirmar términos técnicos con el dueño o con documentación Videojet.
 - [ ] Ajustes de UX tras la prueba (teclado móvil, tamaños, contraste).
 
 ## Superar la referencia (cuenta personal)
 - [x] ~~`version.json` + `docs/notas.html` con índice SHA-256~~ → hecho (`tools/publicar_notas.py`).
-- [x] ~~Idiomas IT y ZH~~ → interfaz en 5 idiomas (ES/EN/PT/IT/ZH), cadenas dinámicas y constancia traducidas; banco TTO en es/en/pt con respaldo documentado.
+- [x] ~~Idiomas IT y ZH~~ → interfaz y **contenido completo** en 5 idiomas (ES/EN/PT/IT/ZH); banco TTO traducido a IT/ZH.
 - [x] ~~Resultado con QR + constancia imprimible~~ → botón 🎓 Constancia con QR offline (`vendor/qrcode.js`).
 - [x] ~~Repaso espaciado y cuaderno de errores~~ → cajas 1–5, pendientes del día y errores acumulados.
-- [x] ~~CI de validadores~~ (JSON, notas SHA-256, app, enlaces) → `tools/validar_repo.py` + workflow, más `tools/test_banco_tto.py` (372 preguntas × 3 idiomas) en el mismo CI.
+- [x] ~~CI de validadores~~ (JSON, notas SHA-256, app, enlaces) → `tools/validar_repo.py` + workflow, más `tools/test_banco_tto.py` (372 preguntas × 5 idiomas), `tools/test_app_calculo.py` y `tools/test_traducciones.py` en el mismo CI.
 - [x] ~~Backup/restore de perfil e historial~~ → exportar/importar en la app.
 - [ ] **Rotar los dos tokens expuestos** (cuenta de proyecto y cuenta personal) al estabilizar.
 
@@ -25,12 +29,19 @@
 - [x] ~~Página pública de notas `docs/notas.html` + CI~~ → publicada con SHA-256.
 - [ ] **Temas festivos** por país (Venezuela base) sobre el tema claro/oscuro/sistema.
 - [ ] Más variedad de preguntas por nivel y banco separado por tecnología.
-- [ ] Traducir el banco TTO a IT/ZH (372 × 2 preguntas) si se necesita contenido completo en esos idiomas.
+- [x] ~~Traducir el banco TTO a IT/ZH (372 × 2 preguntas)~~ → hecho: 372 preguntas × 5 idiomas, con IDs de opciones y respuestas intactos.
 
 ## Datos (continuación)
 - [x] ~~Tablas de partes CIJ (`partes_cij`) tras OCR/revisión de la columna de números.~~
       → 6 IPL estructurados: 1.397 registros, 204 P/N, 124 verificados + 80 borradores,
       801 ítems sin P/N. Integrado en la app.
+- [ ] Extraer las **velocidades CIJ por modelo/boquilla** de los calculadores
+      «Line Speed Calculator v9.7» → dataset `cij_velocidades`. Venía del PENDIENTE
+      de v0.1.0 y aún no se había arrastrado a esta lista.
+- [ ] **Cruzar las 120 partes TTO** (hoy en borrador) contra las Official Parts Lists
+      PDF para elevarlas a `verificado`. Venía del PENDIENTE de v0.1.0.
+- [ ] Revisar los **títulos de boletines TTO** marcados dudosos/no legibles
+      (63 títulos fiables de 113). Venía del PENDIENTE de v0.1.0.
 - [ ] Completar los IPL **1550** y **1710** (los otros 2 de los 9 PDFs de la serie 1000).
       **Bloqueo técnico:** sus tablas usan fuentes Type0 sin ToUnicode utilizable y
       codificación mezclada/no constante; el parser devuelve 0 filas. Requieren OCR o
@@ -56,4 +67,6 @@
 
 ## Después
 - Fase 3 APK (v0.4.0) y Fase 4 actualización (v0.5.0) según ROADMAP.
+- Fase 6: generar PNG del logo (512/192/48), CODE_OF_CONDUCT.md, CI avanzado,
+  íconos PWA/Android y ampliación a TIJ/LPA/Large Character/Labeling/CLARiSUITE.
 - Rotación del token GitHub (nota de gestión de cuenta).

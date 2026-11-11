@@ -31,6 +31,10 @@ def main():
     ribbons = cargar('tto_ribbons.json')
     mant = cargar('mantenimiento.json')
     modelos_laser = cargar('laser_modelos.json')
+    ruta_trad = os.path.join(DATOS, 'traducciones_contenido.json')
+    traducciones = {}
+    if os.path.exists(ruta_trad):
+        traducciones = json.load(open(ruta_trad, encoding='utf-8')).get('entradas', {})
 
     paquete = {
         'meta': {
@@ -68,7 +72,7 @@ def main():
         'errores': [{
             'c': c['codigo'], 't': c['tecnologia'],
             'cl': c.get('clase'),
-            'x': (c.get('descripcion_contexto') or '')[:160],
+            'x': (c.get('descripcion_contexto') or ''),
         } for c in errores.get('codigos', [])],
         # ribbons TTO
         'ribbons': {
@@ -78,7 +82,7 @@ def main():
                 'dur': r.get('Overall Durability (0-100%)'),
                 'temp': r.get('Heat Resistance (°C)'),
                 'tipo': r.get('Type'), 'film': r.get('Base Film'),
-                'desc': (r.get('Description') or '')[:180],
+                'desc': (r.get('Description') or ''),
             } for r in ribbons.get('grados_ribbon', [])],
             'items': [[i['item_no'], i['descripcion']]
                       for i in ribbons.get('items_suministros_tto', [])],
@@ -86,10 +90,12 @@ def main():
         'mant': {
             'docs': [{'a': d['archivo_txt'], 'tipo': d['tipo'], 'tec': d['tecnologia']}
                      for d in mant.get('documentos', [])],
-            'tareas': [{'x': t['tarea'][:180], 'iv': t.get('intervalo'),
+            'tareas': [{'x': t['tarea'], 'iv': t.get('intervalo'),
                         'tec': t['tecnologia']} for t in mant.get('tareas', [])],
         },
         'modelosLaser': [m['modelo'] for m in modelos_laser.get('modelos', [])],
+        # memoria de traduccion de contenido (clave = texto original normalizado)
+        'tr': traducciones,
     }
 
     # tintas compactas
@@ -122,7 +128,9 @@ def main():
             continue
         descripciones = p.get('descripciones') or []
         desc = ''
-        for idioma in ('espanol', 'ingles', 'portugues'):
+        # Texto canonico: ingles si existe (la app traduce al idioma activo);
+        # si no, espanol y por ultimo portugues.
+        for idioma in ('ingles', 'espanol', 'portugues'):
             for d in descripciones:
                 if d.get('idioma') == idioma and d.get('texto'):
                     desc = d['texto']
@@ -131,12 +139,12 @@ def main():
                 break
         if not desc and descripciones:
             desc = descripciones[0].get('texto', '')
-        paquete['partes'].append({'n': numero, 'd': str(desc)[:220], 't': 'TTO'})
+        paquete['partes'].append({'n': numero, 'd': str(desc), 't': 'TTO'})
     # partes CIJ (6 IPL; se conserva el estado y los modelos)
     for p in partes_cij.get('partes', []):
         paquete['partes'].append({
             'n': p['pn'],
-            'd': (p.get('descripcion') or '')[:220],
+            'd': (p.get('descripcion') or ''),
             't': 'CIJ',
             'm': ', '.join(p.get('modelos') or []),
             'e': p.get('estado'),
@@ -145,7 +153,7 @@ def main():
     # partes LASER
     for p in laser_partes.get('partes', []):
         paquete['partes'].append({'n': p['numero_parte'],
-                                  'd': (p.get('descripcion') or '')[:220],
+                                  'd': (p.get('descripcion') or ''),
                                   't': 'LASER'})
 
     os.makedirs(os.path.dirname(SALIDA), exist_ok=True)

@@ -179,13 +179,13 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
         <div id="ex_tipo_box" class="hidden"><label class="small" data-i18n="ex_tipo">Tipo</label><br>
           <select id="ex_tipo">
             <option value="todas" data-i18n="tipo_todas">Todas</option>
-            <option value="single">Simple</option>
-            <option value="multi">Múltiple</option>
-            <option value="fill">Completar</option>
-            <option value="calc">Cálculo</option>
-            <option value="describe">Descripción</option>
-            <option value="errorfix">Caso de falla</option>
-            <option value="errmap">Código→significado</option>
+            <option value="single" data-i18n="tipo_single">Simple</option>
+            <option value="multi" data-i18n="tipo_multi">Múltiple</option>
+            <option value="fill" data-i18n="tipo_fill">Completar</option>
+            <option value="calc" data-i18n="tipo_calc">Cálculo</option>
+            <option value="describe" data-i18n="tipo_describe">Descripción</option>
+            <option value="errorfix" data-i18n="tipo_errorfix">Caso de falla</option>
+            <option value="errmap" data-i18n="tipo_errmap">Código→significado</option>
           </select></div>
         <div><label class="small" data-i18n="ex_cant">Preguntas</label><br>
           <select id="ex_cant"><option>10</option><option>15</option><option>20</option></select></div>
@@ -202,11 +202,11 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
       <h2 data-i18n="av_t">Aviso y fuentes</h2>
       <p class="small" data-i18n="av_s">Este material se construyó a partir de documentos del equipo y fuentes oficiales Videojet. No sustituye la formación oficial ni los manuales de servicio.</p>
       <div class="notice" id="av_nota"></div>
-      <p class="small">Proyectos de referencia del autor (cuenta personal):
+      <p class="small"><span data-i18n="ref_autor">Proyectos de referencia del autor (cuenta personal):</span>
         <a href="https://emanuelindustri-source.github.io/factronics-tto-lab/" target="_blank" rel="noopener">Factronics TTO Lab</a>
-        (banco de 372 preguntas adaptado aquí) ·
+        <span data-i18n="ref_banco">(banco de 372 preguntas adaptado aquí)</span> ·
         <a href="https://emanuelindustri-source.github.io/consumo-cij-calculadora/" target="_blank" rel="noopener">Consumo CIJ</a>
-        (calculadora hermana). Este proyecto unifica TTO · CIJ · LÁSER en un solo lugar.
+        <span data-i18n="ref_calc">(calculadora hermana).</span> <span data-i18n="ref_unifica">Este proyecto unifica TTO · CIJ · LÁSER en un solo lugar.</span>
       </p>
       <p class="small">Repo: <a href="https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab" target="_blank" rel="noopener">factronics-videojet-lab</a> · <span id="av_fecha"></span></p>
       <h3 data-i18n="copia_t">Copia de seguridad</h3>
@@ -238,7 +238,7 @@ const I18N = {
     est_t:'Estudiar', est_tintas:'Tintas CIJ', est_ribbons:'Ribbons TTO', est_laser:'LÁSER', est_mant:'Mantenimiento',
     bus_t:'Buscar', bus_all:'Todo', bus_partes:'Partes', bus_tintas:'Tintas', bus_errores:'Códigos error', bus_ribbons:'Ribbons', bus_mant:'Mantenimiento',
     calc_t:'Calculadora de consumo (CIJ)', calc_s:'Consumo de solvente por curva oficial (estimación del documento, 10–40 °C).',
-    calc_modelo:'Modelo', calc_tinta:'Tinta', calc_temp:'Temperatura (°C)', calc_precio:'Precio solvente (USD/L)',
+    calc_modelo:'Modelo', calc_tinta:'Tinta', calc_temp:'Temperatura (°C)', calc_precio:'Precio solvente (USD/L)', calc_ref:'referencia',
     ex_t:'Examen', ex_nivel:'Nivel', ex_cant:'Preguntas', ex_go:'Generar examen', ex_send:'Corregir', ex_score:'Resultado', ex_again:'Otro intento', ex_hist:'Historial',
     n1:'Básico', n2:'Básico-Medio', n3:'Intermedio-Avanzado', n4:'Avanzado', n5:'Profesional',
     av_t:'Aviso y fuentes', av_s:'Este material se construyó a partir de documentos del equipo y fuentes oficiales Videojet. No sustituye la formación oficial ni los manuales de servicio.',
@@ -253,7 +253,7 @@ const I18N = {
     est_t:'Study', est_tintas:'CIJ Inks', est_ribbons:'TTO Ribbons', est_laser:'LASER', est_mant:'Maintenance',
     bus_t:'Search', bus_all:'All', bus_partes:'Parts', bus_tintas:'Inks', bus_errores:'Error codes', bus_ribbons:'Ribbons', bus_mant:'Maintenance',
     calc_t:'CIJ consumption calculator', calc_s:'Solvent usage from the official curve (document estimate, 10–40 °C).',
-    calc_modelo:'Model', calc_tinta:'Ink', calc_temp:'Temperature (°C)', calc_precio:'Solvent price (USD/L)',
+    calc_modelo:'Model', calc_tinta:'Ink', calc_temp:'Temperature (°C)', calc_precio:'Solvent price (USD/L)', calc_ref:'reference',
     ex_t:'Exam', ex_nivel:'Level', ex_cant:'Questions', ex_go:'Generate exam', ex_send:'Grade', ex_score:'Score', ex_again:'Another attempt', ex_hist:'History',
     n1:'Basic', n2:'Basic-Intermediate', n3:'Intermediate-Advanced', n4:'Advanced', n5:'Professional',
     av_t:'Notice and sources', av_s:'Built from the equipment documents and official Videojet sources. It does not replace official training or service manuals.',
@@ -268,7 +268,7 @@ const I18N = {
     est_t:'Estudar', est_tintas:'Tintas CIJ', est_ribbons:'Ribbons TTO', est_laser:'LASER', est_mant:'Manutenção',
     bus_t:'Buscar', bus_all:'Tudo', bus_partes:'Peças', bus_tintas:'Tintas', bus_errores:'Códigos de erro', bus_ribbons:'Ribbons', bus_mant:'Manutenção',
     calc_t:'Calculadora de consumo (CIJ)', calc_s:'Consumo de solvente pela curva oficial (estimativa do documento, 10–40 °C).',
-    calc_modelo:'Modelo', calc_tinta:'Tinta', calc_temp:'Temperatura (°C)', calc_precio:'Preço do solvente (USD/L)',
+    calc_modelo:'Modelo', calc_tinta:'Tinta', calc_temp:'Temperatura (°C)', calc_precio:'Preço do solvente (USD/L)', calc_ref:'referência',
     ex_t:'Exame', ex_nivel:'Nível', ex_cant:'Perguntas', ex_go:'Gerar exame', ex_send:'Corrigir', ex_score:'Resultado', ex_again:'Outra tentativa', ex_hist:'Histórico',
     n1:'Básico', n2:'Básico-Médio', n3:'Intermediário-Avançado', n4:'Avançado', n5:'Profissional',
     av_t:'Aviso e fontes', av_s:'Material construído a partir dos documentos do equipamento e fontes oficiais Videojet. Não substitui o treinamento oficial nem os manuais de serviço.',
@@ -283,7 +283,7 @@ const I18N = {
     est_t:'Studiare', est_tintas:'Inchiostri CIJ', est_ribbons:'Ribbon TTO', est_laser:'LASER', est_mant:'Manutenzione',
     bus_t:'Cercare', bus_all:'Tutto', bus_partes:'Parti', bus_tintas:'Inchiostri', bus_errores:'Codici errore', bus_ribbons:'Ribbon', bus_mant:'Manutenzione',
     calc_t:'Calcolatore di consumo (CIJ)', calc_s:'Consumo di solvente dalla curva ufficiale (stima del documento, 10–40 °C).',
-    calc_modelo:'Modello', calc_tinta:'Inchiostro', calc_temp:'Temperatura (°C)', calc_precio:'Prezzo solvente (USD/L)',
+    calc_modelo:'Modello', calc_tinta:'Inchiostro', calc_temp:'Temperatura (°C)', calc_precio:'Prezzo solvente (USD/L)', calc_ref:'riferimento',
     ex_t:'Esame', ex_nivel:'Livello', ex_cant:'Domande', ex_go:'Genera esame', ex_send:'Correggi', ex_score:'Risultato', ex_again:'Un altro tentativo', ex_hist:'Cronologia',
     n1:'Base', n2:'Base-Intermedio', n3:'Intermedio-Avanzato', n4:'Avanzato', n5:'Professionale',
     av_t:'Avviso e fonti', av_s:'Materiale costruito dai documenti delle apparecchiature e da fonti ufficiali Videojet. Non sostituisce la formazione ufficiale né i manuali di servizio.',
@@ -298,7 +298,7 @@ const I18N = {
     est_t:'学习', est_tintas:'CIJ 墨水', est_ribbons:'TTO 色带', est_laser:'激光', est_mant:'维护',
     bus_t:'搜索', bus_all:'全部', bus_partes:'部件', bus_tintas:'墨水', bus_errores:'错误代码', bus_ribbons:'色带', bus_mant:'维护',
     calc_t:'CIJ 消耗计算器', calc_s:'根据官方曲线计算溶剂消耗（文档估算，10–40 °C）。',
-    calc_modelo:'型号', calc_tinta:'墨水', calc_temp:'温度 (°C)', calc_precio:'溶剂价格（美元/升）',
+    calc_modelo:'型号', calc_tinta:'墨水', calc_temp:'温度 (°C)', calc_precio:'溶剂价格（美元/升）', calc_ref:'参考',
     ex_t:'考试', ex_nivel:'级别', ex_cant:'题目数量', ex_go:'生成考试', ex_send:'评分', ex_score:'成绩', ex_again:'再试一次', ex_hist:'历史记录',
     n1:'基础', n2:'基础-中级', n3:'中级-高级', n4:'高级', n5:'专业',
     av_t:'声明与来源', av_s:'本材料基于设备文档和 Videojet 官方来源。不能替代官方培训或服务手册。',
@@ -310,7 +310,7 @@ const I18N = {
 Object.assign(I18N.es, {
   ex_fuente:'Fuente', fuente_gen:'Generado (5 niveles)', fuente_banco:'Banco TTO (372)', ex_tipo:'Tipo', tipo_todas:'Todas',
   self_ok:'Lo dominaba', self_no:'A revisar', respuesta_modelo:'Respuesta modelo',
-  banco_nota:'Banco de preguntas TTO (372) adaptado de Factronics TTO Lab — es/en/pt.', kpi_banco:'preguntas TTO',
+  banco_nota:'Banco de preguntas TTO (372) adaptado de Factronics TTO Lab - 5 idiomas.', kpi_banco:'preguntas TTO',
   buscar:'Buscar', curvas:'curvas', items:'Ítems', tareas:'tareas', docs:'docs', campo:'Campo', nivel:'nivel',
   tipo_single:'Simple', tipo_multi:'Múltiple', tipo_fill:'Completar', tipo_calc:'Cálculo', tipo_describe:'Descripción',
   tipo_errorfix:'Caso de falla', tipo_errmap:'Código→significado', tipo_repaso:'Repaso', ex_banco_titulo:'Banco TTO',
@@ -342,7 +342,7 @@ Object.assign(I18N.es, {
 Object.assign(I18N.en, {
   ex_fuente:'Source', fuente_gen:'Generated (5 levels)', fuente_banco:'TTO bank (372)', ex_tipo:'Type', tipo_todas:'All',
   self_ok:'I knew it', self_no:'To review', respuesta_modelo:'Model answer',
-  banco_nota:'TTO question bank (372) adapted from Factronics TTO Lab — es/en/pt.', kpi_banco:'TTO questions',
+  banco_nota:'TTO question bank (372) adapted from Factronics TTO Lab - 5 languages.', kpi_banco:'TTO questions',
   buscar:'Search', curvas:'curves', items:'items', tareas:'tasks', docs:'docs', campo:'Field', nivel:'level',
   tipo_single:'Single', tipo_multi:'Multiple', tipo_fill:'Fill in', tipo_calc:'Calculation', tipo_describe:'Description',
   tipo_errorfix:'Fault case', tipo_errmap:'Code→meaning', tipo_repaso:'Review', ex_banco_titulo:'TTO bank',
@@ -374,7 +374,7 @@ Object.assign(I18N.en, {
 Object.assign(I18N.pt, {
   ex_fuente:'Fonte', fuente_gen:'Gerado (5 níveis)', fuente_banco:'Banco TTO (372)', ex_tipo:'Tipo', tipo_todas:'Todas',
   self_ok:'Eu dominava', self_no:'A revisar', respuesta_modelo:'Resposta modelo',
-  banco_nota:'Banco de perguntas TTO (372) adaptado do Factronics TTO Lab — es/en/pt.', kpi_banco:'perguntas TTO',
+  banco_nota:'Banco de perguntas TTO (372) adaptado do Factronics TTO Lab - 5 idiomas.', kpi_banco:'perguntas TTO',
   buscar:'Pesquisar', curvas:'curvas', items:'itens', tareas:'tarefas', docs:'docs', campo:'Campo', nivel:'nível',
   tipo_single:'Simples', tipo_multi:'Múltipla', tipo_fill:'Completar', tipo_calc:'Cálculo', tipo_describe:'Descrição',
   tipo_errorfix:'Caso de falha', tipo_errmap:'Código→significado', tipo_repaso:'Revisão', ex_banco_titulo:'Banco TTO',
@@ -406,7 +406,7 @@ Object.assign(I18N.pt, {
 Object.assign(I18N.it, {
   ex_fuente:'Fonte', fuente_gen:'Generato (5 livelli)', fuente_banco:'Banca TTO (372)', ex_tipo:'Tipo', tipo_todas:'Tutte',
   self_ok:'Lo padroneggiavo', self_no:'Da rivedere', respuesta_modelo:'Risposta modello',
-  banco_nota:'Banca di domande TTO (372) adattata da Factronics TTO Lab — contenuto es/en/pt.', kpi_banco:'domande TTO',
+  banco_nota:'Banca di domande TTO (372) adattata da Factronics TTO Lab - 5 lingue.', kpi_banco:'domande TTO',
   buscar:'Cerca', curvas:'curve', items:'elementi', tareas:'attività', docs:'documenti', campo:'Campo', nivel:'livello',
   tipo_single:'Semplice', tipo_multi:'Multipla', tipo_fill:'Completare', tipo_calc:'Calcolo', tipo_describe:'Descrizione',
   tipo_errorfix:'Caso di guasto', tipo_errmap:'Codice→significato', tipo_repaso:'Ripasso', ex_banco_titulo:'Banca TTO',
@@ -438,7 +438,7 @@ Object.assign(I18N.it, {
 Object.assign(I18N.zh, {
   ex_fuente:'来源', fuente_gen:'自动生成（5 个级别）', fuente_banco:'TTO 题库（372）', ex_tipo:'类型', tipo_todas:'全部',
   self_ok:'我已掌握', self_no:'待复习', respuesta_modelo:'参考答案',
-  banco_nota:'TTO 题库（372 题），改编自 Factronics TTO Lab — 题目内容为 es/en/pt。', kpi_banco:'TTO 题目',
+  banco_nota:'TTO 题库（372 题），改编自 Factronics TTO Lab - 5 种语言。', kpi_banco:'TTO 题目',
   buscar:'搜索', curvas:'条曲线', items:'项目', tareas:'任务', docs:'文档', campo:'字段', nivel:'级别',
   tipo_single:'单选', tipo_multi:'多选', tipo_fill:'填空', tipo_calc:'计算', tipo_describe:'描述',
   tipo_errorfix:'故障案例', tipo_errmap:'代码→含义', tipo_repaso:'复习', ex_banco_titulo:'TTO 题库',
@@ -467,6 +467,41 @@ Object.assign(I18N.zh, {
   ref_err:'codigos_error（草稿）', ref_sol:'cij_uso_solvente（已验证）', ref_sds:'sds_composicion（CAS 已验证）',
   ref_part:'CIJ IPL 1000VJ（6 份文档）', conflicto:'描述冲突'
 });
+Object.assign(I18N.es, {
+  est_por_definir:'por definir', est_borrador_decodificado:'borrador decodificado', est_sin_pn:'sin P/N',
+  idioma:'Idioma', tema:'Tema',
+  ref_autor:'Proyectos de referencia del autor (cuenta personal):',
+  ref_banco:'(banco de 372 preguntas adaptado aquí)', ref_calc:'(calculadora hermana).',
+  ref_unifica:'Este proyecto unifica TTO · CIJ · LÁSER en un solo lugar.'
+});
+Object.assign(I18N.en, {
+  est_por_definir:'to be defined', est_borrador_decodificado:'decoded draft', est_sin_pn:'no P/N',
+  idioma:'Language', tema:'Theme',
+  ref_autor:'Author reference projects (personal account):',
+  ref_banco:'(372-question bank adapted here)', ref_calc:'(sister calculator).',
+  ref_unifica:'This project unifies TTO · CIJ · LASER in one place.'
+});
+Object.assign(I18N.pt, {
+  est_por_definir:'a definir', est_borrador_decodificado:'rascunho decodificado', est_sin_pn:'sem P/N',
+  idioma:'Idioma', tema:'Tema',
+  ref_autor:'Projetos de referência do autor (conta pessoal):',
+  ref_banco:'(banco de 372 perguntas adaptado aqui)', ref_calc:'(calculadora irmã).',
+  ref_unifica:'Este projeto unifica TTO · CIJ · LASER em um só lugar.'
+});
+Object.assign(I18N.it, {
+  est_por_definir:'da definire', est_borrador_decodificado:'bozza decodificata', est_sin_pn:'senza P/N',
+  idioma:'Lingua', tema:'Tema',
+  ref_autor:"Progetti di riferimento dell'autore (account personale):",
+  ref_banco:'(banca di 372 domande adattata qui)', ref_calc:'(calcolatrice sorella).',
+  ref_unifica:'Questo progetto unifica TTO · CIJ · LASER in un unico posto.'
+});
+Object.assign(I18N.zh, {
+  est_por_definir:'待确定', est_borrador_decodificado:'解码草稿', est_sin_pn:'无 P/N',
+  idioma:'语言', tema:'主题',
+  ref_autor:'作者参考项目（个人账户）：',
+  ref_banco:'（此处改编的 372 题题库）', ref_calc:'（姊妹计算器）。',
+  ref_unifica:'本项目将 TTO · CIJ · 激光整合到一个地方。'
+});
 let LANG = localStorage.getItem('fvl_lang') || 'es';
 const t = (k) => (I18N[LANG] && I18N[LANG][k]) || I18N.es[k] || k;
 
@@ -475,12 +510,49 @@ const $ = (s) => document.querySelector(s);
 const $$ = (s) => [...document.querySelectorAll(s)];
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm = (s) => String(s ?? '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+const LOCALES = {es:'es-VE', en:'en-US', pt:'pt-BR', it:'it-IT', zh:'zh-CN'};
+function fmtNum(n, dec=1){
+  if (n === null || n === undefined || n === '' || isNaN(Number(n))) return '—';
+  return Number(n).toLocaleString(LOCALES[LANG] || 'es-VE', {minimumFractionDigits:dec, maximumFractionDigits:dec});
+}
+function refUso(r){ return (r && typeof r === 'object') ? r.uso_ml_hr : r; }
+function refTexto(r){
+  const u = refUso(r);
+  if (u === null || u === undefined) return '—';
+  const tc = (r && typeof r === 'object' && r.temp_c !== undefined) ? r.temp_c : 30;
+  return fmtNum(tc, 0) + ' °C → ' + fmtNum(u, 1) + ' ml/h';
+}
+function tr(s){
+  if (!s) return s;
+  const clave = String(s).replace(/\s+/g, ' ').trim();
+  const m = D.tr && D.tr[clave];
+  return (m && m[LANG]) || s;
+}
+const PROPS_I18N = {
+  color: {es:'Color', en:'Color', pt:'Cor', it:'Colore', zh:'颜色'},
+  densidad_relativa: {es:'Densidad relativa', en:'Relative density', pt:'Densidade relativa', it:'Densità relativa', zh:'相对密度'},
+  estado_fisico: {es:'Estado físico', en:'Physical state', pt:'Estado físico', it:'Stato fisico', zh:'物理状态'},
+  ph: {es:'pH', en:'pH', pt:'pH', it:'pH', zh:'pH'},
+  presion_vapor: {es:'Presión de vapor', en:'Vapor pressure', pt:'Pressão de vapor', it:'Pressione di vapore', zh:'蒸气压'},
+  punto_ebullicion: {es:'Punto de ebullición', en:'Boiling point', pt:'Ponto de ebulição', it:'Punto di ebollizione', zh:'沸点'},
+  punto_inflamacion: {es:'Punto de inflamación', en:'Flash point', pt:'Ponto de inflamação', it:'Punto di infiammabilità', zh:'闪点'},
+  solubilidad: {es:'Solubilidad', en:'Solubility', pt:'Solubilidade', it:'Solubilità', zh:'溶解度'},
+  viscosidad: {es:'Viscosidad', en:'Viscosity', pt:'Viscosidade', it:'Viscosità', zh:'粘度'},
+  volatilidad: {es:'Volatilidad', en:'Volatility', pt:'Volatilidade', it:'Volatilità', zh:'挥发性'}
+};
+function trProp(k){
+  const m = PROPS_I18N[k];
+  return (m && m[LANG]) || k;
+}
 const D = window.DATOS || {solventes:[],tintas:{},partes:[],errores:[],ribbons:{grados:[],items:[]},mant:{docs:[],tareas:[]},modelosLaser:[],meta:{}};
 
 function aplicarIdioma(){
   document.documentElement.lang = LANG;
   $$('[data-i18n]').forEach(el => { const k = el.getAttribute('data-i18n'); if (I18N[LANG][k]) el.textContent = I18N[LANG][k]; });
   $('#lang').value = LANG;
+  $('#lang').setAttribute('aria-label', t('idioma'));
+  $('#theme').setAttribute('title', t('tema'));
+  $('#theme').setAttribute('aria-label', t('tema'));
   $('#foot').textContent = `${t('kpi_solventes')} · ${t('kpi_partes')} · offline`;
   $('#q').placeholder = t('buscar') + '...';
   if ($('#prof_nombre')) $('#prof_nombre').placeholder = t('perfil_ph');
@@ -523,9 +595,9 @@ function renderKPIs(){
 }
 function renderFuentes(){
   const f = D.meta.fuentes || {};
-  $('#fuentes').textContent = Object.values(f).join(' · ');
+  $('#fuentes').textContent = Object.values(f).map(tr).join(' · ');
   $('#av_fecha').textContent = `v${D.meta.version} · ${D.meta.fecha}`;
-  $('#av_nota').textContent = D.meta.aviso || '';
+  $('#av_nota').textContent = tr(D.meta.aviso || '');
   $('#ver').textContent = D.meta.version;
 }
 
@@ -537,10 +609,19 @@ document.querySelector('#est_chips').addEventListener('click', e => {
   $$('#est_chips .chip').forEach(c => c.classList.toggle('on', c === b));
   renderEstudiar();
 });
+const ESTADOS_I18N = {
+  'verificado': 'est_verificado',
+  'borrador': 'est_borrador',
+  'borrador-decodificado': 'est_borrador_decodificado',
+  'sin-datos-en-documento': 'est_sindatos',
+  'por-definir': 'est_por_definir',
+  'sin-pn': 'est_sin_pn'
+};
 function badge(est){
   if (!est) return '';
   const cls = /verific/i.test(est) ? 'ok' : /borrador|deco/i.test(est) ? 'warn' : '';
-  return `<span class="badge ${cls}">${esc(est)}</span>`;
+  const clave = ESTADOS_I18N[est];
+  return `<span class="badge ${cls}">${esc(clave ? t(clave) : est)}</span>`;
 }
 function renderEstudiar(){
   const box = $('#est_body');
@@ -550,7 +631,7 @@ function renderEstudiar(){
       <div class="list" id="tinta_list">${codes.map(c => {
         const x = D.tintas[c];
         return `<div class="row" data-tinta="${esc(c)}" style="cursor:pointer"><span class="n">${esc(c)}</span>
-          <span class="d">${esc((x.b||[]).join(' / '))}${x.col ? ' · ' + esc(x.col) : ''} · ${x.curvas||0} ${esc(t('curvas'))}</span></div>`;
+          <span class="d">${esc((x.b||[]).map(tr).join(' / '))}${x.col ? ' · ' + esc(tr(x.col)) : ''} · ${x.curvas||0} ${esc(t('curvas'))}</span></div>`;
       }).join('')}</div><div id="tinta_det"></div>`;
     $('#tinta_list').addEventListener('click', e => {
       const r = e.target.closest('[data-tinta]'); if (r) detalleTinta(r.dataset.tinta);
@@ -561,11 +642,11 @@ function renderEstudiar(){
     });
   } else if (EST === 'ribbons') {
     box.innerHTML = `<h3 data-i18n="kpi_ribbons">${t('kpi_ribbons')}</h3>
-      <div class="list">${D.ribbons.grados.map(g => `<div class="row"><span class="n">${esc(g.g||'')}</span>
-        <span class="d">${esc(g.pn||'')} · ${esc(g.col||'')} · ${esc(g.vel??'')} mm/s · ${esc(g.tipo||'')}</span></div>`).join('')}</div>
+      <div class="list">${D.ribbons.grados.map(g => `<div class="row"><span class="n">${esc(tr(g.g||''))}</span>
+        <span class="d">${esc(g.pn||'')} · ${esc(tr(g.col||''))} · ${esc(g.vel??'')} mm/s · ${esc(tr(g.tipo||''))}</span></div>`).join('')}</div>
       <h3>${esc(t('items'))} (${D.ribbons.items.length})</h3>
       <input type="text" id="rib_q" placeholder="${esc(t('buscar'))}..." style="width:100%;margin:6px 0">
-      <div class="list" id="rib_list" style="max-height:300px">${D.ribbons.items.map(([n,d]) => `<div class="row"><span class="n">${esc(n)}</span><span class="d">${esc(d)}</span></div>`).join('')}</div>`;
+      <div class="list" id="rib_list" style="max-height:300px">${D.ribbons.items.map(([n,d]) => `<div class="row"><span class="n">${esc(n)}</span><span class="d">${esc(tr(d))}</span></div>`).join('')}</div>`;
     $('#rib_q').addEventListener('input', e => {
       const q = norm(e.target.value);
       $$('#rib_list .row').forEach(r => { r.style.display = norm(r.textContent).includes(q) ? '' : 'none'; });
@@ -576,14 +657,14 @@ function renderEstudiar(){
       <p class="small">${esc(t('partes_de'))}: ${D.partes.filter(p=>p.t==='LASER').length} AL- · ${esc(t('kpi_errores'))}: ${D.errores.filter(e=>e.t==='LASER').length}</p>`;
   } else {
     box.innerHTML = `<h3>${esc(t('est_mant'))} — ${D.mant.docs.length} ${esc(t('docs'))} · ${D.mant.tareas.length} ${esc(t('tareas'))}</h3>
-      <div class="list">${D.mant.tareas.map(x => `<div class="row"><span class="badge">${esc(x.tec)}</span><span class="d">${esc(x.iv||'')} · ${esc(x.x)}</span></div>`).join('')}</div>`;
+      <div class="list">${D.mant.tareas.map(x => `<div class="row"><span class="badge">${esc(x.tec)}</span><span class="d">${esc(tr(x.iv||''))} · ${esc(tr(x.x))}</span></div>`).join('')}</div>`;
   }
 }
 function detalleTinta(codigo){
   const x = D.tintas[codigo]; if (!x) return;
   const fichas = (x.fichas||[]).map(f => {
-    const comps = (f.comp||[]).map(c => `<tr><td>${esc(c.n)}</td><td class="mono">${esc(c.cas)}</td><td>${esc(c.p||'')}</td><td>${badge(c.e)}</td></tr>`).join('');
-    const props = Object.entries(f.props||{}).map(([k,v]) => `<tr><th>${esc(k)}</th><td>${esc(Array.isArray(v)?v.join(' · '):v)}</td></tr>`).join('');
+    const comps = (f.comp||[]).map(c => `<tr><td>${esc(tr(c.n))}</td><td class="mono">${esc(c.cas)}</td><td>${esc(c.p||'')}</td><td>${badge(c.e)}</td></tr>`).join('');
+    const props = Object.entries(f.props||{}).map(([k,v]) => `<tr><th>${esc(trProp(k))}</th><td>${esc(tr(Array.isArray(v)?v.join(' · '):v))}</td></tr>`).join('');
     return `<div class="card" style="box-shadow:none">
       <div class="small"><b>${esc(f.a)}</b> · v${esc(f.v||'?')} · ${esc(f.fd||'')} ${f.comp?.length?badge('borrador'):''}</div>
       ${comps ? `<table><thead><tr><th>${esc(t('compon'))}</th><th>CAS</th><th>%</th><th></th></tr></thead><tbody>${comps}</tbody></table>` : ''}
@@ -591,7 +672,7 @@ function detalleTinta(codigo){
     </div>`;
   }).join('');
   $('#tinta_det').innerHTML = `<div class="card"><h3>${esc(codigo)}</h3>
-    <p class="small">${esc((x.b||[]).join(' / '))}${x.col?' · '+esc(x.col):''}</p>
+    <p class="small">${esc((x.b||[]).map(tr).join(' / '))}${x.col?' · '+esc(tr(x.col)):''}</p>
     <button class="btn" onclick="document.getElementById('tinta_det').innerHTML=''">${esc(t('volver'))}</button></div>${fichas}`;
 }
 
@@ -610,38 +691,49 @@ function buscar(qraw){
   const limite = 200;
   if (BUS==='todo' || BUS==='partes') {
     for (const p of D.partes) {
-      if (!q || norm(p.n).includes(q) || norm(p.d).includes(q) || norm(p.m||'').includes(q)) {
-        out.push({tipo:p.t, n:p.n, d:p.d, m:p.m, e:p.e, c:p.c});
+      const dt = tr(p.d);
+      if (!q || norm(p.n).includes(q) || norm(p.d).includes(q) || norm(dt).includes(q) || norm(p.m||'').includes(q)) {
+        out.push({tipo:p.t, n:p.n, d:dt, m:p.m, e:p.e, c:p.c});
       }
       if (out.length > limite) break;
     }
   }
   if (BUS==='todo' || BUS==='tintas') {
     for (const [c,x] of Object.entries(D.tintas)) {
-      if (!q || norm(c).includes(q) || norm((x.b||[]).join(' ')).includes(q) || norm(x.col||'').includes(q)) out.push({tipo:'CIJ', n:c, d:`${(x.b||[]).join(' / ')} ${x.col||''}`});
+      const bases = (x.b||[]).map(tr).join(' / ');
+      const col = tr(x.col||'');
+      if (!q || norm(c).includes(q) || norm((x.b||[]).join(' ')).includes(q) || norm(x.col||'').includes(q)
+          || norm(bases).includes(q) || norm(col).includes(q)) out.push({tipo:'CIJ', n:c, d:`${bases} ${col}`});
     }
   }
   if (BUS==='todo' || BUS==='errores') {
     for (const e of D.errores) {
-      if (!q || norm(e.c).includes(q) || norm(e.x).includes(q)) out.push({tipo:'ERR '+e.t, n:e.c, d:(e.cl?e.cl+' · ':'')+e.x});
+      const xt = tr(e.x), cl = tr(e.cl||'');
+      if (!q || norm(e.c).includes(q) || norm(e.x).includes(q) || norm(xt).includes(q) || norm(cl).includes(q))
+        out.push({tipo:'ERR '+e.t, n:e.c, d:(cl?cl+' · ':'')+xt});
     }
   }
   if (BUS==='todo' || BUS==='ribbons') {
     for (const g of D.ribbons.grados) {
-      if (!q || norm(g.g+' '+g.pn).includes(q)) out.push({tipo:'TTO', n:g.g, d:`${g.pn||''} · ${g.col||''} · ${g.vel||''} mm/s`});
+      const gn = tr(g.g||''), col = tr(g.col||'');
+      if (!q || norm(g.g+' '+g.pn).includes(q) || norm(gn+' '+col).includes(q))
+        out.push({tipo:'TTO', n:gn, d:`${g.pn||''} · ${col} · ${g.vel||''} mm/s`});
     }
     for (const [n,d] of D.ribbons.items) {
-      if (!q || norm(n+' '+d).includes(q)) out.push({tipo:'TTO item', n, d});
+      const dt = tr(d);
+      if (!q || norm(n+' '+d).includes(q) || norm(dt).includes(q)) out.push({tipo:'TTO item', n, d:dt});
       if (out.length > limite*2) break;
     }
   }
   if (BUS==='todo' || BUS==='mant') {
     for (const x of D.mant.tareas) {
-      if (!q || norm(x.x).includes(q)) out.push({tipo:'MANT '+x.tec, n:x.iv||'—', d:x.x});
+      const xt = tr(x.x), iv = tr(x.iv||'—');
+      if (!q || norm(x.x).includes(q) || norm(xt).includes(q) || norm(iv).includes(q))
+        out.push({tipo:'MANT '+x.tec, n:iv, d:xt});
     }
   }
   const slice = out.slice(0, 300);
-  $('#bus_count').textContent = `${slice.length}${out.length>slice.length?'+':''} ${t('sin_resultados')==='' ? '' : ''}`;
+  $('#bus_count').textContent = `${slice.length}${out.length>slice.length?'+':''} ${t('items')}`;
   $('#bus_list').innerHTML = slice.length ? slice.map(r => `<div class="row"><span class="badge">${esc(r.tipo)}</span>
       <span class="n">${esc(r.n)}</span><span class="d">${esc(r.d)}${r.m?` · ${esc(r.m)}`:''}${r.c?` · ${esc(t('conflicto'))}`:''}</span>${r.e?badge(r.e):''}</div>`).join('')
     : `<div class="row"><span class="d">${esc(t('sin_resultados'))}</span></div>`;
@@ -699,12 +791,12 @@ function calcular(){
   const hrsCart = (entrada.cm && uso) ? entrada.cm / uso : null;
   const costoHora = (uso && precio) ? (uso/1000)*precio : null;
   out.innerHTML = `<div class="grid">
-    <div class="kpi"><b>${uso!==null?uso.toFixed(1):'—'}</b><span>${esc(t('ml_h').replace('{t}', temp))}</span></div>
-    <div class="kpi"><b>${hl?hl.toFixed(0):'—'}</b><span>${esc(t('h_litro'))}</span></div>
-    <div class="kpi"><b>${hrsCart?hrsCart.toFixed(0):'—'}</b><span>${esc(t('h_cartucho').replace('{n}', entrada.cm||''))}</span></div>
-    <div class="kpi"><b>${costoHora!==null?('$'+costoHora.toFixed(2)):'—'}</b><span>${esc(t('usd_hora'))}</span></div>
+    <div class="kpi"><b>${fmtNum(uso,1)}</b><span>${esc(t('ml_h').replace('{t}', fmtNum(temp,0)))}</span></div>
+    <div class="kpi"><b>${fmtNum(hl,0)}</b><span>${esc(t('h_litro'))}</span></div>
+    <div class="kpi"><b>${fmtNum(hrsCart,0)}</b><span>${esc(t('h_cartucho').replace('{n}', fmtNum(entrada.cm,0)))}</span></div>
+    <div class="kpi"><b>${costoHora!==null?('$'+fmtNum(costoHora,2)):'—'}</b><span>${esc(t('usd_hora'))}</span></div>
   </div>
-  <p class="small">${esc(entrada.b||'')} · ref: ${esc(entrada.r||'—')} · ${badge(entrada.e)}</p>
+  <p class="small">${esc(tr(entrada.b||''))} · ${esc(t('calc_ref'))}: ${esc(refTexto(entrada.r))} · ${badge(entrada.e)}</p>
   <table><thead><tr><th>T (°C)</th><th>ml/h</th></tr></thead><tbody>
   ${entrada.c.map(([t,u])=>`<tr><td>${t}</td><td>${u}</td></tr>`).join('')}</tbody></table>`;
 }
@@ -733,15 +825,17 @@ function generarPregunta(nivel){
   }
   if (nivel === 2) {
     const g = aleatorio(grados.filter(g => g.col));
-    return {q:t('q_color').replace('{g}', g.g||g.pn), a:g.col, ops:opciones(g.col, grados.map(x=>x.col).filter(Boolean)),
+    const col = tr(g.col);
+    return {q:t('q_color').replace('{g}', g.g||g.pn), a:col, ops:opciones(col, grados.map(x=>tr(x.col)).filter(Boolean)),
       ref:t('ref_ribbons')};
   }
   if (nivel === 3) {
     const partesCij = D.partes.filter(p => p.t === 'CIJ' && p.e === 'verificado' && p.d);
     if (partesCij.length && Math.random() < 0.5) {
       const p = aleatorio(partesCij);
-      const pool = D.partes.filter(x => x.t === 'CIJ' && x.d).map(x => x.d);
-      return {q:t('q_part').replace('{n}', p.n), a:p.d, ops:opciones(p.d, pool),
+      const d = tr(p.d);
+      const pool = D.partes.filter(x => x.t === 'CIJ' && x.d).map(x => tr(x.d));
+      return {q:t('q_part').replace('{n}', p.n), a:d, ops:opciones(d, pool),
         ref:t('ref_part')};
     }
     const e = aleatorio(errs);
@@ -749,16 +843,21 @@ function generarPregunta(nivel){
       ref:t('ref_err')};
   }
   if (nivel === 4) {
-    const s = aleatorio(D.solventes.filter(s => s.e === 'verificado' && s.r));
-    return {q:t('q_ref').replace('{m}', s.m+(s.v?' '+s.v:'')).replace('{t}', s.t), a:String(s.r)+' ml/h', ops:opciones(String(s.r)+' ml/h', D.solventes.map(x=>String(x.r)+' ml/h')),
-      ref:t('ref_sol')};
+    const s = aleatorio(D.solventes.filter(s => s.e === 'verificado' && refUso(s.r) !== null && refUso(s.r) !== undefined));
+    const uso = refUso(s.r);
+    const correcta = fmtNum(uso, 1) + ' ml/h';
+    const pool = [...new Set(D.solventes.map(x => refUso(x.r)).filter(v => v !== null && v !== undefined))]
+      .map(v => fmtNum(v, 1) + ' ml/h');
+    return {q:t('q_ref').replace('{m}', s.m+(s.v?' '+s.v:'')).replace('{t}', s.t), a:correcta,
+      ops:opciones(correcta, pool), ref:t('ref_sol')};
   }
   const conComp = tintas.filter(([,x]) => (x.fichas||[]).some(f => (f.comp||[]).length));
   if (conComp.length) {
     const [c,x] = aleatorio(conComp);
     const f = aleatorio(x.fichas.filter(f => (f.comp||[]).length));
     const comp = aleatorio(f.comp);
-    return {q:t('q_cas').replace('{cas}', comp.cas).replace('{c}', c), a:comp.n, ops:opciones(comp.n, x.fichas.flatMap(f => (f.comp||[]).map(c=>c.n))),
+    const nombre = tr(comp.n);
+    return {q:t('q_cas').replace('{cas}', comp.cas).replace('{c}', c), a:nombre, ops:opciones(nombre, x.fichas.flatMap(f => (f.comp||[]).map(c=>tr(c.n)))),
       ref:t('ref_sds')};
   }
   return {q:'—', a:'—', ops:['—'], ref:'—'};
@@ -942,7 +1041,7 @@ function renderExamenBanco(){
         const ae = document.createElement('div');
         ae.className = 'card'; ae.style.boxShadow = 'none';
         ae.innerHTML = `<div class="small"><b>${esc(t('respuesta_modelo'))}</b></div>
-          <pre style="white-space:pre-wrap;font:inherit;margin:6px 0">${esc((d.mod||'').slice(0,1600))}</pre>
+          <pre style="white-space:pre-wrap;font:inherit;margin:6px 0">${esc(d.mod||'')}</pre>
           <button class="btn" data-self="1" data-i="${i}">✅ ${esc(t('self_ok'))}</button>
           <button class="btn" data-self="0" data-i="${i}">❌ ${esc(t('self_no'))}</button>`;
         res.appendChild(ae);
@@ -954,7 +1053,7 @@ function renderExamenBanco(){
       }
       puntos += valor;
       repasoActualizar(q.id, valor >= 1);
-      if (d.x) res.innerHTML = `${valor>=1?'✅':valor>0?'◐':'❌'} <span class="small">${esc(d.x).slice(0,700)}</span>`;
+      if (d.x) res.innerHTML = `${valor>=1?'✅':valor>0?'◐':'❌'} <span class="small">${esc(d.x)}</span>`;
     });
     const total = examen.preguntas.length;
     const nota = `${(Math.round(puntos*10)/10)}/${total}`;
@@ -1112,7 +1211,7 @@ function generarConstancia(etiqueta, puntos, total){
     + '<div class="nombre">' + esc(nombre) + '</div>'
     + '<p style="text-align:center">' + texto + '</p>'
     + '<div class="detalle"><span>📅 ' + esc(fecha) + '</span><span>📱 App v' + esc((D.meta||{}).version||'') + '</span></div>'
-    + '<div class="qr">' + (imgSrc ? '<img src="' + imgSrc + '" alt="QR de verificación">' : '')
+    + '<div class="qr">' + (imgSrc ? '<img src="' + imgSrc + '" alt="' + esc(t('cert_qr')) + '">' : '')
     + '<div class="nota">' + esc(t('cert_qr')) + '</div></div>'
     + '<div class="firma"><span>____________________<br>' + esc(t('cert_participante')) + '</span><span>____________________<br>' + esc(t('cert_entidad')) + '</span></div>'
     + '<div class="nota">' + esc(t('cert_aviso')) + '</div>'

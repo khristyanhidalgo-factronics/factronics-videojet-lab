@@ -3,8 +3,8 @@
 > Lista de lo **completado y entregado** en la v0.2.0. Se actualiza a medida que avanza.
 
 ## Datos para la app
-- [x] **`tools/construir_app_datos.py`** → `docs/app/datos.js` (692,4 KB): paquete compacto
-      con estados por dato.
+- [x] **`tools/construir_app_datos.py`** → `docs/app/datos.js` (2015,0 KB): paquete compacto
+      con estados por dato y memoria de traducción `D.tr` (3.449 entradas).
 - [x] Incluye: 802 curvas de solvente, 134 tintas (bases, color, SDS con CAS/% y
       propiedades), **2.894 partes** (120 TTO + 204 CIJ + 2.570 LÁSER), 231 códigos de error,
       64 grados + 694 ítems de ribbons, mantenimiento (48 docs / 39 tareas), 21 modelos
@@ -34,11 +34,15 @@
 - [x] i18n **es/en/pt/it/zh** para la interfaz; tema claro/oscuro/sistema con persistencia.
 - [x] Detalle de tinta con tabla de composición (nombre, CAS, %, estado) y propiedades.
 - [x] Calculadora CIJ: interpolación 10–40 °C, ml/h, h/L, h/cartucho, costo/hora;
-      aviso para `sin-datos-en-documento`.
+      aviso para `sin-datos-en-documento`; formato numérico por idioma (coma decimal
+      en es/pt) y referencia legible (`30 °C → 11,2 ml/h`).
+- [x] **Prueba automática de la calculadora:** `tools/test_app_calculo.py` recorre las
+      802 curvas, comprueba 800 referencias @30 °C y el caso VJ1210/V401 = 11,2 ml/h;
+      también detecta si la app vuelve a imprimir objetos (`[object Object]`). En el CI.
 - [x] Exámenes de 5 niveles generados de datos reales, corrección con referencia e
       historial local; el nivel 3 incluye preguntas de **parte CIJ → descripción**.
 - [x] **Offline:** `manifest.webmanifest` + `sw.js` (precache y cache-first) + icono SVG;
-      instalación como PWA desde el navegador.
+      instalación como PWA desde el navegador. Caché actualizada a `fvl-v0.2.0-alpha-14`.
 
 ## Publicación
 - [x] Landing con acceso directo a la app y tarjeta en Descargas (estado v0.2.0-alpha).
@@ -55,7 +59,16 @@
 - [x] **Validador `tools/validar_repo.py` + CI** (`.github/workflows/validar.yml`): JSON, hashes de notas, app y enlaces. TODO OK.
 - [x] **Constancia imprimible con QR offline** (`docs/app/vendor/qrcode.js`): botón 🎓 Constancia en todo resultado, con logo, nombre del perfil, evaluación, puntaje, fecha, versión y QR del resultado; ventana lista para imprimir. Verificado sin errores de consola.
 - [x] **Repaso espaciado y cuaderno de errores:** cajas 1–5 con intervalos 1/3/7/14/30 días, pendientes del día, errores acumulados y repaso de hasta 20 preguntas; persistencia local. Verificado en navegador.
-- [x] **Respuestas de texto en preguntas «completar»** (p. ej. «intelligent motion») con comparación normalizada; `tools/test_banco_tto.py` valida 372 preguntas × 3 idiomas y sus 7 tipos, y quedó agregado al CI.
-- [x] **Idiomas IT y ZH:** interfaz completa en 5 idiomas (ES/EN/PT/IT/ZH), con selector, cadenas dinámicas y constancia traducidas; 0 claves faltantes y pruebas en navegador sin errores. El banco TTO conserva es/en/pt y usa español como respaldo en IT/ZH (indicado en la app).
+- [x] **Respuestas de texto en preguntas «completar»** (p. ej. «intelligent motion») con comparación normalizada; `tools/test_banco_tto.py` valida 372 preguntas × 5 idiomas y sus 7 tipos, y quedó agregado al CI.
+- [x] **Cinco idiomas reales en todo el contenido:** `datos/traducciones_contenido.json`
+      cubre 3.445 cadenas visibles × 5 idiomas (17.225/17.225), incluidos textos de
+      origen alemán, japonés y chino; `docs/app/datos.js` incrusta `D.tr` y la app
+      traduce partes, tintas, SDS, ribbons, mantenimiento, errores y calculadora.
+      `tools/test_traducciones.py` verifica cobertura y ausencia de centinelas.
+- [x] **Banco TTO en 5 idiomas:** las 372 preguntas (1.134 cadenas) se tradujeron a
+      italiano y chino desde español con `tools/traducir_banco_tto.py`; se conservan
+      IDs de opciones, respuestas numéricas y de texto, **unidades impresas** (mm, ppm,
+      PPR, TCP, min, USD) y etiquetas técnicas revisadas. `tools/test_banco_tto.py`
+      valida 372 × 5 idiomas, centinelas, alineación de opciones, campos y unidades.
 - [x] **Precache del shell verificado (7/7)** y registro del service worker con `updateViaCache:'none'` para recibir actualizaciones sin caché vieja.
 - [x] **`docs/version.json` publicado** (copia del `version.json` raíz) y validado contra la versión/build para que Pages no sirva datos viejos.

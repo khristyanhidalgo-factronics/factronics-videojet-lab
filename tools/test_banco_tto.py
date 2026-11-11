@@ -2,7 +2,7 @@
 """Pruebas del banco de preguntas TTO incluido en la app.
 
 Valida docs/app/banco_tto.js (estructura compacta):
-  - 372 preguntas y los 3 idiomas en todas.
+  - 372 preguntas y los 5 idiomas en todas.
   - Tipos conocidos y campos requeridos por tipo.
   - Respuestas de seleccion existen entre las opciones; numeros con tolerancia.
 Uso: python tools/test_banco_tto.py   (exit 0 = OK)
@@ -26,6 +26,19 @@ def cargar():
     return json.loads(m.group(1))
 
 
+def textos_visibles(d):
+    yield d.get('q') or ''
+    yield d.get('x') or ''
+    yield d.get('mod') or ''
+    for opcion in d.get('o') or []:
+        if isinstance(opcion, list) and len(opcion) > 1:
+            yield opcion[1] or ''
+    for campo in d.get('f') or []:
+        for valor in campo[:2]:
+            if isinstance(valor, str):
+                yield valor
+
+
 def main():
     banco = cargar()
     preguntas = banco.get('preguntas', [])
@@ -39,11 +52,38 @@ def main():
         tipo = q.get('t')
         if tipo not in TIPOS:
             fallos.append('%s: tipo desconocido %r' % (qid, tipo))
-        for idioma in ('es', 'en', 'pt'):
+        for idioma in ('es', 'en', 'pt', 'it', 'zh'):
             d = (q.get('i') or {}).get(idioma)
             if not d or not d.get('q'):
                 fallos.append('%s: falta idioma %s' % (qid, idioma))
                 continue
+            for texto in textos_visibles(d):
+                if 'ZXQ' in texto.upper():
+                    fallos.append('%s/%s: centinela sin restaurar en %r'
+                                  % (qid, idioma, texto[:80]))
+                    break
+            if idioma in ('it', 'zh'):
+                base = (q.get('i') or {}).get('es') or {}
+                if tipo in ('single', 'multi', 'errmap'):
+                    ids_base = [o[0] for o in (base.get('o') or [])]
+                    ids_trad = [o[0] for o in (d.get('o') or [])]
+                    if ids_base != ids_trad:
+                        fallos.append('%s/%s: opciones desalineadas respecto a es'
+                                      % (qid, idioma))
+                if tipo in ('fill', 'calc'):
+                    campos_base = base.get('f') or []
+                    campos_trad = d.get('f') or []
+                    if len(campos_base) != len(campos_trad):
+                        fallos.append('%s/%s: campos desalineados respecto a es'
+                                      % (qid, idioma))
+                    else:
+                        for k, (campo, campo_base) in enumerate(zip(campos_trad, campos_base)):
+                            if len(campo) > 1 and len(campo_base) > 1 and campo[1] != campo_base[1]:
+                                fallos.append('%s/%s: unidad del campo %d cambió (%r -> %r)'
+                                              % (qid, idioma, k + 1, campo_base[1], campo[1]))
+                            if campo[2] != campo_base[2]:
+                                fallos.append('%s/%s: respuestas del campo %d cambiaron'
+                                              % (qid, idioma, k + 1))
             if tipo in ('single', 'multi', 'errmap'):
                 opciones = d.get('o') or []
                 ids = {o[0] for o in opciones}
@@ -76,7 +116,7 @@ def main():
     tipos = {}
     for q in preguntas:
         tipos[q['t']] = tipos.get(q['t'], 0) + 1
-    print('Banco TTO OK: %d preguntas, 3 idiomas, tipos=%s'
+    print('Banco TTO OK: %d preguntas, 5 idiomas, tipos=%s'
           % (len(preguntas), tipos))
 
 

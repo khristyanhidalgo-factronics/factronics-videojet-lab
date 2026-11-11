@@ -20,3 +20,7 @@ jobs:
         run: python tools/validar_repo.py
       - name: Probar banco de preguntas TTO
         run: python tools/test_banco_tto.py
+      - name: Probar calculadora CIJ y referencia VJ1210/V401
+        run: python tools/test_app_calculo.py
+      - name: Probar traducciones de contenido (es/en/pt/it/zh)
+        run: python tools/test_traducciones.py
