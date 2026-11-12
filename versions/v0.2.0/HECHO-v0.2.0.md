@@ -3,10 +3,10 @@
 > Lista de lo **completado y entregado** en la v0.2.0. Se actualiza a medida que avanza.
 
 ## Datos para la app
-- [x] **`tools/construir_app_datos.py`** → `docs/app/datos.js` (2015,0 KB): paquete compacto
-      con estados por dato y memoria de traducción `D.tr` (3.449 entradas).
+- [x] **`tools/construir_app_datos.py`** → `docs/app/datos.js` (2044,9 KB): paquete compacto
+      con estados por dato y memoria de traducción `D.tr` (3.520 entradas).
 - [x] Incluye: 802 curvas de solvente, 134 tintas (bases, color, SDS con CAS/% y
-      propiedades), **2.894 partes** (120 TTO + 204 CIJ + 2.570 LÁSER), 231 códigos de error,
+      propiedades), **2.986 partes** (120 TTO + 296 CIJ + 2.570 LÁSER), 231 códigos de error,
       64 grados + 694 ítems de ribbons, mantenimiento (48 docs / 39 tareas), 21 modelos
       láser.
 - [x] **Partes CIJ de 6 IPL 1000VJ**: 1.397 registros, **204 P/N únicos** (124
@@ -27,6 +27,26 @@
       tabla e ítem; `datos/analisis/LEEME.md` documenta los archivos de
       análisis. Los 3 P/N siguen en `borrador` con
       `conflicto_descripciones=true`.
+- [x] **IPL 1550/1710 por OCR, sin instalar nada:** `tools/ocr_pdf_paginas.py`
+      (Windows.Data.Pdf + Windows.Media.Ocr) procesó **1550 = 56 páginas** y
+      **1710 = 51 páginas**. `datos/partes_cij_ocr.json`: **277 registros, 193 P/N,
+      92 P/N nuevos, 336 ítems sin P/N**, todos `borrador-decodificado` con
+      `descripcion_ocr`/`pn_ocr` como evidencia. Las láminas 14, 15 y 18 del 1550
+      se recuperaron a **1200 px** (la 15 aportó 4 P/N y 5 ítems); quedan
+      **0 páginas omitidas**. `tools/test_partes_cij_ocr.py` lo valida.
+- [x] **Conflictos OCR en la app:** `tools/construir_app_datos.py` propaga a los
+      P/N ya existentes los conflictos reales (`395898`, `395899`, `399474`,
+      `399475`, `SP234081`) sin ascender su estado; `SequenceMatcher` eliminó el
+      falso positivo `202047` («Bottie» → «Bottle»).
+- [x] **PDFs escaneados TTO y láser:** TTO **7/7** (14.089 caracteres, 0 páginas
+      omitidas); láser **88 PDFs en el objetivo, 74 con texto OCR (281.579
+      caracteres), 13 sin resultado y 1 error de render** (`MedidoresPortenciaCO2.pdf`),
+      0 páginas omitidas. Texto por documento en `datos/extraccion/*_ocr.txt`.
+- [x] **Cotejo de P/N conocidos del OCR:** `399362` Mobile Stand Standard, `399086`
+      Printhead Stand, `399474` Dry Air Kit Assembly (1550+1710), `399099` Static
+      Stand Standard, `234116` Adapter Plate, `SP399089` Beacon Assembly y
+      `SP399971W` CSB with Back Plate aparecen con la descripción esperada; los
+      demás siguen como `borrador-decodificado` hasta revisión humana.
 
 ## App (PWA)
 - [x] `docs/app/index.html` — Inicio, Estudiar (tintas/ribbons/láser/mantenimiento),
@@ -42,7 +62,7 @@
 - [x] Exámenes de 5 niveles generados de datos reales, corrección con referencia e
       historial local; el nivel 3 incluye preguntas de **parte CIJ → descripción**.
 - [x] **Offline:** `manifest.webmanifest` + `sw.js` (precache y cache-first) + icono SVG;
-      instalación como PWA desde el navegador. Caché actualizada a `fvl-v0.2.0-alpha-14`.
+      instalación como PWA desde el navegador. Caché actualizada a `fvl-v0.2.0-alpha-15`.
 
 ## Publicación
 - [x] Landing con acceso directo a la app y tarjeta en Descargas (estado v0.2.0-alpha).

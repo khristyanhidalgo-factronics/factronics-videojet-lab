@@ -26,6 +26,11 @@ def main():
     tintas = cargar('cij_tintas.json')
     partes_tto = cargar('partes_tto.json')
     partes_cij = cargar('partes_cij.json')
+    partes_cij_ocr = {}
+    ruta_ocr = os.path.join(DATOS, 'partes_cij_ocr.json')
+    if os.path.exists(ruta_ocr):
+        with open(ruta_ocr, 'r', encoding='utf-8') as f:
+            partes_cij_ocr = json.load(f)
     laser_partes = cargar('laser_partes.json')
     errores = cargar('codigos_error.json')
     ribbons = cargar('tto_ribbons.json')
@@ -47,7 +52,8 @@ def main():
             'fuentes': {'solventes': 'CIJ Makeup Usage Model v14 (802/802)',
                         'tintas': 'fichas QSS descifradas + brochures + uso de solvente',
                         'ttO': 'Excel de curso + chart de ribbons 2.5.26',
-                        'cij': '6 IPL 1000VJ (1210/1510, 1220/1520, 1520E, 1610 DH, 1620E, 1650)',
+                        'cij': ('6 IPL 1000VJ (1210/1510, 1220/1520, 1520E, 1610 DH, 1620E, 1650) '
+                                '+ IPL 1550/1710 por OCR (borrador-decodificado)'),
                         'laser': 'manuales CO2/Fibra + SpareParts',
                         'errores': 'listas oficiales de error',
                         'mantenimiento': 'manuales y procedimientos'},
@@ -140,8 +146,51 @@ def main():
         if not desc and descripciones:
             desc = descripciones[0].get('texto', '')
         paquete['partes'].append({'n': numero, 'd': str(desc), 't': 'TTO'})
-    # partes CIJ (6 IPL; se conserva el estado y los modelos)
-    for p in partes_cij.get('partes', []):
+    # partes CIJ (6 IPL + 1550/1710 OCR; se conserva el estado y los modelos)
+    partes_cij_app = list(partes_cij.get('partes', []))
+    por_pn = {str(p['pn']): p for p in partes_cij_app}
+    ocr_nuevas = 0
+    for p in partes_cij_ocr.get('partes', []):
+        pn = str(p.get('pn') or '').strip()
+        if not pn:
+            continue
+        modelos = p.get('modelos') or []
+        if pn in por_pn:
+            # El P/N ya existe en la base digital: se suma el modelo donde el
+            # OCR lo volvio a leer y se conserva la evidencia. El estado no se
+            # asciende por OCR.
+            actual = por_pn[pn]
+            actuales = actual.setdefault('modelos', [])
+            for m in modelos:
+                if m and m not in actuales:
+                    actuales.append(m)
+            if p.get('conflicto_descripciones'):
+                # Conflicto real entre la base digital y el IPL OCR: la app
+                # debe mostrarlo aunque el P/N ya existiera.
+                actual['conflicto_descripciones'] = True
+                actual['conflicto_ocr'] = {
+                    'descripcion': p.get('descripcion') or '',
+                    'descripciones': p.get('descripciones') or [],
+                    'documentos': p.get('documentos') or [],
+                }
+                descs = actual.setdefault('descripciones', [])
+                for d in p.get('descripciones') or []:
+                    if d and d not in descs:
+                        descs.append(d)
+            continue
+        nueva = {
+            'pn': pn,
+            'descripcion': p.get('descripcion') or '',
+            'descripciones': p.get('descripciones') or [],
+            'estado': p.get('estado') or 'borrador-decodificado',
+            'conflicto_descripciones': bool(p.get('conflicto_descripciones')),
+            'modelos': modelos,
+            'origen': 'OCR',
+        }
+        partes_cij_app.append(nueva)
+        por_pn[pn] = nueva
+        ocr_nuevas += 1
+    for p in partes_cij_app:
         paquete['partes'].append({
             'n': p['pn'],
             'd': (p.get('descripcion') or ''),
@@ -163,12 +212,12 @@ def main():
         json.dump(paquete, f, ensure_ascii=False, separators=(',', ':'))
         f.write(';\n')
     tam = os.path.getsize(SALIDA)
-    print('OK %s (%.1f KB) | solventes=%d tintas=%d partes=%d (CIJ=%d) '
+    print('OK %s (%.1f KB) | solventes=%d tintas=%d partes=%d (CIJ=%d, +%d OCR) '
           'errores=%d ribbons=%d/%d mant=%d/%d modelos_laser=%d'
           % (os.path.relpath(SALIDA, RAIZ), tam / 1024.0,
              len(paquete['solventes']), len(paquete['tintas']),
              len(paquete['partes']),
-             len(partes_cij.get('partes', [])), len(paquete['errores']),
+             len(partes_cij_app), ocr_nuevas, len(paquete['errores']),
              len(paquete['ribbons']['grados']), len(paquete['ribbons']['items']),
              len(paquete['mant']['docs']), len(paquete['mant']['tareas']),
              len(paquete['modelosLaser'])))

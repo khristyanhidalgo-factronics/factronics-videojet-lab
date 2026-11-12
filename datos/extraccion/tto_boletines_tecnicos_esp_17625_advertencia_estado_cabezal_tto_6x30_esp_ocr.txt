@@ -1,0 +1,85 @@
+# OCR Windows.Data.Pdf + Windows.Media.Ocr - fuente: Boletines Tecnicos\Esp\17625-Advertencia Estado Cabezal TTO 6x30 (Esp).pdf
+# paginas=2 lineas=79 caracteres=3208 omitidas=[]
+
+===== PAGINA 1 =====
+14/10/2022 12:14
+Artículo de conocimiento
+E3226 - Advertencia de estado del
+cabezal de impresión Dataflex
+Información
+Encabezado
+IDEOJET.
+Artículo de conocimiento de Videojet Technologies, Inc.
+Escalada
+relacionada
+Contenido
+Nuestra nueva línea de impresoras T TO está equipada con una función de monitoreo de cabezal de
+impresión en el software. E3226 se mostrará cuando el software detecte elementos desgastados en
+el cabezal de impresión
+El estado del cabezal de impresión se puede ver en el siguiente menú.
+OFFLINE
+Tools
+Diagnostics»Printhead4Printhead Health*Health Graph
+-1 4E3
+441
+141 g
+1 3g7
+1374
+1
+IG3 ns
+384 41E 448 Sil 544 S/E
+Oot5
+Los DOTS verdes indican elementos sanos. Estos cambiarán a amarillo cuando se usen y a rojo
+cuando
+estén completamente desgastados.
+Además del desgaste normal en un cabezal de impresión, también considere lo siguiente:
+Polvo: puede causar un desgaste prematuro en los elementos del cabezal de impresión.
+Humedad: puede hacer que la PCB del cabezal de impresión falle y también informará de
+los problemas de salud del cabezal de impresión.
+Estática: históricamente, la acumulación de estática hace que la advertencia E3226
+aparezca prematuramente. Esto es más común con la película de gran tamaño, como la
+envoltura de tejas para techos.
+-teoría del funcionamiento del sistema de monitoreo del estado del cabezal de impresión El monitor
+del cabezal de impresión es una herramienta en el 6530 que monitorea el valor de resistencia de
+cada resistencia en el cabezal de impresión.
+Hay más de 1000 resistencias en la punta del cabezal de impresión.
+A medida que las resistencias se desgastan normalmente, el 6530 rastrea cada resistencia y se
+compara con la última lectura en función del valor que el PH probó en la instalación defábrica.
+-por qué se rellenan las advertencias A medida que
+la resistencia cambia a un valor inaceptable en el tiempo, el monitor comienza a informar
+"Advertencias". Esta es una indicación de que el PH tendrá que ser inspeccionado pronto.
+https://videojet.my.salesforce.com/articles/en_US/Knowledge/E3226-Printhead-health-warning-DatafIex/p
+
+===== PAGINA 2 =====
+14/10/2022 12:14
+Artículo de conocimiento
+Comentarios
+internos
+Solución/solución
+alternativa
+Causa raíz
+Pasos del triaje
+Piezas
+recomendadas de
+triaje
+Renuncia
+El contenido de este correo electrónico y los archivos adjuntos se proporcionan para la de los clientes de Videojet para resaltar información útil y consejos para la solución
+de problemas. Cuando trabaje con un producto, consulte siempre el manual del usuario del producto y siga las precauciones y recomendaciones de seguridad del producto, incluido el
+uso de equipos de protección personal cuando sea necesario. Si tiene alguna pregunta o no tiene experiencia en el uso o mantenimiento de equipos Videojet, póngase en contacto con
+Videojet para obtener ayuda
+El caso de
+escalamiento está
+cerrado
+Título
+E3226 - Advertencia de estado del cabezal de impresión Dataflex
+Nombre de LA
+E3226-Printhead-health-warning-Dataflex
+URL
+Datos internos
+¿Informó?
+¿Reportado a
+quién?
+¿Cuándo se
+informa?
+https://videojet.my.salesforce.com/articles/en_US/Knowledge/E3226-Printhead-health-warning-DatafIex/p
+2/2

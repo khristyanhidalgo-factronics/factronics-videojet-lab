@@ -108,6 +108,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
       <div class="notice"><span data-i18n="aviso_estados">Estados:</span>
         <span class="badge ok" data-i18n="est_verificado">verificado</span>
         <span class="badge warn" data-i18n="est_borrador">borrador</span>
+        <span class="badge warn" data-i18n="est_borrador_decodificado">borrador decodificado</span>
         <span class="badge" data-i18n="est_sindatos">sin datos en documento</span>
       </div>
     </div>
@@ -201,6 +202,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
     <div class="card">
       <h2 data-i18n="av_t">Aviso y fuentes</h2>
       <p class="small" data-i18n="av_s">Este material se construyó a partir de documentos del equipo y fuentes oficiales Videojet. No sustituye la formación oficial ni los manuales de servicio.</p>
+      <p class="small" data-i18n="av_ocr">Los P/N de los IPL 1550 y 1710 se obtuvieron por OCR y quedan como borrador decodificado hasta su cotejo.</p>
       <div class="notice" id="av_nota"></div>
       <p class="small"><span data-i18n="ref_autor">Proyectos de referencia del autor (cuenta personal):</span>
         <a href="https://emanuelindustri-source.github.io/factronics-tto-lab/" target="_blank" rel="noopener">Factronics TTO Lab</a>
@@ -242,6 +244,7 @@ const I18N = {
     ex_t:'Examen', ex_nivel:'Nivel', ex_cant:'Preguntas', ex_go:'Generar examen', ex_send:'Corregir', ex_score:'Resultado', ex_again:'Otro intento', ex_hist:'Historial',
     n1:'Básico', n2:'Básico-Medio', n3:'Intermedio-Avanzado', n4:'Avanzado', n5:'Profesional',
     av_t:'Aviso y fuentes', av_s:'Este material se construyó a partir de documentos del equipo y fuentes oficiales Videojet. No sustituye la formación oficial ni los manuales de servicio.',
+    av_ocr:'Los P/N de los IPL 1550 y 1710 se obtuvieron por OCR y quedan como borrador decodificado hasta su cotejo.',
     kpi_solventes:'curvas de solvente', kpi_tintas:'tintas CIJ', kpi_partes:'partes', kpi_errores:'códigos de error', kpi_ribbons:'grados ribbon', kpi_modelos:'modelos láser',
     partes_de:'Partes', compon:'componentes', props:'propiedades', sds:'ficha SDS', sin_resultados:'Sin resultados',
     respuestas:'respuestas correctas', ver:'Ver', volver:'Volver', q:'Pregunta'
@@ -257,6 +260,7 @@ const I18N = {
     ex_t:'Exam', ex_nivel:'Level', ex_cant:'Questions', ex_go:'Generate exam', ex_send:'Grade', ex_score:'Score', ex_again:'Another attempt', ex_hist:'History',
     n1:'Basic', n2:'Basic-Intermediate', n3:'Intermediate-Advanced', n4:'Advanced', n5:'Professional',
     av_t:'Notice and sources', av_s:'Built from the equipment documents and official Videojet sources. It does not replace official training or service manuals.',
+    av_ocr:'The P/Ns from the 1550 and 1710 IPLs were obtained by OCR and remain decoded drafts until cross-checked.',
     kpi_solventes:'solvent curves', kpi_tintas:'CIJ inks', kpi_partes:'parts', kpi_errores:'error codes', kpi_ribbons:'ribbon grades', kpi_modelos:'laser models',
     partes_de:'Parts', compon:'components', props:'properties', sds:'SDS sheet', sin_resultados:'No results',
     respuestas:'correct answers', ver:'View', volver:'Back', q:'Question'
@@ -272,6 +276,7 @@ const I18N = {
     ex_t:'Exame', ex_nivel:'Nível', ex_cant:'Perguntas', ex_go:'Gerar exame', ex_send:'Corrigir', ex_score:'Resultado', ex_again:'Outra tentativa', ex_hist:'Histórico',
     n1:'Básico', n2:'Básico-Médio', n3:'Intermediário-Avançado', n4:'Avançado', n5:'Profissional',
     av_t:'Aviso e fontes', av_s:'Material construído a partir dos documentos do equipamento e fontes oficiais Videojet. Não substitui o treinamento oficial nem os manuais de serviço.',
+    av_ocr:'Os P/N dos IPL 1550 e 1710 foram obtidos por OCR e ficam como rascunho decodificado até a conferência.',
     kpi_solventes:'curvas de solvente', kpi_tintas:'tintas CIJ', kpi_partes:'peças', kpi_errores:'códigos de erro', kpi_ribbons:'graus de ribbon', kpi_modelos:'modelos laser',
     partes_de:'Peças', compon:'componentes', props:'propriedades', sds:'ficha SDS', sin_resultados:'Sem resultados',
     respuestas:'respostas corretas', ver:'Ver', volver:'Voltar', q:'Pergunta'
@@ -287,6 +292,7 @@ const I18N = {
     ex_t:'Esame', ex_nivel:'Livello', ex_cant:'Domande', ex_go:'Genera esame', ex_send:'Correggi', ex_score:'Risultato', ex_again:'Un altro tentativo', ex_hist:'Cronologia',
     n1:'Base', n2:'Base-Intermedio', n3:'Intermedio-Avanzato', n4:'Avanzato', n5:'Professionale',
     av_t:'Avviso e fonti', av_s:'Materiale costruito dai documenti delle apparecchiature e da fonti ufficiali Videojet. Non sostituisce la formazione ufficiale né i manuali di servizio.',
+    av_ocr:'I P/N degli IPL 1550 e 1710 sono stati ottenuti tramite OCR e restano bozze decodificate fino alla verifica.',
     kpi_solventes:'curve di solvente', kpi_tintas:'inchiostri CIJ', kpi_partes:'parti', kpi_errores:'codici di errore', kpi_ribbons:'gradi ribbon', kpi_modelos:'modelli laser',
     partes_de:'Parti', compon:'componenti', props:'proprietà', sds:'scheda SDS', sin_resultados:'Nessun risultato',
     respuestas:'risposte corrette', ver:'Vedi', volver:'Indietro', q:'Domanda'
@@ -302,6 +308,7 @@ const I18N = {
     ex_t:'考试', ex_nivel:'级别', ex_cant:'题目数量', ex_go:'生成考试', ex_send:'评分', ex_score:'成绩', ex_again:'再试一次', ex_hist:'历史记录',
     n1:'基础', n2:'基础-中级', n3:'中级-高级', n4:'高级', n5:'专业',
     av_t:'声明与来源', av_s:'本材料基于设备文档和 Videojet 官方来源。不能替代官方培训或服务手册。',
+    av_ocr:'1550 和 1710 IPL 的 P/N 通过 OCR 获得，在核对前仍为解码草稿。',
     kpi_solventes:'溶剂曲线', kpi_tintas:'CIJ 墨水', kpi_partes:'部件', kpi_errores:'错误代码', kpi_ribbons:'色带等级', kpi_modelos:'激光型号',
     partes_de:'部件', compon:'成分', props:'特性', sds:'SDS 文件', sin_resultados:'无结果',
     respuestas:'正确回答', ver:'查看', volver:'返回', q:'题目'
@@ -337,7 +344,7 @@ Object.assign(I18N.es, {
   h_litro:'h / litro', h_cartucho:'h / cartucho {n} ml', usd_hora:'USD / hora solvente', ml_h:'ml/h @ {t} °C',
   ref_cij:'cij_tintas (bases documentadas)', ref_ribbons:'tto_ribbons (chart 2.5.26)',
   ref_err:'codigos_error (borrador)', ref_sol:'cij_uso_solvente (verificado)', ref_sds:'sds_composicion (CAS validado)',
-  ref_part:'IPL CIJ 1000VJ (6 documentos)', conflicto:'descripciones en conflicto'
+  ref_part:'IPL CIJ 1000VJ (6 digitales + 2 OCR)', conflicto:'descripciones en conflicto'
 });
 Object.assign(I18N.en, {
   ex_fuente:'Source', fuente_gen:'Generated (5 levels)', fuente_banco:'TTO bank (372)', ex_tipo:'Type', tipo_todas:'All',
@@ -369,7 +376,7 @@ Object.assign(I18N.en, {
   h_litro:'h / liter', h_cartucho:'h / cartridge {n} ml', usd_hora:'USD / solvent hour', ml_h:'ml/h @ {t} °C',
   ref_cij:'cij_tintas (documented bases)', ref_ribbons:'tto_ribbons (chart 2.5.26)',
   ref_err:'codigos_error (draft)', ref_sol:'cij_uso_solvente (verified)', ref_sds:'sds_composicion (validated CAS)',
-  ref_part:'CIJ IPL 1000VJ (6 documents)', conflicto:'conflicting descriptions'
+  ref_part:'CIJ IPL 1000VJ (6 digital + 2 OCR)', conflicto:'conflicting descriptions'
 });
 Object.assign(I18N.pt, {
   ex_fuente:'Fonte', fuente_gen:'Gerado (5 níveis)', fuente_banco:'Banco TTO (372)', ex_tipo:'Tipo', tipo_todas:'Todas',
@@ -401,7 +408,7 @@ Object.assign(I18N.pt, {
   h_litro:'h / litro', h_cartucho:'h / cartucho {n} ml', usd_hora:'USD / hora de solvente', ml_h:'ml/h @ {t} °C',
   ref_cij:'cij_tintas (bases documentadas)', ref_ribbons:'tto_ribbons (chart 2.5.26)',
   ref_err:'codigos_error (rascunho)', ref_sol:'cij_uso_solvente (verificado)', ref_sds:'sds_composicion (CAS validado)',
-  ref_part:'IPL CIJ 1000VJ (6 documentos)', conflicto:'descrições em conflito'
+  ref_part:'IPL CIJ 1000VJ (6 digitais + 2 OCR)', conflicto:'descrições em conflito'
 });
 Object.assign(I18N.it, {
   ex_fuente:'Fonte', fuente_gen:'Generato (5 livelli)', fuente_banco:'Banca TTO (372)', ex_tipo:'Tipo', tipo_todas:'Tutte',
@@ -433,7 +440,7 @@ Object.assign(I18N.it, {
   h_litro:'h / litro', h_cartucho:'h / cartuccia {n} ml', usd_hora:'USD / ora solvente', ml_h:'ml/h @ {t} °C',
   ref_cij:'cij_tintas (basi documentate)', ref_ribbons:'tto_ribbons (chart 2.5.26)',
   ref_err:'codigos_error (bozza)', ref_sol:'cij_uso_solvente (verificato)', ref_sds:'sds_composicion (CAS validato)',
-  ref_part:'IPL CIJ 1000VJ (6 documenti)', conflicto:'descrizioni in conflitto'
+  ref_part:'IPL CIJ 1000VJ (6 digitali + 2 OCR)', conflicto:'descrizioni in conflitto'
 });
 Object.assign(I18N.zh, {
   ex_fuente:'来源', fuente_gen:'自动生成（5 个级别）', fuente_banco:'TTO 题库（372）', ex_tipo:'类型', tipo_todas:'全部',
@@ -465,7 +472,7 @@ Object.assign(I18N.zh, {
   h_litro:'小时 / 升', h_cartucho:'小时 / 墨盒 {n} ml', usd_hora:'美元 / 小时（溶剂）', ml_h:'ml/h @ {t} °C',
   ref_cij:'cij_tintas（已记录基质）', ref_ribbons:'tto_ribbons（chart 2.5.26）',
   ref_err:'codigos_error（草稿）', ref_sol:'cij_uso_solvente（已验证）', ref_sds:'sds_composicion（CAS 已验证）',
-  ref_part:'CIJ IPL 1000VJ（6 份文档）', conflicto:'描述冲突'
+  ref_part:'CIJ IPL 1000VJ（6 份数字版 + 2 份 OCR）', conflicto:'描述冲突'
 });
 Object.assign(I18N.es, {
   est_por_definir:'por definir', est_borrador_decodificado:'borrador decodificado', est_sin_pn:'sin P/N',

@@ -5,7 +5,7 @@
 ## Cierre de v0.2.0
 - [ ] **Verificación final en navegador real**: consola sin errores, service worker
       activo, funcionamiento offline tras la primera carga, calculadora y exámenes de
-      los 5 niveles. Las rondas previas ya pasaron; falta la pasada con el SW `alpha-14`.
+      los 5 niveles. Las rondas previas ya pasaron; falta la pasada con el SW `alpha-15`.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
@@ -34,7 +34,8 @@
 ## Datos (continuación)
 - [x] ~~Tablas de partes CIJ (`partes_cij`) tras OCR/revisión de la columna de números.~~
       → 6 IPL estructurados: 1.397 registros, 204 P/N, 124 verificados + 80 borradores,
-      801 ítems sin P/N. Integrado en la app.
+      801 ítems sin P/N. Con el OCR 1550/1710 la app muestra **296 P/N CIJ**
+      (204 digitales + 92 nuevos) y 336 ítems OCR sin P/N.
 - [ ] Extraer las **velocidades CIJ por modelo/boquilla** de los calculadores
       «Line Speed Calculator v9.7» → dataset `cij_velocidades`. Venía del PENDIENTE
       de v0.1.0 y aún no se había arrastrado a esta lista.
@@ -42,12 +43,17 @@
       PDF para elevarlas a `verificado`. Venía del PENDIENTE de v0.1.0.
 - [ ] Revisar los **títulos de boletines TTO** marcados dudosos/no legibles
       (63 títulos fiables de 113). Venía del PENDIENTE de v0.1.0.
-- [ ] Completar los IPL **1550** y **1710** (los otros 2 de los 9 PDFs de la serie 1000).
-      **Bloqueo técnico:** sus tablas usan fuentes Type0 sin ToUnicode utilizable y
-      codificación mezclada/no constante; el parser devuelve 0 filas. Requieren OCR o
-      rasterizado con revisión visual; no se reconstruyen P/N a mano. El 1550 usa una
-      fuente de 2 bytes desplazada (-29) en algunas páginas, pero el mapeo de recursos
-      es por página y el `/TT0` global no sirve para todas.
+- [x] ~~Completar los IPL **1550** y **1710** (los otros 2 de los 9 PDFs de la serie 1000).~~
+      → OCR con Windows.Data.Pdf + Windows.Media.Ocr, sin instalar nada:
+      **1550 = 56 páginas, 1710 = 51 páginas**; consolidado `datos/partes_cij_ocr.json`
+      con **193 P/N, 277 registros, 336 ítems sin P/N, 92 P/N nuevos** y estado
+      `borrador-decodificado`. Las **3 láminas del 1550** (PDF 14, 15 y 18) se
+      recuperaron a **1200 px**; la 15 aportó 4 P/N y 5 ítems, y quedan **0 páginas
+      omitidas**.
+- [ ] **Revisión humana/cotejo de los 193 P/N del OCR 1550/1710** antes de ascenderlos:
+      hoy todos son `borrador-decodificado`; se conserva `descripcion_ocr` y `pn_ocr`
+      como evidencia. No se reconstruyen P/N a mano. Los 5 conflictos reales
+      (`395898`, `395899`, `399474`, `399475`, `SP234081`) ya se muestran en la app.
 - [ ] Revisión visual muestra a muestra de los 204 P/N y de los 801 ítems sin P/N;
       hoy hay muestras verificadas (1210 p27/p50, 1220 p33, 1610 p11, 1620E p48,
       1650 b51) y el conflicto real de 399475 marcado como borrador. Los 801 ítems
@@ -63,7 +69,16 @@
       visual humana de las páginas y el muestreo.
 - [ ] Simplicity/EquivalenciaTintas: mapeo GID pendiente.
 - [ ] Partes 4–12 del repo global `Proyecto-Simplicity-Global` (hoy 3/12).
-- [ ] 31 escaneados láser sin JPEG (rasterizado/OCR si aportan).
+- [x] ~~31 escaneados láser sin JPEG (rasterizado/OCR si aportan).~~
+      → lote láser OCR cerrado: **88 PDFs en el objetivo, 74 con texto (281.579
+      caracteres), 13 sin resultado, 1 error de render** (`MedidoresPortenciaCO2.pdf`)
+      y **0 páginas omitidas**; detalle en `datos/extraccion/_lote_laser_resumen.json`.
+- [ ] Revisar los **13 PDFs láser sin resultado** (figuras/planos sin texto útil) y el
+      **1 error de render** (`MedidoresPortenciaCO2.pdf`, posible PDF dañado); no
+      bloquean la app y quedan documentados en el resumen del lote.
+- [x] ~~7 PDFs escaneados TTO sin texto~~ → OCR completo **7/7, 14.089 caracteres,
+      0 páginas omitidas**; resumen en `datos/extraccion/_lote_tto_resumen.json` y
+      texto por documento en `datos/extraccion/tto_*_ocr.txt`.
 
 ## Después
 - Fase 3 APK (v0.4.0) y Fase 4 actualización (v0.5.0) según ROADMAP.

@@ -24,3 +24,5 @@ jobs:
         run: python tools/test_app_calculo.py
       - name: Probar traducciones de contenido (es/en/pt/it/zh)
         run: python tools/test_traducciones.py
+      - name: Probar partes CIJ por OCR (IPL 1550/1710)
+        run: python tools/test_partes_cij_ocr.py

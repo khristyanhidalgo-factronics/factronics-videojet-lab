@@ -1,0 +1,38 @@
+# OCR Windows.Data.Pdf + Windows.Media.Ocr - fuente: ENTRENAMIENTO\WiresharkContinuousMonitoring.pdf
+# paginas=1 lineas=34 caracteres=1307 omitidas=[]
+
+===== PAGINA 1 =====
+Knowledge Article
+Página I de I
+Wireshark Continuous Monitoring
+Header
+IDEOJET.
+Videojet Technologies, Inc. Knowledge Article
+Content
+Wireshark Continuous Monitoring
+You can configure Wireshark to continuously monitor traffic and periodically save What it sees
+to file. Combined with capture filters, this provides a great way to get captures of intermittent
+and hard to reproduce issues.
+1.
+Stop your current capture if you are already running one.
+2.
+Select Capture I Options.
+3.
+Toggle Multiple Files ON.
+4.
+Toggle Next File Every ON.
+5.
+Enter into the Next File Every box/dropdown selector a quantity of data. Capture
+data Will be saved a new capture started each time the size limit is reached.
+6.
+If you plan on leaving it running for an extended period, consider using the Ring
+Buffer. The Ring Buffer tells Wireshark to keep a limited number of files for this
+capture, deleting the oldest each time it creates a new file.
+1. Click to toggle on Ring Buffer.
+2. Enter into the files field a quantity of files to keep.
+7.
+Change any other desired settings and click Start to begin you capture.
+Title Wireshark Continuous Monitoring
+URL Name Wireshark-Continuous-Monitoring-1919438584
+https://videojet.my.salesforce.com/articles/en US/Knowledge/Wireshark-Continuous-Mo...
+10/06/2020

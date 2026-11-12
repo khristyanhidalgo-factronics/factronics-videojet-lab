@@ -1,0 +1,74 @@
+# OCR Windows.Data.Pdf + Windows.Media.Ocr - fuente: Boletines Tecnicos\Ing\17625-PH Health Warning 6x30 TTO (Eng).pdf
+# paginas=2 lineas=68 caracteres=2681 omitidas=[]
+
+===== PAGINA 1 =====
+14/10/2022 12:12
+Knowledge Article
+E3226 - Printhead health warning
+Dataflex
+Information
+Header
+IDEOJET.
+Videojet Technologies, Inc. Knowledge Article
+Related Escalation
+Content
+Our new line of T TO printers are equipped with a printhead monitoring feature in the software.
+E3226 Will be displayed when the software detects worn elements on the printhead.
+The printhead health can be viewed in the following menu.
+OFFLINE
+DiagnosticsPrinthead*Printhead Health*Health Graph
+Tools
+433
+441
+141 g
+13/4
+1
+33
+IE3 225 257 321
+352 41E 443 512 544
+O Ots
+The green DOTS indicate healthy elements . These Will change to yellow when worn and to Red
+when
+they are completely worn.
+Besides normal wear on a printhead also consider the following,
+• Dust - Can cause premature wear on the printhead elements.
+• Moisture - Can cause the Printhead PCB to fail and Will also report printhead health
+issues.
+• Static - Historically the build up of static causes the E3226 Warning to appear
+prematurely. This is most common with oversize film such as Roofing Shingle wrap.
+-theory of operation of the printhead health monitoring system
+The printhead monitor is a tool on the 6530 which monitors the resistance value of each resistor
+on the printhead. There are over 1000 resistors at the tip of the printhead.
+As the resistors wear normally the 6530 tracks each resistor and compares to the last reading
+based on the value which the PH tested atfactory install.
+-why the warnings are populating
+As the resistance changes to an unacceptable value in time the monitor begins to report
+"Warnings". This is an indication that the PH Will need to be inspected soon.
+Internal Comments
+https://videojet.my.salesforce.com/articles/en_US/Knowledge/E3226-Printhead-health-warning-DatafIex/p
+
+===== PAGINA 2 =====
+14/10/2022 12:12
+Knowledge Article
+Solution/Workaround
+Root Cause
+Triage Next Steps
+Triage
+Recommended Parts
+Disclaimer
+The contents of this email and any attachments are provided as a convenience to Videojet customers to highlight useful information and troubleshooting tips. When working with a
+product, always consult the product user manual and follow the product safety precautions and recommendations, including using Personal Protective Equipment when necessary.
+If you have any questions or are not experienced in using or servicing Videojet equipment, contact Videojet for assistance
+Escalation Case is
+Closed
+Titie
+E3226 - Printhead health warning Dataflex
+URL Name
+E3226-Printhead-health-warning-Dataflex
+Internal Data
+Reported?
+Reported to
+whom?
+When reported?
+https://videojet.my.salesforce.com/articles/en_US/Knowledge/E3226-Printhead-health-warning-DatafIex/p
+2/2
