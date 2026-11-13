@@ -7,8 +7,13 @@
       avisos, service worker activo y caché `fvl-v0.2.0-alpha-16`; calculadora de
       velocidad (508 m/min · 1.667 fpm · 16.667 columnas/s), solvente (11,2 ml/h
       @30 °C), examen Básico 10/10 con constancia e historial y cambio a EN.
-      `alpha-17` solo cambia el paquete de datos y la caché; se comprueba la carga
-      tras publicar.
+- [x] **Verificación en vivo de alpha-17/build 13**: CI «Validar» y Pages en
+      `success`; `version.json` construccion 13, `sw.js` alpha-17 y caché
+      `fvl-v0.2.0-alpha-17`. En la app publicada: consola sin errores ni avisos;
+      búsqueda `AL-67438` muestra la descripción decodificada en ES y el texto
+      original en EN; calculadora de velocidad 508 m/min · 1.667 fpm · 16.667
+      columnas/s y solvente VJ1210/V401 @30 °C = 11,2 ml/h con `$0,11/h` a
+      `$10/L`.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),

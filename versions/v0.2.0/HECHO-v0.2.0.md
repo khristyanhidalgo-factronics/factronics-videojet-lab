@@ -96,6 +96,7 @@
 
 ## Pendiente para cerrar v0.2.0 (ver PENDIENTE)
 - [x] **Verificación en navegador real**: consola limpia; calculadora 11,2 ml/h @30 °C (coincide con la referencia); buscador 84 resultados con «AL-69»; examen Básico 10 preguntas con corrección e historial; service worker activo.
+- [x] **Verificación de la alpha-17 publicada (build 13)**: CI y Pages en success; SW `fvl-v0.2.0-alpha-17`; búsqueda de `AL-67438` con descripción decodificada en ES y original en EN; velocidad 508 m/min · 1.667 fpm · 16.667 columnas/s; solvente 11,2 ml/h con `$0,11/h`; consola sin errores ni avisos.
 - [x] **Fix de % en composición**: patrón anclado corregido → 1.716/1.773 componentes con porcentaje; app muestra CAS + % + estado.
 - [x] Ajustes de UX menores detectados en la prueba (título de tabla).
 - [x] **Revisión de los proyectos de la cuenta personal** (2 repos Videojet): arquitectura, datos, i18n, validadores y sistemas de actualización analizados; registrado en `catalogo.json → proyectos_referencia`.
