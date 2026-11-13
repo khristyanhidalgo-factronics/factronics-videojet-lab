@@ -14,6 +14,11 @@
       original en EN; calculadora de velocidad 508 m/min · 1.667 fpm · 16.667
       columnas/s y solvente VJ1210/V401 @30 °C = 11,2 ml/h con `$0,11/h` a
       `$10/L`.
+- [x] **Verificación en vivo de alpha-18/build 16**: CI «Validar» y Pages en
+      `success`; `version.json` construccion 16, `sw.js` alpha-18 y caché
+      `fvl-v0.2.0-alpha-18`; actualización desde alpha-17 con `reg.update()` +
+      recarga. Examen «Velocidades CIJ (266)» con los 3 tipos, 10 preguntas,
+      corrección, constancia, historial y consola limpia.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
