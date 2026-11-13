@@ -28,7 +28,8 @@
 - [x] ~~Nombres accesibles, foco visible y tamaño táctil de los controles~~ →
       etiquetas `for`, `aria-label` en campos dinámicos, `aria-pressed` en las
       opciones del examen, resultados `role="status"`, objetivos de 44 px en móvil
-      y `meta description`; Lighthouse 1.0 en accesibilidad, buenas prácticas y SEO.
+      y `meta description`; Lighthouse 1.0 en accesibilidad, buenas prácticas y SEO
+      en claro y oscuro (`--on-accent` y `--muted` ajustados).
 - [ ] Ajustes finos de teclado móvil y contraste tras una prueba en dispositivo.
 
 ## Superar la referencia (cuenta personal)
