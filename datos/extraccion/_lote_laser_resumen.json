@@ -1929,16 +1929,15 @@
   {
    "archivo": "accesorios laser\\MedidoresPortenciaCO2.pdf",
    "bytes": 570425,
-   "chars": 46,
-   "estado": "texto-escaso",
+   "chars": 233,
+   "estado": "ok",
    "cifrado": false,
-   "bloques": 1,
-   "estado_ocr": "imagen-extraida",
-   "ocr_error": "render pagina 1 (ancho 1600): Excepci�n al llamar a \"Wait\" con los argumentos \"1\": \"Se han producido uno o varios errores.\"\nEn C:\\Users\\Sr_Hidalgo\\Documents\\CARPETA DE PROYECTO VIDEOJET\\factronics-videojet-lab\\tools\\render_pdf_pagina.ps1: 29 \nCar�cter: 5\n+     $net.Wait(-1) | Out-Null\n+     ~~~~~~~~",
-   "ocr_paginas": null,
-   "ocr_lineas": 1,
-   "ocr_chars": 4,
-   "ocr_omitidas": null,
+   "bloques": 5,
+   "estado_ocr": "ok-decodificado",
+   "ocr_paginas": 1,
+   "ocr_lineas": 5,
+   "ocr_chars": 233,
+   "ocr_omitidas": [],
    "imagenes_extraidas": [
     {
      "archivo": "datos/extraccion/medidores_portencia_co2/obj21.jpg",
@@ -1952,9 +1951,35 @@
    "lectura_visual": {
     "display_superior": "029",
     "display_inferior": "581",
-    "nota": "Lectura visual de obj21.jpg; el OCR no transcribe los digitos. El punto decimal del display superior no queda resuelto. No se usa como dato tecnico firme."
+    "descartada_por_texto_decodificado": true,
+    "nota": "Lectura visual de obj21.jpg (029/581); el OCR no transcribe los digitos. Queda como observacion secundaria: la capa de texto decodificada del PDF (AL-67438 / AL-66517) es la evidencia principal. No se usa como dato tecnico firme."
    },
-   "nota": "PDF Ghostscript 8.15 con miles de imagenes inline CMYK; Windows.Data.Pdf falla al cargar/renderizar y Edge imprime en blanco. Se conserva la imagen incrustada como evidencia."
+   "nota": "PDF Ghostscript 8.15 con imagenes inline CMYK. Windows.Data.Pdf no lo rasteriza, pero su capa de texto se decodifico con el cmap de Arial Narrow. Se conserva la imagen incrustada como evidencia secundaria.",
+   "txt_ocr": "datos/extraccion/medidores_portencia_co2/medidores_portencia_co2_texto.txt",
+   "texto_decodificado": {
+    "metodo": "texto-decodificado-cmap",
+    "lineas": 5,
+    "chars": 233,
+    "pns": [
+     "AL-66517",
+     "AL-67438"
+    ],
+    "fuentes": {
+     "R16": {
+      "basefont": "LWMJXF+ArialNarrow,Bold",
+      "sistema": "C:\\Windows\\Fonts\\ARIALNB.TTF"
+     },
+     "R18": {
+      "basefont": "GBFJMG+ArialNarrow",
+      "sistema": "C:\\Windows\\Fonts\\ARIALN.TTF"
+     }
+    },
+    "archivo_json": "datos/extraccion/medidores_portencia_co2/medidores_portencia_co2_decodificado.json",
+    "nota": "Capa de texto original del PDF; no es OCR ni reconstruccion manual."
+   },
+   "imagen_ocr_lineas": 1,
+   "imagen_ocr_chars": 4,
+   "rasterizado_error": "render pagina 1 (ancho 1600): Excepci�n al llamar a \"Wait\" con los argumentos \"1\": \"Se han producido uno o varios errores.\"\nEn C:\\Users\\Sr_Hidalgo\\Documents\\CARPETA DE PROYECTO VIDEOJET\\factronics-videojet-lab\\tools\\render_pdf_pagina.ps1: 29 \nCar�cter: 5\n+     $net.Wait(-1) | Out-Null\n+     ~~~~~~~~"
   },
   {
    "archivo": "accesorios laser\\Mktg Bulletin .pdf",
@@ -10542,18 +10567,19 @@
  ],
  "conteo_ocr": {
   "escaso": 25,
-  "imagen-extraida": 1,
   "ok": 1218,
+  "ok-decodificado": 1,
   "ok-rotado": 2,
   "sin-texto-por-diseno": 7
  },
  "cierre_lote_laser": {
   "fecha": "2026-11-13",
   "casos_revisados": 14,
-  "recuperados_con_texto": 6,
-  "chars_recuperados": 15915,
+  "recuperados_con_texto": 7,
+  "chars_recuperados": 16148,
   "sin_texto_por_diseno": 7,
-  "danado_rasterizado": 1,
-  "nota": "Los 14 casos del cierre quedan clasificados; no se asciende ningun dato tecnico a verificado."
+  "danado_rasterizado": 0,
+  "decodificado_por_cmap": 1,
+  "nota": "Los 14 casos del cierre quedan clasificados: 7 recuperados con texto (6 OCR + 1 capa de texto decodificada), 7 sin texto por diseno. No se asciende ningun dato tecnico a verificado."
  }
 }

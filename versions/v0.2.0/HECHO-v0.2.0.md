@@ -3,7 +3,7 @@
 > Lista de lo **completado y entregado** en la v0.2.0. Se actualiza a medida que avanza.
 
 ## Datos para la app
-- [x] **`tools/construir_app_datos.py`** → `docs/app/datos.js` (2.100,9 KB): paquete compacto
+- [x] **`tools/construir_app_datos.py`** → `docs/app/datos.js` (2.110,1 KB): paquete compacto
       con estados por dato, memoria de traducción `D.tr` (3.506 entradas) y
       **`D.velocidades`** (266 calculadores CIJ).
 - [x] Incluye: 802 curvas de solvente, 134 tintas (bases, color, SDS con CAS/% y
@@ -40,12 +40,21 @@
       `399475`, `SP234081`) sin ascender su estado; `SequenceMatcher` eliminó el
       falso positivo `202047` («Bottie» → «Bottle»).
 - [x] **PDFs escaneados TTO y láser:** TTO **7/7** (14.089 caracteres, 0 páginas
-      omitidas). Láser: **14 casos del cierre clasificados** — **6 recuperados con
-      texto (15.915 caracteres)**, `Extraction Accesories.pdf` y `k30 wiring diagram.pdf`
-      **rotados 90°**, **7 planos/3D `sin-texto-por-diseno`** y
-      `MedidoresPortenciaCO2.pdf` con **imagen JPEG extraída** (`obj21.jpg`, 270.110
-      bytes) y lectura visual 029/581 documentada como **no firme**. Texto por
-      documento en `datos/extraccion/laser_*_ocr.txt`.
+      omitidas). Láser: **14 casos del cierre clasificados** — **7 recuperados con
+      texto (16.148 caracteres)**: 6 por OCR y `MedidoresPortenciaCO2.pdf` por
+      **decodificación de su capa de texto** (`tools/decodificar_texto_pdf.py`),
+      que aporta **AL-67438** y **AL-66517** con descripciones exactas. Los 2
+      diagramas apaisados quedaron **rotados 90°** y los **7 planos/3D
+      `sin-texto-por-diseno`**. La imagen `obj21.jpg` (270.110 bytes) y la lectura
+      visual 029/581 se conservan como **evidencia secundaria descartada**. Texto
+      por documento en `datos/extraccion/laser_*_ocr.txt`.
+- [x] **Decodificador de capas de texto PDF:** `tools/decodificar_texto_pdf.py`
+      resuelve fuentes TrueType subseteadas con `/Differences` y `cmap` propio
+      (GID→Unicode con Arial Narrow), sin instalar dependencias. Evidencia y detalle
+      en `datos/extraccion/medidores_portencia_co2/`.
+- [x] **Descripciones láser exactas y traducidas:** `laser_partes.json` usa las
+      descripciones decodificadas de AL-67438/AL-66517 y conserva `descripcion_ocr`;
+      `tools/agregar_traducciones_laser_decodificado.py` añade es/pt/it/zh.
 - [x] **Velocidades CIJ (`datos/cij_velocidades.json`):** **270 calculadores leídos,
       271 PDFs, 266 entradas, 12 modelos, 0 conflictos de valores**; 22 avisos de
       boquilla, 31 de modelo, 3 de fuente y 1 calculador experto. Se descarta
@@ -79,7 +88,7 @@
 - [x] Exámenes de 5 niveles generados de datos reales, corrección con referencia e
       historial local; el nivel 3 incluye preguntas de **parte CIJ → descripción**.
 - [x] **Offline:** `manifest.webmanifest` + `sw.js` (precache y cache-first) + icono SVG;
-      instalación como PWA desde el navegador. Caché actualizada a `fvl-v0.2.0-alpha-16`.
+      instalación como PWA desde el navegador. Caché actualizada a `fvl-v0.2.0-alpha-17`.
 
 ## Publicación
 - [x] Landing con acceso directo a la app y tarjeta en Descargas (estado v0.2.0-alpha).

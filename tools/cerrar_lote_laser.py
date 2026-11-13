@@ -7,9 +7,10 @@ Casos:
     90/270 grados y se conserva la orientacion con mas texto.
   - 7 planos/3D sin rotulos: se comprueba que el OCR devuelve 0 lineas por
     diseno (no por fallo del rasterizador) y se marcan `sin-texto-por-diseno`.
-  - MedidoresPortenciaCO2.pdf: Windows.Data.Pdf no puede rasterizarlo; se
-    extrae la imagen JPEG incrustada (obj 21), se guarda como evidencia y se
-    registra la lectura visual de los displays sin inventar texto OCR.
+  - MedidoresPortenciaCO2.pdf: se decodifica su capa de texto con el `cmap` de
+    Arial Narrow (GID -> Unicode). Si la decodificacion falla, se conserva el
+    respaldo anterior: extraer la imagen JPEG incrustada (obj 21) y registrar
+    la lectura visual sin inventar texto OCR.
 
 Actualiza datos/extraccion/_lote_laser_resumen.json y deja el texto en
 datos/extraccion/laser_<slug>_ocr.txt.
@@ -38,6 +39,7 @@ except (AttributeError, ValueError):
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(RAIZ, 'tools'))
 import ocr_pdf_paginas as O  # noqa: E402
+from decodificar_texto_pdf import decodificar_pdf  # noqa: E402
 
 EXTRACCION = os.path.join(RAIZ, 'datos', 'extraccion')
 RESUMEN = os.path.join(EXTRACCION, '_lote_laser_resumen.json')
@@ -199,21 +201,8 @@ def extraer_jpeg(pdf, numero_objeto, destino):
     return len(raw)
 
 
-def medidores(datos, base):
-    pdf = os.path.join(base, DANADO)
-    print('  [danado] %s' % DANADO, flush=True)
-    campos = {'estado_ocr': 'imagen-extraida', 'ocr_paginas': None,
-              'ocr_lineas': None, 'ocr_chars': None, 'ocr_omitidas': None}
-    try:
-        with tempfile.TemporaryDirectory(prefix='laser_med_') as tmp:
-            O.renderizar(pdf, 1, os.path.join(tmp, 'p1.png'), ANCHO, TIMEOUT)
-        campos['nota'] = 'Windows.Data.Pdf si lo renderizo en esta pasada.'
-        actualizar_entrada(datos, DANADO, **campos)
-        return
-    except RuntimeError as exc:
-        campos['ocr_error'] = str(exc)[:300]
-        print('    rasterizado fallo: %s' % str(exc)[:180], flush=True)
-
+def _evidencia_imagen(pdf, campos):
+    """Extrae obj21.jpg y registra la lectura visual como evidencia secundaria."""
     carpeta = os.path.join(EXTRACCION, 'medidores_portencia_co2')
     destino = os.path.join(carpeta, 'obj21.jpg')
     try:
@@ -221,17 +210,15 @@ def medidores(datos, base):
         print('    imagen extraida: obj21.jpg (%d bytes)' % bytes_jpg,
               flush=True)
     except RuntimeError as exc:
-        campos['ocr_error'] += ' | ' + str(exc)
-        actualizar_entrada(datos, DANADO, **campos)
+        campos['imagen_error'] = str(exc)[:300]
         return
-
     js = os.path.join(carpeta, 'obj21_ocr.json')
     try:
         d = O.ocr(destino, js, IDIOMA, TIMEOUT)
         lineas = d.get('lineas', [])
         texto = lineas_a_texto(lineas)
-        campos['ocr_lineas'] = len(lineas)
-        campos['ocr_chars'] = len(texto)
+        campos['imagen_ocr_lineas'] = len(lineas)
+        campos['imagen_ocr_chars'] = len(texto)
         campos['imagenes_extraidas'] = [{
             'archivo': 'datos/extraccion/medidores_portencia_co2/obj21.jpg',
             'bytes': bytes_jpg,
@@ -241,20 +228,107 @@ def medidores(datos, base):
             'ocr_texto': texto,
         }]
     except RuntimeError as exc:
-        campos['ocr_error'] += ' | OCR imagen: ' + str(exc)
+        campos['imagen_error'] = str(exc)[:300]
     campos['lectura_visual'] = {
         'display_superior': '029',
         'display_inferior': '581',
-        'nota': ('Lectura visual de obj21.jpg; el OCR no transcribe los digitos. '
-                 'El punto decimal del display superior no queda resuelto. '
-                 'No se usa como dato tecnico firme.'),
+        'descartada_por_texto_decodificado': True,
+        'nota': ('Lectura visual de obj21.jpg (029/581); el OCR no transcribe '
+                 'los digitos. Queda como observacion secundaria: la capa de '
+                 'texto decodificada del PDF (AL-67438 / AL-66517) es la '
+                 'evidencia principal. No se usa como dato tecnico firme.'),
     }
+
+
+def medidores(datos, base):
+    pdf = os.path.join(base, DANADO)
+    print('  [medidores] %s' % DANADO, flush=True)
+    campos = {'estado_ocr': 'imagen-extraida', 'ocr_paginas': None,
+              'ocr_lineas': None, 'ocr_chars': None, 'ocr_omitidas': None}
+
+    # 1) Capa de texto original: mejor evidencia, no es OCR.
+    try:
+        d = decodificar_pdf(pdf)
+    except Exception as exc:  # noqa: BLE001 - el respaldo debe continuar
+        d = None
+        campos['decodificacion_error'] = str(exc)[:300]
+        print('    decodificacion fallo: %s' % str(exc)[:180], flush=True)
+    if d and d.get('texto'):
+        carpeta = os.path.join(EXTRACCION, 'medidores_portencia_co2')
+        os.makedirs(carpeta, exist_ok=True)
+        destino_txt = os.path.join(carpeta, 'medidores_portencia_co2_texto.txt')
+        with open(destino_txt, 'w', encoding='utf-8') as f:
+            f.write('# Texto decodificado del PDF: %s\n' % DANADO)
+            f.write('# metodo=%s lineas=%d caracteres=%d pns=%s\n\n'
+                    % (d['metodo'], len(d['lineas']), len(d['texto']),
+                       ','.join(d['pns'])))
+            f.write(d['texto'] + '\n')
+        destino_json = os.path.join(
+            carpeta, 'medidores_portencia_co2_decodificado.json')
+        with open(destino_json, 'w', encoding='utf-8') as f:
+            json.dump(d, f, ensure_ascii=False, indent=1)
+        rel_txt = os.path.relpath(destino_txt, RAIZ).replace('\\', '/')
+        rel_json = os.path.relpath(destino_json, RAIZ).replace('\\', '/')
+        campos.update({
+            'estado': 'ok',
+            'chars': len(d['texto']),
+            'bloques': len(d['lineas']),
+            'estado_ocr': 'ok-decodificado',
+            'ocr_paginas': 1,
+            'ocr_lineas': len(d['lineas']),
+            'ocr_chars': len(d['texto']),
+            'ocr_omitidas': [],
+            'txt_ocr': rel_txt,
+            'texto_decodificado': {
+                'metodo': d['metodo'],
+                'lineas': len(d['lineas']),
+                'chars': len(d['texto']),
+                'pns': d['pns'],
+                'fuentes': {
+                    nombre: {'basefont': info.get('basefont'),
+                             'sistema': info.get('sistema')}
+                    for nombre, info in d['fuentes'].items()
+                },
+                'archivo_json': rel_json,
+                'nota': ('Capa de texto original del PDF; no es OCR ni '
+                         'reconstruccion manual.'),
+            },
+            'nota': ('PDF Ghostscript 8.15 con imagenes inline CMYK. '
+                     'Windows.Data.Pdf no lo rasteriza, pero su capa de texto '
+                     'se decodifico con el cmap de Arial Narrow. Se conserva '
+                     'la imagen incrustada como evidencia secundaria.'),
+        })
+        _evidencia_imagen(pdf, campos)
+        entrada = actualizar_entrada(datos, DANADO, **campos)
+        if entrada.get('ocr_error'):
+            entrada['rasterizado_error'] = entrada.pop('ocr_error')
+        print('    -> ok-decodificado: %d lineas, %d chars, P/N %s'
+              % (len(d['lineas']), len(d['texto']), ', '.join(d['pns'])),
+              flush=True)
+        return
+
+    # 2) Respaldo: intentar rasterizar.
+    try:
+        with tempfile.TemporaryDirectory(prefix='laser_med_') as tmp:
+            O.renderizar(pdf, 1, os.path.join(tmp, 'p1.png'), ANCHO, TIMEOUT)
+        campos['estado_ocr'] = 'ok'
+        campos['ocr_paginas'] = 1
+        campos['nota'] = 'Windows.Data.Pdf si lo renderizo en esta pasada.'
+        actualizar_entrada(datos, DANADO, **campos)
+        return
+    except RuntimeError as exc:
+        campos['rasterizado_error'] = str(exc)[:300]
+        print('    rasterizado fallo: %s' % str(exc)[:180], flush=True)
+
+    # 3) Respaldo final: imagen incrustada.
+    _evidencia_imagen(pdf, campos)
     campos['nota'] = ('PDF Ghostscript 8.15 con miles de imagenes inline CMYK; '
                       'Windows.Data.Pdf falla al cargar/renderizar y Edge imprime '
                       'en blanco. Se conserva la imagen incrustada como evidencia.')
     actualizar_entrada(datos, DANADO, **campos)
     print('    OCR de la imagen: %s lineas, %s chars'
-          % (campos.get('ocr_lineas'), campos.get('ocr_chars')), flush=True)
+          % (campos.get('imagen_ocr_lineas'), campos.get('imagen_ocr_chars')),
+          flush=True)
 
 
 def main():
@@ -335,7 +409,7 @@ def main():
                                  for r in resultados)
     datos['conteo_ocr'] = dict(sorted(conteo.items()))
     recuperados = [r for r in resultados
-                   if r.get('archivo') in (RECUPERABLES + SIN_TEXTO)
+                   if r.get('archivo') in (RECUPERABLES + SIN_TEXTO + [DANADO])
                    and r.get('ocr_chars')]
     datos['cierre_lote_laser'] = {
         'fecha': '2026-11-13',
@@ -348,8 +422,12 @@ def main():
         'danado_rasterizado': sum(
             1 for r in resultados
             if r.get('estado_ocr') == 'imagen-extraida'),
-        'nota': ('Los 14 casos del cierre quedan clasificados; no se asciende '
-                 'ningun dato tecnico a verificado.'),
+        'decodificado_por_cmap': sum(
+            1 for r in resultados
+            if r.get('estado_ocr') == 'ok-decodificado'),
+        'nota': ('Los 14 casos del cierre quedan clasificados: 7 recuperados '
+                 'con texto (6 OCR + 1 capa de texto decodificada), 7 sin texto '
+                 'por diseno. No se asciende ningun dato tecnico a verificado.'),
     }
     guardar_json(RESUMEN, datos)
     print('\nOK: %s' % json.dumps(datos['conteo_ocr'], ensure_ascii=False))

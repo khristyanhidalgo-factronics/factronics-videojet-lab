@@ -5,6 +5,7 @@
  "con_descripcion": 1998,
  "estado_general": "borrador (numeros directos; descripcion adyacente sujeta a revision)",
  "fuente": "textos laser extraidos (SpareParts 3320/3120 recuperado por descifrado AES, manuales y dibujos). La tabla original intercala columnas de posicion: no se reconstruye, solo se registra numero + contexto.",
+ "nota_descripciones_decodificadas": "AL-67438 y AL-66517 usan la capa de texto original decodificada de MedidoresPortenciaCO2.pdf; descripcion_ocr conserva la lectura OCR previa.",
  "partes": [
   {
    "numero_parte": "AL-00174",
@@ -1163,10 +1164,14 @@
   },
   {
    "numero_parte": "AL-66517",
-   "descripcion": "this is the poer iard that is the small hand held",
+   "descripcion": "this is the power wizard that is the small hand held device limited to 10s measuring",
    "archivos": [
-    "laser_allprint_dn_a_ln_a_co2_laser_accessories_guide_v16_2018_07_04_visual.txt"
-   ]
+    "laser_allprint_dn_a_ln_a_co2_laser_accessories_guide_v16_2018_07_04_visual.txt",
+    "medidores_portencia_co2_texto.txt"
+   ],
+   "descripcion_ocr": "this is the poer iard that is the small hand held",
+   "origen_descripcion": "texto-decodificado-cmap",
+   "evidencia": "datos/extraccion/medidores_portencia_co2/medidores_portencia_co2_texto.txt"
   },
   {
    "numero_parte": "AL-66528",
@@ -1370,11 +1375,15 @@
   },
   {
    "numero_parte": "AL-67438",
-   "descripcion": "this is the professional poer meter that our laser",
+   "descripcion": "this is the professional power meter that our laser engineers would use for long tests",
    "archivos": [
     "laser_allprint_dn_a_ln_a_co2_laser_accessories_guide_v16_2018_07_04_visual.txt",
-    "laser_manuales_co2_2023_06_13_vj12121212_laser_configurator_release_latam_visual.txt"
-   ]
+    "laser_manuales_co2_2023_06_13_vj12121212_laser_configurator_release_latam_visual.txt",
+    "medidores_portencia_co2_texto.txt"
+   ],
+   "descripcion_ocr": "this is the professional poer meter that our laser",
+   "origen_descripcion": "texto-decodificado-cmap",
+   "evidencia": "datos/extraccion/medidores_portencia_co2/medidores_portencia_co2_texto.txt"
   },
   {
    "numero_parte": "AL-67475",

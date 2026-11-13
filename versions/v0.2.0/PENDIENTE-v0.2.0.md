@@ -3,9 +3,12 @@
 > Lo que falta para **cerrar la v0.2.0**. Al congelar, alimenta el PLAN de v0.3.0.
 
 ## Cierre de v0.2.0
-- [ ] **Verificación final en navegador real**: consola sin errores, service worker
-      activo, funcionamiento offline tras la primera carga, calculadora y exámenes de
-      los 5 niveles. Las rondas previas ya pasaron; falta la pasada con el SW `alpha-16`.
+- [x] **Verificación final en navegador real (alpha-16)**: consola sin errores ni
+      avisos, service worker activo y caché `fvl-v0.2.0-alpha-16`; calculadora de
+      velocidad (508 m/min · 1.667 fpm · 16.667 columnas/s), solvente (11,2 ml/h
+      @30 °C), examen Básico 10/10 con constancia e historial y cambio a EN.
+      `alpha-17` solo cambia el paquete de datos y la caché; se comprueba la carga
+      tras publicar.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
@@ -75,18 +78,22 @@
 - [ ] Simplicity/EquivalenciaTintas: mapeo GID pendiente.
 - [ ] Partes 4–12 del repo global `Proyecto-Simplicity-Global` (hoy 3/12).
 - [x] ~~31 escaneados láser sin JPEG (rasterizado/OCR si aportan).~~
-      → **lote láser cerrado**: 14 casos clasificados, **6 recuperados con texto
-      (15.915 caracteres)**, 2 diagramas rotados 90°, **7 planos/3D
-      `sin-texto-por-diseno`** y `MedidoresPortenciaCO2.pdf` con imagen JPEG
-      extraída y lectura visual 029/581 documentada como no firme; **0 casos
-      `sin-resultado`/`error`**. Detalle en `datos/extraccion/_lote_laser_resumen.json`
-      y prueba en `tools/test_lote_laser.py`.
+      → **lote láser cerrado**: 14 casos clasificados, **7 recuperados con texto
+      (16.148 caracteres: 6 OCR + 1 capa de texto decodificada)**, 2 diagramas
+      rotados 90°, **7 planos/3D `sin-texto-por-diseno`**; **0 casos
+      `sin-resultado`/`error`**. `MedidoresPortenciaCO2.pdf` se decodificó con
+      `tools/decodificar_texto_pdf.py`: **AL-67438** y **AL-66517** con sus
+      descripciones exactas; la imagen JPEG y la lectura visual 029/581 quedan
+      como evidencia secundaria descartada. Detalle en
+      `datos/extraccion/_lote_laser_resumen.json` y prueba en
+      `tools/test_lote_laser.py`.
 - [ ] Revisión humana de las **266 velocidades CIJ** y de sus 56 avisos
       (22 boquilla, 31 modelo, 3 fuente): hoy todas son `borrador-decodificado` y
       no sustituyen al calculador oficial. Los 4 duplicados ya están fusionados.
-- [ ] Confirmar con el dueño la lectura visual **029/581** de
-      `MedidoresPortenciaCO2.pdf` (punto decimal no resuelto); no se usa como dato
-      técnico firme.
+- [x] ~~Confirmar con el dueño la lectura visual **029/581** de
+      `MedidoresPortenciaCO2.pdf`~~ → la capa de texto original decodificada
+      (**AL-67438** / **AL-66517**) es la evidencia principal; 029/581 queda como
+      lectura secundaria descartada.
 - [x] ~~7 PDFs escaneados TTO sin texto~~ → OCR completo **7/7, 14.089 caracteres,
       0 páginas omitidas**; resumen en `datos/extraccion/_lote_tto_resumen.json` y
       texto por documento en `datos/extraccion/tto_*_ocr.txt`.

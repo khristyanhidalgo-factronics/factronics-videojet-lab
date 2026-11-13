@@ -15,6 +15,8 @@ import sys
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EXTRACCION = os.path.join(RAIZ, 'datos', 'extraccion')
 DESTINO = os.path.join(RAIZ, 'datos', 'laser_partes.json')
+DECODIFICADO = os.path.join(EXTRACCION, 'medidores_portencia_co2',
+                            'medidores_portencia_co2_texto.txt')
 RE_PARTE = re.compile(r'\b(AL-(?:SP)?\d{4,6})\b')
 RE_FICHERO = re.compile(r'\b(AL-(?:SP)?\d{4,6})\b')
 
@@ -28,6 +30,35 @@ def limpiar_descripcion(texto):
 
 def descripcion_valida(desc):
     return bool(desc) and len(desc) >= 3 and re.search(r'[A-Za-zÄÖÜäöüß]', desc)
+
+
+def aplicar_texto_decodificado(partes):
+    """Sobrescribe descripciones con la capa de texto original decodificada."""
+    if not os.path.exists(DECODIFICADO):
+        return 0
+    aplicados = 0
+    for linea in open(DECODIFICADO, encoding='utf-8'):
+        linea = linea.strip()
+        if not linea or linea.startswith('#'):
+            continue
+        m = re.match(r'^(AL-(?:SP)?\d{4,6})\s*(?:-\s*)?(.+)$', linea)
+        if not m:
+            continue
+        codigo, desc = m.group(1), m.group(2).strip()
+        if not descripcion_valida(desc):
+            continue
+        registro = partes.setdefault(codigo, {
+            'numero_parte': codigo, 'descripcion': None, 'archivos': []})
+        if registro.get('descripcion') and not registro.get('descripcion_ocr'):
+            registro['descripcion_ocr'] = registro['descripcion']
+        registro['descripcion'] = desc
+        registro['origen_descripcion'] = 'texto-decodificado-cmap'
+        registro['evidencia'] = os.path.relpath(DECODIFICADO, RAIZ).replace('\\', '/')
+        nombre = os.path.basename(DECODIFICADO)
+        if nombre not in registro['archivos']:
+            registro['archivos'].append(nombre)
+        aplicados += 1
+    return aplicados
 
 
 def main():
@@ -70,6 +101,7 @@ def main():
                 partes[codigo] = {'numero_parte': codigo, 'descripcion': None,
                                   'archivos': [nombre]}
 
+    decodificados = aplicar_texto_decodificado(partes)
     con_desc = sum(1 for p in partes.values() if p['descripcion'])
     datos = {
         'producto': 'Partes LASER (numeros AL-xxxxx) detectadas en la documentacion',
@@ -80,13 +112,16 @@ def main():
         'fuente': ('textos laser extraidos (SpareParts 3320/3120 recuperado por descifrado '
                    'AES, manuales y dibujos). La tabla original intercala columnas de '
                    'posicion: no se reconstruye, solo se registra numero + contexto.'),
+        'nota_descripciones_decodificadas': (
+            'AL-67438 y AL-66517 usan la capa de texto original decodificada de '
+            'MedidoresPortenciaCO2.pdf; descripcion_ocr conserva la lectura OCR previa.'),
         'partes': sorted(partes.values(), key=lambda p: p['numero_parte']),
     }
     with open(DESTINO, 'w', encoding='utf-8') as f:
         json.dump(datos, f, ensure_ascii=False, indent=1)
-    print('OK %s | partes=%d con_descripcion=%d fuentes=%d'
+    print('OK %s | partes=%d con_descripcion=%d decodificadas=%d fuentes=%d'
           % (os.path.relpath(DESTINO, RAIZ), len(partes), con_desc,
-             len(archivos_fuente)))
+             decodificados, len(archivos_fuente)))
     for p in datos['partes'][:8]:
         print('  %-11s %s' % (p['numero_parte'], (p['descripcion'] or '')[:70]))
 

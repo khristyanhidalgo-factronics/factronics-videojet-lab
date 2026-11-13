@@ -77,9 +77,27 @@ def main():
     if not r:
         fallos.append('falta en el resumen: %s' % DANADO)
     else:
-        if r.get('estado_ocr') != 'imagen-extraida':
-            fallos.append('%s: estado_ocr %r (se esperaba imagen-extraida)'
+        if r.get('estado_ocr') != 'ok-decodificado':
+            fallos.append('%s: estado_ocr %r (se esperaba ok-decodificado)'
                           % (DANADO, r.get('estado_ocr')))
+        if (r.get('ocr_chars') or 0) < 200:
+            fallos.append('%s: solo %s caracteres decodificados'
+                          % (DANADO, r.get('ocr_chars')))
+        txt = r.get('txt_ocr')
+        if not txt or not os.path.exists(os.path.join(RAIZ, txt)):
+            fallos.append('%s: falta el TXT decodificado' % DANADO)
+        else:
+            contenido = open(os.path.join(RAIZ, txt), encoding='utf-8').read()
+            for esperado in ('Laser Power Measurement', 'AL-67438', 'AL-66517',
+                             'professional power meter', 'power wizard'):
+                if esperado not in contenido:
+                    fallos.append('%s: el TXT no contiene %r'
+                                  % (DANADO, esperado))
+        dec = r.get('texto_decodificado') or {}
+        if sorted(dec.get('pns') or []) != ['AL-66517', 'AL-67438']:
+            fallos.append('%s: P/N decodificados %r' % (DANADO, dec.get('pns')))
+        if dec.get('metodo') != 'texto-decodificado-cmap':
+            fallos.append('%s: metodo %r' % (DANADO, dec.get('metodo')))
         imagenes = r.get('imagenes_extraidas') or []
         if not imagenes:
             fallos.append('%s: no registra imagenes extraidas' % DANADO)
@@ -90,23 +108,40 @@ def main():
             elif os.path.getsize(ruta) < 10000:
                 fallos.append('%s: imagen demasiado pequena' % DANADO)
         visual = r.get('lectura_visual') or {}
-        if visual.get('display_superior') != '029' or visual.get('display_inferior') != '581':
-            fallos.append('%s: lectura visual distinta de 029/581' % DANADO)
+        if not visual.get('descartada_por_texto_decodificado'):
+            fallos.append('%s: la lectura visual no marca que fue descartada'
+                          % DANADO)
         if 'dato tecnico firme' not in (visual.get('nota') or '').lower():
             fallos.append('%s: falta la salvedad de dato no firme' % DANADO)
 
     cierre = datos.get('cierre_lote_laser') or {}
     if cierre.get('casos_revisados') != 14:
         fallos.append('cierre: casos_revisados %r' % cierre.get('casos_revisados'))
-    if cierre.get('recuperados_con_texto') != 6:
+    if cierre.get('recuperados_con_texto') != 7:
         fallos.append('cierre: recuperados_con_texto %r'
                       % cierre.get('recuperados_con_texto'))
+    if cierre.get('chars_recuperados') != 16148:
+        fallos.append('cierre: chars_recuperados %r (se esperaban 16148)'
+                      % cierre.get('chars_recuperados'))
     if cierre.get('sin_texto_por_diseno') != 7:
         fallos.append('cierre: sin_texto_por_diseno %r'
                       % cierre.get('sin_texto_por_diseno'))
-    if cierre.get('danado_rasterizado') != 1:
+    if cierre.get('danado_rasterizado') != 0:
         fallos.append('cierre: danado_rasterizado %r'
                       % cierre.get('danado_rasterizado'))
+    if cierre.get('decodificado_por_cmap') != 1:
+        fallos.append('cierre: decodificado_por_cmap %r'
+                      % cierre.get('decodificado_por_cmap'))
+
+    conteo = datos.get('conteo_ocr') or {}
+    if conteo.get('ok-decodificado') != 1:
+        fallos.append('conteo_ocr: ok-decodificado %r'
+                      % conteo.get('ok-decodificado'))
+    if conteo.get('imagen-extraida'):
+        fallos.append('conteo_ocr: queda imagen-extraida')
+    if sum(conteo.values()) != 1253:
+        fallos.append('conteo_ocr suma %r (se esperaban 1253)'
+                      % sum(conteo.values()))
 
     pendientes = [r for r in resultados.values()
                   if r.get('estado_ocr') in ('sin-resultado', 'error')]
@@ -121,8 +156,8 @@ def main():
         for f in fallos:
             print('  -', f)
         return 1
-    print('Lote laser OK: 6 recuperados, 7 sin texto por diseno, '
-          '1 PDF danado con imagen 029/581 documentada')
+    print('Lote laser OK: 7 recuperados (6 OCR + 1 texto decodificado), '
+          '7 sin texto por diseno, imagen 029/581 conservada como secundaria')
     return 0
 
 
