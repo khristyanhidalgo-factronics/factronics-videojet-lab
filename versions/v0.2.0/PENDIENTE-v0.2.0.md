@@ -5,7 +5,7 @@
 ## Cierre de v0.2.0
 - [ ] **Verificación final en navegador real**: consola sin errores, service worker
       activo, funcionamiento offline tras la primera carga, calculadora y exámenes de
-      los 5 niveles. Las rondas previas ya pasaron; falta la pasada con el SW `alpha-15`.
+      los 5 niveles. Las rondas previas ya pasaron; falta la pasada con el SW `alpha-16`.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
@@ -36,9 +36,14 @@
       → 6 IPL estructurados: 1.397 registros, 204 P/N, 124 verificados + 80 borradores,
       801 ítems sin P/N. Con el OCR 1550/1710 la app muestra **296 P/N CIJ**
       (204 digitales + 92 nuevos) y 336 ítems OCR sin P/N.
-- [ ] Extraer las **velocidades CIJ por modelo/boquilla** de los calculadores
-      «Line Speed Calculator v9.7» → dataset `cij_velocidades`. Venía del PENDIENTE
-      de v0.1.0 y aún no se había arrastrado a esta lista.
+- [x] ~~Extraer las **velocidades CIJ por modelo/boquilla** de los calculadores
+      «Line Speed Calculator v9.7» → dataset `cij_velocidades`.~~
+      → `datos/cij_velocidades.json`: **270 calculadores, 271 PDFs, 266 entradas,
+      12 modelos, 0 conflictos de valores**; 22 avisos de boquilla, 31 de modelo,
+      3 de fuente y 1 experto. Integrado en la PWA como `D.velocidades` y validado
+      contra los charts 1280/1580/1880 (`tools/validar_velocidades_cij.py`).
+      Queda la **revisión humana** de los avisos de boquilla/modelo/fuente y de los
+      valores `borrador-decodificado` antes de usarlos como dato firme.
 - [ ] **Cruzar las 120 partes TTO** (hoy en borrador) contra las Official Parts Lists
       PDF para elevarlas a `verificado`. Venía del PENDIENTE de v0.1.0.
 - [ ] Revisar los **títulos de boletines TTO** marcados dudosos/no legibles
@@ -70,12 +75,18 @@
 - [ ] Simplicity/EquivalenciaTintas: mapeo GID pendiente.
 - [ ] Partes 4–12 del repo global `Proyecto-Simplicity-Global` (hoy 3/12).
 - [x] ~~31 escaneados láser sin JPEG (rasterizado/OCR si aportan).~~
-      → lote láser OCR cerrado: **88 PDFs en el objetivo, 74 con texto (281.579
-      caracteres), 13 sin resultado, 1 error de render** (`MedidoresPortenciaCO2.pdf`)
-      y **0 páginas omitidas**; detalle en `datos/extraccion/_lote_laser_resumen.json`.
-- [ ] Revisar los **13 PDFs láser sin resultado** (figuras/planos sin texto útil) y el
-      **1 error de render** (`MedidoresPortenciaCO2.pdf`, posible PDF dañado); no
-      bloquean la app y quedan documentados en el resumen del lote.
+      → **lote láser cerrado**: 14 casos clasificados, **6 recuperados con texto
+      (15.915 caracteres)**, 2 diagramas rotados 90°, **7 planos/3D
+      `sin-texto-por-diseno`** y `MedidoresPortenciaCO2.pdf` con imagen JPEG
+      extraída y lectura visual 029/581 documentada como no firme; **0 casos
+      `sin-resultado`/`error`**. Detalle en `datos/extraccion/_lote_laser_resumen.json`
+      y prueba en `tools/test_lote_laser.py`.
+- [ ] Revisión humana de las **266 velocidades CIJ** y de sus 56 avisos
+      (22 boquilla, 31 modelo, 3 fuente): hoy todas son `borrador-decodificado` y
+      no sustituyen al calculador oficial. Los 4 duplicados ya están fusionados.
+- [ ] Confirmar con el dueño la lectura visual **029/581** de
+      `MedidoresPortenciaCO2.pdf` (punto decimal no resuelto); no se usa como dato
+      técnico firme.
 - [x] ~~7 PDFs escaneados TTO sin texto~~ → OCR completo **7/7, 14.089 caracteres,
       0 páginas omitidas**; resumen en `datos/extraccion/_lote_tto_resumen.json` y
       texto por documento en `datos/extraccion/tto_*_ocr.txt`.

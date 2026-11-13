@@ -31,6 +31,7 @@ def main():
     if os.path.exists(ruta_ocr):
         with open(ruta_ocr, 'r', encoding='utf-8') as f:
             partes_cij_ocr = json.load(f)
+    velocidades = cargar('cij_velocidades.json')
     laser_partes = cargar('laser_partes.json')
     errores = cargar('codigos_error.json')
     ribbons = cargar('tto_ribbons.json')
@@ -54,6 +55,7 @@ def main():
                         'ttO': 'Excel de curso + chart de ribbons 2.5.26',
                         'cij': ('6 IPL 1000VJ (1210/1510, 1220/1520, 1520E, 1610 DH, 1620E, 1650) '
                                 '+ IPL 1550/1710 por OCR (borrador-decodificado)'),
+                        'velocidades': 'CIJ Line Speed Calculator v9.7 (270 calculadores por OCR)',
                         'laser': 'manuales CO2/Fibra + SpareParts',
                         'errores': 'listas oficiales de error',
                         'mantenimiento': 'manuales y procedimientos'},
@@ -70,6 +72,48 @@ def main():
             'cm': e.get('cartucho_ml'),
             'e': e.get('estado'),
         } for e in solvente.get('modelos', [])],
+        # velocidades de linea CIJ por modelo/boquilla/fuente (calculadores v9.7)
+        'velocidades': {
+            'meta': {
+                'fuente': velocidades.get('fuente'),
+                'metodo': velocidades.get('metodo'),
+                'fecha': velocidades.get('fecha'),
+                'estado': velocidades.get('estado_general'),
+                'calculadores': (velocidades.get('resumen') or {}).get('calculadores_leidos'),
+                'entradas': len(velocidades.get('entradas', [])),
+                'modelos': (velocidades.get('resumen') or {}).get('modelos'),
+                'conflictos': (velocidades.get('resumen') or {}).get('conflictos'),
+                'conflictos_boquilla': (velocidades.get('resumen') or {}).get('conflictos_boquilla'),
+                'conflictos_modelo': (velocidades.get('resumen') or {}).get('conflictos_modelo'),
+                'conflictos_fuente': (velocidades.get('resumen') or {}).get('conflictos_fuente'),
+                'descartado': 'v9.7z.pdf (tabla resumen, no es calculador)',
+                'nota': ('Velocidad nominal leida por OCR de los calculadores oficiales. '
+                         'Queda como borrador-decodificado; los avisos de boquilla/modelo/fuente '
+                         'se conservan y no se corrigen a mano.'),
+            },
+            'modelos': sorted({e.get('modelo') for e in velocidades.get('entradas', [])
+                               if e.get('modelo')}),
+            'boquillas': sorted({e.get('boquilla_um') for e in velocidades.get('entradas', [])
+                                 if e.get('boquilla_um')}),
+            'fuentes': sorted({e.get('fuente') for e in velocidades.get('entradas', [])
+                               if e.get('fuente')}),
+            'entradas': [{
+                'm': e.get('modelo'),
+                'mi': e.get('modelo_impreso') or '',
+                'b': e.get('boquilla_um'),
+                'f': e.get('fuente'),
+                'v': e.get('velocidad_nominal_m_min'),
+                'c': e.get('caracteres_por_segundo'),
+                'col': e.get('columnas_por_segundo'),
+                't': e.get('tipo_calculador'),
+                'e': e.get('estado'),
+                'a': '; '.join(os.path.basename(a) for a in (e.get('archivos') or [])),
+                'cf': ''.join(k for k, campo in (
+                    ('b', 'conflicto_boquilla'),
+                    ('m', 'conflicto_modelo'),
+                    ('f', 'conflicto_fuente')) if e.get(campo)),
+            } for e in velocidades.get('entradas', [])],
+        },
         # tintas CIJ con composicion y propiedades (por ficha)
         'tintas': {},
         # partes (TTO + LASER)
@@ -145,7 +189,11 @@ def main():
                 break
         if not desc and descripciones:
             desc = descripciones[0].get('texto', '')
-        paquete['partes'].append({'n': numero, 'd': str(desc), 't': 'TTO'})
+        modelos = sorted({m for ms in (p.get('modelos_por_fuente') or {}).values()
+                          for m in (ms or [])})
+        paquete['partes'].append({'n': numero, 'd': str(desc), 't': 'TTO',
+                                  'm': ', '.join(modelos),
+                                  'e': p.get('estado') or 'borrador'})
     # partes CIJ (6 IPL + 1550/1710 OCR; se conserva el estado y los modelos)
     partes_cij_app = list(partes_cij.get('partes', []))
     por_pn = {str(p['pn']): p for p in partes_cij_app}
@@ -212,11 +260,11 @@ def main():
         json.dump(paquete, f, ensure_ascii=False, separators=(',', ':'))
         f.write(';\n')
     tam = os.path.getsize(SALIDA)
-    print('OK %s (%.1f KB) | solventes=%d tintas=%d partes=%d (CIJ=%d, +%d OCR) '
+    print('OK %s (%.1f KB) | solventes=%d velocidades=%d tintas=%d partes=%d (CIJ=%d, +%d OCR) '
           'errores=%d ribbons=%d/%d mant=%d/%d modelos_laser=%d'
           % (os.path.relpath(SALIDA, RAIZ), tam / 1024.0,
-             len(paquete['solventes']), len(paquete['tintas']),
-             len(paquete['partes']),
+             len(paquete['solventes']), len(paquete['velocidades']['entradas']),
+             len(paquete['tintas']), len(paquete['partes']),
              len(partes_cij_app), ocr_nuevas, len(paquete['errores']),
              len(paquete['ribbons']['grados']), len(paquete['ribbons']['items']),
              len(paquete['mant']['docs']), len(paquete['mant']['tareas']),

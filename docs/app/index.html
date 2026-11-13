@@ -158,6 +158,17 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
       </div>
       <div id="calc_out" style="margin-top:12px"></div>
     </div>
+    <div class="card" style="margin-top:14px">
+      <h2 data-i18n="vel_t">Velocidad de línea CIJ</h2>
+      <p class="small" data-i18n="vel_s">Velocidad nominal por modelo, boquilla y fuente, leída de los calculadores oficiales v9.7 (borrador decodificado).</p>
+      <div class="grid">
+        <div><label class="small" data-i18n="vel_modelo">Modelo</label><br><select id="vel_m" style="width:100%"></select></div>
+        <div><label class="small" data-i18n="vel_boquilla">Boquilla (µm)</label><br><select id="vel_b" style="width:100%"></select></div>
+        <div><label class="small" data-i18n="vel_fuente">Fuente</label><br><select id="vel_f" style="width:100%"></select></div>
+      </div>
+      <div id="vel_out" style="margin-top:12px"></div>
+      <p class="small" style="margin-top:10px"><span data-i18n="vel_nota">Datos borrador-decodificado: no sustituyen el calculador oficial.</span></p>
+    </div>
   </section>
 
   <section id="examen">
@@ -509,6 +520,56 @@ Object.assign(I18N.zh, {
   ref_banco:'（此处改编的 372 题题库）', ref_calc:'（姊妹计算器）。',
   ref_unifica:'本项目将 TTO · CIJ · 激光整合到一个地方。'
 });
+Object.assign(I18N.es, {
+  vel_t:'Velocidad de línea CIJ', vel_s:'Velocidad nominal por modelo, boquilla y fuente, leída de los calculadores oficiales v9.7 (borrador decodificado).',
+  vel_modelo:'Modelo', vel_boquilla:'Boquilla (µm)', vel_fuente:'Fuente',
+  vel_cps:'caracteres/s', vel_columnas:'columnas/s', vel_tipo:'Tipo de calculador',
+  vel_simple:'simple', vel_experto:'experto', vel_impreso:'Modelo impreso', vel_fuente_archivo:'Archivo fuente',
+  vel_aviso_boquilla:'Aviso: el nombre del archivo dice otra boquilla; se conserva el valor impreso (50 µm en UHS).',
+  vel_aviso_modelo:'Aviso: el nombre del archivo dice otro modelo; se conserva el modelo impreso.',
+  vel_aviso_fuente:'Aviso: el nombre del archivo dice otra fuente; se conserva la fuente impresa.',
+  vel_nota:'Datos borrador-decodificado: no sustituyen el calculador oficial.'
+});
+Object.assign(I18N.en, {
+  vel_t:'CIJ line speed', vel_s:'Nominal speed by model, nozzle and font, read from the official v9.7 calculators (decoded draft).',
+  vel_modelo:'Model', vel_boquilla:'Nozzle (µm)', vel_fuente:'Font',
+  vel_cps:'characters/s', vel_columnas:'columns/s', vel_tipo:'Calculator type',
+  vel_simple:'simple', vel_experto:'expert', vel_impreso:'Printed model', vel_fuente_archivo:'Source file',
+  vel_aviso_boquilla:'Notice: the file name says another nozzle; the printed value is kept (50 µm on UHS).',
+  vel_aviso_modelo:'Notice: the file name says another model; the printed model is kept.',
+  vel_aviso_fuente:'Notice: the file name says another font; the printed font is kept.',
+  vel_nota:'Decoded-draft data: it does not replace the official calculator.'
+});
+Object.assign(I18N.pt, {
+  vel_t:'Velocidade de linha CIJ', vel_s:'Velocidade nominal por modelo, bocal e fonte, lida dos calculadores oficiais v9.7 (rascunho decodificado).',
+  vel_modelo:'Modelo', vel_boquilla:'Bocal (µm)', vel_fuente:'Fonte',
+  vel_cps:'caracteres/s', vel_columnas:'colunas/s', vel_tipo:'Tipo de calculadora',
+  vel_simple:'simples', vel_experto:'especialista', vel_impreso:'Modelo impresso', vel_fuente_archivo:'Arquivo fonte',
+  vel_aviso_boquilla:'Aviso: o nome do arquivo indica outro bocal; o valor impresso é mantido (50 µm em UHS).',
+  vel_aviso_modelo:'Aviso: o nome do arquivo indica outro modelo; o modelo impresso é mantido.',
+  vel_aviso_fuente:'Aviso: o nome do arquivo indica outra fonte; a fonte impressa é mantida.',
+  vel_nota:'Dados de rascunho decodificado: não substituem a calculadora oficial.'
+});
+Object.assign(I18N.it, {
+  vel_t:'Velocità di linea CIJ', vel_s:'Velocità nominale per modello, ugello e font, letta dai calcolatori ufficiali v9.7 (bozza decodificata).',
+  vel_modelo:'Modello', vel_boquilla:'Ugello (µm)', vel_fuente:'Font',
+  vel_cps:'caratteri/s', vel_columnas:'colonne/s', vel_tipo:'Tipo di calcolatore',
+  vel_simple:'semplice', vel_experto:'esperto', vel_impreso:'Modello stampato', vel_fuente_archivo:'File di origine',
+  vel_aviso_boquilla:"Avviso: il nome del file indica un altro ugello; si conserva il valore stampato (50 µm su UHS).",
+  vel_aviso_modelo:'Avviso: il nome del file indica un altro modello; si conserva il modello stampato.',
+  vel_aviso_fuente:'Avviso: il nome del file indica un altro font; si conserva il font stampato.',
+  vel_nota:'Dati in bozza decodificata: non sostituiscono il calcolatore ufficiale.'
+});
+Object.assign(I18N.zh, {
+  vel_t:'CIJ 线速度', vel_s:'按型号、喷嘴和字体读取官方 v9.7 计算器的额定速度（解码草稿）。',
+  vel_modelo:'型号', vel_boquilla:'喷嘴 (µm)', vel_fuente:'字体',
+  vel_cps:'字符/秒', vel_columnas:'列/秒', vel_tipo:'计算器类型',
+  vel_simple:'简单', vel_experto:'专家', vel_impreso:'印刷型号', vel_fuente_archivo:'源文件',
+  vel_aviso_boquilla:'提示：文件名标注了其他喷嘴；保留印刷值（UHS 为 50 µm）。',
+  vel_aviso_modelo:'提示：文件名标注了其他型号；保留印刷型号。',
+  vel_aviso_fuente:'提示：文件名标注了其他字体；保留印刷字体。',
+  vel_nota:'解码草稿数据：不能替代官方计算器。'
+});
 let LANG = localStorage.getItem('fvl_lang') || 'es';
 const t = (k) => (I18N[LANG] && I18N[LANG][k]) || I18N.es[k] || k;
 
@@ -563,7 +624,7 @@ function aplicarIdioma(){
   $('#foot').textContent = `${t('kpi_solventes')} · ${t('kpi_partes')} · offline`;
   $('#q').placeholder = t('buscar') + '...';
   if ($('#prof_nombre')) $('#prof_nombre').placeholder = t('perfil_ph');
-  renderKPIs(); renderFuentes(); renderEstudiar(); renderBuscar(); renderCalc(); renderHistorial();
+  renderKPIs(); renderFuentes(); renderEstudiar(); renderBuscar(); renderCalc(); renderVel(); renderHistorial();
   if (typeof renderRepaso === 'function') renderRepaso();
 }
 function aplicarTema(){
@@ -806,6 +867,73 @@ function calcular(){
   <p class="small">${esc(tr(entrada.b||''))} · ${esc(t('calc_ref'))}: ${esc(refTexto(entrada.r))} · ${badge(entrada.e)}</p>
   <table><thead><tr><th>T (°C)</th><th>ml/h</th></tr></thead><tbody>
   ${entrada.c.map(([t,u])=>`<tr><td>${t}</td><td>${u}</td></tr>`).join('')}</tbody></table>`;
+}
+
+/* ================= velocidad de linea CIJ ================= */
+function velModelos(){
+  return (D.velocidades && D.velocidades.modelos) ? D.velocidades.modelos : [];
+}
+function velBoquillas(modelo){
+  const set = new Set(D.velocidades.entradas
+    .filter(e => e.m === modelo).map(e => e.b));
+  return [...set].sort((a,b) => a-b);
+}
+function velFuentes(modelo, boquilla){
+  const set = new Set(D.velocidades.entradas
+    .filter(e => e.m === modelo && e.b === Number(boquilla)).map(e => e.f));
+  return [...set].sort();
+}
+function renderVel(){
+  const selM = $('#vel_m');
+  if (!selM || !D.velocidades) return;
+  const previo = selM.value;
+  const modelos = velModelos();
+  selM.innerHTML = modelos.map(m => `<option>${esc(m)}</option>`).join('');
+  if (previo && modelos.includes(previo)) selM.value = previo;
+  selM.onchange = actualizarVelBoquillas;
+  $('#vel_b').onchange = actualizarVelFuentes;
+  $('#vel_f').onchange = calcularVel;
+  actualizarVelBoquillas();
+}
+function actualizarVelBoquillas(){
+  const m = $('#vel_m').value;
+  const selB = $('#vel_b');
+  const previo = selB.value;
+  const boquillas = velBoquillas(m);
+  selB.innerHTML = boquillas.map(b => `<option value="${b}">${b}</option>`).join('');
+  if (boquillas.map(String).includes(previo)) selB.value = previo;
+  actualizarVelFuentes();
+}
+function actualizarVelFuentes(){
+  const m = $('#vel_m').value, b = Number($('#vel_b').value);
+  const selF = $('#vel_f');
+  const previo = selF.value;
+  const fuentes = velFuentes(m, b);
+  selF.innerHTML = fuentes.map(f => `<option>${esc(f)}</option>`).join('');
+  if (fuentes.includes(previo)) selF.value = previo;
+  calcularVel();
+}
+function calcularVel(){
+  const m = $('#vel_m').value, b = Number($('#vel_b').value), f = $('#vel_f').value;
+  const out = $('#vel_out');
+  const e = (D.velocidades.entradas || []).find(
+    x => x.m === m && x.b === b && x.f === f);
+  if (!e) { out.innerHTML = `<span class="small">${esc(t('sin_resultados'))}</span>`; return; }
+  const fpm = e.v * 3.28084;
+  const metrica = e.t === 'experto' ? e.col : e.c;
+  const etiqueta = e.t === 'experto' ? t('vel_columnas') : t('vel_cps');
+  const avisos = [];
+  if ((e.cf || '').includes('b')) avisos.push(t('vel_aviso_boquilla'));
+  if ((e.cf || '').includes('m')) avisos.push(t('vel_aviso_modelo'));
+  if ((e.cf || '').includes('f')) avisos.push(t('vel_aviso_fuente'));
+  out.innerHTML = `<div class="grid">
+    <div class="kpi"><b>${fmtNum(e.v,0)}</b><span>m/min</span></div>
+    <div class="kpi"><b>${fmtNum(fpm,0)}</b><span>fpm</span></div>
+    <div class="kpi"><b>${fmtNum(metrica,0)}</b><span>${esc(etiqueta)}</span></div>
+  </div>
+  <p class="small">${esc(t('vel_tipo'))}: ${esc(t(e.t === 'experto' ? 'vel_experto' : 'vel_simple'))} · ${badge(e.e)}${e.mi ? ` · ${esc(t('vel_impreso'))}: ${esc(e.mi)}` : ''}</p>
+  ${avisos.length ? `<div class="notice">${avisos.map(esc).join(' · ')}</div>` : ''}
+  <p class="small">${esc(t('vel_fuente_archivo'))}: ${esc(e.a || '—')}</p>`;
 }
 
 /* ================= examen ================= */

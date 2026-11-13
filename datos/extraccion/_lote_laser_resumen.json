@@ -31,7 +31,8 @@
    "ocr_lineas": 0,
    "ocr_chars": 0,
    "ocr_omitidas": [],
-   "estado_ocr": "sin-resultado"
+   "estado_ocr": "sin-texto-por-diseno",
+   "nota": "Plano/3D sin rotulos: el OCR devuelve 0 lineas por diseno, no por fallo del rasterizador."
   },
   {
    "archivo": "accesorios laser\\1086-Encoder1800PPR_AL-69069.pdf",
@@ -958,7 +959,8 @@
    "ocr_lineas": 0,
    "ocr_chars": 0,
    "ocr_omitidas": [],
-   "estado_ocr": "sin-resultado"
+   "estado_ocr": "sin-texto-por-diseno",
+   "nota": "Plano/3D sin rotulos: el OCR devuelve 0 lineas por diseno, no por fallo del rasterizador."
   },
   {
    "archivo": "accesorios laser\\AV-D 350 UL.pdf",
@@ -1508,10 +1510,14 @@
    "cifrado": false,
    "bloques": 1,
    "ocr_paginas": 1,
-   "ocr_lineas": 0,
-   "ocr_chars": 0,
+   "ocr_lineas": 24,
+   "ocr_chars": 391,
    "ocr_omitidas": [],
-   "estado_ocr": "sin-resultado"
+   "estado_ocr": "ok-rotado",
+   "ocr_rotacion": {
+    "1": 90
+   },
+   "txt_ocr": "datos/extraccion/laser_accesorios_laser_extraction_accesories_ocr.txt"
   },
   {
    "archivo": "accesorios laser\\Extrator de Fumos 55X.pdf",
@@ -1927,8 +1933,28 @@
    "estado": "texto-escaso",
    "cifrado": false,
    "bloques": 1,
-   "estado_ocr": "error",
-   "ocr_error": "render pagina 1 (ancho 2200): Excepci�n al llamar a \"Wait\" con los argumentos \"1\": \"Se han producido uno o varios errores.\"\nEn C:\\Users\\Sr_Hidalgo\\Documents\\CARPETA DE PROYECTO VIDEOJET\\factronics-videojet-lab\\tools\\render_pdf_pagina.ps1: 29 \nCar�cter: 5\n+     $net.Wait(-1) | Out-Null\n+     ~~~~~~~~"
+   "estado_ocr": "imagen-extraida",
+   "ocr_error": "render pagina 1 (ancho 1600): Excepci�n al llamar a \"Wait\" con los argumentos \"1\": \"Se han producido uno o varios errores.\"\nEn C:\\Users\\Sr_Hidalgo\\Documents\\CARPETA DE PROYECTO VIDEOJET\\factronics-videojet-lab\\tools\\render_pdf_pagina.ps1: 29 \nCar�cter: 5\n+     $net.Wait(-1) | Out-Null\n+     ~~~~~~~~",
+   "ocr_paginas": null,
+   "ocr_lineas": 1,
+   "ocr_chars": 4,
+   "ocr_omitidas": null,
+   "imagenes_extraidas": [
+    {
+     "archivo": "datos/extraccion/medidores_portencia_co2/obj21.jpg",
+     "bytes": 270110,
+     "ancho": 810,
+     "alto": 426,
+     "ocr_lineas": 1,
+     "ocr_texto": "58 {"
+    }
+   ],
+   "lectura_visual": {
+    "display_superior": "029",
+    "display_inferior": "581",
+    "nota": "Lectura visual de obj21.jpg; el OCR no transcribe los digitos. El punto decimal del display superior no queda resuelto. No se usa como dato tecnico firme."
+   },
+   "nota": "PDF Ghostscript 8.15 con miles de imagenes inline CMYK; Windows.Data.Pdf falla al cargar/renderizar y Edge imprime en blanco. Se conserva la imagen incrustada como evidencia."
   },
   {
    "archivo": "accesorios laser\\Mktg Bulletin .pdf",
@@ -2773,8 +2799,15 @@
    "cifrado": false,
    "bloques": 0,
    "ocr_imagenes": 11,
-   "ocr_chars": 0,
-   "estado_ocr": "sin-resultado"
+   "ocr_chars": 261,
+   "estado_ocr": "ok-rotado",
+   "ocr_paginas": 1,
+   "ocr_lineas": 35,
+   "ocr_omitidas": [],
+   "txt_ocr": "datos/extraccion/laser_accesorios_laser_k30_wiring_diagram_ocr.txt",
+   "ocr_rotacion": {
+    "1": 90
+   }
   },
   {
    "archivo": "accesorios laser\\pre-filtro nacional CAIXA_MONTAGEM.PDF",
@@ -6907,7 +6940,11 @@
    "bloques": 0,
    "ocr_imagenes": 2,
    "ocr_chars": 0,
-   "estado_ocr": "sin-resultado"
+   "estado_ocr": "sin-texto-por-diseno",
+   "ocr_paginas": 1,
+   "ocr_lineas": 0,
+   "ocr_omitidas": [],
+   "nota": "Plano/3D sin rotulos: el OCR devuelve 0 lineas por diseno, no por fallo del rasterizador."
   },
   {
    "archivo": "drawings co2\\OG5052 manual.pdf",
@@ -6982,7 +7019,8 @@
    "ocr_lineas": 0,
    "ocr_chars": 0,
    "ocr_omitidas": [],
-   "estado_ocr": "sin-resultado"
+   "estado_ocr": "sin-texto-por-diseno",
+   "nota": "Plano/3D sin rotulos: el OCR devuelve 0 lineas por diseno, no por fallo del rasterizador."
   },
   {
    "archivo": "drawings co2\\Soporte laser CO2.pdf",
@@ -6993,7 +7031,11 @@
    "bloques": 0,
    "ocr_imagenes": 1,
    "ocr_chars": 0,
-   "estado_ocr": "sin-resultado"
+   "estado_ocr": "sin-texto-por-diseno",
+   "ocr_paginas": 1,
+   "ocr_lineas": 0,
+   "ocr_omitidas": [],
+   "nota": "Plano/3D sin rotulos: el OCR devuelve 0 lineas por diseno, no por fallo del rasterizador."
   },
   {
    "archivo": "drawings co2\\Spot_Size_VJ3010_3120_3320_3430.pdf",
@@ -7085,7 +7127,11 @@
    "bloques": 1,
    "ocr_imagenes": 1,
    "ocr_chars": 0,
-   "estado_ocr": "sin-resultado"
+   "estado_ocr": "sin-texto-por-diseno",
+   "ocr_paginas": 1,
+   "ocr_lineas": 0,
+   "ocr_omitidas": [],
+   "nota": "Plano/3D sin rotulos: el OCR devuelve 0 lineas por diseno, no por fallo del rasterizador."
   },
   {
    "archivo": "drawings co2\\pruebaaaaaaaaaaaaaaaaaaaaaaaaa.pdf",
@@ -7096,7 +7142,11 @@
    "bloques": 1,
    "ocr_imagenes": 1,
    "ocr_chars": 0,
-   "estado_ocr": "sin-resultado"
+   "estado_ocr": "sin-texto-por-diseno",
+   "ocr_paginas": 1,
+   "ocr_lineas": 0,
+   "ocr_omitidas": [],
+   "nota": "Plano/3D sin rotulos: el OCR devuelve 0 lineas por diseno, no por fallo del rasterizador."
   },
   {
    "archivo": "drawings fibra\\112527-3_INFO_VJ7610 (1).PDF",
@@ -9639,8 +9689,12 @@
    "cifrado": false,
    "bloques": 0,
    "ocr_imagenes": 2,
-   "ocr_chars": 0,
-   "estado_ocr": "sin-resultado"
+   "ocr_chars": 1913,
+   "estado_ocr": "ok",
+   "ocr_paginas": 2,
+   "ocr_lineas": 56,
+   "ocr_omitidas": [],
+   "txt_ocr": "datos/extraccion/laser_manuales_fibra_nueva_carpeta_18030_working_distance_7230_7330_7320_7220_eng_ocr.txt"
   },
   {
    "archivo": "manuales fibra\\Nueva carpeta\\18032-Marking Fields and Working Distances 7340, 7440 (Eng).pdf",
@@ -9650,8 +9704,12 @@
    "cifrado": false,
    "bloques": 0,
    "ocr_imagenes": 4,
-   "ocr_chars": 0,
-   "estado_ocr": "sin-resultado"
+   "ocr_chars": 3136,
+   "estado_ocr": "ok",
+   "ocr_paginas": 3,
+   "ocr_lineas": 81,
+   "ocr_omitidas": [],
+   "txt_ocr": "datos/extraccion/laser_manuales_fibra_nueva_carpeta_18032_marking_fields_and_working_distances_7340_7440_eng_ocr.txt"
   },
   {
    "archivo": "manuales fibra\\Nueva carpeta\\18033-Troubleshooting Shutter Faults 7230, 7330, 7510, 7610 (Eng).pdf",
@@ -9680,8 +9738,12 @@
    "cifrado": false,
    "bloques": 0,
    "ocr_imagenes": 6,
-   "ocr_chars": 0,
-   "estado_ocr": "sin-resultado"
+   "ocr_chars": 3664,
+   "estado_ocr": "ok",
+   "ocr_paginas": 3,
+   "ocr_lineas": 102,
+   "ocr_omitidas": [],
+   "txt_ocr": "datos/extraccion/laser_manuales_fibra_nueva_carpeta_18035_locating_fault_messages_in_laser_unit_interfaces_eng_ocr.txt"
   },
   {
    "archivo": "manuales fibra\\Nueva carpeta\\18036-Marking Field and Work Distance 7510, 7610 (Eng).pdf",
@@ -9702,8 +9764,12 @@
    "cifrado": false,
    "bloques": 0,
    "ocr_imagenes": 9,
-   "ocr_chars": 0,
-   "estado_ocr": "sin-resultado"
+   "ocr_chars": 6550,
+   "estado_ocr": "ok",
+   "ocr_paginas": 6,
+   "ocr_lineas": 197,
+   "ocr_omitidas": [],
+   "txt_ocr": "datos/extraccion/laser_manuales_fibra_nueva_carpeta_18037_laser_user_interface_devices_and_software_eng_ocr.txt"
   },
   {
    "archivo": "manuales fibra\\Nueva carpeta\\5947 - 7510 Focusing Lens Back Reflection Can Cause Galvo Damage.pdf",
@@ -10473,5 +10539,21 @@
    "cifrado": false,
    "bloques": 5
   }
- ]
+ ],
+ "conteo_ocr": {
+  "escaso": 25,
+  "imagen-extraida": 1,
+  "ok": 1218,
+  "ok-rotado": 2,
+  "sin-texto-por-diseno": 7
+ },
+ "cierre_lote_laser": {
+  "fecha": "2026-11-13",
+  "casos_revisados": 14,
+  "recuperados_con_texto": 6,
+  "chars_recuperados": 15915,
+  "sin_texto_por_diseno": 7,
+  "danado_rasterizado": 1,
+  "nota": "Los 14 casos del cierre quedan clasificados; no se asciende ningun dato tecnico a verificado."
+ }
 }

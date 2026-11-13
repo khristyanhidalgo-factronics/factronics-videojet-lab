@@ -1,13 +1,15 @@
 {
  "producto": "Factronics Videojet Lab",
- "schema": 2,
- "actualizado": "2026-11-08",
- "estado_general": "borrador",
- "nota": "Partes TTO 6x30 estructuradas desde los Excel de curso (material interno del equipo). Sin datos inventados: cada descripcion y spares se conserva identificado por su fuente. Estado borrador hasta cruzar contra las Official Parts Lists PDF. anchos_mm se toman de la descripcion de cada parte (hereda cabecera solo si no los declara).",
+ "schema": 3,
+ "actualizado": "2026-11-11",
+ "estado_general": "verificado",
+ "nota": "Partes TTO 6x30 estructuradas desde los Excel de curso (material interno del equipo) y cotejadas contra las Official Parts Lists 6330 (2021-07) y 6530 (2026-03). Los 120 P/N existen en las listas oficiales; 97 descripciones inglesas coinciden al 100% y 23 se completaron con la descripcion oficial 6530. Estado verificado para P/N + descripcion inglesa; las descripciones es/pt siguen siendo material de curso identificado por fuente. Sin datos inventados.",
  "fuentes": [
   "basicas-6330",
   "basicas-6530",
-  "parts-list-6330"
+  "parts-list-6330",
+  "official-parts-list-6330",
+  "official-parts-list-6530"
  ],
  "total_partes_unicas": 120,
  "partes": [
@@ -94,6 +96,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "86",
+      "pn": "100188",
+      "descripcion": "53mm Cassette Shaft (Qty 1)",
+      "orderable": "",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "101",
+      "pn": "100188",
+      "descripcion": "53mm Cassette Shaft (Qty 1)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "53mm Cassette Shaft (Qty 1)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "53mm Cassette Shaft (Qty 1)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -180,6 +219,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "119",
+      "pn": "215964",
+      "descripcion": "DF / DF+ Encoder O ring (Pk. 10)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "138",
+      "pn": "215964",
+      "descripcion": "DF / DF+ Encoder O ring (Pk. 10)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "DF / DF+ Encoder O ring (Pk. 10)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "DF / DF+ Encoder O ring (Pk. 10)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -266,6 +342,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "110",
+      "pn": "216030",
+      "descripcion": "Fuse Kit (Pk 10)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "129",
+      "pn": "216030",
+      "descripcion": "Fuse Kit (Pk 10)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Fuse Kit (Pk 10)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Fuse Kit (Pk 10)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -352,6 +465,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "74",
+      "pn": "216031",
+      "descripcion": "Spare Peel Roller (Pk. 5)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "85",
+      "pn": "216031",
+      "descripcion": "Spare 53mm Peel Roller (Pk. 5)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare Peel Roller (Pk. 5)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare Peel Roller (Pk. 5)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -437,6 +587,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "85",
+      "pn": "216032",
+      "descripcion": "Spare 53mm Cassette Roller (Pk. 6)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "100",
+      "pn": "216032",
+      "descripcion": "Spare 53mm Cassette Roller (Pk. 6)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm Cassette Roller (Pk. 6)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm Cassette Roller (Pk. 6)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -467,6 +654,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "118",
+      "pn": "216046",
+      "descripcion": "Adjustable Mount Encoder Bracket",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "137",
+      "pn": "216046",
+      "descripcion": "Adjustable Mount Encoder Bracket",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Adjustable Mount Encoder Bracket",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Adjustable Mount Encoder Bracket",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -553,6 +777,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "73",
+      "pn": "216054",
+      "descripcion": "Printhead Cleaning Kit (10 Pre-saturated swabs)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "84",
+      "pn": "216054",
+      "descripcion": "Printhead Cleaning Kit (10 Pre-saturated swabs)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Printhead Cleaning Kit (10 Pre-saturated swabs)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Printhead Cleaning Kit (10 Pre-saturated swabs)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -639,6 +900,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "88",
+      "pn": "216808",
+      "descripcion": "Black Disc (Pk. 5)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "105",
+      "pn": "216808",
+      "descripcion": "Black Disc (Pk. 5)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Black Disc (Pk. 5)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Black Disc (Pk. 5)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -725,6 +1023,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "87",
+      "pn": "216809",
+      "descripcion": "Silver Disc (Pk. 5)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "104",
+      "pn": "216809",
+      "descripcion": "Silver Disc (Pk. 5)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Silver Disc (Pk. 5)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Silver Disc (Pk. 5)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -811,6 +1146,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "90",
+      "pn": "216810",
+      "descripcion": "Cassette Release Button",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "107",
+      "pn": "216810",
+      "descripcion": "Cassette Release Button",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Cassette Release Button",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Cassette Release Button",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -897,6 +1269,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "91",
+      "pn": "218861",
+      "descripcion": "SPARE LATCH, SCREW, PK. 10",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "108",
+      "pn": "218861",
+      "descripcion": "SPARE LATCH, SCREW, PK. 10",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "SPARE LATCH, SCREW, PK. 10",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "SPARE LATCH, SCREW, PK. 10",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -927,6 +1336,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "128",
+      "pn": "402274",
+      "descripcion": "15-way I/O cable assembly",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "147",
+      "pn": "402274",
+      "descripcion": "15-way I/O cable assembly",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "15-way I/O cable assembly",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "15-way I/O cable assembly",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -957,6 +1403,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "117",
+      "pn": "402788",
+      "descripcion": "Spare Encoder Cable",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "136",
+      "pn": "402788",
+      "descripcion": "Spare Encoder Cable",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare Encoder Cable",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare Encoder Cable",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -1043,6 +1526,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "89",
+      "pn": "403057",
+      "descripcion": "DF / DF+ Mandrel Friction Cones (Pk. 10)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "106",
+      "pn": "403057",
+      "descripcion": "DF / DF+ Mandrel Friction Cones (Pk. 10)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "DF / DF+ Mandrel Friction Cones (Pk. 10)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "DF / DF+ Mandrel Friction Cones (Pk. 10)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -1129,6 +1649,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "123",
+      "pn": "407757",
+      "descripcion": "TT(3) 3m Interconnecting Cable Assembly (Low Profile)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "142",
+      "pn": "407757",
+      "descripcion": "TT(3) 3m Interconnecting Cable Assembly (Low Profile)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "TT(3) 3m Interconnecting Cable Assembly (Low Profile)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "TT(3) 3m Interconnecting Cable Assembly (Low Profile)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -1159,6 +1716,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "4",
+      "pn": "407764",
+      "descripcion": "VJ6330 PRINTER - RH 53MM (Complete System)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "VJ6330 PRINTER - RH 53MM (Complete System)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "VJ6330 PRINTER - RH 53MM (Complete System)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -1189,6 +1773,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "5",
+      "pn": "407765",
+      "descripcion": "VJ6330 PRINTER - LH 53MM (Complete System)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "VJ6330 PRINTER - LH 53MM (Complete System)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "VJ6330 PRINTER - LH 53MM (Complete System)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -1219,6 +1830,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "124",
+      "pn": "407798",
+      "descripcion": "TT(3) 5m Interconnecting Cable Assembly (Low Profile)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "143",
+      "pn": "407798",
+      "descripcion": "TT(3) 5m Interconnecting Cable Assembly (Low Profile) (The I/O is 5m)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "TT(3) 5m Interconnecting Cable Assembly (Low Profile)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "TT(3) 5m Interconnecting Cable Assembly (Low Profile)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -1249,6 +1897,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "125",
+      "pn": "407799",
+      "descripcion": "TT(3) 1.2m Interconnecting Cable Assembly (Low Profile)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "144",
+      "pn": "407799",
+      "descripcion": "TT(3) 1.2m Interconnecting Cable Assembly (Low Profile)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "TT(3) 1.2m Interconnecting Cable Assembly (Low Profile)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "TT(3) 1.2m Interconnecting Cable Assembly (Low Profile)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -1279,6 +1964,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "126",
+      "pn": "407800",
+      "descripcion": "TT(3) 4m Interconnecting Cable Assembly (Low Profile)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "145",
+      "pn": "407800",
+      "descripcion": "TT(3) 4m Interconnecting Cable Assembly (Low Profile) (The I/O is 5m)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "TT(3) 4m Interconnecting Cable Assembly (Low Profile)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "TT(3) 4m Interconnecting Cable Assembly (Low Profile)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -1365,6 +2087,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "107",
+      "pn": "407861",
+      "descripcion": "Spare TT(iii) HMI - PSU Cable - 3m (Standard) (Includes HMI usb cover protector)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "126",
+      "pn": "407861",
+      "descripcion": "Spare TT(iii) HMI - PSU Cable - 3m (Standard) (Includes HMI usb cover protector)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare TT(iii) HMI - PSU Cable - 3m (Standard) (Includes HMI usb cover protector)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare TT(iii) HMI - PSU Cable - 3m (Standard) (Includes HMI usb cover protector)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -1395,6 +2154,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "108",
+      "pn": "407862",
+      "descripcion": "Spare TT(iii) HMI - PSU Cable - 5m (Includes HMI usb cover protector)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "127",
+      "pn": "407862",
+      "descripcion": "Spare TT(iii) HMI - PSU Cable - 5m (Includes HMI usb cover protector)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare TT(iii) HMI - PSU Cable - 5m (Includes HMI usb cover protector)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare TT(iii) HMI - PSU Cable - 5m (Includes HMI usb cover protector)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -1480,6 +2276,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "35",
+      "pn": "407870",
+      "descripcion": "Spare 53mm TT(iii) Ribbon Motor",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "35",
+      "pn": "407870",
+      "descripcion": "Spare 53mm TT(iii) Ribbon Motor",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm TT(iii) Ribbon Motor",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm TT(iii) Ribbon Motor",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -1565,6 +2398,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "36",
+      "pn": "407871",
+      "descripcion": "Spare 53mm TT(iii) Ribbon Motor w/Sensor",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "36",
+      "pn": "407871",
+      "descripcion": "Spare 53mm TT(iii) Ribbon Motor w/Sensor",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm TT(iii) Ribbon Motor w/Sensor",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm TT(iii) Ribbon Motor w/Sensor",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -1650,6 +2520,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "37",
+      "pn": "407872",
+      "descripcion": "Spare 53mm TT(iii) Printhead Motor",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "37",
+      "pn": "407872",
+      "descripcion": "Spare 53mm TT(iii) Printhead Motor (carriage motor)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm TT(iii) Printhead Motor",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm TT(iii) Printhead Motor",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -1735,6 +2642,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "38",
+      "pn": "407873",
+      "descripcion": "Spare 53mm TT(iii) Printhead Motor w/Sensor",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "38",
+      "pn": "407873",
+      "descripcion": "Spare 53mm TT(iii) Printhead Motor w/Sensor",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm TT(iii) Printhead Motor w/Sensor",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm TT(iii) Printhead Motor w/Sensor",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -1755,15 +2699,31 @@
      "anchos_mm": [
       53
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 6530 53mm Printer PCBA (Main Printer PCB)",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "42",
+     "anchos_mm": [
+      53
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -1772,6 +2732,33 @@
      "20_equipos": 2,
      "40_equipos": 4
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "42",
+      "pn": "407911",
+      "descripcion": "Spare 6530 53mm Printer PCBA (Main Printer PCB)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 6530 53mm Printer PCBA (Main Printer PCB)",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 6530 53mm Printer PCBA (Main Printer PCB)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -1830,6 +2817,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "39",
+      "pn": "407912",
+      "descripcion": "Spare 6330 Printer PCBA (Main Printer PCB)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 6330 Printer PCBA (Main Printer PCB)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 6330 Printer PCBA (Main Printer PCB)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -1852,15 +2866,28 @@
       53,
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 6530 Memory Card (Micro SD Card)",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "44"
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -1869,6 +2896,33 @@
      "20_equipos": 3,
      "40_equipos": 4
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "44",
+      "pn": "407913",
+      "descripcion": "Spare 6530 Memory Card (Micro SD Card)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 6530 Memory Card (Micro SD Card)",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 6530 Memory Card (Micro SD Card)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -1927,6 +2981,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "40",
+      "pn": "407914",
+      "descripcion": "Spare 6330 Memory Card (Micro SD Card)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 6330 Memory Card (Micro SD Card)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 6330 Memory Card (Micro SD Card)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -2008,6 +3089,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "42",
+      "pn": "407915",
+      "descripcion": "Spare 53mm_TT(iii) Printhead PCB - RH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "46",
+      "pn": "407915",
+      "descripcion": "Spare 53mm_TT(iii) Printhead PCB - RH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm_TT(iii) Printhead PCB - RH",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm_TT(iii) Printhead PCB - RH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -2089,6 +3207,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "43",
+      "pn": "407916",
+      "descripcion": "Spare 53mm_TT(iii) Printhead PCB - LH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "47",
+      "pn": "407916",
+      "descripcion": "Spare 53mm_TT(iii) Printhead PCB - LH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm_TT(iii) Printhead PCB - LH",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm_TT(iii) Printhead PCB - LH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -2174,6 +3329,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "46",
+      "pn": "407917",
+      "descripcion": "Spare 53mm _TT(iii) Ribbon Detector PCB",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "50",
+      "pn": "407917",
+      "descripcion": "Spare TT(iii) Ribbon Detector PCB",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm _TT(iii) Ribbon Detector PCB",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm _TT(iii) Ribbon Detector PCB",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -2260,6 +3452,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "96",
+      "pn": "407918",
+      "descripcion": "Spare TT(iii) HMI PCB",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "113",
+      "pn": "407918",
+      "descripcion": "Spare TT(iii) HMI PCB",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare TT(iii) HMI PCB",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare TT(iii) HMI PCB",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -2346,6 +3575,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "97",
+      "pn": "407919",
+      "descripcion": "Spare TT(iii) PSU PCB (inlcudes usb riser board/pcb)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "114",
+      "pn": "407919",
+      "descripcion": "Spare TT(iii) PSU PCB (inlcudes usb riser board/pcb)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare TT(iii) PSU PCB (inlcudes usb riser board/pcb)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare TT(iii) PSU PCB (inlcudes usb riser board/pcb)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -2432,6 +3698,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "98",
+      "pn": "407920",
+      "descripcion": "Spare TT(iii) Power Supply Switch (inlet, fuse holder, and switch)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "115",
+      "pn": "407920",
+      "descripcion": "Spare TT(iii) Power Supply Switch (inlet, fuse holder, and switch)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare TT(iii) Power Supply Switch (inlet, fuse holder, and switch)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare TT(iii) Power Supply Switch (inlet, fuse holder, and switch)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -2518,6 +3821,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "99",
+      "pn": "407921",
+      "descripcion": "Spare TT(iii) Power Supply",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "116",
+      "pn": "407921",
+      "descripcion": "Spare 53mm_ TT(iii) Power Supply",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare TT(iii) Power Supply",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare TT(iii) Power Supply",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -2603,6 +3943,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "47",
+      "pn": "407922",
+      "descripcion": "Spare 53mm_TT(iii) Peel Arm Assembly - RH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "51",
+      "pn": "407922",
+      "descripcion": "Spare 53mm_TT(iii) Peel Arm Assembly - RH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm_TT(iii) Peel Arm Assembly - RH",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm_TT(iii) Peel Arm Assembly - RH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -2688,6 +4065,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "48",
+      "pn": "407923",
+      "descripcion": "Spare 53mm_TT(iii) Peel Arm Assembly - LH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "52",
+      "pn": "407923",
+      "descripcion": "Spare 53mm_TT(iii) Peel Arm Assembly - LH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm_TT(iii) Peel Arm Assembly - LH",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm_TT(iii) Peel Arm Assembly - LH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -2773,6 +4187,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "49",
+      "pn": "407924",
+      "descripcion": "Spare 53mm_TT(iii) Linear Slide",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "55",
+      "pn": "407924",
+      "descripcion": "Spare 53mm_TT(iii) Linear Slide",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm_TT(iii) Linear Slide",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm_TT(iii) Linear Slide",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -2854,6 +4305,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "50",
+      "pn": "407925",
+      "descripcion": "Spare 53mm_TT(iii)  Printhead Pivot Assy - RH (only way to get magnets) (includes both belt clamps)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "57",
+      "pn": "407925",
+      "descripcion": "Spare 53mm_TT(iii)  Printhead Pivot Assy - RH (only way to get magnets) (inludes both belt clamps)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm_TT(iii)  Printhead Pivot Assy - RH (only way to get magnets) (includes both belt clamps)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm_TT(iii)  Printhead Pivot Assy - RH (only way to get magnets) (includes both belt clamps)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -2935,6 +4423,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "51",
+      "pn": "407926",
+      "descripcion": "Spare 53mm TT(iii) Printhead Pivot Assy - LH (only way to get magnets) (includes both belt clamps)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "58",
+      "pn": "407926",
+      "descripcion": "Spare 53mm TT(iii) Printhead Pivot Assy - LH (only way to get magnets) (includes both belt clamps)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm TT(iii) Printhead Pivot Assy - LH (only way to get magnets) (includes both belt clamps)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm TT(iii) Printhead Pivot Assy - LH (only way to get magnets) (includes both belt clamps)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -2964,6 +4489,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "54",
+      "pn": "407927",
+      "descripcion": "Spare 53mm TT(iii) Rear Cover",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "61",
+      "pn": "407927",
+      "descripcion": "Spare 53mm TT(iii) Rear Cover",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm TT(iii) Rear Cover",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm TT(iii) Rear Cover",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -2993,6 +4555,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "55",
+      "pn": "407928",
+      "descripcion": "Spare 53mm TT(iii) Side Covers",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "62",
+      "pn": "407928",
+      "descripcion": "Spare 53mm TT(iii) Side Covers",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm TT(iii) Side Covers",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm TT(iii) Side Covers",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3022,6 +4621,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "56",
+      "pn": "407929",
+      "descripcion": "53mm TT(iii) RH - LH Conversion Kit",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "65",
+      "pn": "407929",
+      "descripcion": "53mm TT(iii) RH - LH Conversion Kit",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "53mm TT(iii) RH - LH Conversion Kit",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "53mm TT(iii) RH - LH Conversion Kit",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3051,6 +4687,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "57",
+      "pn": "407930",
+      "descripcion": "53mm TT(iii) LH - RH Conversion Kit",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "66",
+      "pn": "407930",
+      "descripcion": "53mm TT(iii) LH - RH Conversion Kit",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "53mm TT(iii) LH - RH Conversion Kit",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "53mm TT(iii) LH - RH Conversion Kit",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3136,6 +4809,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "60",
+      "pn": "407931",
+      "descripcion": "Spare 53mm TT(iii) Belt (Pair)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "69",
+      "pn": "407931",
+      "descripcion": "Spare 53mm TT(iii) Belt (Pair)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm TT(iii) Belt (Pair)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm TT(iii) Belt (Pair)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3221,6 +4931,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "61",
+      "pn": "407932",
+      "descripcion": "Spare 53mm TT(iii) Idler Pulley Assy",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "71",
+      "pn": "407932",
+      "descripcion": "Spare 53mm TT(iii) Idler Pulley Assy",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm TT(iii) Idler Pulley Assy",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm TT(iii) Idler Pulley Assy",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3302,6 +5049,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "62",
+      "pn": "407933",
+      "descripcion": "Spare 53mm TT(iii) Printhead",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "73",
+      "pn": "407933",
+      "descripcion": "Spare 53mm TT(iii) Printhead",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm TT(iii) Printhead",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm TT(iii) Printhead",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3383,6 +5167,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "64",
+      "pn": "407934",
+      "descripcion": "Spare 53mm TT(iii) Printhead Mount",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "75",
+      "pn": "407934",
+      "descripcion": "Spare 53mm TT(iii) Printhead Mount",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm TT(iii) Printhead Mount",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm TT(iii) Printhead Mount",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3468,6 +5289,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "66",
+      "pn": "407935",
+      "descripcion": "Spare 53mm iAssure Emitter - RH (Lightbox)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "77",
+      "pn": "407935",
+      "descripcion": "Spare 53mm iAssure Emitter - RH (Lightbox)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm iAssure Emitter - RH (Lightbox)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm iAssure Emitter - RH (Lightbox)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3553,6 +5411,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "67",
+      "pn": "407936",
+      "descripcion": "Spare 53mm iAssure Emitter - LH (Lightbox)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "78",
+      "pn": "407936",
+      "descripcion": "Spare 53mm iAssure Emitter - LH (Lightbox)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm iAssure Emitter - LH (Lightbox)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm iAssure Emitter - LH (Lightbox)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3639,6 +5534,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "68",
+      "pn": "407937",
+      "descripcion": "Spare iAssure Lens",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "79",
+      "pn": "407937",
+      "descripcion": "Spare iAssure Lens",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare iAssure Lens",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare iAssure Lens",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3669,6 +5601,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "100",
+      "pn": "407940",
+      "descripcion": "Spare VJ 6330 HMI Assembly (OBSOLETO)",
+      "orderable": "OBSOLETE",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare VJ 6330 HMI Assembly (OBSOLETO)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare VJ 6330 HMI Assembly (OBSOLETO)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3755,6 +5714,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "102",
+      "pn": "407941",
+      "descripcion": "Spare TT(iii) LCD w/Touch",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "120",
+      "pn": "407941",
+      "descripcion": "Spare TT(iii) LCD w/Touch",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare TT(iii) LCD w/Touch",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare TT(iii) LCD w/Touch",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3785,6 +5781,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "103",
+      "pn": "407942",
+      "descripcion": "Spare TT(iii) HMI Wall Mount Assy (For HMI Mounting Only)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "121",
+      "pn": "407942",
+      "descripcion": "Spare TT(iii) HMI Wall Mount Assy (For HMI Mounting Only)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare TT(iii) HMI Wall Mount Assy (For HMI Mounting Only)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare TT(iii) HMI Wall Mount Assy (For HMI Mounting Only)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3815,6 +5848,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "104",
+      "pn": "407943",
+      "descripcion": "Spare VJ 6530/6330 PSU Assembly (PSU Box That Interconnects With HMI)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "122",
+      "pn": "407943",
+      "descripcion": "Spare VJ 6530/6330 PSU Assembly (PSU Box That Interconnects With HMI)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare VJ 6530/6330 PSU Assembly (PSU Box That Interconnects With HMI)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare VJ 6530/6330 PSU Assembly (PSU Box That Interconnects With HMI)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3845,6 +5915,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "105",
+      "pn": "407944",
+      "descripcion": "Spare PSU DIN Rail Mount Assy (This is the din rail assy on the PSU)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "124",
+      "pn": "407944",
+      "descripcion": "Spare PSU DIN Rail Mount Assy (This is the din rail assy on the PSU)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare PSU DIN Rail Mount Assy (This is the din rail assy on the PSU)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare PSU DIN Rail Mount Assy (This is the din rail assy on the PSU)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3875,6 +5982,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "106",
+      "pn": "407945",
+      "descripcion": "Spare PSU Adjustable Mount Assy (For Mounting Entire 'Controller')",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "125",
+      "pn": "407945",
+      "descripcion": "Spare PSU Adjustable Mount Assy (For Mounting Entire 'Controller')",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare PSU Adjustable Mount Assy (For Mounting Entire 'Controller')",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare PSU Adjustable Mount Assy (For Mounting Entire 'Controller')",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3905,6 +6049,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "109",
+      "pn": "407946",
+      "descripcion": "Spare TT(iii) PSU Cable Blanking Assy",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "128",
+      "pn": "407946",
+      "descripcion": "Spare TT(iii) PSU Cable Blanking Assy",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare TT(iii) PSU Cable Blanking Assy",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare TT(iii) PSU Cable Blanking Assy",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -3925,15 +6106,31 @@
      "anchos_mm": [
       53
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare VJ6530 53mm Cassette",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "90",
+     "anchos_mm": [
+      53
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -3942,6 +6139,33 @@
      "20_equipos": 1,
      "40_equipos": 2
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "90",
+      "pn": "407947",
+      "descripcion": "Spare VJ6530 53mm Cassette",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare VJ6530 53mm Cassette",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare VJ6530 53mm Cassette",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -3999,6 +6223,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "79",
+      "pn": "407948",
+      "descripcion": "Spare VJ6330 53mm Cassette",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare VJ6330 53mm Cassette",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare VJ6330 53mm Cassette",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4029,6 +6280,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "80",
+      "pn": "407949",
+      "descripcion": "Spare TT(iii) Cassette Shock Cap (10 off)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "92",
+      "pn": "407949",
+      "descripcion": "Spare TT(iii) Cassette Shock Cap (10 off)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare TT(iii) Cassette Shock Cap (10 off)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare TT(iii) Cassette Shock Cap (10 off)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4058,6 +6346,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "81",
+      "pn": "407950",
+      "descripcion": "TT(iii) 53mm Mandrel Refurb Kit",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "93",
+      "pn": "407950",
+      "descripcion": "TT(iii) 53mm Mandrel Refurb Kit",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "TT(iii) 53mm Mandrel Refurb Kit",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "TT(iii) 53mm Mandrel Refurb Kit",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4143,6 +6468,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "82",
+      "pn": "407951",
+      "descripcion": "Spare 53mm TT(iii) Mandrel Body Assembly",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "95",
+      "pn": "407951",
+      "descripcion": "Spare 53mm TT(iii) Mandrel Body Assembly",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm TT(iii) Mandrel Body Assembly",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm TT(iii) Mandrel Body Assembly",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4229,6 +6591,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "83",
+      "pn": "407952",
+      "descripcion": "Spare TTO Leaf Springs (Pk6)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "97",
+      "pn": "407952",
+      "descripcion": "Spare TTO Leaf Springs (Pk6)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare TTO Leaf Springs (Pk6)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare TTO Leaf Springs (Pk6)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4314,6 +6713,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "84",
+      "pn": "407953",
+      "descripcion": "Spare 53mm TT(iii) Cassette Middle Guide Pin",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "98",
+      "pn": "407953",
+      "descripcion": "Spare 53mm TT(iii) Cassette Middle Guide Pin",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 53mm TT(iii) Cassette Middle Guide Pin",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 53mm TT(iii) Cassette Middle Guide Pin",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4344,6 +6780,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "132",
+      "pn": "407954",
+      "descripcion": "TT(iii) Belt Field Tensioning Kit",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "151",
+      "pn": "407954",
+      "descripcion": "TT(iii) Belt Field Tensioning Kit",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "TT(iii) Belt Field Tensioning Kit",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "TT(iii) Belt Field Tensioning Kit",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4374,6 +6847,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "133",
+      "pn": "407955",
+      "descripcion": "M6 Heli Coil Thread Repair Kit (When mounting plate is stripped)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "152",
+      "pn": "407955",
+      "descripcion": "M6 Heli Coil Thread Repair Kit (When mounting plate is stripped)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "M6 Heli Coil Thread Repair Kit (When mounting plate is stripped)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "M6 Heli Coil Thread Repair Kit (When mounting plate is stripped)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4404,6 +6914,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "114",
+      "pn": "407956",
+      "descripcion": "TT(iii) Encoder Kit (3600 ppr Encoder Kit Including Encoder Cable)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "133",
+      "pn": "407956",
+      "descripcion": "TT(iii) Encoder Kit (3600 ppr Encoder Kit Including Encoder Cable)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "TT(iii) Encoder Kit (3600 ppr Encoder Kit Including Encoder Cable)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "TT(iii) Encoder Kit (3600 ppr Encoder Kit Including Encoder Cable)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4434,6 +6981,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "115",
+      "pn": "407957",
+      "descripcion": "Spare TT(iii) Encoder Wheel Pk. 5",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "134",
+      "pn": "407957",
+      "descripcion": "Spare TT(iii) Encoder Wheel Pk. 5",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare TT(iii) Encoder Wheel Pk. 5",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare TT(iii) Encoder Wheel Pk. 5",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4464,6 +7048,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "116",
+      "pn": "407958",
+      "descripcion": "Spare TT(iii) Encoder Assy",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "135",
+      "pn": "407958",
+      "descripcion": "Spare TT(iii) Encoder Assy",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare TT(iii) Encoder Assy",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare TT(iii) Encoder Assy",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4493,6 +7114,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "69",
+      "pn": "407972",
+      "descripcion": "Spare 6330 53mm Printer Only - RH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 6330 53mm Printer Only - RH",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 6330 53mm Printer Only - RH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4522,6 +7170,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "70",
+      "pn": "407973",
+      "descripcion": "Spare 6330 53mm Printer Only - LH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 6330 53mm Printer Only - LH",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 6330 53mm Printer Only - LH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4552,6 +7227,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "28",
+      "pn": "408117",
+      "descripcion": "VJ DATAFLEX 6330 FOLLOWER PRINTER - RH 53MM",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "VJ DATAFLEX 6330 FOLLOWER PRINTER - RH 53MM",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "VJ DATAFLEX 6330 FOLLOWER PRINTER - RH 53MM",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4582,6 +7284,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "29",
+      "pn": "408118",
+      "descripcion": "VJ DATAFLEX 6330 FOLLOWER PRINTER - LH 53MM",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "VJ DATAFLEX 6330 FOLLOWER PRINTER - LH 53MM",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "VJ DATAFLEX 6330 FOLLOWER PRINTER - LH 53MM",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4612,6 +7341,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "143",
+      "pn": "408121",
+      "descripcion": "TT(iii) Sales Demo Retro Fit Kit (For Existing Demo Kits)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "162",
+      "pn": "408121",
+      "descripcion": "TT(iii) Sales Demo Retro Fit Kit (For Existing Demo Kits)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "TT(iii) Sales Demo Retro Fit Kit (For Existing Demo Kits)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "TT(iii) Sales Demo Retro Fit Kit (For Existing Demo Kits)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4642,6 +7408,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "144",
+      "pn": "408123",
+      "descripcion": "TT(iii) Sales Demo Bracket",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "163",
+      "pn": "408123",
+      "descripcion": "TT(iii) Sales Demo Bracket",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "TT(iii) Sales Demo Bracket",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "TT(iii) Sales Demo Bracket",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4672,6 +7475,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "145",
+      "pn": "408124",
+      "descripcion": "TT(iii) 0.5m Interconnecting Cable Assembly",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "164",
+      "pn": "408124",
+      "descripcion": "TT(iii) 0.5m Interconnecting Cable Assembly",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "TT(iii) 0.5m Interconnecting Cable Assembly",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "TT(iii) 0.5m Interconnecting Cable Assembly",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4702,6 +7542,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "146",
+      "pn": "408125",
+      "descripcion": "VJ6330/6530 Flight Case Demo",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "165",
+      "pn": "408125",
+      "descripcion": "VJ6330/6530 Flight Case Demo",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "VJ6330/6530 Flight Case Demo",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "VJ6330/6530 Flight Case Demo",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4722,15 +7599,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii) Printhead",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "74",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -4739,6 +7632,33 @@
      "20_equipos": 4,
      "40_equipos": 8
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "74",
+      "pn": "408554",
+      "descripcion": "Spare 107mm_TT(iii) Printhead",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii) Printhead",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii) Printhead",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -4769,6 +7689,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "6",
+      "pn": "408594",
+      "descripcion": "VJ6330 PRINTER - RH 32MM (Complete System)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "VJ6330 PRINTER - RH 32MM (Complete System)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "VJ6330 PRINTER - RH 32MM (Complete System)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4799,6 +7746,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "7",
+      "pn": "408595",
+      "descripcion": "VJ6330 PRINTER - LH 32MM (Complete System)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "VJ6330 PRINTER - LH 32MM (Complete System)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "VJ6330 PRINTER - LH 32MM (Complete System)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4829,6 +7803,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "30",
+      "pn": "408596",
+      "descripcion": "VJ DATAFLEX 6330 FOLLOWER PRINTER - RH 32MM",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "VJ DATAFLEX 6330 FOLLOWER PRINTER - RH 32MM",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "VJ DATAFLEX 6330 FOLLOWER PRINTER - RH 32MM",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4859,6 +7860,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "31",
+      "pn": "408597",
+      "descripcion": "VJ DATAFLEX 6330 FOLLOWER PRINTER - LH 32MM",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "VJ DATAFLEX 6330 FOLLOWER PRINTER - LH 32MM",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "VJ DATAFLEX 6330 FOLLOWER PRINTER - LH 32MM",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4914,6 +7942,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "44",
+      "pn": "408649",
+      "descripcion": "Spare 32mm (TT3) Printhead PCB - RH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 32mm (TT3) Printhead PCB - RH",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 32mm (TT3) Printhead PCB - RH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -4969,6 +8024,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "45",
+      "pn": "408650",
+      "descripcion": "Spare 32mm (TT3) Printhead PCB - LH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 32mm (TT3) Printhead PCB - LH",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 32mm (TT3) Printhead PCB - LH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -5024,6 +8106,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "52",
+      "pn": "408651",
+      "descripcion": "Spare 32mm (TT3)  Printhead Pivot Assy - RH",
+      "orderable": "",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 32mm (TT3)  Printhead Pivot Assy - RH",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 32mm (TT3)  Printhead Pivot Assy - RH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -5079,6 +8188,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "53",
+      "pn": "408652",
+      "descripcion": "Spare 32mm (TT3) Printhead Pivot Assy - LH",
+      "orderable": "",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 32mm (TT3) Printhead Pivot Assy - LH",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 32mm (TT3) Printhead Pivot Assy - LH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -5108,6 +8244,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "58",
+      "pn": "408653",
+      "descripcion": "32mm TT3 RH - LH Conversion Kit",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "32mm TT3 RH - LH Conversion Kit",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "32mm TT3 RH - LH Conversion Kit",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -5137,6 +8300,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "59",
+      "pn": "408654",
+      "descripcion": "32mm TT3 LH - RH Conversion Kit",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "32mm TT3 LH - RH Conversion Kit",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "32mm TT3 LH - RH Conversion Kit",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -5166,6 +8356,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "71",
+      "pn": "408655",
+      "descripcion": "Spare 6330 32mm Printer Only - RH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 6330 32mm Printer Only - RH",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 6330 32mm Printer Only - RH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -5195,6 +8412,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "72",
+      "pn": "408656",
+      "descripcion": "Spare 6330 32mm Printer Only - LH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 6330 32mm Printer Only - LH",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 6330 32mm Printer Only - LH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -5250,6 +8494,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "63",
+      "pn": "408657",
+      "descripcion": "Spare 32mm (TT3) Printhead",
+      "orderable": "",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 32mm (TT3) Printhead",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 32mm (TT3) Printhead",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -5305,6 +8576,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "65",
+      "pn": "408658",
+      "descripcion": "Spare 32mm (TT3) Printhead Mount",
+      "orderable": "",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 32mm (TT3) Printhead Mount",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare 32mm (TT3) Printhead Mount",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -5325,15 +8623,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 6530 107mm Printer PCBA (Main Printer PCB)",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "43",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5342,6 +8656,33 @@
      "20_equipos": 2,
      "40_equipos": 4
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "43",
+      "pn": "408659",
+      "descripcion": "Spare 6530 107mm Printer PCBA (Main Printer PCB)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 6530 107mm Printer PCBA (Main Printer PCB)",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 6530 107mm Printer PCBA (Main Printer PCB)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5362,15 +8703,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii) Printhead PCB - RH",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "48",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5379,6 +8736,33 @@
      "20_equipos": 2,
      "40_equipos": 2
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "48",
+      "pn": "408660",
+      "descripcion": "Spare 107mm_TT(iii) Printhead PCB - RH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii) Printhead PCB - RH",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii) Printhead PCB - RH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5399,15 +8783,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii) Printhead PCB - LH",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "49",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5416,6 +8816,33 @@
      "20_equipos": 2,
      "40_equipos": 2
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "49",
+      "pn": "408661",
+      "descripcion": "Spare 107mm_TT(iii) Printhead PCB - LH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii) Printhead PCB - LH",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii) Printhead PCB - LH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5436,15 +8863,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii) Power Supply",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "117",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5453,6 +8896,33 @@
      "20_equipos": 1,
      "40_equipos": 2
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "117",
+      "pn": "408662",
+      "descripcion": "Spare 107mm_TT(iii) Power Supply",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii) Power Supply",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii) Power Supply",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5473,15 +8943,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii) Peel Arm Assembly - RH",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "53",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5490,6 +8976,33 @@
      "20_equipos": 1,
      "40_equipos": 2
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "53",
+      "pn": "408663",
+      "descripcion": "Spare 107mm_TT(iii) Peel Arm Assembly - RH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii) Peel Arm Assembly - RH",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii) Peel Arm Assembly - RH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5510,15 +9023,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii) Peel Arm Assembly - LH",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "54",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5527,6 +9056,33 @@
      "20_equipos": 1,
      "40_equipos": 2
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "54",
+      "pn": "408664",
+      "descripcion": "Spare 107mm_TT(iii) Peel Arm Assembly - LH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii) Peel Arm Assembly - LH",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii) Peel Arm Assembly - LH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5547,15 +9103,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii) Linear Slide",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "56",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5564,6 +9136,33 @@
      "20_equipos": 1,
      "40_equipos": 1
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "56",
+      "pn": "408665",
+      "descripcion": "Spare 107mm_TT(iii) Linear Slide",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii) Linear Slide",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii) Linear Slide",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5584,15 +9183,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii)  Printhead Pivot Assy - RH",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "59",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5601,6 +9216,33 @@
      "20_equipos": 1,
      "40_equipos": 2
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "59",
+      "pn": "408666",
+      "descripcion": "Spare 107mm_TT(iii)  Printhead Pivot Assy - RH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii)  Printhead Pivot Assy - RH",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii)  Printhead Pivot Assy - RH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5621,15 +9263,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii) Printhead Pivot Assy - LH",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "60",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5638,6 +9296,33 @@
      "20_equipos": 1,
      "40_equipos": 2
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "60",
+      "pn": "408667",
+      "descripcion": "Spare 107mm_TT(iii) Printhead Pivot Assy - LH",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii) Printhead Pivot Assy - LH",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii) Printhead Pivot Assy - LH",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5658,15 +9343,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii) Ribbon Motor",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "39",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5675,6 +9376,33 @@
      "20_equipos": 1,
      "40_equipos": 2
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "39",
+      "pn": "408674",
+      "descripcion": "Spare 107mm_TT(iii) Ribbon Motor",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii) Ribbon Motor",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii) Ribbon Motor",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5695,15 +9423,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii) Printhead Motor (smaller motor - same encoder)",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "40",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5712,6 +9456,33 @@
      "20_equipos": 2,
      "40_equipos": 4
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "40",
+      "pn": "408675",
+      "descripcion": "Spare 107mm_TT(iii) Printhead Motor (smaller motor - same encoder)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii) Printhead Motor (smaller motor - same encoder)",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii) Printhead Motor (smaller motor - same encoder)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5732,15 +9503,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii) Carriage Motor (bigger motor - same encoder)",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "41",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5749,6 +9536,33 @@
      "20_equipos": 2,
      "40_equipos": 3
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "41",
+      "pn": "408676",
+      "descripcion": "Spare 107mm_TT(iii) Carriage Motor (bigger motor - same encoder)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii) Carriage Motor (bigger motor - same encoder)",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii) Carriage Motor (bigger motor - same encoder)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5769,15 +9583,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii) Belt (Pair)",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "70",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5786,6 +9616,33 @@
      "20_equipos": 2,
      "40_equipos": 4
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "70",
+      "pn": "408677",
+      "descripcion": "Spare 107mm_TT(iii) Belt (Pair)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii) Belt (Pair)",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii) Belt (Pair)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5806,15 +9663,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii) Idler Pulley Assy",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "72",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5823,6 +9696,33 @@
      "20_equipos": 1,
      "40_equipos": 2
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "72",
+      "pn": "408678",
+      "descripcion": "Spare 107mm_TT(iii) Idler Pulley Assy",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii) Idler Pulley Assy",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii) Idler Pulley Assy",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5843,15 +9743,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii) Printhead Mount",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "76",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5860,6 +9776,33 @@
      "20_equipos": 1,
      "40_equipos": 1
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "76",
+      "pn": "408680",
+      "descripcion": "Spare 107mm_TT(iii) Printhead Mount",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii) Printhead Mount",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii) Printhead Mount",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5880,15 +9823,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare VJ6530 107mm_TT(iii) Cassette",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "91",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5897,6 +9856,33 @@
      "20_equipos": 1,
      "40_equipos": 2
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "91",
+      "pn": "408682",
+      "descripcion": "Spare VJ6530 107mm_TT(iii) Cassette",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare VJ6530 107mm_TT(iii) Cassette",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare VJ6530 107mm_TT(iii) Cassette",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5917,15 +9903,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii) Mandrel Body Assembly",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "96",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5934,6 +9936,33 @@
      "20_equipos": 2,
      "40_equipos": 4
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "96",
+      "pn": "408684",
+      "descripcion": "Spare 107mm_TT(iii) Mandrel Body Assembly",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii) Mandrel Body Assembly",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii) Mandrel Body Assembly",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5954,15 +9983,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "107mm_TT(iii) Cassette Shaft (pair)",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "103",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -5971,6 +10016,33 @@
      "20_equipos": 1,
      "40_equipos": 2
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "103",
+      "pn": "408685",
+      "descripcion": "107mm_TT(iii) Cassette Shaft (pair)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "107mm_TT(iii) Cassette Shaft (pair)",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "107mm_TT(iii) Cassette Shaft (pair)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -5991,15 +10063,31 @@
      "anchos_mm": [
       107
      ]
+    },
+    {
+     "idioma": "ingles",
+     "fuente": "official-parts-list-6530",
+     "texto": "Spare 107mm_TT(iii) Cassette Middle Guide Pin",
+     "origen": "official-parts-list",
+     "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+     "hoja": "6530 Parts",
+     "fila": "99",
+     "anchos_mm": [
+      107
+     ]
     }
    ],
    "modelos_por_fuente": {
     "basicas-6530": [
      "6530"
+    ],
+    "official-parts-list-6530": [
+     "6530"
     ]
    },
    "fuentes": [
-    "basicas-6530"
+    "basicas-6530",
+    "official-parts-list-6530"
    ],
    "spares_por_fuente": {
     "basicas-6530": {
@@ -6008,6 +10096,33 @@
      "20_equipos": 1,
      "40_equipos": 1
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "99",
+      "pn": "408687",
+      "descripcion": "Spare 107mm_TT(iii) Cassette Middle Guide Pin",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare 107mm_TT(iii) Cassette Middle Guide Pin",
+    "agrego_descripcion_inglesa": true,
+    "descripcion_oficial_usada": "Spare 107mm_TT(iii) Cassette Middle Guide Pin",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-confirmado-descripcion-oficial-agregada",
+    "motivo": null
    }
   },
   {
@@ -6038,6 +10153,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "134",
+      "pn": "408688",
+      "descripcion": "TTO Alignment Tool Assembly",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "153",
+      "pn": "408688",
+      "descripcion": "TTO Alignment Tool Assembly",
+      "orderable": "",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "TTO Alignment Tool Assembly",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "TTO Alignment Tool Assembly",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -6124,6 +10276,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "41",
+      "pn": "408942",
+      "descripcion": "Spare Internal I/O Cable Assy (Cable that plugs into main PCB and low profile assy)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "45",
+      "pn": "408942",
+      "descripcion": "Spare Internal I/O Cable Assy (Cable that plugs into main PCB and low profile assy)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare Internal I/O Cable Assy (Cable that plugs into main PCB and low profile assy)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare Internal I/O Cable Assy (Cable that plugs into main PCB and low profile assy)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -6154,6 +10343,33 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "101",
+      "pn": "430656",
+      "descripcion": "Spare VJ 6330 HMI Assembly V2 (NEW)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare VJ 6330 HMI Assembly V2 (NEW)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare VJ 6330 HMI Assembly V2 (NEW)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -6184,6 +10400,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "138",
+      "pn": "463014",
+      "descripcion": "USB, OPERATOR MANUAL, VJ6330/VJ6530",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "157",
+      "pn": "463014",
+      "descripcion": "USB, OPERATOR MANUAL, VJ6330/VJ6530",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "USB, OPERATOR MANUAL, VJ6330/VJ6530",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "USB, OPERATOR MANUAL, VJ6330/VJ6530",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -6214,6 +10467,43 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "139",
+      "pn": "463043",
+      "descripcion": "USB, SERVICE MANUAL, VJ6330/VJ6530",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "158",
+      "pn": "463043",
+      "descripcion": "USB, SERVICE MANUAL, VJ6330/VJ6530",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "USB, SERVICE MANUAL, VJ6330/VJ6530",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "USB, SERVICE MANUAL, VJ6330/VJ6530",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   },
   {
@@ -6244,7 +10534,78 @@
      "20_equipos": null,
      "40_equipos": null
     }
+   },
+   "estado": "verificado",
+   "cotejo": {
+    "metodo": "P/N + descripcion inglesa contra Official Parts List 6330/6530",
+    "fecha": "2026-11-11",
+    "umbral_similitud": 0.9,
+    "estado_antes": "borrador",
+    "oficial_encontrado": true,
+    "registros_oficiales": [
+     {
+      "modelo": "6330",
+      "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+      "hoja": "6330 Parts",
+      "fila": "127",
+      "pn": "704432",
+      "descripcion": "Spare Mains Lead - US (main power cable)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6330"
+     },
+     {
+      "modelo": "6530",
+      "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+      "hoja": "6530 Parts",
+      "fila": "146",
+      "pn": "704432",
+      "descripcion": "Spare Mains Lead - US (main power cable)",
+      "orderable": "YES",
+      "fuente": "official-parts-list-6530"
+     }
+    ],
+    "descripcion_inglesa_antes": "Spare Mains Lead - US (main power cable)",
+    "agrego_descripcion_inglesa": false,
+    "descripcion_oficial_usada": "Spare Mains Lead - US (main power cable)",
+    "ratio_similitud": 1.0,
+    "coincide_descripcion_inglesa": true,
+    "accion": "pn-y-descripcion-verificados",
+    "motivo": null
    }
   }
- ]
+ ],
+ "resumen": {
+  "partes": 120,
+  "verificadas": 120,
+  "borrador": 0,
+  "con_descripcion_inglesa": 120,
+  "ingles_agregado_desde_oficial": 23,
+  "coincidencias_exactas": 97,
+  "sin_oficial": 0,
+  "revisar_descripcion": 0,
+  "registros_oficiales": 238,
+  "pn_oficiales": 153
+ },
+ "cotejo_fuente": {
+  "snapshot": "datos/extraccion/tto_oficial_6330_6530.json",
+  "archivos": [
+   {
+    "modelo": "6330",
+    "archivo": "6330 32_53 Parts List_2021-07.xlsx",
+    "hoja": "6330 Parts",
+    "fuente": "official-parts-list-6330",
+    "filas_leidas": 146,
+    "registros": 110
+   },
+   {
+    "modelo": "6530",
+    "archivo": "6530 53_107 Parts List_2026-03.xlsx",
+    "hoja": "6530 Parts",
+    "fuente": "official-parts-list-6530",
+    "filas_leidas": 173,
+    "registros": 128
+   }
+  ],
+  "fecha": "2026-11-11"
+ }
 }

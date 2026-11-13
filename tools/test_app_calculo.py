@@ -85,6 +85,52 @@ def main():
         if punto != [11.2]:
             fallos.append('VJ1210/V401 @30 C: %r (se esperaba 11,2)' % punto)
 
+    # Velocidades de linea CIJ (calculadores v9.7) en el paquete de la app.
+    vel = datos.get('velocidades') or {}
+    entradas_vel = vel.get('entradas') or []
+    if len(entradas_vel) != 266:
+        fallos.append('velocidades: se esperaban 266 entradas, hay %d'
+                      % len(entradas_vel))
+    if len(vel.get('modelos') or []) != 12:
+        fallos.append('velocidades: se esperaban 12 modelos')
+    if (vel.get('meta') or {}).get('estado') != 'borrador-decodificado':
+        fallos.append('velocidades: estado general distinto de borrador-decodificado')
+    if (vel.get('meta') or {}).get('conflictos') != 0:
+        fallos.append('velocidades: hay conflictos de valores')
+    for e in entradas_vel:
+        etiqueta = '%s/%s/%s' % (e.get('m'), e.get('b'), e.get('f'))
+        if not e.get('m') or e.get('b') not in (40, 50, 60) or not e.get('f'):
+            fallos.append('%s: modelo/boquilla/fuente incompletos' % etiqueta)
+        if e.get('v') is None:
+            fallos.append('%s: sin velocidad' % etiqueta)
+        if e.get('c') is None and e.get('col') is None:
+            fallos.append('%s: sin caracteres/s ni columnas/s' % etiqueta)
+        if e.get('e') != 'borrador-decodificado':
+            fallos.append('%s: estado %r' % (etiqueta, e.get('e')))
+        if e.get('t') not in ('simple', 'experto'):
+            fallos.append('%s: tipo %r' % (etiqueta, e.get('t')))
+        if not e.get('a'):
+            fallos.append('%s: sin archivo fuente' % etiqueta)
+    duplicados = [e for e in entradas_vel if ';' in (e.get('a') or '')]
+    if len(duplicados) != 4:
+        fallos.append('velocidades: se esperaban 4 duplicados, hay %d'
+                      % len(duplicados))
+    expertos = [e for e in entradas_vel if e.get('t') == 'experto']
+    if len(expertos) != 1:
+        fallos.append('velocidades: se esperaba 1 calculador experto')
+    else:
+        e = expertos[0]
+        if (e.get('m'), e.get('b'), e.get('f')) != ('1620-50 UHS', 50, '4x5 single'):
+            fallos.append('velocidades: experto inesperado %r' % e)
+        if (e.get('v'), e.get('c'), e.get('col')) != (508, 3333, 16667):
+            fallos.append('velocidades: valores del experto distintos')
+    uhs = [e for e in entradas_vel if e.get('m') == '1880 UHS']
+    hr = [e for e in entradas_vel if e.get('m') == '1880 HR']
+    if len(uhs) != 19 or any(e.get('b') != 50 for e in uhs):
+        fallos.append('velocidades: 1880 UHS no son 19 entradas de 50 um')
+    if len(hr) != 19 or any(e.get('b') != 40 for e in hr):
+        fallos.append('velocidades: 1880 HR no son 19 entradas de 40 um')
+
     html = open(INDEX, encoding='utf-8').read()
     for aguja, mensaje in [
         ('entrada.r||', 'la calculadora aun imprime la referencia como objeto'),
@@ -92,17 +138,25 @@ def main():
     ]:
         if aguja in html:
             fallos.append(mensaje)
-    for funcion in ('function fmtNum(', 'function refTexto(', 'function refUso('):
+    for funcion in ('function fmtNum(', 'function refTexto(', 'function refUso(',
+                    'function renderVel(', 'function calcularVel('):
         if funcion not in html:
             fallos.append('falta %s en index.html' % funcion)
+    for aguja in ('id="vel_m"', 'id="vel_b"', 'id="vel_f"', 'vel_aviso_boquilla'):
+        if aguja not in html:
+            fallos.append('falta %s en index.html' % aguja)
+    if html.count('vel_t:') != 5:
+        fallos.append('vel_t no esta traducido en los 5 idiomas')
 
     if fallos:
         print('FALLOS (%d):' % len(fallos))
         for f in fallos[:40]:
             print('  -', f)
         sys.exit(1)
-    print('Calculadora OK: %d curvas, %d referencias @30 C; VJ1210/V401 = 11,2 ml/h'
-          % (len(solventes), referencias))
+    print('Calculadora OK: %d curvas, %d referencias @30 C; VJ1210/V401 = 11,2 ml/h; '
+          '%d velocidades CIJ (%d modelos)'
+          % (len(solventes), referencias, len(entradas_vel),
+             len(vel.get('modelos') or [])))
 
 
 if __name__ == '__main__':

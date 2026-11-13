@@ -3,8 +3,9 @@
 > Lista de lo **completado y entregado** en la v0.2.0. Se actualiza a medida que avanza.
 
 ## Datos para la app
-- [x] **`tools/construir_app_datos.py`** → `docs/app/datos.js` (2044,9 KB): paquete compacto
-      con estados por dato y memoria de traducción `D.tr` (3.520 entradas).
+- [x] **`tools/construir_app_datos.py`** → `docs/app/datos.js` (2.100,9 KB): paquete compacto
+      con estados por dato, memoria de traducción `D.tr` (3.506 entradas) y
+      **`D.velocidades`** (266 calculadores CIJ).
 - [x] Incluye: 802 curvas de solvente, 134 tintas (bases, color, SDS con CAS/% y
       propiedades), **2.986 partes** (120 TTO + 296 CIJ + 2.570 LÁSER), 231 códigos de error,
       64 grados + 694 ítems de ribbons, mantenimiento (48 docs / 39 tareas), 21 modelos
@@ -39,9 +40,22 @@
       `399475`, `SP234081`) sin ascender su estado; `SequenceMatcher` eliminó el
       falso positivo `202047` («Bottie» → «Bottle»).
 - [x] **PDFs escaneados TTO y láser:** TTO **7/7** (14.089 caracteres, 0 páginas
-      omitidas); láser **88 PDFs en el objetivo, 74 con texto OCR (281.579
-      caracteres), 13 sin resultado y 1 error de render** (`MedidoresPortenciaCO2.pdf`),
-      0 páginas omitidas. Texto por documento en `datos/extraccion/*_ocr.txt`.
+      omitidas). Láser: **14 casos del cierre clasificados** — **6 recuperados con
+      texto (15.915 caracteres)**, `Extraction Accesories.pdf` y `k30 wiring diagram.pdf`
+      **rotados 90°**, **7 planos/3D `sin-texto-por-diseno`** y
+      `MedidoresPortenciaCO2.pdf` con **imagen JPEG extraída** (`obj21.jpg`, 270.110
+      bytes) y lectura visual 029/581 documentada como **no firme**. Texto por
+      documento en `datos/extraccion/laser_*_ocr.txt`.
+- [x] **Velocidades CIJ (`datos/cij_velocidades.json`):** **270 calculadores leídos,
+      271 PDFs, 266 entradas, 12 modelos, 0 conflictos de valores**; 22 avisos de
+      boquilla, 31 de modelo, 3 de fuente y 1 calculador experto. Se descarta
+      `v9.7z.pdf` (tabla resumen); UHS queda en 50 µm y HR en 40 µm. Validado contra
+      los charts 1280/1580/1880 y el experto `1620-50 UHS|50|4x5_single`
+      (508 m/min, 3333 c/s, 16667 col/s). `tools/validar_velocidades_cij.py` y
+      `tools/test_velocidades_cij.py` (8 pruebas) están en el CI.
+- [x] **23 descripciones TTO oficiales traducidas** a es/en/pt/it/zh con
+      `tools/agregar_traducciones_tto_oficial.py`; cobertura final **3.506 cadenas ×
+      5 idiomas**.
 - [x] **Cotejo de P/N conocidos del OCR:** `399362` Mobile Stand Standard, `399086`
       Printhead Stand, `399474` Dry Air Kit Assembly (1550+1710), `399099` Static
       Stand Standard, `234116` Adapter Plate, `SP399089` Beacon Assembly y
@@ -56,13 +70,16 @@
 - [x] Calculadora CIJ: interpolación 10–40 °C, ml/h, h/L, h/cartucho, costo/hora;
       aviso para `sin-datos-en-documento`; formato numérico por idioma (coma decimal
       en es/pt) y referencia legible (`30 °C → 11,2 ml/h`).
+- [x] **Calculadora de velocidad de línea CIJ:** tarjeta modelo → boquilla → fuente
+      con m/min, fpm, caracteres/s o columnas/s, tipo de calculador, archivo fuente y
+      avisos de boquilla/modelo/fuente, traducida en los 5 idiomas.
 - [x] **Prueba automática de la calculadora:** `tools/test_app_calculo.py` recorre las
       802 curvas, comprueba 800 referencias @30 °C y el caso VJ1210/V401 = 11,2 ml/h;
       también detecta si la app vuelve a imprimir objetos (`[object Object]`). En el CI.
 - [x] Exámenes de 5 niveles generados de datos reales, corrección con referencia e
       historial local; el nivel 3 incluye preguntas de **parte CIJ → descripción**.
 - [x] **Offline:** `manifest.webmanifest` + `sw.js` (precache y cache-first) + icono SVG;
-      instalación como PWA desde el navegador. Caché actualizada a `fvl-v0.2.0-alpha-15`.
+      instalación como PWA desde el navegador. Caché actualizada a `fvl-v0.2.0-alpha-16`.
 
 ## Publicación
 - [x] Landing con acceso directo a la app y tarjeta en Descargas (estado v0.2.0-alpha).

@@ -22,6 +22,8 @@ funcionamiento **100% sin internet**.
    ribbons y mantenimiento, con filtros por tipo.
 3. **Calcular**: consumo de solvente CIJ por curva oficial (10–40 °C), interpolación por
    temperatura, horas por litro y por cartucho, y costo/hora con precio del solvente.
+   **Velocidad de línea CIJ** por modelo, boquilla y fuente (calculadores v9.7), con
+   m/min, fpm y caracteres/s o columnas/s, estado y avisos visibles.
 4. **Examen** por 5 niveles y N preguntas, **generadas de datos reales** (tinta→base,
    ribbon→color, código→tecnología, parte CIJ→descripción, consumo de referencia,
    CAS→componente), corrección con referencia a la fuente e historial local.
