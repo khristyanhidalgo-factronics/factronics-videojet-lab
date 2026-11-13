@@ -129,3 +129,4 @@
 - [x] **Verificación en vivo de alpha-18/build 16:** CI y Pages en success; actualización desde alpha-17 aplicada sin reinstalar; examen de velocidades con los 3 tipos, corrección, constancia, historial y consola limpia.
 - [x] **Accesibilidad y UX de controles:** etiquetas `for`, `aria-label` en campos dinámicos, `aria-pressed` en opciones, resultados `role="status"`, foco visible, objetivos táctiles de 44 px en móvil y `meta description`; Lighthouse 1.0 en accesibilidad, buenas prácticas y SEO.
 - [x] **Contraste en tema oscuro:** `--on-accent` para botones/chips y `--muted` claro ajustado; Lighthouse 1.0 en claro y oscuro (antes 0.95 en oscuro por `#ex_go` a 2.54:1).
+- [x] **Verificación en vivo de alpha-20/build 19:** CI y Pages en success; actualización desde alpha-19 aplicada; Lighthouse 1.0/1.0/1.0 en oscuro y claro y consola limpia.

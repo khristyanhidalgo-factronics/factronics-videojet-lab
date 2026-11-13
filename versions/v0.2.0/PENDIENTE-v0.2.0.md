@@ -19,6 +19,10 @@
       `fvl-v0.2.0-alpha-18`; actualización desde alpha-17 con `reg.update()` +
       recarga. Examen «Velocidades CIJ (266)» con los 3 tipos, 10 preguntas,
       corrección, constancia, historial y consola limpia.
+- [x] **Verificación en vivo de alpha-20/build 19**: CI «Validar» y Pages en
+      `success`; `version.json` construccion 19, `sw.js` alpha-20 y caché
+      `fvl-v0.2.0-alpha-20`; Lighthouse 1.0/1.0/1.0 en tema oscuro y claro,
+      sin fallos, y consola limpia.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
