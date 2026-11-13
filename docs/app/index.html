@@ -179,6 +179,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
           <select id="ex_fuente">
             <option value="gen" data-i18n="fuente_gen">Generado (5 niveles)</option>
             <option value="banco" data-i18n="fuente_banco">Banco TTO (372)</option>
+            <option value="vel" data-i18n="fuente_vel">Velocidades CIJ (266)</option>
           </select></div>
         <div id="ex_nivel_box"><label class="small" data-i18n="ex_nivel">Nivel</label><br>
           <select id="ex_nivel">
@@ -528,7 +529,12 @@ Object.assign(I18N.es, {
   vel_aviso_boquilla:'Aviso: el nombre del archivo dice otra boquilla; se conserva el valor impreso (50 µm en UHS).',
   vel_aviso_modelo:'Aviso: el nombre del archivo dice otro modelo; se conserva el modelo impreso.',
   vel_aviso_fuente:'Aviso: el nombre del archivo dice otra fuente; se conserva la fuente impresa.',
-  vel_nota:'Datos borrador-decodificado: no sustituyen el calculador oficial.'
+  vel_nota:'Datos borrador-decodificado: no sustituyen el calculador oficial.',
+  fuente_vel:'Velocidades CIJ (266)',
+  q_vel:'¿Cuál es la velocidad nominal de {m} con boquilla {b} µm y fuente {f}?',
+  q_vel_nozzle:'¿Qué boquilla usa {m} con fuente {f} para {v}?',
+  q_vel_font:'¿Qué fuente usa {m} con boquilla {b} µm para {v}?',
+  ref_vel:'cij_velocidades (calculador v9.7, borrador-decodificado)'
 });
 Object.assign(I18N.en, {
   vel_t:'CIJ line speed', vel_s:'Nominal speed by model, nozzle and font, read from the official v9.7 calculators (decoded draft).',
@@ -538,7 +544,12 @@ Object.assign(I18N.en, {
   vel_aviso_boquilla:'Notice: the file name says another nozzle; the printed value is kept (50 µm on UHS).',
   vel_aviso_modelo:'Notice: the file name says another model; the printed model is kept.',
   vel_aviso_fuente:'Notice: the file name says another font; the printed font is kept.',
-  vel_nota:'Decoded-draft data: it does not replace the official calculator.'
+  vel_nota:'Decoded-draft data: it does not replace the official calculator.',
+  fuente_vel:'CIJ speeds (266)',
+  q_vel:'What is the nominal speed of {m} with a {b} µm nozzle and {f} font?',
+  q_vel_nozzle:'Which nozzle does {m} use with {f} font at {v}?',
+  q_vel_font:'Which font does {m} use with a {b} µm nozzle at {v}?',
+  ref_vel:'cij_velocities (v9.7 calculator, decoded draft)'
 });
 Object.assign(I18N.pt, {
   vel_t:'Velocidade de linha CIJ', vel_s:'Velocidade nominal por modelo, bocal e fonte, lida dos calculadores oficiais v9.7 (rascunho decodificado).',
@@ -548,7 +559,12 @@ Object.assign(I18N.pt, {
   vel_aviso_boquilla:'Aviso: o nome do arquivo indica outro bocal; o valor impresso é mantido (50 µm em UHS).',
   vel_aviso_modelo:'Aviso: o nome do arquivo indica outro modelo; o modelo impresso é mantido.',
   vel_aviso_fuente:'Aviso: o nome do arquivo indica outra fonte; a fonte impressa é mantida.',
-  vel_nota:'Dados de rascunho decodificado: não substituem a calculadora oficial.'
+  vel_nota:'Dados de rascunho decodificado: não substituem a calculadora oficial.',
+  fuente_vel:'Velocidades CIJ (266)',
+  q_vel:'Qual é a velocidade nominal do {m} com bocal de {b} µm e fonte {f}?',
+  q_vel_nozzle:'Qual bocal o {m} usa com a fonte {f} para {v}?',
+  q_vel_font:'Qual fonte o {m} usa com bocal de {b} µm para {v}?',
+  ref_vel:'cij_velocidades (calculadora v9.7, rascunho decodificado)'
 });
 Object.assign(I18N.it, {
   vel_t:'Velocità di linea CIJ', vel_s:'Velocità nominale per modello, ugello e font, letta dai calcolatori ufficiali v9.7 (bozza decodificata).',
@@ -558,7 +574,12 @@ Object.assign(I18N.it, {
   vel_aviso_boquilla:"Avviso: il nome del file indica un altro ugello; si conserva il valore stampato (50 µm su UHS).",
   vel_aviso_modelo:'Avviso: il nome del file indica un altro modello; si conserva il modello stampato.',
   vel_aviso_fuente:'Avviso: il nome del file indica un altro font; si conserva il font stampato.',
-  vel_nota:'Dati in bozza decodificata: non sostituiscono il calcolatore ufficiale.'
+  vel_nota:'Dati in bozza decodificata: non sostituiscono il calcolatore ufficiale.',
+  fuente_vel:'Velocità CIJ (266)',
+  q_vel:'Qual è la velocità nominale di {m} con ugello da {b} µm e font {f}?',
+  q_vel_nozzle:'Quale ugello usa {m} con font {f} a {v}?',
+  q_vel_font:'Quale font usa {m} con ugello da {b} µm a {v}?',
+  ref_vel:'cij_velocidades (calcolatore v9.7, bozza decodificata)'
 });
 Object.assign(I18N.zh, {
   vel_t:'CIJ 线速度', vel_s:'按型号、喷嘴和字体读取官方 v9.7 计算器的额定速度（解码草稿）。',
@@ -568,7 +589,12 @@ Object.assign(I18N.zh, {
   vel_aviso_boquilla:'提示：文件名标注了其他喷嘴；保留印刷值（UHS 为 50 µm）。',
   vel_aviso_modelo:'提示：文件名标注了其他型号；保留印刷型号。',
   vel_aviso_fuente:'提示：文件名标注了其他字体；保留印刷字体。',
-  vel_nota:'解码草稿数据：不能替代官方计算器。'
+  vel_nota:'解码草稿数据：不能替代官方计算器。',
+  fuente_vel:'CIJ 速度（266）',
+  q_vel:'{m} 在 {b} µm 喷嘴和 {f} 字体下的额定速度是多少？',
+  q_vel_nozzle:'{m} 在 {f} 字体下达到 {v} 时使用哪种喷嘴？',
+  q_vel_font:'{m} 在 {b} µm 喷嘴下达到 {v} 时使用哪种字体？',
+  ref_vel:'cij_velocidades（v9.7 计算器，解码草稿）'
 });
 let LANG = localStorage.getItem('fvl_lang') || 'es';
 const t = (k) => (I18N[LANG] && I18N[LANG][k]) || I18N.es[k] || k;
@@ -997,10 +1023,45 @@ function generarPregunta(nivel){
   }
   return {q:'—', a:'—', ops:['—'], ref:'—'};
 }
+function generarPreguntaVel(e){
+  const modelo = e.mi || e.m;
+  const vel = fmtNum(e.v, 0) + ' m/min';
+  const tipo = Math.floor(Math.random() * 3);
+  if (tipo === 1) {
+    const correcta = e.b + ' µm';
+    const pool = [...new Set(D.velocidades.entradas.map(x => x.b + ' µm'))];
+    return {q:t('q_vel_nozzle').replace('{m}', modelo).replace('{f}', e.f).replace('{v}', vel),
+      a:correcta, ops:opciones(correcta, pool), ref:t('ref_vel')};
+  }
+  if (tipo === 2) {
+    const mismaVel = D.velocidades.entradas
+      .filter(x => x.m === e.m && x.b === e.b && x.v === e.v);
+    const pool = [...new Set(D.velocidades.entradas
+      .filter(x => x.m === e.m && x.b === e.b && x.v !== e.v).map(x => x.f))];
+    if (mismaVel.length === 1 && pool.length >= 2) {
+      return {q:t('q_vel_font').replace('{m}', modelo).replace('{b}', e.b).replace('{v}', vel),
+        a:e.f, ops:opciones(e.f, pool), ref:t('ref_vel')};
+    }
+  }
+  const pool = [...new Set(D.velocidades.entradas
+    .filter(x => x.v !== null && x.v !== undefined).map(x => fmtNum(x.v, 0) + ' m/min'))];
+  return {q:t('q_vel').replace('{m}', modelo).replace('{b}', e.b).replace('{f}', e.f),
+    a:vel, ops:opciones(vel, pool), ref:t('ref_vel')};
+}
 function iniciarExamen(){
   const fuente = $('#ex_fuente').value;
   const cant = Number($('#ex_cant').value || 10);
-  if (fuente === 'banco' && window.BANCO_TTO && BANCO_TTO.preguntas.length) {
+  if (fuente === 'vel' && D.velocidades && D.velocidades.entradas.length) {
+    const copia = D.velocidades.entradas
+      .filter(e => e.v !== null && e.v !== undefined);
+    const elegidas = [];
+    while (elegidas.length < cant && copia.length) {
+      elegidas.push(generarPreguntaVel(
+        copia.splice(Math.floor(Math.random() * copia.length), 1)[0]));
+    }
+    examen = {fuente: 'vel', nivel: t('fuente_vel'), titulo: t('fuente_vel'),
+      nota: t('vel_nota'), preguntas: elegidas, respuestas: {}, corregido: false};
+  } else if (fuente === 'banco' && window.BANCO_TTO && BANCO_TTO.preguntas.length) {
     const tipo = $('#ex_tipo').value;
     const pool = BANCO_TTO.preguntas.filter(p => tipo === 'todas' || p.t === tipo);
     const copia = [...pool];
@@ -1017,9 +1078,9 @@ function iniciarExamen(){
 }
 $('#ex_go').addEventListener('click', iniciarExamen);
 $('#ex_fuente').addEventListener('change', () => {
-  const b = $('#ex_fuente').value === 'banco';
-  $('#ex_nivel_box').classList.toggle('hidden', b);
-  $('#ex_tipo_box').classList.toggle('hidden', !b);
+  const fuente = $('#ex_fuente').value;
+  $('#ex_nivel_box').classList.toggle('hidden', fuente !== 'gen');
+  $('#ex_tipo_box').classList.toggle('hidden', fuente !== 'banco');
 });
 function renderExamen(){
   if (!examen) return;
@@ -1027,7 +1088,9 @@ function renderExamen(){
 }
 function renderExamenGen(){
   const body = $('#ex_body');
-  body.innerHTML = `<h3>${esc(t(NIVELES[examen.nivel]))}</h3>` + examen.preguntas.map((p,i) => `
+  body.innerHTML = `<h3>${esc(examen.titulo || t(NIVELES[examen.nivel]))}</h3>` +
+    (examen.nota ? `<p class="small">${esc(examen.nota)}</p>` : '') +
+    examen.preguntas.map((p,i) => `
     <div class="q" data-i="${i}">
       <div><b>${i+1}.</b> ${esc(p.q)}</div>
       ${p.ops.map(o => `<button class="opt" data-i="${i}" data-o="${esc(o)}">${esc(o)}</button>`).join('')}
@@ -1058,11 +1121,12 @@ function renderExamenGen(){
       res.innerHTML = `${ok?'✅':'❌'} ${esc(p.ref)}`;
     });
     const nota = `${bien}/${examen.preguntas.length}`;
+    const etiqueta = examen.titulo || t(NIVELES[examen.nivel]);
     body.insertAdjacentHTML('afterbegin',
       `<div class="card" style="box-shadow:none"><b>${esc(t('ex_score'))}: ${nota}</b> — ${bien} ${esc(t('respuestas'))}
        <button class="btn" id="cert_btn">${esc(t('constancia'))}</button></div>`);
-    $('#cert_btn').addEventListener('click', () => generarConstancia(t(NIVELES[examen.nivel]), bien, examen.preguntas.length));
-    guardarHistorial(examen.nivel, bien, examen.preguntas.length);
+    $('#cert_btn').addEventListener('click', () => generarConstancia(etiqueta, bien, examen.preguntas.length));
+    guardarHistorial(etiqueta, bien, examen.preguntas.length);
   });
   $('#ex_again').addEventListener('click', () => $('#ex_go').click());
 }

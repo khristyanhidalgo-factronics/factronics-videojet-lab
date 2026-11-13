@@ -125,3 +125,4 @@
       valida 372 × 5 idiomas, centinelas, alineación de opciones, campos y unidades.
 - [x] **Precache del shell verificado (7/7)** y registro del service worker con `updateViaCache:'none'` para recibir actualizaciones sin caché vieja.
 - [x] **`docs/version.json` publicado** (copia del `version.json` raíz) y validado contra la versión/build para que Pages no sirva datos viejos.
+- [x] **Examen de velocidades CIJ (266):** fuente separada con preguntas de velocidad nominal, boquilla y fuente; aviso `borrador-decodificado`, corrección, constancia e historial; auditoría de 10.640 preguntas sin ambigüedad y verificación en los 5 idiomas.

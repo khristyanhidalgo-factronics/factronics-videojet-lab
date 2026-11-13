@@ -36,6 +36,7 @@
 - [x] ~~QR offline para compartir resultados~~ → incluido en la constancia.
 - [x] ~~Página pública de notas `docs/notas.html` + CI~~ → publicada con SHA-256.
 - [ ] **Temas festivos** por país (Venezuela base) sobre el tema claro/oscuro/sistema.
+- [x] ~~Banco de examen específico de velocidades CIJ~~ → fuente «Velocidades CIJ (266)» con preguntas de velocidad, boquilla y fuente, aviso de `borrador-decodificado` y auditoría de 10.640 preguntas sin ambigüedad; verificado en navegador.
 - [ ] Más variedad de preguntas por nivel y banco separado por tecnología.
 - [x] ~~Traducir el banco TTO a IT/ZH (372 × 2 preguntas)~~ → hecho: 372 preguntas × 5 idiomas, con IDs de opciones y respuestas intactos.
 

@@ -1,7 +1,7 @@
 /* Service worker — Factronics Videojet Lab (offline)
    Estrategia: precache del shell de la app + cache-first con actualización en
    segundo plano. Sube la versión del cache al publicar cambios. */
-const VERSION = 'fvl-v0.2.0-alpha-17';
+const VERSION = 'fvl-v0.2.0-alpha-18';
 const SHELL = [
   './',
   './index.html',
