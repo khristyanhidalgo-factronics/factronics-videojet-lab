@@ -67,6 +67,10 @@
       hoy todos son `borrador-decodificado`; se conserva `descripcion_ocr` y `pn_ocr`
       como evidencia. No se reconstruyen P/N a mano. Los 5 conflictos reales
       (`395898`, `395899`, `399474`, `399475`, `SP234081`) ya se muestran en la app.
+      **Artefactos listos:** `datos/analisis/partes_cij_ocr_revision.csv` (193 P/N,
+      92 nuevos), `partes_cij_ocr_apariciones.csv` (275 apariciones únicas de 277
+      registros), `conflictos_cij_ocr.md` (5 casos) y el tablero
+      `PENDIENTES_REVISION.md`.
 - [ ] Revisión visual muestra a muestra de los 204 P/N y de los 801 ítems sin P/N;
       hoy hay muestras verificadas (1210 p27/p50, 1220 p33, 1610 p11, 1620E p48,
       1650 b51) y el conflicto real de 399475 marcado como borrador. Los 801 ítems
@@ -95,6 +99,9 @@
 - [ ] Revisión humana de las **266 velocidades CIJ** y de sus 56 avisos
       (22 boquilla, 31 modelo, 3 fuente): hoy todas son `borrador-decodificado` y
       no sustituyen al calculador oficial. Los 4 duplicados ya están fusionados.
+      **Artefactos listos:** `datos/analisis/velocidades_cij_avisos.csv` (56 filas)
+      y `velocidades_cij_avisos.md`; el valor impreso ya prevalece sobre el nombre
+      de archivo y las 5 notas documentadas están recogidas.
 - [x] ~~Confirmar con el dueño la lectura visual **029/581** de
       `MedidoresPortenciaCO2.pdf`~~ → la capa de texto original decodificada
       (**AL-67438** / **AL-66517**) es la evidencia principal; 029/581 queda como

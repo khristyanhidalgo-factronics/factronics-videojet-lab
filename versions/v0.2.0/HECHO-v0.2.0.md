@@ -39,6 +39,12 @@
       P/N ya existentes los conflictos reales (`395898`, `395899`, `399474`,
       `399475`, `SP234081`) sin ascender su estado; `SequenceMatcher` eliminó el
       falso positivo `202047` («Bottie» → «Bottle»).
+- [x] **Artefactos de revisión de pendientes:** `tools/generar_revision_pendientes.py`
+      produce `partes_cij_ocr_revision.csv` (193 P/N, 92 nuevos),
+      `partes_cij_ocr_apariciones.csv` (275 apariciones únicas de 277 registros),
+      `conflictos_cij_ocr.md` (5 casos), `velocidades_cij_avisos.csv` (56 avisos:
+      22 boquilla, 31 modelo, 3 fuente), `velocidades_cij_avisos.md` y el tablero
+      `PENDIENTES_REVISION.md`; `tools/test_revision_pendientes.py` lo valida en CI.
 - [x] **PDFs escaneados TTO y láser:** TTO **7/7** (14.089 caracteres, 0 páginas
       omitidas). Láser: **14 casos del cierre clasificados** — **7 recuperados con
       texto (16.148 caracteres)**: 6 por OCR y `MedidoresPortenciaCO2.pdf` por

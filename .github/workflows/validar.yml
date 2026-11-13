@@ -32,3 +32,5 @@ jobs:
         run: python tools/test_velocidades_cij.py
       - name: Probar cierre del lote laser (14 casos)
         run: python tools/test_lote_laser.py
+      - name: Probar artefactos de revision de pendientes
+        run: python tools/test_revision_pendientes.py
