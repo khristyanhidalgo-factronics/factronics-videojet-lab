@@ -127,3 +127,4 @@
 - [x] **`docs/version.json` publicado** (copia del `version.json` raíz) y validado contra la versión/build para que Pages no sirva datos viejos.
 - [x] **Examen de velocidades CIJ (266):** fuente separada con preguntas de velocidad nominal, boquilla y fuente; aviso `borrador-decodificado`, corrección, constancia e historial; auditoría de 10.640 preguntas sin ambigüedad y verificación en los 5 idiomas.
 - [x] **Verificación en vivo de alpha-18/build 16:** CI y Pages en success; actualización desde alpha-17 aplicada sin reinstalar; examen de velocidades con los 3 tipos, corrección, constancia, historial y consola limpia.
+- [x] **Accesibilidad y UX de controles:** etiquetas `for`, `aria-label` en campos dinámicos, `aria-pressed` en opciones, resultados `role="status"`, foco visible, objetivos táctiles de 44 px en móvil y `meta description`; Lighthouse 1.0 en accesibilidad, buenas prácticas y SEO.

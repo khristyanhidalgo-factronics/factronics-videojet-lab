@@ -25,7 +25,11 @@
       cobertura 17.225/17.225 y pruebas automáticas; queda la revisión humana de estilo.
 - [ ] Revisión humana de estilo de las traducciones IT/ZH (`borrador-de-traduccion`):
       confirmar términos técnicos con el dueño o con documentación Videojet.
-- [ ] Ajustes de UX tras la prueba (teclado móvil, tamaños, contraste).
+- [x] ~~Nombres accesibles, foco visible y tamaño táctil de los controles~~ →
+      etiquetas `for`, `aria-label` en campos dinámicos, `aria-pressed` en las
+      opciones del examen, resultados `role="status"`, objetivos de 44 px en móvil
+      y `meta description`; Lighthouse 1.0 en accesibilidad, buenas prácticas y SEO.
+- [ ] Ajustes finos de teclado móvil y contraste tras una prueba en dispositivo.
 
 ## Superar la referencia (cuenta personal)
 - [x] ~~`version.json` + `docs/notas.html` con índice SHA-256~~ → hecho (`tools/publicar_notas.py`).

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="App offline de estudio, exámenes, buscador de partes y calculadoras para tecnologías Videojet TTO, CIJ y LÁSER.">
 <title>Factronics Videojet Lab — App</title>
 <meta name="theme-color" content="#0f172a">
 <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
@@ -19,6 +20,7 @@ html[data-theme="dark"]{
   --chip:#1e293b; --shadow:0 6px 24px rgba(0,0,0,.35);
 }
 *{box-sizing:border-box}
+:focus-visible{outline:3px solid color-mix(in srgb,var(--accent) 60%,transparent);outline-offset:2px}
 body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .bar{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:12px;padding:10px 16px}
@@ -76,7 +78,14 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
 .tabsmini{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
 .tabsmini button{padding:6px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--muted);cursor:pointer}
 .tabsmini button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
-@media(max-width:640px){.bar h1{font-size:15px}.grid{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}}
+@media(max-width:640px){
+  .bar h1{font-size:15px}
+  .grid{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}
+  .btn,select,input[type=text],input[type=number]{min-height:44px}
+  nav button{padding:12px}
+  .q .opt{min-height:44px;padding:12px 14px}
+  .chip{min-height:40px;display:inline-flex;align-items:center}
+}
 </style>
 </head>
 <body>
@@ -139,9 +148,9 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
   <section id="buscar">
     <div class="card">
       <h2 data-i18n="bus_t">Buscar</h2>
-      <input type="text" id="q" placeholder="..." style="width:100%;margin-bottom:10px">
+      <input type="text" id="q" aria-label="Buscar" placeholder="..." style="width:100%;margin-bottom:10px">
       <div class="chips" id="bus_chips"></div>
-      <div class="small" id="bus_count"></div>
+      <div class="small" id="bus_count" aria-live="polite"></div>
       <div class="list" id="bus_list"></div>
     </div>
   </section>
@@ -151,22 +160,22 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
       <h2 data-i18n="calc_t">Calculadora de consumo (CIJ)</h2>
       <p class="small" data-i18n="calc_s">Consumo de solvente por curva oficial (estimación del documento, 10–40 °C).</p>
       <div class="grid">
-        <div><label class="small" data-i18n="calc_modelo">Modelo</label><br><select id="calc_m" style="width:100%"></select></div>
-        <div><label class="small" data-i18n="calc_tinta">Tinta</label><br><select id="calc_t" style="width:100%"></select></div>
-        <div><label class="small" data-i18n="calc_temp">Temperatura (°C)</label><br><input type="number" id="calc_temp" value="30" min="10" max="40" step="1" style="width:100%"></div>
-        <div><label class="small" data-i18n="calc_precio">Precio solvente (USD/L)</label><br><input type="number" id="calc_precio" value="0" min="0" step="0.1" style="width:100%"></div>
+        <div><label class="small" for="calc_m" data-i18n="calc_modelo">Modelo</label><br><select id="calc_m" style="width:100%"></select></div>
+        <div><label class="small" for="calc_t" data-i18n="calc_tinta">Tinta</label><br><select id="calc_t" style="width:100%"></select></div>
+        <div><label class="small" for="calc_temp" data-i18n="calc_temp">Temperatura (°C)</label><br><input type="number" id="calc_temp" value="30" min="10" max="40" step="1" style="width:100%"></div>
+        <div><label class="small" for="calc_precio" data-i18n="calc_precio">Precio solvente (USD/L)</label><br><input type="number" id="calc_precio" value="0" min="0" step="0.1" style="width:100%"></div>
       </div>
-      <div id="calc_out" style="margin-top:12px"></div>
+      <div id="calc_out" style="margin-top:12px" aria-live="polite"></div>
     </div>
     <div class="card" style="margin-top:14px">
       <h2 data-i18n="vel_t">Velocidad de línea CIJ</h2>
       <p class="small" data-i18n="vel_s">Velocidad nominal por modelo, boquilla y fuente, leída de los calculadores oficiales v9.7 (borrador decodificado).</p>
       <div class="grid">
-        <div><label class="small" data-i18n="vel_modelo">Modelo</label><br><select id="vel_m" style="width:100%"></select></div>
-        <div><label class="small" data-i18n="vel_boquilla">Boquilla (µm)</label><br><select id="vel_b" style="width:100%"></select></div>
-        <div><label class="small" data-i18n="vel_fuente">Fuente</label><br><select id="vel_f" style="width:100%"></select></div>
+        <div><label class="small" for="vel_m" data-i18n="vel_modelo">Modelo</label><br><select id="vel_m" style="width:100%"></select></div>
+        <div><label class="small" for="vel_b" data-i18n="vel_boquilla">Boquilla (µm)</label><br><select id="vel_b" style="width:100%"></select></div>
+        <div><label class="small" for="vel_f" data-i18n="vel_fuente">Fuente</label><br><select id="vel_f" style="width:100%"></select></div>
       </div>
-      <div id="vel_out" style="margin-top:12px"></div>
+      <div id="vel_out" style="margin-top:12px" aria-live="polite"></div>
       <p class="small" style="margin-top:10px"><span data-i18n="vel_nota">Datos borrador-decodificado: no sustituyen el calculador oficial.</span></p>
     </div>
   </section>
@@ -175,13 +184,13 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
     <div class="card">
       <h2 data-i18n="ex_t">Examen</h2>
       <div class="grid">
-        <div><label class="small" data-i18n="ex_fuente">Fuente</label><br>
+        <div><label class="small" for="ex_fuente" data-i18n="ex_fuente">Fuente</label><br>
           <select id="ex_fuente">
             <option value="gen" data-i18n="fuente_gen">Generado (5 niveles)</option>
             <option value="banco" data-i18n="fuente_banco">Banco TTO (372)</option>
             <option value="vel" data-i18n="fuente_vel">Velocidades CIJ (266)</option>
           </select></div>
-        <div id="ex_nivel_box"><label class="small" data-i18n="ex_nivel">Nivel</label><br>
+        <div id="ex_nivel_box"><label class="small" for="ex_nivel" data-i18n="ex_nivel">Nivel</label><br>
           <select id="ex_nivel">
             <option value="1" data-i18n="n1">Básico</option>
             <option value="2" data-i18n="n2">Básico-Medio</option>
@@ -189,7 +198,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
             <option value="4" data-i18n="n4">Avanzado</option>
             <option value="5" data-i18n="n5">Profesional</option>
           </select></div>
-        <div id="ex_tipo_box" class="hidden"><label class="small" data-i18n="ex_tipo">Tipo</label><br>
+        <div id="ex_tipo_box" class="hidden"><label class="small" for="ex_tipo" data-i18n="ex_tipo">Tipo</label><br>
           <select id="ex_tipo">
             <option value="todas" data-i18n="tipo_todas">Todas</option>
             <option value="single" data-i18n="tipo_single">Simple</option>
@@ -200,7 +209,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
             <option value="errorfix" data-i18n="tipo_errorfix">Caso de falla</option>
             <option value="errmap" data-i18n="tipo_errmap">Código→significado</option>
           </select></div>
-        <div><label class="small" data-i18n="ex_cant">Preguntas</label><br>
+        <div><label class="small" for="ex_cant" data-i18n="ex_cant">Preguntas</label><br>
           <select id="ex_cant"><option>10</option><option>15</option><option>20</option></select></div>
         <div style="display:flex;align-items:flex-end"><button class="btn primary" id="ex_go" data-i18n="ex_go">Generar examen</button></div>
       </div>
@@ -230,7 +239,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
       <span class="small" id="bk_msg"></span>
       <h3 data-i18n="perfil_t">Perfil para constancias</h3>
       <div class="grid">
-        <div><label class="small" data-i18n="perfil_nombre">Nombre y apellido</label><br>
+        <div><label class="small" for="prof_nombre" data-i18n="perfil_nombre">Nombre y apellido</label><br>
           <input type="text" id="prof_nombre" placeholder="Nombre del participante" style="width:100%"></div>
         <div style="display:flex;align-items:flex-end"><button class="btn" id="prof_guardar" data-i18n="guardar">Guardar</button></div>
       </div>
@@ -649,6 +658,7 @@ function aplicarIdioma(){
   $('#theme').setAttribute('aria-label', t('tema'));
   $('#foot').textContent = `${t('kpi_solventes')} · ${t('kpi_partes')} · offline`;
   $('#q').placeholder = t('buscar') + '...';
+  $('#q').setAttribute('aria-label', t('buscar'));
   if ($('#prof_nombre')) $('#prof_nombre').placeholder = t('perfil_ph');
   renderKPIs(); renderFuentes(); renderEstudiar(); renderBuscar(); renderCalc(); renderVel(); renderHistorial();
   if (typeof renderRepaso === 'function') renderRepaso();
@@ -721,7 +731,7 @@ function renderEstudiar(){
   const box = $('#est_body');
   if (EST === 'tintas') {
     const codes = Object.keys(D.tintas).sort();
-    box.innerHTML = `<input type="text" id="tinta_q" placeholder="${esc(t('buscar'))}..." style="width:100%;margin:8px 0 10px">
+    box.innerHTML = `<input type="text" id="tinta_q" aria-label="${esc(t('buscar'))}" placeholder="${esc(t('buscar'))}..." style="width:100%;margin:8px 0 10px">
       <div class="list" id="tinta_list">${codes.map(c => {
         const x = D.tintas[c];
         return `<div class="row" data-tinta="${esc(c)}" style="cursor:pointer"><span class="n">${esc(c)}</span>
@@ -739,7 +749,7 @@ function renderEstudiar(){
       <div class="list">${D.ribbons.grados.map(g => `<div class="row"><span class="n">${esc(tr(g.g||''))}</span>
         <span class="d">${esc(g.pn||'')} · ${esc(tr(g.col||''))} · ${esc(g.vel??'')} mm/s · ${esc(tr(g.tipo||''))}</span></div>`).join('')}</div>
       <h3>${esc(t('items'))} (${D.ribbons.items.length})</h3>
-      <input type="text" id="rib_q" placeholder="${esc(t('buscar'))}..." style="width:100%;margin:6px 0">
+      <input type="text" id="rib_q" aria-label="${esc(t('buscar'))}" placeholder="${esc(t('buscar'))}..." style="width:100%;margin:6px 0">
       <div class="list" id="rib_list" style="max-height:300px">${D.ribbons.items.map(([n,d]) => `<div class="row"><span class="n">${esc(n)}</span><span class="d">${esc(tr(d))}</span></div>`).join('')}</div>`;
     $('#rib_q').addEventListener('input', e => {
       const q = norm(e.target.value);
@@ -1093,7 +1103,7 @@ function renderExamenGen(){
     examen.preguntas.map((p,i) => `
     <div class="q" data-i="${i}">
       <div><b>${i+1}.</b> ${esc(p.q)}</div>
-      ${p.ops.map(o => `<button class="opt" data-i="${i}" data-o="${esc(o)}">${esc(o)}</button>`).join('')}
+      ${p.ops.map(o => `<button class="opt" data-i="${i}" data-o="${esc(o)}" aria-pressed="false">${esc(o)}</button>`).join('')}
       <div class="small" data-res="${i}"></div>
     </div>`).join('') +
     `<button class="btn primary" id="ex_send">${esc(t('ex_send'))}</button>
@@ -1102,7 +1112,10 @@ function renderExamenGen(){
     if (examen.corregido) return;
     const i = Number(b.dataset.i);
     examen.respuestas[i] = b.dataset.o;
-    body.querySelectorAll(`.opt[data-i="${i}"]`).forEach(x => x.classList.toggle('sel', x === b));
+    body.querySelectorAll(`.opt[data-i="${i}"]`).forEach(x => {
+      x.classList.toggle('sel', x === b);
+      x.setAttribute('aria-pressed', x === b ? 'true' : 'false');
+    });
   }));
   $('#ex_send').addEventListener('click', () => {
     if (examen.corregido) return;
@@ -1123,7 +1136,7 @@ function renderExamenGen(){
     const nota = `${bien}/${examen.preguntas.length}`;
     const etiqueta = examen.titulo || t(NIVELES[examen.nivel]);
     body.insertAdjacentHTML('afterbegin',
-      `<div class="card" style="box-shadow:none"><b>${esc(t('ex_score'))}: ${nota}</b> — ${bien} ${esc(t('respuestas'))}
+      `<div class="card" style="box-shadow:none" role="status" aria-live="polite"><b>${esc(t('ex_score'))}: ${nota}</b> — ${bien} ${esc(t('respuestas'))}
        <button class="btn" id="cert_btn">${esc(t('constancia'))}</button></div>`);
     $('#cert_btn').addEventListener('click', () => generarConstancia(etiqueta, bien, examen.preguntas.length));
     guardarHistorial(etiqueta, bien, examen.preguntas.length);
@@ -1151,18 +1164,18 @@ function renderExamenBanco(){
     const d = datosIdioma(q, LANG);
     let cuerpo = '';
     if (q.t === 'single' || q.t === 'errmap') {
-      cuerpo = (d.o||[]).map(([id,txt]) => `<button class="opt" data-i="${i}" data-o="${esc(id)}">${esc(txt)}</button>`).join('');
+      cuerpo = (d.o||[]).map(([id,txt]) => `<button class="opt" data-i="${i}" data-o="${esc(id)}" aria-pressed="false">${esc(txt)}</button>`).join('');
     } else if (q.t === 'multi') {
-      cuerpo = (d.o||[]).map(([id,txt]) => `<button class="opt" data-i="${i}" data-o="${esc(id)}" data-multi="1">${esc(txt)}</button>`).join('');
+      cuerpo = (d.o||[]).map(([id,txt]) => `<button class="opt" data-i="${i}" data-o="${esc(id)}" data-multi="1" aria-pressed="false">${esc(txt)}</button>`).join('');
     } else if (q.t === 'fill' || q.t === 'calc') {
       cuerpo = (d.f||[]).map(([label,unit,answers,tol],k) => {
         const esNum = (answers||[]).length > 0 && answers.every(a => typeof a === 'number');
         return `
         <div style="margin:6px 0"><span class="small">${esc(label||(t('campo')+' '+(k+1)))}${unit?(' ('+esc(unit)+')'):''}</span><br>
-        <input type="${esNum ? 'number' : 'text'}" ${esNum ? 'step="any"' : ''} data-i="${i}" data-f="${k}" style="max-width:280px"></div>`;
+        <input type="${esNum ? 'number' : 'text'}" ${esNum ? 'step="any"' : ''} data-i="${i}" data-f="${k}" aria-label="${esc((label||(t('campo')+' '+(k+1)))+(unit?(' ('+unit+')'):''))}" style="max-width:280px"></div>`;
       }).join('');
     } else {
-      cuerpo = `<textarea data-i="${i}" rows="3" style="width:100%" placeholder="..."></textarea>`;
+      cuerpo = `<textarea data-i="${i}" rows="3" style="width:100%" aria-label="${esc(d.q||'')}" placeholder="..."></textarea>`;
     }
     const meta = `<div class="small">#${esc(q.id)} · ${esc(tipoEtiqueta(q.t))} · ${esc((q.m||[]).join(', '))}${q.d?(' · '+t('nivel')+' '+q.d):''}</div>`;
     return `<div class="q" data-i="${i}"><div><b>${i+1}.</b> ${esc(d.q||'')}</div>${meta}${cuerpo}<div class="small" data-res="${i}"></div></div>`;
@@ -1175,11 +1188,15 @@ function renderExamenBanco(){
     const i = Number(b.dataset.i);
     if (b.dataset.multi) {
       b.classList.toggle('sel');
+      b.setAttribute('aria-pressed', b.classList.contains('sel') ? 'true' : 'false');
       const sel = [...body.querySelectorAll(`.opt[data-i="${i}"].sel`)].map(x => x.dataset.o);
       examen.respuestas[i] = sel;
     } else {
       examen.respuestas[i] = [b.dataset.o];
-      body.querySelectorAll(`.opt[data-i="${i}"]`).forEach(x => x.classList.toggle('sel', x === b));
+      body.querySelectorAll(`.opt[data-i="${i}"]`).forEach(x => {
+        x.classList.toggle('sel', x === b);
+        x.setAttribute('aria-pressed', x === b ? 'true' : 'false');
+      });
     }
   }));
   body.querySelectorAll('input[data-i]').forEach(inp => inp.addEventListener('input', () => {
@@ -1258,7 +1275,7 @@ function renderExamenBanco(){
     const nota = `${(Math.round(puntos*10)/10)}/${total}`;
     const etiqueta = t('ex_banco_titulo') + ' · ' + tipoEtiqueta(examen.tipo);
     body.insertAdjacentHTML('afterbegin',
-      `<div class="card" style="box-shadow:none"><b>${esc(t('ex_score'))}: ${nota}</b> — ${Math.round(puntos*10)/10} ${esc(t('respuestas'))}
+      `<div class="card" style="box-shadow:none" role="status" aria-live="polite"><b>${esc(t('ex_score'))}: ${nota}</b> — ${Math.round(puntos*10)/10} ${esc(t('respuestas'))}
        <button class="btn" id="cert_btn">${esc(t('constancia'))}</button></div>`);
     $('#cert_btn').addEventListener('click', () => generarConstancia(etiqueta, Math.round(puntos*10)/10, total));
     guardarHistorial(etiqueta, Math.round(puntos*10)/10, total);
