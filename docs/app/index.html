@@ -562,7 +562,10 @@ Object.assign(I18N.es, {
   partes_tto_nota:'Banco de partes TTO con 120 P/N verificados. Solo se usan descripciones oficiales ya traducidas.',
   q_rib_vel:'¿Cuál es la velocidad máxima de impresión del ribbon {g}?',
   q_rib_temp:'¿Cuál es la resistencia térmica del ribbon {g}?',
-  q_sol_temp:'Consumo de solvente {m} ({t}) a {T} °C según la curva oficial:'
+  q_sol_temp:'Consumo de solvente {m} ({t}) a {T} °C según la curva oficial:',
+  q_sol_horas:'El solvente {m} ({t}) consume {u} ml/h a {T} °C. ¿Cuántas horas dura 1 L?',
+  q_sds_dens:'¿Cuál es la densidad relativa de la tinta {c} según su SDS?',
+  q_sds_flash:'¿Cuál es el punto de inflamación de la tinta {c} según su SDS?'
 });
 Object.assign(I18N.en, {
   vel_t:'CIJ line speed', vel_s:'Nominal speed by model, nozzle and font, read from the official v9.7 calculators (decoded draft).',
@@ -592,7 +595,10 @@ Object.assign(I18N.en, {
   partes_tto_nota:'TTO parts bank with 120 verified P/Ns. Only official, already translated descriptions are used.',
   q_rib_vel:'What is the maximum printing speed of ribbon {g}?',
   q_rib_temp:'What is the heat resistance of ribbon {g}?',
-  q_sol_temp:'Solvent consumption {m} ({t}) at {T} °C from the official curve:'
+  q_sol_temp:'Solvent consumption {m} ({t}) at {T} °C from the official curve:',
+  q_sol_horas:'Solvent {m} ({t}) consumes {u} ml/h at {T} °C. How many hours does 1 L last?',
+  q_sds_dens:'What is the relative density of ink {c} according to its SDS?',
+  q_sds_flash:'What is the flash point of ink {c} according to its SDS?'
 });
 Object.assign(I18N.pt, {
   vel_t:'Velocidade de linha CIJ', vel_s:'Velocidade nominal por modelo, bocal e fonte, lida dos calculadores oficiais v9.7 (rascunho decodificado).',
@@ -622,7 +628,10 @@ Object.assign(I18N.pt, {
   partes_tto_nota:'Banco de peças TTO com 120 P/Ns verificados. São usadas apenas descrições oficiais já traduzidas.',
   q_rib_vel:'Qual é a velocidade máxima de impressão da fita {g}?',
   q_rib_temp:'Qual é a resistência térmica da fita {g}?',
-  q_sol_temp:'Consumo de solvente {m} ({t}) a {T} °C segundo a curva oficial:'
+  q_sol_temp:'Consumo de solvente {m} ({t}) a {T} °C segundo a curva oficial:',
+  q_sol_horas:'O solvente {m} ({t}) consome {u} ml/h a {T} °C. Quantas horas dura 1 L?',
+  q_sds_dens:'Qual é a densidade relativa da tinta {c} segundo sua SDS?',
+  q_sds_flash:'Qual é o ponto de fulgor da tinta {c} segundo sua SDS?'
 });
 Object.assign(I18N.it, {
   vel_t:'Velocità di linea CIJ', vel_s:'Velocità nominale per modello, ugello e font, letta dai calcolatori ufficiali v9.7 (bozza decodificata).',
@@ -652,7 +661,10 @@ Object.assign(I18N.it, {
   partes_tto_nota:'Banca ricambi TTO con 120 P/N verificati. Si usano solo descrizioni ufficiali già tradotte.',
   q_rib_vel:'Qual è la velocità massima di stampa del nastro {g}?',
   q_rib_temp:'Qual è la resistenza termica del nastro {g}?',
-  q_sol_temp:'Consumo di solvente {m} ({t}) a {T} °C secondo la curva ufficiale:'
+  q_sol_temp:'Consumo di solvente {m} ({t}) a {T} °C secondo la curva ufficiale:',
+  q_sol_horas:'Il solvente {m} ({t}) consuma {u} ml/h a {T} °C. Quante ore dura 1 L?',
+  q_sds_dens:'Qual è la densità relativa dell\'inchiostro {c} secondo la sua SDS?',
+  q_sds_flash:'Qual è il punto di infiammabilità dell\'inchiostro {c} secondo la sua SDS?'
 });
 Object.assign(I18N.zh, {
   vel_t:'CIJ 线速度', vel_s:'按型号、喷嘴和字体读取官方 v9.7 计算器的额定速度（解码草稿）。',
@@ -682,7 +694,10 @@ Object.assign(I18N.zh, {
   partes_tto_nota:'TTO 部件题库，仅包含 120 个已验证 P/N。仅使用已翻译的官方描述。',
   q_rib_vel:'色带 {g} 的最高打印速度是多少？',
   q_rib_temp:'色带 {g} 的耐热温度是多少？',
-  q_sol_temp:'根据官方曲线，溶剂 {m}（{t}）在 {T} °C 的消耗量：'
+  q_sol_temp:'根据官方曲线，溶剂 {m}（{t}）在 {T} °C 的消耗量：',
+  q_sol_horas:'溶剂 {m}（{t}）在 {T} °C 下消耗 {u} ml/h。1 L 可用多少小时？',
+  q_sds_dens:'根据 SDS，墨水 {c} 的相对密度是多少？',
+  q_sds_flash:'根据 SDS，墨水 {c} 的闪点是多少？'
 });
 let LANG = localStorage.getItem('fvl_lang') || 'es';
 const t = (k) => (I18N[LANG] && I18N[LANG][k]) || I18N.es[k] || k;
@@ -1062,53 +1077,83 @@ function opciones(correcta, pool, n=3){
   const ops = [correcta, ...sel].slice(0, n+1);
   return ops.sort(() => Math.random()-0.5);
 }
+/* Propiedades SDS con valor unico por tinta (se excluyen las fichas en conflicto). */
+const SDS_PROPS = (() => {
+  const dens = [], flash = [];
+  for (const [c,x] of Object.entries(D.tintas)) {
+    const vals = prop => [...new Set((x.fichas||[])
+      .map(f => f.props && f.props[prop]).filter(Boolean))];
+    const d = vals('densidad_relativa');
+    if (d.length === 1) {
+      const m = d[0].match(/^-?\d+(?:\.\d+)?/);
+      if (m) dens.push({c, v:m[0]});
+    }
+    const f = vals('punto_inflamacion');
+    if (f.length === 1) {
+      const m = f[0].match(/^-?\d+/);
+      if (m) flash.push({c, v:m[0] + ' °C'});
+    }
+  }
+  return {dens, flash};
+})();
+/* Pools de datos reutilizados por el generador (no cambian en tiempo de ejecucion). */
+const TINTAS = Object.entries(D.tintas);
+const TINTAS_BASE = TINTAS.filter(([,x]) => (x.b||[]).length);
+const BASES = TINTAS.map(([,y]) => (y.b||[])[0]).filter(Boolean);
+const RIBBONS_COLOR = D.ribbons.grados.filter(g => g.col && g.col !== 'Colors');
+const RIBBONS_VEL = D.ribbons.grados.filter(g => typeof g.vel === 'number' && (g.g || g.pn));
+const RIBBONS_TEMP = D.ribbons.grados.filter(g => typeof g.temp === 'number' && (g.g || g.pn));
+const PARTES_CIJ = D.partes.filter(p => p.t === 'CIJ' && p.e === 'verificado' && p.d);
+const PARTES_CIJ_DESC = [...new Set(D.partes.filter(x => x.t === 'CIJ' && x.d).map(x => x.d))];
+const SOL_REF = D.solventes.filter(s => s.e === 'verificado' &&
+  refUso(s.r) !== null && refUso(s.r) !== undefined);
+const SOL_USOS = [...new Set(SOL_REF.map(s => refUso(s.r)))];
+const SOL_CURVA = D.solventes.filter(s => s.e === 'verificado' &&
+  Array.isArray(s.c) && s.c.length >= 4);
+const TINTAS_CON_COMP = TINTAS.filter(([,x]) =>
+  (x.fichas||[]).some(f => (f.comp||[]).length));
+const COMP_NAMES = [...new Set(TINTAS.flatMap(([,x]) =>
+  (x.fichas||[]).flatMap(f => (f.comp||[]).map(c => c.n)).filter(Boolean)))];
 function generarPregunta(nivel){
-  const tintas = Object.entries(D.tintas);
-  const grados = D.ribbons.grados;
   const errs = D.errores;
   if (nivel === 1) {
-    const [c,x] = aleatorio(tintas.filter(([,x]) => (x.b||[]).length));
+    const [c,x] = aleatorio(TINTAS_BASE);
     const base = x.b[0];
-    const pool = tintas.map(([,y]) => (y.b||[])[0]).filter(Boolean);
-    return {q:t('q_base').replace('{c}', c), a:base, ops:opciones(base, pool),
+    return {q:t('q_base').replace('{c}', c), a:base, ops:opciones(base, BASES),
       ref:t('ref_cij')};
   }
   if (nivel === 2) {
-    const conColor = grados.filter(g => g.col && g.col !== 'Colors');
-    const conVel = grados.filter(g => typeof g.vel === 'number' && (g.g || g.pn));
-    const conTemp = grados.filter(g => typeof g.temp === 'number' && (g.g || g.pn));
     const tipo = aleatorio(['color', 'vel', 'temp'].filter(k =>
-      ({color: conColor, vel: conVel, temp: conTemp})[k].length));
+      ({color: RIBBONS_COLOR, vel: RIBBONS_VEL, temp: RIBBONS_TEMP})[k].length));
     if (tipo === 'vel') {
-      const g = aleatorio(conVel);
+      const g = aleatorio(RIBBONS_VEL);
       const pn = String(g.pn || '').replace(/\s+/g, ' ').trim();
       const etiqueta = pn ? tr(g.g || g.pn) + ' (' + pn + ')' : tr(g.g || g.pn);
       const correcta = fmtNum(g.vel, 0) + ' mm/s';
-      const pool = [...new Set(conVel.map(x => fmtNum(x.vel, 0) + ' mm/s'))];
+      const pool = [...new Set(RIBBONS_VEL.map(x => fmtNum(x.vel, 0) + ' mm/s'))];
       return {q:t('q_rib_vel').replace('{g}', etiqueta), a:correcta,
         ops:opciones(correcta, pool), ref:t('ref_ribbons'), tipo:'rib_vel'};
     }
     if (tipo === 'temp') {
-      const g = aleatorio(conTemp);
+      const g = aleatorio(RIBBONS_TEMP);
       const pn = String(g.pn || '').replace(/\s+/g, ' ').trim();
       const etiqueta = pn ? tr(g.g || g.pn) + ' (' + pn + ')' : tr(g.g || g.pn);
       const correcta = fmtNum(g.temp, 0) + ' °C';
-      const pool = [...new Set(conTemp.map(x => fmtNum(x.temp, 0) + ' °C'))];
+      const pool = [...new Set(RIBBONS_TEMP.map(x => fmtNum(x.temp, 0) + ' °C'))];
       return {q:t('q_rib_temp').replace('{g}', etiqueta), a:correcta,
         ops:opciones(correcta, pool), ref:t('ref_ribbons'), tipo:'rib_temp'};
     }
-    const g = aleatorio(conColor);
+    const g = aleatorio(RIBBONS_COLOR);
     const col = tr(g.col);
     return {q:t('q_color').replace('{g}', g.g||g.pn), a:col,
-      ops:opciones(col, conColor.map(x=>tr(x.col)).filter(Boolean)),
+      ops:opciones(col, RIBBONS_COLOR.map(x=>tr(x.col)).filter(Boolean)),
       ref:t('ref_ribbons')};
   }
   if (nivel === 3) {
-    const partesCij = D.partes.filter(p => p.t === 'CIJ' && p.e === 'verificado' && p.d);
-    if (partesCij.length && Math.random() < 0.5) {
-      const p = aleatorio(partesCij);
+    if (PARTES_CIJ.length && Math.random() < 0.5) {
+      const p = aleatorio(PARTES_CIJ);
       const d = tr(p.d);
-      const pool = D.partes.filter(x => x.t === 'CIJ' && x.d).map(x => tr(x.d));
+      const pool = PARTES_CIJ_DESC.map(tr);
       return {q:t('q_part').replace('{n}', p.n), a:d, ops:opciones(d, pool),
         ref:t('ref_part')};
     }
@@ -1117,9 +1162,9 @@ function generarPregunta(nivel){
       ref:t('ref_err')};
   }
   if (nivel === 4) {
-    if (Math.random() < 0.5) {
-      const conCurva = D.solventes.filter(s => s.e === 'verificado' && Array.isArray(s.c) && s.c.length >= 4);
-      const s = aleatorio(conCurva);
+    const tipo = aleatorio(['ref', 'temp', 'horas']);
+    if (tipo === 'temp') {
+      const s = aleatorio(SOL_CURVA);
       const puntos = s ? s.c.filter(([t,u]) => t !== 30 && u !== null && u !== undefined) : [];
       if (s && puntos.length) {
         const [temp, uso] = aleatorio(puntos);
@@ -1131,22 +1176,44 @@ function generarPregunta(nivel){
           a:correcta, ops:opciones(correcta, pool), ref:t('ref_sol'), tipo:'sol_temp'};
       }
     }
-    const s = aleatorio(D.solventes.filter(s => s.e === 'verificado' && refUso(s.r) !== null && refUso(s.r) !== undefined));
+    if (tipo === 'horas') {
+      const s = aleatorio(SOL_REF);
+      const uso = refUso(s.r);
+      const temp = (s.r && typeof s.r === 'object' && s.r.temp_c !== undefined) ? s.r.temp_c : 30;
+      const correcta = fmtNum(1000/uso, 1) + ' h';
+      const pool = SOL_USOS.map(v => fmtNum(1000/v, 1) + ' h');
+      return {q:t('q_sol_horas').replace('{m}', s.m+(s.v?' '+s.v:''))
+        .replace('{t}', s.t).replace('{u}', fmtNum(uso, 1)).replace('{T}', fmtNum(temp, 0)),
+        a:correcta, ops:opciones(correcta, pool), ref:t('ref_sol'), tipo:'sol_horas'};
+    }
+    const s = aleatorio(SOL_REF);
     const uso = refUso(s.r);
     const correcta = fmtNum(uso, 1) + ' ml/h';
-    const pool = [...new Set(D.solventes.map(x => refUso(x.r)).filter(v => v !== null && v !== undefined))]
-      .map(v => fmtNum(v, 1) + ' ml/h');
+    const pool = SOL_USOS.map(v => fmtNum(v, 1) + ' ml/h');
     return {q:t('q_ref').replace('{m}', s.m+(s.v?' '+s.v:'')).replace('{t}', s.t), a:correcta,
       ops:opciones(correcta, pool), ref:t('ref_sol')};
   }
-  const conComp = tintas.filter(([,x]) => (x.fichas||[]).some(f => (f.comp||[]).length));
-  if (conComp.length) {
-    const [c,x] = aleatorio(conComp);
+  const tipoSds = aleatorio(['cas', 'dens', 'flash'].filter(k => ({
+    cas: TINTAS_CON_COMP.length, dens: SDS_PROPS.dens.length, flash: SDS_PROPS.flash.length
+  })[k]));
+  if (tipoSds === 'dens') {
+    const d = aleatorio(SDS_PROPS.dens);
+    const pool = SDS_PROPS.dens.map(x => x.v);
+    return {q:t('q_sds_dens').replace('{c}', d.c), a:d.v,
+      ops:opciones(d.v, pool), ref:t('ref_sds'), tipo:'sds_dens'};
+  }
+  if (tipoSds === 'flash') {
+    const f = aleatorio(SDS_PROPS.flash);
+    const pool = SDS_PROPS.flash.map(x => x.v);
+    return {q:t('q_sds_flash').replace('{c}', f.c), a:f.v,
+      ops:opciones(f.v, pool), ref:t('ref_sds'), tipo:'sds_flash'};
+  }
+  if (TINTAS_CON_COMP.length) {
+    const [c,x] = aleatorio(TINTAS_CON_COMP);
     const f = aleatorio(x.fichas.filter(f => (f.comp||[]).length));
     const comp = aleatorio(f.comp);
     const nombre = tr(comp.n);
-    const poolComp = tintas.flatMap(([,y]) =>
-      (y.fichas||[]).flatMap(f => (f.comp||[]).map(c=>tr(c.n))));
+    const poolComp = COMP_NAMES.map(tr);
     return {q:t('q_cas').replace('{cas}', comp.cas).replace('{c}', c), a:nombre,
       ops:opciones(nombre, poolComp), ref:t('ref_sds')};
   }

@@ -23,7 +23,8 @@ DATOS_JS = os.path.join(RAIZ, 'docs', 'app', 'datos.js')
 INDICE = os.path.join(RAIZ, 'docs', 'app', 'index.html')
 WORKFLOW = os.path.join(RAIZ, '.github', 'workflows', 'validar.yml')
 IDIOMAS = ('es', 'en', 'pt', 'it', 'zh')
-CLAVES_I18N = ('q_rib_vel', 'q_rib_temp', 'q_sol_temp')
+CLAVES_I18N = ('q_rib_vel', 'q_rib_temp', 'q_sol_temp',
+               'q_sol_horas', 'q_sds_dens', 'q_sds_flash')
 
 
 def cargar_datos():
@@ -88,6 +89,53 @@ class ExamenGenTest(unittest.TestCase):
                        and s['r'].get('uso_ml_hr') is not None]
         self.assertEqual(800, len(referencias))
 
+    def test_horas_por_litro(self):
+        referencias = [s for s in self.solventes
+                       if s.get('e') == 'verificado'
+                       and isinstance(s.get('r'), dict)
+                       and s['r'].get('uso_ml_hr') is not None]
+        usos = {s['r']['uso_ml_hr'] for s in referencias}
+        self.assertEqual(800, len(referencias))
+        self.assertEqual(48, len(usos))
+        self.assertGreaterEqual(min(usos), 2.0)
+        self.assertLessEqual(max(usos), 19.8)
+        horas = {round(1000 / u, 1) for u in usos}
+        self.assertEqual(48, len(horas))
+        self.assertGreaterEqual(len(horas), 4)
+
+    def test_propiedades_sds_con_valor_unico(self):
+        dens, flash = [], []
+        ambiguas = set()
+        for codigo, tinta in self.datos['tintas'].items():
+            fichas = tinta.get('fichas') or []
+            def valores(prop):
+                return {f.get('props', {}).get(prop) for f in fichas
+                        if f.get('props', {}).get(prop)}
+            d = valores('densidad_relativa')
+            f = valores('punto_inflamacion')
+            if len(d) == 1:
+                m = re.match(r'^-?\d+(?:\.\d+)?', next(iter(d)))
+                if m:
+                    dens.append(m.group(0))
+            elif len(d) > 1:
+                ambiguas.add(codigo)
+            if len(f) == 1:
+                m = re.match(r'^-?\d+', next(iter(f)))
+                if m:
+                    flash.append(m.group(0))
+            elif len(f) > 1:
+                ambiguas.add(codigo)
+        self.assertEqual(105, len(dens))
+        self.assertEqual(25, len(set(dens)))
+        self.assertEqual(117, len(flash))
+        self.assertEqual(18, len(set(flash)))
+        self.assertGreaterEqual(len(set(dens)), 4)
+        self.assertGreaterEqual(len(set(flash)), 4)
+        self.assertIn('V4278', ambiguas)
+        self.assertIn('V4211', ambiguas)
+        self.assertIn('V526', ambiguas)
+        self.assertNotIn('V401', ambiguas)
+
     def test_i18n_de_los_tipos_nuevos(self):
         for idioma in IDIOMAS:
             bloque = bloques_i18n(self.html, idioma)
@@ -105,13 +153,24 @@ class ExamenGenTest(unittest.TestCase):
             sol = re.search(r"q_sol_temp\s*:\s*'([^']*)'", bloque).group(1)
             for marca in ('{m}', '{t}', '{T}'):
                 self.assertIn(marca, sol, '%s en %s' % (marca, idioma))
+            horas = re.search(r"q_sol_horas\s*:\s*'([^']*)'", bloque).group(1)
+            for marca in ('{m}', '{t}', '{u}', '{T}'):
+                self.assertIn(marca, horas, '%s en %s' % (marca, idioma))
+            for clave in ('q_sds_dens', 'q_sds_flash'):
+                texto = re.search(
+                    r"%s\s*:\s*'((?:\\.|[^'\\])*)'" % clave,
+                    bloque).group(1)
+                self.assertIn('{c}', texto, '%s en %s' % (clave, idioma))
 
     def test_generador_integra_los_tipos(self):
         for fragmento in (
                 "'q_rib_vel'", "'q_rib_temp'", "'q_sol_temp'",
+                "'q_sol_horas'", "'q_sds_dens'", "'q_sds_flash'",
                 "tipo:'rib_vel'", "tipo:'rib_temp'", "tipo:'sol_temp'",
+                "tipo:'sol_horas'", "tipo:'sds_dens'", "tipo:'sds_flash'",
                 "typeof g.vel === 'number'", "typeof g.temp === 'number'",
-                'Array.isArray(s.c)', "g.col !== 'Colors'", 'poolComp'):
+                'Array.isArray(s.c)', "g.col !== 'Colors'", 'SDS_PROPS',
+                'SOL_USOS', 'COMP_NAMES', 'TINTAS_CON_COMP'):
             self.assertIn(fragmento, self.html)
         self.assertIn('function generarPregunta(', self.html)
 

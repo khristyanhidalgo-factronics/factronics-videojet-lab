@@ -26,7 +26,7 @@ const IDIOMAS = ['es', 'en', 'pt', 'it', 'zh'];
 const NIVELES = [1, 2, 3, 4, 5];
 const CLAVES = [
   'q_base', 'q_color', 'q_rib_vel', 'q_rib_temp', 'q_tec', 'q_sol_temp',
-  'q_ref', 'q_cas', 'q_part',
+  'q_sol_horas', 'q_sds_dens', 'q_sds_flash', 'q_ref', 'q_cas', 'q_part',
   'ref_cij', 'ref_ribbons', 'ref_err', 'ref_sol', 'ref_sds', 'ref_part',
 ];
 
@@ -67,6 +67,45 @@ function extraerFuncion(src, nombre) {
     }
   }
   throw new Error('function ' + nombre + ' sin cierre');
+}
+
+function extraerConstante(src, nombre) {
+  const inicio = src.indexOf('const ' + nombre + ' =');
+  if (inicio < 0) throw new Error('no se encontro const ' + nombre);
+  const llave = src.indexOf('{', inicio);
+  let profundidad = 0;
+  let comilla = null;
+  let escape = false;
+  let linea = false;
+  let bloque = false;
+  for (let i = llave; i < src.length; i++) {
+    const c = src[i];
+    const siguiente = src[i + 1];
+    if (linea) { if (c === '\n') linea = false; continue; }
+    if (bloque) {
+      if (c === '*' && siguiente === '/') { bloque = false; i++; }
+      continue;
+    }
+    if (comilla) {
+      if (escape) { escape = false; continue; }
+      if (c === '\\') { escape = true; continue; }
+      if (c === comilla) comilla = null;
+      continue;
+    }
+    if (c === "'" || c === '"' || c === '`') { comilla = c; continue; }
+    if (c === '/' && siguiente === '/') { linea = true; i++; continue; }
+    if (c === '/' && siguiente === '*') { bloque = true; i++; continue; }
+    if (c === '{') profundidad++;
+    if (c === '}') {
+      profundidad--;
+      if (profundidad === 0) {
+        const fin = src.indexOf(';', i);
+        if (fin < 0) throw new Error('const ' + nombre + ' sin cierre');
+        return src.slice(inicio, fin + 1);
+      }
+    }
+  }
+  throw new Error('const ' + nombre + ' sin cierre');
 }
 
 function extraerI18N(src) {
@@ -121,8 +160,11 @@ function principal() {
   };
   vm.createContext(contexto);
   vm.runInContext(locales[0].replace('const ', 'var '), contexto);
-  const codigo = ['aleatorio', 'opciones', 'fmtNum', 'tr', 'refUso', 'generarPregunta']
-    .map(nombre => extraerFuncion(src, nombre)).join('\n');
+  const codigo = extraerConstante(src, 'SDS_PROPS').replace('const ', 'var ') + '\n' +
+    src.slice(src.indexOf('/* Pools de datos reutilizados'),
+              src.indexOf('function generarPregunta(')) + '\n' +
+    ['aleatorio', 'opciones', 'fmtNum', 'tr', 'refUso', 'generarPregunta']
+      .map(nombre => extraerFuncion(src, nombre)).join('\n');
   vm.runInContext(codigo, contexto);
 
   const grados = D.ribbons.grados;
@@ -130,11 +172,19 @@ function principal() {
   const conTemp = grados.filter(g => typeof g.temp === 'number');
   const curvas = D.solventes.filter(s => s.e === 'verificado' &&
     Array.isArray(s.c) && s.c.length >= 4);
-  console.log('Datos: %d ribbons con velocidad, %d con temperatura, %d curvas verificadas',
-              conVel.length, conTemp.length, curvas.length);
+  const refs = D.solventes.filter(s => s.e === 'verificado' &&
+    contexto.refUso(s.r) !== null && contexto.refUso(s.r) !== undefined);
+  const dens = contexto.SDS_PROPS.dens;
+  const flash = contexto.SDS_PROPS.flash;
+  console.log('Datos: %d ribbons con velocidad, %d con temperatura, %d curvas, %d referencias, %d densidades, %d inflamaciones',
+              conVel.length, conTemp.length, curvas.length, refs.length,
+              dens.length, flash.length);
   if (conVel.length < 4) throw new Error('faltan ribbons con velocidad');
   if (conTemp.length < 4) throw new Error('faltan ribbons con temperatura');
   if (curvas.length < 4) throw new Error('faltan curvas de solvente verificadas');
+  if (refs.length < 4) throw new Error('faltan referencias de solvente');
+  if (dens.length < 4) throw new Error('faltan densidades SDS con valor unico');
+  if (flash.length < 4) throw new Error('faltan puntos de inflamacion SDS con valor unico');
 
   let fallos = 0;
   const fallo = msg => {
@@ -154,7 +204,12 @@ function principal() {
         validSol.add(contexto.fmtNum(u, 1) + ' ml/h');
       }
     }));
-    const tipos = {rib_vel: 0, rib_temp: 0, sol_temp: 0};
+    const validHoras = new Set(refs.map(s =>
+      contexto.fmtNum(1000 / contexto.refUso(s.r), 1) + ' h'));
+    const validDens = new Set(dens.map(x => x.v));
+    const validFlash = new Set(flash.map(x => x.v));
+    const tipos = {rib_vel: 0, rib_temp: 0, sol_temp: 0,
+                   sol_horas: 0, sds_dens: 0, sds_flash: 0};
     let total = 0;
 
     for (const nivel of NIVELES) {
@@ -214,6 +269,15 @@ function principal() {
               fallo(idioma + ': consumo a temperatura usa los 30 °C fijos');
             }
           }
+          if (p.tipo === 'sol_horas' && !validHoras.has(p.a)) {
+            fallo(idioma + ': horas fuera de las referencias: ' + p.a);
+          }
+          if (p.tipo === 'sds_dens' && !validDens.has(p.a)) {
+            fallo(idioma + ': densidad fuera de las SDS: ' + p.a);
+          }
+          if (p.tipo === 'sds_flash' && !validFlash.has(p.a)) {
+            fallo(idioma + ': inflamacion fuera de las SDS: ' + p.a);
+          }
         }
       }
     }
@@ -221,6 +285,9 @@ function principal() {
     if (!tipos.rib_vel) fallo(idioma + ': no aparecio rib_vel');
     if (!tipos.rib_temp) fallo(idioma + ': no aparecio rib_temp');
     if (!tipos.sol_temp) fallo(idioma + ': no aparecio sol_temp');
+    if (!tipos.sol_horas) fallo(idioma + ': no aparecio sol_horas');
+    if (!tipos.sds_dens) fallo(idioma + ': no aparecio sds_dens');
+    if (!tipos.sds_flash) fallo(idioma + ': no aparecio sds_flash');
     resumen[idioma] = {total, tipos};
     console.log('%s: %d preguntas, tipos nuevos %j', idioma, total, tipos);
   }
@@ -228,7 +295,7 @@ function principal() {
   // Simulacion de examenes completos de 20 preguntas en los niveles tocados.
   LANG = 'es';
   contexto.LANG = 'es';
-  for (const nivel of [2, 4]) {
+  for (const nivel of [2, 4, 5]) {
     for (let e = 0; e < 1000; e++) {
       for (let k = 0; k < 20; k++) {
         const p = contexto.generarPregunta(nivel);

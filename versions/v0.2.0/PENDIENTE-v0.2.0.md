@@ -38,6 +38,10 @@
       construccion 25, `sw.js` alpha-23 y caché `fvl-v0.2.0-alpha-23`; 1.500
       preguntas sin fallos, tipos nuevos de ribbon/solvente, corrección 10/10 e
       historial, 5 idiomas y consola limpia.
+- [ ] **Verificación en vivo de alpha-24/build 27**: CI «Validar» y Pages en
+      `success`; `version.json` construccion 27, `sw.js` alpha-24; niveles 4 y 5
+      con los tipos nuevos (horas por litro, densidad y punto de inflamación),
+      4 opciones, corrección e historial en los 5 idiomas.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
