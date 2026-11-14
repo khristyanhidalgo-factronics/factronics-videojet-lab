@@ -78,6 +78,9 @@ th{color:var(--muted);font-weight:600}
 footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
 .hidden{display:none}
 .notice{border-left:4px solid var(--warn);padding:10px 12px;background:color-mix(in srgb,var(--warn) 8%,transparent);border-radius:8px;margin:10px 0}
+.upd{position:fixed;left:16px;right:16px;bottom:16px;z-index:60;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;background:var(--card);border:1px solid var(--accent);box-shadow:var(--shadow);border-radius:12px;padding:12px 16px;color:var(--txt)}
+.upd.hidden{display:none}
+.upd span{font-weight:600}
 .tabsmini{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
 .tabsmini button{padding:6px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--muted);cursor:pointer}
 .tabsmini button.on{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
@@ -111,6 +114,10 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
     <button data-tab="aviso" data-i18n="tab_aviso">Aviso</button>
   </nav>
 </header>
+<div id="upd_bar" class="upd hidden" role="status" aria-live="polite">
+  <span data-i18n="upd_aviso">Hay una nueva versión disponible.</span>
+  <button class="btn primary" id="upd_btn" data-i18n="upd_btn">Recargar</button>
+</div>
 <main>
   <section id="inicio" class="on">
     <div class="card">
@@ -366,6 +373,7 @@ Object.assign(I18N.es, {
   exportar:'⬇️ Exportar copia', importar:'⬆️ Importar',
   perfil_t:'Perfil para constancias', perfil_nombre:'Nombre y apellido', perfil_ph:'Nombre del participante', guardar:'Guardar',
   msg_exportado:'✅ Copia exportada.', msg_importado:'✅ Copia importada ({n} registros).',
+  upd_aviso:'Hay una nueva versión disponible.', upd_btn:'Recargar',
   msg_invalido:'❌ Archivo no válido.', msg_guardado:'✅ Nombre guardado.', participante:'Participante',
   cert_titulo:'Constancia de aprovechamiento',
   cert_sub:'Factronics Videojet Lab · Entrenamiento técnico Videojet (TTO · CIJ · LÁSER)',
@@ -398,6 +406,7 @@ Object.assign(I18N.en, {
   exportar:'⬇️ Export backup', importar:'⬆️ Import',
   perfil_t:'Profile for certificates', perfil_nombre:'Full name', perfil_ph:'Participant name', guardar:'Save',
   msg_exportado:'✅ Backup exported.', msg_importado:'✅ Backup imported ({n} records).',
+  upd_aviso:'A new version is available.', upd_btn:'Reload',
   msg_invalido:'❌ Invalid file.', msg_guardado:'✅ Name saved.', participante:'Participant',
   cert_titulo:'Certificate of achievement',
   cert_sub:'Factronics Videojet Lab · Videojet technical training (TTO · CIJ · LASER)',
@@ -430,6 +439,7 @@ Object.assign(I18N.pt, {
   exportar:'⬇️ Exportar cópia', importar:'⬆️ Importar',
   perfil_t:'Perfil para certificados', perfil_nombre:'Nome e sobrenome', perfil_ph:'Nome do participante', guardar:'Salvar',
   msg_exportado:'✅ Cópia exportada.', msg_importado:'✅ Cópia importada ({n} registros).',
+  upd_aviso:'Há uma nova versão disponível.', upd_btn:'Recarregar',
   msg_invalido:'❌ Arquivo inválido.', msg_guardado:'✅ Nome salvo.', participante:'Participante',
   cert_titulo:'Certificado de aproveitamento',
   cert_sub:'Factronics Videojet Lab · Treinamento técnico Videojet (TTO · CIJ · LASER)',
@@ -462,6 +472,7 @@ Object.assign(I18N.it, {
   exportar:'⬇️ Esporta backup', importar:'⬆️ Importa',
   perfil_t:'Profilo per gli attestati', perfil_nombre:'Nome e cognome', perfil_ph:'Nome del partecipante', guardar:'Salva',
   msg_exportado:'✅ Backup esportato.', msg_importado:'✅ Backup importato ({n} record).',
+  upd_aviso:'È disponibile una nuova versione.', upd_btn:'Ricarica',
   msg_invalido:'❌ File non valido.', msg_guardado:'✅ Nome salvato.', participante:'Partecipante',
   cert_titulo:'Attestato di partecipazione',
   cert_sub:'Factronics Videojet Lab · Formazione tecnica Videojet (TTO · CIJ · LASER)',
@@ -494,6 +505,7 @@ Object.assign(I18N.zh, {
   exportar:'⬇️ 导出备份', importar:'⬆️ 导入',
   perfil_t:'证书资料', perfil_nombre:'姓名', perfil_ph:'参与者姓名', guardar:'保存',
   msg_exportado:'✅ 备份已导出。', msg_importado:'✅ 备份已导入（{n} 条记录）。',
+  upd_aviso:'有新版本可用。', upd_btn:'重新加载',
   msg_invalido:'❌ 文件无效。', msg_guardado:'✅ 姓名已保存。', participante:'参与者',
   cert_titulo:'结业证书',
   cert_sub:'Factronics Videojet Lab · Videojet 技术培训（TTO · CIJ · 激光）',
@@ -1869,8 +1881,33 @@ $('#prof_guardar').addEventListener('click', () => {
 aplicarTema();
 aplicarIdioma();
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', aplicarTema);
+let swTeniaControl = !!(navigator.serviceWorker && navigator.serviceWorker.controller);
+let swRecarga = false;
+function mostrarAvisoActualizacion(){
+  const bar = document.getElementById('upd_bar');
+  if (bar) bar.classList.remove('hidden');
+}
 if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
-  navigator.serviceWorker.register('sw.js', {updateViaCache: 'none'}).catch(() => {});
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (swRecarga) { location.reload(); return; }
+    if (swTeniaControl) mostrarAvisoActualizacion();
+    swTeniaControl = true;
+  });
+  const updBtn = document.getElementById('upd_btn');
+  if (updBtn) updBtn.addEventListener('click', () => {
+    swRecarga = true;
+    document.getElementById('upd_bar').classList.add('hidden');
+    navigator.serviceWorker.getRegistration().then(reg => {
+      if (reg && reg.waiting) reg.waiting.postMessage('skipWaiting');
+      location.reload();
+    }).catch(() => location.reload());
+  });
+  navigator.serviceWorker.register('sw.js', {updateViaCache: 'none'}).then(reg => {
+    if (reg.waiting && navigator.serviceWorker.controller) mostrarAvisoActualizacion();
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') reg.update().catch(() => {});
+    });
+  }).catch(() => {});
 }
 </script>
 </body>

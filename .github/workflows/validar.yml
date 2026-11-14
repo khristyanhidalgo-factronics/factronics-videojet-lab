@@ -38,6 +38,8 @@ jobs:
         run: python tools/test_busqueda_sds.py
       - name: Probar busqueda de solventes por modelo, tinta y variante
         run: python tools/test_busqueda_solventes.py
+      - name: Probar aviso de actualizacion de la PWA
+        run: python tools/test_actualizacion_pwa.py
       - name: Auditar preguntas de los bancos de partes CIJ y TTO
         run: node tools/auditar_banco_partes.js
       - name: Auditar examen generado de 5 niveles
