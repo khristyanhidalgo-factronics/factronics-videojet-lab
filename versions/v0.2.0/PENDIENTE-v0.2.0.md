@@ -48,10 +48,11 @@
       construccion 29, `sw.js` alpha-25 y caché `fvl-v0.2.0-alpha-25`; 527 pares
       tinta|CAS, búsquedas `78-93-3`, `metiletilcetona` y `V401`, variantes
       `chromium`/`cromo` según idioma, 5 idiomas y consola limpia.
-- [ ] **Verificación en vivo de alpha-26/build 31**: CI «Validar» y Pages en
-      `success`; `version.json` construccion 31, `sw.js` alpha-26; botón «Ver» en
-      los 70 resultados de `78-93-3`, ficha V401 con 5 componentes, consulta
-      conservada al volver, botón traducido en EN y consola limpia.
+- [x] **Verificación en vivo de alpha-26/build 31**: CI «Validar» (run
+      `43609502890`) y Pages (run `43609502691`) en `success`; `version.json`
+      construccion 31, `sw.js` alpha-26 y caché `fvl-v0.2.0-alpha-26` con 7
+      recursos; 70 botones «Ver», ficha V401 con 5 componentes, consulta
+      conservada al volver, «View» en EN y consola limpia.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
