@@ -33,10 +33,11 @@
       `sw.js` alpha-22 y caché `fvl-v0.2.0-alpha-22`; examen «Partes TTO (120)»
       con los 2 tipos, 4 opciones únicas por pregunta, aviso, corrección 10/10,
       historial, los 5 idiomas y consola limpia.
-- [ ] **Verificación en vivo de alpha-23/build 25**: CI «Validar» y Pages en
-      `success`; `version.json` construccion 25, `sw.js` alpha-23; examen de 5
-      niveles con los tipos nuevos de ribbon y solvente, corrección e historial
-      en los 5 idiomas.
+- [x] **Verificación en vivo de alpha-23/build 25**: CI «Validar» (run
+      `43605031454`) y Pages (run `43605031038`) en `success`; `version.json`
+      construccion 25, `sw.js` alpha-23 y caché `fvl-v0.2.0-alpha-23`; 1.500
+      preguntas sin fallos, tipos nuevos de ribbon/solvente, corrección 10/10 e
+      historial, 5 idiomas y consola limpia.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
