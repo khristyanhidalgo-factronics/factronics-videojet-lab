@@ -72,6 +72,9 @@ def validar_notas():
         if publicado.get('construccion') != version.get('construccion'):
             fallos.append('docs/version.json build distinto (%s != %s)'
                           % (publicado.get('construccion'), version.get('construccion')))
+    changelog = ruta('CHANGELOG.md')
+    if not os.path.exists(changelog):
+        fallos.append('Falta CHANGELOG.md (resumen permanente de versiones)')
     print('Notas: %d versiones verificadas' % len(datos.get('versiones', [])))
 
 

@@ -97,6 +97,13 @@
       `success`; `version.json` construccion 49, `sw.js` alpha-35; chip
       Solventes con 802 curvas, búsquedas VJ1210/V401/VJ1650/UHS/sin datos,
       duplicado VJ1560/V461, 5 idiomas y consola limpia.
+- [x] **Verificación en vivo de alpha-35/build 49**: CI «Validar» (run
+      `43635962772`) y Pages (run `43635961942`) en `success`; `version.json`
+      construccion 49, `sw.js` alpha-35 y caché `fvl-v0.2.0-alpha-35` con 7
+      recursos; 802 curvas, búsquedas VJ1210/V401/UHS/sin datos, VJ1560/V461
+      con dos bases, 5 idiomas y consola limpia.
+- [x] **CHANGELOG y ROADMAP permanentes:** `CHANGELOG.md` en la raíz, ROADMAP
+      actualizado con el estado de alpha-35 y validación de existencia en CI.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),

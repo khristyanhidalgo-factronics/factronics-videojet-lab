@@ -6,11 +6,11 @@
 
 | | |
 |---|---|
-| **Versión actual** | `v0.1.0-dev` — Fundación (ver [notas de versión](#--sistema-de-notas-de-versión)) |
+| **Versión actual** | `v0.2.0-alpha` — App web offline (ver [notas de versión](#--sistema-de-notas-de-versión)) |
 | **Estado** | 🚧 En desarrollo activo |
 | **Creador** | **Khristyan Hidalgo** — Técnico · [Factronics Venezuela](https://factronics.com.ve/) |
 | **Licencia** | [MIT](LICENSE) |
-| **Idiomas** | Español (principal) · English · Português |
+| **Idiomas** | Español (principal) · English · Português · Italiano · 中文 |
 
 ---
 
@@ -31,9 +31,9 @@ Una aplicación moderna pensada para **hacer la vida más fácil a los compañer
 
 | Tecnología | Modelos de arranque | Estado |
 |---|---|---|
-| **TTO** — Transferencia Térmica | 6210 · 6230 · 6320 · 6330 · 6420 · 6530 | 🟡 Datos en extracción |
-| **CIJ** — Inyección de Tinta Continua | VJ1210–1890 (18 modelos con datos de consumibles) | 🟡 Datos en extracción |
-| **Láser** — Marcado Láser | Modelos a definir desde la documentación disponible | 🟠 Por definir |
+| **TTO** — Transferencia Térmica | 6210 · 6230 · 6320 · 6330 · 6420 · 6530 | 🟢 Datos y banco disponibles |
+| **CIJ** — Inyección de Tinta Continua | VJ1210–1890 (18 modelos con datos de consumibles) | 🟢 Datos, curvas y bancos disponibles |
+| **Láser** — Marcado Láser | 21 modelos documentados | 🟡 Partes sin P/N verificados |
 | *(Futuras: TIJ, LPA, Large Character…)* | — | 📋 Roadmap |
 
 ## Entregables (a medida que avancen las versiones)
@@ -41,7 +41,7 @@ Una aplicación moderna pensada para **hacer la vida más fácil a los compañer
 | Entregable | Estado | Dónde |
 |---|---|---|
 | 🌐 **Página principal** (landing) | ✅ Activa | [GitHub Pages](https://khristyanhidalgo-factronics.github.io/factronics-videojet-lab/) |
-| 💻 **App web offline** (PWA) | 🚧 v0.2.0 | `/docs` (una vez publicada) |
+| 💻 **App web offline** (PWA) | ✅ alpha-35 | [App en vivo](https://khristyanhidalgo-factronics.github.io/factronics-videojet-lab/app/) · `docs/app/` |
 | 📱 **APK Android nativa** | 🚧 v0.4.0 | [Releases](https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab/releases) |
 
 ## 📘 Sistema de notas de versión
@@ -55,22 +55,23 @@ Cada versión documenta **sus 5 notas**, que se conservan **para siempre** y se 
 | ✅ **HECHO** (lo que terminó) | `versions/vX.Y.Z/HECHO-vX.Y.Z.md` |
 | ⏳ **PENDIENTE** (lo que faltó) | `versions/vX.Y.Z/PENDIENTE-vX.Y.Z.md` |
 | 🗺️ **ROADMAP** (futuras versiones) | `versions/ROADMAP.md` |
+| 📋 **CHANGELOG** (resumen por versión) | `CHANGELOG.md` |
 
-Índice maestro: [`versions/INDICE.json`](versions/INDICE.json) · Convenciones: [`versions/CONVENCIONES.md`](versions/CONVENCIONES.md)
+Índice maestro: [`versions/INDICE.json`](versions/INDICE.json) · Convenciones: [`versions/CONVENCIONES.md`](versions/CONVENCIONES.md) · Historial: [`CHANGELOG.md`](CHANGELOG.md)
 
 ## Estructura del repositorio
 
 ```text
 factronics-videojet-lab/
-├─ docs/                 → Página principal (GitHub Pages, carpeta /docs)
+├─ docs/                 → GitHub Pages: landing + app offline
 │  ├─ index.html         → Landing
+│  ├─ app/               → PWA (index.html, datos.js, sw.js, banco_tto.js)
+│  ├─ notas.html         → Notas publicadas con SHA-256
 │  └─ assets/            → Logo y recursos propios
-├─ datos/                → FUENTE ÚNICA de datos (catálogo JSON)
-├─ i18n/                 → Textos multiidioma (es/en/pt) [v0.2]
+├─ datos/                → FUENTE ÚNICA de datos (catálogo JSON y análisis)
 ├─ versions/             → 🔒 Notas de versión (PLAN/BITÁCORA/HECHO/PENDIENTE/ROADMAP + índice)
-├─ web/                  → App web offline (PWA) [v0.2]
-├─ android/              → App nativa Kotlin + Compose [v0.4]
-├─ tools/                → Validadores y scripts de release [v0.5]
+├─ tools/                → Validadores, pruebas y scripts de publicación
+├─ CHANGELOG.md          → Resumen permanente por versión
 └─ version.json          → Manifiesto de versión pública
 ```
 
