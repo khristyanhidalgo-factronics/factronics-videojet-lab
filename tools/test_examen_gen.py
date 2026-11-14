@@ -13,6 +13,7 @@ Comprueba los invariantes que sostienen los tipos de pregunta:
   - el generador integra los tres tipos y el pool global de componentes SDS;
   - resumen del historial (examenes, promedio ponderado y mejor) y sus claves;
   - 131 tintas con una sola base quimica (12 valores) y respuestas traducidas;
+  - contraste explicito de pregunta (600) y opciones (500) con var(--txt);
   - respaldo con cuaderno de repaso y normalizacion de datos importados;
   - el CI ejecuta la auditoria y esta prueba.
 
@@ -223,6 +224,15 @@ class ExamenGenTest(unittest.TestCase):
                 'SOL_USOS', 'COMP_NAMES', 'TINTAS_CON_COMP'):
             self.assertIn(fragmento, self.html)
         self.assertIn('function generarPregunta(', self.html)
+
+    def test_contraste_de_pregunta_y_opciones(self):
+        for fragmento in (
+                '.q > div:first-child{color:var(--txt);font-weight:600;font-size:16px',
+                '.q .opt{',
+                'color:var(--txt);font-weight:500',
+                '.q .opt.right{',
+                '.q .opt.wrong{'):
+            self.assertIn(fragmento, self.html)
 
     def test_base_unica_y_traducida(self):
         tintas = self.datos['tintas']
