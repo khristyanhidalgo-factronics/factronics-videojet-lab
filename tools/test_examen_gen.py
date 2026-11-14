@@ -7,7 +7,8 @@ Comprueba los invariantes que sostienen los tipos de pregunta:
   - 800 curvas de solvente verificadas con al menos 4 valores unicos;
   - 16 temperaturas tabuladas (10..40 °C cada 2) y 800 referencias @30 °C;
   - claves i18n q_rib_vel, q_rib_temp y q_sol_temp en es/en/pt/it/zh;
-  - 105 densidades, 117 inflamaciones y 119 volatilidades SDS con valor unico;
+  - 105 densidades, 117 inflamaciones, 119 volatilidades y 116 colores SDS;
+  - 11 colores de tinta unicos (se excluye "No disponible.");
   - el generador integra los tres tipos y el pool global de componentes SDS;
   - resumen del historial (examenes, promedio ponderado y mejor) y sus claves;
   - el CI ejecuta la auditoria y esta prueba.
@@ -26,7 +27,8 @@ INDICE = os.path.join(RAIZ, 'docs', 'app', 'index.html')
 WORKFLOW = os.path.join(RAIZ, '.github', 'workflows', 'validar.yml')
 IDIOMAS = ('es', 'en', 'pt', 'it', 'zh')
 CLAVES_I18N = ('q_rib_vel', 'q_rib_temp', 'q_sol_temp',
-               'q_sol_horas', 'q_sds_dens', 'q_sds_flash', 'q_sds_volat')
+               'q_sol_horas', 'q_sds_dens', 'q_sds_flash', 'q_sds_volat',
+               'q_tinta_color')
 
 
 def cargar_datos():
@@ -112,7 +114,7 @@ class ExamenGenTest(unittest.TestCase):
         self.assertGreaterEqual(len(horas), 4)
 
     def test_propiedades_sds_con_valor_unico(self):
-        dens, flash, volat = [], [], []
+        dens, flash, volat, colores = [], [], [], []
         ambiguas = set()
         for codigo, tinta in self.datos['tintas'].items():
             fichas = tinta.get('fichas') or []
@@ -122,6 +124,7 @@ class ExamenGenTest(unittest.TestCase):
             d = valores('densidad_relativa')
             f = valores('punto_inflamacion')
             v = valores('volatilidad')
+            col = valores('color')
             if len(d) == 1:
                 m = re.match(r'^-?\d+(?:\.\d+)?', next(iter(d)))
                 if m:
@@ -138,15 +141,23 @@ class ExamenGenTest(unittest.TestCase):
                 volat.append(next(iter(v)))
             elif len(v) > 1:
                 ambiguas.add(codigo)
+            if len(col) == 1 and next(iter(col)) != 'No disponible.':
+                colores.append(next(iter(col)))
+            elif len(col) > 1:
+                ambiguas.add(codigo)
         self.assertEqual(105, len(dens))
         self.assertEqual(25, len(set(dens)))
         self.assertEqual(117, len(flash))
         self.assertEqual(18, len(set(flash)))
         self.assertEqual(119, len(volat))
         self.assertEqual(25, len(set(volat)))
+        self.assertEqual(116, len(colores))
+        self.assertEqual(11, len(set(colores)))
+        self.assertNotIn('No disponible.', set(colores))
         self.assertGreaterEqual(len(set(dens)), 4)
         self.assertGreaterEqual(len(set(flash)), 4)
         self.assertGreaterEqual(len(set(volat)), 4)
+        self.assertGreaterEqual(len(set(colores)), 4)
         self.assertIn('V4278', ambiguas)
         self.assertIn('V4211', ambiguas)
         self.assertIn('V526', ambiguas)
@@ -172,7 +183,8 @@ class ExamenGenTest(unittest.TestCase):
             horas = re.search(r"q_sol_horas\s*:\s*'([^']*)'", bloque).group(1)
             for marca in ('{m}', '{t}', '{u}', '{T}'):
                 self.assertIn(marca, horas, '%s en %s' % (marca, idioma))
-            for clave in ('q_sds_dens', 'q_sds_flash', 'q_sds_volat'):
+            for clave in ('q_sds_dens', 'q_sds_flash', 'q_sds_volat',
+                          'q_tinta_color'):
                 texto = re.search(
                     r"%s\s*:\s*'((?:\\.|[^'\\])*)'" % clave,
                     bloque).group(1)
@@ -182,9 +194,10 @@ class ExamenGenTest(unittest.TestCase):
         for fragmento in (
                 "'q_rib_vel'", "'q_rib_temp'", "'q_sol_temp'",
                 "'q_sol_horas'", "'q_sds_dens'", "'q_sds_flash'", "'q_sds_volat'",
-                "tipo:'rib_vel'", "tipo:'rib_temp'", "tipo:'sol_temp'",
+                "'q_tinta_color'", "tipo:'rib_vel'", "tipo:'rib_temp'", "tipo:'sol_temp'",
                 "tipo:'sol_horas'", "tipo:'sds_dens'", "tipo:'sds_flash'",
-                "tipo:'sds_volat'", 'SDS_PROPS.volat',
+                "tipo:'sds_volat'", "tipo:'tinta_color'", 'SDS_PROPS.volat',
+                'TINTAS_COLOR', 'COLORES_TINTA',
                 "typeof g.vel === 'number'", "typeof g.temp === 'number'",
                 'Array.isArray(s.c)', "g.col !== 'Colors'", 'SDS_PROPS',
                 'SOL_USOS', 'COMP_NAMES', 'TINTAS_CON_COMP'):
