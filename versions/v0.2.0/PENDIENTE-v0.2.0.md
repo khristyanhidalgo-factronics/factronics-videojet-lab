@@ -68,10 +68,11 @@
       construccion 37, `sw.js` alpha-29 y caché `fvl-v0.2.0-alpha-29` con 7
       recursos; `tinta_color` con 116 tintas y 11 colores, 4 opciones
       traducidas, corrección 1/1, constancia y consola limpia.
-- [ ] **Verificación en vivo de alpha-30/build 39**: CI «Validar» y Pages en
-      `success`; `version.json` construccion 39, `sw.js` alpha-30; respaldo con
-      perfil, historial y repaso, importación saneada, mensaje con el total y
-      consola limpia.
+- [x] **Verificación en vivo de alpha-30/build 39**: CI «Validar» (run
+      `43624507272`) y Pages (run `43624506914`) en `success`; `version.json`
+      construccion 39, `sw.js` alpha-30 y caché `fvl-v0.2.0-alpha-30` con 7
+      recursos; importación real con perfil, historial y repaso saneado, mensaje
+      con 3 registros y consola limpia.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
