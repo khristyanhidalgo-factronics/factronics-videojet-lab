@@ -101,8 +101,18 @@
       5 idiomas. `tools/auditar_banco_partes.js` audita 237 candidatos × 25
       variantes × 5 idiomas y 2.000 exámenes simulados; `tools/test_banco_partes.py`
       valida conteos, traducciones y claves i18n. Ambos están en el CI.
+- [x] **Banco de partes TTO (120):** fuente de examen separada que usa solo los
+      **120 P/N TTO verificados**; 120 preguntas P/N→descripción y 120
+      descripción→P/N (120 descripciones únicas, 0 ambiguas en los 5 idiomas).
+      El generador se generalizó por tecnología (`partesVerificadas`,
+      `candidatosPartes`, `generarPreguntaPartes`) con claves i18n propias;
+      distractores solo de datos verificados, aviso visible, etiqueta e historial
+      «Partes TTO (120)». `tools/auditar_banco_partes.js` audita ambos bancos
+      (237 + 240 preguntas × 25 variantes × 5 idiomas y 2.000 exámenes simulados
+      por banco) y `tools/test_banco_partes_tto.py` valida conteos, traducciones,
+      ambigüedad y claves i18n. Verificado en navegador local en los 5 idiomas.
 - [x] **Offline:** `manifest.webmanifest` + `sw.js` (precache y cache-first) + icono SVG;
-      instalación como PWA desde el navegador. Caché actualizada a `fvl-v0.2.0-alpha-21`.
+      instalación como PWA desde el navegador. Caché actualizada a `fvl-v0.2.0-alpha-22`.
 
 ## Publicación
 - [x] Landing con acceso directo a la app y tarjeta en Descargas (estado v0.2.0-alpha).

@@ -1,17 +1,20 @@
 #!/usr/bin/env node
 'use strict';
 /*
- * Auditoria del banco de partes CIJ de la app.
+ * Auditoria de los bancos de partes CIJ y TTO de la app.
  *
  * Extrae de docs/app/index.html las funciones reales del generador
- * (partesCijVerificadas, candidatosPartes, generarPreguntaPartes, opciones y
- * tr) y las ejecuta contra docs/app/datos.js en los cinco idiomas.
+ * (partesVerificadas, partesCijVerificadas, candidatosPartes,
+ * generarPreguntaPartes, opciones y tr) y las ejecuta contra
+ * docs/app/datos.js en los cinco idiomas.
  *
- * Comprueba, para cada pregunta:
+ * Comprueba, para cada banco y cada pregunta:
  *   - cuatro opciones distintas;
  *   - la respuesta correcta esta incluida una sola vez;
  *   - no quedan marcadores {n} ni {d} sin sustituir;
- *   - las 5 descripciones ambiguas nunca generan preguntas descripcion->P/N.
+ *   - la referencia corresponde a la tecnologia de la pregunta;
+ *   - las descripciones ambiguas de CIJ nunca generan preguntas
+ *     descripcion->P/N.
  *
  * Uso:
  *   node tools/auditar_banco_partes.js
@@ -22,14 +25,36 @@ const vm = require('vm');
 
 const RAIZ = path.resolve(__dirname, '..');
 const IDIOMAS = ['es', 'en', 'pt', 'it', 'zh'];
-const CLAVES = ['fuente_partes', 'q_part_pn', 'q_part_desc',
-                'ref_partes', 'partes_nota'];
-const AMBIGUAS = [
-  'Filter Element',
-  'Filter Cover',
-  'Beacon Assembly',
-  'Ribbon Cable Spare Kit',
-  'Printhead Photocell Holder 6 mm, 8 mm, 18 mm',
+
+const BANCOS = [
+  {
+    tec: 'CIJ',
+    nombre: 'CIJ',
+    pn: 124,
+    desc: 113,
+    descUnicas: 118,
+    claves: ['fuente_partes', 'q_part_pn', 'q_part_desc',
+             'ref_partes', 'partes_nota'],
+    ref: 'ref_partes',
+    ambiguas: [
+      'Filter Element',
+      'Filter Cover',
+      'Beacon Assembly',
+      'Ribbon Cable Spare Kit',
+      'Printhead Photocell Holder 6 mm, 8 mm, 18 mm',
+    ],
+  },
+  {
+    tec: 'TTO',
+    nombre: 'TTO',
+    pn: 120,
+    desc: 120,
+    descUnicas: 120,
+    claves: ['fuente_partes_tto', 'q_part_tto_pn', 'q_part_tto_desc',
+             'ref_partes_tto', 'partes_tto_nota'],
+    ref: 'ref_partes_tto',
+    ambiguas: [],
+  },
 ];
 
 function leer(ruta) {
@@ -71,7 +96,7 @@ function extraerFuncion(src, nombre) {
   throw new Error('function ' + nombre + ' sin cierre');
 }
 
-function extraerI18N(src) {
+function extraerI18N(src, claves) {
   const i18n = {};
   IDIOMAS.forEach(idioma => { i18n[idioma] = {}; });
   for (const idioma of IDIOMAS) {
@@ -79,7 +104,7 @@ function extraerI18N(src) {
       'Object\\.assign\\(I18N\\.' + idioma + ', \\{([\\s\\S]*?)\\n\\}\\);', 'g');
     let bloque;
     while ((bloque = patron.exec(src))) {
-      for (const clave of CLAVES) {
+      for (const clave of claves) {
         const valor = bloque[1].match(
           new RegExp('(?:^|\\n)\\s*' + clave + "\\s*:\\s*'((?:\\\\.|[^'\\\\])*)'"));
         if (valor) i18n[idioma][clave] = valor[1].replace(/\\'/g, "'");
@@ -100,11 +125,13 @@ function principal() {
   const script = html.match(/<script>\s*([\s\S]*?)\s*<\/script>/);
   if (!script) throw new Error('no se encontro el script principal de index.html');
   const src = script[1];
-  const i18n = extraerI18N(src);
+
+  const clavesTodas = [...new Set(BANCOS.flatMap(b => b.claves))];
+  const i18n = extraerI18N(src, clavesTodas);
 
   const faltan = [];
   for (const idioma of IDIOMAS) {
-    for (const clave of CLAVES) {
+    for (const clave of clavesTodas) {
       if (!i18n[idioma][clave]) faltan.push(idioma + '.' + clave);
     }
   }
@@ -120,97 +147,138 @@ function principal() {
     return (m && m[LANG]) || s;
   };
   vm.createContext(contexto);
-  const codigo = ['opciones', 'partesCijVerificadas', 'candidatosPartes',
-                  'generarPreguntaPartes']
+  const codigo = ['opciones', 'partesVerificadas', 'partesCijVerificadas',
+                  'candidatosPartes', 'generarPreguntaPartes']
     .map(nombre => extraerFuncion(src, nombre)).join('\n');
   vm.runInContext(codigo, contexto);
 
   let fallos = 0;
   const fallo = msg => {
     fallos++;
-    if (fallos <= 20) console.error('FALLO: ' + msg);
+    if (fallos <= 30) console.error('FALLO: ' + msg);
   };
 
-  const partes = contexto.partesCijVerificadas();
-  const candidatos = contexto.candidatosPartes();
-  const pn = candidatos.filter(c => c.tipo === 'pn');
-  const desc = candidatos.filter(c => c.tipo === 'desc');
-  console.log('Banco: %d P/N, %d descripciones inequivocas, %d candidatos',
-              partes.length, desc.length, candidatos.length);
-  if (partes.length !== 124) fallo('se esperaban 124 P/N verificados');
-  if (pn.length !== 124) fallo('se esperaban 124 preguntas P/N->descripcion');
-  if (desc.length !== 113) fallo('se esperaban 113 preguntas descripcion->P/N');
-
-  for (const idioma of IDIOMAS) {
-    LANG = idioma;
-    const descripciones = new Set(partes.map(p => contexto.tr(p.d)));
-    const pns = new Set(partes.map(p => p.n));
-    if (descripciones.size !== 118) {
-      fallo(idioma + ': se esperaban 118 descripciones traducidas');
+  for (const banco of BANCOS) {
+    const partes = contexto.partesVerificadas(banco.tec);
+    const candidatos = contexto.candidatosPartes(banco.tec);
+    const pn = candidatos.filter(c => c.tipo === 'pn');
+    const desc = candidatos.filter(c => c.tipo === 'desc');
+    console.log('Banco %s: %d P/N, %d descripciones inequivocas, %d candidatos',
+                banco.nombre, partes.length, desc.length, candidatos.length);
+    if (partes.length !== banco.pn) {
+      fallo(banco.nombre + ': se esperaban ' + banco.pn + ' P/N verificados');
     }
-    if (pns.size !== 124) fallo(idioma + ': se esperaban 124 P/N unicos');
-    const ambiguas = new Set(AMBIGUAS.map(d => {
-      const p = partes.find(x => x.d === d);
-      return p ? contexto.tr(p.d) : d;
-    }));
-    for (const c of desc) {
-      const d = contexto.tr(c.p.d);
-      if (ambiguas.has(d)) {
-        fallo(idioma + ': descripcion ambigua en candidato desc->P/N: ' + d);
-      }
-      const mismos = partes.filter(x => contexto.tr(x.d) === d);
-      if (new Set(mismos.map(x => x.n)).size !== 1) {
-        fallo(idioma + ': descripcion sin P/N unico: ' + d);
-      }
+    if (pn.length !== banco.pn) {
+      fallo(banco.nombre + ': se esperaban ' + banco.pn +
+            ' preguntas P/N->descripcion');
+    }
+    if (desc.length !== banco.desc) {
+      fallo(banco.nombre + ': se esperaban ' + banco.desc +
+            ' preguntas descripcion->P/N');
     }
     for (const c of candidatos) {
-      for (let k = 0; k < 25; k++) {
-        const p = contexto.generarPreguntaPartes(c);
-        if (!p.q || /\{(n|d)\}/.test(p.q)) {
-          fallo(idioma + ': marcador sin sustituir en ' + c.p.n);
+      if (c.tec !== banco.tec) {
+        fallo(banco.nombre + ': candidato con tecnologia ' + c.tec);
+      }
+    }
+
+    for (const idioma of IDIOMAS) {
+      LANG = idioma;
+      const descripciones = new Set(partes.map(p => contexto.tr(p.d)));
+      const pns = new Set(partes.map(p => p.n));
+      if (descripciones.size !== banco.descUnicas) {
+        fallo(idioma + ': ' + banco.nombre + ': se esperaban ' +
+              banco.descUnicas + ' descripciones traducidas');
+      }
+      if (pns.size !== banco.pn) {
+        fallo(idioma + ': ' + banco.nombre + ': se esperaban ' +
+              banco.pn + ' P/N unicos');
+      }
+      const ambiguas = new Set(banco.ambiguas.map(d => {
+        const p = partes.find(x => x.d === d);
+        return p ? contexto.tr(p.d) : d;
+      }));
+      for (const c of desc) {
+        const d = contexto.tr(c.p.d);
+        if (ambiguas.has(d)) {
+          fallo(idioma + ': ' + banco.nombre +
+                ': descripcion ambigua en candidato desc->P/N: ' + d);
         }
-        if (!Array.isArray(p.ops) || p.ops.length !== 4) {
-          fallo(idioma + ': ' + c.p.n + ' no tiene 4 opciones');
-          continue;
+        const mismos = partes.filter(x => contexto.tr(x.d) === d);
+        if (new Set(mismos.map(x => x.n)).size !== 1) {
+          fallo(idioma + ': ' + banco.nombre +
+                ': descripcion sin P/N unico: ' + d);
         }
-        if (new Set(p.ops).size !== p.ops.length) {
-          fallo(idioma + ': opciones repetidas en ' + c.p.n);
-        }
-        if (!p.ops.includes(p.a) || p.ops.filter(x => x === p.a).length !== 1) {
-          fallo(idioma + ': respuesta ausente o repetida en ' + c.p.n);
-        }
-        if (c.tipo === 'pn') {
-          if (p.a !== contexto.tr(c.p.d)) fallo(idioma + ': descripcion incorrecta');
-          if (!p.q.includes(c.p.n)) fallo(idioma + ': falta el P/N en la pregunta');
-        } else {
-          if (p.a !== c.p.n) fallo(idioma + ': P/N incorrecto');
-          if (!p.q.includes(contexto.tr(c.p.d))) {
-            fallo(idioma + ': falta la descripcion en la pregunta');
+      }
+      for (const c of candidatos) {
+        for (let k = 0; k < 25; k++) {
+          const p = contexto.generarPreguntaPartes(c);
+          if (!p.q || /\{(n|d)\}/.test(p.q)) {
+            fallo(idioma + ': ' + banco.nombre +
+                  ': marcador sin sustituir en ' + c.p.n);
+          }
+          if (!Array.isArray(p.ops) || p.ops.length !== 4) {
+            fallo(idioma + ': ' + banco.nombre + ': ' + c.p.n +
+                  ' no tiene 4 opciones');
+            continue;
+          }
+          if (new Set(p.ops).size !== p.ops.length) {
+            fallo(idioma + ': ' + banco.nombre +
+                  ': opciones repetidas en ' + c.p.n);
+          }
+          if (!p.ops.includes(p.a) || p.ops.filter(x => x === p.a).length !== 1) {
+            fallo(idioma + ': ' + banco.nombre +
+                  ': respuesta ausente o repetida en ' + c.p.n);
+          }
+          if (p.ref !== t(banco.ref)) {
+            fallo(idioma + ': ' + banco.nombre +
+                  ': referencia incorrecta en ' + c.p.n);
+          }
+          if (c.tipo === 'pn') {
+            if (p.a !== contexto.tr(c.p.d)) {
+              fallo(idioma + ': ' + banco.nombre +
+                    ': descripcion incorrecta en ' + c.p.n);
+            }
+            if (!p.q.includes(c.p.n)) {
+              fallo(idioma + ': ' + banco.nombre +
+                    ': falta el P/N en la pregunta ' + c.p.n);
+            }
+          } else {
+            if (p.a !== c.p.n) {
+              fallo(idioma + ': ' + banco.nombre +
+                    ': P/N incorrecto en ' + c.p.n);
+            }
+            if (!p.q.includes(contexto.tr(c.p.d))) {
+              fallo(idioma + ': ' + banco.nombre +
+                    ': falta la descripcion en la pregunta ' + c.p.n);
+            }
           }
         }
       }
     }
-  }
 
-  // Simulacion de examenes completos: 20 preguntas sin repetir candidato.
-  LANG = 'es';
-  for (let e = 0; e < 2000; e++) {
-    const copia = contexto.candidatosPartes();
-    const elegidas = [];
-    while (elegidas.length < 20 && copia.length) {
-      elegidas.push(copia.splice(Math.floor(Math.random() * copia.length), 1)[0]);
-    }
-    if (elegidas.length !== 20) {
-      fallo('un examen de 20 preguntas no se pudo completar');
-      break;
-    }
-    const claves = new Set(elegidas.map(c => c.tipo + ':' + c.p.n));
-    if (claves.size !== elegidas.length) fallo('candidato repetido en un examen');
-    for (const c of elegidas) {
-      const p = contexto.generarPreguntaPartes(c);
-      if (p.ops.length !== 4 || new Set(p.ops).size !== 4 ||
-          !p.ops.includes(p.a)) {
-        fallo('pregunta invalida en simulacion de examen');
+    // Simulacion de examenes completos: 20 preguntas sin repetir candidato.
+    LANG = 'es';
+    for (let e = 0; e < 2000; e++) {
+      const copia = contexto.candidatosPartes(banco.tec);
+      const elegidas = [];
+      while (elegidas.length < 20 && copia.length) {
+        elegidas.push(copia.splice(Math.floor(Math.random() * copia.length), 1)[0]);
+      }
+      if (elegidas.length !== 20) {
+        fallo(banco.nombre + ': un examen de 20 preguntas no se pudo completar');
+        break;
+      }
+      const claves = new Set(elegidas.map(c => c.tipo + ':' + c.p.n));
+      if (claves.size !== elegidas.length) {
+        fallo(banco.nombre + ': candidato repetido en un examen');
+      }
+      for (const c of elegidas) {
+        const p = contexto.generarPreguntaPartes(c);
+        if (p.ops.length !== 4 || new Set(p.ops).size !== 4 ||
+            !p.ops.includes(p.a)) {
+          fallo(banco.nombre + ': pregunta invalida en simulacion de examen');
+        }
       }
     }
   }
@@ -219,7 +287,10 @@ function principal() {
     console.error('FALLOS: ' + fallos);
     process.exit(1);
   }
-  console.log('OK: 5 idiomas, 237 candidatos, 0 ambiguedades, 0 opciones invalidas');
+  const resumen = BANCOS.map(b => b.nombre + ' ' + b.pn + ' P/N (' +
+                                 (b.pn + b.desc) + ' preguntas)').join(', ');
+  console.log('OK: 5 idiomas, ' + resumen +
+              ', 0 ambiguedades, 0 opciones invalidas');
 }
 
 try {

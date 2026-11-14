@@ -151,9 +151,12 @@ class BancoPartesCijTest(unittest.TestCase):
             self.assertIn('function ' + nombre + '(', self.html)
         self.assertIn("fuente === 'partes'", self.html)
         self.assertIn("p.e === 'verificado'", self.html)
-        self.assertIn("t('q_part_desc')", self.html)
-        self.assertIn("t('q_part_pn')", self.html)
-        self.assertIn("t('ref_partes')", self.html)
+        self.assertIn("'q_part_desc'", self.html)
+        self.assertIn("'q_part_pn'", self.html)
+        self.assertIn("'ref_partes'", self.html)
+        self.assertIn("t(kdesc)", self.html)
+        self.assertIn("t(kpn)", self.html)
+        self.assertIn("t(kref)", self.html)
 
 
 if __name__ == '__main__':

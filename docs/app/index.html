@@ -192,6 +192,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
             <option value="banco" data-i18n="fuente_banco">Banco TTO (372)</option>
             <option value="vel" data-i18n="fuente_vel">Velocidades CIJ (266)</option>
             <option value="partes" data-i18n="fuente_partes">Partes CIJ (124)</option>
+            <option value="partes_tto" data-i18n="fuente_partes_tto">Partes TTO (120)</option>
           </select></div>
         <div id="ex_nivel_box"><label class="small" for="ex_nivel" data-i18n="ex_nivel">Nivel</label><br>
           <select id="ex_nivel">
@@ -553,7 +554,12 @@ Object.assign(I18N.es, {
   q_part_pn:'¿Cuál es la descripción de la parte CIJ {n}?',
   q_part_desc:'¿Qué P/N verificado corresponde a la descripción «{d}»?',
   ref_partes:'partes_cij (solo P/N verificados)',
-  partes_nota:'Banco de partes CIJ con 124 P/N verificados. Quedan fuera los borradores y el OCR sin revisar.'
+  partes_nota:'Banco de partes CIJ con 124 P/N verificados. Quedan fuera los borradores y el OCR sin revisar.',
+  fuente_partes_tto:'Partes TTO (120)',
+  q_part_tto_pn:'¿Cuál es la descripción de la parte TTO {n}?',
+  q_part_tto_desc:'¿Qué P/N verificado de TTO corresponde a la descripción «{d}»?',
+  ref_partes_tto:'partes_tto (solo P/N verificados)',
+  partes_tto_nota:'Banco de partes TTO con 120 P/N verificados. Solo se usan descripciones oficiales ya traducidas.'
 });
 Object.assign(I18N.en, {
   vel_t:'CIJ line speed', vel_s:'Nominal speed by model, nozzle and font, read from the official v9.7 calculators (decoded draft).',
@@ -575,7 +581,12 @@ Object.assign(I18N.en, {
   q_part_pn:'What is the description of CIJ part {n}?',
   q_part_desc:'Which verified P/N matches the description "{d}"?',
   ref_partes:'partes_cij (verified P/N only)',
-  partes_nota:'CIJ parts bank with 124 verified P/Ns. Drafts and unreviewed OCR are excluded.'
+  partes_nota:'CIJ parts bank with 124 verified P/Ns. Drafts and unreviewed OCR are excluded.',
+  fuente_partes_tto:'TTO parts (120)',
+  q_part_tto_pn:'What is the description of TTO part {n}?',
+  q_part_tto_desc:'Which verified TTO P/N matches the description "{d}"?',
+  ref_partes_tto:'partes_tto (verified P/N only)',
+  partes_tto_nota:'TTO parts bank with 120 verified P/Ns. Only official, already translated descriptions are used.'
 });
 Object.assign(I18N.pt, {
   vel_t:'Velocidade de linha CIJ', vel_s:'Velocidade nominal por modelo, bocal e fonte, lida dos calculadores oficiais v9.7 (rascunho decodificado).',
@@ -597,7 +608,12 @@ Object.assign(I18N.pt, {
   q_part_pn:'Qual é a descrição da peça CIJ {n}?',
   q_part_desc:'Qual P/N verificado corresponde à descrição «{d}»?',
   ref_partes:'partes_cij (apenas P/N verificados)',
-  partes_nota:'Banco de peças CIJ com 124 P/Ns verificados. Ficam de fora os rascunhos e o OCR não revisado.'
+  partes_nota:'Banco de peças CIJ com 124 P/Ns verificados. Ficam de fora os rascunhos e o OCR não revisado.',
+  fuente_partes_tto:'Peças TTO (120)',
+  q_part_tto_pn:'Qual é a descrição da peça TTO {n}?',
+  q_part_tto_desc:'Qual P/N verificado de TTO corresponde à descrição «{d}»?',
+  ref_partes_tto:'partes_tto (apenas P/N verificados)',
+  partes_tto_nota:'Banco de peças TTO com 120 P/Ns verificados. São usadas apenas descrições oficiais já traduzidas.'
 });
 Object.assign(I18N.it, {
   vel_t:'Velocità di linea CIJ', vel_s:'Velocità nominale per modello, ugello e font, letta dai calcolatori ufficiali v9.7 (bozza decodificata).',
@@ -619,7 +635,12 @@ Object.assign(I18N.it, {
   q_part_pn:'Qual è la descrizione del ricambio CIJ {n}?',
   q_part_desc:'Quale P/N verificato corrisponde alla descrizione «{d}»?',
   ref_partes:'partes_cij (solo P/N verificati)',
-  partes_nota:'Banca ricambi CIJ con 124 P/N verificati. Restano esclusi le bozze e l’OCR non revisionato.'
+  partes_nota:'Banca ricambi CIJ con 124 P/N verificati. Restano esclusi le bozze e l’OCR non revisionato.',
+  fuente_partes_tto:'Parti TTO (120)',
+  q_part_tto_pn:'Qual è la descrizione del ricambio TTO {n}?',
+  q_part_tto_desc:'Quale P/N TTO verificato corrisponde alla descrizione «{d}»?',
+  ref_partes_tto:'partes_tto (solo P/N verificati)',
+  partes_tto_nota:'Banca ricambi TTO con 120 P/N verificati. Si usano solo descrizioni ufficiali già tradotte.'
 });
 Object.assign(I18N.zh, {
   vel_t:'CIJ 线速度', vel_s:'按型号、喷嘴和字体读取官方 v9.7 计算器的额定速度（解码草稿）。',
@@ -641,7 +662,12 @@ Object.assign(I18N.zh, {
   q_part_pn:'CIJ 部件 {n} 的描述是什么？',
   q_part_desc:'描述“{d}”对应哪个已验证 P/N？',
   ref_partes:'partes_cij（仅已验证 P/N）',
-  partes_nota:'CIJ 部件题库，仅包含 124 个已验证 P/N。草稿和未审核的 OCR 不纳入。'
+  partes_nota:'CIJ 部件题库，仅包含 124 个已验证 P/N。草稿和未审核的 OCR 不纳入。',
+  fuente_partes_tto:'TTO 部件（120）',
+  q_part_tto_pn:'TTO 部件 {n} 的描述是什么？',
+  q_part_tto_desc:'描述“{d}”对应哪个已验证 TTO P/N？',
+  ref_partes_tto:'partes_tto（仅已验证 P/N）',
+  partes_tto_nota:'TTO 部件题库，仅包含 120 个已验证 P/N。仅使用已翻译的官方描述。'
 });
 let LANG = localStorage.getItem('fvl_lang') || 'es';
 const t = (k) => (I18N[LANG] && I18N[LANG][k]) || I18N.es[k] || k;
@@ -1096,37 +1122,44 @@ function generarPreguntaVel(e){
   return {q:t('q_vel').replace('{m}', modelo).replace('{b}', e.b).replace('{f}', e.f),
     a:vel, ops:opciones(vel, pool), ref:t('ref_vel')};
 }
-function partesCijVerificadas(){
-  return (D.partes || []).filter(p => p.t === 'CIJ' && p.e === 'verificado' && p.n && p.d);
+function partesVerificadas(tec){
+  return (D.partes || []).filter(p => p.t === tec && p.e === 'verificado' && p.n && p.d);
 }
-function candidatosPartes(){
-  const partes = partesCijVerificadas();
+function partesCijVerificadas(){ return partesVerificadas('CIJ'); }
+function candidatosPartes(tec){
+  tec = tec || 'CIJ';
+  const partes = partesVerificadas(tec);
   const porDesc = new Map();
   partes.forEach(p => {
     const d = tr(p.d);
     if (!porDesc.has(d)) porDesc.set(d, []);
     porDesc.get(d).push(p.n);
   });
-  const cands = partes.map(p => ({tipo: 'pn', p}));
+  const cands = partes.map(p => ({tipo: 'pn', p, tec}));
   porDesc.forEach(pns => {
     const unicos = [...new Set(pns)];
     if (unicos.length === 1) {
       const p = partes.find(x => x.n === unicos[0]);
-      if (p) cands.push({tipo: 'desc', p});
+      if (p) cands.push({tipo: 'desc', p, tec});
     }
   });
   return cands;
 }
 function generarPreguntaPartes(cand){
-  const partes = partesCijVerificadas();
+  const tec = cand.tec || 'CIJ';
+  const partes = partesVerificadas(tec);
   const p = cand.p;
+  const tto = tec === 'TTO';
+  const kpn = tto ? 'q_part_tto_pn' : 'q_part_pn';
+  const kdesc = tto ? 'q_part_tto_desc' : 'q_part_desc';
+  const kref = tto ? 'ref_partes_tto' : 'ref_partes';
   if (cand.tipo === 'desc') {
-    return {q: t('q_part_desc').replace('{d}', tr(p.d)), a: p.n,
-      ops: opciones(p.n, partes.map(x => x.n)), ref: t('ref_partes')};
+    return {q: t(kdesc).replace('{d}', tr(p.d)), a: p.n,
+      ops: opciones(p.n, partes.map(x => x.n)), ref: t(kref)};
   }
   const d = tr(p.d);
-  return {q: t('q_part_pn').replace('{n}', p.n), a: d,
-    ops: opciones(d, [...new Set(partes.map(x => tr(x.d)))]), ref: t('ref_partes')};
+  return {q: t(kpn).replace('{n}', p.n), a: d,
+    ops: opciones(d, [...new Set(partes.map(x => tr(x.d)))]), ref: t(kref)};
 }
 function iniciarExamen(){
   const fuente = $('#ex_fuente').value;
@@ -1141,15 +1174,18 @@ function iniciarExamen(){
     }
     examen = {fuente: 'vel', nivel: t('fuente_vel'), titulo: t('fuente_vel'),
       nota: t('vel_nota'), preguntas: elegidas, respuestas: {}, corregido: false};
-  } else if (fuente === 'partes') {
-    const copia = candidatosPartes();
+  } else if (fuente === 'partes' || fuente === 'partes_tto') {
+    const tec = fuente === 'partes_tto' ? 'TTO' : 'CIJ';
+    const copia = candidatosPartes(tec);
     const elegidas = [];
     while (elegidas.length < cant && copia.length) {
       const cand = copia.splice(Math.floor(Math.random() * copia.length), 1)[0];
       elegidas.push(generarPreguntaPartes(cand));
     }
-    examen = {fuente: 'partes', nivel: t('fuente_partes'), titulo: t('fuente_partes'),
-      nota: t('partes_nota'), preguntas: elegidas, respuestas: {}, corregido: false};
+    const titulo = tec === 'TTO' ? t('fuente_partes_tto') : t('fuente_partes');
+    const nota = tec === 'TTO' ? t('partes_tto_nota') : t('partes_nota');
+    examen = {fuente, nivel: titulo, titulo, nota,
+      preguntas: elegidas, respuestas: {}, corregido: false};
   } else if (fuente === 'banco' && window.BANCO_TTO && BANCO_TTO.preguntas.length) {
     const tipo = $('#ex_tipo').value;
     const pool = BANCO_TTO.preguntas.filter(p => tipo === 'todas' || p.t === tipo);
