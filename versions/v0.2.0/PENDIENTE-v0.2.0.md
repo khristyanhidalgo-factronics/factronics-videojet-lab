@@ -93,6 +93,10 @@
       construccion 47, `sw.js` alpha-34 y caché `fvl-v0.2.0-alpha-34` con 7
       recursos; pregunta y opciones con contraste 14,10:1 (oscuro) y 17,85:1
       (claro), estados 11,06–15,63:1, capturas y consola limpia.
+- [ ] **Verificación en vivo de alpha-35/build 49**: CI «Validar» y Pages en
+      `success`; `version.json` construccion 49, `sw.js` alpha-35; chip
+      Solventes con 802 curvas, búsquedas VJ1210/V401/VJ1650/UHS/sin datos,
+      duplicado VJ1560/V461, 5 idiomas y consola limpia.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
