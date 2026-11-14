@@ -178,3 +178,4 @@
 - [x] **Verificación en vivo de alpha-35/build 49:** CI «Validar» (run `43635962772`) y Pages (run `43635961942`) en success; `version.json` build 49, `sw.js` alpha-35 y caché `fvl-v0.2.0-alpha-35` con 7 recursos. 802 curvas, búsquedas de modelo/tinta/estado, VJ1560/V461 con dos bases, 5 idiomas y consola limpia.
 - [x] **Sistema de notas completo:** `CHANGELOG.md` en la raíz, ROADMAP actualizado y validación de su existencia en `tools/validar_repo.py`.
 - [x] **Compatibilidad P/N→modelos CIJ:** 124 preguntas nuevas con 18 conjuntos de modelos; CIJ 361 candidatos y TTO 240. Auditoría de 5 idiomas y prueba CIJ de 8 casos; verificado en el flujo real con 20 preguntas.
+- [x] **Verificación en vivo de alpha-36/build 51:** CI «Validar» (run `43637148231`) y Pages (run `43637147879`) en success; `version.json` build 51, `sw.js` alpha-36 y caché `fvl-v0.2.0-alpha-36` con 7 recursos. 20 preguntas con 13 de modelos, 4 opciones, 5 idiomas, 1/1 y consola limpia.
