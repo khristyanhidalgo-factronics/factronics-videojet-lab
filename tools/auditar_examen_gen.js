@@ -178,10 +178,11 @@ function principal() {
   const dens = contexto.SDS_PROPS.dens;
   const flash = contexto.SDS_PROPS.flash;
   const volat = contexto.SDS_PROPS.volat;
+  const ebull = contexto.SDS_PROPS.ebull;
   const tcolor = contexto.TINTAS_COLOR;
-  console.log('Datos: %d ribbons con velocidad, %d con temperatura, %d curvas, %d referencias, %d densidades, %d inflamaciones, %d volatilidades, %d colores de tinta',
+  console.log('Datos: %d ribbons con velocidad, %d con temperatura, %d curvas, %d referencias, %d densidades, %d inflamaciones, %d volatilidades, %d ebulliciones, %d colores de tinta',
               conVel.length, conTemp.length, curvas.length, refs.length,
-              dens.length, flash.length, volat.length, tcolor.length);
+              dens.length, flash.length, volat.length, ebull.length, tcolor.length);
   if (conVel.length < 4) throw new Error('faltan ribbons con velocidad');
   if (conTemp.length < 4) throw new Error('faltan ribbons con temperatura');
   if (curvas.length < 4) throw new Error('faltan curvas de solvente verificadas');
@@ -189,6 +190,7 @@ function principal() {
   if (dens.length < 4) throw new Error('faltan densidades SDS con valor unico');
   if (flash.length < 4) throw new Error('faltan puntos de inflamacion SDS con valor unico');
   if (volat.length < 4) throw new Error('faltan volatilidades SDS con valor unico');
+  if (ebull.length < 4) throw new Error('faltan puntos de ebullicion SDS con valor unico');
   if (tcolor.length < 4) throw new Error('faltan colores de tinta SDS con valor unico');
 
   let fallos = 0;
@@ -214,10 +216,11 @@ function principal() {
     const validDens = new Set(dens.map(x => x.v));
     const validFlash = new Set(flash.map(x => x.v));
     const validVolat = new Set(volat.map(x => contexto.tr(x.v)));
+    const validEbull = new Set(ebull.map(x => contexto.tr(x.v)));
     const validColor = new Set(tcolor.map(x => contexto.tr(x.v)));
     const tipos = {rib_vel: 0, rib_temp: 0, sol_temp: 0,
                    sol_horas: 0, sds_dens: 0, sds_flash: 0, sds_volat: 0,
-                   tinta_color: 0};
+                   sds_ebull: 0, tinta_color: 0};
     let total = 0;
 
     for (const nivel of NIVELES) {
@@ -289,6 +292,9 @@ function principal() {
           if (p.tipo === 'sds_volat' && !validVolat.has(p.a)) {
             fallo(idioma + ': volatilidad fuera de las SDS: ' + p.a);
           }
+          if (p.tipo === 'sds_ebull' && !validEbull.has(p.a)) {
+            fallo(idioma + ': ebullicion fuera de las SDS: ' + p.a);
+          }
           if (p.tipo === 'tinta_color' && !validColor.has(p.a)) {
             fallo(idioma + ': color de tinta fuera de las SDS: ' + p.a);
           }
@@ -303,6 +309,7 @@ function principal() {
     if (!tipos.sds_dens) fallo(idioma + ': no aparecio sds_dens');
     if (!tipos.sds_flash) fallo(idioma + ': no aparecio sds_flash');
     if (!tipos.sds_volat) fallo(idioma + ': no aparecio sds_volat');
+    if (!tipos.sds_ebull) fallo(idioma + ': no aparecio sds_ebull');
     if (!tipos.tinta_color) fallo(idioma + ': no aparecio tinta_color');
     resumen[idioma] = {total, tipos};
     console.log('%s: %d preguntas, tipos nuevos %j', idioma, total, tipos);
