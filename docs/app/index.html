@@ -1647,6 +1647,20 @@ function renderHistorial(){
 }
 
 /* ================= copia de seguridad ================= */
+function normalizarRepaso(obj){
+  if (!obj || typeof obj !== 'object' || Array.isArray(obj)) return {};
+  const limpio = {};
+  for (const [id,v] of Object.entries(obj).slice(0, 1000)) {
+    if (!id || !v || typeof v !== 'object') continue;
+    const fecha = x => typeof x === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(x) ? x : '';
+    limpio[id] = {
+      box: Math.min(5, Math.max(0, Math.floor(Number(v.box) || 0))),
+      fails: Math.min(9999, Math.max(0, Math.floor(Number(v.fails) || 0))),
+      due: fecha(v.due), last: fecha(v.last)
+    };
+  }
+  return limpio;
+}
 function exportarCopia(){
   const datos = {
     app: 'Factronics Videojet Lab',
@@ -1656,6 +1670,7 @@ function exportarCopia(){
     lang: LANG,
     theme: localStorage.getItem('fvl_theme') || 'auto',
     historial: JSON.parse(localStorage.getItem('fvl_exam_history') || '[]'),
+    repaso: JSON.parse(localStorage.getItem('fvl_review') || '{}'),
   };
   const blob = new Blob([JSON.stringify(datos, null, 2)], {type:'application/json'});
   const a = document.createElement('a');
@@ -1674,8 +1689,11 @@ function importarCopia(archivo){
       if (d.theme) localStorage.setItem('fvl_theme', d.theme);
       if (d.perfil && typeof d.perfil.nombre === 'string') localStorage.setItem('fvl_profile', d.perfil.nombre);
       if (Array.isArray(d.historial)) localStorage.setItem('fvl_exam_history', JSON.stringify(d.historial.slice(0, 50)));
+      const repaso = normalizarRepaso(d.repaso);
+      if (d.repaso !== undefined) localStorage.setItem('fvl_review', JSON.stringify(repaso));
       aplicarTema(); aplicarIdioma();
-      $('#bk_msg').textContent = t('msg_importado').replace('{n}', (d.historial||[]).length);
+      const n = (Array.isArray(d.historial) ? d.historial.length : 0) + Object.keys(repaso).length;
+      $('#bk_msg').textContent = t('msg_importado').replace('{n}', n);
     } catch (e) {
       $('#bk_msg').textContent = t('msg_invalido');
     }

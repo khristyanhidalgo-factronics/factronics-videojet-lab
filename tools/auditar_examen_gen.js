@@ -340,6 +340,26 @@ function principal() {
   }
   console.log('Historial: %d casos de resumen validados', casosHistorial.length);
 
+  // Respaldo: normalizacion del cuaderno de repaso importado.
+  vm.runInContext(extraerFuncion(src, 'normalizarRepaso'), contexto);
+  const casosRepaso = [
+    [null, {}],
+    [[], {}],
+    [{a:{box:2,fails:1,due:'2026-11-20',last:'2026-11-14'}},
+     {a:{box:2,fails:1,due:'2026-11-20',last:'2026-11-14'}}],
+    [{a:{box:9,fails:-1,due:'x',last:123}},
+     {a:{box:5,fails:0,due:'',last:''}}],
+    [{a:null,b:{box:'2'}},
+     {b:{box:2,fails:0,due:'',last:''}}],
+  ];
+  for (const [entrada, esperado] of casosRepaso) {
+    const r = contexto.normalizarRepaso(entrada);
+    if (JSON.stringify(r) !== JSON.stringify(esperado)) {
+      fallo('repaso: ' + JSON.stringify(entrada) + ' -> ' + JSON.stringify(r));
+    }
+  }
+  console.log('Respaldo: %d casos de repaso validados', casosRepaso.length);
+
   if (fallos) {
     console.error('FALLOS: ' + fallos);
     process.exit(1);

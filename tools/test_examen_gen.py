@@ -11,6 +11,7 @@ Comprueba los invariantes que sostienen los tipos de pregunta:
   - 11 colores de tinta unicos (se excluye "No disponible.");
   - el generador integra los tres tipos y el pool global de componentes SDS;
   - resumen del historial (examenes, promedio ponderado y mejor) y sus claves;
+  - respaldo con cuaderno de repaso y normalizacion de datos importados;
   - el CI ejecuta la auditoria y esta prueba.
 
 Uso:
@@ -203,6 +204,14 @@ class ExamenGenTest(unittest.TestCase):
                 'SOL_USOS', 'COMP_NAMES', 'TINTAS_CON_COMP'):
             self.assertIn(fragmento, self.html)
         self.assertIn('function generarPregunta(', self.html)
+
+    def test_respaldo_incluye_repaso(self):
+        for fragmento in ('function normalizarRepaso(',
+                          "repaso: JSON.parse(localStorage.getItem('fvl_review')",
+                          'normalizarRepaso(d.repaso)',
+                          "localStorage.setItem('fvl_review'",
+                          'Object.keys(repaso).length'):
+            self.assertIn(fragmento, self.html)
 
     def test_resumen_de_historial(self):
         for fragmento in ('function resumenHistorial(',
