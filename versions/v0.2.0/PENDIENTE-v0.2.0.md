@@ -27,10 +27,12 @@
       `success`; `version.json` construccion 21 con `banco_partes_cij: 124`,
       `sw.js` alpha-21; examen «Partes CIJ (124)» con los 2 tipos, 4 opciones
       únicas por pregunta, aviso, corrección, historial y consola limpia.
-- [ ] **Verificación en vivo de alpha-22/build 23**: CI «Validar» y Pages en
-      `success`; `version.json` construccion 23 con `banco_partes_tto: 120`,
-      `sw.js` alpha-22; examen «Partes TTO (120)» con los 2 tipos, 4 opciones
-      únicas por pregunta, aviso, corrección, historial y consola limpia.
+- [x] **Verificación en vivo de alpha-22/build 23**: CI «Validar» (run
+      `43602890817`) y Pages (run `43602890551`) en `success`; `version.json`
+      construccion 23 con `banco_partes_cij: 124` y `banco_partes_tto: 120`,
+      `sw.js` alpha-22 y caché `fvl-v0.2.0-alpha-22`; examen «Partes TTO (120)»
+      con los 2 tipos, 4 opciones únicas por pregunta, aviso, corrección 10/10,
+      historial, los 5 idiomas y consola limpia.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
