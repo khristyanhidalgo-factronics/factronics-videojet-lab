@@ -78,6 +78,10 @@
       construccion 41, `sw.js` alpha-31 y caché `fvl-v0.2.0-alpha-31` con 7
       recursos; `sds_ebull` con 119 tintas y 12 valores, 4 opciones traducidas,
       corrección 1/1, constancia y consola limpia.
+- [ ] **Verificación en vivo de alpha-32/build 43**: CI «Validar» y Pages en
+      `success`; `version.json` construccion 43, `sw.js` alpha-32; tipo
+      `sds_pvap` en nivel 5 con 119 tintas y 8 valores, 4 opciones traducidas
+      en es/en/pt/it/zh, corrección y constancia, consola limpia.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),

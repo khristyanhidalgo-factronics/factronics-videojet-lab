@@ -578,7 +578,8 @@ Object.assign(I18N.es, {
   q_sds_flash:'¿Cuál es el punto de inflamación de la tinta {c} según su SDS?',
   q_sds_volat:'¿Qué volatilidad reporta la SDS de la tinta {c}?',
   q_tinta_color:'¿De qué color es la tinta {c} según su SDS?',
-  q_sds_ebull:'¿Cuál es el punto de ebullición de la tinta {c} según su SDS?'
+  q_sds_ebull:'¿Cuál es el punto de ebullición de la tinta {c} según su SDS?',
+  q_sds_pvap:'¿Cuál es la presión de vapor de la tinta {c} según su SDS?'
 });
 Object.assign(I18N.en, {
   vel_t:'CIJ line speed', vel_s:'Nominal speed by model, nozzle and font, read from the official v9.7 calculators (decoded draft).',
@@ -614,7 +615,8 @@ Object.assign(I18N.en, {
   q_sds_flash:'What is the flash point of ink {c} according to its SDS?',
   q_sds_volat:'What volatility does the SDS report for ink {c}?',
   q_tinta_color:'What color is ink {c} according to its SDS?',
-  q_sds_ebull:'What is the boiling point of ink {c} according to its SDS?'
+  q_sds_ebull:'What is the boiling point of ink {c} according to its SDS?',
+  q_sds_pvap:'What is the vapor pressure of ink {c} according to its SDS?'
 });
 Object.assign(I18N.pt, {
   vel_t:'Velocidade de linha CIJ', vel_s:'Velocidade nominal por modelo, bocal e fonte, lida dos calculadores oficiais v9.7 (rascunho decodificado).',
@@ -650,7 +652,8 @@ Object.assign(I18N.pt, {
   q_sds_flash:'Qual é o ponto de fulgor da tinta {c} segundo sua SDS?',
   q_sds_volat:'Qual é a volatilidade reportada na SDS da tinta {c}?',
   q_tinta_color:'Qual é a cor da tinta {c} segundo sua SDS?',
-  q_sds_ebull:'Qual é o ponto de ebulição da tinta {c} segundo sua SDS?'
+  q_sds_ebull:'Qual é o ponto de ebulição da tinta {c} segundo sua SDS?',
+  q_sds_pvap:'Qual é a pressão de vapor da tinta {c} segundo sua SDS?'
 });
 Object.assign(I18N.it, {
   vel_t:'Velocità di linea CIJ', vel_s:'Velocità nominale per modello, ugello e font, letta dai calcolatori ufficiali v9.7 (bozza decodificata).',
@@ -686,7 +689,8 @@ Object.assign(I18N.it, {
   q_sds_flash:'Qual è il punto di infiammabilità dell\'inchiostro {c} secondo la sua SDS?',
   q_sds_volat:'Qual è la volatilità riportata nella SDS dell\'inchiostro {c}?',
   q_tinta_color:'Qual è il colore dell\'inchiostro {c} secondo la sua SDS?',
-  q_sds_ebull:'Qual è il punto di ebollizione dell\'inchiostro {c} secondo la sua SDS?'
+  q_sds_ebull:'Qual è il punto di ebollizione dell\'inchiostro {c} secondo la sua SDS?',
+  q_sds_pvap:'Qual è la pressione di vapore dell\'inchiostro {c} secondo la sua SDS?'
 });
 Object.assign(I18N.zh, {
   vel_t:'CIJ 线速度', vel_s:'按型号、喷嘴和字体读取官方 v9.7 计算器的额定速度（解码草稿）。',
@@ -722,7 +726,8 @@ Object.assign(I18N.zh, {
   q_sds_flash:'根据 SDS，墨水 {c} 的闪点是多少？',
   q_sds_volat:'根据 SDS，墨水 {c} 的挥发性是多少？',
   q_tinta_color:'根据 SDS，墨水 {c} 的颜色是什么？',
-  q_sds_ebull:'根据 SDS，墨水 {c} 的沸点是多少？'
+  q_sds_ebull:'根据 SDS，墨水 {c} 的沸点是多少？',
+  q_sds_pvap:'根据 SDS，墨水 {c} 的蒸气压是多少？'
 });
 let LANG = localStorage.getItem('fvl_lang') || 'es';
 const t = (k) => (I18N[LANG] && I18N[LANG][k]) || I18N.es[k] || k;
@@ -1148,7 +1153,7 @@ function opciones(correcta, pool, n=3){
 }
 /* Propiedades SDS con valor unico por tinta (se excluyen las fichas en conflicto). */
 const SDS_PROPS = (() => {
-  const dens = [], flash = [], volat = [], ebull = [];
+  const dens = [], flash = [], volat = [], ebull = [], pvap = [];
   for (const [c,x] of Object.entries(D.tintas)) {
     const vals = prop => [...new Set((x.fichas||[])
       .map(f => f.props && f.props[prop]).filter(Boolean))];
@@ -1166,8 +1171,10 @@ const SDS_PROPS = (() => {
     if (vo.length === 1) volat.push({c, v:vo[0]});
     const eb = vals('punto_ebullicion');
     if (eb.length === 1) ebull.push({c, v:eb[0]});
+    const pv = vals('presion_vapor');
+    if (pv.length === 1) pvap.push({c, v:pv[0]});
   }
-  return {dens, flash, volat, ebull};
+  return {dens, flash, volat, ebull, pvap};
 })();
 /* Pools de datos reutilizados por el generador (no cambian en tiempo de ejecucion). */
 const TINTAS = Object.entries(D.tintas);
@@ -1280,9 +1287,10 @@ function generarPregunta(nivel){
     return {q:t('q_ref').replace('{m}', s.m+(s.v?' '+s.v:'')).replace('{t}', s.t), a:correcta,
       ops:opciones(correcta, pool), ref:t('ref_sol')};
   }
-  const tipoSds = aleatorio(['cas', 'dens', 'flash', 'volat', 'ebull'].filter(k => ({
+  const tipoSds = aleatorio(['cas', 'dens', 'flash', 'volat', 'ebull', 'pvap'].filter(k => ({
     cas: TINTAS_CON_COMP.length, dens: SDS_PROPS.dens.length, flash: SDS_PROPS.flash.length,
-    volat: SDS_PROPS.volat.length, ebull: SDS_PROPS.ebull.length
+    volat: SDS_PROPS.volat.length, ebull: SDS_PROPS.ebull.length,
+    pvap: SDS_PROPS.pvap.length
   })[k]));
   if (tipoSds === 'dens') {
     const d = aleatorio(SDS_PROPS.dens);
@@ -1309,6 +1317,13 @@ function generarPregunta(nivel){
     const pool = SDS_PROPS.ebull.map(x => tr(x.v));
     return {q:t('q_sds_ebull').replace('{c}', e.c), a:correcta,
       ops:opciones(correcta, pool), ref:t('ref_sds'), tipo:'sds_ebull'};
+  }
+  if (tipoSds === 'pvap') {
+    const v = aleatorio(SDS_PROPS.pvap);
+    const correcta = tr(v.v);
+    const pool = SDS_PROPS.pvap.map(x => tr(x.v));
+    return {q:t('q_sds_pvap').replace('{c}', v.c), a:correcta,
+      ops:opciones(correcta, pool), ref:t('ref_sds'), tipo:'sds_pvap'};
   }
   if (TINTAS_CON_COMP.length) {
     const [c,x] = aleatorio(TINTAS_CON_COMP);
