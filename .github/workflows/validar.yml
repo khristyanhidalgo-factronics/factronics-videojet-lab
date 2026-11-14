@@ -30,6 +30,10 @@ jobs:
         run: python tools/test_partes_tto.py
       - name: Probar velocidades CIJ contra los charts oficiales
         run: python tools/test_velocidades_cij.py
+      - name: Probar banco de partes CIJ (124 P/N verificados)
+        run: python tools/test_banco_partes.py
+      - name: Auditar preguntas del banco de partes CIJ
+        run: node tools/auditar_banco_partes.js
       - name: Probar cierre del lote laser (14 casos)
         run: python tools/test_lote_laser.py
       - name: Probar artefactos de revision de pendientes

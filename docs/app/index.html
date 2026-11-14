@@ -191,6 +191,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}
             <option value="gen" data-i18n="fuente_gen">Generado (5 niveles)</option>
             <option value="banco" data-i18n="fuente_banco">Banco TTO (372)</option>
             <option value="vel" data-i18n="fuente_vel">Velocidades CIJ (266)</option>
+            <option value="partes" data-i18n="fuente_partes">Partes CIJ (124)</option>
           </select></div>
         <div id="ex_nivel_box"><label class="small" for="ex_nivel" data-i18n="ex_nivel">Nivel</label><br>
           <select id="ex_nivel">
@@ -547,6 +548,13 @@ Object.assign(I18N.es, {
   q_vel_font:'¿Qué fuente usa {m} con boquilla {b} µm para {v}?',
   ref_vel:'cij_velocidades (calculador v9.7, borrador-decodificado)'
 });
+Object.assign(I18N.es, {
+  fuente_partes:'Partes CIJ (124)',
+  q_part_pn:'¿Cuál es la descripción de la parte CIJ {n}?',
+  q_part_desc:'¿Qué P/N verificado corresponde a la descripción «{d}»?',
+  ref_partes:'partes_cij (solo P/N verificados)',
+  partes_nota:'Banco de partes CIJ con 124 P/N verificados. Quedan fuera los borradores y el OCR sin revisar.'
+});
 Object.assign(I18N.en, {
   vel_t:'CIJ line speed', vel_s:'Nominal speed by model, nozzle and font, read from the official v9.7 calculators (decoded draft).',
   vel_modelo:'Model', vel_boquilla:'Nozzle (µm)', vel_fuente:'Font',
@@ -561,6 +569,13 @@ Object.assign(I18N.en, {
   q_vel_nozzle:'Which nozzle does {m} use with {f} font at {v}?',
   q_vel_font:'Which font does {m} use with a {b} µm nozzle at {v}?',
   ref_vel:'cij_velocities (v9.7 calculator, decoded draft)'
+});
+Object.assign(I18N.en, {
+  fuente_partes:'CIJ parts (124)',
+  q_part_pn:'What is the description of CIJ part {n}?',
+  q_part_desc:'Which verified P/N matches the description "{d}"?',
+  ref_partes:'partes_cij (verified P/N only)',
+  partes_nota:'CIJ parts bank with 124 verified P/Ns. Drafts and unreviewed OCR are excluded.'
 });
 Object.assign(I18N.pt, {
   vel_t:'Velocidade de linha CIJ', vel_s:'Velocidade nominal por modelo, bocal e fonte, lida dos calculadores oficiais v9.7 (rascunho decodificado).',
@@ -577,6 +592,13 @@ Object.assign(I18N.pt, {
   q_vel_font:'Qual fonte o {m} usa com bocal de {b} µm para {v}?',
   ref_vel:'cij_velocidades (calculadora v9.7, rascunho decodificado)'
 });
+Object.assign(I18N.pt, {
+  fuente_partes:'Peças CIJ (124)',
+  q_part_pn:'Qual é a descrição da peça CIJ {n}?',
+  q_part_desc:'Qual P/N verificado corresponde à descrição «{d}»?',
+  ref_partes:'partes_cij (apenas P/N verificados)',
+  partes_nota:'Banco de peças CIJ com 124 P/Ns verificados. Ficam de fora os rascunhos e o OCR não revisado.'
+});
 Object.assign(I18N.it, {
   vel_t:'Velocità di linea CIJ', vel_s:'Velocità nominale per modello, ugello e font, letta dai calcolatori ufficiali v9.7 (bozza decodificata).',
   vel_modelo:'Modello', vel_boquilla:'Ugello (µm)', vel_fuente:'Font',
@@ -592,6 +614,13 @@ Object.assign(I18N.it, {
   q_vel_font:'Quale font usa {m} con ugello da {b} µm a {v}?',
   ref_vel:'cij_velocidades (calcolatore v9.7, bozza decodificata)'
 });
+Object.assign(I18N.it, {
+  fuente_partes:'Parti CIJ (124)',
+  q_part_pn:'Qual è la descrizione del ricambio CIJ {n}?',
+  q_part_desc:'Quale P/N verificato corrisponde alla descrizione «{d}»?',
+  ref_partes:'partes_cij (solo P/N verificati)',
+  partes_nota:'Banca ricambi CIJ con 124 P/N verificati. Restano esclusi le bozze e l’OCR non revisionato.'
+});
 Object.assign(I18N.zh, {
   vel_t:'CIJ 线速度', vel_s:'按型号、喷嘴和字体读取官方 v9.7 计算器的额定速度（解码草稿）。',
   vel_modelo:'型号', vel_boquilla:'喷嘴 (µm)', vel_fuente:'字体',
@@ -606,6 +635,13 @@ Object.assign(I18N.zh, {
   q_vel_nozzle:'{m} 在 {f} 字体下达到 {v} 时使用哪种喷嘴？',
   q_vel_font:'{m} 在 {b} µm 喷嘴下达到 {v} 时使用哪种字体？',
   ref_vel:'cij_velocidades（v9.7 计算器，解码草稿）'
+});
+Object.assign(I18N.zh, {
+  fuente_partes:'CIJ 部件（124）',
+  q_part_pn:'CIJ 部件 {n} 的描述是什么？',
+  q_part_desc:'描述“{d}”对应哪个已验证 P/N？',
+  ref_partes:'partes_cij（仅已验证 P/N）',
+  partes_nota:'CIJ 部件题库，仅包含 124 个已验证 P/N。草稿和未审核的 OCR 不纳入。'
 });
 let LANG = localStorage.getItem('fvl_lang') || 'es';
 const t = (k) => (I18N[LANG] && I18N[LANG][k]) || I18N.es[k] || k;
@@ -1060,6 +1096,38 @@ function generarPreguntaVel(e){
   return {q:t('q_vel').replace('{m}', modelo).replace('{b}', e.b).replace('{f}', e.f),
     a:vel, ops:opciones(vel, pool), ref:t('ref_vel')};
 }
+function partesCijVerificadas(){
+  return (D.partes || []).filter(p => p.t === 'CIJ' && p.e === 'verificado' && p.n && p.d);
+}
+function candidatosPartes(){
+  const partes = partesCijVerificadas();
+  const porDesc = new Map();
+  partes.forEach(p => {
+    const d = tr(p.d);
+    if (!porDesc.has(d)) porDesc.set(d, []);
+    porDesc.get(d).push(p.n);
+  });
+  const cands = partes.map(p => ({tipo: 'pn', p}));
+  porDesc.forEach(pns => {
+    const unicos = [...new Set(pns)];
+    if (unicos.length === 1) {
+      const p = partes.find(x => x.n === unicos[0]);
+      if (p) cands.push({tipo: 'desc', p});
+    }
+  });
+  return cands;
+}
+function generarPreguntaPartes(cand){
+  const partes = partesCijVerificadas();
+  const p = cand.p;
+  if (cand.tipo === 'desc') {
+    return {q: t('q_part_desc').replace('{d}', tr(p.d)), a: p.n,
+      ops: opciones(p.n, partes.map(x => x.n)), ref: t('ref_partes')};
+  }
+  const d = tr(p.d);
+  return {q: t('q_part_pn').replace('{n}', p.n), a: d,
+    ops: opciones(d, [...new Set(partes.map(x => tr(x.d)))]), ref: t('ref_partes')};
+}
 function iniciarExamen(){
   const fuente = $('#ex_fuente').value;
   const cant = Number($('#ex_cant').value || 10);
@@ -1073,6 +1141,15 @@ function iniciarExamen(){
     }
     examen = {fuente: 'vel', nivel: t('fuente_vel'), titulo: t('fuente_vel'),
       nota: t('vel_nota'), preguntas: elegidas, respuestas: {}, corregido: false};
+  } else if (fuente === 'partes') {
+    const copia = candidatosPartes();
+    const elegidas = [];
+    while (elegidas.length < cant && copia.length) {
+      const cand = copia.splice(Math.floor(Math.random() * copia.length), 1)[0];
+      elegidas.push(generarPreguntaPartes(cand));
+    }
+    examen = {fuente: 'partes', nivel: t('fuente_partes'), titulo: t('fuente_partes'),
+      nota: t('partes_nota'), preguntas: elegidas, respuestas: {}, corregido: false};
   } else if (fuente === 'banco' && window.BANCO_TTO && BANCO_TTO.preguntas.length) {
     const tipo = $('#ex_tipo').value;
     const pool = BANCO_TTO.preguntas.filter(p => tipo === 'todas' || p.t === tipo);

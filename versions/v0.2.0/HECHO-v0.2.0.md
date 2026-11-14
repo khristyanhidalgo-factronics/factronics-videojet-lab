@@ -93,8 +93,16 @@
       también detecta si la app vuelve a imprimir objetos (`[object Object]`). En el CI.
 - [x] Exámenes de 5 niveles generados de datos reales, corrección con referencia e
       historial local; el nivel 3 incluye preguntas de **parte CIJ → descripción**.
+- [x] **Banco de partes CIJ (124):** fuente de examen separada que usa solo los
+      **124 P/N CIJ verificados**; 124 preguntas P/N→descripción y 113
+      descripción→P/N (las 5 descripciones compartidas quedan fuera del segundo
+      tipo). Distractores solo de datos verificados, aviso visible de exclusión de
+      borradores/OCR, etiqueta e historial «Partes CIJ (124)» y traducción en los
+      5 idiomas. `tools/auditar_banco_partes.js` audita 237 candidatos × 25
+      variantes × 5 idiomas y 2.000 exámenes simulados; `tools/test_banco_partes.py`
+      valida conteos, traducciones y claves i18n. Ambos están en el CI.
 - [x] **Offline:** `manifest.webmanifest` + `sw.js` (precache y cache-first) + icono SVG;
-      instalación como PWA desde el navegador. Caché actualizada a `fvl-v0.2.0-alpha-17`.
+      instalación como PWA desde el navegador. Caché actualizada a `fvl-v0.2.0-alpha-21`.
 
 ## Publicación
 - [x] Landing con acceso directo a la app y tarjeta en Descargas (estado v0.2.0-alpha).

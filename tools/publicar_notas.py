@@ -21,7 +21,7 @@ REPO_URL = 'https://github.com/khristyanhidalgo-factronics/factronics-videojet-l
 APP_URL = 'https://khristyanhidalgo-factronics.github.io/factronics-videojet-lab/app/'
 NOTAS_URL = 'https://khristyanhidalgo-factronics.github.io/factronics-videojet-lab/notas.html'
 VERSION_ACTUAL = 'v0.2.0-alpha'
-CONSTRUCCION = 20
+CONSTRUCCION = 21
 
 
 def sha256(ruta):
@@ -101,6 +101,7 @@ def escribir_version_json(versiones):
             'offline': True,
             'idiomas': ['es', 'en', 'pt', 'it', 'zh'],
             'banco_preguntas_tto': 372,
+            'banco_partes_cij': 124,
         },
         'apk': None,
         'notas': {

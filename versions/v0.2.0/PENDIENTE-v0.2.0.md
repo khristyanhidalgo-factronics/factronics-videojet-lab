@@ -51,7 +51,13 @@
 - [x] ~~Página pública de notas `docs/notas.html` + CI~~ → publicada con SHA-256.
 - [ ] **Temas festivos** por país (Venezuela base) sobre el tema claro/oscuro/sistema.
 - [x] ~~Banco de examen específico de velocidades CIJ~~ → fuente «Velocidades CIJ (266)» con preguntas de velocidad, boquilla y fuente, aviso de `borrador-decodificado` y auditoría de 10.640 preguntas sin ambigüedad; verificado en navegador.
-- [ ] Más variedad de preguntas por nivel y banco separado por tecnología.
+- [x] ~~Banco separado por tecnología (partes CIJ)~~ → fuente «Partes CIJ (124)» con
+      solo P/N verificados: 124 preguntas P/N→descripción + 113 descripción→P/N,
+      aviso de exclusión de borradores/OCR y auditoría de 237 candidatos en 5 idiomas;
+      verificado en navegador.
+- [ ] Más variedad de preguntas por nivel (nuevos casos de falla, diagnóstico y
+      cálculos) y revisión humana de las 5 descripciones CIJ compartidas para decidir
+      si son variantes reales o duplicados de catálogo.
 - [x] ~~Traducir el banco TTO a IT/ZH (372 × 2 preguntas)~~ → hecho: 372 preguntas × 5 idiomas, con IDs de opciones y respuestas intactos.
 
 ## Datos (continuación)
