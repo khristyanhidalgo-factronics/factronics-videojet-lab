@@ -58,10 +58,11 @@
       construccion 33, `sw.js` alpha-27 y caché `fvl-v0.2.0-alpha-27` con 7
       recursos; historial 9/10 + 6/10 + 10/10 → 3 exámenes, 83 % y 100 %,
       borrado con confirmación, HTML escapado, 5 idiomas y consola limpia.
-- [ ] **Verificación en vivo de alpha-28/build 35**: CI «Validar» y Pages en
-      `success`; `version.json` construccion 35, `sw.js` alpha-28; tipo
-      `sds_volat` en nivel 5 con 119 tintas y 25 valores, 4 opciones traducidas
-      en es/en/pt/it/zh, corrección y constancia, consola limpia.
+- [x] **Verificación en vivo de alpha-28/build 35**: CI «Validar» (run
+      `43622899676`) y Pages (run `43622899568`) en `success`; `version.json`
+      construccion 35, `sw.js` alpha-28 y caché `fvl-v0.2.0-alpha-28` con 7
+      recursos; `sds_volat` con 119 tintas y 25 valores, 4 opciones traducidas
+      en es/en/pt/it/zh, corrección 1/1, constancia y consola limpia.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
