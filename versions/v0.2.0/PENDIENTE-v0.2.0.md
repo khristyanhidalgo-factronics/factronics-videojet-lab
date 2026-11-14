@@ -43,10 +43,11 @@
       construccion 27, `sw.js` alpha-24 y caché `fvl-v0.2.0-alpha-24`; 2.000
       preguntas sin fallos, tipos nuevos en niveles 4 y 5, 4 opciones,
       corrección 10/10 e historial, 5 idiomas y consola limpia.
-- [ ] **Verificación en vivo de alpha-25/build 29**: CI «Validar» y Pages en
-      `success`; `version.json` construccion 29, `sw.js` alpha-25; chip SDS con
-      527 pares tinta|CAS, búsquedas `78-93-3`, `metiletilcetona` y `V401`,
-      variantes `chromium`/`cromo` según idioma y consola limpia.
+- [x] **Verificación en vivo de alpha-25/build 29**: CI «Validar» (run
+      `43608611888`) y Pages (run `43608611712`) en `success`; `version.json`
+      construccion 29, `sw.js` alpha-25 y caché `fvl-v0.2.0-alpha-25`; 527 pares
+      tinta|CAS, búsquedas `78-93-3`, `metiletilcetona` y `V401`, variantes
+      `chromium`/`cromo` según idioma, 5 idiomas y consola limpia.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
