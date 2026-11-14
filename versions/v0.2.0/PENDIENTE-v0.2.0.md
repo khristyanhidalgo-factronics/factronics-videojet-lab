@@ -114,6 +114,10 @@
       construccion 53, `sw.js` alpha-37 y caché `fvl-v0.2.0-alpha-37` con 7
       recursos; banner oculto inicial, visible al simular actualización, 5
       idiomas, accesibilidad y consola limpia.
+- [ ] **Verificación en vivo de alpha-38/build 55**: CI «Validar» y Pages en
+      `success`; `version.json` construccion 55, `sw.js` alpha-38; conflicto
+      399474 promovido, 4 descripciones alternas, banco CIJ 125/364 y consola
+      limpia.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
@@ -175,14 +179,18 @@
       `borrador-decodificado`. Las **3 láminas del 1550** (PDF 14, 15 y 18) se
       recuperaron a **1200 px**; la 15 aportó 4 P/N y 5 ítems, y quedan **0 páginas
       omitidas**.
-- [ ] **Revisión humana/cotejo de los 193 P/N del OCR 1550/1710** antes de ascenderlos:
-      hoy todos son `borrador-decodificado`; se conserva `descripcion_ocr` y `pn_ocr`
-      como evidencia. No se reconstruyen P/N a mano. Los 5 conflictos reales
-      (`395898`, `395899`, `399474`, `399475`, `SP234081`) ya se muestran en la app.
-      **Artefactos listos:** `datos/analisis/partes_cij_ocr_revision.csv` (193 P/N,
-      92 nuevos), `partes_cij_ocr_apariciones.csv` (275 apariciones únicas de 277
-      registros), `conflictos_cij_ocr.md` (5 casos) y el tablero
-      `PENDIENTES_REVISION.md`.
+- [x] **Revisión de los 5 conflictos CIJ del OCR 1550/1710:** revisados contra las
+      páginas renderizadas de los IPL 1550, 1650 y 1710. `399474` es un sinónimo
+      real (Dry Air Kit Assembly / Air Dryer Assembly) y se promovió a `verificado`;
+      `395898`, `395899`, `399475` y `SP234081` tienen dos descripciones impresas
+      para el mismo P/N y se conservan como `d_alt` fuera del banco. El banco CIJ
+      queda en **125 P/N y 364 preguntas**.
+- [ ] **Revisión de los 193 P/N del OCR 1550/1710 restantes:** los 5 conflictos ya
+      están cerrados; quedan los 188 P/N sin conflicto en `borrador-decodificado`.
+      Se conserva `descripcion_ocr` y `pn_ocr` como evidencia. No se reconstruyen
+      P/N a mano. **Artefactos:** `datos/analisis/partes_cij_ocr_revision.csv`
+      (193 P/N, 92 nuevos), `partes_cij_ocr_apariciones.csv` (275 apariciones
+      únicas de 277 registros) y el tablero `PENDIENTES_REVISION.md`.
 - [ ] Revisión visual muestra a muestra de los 204 P/N y de los 801 ítems sin P/N;
       hoy hay muestras verificadas (1210 p27/p50, 1220 p33, 1610 p11, 1620E p48,
       1650 b51) y el conflicto real de 399475 marcado como borrador. Los 801 ítems

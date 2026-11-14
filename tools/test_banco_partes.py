@@ -2,10 +2,10 @@
 """Prueba del banco de partes CIJ (solo P/N verificados).
 
 Comprueba los invariantes del banco que usa la app:
-  - 124 P/N CIJ verificados, unicos y con descripcion;
-  - 118 descripciones, 5 ambiguas y 113 inequivocas;
-  - candidatos P/N->descripcion (124) + descripcion->P/N (113) +
-    P/N->modelos (124), con 18 conjuntos de modelos;
+  - 125 P/N CIJ verificados, unicos y con descripcion;
+  - 119 descripciones, 5 ambiguas y 114 inequivocas;
+  - candidatos P/N->descripcion (125) + descripcion->P/N (114) +
+    P/N->modelos (125), con 18 conjuntos de modelos;
   - las 5 descripciones ambiguas quedan fuera del segundo tipo;
   - traduccion completa de las descripciones en es/en/pt/it/zh;
   - claves i18n y opcion de fuente presentes en la app.
@@ -75,14 +75,14 @@ class BancoPartesCijTest(unittest.TestCase):
             cls.por_desc.setdefault(p['d'], set()).add(p['n'])
 
     def test_conteos_del_banco(self):
-        self.assertEqual(124, len(self.partes))
-        self.assertEqual(124, len({p['n'] for p in self.partes}))
-        self.assertEqual(118, len(self.por_desc))
+        self.assertEqual(125, len(self.partes))
+        self.assertEqual(125, len({p['n'] for p in self.partes}))
+        self.assertEqual(119, len(self.por_desc))
         ambiguas = {d: pns for d, pns in self.por_desc.items()
                     if len(pns) > 1}
         self.assertEqual(AMBIGUAS, ambiguas)
-        self.assertEqual(113, len(self.por_desc) - len(ambiguas))
-        self.assertEqual(124 + 113 + 124, 361)
+        self.assertEqual(114, len(self.por_desc) - len(ambiguas))
+        self.assertEqual(125 + 114 + 125, 364)
         self.assertEqual(18, len({p['m'] for p in self.partes}))
         for p in self.partes:
             self.assertTrue(p.get('m'), p.get('n'))
@@ -94,7 +94,7 @@ class BancoPartesCijTest(unittest.TestCase):
             self.assertTrue(p['n'])
             self.assertTrue(p['d'])
         cij = [p for p in self.datos['partes'] if p.get('t') == 'CIJ']
-        self.assertEqual(80, sum(1 for p in cij if p.get('e') == 'borrador'))
+        self.assertEqual(79, sum(1 for p in cij if p.get('e') == 'borrador'))
         self.assertEqual(92, sum(
             1 for p in cij if p.get('e') == 'borrador-decodificado'))
         incluidos = {p['n'] for p in self.partes}
@@ -123,7 +123,7 @@ class BancoPartesCijTest(unittest.TestCase):
             self.assertEqual(
                 {traduccion(self.datos, d, idioma) for d in AMBIGUAS},
                 set(ambiguas), idioma)
-            self.assertEqual(113, len(por_traduccion) - len(ambiguas), idioma)
+            self.assertEqual(114, len(por_traduccion) - len(ambiguas), idioma)
 
     def test_pools_de_opciones(self):
         for idioma in IDIOMAS:
@@ -131,8 +131,8 @@ class BancoPartesCijTest(unittest.TestCase):
                 traduccion(self.datos, p['d'], idioma) for p in self.partes}
             pns = {p['n'] for p in self.partes}
             modelos = {p['m'] for p in self.partes}
-            self.assertEqual(118, len(descripciones), idioma)
-            self.assertEqual(124, len(pns), idioma)
+            self.assertEqual(119, len(descripciones), idioma)
+            self.assertEqual(125, len(pns), idioma)
             self.assertEqual(18, len(modelos), idioma)
             self.assertGreaterEqual(len(descripciones), 4, idioma)
             self.assertGreaterEqual(len(pns), 4, idioma)
@@ -143,7 +143,7 @@ class BancoPartesCijTest(unittest.TestCase):
         for p in self.partes:
             modelos.setdefault(p['m'], []).append(p['n'])
         self.assertEqual(18, len(modelos))
-        self.assertEqual(124, sum(len(pns) for pns in modelos.values()))
+        self.assertEqual(125, sum(len(pns) for pns in modelos.values()))
         for m, pns in modelos.items():
             self.assertTrue(m)
             self.assertGreaterEqual(len(pns), 1)
@@ -157,7 +157,7 @@ class BancoPartesCijTest(unittest.TestCase):
                 self.assertRegex(
                     bloque, r'\b' + re.escape(clave) + r'\s*:',
                     '%s falta en %s' % (clave, idioma))
-            self.assertIn('124', bloque, idioma)
+            self.assertIn('125', bloque, idioma)
         self.assertIn('{n}', bloques_i18n(self.html, 'es'))
         self.assertIn('{d}', bloques_i18n(self.html, 'es'))
 

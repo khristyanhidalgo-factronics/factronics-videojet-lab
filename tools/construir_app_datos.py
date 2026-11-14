@@ -212,9 +212,16 @@ def main():
             for m in modelos:
                 if m and m not in actuales:
                     actuales.append(m)
-            if p.get('conflicto_descripciones'):
+            if p.get('descripcion_alt') and not actual.get('descripcion_alt'):
+                actual['descripcion_alt'] = p['descripcion_alt']
+            actual['revision'] = actual.get('revision') or p.get('revision')
+            actual['revision_estado'] = (actual.get('revision_estado') or
+                                         p.get('revision_estado'))
+            if p.get('conflicto_descripciones') and not actual.get('revision_resuelta'):
                 # Conflicto real entre la base digital y el IPL OCR: la app
-                # debe mostrarlo aunque el P/N ya existiera.
+                # debe mostrarlo aunque el P/N ya existiera. Si la revision
+                # ya lo resolvio (sinonimo), se conserva la descripcion
+                # canonica y el alias sin reabrir el conflicto.
                 actual['conflicto_descripciones'] = True
                 actual['conflicto_ocr'] = {
                     'descripcion': p.get('descripcion') or '',
@@ -229,11 +236,14 @@ def main():
         nueva = {
             'pn': pn,
             'descripcion': p.get('descripcion') or '',
+            'descripcion_alt': p.get('descripcion_alt') or '',
             'descripciones': p.get('descripciones') or [],
             'estado': p.get('estado') or 'borrador-decodificado',
             'conflicto_descripciones': bool(p.get('conflicto_descripciones')),
             'modelos': modelos,
             'origen': 'OCR',
+            'revision': p.get('revision') or '',
+            'revision_estado': p.get('revision_estado') or '',
         }
         partes_cij_app.append(nueva)
         por_pn[pn] = nueva
@@ -242,10 +252,12 @@ def main():
         paquete['partes'].append({
             'n': p['pn'],
             'd': (p.get('descripcion') or ''),
+            'd_alt': (p.get('descripcion_alt') or ''),
             't': 'CIJ',
             'm': ', '.join(p.get('modelos') or []),
             'e': p.get('estado'),
             'c': bool(p.get('conflicto_descripciones')),
+            'rev': p.get('revision') or '',
         })
     # partes LASER
     for p in laser_partes.get('partes', []):
