@@ -7,6 +7,7 @@ Comprueba los invariantes que sostienen los tipos de pregunta:
   - 800 curvas de solvente verificadas con al menos 4 valores unicos;
   - 16 temperaturas tabuladas (10..40 °C cada 2) y 800 referencias @30 °C;
   - claves i18n q_rib_vel, q_rib_temp y q_sol_temp en es/en/pt/it/zh;
+  - 105 densidades, 117 inflamaciones y 119 volatilidades SDS con valor unico;
   - el generador integra los tres tipos y el pool global de componentes SDS;
   - resumen del historial (examenes, promedio ponderado y mejor) y sus claves;
   - el CI ejecuta la auditoria y esta prueba.
@@ -25,7 +26,7 @@ INDICE = os.path.join(RAIZ, 'docs', 'app', 'index.html')
 WORKFLOW = os.path.join(RAIZ, '.github', 'workflows', 'validar.yml')
 IDIOMAS = ('es', 'en', 'pt', 'it', 'zh')
 CLAVES_I18N = ('q_rib_vel', 'q_rib_temp', 'q_sol_temp',
-               'q_sol_horas', 'q_sds_dens', 'q_sds_flash')
+               'q_sol_horas', 'q_sds_dens', 'q_sds_flash', 'q_sds_volat')
 
 
 def cargar_datos():
@@ -111,7 +112,7 @@ class ExamenGenTest(unittest.TestCase):
         self.assertGreaterEqual(len(horas), 4)
 
     def test_propiedades_sds_con_valor_unico(self):
-        dens, flash = [], []
+        dens, flash, volat = [], [], []
         ambiguas = set()
         for codigo, tinta in self.datos['tintas'].items():
             fichas = tinta.get('fichas') or []
@@ -120,6 +121,7 @@ class ExamenGenTest(unittest.TestCase):
                         if f.get('props', {}).get(prop)}
             d = valores('densidad_relativa')
             f = valores('punto_inflamacion')
+            v = valores('volatilidad')
             if len(d) == 1:
                 m = re.match(r'^-?\d+(?:\.\d+)?', next(iter(d)))
                 if m:
@@ -132,12 +134,19 @@ class ExamenGenTest(unittest.TestCase):
                     flash.append(m.group(0))
             elif len(f) > 1:
                 ambiguas.add(codigo)
+            if len(v) == 1:
+                volat.append(next(iter(v)))
+            elif len(v) > 1:
+                ambiguas.add(codigo)
         self.assertEqual(105, len(dens))
         self.assertEqual(25, len(set(dens)))
         self.assertEqual(117, len(flash))
         self.assertEqual(18, len(set(flash)))
+        self.assertEqual(119, len(volat))
+        self.assertEqual(25, len(set(volat)))
         self.assertGreaterEqual(len(set(dens)), 4)
         self.assertGreaterEqual(len(set(flash)), 4)
+        self.assertGreaterEqual(len(set(volat)), 4)
         self.assertIn('V4278', ambiguas)
         self.assertIn('V4211', ambiguas)
         self.assertIn('V526', ambiguas)
@@ -163,7 +172,7 @@ class ExamenGenTest(unittest.TestCase):
             horas = re.search(r"q_sol_horas\s*:\s*'([^']*)'", bloque).group(1)
             for marca in ('{m}', '{t}', '{u}', '{T}'):
                 self.assertIn(marca, horas, '%s en %s' % (marca, idioma))
-            for clave in ('q_sds_dens', 'q_sds_flash'):
+            for clave in ('q_sds_dens', 'q_sds_flash', 'q_sds_volat'):
                 texto = re.search(
                     r"%s\s*:\s*'((?:\\.|[^'\\])*)'" % clave,
                     bloque).group(1)
@@ -172,9 +181,10 @@ class ExamenGenTest(unittest.TestCase):
     def test_generador_integra_los_tipos(self):
         for fragmento in (
                 "'q_rib_vel'", "'q_rib_temp'", "'q_sol_temp'",
-                "'q_sol_horas'", "'q_sds_dens'", "'q_sds_flash'",
+                "'q_sol_horas'", "'q_sds_dens'", "'q_sds_flash'", "'q_sds_volat'",
                 "tipo:'rib_vel'", "tipo:'rib_temp'", "tipo:'sol_temp'",
                 "tipo:'sol_horas'", "tipo:'sds_dens'", "tipo:'sds_flash'",
+                "tipo:'sds_volat'", 'SDS_PROPS.volat',
                 "typeof g.vel === 'number'", "typeof g.temp === 'number'",
                 'Array.isArray(s.c)', "g.col !== 'Colors'", 'SDS_PROPS',
                 'SOL_USOS', 'COMP_NAMES', 'TINTAS_CON_COMP'):

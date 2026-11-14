@@ -176,15 +176,17 @@ function principal() {
     contexto.refUso(s.r) !== null && contexto.refUso(s.r) !== undefined);
   const dens = contexto.SDS_PROPS.dens;
   const flash = contexto.SDS_PROPS.flash;
-  console.log('Datos: %d ribbons con velocidad, %d con temperatura, %d curvas, %d referencias, %d densidades, %d inflamaciones',
+  const volat = contexto.SDS_PROPS.volat;
+  console.log('Datos: %d ribbons con velocidad, %d con temperatura, %d curvas, %d referencias, %d densidades, %d inflamaciones, %d volatilidades',
               conVel.length, conTemp.length, curvas.length, refs.length,
-              dens.length, flash.length);
+              dens.length, flash.length, volat.length);
   if (conVel.length < 4) throw new Error('faltan ribbons con velocidad');
   if (conTemp.length < 4) throw new Error('faltan ribbons con temperatura');
   if (curvas.length < 4) throw new Error('faltan curvas de solvente verificadas');
   if (refs.length < 4) throw new Error('faltan referencias de solvente');
   if (dens.length < 4) throw new Error('faltan densidades SDS con valor unico');
   if (flash.length < 4) throw new Error('faltan puntos de inflamacion SDS con valor unico');
+  if (volat.length < 4) throw new Error('faltan volatilidades SDS con valor unico');
 
   let fallos = 0;
   const fallo = msg => {
@@ -208,8 +210,9 @@ function principal() {
       contexto.fmtNum(1000 / contexto.refUso(s.r), 1) + ' h'));
     const validDens = new Set(dens.map(x => x.v));
     const validFlash = new Set(flash.map(x => x.v));
+    const validVolat = new Set(volat.map(x => contexto.tr(x.v)));
     const tipos = {rib_vel: 0, rib_temp: 0, sol_temp: 0,
-                   sol_horas: 0, sds_dens: 0, sds_flash: 0};
+                   sol_horas: 0, sds_dens: 0, sds_flash: 0, sds_volat: 0};
     let total = 0;
 
     for (const nivel of NIVELES) {
@@ -278,6 +281,9 @@ function principal() {
           if (p.tipo === 'sds_flash' && !validFlash.has(p.a)) {
             fallo(idioma + ': inflamacion fuera de las SDS: ' + p.a);
           }
+          if (p.tipo === 'sds_volat' && !validVolat.has(p.a)) {
+            fallo(idioma + ': volatilidad fuera de las SDS: ' + p.a);
+          }
         }
       }
     }
@@ -288,6 +294,7 @@ function principal() {
     if (!tipos.sol_horas) fallo(idioma + ': no aparecio sol_horas');
     if (!tipos.sds_dens) fallo(idioma + ': no aparecio sds_dens');
     if (!tipos.sds_flash) fallo(idioma + ': no aparecio sds_flash');
+    if (!tipos.sds_volat) fallo(idioma + ': no aparecio sds_volat');
     resumen[idioma] = {total, tipos};
     console.log('%s: %d preguntas, tipos nuevos %j', idioma, total, tipos);
   }

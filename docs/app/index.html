@@ -575,7 +575,8 @@ Object.assign(I18N.es, {
   q_sol_temp:'Consumo de solvente {m} ({t}) a {T} °C según la curva oficial:',
   q_sol_horas:'El solvente {m} ({t}) consume {u} ml/h a {T} °C. ¿Cuántas horas dura 1 L?',
   q_sds_dens:'¿Cuál es la densidad relativa de la tinta {c} según su SDS?',
-  q_sds_flash:'¿Cuál es el punto de inflamación de la tinta {c} según su SDS?'
+  q_sds_flash:'¿Cuál es el punto de inflamación de la tinta {c} según su SDS?',
+  q_sds_volat:'¿Qué volatilidad reporta la SDS de la tinta {c}?'
 });
 Object.assign(I18N.en, {
   vel_t:'CIJ line speed', vel_s:'Nominal speed by model, nozzle and font, read from the official v9.7 calculators (decoded draft).',
@@ -608,7 +609,8 @@ Object.assign(I18N.en, {
   q_sol_temp:'Solvent consumption {m} ({t}) at {T} °C from the official curve:',
   q_sol_horas:'Solvent {m} ({t}) consumes {u} ml/h at {T} °C. How many hours does 1 L last?',
   q_sds_dens:'What is the relative density of ink {c} according to its SDS?',
-  q_sds_flash:'What is the flash point of ink {c} according to its SDS?'
+  q_sds_flash:'What is the flash point of ink {c} according to its SDS?',
+  q_sds_volat:'What volatility does the SDS report for ink {c}?'
 });
 Object.assign(I18N.pt, {
   vel_t:'Velocidade de linha CIJ', vel_s:'Velocidade nominal por modelo, bocal e fonte, lida dos calculadores oficiais v9.7 (rascunho decodificado).',
@@ -641,7 +643,8 @@ Object.assign(I18N.pt, {
   q_sol_temp:'Consumo de solvente {m} ({t}) a {T} °C segundo a curva oficial:',
   q_sol_horas:'O solvente {m} ({t}) consome {u} ml/h a {T} °C. Quantas horas dura 1 L?',
   q_sds_dens:'Qual é a densidade relativa da tinta {c} segundo sua SDS?',
-  q_sds_flash:'Qual é o ponto de fulgor da tinta {c} segundo sua SDS?'
+  q_sds_flash:'Qual é o ponto de fulgor da tinta {c} segundo sua SDS?',
+  q_sds_volat:'Qual é a volatilidade reportada na SDS da tinta {c}?'
 });
 Object.assign(I18N.it, {
   vel_t:'Velocità di linea CIJ', vel_s:'Velocità nominale per modello, ugello e font, letta dai calcolatori ufficiali v9.7 (bozza decodificata).',
@@ -674,7 +677,8 @@ Object.assign(I18N.it, {
   q_sol_temp:'Consumo di solvente {m} ({t}) a {T} °C secondo la curva ufficiale:',
   q_sol_horas:'Il solvente {m} ({t}) consuma {u} ml/h a {T} °C. Quante ore dura 1 L?',
   q_sds_dens:'Qual è la densità relativa dell\'inchiostro {c} secondo la sua SDS?',
-  q_sds_flash:'Qual è il punto di infiammabilità dell\'inchiostro {c} secondo la sua SDS?'
+  q_sds_flash:'Qual è il punto di infiammabilità dell\'inchiostro {c} secondo la sua SDS?',
+  q_sds_volat:'Qual è la volatilità riportata nella SDS dell\'inchiostro {c}?'
 });
 Object.assign(I18N.zh, {
   vel_t:'CIJ 线速度', vel_s:'按型号、喷嘴和字体读取官方 v9.7 计算器的额定速度（解码草稿）。',
@@ -707,7 +711,8 @@ Object.assign(I18N.zh, {
   q_sol_temp:'根据官方曲线，溶剂 {m}（{t}）在 {T} °C 的消耗量：',
   q_sol_horas:'溶剂 {m}（{t}）在 {T} °C 下消耗 {u} ml/h。1 L 可用多少小时？',
   q_sds_dens:'根据 SDS，墨水 {c} 的相对密度是多少？',
-  q_sds_flash:'根据 SDS，墨水 {c} 的闪点是多少？'
+  q_sds_flash:'根据 SDS，墨水 {c} 的闪点是多少？',
+  q_sds_volat:'根据 SDS，墨水 {c} 的挥发性是多少？'
 });
 let LANG = localStorage.getItem('fvl_lang') || 'es';
 const t = (k) => (I18N[LANG] && I18N[LANG][k]) || I18N.es[k] || k;
@@ -1133,7 +1138,7 @@ function opciones(correcta, pool, n=3){
 }
 /* Propiedades SDS con valor unico por tinta (se excluyen las fichas en conflicto). */
 const SDS_PROPS = (() => {
-  const dens = [], flash = [];
+  const dens = [], flash = [], volat = [];
   for (const [c,x] of Object.entries(D.tintas)) {
     const vals = prop => [...new Set((x.fichas||[])
       .map(f => f.props && f.props[prop]).filter(Boolean))];
@@ -1147,8 +1152,10 @@ const SDS_PROPS = (() => {
       const m = f[0].match(/^-?\d+/);
       if (m) flash.push({c, v:m[0] + ' °C'});
     }
+    const vo = vals('volatilidad');
+    if (vo.length === 1) volat.push({c, v:vo[0]});
   }
-  return {dens, flash};
+  return {dens, flash, volat};
 })();
 /* Pools de datos reutilizados por el generador (no cambian en tiempo de ejecucion). */
 const TINTAS = Object.entries(D.tintas);
@@ -1247,8 +1254,9 @@ function generarPregunta(nivel){
     return {q:t('q_ref').replace('{m}', s.m+(s.v?' '+s.v:'')).replace('{t}', s.t), a:correcta,
       ops:opciones(correcta, pool), ref:t('ref_sol')};
   }
-  const tipoSds = aleatorio(['cas', 'dens', 'flash'].filter(k => ({
-    cas: TINTAS_CON_COMP.length, dens: SDS_PROPS.dens.length, flash: SDS_PROPS.flash.length
+  const tipoSds = aleatorio(['cas', 'dens', 'flash', 'volat'].filter(k => ({
+    cas: TINTAS_CON_COMP.length, dens: SDS_PROPS.dens.length, flash: SDS_PROPS.flash.length,
+    volat: SDS_PROPS.volat.length
   })[k]));
   if (tipoSds === 'dens') {
     const d = aleatorio(SDS_PROPS.dens);
@@ -1261,6 +1269,13 @@ function generarPregunta(nivel){
     const pool = SDS_PROPS.flash.map(x => x.v);
     return {q:t('q_sds_flash').replace('{c}', f.c), a:f.v,
       ops:opciones(f.v, pool), ref:t('ref_sds'), tipo:'sds_flash'};
+  }
+  if (tipoSds === 'volat') {
+    const v = aleatorio(SDS_PROPS.volat);
+    const correcta = tr(v.v);
+    const pool = SDS_PROPS.volat.map(x => tr(x.v));
+    return {q:t('q_sds_volat').replace('{c}', v.c), a:correcta,
+      ops:opciones(correcta, pool), ref:t('ref_sds'), tipo:'sds_volat'};
   }
   if (TINTAS_CON_COMP.length) {
     const [c,x] = aleatorio(TINTAS_CON_COMP);
