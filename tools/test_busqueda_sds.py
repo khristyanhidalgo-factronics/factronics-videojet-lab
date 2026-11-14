@@ -197,6 +197,9 @@ class BusquedaSdsTest(unittest.TestCase):
         self.assertIn("BUS==='sds'", self.html)
         self.assertIn('for (const r of SDS_BUS)', self.html)
         self.assertIn('r.ns.some(', self.html)
+        self.assertIn('data-sds=', self.html)
+        self.assertIn('detalleTinta(b.dataset.sds)', self.html)
+        self.assertIn("c.dataset.est === 'tintas'", self.html)
         for idioma in IDIOMAS:
             bloque = bloques_i18n(self.html, idioma) + bloques_base(self.html, idioma)
             self.assertIn("bus_sds:'SDS'", bloque, idioma)

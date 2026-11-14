@@ -958,7 +958,7 @@ function buscar(qraw){
         if (!q || norm(r.cas).includes(q) || norm(r.c).includes(q) ||
             r.ns.some((n,i) => norm(n).includes(q) || norm(nombres[i]).includes(q))) {
           out.push({tipo:'SDS', n:r.cas,
-            d:`${tr(r.n)} · ${r.c}${r.p?' · '+r.p:''}`});
+            d:`${tr(r.n)} · ${r.c}${r.p?' · '+r.p:''}`, sds:r.c});
         }
         if (out.length > limite*2) break;
       }
@@ -967,8 +967,18 @@ function buscar(qraw){
   const slice = out.slice(0, 300);
   $('#bus_count').textContent = `${slice.length}${out.length>slice.length?'+':''} ${t('items')}`;
   $('#bus_list').innerHTML = slice.length ? slice.map(r => `<div class="row"><span class="badge">${esc(r.tipo)}</span>
-      <span class="n">${esc(r.n)}</span><span class="d">${esc(r.d)}${r.m?` · ${esc(r.m)}`:''}${r.c?` · ${esc(t('conflicto'))}`:''}</span>${r.e?badge(r.e):''}</div>`).join('')
+      <span class="n">${esc(r.n)}</span><span class="d">${esc(r.d)}${r.m?` · ${esc(r.m)}`:''}${r.c?` · ${esc(t('conflicto'))}`:''}</span>${r.e?badge(r.e):''}${r.sds?`<button class="btn" data-sds="${esc(r.sds)}" aria-label="${esc(t('ver')+' '+r.sds)}">${esc(t('ver'))}</button>`:''}</div>`).join('')
     : `<div class="row"><span class="d">${esc(t('sin_resultados'))}</span></div>`;
+  $('#bus_list').onclick = e => {
+    const b = e.target.closest('[data-sds]');
+    if (!b) return;
+    EST = 'tintas';
+    $$('#est_chips .chip').forEach(c => c.classList.toggle('on', c.dataset.est === 'tintas'));
+    irTab('estudiar');
+    renderEstudiar();
+    detalleTinta(b.dataset.sds);
+    $('#tinta_det').scrollIntoView({behavior:'smooth', block:'start'});
+  };
 }
 $('#q').addEventListener('input', e => buscar(e.target.value));
 
