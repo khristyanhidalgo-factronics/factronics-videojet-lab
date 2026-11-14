@@ -1,0 +1,126 @@
+# -*- coding: utf-8 -*-
+"""Prueba de datos e i18n del examen generado de 5 niveles.
+
+Comprueba los invariantes que sostienen los tipos de pregunta:
+  - 21 ribbons con velocidad numérica y 14 con temperatura numérica;
+  - 23 colores de ribbon utiles (se excluye el encabezado "Colors");
+  - 800 curvas de solvente verificadas con al menos 4 valores unicos;
+  - 16 temperaturas tabuladas (10..40 °C cada 2) y 800 referencias @30 °C;
+  - claves i18n q_rib_vel, q_rib_temp y q_sol_temp en es/en/pt/it/zh;
+  - el generador integra los tres tipos y el pool global de componentes SDS;
+  - el CI ejecuta la auditoria y esta prueba.
+
+Uso:
+  python tools/test_examen_gen.py
+"""
+import json
+import os
+import re
+import unittest
+
+RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATOS_JS = os.path.join(RAIZ, 'docs', 'app', 'datos.js')
+INDICE = os.path.join(RAIZ, 'docs', 'app', 'index.html')
+WORKFLOW = os.path.join(RAIZ, '.github', 'workflows', 'validar.yml')
+IDIOMAS = ('es', 'en', 'pt', 'it', 'zh')
+CLAVES_I18N = ('q_rib_vel', 'q_rib_temp', 'q_sol_temp')
+
+
+def cargar_datos():
+    with open(DATOS_JS, encoding='utf-8') as f:
+        texto = f.read()
+    m = re.search(r'window\.DATOS\s*=\s*(\{.*\});\s*$', texto, re.S)
+    if not m:
+        raise RuntimeError('no se encontro window.DATOS en datos.js')
+    return json.loads(m.group(1))
+
+
+def bloques_i18n(html, idioma):
+    patron = re.compile(
+        r'Object\.assign\(I18N\.' + re.escape(idioma) + r',\s*\{(.*?)\n\}\);',
+        re.S)
+    return '\n'.join(patron.findall(html))
+
+
+class ExamenGenTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.datos = cargar_datos()
+        with open(INDICE, encoding='utf-8') as f:
+            cls.html = f.read()
+        cls.grados = cls.datos['ribbons']['grados']
+        cls.solventes = cls.datos['solventes']
+
+    def test_ribbons_con_velocidad_y_temperatura(self):
+        velocidades = [g['vel'] for g in self.grados
+                       if isinstance(g.get('vel'), (int, float))]
+        temperaturas = [g['temp'] for g in self.grados
+                        if isinstance(g.get('temp'), (int, float))]
+        self.assertEqual(21, len(velocidades))
+        self.assertEqual(14, len(temperaturas))
+        self.assertEqual({200, 400, 500, 600, 800, 1000},
+                         set(velocidades))
+        self.assertEqual({100, 110, 180, 200, 250},
+                         set(temperaturas))
+        self.assertGreaterEqual(len(set(velocidades)), 4)
+        self.assertGreaterEqual(len(set(temperaturas)), 4)
+
+    def test_colores_de_ribbon(self):
+        colores = [g['col'] for g in self.grados
+                   if g.get('col') and g['col'] != 'Colors']
+        self.assertEqual(23, len(colores))
+        self.assertGreaterEqual(len(set(colores)), 4)
+
+    def test_curvas_de_solvente(self):
+        curvas = [s for s in self.solventes
+                  if s.get('e') == 'verificado'
+                  and isinstance(s.get('c'), list) and len(s['c']) >= 4]
+        self.assertEqual(800, len(curvas))
+        temperaturas = set()
+        for s in curvas:
+            valores = {u for _, u in s['c'] if u is not None}
+            self.assertGreaterEqual(len(valores), 4, s.get('m'))
+            temperaturas.update(t for t, _ in s['c'])
+        self.assertEqual(set(range(10, 42, 2)), temperaturas)
+        referencias = [s for s in self.solventes
+                       if s.get('e') == 'verificado'
+                       and isinstance(s.get('r'), dict)
+                       and s['r'].get('uso_ml_hr') is not None]
+        self.assertEqual(800, len(referencias))
+
+    def test_i18n_de_los_tipos_nuevos(self):
+        for idioma in IDIOMAS:
+            bloque = bloques_i18n(self.html, idioma)
+            self.assertTrue(bloque, 'sin bloque i18n para %s' % idioma)
+            for clave in CLAVES_I18N:
+                self.assertRegex(
+                    bloque, r'\b' + re.escape(clave) + r'\s*:',
+                    '%s falta en %s' % (clave, idioma))
+        for idioma in IDIOMAS:
+            bloque = bloques_i18n(self.html, idioma)
+            self.assertIn('{g}', re.search(
+                r"q_rib_vel\s*:\s*'([^']*)'", bloque).group(1), idioma)
+            self.assertIn('{g}', re.search(
+                r"q_rib_temp\s*:\s*'([^']*)'", bloque).group(1), idioma)
+            sol = re.search(r"q_sol_temp\s*:\s*'([^']*)'", bloque).group(1)
+            for marca in ('{m}', '{t}', '{T}'):
+                self.assertIn(marca, sol, '%s en %s' % (marca, idioma))
+
+    def test_generador_integra_los_tipos(self):
+        for fragmento in (
+                "'q_rib_vel'", "'q_rib_temp'", "'q_sol_temp'",
+                "tipo:'rib_vel'", "tipo:'rib_temp'", "tipo:'sol_temp'",
+                "typeof g.vel === 'number'", "typeof g.temp === 'number'",
+                'Array.isArray(s.c)', "g.col !== 'Colors'", 'poolComp'):
+            self.assertIn(fragmento, self.html)
+        self.assertIn('function generarPregunta(', self.html)
+
+    def test_ci_ejecuta_auditoria_y_prueba(self):
+        with open(WORKFLOW, encoding='utf-8') as f:
+            workflow = f.read()
+        self.assertIn('tools/auditar_examen_gen.js', workflow)
+        self.assertIn('tools/test_examen_gen.py', workflow)
+
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)

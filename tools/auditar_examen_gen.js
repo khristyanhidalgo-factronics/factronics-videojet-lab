@@ -1,0 +1,256 @@
+#!/usr/bin/env node
+'use strict';
+/*
+ * Auditoria del examen generado de 5 niveles.
+ *
+ * Extrae de docs/app/index.html las funciones reales del generador
+ * (aleatorio, opciones, fmtNum, tr, refUso, generarPregunta) y las ejecuta
+ * contra docs/app/datos.js en los cinco idiomas.
+ *
+ * Comprueba, para cada nivel y cada idioma:
+ *   - cuatro opciones distintas y la respuesta correcta incluida una sola vez;
+ *   - ausencia de marcadores {x} y de respuestas vacias o "—";
+ *   - que los tipos nuevos (velocidad y temperatura de ribbon, consumo a
+ *     temperatura tabulada) aparecen y sus respuestas existen en los datos;
+ *   - que el consumo a temperatura no usa los 30 °C de la referencia fija.
+ *
+ * Uso:
+ *   node tools/auditar_examen_gen.js
+ */
+const fs = require('fs');
+const path = require('path');
+const vm = require('vm');
+
+const RAIZ = path.resolve(__dirname, '..');
+const IDIOMAS = ['es', 'en', 'pt', 'it', 'zh'];
+const NIVELES = [1, 2, 3, 4, 5];
+const CLAVES = [
+  'q_base', 'q_color', 'q_rib_vel', 'q_rib_temp', 'q_tec', 'q_sol_temp',
+  'q_ref', 'q_cas', 'q_part',
+  'ref_cij', 'ref_ribbons', 'ref_err', 'ref_sol', 'ref_sds', 'ref_part',
+];
+
+function leer(ruta) {
+  return fs.readFileSync(path.join(RAIZ, ruta), 'utf8');
+}
+
+function extraerFuncion(src, nombre) {
+  const inicio = src.indexOf('function ' + nombre + '(');
+  if (inicio < 0) throw new Error('no se encontro function ' + nombre);
+  const llave = src.indexOf('{', inicio);
+  let profundidad = 0;
+  let comilla = null;
+  let escape = false;
+  let linea = false;
+  let bloque = false;
+  for (let i = llave; i < src.length; i++) {
+    const c = src[i];
+    const siguiente = src[i + 1];
+    if (linea) { if (c === '\n') linea = false; continue; }
+    if (bloque) {
+      if (c === '*' && siguiente === '/') { bloque = false; i++; }
+      continue;
+    }
+    if (comilla) {
+      if (escape) { escape = false; continue; }
+      if (c === '\\') { escape = true; continue; }
+      if (c === comilla) comilla = null;
+      continue;
+    }
+    if (c === "'" || c === '"' || c === '`') { comilla = c; continue; }
+    if (c === '/' && siguiente === '/') { linea = true; i++; continue; }
+    if (c === '/' && siguiente === '*') { bloque = true; i++; continue; }
+    if (c === '{') profundidad++;
+    if (c === '}') {
+      profundidad--;
+      if (profundidad === 0) return src.slice(inicio, i + 1);
+    }
+  }
+  throw new Error('function ' + nombre + ' sin cierre');
+}
+
+function extraerI18N(src) {
+  const i18n = {};
+  IDIOMAS.forEach(idioma => { i18n[idioma] = {}; });
+  for (const idioma of IDIOMAS) {
+    const patron = new RegExp(
+      'Object\\.assign\\(I18N\\.' + idioma + ', \\{([\\s\\S]*?)\\n\\}\\);', 'g');
+    let bloque;
+    while ((bloque = patron.exec(src))) {
+      for (const clave of CLAVES) {
+        const valor = bloque[1].match(
+          new RegExp('(?:^|[,{\\n])\\s*' + clave + "\\s*:\\s*'((?:\\\\.|[^'\\\\])*)'"));
+        if (valor) i18n[idioma][clave] = valor[1].replace(/\\'/g, "'");
+      }
+    }
+  }
+  return i18n;
+}
+
+function principal() {
+  const datosTxt = leer('docs/app/datos.js');
+  const contextoDatos = {window: {}};
+  vm.createContext(contextoDatos);
+  vm.runInContext(datosTxt, contextoDatos);
+  const D = contextoDatos.window.DATOS;
+
+  const html = leer('docs/app/index.html');
+  const script = html.match(/<script>\s*([\s\S]*?)\s*<\/script>/);
+  if (!script) throw new Error('no se encontro el script principal de index.html');
+  const src = script[1];
+  const i18n = extraerI18N(src);
+
+  const faltan = [];
+  for (const idioma of IDIOMAS) {
+    for (const clave of CLAVES) {
+      if (!i18n[idioma][clave]) faltan.push(idioma + '.' + clave);
+    }
+  }
+  if (faltan.length) throw new Error('faltan claves i18n: ' + faltan.join(', '));
+
+  const locales = src.match(/const LOCALES\s*=\s*\{[^}]*\};/);
+  if (!locales) throw new Error('no se encontro const LOCALES');
+  let LANG = 'es';
+  const t = k => (i18n[LANG] && i18n[LANG][k]) || i18n.es[k] || k;
+  const contexto = {D, LANG, t, Map, Set, console};
+  contexto.tr = function (s) {
+    if (!s) return s;
+    const clave = String(s).replace(/\s+/g, ' ').trim();
+    const m = D.tr && D.tr[clave];
+    return (m && m[LANG]) || s;
+  };
+  vm.createContext(contexto);
+  vm.runInContext(locales[0].replace('const ', 'var '), contexto);
+  const codigo = ['aleatorio', 'opciones', 'fmtNum', 'tr', 'refUso', 'generarPregunta']
+    .map(nombre => extraerFuncion(src, nombre)).join('\n');
+  vm.runInContext(codigo, contexto);
+
+  const grados = D.ribbons.grados;
+  const conVel = grados.filter(g => typeof g.vel === 'number');
+  const conTemp = grados.filter(g => typeof g.temp === 'number');
+  const curvas = D.solventes.filter(s => s.e === 'verificado' &&
+    Array.isArray(s.c) && s.c.length >= 4);
+  console.log('Datos: %d ribbons con velocidad, %d con temperatura, %d curvas verificadas',
+              conVel.length, conTemp.length, curvas.length);
+  if (conVel.length < 4) throw new Error('faltan ribbons con velocidad');
+  if (conTemp.length < 4) throw new Error('faltan ribbons con temperatura');
+  if (curvas.length < 4) throw new Error('faltan curvas de solvente verificadas');
+
+  let fallos = 0;
+  const fallo = msg => {
+    fallos++;
+    if (fallos <= 30) console.error('FALLO: ' + msg);
+  };
+
+  const resumen = {};
+  for (const idioma of IDIOMAS) {
+    LANG = idioma;
+    contexto.LANG = idioma;
+    const validVel = new Set(conVel.map(g => contexto.fmtNum(g.vel, 0) + ' mm/s'));
+    const validTemp = new Set(conTemp.map(g => contexto.fmtNum(g.temp, 0) + ' °C'));
+    const validSol = new Set();
+    curvas.forEach(s => s.c.forEach(([, u]) => {
+      if (u !== null && u !== undefined) {
+        validSol.add(contexto.fmtNum(u, 1) + ' ml/h');
+      }
+    }));
+    const tipos = {rib_vel: 0, rib_temp: 0, sol_temp: 0};
+    let total = 0;
+
+    for (const nivel of NIVELES) {
+      for (let k = 0; k < 3000; k++) {
+        const p = contexto.generarPregunta(nivel);
+        total++;
+        if (!p.q || p.q === '—' || /\{[a-zA-Z]+\}/.test(p.q)) {
+          fallo(idioma + ' nivel ' + nivel + ': enunciado invalido');
+        }
+        if (!p.a || p.a === '—') {
+          fallo(idioma + ' nivel ' + nivel + ': respuesta vacia');
+        }
+        if (!p.ref) {
+          fallo(idioma + ' nivel ' + nivel + ': referencia vacia');
+        }
+        const minimo = nivel === 3 ? 3 : 4;
+        if (!Array.isArray(p.ops) || p.ops.length < minimo || p.ops.length > 4) {
+          fallo(idioma + ' nivel ' + nivel + ': opciones fuera de rango (' +
+                (p.ops ? p.ops.length : 'sin array') + ')');
+          continue;
+        }
+        if (p.ops.length === 3) {
+          const conjunto = new Set(p.ops);
+          const tecnologias = ['LASER', 'TTO', 'CIJ'];
+          if (nivel !== 3 || conjunto.size !== 3 ||
+              tecnologias.some(x => !conjunto.has(x))) {
+            fallo(idioma + ' nivel ' + nivel +
+                  ': 3 opciones que no son las 3 tecnologias');
+          }
+        }
+        if (new Set(p.ops).size !== p.ops.length) {
+          fallo(idioma + ' nivel ' + nivel + ': opciones repetidas');
+        }
+        if (p.ops.filter(x => x === p.a).length !== 1) {
+          fallo(idioma + ' nivel ' + nivel + ': respuesta ausente o repetida');
+        }
+        if (p.ops.some(x => !x || x === '—')) {
+          fallo(idioma + ' nivel ' + nivel + ': opcion vacia');
+        }
+        if (p.tipo) {
+          if (!(p.tipo in tipos)) {
+            fallo(idioma + ' nivel ' + nivel + ': tipo desconocido ' + p.tipo);
+            continue;
+          }
+          tipos[p.tipo]++;
+          if (p.tipo === 'rib_vel' && !validVel.has(p.a)) {
+            fallo(idioma + ': velocidad fuera de los datos: ' + p.a);
+          }
+          if (p.tipo === 'rib_temp' && !validTemp.has(p.a)) {
+            fallo(idioma + ': temperatura fuera de los datos: ' + p.a);
+          }
+          if (p.tipo === 'sol_temp') {
+            if (!validSol.has(p.a)) {
+              fallo(idioma + ': consumo fuera de las curvas: ' + p.a);
+            }
+            if (p.q.includes('30 °C')) {
+              fallo(idioma + ': consumo a temperatura usa los 30 °C fijos');
+            }
+          }
+        }
+      }
+    }
+
+    if (!tipos.rib_vel) fallo(idioma + ': no aparecio rib_vel');
+    if (!tipos.rib_temp) fallo(idioma + ': no aparecio rib_temp');
+    if (!tipos.sol_temp) fallo(idioma + ': no aparecio sol_temp');
+    resumen[idioma] = {total, tipos};
+    console.log('%s: %d preguntas, tipos nuevos %j', idioma, total, tipos);
+  }
+
+  // Simulacion de examenes completos de 20 preguntas en los niveles tocados.
+  LANG = 'es';
+  contexto.LANG = 'es';
+  for (const nivel of [2, 4]) {
+    for (let e = 0; e < 1000; e++) {
+      for (let k = 0; k < 20; k++) {
+        const p = contexto.generarPregunta(nivel);
+        if (p.ops.length !== 4 || new Set(p.ops).size !== 4 ||
+            p.ops.filter(x => x === p.a).length !== 1) {
+          fallo('examen simulado invalido en nivel ' + nivel);
+        }
+      }
+    }
+  }
+
+  if (fallos) {
+    console.error('FALLOS: ' + fallos);
+    process.exit(1);
+  }
+  console.log('OK: 5 idiomas, 5 niveles, %d preguntas auditadas, 0 opciones invalidas',
+              IDIOMAS.reduce((n, i) => n + resumen[i].total, 0));
+}
+
+try {
+  principal();
+} catch (e) {
+  console.error('ERROR: ' + e.message);
+  process.exit(1);
+}

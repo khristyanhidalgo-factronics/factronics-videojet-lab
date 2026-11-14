@@ -559,7 +559,10 @@ Object.assign(I18N.es, {
   q_part_tto_pn:'¿Cuál es la descripción de la parte TTO {n}?',
   q_part_tto_desc:'¿Qué P/N verificado de TTO corresponde a la descripción «{d}»?',
   ref_partes_tto:'partes_tto (solo P/N verificados)',
-  partes_tto_nota:'Banco de partes TTO con 120 P/N verificados. Solo se usan descripciones oficiales ya traducidas.'
+  partes_tto_nota:'Banco de partes TTO con 120 P/N verificados. Solo se usan descripciones oficiales ya traducidas.',
+  q_rib_vel:'¿Cuál es la velocidad máxima de impresión del ribbon {g}?',
+  q_rib_temp:'¿Cuál es la resistencia térmica del ribbon {g}?',
+  q_sol_temp:'Consumo de solvente {m} ({t}) a {T} °C según la curva oficial:'
 });
 Object.assign(I18N.en, {
   vel_t:'CIJ line speed', vel_s:'Nominal speed by model, nozzle and font, read from the official v9.7 calculators (decoded draft).',
@@ -586,7 +589,10 @@ Object.assign(I18N.en, {
   q_part_tto_pn:'What is the description of TTO part {n}?',
   q_part_tto_desc:'Which verified TTO P/N matches the description "{d}"?',
   ref_partes_tto:'partes_tto (verified P/N only)',
-  partes_tto_nota:'TTO parts bank with 120 verified P/Ns. Only official, already translated descriptions are used.'
+  partes_tto_nota:'TTO parts bank with 120 verified P/Ns. Only official, already translated descriptions are used.',
+  q_rib_vel:'What is the maximum printing speed of ribbon {g}?',
+  q_rib_temp:'What is the heat resistance of ribbon {g}?',
+  q_sol_temp:'Solvent consumption {m} ({t}) at {T} °C from the official curve:'
 });
 Object.assign(I18N.pt, {
   vel_t:'Velocidade de linha CIJ', vel_s:'Velocidade nominal por modelo, bocal e fonte, lida dos calculadores oficiais v9.7 (rascunho decodificado).',
@@ -613,7 +619,10 @@ Object.assign(I18N.pt, {
   q_part_tto_pn:'Qual é a descrição da peça TTO {n}?',
   q_part_tto_desc:'Qual P/N verificado de TTO corresponde à descrição «{d}»?',
   ref_partes_tto:'partes_tto (apenas P/N verificados)',
-  partes_tto_nota:'Banco de peças TTO com 120 P/Ns verificados. São usadas apenas descrições oficiais já traduzidas.'
+  partes_tto_nota:'Banco de peças TTO com 120 P/Ns verificados. São usadas apenas descrições oficiais já traduzidas.',
+  q_rib_vel:'Qual é a velocidade máxima de impressão da fita {g}?',
+  q_rib_temp:'Qual é a resistência térmica da fita {g}?',
+  q_sol_temp:'Consumo de solvente {m} ({t}) a {T} °C segundo a curva oficial:'
 });
 Object.assign(I18N.it, {
   vel_t:'Velocità di linea CIJ', vel_s:'Velocità nominale per modello, ugello e font, letta dai calcolatori ufficiali v9.7 (bozza decodificata).',
@@ -640,7 +649,10 @@ Object.assign(I18N.it, {
   q_part_tto_pn:'Qual è la descrizione del ricambio TTO {n}?',
   q_part_tto_desc:'Quale P/N TTO verificato corrisponde alla descrizione «{d}»?',
   ref_partes_tto:'partes_tto (solo P/N verificati)',
-  partes_tto_nota:'Banca ricambi TTO con 120 P/N verificati. Si usano solo descrizioni ufficiali già tradotte.'
+  partes_tto_nota:'Banca ricambi TTO con 120 P/N verificati. Si usano solo descrizioni ufficiali già tradotte.',
+  q_rib_vel:'Qual è la velocità massima di stampa del nastro {g}?',
+  q_rib_temp:'Qual è la resistenza termica del nastro {g}?',
+  q_sol_temp:'Consumo di solvente {m} ({t}) a {T} °C secondo la curva ufficiale:'
 });
 Object.assign(I18N.zh, {
   vel_t:'CIJ 线速度', vel_s:'按型号、喷嘴和字体读取官方 v9.7 计算器的额定速度（解码草稿）。',
@@ -667,7 +679,10 @@ Object.assign(I18N.zh, {
   q_part_tto_pn:'TTO 部件 {n} 的描述是什么？',
   q_part_tto_desc:'描述“{d}”对应哪个已验证 TTO P/N？',
   ref_partes_tto:'partes_tto（仅已验证 P/N）',
-  partes_tto_nota:'TTO 部件题库，仅包含 120 个已验证 P/N。仅使用已翻译的官方描述。'
+  partes_tto_nota:'TTO 部件题库，仅包含 120 个已验证 P/N。仅使用已翻译的官方描述。',
+  q_rib_vel:'色带 {g} 的最高打印速度是多少？',
+  q_rib_temp:'色带 {g} 的耐热温度是多少？',
+  q_sol_temp:'根据官方曲线，溶剂 {m}（{t}）在 {T} °C 的消耗量：'
 });
 let LANG = localStorage.getItem('fvl_lang') || 'es';
 const t = (k) => (I18N[LANG] && I18N[LANG][k]) || I18N.es[k] || k;
@@ -1059,9 +1074,33 @@ function generarPregunta(nivel){
       ref:t('ref_cij')};
   }
   if (nivel === 2) {
-    const g = aleatorio(grados.filter(g => g.col));
+    const conColor = grados.filter(g => g.col && g.col !== 'Colors');
+    const conVel = grados.filter(g => typeof g.vel === 'number' && (g.g || g.pn));
+    const conTemp = grados.filter(g => typeof g.temp === 'number' && (g.g || g.pn));
+    const tipo = aleatorio(['color', 'vel', 'temp'].filter(k =>
+      ({color: conColor, vel: conVel, temp: conTemp})[k].length));
+    if (tipo === 'vel') {
+      const g = aleatorio(conVel);
+      const pn = String(g.pn || '').replace(/\s+/g, ' ').trim();
+      const etiqueta = pn ? tr(g.g || g.pn) + ' (' + pn + ')' : tr(g.g || g.pn);
+      const correcta = fmtNum(g.vel, 0) + ' mm/s';
+      const pool = [...new Set(conVel.map(x => fmtNum(x.vel, 0) + ' mm/s'))];
+      return {q:t('q_rib_vel').replace('{g}', etiqueta), a:correcta,
+        ops:opciones(correcta, pool), ref:t('ref_ribbons'), tipo:'rib_vel'};
+    }
+    if (tipo === 'temp') {
+      const g = aleatorio(conTemp);
+      const pn = String(g.pn || '').replace(/\s+/g, ' ').trim();
+      const etiqueta = pn ? tr(g.g || g.pn) + ' (' + pn + ')' : tr(g.g || g.pn);
+      const correcta = fmtNum(g.temp, 0) + ' °C';
+      const pool = [...new Set(conTemp.map(x => fmtNum(x.temp, 0) + ' °C'))];
+      return {q:t('q_rib_temp').replace('{g}', etiqueta), a:correcta,
+        ops:opciones(correcta, pool), ref:t('ref_ribbons'), tipo:'rib_temp'};
+    }
+    const g = aleatorio(conColor);
     const col = tr(g.col);
-    return {q:t('q_color').replace('{g}', g.g||g.pn), a:col, ops:opciones(col, grados.map(x=>tr(x.col)).filter(Boolean)),
+    return {q:t('q_color').replace('{g}', g.g||g.pn), a:col,
+      ops:opciones(col, conColor.map(x=>tr(x.col)).filter(Boolean)),
       ref:t('ref_ribbons')};
   }
   if (nivel === 3) {
@@ -1078,6 +1117,20 @@ function generarPregunta(nivel){
       ref:t('ref_err')};
   }
   if (nivel === 4) {
+    if (Math.random() < 0.5) {
+      const conCurva = D.solventes.filter(s => s.e === 'verificado' && Array.isArray(s.c) && s.c.length >= 4);
+      const s = aleatorio(conCurva);
+      const puntos = s ? s.c.filter(([t,u]) => t !== 30 && u !== null && u !== undefined) : [];
+      if (s && puntos.length) {
+        const [temp, uso] = aleatorio(puntos);
+        const correcta = fmtNum(uso, 1) + ' ml/h';
+        const pool = [...new Set(s.c.filter(([,u]) => u !== null && u !== undefined)
+          .map(([,u]) => fmtNum(u, 1) + ' ml/h'))];
+        return {q:t('q_sol_temp').replace('{m}', s.m+(s.v?' '+s.v:''))
+          .replace('{t}', s.t).replace('{T}', fmtNum(temp, 0)),
+          a:correcta, ops:opciones(correcta, pool), ref:t('ref_sol'), tipo:'sol_temp'};
+      }
+    }
     const s = aleatorio(D.solventes.filter(s => s.e === 'verificado' && refUso(s.r) !== null && refUso(s.r) !== undefined));
     const uso = refUso(s.r);
     const correcta = fmtNum(uso, 1) + ' ml/h';
@@ -1092,8 +1145,10 @@ function generarPregunta(nivel){
     const f = aleatorio(x.fichas.filter(f => (f.comp||[]).length));
     const comp = aleatorio(f.comp);
     const nombre = tr(comp.n);
-    return {q:t('q_cas').replace('{cas}', comp.cas).replace('{c}', c), a:nombre, ops:opciones(nombre, x.fichas.flatMap(f => (f.comp||[]).map(c=>tr(c.n)))),
-      ref:t('ref_sds')};
+    const poolComp = tintas.flatMap(([,y]) =>
+      (y.fichas||[]).flatMap(f => (f.comp||[]).map(c=>tr(c.n))));
+    return {q:t('q_cas').replace('{cas}', comp.cas).replace('{c}', c), a:nombre,
+      ops:opciones(nombre, poolComp), ref:t('ref_sds')};
   }
   return {q:'—', a:'—', ops:['—'], ref:'—'};
 }
