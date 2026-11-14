@@ -9,20 +9,19 @@
 | Versión | Meta principal | Incluye |
 |---|---|---|
 | **v0.1.0** (publicada) | **Fundación** | Estructura, sistema de notas (5 tipos), landing en Pages, catálogo semilla, logo único, repo+push+Pages |
-| **v0.2.0** (en desarrollo, `alpha-35`) | **Datos reales + app web beta** | Fuentes TTO/CIJ/LÁSER, OCR 1550/1710, catálogo verificado, PWA con examen de 5 niveles, bancos por tecnología, buscador (partes, tintas, solventes, SDS, errores, ribbons, mantenimiento), calculadora y **es/en/pt/it/zh** |
+| **v0.2.0** (en desarrollo, `alpha-37`) | **Datos reales + app web beta** | Fuentes TTO/CIJ/LÁSER, OCR 1550/1710, catálogo verificado, PWA con examen de 5 niveles, bancos por tecnología, buscador (partes, tintas, solventes, SDS, errores, ribbons, mantenimiento), calculadora y **es/en/pt/it/zh** |
 | **v0.3.0** | **App web completa** | Calculadoras (consumo/costo/comparador), perfiles/historial, copia de seguridad JSON, temas festivos (Venezuela base + extensión), QR offline, 100% offline comprobado |
 
 ## Estado actual (2026-11-14)
 
-- **App:** `alpha-35` / build 49, publicada en Pages y verificada en vivo.
-- **Notas:** build 50, con índice SHA-256 y este ROADMAP actualizado.
+- **App:** `alpha-37` / build 53, publicada en Pages y verificada en vivo.
+- **Notas:** build 54, con índice SHA-256 y este ROADMAP actualizado.
 - **Datos:** 802 curvas de solvente, 564 tintas, 2.986 partes, 64 grados + 694
   ítems de ribbon, 1773 componentes SDS y 266 velocidades CIJ.
 - **Calidad:** suite completa en CI, auditoría de 75.000 preguntas del examen y
   pruebas de bancos, búsquedas, láser y notas.
-- **Siguiente no bloqueado:** aviso de actualización de la PWA, preguntas de
-  compatibilidad P/N→modelos CIJ y más variedad de mantenimiento cuando el OCR
-  lo permita.
+- **Siguiente no bloqueado:** prueba en dispositivo real, más variedad de
+  mantenimiento cuando el OCR lo permita y revisión de textos de interfaz.
 - **Bloqueado por revisión humana:** P/N OCR 1550/1710, 5 conflictos CIJ, 266
   velocidades y 56 avisos, partes TTO dudosas, títulos de boletines y estilo
   IT/ZH.

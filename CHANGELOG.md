@@ -7,7 +7,7 @@
 
 ## [v0.2.0-alpha] — En desarrollo
 
-**Última app publicada:** `alpha-35` / build 49 · **Notas:** build 50 · 2026-11-14
+**Última app publicada:** `alpha-37` / build 53 · **Notas:** build 54 · 2026-11-14
 **Objetivo:** app web offline (PWA) con los datos reales de TTO, CIJ y LÁSER,
 examen por niveles, buscador y calculadoras en cinco idiomas.
 
@@ -20,6 +20,10 @@ examen por niveles, buscador y calculadoras en cinco idiomas.
   266 velocidades CIJ con aviso de borrador decodificado.
 - **Buscador** de partes, tintas, **solventes (802 curvas)**, **SDS (527 pares
   tinta|CAS)**, códigos de error, ribbons (64 grados + 694 ítems) y mantenimiento.
+- **Compatibilidad P/N→modelos CIJ:** 124 preguntas con 18 conjuntos de modelos
+  (banco CIJ de 361 candidatos).
+- **Aviso de actualización de la PWA:** banner accesible, botón de recarga y
+  detección de nuevas versiones al volver a la app.
 - **Calculadora CIJ** con 802 curvas y 800 referencias @30 °C; referencia
   VJ1210/V401 = 11,2 ml/h.
 - **Cinco idiomas completos:** español, inglés, portugués, italiano y chino.
