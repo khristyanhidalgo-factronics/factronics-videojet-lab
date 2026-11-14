@@ -53,6 +53,10 @@
       construccion 31, `sw.js` alpha-26 y caché `fvl-v0.2.0-alpha-26` con 7
       recursos; 70 botones «Ver», ficha V401 con 5 componentes, consulta
       conservada al volver, «View» en EN y consola limpia.
+- [ ] **Verificación en vivo de alpha-27/build 33**: CI «Validar» y Pages en
+      `success`; `version.json` construccion 33, `sw.js` alpha-27; historial
+      9/10 + 6/10 + 10/10 → 3 exámenes, 83 % y 100 %, borrado con confirmación,
+      valores HTML escapados, 5 idiomas y consola limpia.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),

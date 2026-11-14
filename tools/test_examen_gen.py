@@ -8,6 +8,7 @@ Comprueba los invariantes que sostienen los tipos de pregunta:
   - 16 temperaturas tabuladas (10..40 °C cada 2) y 800 referencias @30 °C;
   - claves i18n q_rib_vel, q_rib_temp y q_sol_temp en es/en/pt/it/zh;
   - el generador integra los tres tipos y el pool global de componentes SDS;
+  - resumen del historial (examenes, promedio ponderado y mejor) y sus claves;
   - el CI ejecuta la auditoria y esta prueba.
 
 Uso:
@@ -40,6 +41,12 @@ def bloques_i18n(html, idioma):
     patron = re.compile(
         r'Object\.assign\(I18N\.' + re.escape(idioma) + r',\s*\{(.*?)\n\}\);',
         re.S)
+    return '\n'.join(patron.findall(html))
+
+
+def bloques_base(html, idioma):
+    patron = re.compile(
+        r'\n  ' + re.escape(idioma) + r': \{(.*?)\n  \}', re.S)
     return '\n'.join(patron.findall(html))
 
 
@@ -173,6 +180,18 @@ class ExamenGenTest(unittest.TestCase):
                 'SOL_USOS', 'COMP_NAMES', 'TINTAS_CON_COMP'):
             self.assertIn(fragmento, self.html)
         self.assertIn('function generarPregunta(', self.html)
+
+    def test_resumen_de_historial(self):
+        for fragmento in ('function resumenHistorial(',
+                          'function renderHistorial(',
+                          'resumenHistorial(h)', 'ex_hist_clear',
+                          'hist_confirm'):
+            self.assertIn(fragmento, self.html)
+        for idioma in IDIOMAS:
+            bloque = bloques_i18n(self.html, idioma) + bloques_base(self.html, idioma)
+            for clave in ('hist_examenes', 'hist_promedio', 'hist_mejor',
+                          'hist_borrar', 'hist_confirm'):
+                self.assertIn(clave + ':', bloque, '%s en %s' % (clave, idioma))
 
     def test_ci_ejecuta_auditoria_y_prueba(self):
         with open(WORKFLOW, encoding='utf-8') as f:

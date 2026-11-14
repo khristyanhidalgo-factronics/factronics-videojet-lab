@@ -307,6 +307,23 @@ function principal() {
     }
   }
 
+  // Resumen del historial: promedio ponderado, mejor y datos invalidos.
+  vm.runInContext(extraerFuncion(src, 'resumenHistorial'), contexto);
+  const casosHistorial = [
+    [[], {n:0, pct:0, mejor:0}],
+    [[{bien:8,total:10}], {n:1, pct:80, mejor:80}],
+    [[{bien:10,total:10},{bien:0,total:10}], {n:2, pct:50, mejor:100}],
+    [[{bien:12,total:10}], {n:1, pct:100, mejor:100}],
+    [[null,{bien:1,total:0},{bien:3,total:4}], {n:1, pct:75, mejor:75}]
+  ];
+  for (const [h, esperado] of casosHistorial) {
+    const r = contexto.resumenHistorial(h);
+    if (r.n !== esperado.n || r.pct !== esperado.pct || r.mejor !== esperado.mejor) {
+      fallo('historial: ' + JSON.stringify(h) + ' -> ' + JSON.stringify(r));
+    }
+  }
+  console.log('Historial: %d casos de resumen validados', casosHistorial.length);
+
   if (fallos) {
     console.error('FALLOS: ' + fallos);
     process.exit(1);

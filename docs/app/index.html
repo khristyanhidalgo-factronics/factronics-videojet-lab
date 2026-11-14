@@ -267,6 +267,8 @@ const I18N = {
     calc_t:'Calculadora de consumo (CIJ)', calc_s:'Consumo de solvente por curva oficial (estimación del documento, 10–40 °C).',
     calc_modelo:'Modelo', calc_tinta:'Tinta', calc_temp:'Temperatura (°C)', calc_precio:'Precio solvente (USD/L)', calc_ref:'referencia',
     ex_t:'Examen', ex_nivel:'Nivel', ex_cant:'Preguntas', ex_go:'Generar examen', ex_send:'Corregir', ex_score:'Resultado', ex_again:'Otro intento', ex_hist:'Historial',
+    hist_examenes:'Exámenes', hist_promedio:'Promedio', hist_mejor:'Mejor',
+    hist_borrar:'Borrar historial', hist_confirm:'¿Borrar el historial de exámenes?',
     n1:'Básico', n2:'Básico-Medio', n3:'Intermedio-Avanzado', n4:'Avanzado', n5:'Profesional',
     av_t:'Aviso y fuentes', av_s:'Este material se construyó a partir de documentos del equipo y fuentes oficiales Videojet. No sustituye la formación oficial ni los manuales de servicio.',
     av_ocr:'Los P/N de los IPL 1550 y 1710 se obtuvieron por OCR y quedan como borrador decodificado hasta su cotejo.',
@@ -283,6 +285,8 @@ const I18N = {
     calc_t:'CIJ consumption calculator', calc_s:'Solvent usage from the official curve (document estimate, 10–40 °C).',
     calc_modelo:'Model', calc_tinta:'Ink', calc_temp:'Temperature (°C)', calc_precio:'Solvent price (USD/L)', calc_ref:'reference',
     ex_t:'Exam', ex_nivel:'Level', ex_cant:'Questions', ex_go:'Generate exam', ex_send:'Grade', ex_score:'Score', ex_again:'Another attempt', ex_hist:'History',
+    hist_examenes:'Exams', hist_promedio:'Average', hist_mejor:'Best',
+    hist_borrar:'Clear history', hist_confirm:'Clear exam history?',
     n1:'Basic', n2:'Basic-Intermediate', n3:'Intermediate-Advanced', n4:'Advanced', n5:'Professional',
     av_t:'Notice and sources', av_s:'Built from the equipment documents and official Videojet sources. It does not replace official training or service manuals.',
     av_ocr:'The P/Ns from the 1550 and 1710 IPLs were obtained by OCR and remain decoded drafts until cross-checked.',
@@ -299,6 +303,8 @@ const I18N = {
     calc_t:'Calculadora de consumo (CIJ)', calc_s:'Consumo de solvente pela curva oficial (estimativa do documento, 10–40 °C).',
     calc_modelo:'Modelo', calc_tinta:'Tinta', calc_temp:'Temperatura (°C)', calc_precio:'Preço do solvente (USD/L)', calc_ref:'referência',
     ex_t:'Exame', ex_nivel:'Nível', ex_cant:'Perguntas', ex_go:'Gerar exame', ex_send:'Corrigir', ex_score:'Resultado', ex_again:'Outra tentativa', ex_hist:'Histórico',
+    hist_examenes:'Exames', hist_promedio:'Média', hist_mejor:'Melhor',
+    hist_borrar:'Limpar histórico', hist_confirm:'Limpar o histórico de exames?',
     n1:'Básico', n2:'Básico-Médio', n3:'Intermediário-Avançado', n4:'Avançado', n5:'Profissional',
     av_t:'Aviso e fontes', av_s:'Material construído a partir dos documentos do equipamento e fontes oficiais Videojet. Não substitui o treinamento oficial nem os manuais de serviço.',
     av_ocr:'Os P/N dos IPL 1550 e 1710 foram obtidos por OCR e ficam como rascunho decodificado até a conferência.',
@@ -315,6 +321,8 @@ const I18N = {
     calc_t:'Calcolatore di consumo (CIJ)', calc_s:'Consumo di solvente dalla curva ufficiale (stima del documento, 10–40 °C).',
     calc_modelo:'Modello', calc_tinta:'Inchiostro', calc_temp:'Temperatura (°C)', calc_precio:'Prezzo solvente (USD/L)', calc_ref:'riferimento',
     ex_t:'Esame', ex_nivel:'Livello', ex_cant:'Domande', ex_go:'Genera esame', ex_send:'Correggi', ex_score:'Risultato', ex_again:'Un altro tentativo', ex_hist:'Cronologia',
+    hist_examenes:'Esami', hist_promedio:'Media', hist_mejor:'Migliore',
+    hist_borrar:'Cancella cronologia', hist_confirm:'Cancellare la cronologia degli esami?',
     n1:'Base', n2:'Base-Intermedio', n3:'Intermedio-Avanzato', n4:'Avanzato', n5:'Professionale',
     av_t:'Avviso e fonti', av_s:'Materiale costruito dai documenti delle apparecchiature e da fonti ufficiali Videojet. Non sostituisce la formazione ufficiale né i manuali di servizio.',
     av_ocr:'I P/N degli IPL 1550 e 1710 sono stati ottenuti tramite OCR e restano bozze decodificate fino alla verifica.',
@@ -331,6 +339,8 @@ const I18N = {
     calc_t:'CIJ 消耗计算器', calc_s:'根据官方曲线计算溶剂消耗（文档估算，10–40 °C）。',
     calc_modelo:'型号', calc_tinta:'墨水', calc_temp:'温度 (°C)', calc_precio:'溶剂价格（美元/升）', calc_ref:'参考',
     ex_t:'考试', ex_nivel:'级别', ex_cant:'题目数量', ex_go:'生成考试', ex_send:'评分', ex_score:'成绩', ex_again:'再试一次', ex_hist:'历史记录',
+    hist_examenes:'考试', hist_promedio:'平均', hist_mejor:'最佳',
+    hist_borrar:'清除历史', hist_confirm:'清除考试历史记录？',
     n1:'基础', n2:'基础-中级', n3:'中级-高级', n4:'高级', n5:'专业',
     av_t:'声明与来源', av_s:'本材料基于设备文档和 Videojet 官方来源。不能替代官方培训或服务手册。',
     av_ocr:'1550 和 1710 IPL 的 P/N 通过 OCR 获得，在核对前仍为解码草稿。',
@@ -1570,12 +1580,36 @@ function guardarHistorial(nivel, bien, total){
   localStorage.setItem('fvl_exam_history', JSON.stringify(h.slice(0, 20)));
   renderHistorial();
 }
+function resumenHistorial(h){
+  const filas = (Array.isArray(h) ? h : []).filter(x => x && Number(x.total) > 0);
+  const total = filas.reduce((s,x) => s + Number(x.total), 0);
+  const bien = filas.reduce((s,x) => s + Math.min(Number(x.total),
+    Math.max(0, Number(x.bien) || 0)), 0);
+  const pct = total ? Math.min(100, Math.round(100 * bien / total)) : 0;
+  const mejor = filas.length ? Math.max(...filas.map(x => Math.min(100,
+    Math.round(100 * Math.max(0, Number(x.bien) || 0) / Number(x.total))))) : 0;
+  return {n:filas.length, pct, mejor};
+}
 function renderHistorial(){
-  const h = JSON.parse(localStorage.getItem('fvl_exam_history') || '[]');
-  $('#ex_hist').innerHTML = h.length ? `<b>${esc(t('ex_hist'))}:</b> ` + h.map(x => {
+  const crudo = JSON.parse(localStorage.getItem('fvl_exam_history') || '[]');
+  const h = (Array.isArray(crudo) ? crudo : []).filter(x => x && Number(x.total) > 0);
+  const r = resumenHistorial(h);
+  if (!r.n) { $('#ex_hist').innerHTML = ''; return; }
+  $('#ex_hist').innerHTML = `<div class="grid" style="margin:8px 0">
+      <div class="kpi"><b>${r.n}</b><span>${esc(t('hist_examenes'))}</span></div>
+      <div class="kpi"><b>${r.pct}%</b><span>${esc(t('hist_promedio'))}</span></div>
+      <div class="kpi"><b>${r.mejor}%</b><span>${esc(t('hist_mejor'))}</span></div>
+    </div>
+    <b>${esc(t('ex_hist'))}:</b> ` + h.map(x => {
     const etiqueta = typeof x.nivel === 'number' ? t(NIVELES[x.nivel]) : x.nivel;
-    return `${esc(etiqueta)}: ${x.bien}/${x.total} (${x.fecha})`;
-  }).join(' · ') : '';
+    return `${esc(etiqueta)}: ${esc(x.bien)}/${esc(x.total)} (${esc(x.fecha)})`;
+  }).join(' · ') + ` <button class="btn" id="ex_hist_clear">${esc(t('hist_borrar'))}</button>`;
+  $('#ex_hist_clear').onclick = () => {
+    if (confirm(t('hist_confirm'))) {
+      localStorage.removeItem('fvl_exam_history');
+      renderHistorial();
+    }
+  };
 }
 
 /* ================= copia de seguridad ================= */
