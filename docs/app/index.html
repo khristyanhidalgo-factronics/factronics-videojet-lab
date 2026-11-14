@@ -564,6 +564,7 @@ Object.assign(I18N.es, {
   fuente_partes:'Partes CIJ (124)',
   q_part_pn:'¿Cuál es la descripción de la parte CIJ {n}?',
   q_part_desc:'¿Qué P/N verificado corresponde a la descripción «{d}»?',
+  q_part_modelos:'¿En qué modelos se usa el P/N {n}?',
   ref_partes:'partes_cij (solo P/N verificados)',
   partes_nota:'Banco de partes CIJ con 124 P/N verificados. Quedan fuera los borradores y el OCR sin revisar.',
   fuente_partes_tto:'Partes TTO (120)',
@@ -601,6 +602,7 @@ Object.assign(I18N.en, {
   fuente_partes:'CIJ parts (124)',
   q_part_pn:'What is the description of CIJ part {n}?',
   q_part_desc:'Which verified P/N matches the description "{d}"?',
+  q_part_modelos:'Which models use P/N {n}?',
   ref_partes:'partes_cij (verified P/N only)',
   partes_nota:'CIJ parts bank with 124 verified P/Ns. Drafts and unreviewed OCR are excluded.',
   fuente_partes_tto:'TTO parts (120)',
@@ -638,6 +640,7 @@ Object.assign(I18N.pt, {
   fuente_partes:'Peças CIJ (124)',
   q_part_pn:'Qual é a descrição da peça CIJ {n}?',
   q_part_desc:'Qual P/N verificado corresponde à descrição «{d}»?',
+  q_part_modelos:'Em quais modelos é usado o P/N {n}?',
   ref_partes:'partes_cij (apenas P/N verificados)',
   partes_nota:'Banco de peças CIJ com 124 P/Ns verificados. Ficam de fora os rascunhos e o OCR não revisado.',
   fuente_partes_tto:'Peças TTO (120)',
@@ -675,6 +678,7 @@ Object.assign(I18N.it, {
   fuente_partes:'Parti CIJ (124)',
   q_part_pn:'Qual è la descrizione del ricambio CIJ {n}?',
   q_part_desc:'Quale P/N verificato corrisponde alla descrizione «{d}»?',
+  q_part_modelos:'In quali modelli viene usato il P/N {n}?',
   ref_partes:'partes_cij (solo P/N verificati)',
   partes_nota:'Banca ricambi CIJ con 124 P/N verificati. Restano esclusi le bozze e l’OCR non revisionato.',
   fuente_partes_tto:'Parti TTO (120)',
@@ -712,6 +716,7 @@ Object.assign(I18N.zh, {
   fuente_partes:'CIJ 部件（124）',
   q_part_pn:'CIJ 部件 {n} 的描述是什么？',
   q_part_desc:'描述“{d}”对应哪个已验证 P/N？',
+  q_part_modelos:'P/N {n} 用于哪些型号？',
   ref_partes:'partes_cij（仅已验证 P/N）',
   partes_nota:'CIJ 部件题库，仅包含 124 个已验证 P/N。草稿和未审核的 OCR 不纳入。',
   fuente_partes_tto:'TTO 部件（120）',
@@ -1396,6 +1401,10 @@ function candidatosPartes(tec){
       if (p) cands.push({tipo: 'desc', p, tec});
     }
   });
+  const modelos = [...new Set(partes.map(p => p.m).filter(Boolean))];
+  if (modelos.length >= 4) {
+    partes.forEach(p => { if (p.m) cands.push({tipo: 'modelo', p, tec}); });
+  }
   return cands;
 }
 function generarPreguntaPartes(cand){
@@ -1406,6 +1415,11 @@ function generarPreguntaPartes(cand){
   const kpn = tto ? 'q_part_tto_pn' : 'q_part_pn';
   const kdesc = tto ? 'q_part_tto_desc' : 'q_part_desc';
   const kref = tto ? 'ref_partes_tto' : 'ref_partes';
+  if (cand.tipo === 'modelo') {
+    const modelos = [...new Set(partes.map(x => x.m).filter(Boolean))];
+    return {q: t('q_part_modelos').replace('{n}', p.n), a: p.m,
+      ops: opciones(p.m, modelos), ref: t(kref)};
+  }
   if (cand.tipo === 'desc') {
     return {q: t(kdesc).replace('{d}', tr(p.d)), a: p.n,
       ops: opciones(p.n, partes.map(x => x.n)), ref: t(kref)};

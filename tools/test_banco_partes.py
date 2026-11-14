@@ -4,7 +4,8 @@
 Comprueba los invariantes del banco que usa la app:
   - 124 P/N CIJ verificados, unicos y con descripcion;
   - 118 descripciones, 5 ambiguas y 113 inequivocas;
-  - candidatos P/N->descripcion (124) + descripcion->P/N (113);
+  - candidatos P/N->descripcion (124) + descripcion->P/N (113) +
+    P/N->modelos (124), con 18 conjuntos de modelos;
   - las 5 descripciones ambiguas quedan fuera del segundo tipo;
   - traduccion completa de las descripciones en es/en/pt/it/zh;
   - claves i18n y opcion de fuente presentes en la app.
@@ -23,7 +24,7 @@ DATOS_JS = os.path.join(RAIZ, 'docs', 'app', 'datos.js')
 INDICE = os.path.join(RAIZ, 'docs', 'app', 'index.html')
 IDIOMAS = ('es', 'en', 'pt', 'it', 'zh')
 CLAVES_I18N = ('fuente_partes', 'q_part_pn', 'q_part_desc',
-               'ref_partes', 'partes_nota')
+               'q_part_modelos', 'ref_partes', 'partes_nota')
 AMBIGUAS = {
     'Filter Element': {'234081', 'SP234502'},
     'Filter Cover': {'395762', '395763', 'SP399029'},
@@ -81,7 +82,10 @@ class BancoPartesCijTest(unittest.TestCase):
                     if len(pns) > 1}
         self.assertEqual(AMBIGUAS, ambiguas)
         self.assertEqual(113, len(self.por_desc) - len(ambiguas))
-        self.assertEqual(124 + 113, 237)
+        self.assertEqual(124 + 113 + 124, 361)
+        self.assertEqual(18, len({p['m'] for p in self.partes}))
+        for p in self.partes:
+            self.assertTrue(p.get('m'), p.get('n'))
 
     def test_solo_verificados(self):
         for p in self.partes:
@@ -126,10 +130,24 @@ class BancoPartesCijTest(unittest.TestCase):
             descripciones = {
                 traduccion(self.datos, p['d'], idioma) for p in self.partes}
             pns = {p['n'] for p in self.partes}
+            modelos = {p['m'] for p in self.partes}
             self.assertEqual(118, len(descripciones), idioma)
             self.assertEqual(124, len(pns), idioma)
+            self.assertEqual(18, len(modelos), idioma)
             self.assertGreaterEqual(len(descripciones), 4, idioma)
             self.assertGreaterEqual(len(pns), 4, idioma)
+            self.assertGreaterEqual(len(modelos), 4, idioma)
+
+    def test_modelos_cij(self):
+        modelos = {}
+        for p in self.partes:
+            modelos.setdefault(p['m'], []).append(p['n'])
+        self.assertEqual(18, len(modelos))
+        self.assertEqual(124, sum(len(pns) for pns in modelos.values()))
+        for m, pns in modelos.items():
+            self.assertTrue(m)
+            self.assertGreaterEqual(len(pns), 1)
+        self.assertIn('1210/1510, 1220/1520', modelos)
 
     def test_i18n_en_cinco_idiomas(self):
         for idioma in IDIOMAS:
@@ -153,10 +171,14 @@ class BancoPartesCijTest(unittest.TestCase):
         self.assertIn("p.e === 'verificado'", self.html)
         self.assertIn("'q_part_desc'", self.html)
         self.assertIn("'q_part_pn'", self.html)
+        self.assertIn("'q_part_modelos'", self.html)
         self.assertIn("'ref_partes'", self.html)
         self.assertIn("t(kdesc)", self.html)
         self.assertIn("t(kpn)", self.html)
         self.assertIn("t(kref)", self.html)
+        self.assertIn("cand.tipo === 'modelo'", self.html)
+        self.assertIn('modelos.length >= 4', self.html)
+        self.assertIn("{tipo: 'modelo', p, tec}", self.html)
 
 
 if __name__ == '__main__':

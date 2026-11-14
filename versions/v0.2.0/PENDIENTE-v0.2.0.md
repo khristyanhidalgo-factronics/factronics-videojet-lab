@@ -104,6 +104,10 @@
       con dos bases, 5 idiomas y consola limpia.
 - [x] **CHANGELOG y ROADMAP permanentes:** `CHANGELOG.md` en la raíz, ROADMAP
       actualizado con el estado de alpha-35 y validación de existencia en CI.
+- [ ] **Verificación en vivo de alpha-36/build 51**: CI «Validar» y Pages en
+      `success`; `version.json` construccion 51, `sw.js` alpha-36; banco CIJ con
+      361 candidatos (124 modelos), TTO 240, 4 opciones, corrección y constancia,
+      consola limpia.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),

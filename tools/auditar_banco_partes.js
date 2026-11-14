@@ -14,7 +14,9 @@
  *   - no quedan marcadores {n} ni {d} sin sustituir;
  *   - la referencia corresponde a la tecnologia de la pregunta;
  *   - las descripciones ambiguas de CIJ nunca generan preguntas
- *     descripcion->P/N.
+ *     descripcion->P/N;
+ *   - el tipo modelo solo aparece cuando hay al menos 4 conjuntos de
+ *     modelos (CIJ: 18; TTO: 3, por eso no genera).
  *
  * Uso:
  *   node tools/auditar_banco_partes.js
@@ -32,8 +34,10 @@ const BANCOS = [
     nombre: 'CIJ',
     pn: 124,
     desc: 113,
+    modelo: 124,
     descUnicas: 118,
-    claves: ['fuente_partes', 'q_part_pn', 'q_part_desc',
+    modelosUnicos: 18,
+    claves: ['fuente_partes', 'q_part_pn', 'q_part_desc', 'q_part_modelos',
              'ref_partes', 'partes_nota'],
     ref: 'ref_partes',
     ambiguas: [
@@ -49,7 +53,9 @@ const BANCOS = [
     nombre: 'TTO',
     pn: 120,
     desc: 120,
+    modelo: 0,
     descUnicas: 120,
+    modelosUnicos: 3,
     claves: ['fuente_partes_tto', 'q_part_tto_pn', 'q_part_tto_desc',
              'ref_partes_tto', 'partes_tto_nota'],
     ref: 'ref_partes_tto',
@@ -163,8 +169,10 @@ function principal() {
     const candidatos = contexto.candidatosPartes(banco.tec);
     const pn = candidatos.filter(c => c.tipo === 'pn');
     const desc = candidatos.filter(c => c.tipo === 'desc');
-    console.log('Banco %s: %d P/N, %d descripciones inequivocas, %d candidatos',
-                banco.nombre, partes.length, desc.length, candidatos.length);
+    const modelo = candidatos.filter(c => c.tipo === 'modelo');
+    console.log('Banco %s: %d P/N, %d descripciones inequivocas, %d modelos, %d candidatos',
+                banco.nombre, partes.length, desc.length, modelo.length,
+                candidatos.length);
     if (partes.length !== banco.pn) {
       fallo(banco.nombre + ': se esperaban ' + banco.pn + ' P/N verificados');
     }
@@ -176,9 +184,16 @@ function principal() {
       fallo(banco.nombre + ': se esperaban ' + banco.desc +
             ' preguntas descripcion->P/N');
     }
+    if (modelo.length !== banco.modelo) {
+      fallo(banco.nombre + ': se esperaban ' + banco.modelo +
+            ' preguntas P/N->modelos');
+    }
     for (const c of candidatos) {
       if (c.tec !== banco.tec) {
         fallo(banco.nombre + ': candidato con tecnologia ' + c.tec);
+      }
+      if (!['pn', 'desc', 'modelo'].includes(c.tipo)) {
+        fallo(banco.nombre + ': tipo de candidato desconocido ' + c.tipo);
       }
     }
 
@@ -186,6 +201,11 @@ function principal() {
       LANG = idioma;
       const descripciones = new Set(partes.map(p => contexto.tr(p.d)));
       const pns = new Set(partes.map(p => p.n));
+      const modelos = new Set(partes.map(p => p.m).filter(Boolean));
+      if (modelos.size !== banco.modelosUnicos) {
+        fallo(idioma + ': ' + banco.nombre + ': se esperaban ' +
+              banco.modelosUnicos + ' conjuntos de modelos');
+      }
       if (descripciones.size !== banco.descUnicas) {
         fallo(idioma + ': ' + banco.nombre + ': se esperaban ' +
               banco.descUnicas + ' descripciones traducidas');
@@ -243,6 +263,19 @@ function principal() {
               fallo(idioma + ': ' + banco.nombre +
                     ': falta el P/N en la pregunta ' + c.p.n);
             }
+          } else if (c.tipo === 'modelo') {
+            if (p.a !== c.p.m) {
+              fallo(idioma + ': ' + banco.nombre +
+                    ': modelos incorrectos en ' + c.p.n);
+            }
+            if (!p.q.includes(c.p.n)) {
+              fallo(idioma + ': ' + banco.nombre +
+                    ': falta el P/N en la pregunta ' + c.p.n);
+            }
+            if (!modelos.has(p.a)) {
+              fallo(idioma + ': ' + banco.nombre +
+                    ': modelos fuera del pool en ' + c.p.n);
+            }
           } else {
             if (p.a !== c.p.n) {
               fallo(idioma + ': ' + banco.nombre +
@@ -288,7 +321,7 @@ function principal() {
     process.exit(1);
   }
   const resumen = BANCOS.map(b => b.nombre + ' ' + b.pn + ' P/N (' +
-                                 (b.pn + b.desc) + ' preguntas)').join(', ');
+                                 (b.pn + b.desc + b.modelo) + ' preguntas)').join(', ');
   console.log('OK: 5 idiomas, ' + resumen +
               ', 0 ambiguedades, 0 opciones invalidas');
 }
