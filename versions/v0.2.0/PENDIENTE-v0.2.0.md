@@ -114,10 +114,11 @@
       construccion 53, `sw.js` alpha-37 y caché `fvl-v0.2.0-alpha-37` con 7
       recursos; banner oculto inicial, visible al simular actualización, 5
       idiomas, accesibilidad y consola limpia.
-- [ ] **Verificación en vivo de alpha-38/build 55**: CI «Validar» y Pages en
-      `success`; `version.json` construccion 55, `sw.js` alpha-38; conflicto
-      399474 promovido, 4 descripciones alternas, banco CIJ 125/364 y consola
-      limpia.
+- [x] **Verificación en vivo de alpha-38/build 55**: CI «Validar» (run
+      `43642778940`) y Pages (run `43642778595`) en `success`; `version.json`
+      construccion 55, `sw.js` alpha-38 y caché `fvl-v0.2.0-alpha-38`; 399474
+      verificado, 4 alternas con conflicto, banco CIJ 125/364, 5 idiomas y
+      consola limpia.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
