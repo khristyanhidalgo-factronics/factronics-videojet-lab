@@ -181,10 +181,11 @@ function principal() {
   const ebull = contexto.SDS_PROPS.ebull;
   const pvap = contexto.SDS_PROPS.pvap;
   const tcolor = contexto.TINTAS_COLOR;
-  console.log('Datos: %d ribbons con velocidad, %d con temperatura, %d curvas, %d referencias, %d densidades, %d inflamaciones, %d volatilidades, %d ebulliciones, %d presiones de vapor, %d colores de tinta',
+  const tbase = contexto.TINTAS_BASE;
+  console.log('Datos: %d ribbons con velocidad, %d con temperatura, %d curvas, %d referencias, %d densidades, %d inflamaciones, %d volatilidades, %d ebulliciones, %d presiones de vapor, %d colores de tinta, %d tintas de base unica',
               conVel.length, conTemp.length, curvas.length, refs.length,
               dens.length, flash.length, volat.length, ebull.length, pvap.length,
-              tcolor.length);
+              tcolor.length, tbase.length);
   if (conVel.length < 4) throw new Error('faltan ribbons con velocidad');
   if (conTemp.length < 4) throw new Error('faltan ribbons con temperatura');
   if (curvas.length < 4) throw new Error('faltan curvas de solvente verificadas');
@@ -195,6 +196,7 @@ function principal() {
   if (ebull.length < 4) throw new Error('faltan puntos de ebullicion SDS con valor unico');
   if (pvap.length < 4) throw new Error('faltan presiones de vapor SDS con valor unico');
   if (tcolor.length < 4) throw new Error('faltan colores de tinta SDS con valor unico');
+  if (tbase.length < 4) throw new Error('faltan tintas con una sola base quimica');
 
   let fallos = 0;
   const fallo = msg => {
@@ -222,7 +224,8 @@ function principal() {
     const validEbull = new Set(ebull.map(x => contexto.tr(x.v)));
     const validPvap = new Set(pvap.map(x => contexto.tr(x.v)));
     const validColor = new Set(tcolor.map(x => contexto.tr(x.v)));
-    const tipos = {rib_vel: 0, rib_temp: 0, sol_temp: 0,
+    const validBase = new Set(tbase.map(([,x]) => contexto.tr(x.b[0])));
+    const tipos = {base: 0, rib_vel: 0, rib_temp: 0, sol_temp: 0,
                    sol_horas: 0, sds_dens: 0, sds_flash: 0, sds_volat: 0,
                    sds_ebull: 0, sds_pvap: 0, tinta_color: 0};
     let total = 0;
@@ -270,6 +273,9 @@ function principal() {
             continue;
           }
           tipos[p.tipo]++;
+          if (p.tipo === 'base' && !validBase.has(p.a)) {
+            fallo(idioma + ': base fuera de las tintas de base unica: ' + p.a);
+          }
           if (p.tipo === 'rib_vel' && !validVel.has(p.a)) {
             fallo(idioma + ': velocidad fuera de los datos: ' + p.a);
           }
@@ -309,6 +315,7 @@ function principal() {
       }
     }
 
+    if (!tipos.base) fallo(idioma + ': no aparecio base');
     if (!tipos.rib_vel) fallo(idioma + ': no aparecio rib_vel');
     if (!tipos.rib_temp) fallo(idioma + ': no aparecio rib_temp');
     if (!tipos.sol_temp) fallo(idioma + ': no aparecio sol_temp');

@@ -437,7 +437,7 @@ Object.assign(I18N.pt, {
   cert_participante:'Participante', cert_entidad:'Factronics VideoJet Lab',
   cert_aviso:'Documento gerado offline pelo app. Não substitui a certificação oficial da Videojet Technologies.',
   cert_popup:'Permita pop-ups para gerar o certificado.',
-  q_base:'Qual base química a tinta {c} usa?', q_color:'Cor do ribbon {g}:',
+  q_base:'Que base química usa a tinta {c}?', q_color:'Cor do ribbon {g}:',
   q_tec:'O código {c} pertence à tecnologia:', q_ref:'Referência @30 °C do consumo de solvente {m} ({t}):',
   q_cas:'Componente CAS {cas} da SDS {c}:', q_part:'Qual é a descrição da peça CIJ {n}?',
   h_litro:'h / litro', h_cartucho:'h / cartucho {n} ml', usd_hora:'USD / hora de solvente', ml_h:'ml/h @ {t} °C',
@@ -469,7 +469,7 @@ Object.assign(I18N.it, {
   cert_participante:'Partecipante', cert_entidad:'Factronics VideoJet Lab',
   cert_aviso:"Documento generato offline dall'app. Non sostituisce la certificazione ufficiale di Videojet Technologies.",
   cert_popup:"Consenti i pop-up per generare l'attestato.",
-  q_base:'Quale base chimica usa questo inchiostro {c}?', q_color:'Colore del ribbon {g}:',
+  q_base:'Quale base chimica usa l\'inchiostro {c}?', q_color:'Colore del ribbon {g}:',
   q_tec:'Il codice {c} appartiene alla tecnologia:', q_ref:'Riferimento @30 °C del consumo di solvente {m} ({t}):',
   q_cas:'Componente CAS {cas} della SDS {c}:', q_part:'Qual è la descrizione della parte CIJ {n}?',
   h_litro:'h / litro', h_cartucho:'h / cartuccia {n} ml', usd_hora:'USD / ora solvente', ml_h:'ml/h @ {t} °C',
@@ -1178,8 +1178,8 @@ const SDS_PROPS = (() => {
 })();
 /* Pools de datos reutilizados por el generador (no cambian en tiempo de ejecucion). */
 const TINTAS = Object.entries(D.tintas);
-const TINTAS_BASE = TINTAS.filter(([,x]) => (x.b||[]).length);
-const BASES = TINTAS.map(([,y]) => (y.b||[])[0]).filter(Boolean);
+const TINTAS_BASE = TINTAS.filter(([,x]) => (x.b||[]).length === 1);
+const BASES = TINTAS_BASE.map(([,y]) => y.b[0]).filter(Boolean);
 /* Color SDS con valor unico por tinta; se excluye "No disponible." */
 const TINTAS_COLOR = TINTAS.map(([c,x]) => {
   const vals = [...new Set((x.fichas||[])
@@ -1212,9 +1212,10 @@ function generarPregunta(nivel){
         ops:opciones(correcta, pool), ref:t('ref_sds'), tipo:'tinta_color'};
     }
     const [c,x] = aleatorio(TINTAS_BASE);
-    const base = x.b[0];
-    return {q:t('q_base').replace('{c}', c), a:base, ops:opciones(base, BASES),
-      ref:t('ref_cij')};
+    const base = tr(x.b[0]);
+    const pool = BASES.map(tr);
+    return {q:t('q_base').replace('{c}', c), a:base, ops:opciones(base, pool),
+      ref:t('ref_cij'), tipo:'base'};
   }
   if (nivel === 2) {
     const tipo = aleatorio(['color', 'vel', 'temp'].filter(k =>

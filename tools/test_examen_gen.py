@@ -12,6 +12,7 @@ Comprueba los invariantes que sostienen los tipos de pregunta:
   - 11 colores de tinta unicos (se excluye "No disponible.");
   - el generador integra los tres tipos y el pool global de componentes SDS;
   - resumen del historial (examenes, promedio ponderado y mejor) y sus claves;
+  - 131 tintas con una sola base quimica (12 valores) y respuestas traducidas;
   - respaldo con cuaderno de repaso y normalizacion de datos importados;
   - el CI ejecuta la auditoria y esta prueba.
 
@@ -222,6 +223,20 @@ class ExamenGenTest(unittest.TestCase):
                 'SOL_USOS', 'COMP_NAMES', 'TINTAS_CON_COMP'):
             self.assertIn(fragmento, self.html)
         self.assertIn('function generarPregunta(', self.html)
+
+    def test_base_unica_y_traducida(self):
+        tintas = self.datos['tintas']
+        simples = {c: x['b'][0] for c, x in tintas.items()
+                   if len(x.get('b') or []) == 1}
+        ambiguas = [c for c, x in tintas.items() if len(x.get('b') or []) > 1]
+        self.assertEqual(131, len(simples))
+        self.assertEqual(12, len(set(simples.values())))
+        self.assertEqual(['V459', 'V460', 'V461'], sorted(ambiguas))
+        for fragmento in ("(x.b||[]).length === 1",
+                          'const base = tr(x.b[0])',
+                          'const pool = BASES.map(tr)',
+                          "tipo:'base'"):
+            self.assertIn(fragmento, self.html)
 
     def test_respaldo_incluye_repaso(self):
         for fragmento in ('function normalizarRepaso(',
