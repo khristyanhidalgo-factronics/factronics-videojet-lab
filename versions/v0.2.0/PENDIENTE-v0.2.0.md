@@ -124,10 +124,11 @@
       construccion 57, `sw.js` alpha-39 y caché `fvl-v0.2.0-alpha-39`; 216 P/N
       verificados, 3 erratas corregidas, SP234081 único borrador, 610–612
       preguntas, 5 idiomas y consola limpia.
-- [ ] **Verificación en vivo de alpha-40/build 59**: CI «Validar» y Pages en
-      `success`; `version.json` construccion 59, `sw.js` alpha-40; 266 velocidades
-      verificadas, 56 avisos visibles, calculador y examen sin nota de borrador,
-      consola limpia.
+- [x] **Verificación en vivo de alpha-40/build 59**: CI «Validar» (run
+      `43661898813`) y Pages (run `43661897795`) en `success`; `version.json`
+      construccion 59, `sw.js` alpha-40 y caché `fvl-v0.2.0-alpha-40`; 266
+      velocidades verificadas, 56 avisos visibles, calculador y examen sin nota
+      de borrador, 5 idiomas y consola limpia.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
