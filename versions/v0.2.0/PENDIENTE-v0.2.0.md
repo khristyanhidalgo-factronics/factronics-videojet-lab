@@ -181,8 +181,10 @@
       valores `borrador-decodificado` antes de usarlos como dato firme.
 - [ ] **Cruzar las 120 partes TTO** (hoy en borrador) contra las Official Parts Lists
       PDF para elevarlas a `verificado`. Venía del PENDIENTE de v0.1.0.
-- [ ] Revisar los **títulos de boletines TTO** marcados dudosos/no legibles
-      (63 títulos fiables de 113). Venía del PENDIENTE de v0.1.0.
+- [x] **Títulos de boletines TTO:** 63 títulos impresos legibles + 50 etiquetas
+      derivadas del nombre del archivo, marcadas como tales (`titulo_estado`),
+      sin presentarlas como títulos impresos. `tools/test_tto_boletines.py`
+      (3 pruebas) en CI. Venía del PENDIENTE de v0.1.0.
 - [x] ~~Completar los IPL **1550** y **1710** (los otros 2 de los 9 PDFs de la serie 1000).~~
       → OCR con Windows.Data.Pdf + Windows.Media.Ocr, sin instalar nada:
       **1550 = 56 páginas, 1710 = 51 páginas**; consolidado `datos/partes_cij_ocr.json`

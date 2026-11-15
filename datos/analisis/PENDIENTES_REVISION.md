@@ -16,6 +16,7 @@
 | Avisos de velocidades | 56 | 266 verificadas; 56 avisos de nombre conservados | `velocidades_cij_avisos.csv` |
 | Items sin P/N | 336 | `sin-pn` | `items_sin_pn.csv` |
 | Partes TTO | 120 | `verificado` | `partes_tto_cotejo.csv` |
+| Títulos de boletines TTO | 113 | 63 impresos + 50 derivados del archivo | `tto_boletines.json` |
 
 ## Revisión OCR por coordenadas (2026-11-14)
 

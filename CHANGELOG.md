@@ -7,7 +7,7 @@
 
 ## [v0.2.0-alpha] — En desarrollo
 
-**Última app publicada:** `alpha-40` / build 59 · **Notas:** build 60 · 2026-11-14
+**Última app publicada:** `alpha-40` / build 59 · **Notas:** build 61 · 2026-11-14
 **Objetivo:** app web offline (PWA) con los datos reales de TTO, CIJ y LÁSER,
 examen por niveles, buscador y calculadoras en cinco idiomas.
 
@@ -33,6 +33,8 @@ examen por niveles, buscador y calculadoras en cinco idiomas.
 - **Revisión de las 266 velocidades CIJ:** 266 verificadas contra los
   calculadores v9.7 y las anclas de charts; 56 avisos de nombre conservados y
   visibles en el calculador.
+- **Títulos de boletines TTO:** 63 impresos y 50 derivados del archivo,
+  etiquetados para no confundirlos con títulos impresos.
 - **Calculadora CIJ** con 802 curvas y 800 referencias @30 °C; referencia
   VJ1210/V401 = 11,2 ml/h.
 - **Cinco idiomas completos:** español, inglés, portugués, italiano y chino.

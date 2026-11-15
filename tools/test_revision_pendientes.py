@@ -112,6 +112,10 @@ def main():
         fallos.append('resumen: revision_ocr.promovidos incorrecto')
     if resumen.get('revision_velocidades', {}).get('verificadas') != 266:
         fallos.append('resumen: revision_velocidades.verificadas incorrecto')
+    if resumen.get('revision_titulos_tto', {}).get('impresos') != 63:
+        fallos.append('resumen: revision_titulos_tto.impresos incorrecto')
+    if resumen.get('revision_titulos_tto', {}).get('derivados_del_archivo') != 50:
+        fallos.append('resumen: revision_titulos_tto.derivados incorrecto')
     if resumen.get('velocidades_cij', {}).get('total_avisos') != 56:
         fallos.append('resumen: velocidades_cij.total_avisos incorrecto')
 

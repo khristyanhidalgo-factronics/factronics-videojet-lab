@@ -15,7 +15,7 @@
 ## Estado actual (2026-11-14)
 
 - **App:** `alpha-40` / build 59, publicada en Pages y verificada en vivo.
-- **Notas:** build 60, con índice SHA-256 y este ROADMAP actualizado.
+- **Notas:** build 61, con índice SHA-256 y este ROADMAP actualizado.
 - **Datos:** 802 curvas de solvente, 564 tintas, 2.986 partes, 64 grados + 694
   ítems de ribbon, 1773 componentes SDS y 266 velocidades CIJ.
 - **Calidad:** suite completa en CI, auditoría de 75.000 preguntas del examen y
