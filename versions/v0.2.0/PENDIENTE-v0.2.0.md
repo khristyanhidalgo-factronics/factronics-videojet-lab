@@ -124,6 +124,10 @@
       construccion 57, `sw.js` alpha-39 y caché `fvl-v0.2.0-alpha-39`; 216 P/N
       verificados, 3 erratas corregidas, SP234081 único borrador, 610–612
       preguntas, 5 idiomas y consola limpia.
+- [ ] **Verificación en vivo de alpha-40/build 59**: CI «Validar» y Pages en
+      `success`; `version.json` construccion 59, `sw.js` alpha-40; 266 velocidades
+      verificadas, 56 avisos visibles, calculador y examen sin nota de borrador,
+      consola limpia.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
@@ -223,12 +227,14 @@
       como evidencia secundaria descartada. Detalle en
       `datos/extraccion/_lote_laser_resumen.json` y prueba en
       `tools/test_lote_laser.py`.
-- [ ] Revisión humana de las **266 velocidades CIJ** y de sus 56 avisos
-      (22 boquilla, 31 modelo, 3 fuente): hoy todas son `borrador-decodificado` y
-      no sustituyen al calculador oficial. Los 4 duplicados ya están fusionados.
-      **Artefactos listos:** `datos/analisis/velocidades_cij_avisos.csv` (56 filas)
-      y `velocidades_cij_avisos.md`; el valor impreso ya prevalece sobre el nombre
-      de archivo y las 5 notas documentadas están recogidas.
+- [x] **Revisión de las 266 velocidades CIJ y sus 56 avisos:** verificadas
+      contra los calculadores oficiales v9.7 y las anclas de los charts
+      1280/1580/1880; 0 conflictos de valores. Los 56 avisos de nombre
+      (22 boquilla, 31 modelo, 3 fuente) se conservan como evidencia y el valor
+      impreso prevalece. La app muestra el aviso por entrada y la nota del
+      examen explica que ya fueron revisadas. **Artefactos:**
+      `datos/analisis/velocidades_cij_avisos.csv` (56 filas) y
+      `velocidades_cij_avisos.md`.
 - [x] ~~Confirmar con el dueño la lectura visual **029/581** de
       `MedidoresPortenciaCO2.pdf`~~ → la capa de texto original decodificada
       (**AL-67438** / **AL-66517**) es la evidencia principal; 029/581 queda como

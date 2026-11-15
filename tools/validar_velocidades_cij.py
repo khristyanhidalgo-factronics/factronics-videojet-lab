@@ -114,6 +114,8 @@ def validar(ruta=SALIDA):
         if resumen.get(clave) != valor:
             fallo('resumen.%s = %r; se esperaba %r'
                   % (clave, resumen.get(clave), valor))
+    if (resumen.get('revision') or {}).get('verificados') != 266:
+        fallo('resumen.revision.verificados != 266')
     if len(entradas) != 266:
         fallo('entradas = %d; se esperaban 266' % len(entradas))
     if len(datos.get('errores', [])) != 0:
@@ -144,6 +146,11 @@ def validar(ruta=SALIDA):
         claves.add(clave)
         if entrada.get('estado') != 'borrador-decodificado':
             fallo('%s: estado %r' % (clave, entrada.get('estado')))
+        if entrada.get('estado_revisado') != 'verificado':
+            fallo('%s: estado_revisado %r' % (clave,
+                                              entrada.get('estado_revisado')))
+        if not entrada.get('revision'):
+            fallo('%s: revision sin fecha' % clave)
         if entrada.get('velocidad_nominal_m_min') is None:
             fallo('%s: sin velocidad nominal' % clave)
         if (entrada.get('caracteres_por_segundo') is None

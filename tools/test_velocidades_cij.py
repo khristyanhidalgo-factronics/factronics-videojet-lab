@@ -57,6 +57,13 @@ class VelocidadesCijTest(unittest.TestCase):
                 entrada['caracteres_por_segundo'] is not None
                 or entrada['columnas_por_segundo'] is not None)
 
+    def test_revision_de_las_entradas(self):
+        self.assertEqual(266, (self.resumen.get('revision') or {}).get('verificados'))
+        for entrada in self.entradas:
+            self.assertEqual('verificado', entrada.get('estado_revisado'))
+            self.assertEqual('2026-11-14', entrada.get('revision'))
+            self.assertTrue(entrada.get('revision_metodo'))
+
     def test_duplicados_fusionados(self):
         duplicados = [e for e in self.entradas if len(e['archivos']) > 1]
         self.assertEqual(4, len(duplicados))

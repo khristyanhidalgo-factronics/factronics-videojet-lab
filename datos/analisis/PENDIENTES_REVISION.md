@@ -13,7 +13,7 @@
 | P/N del OCR 1550/1710 | 193 | 91 promovidos + 1 conflicto + 101 ya en base digital | `partes_cij_ocr_revision.csv` |
 | Registros OCR con P/N | 277 | 275 apariciones unicas | `partes_cij_ocr_apariciones.csv` |
 | Conflictos de descripcion | 5 | revisados: 1 sinonimo + 4 ambiguedades | `conflictos_cij_ocr.md` |
-| Avisos de velocidades | 56 | valor impreso conservado | `velocidades_cij_avisos.csv` |
+| Avisos de velocidades | 56 | 266 verificadas; 56 avisos de nombre conservados | `velocidades_cij_avisos.csv` |
 | Items sin P/N | 336 | `sin-pn` | `items_sin_pn.csv` |
 | Partes TTO | 120 | `verificado` | `partes_tto_cotejo.csv` |
 
@@ -28,6 +28,16 @@
 - **1 P/N nuevo con conflicto** (`SP234081`) queda fuera del banco.
 - Muestra visual: 1550 p56 (herramientas) y 1710 p27/p48/p49 (puerta de tinta,
   cables de alimentación y cabezal/umbilical).
+
+## Revisión de velocidades CIJ (2026-11-14)
+
+- **266/266 entradas** verificadas contra los calculadores oficiales v9.7 y las
+  anclas de los charts 1280/1580/1880.
+- **0 conflictos de valores**; c/s y columnas/s son complementarios.
+- **56 avisos** de nombre (22 boquilla, 31 modelo, 3 fuente) se conservan como
+  evidencia; el valor impreso prevalece y no se corrige a mano.
+- La app muestra el aviso en el calculador de cada entrada afectada y la nota
+  del examen explica que los valores ya fueron revisados.
 
 ## Conflictos revisados (2026-11-14)
 

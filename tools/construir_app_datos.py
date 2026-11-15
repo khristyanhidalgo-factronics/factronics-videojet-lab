@@ -79,6 +79,7 @@ def main():
                 'metodo': velocidades.get('metodo'),
                 'fecha': velocidades.get('fecha'),
                 'estado': velocidades.get('estado_general'),
+                'revisadas': (velocidades.get('resumen') or {}).get('revision', {}).get('verificados'),
                 'calculadores': (velocidades.get('resumen') or {}).get('calculadores_leidos'),
                 'entradas': len(velocidades.get('entradas', [])),
                 'modelos': (velocidades.get('resumen') or {}).get('modelos'),
@@ -87,8 +88,8 @@ def main():
                 'conflictos_modelo': (velocidades.get('resumen') or {}).get('conflictos_modelo'),
                 'conflictos_fuente': (velocidades.get('resumen') or {}).get('conflictos_fuente'),
                 'descartado': 'v9.7z.pdf (tabla resumen, no es calculador)',
-                'nota': ('Velocidad nominal leida por OCR de los calculadores oficiales. '
-                         'Queda como borrador-decodificado; los avisos de boquilla/modelo/fuente '
+                'nota': ('Velocidad nominal revisada contra los calculadores oficiales v9.7. '
+                         'El valor impreso prevalece; los 56 avisos de boquilla/modelo/fuente '
                          'se conservan y no se corrigen a mano.'),
             },
             'modelos': sorted({e.get('modelo') for e in velocidades.get('entradas', [])
@@ -106,7 +107,7 @@ def main():
                 'c': e.get('caracteres_por_segundo'),
                 'col': e.get('columnas_por_segundo'),
                 't': e.get('tipo_calculador'),
-                'e': e.get('estado'),
+                'e': e.get('estado_revisado') or e.get('estado'),
                 'a': '; '.join(os.path.basename(a) for a in (e.get('archivos') or [])),
                 'cf': ''.join(k for k, campo in (
                     ('b', 'conflicto_boquilla'),

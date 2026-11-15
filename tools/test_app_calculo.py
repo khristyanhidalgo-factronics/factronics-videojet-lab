@@ -97,6 +97,8 @@ def main():
         fallos.append('velocidades: estado general distinto de borrador-decodificado')
     if (vel.get('meta') or {}).get('conflictos') != 0:
         fallos.append('velocidades: hay conflictos de valores')
+    if (vel.get('meta') or {}).get('revisadas') != 266:
+        fallos.append('velocidades: se esperaban 266 revisadas')
     for e in entradas_vel:
         etiqueta = '%s/%s/%s' % (e.get('m'), e.get('b'), e.get('f'))
         if not e.get('m') or e.get('b') not in (40, 50, 60) or not e.get('f'):
@@ -105,7 +107,7 @@ def main():
             fallos.append('%s: sin velocidad' % etiqueta)
         if e.get('c') is None and e.get('col') is None:
             fallos.append('%s: sin caracteres/s ni columnas/s' % etiqueta)
-        if e.get('e') != 'borrador-decodificado':
+        if e.get('e') != 'verificado':
             fallos.append('%s: estado %r' % (etiqueta, e.get('e')))
         if e.get('t') not in ('simple', 'experto'):
             fallos.append('%s: tipo %r' % (etiqueta, e.get('t')))
