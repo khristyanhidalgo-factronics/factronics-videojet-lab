@@ -108,6 +108,8 @@ def main():
         fallos.append('resumen: partes_cij_ocr.partes incorrecto')
     if resumen.get('partes_cij_ocr', {}).get('registros') != 277:
         fallos.append('resumen: partes_cij_ocr.registros incorrecto')
+    if resumen.get('revision_ocr', {}).get('promovidos') != 91:
+        fallos.append('resumen: revision_ocr.promovidos incorrecto')
     if resumen.get('velocidades_cij', {}).get('total_avisos') != 56:
         fallos.append('resumen: velocidades_cij.total_avisos incorrecto')
 

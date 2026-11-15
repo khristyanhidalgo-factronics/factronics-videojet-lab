@@ -86,6 +86,20 @@ def main():
                 exigir(a.get('pn_ocr') and a.get('pn_ocr') != pn,
                        '%s: correccion OCR sin texto original' % pn)
 
+    revisados = [p for p in d['partes'] if p.get('estado_revisado')]
+    exigir(len(revisados) == 91,
+           'se esperaban 91 P/N revisados; hay %d' % len(revisados))
+    for p in revisados:
+        exigir(p.get('estado') == 'borrador-decodificado',
+               '%s: el estado de extraccion OCR no debe cambiar' % p['pn'])
+        exigir(p.get('estado_revisado') == 'verificado',
+               '%s: estado_revisado inesperado' % p['pn'])
+        exigir(p.get('revision'), '%s: revision sin fecha' % p['pn'])
+        exigir(p.get('revision_metodo'),
+               '%s: revision sin metodo' % p['pn'])
+    exigir((d.get('resumen') or {}).get('revision', {}).get('promovidos') == 91,
+           'resumen.revision.promovidos != 91')
+
     faltan = sorted(CONOCIDOS - vistos)
     if faltan:
         print('AVISO: P/N conocidos que el OCR no leyo: %s' % ', '.join(faltan))
@@ -100,9 +114,10 @@ def main():
         print('%d fallo(s)' % len(fallos))
         return 1
     print('OK partes_cij_ocr: %d partes, %d items sin P/N, %d paginas OCR, '
-          '%d modelos'
+          '%d modelos, %d promovidos por revision'
           % (len(d['partes']), len(d['items_sin_pn']), paginas,
-             len({m for p in d['partes'] for m in p.get('modelos', [])})))
+             len({m for p in d['partes'] for m in p.get('modelos', [])}),
+             len(revisados)))
     return 0
 
 

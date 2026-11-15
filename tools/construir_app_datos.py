@@ -238,7 +238,7 @@ def main():
             'descripcion': p.get('descripcion') or '',
             'descripcion_alt': p.get('descripcion_alt') or '',
             'descripciones': p.get('descripciones') or [],
-            'estado': p.get('estado') or 'borrador-decodificado',
+            'estado': p.get('estado_revisado') or p.get('estado') or 'borrador-decodificado',
             'conflicto_descripciones': bool(p.get('conflicto_descripciones')),
             'modelos': modelos,
             'origen': 'OCR',

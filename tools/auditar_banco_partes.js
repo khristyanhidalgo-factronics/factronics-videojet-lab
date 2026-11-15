@@ -32,11 +32,11 @@ const BANCOS = [
   {
     tec: 'CIJ',
     nombre: 'CIJ',
-    pn: 125,
-    desc: 114,
-    modelo: 125,
-    descUnicas: 119,
-    modelosUnicos: 18,
+    pn: 216,
+    desc: 178,
+    modelo: 216,
+    descUnicasPorIdioma: {es: 196, en: 197, pt: 196, it: 196, zh: 197},
+    modelosUnicos: 21,
     claves: ['fuente_partes', 'q_part_pn', 'q_part_desc', 'q_part_modelos',
              'ref_partes', 'partes_nota'],
     ref: 'ref_partes',
@@ -46,6 +46,18 @@ const BANCOS = [
       'Beacon Assembly',
       'Ribbon Cable Spare Kit',
       'Printhead Photocell Holder 6 mm, 8 mm, 18 mm',
+      'Control System Board (CSB) with Back Plate',
+      'Finnish Molded Plug Power Cord',
+      'India Molded Plug Power Cord (Type D)',
+      'Ink Core Pump',
+      'Ink Core with Pump',
+      'Ink Door Assembly',
+      'Norwegian Molded Plug Power Cord',
+      'Printhead Engine (60 micron)',
+      'Printhead Engine (70 micron)',
+      'Printhead Valve Module',
+      'Septum Assembly',
+      'Swedish Molded Plug Power Cord',
     ],
   },
   {
@@ -54,7 +66,7 @@ const BANCOS = [
     pn: 120,
     desc: 120,
     modelo: 0,
-    descUnicas: 120,
+    descUnicasPorIdioma: {es: 120, en: 120, pt: 120, it: 120, zh: 120},
     modelosUnicos: 3,
     claves: ['fuente_partes_tto', 'q_part_tto_pn', 'q_part_tto_desc',
              'ref_partes_tto', 'partes_tto_nota'],
@@ -206,9 +218,9 @@ function principal() {
         fallo(idioma + ': ' + banco.nombre + ': se esperaban ' +
               banco.modelosUnicos + ' conjuntos de modelos');
       }
-      if (descripciones.size !== banco.descUnicas) {
+      if (descripciones.size !== banco.descUnicasPorIdioma[idioma]) {
         fallo(idioma + ': ' + banco.nombre + ': se esperaban ' +
-              banco.descUnicas + ' descripciones traducidas');
+              banco.descUnicasPorIdioma[idioma] + ' descripciones traducidas');
       }
       if (pns.size !== banco.pn) {
         fallo(idioma + ': ' + banco.nombre + ': se esperaban ' +

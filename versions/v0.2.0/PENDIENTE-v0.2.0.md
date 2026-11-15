@@ -119,6 +119,9 @@
       construccion 55, `sw.js` alpha-38 y caché `fvl-v0.2.0-alpha-38`; 399474
       verificado, 4 alternas con conflicto, banco CIJ 125/364, 5 idiomas y
       consola limpia.
+- [ ] **Verificación en vivo de alpha-39/build 57**: CI «Validar» y Pages en
+      `success`; `version.json` construccion 57, `sw.js` alpha-39; 91 P/N OCR
+      promovidos, 3 erratas corregidas, banco CIJ 216, búsqueda y consola limpias.
 - [x] ~~**Prueba de la calculadora** contra referencia: VJ1210/V401 @30 °C = 11,2 ml/h~~
       → `tools/test_app_calculo.py` recorre 802 curvas y 800 referencias @30 °C.
 - [x] ~~Revisión de textos i18n (es/en/pt)~~ → 5 idiomas completos (es/en/pt/it/zh),
@@ -186,12 +189,13 @@
       `395898`, `395899`, `399475` y `SP234081` tienen dos descripciones impresas
       para el mismo P/N y se conservan como `d_alt` fuera del banco. El banco CIJ
       queda en **125 P/N y 364 preguntas**.
-- [ ] **Revisión de los 193 P/N del OCR 1550/1710 restantes:** los 5 conflictos ya
-      están cerrados; quedan los 188 P/N sin conflicto en `borrador-decodificado`.
-      Se conserva `descripcion_ocr` y `pn_ocr` como evidencia. No se reconstruyen
-      P/N a mano. **Artefactos:** `datos/analisis/partes_cij_ocr_revision.csv`
-      (193 P/N, 92 nuevos), `partes_cij_ocr_apariciones.csv` (275 apariciones
-      únicas de 277 registros) y el tablero `PENDIENTES_REVISION.md`.
+- [x] **Revisión de los 193 P/N del OCR 1550/1710:** 193/193 con todas sus
+      apariciones en la misma fila que la descripción; 91 P/N nuevos promovidos
+      con `estado_revisado`, 3 erratas corregidas y SP234081 como único nuevo
+      con conflicto. Los 101 P/N restantes ya estaban en la base digital.
+      Se conserva `descripcion_ocr` y `pn_ocr` como evidencia. **Artefactos:**
+      `datos/analisis/partes_cij_ocr_revision.csv`, `partes_cij_ocr_apariciones.csv`
+      y el tablero `PENDIENTES_REVISION.md`.
 - [ ] Revisión visual muestra a muestra de los 204 P/N y de los 801 ítems sin P/N;
       hoy hay muestras verificadas (1210 p27/p50, 1220 p33, 1610 p11, 1620E p48,
       1650 b51) y el conflicto real de 399475 marcado como borrador. Los 801 ítems

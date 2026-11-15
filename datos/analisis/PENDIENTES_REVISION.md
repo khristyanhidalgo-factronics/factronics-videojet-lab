@@ -10,12 +10,24 @@
 
 | Pendiente | Cantidad | Estado | Artefacto |
 |---|---|---|---|
-| P/N del OCR 1550/1710 | 193 | `borrador-decodificado` | `partes_cij_ocr_revision.csv` |
+| P/N del OCR 1550/1710 | 193 | 91 promovidos + 1 conflicto + 101 ya en base digital | `partes_cij_ocr_revision.csv` |
 | Registros OCR con P/N | 277 | 275 apariciones unicas | `partes_cij_ocr_apariciones.csv` |
 | Conflictos de descripcion | 5 | revisados: 1 sinonimo + 4 ambiguedades | `conflictos_cij_ocr.md` |
 | Avisos de velocidades | 56 | valor impreso conservado | `velocidades_cij_avisos.csv` |
 | Items sin P/N | 336 | `sin-pn` | `items_sin_pn.csv` |
 | Partes TTO | 120 | `verificado` | `partes_tto_cotejo.csv` |
+
+## Revisión OCR por coordenadas (2026-11-14)
+
+- **193/193 P/N** con todas sus apariciones en la misma fila que la descripción
+  (banda vertical ±35 px; `tools/auditar_ocr_coordenadas.py`).
+- **91 P/N nuevos** promovidos a `verificado` con `estado_revisado`, conservando
+  `estado='borrador-decodificado'` y `descripcion_ocr` como evidencia.
+- **3 erratas OCR** corregidas contra la página renderizada: `395746`
+  (Moldeci→Molded), `395747` (Type l→Type I) y `SP399355` (asterisco de nota).
+- **1 P/N nuevo con conflicto** (`SP234081`) queda fuera del banco.
+- Muestra visual: 1550 p56 (herramientas) y 1710 p27/p48/p49 (puerta de tinta,
+  cables de alimentación y cabezal/umbilical).
 
 ## Conflictos revisados (2026-11-14)
 

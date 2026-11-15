@@ -26,6 +26,8 @@ jobs:
         run: python tools/test_traducciones.py
       - name: Probar partes CIJ por OCR (IPL 1550/1710)
         run: python tools/test_partes_cij_ocr.py
+      - name: Auditar asociacion P/N-descripcion del OCR por coordenadas
+        run: python tools/auditar_ocr_coordenadas.py
       - name: Probar cotejo de partes TTO contra listas oficiales 6330/6530
         run: python tools/test_partes_tto.py
       - name: Probar velocidades CIJ contra los charts oficiales
