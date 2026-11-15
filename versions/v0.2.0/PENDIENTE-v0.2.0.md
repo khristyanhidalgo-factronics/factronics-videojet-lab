@@ -124,6 +124,9 @@
       construccion 57, `sw.js` alpha-39 y caché `fvl-v0.2.0-alpha-39`; 216 P/N
       verificados, 3 erratas corregidas, SP234081 único borrador, 610–612
       preguntas, 5 idiomas y consola limpia.
+- [ ] **Verificación en vivo de alpha-41/build 62**: CI «Validar» y Pages en
+      `success`; `version.json` construccion 62, `sw.js` alpha-41; aviso OCR
+      con 91 promovidos, 4 conflictos y SP234081 en 5 idiomas, consola limpia.
 - [x] **Verificación en vivo de alpha-40/build 59**: CI «Validar» (run
       `43661898813`) y Pages (run `43661897795`) en `success`; `version.json`
       construccion 59, `sw.js` alpha-40 y caché `fvl-v0.2.0-alpha-40`; 266

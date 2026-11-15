@@ -188,3 +188,4 @@
 - [x] **Revisión de las 266 velocidades CIJ:** 266 verificadas, 0 conflictos de valores y 56 avisos de nombre conservados; calculador con aviso por entrada y nota del examen actualizada. Prueba de velocidades en 9 casos.
 - [x] **Verificación en vivo de alpha-40/build 59:** CI «Validar» (run `43661898813`) y Pages (run `43661897795`) en success; `version.json` build 59, `sw.js` alpha-40 y caché `fvl-v0.2.0-alpha-40`. 266 verificadas, 56 avisos, calculador y examen actualizados, 5 idiomas y consola limpia.
 - [x] **Títulos de boletines TTO:** 63 títulos impresos + 50 derivados del archivo, etiquetados y sin presentarlos como impresos; prueba de 3 casos en CI.
+- [x] **Aviso OCR actualizado:** la app refleja 91 P/N promovidos, 4 conflictos con descripción alterna y SP234081 en borrador, en los 5 idiomas.
