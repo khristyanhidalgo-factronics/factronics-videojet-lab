@@ -6,7 +6,7 @@
 
 | | |
 |---|---|
-| **Versión actual** | `v0.2.0-alpha` (`alpha-38`) — App web offline (ver [notas de versión](#--sistema-de-notas-de-versión)) |
+| **Versión actual** | `v0.2.0-alpha` (`alpha-39`) — App web offline (ver [notas de versión](#--sistema-de-notas-de-versión)) |
 | **Estado** | 🚧 En desarrollo activo |
 | **Creador** | **Khristyan Hidalgo** — Técnico · [Factronics Venezuela](https://factronics.com.ve/) |
 | **Licencia** | [MIT](LICENSE) |
@@ -41,7 +41,7 @@ Una aplicación moderna pensada para **hacer la vida más fácil a los compañer
 | Entregable | Estado | Dónde |
 |---|---|---|
 | 🌐 **Página principal** (landing) | ✅ Activa | [GitHub Pages](https://khristyanhidalgo-factronics.github.io/factronics-videojet-lab/) |
-| 💻 **App web offline** (PWA) | ✅ alpha-38 | [App en vivo](https://khristyanhidalgo-factronics.github.io/factronics-videojet-lab/app/) · `docs/app/` |
+| 💻 **App web offline** (PWA) | ✅ alpha-39 | [App en vivo](https://khristyanhidalgo-factronics.github.io/factronics-videojet-lab/app/) · `docs/app/` |
 | 📱 **APK Android nativa** | 🚧 v0.4.0 | [Releases](https://github.com/khristyanhidalgo-factronics/factronics-videojet-lab/releases) |
 
 ## 📘 Sistema de notas de versión
