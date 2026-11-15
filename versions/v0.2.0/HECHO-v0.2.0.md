@@ -189,3 +189,4 @@
 - [x] **Verificación en vivo de alpha-40/build 59:** CI «Validar» (run `43661898813`) y Pages (run `43661897795`) en success; `version.json` build 59, `sw.js` alpha-40 y caché `fvl-v0.2.0-alpha-40`. 266 verificadas, 56 avisos, calculador y examen actualizados, 5 idiomas y consola limpia.
 - [x] **Títulos de boletines TTO:** 63 títulos impresos + 50 derivados del archivo, etiquetados y sin presentarlos como impresos; prueba de 3 casos en CI.
 - [x] **Aviso OCR actualizado:** la app refleja 91 P/N promovidos, 4 conflictos con descripción alterna y SP234081 en borrador, en los 5 idiomas.
+- [x] **Verificación en vivo de alpha-41/build 62:** CI «Validar» (run `43662982937`) y Pages (run `43662982282`) en success; `version.json` build 62, `sw.js` alpha-41 y caché `fvl-v0.2.0-alpha-41`. Aviso OCR correcto en 5 idiomas y consola limpia.

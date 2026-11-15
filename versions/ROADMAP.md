@@ -9,13 +9,13 @@
 | Versión | Meta principal | Incluye |
 |---|---|---|
 | **v0.1.0** (publicada) | **Fundación** | Estructura, sistema de notas (5 tipos), landing en Pages, catálogo semilla, logo único, repo+push+Pages |
-| **v0.2.0** (en desarrollo, `alpha-40`) | **Datos reales + app web beta** | Fuentes TTO/CIJ/LÁSER, OCR 1550/1710, catálogo verificado, PWA con examen de 5 niveles, bancos por tecnología, buscador (partes, tintas, solventes, SDS, errores, ribbons, mantenimiento), calculadora y **es/en/pt/it/zh** |
+| **v0.2.0** (en desarrollo, `alpha-41`) | **Datos reales + app web beta** | Fuentes TTO/CIJ/LÁSER, OCR 1550/1710, catálogo verificado, PWA con examen de 5 niveles, bancos por tecnología, buscador (partes, tintas, solventes, SDS, errores, ribbons, mantenimiento), calculadora y **es/en/pt/it/zh** |
 | **v0.3.0** | **App web completa** | Calculadoras (consumo/costo/comparador), perfiles/historial, copia de seguridad JSON, temas festivos (Venezuela base + extensión), QR offline, 100% offline comprobado |
 
 ## Estado actual (2026-11-14)
 
-- **App:** `alpha-40` / build 59, publicada en Pages y verificada en vivo.
-- **Notas:** build 61, con índice SHA-256 y este ROADMAP actualizado.
+- **App:** `alpha-41` / build 62, publicada en Pages y verificada en vivo.
+- **Notas:** build 63, con índice SHA-256 y este ROADMAP actualizado.
 - **Datos:** 802 curvas de solvente, 564 tintas, 2.986 partes, 64 grados + 694
   ítems de ribbon, 1773 componentes SDS y 266 velocidades CIJ.
 - **Calidad:** suite completa en CI, auditoría de 75.000 preguntas del examen y
